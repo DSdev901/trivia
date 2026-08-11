@@ -6,7 +6,9 @@ name: Refresh Current Events
 
 on:
   schedule:
-    - cron: "0 12 * * *" # 12:00 UTC = 8:00 AM EDT / 7:00 AM EST, daily
+    # Tuesdays 6:00 AM and 1:00 PM local (UTC-5) = 11:00 and 18:00 UTC.
+    # During winter (CST, UTC-6) these fire an hour earlier local time.
+    - cron: "0 11,18 * * 2"
   workflow_dispatch:
 
 permissions:
