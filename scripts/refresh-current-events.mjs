@@ -534,16 +534,49 @@ function guessType(text) {
   if (t.includes("documentary")) return "Documentary";
   if (t.includes("stand-up")) return "Stand-up special";
   if (t.includes("anime film")) return "Anime film";
-  if (t.includes("live event")) return "Live event";
+  if (t.includes("live event") || t.includes("(live)")) return "Live event";
   if (t.includes("special")) return "Special";
   return "Film";
 }
 
+/**
+ * whats-on-netflix puts Cloudflare challenges on its high-traffic pages for
+ * datacenter/bot-looking clients, and which page is challenged varies day to
+ * day. Chain: direct → allorigins (live proxy) → Wayback (nearest snapshot,
+ * can lag a few days). Callers treat a thrown error as "source unavailable".
+ */
+async function fetchListing(url) {
+  try {
+    return await fetchText(url);
+  } catch (err) {
+    console.warn(`  [netflix] direct: ${err.message} — trying proxy`);
+  }
+  try {
+    return await fetchText(
+      `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+      60000
+    );
+  } catch (err) {
+    console.warn(`  [netflix] proxy: ${err.message} — trying second proxy`);
+  }
+  try {
+    return await fetchText(
+      `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
+      60000
+    );
+  } catch (err) {
+    console.warn(`  [netflix] proxy2: ${err.message} — trying wayback`);
+  }
+  const stamp = windowEnd.replace(/-/g, "");
+  return fetchText(`https://web.archive.org/web/${stamp}id_/${url}`, 60000);
+}
+
 function parseNetflixMonthly(html, year) {
   const items = [];
-  // Date headers look like: "What's Coming to Netflix on August 7th"
+  // Date headers: "What's Coming to Netflix on August 7th" (monthly pages)
+  // or "Coming to Netflix on Monday, August 10th" (weekly pages).
   const headerRe =
-    /<h[2-4][^>]*>([\s\S]*?on ([A-Z][a-z]+) (\d{1,2})(?:st|nd|rd|th)[\s\S]*?)<\/h[2-4]>/gi;
+    /<h[2-4][^>]*>([\s\S]*?on (?:[A-Z][a-z]+day,\s*)?([A-Z][a-z]+) (\d{1,2})(?:st|nd|rd|th)[\s\S]*?)<\/h[2-4]>/gi;
   const headers = [];
   for (const m of html.matchAll(headerRe)) {
     const month = MONTHS.indexOf(m[2].toLowerCase());
@@ -564,7 +597,6 @@ function parseNetflixMonthly(html, year) {
       const [left, ...rest] = text.split(/\s+[–—-]\s+/);
       const title = left
         .replace(/\(\d{4}\)/, "")
-        .replace(/\(Season[^)]*\)/i, "")
         .replace(/\(Limited Series\)/i, "")
         .replace(/Netflix Original/i, "")
         .replace(/\s+/g, " ")
@@ -799,10 +831,32 @@ async function buildNetflix() {
     const url = `https://www.whats-on-netflix.com/coming-soon/whats-coming-to-netflix-in-${month}-${year}/`;
     try {
       // Source already filters to items tagged "Netflix Original".
-      items.push(...parseNetflixMonthly(await fetchText(url), year));
+      items.push(...parseNetflixMonthly(await fetchListing(url), year));
     } catch (err) {
       console.warn(`  [netflix] ${url}: ${err.message}`);
     }
+    await sleep(1500); // free proxies rate-limit rapid-fire requests
+  }
+  // Weekly roundups cover returning-season premieres too; discover them from
+  // the RSS feed (which Cloudflare leaves unchallenged).
+  try {
+    const rss = await fetchText("https://www.whats-on-netflix.com/feed/");
+    const weeklyUrls = [
+      ...rss.matchAll(/<item>[\s\S]*?<title>([\s\S]*?)<\/title>[\s\S]*?<link>([\s\S]*?)<\/link>/g),
+    ]
+      .filter((m) => /coming to netflix this week/i.test(stripTags(m[1])))
+      .map((m) => m[2].trim())
+      .slice(0, 3);
+    for (const url of weeklyUrls) {
+      try {
+        items.push(...parseNetflixMonthly(await fetchListing(url), now.getFullYear()));
+      } catch (err) {
+        console.warn(`  [netflix] weekly ${url}: ${err.message}`);
+      }
+      await sleep(1500);
+    }
+  } catch (err) {
+    console.warn(`  [netflix] rss: ${err.message}`);
   }
   // Fallback / supplement: Wikipedia lists (whats-on-netflix sometimes 403s).
   // All three lists are originals-only by definition.
@@ -812,17 +866,33 @@ async function buildNetflix() {
     console.warn(`  [netflix] wikipedia films: ${err.message}`);
   }
   items.push(...(await fetchWikipediaProgramming()));
-  // Same title can appear in both sources with different dates — keep the
-  // richer card. Dedupe before enrichment so we don't look a title up twice.
-  const byTitle = new Map();
+  // Same title can appear in multiple sources with different dates — keep
+  // the richer card. Titles also vary in length across sources ("Operation
+  // Safed Sagar: The Untold Story…" vs "Operation Safed Sagar: The Highest
+  // Air Force Mission…"), so collapse keys that contain one another.
+  // Dedupe before enrichment so we don't look a title up twice.
+  const score = (x) =>
+    (x.synopsis || "").length + (x.starring || []).length * 50;
+  // Same show, differently-trimmed title across sources ("Operation Safed
+  // Sagar: The Untold Story…" vs "…The Highest Air Force Mission…"): a
+  // shared prefix of the first few tokens is the same title.
+  const sameTitle = (a, b) => {
+    const ta = normTitle(a).split(" ");
+    const tb = normTitle(b).split(" ");
+    const n = Math.min(4, ta.length, tb.length);
+    for (let i = 0; i < n; i += 1) if (ta[i] !== tb[i]) return false;
+    return n > 0;
+  };
+  const deduped = [];
   for (const i of items) {
-    const key = normTitle(i.title);
-    const score = (x) =>
-      (x.synopsis || "").length + (x.starring || []).length * 50;
-    if (!byTitle.has(key) || score(i) > score(byTitle.get(key)))
-      byTitle.set(key, i);
+    const other = deduped.find((d) => sameTitle(d.title, i.title));
+    if (!other) {
+      deduped.push(i);
+    } else if (score(i) > score(other)) {
+      deduped[deduped.indexOf(other)] = i;
+    }
   }
-  items = await enrichNetflix([...byTitle.values()]);
+  items = await enrichNetflix(deduped);
   items.sort((a, b) => b.date.localeCompare(a.date));
   // Completeness over polish: every item comes from an originals-only source
   // (the whats-on-netflix listing is Originals-tagged; the Wikipedia lists are
