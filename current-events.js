@@ -124,9 +124,10 @@ function newsSpeakCleanup(text) {
 }
 
 function netflixSpeechLine(item) {
+  // Labels like "Docuseries" / "Film" stay visual-only — not read aloud.
   const parts = [
     `${item.title}.`,
-    `${item.type}, released ${spokenDate(item.date)}.`,
+    `Released ${spokenDate(item.date)}.`,
     item.synopsis,
   ];
   const stars = (item.starring || []).filter(Boolean);
@@ -135,13 +136,10 @@ function netflixSpeechLine(item) {
 }
 
 function storySpeechLine(item) {
+  // Sport/tag badges ("NFL", "Celebrity", "Milestone") stay visual-only.
   return prepareSpokenLine(
     newsSpeakCleanup(
-      [
-        `${item.headline}.`,
-        `${item.sport || item.tag || "News"}, ${spokenDate(item.date)}.`,
-        item.summary,
-      ].join(" ")
+      [`${item.headline}.`, `${spokenDate(item.date)}.`, item.summary].join(" ")
     )
   );
 }
