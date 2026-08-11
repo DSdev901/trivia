@@ -17,6 +17,7 @@ import {
   removeFlag,
   toggleFlag,
 } from "./flags.js";
+import { isLocalHost } from "./env.js";
 import {
   getDefaultBrowserVoiceUri,
   getSavedLoops,
@@ -1013,7 +1014,12 @@ async function init() {
     renderCategories(state.categories);
     show("categories");
   } catch (err) {
-    els.categories.innerHTML = `<p class="error">${err.message}. From this folder run: <code>python3 -m http.server 8080</code> then open <code>http://localhost:8080</code>.</p>`;
+    // Local runs usually fail because no static server is running; on the
+    // live site a load failure is a network problem, so the advice differs.
+    const hint = isLocalHost()
+      ? `From this folder run: <code>python3 -m http.server 8080</code> then open <code>http://localhost:8080</code>.`
+      : `Check your connection and reload the page.`;
+    els.categories.innerHTML = `<p class="error">${err.message}. ${hint}</p>`;
   }
 }
 

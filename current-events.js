@@ -13,6 +13,7 @@ import {
   stopSpeech,
   voiceQualityTip,
 } from "./speech.js";
+import { isLocalHost } from "./env.js";
 
 const SECTIONS = [
   { id: "netflix", label: "Netflix", path: "data/current-events/netflix.json" },
@@ -70,21 +71,6 @@ function timeAgo(iso) {
   const hours = Math.round(mins / 60);
   if (hours < 48) return `${hours}h ago`;
   return `${Math.round(hours / 24)}d ago`;
-}
-
-/** Live refresh only makes sense where the refresh endpoint/script can run. */
-function isLocalHost() {
-  const h = location.hostname;
-  return (
-    h === "localhost" ||
-    h === "127.0.0.1" ||
-    h === "::1" ||
-    h === "0.0.0.0" ||
-    h.endsWith(".local") ||
-    /^192\.168\./.test(h) ||
-    /^10\./.test(h) ||
-    /^172\.(1[6-9]|2\d|3[01])\./.test(h)
-  );
 }
 
 /* ---------------- speech text ---------------- */
@@ -498,7 +484,8 @@ function bindSpeechControls() {
 /* ---------------- refresh ---------------- */
 
 async function refreshData() {
-  if (ce.refreshing) return;
+  // Local-only: the live static site has no refresh endpoint to call.
+  if (ce.refreshing || !isLocalHost()) return;
   stopPlayback();
   ce.refreshing = true;
   ce.notice = "";
