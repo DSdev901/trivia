@@ -1558,6 +1558,11 @@ body {
   background: rgba(184, 134, 11, 0.16);
 }
 
+.ce-badge-top {
+  color: #fff;
+  background: var(--accent-deep);
+}
+
 .ce-date {
   font-size: 0.8rem;
   color: var(--ink-soft);

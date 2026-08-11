@@ -215,6 +215,7 @@ function storyCard(item, idx) {
     <article class="ce-card ce-story-card" data-idx="${idx}">
       <div class="ce-meta">
         <span class="ce-badge ce-badge-alt">${escapeHtml(item.sport || item.tag || "News")}</span>
+        ${item.top ? `<span class="ce-badge ce-badge-top">Top story</span>` : ""}
         <span class="ce-date">${fmtDate(item.date)}</span>
         ${
           ce.canSpeak

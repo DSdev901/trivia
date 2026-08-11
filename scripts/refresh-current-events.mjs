@@ -93,6 +93,10 @@ const ESPN_LEAGUES = [
   ["tennis/atp", "Tennis", 4],
 ];
 
+/** ESPN filler that isn't a notable story: fantasy advice, previews-as-content, podcasts. */
+const SPORTS_JUNK_RE =
+  /\bfantasy\b|forecaster|lineup advice|game highlights|\bpodcast\b|betting odds/i;
+
 async function buildSports() {
   const seen = new Set();
   const items = [];
@@ -104,7 +108,14 @@ async function buildSports() {
         for (const a of data.articles || []) {
           const date = isoFrom(a.published);
           const headline = (a.headline || "").trim();
-          if (!date || !inWindow(date) || !headline || seen.has(headline)) continue;
+          if (
+            !date ||
+            !inWindow(date) ||
+            !headline ||
+            seen.has(headline) ||
+            SPORTS_JUNK_RE.test(headline)
+          )
+            continue;
           seen.add(headline);
           items.push({
             headline,
@@ -120,7 +131,78 @@ async function buildSports() {
     })
   );
   items.sort((a, b) => b.date.localeCompare(a.date));
-  return items.slice(0, 16);
+  const capped = items.slice(0, 16);
+  return applyProminence(capped, await googleNewsRanks(GN_SPORTS));
+}
+
+/* ------------- Google News: prominence signal -------------
+ * GN topic feeds rank the biggest stories across all outlets, but only
+ * cover the last ~48h and carry no summaries. So they are used purely as
+ * a ranking layer: items from our full-window sources that match a GN top
+ * story get `top: true` and sort first. If GN is unreachable, nothing
+ * changes. */
+
+const GN_SPORTS =
+  "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=en-US&gl=US&ceid=US:en";
+const GN_ENTERTAINMENT =
+  "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-US&gl=US&ceid=US:en";
+
+const STOPWORDS = new Set([
+  "the", "a", "an", "and", "or", "of", "to", "in", "on", "for", "with",
+  "over", "after", "as", "at", "by", "from", "is", "are", "was", "were",
+  "his", "her", "their", "its", "what", "why", "how", "into", "vs", "new",
+  "says", "amid",
+]);
+
+function headlineTokens(s) {
+  return String(s)
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]/g, " ")
+    .split(/\s+/)
+    .filter((w) => w.length > 2 && !STOPWORDS.has(w));
+}
+
+async function googleNewsRanks(url) {
+  try {
+    const xml = await fetchText(url);
+    return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)]
+      .map((m, idx) => {
+        const raw = (m[1].match(/<title>([\s\S]*?)<\/title>/) || [])[1] || "";
+        const clean = stripTags(raw).replace(/ - [^-]{2,40}$/, ""); // " - Source"
+        return { rank: idx, tokens: headlineTokens(clean) };
+      })
+      .filter((g) => g.tokens.length >= 3);
+  } catch (err) {
+    console.warn(`  [googlenews] ${err.message}`);
+    return [];
+  }
+}
+
+/** Rank of the best-matching GN top story, or null when not matched. */
+function gnRank(headline, gnList) {
+  const toks = new Set(headlineTokens(headline));
+  let best = null;
+  for (const g of gnList) {
+    const shared = g.tokens.filter((w) => toks.has(w)).length;
+    const union = new Set([...toks, ...g.tokens]).size;
+    if (shared >= 4 && shared / union >= 0.3 && (best === null || g.rank < best))
+      best = g.rank;
+  }
+  return best;
+}
+
+/** GN-matched stories first (by GN rank), the rest after (by date). */
+function applyProminence(items, gnList) {
+  for (const i of items) {
+    const r = gnRank(i.headline, gnList);
+    if (r !== null) i.top = true;
+    i._rank = r;
+  }
+  items.sort(
+    (a, b) => (a._rank ?? 1e9) - (b._rank ?? 1e9) || b.date.localeCompare(a.date)
+  );
+  for (const i of items) delete i._rank;
+  return items;
 }
 
 /* ---------------- Entertainment: RSS ---------------- */
@@ -200,13 +282,14 @@ async function buildEntertainment() {
   // without a per-bucket cap they push every celebrity item past the cutoff.
   const movies = items.filter((i) => i.bucket === "Movies/TV").slice(0, 9);
   const celeb = items.filter((i) => i.bucket === "Celebrity").slice(0, 9);
-  return [...movies, ...celeb]
+  const mixed = [...movies, ...celeb]
     .sort((a, b) => b.date.localeCompare(a.date))
-    .slice(0, 18)
-    .map((i) => {
-      const { bucket, ...rest } = i;
-      return { ...rest, tag: tagFor(i.headline, i.summary, bucket) };
-    });
+    .slice(0, 18);
+  applyProminence(mixed, await googleNewsRanks(GN_ENTERTAINMENT));
+  return mixed.map((i) => {
+    const { bucket, ...rest } = i;
+    return { ...rest, tag: tagFor(i.headline, i.summary, bucket) };
+  });
 }
 
 /* ---------------- Netflix: whats-on-netflix ---------------- */
