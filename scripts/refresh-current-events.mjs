@@ -582,6 +582,64 @@ function parseNetflixMonthly(html, year) {
   return items;
 }
 
+function seriesTypeFromGenre(genre) {
+  if (/docuseries/i.test(genre)) return "Docuseries";
+  if (/documentary|true crime|sports/i.test(genre)) return "Documentary";
+  return "Series";
+}
+
+/**
+ * Wikipedia's original programming + stand-up lists — the series/specials
+ * counterpart to the films list. These cover brand-new series premieres of
+ * every genre (the Premiere column is the series debut); new *seasons* of
+ * returning shows only come from whats-on-netflix when it isn't bot-blocking.
+ */
+async function fetchWikipediaProgramming() {
+  const sources = [
+    ["List of Netflix original programming", null],
+    ["List of Netflix original stand-up comedy specials", "Stand-up special"],
+  ];
+  const items = [];
+  for (const [page, fixedType] of sources) {
+    try {
+      const data = await wikiJson({ action: "parse", page, prop: "text" });
+      const html = data?.parse?.text?.["*"] || "";
+      for (const row of html.matchAll(/<tr>([\s\S]*?)<\/tr>/g)) {
+        const cells = [...row[1].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/g)].map(
+          (c) => stripTags(c[1])
+        );
+        if (cells.length < 2) continue;
+        let date = null;
+        let dateIdx = -1;
+        for (let ci = 1; ci < Math.min(cells.length, 4); ci += 1) {
+          date = isoFrom(cells[ci]);
+          if (date) {
+            dateIdx = ci;
+            break;
+          }
+        }
+        const title = cells[0];
+        if (!date || !inWindow(date) || !title || title === "Title") continue;
+        const genre = dateIdx > 1 ? cells[1] : "";
+        items.push({
+          title,
+          type: fixedType || seriesTypeFromGenre(genre),
+          date,
+          synopsis: fixedType
+            ? `${fixedType}.`
+            : genre
+              ? `${genre} series.`
+              : "Netflix Original release.",
+          starring: [],
+        });
+      }
+    } catch (err) {
+      console.warn(`  [netflix] wikipedia "${page}": ${err.message}`);
+    }
+  }
+  return items;
+}
+
 /** Wikipedia's Netflix original films list — reliable fallback (dates + genres). */
 async function fetchWikipediaFilms() {
   const url =
@@ -746,13 +804,14 @@ async function buildNetflix() {
       console.warn(`  [netflix] ${url}: ${err.message}`);
     }
   }
-  // Fallback / supplement: Wikipedia film list (whats-on-netflix sometimes 403s).
-  // That list is originals-only by definition.
+  // Fallback / supplement: Wikipedia lists (whats-on-netflix sometimes 403s).
+  // All three lists are originals-only by definition.
   try {
     items.push(...(await fetchWikipediaFilms()));
   } catch (err) {
-    console.warn(`  [netflix] wikipedia: ${err.message}`);
+    console.warn(`  [netflix] wikipedia films: ${err.message}`);
   }
+  items.push(...(await fetchWikipediaProgramming()));
   // Same title can appear in both sources with different dates — keep the
   // richer card. Dedupe before enrichment so we don't look a title up twice.
   const byTitle = new Map();
@@ -765,14 +824,12 @@ async function buildNetflix() {
   }
   items = await enrichNetflix([...byTitle.values()]);
   items.sort((a, b) => b.date.localeCompare(a.date));
-  // Drop stub cards whose "synopsis" is just a genre/runtime descriptor
-  // ("36 min film.", "Stand-up special.") — only if enough real ones remain.
-  const STUB_RE =
-    /(film|series|special|documentary|release|drama|comedy|thriller|reality|mystery|romance)\.?$/i;
-  const isStub = (i) =>
-    (i.synopsis || "").trim().length < 60 && STUB_RE.test((i.synopsis || "").trim());
-  const detailed = items.filter((i) => !isStub(i));
-  return (detailed.length >= 5 ? detailed : items).slice(0, 40);
+  // Completeness over polish: every item comes from an originals-only source
+  // (the whats-on-netflix listing is Originals-tagged; the Wikipedia lists are
+  // originals by definition), so a brand-new title stays even while its
+  // synopsis is still a one-liner — Wikipedia lags a few days on fresh
+  // releases, and enrichment fills details in on later refreshes.
+  return items.slice(0, 40);
 }
 
 /* ---------------- write ---------------- */
