@@ -125,13 +125,20 @@ async function buildSports() {
 
 /* ---------------- Entertainment: RSS ---------------- */
 
+// people.com/feed/ hard-blocks bots (Cloudflare 403); Page Six + Us Weekly
+// cover the same celebrity beat.
 const RSS_FEEDS = [
   ["https://variety.com/feed/", "Movies/TV"],
   ["https://deadline.com/feed/", "Movies/TV"],
   ["https://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml", "Celebrity"],
-  ["https://people.com/feed/", "Celebrity"],
+  ["https://pagesix.com/feed/", "Celebrity"],
+  ["https://www.usmagazine.com/feed/", "Celebrity"],
   ["https://www.tmz.com/rss.xml", "Celebrity"],
 ];
+
+/** Commerce/listicle filler that slips into celebrity feeds. */
+const JUNK_RE =
+  /\b(loafers|sneakers|sandals|leggings|lipstick|mascara|faves|gift guide|deals|under \$\d+|where to buy|shop now|amazon arrivals)\b|\bon sale\b|\bsale (is|alert)\b|^\d+\s+(best|top)\b/i;
 
 function parseRss(xml, tag) {
   const items = [];
@@ -145,7 +152,8 @@ function parseRss(xml, tag) {
     };
     const date = isoFrom(pick("pubDate"));
     const headline = pick("title");
-    if (!date || !inWindow(date) || !headline) continue;
+    if (!date || !inWindow(date) || !headline || JUNK_RE.test(headline))
+      continue;
     items.push({
       headline,
       date,
@@ -176,7 +184,13 @@ async function buildEntertainment() {
     return true;
   });
   items.sort((a, b) => b.date.localeCompare(a.date));
-  return items.slice(0, 16);
+  // Variety/Deadline publish far more per day than the celebrity feeds —
+  // without a per-tag cap they push every celebrity item past the cutoff.
+  const movies = items.filter((i) => i.tag === "Movies/TV").slice(0, 9);
+  const celeb = items.filter((i) => i.tag === "Celebrity").slice(0, 9);
+  return [...movies, ...celeb]
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 18);
 }
 
 /* ---------------- Netflix: whats-on-netflix ---------------- */
