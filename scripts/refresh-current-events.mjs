@@ -30,14 +30,14 @@ const windowStart = new Date(now.getTime() - WINDOW_DAYS * 86400000)
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
 
-async function fetchText(url, timeoutMs = 15000) {
+async function fetchText(url, timeoutMs = 15000, ua = UA) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeoutMs);
   try {
     const res = await fetch(url, {
       signal: ctrl.signal,
       headers: {
-        "User-Agent": UA,
+        "User-Agent": ua,
         Accept:
           "text/html,application/xhtml+xml,application/xml;q=0.9,application/json;q=0.8,*/*;q=0.7",
         "Accept-Language": "en-US,en;q=0.9",
@@ -268,8 +268,130 @@ async function fetchWikipediaFilms() {
   return items;
 }
 
+/* -------- Netflix enrichment: Wikipedia intros (no key required) -------- */
+
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+const normTitle = (s) =>
+  String(s || "")
+    .toLowerCase()
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/[^a-z0-9 ]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+// Wikimedia asks API clients for a descriptive UA; browser UAs get throttled.
+const WIKI_UA =
+  "TriviaHelper/1.0 (https://github.com/DSdev901/trivia; trivia app data refresh)";
+
+async function wikiJson(params) {
+  const url =
+    "https://en.wikipedia.org/w/api.php?" +
+    new URLSearchParams({ format: "json", ...params });
+  return JSON.parse(await fetchText(url, 15000, WIKI_UA));
+}
+
+/**
+ * Find the best-matching Wikipedia page for a title and return its intro.
+ * Single request via generator=search. The intro must mention Netflix —
+ * this both confirms we landed on the right page and that the title is
+ * a Netflix original release.
+ */
+async function wikiIntroFor(title, date) {
+  const year = (date || "").slice(0, 4);
+  const want = normTitle(title);
+  if (!want) return "";
+  const data = await wikiJson({
+    action: "query",
+    generator: "search",
+    gsrsearch: `${title} ${year} Netflix`,
+    gsrlimit: "4",
+    prop: "extracts",
+    exintro: "1",
+    explaintext: "1",
+    redirects: "1",
+  });
+  const hit = Object.values(data?.query?.pages || {}).find((p) => {
+    const have = normTitle(p.title);
+    return (
+      (have.startsWith(want) || want.startsWith(have)) &&
+      /netflix/i.test(p.extract || "")
+    );
+  });
+  if (!hit) return null;
+  return {
+    extract: hit.extract.trim(),
+    exact: normTitle(hit.title) === want,
+  };
+}
+
+async function wikiIntroWithRetry(title, date) {
+  try {
+    return await wikiIntroFor(title, date);
+  } catch (err) {
+    if (!/429/.test(err.message)) throw err;
+    await sleep(4000);
+    return wikiIntroFor(title, date);
+  }
+}
+
+function starringFromExtract(extract) {
+  // (?<! [A-Z]) lets middle initials like "Patrick J. Adams" survive.
+  const m = extract.match(/(?:starring|stars)\s+(.+?)(?<! [A-Z])\.(?=\s|$)/s);
+  if (!m) return [];
+  return m[1]
+    .split(/,| and /i)
+    .map((s) => s.replace(/\s+as\s+.+$/i, "").trim()) // drop "as Nick Nelson"
+    .filter(
+      (s) =>
+        /^[A-Z][\p{L}.'()-]*( [\p{L}.'() -]{1,30}){0,3}$/u.test(s) &&
+        !/\d/.test(s)
+    )
+    .slice(0, 6);
+}
+
+/** Keep plot sentences; skip "directed by…" boilerplate and cast-list sentences. */
+function synopsisFromExtract(extract) {
+  const sentences = extract.match(/[^.!?]+[.!?]+/g) || [];
+  const isListLike = (s) => (s.match(/,/g) || []).length >= 3;
+  const isCastOrCrew = (s) =>
+    /directed by|created by|premiered|released on/i.test(s) ||
+    /\bstarring\b|\bstars\b/i.test(s);
+  const plot = sentences.filter((s) => !isCastOrCrew(s) && !isListLike(s));
+  const fallback = sentences.filter((s) => !isListLike(s));
+  const chosen = (plot.length ? plot : fallback).slice(0, 2).join(" ").trim();
+  return chosen.length > 320 ? `${chosen.slice(0, 317).trim()}…` : chosen;
+}
+
+async function enrichNetflix(items) {
+  for (const item of items.slice(0, 30)) {
+    try {
+      const hit = await wikiIntroWithRetry(item.title, item.date);
+      if (hit) {
+        const { extract, exact } = hit;
+        const stars = starringFromExtract(extract);
+        const syn = synopsisFromExtract(extract);
+        // Non-exact page matches (e.g. a parent series for a companion
+        // special) can describe a different production — only trust their
+        // cast when the page is really about this title.
+        if (exact && stars.length) item.starring = stars;
+        if (syn.length > (item.synopsis || "").length) {
+          if (exact || (item.synopsis || "").trim().length < 60)
+            item.synopsis = syn;
+        }
+        if (exact) item.confirmedOriginal = true;
+      }
+    } catch (err) {
+      console.warn(`  [netflix] wiki "${item.title}": ${err.message}`);
+    }
+    await sleep(1000);
+  }
+  return items;
+}
+
 async function buildNetflix() {
-  const seen = new Set();
   let items = [];
   const monthsToTry = [now, new Date(now.getTime() - 32 * 86400000)];
   for (const d of monthsToTry) {
@@ -277,25 +399,39 @@ async function buildNetflix() {
     const year = d.getFullYear();
     const url = `https://www.whats-on-netflix.com/coming-soon/whats-coming-to-netflix-in-${month}-${year}/`;
     try {
+      // Source already filters to items tagged "Netflix Original".
       items.push(...parseNetflixMonthly(await fetchText(url), year));
     } catch (err) {
       console.warn(`  [netflix] ${url}: ${err.message}`);
     }
   }
   // Fallback / supplement: Wikipedia film list (whats-on-netflix sometimes 403s).
+  // That list is originals-only by definition.
   try {
     items.push(...(await fetchWikipediaFilms()));
   } catch (err) {
     console.warn(`  [netflix] wikipedia: ${err.message}`);
   }
-  items = items.filter((i) => {
-    const key = `${i.title.toLowerCase()}|${i.date}`;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
+  // Same title can appear in both sources with different dates — keep the
+  // richer card. Dedupe before enrichment so we don't look a title up twice.
+  const byTitle = new Map();
+  for (const i of items) {
+    const key = normTitle(i.title);
+    const score = (x) =>
+      (x.synopsis || "").length + (x.starring || []).length * 50;
+    if (!byTitle.has(key) || score(i) > score(byTitle.get(key)))
+      byTitle.set(key, i);
+  }
+  items = await enrichNetflix([...byTitle.values()]);
   items.sort((a, b) => b.date.localeCompare(a.date));
-  return items.slice(0, 40);
+  // Drop stub cards whose "synopsis" is just a genre/runtime descriptor
+  // ("36 min film.", "Stand-up special.") — only if enough real ones remain.
+  const STUB_RE =
+    /(film|series|special|documentary|release|drama|comedy|thriller|reality|mystery|romance)\.?$/i;
+  const isStub = (i) =>
+    (i.synopsis || "").trim().length < 60 && STUB_RE.test((i.synopsis || "").trim());
+  const detailed = items.filter((i) => !isStub(i));
+  return (detailed.length >= 5 ? detailed : items).slice(0, 40);
 }
 
 /* ---------------- write ---------------- */
