@@ -99,7 +99,7 @@ const SPORTS_JUNK_RE =
 
 async function buildSports() {
   const seen = new Set();
-  const items = [];
+  let items = [];
   await Promise.all(
     ESPN_LEAGUES.map(async ([league, label, limit]) => {
       try {
@@ -130,9 +130,13 @@ async function buildSports() {
       }
     })
   );
+  items = fuzzyDedupe(items);
   items.sort((a, b) => b.date.localeCompare(a.date));
-  const capped = items.slice(0, 16);
-  return applyProminence(capped, await googleNewsRanks(GN_SPORTS));
+  const ranked = applyProminence(items, await googleNewsRanks(GN_SPORTS));
+  return ranked.slice(0, 18).map((i) => {
+    delete i._rank;
+    return i;
+  });
 }
 
 /* ------------- Google News: prominence signal -------------
@@ -178,31 +182,112 @@ async function googleNewsRanks(url) {
   }
 }
 
+function tokensMatch(aTokens, bTokens, minScore = 0.3) {
+  const a = new Set(aTokens);
+  const shared = bTokens.filter((w) => a.has(w)).length;
+  const union = new Set([...aTokens, ...bTokens]).size;
+  return shared >= 4 && shared / union >= minScore;
+}
+
 /** Rank of the best-matching GN top story, or null when not matched. */
 function gnRank(headline, gnList) {
-  const toks = new Set(headlineTokens(headline));
+  const toks = headlineTokens(headline);
   let best = null;
   for (const g of gnList) {
-    const shared = g.tokens.filter((w) => toks.has(w)).length;
-    const union = new Set([...toks, ...g.tokens]).size;
-    if (shared >= 4 && shared / union >= 0.3 && (best === null || g.rank < best))
+    if (tokensMatch(toks, g.tokens) && (best === null || g.rank < best))
       best = g.rank;
   }
   return best;
 }
 
-/** GN-matched stories first (by GN rank), the rest after (by date). */
+/** GN-matched stories first (by rank), the rest after (by date). */
 function applyProminence(items, gnList) {
   for (const i of items) {
     const r = gnRank(i.headline, gnList);
-    if (r !== null) i.top = true;
-    i._rank = r;
+    if (r !== null) {
+      i.top = true;
+      i._rank = r; // topic rank outranks backfill rank (100+)
+    } else if (i._rank === undefined) i._rank = null;
   }
   items.sort(
     (a, b) => (a._rank ?? 1e9) - (b._rank ?? 1e9) || b.date.localeCompare(a.date)
   );
-  for (const i of items) delete i._rank;
   return items;
+}
+
+/* --------- Google News search: backfill big stories the feeds dropped ----
+ * Per-outlet RSS only carries each site's latest handful of posts, so a
+ * huge story from 1-2 weeks ago scrolls off. GN search with after: covers
+ * the whole window, relevance-ranked. Matched stories just mark the
+ * existing card as top; unmatched ones are added as attributed cards. */
+
+async function googleNewsSearch(query, limit = 12) {
+  try {
+    const url =
+      "https://news.google.com/rss/search?q=" +
+      encodeURIComponent(`${query} after:${windowStart}`) +
+      "&hl=en-US&gl=US&ceid=US:en";
+    const xml = await fetchText(url);
+    return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)]
+      .slice(0, limit * 3)
+      .map((m, idx) => {
+        const block = m[1];
+        const grab = (re) => (block.match(re) || [])[1] || "";
+        const full = stripTags(grab(/<title>([\s\S]*?)<\/title>/));
+        return {
+          rank: idx,
+          headline: full.replace(/ - [^-]{2,40}$/, "").trim(),
+          source: stripTags(grab(/<source[^>]*>([\s\S]*?)<\/source>/)),
+          url: grab(/<link>([\s\S]*?)<\/link>/).trim(),
+          date: isoFrom(grab(/<pubDate>(.*?)<\/pubDate>/)),
+        };
+      })
+      .filter((i) => i.headline && i.date && inWindow(i.date))
+      .slice(0, limit);
+  } catch (err) {
+    console.warn(`  [gn-search] "${query}": ${err.message}`);
+    return [];
+  }
+}
+
+function backfill(items, gnItems, makeItem, junkRe, maxAdd) {
+  let added = 0;
+  for (const g of gnItems) {
+    if (junkRe && junkRe.test(g.headline)) continue;
+    const toks = headlineTokens(g.headline);
+    // 0.25 here (vs 0.3 for prominence): backfill adds cards, so the same
+    // story from two outlets must collapse even when worded differently.
+    const existing = items.find((i) =>
+      tokensMatch(headlineTokens(i.headline), toks, 0.25)
+    );
+    if (existing) {
+      if (g.rank < 10) {
+        existing.top = true;
+        existing._rank = existing._rank ?? 100 + g.rank;
+      }
+      continue;
+    }
+    if (added >= maxAdd) continue;
+    items.push({ ...makeItem(g), top: true, _rank: 100 + g.rank });
+    added += 1;
+  }
+  return items;
+}
+
+/** Same story, two outlets: collapse near-identical headlines (keep richer). */
+function fuzzyDedupe(items) {
+  const kept = [];
+  for (const i of items) {
+    const toks = headlineTokens(i.headline);
+    const dup = kept.find((k) => tokensMatch(headlineTokens(k.headline), toks));
+    if (dup) {
+      if ((i.summary || "").length > (dup.summary || "").length)
+        Object.assign(dup, i);
+      continue;
+    }
+    kept.push(i);
+  }
+  return kept;
 }
 
 /* ---------------- Entertainment: RSS ---------------- */
@@ -277,19 +362,54 @@ async function buildEntertainment() {
     seen.add(key);
     return true;
   });
+  items = fuzzyDedupe(items);
   items.sort((a, b) => b.date.localeCompare(a.date));
+  // Backfill big box-office milestones the per-outlet feeds scrolled past
+  // (they only carry each site's latest posts). The query's OR-group does
+  // the milestone filtering at the source; BACKFILL_SKIP_RE drops previews,
+  // reviews, explainers and speculative/question headlines, which make poor
+  // trivia cards.
+  const BACKFILL_SKIP_RE =
+    /\?|\bpreview\b|\breview\b|\bhow (many|to)\b|\bcould\b|\bwould\b|^(the )?\d+ (best|top|highest|greatest|worst|most)/i;
+  const gnBoxOffice = await googleNewsSearch(
+    '"box office" (record OR records OR billion OR milestone OR "highest grossing")',
+    20
+  );
+  backfill(
+    items,
+    gnBoxOffice,
+    (g) => ({
+      headline: g.headline,
+      date: g.date,
+      bucket: "Movies/TV",
+      summary: g.source ? `Reported by ${g.source}.` : "",
+      url: g.url,
+    }),
+    new RegExp(`${JUNK_RE.source}|${BACKFILL_SKIP_RE.source}`, "i"),
+    5
+  );
+  const gn = await googleNewsRanks(GN_ENTERTAINMENT);
   // Variety/Deadline publish far more per day than the celebrity feeds —
   // without a per-bucket cap they push every celebrity item past the cutoff.
-  const movies = items.filter((i) => i.bucket === "Movies/TV").slice(0, 9);
-  const celeb = items.filter((i) => i.bucket === "Celebrity").slice(0, 9);
-  const mixed = [...movies, ...celeb]
-    .sort((a, b) => b.date.localeCompare(a.date))
-    .slice(0, 18);
-  applyProminence(mixed, await googleNewsRanks(GN_ENTERTAINMENT));
-  return mixed.map((i) => {
-    const { bucket, ...rest } = i;
-    return { ...rest, tag: tagFor(i.headline, i.summary, bucket) };
-  });
+  // Prominence-sort before capping so big older stories survive.
+  const movies = applyProminence(
+    items.filter((i) => i.bucket === "Movies/TV"),
+    gn
+  ).slice(0, 10);
+  const celeb = applyProminence(
+    items.filter((i) => i.bucket === "Celebrity"),
+    gn
+  ).slice(0, 10);
+  return [...movies, ...celeb]
+    .sort(
+      (a, b) =>
+        (a._rank ?? 1e9) - (b._rank ?? 1e9) || b.date.localeCompare(a.date)
+    )
+    .slice(0, 20)
+    .map((i) => {
+      const { bucket, _rank, ...rest } = i;
+      return { ...rest, tag: tagFor(i.headline, i.summary, bucket) };
+    });
 }
 
 /* ---------------- Netflix: whats-on-netflix ---------------- */
