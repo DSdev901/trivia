@@ -1,6 +1,12 @@
 {
   "categories": [
     {
+      "id": "current-events",
+      "name": "Current Events",
+      "description": "The last 3 weeks, distilled: every Netflix original, the sports stories that matter, and entertainment headlines — refreshable on demand.",
+      "type": "current-events"
+    },
+    {
       "id": "presidents",
       "name": "Presidential Knowledge",
       "description": "All U.S. presidents — number, years served, ten facts, plus a shorthand connector fact each.",
@@ -14,12 +20,6 @@
         { "n": 4, "label": "Presidents 31–40", "range": "31–40" },
         { "n": 5, "label": "Presidents 41–47", "range": "41–47" }
       ]
-    },
-    {
-      "id": "current-events",
-      "name": "Current Events",
-      "description": "The last 3 weeks, distilled: every Netflix original, the sports stories that matter, and entertainment headlines — refreshable on demand.",
-      "type": "current-events"
     },
     {
       "id": "geography",
