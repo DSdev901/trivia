@@ -182,13 +182,17 @@ function openCategory(id) {
 function renderHub(category) {
   const flagged = flagCount(category.id);
   const geo = isGeography(category);
+  // Flag-for-replacement is a local authoring tool — hidden on the live site.
+  const canFlag = isLocalHost();
 
   els.hub.innerHTML = `
     <h2 class="section-title">${category.name}</h2>
     <p class="lede">${
       geo
         ? "Undergrad / pub-trivia waterways on a real map — mouths, capitals on rivers, landmarks — then spaced drills on the questions hosts actually ask."
-        : "Study the material, or quiz yourself until every question is cleared from rotation. Flag weak facts while reviewing so they can be replaced later."
+        : canFlag
+          ? "Study the material, or quiz yourself until every question is cleared from rotation. Flag weak facts while reviewing so they can be replaced later."
+          : "Study the material, or quiz yourself until every question is cleared from rotation."
     }</p>
     <div class="hub-actions">
       <button type="button" class="hub-card" id="hub-study">
@@ -207,14 +211,18 @@ function renderHub(category) {
             : "Pick one or more batches and work through multiple-choice questions."
         }</p>
       </button>
-      <button type="button" class="hub-card" id="hub-flags">
+      ${
+        canFlag
+          ? `<button type="button" class="hub-card" id="hub-flags">
         <h3>Flagged for replacement</h3>
         <p>${
           flagged
             ? `${flagged} item${flagged === 1 ? "" : "s"} waiting to be rewritten.`
             : "Nothing flagged yet. Use Flag on any fact or quiz question."
         }</p>
-      </button>
+      </button>`
+          : ""
+      }
     </div>
   `;
 
@@ -242,7 +250,7 @@ function renderHub(category) {
     els.subtitle.textContent = `${category.name} · ${geo ? "Map drill" : "Quiz setup"}`;
   });
 
-  document.getElementById("hub-flags").addEventListener("click", () => {
+  document.getElementById("hub-flags")?.addEventListener("click", () => {
     renderFlags();
     show("flags");
     els.subtitle.textContent = `${category.name} · Flagged`;
@@ -390,7 +398,11 @@ async function renderPresidentDetail() {
         <p class="detail-number">President #${president.number}</p>
         <h1>${president.name}</h1>
         <p class="detail-served">Served ${president.served}</p>
-        <p class="flag-hint">Flag any weak fact for replacement — it saves on this device.</p>
+        ${
+          isLocalHost()
+            ? `<p class="flag-hint">Flag any weak fact for replacement — it saves on this device.</p>`
+            : ""
+        }
         <section class="speech-panel" aria-label="Read aloud">
           <div class="speech-panel-top">
             <div>
@@ -441,16 +453,21 @@ async function renderPresidentDetail() {
       <ol class="facts">
         ${president.trivia
           .map((fact, i) => {
+            const canFlag = isLocalHost();
             const id = factFlagId(state.category.id, president.number, i);
-            const flagged = isFlagged(id);
+            const flagged = canFlag && isFlagged(id);
             return `
               <li data-n="${i + 1}" class="${flagged ? "is-flagged" : ""}" data-fact-index="${i}">
                 <div class="fact-text">${escapeHtml(fact)}</div>
-                <div class="fact-actions">
+                ${
+                  canFlag
+                    ? `<div class="fact-actions">
                   <button type="button" class="flag-btn ${flagged ? "is-on" : ""}" data-index="${i}" aria-pressed="${flagged}">
                     ${flagged ? "Flagged" : "Flag for replacement"}
                   </button>
-                </div>
+                </div>`
+                    : ""
+                }
               </li>`;
           })
           .join("")}
@@ -575,6 +592,10 @@ async function renderPresidentDetail() {
 }
 
 function renderFlags() {
+  if (!isLocalHost()) {
+    goHome();
+    return;
+  }
   const flags = listFlags(state.category.id);
   els.flags.innerHTML = `
     <h2 class="section-title">Flagged for replacement</h2>
@@ -780,16 +801,20 @@ function renderQuizQuestion() {
           )
           .join("")}
       </div>
-      <div class="quiz-flag-row">
+      ${
+        isLocalHost()
+          ? `<div class="quiz-flag-row">
         <button type="button" class="flag-btn ${flagged ? "is-on" : ""}" id="flag-quiz-q" aria-pressed="${flagged}">
           ${flagged ? "Flagged for replacement" : "Flag question for replacement"}
         </button>
-      </div>
+      </div>`
+          : ""
+      }
       <div id="quiz-feedback" class="quiz-feedback" hidden></div>
     </div>
   `;
 
-  document.getElementById("flag-quiz-q").addEventListener("click", () => {
+  document.getElementById("flag-quiz-q")?.addEventListener("click", () => {
     const nowFlagged = toggleFlag({
       id: qFlagId,
       type: "quiz",
