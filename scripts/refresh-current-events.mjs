@@ -80,34 +80,39 @@ function isoFrom(dateLike) {
 
 /* ---------------- Sports: ESPN ---------------- */
 
+// Fetch deep: ESPN floods its news endpoint with per-team "training camp:
+// latest intel" boilerplate (SPORTS_JUNK_RE strips those), so a small limit
+// can starve a league of real stories entirely.
 const ESPN_LEAGUES = [
-  ["football/nfl", "NFL", 10],
-  ["baseball/mlb", "MLB", 8],
-  ["basketball/nba", "NBA", 6],
-  ["basketball/wnba", "WNBA", 5],
-  ["hockey/nhl", "NHL", 5],
-  ["golf/pga", "Golf", 6],
-  ["soccer/eng.1", "Soccer", 6],
-  ["soccer/fifa.world", "Soccer", 5],
-  ["racing/nascar-premier", "NASCAR", 4],
-  ["tennis/atp", "Tennis", 4],
+  ["football/nfl", "NFL", 25],
+  ["baseball/mlb", "MLB", 18],
+  ["basketball/nba", "NBA", 15],
+  ["basketball/wnba", "WNBA", 10],
+  ["hockey/nhl", "NHL", 10],
+  ["golf/pga", "Golf", 10],
+  ["soccer/eng.1", "Soccer", 12],
+  ["soccer/fifa.world", "Soccer", 10],
+  ["racing/nascar-premier", "NASCAR", 6],
+  ["tennis/atp", "Tennis", 8],
 ];
 
 /** ESPN filler that isn't a notable story: fantasy advice, previews-as-content, podcasts. */
 const SPORTS_JUNK_RE =
-  /\bfantasy\b|forecaster|lineup advice|game highlights|\bpodcast\b|betting odds|how to watch|where to watch|\bodds\b|\bpicks\b|\brankings?\b|\bbuzz:|latest intel|intel, updates|new threads|experts? grad|grades for\b|mock (draft|trade)|some thoughts|\bhoping to\b/i;
+  /\bfantasy\b|forecaster|lineup advice|game highlights|\bpodcast\b|betting odds|how to watch|where to watch|\bodds\b|\bpicks\b|\brankings?\b|\bbuzz:|latest intel|intel, updates|new threads|experts? grad|grades for\b|mock (draft|trade)|some thoughts|\bhoping to\b|fight night|news roundup|trade grades|\bgrades:/i;
 
 function guessSport(text, league) {
   if (league) return league.toUpperCase();
   const t = text.toLowerCase();
-  if (/\bnfl\b|quarterback|super bowl/.test(t)) return "NFL";
+  if (/\bnfl\b|\bqb1?\b|quarterback|super bowl|touchdown|preseason|training camp/.test(t)) return "NFL";
+  if (/\bwnba\b/.test(t)) return "WNBA";
   if (/\bnba\b|basketball/.test(t)) return "NBA";
-  if (/\bmlb\b|baseball|world series/.test(t)) return "MLB";
+  if (/\bmlb\b|baseball|world series|little league/.test(t)) return "MLB";
   if (/\bnhl\b|hockey|stanley cup/.test(t)) return "NHL";
-  if (/soccer|premier league|world cup|mls/.test(t)) return "Soccer";
+  if (/\bufc\b|\bmma\b|boxing/.test(t)) return "MMA";
+  if (/soccer|premier league|world cup|mls|\bfifa\b/.test(t)) return "Soccer";
   if (/tennis|wimbledon|us open/.test(t)) return "Tennis";
-  if (/golf|pga|masters/.test(t)) return "Golf";
-  if (/f1|formula 1|nascar|grand prix/.test(t)) return "Racing";
+  if (/golf|\bpga\b|masters|fedex/.test(t)) return "Golf";
+  if (/\bf1\b|formula 1|nascar|grand prix/.test(t)) return "Racing";
   return "Sports";
 }
 
@@ -146,30 +151,35 @@ async function buildSports() {
   );
   items = fuzzyDedupe(items);
   items.sort((a, b) => b.date.localeCompare(a.date));
-  // ESPN only covers the last few days — backfill each week's biggest
-  // storylines (moves, records, titles) from GN search.
+  const sportsJunk = new RegExp(
+    `${SPORTS_JUNK_RE.source}|${BACKFILL_SKIP_RE.source}`,
+    "i"
+  );
+  const mkSport = (g) => ({
+    headline: g.headline,
+    date: g.date,
+    sport: guessSport(g.headline),
+    summary: g.source ? `Reported by ${g.source}.` : "",
+    url: g.url,
+  });
+  // GN is the coverage backbone: today's topic ranking plus each week's
+  // biggest storylines. ESPN supplies the rich summaries on top of that.
   await backfillWeekly(
     items,
-    '(signs OR traded OR trade OR "world record" OR championship OR suspended) (NFL OR NBA OR MLB OR WNBA OR NHL OR F1)',
-    {
-      perWeek: 3,
-      makeItem: (g) => ({
-        headline: g.headline,
-        date: g.date,
-        sport: guessSport(g.headline),
-        summary: g.source ? `Reported by ${g.source}.` : "",
-        url: g.url,
-      }),
-      junkRe: new RegExp(
-        `${SPORTS_JUNK_RE.source}|${BACKFILL_SKIP_RE.source}`,
-        "i"
-      ),
-    }
+    '(NFL OR NBA OR MLB OR WNBA OR NHL OR UFC OR "world record" OR championship OR "World Cup")',
+    { perWeek: 4, makeItem: mkSport, junkRe: sportsJunk }
   );
+  await backfillWeekly(
+    items,
+    '(signs OR traded OR trade OR suspended OR fired OR extension) (NFL OR NBA OR MLB OR WNBA OR NHL)',
+    { perWeek: 3, makeItem: mkSport, junkRe: sportsJunk }
+  );
+  const gnTopic = await googleNewsTopic(GN_SPORTS);
+  backfill(items, gnTopic, mkSport, sportsJunk, 6);
   items = fuzzyDedupe(items);
   items.sort((a, b) => b.date.localeCompare(a.date));
-  const ranked = applyProminence(items, await googleNewsRanks(GN_SPORTS));
-  return ranked.slice(0, 20).map((i) => {
+  const ranked = applyProminence(items, gnTopic);
+  return ranked.slice(0, 22).map((i) => {
     delete i._rank;
     return i;
   });
@@ -202,16 +212,31 @@ function headlineTokens(s) {
     .filter((w) => w.length > 2 && !STOPWORDS.has(w));
 }
 
-async function googleNewsRanks(url) {
+/**
+ * GN topic feed (SPORTS / ENTERTAINMENT): Google's own ranking of today's
+ * biggest stories. Full items (not just ranks) so unmatched top stories can
+ * be *added* to a section, not merely used to re-rank what we already have.
+ */
+async function googleNewsTopic(url, limit = 15) {
   try {
     const xml = await fetchText(url);
     return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)]
       .map((m, idx) => {
-        const raw = (m[1].match(/<title>([\s\S]*?)<\/title>/) || [])[1] || "";
-        const clean = stripTags(raw).replace(/ - [^-]{2,40}$/, ""); // " - Source"
-        return { rank: idx, tokens: headlineTokens(clean) };
+        const block = m[1];
+        const grab = (re) => (block.match(re) || [])[1] || "";
+        const full = stripTags(grab(/<title>([\s\S]*?)<\/title>/));
+        const headline = full.replace(/ - [^-]{2,40}$/, "").trim();
+        return {
+          rank: idx,
+          headline,
+          tokens: headlineTokens(headline),
+          source: stripTags(grab(/<source[^>]*>([\s\S]*?)<\/source>/)),
+          url: grab(/<link>([\s\S]*?)<\/link>/).trim(),
+          date: isoFrom(grab(/<pubDate>(.*?)<\/pubDate>/)),
+        };
       })
-      .filter((g) => g.tokens.length >= 3);
+      .filter((i) => i.headline && i.tokens.length >= 3 && i.date && inWindow(i.date))
+      .slice(0, limit);
   } catch (err) {
     console.warn(`  [googlenews] ${err.message}`);
     return [];
@@ -496,7 +521,29 @@ async function buildEntertainment() {
   );
   items = fuzzyDedupe(items);
   items.sort((a, b) => b.date.localeCompare(a.date));
-  const gn = await googleNewsRanks(GN_ENTERTAINMENT);
+  // GN topic ranking defines today's top entertainment stories — add any we
+  // don't already carry (RSS feeds alone miss some), then use it to rank.
+  const gn = await googleNewsTopic(GN_ENTERTAINMENT);
+  backfill(
+    items,
+    gn,
+    (g) => ({
+      headline: g.headline,
+      date: g.date,
+      bucket:
+        /box office|film|movie|series|\btv\b|show|trailer|netflix|premiere|sequel|remake|killed off|season \d|finale/i.test(
+          g.headline
+        )
+          ? "Movies/TV"
+          : "Celebrity",
+      summary: g.source ? `Reported by ${g.source}.` : "",
+      url: g.url,
+    }),
+    entJunk,
+    5
+  );
+  items = fuzzyDedupe(items);
+  items.sort((a, b) => b.date.localeCompare(a.date));
   // Variety/Deadline publish far more per day than the celebrity feeds —
   // without a per-bucket cap they push every celebrity item past the cutoff.
   // Prominence-sort before capping so big older stories survive.
