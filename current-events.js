@@ -72,6 +72,21 @@ function timeAgo(iso) {
   return `${Math.round(hours / 24)}d ago`;
 }
 
+/** Live refresh only makes sense where the refresh endpoint/script can run. */
+function isLocalHost() {
+  const h = location.hostname;
+  return (
+    h === "localhost" ||
+    h === "127.0.0.1" ||
+    h === "::1" ||
+    h === "0.0.0.0" ||
+    h.endsWith(".local") ||
+    /^192\.168\./.test(h) ||
+    /^10\./.test(h) ||
+    /^172\.(1[6-9]|2\d|3[01])\./.test(h)
+  );
+}
+
 /* ---------------- speech text ---------------- */
 
 const DAY_ORDINALS = [
@@ -334,6 +349,7 @@ function speechPanelHtml() {
 function render() {
   if (!ce.root) return;
   const updated = latestGeneratedAt();
+  const canRefresh = isLocalHost();
   ce.root.innerHTML = `
     <div class="ce-head">
       <div>
@@ -343,10 +359,14 @@ function render() {
       </div>
       <div class="ce-refresh-wrap">
         ${updated ? `<span class="ce-updated">Updated ${timeAgo(updated)}</span>` : ""}
-        <button type="button" class="ce-refresh" id="ce-refresh" ${ce.refreshing ? "disabled" : ""}>
+        ${
+          canRefresh
+            ? `<button type="button" class="ce-refresh" id="ce-refresh" ${ce.refreshing ? "disabled" : ""}>
           <span class="ce-refresh-icon ${ce.refreshing ? "is-spinning" : ""}">⟳</span>
           ${ce.refreshing ? "Refreshing…" : "Refresh"}
-        </button>
+        </button>`
+            : ""
+        }
       </div>
     </div>
     ${ce.notice ? `<p class="ce-notice">${escapeHtml(ce.notice)}</p>` : ""}
@@ -378,7 +398,7 @@ function render() {
     });
   });
 
-  document.getElementById("ce-refresh").addEventListener("click", refreshData);
+  document.getElementById("ce-refresh")?.addEventListener("click", refreshData);
 
   ce.root.querySelectorAll(".ce-speak").forEach((btn) => {
     btn.addEventListener("click", () => playItems([Number(btn.dataset.speak)]));
