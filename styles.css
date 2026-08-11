@@ -1465,6 +1465,42 @@ body {
   color: var(--ink-soft);
 }
 
+.ce-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+}
+
+.ce-filter-chip {
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--stripe);
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.ce-filter-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.ce-filter-chip.is-on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.ce-filter-count {
+  opacity: 0.75;
+  font-weight: 400;
+}
+
 .ce-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));

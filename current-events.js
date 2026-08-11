@@ -23,6 +23,7 @@ const SECTIONS = [
 const ce = {
   data: {}, // sectionId -> payload
   tab: "netflix",
+  netflixFilter: "all", // "all" | "shows" | "movies"
   refreshing: false,
   notice: "",
   root: null,
@@ -30,6 +31,18 @@ const ce = {
   canSpeak: false,
   playing: false,
 };
+
+// Episodic types count as shows; one-off releases count as movies.
+const SHOW_TYPES = new Set(["Series", "Docuseries"]);
+const NETFLIX_FILTERS = [
+  { id: "all", label: "All" },
+  { id: "shows", label: "Shows" },
+  { id: "movies", label: "Movies" },
+];
+
+function netflixKind(item) {
+  return SHOW_TYPES.has(item.type) ? "shows" : "movies";
+}
 
 function escapeHtml(s) {
   return String(s ?? "")
@@ -162,9 +175,13 @@ function latestGeneratedAt() {
 
 function activeItems() {
   const payload = ce.data[ce.tab];
-  return [...(payload?.items || [])].sort((a, b) =>
+  const items = [...(payload?.items || [])].sort((a, b) =>
     (b.date || "").localeCompare(a.date || "")
   );
+  if (ce.tab === "netflix" && ce.netflixFilter !== "all") {
+    return items.filter((i) => netflixKind(i) === ce.netflixFilter);
+  }
+  return items;
 }
 
 /* ---------------- rendering ---------------- */
@@ -216,11 +233,35 @@ function storyCard(item, idx) {
     </article>`;
 }
 
+function netflixFilterBar(allItems) {
+  const counts = { all: allItems.length, shows: 0, movies: 0 };
+  for (const i of allItems) counts[netflixKind(i)] += 1;
+  return `
+    <div class="ce-filter" role="group" aria-label="Filter Netflix releases">
+      ${NETFLIX_FILTERS.map(
+        (f) => `
+        <button type="button" class="ce-filter-chip ${
+          ce.netflixFilter === f.id ? "is-on" : ""
+        }" data-nfilter="${f.id}">${f.label} <span class="ce-filter-count">${
+          counts[f.id]
+        }</span></button>`
+      ).join("")}
+    </div>`;
+}
+
 function renderBody() {
   const payload = ce.data[ce.tab];
   if (!payload) return `<p class="error">No data for this section yet.</p>`;
   const items = activeItems();
-  if (!items.length) return `<p class="lede">Nothing found in this window.</p>`;
+  const filterBar =
+    ce.tab === "netflix"
+      ? netflixFilterBar(
+          [...(payload.items || [])] // unfiltered for counts
+        )
+      : "";
+  if (!items.length) {
+    return `${filterBar}<p class="lede">Nothing found for this filter in the current window.</p>`;
+  }
   const cards =
     ce.tab === "netflix"
       ? items.map(netflixCard).join("")
@@ -229,6 +270,7 @@ function renderBody() {
     <p class="ce-window">Covering ${fmtRange(payload.windowStart, payload.windowEnd)} · ${
       items.length
     } ${ce.tab === "netflix" ? "releases" : "stories"}</p>
+    ${filterBar}
     <div class="${ce.tab === "netflix" ? "ce-grid" : "ce-list"}">${cards}</div>`;
 }
 
@@ -324,6 +366,14 @@ function render() {
       stopPlayback();
       ce.tab = btn.dataset.tab;
       ce.notice = "";
+      render();
+    });
+  });
+
+  ce.root.querySelectorAll(".ce-filter-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      stopPlayback();
+      ce.netflixFilter = btn.dataset.nfilter;
       render();
     });
   });
