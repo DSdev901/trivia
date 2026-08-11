@@ -33,6 +33,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes — data already up to date."
           else
-            git commit -m "Refresh current events data [skip ci]"
+            git commit -m "Refresh current events data"
             git push
           fi
