@@ -95,7 +95,21 @@ const ESPN_LEAGUES = [
 
 /** ESPN filler that isn't a notable story: fantasy advice, previews-as-content, podcasts. */
 const SPORTS_JUNK_RE =
-  /\bfantasy\b|forecaster|lineup advice|game highlights|\bpodcast\b|betting odds/i;
+  /\bfantasy\b|forecaster|lineup advice|game highlights|\bpodcast\b|betting odds|how to watch|where to watch|\bodds\b|\bpicks\b|\brankings?\b|\bbuzz:|latest intel|intel, updates|new threads|experts? grad|grades for\b|mock (draft|trade)|some thoughts|\bhoping to\b/i;
+
+function guessSport(text, league) {
+  if (league) return league.toUpperCase();
+  const t = text.toLowerCase();
+  if (/\bnfl\b|quarterback|super bowl/.test(t)) return "NFL";
+  if (/\bnba\b|basketball/.test(t)) return "NBA";
+  if (/\bmlb\b|baseball|world series/.test(t)) return "MLB";
+  if (/\bnhl\b|hockey|stanley cup/.test(t)) return "NHL";
+  if (/soccer|premier league|world cup|mls/.test(t)) return "Soccer";
+  if (/tennis|wimbledon|us open/.test(t)) return "Tennis";
+  if (/golf|pga|masters/.test(t)) return "Golf";
+  if (/f1|formula 1|nascar|grand prix/.test(t)) return "Racing";
+  return "Sports";
+}
 
 async function buildSports() {
   const seen = new Set();
@@ -132,8 +146,30 @@ async function buildSports() {
   );
   items = fuzzyDedupe(items);
   items.sort((a, b) => b.date.localeCompare(a.date));
+  // ESPN only covers the last few days — backfill each week's biggest
+  // storylines (moves, records, titles) from GN search.
+  await backfillWeekly(
+    items,
+    '(signs OR traded OR trade OR "world record" OR championship OR suspended) (NFL OR NBA OR MLB OR WNBA OR NHL OR F1)',
+    {
+      perWeek: 3,
+      makeItem: (g) => ({
+        headline: g.headline,
+        date: g.date,
+        sport: guessSport(g.headline),
+        summary: g.source ? `Reported by ${g.source}.` : "",
+        url: g.url,
+      }),
+      junkRe: new RegExp(
+        `${SPORTS_JUNK_RE.source}|${BACKFILL_SKIP_RE.source}`,
+        "i"
+      ),
+    }
+  );
+  items = fuzzyDedupe(items);
+  items.sort((a, b) => b.date.localeCompare(a.date));
   const ranked = applyProminence(items, await googleNewsRanks(GN_SPORTS));
-  return ranked.slice(0, 18).map((i) => {
+  return ranked.slice(0, 20).map((i) => {
     delete i._rank;
     return i;
   });
@@ -221,11 +257,14 @@ function applyProminence(items, gnList) {
  * the whole window, relevance-ranked. Matched stories just mark the
  * existing card as top; unmatched ones are added as attributed cards. */
 
-async function googleNewsSearch(query, limit = 12) {
+async function googleNewsSearch(query, limit = 12, range = null) {
   try {
+    const when = range
+      ? `after:${range.after} before:${range.before}`
+      : `after:${windowStart}`;
     const url =
       "https://news.google.com/rss/search?q=" +
-      encodeURIComponent(`${query} after:${windowStart}`) +
+      encodeURIComponent(`${query} ${when}`) +
       "&hl=en-US&gl=US&ceid=US:en";
     const xml = await fetchText(url);
     return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)]
@@ -235,7 +274,7 @@ async function googleNewsSearch(query, limit = 12) {
         const grab = (re) => (block.match(re) || [])[1] || "";
         const full = stripTags(grab(/<title>([\s\S]*?)<\/title>/));
         return {
-          rank: idx,
+          rank: idx + (range?.offset ?? 0),
           headline: full.replace(/ - [^-]{2,40}$/, "").trim(),
           source: stripTags(grab(/<source[^>]*>([\s\S]*?)<\/source>/)),
           url: grab(/<link>([\s\S]*?)<\/link>/).trim(),
@@ -247,6 +286,35 @@ async function googleNewsSearch(query, limit = 12) {
   } catch (err) {
     console.warn(`  [gn-search] "${query}": ${err.message}`);
     return [];
+  }
+}
+
+/**
+ * Three week-sized slices of the window, newest first. GN search ranks by
+ * relevance within a date range, so chunking beats the feed-wide recency
+ * bias — each week contributes its own biggest stories. The offset keeps
+ * newer weeks ahead of older ones in the final ordering.
+ */
+function weekChunks() {
+  const chunks = [];
+  const end = new Date(`${windowEnd}T12:00:00Z`);
+  for (let w = 0; w < 3; w++) {
+    const before = new Date(end.getTime() - w * 7 * 86400000);
+    const after = new Date(before.getTime() - 7 * 86400000);
+    chunks.push({
+      after: after.toISOString().slice(0, 10),
+      before: before.toISOString().slice(0, 10),
+      offset: w * 25,
+    });
+  }
+  return chunks;
+}
+
+async function backfillWeekly(items, query, { perWeek, makeItem, junkRe }) {
+  for (const range of weekChunks()) {
+    const found = await googleNewsSearch(query, 8, range);
+    backfill(items, found, makeItem, junkRe, perWeek);
+    await sleep(400);
   }
 }
 
@@ -305,7 +373,7 @@ const RSS_FEEDS = [
 
 /** Commerce/listicle filler that slips into celebrity feeds. */
 const JUNK_RE =
-  /\b(loafers|sneakers|sandals|leggings|lipstick|mascara|faves|gift guide|deals|under \$\d+|where to buy|shop now|amazon arrivals)\b|\bon sale\b|\bsale (is|alert)\b|^\d+\s+(best|top)\b/i;
+  /\b(loafers|sneakers|sandals|leggings|lipstick|mascara|faves|gift guide|deals|under \$\d+|where to buy|shop now|amazon arrivals)\b|\bon sale\b|\bsale (is|alert)\b|^\d+\s+(best|top|celebrit)\b/i;
 
 /**
  * Display tag: milestone-type stories (records, box office, anniversaries)
@@ -314,6 +382,14 @@ const JUNK_RE =
  */
 const MILESTONE_RE =
   /box office|highest-grossing|opening weekend|biggest (opening|debut|weekend|premiere)|most[- ]watched|billion|surpass(?:es|ed)?|overtake(?:s|n)?|crosses \$|breaks? (?:the )?record|record-breaking|record high|shatters?|milestone|\b\d+(?:th|st|nd|rd) anniversary\b/i;
+
+/**
+ * Backfill headlines are attribution-only (no summary available), so they're
+ * held to a higher bar — skip previews, reviews, questions, watch guides,
+ * listicles, betting/promo content, and speculation.
+ */
+const BACKFILL_SKIP_RE =
+  /\?|\bpreview(s)?\b|\breview(s)?\b|\bhow (many|to)\b|how to watch|where to watch|what to watch|\bcould\b|\bwould\b|\bpromo\b|promo code|bonus|sleeper|\bodds\b|\bdfs\b|prediction|\bpicks\b|jewelry|of all time|\bsale\b|best deal|subscription|\btracker\b|\brumors?\b|landing spots|destinations for|latest (intel|updates|news|buzz)|\bbuzz:|inside a week|week in review|wedding singer|\bevery\b.{0,24}?\b(deal|winner|loser|move)s?\b|all \d+ teams|\beach team'?s\b|^(the )?\d+ (best|top|highest|greatest|worst|most|celebrit|movies|films|shows|things|ways|times|moments|significant|biggest|takeaways|surprises)/i;
 
 function tagFor(headline, summary, bucket) {
   return MILESTONE_RE.test(`${headline} ${summary}`) ? "Milestone" : bucket;
@@ -364,30 +440,62 @@ async function buildEntertainment() {
   });
   items = fuzzyDedupe(items);
   items.sort((a, b) => b.date.localeCompare(a.date));
-  // Backfill big box-office milestones the per-outlet feeds scrolled past
-  // (they only carry each site's latest posts). The query's OR-group does
-  // the milestone filtering at the source; BACKFILL_SKIP_RE drops previews,
-  // reviews, explainers and speculative/question headlines, which make poor
-  // trivia cards.
-  const BACKFILL_SKIP_RE =
-    /\?|\bpreview\b|\breview\b|\bhow (many|to)\b|\bcould\b|\bwould\b|^(the )?\d+ (best|top|highest|greatest|worst|most)/i;
-  const gnBoxOffice = await googleNewsSearch(
-    '"box office" (record OR records OR billion OR milestone OR "highest grossing")',
-    20
+  // Per-outlet feeds only carry their latest posts, so each week's biggest
+  // stories scroll off. Backfill from GN search, week by week: box-office
+  // milestones and major celebrity moments. The queries' OR-groups do the
+  // milestone filtering at the source; BACKFILL_SKIP_RE drops previews,
+  // reviews, listicles and speculative/question headlines.
+  const entJunk = new RegExp(
+    `${JUNK_RE.source}|${BACKFILL_SKIP_RE.source}`,
+    "i"
   );
-  backfill(
+  await backfillWeekly(
     items,
-    gnBoxOffice,
-    (g) => ({
-      headline: g.headline,
-      date: g.date,
-      bucket: "Movies/TV",
-      summary: g.source ? `Reported by ${g.source}.` : "",
-      url: g.url,
-    }),
-    new RegExp(`${JUNK_RE.source}|${BACKFILL_SKIP_RE.source}`, "i"),
-    5
+    '"box office" (record OR records OR billion OR milestone OR "highest grossing")',
+    {
+      perWeek: 3,
+      makeItem: (g) => ({
+        headline: g.headline,
+        date: g.date,
+        bucket: "Movies/TV",
+        summary: g.source ? `Reported by ${g.source}.` : "",
+        url: g.url,
+      }),
+      junkRe: entJunk,
+    }
   );
+  await backfillWeekly(
+    items,
+    '(marries OR weds OR "ties the knot" OR wedding) (actor OR actress OR singer OR rapper OR star)',
+    {
+      perWeek: 2,
+      makeItem: (g) => ({
+        headline: g.headline,
+        date: g.date,
+        bucket: "Celebrity",
+        summary: g.source ? `Reported by ${g.source}.` : "",
+        url: g.url,
+      }),
+      junkRe: entJunk,
+    }
+  );
+  await backfillWeekly(
+    items,
+    "(actor OR actress OR singer OR rapper OR comedian) (dies OR dead OR death)",
+    {
+      perWeek: 2,
+      makeItem: (g) => ({
+        headline: g.headline,
+        date: g.date,
+        bucket: "Celebrity",
+        summary: g.source ? `Reported by ${g.source}.` : "",
+        url: g.url,
+      }),
+      junkRe: entJunk,
+    }
+  );
+  items = fuzzyDedupe(items);
+  items.sort((a, b) => b.date.localeCompare(a.date));
   const gn = await googleNewsRanks(GN_ENTERTAINMENT);
   // Variety/Deadline publish far more per day than the celebrity feeds —
   // without a per-bucket cap they push every celebrity item past the cutoff.
