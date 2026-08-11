@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+._*
+
+# Raw Natural Earth sources (only the *-simplified.geojson files are used at runtime;
+# re-download from naturalearthdata.com if ever needed)
+data/geography/ne-provinces.geojson
+data/geography/ne-countries.geojson

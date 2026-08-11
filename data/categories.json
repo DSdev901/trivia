@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "id": "presidents",
+      "name": "Presidential Knowledge",
+      "description": "All U.S. presidents — number, years served, ten facts, plus a shorthand connector fact each.",
+      "type": "presidents",
+      "batchCount": 5,
+      "batchPath": "data/presidents/batch-{n}.json",
+      "batches": [
+        { "n": 1, "label": "Presidents 1–10", "range": "1–10" },
+        { "n": 2, "label": "Presidents 11–20", "range": "11–20" },
+        { "n": 3, "label": "Presidents 21–30", "range": "21–30" },
+        { "n": 4, "label": "Presidents 31–40", "range": "31–40" },
+        { "n": 5, "label": "Presidents 41–47", "range": "41–47" }
+      ]
+    },
+    {
+      "id": "current-events",
+      "name": "Current Events",
+      "description": "The last 3 weeks, distilled: every Netflix original, the sports stories that matter, and entertainment headlines — refreshable on demand.",
+      "type": "current-events"
+    },
+    {
+      "id": "geography",
+      "name": "Geography",
+      "description": "Map atlas + spaced map drills for major waterways — outlets, countries, capitals, and regions that touch them.",
+      "type": "geography",
+      "continents": [
+        { "id": "africa", "name": "Africa", "path": "data/geography/africa.json" },
+        { "id": "antarctica", "name": "Antarctica", "path": "data/geography/antarctica.json" },
+        { "id": "asia", "name": "Asia", "path": "data/geography/asia.json" },
+        { "id": "europe", "name": "Europe", "path": "data/geography/europe.json" },
+        { "id": "north-america", "name": "North America", "path": "data/geography/north-america.json" },
+        { "id": "oceania", "name": "Oceania", "path": "data/geography/oceania.json" },
+        { "id": "south-america", "name": "South America", "path": "data/geography/south-america.json" }
+      ]
+    }
+  ]
+}

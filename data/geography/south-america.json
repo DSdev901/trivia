@@ -1,0 +1,186 @@
+{
+  "id": "south-america",
+  "name": "South America",
+  "waterways": [
+    {
+      "id": "amazon",
+      "name": "Amazon River",
+      "kind": "river",
+      "depth": 1,
+      "outlet": "Atlantic Ocean",
+      "countries": ["Brazil", "Peru", "Colombia", "Ecuador", "Bolivia", "Venezuela", "Guyana", "Suriname", "French Guiana"],
+      "capitals": [
+        { "city": "Brasília", "country": "Brazil", "depth": 2 },
+        { "city": "Lima", "country": "Peru", "depth": 2 },
+        { "city": "Bogotá", "country": "Colombia", "depth": 2 },
+        { "city": "Quito", "country": "Ecuador", "depth": 3 }
+      ],
+      "regions": [
+        { "name": "Amazon Rainforest", "type": "region", "depth": 1 },
+        { "name": "Manaus", "type": "city", "depth": 1 },
+        { "name": "Amazonas (Brazil)", "type": "state", "depth": 2 },
+        { "name": "Pará", "type": "state", "depth": 2 }
+      ],
+      "facts": [
+        { "text": "Largest river by discharge; among the longest; empties into the Atlantic on Brazil’s north coast.", "depth": 1, "tags": ["outlet", "discharge"] },
+        { "text": "Most of its course is in Brazil; headwaters reach the Andes in Peru.", "depth": 1, "tags": ["countries"] },
+        { "text": "Manaus sits at the “meeting of the waters” where the Rio Negro joins the Amazon.", "depth": 1, "tags": ["city"] },
+        { "text": "Pub-trivia shorthand: biggest by water volume — rainforest highway to the Atlantic.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "parana",
+      "name": "Paraná River",
+      "kind": "river",
+      "depth": 1,
+      "outlet": "Atlantic Ocean (via Río de la Plata)",
+      "countries": ["Brazil", "Paraguay", "Argentina"],
+      "capitals": [
+        { "city": "Asunción", "country": "Paraguay", "depth": 1 },
+        { "city": "Buenos Aires", "country": "Argentina", "depth": 1 },
+        { "city": "Brasília", "country": "Brazil", "depth": 3 }
+      ],
+      "regions": [
+        { "name": "Iguazú Falls", "type": "waterfall", "depth": 1 },
+        { "name": "Río de la Plata", "type": "estuary", "depth": 1 },
+        { "name": "Itaipu Dam", "type": "dam", "depth": 2 }
+      ],
+      "facts": [
+        { "text": "Second only to the Amazon in South American importance; reaches the sea through the Río de la Plata.", "depth": 1, "tags": ["outlet"] },
+        { "text": "Asunción, Paraguay’s capital, lies on the Paraguay–Paraná system; Buenos Aires sits on the Plata estuary.", "depth": 1, "tags": ["capital"] },
+        { "text": "Iguazú Falls are on a Paraná tributary at the Brazil–Argentina border (near Paraguay).", "depth": 1, "tags": ["waterfall"] },
+        { "text": "Pub-trivia shorthand: path to the Plata — Asunción and Buenos Aires connection.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "orinoco",
+      "name": "Orinoco River",
+      "kind": "river",
+      "depth": 1,
+      "outlet": "Atlantic Ocean",
+      "countries": ["Venezuela", "Colombia"],
+      "capitals": [
+        { "city": "Caracas", "country": "Venezuela", "depth": 2 },
+        { "city": "Bogotá", "country": "Colombia", "depth": 3 }
+      ],
+      "regions": [
+        { "name": "Llanos", "type": "plain", "depth": 2 },
+        { "name": "Orinoco Delta", "type": "delta", "depth": 1 },
+        { "name": "Casiquiare canal", "type": "natural canal", "depth": 3 }
+      ],
+      "facts": [
+        { "text": "Northern South America’s great river; mostly in Venezuela; empties into the Atlantic via a broad delta.", "depth": 1, "tags": ["outlet", "countries"] },
+        { "text": "The Casiquiare links the Orinoco basin to the Amazon basin — a rare natural canal.", "depth": 3, "tags": ["canal"] },
+        { "text": "Pub-trivia shorthand: Venezuela’s river to the Atlantic delta.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "rio-de-la-plata",
+      "name": "Río de la Plata",
+      "kind": "estuary",
+      "depth": 1,
+      "outlet": "Atlantic Ocean",
+      "countries": ["Argentina", "Uruguay"],
+      "capitals": [
+        { "city": "Buenos Aires", "country": "Argentina", "depth": 1 },
+        { "city": "Montevideo", "country": "Uruguay", "depth": 1 }
+      ],
+      "regions": [
+        { "name": "Buenos Aires Province", "type": "province", "depth": 2 },
+        { "name": "Paraná Delta", "type": "delta", "depth": 2 }
+      ],
+      "facts": [
+        { "text": "Wide estuary formed by the Paraná and Uruguay rivers; sometimes called a river itself.", "depth": 1, "tags": ["outlet"] },
+        { "text": "Buenos Aires and Montevideo face each other across the Plata.", "depth": 1, "tags": ["capital"] },
+        { "text": "Pub-trivia shorthand: capital-vs-capital estuary of Argentina and Uruguay.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "lake-titicaca",
+      "name": "Lake Titicaca",
+      "kind": "lake",
+      "depth": 1,
+      "outlet": "Desaguadero River → Lake Poopó system (endorheic)",
+      "countries": ["Peru", "Bolivia"],
+      "capitals": [
+        { "city": "Lima", "country": "Peru", "depth": 3 },
+        { "city": "La Paz", "country": "Bolivia", "depth": 2 },
+        { "city": "Sucre", "country": "Bolivia", "depth": 3 }
+      ],
+      "regions": [
+        { "name": "Altiplano", "type": "plateau", "depth": 1 },
+        { "name": "Puno", "type": "city", "depth": 2 },
+        { "name": "Copacabana", "type": "town", "depth": 3 }
+      ],
+      "facts": [
+        { "text": "Highest large navigable lake in the world; shared by Peru and Bolivia on the Altiplano.", "depth": 1, "tags": ["countries"] },
+        { "text": "Sacred in Andean civilizations; sits about 3,800 m (12,500 ft) above sea level.", "depth": 1, "tags": ["elevation"] },
+        { "text": "Pub-trivia shorthand: sky-high Peru–Bolivia lake of the Andes.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "strait-of-magellan",
+      "name": "Strait of Magellan",
+      "kind": "strait",
+      "depth": 1,
+      "outlet": "Links Atlantic and Pacific Oceans",
+      "countries": ["Chile", "Argentina (nearby Tierra del Fuego claims/coasts)"],
+      "capitals": [
+        { "city": "Santiago", "country": "Chile", "depth": 3 },
+        { "city": "Punta Arenas", "country": "Chile", "depth": 2 }
+      ],
+      "regions": [
+        { "name": "Tierra del Fuego", "type": "archipelago", "depth": 1 },
+        { "name": "Patagonia", "type": "region", "depth": 1 },
+        { "name": "Cape Horn", "type": "cape", "depth": 2 }
+      ],
+      "facts": [
+        { "text": "Natural passage between the Atlantic and Pacific at South America’s tip, north of Tierra del Fuego.", "depth": 1, "tags": ["outlet"] },
+        { "text": "Named for Ferdinand Magellan (1520); safer historically than rounding Cape Horn.", "depth": 1, "tags": ["history"] },
+        { "text": "Pub-trivia shorthand: Magellan’s shortcut before Cape Horn / Panama Canal eras.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "caribbean-sa",
+      "name": "Caribbean Sea (South American shore)",
+      "kind": "sea",
+      "depth": 1,
+      "outlet": "Atlantic Ocean",
+      "countries": ["Colombia", "Venezuela", "Guyana", "Suriname", "French Guiana (Atlantic more than Caribbean for the Guianas)"],
+      "capitals": [
+        { "city": "Bogotá", "country": "Colombia", "depth": 2 },
+        { "city": "Caracas", "country": "Venezuela", "depth": 1 },
+        { "city": "Georgetown", "country": "Guyana", "depth": 2 }
+      ],
+      "regions": [
+        { "name": "Lake Maracaibo", "type": "lake / lagoon", "depth": 2 },
+        { "name": "ABC islands", "type": "islands", "depth": 3 }
+      ],
+      "facts": [
+        { "text": "Northern Colombia and Venezuela face the Caribbean; Caracas is near that northern coast.", "depth": 1, "tags": ["countries", "capital"] },
+        { "text": "Pub-trivia shorthand: SA’s Caribbean rim — Colombia and Venezuela up top.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "atlantic-sa",
+      "name": "South Atlantic (eastern shore)",
+      "kind": "ocean",
+      "depth": 2,
+      "outlet": "Atlantic Ocean",
+      "countries": ["Brazil", "Uruguay", "Argentina"],
+      "capitals": [
+        { "city": "Brasília", "country": "Brazil", "depth": 3 },
+        { "city": "Montevideo", "country": "Uruguay", "depth": 1 },
+        { "city": "Buenos Aires", "country": "Argentina", "depth": 1 }
+      ],
+      "regions": [
+        { "name": "Brazilian Highlands coast", "type": "coast", "depth": 3 },
+        { "name": "Patagonian coast", "type": "coast", "depth": 2 }
+      ],
+      "facts": [
+        { "text": "Brazil, Uruguay, and Argentina share South America’s long Atlantic façade.", "depth": 2, "tags": ["countries"] },
+        { "text": "Pub-trivia shorthand: the Portuguese–Spanish Atlantic rim of SA.", "depth": 2, "tags": ["shorthand"] }
+      ]
+    }
+  ]
+}

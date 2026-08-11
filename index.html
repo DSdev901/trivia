@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Helper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="top">
+        <div class="brand">
+          <p class="brand-mark">Trivia Helper</p>
+          <p class="brand-sub" id="subtitle">Pick a category</p>
+        </div>
+        <nav class="nav" id="nav" hidden>
+          <button type="button" class="nav-btn" id="back-btn">Back</button>
+          <button type="button" class="nav-btn" id="home-btn">Categories</button>
+        </nav>
+      </header>
+
+      <main>
+        <section id="view-categories" class="view"></section>
+        <section id="view-hub" class="view" hidden></section>
+        <section id="view-batches" class="view" hidden></section>
+        <section id="view-presidents" class="view" hidden></section>
+        <section id="view-continents" class="view" hidden></section>
+        <section id="view-waterways" class="view" hidden></section>
+        <section id="view-detail" class="view" hidden></section>
+        <section id="view-quiz-setup" class="view" hidden></section>
+        <section id="view-quiz" class="view" hidden></section>
+        <section id="view-quiz-done" class="view" hidden></section>
+        <section id="view-flags" class="view" hidden></section>
+        <section id="view-current-events" class="view" hidden></section>
+      </main>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

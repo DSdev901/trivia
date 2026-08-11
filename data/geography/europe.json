@@ -1,0 +1,189 @@
+{
+  "id": "europe",
+  "name": "Europe",
+  "waterways": [
+    {
+      "id": "danube",
+      "name": "Danube River",
+      "kind": "river",
+      "depth": 1,
+      "outlet": "Black Sea",
+      "countries": ["Germany", "Austria", "Slovakia", "Hungary", "Croatia", "Serbia", "Romania", "Bulgaria", "Moldova", "Ukraine"],
+      "capitals": [
+        { "city": "Vienna", "country": "Austria", "depth": 1 },
+        { "city": "Bratislava", "country": "Slovakia", "depth": 1 },
+        { "city": "Budapest", "country": "Hungary", "depth": 1 },
+        { "city": "Belgrade", "country": "Serbia", "depth": 1 },
+        { "city": "Bucharest", "country": "Romania", "depth": 2 }
+      ],
+      "regions": [
+        { "name": "Iron Gates", "type": "gorge", "depth": 2 },
+        { "name": "Danube Delta", "type": "delta", "depth": 1 }
+      ],
+      "facts": [
+        { "text": "Europe’s second-longest river; flows through or along more countries than any other major river, ending in the Black Sea.", "depth": 1, "tags": ["outlet", "countries"] },
+        { "text": "Capitals on the Danube include Vienna, Bratislava, Budapest, and Belgrade.", "depth": 1, "tags": ["capital"] },
+        { "text": "Pub-trivia shorthand: four-capital river to the Black Sea.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "rhine",
+      "name": "Rhine River",
+      "kind": "river",
+      "depth": 1,
+      "outlet": "North Sea",
+      "countries": ["Switzerland", "Liechtenstein", "Austria", "Germany", "France", "Netherlands"],
+      "capitals": [
+        { "city": "Bern", "country": "Switzerland", "depth": 3 },
+        { "city": "Amsterdam", "country": "Netherlands", "depth": 2 },
+        { "city": "Vaduz", "country": "Liechtenstein", "depth": 2 }
+      ],
+      "regions": [
+        { "name": "Ruhr", "type": "industrial region", "depth": 2 },
+        { "name": "Rhine Gorge", "type": "gorge", "depth": 2 },
+        { "name": "Rotterdam", "type": "port city", "depth": 1 }
+      ],
+      "facts": [
+        { "text": "Western Europe’s key commercial waterway; empties through the Netherlands into the North Sea.", "depth": 1, "tags": ["outlet"] },
+        { "text": "Rotterdam, near the Rhine–Meuse–Scheldt delta, is Europe’s largest seaport.", "depth": 1, "tags": ["port"] },
+        { "text": "Forms part of the France–Germany border in Alsace.", "depth": 2, "tags": ["countries"] },
+        { "text": "Pub-trivia shorthand: German industrial spine to Rotterdam’s North Sea mouth.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "volga",
+      "name": "Volga River",
+      "kind": "river",
+      "depth": 1,
+      "outlet": "Caspian Sea",
+      "countries": ["Russia"],
+      "capitals": [
+        { "city": "Moscow", "country": "Russia", "depth": 2 }
+      ],
+      "regions": [
+        { "name": "Volgograd", "type": "city", "depth": 1 },
+        { "name": "Kazan", "type": "city", "depth": 2 },
+        { "name": "Nizhny Novgorod", "type": "city", "depth": 2 }
+      ],
+      "facts": [
+        { "text": "Europe’s longest river; entirely in Russia; empties into the landlocked Caspian Sea.", "depth": 1, "tags": ["outlet", "length"] },
+        { "text": "Volgograd (formerly Stalingrad) sits on the Volga.", "depth": 1, "tags": ["city"] },
+        { "text": "Pub-trivia shorthand: longest in Europe — but to the Caspian, not an ocean.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "seine",
+      "name": "Seine River",
+      "kind": "river",
+      "depth": 1,
+      "outlet": "English Channel",
+      "countries": ["France"],
+      "capitals": [
+        { "city": "Paris", "country": "France", "depth": 1 }
+      ],
+      "regions": [
+        { "name": "Île de la Cité", "type": "island", "depth": 2 },
+        { "name": "Le Havre", "type": "port city", "depth": 2 },
+        { "name": "Normandy", "type": "region", "depth": 2 }
+      ],
+      "facts": [
+        { "text": "Paris is built on the Seine; the river reaches the English Channel at the Normandy coast.", "depth": 1, "tags": ["capital", "outlet"] },
+        { "text": "Pub-trivia shorthand: Paris’s river to the Channel.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "thames",
+      "name": "River Thames",
+      "kind": "river",
+      "depth": 1,
+      "outlet": "North Sea",
+      "countries": ["United Kingdom"],
+      "capitals": [
+        { "city": "London", "country": "United Kingdom", "depth": 1 }
+      ],
+      "regions": [
+        { "name": "Greater London", "type": "region", "depth": 1 },
+        { "name": "Thames Estuary", "type": "estuary", "depth": 2 },
+        { "name": "Oxford", "type": "city", "depth": 2 }
+      ],
+      "facts": [
+        { "text": "England’s most famous river; London spans it; empties via a wide estuary into the North Sea.", "depth": 1, "tags": ["capital", "outlet"] },
+        { "text": "Pub-trivia shorthand: London’s tidal river to the North Sea.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "mediterranean-europe",
+      "name": "Mediterranean Sea (European shore)",
+      "kind": "sea",
+      "depth": 1,
+      "outlet": "Atlantic Ocean (via Strait of Gibraltar)",
+      "countries": ["Spain", "France", "Monaco", "Italy", "Slovenia", "Croatia", "Bosnia and Herzegovina", "Montenegro", "Albania", "Greece", "Turkey", "Malta", "Cyprus"],
+      "capitals": [
+        { "city": "Rome", "country": "Italy", "depth": 1 },
+        { "city": "Athens", "country": "Greece", "depth": 1 },
+        { "city": "Madrid", "country": "Spain", "depth": 2 },
+        { "city": "Paris", "country": "France", "depth": 3 },
+        { "city": "Valletta", "country": "Malta", "depth": 2 },
+        { "city": "Nicosia", "country": "Cyprus", "depth": 2 }
+      ],
+      "regions": [
+        { "name": "Adriatic Sea", "type": "sea", "depth": 2 },
+        { "name": "Aegean Sea", "type": "sea", "depth": 2 },
+        { "name": "Strait of Gibraltar", "type": "strait", "depth": 1 }
+      ],
+      "facts": [
+        { "text": "Southern Europe’s defining sea; linked to the Atlantic only through Gibraltar.", "depth": 1, "tags": ["outlet"] },
+        { "text": "Italian and Greek capitals (Rome, Athens) sit near major Mediterranean coasts/gulfs.", "depth": 1, "tags": ["capital"] },
+        { "text": "Pub-trivia shorthand: Europe’s southern bathtub — Gibraltar is the drain plug to the Atlantic.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "baltic",
+      "name": "Baltic Sea",
+      "kind": "sea",
+      "depth": 1,
+      "outlet": "North Sea (via Kattegat / Skagerrak / Danish straits)",
+      "countries": ["Sweden", "Finland", "Russia", "Estonia", "Latvia", "Lithuania", "Poland", "Germany", "Denmark"],
+      "capitals": [
+        { "city": "Stockholm", "country": "Sweden", "depth": 1 },
+        { "city": "Helsinki", "country": "Finland", "depth": 1 },
+        { "city": "Riga", "country": "Latvia", "depth": 1 },
+        { "city": "Tallinn", "country": "Estonia", "depth": 1 },
+        { "city": "Vilnius", "country": "Lithuania", "depth": 2 },
+        { "city": "Copenhagen", "country": "Denmark", "depth": 1 },
+        { "city": "Warsaw", "country": "Poland", "depth": 3 }
+      ],
+      "regions": [
+        { "name": "Gulf of Bothnia", "type": "gulf", "depth": 2 },
+        { "name": "Gulf of Finland", "type": "gulf", "depth": 2 }
+      ],
+      "facts": [
+        { "text": "Brackish inland sea of Northern Europe; exits toward the North Sea through Danish waters.", "depth": 1, "tags": ["outlet"] },
+        { "text": "Stockholm, Helsinki, Riga, Tallinn, and Copenhagen are classic Baltic capitals/ports.", "depth": 1, "tags": ["capital"] },
+        { "text": "Pub-trivia shorthand: the nearly landlocked northern sea of the Nordics and Baltics.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    },
+    {
+      "id": "english-channel",
+      "name": "English Channel",
+      "kind": "channel",
+      "depth": 1,
+      "outlet": "Atlantic Ocean / North Sea",
+      "countries": ["United Kingdom", "France"],
+      "capitals": [
+        { "city": "London", "country": "United Kingdom", "depth": 2 },
+        { "city": "Paris", "country": "France", "depth": 2 }
+      ],
+      "regions": [
+        { "name": "Strait of Dover", "type": "strait", "depth": 1 },
+        { "name": "Normandy", "type": "region", "depth": 2 },
+        { "name": "Channel Tunnel", "type": "tunnel", "depth": 1 }
+      ],
+      "facts": [
+        { "text": "Arm of the Atlantic separating southern England from northern France; narrowest at Dover–Calais.", "depth": 1, "tags": ["countries"] },
+        { "text": "The Channel Tunnel (Chunnel) runs beneath the Strait of Dover.", "depth": 1, "tags": ["tunnel"] },
+        { "text": "Pub-trivia shorthand: Dover’s skinny gap — swim it or take the Chunnel.", "depth": 1, "tags": ["shorthand"] }
+      ]
+    }
+  ]
+}
