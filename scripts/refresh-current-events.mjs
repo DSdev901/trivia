@@ -140,6 +140,18 @@ const RSS_FEEDS = [
 const JUNK_RE =
   /\b(loafers|sneakers|sandals|leggings|lipstick|mascara|faves|gift guide|deals|under \$\d+|where to buy|shop now|amazon arrivals)\b|\bon sale\b|\bsale (is|alert)\b|^\d+\s+(best|top)\b/i;
 
+/**
+ * Display tag: milestone-type stories (records, box office, anniversaries)
+ * get their own label regardless of which feed they came from. The source
+ * bucket still drives the per-section balance caps below.
+ */
+const MILESTONE_RE =
+  /box office|highest-grossing|opening weekend|biggest (opening|debut|weekend|premiere)|most[- ]watched|billion|surpass(?:es|ed)?|overtake(?:s|n)?|crosses \$|breaks? (?:the )?record|record-breaking|record high|shatters?|milestone|\b\d+(?:th|st|nd|rd) anniversary\b/i;
+
+function tagFor(headline, summary, bucket) {
+  return MILESTONE_RE.test(`${headline} ${summary}`) ? "Milestone" : bucket;
+}
+
 function parseRss(xml, tag) {
   const items = [];
   for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
@@ -157,7 +169,7 @@ function parseRss(xml, tag) {
     items.push({
       headline,
       date,
-      tag,
+      bucket: tag,
       summary: pick("description").slice(0, 420),
       url: pick("link"),
     });
@@ -185,12 +197,16 @@ async function buildEntertainment() {
   });
   items.sort((a, b) => b.date.localeCompare(a.date));
   // Variety/Deadline publish far more per day than the celebrity feeds —
-  // without a per-tag cap they push every celebrity item past the cutoff.
-  const movies = items.filter((i) => i.tag === "Movies/TV").slice(0, 9);
-  const celeb = items.filter((i) => i.tag === "Celebrity").slice(0, 9);
+  // without a per-bucket cap they push every celebrity item past the cutoff.
+  const movies = items.filter((i) => i.bucket === "Movies/TV").slice(0, 9);
+  const celeb = items.filter((i) => i.bucket === "Celebrity").slice(0, 9);
   return [...movies, ...celeb]
     .sort((a, b) => b.date.localeCompare(a.date))
-    .slice(0, 18);
+    .slice(0, 18)
+    .map((i) => {
+      const { bucket, ...rest } = i;
+      return { ...rest, tag: tagFor(i.headline, i.summary, bucket) };
+    });
 }
 
 /* ---------------- Netflix: whats-on-netflix ---------------- */
