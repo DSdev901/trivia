@@ -1,0 +1,44 @@
+name: Cache Entertainment Headlines
+
+# Google News and RSS only keep a few days of posts. Snapshot every three
+# hours into a rolling 14-day archive and publish entertainment.json so the
+# live Entertainment tab updates with each run.
+
+on:
+  schedule:
+    # Staggered 7 minutes after the ESPN cache (17 */3) to avoid colliding.
+    - cron: "24 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: current-events-data-writer
+  cancel-in-progress: false
+
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Update entertainment archive and feed
+        run: node scripts/cache-entertainment.mjs
+
+      - name: Commit updated Entertainment data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/current-events/entertainment-headlines.json data/current-events/entertainment.json
+          if git diff --cached --quiet; then
+            echo "No entertainment cache changes."
+          else
+            git commit -m "Cache entertainment headlines"
+            git pull --rebase
+            git push
+          fi

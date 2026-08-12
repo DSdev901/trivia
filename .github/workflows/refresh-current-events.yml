@@ -31,6 +31,9 @@ jobs:
       - name: Refresh ESPN sports archive
         run: node scripts/cache-espn-headlines.mjs
 
+      - name: Refresh entertainment archive
+        run: node scripts/cache-entertainment.mjs
+
       - name: Refresh current events data
         run: node scripts/refresh-current-events.mjs
 

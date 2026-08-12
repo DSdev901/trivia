@@ -6,7 +6,7 @@
  *
  * Sources (no API keys, no dependencies):
  *   Sports        — ESPN only (rolling 14-day archive, published every 3h)
- *   Entertainment — RSS feeds + Google News prominence / backfill
+ *   Entertainment — Google News + RSS (rolling 14-day archive, published every 3h)
  *   Netflix       — whats-on-netflix.com monthly "What's Coming" listings
  *
  * A section is only overwritten when its fetch produced enough items;
@@ -20,6 +20,13 @@ import {
   enrichThinSummaries,
   isEspnVideoStub,
 } from "./lib/summaries.mjs";
+import {
+  RETENTION_DAYS as ENT_DAYS,
+  fetchLiveEntertainment,
+  publishEntertainmentFeed,
+  readArchive as readEntertainmentArchive,
+  upsertStories,
+} from "./lib/entertainment.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_DIR = path.join(ROOT, "data", "current-events");
@@ -211,16 +218,6 @@ async function buildSports() {
   return items;
 }
 
-/* ------------- Google News: coverage + prominence -------------
- * GN topic feeds rank the biggest stories across all outlets and cover the
- * last ~48h. They both add missing stories and rank matching ESPN/RSS cards;
- * the weekly searches below extend coverage across the full window. */
-
-const GN_SPORTS =
-  "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=en-US&gl=US&ceid=US:en";
-const GN_ENTERTAINMENT =
-  "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-US&gl=US&ceid=US:en";
-
 const STOPWORDS = new Set([
   "the", "a", "an", "and", "or", "of", "to", "in", "on", "for", "with",
   "over", "after", "as", "at", "by", "from", "is", "are", "was", "were",
@@ -236,159 +233,11 @@ function headlineTokens(s) {
     .filter((w) => w.length > 2 && !STOPWORDS.has(w));
 }
 
-/**
- * GN topic feed (SPORTS / ENTERTAINMENT): Google's own ranking of today's
- * biggest stories. Full items (not just ranks) so unmatched top stories can
- * be *added* to a section, not merely used to re-rank what we already have.
- */
-async function googleNewsTopic(url, limit = 15) {
-  try {
-    const xml = await fetchText(url);
-    return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)]
-      .map((m, idx) => {
-        const block = m[1];
-        const grab = (re) => (block.match(re) || [])[1] || "";
-        const full = stripTags(grab(/<title>([\s\S]*?)<\/title>/));
-        const headline = full.replace(/ - [^-]{2,40}$/, "").trim();
-        return {
-          rank: idx,
-          headline,
-          tokens: headlineTokens(headline),
-          source: stripTags(grab(/<source[^>]*>([\s\S]*?)<\/source>/)),
-          url: grab(/<link>([\s\S]*?)<\/link>/).trim(),
-          date: isoFrom(grab(/<pubDate>(.*?)<\/pubDate>/)),
-        };
-      })
-      .filter((i) => i.headline && i.tokens.length >= 3 && i.date && inWindow(i.date))
-      .slice(0, limit);
-  } catch (err) {
-    console.warn(`  [googlenews] ${err.message}`);
-    return [];
-  }
-}
-
 function tokensMatch(aTokens, bTokens, minScore = 0.3) {
   const a = new Set(aTokens);
   const shared = bTokens.filter((w) => a.has(w)).length;
   const union = new Set([...aTokens, ...bTokens]).size;
   return shared >= 4 && shared / union >= minScore;
-}
-
-/** Rank of the best-matching GN top story, or null when not matched. */
-function gnRank(headline, gnList) {
-  const toks = headlineTokens(headline);
-  let best = null;
-  for (const g of gnList) {
-    if (tokensMatch(toks, g.tokens) && (best === null || g.rank < best))
-      best = g.rank;
-  }
-  return best;
-}
-
-/** GN-matched stories first (by rank), the rest after (by date). */
-function applyProminence(items, gnList) {
-  for (const i of items) {
-    const r = gnRank(i.headline, gnList);
-    if (r !== null) {
-      i.top = true;
-      i._rank = r; // topic rank outranks backfill rank (100+)
-    } else if (i._rank === undefined) i._rank = null;
-  }
-  items.sort(
-    (a, b) => (a._rank ?? 1e9) - (b._rank ?? 1e9) || b.date.localeCompare(a.date)
-  );
-  return items;
-}
-
-/* --------- Google News search: backfill big stories the feeds dropped ----
- * Per-outlet RSS only carries each site's latest handful of posts, so a
- * huge story from 1-2 weeks ago scrolls off. GN search with after: covers
- * the whole window, relevance-ranked. Matched stories just mark the
- * existing card as top; unmatched ones are added as attributed cards. */
-
-async function googleNewsSearch(query, limit = 12, range = null) {
-  try {
-    const when = range
-      ? `after:${range.after} before:${range.before}`
-      : `after:${windowStart}`;
-    const url =
-      "https://news.google.com/rss/search?q=" +
-      encodeURIComponent(`${query} ${when}`) +
-      "&hl=en-US&gl=US&ceid=US:en";
-    const xml = await fetchText(url);
-    return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)]
-      .slice(0, limit * 3)
-      .map((m, idx) => {
-        const block = m[1];
-        const grab = (re) => (block.match(re) || [])[1] || "";
-        const full = stripTags(grab(/<title>([\s\S]*?)<\/title>/));
-        return {
-          rank: idx + (range?.offset ?? 0),
-          headline: full.replace(/ - [^-]{2,40}$/, "").trim(),
-          source: stripTags(grab(/<source[^>]*>([\s\S]*?)<\/source>/)),
-          url: grab(/<link>([\s\S]*?)<\/link>/).trim(),
-          date: isoFrom(grab(/<pubDate>(.*?)<\/pubDate>/)),
-        };
-      })
-      .filter((i) => i.headline && i.date && inWindow(i.date))
-      .slice(0, limit);
-  } catch (err) {
-    console.warn(`  [gn-search] "${query}": ${err.message}`);
-    return [];
-  }
-}
-
-/**
- * Three week-sized slices of the window, newest first. GN search ranks by
- * relevance within a date range, so chunking beats the feed-wide recency
- * bias — each week contributes its own biggest stories. The offset keeps
- * newer weeks ahead of older ones in the final ordering.
- */
-function weekChunks() {
-  const chunks = [];
-  const end = new Date(`${windowEnd}T12:00:00Z`);
-  for (let w = 0; w < 3; w++) {
-    const before = new Date(end.getTime() - w * 7 * 86400000);
-    const after = new Date(before.getTime() - 7 * 86400000);
-    chunks.push({
-      after: after.toISOString().slice(0, 10),
-      before: before.toISOString().slice(0, 10),
-      offset: w * 25,
-    });
-  }
-  return chunks;
-}
-
-async function backfillWeekly(items, query, { perWeek, makeItem, junkRe }) {
-  for (const range of weekChunks()) {
-    const found = await googleNewsSearch(query, 8, range);
-    backfill(items, found, makeItem, junkRe, perWeek);
-    await sleep(400);
-  }
-}
-
-function backfill(items, gnItems, makeItem, junkRe, maxAdd) {
-  let added = 0;
-  for (const g of gnItems) {
-    if (junkRe && junkRe.test(g.headline)) continue;
-    const toks = headlineTokens(g.headline);
-    // 0.25 here (vs 0.3 for prominence): backfill adds cards, so the same
-    // story from two outlets must collapse even when worded differently.
-    const existing = items.find((i) =>
-      tokensMatch(headlineTokens(i.headline), toks, 0.25)
-    );
-    if (existing) {
-      if (g.rank < 10) {
-        existing.top = true;
-        existing._rank = existing._rank ?? 100 + g.rank;
-      }
-      continue;
-    }
-    if (added >= maxAdd) continue;
-    items.push({ ...makeItem(g), top: true, _rank: 100 + g.rank });
-    added += 1;
-  }
-  return items;
 }
 
 /** Same story, two outlets: collapse near-identical headlines (keep richer). */
@@ -407,196 +256,53 @@ function fuzzyDedupe(items) {
   return kept;
 }
 
-/* ---------------- Entertainment: RSS ---------------- */
-
-// people.com/feed/ hard-blocks bots (Cloudflare 403); Page Six + Us Weekly
-// cover the same celebrity beat.
-const RSS_FEEDS = [
-  ["https://variety.com/feed/", "Movies/TV"],
-  ["https://deadline.com/feed/", "Movies/TV"],
-  ["https://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml", "Celebrity"],
-  ["https://pagesix.com/feed/", "Celebrity"],
-  ["https://www.usmagazine.com/feed/", "Celebrity"],
-  ["https://www.tmz.com/rss.xml", "Celebrity"],
-];
-
-/** Commerce/listicle filler that slips into celebrity feeds. */
-const JUNK_RE =
-  /\b(loafers|sneakers|sandals|leggings|lipstick|mascara|faves|gift guide|deals|under \$\d+|where to buy|shop now|amazon arrivals)\b|\bon sale\b|\bsale (is|alert)\b|^\d+\s+(best|top|celebrit)\b|\bhoroscope\b/i;
-
 /**
- * Display tag: milestone-type stories (records, box office, anniversaries)
- * get their own label regardless of which feed they came from. The source
- * bucket still drives the per-section balance caps below.
+ * Entertainment is owned by the 3-hour cache (archive + published feed).
+ * The Tuesday refresh merges a fresh snapshot into that archive so it
+ * never wipes accumulated 14-day coverage.
  */
-const MILESTONE_RE =
-  /box office|highest-grossing|opening weekend|biggest (opening|debut|weekend|premiere)|most[- ]watched|billion|surpass(?:es|ed)?|overtake(?:s|n)?|crosses \$|breaks? (?:the )?record|record-breaking|record high|shatters?|milestone|\b\d+(?:th|st|nd|rd) anniversary\b/i;
-
-/**
- * Backfill headlines are attribution-only (no summary available), so they're
- * held to a higher bar — skip previews, reviews, questions, watch guides,
- * listicles, betting/promo content, and speculation.
- */
-const BACKFILL_SKIP_RE =
-  /\?|\bpreview(s)?\b|\breview(s)?\b|\bhow (many|to)\b|how to watch|where to watch|what to watch|\bcould\b|\bwould\b|\bpromo\b|promo code|bonus|sleeper|\bodds\b|\bdfs\b|prediction|\bpicks\b|jewelry|of all time|\bsale\b|best deal|subscription|\btracker\b|\brumors?\b|landing spots|destinations for|latest (intel|updates|news|buzz)|\bbuzz:|inside a week|week in review|wedding singer|\bevery\b.{0,24}?\b(deal|winner|loser|move)s?\b|all \d+ teams|\beach team'?s\b|^(the )?\d+ (best|top|highest|greatest|worst|most|celebrit|movies|films|shows|things|ways|times|moments|significant|biggest|takeaways|surprises)/i;
-
-function tagFor(headline, summary, bucket) {
-  return MILESTONE_RE.test(`${headline} ${summary}`) ? "Milestone" : bucket;
-}
-
-function parseRss(xml, tag) {
-  const items = [];
-  for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
-    const block = m[1];
-    const pick = (name) => {
-      const mm = block.match(
-        new RegExp(`<${name}[^>]*>([\\s\\S]*?)<\\/${name}>`)
-      );
-      return mm ? stripTags(mm[1]) : "";
-    };
-    const date = isoFrom(pick("pubDate"));
-    const headline = pick("title");
-    if (!date || !inWindow(date) || !headline || JUNK_RE.test(headline))
-      continue;
-    items.push({
-      headline,
-      date,
-      bucket: tag,
-      summary: pick("description").slice(0, 420),
-      url: pick("link"),
-    });
-  }
-  return items;
-}
-
 async function buildEntertainment() {
-  const seen = new Set();
-  let items = [];
-  await Promise.all(
-    RSS_FEEDS.map(async ([url, tag]) => {
-      try {
-        items.push(...parseRss(await fetchText(url), tag));
-      } catch (err) {
-        console.warn(`  [entertainment] ${url}: ${err.message}`);
-      }
-    })
+  const archiveFile = path.join(OUT_DIR, "entertainment-headlines.json");
+  const feedFile = path.join(OUT_DIR, "entertainment.json");
+  const entStart = new Date(now.getTime() - ENT_DAYS * 86400000)
+    .toISOString()
+    .slice(0, 10);
+  const existing = (await readEntertainmentArchive(archiveFile)).filter(
+    (i) => i.date >= entStart && i.date <= windowEnd
   );
-  items = items.filter((i) => {
-    const key = i.headline.toLowerCase();
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
-  items = fuzzyDedupe(items);
-  items.sort((a, b) => b.date.localeCompare(a.date));
-  // Per-outlet feeds only carry their latest posts, so each week's biggest
-  // stories scroll off. Backfill from GN search, week by week: box-office
-  // milestones and major celebrity moments. The queries' OR-groups do the
-  // milestone filtering at the source; BACKFILL_SKIP_RE drops previews,
-  // reviews, listicles and speculative/question headlines.
-  const entJunk = new RegExp(
-    `${JUNK_RE.source}|${BACKFILL_SKIP_RE.source}`,
-    "i"
+  const byKey = new Map();
+  upsertStories(byKey, existing);
+  const live = await fetchLiveEntertainment(entStart, windowEnd);
+  upsertStories(
+    byKey,
+    live.map((i) => ({ ...i, firstSeen: now.toISOString() }))
   );
-  await backfillWeekly(
-    items,
-    '"box office" (record OR records OR billion OR milestone OR "highest grossing")',
-    {
-      perWeek: 3,
-      makeItem: (g) => ({
-        headline: g.headline,
-        date: g.date,
-        bucket: "Movies/TV",
-        summary: g.source ? `Reported by ${g.source}.` : "",
-        url: g.url,
-      }),
-      junkRe: entJunk,
-    }
-  );
-  await backfillWeekly(
-    items,
-    '(marries OR weds OR "ties the knot" OR wedding) (actor OR actress OR singer OR rapper OR star)',
-    {
-      perWeek: 2,
-      makeItem: (g) => ({
-        headline: g.headline,
-        date: g.date,
-        bucket: "Celebrity",
-        summary: g.source ? `Reported by ${g.source}.` : "",
-        url: g.url,
-      }),
-      junkRe: entJunk,
-    }
-  );
-  await backfillWeekly(
-    items,
-    "(actor OR actress OR singer OR rapper OR comedian) (dies OR dead OR death)",
-    {
-      perWeek: 2,
-      makeItem: (g) => ({
-        headline: g.headline,
-        date: g.date,
-        bucket: "Celebrity",
-        summary: g.source ? `Reported by ${g.source}.` : "",
-        url: g.url,
-      }),
-      junkRe: entJunk,
-    }
-  );
-  items = fuzzyDedupe(items);
-  items.sort((a, b) => b.date.localeCompare(a.date));
-  // GN topic ranking defines today's top entertainment stories — add any we
-  // don't already carry (RSS feeds alone miss some), then use it to rank.
-  const gn = await googleNewsTopic(GN_ENTERTAINMENT);
-  backfill(
-    items,
-    gn,
-    (g) => ({
-      headline: g.headline,
-      date: g.date,
-      bucket:
-        /box office|film|movie|series|\btv\b|show|trailer|netflix|premiere|sequel|remake|killed off|season \d|finale/i.test(
-          g.headline
-        )
-          ? "Movies/TV"
-          : "Celebrity",
-      summary: g.source ? `Reported by ${g.source}.` : "",
-      url: g.url,
-    }),
-    entJunk,
-    5
-  );
-  items = fuzzyDedupe(items);
-  items.sort((a, b) => b.date.localeCompare(a.date));
-  // Variety/Deadline publish far more per day than the celebrity feeds —
-  // without a per-bucket cap they push every celebrity item past the cutoff.
-  // Prominence-sort before capping so big older stories survive.
-  const movies = applyProminence(
-    items.filter((i) => i.bucket === "Movies/TV"),
-    gn
-  ).slice(0, 10);
-  const celeb = applyProminence(
-    items.filter((i) => i.bucket === "Celebrity"),
-    gn
-  ).slice(0, 10);
-  const capped = [...movies, ...celeb]
+  const items = [...byKey.values()]
+    .filter((i) => i.date >= entStart && i.date <= windowEnd)
     .sort(
       (a, b) =>
-        (a._rank ?? 1e9) - (b._rank ?? 1e9) || b.date.localeCompare(a.date)
-    )
-    .slice(0, 20)
-    .map((i) => {
-      const { bucket, _rank, ...rest } = i;
-      return { ...rest, tag: tagFor(i.headline, i.summary, bucket) };
-    });
-  const n = await enrichThinSummaries(capped, {
-    minLen: 80,
-    espn: false,
-    page: true,
-    wiki: true,
+        b.date.localeCompare(a.date) ||
+        (a.bestRank ?? 1e9) - (b.bestRank ?? 1e9)
+    );
+  const result = await publishEntertainmentFeed({
+    archiveFile,
+    feedFile,
+    items,
+    nowIso: now.toISOString(),
+    windowStart: entStart,
+    windowEnd,
   });
-  if (n) console.log(`  [entertainment] enriched ${n} thin summaries`);
-  return capped;
+  console.log(
+    `  [entertainment] archive ${result.archived}; feed ${result.published} ` +
+      `(${result.enriched} summaries enriched)`
+  );
+  return items.map((i) => ({
+    headline: i.headline,
+    date: i.date,
+    tag: i.bucket,
+    summary: i.summary,
+    url: i.url,
+  }));
 }
 
 /* ---------------- Netflix: whats-on-netflix ---------------- */
@@ -1014,7 +720,8 @@ async function main() {
   ]);
   const results = await Promise.all([
     writeSection("sports", sports, 5),
-    writeSection("entertainment", entertainment, 5),
+    // Entertainment is published by buildEntertainment() into the 14-day archive.
+    Promise.resolve(entertainment.length >= 5),
     writeSection("netflix", netflix, 5),
   ]);
   const ok = results.filter(Boolean).length;
