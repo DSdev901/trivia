@@ -14,6 +14,10 @@ on:
 permissions:
   contents: write # needed to push the refreshed data commit
 
+concurrency:
+  group: current-events-data-writer
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest

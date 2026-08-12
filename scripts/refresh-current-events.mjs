@@ -149,6 +149,43 @@ async function buildSports() {
       }
     })
   );
+  // The ESPN endpoint only exposes its latest 50 items and ignores date/
+  // pagination parameters. A separate three-hour GitHub Action snapshots
+  // those responses into a rolling 14-day archive; merge that history before
+  // ranking so headlines that have already rolled off ESPN remain eligible.
+  try {
+    const archive = JSON.parse(
+      await readFile(
+        path.join(OUT_DIR, "espn-headlines.json"),
+        "utf8"
+      )
+    );
+    for (const a of archive.items || []) {
+      const date = isoFrom(a.published);
+      const headline = (a.headline || "").trim();
+      if (
+        !date ||
+        !inWindow(date) ||
+        !headline ||
+        seen.has(headline) ||
+        SPORTS_JUNK_RE.test(headline)
+      ) {
+        continue;
+      }
+      seen.add(headline);
+      items.push({
+        headline,
+        date,
+        sport: a.sport || guessSport(headline),
+        summary: (a.summary || "").trim(),
+        url: a.url || "",
+      });
+    }
+  } catch (err) {
+    if (err.code !== "ENOENT") {
+      console.warn(`  [sports] ESPN archive: ${err.message}`);
+    }
+  }
   items = fuzzyDedupe(items);
   items.sort((a, b) => b.date.localeCompare(a.date));
   const sportsJunk = new RegExp(
@@ -185,12 +222,10 @@ async function buildSports() {
   });
 }
 
-/* ------------- Google News: prominence signal -------------
- * GN topic feeds rank the biggest stories across all outlets, but only
- * cover the last ~48h and carry no summaries. So they are used purely as
- * a ranking layer: items from our full-window sources that match a GN top
- * story get `top: true` and sort first. If GN is unreachable, nothing
- * changes. */
+/* ------------- Google News: coverage + prominence -------------
+ * GN topic feeds rank the biggest stories across all outlets and cover the
+ * last ~48h. They both add missing stories and rank matching ESPN/RSS cards;
+ * the weekly searches below extend coverage across the full window. */
 
 const GN_SPORTS =
   "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=en-US&gl=US&ceid=US:en";

@@ -1,0 +1,45 @@
+name: Cache ESPN Headlines
+
+# ESPN only exposes the latest 50 stories per league. Snapshot every three
+# hours so busy news cycles are preserved in a rolling 14-day archive.
+
+on:
+  schedule:
+    # Offset from round hours to avoid peak GitHub Actions scheduler traffic.
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Serialize with the Tuesday Current Events refresh; both workflows commit
+# generated data to main.
+concurrency:
+  group: current-events-data-writer
+  cancel-in-progress: false
+
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Update rolling ESPN archive
+        run: node scripts/cache-espn-headlines.mjs
+
+      - name: Commit updated archive
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/current-events/espn-headlines.json
+          if git diff --cached --quiet; then
+            echo "No ESPN cache changes."
+          else
+            git commit -m "Cache ESPN headlines"
+            git pull --rebase
+            git push
+          fi
