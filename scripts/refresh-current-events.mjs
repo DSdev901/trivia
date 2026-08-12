@@ -581,18 +581,103 @@ function synopsisFromExtract(extract) {
   return chosen.length > 320 ? `${chosen.slice(0, 317).trim()}…` : chosen;
 }
 
+function tvmazeType(show) {
+  const t = String(show?.type || "").toLowerCase();
+  if (t === "documentary") return "Documentary";
+  if (t === "reality") return "Reality";
+  if (t === "animation") return "Series";
+  if (t === "award show") return "Special";
+  if (t === "talk show") return "Series";
+  if (t === "sports") return "Documentary";
+  return "Series";
+}
+
+function stripHtmlBrief(html) {
+  return stripTags(html).replace(/\s+/g, " ").trim();
+}
+
+/**
+ * TVMaze web schedule: every Netflix-original episode that aired in the
+ * window, worldwide (Netflix's webChannel has no country). Grouped into
+ * one card per show, dated to the first new episode in the window.
+ * This is the only source that reliably catches returning seasons.
+ */
+async function fetchTvmazeNetflix() {
+  const byShow = new Map();
+  const start = new Date(`${windowStart}T12:00:00Z`);
+  const end = new Date(`${windowEnd}T12:00:00Z`);
+  for (let t = start.getTime(); t <= end.getTime(); t += 86400000) {
+    const date = new Date(t).toISOString().slice(0, 10);
+    try {
+      const episodes = JSON.parse(
+        await fetchText(
+          `https://api.tvmaze.com/schedule/web?date=${date}`,
+          20000,
+          "TriviaHelper/1.0 (https://github.com/DSdev901/trivia)"
+        )
+      );
+      for (const ep of episodes || []) {
+        const show = ep._embedded?.show;
+        if (show?.webChannel?.name !== "Netflix") continue;
+        const air = isoFrom(ep.airdate || date);
+        if (!air || !inWindow(air)) continue;
+        const prev = byShow.get(show.id);
+        if (!prev || air < prev.date) {
+          byShow.set(show.id, {
+            tvmazeId: show.id,
+            title: show.name,
+            type: tvmazeType(show),
+            date: air,
+            season: ep.season || 1,
+            synopsis: stripHtmlBrief(show.summary) || "Netflix Original release.",
+            starring: [],
+          });
+        }
+      }
+    } catch (err) {
+      console.warn(`  [netflix] tvmaze ${date}: ${err.message}`);
+    }
+    await sleep(250);
+  }
+
+  const items = [...byShow.values()];
+  for (const item of items) {
+    if (item.season > 1) item.title = `${item.title} (Season ${item.season})`;
+    try {
+      const cast = JSON.parse(
+        await fetchText(
+          `https://api.tvmaze.com/shows/${item.tvmazeId}/cast`,
+          15000,
+          "TriviaHelper/1.0 (https://github.com/DSdev901/trivia)"
+        )
+      );
+      item.starring = (cast || [])
+        .map((c) => c.person?.name)
+        .filter(Boolean)
+        .slice(0, 6);
+    } catch (err) {
+      console.warn(`  [netflix] tvmaze cast "${item.title}": ${err.message}`);
+    }
+    delete item.tvmazeId;
+    delete item.season;
+    await sleep(250);
+  }
+  return items;
+}
+
 async function enrichNetflix(items) {
-  for (const item of items.slice(0, 30)) {
+  for (const item of items) {
+    const hasBody =
+      (item.starring || []).length >= 2 && (item.synopsis || "").length >= 80;
+    if (hasBody) continue;
     try {
       const hit = await wikiIntroWithRetry(item.title, item.date);
       if (hit) {
         const { extract, exact } = hit;
         const stars = starringFromExtract(extract);
         const syn = synopsisFromExtract(extract);
-        // Non-exact page matches (e.g. a parent series for a companion
-        // special) can describe a different production — only trust their
-        // cast when the page is really about this title.
-        if (exact && stars.length) item.starring = stars;
+        if (exact && stars.length && !(item.starring || []).length)
+          item.starring = stars;
         if (syn.length > (item.synopsis || "").length) {
           if (exact || (item.synopsis || "").trim().length < 60)
             item.synopsis = syn;
@@ -609,6 +694,14 @@ async function enrichNetflix(items) {
 
 async function buildNetflix() {
   let items = [];
+  // Primary: TVMaze episode schedule — every original that actually dropped
+  // new episodes in the window, with synopsis + cast.
+  try {
+    items.push(...(await fetchTvmazeNetflix()));
+    console.log(`  [netflix] tvmaze: ${items.length} titles with new episodes`);
+  } catch (err) {
+    console.warn(`  [netflix] tvmaze: ${err.message}`);
+  }
   const monthsToTry = [now, new Date(now.getTime() - 32 * 86400000)];
   for (const d of monthsToTry) {
     const month = MONTHS[d.getMonth()];
@@ -658,12 +751,20 @@ async function buildNetflix() {
   // Dedupe before enrichment so we don't look a title up twice.
   const score = (x) =>
     (x.synopsis || "").length + (x.starring || []).length * 50;
-  // Same show, differently-trimmed title across sources ("Operation Safed
-  // Sagar: The Untold Story…" vs "…The Highest Air Force Mission…"): a
-  // shared prefix of the first few tokens is the same title.
+  const titleCore = (s) =>
+    normTitle(s)
+      .replace(/\bseason \d+\b/g, " ")
+      .replace(/\bpart \d+\b/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
   const sameTitle = (a, b) => {
-    const ta = normTitle(a).split(" ");
-    const tb = normTitle(b).split(" ");
+    const ca = titleCore(a);
+    const cb = titleCore(b);
+    if (!ca || !cb) return false;
+    if (ca === cb) return true;
+    if (ca.includes(cb) || cb.includes(ca)) return true;
+    const ta = ca.split(" ");
+    const tb = cb.split(" ");
     const n = Math.min(4, ta.length, tb.length);
     for (let i = 0; i < n; i += 1) if (ta[i] !== tb[i]) return false;
     return n > 0;
@@ -679,12 +780,7 @@ async function buildNetflix() {
   }
   items = await enrichNetflix(deduped);
   items.sort((a, b) => b.date.localeCompare(a.date));
-  // Completeness over polish: every item comes from an originals-only source
-  // (the whats-on-netflix listing is Originals-tagged; the Wikipedia lists are
-  // originals by definition), so a brand-new title stays even while its
-  // synopsis is still a one-liner — Wikipedia lags a few days on fresh
-  // releases, and enrichment fills details in on later refreshes.
-  return items.slice(0, 40);
+  return items;
 }
 
 /* ---------------- write ---------------- */
