@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-12T12:08:58.576Z",
+  "generatedAt": "2026-08-12T12:34:18.777Z",
   "retentionDays": 14,
-  "windowStart": "2026-07-29T12:08:58.576Z",
-  "windowEnd": "2026-08-12T12:08:58.576Z",
+  "windowStart": "2026-07-29T12:34:18.777Z",
+  "windowEnd": "2026-08-12T12:34:18.777Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -24,13 +24,79 @@
   "count": 516,
   "items": [
     {
+      "key": "49589072",
+      "id": "49589072",
+      "headline": "Ex-NFL reporter Michele Tafoya wins GOP Senate primary in Minn.",
+      "summary": "Former NFL sideline reporter Michele Tafoya will compete for an open seat in the U.S. Senate after winning the Republican primary in Minnesota.",
+      "url": "https://www.espn.com/nfl/story/_/id/49589072/ex-nfl-reporter-michele-tafoya-wins-gop-senate-primary-minn",
+      "sport": "NFL",
+      "published": "2026-08-12T12:26:21.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49582393",
+      "id": "49582393",
+      "headline": "Inside Dan Quinn's master plan to revive the Commanders",
+      "summary": "After a 5-12 season, Dan Quinn spent the offseason searching for ways to sharpen a Washington team he felt had lost some of its edge.",
+      "url": "https://www.espn.com/nfl/story/_/id/49582393/dan-quinn-plan-revive-2026-washington-commanders",
+      "sport": "NFL",
+      "published": "2026-08-12T12:20:06.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49546534",
+      "id": "49546534",
+      "headline": "Dallas Mavericks offseason recap, early 2026-27 season preview",
+      "summary": "Where will front office and coaching changes take the Mavs? We're looking back at the offseason and taking an early look at the 2026-27 season.",
+      "url": "https://www.espn.com/nba/story/_/id/49546534/dallas-mavericks-offseason-recap-2026-27-season-preview-stats-roster-depth-chart",
+      "sport": "NBA",
+      "published": "2026-08-12T12:17:06.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49587325",
+      "id": "49587325",
+      "headline": "Dodgers' Blake Snell K's 10 in 6 innings in return from injury",
+      "summary": "Blake Snell struck out 10 batters in six innings in his return to the mound for the Dodgers after being sidelined for three months with loose bodies in his left elbow.",
+      "url": "https://www.espn.com/mlb/story/_/id/49587325/dodgers-blake-snell-strikes-10-6-innings-return-3-month-injury-layoff",
+      "sport": "MLB",
+      "published": "2026-08-12T12:06:52.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 33
+    },
+    {
+      "key": "49587821",
+      "id": "49587821",
+      "headline": "Cal Raleigh shoulders blame as Mariners lose fifth straight",
+      "summary": "Cal Raleigh, saddled with a .159 average a year after finishing second in the AL MVP race, acknowledged his struggles after the Seattle Mariners' 4-1 loss to the New York Yankees on Tuesday night, telling reporters \"I've got to find a way to be better.\"",
+      "url": "https://www.espn.com/mlb/story/_/id/49587821/cal-raleigh-shoulders-blame-mariners-lose-fifth-straight",
+      "sport": "MLB",
+      "published": "2026-08-12T12:06:32.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 19
+    },
+    {
+      "key": "49587533",
+      "id": "49587533",
+      "headline": "Overturn helps A's Jacob Wilson push errorless run to 113 games",
+      "summary": "After his surprising error was overturned to a Tampa Bay hit on Tuesday night in his club's 12-4 loss to the Rays at Sutter Health Park, Athletics shortstop Jacob Wilson's major-league-record errorless streak at the position was extended to 113 games.",
+      "url": "https://www.espn.com/mlb/story/_/id/49587533/overturn-helps-ss-wilson-push-errorless-run-113-games",
+      "sport": "MLB",
+      "published": "2026-08-12T12:05:56.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 26
+    },
+    {
       "key": "49589093",
       "id": "49589093",
       "headline": "Seth Trimble becomes Louisville's latest high-profile transfer",
       "summary": "Seth Trimble has committed to play for Louisville next season following the court ruling that gave Class of 2022 high schoolers a fifth season of college eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49589093/seth-trimble-becomes-louisville-latest-high-profile-transfer",
       "sport": "College basketball",
-      "published": "2026-08-12T11:45:55.000Z",
+      "published": "2026-08-12T12:00:05.000Z",
       "firstSeen": "2026-08-12T11:41:48.715Z",
       "bestRank": 1
     },
@@ -68,17 +134,6 @@
       "bestRank": 1
     },
     {
-      "key": "49589072",
-      "id": "49589072",
-      "headline": "Ex-NFL reporter Michele Tafoya wins GOP Senate primary in Minn.",
-      "summary": "Former NFL sideline reporter Michele Tafoya will compete for an open seat in the U.S. Senate after winning the Republican primary in Minnesota.",
-      "url": "https://www.espn.com/nfl/story/_/id/49589072/ex-nfl-reporter-michele-tafoya-wins-gop-senate-primary-minn",
-      "sport": "NFL",
-      "published": "2026-08-12T11:31:05.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 4
-    },
-    {
       "key": "49579127",
       "id": "49579127",
       "headline": "Cooper Flagg's one-of-one rookie card found in Rhode Island",
@@ -99,17 +154,6 @@
       "published": "2026-08-12T11:23:23.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 4
-    },
-    {
-      "key": "49546534",
-      "id": "49546534",
-      "headline": "Dallas Mavericks offseason recap, early 2026-27 season preview",
-      "summary": "Where will front office and coaching changes take the Mavs? We're looking back at the offseason and taking an early look at the 2026-27 season.",
-      "url": "https://www.espn.com/nba/story/_/id/49546534/dallas-mavericks-offseason-recap-2026-27-season-preview-stats-roster-depth-chart",
-      "sport": "NBA",
-      "published": "2026-08-12T11:17:25.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
     },
     {
       "key": "49576700",
@@ -253,17 +297,6 @@
       "published": "2026-08-12T10:08:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
-    },
-    {
-      "key": "49582393",
-      "id": "49582393",
-      "headline": "Inside Dan Quinn's master plan to revive the Commanders",
-      "summary": "After a 5-12 season, Dan Quinn spent the offseason searching for ways to sharpen a Washington team he felt had lost some of its edge.",
-      "url": "https://www.espn.com/nfl/story/_/id/49582393/dan-quinn-plan-revive-2026-washington-commanders",
-      "sport": "NFL",
-      "published": "2026-08-12T10:00:12.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 6
     },
     {
       "key": "49583212",
@@ -541,17 +574,6 @@
       "bestRank": 6
     },
     {
-      "key": "49587325",
-      "id": "49587325",
-      "headline": "Dodgers' Blake Snell K's 10 in 6 innings in return from injury",
-      "summary": "Blake Snell struck out 10 batters in six innings in his return to the mound for the Dodgers after being sidelined for three months with loose bodies in his left elbow.",
-      "url": "https://www.espn.com/mlb/story/_/id/49587325/dodgers-blake-snell-strikes-10-6-innings-return-3-month-injury-layoff",
-      "sport": "MLB",
-      "published": "2026-08-12T07:08:55.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 33
-    },
-    {
       "key": "49422798",
       "id": "49422798",
       "headline": "Ranking the top 30 best men's club managers in Europe",
@@ -561,17 +583,6 @@
       "published": "2026-08-12T07:04:39.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 7
-    },
-    {
-      "key": "49587533",
-      "id": "49587533",
-      "headline": "Overturn helps A's Jacob Wilson push errorless run to 113 games",
-      "summary": "After his surprising error was overturned to a Tampa Bay hit on Tuesday night in his club's 12-4 loss to the Rays at Sutter Health Park, Athletics shortstop Jacob Wilson's major-league-record errorless streak at the position was extended to 113 games.",
-      "url": "https://www.espn.com/mlb/story/_/id/49587533/overturn-helps-ss-wilson-push-errorless-run-113-games",
-      "sport": "MLB",
-      "published": "2026-08-12T06:56:33.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 26
     },
     {
       "key": "48944912",
@@ -627,17 +638,6 @@
       "published": "2026-08-12T05:56:41.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 22
-    },
-    {
-      "key": "49587821",
-      "id": "49587821",
-      "headline": "Cal Raleigh shoulders blame as Mariners lose fifth straight",
-      "summary": "Cal Raleigh, saddled with a .159 average a year after finishing second in the AL MVP race, acknowledged his struggles after the Seattle Mariners' 4-1 loss to the New York Yankees on Tuesday night, telling reporters \"I've got to find a way to be better.\"",
-      "url": "https://www.espn.com/mlb/story/_/id/49587821/cal-raleigh-shoulders-blame-mariners-lose-fifth-straight",
-      "sport": "MLB",
-      "published": "2026-08-12T05:54:31.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 19
     },
     {
       "key": "49586980",
@@ -2383,7 +2383,7 @@
       "headline": "NCAA and FBI announce partnership to combat athlete sexploitation",
       "summary": "As college athletes become bigger targets for sexual exploitation online, the NCAA and FBI announced a partnership Monday to educate athletes on how to prevent private images from falling into the wrong hands.",
       "url": "https://www.espn.com/college-sports/story/_/id/49555079/ncaa-fbi-announce-partnership-combat-athlete-sexploitation",
-      "sport": "College football",
+      "sport": "College basketball",
       "published": "2026-08-10T17:55:54.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 2
@@ -3329,7 +3329,7 @@
       "headline": "Senate vote on college sports bill now slated for September",
       "summary": "The Protect College Sports Act failed to reach a vote during an all-night, pre-recess session in the Senate, though the bill did gain a spot on next month's calendar after the chamber comes back from its summer break.",
       "url": "https://www.espn.com/college-sports/story/_/id/49560859/senate-vote-college-sports-bill-slated-september",
-      "sport": "College football",
+      "sport": "College basketball",
       "published": "2026-08-08T16:30:20.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
@@ -3582,7 +3582,7 @@
       "headline": "New Purdue AD admits dig at Indiana was immediate error",
       "summary": "New Purdue athletic director Tommy McClelland is owning that an attempted one-liner at the expense of Indiana was a mistake \"the second it left my mouth.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49554744/new-purdue-ad-admits-dig-indiana-was-immediate-error",
-      "sport": "College football",
+      "sport": "College basketball",
       "published": "2026-08-07T18:47:59.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 3
@@ -3681,7 +3681,7 @@
       "headline": "Mrs. Met, Goldy headline inductions into the Mascot Hall of Fame",
       "summary": "The announcement was made Friday morning on \"Good Morning America,\" with the five mascots on site to receive the news.",
       "url": "https://www.espn.com/mlb/story/_/id/49546890/mascot-hall-fame-inductions-class-2026",
-      "sport": "College football",
+      "sport": "College basketball",
       "published": "2026-08-07T15:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 4
@@ -4143,7 +4143,7 @@
       "headline": "NCAA Division II votes to approve age-based eligibility model",
       "summary": "NCAA Division II will move to the age-based eligibility model that has prompted athlete lawsuits across the country since it was adopted in Division I.",
       "url": "https://www.espn.com/college-sports/story/_/id/49545296/ncaa-division-ii-votes-approve-age-based-eligibility-model",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-06T14:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 5
@@ -4275,7 +4275,7 @@
       "headline": "LSU officials meet with top donors about proposed sports funding plan",
       "summary": "LSU has completed a series of two meetings with top donors to outline what university President Wade Rousse has billed as a \"first of its kind\" revenue-generating proposal for athletics.",
       "url": "https://www.espn.com/college-sports/story/_/id/49542287/lsu-officials-meet-top-donors-proposed-sports-funding-plan",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-06T04:29:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 6
@@ -4462,7 +4462,7 @@
       "headline": "Purdue hires longtime AD Tommy McClelland from Rice",
       "summary": "Purdue has hired Rice athletic director Tommy McClelland as athletic director.",
       "url": "https://www.espn.com/college-sports/story/_/id/49525796/tommy-mcclelland-primary-target-purdue-ad-job-sources-say",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-05T16:48:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 9
@@ -4550,7 +4550,7 @@
       "headline": "Pac-12, MWC finalize settlement over 'poaching,' exit fees",
       "summary": "The Pac-12 and Mountain West have finalized a settlement over \"poaching\" and exit fees ahead of a number of former MWC schools heading to the Pac-12.",
       "url": "https://www.espn.com/college-sports/story/_/id/49535459/pac-12-mwc-finalize-settlement-poaching-exit-fees",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-05T11:31:11.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 7
@@ -4671,7 +4671,7 @@
       "headline": "MEAC signs commissioner Sonja Stills to 5-year extension through '31",
       "summary": "The Mid-Eastern Athletic Conference has signed Commissioner Sonja Stills to a five-year contract extension through 2031.",
       "url": "https://www.espn.com/college-sports/story/_/id/49532583/meac-signs-commissioner-sonja-stills-5-year-extension-2031",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-04T23:55:04.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 8
@@ -5309,7 +5309,7 @@
       "headline": "Sources: Former MLB executive Tim Brosnan to head Big East",
       "summary": "The Big East is expected to hire former MLB executive Tim Brosnan as the league's next commissioner, sources told ESPN.",
       "url": "https://www.espn.com/college-sports/story/_/id/49507446/source-former-mlb-executive-tim-brosnan-head-big-east",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T22:17:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 10
@@ -5331,7 +5331,7 @@
       "headline": "Judge grants injunction for Class of '22 athletes seeking 5th NCAA season",
       "summary": "A federal court dealt a major blow to the NCAA's new eligibility rule when it ruled that all high school class of 2022 athletes who exhausted their fourth season of college eligibility this spring are eligible for a fifth season in 2026-27.",
       "url": "https://www.espn.com/college-football/story/_/id/49501415/judge-grants-injunction-class-22-athletes-seeking-play-5th-ncaa-season",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T12:46:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 12
@@ -5342,7 +5342,7 @@
       "headline": "Big Ten, SEC support college sports bill, reviving Senate chances",
       "summary": "The Big Ten and SEC have agreed to support a Senate bill that seeks to regulate college sports.",
       "url": "https://www.espn.com/college-sports/story/_/id/49501752/big-ten-sec-support-college-sports-bill-reviving-senate-chances",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T12:38:24.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 11
@@ -5353,7 +5353,7 @@
       "headline": "FAU hires Josh McCowan as athletic director",
       "summary": "Josh McCowan was hired as Florida Atlantic vice president and athletic director.",
       "url": "https://www.espn.com/college-football/story/_/id/49498431/fau-hires-josh-mccowan-athletic-director-vice-president",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T11:04:41.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 13
@@ -5540,7 +5540,7 @@
       "headline": "Senate adjourns without scheduling vote Protect College Sports Act",
       "summary": "The U.S. Senate adjourned for the week Thursday without scheduling a vote for the Protect College Sports Act, a bill aimed at reforming college sports.",
       "url": "https://www.espn.com/college-sports/story/_/id/49491567/senate-adjourns-scheduling-vote-protect-college-sports-act",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-07-30T23:07:59.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 15
