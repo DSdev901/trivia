@@ -16,6 +16,10 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import {
+  enrichThinSummaries,
+  isEspnVideoStub,
+} from "./lib/summaries.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_DIR = path.join(ROOT, "data", "current-events");
@@ -98,7 +102,7 @@ const ESPN_LEAGUES = [
 
 /** ESPN filler that isn't a notable story: fantasy advice, previews-as-content, podcasts. */
 const SPORTS_JUNK_RE =
-  /\bfantasy\b|forecaster|lineup advice|game highlights|\bpodcast\b|betting odds|how to watch|where to watch|\bodds\b|\bpicks\b|\brankings?\b|\bbuzz:|latest intel|intel, updates|new threads|experts? grad|grades for\b|mock (draft|trade)|some thoughts|\bhoping to\b|fight night|news roundup|trade grades|\bgrades:/i;
+  /\bfantasy\b|forecaster|lineup advice|game highlights?|\bpodcast\b|betting odds|how to watch|where to watch|\bodds\b|\bpicks\b|\brankings?\b|\bbuzz:|latest intel|intel, updates|new threads|experts? grad|grades for\b|mock (draft|trade)|some thoughts|\bhoping to\b|fight night|news roundup|trade grades|\bgrades:/i;
 
 function guessSport(text, league) {
   if (league) return league.toUpperCase();
@@ -140,7 +144,6 @@ async function buildSports() {
     ) {
       return;
     }
-    seen.add(headline);
     const card = {
       headline,
       date,
@@ -148,6 +151,8 @@ async function buildSports() {
       summary: (summary || "").trim(),
       url: url || "",
     };
+    if (isEspnVideoStub(card)) return;
+    seen.add(headline);
     if (top) card.top = true;
     items.push(card);
   };
@@ -196,6 +201,13 @@ async function buildSports() {
 
   items = fuzzyDedupe(items);
   items.sort((a, b) => b.date.localeCompare(a.date));
+  const n = await enrichThinSummaries(items, {
+    minLen: 80,
+    espn: true,
+    page: true,
+    wiki: false,
+  });
+  if (n) console.log(`  [sports] enriched ${n} thin summaries`);
   return items;
 }
 
@@ -410,7 +422,7 @@ const RSS_FEEDS = [
 
 /** Commerce/listicle filler that slips into celebrity feeds. */
 const JUNK_RE =
-  /\b(loafers|sneakers|sandals|leggings|lipstick|mascara|faves|gift guide|deals|under \$\d+|where to buy|shop now|amazon arrivals)\b|\bon sale\b|\bsale (is|alert)\b|^\d+\s+(best|top|celebrit)\b/i;
+  /\b(loafers|sneakers|sandals|leggings|lipstick|mascara|faves|gift guide|deals|under \$\d+|where to buy|shop now|amazon arrivals)\b|\bon sale\b|\bsale (is|alert)\b|^\d+\s+(best|top|celebrit)\b|\bhoroscope\b/i;
 
 /**
  * Display tag: milestone-type stories (records, box office, anniversaries)
@@ -567,7 +579,7 @@ async function buildEntertainment() {
     items.filter((i) => i.bucket === "Celebrity"),
     gn
   ).slice(0, 10);
-  return [...movies, ...celeb]
+  const capped = [...movies, ...celeb]
     .sort(
       (a, b) =>
         (a._rank ?? 1e9) - (b._rank ?? 1e9) || b.date.localeCompare(a.date)
@@ -577,6 +589,14 @@ async function buildEntertainment() {
       const { bucket, _rank, ...rest } = i;
       return { ...rest, tag: tagFor(i.headline, i.summary, bucket) };
     });
+  const n = await enrichThinSummaries(capped, {
+    minLen: 80,
+    espn: false,
+    page: true,
+    wiki: true,
+  });
+  if (n) console.log(`  [entertainment] enriched ${n} thin summaries`);
+  return capped;
 }
 
 /* ---------------- Netflix: whats-on-netflix ---------------- */

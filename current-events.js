@@ -25,6 +25,7 @@ const ce = {
   data: {}, // sectionId -> payload
   tab: "netflix",
   netflixFilter: "all", // "all" | "shows" | "movies"
+  sportFilter: "all", // "all" | sport label e.g. "NFL"
   refreshing: false,
   notice: "",
   root: null,
@@ -180,6 +181,9 @@ function activeItems() {
   if (ce.tab === "netflix" && ce.netflixFilter !== "all") {
     return items.filter((i) => netflixKind(i) === ce.netflixFilter);
   }
+  if (ce.tab === "sports" && ce.sportFilter !== "all") {
+    return items.filter((i) => (i.sport || "Sports") === ce.sportFilter);
+  }
   return items;
 }
 
@@ -249,16 +253,49 @@ function netflixFilterBar(allItems) {
     </div>`;
 }
 
+function sportFilterBar(allItems) {
+  const counts = new Map();
+  for (const i of allItems) {
+    const sport = i.sport || "Sports";
+    counts.set(sport, (counts.get(sport) || 0) + 1);
+  }
+  const sports = [...counts.entries()].sort(
+    (a, b) => b[1] - a[1] || a[0].localeCompare(b[0])
+  );
+  if (!sports.length) return "";
+  // Reset stale filter if that sport vanished after a refresh.
+  if (ce.sportFilter !== "all" && !counts.has(ce.sportFilter)) {
+    ce.sportFilter = "all";
+  }
+  const chips = [
+    { id: "all", label: "All", count: allItems.length },
+    ...sports.map(([id, count]) => ({ id, label: id, count })),
+  ];
+  return `
+    <div class="ce-filter" role="group" aria-label="Filter by sport">
+      ${chips
+        .map(
+          (f) => `
+        <button type="button" class="ce-filter-chip ${
+          ce.sportFilter === f.id ? "is-on" : ""
+        }" data-sfilter="${escapeHtml(f.id)}">${escapeHtml(
+            f.label
+          )} <span class="ce-filter-count">${f.count}</span></button>`
+        )
+        .join("")}
+    </div>`;
+}
+
 function renderBody() {
   const payload = ce.data[ce.tab];
   if (!payload) return `<p class="error">No data for this section yet.</p>`;
   const items = activeItems();
   const filterBar =
     ce.tab === "netflix"
-      ? netflixFilterBar(
-          [...(payload.items || [])] // unfiltered for counts
-        )
-      : "";
+      ? netflixFilterBar([...(payload.items || [])])
+      : ce.tab === "sports"
+        ? sportFilterBar([...(payload.items || [])])
+        : "";
   if (!items.length) {
     return `${filterBar}<p class="lede">Nothing found for this filter in the current window.</p>`;
   }
@@ -378,7 +415,8 @@ function render() {
   ce.root.querySelectorAll(".ce-filter-chip").forEach((btn) => {
     btn.addEventListener("click", () => {
       stopPlayback();
-      ce.netflixFilter = btn.dataset.nfilter;
+      if (btn.dataset.nfilter) ce.netflixFilter = btn.dataset.nfilter;
+      if (btn.dataset.sfilter) ce.sportFilter = btn.dataset.sfilter;
       render();
     });
   });

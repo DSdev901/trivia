@@ -13,6 +13,10 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import {
+  enrichThinSummaries,
+  isEspnVideoStub,
+} from "./lib/summaries.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_DIR = path.join(ROOT, "data", "current-events");
@@ -25,7 +29,7 @@ const cutoff = new Date(now.getTime() - RETENTION_DAYS * 86400000);
 
 /** Filler that isn't a notable story — kept out of the user-facing feed. */
 const SPORTS_JUNK_RE =
-  /\bfantasy\b|forecaster|lineup advice|game highlights|\bpodcast\b|betting odds|how to watch|where to watch|\bodds\b|\bpicks\b|\brankings?\b|\bbuzz:|latest intel|intel, updates|new threads|experts? grad|grades for\b|mock (draft|trade)|some thoughts|\bhoping to\b|fight night|news roundup|trade grades|\bgrades:/i;
+  /\bfantasy\b|forecaster|lineup advice|game highlights?|\bpodcast\b|betting odds|how to watch|where to watch|\bodds\b|\bpicks\b|\brankings?\b|\bbuzz:|latest intel|intel, updates|new threads|experts? grad|grades for\b|mock (draft|trade)|some thoughts|\bhoping to\b|fight night|news roundup|trade grades|\bgrades:/i;
 
 // ESPN returns at most 50 articles even when a larger limit is requested.
 // Keep all of them in the archive; display-time filters decide what's notable.
@@ -160,8 +164,14 @@ async function main() {
   await writeFile(OUT_FILE, `${JSON.stringify(payload, null, 2)}\n`);
 
   // User-facing Sports tab: ESPN only, full 14-day window, newest first.
+  // Drop filler + video/highlight stubs (no real article body to summarize).
   const feedItems = items
-    .filter((i) => (i.headline || "").trim() && !SPORTS_JUNK_RE.test(i.headline))
+    .filter(
+      (i) =>
+        (i.headline || "").trim() &&
+        !SPORTS_JUNK_RE.test(i.headline) &&
+        !isEspnVideoStub(i)
+    )
     .map((i) => {
       const card = {
         headline: i.headline.trim(),
@@ -174,6 +184,14 @@ async function main() {
       if (i.bestRank <= 5) card.top = true;
       return card;
     });
+
+  const enriched = await enrichThinSummaries(feedItems, {
+    minLen: 80,
+    espn: true,
+    page: true,
+    wiki: false,
+  });
+
   const feed = {
     section: "sports",
     source: "ESPN",
@@ -187,7 +205,7 @@ async function main() {
   console.log(
     `ESPN cache: ${items.length} retained; ${observed} observed; ` +
       `${failed}/${ESPN_LEAGUES.length} endpoints failed; ` +
-      `sports feed: ${feedItems.length} stories.`
+      `sports feed: ${feedItems.length} stories (${enriched} summaries enriched).`
   );
   if (failed === ESPN_LEAGUES.length) process.exitCode = 1;
 }
