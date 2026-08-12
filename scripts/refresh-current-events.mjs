@@ -5,8 +5,8 @@
  *   node scripts/refresh-current-events.mjs
  *
  * Sources (no API keys, no dependencies):
- *   Sports        — ESPN public news JSON endpoints
- *   Entertainment — RSS feeds (Variety, Deadline, E! Online, People, TMZ)
+ *   Sports        — ESPN only (rolling 14-day archive, published every 3h)
+ *   Entertainment — RSS feeds + Google News prominence / backfill
  *   Netflix       — whats-on-netflix.com monthly "What's Coming" listings
  *
  * A section is only overwritten when its fetch produced enough items;
@@ -116,110 +116,87 @@ function guessSport(text, league) {
   return "Sports";
 }
 
+/**
+ * Sports is ESPN-only. The three-hour cache job owns the live Sports tab
+ * (espn-headlines.json → sports.json). This builder reads that archive so
+ * the Tuesday full refresh doesn't wipe sports with Google News stories.
+ * Window is 14 days to match the rolling cache.
+ */
 async function buildSports() {
+  const sportsStart = new Date(now.getTime() - 14 * 86400000)
+    .toISOString()
+    .slice(0, 10);
   const seen = new Set();
   let items = [];
-  await Promise.all(
-    ESPN_LEAGUES.map(async ([league, label, limit]) => {
-      try {
-        const url = `https://site.api.espn.com/apis/site/v2/sports/${league}/news?limit=${limit}`;
-        const data = JSON.parse(await fetchText(url));
-        for (const a of data.articles || []) {
-          const date = isoFrom(a.published);
-          const headline = (a.headline || "").trim();
-          if (
-            !date ||
-            !inWindow(date) ||
-            !headline ||
-            seen.has(headline) ||
-            SPORTS_JUNK_RE.test(headline)
-          )
-            continue;
-          seen.add(headline);
-          items.push({
-            headline,
-            date,
-            sport: label,
-            summary: (a.description || "").trim(),
-            url: a.links?.web?.href || "",
-          });
-        }
-      } catch (err) {
-        console.warn(`  [sports] ${league}: ${err.message}`);
-      }
-    })
-  );
-  // The ESPN endpoint only exposes its latest 50 items and ignores date/
-  // pagination parameters. A separate three-hour GitHub Action snapshots
-  // those responses into a rolling 14-day archive; merge that history before
-  // ranking so headlines that have already rolled off ESPN remain eligible.
+
+  const push = (headline, date, sport, summary, url, top) => {
+    if (
+      !date ||
+      date < sportsStart ||
+      date > windowEnd ||
+      !headline ||
+      seen.has(headline) ||
+      SPORTS_JUNK_RE.test(headline)
+    ) {
+      return;
+    }
+    seen.add(headline);
+    const card = {
+      headline,
+      date,
+      sport: sport || guessSport(headline),
+      summary: (summary || "").trim(),
+      url: url || "",
+    };
+    if (top) card.top = true;
+    items.push(card);
+  };
+
   try {
     const archive = JSON.parse(
-      await readFile(
-        path.join(OUT_DIR, "espn-headlines.json"),
-        "utf8"
-      )
+      await readFile(path.join(OUT_DIR, "espn-headlines.json"), "utf8")
     );
     for (const a of archive.items || []) {
-      const date = isoFrom(a.published);
-      const headline = (a.headline || "").trim();
-      if (
-        !date ||
-        !inWindow(date) ||
-        !headline ||
-        seen.has(headline) ||
-        SPORTS_JUNK_RE.test(headline)
-      ) {
-        continue;
-      }
-      seen.add(headline);
-      items.push({
-        headline,
-        date,
-        sport: a.sport || guessSport(headline),
-        summary: (a.summary || "").trim(),
-        url: a.url || "",
-      });
+      push(
+        (a.headline || "").trim(),
+        isoFrom(a.published),
+        a.sport,
+        a.summary,
+        a.url,
+        (a.bestRank ?? 99) <= 5
+      );
     }
   } catch (err) {
     if (err.code !== "ENOENT") {
       console.warn(`  [sports] ESPN archive: ${err.message}`);
     }
   }
+
+  // Live snap as a safety net if the archive is missing or stale.
+  await Promise.all(
+    ESPN_LEAGUES.map(async ([league, label, limit]) => {
+      try {
+        const url = `https://site.api.espn.com/apis/site/v2/sports/${league}/news?limit=${limit}`;
+        const data = JSON.parse(await fetchText(url));
+        for (const [idx, a] of (data.articles || []).entries()) {
+          push(
+            (a.headline || "").trim(),
+            isoFrom(a.published),
+            label,
+            a.description,
+            a.links?.web?.href || "",
+            idx < 5
+          );
+        }
+      } catch (err) {
+        console.warn(`  [sports] ${league}: ${err.message}`);
+      }
+    })
+  );
+
   items = fuzzyDedupe(items);
   items.sort((a, b) => b.date.localeCompare(a.date));
-  const sportsJunk = new RegExp(
-    `${SPORTS_JUNK_RE.source}|${BACKFILL_SKIP_RE.source}`,
-    "i"
-  );
-  const mkSport = (g) => ({
-    headline: g.headline,
-    date: g.date,
-    sport: guessSport(g.headline),
-    summary: g.source ? `Reported by ${g.source}.` : "",
-    url: g.url,
-  });
-  // GN is the coverage backbone: today's topic ranking plus each week's
-  // biggest storylines. ESPN supplies the rich summaries on top of that.
-  await backfillWeekly(
-    items,
-    '(NFL OR NBA OR MLB OR WNBA OR NHL OR UFC OR "world record" OR championship OR "World Cup")',
-    { perWeek: 4, makeItem: mkSport, junkRe: sportsJunk }
-  );
-  await backfillWeekly(
-    items,
-    '(signs OR traded OR trade OR suspended OR fired OR extension) (NFL OR NBA OR MLB OR WNBA OR NHL)',
-    { perWeek: 3, makeItem: mkSport, junkRe: sportsJunk }
-  );
-  const gnTopic = await googleNewsTopic(GN_SPORTS);
-  backfill(items, gnTopic, mkSport, sportsJunk, 6);
-  items = fuzzyDedupe(items);
-  items.sort((a, b) => b.date.localeCompare(a.date));
-  const ranked = applyProminence(items, gnTopic);
-  return ranked.slice(0, 22).map((i) => {
-    delete i._rank;
-    return i;
-  });
+  return items;
 }
 
 /* ------------- Google News: coverage + prominence -------------

@@ -1,7 +1,8 @@
 name: Cache ESPN Headlines
 
 # ESPN only exposes the latest 50 stories per league. Snapshot every three
-# hours so busy news cycles are preserved in a rolling 14-day archive.
+# hours into a rolling 14-day archive and publish sports.json so the live
+# Sports tab updates with each run (ESPN only — no Google News).
 
 on:
   schedule:
@@ -28,14 +29,14 @@ jobs:
         with:
           node-version: 22
 
-      - name: Update rolling ESPN archive
+      - name: Update ESPN archive and Sports feed
         run: node scripts/cache-espn-headlines.mjs
 
-      - name: Commit updated archive
+      - name: Commit updated Sports data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/current-events/espn-headlines.json
+          git add data/current-events/espn-headlines.json data/current-events/sports.json
           if git diff --cached --quiet; then
             echo "No ESPN cache changes."
           else
