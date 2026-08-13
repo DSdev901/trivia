@@ -933,6 +933,8 @@ function bindMapControls(host) {
   host.dataset.navBound = "1";
   ensureBaseViewBox(svg);
 
+  const PAN_SLOP = 10;
+
   const readVb = () => {
     const raw = (svg.getAttribute("viewBox") || geo._baseViewBox).split(/\s+/).map(Number);
     return { x: raw[0], y: raw[1], w: raw[2], h: raw[3] };
@@ -960,8 +962,9 @@ function bindMapControls(host) {
   const pointers = new Map();
   let dragging = false;
   let last = null;
+  let downPt = null;
   let pinch = null;
-  let pinched = false;
+  let moved = false;
 
   const setPointer = (e) => {
     pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
@@ -975,43 +978,65 @@ function bindMapControls(host) {
     const pts = [...pointers.values()];
     return { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 };
   };
+  const beginPinch = () => {
+    const dist = pinchDist();
+    const mid = pinchMid();
+    const rect = svg.getBoundingClientRect();
+    pinch = dist
+      ? {
+          dist,
+          vb: readVb(),
+          mid: { x: mid.x, y: mid.y },
+          mx: (mid.x - rect.left) / Math.max(rect.width, 1),
+          my: (mid.y - rect.top) / Math.max(rect.height, 1),
+        }
+      : null;
+  };
+  const applyPinch = () => {
+    const dist = pinchDist();
+    if (!dist) return;
+    if (!pinch) beginPinch();
+    if (!pinch) return;
+    const rect = svg.getBoundingClientRect();
+    const mid = pinchMid();
+    const vb = zoomViewBox(pinch.vb, pinch.dist / dist, pinch.mx, pinch.my);
+    vb.x -= ((mid.x - pinch.mid.x) / Math.max(rect.width, 1)) * vb.w;
+    vb.y -= ((mid.y - pinch.mid.y) / Math.max(rect.height, 1)) * vb.h;
+    writeVb(vb);
+  };
 
   host.addEventListener("pointerdown", (e) => {
     if (e.button !== 0) return;
     setPointer(e);
+    host.setPointerCapture?.(e.pointerId);
     if (pointers.size >= 2) {
       dragging = false;
       last = null;
-      const dist = pinchDist();
-      pinch = dist ? { dist, vb: readVb() } : null;
+      downPt = null;
+      moved = true;
+      beginPinch();
       host.classList.add("is-panning");
-      host.setPointerCapture?.(e.pointerId);
       return;
     }
-    const onPin = e.target.closest?.(".geo-pin");
-    const onRegion =
-      onPin || e.target.closest?.(".geo-region:not(.is-out)");
-    if (onRegion && geo.mode === "pin" && !e.shiftKey) return;
+    moved = false;
     dragging = true;
     last = { x: e.clientX, y: e.clientY };
-    host.setPointerCapture?.(e.pointerId);
-    host.classList.add("is-panning");
+    downPt = { x: e.clientX, y: e.clientY };
   });
   host.addEventListener("pointermove", (e) => {
     if (pointers.has(e.pointerId)) setPointer(e);
     if (pointers.size >= 2) {
-      const dist = pinchDist();
-      if (!dist) return;
-      if (!pinch) pinch = { dist, vb: readVb() };
-      pinched = true;
-      const rect = svg.getBoundingClientRect();
-      const mid = pinchMid();
-      const mx = (mid.x - rect.left) / Math.max(rect.width, 1);
-      const my = (mid.y - rect.top) / Math.max(rect.height, 1);
-      writeVb(zoomViewBox(pinch.vb, pinch.dist / dist, mx, my));
+      moved = true;
+      applyPinch();
       return;
     }
-    if (!dragging || !last) return;
+    if (!dragging || !last || !downPt) return;
+    if (!moved) {
+      const dist = Math.hypot(e.clientX - downPt.x, e.clientY - downPt.y);
+      if (dist < PAN_SLOP) return;
+      moved = true;
+      host.classList.add("is-panning");
+    }
     const vb = readVb();
     const rect = svg.getBoundingClientRect();
     const dx = ((e.clientX - last.x) / rect.width) * vb.w;
@@ -1028,11 +1053,13 @@ function bindMapControls(host) {
       const pt = [...pointers.values()][0];
       dragging = true;
       last = { x: pt.x, y: pt.y };
+      downPt = { x: pt.x, y: pt.y };
       return;
     }
     if (pointers.size === 0) {
       dragging = false;
       last = null;
+      downPt = null;
       host.classList.remove("is-panning");
     }
   };
@@ -1041,8 +1068,7 @@ function bindMapControls(host) {
   host.addEventListener(
     "click",
     (e) => {
-      if (!pinched) return;
-      pinched = false;
+      if (!moved) return;
       e.preventDefault();
       e.stopPropagation();
     },
@@ -1052,12 +1078,11 @@ function bindMapControls(host) {
 
 function mapHtml() {
   if (!geo.mapSvg) return "";
-  const pinHint =
-    geo.mode === "pin" && !window.matchMedia("(pointer: coarse)").matches
-      ? " · Shift-drag to pan while pinning"
-      : "";
+  const coarse = window.matchMedia("(pointer: coarse)").matches;
+  const zoomHint = coarse ? "pinch to zoom" : "pinch or scroll to zoom";
+  const pinHint = geo.mode === "pin" ? " · tap a place to answer" : "";
   return `<div class="geo-map-frame is-zoomable" id="geo-map">${geo.mapSvg}
-    <p class="geo-map-hint">Pinch or scroll to zoom · drag to pan${pinHint}</p>
+    <p class="geo-map-hint">Drag to pan · ${zoomHint}${pinHint}</p>
   </div>`;
 }
 

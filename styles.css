@@ -1738,6 +1738,7 @@ body {
   overflow: hidden;
   position: relative;
   touch-action: none;
+  overscroll-behavior: none;
   cursor: grab;
 }
 
