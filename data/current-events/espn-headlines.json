@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-13T03:59:55.296Z",
+  "generatedAt": "2026-08-13T06:49:08.050Z",
   "retentionDays": 14,
-  "windowStart": "2026-07-30T03:59:55.296Z",
-  "windowEnd": "2026-08-13T03:59:55.296Z",
+  "windowStart": "2026-07-30T06:49:08.050Z",
+  "windowEnd": "2026-08-13T06:49:08.050Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,18 +21,183 @@
     "Tennis",
     "MMA"
   ],
-  "count": 618,
+  "count": 632,
   "items": [
+    {
+      "key": "49597116",
+      "id": "49597116",
+      "headline": "Toluca vs. FC Dallas - Game Highlights",
+      "summary": "Watch the Game Highlights from Toluca vs. FC Dallas, 08/12/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49597116/toluca-vs-fc-dallas-game-highlights",
+      "sport": "Soccer",
+      "published": "2026-08-13T05:57:07.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49597115",
+      "id": "49597115",
+      "headline": "San Diego FC vs. Puebla - Game Highlights",
+      "summary": "Watch the Game Highlights from San Diego FC vs. Puebla, 08/12/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49597115/san-diego-fc-vs-puebla-game-highlights",
+      "sport": "Soccer",
+      "published": "2026-08-13T05:56:30.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49595698",
+      "id": "49595698",
+      "headline": "Monterrey vs. Nashville SC - Game Highlights",
+      "summary": "Watch the Game Highlights from Monterrey vs. Nashville SC, 08/12/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49595698/monterrey-vs-nashville-sc-game-highlights",
+      "sport": "Soccer",
+      "published": "2026-08-13T05:49:23.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49596726",
+      "id": "49596726",
+      "headline": "Seattle Sounders FC vs. Guadalajara - Game Highlights",
+      "summary": "Watch the Game Highlights from Seattle Sounders FC vs. Guadalajara, 08/12/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49596726/seattle-sounders-fc-vs-guadalajara-game-highlights",
+      "sport": "Soccer",
+      "published": "2026-08-13T05:48:43.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 4
+    },
+    {
+      "key": "48305211",
+      "id": "48305211",
+      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
+      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
+      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
+      "sport": "MLB",
+      "published": "2026-08-13T05:37:24.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49597013",
+      "id": "49597013",
+      "headline": "Mike Trout leads offense and George Klassen earns 1st MLB win as Angels top Rangers 5-2",
+      "summary": "— Mike Trout had three hits and two RBI, Jose Siri keyed a three-run sixth inning with a pinch-hit RBI double, and George Klassen earned his first major league win in the Los Angeles Angels’ 5-2 comeback victory over the Texas Rangers on Wednesday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816508",
+      "sport": "MLB",
+      "published": "2026-08-13T05:29:36.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49596787",
+      "id": "49596787",
+      "headline": "LAFC vs. Querétaro - Game Highlights",
+      "summary": "Watch the Game Highlights from LAFC vs. Querétaro, 08/12/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49596787/lafc-vs-queretaro-game-highlights",
+      "sport": "Soccer",
+      "published": "2026-08-13T05:21:14.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49596861",
+      "id": "49596861",
+      "headline": "Texas Rangers vs. Los Angeles Angels: Game Highlights",
+      "summary": "Texas Rangers vs. Los Angeles Angels: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49596861/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-13T05:09:52.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 3
+    },
     {
       "key": "49596211",
       "id": "49596211",
-      "headline": "Daniels sends cease-and-desist to LSU after Pickett given No. 5",
+      "headline": "Daniels sends cease and desist to LSU after Pickett given No. 5",
       "summary": "Commanders quarterback Jayden Daniels informed LSU it can no longer use his name, image and likeness and said he felt \"profoundly disrespected\" after LSU allowed cornerback DJ Pickett to wear his former No. 5 jersey.",
       "url": "https://www.espn.com/nfl/story/_/id/49596211/daniels-sends-cease-desist-lsu-pickett-given-no-5",
-      "sport": "NFL",
-      "published": "2026-08-13T03:39:02.000Z",
+      "sport": "College football",
+      "published": "2026-08-13T05:02:34.000Z",
       "firstSeen": "2026-08-13T03:59:55.296Z",
       "bestRank": 1
+    },
+    {
+      "key": "49596791",
+      "id": "49596791",
+      "headline": "Kansas City Royals vs. Los Angeles Dodgers: Game Highlights",
+      "summary": "Kansas City Royals vs. Los Angeles Dodgers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49596791/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-13T05:01:55.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49593280",
+      "id": "49593280",
+      "headline": "Nationals prospect Jackson Kent goes 4-plus innings in MLB debut",
+      "summary": "Washington Nationals pitching prospect Jackson Kent had a mixed major league debut in a start against the Chicago Cubs on Wednesday night after his contract was selected from Triple-A Rochester.",
+      "url": "https://www.espn.com/mlb/story/_/id/49593280/jackson-kent-called-triple-start-nationals-vs-cubs",
+      "sport": "MLB",
+      "published": "2026-08-13T05:01:46.000Z",
+      "firstSeen": "2026-08-13T00:40:28.989Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49596789",
+      "id": "49596789",
+      "headline": "Homers from Ohtani and Betts power Dodgers to a 4-2 victory and a sweep of the Royals",
+      "summary": "— Shohei Ohtani, Mookie Betts and Hunter Feduccia homered, and the revitalized Los Angeles Dodgers swept the Kansas City Royals with a 4-2 victory Wednesday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816505",
+      "sport": "MLB",
+      "published": "2026-08-13T04:54:29.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49595716",
+      "id": "49595716",
+      "headline": "Alex Bregman's first 3-homer game helps Cubs rout Nationals",
+      "summary": "Alex Bregman hit three homers in a game for the first time and drove in a career-high seven runs as the Cubs routed the Nationals 12-6 on Wednesday night.",
+      "url": "https://www.espn.com/mlb/story/_/id/49595716/alex-bregman-first-career-3-homer-game-helps-cubs-rout-nationals",
+      "sport": "MLB",
+      "published": "2026-08-13T03:51:03.000Z",
+      "firstSeen": "2026-08-13T03:59:55.296Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49595325",
+      "id": "49595325",
+      "headline": "Pittsburgh Pirates vs. Miami Marlins: Game Highlights",
+      "summary": "Pittsburgh Pirates vs. Miami Marlins: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49595325/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-13T03:50:20.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 20
+    },
+    {
+      "key": "49594061",
+      "id": "49594061",
+      "headline": "Miami out of Leagues Cup despite Messi return after dad's death",
+      "summary": "Lionel Messi rejoined Inter Miami CF on Wednesday following the passing of his father, Jorge Messi, for their Leagues Cup game against Club Leon on the bench at Nu Stadium.",
+      "url": "https://www.espn.com/soccer/story/_/id/49594061/lionel-messi-back-inter-miami-bench-father-death",
+      "sport": "Soccer",
+      "published": "2026-08-13T03:49:48.000Z",
+      "firstSeen": "2026-08-13T03:59:55.296Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49595970",
+      "id": "49595970",
+      "headline": "Cincinnati Reds vs. Chicago White Sox: Game Highlights",
+      "summary": "Cincinnati Reds vs. Chicago White Sox: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49595970/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-13T03:37:58.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 6
     },
     {
       "key": "49593121",
@@ -46,15 +211,15 @@
       "bestRank": 2
     },
     {
-      "key": "49593280",
-      "id": "49593280",
-      "headline": "Nationals prospect Jackson Kent goes 4-plus innings in MLB debut",
-      "summary": "Washington Nationals pitching prospect Jackson Kent had a mixed major league debut in a start against the Chicago Cubs on Wednesday night after his contract was selected from Triple-A Rochester.",
-      "url": "https://www.espn.com/mlb/story/_/id/49593280/jackson-kent-called-triple-start-nationals-vs-cubs",
+      "key": "49594508",
+      "id": "49594508",
+      "headline": "Pittsburgh Pirates vs. Miami Marlins: Game Highlights",
+      "summary": "Pittsburgh Pirates vs. Miami Marlins: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49594508/game-highlights",
       "sport": "MLB",
-      "published": "2026-08-13T02:43:14.000Z",
-      "firstSeen": "2026-08-13T00:40:28.989Z",
-      "bestRank": 8
+      "published": "2026-08-13T02:45:13.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 23
     },
     {
       "key": "49595873",
@@ -68,15 +233,26 @@
       "bestRank": 1
     },
     {
-      "key": "49595716",
-      "id": "49595716",
-      "headline": "Alex Bregman's first 3-homer game helps Cubs rout Nationals",
-      "summary": "Alex Bregman hit three homers in a game for the first time and drove in a career-high seven runs as the Cubs routed the Nationals 12-6 on Wednesday night.",
-      "url": "https://www.espn.com/mlb/story/_/id/49595716/alex-bregman-first-career-3-homer-game-helps-cubs-rout-nationals",
-      "sport": "MLB",
-      "published": "2026-08-13T02:38:49.000Z",
-      "firstSeen": "2026-08-13T03:59:55.296Z",
-      "bestRank": 3
+      "key": "49595370",
+      "id": "49595370",
+      "headline": "Inter Miami CF vs. León - Game Highlights",
+      "summary": "Watch the Game Highlights from Inter Miami CF vs. León, 08/12/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49595370/inter-miami-cf-vs-leon-game-highlights",
+      "sport": "Soccer",
+      "published": "2026-08-13T02:30:41.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49595785",
+      "id": "49595785",
+      "headline": "Dallas Wings vs. Toronto Tempo - Game Highlights",
+      "summary": "Watch the Game Highlights from Dallas Wings vs. Toronto Tempo, 08/12/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49595785/dallas-wings-vs-toronto-tempo-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-08-13T02:28:18.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
+      "bestRank": 1
     },
     {
       "key": "49595720",
@@ -244,14 +420,14 @@
       "bestRank": 5
     },
     {
-      "key": "49594061",
-      "id": "49594061",
-      "headline": "Miami out of Leagues Cup despite Messi return after dad's death",
-      "summary": "Lionel Messi rejoined Inter Miami CF on Wednesday following the passing of his father, Jorge Messi, for their Leagues Cup game against Club Leon on the bench at Nu Stadium.",
-      "url": "https://www.espn.com/soccer/story/_/id/49594061/lionel-messi-back-inter-miami-bench-father-death",
-      "sport": "Soccer",
-      "published": "2026-08-13T01:42:07.000Z",
-      "firstSeen": "2026-08-13T03:59:55.296Z",
+      "key": "49594734",
+      "id": "49594734",
+      "headline": "WNBA task force discusses transgender athletes amid furor",
+      "summary": "A task force of team presidents and general managers met Wednesday and discussed transgender athletes but did not arrive at any eligibility rules.",
+      "url": "https://www.espn.com/wnba/story/_/id/49594734/wnba-task-force-discusses-transgender-athletes-amid-furor",
+      "sport": "WNBA",
+      "published": "2026-08-13T01:42:47.000Z",
+      "firstSeen": "2026-08-13T06:49:08.050Z",
       "bestRank": 2
     },
     {
@@ -777,7 +953,7 @@
       "headline": "Reports: Sankey reminds SEC schools to follow eligibility rules",
       "summary": "Commissioner Greg Sankey sent a memo to SEC members reminding them to move carefully when adding players suddenly allowed by court rulings to seek a fifth year of eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49593224/reports-sankey-reminds-sec-schools-follow-eligibility-rules",
-      "sport": "Women's college basketball",
+      "sport": "College football",
       "published": "2026-08-12T21:10:17.000Z",
       "firstSeen": "2026-08-13T03:59:55.296Z",
       "bestRank": 1
@@ -1052,7 +1228,7 @@
       "headline": "Rory: I'd love to give LeBron a golf lesson",
       "summary": "Rory: I'd love to give LeBron a golf lesson",
       "url": "https://www.espn.com/video/clip/_/id/49592244/love-give-lebron-golf-lesson",
-      "sport": "Golf",
+      "sport": "NBA",
       "published": "2026-08-12T19:15:37.000Z",
       "firstSeen": "2026-08-12T21:31:05.036Z",
       "bestRank": 2
@@ -2101,17 +2277,6 @@
       "published": "2026-08-12T05:19:35.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 20
-    },
-    {
-      "key": "48305211",
-      "id": "48305211",
-      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
-      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
-      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
-      "sport": "MLB",
-      "published": "2026-08-12T05:18:39.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 21
     },
     {
       "key": "49587602",
@@ -3604,7 +3769,7 @@
       "headline": "NCAA and FBI announce partnership to combat athlete sexploitation",
       "summary": "As college athletes become bigger targets for sexual exploitation online, the NCAA and FBI announced a partnership Monday to educate athletes on how to prevent private images from falling into the wrong hands.",
       "url": "https://www.espn.com/college-sports/story/_/id/49555079/ncaa-fbi-announce-partnership-combat-athlete-sexploitation",
-      "sport": "Women's college basketball",
+      "sport": "College football",
       "published": "2026-08-10T17:55:54.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 2
@@ -4550,7 +4715,7 @@
       "headline": "Senate vote on college sports bill now slated for September",
       "summary": "The Protect College Sports Act failed to reach a vote during an all-night, pre-recess session in the Senate, though the bill did gain a spot on next month's calendar after the chamber comes back from its summer break.",
       "url": "https://www.espn.com/college-sports/story/_/id/49560859/senate-vote-college-sports-bill-slated-september",
-      "sport": "Women's college basketball",
+      "sport": "College football",
       "published": "2026-08-08T16:30:20.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
@@ -4803,7 +4968,7 @@
       "headline": "New Purdue AD admits dig at Indiana was immediate error",
       "summary": "New Purdue athletic director Tommy McClelland is owning that an attempted one-liner at the expense of Indiana was a mistake \"the second it left my mouth.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49554744/new-purdue-ad-admits-dig-indiana-was-immediate-error",
-      "sport": "Women's college basketball",
+      "sport": "College football",
       "published": "2026-08-07T18:47:59.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 3
@@ -4902,7 +5067,7 @@
       "headline": "Mrs. Met, Goldy headline inductions into the Mascot Hall of Fame",
       "summary": "The announcement was made Friday morning on \"Good Morning America,\" with the five mascots on site to receive the news.",
       "url": "https://www.espn.com/mlb/story/_/id/49546890/mascot-hall-fame-inductions-class-2026",
-      "sport": "Women's college basketball",
+      "sport": "College football",
       "published": "2026-08-07T15:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 4
@@ -5364,7 +5529,7 @@
       "headline": "NCAA Division II votes to approve age-based eligibility model",
       "summary": "NCAA Division II will move to the age-based eligibility model that has prompted athlete lawsuits across the country since it was adopted in Division I.",
       "url": "https://www.espn.com/college-sports/story/_/id/49545296/ncaa-division-ii-votes-approve-age-based-eligibility-model",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-06T14:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 5
@@ -5496,7 +5661,7 @@
       "headline": "LSU officials meet with top donors about proposed sports funding plan",
       "summary": "LSU has completed a series of two meetings with top donors to outline what university President Wade Rousse has billed as a \"first of its kind\" revenue-generating proposal for athletics.",
       "url": "https://www.espn.com/college-sports/story/_/id/49542287/lsu-officials-meet-top-donors-proposed-sports-funding-plan",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-06T04:29:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 6
@@ -5683,7 +5848,7 @@
       "headline": "Purdue hires longtime AD Tommy McClelland from Rice",
       "summary": "Purdue has hired Rice athletic director Tommy McClelland as athletic director.",
       "url": "https://www.espn.com/college-sports/story/_/id/49525796/tommy-mcclelland-primary-target-purdue-ad-job-sources-say",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-05T16:48:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 9
@@ -5771,7 +5936,7 @@
       "headline": "Pac-12, MWC finalize settlement over 'poaching,' exit fees",
       "summary": "The Pac-12 and Mountain West have finalized a settlement over \"poaching\" and exit fees ahead of a number of former MWC schools heading to the Pac-12.",
       "url": "https://www.espn.com/college-sports/story/_/id/49535459/pac-12-mwc-finalize-settlement-poaching-exit-fees",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-05T11:31:11.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 7
@@ -5892,7 +6057,7 @@
       "headline": "MEAC signs commissioner Sonja Stills to 5-year extension through '31",
       "summary": "The Mid-Eastern Athletic Conference has signed Commissioner Sonja Stills to a five-year contract extension through 2031.",
       "url": "https://www.espn.com/college-sports/story/_/id/49532583/meac-signs-commissioner-sonja-stills-5-year-extension-2031",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-04T23:55:04.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 8
@@ -6530,7 +6695,7 @@
       "headline": "Sources: Former MLB executive Tim Brosnan to head Big East",
       "summary": "The Big East is expected to hire former MLB executive Tim Brosnan as the league's next commissioner, sources told ESPN.",
       "url": "https://www.espn.com/college-sports/story/_/id/49507446/source-former-mlb-executive-tim-brosnan-head-big-east",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T22:17:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 10
@@ -6552,7 +6717,7 @@
       "headline": "Judge grants injunction for Class of '22 athletes seeking 5th NCAA season",
       "summary": "A federal court dealt a major blow to the NCAA's new eligibility rule when it ruled that all high school class of 2022 athletes who exhausted their fourth season of college eligibility this spring are eligible for a fifth season in 2026-27.",
       "url": "https://www.espn.com/college-football/story/_/id/49501415/judge-grants-injunction-class-22-athletes-seeking-play-5th-ncaa-season",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T12:46:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 12
@@ -6563,7 +6728,7 @@
       "headline": "Big Ten, SEC support college sports bill, reviving Senate chances",
       "summary": "The Big Ten and SEC have agreed to support a Senate bill that seeks to regulate college sports.",
       "url": "https://www.espn.com/college-sports/story/_/id/49501752/big-ten-sec-support-college-sports-bill-reviving-senate-chances",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T12:38:24.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 11
@@ -6574,7 +6739,7 @@
       "headline": "FAU hires Josh McCowan as athletic director",
       "summary": "Josh McCowan was hired as Florida Atlantic vice president and athletic director.",
       "url": "https://www.espn.com/college-football/story/_/id/49498431/fau-hires-josh-mccowan-athletic-director-vice-president",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T11:04:41.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 13
@@ -6761,7 +6926,7 @@
       "headline": "Senate adjourns without scheduling vote Protect College Sports Act",
       "summary": "The U.S. Senate adjourned for the week Thursday without scheduling a vote for the Protect College Sports Act, a bill aimed at reforming college sports.",
       "url": "https://www.espn.com/college-sports/story/_/id/49491567/senate-adjourns-scheduling-vote-protect-college-sports-act",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-07-30T23:07:59.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 15
@@ -6809,17 +6974,6 @@
       "published": "2026-07-30T13:13:22.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 4
-    },
-    {
-      "key": "49481027",
-      "id": "49481027",
-      "headline": "How Jackson Koivun celebrated his first win on the PGA Tour",
-      "summary": "New How Jackson Koivun celebrated his first win on the PGA Tour",
-      "url": "https://www.espn.com/video/clip/_/id/49481027/how-jackson-koivun-celebrated-first-win-pga-tour",
-      "sport": "Golf",
-      "published": "2026-07-30T04:38:11.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 20
     }
   ]
 }
