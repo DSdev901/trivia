@@ -1046,3 +1046,8 @@ async function init() {
 }
 
 init();
+
+const blockPageGesture = (e) => e.preventDefault();
+document.addEventListener("gesturestart", blockPageGesture, { passive: false });
+document.addEventListener("gesturechange", blockPageGesture, { passive: false });
+document.addEventListener("gestureend", blockPageGesture, { passive: false });

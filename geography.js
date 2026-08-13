@@ -891,6 +891,29 @@ function drawMapLabel(host) {
   g.insertBefore(bg, text);
 }
 
+function zoomViewBox(src, factor, mx, my) {
+  const vb = { x: src.x, y: src.y, w: src.w, h: src.h };
+  let nw = vb.w * factor;
+  let nh = vb.h * factor;
+  const limit = panLimitBox();
+  const minW = limit.w * 0.08;
+  if (nw < minW) {
+    const s = minW / nw;
+    nw = minW;
+    nh *= s;
+  }
+  if (nw > limit.w || nh > limit.h) {
+    const s = Math.min(limit.w / nw, limit.h / nh);
+    nw *= s;
+    nh *= s;
+  }
+  vb.x += (vb.w - nw) * mx;
+  vb.y += (vb.h - nh) * my;
+  vb.w = nw;
+  vb.h = nh;
+  return vb;
+}
+
 function bindMapControls(host) {
   const svg = host?.querySelector("svg");
   if (!host || !svg || host.dataset.navBound === "1") return;
@@ -916,34 +939,42 @@ function bindMapControls(host) {
       const mx = (e.clientX - rect.left) / rect.width;
       const my = (e.clientY - rect.top) / rect.height;
       const factor = e.deltaY > 0 ? 1.12 : 1 / 1.12;
-      let nw = vb.w * factor;
-      let nh = vb.h * factor;
-      const limit = panLimitBox();
-      const minW = limit.w * 0.08;
-      if (nw < minW) {
-        const s = minW / nw;
-        nw = minW;
-        nh *= s;
-      }
-      if (nw > limit.w || nh > limit.h) {
-        const s = Math.min(limit.w / nw, limit.h / nh);
-        nw *= s;
-        nh *= s;
-      }
-      vb.x += (vb.w - nw) * mx;
-      vb.y += (vb.h - nh) * my;
-      vb.w = nw;
-      vb.h = nh;
-      writeVb(vb);
+      writeVb(zoomViewBox(vb, factor, mx, my));
     },
     { passive: false }
   );
 
+  const pointers = new Map();
   let dragging = false;
   let last = null;
+  let pinch = null;
+  let pinched = false;
+
+  const setPointer = (e) => {
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  };
+  const pinchDist = () => {
+    const pts = [...pointers.values()];
+    if (pts.length < 2) return 0;
+    return Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+  };
+  const pinchMid = () => {
+    const pts = [...pointers.values()];
+    return { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 };
+  };
+
   host.addEventListener("pointerdown", (e) => {
     if (e.button !== 0) return;
-    // Don't start drag when clicking a region for pin answers — only empty ocean / with modifier
+    setPointer(e);
+    if (pointers.size >= 2) {
+      dragging = false;
+      last = null;
+      const dist = pinchDist();
+      pinch = dist ? { dist, vb: readVb() } : null;
+      host.classList.add("is-panning");
+      host.setPointerCapture?.(e.pointerId);
+      return;
+    }
     const onPin = e.target.closest?.(".geo-pin");
     const onRegion =
       onPin || e.target.closest?.(".geo-region:not(.is-out)");
@@ -954,6 +985,19 @@ function bindMapControls(host) {
     host.classList.add("is-panning");
   });
   host.addEventListener("pointermove", (e) => {
+    if (pointers.has(e.pointerId)) setPointer(e);
+    if (pointers.size >= 2) {
+      const dist = pinchDist();
+      if (!dist) return;
+      if (!pinch) pinch = { dist, vb: readVb() };
+      pinched = true;
+      const rect = svg.getBoundingClientRect();
+      const mid = pinchMid();
+      const mx = (mid.x - rect.left) / Math.max(rect.width, 1);
+      const my = (mid.y - rect.top) / Math.max(rect.height, 1);
+      writeVb(zoomViewBox(pinch.vb, pinch.dist / dist, mx, my));
+      return;
+    }
     if (!dragging || !last) return;
     const vb = readVb();
     const rect = svg.getBoundingClientRect();
@@ -964,19 +1008,39 @@ function bindMapControls(host) {
     writeVb(vb);
     last = { x: e.clientX, y: e.clientY };
   });
-  const endDrag = () => {
-    dragging = false;
-    last = null;
-    host.classList.remove("is-panning");
+  const endPointer = (e) => {
+    pointers.delete(e.pointerId);
+    if (pointers.size < 2) pinch = null;
+    if (pointers.size === 1) {
+      const pt = [...pointers.values()][0];
+      dragging = true;
+      last = { x: pt.x, y: pt.y };
+      return;
+    }
+    if (pointers.size === 0) {
+      dragging = false;
+      last = null;
+      host.classList.remove("is-panning");
+    }
   };
-  host.addEventListener("pointerup", endDrag);
-  host.addEventListener("pointercancel", endDrag);
+  host.addEventListener("pointerup", endPointer);
+  host.addEventListener("pointercancel", endPointer);
+  host.addEventListener(
+    "click",
+    (e) => {
+      if (!pinched) return;
+      pinched = false;
+      e.preventDefault();
+      e.stopPropagation();
+    },
+    true
+  );
 }
 
 function mapHtml() {
   if (!geo.mapSvg) return "";
-  return `<div class="geo-map-frame" id="geo-map">${geo.mapSvg}
-    <p class="geo-map-hint">Scroll to zoom · drag to pan${
+  return `<div class="geo-map-frame is-zoomable" id="geo-map">${geo.mapSvg}
+    <p class="geo-map-hint">Pinch or scroll to zoom · drag to pan${
       geo.mode === "pin" ? " · Shift-drag to pan while pinning" : ""
     }</p>
   </div>`;
