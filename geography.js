@@ -72,6 +72,8 @@ const geo = {
   wrong: 0,
   answered: false,
   selectedId: null,
+  _mapLabel: null,
+  _panLimit: null,
 };
 
 function escapeHtml(s) {
@@ -199,7 +201,10 @@ function injectFeatureMarkers(svgText, items) {
     .filter((it) => Number.isFinite(it.x) && Number.isFinite(it.y))
     .map((it) => {
       const kind = it.kind ? ` geo-marker-${it.kind}` : "";
-      return `<circle id="${it.id}" data-id="${it.id}" class="geo-region geo-marker${kind}" cx="${it.x}" cy="${it.y}" r="${r}"/>`;
+      return `<g class="geo-pin" data-id="${it.id}">
+        <circle class="geo-marker-hit" cx="${it.x}" cy="${it.y}" r="12"/>
+        <circle id="${it.id}" data-id="${it.id}" class="geo-region geo-marker${kind}" cx="${it.x}" cy="${it.y}" r="${r}"/>
+      </g>`;
     })
     .join("\n  ");
   return svg.replace(/<\/svg>\s*$/i, `  ${markers}\n</svg>`);
@@ -214,6 +219,7 @@ async function loadPack(packMeta) {
   geo.mapSvg = "";
   geo._baseViewBox = null;
   geo._packViewBox = null;
+  geo._panLimit = null;
   if (packMeta.map && MAPS[packMeta.map]) {
     const mapRes = await fetch(MAPS[packMeta.map]);
     if (!mapRes.ok) throw new Error(`Failed to load map ${packMeta.map}`);
@@ -243,11 +249,46 @@ function packItemIds() {
 function resetMapViewBox() {
   const svg = geo.root?.querySelector("#geo-map svg");
   if (!svg) return;
-  if (geo._packViewBox) {
-    svg.setAttribute("viewBox", geo._packViewBox);
-  } else if (geo._baseViewBox) {
-    svg.setAttribute("viewBox", geo._baseViewBox);
+  const vb = geo._packViewBox || geo._baseViewBox;
+  if (vb) svg.setAttribute("viewBox", vb);
+  geo._panLimit = vb || geo._panLimit;
+}
+
+function viewBoxParts(raw) {
+  const [x, y, w, h] = String(raw || "0 0 1000 520")
+    .trim()
+    .split(/\s+/)
+    .map(Number);
+  return {
+    x: Number.isFinite(x) ? x : 0,
+    y: Number.isFinite(y) ? y : 0,
+    w: w > 0 ? w : 1000,
+    h: h > 0 ? h : 520,
+  };
+}
+
+function panLimitBox() {
+  return viewBoxParts(geo._panLimit || geo._packViewBox || geo._baseViewBox);
+}
+
+function clampViewBox(vb) {
+  const limit = panLimitBox();
+  let { x, y, w, h } = vb;
+  if (w > limit.w) {
+    const s = limit.w / w;
+    w = limit.w;
+    h *= s;
   }
+  if (h > limit.h) {
+    const s = limit.h / h;
+    h = limit.h;
+    w *= s;
+  }
+  if (w >= limit.w - 0.001) x = limit.x + (limit.w - w) / 2;
+  else x = Math.min(Math.max(x, limit.x), limit.x + limit.w - w);
+  if (h >= limit.h - 0.001) y = limit.y + (limit.h - h) / 2;
+  else y = Math.min(Math.max(y, limit.y), limit.y + limit.h - h);
+  return { x, y, w, h };
 }
 
 function ensureBaseViewBox(svg) {
@@ -538,7 +579,12 @@ function unwrapPackRegions(host, svg) {
         const rec = circleRecord(el);
         if (!rec) return;
         const dx = unwrapDx(rec.cx, core.x, mapW);
-        if (dx) el.setAttribute("cx", trimNum(rec.cx + dx));
+        if (dx) {
+          const nx = trimNum(rec.cx + dx);
+          el.setAttribute("cx", nx);
+          const hit = el.closest(".geo-pin")?.querySelector(".geo-marker-hit");
+          if (hit) hit.setAttribute("cx", nx);
+        }
         return;
       }
       const d = el.getAttribute("d");
@@ -578,6 +624,7 @@ function applyViewBox(svg, bounds, padRatio, storeAsPack) {
   svg.setAttribute("viewBox", vb);
   coverOcean(svg, minX - pad, minY - pad, w, h);
   if (storeAsPack) geo._packViewBox = vb;
+  geo._panLimit = vb;
 }
 
 function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false } = {}) {
@@ -598,6 +645,7 @@ function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false } = {}) {
       if (bounds?.useFullMap) {
         resetMapViewBox();
         if (storeAsPack) geo._packViewBox = geo._baseViewBox;
+        geo._panLimit = geo._packViewBox || geo._baseViewBox;
         return;
       }
     }
@@ -641,7 +689,10 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     const out = scopePack && !inPack.has(id);
     el.classList.toggle("is-out", out);
     el.classList.toggle("is-active", !out && id === activeId && !correctId && !wrongId);
-    el.classList.toggle("is-dim", !out && dimOthers && id !== correctId && id !== wrongId);
+    el.classList.toggle(
+      "is-dim",
+      !out && dimOthers && id !== activeId && id !== correctId && id !== wrongId
+    );
     el.classList.toggle("is-correct", !out && correctId === id);
     el.classList.toggle("is-wrong", !out && wrongId === id);
   });
@@ -655,6 +706,108 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   } else {
     resetMapViewBox();
   }
+  if (outline) setMapLabel(host, null);
+  else if (correctId) setMapLabel(host, correctId);
+  else if (geo.mode === "study" && activeId) setMapLabel(host, activeId);
+  else setMapLabel(host, null);
+}
+
+function mapTargetId(e) {
+  const pin = e.target.closest?.(".geo-pin");
+  if (pin) {
+    const visual = pin.querySelector(".geo-region");
+    if (visual?.classList.contains("is-out")) return null;
+    return pin.dataset.id || visual?.dataset.id || visual?.id || null;
+  }
+  const el = e.target.closest?.(".geo-region");
+  if (!el || el.classList.contains("is-out")) return null;
+  return el.dataset.id || el.id || null;
+}
+
+function pinTargetNoun() {
+  const id = (geo.pack?.id || "").toLowerCase();
+  const name = (geo.pack?.name || "").toLowerCase();
+  const blob = `${id} ${name}`;
+  if (blob.includes("landmark")) return "landmark";
+  if (blob.includes("cities") || blob.includes("city")) return "city";
+  if (blob.includes("river")) return "river";
+  if (blob.includes("lake")) return "lake";
+  if (geo.pack?.overlay === "markers") {
+    const kinds = new Set(geo.items.map((i) => i.kind).filter(Boolean));
+    if (kinds.size === 1) {
+      const k = [...kinds][0];
+      if (k === "landmark") return "landmark";
+      if (k === "city") return "city";
+    }
+    return "place";
+  }
+  const q = quizKind();
+  if (q === "capitals" || q === "countries") return "country";
+  if (q === "teams") return "team";
+  if (blob.includes("continent")) return "continent";
+  return "region";
+}
+
+function setMapLabel(host, id) {
+  const item = id ? byId(id) : null;
+  geo._mapLabel = item ? { id: item.id, name: item.name } : null;
+  drawMapLabel(host);
+}
+
+function drawMapLabel(host) {
+  if (!host) return;
+  host.querySelectorAll(".geo-marker-label").forEach((n) => n.remove());
+  const spec = geo._mapLabel;
+  if (!spec) return;
+  const svg = host.querySelector("svg");
+  const marker = host.querySelector(
+    `.geo-region.geo-marker[data-id="${CSS.escape(spec.id)}"]`
+  );
+  if (!svg || !marker) return;
+  const cx = parseFloat(marker.getAttribute("cx"));
+  const cy = parseFloat(marker.getAttribute("cy"));
+  if (!Number.isFinite(cx) || !Number.isFinite(cy)) return;
+
+  const vb = svg.viewBox.baseVal;
+  const rect = svg.getBoundingClientRect();
+  const unit = vb.width / Math.max(rect.width, 1);
+  const fontSize = 12.5 * unit;
+  const padX = 6 * unit;
+  const padY = 3.2 * unit;
+  const gap = 10 * unit;
+  const placeAbove = cy - vb.y > fontSize * 3;
+  const NS = "http://www.w3.org/2000/svg";
+
+  const g = document.createElementNS(NS, "g");
+  g.setAttribute("class", "geo-marker-label");
+  g.setAttribute("pointer-events", "none");
+
+  const text = document.createElementNS(NS, "text");
+  text.setAttribute("class", "geo-marker-label-text");
+  text.setAttribute("x", String(cx));
+  text.setAttribute("y", String(placeAbove ? cy - gap : cy + gap));
+  text.setAttribute("text-anchor", "middle");
+  text.setAttribute("dominant-baseline", placeAbove ? "auto" : "hanging");
+  text.setAttribute("font-size", String(fontSize));
+  text.textContent = spec.name;
+  g.appendChild(text);
+  svg.appendChild(g);
+
+  let bbox;
+  try {
+    bbox = text.getBBox();
+  } catch {
+    return;
+  }
+  if (!bbox.width || !bbox.height) return;
+  const bg = document.createElementNS(NS, "rect");
+  bg.setAttribute("class", "geo-marker-label-bg");
+  bg.setAttribute("x", String(bbox.x - padX));
+  bg.setAttribute("y", String(bbox.y - padY));
+  bg.setAttribute("width", String(bbox.width + padX * 2));
+  bg.setAttribute("height", String(bbox.height + padY * 2));
+  bg.setAttribute("rx", String(3.2 * unit));
+  g.insertBefore(bg, text);
 }
 
 function bindMapControls(host) {
@@ -668,7 +821,9 @@ function bindMapControls(host) {
     return { x: raw[0], y: raw[1], w: raw[2], h: raw[3] };
   };
   const writeVb = (vb) => {
-    svg.setAttribute("viewBox", `${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+    const next = clampViewBox(vb);
+    svg.setAttribute("viewBox", `${next.x} ${next.y} ${next.w} ${next.h}`);
+    drawMapLabel(host);
   };
 
   host.addEventListener(
@@ -680,13 +835,20 @@ function bindMapControls(host) {
       const mx = (e.clientX - rect.left) / rect.width;
       const my = (e.clientY - rect.top) / rect.height;
       const factor = e.deltaY > 0 ? 1.12 : 1 / 1.12;
-      const nw = vb.w * factor;
-      const nh = vb.h * factor;
-      // Keep zoom within sensible bounds relative to pack/base
-      const base = (geo._packViewBox || geo._baseViewBox).split(/\s+/).map(Number);
-      const maxW = base[2] * 1.4;
-      const minW = base[2] * 0.08;
-      if (nw > maxW || nw < minW) return;
+      let nw = vb.w * factor;
+      let nh = vb.h * factor;
+      const limit = panLimitBox();
+      const minW = limit.w * 0.08;
+      if (nw < minW) {
+        const s = minW / nw;
+        nw = minW;
+        nh *= s;
+      }
+      if (nw > limit.w || nh > limit.h) {
+        const s = Math.min(limit.w / nw, limit.h / nh);
+        nw *= s;
+        nh *= s;
+      }
       vb.x += (vb.w - nw) * mx;
       vb.y += (vb.h - nh) * my;
       vb.w = nw;
@@ -701,7 +863,9 @@ function bindMapControls(host) {
   host.addEventListener("pointerdown", (e) => {
     if (e.button !== 0) return;
     // Don't start drag when clicking a region for pin answers — only empty ocean / with modifier
-    const onRegion = e.target.closest?.(".geo-region:not(.is-out)");
+    const onPin = e.target.closest?.(".geo-pin");
+    const onRegion =
+      onPin || e.target.closest?.(".geo-region:not(.is-out)");
     if (onRegion && geo.mode === "pin" && !e.shiftKey) return;
     dragging = true;
     last = { x: e.clientX, y: e.clientY };
@@ -1011,6 +1175,7 @@ function renderPackModes() {
     geo.pack = null;
     geo.mode = null;
     geo._packViewBox = null;
+    geo._panLimit = null;
     if (geo.group) renderGroup();
     else renderHub();
   });
@@ -1064,7 +1229,7 @@ function renderStudy() {
       </div>
     </div>`;
 
-  paintMap(geo.selectedId, { dimOthers: false });
+  paintMap(geo.selectedId, { dimOthers: true });
   bindMapControls(geo.root.querySelector("#geo-map"));
   bindStudy();
 }
@@ -1091,10 +1256,8 @@ function bindStudy() {
     });
   });
   geo.root.querySelector("#geo-map")?.addEventListener("click", (e) => {
-    const el = e.target.closest?.(".geo-region");
-    if (!el || el.classList.contains("is-out")) return;
-    const id = el.dataset.id || el.id;
-    if (!byId(id)) return;
+    const id = mapTargetId(e);
+    if (!id || !byId(id)) return;
     geo.selectedId = id;
     renderStudy();
   });
@@ -1124,7 +1287,7 @@ function renderPlay() {
   if (geo.mode === "pin") {
     body = `
       <p class="geo-prompt">${promptForMode(item)}</p>
-      <p class="geo-hint">Tap the correct region on the map.</p>`;
+      <p class="geo-hint">Tap the correct ${escapeHtml(pinTargetNoun())} on the map.</p>`;
   } else if (geo.mode === "type" || geo.mode === "outline") {
     body = `
       <p class="geo-prompt">${promptForMode(item)}</p>
@@ -1196,9 +1359,8 @@ function bindPlay() {
   if (geo.mode === "pin") {
     geo.root.querySelector("#geo-map")?.addEventListener("click", (e) => {
       if (geo.answered) return;
-      const el = e.target.closest?.(".geo-region");
-      if (!el || el.classList.contains("is-out")) return;
-      const id = el.dataset.id || el.id;
+      const id = mapTargetId(e);
+      if (!id) return;
       judge(id === currentItem().id, id);
     });
     return;
@@ -1341,6 +1503,8 @@ export function cleanupGeography() {
   geo.mapSvg = "";
   geo._baseViewBox = null;
   geo._packViewBox = null;
+  geo._panLimit = null;
+  geo._mapLabel = null;
 }
 
 export async function renderGeography({ els }) {

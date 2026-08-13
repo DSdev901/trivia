@@ -1760,14 +1760,14 @@ body {
 }
 
 .geo-map-frame .geo-inland-water {
-  fill: #c5dff0;
+  fill: #8fc6e4;
   stroke: none;
   pointer-events: none;
 }
 
 .geo-map-frame .geo-river {
   fill: none;
-  stroke: #a8cbe3;
+  stroke: #6eb4d6;
   stroke-linecap: round;
   stroke-linejoin: round;
   pointer-events: none;
@@ -1888,14 +1888,26 @@ body {
   stroke: none;
 }
 
+.geo-map-frame .geo-pin {
+  cursor: pointer;
+}
+
+.geo-map-frame .geo-marker-hit {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 20;
+  vector-effect: non-scaling-stroke;
+  pointer-events: all;
+  cursor: pointer;
+}
+
 .geo-map-frame .geo-marker {
   fill: #5e6d7a;
   stroke: #f7fafc;
   stroke-width: 0.7;
-}
-
-.geo-map-frame .geo-marker:hover {
-  fill: #3f4e5a;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: fill 120ms ease, opacity 120ms ease, transform 120ms ease, stroke-width 120ms ease;
 }
 
 .geo-map-frame .geo-land-bg {
@@ -1914,48 +1926,70 @@ body {
   fill: #6a92ab;
 }
 
-.geo-map-frame .geo-marker-water:hover {
-  fill: #52768c;
-}
-
 .geo-map-frame .geo-marker-range {
   fill: #8a7a68;
 }
 
-.geo-map-frame .geo-marker-range:hover {
-  fill: #6e6152;
-}
-
-.geo-map-frame .geo-marker-land {
-  fill: #5e6d7a;
-}
-
+.geo-map-frame .geo-marker-land,
 .geo-map-frame .geo-marker-landmark,
 .geo-map-frame .geo-marker-city {
   fill: #5e6d7a;
 }
 
-.geo-map-frame .geo-marker-landmark:hover,
-.geo-map-frame .geo-marker-city:hover {
-  fill: #3f4e5a;
+.geo-map-frame .geo-region.geo-marker.is-dim {
+  fill: #8a9aaa;
+  opacity: 0.36;
+}
+
+.geo-map-frame .geo-pin:hover .geo-region.geo-marker:not(.is-active):not(.is-correct):not(.is-wrong) {
+  fill: #2f3d48;
+  stroke: #152028;
+  stroke-width: 1.45;
+  opacity: 1;
+  transform: scale(1.22);
 }
 
 .geo-map-frame .geo-region.geo-marker.is-active {
-  fill: var(--accent);
+  fill: #4a5a66;
+  stroke: var(--accent);
+  stroke-width: 2.15;
+  opacity: 1;
+  transform: scale(1.42);
 }
 
 .geo-map-frame .geo-region.geo-marker.is-correct {
   fill: #2f9e6b;
   stroke: #fff;
-  stroke-width: 1.05;
+  stroke-width: 1.35;
   opacity: 1;
+  transform: scale(1.45);
 }
 
 .geo-map-frame .geo-region.geo-marker.is-wrong {
   fill: #c45c5c;
   stroke: #fff;
-  stroke-width: 1.05;
+  stroke-width: 1.35;
   opacity: 1;
+  transform: scale(1.4);
+}
+
+.geo-map-frame .geo-marker-label {
+  pointer-events: none;
+}
+
+.geo-map-frame .geo-marker-label-bg {
+  fill: rgba(255, 255, 255, 0.94);
+  stroke: rgba(28, 42, 51, 0.14);
+  stroke-width: 0.7;
+}
+
+.geo-map-frame .geo-marker-label-text {
+  fill: #1c2a33;
+  font-family: inherit;
+  font-weight: 650;
+  paint-order: stroke;
+  stroke: rgba(255, 255, 255, 0.2);
+  stroke-width: 0.2;
 }
 
 .geo-continent-grid {
