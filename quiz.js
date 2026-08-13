@@ -106,8 +106,12 @@ export function buildPresidentQuestions(presidents) {
 }
 
 /**
- * Multiple-choice questions for a set of elements.
- * Distractors come from `allElements` so small groups (e.g. noble gases) still work.
+ * Element quiz mix (retrieval practice):
+ * 1. Lean ID — symbol ↔ name, Z ↔ name (core)
+ * 2. Property → element — one fact, no Z/group dumped in
+ * 3. Position → element — family + Z, or period + group
+ * 4. Name → family / period (reverse direction)
+ * Distractors come from `allElements` so small groups still work.
  */
 export function buildElementQuestions(focusElements, allElements, categoryLabels = {}) {
   const targets = focusElements || [];
@@ -124,7 +128,10 @@ export function buildElementQuestions(focusElements, allElements, categoryLabels
 
   for (const el of targets) {
     const catLabel = categoryLabels[el.category] || el.category;
+    const sameFamily = pool.filter((e) => e.category === el.category);
+    const sameFamilyNames = sameFamily.map((e) => e.name);
 
+    // --- Lean ID (core) ---
     const nameD = pickDistractors(names, el.name, 3);
     if (nameD.length === 3) {
       questions.push({
@@ -161,6 +168,7 @@ export function buildElementQuestions(focusElements, allElements, categoryLabels
       });
     }
 
+    // --- Name → position ---
     if (categories.length >= 4) {
       const catD = pickDistractors(categories, catLabel, 3);
       if (catD.length === 3) {
@@ -173,42 +181,130 @@ export function buildElementQuestions(focusElements, allElements, categoryLabels
       }
     }
 
-    if (
-      el.discoveredBy &&
-      el.discoveredBy !== "known since antiquity" &&
-      el.discoveredYear
-    ) {
-      const yearPool = [
-        ...new Set(
-          pool
-            .filter((e) => e.discoveredYear)
-            .map((e) => String(e.discoveredYear))
-        ),
-      ];
-      const yearD = pickDistractors(yearPool, String(el.discoveredYear), 3);
-      if (yearD.length === 3) {
+    const periodPool = [...new Set(pool.map((e) => String(e.period)))];
+    if (periodPool.length >= 4) {
+      const periodD = pickDistractors(periodPool, String(el.period), 3);
+      if (periodD.length === 3) {
         questions.push({
-          id: `el-year-${el.Z}`,
-          prompt: `In what year was ${el.name} discovered (or first synthesized)?`,
-          choices: makeChoices(String(el.discoveredYear), yearD),
-          correct: String(el.discoveredYear),
+          id: `el-period-${el.Z}`,
+          prompt: `Which period is ${el.name} in?`,
+          choices: makeChoices(String(el.period), periodD),
+          correct: String(el.period),
         });
       }
     }
 
-    (el.facts || []).slice(0, 2).forEach((fact, index) => {
-      const distractors = pickDistractors(names, el.name, 3);
-      if (distractors.length < 3) return;
+    // --- Position → element (sparse: family+Z, or period+group — not a full dossier) ---
+    const familyNameD =
+      sameFamilyNames.length >= 4
+        ? pickDistractors(sameFamilyNames, el.name, 3)
+        : pickDistractors(names, el.name, 3);
+    if (familyNameD.length === 3) {
       questions.push({
-        id: `el-fact-${el.Z}-${index}`,
-        prompt: `Which element does this describe?\n“${fact}”`,
-        choices: makeChoices(el.name, distractors),
+        id: `el-family-z-${el.Z}`,
+        prompt: `Which ${catLabel.toLowerCase()} has atomic number ${el.Z}?`,
+        choices: makeChoices(el.name, familyNameD),
         correct: el.name,
       });
+    }
+
+    if (el.group != null && el.period != null) {
+      const posKey = `${el.period}:${el.group}`;
+      const posUnique =
+        pool.filter((e) => `${e.period}:${e.group}` === posKey).length === 1;
+      if (posUnique) {
+        const posD = pickDistractors(names, el.name, 3);
+        if (posD.length === 3) {
+          questions.push({
+            id: `el-pos-${el.Z}`,
+            prompt: `Which element sits in period ${el.period}, group ${el.group}?`,
+            choices: makeChoices(el.name, posD),
+            correct: el.name,
+          });
+        }
+      }
+    }
+
+    // --- Property → element (one fact, no Z/group in the prompt; skip name leaks) ---
+    const usableFacts = (el.facts || []).filter(
+      (fact) => !factMentionsName(fact, el.name)
+    );
+    if (usableFacts.length) {
+      const fact = usableFacts[0];
+      const factD = pickDistractors(names, el.name, 3);
+      if (factD.length === 3) {
+        questions.push({
+          id: `el-fact-${el.Z}-0`,
+          prompt: `Which element does this describe?\n“${fact}”`,
+          choices: makeChoices(el.name, factD),
+          correct: el.name,
+        });
+      }
+    }
+  }
+
+  return shuffle(questions);
+}
+
+/**
+ * Easy mode: one question per element with a full clue sheet
+ * (Z, family, period/group, discovery, naming, facts) — pick the name.
+ * Omits symbol and any fact that names the element.
+ */
+export function buildEasyElementQuestions(
+  focusElements,
+  allElements,
+  categoryLabels = {}
+) {
+  const targets = focusElements || [];
+  const pool = allElements?.length ? allElements : targets;
+  if (targets.length < 1 || pool.length < 4) return [];
+
+  const names = pool.map((e) => e.name);
+  const questions = [];
+
+  for (const el of targets) {
+    const nameD = pickDistractors(names, el.name, 3);
+    if (nameD.length < 3) continue;
+
+    const catLabel = categoryLabels[el.category] || el.category;
+    const lines = [
+      `Atomic number: ${el.Z}`,
+      `Family: ${catLabel}`,
+    ];
+    if (el.period != null) lines.push(`Period: ${el.period}`);
+    if (el.group != null && Number(el.group) > 0) {
+      lines.push(`Group: ${el.group}`);
+    }
+    if (el.atomicMass) lines.push(`Atomic mass: ${el.atomicMass}`);
+    if (el.discoveredBy) {
+      const when = el.discoveredYear ? ` (${el.discoveredYear})` : "";
+      lines.push(`Discovered / first noted: ${el.discoveredBy}${when}`);
+    }
+    if (el.namedAfter) lines.push(`Name origin: ${el.namedAfter}`);
+
+    const facts = (el.facts || []).filter(
+      (fact) => !factMentionsName(fact, el.name)
+    );
+    if (facts.length) {
+      lines.push("Facts:");
+      for (const fact of facts) lines.push(`• ${fact}`);
+    }
+
+    questions.push({
+      id: `el-easy-${el.Z}`,
+      prompt: `Which element matches this profile?\n\n${lines.join("\n")}`,
+      choices: makeChoices(el.name, nameD),
+      correct: el.name,
     });
   }
 
   return shuffle(questions);
+}
+
+function factMentionsName(fact, name) {
+  const escaped = String(name).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`\\b${escaped}\\b`, "i").test(fact);
 }
 
 export function createRotation(questions) {

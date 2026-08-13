@@ -1,4 +1,5 @@
 import {
+  buildEasyElementQuestions,
   buildElementQuestions,
   buildPresidentQuestions,
   createRotation,
@@ -222,15 +223,26 @@ function renderHub(category) {
   });
 }
 
-function startElementQuiz({ focus, all, categoryLabels, scopeLabel, scopeId }) {
+function startElementQuiz({
+  focus,
+  all,
+  categoryLabels,
+  scopeLabel,
+  scopeId,
+  difficulty = "practice",
+}) {
   cleanupPeriodicTable();
-  const questions = buildElementQuestions(focus, all, categoryLabels);
+  const easy = difficulty === "easy";
+  const questions = easy
+    ? buildEasyElementQuestions(focus, all, categoryLabels)
+    : buildElementQuestions(focus, all, categoryLabels);
   if (!questions.length) {
     alert("Not enough element data to build a quiz for this group.");
     return;
   }
   state.quiz = {
     mode: "elements",
+    difficulty: easy ? "easy" : "practice",
     scopeLabel,
     scopeId,
     focus,
@@ -240,7 +252,8 @@ function startElementQuiz({ focus, all, categoryLabels, scopeLabel, scopeId }) {
     total: questions.length,
   };
   state.lastResult = null;
-  els.subtitle.textContent = `${state.category.name} · ${scopeLabel}`;
+  const modeLabel = easy ? "Easy" : "Practice";
+  els.subtitle.textContent = `${state.category.name} · ${modeLabel} · ${scopeLabel}`;
   renderQuizQuestion();
   show("quiz");
 }
@@ -725,6 +738,8 @@ function renderQuizQuestion() {
   const qFlagId = quizFlagId(state.category.id, question.id);
   const flagged = isFlagged(qFlagId);
 
+  const dossier = state.quiz.difficulty === "easy" || question.id.startsWith("el-easy-");
+
   els.quiz.innerHTML = `
     <div class="quiz-shell">
       <div class="quiz-progress" aria-live="polite">
@@ -732,7 +747,9 @@ function renderQuizQuestion() {
         <span>${progressRemoved} / ${total} cleared</span>
         <span>${answered} answered</span>
       </div>
-      <p class="quiz-prompt">${escapeHtml(question.prompt).replace(/\n/g, "<br />")}</p>
+      <p class="quiz-prompt${dossier ? " quiz-prompt--dossier" : ""}">${escapeHtml(
+        question.prompt
+      ).replace(/\n/g, "<br />")}</p>
       <div class="choice-list" id="choice-list">
         ${question.choices
           .map(
@@ -831,7 +848,9 @@ function renderQuizDone() {
   const { rotation, total } = quiz;
   const isElements = quiz.mode === "elements";
   const scopeText = isElements
-    ? quiz.scopeLabel || "Elements"
+    ? `${quiz.difficulty === "easy" ? "Easy · " : "Practice · "}${
+        quiz.scopeLabel || "Elements"
+      }`
     : (quiz.batchNumbers || []).map((n) => `Batch ${n}`).join(", ");
   els.subtitle.textContent = `${state.category.name} · Quiz complete`;
   els.quizDone.innerHTML = `
@@ -862,6 +881,7 @@ function renderQuizDone() {
         categoryLabels: quiz.categoryLabels,
         scopeLabel: quiz.scopeLabel,
         scopeId: quiz.scopeId,
+        difficulty: quiz.difficulty || "practice",
       });
       return;
     }

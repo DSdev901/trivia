@@ -716,6 +716,14 @@ body {
   white-space: pre-wrap;
 }
 
+.quiz-prompt--dossier {
+  font-family: var(--font-body, inherit);
+  font-size: clamp(0.98rem, 2.2vw, 1.12rem);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
 .choice-list {
   display: grid;
   gap: 0.65rem;
@@ -1188,6 +1196,13 @@ body {
 
 .pt-quiz-panel .speech-lede {
   max-width: 40rem;
+}
+
+.pt-quiz-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  flex: 0 0 auto;
 }
 
 .pt-legend {

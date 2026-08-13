@@ -130,11 +130,17 @@ function applyCategoryFilter() {
   const quizCopy = pt.root.querySelector(".pt-quiz-panel .speech-lede");
   if (quizCopy) {
     const n = elementsForScope().length;
-    quizCopy.innerHTML = `Test symbols, numbers, families, and facts for
-          <strong>${escapeHtml(scopeLabel())}</strong> (${n} elements). Uses the same group as Listen / the legend.`;
+  if (quizCopy) {
+    const n = elementsForScope().length;
+    quizCopy.innerHTML = `Quiz <strong>${escapeHtml(scopeLabel())}</strong> (${n} elements) —
+          same group as Listen / the legend. <strong>Easy</strong> lists Z, family, and facts so you pick the name.
+          <strong>Practice</strong> mixes lean ID, property, and position drills.`;
   }
-  const quizBtn = pt.root.querySelector("#pt-quiz-start");
-  if (quizBtn) quizBtn.disabled = elementsForScope().length < 1;
+  const disabled = elementsForScope().length < 1;
+  for (const id of ["#pt-quiz-easy", "#pt-quiz-start"]) {
+    const btn = pt.root.querySelector(id);
+    if (btn) btn.disabled = disabled;
+  }
 }
 
 function selectElement(z, { speakOne = false } = {}) {
@@ -416,11 +422,16 @@ function quizPanelHtml() {
     <section class="pt-quiz-panel" aria-label="Quiz">
       <div class="pt-quiz-copy">
         <p class="speech-kicker">Quiz</p>
-        <p class="speech-lede">Test symbols, numbers, families, and facts for
-          <strong>${escapeHtml(label)}</strong> (${n} elements). Uses the same group as Listen / the legend.</p>
+        <p class="speech-lede">Quiz <strong>${escapeHtml(label)}</strong> (${n} elements) —
+          same group as Listen / the legend. <strong>Easy</strong> lists Z, family, and facts so you pick the name.
+          <strong>Practice</strong> mixes lean ID, property, and position drills.</p>
       </div>
-      <button type="button" class="speech-btn speech-btn-primary" id="pt-quiz-start"
-        ${n < 1 ? "disabled" : ""}>Start quiz</button>
+      <div class="pt-quiz-actions">
+        <button type="button" class="speech-btn speech-btn-primary" id="pt-quiz-easy"
+          ${n < 1 ? "disabled" : ""}>Easy quiz</button>
+        <button type="button" class="speech-btn" id="pt-quiz-start"
+          ${n < 1 ? "disabled" : ""}>Practice quiz</button>
+      </div>
     </section>`;
 }
 
@@ -506,7 +517,7 @@ function bind() {
     setStatus("Stopped.");
   });
 
-  pt.root.querySelector("#pt-quiz-start")?.addEventListener("click", () => {
+  const startQuiz = (difficulty) => {
     stopTour();
     const cat =
       pt.root.querySelector("#pt-group-select")?.value ||
@@ -522,7 +533,15 @@ function bind() {
       categoryLabels: pt.data?.categoryLabels || {},
       scopeLabel: scopeLabel(cat),
       scopeId: cat,
+      difficulty,
     });
+  };
+
+  pt.root.querySelector("#pt-quiz-easy")?.addEventListener("click", () => {
+    startQuiz("easy");
+  });
+  pt.root.querySelector("#pt-quiz-start")?.addEventListener("click", () => {
+    startQuiz("practice");
   });
 
   bindDetailSpeech();
