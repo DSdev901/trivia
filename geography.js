@@ -476,6 +476,15 @@ function mainlandForEl(el) {
   return clusterParts(elementParts(el))[0] || null;
 }
 
+/** Skip specks (Prince Edward Islands, etc.) that inflate a country's bbox. */
+function compactMainlandForEl(el) {
+  const parts = elementParts(el);
+  if (!parts.length) return null;
+  const maxA = Math.max(...parts.map((p) => p.area));
+  const kept = parts.filter((p) => p.area >= maxA * 0.02);
+  return clusterParts(kept.length ? kept : parts)[0] || null;
+}
+
 function regionsForId(host, id) {
   return [...host.querySelectorAll(`.geo-region[data-id="${CSS.escape(id)}"]`)];
 }
@@ -599,7 +608,7 @@ function mainlandBoundsForIds(host, ids) {
   const boxes = [];
   for (const id of ids) {
     regionsForId(host, id).forEach((el) => {
-      const m = mainlandForEl(el);
+      const m = compactMainlandForEl(el);
       if (m) boxes.push(m);
     });
   }
@@ -662,12 +671,13 @@ function paddedViewBox(bounds, padRatio) {
   const { minX, minY, maxX, maxY } = bounds;
   const bw = Math.max(1, maxX - minX);
   const bh = Math.max(1, maxY - minY);
-  const pad = Math.max(12, bw * padRatio, bh * padRatio);
+  const padX = Math.max(8, bw * padRatio);
+  const padY = Math.max(8, bh * padRatio);
   return {
-    x: minX - pad,
-    y: minY - pad,
-    w: Math.max(30, bw + pad * 2),
-    h: Math.max(30, bh + pad * 2),
+    x: minX - padX,
+    y: minY - padY,
+    w: Math.max(30, bw + padX * 2),
+    h: Math.max(30, bh + padY * 2),
   };
 }
 
@@ -707,22 +717,24 @@ function allRegionIds(host) {
   ];
 }
 
-function quizBoundsForIds(host, ids, { mapW, mapH, core } = {}) {
+function quizBoundsForIds(host, ids, { mapW, mapH, core, coreOnly = false } = {}) {
   const boxes = [];
   for (const id of ids) {
     regionsForId(host, id).forEach((el) => {
-      const m = mainlandForEl(el);
+      const m = compactMainlandForEl(el);
       if (!m) return;
-      let { minX, minY, maxX, maxY, cx } = m;
+      let { minX, minY, maxX, maxY, cx, cy, area } = m;
       const dx = core ? unwrapDx(cx, core.x, mapW || 1000) : 0;
       if (dx) {
         minX += dx;
         maxX += dx;
+        cx += dx;
       }
-      boxes.push({ minX, minY, maxX, maxY });
+      boxes.push({ minX, minY, maxX, maxY, cx, cy, area });
     });
   }
-  const bounds = bboxUnion(boxes);
+  const used = coreOnly ? coreLandBoxes(boxes) : boxes;
+  const bounds = bboxUnion(used);
   if (!bounds) return { useFullMap: true };
   const w = bounds.maxX - bounds.minX;
   const h = bounds.maxY - bounds.minY;
@@ -730,12 +742,30 @@ function quizBoundsForIds(host, ids, { mapW, mapH, core } = {}) {
   return bounds;
 }
 
-function boundsForFitIds(host, svg, ids) {
+function coreLandBoxes(boxes) {
+  if (boxes.length < 8) return boxes;
+  const cxs = boxes.map((b) => b.cx).sort((a, b) => a - b);
+  const cys = boxes.map((b) => b.cy).sort((a, b) => a - b);
+  const mx = cxs[Math.floor(cxs.length / 2)];
+  const my = cys[Math.floor(cys.length / 2)];
+  const maxA = Math.max(...boxes.map((b) => b.area || 0));
+  const dists = boxes.map((b) => Math.hypot(b.cx - mx, b.cy - my));
+  const mad =
+    [...dists].sort((a, b) => a - b)[Math.floor(dists.length / 2)] || 1;
+  const kept = boxes.filter((b, i) => {
+    if ((b.area || 0) >= maxA * 0.04) return true;
+    return dists[i] <= mad * 1.7;
+  });
+  if (kept.length < Math.max(4, Math.floor(boxes.length * 0.65))) return boxes;
+  return kept;
+}
+
+function boundsForFitIds(host, svg, ids, { coreOnly = false } = {}) {
   if (isWorldCountriesMap()) {
     if (ids.length <= 1) return mainlandBoundsForIds(host, ids);
     const { mapW, mapH } = mapSize(svg);
     const core = packCorePoint(host, ids);
-    return quizBoundsForIds(host, ids, { mapW, mapH, core });
+    return quizBoundsForIds(host, ids, { mapW, mapH, core, coreOnly });
   }
   return simpleBoundsForIds(host, ids);
 }
@@ -782,7 +812,7 @@ function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false, panIds = null 
   ensureBaseViewBox(svg);
   unwrapPackRegions(host, svg);
 
-  const bounds = boundsForFitIds(host, svg, ids);
+  const bounds = boundsForFitIds(host, svg, ids, { coreOnly: true });
   if (!bounds || bounds.useFullMap) {
     resetMapViewBox();
     if (storeAsPack) geo._packViewBox = geo._baseViewBox;
@@ -791,13 +821,9 @@ function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false, panIds = null 
   }
 
   const packVb = applyViewBox(svg, bounds, padRatio, storeAsPack);
-  const extraIds = (panIds || []).filter((id) => !ids.includes(id));
-  if (!extraIds.length) return;
-  const panBounds = boundsForFitIds(host, svg, panIds);
-  if (!panBounds || panBounds.useFullMap) {
-    geo._panLimit = geo._baseViewBox || geo._panLimit;
-    return;
-  }
+  const panSource = panIds?.length ? panIds : ids;
+  const panBounds = boundsForFitIds(host, svg, panSource);
+  if (!panBounds || panBounds.useFullMap) return;
   const panVb = unionViewBox(packVb, paddedViewBox(panBounds, Math.max(padRatio, 0.1)));
   geo._panLimit = viewBoxAttr(panVb);
   coverOcean(svg, panVb.x, panVb.y, panVb.w, panVb.h);
@@ -841,14 +867,14 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   });
   if (outline) {
     if (host.dataset.geoOutlineId !== activeId) {
-      fitMapToIds([activeId], { padRatio: 0.08 });
+      fitMapToIds([activeId], { padRatio: 0.05 });
       host.dataset.geoOutlineId = activeId;
     }
   } else if (scopePack) {
     if (host.dataset.geoFitted !== "1") {
       const packIds = [...inPack];
       fitMapToIds(packIds, {
-        padRatio: 0.06,
+        padRatio: 0.03,
         storeAsPack: !geo._packViewBox,
         panIds: panIdsForPack(host, inPack),
       });
@@ -1547,6 +1573,7 @@ function renderPlay() {
     "geo-shell",
     "geo-play",
     showMap ? "geo-play--map" : "",
+    geo.mode === "pin" ? "geo-play--pin" : "",
     geo.mode === "type" || geo.mode === "outline" ? "geo-play--type" : "",
   ]
     .filter(Boolean)
@@ -1559,8 +1586,8 @@ function renderPlay() {
         <p class="speech-kicker">${escapeHtml(geo.pack.name)} · ${escapeHtml(
           MODE_META[geo.mode]?.label || geo.mode
         )}</p>
+        ${progressHtml()}
       </div>
-      ${progressHtml()}
       <div class="geo-play-layout ${showMap ? "" : "no-map"}">
         ${showMap ? `<div class="geo-map-wrap">${mapHtml()}</div>` : ""}
         <aside class="geo-side">
