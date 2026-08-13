@@ -1904,7 +1904,7 @@ body {
 .geo-map-frame .geo-marker {
   fill: #5e6d7a;
   stroke: #f7fafc;
-  stroke-width: 0.7;
+  stroke-width: 0.45;
   transform-box: fill-box;
   transform-origin: center;
   transition: fill 120ms ease, opacity 120ms ease, transform 120ms ease, stroke-width 120ms ease;
@@ -1919,7 +1919,7 @@ body {
 
 .geo-map-frame.is-feature-map .geo-marker {
   stroke: #f7fafc;
-  stroke-width: 0.65;
+  stroke-width: 0.4;
 }
 
 .geo-map-frame .geo-marker-water {
@@ -1944,33 +1944,33 @@ body {
 .geo-map-frame .geo-pin:hover .geo-region.geo-marker:not(.is-active):not(.is-correct):not(.is-wrong) {
   fill: #2f3d48;
   stroke: #152028;
-  stroke-width: 1.45;
+  stroke-width: 0.85;
   opacity: 1;
-  transform: scale(1.22);
+  transform: scale(1.18);
 }
 
 .geo-map-frame .geo-region.geo-marker.is-active {
   fill: #4a5a66;
   stroke: var(--accent);
-  stroke-width: 2.15;
+  stroke-width: 1.15;
   opacity: 1;
-  transform: scale(1.42);
+  transform: scale(1.28);
 }
 
 .geo-map-frame .geo-region.geo-marker.is-correct {
   fill: #2f9e6b;
   stroke: #fff;
-  stroke-width: 1.35;
+  stroke-width: 0.9;
   opacity: 1;
-  transform: scale(1.45);
+  transform: scale(1.32);
 }
 
 .geo-map-frame .geo-region.geo-marker.is-wrong {
   fill: #c45c5c;
   stroke: #fff;
-  stroke-width: 1.35;
+  stroke-width: 0.9;
   opacity: 1;
-  transform: scale(1.4);
+  transform: scale(1.28);
 }
 
 .geo-map-frame .geo-marker-label {
