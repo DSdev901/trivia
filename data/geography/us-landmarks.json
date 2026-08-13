@@ -1,0 +1,129 @@
+{
+  "id": "us-landmarks",
+  "name": "The U.S.: 12 Landmarks",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "liberty",
+      "name": "Statue of Liberty",
+      "fact": "Monument in New York Harbor.",
+      "kind": "landmark",
+      "lat": 40.6892,
+      "lon": -74.0445,
+      "x": 313.8,
+      "y": 126.9
+    },
+    {
+      "id": "golden-gate",
+      "name": "Golden Gate Bridge",
+      "fact": "San Francisco’s signature bridge.",
+      "kind": "landmark",
+      "lat": 37.8199,
+      "lon": -122.4783,
+      "x": 188.2,
+      "y": 135.9
+    },
+    {
+      "id": "rushmore",
+      "name": "Mount Rushmore",
+      "fact": "Presidential sculpture in the Black Hills.",
+      "kind": "landmark",
+      "lat": 43.8791,
+      "lon": -103.4591,
+      "x": 243.7,
+      "y": 116.8
+    },
+    {
+      "id": "grand-canyon",
+      "name": "Grand Canyon",
+      "fact": "Canyon carved by the Colorado River.",
+      "kind": "landmark",
+      "lat": 36.1069,
+      "lon": -112.1129,
+      "x": 212.6,
+      "y": 141.4
+    },
+    {
+      "id": "white-house",
+      "name": "White House",
+      "fact": "Residence of the U.S. president.",
+      "kind": "landmark",
+      "lat": 38.8977,
+      "lon": -77.0365,
+      "x": 304.7,
+      "y": 132.5
+    },
+    {
+      "id": "gateway-arch",
+      "name": "Gateway Arch",
+      "fact": "Monument on the St. Louis riverfront.",
+      "kind": "landmark",
+      "lat": 38.6247,
+      "lon": -90.1848,
+      "x": 271.1,
+      "y": 133.4
+    },
+    {
+      "id": "hoover-dam",
+      "name": "Hoover Dam",
+      "fact": "Dam on the Colorado River.",
+      "kind": "landmark",
+      "lat": 36.016,
+      "lon": -114.737,
+      "x": 205.8,
+      "y": 141.7
+    },
+    {
+      "id": "empire-state",
+      "name": "Empire State Building",
+      "fact": "Art Deco skyscraper in New York.",
+      "kind": "landmark",
+      "lat": 40.7484,
+      "lon": -73.9857,
+      "x": 314,
+      "y": 126.7
+    },
+    {
+      "id": "space-needle",
+      "name": "Space Needle",
+      "fact": "Seattle tower from the 1962 World’s Fair.",
+      "kind": "landmark",
+      "lat": 47.6205,
+      "lon": -122.3493,
+      "x": 202.8,
+      "y": 105.2
+    },
+    {
+      "id": "independence",
+      "name": "Independence Hall",
+      "fact": "Where the Declaration of Independence was adopted.",
+      "kind": "landmark",
+      "lat": 39.9489,
+      "lon": -75.15,
+      "x": 310.4,
+      "y": 129.2
+    },
+    {
+      "id": "alamo",
+      "name": "The Alamo",
+      "fact": "Mission and fortress in San Antonio.",
+      "kind": "landmark",
+      "lat": 29.4259,
+      "lon": -98.4861,
+      "x": 241.7,
+      "y": 162.6
+    },
+    {
+      "id": "niagara",
+      "name": "Niagara Falls",
+      "fact": "Waterfalls on the U.S.–Canada border.",
+      "kind": "landmark",
+      "lat": 43.0799,
+      "lon": -79.0747,
+      "x": 303.3,
+      "y": 119.3
+    }
+  ]
+}

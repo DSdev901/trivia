@@ -1,0 +1,189 @@
+{
+  "id": "sa-physical",
+  "name": "South America: Physical Features",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "fact": "Largest river by discharge.",
+      "kind": "water",
+      "lat": -3,
+      "lon": -60,
+      "x": 336,
+      "y": 265.5
+    },
+    {
+      "id": "amazon-rainforest",
+      "name": "Amazon Rainforest",
+      "fact": "World’s largest tropical rainforest.",
+      "kind": "land",
+      "lat": -4,
+      "lon": -62,
+      "x": 330.6,
+      "y": 268.7
+    },
+    {
+      "id": "andes",
+      "name": "Andes",
+      "fact": "Spine of western South America.",
+      "kind": "range",
+      "lat": -20,
+      "lon": -68,
+      "x": 317.5,
+      "y": 319.4
+    },
+    {
+      "id": "atacama",
+      "name": "Atacama Desert",
+      "fact": "One of the driest places on Earth.",
+      "kind": "land",
+      "lat": -24.5,
+      "lon": -69.3,
+      "x": 315.8,
+      "y": 333.7
+    },
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean off the east coast.",
+      "kind": "water",
+      "lat": -15,
+      "lon": -30,
+      "x": 418.8,
+      "y": 303.5
+    },
+    {
+      "id": "brazilian-highlands",
+      "name": "Brazilian Highlands",
+      "fact": "Plateau covering much of Brazil.",
+      "kind": "land",
+      "lat": -16,
+      "lon": -47,
+      "x": 373,
+      "y": 306.7
+    },
+    {
+      "id": "falklands",
+      "name": "Falkland Islands",
+      "fact": "Archipelago in the South Atlantic.",
+      "kind": "land",
+      "lat": -51.7,
+      "lon": -59,
+      "x": 360.1,
+      "y": 419.4
+    },
+    {
+      "id": "galapagos",
+      "name": "Galápagos Islands",
+      "fact": "Volcanic islands west of Ecuador.",
+      "kind": "land",
+      "lat": -0.7,
+      "lon": -90.3,
+      "x": 253.1,
+      "y": 258.2
+    },
+    {
+      "id": "maracaibo",
+      "name": "Lake Maracaibo",
+      "fact": "Large tidal bay in Venezuela.",
+      "kind": "water",
+      "lat": 9.8,
+      "lon": -71.55,
+      "x": 305.2,
+      "y": 225
+    },
+    {
+      "id": "titicaca",
+      "name": "Lake Titicaca",
+      "fact": "Highest large navigable lake.",
+      "kind": "water",
+      "lat": -15.8,
+      "lon": -69.4,
+      "x": 312.4,
+      "y": 306.1
+    },
+    {
+      "id": "pacific-ocean",
+      "name": "Pacific Ocean",
+      "fact": "Ocean off the west coast.",
+      "kind": "water",
+      "lat": -20,
+      "lon": -85,
+      "x": 271.9,
+      "y": 319.4
+    },
+    {
+      "id": "pampas",
+      "name": "Pampas",
+      "fact": "Fertile plains of Argentina and Uruguay.",
+      "kind": "land",
+      "lat": -35,
+      "lon": -62,
+      "x": 340.4,
+      "y": 367.2
+    },
+    {
+      "id": "paraguay-river",
+      "name": "Paraguay River",
+      "fact": "Major tributary of the Paraná.",
+      "kind": "water",
+      "lat": -21,
+      "lon": -58,
+      "x": 344.7,
+      "y": 322.6
+    },
+    {
+      "id": "parana",
+      "name": "Paraná River",
+      "fact": "Second-longest river in South America.",
+      "kind": "water",
+      "lat": -27,
+      "lon": -58.5,
+      "x": 345.5,
+      "y": 341.7
+    },
+    {
+      "id": "patagonia",
+      "name": "Patagonia",
+      "fact": "Southern region of Argentina and Chile.",
+      "kind": "land",
+      "lat": -47,
+      "lon": -70,
+      "x": 329.4,
+      "y": 405
+    },
+    {
+      "id": "rio-plata",
+      "name": "Río de la Plata",
+      "fact": "Estuary of the Paraná and Uruguay rivers.",
+      "kind": "water",
+      "lat": -34.9,
+      "lon": -57,
+      "x": 353.2,
+      "y": 366.9
+    },
+    {
+      "id": "magellan",
+      "name": "Strait of Magellan",
+      "fact": "Passage at the tip of South America.",
+      "kind": "water",
+      "lat": -53.5,
+      "lon": -70.8,
+      "x": 334,
+      "y": 424.8
+    },
+    {
+      "id": "tierra-del-fuego",
+      "name": "Tierra Del Fuego",
+      "fact": "Archipelago at the continent’s southern tip.",
+      "kind": "land",
+      "lat": -54,
+      "lon": -68.5,
+      "x": 339.9,
+      "y": 426.3
+    }
+  ]
+}

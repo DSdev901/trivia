@@ -1,0 +1,129 @@
+{
+  "id": "na-lakes",
+  "name": "North America: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "great-bear",
+      "name": "Great Bear Lake",
+      "fact": "Largest lake entirely in Canada.",
+      "kind": "water",
+      "lat": 66,
+      "lon": -121,
+      "x": 241.8,
+      "y": 51.1
+    },
+    {
+      "id": "great-salt",
+      "name": "Great Salt Lake",
+      "fact": "Largest U.S. salt lake.",
+      "kind": "water",
+      "lat": 41.15,
+      "lon": -112.55,
+      "x": 217.5,
+      "y": 125.4
+    },
+    {
+      "id": "great-slave",
+      "name": "Great Slave Lake",
+      "fact": "Deepest lake in North America.",
+      "kind": "water",
+      "lat": 61.4,
+      "lon": -114,
+      "x": 247.4,
+      "y": 64
+    },
+    {
+      "id": "erie",
+      "name": "Lake Erie",
+      "fact": "Shallowest Great Lake.",
+      "kind": "water",
+      "lat": 42.2,
+      "lon": -81.2,
+      "x": 297.2,
+      "y": 122.1
+    },
+    {
+      "id": "huron",
+      "name": "Lake Huron",
+      "fact": "Includes Georgian Bay.",
+      "kind": "water",
+      "lat": 44.8,
+      "lon": -82.4,
+      "x": 296.8,
+      "y": 113.9
+    },
+    {
+      "id": "michigan",
+      "name": "Lake Michigan",
+      "fact": "Entirely within the United States.",
+      "kind": "water",
+      "lat": 44,
+      "lon": -87,
+      "x": 284.6,
+      "y": 116.4
+    },
+    {
+      "id": "nipigon",
+      "name": "Lake Nipigon",
+      "fact": "Largest lake entirely in Ontario.",
+      "kind": "water",
+      "lat": 49.8,
+      "lon": -88.5,
+      "x": 287.7,
+      "y": 98.5
+    },
+    {
+      "id": "okeechobee",
+      "name": "Lake Okeechobee",
+      "fact": "Largest lake in Florida.",
+      "kind": "water",
+      "lat": 26.93,
+      "lon": -80.8,
+      "x": 286.6,
+      "y": 170.6
+    },
+    {
+      "id": "ontario",
+      "name": "Lake Ontario",
+      "fact": "Easternmost Great Lake.",
+      "kind": "water",
+      "lat": 43.7,
+      "lon": -77.9,
+      "x": 306.8,
+      "y": 117.4
+    },
+    {
+      "id": "superior",
+      "name": "Lake Superior",
+      "fact": "Largest Great Lake.",
+      "kind": "water",
+      "lat": 47.7,
+      "lon": -87.5,
+      "x": 287.5,
+      "y": 104.9
+    },
+    {
+      "id": "winnipeg",
+      "name": "Lake Winnipeg",
+      "fact": "Large lake in Manitoba.",
+      "kind": "water",
+      "lat": 52.5,
+      "lon": -97.5,
+      "x": 269.9,
+      "y": 90.2
+    },
+    {
+      "id": "woods",
+      "name": "Lake of the Woods",
+      "fact": "Lake on the U.S.–Canada border.",
+      "kind": "water",
+      "lat": 49.1,
+      "lon": -94.8,
+      "x": 271.6,
+      "y": 100.6
+    }
+  ]
+}

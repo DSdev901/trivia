@@ -1,0 +1,129 @@
+{
+  "id": "sa-landmarks",
+  "name": "South America: 12 Landmarks",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "angel-falls",
+      "name": "Angel Falls",
+      "fact": "World’s highest uninterrupted waterfall.",
+      "kind": "landmark",
+      "lat": 5.967,
+      "lon": -62.535,
+      "x": 329.3,
+      "y": 237.2
+    },
+    {
+      "id": "brasilia-cathedral",
+      "name": "Brasilia Cathedral",
+      "fact": "Cathedral of Brasília.",
+      "kind": "landmark",
+      "lat": -15.798,
+      "lon": -47.875,
+      "x": 370.6,
+      "y": 306.1
+    },
+    {
+      "id": "christ-redeemer",
+      "name": "Christ the Redeemer",
+      "fact": "Statue overlooking Rio de Janeiro.",
+      "kind": "landmark",
+      "lat": -22.9519,
+      "lon": -43.2105,
+      "x": 384.8,
+      "y": 328.8
+    },
+    {
+      "id": "easter-island",
+      "name": "Easter Island",
+      "fact": "Rapa Nui, known for moai statues.",
+      "kind": "landmark",
+      "lat": -27.1127,
+      "lon": -109.3497,
+      "x": 211.3,
+      "y": 342.1
+    },
+    {
+      "id": "penol",
+      "name": "El Peñón de Guatapé",
+      "fact": "Rock landmark in Colombia.",
+      "kind": "landmark",
+      "lat": 6.223,
+      "lon": -75.178,
+      "x": 294.8,
+      "y": 236.3
+    },
+    {
+      "id": "galapagos",
+      "name": "Galápagos Islands",
+      "fact": "UNESCO volcanic archipelago.",
+      "kind": "landmark",
+      "lat": -0.7,
+      "lon": -90.3,
+      "x": 253.1,
+      "y": 258.2
+    },
+    {
+      "id": "iguazu",
+      "name": "Iguazu Falls",
+      "fact": "Waterfalls on the Argentina–Brazil border.",
+      "kind": "landmark",
+      "lat": -25.695,
+      "lon": -54.437,
+      "x": 355.8,
+      "y": 337.5
+    },
+    {
+      "id": "la-mano",
+      "name": "La Mano de Punta del Este",
+      "fact": "Sculpture on a Uruguayan beach.",
+      "kind": "landmark",
+      "lat": -34.957,
+      "lon": -54.937,
+      "x": 358.6,
+      "y": 367
+    },
+    {
+      "id": "machu-picchu",
+      "name": "Machu Picchu",
+      "fact": "Inca citadel in Peru.",
+      "kind": "landmark",
+      "lat": -13.1631,
+      "lon": -72.545,
+      "x": 303.2,
+      "y": 297.7
+    },
+    {
+      "id": "uyuni",
+      "name": "Salar de Uyuni",
+      "fact": "World’s largest salt flat.",
+      "kind": "landmark",
+      "lat": -20.1338,
+      "lon": -67.4891,
+      "x": 318.9,
+      "y": 319.8
+    },
+    {
+      "id": "santiago-cathedral",
+      "name": "Santiago Metropolitan Cathedral",
+      "fact": "Cathedral on Santiago’s Plaza de Armas.",
+      "kind": "landmark",
+      "lat": -33.4378,
+      "lon": -70.6505,
+      "x": 317.1,
+      "y": 362.2
+    },
+    {
+      "id": "tierra-del-fuego",
+      "name": "Tierra Del Fuego",
+      "fact": "Southernmost inhabited region of the continent.",
+      "kind": "landmark",
+      "lat": -54.8,
+      "lon": -68.3,
+      "x": 341.2,
+      "y": 428.7
+    }
+  ]
+}

@@ -1,92 +1,309 @@
 {
   "id": "na-physical",
   "name": "North America: Physical Features",
-  "map": "na-physical",
+  "map": "world-countries",
+  "overlay": "markers",
   "quiz": "places",
   "items": [
     {
-      "id": "rockies",
-      "name": "Rocky Mountains",
-      "fact": "Stretch from New Mexico into Canada.",
-      "lat": 45,
-      "lon": -113
+      "id": "alaska-peninsula",
+      "name": "Alaska Peninsula",
+      "fact": "Peninsula of southwest Alaska.",
+      "kind": "land",
+      "lat": 56.5,
+      "lon": -158.5,
+      "x": 135.9,
+      "y": 78.3
+    },
+    {
+      "id": "alaska-range",
+      "name": "Alaska Range",
+      "fact": "Range that includes Denali.",
+      "kind": "range",
+      "lat": 63.4,
+      "lon": -150.5,
+      "x": 171.9,
+      "y": 58.4
     },
     {
       "id": "appalachians",
       "name": "Appalachian Mountains",
       "fact": "Ancient range of eastern North America.",
+      "kind": "range",
       "lat": 37,
-      "lon": -81
+      "lon": -81,
+      "x": 293.1,
+      "y": 138.5
     },
     {
-      "id": "sierra-nevada",
-      "name": "Sierra Nevada",
-      "fact": "California’s high granite range.",
-      "lat": 37.5,
-      "lon": -119
-    },
-    {
-      "id": "cascade",
-      "name": "Cascade Range",
-      "fact": "Volcanic range of the Pacific Northwest.",
-      "lat": 46,
-      "lon": -121.5
-    },
-    {
-      "id": "mississippi",
-      "name": "Mississippi River",
-      "fact": "Drains much of the U.S. interior.",
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean off the east coast.",
+      "kind": "water",
       "lat": 35,
-      "lon": -90
+      "lon": -65,
+      "x": 332.7,
+      "y": 144.9
     },
     {
-      "id": "missouri",
-      "name": "Missouri River",
-      "fact": "Longest tributary of the Mississippi.",
-      "lat": 42,
-      "lon": -98
+      "id": "bering-strait",
+      "name": "Bering Strait",
+      "fact": "Separates Alaska from Russia.",
+      "kind": "water",
+      "lat": 65.8,
+      "lon": -168.5,
+      "x": 139.9,
+      "y": 51.7
     },
     {
       "id": "colorado",
       "name": "Colorado River",
       "fact": "Carved the Grand Canyon.",
-      "lat": 36,
-      "lon": -113.5
+      "kind": "water",
+      "lat": 36.1,
+      "lon": -113.8,
+      "x": 208.3,
+      "y": 141.4
     },
     {
-      "id": "great-plains",
-      "name": "Great Plains",
-      "fact": "Broad grassland of central North America.",
-      "lat": 40,
-      "lon": -101
+      "id": "denali",
+      "name": "Denali (Mount McKinley)",
+      "fact": "Highest peak in North America.",
+      "kind": "range",
+      "lat": 63.0695,
+      "lon": -151.0074,
+      "x": 169.9,
+      "y": 59.3
+    },
+    {
+      "id": "great-basin",
+      "name": "Great Basin Desert",
+      "fact": "Largest U.S. desert.",
+      "kind": "land",
+      "lat": 39.5,
+      "lon": -117,
+      "x": 204.2,
+      "y": 130.6
+    },
+    {
+      "id": "great-bear",
+      "name": "Great Bear Lake",
+      "fact": "Largest lake entirely in Canada.",
+      "kind": "water",
+      "lat": 66,
+      "lon": -121,
+      "x": 241.8,
+      "y": 51.1
+    },
+    {
+      "id": "great-salt",
+      "name": "Great Salt Lake",
+      "fact": "Largest salt lake in the Western Hemisphere.",
+      "kind": "water",
+      "lat": 41.15,
+      "lon": -112.55,
+      "x": 217.5,
+      "y": 125.4
+    },
+    {
+      "id": "great-slave",
+      "name": "Great Slave Lake",
+      "fact": "Deepest lake in North America.",
+      "kind": "water",
+      "lat": 61.4,
+      "lon": -114,
+      "x": 247.4,
+      "y": 64
     },
     {
       "id": "gulf-mexico",
       "name": "Gulf of Mexico",
-      "fact": "Atlantic gulf bordered by the U.S., Mexico, and Cuba.",
+      "fact": "Atlantic gulf south of the U.S.",
+      "kind": "water",
       "lat": 25,
-      "lon": -90
+      "lon": -90,
+      "x": 261.1,
+      "y": 176.7
     },
     {
       "id": "hudson-bay",
       "name": "Hudson Bay",
       "fact": "Large inland sea of northeastern Canada.",
+      "kind": "water",
       "lat": 60,
-      "lon": -85
+      "lon": -85,
+      "x": 309.6,
+      "y": 68.1
     },
     {
-      "id": "death-valley",
-      "name": "Death Valley",
-      "fact": "Hottest place in North America.",
-      "lat": 36.5,
-      "lon": -117
+      "id": "athabasca",
+      "name": "Lake Athabasca",
+      "fact": "Large lake on the Alberta–Saskatchewan border.",
+      "kind": "water",
+      "lat": 59.1,
+      "lon": -110,
+      "x": 252,
+      "y": 70.7
+    },
+    {
+      "id": "erie",
+      "name": "Lake Erie",
+      "fact": "Shallowest of the Great Lakes.",
+      "kind": "water",
+      "lat": 42.2,
+      "lon": -81.2,
+      "x": 297.2,
+      "y": 122.1
+    },
+    {
+      "id": "huron",
+      "name": "Lake Huron",
+      "fact": "Second-largest Great Lake by area.",
+      "kind": "water",
+      "lat": 44.8,
+      "lon": -82.4,
+      "x": 296.8,
+      "y": 113.9
+    },
+    {
+      "id": "michigan",
+      "name": "Lake Michigan",
+      "fact": "Only Great Lake entirely in the United States.",
+      "kind": "water",
+      "lat": 44,
+      "lon": -87,
+      "x": 284.6,
+      "y": 116.4
+    },
+    {
+      "id": "ontario",
+      "name": "Lake Ontario",
+      "fact": "Easternmost Great Lake.",
+      "kind": "water",
+      "lat": 43.7,
+      "lon": -77.9,
+      "x": 306.8,
+      "y": 117.4
+    },
+    {
+      "id": "superior",
+      "name": "Lake Superior",
+      "fact": "Largest freshwater lake by surface area.",
+      "kind": "water",
+      "lat": 47.7,
+      "lon": -87.5,
+      "x": 287.5,
+      "y": 104.9
+    },
+    {
+      "id": "winnipeg",
+      "name": "Lake Winnipeg",
+      "fact": "Large prairie lake in Manitoba.",
+      "kind": "water",
+      "lat": 52.5,
+      "lon": -97.5,
+      "x": 269.9,
+      "y": 90.2
+    },
+    {
+      "id": "mackenzie",
+      "name": "Mackenzie River",
+      "fact": "Canada’s longest river system.",
+      "kind": "water",
+      "lat": 67.5,
+      "lon": -130,
+      "x": 226.2,
+      "y": 47
+    },
+    {
+      "id": "mississippi",
+      "name": "Mississippi River",
+      "fact": "Drains much of the U.S. interior.",
+      "kind": "water",
+      "lat": 35,
+      "lon": -90,
+      "x": 268.3,
+      "y": 144.9
+    },
+    {
+      "id": "missouri",
+      "name": "Missouri River",
+      "fact": "Longest tributary of the Mississippi.",
+      "kind": "water",
+      "lat": 42,
+      "lon": -98,
+      "x": 255,
+      "y": 122.7
+    },
+    {
+      "id": "ohio",
+      "name": "Ohio River",
+      "fact": "Major eastern tributary of the Mississippi.",
+      "kind": "water",
+      "lat": 38.5,
+      "lon": -85,
+      "x": 284.2,
+      "y": 133.8
+    },
+    {
+      "id": "pacific-ocean",
+      "name": "Pacific Ocean",
+      "fact": "Ocean off the west coast.",
+      "kind": "water",
+      "lat": 40,
+      "lon": -135,
+      "x": 159.4,
+      "y": 129
+    },
+    {
+      "id": "rio-grande",
+      "name": "Rio Grande",
+      "fact": "Part of the U.S.–Mexico border.",
+      "kind": "water",
+      "lat": 29,
+      "lon": -103,
+      "x": 229.6,
+      "y": 164
+    },
+    {
+      "id": "rockies",
+      "name": "Rocky Mountains",
+      "fact": "From New Mexico into Canada.",
+      "kind": "range",
+      "lat": 45,
+      "lon": -113,
+      "x": 221.6,
+      "y": 113.3
+    },
+    {
+      "id": "st-lawrence",
+      "name": "Saint Lawrence",
+      "fact": "Drains the Great Lakes to the Atlantic.",
+      "kind": "water",
+      "lat": 47.5,
+      "lon": -69.5,
+      "x": 331.1,
+      "y": 105.5
+    },
+    {
+      "id": "tennessee",
+      "name": "Tennessee River",
+      "fact": "Major river of the American South.",
+      "kind": "water",
+      "lat": 35.5,
+      "lon": -87,
+      "x": 276.5,
+      "y": 143.3
     },
     {
       "id": "yukon",
       "name": "Yukon River",
       "fact": "Major river of Alaska and Yukon.",
+      "kind": "water",
       "lat": 65,
-      "lon": -145
+      "lon": -145,
+      "x": 188,
+      "y": 53.9
     }
   ]
 }

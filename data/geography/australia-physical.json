@@ -1,0 +1,269 @@
+{
+  "id": "australia-physical",
+  "name": "Australia: Physical Features",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "bass",
+      "name": "Bass Strait",
+      "fact": "Between Tasmania and mainland Australia.",
+      "kind": "water",
+      "lat": -40,
+      "lon": 146,
+      "x": 868.3,
+      "y": 383
+    },
+    {
+      "id": "coral-sea",
+      "name": "Coral Sea",
+      "fact": "Sea of the Great Barrier Reef.",
+      "kind": "water",
+      "lat": -16,
+      "lon": 152,
+      "x": 910.7,
+      "y": 306.7
+    },
+    {
+      "id": "darling-range",
+      "name": "Darling Range",
+      "fact": "Escarpment inland from Perth.",
+      "kind": "range",
+      "lat": -32,
+      "lon": 116.3,
+      "x": 802.5,
+      "y": 357.6
+    },
+    {
+      "id": "darling-river",
+      "name": "Darling River",
+      "fact": "Longest tributary of the Murray.",
+      "kind": "water",
+      "lat": -31,
+      "lon": 144,
+      "x": 875.8,
+      "y": 354.4
+    },
+    {
+      "id": "flinders",
+      "name": "Flinders River",
+      "fact": "Longest river in Queensland.",
+      "kind": "water",
+      "lat": -18.5,
+      "lon": 140.8,
+      "x": 878.9,
+      "y": 314.6
+    },
+    {
+      "id": "gascoyne",
+      "name": "Gascoyne River",
+      "fact": "Longest river in Western Australia.",
+      "kind": "water",
+      "lat": -24.8,
+      "lon": 114.6,
+      "x": 804.3,
+      "y": 334.7
+    },
+    {
+      "id": "gibson",
+      "name": "Gibson Desert",
+      "fact": "Desert of Western Australia.",
+      "kind": "land",
+      "lat": -23.5,
+      "lon": 125,
+      "x": 833,
+      "y": 330.5
+    },
+    {
+      "id": "artesian",
+      "name": "Great Artesian Basin",
+      "fact": "World’s largest underground aquifer system.",
+      "kind": "land",
+      "lat": -26,
+      "lon": 141,
+      "x": 873.3,
+      "y": 338.5
+    },
+    {
+      "id": "bight",
+      "name": "Great Australian Bight",
+      "fact": "Open bay on the southern coast.",
+      "kind": "water",
+      "lat": -35,
+      "lon": 130,
+      "x": 834.6,
+      "y": 367.2
+    },
+    {
+      "id": "barrier-reef",
+      "name": "Great Barrier Reef",
+      "fact": "World’s largest coral reef system.",
+      "kind": "water",
+      "lat": -18,
+      "lon": 147.5,
+      "x": 897.3,
+      "y": 313.1
+    },
+    {
+      "id": "dividing-range",
+      "name": "Great Dividing Range",
+      "fact": "Australia’s principal mountain chain.",
+      "kind": "range",
+      "lat": -28,
+      "lon": 152,
+      "x": 900.3,
+      "y": 344.9
+    },
+    {
+      "id": "sandy-desert",
+      "name": "Great Sandy Desert",
+      "fact": "Desert of northwest Australia.",
+      "kind": "land",
+      "lat": -20,
+      "lon": 125,
+      "x": 835.4,
+      "y": 319.4
+    },
+    {
+      "id": "victoria-desert",
+      "name": "Great Victoria Desert",
+      "fact": "Australia’s largest desert.",
+      "kind": "land",
+      "lat": -29,
+      "lon": 129,
+      "x": 838.7,
+      "y": 348.1
+    },
+    {
+      "id": "carpentaria",
+      "name": "Gulf of Carpentaria",
+      "fact": "Gulf of northern Australia.",
+      "kind": "water",
+      "lat": -14,
+      "lon": 139,
+      "x": 876.7,
+      "y": 300.4
+    },
+    {
+      "id": "hamersley",
+      "name": "Hamersley Range",
+      "fact": "Range of the Pilbara.",
+      "kind": "range",
+      "lat": -22.3,
+      "lon": 117.8,
+      "x": 814.6,
+      "y": 326.7
+    },
+    {
+      "id": "indian-ocean",
+      "name": "Indian Ocean",
+      "fact": "Ocean west of Australia.",
+      "kind": "water",
+      "lat": -25,
+      "lon": 108,
+      "x": 786.7,
+      "y": 335.3
+    },
+    {
+      "id": "kimberley",
+      "name": "Kimberley Plateau",
+      "fact": "Rugged region of northern Western Australia.",
+      "kind": "land",
+      "lat": -16.5,
+      "lon": 126,
+      "x": 840.2,
+      "y": 308.3
+    },
+    {
+      "id": "little-sandy",
+      "name": "Little Sandy Desert",
+      "fact": "Desert south of the Great Sandy Desert.",
+      "kind": "land",
+      "lat": -24.5,
+      "lon": 121.5,
+      "x": 822.9,
+      "y": 333.7
+    },
+    {
+      "id": "macdonnell",
+      "name": "McDonnell Ranges",
+      "fact": "Ranges near Alice Springs.",
+      "kind": "range",
+      "lat": -23.7,
+      "lon": 133.4,
+      "x": 855.2,
+      "y": 331.2
+    },
+    {
+      "id": "murray",
+      "name": "Murray River",
+      "fact": "Australia’s longest river.",
+      "kind": "water",
+      "lat": -34.2,
+      "lon": 142,
+      "x": 866.6,
+      "y": 364.6
+    },
+    {
+      "id": "nullarbor",
+      "name": "Nullarbor Plain",
+      "fact": "Arid limestone plain on the south coast.",
+      "kind": "land",
+      "lat": -31.5,
+      "lon": 129,
+      "x": 836.1,
+      "y": 356
+    },
+    {
+      "id": "tanami",
+      "name": "Tanami Desert",
+      "fact": "Desert of the Northern Territory.",
+      "kind": "land",
+      "lat": -20,
+      "lon": 130,
+      "x": 848.9,
+      "y": 319.4
+    },
+    {
+      "id": "tasman-sea",
+      "name": "Tasman Sea",
+      "fact": "Between Australia and New Zealand.",
+      "kind": "water",
+      "lat": -38,
+      "lon": 160,
+      "x": 907.1,
+      "y": 376.7
+    },
+    {
+      "id": "tasmania",
+      "name": "Tasmania",
+      "fact": "Island state south of the mainland.",
+      "kind": "land",
+      "lat": -42,
+      "lon": 146.7,
+      "x": 866.7,
+      "y": 389.3
+    },
+    {
+      "id": "torres",
+      "name": "Torres Strait",
+      "fact": "Between Australia and New Guinea.",
+      "kind": "water",
+      "lat": -10,
+      "lon": 142.3,
+      "x": 887.4,
+      "y": 287.7
+    },
+    {
+      "id": "victoria-river",
+      "name": "Victoria River",
+      "fact": "Major river of the Northern Territory.",
+      "kind": "water",
+      "lat": -16,
+      "lon": 131,
+      "x": 854,
+      "y": 306.7
+    }
+  ]
+}

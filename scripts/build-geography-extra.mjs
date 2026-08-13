@@ -181,52 +181,14 @@ const NA_PHYSICAL = [
   { id: "yukon", name: "Yukon River", lat: 65.0, lon: -145.0, fact: "Major river of Alaska and Yukon." },
 ];
 
-await writeFile(
-  path.join(MAPS, "world-physical.svg"),
-  markersSvg([2754, 1398], worldLandHint, WORLD_PHYSICAL, worldXY, {
-    r: 16,
-    label: "World physical features",
-  })
-);
-await writeJson("world-physical.json", {
-  id: "world-physical",
-  name: "World: Physical Features",
-  map: "world-physical",
-  quiz: "places",
-  items: WORLD_PHYSICAL.map(({ id, name, fact, lat, lon }) => ({
-    id,
-    name,
-    fact,
-    lat,
-    lon,
-  })),
-});
+// Physical features / landmarks: scripts/build-geography-features.mjs
 
 const naBg = `
   <path fill="#c8d5e3" d="M120,80 C200,40 350,30 480,60 C600,90 720,50 820,90 L880,200 C900,320 860,420 800,480 C720,560 580,600 420,580 C280,560 160,500 100,400 C60,320 70,180 120,80 Z"/>
   <path fill="#c8d5e3" d="M200,480 C280,470 360,500 400,560 C420,600 380,650 300,660 C220,670 160,620 150,560 C140,510 160,490 200,480 Z"/>
 `;
 
-await writeFile(
-  path.join(MAPS, "na-physical.svg"),
-  markersSvg([1000, 720], naBg, NA_PHYSICAL, naXY, {
-    r: 12,
-    label: "North America physical features",
-  })
-);
-await writeJson("na-physical.json", {
-  id: "na-physical",
-  name: "North America: Physical Features",
-  map: "na-physical",
-  quiz: "places",
-  items: NA_PHYSICAL.map(({ id, name, fact, lat, lon }) => ({
-    id,
-    name,
-    fact,
-    lat,
-    lon,
-  })),
-});
+// na-physical.json is written by scripts/build-geography-features.mjs
 
 // —— Sports teams ——
 const NBA = [
@@ -513,15 +475,6 @@ const extraByGroup = {
       modes: ["pin", "type", "name", "choice", "study"],
       itemCount: WORLD_LAKES.length,
     },
-    {
-      id: "world-physical",
-      name: "World: Physical Features",
-      blurb: "Mountains, deserts, and rivers on a world map.",
-      map: "world-physical",
-      quiz: "places",
-      modes: ["pin", "type", "name", "choice", "study"],
-      itemCount: WORLD_PHYSICAL.length,
-    },
     outlinePacks[0],
   ],
   "north-america": [
@@ -533,15 +486,6 @@ const extraByGroup = {
       quiz: "places",
       modes: ["pin", "type", "name", "choice", "study"],
       itemCount: GREAT_LAKES.length,
-    },
-    {
-      id: "na-physical",
-      name: "North America: Physical Features",
-      blurb: "Rockies, Mississippi, Gulf of Mexico, and more.",
-      map: "na-physical",
-      quiz: "places",
-      modes: ["pin", "type", "name", "choice", "study"],
-      itemCount: NA_PHYSICAL.length,
     },
     outlinePacks[1],
     outlinePacks[7],

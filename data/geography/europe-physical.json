@@ -1,0 +1,229 @@
+{
+  "id": "europe-physical",
+  "name": "Europe: Physical Features",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "alps",
+      "name": "Alps",
+      "fact": "High mountains of south-central Europe.",
+      "kind": "range",
+      "lat": 46.5,
+      "lon": 10,
+      "x": 524.4,
+      "y": 108.6
+    },
+    {
+      "id": "arctic-ocean",
+      "name": "Arctic Ocean",
+      "fact": "Ocean north of Scandinavia.",
+      "kind": "water",
+      "lat": 75,
+      "lon": 20,
+      "x": 539.2,
+      "y": 27.3
+    },
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean west of Europe.",
+      "kind": "water",
+      "lat": 48,
+      "lon": -20,
+      "x": 451.5,
+      "y": 104
+    },
+    {
+      "id": "baltic",
+      "name": "Baltic Sea",
+      "fact": "Sea of northern Europe.",
+      "kind": "water",
+      "lat": 58,
+      "lon": 20,
+      "x": 545.5,
+      "y": 73.9
+    },
+    {
+      "id": "biscay",
+      "name": "Bay of Biscay",
+      "fact": "Atlantic bay of France and Spain.",
+      "kind": "water",
+      "lat": 45,
+      "lon": -4,
+      "x": 490.1,
+      "y": 113.3
+    },
+    {
+      "id": "black-sea",
+      "name": "Black Sea",
+      "fact": "Inland sea of southeastern Europe.",
+      "kind": "water",
+      "lat": 43.3,
+      "lon": 34,
+      "x": 584.5,
+      "y": 118.6
+    },
+    {
+      "id": "caspian",
+      "name": "Caspian Sea",
+      "fact": "World’s largest inland body of water.",
+      "kind": "water",
+      "lat": 42,
+      "lon": 50.5,
+      "x": 626.2,
+      "y": 122.7
+    },
+    {
+      "id": "caucasus",
+      "name": "Caucasus Mountains",
+      "fact": "Range between the Black and Caspian seas.",
+      "kind": "range",
+      "lat": 42.5,
+      "lon": 44,
+      "x": 609.7,
+      "y": 121.1
+    },
+    {
+      "id": "danube",
+      "name": "Danube",
+      "fact": "Europe’s second-longest river.",
+      "kind": "water",
+      "lat": 45.2,
+      "lon": 19.5,
+      "x": 548,
+      "y": 112.7
+    },
+    {
+      "id": "english-channel",
+      "name": "English Channel",
+      "fact": "Between Great Britain and France.",
+      "kind": "water",
+      "lat": 50.2,
+      "lon": -1,
+      "x": 497.6,
+      "y": 97.2
+    },
+    {
+      "id": "great-britain",
+      "name": "Great Britain",
+      "fact": "Largest island of the British Isles.",
+      "kind": "land",
+      "lat": 54,
+      "lon": -2.5,
+      "x": 494.2,
+      "y": 85.7
+    },
+    {
+      "id": "iberia",
+      "name": "Iberian Peninsula",
+      "fact": "Peninsula of Spain and Portugal.",
+      "kind": "land",
+      "lat": 40.5,
+      "lon": -4,
+      "x": 489.9,
+      "y": 127.4
+    },
+    {
+      "id": "ireland",
+      "name": "Ireland",
+      "fact": "Island west of Great Britain.",
+      "kind": "land",
+      "lat": 53.4,
+      "lon": -8,
+      "x": 481.2,
+      "y": 87.5
+    },
+    {
+      "id": "mediterranean",
+      "name": "Mediterranean Sea",
+      "fact": "Sea south of Europe.",
+      "kind": "water",
+      "lat": 38,
+      "lon": 15,
+      "x": 538.2,
+      "y": 135.4
+    },
+    {
+      "id": "north-sea",
+      "name": "North Sea",
+      "fact": "Sea between Britain and Scandinavia.",
+      "kind": "water",
+      "lat": 56,
+      "lon": 3,
+      "x": 506.9,
+      "y": 79.8
+    },
+    {
+      "id": "norwegian-sea",
+      "name": "Norwegian Sea",
+      "fact": "Sea west of Norway.",
+      "kind": "water",
+      "lat": 67,
+      "lon": 3,
+      "x": 506.3,
+      "y": 48.4
+    },
+    {
+      "id": "rhine",
+      "name": "Rhine",
+      "fact": "Major river of Western Europe.",
+      "kind": "water",
+      "lat": 50,
+      "lon": 7,
+      "x": 516.8,
+      "y": 97.8
+    },
+    {
+      "id": "scandinavia",
+      "name": "Scandinavian Peninsula",
+      "fact": "Peninsula of Norway and Sweden.",
+      "kind": "land",
+      "lat": 64,
+      "lon": 14,
+      "x": 530.4,
+      "y": 56.7
+    },
+    {
+      "id": "seine",
+      "name": "Seine",
+      "fact": "River of northern France.",
+      "kind": "water",
+      "lat": 48.9,
+      "lon": 2.3,
+      "x": 505.5,
+      "y": 101.2
+    },
+    {
+      "id": "gibraltar",
+      "name": "Strait of Gibraltar",
+      "fact": "Gateway between the Atlantic and Mediterranean.",
+      "kind": "water",
+      "lat": 35.97,
+      "lon": -5.58,
+      "x": 485.7,
+      "y": 141.8
+    },
+    {
+      "id": "ural",
+      "name": "Ural Mountains",
+      "fact": "Traditional Europe–Asia boundary.",
+      "kind": "range",
+      "lat": 60,
+      "lon": 60,
+      "x": 634.4,
+      "y": 68.1
+    },
+    {
+      "id": "volga",
+      "name": "Volga",
+      "fact": "Europe’s longest river.",
+      "kind": "water",
+      "lat": 56,
+      "lon": 47,
+      "x": 608.4,
+      "y": 79.8
+    }
+  ]
+}

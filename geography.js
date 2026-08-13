@@ -126,6 +126,16 @@ const ANSWER_ALIAS_GROUPS = [
   ["congo", "republic of the congo", "congo brazzaville"],
   ["vatican city", "vatican", "holy see"],
   ["netherlands", "holland"],
+  ["yangtze chang jiang", "yangtze", "yangtze river", "chang jiang", "changjiang"],
+  ["yellow river huang he", "yellow river", "huang he", "huanghe"],
+  ["denali mount mckinley", "denali", "mount mckinley", "mt mckinley", "mckinley"],
+  ["sea of japan east sea", "sea of japan", "east sea"],
+  ["great wall of china", "great wall"],
+  ["statue of liberty", "liberty"],
+  ["christ the redeemer", "cristo redentor"],
+  ["saint basil s cathedral", "st basil s cathedral", "st basils"],
+  ["leptis magna", "leptis"],
+  ["amur heilong jiang", "amur", "heilong jiang"],
 ];
 
 function answersMatch(input, expected, { kind } = {}) {
@@ -137,6 +147,15 @@ function answersMatch(input, expected, { kind } = {}) {
     if (group.includes(a) && group.includes(b)) return true;
   }
   if (b === "washington d c" && a === "washington") return true;
+  const strippedA = a.replace(
+    /\b(river|mountains?|mt|mount|desert|sea|lake|ocean|range|strait|gulf|falls?|peninsula|canal)\b/g,
+    " "
+  ).replace(/\s+/g, " ").trim();
+  const strippedB = b.replace(
+    /\b(river|mountains?|mt|mount|desert|sea|lake|ocean|range|strait|gulf|falls?|peninsula|canal)\b/g,
+    " "
+  ).replace(/\s+/g, " ").trim();
+  if (strippedA && strippedA.length >= 4 && strippedA === strippedB) return true;
   if (kind === "teams") {
     const last = b.split(" ").filter(Boolean).pop();
     if (last && last.length >= 4 && a === last) return true;
@@ -156,6 +175,18 @@ function remaining() {
   return Math.max(0, geo.queue.length - geo.index);
 }
 
+function injectFeatureMarkers(svgText, items) {
+  let svg = svgText.replace(/\sclass="geo-region[^"]*"/g, ' class="geo-land-bg"');
+  const markers = items
+    .filter((it) => Number.isFinite(it.x) && Number.isFinite(it.y))
+    .map((it) => {
+      const kind = it.kind ? ` geo-marker-${it.kind}` : "";
+      return `<circle id="${it.id}" data-id="${it.id}" class="geo-region geo-marker${kind}" cx="${it.x}" cy="${it.y}" r="7"/>`;
+    })
+    .join("\n  ");
+  return svg.replace(/<\/svg>\s*$/i, `  ${markers}\n</svg>`);
+}
+
 async function loadPack(packMeta) {
   const res = await fetch(`data/geography/${packMeta.id}.json`);
   if (!res.ok) throw new Error(`Failed to load ${packMeta.id}`);
@@ -172,6 +203,9 @@ async function loadPack(packMeta) {
     svg = svg.replace(/<\?xml[^>]*>/i, "").trim();
     // Let CSS own fills so quiz countries share one color
     svg = svg.replace(/\sfill="[^"]*"/gi, "");
+    if (geo.pack?.overlay === "markers") {
+      svg = injectFeatureMarkers(svg, geo.items);
+    }
     geo.mapSvg = svg;
   }
 }
@@ -565,6 +599,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   if (!host) return;
   const outline = isOutlineView() && activeId;
   host.classList.toggle("is-outline-mode", Boolean(outline));
+  host.classList.toggle("is-feature-map", geo.pack?.overlay === "markers");
   const inPack = packItemIds();
   const scopePack = inPack.size > 0 && Boolean(geo.mapSvg) && !outline;
   host.classList.toggle("is-region-scope", scopePack);

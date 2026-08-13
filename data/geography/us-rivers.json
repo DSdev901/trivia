@@ -1,0 +1,149 @@
+{
+  "id": "us-rivers",
+  "name": "The Contiguous U.S.: Rivers",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "arkansas",
+      "name": "Arkansas River",
+      "fact": "Major Mississippi tributary of the southern plains.",
+      "kind": "water",
+      "lat": 35.4,
+      "lon": -95,
+      "x": 255.8,
+      "y": 143.6
+    },
+    {
+      "id": "chattahoochee",
+      "name": "Chattahoochee River",
+      "fact": "Forms part of the Georgia–Alabama border.",
+      "kind": "water",
+      "lat": 32.5,
+      "lon": -85,
+      "x": 279.3,
+      "y": 152.8
+    },
+    {
+      "id": "colorado",
+      "name": "Colorado River",
+      "fact": "Carved the Grand Canyon.",
+      "kind": "water",
+      "lat": 36.1,
+      "lon": -113.8,
+      "x": 208.3,
+      "y": 141.4
+    },
+    {
+      "id": "columbia",
+      "name": "Columbia River",
+      "fact": "Great river of the Pacific Northwest.",
+      "kind": "water",
+      "lat": 45.7,
+      "lon": -120.2,
+      "x": 205,
+      "y": 111.1
+    },
+    {
+      "id": "delaware",
+      "name": "Delaware River",
+      "fact": "River of the Mid-Atlantic states.",
+      "kind": "water",
+      "lat": 40.2,
+      "lon": -74.8,
+      "x": 311.5,
+      "y": 128.4
+    },
+    {
+      "id": "mississippi",
+      "name": "Mississippi River",
+      "fact": "From Minnesota to the Gulf of Mexico.",
+      "kind": "water",
+      "lat": 35,
+      "lon": -90,
+      "x": 268.3,
+      "y": 144.9
+    },
+    {
+      "id": "missouri",
+      "name": "Missouri River",
+      "fact": "Longest river in the United States.",
+      "kind": "water",
+      "lat": 42,
+      "lon": -98,
+      "x": 255,
+      "y": 122.7
+    },
+    {
+      "id": "ohio",
+      "name": "Ohio River",
+      "fact": "Forms much of the Midwest–South boundary.",
+      "kind": "water",
+      "lat": 38.5,
+      "lon": -85,
+      "x": 284.2,
+      "y": 133.8
+    },
+    {
+      "id": "potomac",
+      "name": "Potomac River",
+      "fact": "Flows past Washington, D.C.",
+      "kind": "water",
+      "lat": 38.9,
+      "lon": -77.1,
+      "x": 304.6,
+      "y": 132.5
+    },
+    {
+      "id": "rio-grande",
+      "name": "Rio Grande",
+      "fact": "Part of the U.S.–Mexico border.",
+      "kind": "water",
+      "lat": 29,
+      "lon": -103,
+      "x": 229.6,
+      "y": 164
+    },
+    {
+      "id": "sacramento",
+      "name": "Sacramento River",
+      "fact": "Principal river of California’s Central Valley.",
+      "kind": "water",
+      "lat": 39.1,
+      "lon": -121.8,
+      "x": 191.5,
+      "y": 131.9
+    },
+    {
+      "id": "st-lawrence",
+      "name": "Saint Lawrence River",
+      "fact": "Outlet of the Great Lakes.",
+      "kind": "water",
+      "lat": 44.8,
+      "lon": -75,
+      "x": 315.1,
+      "y": 113.9
+    },
+    {
+      "id": "snake",
+      "name": "Snake River",
+      "fact": "Columbia’s largest tributary.",
+      "kind": "water",
+      "lat": 44.5,
+      "lon": -117,
+      "x": 211,
+      "y": 114.9
+    },
+    {
+      "id": "tennessee",
+      "name": "Tennessee River",
+      "fact": "Major river of the American South.",
+      "kind": "water",
+      "lat": 35.5,
+      "lon": -87,
+      "x": 276.5,
+      "y": 143.3
+    }
+  ]
+}

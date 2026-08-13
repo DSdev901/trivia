@@ -1869,7 +1869,46 @@ body {
 }
 
 .geo-map-frame .geo-land-bg {
+  fill: #c5d4e0;
+  stroke: #e8eef4;
+  stroke-width: 0.35;
   pointer-events: none;
+}
+
+.geo-map-frame.is-feature-map .geo-marker {
+  stroke: #fff;
+  stroke-width: 1.4;
+}
+
+.geo-map-frame .geo-marker-water {
+  fill: #3d8ec9;
+}
+
+.geo-map-frame .geo-marker-water:hover,
+.geo-map-frame .geo-marker-water.is-active {
+  fill: #2b6f9e;
+}
+
+.geo-map-frame .geo-marker-range {
+  fill: #8b6b4a;
+}
+
+.geo-map-frame .geo-marker-range:hover,
+.geo-map-frame .geo-marker-range.is-active {
+  fill: #6e5238;
+}
+
+.geo-map-frame .geo-marker-land {
+  fill: #6b8fad;
+}
+
+.geo-map-frame .geo-marker-landmark {
+  fill: #c45c7a;
+}
+
+.geo-map-frame .geo-marker-landmark:hover,
+.geo-map-frame .geo-marker-landmark.is-active {
+  fill: #a34460;
 }
 
 .geo-group {

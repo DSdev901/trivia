@@ -1,0 +1,129 @@
+{
+  "id": "asia-landmarks",
+  "name": "Asia: 12 Landmarks",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "angkor",
+      "name": "Angkor Wat",
+      "fact": "Temple complex in Cambodia.",
+      "kind": "landmark",
+      "lat": 13.4125,
+      "lon": 103.867,
+      "x": 781.7,
+      "y": 213.6
+    },
+    {
+      "id": "big-buddha",
+      "name": "Big Buddha",
+      "fact": "Tian Tan Buddha on Lantau Island, Hong Kong.",
+      "kind": "landmark",
+      "lat": 22.254,
+      "lon": 114.155,
+      "x": 804.9,
+      "y": 185.5
+    },
+    {
+      "id": "burj",
+      "name": "Burj Khalifa",
+      "fact": "World’s tallest building, in Dubai.",
+      "kind": "landmark",
+      "lat": 25.1972,
+      "lon": 55.2744,
+      "x": 646.6,
+      "y": 176.1
+    },
+    {
+      "id": "forbidden-city",
+      "name": "Forbidden City",
+      "fact": "Imperial palace in Beijing.",
+      "kind": "landmark",
+      "lat": 39.9163,
+      "lon": 116.3972,
+      "x": 793.7,
+      "y": 129.3
+    },
+    {
+      "id": "great-wall",
+      "name": "Great Wall Of China",
+      "fact": "Historic fortifications north of Beijing.",
+      "kind": "landmark",
+      "lat": 40.4319,
+      "lon": 116.5704,
+      "x": 793.5,
+      "y": 127.7
+    },
+    {
+      "id": "marina-bay",
+      "name": "Marina Bay Sands",
+      "fact": "Hotel and sky park in Singapore.",
+      "kind": "landmark",
+      "lat": 1.2834,
+      "lon": 103.8607,
+      "x": 784,
+      "y": 252
+    },
+    {
+      "id": "fuji",
+      "name": "Mount Fuji",
+      "fact": "Japan’s highest and most iconic peak.",
+      "kind": "landmark",
+      "lat": 35.3606,
+      "lon": 138.7274,
+      "x": 856.6,
+      "y": 143.7
+    },
+    {
+      "id": "petra",
+      "name": "Petra",
+      "fact": "Rock-cut city in Jordan.",
+      "kind": "landmark",
+      "lat": 30.3285,
+      "lon": 35.4444,
+      "x": 592.7,
+      "y": 159.8
+    },
+    {
+      "id": "petronas",
+      "name": "Petronas Twin Towers",
+      "fact": "Twin skyscrapers in Kuala Lumpur.",
+      "kind": "landmark",
+      "lat": 3.1579,
+      "lon": 101.7116,
+      "x": 778,
+      "y": 246
+    },
+    {
+      "id": "shwedagon",
+      "name": "Shwedagon Pagoda",
+      "fact": "Gilded stupa in Yangon.",
+      "kind": "landmark",
+      "lat": 16.7984,
+      "lon": 96.1498,
+      "x": 759.5,
+      "y": 202.8
+    },
+    {
+      "id": "taj-mahal",
+      "name": "Taj Mahal",
+      "fact": "Mughal mausoleum in Agra.",
+      "kind": "landmark",
+      "lat": 27.1751,
+      "lon": 78.0421,
+      "x": 706,
+      "y": 169.8
+    },
+    {
+      "id": "terracotta",
+      "name": "Terracotta Army",
+      "fact": "Funerary sculptures near Xi’an.",
+      "kind": "landmark",
+      "lat": 34.384,
+      "lon": 109.278,
+      "x": 781.9,
+      "y": 146.8
+    }
+  ]
+}

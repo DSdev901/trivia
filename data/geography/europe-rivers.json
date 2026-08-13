@@ -1,0 +1,189 @@
+{
+  "id": "europe-rivers",
+  "name": "Europe: Rivers",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "danube",
+      "name": "Danube",
+      "fact": "Passes four European capitals.",
+      "kind": "water",
+      "lat": 45.2,
+      "lon": 19.5,
+      "x": 548,
+      "y": 112.7
+    },
+    {
+      "id": "dniester",
+      "name": "Dniester",
+      "fact": "River of Ukraine and Moldova.",
+      "kind": "water",
+      "lat": 47.5,
+      "lon": 29,
+      "x": 570.5,
+      "y": 105.5
+    },
+    {
+      "id": "dnipro",
+      "name": "Dnipro",
+      "fact": "Major river of Ukraine.",
+      "kind": "water",
+      "lat": 49,
+      "lon": 32.5,
+      "x": 578.3,
+      "y": 100.9
+    },
+    {
+      "id": "don",
+      "name": "Don",
+      "fact": "River of southern Russia.",
+      "kind": "water",
+      "lat": 47.5,
+      "lon": 40.5,
+      "x": 598.4,
+      "y": 105.5
+    },
+    {
+      "id": "ebro",
+      "name": "Ebro",
+      "fact": "Spain’s longest river entirely in-country.",
+      "kind": "water",
+      "lat": 41.4,
+      "lon": 0.3,
+      "x": 500.8,
+      "y": 124.6
+    },
+    {
+      "id": "elbe",
+      "name": "Elbe",
+      "fact": "River of Czechia and Germany.",
+      "kind": "water",
+      "lat": 52.5,
+      "lon": 12,
+      "x": 528.3,
+      "y": 90.2
+    },
+    {
+      "id": "loire",
+      "name": "Loire",
+      "fact": "France’s longest river.",
+      "kind": "water",
+      "lat": 47.4,
+      "lon": 0.8,
+      "x": 501.9,
+      "y": 105.9
+    },
+    {
+      "id": "oder",
+      "name": "Oder",
+      "fact": "Border river of Poland and Germany.",
+      "kind": "water",
+      "lat": 52.5,
+      "lon": 14.6,
+      "x": 534.5,
+      "y": 90.2
+    },
+    {
+      "id": "po",
+      "name": "Po",
+      "fact": "Italy’s longest river.",
+      "kind": "water",
+      "lat": 45,
+      "lon": 11,
+      "x": 527.1,
+      "y": 113.3
+    },
+    {
+      "id": "rhine",
+      "name": "Rhine",
+      "fact": "Major river of Western Europe.",
+      "kind": "water",
+      "lat": 50,
+      "lon": 7,
+      "x": 516.8,
+      "y": 97.8
+    },
+    {
+      "id": "rhone",
+      "name": "Rhône",
+      "fact": "Flows from the Alps to the Mediterranean.",
+      "kind": "water",
+      "lat": 44.8,
+      "lon": 4.8,
+      "x": 511.8,
+      "y": 113.9
+    },
+    {
+      "id": "seine",
+      "name": "Seine",
+      "fact": "Flows through Paris.",
+      "kind": "water",
+      "lat": 48.9,
+      "lon": 2.3,
+      "x": 505.5,
+      "y": 101.2
+    },
+    {
+      "id": "tagus",
+      "name": "Tagus",
+      "fact": "Longest river of the Iberian Peninsula.",
+      "kind": "water",
+      "lat": 39.5,
+      "lon": -8,
+      "x": 479.8,
+      "y": 130.6
+    },
+    {
+      "id": "thames",
+      "name": "Thames",
+      "fact": "River of southern England.",
+      "kind": "water",
+      "lat": 51.5,
+      "lon": -0.1,
+      "x": 499.8,
+      "y": 93.3
+    },
+    {
+      "id": "ural-river",
+      "name": "Ural",
+      "fact": "River along the Europe–Asia boundary.",
+      "kind": "water",
+      "lat": 51.5,
+      "lon": 53.5,
+      "x": 627,
+      "y": 93.3
+    },
+    {
+      "id": "vardar",
+      "name": "Vardar",
+      "fact": "Principal river of North Macedonia.",
+      "kind": "water",
+      "lat": 41.6,
+      "lon": 21.7,
+      "x": 554.3,
+      "y": 124
+    },
+    {
+      "id": "vistula",
+      "name": "Vistula",
+      "fact": "Poland’s longest river.",
+      "kind": "water",
+      "lat": 52.2,
+      "lon": 21,
+      "x": 549.6,
+      "y": 91.1
+    },
+    {
+      "id": "volga",
+      "name": "Volga",
+      "fact": "Europe’s longest river.",
+      "kind": "water",
+      "lat": 56,
+      "lon": 47,
+      "x": 608.4,
+      "y": 79.8
+    }
+  ]
+}

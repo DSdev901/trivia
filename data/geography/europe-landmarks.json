@@ -1,0 +1,129 @@
+{
+  "id": "europe-landmarks",
+  "name": "Europe: 12 Landmarks",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "acropolis",
+      "name": "Acropolis",
+      "fact": "Ancient citadel of Athens.",
+      "kind": "landmark",
+      "lat": 37.9715,
+      "lon": 23.7267,
+      "x": 560.4,
+      "y": 135.4
+    },
+    {
+      "id": "belem",
+      "name": "Belém Tower",
+      "fact": "Fortified tower in Lisbon.",
+      "kind": "landmark",
+      "lat": 38.6916,
+      "lon": -9.216,
+      "x": 476.6,
+      "y": 133.2
+    },
+    {
+      "id": "big-ben",
+      "name": "Big Ben",
+      "fact": "Clock tower of the Palace of Westminster.",
+      "kind": "landmark",
+      "lat": 51.5007,
+      "lon": -0.1246,
+      "x": 499.7,
+      "y": 93.3
+    },
+    {
+      "id": "brandenburg",
+      "name": "Brandenburg Gate",
+      "fact": "Neoclassical gate in Berlin.",
+      "kind": "landmark",
+      "lat": 52.5163,
+      "lon": 13.3777,
+      "x": 531.6,
+      "y": 90.2
+    },
+    {
+      "id": "colosseum",
+      "name": "Colosseum",
+      "fact": "Ancient amphitheater in Rome.",
+      "kind": "landmark",
+      "lat": 41.8902,
+      "lon": 12.4922,
+      "x": 531.2,
+      "y": 123.1
+    },
+    {
+      "id": "eiffel",
+      "name": "Eiffel Tower",
+      "fact": "Iron tower in Paris.",
+      "kind": "landmark",
+      "lat": 48.8584,
+      "lon": 2.2945,
+      "x": 505.5,
+      "y": 101.4
+    },
+    {
+      "id": "hagia-sophia",
+      "name": "Hagia Sophia",
+      "fact": "Historic mosque and former church in Istanbul.",
+      "kind": "landmark",
+      "lat": 41.0086,
+      "lon": 28.9802,
+      "x": 572.8,
+      "y": 125.8
+    },
+    {
+      "id": "pisa",
+      "name": "Leaning Tower of Pisa",
+      "fact": "Bell tower in Pisa, Italy.",
+      "kind": "landmark",
+      "lat": 43.723,
+      "lon": 10.3966,
+      "x": 525.8,
+      "y": 117.3
+    },
+    {
+      "id": "neuschwanstein",
+      "name": "Neuschwanstein",
+      "fact": "19th-century castle in Bavaria.",
+      "kind": "landmark",
+      "lat": 47.5576,
+      "lon": 10.7498,
+      "x": 526.1,
+      "y": 105.4
+    },
+    {
+      "id": "sagrada",
+      "name": "Sagrada Família",
+      "fact": "Basilica in Barcelona.",
+      "kind": "landmark",
+      "lat": 41.4036,
+      "lon": 2.1744,
+      "x": 505.5,
+      "y": 124.6
+    },
+    {
+      "id": "st-basil",
+      "name": "Saint Basil's Cathedral",
+      "fact": "Cathedral on Red Square in Moscow.",
+      "kind": "landmark",
+      "lat": 55.7525,
+      "lon": 37.6231,
+      "x": 586.9,
+      "y": 80.5
+    },
+    {
+      "id": "stonehenge",
+      "name": "Stonehenge",
+      "fact": "Prehistoric stone circle in England.",
+      "kind": "landmark",
+      "lat": 51.1789,
+      "lon": -1.8262,
+      "x": 495.7,
+      "y": 94.2
+    }
+  ]
+}

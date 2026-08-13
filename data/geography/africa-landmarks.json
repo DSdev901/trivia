@@ -1,0 +1,129 @@
+{
+  "id": "africa-landmarks",
+  "name": "Africa: 12 Landmarks",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "baobabs",
+      "name": "Avenue of the Baobabs",
+      "fact": "Famous baobab-lined dirt road in Madagascar.",
+      "kind": "landmark",
+      "lat": -20.251,
+      "lon": 44.418,
+      "x": 619.1,
+      "y": 320.2
+    },
+    {
+      "id": "pyramids",
+      "name": "Great Pyramids",
+      "fact": "Pyramids of Giza.",
+      "kind": "landmark",
+      "lat": 29.9792,
+      "lon": 31.1342,
+      "x": 581.5,
+      "y": 160.9
+    },
+    {
+      "id": "kilimanjaro",
+      "name": "Kilimanjaro",
+      "fact": "Africa’s highest peak.",
+      "kind": "landmark",
+      "lat": -3.067,
+      "lon": 37.355,
+      "x": 602.1,
+      "y": 265.7
+    },
+    {
+      "id": "kruger",
+      "name": "Kruger National Park",
+      "fact": "Flagship safari park of South Africa.",
+      "kind": "landmark",
+      "lat": -24,
+      "lon": 31.5,
+      "x": 583.8,
+      "y": 332.1
+    },
+    {
+      "id": "leptis",
+      "name": "Leptis Magna",
+      "fact": "Roman ruins on the Libyan coast.",
+      "kind": "landmark",
+      "lat": 32.639,
+      "lon": 14.293,
+      "x": 537.1,
+      "y": 152.4
+    },
+    {
+      "id": "marrakesh",
+      "name": "Marrakesh",
+      "fact": "Historic city in Morocco.",
+      "kind": "landmark",
+      "lat": 31.6295,
+      "lon": -7.9811,
+      "x": 479.2,
+      "y": 155.6
+    },
+    {
+      "id": "table-mountain",
+      "name": "Table Mountain",
+      "fact": "Flat-topped mountain above Cape Town.",
+      "kind": "landmark",
+      "lat": -33.9628,
+      "lon": 18.4098,
+      "x": 547.6,
+      "y": 363.9
+    },
+    {
+      "id": "timbuktu",
+      "name": "Timbuktu",
+      "fact": "Historic Saharan city in Mali.",
+      "kind": "landmark",
+      "lat": 16.773,
+      "lon": -3.007,
+      "x": 491.9,
+      "y": 202.9
+    },
+    {
+      "id": "valley-kings",
+      "name": "Valley of the Kings",
+      "fact": "Royal burial ground near Luxor.",
+      "kind": "landmark",
+      "lat": 25.7402,
+      "lon": 32.6014,
+      "x": 586.4,
+      "y": 174.4
+    },
+    {
+      "id": "victoria-falls",
+      "name": "Victoria Falls",
+      "fact": "Waterfall on the Zambezi River.",
+      "kind": "landmark",
+      "lat": -17.9243,
+      "lon": 25.8572,
+      "x": 569.7,
+      "y": 312.8
+    },
+    {
+      "id": "zanzibar",
+      "name": "Zanzibar",
+      "fact": "Island off Tanzania.",
+      "kind": "landmark",
+      "lat": -6.165,
+      "lon": 39.202,
+      "x": 607,
+      "y": 275.5
+    },
+    {
+      "id": "zuma",
+      "name": "Zuma Rock",
+      "fact": "Monolith near Abuja, Nigeria.",
+      "kind": "landmark",
+      "lat": 9.13,
+      "lon": 7.23,
+      "x": 519.7,
+      "y": 227.1
+    }
+  ]
+}

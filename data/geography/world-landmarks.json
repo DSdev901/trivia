@@ -1,0 +1,149 @@
+{
+  "id": "world-landmarks",
+  "name": "World: Wonders and Landmarks",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "angkor",
+      "name": "Angkor Wat",
+      "fact": "Temple complex in Cambodia.",
+      "kind": "landmark",
+      "lat": 13.4125,
+      "lon": 103.867,
+      "x": 781.7,
+      "y": 213.6
+    },
+    {
+      "id": "chichen-itza",
+      "name": "Chichen Itza",
+      "fact": "Maya city on the Yucatán Peninsula.",
+      "kind": "landmark",
+      "lat": 20.6843,
+      "lon": -88.5678,
+      "x": 262.6,
+      "y": 190.5
+    },
+    {
+      "id": "christ-redeemer",
+      "name": "Christ the Redeemer",
+      "fact": "Statue overlooking Rio de Janeiro.",
+      "kind": "landmark",
+      "lat": -22.9519,
+      "lon": -43.2105,
+      "x": 384.8,
+      "y": 328.8
+    },
+    {
+      "id": "colosseum",
+      "name": "Colosseum",
+      "fact": "Ancient amphitheater in Rome.",
+      "kind": "landmark",
+      "lat": 41.8902,
+      "lon": 12.4922,
+      "x": 531.2,
+      "y": 123.1
+    },
+    {
+      "id": "golden-gate",
+      "name": "Golden Gate Bridge",
+      "fact": "Suspension bridge in San Francisco.",
+      "kind": "landmark",
+      "lat": 37.8199,
+      "lon": -122.4783,
+      "x": 188.2,
+      "y": 135.9
+    },
+    {
+      "id": "pyramids",
+      "name": "Great Pyramids",
+      "fact": "Pyramids of Giza, Egypt.",
+      "kind": "landmark",
+      "lat": 29.9792,
+      "lon": 31.1342,
+      "x": 581.5,
+      "y": 160.9
+    },
+    {
+      "id": "great-wall",
+      "name": "Great Wall Of China",
+      "fact": "Historic fortifications in northern China.",
+      "kind": "landmark",
+      "lat": 40.4319,
+      "lon": 116.5704,
+      "x": 793.5,
+      "y": 127.7
+    },
+    {
+      "id": "machu-picchu",
+      "name": "Machu Picchu",
+      "fact": "Inca citadel in the Peruvian Andes.",
+      "kind": "landmark",
+      "lat": -13.1631,
+      "lon": -72.545,
+      "x": 303.2,
+      "y": 297.7
+    },
+    {
+      "id": "rushmore",
+      "name": "Mount Rushmore",
+      "fact": "Presidential sculpture in South Dakota.",
+      "kind": "landmark",
+      "lat": 43.8791,
+      "lon": -103.4591,
+      "x": 243.7,
+      "y": 116.8
+    },
+    {
+      "id": "petra",
+      "name": "Petra",
+      "fact": "Rock-cut city in Jordan.",
+      "kind": "landmark",
+      "lat": 30.3285,
+      "lon": 35.4444,
+      "x": 592.7,
+      "y": 159.8
+    },
+    {
+      "id": "liberty",
+      "name": "Statue Of Liberty",
+      "fact": "Monument in New York Harbor.",
+      "kind": "landmark",
+      "lat": 40.6892,
+      "lon": -74.0445,
+      "x": 313.8,
+      "y": 126.9
+    },
+    {
+      "id": "stonehenge",
+      "name": "Stonehenge",
+      "fact": "Prehistoric stone circle in England.",
+      "kind": "landmark",
+      "lat": 51.1789,
+      "lon": -1.8262,
+      "x": 495.7,
+      "y": 94.2
+    },
+    {
+      "id": "opera-house",
+      "name": "Sydney Opera House",
+      "fact": "Harbor landmark in Sydney.",
+      "kind": "landmark",
+      "lat": -33.8568,
+      "lon": 151.2153,
+      "x": 890.9,
+      "y": 363.5
+    },
+    {
+      "id": "taj-mahal",
+      "name": "Taj Mahal",
+      "fact": "Mughal mausoleum in Agra, India.",
+      "kind": "landmark",
+      "lat": 27.1751,
+      "lon": 78.0421,
+      "x": 706,
+      "y": 169.8
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "id": "africa-physical",
+  "name": "Africa: Physical Features",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean off Africa’s west coast.",
+      "kind": "water",
+      "lat": 5,
+      "lon": -15,
+      "x": 459,
+      "y": 240.2
+    },
+    {
+      "id": "atlas",
+      "name": "Atlas Mountains",
+      "fact": "Range of Morocco, Algeria, and Tunisia.",
+      "kind": "range",
+      "lat": 31.5,
+      "lon": -6,
+      "x": 484.4,
+      "y": 156
+    },
+    {
+      "id": "cape-good-hope",
+      "name": "Cape of Good Hope",
+      "fact": "Famous cape near the southern tip of Africa.",
+      "kind": "land",
+      "lat": -34.36,
+      "lon": 18.5,
+      "x": 547.7,
+      "y": 365.1
+    },
+    {
+      "id": "congo",
+      "name": "Congo",
+      "fact": "Deepest river; second-largest by discharge.",
+      "kind": "water",
+      "lat": -2,
+      "lon": 18,
+      "x": 549.2,
+      "y": 262.4
+    },
+    {
+      "id": "horn",
+      "name": "Horn of Africa",
+      "fact": "Peninsula of Somalia, Ethiopia, Eritrea, and Djibouti.",
+      "kind": "land",
+      "lat": 8,
+      "lon": 48,
+      "x": 630.9,
+      "y": 230.7
+    },
+    {
+      "id": "indian-ocean",
+      "name": "Indian Ocean",
+      "fact": "Ocean off Africa’s east coast.",
+      "kind": "water",
+      "lat": -10,
+      "lon": 55,
+      "x": 649.7,
+      "y": 287.7
+    },
+    {
+      "id": "kalahari",
+      "name": "Kalahari Desert",
+      "fact": "Sandy basin of southern Africa.",
+      "kind": "land",
+      "lat": -23,
+      "lon": 22,
+      "x": 558.7,
+      "y": 329
+    },
+    {
+      "id": "kilimanjaro",
+      "name": "Kilimanjaro",
+      "fact": "Africa’s highest mountain.",
+      "kind": "range",
+      "lat": -3.067,
+      "lon": 37.355,
+      "x": 602.1,
+      "y": 265.7
+    },
+    {
+      "id": "malawi",
+      "name": "Lake Malawi",
+      "fact": "Also called Lake Nyasa.",
+      "kind": "water",
+      "lat": -12,
+      "lon": 34.5,
+      "x": 593.7,
+      "y": 294
+    },
+    {
+      "id": "tanganyika",
+      "name": "Lake Tanganyika",
+      "fact": "World’s longest freshwater lake.",
+      "kind": "water",
+      "lat": -6.5,
+      "lon": 29.8,
+      "x": 581.3,
+      "y": 276.6
+    },
+    {
+      "id": "victoria",
+      "name": "Lake Victoria",
+      "fact": "Africa’s largest lake by area.",
+      "kind": "water",
+      "lat": -1,
+      "lon": 33,
+      "x": 590.2,
+      "y": 259.2
+    },
+    {
+      "id": "madagascar",
+      "name": "Madagascar",
+      "fact": "World’s fourth-largest island.",
+      "kind": "land",
+      "lat": -19,
+      "lon": 46.5,
+      "x": 625,
+      "y": 316.2
+    },
+    {
+      "id": "mediterranean",
+      "name": "Mediterranean Sea",
+      "fact": "Sea north of Africa.",
+      "kind": "water",
+      "lat": 34,
+      "lon": 18,
+      "x": 546.5,
+      "y": 148.1
+    },
+    {
+      "id": "kenya",
+      "name": "Mount Kenya",
+      "fact": "Kenya’s highest mountain.",
+      "kind": "range",
+      "lat": -0.152,
+      "lon": 37.308,
+      "x": 602,
+      "y": 256.5
+    },
+    {
+      "id": "mozambique-channel",
+      "name": "Mozambique Channel",
+      "fact": "Between Madagascar and Mozambique.",
+      "kind": "water",
+      "lat": -18,
+      "lon": 41,
+      "x": 610.4,
+      "y": 313.1
+    },
+    {
+      "id": "namib",
+      "name": "Namib Desert",
+      "fact": "Coastal desert of southwest Africa.",
+      "kind": "land",
+      "lat": -24,
+      "lon": 15,
+      "x": 539.9,
+      "y": 332.1
+    },
+    {
+      "id": "niger",
+      "name": "Niger",
+      "fact": "Principal river of West Africa.",
+      "kind": "water",
+      "lat": 16,
+      "lon": 4,
+      "x": 510.8,
+      "y": 205.4
+    },
+    {
+      "id": "nile",
+      "name": "Nile",
+      "fact": "Often cited as the world’s longest river.",
+      "kind": "water",
+      "lat": 26,
+      "lon": 32.5,
+      "x": 586,
+      "y": 173.6
+    },
+    {
+      "id": "red-sea",
+      "name": "Red Sea",
+      "fact": "Between Africa and the Arabian Peninsula.",
+      "kind": "water",
+      "lat": 20,
+      "lon": 38.5,
+      "x": 603.3,
+      "y": 192.6
+    },
+    {
+      "id": "sahara",
+      "name": "Sahara Desert",
+      "fact": "Largest hot desert on Earth.",
+      "kind": "land",
+      "lat": 23,
+      "lon": 10,
+      "x": 526.7,
+      "y": 183.1
+    },
+    {
+      "id": "gibraltar",
+      "name": "Strait of Gibraltar",
+      "fact": "Between Morocco and Spain.",
+      "kind": "water",
+      "lat": 35.97,
+      "lon": -5.58,
+      "x": 485.7,
+      "y": 141.8
+    },
+    {
+      "id": "suez",
+      "name": "Suez Canal",
+      "fact": "Artificial waterway linking the Mediterranean and Red Sea.",
+      "kind": "water",
+      "lat": 30.45,
+      "lon": 32.35,
+      "x": 584.6,
+      "y": 159.4
+    },
+    {
+      "id": "zambezi",
+      "name": "Zambezi",
+      "fact": "River of Victoria Falls.",
+      "kind": "water",
+      "lat": -16,
+      "lon": 28.5,
+      "x": 577,
+      "y": 306.7
+    }
+  ]
+}

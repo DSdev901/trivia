@@ -143,8 +143,9 @@
         {
           "id": "world-physical",
           "name": "World: Physical Features",
-          "blurb": "Mountains, deserts, and rivers on a world map.",
-          "map": "world-physical",
+          "blurb": "Rivers, ranges, deserts, and oceans — Pin and Type.",
+          "map": "world-countries",
+          "overlay": "markers",
           "quiz": "places",
           "modes": [
             "pin",
@@ -153,7 +154,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 18
+          "itemCount": 23
         },
         {
           "id": "world-outlines",
@@ -168,6 +169,38 @@
             "study"
           ],
           "itemCount": 194
+        },
+        {
+          "id": "world-rivers",
+          "name": "World: Rivers",
+          "blurb": "The world’s great rivers.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
+          "id": "world-landmarks",
+          "name": "World: Wonders and Landmarks",
+          "blurb": "Famous wonders and landmarks on the world map.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 14
         }
       ]
     },
@@ -349,8 +382,9 @@
         {
           "id": "na-physical",
           "name": "North America: Physical Features",
-          "blurb": "Rockies, Mississippi, Gulf of Mexico, and more.",
-          "map": "na-physical",
+          "blurb": "Mountains, rivers, lakes, and coasts of North America.",
+          "map": "world-countries",
+          "overlay": "markers",
           "quiz": "places",
           "modes": [
             "pin",
@@ -359,7 +393,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 12
+          "itemCount": 30
         },
         {
           "id": "na-outlines",
@@ -448,6 +482,54 @@
             "study"
           ],
           "itemCount": 30
+        },
+        {
+          "id": "na-lakes",
+          "name": "North America: Lakes",
+          "blurb": "The Great Lakes and other major North American lakes.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 12
+        },
+        {
+          "id": "us-rivers",
+          "name": "The Contiguous U.S.: Rivers",
+          "blurb": "Major rivers of the lower 48.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 14
+        },
+        {
+          "id": "us-landmarks",
+          "name": "The U.S.: 12 Landmarks",
+          "blurb": "Iconic American landmarks.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 12
         }
       ]
     },
@@ -509,6 +591,38 @@
           "modes": [
             "outline",
             "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 12
+        },
+        {
+          "id": "sa-physical",
+          "name": "South America: Physical Features",
+          "blurb": "Andes, Amazon, Atacama, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 18
+        },
+        {
+          "id": "sa-landmarks",
+          "name": "South America: 12 Landmarks",
+          "blurb": "Machu Picchu, Christ the Redeemer, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
             "choice",
             "study"
           ],
@@ -578,6 +692,54 @@
             "study"
           ],
           "itemCount": 45
+        },
+        {
+          "id": "europe-physical",
+          "name": "Europe: Physical Features",
+          "blurb": "Seas, mountains, peninsulas, and rivers.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 22
+        },
+        {
+          "id": "europe-rivers",
+          "name": "Europe: Rivers",
+          "blurb": "Volga, Danube, Rhine, and the rest.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 18
+        },
+        {
+          "id": "europe-landmarks",
+          "name": "Europe: 12 Landmarks",
+          "blurb": "Eiffel Tower, Colosseum, Stonehenge, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 12
         }
       ]
     },
@@ -643,6 +805,38 @@
             "study"
           ],
           "itemCount": 54
+        },
+        {
+          "id": "africa-physical",
+          "name": "Africa: Physical Features",
+          "blurb": "Sahara, Nile, Kilimanjaro, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 23
+        },
+        {
+          "id": "africa-landmarks",
+          "name": "Africa: 12 Landmarks",
+          "blurb": "Pyramids, Victoria Falls, Table Mountain, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 12
         }
       ]
     },
@@ -708,6 +902,38 @@
             "study"
           ],
           "itemCount": 48
+        },
+        {
+          "id": "asia-physical",
+          "name": "Asia: Physical Features",
+          "blurb": "Himalayas, great rivers, seas, and deserts.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 28
+        },
+        {
+          "id": "asia-landmarks",
+          "name": "Asia: 12 Landmarks",
+          "blurb": "Taj Mahal, Great Wall, Angkor Wat, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 12
         }
       ]
     },
@@ -773,6 +999,22 @@
             "study"
           ],
           "itemCount": 14
+        },
+        {
+          "id": "australia-physical",
+          "name": "Australia: Physical Features",
+          "blurb": "Deserts, the Murray, and the Great Barrier Reef.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 26
         }
       ]
     }
@@ -1298,8 +1540,9 @@
     {
       "id": "world-physical",
       "name": "World: Physical Features",
-      "blurb": "Mountains, deserts, and rivers on a world map.",
-      "map": "world-physical",
+      "blurb": "Rivers, ranges, deserts, and oceans — Pin and Type.",
+      "map": "world-countries",
+      "overlay": "markers",
       "quiz": "places",
       "modes": [
         "pin",
@@ -1308,7 +1551,7 @@
         "choice",
         "study"
       ],
-      "itemCount": 18
+      "itemCount": 23
     },
     {
       "id": "world-outlines",
@@ -1342,8 +1585,9 @@
     {
       "id": "na-physical",
       "name": "North America: Physical Features",
-      "blurb": "Rockies, Mississippi, Gulf of Mexico, and more.",
-      "map": "na-physical",
+      "blurb": "Mountains, rivers, lakes, and coasts of North America.",
+      "map": "world-countries",
+      "overlay": "markers",
       "quiz": "places",
       "modes": [
         "pin",
@@ -1352,7 +1596,7 @@
         "choice",
         "study"
       ],
-      "itemCount": 12
+      "itemCount": 30
     },
     {
       "id": "na-outlines",
@@ -1511,6 +1755,246 @@
         "study"
       ],
       "itemCount": 14
+    },
+    {
+      "id": "world-rivers",
+      "name": "World: Rivers",
+      "blurb": "The world’s great rivers.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 20
+    },
+    {
+      "id": "world-landmarks",
+      "name": "World: Wonders and Landmarks",
+      "blurb": "Famous wonders and landmarks on the world map.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 14
+    },
+    {
+      "id": "na-lakes",
+      "name": "North America: Lakes",
+      "blurb": "The Great Lakes and other major North American lakes.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "us-rivers",
+      "name": "The Contiguous U.S.: Rivers",
+      "blurb": "Major rivers of the lower 48.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 14
+    },
+    {
+      "id": "us-landmarks",
+      "name": "The U.S.: 12 Landmarks",
+      "blurb": "Iconic American landmarks.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "sa-physical",
+      "name": "South America: Physical Features",
+      "blurb": "Andes, Amazon, Atacama, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 18
+    },
+    {
+      "id": "sa-landmarks",
+      "name": "South America: 12 Landmarks",
+      "blurb": "Machu Picchu, Christ the Redeemer, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "europe-physical",
+      "name": "Europe: Physical Features",
+      "blurb": "Seas, mountains, peninsulas, and rivers.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 22
+    },
+    {
+      "id": "europe-rivers",
+      "name": "Europe: Rivers",
+      "blurb": "Volga, Danube, Rhine, and the rest.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 18
+    },
+    {
+      "id": "europe-landmarks",
+      "name": "Europe: 12 Landmarks",
+      "blurb": "Eiffel Tower, Colosseum, Stonehenge, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "africa-physical",
+      "name": "Africa: Physical Features",
+      "blurb": "Sahara, Nile, Kilimanjaro, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 23
+    },
+    {
+      "id": "africa-landmarks",
+      "name": "Africa: 12 Landmarks",
+      "blurb": "Pyramids, Victoria Falls, Table Mountain, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "asia-physical",
+      "name": "Asia: Physical Features",
+      "blurb": "Himalayas, great rivers, seas, and deserts.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 28
+    },
+    {
+      "id": "asia-landmarks",
+      "name": "Asia: 12 Landmarks",
+      "blurb": "Taj Mahal, Great Wall, Angkor Wat, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "australia-physical",
+      "name": "Australia: Physical Features",
+      "blurb": "Deserts, the Murray, and the Great Barrier Reef.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 26
     }
   ]
 }
