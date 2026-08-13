@@ -506,6 +506,7 @@ function render() {
       ${legendHtml()}
       ${quizPanelHtml()}
       <div class="pt-stage">
+        <p class="pt-swipe-hint">Swipe sideways to see the full table — cells stay large enough to tap.</p>
         <div class="pt-grid" role="grid" aria-label="Periodic table">${buildMainGrid()}</div>
         <p class="pt-series-label">Lanthanides</p>
         <div class="pt-fblock" aria-label="Lanthanides">${buildFBlock("lanthanide")}</div>

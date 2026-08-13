@@ -1039,10 +1039,12 @@ function bindMapControls(host) {
 
 function mapHtml() {
   if (!geo.mapSvg) return "";
+  const pinHint =
+    geo.mode === "pin" && !window.matchMedia("(pointer: coarse)").matches
+      ? " · Shift-drag to pan while pinning"
+      : "";
   return `<div class="geo-map-frame is-zoomable" id="geo-map">${geo.mapSvg}
-    <p class="geo-map-hint">Pinch or scroll to zoom · drag to pan${
-      geo.mode === "pin" ? " · Shift-drag to pan while pinning" : ""
-    }</p>
+    <p class="geo-map-hint">Pinch or scroll to zoom · drag to pan${pinHint}</p>
   </div>`;
 }
 
@@ -1346,7 +1348,7 @@ function renderStudy() {
   const item = byId(geo.selectedId) || geo.items[0];
   geo.selectedId = item?.id || null;
   geo.root.innerHTML = `
-    <div class="geo-shell geo-play">
+    <div class="geo-shell geo-play geo-play--study">
       <div class="geo-toolbar">
         <button type="button" class="secondary-btn" id="geo-back-modes">Modes</button>
         <p class="speech-kicker">${escapeHtml(geo.pack.name)} · Study</p>
@@ -1428,27 +1430,35 @@ function renderPlay() {
     (["pin", "name", "type", "capitals", "outline"].includes(geo.mode) ||
       (geo.mode === "choice" && isOutlineView()));
 
-  let body = "";
+  let prompt = "";
+  let controls = "";
   if (geo.mode === "pin") {
-    body = `
+    prompt = `
       <p class="geo-prompt">${promptForMode(item)}</p>
       <p class="geo-hint">Tap the correct ${escapeHtml(pinTargetNoun())} on the map.</p>`;
   } else if (geo.mode === "type" || geo.mode === "outline") {
-    body = `
-      <p class="geo-prompt">${promptForMode(item)}</p>
+    prompt = `<p class="geo-prompt">${promptForMode(item)}</p>`;
+    controls = `
       <form class="geo-type-form" id="geo-type-form">
         <input type="text" id="geo-type-input" class="geo-type-input" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Type your answer" />
         <button type="submit" class="primary-btn">Check</button>
       </form>`;
   } else {
-    const choices = buildChoices(item);
-    body = `
-      <p class="geo-prompt">${promptForMode(item)}</p>
-      ${choiceButtons(choices)}`;
+    prompt = `<p class="geo-prompt">${promptForMode(item)}</p>`;
+    controls = choiceButtons(buildChoices(item));
   }
 
+  const playClass = [
+    "geo-shell",
+    "geo-play",
+    showMap ? "geo-play--map" : "",
+    geo.mode === "type" || geo.mode === "outline" ? "geo-play--type" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   geo.root.innerHTML = `
-    <div class="geo-shell geo-play">
+    <div class="${playClass}">
       <div class="geo-toolbar">
         <button type="button" class="secondary-btn" id="geo-back-modes">Modes</button>
         <p class="speech-kicker">${escapeHtml(geo.pack.name)} · ${escapeHtml(
@@ -1459,7 +1469,8 @@ function renderPlay() {
       <div class="geo-play-layout ${showMap ? "" : "no-map"}">
         ${showMap ? `<div class="geo-map-wrap">${mapHtml()}</div>` : ""}
         <aside class="geo-side">
-          <div class="geo-quiz-panel" id="geo-quiz-panel">${body}</div>
+          <div class="geo-quiz-panel" id="geo-quiz-panel">${prompt}</div>
+          ${controls ? `<div class="geo-quiz-actions">${controls}</div>` : ""}
           <div id="geo-feedback" class="quiz-feedback" hidden></div>
           <div class="geo-next-row" id="geo-next-row" hidden>
             <button type="button" class="primary-btn" id="geo-next">Next</button>
@@ -1514,6 +1525,11 @@ function bindPlay() {
   if (geo.mode === "type" || geo.mode === "outline") {
     const form = geo.root.querySelector("#geo-type-form");
     const input = geo.root.querySelector("#geo-type-input");
+    input?.addEventListener("focus", () => {
+      requestAnimationFrame(() => {
+        input.scrollIntoView({ block: "center", behavior: "smooth" });
+      });
+    });
     input?.focus();
     form?.addEventListener("submit", (e) => {
       e.preventDefault();
