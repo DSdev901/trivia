@@ -103,6 +103,7 @@ const geo = {
   answered: false,
   selectedId: null,
   _mapLabel: null,
+  _focusHalo: false,
   _panLimit: null,
 };
 
@@ -887,9 +888,13 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     resetMapViewBox();
   }
   if (outline) setMapLabel(host, null);
-  else if (correctId) setMapLabel(host, correctId);
-  else if (geo.mode === "study" && activeId) setMapLabel(host, activeId);
-  else setMapLabel(host, null);
+  else if (correctId) {
+    maybeFocusTinyPlace(host, correctId);
+    setMapLabel(host, correctId);
+  } else if (geo.mode === "study" && activeId) {
+    maybeFocusTinyPlace(host, activeId);
+    setMapLabel(host, activeId);
+  } else setMapLabel(host, null);
 }
 
 function mapTargetId(e) {
@@ -936,50 +941,143 @@ function pinTargetNoun() {
   return "region";
 }
 
+function regionAnchor(host, id) {
+  const els = regionsForId(host, id);
+  if (!els.length) return null;
+  const el = els[0];
+  const tag = el.tagName.toLowerCase();
+  if (tag === "circle" || el.classList.contains("geo-marker")) {
+    const cx = parseFloat(el.getAttribute("cx"));
+    const cy = parseFloat(el.getAttribute("cy"));
+    const r = parseFloat(el.getAttribute("r") || "5") || 5;
+    if (Number.isFinite(cx) && Number.isFinite(cy)) {
+      return { x: cx, y: cy, w: r * 2, h: r * 2, el };
+    }
+  }
+  const m = compactMainlandForEl(el);
+  if (m) {
+    return {
+      x: m.cx,
+      y: m.cy,
+      w: m.maxX - m.minX,
+      h: m.maxY - m.minY,
+      el,
+    };
+  }
+  try {
+    const b = el.getBBox();
+    if (!b.width && !b.height) return null;
+    return {
+      x: b.x + b.width / 2,
+      y: b.y + b.height / 2,
+      w: b.width,
+      h: b.height,
+      el,
+    };
+  } catch {
+    return null;
+  }
+}
+
+function placePixelSize(svg, anchor) {
+  const vb = svg.viewBox.baseVal;
+  const rect = svg.getBoundingClientRect();
+  const sx = rect.width / Math.max(vb.width, 1);
+  const sy = rect.height / Math.max(vb.height, 1);
+  return { pxW: anchor.w * sx, pxH: anchor.h * sy };
+}
+
+function maybeFocusTinyPlace(host, id) {
+  const svg = host.querySelector("svg");
+  const anchor = regionAnchor(host, id);
+  geo._focusHalo = false;
+  if (!svg || !anchor) return;
+  const px = placePixelSize(svg, anchor);
+  const longPx = Math.max(px.pxW, px.pxH);
+  const tinyDot =
+    anchor.el.classList.contains("geo-island-dot") ||
+    anchor.el.tagName.toLowerCase() === "circle";
+  geo._focusHalo = longPx < 44 || tinyDot;
+  if (longPx >= 28) return;
+
+  const vb = viewBoxParts(svg.getAttribute("viewBox"));
+  const scale = 56 / Math.max(longPx, 0.5);
+  let nw = vb.w / scale;
+  let nh = vb.h / scale;
+  const limit = panLimitBox();
+  const minW = limit.w * 0.08;
+  if (nw < minW) {
+    const s = minW / nw;
+    nw = minW;
+    nh *= s;
+  }
+  const next = clampViewBox({
+    x: anchor.x - nw / 2,
+    y: anchor.y - nh / 2,
+    w: nw,
+    h: nh,
+  });
+  svg.setAttribute("viewBox", `${next.x} ${next.y} ${next.w} ${next.h}`);
+}
+
 function setMapLabel(host, id) {
   const item = id ? byId(id) : null;
   geo._mapLabel = item ? { id: item.id, name: item.name } : null;
+  if (!id) geo._focusHalo = false;
   drawMapLabel(host);
 }
 
 function drawMapLabel(host) {
   if (!host) return;
-  host.querySelectorAll(".geo-marker-label").forEach((n) => n.remove());
+  host.querySelectorAll(".geo-marker-label, .geo-focus-mark").forEach((n) => n.remove());
   const spec = geo._mapLabel;
   if (!spec) return;
   const svg = host.querySelector("svg");
-  const marker = host.querySelector(
-    `.geo-region.geo-marker[data-id="${CSS.escape(spec.id)}"]`
-  );
-  if (!svg || !marker) return;
-  const cx = parseFloat(marker.getAttribute("cx"));
-  const cy = parseFloat(marker.getAttribute("cy"));
-  if (!Number.isFinite(cx) || !Number.isFinite(cy)) return;
+  const anchor = regionAnchor(host, spec.id);
+  if (!svg || !anchor) return;
 
   const vb = svg.viewBox.baseVal;
   const rect = svg.getBoundingClientRect();
   const unit = vb.width / Math.max(rect.width, 1);
-  const fontSize = 12.5 * unit;
-  const padX = 6 * unit;
-  const padY = 3.2 * unit;
-  const gap = 10 * unit;
-  const placeAbove = cy - vb.y > fontSize * 3;
   const NS = "http://www.w3.org/2000/svg";
 
-  const g = document.createElementNS(NS, "g");
-  g.setAttribute("class", "geo-marker-label");
-  g.setAttribute("pointer-events", "none");
+  if (geo._focusHalo) {
+    const g = document.createElementNS(NS, "g");
+    g.setAttribute("class", "geo-focus-mark");
+    g.setAttribute("pointer-events", "none");
+    const ring = document.createElementNS(NS, "circle");
+    ring.setAttribute("class", "geo-focus-ring");
+    ring.setAttribute("cx", String(anchor.x));
+    ring.setAttribute("cy", String(anchor.y));
+    ring.setAttribute("r", String(15 * unit));
+    const dot = document.createElementNS(NS, "circle");
+    dot.setAttribute("class", "geo-focus-dot");
+    dot.setAttribute("cx", String(anchor.x));
+    dot.setAttribute("cy", String(anchor.y));
+    dot.setAttribute("r", String(4.2 * unit));
+    g.append(ring, dot);
+    svg.appendChild(g);
+  }
 
+  const fontSize = 13 * unit;
+  const padX = 6.5 * unit;
+  const padY = 3.4 * unit;
+  const gap = (geo._focusHalo ? 18 : 10) * unit;
+  const placeAbove = anchor.y - vb.y > fontSize * 3;
+
+  const label = document.createElementNS(NS, "g");
+  label.setAttribute("class", "geo-marker-label");
+  label.setAttribute("pointer-events", "none");
   const text = document.createElementNS(NS, "text");
   text.setAttribute("class", "geo-marker-label-text");
-  text.setAttribute("x", String(cx));
-  text.setAttribute("y", String(placeAbove ? cy - gap : cy + gap));
+  text.setAttribute("x", String(anchor.x));
+  text.setAttribute("y", String(placeAbove ? anchor.y - gap : anchor.y + gap));
   text.setAttribute("text-anchor", "middle");
   text.setAttribute("dominant-baseline", placeAbove ? "auto" : "hanging");
   text.setAttribute("font-size", String(fontSize));
   text.textContent = spec.name;
-  g.appendChild(text);
-  svg.appendChild(g);
+  label.appendChild(text);
+  svg.appendChild(label);
 
   let bbox;
   try {
@@ -995,7 +1093,7 @@ function drawMapLabel(host) {
   bg.setAttribute("width", String(bbox.width + padX * 2));
   bg.setAttribute("height", String(bbox.height + padY * 2));
   bg.setAttribute("rx", String(3.2 * unit));
-  g.insertBefore(bg, text);
+  label.insertBefore(bg, text);
 }
 
 function zoomViewBox(src, factor, mx, my) {
