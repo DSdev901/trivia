@@ -47,6 +47,13 @@ const ISO_CONT = {
   WS: "OC", KI: "OC", TV: "OC", NR: "OC", PW: "OC", FM: "OC", MH: "OC",
 };
 
+const LANDLOCKED = new Set([
+  "AD", "AF", "AM", "AT", "AZ", "BY", "BF", "BI", "BO", "BT", "BW", "CF", "CH",
+  "CZ", "ET", "HU", "KG", "KZ", "LA", "LI", "LS", "LU", "MD", "MK", "ML", "MN",
+  "MW", "NE", "NP", "PY", "RS", "RW", "SK", "SM", "SS", "SZ", "TD", "TJ", "TM",
+  "UG", "UZ", "VA", "XK", "ZM", "ZW",
+]);
+
 /** Pin and Type are the main map modes; the rest are practice variants. */
 const MODE_META = {
   pin: {
@@ -891,6 +898,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   } else {
     resetMapViewBox();
   }
+  if (!outline) syncTinyIslandScale(host);
   if (outline) setMapLabel(host, null);
   else if (correctId) {
     scheduleFocusPlace(host, correctId);
@@ -1081,6 +1089,7 @@ function animateFocusView(host, svg, from, to) {
   stopFocusZoom();
   if (viewBoxClose(from, to)) {
     svg.setAttribute("viewBox", `${to.x} ${to.y} ${to.w} ${to.h}`);
+    syncTinyIslandScale(host);
     return;
   }
   const fromCx = from.x + from.w / 2;
@@ -1108,6 +1117,7 @@ function animateFocusView(host, svg, from, to) {
       h,
     };
     svg.setAttribute("viewBox", `${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+    syncTinyIslandScale(host);
     drawMapLabel(host);
     if (t < 1) {
       geo._zoomAnim = requestAnimationFrame(step);
@@ -1115,6 +1125,7 @@ function animateFocusView(host, svg, from, to) {
     }
     geo._zoomAnim = 0;
     svg.setAttribute("viewBox", `${to.x} ${to.y} ${to.w} ${to.h}`);
+    syncTinyIslandScale(host);
     drawMapLabel(host);
     syncTinyHitPads(host);
   };
@@ -1136,6 +1147,119 @@ function scheduleFocusPlace(host, id) {
     if (!geo._zoomAnim) syncTinyHitPads(host);
   };
   run();
+}
+
+function elFullBox(el) {
+  const tag = el.tagName.toLowerCase();
+  if (tag === "circle") return circleRecord(el);
+  const parts = elementParts(el);
+  if (!parts.length) return null;
+  const u = bboxUnion(parts);
+  if (!u) return null;
+  return {
+    ...u,
+    cx: (u.minX + u.maxX) / 2,
+    cy: (u.minY + u.maxY) / 2,
+    w: u.maxX - u.minX,
+    h: u.maxY - u.minY,
+  };
+}
+
+function placeAnchorCached(host, id) {
+  host._geoAnchors ??= new Map();
+  if (!host._geoAnchors.has(id)) {
+    const a = regionAnchor(host, id);
+    if (a) a.full = elFullBox(a.el);
+    host._geoAnchors.set(id, a);
+  }
+  return host._geoAnchors.get(id);
+}
+
+const TINY_LAND_SEE_PX = 5;
+const TINY_LAND_DRAW_PX = 10;
+const TINY_LAND_FULL_PX = 14;
+const ENCLAVE_STROKE_PX = 48;
+
+function tinyLandIds(host, svg, packRect) {
+  if (host._tinyLandIds) return host._tinyLandIds;
+  const pack = viewBoxParts(geo._packViewBox || svg.getAttribute("viewBox"));
+  const sx = packRect.width / Math.max(pack.w, 1);
+  const sy = packRect.height / Math.max(pack.h, 1);
+  const ids = [];
+  for (const id of packItemIds()) {
+    const a = placeAnchorCached(host, id);
+    if (!a) continue;
+    const compactPx = Math.max(a.w * sx, a.h * sy);
+    if (compactPx >= TINY_LAND_SEE_PX) continue;
+    ids.push(id);
+  }
+  host._tinyLandIds = ids;
+  return ids;
+}
+
+function clearIslandBoost(el) {
+  if (!el || el.dataset.geoBoosted !== "1") return;
+  el.removeAttribute("transform");
+  el.classList.remove("is-boosted");
+  delete el.dataset.geoBoosted;
+}
+
+function syncTinyIslandScale(host) {
+  if (!host || isOutlineView() || geo.pack?.overlay === "markers") return;
+  const svg = host.querySelector("svg");
+  if (!svg) return;
+  const rect = svg.getBoundingClientRect();
+  if (rect.width < 8 || rect.height < 8) return;
+  const vb = viewBoxParts(svg.getAttribute("viewBox"));
+  const sx = rect.width / Math.max(vb.w, 1);
+  const sy = rect.height / Math.max(vb.h, 1);
+  const unit = vb.w / rect.width;
+  const ids = tinyLandIds(host, svg, rect);
+  const NS = "http://www.w3.org/2000/svg";
+  host.querySelectorAll(".geo-island-boost").forEach((n) => n.remove());
+
+  for (const id of ids) {
+    const a = placeAnchorCached(host, id);
+    if (!a) continue;
+    const compactPx = Math.max(a.w * sx, a.h * sy);
+    const full = a.full;
+    const fullPx = full ? Math.max(full.w * sx, full.h * sy) : compactPx;
+    if (compactPx >= TINY_LAND_SEE_PX) {
+      clearIslandBoost(a.el);
+      continue;
+    }
+    const scale = Math.min(24, TINY_LAND_DRAW_PX / Math.max(compactPx, 0.2));
+    if (fullPx < TINY_LAND_FULL_PX && scale > 1.08) {
+      a.el.setAttribute(
+        "transform",
+        `translate(${a.x} ${a.y}) scale(${scale.toFixed(3)}) translate(${-a.x} ${-a.y})`
+      );
+      a.el.dataset.geoBoosted = "1";
+      a.el.classList.add("is-boosted");
+      continue;
+    }
+    clearIslandBoost(a.el);
+    const boost = document.createElementNS(NS, "circle");
+    boost.setAttribute("class", "geo-island-boost");
+    ["is-active", "is-correct", "is-wrong", "is-miss-flash", "is-dim"].forEach((cls) => {
+      if (a.el.classList.contains(cls)) boost.classList.add(cls);
+    });
+    boost.setAttribute("cx", String(a.x));
+    boost.setAttribute("cy", String(a.y));
+    boost.setAttribute("r", String((TINY_LAND_DRAW_PX / 2) * unit));
+    svg.appendChild(boost);
+  }
+  syncEnclaveStrokes(host, sx, sy);
+}
+
+function syncEnclaveStrokes(host, sx, sy) {
+  for (const id of packItemIds()) {
+    if (!LANDLOCKED.has(id)) continue;
+    const a = placeAnchorCached(host, id);
+    if (!a) continue;
+    const compactPx = Math.max(a.w * sx, a.h * sy);
+    a.el.classList.toggle("is-enclave", compactPx < ENCLAVE_STROKE_PX);
+  }
 }
 
 function syncTinyHitPads(host) {
@@ -1287,6 +1411,7 @@ function bindMapControls(host) {
     stopFocusZoom();
     const next = clampViewBox(vb);
     svg.setAttribute("viewBox", `${next.x} ${next.y} ${next.w} ${next.h}`);
+    syncTinyIslandScale(host);
     drawMapLabel(host);
   };
 

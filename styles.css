@@ -1954,6 +1954,11 @@ body {
   fill: var(--accent);
 }
 
+.geo-map-frame .geo-region.is-enclave:not(.is-active):not(.is-correct):not(.is-wrong):not(.is-miss-flash) {
+  stroke: #fff;
+  stroke-width: 1.45;
+}
+
 .geo-map-frame .geo-region.is-dim {
   fill: #9eb6cc;
   opacity: 0.45;
@@ -2063,6 +2068,31 @@ body {
   stroke: none;
   pointer-events: all;
   cursor: pointer;
+}
+
+.geo-island-boost {
+  fill: #9eb6cc;
+  stroke: #f4f8fb;
+  stroke-width: 1.1;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.geo-island-boost.is-active {
+  fill: var(--accent);
+}
+
+.geo-island-boost.is-correct {
+  fill: #2f9e6b;
+}
+
+.geo-island-boost.is-wrong,
+.geo-island-boost.is-miss-flash {
+  fill: #c45c5c;
+}
+
+.geo-island-boost.is-dim {
+  opacity: 0.45;
 }
 
 .geo-focus-mark {
