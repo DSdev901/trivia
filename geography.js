@@ -889,12 +889,15 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   }
   if (outline) setMapLabel(host, null);
   else if (correctId) {
-    maybeFocusTinyPlace(host, correctId);
-    setMapLabel(host, correctId);
+    scheduleFocusPlace(host, correctId);
   } else if (geo.mode === "study" && activeId) {
-    maybeFocusTinyPlace(host, activeId);
-    setMapLabel(host, activeId);
-  } else setMapLabel(host, null);
+    const svg = host.querySelector("svg");
+    if (svg && geo._packViewBox) svg.setAttribute("viewBox", geo._packViewBox);
+    scheduleFocusPlace(host, activeId);
+  } else {
+    setMapLabel(host, null);
+    syncTinyHitPads(host);
+  }
 }
 
 function mapTargetId(e) {
@@ -906,6 +909,8 @@ function mapTargetId(e) {
 
 function regionIdFromNode(node) {
   if (!node?.closest) return null;
+  const pad = node.closest(".geo-tiny-hit");
+  if (pad?.dataset.id) return pad.dataset.id;
   const pin = node.closest(".geo-pin");
   if (pin) {
     const visual = pin.querySelector(".geo-region");
@@ -979,33 +984,46 @@ function regionAnchor(host, id) {
   }
 }
 
-function placePixelSize(svg, anchor) {
-  const vb = svg.viewBox.baseVal;
+function placePixelSize(svg, anchor, vbRaw) {
+  const vb = viewBoxParts(vbRaw || svg.getAttribute("viewBox"));
   const rect = svg.getBoundingClientRect();
-  const sx = rect.width / Math.max(vb.width, 1);
-  const sy = rect.height / Math.max(vb.height, 1);
-  return { pxW: anchor.w * sx, pxH: anchor.h * sy };
+  const sx = rect.width / Math.max(vb.w, 1);
+  const sy = rect.height / Math.max(vb.h, 1);
+  return { pxW: anchor.w * sx, pxH: anchor.h * sy, rect };
+}
+
+function placeInViewBox(vb, anchor, edge = 0.1) {
+  const padX = vb.w * edge;
+  const padY = vb.h * edge;
+  return (
+    anchor.x >= vb.x + padX &&
+    anchor.y >= vb.y + padY &&
+    anchor.x <= vb.x + vb.w - padX &&
+    anchor.y <= vb.y + vb.h - padY
+  );
 }
 
 function maybeFocusTinyPlace(host, id) {
   const svg = host.querySelector("svg");
   const anchor = regionAnchor(host, id);
   geo._focusHalo = false;
-  if (!svg || !anchor) return;
-  const px = placePixelSize(svg, anchor);
+  if (!svg || !anchor) return true;
+  const packRaw = geo._packViewBox || svg.getAttribute("viewBox");
+  const pack = viewBoxParts(packRaw);
+  const px = placePixelSize(svg, anchor, packRaw);
+  if (px.rect.width < 8 || px.rect.height < 8) return false;
   const longPx = Math.max(px.pxW, px.pxH);
   const tinyDot =
     anchor.el.classList.contains("geo-island-dot") ||
     anchor.el.tagName.toLowerCase() === "circle";
   geo._focusHalo = longPx < 44 || tinyDot;
-  if (longPx >= 28) return;
+  if (longPx >= 28 && placeInViewBox(pack, anchor)) return true;
 
-  const vb = viewBoxParts(svg.getAttribute("viewBox"));
-  const scale = 56 / Math.max(longPx, 0.5);
-  let nw = vb.w / scale;
-  let nh = vb.h / scale;
+  const scale = longPx < 28 ? Math.min(80, 56 / Math.max(longPx, 0.25)) : 1;
+  let nw = pack.w / scale;
+  let nh = pack.h / scale;
   const limit = panLimitBox();
-  const minW = limit.w * 0.08;
+  const minW = limit.w * 0.01;
   if (nw < minW) {
     const s = minW / nw;
     nw = minW;
@@ -1018,6 +1036,58 @@ function maybeFocusTinyPlace(host, id) {
     h: nh,
   });
   svg.setAttribute("viewBox", `${next.x} ${next.y} ${next.w} ${next.h}`);
+  return true;
+}
+
+function scheduleFocusPlace(host, id) {
+  let tries = 0;
+  const run = () => {
+    if (!host.isConnected) return;
+    const ok = maybeFocusTinyPlace(host, id);
+    if (!ok && tries < 2) {
+      tries += 1;
+      requestAnimationFrame(run);
+      return;
+    }
+    if (!ok) return;
+    setMapLabel(host, id);
+    syncTinyHitPads(host);
+  };
+  run();
+}
+
+function syncTinyHitPads(host) {
+  if (!host) return;
+  host.querySelectorAll(".geo-tiny-hit").forEach((n) => n.remove());
+  if (isOutlineView() || geo.pack?.overlay === "markers") return;
+  const svg = host.querySelector("svg");
+  if (!svg) return;
+  const rect = svg.getBoundingClientRect();
+  if (rect.width < 8) return;
+  const vb = viewBoxParts(svg.getAttribute("viewBox"));
+  const unit = vb.w / rect.width;
+  const minR = 13 * unit;
+  const inPack = packItemIds();
+  const NS = "http://www.w3.org/2000/svg";
+  for (const id of inPack) {
+    const anchor = regionAnchor(host, id);
+    if (!anchor) continue;
+    const longPx = Math.max(
+      anchor.w * (rect.width / vb.w),
+      anchor.h * (rect.height / Math.max(vb.h, 1))
+    );
+    const tinyDot =
+      anchor.el.classList.contains("geo-island-dot") ||
+      anchor.el.tagName.toLowerCase() === "circle";
+    if (longPx >= 28 && !tinyDot) continue;
+    const hit = document.createElementNS(NS, "circle");
+    hit.setAttribute("class", "geo-tiny-hit");
+    hit.dataset.id = id;
+    hit.setAttribute("cx", String(anchor.x));
+    hit.setAttribute("cy", String(anchor.y));
+    hit.setAttribute("r", String(Math.max(minR, Math.max(anchor.w, anchor.h) / 2)));
+    svg.appendChild(hit);
+  }
 }
 
 function setMapLabel(host, id) {
@@ -1101,7 +1171,7 @@ function zoomViewBox(src, factor, mx, my) {
   let nw = vb.w * factor;
   let nh = vb.h * factor;
   const limit = panLimitBox();
-  const minW = limit.w * 0.08;
+  const minW = limit.w * 0.01;
   if (nw < minW) {
     const s = minW / nw;
     nw = minW;
@@ -1623,21 +1693,36 @@ function studyDetailHtml(item) {
     ${item.fact ? `<p class="lede">${escapeHtml(item.fact)}</p>` : ""}`;
 }
 
+function selectStudyItem(id) {
+  if (!id || !byId(id)) return;
+  geo.selectedId = id;
+  const root = geo.root;
+  if (!root?.querySelector(".geo-play--study")) {
+    renderStudy();
+    return;
+  }
+  const detail = root.querySelector("#geo-detail");
+  if (detail) detail.innerHTML = studyDetailHtml(byId(id));
+  root.querySelectorAll(".geo-item-btn").forEach((btn) => {
+    btn.classList.toggle("is-on", btn.dataset.id === id);
+  });
+  root
+    .querySelector(`.geo-item-btn[data-id="${CSS.escape(id)}"]`)
+    ?.scrollIntoView({ block: "nearest" });
+  paintMap(id, { dimOthers: true });
+}
+
 function bindStudy() {
   geo.root.querySelector("#geo-back-modes")?.addEventListener("click", () => {
     renderPackModes();
   });
   geo.root.querySelectorAll(".geo-item-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      geo.selectedId = btn.dataset.id;
-      renderStudy();
-    });
+    btn.addEventListener("click", () => selectStudyItem(btn.dataset.id));
   });
   geo.root.querySelector("#geo-map")?.addEventListener("click", (e) => {
     const id = mapTargetId(e);
     if (!id || !byId(id)) return;
-    geo.selectedId = id;
-    renderStudy();
+    selectStudyItem(id);
   });
 }
 

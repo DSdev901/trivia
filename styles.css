@@ -2051,6 +2051,13 @@ body {
   stroke-width: 2;
 }
 
+.geo-map-frame .geo-tiny-hit {
+  fill: transparent;
+  stroke: none;
+  pointer-events: all;
+  cursor: pointer;
+}
+
 .geo-focus-mark {
   pointer-events: none;
 }
