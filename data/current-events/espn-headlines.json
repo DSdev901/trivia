@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-13T18:36:48.185Z",
+  "generatedAt": "2026-08-13T21:31:43.611Z",
   "retentionDays": 14,
-  "windowStart": "2026-07-30T18:36:48.185Z",
-  "windowEnd": "2026-08-13T18:36:48.185Z",
+  "windowStart": "2026-07-30T21:31:43.611Z",
+  "windowEnd": "2026-08-13T21:31:43.611Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,613 @@
     "Tennis",
     "MMA"
   ],
-  "count": 700,
+  "count": 718,
   "items": [
+    {
+      "key": "49602915",
+      "id": "49602915",
+      "headline": "Rams expect Puka Nacua to return to practicing next week",
+      "summary": "Wide receiver Puka Nacua is expected to return to practice next week, coach Sean McVay said Thursday.",
+      "url": "https://www.espn.com/nfl/story/_/id/49602915/rams-expect-puka-nacua-return-practicing-next-week",
+      "sport": "NFL",
+      "published": "2026-08-13T21:10:38.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49481941",
+      "id": "49481941",
+      "headline": "Houston Rockets offseason recap, early 2026-27 season preview",
+      "summary": "Can Kevin Durant, Amen Thompson and others push Houston into the West's upper tier? We're looking back at the offseason and taking an early look at the 2026-27 season.",
+      "url": "https://www.espn.com/nba/story/_/id/49481941/houston-rockets-2026-27-season-preview-stats-roster-kevin-durant-vanvleet-thompson",
+      "sport": "NBA",
+      "published": "2026-08-13T21:07:57.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49537991",
+      "id": "49537991",
+      "headline": "New Orleans Pelicans offseason recap, early 2026-27 season preview",
+      "summary": "How will the Pelicans look next season after a quiet summer? We're looking back at the offseason and taking an early look at the 2026-27 season.",
+      "url": "https://www.espn.com/nba/story/_/id/49537991/new-orleans-pelicans-2026-27-season-preview-stats-roster",
+      "sport": "NBA",
+      "published": "2026-08-13T21:06:59.000Z",
+      "firstSeen": "2026-08-13T15:37:22.626Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49602964",
+      "id": "49602964",
+      "headline": "NBA's 2026-27 schedule highlighted by January reunions",
+      "summary": "The NBA's schedule has plenty of intrigue in January with the highly anticipated returns of Giannis Antetokounmpo and Jaylen Brown to their respective former homes.",
+      "url": "https://www.espn.com/nba/story/_/id/49602964/nba-2026-27-schedule-highlighted-january-reunions",
+      "sport": "NBA",
+      "published": "2026-08-13T21:05:34.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49377273",
+      "id": "49377273",
+      "headline": "2026 Carolina Panthers training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Panthers training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49377273/carolina-panthers-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T21:01:36.000Z",
+      "firstSeen": "2026-08-12T21:31:05.036Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49419756",
+      "id": "49419756",
+      "headline": "2026 New York Jets training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Jets training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49419756/new-york-jets-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T20:59:34.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49368181",
+      "id": "49368181",
+      "headline": "2026 NFL training camp: Standouts, questions for all 32 teams",
+      "summary": "Get all the latest news, intel and insights on NFL training camps from our team of reporters in the field.",
+      "url": "https://www.espn.com/nfl/story/_/id/49368181/training-camp-2026-latest-news-intel-updates-buzz-all-32-teams",
+      "sport": "NFL",
+      "published": "2026-08-13T20:57:46.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49419613",
+      "id": "49419613",
+      "headline": "2026 Tampa Bay Buccaneers training camp: Latest intel, updates",
+      "summary": "Follow our daily updates from Buccaneers training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49419613/tampa-bay-buccaneers-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T20:56:31.000Z",
+      "firstSeen": "2026-08-13T03:59:55.296Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49602842",
+      "id": "49602842",
+      "headline": "DJ Pickett won't budge on No. 5 amid Jayden Daniels-LSU flap",
+      "summary": "LSU's DJ Pickett says he has no plans to change out of the No. 5 amid pushback from Jayden Daniels, with the Commanders QB saying the situation won't be a distraction.",
+      "url": "https://www.espn.com/college-football/story/_/id/49602842/dj-pickett-budge-no-5-amid-jayden-daniels-lsu-flap",
+      "sport": "College football",
+      "published": "2026-08-13T20:47:00.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49603066",
+      "id": "49603066",
+      "headline": "Rays sign utility player Jorge Mateo after Braves release",
+      "summary": "Utility player Jorge Mateo, who was released by the Braves after hitting .240 this season, has signed with the Rays.",
+      "url": "https://www.espn.com/mlb/story/_/id/49603066/rays-sign-utility-player-jorge-mateo-braves-release",
+      "sport": "MLB",
+      "published": "2026-08-13T20:44:53.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49603079",
+      "id": "49603079",
+      "headline": "Logan Gilbert pitches 6 strong innings as Mariners stop 6-game skid with 1-0 win over Yankees",
+      "summary": "— Logan Gilbert pitched six innings and combined with three relievers on a four-hitter as the Seattle Mariners ended a six-game skid with a 1-0 victory over the New York Yankees on Thursday.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816513",
+      "sport": "MLB",
+      "published": "2026-08-13T20:44:30.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49602122",
+      "id": "49602122",
+      "headline": "Source: Cardinals' Beck (rib) out, derailing rematch vs. Mendoza",
+      "summary": "Cardinals quarterback Carson Beck won't play in Thursday night's preseason game against the Raiders due to a rib injury sustained in last Thursday's Hall of Fame Game, a source told NFL Network's Ian Rapoport.",
+      "url": "https://www.espn.com/nfl/story/_/id/49602122/source-cardinals-beck-rib-derailing-rematch-vs-mendoza",
+      "sport": "NFL",
+      "published": "2026-08-13T20:39:17.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 21
+    },
+    {
+      "key": "49601822",
+      "id": "49601822",
+      "headline": "Twins activate Byron Buxton for Field of Dreams game vs. Phillies",
+      "summary": "Twins outfielder Byron Buxton, who missed 14 games with a right hip injury, has been activated off the IL prior to Thursday's Field of Dreams game vs. the Phillies.",
+      "url": "https://www.espn.com/mlb/story/_/id/49601822/twins-activate-byron-buxton-field-dreams-game-vs-phillies",
+      "sport": "MLB",
+      "published": "2026-08-13T20:37:46.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49602993",
+      "id": "49602993",
+      "headline": "Sal Stewart homers as Reds hold off Chicago White Sox for a 9-8 win",
+      "summary": "— Sal Stewart, Eugenio Suárez and Tyler Stephenson homered, and the Cincinnati Reds held off the Chicago White Sox for a 9-8 victory on Thursday.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816514",
+      "sport": "MLB",
+      "published": "2026-08-13T20:32:31.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49419620",
+      "id": "49419620",
+      "headline": "2026 Detroit Lions training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Lions training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49419620/detroit-lions-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T20:28:09.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49600930",
+      "id": "49600930",
+      "headline": "Fantasy baseball lineup advice for Friday: Can Clay Holmes shake off the rust?",
+      "summary": "Everything you need to know to set your fantasy baseball lineups for Friday's MLB action.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/49600930/fantasy-baseball-pitcher-rankings-lineup-advice-tips-mlb-daily-notes-august-14-games",
+      "sport": "MLB",
+      "published": "2026-08-13T20:21:56.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 4
+    },
+    {
+      "key": "47978642",
+      "id": "47978642",
+      "headline": "Messi tracker: Goals, assists, key moments in 2026",
+      "summary": "ESPN provides game-by-game analysis of Lionel Messi's performances for Inter Miami and Argentina.",
+      "url": "https://www.espn.com/soccer/story/_/id/47978642/lionel-messi-2026-tracker-inter-miami-argentina-games-goals-assists-stats",
+      "sport": "Soccer",
+      "published": "2026-08-13T20:21:41.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49574798",
+      "id": "49574798",
+      "headline": "2026-27 NBA season: Under-the-radar concerns for title contenders",
+      "summary": "What hurdles could the top 10 contenders in the NBA face during the 2026-27 season? Our NBA insiders break it down.",
+      "url": "https://www.espn.com/nba/story/_/id/49574798/2026-27-nba-season-radar-concerns-10-title-contenders",
+      "sport": "NBA",
+      "published": "2026-08-13T20:18:17.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49471934",
+      "id": "49471934",
+      "headline": "NBA schedule 2026-27: Opening night, Christmas and must-see games",
+      "summary": "Following the NBA's schedule release, our insiders break down the biggest games to watch for the 2026-27 season.",
+      "url": "https://www.espn.com/nba/story/_/id/49471934/nba-full-schedule-2026-2027-games-watch-faq-rivalries-matchups",
+      "sport": "NBA",
+      "published": "2026-08-13T20:15:33.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49602906",
+      "id": "49602906",
+      "headline": "Ashcraft throws complete game, Flores has 2 homers, 6 RBIs as Pirates rout Marlins 13-1",
+      "summary": "— Braxton Ashcraft threw a complete-game three-hitter, Rafael Flores had a pair of three-run homers and the Pittsburgh Pirates beat the Miami Marlins 13-1 on Thursday.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816512",
+      "sport": "MLB",
+      "published": "2026-08-13T20:14:29.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49598413",
+      "id": "49598413",
+      "headline": "Manchester City transfers: Jérémy Doku pens new deal, Tijjani Reijnders set to leave",
+      "summary": "Jérémy Doku has become the latest Manchester City player to extend his contract after signing a new five-year deal, the club have confirmed.",
+      "url": "https://www.espn.com/soccer/story/_/id/49598413/manchester-city-transfers-jeremy-doku-pens-new-deal-tijjani-reijnders-set-leave",
+      "sport": "Soccer",
+      "published": "2026-08-13T20:12:39.000Z",
+      "firstSeen": "2026-08-13T12:34:33.413Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49597770",
+      "id": "49597770",
+      "headline": "Transfer rumors, news: Chelsea join race to sign Monaco's Camara",
+      "summary": "Chelsea could sign Arsenal midfielder Martín Zubimendi if Enzo Fernández joins Manchester City this summer. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/49597770/transfer-rumors-news-chelsea-eye-arsenal-zubimendi-replace-man-city-target-enzo-fernandez",
+      "sport": "Soccer",
+      "published": "2026-08-13T20:12:22.000Z",
+      "firstSeen": "2026-08-13T09:42:20.516Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49602517",
+      "id": "49602517",
+      "headline": "Bears won't change name if they move to Indiana, McCaskey says",
+      "summary": "The Chicago Bears will not be changing their name if they move across states lines to Indiana, chairman George H. McCaskey said Thursday.",
+      "url": "https://www.espn.com/nfl/story/_/id/49602517/bears-change-name-moved-indiana-mccaskey-says",
+      "sport": "NFL",
+      "published": "2026-08-13T20:11:46.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 14
+    },
+    {
+      "key": "49533692",
+      "id": "49533692",
+      "headline": "NBA teams dominate social media for 2025-26 schedule release",
+      "summary": "With the 2026-27 NBA schedule dropping on Thursday, teams creatively shared their respective games for the new campaign.",
+      "url": "https://www.espn.com/nba/story/_/id/49533692/2026-27-nba-schedule-release-social-media",
+      "sport": "NBA",
+      "published": "2026-08-13T20:10:01.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49602830",
+      "id": "49602830",
+      "headline": "Montero, Tigers shut out Guardians without a strikeout, a first in MLB since 2014",
+      "summary": "— Keider Montero pitched three-hit ball into the seventh inning and the Detroit Tigers blanked the Cleveland Guardians 3-0 on Thursday despite failing to record a strikeout.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401815751",
+      "sport": "MLB",
+      "published": "2026-08-13T20:05:31.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49424976",
+      "id": "49424976",
+      "headline": "2026 Los Angeles Chargers training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Chargers training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49424976/los-angeles-chargers-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T20:02:03.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 23
+    },
+    {
+      "key": "49425032",
+      "id": "49425032",
+      "headline": "2026 Las Vegas Raiders training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Raiders training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49425032/las-vegas-raiders-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T20:00:43.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49447878",
+      "id": "49447878",
+      "headline": "2026 Kansas City Chiefs training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Chiefs training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49447878/kansas-city-chiefs-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:59:31.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49379469",
+      "id": "49379469",
+      "headline": "2026 Denver Broncos training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Broncos training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49379469/denver-broncos-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:56:11.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49602722",
+      "id": "49602722",
+      "headline": "Cleveland Guardians vs. Detroit Tigers: Game Highlights",
+      "summary": "Cleveland Guardians vs. Detroit Tigers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49602722/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-13T19:55:54.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49449169",
+      "id": "49449169",
+      "headline": "2026 Pittsburgh Steelers training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Steelers training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49449169/pittsburgh-steelers-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:55:21.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49449000",
+      "id": "49449000",
+      "headline": "2026 Cleveland Browns training camp: Latest intel, updates",
+      "summary": "Follow our daily updates from Browns training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49449000/cleveland-browns-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:54:39.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49448120",
+      "id": "49448120",
+      "headline": "2026 Cincinnati Bengals training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Bengals training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49448120/cincinnati-bengals-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:53:20.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 20
+    },
+    {
+      "key": "49434567",
+      "id": "49434567",
+      "headline": "2026 Baltimore Ravens training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Ravens training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49434567/baltimore-ravens-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:52:42.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49419824",
+      "id": "49419824",
+      "headline": "2026 Tennessee Titans training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Titans training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49419824/tennessee-titans-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:51:58.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49427691",
+      "id": "49427691",
+      "headline": "2026 Jacksonville Jaguars training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Jaguars training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49427691/jacksonville-jaguars-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:51:11.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 15
+    },
+    {
+      "key": "49448214",
+      "id": "49448214",
+      "headline": "2026 Indianapolis Colts training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Colts training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49448214/indianapolis-colts-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:49:39.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49419567",
+      "id": "49419567",
+      "headline": "2026 Houston Texans training camp: Latest intel, updates",
+      "summary": "Follow our daily updates from Houston Texans training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49419567/houston-texans-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:47:35.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 20
+    },
+    {
+      "key": "49410015",
+      "id": "49410015",
+      "headline": "2026 Miami Dolphins training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Dolphins' training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49410015/miami-dolphins-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:44:00.000Z",
+      "firstSeen": "2026-08-13T18:36:48.185Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49434544",
+      "id": "49434544",
+      "headline": "2026 Buffalo Bills training camp: Latest intel, updates",
+      "summary": "Follow our daily updates from Bills training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49434544/buffalo-bills-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:42:26.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49427699",
+      "id": "49427699",
+      "headline": "2026 Seattle Seahawks training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Seahawks training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49427699/seattle-seahawks-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:41:12.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49427696",
+      "id": "49427696",
+      "headline": "2026 San Francisco 49ers training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from 49ers training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49427696/san-francisco-49ers-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:39:53.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49592550",
+      "id": "49592550",
+      "headline": "LeBron, Mitchell lead praise for Russell Westbrook after retirement news",
+      "summary": "The nine-time NBA All-Star announced his retirement Wednesday and received congratulations around the sports world.",
+      "url": "https://www.espn.com/nba/story/_/id/49592550/russell-westbrook-nba-retirement-social-media-reaction-trae-young-donovan-mitchell",
+      "sport": "NBA",
+      "published": "2026-08-13T19:36:47.000Z",
+      "firstSeen": "2026-08-12T21:31:05.036Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49434454",
+      "id": "49434454",
+      "headline": "2026 Los Angeles Rams training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Rams training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49434454/los-angeles-rams-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:36:14.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49592083",
+      "id": "49592083",
+      "headline": "FedEx St. Jude Championship 2026 highlights: Best shots and highlights from Thursday",
+      "summary": "Here are the best sights and sounds from the first round of the 2026 FedEx St. Jude Championship at TPC Southwind.",
+      "url": "https://www.espn.com/golf/story/_/id/49592083/fedex-st-jude-championship-2026-first-round-sights-sounds-best-shots",
+      "sport": "Golf",
+      "published": "2026-08-13T19:35:23.000Z",
+      "firstSeen": "2026-08-13T15:37:22.626Z",
+      "bestRank": 1
+    },
+    {
+      "key": "40699880",
+      "id": "40699880",
+      "headline": "Fantasy football buzz: Big opportunity for Jonathon Brooks; Jordyn Tyson injured",
+      "summary": "With Chuba Hubbard nursing a hamstring injury, 2024 second-rounder Jonathon Brooks has a chance to show what he can do.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "sport": "NFL",
+      "published": "2026-08-13T19:35:09.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49376202",
+      "id": "49376202",
+      "headline": "2026 Minnesota Vikings training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Vikings training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49376202/minnesota-vikings-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:30:34.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49376941",
+      "id": "49376941",
+      "headline": "2026 Green Bay Packers training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Packers training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49376941/green-bay-packers-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:29:26.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49434181",
+      "id": "49434181",
+      "headline": "2026 New York Giants training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Giants training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49434181/new-york-giants-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:28:05.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49424731",
+      "id": "49424731",
+      "headline": "2026 New Orleans Saints training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Saints training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49424731/new-orleans-saints-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:26:28.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49448429",
+      "id": "49448429",
+      "headline": "2026 Atlanta Falcons training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Falcons training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49448429/atlanta-falcons-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:24:39.000Z",
+      "firstSeen": "2026-08-12T21:31:05.036Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49448046",
+      "id": "49448046",
+      "headline": "2026 Washington Commanders training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Commanders training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49448046/washington-commanders-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:22:19.000Z",
+      "firstSeen": "2026-08-12T21:31:05.036Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49434399",
+      "id": "49434399",
+      "headline": "2026 Philadelphia Eagles training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Eagles training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49434399/philadelphia-eagles-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:21:18.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 24
+    },
+    {
+      "key": "49602181",
+      "id": "49602181",
+      "headline": "Saints rookie WR Jordyn Tyson leaves practice with injury",
+      "summary": "Saints rookie wide receiver Jordyn Tyson left practice with an injury Thursday and didn't return.",
+      "url": "https://www.espn.com/nfl/story/_/id/49602181/saints-rookie-wr-jordyn-tyson-leaves-practice-injury",
+      "sport": "NFL",
+      "published": "2026-08-13T19:18:09.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 19
+    },
+    {
+      "key": "49376535",
+      "id": "49376535",
+      "headline": "2026 Dallas Cowboys training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Cowboys training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49376535/dallas-cowboys-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-13T19:15:40.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 9
+    },
     {
       "key": "49601678",
       "id": "49601678",
@@ -30,7 +635,84 @@
       "summary": "A new coaching staff and another chance to get accustomed to Buffalo's new stadium led to Bills coach Joe Brady's decision to have Josh Allen and the rest of his healthy starters play in the team's preseason opener.",
       "url": "https://www.espn.com/nfl/story/_/id/49601678/allen-bills-starters-play-saturday-1st-game-new-stadium",
       "sport": "NFL",
-      "published": "2026-08-13T18:05:09.000Z",
+      "published": "2026-08-13T18:28:16.000Z",
+      "firstSeen": "2026-08-13T18:36:48.185Z",
+      "bestRank": 1
+    },
+    {
+      "key": "48552599",
+      "id": "48552599",
+      "headline": "2026 fantasy football rankings: PPR leagues",
+      "summary": "Fantasy football rankings for the upcoming season, for PPR leagues, as well as IDP and dynasty setups.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFPreseasonRank26main/fantasy-football-rankings-2026-draft-ppr",
+      "sport": "NFL",
+      "published": "2026-08-13T18:18:01.000Z",
+      "firstSeen": "2026-08-13T18:36:48.185Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49601602",
+      "id": "49601602",
+      "headline": "Reds' Greene could miss 2027 season after Tommy John surgery",
+      "summary": "Reds pitcher Hunter Greene will be out the rest of this season and possibly 2027 after undergoing Tommy John surgery Thursday to repair a ligament in his right elbow.",
+      "url": "https://www.espn.com/mlb/story/_/id/49601602/reds-greene-miss-2027-season-tommy-john-surgery",
+      "sport": "MLB",
+      "published": "2026-08-13T18:12:36.000Z",
+      "firstSeen": "2026-08-13T18:36:48.185Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49601110",
+      "id": "49601110",
+      "headline": "Can fantasy managers trust Jalen McMillan to produce as a WR2 this season?",
+      "summary": "Can fantasy managers trust Jalen McMillan to produce as an WR2 this season?",
+      "url": "https://www.espn.com/video/clip/_/id/49601110/can-fantasy-managers-trust-jalen-mcmillan-produce-wr2-season",
+      "sport": "NFL",
+      "published": "2026-08-13T18:11:01.000Z",
+      "firstSeen": "2026-08-13T18:36:48.185Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49601020",
+      "id": "49601020",
+      "headline": "Should fantasy managers still trust Josh Allen?",
+      "summary": "Should fantasy managers still trust Josh Allen to perform at his usual level?",
+      "url": "https://www.espn.com/video/clip/_/id/49601020/should-fantasy-managers-trust-josh-allen-perform-usual-level",
+      "sport": "NFL",
+      "published": "2026-08-13T18:09:49.000Z",
+      "firstSeen": "2026-08-13T18:36:48.185Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49600551",
+      "id": "49600551",
+      "headline": "Daniel Dopp predicts Michael Pittman Jr. will have early breakout potential in fantasy",
+      "summary": "Daniel Dopp predicts Michael Pittman Jr. will get significant volume with his new team",
+      "url": "https://www.espn.com/video/clip/_/id/49600551/daniel-dopp-predicts-michael-pittman-jr-get-significant-volume-new-team",
+      "sport": "NFL",
+      "published": "2026-08-13T18:06:33.000Z",
+      "firstSeen": "2026-08-13T18:36:48.185Z",
+      "bestRank": 21
+    },
+    {
+      "key": "49599487",
+      "id": "49599487",
+      "headline": "Former referee Anthony Taylor speaks out on reasons for stepping away from English game",
+      "summary": "After 20 years as an English football referee, Anthony Taylor will not be involved at the start of the upcoming season -- he explains what caused him to make such a drastic decision.",
+      "url": "https://www.espn.com/soccer/story/_/id/49599487/former-referee-anthony-taylor-speaks-reasons-stepping-away-english-game",
+      "sport": "Soccer",
+      "published": "2026-08-13T18:06:08.000Z",
+      "firstSeen": "2026-08-13T15:37:22.626Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49600204",
+      "id": "49600204",
+      "headline": "Michael Carrick calls for more Man United signings: 'Need to keep pushing'",
+      "summary": "Michael Carrick has said Manchester United \"need\" more signings before the transfer deadline.",
+      "url": "https://www.espn.com/soccer/story/_/id/49600204/michael-carrick-calls-more-man-united-signings-need-keep-pushing",
+      "sport": "Soccer",
+      "published": "2026-08-13T18:05:27.000Z",
       "firstSeen": "2026-08-13T18:36:48.185Z",
       "bestRank": 1
     },
@@ -57,37 +739,26 @@
       "bestRank": 4
     },
     {
-      "key": "49601602",
-      "id": "49601602",
-      "headline": "Reds' Greene could miss 2027 season after Tommy John surgery",
-      "summary": "Reds pitcher Hunter Greene will be out the rest of this season and possibly 2027 after undergoing Tommy John surgery Thursday to repair a ligament in his right elbow.",
-      "url": "https://www.espn.com/mlb/story/_/id/49601602/reds-greene-miss-2027-season-tommy-john-surgery",
-      "sport": "MLB",
-      "published": "2026-08-13T17:58:18.000Z",
-      "firstSeen": "2026-08-13T18:36:48.185Z",
+      "key": "49600822",
+      "id": "49600822",
+      "headline": "Sources: Jeff Monken rewarded with new 5-year deal at Army",
+      "summary": "Army football coach Jeff Monken has agreed to a new five-year contract, sources tell ESPN.",
+      "url": "https://www.espn.com/college-football/story/_/id/49600822/sources-jeff-monken-rewarded-new-5-year-deal-army",
+      "sport": "College football",
+      "published": "2026-08-13T17:51:09.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
       "bestRank": 2
     },
     {
-      "key": "49427699",
-      "id": "49427699",
-      "headline": "2026 Seattle Seahawks training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Seahawks training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49427699/seattle-seahawks-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T17:55:37.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "key": "49601440",
+      "id": "49601440",
+      "headline": "LAFC signs Bayern Munich forward Armindo Sieb through 2028",
+      "summary": "LAFC announced the signing Thursday of forward Armindo Sieb from Bayern Munich on a permanent transfer through the 2028-29 MLS season.",
+      "url": "https://www.espn.com/soccer/story/_/id/49601440/lafc-signs-bayern-munich-forward-armindo-sieb",
+      "sport": "Soccer",
+      "published": "2026-08-13T17:43:27.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
       "bestRank": 2
-    },
-    {
-      "key": "49377273",
-      "id": "49377273",
-      "headline": "2026 Carolina Panthers training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Panthers training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49377273/carolina-panthers-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T17:44:44.000Z",
-      "firstSeen": "2026-08-12T21:31:05.036Z",
-      "bestRank": 7
     },
     {
       "key": "49601462",
@@ -112,50 +783,6 @@
       "bestRank": 1
     },
     {
-      "key": "49447878",
-      "id": "49447878",
-      "headline": "2026 Kansas City Chiefs training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Chiefs training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49447878/kansas-city-chiefs-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T17:29:26.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49410015",
-      "id": "49410015",
-      "headline": "2026 Miami Dolphins training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Dolphins' training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49410015/miami-dolphins-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T17:24:58.000Z",
-      "firstSeen": "2026-08-13T18:36:48.185Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49434454",
-      "id": "49434454",
-      "headline": "2026 Los Angeles Rams training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Rams training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49434454/los-angeles-rams-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T17:23:27.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49434181",
-      "id": "49434181",
-      "headline": "2026 New York Giants training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Giants training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49434181/new-york-giants-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T17:09:04.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 2
-    },
-    {
       "key": "49591552",
       "id": "49591552",
       "headline": "Klint Kubiak has brought his culture and urgency to Raiders",
@@ -178,50 +805,6 @@
       "bestRank": 4
     },
     {
-      "key": "49598413",
-      "id": "49598413",
-      "headline": "Manchester City transfers: Jérémy Doku pens new deal, Tijjani Reinders set to leave",
-      "summary": "Jérémy Doku has become the latest Manchester City player to extend his contract after signing a new five-year deal, the club have confirmed.",
-      "url": "https://www.espn.com/soccer/story/_/id/49598413/manchester-city-transfers-jeremy-doku-pens-new-deal-tijjani-reijnders-set-leave",
-      "sport": "Soccer",
-      "published": "2026-08-13T16:56:23.000Z",
-      "firstSeen": "2026-08-13T12:34:33.413Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49376535",
-      "id": "49376535",
-      "headline": "2026 Dallas Cowboys training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Cowboys training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49376535/dallas-cowboys-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T16:55:17.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49448214",
-      "id": "49448214",
-      "headline": "2026 Indianapolis Colts training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Colts training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49448214/indianapolis-colts-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T16:44:12.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49601110",
-      "id": "49601110",
-      "headline": "Can fantasy managers trust Jalen McMillan to produce as an WR2 this season?",
-      "summary": "Can fantasy managers trust Jalen McMillan to produce as an WR2 this season?",
-      "url": "https://www.espn.com/video/clip/_/id/49601110/can-fantasy-managers-trust-jalen-mcmillan-produce-wr2-season",
-      "sport": "NFL",
-      "published": "2026-08-13T16:43:37.000Z",
-      "firstSeen": "2026-08-13T18:36:48.185Z",
-      "bestRank": 10
-    },
-    {
       "key": "47168192",
       "id": "47168192",
       "headline": "'The Hoop Collective': Episodes of Brian Windhorst's NBA podcast",
@@ -233,37 +816,48 @@
       "bestRank": 1
     },
     {
-      "key": "49376202",
-      "id": "49376202",
-      "headline": "2026 Minnesota Vikings training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Vikings training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49376202/minnesota-vikings-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T16:42:23.000Z",
+      "key": "49554340",
+      "id": "49554340",
+      "headline": "ACC betting preview: New-look Miami's repeat chances, underdogs for the title and more",
+      "summary": "Breaking down the best bets in the ACC conference ahead of the 2026 season, including whether to bet the over on Miami's win total.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/49554340/acc-2026-betting-preview-odds-college-football-playoff",
+      "sport": "College football",
+      "published": "2026-08-13T16:35:26.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49581967",
+      "id": "49581967",
+      "headline": "Big 12 betting preview: Texas Tech might be the best team, but who is the best value?",
+      "summary": "Breaking down the best bets in the Big 12 conference ahead of the 2026 season, including whether to bet on Texas Tech or BYU.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/49581967/big-12-2026-betting-preview-odds-college-football-playoff",
+      "sport": "College football",
+      "published": "2026-08-13T16:34:24.000Z",
+      "firstSeen": "2026-08-12T11:41:48.715Z",
       "bestRank": 1
     },
     {
-      "key": "49427691",
-      "id": "49427691",
-      "headline": "2026 Jacksonville Jaguars training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Jaguars training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49427691/jacksonville-jaguars-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T16:38:50.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 15
+      "key": "49590720",
+      "id": "49590720",
+      "headline": "Big Ten betting preview: Should you bet on Oregon, Ohio State or Indiana to win the conference?",
+      "summary": "Breaking down the best bets in the Big Ten ahead of the 2026 season, including why Oregon is a better bet than Ohio State to win the conference.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/49590720/big-ten-2026-betting-preview-odds-college-football-playoff",
+      "sport": "College football",
+      "published": "2026-08-13T16:33:23.000Z",
+      "firstSeen": "2026-08-13T15:37:22.626Z",
+      "bestRank": 5
     },
     {
-      "key": "49601020",
-      "id": "49601020",
-      "headline": "Should fantasy managers still trust Josh Allen?",
-      "summary": "Should fantasy managers still trust Josh Allen?",
-      "url": "https://www.espn.com/video/clip/_/id/49601020/should-fantasy-managers-trust-josh-allen",
-      "sport": "NFL",
-      "published": "2026-08-13T16:33:34.000Z",
-      "firstSeen": "2026-08-13T18:36:48.185Z",
-      "bestRank": 11
+      "key": "47664633",
+      "id": "47664633",
+      "headline": "2027 College Football Playoff National Championship odds",
+      "summary": "Odds and futures for every team to win the 2027 College Football Playoff National Championship.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/47664633/2027-college-football-playoff-national-championship-odds-futures",
+      "sport": "College football",
+      "published": "2026-08-13T16:27:43.000Z",
+      "firstSeen": "2026-08-13T21:31:43.611Z",
+      "bestRank": 3
     },
     {
       "key": "49600348",
@@ -286,17 +880,6 @@
       "published": "2026-08-13T16:08:59.000Z",
       "firstSeen": "2026-08-13T18:36:48.185Z",
       "bestRank": 19
-    },
-    {
-      "key": "48552599",
-      "id": "48552599",
-      "headline": "2026 fantasy football rankings: PPR leagues",
-      "summary": "Fantasy football rankings for the upcoming season, for PPR leagues, as well as IDP and dynasty setups.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFPreseasonRank26main/fantasy-football-rankings-2026-draft-ppr",
-      "sport": "NFL",
-      "published": "2026-08-13T16:08:38.000Z",
-      "firstSeen": "2026-08-13T18:36:48.185Z",
-      "bestRank": 12
     },
     {
       "key": "49593479",
@@ -332,39 +915,6 @@
       "bestRank": 1
     },
     {
-      "key": "49600204",
-      "id": "49600204",
-      "headline": "Michael Carrick calls for more Man United signings: 'Need to keep pushing'",
-      "summary": "Michael Carrick has said Manchester United \"need\" more signings before the transfer deadline.",
-      "url": "https://www.espn.com/soccer/story/_/id/49600204/michael-carrick-calls-more-man-united-signings-need-keep-pushing",
-      "sport": "Soccer",
-      "published": "2026-08-13T16:00:11.000Z",
-      "firstSeen": "2026-08-13T18:36:48.185Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49427696",
-      "id": "49427696",
-      "headline": "2026 San Francisco 49ers training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from 49ers training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49427696/san-francisco-49ers-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T15:57:29.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49376941",
-      "id": "49376941",
-      "headline": "2026 Green Bay Packers training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Packers training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49376941/green-bay-packers-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T15:55:50.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 12
-    },
-    {
       "key": "49600452",
       "id": "49600452",
       "headline": "Málaga score into empty net after Fulham walk off pitch in preseason friendly",
@@ -374,39 +924,6 @@
       "published": "2026-08-13T15:40:27.000Z",
       "firstSeen": "2026-08-13T18:36:48.185Z",
       "bestRank": 2
-    },
-    {
-      "key": "49600551",
-      "id": "49600551",
-      "headline": "Daniel Dopp predicts Michael Pittman Jr. will have early breakout potential in fantasy",
-      "summary": "Daniel Dopp predicts Michael Pittman Jr. will have early breakout potential in fantasy",
-      "url": "https://www.espn.com/video/clip/_/id/49600551/daniel-dopp-predicts-michael-pittman-jr-early-breakout-potential-fantasy",
-      "sport": "NFL",
-      "published": "2026-08-13T15:39:33.000Z",
-      "firstSeen": "2026-08-13T18:36:48.185Z",
-      "bestRank": 21
-    },
-    {
-      "key": "49448120",
-      "id": "49448120",
-      "headline": "2026 Cincinnati Bengals training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Bengals training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49448120/cincinnati-bengals-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T15:37:05.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 20
-    },
-    {
-      "key": "49599487",
-      "id": "49599487",
-      "headline": "Former referee Anthony Taylor speaks out on reasons for stepping away from English game",
-      "summary": "After 20 years as an English football referee, Anthony Taylor will not be involved at the start of the upcoming season -- he explains what caused him to make such a drastic decision.",
-      "url": "https://www.espn.com/soccer/story/_/id/49599487/former-referee-anthony-taylor-speaks-reasons-stepping-away-english-game",
-      "sport": "Soccer",
-      "published": "2026-08-13T15:33:57.000Z",
-      "firstSeen": "2026-08-13T15:37:22.626Z",
-      "bestRank": 1
     },
     {
       "key": "49598001",
@@ -429,28 +946,6 @@
       "published": "2026-08-13T15:27:31.000Z",
       "firstSeen": "2026-08-12T15:36:55.019Z",
       "bestRank": 3
-    },
-    {
-      "key": "49419756",
-      "id": "49419756",
-      "headline": "2026 New York Jets training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Jets training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49419756/new-york-jets-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T15:23:35.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49449000",
-      "id": "49449000",
-      "headline": "2026 Cleveland Browns training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Browns training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49449000/cleveland-browns-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T15:23:07.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 6
     },
     {
       "key": "49600268",
@@ -495,17 +990,6 @@
       "published": "2026-08-13T15:11:30.000Z",
       "firstSeen": "2026-08-13T15:37:22.626Z",
       "bestRank": 3
-    },
-    {
-      "key": "49448429",
-      "id": "49448429",
-      "headline": "2026 Atlanta Falcons training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Falcons training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49448429/atlanta-falcons-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T15:11:01.000Z",
-      "firstSeen": "2026-08-12T21:31:05.036Z",
-      "bestRank": 2
     },
     {
       "key": "49426382",
@@ -605,17 +1089,6 @@
       "published": "2026-08-13T14:33:00.000Z",
       "firstSeen": "2026-08-13T18:36:48.185Z",
       "bestRank": 4
-    },
-    {
-      "key": "49592083",
-      "id": "49592083",
-      "headline": "FedEx St. Jude Championship 2026 highlights: Best shots and highlights from Thursday",
-      "summary": "Here are the best sights and sounds from the first round of the 2026 FedEx St. Jude Championship at TPC Southwind.",
-      "url": "https://www.espn.com/golf/story/_/id/49592083/fedex-st-jude-championship-2026-first-round-sights-sounds-best-shots",
-      "sport": "Golf",
-      "published": "2026-08-13T14:21:42.000Z",
-      "firstSeen": "2026-08-13T15:37:22.626Z",
-      "bestRank": 1
     },
     {
       "key": "49598742",
@@ -750,17 +1223,6 @@
       "bestRank": 3
     },
     {
-      "key": "49537991",
-      "id": "49537991",
-      "headline": "New Orleans Pelicans offseason recap, early 2026-27 season preview",
-      "summary": "How will the Pelicans look next season after a quiet summer? We're looking back at the offseason and taking an early look at the 2026-27 season.",
-      "url": "https://www.espn.com/nba/story/_/id/49537991/new-orleans-pelicans-2026-27-season-preview-stats-roster",
-      "sport": "NBA",
-      "published": "2026-08-13T12:47:46.000Z",
-      "firstSeen": "2026-08-13T15:37:22.626Z",
-      "bestRank": 3
-    },
-    {
       "key": "49599498",
       "id": "49599498",
       "headline": "Orlovsky: Criticism of Jalen Hurts at training camp is 'outrageous'",
@@ -791,17 +1253,6 @@
       "sport": "MLB",
       "published": "2026-08-13T12:33:49.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49597770",
-      "id": "49597770",
-      "headline": "Transfer rumors, news: Chelsea eye Zubimendi as Enzo Fernández replacement",
-      "summary": "Chelsea could sign Arsenal midfielder Martín Zubimendi if Enzo Fernández joins Manchester City this summer. Transfer Talk has the latest.",
-      "url": "https://www.espn.com/soccer/story/_/id/49597770/transfer-rumors-news-chelsea-eye-arsenal-zubimendi-replace-man-city-target-enzo-fernandez",
-      "sport": "Soccer",
-      "published": "2026-08-13T12:24:17.000Z",
-      "firstSeen": "2026-08-13T09:42:20.516Z",
       "bestRank": 1
     },
     {
@@ -898,7 +1349,7 @@
       "headline": "Diana Taurasi tales: Untold stories about retired WNBA legend",
       "summary": "\"We got Diana\" ... and you don't forget a legend like that. Here's a look at Diana Taurasi from teammates who knew her best.",
       "url": "https://www.espn.com/wnba/story/_/id/41444903/diana-taurasi-retires-wnba-legend-phoenix-mercury-uconn-huskies",
-      "sport": "WNBA",
+      "sport": "Women's college basketball",
       "published": "2026-08-13T11:02:53.000Z",
       "firstSeen": "2026-08-13T15:37:22.626Z",
       "bestRank": 1
@@ -990,17 +1441,6 @@
       "published": "2026-08-13T10:43:57.000Z",
       "firstSeen": "2026-08-13T09:42:20.516Z",
       "bestRank": 8
-    },
-    {
-      "key": "49590720",
-      "id": "49590720",
-      "headline": "Big Ten betting preview: Should you bet on Oregon, Ohio State or Indiana to win the conference?",
-      "summary": "Breaking down the best bets in the Big Ten ahead of the 2026 season, including why Oregon is a better bet than Ohio State to win the conference.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/49590720/big-ten-2026-betting-preview-odds-college-football-playoff",
-      "sport": "College football",
-      "published": "2026-08-13T10:42:11.000Z",
-      "firstSeen": "2026-08-13T15:37:22.626Z",
-      "bestRank": 5
     },
     {
       "key": "49590513",
@@ -1674,17 +2114,6 @@
       "bestRank": 1
     },
     {
-      "key": "49419613",
-      "id": "49419613",
-      "headline": "2026 Tampa Bay Buccaneers training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Buccaneers training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49419613/tampa-bay-buccaneers-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-13T00:38:46.000Z",
-      "firstSeen": "2026-08-13T03:59:55.296Z",
-      "bestRank": 5
-    },
-    {
       "key": "49594822",
       "id": "49594822",
       "headline": "Roman Harper takes fans to defensive back summer school",
@@ -1883,17 +2312,6 @@
       "bestRank": 1
     },
     {
-      "key": "49379469",
-      "id": "49379469",
-      "headline": "2026 Denver Broncos training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Broncos training camp, including intel on the QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49379469/denver-broncos-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-12T22:38:37.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 8
-    },
-    {
       "key": "49593786",
       "id": "49593786",
       "headline": "Allen hits go-ahead sacrifice fly, Houston bullpen allows just a run as Astros beat Giants 2-1",
@@ -1927,28 +2345,6 @@
       "bestRank": 2
     },
     {
-      "key": "49592550",
-      "id": "49592550",
-      "headline": "LeBron, Mitchell lead praise for Russell Westbrook after retirement news",
-      "summary": "The nine-time NBA All-Star announced his retirement Wednesday and received congratulations around the sports world.",
-      "url": "https://www.espn.com/nba/story/_/id/49592550/russell-westbrook-nba-retirement-social-media-reaction-trae-young-donovan-mitchell",
-      "sport": "NBA",
-      "published": "2026-08-12T22:27:01.000Z",
-      "firstSeen": "2026-08-12T21:31:05.036Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49419824",
-      "id": "49419824",
-      "headline": "2026 Tennessee Titans training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Titans training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49419824/tennessee-titans-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-12T22:20:53.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 11
-    },
-    {
       "key": "49593673",
       "id": "49593673",
       "headline": "Who is the best manager in Europe?",
@@ -1969,17 +2365,6 @@
       "published": "2026-08-12T22:15:26.000Z",
       "firstSeen": "2026-08-13T00:40:28.989Z",
       "bestRank": 10
-    },
-    {
-      "key": "49368181",
-      "id": "49368181",
-      "headline": "2026 NFL training camp: Latest news, intel for all 32 teams",
-      "summary": "Get all the latest news, intel and insights on NFL training camps from our team of reporters in the field.",
-      "url": "https://www.espn.com/nfl/story/_/id/49368181/training-camp-2026-latest-news-intel-updates-buzz-all-32-teams",
-      "sport": "NFL",
-      "published": "2026-08-12T22:15:15.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 9
     },
     {
       "key": "49593644",
@@ -2037,23 +2422,12 @@
       "bestRank": 6
     },
     {
-      "key": "49448046",
-      "id": "49448046",
-      "headline": "2026 Washington Commanders training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Commanders training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49448046/washington-commanders-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-12T21:16:08.000Z",
-      "firstSeen": "2026-08-12T21:31:05.036Z",
-      "bestRank": 4
-    },
-    {
       "key": "49593224",
       "id": "49593224",
       "headline": "Reports: Sankey reminds SEC schools to follow eligibility rules",
       "summary": "Commissioner Greg Sankey sent a memo to SEC members reminding them to move carefully when adding players suddenly allowed by court rulings to seek a fifth year of eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49593224/reports-sankey-reminds-sec-schools-follow-eligibility-rules",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-12T21:10:17.000Z",
       "firstSeen": "2026-08-13T03:59:55.296Z",
       "bestRank": 1
@@ -2125,17 +2499,6 @@
       "bestRank": 1
     },
     {
-      "key": "49424731",
-      "id": "49424731",
-      "headline": "2026 New Orleans Saints training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Saints training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49424731/new-orleans-saints-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-12T20:29:07.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 5
-    },
-    {
       "key": "49588359",
       "id": "49588359",
       "headline": "Transfer rumors, news: Tottenham continue interest for USMNT's Balogun",
@@ -2167,17 +2530,6 @@
       "published": "2026-08-12T19:46:54.000Z",
       "firstSeen": "2026-08-13T00:40:28.989Z",
       "bestRank": 2
-    },
-    {
-      "key": "49434567",
-      "id": "49434567",
-      "headline": "2026 Baltimore Ravens training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Ravens training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49434567/baltimore-ravens-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-12T19:41:57.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 7
     },
     {
       "key": "49588771",
@@ -2273,7 +2625,7 @@
       "headline": "Rory: I'd love to give LeBron a golf lesson",
       "summary": "Rory: I'd love to give LeBron a golf lesson",
       "url": "https://www.espn.com/video/clip/_/id/49592244/love-give-lebron-golf-lesson",
-      "sport": "NBA",
+      "sport": "Golf",
       "published": "2026-08-12T19:15:37.000Z",
       "firstSeen": "2026-08-12T21:31:05.036Z",
       "bestRank": 2
@@ -2427,7 +2779,7 @@
       "headline": "Lakers' $12 billion purchase tops record U.S. sports team sales",
       "summary": "The Lakers have been sold for a staggering $12 billion fee. It's a North American sports franchise record. Here are others that sold for big money.",
       "url": "https://www.espn.com/nfl/story/_/id/34060289/most-expensive-sports-franchise-sales",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-08-12T16:33:24.000Z",
       "firstSeen": "2026-08-12T15:36:55.019Z",
       "bestRank": 1
@@ -2486,17 +2838,6 @@
       "published": "2026-08-12T15:37:00.000Z",
       "firstSeen": "2026-08-12T21:31:05.036Z",
       "bestRank": 1
-    },
-    {
-      "key": "40699880",
-      "id": "40699880",
-      "headline": "Fantasy football buzz: More volume for Chase Brown, Denzel Boston turning heads",
-      "summary": "Cameron Wolfe details his latest camp trip to Ohio, with the biggest buzz from the Bengals and Browns.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "sport": "NFL",
-      "published": "2026-08-12T15:26:48.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 2
     },
     {
       "key": "49582276",
@@ -2827,17 +3168,6 @@
       "published": "2026-08-12T11:02:59.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 19
-    },
-    {
-      "key": "49581967",
-      "id": "49581967",
-      "headline": "Big 12 betting preview: Texas Tech might be the best team, but who is the best value?",
-      "summary": "Breaking down the best bets in the Big 12 conference ahead of the 2026 season, including whether to bet on Texas Tech or BYU.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/49581967/big-12-2026-betting-preview-odds-college-football-playoff",
-      "sport": "College football",
-      "published": "2026-08-12T10:45:23.000Z",
-      "firstSeen": "2026-08-12T11:41:48.715Z",
-      "bestRank": 1
     },
     {
       "key": "49576234",
@@ -3335,17 +3665,6 @@
       "bestRank": 34
     },
     {
-      "key": "49425032",
-      "id": "49425032",
-      "headline": "2026 Las Vegas Raiders training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Raiders training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49425032/las-vegas-raiders-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-12T03:12:34.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 9
-    },
-    {
       "key": "49587065",
       "id": "49587065",
       "headline": "Boston Red Sox vs. Toronto Blue Jays: Game Highlight",
@@ -3742,39 +4061,6 @@
       "bestRank": 37
     },
     {
-      "key": "49424976",
-      "id": "49424976",
-      "headline": "2026 Los Angeles Chargers training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Chargers training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49424976/los-angeles-chargers-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-11T20:58:19.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 27
-    },
-    {
-      "key": "49434544",
-      "id": "49434544",
-      "headline": "2026 Buffalo Bills training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Bills training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49434544/buffalo-bills-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-11T20:56:45.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 39
-    },
-    {
-      "key": "49419620",
-      "id": "49419620",
-      "headline": "2026 Detroit Lions training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Lions training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49419620/detroit-lions-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-11T20:49:19.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 29
-    },
-    {
       "key": "49030808",
       "id": "49030808",
       "headline": "Fantasy football sleepers, busts and breakouts for 2026",
@@ -3784,17 +4070,6 @@
       "published": "2026-08-11T20:39:00.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 31
-    },
-    {
-      "key": "49419567",
-      "id": "49419567",
-      "headline": "2026 Houston Texans training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Houston Texans training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49419567/houston-texans-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-11T20:36:48.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 32
     },
     {
       "key": "49584489",
@@ -3817,17 +4092,6 @@
       "published": "2026-08-11T19:58:23.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
-    },
-    {
-      "key": "49434399",
-      "id": "49434399",
-      "headline": "2026 Philadelphia Eagles training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Eagles training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49434399/philadelphia-eagles-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-11T19:56:18.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 45
     },
     {
       "key": "49584268",
@@ -3883,17 +4147,6 @@
       "published": "2026-08-11T19:40:05.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 12
-    },
-    {
-      "key": "49449169",
-      "id": "49449169",
-      "headline": "2026 Pittsburgh Steelers training camp: Latest intel, updates",
-      "summary": "Follow our daily updates from Steelers training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49449169/pittsburgh-steelers-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-11T19:34:35.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 46
     },
     {
       "key": "49584230",
@@ -4050,28 +4303,6 @@
       "bestRank": 9
     },
     {
-      "key": "49481941",
-      "id": "49481941",
-      "headline": "Houston Rockets offseason recap, early 2026-27 season preview",
-      "summary": "Can Kevin Durant, Amen Thompson and others push Houston into the West's upper tier? We're looking back at the offseason and taking an early look at the 2026-27 season.",
-      "url": "https://www.espn.com/nba/story/_/id/49481941/houston-rockets-2026-27-season-preview-stats-roster-kevin-durant-vanvleet-thompson",
-      "sport": "NBA",
-      "published": "2026-08-11T12:46:27.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49574798",
-      "id": "49574798",
-      "headline": "2026-27 NBA season: Under-the-radar concerns for title contenders",
-      "summary": "What hurdles could the top 10 contenders in the NBA face during the 2026-27 season? Our NBA insiders break it down.",
-      "url": "https://www.espn.com/nba/story/_/id/49574798/2026-27-nba-season-radar-concerns-10-title-contenders",
-      "sport": "NBA",
-      "published": "2026-08-11T12:29:00.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 12
-    },
-    {
       "key": "49581314",
       "id": "49581314",
       "headline": "Liverpool supporter group seek clarity amid consortium linked to Jeff Bezos",
@@ -4103,17 +4334,6 @@
       "published": "2026-08-11T11:31:34.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 5
-    },
-    {
-      "key": "49554340",
-      "id": "49554340",
-      "headline": "ACC betting preview: New-look Miami's repeat chances, underdogs for the title and more",
-      "summary": "Breaking down the best bets in the ACC conference ahead of the 2026 season, including whether to bet the over on Miami's win total.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/49554340/acc-2026-betting-preview-odds-college-football-playoff",
-      "sport": "College football",
-      "published": "2026-08-11T10:44:39.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 8
     },
     {
       "key": "49580356",
@@ -4550,7 +4770,7 @@
       "headline": "NCAA and FBI announce partnership to combat athlete sexploitation",
       "summary": "As college athletes become bigger targets for sexual exploitation online, the NCAA and FBI announced a partnership Monday to educate athletes on how to prevent private images from falling into the wrong hands.",
       "url": "https://www.espn.com/college-sports/story/_/id/49555079/ncaa-fbi-announce-partnership-combat-athlete-sexploitation",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-10T17:55:54.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 2
@@ -5496,7 +5716,7 @@
       "headline": "Senate vote on college sports bill now slated for September",
       "summary": "The Protect College Sports Act failed to reach a vote during an all-night, pre-recess session in the Senate, though the bill did gain a spot on next month's calendar after the chamber comes back from its summer break.",
       "url": "https://www.espn.com/college-sports/story/_/id/49560859/senate-vote-college-sports-bill-slated-september",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-08T16:30:20.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
@@ -5749,7 +5969,7 @@
       "headline": "New Purdue AD admits dig at Indiana was immediate error",
       "summary": "New Purdue athletic director Tommy McClelland is owning that an attempted one-liner at the expense of Indiana was a mistake \"the second it left my mouth.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49554744/new-purdue-ad-admits-dig-indiana-was-immediate-error",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-07T18:47:59.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 3
@@ -5848,7 +6068,7 @@
       "headline": "Mrs. Met, Goldy headline inductions into the Mascot Hall of Fame",
       "summary": "The announcement was made Friday morning on \"Good Morning America,\" with the five mascots on site to receive the news.",
       "url": "https://www.espn.com/mlb/story/_/id/49546890/mascot-hall-fame-inductions-class-2026",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-07T15:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 4
@@ -6310,7 +6530,7 @@
       "headline": "NCAA Division II votes to approve age-based eligibility model",
       "summary": "NCAA Division II will move to the age-based eligibility model that has prompted athlete lawsuits across the country since it was adopted in Division I.",
       "url": "https://www.espn.com/college-sports/story/_/id/49545296/ncaa-division-ii-votes-approve-age-based-eligibility-model",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-06T14:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 5
@@ -6442,7 +6662,7 @@
       "headline": "LSU officials meet with top donors about proposed sports funding plan",
       "summary": "LSU has completed a series of two meetings with top donors to outline what university President Wade Rousse has billed as a \"first of its kind\" revenue-generating proposal for athletics.",
       "url": "https://www.espn.com/college-sports/story/_/id/49542287/lsu-officials-meet-top-donors-proposed-sports-funding-plan",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-06T04:29:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 6
@@ -6479,17 +6699,6 @@
       "published": "2026-08-06T03:25:27.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 28
-    },
-    {
-      "key": "47978642",
-      "id": "47978642",
-      "headline": "Messi tracker: Goals, assists, key moments in 2026",
-      "summary": "ESPN provides game-by-game analysis of Lionel Messi's performances for Inter Miami and Argentina.",
-      "url": "https://www.espn.com/soccer/story/_/id/47978642/lionel-messi-2026-tracker-inter-miami-argentina-games-goals-assists-stats",
-      "sport": "Soccer",
-      "published": "2026-08-06T02:52:27.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 22
     },
     {
       "key": "49541870",
@@ -6629,7 +6838,7 @@
       "headline": "Purdue hires longtime AD Tommy McClelland from Rice",
       "summary": "Purdue has hired Rice athletic director Tommy McClelland as athletic director.",
       "url": "https://www.espn.com/college-sports/story/_/id/49525796/tommy-mcclelland-primary-target-purdue-ad-job-sources-say",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-05T16:48:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 9
@@ -6717,7 +6926,7 @@
       "headline": "Pac-12, MWC finalize settlement over 'poaching,' exit fees",
       "summary": "The Pac-12 and Mountain West have finalized a settlement over \"poaching\" and exit fees ahead of a number of former MWC schools heading to the Pac-12.",
       "url": "https://www.espn.com/college-sports/story/_/id/49535459/pac-12-mwc-finalize-settlement-poaching-exit-fees",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-05T11:31:11.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 7
@@ -6838,7 +7047,7 @@
       "headline": "MEAC signs commissioner Sonja Stills to 5-year extension through '31",
       "summary": "The Mid-Eastern Athletic Conference has signed Commissioner Sonja Stills to a five-year contract extension through 2031.",
       "url": "https://www.espn.com/college-sports/story/_/id/49532583/meac-signs-commissioner-sonja-stills-5-year-extension-2031",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-04T23:55:04.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 8
@@ -7476,7 +7685,7 @@
       "headline": "Sources: Former MLB executive Tim Brosnan to head Big East",
       "summary": "The Big East is expected to hire former MLB executive Tim Brosnan as the league's next commissioner, sources told ESPN.",
       "url": "https://www.espn.com/college-sports/story/_/id/49507446/source-former-mlb-executive-tim-brosnan-head-big-east",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-01T22:17:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 10
@@ -7498,7 +7707,7 @@
       "headline": "Judge grants injunction for Class of '22 athletes seeking 5th NCAA season",
       "summary": "A federal court dealt a major blow to the NCAA's new eligibility rule when it ruled that all high school class of 2022 athletes who exhausted their fourth season of college eligibility this spring are eligible for a fifth season in 2026-27.",
       "url": "https://www.espn.com/college-football/story/_/id/49501415/judge-grants-injunction-class-22-athletes-seeking-play-5th-ncaa-season",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-01T12:46:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 12
@@ -7509,7 +7718,7 @@
       "headline": "Big Ten, SEC support college sports bill, reviving Senate chances",
       "summary": "The Big Ten and SEC have agreed to support a Senate bill that seeks to regulate college sports.",
       "url": "https://www.espn.com/college-sports/story/_/id/49501752/big-ten-sec-support-college-sports-bill-reviving-senate-chances",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-01T12:38:24.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 11
@@ -7520,7 +7729,7 @@
       "headline": "FAU hires Josh McCowan as athletic director",
       "summary": "Josh McCowan was hired as Florida Atlantic vice president and athletic director.",
       "url": "https://www.espn.com/college-football/story/_/id/49498431/fau-hires-josh-mccowan-athletic-director-vice-president",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-01T11:04:41.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 13
@@ -7707,21 +7916,10 @@
       "headline": "Senate adjourns without scheduling vote Protect College Sports Act",
       "summary": "The U.S. Senate adjourned for the week Thursday without scheduling a vote for the Protect College Sports Act, a bill aimed at reforming college sports.",
       "url": "https://www.espn.com/college-sports/story/_/id/49491567/senate-adjourns-scheduling-vote-protect-college-sports-act",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-07-30T23:07:59.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 15
-    },
-    {
-      "key": "49491145",
-      "id": "49491145",
-      "headline": "IIHF says Russia still from 4 world tournaments in 2027",
-      "summary": "The International Ice Hockey Federation said Russia will not be allowed to participate in four tournaments next year after a review by the organization's council.",
-      "url": "https://www.espn.com/olympics/hockey/story/_/id/49491145/iihf-says-russia-4-world-tournaments-2027",
-      "sport": "NHL",
-      "published": "2026-07-30T20:38:27.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 7
     }
   ]
 }
