@@ -1,0 +1,119 @@
+{
+  "id": "anz-cities",
+  "name": "Australia and New Zealand: Cities",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "adelaide",
+      "name": "Adelaide",
+      "lat": -34.928,
+      "lon": 138.6,
+      "fact": "Capital of South Australia.",
+      "kind": "city",
+      "x": 856.9,
+      "y": 366.9
+    },
+    {
+      "id": "auckland",
+      "name": "Auckland",
+      "lat": -36.851,
+      "lon": 174.764,
+      "fact": "Largest city of New Zealand.",
+      "kind": "city",
+      "x": 946.7,
+      "y": 373.1
+    },
+    {
+      "id": "brisbane",
+      "name": "Brisbane",
+      "lat": -27.47,
+      "lon": 153.026,
+      "fact": "Capital of Queensland.",
+      "kind": "city",
+      "x": 903.6,
+      "y": 343.2
+    },
+    {
+      "id": "canberra",
+      "name": "Canberra",
+      "lat": -35.281,
+      "lon": 149.129,
+      "fact": "Capital of Australia.",
+      "kind": "city",
+      "x": 883.5,
+      "y": 368.1
+    },
+    {
+      "id": "christchurch",
+      "name": "Christchurch",
+      "lat": -43.532,
+      "lon": 172.636,
+      "fact": "Largest city of the South Island.",
+      "kind": "city",
+      "x": 928.4,
+      "y": 394.2
+    },
+    {
+      "id": "hobart",
+      "name": "Hobart",
+      "lat": -42.882,
+      "lon": 147.327,
+      "fact": "Capital of Tasmania.",
+      "kind": "city",
+      "x": 866.8,
+      "y": 392.1
+    },
+    {
+      "id": "melbourne",
+      "name": "Melbourne",
+      "lat": -37.814,
+      "lon": 144.963,
+      "fact": "Capital of Victoria.",
+      "kind": "city",
+      "x": 869.1,
+      "y": 376.1
+    },
+    {
+      "id": "perth",
+      "name": "Perth",
+      "lat": -31.951,
+      "lon": 115.86,
+      "fact": "Capital of Western Australia.",
+      "kind": "city",
+      "x": 801.4,
+      "y": 357.5
+    },
+    {
+      "id": "port-moresby",
+      "name": "Port Moresby",
+      "lat": -9.444,
+      "lon": 147.18,
+      "fact": "Capital of Papua New Guinea.",
+      "kind": "city",
+      "x": 900.8,
+      "y": 285.9
+    },
+    {
+      "id": "sydney",
+      "name": "Sydney",
+      "lat": -33.869,
+      "lon": 151.209,
+      "fact": "Largest city of Australia.",
+      "kind": "city",
+      "x": 890.8,
+      "y": 363.6
+    },
+    {
+      "id": "wellington",
+      "name": "Wellington",
+      "lat": -41.287,
+      "lon": 174.776,
+      "fact": "Capital of New Zealand.",
+      "kind": "city",
+      "x": 938.4,
+      "y": 387.1
+    }
+  ]
+}

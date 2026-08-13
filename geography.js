@@ -1,4 +1,4 @@
-/** Seterra-style geography quizzes: study, pin, name, type, capitals, flags. */
+/** Geography map quizzes: study, pin, name, type, capitals, flags. */
 
 const PACKS_PATH = "data/geography/packs.json";
 const MAPS = {
@@ -17,19 +17,19 @@ const MAPS = {
   "mls-teams": "data/geography/maps/mls-teams.svg",
 };
 
-/** Seterra’s main game modes are Pin and Type; extras are practice variants. */
+/** Pin and Type are the main map modes; the rest are practice variants. */
 const MODE_META = {
   pin: {
     label: "Pin",
-    blurb: "Find the named place on the map (Seterra’s Pin mode).",
+    blurb: "Find the named place on the map.",
   },
   type: {
     label: "Type",
-    blurb: "Type the name of the highlighted place (Seterra’s Type mode).",
+    blurb: "Type the name of the highlighted place.",
   },
   outline: {
     label: "Outlines",
-    blurb: "Identify the place from its silhouette — like Seterra’s outline quizzes.",
+    blurb: "Identify the place from its silhouette.",
   },
   name: {
     label: "Name",
@@ -61,6 +61,7 @@ const geo = {
   root: null,
   groups: [],
   packs: [],
+  group: null,
   pack: null,
   items: [],
   mapSvg: "",
@@ -136,6 +137,22 @@ const ANSWER_ALIAS_GROUPS = [
   ["saint basil s cathedral", "st basil s cathedral", "st basils"],
   ["leptis magna", "leptis"],
   ["amur heilong jiang", "amur", "heilong jiang"],
+  ["malabo", "ciudad de la paz", "oyala"],
+  ["mbabane", "lobamba"],
+  ["gqeberha port elizabeth", "gqeberha", "port elizabeth"],
+  ["laayoun", "laayoune", "el aaiun", "el aioun"],
+  ["n djamena", "ndjamena"],
+  ["marrakesh", "marrakech"],
+  ["addis ababa", "addis abeba"],
+  ["kyiv", "kiev"],
+  ["chennai madras", "chennai", "madras"],
+  ["kolkata", "calcutta"],
+  ["mumbai", "bombay"],
+  ["ho chi minh city", "saigon", "ho chi minh"],
+  ["beijing", "peking"],
+  ["ulan bator", "ulaanbaatar"],
+  ["turkiye", "turkey"],
+  ["micronesia", "federated states of micronesia", "the federated states of micronesia"],
 ];
 
 function answersMatch(input, expected, { kind } = {}) {
@@ -177,11 +194,12 @@ function remaining() {
 
 function injectFeatureMarkers(svgText, items) {
   let svg = svgText.replace(/\sclass="geo-region[^"]*"/g, ' class="geo-land-bg"');
+  const r = items.length > 40 ? 5 : 7;
   const markers = items
     .filter((it) => Number.isFinite(it.x) && Number.isFinite(it.y))
     .map((it) => {
       const kind = it.kind ? ` geo-marker-${it.kind}` : "";
-      return `<circle id="${it.id}" data-id="${it.id}" class="geo-region geo-marker${kind}" cx="${it.x}" cy="${it.y}" r="7"/>`;
+      return `<circle id="${it.id}" data-id="${it.id}" class="geo-region geo-marker${kind}" cx="${it.x}" cy="${it.y}" r="${r}"/>`;
     })
     .join("\n  ");
   return svg.replace(/<\/svg>\s*$/i, `  ${markers}\n</svg>`);
@@ -748,10 +766,16 @@ function choiceButtons(choices) {
 function promptForMode(item) {
   const mode = geo.mode;
   const kind = quizKind();
-  if (mode === "pin") return `Find <strong>${escapeHtml(item.name)}</strong> on the map.`;
+  if (mode === "pin") {
+    if (kind === "capitals" && item.capital) {
+      return `Find <strong>${escapeHtml(item.capital)}</strong> on the map.`;
+    }
+    return `Find <strong>${escapeHtml(item.name)}</strong> on the map.`;
+  }
   if (mode === "outline") return `What place is this outline?`;
   if (mode === "name") {
     if (isOutlineView()) return `What place is this outline?`;
+    if (kind === "capitals") return `What is the capital of the highlighted country?`;
     return `What is the highlighted place called?`;
   }
   if (mode === "capitals")
@@ -795,7 +819,12 @@ function expectedAnswer(item) {
   if (mode === "abbr") {
     return geo._abbrAskName ? item.abbr : item.name;
   }
-  if ((mode === "type" || mode === "choice") && kind === "capitals") return item.capital;
+  if (
+    (mode === "type" || mode === "choice" || mode === "name") &&
+    kind === "capitals"
+  ) {
+    return item.capital;
+  }
   if (mode === "reverse" || kind === "flags") return item.name;
   return item.name;
 }
@@ -806,7 +835,10 @@ function buildChoices(item) {
   let correct = expectedAnswer(item);
   let poolKeys;
 
-  if (mode === "capitals" || (mode === "choice" && kind === "capitals")) {
+  if (
+    mode === "capitals" ||
+    ((mode === "choice" || mode === "name") && kind === "capitals")
+  ) {
     poolKeys = geo.items.map((i) => i.capital).filter(Boolean);
     correct = item.capital;
   } else if (mode === "abbr") {
@@ -827,6 +859,24 @@ function buildChoices(item) {
   return shuffle([correct, ...distractors]);
 }
 
+function packById(id) {
+  return (
+    (geo.group?.packs || []).find((p) => p.id === id) ||
+    geo.packs.find((p) => p.id === id) ||
+    null
+  );
+}
+
+function continentCardHtml(g) {
+  const n = (g.packs || []).length;
+  return `
+    <button type="button" class="geo-continent-card" data-group="${escapeHtml(g.id)}">
+      <h3>${escapeHtml(g.name)}</h3>
+      <p>${escapeHtml(g.blurb || "Map quizzes by region.")}</p>
+      <span class="meta">${n} quiz${n === 1 ? "" : "zes"}</span>
+    </button>`;
+}
+
 function packCardHtml(p) {
   return `
     <button type="button" class="geo-pack-card" data-pack="${escapeHtml(p.id)}">
@@ -839,31 +889,76 @@ function packCardHtml(p) {
 }
 
 function renderHub() {
-  const groups =
-    geo.groups.length > 0
-      ? geo.groups
-      : [{ id: "all", name: "Quizzes", packs: geo.packs }];
+  geo.group = null;
+  geo.pack = null;
+  geo.mode = null;
   geo.root.innerHTML = `
     <div class="geo-shell">
       <div class="geo-head">
         <div>
           <h2 class="section-title">Geography</h2>
-          <p class="lede">Seterra-style map quizzes by region — <strong>Pin</strong> and <strong>Type</strong> first, plus capitals and flags.</p>
+          <p class="lede">Choose a continent, then a quiz — <strong>Pin</strong> the map or <strong>Type</strong> the name.</p>
         </div>
       </div>
-      ${groups
-        .map(
-          (g) => `
-        <section class="geo-group">
-          <h3 class="geo-group-title">${escapeHtml(g.name)}</h3>
-          <div class="geo-pack-grid">
-            ${(g.packs || []).map(packCardHtml).join("")}
-          </div>
-        </section>`
-        )
+      <div class="geo-continent-grid">
+        ${geo.groups.map(continentCardHtml).join("")}
+      </div>
+    </div>`;
+
+  geo.root.querySelectorAll(".geo-continent-card").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      geo.group = geo.groups.find((g) => g.id === btn.dataset.group) || null;
+      renderGroup();
+    });
+  });
+}
+
+function renderGroup() {
+  const g = geo.group;
+  if (!g) {
+    renderHub();
+    return;
+  }
+  const sections =
+    g.sections?.length > 0
+      ? g.sections
+      : [{ name: "Quizzes", packIds: (g.packs || []).map((p) => p.id) }];
+  geo.root.innerHTML = `
+    <div class="geo-shell">
+      <div class="geo-head">
+        <div>
+          <p class="speech-kicker">Geography</p>
+          <h2 class="section-title">${escapeHtml(g.name)}</h2>
+          <p class="lede">${escapeHtml(g.blurb || "Map quizzes by region.")}</p>
+        </div>
+        <button type="button" class="secondary-btn" id="geo-back-continents">All continents</button>
+      </div>
+      ${sections
+        .map((sec) => {
+          const packs = (sec.packIds || [])
+            .map((id) => (g.packs || []).find((p) => p.id === id) || packById(id))
+            .filter(Boolean);
+          if (!packs.length) return "";
+          return `
+            <section class="geo-group">
+              <h3 class="geo-group-title">${escapeHtml(sec.name)}</h3>
+              ${
+                sec.blurb
+                  ? `<p class="geo-section-lede">${escapeHtml(sec.blurb)}</p>`
+                  : ""
+              }
+              <div class="geo-pack-grid">
+                ${packs.map(packCardHtml).join("")}
+              </div>
+            </section>`;
+        })
         .join("")}
     </div>`;
 
+  geo.root.querySelector("#geo-back-continents")?.addEventListener("click", () => {
+    geo.group = null;
+    renderHub();
+  });
   geo.root.querySelectorAll(".geo-pack-card").forEach((btn) => {
     btn.addEventListener("click", () => void openPack(btn.dataset.pack));
   });
@@ -879,7 +974,9 @@ function renderPackModes() {
           <h2 class="section-title">${escapeHtml(pack.name)}</h2>
           <p class="lede">${escapeHtml(pack.blurb || "")}</p>
         </div>
-        <button type="button" class="secondary-btn" id="geo-back-hub">All packs</button>
+        <button type="button" class="secondary-btn" id="geo-back-hub">${
+          geo.group ? `Back to ${escapeHtml(geo.group.name)}` : "All continents"
+        }</button>
       </div>
       <div class="geo-mode-grid">
         ${(pack.modes || [])
@@ -912,7 +1009,8 @@ function renderPackModes() {
     geo.pack = null;
     geo.mode = null;
     geo._packViewBox = null;
-    renderHub();
+    if (geo.group) renderGroup();
+    else renderHub();
   });
   geo.root.querySelectorAll(".geo-mode-card").forEach((btn) => {
     btn.addEventListener("click", () => startMode(btn.dataset.mode));
@@ -921,7 +1019,9 @@ function renderPackModes() {
 
 function startMode(mode) {
   geo.mode = mode;
-  geo.queue = mode === "study" ? [...geo.items] : shuffle(geo.items);
+  const pool =
+    mode === "capitals" ? geo.items.filter((i) => i.capital) : geo.items;
+  geo.queue = mode === "study" ? [...geo.items] : shuffle(pool);
   geo.index = 0;
   geo.correct = 0;
   geo.wrong = 0;
@@ -1203,7 +1303,9 @@ function renderDone() {
         <div class="setup-actions">
           <button type="button" class="primary-btn" id="geo-again">Quiz again</button>
           <button type="button" class="secondary-btn" id="geo-to-modes">Back to modes</button>
-          <button type="button" class="secondary-btn" id="geo-to-hub">All packs</button>
+          <button type="button" class="secondary-btn" id="geo-to-hub">${
+            geo.group ? `Back to ${escapeHtml(geo.group.name)}` : "All continents"
+          }</button>
         </div>
       </div>
     </div>`;
@@ -1217,12 +1319,13 @@ function renderDone() {
   geo.root.querySelector("#geo-to-hub")?.addEventListener("click", () => {
     geo.pack = null;
     geo.mode = null;
-    renderHub();
+    if (geo.group) renderGroup();
+    else renderHub();
   });
 }
 
 async function openPack(packId) {
-  const meta = geo.packs.find((p) => p.id === packId);
+  const meta = packById(packId);
   if (!meta) return;
   try {
     await loadPack(meta);
@@ -1233,6 +1336,7 @@ async function openPack(packId) {
 }
 
 export function cleanupGeography() {
+  geo.group = null;
   geo.pack = null;
   geo.mode = null;
   geo.queue = [];
@@ -1259,7 +1363,7 @@ export async function renderGeography({ els }) {
 
 /** Used by app back navigation — true if inside a pack/mode. */
 export function geographyCanGoBack() {
-  return Boolean(geo.pack);
+  return Boolean(geo.pack || geo.group);
 }
 
 export function geographyGoBack() {
@@ -1270,6 +1374,12 @@ export function geographyGoBack() {
   }
   if (geo.pack) {
     geo.pack = null;
+    if (geo.group) renderGroup();
+    else renderHub();
+    return true;
+  }
+  if (geo.group) {
+    geo.group = null;
     renderHub();
     return true;
   }

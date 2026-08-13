@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Seterra-style physical features, waterways, and landmarks on the Natural Earth world map.
+ * Physical features, waterways, and landmarks on the Natural Earth world map.
  *
  *   node scripts/build-geography-features.mjs
  *

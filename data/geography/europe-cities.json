@@ -1,0 +1,399 @@
+{
+  "id": "europe-cities",
+  "name": "Europe: Cities",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "amsterdam",
+      "name": "Amsterdam",
+      "lat": 52.367,
+      "lon": 4.9,
+      "fact": "Capital of the Netherlands.",
+      "kind": "city",
+      "x": 511.6,
+      "y": 90.6
+    },
+    {
+      "id": "athens",
+      "name": "Athens",
+      "lat": 37.984,
+      "lon": 23.728,
+      "fact": "Capital of Greece.",
+      "kind": "city",
+      "x": 560.4,
+      "y": 135.4
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "lat": 41.387,
+      "lon": 2.168,
+      "fact": "Largest city of Catalonia, Spain.",
+      "kind": "city",
+      "x": 505.4,
+      "y": 124.6
+    },
+    {
+      "id": "belfast",
+      "name": "Belfast",
+      "lat": 54.597,
+      "lon": -5.93,
+      "fact": "Capital of Northern Ireland.",
+      "kind": "city",
+      "x": 486.2,
+      "y": 83.9
+    },
+    {
+      "id": "belgrade",
+      "name": "Belgrade",
+      "lat": 44.817,
+      "lon": 20.457,
+      "fact": "Capital of Serbia.",
+      "kind": "city",
+      "x": 550.4,
+      "y": 113.9
+    },
+    {
+      "id": "berlin",
+      "name": "Berlin",
+      "lat": 52.52,
+      "lon": 13.405,
+      "fact": "Capital of Germany.",
+      "kind": "city",
+      "x": 531.6,
+      "y": 90.2
+    },
+    {
+      "id": "bern",
+      "name": "Bern",
+      "lat": 46.948,
+      "lon": 7.447,
+      "fact": "Capital of Switzerland.",
+      "kind": "city",
+      "x": 518.2,
+      "y": 107.3
+    },
+    {
+      "id": "birmingham",
+      "name": "Birmingham",
+      "lat": 52.486,
+      "lon": -1.89,
+      "fact": "Second-largest city of the United Kingdom.",
+      "kind": "city",
+      "x": 495.5,
+      "y": 90.3
+    },
+    {
+      "id": "brussels",
+      "name": "Brussels",
+      "lat": 50.85,
+      "lon": 4.351,
+      "fact": "Capital of Belgium and seat of the EU.",
+      "kind": "city",
+      "x": 510.4,
+      "y": 95.2
+    },
+    {
+      "id": "bucharest",
+      "name": "Bucharest",
+      "lat": 44.426,
+      "lon": 26.103,
+      "fact": "Capital of Romania.",
+      "kind": "city",
+      "x": 564.5,
+      "y": 115.1
+    },
+    {
+      "id": "budapest",
+      "name": "Budapest",
+      "lat": 47.498,
+      "lon": 19.04,
+      "fact": "Capital of Hungary.",
+      "kind": "city",
+      "x": 546.3,
+      "y": 105.5
+    },
+    {
+      "id": "copenhagen",
+      "name": "Copenhagen",
+      "lat": 55.676,
+      "lon": 12.568,
+      "fact": "Capital of Denmark.",
+      "kind": "city",
+      "x": 529,
+      "y": 80.7
+    },
+    {
+      "id": "dublin",
+      "name": "Dublin",
+      "lat": 53.35,
+      "lon": -6.26,
+      "fact": "Capital of Ireland.",
+      "kind": "city",
+      "x": 485.3,
+      "y": 87.7
+    },
+    {
+      "id": "frankfurt",
+      "name": "Frankfurt",
+      "lat": 50.11,
+      "lon": 8.682,
+      "fact": "Financial hub of Germany.",
+      "kind": "city",
+      "x": 520.8,
+      "y": 97.5
+    },
+    {
+      "id": "glasgow",
+      "name": "Glasgow",
+      "lat": 55.864,
+      "lon": -4.252,
+      "fact": "Largest city of Scotland.",
+      "kind": "city",
+      "x": 490.2,
+      "y": 80.2
+    },
+    {
+      "id": "hamburg",
+      "name": "Hamburg",
+      "lat": 53.551,
+      "lon": 9.993,
+      "fact": "Germany’s largest port city.",
+      "kind": "city",
+      "x": 523.4,
+      "y": 87.1
+    },
+    {
+      "id": "helsinki",
+      "name": "Helsinki",
+      "lat": 60.169,
+      "lon": 24.938,
+      "fact": "Capital of Finland.",
+      "kind": "city",
+      "x": 555.8,
+      "y": 67.6
+    },
+    {
+      "id": "istanbul",
+      "name": "Istanbul",
+      "lat": 41.009,
+      "lon": 28.978,
+      "fact": "Largest city of Türkiye, on two continents.",
+      "kind": "city",
+      "x": 572.8,
+      "y": 125.8
+    },
+    {
+      "id": "kyiv",
+      "name": "Kyiv",
+      "lat": 50.45,
+      "lon": 30.523,
+      "fact": "Capital of Ukraine.",
+      "kind": "city",
+      "x": 572.9,
+      "y": 96.5
+    },
+    {
+      "id": "lisbon",
+      "name": "Lisbon",
+      "lat": 38.722,
+      "lon": -9.139,
+      "fact": "Capital of Portugal.",
+      "kind": "city",
+      "x": 476.8,
+      "y": 133.1
+    },
+    {
+      "id": "london",
+      "name": "London",
+      "lat": 51.507,
+      "lon": -0.128,
+      "fact": "Capital of the United Kingdom.",
+      "kind": "city",
+      "x": 499.7,
+      "y": 93.2
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "lat": 45.764,
+      "lon": 4.836,
+      "fact": "Third-largest city of France.",
+      "kind": "city",
+      "x": 511.9,
+      "y": 110.9
+    },
+    {
+      "id": "madrid",
+      "name": "Madrid",
+      "lat": 40.417,
+      "lon": -3.704,
+      "fact": "Capital of Spain.",
+      "kind": "city",
+      "x": 490.7,
+      "y": 127.7
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "lat": 43.296,
+      "lon": 5.37,
+      "fact": "Largest port city of France.",
+      "kind": "city",
+      "x": 513.3,
+      "y": 118.6
+    },
+    {
+      "id": "milan",
+      "name": "Milan",
+      "lat": 45.464,
+      "lon": 9.19,
+      "fact": "Financial capital of Italy.",
+      "kind": "city",
+      "x": 522.6,
+      "y": 111.9
+    },
+    {
+      "id": "minsk",
+      "name": "Minsk",
+      "lat": 53.9,
+      "lon": 27.567,
+      "fact": "Capital of Belarus.",
+      "kind": "city",
+      "x": 564.5,
+      "y": 86
+    },
+    {
+      "id": "munich",
+      "name": "Munich",
+      "lat": 48.135,
+      "lon": 11.582,
+      "fact": "Capital of Bavaria, Germany.",
+      "kind": "city",
+      "x": 528.1,
+      "y": 103.6
+    },
+    {
+      "id": "naples",
+      "name": "Naples",
+      "lat": 40.852,
+      "lon": 14.268,
+      "fact": "Largest city of southern Italy.",
+      "kind": "city",
+      "x": 535.9,
+      "y": 126.3
+    },
+    {
+      "id": "oslo",
+      "name": "Oslo",
+      "lat": 59.913,
+      "lon": 10.752,
+      "fact": "Capital of Norway.",
+      "kind": "city",
+      "x": 524.1,
+      "y": 68.3
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "lat": 48.857,
+      "lon": 2.352,
+      "fact": "Capital of France.",
+      "kind": "city",
+      "x": 505.7,
+      "y": 101.4
+    },
+    {
+      "id": "prague",
+      "name": "Prague",
+      "lat": 50.075,
+      "lon": 14.438,
+      "fact": "Capital of Czechia.",
+      "kind": "city",
+      "x": 534.6,
+      "y": 97.6
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "lat": 41.903,
+      "lon": 12.496,
+      "fact": "Capital of Italy.",
+      "kind": "city",
+      "x": 531.3,
+      "y": 123
+    },
+    {
+      "id": "sarajevo",
+      "name": "Sarajevo",
+      "lat": 43.856,
+      "lon": 18.413,
+      "fact": "Capital of Bosnia and Herzegovina.",
+      "kind": "city",
+      "x": 545.6,
+      "y": 116.9
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "lat": 42.698,
+      "lon": 23.322,
+      "fact": "Capital of Bulgaria.",
+      "kind": "city",
+      "x": 558.1,
+      "y": 120.5
+    },
+    {
+      "id": "stockholm",
+      "name": "Stockholm",
+      "lat": 59.329,
+      "lon": 18.069,
+      "fact": "Capital of Sweden.",
+      "kind": "city",
+      "x": 540.7,
+      "y": 70
+    },
+    {
+      "id": "thessaloniki",
+      "name": "Thessaloniki",
+      "lat": 40.64,
+      "lon": 22.945,
+      "fact": "Second-largest city of Greece.",
+      "kind": "city",
+      "x": 557.7,
+      "y": 127
+    },
+    {
+      "id": "vienna",
+      "name": "Vienna",
+      "lat": 48.208,
+      "lon": 16.374,
+      "fact": "Capital of Austria.",
+      "kind": "city",
+      "x": 539.6,
+      "y": 103.4
+    },
+    {
+      "id": "warsaw",
+      "name": "Warsaw",
+      "lat": 52.23,
+      "lon": 21.012,
+      "fact": "Capital of Poland.",
+      "kind": "city",
+      "x": 549.7,
+      "y": 91.1
+    },
+    {
+      "id": "zurich",
+      "name": "Zurich",
+      "lat": 47.376,
+      "lon": 8.541,
+      "fact": "Largest city of Switzerland.",
+      "kind": "city",
+      "x": 520.8,
+      "y": 105.9
+    }
+  ]
+}

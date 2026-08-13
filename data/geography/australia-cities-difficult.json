@@ -1,0 +1,509 @@
+{
+  "id": "australia-cities-difficult",
+  "name": "Australia: Cities (Difficult Version)",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "adelaide",
+      "name": "Adelaide",
+      "lat": -34.928,
+      "lon": 138.6,
+      "fact": "Capital of South Australia.",
+      "kind": "city",
+      "x": 856.9,
+      "y": 366.9
+    },
+    {
+      "id": "albany-au",
+      "name": "Albany",
+      "lat": -35.027,
+      "lon": 117.884,
+      "fact": "City on Western Australia’s south coast.",
+      "kind": "city",
+      "x": 803.4,
+      "y": 367.3
+    },
+    {
+      "id": "alice-springs",
+      "name": "Alice Springs",
+      "lat": -23.698,
+      "lon": 133.881,
+      "fact": "Town in the Australian desert.",
+      "kind": "city",
+      "x": 856.5,
+      "y": 331.2
+    },
+    {
+      "id": "ballarat",
+      "name": "Ballarat",
+      "lat": -37.562,
+      "lon": 143.85,
+      "fact": "Gold-rush city in Victoria.",
+      "kind": "city",
+      "x": 866.6,
+      "y": 375.3
+    },
+    {
+      "id": "bamaga",
+      "name": "Bamaga",
+      "lat": -10.891,
+      "lon": 142.389,
+      "fact": "Town at the tip of Cape York.",
+      "kind": "city",
+      "x": 887.3,
+      "y": 290.5
+    },
+    {
+      "id": "bendigo",
+      "name": "Bendigo",
+      "lat": -36.757,
+      "lon": 144.28,
+      "fact": "Inland city in Victoria.",
+      "kind": "city",
+      "x": 868.9,
+      "y": 372.8
+    },
+    {
+      "id": "bourke",
+      "name": "Bourke",
+      "lat": -30.09,
+      "lon": 145.939,
+      "fact": "Outback town in New South Wales.",
+      "kind": "city",
+      "x": 881.9,
+      "y": 351.5
+    },
+    {
+      "id": "brisbane",
+      "name": "Brisbane",
+      "lat": -27.47,
+      "lon": 153.026,
+      "fact": "Capital of Queensland.",
+      "kind": "city",
+      "x": 903.6,
+      "y": 343.2
+    },
+    {
+      "id": "broken-hill",
+      "name": "Broken Hill",
+      "lat": -31.956,
+      "lon": 141.465,
+      "fact": "Mining city in far-west NSW.",
+      "kind": "city",
+      "x": 868,
+      "y": 357.5
+    },
+    {
+      "id": "broome",
+      "name": "Broome",
+      "lat": -17.962,
+      "lon": 122.236,
+      "fact": "Kimberley port in Western Australia.",
+      "kind": "city",
+      "x": 829.3,
+      "y": 312.9
+    },
+    {
+      "id": "bunbury",
+      "name": "Bunbury",
+      "lat": -33.327,
+      "lon": 115.637,
+      "fact": "City south of Perth.",
+      "kind": "city",
+      "x": 799.5,
+      "y": 361.9
+    },
+    {
+      "id": "cairns",
+      "name": "Cairns",
+      "lat": -16.92,
+      "lon": 145.771,
+      "fact": "Gateway to the Great Barrier Reef.",
+      "kind": "city",
+      "x": 893.3,
+      "y": 309.6
+    },
+    {
+      "id": "canberra",
+      "name": "Canberra",
+      "lat": -35.281,
+      "lon": 149.129,
+      "fact": "Capital of Australia.",
+      "kind": "city",
+      "x": 883.5,
+      "y": 368.1
+    },
+    {
+      "id": "coffs",
+      "name": "Coffs Harbour",
+      "lat": -30.296,
+      "lon": 153.118,
+      "fact": "Coastal city in northern NSW.",
+      "kind": "city",
+      "x": 900.5,
+      "y": 352.2
+    },
+    {
+      "id": "coober-pedy",
+      "name": "Coober Pedy",
+      "lat": -29.014,
+      "lon": 134.755,
+      "fact": "Opal-mining town in South Australia.",
+      "kind": "city",
+      "x": 853.8,
+      "y": 348.1
+    },
+    {
+      "id": "cooktown",
+      "name": "Cooktown",
+      "lat": -15.473,
+      "lon": 145.25,
+      "fact": "Far-north Queensland town.",
+      "kind": "city",
+      "x": 892.8,
+      "y": 305
+    },
+    {
+      "id": "darwin",
+      "name": "Darwin",
+      "lat": -12.464,
+      "lon": 130.842,
+      "fact": "Capital of the Northern Territory.",
+      "kind": "city",
+      "x": 855.2,
+      "y": 295.5
+    },
+    {
+      "id": "derby-au",
+      "name": "Derby",
+      "lat": -17.309,
+      "lon": 123.636,
+      "fact": "Kimberley town in Western Australia.",
+      "kind": "city",
+      "x": 833.4,
+      "y": 310.9
+    },
+    {
+      "id": "devonport",
+      "name": "Devonport",
+      "lat": -41.18,
+      "lon": 146.351,
+      "fact": "Port city in northern Tasmania.",
+      "kind": "city",
+      "x": 867.3,
+      "y": 386.8
+    },
+    {
+      "id": "dubbo",
+      "name": "Dubbo",
+      "lat": -32.257,
+      "lon": 148.601,
+      "fact": "Inland city in New South Wales.",
+      "kind": "city",
+      "x": 886.2,
+      "y": 358.4
+    },
+    {
+      "id": "esperance",
+      "name": "Esperance",
+      "lat": -33.861,
+      "lon": 121.891,
+      "fact": "Coastal town in southern WA.",
+      "kind": "city",
+      "x": 815.1,
+      "y": 363.6
+    },
+    {
+      "id": "exmouth",
+      "name": "Exmouth",
+      "lat": -21.931,
+      "lon": 114.124,
+      "fact": "Town on Western Australia’s North West Cape.",
+      "kind": "city",
+      "x": 805.1,
+      "y": 325.6
+    },
+    {
+      "id": "geelong",
+      "name": "Geelong",
+      "lat": -38.15,
+      "lon": 144.36,
+      "fact": "Second-largest city of Victoria.",
+      "kind": "city",
+      "x": 867.1,
+      "y": 377.2
+    },
+    {
+      "id": "geraldton",
+      "name": "Geraldton",
+      "lat": -28.778,
+      "lon": 114.615,
+      "fact": "Mid-west city of Western Australia.",
+      "kind": "city",
+      "x": 801.1,
+      "y": 347.4
+    },
+    {
+      "id": "gladstone",
+      "name": "Gladstone",
+      "lat": -23.843,
+      "lon": 151.256,
+      "fact": "Industrial port in Queensland.",
+      "kind": "city",
+      "x": 902.6,
+      "y": 331.6
+    },
+    {
+      "id": "gold-coast",
+      "name": "Gold Coast",
+      "lat": -28.017,
+      "lon": 153.4,
+      "fact": "Resort city south of Brisbane.",
+      "kind": "city",
+      "x": 903.9,
+      "y": 344.9
+    },
+    {
+      "id": "hobart",
+      "name": "Hobart",
+      "lat": -42.882,
+      "lon": 147.327,
+      "fact": "Capital of Tasmania.",
+      "kind": "city",
+      "x": 866.8,
+      "y": 392.1
+    },
+    {
+      "id": "kalgoorlie",
+      "name": "Kalgoorlie-Boulder",
+      "lat": -30.749,
+      "lon": 121.466,
+      "fact": "Goldfields city in Western Australia.",
+      "kind": "city",
+      "x": 817.2,
+      "y": 353.6
+    },
+    {
+      "id": "katherine",
+      "name": "Katherine",
+      "lat": -14.465,
+      "lon": 132.264,
+      "fact": "Town in the Northern Territory.",
+      "kind": "city",
+      "x": 858.2,
+      "y": 301.8
+    },
+    {
+      "id": "launceston",
+      "name": "Launceston",
+      "lat": -41.433,
+      "lon": 147.144,
+      "fact": "Second-largest city of Tasmania.",
+      "kind": "city",
+      "x": 868.8,
+      "y": 387.6
+    },
+    {
+      "id": "longreach",
+      "name": "Longreach",
+      "lat": -23.442,
+      "lon": 144.249,
+      "fact": "Outback town in western Queensland.",
+      "kind": "city",
+      "x": 884.3,
+      "y": 330.4
+    },
+    {
+      "id": "mackay",
+      "name": "Mackay",
+      "lat": -21.143,
+      "lon": 149.182,
+      "fact": "Sugar-port city in Queensland.",
+      "kind": "city",
+      "x": 899.4,
+      "y": 323
+    },
+    {
+      "id": "melbourne",
+      "name": "Melbourne",
+      "lat": -37.814,
+      "lon": 144.963,
+      "fact": "Capital of Victoria.",
+      "kind": "city",
+      "x": 869.1,
+      "y": 376.1
+    },
+    {
+      "id": "mount-gambier",
+      "name": "Mount Gambier",
+      "lat": -37.829,
+      "lon": 140.783,
+      "fact": "City in southeast South Australia.",
+      "kind": "city",
+      "x": 858.4,
+      "y": 376.2
+    },
+    {
+      "id": "mount-isa",
+      "name": "Mount Isa",
+      "lat": -20.725,
+      "lon": 139.497,
+      "fact": "Mining city in northwest Queensland.",
+      "kind": "city",
+      "x": 873.8,
+      "y": 321.7
+    },
+    {
+      "id": "newcastle-au",
+      "name": "Newcastle",
+      "lat": -32.928,
+      "lon": 151.781,
+      "fact": "Coastal city north of Sydney.",
+      "kind": "city",
+      "x": 893.6,
+      "y": 360.6
+    },
+    {
+      "id": "normanton",
+      "name": "Normanton",
+      "lat": -17.672,
+      "lon": 141.077,
+      "fact": "Gulf Country town in Queensland.",
+      "kind": "city",
+      "x": 880.2,
+      "y": 312
+    },
+    {
+      "id": "perth",
+      "name": "Perth",
+      "lat": -31.951,
+      "lon": 115.86,
+      "fact": "Capital of Western Australia.",
+      "kind": "city",
+      "x": 801.4,
+      "y": 357.5
+    },
+    {
+      "id": "port-augusta",
+      "name": "Port Augusta",
+      "lat": -32.493,
+      "lon": 137.763,
+      "fact": "City at the head of Spencer Gulf.",
+      "kind": "city",
+      "x": 857.8,
+      "y": 359.2
+    },
+    {
+      "id": "port-hedland",
+      "name": "Port Hedland",
+      "lat": -20.311,
+      "lon": 118.601,
+      "fact": "Pilbara port in Western Australia.",
+      "kind": "city",
+      "x": 818.1,
+      "y": 320.4
+    },
+    {
+      "id": "port-lincoln",
+      "name": "Port Lincoln",
+      "lat": -34.724,
+      "lon": 135.858,
+      "fact": "Fishing port on the Eyre Peninsula.",
+      "kind": "city",
+      "x": 850.1,
+      "y": 366.3
+    },
+    {
+      "id": "rockhampton",
+      "name": "Rockhampton",
+      "lat": -23.378,
+      "lon": 150.51,
+      "fact": "City on the Fitzroy River, Queensland.",
+      "kind": "city",
+      "x": 901,
+      "y": 330.2
+    },
+    {
+      "id": "sunshine-coast",
+      "name": "Sunshine Coast",
+      "lat": -26.65,
+      "lon": 153.067,
+      "fact": "Coastal urban area north of Brisbane.",
+      "kind": "city",
+      "x": 904.6,
+      "y": 340.6
+    },
+    {
+      "id": "sydney",
+      "name": "Sydney",
+      "lat": -33.869,
+      "lon": 151.209,
+      "fact": "Largest city of Australia.",
+      "kind": "city",
+      "x": 890.8,
+      "y": 363.6
+    },
+    {
+      "id": "tennant-creek",
+      "name": "Tennant Creek",
+      "lat": -19.65,
+      "lon": 134.191,
+      "fact": "Town on the Stuart Highway.",
+      "kind": "city",
+      "x": 860.4,
+      "y": 318.3
+    },
+    {
+      "id": "townsville",
+      "name": "Townsville",
+      "lat": -19.259,
+      "lon": 146.817,
+      "fact": "City on Queensland’s northeast coast.",
+      "kind": "city",
+      "x": 894.5,
+      "y": 317.1
+    },
+    {
+      "id": "wagga",
+      "name": "Wagga Wagga",
+      "lat": -35.108,
+      "lon": 147.36,
+      "fact": "Largest inland city of New South Wales.",
+      "kind": "city",
+      "x": 879.2,
+      "y": 367.5
+    },
+    {
+      "id": "weipa",
+      "name": "Weipa",
+      "lat": -12.66,
+      "lon": 141.847,
+      "fact": "Bauxite town on Cape York.",
+      "kind": "city",
+      "x": 885,
+      "y": 296.1
+    },
+    {
+      "id": "wollongong",
+      "name": "Wollongong",
+      "lat": -34.425,
+      "lon": 150.893,
+      "fact": "Coastal city south of Sydney.",
+      "kind": "city",
+      "x": 889.2,
+      "y": 365.3
+    },
+    {
+      "id": "wyndham",
+      "name": "Wyndham",
+      "lat": -15.487,
+      "lon": 128.123,
+      "fact": "Northernmost town of Western Australia.",
+      "kind": "city",
+      "x": 846.5,
+      "y": 305.1
+    }
+  ]
+}

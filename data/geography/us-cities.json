@@ -1,0 +1,539 @@
+{
+  "id": "us-cities",
+  "name": "The U.S.: Cities",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "albuquerque",
+      "name": "Albuquerque",
+      "lat": 35.084,
+      "lon": -106.651,
+      "fact": "Largest city of New Mexico.",
+      "kind": "city",
+      "x": 225.6,
+      "y": 144.6
+    },
+    {
+      "id": "atlanta",
+      "name": "Atlanta",
+      "lat": 33.749,
+      "lon": -84.388,
+      "fact": "Capital of Georgia.",
+      "kind": "city",
+      "x": 281.8,
+      "y": 148.9
+    },
+    {
+      "id": "austin",
+      "name": "Austin",
+      "lat": 30.267,
+      "lon": -97.743,
+      "fact": "Capital of Texas.",
+      "kind": "city",
+      "x": 244.3,
+      "y": 160
+    },
+    {
+      "id": "baltimore",
+      "name": "Baltimore",
+      "lat": 39.29,
+      "lon": -76.612,
+      "fact": "Largest city of Maryland.",
+      "kind": "city",
+      "x": 306.1,
+      "y": 131.3
+    },
+    {
+      "id": "birmingham-al",
+      "name": "Birmingham",
+      "lat": 33.519,
+      "lon": -86.802,
+      "fact": "Largest city of Alabama.",
+      "kind": "city",
+      "x": 275.4,
+      "y": 149.6
+    },
+    {
+      "id": "boise",
+      "name": "Boise",
+      "lat": 43.616,
+      "lon": -116.202,
+      "fact": "Capital of Idaho.",
+      "kind": "city",
+      "x": 211.7,
+      "y": 117.6
+    },
+    {
+      "id": "boston",
+      "name": "Boston",
+      "lat": 42.36,
+      "lon": -71.059,
+      "fact": "Capital of Massachusetts.",
+      "kind": "city",
+      "x": 322.7,
+      "y": 121.6
+    },
+    {
+      "id": "buffalo",
+      "name": "Buffalo",
+      "lat": 42.886,
+      "lon": -78.878,
+      "fact": "City in western New York.",
+      "kind": "city",
+      "x": 303.6,
+      "y": 119.9
+    },
+    {
+      "id": "charlotte",
+      "name": "Charlotte",
+      "lat": 35.227,
+      "lon": -80.843,
+      "fact": "Largest city of North Carolina.",
+      "kind": "city",
+      "x": 292.1,
+      "y": 144.2
+    },
+    {
+      "id": "chicago",
+      "name": "Chicago",
+      "lat": 41.878,
+      "lon": -87.63,
+      "fact": "Largest city of the Midwest.",
+      "kind": "city",
+      "x": 280.8,
+      "y": 123.1
+    },
+    {
+      "id": "cincinnati",
+      "name": "Cincinnati",
+      "lat": 39.103,
+      "lon": -84.512,
+      "fact": "City in southwest Ohio.",
+      "kind": "city",
+      "x": 286,
+      "y": 131.9
+    },
+    {
+      "id": "cleveland",
+      "name": "Cleveland",
+      "lat": 41.499,
+      "lon": -81.694,
+      "fact": "City on Lake Erie.",
+      "kind": "city",
+      "x": 295.3,
+      "y": 124.3
+    },
+    {
+      "id": "dallas",
+      "name": "Dallas",
+      "lat": 32.777,
+      "lon": -96.797,
+      "fact": "Major city in north Texas.",
+      "kind": "city",
+      "x": 248.9,
+      "y": 152
+    },
+    {
+      "id": "denver",
+      "name": "Denver",
+      "lat": 39.739,
+      "lon": -104.99,
+      "fact": "Capital of Colorado.",
+      "kind": "city",
+      "x": 234.8,
+      "y": 129.9
+    },
+    {
+      "id": "detroit",
+      "name": "Detroit",
+      "lat": 42.331,
+      "lon": -83.046,
+      "fact": "Largest city of Michigan.",
+      "kind": "city",
+      "x": 292.7,
+      "y": 121.7
+    },
+    {
+      "id": "el-paso",
+      "name": "El Paso",
+      "lat": 31.761,
+      "lon": -106.485,
+      "fact": "West Texas city on the Rio Grande.",
+      "kind": "city",
+      "x": 222.8,
+      "y": 155.2
+    },
+    {
+      "id": "honolulu",
+      "name": "Honolulu",
+      "lat": 21.307,
+      "lon": -157.858,
+      "fact": "Capital of Hawaii.",
+      "kind": "city",
+      "x": 77.5,
+      "y": 188.5
+    },
+    {
+      "id": "houston",
+      "name": "Houston",
+      "lat": 29.76,
+      "lon": -95.37,
+      "fact": "Largest city of Texas.",
+      "kind": "city",
+      "x": 250.2,
+      "y": 161.6
+    },
+    {
+      "id": "indianapolis",
+      "name": "Indianapolis",
+      "lat": 39.768,
+      "lon": -86.158,
+      "fact": "Capital of Indiana.",
+      "kind": "city",
+      "x": 282.4,
+      "y": 129.8
+    },
+    {
+      "id": "jacksonville",
+      "name": "Jacksonville",
+      "lat": 30.332,
+      "lon": -81.656,
+      "fact": "Largest city of Florida.",
+      "kind": "city",
+      "x": 286.5,
+      "y": 159.7
+    },
+    {
+      "id": "juneau",
+      "name": "Juneau",
+      "lat": 58.301,
+      "lon": -134.42,
+      "fact": "Capital of Alaska.",
+      "kind": "city",
+      "x": 195.1,
+      "y": 73
+    },
+    {
+      "id": "kansas-city",
+      "name": "Kansas City",
+      "lat": 39.1,
+      "lon": -94.578,
+      "fact": "Largest city of Missouri’s west side.",
+      "kind": "city",
+      "x": 260.5,
+      "y": 131.9
+    },
+    {
+      "id": "las-vegas",
+      "name": "Las Vegas",
+      "lat": 36.17,
+      "lon": -115.14,
+      "fact": "Largest city of Nevada.",
+      "kind": "city",
+      "x": 204.9,
+      "y": 141.2
+    },
+    {
+      "id": "los-angeles",
+      "name": "Los Angeles",
+      "lat": 34.052,
+      "lon": -118.244,
+      "fact": "Largest city of California.",
+      "kind": "city",
+      "x": 194.6,
+      "y": 147.9
+    },
+    {
+      "id": "memphis",
+      "name": "Memphis",
+      "lat": 35.15,
+      "lon": -90.049,
+      "fact": "City on the Mississippi in Tennessee.",
+      "kind": "city",
+      "x": 268.3,
+      "y": 144.4
+    },
+    {
+      "id": "miami",
+      "name": "Miami",
+      "lat": 25.762,
+      "lon": -80.192,
+      "fact": "Major city of South Florida.",
+      "kind": "city",
+      "x": 287.6,
+      "y": 174.3
+    },
+    {
+      "id": "milwaukee",
+      "name": "Milwaukee",
+      "lat": 43.039,
+      "lon": -87.906,
+      "fact": "Largest city of Wisconsin.",
+      "kind": "city",
+      "x": 281.3,
+      "y": 119.5
+    },
+    {
+      "id": "minneapolis",
+      "name": "Minneapolis",
+      "lat": 44.978,
+      "lon": -93.265,
+      "fact": "Largest city of Minnesota.",
+      "kind": "city",
+      "x": 270.2,
+      "y": 113.4
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile",
+      "lat": 30.695,
+      "lon": -88.04,
+      "fact": "Port city in Alabama.",
+      "kind": "city",
+      "x": 270,
+      "y": 158.6
+    },
+    {
+      "id": "nashville",
+      "name": "Nashville",
+      "lat": 36.163,
+      "lon": -86.782,
+      "fact": "Capital of Tennessee.",
+      "kind": "city",
+      "x": 277.6,
+      "y": 141.2
+    },
+    {
+      "id": "new-orleans",
+      "name": "New Orleans",
+      "lat": 29.951,
+      "lon": -90.072,
+      "fact": "Largest city of Louisiana.",
+      "kind": "city",
+      "x": 264.2,
+      "y": 161
+    },
+    {
+      "id": "new-york",
+      "name": "New York",
+      "lat": 40.713,
+      "lon": -74.006,
+      "fact": "Most populous city of the United States.",
+      "kind": "city",
+      "x": 313.9,
+      "y": 126.8
+    },
+    {
+      "id": "oklahoma-city",
+      "name": "Oklahoma City",
+      "lat": 35.468,
+      "lon": -97.516,
+      "fact": "Capital of Oklahoma.",
+      "kind": "city",
+      "x": 249.4,
+      "y": 143.4
+    },
+    {
+      "id": "omaha",
+      "name": "Omaha",
+      "lat": 41.257,
+      "lon": -95.995,
+      "fact": "Largest city of Nebraska.",
+      "kind": "city",
+      "x": 259.2,
+      "y": 125.1
+    },
+    {
+      "id": "philadelphia",
+      "name": "Philadelphia",
+      "lat": 39.953,
+      "lon": -75.165,
+      "fact": "Largest city of Pennsylvania.",
+      "kind": "city",
+      "x": 310.3,
+      "y": 129.2
+    },
+    {
+      "id": "phoenix",
+      "name": "Phoenix",
+      "lat": 33.448,
+      "lon": -112.074,
+      "fact": "Capital of Arizona.",
+      "kind": "city",
+      "x": 209.9,
+      "y": 149.8
+    },
+    {
+      "id": "pittsburgh",
+      "name": "Pittsburgh",
+      "lat": 40.441,
+      "lon": -79.996,
+      "fact": "City in western Pennsylvania.",
+      "kind": "city",
+      "x": 298.6,
+      "y": 127.6
+    },
+    {
+      "id": "portland-or",
+      "name": "Portland",
+      "lat": 45.515,
+      "lon": -122.679,
+      "fact": "Largest city of Oregon.",
+      "kind": "city",
+      "x": 198.6,
+      "y": 111.7
+    },
+    {
+      "id": "richmond",
+      "name": "Richmond",
+      "lat": 37.541,
+      "lon": -77.436,
+      "fact": "Capital of Virginia.",
+      "kind": "city",
+      "x": 302.6,
+      "y": 136.8
+    },
+    {
+      "id": "saint-paul",
+      "name": "Saint Paul",
+      "lat": 44.954,
+      "lon": -93.092,
+      "fact": "Capital of Minnesota.",
+      "kind": "city",
+      "x": 270.6,
+      "y": 113.5
+    },
+    {
+      "id": "salt-lake",
+      "name": "Salt Lake City",
+      "lat": 40.761,
+      "lon": -111.891,
+      "fact": "Capital of Utah.",
+      "kind": "city",
+      "x": 218.7,
+      "y": 126.6
+    },
+    {
+      "id": "san-antonio",
+      "name": "San Antonio",
+      "lat": 29.424,
+      "lon": -98.494,
+      "fact": "City in south-central Texas.",
+      "kind": "city",
+      "x": 241.7,
+      "y": 162.6
+    },
+    {
+      "id": "san-diego",
+      "name": "San Diego",
+      "lat": 32.716,
+      "lon": -117.161,
+      "fact": "Coastal city in southern California.",
+      "kind": "city",
+      "x": 196,
+      "y": 152.2
+    },
+    {
+      "id": "san-francisco",
+      "name": "San Francisco",
+      "lat": 37.775,
+      "lon": -122.419,
+      "fact": "City on San Francisco Bay.",
+      "kind": "city",
+      "x": 188.3,
+      "y": 136.1
+    },
+    {
+      "id": "san-jose",
+      "name": "San José",
+      "lat": 37.338,
+      "lon": -121.886,
+      "fact": "Largest city of Silicon Valley.",
+      "kind": "city",
+      "x": 189.1,
+      "y": 137.5
+    },
+    {
+      "id": "seattle",
+      "name": "Seattle",
+      "lat": 47.606,
+      "lon": -122.332,
+      "fact": "Largest city of Washington state.",
+      "kind": "city",
+      "x": 202.8,
+      "y": 105.2
+    },
+    {
+      "id": "st-louis",
+      "name": "St. Louis",
+      "lat": 38.627,
+      "lon": -90.199,
+      "fact": "City on the Mississippi in Missouri.",
+      "kind": "city",
+      "x": 271.1,
+      "y": 133.4
+    },
+    {
+      "id": "tampa",
+      "name": "Tampa",
+      "lat": 27.951,
+      "lon": -82.457,
+      "fact": "City on Florida’s Gulf Coast.",
+      "kind": "city",
+      "x": 282.8,
+      "y": 167.3
+    },
+    {
+      "id": "toledo",
+      "name": "Toledo",
+      "lat": 41.653,
+      "lon": -83.538,
+      "fact": "City in northwest Ohio.",
+      "kind": "city",
+      "x": 290.8,
+      "y": 123.8
+    },
+    {
+      "id": "tucson",
+      "name": "Tucson",
+      "lat": 32.223,
+      "lon": -110.975,
+      "fact": "Second-largest city of Arizona.",
+      "kind": "city",
+      "x": 211.5,
+      "y": 153.7
+    },
+    {
+      "id": "tulsa",
+      "name": "Tulsa",
+      "lat": 36.154,
+      "lon": -95.993,
+      "fact": "Second-largest city of Oklahoma.",
+      "kind": "city",
+      "x": 254,
+      "y": 141.2
+    },
+    {
+      "id": "washington-dc",
+      "name": "Washington, D.C.",
+      "lat": 38.907,
+      "lon": -77.037,
+      "fact": "Capital of the United States.",
+      "kind": "city",
+      "x": 304.7,
+      "y": 132.5
+    },
+    {
+      "id": "wichita",
+      "name": "Wichita",
+      "lat": 37.687,
+      "lon": -97.33,
+      "fact": "Largest city of Kansas.",
+      "kind": "city",
+      "x": 252.1,
+      "y": 136.4
+    }
+  ]
+}

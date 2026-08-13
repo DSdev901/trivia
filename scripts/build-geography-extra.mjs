@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Extra Seterra-style packs: lakes, physical features, sports teams, cartoon continents.
+ * Extra packs: lakes, physical features, sports teams, cartoon continents.
  * Run after build-geography-data.mjs (merges into packs.json).
  */
 import { readFile, writeFile, mkdir } from "node:fs/promises";

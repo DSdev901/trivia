@@ -1,0 +1,229 @@
+{
+  "id": "sa-cities",
+  "name": "South America: Cities",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "belo-horizonte",
+      "name": "Belo Horizonte",
+      "lat": -19.917,
+      "lon": -43.935,
+      "fact": "Capital of Minas Gerais, Brazil.",
+      "kind": "city",
+      "x": 382.1,
+      "y": 319.1
+    },
+    {
+      "id": "bogota",
+      "name": "Bogotá",
+      "lat": 4.711,
+      "lon": -74.072,
+      "fact": "Capital of Colombia.",
+      "kind": "city",
+      "x": 297.6,
+      "y": 241.1
+    },
+    {
+      "id": "brasilia",
+      "name": "Brasilia",
+      "lat": -15.794,
+      "lon": -47.882,
+      "fact": "Capital of Brazil.",
+      "kind": "city",
+      "x": 370.6,
+      "y": 306.1
+    },
+    {
+      "id": "buenos-aires",
+      "name": "Buenos Aires",
+      "lat": -34.604,
+      "lon": -58.382,
+      "fact": "Capital of Argentina.",
+      "kind": "city",
+      "x": 349.5,
+      "y": 365.9
+    },
+    {
+      "id": "cali",
+      "name": "Cali",
+      "lat": 3.452,
+      "lon": -76.532,
+      "fact": "Major city in western Colombia.",
+      "kind": "city",
+      "x": 290.8,
+      "y": 245.1
+    },
+    {
+      "id": "caracas",
+      "name": "Caracas",
+      "lat": 10.48,
+      "lon": -66.904,
+      "fact": "Capital of Venezuela.",
+      "kind": "city",
+      "x": 318,
+      "y": 222.9
+    },
+    {
+      "id": "cordoba-ar",
+      "name": "Córdoba",
+      "lat": -31.42,
+      "lon": -64.188,
+      "fact": "Second-largest city of Argentina.",
+      "kind": "city",
+      "x": 332.7,
+      "y": 355.8
+    },
+    {
+      "id": "curitiba",
+      "name": "Curitiba",
+      "lat": -25.429,
+      "lon": -49.272,
+      "fact": "Capital of Paraná, Brazil.",
+      "kind": "city",
+      "x": 369.4,
+      "y": 336.7
+    },
+    {
+      "id": "fortaleza",
+      "name": "Fortaleza",
+      "lat": -3.732,
+      "lon": -38.527,
+      "fact": "Large city in northeastern Brazil.",
+      "kind": "city",
+      "x": 394.7,
+      "y": 267.8
+    },
+    {
+      "id": "guayaquil",
+      "name": "Guayaquil",
+      "lat": -2.171,
+      "lon": -79.922,
+      "fact": "Largest city of Ecuador.",
+      "kind": "city",
+      "x": 281.5,
+      "y": 262.9
+    },
+    {
+      "id": "lima",
+      "name": "Lima",
+      "lat": -12.046,
+      "lon": -77.043,
+      "fact": "Capital of Peru.",
+      "kind": "city",
+      "x": 290.7,
+      "y": 294.2
+    },
+    {
+      "id": "manaus",
+      "name": "Manaus",
+      "lat": -3.119,
+      "lon": -60.022,
+      "fact": "Largest city of the Amazon Basin.",
+      "kind": "city",
+      "x": 335.9,
+      "y": 265.9
+    },
+    {
+      "id": "maracaibo",
+      "name": "Maracaibo",
+      "lat": 10.642,
+      "lon": -71.641,
+      "fact": "Second-largest city of Venezuela.",
+      "kind": "city",
+      "x": 305.1,
+      "y": 222.3
+    },
+    {
+      "id": "medellin",
+      "name": "Medellín",
+      "lat": 6.247,
+      "lon": -75.566,
+      "fact": "Second-largest city of Colombia.",
+      "kind": "city",
+      "x": 293.7,
+      "y": 236.3
+    },
+    {
+      "id": "montevideo",
+      "name": "Montevideo",
+      "lat": -34.901,
+      "lon": -56.164,
+      "fact": "Capital of Uruguay.",
+      "kind": "city",
+      "x": 355.4,
+      "y": 366.9
+    },
+    {
+      "id": "quito",
+      "name": "Quito",
+      "lat": -0.18,
+      "lon": -78.468,
+      "fact": "Capital of Ecuador.",
+      "kind": "city",
+      "x": 285.4,
+      "y": 256.6
+    },
+    {
+      "id": "recife",
+      "name": "Recife",
+      "lat": -8.048,
+      "lon": -34.877,
+      "fact": "Coastal city in northeastern Brazil.",
+      "kind": "city",
+      "x": 404.9,
+      "y": 281.5
+    },
+    {
+      "id": "rio",
+      "name": "Rio de Janeiro",
+      "lat": -22.907,
+      "lon": -43.173,
+      "fact": "Former capital of Brazil.",
+      "kind": "city",
+      "x": 384.8,
+      "y": 328.7
+    },
+    {
+      "id": "salvador",
+      "name": "Salvador",
+      "lat": -12.972,
+      "lon": -38.501,
+      "fact": "Capital of Bahia, Brazil.",
+      "kind": "city",
+      "x": 395.5,
+      "y": 297.1
+    },
+    {
+      "id": "santa-cruz",
+      "name": "Santa Cruz de la Sierra",
+      "lat": -17.784,
+      "lon": -63.182,
+      "fact": "Largest city of Bolivia.",
+      "kind": "city",
+      "x": 329.8,
+      "y": 312.4
+    },
+    {
+      "id": "santiago",
+      "name": "Santiago de Chile",
+      "lat": -33.449,
+      "lon": -70.669,
+      "fact": "Capital of Chile.",
+      "kind": "city",
+      "x": 317.1,
+      "y": 362.2
+    },
+    {
+      "id": "sao-paulo",
+      "name": "São Paulo",
+      "lat": -23.551,
+      "lon": -46.633,
+      "fact": "Largest city of South America.",
+      "kind": "city",
+      "x": 375.8,
+      "y": 330.7
+    }
+  ]
+}

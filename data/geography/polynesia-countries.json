@@ -1,0 +1,32 @@
+{
+  "id": "polynesia-countries",
+  "name": "Polynesia: Countries",
+  "map": "world-countries",
+  "quiz": "countries",
+  "items": [
+    {
+      "id": "WS",
+      "name": "Samoa",
+      "capital": "Apia",
+      "flag": "🇼🇸",
+      "region": "Oceania",
+      "subregion": "Polynesia"
+    },
+    {
+      "id": "TO",
+      "name": "Tonga",
+      "capital": "Nuku'alofa",
+      "flag": "🇹🇴",
+      "region": "Oceania",
+      "subregion": "Polynesia"
+    },
+    {
+      "id": "TV",
+      "name": "Tuvalu",
+      "capital": "Funafuti",
+      "flag": "🇹🇻",
+      "region": "Oceania",
+      "subregion": "Polynesia"
+    }
+  ]
+}

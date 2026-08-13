@@ -1,0 +1,89 @@
+{
+  "id": "australia-states",
+  "name": "Australia: States and Territories",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "act",
+      "name": "Australian Capital Territory",
+      "lat": -35.47,
+      "lon": 149,
+      "fact": "Territory that contains Canberra.",
+      "kind": "land",
+      "x": 882.9,
+      "y": 368.7
+    },
+    {
+      "id": "nsw",
+      "name": "New South Wales",
+      "lat": -32.8,
+      "lon": 147,
+      "fact": "Most populous Australian state; capital Sydney.",
+      "kind": "land",
+      "x": 881.4,
+      "y": 360.2
+    },
+    {
+      "id": "nt",
+      "name": "Northern Territory",
+      "lat": -19.5,
+      "lon": 133.4,
+      "fact": "Sparsely populated territory; capital Darwin.",
+      "kind": "land",
+      "x": 858.3,
+      "y": 317.8
+    },
+    {
+      "id": "qld",
+      "name": "Queensland",
+      "lat": -22.5,
+      "lon": 144.5,
+      "fact": "Northeastern state; capital Brisbane.",
+      "kind": "land",
+      "x": 885.8,
+      "y": 327.4
+    },
+    {
+      "id": "sa",
+      "name": "South Australia",
+      "lat": -30,
+      "lon": 135,
+      "fact": "Southern state; capital Adelaide.",
+      "kind": "land",
+      "x": 853.4,
+      "y": 351.3
+    },
+    {
+      "id": "tas",
+      "name": "Tasmania",
+      "lat": -42,
+      "lon": 146.6,
+      "fact": "Island state; capital Hobart.",
+      "kind": "land",
+      "x": 866.5,
+      "y": 389.3
+    },
+    {
+      "id": "vic",
+      "name": "Victoria",
+      "lat": -36.9,
+      "lon": 144.3,
+      "fact": "Southeastern state; capital Melbourne.",
+      "kind": "land",
+      "x": 868.8,
+      "y": 373.2
+    },
+    {
+      "id": "wa",
+      "name": "Western Australia",
+      "lat": -25,
+      "lon": 122,
+      "fact": "Largest state by area; capital Perth.",
+      "kind": "land",
+      "x": 823.8,
+      "y": 335.3
+    }
+  ]
+}

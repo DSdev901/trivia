@@ -1911,6 +1911,61 @@ body {
   fill: #a34460;
 }
 
+.geo-map-frame .geo-marker-city {
+  fill: #c45c7a;
+}
+
+.geo-map-frame .geo-marker-city:hover,
+.geo-map-frame .geo-marker-city.is-active {
+  fill: #a34460;
+}
+
+.geo-continent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.geo-continent-card {
+  text-align: left;
+  width: 100%;
+  border: 1px solid var(--stripe);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow);
+  padding: 1.35rem 1.35rem 1.2rem;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  transition: border-color 140ms ease, transform 140ms ease, background 140ms ease;
+}
+
+.geo-continent-card:hover {
+  border-color: var(--accent);
+  background: #fff;
+  transform: translateY(-1px);
+}
+
+.geo-continent-card h3 {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+}
+
+.geo-continent-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.geo-section-lede {
+  margin: -0.35rem 0 0.75rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
 .geo-group {
   margin-top: 1.5rem;
 }

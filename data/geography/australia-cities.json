@@ -1,0 +1,149 @@
+{
+  "id": "australia-cities",
+  "name": "Australia: Cities",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "adelaide",
+      "name": "Adelaide",
+      "lat": -34.928,
+      "lon": 138.6,
+      "fact": "Capital of South Australia.",
+      "kind": "city",
+      "x": 856.9,
+      "y": 366.9
+    },
+    {
+      "id": "alice-springs",
+      "name": "Alice Springs",
+      "lat": -23.698,
+      "lon": 133.881,
+      "fact": "Town in the Australian desert.",
+      "kind": "city",
+      "x": 856.5,
+      "y": 331.2
+    },
+    {
+      "id": "brisbane",
+      "name": "Brisbane",
+      "lat": -27.47,
+      "lon": 153.026,
+      "fact": "Capital of Queensland.",
+      "kind": "city",
+      "x": 903.6,
+      "y": 343.2
+    },
+    {
+      "id": "cairns",
+      "name": "Cairns",
+      "lat": -16.92,
+      "lon": 145.771,
+      "fact": "Gateway to the Great Barrier Reef.",
+      "kind": "city",
+      "x": 893.3,
+      "y": 309.6
+    },
+    {
+      "id": "canberra",
+      "name": "Canberra",
+      "lat": -35.281,
+      "lon": 149.129,
+      "fact": "Capital of Australia.",
+      "kind": "city",
+      "x": 883.5,
+      "y": 368.1
+    },
+    {
+      "id": "darwin",
+      "name": "Darwin",
+      "lat": -12.464,
+      "lon": 130.842,
+      "fact": "Capital of the Northern Territory.",
+      "kind": "city",
+      "x": 855.2,
+      "y": 295.5
+    },
+    {
+      "id": "hobart",
+      "name": "Hobart",
+      "lat": -42.882,
+      "lon": 147.327,
+      "fact": "Capital of Tasmania.",
+      "kind": "city",
+      "x": 866.8,
+      "y": 392.1
+    },
+    {
+      "id": "kalgoorlie",
+      "name": "Kalgoorlie-Boulder",
+      "lat": -30.749,
+      "lon": 121.466,
+      "fact": "Goldfields city in Western Australia.",
+      "kind": "city",
+      "x": 817.2,
+      "y": 353.6
+    },
+    {
+      "id": "melbourne",
+      "name": "Melbourne",
+      "lat": -37.814,
+      "lon": 144.963,
+      "fact": "Capital of Victoria.",
+      "kind": "city",
+      "x": 869.1,
+      "y": 376.1
+    },
+    {
+      "id": "newcastle-au",
+      "name": "Newcastle",
+      "lat": -32.928,
+      "lon": 151.781,
+      "fact": "Coastal city north of Sydney.",
+      "kind": "city",
+      "x": 893.6,
+      "y": 360.6
+    },
+    {
+      "id": "perth",
+      "name": "Perth",
+      "lat": -31.951,
+      "lon": 115.86,
+      "fact": "Capital of Western Australia.",
+      "kind": "city",
+      "x": 801.4,
+      "y": 357.5
+    },
+    {
+      "id": "port-hedland",
+      "name": "Port Hedland",
+      "lat": -20.311,
+      "lon": 118.601,
+      "fact": "Pilbara port in Western Australia.",
+      "kind": "city",
+      "x": 818.1,
+      "y": 320.4
+    },
+    {
+      "id": "sydney",
+      "name": "Sydney",
+      "lat": -33.869,
+      "lon": 151.209,
+      "fact": "Largest city of Australia.",
+      "kind": "city",
+      "x": 890.8,
+      "y": 363.6
+    },
+    {
+      "id": "townsville",
+      "name": "Townsville",
+      "lat": -19.259,
+      "lon": 146.817,
+      "fact": "City on Queensland’s northeast coast.",
+      "kind": "city",
+      "x": 894.5,
+      "y": 317.1
+    }
+  ]
+}

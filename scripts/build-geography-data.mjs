@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Build geography quiz packs (Seterra-style) from mledoze/countries.
+ * Build geography quiz packs from mledoze/countries.
  *
  *   curl -sL -o /tmp/countries.json \
  *     https://raw.githubusercontent.com/mledoze/countries/master/countries.json
@@ -271,7 +271,7 @@ const byRegion = (region) =>
       c.cca2 !== "AQ"
   );
 
-// Americas splits (Seterra-style)
+// Americas splits (Northern, Central, Caribbean, South)
 const northernAmerica = bySub(["North America"]);
 const centralAmerica = bySub(["Central America"]);
 const caribbean = bySub(["Caribbean"]);

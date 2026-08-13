@@ -1,0 +1,687 @@
+#!/usr/bin/env node
+/**
+ * Continent map games and hub sections.
+ *
+ *   node scripts/build-continent-map-games.mjs
+ *
+ * Run after africa map games / feature packs so existing quizzes stay in packs.json.
+ */
+import { execSync } from "node:child_process";
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { createRequire } from "node:module";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import {
+  EUROPE_CITIES_EASY,
+  EUROPE_CITIES_EXTRA,
+  SA_CITIES_EASY,
+  SA_CITIES_EXTRA,
+  ASIA_CITIES_EASY,
+  ASIA_CITIES_EXTRA,
+  AU_CITIES_EASY,
+  AU_CITIES_EXTRA,
+  ANZ_CITIES,
+  US_CITIES_EASY,
+  US_CITIES_EXTRA,
+} from "./lib/continent-cities.mjs";
+
+const require = createRequire(import.meta.url);
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const OUT = path.join(ROOT, "data", "geography");
+
+const MODES_COUNTRY = ["pin", "type", "outline", "name", "choice", "capitals", "study"];
+const MODES_CAPITALS = ["pin", "type", "name", "choice", "reverse", "study"];
+const MODES_CITIES = ["pin", "type", "name", "choice", "study"];
+const MODES_FLAGS = ["type", "choice", "reverse", "study"];
+const MODES_OUTLINE = ["outline", "type", "choice", "study"];
+const MODES_STATES = ["pin", "type", "outline", "name", "choice", "capitals", "abbr", "study"];
+
+const NAME_OVERRIDES = {
+  TL: "East Timor",
+  FM: "Federated States of Micronesia",
+  GM: "The Gambia",
+  CD: "Democratic Republic of the Congo",
+  CG: "Republic of the Congo",
+};
+
+const EXTRA = {
+  XK: {
+    id: "XK",
+    name: "Kosovo",
+    capital: "Pristina",
+    flag: "🇽🇰",
+    region: "Europe",
+    subregion: "Southeast Europe",
+  },
+  NC: {
+    id: "NC",
+    name: "New Caledonia",
+    capital: "Nouméa",
+    flag: "🇳🇨",
+    region: "Oceania",
+    subregion: "Melanesia",
+  },
+  EH: {
+    id: "EH",
+    name: "Western Sahara",
+    capital: "",
+    flag: "🇪🇭",
+    region: "Africa",
+    subregion: "Northern Africa",
+  },
+};
+
+const LISTS = {
+  "northern-europe": ["DK", "EE", "FI", "IS", "IE", "LV", "LT", "NO", "SE", "GB"],
+  "western-europe": ["AT", "BE", "FR", "DE", "LI", "LU", "MC", "NL", "CH"],
+  "eastern-europe": ["BY", "BG", "CZ", "HU", "MD", "PL", "RO", "RU", "SK", "UA"],
+  "southern-europe": [
+    "AL", "AD", "BA", "HR", "CY", "GR", "IT", "XK", "MT", "ME", "MK", "PT", "SM", "RS", "SI", "ES", "TR", "VA",
+  ],
+  nordic: ["DK", "FI", "IS", "NO", "SE"],
+  eu: [
+    "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU",
+    "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE",
+  ],
+  "southeast-asia": ["BN", "KH", "TL", "ID", "LA", "MY", "MM", "PH", "SG", "TH", "VN"],
+  "south-asia": ["AF", "BD", "BT", "IN", "MV", "NP", "PK", "LK"],
+  "east-asia": ["CN", "JP", "MN", "KP", "KR", "TW"],
+  "central-asia": ["KZ", "KG", "TJ", "TM", "UZ"],
+  "middle-east": ["BH", "CY", "EG", "IR", "IQ", "IL", "JO", "KW", "LB", "OM", "QA", "SA", "SY", "TR", "AE", "YE"],
+  mena: [
+    "DZ", "BH", "CY", "EG", "IR", "IQ", "IL", "JO", "KW", "LB", "LY", "MA", "OM", "QA", "SA", "SY", "TN", "TR", "AE", "YE",
+  ],
+  "latin-america": [
+    "MX", "BZ", "CR", "SV", "GT", "HN", "NI", "PA", "AR", "BO", "BR", "CL", "CO", "EC", "GY", "PY", "PE", "SR", "UY", "VE",
+  ],
+  "australia-surrounding": ["FJ", "ID", "MY", "NC", "NZ", "PG", "SB", "TL", "VU"],
+  melanesia: ["FJ", "PG", "SB", "VU"],
+  micronesia: ["KI", "MH", "FM", "NR", "PW"],
+  polynesia: ["WS", "TO", "TV"],
+};
+
+const US_REGIONS = {
+  "us-northeast": {
+    name: "The U.S.: States in the Northeast",
+    blurb: "New England plus New York, New Jersey, and Pennsylvania.",
+    ids: ["CT", "ME", "MA", "NH", "NJ", "NY", "PA", "RI", "VT"],
+  },
+  "us-midwest": {
+    name: "The U.S.: States in the Midwest",
+    blurb: "The 12 Midwestern states.",
+    ids: ["IL", "IN", "IA", "KS", "MI", "MN", "MO", "NE", "ND", "OH", "SD", "WI"],
+  },
+  "us-south": {
+    name: "The U.S.: States in the South",
+    blurb: "The 16 Southern states.",
+    ids: ["AL", "AR", "DE", "FL", "GA", "KY", "LA", "MD", "MS", "NC", "OK", "SC", "TN", "TX", "VA", "WV"],
+  },
+  "us-west": {
+    name: "The U.S.: States in the West",
+    blurb: "The 13 Western states, including Alaska and Hawaii.",
+    ids: ["AK", "AZ", "CA", "CO", "HI", "ID", "MT", "NV", "NM", "OR", "UT", "WA", "WY"],
+  },
+  "us-new-england": {
+    name: "The U.S.: States in New England",
+    blurb: "Connecticut through Vermont.",
+    ids: ["CT", "ME", "MA", "NH", "RI", "VT"],
+  },
+  "us-great-plains": {
+    name: "The U.S.: Great Plains States",
+    blurb: "The High Plains from Montana to Texas.",
+    ids: ["CO", "KS", "MT", "NE", "NM", "ND", "OK", "SD", "TX", "WY"],
+  },
+  "us-south-northeast": {
+    name: "The U.S.: States in the South and the Northeast",
+    blurb: "Southern and Northeastern states together.",
+    ids: [
+      "AL", "AR", "DE", "FL", "GA", "KY", "LA", "MD", "MS", "NC", "OK", "SC", "TN", "TX", "VA", "WV",
+      "CT", "ME", "MA", "NH", "NJ", "NY", "PA", "RI", "VT",
+    ],
+  },
+  "us-midwest-west": {
+    name: "The U.S.: States in the Midwest and the West",
+    blurb: "Midwestern and Western states together.",
+    ids: [
+      "IL", "IN", "IA", "KS", "MI", "MN", "MO", "NE", "ND", "OH", "SD", "WI",
+      "AK", "AZ", "CA", "CO", "HI", "ID", "MT", "NV", "NM", "OR", "UT", "WA", "WY",
+    ],
+  },
+};
+
+const AU_STATES = [
+  { id: "nsw", name: "New South Wales", lat: -32.8, lon: 147.0, fact: "Most populous Australian state; capital Sydney." },
+  { id: "vic", name: "Victoria", lat: -36.9, lon: 144.3, fact: "Southeastern state; capital Melbourne." },
+  { id: "qld", name: "Queensland", lat: -22.5, lon: 144.5, fact: "Northeastern state; capital Brisbane." },
+  { id: "wa", name: "Western Australia", lat: -25.0, lon: 122.0, fact: "Largest state by area; capital Perth." },
+  { id: "sa", name: "South Australia", lat: -30.0, lon: 135.0, fact: "Southern state; capital Adelaide." },
+  { id: "tas", name: "Tasmania", lat: -42.0, lon: 146.6, fact: "Island state; capital Hobart." },
+  { id: "nt", name: "Northern Territory", lat: -19.5, lon: 133.4, fact: "Sparsely populated territory; capital Darwin." },
+  { id: "act", name: "Australian Capital Territory", lat: -35.47, lon: 149.0, fact: "Territory that contains Canberra." },
+];
+
+const GROUP_BLURBS = {
+  world: "Continents, countries, and physical features of the whole planet.",
+  "north-america": "Countries, the U.S., the Caribbean, and North American landmarks.",
+  "south-america": "Countries, cities, landmarks, and physical features.",
+  europe: "Countries, cities, regions, rivers, and landmarks.",
+  africa: "Countries, cities, regions, landmarks, and physical features.",
+  asia: "Countries, cities, regions, and landmarks from the Middle East to Japan.",
+  oceania: "Pacific countries, Australian cities, and physical features.",
+};
+
+const SECTIONS = {
+  world: [
+    { name: "Start here", packIds: ["continents", "continents-oceans", "world-countries", "world-capitals"] },
+    { name: "Physical features", packIds: ["world-physical", "world-rivers", "world-lakes", "world-landmarks"] },
+    { name: "Practice & flags", packIds: ["world-populous", "world-populous-capitals", "world-flags", "world-outlines", "continents-cartoon"] },
+  ],
+  "north-america": [
+    {
+      name: "The continent",
+      packIds: ["na-countries", "na-capitals", "na-physical", "na-lakes", "great-lakes"],
+    },
+    {
+      name: "Regions",
+      packIds: [
+        "northern-america-countries",
+        "northern-america-capitals",
+        "central-america-countries",
+        "central-america-capitals",
+        "caribbean-countries",
+        "caribbean-capitals",
+      ],
+    },
+    {
+      name: "United States",
+      packIds: [
+        "us-states",
+        "us-cities",
+        "us-cities-difficult",
+        "us-landmarks",
+        "us-rivers",
+        "us-northeast",
+        "us-midwest",
+        "us-south",
+        "us-west",
+        "us-new-england",
+        "us-great-plains",
+        "us-south-northeast",
+        "us-midwest-west",
+        "us-outlines",
+      ],
+    },
+    { name: "Flags & outlines", packIds: ["na-flags", "caribbean-flags", "na-outlines", "caribbean-outlines"] },
+    { name: "Sports", packIds: ["nba-teams", "mlb-teams", "nhl-teams", "mls-teams"] },
+  ],
+  "south-america": [
+    {
+      name: "The continent",
+      packIds: ["sa-countries", "sa-capitals", "sa-cities", "sa-cities-difficult", "sa-landmarks", "sa-physical"],
+    },
+    { name: "Regions", packIds: ["latin-america-countries"] },
+    { name: "Flags & outlines", packIds: ["sa-flags", "sa-outlines"] },
+  ],
+  europe: [
+    {
+      name: "The continent",
+      packIds: [
+        "europe-countries",
+        "europe-capitals",
+        "europe-cities",
+        "europe-cities-difficult",
+        "europe-landmarks",
+        "europe-physical",
+        "europe-rivers",
+      ],
+    },
+    {
+      name: "Regions",
+      packIds: [
+        "northern-europe-countries",
+        "western-europe-countries",
+        "eastern-europe-countries",
+        "southern-europe-countries",
+        "northern-europe-capitals",
+        "western-europe-capitals",
+        "eastern-europe-capitals",
+        "southern-europe-capitals",
+        "nordic-countries",
+        "eu-countries",
+      ],
+    },
+    {
+      name: "Flags & outlines",
+      packIds: ["europe-flags", "western-europe-flags", "eastern-europe-flags", "europe-outlines"],
+    },
+  ],
+  africa: [
+    {
+      name: "The continent",
+      packIds: [
+        "africa-countries",
+        "africa-capitals",
+        "africa-cities",
+        "africa-cities-difficult",
+        "africa-landmarks",
+        "africa-physical",
+      ],
+    },
+    {
+      name: "Regions",
+      packIds: [
+        "africa-north-equator-countries",
+        "africa-south-equator-countries",
+        "northern-africa-countries",
+        "western-africa-countries",
+        "central-africa-countries",
+        "eastern-africa-countries",
+        "southern-africa-countries",
+        "northern-africa-capitals",
+        "western-africa-capitals",
+        "central-africa-capitals",
+        "eastern-africa-capitals",
+        "southern-africa-capitals",
+      ],
+    },
+    { name: "Flags & outlines", packIds: ["africa-flags", "africa-outlines"] },
+  ],
+  asia: [
+    {
+      name: "The continent",
+      packIds: ["asia-countries", "asia-capitals", "asia-cities", "asia-cities-difficult", "asia-landmarks", "asia-physical"],
+    },
+    {
+      name: "Regions",
+      packIds: [
+        "southeast-asia-countries",
+        "south-asia-countries",
+        "east-asia-countries",
+        "central-asia-countries",
+        "middle-east-countries",
+        "mena-countries",
+        "southeast-asia-capitals",
+        "south-asia-capitals",
+        "east-asia-capitals",
+        "central-asia-capitals",
+        "middle-east-capitals",
+      ],
+    },
+    {
+      name: "Flags & outlines",
+      packIds: [
+        "asia-flags",
+        "southeast-asia-flags",
+        "south-asia-flags",
+        "middle-east-flags",
+        "asia-outlines",
+      ],
+    },
+  ],
+  oceania: [
+    { name: "The continent", packIds: ["oceania-countries", "oceania-capitals"] },
+    {
+      name: "Australia & New Zealand",
+      packIds: [
+        "australia-cities",
+        "australia-cities-difficult",
+        "anz-cities",
+        "australia-states",
+        "australia-surrounding",
+        "australia-physical",
+      ],
+    },
+    {
+      name: "Pacific regions",
+      packIds: ["melanesia-countries", "micronesia-countries", "polynesia-countries"],
+    },
+    { name: "Flags & outlines", packIds: ["oceania-flags", "oceania-outlines"] },
+  ],
+};
+
+function writeJson(name, data) {
+  writeFileSync(path.join(OUT, name), `${JSON.stringify(data, null, 2)}\n`);
+}
+
+function loadJson(name) {
+  return JSON.parse(readFileSync(path.join(OUT, name), "utf8"));
+}
+
+function loadById() {
+  const byId = new Map();
+  for (const file of [
+    "world-countries.json",
+    "europe-countries.json",
+    "asia-countries.json",
+    "africa-countries.json",
+    "na-countries.json",
+    "sa-countries.json",
+    "oceania-countries.json",
+    "northern-africa-countries.json",
+  ]) {
+    try {
+      for (const it of loadJson(file).items) byId.set(it.id, it);
+    } catch {
+      /* optional */
+    }
+  }
+  for (const [id, item] of Object.entries(EXTRA)) {
+    if (!byId.has(id)) byId.set(id, item);
+  }
+  return byId;
+}
+
+function pickItems(byId, ids, { rename = true, requireCapital = false } = {}) {
+  const items = ids.map((id) => {
+    let item = byId.get(id);
+    if (!item) throw new Error(`Missing country ${id}`);
+    item = { ...item };
+    if (rename && NAME_OVERRIDES[id]) item.name = NAME_OVERRIDES[id];
+    return item;
+  });
+  const filtered = requireCapital ? items.filter((it) => it.capital) : items;
+  return filtered.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function ensureProjectionDeps() {
+  if (!existsSync("/tmp/geo-build/node_modules/d3-geo")) {
+    mkdirSync("/tmp/geo-build", { recursive: true });
+    execSync("npm i --prefix /tmp/geo-build d3-geo topojson-client", { stdio: "inherit" });
+  }
+  if (!existsSync("/tmp/countries-50m.json")) {
+    execSync(
+      "curl -sL -o /tmp/countries-50m.json https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json",
+      { stdio: "inherit" }
+    );
+  }
+}
+
+function loadProjection() {
+  ensureProjectionDeps();
+  const { feature } = require("/tmp/geo-build/node_modules/topojson-client");
+  const { geoNaturalEarth1 } = require("/tmp/geo-build/node_modules/d3-geo");
+  const topo = JSON.parse(readFileSync("/tmp/countries-50m.json", "utf8"));
+  const countries = feature(topo, topo.objects.countries);
+  return geoNaturalEarth1().fitExtent(
+    [
+      [8, 8],
+      [992, 512],
+    ],
+    countries
+  );
+}
+
+function projectItems(projection, items) {
+  return items
+    .map((it) => {
+      const xy = projection([it.lon, it.lat]);
+      if (!xy || !Number.isFinite(xy[0]) || !Number.isFinite(xy[1])) {
+        throw new Error(`Could not project ${it.id} (${it.lat}, ${it.lon})`);
+      }
+      return {
+        ...it,
+        x: Math.round(xy[0] * 10) / 10,
+        y: Math.round(xy[1] * 10) / 10,
+      };
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function upsert(list, pack) {
+  const i = list.findIndex((p) => p.id === pack.id);
+  if (i >= 0) list[i] = pack;
+  else list.push(pack);
+}
+
+const byId = loadById();
+const metas = [];
+
+function addMeta(meta) {
+  metas.push(meta);
+  return meta;
+}
+
+function writeCountryPack(id, name, blurb, groupId, ids) {
+  const items = pickItems(byId, ids);
+  writeJson(`${id}.json`, { id, name, map: "world-countries", quiz: "countries", items });
+  return addMeta({
+    id,
+    name,
+    blurb,
+    map: "world-countries",
+    quiz: "countries",
+    modes: MODES_COUNTRY,
+    itemCount: items.length,
+    groupId,
+  });
+}
+
+function writeCapitalPack(id, name, blurb, groupId, ids) {
+  const items = pickItems(byId, ids, { requireCapital: true });
+  writeJson(`${id}.json`, { id, name, map: "world-countries", quiz: "capitals", items });
+  return addMeta({
+    id,
+    name,
+    blurb,
+    map: "world-countries",
+    quiz: "capitals",
+    modes: MODES_CAPITALS,
+    itemCount: items.length,
+    groupId,
+  });
+}
+
+function writeFlagPack(id, name, blurb, groupId, ids) {
+  const items = pickItems(byId, ids);
+  writeJson(`${id}.json`, { id, name, map: null, quiz: "flags", items });
+  return addMeta({
+    id,
+    name,
+    blurb,
+    map: null,
+    quiz: "flags",
+    modes: MODES_FLAGS,
+    itemCount: items.length,
+    groupId,
+  });
+}
+
+function writeOutlinePack(id, name, blurb, groupId, ids) {
+  const items = pickItems(byId, ids);
+  writeJson(`${id}.json`, { id, name, map: "world-countries", quiz: "outlines", items });
+  return addMeta({
+    id,
+    name,
+    blurb,
+    map: "world-countries",
+    quiz: "outlines",
+    modes: MODES_OUTLINE,
+    itemCount: items.length,
+    groupId,
+  });
+}
+
+function writeCityPack(id, name, blurb, groupId, items, projection) {
+  const projected = projectItems(projection, items);
+  writeJson(`${id}.json`, {
+    id,
+    name,
+    map: "world-countries",
+    overlay: "markers",
+    quiz: "places",
+    items: projected,
+  });
+  return addMeta({
+    id,
+    name,
+    blurb,
+    map: "world-countries",
+    overlay: "markers",
+    quiz: "places",
+    modes: MODES_CITIES,
+    itemCount: projected.length,
+    groupId,
+  });
+}
+
+const usStates = loadJson("us-states.json").items;
+const usById = new Map(usStates.map((it) => [it.id, it]));
+
+function writeUsRegion(id, spec) {
+  const items = spec.ids.map((sid) => {
+    const it = usById.get(sid);
+    if (!it) throw new Error(`Missing U.S. state ${sid}`);
+    return it;
+  });
+  writeJson(`${id}.json`, { id, name: spec.name, map: "us-states", quiz: "countries", items });
+  return addMeta({
+    id,
+    name: spec.name,
+    blurb: spec.blurb,
+    map: "us-states",
+    quiz: "countries",
+    modes: MODES_STATES,
+    itemCount: items.length,
+    groupId: "north-america",
+  });
+}
+
+// —— Europe ——
+writeCountryPack("northern-europe-countries", "Northern Europe: Countries", "The Nordics, Baltics, Ireland, and the UK.", "europe", LISTS["northern-europe"]);
+writeCountryPack("western-europe-countries", "Western Europe: Countries", "France, Germany, the Low Countries, and the Alps.", "europe", LISTS["western-europe"]);
+writeCountryPack("eastern-europe-countries", "Eastern Europe: Countries", "From Poland and Czechia to Ukraine and Russia.", "europe", LISTS["eastern-europe"]);
+writeCountryPack("southern-europe-countries", "Southern Europe: Countries", "The Mediterranean, including Türkiye and the Balkans.", "europe", LISTS["southern-europe"]);
+writeCountryPack("nordic-countries", "The Nordic Countries", "Denmark, Finland, Iceland, Norway, and Sweden.", "europe", LISTS.nordic);
+writeCountryPack("eu-countries", "European Union: Countries", "The 27 EU member states.", "europe", LISTS.eu);
+writeCapitalPack("northern-europe-capitals", "Northern Europe: Capitals", "Capitals of Northern Europe — Pin or Type.", "europe", LISTS["northern-europe"]);
+writeCapitalPack("western-europe-capitals", "Western Europe: Capitals", "Capitals of Western Europe — Pin or Type.", "europe", LISTS["western-europe"]);
+writeCapitalPack("eastern-europe-capitals", "Eastern Europe: Capitals", "Capitals of Eastern Europe — Pin or Type.", "europe", LISTS["eastern-europe"]);
+writeCapitalPack("southern-europe-capitals", "Southern Europe: Capitals", "Capitals of Southern Europe — Pin or Type.", "europe", LISTS["southern-europe"]);
+writeFlagPack("western-europe-flags", "Western Europe: Flags", "Flags of Western Europe.", "europe", LISTS["western-europe"]);
+writeFlagPack("eastern-europe-flags", "Eastern Europe: Flags", "Flags of Eastern Europe.", "europe", LISTS["eastern-europe"]);
+
+// —— Asia ——
+writeCountryPack("southeast-asia-countries", "Southeast Asia: Countries", "Eleven countries from Myanmar to East Timor.", "asia", LISTS["southeast-asia"]);
+writeCountryPack("south-asia-countries", "South Asia: Countries", "The Indian subcontinent.", "asia", LISTS["south-asia"]);
+writeCountryPack("east-asia-countries", "East Asia: Countries", "China, Japan, Korea, Mongolia, and Taiwan.", "asia", LISTS["east-asia"]);
+writeCountryPack("central-asia-countries", "Central Asia: Countries", "The five ‘stans’ of Central Asia.", "asia", LISTS["central-asia"]);
+writeCountryPack("middle-east-countries", "The Middle East: Countries", "From Egypt and Türkiye to Yemen and Iran.", "asia", LISTS["middle-east"]);
+writeCountryPack("mena-countries", "The Middle East and North Africa: Countries", "MENA countries across Asia and Africa.", "asia", LISTS.mena);
+writeCapitalPack("southeast-asia-capitals", "Southeast Asia: Capitals", "Capitals of Southeast Asia — Pin or Type.", "asia", LISTS["southeast-asia"]);
+writeCapitalPack("south-asia-capitals", "South Asia: Capitals", "Capitals of South Asia — Pin or Type.", "asia", LISTS["south-asia"]);
+writeCapitalPack("east-asia-capitals", "East Asia: Capitals", "Capitals of East Asia — Pin or Type.", "asia", LISTS["east-asia"]);
+writeCapitalPack("central-asia-capitals", "Central Asia: Capitals", "Capitals of Central Asia — Pin or Type.", "asia", LISTS["central-asia"]);
+writeCapitalPack("middle-east-capitals", "The Middle East: Capitals", "Capitals of the Middle East — Pin or Type.", "asia", LISTS["middle-east"]);
+writeFlagPack("southeast-asia-flags", "Southeast Asia: Flags", "Flags of Southeast Asia.", "asia", LISTS["southeast-asia"]);
+writeFlagPack("south-asia-flags", "South Asia: Flags", "Flags of South Asia.", "asia", LISTS["south-asia"]);
+writeFlagPack("middle-east-flags", "The Middle East: Flags", "Flags of the Middle East.", "asia", LISTS["middle-east"]);
+
+// —— Americas extras ——
+writeCountryPack("latin-america-countries", "Latin America: Countries", "Mexico, Central America, and South America.", "south-america", LISTS["latin-america"]);
+writeCapitalPack("northern-america-capitals", "Northern America: Capitals", "Ottawa, Washington, D.C., and Mexico City.", "north-america", ["CA", "US", "MX"]);
+writeOutlinePack("caribbean-outlines", "The Caribbean: Country Outlines", "Silhouette drills for Caribbean countries.", "north-america", [
+  "AG", "BS", "BB", "CU", "DM", "DO", "GD", "HT", "JM", "KN", "LC", "VC", "TT",
+]);
+
+for (const [id, spec] of Object.entries(US_REGIONS)) writeUsRegion(id, spec);
+
+// —— Oceania ——
+writeCountryPack("australia-surrounding", "Australia: Surrounding Countries", "Neighbors across the Timor, Coral, and Tasman seas.", "oceania", LISTS["australia-surrounding"]);
+writeCountryPack("melanesia-countries", "Melanesia: Countries", "Fiji, Papua New Guinea, Solomon Islands, and Vanuatu.", "oceania", LISTS.melanesia);
+writeCountryPack("micronesia-countries", "Micronesia: Countries", "The independent countries of Micronesia.", "oceania", LISTS.micronesia);
+writeCountryPack("polynesia-countries", "Polynesia: Countries", "Samoa, Tonga, and Tuvalu.", "oceania", LISTS.polynesia);
+
+const projection = loadProjection();
+writeCityPack("europe-cities", "Europe: Cities", "Major European cities — Pin them or Type their names.", "europe", EUROPE_CITIES_EASY, projection);
+writeCityPack("europe-cities-difficult", "Europe: Cities (Difficult Version)", "86 European cities — a tougher Pin and Type drill.", "europe", [...EUROPE_CITIES_EASY, ...EUROPE_CITIES_EXTRA], projection);
+writeCityPack("sa-cities", "South America: Cities", "Major South American cities — Pin them or Type their names.", "south-america", SA_CITIES_EASY, projection);
+writeCityPack("sa-cities-difficult", "South America: Cities (Difficult Version)", "43 South American cities — a tougher Pin and Type drill.", "south-america", [...SA_CITIES_EASY, ...SA_CITIES_EXTRA], projection);
+writeCityPack("asia-cities", "Asia: Cities", "Major Asian cities — Pin them or Type their names.", "asia", ASIA_CITIES_EASY, projection);
+writeCityPack("asia-cities-difficult", "Asia: Cities (Difficult Version)", "75 Asian cities — a tougher Pin and Type drill.", "asia", [...ASIA_CITIES_EASY, ...ASIA_CITIES_EXTRA], projection);
+writeCityPack("australia-cities", "Australia: Cities", "Major Australian cities — Pin them or Type their names.", "oceania", AU_CITIES_EASY, projection);
+writeCityPack("australia-cities-difficult", "Australia: Cities (Difficult Version)", "50 Australian cities — a tougher Pin and Type drill.", "oceania", [...AU_CITIES_EASY, ...AU_CITIES_EXTRA], projection);
+writeCityPack("anz-cities", "Australia and New Zealand: Cities", "Main cities of Australia, New Zealand, and Port Moresby.", "oceania", ANZ_CITIES, projection);
+writeCityPack("us-cities", "The U.S.: Cities", "Major U.S. cities — Pin them or Type their names.", "north-america", US_CITIES_EASY, projection);
+writeCityPack("us-cities-difficult", "The U.S.: Cities (Difficult Version)", "U.S. cities large and small — a tougher Pin and Type drill.", "north-america", [...US_CITIES_EASY, ...US_CITIES_EXTRA], projection);
+writeCityPack(
+  "australia-states",
+  "Australia: States and Territories",
+  "The six states plus the Northern Territory and ACT.",
+  "oceania",
+  AU_STATES.map((s) => ({ ...s, kind: "land" })),
+  projection
+);
+
+// Map-based capitals for existing continent packs
+for (const id of [
+  "world-capitals",
+  "world-populous-capitals",
+  "na-capitals",
+  "central-america-capitals",
+  "caribbean-capitals",
+  "sa-capitals",
+  "europe-capitals",
+  "asia-capitals",
+  "oceania-capitals",
+]) {
+  const data = loadJson(`${id}.json`);
+  data.map = "world-countries";
+  writeJson(`${id}.json`, data);
+  addMeta({
+    id: data.id,
+    name: data.name,
+    blurb: data.name.includes("Capitals")
+      ? `${data.name.replace(/:.*/, "")}: Capitals — Pin them or Type their names.`
+      : data.name,
+    map: "world-countries",
+    quiz: "capitals",
+    modes: MODES_CAPITALS,
+    itemCount: data.items.length,
+  });
+}
+
+const packsFile = loadJson("packs.json");
+
+for (const g of packsFile.groups) {
+  if (GROUP_BLURBS[g.id]) g.blurb = GROUP_BLURBS[g.id];
+  const sections = SECTIONS[g.id];
+  if (sections) g.sections = sections;
+}
+
+for (const pack of metas) {
+  const groupId = pack.groupId;
+  const { groupId: _drop, ...clean } = pack;
+  if (groupId) {
+    const g = packsFile.groups.find((x) => x.id === groupId);
+    if (g) upsert(g.packs, clean);
+  } else {
+    for (const g of packsFile.groups) {
+      if (g.packs.some((p) => p.id === clean.id)) upsert(g.packs, clean);
+    }
+  }
+  upsert(packsFile.packs, clean);
+}
+
+for (const g of packsFile.groups) {
+  const sections = g.sections;
+  if (!sections) continue;
+  const byPack = new Map(g.packs.map((p) => [p.id, p]));
+  const ordered = [];
+  const seen = new Set();
+  for (const sec of sections) {
+    for (const id of sec.packIds || []) {
+      const p = byPack.get(id);
+      if (p && !seen.has(id)) {
+        ordered.push(p);
+        seen.add(id);
+      }
+    }
+  }
+  for (const p of g.packs) {
+    if (!seen.has(p.id)) ordered.push(p);
+  }
+  g.packs = ordered;
+}
+
+writeJson("packs.json", packsFile);
+console.log(`Continent map games: wrote ${metas.length} pack updates.`);

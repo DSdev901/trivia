@@ -1,0 +1,32 @@
+{
+  "id": "northern-america-capitals",
+  "name": "Northern America: Capitals",
+  "map": "world-countries",
+  "quiz": "capitals",
+  "items": [
+    {
+      "id": "CA",
+      "name": "Canada",
+      "capital": "Ottawa",
+      "flag": "🇨🇦",
+      "region": "Americas",
+      "subregion": "North America"
+    },
+    {
+      "id": "MX",
+      "name": "Mexico",
+      "capital": "Mexico City",
+      "flag": "🇲🇽",
+      "region": "Americas",
+      "subregion": "North America"
+    },
+    {
+      "id": "US",
+      "name": "United States",
+      "capital": "Washington D.C.",
+      "flag": "🇺🇸",
+      "region": "Americas",
+      "subregion": "North America"
+    }
+  ]
+}

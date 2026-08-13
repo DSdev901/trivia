@@ -1,0 +1,279 @@
+{
+  "id": "asia-cities",
+  "name": "Asia: Cities",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "baghdad",
+      "name": "Baghdad",
+      "lat": 33.315,
+      "lon": 44.366,
+      "fact": "Capital of Iraq.",
+      "kind": "city",
+      "x": 614.9,
+      "y": 150.2
+    },
+    {
+      "id": "baku",
+      "name": "Baku",
+      "lat": 40.409,
+      "lon": 49.867,
+      "fact": "Capital of Azerbaijan.",
+      "kind": "city",
+      "x": 625.6,
+      "y": 127.7
+    },
+    {
+      "id": "bangkok",
+      "name": "Bangkok",
+      "lat": 13.756,
+      "lon": 100.502,
+      "fact": "Capital of Thailand.",
+      "kind": "city",
+      "x": 772.4,
+      "y": 212.5
+    },
+    {
+      "id": "beijing",
+      "name": "Beijing",
+      "lat": 39.904,
+      "lon": 116.407,
+      "fact": "Capital of China.",
+      "kind": "city",
+      "x": 793.8,
+      "y": 129.3
+    },
+    {
+      "id": "bishkek",
+      "name": "Bishkek",
+      "lat": 42.875,
+      "lon": 74.57,
+      "fact": "Capital of Kyrgyzstan.",
+      "kind": "city",
+      "x": 685.6,
+      "y": 120
+    },
+    {
+      "id": "chennai",
+      "name": "Chennai (Madras)",
+      "lat": 13.083,
+      "lon": 80.27,
+      "fact": "Capital of Tamil Nadu, India.",
+      "kind": "city",
+      "x": 717.8,
+      "y": 214.6
+    },
+    {
+      "id": "delhi",
+      "name": "Delhi",
+      "lat": 28.614,
+      "lon": 77.209,
+      "fact": "Capital territory of India.",
+      "kind": "city",
+      "x": 703,
+      "y": 165.2
+    },
+    {
+      "id": "dhaka",
+      "name": "Dhaka",
+      "lat": 23.81,
+      "lon": 90.413,
+      "fact": "Capital of Bangladesh.",
+      "kind": "city",
+      "x": 740.7,
+      "y": 180.5
+    },
+    {
+      "id": "hanoi",
+      "name": "Hanoi",
+      "lat": 21.028,
+      "lon": 105.854,
+      "fact": "Capital of Vietnam.",
+      "kind": "city",
+      "x": 783.5,
+      "y": 189.4
+    },
+    {
+      "id": "hcmc",
+      "name": "Ho Chi Minh City",
+      "lat": 10.823,
+      "lon": 106.63,
+      "fact": "Largest city of Vietnam.",
+      "kind": "city",
+      "x": 790,
+      "y": 221.8
+    },
+    {
+      "id": "hong-kong",
+      "name": "Hong Kong",
+      "lat": 22.319,
+      "lon": 114.169,
+      "fact": "Major port on China’s south coast.",
+      "kind": "city",
+      "x": 804.9,
+      "y": 185.3
+    },
+    {
+      "id": "jakarta",
+      "name": "Jakarta",
+      "lat": -6.208,
+      "lon": 106.846,
+      "fact": "Capital of Indonesia.",
+      "kind": "city",
+      "x": 791.7,
+      "y": 275.7
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "lat": 31.768,
+      "lon": 35.214,
+      "fact": "Holy city claimed as capital by Israel.",
+      "kind": "city",
+      "x": 591.7,
+      "y": 155.2
+    },
+    {
+      "id": "kolkata",
+      "name": "Kolkata",
+      "lat": 22.573,
+      "lon": 88.364,
+      "fact": "Capital of West Bengal, India.",
+      "kind": "city",
+      "x": 735.9,
+      "y": 184.5
+    },
+    {
+      "id": "manila",
+      "name": "Manila",
+      "lat": 14.599,
+      "lon": 120.984,
+      "fact": "Capital of the Philippines.",
+      "kind": "city",
+      "x": 827.6,
+      "y": 209.8
+    },
+    {
+      "id": "mecca",
+      "name": "Mecca",
+      "lat": 21.423,
+      "lon": 39.826,
+      "fact": "Holiest city of Islam, in Saudi Arabia.",
+      "kind": "city",
+      "x": 606.6,
+      "y": 188.1
+    },
+    {
+      "id": "mumbai",
+      "name": "Mumbai",
+      "lat": 19.076,
+      "lon": 72.878,
+      "fact": "Largest city of India.",
+      "kind": "city",
+      "x": 695.9,
+      "y": 195.6
+    },
+    {
+      "id": "osaka",
+      "name": "Osaka",
+      "lat": 34.694,
+      "lon": 135.502,
+      "fact": "Major city of western Japan.",
+      "kind": "city",
+      "x": 849.2,
+      "y": 145.9
+    },
+    {
+      "id": "pyongyang",
+      "name": "Pyongyang",
+      "lat": 39.039,
+      "lon": 125.763,
+      "fact": "Capital of North Korea.",
+      "kind": "city",
+      "x": 818.6,
+      "y": 132.1
+    },
+    {
+      "id": "seoul",
+      "name": "Seoul",
+      "lat": 37.567,
+      "lon": 126.978,
+      "fact": "Capital of South Korea.",
+      "kind": "city",
+      "x": 823.6,
+      "y": 136.7
+    },
+    {
+      "id": "shanghai",
+      "name": "Shanghai",
+      "lat": 31.23,
+      "lon": 121.474,
+      "fact": "Largest city of China.",
+      "kind": "city",
+      "x": 816.8,
+      "y": 156.9
+    },
+    {
+      "id": "singapore",
+      "name": "Singapore",
+      "lat": 1.352,
+      "lon": 103.82,
+      "fact": "City-state at the tip of the Malay Peninsula.",
+      "kind": "city",
+      "x": 783.9,
+      "y": 251.8
+    },
+    {
+      "id": "taipei",
+      "name": "Taipei",
+      "lat": 25.033,
+      "lon": 121.565,
+      "fact": "Capital of Taiwan.",
+      "kind": "city",
+      "x": 822.6,
+      "y": 176.6
+    },
+    {
+      "id": "tehran",
+      "name": "Tehran",
+      "lat": 35.689,
+      "lon": 51.389,
+      "fact": "Capital of Iran.",
+      "kind": "city",
+      "x": 631.9,
+      "y": 142.7
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo",
+      "lat": 35.676,
+      "lon": 139.65,
+      "fact": "Capital of Japan.",
+      "kind": "city",
+      "x": 858.6,
+      "y": 142.7
+    },
+    {
+      "id": "ulan-bator",
+      "name": "Ulan Bator",
+      "lat": 47.886,
+      "lon": 106.906,
+      "fact": "Capital of Mongolia.",
+      "kind": "city",
+      "x": 759.3,
+      "y": 104.3
+    },
+    {
+      "id": "vientiane",
+      "name": "Vientiane",
+      "lat": 17.975,
+      "lon": 102.633,
+      "fact": "Capital of Laos.",
+      "kind": "city",
+      "x": 776.4,
+      "y": 199.1
+    }
+  ]
+}

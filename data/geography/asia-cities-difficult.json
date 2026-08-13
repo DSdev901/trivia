@@ -1,0 +1,759 @@
+{
+  "id": "asia-cities-difficult",
+  "name": "Asia: Cities (Difficult Version)",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "ahmedabad",
+      "name": "Ahmedabad",
+      "lat": 23.023,
+      "lon": 72.571,
+      "fact": "Largest city of Gujarat, India.",
+      "kind": "city",
+      "x": 693.5,
+      "y": 183
+    },
+    {
+      "id": "amman",
+      "name": "Amman",
+      "lat": 31.954,
+      "lon": 35.911,
+      "fact": "Capital of Jordan.",
+      "kind": "city",
+      "x": 593.4,
+      "y": 154.6
+    },
+    {
+      "id": "ankara",
+      "name": "Ankara",
+      "lat": 39.933,
+      "lon": 32.86,
+      "fact": "Capital of Türkiye.",
+      "kind": "city",
+      "x": 582.9,
+      "y": 129.2
+    },
+    {
+      "id": "ashgabat",
+      "name": "Ashgabat",
+      "lat": 37.96,
+      "lon": 58.326,
+      "fact": "Capital of Turkmenistan.",
+      "kind": "city",
+      "x": 648.4,
+      "y": 135.5
+    },
+    {
+      "id": "astana",
+      "name": "Astana",
+      "lat": 51.16,
+      "lon": 71.47,
+      "fact": "Capital of Kazakhstan.",
+      "kind": "city",
+      "x": 670.1,
+      "y": 94.3
+    },
+    {
+      "id": "baghdad",
+      "name": "Baghdad",
+      "lat": 33.315,
+      "lon": 44.366,
+      "fact": "Capital of Iraq.",
+      "kind": "city",
+      "x": 614.9,
+      "y": 150.2
+    },
+    {
+      "id": "baku",
+      "name": "Baku",
+      "lat": 40.409,
+      "lon": 49.867,
+      "fact": "Capital of Azerbaijan.",
+      "kind": "city",
+      "x": 625.6,
+      "y": 127.7
+    },
+    {
+      "id": "bangalore",
+      "name": "Bangalore",
+      "lat": 12.972,
+      "lon": 77.595,
+      "fact": "Capital of Karnataka, India.",
+      "kind": "city",
+      "x": 710.5,
+      "y": 215
+    },
+    {
+      "id": "bangkok",
+      "name": "Bangkok",
+      "lat": 13.756,
+      "lon": 100.502,
+      "fact": "Capital of Thailand.",
+      "kind": "city",
+      "x": 772.4,
+      "y": 212.5
+    },
+    {
+      "id": "banjarmasin",
+      "name": "Banjarmasin",
+      "lat": -3.319,
+      "lon": 114.592,
+      "fact": "City on Borneo, Indonesia.",
+      "kind": "city",
+      "x": 813.2,
+      "y": 266.5
+    },
+    {
+      "id": "beijing",
+      "name": "Beijing",
+      "lat": 39.904,
+      "lon": 116.407,
+      "fact": "Capital of China.",
+      "kind": "city",
+      "x": 793.8,
+      "y": 129.3
+    },
+    {
+      "id": "beirut",
+      "name": "Beirut",
+      "lat": 33.894,
+      "lon": 35.502,
+      "fact": "Capital of Lebanon.",
+      "kind": "city",
+      "x": 591.8,
+      "y": 148.4
+    },
+    {
+      "id": "bhopal",
+      "name": "Bhopal",
+      "lat": 23.26,
+      "lon": 77.413,
+      "fact": "Capital of Madhya Pradesh, India.",
+      "kind": "city",
+      "x": 706.3,
+      "y": 182.3
+    },
+    {
+      "id": "bishkek",
+      "name": "Bishkek",
+      "lat": 42.875,
+      "lon": 74.57,
+      "fact": "Capital of Kyrgyzstan.",
+      "kind": "city",
+      "x": 685.6,
+      "y": 120
+    },
+    {
+      "id": "busan",
+      "name": "Busan",
+      "lat": 35.18,
+      "lon": 129.075,
+      "fact": "Largest port of South Korea.",
+      "kind": "city",
+      "x": 832,
+      "y": 144.3
+    },
+    {
+      "id": "chengdu",
+      "name": "Chengdu",
+      "lat": 30.572,
+      "lon": 104.066,
+      "fact": "Capital of Sichuan, China.",
+      "kind": "city",
+      "x": 771.9,
+      "y": 159
+    },
+    {
+      "id": "chennai",
+      "name": "Chennai (Madras)",
+      "lat": 13.083,
+      "lon": 80.27,
+      "fact": "Capital of Tamil Nadu, India.",
+      "kind": "city",
+      "x": 717.8,
+      "y": 214.6
+    },
+    {
+      "id": "colombo",
+      "name": "Colombo",
+      "lat": 6.927,
+      "lon": 79.861,
+      "fact": "Largest city of Sri Lanka.",
+      "kind": "city",
+      "x": 717.9,
+      "y": 234.1
+    },
+    {
+      "id": "damascus",
+      "name": "Damascus",
+      "lat": 33.513,
+      "lon": 36.292,
+      "fact": "Capital of Syria.",
+      "kind": "city",
+      "x": 593.9,
+      "y": 149.6
+    },
+    {
+      "id": "davao",
+      "name": "Davao",
+      "lat": 7.191,
+      "lon": 125.455,
+      "fact": "Largest city of Mindanao.",
+      "kind": "city",
+      "x": 842.3,
+      "y": 233.3
+    },
+    {
+      "id": "delhi",
+      "name": "Delhi",
+      "lat": 28.614,
+      "lon": 77.209,
+      "fact": "Capital territory of India.",
+      "kind": "city",
+      "x": 703,
+      "y": 165.2
+    },
+    {
+      "id": "dhaka",
+      "name": "Dhaka",
+      "lat": 23.81,
+      "lon": 90.413,
+      "fact": "Capital of Bangladesh.",
+      "kind": "city",
+      "x": 740.7,
+      "y": 180.5
+    },
+    {
+      "id": "doha",
+      "name": "Doha",
+      "lat": 25.286,
+      "lon": 51.531,
+      "fact": "Capital of Qatar.",
+      "kind": "city",
+      "x": 636.7,
+      "y": 175.8
+    },
+    {
+      "id": "dubai",
+      "name": "Dubai",
+      "lat": 25.205,
+      "lon": 55.271,
+      "fact": "Largest city of the United Arab Emirates.",
+      "kind": "city",
+      "x": 646.6,
+      "y": 176.1
+    },
+    {
+      "id": "faisalabad",
+      "name": "Faisalabad",
+      "lat": 31.418,
+      "lon": 73.079,
+      "fact": "Industrial city in Punjab, Pakistan.",
+      "kind": "city",
+      "x": 690.5,
+      "y": 156.3
+    },
+    {
+      "id": "guangzhou",
+      "name": "Guangzhou",
+      "lat": 23.129,
+      "lon": 113.264,
+      "fact": "Capital of Guangdong, China.",
+      "kind": "city",
+      "x": 802,
+      "y": 182.7
+    },
+    {
+      "id": "hanoi",
+      "name": "Hanoi",
+      "lat": 21.028,
+      "lon": 105.854,
+      "fact": "Capital of Vietnam.",
+      "kind": "city",
+      "x": 783.5,
+      "y": 189.4
+    },
+    {
+      "id": "hiroshima",
+      "name": "Hiroshima",
+      "lat": 34.385,
+      "lon": 132.455,
+      "fact": "City in western Japan.",
+      "kind": "city",
+      "x": 841.7,
+      "y": 146.8
+    },
+    {
+      "id": "hcmc",
+      "name": "Ho Chi Minh City",
+      "lat": 10.823,
+      "lon": 106.63,
+      "fact": "Largest city of Vietnam.",
+      "kind": "city",
+      "x": 790,
+      "y": 221.8
+    },
+    {
+      "id": "hong-kong",
+      "name": "Hong Kong",
+      "lat": 22.319,
+      "lon": 114.169,
+      "fact": "Major port on China’s south coast.",
+      "kind": "city",
+      "x": 804.9,
+      "y": 185.3
+    },
+    {
+      "id": "islamabad",
+      "name": "Islamabad",
+      "lat": 33.684,
+      "lon": 73.047,
+      "fact": "Capital of Pakistan.",
+      "kind": "city",
+      "x": 688.9,
+      "y": 149.1
+    },
+    {
+      "id": "istanbul-tr",
+      "name": "Istanbul",
+      "lat": 41.009,
+      "lon": 28.978,
+      "fact": "Largest city of Türkiye, on two continents.",
+      "kind": "city",
+      "x": 572.8,
+      "y": 125.8
+    },
+    {
+      "id": "jakarta",
+      "name": "Jakarta",
+      "lat": -6.208,
+      "lon": 106.846,
+      "fact": "Capital of Indonesia.",
+      "kind": "city",
+      "x": 791.7,
+      "y": 275.7
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "lat": 31.768,
+      "lon": 35.214,
+      "fact": "Holy city claimed as capital by Israel.",
+      "kind": "city",
+      "x": 591.7,
+      "y": 155.2
+    },
+    {
+      "id": "kabul",
+      "name": "Kabul",
+      "lat": 34.555,
+      "lon": 69.208,
+      "fact": "Capital of Afghanistan.",
+      "kind": "city",
+      "x": 678.4,
+      "y": 146.3
+    },
+    {
+      "id": "karachi",
+      "name": "Karachi",
+      "lat": 24.861,
+      "lon": 67.01,
+      "fact": "Largest city of Pakistan.",
+      "kind": "city",
+      "x": 677.9,
+      "y": 177.2
+    },
+    {
+      "id": "kathmandu",
+      "name": "Kathmandu",
+      "lat": 27.718,
+      "lon": 85.324,
+      "fact": "Capital of Nepal.",
+      "kind": "city",
+      "x": 724.9,
+      "y": 168.1
+    },
+    {
+      "id": "kolkata",
+      "name": "Kolkata",
+      "lat": 22.573,
+      "lon": 88.364,
+      "fact": "Capital of West Bengal, India.",
+      "kind": "city",
+      "x": 735.9,
+      "y": 184.5
+    },
+    {
+      "id": "kuala-lumpur",
+      "name": "Kuala Lumpur",
+      "lat": 3.139,
+      "lon": 101.687,
+      "fact": "Capital of Malaysia.",
+      "kind": "city",
+      "x": 778,
+      "y": 246.1
+    },
+    {
+      "id": "kunming",
+      "name": "Kunming",
+      "lat": 25.038,
+      "lon": 102.718,
+      "fact": "Capital of Yunnan, China.",
+      "kind": "city",
+      "x": 772.6,
+      "y": 176.6
+    },
+    {
+      "id": "kuwait-city",
+      "name": "Kuwait City",
+      "lat": 29.376,
+      "lon": 47.978,
+      "fact": "Capital of Kuwait.",
+      "kind": "city",
+      "x": 625.8,
+      "y": 162.8
+    },
+    {
+      "id": "kyoto",
+      "name": "Kyoto",
+      "lat": 35.012,
+      "lon": 135.768,
+      "fact": "Former imperial capital of Japan.",
+      "kind": "city",
+      "x": 849.5,
+      "y": 144.8
+    },
+    {
+      "id": "lahore",
+      "name": "Lahore",
+      "lat": 31.52,
+      "lon": 74.358,
+      "fact": "Cultural capital of Punjab, Pakistan.",
+      "kind": "city",
+      "x": 693.7,
+      "y": 156
+    },
+    {
+      "id": "lhasa",
+      "name": "Lhasa",
+      "lat": 29.65,
+      "lon": 91.1,
+      "fact": "Capital of Tibet, China.",
+      "kind": "city",
+      "x": 738.7,
+      "y": 161.9
+    },
+    {
+      "id": "macau",
+      "name": "Macau",
+      "lat": 22.198,
+      "lon": 113.544,
+      "fact": "Coastal city west of Hong Kong.",
+      "kind": "city",
+      "x": 803.3,
+      "y": 185.7
+    },
+    {
+      "id": "manama",
+      "name": "Manama",
+      "lat": 26.228,
+      "lon": 50.586,
+      "fact": "Capital of Bahrain.",
+      "kind": "city",
+      "x": 633.8,
+      "y": 172.8
+    },
+    {
+      "id": "manila",
+      "name": "Manila",
+      "lat": 14.599,
+      "lon": 120.984,
+      "fact": "Capital of the Philippines.",
+      "kind": "city",
+      "x": 827.6,
+      "y": 209.8
+    },
+    {
+      "id": "mashhad",
+      "name": "Mashhad",
+      "lat": 36.26,
+      "lon": 59.616,
+      "fact": "Second-largest city of Iran.",
+      "kind": "city",
+      "x": 652.7,
+      "y": 140.9
+    },
+    {
+      "id": "mecca",
+      "name": "Mecca",
+      "lat": 21.423,
+      "lon": 39.826,
+      "fact": "Holiest city of Islam, in Saudi Arabia.",
+      "kind": "city",
+      "x": 606.6,
+      "y": 188.1
+    },
+    {
+      "id": "mumbai",
+      "name": "Mumbai",
+      "lat": 19.076,
+      "lon": 72.878,
+      "fact": "Largest city of India.",
+      "kind": "city",
+      "x": 695.9,
+      "y": 195.6
+    },
+    {
+      "id": "muscat",
+      "name": "Muscat",
+      "lat": 23.588,
+      "lon": 58.382,
+      "fact": "Capital of Oman.",
+      "kind": "city",
+      "x": 655.5,
+      "y": 181.2
+    },
+    {
+      "id": "naypyidaw",
+      "name": "Naypyidaw",
+      "lat": 19.763,
+      "lon": 96.078,
+      "fact": "Capital of Myanmar.",
+      "kind": "city",
+      "x": 758,
+      "y": 193.4
+    },
+    {
+      "id": "novosibirsk",
+      "name": "Novosibirsk",
+      "lat": 55.008,
+      "lon": 82.935,
+      "fact": "Largest city of Siberia.",
+      "kind": "city",
+      "x": 692.5,
+      "y": 82.7
+    },
+    {
+      "id": "osaka",
+      "name": "Osaka",
+      "lat": 34.694,
+      "lon": 135.502,
+      "fact": "Major city of western Japan.",
+      "kind": "city",
+      "x": 849.2,
+      "y": 145.9
+    },
+    {
+      "id": "phnom-penh",
+      "name": "Phnom Penh",
+      "lat": 11.556,
+      "lon": 104.928,
+      "fact": "Capital of Cambodia.",
+      "kind": "city",
+      "x": 785.2,
+      "y": 219.5
+    },
+    {
+      "id": "pyongyang",
+      "name": "Pyongyang",
+      "lat": 39.039,
+      "lon": 125.763,
+      "fact": "Capital of North Korea.",
+      "kind": "city",
+      "x": 818.6,
+      "y": 132.1
+    },
+    {
+      "id": "riyadh",
+      "name": "Riyadh",
+      "lat": 24.714,
+      "lon": 46.675,
+      "fact": "Capital of Saudi Arabia.",
+      "kind": "city",
+      "x": 624,
+      "y": 177.6
+    },
+    {
+      "id": "sanaa",
+      "name": "Sana'a",
+      "lat": 15.369,
+      "lon": 44.191,
+      "fact": "Capital of Yemen.",
+      "kind": "city",
+      "x": 619.5,
+      "y": 207.4
+    },
+    {
+      "id": "sapporo",
+      "name": "Sapporo",
+      "lat": 43.062,
+      "lon": 141.354,
+      "fact": "Largest city of Hokkaido, Japan.",
+      "kind": "city",
+      "x": 851.6,
+      "y": 119.4
+    },
+    {
+      "id": "seoul",
+      "name": "Seoul",
+      "lat": 37.567,
+      "lon": 126.978,
+      "fact": "Capital of South Korea.",
+      "kind": "city",
+      "x": 823.6,
+      "y": 136.7
+    },
+    {
+      "id": "shanghai",
+      "name": "Shanghai",
+      "lat": 31.23,
+      "lon": 121.474,
+      "fact": "Largest city of China.",
+      "kind": "city",
+      "x": 816.8,
+      "y": 156.9
+    },
+    {
+      "id": "shenzhen",
+      "name": "Shenzhen",
+      "lat": 22.543,
+      "lon": 114.058,
+      "fact": "Major city next to Hong Kong.",
+      "kind": "city",
+      "x": 804.5,
+      "y": 184.6
+    },
+    {
+      "id": "singapore",
+      "name": "Singapore",
+      "lat": 1.352,
+      "lon": 103.82,
+      "fact": "City-state at the tip of the Malay Peninsula.",
+      "kind": "city",
+      "x": 783.9,
+      "y": 251.8
+    },
+    {
+      "id": "surabaya",
+      "name": "Surabaya",
+      "lat": -7.258,
+      "lon": 112.752,
+      "fact": "Second-largest city of Indonesia.",
+      "kind": "city",
+      "x": 807.6,
+      "y": 279
+    },
+    {
+      "id": "taipei",
+      "name": "Taipei",
+      "lat": 25.033,
+      "lon": 121.565,
+      "fact": "Capital of Taiwan.",
+      "kind": "city",
+      "x": 822.6,
+      "y": 176.6
+    },
+    {
+      "id": "tashkent",
+      "name": "Tashkent",
+      "lat": 41.299,
+      "lon": 69.24,
+      "fact": "Capital of Uzbekistan.",
+      "kind": "city",
+      "x": 673.7,
+      "y": 124.9
+    },
+    {
+      "id": "tehran",
+      "name": "Tehran",
+      "lat": 35.689,
+      "lon": 51.389,
+      "fact": "Capital of Iran.",
+      "kind": "city",
+      "x": 631.9,
+      "y": 142.7
+    },
+    {
+      "id": "tianjin",
+      "name": "Tianjin",
+      "lat": 39.343,
+      "lon": 117.361,
+      "fact": "Megacity southeast of Beijing.",
+      "kind": "city",
+      "x": 796.9,
+      "y": 131.1
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo",
+      "lat": 35.676,
+      "lon": 139.65,
+      "fact": "Capital of Japan.",
+      "kind": "city",
+      "x": 858.6,
+      "y": 142.7
+    },
+    {
+      "id": "ulan-bator",
+      "name": "Ulan Bator",
+      "lat": 47.886,
+      "lon": 106.906,
+      "fact": "Capital of Mongolia.",
+      "kind": "city",
+      "x": 759.3,
+      "y": 104.3
+    },
+    {
+      "id": "vientiane",
+      "name": "Vientiane",
+      "lat": 17.975,
+      "lon": 102.633,
+      "fact": "Capital of Laos.",
+      "kind": "city",
+      "x": 776.4,
+      "y": 199.1
+    },
+    {
+      "id": "vladivostok",
+      "name": "Vladivostok",
+      "lat": 43.115,
+      "lon": 131.885,
+      "fact": "Pacific port of Russia.",
+      "kind": "city",
+      "x": 828,
+      "y": 119.2
+    },
+    {
+      "id": "wuhan",
+      "name": "Wuhan",
+      "lat": 30.593,
+      "lon": 114.305,
+      "fact": "Capital of Hubei, China.",
+      "kind": "city",
+      "x": 798.7,
+      "y": 158.9
+    },
+    {
+      "id": "xian",
+      "name": "Xi'an",
+      "lat": 34.341,
+      "lon": 108.94,
+      "fact": "Ancient capital in central China.",
+      "kind": "city",
+      "x": 781.1,
+      "y": 147
+    },
+    {
+      "id": "yangon",
+      "name": "Yangon",
+      "lat": 16.866,
+      "lon": 96.195,
+      "fact": "Largest city of Myanmar.",
+      "kind": "city",
+      "x": 759.6,
+      "y": 202.6
+    }
+  ]
+}
