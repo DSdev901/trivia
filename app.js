@@ -229,7 +229,7 @@ function startElementQuiz({
   categoryLabels,
   scopeLabel,
   scopeId,
-  difficulty = "practice",
+  difficulty = "hard",
 }) {
   cleanupPeriodicTable();
   const easy = difficulty === "easy";
@@ -242,7 +242,7 @@ function startElementQuiz({
   }
   state.quiz = {
     mode: "elements",
-    difficulty: easy ? "easy" : "practice",
+    difficulty: easy ? "easy" : "hard",
     scopeLabel,
     scopeId,
     focus,
@@ -252,7 +252,7 @@ function startElementQuiz({
     total: questions.length,
   };
   state.lastResult = null;
-  const modeLabel = easy ? "Easy" : "Practice";
+  const modeLabel = easy ? "Easy" : "Hard";
   els.subtitle.textContent = `${state.category.name} · ${modeLabel} · ${scopeLabel}`;
   renderQuizQuestion();
   show("quiz");
@@ -848,7 +848,7 @@ function renderQuizDone() {
   const { rotation, total } = quiz;
   const isElements = quiz.mode === "elements";
   const scopeText = isElements
-    ? `${quiz.difficulty === "easy" ? "Easy · " : "Practice · "}${
+    ? `${quiz.difficulty === "easy" ? "Easy · " : "Hard · "}${
         quiz.scopeLabel || "Elements"
       }`
     : (quiz.batchNumbers || []).map((n) => `Batch ${n}`).join(", ");
@@ -881,7 +881,7 @@ function renderQuizDone() {
         categoryLabels: quiz.categoryLabels,
         scopeLabel: quiz.scopeLabel,
         scopeId: quiz.scopeId,
-        difficulty: quiz.difficulty || "practice",
+        difficulty: quiz.difficulty || "hard",
       });
       return;
     }

@@ -32,7 +32,8 @@ const pt = {
   root: null,
   data: null,
   selectedZ: 1,
-  focusCategory: "all",
+  /** Empty = all elements; otherwise one or more category ids. */
+  focusCategories: [],
   voices: [],
   canSpeak: false,
   playing: false,
@@ -113,31 +114,91 @@ function highlight(z) {
   }
 }
 
+function isAllSelected(cats = pt.focusCategories) {
+  return !cats?.length;
+}
+
+function elementsForScope(cats = pt.focusCategories) {
+  const all = pt.data?.elements || [];
+  if (isAllSelected(cats)) return all;
+  const set = new Set(cats);
+  return all.filter((e) => set.has(e.category));
+}
+
+function scopeLabel(cats = pt.focusCategories) {
+  if (isAllSelected(cats)) return "All elements";
+  const labels = cats.map((c) => labelFor(c));
+  if (labels.length === 1) return labels[0];
+  if (labels.length === 2) return `${labels[0]} + ${labels[1]}`;
+  return `${labels.length} families`;
+}
+
+function scopeId(cats = pt.focusCategories) {
+  return isAllSelected(cats) ? "all" : [...cats];
+}
+
+function toggleFocusCategory(cat) {
+  if (cat === "all") {
+    pt.focusCategories = [];
+    return;
+  }
+  const cur = [...(pt.focusCategories || [])];
+  if (!cur.length) {
+    pt.focusCategories = [cat];
+    return;
+  }
+  const idx = cur.indexOf(cat);
+  if (idx >= 0) {
+    cur.splice(idx, 1);
+    pt.focusCategories = cur;
+    return;
+  }
+  cur.push(cat);
+  const next = CATEGORY_ORDER.filter((c) => cur.includes(c));
+  pt.focusCategories =
+    next.length >= CATEGORY_ORDER.length ? [] : next;
+}
+
 function applyCategoryFilter() {
   if (!pt.root) return;
-  const cat = pt.focusCategory;
+  const cats = pt.focusCategories || [];
+  const allOn = isAllSelected(cats);
+  const set = new Set(cats);
+
   pt.root.querySelectorAll(".pt-cell[data-z]").forEach((cell) => {
     const z = Number(cell.dataset.z);
     const el = byZ(z);
-    const on = cat === "all" || el?.category === cat;
+    const on = allOn || set.has(el?.category);
     cell.classList.toggle("is-dim", !on);
   });
+
   pt.root.querySelectorAll(".pt-legend-btn").forEach((btn) => {
-    btn.classList.toggle("is-on", btn.dataset.cat === cat);
+    const cat = btn.dataset.cat;
+    const on = cat === "all" ? allOn : set.has(cat);
+    btn.classList.toggle("is-on", on);
+    btn.setAttribute("aria-pressed", String(on));
   });
-  const sel = pt.root.querySelector("#pt-group-select");
-  if (sel) sel.value = cat;
+
   const quizCopy = pt.root.querySelector(".pt-quiz-panel .speech-lede");
   if (quizCopy) {
     const n = elementsForScope().length;
-    quizCopy.innerHTML = `Quiz <strong>${escapeHtml(scopeLabel())}</strong> (${n} elements) —
-          same group as Listen / the legend. <strong>Easy</strong> lists Z, family, and facts so you pick the name.
-          <strong>Practice</strong> mixes lean ID, property, and position drills.`;
+    const label = scopeLabel();
+    quizCopy.innerHTML = `Quiz the current filter: <strong>${escapeHtml(
+      label
+    )}</strong> (${n} elements). Tap <strong>All</strong>, or one or more families above.
+          <strong>Easy</strong> shows a full clue sheet. <strong>Hard</strong> mixes symbols, numbers, families, and facts.`;
   }
   const disabled = elementsForScope().length < 1;
-  for (const id of ["#pt-quiz-easy", "#pt-quiz-start"]) {
-    const btn = pt.root.querySelector(id);
-    if (btn) btn.disabled = disabled;
+  const scopeShort = scopeLabel();
+  const easyBtn = pt.root.querySelector("#pt-quiz-easy");
+  const hardBtn = pt.root.querySelector("#pt-quiz-hard");
+  if (easyBtn) {
+    easyBtn.disabled = disabled;
+    easyBtn.textContent = `Easy · ${scopeShort}`;
+  }
+  if (hardBtn) {
+    hardBtn.disabled = disabled;
+    hardBtn.textContent = `Hard · ${scopeShort}`;
   }
 }
 
@@ -177,12 +238,10 @@ async function speakElement(el) {
   }
 }
 
-async function speakTour(category) {
-  const list = (pt.data.elements || []).filter(
-    (e) => category === "all" || e.category === category
-  );
+async function speakTour() {
+  const list = elementsForScope();
   if (!list.length) {
-    setStatus("No elements in that group.");
+    setStatus("No elements in that selection.");
     return;
   }
   stopSpeech();
@@ -193,8 +252,7 @@ async function speakTour(category) {
   const listen = pt.root?.querySelector("#pt-listen");
   if (listen) listen.disabled = true;
 
-  const label = category === "all" ? "all elements" : labelFor(category);
-  setStatus(`Touring ${label} (${list.length})…`);
+  setStatus(`Touring ${scopeLabel()} (${list.length})…`);
 
   for (let i = 0; i < list.length; i += 1) {
     if (!pt.playing || session !== pt.tourSession) break;
@@ -343,21 +401,12 @@ function speechPanelHtml() {
   }
   const savedRate = getSavedRate();
   const savedUri = getSavedVoiceUri();
-  const options = [
-    `<option value="all">All elements</option>`,
-    ...CATEGORY_ORDER.map(
-      (c) =>
-        `<option value="${escapeHtml(c)}" ${
-          pt.focusCategory === c ? "selected" : ""
-        }>${escapeHtml(labelFor(c))}</option>`
-    ),
-  ].join("");
   return `
     <section class="speech-panel pt-speech" aria-label="Read aloud">
       <div class="speech-panel-top">
         <div>
           <p class="speech-kicker">Read aloud</p>
-          <p class="speech-lede">Hear each element’s number, name, discovery, and facts — the table highlights as it goes.</p>
+          <p class="speech-lede">Hear each element’s number, name, discovery, and facts — tours follow the family filter below (one or more groups, or All).</p>
         </div>
         <div class="speech-actions" role="group" aria-label="Playback">
           <button type="button" class="speech-btn speech-btn-primary" id="pt-listen">Listen</button>
@@ -365,10 +414,6 @@ function speechPanelHtml() {
         </div>
       </div>
       <div class="speech-settings">
-        <label class="voice-field">
-          <span>Tour</span>
-          <select id="pt-group-select">${options}</select>
-        </label>
         <label class="voice-field">
           <span>Voice</span>
           <select id="pt-voice-select" ${pt.voices.length ? "" : "disabled"}>
@@ -403,16 +448,6 @@ function speechPanelHtml() {
     </section>`;
 }
 
-function elementsForScope(category = pt.focusCategory) {
-  const all = pt.data?.elements || [];
-  if (category === "all") return all;
-  return all.filter((e) => e.category === category);
-}
-
-function scopeLabel(category = pt.focusCategory) {
-  return category === "all" ? "All elements" : labelFor(category);
-}
-
 function quizPanelHtml() {
   const n = elementsForScope().length;
   const label = scopeLabel();
@@ -420,29 +455,37 @@ function quizPanelHtml() {
     <section class="pt-quiz-panel" aria-label="Quiz">
       <div class="pt-quiz-copy">
         <p class="speech-kicker">Quiz</p>
-        <p class="speech-lede">Quiz <strong>${escapeHtml(label)}</strong> (${n} elements) —
-          same group as Listen / the legend. <strong>Easy</strong> lists Z, family, and facts so you pick the name.
-          <strong>Practice</strong> mixes lean ID, property, and position drills.</p>
+        <p class="speech-lede">Quiz the current filter: <strong>${escapeHtml(
+          label
+        )}</strong> (${n} elements). Tap <strong>All</strong>, or one or more families above.
+          <strong>Easy</strong> shows a full clue sheet. <strong>Hard</strong> mixes symbols, numbers, families, and facts.</p>
       </div>
       <div class="pt-quiz-actions">
         <button type="button" class="speech-btn speech-btn-primary" id="pt-quiz-easy"
-          ${n < 1 ? "disabled" : ""}>Easy quiz</button>
-        <button type="button" class="speech-btn" id="pt-quiz-start"
-          ${n < 1 ? "disabled" : ""}>Practice quiz</button>
+          ${n < 1 ? "disabled" : ""}>Easy · ${escapeHtml(label)}</button>
+        <button type="button" class="speech-btn" id="pt-quiz-hard"
+          ${n < 1 ? "disabled" : ""}>Hard · ${escapeHtml(label)}</button>
       </div>
     </section>`;
 }
 
 function legendHtml() {
+  const cats = pt.focusCategories || [];
+  const allOn = isAllSelected(cats);
   return `
-    <div class="pt-legend" role="group" aria-label="Element categories">
-      <button type="button" class="pt-legend-btn is-on" data-cat="all">All</button>
-      ${CATEGORY_ORDER.map(
-        (c) =>
-          `<button type="button" class="pt-legend-btn pt-cat-${escapeHtml(
+    <div class="pt-legend-wrap">
+      <p class="pt-legend-hint">Filter: tap families to combine (or All for the whole table).</p>
+      <div class="pt-legend" role="group" aria-label="Element categories">
+        <button type="button" class="pt-legend-btn ${allOn ? "is-on" : ""}" data-cat="all"
+          aria-pressed="${allOn}">All</button>
+        ${CATEGORY_ORDER.map((c) => {
+          const on = cats.includes(c);
+          return `<button type="button" class="pt-legend-btn pt-cat-${escapeHtml(
             c
-          )}" data-cat="${escapeHtml(c)}">${escapeHtml(labelFor(c))}</button>`
-      ).join("")}
+          )} ${on ? "is-on" : ""}" data-cat="${escapeHtml(c)}"
+            aria-pressed="${on}">${escapeHtml(labelFor(c))}</button>`;
+        }).join("")}
+      </div>
     </div>`;
 }
 
@@ -454,12 +497,12 @@ function render() {
         <div>
           <h2 class="section-title">Periodic Table</h2>
           <p class="lede">Click an element for discovery, naming, and trivia facts.
-            Listen for a spoken tour, or quiz yourself on the whole table or one group.</p>
+            Filter one or more families, then listen or quiz on that selection.</p>
         </div>
       </div>
       ${speechPanelHtml()}
-      ${quizPanelHtml()}
       ${legendHtml()}
+      ${quizPanelHtml()}
       <div class="pt-stage">
         <div class="pt-grid" role="grid" aria-label="Periodic table">${buildMainGrid()}</div>
         <p class="pt-series-label">Lanthanides</p>
@@ -486,14 +529,9 @@ function bind() {
 
   pt.root.querySelectorAll(".pt-legend-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      pt.focusCategory = btn.dataset.cat || "all";
+      toggleFocusCategory(btn.dataset.cat || "all");
       applyCategoryFilter();
     });
-  });
-
-  pt.root.querySelector("#pt-group-select")?.addEventListener("change", (e) => {
-    pt.focusCategory = e.target.value || "all";
-    applyCategoryFilter();
   });
 
   pt.root.querySelector("#pt-voice-select")?.addEventListener("change", (e) => {
@@ -504,10 +542,7 @@ function bind() {
   });
 
   pt.root.querySelector("#pt-listen")?.addEventListener("click", () => {
-    const cat = pt.root.querySelector("#pt-group-select")?.value || "all";
-    pt.focusCategory = cat;
-    applyCategoryFilter();
-    void speakTour(cat);
+    void speakTour();
   });
 
   pt.root.querySelector("#pt-stop")?.addEventListener("click", () => {
@@ -517,20 +552,16 @@ function bind() {
 
   const startQuiz = (difficulty) => {
     stopTour();
-    const cat =
-      pt.root.querySelector("#pt-group-select")?.value ||
-      pt.focusCategory ||
-      "all";
-    pt.focusCategory = cat;
     applyCategoryFilter();
-    const focus = elementsForScope(cat);
+    const cats = [...(pt.focusCategories || [])];
+    const focus = elementsForScope(cats);
     const all = pt.data?.elements || [];
     pt.onStartQuiz?.({
       focus,
       all,
       categoryLabels: pt.data?.categoryLabels || {},
-      scopeLabel: scopeLabel(cat),
-      scopeId: cat,
+      scopeLabel: scopeLabel(cats),
+      scopeId: scopeId(cats),
       difficulty,
     });
   };
@@ -538,8 +569,8 @@ function bind() {
   pt.root.querySelector("#pt-quiz-easy")?.addEventListener("click", () => {
     startQuiz("easy");
   });
-  pt.root.querySelector("#pt-quiz-start")?.addEventListener("click", () => {
-    startQuiz("practice");
+  pt.root.querySelector("#pt-quiz-hard")?.addEventListener("click", () => {
+    startQuiz("hard");
   });
 
   bindDetailSpeech();

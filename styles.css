@@ -88,6 +88,18 @@ body {
   transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
 
+.nav-btn#home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav-icon {
+  width: 0.95rem;
+  height: 0.95rem;
+  flex: 0 0 auto;
+}
+
 .nav-btn:hover,
 .batch-btn:hover,
 .president-btn:hover,
@@ -1205,11 +1217,21 @@ body {
   flex: 0 0 auto;
 }
 
+.pt-legend-wrap {
+  margin: 0 0 1rem;
+}
+
+.pt-legend-hint {
+  margin: 0 0 0.45rem;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
 .pt-legend {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin: 0 0 1rem;
+  margin: 0;
 }
 
 .pt-legend-btn {
