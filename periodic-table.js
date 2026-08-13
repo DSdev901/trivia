@@ -406,7 +406,7 @@ function speechPanelHtml() {
       <div class="speech-panel-top">
         <div>
           <p class="speech-kicker">Read aloud</p>
-          <p class="speech-lede">Hear each element’s number, name, discovery, and facts — tours follow the family filter below (one or more groups, or All).</p>
+          <p class="speech-lede">Hear each element’s number, name, discovery, and facts — tours follow the family filter below (one or more groups, or All). On phones, the screen stays awake while listening when allowed, and the app tries to keep reading if you lock the screen (works best on Android; iOS often still pauses).</p>
         </div>
         <div class="speech-actions" role="group" aria-label="Playback">
           <button type="button" class="speech-btn speech-btn-primary" id="pt-listen">Listen</button>

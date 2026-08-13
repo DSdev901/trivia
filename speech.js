@@ -442,6 +442,211 @@ export function toConversationalSpeech(president, fact, factNumber) {
 }
 
 let browserSpeakSession = 0;
+let wakeLockSentinel = null;
+let speechKeepaliveActive = false;
+let speechKeepaliveOwner = 0;
+let keepaliveAudio = null;
+let keepaliveAudioUrl = null;
+let keepaliveAudioContext = null;
+let keepaliveBufferSource = null;
+
+function wakeLockSupported() {
+  return typeof navigator !== "undefined" && "wakeLock" in navigator;
+}
+
+/** Tiny silent WAV so the OS treats us as active media while speaking. */
+function silentWavObjectUrl(seconds = 2) {
+  const sampleRate = 8000;
+  const numSamples = Math.max(1, Math.floor(sampleRate * seconds));
+  const dataSize = numSamples * 2;
+  const buffer = new ArrayBuffer(44 + dataSize);
+  const view = new DataView(buffer);
+  const writeStr = (offset, str) => {
+    for (let i = 0; i < str.length; i += 1) view.setUint8(offset + i, str.charCodeAt(i));
+  };
+  writeStr(0, "RIFF");
+  view.setUint32(4, 36 + dataSize, true);
+  writeStr(8, "WAVE");
+  writeStr(12, "fmt ");
+  view.setUint32(16, 16, true);
+  view.setUint16(20, 1, true);
+  view.setUint16(22, 1, true);
+  view.setUint32(24, sampleRate, true);
+  view.setUint32(28, sampleRate * 2, true);
+  view.setUint16(32, 2, true);
+  view.setUint16(34, 16, true);
+  writeStr(36, "data");
+  view.setUint32(40, dataSize, true);
+  return URL.createObjectURL(new Blob([buffer], { type: "audio/wav" }));
+}
+
+function setMediaSessionPlaying(playing) {
+  if (!navigator.mediaSession) return;
+  try {
+    navigator.mediaSession.playbackState = playing ? "playing" : "none";
+    if (playing) {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: "Trivia Helper",
+        artist: "Reading aloud",
+        album: "Study",
+      });
+    }
+  } catch {
+    /* ignore */
+  }
+}
+
+function startWebAudioKeepalive() {
+  const AC = window.AudioContext || window.webkitAudioContext;
+  if (!AC) return;
+  try {
+    if (!keepaliveAudioContext) keepaliveAudioContext = new AC();
+    if (keepaliveAudioContext.state === "suspended") {
+      void keepaliveAudioContext.resume();
+    }
+    stopWebAudioKeepalive();
+    const buffer = keepaliveAudioContext.createBuffer(
+      1,
+      keepaliveAudioContext.sampleRate,
+      keepaliveAudioContext.sampleRate
+    );
+    const source = keepaliveAudioContext.createBufferSource();
+    source.buffer = buffer;
+    source.loop = true;
+    const gain = keepaliveAudioContext.createGain();
+    // Non-zero so some mobile browsers keep the audio session alive.
+    gain.gain.value = 0.0001;
+    source.connect(gain);
+    gain.connect(keepaliveAudioContext.destination);
+    source.start();
+    keepaliveBufferSource = source;
+  } catch {
+    /* ignore */
+  }
+}
+
+function stopWebAudioKeepalive() {
+  try {
+    keepaliveBufferSource?.stop();
+  } catch {
+    /* ignore */
+  }
+  keepaliveBufferSource = null;
+}
+
+async function startPlaybackKeepalive() {
+  setMediaSessionPlaying(true);
+  try {
+    if (!keepaliveAudio) {
+      keepaliveAudioUrl = silentWavObjectUrl(2);
+      keepaliveAudio = new Audio(keepaliveAudioUrl);
+      keepaliveAudio.loop = true;
+      keepaliveAudio.preload = "auto";
+      // Near-silent; volume 0 is ignored as "not playing" on some phones.
+      keepaliveAudio.volume = 0.001;
+    }
+    keepaliveAudio.currentTime = 0;
+    await keepaliveAudio.play();
+  } catch {
+    /* Autoplay / policy — fall through to Web Audio. */
+  }
+  startWebAudioKeepalive();
+}
+
+function stopPlaybackKeepalive() {
+  try {
+    keepaliveAudio?.pause();
+    if (keepaliveAudio) keepaliveAudio.currentTime = 0;
+  } catch {
+    /* ignore */
+  }
+  stopWebAudioKeepalive();
+  setMediaSessionPlaying(false);
+}
+
+async function ensureKeepalivePlaying() {
+  if (!speechKeepaliveActive) return;
+  try {
+    if (keepaliveAudioContext?.state === "suspended") {
+      await keepaliveAudioContext.resume();
+    }
+  } catch {
+    /* ignore */
+  }
+  try {
+    if (keepaliveAudio?.paused) await keepaliveAudio.play();
+  } catch {
+    /* ignore */
+  }
+  if (!keepaliveBufferSource) startWebAudioKeepalive();
+  try {
+    if (window.speechSynthesis?.paused) window.speechSynthesis.resume();
+  } catch {
+    /* ignore */
+  }
+  setMediaSessionPlaying(true);
+}
+
+/** Keep the screen awake while facts are spoken (phones especially). */
+async function acquireWakeLock(owner) {
+  if (!wakeLockSupported()) return;
+  speechKeepaliveOwner = owner;
+  try {
+    if (wakeLockSentinel && !wakeLockSentinel.released) return;
+    wakeLockSentinel = await navigator.wakeLock.request("screen");
+    wakeLockSentinel.addEventListener("release", () => {
+      if (wakeLockSentinel?.released) wakeLockSentinel = null;
+    });
+  } catch {
+    /* Denied, low power, or unsupported context — speech still works. */
+  }
+}
+
+async function releaseWakeLock(owner = null) {
+  if (owner != null && owner !== speechKeepaliveOwner) return;
+  const lock = wakeLockSentinel;
+  wakeLockSentinel = null;
+  if (!lock || lock.released) return;
+  try {
+    await lock.release();
+  } catch {
+    /* ignore */
+  }
+}
+
+async function beginSpeechKeepalive(owner) {
+  speechKeepaliveActive = true;
+  speechKeepaliveOwner = owner;
+  await startPlaybackKeepalive();
+  await acquireWakeLock(owner);
+}
+
+async function endSpeechKeepalive(owner = null) {
+  if (owner != null && owner !== speechKeepaliveOwner) return;
+  speechKeepaliveActive = false;
+  speechKeepaliveOwner = 0;
+  stopPlaybackKeepalive();
+  await releaseWakeLock();
+}
+
+if (typeof document !== "undefined") {
+  document.addEventListener("visibilitychange", () => {
+    if (!speechKeepaliveActive) return;
+    if (document.visibilityState === "visible") {
+      void acquireWakeLock(speechKeepaliveOwner || browserSpeakSession);
+      void ensureKeepalivePlaying();
+    } else {
+      // Manual lock / app switch: try to keep TTS + media session alive.
+      void ensureKeepalivePlaying();
+    }
+  });
+  document.addEventListener("freeze", () => {
+    if (speechKeepaliveActive) void ensureKeepalivePlaying();
+  });
+  document.addEventListener("resume", () => {
+    if (speechKeepaliveActive) void ensureKeepalivePlaying();
+  });
+}
 
 export function speechSupported() {
   return typeof window !== "undefined" && "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
@@ -449,6 +654,7 @@ export function speechSupported() {
 
 export function stopSpeech() {
   browserSpeakSession += 1;
+  void endSpeechKeepalive();
   if (!speechSupported()) return;
   // Chromium often needs cancel more than once to fully halt speech.
   window.speechSynthesis.cancel();
@@ -527,6 +733,7 @@ export async function speakLines(lines, opts = {}) {
   const loopPadMs = opts.loopPadMs ?? 7000;
 
   if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+  await beginSpeechKeepalive(session);
 
   try {
     for (let loop = 0; loop < loops; loop += 1) {
@@ -551,22 +758,32 @@ export async function speakLines(lines, opts = {}) {
         const chunks = chunkForSpeech(lines[i]);
         for (let c = 0; c < chunks.length; c += 1) {
           if (session !== browserSpeakSession) break;
+          const backgrounded =
+            typeof document !== "undefined" && document.visibilityState === "hidden";
+          if (backgrounded) {
+            void ensureKeepalivePlaying();
+          }
           const keepGoing = await speakUtterance(chunks[c], voice, rate, session);
           if (!keepGoing || session !== browserSpeakSession) break;
           if (c < chunks.length - 1) {
-            const ok = await wait(140, session);
+            const gap = backgrounded ? 40 : 140;
+            const ok = await wait(gap, session);
             if (!ok) break;
           }
         }
         if (session !== browserSpeakSession) break;
         if (i < lines.length - 1) {
-          const ok = await wait(320, session);
+          const backgrounded =
+            typeof document !== "undefined" && document.visibilityState === "hidden";
+          const gap = backgrounded ? 60 : 320;
+          const ok = await wait(gap, session);
           if (!ok) break;
         }
       }
     }
   } finally {
     opts.onEnd?.();
+    await endSpeechKeepalive(session);
   }
 }
 
