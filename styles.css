@@ -1849,6 +1849,15 @@ body {
   fill: #3f8fc8;
 }
 
+.geo-map-frame .geo-island-dot {
+  stroke: #f4f8fb;
+  stroke-width: 1.4;
+}
+
+.geo-map-frame .geo-island-dot.is-out {
+  stroke: none;
+}
+
 .geo-map-frame .geo-marker {
   fill: #6b8fad;
   stroke: #fff;

@@ -25,7 +25,7 @@ const MODE_META = {
   },
   type: {
     label: "Type",
-    blurb: "Type the name — spelling counts; close matches count (Seterra’s Type mode).",
+    blurb: "Type the name of the highlighted place (Seterra’s Type mode).",
   },
   outline: {
     label: "Outlines",
@@ -101,42 +101,45 @@ function normalizeAnswer(s) {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\bst\b/g, "saint")
     .replace(/\s+/g, " ")
+    .replace(/^the /, "")
     .trim();
 }
 
-function answersMatch(input, expected) {
+const ANSWER_ALIAS_GROUPS = [
+  ["united states", "usa", "us", "america", "united states of america"],
+  ["united kingdom", "uk", "britain", "great britain", "england"],
+  ["south korea", "republic of korea"],
+  ["north korea", "dprk", "democratic peoples republic of korea"],
+  ["united arab emirates", "uae"],
+  ["washington d c", "washington dc", "dc"],
+  ["czechia", "czech republic"],
+  ["myanmar", "burma"],
+  ["eswatini", "swaziland"],
+  ["cabo verde", "cape verde"],
+  ["ivory coast", "cote d ivoire", "cote divoire"],
+  ["timor leste", "east timor"],
+  ["north macedonia", "macedonia"],
+  ["bosnia and herzegovina", "bosnia"],
+  ["dr congo", "drc", "congo kinshasa", "democratic republic of the congo"],
+  ["congo", "republic of the congo", "congo brazzaville"],
+  ["vatican city", "vatican", "holy see"],
+  ["netherlands", "holland"],
+];
+
+function answersMatch(input, expected, { kind } = {}) {
   const a = normalizeAnswer(input);
   const b = normalizeAnswer(expected);
   if (!a || !b) return false;
   if (a === b) return true;
-  if (b.startsWith(a) && a.length >= Math.min(4, b.length)) return true;
-  if (a.length >= 4 && b.includes(a)) return true;
-  const last = b.split(" ").filter(Boolean).pop();
-  if (last && a === last && a.length >= 4) return true;
-  // Common variants
-  const aliases = {
-    "united states": ["usa", "us", "america", "united states of america"],
-    "united kingdom": ["uk", "britain", "great britain", "england"],
-    "south korea": ["korea", "republic of korea"],
-    "north korea": ["dprk", "democratic peoples republic of korea"],
-    "united arab emirates": ["uae"],
-    "washington d c": ["washington dc", "washington", "dc"],
-    "czechia": ["czech republic"],
-    "czech republic": ["czechia"],
-    "myanmar": ["burma"],
-    "eswatini": ["swaziland"],
-    "cabo verde": ["cape verde"],
-    "cote d ivoire": ["ivory coast", "cote divoire"],
-    "timor leste": ["east timor"],
-    "north macedonia": ["macedonia"],
-    "bosnia and herzegovina": ["bosnia"],
-    "democratic republic of the congo": ["drc", "congo kinshasa", "dr congo"],
-    "republic of the congo": ["congo brazzaville", "congo"],
-    "vatican city": ["vatican", "holy see"],
-  };
-  for (const [canon, list] of Object.entries(aliases)) {
-    if (b === canon && list.includes(a)) return true;
+  for (const group of ANSWER_ALIAS_GROUPS) {
+    if (group.includes(a) && group.includes(b)) return true;
+  }
+  if (b === "washington d c" && a === "washington") return true;
+  if (kind === "teams") {
+    const last = b.split(" ").filter(Boolean).pop();
+    if (last && last.length >= 4 && a === last) return true;
   }
   return false;
 }
@@ -203,29 +206,326 @@ function ensureBaseViewBox(svg) {
   }
 }
 
-function boundsForIds(host, ids) {
+const PATH_NUM_RE = /-?\d*\.?\d+(?:e[-+]?\d+)?/gi;
+const CLUSTER_GAP = 45;
+const DATELINE_FRACTION = 0.45;
+const WIDE_COUNTRY_FRACTION = 0.3;
+
+function trimNum(n) {
+  return String(Math.round(n * 1000) / 1000);
+}
+
+function pairsFromPath(d) {
+  const nums = [];
+  String(d).replace(PATH_NUM_RE, (n) => {
+    nums.push(parseFloat(n));
+    return n;
+  });
+  const pts = [];
+  for (let i = 0; i + 1 < nums.length; i += 2) pts.push([nums[i], nums[i + 1]]);
+  return pts;
+}
+
+function boxFromPts(pts) {
+  if (!pts.length) return null;
   let minX = Infinity;
   let minY = Infinity;
   let maxX = -Infinity;
   let maxY = -Infinity;
-  let found = false;
+  for (const [x, y] of pts) {
+    minX = Math.min(minX, x);
+    minY = Math.min(minY, y);
+    maxX = Math.max(maxX, x);
+    maxY = Math.max(maxY, y);
+  }
+  return {
+    minX,
+    minY,
+    maxX,
+    maxY,
+    cx: (minX + maxX) / 2,
+    cy: (minY + maxY) / 2,
+    area: Math.max(0.01, (maxX - minX) * (maxY - minY)),
+  };
+}
+
+function subpathRecords(d) {
+  return String(d)
+    .split(/(?=[Mm])/)
+    .filter((chunk) => /^[Mm]/.test(chunk))
+    .map((raw) => {
+      const box = boxFromPts(pairsFromPath(raw));
+      return box ? { ...box, raw } : null;
+    })
+    .filter(Boolean);
+}
+
+function circleRecord(el) {
+  const cx = parseFloat(el.getAttribute("cx"));
+  const cy = parseFloat(el.getAttribute("cy"));
+  const r = parseFloat(el.getAttribute("r") || "5") || 5;
+  if (Number.isNaN(cx) || Number.isNaN(cy)) return null;
+  return {
+    minX: cx - r,
+    minY: cy - r,
+    maxX: cx + r,
+    maxY: cy + r,
+    cx,
+    cy,
+    area: 4 * r * r,
+  };
+}
+
+function elementParts(el) {
+  if (el.tagName.toLowerCase() === "circle") {
+    const rec = circleRecord(el);
+    return rec ? [rec] : [];
+  }
+  const d = el.getAttribute("d");
+  return d ? subpathRecords(d) : [];
+}
+
+function rectDist(a, b) {
+  const dx = Math.max(0, b.minX - a.maxX, a.minX - b.maxX);
+  const dy = Math.max(0, b.minY - a.maxY, a.minY - b.maxY);
+  return Math.hypot(dx, dy);
+}
+
+function clusterParts(parts, gap = CLUSTER_GAP) {
+  const n = parts.length;
+  if (!n) return [];
+  const parent = parts.map((_, i) => i);
+  const find = (i) => {
+    while (parent[i] !== i) {
+      parent[i] = parent[parent[i]];
+      i = parent[i];
+    }
+    return i;
+  };
+  for (let i = 0; i < n; i += 1) {
+    for (let j = i + 1; j < n; j += 1) {
+      if (rectDist(parts[i], parts[j]) <= gap) {
+        const ri = find(i);
+        const rj = find(j);
+        if (ri !== rj) parent[rj] = ri;
+      }
+    }
+  }
+  const groups = new Map();
+  parts.forEach((part, i) => {
+    const root = find(i);
+    if (!groups.has(root)) groups.set(root, []);
+    groups.get(root).push(part);
+  });
+  return [...groups.values()]
+    .map((group) => {
+      const minX = Math.min(...group.map((p) => p.minX));
+      const minY = Math.min(...group.map((p) => p.minY));
+      const maxX = Math.max(...group.map((p) => p.maxX));
+      const maxY = Math.max(...group.map((p) => p.maxY));
+      return {
+        minX,
+        minY,
+        maxX,
+        maxY,
+        cx: (minX + maxX) / 2,
+        cy: (minY + maxY) / 2,
+        area: group.reduce((sum, p) => sum + p.area, 0),
+      };
+    })
+    .sort((a, b) => b.area - a.area);
+}
+
+function mainlandForEl(el) {
+  return clusterParts(elementParts(el))[0] || null;
+}
+
+function regionsForId(host, id) {
+  return [...host.querySelectorAll(`.geo-region[data-id="${CSS.escape(id)}"]`)];
+}
+
+function bboxUnion(boxes) {
+  if (!boxes.length) return null;
+  return {
+    minX: Math.min(...boxes.map((b) => b.minX)),
+    minY: Math.min(...boxes.map((b) => b.minY)),
+    maxX: Math.max(...boxes.map((b) => b.maxX)),
+    maxY: Math.max(...boxes.map((b) => b.maxY)),
+  };
+}
+
+function unwrapDx(cx, coreX, mapW) {
+  if (cx - coreX > mapW * DATELINE_FRACTION) return -mapW;
+  if (coreX - cx > mapW * DATELINE_FRACTION) return mapW;
+  return 0;
+}
+
+function shiftPathXs(d, dx) {
+  let expectingX = true;
+  return String(d).replace(PATH_NUM_RE, (num) => {
+    if (expectingX) {
+      expectingX = false;
+      return trimNum(parseFloat(num) + dx);
+    }
+    expectingX = true;
+    return num;
+  });
+}
+
+function packCorePoint(host, ids) {
+  const cxs = [];
+  const cys = [];
   for (const id of ids) {
-    host.querySelectorAll(`.geo-region[data-id="${CSS.escape(id)}"]`).forEach((el) => {
+    regionsForId(host, id).forEach((el) => {
+      const m = mainlandForEl(el);
+      if (!m) return;
+      cxs.push(m.cx);
+      cys.push(m.cy);
+    });
+  }
+  if (!cxs.length) return null;
+  cxs.sort((a, b) => a - b);
+  cys.sort((a, b) => a - b);
+  return {
+    x: cxs[Math.floor(cxs.length / 2)],
+    y: cys[Math.floor(cys.length / 2)],
+  };
+}
+
+function mapSize(svg) {
+  const raw = (geo._baseViewBox || svg.getAttribute("viewBox") || "0 0 1000 520")
+    .split(/\s+/)
+    .map(Number);
+  return { mapW: raw[2] || 1000, mapH: raw[3] || 520 };
+}
+
+function isWorldCountriesMap() {
+  return geo.pack?.map === "world-countries";
+}
+
+function packFitBounds(host, ids, { mapW, mapH, core }) {
+  const boxes = [];
+  for (const id of ids) {
+    regionsForId(host, id).forEach((el) => {
+      const m = mainlandForEl(el);
+      if (!m) return;
+      let { minX, minY, maxX, maxY, cx, cy } = m;
+      const dx = core ? unwrapDx(cx, core.x, mapW) : 0;
+      if (dx) {
+        minX += dx;
+        maxX += dx;
+        cx += dx;
+      }
+      if (maxX - minX > mapW * WIDE_COUNTRY_FRACTION) return;
+      boxes.push({ minX, minY, maxX, maxY, cx, cy });
+    });
+  }
+  if (!boxes.length) return { useFullMap: true };
+  const cxs = boxes.map((b) => b.cx).sort((a, b) => a - b);
+  const cys = boxes.map((b) => b.cy).sort((a, b) => a - b);
+  const mx = cxs[Math.floor(cxs.length / 2)];
+  const my = cys[Math.floor(cys.length / 2)];
+  const dists = boxes.map((b) => Math.hypot(b.cx - mx, b.cy - my)).sort((a, b) => a - b);
+  const mad = dists[Math.floor(dists.length / 2)] || 1;
+  const radius = Math.max(200, mad * 3);
+  let kept = boxes.filter((b) => Math.hypot(b.cx - mx, b.cy - my) <= radius);
+  if (kept.length < Math.max(2, Math.floor(boxes.length * 0.4))) kept = boxes;
+  const bounds = bboxUnion(kept);
+  if (!bounds) return { useFullMap: true };
+  const w = bounds.maxX - bounds.minX;
+  const h = bounds.maxY - bounds.minY;
+  if (w > mapW * 0.62 && h > mapH * 0.55) return { useFullMap: true };
+  return bounds;
+}
+
+function simpleBoundsForIds(host, ids) {
+  const boxes = [];
+  for (const id of ids) {
+    regionsForId(host, id).forEach((el) => {
       try {
         const b = el.getBBox();
         if (!b.width && !b.height) return;
-        found = true;
-        minX = Math.min(minX, b.x);
-        minY = Math.min(minY, b.y);
-        maxX = Math.max(maxX, b.x + b.width);
-        maxY = Math.max(maxY, b.y + b.height);
+        boxes.push({
+          minX: b.x,
+          minY: b.y,
+          maxX: b.x + b.width,
+          maxY: b.y + b.height,
+        });
       } catch {
         /* ignore */
       }
     });
   }
-  if (!found) return null;
-  return { minX, minY, maxX, maxY };
+  return bboxUnion(boxes);
+}
+
+function mainlandBoundsForIds(host, ids) {
+  const boxes = [];
+  for (const id of ids) {
+    regionsForId(host, id).forEach((el) => {
+      const m = mainlandForEl(el);
+      if (m) boxes.push(m);
+    });
+  }
+  return bboxUnion(boxes);
+}
+
+function unwrapPackRegions(host, svg) {
+  if (!isWorldCountriesMap() || host.dataset.geoUnwrapped === "1") return;
+  const ids = [...packItemIds()];
+  if (ids.length < 3) return;
+  const { mapW, mapH } = mapSize(svg);
+  const core = packCorePoint(host, ids);
+  if (!core) return;
+  const preview = packFitBounds(host, ids, { mapW, mapH, core });
+  if (!preview || preview.useFullMap) return;
+
+  ids.forEach((id) => {
+    regionsForId(host, id).forEach((el) => {
+      if (el.tagName.toLowerCase() === "circle") {
+        const rec = circleRecord(el);
+        if (!rec) return;
+        const dx = unwrapDx(rec.cx, core.x, mapW);
+        if (dx) el.setAttribute("cx", trimNum(rec.cx + dx));
+        return;
+      }
+      const d = el.getAttribute("d");
+      if (!d) return;
+      const next = d
+        .split(/(?=[Mm])/)
+        .map((chunk) => {
+          if (!/^[Mm]/.test(chunk)) return chunk;
+          const rec = subpathRecords(chunk)[0];
+          if (!rec) return chunk;
+          const dx = unwrapDx(rec.cx, core.x, mapW);
+          return dx ? shiftPathXs(chunk, dx) : chunk;
+        })
+        .join("");
+      if (next !== d) el.setAttribute("d", next);
+    });
+  });
+  host.dataset.geoUnwrapped = "1";
+}
+
+function coverOcean(svg, minX, minY, w, h) {
+  const rect = svg.querySelector("rect.geo-ocean-bg");
+  if (!rect) return;
+  const pad = 250;
+  rect.setAttribute("x", String(minX - pad));
+  rect.setAttribute("y", String(minY - pad));
+  rect.setAttribute("width", String(w + pad * 2));
+  rect.setAttribute("height", String(h + pad * 2));
+}
+
+function applyViewBox(svg, bounds, padRatio, storeAsPack) {
+  const { minX, minY, maxX, maxY } = bounds;
+  const pad = Math.max(10, (maxX - minX) * padRatio, (maxY - minY) * padRatio);
+  const w = Math.max(30, maxX - minX + pad * 2);
+  const h = Math.max(30, maxY - minY + pad * 2);
+  const vb = `${minX - pad} ${minY - pad} ${w} ${h}`;
+  svg.setAttribute("viewBox", vb);
+  coverOcean(svg, minX - pad, minY - pad, w, h);
+  if (storeAsPack) geo._packViewBox = vb;
 }
 
 function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false } = {}) {
@@ -233,18 +533,31 @@ function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false } = {}) {
   const svg = host?.querySelector("svg");
   if (!host || !svg) return;
   ensureBaseViewBox(svg);
-  const bounds = boundsForIds(host, ids);
+  unwrapPackRegions(host, svg);
+
+  let bounds;
+  if (isWorldCountriesMap()) {
+    if (ids.length <= 1) {
+      bounds = mainlandBoundsForIds(host, ids);
+    } else {
+      const { mapW, mapH } = mapSize(svg);
+      const core = packCorePoint(host, ids);
+      bounds = packFitBounds(host, ids, { mapW, mapH, core });
+      if (bounds?.useFullMap) {
+        resetMapViewBox();
+        if (storeAsPack) geo._packViewBox = geo._baseViewBox;
+        return;
+      }
+    }
+  } else {
+    bounds = simpleBoundsForIds(host, ids);
+  }
+
   if (!bounds) {
     resetMapViewBox();
     return;
   }
-  const { minX, minY, maxX, maxY } = bounds;
-  const pad = Math.max(10, (maxX - minX) * padRatio, (maxY - minY) * padRatio);
-  const w = Math.max(30, maxX - minX + pad * 2);
-  const h = Math.max(30, maxY - minY + pad * 2);
-  const vb = `${minX - pad} ${minY - pad} ${w} ${h}`;
-  svg.setAttribute("viewBox", vb);
-  if (storeAsPack) geo._packViewBox = vb;
+  applyViewBox(svg, bounds, padRatio, storeAsPack);
 }
 
 function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
@@ -762,7 +1075,9 @@ function bindPlay() {
       e.preventDefault();
       if (geo.answered) return;
       const item = currentItem();
-      const ok = answersMatch(input.value, expectedAnswer(item));
+      const ok = answersMatch(input.value, expectedAnswer(item), {
+        kind: quizKind(),
+      });
       judge(ok);
     });
     return;

@@ -125,6 +125,14 @@ for (const [iso, ds] of byIso) {
   contPaths.get(cont).push(...ds);
 }
 
+const extras = [];
+if (!byIso.has("TV")) {
+  const [x, y] = projection([179.1962, -8.5211]);
+  extras.push(
+    `<circle id="TV" data-id="TV" class="geo-region geo-island-dot" cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="5.5"/>`
+  );
+}
+
 const countrySvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="100%" height="100%" role="img" aria-label="World countries map">
   <rect class="geo-ocean-bg" width="${width}" height="${height}"/>
   ${[...byIso.entries()]
@@ -134,6 +142,7 @@ const countrySvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width
         `<path id="${iso}" data-id="${iso}" class="geo-region" d="${ds.join(" ")}"/>`
     )
     .join("\n  ")}
+  ${extras.join("\n  ")}
 </svg>
 `;
 
