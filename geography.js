@@ -67,7 +67,7 @@ const MODE_META = {
   },
   choice: {
     label: "Multiple choice",
-    blurb: "Classic four-option drills without needing the map.",
+    blurb: "A place is highlighted — pick the matching answer from four options.",
   },
   capitals: {
     label: "Capitals",
@@ -270,6 +270,19 @@ function quizKind() {
 
 function isOutlineView() {
   return geo.mode === "outline" || quizKind() === "outlines";
+}
+
+function playUsesMap() {
+  return (
+    Boolean(geo.mapSvg) &&
+    ["pin", "name", "type", "capitals", "outline", "choice"].includes(geo.mode)
+  );
+}
+
+function playHighlightsTarget(afterAnswer = false) {
+  if (!playUsesMap()) return false;
+  if (geo.mode === "pin") return afterAnswer;
+  return true;
 }
 
 function packItemIds() {
@@ -1425,10 +1438,7 @@ function renderPlay() {
     geo._abbrAskName = Math.random() < 0.5;
   }
 
-  const showMap =
-    Boolean(geo.mapSvg) &&
-    (["pin", "name", "type", "capitals", "outline"].includes(geo.mode) ||
-      (geo.mode === "choice" && isOutlineView()));
+  const showMap = playUsesMap();
 
   let prompt = "";
   let controls = "";
@@ -1479,13 +1489,7 @@ function renderPlay() {
       </div>
     </div>`;
 
-  if (
-    geo.mode === "name" ||
-    geo.mode === "capitals" ||
-    geo.mode === "outline" ||
-    (geo.mode === "type" && geo.mapSvg) ||
-    (geo.mode === "choice" && isOutlineView() && geo.mapSvg)
-  ) {
+  if (playHighlightsTarget()) {
     paintMap(item.id, { dimOthers: true });
   } else if (showMap) {
     paintMap(null);
@@ -1574,14 +1578,7 @@ function judge(ok, clickedMapId = null, clickedBtn = null) {
   }
   if (nextRow) nextRow.hidden = false;
 
-  if (
-    geo.mode === "pin" ||
-    geo.mode === "name" ||
-    geo.mode === "capitals" ||
-    geo.mode === "outline" ||
-    (geo.mode === "type" && geo.mapSvg) ||
-    (geo.mode === "choice" && isOutlineView() && geo.mapSvg)
-  ) {
+  if (playHighlightsTarget(true)) {
     paintMap(item.id, {
       dimOthers: true,
       flash: {
