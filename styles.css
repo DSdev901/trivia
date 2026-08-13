@@ -1795,6 +1795,45 @@ body {
   cursor: default;
 }
 
+.geo-map-frame.is-outline-mode {
+  background: #edf2f7;
+}
+
+.geo-map-frame .geo-region.is-hidden-outline {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.geo-map-frame .geo-region.is-silhouette {
+  fill: #3d4f63;
+  stroke: none;
+  opacity: 1;
+}
+
+.geo-map-frame .geo-lake {
+  fill: #5ba3d9;
+  stroke: #fff;
+  stroke-width: 1.5;
+}
+
+.geo-map-frame .geo-lake:hover {
+  fill: #3f8fc8;
+}
+
+.geo-map-frame .geo-marker {
+  fill: #6b8fad;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.geo-map-frame .geo-marker:hover {
+  fill: #4f7599;
+}
+
+.geo-map-frame .geo-land-bg {
+  pointer-events: none;
+}
+
 .geo-group {
   margin-top: 1.5rem;
 }

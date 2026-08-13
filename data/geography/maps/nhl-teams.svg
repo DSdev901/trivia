@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" width="100%" height="100%" role="img" aria-label="NHL Teams">
+  <rect width="1000" height="720" fill="#dce9f5"/>
+  
+  <path fill="#c8d5e3" d="M120,80 C200,40 350,30 480,60 C600,90 720,50 820,90 L880,200 C900,320 860,420 800,480 C720,560 580,600 420,580 C280,560 160,500 100,400 C60,320 70,180 120,80 Z"/>
+  <path fill="#c8d5e3" d="M200,480 C280,470 360,500 400,560 C420,600 380,650 300,660 C220,670 160,620 150,560 C140,510 160,490 200,480 Z"/>
+
+  <circle id="ANA" data-id="ANA" class="geo-region geo-marker" cx="432.1" cy="474.1" r="9"/>
+  <circle id="BOS" data-id="BOS" class="geo-region geo-marker" cx="835.7" cy="367.8" r="9"/>
+  <circle id="BUF" data-id="BUF" class="geo-region geo-marker" cx="768.3" cy="361.5" r="9"/>
+  <circle id="CGY" data-id="CGY" class="geo-region geo-marker" cx="464.9" cy="260.2" r="9"/>
+  <circle id="CAR" data-id="CAR" class="geo-region geo-marker" cx="769.7" cy="449.4" r="9"/>
+  <circle id="CHI" data-id="CHI" class="geo-region geo-marker" cx="692.5" cy="373.9" r="9"/>
+  <circle id="COL" data-id="COL" class="geo-region geo-marker" cx="543" cy="400.3" r="9"/>
+  <circle id="CBJ" data-id="CBJ" class="geo-region geo-marker" cx="732.7" cy="397.6" r="9"/>
+  <circle id="DAL" data-id="DAL" class="geo-region geo-marker" cx="613.7" cy="486.7" r="9"/>
+  <circle id="DET" data-id="DET" class="geo-region geo-marker" cx="732.3" cy="368.3" r="9"/>
+  <circle id="EDM" data-id="EDM" class="geo-region geo-marker" cx="469.8" cy="229" r="9"/>
+  <circle id="FLA" data-id="FLA" class="geo-region geo-marker" cx="755.8" cy="569" r="9"/>
+  <circle id="LAK" data-id="LAK" class="geo-region geo-marker" cx="428.8" cy="471.2" r="9"/>
+  <circle id="MIN" data-id="MIN" class="geo-region geo-marker" cx="645.7" cy="335.9" r="9"/>
+  <circle id="MTL" data-id="MTL" class="geo-region geo-marker" cx="814.1" cy="329" r="9"/>
+  <circle id="NSH" data-id="NSH" class="geo-region geo-marker" cx="700.2" cy="444.9" r="9"/>
+  <circle id="NJD" data-id="NJD" class="geo-region geo-marker" cx="808.9" cy="388.2" r="9"/>
+  <circle id="NYI" data-id="NYI" class="geo-region geo-marker" cx="812.8" cy="388.3" r="9"/>
+  <circle id="NYR" data-id="NYR" class="geo-region geo-marker" cx="810.4" cy="387.9" r="9"/>
+  <circle id="OTT" data-id="OTT" class="geo-region geo-marker" cx="793.7" cy="331.4" r="9"/>
+  <circle id="PHI" data-id="PHI" class="geo-region geo-marker" cx="800.3" cy="398.5" r="9"/>
+  <circle id="PIT" data-id="PIT" class="geo-region geo-marker" cx="758.6" cy="391.8" r="9"/>
+  <circle id="SJS" data-id="SJS" class="geo-region geo-marker" cx="397.4" cy="430.4" r="9"/>
+  <circle id="SEA" data-id="SEA" class="geo-region geo-marker" cx="393.5" cy="302.6" r="9"/>
+  <circle id="STL" data-id="STL" class="geo-region geo-marker" cx="670.7" cy="414.2" r="9"/>
+  <circle id="TBL" data-id="TBL" class="geo-region geo-marker" cx="737.5" cy="547" r="9"/>
+  <circle id="TOR" data-id="TOR" class="geo-region geo-marker" cx="764" cy="352.1" r="9"/>
+  <circle id="UTA" data-id="UTA" class="geo-region geo-marker" cx="483.6" cy="387.7" r="9"/>
+  <circle id="VAN" data-id="VAN" class="geo-region geo-marker" cx="387" cy="282" r="9"/>
+  <circle id="VGK" data-id="VGK" class="geo-region geo-marker" cx="455.3" cy="445.7" r="9"/>
+  <circle id="WSH" data-id="WSH" class="geo-region geo-marker" cx="784.3" cy="410.9" r="9"/>
+  <circle id="WPG" data-id="WPG" class="geo-region geo-marker" cx="610.9" cy="274.5" r="9"/>
+</svg>

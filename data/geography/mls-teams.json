@@ -1,0 +1,248 @@
+{
+  "id": "mls-teams",
+  "name": "MLS Teams",
+  "map": "mls-teams",
+  "quiz": "teams",
+  "items": [
+    {
+      "id": "ATL",
+      "name": "Atlanta United FC",
+      "city": "Atlanta",
+      "lat": 33.76,
+      "lon": -84.4,
+      "fact": "Based in Atlanta."
+    },
+    {
+      "id": "ATX",
+      "name": "Austin FC",
+      "city": "Austin",
+      "lat": 30.39,
+      "lon": -97.72,
+      "fact": "Based in Austin."
+    },
+    {
+      "id": "CLT",
+      "name": "Charlotte FC",
+      "city": "Charlotte",
+      "lat": 35.23,
+      "lon": -80.84,
+      "fact": "Based in Charlotte."
+    },
+    {
+      "id": "CHI",
+      "name": "Chicago Fire FC",
+      "city": "Chicago",
+      "lat": 41.86,
+      "lon": -87.62,
+      "fact": "Based in Chicago."
+    },
+    {
+      "id": "CIN",
+      "name": "FC Cincinnati",
+      "city": "Cincinnati",
+      "lat": 39.12,
+      "lon": -84.52,
+      "fact": "Based in Cincinnati."
+    },
+    {
+      "id": "COL",
+      "name": "Colorado Rapids",
+      "city": "Commerce City",
+      "lat": 39.81,
+      "lon": -104.89,
+      "fact": "Based in Commerce City."
+    },
+    {
+      "id": "CLB",
+      "name": "Columbus Crew",
+      "city": "Columbus",
+      "lat": 40.01,
+      "lon": -82.99,
+      "fact": "Based in Columbus."
+    },
+    {
+      "id": "DAL",
+      "name": "FC Dallas",
+      "city": "Frisco",
+      "lat": 33.15,
+      "lon": -96.82,
+      "fact": "Based in Frisco."
+    },
+    {
+      "id": "DC",
+      "name": "D.C. United",
+      "city": "Washington",
+      "lat": 38.87,
+      "lon": -77.01,
+      "fact": "Based in Washington."
+    },
+    {
+      "id": "HOU",
+      "name": "Houston Dynamo FC",
+      "city": "Houston",
+      "lat": 29.75,
+      "lon": -95.35,
+      "fact": "Based in Houston."
+    },
+    {
+      "id": "SKC",
+      "name": "Sporting Kansas City",
+      "city": "Kansas City",
+      "lat": 39.12,
+      "lon": -94.82,
+      "fact": "Based in Kansas City."
+    },
+    {
+      "id": "LA",
+      "name": "LA Galaxy",
+      "city": "Carson",
+      "lat": 33.86,
+      "lon": -118.26,
+      "fact": "Based in Carson."
+    },
+    {
+      "id": "LAFC",
+      "name": "Los Angeles FC",
+      "city": "Los Angeles",
+      "lat": 34.01,
+      "lon": -118.28,
+      "fact": "Based in Los Angeles."
+    },
+    {
+      "id": "MIA",
+      "name": "Inter Miami CF",
+      "city": "Fort Lauderdale",
+      "lat": 26.12,
+      "lon": -80.13,
+      "fact": "Based in Fort Lauderdale."
+    },
+    {
+      "id": "MIN",
+      "name": "Minnesota United FC",
+      "city": "Saint Paul",
+      "lat": 44.95,
+      "lon": -93.17,
+      "fact": "Based in Saint Paul."
+    },
+    {
+      "id": "MTL",
+      "name": "CF Montréal",
+      "city": "Montreal",
+      "lat": 45.56,
+      "lon": -73.55,
+      "fact": "Based in Montreal."
+    },
+    {
+      "id": "NSH",
+      "name": "Nashville SC",
+      "city": "Nashville",
+      "lat": 36.13,
+      "lon": -86.81,
+      "fact": "Based in Nashville."
+    },
+    {
+      "id": "NE",
+      "name": "New England Revolution",
+      "city": "Foxborough",
+      "lat": 42.09,
+      "lon": -71.26,
+      "fact": "Based in Foxborough."
+    },
+    {
+      "id": "NYC",
+      "name": "New York City FC",
+      "city": "New York",
+      "lat": 40.83,
+      "lon": -73.93,
+      "fact": "Based in New York."
+    },
+    {
+      "id": "RBNY",
+      "name": "New York Red Bulls",
+      "city": "Harrison",
+      "lat": 40.74,
+      "lon": -74.15,
+      "fact": "Based in Harrison."
+    },
+    {
+      "id": "ORL",
+      "name": "Orlando City SC",
+      "city": "Orlando",
+      "lat": 28.54,
+      "lon": -81.39,
+      "fact": "Based in Orlando."
+    },
+    {
+      "id": "PHI",
+      "name": "Philadelphia Union",
+      "city": "Chester",
+      "lat": 39.83,
+      "lon": -75.38,
+      "fact": "Based in Chester."
+    },
+    {
+      "id": "POR",
+      "name": "Portland Timbers",
+      "city": "Portland",
+      "lat": 45.52,
+      "lon": -122.69,
+      "fact": "Based in Portland."
+    },
+    {
+      "id": "RSL",
+      "name": "Real Salt Lake",
+      "city": "Sandy",
+      "lat": 40.58,
+      "lon": -111.89,
+      "fact": "Based in Sandy."
+    },
+    {
+      "id": "SJ",
+      "name": "San Jose Earthquakes",
+      "city": "San Jose",
+      "lat": 37.35,
+      "lon": -121.92,
+      "fact": "Based in San Jose."
+    },
+    {
+      "id": "SEA",
+      "name": "Seattle Sounders FC",
+      "city": "Seattle",
+      "lat": 47.6,
+      "lon": -122.33,
+      "fact": "Based in Seattle."
+    },
+    {
+      "id": "STL",
+      "name": "St. Louis City SC",
+      "city": "St. Louis",
+      "lat": 38.63,
+      "lon": -90.19,
+      "fact": "Based in St. Louis."
+    },
+    {
+      "id": "SD",
+      "name": "San Diego FC",
+      "city": "San Diego",
+      "lat": 32.72,
+      "lon": -117.16,
+      "fact": "Based in San Diego."
+    },
+    {
+      "id": "TOR",
+      "name": "Toronto FC",
+      "city": "Toronto",
+      "lat": 43.63,
+      "lon": -79.42,
+      "fact": "Based in Toronto."
+    },
+    {
+      "id": "VAN",
+      "name": "Vancouver Whitecaps FC",
+      "city": "Vancouver",
+      "lat": 49.28,
+      "lon": -123.11,
+      "fact": "Based in Vancouver."
+    }
+  ]
+}

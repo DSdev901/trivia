@@ -1,0 +1,92 @@
+{
+  "id": "na-physical",
+  "name": "North America: Physical Features",
+  "map": "na-physical",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "rockies",
+      "name": "Rocky Mountains",
+      "fact": "Stretch from New Mexico into Canada.",
+      "lat": 45,
+      "lon": -113
+    },
+    {
+      "id": "appalachians",
+      "name": "Appalachian Mountains",
+      "fact": "Ancient range of eastern North America.",
+      "lat": 37,
+      "lon": -81
+    },
+    {
+      "id": "sierra-nevada",
+      "name": "Sierra Nevada",
+      "fact": "California’s high granite range.",
+      "lat": 37.5,
+      "lon": -119
+    },
+    {
+      "id": "cascade",
+      "name": "Cascade Range",
+      "fact": "Volcanic range of the Pacific Northwest.",
+      "lat": 46,
+      "lon": -121.5
+    },
+    {
+      "id": "mississippi",
+      "name": "Mississippi River",
+      "fact": "Drains much of the U.S. interior.",
+      "lat": 35,
+      "lon": -90
+    },
+    {
+      "id": "missouri",
+      "name": "Missouri River",
+      "fact": "Longest tributary of the Mississippi.",
+      "lat": 42,
+      "lon": -98
+    },
+    {
+      "id": "colorado",
+      "name": "Colorado River",
+      "fact": "Carved the Grand Canyon.",
+      "lat": 36,
+      "lon": -113.5
+    },
+    {
+      "id": "great-plains",
+      "name": "Great Plains",
+      "fact": "Broad grassland of central North America.",
+      "lat": 40,
+      "lon": -101
+    },
+    {
+      "id": "gulf-mexico",
+      "name": "Gulf of Mexico",
+      "fact": "Atlantic gulf bordered by the U.S., Mexico, and Cuba.",
+      "lat": 25,
+      "lon": -90
+    },
+    {
+      "id": "hudson-bay",
+      "name": "Hudson Bay",
+      "fact": "Large inland sea of northeastern Canada.",
+      "lat": 60,
+      "lon": -85
+    },
+    {
+      "id": "death-valley",
+      "name": "Death Valley",
+      "fact": "Hottest place in North America.",
+      "lat": 36.5,
+      "lon": -117
+    },
+    {
+      "id": "yukon",
+      "name": "Yukon River",
+      "fact": "Major river of Alaska and Yukon.",
+      "lat": 65,
+      "lon": -145
+    }
+  ]
+}

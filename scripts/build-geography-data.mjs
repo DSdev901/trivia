@@ -189,7 +189,7 @@ const MOST_POPULOUS = [
 ];
 
 const MAP_COUNTRY = "world-countries";
-const MODES_MAP = ["pin", "type", "name", "choice", "capitals", "study"];
+const MODES_MAP = ["pin", "type", "outline", "name", "choice", "capitals", "study"];
 const MODES_TEXT = ["type", "choice", "reverse", "study"];
 const MODES_FLAGS = ["type", "choice", "reverse", "study"];
 

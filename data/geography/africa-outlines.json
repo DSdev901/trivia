@@ -1,0 +1,440 @@
+{
+  "id": "africa-outlines",
+  "name": "Africa: Outlines",
+  "map": "world-countries",
+  "quiz": "outlines",
+  "items": [
+    {
+      "id": "DZ",
+      "name": "Algeria",
+      "capital": "Algiers",
+      "flag": "🇩🇿",
+      "region": "Africa",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "AO",
+      "name": "Angola",
+      "capital": "Luanda",
+      "flag": "🇦🇴",
+      "region": "Africa",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "BJ",
+      "name": "Benin",
+      "capital": "Porto-Novo",
+      "flag": "🇧🇯",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "BW",
+      "name": "Botswana",
+      "capital": "Gaborone",
+      "flag": "🇧🇼",
+      "region": "Africa",
+      "subregion": "Southern Africa"
+    },
+    {
+      "id": "BF",
+      "name": "Burkina Faso",
+      "capital": "Ouagadougou",
+      "flag": "🇧🇫",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "BI",
+      "name": "Burundi",
+      "capital": "Gitega",
+      "flag": "🇧🇮",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "CM",
+      "name": "Cameroon",
+      "capital": "Yaoundé",
+      "flag": "🇨🇲",
+      "region": "Africa",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "CV",
+      "name": "Cape Verde",
+      "capital": "Praia",
+      "flag": "🇨🇻",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "CF",
+      "name": "Central African Republic",
+      "capital": "Bangui",
+      "flag": "🇨🇫",
+      "region": "Africa",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "TD",
+      "name": "Chad",
+      "capital": "N'Djamena",
+      "flag": "🇹🇩",
+      "region": "Africa",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "KM",
+      "name": "Comoros",
+      "capital": "Moroni",
+      "flag": "🇰🇲",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "CG",
+      "name": "Congo",
+      "capital": "Brazzaville",
+      "flag": "🇨🇬",
+      "region": "Africa",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "DJ",
+      "name": "Djibouti",
+      "capital": "Djibouti",
+      "flag": "🇩🇯",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "CD",
+      "name": "DR Congo",
+      "capital": "Kinshasa",
+      "flag": "🇨🇩",
+      "region": "Africa",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "EG",
+      "name": "Egypt",
+      "capital": "Cairo",
+      "flag": "🇪🇬",
+      "region": "Africa",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "GQ",
+      "name": "Equatorial Guinea",
+      "capital": "Malabo",
+      "flag": "🇬🇶",
+      "region": "Africa",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "ER",
+      "name": "Eritrea",
+      "capital": "Asmara",
+      "flag": "🇪🇷",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "SZ",
+      "name": "Eswatini",
+      "capital": "Lobamba",
+      "flag": "🇸🇿",
+      "region": "Africa",
+      "subregion": "Southern Africa"
+    },
+    {
+      "id": "ET",
+      "name": "Ethiopia",
+      "capital": "Addis Ababa",
+      "flag": "🇪🇹",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "GA",
+      "name": "Gabon",
+      "capital": "Libreville",
+      "flag": "🇬🇦",
+      "region": "Africa",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "GM",
+      "name": "Gambia",
+      "capital": "Banjul",
+      "flag": "🇬🇲",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "GH",
+      "name": "Ghana",
+      "capital": "Accra",
+      "flag": "🇬🇭",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "GN",
+      "name": "Guinea",
+      "capital": "Conakry",
+      "flag": "🇬🇳",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "GW",
+      "name": "Guinea-Bissau",
+      "capital": "Bissau",
+      "flag": "🇬🇼",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "CI",
+      "name": "Ivory Coast",
+      "capital": "Yamoussoukro",
+      "flag": "🇨🇮",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "KE",
+      "name": "Kenya",
+      "capital": "Nairobi",
+      "flag": "🇰🇪",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "LS",
+      "name": "Lesotho",
+      "capital": "Maseru",
+      "flag": "🇱🇸",
+      "region": "Africa",
+      "subregion": "Southern Africa"
+    },
+    {
+      "id": "LR",
+      "name": "Liberia",
+      "capital": "Monrovia",
+      "flag": "🇱🇷",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "LY",
+      "name": "Libya",
+      "capital": "Tripoli",
+      "flag": "🇱🇾",
+      "region": "Africa",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "MG",
+      "name": "Madagascar",
+      "capital": "Antananarivo",
+      "flag": "🇲🇬",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "MW",
+      "name": "Malawi",
+      "capital": "Lilongwe",
+      "flag": "🇲🇼",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "ML",
+      "name": "Mali",
+      "capital": "Bamako",
+      "flag": "🇲🇱",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "MR",
+      "name": "Mauritania",
+      "capital": "Nouakchott",
+      "flag": "🇲🇷",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "MU",
+      "name": "Mauritius",
+      "capital": "Port Louis",
+      "flag": "🇲🇺",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "MA",
+      "name": "Morocco",
+      "capital": "Rabat",
+      "flag": "🇲🇦",
+      "region": "Africa",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "MZ",
+      "name": "Mozambique",
+      "capital": "Maputo",
+      "flag": "🇲🇿",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "NA",
+      "name": "Namibia",
+      "capital": "Windhoek",
+      "flag": "🇳🇦",
+      "region": "Africa",
+      "subregion": "Southern Africa"
+    },
+    {
+      "id": "NE",
+      "name": "Niger",
+      "capital": "Niamey",
+      "flag": "🇳🇪",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "NG",
+      "name": "Nigeria",
+      "capital": "Abuja",
+      "flag": "🇳🇬",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "RW",
+      "name": "Rwanda",
+      "capital": "Kigali",
+      "flag": "🇷🇼",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "ST",
+      "name": "São Tomé and Príncipe",
+      "capital": "São Tomé",
+      "flag": "🇸🇹",
+      "region": "Africa",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "SN",
+      "name": "Senegal",
+      "capital": "Dakar",
+      "flag": "🇸🇳",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "SC",
+      "name": "Seychelles",
+      "capital": "Victoria",
+      "flag": "🇸🇨",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "SL",
+      "name": "Sierra Leone",
+      "capital": "Freetown",
+      "flag": "🇸🇱",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "SO",
+      "name": "Somalia",
+      "capital": "Mogadishu",
+      "flag": "🇸🇴",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "ZA",
+      "name": "South Africa",
+      "capital": "Pretoria",
+      "flag": "🇿🇦",
+      "region": "Africa",
+      "subregion": "Southern Africa"
+    },
+    {
+      "id": "SS",
+      "name": "South Sudan",
+      "capital": "Juba",
+      "flag": "🇸🇸",
+      "region": "Africa",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "SD",
+      "name": "Sudan",
+      "capital": "Khartoum",
+      "flag": "🇸🇩",
+      "region": "Africa",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "TZ",
+      "name": "Tanzania",
+      "capital": "Dodoma",
+      "flag": "🇹🇿",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "TG",
+      "name": "Togo",
+      "capital": "Lomé",
+      "flag": "🇹🇬",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "TN",
+      "name": "Tunisia",
+      "capital": "Tunis",
+      "flag": "🇹🇳",
+      "region": "Africa",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "UG",
+      "name": "Uganda",
+      "capital": "Kampala",
+      "flag": "🇺🇬",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "ZM",
+      "name": "Zambia",
+      "capital": "Lusaka",
+      "flag": "🇿🇲",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "ZW",
+      "name": "Zimbabwe",
+      "capital": "Harare",
+      "flag": "🇿🇼",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    }
+  ]
+}

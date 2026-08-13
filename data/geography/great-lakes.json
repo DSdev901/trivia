@@ -1,0 +1,33 @@
+{
+  "id": "great-lakes",
+  "name": "The Great Lakes",
+  "map": "great-lakes",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "superior",
+      "name": "Lake Superior",
+      "fact": "Largest freshwater lake by surface area in the world."
+    },
+    {
+      "id": "michigan",
+      "name": "Lake Michigan",
+      "fact": "The only Great Lake entirely within the United States."
+    },
+    {
+      "id": "huron",
+      "name": "Lake Huron",
+      "fact": "Includes Georgian Bay; second-largest of the Great Lakes by area."
+    },
+    {
+      "id": "erie",
+      "name": "Lake Erie",
+      "fact": "Shallowest of the Great Lakes and the warmest in summer."
+    },
+    {
+      "id": "ontario",
+      "name": "Lake Ontario",
+      "fact": "Smallest Great Lake by area; drains to the Atlantic via the St. Lawrence."
+    }
+  ]
+}

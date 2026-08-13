@@ -4,8 +4,17 @@ const PACKS_PATH = "data/geography/packs.json";
 const MAPS = {
   continents: "data/geography/maps/continents.svg",
   "continents-oceans": "data/geography/maps/continents-oceans.svg",
+  "continents-cartoon": "data/geography/maps/continents-cartoon.svg",
   "world-countries": "data/geography/maps/world-countries.svg",
   "us-states": "data/geography/maps/us-states.svg",
+  "great-lakes": "data/geography/maps/great-lakes.svg",
+  "world-lakes": "data/geography/maps/world-lakes.svg",
+  "world-physical": "data/geography/maps/world-physical.svg",
+  "na-physical": "data/geography/maps/na-physical.svg",
+  "nba-teams": "data/geography/maps/nba-teams.svg",
+  "mlb-teams": "data/geography/maps/mlb-teams.svg",
+  "nhl-teams": "data/geography/maps/nhl-teams.svg",
+  "mls-teams": "data/geography/maps/mls-teams.svg",
 };
 
 /** Seterra’s main game modes are Pin and Type; extras are practice variants. */
@@ -17,6 +26,10 @@ const MODE_META = {
   type: {
     label: "Type",
     blurb: "Type the name — spelling counts; close matches count (Seterra’s Type mode).",
+  },
+  outline: {
+    label: "Outlines",
+    blurb: "Identify the place from its silhouette — like Seterra’s outline quizzes.",
   },
   name: {
     label: "Name",
@@ -98,6 +111,9 @@ function answersMatch(input, expected) {
   if (!a || !b) return false;
   if (a === b) return true;
   if (b.startsWith(a) && a.length >= Math.min(4, b.length)) return true;
+  if (a.length >= 4 && b.includes(a)) return true;
+  const last = b.split(" ").filter(Boolean).pop();
+  if (last && a === last && a.length >= 4) return true;
   // Common variants
   const aliases = {
     "united states": ["usa", "us", "america", "united states of america"],
@@ -158,17 +174,79 @@ function quizKind() {
   return geo.pack?.quiz || "places";
 }
 
+function isOutlineView() {
+  return geo.mode === "outline" || quizKind() === "outlines";
+}
+
 function packItemIds() {
   return new Set(geo.items.map((i) => i.id));
+}
+
+function resetMapViewBox() {
+  const svg = geo.root?.querySelector("#geo-map svg");
+  if (!svg || !geo._baseViewBox) return;
+  svg.setAttribute("viewBox", geo._baseViewBox);
+}
+
+function fitMapToIds(ids) {
+  const host = geo.root?.querySelector("#geo-map");
+  const svg = host?.querySelector("svg");
+  if (!host || !svg) return;
+  if (!geo._baseViewBox) {
+    geo._baseViewBox = svg.getAttribute("viewBox") || `0 0 ${svg.width.baseVal.value} ${svg.height.baseVal.value}`;
+  }
+  let minX = Infinity;
+  let minY = Infinity;
+  let maxX = -Infinity;
+  let maxY = -Infinity;
+  let found = false;
+  for (const id of ids) {
+    host.querySelectorAll(`.geo-region[data-id="${CSS.escape(id)}"]`).forEach((el) => {
+      try {
+        const b = el.getBBox();
+        if (!b.width && !b.height) return;
+        found = true;
+        minX = Math.min(minX, b.x);
+        minY = Math.min(minY, b.y);
+        maxX = Math.max(maxX, b.x + b.width);
+        maxY = Math.max(maxY, b.y + b.height);
+      } catch {
+        /* ignore non-rendered */
+      }
+    });
+  }
+  if (!found) {
+    resetMapViewBox();
+    return;
+  }
+  const pad = Math.max(24, (maxX - minX) * 0.2, (maxY - minY) * 0.2);
+  const w = Math.max(40, maxX - minX + pad * 2);
+  const h = Math.max(40, maxY - minY + pad * 2);
+  svg.setAttribute("viewBox", `${minX - pad} ${minY - pad} ${w} ${h}`);
 }
 
 function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   const host = geo.root?.querySelector("#geo-map");
   if (!host) return;
+  const outline = isOutlineView() && activeId;
+  host.classList.toggle("is-outline-mode", Boolean(outline));
   const inPack = packItemIds();
-  const scopePack = inPack.size > 0 && Boolean(geo.mapSvg);
+  const scopePack = inPack.size > 0 && Boolean(geo.mapSvg) && !outline;
   host.querySelectorAll(".geo-region").forEach((el) => {
     const id = el.dataset.id || el.id;
+    if (outline) {
+      const on = id === activeId;
+      el.classList.toggle("is-silhouette", on);
+      el.classList.toggle("is-hidden-outline", !on);
+      el.classList.toggle("is-out", false);
+      el.classList.toggle("is-active", on);
+      el.classList.toggle("is-dim", false);
+      el.classList.toggle("is-correct", flash?.id === id && flash.ok);
+      el.classList.toggle("is-wrong", flash?.id === id && !flash.ok);
+      return;
+    }
+    el.classList.toggle("is-silhouette", false);
+    el.classList.toggle("is-hidden-outline", false);
     const out = scopePack && !inPack.has(id);
     el.classList.toggle("is-out", out);
     el.classList.toggle("is-active", !out && id === activeId);
@@ -176,6 +254,8 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     el.classList.toggle("is-correct", !out && flash?.id === id && flash.ok);
     el.classList.toggle("is-wrong", !out && flash?.id === id && !flash.ok);
   });
+  if (outline) fitMapToIds([activeId]);
+  else resetMapViewBox();
 }
 
 function mapHtml() {
@@ -215,7 +295,11 @@ function promptForMode(item) {
   const mode = geo.mode;
   const kind = quizKind();
   if (mode === "pin") return `Find <strong>${escapeHtml(item.name)}</strong> on the map.`;
-  if (mode === "name") return `What is the highlighted place called?`;
+  if (mode === "outline") return `What place is this outline?`;
+  if (mode === "name") {
+    if (isOutlineView()) return `What place is this outline?`;
+    return `What is the highlighted place called?`;
+  }
   if (mode === "capitals")
     return `What is the capital of <strong>${escapeHtml(item.name)}</strong>?`;
   if (mode === "abbr") {
@@ -228,6 +312,9 @@ function promptForMode(item) {
       return `Type the capital of <strong>${escapeHtml(item.name)}</strong>.`;
     if (kind === "flags")
       return `<span class="geo-flag-xl" aria-hidden="true">${item.flag}</span><br />Type the country.`;
+    if (kind === "teams")
+      return `Type the team highlighted on the map (${escapeHtml(item.city || "home city")}).`;
+    if (isOutlineView()) return `Type the name of this outline.`;
     if (geo.mapSvg) return `Type the name of the highlighted place.`;
     return `Type the name of this place.`;
   }
@@ -241,6 +328,7 @@ function promptForMode(item) {
       return `<span class="geo-flag-xl" aria-hidden="true">${item.flag}</span><br />Which country is this?`;
     if (kind === "capitals")
       return `What is the capital of <strong>${escapeHtml(item.name)}</strong>?`;
+    if (isOutlineView()) return `What place is this outline?`;
     return `Which place is this?`;
   }
   return escapeHtml(item.name);
@@ -425,6 +513,7 @@ function studyDetailHtml(item) {
     <h3>${escapeHtml(item.name)}</h3>
     ${item.abbr ? `<p class="geo-meta-line">Abbreviation <strong>${escapeHtml(item.abbr)}</strong></p>` : ""}
     ${item.capital ? `<p class="geo-meta-line">Capital <strong>${escapeHtml(item.capital)}</strong></p>` : ""}
+    ${item.city ? `<p class="geo-meta-line">City <strong>${escapeHtml(item.city)}</strong></p>` : ""}
     ${item.fact ? `<p class="lede">${escapeHtml(item.fact)}</p>` : ""}`;
 }
 
@@ -465,14 +554,15 @@ function renderPlay() {
 
   const showMap =
     Boolean(geo.mapSvg) &&
-    ["pin", "name", "type", "capitals"].includes(geo.mode);
+    (["pin", "name", "type", "capitals", "outline"].includes(geo.mode) ||
+      (geo.mode === "choice" && isOutlineView()));
 
   let body = "";
   if (geo.mode === "pin") {
     body = `
       <p class="geo-prompt">${promptForMode(item)}</p>
       <p class="geo-hint">Tap the correct region on the map.</p>`;
-  } else if (geo.mode === "type") {
+  } else if (geo.mode === "type" || geo.mode === "outline") {
     body = `
       <p class="geo-prompt">${promptForMode(item)}</p>
       <form class="geo-type-form" id="geo-type-form">
@@ -507,7 +597,13 @@ function renderPlay() {
       </div>
     </div>`;
 
-  if (geo.mode === "name" || geo.mode === "capitals" || (geo.mode === "type" && geo.mapSvg)) {
+  if (
+    geo.mode === "name" ||
+    geo.mode === "capitals" ||
+    geo.mode === "outline" ||
+    (geo.mode === "type" && geo.mapSvg) ||
+    (geo.mode === "choice" && isOutlineView() && geo.mapSvg)
+  ) {
     paintMap(item.id, { dimOthers: true });
   } else if (showMap) {
     paintMap(null);
@@ -544,7 +640,7 @@ function bindPlay() {
     return;
   }
 
-  if (geo.mode === "type") {
+  if (geo.mode === "type" || geo.mode === "outline") {
     const form = geo.root.querySelector("#geo-type-form");
     const input = geo.root.querySelector("#geo-type-input");
     input?.focus();
@@ -593,7 +689,9 @@ function judge(ok, clickedMapId = null, clickedBtn = null) {
     geo.mode === "pin" ||
     geo.mode === "name" ||
     geo.mode === "capitals" ||
-    (geo.mode === "type" && geo.mapSvg)
+    geo.mode === "outline" ||
+    (geo.mode === "type" && geo.mapSvg) ||
+    (geo.mode === "choice" && isOutlineView() && geo.mapSvg)
   ) {
     paintMap(item.id, {
       dimOthers: geo.mode !== "pin",
@@ -676,6 +774,7 @@ export function cleanupGeography() {
   geo.queue = [];
   geo.items = [];
   geo.mapSvg = "";
+  geo._baseViewBox = null;
 }
 
 export async function renderGeography({ els }) {

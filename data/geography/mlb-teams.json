@@ -1,0 +1,248 @@
+{
+  "id": "mlb-teams",
+  "name": "MLB Teams",
+  "map": "mlb-teams",
+  "quiz": "teams",
+  "items": [
+    {
+      "id": "ARI",
+      "name": "Arizona Diamondbacks",
+      "city": "Phoenix",
+      "lat": 33.45,
+      "lon": -112.07,
+      "fact": "Based in Phoenix."
+    },
+    {
+      "id": "ATL",
+      "name": "Atlanta Braves",
+      "city": "Atlanta",
+      "lat": 33.89,
+      "lon": -84.47,
+      "fact": "Based in Atlanta."
+    },
+    {
+      "id": "BAL",
+      "name": "Baltimore Orioles",
+      "city": "Baltimore",
+      "lat": 39.28,
+      "lon": -76.62,
+      "fact": "Based in Baltimore."
+    },
+    {
+      "id": "BOS",
+      "name": "Boston Red Sox",
+      "city": "Boston",
+      "lat": 42.35,
+      "lon": -71.07,
+      "fact": "Based in Boston."
+    },
+    {
+      "id": "CHC",
+      "name": "Chicago Cubs",
+      "city": "Chicago",
+      "lat": 41.95,
+      "lon": -87.66,
+      "fact": "Based in Chicago."
+    },
+    {
+      "id": "CWS",
+      "name": "Chicago White Sox",
+      "city": "Chicago",
+      "lat": 41.83,
+      "lon": -87.63,
+      "fact": "Based in Chicago."
+    },
+    {
+      "id": "CIN",
+      "name": "Cincinnati Reds",
+      "city": "Cincinnati",
+      "lat": 39.1,
+      "lon": -84.51,
+      "fact": "Based in Cincinnati."
+    },
+    {
+      "id": "CLE",
+      "name": "Cleveland Guardians",
+      "city": "Cleveland",
+      "lat": 41.5,
+      "lon": -81.69,
+      "fact": "Based in Cleveland."
+    },
+    {
+      "id": "COL",
+      "name": "Colorado Rockies",
+      "city": "Denver",
+      "lat": 39.76,
+      "lon": -104.99,
+      "fact": "Based in Denver."
+    },
+    {
+      "id": "DET",
+      "name": "Detroit Tigers",
+      "city": "Detroit",
+      "lat": 42.34,
+      "lon": -83.05,
+      "fact": "Based in Detroit."
+    },
+    {
+      "id": "HOU",
+      "name": "Houston Astros",
+      "city": "Houston",
+      "lat": 29.76,
+      "lon": -95.36,
+      "fact": "Based in Houston."
+    },
+    {
+      "id": "KC",
+      "name": "Kansas City Royals",
+      "city": "Kansas City",
+      "lat": 39.05,
+      "lon": -94.48,
+      "fact": "Based in Kansas City."
+    },
+    {
+      "id": "LAA",
+      "name": "Los Angeles Angels",
+      "city": "Anaheim",
+      "lat": 33.8,
+      "lon": -117.88,
+      "fact": "Based in Anaheim."
+    },
+    {
+      "id": "LAD",
+      "name": "Los Angeles Dodgers",
+      "city": "Los Angeles",
+      "lat": 34.07,
+      "lon": -118.24,
+      "fact": "Based in Los Angeles."
+    },
+    {
+      "id": "MIA",
+      "name": "Miami Marlins",
+      "city": "Miami",
+      "lat": 25.78,
+      "lon": -80.22,
+      "fact": "Based in Miami."
+    },
+    {
+      "id": "MIL",
+      "name": "Milwaukee Brewers",
+      "city": "Milwaukee",
+      "lat": 43.03,
+      "lon": -87.97,
+      "fact": "Based in Milwaukee."
+    },
+    {
+      "id": "MIN",
+      "name": "Minnesota Twins",
+      "city": "Minneapolis",
+      "lat": 44.98,
+      "lon": -93.28,
+      "fact": "Based in Minneapolis."
+    },
+    {
+      "id": "NYM",
+      "name": "New York Mets",
+      "city": "New York",
+      "lat": 40.76,
+      "lon": -73.85,
+      "fact": "Based in New York."
+    },
+    {
+      "id": "NYY",
+      "name": "New York Yankees",
+      "city": "New York",
+      "lat": 40.83,
+      "lon": -73.93,
+      "fact": "Based in New York."
+    },
+    {
+      "id": "OAK",
+      "name": "Athletics",
+      "city": "Sacramento",
+      "lat": 38.58,
+      "lon": -121.5,
+      "fact": "Based in Sacramento."
+    },
+    {
+      "id": "PHI",
+      "name": "Philadelphia Phillies",
+      "city": "Philadelphia",
+      "lat": 39.91,
+      "lon": -75.17,
+      "fact": "Based in Philadelphia."
+    },
+    {
+      "id": "PIT",
+      "name": "Pittsburgh Pirates",
+      "city": "Pittsburgh",
+      "lat": 40.45,
+      "lon": -80.01,
+      "fact": "Based in Pittsburgh."
+    },
+    {
+      "id": "SD",
+      "name": "San Diego Padres",
+      "city": "San Diego",
+      "lat": 32.71,
+      "lon": -117.16,
+      "fact": "Based in San Diego."
+    },
+    {
+      "id": "SF",
+      "name": "San Francisco Giants",
+      "city": "San Francisco",
+      "lat": 37.78,
+      "lon": -122.39,
+      "fact": "Based in San Francisco."
+    },
+    {
+      "id": "SEA",
+      "name": "Seattle Mariners",
+      "city": "Seattle",
+      "lat": 47.59,
+      "lon": -122.33,
+      "fact": "Based in Seattle."
+    },
+    {
+      "id": "STL",
+      "name": "St. Louis Cardinals",
+      "city": "St. Louis",
+      "lat": 38.62,
+      "lon": -90.19,
+      "fact": "Based in St. Louis."
+    },
+    {
+      "id": "TB",
+      "name": "Tampa Bay Rays",
+      "city": "St. Petersburg",
+      "lat": 27.77,
+      "lon": -82.63,
+      "fact": "Based in St. Petersburg."
+    },
+    {
+      "id": "TEX",
+      "name": "Texas Rangers",
+      "city": "Arlington",
+      "lat": 32.75,
+      "lon": -97.08,
+      "fact": "Based in Arlington."
+    },
+    {
+      "id": "TOR",
+      "name": "Toronto Blue Jays",
+      "city": "Toronto",
+      "lat": 43.64,
+      "lon": -79.39,
+      "fact": "Based in Toronto."
+    },
+    {
+      "id": "WSH",
+      "name": "Washington Nationals",
+      "city": "Washington",
+      "lat": 38.87,
+      "lon": -77.01,
+      "fact": "Based in Washington."
+    }
+  ]
+}

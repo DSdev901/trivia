@@ -1,0 +1,134 @@
+{
+  "id": "world-physical",
+  "name": "World: Physical Features",
+  "map": "world-physical",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "himalayas",
+      "name": "Himalayas",
+      "fact": "Home to the world’s highest peaks, including Everest.",
+      "lat": 28,
+      "lon": 86.9
+    },
+    {
+      "id": "andes",
+      "name": "Andes",
+      "fact": "Longest continental mountain range on Earth.",
+      "lat": -20,
+      "lon": -68
+    },
+    {
+      "id": "rockies",
+      "name": "Rocky Mountains",
+      "fact": "Major mountain range of western North America.",
+      "lat": 45,
+      "lon": -113
+    },
+    {
+      "id": "alps",
+      "name": "Alps",
+      "fact": "High mountain range across south-central Europe.",
+      "lat": 46.5,
+      "lon": 10
+    },
+    {
+      "id": "sahara",
+      "name": "Sahara Desert",
+      "fact": "Largest hot desert on Earth.",
+      "lat": 23,
+      "lon": 10
+    },
+    {
+      "id": "gobi",
+      "name": "Gobi Desert",
+      "fact": "Cold desert across Mongolia and northern China.",
+      "lat": 42.5,
+      "lon": 105
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon River",
+      "fact": "Largest river by discharge; drains the Amazon basin.",
+      "lat": -3,
+      "lon": -60
+    },
+    {
+      "id": "nile",
+      "name": "Nile River",
+      "fact": "Often cited as the world’s longest river.",
+      "lat": 26,
+      "lon": 32.5
+    },
+    {
+      "id": "mississippi",
+      "name": "Mississippi River",
+      "fact": "Principal river of the central United States.",
+      "lat": 35,
+      "lon": -90
+    },
+    {
+      "id": "yangtze",
+      "name": "Yangtze River",
+      "fact": "Longest river in Asia.",
+      "lat": 31,
+      "lon": 112
+    },
+    {
+      "id": "congo-river",
+      "name": "Congo River",
+      "fact": "Deepest river; second-largest by discharge.",
+      "lat": -2,
+      "lon": 18
+    },
+    {
+      "id": "great-rift",
+      "name": "Great Rift Valley",
+      "fact": "Vast rift system through eastern Africa.",
+      "lat": 0,
+      "lon": 36
+    },
+    {
+      "id": "grand-canyon",
+      "name": "Grand Canyon",
+      "fact": "Iconic canyon carved by the Colorado River.",
+      "lat": 36.1,
+      "lon": -112.1
+    },
+    {
+      "id": "ural",
+      "name": "Ural Mountains",
+      "fact": "Traditional boundary between Europe and Asia.",
+      "lat": 60,
+      "lon": 60
+    },
+    {
+      "id": "atacama",
+      "name": "Atacama Desert",
+      "fact": "One of the driest places on Earth.",
+      "lat": -24.5,
+      "lon": -69.3
+    },
+    {
+      "id": "outback",
+      "name": "Australian Outback",
+      "fact": "Remote interior of Australia.",
+      "lat": -25,
+      "lon": 134
+    },
+    {
+      "id": "danube",
+      "name": "Danube River",
+      "fact": "Europe’s second-longest river.",
+      "lat": 45,
+      "lon": 20
+    },
+    {
+      "id": "mekong",
+      "name": "Mekong River",
+      "fact": "Major river of Southeast Asia.",
+      "lat": 15,
+      "lon": 105
+    }
+  ]
+}

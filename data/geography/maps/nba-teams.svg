@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" width="100%" height="100%" role="img" aria-label="NBA Teams">
+  <rect width="1000" height="720" fill="#dce9f5"/>
+  
+  <path fill="#c8d5e3" d="M120,80 C200,40 350,30 480,60 C600,90 720,50 820,90 L880,200 C900,320 860,420 800,480 C720,560 580,600 420,580 C280,560 160,500 100,400 C60,320 70,180 120,80 Z"/>
+  <path fill="#c8d5e3" d="M200,480 C280,470 360,500 400,560 C420,600 380,650 300,660 C220,670 160,620 150,560 C140,510 160,490 200,480 Z"/>
+
+  <circle id="ATL" data-id="ATL" class="geo-region geo-marker" cx="720.8" cy="474.8" r="9"/>
+  <circle id="BOS" data-id="BOS" class="geo-region geo-marker" cx="835.7" cy="367.9" r="9"/>
+  <circle id="BKN" data-id="BKN" class="geo-region geo-marker" cx="810.6" cy="388.8" r="9"/>
+  <circle id="CHA" data-id="CHA" class="geo-region geo-marker" cx="751.4" cy="456.5" r="9"/>
+  <circle id="CHI" data-id="CHI" class="geo-region geo-marker" cx="692.5" cy="373.9" r="9"/>
+  <circle id="CLE" data-id="CLE" class="geo-region geo-marker" cx="744.1" cy="378.6" r="9"/>
+  <circle id="DAL" data-id="DAL" class="geo-region geo-marker" cx="613.7" cy="486.7" r="9"/>
+  <circle id="DEN" data-id="DEN" class="geo-region geo-marker" cx="543" cy="400.3" r="9"/>
+  <circle id="DET" data-id="DET" class="geo-region geo-marker" cx="732.2" cy="368.2" r="9"/>
+  <circle id="GSW" data-id="GSW" class="geo-region geo-marker" cx="393.2" cy="424.9" r="9"/>
+  <circle id="HOU" data-id="HOU" class="geo-region geo-marker" cx="626.2" cy="524.5" r="9"/>
+  <circle id="IND" data-id="IND" class="geo-region geo-marker" cx="705.5" cy="400.2" r="9"/>
+  <circle id="LAC" data-id="LAC" class="geo-region geo-marker" cx="428.7" cy="471.2" r="9"/>
+  <circle id="LAL" data-id="LAL" class="geo-region geo-marker" cx="431.7" cy="469.4" r="9"/>
+  <circle id="MEM" data-id="MEM" class="geo-region geo-marker" cx="672" cy="457.6" r="9"/>
+  <circle id="MIA" data-id="MIA" class="geo-region geo-marker" cx="757" cy="573.8" r="9"/>
+  <circle id="MIL" data-id="MIL" class="geo-region geo-marker" cx="690.3" cy="359.5" r="9"/>
+  <circle id="MIN" data-id="MIN" class="geo-region geo-marker" cx="644.1" cy="335.4" r="9"/>
+  <circle id="NOP" data-id="NOP" class="geo-region geo-marker" cx="671.7" cy="522" r="9"/>
+  <circle id="NYK" data-id="NYK" class="geo-region geo-marker" cx="810.4" cy="387.9" r="9"/>
+  <circle id="OKC" data-id="OKC" class="geo-region geo-marker" cx="607.7" cy="453.6" r="9"/>
+  <circle id="ORL" data-id="ORL" class="geo-region geo-marker" cx="746.7" cy="539.5" r="9"/>
+  <circle id="PHI" data-id="PHI" class="geo-region geo-marker" cx="800.3" cy="398.5" r="9"/>
+  <circle id="PHX" data-id="PHX" class="geo-region geo-marker" cx="482.2" cy="478.6" r="9"/>
+  <circle id="POR" data-id="POR" class="geo-region geo-marker" cx="390.8" cy="328.6" r="9"/>
+  <circle id="SAC" data-id="SAC" class="geo-region geo-marker" cx="400.9" cy="414.9" r="9"/>
+  <circle id="SAS" data-id="SAS" class="geo-region geo-marker" cx="599.7" cy="528.5" r="9"/>
+  <circle id="TOR" data-id="TOR" class="geo-region geo-marker" cx="764" cy="352.1" r="9"/>
+  <circle id="UTA" data-id="UTA" class="geo-region geo-marker" cx="483.6" cy="387.7" r="9"/>
+  <circle id="WAS" data-id="WAS" class="geo-region geo-marker" cx="784.3" cy="410.9" r="9"/>
+</svg>

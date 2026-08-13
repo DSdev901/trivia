@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" width="100%" height="100%" role="img" aria-label="North America physical features">
+  <rect width="1000" height="720" fill="#dce9f5"/>
+  
+  <path fill="#c8d5e3" d="M120,80 C200,40 350,30 480,60 C600,90 720,50 820,90 L880,200 C900,320 860,420 800,480 C720,560 580,600 420,580 C280,560 160,500 100,400 C60,320 70,180 120,80 Z"/>
+  <path fill="#c8d5e3" d="M200,480 C280,470 360,500 400,560 C420,600 380,650 300,660 C220,670 160,620 150,560 C140,510 160,490 200,480 Z"/>
+
+  <circle id="rockies" data-id="rockies" class="geo-region geo-marker" cx="474.1" cy="335.2" r="12"/>
+  <circle id="appalachians" data-id="appalachians" class="geo-region geo-marker" cx="750" cy="434.5" r="12"/>
+  <circle id="sierra-nevada" data-id="sierra-nevada" class="geo-region geo-marker" cx="422.4" cy="428.3" r="12"/>
+  <circle id="cascade" data-id="cascade" class="geo-region geo-marker" cx="400.9" cy="322.8" r="12"/>
+  <circle id="mississippi" data-id="mississippi" class="geo-region geo-marker" cx="672.4" cy="459.3" r="12"/>
+  <circle id="missouri" data-id="missouri" class="geo-region geo-marker" cx="603.4" cy="372.4" r="12"/>
+  <circle id="colorado" data-id="colorado" class="geo-region geo-marker" cx="469.8" cy="446.9" r="12"/>
+  <circle id="great-plains" data-id="great-plains" class="geo-region geo-marker" cx="577.6" cy="397.2" r="12"/>
+  <circle id="gulf-mexico" data-id="gulf-mexico" class="geo-region geo-marker" cx="672.4" cy="583.4" r="12"/>
+  <circle id="hudson-bay" data-id="hudson-bay" class="geo-region geo-marker" cx="715.5" cy="149" r="12"/>
+  <circle id="death-valley" data-id="death-valley" class="geo-region geo-marker" cx="439.7" cy="440.7" r="12"/>
+  <circle id="yukon" data-id="yukon" class="geo-region geo-marker" cx="198.3" cy="86.9" r="12"/>
+</svg>
