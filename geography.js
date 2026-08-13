@@ -658,16 +658,38 @@ function coverOcean(svg, minX, minY, w, h) {
   rect.setAttribute("height", String(h + pad * 2));
 }
 
-function applyViewBox(svg, bounds, padRatio, storeAsPack) {
+function paddedViewBox(bounds, padRatio) {
   const { minX, minY, maxX, maxY } = bounds;
-  const pad = Math.max(10, (maxX - minX) * padRatio, (maxY - minY) * padRatio);
-  const w = Math.max(30, maxX - minX + pad * 2);
-  const h = Math.max(30, maxY - minY + pad * 2);
-  const vb = `${minX - pad} ${minY - pad} ${w} ${h}`;
-  svg.setAttribute("viewBox", vb);
-  coverOcean(svg, minX - pad, minY - pad, w, h);
-  if (storeAsPack) geo._packViewBox = vb;
-  geo._panLimit = vb;
+  const bw = Math.max(1, maxX - minX);
+  const bh = Math.max(1, maxY - minY);
+  const pad = Math.max(12, bw * padRatio, bh * padRatio);
+  return {
+    x: minX - pad,
+    y: minY - pad,
+    w: Math.max(30, bw + pad * 2),
+    h: Math.max(30, bh + pad * 2),
+  };
+}
+
+function viewBoxAttr(vb) {
+  return `${vb.x} ${vb.y} ${vb.w} ${vb.h}`;
+}
+
+function unionViewBox(a, b) {
+  const minX = Math.min(a.x, b.x);
+  const minY = Math.min(a.y, b.y);
+  const maxX = Math.max(a.x + a.w, b.x + b.w);
+  const maxY = Math.max(a.y + a.h, b.y + b.h);
+  return { x: minX, y: minY, w: maxX - minX, h: maxY - minY };
+}
+
+function applyViewBox(svg, bounds, padRatio, storeAsPack) {
+  const vb = paddedViewBox(bounds, padRatio);
+  svg.setAttribute("viewBox", viewBoxAttr(vb));
+  coverOcean(svg, vb.x, vb.y, vb.w, vb.h);
+  if (storeAsPack) geo._packViewBox = viewBoxAttr(vb);
+  geo._panLimit = viewBoxAttr(vb);
+  return vb;
 }
 
 function boundsArea(b) {
@@ -675,39 +697,74 @@ function boundsArea(b) {
   return Math.max(0, b.maxX - b.minX) * Math.max(0, b.maxY - b.minY);
 }
 
-function fitIdsForPack(host, inPack) {
+function allRegionIds(host) {
+  return [
+    ...new Set(
+      [...host.querySelectorAll(".geo-region")]
+        .map((el) => el.dataset.id || el.id)
+        .filter(Boolean)
+    ),
+  ];
+}
+
+function quizBoundsForIds(host, ids, { mapW, mapH, core } = {}) {
+  const boxes = [];
+  for (const id of ids) {
+    regionsForId(host, id).forEach((el) => {
+      const m = mainlandForEl(el);
+      if (!m) return;
+      let { minX, minY, maxX, maxY, cx } = m;
+      const dx = core ? unwrapDx(cx, core.x, mapW || 1000) : 0;
+      if (dx) {
+        minX += dx;
+        maxX += dx;
+      }
+      boxes.push({ minX, minY, maxX, maxY });
+    });
+  }
+  const bounds = bboxUnion(boxes);
+  if (!bounds) return { useFullMap: true };
+  const w = bounds.maxX - bounds.minX;
+  const h = bounds.maxY - bounds.minY;
+  if (mapW && mapH && w > mapW * 0.62 && h > mapH * 0.55) return { useFullMap: true };
+  return bounds;
+}
+
+function boundsForFitIds(host, svg, ids) {
+  if (isWorldCountriesMap()) {
+    if (ids.length <= 1) return mainlandBoundsForIds(host, ids);
+    const { mapW, mapH } = mapSize(svg);
+    const core = packCorePoint(host, ids);
+    return quizBoundsForIds(host, ids, { mapW, mapH, core });
+  }
+  return simpleBoundsForIds(host, ids);
+}
+
+/** Extra land the player can pan into; the camera still fits only quiz places. */
+function panIdsForPack(host, inPack) {
   const ids = [...inPack];
   if (!host || geo.pack?.overlay === "markers") return ids;
-  const svg = host.querySelector("svg");
-  if (svg) {
-    ensureBaseViewBox(svg);
-    unwrapPackRegions(host, svg);
-  }
 
   if (geo.pack?.map === "us-states") {
-    const all = [
-      ...new Set(
-        [...host.querySelectorAll(".geo-region")]
-          .map((el) => el.dataset.id || el.id)
-          .filter(Boolean)
-      ),
-    ];
+    const all = allRegionIds(host);
     return ids.length < all.length * 0.85 ? all : ids;
   }
 
-  if (!isWorldCountriesMap() || !svg) return ids;
+  if (!isWorldCountriesMap()) return ids;
   const conts = new Set(ids.map((id) => ISO_CONT[id]).filter(Boolean));
   if (conts.size !== 1) return ids;
   const contIds = Object.keys(ISO_CONT).filter((iso) => ISO_CONT[iso] === [...conts][0]);
   if (!contIds.length || ids.length >= contIds.length * 0.85) return ids;
 
+  const svg = host.querySelector("svg");
+  if (!svg) return ids;
   const { mapW, mapH } = mapSize(svg);
-  const packB = packFitBounds(host, ids, {
+  const packB = quizBoundsForIds(host, ids, {
     mapW,
     mapH,
     core: packCorePoint(host, ids),
   });
-  const contB = packFitBounds(host, contIds, {
+  const contB = quizBoundsForIds(host, contIds, {
     mapW,
     mapH,
     core: packCorePoint(host, contIds),
@@ -718,37 +775,32 @@ function fitIdsForPack(host, inPack) {
   return ids;
 }
 
-function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false } = {}) {
+function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false, panIds = null } = {}) {
   const host = geo.root?.querySelector("#geo-map");
   const svg = host?.querySelector("svg");
   if (!host || !svg) return;
   ensureBaseViewBox(svg);
   unwrapPackRegions(host, svg);
 
-  let bounds;
-  if (isWorldCountriesMap()) {
-    if (ids.length <= 1) {
-      bounds = mainlandBoundsForIds(host, ids);
-    } else {
-      const { mapW, mapH } = mapSize(svg);
-      const core = packCorePoint(host, ids);
-      bounds = packFitBounds(host, ids, { mapW, mapH, core });
-      if (bounds?.useFullMap) {
-        resetMapViewBox();
-        if (storeAsPack) geo._packViewBox = geo._baseViewBox;
-        geo._panLimit = geo._packViewBox || geo._baseViewBox;
-        return;
-      }
-    }
-  } else {
-    bounds = simpleBoundsForIds(host, ids);
-  }
-
-  if (!bounds) {
+  const bounds = boundsForFitIds(host, svg, ids);
+  if (!bounds || bounds.useFullMap) {
     resetMapViewBox();
+    if (storeAsPack) geo._packViewBox = geo._baseViewBox;
+    geo._panLimit = geo._packViewBox || geo._baseViewBox;
     return;
   }
-  applyViewBox(svg, bounds, padRatio, storeAsPack);
+
+  const packVb = applyViewBox(svg, bounds, padRatio, storeAsPack);
+  const extraIds = (panIds || []).filter((id) => !ids.includes(id));
+  if (!extraIds.length) return;
+  const panBounds = boundsForFitIds(host, svg, panIds);
+  if (!panBounds || panBounds.useFullMap) {
+    geo._panLimit = geo._baseViewBox || geo._panLimit;
+    return;
+  }
+  const panVb = unionViewBox(packVb, paddedViewBox(panBounds, Math.max(padRatio, 0.1)));
+  geo._panLimit = viewBoxAttr(panVb);
+  coverOcean(svg, panVb.x, panVb.y, panVb.w, panVb.h);
 }
 
 function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
@@ -788,14 +840,22 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     el.classList.toggle("is-wrong", !out && wrongId === id);
   });
   if (outline) {
-    fitMapToIds([activeId], { padRatio: 0.25 });
+    if (host.dataset.geoOutlineId !== activeId) {
+      fitMapToIds([activeId], { padRatio: 0.08 });
+      host.dataset.geoOutlineId = activeId;
+    }
   } else if (scopePack) {
-    fitMapToIds(fitIdsForPack(host, inPack), {
-      padRatio: 0.08,
-      storeAsPack: !geo._packViewBox,
-    });
-    if (geo._packViewBox) {
-      host.querySelector("svg")?.setAttribute("viewBox", geo._packViewBox);
+    if (host.dataset.geoFitted !== "1") {
+      const packIds = [...inPack];
+      fitMapToIds(packIds, {
+        padRatio: 0.06,
+        storeAsPack: !geo._packViewBox,
+        panIds: panIdsForPack(host, inPack),
+      });
+      if (geo._packViewBox) {
+        host.querySelector("svg")?.setAttribute("viewBox", geo._packViewBox);
+      }
+      host.dataset.geoFitted = "1";
     }
   } else {
     resetMapViewBox();
