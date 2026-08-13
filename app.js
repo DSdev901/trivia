@@ -34,9 +34,11 @@ import {
   toConversationalSpeech,
   voiceQualityTip,
 } from "./speech.js";
-import { defaultGeoFilters } from "./geography.js";
-import { createGeoController } from "./geo-learn.js";
 import { renderCurrentEvents } from "./current-events.js";
+import {
+  cleanupPeriodicTable,
+  renderPeriodicTable,
+} from "./periodic-table.js";
 
 const els = {
   subtitle: document.getElementById("subtitle"),
@@ -47,14 +49,13 @@ const els = {
   hub: document.getElementById("view-hub"),
   batches: document.getElementById("view-batches"),
   presidents: document.getElementById("view-presidents"),
-  continents: document.getElementById("view-continents"),
-  waterways: document.getElementById("view-waterways"),
   detail: document.getElementById("view-detail"),
   quizSetup: document.getElementById("view-quiz-setup"),
   quiz: document.getElementById("view-quiz"),
   quizDone: document.getElementById("view-quiz-done"),
   flags: document.getElementById("view-flags"),
   currentEvents: document.getElementById("view-current-events"),
+  periodicTable: document.getElementById("view-periodic-table"),
 };
 
 const VIEWS = [
@@ -62,14 +63,13 @@ const VIEWS = [
   "hub",
   "batches",
   "presidents",
-  "continents",
-  "waterways",
   "detail",
   "quizSetup",
   "quiz",
   "quizDone",
   "flags",
   "currentEvents",
+  "periodicTable",
 ];
 
 const state = {
@@ -80,16 +80,7 @@ const state = {
   view: "categories",
   quiz: null,
   lastResult: null,
-  geoCache: {},
-  geoFilters: defaultGeoFilters(),
-  geoContinentIds: [],
-  geoContinent: null,
-  waterway: null,
-  geoMode: null, // "study" | "drill"
-  geoFocusWaterwayId: null,
 };
-
-let geo = null;
 
 function show(view) {
   state.view = view;
@@ -121,16 +112,12 @@ async function loadBatch(category, batchNumber) {
   return loadJSON(path);
 }
 
-function isGeography(category = state.category) {
-  return category?.type === "geography";
-}
-
 function categoryMetaLabel(category) {
-  if (isGeography(category)) {
-    return `${category.continents?.length || 0} continents`;
-  }
   if (category?.type === "current-events") {
     return "3 feeds · refreshable";
+  }
+  if (category?.type === "periodic-table") {
+    return "118 elements · spoken tours";
   }
   return `${category.batchCount} batches`;
 }
@@ -164,15 +151,15 @@ function openCategory(id) {
   state.president = null;
   state.quiz = null;
   state.lastResult = null;
-  state.geoContinent = null;
-  state.waterway = null;
-  state.geoContinentIds = [];
-  state.geoFilters = defaultGeoFilters();
-  state.geoMode = null;
   els.subtitle.textContent = category.name;
   if (category.type === "current-events") {
     renderCurrentEvents({ els });
     show("currentEvents");
+    return;
+  }
+  if (category.type === "periodic-table") {
+    void renderPeriodicTable({ els });
+    show("periodicTable");
     return;
   }
   renderHub(category);
@@ -181,35 +168,24 @@ function openCategory(id) {
 
 function renderHub(category) {
   const flagged = flagCount(category.id);
-  const geo = isGeography(category);
   // Flag-for-replacement is a local authoring tool — hidden on the live site.
   const canFlag = isLocalHost();
 
   els.hub.innerHTML = `
     <h2 class="section-title">${category.name}</h2>
     <p class="lede">${
-      geo
-        ? "Undergrad / pub-trivia waterways on a real map — mouths, capitals on rivers, landmarks — then spaced drills on the questions hosts actually ask."
-        : canFlag
-          ? "Study the material, or quiz yourself until every question is cleared from rotation. Flag weak facts while reviewing so they can be replaced later."
-          : "Study the material, or quiz yourself until every question is cleared from rotation."
+      canFlag
+        ? "Study the material, or quiz yourself until every question is cleared from rotation. Flag weak facts while reviewing so they can be replaced later."
+        : "Study the material, or quiz yourself until every question is cleared from rotation."
     }</p>
     <div class="hub-actions">
       <button type="button" class="hub-card" id="hub-study">
-        <h3>${geo ? "Atlas" : "Study"}</h3>
-        <p>${
-          geo
-            ? "Continent maps with the trivia triple: outlet, capital, landmark."
-            : "Browse batches and review each president’s facts."
-        }</p>
+        <h3>Study</h3>
+        <p>Browse batches and review each president’s facts.</p>
       </button>
       <button type="button" class="hub-card hub-card-accent" id="hub-quiz">
-        <h3>${geo ? "Trivia drill" : "Quiz"}</h3>
-        <p>${
-          geo
-            ? "“Which river?”, capital links, outlets, landmarks — map-backed, spaced."
-            : "Pick one or more batches and work through multiple-choice questions."
-        }</p>
+        <h3>Quiz</h3>
+        <p>Pick one or more batches and work through multiple-choice questions.</p>
       </button>
       ${
         canFlag
@@ -227,27 +203,15 @@ function renderHub(category) {
   `;
 
   document.getElementById("hub-study").addEventListener("click", () => {
-    if (geo) {
-      state.geoMode = "study";
-      geoController().renderContinents(category);
-      show("continents");
-      els.subtitle.textContent = `${category.name} · Atlas`;
-    } else {
-      renderBatches(category);
-      show("batches");
-      els.subtitle.textContent = `${category.name} · Study`;
-    }
+    renderBatches(category);
+    show("batches");
+    els.subtitle.textContent = `${category.name} · Study`;
   });
 
   document.getElementById("hub-quiz").addEventListener("click", () => {
-    if (geo) {
-      state.geoMode = "drill";
-      geoController().renderDrillSetup(category);
-    } else {
-      renderQuizSetup(category);
-    }
+    renderQuizSetup(category);
     show("quizSetup");
-    els.subtitle.textContent = `${category.name} · ${geo ? "Map drill" : "Quiz setup"}`;
+    els.subtitle.textContent = `${category.name} · Quiz setup`;
   });
 
   document.getElementById("hub-flags")?.addEventListener("click", () => {
@@ -255,43 +219,6 @@ function renderHub(category) {
     show("flags");
     els.subtitle.textContent = `${category.name} · Flagged`;
   });
-}
-
-async function loadContinent(meta) {
-  if (state.geoCache[meta.id]) return state.geoCache[meta.id];
-  const data = await loadJSON(meta.path);
-  state.geoCache[meta.id] = data;
-  return data;
-}
-
-async function loadWaterwaysForContinents(continentIds) {
-  const metas = (state.category.continents || []).filter((c) =>
-    continentIds.includes(c.id)
-  );
-  const loaded = await Promise.all(metas.map((m) => loadContinent(m)));
-  return loaded.flatMap((cont) =>
-    (cont.waterways || []).map((w) => ({
-      ...w,
-      _continentId: cont.id,
-      _continentName: cont.name,
-    }))
-  );
-}
-
-function geoController() {
-  if (!geo) {
-    geo = createGeoController({
-      els,
-      state,
-      show,
-      escapeHtml,
-      loadContinent,
-      loadWaterwaysForContinents,
-      loadJSON,
-      renderHub,
-    });
-  }
-  return geo;
 }
 
 function renderBatches(category) {
@@ -626,11 +553,7 @@ function renderFlags() {
             <button type="button" class="secondary-btn" id="clear-flags">Clear all flags</button>
           </div>
           <p class="copy-status" id="copy-status" hidden></p>`
-        : `<p class="empty-flags">No flagged items yet.${
-            isGeography()
-              ? " In Drill, you can flag a weak question after answering."
-              : " In Study, open a president and tap <strong>Flag for replacement</strong> on any fact. In Quiz, you can flag after answering."
-          }</p>`
+        : `<p class="empty-flags">No flagged items yet. In Study, open a president and tap <strong>Flag for replacement</strong> on any fact. In Quiz, you can flag after answering.</p>`
     }
   `;
 
@@ -763,10 +686,6 @@ async function startQuiz(batchNumbers) {
 }
 
 function renderQuizQuestion() {
-  if (state.quiz?.mode === "geography-map") {
-    // Map drill renders itself via geo-learn
-    return;
-  }
   const { rotation, total } = state.quiz;
   const question = currentQuestion(rotation);
 
@@ -885,9 +804,6 @@ function onAnswer(choice) {
 
 function renderQuizDone() {
   const quiz = state.quiz;
-  // Map drill owns its completion screen
-  if (quiz?.mode === "geography-map") return;
-
   const { rotation, total } = quiz;
   const scopeText = (quiz.batchNumbers || []).map((n) => `Batch ${n}`).join(", ");
   els.subtitle.textContent = `${state.category.name} · Quiz complete`;
@@ -933,17 +849,12 @@ function escapeHtml(value) {
 
 function goHome() {
   stopAllSpeech();
-  geoController().cleanup();
+  cleanupPeriodicTable();
   state.category = null;
   state.batch = null;
   state.president = null;
   state.quiz = null;
   state.lastResult = null;
-  state.geoContinent = null;
-  state.waterway = null;
-  state.geoContinentIds = [];
-  state.geoMode = null;
-  state.geoFocusWaterwayId = null;
   els.subtitle.textContent = "Pick a category";
   show("categories");
 }
@@ -955,20 +866,6 @@ function goBack() {
       state.president = null;
       els.subtitle.textContent = `${state.category.name} · Batch ${state.batch.batch} (${state.batch.range})`;
       show("presidents");
-      break;
-    case "waterways":
-      geoController().cleanup();
-      state.geoContinent = null;
-      state.waterway = null;
-      geoController().renderContinents(state.category);
-      els.subtitle.textContent = `${state.category.name} · Atlas`;
-      show("continents");
-      break;
-    case "continents":
-      state.geoMode = null;
-      renderHub(state.category);
-      els.subtitle.textContent = state.category.name;
-      show("hub");
       break;
     case "presidents":
       state.batch = null;
@@ -985,31 +882,23 @@ function goBack() {
       show("hub");
       break;
     case "quiz": {
-      const mapDrill = state.quiz?.mode === "geography-map";
-      const leaveMsg = mapDrill
-        ? "Leave this map drill? Unrated cards in this session won’t be saved mid-card."
-        : "Leave this quiz? Your current rotation progress will be lost.";
-      const hasProgress = mapDrill
-        ? true
-        : state.quiz?.rotation?.remaining?.length;
-      if (hasProgress && !confirm(leaveMsg)) {
+      const hasProgress = state.quiz?.rotation?.remaining?.length;
+      if (
+        hasProgress &&
+        !confirm("Leave this quiz? Your current rotation progress will be lost.")
+      ) {
         return;
       }
-      geoController().cleanup();
       state.quiz = null;
       state.lastResult = null;
-      if (isGeography()) {
-        geoController().renderDrillSetup(state.category);
-        els.subtitle.textContent = `${state.category.name} · Map drill`;
-      } else {
-        renderQuizSetup(state.category);
-        els.subtitle.textContent = `${state.category.name} · Quiz setup`;
-      }
+      renderQuizSetup(state.category);
+      els.subtitle.textContent = `${state.category.name} · Quiz setup`;
       show("quizSetup");
       break;
     }
     case "hub":
     case "currentEvents":
+    case "periodicTable":
       goHome();
       break;
     default:
@@ -1020,13 +909,12 @@ function goBack() {
 els.backBtn.addEventListener("click", goBack);
 els.homeBtn.addEventListener("click", () => {
   if (state.view === "quiz") {
-    const mapDrill = state.quiz?.mode === "geography-map";
-    const hasProgress = mapDrill || state.quiz?.rotation?.remaining?.length;
-    if (hasProgress) {
-      const msg = mapDrill
-        ? "Leave this map drill? Unrated cards in this session won’t be saved mid-card."
-        : "Leave this quiz? Your current rotation progress will be lost.";
-      if (!confirm(msg)) return;
+    const hasProgress = state.quiz?.rotation?.remaining?.length;
+    if (
+      hasProgress &&
+      !confirm("Leave this quiz? Your current rotation progress will be lost.")
+    ) {
+      return;
     }
   }
   goHome();

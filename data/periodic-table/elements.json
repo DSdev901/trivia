@@ -1,0 +1,2023 @@
+{
+  "generatedFor": "Trivia Helper periodic table",
+  "categoryLabels": {
+    "alkali-metal": "Alkali Metal",
+    "alkaline-earth": "Alkaline Earth",
+    "transition-metal": "Transition Metal",
+    "post-transition": "Post-Transition",
+    "metalloid": "Metalloid",
+    "nonmetal": "Nonmetal",
+    "halogen": "Halogen",
+    "noble-gas": "Noble Gas",
+    "lanthanide": "Lanthanide",
+    "actinide": "Actinide"
+  },
+  "elements": [
+    {
+      "Z": 1,
+      "symbol": "H",
+      "name": "Hydrogen",
+      "atomicMass": "1.008",
+      "category": "nonmetal",
+      "group": 1,
+      "period": 1,
+      "discoveredBy": "Henry Cavendish",
+      "discoveredYear": 1766,
+      "namedAfter": "Greek hydro (water) + genes (forming)",
+      "facts": [
+        "Isolated by reacting acids with metals and recognizing a flammable gas lighter than air.",
+        "Makes up about 75% of the universe's ordinary matter by mass.",
+        "Combines with oxygen to form water — the origin of its name."
+      ]
+    },
+    {
+      "Z": 2,
+      "symbol": "He",
+      "name": "Helium",
+      "atomicMass": "4.003",
+      "category": "noble-gas",
+      "group": 18,
+      "period": 1,
+      "discoveredBy": "Pierre Janssen & Norman Lockyer",
+      "discoveredYear": 1868,
+      "namedAfter": "Greek helios (the Sun)",
+      "facts": [
+        "First spotted as a yellow spectral line in sunlight during an 1868 eclipse.",
+        "Second most abundant element in the universe.",
+        "Named for the Sun because it was found there before being found on Earth."
+      ]
+    },
+    {
+      "Z": 3,
+      "symbol": "Li",
+      "name": "Lithium",
+      "atomicMass": "6.94",
+      "category": "alkali-metal",
+      "group": 1,
+      "period": 2,
+      "discoveredBy": "Johan August Arfwedson",
+      "discoveredYear": 1817,
+      "namedAfter": "Greek lithos (stone)",
+      "facts": [
+        "Discovered in the mineral petalite.",
+        "Lightest metal and a key ingredient in rechargeable batteries.",
+        "Used medically as a mood-stabilizing salt."
+      ]
+    },
+    {
+      "Z": 4,
+      "symbol": "Be",
+      "name": "Beryllium",
+      "atomicMass": "9.012",
+      "category": "alkaline-earth",
+      "group": 2,
+      "period": 2,
+      "discoveredBy": "Louis Nicolas Vauquelin",
+      "discoveredYear": 1798,
+      "namedAfter": "Greek beryl (the gemstone)",
+      "facts": [
+        "Isolated from beryl and emerald ores.",
+        "Very stiff and light — used in aerospace alloys.",
+        "Dust is highly toxic if inhaled."
+      ]
+    },
+    {
+      "Z": 5,
+      "symbol": "B",
+      "name": "Boron",
+      "atomicMass": "10.81",
+      "category": "metalloid",
+      "group": 13,
+      "period": 2,
+      "discoveredBy": "Joseph Louis Gay-Lussac & Louis Jacques Thénard",
+      "discoveredYear": 1808,
+      "namedAfter": "Arabic buraq / Persian burah (borax)",
+      "facts": [
+        "Prepared by reducing boric acid with potassium.",
+        "Essential for plant cell walls.",
+        "Borosilicate glass resists thermal shock."
+      ]
+    },
+    {
+      "Z": 6,
+      "symbol": "C",
+      "name": "Carbon",
+      "atomicMass": "12.011",
+      "category": "nonmetal",
+      "group": 14,
+      "period": 2,
+      "discoveredBy": "known since antiquity",
+      "discoveredYear": null,
+      "namedAfter": "Latin carbo (coal/charcoal)",
+      "facts": [
+        "Basis of organic chemistry and all known life.",
+        "Forms diamond, graphite, graphene, and fullerenes.",
+        "Carbon-14 dating measures ages of once-living materials."
+      ]
+    },
+    {
+      "Z": 7,
+      "symbol": "N",
+      "name": "Nitrogen",
+      "atomicMass": "14.007",
+      "category": "nonmetal",
+      "group": 15,
+      "period": 2,
+      "discoveredBy": "Daniel Rutherford",
+      "discoveredYear": 1772,
+      "namedAfter": "Greek nitron + genes (nitre-forming)",
+      "facts": [
+        "About 78% of Earth's atmosphere.",
+        "Essential in amino acids and the Haber–Bosch fertilizer process.",
+        "Liquid nitrogen cools to −196 °C."
+      ]
+    },
+    {
+      "Z": 8,
+      "symbol": "O",
+      "name": "Oxygen",
+      "atomicMass": "15.999",
+      "category": "nonmetal",
+      "group": 16,
+      "period": 2,
+      "discoveredBy": "Carl Wilhelm Scheele & Joseph Priestley",
+      "discoveredYear": 1774,
+      "namedAfter": "Greek oxys (acid) + genes (forming)",
+      "facts": [
+        "Independently discovered; Lavoisier named it and explained combustion.",
+        "About 21% of air and the most abundant element in Earth's crust by mass.",
+        "Ozone (O₃) in the stratosphere shields UV light."
+      ]
+    },
+    {
+      "Z": 9,
+      "symbol": "F",
+      "name": "Fluorine",
+      "atomicMass": "18.998",
+      "category": "halogen",
+      "group": 17,
+      "period": 2,
+      "discoveredBy": "Henri Moissan",
+      "discoveredYear": 1886,
+      "namedAfter": "Latin fluere (to flow) via fluorite",
+      "facts": [
+        "Most reactive element; first isolated by electrolysis of potassium fluoride.",
+        "Added to toothpaste as fluoride to strengthen enamel.",
+        "Used in PTFE (Teflon) and many refrigerants."
+      ]
+    },
+    {
+      "Z": 10,
+      "symbol": "Ne",
+      "name": "Neon",
+      "atomicMass": "20.180",
+      "category": "noble-gas",
+      "group": 18,
+      "period": 2,
+      "discoveredBy": "William Ramsay & Morris Travers",
+      "discoveredYear": 1898,
+      "namedAfter": "Greek neon (new)",
+      "facts": [
+        "Discovered by chilling air until the rare gases separated.",
+        "Glows red-orange in discharge tubes — classic neon signs.",
+        "Second-lightest noble gas."
+      ]
+    },
+    {
+      "Z": 11,
+      "symbol": "Na",
+      "name": "Sodium",
+      "atomicMass": "22.990",
+      "category": "alkali-metal",
+      "group": 1,
+      "period": 3,
+      "discoveredBy": "Humphry Davy",
+      "discoveredYear": 1807,
+      "namedAfter": "English soda; symbol from Latin natrium",
+      "facts": [
+        "Isolated by electrolyzing molten soda (sodium hydroxide).",
+        "Vital electrolyte in nerve signals and table salt (NaCl).",
+        "Reacts violently with water."
+      ]
+    },
+    {
+      "Z": 12,
+      "symbol": "Mg",
+      "name": "Magnesium",
+      "atomicMass": "24.305",
+      "category": "alkaline-earth",
+      "group": 2,
+      "period": 3,
+      "discoveredBy": "Joseph Black (recognized); Humphry Davy (isolated)",
+      "discoveredYear": 1808,
+      "namedAfter": "Magnesia district of Thessaly",
+      "facts": [
+        "Burns with a brilliant white flame.",
+        "Chlorophyll's central atom in green plants.",
+        "Lightweight structural metal in cars and aircraft."
+      ]
+    },
+    {
+      "Z": 13,
+      "symbol": "Al",
+      "name": "Aluminum",
+      "atomicMass": "26.982",
+      "category": "post-transition",
+      "group": 13,
+      "period": 3,
+      "discoveredBy": "Hans Christian Ørsted",
+      "discoveredYear": 1825,
+      "namedAfter": "Latin alumen (alum)",
+      "facts": [
+        "Once rarer than gold until the Hall–Héroult process made it cheap.",
+        "Most abundant metal in Earth's crust.",
+        "Light, corrosion-resistant, endlessly recyclable."
+      ]
+    },
+    {
+      "Z": 14,
+      "symbol": "Si",
+      "name": "Silicon",
+      "atomicMass": "28.085",
+      "category": "metalloid",
+      "group": 14,
+      "period": 3,
+      "discoveredBy": "Jöns Jacob Berzelius",
+      "discoveredYear": 1823,
+      "namedAfter": "Latin silex (flint)",
+      "facts": [
+        "Second most abundant element in Earth's crust after oxygen.",
+        "Heart of computer chips and solar cells.",
+        "Silica (SiO₂) forms quartz and sand."
+      ]
+    },
+    {
+      "Z": 15,
+      "symbol": "P",
+      "name": "Phosphorus",
+      "atomicMass": "30.974",
+      "category": "nonmetal",
+      "group": 15,
+      "period": 3,
+      "discoveredBy": "Hennig Brand",
+      "discoveredYear": 1669,
+      "namedAfter": "Greek phosphoros (light-bearer)",
+      "facts": [
+        "First isolated by boiling urine down to a glowing white solid.",
+        "Essential in DNA, ATP, and fertilizers.",
+        "White phosphorus ignites in air; red phosphorus is safer."
+      ]
+    },
+    {
+      "Z": 16,
+      "symbol": "S",
+      "name": "Sulfur",
+      "atomicMass": "32.06",
+      "category": "nonmetal",
+      "group": 16,
+      "period": 3,
+      "discoveredBy": "known since antiquity",
+      "discoveredYear": null,
+      "namedAfter": "Latin sulfur",
+      "facts": [
+        "Found near volcanoes and hot springs.",
+        "Key in vulcanizing rubber and making sulfuric acid.",
+        "Smells of rotten eggs as hydrogen sulfide."
+      ]
+    },
+    {
+      "Z": 17,
+      "symbol": "Cl",
+      "name": "Chlorine",
+      "atomicMass": "35.45",
+      "category": "halogen",
+      "group": 17,
+      "period": 3,
+      "discoveredBy": "Carl Wilhelm Scheele",
+      "discoveredYear": 1774,
+      "namedAfter": "Greek chloros (pale green)",
+      "facts": [
+        "Greenish-yellow gas; Scheele made it from hydrochloric acid and manganese dioxide.",
+        "Disinfects drinking water and swimming pools.",
+        "Component of PVC plastic and table salt."
+      ]
+    },
+    {
+      "Z": 18,
+      "symbol": "Ar",
+      "name": "Argon",
+      "atomicMass": "39.95",
+      "category": "noble-gas",
+      "group": 18,
+      "period": 3,
+      "discoveredBy": "Lord Rayleigh & William Ramsay",
+      "discoveredYear": 1894,
+      "namedAfter": "Greek argos (idle/inactive)",
+      "facts": [
+        "Discovered as an inert residue after removing N₂ and O₂ from air.",
+        "About 0.93% of Earth's atmosphere.",
+        "Used to fill light bulbs and shield welding arcs."
+      ]
+    },
+    {
+      "Z": 19,
+      "symbol": "K",
+      "name": "Potassium",
+      "atomicMass": "39.098",
+      "category": "alkali-metal",
+      "group": 1,
+      "period": 4,
+      "discoveredBy": "Humphry Davy",
+      "discoveredYear": 1807,
+      "namedAfter": "English potash; symbol from Latin kalium",
+      "facts": [
+        "Isolated by electrolysis of potash.",
+        "Critical electrolyte for heart and nerve function.",
+        "Many common foods supply potassium."
+      ]
+    },
+    {
+      "Z": 20,
+      "symbol": "Ca",
+      "name": "Calcium",
+      "atomicMass": "40.078",
+      "category": "alkaline-earth",
+      "group": 2,
+      "period": 4,
+      "discoveredBy": "Humphry Davy",
+      "discoveredYear": 1808,
+      "namedAfter": "Latin calx (lime)",
+      "facts": [
+        "Isolated from lime by electrolysis.",
+        "Builds bones and teeth as calcium phosphate.",
+        "Limestone, chalk, and marble are calcium carbonate."
+      ]
+    },
+    {
+      "Z": 21,
+      "symbol": "Sc",
+      "name": "Scandium",
+      "atomicMass": "44.956",
+      "category": "transition-metal",
+      "group": 3,
+      "period": 4,
+      "discoveredBy": "Lars Fredrik Nilson",
+      "discoveredYear": 1879,
+      "namedAfter": "Latin Scandia (Scandinavia)",
+      "facts": [
+        "Found in the minerals euxenite and gadolinite.",
+        "Light alloy additive for aerospace and sports gear.",
+        "Predicted by Mendeleev as eka-boron."
+      ]
+    },
+    {
+      "Z": 22,
+      "symbol": "Ti",
+      "name": "Titanium",
+      "atomicMass": "47.867",
+      "category": "transition-metal",
+      "group": 4,
+      "period": 4,
+      "discoveredBy": "William Gregor",
+      "discoveredYear": 1791,
+      "namedAfter": "Titans of Greek myth",
+      "facts": [
+        "Discovered in ilmenite sand in Cornwall.",
+        "Strong as steel but much lighter; resists corrosion.",
+        "Used in jet engines, implants, and white pigment (TiO₂)."
+      ]
+    },
+    {
+      "Z": 23,
+      "symbol": "V",
+      "name": "Vanadium",
+      "atomicMass": "50.942",
+      "category": "transition-metal",
+      "group": 5,
+      "period": 4,
+      "discoveredBy": "Andrés Manuel del Río (1801); rediscovered by Nils Gabriel Sefström",
+      "discoveredYear": 1830,
+      "namedAfter": "Vanadis, Norse goddess of beauty",
+      "facts": [
+        "Named for the colorful compounds it forms.",
+        "Strengthens steel for tools and pipelines.",
+        "Del Río's earlier brown lead discovery was overlooked."
+      ]
+    },
+    {
+      "Z": 24,
+      "symbol": "Cr",
+      "name": "Chromium",
+      "atomicMass": "51.996",
+      "category": "transition-metal",
+      "group": 6,
+      "period": 4,
+      "discoveredBy": "Louis Nicolas Vauquelin",
+      "discoveredYear": 1797,
+      "namedAfter": "Greek chroma (color)",
+      "facts": [
+        "Gives emeralds their green and rubies their red.",
+        "Chrome plating and stainless steel both rely on it.",
+        "Essential trace nutrient in tiny amounts."
+      ]
+    },
+    {
+      "Z": 25,
+      "symbol": "Mn",
+      "name": "Manganese",
+      "atomicMass": "54.938",
+      "category": "transition-metal",
+      "group": 7,
+      "period": 4,
+      "discoveredBy": "Johan Gottlieb Gahn",
+      "discoveredYear": 1774,
+      "namedAfter": "Latin magnes (magnet) via black ore",
+      "facts": [
+        "Isolated by reducing pyrolusite with charcoal.",
+        "Removes oxygen and sulfur in steelmaking.",
+        "Critical in alkaline batteries and photosynthesis enzymes."
+      ]
+    },
+    {
+      "Z": 26,
+      "symbol": "Fe",
+      "name": "Iron",
+      "atomicMass": "55.845",
+      "category": "transition-metal",
+      "group": 8,
+      "period": 4,
+      "discoveredBy": "known since antiquity",
+      "discoveredYear": null,
+      "namedAfter": "Anglo-Saxon iren; symbol from Latin ferrum",
+      "facts": [
+        "Earth's core is mostly iron and nickel.",
+        "Hemoglobin carries oxygen using iron.",
+        "Rust is iron oxide — a slow reverse of smelting."
+      ]
+    },
+    {
+      "Z": 27,
+      "symbol": "Co",
+      "name": "Cobalt",
+      "atomicMass": "58.933",
+      "category": "transition-metal",
+      "group": 9,
+      "period": 4,
+      "discoveredBy": "Georg Brandt",
+      "discoveredYear": 1735,
+      "namedAfter": "German Kobold (goblin of the mines)",
+      "facts": [
+        "Miners blamed kobolds when ores failed to yield copper.",
+        "Makes the deep blue of stained glass and ceramics.",
+        "Vital in vitamin B₁₂."
+      ]
+    },
+    {
+      "Z": 28,
+      "symbol": "Ni",
+      "name": "Nickel",
+      "atomicMass": "58.693",
+      "category": "transition-metal",
+      "group": 10,
+      "period": 4,
+      "discoveredBy": "Axel Fredrik Cronstedt",
+      "discoveredYear": 1751,
+      "namedAfter": "German Kupfernickel (devil's copper)",
+      "facts": [
+        "Mistaken for copper ore that wouldn't smelt.",
+        "Major component of stainless steel and coins.",
+        "Earth's core also contains substantial nickel."
+      ]
+    },
+    {
+      "Z": 29,
+      "symbol": "Cu",
+      "name": "Copper",
+      "atomicMass": "63.546",
+      "category": "transition-metal",
+      "group": 11,
+      "period": 4,
+      "discoveredBy": "known since antiquity",
+      "discoveredYear": null,
+      "namedAfter": "Latin cuprum (from Cyprus)",
+      "facts": [
+        "First metal widely worked by humans.",
+        "Excellent electrical conductor — wiring standard.",
+        "Statues and roofs slowly form green copper carbonate."
+      ]
+    },
+    {
+      "Z": 30,
+      "symbol": "Zn",
+      "name": "Zinc",
+      "atomicMass": "65.38",
+      "category": "transition-metal",
+      "group": 12,
+      "period": 4,
+      "discoveredBy": "Andreas Sigismund Marggraf",
+      "discoveredYear": 1746,
+      "namedAfter": "German Zink",
+      "facts": [
+        "Isolated by heating calamine with charcoal.",
+        "Galvanizes steel to prevent rust.",
+        "Essential for immune enzymes; deficiency causes slow healing."
+      ]
+    },
+    {
+      "Z": 31,
+      "symbol": "Ga",
+      "name": "Gallium",
+      "atomicMass": "69.723",
+      "category": "post-transition",
+      "group": 13,
+      "period": 4,
+      "discoveredBy": "Paul-Émile Lecoq de Boisbaudran",
+      "discoveredYear": 1875,
+      "namedAfter": "Latin Gallia (France)",
+      "facts": [
+        "Predicted by Mendeleev as eka-aluminum.",
+        "Melts in your hand (29.8 °C).",
+        "Key semiconductor in LEDs and solar cells (GaAs)."
+      ]
+    },
+    {
+      "Z": 32,
+      "symbol": "Ge",
+      "name": "Germanium",
+      "atomicMass": "72.630",
+      "category": "metalloid",
+      "group": 14,
+      "period": 4,
+      "discoveredBy": "Clemens Winkler",
+      "discoveredYear": 1886,
+      "namedAfter": "Latin Germania (Germany)",
+      "facts": [
+        "Predicted as eka-silicon by Mendeleev.",
+        "Early transistor semiconductor before silicon dominated.",
+        "Transparent to infrared — used in IR optics."
+      ]
+    },
+    {
+      "Z": 33,
+      "symbol": "As",
+      "name": "Arsenic",
+      "atomicMass": "74.922",
+      "category": "metalloid",
+      "group": 15,
+      "period": 4,
+      "discoveredBy": "Albertus Magnus (credited)",
+      "discoveredYear": 1250,
+      "namedAfter": "Greek arsenikon (potent)",
+      "facts": [
+        "Infamous historical poison; still used carefully in semiconductors.",
+        "Gray arsenic is the stable metallic form.",
+        "Once common in pesticides and wood preservatives."
+      ]
+    },
+    {
+      "Z": 34,
+      "symbol": "Se",
+      "name": "Selenium",
+      "atomicMass": "78.971",
+      "category": "nonmetal",
+      "group": 16,
+      "period": 4,
+      "discoveredBy": "Jöns Jacob Berzelius",
+      "discoveredYear": 1817,
+      "namedAfter": "Greek selene (Moon)",
+      "facts": [
+        "Named as a counterpart to tellurium (Earth).",
+        "Photoconductive — used in early photocopiers.",
+        "Essential antioxidant nutrient in tiny doses; toxic in excess."
+      ]
+    },
+    {
+      "Z": 35,
+      "symbol": "Br",
+      "name": "Bromine",
+      "atomicMass": "79.904",
+      "category": "halogen",
+      "group": 17,
+      "period": 4,
+      "discoveredBy": "Antoine Jérôme Balard",
+      "discoveredYear": 1826,
+      "namedAfter": "Greek bromos (stench)",
+      "facts": [
+        "Only nonmetallic element liquid at room temperature.",
+        "Reddish-brown vapor with a sharp smell.",
+        "Once used in flame retardants and photographic chemicals."
+      ]
+    },
+    {
+      "Z": 36,
+      "symbol": "Kr",
+      "name": "Krypton",
+      "atomicMass": "83.798",
+      "category": "noble-gas",
+      "group": 18,
+      "period": 4,
+      "discoveredBy": "William Ramsay & Morris Travers",
+      "discoveredYear": 1898,
+      "namedAfter": "Greek kryptos (hidden)",
+      "facts": [
+        "Found as a hidden residue in liquefied air.",
+        "Used in high-intensity lamps and some lasers.",
+        "Defined the meter via a krypton-86 spectral line (1960–1983)."
+      ]
+    },
+    {
+      "Z": 37,
+      "symbol": "Rb",
+      "name": "Rubidium",
+      "atomicMass": "85.468",
+      "category": "alkali-metal",
+      "group": 1,
+      "period": 5,
+      "discoveredBy": "Robert Bunsen & Gustav Kirchhoff",
+      "discoveredYear": 1861,
+      "namedAfter": "Latin rubidus (deep red)",
+      "facts": [
+        "Named for deep-red spectral lines.",
+        "Soft metal that ignites spontaneously in air.",
+        "Used in atomic clocks and Bose–Einstein condensate research."
+      ]
+    },
+    {
+      "Z": 38,
+      "symbol": "Sr",
+      "name": "Strontium",
+      "atomicMass": "87.62",
+      "category": "alkaline-earth",
+      "group": 2,
+      "period": 5,
+      "discoveredBy": "Adair Crawford (mineral); Humphry Davy (metal)",
+      "discoveredYear": 1808,
+      "namedAfter": "Strontian, Scotland",
+      "facts": [
+        "Named for the village where strontianite was found.",
+        "Crimson-red fireworks and emergency flares.",
+        "Radioactive Sr-90 is a nuclear fallout concern."
+      ]
+    },
+    {
+      "Z": 39,
+      "symbol": "Y",
+      "name": "Yttrium",
+      "atomicMass": "88.906",
+      "category": "transition-metal",
+      "group": 3,
+      "period": 5,
+      "discoveredBy": "Johan Gadolin",
+      "discoveredYear": 1794,
+      "namedAfter": "Ytterby, Sweden",
+      "facts": [
+        "One of four elements named for the Ytterby quarry.",
+        "Key in red phosphors for older TV screens.",
+        "Used in lasers (YAG) and superconductors."
+      ]
+    },
+    {
+      "Z": 40,
+      "symbol": "Zr",
+      "name": "Zirconium",
+      "atomicMass": "91.224",
+      "category": "transition-metal",
+      "group": 4,
+      "period": 5,
+      "discoveredBy": "Martin Heinrich Klaproth",
+      "discoveredYear": 1789,
+      "namedAfter": "Persian zargun (gold-colored) via zircon",
+      "facts": [
+        "Found in zircon gemstones.",
+        "Extremely corrosion-resistant cladding for nuclear fuel.",
+        "Cubic zirconia mimics diamond in jewelry."
+      ]
+    },
+    {
+      "Z": 41,
+      "symbol": "Nb",
+      "name": "Niobium",
+      "atomicMass": "92.906",
+      "category": "transition-metal",
+      "group": 5,
+      "period": 5,
+      "discoveredBy": "Charles Hatchett",
+      "discoveredYear": 1801,
+      "namedAfter": "Niobe of Greek myth",
+      "facts": [
+        "Originally called columbium in America.",
+        "Superconducting alloys for MRI magnets.",
+        "Named for Niobe, daughter of Tantalus — near twin of tantalum."
+      ]
+    },
+    {
+      "Z": 42,
+      "symbol": "Mo",
+      "name": "Molybdenum",
+      "atomicMass": "95.95",
+      "category": "transition-metal",
+      "group": 6,
+      "period": 5,
+      "discoveredBy": "Carl Wilhelm Scheele (recognized); Peter Jacob Hjelm (isolated)",
+      "discoveredYear": 1781,
+      "namedAfter": "Greek molybdos (lead)",
+      "facts": [
+        "Confused with lead ores until Scheele showed otherwise.",
+        "Toughens steel for armor and tools.",
+        "Essential enzyme cofactor in nitrogen fixation."
+      ]
+    },
+    {
+      "Z": 43,
+      "symbol": "Tc",
+      "name": "Technetium",
+      "atomicMass": "[98]",
+      "category": "transition-metal",
+      "group": 7,
+      "period": 5,
+      "discoveredBy": "Carlo Perrier & Emilio Segrè",
+      "discoveredYear": 1937,
+      "namedAfter": "Greek technetos (artificial)",
+      "facts": [
+        "First element discovered by artificial synthesis.",
+        "Filled a gap Mendeleev left in the table.",
+        "Tc-99m is the workhorse isotope of medical imaging."
+      ]
+    },
+    {
+      "Z": 44,
+      "symbol": "Ru",
+      "name": "Ruthenium",
+      "atomicMass": "101.07",
+      "category": "transition-metal",
+      "group": 8,
+      "period": 5,
+      "discoveredBy": "Karl Ernst Claus",
+      "discoveredYear": 1844,
+      "namedAfter": "Latin Ruthenia (Russia)",
+      "facts": [
+        "Isolated from Ural platinum ores.",
+        "Hardens platinum alloys for fountain-pen tips and contacts.",
+        "Catalyzes many industrial reactions."
+      ]
+    },
+    {
+      "Z": 45,
+      "symbol": "Rh",
+      "name": "Rhodium",
+      "atomicMass": "102.91",
+      "category": "transition-metal",
+      "group": 9,
+      "period": 5,
+      "discoveredBy": "William Hyde Wollaston",
+      "discoveredYear": 1803,
+      "namedAfter": "Greek rhodon (rose)",
+      "facts": [
+        "Named for the rose-red color of its salts.",
+        "Catalytic converters and reflective mirrors.",
+        "Rarest and often most expensive precious metal."
+      ]
+    },
+    {
+      "Z": 46,
+      "symbol": "Pd",
+      "name": "Palladium",
+      "atomicMass": "106.42",
+      "category": "transition-metal",
+      "group": 10,
+      "period": 5,
+      "discoveredBy": "William Hyde Wollaston",
+      "discoveredYear": 1803,
+      "namedAfter": "Asteroid Pallas",
+      "facts": [
+        "Discovered while purifying platinum.",
+        "Absorbs huge volumes of hydrogen.",
+        "Jewelry white gold alloys and catalytic converters."
+      ]
+    },
+    {
+      "Z": 47,
+      "symbol": "Ag",
+      "name": "Silver",
+      "atomicMass": "107.87",
+      "category": "transition-metal",
+      "group": 11,
+      "period": 5,
+      "discoveredBy": "known since antiquity",
+      "discoveredYear": null,
+      "namedAfter": "Anglo-Saxon seolfor; symbol from Latin argentum",
+      "facts": [
+        "Best electrical conductor of all metals.",
+        "Antimicrobial — used in wound dressings.",
+        "Historical basis of coinage and photography."
+      ]
+    },
+    {
+      "Z": 48,
+      "symbol": "Cd",
+      "name": "Cadmium",
+      "atomicMass": "112.41",
+      "category": "transition-metal",
+      "group": 12,
+      "period": 5,
+      "discoveredBy": "Friedrich Stromeyer",
+      "discoveredYear": 1817,
+      "namedAfter": "Greek kadmia (calamine)",
+      "facts": [
+        "Found as an impurity in zinc carbonate.",
+        "Once common in NiCd batteries; now restricted for toxicity.",
+        "Brilliant yellow and red artist pigments (use carefully)."
+      ]
+    },
+    {
+      "Z": 49,
+      "symbol": "In",
+      "name": "Indium",
+      "atomicMass": "114.82",
+      "category": "post-transition",
+      "group": 13,
+      "period": 5,
+      "discoveredBy": "Ferdinand Reich & Hieronymous Richter",
+      "discoveredYear": 1863,
+      "namedAfter": "Indigo spectral line",
+      "facts": [
+        "Named for a brilliant indigo line in its spectrum.",
+        "Soft enough to score with a fingernail.",
+        "Transparent indium tin oxide coats touchscreens."
+      ]
+    },
+    {
+      "Z": 50,
+      "symbol": "Sn",
+      "name": "Tin",
+      "atomicMass": "118.71",
+      "category": "post-transition",
+      "group": 14,
+      "period": 5,
+      "discoveredBy": "known since antiquity",
+      "discoveredYear": null,
+      "namedAfter": "Anglo-Saxon tin; symbol from Latin stannum",
+      "facts": [
+        "Alloyed with copper to make bronze.",
+        "Tin cans are steel lined with tin to resist corrosion.",
+        "Tin cry is the crackling sound when a bar bends."
+      ]
+    },
+    {
+      "Z": 51,
+      "symbol": "Sb",
+      "name": "Antimony",
+      "atomicMass": "121.76",
+      "category": "metalloid",
+      "group": 15,
+      "period": 5,
+      "discoveredBy": "known since antiquity",
+      "discoveredYear": null,
+      "namedAfter": "Greek anti + monos; symbol from Latin stibium",
+      "facts": [
+        "Stibnite was used as ancient eye makeup.",
+        "Hardens lead for bullets and battery plates.",
+        "Expands on freezing — useful in casting type metal."
+      ]
+    },
+    {
+      "Z": 52,
+      "symbol": "Te",
+      "name": "Tellurium",
+      "atomicMass": "127.60",
+      "category": "metalloid",
+      "group": 16,
+      "period": 5,
+      "discoveredBy": "Franz-Joseph Müller von Reichenstein",
+      "discoveredYear": 1782,
+      "namedAfter": "Latin tellus (Earth)",
+      "facts": [
+        "Isolated from Transylvanian gold ores.",
+        "Improves machinability of steel and copper.",
+        "Cadmium telluride is used in thin-film solar panels."
+      ]
+    },
+    {
+      "Z": 53,
+      "symbol": "I",
+      "name": "Iodine",
+      "atomicMass": "126.90",
+      "category": "halogen",
+      "group": 17,
+      "period": 5,
+      "discoveredBy": "Bernard Courtois",
+      "discoveredYear": 1811,
+      "namedAfter": "Greek iodes (violet)",
+      "facts": [
+        "Discovered as violet vapor from seaweed ash.",
+        "Essential for thyroid hormones.",
+        "Tincture of iodine was a classic antiseptic."
+      ]
+    },
+    {
+      "Z": 54,
+      "symbol": "Xe",
+      "name": "Xenon",
+      "atomicMass": "131.29",
+      "category": "noble-gas",
+      "group": 18,
+      "period": 5,
+      "discoveredBy": "William Ramsay & Morris Travers",
+      "discoveredYear": 1898,
+      "namedAfter": "Greek xenos (stranger)",
+      "facts": [
+        "Rarest stable noble gas in air.",
+        "Bright white flash lamps and car HID headlights.",
+        "Forms real compounds — surprising for a noble gas."
+      ]
+    },
+    {
+      "Z": 55,
+      "symbol": "Cs",
+      "name": "Cesium",
+      "atomicMass": "132.91",
+      "category": "alkali-metal",
+      "group": 1,
+      "period": 6,
+      "discoveredBy": "Robert Bunsen & Gustav Kirchhoff",
+      "discoveredYear": 1860,
+      "namedAfter": "Latin caesius (sky blue)",
+      "facts": [
+        "Named for sky-blue spectral lines.",
+        "Softest metal; melts near room temperature (28 °C).",
+        "Defines the second via cesium atomic clocks."
+      ]
+    },
+    {
+      "Z": 56,
+      "symbol": "Ba",
+      "name": "Barium",
+      "atomicMass": "137.33",
+      "category": "alkaline-earth",
+      "group": 2,
+      "period": 6,
+      "discoveredBy": "Humphry Davy",
+      "discoveredYear": 1808,
+      "namedAfter": "Greek barys (heavy)",
+      "facts": [
+        "Isolated from heavy spar (baryte).",
+        "Barium meals make the gut visible on X-rays.",
+        "Green fireworks use barium salts."
+      ]
+    },
+    {
+      "Z": 57,
+      "symbol": "La",
+      "name": "Lanthanum",
+      "atomicMass": "138.91",
+      "category": "lanthanide",
+      "group": 3,
+      "period": 6,
+      "discoveredBy": "Carl Gustaf Mosander",
+      "discoveredYear": 1839,
+      "namedAfter": "Greek lanthanein (to lie hidden)",
+      "facts": [
+        "Hidden in cerium earth minerals for years.",
+        "First of the lanthanide series.",
+        "Used in camera lenses and nickel-metal hydride batteries."
+      ]
+    },
+    {
+      "Z": 58,
+      "symbol": "Ce",
+      "name": "Cerium",
+      "atomicMass": "140.12",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Jöns Jacob Berzelius & Wilhelm Hisinger",
+      "discoveredYear": 1803,
+      "namedAfter": "Dwarf planet Ceres",
+      "facts": [
+        "Most abundant rare-earth metal.",
+        "Cerium oxide polishes glass and catalyzes self-cleaning ovens.",
+        "Mischmetal lighter flints are mostly cerium."
+      ]
+    },
+    {
+      "Z": 59,
+      "symbol": "Pr",
+      "name": "Praseodymium",
+      "atomicMass": "140.91",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Carl Auer von Welsbach",
+      "discoveredYear": 1885,
+      "namedAfter": "Greek prasios + didymos (green twin)",
+      "facts": [
+        "Split from didymium along with neodymium.",
+        "Green-yellow glass and high-power magnets.",
+        "Name means green twin."
+      ]
+    },
+    {
+      "Z": 60,
+      "symbol": "Nd",
+      "name": "Neodymium",
+      "atomicMass": "144.24",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Carl Auer von Welsbach",
+      "discoveredYear": 1885,
+      "namedAfter": "Greek neos + didymos (new twin)",
+      "facts": [
+        "Also split from didymium.",
+        "NdFeB magnets are the strongest common permanent magnets.",
+        "Purple glass and lasers use neodymium."
+      ]
+    },
+    {
+      "Z": 61,
+      "symbol": "Pm",
+      "name": "Promethium",
+      "atomicMass": "[145]",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Jacob A. Marinsky, Lawrence E. Glendenin & Charles D. Coryell",
+      "discoveredYear": 1945,
+      "namedAfter": "Prometheus of Greek myth",
+      "facts": [
+        "Only lanthanide with no stable isotopes.",
+        "First isolated from uranium fission products.",
+        "Named for the titan who stole fire — fitting for a nuclear-era find."
+      ]
+    },
+    {
+      "Z": 62,
+      "symbol": "Sm",
+      "name": "Samarium",
+      "atomicMass": "150.36",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Paul-Émile Lecoq de Boisbaudran",
+      "discoveredYear": 1879,
+      "namedAfter": "Mineral samarskite (after V. Samarsky-Bykhovets)",
+      "facts": [
+        "Found spectroscopically in samarskite.",
+        "SmCo magnets stay strong at high temperature.",
+        "Used in control rods and cancer radiotherapy."
+      ]
+    },
+    {
+      "Z": 63,
+      "symbol": "Eu",
+      "name": "Europium",
+      "atomicMass": "151.96",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Eugène-Anatole Demarçay",
+      "discoveredYear": 1901,
+      "namedAfter": "Europe",
+      "facts": [
+        "Most reactive rare-earth metal.",
+        "Red phosphor in TVs and euro banknote anti-counterfeit strips.",
+        "Named for the continent."
+      ]
+    },
+    {
+      "Z": 64,
+      "symbol": "Gd",
+      "name": "Gadolinium",
+      "atomicMass": "157.25",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Jean Charles Galissard de Marignac",
+      "discoveredYear": 1880,
+      "namedAfter": "Johan Gadolin",
+      "facts": [
+        "Named for the Finnish chemist Gadolin.",
+        "Strongest elemental ferromagnet among rare earths near room temperature contexts.",
+        "MRI contrast agents historically used gadolinium complexes."
+      ]
+    },
+    {
+      "Z": 65,
+      "symbol": "Tb",
+      "name": "Terbium",
+      "atomicMass": "158.93",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Carl Gustaf Mosander",
+      "discoveredYear": 1843,
+      "namedAfter": "Ytterby, Sweden",
+      "facts": [
+        "Another Ytterby namesake.",
+        "Green phosphor in fluorescent lamps and TVs.",
+        "Magnetostrictive Terfenol-D uses terbium."
+      ]
+    },
+    {
+      "Z": 66,
+      "symbol": "Dy",
+      "name": "Dysprosium",
+      "atomicMass": "162.50",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Paul-Émile Lecoq de Boisbaudran",
+      "discoveredYear": 1886,
+      "namedAfter": "Greek dysprositos (hard to get)",
+      "facts": [
+        "Named for how difficult it was to isolate.",
+        "Boosts NdFeB magnets against demagnetization by heat.",
+        "Used in nuclear control rods."
+      ]
+    },
+    {
+      "Z": 67,
+      "symbol": "Ho",
+      "name": "Holmium",
+      "atomicMass": "164.93",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Per Teodor Cleve & Marc Delafontaine",
+      "discoveredYear": 1878,
+      "namedAfter": "Latin Holmia (Stockholm)",
+      "facts": [
+        "Named for Stockholm.",
+        "Highest magnetic moment of any naturally occurring element.",
+        "Holmium lasers cut bone and soft tissue in surgery."
+      ]
+    },
+    {
+      "Z": 68,
+      "symbol": "Er",
+      "name": "Erbium",
+      "atomicMass": "167.26",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Carl Gustaf Mosander",
+      "discoveredYear": 1843,
+      "namedAfter": "Ytterby, Sweden",
+      "facts": [
+        "Third Ytterby element.",
+        "Erbium-doped fiber amplifiers power long-haul internet cables.",
+        "Pink erbium glass is a classic art glass color."
+      ]
+    },
+    {
+      "Z": 69,
+      "symbol": "Tm",
+      "name": "Thulium",
+      "atomicMass": "168.93",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Per Teodor Cleve",
+      "discoveredYear": 1879,
+      "namedAfter": "Thule, mythical north",
+      "facts": [
+        "Rarest of the stable lanthanides.",
+        "Portable X-ray devices once used thulium-170.",
+        "Named for the far-northern land of Thule."
+      ]
+    },
+    {
+      "Z": 70,
+      "symbol": "Yb",
+      "name": "Ytterbium",
+      "atomicMass": "173.05",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Jean Charles Galissard de Marignac",
+      "discoveredYear": 1878,
+      "namedAfter": "Ytterby, Sweden",
+      "facts": [
+        "Fourth element named for Ytterby.",
+        "Atomic clocks and gravitational redshift experiments.",
+        "Improves stainless steel grain strength."
+      ]
+    },
+    {
+      "Z": 71,
+      "symbol": "Lu",
+      "name": "Lutetium",
+      "atomicMass": "174.97",
+      "category": "lanthanide",
+      "group": 0,
+      "period": 6,
+      "discoveredBy": "Georges Urbain",
+      "discoveredYear": 1907,
+      "namedAfter": "Latin Lutetia (Paris)",
+      "facts": [
+        "Last lanthanide discovered.",
+        "Hardest and densest rare-earth metal.",
+        "Lu-177 is used in targeted cancer radiotherapy."
+      ]
+    },
+    {
+      "Z": 72,
+      "symbol": "Hf",
+      "name": "Hafnium",
+      "atomicMass": "178.49",
+      "category": "transition-metal",
+      "group": 4,
+      "period": 6,
+      "discoveredBy": "Dirk Coster & George de Hevesy",
+      "discoveredYear": 1923,
+      "namedAfter": "Latin Hafnia (Copenhagen)",
+      "facts": [
+        "Predicted by Mendeleev; found with zirconium.",
+        "Almost inseparable chemically from zirconium.",
+        "Nuclear control rods and high-k chip dielectrics."
+      ]
+    },
+    {
+      "Z": 73,
+      "symbol": "Ta",
+      "name": "Tantalum",
+      "atomicMass": "180.95",
+      "category": "transition-metal",
+      "group": 5,
+      "period": 6,
+      "discoveredBy": "Anders Gustaf Ekeberg",
+      "discoveredYear": 1802,
+      "namedAfter": "Tantalus of Greek myth",
+      "facts": [
+        "Named for tantalizing chemists who couldn't dissolve it.",
+        "Capacitors in phones and laptops.",
+        "Extremely corrosion-resistant surgical implants."
+      ]
+    },
+    {
+      "Z": 74,
+      "symbol": "W",
+      "name": "Tungsten",
+      "atomicMass": "183.84",
+      "category": "transition-metal",
+      "group": 6,
+      "period": 6,
+      "discoveredBy": "Juan José & Fausto Elhuyar",
+      "discoveredYear": 1783,
+      "namedAfter": "Swedish tung sten (heavy stone); symbol from wolfram",
+      "facts": [
+        "Highest melting point of all metals (3422 °C).",
+        "Incandescent bulb filaments made tungsten famous.",
+        "Wolframite ore gives the symbol W."
+      ]
+    },
+    {
+      "Z": 75,
+      "symbol": "Re",
+      "name": "Rhenium",
+      "atomicMass": "186.21",
+      "category": "transition-metal",
+      "group": 7,
+      "period": 6,
+      "discoveredBy": "Walter Noddack, Ida Tacke & Otto Berg",
+      "discoveredYear": 1925,
+      "namedAfter": "Latin Rhenus (Rhine)",
+      "facts": [
+        "Last stable element discovered.",
+        "Jet-engine superalloys and reforming catalysts.",
+        "Named for the Rhine River."
+      ]
+    },
+    {
+      "Z": 76,
+      "symbol": "Os",
+      "name": "Osmium",
+      "atomicMass": "190.23",
+      "category": "transition-metal",
+      "group": 8,
+      "period": 6,
+      "discoveredBy": "Smithson Tennant",
+      "discoveredYear": 1803,
+      "namedAfter": "Greek osme (smell)",
+      "facts": [
+        "Densest naturally occurring element.",
+        "Toxic osmium tetroxide has a sharp smell.",
+        "Hard alloy tips for fountain pens and electrical contacts."
+      ]
+    },
+    {
+      "Z": 77,
+      "symbol": "Ir",
+      "name": "Iridium",
+      "atomicMass": "192.22",
+      "category": "transition-metal",
+      "group": 9,
+      "period": 6,
+      "discoveredBy": "Smithson Tennant",
+      "discoveredYear": 1803,
+      "namedAfter": "Greek iris (rainbow)",
+      "facts": [
+        "Named for colorful salts.",
+        "Extremely corrosion-resistant; spark plugs and crucibles.",
+        "Iridium layer marks the dinosaur-extinction asteroid impact."
+      ]
+    },
+    {
+      "Z": 78,
+      "symbol": "Pt",
+      "name": "Platinum",
+      "atomicMass": "195.08",
+      "category": "transition-metal",
+      "group": 10,
+      "period": 6,
+      "discoveredBy": "Antonio de Ulloa (Europe); known earlier in S. America",
+      "discoveredYear": 1735,
+      "namedAfter": "Spanish platina (little silver)",
+      "facts": [
+        "Catalytic converters, labware, and fine jewelry.",
+        "Does not tarnish — a noble metal.",
+        "Chemically akin to palladium and gold."
+      ]
+    },
+    {
+      "Z": 79,
+      "symbol": "Au",
+      "name": "Gold",
+      "atomicMass": "196.97",
+      "category": "transition-metal",
+      "group": 11,
+      "period": 6,
+      "discoveredBy": "known since antiquity",
+      "discoveredYear": null,
+      "namedAfter": "Anglo-Saxon gold; symbol from Latin aurum",
+      "facts": [
+        "Does not corrode — found native in nature.",
+        "International monetary and cultural store of value.",
+        "Excellent conductor used in critical electronics."
+      ]
+    },
+    {
+      "Z": 80,
+      "symbol": "Hg",
+      "name": "Mercury",
+      "atomicMass": "200.59",
+      "category": "transition-metal",
+      "group": 12,
+      "period": 6,
+      "discoveredBy": "known since antiquity",
+      "discoveredYear": null,
+      "namedAfter": "Mercury the planet/god; symbol from Latin hydrargyrum",
+      "facts": [
+        "Only metal liquid at standard conditions.",
+        "Once used in thermometers and amalgams — now restricted for toxicity.",
+        "Name hydrargyrum means water-silver."
+      ]
+    },
+    {
+      "Z": 81,
+      "symbol": "Tl",
+      "name": "Thallium",
+      "atomicMass": "204.38",
+      "category": "post-transition",
+      "group": 13,
+      "period": 6,
+      "discoveredBy": "William Crookes",
+      "discoveredYear": 1861,
+      "namedAfter": "Greek thallos (green shoot)",
+      "facts": [
+        "Named for a bright green spectral line.",
+        "Highly toxic — once an infamous rat poison.",
+        "Specialized electronics and infrared optics."
+      ]
+    },
+    {
+      "Z": 82,
+      "symbol": "Pb",
+      "name": "Lead",
+      "atomicMass": "207.2",
+      "category": "post-transition",
+      "group": 14,
+      "period": 6,
+      "discoveredBy": "known since antiquity",
+      "discoveredYear": null,
+      "namedAfter": "Anglo-Saxon lead; symbol from Latin plumbum",
+      "facts": [
+        "Soft, dense, and easy to cast — Roman plumbing (hence plumb).",
+        "Toxic to nerves; phased out of paint and gasoline.",
+        "Lead-acid batteries still dominate car starters."
+      ]
+    },
+    {
+      "Z": 83,
+      "symbol": "Bi",
+      "name": "Bismuth",
+      "atomicMass": "208.98",
+      "category": "post-transition",
+      "group": 15,
+      "period": 6,
+      "discoveredBy": "Claude François Geoffroy (clarified)",
+      "discoveredYear": 1753,
+      "namedAfter": "German Wismuth / Arabic",
+      "facts": [
+        "Long mistaken for lead or tin.",
+        "Least toxic heavy metal; rainbow oxide crystals are popular.",
+        "Low-melting alloys for fire sprinklers and solders."
+      ]
+    },
+    {
+      "Z": 84,
+      "symbol": "Po",
+      "name": "Polonium",
+      "atomicMass": "[209]",
+      "category": "post-transition",
+      "group": 16,
+      "period": 6,
+      "discoveredBy": "Marie & Pierre Curie",
+      "discoveredYear": 1898,
+      "namedAfter": "Latin Polonia (Poland)",
+      "facts": [
+        "Discovered while researching uranium ore pitchblende.",
+        "Marie Curie named it for her native Poland.",
+        "Intensely radioactive — used in antistatic devices and research."
+      ]
+    },
+    {
+      "Z": 85,
+      "symbol": "At",
+      "name": "Astatine",
+      "atomicMass": "[210]",
+      "category": "halogen",
+      "group": 17,
+      "period": 6,
+      "discoveredBy": "Dale R. Corson, Kenneth Ross MacKenzie & Emilio Segrè",
+      "discoveredYear": 1940,
+      "namedAfter": "Greek astatos (unstable)",
+      "facts": [
+        "Rarest naturally occurring element on Earth.",
+        "All isotopes are short-lived radioactives.",
+        "Synthesized by bombarding bismuth with alpha particles."
+      ]
+    },
+    {
+      "Z": 86,
+      "symbol": "Rn",
+      "name": "Radon",
+      "atomicMass": "[222]",
+      "category": "noble-gas",
+      "group": 18,
+      "period": 6,
+      "discoveredBy": "Friedrich Ernst Dorn",
+      "discoveredYear": 1900,
+      "namedAfter": "From radium",
+      "facts": [
+        "Colorless radioactive gas from radium's decay chain.",
+        "Indoor radon is a leading cause of lung cancer after smoking.",
+        "Heaviest noble gas."
+      ]
+    },
+    {
+      "Z": 87,
+      "symbol": "Fr",
+      "name": "Francium",
+      "atomicMass": "[223]",
+      "category": "alkali-metal",
+      "group": 1,
+      "period": 7,
+      "discoveredBy": "Marguerite Perey",
+      "discoveredYear": 1939,
+      "namedAfter": "France",
+      "facts": [
+        "Last element discovered in nature before synthetic-only finds.",
+        "Extremely rare and radioactive — seconds to minutes of half-life.",
+        "Perey found it as an actinium decay product at the Curie Institute."
+      ]
+    },
+    {
+      "Z": 88,
+      "symbol": "Ra",
+      "name": "Radium",
+      "atomicMass": "[226]",
+      "category": "alkaline-earth",
+      "group": 2,
+      "period": 7,
+      "discoveredBy": "Marie & Pierre Curie",
+      "discoveredYear": 1898,
+      "namedAfter": "Latin radius (ray)",
+      "facts": [
+        "Glowed in the dark — famously used on watch dials.",
+        "Curies processed tons of pitchblende to isolate a speck.",
+        "Radiation dangers were learned the hard way."
+      ]
+    },
+    {
+      "Z": 89,
+      "symbol": "Ac",
+      "name": "Actinium",
+      "atomicMass": "[227]",
+      "category": "actinide",
+      "group": 3,
+      "period": 7,
+      "discoveredBy": "André-Louis Debierne",
+      "discoveredYear": 1899,
+      "namedAfter": "Greek aktis (ray)",
+      "facts": [
+        "First of the actinide series.",
+        "Glows pale blue in the dark from its own radioactivity.",
+        "Occurs in uranium ores in tiny amounts."
+      ]
+    },
+    {
+      "Z": 90,
+      "symbol": "Th",
+      "name": "Thorium",
+      "atomicMass": "232.04",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Jöns Jacob Berzelius",
+      "discoveredYear": 1828,
+      "namedAfter": "Thor, Norse god of thunder",
+      "facts": [
+        "More abundant than uranium in Earth's crust.",
+        "Proposed as an alternative nuclear fuel cycle.",
+        "Once used in gas-mantle lanterns."
+      ]
+    },
+    {
+      "Z": 91,
+      "symbol": "Pa",
+      "name": "Protactinium",
+      "atomicMass": "231.04",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Kasimir Fajans & Oswald Helmuth Göhring; isolated by Lise Meitner & Otto Hahn",
+      "discoveredYear": 1917,
+      "namedAfter": "Greek protos + actinium (parent of actinium)",
+      "facts": [
+        "Name means it decays into actinium.",
+        "One of the rarest and most expensive naturally occurring elements.",
+        "Silvery metal that tarnishes in air."
+      ]
+    },
+    {
+      "Z": 92,
+      "symbol": "U",
+      "name": "Uranium",
+      "atomicMass": "238.03",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Martin Heinrich Klaproth",
+      "discoveredYear": 1789,
+      "namedAfter": "Planet Uranus",
+      "facts": [
+        "Named shortly after Uranus was discovered.",
+        "Fuel for nuclear reactors and weapons (enriched).",
+        "Natural uranium is mostly U-238 with about 0.7% fissile U-235."
+      ]
+    },
+    {
+      "Z": 93,
+      "symbol": "Np",
+      "name": "Neptunium",
+      "atomicMass": "[237]",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Edwin McMillan & Philip H. Abelson",
+      "discoveredYear": 1940,
+      "namedAfter": "Planet Neptune",
+      "facts": [
+        "First transuranium element synthesized.",
+        "Named to follow uranium, as Neptune follows Uranus.",
+        "Produced in nuclear reactors as a byproduct."
+      ]
+    },
+    {
+      "Z": 94,
+      "symbol": "Pu",
+      "name": "Plutonium",
+      "atomicMass": "[244]",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Glenn T. Seaborg, Arthur C. Wahl, Joseph W. Kennedy & Edwin McMillan",
+      "discoveredYear": 1940,
+      "namedAfter": "Dwarf planet Pluto",
+      "facts": [
+        "Named to continue the planetary sequence.",
+        "Pu-239 fuels nuclear weapons and some reactors.",
+        "First weighed as a visible sample in 1942 at Chicago."
+      ]
+    },
+    {
+      "Z": 95,
+      "symbol": "Am",
+      "name": "Americium",
+      "atomicMass": "[243]",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Glenn T. Seaborg et al.",
+      "discoveredYear": 1944,
+      "namedAfter": "the Americas",
+      "facts": [
+        "Analog of europium — named for a continent.",
+        "Ionization smoke detectors use a tiny Am-241 source.",
+        "Synthesized by bombarding plutonium."
+      ]
+    },
+    {
+      "Z": 96,
+      "symbol": "Cm",
+      "name": "Curium",
+      "atomicMass": "[247]",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Glenn T. Seaborg et al.",
+      "discoveredYear": 1944,
+      "namedAfter": "Marie & Pierre Curie",
+      "facts": [
+        "Named to honor the Curies.",
+        "Used in space RTG research and alpha-particle sources.",
+        "Glows purple from its own radioactivity in quantity."
+      ]
+    },
+    {
+      "Z": 97,
+      "symbol": "Bk",
+      "name": "Berkelium",
+      "atomicMass": "[247]",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Glenn T. Seaborg et al.",
+      "discoveredYear": 1949,
+      "namedAfter": "Berkeley, California",
+      "facts": [
+        "Made at the University of California, Berkeley.",
+        "Soft, silvery, radioactive metal.",
+        "Target material for synthesizing heavier elements."
+      ]
+    },
+    {
+      "Z": 98,
+      "symbol": "Cf",
+      "name": "Californium",
+      "atomicMass": "[251]",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Glenn T. Seaborg et al.",
+      "discoveredYear": 1950,
+      "namedAfter": "California",
+      "facts": [
+        "Powerful neutron emitter for reactors and oil-well logging.",
+        "One of the heaviest elements with practical uses.",
+        "Named for the state and university."
+      ]
+    },
+    {
+      "Z": 99,
+      "symbol": "Es",
+      "name": "Einsteinium",
+      "atomicMass": "[252]",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Albert Ghiorso et al.",
+      "discoveredYear": 1952,
+      "namedAfter": "Albert Einstein",
+      "facts": [
+        "Found in debris from the first hydrogen bomb test.",
+        "Named for Einstein.",
+        "Soft, silvery, highly radioactive."
+      ]
+    },
+    {
+      "Z": 100,
+      "symbol": "Fm",
+      "name": "Fermium",
+      "atomicMass": "[257]",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Albert Ghiorso et al.",
+      "discoveredYear": 1952,
+      "namedAfter": "Enrico Fermi",
+      "facts": [
+        "Also identified in Ivy Mike fallout.",
+        "Named for the architect of the nuclear reactor.",
+        "No weighable samples — studied atom by atom."
+      ]
+    },
+    {
+      "Z": 101,
+      "symbol": "Md",
+      "name": "Mendelevium",
+      "atomicMass": "[258]",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Albert Ghiorso et al.",
+      "discoveredYear": 1955,
+      "namedAfter": "Dmitri Mendeleev",
+      "facts": [
+        "First element identified one atom at a time.",
+        "Named for the periodic table's creator.",
+        "Made by bombarding einsteinium with helium."
+      ]
+    },
+    {
+      "Z": 102,
+      "symbol": "No",
+      "name": "Nobelium",
+      "atomicMass": "[259]",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Joint Institute (Dubna) / Berkeley (priority disputed)",
+      "discoveredYear": 1966,
+      "namedAfter": "Alfred Nobel",
+      "facts": [
+        "Named for the founder of the Nobel Prizes.",
+        "Short-lived; chemistry probed with single atoms.",
+        "Priority was long contested between labs."
+      ]
+    },
+    {
+      "Z": 103,
+      "symbol": "Lr",
+      "name": "Lawrencium",
+      "atomicMass": "[266]",
+      "category": "actinide",
+      "group": 0,
+      "period": 7,
+      "discoveredBy": "Albert Ghiorso et al.",
+      "discoveredYear": 1961,
+      "namedAfter": "Ernest O. Lawrence",
+      "facts": [
+        "Named for the cyclotron's inventor.",
+        "Last actinide — ends the f-block series.",
+        "Produced in particle accelerators."
+      ]
+    },
+    {
+      "Z": 104,
+      "symbol": "Rf",
+      "name": "Rutherfordium",
+      "atomicMass": "[267]",
+      "category": "transition-metal",
+      "group": 4,
+      "period": 7,
+      "discoveredBy": "Dubna & Berkeley (1960s)",
+      "discoveredYear": 1969,
+      "namedAfter": "Ernest Rutherford",
+      "facts": [
+        "Named for the father of nuclear physics.",
+        "First transactinide; chemistry resembles hafnium.",
+        "Half-lives measured in seconds to minutes."
+      ]
+    },
+    {
+      "Z": 105,
+      "symbol": "Db",
+      "name": "Dubnium",
+      "atomicMass": "[268]",
+      "category": "transition-metal",
+      "group": 5,
+      "period": 7,
+      "discoveredBy": "Dubna & Berkeley",
+      "discoveredYear": 1970,
+      "namedAfter": "Dubna, Russia",
+      "facts": [
+        "Named for the Joint Institute for Nuclear Research town.",
+        "Behaves like tantalum in chemical studies.",
+        "Made by heavy-ion fusion."
+      ]
+    },
+    {
+      "Z": 106,
+      "symbol": "Sg",
+      "name": "Seaborgium",
+      "atomicMass": "[269]",
+      "category": "transition-metal",
+      "group": 6,
+      "period": 7,
+      "discoveredBy": "Berkeley",
+      "discoveredYear": 1974,
+      "namedAfter": "Glenn T. Seaborg",
+      "facts": [
+        "First element named for a living person (Seaborg).",
+        "Chemistry akin to tungsten.",
+        "Honors the discoverer of many actinides."
+      ]
+    },
+    {
+      "Z": 107,
+      "symbol": "Bh",
+      "name": "Bohrium",
+      "atomicMass": "[270]",
+      "category": "transition-metal",
+      "group": 7,
+      "period": 7,
+      "discoveredBy": "GSI Darmstadt",
+      "discoveredYear": 1981,
+      "namedAfter": "Niels Bohr",
+      "facts": [
+        "Named for the quantum pioneer.",
+        "Extremely short-lived; few atoms ever made.",
+        "Produced by cold fusion of chromium with bismuth."
+      ]
+    },
+    {
+      "Z": 108,
+      "symbol": "Hs",
+      "name": "Hassium",
+      "atomicMass": "[269]",
+      "category": "transition-metal",
+      "group": 8,
+      "period": 7,
+      "discoveredBy": "GSI Darmstadt",
+      "discoveredYear": 1984,
+      "namedAfter": "Latin Hassia (Hesse, Germany)",
+      "facts": [
+        "Named for the German state of Hesse.",
+        "Expected to resemble osmium chemically.",
+        "Synthesized at the GSI accelerator."
+      ]
+    },
+    {
+      "Z": 109,
+      "symbol": "Mt",
+      "name": "Meitnerium",
+      "atomicMass": "[278]",
+      "category": "transition-metal",
+      "group": 9,
+      "period": 7,
+      "discoveredBy": "GSI Darmstadt",
+      "discoveredYear": 1982,
+      "namedAfter": "Lise Meitner",
+      "facts": [
+        "Honors the co-discoverer of nuclear fission.",
+        "No stable isotopes; milliseconds of existence.",
+        "One of the rarest human-made elements."
+      ]
+    },
+    {
+      "Z": 110,
+      "symbol": "Ds",
+      "name": "Darmstadtium",
+      "atomicMass": "[281]",
+      "category": "transition-metal",
+      "group": 10,
+      "period": 7,
+      "discoveredBy": "GSI Darmstadt",
+      "discoveredYear": 1994,
+      "namedAfter": "Darmstadt, Germany",
+      "facts": [
+        "Named for the city of its discovery lab.",
+        "Predicted to be a noble-metal-like element.",
+        "Only a handful of atoms observed."
+      ]
+    },
+    {
+      "Z": 111,
+      "symbol": "Rg",
+      "name": "Roentgenium",
+      "atomicMass": "[282]",
+      "category": "transition-metal",
+      "group": 11,
+      "period": 7,
+      "discoveredBy": "GSI Darmstadt",
+      "discoveredYear": 1994,
+      "namedAfter": "Wilhelm Röntgen",
+      "facts": [
+        "Named for the discoverer of X-rays.",
+        "Expected chemistry similar to gold.",
+        "Extremely radioactive and fleeting."
+      ]
+    },
+    {
+      "Z": 112,
+      "symbol": "Cn",
+      "name": "Copernicium",
+      "atomicMass": "[285]",
+      "category": "transition-metal",
+      "group": 12,
+      "period": 7,
+      "discoveredBy": "GSI Darmstadt",
+      "discoveredYear": 1996,
+      "namedAfter": "Nicolaus Copernicus",
+      "facts": [
+        "Named for the heliocentric astronomer.",
+        "May be unusually volatile for a metal.",
+        "Officially recognized in 2010."
+      ]
+    },
+    {
+      "Z": 113,
+      "symbol": "Nh",
+      "name": "Nihonium",
+      "atomicMass": "[286]",
+      "category": "post-transition",
+      "group": 13,
+      "period": 7,
+      "discoveredBy": "Riken (Japan)",
+      "discoveredYear": 2004,
+      "namedAfter": "Japanese Nihon (Japan)",
+      "facts": [
+        "First element discovered in Asia.",
+        "Name means Japan in Japanese.",
+        "Confirmed after years of careful atom counting."
+      ]
+    },
+    {
+      "Z": 114,
+      "symbol": "Fl",
+      "name": "Flerovium",
+      "atomicMass": "[289]",
+      "category": "post-transition",
+      "group": 14,
+      "period": 7,
+      "discoveredBy": "JINR Dubna",
+      "discoveredYear": 1998,
+      "namedAfter": "Georgy Flyorov / Flerov lab",
+      "facts": [
+        "Named for the Flerov Laboratory of Nuclear Reactions.",
+        "May show semi-noble gas–like volatility.",
+        "Superheavy research cornerstone."
+      ]
+    },
+    {
+      "Z": 115,
+      "symbol": "Mc",
+      "name": "Moscovium",
+      "atomicMass": "[290]",
+      "category": "post-transition",
+      "group": 15,
+      "period": 7,
+      "discoveredBy": "JINR Dubna / Livermore",
+      "discoveredYear": 2003,
+      "namedAfter": "Moscow Oblast",
+      "facts": [
+        "Named for the Moscow region.",
+        "Produced by calcium-48 beams on americium.",
+        "Exists for fractions of a second."
+      ]
+    },
+    {
+      "Z": 116,
+      "symbol": "Lv",
+      "name": "Livermorium",
+      "atomicMass": "[293]",
+      "category": "post-transition",
+      "group": 16,
+      "period": 7,
+      "discoveredBy": "JINR Dubna / Livermore",
+      "discoveredYear": 2000,
+      "namedAfter": "Lawrence Livermore National Laboratory",
+      "facts": [
+        "Honors the California lab partnership.",
+        "Heavier cousin of polonium chemically.",
+        "Only a few atoms ever detected."
+      ]
+    },
+    {
+      "Z": 117,
+      "symbol": "Ts",
+      "name": "Tennessine",
+      "atomicMass": "[294]",
+      "category": "halogen",
+      "group": 17,
+      "period": 7,
+      "discoveredBy": "JINR / ORNL / Vanderbilt / Livermore",
+      "discoveredYear": 2010,
+      "namedAfter": "Tennessee, USA",
+      "facts": [
+        "Named for Tennessee and its research institutions.",
+        "Heaviest halogen — likely more metallic than iodine.",
+        "Synthesized using berkelium targets."
+      ]
+    },
+    {
+      "Z": 118,
+      "symbol": "Og",
+      "name": "Oganesson",
+      "atomicMass": "[294]",
+      "category": "noble-gas",
+      "group": 18,
+      "period": 7,
+      "discoveredBy": "JINR Dubna / Livermore",
+      "discoveredYear": 2006,
+      "namedAfter": "Yuri Oganessian",
+      "facts": [
+        "Second element named for a living scientist.",
+        "Heaviest known element; predicted unusual noble-gas behavior.",
+        "Closes period 7 of the table."
+      ]
+    }
+  ]
+}
