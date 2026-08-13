@@ -160,12 +160,15 @@ async function loadPack(packMeta) {
   geo.pack = { ...packMeta, ...data };
   geo.items = data.items || [];
   geo.mapSvg = "";
+  geo._baseViewBox = null;
+  geo._packViewBox = null;
   if (packMeta.map && MAPS[packMeta.map]) {
     const mapRes = await fetch(MAPS[packMeta.map]);
     if (!mapRes.ok) throw new Error(`Failed to load map ${packMeta.map}`);
     let svg = await mapRes.text();
-    // Strip XML prolog / title noise for inline inject
     svg = svg.replace(/<\?xml[^>]*>/i, "").trim();
+    // Let CSS own fills so quiz countries share one color
+    svg = svg.replace(/\sfill="[^"]*"/gi, "");
     geo.mapSvg = svg;
   }
 }
@@ -184,17 +187,23 @@ function packItemIds() {
 
 function resetMapViewBox() {
   const svg = geo.root?.querySelector("#geo-map svg");
-  if (!svg || !geo._baseViewBox) return;
-  svg.setAttribute("viewBox", geo._baseViewBox);
+  if (!svg) return;
+  if (geo._packViewBox) {
+    svg.setAttribute("viewBox", geo._packViewBox);
+  } else if (geo._baseViewBox) {
+    svg.setAttribute("viewBox", geo._baseViewBox);
+  }
 }
 
-function fitMapToIds(ids) {
-  const host = geo.root?.querySelector("#geo-map");
-  const svg = host?.querySelector("svg");
-  if (!host || !svg) return;
+function ensureBaseViewBox(svg) {
   if (!geo._baseViewBox) {
-    geo._baseViewBox = svg.getAttribute("viewBox") || `0 0 ${svg.width.baseVal.value} ${svg.height.baseVal.value}`;
+    geo._baseViewBox =
+      svg.getAttribute("viewBox") ||
+      `0 0 ${svg.width?.baseVal?.value || 1000} ${svg.height?.baseVal?.value || 520}`;
   }
+}
+
+function boundsForIds(host, ids) {
   let minX = Infinity;
   let minY = Infinity;
   let maxX = -Infinity;
@@ -211,18 +220,31 @@ function fitMapToIds(ids) {
         maxX = Math.max(maxX, b.x + b.width);
         maxY = Math.max(maxY, b.y + b.height);
       } catch {
-        /* ignore non-rendered */
+        /* ignore */
       }
     });
   }
-  if (!found) {
+  if (!found) return null;
+  return { minX, minY, maxX, maxY };
+}
+
+function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false } = {}) {
+  const host = geo.root?.querySelector("#geo-map");
+  const svg = host?.querySelector("svg");
+  if (!host || !svg) return;
+  ensureBaseViewBox(svg);
+  const bounds = boundsForIds(host, ids);
+  if (!bounds) {
     resetMapViewBox();
     return;
   }
-  const pad = Math.max(24, (maxX - minX) * 0.2, (maxY - minY) * 0.2);
-  const w = Math.max(40, maxX - minX + pad * 2);
-  const h = Math.max(40, maxY - minY + pad * 2);
-  svg.setAttribute("viewBox", `${minX - pad} ${minY - pad} ${w} ${h}`);
+  const { minX, minY, maxX, maxY } = bounds;
+  const pad = Math.max(10, (maxX - minX) * padRatio, (maxY - minY) * padRatio);
+  const w = Math.max(30, maxX - minX + pad * 2);
+  const h = Math.max(30, maxY - minY + pad * 2);
+  const vb = `${minX - pad} ${minY - pad} ${w} ${h}`;
+  svg.setAttribute("viewBox", vb);
+  if (storeAsPack) geo._packViewBox = vb;
 }
 
 function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
@@ -232,6 +254,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   host.classList.toggle("is-outline-mode", Boolean(outline));
   const inPack = packItemIds();
   const scopePack = inPack.size > 0 && Boolean(geo.mapSvg) && !outline;
+  host.classList.toggle("is-region-scope", scopePack);
   host.querySelectorAll(".geo-region").forEach((el) => {
     const id = el.dataset.id || el.id;
     if (outline) {
@@ -254,13 +277,96 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     el.classList.toggle("is-correct", !out && flash?.id === id && flash.ok);
     el.classList.toggle("is-wrong", !out && flash?.id === id && !flash.ok);
   });
-  if (outline) fitMapToIds([activeId]);
-  else resetMapViewBox();
+  if (outline) {
+    fitMapToIds([activeId], { padRatio: 0.25 });
+  } else if (scopePack) {
+    fitMapToIds([...inPack], { padRatio: 0.1, storeAsPack: !geo._packViewBox });
+    if (geo._packViewBox) {
+      host.querySelector("svg")?.setAttribute("viewBox", geo._packViewBox);
+    }
+  } else {
+    resetMapViewBox();
+  }
+}
+
+function bindMapControls(host) {
+  const svg = host?.querySelector("svg");
+  if (!host || !svg || host.dataset.navBound === "1") return;
+  host.dataset.navBound = "1";
+  ensureBaseViewBox(svg);
+
+  const readVb = () => {
+    const raw = (svg.getAttribute("viewBox") || geo._baseViewBox).split(/\s+/).map(Number);
+    return { x: raw[0], y: raw[1], w: raw[2], h: raw[3] };
+  };
+  const writeVb = (vb) => {
+    svg.setAttribute("viewBox", `${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+  };
+
+  host.addEventListener(
+    "wheel",
+    (e) => {
+      e.preventDefault();
+      const vb = readVb();
+      const rect = svg.getBoundingClientRect();
+      const mx = (e.clientX - rect.left) / rect.width;
+      const my = (e.clientY - rect.top) / rect.height;
+      const factor = e.deltaY > 0 ? 1.12 : 1 / 1.12;
+      const nw = vb.w * factor;
+      const nh = vb.h * factor;
+      // Keep zoom within sensible bounds relative to pack/base
+      const base = (geo._packViewBox || geo._baseViewBox).split(/\s+/).map(Number);
+      const maxW = base[2] * 1.4;
+      const minW = base[2] * 0.08;
+      if (nw > maxW || nw < minW) return;
+      vb.x += (vb.w - nw) * mx;
+      vb.y += (vb.h - nh) * my;
+      vb.w = nw;
+      vb.h = nh;
+      writeVb(vb);
+    },
+    { passive: false }
+  );
+
+  let dragging = false;
+  let last = null;
+  host.addEventListener("pointerdown", (e) => {
+    if (e.button !== 0) return;
+    // Don't start drag when clicking a region for pin answers — only empty ocean / with modifier
+    const onRegion = e.target.closest?.(".geo-region:not(.is-out)");
+    if (onRegion && geo.mode === "pin" && !e.shiftKey) return;
+    dragging = true;
+    last = { x: e.clientX, y: e.clientY };
+    host.setPointerCapture?.(e.pointerId);
+    host.classList.add("is-panning");
+  });
+  host.addEventListener("pointermove", (e) => {
+    if (!dragging || !last) return;
+    const vb = readVb();
+    const rect = svg.getBoundingClientRect();
+    const dx = ((e.clientX - last.x) / rect.width) * vb.w;
+    const dy = ((e.clientY - last.y) / rect.height) * vb.h;
+    vb.x -= dx;
+    vb.y -= dy;
+    writeVb(vb);
+    last = { x: e.clientX, y: e.clientY };
+  });
+  const endDrag = () => {
+    dragging = false;
+    last = null;
+    host.classList.remove("is-panning");
+  };
+  host.addEventListener("pointerup", endDrag);
+  host.addEventListener("pointercancel", endDrag);
 }
 
 function mapHtml() {
   if (!geo.mapSvg) return "";
-  return `<div class="geo-map-frame" id="geo-map">${geo.mapSvg}</div>`;
+  return `<div class="geo-map-frame" id="geo-map">${geo.mapSvg}
+    <p class="geo-map-hint">Scroll to zoom · drag to pan${
+      geo.mode === "pin" ? " · Shift-drag to pan while pinning" : ""
+    }</p>
+  </div>`;
 }
 
 function progressHtml() {
@@ -449,9 +555,15 @@ function renderPackModes() {
       }
     </div>`;
 
+  // Focus preview on this pack's region
+  if (geo.mapSvg) {
+    paintMap(null);
+    bindMapControls(geo.root.querySelector("#geo-map"));
+  }
   geo.root.querySelector("#geo-back-hub")?.addEventListener("click", () => {
     geo.pack = null;
     geo.mode = null;
+    geo._packViewBox = null;
     renderHub();
   });
   geo.root.querySelectorAll(".geo-mode-card").forEach((btn) => {
@@ -503,6 +615,7 @@ function renderStudy() {
     </div>`;
 
   paintMap(geo.selectedId, { dimOthers: false });
+  bindMapControls(geo.root.querySelector("#geo-map"));
   bindStudy();
 }
 
@@ -609,6 +722,7 @@ function renderPlay() {
     paintMap(null);
   }
 
+  bindMapControls(geo.root.querySelector("#geo-map"));
   bindPlay();
 }
 
@@ -775,6 +889,7 @@ export function cleanupGeography() {
   geo.items = [];
   geo.mapSvg = "";
   geo._baseViewBox = null;
+  geo._packViewBox = null;
 }
 
 export async function renderGeography({ els }) {

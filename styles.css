@@ -1721,12 +1721,19 @@ body {
 }
 
 .geo-map-frame {
-  background: rgba(255, 255, 255, 0.72);
+  background: #dce9f5;
   border: 1px solid var(--stripe);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 0.65rem;
   overflow: hidden;
+  position: relative;
+  touch-action: none;
+  cursor: grab;
+}
+
+.geo-map-frame.is-panning {
+  cursor: grabbing;
 }
 
 .geo-map-frame svg {
@@ -1736,17 +1743,29 @@ body {
   max-height: min(70vh, 560px);
 }
 
+.geo-map-hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+.geo-map-frame .geo-ocean-bg {
+  fill: #dce9f5;
+  pointer-events: none;
+}
+
 .geo-map-frame .geo-region {
-  fill: #b9c9d8;
-  stroke: #fff;
-  stroke-width: 0.5;
+  fill: #9eb6cc;
+  stroke: #f4f8fb;
+  stroke-width: 0.6;
   cursor: pointer;
   transition: fill 120ms ease, opacity 120ms ease;
   vector-effect: non-scaling-stroke;
 }
 
 .geo-map-frame .geo-region:hover {
-  fill: #8eacd0;
+  fill: #7a9bb8;
 }
 
 .geo-map-frame .geo-region.is-active {
@@ -1754,20 +1773,23 @@ body {
 }
 
 .geo-map-frame .geo-region.is-dim {
-  opacity: 0.35;
+  fill: #9eb6cc;
+  opacity: 0.45;
 }
 
 .geo-map-frame .geo-region.is-correct {
   fill: #2f9e6b;
+  opacity: 1;
 }
 
 .geo-map-frame .geo-region.is-wrong {
   fill: #c45c5c;
+  opacity: 1;
 }
 
 .geo-map-frame .geo-region-muted {
-  fill: #c8d5e3;
-  stroke: #fff;
+  fill: #dce9f5;
+  stroke: none;
   pointer-events: none;
 }
 
@@ -1788,11 +1810,18 @@ body {
   fill: #2f9e6b;
 }
 
+/* Outside the quiz set: blend into ocean — no multi-colored “other” countries */
+.geo-map-frame.is-region-scope .geo-region.is-out,
 .geo-map-frame .geo-region.is-out {
-  fill: #d5dde6;
-  opacity: 0.4;
+  fill: #dce9f5;
+  stroke: none;
+  opacity: 1;
   pointer-events: none;
   cursor: default;
+}
+
+.geo-map-frame.is-region-scope .geo-region.is-out:hover {
+  fill: #dce9f5;
 }
 
 .geo-map-frame.is-outline-mode {
