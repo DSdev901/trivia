@@ -1,7 +1,7 @@
 {
-  "id": "continents",
-  "name": "Continents",
-  "map": "continents",
+  "id": "continents-oceans",
+  "name": "Continents & Oceans",
+  "map": "continents-oceans",
   "quiz": "places",
   "items": [
     {
@@ -38,6 +38,31 @@
       "id": "AN",
       "name": "Antarctica",
       "fact": "The coldest, driest, and windiest continent — covered almost entirely by ice."
+    },
+    {
+      "id": "PO",
+      "name": "Pacific Ocean",
+      "fact": "The largest and deepest ocean — larger than all of Earth’s land combined."
+    },
+    {
+      "id": "AO",
+      "name": "Atlantic Ocean",
+      "fact": "Separates the Americas from Europe and Africa; the second-largest ocean."
+    },
+    {
+      "id": "IO",
+      "name": "Indian Ocean",
+      "fact": "Bounded by Africa, Asia, and Australia — the warmest ocean on average."
+    },
+    {
+      "id": "AR",
+      "name": "Arctic Ocean",
+      "fact": "The smallest and shallowest ocean, centered on the North Pole."
+    },
+    {
+      "id": "SO",
+      "name": "Southern Ocean",
+      "fact": "Encircles Antarctica; recognized as a fifth ocean by many geographers."
     }
   ]
 }

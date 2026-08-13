@@ -1,0 +1,408 @@
+{
+  "id": "world-populous",
+  "name": "World: 50 Most Populous",
+  "map": "world-countries",
+  "quiz": "countries",
+  "items": [
+    {
+      "id": "IN",
+      "name": "India",
+      "capital": "New Delhi",
+      "flag": "🇮🇳",
+      "region": "Asia",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "CN",
+      "name": "China",
+      "capital": "Beijing",
+      "flag": "🇨🇳",
+      "region": "Asia",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "US",
+      "name": "United States",
+      "capital": "Washington D.C.",
+      "flag": "🇺🇸",
+      "region": "Americas",
+      "subregion": "North America"
+    },
+    {
+      "id": "ID",
+      "name": "Indonesia",
+      "capital": "Jakarta",
+      "flag": "🇮🇩",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia"
+    },
+    {
+      "id": "PK",
+      "name": "Pakistan",
+      "capital": "Islamabad",
+      "flag": "🇵🇰",
+      "region": "Asia",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "NG",
+      "name": "Nigeria",
+      "capital": "Abuja",
+      "flag": "🇳🇬",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "BR",
+      "name": "Brazil",
+      "capital": "Brasília",
+      "flag": "🇧🇷",
+      "region": "Americas",
+      "subregion": "South America"
+    },
+    {
+      "id": "BD",
+      "name": "Bangladesh",
+      "capital": "Dhaka",
+      "flag": "🇧🇩",
+      "region": "Asia",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "RU",
+      "name": "Russia",
+      "capital": "Moscow",
+      "flag": "🇷🇺",
+      "region": "Europe",
+      "subregion": "Eastern Europe"
+    },
+    {
+      "id": "ET",
+      "name": "Ethiopia",
+      "capital": "Addis Ababa",
+      "flag": "🇪🇹",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "MX",
+      "name": "Mexico",
+      "capital": "Mexico City",
+      "flag": "🇲🇽",
+      "region": "Americas",
+      "subregion": "North America"
+    },
+    {
+      "id": "JP",
+      "name": "Japan",
+      "capital": "Tokyo",
+      "flag": "🇯🇵",
+      "region": "Asia",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "EG",
+      "name": "Egypt",
+      "capital": "Cairo",
+      "flag": "🇪🇬",
+      "region": "Africa",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "PH",
+      "name": "Philippines",
+      "capital": "Manila",
+      "flag": "🇵🇭",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia"
+    },
+    {
+      "id": "CD",
+      "name": "DR Congo",
+      "capital": "Kinshasa",
+      "flag": "🇨🇩",
+      "region": "Africa",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "VN",
+      "name": "Vietnam",
+      "capital": "Hanoi",
+      "flag": "🇻🇳",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia"
+    },
+    {
+      "id": "IR",
+      "name": "Iran",
+      "capital": "Tehran",
+      "flag": "🇮🇷",
+      "region": "Asia",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "TR",
+      "name": "Türkiye",
+      "capital": "Ankara",
+      "flag": "🇹🇷",
+      "region": "Asia",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "DE",
+      "name": "Germany",
+      "capital": "Berlin",
+      "flag": "🇩🇪",
+      "region": "Europe",
+      "subregion": "Western Europe"
+    },
+    {
+      "id": "TH",
+      "name": "Thailand",
+      "capital": "Bangkok",
+      "flag": "🇹🇭",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia"
+    },
+    {
+      "id": "GB",
+      "name": "United Kingdom",
+      "capital": "London",
+      "flag": "🇬🇧",
+      "region": "Europe",
+      "subregion": "Northern Europe"
+    },
+    {
+      "id": "TZ",
+      "name": "Tanzania",
+      "capital": "Dodoma",
+      "flag": "🇹🇿",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "FR",
+      "name": "France",
+      "capital": "Paris",
+      "flag": "🇫🇷",
+      "region": "Europe",
+      "subregion": "Western Europe"
+    },
+    {
+      "id": "ZA",
+      "name": "South Africa",
+      "capital": "Pretoria",
+      "flag": "🇿🇦",
+      "region": "Africa",
+      "subregion": "Southern Africa"
+    },
+    {
+      "id": "IT",
+      "name": "Italy",
+      "capital": "Rome",
+      "flag": "🇮🇹",
+      "region": "Europe",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "KE",
+      "name": "Kenya",
+      "capital": "Nairobi",
+      "flag": "🇰🇪",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "MM",
+      "name": "Myanmar",
+      "capital": "Naypyidaw",
+      "flag": "🇲🇲",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia"
+    },
+    {
+      "id": "CO",
+      "name": "Colombia",
+      "capital": "Bogotá",
+      "flag": "🇨🇴",
+      "region": "Americas",
+      "subregion": "South America"
+    },
+    {
+      "id": "KR",
+      "name": "South Korea",
+      "capital": "Seoul",
+      "flag": "🇰🇷",
+      "region": "Asia",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "SD",
+      "name": "Sudan",
+      "capital": "Khartoum",
+      "flag": "🇸🇩",
+      "region": "Africa",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "UG",
+      "name": "Uganda",
+      "capital": "Kampala",
+      "flag": "🇺🇬",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "ES",
+      "name": "Spain",
+      "capital": "Madrid",
+      "flag": "🇪🇸",
+      "region": "Europe",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "AR",
+      "name": "Argentina",
+      "capital": "Buenos Aires",
+      "flag": "🇦🇷",
+      "region": "Americas",
+      "subregion": "South America"
+    },
+    {
+      "id": "DZ",
+      "name": "Algeria",
+      "capital": "Algiers",
+      "flag": "🇩🇿",
+      "region": "Africa",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "IQ",
+      "name": "Iraq",
+      "capital": "Baghdad",
+      "flag": "🇮🇶",
+      "region": "Asia",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "AF",
+      "name": "Afghanistan",
+      "capital": "Kabul",
+      "flag": "🇦🇫",
+      "region": "Asia",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "PL",
+      "name": "Poland",
+      "capital": "Warsaw",
+      "flag": "🇵🇱",
+      "region": "Europe",
+      "subregion": "Central Europe"
+    },
+    {
+      "id": "CA",
+      "name": "Canada",
+      "capital": "Ottawa",
+      "flag": "🇨🇦",
+      "region": "Americas",
+      "subregion": "North America"
+    },
+    {
+      "id": "MA",
+      "name": "Morocco",
+      "capital": "Rabat",
+      "flag": "🇲🇦",
+      "region": "Africa",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "SA",
+      "name": "Saudi Arabia",
+      "capital": "Riyadh",
+      "flag": "🇸🇦",
+      "region": "Asia",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "UA",
+      "name": "Ukraine",
+      "capital": "Kyiv",
+      "flag": "🇺🇦",
+      "region": "Europe",
+      "subregion": "Eastern Europe"
+    },
+    {
+      "id": "AO",
+      "name": "Angola",
+      "capital": "Luanda",
+      "flag": "🇦🇴",
+      "region": "Africa",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "UZ",
+      "name": "Uzbekistan",
+      "capital": "Tashkent",
+      "flag": "🇺🇿",
+      "region": "Asia",
+      "subregion": "Central Asia"
+    },
+    {
+      "id": "YE",
+      "name": "Yemen",
+      "capital": "Sana'a",
+      "flag": "🇾🇪",
+      "region": "Asia",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "PE",
+      "name": "Peru",
+      "capital": "Lima",
+      "flag": "🇵🇪",
+      "region": "Americas",
+      "subregion": "South America"
+    },
+    {
+      "id": "MY",
+      "name": "Malaysia",
+      "capital": "Kuala Lumpur",
+      "flag": "🇲🇾",
+      "region": "Asia",
+      "subregion": "South-Eastern Asia"
+    },
+    {
+      "id": "GH",
+      "name": "Ghana",
+      "capital": "Accra",
+      "flag": "🇬🇭",
+      "region": "Africa",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "MZ",
+      "name": "Mozambique",
+      "capital": "Maputo",
+      "flag": "🇲🇿",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "NP",
+      "name": "Nepal",
+      "capital": "Kathmandu",
+      "flag": "🇳🇵",
+      "region": "Asia",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "MG",
+      "name": "Madagascar",
+      "capital": "Antananarivo",
+      "flag": "🇲🇬",
+      "region": "Africa",
+      "subregion": "Eastern Africa"
+    }
+  ]
+}

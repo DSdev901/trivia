@@ -1739,9 +1739,10 @@ body {
 .geo-map-frame .geo-region {
   fill: #b9c9d8;
   stroke: #fff;
-  stroke-width: 1;
+  stroke-width: 0.5;
   cursor: pointer;
   transition: fill 120ms ease, opacity 120ms ease;
+  vector-effect: non-scaling-stroke;
 }
 
 .geo-map-frame .geo-region:hover {
@@ -1768,6 +1769,40 @@ body {
   fill: #c8d5e3;
   stroke: #fff;
   pointer-events: none;
+}
+
+.geo-map-frame .geo-ocean {
+  fill: #9ec5e8;
+  stroke: none;
+}
+
+.geo-map-frame .geo-ocean:hover {
+  fill: #7eb0de;
+}
+
+.geo-map-frame .geo-ocean.is-active {
+  fill: var(--accent);
+}
+
+.geo-map-frame .geo-ocean.is-correct {
+  fill: #2f9e6b;
+}
+
+.geo-map-frame .geo-region.is-out {
+  fill: #d5dde6;
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+}
+
+.geo-group {
+  margin-top: 1.5rem;
+}
+
+.geo-group-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
 }
 
 .geo-side {

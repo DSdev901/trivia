@@ -1,36 +1,998 @@
 {
+  "groups": [
+    {
+      "id": "world",
+      "name": "World",
+      "packs": [
+        {
+          "id": "continents",
+          "name": "Continents",
+          "blurb": "Seven continents — Pin and Type on a real world map.",
+          "map": "continents",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 7
+        },
+        {
+          "id": "continents-oceans",
+          "name": "Continents & Oceans",
+          "blurb": "Seven continents plus five oceans.",
+          "map": "continents-oceans",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 12
+        },
+        {
+          "id": "world-countries",
+          "name": "World: Countries",
+          "blurb": "UN member states on the world map — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 194
+        },
+        {
+          "id": "world-capitals",
+          "name": "World: Capitals",
+          "blurb": "Capitals of UN member states — Type or multiple choice.",
+          "map": null,
+          "quiz": "capitals",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 194
+        },
+        {
+          "id": "world-flags",
+          "name": "World: Flags",
+          "blurb": "Flags of UN member states — Type the country or pick it.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 194
+        },
+        {
+          "id": "world-populous",
+          "name": "World: 50 Most Populous",
+          "blurb": "Pin or Type the 50 most populous countries.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 50
+        },
+        {
+          "id": "world-populous-capitals",
+          "name": "World: 50 Most Populous Capitals",
+          "blurb": "Capitals of the 50 most populous countries.",
+          "map": null,
+          "quiz": "capitals",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 50
+        }
+      ]
+    },
+    {
+      "id": "north-america",
+      "name": "North America",
+      "packs": [
+        {
+          "id": "us-states",
+          "name": "U.S.: 50 States",
+          "blurb": "All 50 states — Pin, Type, capitals, and abbreviations.",
+          "map": "us-states",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "capitals",
+            "abbr",
+            "study"
+          ],
+          "itemCount": 50
+        },
+        {
+          "id": "na-countries",
+          "name": "North & Central America: Countries",
+          "blurb": "Canada, the U.S., Mexico, Central America, and the Caribbean.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 23
+        },
+        {
+          "id": "na-capitals",
+          "name": "North & Central America: Capitals",
+          "blurb": "Capitals across North America, Central America, and the Caribbean.",
+          "map": null,
+          "quiz": "capitals",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 23
+        },
+        {
+          "id": "na-flags",
+          "name": "North & Central America: Flags",
+          "blurb": "Flags for North America, Central America, and the Caribbean.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 23
+        },
+        {
+          "id": "central-america-countries",
+          "name": "Central America: Countries",
+          "blurb": "Belize through Panama — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 7
+        },
+        {
+          "id": "central-america-capitals",
+          "name": "Central America: Capitals",
+          "blurb": "Capitals of Central American countries.",
+          "map": null,
+          "quiz": "capitals",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 7
+        },
+        {
+          "id": "caribbean-countries",
+          "name": "Caribbean: Countries",
+          "blurb": "Island nations of the Caribbean.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 13
+        },
+        {
+          "id": "caribbean-capitals",
+          "name": "Caribbean: Capitals",
+          "blurb": "Capitals of Caribbean countries.",
+          "map": null,
+          "quiz": "capitals",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 13
+        },
+        {
+          "id": "caribbean-flags",
+          "name": "Caribbean: Flags",
+          "blurb": "Flags of Caribbean countries.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 13
+        },
+        {
+          "id": "northern-america-countries",
+          "name": "Northern America: Countries",
+          "blurb": "Canada, the United States, and Mexico.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 3
+        }
+      ]
+    },
+    {
+      "id": "south-america",
+      "name": "South America",
+      "packs": [
+        {
+          "id": "sa-countries",
+          "name": "South America: Countries",
+          "blurb": "Every South American country — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 12
+        },
+        {
+          "id": "sa-capitals",
+          "name": "South America: Capitals",
+          "blurb": "Capitals of South America.",
+          "map": null,
+          "quiz": "capitals",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 12
+        },
+        {
+          "id": "sa-flags",
+          "name": "South America: Flags",
+          "blurb": "Flags of South America.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 12
+        }
+      ]
+    },
+    {
+      "id": "europe",
+      "name": "Europe",
+      "packs": [
+        {
+          "id": "europe-countries",
+          "name": "Europe: Countries",
+          "blurb": "European countries (incl. Kosovo) — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 45
+        },
+        {
+          "id": "europe-capitals",
+          "name": "Europe: Capitals",
+          "blurb": "Capitals of Europe.",
+          "map": null,
+          "quiz": "capitals",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 45
+        },
+        {
+          "id": "europe-flags",
+          "name": "Europe: Flags",
+          "blurb": "Flags of Europe.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 45
+        }
+      ]
+    },
+    {
+      "id": "africa",
+      "name": "Africa",
+      "packs": [
+        {
+          "id": "africa-countries",
+          "name": "Africa: Countries",
+          "blurb": "African countries — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 54
+        },
+        {
+          "id": "africa-capitals",
+          "name": "Africa: Capitals",
+          "blurb": "Capitals of Africa.",
+          "map": null,
+          "quiz": "capitals",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 54
+        },
+        {
+          "id": "africa-flags",
+          "name": "Africa: Flags",
+          "blurb": "Flags of Africa.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 54
+        }
+      ]
+    },
+    {
+      "id": "asia",
+      "name": "Asia",
+      "packs": [
+        {
+          "id": "asia-countries",
+          "name": "Asia: Countries",
+          "blurb": "Asian countries — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 48
+        },
+        {
+          "id": "asia-capitals",
+          "name": "Asia: Capitals",
+          "blurb": "Capitals of Asia.",
+          "map": null,
+          "quiz": "capitals",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 48
+        },
+        {
+          "id": "asia-flags",
+          "name": "Asia: Flags",
+          "blurb": "Flags of Asia.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 48
+        }
+      ]
+    },
+    {
+      "id": "oceania",
+      "name": "Oceania",
+      "packs": [
+        {
+          "id": "oceania-countries",
+          "name": "Oceania: Countries",
+          "blurb": "Australia, New Zealand, and Pacific island nations.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 14
+        },
+        {
+          "id": "oceania-capitals",
+          "name": "Oceania: Capitals",
+          "blurb": "Capitals of Oceania.",
+          "map": null,
+          "quiz": "capitals",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 14
+        },
+        {
+          "id": "oceania-flags",
+          "name": "Oceania: Flags",
+          "blurb": "Flags of Oceania.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 14
+        }
+      ]
+    }
+  ],
   "packs": [
     {
       "id": "continents",
       "name": "Continents",
-      "blurb": "Seven continents — pin them on the map or name the highlighted one.",
+      "blurb": "Seven continents — Pin and Type on a real world map.",
       "map": "continents",
-      "modes": ["study", "pin", "name", "choice"],
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
       "itemCount": 7
     },
     {
-      "id": "us-states",
-      "name": "U.S. States",
-      "blurb": "All 50 states — locate on the map, name them, or quiz capitals and abbreviations.",
-      "map": "us-states",
-      "modes": ["study", "pin", "name", "choice", "capitals", "abbr"],
-      "itemCount": 50
+      "id": "continents-oceans",
+      "name": "Continents & Oceans",
+      "blurb": "Seven continents plus five oceans.",
+      "map": "continents-oceans",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "world-countries",
+      "name": "World: Countries",
+      "blurb": "UN member states on the world map — Pin and Type.",
+      "map": "world-countries",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "capitals",
+        "study"
+      ],
+      "itemCount": 194
     },
     {
       "id": "world-capitals",
-      "name": "World Capitals",
-      "blurb": "Capitals of ~50 well-known countries — multiple choice or type the answer.",
+      "name": "World: Capitals",
+      "blurb": "Capitals of UN member states — Type or multiple choice.",
       "map": null,
-      "modes": ["study", "choice", "type", "reverse"],
-      "itemCount": 50
+      "quiz": "capitals",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 194
     },
     {
       "id": "world-flags",
-      "name": "World Flags",
-      "blurb": "Match country flags (emoji) — great for quick recognition drills.",
+      "name": "World: Flags",
+      "blurb": "Flags of UN member states — Type the country or pick it.",
       "map": null,
-      "modes": ["study", "choice", "reverse"],
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 194
+    },
+    {
+      "id": "world-populous",
+      "name": "World: 50 Most Populous",
+      "blurb": "Pin or Type the 50 most populous countries.",
+      "map": "world-countries",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "capitals",
+        "study"
+      ],
       "itemCount": 50
+    },
+    {
+      "id": "world-populous-capitals",
+      "name": "World: 50 Most Populous Capitals",
+      "blurb": "Capitals of the 50 most populous countries.",
+      "map": null,
+      "quiz": "capitals",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 50
+    },
+    {
+      "id": "us-states",
+      "name": "U.S.: 50 States",
+      "blurb": "All 50 states — Pin, Type, capitals, and abbreviations.",
+      "map": "us-states",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "capitals",
+        "abbr",
+        "study"
+      ],
+      "itemCount": 50
+    },
+    {
+      "id": "na-countries",
+      "name": "North & Central America: Countries",
+      "blurb": "Canada, the U.S., Mexico, Central America, and the Caribbean.",
+      "map": "world-countries",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "capitals",
+        "study"
+      ],
+      "itemCount": 23
+    },
+    {
+      "id": "na-capitals",
+      "name": "North & Central America: Capitals",
+      "blurb": "Capitals across North America, Central America, and the Caribbean.",
+      "map": null,
+      "quiz": "capitals",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 23
+    },
+    {
+      "id": "na-flags",
+      "name": "North & Central America: Flags",
+      "blurb": "Flags for North America, Central America, and the Caribbean.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 23
+    },
+    {
+      "id": "central-america-countries",
+      "name": "Central America: Countries",
+      "blurb": "Belize through Panama — Pin and Type.",
+      "map": "world-countries",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "capitals",
+        "study"
+      ],
+      "itemCount": 7
+    },
+    {
+      "id": "central-america-capitals",
+      "name": "Central America: Capitals",
+      "blurb": "Capitals of Central American countries.",
+      "map": null,
+      "quiz": "capitals",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 7
+    },
+    {
+      "id": "caribbean-countries",
+      "name": "Caribbean: Countries",
+      "blurb": "Island nations of the Caribbean.",
+      "map": "world-countries",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "capitals",
+        "study"
+      ],
+      "itemCount": 13
+    },
+    {
+      "id": "caribbean-capitals",
+      "name": "Caribbean: Capitals",
+      "blurb": "Capitals of Caribbean countries.",
+      "map": null,
+      "quiz": "capitals",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 13
+    },
+    {
+      "id": "caribbean-flags",
+      "name": "Caribbean: Flags",
+      "blurb": "Flags of Caribbean countries.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 13
+    },
+    {
+      "id": "northern-america-countries",
+      "name": "Northern America: Countries",
+      "blurb": "Canada, the United States, and Mexico.",
+      "map": "world-countries",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "capitals",
+        "study"
+      ],
+      "itemCount": 3
+    },
+    {
+      "id": "sa-countries",
+      "name": "South America: Countries",
+      "blurb": "Every South American country — Pin and Type.",
+      "map": "world-countries",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "capitals",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "sa-capitals",
+      "name": "South America: Capitals",
+      "blurb": "Capitals of South America.",
+      "map": null,
+      "quiz": "capitals",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "sa-flags",
+      "name": "South America: Flags",
+      "blurb": "Flags of South America.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "europe-countries",
+      "name": "Europe: Countries",
+      "blurb": "European countries (incl. Kosovo) — Pin and Type.",
+      "map": "world-countries",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "capitals",
+        "study"
+      ],
+      "itemCount": 45
+    },
+    {
+      "id": "europe-capitals",
+      "name": "Europe: Capitals",
+      "blurb": "Capitals of Europe.",
+      "map": null,
+      "quiz": "capitals",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 45
+    },
+    {
+      "id": "europe-flags",
+      "name": "Europe: Flags",
+      "blurb": "Flags of Europe.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 45
+    },
+    {
+      "id": "africa-countries",
+      "name": "Africa: Countries",
+      "blurb": "African countries — Pin and Type.",
+      "map": "world-countries",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "capitals",
+        "study"
+      ],
+      "itemCount": 54
+    },
+    {
+      "id": "africa-capitals",
+      "name": "Africa: Capitals",
+      "blurb": "Capitals of Africa.",
+      "map": null,
+      "quiz": "capitals",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 54
+    },
+    {
+      "id": "africa-flags",
+      "name": "Africa: Flags",
+      "blurb": "Flags of Africa.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 54
+    },
+    {
+      "id": "asia-countries",
+      "name": "Asia: Countries",
+      "blurb": "Asian countries — Pin and Type.",
+      "map": "world-countries",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "capitals",
+        "study"
+      ],
+      "itemCount": 48
+    },
+    {
+      "id": "asia-capitals",
+      "name": "Asia: Capitals",
+      "blurb": "Capitals of Asia.",
+      "map": null,
+      "quiz": "capitals",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 48
+    },
+    {
+      "id": "asia-flags",
+      "name": "Asia: Flags",
+      "blurb": "Flags of Asia.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 48
+    },
+    {
+      "id": "oceania-countries",
+      "name": "Oceania: Countries",
+      "blurb": "Australia, New Zealand, and Pacific island nations.",
+      "map": "world-countries",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "capitals",
+        "study"
+      ],
+      "itemCount": 14
+    },
+    {
+      "id": "oceania-capitals",
+      "name": "Oceania: Capitals",
+      "blurb": "Capitals of Oceania.",
+      "map": null,
+      "quiz": "capitals",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 14
+    },
+    {
+      "id": "oceania-flags",
+      "name": "Oceania: Flags",
+      "blurb": "Flags of Oceania.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 14
     }
   ]
 }
