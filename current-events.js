@@ -202,7 +202,7 @@ function activeItems() {
 function netflixCard(item, idx) {
   const stars = (item.starring || []).filter(Boolean);
   const poster = item.image
-    ? `<img class="ce-poster" src="${escapeHtml(item.image)}" alt="" loading="lazy" decoding="async" />`
+    ? `<img class="ce-poster" src="${escapeHtml(item.image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" />`
     : `<div class="ce-poster ce-poster-empty" aria-hidden="true"></div>`;
   return `
     <article class="ce-card ce-netflix-card" data-idx="${idx}">

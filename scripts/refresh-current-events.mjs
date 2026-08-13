@@ -16,7 +16,8 @@
  *     Backfill posters on the existing Netflix JSON without a full refresh.
  */
 
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import {
@@ -33,6 +34,8 @@ import {
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_DIR = path.join(ROOT, "data", "current-events");
+const POSTER_DIR = path.join(OUT_DIR, "posters");
+const POSTER_URL_PREFIX = "data/current-events/posters";
 const WINDOW_DAYS = 21;
 
 const now = new Date();
@@ -1238,6 +1241,7 @@ async function buildNetflix() {
   );
   merged.sort((a, b) => b.date.localeCompare(a.date));
   merged = await fillMissingNetflixImages(merged);
+  merged = await cacheNetflixPosters(merged);
   return merged.map(publicNetflixItem);
 }
 
@@ -1306,11 +1310,72 @@ async function fillMissingNetflixImages(items) {
   return items;
 }
 
+function isLocalPoster(url) {
+  return String(url || "").startsWith(`${POSTER_URL_PREFIX}/`);
+}
+
+function posterFileName(title, url) {
+  const base =
+    titleCore(title)
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "")
+      .slice(0, 48) || "poster";
+  const hash = createHash("sha1").update(String(url)).digest("hex").slice(0, 8);
+  const extMatch = String(url).match(/\.(jpe?g|png|webp|gif)(?:\?|$)/i);
+  const ext = (extMatch?.[1] || "jpg").toLowerCase().replace("jpeg", "jpg");
+  return `${base}-${hash}.${ext}`;
+}
+
+async function fetchBuffer(url) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), 20000);
+  try {
+    const res = await fetch(url, {
+      signal: ctrl.signal,
+      headers: {
+        "User-Agent": UA,
+        Accept: "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+        Referer: "https://www.tvmaze.com/",
+      },
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return Buffer.from(await res.arrayBuffer());
+  } finally {
+    clearTimeout(t);
+  }
+}
+
+/** Save remote posters next to the JSON so GitHub Pages / Brave Shields can load them. */
+async function cacheNetflixPosters(items) {
+  await mkdir(POSTER_DIR, { recursive: true });
+  let saved = 0;
+  for (const item of items) {
+    if (!item.image || isLocalPoster(item.image)) continue;
+    const name = posterFileName(item.title, item.image);
+    const dest = path.join(POSTER_DIR, name);
+    const localUrl = `${POSTER_URL_PREFIX}/${name}`;
+    try {
+      const buf = await fetchBuffer(item.image);
+      if (buf.length < 800) throw new Error("image too small");
+      await writeFile(dest, buf);
+      item.image = localUrl;
+      saved += 1;
+    } catch (err) {
+      console.warn(`  [netflix] cache poster "${item.title}": ${err.message}`);
+    }
+    await sleep(200);
+  }
+  console.log(`  [netflix] cached ${saved} posters locally`);
+  return items;
+}
+
 async function backfillNetflixImages() {
   const file = path.join(OUT_DIR, "netflix.json");
   const raw = JSON.parse(await readFile(file, "utf8"));
   const items = await fillMissingNetflixImages(raw.items || []);
-  raw.items = items.map((item) =>
+  const cached = await cacheNetflixPosters(items);
+  raw.items = cached.map((item) =>
     publicNetflixItem({
       ...item,
       synopsis: item.synopsis,
