@@ -1760,26 +1760,26 @@ body {
 }
 
 .geo-map-frame .geo-inland-water {
-  fill: #6eb3dc;
+  fill: #c5dff0;
   stroke: none;
   pointer-events: none;
 }
 
 .geo-map-frame .geo-river {
   fill: none;
-  stroke: #4fa0d0;
+  stroke: #a8cbe3;
   stroke-linecap: round;
   stroke-linejoin: round;
   pointer-events: none;
   vector-effect: non-scaling-stroke;
 }
 
-.geo-map-frame .geo-river-r1 { stroke-width: 1.7; }
-.geo-map-frame .geo-river-r2 { stroke-width: 1.45; }
-.geo-map-frame .geo-river-r3 { stroke-width: 1.2; }
-.geo-map-frame .geo-river-r4 { stroke-width: 1; }
-.geo-map-frame .geo-river-r5 { stroke-width: 0.85; }
-.geo-map-frame .geo-river-r6 { stroke-width: 0.7; }
+.geo-map-frame .geo-river-r1 { stroke-width: 1; }
+.geo-map-frame .geo-river-r2 { stroke-width: 0.85; }
+.geo-map-frame .geo-river-r3 { stroke-width: 0.7; }
+.geo-map-frame .geo-river-r4 { stroke-width: 0.55; }
+.geo-map-frame .geo-river-r5 { stroke-width: 0.45; }
+.geo-map-frame .geo-river-r6 { stroke-width: 0.35; }
 
 .geo-map-frame.is-outline-mode .geo-waterways {
   display: none;
@@ -1889,13 +1889,13 @@ body {
 }
 
 .geo-map-frame .geo-marker {
-  fill: #6b8fad;
-  stroke: #fff;
-  stroke-width: 2;
+  fill: #5e6d7a;
+  stroke: #f7fafc;
+  stroke-width: 0.7;
 }
 
 .geo-map-frame .geo-marker:hover {
-  fill: #4f7599;
+  fill: #3f4e5a;
 }
 
 .geo-map-frame .geo-land-bg {
@@ -1906,48 +1906,56 @@ body {
 }
 
 .geo-map-frame.is-feature-map .geo-marker {
-  stroke: #fff;
-  stroke-width: 1.4;
+  stroke: #f7fafc;
+  stroke-width: 0.65;
 }
 
 .geo-map-frame .geo-marker-water {
-  fill: #3d8ec9;
+  fill: #6a92ab;
 }
 
-.geo-map-frame .geo-marker-water:hover,
-.geo-map-frame .geo-marker-water.is-active {
-  fill: #2b6f9e;
+.geo-map-frame .geo-marker-water:hover {
+  fill: #52768c;
 }
 
 .geo-map-frame .geo-marker-range {
-  fill: #8b6b4a;
+  fill: #8a7a68;
 }
 
-.geo-map-frame .geo-marker-range:hover,
-.geo-map-frame .geo-marker-range.is-active {
-  fill: #6e5238;
+.geo-map-frame .geo-marker-range:hover {
+  fill: #6e6152;
 }
 
 .geo-map-frame .geo-marker-land {
-  fill: #6b8fad;
+  fill: #5e6d7a;
 }
 
-.geo-map-frame .geo-marker-landmark {
-  fill: #c45c7a;
+.geo-map-frame .geo-marker-landmark,
+.geo-map-frame .geo-marker-city {
+  fill: #5e6d7a;
 }
 
 .geo-map-frame .geo-marker-landmark:hover,
-.geo-map-frame .geo-marker-landmark.is-active {
-  fill: #a34460;
+.geo-map-frame .geo-marker-city:hover {
+  fill: #3f4e5a;
 }
 
-.geo-map-frame .geo-marker-city {
-  fill: #c45c7a;
+.geo-map-frame .geo-region.geo-marker.is-active {
+  fill: var(--accent);
 }
 
-.geo-map-frame .geo-marker-city:hover,
-.geo-map-frame .geo-marker-city.is-active {
-  fill: #a34460;
+.geo-map-frame .geo-region.geo-marker.is-correct {
+  fill: #2f9e6b;
+  stroke: #fff;
+  stroke-width: 1.05;
+  opacity: 1;
+}
+
+.geo-map-frame .geo-region.geo-marker.is-wrong {
+  fill: #c45c5c;
+  stroke: #fff;
+  stroke-width: 1.05;
+  opacity: 1;
 }
 
 .geo-continent-grid {

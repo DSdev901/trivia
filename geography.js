@@ -194,7 +194,7 @@ function remaining() {
 
 function injectFeatureMarkers(svgText, items) {
   let svg = svgText.replace(/\sclass="geo-region[^"]*"/g, ' class="geo-land-bg"');
-  const r = items.length > 40 ? 5 : 7;
+  const r = items.length > 40 ? 3.4 : 4.2;
   const markers = items
     .filter((it) => Number.isFinite(it.x) && Number.isFinite(it.y))
     .map((it) => {
@@ -616,6 +616,8 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   const host = geo.root?.querySelector("#geo-map");
   if (!host) return;
   const outline = isOutlineView() && activeId;
+  const correctId = flash?.correctId ?? (flash?.ok ? flash.id : null);
+  const wrongId = flash?.wrongId ?? (flash && flash.ok === false ? flash.id : null);
   host.classList.toggle("is-outline-mode", Boolean(outline));
   host.classList.toggle("is-feature-map", geo.pack?.overlay === "markers");
   const inPack = packItemIds();
@@ -630,18 +632,18 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
       el.classList.toggle("is-out", false);
       el.classList.toggle("is-active", on);
       el.classList.toggle("is-dim", false);
-      el.classList.toggle("is-correct", flash?.id === id && flash.ok);
-      el.classList.toggle("is-wrong", flash?.id === id && !flash.ok);
+      el.classList.toggle("is-correct", correctId === id);
+      el.classList.toggle("is-wrong", wrongId === id);
       return;
     }
     el.classList.toggle("is-silhouette", false);
     el.classList.toggle("is-hidden-outline", false);
     const out = scopePack && !inPack.has(id);
     el.classList.toggle("is-out", out);
-    el.classList.toggle("is-active", !out && id === activeId);
-    el.classList.toggle("is-dim", !out && dimOthers && id !== activeId);
-    el.classList.toggle("is-correct", !out && flash?.id === id && flash.ok);
-    el.classList.toggle("is-wrong", !out && flash?.id === id && !flash.ok);
+    el.classList.toggle("is-active", !out && id === activeId && !correctId && !wrongId);
+    el.classList.toggle("is-dim", !out && dimOthers && id !== correctId && id !== wrongId);
+    el.classList.toggle("is-correct", !out && correctId === id);
+    el.classList.toggle("is-wrong", !out && wrongId === id);
   });
   if (outline) {
     fitMapToIds([activeId], { padRatio: 0.25 });
@@ -1258,18 +1260,13 @@ function judge(ok, clickedMapId = null, clickedBtn = null) {
     (geo.mode === "choice" && isOutlineView() && geo.mapSvg)
   ) {
     paintMap(item.id, {
-      dimOthers: geo.mode !== "pin",
-      flash: clickedMapId
-        ? { id: clickedMapId, ok }
-        : { id: item.id, ok: true },
+      dimOthers: true,
+      flash: {
+        correctId: item.id,
+        wrongId:
+          !ok && clickedMapId && clickedMapId !== item.id ? clickedMapId : null,
+      },
     });
-    if (!ok && clickedMapId && clickedMapId !== item.id) {
-      geo.root
-        .querySelectorAll(
-          `#geo-map .geo-region[data-id="${CSS.escape(clickedMapId)}"]`
-        )
-        .forEach((el) => el.classList.add("is-wrong"));
-    }
   }
 
   geo.root.querySelectorAll("#geo-choices .choice-btn").forEach((btn) => {
