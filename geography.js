@@ -105,6 +105,7 @@ const geo = {
   _mapLabel: null,
   _focusHalo: false,
   _panLimit: null,
+  _zoomAnim: 0,
 };
 
 function escapeHtml(s) {
@@ -892,6 +893,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     scheduleFocusPlace(host, correctId);
   } else if (geo.mode === "study" && activeId) {
     const svg = host.querySelector("svg");
+    stopFocusZoom();
     if (svg && geo._packViewBox) svg.setAttribute("viewBox", geo._packViewBox);
     scheduleFocusPlace(host, activeId);
   } else {
@@ -1017,7 +1019,10 @@ function maybeFocusTinyPlace(host, id) {
     anchor.el.classList.contains("geo-island-dot") ||
     anchor.el.tagName.toLowerCase() === "circle";
   geo._focusHalo = longPx < 44 || tinyDot;
-  if (longPx >= 28 && placeInViewBox(pack, anchor)) return true;
+  if (longPx >= 28 && placeInViewBox(pack, anchor)) {
+    stopFocusZoom();
+    return true;
+  }
 
   const scale = longPx < 28 ? Math.min(80, 56 / Math.max(longPx, 0.25)) : 1;
   let nw = pack.w / scale;
@@ -1035,8 +1040,78 @@ function maybeFocusTinyPlace(host, id) {
     w: nw,
     h: nh,
   });
-  svg.setAttribute("viewBox", `${next.x} ${next.y} ${next.w} ${next.h}`);
+  const from = viewBoxParts(svg.getAttribute("viewBox"));
+  animateFocusView(host, svg, from, next);
   return true;
+}
+
+function stopFocusZoom() {
+  if (!geo._zoomAnim) return;
+  cancelAnimationFrame(geo._zoomAnim);
+  geo._zoomAnim = 0;
+}
+
+function easeInOutQuad(t) {
+  return t < 0.5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2;
+}
+
+function lerp(a, b, t) {
+  return a + (b - a) * t;
+}
+
+function viewBoxClose(a, b) {
+  return (
+    Math.abs(a.x - b.x) < 0.05 &&
+    Math.abs(a.y - b.y) < 0.05 &&
+    Math.abs(a.w - b.w) < 0.05 &&
+    Math.abs(a.h - b.h) < 0.05
+  );
+}
+
+const FOCUS_ZOOM_MS = 800;
+
+function animateFocusView(host, svg, from, to) {
+  stopFocusZoom();
+  if (viewBoxClose(from, to)) {
+    svg.setAttribute("viewBox", `${to.x} ${to.y} ${to.w} ${to.h}`);
+    return;
+  }
+  const fromCx = from.x + from.w / 2;
+  const fromCy = from.y + from.h / 2;
+  const toCx = to.x + to.w / 2;
+  const toCy = to.y + to.h / 2;
+  const logFromW = Math.log(Math.max(from.w, 0.01));
+  const logFromH = Math.log(Math.max(from.h, 0.01));
+  const logToW = Math.log(Math.max(to.w, 0.01));
+  const logToH = Math.log(Math.max(to.h, 0.01));
+  const start = performance.now();
+  const step = (now) => {
+    if (!host.isConnected) {
+      geo._zoomAnim = 0;
+      return;
+    }
+    const t = Math.min(1, (now - start) / FOCUS_ZOOM_MS);
+    const e = easeInOutQuad(t);
+    const w = Math.exp(lerp(logFromW, logToW, e));
+    const h = Math.exp(lerp(logFromH, logToH, e));
+    const vb = {
+      x: lerp(fromCx, toCx, e) - w / 2,
+      y: lerp(fromCy, toCy, e) - h / 2,
+      w,
+      h,
+    };
+    svg.setAttribute("viewBox", `${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+    drawMapLabel(host);
+    if (t < 1) {
+      geo._zoomAnim = requestAnimationFrame(step);
+      return;
+    }
+    geo._zoomAnim = 0;
+    svg.setAttribute("viewBox", `${to.x} ${to.y} ${to.w} ${to.h}`);
+    drawMapLabel(host);
+    syncTinyHitPads(host);
+  };
+  geo._zoomAnim = requestAnimationFrame(step);
 }
 
 function scheduleFocusPlace(host, id) {
@@ -1051,7 +1126,7 @@ function scheduleFocusPlace(host, id) {
     }
     if (!ok) return;
     setMapLabel(host, id);
-    syncTinyHitPads(host);
+    if (!geo._zoomAnim) syncTinyHitPads(host);
   };
   run();
 }
@@ -1202,6 +1277,7 @@ function bindMapControls(host) {
     return { x: raw[0], y: raw[1], w: raw[2], h: raw[3] };
   };
   const writeVb = (vb) => {
+    stopFocusZoom();
     const next = clampViewBox(vb);
     svg.setAttribute("viewBox", `${next.x} ${next.y} ${next.w} ${next.h}`);
     drawMapLabel(host);
@@ -1211,6 +1287,7 @@ function bindMapControls(host) {
     "wheel",
     (e) => {
       e.preventDefault();
+      stopFocusZoom();
       const vb = readVb();
       const rect = svg.getBoundingClientRect();
       const mx = (e.clientX - rect.left) / rect.width;
@@ -1269,6 +1346,7 @@ function bindMapControls(host) {
 
   host.addEventListener("pointerdown", (e) => {
     if (e.button !== 0) return;
+    stopFocusZoom();
     setPointer(e);
     if (pointers.size >= 2) {
       dragging = false;
@@ -1967,6 +2045,7 @@ export function cleanupGeography() {
   geo._packViewBox = null;
   geo._panLimit = null;
   geo._mapLabel = null;
+  stopFocusZoom();
 }
 
 export async function renderGeography({ els }) {
