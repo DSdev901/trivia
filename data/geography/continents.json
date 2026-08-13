@@ -1,0 +1,42 @@
+{
+  "id": "continents",
+  "name": "Continents",
+  "map": "continents",
+  "items": [
+    {
+      "id": "NA",
+      "name": "North America",
+      "fact": "Includes Canada, the United States, Mexico, and Central America / the Caribbean."
+    },
+    {
+      "id": "SA",
+      "name": "South America",
+      "fact": "Home to the Amazon rainforest and the Andes, the world’s longest mountain range."
+    },
+    {
+      "id": "EU",
+      "name": "Europe",
+      "fact": "A peninsula of Eurasia with dozens of countries packed into a relatively small area."
+    },
+    {
+      "id": "AF",
+      "name": "Africa",
+      "fact": "The second-largest continent; the Sahara is the largest hot desert on Earth."
+    },
+    {
+      "id": "AS",
+      "name": "Asia",
+      "fact": "The largest continent by land and population — from Turkey to Japan."
+    },
+    {
+      "id": "OC",
+      "name": "Oceania",
+      "fact": "Australia, New Zealand, and the Pacific island nations of Melanesia, Micronesia, and Polynesia."
+    },
+    {
+      "id": "AN",
+      "name": "Antarctica",
+      "fact": "The coldest, driest, and windiest continent — covered almost entirely by ice."
+    }
+  ]
+}

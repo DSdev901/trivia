@@ -42,6 +42,12 @@ import {
   cleanupPeriodicTable,
   renderPeriodicTable,
 } from "./periodic-table.js";
+import {
+  cleanupGeography,
+  geographyCanGoBack,
+  geographyGoBack,
+  renderGeography,
+} from "./geography.js";
 
 const els = {
   subtitle: document.getElementById("subtitle"),
@@ -59,6 +65,7 @@ const els = {
   flags: document.getElementById("view-flags"),
   currentEvents: document.getElementById("view-current-events"),
   periodicTable: document.getElementById("view-periodic-table"),
+  geography: document.getElementById("view-geography"),
 };
 
 const VIEWS = [
@@ -73,6 +80,7 @@ const VIEWS = [
   "flags",
   "currentEvents",
   "periodicTable",
+  "geography",
 ];
 
 const state = {
@@ -122,6 +130,9 @@ function categoryMetaLabel(category) {
   if (category?.type === "periodic-table") {
     return "118 elements · tours & quiz";
   }
+  if (category?.type === "geography") {
+    return "maps · pin · capitals · flags";
+  }
   return `${category.batchCount} batches`;
 }
 
@@ -163,6 +174,11 @@ function openCategory(id) {
   if (category.type === "periodic-table") {
     void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
     show("periodicTable");
+    return;
+  }
+  if (category.type === "geography") {
+    void renderGeography({ els });
+    show("geography");
     return;
   }
   renderHub(category);
@@ -917,6 +933,7 @@ function escapeHtml(value) {
 function goHome() {
   stopAllSpeech();
   cleanupPeriodicTable();
+  cleanupGeography();
   state.category = null;
   state.batch = null;
   state.president = null;
@@ -981,6 +998,13 @@ function goBack() {
       }
       break;
     }
+    case "geography":
+      if (geographyCanGoBack() && geographyGoBack()) {
+        els.subtitle.textContent = state.category.name;
+        break;
+      }
+      goHome();
+      break;
     case "hub":
     case "currentEvents":
     case "periodicTable":

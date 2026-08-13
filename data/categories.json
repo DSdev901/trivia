@@ -26,6 +26,12 @@
       "name": "Periodic Table",
       "description": "Interactive table of all 118 elements — discovery, naming, and trivia facts, with spoken tours by group.",
       "type": "periodic-table"
+    },
+    {
+      "id": "geography",
+      "name": "Geography",
+      "description": "Seterra-style map quizzes — pin continents and U.S. states, drill capitals and flags, study or type answers.",
+      "type": "geography"
     }
   ]
 }

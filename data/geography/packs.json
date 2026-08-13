@@ -1,0 +1,36 @@
+{
+  "packs": [
+    {
+      "id": "continents",
+      "name": "Continents",
+      "blurb": "Seven continents — pin them on the map or name the highlighted one.",
+      "map": "continents",
+      "modes": ["study", "pin", "name", "choice"],
+      "itemCount": 7
+    },
+    {
+      "id": "us-states",
+      "name": "U.S. States",
+      "blurb": "All 50 states — locate on the map, name them, or quiz capitals and abbreviations.",
+      "map": "us-states",
+      "modes": ["study", "pin", "name", "choice", "capitals", "abbr"],
+      "itemCount": 50
+    },
+    {
+      "id": "world-capitals",
+      "name": "World Capitals",
+      "blurb": "Capitals of ~50 well-known countries — multiple choice or type the answer.",
+      "map": null,
+      "modes": ["study", "choice", "type", "reverse"],
+      "itemCount": 50
+    },
+    {
+      "id": "world-flags",
+      "name": "World Flags",
+      "blurb": "Match country flags (emoji) — great for quick recognition drills.",
+      "map": null,
+      "modes": ["study", "choice", "reverse"],
+      "itemCount": 50
+    }
+  ]
+}
