@@ -1919,19 +1919,31 @@ body {
 
 .geo-map-frame .geo-river {
   fill: none;
-  stroke: #6eb4d6;
+  stroke: #4f9cc9;
   stroke-linecap: round;
   stroke-linejoin: round;
   pointer-events: none;
   vector-effect: non-scaling-stroke;
 }
 
-.geo-map-frame .geo-river-r1 { stroke-width: 1; }
-.geo-map-frame .geo-river-r2 { stroke-width: 0.85; }
-.geo-map-frame .geo-river-r3 { stroke-width: 0.7; }
-.geo-map-frame .geo-river-r4 { stroke-width: 0.55; }
-.geo-map-frame .geo-river-r5 { stroke-width: 0.45; }
-.geo-map-frame .geo-river-r6 { stroke-width: 0.35; }
+.geo-map-frame .geo-river-r1 { stroke-width: 2.35; }
+.geo-map-frame .geo-river-r2 { stroke-width: 2.05; }
+.geo-map-frame .geo-river-r3 { stroke-width: 1.75; }
+.geo-map-frame .geo-river-r4 { stroke-width: 1.45; }
+.geo-map-frame .geo-river-r5 { stroke-width: 1.2; }
+.geo-map-frame .geo-river-r6 { stroke-width: 1; }
+
+.geo-border-overlay {
+  pointer-events: none;
+}
+
+.geo-border-line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.85;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
 
 .geo-map-frame.is-outline-mode .geo-waterways {
   display: none;

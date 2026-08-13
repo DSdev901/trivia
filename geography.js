@@ -898,7 +898,10 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   } else {
     resetMapViewBox();
   }
-  if (!outline) syncTinyIslandScale(host);
+  if (!outline) {
+    ensureBorderOverlay(host);
+    syncTinyIslandScale(host);
+  }
   if (outline) setMapLabel(host, null);
   else if (correctId) {
     scheduleFocusPlace(host, correctId);
@@ -1147,6 +1150,29 @@ function scheduleFocusPlace(host, id) {
     if (!geo._zoomAnim) syncTinyHitPads(host);
   };
   run();
+}
+
+function ensureBorderOverlay(host) {
+  if (!host || isOutlineView()) return;
+  const svg = host.querySelector("svg");
+  const water = svg?.querySelector(".geo-waterways");
+  if (!svg || !water || svg.querySelector(".geo-border-overlay")) return;
+  const NS = "http://www.w3.org/2000/svg";
+  const g = document.createElementNS(NS, "g");
+  g.setAttribute("class", "geo-border-overlay");
+  g.setAttribute("pointer-events", "none");
+  svg.querySelectorAll(".geo-region, .geo-land-bg").forEach((el) => {
+    if (el.classList.contains("geo-marker") || el.classList.contains("geo-island-dot")) {
+      return;
+    }
+    const d = el.getAttribute("d");
+    if (!d) return;
+    const line = document.createElementNS(NS, "path");
+    line.setAttribute("d", d);
+    line.setAttribute("class", "geo-border-line");
+    g.appendChild(line);
+  });
+  water.after(g);
 }
 
 function elFullBox(el) {
