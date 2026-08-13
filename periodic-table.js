@@ -130,8 +130,6 @@ function applyCategoryFilter() {
   const quizCopy = pt.root.querySelector(".pt-quiz-panel .speech-lede");
   if (quizCopy) {
     const n = elementsForScope().length;
-  if (quizCopy) {
-    const n = elementsForScope().length;
     quizCopy.innerHTML = `Quiz <strong>${escapeHtml(scopeLabel())}</strong> (${n} elements) —
           same group as Listen / the legend. <strong>Easy</strong> lists Z, family, and facts so you pick the name.
           <strong>Practice</strong> mixes lean ID, property, and position drills.`;
