@@ -12,8 +12,8 @@
  *                   merged field-wise (no duplicate titles); each keeps a
  *                   useful synopsis and main cast when sources provide them.
  *
- * A section is only overwritten when its fetch produced enough items;
- * otherwise the existing file is kept.
+ *   node scripts/refresh-current-events.mjs --netflix-images
+ *     Backfill posters on the existing Netflix JSON without a full refresh.
  */
 
 import { readFile, writeFile } from "node:fs/promises";
@@ -622,6 +622,7 @@ function mergeNetflixCards(keep, incoming) {
   out.akas = [...new Set([...(keep.akas || []), ...(incoming.akas || [])])];
   if (incoming.tvmazeId && !out.tvmazeId) out.tvmazeId = incoming.tvmazeId;
   if (incoming.wikiTitle && !out.wikiTitle) out.wikiTitle = incoming.wikiTitle;
+  if (incoming.image && !out.image) out.image = incoming.image;
   if (incoming.confirmedOriginal) out.confirmedOriginal = true;
   return out;
 }
@@ -666,13 +667,15 @@ function dedupeNetflix(items, loose) {
 }
 
 function publicNetflixItem(item) {
-  return {
+  const out = {
     title: item.title,
     type: item.type,
     date: item.date,
     synopsis: String(item.synopsis || "").replace(/\s+/g, " ").trim(),
     starring: item.starring || [],
   };
+  if (item.image) out.image = item.image;
+  return out;
 }
 
 // Wikimedia asks API clients for a descriptive UA; browser UAs get throttled.
@@ -693,7 +696,8 @@ async function wikiSearchPages(query) {
     generator: "search",
     gsrsearch: query,
     gsrlimit: "5",
-    prop: "extracts",
+    prop: "extracts|pageimages",
+    pithumbsize: "400",
     exintro: "1",
     explaintext: "1",
     redirects: "1",
@@ -791,7 +795,8 @@ async function wikiExactPage(title) {
   const data = await wikiJson({
     action: "query",
     titles: title,
-    prop: "extracts",
+    prop: "extracts|pageimages",
+    pithumbsize: "400",
     exintro: "1",
     explaintext: "1",
     redirects: "1",
@@ -850,6 +855,7 @@ async function wikiDetailsFor(item) {
     synopsis: synopsisFromExtract(hit.extract || ""),
     starring,
     exact: namesSimilar(hit.title, item.title) || namesSimilar(hit.title, want),
+    image: hit.thumbnail?.source || "",
   };
 }
 
@@ -899,6 +905,10 @@ function tvmazeType(show) {
   return "Series";
 }
 
+function tvmazeImage(show) {
+  return show?.image?.medium || show?.image?.original || "";
+}
+
 function stripHtmlBrief(html) {
   return stripTags(html).replace(/\s+/g, " ").trim();
 }
@@ -938,6 +948,7 @@ async function fetchTvmazeNetflix() {
             season: ep.season || 1,
             synopsis: stripHtmlBrief(show.summary) || "Netflix Original release.",
             starring: [],
+            image: tvmazeImage(show),
           });
         }
       }
@@ -961,6 +972,7 @@ async function fetchTvmazeNetflix() {
       const summary = stripHtmlBrief(full.summary);
       if (!isThinSynopsis(summary)) item.synopsis = summary;
       else if (summary) item.synopsis = pickSynopsis(item.synopsis, summary);
+      if (tvmazeImage(full) && !item.image) item.image = tvmazeImage(full);
       item.starring = (full._embedded?.cast || [])
         .map((c) => c.person?.name)
         .filter(Boolean)
@@ -1001,6 +1013,7 @@ async function tvmazeShowDetails(show) {
       .filter(Boolean)
       .slice(0, 6),
     akas: (full._embedded?.akas || []).map((a) => a.name).filter(Boolean),
+    image: tvmazeImage(full) || tvmazeImage(show),
   };
 }
 
@@ -1104,7 +1117,7 @@ async function enrichNetflix(items) {
       if (name) item.starring = [name];
     }
 
-    if (!needsCast(item) && !isThinSynopsis(item.synopsis)) continue;
+    if (!needsCast(item) && !isThinSynopsis(item.synopsis) && item.image) continue;
 
     if (!item.tvmazeId) {
       try {
@@ -1114,6 +1127,7 @@ async function enrichNetflix(items) {
           item.synopsis = pickSynopsis(item.synopsis, tv.synopsis);
           item.starring = mergeStarring(tv.starring, item.starring);
           item.akas = [...new Set([...(item.akas || []), ...(tv.akas || [])])];
+          if (tv.image && !item.image) item.image = tv.image;
         }
       } catch (err) {
         console.warn(`  [netflix] tvmaze search "${item.title}": ${err.message}`);
@@ -1121,12 +1135,13 @@ async function enrichNetflix(items) {
       await sleep(250);
     }
 
-    if (!needsCast(item) && !isThinSynopsis(item.synopsis)) continue;
+    if (!needsCast(item) && !isThinSynopsis(item.synopsis) && item.image) continue;
 
     try {
       const hit = await wikiDetailsWithRetry(item);
       if (hit) {
         item.wikiTitle = hit.pageTitle;
+        if (hit.image && !item.image) item.image = hit.image;
         if (hit.starring.length)
           item.starring = mergeStarring(item.starring, hit.starring);
         if (isStandup(item) && isThinSynopsis(item.synopsis) && hit.synopsis) {
@@ -1222,7 +1237,90 @@ async function buildNetflix() {
     `  [netflix] ${merged.length} titles after merge (${useful} with synopsis, ${withCast} with cast)`
   );
   merged.sort((a, b) => b.date.localeCompare(a.date));
+  merged = await fillMissingNetflixImages(merged);
   return merged.map(publicNetflixItem);
+}
+
+async function tvmazePosterForTitle(title) {
+  const q = titleCore(title);
+  if (!q) return "";
+  const results = JSON.parse(
+    await fetchText(
+      `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(q)}`,
+      15000,
+      TVMAZE_UA
+    )
+  );
+  const list = results || [];
+  const named =
+    list.find((r) => isNetflixShow(r.show) && namesSimilar(r.show.name, title)) ||
+    list.find((r) => namesSimilar(r.show.name, title)) ||
+    list[0];
+  return tvmazeImage(named?.show);
+}
+
+async function wikiPosterForTitle(title) {
+  const want = String(title || "")
+    .replace(/\s*\((?:Season|Part)\s+\d+\)/i, "")
+    .trim();
+  if (!want) return "";
+  const page = await wikiExactPage(want);
+  if (page?.thumbnail?.source) return page.thumbnail.source;
+  const pages = await wikiSearchPages(`${want} Netflix`);
+  const hit =
+    pages.find((p) => namesSimilar(p.title, want)) ||
+    pages.find((p) => /netflix/i.test(p.extract || "")) ||
+    pages[0];
+  return hit?.thumbnail?.source || "";
+}
+
+async function fillMissingNetflixImages(items) {
+  let filled = 0;
+  for (const item of items) {
+    if (item.image) continue;
+    try {
+      const fromTv = await tvmazePosterForTitle(item.title);
+      if (fromTv) {
+        item.image = fromTv;
+        filled += 1;
+        await sleep(200);
+        continue;
+      }
+    } catch (err) {
+      console.warn(`  [netflix] poster tvmaze "${item.title}": ${err.message}`);
+    }
+    await sleep(200);
+    try {
+      const fromWiki = await wikiPosterForTitle(item.title);
+      if (fromWiki) {
+        item.image = fromWiki;
+        filled += 1;
+      }
+    } catch (err) {
+      console.warn(`  [netflix] poster wiki "${item.title}": ${err.message}`);
+    }
+    await sleep(150);
+  }
+  const withImg = items.filter((i) => i.image).length;
+  console.log(`  [netflix] posters: ${withImg}/${items.length} (filled ${filled})`);
+  return items;
+}
+
+async function backfillNetflixImages() {
+  const file = path.join(OUT_DIR, "netflix.json");
+  const raw = JSON.parse(await readFile(file, "utf8"));
+  const items = await fillMissingNetflixImages(raw.items || []);
+  raw.items = items.map((item) =>
+    publicNetflixItem({
+      ...item,
+      synopsis: item.synopsis,
+      starring: item.starring || [],
+    })
+  );
+  raw.generatedAt = now.toISOString();
+  await writeFile(file, `${JSON.stringify(raw, null, 2)}\n`);
+  console.log(`  [netflix] wrote ${raw.items.length} items with posters`);
+  return true;
 }
 
 /* ---------------- write ---------------- */
@@ -1249,9 +1347,15 @@ async function writeSection(section, items, minItems) {
 
 async function main() {
   const onlyNetflix = process.argv.includes("--netflix");
+  const onlyImages = process.argv.includes("--netflix-images");
   console.log(
     `Refreshing current events (${windowStart} → ${windowEnd})…`
   );
+  if (onlyImages) {
+    await backfillNetflixImages();
+    console.log("Done — netflix posters updated.");
+    return;
+  }
   if (onlyNetflix) {
     const netflix = await buildNetflix();
     const ok = await writeSection("netflix", netflix, 5);

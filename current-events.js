@@ -201,8 +201,13 @@ function activeItems() {
 
 function netflixCard(item, idx) {
   const stars = (item.starring || []).filter(Boolean);
+  const poster = item.image
+    ? `<img class="ce-poster" src="${escapeHtml(item.image)}" alt="" loading="lazy" decoding="async" />`
+    : `<div class="ce-poster ce-poster-empty" aria-hidden="true"></div>`;
   return `
     <article class="ce-card ce-netflix-card" data-idx="${idx}">
+      ${poster}
+      <div class="ce-netflix-copy">
       <div class="ce-meta">
         <span class="ce-badge">${escapeHtml(item.type)}</span>
         <span class="ce-date">${fmtDate(item.date)}</span>
@@ -221,6 +226,7 @@ function netflixCard(item, idx) {
               .join("")}</div>`
           : ""
       }
+      </div>
     </article>`;
 }
 
@@ -437,6 +443,15 @@ function render() {
     btn.addEventListener("click", () => {
       unlockSpeech();
       playItems([Number(btn.dataset.speak)]);
+    });
+  });
+
+  ce.root.querySelectorAll("img.ce-poster").forEach((img) => {
+    img.addEventListener("error", () => {
+      const ph = document.createElement("div");
+      ph.className = "ce-poster ce-poster-empty";
+      ph.setAttribute("aria-hidden", "true");
+      img.replaceWith(ph);
     });
   });
 
