@@ -6,6 +6,8 @@
  *
  *   curl -sL -o /tmp/countries-50m.json https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json
  *   curl -sL -o /tmp/countries.json https://raw.githubusercontent.com/mledoze/countries/master/countries.json
+ *   curl -sL -o /tmp/ne_50m_lakes.geojson https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@master/geojson/ne_50m_lakes.geojson
+ *   curl -sL -o /tmp/ne_50m_rivers.geojson https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@master/geojson/ne_50m_rivers_lake_centerlines.geojson
  *   cd /tmp/geo-build && npm i d3-geo topojson-client
  *   node /path/to/scripts/build-world-maps.mjs
  */
@@ -103,7 +105,7 @@ const projection = geoNaturalEarth1().fitExtent(
   ],
   countries
 );
-const path = geoPath(projection);
+const toPath = geoPath(projection);
 const byIso = new Map();
 for (const f of countries.features) {
   const idNum = f.id != null ? String(Number(f.id)) : "";
@@ -111,7 +113,7 @@ for (const f of countries.features) {
   const nm = (f.properties?.name || "").toLowerCase();
   if (!iso) iso = nameAliases[nm] || byName.get(nm);
   if (!iso) continue;
-  const d = path(f);
+  const d = toPath(f);
   if (!d) continue;
   if (!byIso.has(iso)) byIso.set(iso, []);
   byIso.get(iso).push(d);
@@ -124,6 +126,53 @@ for (const [iso, ds] of byIso) {
   if (!contPaths.has(cont)) contPaths.set(cont, []);
   contPaths.get(cont).push(...ds);
 }
+
+function loadGeojson(candidates) {
+  for (const p of candidates) {
+    try {
+      return JSON.parse(readFileSync(p, "utf8"));
+    } catch {
+      /* try next */
+    }
+  }
+  return null;
+}
+
+function waterwayMarkup(fc, className, { skipCla = [], maxRank = 99 } = {}) {
+  if (!fc?.features) return "";
+  const lines = [];
+  for (const f of fc.features) {
+    const cla = f.properties?.featurecla || "";
+    if (skipCla.includes(cla)) continue;
+    const rank = Number(f.properties?.scalerank);
+    if (Number.isFinite(rank) && rank > maxRank) continue;
+    const d = toPath(f);
+    if (!d) continue;
+    const rankClass = Number.isFinite(rank) ? ` ${className}-r${rank}` : "";
+    lines.push(`<path class="${className}${rankClass}" d="${d}"/>`);
+  }
+  return lines.join("\n    ");
+}
+
+const lakesFc = loadGeojson(["/tmp/ne_50m_lakes.geojson"]);
+const riversFc = loadGeojson(["/tmp/ne_50m_rivers.geojson"]);
+const lakeMarkup = waterwayMarkup(lakesFc, "geo-inland-water");
+const riverMarkup = waterwayMarkup(riversFc, "geo-river", {
+  skipCla: ["Lake Centerline"],
+});
+const lakeCount = lakeMarkup ? lakeMarkup.split("\n").length : 0;
+const riverCount = riverMarkup ? riverMarkup.split("\n").length : 0;
+if (!lakesFc) console.warn("Missing /tmp/ne_50m_lakes.geojson — inland lakes omitted");
+if (!riversFc) console.warn("Missing /tmp/ne_50m_rivers.geojson — rivers omitted");
+
+const waterwaysSvg =
+  lakeMarkup || riverMarkup
+    ? `
+  <g class="geo-waterways" pointer-events="none">
+    ${lakeMarkup}
+    ${riverMarkup}
+  </g>`
+    : "";
 
 const extras = [];
 if (!byIso.has("TV")) {
@@ -143,6 +192,7 @@ const countrySvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width
     )
     .join("\n  ")}
   ${extras.join("\n  ")}
+  ${waterwaysSvg}
 </svg>
 `;
 
@@ -156,6 +206,7 @@ const continentsSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${wi
         `<path id="${c}" data-id="${c}" class="geo-region" d="${contPaths.get(c).join(" ")}"/>`
     )
     .join("\n  ")}
+  ${waterwaysSvg}
 </svg>
 `;
 
@@ -176,10 +227,13 @@ const continentsOceansSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 
         `<path id="${c}" data-id="${c}" class="geo-region" d="${contPaths.get(c).join(" ")}"/>`
     )
     .join("\n  ")}
+  ${waterwaysSvg}
 </svg>
 `;
 
 writeFileSync(path.join(OUT, "world-countries.svg"), countrySvg);
 writeFileSync(path.join(OUT, "continents.svg"), continentsSvg);
 writeFileSync(path.join(OUT, "continents-oceans.svg"), continentsOceansSvg);
-console.log(`Wrote ${byIso.size} countries → ${OUT}`);
+console.log(
+  `Wrote ${byIso.size} countries, ${lakeCount} lakes, ${riverCount} rivers → ${OUT}`
+);

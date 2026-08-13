@@ -1755,6 +1755,36 @@ body {
   pointer-events: none;
 }
 
+.geo-map-frame .geo-waterways {
+  pointer-events: none;
+}
+
+.geo-map-frame .geo-inland-water {
+  fill: #6eb3dc;
+  stroke: none;
+  pointer-events: none;
+}
+
+.geo-map-frame .geo-river {
+  fill: none;
+  stroke: #4fa0d0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.geo-map-frame .geo-river-r1 { stroke-width: 1.7; }
+.geo-map-frame .geo-river-r2 { stroke-width: 1.45; }
+.geo-map-frame .geo-river-r3 { stroke-width: 1.2; }
+.geo-map-frame .geo-river-r4 { stroke-width: 1; }
+.geo-map-frame .geo-river-r5 { stroke-width: 0.85; }
+.geo-map-frame .geo-river-r6 { stroke-width: 0.7; }
+
+.geo-map-frame.is-outline-mode .geo-waterways {
+  display: none;
+}
+
 .geo-map-frame .geo-region {
   fill: #9eb6cc;
   stroke: #f4f8fb;
