@@ -7,7 +7,12 @@
  * Sources (no API keys, no dependencies):
  *   Sports        — ESPN only (rolling 14-day archive, published every 3h)
  *   Entertainment — Google News + RSS (rolling 14-day archive, published every 3h)
- *   Netflix       — whats-on-netflix.com monthly "What's Coming" listings
+ *   Netflix       — TVMaze web schedule first, then whats-on-netflix
+ *                   listings, then Wikipedia originals lists. Cards are
+ *                   merged field-wise (no duplicate titles); each keeps a
+ *                   useful synopsis and main cast when sources provide them.
+ *                   The published feed is then limited to titles JustWatch
+ *                   lists as available on Netflix in the United States.
  *
  * A section is only overwritten when its fetch produced enough items;
  * otherwise the existing file is kept.
@@ -498,9 +503,184 @@ const normTitle = (s) =>
     .replace(/\s+/g, " ")
     .trim();
 
+const TITLE_STOP = new Set([
+  "the", "a", "an", "of", "and", "in", "to", "for", "on", "with",
+]);
+
+function titleCore(s) {
+  return normTitle(s)
+    .replace(/\bseason \d+\b/g, " ")
+    .replace(/\bpart \d+\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function significantTokens(s) {
+  return titleCore(s)
+    .split(" ")
+    .filter((t) => t && !TITLE_STOP.has(t) && t.length > 1);
+}
+
+function namesSimilar(a, b) {
+  const ca = titleCore(a);
+  const cb = titleCore(b);
+  if (!ca || !cb) return false;
+  if (ca === cb) return true;
+  if (ca.length >= 8 && cb.length >= 8 && (ca.includes(cb) || cb.includes(ca)))
+    return true;
+  const ta = significantTokens(a);
+  const tb = significantTokens(b);
+  if (!ta.length || !tb.length) return false;
+  let prefix = 0;
+  while (prefix < ta.length && prefix < tb.length && ta[prefix] === tb[prefix])
+    prefix += 1;
+  if (prefix >= 3) return true;
+  const setB = new Set(tb);
+  const overlap = ta.filter((t) => setB.has(t)).length;
+  const min = Math.min(ta.length, tb.length);
+  if (overlap >= min && overlap >= 2) return true;
+  if (min === 1 && ta[0] === tb[0] && ta[0].length >= 6) return true;
+  return false;
+}
+
+function foldName(s) {
+  return String(s || "")
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function itemTitles(item) {
+  return [item.title, ...(item.akas || [])].filter(Boolean);
+}
+
+function titlesOverlap(a, b) {
+  if (a.tvmazeId && b.tvmazeId && a.tvmazeId === b.tvmazeId) return true;
+  for (const x of itemTitles(a)) {
+    for (const y of itemTitles(b)) {
+      if (sameTitle(x, y)) return true;
+    }
+  }
+  return false;
+}
+
+function sameTitle(a, b) {
+  return namesSimilar(a, b);
+}
+
+function isThinSynopsis(s) {
+  const t = String(s || "").replace(/\s+/g, " ").trim();
+  if (!t) return true;
+  if (t.length < 80) return true;
+  if (/^Netflix Original/i.test(t)) return true;
+  if (
+    /^(Stand-up( comedy)? special|Drama series|Mexican teen drama|Japanese reality dating show|Kuwaiti romantic comedy|\d+ min film)\.?$/i.test(
+      t
+    )
+  )
+    return true;
+  if (/^(Film|Series|Documentary|Reality|Docuseries|Special)\.?$/i.test(t))
+    return true;
+  if (/\b(series|film|special)\.?$/i.test(t) && t.length < 55) return true;
+  return false;
+}
+
+function isStandup(item) {
+  return /stand-up/i.test(item?.type || "") || /stand-up/i.test(item?.title || "");
+}
+
+function comedianFromTitle(title) {
+  const left = String(title || "").split(":")[0].trim();
+  if (!left || left.length < 3 || left.split(/\s+/).length > 5) return "";
+  return left;
+}
+
+function mergeStarring(a, b) {
+  const seen = new Set();
+  const out = [];
+  for (const name of [...(a || []), ...(b || [])]) {
+    const k = foldName(name);
+    if (!k || seen.has(k)) continue;
+    seen.add(k);
+    out.push(String(name).trim());
+  }
+  return out.slice(0, 6);
+}
+
+function pickSynopsis(preferred, other) {
+  if (!isThinSynopsis(preferred)) return preferred;
+  if (!isThinSynopsis(other)) return other;
+  const x = String(preferred || "").trim();
+  const y = String(other || "").trim();
+  return y.length > x.length ? y : x;
+}
+
+function mergeNetflixCards(keep, incoming) {
+  const out = { ...keep };
+  out.synopsis = pickSynopsis(keep.synopsis, incoming.synopsis);
+  out.starring = mergeStarring(keep.starring, incoming.starring);
+  out.akas = [...new Set([...(keep.akas || []), ...(incoming.akas || [])])];
+  if (incoming.tvmazeId && !out.tvmazeId) out.tvmazeId = incoming.tvmazeId;
+  if (incoming.wikiTitle && !out.wikiTitle) out.wikiTitle = incoming.wikiTitle;
+  if (incoming.confirmedOriginal) out.confirmedOriginal = true;
+  return out;
+}
+
+function likelySameShow(a, b) {
+  if (a.tvmazeId && b.tvmazeId && a.tvmazeId === b.tvmazeId) return true;
+  if (a.wikiTitle && b.wikiTitle && a.wikiTitle === b.wikiTitle) return true;
+  if (sameTitle(a.title, b.title)) return true;
+  if (titlesOverlap(a, b)) return true;
+  const starsA = (a.starring || []).map(foldName);
+  const starsB = (b.starring || []).map(foldName);
+  if (starsA.length >= 2 && starsB.length >= 2) {
+    const overlap = starsA.filter((s) => starsB.includes(s)).length;
+    const days = Math.abs(Date.parse(a.date) - Date.parse(b.date)) / 86400000;
+    if (overlap >= 2 && days <= 3) return true;
+  }
+  const na = titleCore(a.title);
+  const nb = titleCore(b.title);
+  const synA = (a.synopsis || "").toLowerCase();
+  const synB = (b.synopsis || "").toLowerCase();
+  if (na.length >= 8 && synB.includes(na)) return true;
+  if (nb.length >= 8 && synA.includes(nb)) return true;
+  if (/previously known as/i.test(synA) && nb.length >= 4 && synA.includes(nb))
+    return true;
+  if (/previously known as/i.test(synB) && na.length >= 4 && synB.includes(na))
+    return true;
+  return false;
+}
+
+function dedupeNetflix(items, loose) {
+  const out = [];
+  for (const item of items) {
+    const other = out.find((d) =>
+      loose
+        ? likelySameShow(d, item)
+        : titlesOverlap(d, item)
+    );
+    if (!other) out.push(item);
+    else Object.assign(other, mergeNetflixCards(other, item));
+  }
+  return out;
+}
+
+function publicNetflixItem(item) {
+  return {
+    title: item.title,
+    type: item.type,
+    date: item.date,
+    synopsis: String(item.synopsis || "").replace(/\s+/g, " ").trim(),
+    starring: item.starring || [],
+  };
+}
+
 // Wikimedia asks API clients for a descriptive UA; browser UAs get throttled.
 const WIKI_UA =
   "TriviaHelper/1.0 (https://github.com/DSdev901/trivia; trivia app data refresh)";
+const TVMAZE_UA = "TriviaHelper/1.0 (https://github.com/DSdev901/trivia)";
 
 async function wikiJson(params) {
   const url =
@@ -509,75 +689,204 @@ async function wikiJson(params) {
   return JSON.parse(await fetchText(url, 15000, WIKI_UA));
 }
 
-/**
- * Find the best-matching Wikipedia page for a title and return its intro.
- * Single request via generator=search. The intro must mention Netflix —
- * this both confirms we landed on the right page and that the title is
- * a Netflix original release.
- */
-async function wikiIntroFor(title, date) {
-  const year = (date || "").slice(0, 4);
-  const want = normTitle(title);
-  if (!want) return "";
+async function wikiSearchPages(query) {
   const data = await wikiJson({
     action: "query",
     generator: "search",
-    gsrsearch: `${title} ${year} Netflix`,
-    gsrlimit: "4",
+    gsrsearch: query,
+    gsrlimit: "5",
     prop: "extracts",
     exintro: "1",
     explaintext: "1",
     redirects: "1",
   });
-  const hit = Object.values(data?.query?.pages || {}).find((p) => {
-    const have = normTitle(p.title);
-    return (
-      (have.startsWith(want) || want.startsWith(have)) &&
-      /netflix/i.test(p.extract || "")
-    );
-  });
-  if (!hit) return null;
-  return {
-    extract: hit.extract.trim(),
-    exact: normTitle(hit.title) === want,
-  };
+  return Object.values(data?.query?.pages || {}).filter(
+    (p) => p.title && !/^List of /i.test(p.title)
+  );
 }
 
-async function wikiIntroWithRetry(title, date) {
-  try {
-    return await wikiIntroFor(title, date);
-  } catch (err) {
-    if (!/429/.test(err.message)) throw err;
-    await sleep(4000);
-    return wikiIntroFor(title, date);
-  }
-}
-
-function starringFromExtract(extract) {
-  // (?<! [A-Z]) lets middle initials like "Patrick J. Adams" survive.
-  const m = extract.match(/(?:starring|stars)\s+(.+?)(?<! [A-Z])\.(?=\s|$)/s);
-  if (!m) return [];
-  return m[1]
-    .split(/,| and /i)
-    .map((s) => s.replace(/\s+as\s+.+$/i, "").trim()) // drop "as Nick Nelson"
+function namesFromList(raw) {
+  return String(raw || "")
+    .split(/,|;|\n| and /i)
+    .map((s) =>
+      s
+        .replace(/\s+as\s+.+$/i, "")
+        .replace(/^and\s+/i, "")
+        .trim()
+    )
     .filter(
       (s) =>
         /^[A-Z][\p{L}.'()-]*( [\p{L}.'() -]{1,30}){0,3}$/u.test(s) &&
-        !/\d/.test(s)
+        !/\d/.test(s) &&
+        s.length < 50
     )
     .slice(0, 6);
 }
 
+function starringFromExtract(extract) {
+  const text = String(extract || "");
+  const patterns = [
+    /\b(?:it )?stars\s+(.+?)(?:\.|;|,(?:\s+(?:this|the|a|an|who|which|in)\b))/is,
+    /\bstarring\s+(.+?)(?:\.|;|,(?:\s+(?:this|the|a|an|who|which)\b))/is,
+    /\bvoiced by\s+(.+?)(?:\.|;)/is,
+  ];
+  for (const re of patterns) {
+    const m = text.match(re);
+    if (!m) continue;
+    const names = namesFromList(m[1]);
+    if (names.length) return names;
+  }
+  const m = text.match(/(?:starring|stars)\s+(.+?)(?<! [A-Z])\.(?=\s|$)/s);
+  return m ? namesFromList(m[1]) : [];
+}
+
+async function wikiInfoboxStarring(pageTitle) {
+  try {
+    const data = await wikiJson({
+      action: "parse",
+      page: pageTitle,
+      prop: "wikitext",
+    });
+    const wt = data?.parse?.wikitext?.["*"] || "";
+    const m = wt.match(
+      /\|\s*(?:starring|voices?|subject|narrator)\s*=\s*([\s\S]*?)(?=\n\s*\|\s*[a-zA-Z_]+\s*=)/
+    );
+    if (!m) return [];
+    const block = m[1];
+    const names = [];
+    for (const w of block.matchAll(/\[\[([^|\]]+)(?:\|([^\]]+))?\]\]/g)) {
+      names.push((w[2] || w[1]).replace(/\s*\([^)]*\)/g, "").trim());
+    }
+    for (const ill of block.matchAll(
+      /\{\{[Ii]ll\|(?:lt=([^|}]+)\|)?([^|}]+)/g
+    )) {
+      names.push((ill[1] || ill[2]).replace(/\s*\([^)]*\)/g, "").trim());
+    }
+    if (names.length) return namesFromList(names.join(", "));
+    const raw = block
+      .replace(/\{\{[^}]*\}\}/g, " ")
+      .replace(/\[\[([^|\]]*\|)?([^\]]+)\]\]/g, "$2")
+      .replace(/<br\s*\/?>/gi, "\n")
+      .replace(/\*/g, "\n");
+    return namesFromList(raw.replace(/\n/g, ", "));
+  } catch {
+    return [];
+  }
+}
+
+function wikiPagePlausible(page, item) {
+  const extract = page?.extract || "";
+  if (!extract || /^List of /i.test(page.title || "")) return false;
+  if (/netflix/i.test(extract)) return true;
+  const year = (item.date || "").slice(0, 4);
+  if (
+    year &&
+    extract.includes(year) &&
+    /(film|television|series|special|documentary)/i.test(extract)
+  )
+    return true;
+  return false;
+}
+
+async function wikiExactPage(title) {
+  if (!title) return null;
+  const data = await wikiJson({
+    action: "query",
+    titles: title,
+    prop: "extracts",
+    exintro: "1",
+    explaintext: "1",
+    redirects: "1",
+  });
+  const page = Object.values(data?.query?.pages || {})[0];
+  if (!page || page.missing != null || /^List of /i.test(page.title || ""))
+    return null;
+  return page;
+}
+
+async function wikiDetailsFor(item) {
+  const year = (item.date || "").slice(0, 4);
+  const bare = String(item.title || "")
+    .replace(/\s*\((?:Season|Part)\s+\d+\)/i, "")
+    .trim();
+  const want = isStandup(item) ? comedianFromTitle(item.title) || bare : bare;
+  const queries = isStandup(item)
+    ? [want, `${item.title} Netflix`]
+    : [
+        want,
+        `${bare} ${year} Netflix`,
+        `${bare} (${year} film)`,
+        `${bare} Netflix`,
+      ];
+
+  let hit = await wikiExactPage(want);
+  if (hit && !wikiPagePlausible(hit, item)) hit = null;
+
+  for (const q of queries.filter(Boolean)) {
+    if (hit) break;
+    const pages = await wikiSearchPages(q);
+    hit =
+      pages.find(
+        (p) => namesSimilar(p.title, want) && /netflix/i.test(p.extract || "")
+      ) ||
+      pages.find(
+        (p) =>
+          namesSimilar(p.title, want) && new RegExp(year).test(p.extract || "")
+      ) ||
+      pages.find(
+        (p) => titleCore(p.title) === titleCore(want) && wikiPagePlausible(p, item)
+      ) ||
+      (isStandup(item) && pages.find((p) => namesSimilar(p.title, want))) ||
+      null;
+    if (hit && !wikiPagePlausible(hit, item) && !isStandup(item)) hit = null;
+    if (hit) break;
+    await sleep(150);
+  }
+  if (!hit) return null;
+  let starring = starringFromExtract(hit.extract || "");
+  if (starring.length < 2) {
+    starring = mergeStarring(starring, await wikiInfoboxStarring(hit.title));
+  }
+  return {
+    pageTitle: hit.title,
+    synopsis: synopsisFromExtract(hit.extract || ""),
+    starring,
+    exact: namesSimilar(hit.title, item.title) || namesSimilar(hit.title, want),
+  };
+}
+
+async function wikiDetailsWithRetry(item) {
+  try {
+    return await wikiDetailsFor(item);
+  } catch (err) {
+    if (!/429/.test(err.message)) throw err;
+    await sleep(4000);
+    return wikiDetailsFor(item);
+  }
+}
+
 /** Keep plot sentences; skip "directed by…" boilerplate and cast-list sentences. */
 function synopsisFromExtract(extract) {
-  const sentences = extract.match(/[^.!?]+[.!?]+/g) || [];
+  const raw = extract.match(/[^.!?]+[.!?]+/g) || [];
+  const sentences = [];
+  let buf = "";
+  for (const s of raw) {
+    buf += s;
+    if (buf.trim().length >= 40) {
+      sentences.push(buf);
+      buf = "";
+    }
+  }
+  if (buf.trim()) sentences.push(buf);
   const isListLike = (s) => (s.match(/,/g) || []).length >= 3;
   const isCastOrCrew = (s) =>
     /directed by|created by|premiered|released on/i.test(s) ||
     /\bstarring\b|\bstars\b/i.test(s);
   const plot = sentences.filter((s) => !isCastOrCrew(s) && !isListLike(s));
   const fallback = sentences.filter((s) => !isListLike(s));
-  const chosen = (plot.length ? plot : fallback).slice(0, 2).join(" ").trim();
+  let chosen = (plot.length ? plot : fallback).slice(0, 2).join(" ").trim();
+  if (chosen.length < 80)
+    chosen = sentences.slice(0, 2).join(" ").trim() || chosen;
   return chosen.length > 320 ? `${chosen.slice(0, 317).trim()}…` : chosen;
 }
 
@@ -644,52 +953,349 @@ async function fetchTvmazeNetflix() {
   for (const item of items) {
     if (item.season > 1) item.title = `${item.title} (Season ${item.season})`;
     try {
-      const cast = JSON.parse(
+      const full = JSON.parse(
         await fetchText(
-          `https://api.tvmaze.com/shows/${item.tvmazeId}/cast`,
+          `https://api.tvmaze.com/shows/${item.tvmazeId}?embed[]=cast&embed[]=akas`,
           15000,
-          "TriviaHelper/1.0 (https://github.com/DSdev901/trivia)"
+          TVMAZE_UA
         )
       );
-      item.starring = (cast || [])
+      const summary = stripHtmlBrief(full.summary);
+      if (!isThinSynopsis(summary)) item.synopsis = summary;
+      else if (summary) item.synopsis = pickSynopsis(item.synopsis, summary);
+      item.starring = (full._embedded?.cast || [])
         .map((c) => c.person?.name)
         .filter(Boolean)
         .slice(0, 6);
+      item.akas = (full._embedded?.akas || [])
+        .map((a) => a.name)
+        .filter(Boolean);
     } catch (err) {
       console.warn(`  [netflix] tvmaze cast "${item.title}": ${err.message}`);
     }
-    delete item.tvmazeId;
     delete item.season;
     await sleep(250);
   }
   return items;
 }
 
+function isNetflixShow(show) {
+  return (
+    show?.webChannel?.name === "Netflix" || show?.network?.name === "Netflix"
+  );
+}
+
+async function tvmazeShowDetails(show) {
+  const full = JSON.parse(
+    await fetchText(
+      `https://api.tvmaze.com/shows/${show.id}?embed[]=cast&embed[]=akas`,
+      15000,
+      TVMAZE_UA
+    )
+  );
+  return {
+    tvmazeId: show.id,
+    title: full.name || show.name,
+    type: tvmazeType(full),
+    synopsis: stripHtmlBrief(full.summary) || stripHtmlBrief(show.summary),
+    starring: (full._embedded?.cast || [])
+      .map((c) => c.person?.name)
+      .filter(Boolean)
+      .slice(0, 6),
+    akas: (full._embedded?.akas || []).map((a) => a.name).filter(Boolean),
+  };
+}
+
+async function tvmazeSearchShow(title) {
+  const q = titleCore(title);
+  if (!q) return null;
+  const results = JSON.parse(
+    await fetchText(
+      `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(q)}`,
+      15000,
+      TVMAZE_UA
+    )
+  );
+  const list = results || [];
+  const named =
+    list.find((r) => isNetflixShow(r.show) && namesSimilar(r.show.name, title)) ||
+    list.find((r) => namesSimilar(r.show.name, title) && r.score >= 1.2);
+  if (named && isNetflixShow(named.show)) return tvmazeShowDetails(named.show);
+
+  const netflixHits = list.filter((r) => isNetflixShow(r.show)).slice(0, 4);
+  for (const r of netflixHits) {
+    const details = await tvmazeShowDetails(r.show);
+    await sleep(200);
+    if (
+      namesSimilar(details.title, title) ||
+      details.akas.some((n) => namesSimilar(n, title))
+    )
+      return details;
+  }
+  return null;
+}
+
+function needsCast(item) {
+  const n = (item.starring || []).length;
+  if (isStandup(item) || /documentary|docuseries|reality/i.test(item.type))
+    return n < 1;
+  return n < 2;
+}
+
+function applyStarringFromText(item) {
+  if ((item.starring || []).length >= 2) return;
+  const fromText = starringFromExtract(item.synopsis || "");
+  if (fromText.length) item.starring = mergeStarring(item.starring, fromText);
+}
+
+/** Docs/reality often name the subject in the title or synopsis, not a cast list. */
+function applyFeaturedNames(item) {
+  if ((item.starring || []).length) return;
+  const syn = item.synopsis || "";
+  const found = [];
+  const host = syn.match(
+    /\b(?:[Cc]omedian|[Hh]osted by|[Ff]eaturing)\s+([A-Z][\p{L}.'-]+(?:\s+[A-Z][\p{L}.'-]+){0,2})/u
+  );
+  if (host) found.push(host[1]);
+  const guest = syn.match(
+    /\bwith\s+([A-Z][\p{L}.'-]+(?:\s+[A-Z][\p{L}.'-]+)?)\b/u
+  );
+  if (guest && /special|documentary/i.test(item.type)) found.push(guest[1]);
+  if (/kaulitz/i.test(item.title)) {
+    found.push("Bill Kaulitz", "Tom Kaulitz");
+  }
+  const notName = /^(The|A|An|Season|Part|Netflix|College|University|Murders|Tapes|Scandal|Story|Nightmare|Conspiracy|Games|Street|Killer|Conversations|Between|Worlds)$/i;
+  if (/documentary|docuseries/i.test(item.type)) {
+    const words = item.title.match(/[A-Z][\p{L}.'-]+/gu) || [];
+    for (let i = 0; i < words.length - 1; i += 1) {
+      if (notName.test(words[i]) || notName.test(words[i + 1])) continue;
+      const n = `${words[i]} ${words[i + 1]}`;
+      if (new RegExp(n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i").test(syn))
+        found.push(n);
+    }
+  }
+  const personTitle = String(item.title || "")
+    .replace(/^.*:\s*/, "")
+    .replace(/\s*\((?:Season|Part)\s+\d+\)/i, "")
+    .trim();
+  if (
+    /documentary|docuseries|reality|stand-up/i.test(item.type) &&
+    /^[A-Z][\p{L}.'-]+(?:\s+[A-Z][\p{L}.'-]+){0,2}$/u.test(personTitle) &&
+    personTitle.split(/\s+/).length <= 3
+  ) {
+    const escaped = personTitle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const full = syn.match(
+      new RegExp(
+        `\\b([A-Z][\\p{L}.'-]+\\s+${escaped}|${escaped}(?:\\s+[A-Z][\\p{L}.'-]+)?)\\b`,
+        "u"
+      )
+    );
+    if (full) found.push(full[1]);
+    else if (isStandup(item) || personTitle.split(/\s+/).length === 1)
+      found.push(personTitle);
+  }
+  if (found.length) item.starring = mergeStarring(item.starring, found);
+}
+
 async function enrichNetflix(items) {
   for (const item of items) {
-    const hasBody =
-      (item.starring || []).length >= 2 && (item.synopsis || "").length >= 80;
-    if (hasBody) continue;
-    try {
-      const hit = await wikiIntroWithRetry(item.title, item.date);
-      if (hit) {
-        const { extract, exact } = hit;
-        const stars = starringFromExtract(extract);
-        const syn = synopsisFromExtract(extract);
-        if (exact && stars.length && !(item.starring || []).length)
-          item.starring = stars;
-        if (syn.length > (item.synopsis || "").length) {
-          if (exact || (item.synopsis || "").trim().length < 60)
-            item.synopsis = syn;
+    applyStarringFromText(item);
+    applyFeaturedNames(item);
+    if (isStandup(item) && !(item.starring || []).length) {
+      const name = comedianFromTitle(item.title);
+      if (name) item.starring = [name];
+    }
+
+    if (!needsCast(item) && !isThinSynopsis(item.synopsis)) continue;
+
+    if (!item.tvmazeId) {
+      try {
+        const tv = await tvmazeSearchShow(item.title);
+        if (tv) {
+          item.tvmazeId = tv.tvmazeId;
+          item.synopsis = pickSynopsis(item.synopsis, tv.synopsis);
+          item.starring = mergeStarring(tv.starring, item.starring);
+          item.akas = [...new Set([...(item.akas || []), ...(tv.akas || [])])];
         }
-        if (exact) item.confirmedOriginal = true;
+      } catch (err) {
+        console.warn(`  [netflix] tvmaze search "${item.title}": ${err.message}`);
+      }
+      await sleep(250);
+    }
+
+    if (!needsCast(item) && !isThinSynopsis(item.synopsis)) continue;
+
+    try {
+      const hit = await wikiDetailsWithRetry(item);
+      if (hit) {
+        item.wikiTitle = hit.pageTitle;
+        if (hit.starring.length)
+          item.starring = mergeStarring(item.starring, hit.starring);
+        if (isStandup(item) && isThinSynopsis(item.synopsis) && hit.synopsis) {
+          const name = comedianFromTitle(item.title);
+          const extra = item.title.includes(":")
+            ? item.title.split(":").slice(1).join(":").trim()
+            : "";
+          const lead = extra
+            ? `${name}'s Netflix stand-up special, ${extra}.`
+            : `${name}'s Netflix stand-up comedy special.`;
+          item.synopsis = `${lead} ${hit.synopsis}`.trim();
+          if (item.synopsis.length > 320)
+            item.synopsis = `${item.synopsis.slice(0, 317).trim()}…`;
+        } else {
+          item.synopsis = pickSynopsis(item.synopsis, hit.synopsis);
+          if (
+            isThinSynopsis(item.synopsis) &&
+            (hit.synopsis || "").length > (item.synopsis || "").length
+          )
+            item.synopsis = hit.synopsis;
+        }
+        if (hit.exact) item.confirmedOriginal = true;
       }
     } catch (err) {
       console.warn(`  [netflix] wiki "${item.title}": ${err.message}`);
     }
-    await sleep(1000);
+    applyFeaturedNames(item);
+    await sleep(200);
   }
   return items;
+}
+
+const JW_SEARCH = `query Search($country: Country!, $language: Language!, $first: Int!, $filter: TitleFilter) {
+  popularTitles(country: $country, first: $first, filter: $filter) {
+    edges {
+      node {
+        objectType
+        content(country: $country, language: $language) {
+          title
+          originalTitle
+          originalReleaseYear
+        }
+        offers(country: $country, platform: WEB, filter: { packages: ["nfx"] }) {
+          package { shortName }
+        }
+      }
+    }
+  }
+}`;
+
+function itemSearchQuery(item) {
+  return String(item.title || "")
+    .replace(/\s*\((?:Season|Part)\s+\d+\)/i, "")
+    .trim();
+}
+
+function jwNameMatches(item, node) {
+  const title = node.content?.title || "";
+  const original = node.content?.originalTitle || "";
+  const candidates = [
+    item.title,
+    itemSearchQuery(item),
+    ...(item.akas || []),
+  ];
+  return candidates.some(
+    (c) => namesSimilar(c, title) || namesSimilar(c, original)
+  );
+}
+
+function jwTypeOk(item, objectType) {
+  const t = String(item.type || "");
+  if (/documentary/i.test(t)) return true;
+  if (objectType === "MOVIE") return /film|special|stand-up/i.test(t);
+  return (
+    /series|reality|docuseries|talk|live/i.test(t) ||
+    /\bseason\b/i.test(item.title)
+  );
+}
+
+function jwYearOk(item, year) {
+  if (!year) return true;
+  const itemYear = Number((item.date || "").slice(0, 4));
+  if (!itemYear) return true;
+  if (
+    /\bseason\b/i.test(item.title) ||
+    /series|reality|docuseries/i.test(item.type)
+  )
+    return year <= itemYear + 1;
+  return Math.abs(year - itemYear) <= 1;
+}
+
+function pickJwHit(item, nodes) {
+  const nfx = (nodes || []).filter((n) =>
+    (n.offers || []).some((o) => o.package?.shortName === "nfx")
+  );
+  const named = nfx.find(
+    (n) =>
+      jwNameMatches(item, n) &&
+      jwTypeOk(item, n.objectType) &&
+      jwYearOk(item, n.content?.originalReleaseYear)
+  );
+  if (named) return named;
+  const itemYear = Number((item.date || "").slice(0, 4));
+  if (!itemYear) return null;
+  const sameYear = (n) => n.content?.originalReleaseYear === itemYear;
+  // Localized title: one Netflix result in the same year and matching kind.
+  if (/film|special|stand-up/i.test(item.type)) {
+    const films = nfx.filter((n) => n.objectType === "MOVIE" && sameYear(n));
+    if (films.length === 1) return films[0];
+  }
+  if (/series|reality|docuseries/i.test(item.type)) {
+    const shows = nfx.filter((n) => n.objectType === "SHOW" && sameYear(n));
+    if (shows.length === 1) return shows[0];
+  }
+  return null;
+}
+
+async function justwatchUsSearch(query) {
+  const res = await fetch("https://apis.justwatch.com/graphql", {
+    method: "POST",
+    headers: {
+      "User-Agent": TVMAZE_UA,
+      "Content-Type": "application/json",
+      Accept: "application/json",
+      Referer: "https://www.justwatch.com/",
+    },
+    body: JSON.stringify({
+      query: JW_SEARCH,
+      variables: {
+        country: "US",
+        language: "en",
+        first: 5,
+        filter: { searchQuery: query, packages: ["nfx"] },
+      },
+    }),
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const json = await res.json();
+  if (json.errors?.length) throw new Error(json.errors[0].message);
+  return json.data?.popularTitles?.edges?.map((e) => e.node) || [];
+}
+
+/** Drop titles JustWatch does not list on Netflix in the United States. */
+async function filterUsNetflix(items) {
+  const kept = [];
+  let dropped = 0;
+  let failed = 0;
+  for (const item of items) {
+    try {
+      const nodes = await justwatchUsSearch(itemSearchQuery(item));
+      if (pickJwHit(item, nodes)) kept.push(item);
+      else {
+        dropped += 1;
+        console.log(`  [netflix] not on US Netflix: ${item.title}`);
+      }
+    } catch (err) {
+      failed += 1;
+      console.warn(`  [netflix] US check "${item.title}": ${err.message}`);
+      kept.push(item);
+    }
+    await sleep(300);
+  }
+  console.log(
+    `  [netflix] US catalog: kept ${kept.length}, dropped ${dropped}` +
+      (failed ? `, ${failed} lookup failures kept` : "")
+  );
+  return kept;
 }
 
 async function buildNetflix() {
@@ -744,43 +1350,19 @@ async function buildNetflix() {
     console.warn(`  [netflix] wikipedia films: ${err.message}`);
   }
   items.push(...(await fetchWikipediaProgramming()));
-  // Same title can appear in multiple sources with different dates — keep
-  // the richer card. Titles also vary in length across sources ("Operation
-  // Safed Sagar: The Untold Story…" vs "Operation Safed Sagar: The Highest
-  // Air Force Mission…"), so collapse keys that contain one another.
-  // Dedupe before enrichment so we don't look a title up twice.
-  const score = (x) =>
-    (x.synopsis || "").length + (x.starring || []).length * 50;
-  const titleCore = (s) =>
-    normTitle(s)
-      .replace(/\bseason \d+\b/g, " ")
-      .replace(/\bpart \d+\b/g, " ")
-      .replace(/\s+/g, " ")
-      .trim();
-  const sameTitle = (a, b) => {
-    const ca = titleCore(a);
-    const cb = titleCore(b);
-    if (!ca || !cb) return false;
-    if (ca === cb) return true;
-    if (ca.includes(cb) || cb.includes(ca)) return true;
-    const ta = ca.split(" ");
-    const tb = cb.split(" ");
-    const n = Math.min(4, ta.length, tb.length);
-    for (let i = 0; i < n; i += 1) if (ta[i] !== tb[i]) return false;
-    return n > 0;
-  };
-  const deduped = [];
-  for (const i of items) {
-    const other = deduped.find((d) => sameTitle(d.title, i.title));
-    if (!other) {
-      deduped.push(i);
-    } else if (score(i) > score(other)) {
-      deduped[deduped.indexOf(other)] = i;
-    }
-  }
-  items = await enrichNetflix(deduped);
-  items.sort((a, b) => b.date.localeCompare(a.date));
-  return items;
+  // TVMaze first, then listings, then Wikipedia. Merge field-wise so a
+  // later source fills synopsis/cast without replacing the TVMaze card.
+  let merged = dedupeNetflix(items, false);
+  merged = await enrichNetflix(merged);
+  merged = dedupeNetflix(merged, true);
+  merged = await filterUsNetflix(merged);
+  const useful = merged.filter((i) => !isThinSynopsis(i.synopsis)).length;
+  const withCast = merged.filter((i) => (i.starring || []).length > 0).length;
+  console.log(
+    `  [netflix] ${merged.length} titles after merge (${useful} with synopsis, ${withCast} with cast)`
+  );
+  merged.sort((a, b) => b.date.localeCompare(a.date));
+  return merged.map(publicNetflixItem);
 }
 
 /* ---------------- write ---------------- */
@@ -806,9 +1388,17 @@ async function writeSection(section, items, minItems) {
 }
 
 async function main() {
+  const onlyNetflix = process.argv.includes("--netflix");
   console.log(
     `Refreshing current events (${windowStart} → ${windowEnd})…`
   );
+  if (onlyNetflix) {
+    const netflix = await buildNetflix();
+    const ok = await writeSection("netflix", netflix, 5);
+    console.log(`Done — netflix ${ok ? "updated" : "kept"}.`);
+    if (!ok) process.exitCode = 1;
+    return;
+  }
   const [sports, entertainment, netflix] = await Promise.all([
     buildSports(),
     buildEntertainment(),
