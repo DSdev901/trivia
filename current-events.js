@@ -385,8 +385,8 @@ function render() {
     <div class="ce-head">
       <div>
         <h2 class="section-title">Current Events</h2>
-        <p class="lede">Netflix originals that dropped in the US over the last three weeks,
-        plus ESPN sports and entertainment headlines from the last two weeks — refreshed every few hours.</p>
+        <p class="lede">Netflix originals from the last three weeks, plus ESPN sports and
+        entertainment headlines from the last two weeks — refreshed every few hours.</p>
       </div>
       <div class="ce-refresh-wrap">
         ${updated ? `<span class="ce-updated">Updated ${timeAgo(updated)}</span>` : ""}

@@ -11,8 +11,6 @@
  *                   listings, then Wikipedia originals lists. Cards are
  *                   merged field-wise (no duplicate titles); each keeps a
  *                   useful synopsis and main cast when sources provide them.
- *                   The published feed is then limited to titles JustWatch
- *                   lists as available on Netflix in the United States.
  *
  * A section is only overwritten when its fetch produced enough items;
  * otherwise the existing file is kept.
@@ -1161,143 +1159,6 @@ async function enrichNetflix(items) {
   return items;
 }
 
-const JW_SEARCH = `query Search($country: Country!, $language: Language!, $first: Int!, $filter: TitleFilter) {
-  popularTitles(country: $country, first: $first, filter: $filter) {
-    edges {
-      node {
-        objectType
-        content(country: $country, language: $language) {
-          title
-          originalTitle
-          originalReleaseYear
-        }
-        offers(country: $country, platform: WEB, filter: { packages: ["nfx"] }) {
-          package { shortName }
-        }
-      }
-    }
-  }
-}`;
-
-function itemSearchQuery(item) {
-  return String(item.title || "")
-    .replace(/\s*\((?:Season|Part)\s+\d+\)/i, "")
-    .trim();
-}
-
-function jwNameMatches(item, node) {
-  const title = node.content?.title || "";
-  const original = node.content?.originalTitle || "";
-  const candidates = [
-    item.title,
-    itemSearchQuery(item),
-    ...(item.akas || []),
-  ];
-  return candidates.some(
-    (c) => namesSimilar(c, title) || namesSimilar(c, original)
-  );
-}
-
-function jwTypeOk(item, objectType) {
-  const t = String(item.type || "");
-  if (/documentary/i.test(t)) return true;
-  if (objectType === "MOVIE") return /film|special|stand-up/i.test(t);
-  return (
-    /series|reality|docuseries|talk|live/i.test(t) ||
-    /\bseason\b/i.test(item.title)
-  );
-}
-
-function jwYearOk(item, year) {
-  if (!year) return true;
-  const itemYear = Number((item.date || "").slice(0, 4));
-  if (!itemYear) return true;
-  if (
-    /\bseason\b/i.test(item.title) ||
-    /series|reality|docuseries/i.test(item.type)
-  )
-    return year <= itemYear + 1;
-  return Math.abs(year - itemYear) <= 1;
-}
-
-function pickJwHit(item, nodes) {
-  const nfx = (nodes || []).filter((n) =>
-    (n.offers || []).some((o) => o.package?.shortName === "nfx")
-  );
-  const named = nfx.find(
-    (n) =>
-      jwNameMatches(item, n) &&
-      jwTypeOk(item, n.objectType) &&
-      jwYearOk(item, n.content?.originalReleaseYear)
-  );
-  if (named) return named;
-  const itemYear = Number((item.date || "").slice(0, 4));
-  if (!itemYear) return null;
-  const sameYear = (n) => n.content?.originalReleaseYear === itemYear;
-  // Localized title: one Netflix result in the same year and matching kind.
-  if (/film|special|stand-up/i.test(item.type)) {
-    const films = nfx.filter((n) => n.objectType === "MOVIE" && sameYear(n));
-    if (films.length === 1) return films[0];
-  }
-  if (/series|reality|docuseries/i.test(item.type)) {
-    const shows = nfx.filter((n) => n.objectType === "SHOW" && sameYear(n));
-    if (shows.length === 1) return shows[0];
-  }
-  return null;
-}
-
-async function justwatchUsSearch(query) {
-  const res = await fetch("https://apis.justwatch.com/graphql", {
-    method: "POST",
-    headers: {
-      "User-Agent": TVMAZE_UA,
-      "Content-Type": "application/json",
-      Accept: "application/json",
-      Referer: "https://www.justwatch.com/",
-    },
-    body: JSON.stringify({
-      query: JW_SEARCH,
-      variables: {
-        country: "US",
-        language: "en",
-        first: 5,
-        filter: { searchQuery: query, packages: ["nfx"] },
-      },
-    }),
-  });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const json = await res.json();
-  if (json.errors?.length) throw new Error(json.errors[0].message);
-  return json.data?.popularTitles?.edges?.map((e) => e.node) || [];
-}
-
-/** Drop titles JustWatch does not list on Netflix in the United States. */
-async function filterUsNetflix(items) {
-  const kept = [];
-  let dropped = 0;
-  let failed = 0;
-  for (const item of items) {
-    try {
-      const nodes = await justwatchUsSearch(itemSearchQuery(item));
-      if (pickJwHit(item, nodes)) kept.push(item);
-      else {
-        dropped += 1;
-        console.log(`  [netflix] not on US Netflix: ${item.title}`);
-      }
-    } catch (err) {
-      failed += 1;
-      console.warn(`  [netflix] US check "${item.title}": ${err.message}`);
-      kept.push(item);
-    }
-    await sleep(300);
-  }
-  console.log(
-    `  [netflix] US catalog: kept ${kept.length}, dropped ${dropped}` +
-      (failed ? `, ${failed} lookup failures kept` : "")
-  );
-  return kept;
-}
-
 async function buildNetflix() {
   let items = [];
   // Primary: TVMaze episode schedule — every original that actually dropped
@@ -1355,7 +1216,6 @@ async function buildNetflix() {
   let merged = dedupeNetflix(items, false);
   merged = await enrichNetflix(merged);
   merged = dedupeNetflix(merged, true);
-  merged = await filterUsNetflix(merged);
   const useful = merged.filter((i) => !isThinSynopsis(i.synopsis)).length;
   const withCast = merged.filter((i) => (i.starring || []).length > 0).length;
   console.log(
