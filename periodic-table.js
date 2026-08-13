@@ -405,17 +405,21 @@ function speechPanelHtml() {
   const savedUri = getSavedVoiceUri();
   return `
     <section class="speech-panel pt-speech" aria-label="Read aloud">
-      <div class="speech-panel-top">
-        <div>
-          <p class="speech-kicker">Read aloud</p>
-          <p class="speech-lede">Hear each element’s number, name, discovery, and facts — tours follow the family filter below (one or more groups, or All). On phones, the screen stays awake while listening when allowed, and the app tries to keep reading if you lock the screen (works best on Android; iOS often still pauses).</p>
+      <input type="checkbox" class="speech-fold" id="speech-fold-pt" aria-label="Show read-aloud options" />
+      <div class="speech-panel-head">
+        <label class="speech-fold-label" for="speech-fold-pt">Read aloud</label>
+        <div class="speech-copy">
+          <p class="speech-kicker speech-kicker-wide">Read aloud</p>
+          <p class="speech-lede speech-lede-wide">Hear each element’s number, name, discovery, and facts — tours follow the family filter below (one or more groups, or All). On phones, the screen stays awake while listening when allowed, and the app tries to keep reading if you lock the screen (works best on Android; iOS often still pauses).</p>
         </div>
         <div class="speech-actions" role="group" aria-label="Playback">
           <button type="button" class="speech-btn speech-btn-primary" id="pt-listen">Listen</button>
           <button type="button" class="speech-btn speech-btn-quiet" id="pt-stop">Stop</button>
         </div>
       </div>
-      <div class="speech-settings">
+      <div class="speech-panel-body">
+        <p class="speech-lede speech-lede-mobile">Hear each element’s number, name, discovery, and facts — tours follow the family filter below. The screen stays awake while listening when allowed (works best on Android; iOS often still pauses).</p>
+        <div class="speech-settings">
         <label class="voice-field">
           <span>Voice</span>
           <select id="pt-voice-select" ${pt.voices.length ? "" : "disabled"}>
@@ -447,6 +451,7 @@ function speechPanelHtml() {
       <p class="speech-status" id="pt-speech-status">${escapeHtml(
         voiceQualityTip(pt.voices)
       )}</p>
+      </div>
     </section>`;
 }
 

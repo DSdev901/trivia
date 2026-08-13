@@ -385,17 +385,21 @@ async function renderPresidentDetail() {
             : ""
         }
         <section class="speech-panel" aria-label="Read aloud">
-          <div class="speech-panel-top">
-            <div>
-              <p class="speech-kicker">Read aloud</p>
-              <p class="speech-lede">Hear this president’s facts in order.</p>
+          <input type="checkbox" class="speech-fold" id="speech-fold-president" aria-label="Show read-aloud options" />
+          <div class="speech-panel-head">
+            <label class="speech-fold-label" for="speech-fold-president">Read aloud</label>
+            <div class="speech-copy">
+              <p class="speech-kicker speech-kicker-wide">Read aloud</p>
+              <p class="speech-lede speech-lede-wide">Hear this president’s facts in order.</p>
             </div>
             <div class="speech-actions" role="group" aria-label="Playback">
               <button type="button" class="speech-btn speech-btn-primary" id="listen-all">Listen</button>
               <button type="button" class="speech-btn speech-btn-quiet" id="stop-speech">Stop</button>
             </div>
           </div>
-          <div class="speech-settings">
+          <div class="speech-panel-body">
+            <p class="speech-lede speech-lede-mobile">Hear this president’s facts in order.</p>
+            <div class="speech-settings">
             <label class="voice-field">
               <span>Voice</span>
               <select id="voice-select" ${rankedVoices.length ? "" : "disabled"}>
@@ -427,8 +431,9 @@ async function renderPresidentDetail() {
               <span>Loops</span>
               <select id="loop-select">${loopOptions}</select>
             </label>
+            </div>
+            <p class="speech-status" id="speech-status">${escapeHtml(tip)}</p>
           </div>
-          <p class="speech-status" id="speech-status">${escapeHtml(tip)}</p>
         </section>
       </header>
       <ol class="facts">

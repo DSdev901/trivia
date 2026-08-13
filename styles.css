@@ -301,6 +301,19 @@ body {
   box-shadow: var(--shadow);
 }
 
+.speech-fold {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.speech-fold-label {
+  display: none;
+}
+
+.speech-panel-head,
 .speech-panel-top {
   display: flex;
   flex-wrap: wrap;
@@ -309,6 +322,11 @@ body {
   gap: 0.85rem 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--stripe);
+}
+
+.speech-panel-body {
+  display: grid;
+  gap: 1rem;
 }
 
 .speech-kicker {
@@ -428,6 +446,81 @@ body {
 .speech-panel.is-live .speech-status {
   color: var(--accent-deep);
   font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .speech-panel:has(.speech-fold) {
+    gap: 0.55rem;
+    padding: 0.75rem 0.9rem;
+  }
+
+  .speech-fold-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 9rem;
+    min-height: 2.5rem;
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    cursor: pointer;
+  }
+
+  .speech-fold-label::after {
+    content: "";
+    width: 0.42rem;
+    height: 0.42rem;
+    margin-left: 0.45rem;
+    border-right: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
+    transform: rotate(45deg);
+    transition: transform 140ms ease;
+  }
+
+  .speech-fold:checked ~ .speech-panel-head .speech-fold-label::after {
+    transform: rotate(225deg);
+    margin-top: 0.2rem;
+  }
+
+  .speech-panel:has(.speech-fold) .speech-copy {
+    display: none;
+  }
+
+  .speech-panel:has(.speech-fold) .speech-panel-head {
+    align-items: center;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .speech-panel:has(.speech-fold:checked) .speech-panel-head {
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--stripe);
+  }
+
+  .speech-panel:has(.speech-fold) .speech-panel-body {
+    display: none;
+  }
+
+  .speech-panel:has(.speech-fold:checked) .speech-panel-body {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .speech-lede-mobile {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+  }
+}
+
+@media (min-width: 861px) {
+  .speech-fold,
+  .speech-lede-mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 700px) {
