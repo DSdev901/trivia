@@ -38,6 +38,7 @@ const pt = {
   playing: false,
   tourIds: [],
   tourSession: 0,
+  onStartQuiz: null,
 };
 
 function escapeHtml(s) {
@@ -126,6 +127,14 @@ function applyCategoryFilter() {
   });
   const sel = pt.root.querySelector("#pt-group-select");
   if (sel) sel.value = cat;
+  const quizCopy = pt.root.querySelector(".pt-quiz-panel .speech-lede");
+  if (quizCopy) {
+    const n = elementsForScope().length;
+    quizCopy.innerHTML = `Test symbols, numbers, families, and facts for
+          <strong>${escapeHtml(scopeLabel())}</strong> (${n} elements). Uses the same group as Listen / the legend.`;
+  }
+  const quizBtn = pt.root.querySelector("#pt-quiz-start");
+  if (quizBtn) quizBtn.disabled = elementsForScope().length < 1;
 }
 
 function selectElement(z, { speakOne = false } = {}) {
@@ -390,6 +399,31 @@ function speechPanelHtml() {
     </section>`;
 }
 
+function elementsForScope(category = pt.focusCategory) {
+  const all = pt.data?.elements || [];
+  if (category === "all") return all;
+  return all.filter((e) => e.category === category);
+}
+
+function scopeLabel(category = pt.focusCategory) {
+  return category === "all" ? "All elements" : labelFor(category);
+}
+
+function quizPanelHtml() {
+  const n = elementsForScope().length;
+  const label = scopeLabel();
+  return `
+    <section class="pt-quiz-panel" aria-label="Quiz">
+      <div class="pt-quiz-copy">
+        <p class="speech-kicker">Quiz</p>
+        <p class="speech-lede">Test symbols, numbers, families, and facts for
+          <strong>${escapeHtml(label)}</strong> (${n} elements). Uses the same group as Listen / the legend.</p>
+      </div>
+      <button type="button" class="speech-btn speech-btn-primary" id="pt-quiz-start"
+        ${n < 1 ? "disabled" : ""}>Start quiz</button>
+    </section>`;
+}
+
 function legendHtml() {
   return `
     <div class="pt-legend" role="group" aria-label="Element categories">
@@ -411,10 +445,11 @@ function render() {
         <div>
           <h2 class="section-title">Periodic Table</h2>
           <p class="lede">Click an element for discovery, naming, and trivia facts.
-            Use Listen to hear a full tour — or just one group, like the noble gases.</p>
+            Listen for a spoken tour, or quiz yourself on the whole table or one group.</p>
         </div>
       </div>
       ${speechPanelHtml()}
+      ${quizPanelHtml()}
       ${legendHtml()}
       <div class="pt-stage">
         <div class="pt-grid" role="grid" aria-label="Periodic table">${buildMainGrid()}</div>
@@ -471,11 +506,31 @@ function bind() {
     setStatus("Stopped.");
   });
 
+  pt.root.querySelector("#pt-quiz-start")?.addEventListener("click", () => {
+    stopTour();
+    const cat =
+      pt.root.querySelector("#pt-group-select")?.value ||
+      pt.focusCategory ||
+      "all";
+    pt.focusCategory = cat;
+    applyCategoryFilter();
+    const focus = elementsForScope(cat);
+    const all = pt.data?.elements || [];
+    pt.onStartQuiz?.({
+      focus,
+      all,
+      categoryLabels: pt.data?.categoryLabels || {},
+      scopeLabel: scopeLabel(cat),
+      scopeId: cat,
+    });
+  });
+
   bindDetailSpeech();
 }
 
-export async function renderPeriodicTable({ els }) {
+export async function renderPeriodicTable({ els, onStartQuiz = null }) {
   pt.root = els.periodicTable;
+  pt.onStartQuiz = onStartQuiz;
   pt.canSpeak = speechSupported();
   if (pt.canSpeak) {
     try {

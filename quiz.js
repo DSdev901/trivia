@@ -105,6 +105,112 @@ export function buildPresidentQuestions(presidents) {
   return shuffle(questions);
 }
 
+/**
+ * Multiple-choice questions for a set of elements.
+ * Distractors come from `allElements` so small groups (e.g. noble gases) still work.
+ */
+export function buildElementQuestions(focusElements, allElements, categoryLabels = {}) {
+  const targets = focusElements || [];
+  const pool = allElements?.length ? allElements : targets;
+  if (targets.length < 1 || pool.length < 4) return [];
+
+  const names = pool.map((e) => e.name);
+  const symbols = pool.map((e) => e.symbol);
+  const numbers = pool.map((e) => String(e.Z));
+  const categories = [
+    ...new Set(pool.map((e) => categoryLabels[e.category] || e.category)),
+  ];
+  const questions = [];
+
+  for (const el of targets) {
+    const catLabel = categoryLabels[el.category] || el.category;
+
+    const nameD = pickDistractors(names, el.name, 3);
+    if (nameD.length === 3) {
+      questions.push({
+        id: `el-sym-${el.Z}`,
+        prompt: `What element has the symbol ${el.symbol}?`,
+        choices: makeChoices(el.name, nameD),
+        correct: el.name,
+      });
+      questions.push({
+        id: `el-zname-${el.Z}`,
+        prompt: `Which element has atomic number ${el.Z}?`,
+        choices: makeChoices(el.name, nameD),
+        correct: el.name,
+      });
+    }
+
+    const symD = pickDistractors(symbols, el.symbol, 3);
+    if (symD.length === 3) {
+      questions.push({
+        id: `el-name-sym-${el.Z}`,
+        prompt: `What is the chemical symbol for ${el.name}?`,
+        choices: makeChoices(el.symbol, symD),
+        correct: el.symbol,
+      });
+    }
+
+    const numD = pickDistractors(numbers, String(el.Z), 3);
+    if (numD.length === 3) {
+      questions.push({
+        id: `el-name-z-${el.Z}`,
+        prompt: `What is the atomic number of ${el.name}?`,
+        choices: makeChoices(String(el.Z), numD),
+        correct: String(el.Z),
+      });
+    }
+
+    if (categories.length >= 4) {
+      const catD = pickDistractors(categories, catLabel, 3);
+      if (catD.length === 3) {
+        questions.push({
+          id: `el-cat-${el.Z}`,
+          prompt: `Which family does ${el.name} belong to?`,
+          choices: makeChoices(catLabel, catD),
+          correct: catLabel,
+        });
+      }
+    }
+
+    if (
+      el.discoveredBy &&
+      el.discoveredBy !== "known since antiquity" &&
+      el.discoveredYear
+    ) {
+      const yearPool = [
+        ...new Set(
+          pool
+            .filter((e) => e.discoveredYear)
+            .map((e) => String(e.discoveredYear))
+        ),
+      ];
+      const yearD = pickDistractors(yearPool, String(el.discoveredYear), 3);
+      if (yearD.length === 3) {
+        questions.push({
+          id: `el-year-${el.Z}`,
+          prompt: `In what year was ${el.name} discovered (or first synthesized)?`,
+          choices: makeChoices(String(el.discoveredYear), yearD),
+          correct: String(el.discoveredYear),
+        });
+      }
+    }
+
+    (el.facts || []).slice(0, 2).forEach((fact, index) => {
+      const distractors = pickDistractors(names, el.name, 3);
+      if (distractors.length < 3) return;
+      questions.push({
+        id: `el-fact-${el.Z}-${index}`,
+        prompt: `Which element does this describe?\n“${fact}”`,
+        choices: makeChoices(el.name, distractors),
+        correct: el.name,
+      });
+    });
+  }
+
+  return shuffle(questions);
+}
+
 export function createRotation(questions) {
   return {
     remaining: shuffle(questions),

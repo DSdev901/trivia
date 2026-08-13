@@ -1,4 +1,5 @@
 import {
+  buildElementQuestions,
   buildPresidentQuestions,
   createRotation,
   currentQuestion,
@@ -117,7 +118,7 @@ function categoryMetaLabel(category) {
     return "3 feeds · refreshable";
   }
   if (category?.type === "periodic-table") {
-    return "118 elements · spoken tours";
+    return "118 elements · tours & quiz";
   }
   return `${category.batchCount} batches`;
 }
@@ -158,7 +159,7 @@ function openCategory(id) {
     return;
   }
   if (category.type === "periodic-table") {
-    void renderPeriodicTable({ els });
+    void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
     show("periodicTable");
     return;
   }
@@ -219,6 +220,29 @@ function renderHub(category) {
     show("flags");
     els.subtitle.textContent = `${category.name} · Flagged`;
   });
+}
+
+function startElementQuiz({ focus, all, categoryLabels, scopeLabel, scopeId }) {
+  cleanupPeriodicTable();
+  const questions = buildElementQuestions(focus, all, categoryLabels);
+  if (!questions.length) {
+    alert("Not enough element data to build a quiz for this group.");
+    return;
+  }
+  state.quiz = {
+    mode: "elements",
+    scopeLabel,
+    scopeId,
+    focus,
+    all,
+    categoryLabels,
+    rotation: createRotation(questions),
+    total: questions.length,
+  };
+  state.lastResult = null;
+  els.subtitle.textContent = `${state.category.name} · ${scopeLabel}`;
+  renderQuizQuestion();
+  show("quiz");
 }
 
 function renderBatches(category) {
@@ -805,7 +829,10 @@ function onAnswer(choice) {
 function renderQuizDone() {
   const quiz = state.quiz;
   const { rotation, total } = quiz;
-  const scopeText = (quiz.batchNumbers || []).map((n) => `Batch ${n}`).join(", ");
+  const isElements = quiz.mode === "elements";
+  const scopeText = isElements
+    ? quiz.scopeLabel || "Elements"
+    : (quiz.batchNumbers || []).map((n) => `Batch ${n}`).join(", ");
   els.subtitle.textContent = `${state.category.name} · Quiz complete`;
   els.quizDone.innerHTML = `
     <div class="quiz-done">
@@ -816,16 +843,28 @@ function renderQuizDone() {
         <li><strong>${rotation.correctCount}</strong> correct answers</li>
         <li><strong>${rotation.wrongCount}</strong> wrong answers</li>
         <li><strong>${rotation.kept}</strong> times kept for another pass</li>
-        <li>Batches: ${escapeHtml(scopeText)}</li>
+        <li>${isElements ? "Scope" : "Batches"}: ${escapeHtml(scopeText)}</li>
       </ul>
       <div class="setup-actions">
         <button type="button" class="primary-btn" id="quiz-again">Quiz again</button>
-        <button type="button" class="secondary-btn" id="quiz-to-hub">Back to section</button>
+        <button type="button" class="secondary-btn" id="quiz-to-hub">${
+          isElements ? "Back to table" : "Back to section"
+        }</button>
       </div>
     </div>
   `;
 
   document.getElementById("quiz-again").addEventListener("click", () => {
+    if (isElements) {
+      startElementQuiz({
+        focus: quiz.focus,
+        all: quiz.all,
+        categoryLabels: quiz.categoryLabels,
+        scopeLabel: quiz.scopeLabel,
+        scopeId: quiz.scopeId,
+      });
+      return;
+    }
     renderQuizSetup(state.category);
     show("quizSetup");
     els.subtitle.textContent = `${state.category.name} · Quiz setup`;
@@ -833,6 +872,12 @@ function renderQuizDone() {
 
   document.getElementById("quiz-to-hub").addEventListener("click", () => {
     state.quiz = null;
+    if (isElements) {
+      void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
+      show("periodicTable");
+      els.subtitle.textContent = state.category.name;
+      return;
+    }
     renderHub(state.category);
     show("hub");
     els.subtitle.textContent = state.category.name;
@@ -874,12 +919,23 @@ function goBack() {
       break;
     case "batches":
     case "quizSetup":
-    case "quizDone":
     case "flags":
       state.quiz = null;
       renderHub(state.category);
       els.subtitle.textContent = state.category.name;
       show("hub");
+      break;
+    case "quizDone":
+      state.quiz = null;
+      if (state.category?.type === "periodic-table") {
+        void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
+        els.subtitle.textContent = state.category.name;
+        show("periodicTable");
+      } else {
+        renderHub(state.category);
+        els.subtitle.textContent = state.category.name;
+        show("hub");
+      }
       break;
     case "quiz": {
       const hasProgress = state.quiz?.rotation?.remaining?.length;
@@ -889,11 +945,18 @@ function goBack() {
       ) {
         return;
       }
+      const wasElements = state.quiz?.mode === "elements";
       state.quiz = null;
       state.lastResult = null;
-      renderQuizSetup(state.category);
-      els.subtitle.textContent = `${state.category.name} · Quiz setup`;
-      show("quizSetup");
+      if (wasElements) {
+        void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
+        els.subtitle.textContent = state.category.name;
+        show("periodicTable");
+      } else {
+        renderQuizSetup(state.category);
+        els.subtitle.textContent = `${state.category.name} · Quiz setup`;
+        show("quizSetup");
+      }
       break;
     }
     case "hub":
