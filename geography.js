@@ -51,7 +51,7 @@ const ISO_CONT = {
 const MODE_META = {
   pin: {
     label: "Pin",
-    blurb: "Find the named place on the map.",
+    blurb: "Find the named place on the map. Two misses, then the answer is shown.",
   },
   type: {
     label: "Type",
@@ -106,6 +106,8 @@ const geo = {
   _focusHalo: false,
   _panLimit: null,
   _zoomAnim: 0,
+  _pinMisses: 0,
+  _pinMissTimer: 0,
 };
 
 function escapeHtml(s) {
@@ -865,7 +867,8 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
       !out && dimOthers && id !== activeId && id !== correctId && id !== wrongId
     );
     el.classList.toggle("is-correct", !out && correctId === id);
-    el.classList.toggle("is-wrong", !out && wrongId === id);
+    el.classList.toggle("is-wrong", !out && wrongId === id && Boolean(correctId));
+    el.classList.toggle("is-miss-flash", !out && wrongId === id && !correctId);
   });
   if (outline) {
     if (host.dataset.geoOutlineId !== activeId) {
@@ -896,6 +899,10 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     stopFocusZoom();
     if (svg && geo._packViewBox) svg.setAttribute("viewBox", geo._packViewBox);
     scheduleFocusPlace(host, activeId);
+  } else if (wrongId) {
+    geo._focusHalo = false;
+    setMapLabel(host, wrongId, { miss: true });
+    syncTinyHitPads(host);
   } else {
     setMapLabel(host, null);
     syncTinyHitPads(host);
@@ -1165,10 +1172,10 @@ function syncTinyHitPads(host) {
   }
 }
 
-function setMapLabel(host, id) {
+function setMapLabel(host, id, { miss = false } = {}) {
   const item = id ? byId(id) : null;
-  geo._mapLabel = item ? { id: item.id, name: item.name } : null;
-  if (!id) geo._focusHalo = false;
+  geo._mapLabel = item ? { id: item.id, name: item.name, miss } : null;
+  if (!id || miss) geo._focusHalo = false;
   drawMapLabel(host);
 }
 
@@ -1211,7 +1218,7 @@ function drawMapLabel(host) {
   const placeAbove = anchor.y - vb.y > fontSize * 3;
 
   const label = document.createElementNS(NS, "g");
-  label.setAttribute("class", "geo-marker-label");
+  label.setAttribute("class", spec.miss ? "geo-marker-label is-miss" : "geo-marker-label");
   label.setAttribute("pointer-events", "none");
   const text = document.createElementNS(NS, "text");
   text.setAttribute("class", "geo-marker-label-text");
@@ -1720,6 +1727,8 @@ function startMode(mode) {
   geo.wrong = 0;
   geo.answered = false;
   geo.selectedId = null;
+  geo._pinMisses = 0;
+  clearPinMissFlash();
   renderPlay();
 }
 
@@ -1826,7 +1835,7 @@ function renderPlay() {
   if (geo.mode === "pin") {
     prompt = `
       <p class="geo-prompt">${promptForMode(item)}</p>
-      <p class="geo-hint">Tap the correct ${escapeHtml(pinTargetNoun())} on the map.</p>`;
+      <p class="geo-hint">Tap the correct ${escapeHtml(pinTargetNoun())}. Two misses allowed.</p>`;
   } else if (geo.mode === "type" || geo.mode === "outline") {
     prompt = `<p class="geo-prompt">${promptForMode(item)}</p>`;
     controls = `
@@ -1881,6 +1890,27 @@ function renderPlay() {
   bindPlay();
 }
 
+const PIN_MISS_LIMIT = 3;
+const PIN_MISS_MS = 1500;
+
+function clearPinMissFlash() {
+  if (!geo._pinMissTimer) return;
+  clearTimeout(geo._pinMissTimer);
+  geo._pinMissTimer = 0;
+}
+
+function flashPinMiss(id) {
+  const host = geo.root?.querySelector("#geo-map");
+  if (!host || !byId(id)) return;
+  clearPinMissFlash();
+  paintMap(null, { flash: { wrongId: id } });
+  geo._pinMissTimer = setTimeout(() => {
+    geo._pinMissTimer = 0;
+    if (geo.answered || !host.isConnected) return;
+    paintMap(null);
+  }, PIN_MISS_MS);
+}
+
 function bindPlay() {
   geo.root.querySelector("#geo-back-modes")?.addEventListener("click", () => {
     if (
@@ -1895,6 +1925,8 @@ function bindPlay() {
   geo.root.querySelector("#geo-next")?.addEventListener("click", () => {
     geo.index += 1;
     geo.answered = false;
+    geo._pinMisses = 0;
+    clearPinMissFlash();
     renderPlay();
   });
 
@@ -1903,7 +1935,18 @@ function bindPlay() {
       if (geo.answered) return;
       const id = mapTargetId(e);
       if (!id) return;
-      judge(id === currentItem().id, id);
+      const item = currentItem();
+      if (!item) return;
+      if (id === item.id) {
+        judge(true, id);
+        return;
+      }
+      geo._pinMisses += 1;
+      if (geo._pinMisses >= PIN_MISS_LIMIT) {
+        judge(false, id);
+        return;
+      }
+      flashPinMiss(id);
     });
     return;
   }
@@ -1940,6 +1983,7 @@ function bindPlay() {
 }
 
 function judge(ok, clickedMapId = null, clickedBtn = null) {
+  clearPinMissFlash();
   geo.answered = true;
   if (ok) geo.correct += 1;
   else geo.wrong += 1;
@@ -2045,6 +2089,8 @@ export function cleanupGeography() {
   geo._packViewBox = null;
   geo._panLimit = null;
   geo._mapLabel = null;
+  geo._pinMisses = 0;
+  clearPinMissFlash();
   stopFocusZoom();
 }
 

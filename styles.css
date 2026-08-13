@@ -1971,6 +1971,11 @@ body {
   opacity: 1;
 }
 
+.geo-map-frame .geo-region.is-miss-flash {
+  fill: #c45c5c;
+  opacity: 1;
+}
+
 .geo-map-frame .geo-region-muted {
   fill: #dce9f5;
   stroke: none;
@@ -2046,7 +2051,9 @@ body {
 }
 
 .geo-map-frame .geo-island-dot.is-correct,
-.geo-map-frame .geo-island-dot.is-active {
+.geo-map-frame .geo-island-dot.is-active,
+.geo-map-frame .geo-island-dot.is-wrong,
+.geo-map-frame .geo-island-dot.is-miss-flash {
   stroke: #fff;
   stroke-width: 2;
 }
@@ -2153,7 +2160,8 @@ body {
   transform: scale(1.32);
 }
 
-.geo-map-frame .geo-region.geo-marker.is-wrong {
+.geo-map-frame .geo-region.geo-marker.is-wrong,
+.geo-map-frame .geo-region.geo-marker.is-miss-flash {
   fill: #c45c5c;
   stroke: #fff;
   stroke-width: 0.9;
@@ -2163,6 +2171,34 @@ body {
 
 .geo-map-frame .geo-marker-label {
   pointer-events: none;
+}
+
+.geo-map-frame .geo-marker-label.is-miss {
+  animation: geo-miss-label 1.5s ease forwards;
+}
+
+.geo-map-frame .geo-marker-label.is-miss .geo-marker-label-bg {
+  fill: rgba(248, 232, 232, 0.96);
+  stroke: rgba(160, 60, 60, 0.35);
+}
+
+.geo-map-frame .geo-marker-label.is-miss .geo-marker-label-text {
+  fill: #7a2e2e;
+}
+
+@keyframes geo-miss-label {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  72% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .geo-map-frame .geo-marker-label-bg {
