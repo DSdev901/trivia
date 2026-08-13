@@ -1165,20 +1165,44 @@ function elFullBox(el) {
   };
 }
 
+function largestPartSize(el) {
+  const parts = elementParts(el);
+  if (!parts.length) return null;
+  let best = parts[0];
+  let bestSpan = 0;
+  for (const p of parts) {
+    const span = Math.max(p.maxX - p.minX, p.maxY - p.minY);
+    if (span > bestSpan) {
+      bestSpan = span;
+      best = p;
+    }
+  }
+  return { w: best.maxX - best.minX, h: best.maxY - best.minY };
+}
+
 function placeAnchorCached(host, id) {
   host._geoAnchors ??= new Map();
   if (!host._geoAnchors.has(id)) {
     const a = regionAnchor(host, id);
-    if (a) a.full = elFullBox(a.el);
+    if (a) {
+      a.full = elFullBox(a.el);
+      a.part = largestPartSize(a.el) || { w: a.w, h: a.h };
+    }
     host._geoAnchors.set(id, a);
   }
   return host._geoAnchors.get(id);
 }
 
-const TINY_LAND_SEE_PX = 5;
-const TINY_LAND_DRAW_PX = 10;
-const TINY_LAND_FULL_PX = 14;
+const TINY_LAND_SEE_PX = 8;
+const TINY_LAND_DRAW_PX = 16;
+const TINY_LAND_FULL_PX = 24;
 const ENCLAVE_STROKE_PX = 48;
+
+function landPixelSize(anchor, sx, sy) {
+  const w = anchor.part?.w ?? anchor.w;
+  const h = anchor.part?.h ?? anchor.h;
+  return Math.max(w * sx, h * sy);
+}
 
 function tinyLandIds(host, svg, packRect) {
   if (host._tinyLandIds) return host._tinyLandIds;
@@ -1189,8 +1213,7 @@ function tinyLandIds(host, svg, packRect) {
   for (const id of packItemIds()) {
     const a = placeAnchorCached(host, id);
     if (!a) continue;
-    const compactPx = Math.max(a.w * sx, a.h * sy);
-    if (compactPx >= TINY_LAND_SEE_PX) continue;
+    if (landPixelSize(a, sx, sy) >= TINY_LAND_SEE_PX) continue;
     ids.push(id);
   }
   host._tinyLandIds = ids;
@@ -1221,14 +1244,14 @@ function syncTinyIslandScale(host) {
   for (const id of ids) {
     const a = placeAnchorCached(host, id);
     if (!a) continue;
-    const compactPx = Math.max(a.w * sx, a.h * sy);
+    const landPx = landPixelSize(a, sx, sy);
     const full = a.full;
-    const fullPx = full ? Math.max(full.w * sx, full.h * sy) : compactPx;
-    if (compactPx >= TINY_LAND_SEE_PX) {
+    const fullPx = full ? Math.max(full.w * sx, full.h * sy) : landPx;
+    if (landPx >= TINY_LAND_SEE_PX) {
       clearIslandBoost(a.el);
       continue;
     }
-    const scale = Math.min(24, TINY_LAND_DRAW_PX / Math.max(compactPx, 0.2));
+    const scale = Math.min(24, TINY_LAND_DRAW_PX / Math.max(landPx, 0.2));
     if (fullPx < TINY_LAND_FULL_PX && scale > 1.08) {
       a.el.setAttribute(
         "transform",
