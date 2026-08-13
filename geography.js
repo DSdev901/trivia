@@ -893,13 +893,21 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
 }
 
 function mapTargetId(e) {
-  const pin = e.target.closest?.(".geo-pin");
+  const fromEvent = regionIdFromNode(e.target);
+  if (fromEvent) return fromEvent;
+  const hit = document.elementFromPoint(e.clientX, e.clientY);
+  return regionIdFromNode(hit);
+}
+
+function regionIdFromNode(node) {
+  if (!node?.closest) return null;
+  const pin = node.closest(".geo-pin");
   if (pin) {
     const visual = pin.querySelector(".geo-region");
     if (visual?.classList.contains("is-out")) return null;
     return pin.dataset.id || visual?.dataset.id || visual?.id || null;
   }
-  const el = e.target.closest?.(".geo-region");
+  const el = node.closest(".geo-region");
   if (!el || el.classList.contains("is-out")) return null;
   return el.dataset.id || el.id || null;
 }
@@ -1094,7 +1102,6 @@ function bindMapControls(host) {
   host.addEventListener("pointerdown", (e) => {
     if (e.button !== 0) return;
     setPointer(e);
-    host.setPointerCapture?.(e.pointerId);
     if (pointers.size >= 2) {
       dragging = false;
       last = null;
@@ -1102,6 +1109,7 @@ function bindMapControls(host) {
       moved = true;
       beginPinch();
       host.classList.add("is-panning");
+      host.setPointerCapture?.(e.pointerId);
       return;
     }
     moved = false;
@@ -1122,6 +1130,7 @@ function bindMapControls(host) {
       if (dist < PAN_SLOP) return;
       moved = true;
       host.classList.add("is-panning");
+      host.setPointerCapture?.(e.pointerId);
     }
     const vb = readVb();
     const rect = svg.getBoundingClientRect();
