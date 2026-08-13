@@ -1840,18 +1840,19 @@ body {
   fill: #2f9e6b;
 }
 
-/* Outside the quiz set: blend into ocean — no multi-colored “other” countries */
+/* Outside the quiz set: still visible as muted land, not clickable */
 .geo-map-frame.is-region-scope .geo-region.is-out,
 .geo-map-frame .geo-region.is-out {
-  fill: #dce9f5;
-  stroke: none;
+  fill: #c9d3dc;
+  stroke: #e4ebf1;
+  stroke-width: 0.45;
   opacity: 1;
   pointer-events: none;
   cursor: default;
 }
 
 .geo-map-frame.is-region-scope .geo-region.is-out:hover {
-  fill: #dce9f5;
+  fill: #c9d3dc;
 }
 
 .geo-map-frame.is-outline-mode {
@@ -1885,7 +1886,9 @@ body {
 }
 
 .geo-map-frame .geo-island-dot.is-out {
-  stroke: none;
+  fill: #c9d3dc;
+  stroke: #e4ebf1;
+  stroke-width: 0.45;
 }
 
 .geo-map-frame .geo-pin {

@@ -17,6 +17,36 @@ const MAPS = {
   "mls-teams": "data/geography/maps/mls-teams.svg",
 };
 
+const ISO_CONT = {
+  US: "NA", CA: "NA", MX: "NA", GT: "NA", BZ: "NA", SV: "NA", HN: "NA", NI: "NA",
+  CR: "NA", PA: "NA", CU: "NA", JM: "NA", HT: "NA", DO: "NA", BS: "NA", TT: "NA",
+  BB: "NA", GD: "NA", LC: "NA", VC: "NA", AG: "NA", KN: "NA", DM: "NA", GL: "NA",
+  BR: "SA", AR: "SA", CL: "SA", PE: "SA", CO: "SA", VE: "SA", EC: "SA", BO: "SA",
+  PY: "SA", UY: "SA", GY: "SA", SR: "SA", GF: "SA", FK: "SA",
+  IS: "EU", IE: "EU", GB: "EU", PT: "EU", ES: "EU", FR: "EU", BE: "EU", NL: "EU",
+  LU: "EU", DE: "EU", CH: "EU", AT: "EU", LI: "EU", IT: "EU", SM: "EU", VA: "EU",
+  MT: "EU", MC: "EU", AD: "EU", PL: "EU", CZ: "EU", SK: "EU", HU: "EU", SI: "EU",
+  HR: "EU", BA: "EU", RS: "EU", ME: "EU", MK: "EU", AL: "EU", GR: "EU", BG: "EU",
+  RO: "EU", MD: "EU", UA: "EU", BY: "EU", LT: "EU", LV: "EU", EE: "EU", FI: "EU",
+  SE: "EU", NO: "EU", DK: "EU", XK: "EU",
+  MA: "AF", EH: "AF", DZ: "AF", TN: "AF", LY: "AF", EG: "AF", SD: "AF", SS: "AF",
+  TD: "AF", NE: "AF", ML: "AF", MR: "AF", SN: "AF", GM: "AF", GW: "AF", GN: "AF",
+  SL: "AF", LR: "AF", CI: "AF", GH: "AF", TG: "AF", BJ: "AF", NG: "AF", BF: "AF",
+  CM: "AF", GQ: "AF", GA: "AF", CG: "AF", CD: "AF", CF: "AF", AO: "AF", ZM: "AF",
+  MW: "AF", MZ: "AF", ZW: "AF", BW: "AF", NA: "AF", ZA: "AF", LS: "AF", SZ: "AF",
+  MG: "AF", MU: "AF", SC: "AF", KM: "AF", DJ: "AF", ER: "AF", ET: "AF", SO: "AF",
+  KE: "AF", UG: "AF", RW: "AF", BI: "AF", TZ: "AF", ST: "AF", CV: "AF",
+  RU: "AS", TR: "AS", CY: "AS", GE: "AS", AM: "AS", AZ: "AS", KZ: "AS", UZ: "AS",
+  TM: "AS", KG: "AS", TJ: "AS", AF: "AS", PK: "AS", IN: "AS", NP: "AS", BT: "AS",
+  BD: "AS", LK: "AS", MV: "AS", CN: "AS", MN: "AS", KP: "AS", KR: "AS", JP: "AS",
+  TW: "AS", VN: "AS", LA: "AS", KH: "AS", TH: "AS", MM: "AS", MY: "AS", SG: "AS",
+  BN: "AS", ID: "AS", PH: "AS", TL: "AS", IR: "AS", IQ: "AS", SY: "AS", LB: "AS",
+  IL: "AS", PS: "AS", JO: "AS", SA: "AS", YE: "AS", OM: "AS", AE: "AS", QA: "AS",
+  BH: "AS", KW: "AS",
+  AU: "OC", NZ: "OC", PG: "OC", SB: "OC", VU: "OC", NC: "OC", FJ: "OC", TO: "OC",
+  WS: "OC", KI: "OC", TV: "OC", NR: "OC", PW: "OC", FM: "OC", MH: "OC",
+};
+
 /** Pin and Type are the main map modes; the rest are practice variants. */
 const MODE_META = {
   pin: {
@@ -627,6 +657,54 @@ function applyViewBox(svg, bounds, padRatio, storeAsPack) {
   geo._panLimit = vb;
 }
 
+function boundsArea(b) {
+  if (!b || b.useFullMap) return 0;
+  return Math.max(0, b.maxX - b.minX) * Math.max(0, b.maxY - b.minY);
+}
+
+function fitIdsForPack(host, inPack) {
+  const ids = [...inPack];
+  if (!host || geo.pack?.overlay === "markers") return ids;
+  const svg = host.querySelector("svg");
+  if (svg) {
+    ensureBaseViewBox(svg);
+    unwrapPackRegions(host, svg);
+  }
+
+  if (geo.pack?.map === "us-states") {
+    const all = [
+      ...new Set(
+        [...host.querySelectorAll(".geo-region")]
+          .map((el) => el.dataset.id || el.id)
+          .filter(Boolean)
+      ),
+    ];
+    return ids.length < all.length * 0.85 ? all : ids;
+  }
+
+  if (!isWorldCountriesMap() || !svg) return ids;
+  const conts = new Set(ids.map((id) => ISO_CONT[id]).filter(Boolean));
+  if (conts.size !== 1) return ids;
+  const contIds = Object.keys(ISO_CONT).filter((iso) => ISO_CONT[iso] === [...conts][0]);
+  if (!contIds.length || ids.length >= contIds.length * 0.85) return ids;
+
+  const { mapW, mapH } = mapSize(svg);
+  const packB = packFitBounds(host, ids, {
+    mapW,
+    mapH,
+    core: packCorePoint(host, ids),
+  });
+  const contB = packFitBounds(host, contIds, {
+    mapW,
+    mapH,
+    core: packCorePoint(host, contIds),
+  });
+  const packA = boundsArea(packB);
+  const contA = boundsArea(contB);
+  if (contA > 0 && packA / contA >= 0.2) return contIds;
+  return ids;
+}
+
 function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false } = {}) {
   const host = geo.root?.querySelector("#geo-map");
   const svg = host?.querySelector("svg");
@@ -699,7 +777,10 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   if (outline) {
     fitMapToIds([activeId], { padRatio: 0.25 });
   } else if (scopePack) {
-    fitMapToIds([...inPack], { padRatio: 0.1, storeAsPack: !geo._packViewBox });
+    fitMapToIds(fitIdsForPack(host, inPack), {
+      padRatio: 0.08,
+      storeAsPack: !geo._packViewBox,
+    });
     if (geo._packViewBox) {
       host.querySelector("svg")?.setAttribute("viewBox", geo._packViewBox);
     }
