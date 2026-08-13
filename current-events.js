@@ -11,6 +11,7 @@ import {
   speakLines,
   speechSupported,
   stopSpeech,
+  unlockSpeech,
   voiceQualityTip,
 } from "./speech.js";
 import { isLocalHost } from "./env.js";
@@ -433,7 +434,10 @@ function render() {
   document.getElementById("ce-refresh")?.addEventListener("click", refreshData);
 
   ce.root.querySelectorAll(".ce-speak").forEach((btn) => {
-    btn.addEventListener("click", () => playItems([Number(btn.dataset.speak)]));
+    btn.addEventListener("click", () => {
+      unlockSpeech();
+      playItems([Number(btn.dataset.speak)]);
+    });
   });
 
   if (ce.canSpeak) bindSpeechControls();
@@ -511,6 +515,7 @@ function stopPlayback() {
 
 function bindSpeechControls() {
   document.getElementById("ce-listen")?.addEventListener("click", () => {
+    unlockSpeech();
     playItems(activeItems().map((_, i) => i));
   });
   document.getElementById("ce-stop")?.addEventListener("click", stopPlayback);

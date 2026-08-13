@@ -138,6 +138,24 @@ function findDaniel(ranked) {
   return ranked.find((v) => /\bdaniel\b/i.test(v.name)) || null;
 }
 
+function pickVoiceNow(preferredUri) {
+  const ranked = (window.speechSynthesis?.getVoices?.() ?? [])
+    .filter(isEnglish)
+    .map((v) => ({
+      voice: v,
+      uri: v.voiceURI,
+      name: v.name,
+      score: scoreVoice(v),
+    }))
+    .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+  if (!ranked.length) return null;
+  if (preferredUri) {
+    const match = ranked.find((v) => v.uri === preferredUri);
+    if (match) return match.voice;
+  }
+  return (findDaniel(ranked) || ranked[0]).voice;
+}
+
 async function resolveVoice(preferredUri) {
   const ranked = await listEnglishVoices();
   if (!ranked.length) return null;
@@ -450,8 +468,38 @@ let keepaliveAudioUrl = null;
 let keepaliveAudioContext = null;
 let keepaliveBufferSource = null;
 
+function isIOSWebKit() {
+  if (typeof navigator === "undefined") return false;
+  const ua = navigator.userAgent || "";
+  if (/iPad|iPhone|iPod/.test(ua)) return true;
+  // iPadOS desktop UA
+  return navigator.platform === "MacIntel" && (navigator.maxTouchPoints || 0) > 1;
+}
+
 function wakeLockSupported() {
   return typeof navigator !== "undefined" && "wakeLock" in navigator;
+}
+
+/**
+ * WebKit (Safari / Brave / Chrome on iOS) only starts TTS inside a user
+ * gesture. Call this synchronously from Listen taps before any await.
+ */
+export function unlockSpeech() {
+  if (!speechSupported()) return;
+  try {
+    window.speechSynthesis.resume();
+  } catch {
+    /* ignore */
+  }
+  try {
+    const warm = new SpeechSynthesisUtterance(" ");
+    warm.volume = 1;
+    warm.rate = 1;
+    warm.pitch = 1;
+    window.speechSynthesis.speak(warm);
+  } catch {
+    /* ignore */
+  }
 }
 
 /** Tiny silent WAV so the OS treats us as active media while speaking. */
@@ -536,6 +584,8 @@ function stopWebAudioKeepalive() {
 
 async function startPlaybackKeepalive() {
   setMediaSessionPlaying(true);
+  // Silent HTML/Web Audio fights speechSynthesis on iOS (Brave/Safari).
+  if (isIOSWebKit()) return;
   try {
     if (!keepaliveAudio) {
       keepaliveAudioUrl = silentWavObjectUrl(2);
@@ -567,6 +617,15 @@ function stopPlaybackKeepalive() {
 async function ensureKeepalivePlaying() {
   if (!speechKeepaliveActive) return;
   try {
+    if (window.speechSynthesis?.paused) window.speechSynthesis.resume();
+  } catch {
+    /* ignore */
+  }
+  if (isIOSWebKit()) {
+    setMediaSessionPlaying(true);
+    return;
+  }
+  try {
     if (keepaliveAudioContext?.state === "suspended") {
       await keepaliveAudioContext.resume();
     }
@@ -579,11 +638,6 @@ async function ensureKeepalivePlaying() {
     /* ignore */
   }
   if (!keepaliveBufferSource) startWebAudioKeepalive();
-  try {
-    if (window.speechSynthesis?.paused) window.speechSynthesis.resume();
-  } catch {
-    /* ignore */
-  }
   setMediaSessionPlaying(true);
 }
 
@@ -656,8 +710,17 @@ export function stopSpeech() {
   browserSpeakSession += 1;
   void endSpeechKeepalive();
   if (!speechSupported()) return;
-  // Chromium often needs cancel more than once to fully halt speech.
   window.speechSynthesis.cancel();
+  // pause() leaves WebKit (Brave/Safari iOS) unable to speak again.
+  if (isIOSWebKit()) {
+    try {
+      window.speechSynthesis.resume();
+    } catch {
+      /* ignore */
+    }
+    return;
+  }
+  // Chromium often needs cancel more than once to fully halt speech.
   window.speechSynthesis.pause();
   window.speechSynthesis.cancel();
   try {
@@ -690,24 +753,60 @@ function speakUtterance(text, voice, rate, session) {
       return;
     }
     const utter = new SpeechSynthesisUtterance(text);
-    if (voice) utter.voice = voice;
+    if (voice) {
+      utter.voice = voice;
+      if (voice.lang) utter.lang = voice.lang;
+    }
     utter.rate = rate;
-    utter.pitch = 1.04;
+    utter.pitch = 1;
     utter.volume = 1;
-    utter.lang = voice?.lang || "en-US";
-    utter.onend = () => resolve(session === browserSpeakSession);
+    let settled = false;
+    const finish = (ok) => {
+      if (settled) return;
+      settled = true;
+      clearInterval(watchdog);
+      clearTimeout(safety);
+      resolve(ok);
+    };
+    utter.onend = () => finish(session === browserSpeakSession);
     utter.onerror = (event) => {
       if (
         event.error === "interrupted" ||
         event.error === "canceled" ||
+        event.error === "not-allowed" ||
         session !== browserSpeakSession
       ) {
-        resolve(false);
+        finish(false);
       } else {
+        settled = true;
+        clearInterval(watchdog);
+        clearTimeout(safety);
         reject(new Error(event.error || "Speech failed"));
       }
     };
-    window.speechSynthesis.speak(utter);
+    try {
+      if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+      window.speechSynthesis.speak(utter);
+      if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+    } catch (err) {
+      finish(false);
+      return;
+    }
+    // iOS pauses speechSynthesis after ~15s; kick it.
+    const watchdog = setInterval(() => {
+      if (session !== browserSpeakSession) {
+        finish(false);
+        return;
+      }
+      try {
+        window.speechSynthesis.resume();
+      } catch {
+        /* ignore */
+      }
+    }, 4000);
+    // onend sometimes never fires on WebKit.
+    const ms = Math.min(60000, Math.max(2500, String(text).length * (90 / Math.max(0.5, rate))));
+    const safety = setTimeout(() => finish(session === browserSpeakSession), ms);
   });
 }
 
@@ -722,8 +821,20 @@ export async function speakLines(lines, opts = {}) {
   }
   stopSpeech();
   const session = browserSpeakSession;
+  // Must run in the same tap as Listen — Brave/Safari iOS drop TTS after await.
+  unlockSpeech();
+  if (isIOSWebKit()) {
+    speechKeepaliveActive = true;
+    speechKeepaliveOwner = session;
+    void acquireWakeLock(session);
+  } else {
+    void beginSpeechKeepalive(session);
+  }
 
-  const voice = await resolveVoice(opts.voiceUri || getSavedVoiceUri());
+  const preferred = opts.voiceUri || getSavedVoiceUri();
+  const voice = isIOSWebKit()
+    ? pickVoiceNow(preferred)
+    : await resolveVoice(preferred);
   if (session !== browserSpeakSession) {
     opts.onEnd?.();
     return;
@@ -733,7 +844,6 @@ export async function speakLines(lines, opts = {}) {
   const loopPadMs = opts.loopPadMs ?? 7000;
 
   if (window.speechSynthesis.paused) window.speechSynthesis.resume();
-  await beginSpeechKeepalive(session);
 
   try {
     for (let loop = 0; loop < loops; loop += 1) {
@@ -788,6 +898,9 @@ export async function speakLines(lines, opts = {}) {
 }
 
 export function voiceQualityTip(rankedVoices) {
+  if (isIOSWebKit()) {
+    return "On iPhone, turn the silent switch off. If Brave stays quiet, disable Shields for this site or use Safari.";
+  }
   const best = rankedVoices[0];
   if (!best) {
     return "No English voices found. Download voices in macOS System Settings → Accessibility → Spoken Content.";

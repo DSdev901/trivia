@@ -10,6 +10,7 @@ import {
   speakLines,
   speechSupported,
   stopSpeech,
+  unlockSpeech,
   voiceQualityTip,
 } from "./speech.js";
 
@@ -387,6 +388,7 @@ function renderDetail() {
 
 function bindDetailSpeech() {
   pt.root?.querySelector("#pt-read-one")?.addEventListener("click", () => {
+    unlockSpeech();
     const el = byZ(pt.selectedZ);
     if (el) void speakElement(el);
   });
@@ -542,6 +544,7 @@ function bind() {
   });
 
   pt.root.querySelector("#pt-listen")?.addEventListener("click", () => {
+    unlockSpeech();
     void speakTour();
   });
 

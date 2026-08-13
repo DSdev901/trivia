@@ -34,6 +34,7 @@ import {
   speechSupported,
   stopSpeech,
   toConversationalSpeech,
+  unlockSpeech,
   voiceQualityTip,
 } from "./speech.js";
 import { renderCurrentEvents } from "./current-events.js";
@@ -527,6 +528,7 @@ async function renderPresidentDetail() {
   });
 
   listenBtn?.addEventListener("click", () => {
+    unlockSpeech();
     playFacts(president.trivia.map((_, i) => i));
   });
 
