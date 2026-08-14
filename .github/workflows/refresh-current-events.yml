@@ -12,6 +12,15 @@ on:
     # During winter (CST, UTC-6) these fire an hour earlier local time.
     - cron: "0 11,18 * * 2"
   workflow_dispatch:
+    inputs:
+      briefing_pass:
+        description: Copilot briefing size (auto uses remaining credits if readable)
+        type: choice
+        options:
+          - auto
+          - full
+          - slim
+        default: auto
 
 permissions:
   contents: write # needed to push the refreshed data commit
@@ -42,9 +51,9 @@ jobs:
       - name: Refresh current events data
         run: node scripts/refresh-current-events.mjs
 
-      # Optional repo secret COPILOT_BILLING_TOKEN: fine-grained PAT with
-      # user permission Plan: read. Without it, remaining credits are
-      # unknown and Copilot rewrites the top 50 with Haiku.
+      # COPILOT_BILLING_TOKEN is optional. Remaining credits are read from
+      # Copilot's quota API when possible. If that fails, pick "full" or
+      # "slim" when running the workflow by hand.
       - name: Size Copilot briefing pass
         id: briefing_budget
         env:
@@ -54,6 +63,7 @@ jobs:
           COPILOT_MONTHLY_CREDITS: "1500"
           BRIEFING_MODEL_FULL: claude-haiku-4.5
           BRIEFING_MODEL_LOW: gemini-3.6-flash
+          BRIEFING_PASS: ${{ github.event.inputs.briefing_pass || 'auto' }}
         run: |
           cp data/current-events/briefing.json /tmp/briefing.fallback.json
           node scripts/briefing-copilot-budget.mjs

@@ -3,14 +3,11 @@
  * Decide which Copilot model to use and how many clustered briefing
  * cards it should rewrite.
  *
- * Tries GitHub's AI-credit usage API (needs a PAT with Plan: read — the
- * default Actions GITHUB_TOKEN cannot see personal Copilot quota).
+ * Remaining credits: Copilot's /copilot_internal/user quota (same API the
+ * CLI uses), then GitHub's public billing usage report. The public billing
+ * URL often 404s for personal Copilot even with a classic PAT.
  *
- * - remaining >= FULL_NEED → Haiku, every clustered card
- * - remaining low → cheaper Flash model, still the full clustered list
- * - remaining very low → cheaper model, top 50 only
- * - remaining empty → skip Copilot (keep the full heuristic list)
- * - remaining unknown → Haiku, top 50
+ * BRIEFING_PASS=full|slim overrides the automatic size.
  */
 
 import { readFile, writeFile } from "node:fs/promises";
@@ -29,45 +26,152 @@ const SLIM_CAP = Math.max(50, Number(process.env.BRIEFING_SLIM_MAX_CREDITS || 25
 const FULL_CAP = Math.max(SLIM_CAP, Number(process.env.BRIEFING_FULL_MAX_CREDITS || 800));
 const MODEL_FULL = process.env.BRIEFING_MODEL_FULL || "claude-haiku-4.5";
 const MODEL_LOW = process.env.BRIEFING_MODEL_LOW || "gemini-3.6-flash";
+const PASS = String(process.env.BRIEFING_PASS || "auto").toLowerCase();
 
 function currentMonth() {
   const now = new Date();
   return { year: now.getUTCFullYear(), month: now.getUTCMonth() + 1 };
 }
 
-async function remainingCredits(token) {
-  if (!token) return { remaining: null, used: null, reason: "no token" };
-  const { year, month } = currentMonth();
-  const url = new URL(
-    `https://api.github.com/users/${encodeURIComponent(USER)}/settings/billing/ai_credit/usage`
-  );
-  url.searchParams.set("year", String(year));
-  url.searchParams.set("month", String(month));
-  const res = await fetch(url, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-      Accept: "application/vnd.github+json",
-      "X-GitHub-Api-Version": "2026-03-10",
-      "User-Agent": "trivia-briefing-budget",
-    },
+function tokenKind(token) {
+  if (token.startsWith("github_pat_")) return "fine-grained";
+  if (token.startsWith("ghp_")) return "classic";
+  if (token.startsWith("gho_")) return "oauth";
+  return "other";
+}
+
+function apiHeaders(token) {
+  return {
+    Authorization: `Bearer ${token}`,
+    Accept: "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+    "User-Agent": "trivia-briefing-budget",
+  };
+}
+
+async function apiGet(token, pathWithQuery) {
+  const res = await fetch(`https://api.github.com${pathWithQuery}`, {
+    headers: apiHeaders(token),
   });
-  if (!res.ok) {
-    const body = await res.text();
-    return {
-      remaining: null,
-      used: null,
-      reason: `HTTP ${res.status} ${body.replace(/\s+/g, " ").slice(0, 180)}`,
-    };
+  const text = await res.text();
+  let json = null;
+  try {
+    json = JSON.parse(text);
+  } catch {
+    json = null;
   }
-  const data = await res.json();
-  const used = (data.usageItems || []).reduce(
-    (n, row) => n + Number(row.netQuantity || 0),
+  return {
+    ok: res.ok,
+    status: res.status,
+    json,
+    text: text.replace(/\s+/g, " ").slice(0, 160),
+    oauthScopes: res.headers.get("x-oauth-scopes") || "",
+    accepted: res.headers.get("x-accepted-github-permissions") || "",
+  };
+}
+
+function usedFromUsageItems(data) {
+  return (data?.usageItems || []).reduce(
+    (n, row) => n + Number(row.netQuantity || row.quantity || 0),
     0
   );
+}
+
+function remainingFromCopilotUser(data) {
+  const snaps = data?.quota_snapshots || {};
+  const preferred = [
+    "premium_interactions",
+    "premium",
+    "chat",
+    "ai_credits",
+    "credits",
+  ];
+  const names = [
+    ...preferred.filter((k) => snaps[k]),
+    ...Object.keys(snaps).filter((k) => !preferred.includes(k)),
+  ];
+  for (const name of names) {
+    const row = snaps[name];
+    if (!row || typeof row !== "object") continue;
+    if (row.unlimited) {
+      return { remaining: MONTHLY, used: 0, via: `copilot ${name} unlimited` };
+    }
+    const remaining = Number(row.remaining ?? row.quota_remaining);
+    const entitlement = Number(row.entitlement);
+    if (Number.isFinite(remaining)) {
+      const used = Number.isFinite(entitlement)
+        ? Math.max(0, entitlement - remaining)
+        : null;
+      return { remaining: Math.max(0, remaining), used, via: `copilot ${name}` };
+    }
+  }
+  return null;
+}
+
+async function remainingCredits() {
+  const billingToken = String(
+    process.env.COPILOT_BILLING_TOKEN || ""
+  ).trim();
+  const actionsToken = String(process.env.GITHUB_TOKEN || "").trim();
+  const { year, month } = currentMonth();
+  const probes = [];
+
+  if (billingToken) {
+    const who = await apiGet(billingToken, "/user");
+    probes.push(
+      `PAT ${tokenKind(billingToken)} /user HTTP ${who.status}${
+        who.ok && who.json?.login ? ` login=${who.json.login}` : ""
+      }${who.oauthScopes ? ` scopes=${who.oauthScopes}` : ""}`
+    );
+  } else {
+    probes.push("no COPILOT_BILLING_TOKEN");
+  }
+
+  const tokens = [
+    ["actions", actionsToken],
+    ["billing", billingToken],
+  ].filter(([, t]) => t);
+
+  for (const [label, token] of tokens) {
+    const res = await apiGet(token, "/copilot_internal/user");
+    probes.push(`${label} /copilot_internal/user HTTP ${res.status}`);
+    if (res.ok) {
+      const parsed = remainingFromCopilotUser(res.json);
+      if (parsed) {
+        return { ...parsed, reason: `ok via ${parsed.via} (${label})`, probes };
+      }
+      probes.push(
+        `copilot snapshots: ${Object.keys(res.json?.quota_snapshots || {}).join(",") || "none"}`
+      );
+    }
+  }
+
+  if (billingToken) {
+    const paths = [
+      `/users/${encodeURIComponent(USER)}/settings/billing/ai_credit/usage?year=${year}&month=${month}`,
+      `/users/${encodeURIComponent(USER)}/settings/billing/usage/summary?year=${year}&month=${month}`,
+      `/users/${encodeURIComponent(USER)}/settings/billing/premium_request/usage?year=${year}&month=${month}`,
+    ];
+    for (const p of paths) {
+      const res = await apiGet(billingToken, p);
+      probes.push(`billing ${p.split("?")[0]} HTTP ${res.status}`);
+      if (res.ok) {
+        const used = usedFromUsageItems(res.json);
+        return {
+          remaining: Math.max(0, MONTHLY - used),
+          used,
+          reason: "ok via billing API",
+          probes,
+        };
+      }
+    }
+  }
+
   return {
-    remaining: Math.max(0, MONTHLY - used),
-    used,
-    reason: "ok",
+    remaining: null,
+    used: null,
+    reason: probes.join("; "),
+    probes,
   };
 }
 
@@ -78,17 +182,22 @@ function capCredits(desired, remaining) {
 
 const data = JSON.parse(await readFile(FILE, "utf8"));
 const total = Array.isArray(data.items) ? data.items.length : 0;
-const token =
-  process.env.COPILOT_BILLING_TOKEN || process.env.GITHUB_TOKEN || "";
-const billed = await remainingCredits(token).catch((err) => ({
+const billed = await remainingCredits().catch((err) => ({
   remaining: null,
   used: null,
   reason: err.message,
+  probes: [],
 }));
 
 let mode = "slim";
 let model = MODEL_FULL;
-if (billed.remaining != null && billed.remaining >= FULL_NEED) {
+if (PASS === "full") {
+  mode = "full";
+  model = MODEL_FULL;
+} else if (PASS === "slim") {
+  mode = "slim";
+  model = MODEL_FULL;
+} else if (billed.remaining != null && billed.remaining >= FULL_NEED) {
   mode = "full";
   model = MODEL_FULL;
 } else if (billed.remaining != null && billed.remaining >= CHEAP_NEED) {
@@ -113,11 +222,14 @@ if (mode === "slim" && keep < total) {
 const remainingLabel =
   billed.remaining == null
     ? `unknown (${billed.reason})`
-    : `${billed.remaining} remaining of ${MONTHLY} (used ${billed.used})`;
+    : `${billed.remaining} remaining${
+        billed.used == null ? "" : ` of ${MONTHLY} (used ${billed.used})`
+      } — ${billed.reason}`;
 
 const lines = [
   `  [briefing] clustered stories: ${total}`,
   `  [briefing] Copilot credits: ${remainingLabel}`,
+  `  [briefing] pass override: ${PASS}`,
   mode === "skip"
     ? `  [briefing] mode: skip — not enough credits for Copilot; keeping full heuristic ranking`
     : `  [briefing] mode: ${mode} — ${model}, ${keep} cards, session cap ${maxCredits}`,
