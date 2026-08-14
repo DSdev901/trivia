@@ -37,16 +37,22 @@ export async function writeBriefingFile({
     generatedAt: new Date().toISOString(),
     windowStart: built.windowStart,
     windowEnd: built.windowEnd,
-    items: built.items.map((item) => ({
-      headline: item.headline,
-      people: item.people || [],
-      summary: item.summary,
-      section: item.section,
-      tag: item.tag,
-      date: item.date,
-      url: item.url || "",
-      coverage: item.coverage || 1,
-    })),
+    items: built.items.map((item) => {
+      const row = {
+        headline: item.headline,
+        people: item.people || [],
+        summary: item.summary,
+        section: item.section,
+        tag: item.tag,
+        date: item.date,
+        url: item.url || "",
+        coverage: item.coverage || 1,
+      };
+      if (Array.isArray(item.angles) && item.angles.length) {
+        row.angles = item.angles;
+      }
+      return row;
+    }),
   };
   await writeFile(OUT, `${JSON.stringify(payload, null, 2)}\n`);
   console.log(

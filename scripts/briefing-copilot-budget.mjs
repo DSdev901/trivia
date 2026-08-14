@@ -7,14 +7,14 @@
  * URL often 404s for personal Copilot even with a classic PAT.
  *
  * If remaining is 0, skip Copilot and keep the heuristic ranking. Otherwise
- * rewrite the full clustered list in Haiku-sized chunks. A failed chunk
- * keeps heuristic text for that slice; if every chunk fails, keep the
- * full heuristic ranking.
+ * rewrite the top featured stories. A failed chunk keeps heuristic text
+ * for that slice; if every chunk fails, keep the full heuristic ranking.
  */
 
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { BRIEFING_FEATURED } from "../briefing.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const FILE = path.join(ROOT, "data", "current-events", "briefing.json");
@@ -193,7 +193,7 @@ const lines = [
   `  [briefing] Copilot credits: ${remainingLabel}`,
   skip
     ? `  [briefing] mode: skip — no credits left; keeping full heuristic ranking`
-    : `  [briefing] mode: full — ${MODEL}, ${total} cards, no session credit cap`,
+    : `  [briefing] mode: top ${Math.min(BRIEFING_FEATURED, total)} of ${total} — ${MODEL}`,
 ];
 console.log(lines.join("\n"));
 

@@ -1130,6 +1130,31 @@ body {
   color: var(--ink-soft);
 }
 
+.ce-archive {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--stripe);
+}
+
+.ce-archive-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.ce-archive-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+}
+
+.ce-archive-more {
+  margin: 1.25rem 0 0;
+}
+
 .ce-filters {
   display: flex;
   flex-direction: column;

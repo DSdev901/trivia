@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 /**
- * Rewrite the clustered briefing with Copilot Haiku in chunks that fit
- * Haiku's output cap. A failed chunk keeps heuristic summaries for that
- * slice; if every chunk fails, restore the fallback file.
+ * Rewrite the top clustered briefing cards with Copilot Haiku. Chunks stay
+ * under Haiku's output cap. A failed chunk keeps heuristic summaries for
+ * that slice; if every chunk fails, restore the fallback file.
  */
 
 import { spawnSync } from "node:child_process";
 import { copyFile, readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { BRIEFING_FEATURED } from "../briefing.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const FILE = path.join(ROOT, "data", "current-events", "briefing.json");
@@ -18,6 +19,7 @@ const VALIDATE = path.join(ROOT, "scripts", "validate-briefing.mjs");
 const FALLBACK = process.env.BRIEFING_FALLBACK || "/tmp/briefing.fallback.json";
 const INPUT = process.env.BRIEFING_INPUT || "/tmp/briefing.input.json";
 const CHUNK = Math.max(40, Number(process.env.BRIEFING_CHUNK_SIZE || 200));
+const TOP = Math.max(10, Number(process.env.BRIEFING_TOP_N || BRIEFING_FEATURED));
 const MODEL = process.env.COPILOT_MODEL || "claude-haiku-4.5";
 
 function runNode(script, args, extraEnv, stdio) {
@@ -38,11 +40,12 @@ if (total < 10) {
 
 await copyFile(FALLBACK, FILE);
 
+const rewriteUntil = Math.min(TOP, total);
 let chunksOk = 0;
-for (let offset = 0; offset < total; offset += CHUNK) {
-  const limit = Math.min(CHUNK, total - offset);
+for (let offset = 0; offset < rewriteUntil; offset += CHUNK) {
+  const limit = Math.min(CHUNK, rewriteUntil - offset);
   console.log(
-    `  [briefing] Copilot chunk ${offset + 1}–${offset + limit} of ${total}`
+    `  [briefing] Copilot chunk ${offset + 1}–${offset + limit} of top ${rewriteUntil} (${total} ranked)`
   );
   const prompt = runNode(
     PROMPT,

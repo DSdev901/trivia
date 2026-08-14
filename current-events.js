@@ -15,7 +15,7 @@ import {
   voiceQualityTip,
 } from "./speech.js";
 import { isLocalHost } from "./env.js";
-import { buildBriefing, highlightPeople } from "./briefing.js";
+import { buildBriefing, highlightPeople, BRIEFING_FEATURED } from "./briefing.js";
 
 const NEWS_SECTIONS = [
   { id: "sports", label: "Sports", path: "data/current-events/sports.json" },
@@ -44,6 +44,7 @@ const ce = {
   tab: "briefing",
   briefingFilter: "all", // "all" | "sports" | "entertainment"
   briefingSportFilter: "all", // "all" | sport tag e.g. "NFL"
+  briefingShowAll: false,
   netflixFilter: "all", // "all" | "shows" | "movies"
   sportFilter: "all", // "all" | sport label e.g. "NFL"
   refreshing: false,
@@ -405,7 +406,7 @@ function briefingSportFilterBar(allItems) {
     </div>`;
 }
 
-function briefingListHtml(items) {
+function briefingListHtml(items, startIdx = 0) {
   if (
     ce.briefingFilter === "sports" &&
     ce.briefingSportFilter === "all"
@@ -421,7 +422,7 @@ function briefingListHtml(items) {
         list.reduce((n, i) => n + (Number(i.coverage) || 1), 0);
       return cov(b[1]) - cov(a[1]) || b[1].length - a[1].length || a[0].localeCompare(b[0]);
     });
-    let idx = 0;
+    let idx = startIdx;
     return ordered
       .map(
         ([sport, list]) => `
@@ -434,7 +435,9 @@ function briefingListHtml(items) {
       )
       .join("");
   }
-  return `<div class="ce-list">${items.map(briefingCard).join("")}</div>`;
+  return `<div class="ce-list">${items
+    .map((item, i) => briefingCard(item, startIdx + i))
+    .join("")}</div>`;
 }
 
 function netflixFilterBar(allItems) {
@@ -493,8 +496,8 @@ function renderBody() {
     const items = briefingItems();
     const rankedBy =
       payload.source === "copilot-auto"
-        ? "Related coverage is combined and ranked by how often a story was mentioned, then by weight. Copilot (Claude Haiku)."
-        : "Related coverage is combined. Stories mentioned most rank first. Copilot will rewrite this on Tuesday.";
+        ? "Ranked by how often a story was mentioned, then by weight. Top stories rewritten by Copilot (Claude Haiku)."
+        : "Ranked by how often a story was mentioned, then by weight. Copilot rewrites the top stories on Tuesday.";
     const freshNote = briefingIsNew()
       ? `<p class="ce-briefing-new">New Tuesday briefing — last three weeks of sports and entertainment.</p>`
       : "";
@@ -504,13 +507,29 @@ function renderBody() {
     if (!items.length) {
       return `${freshNote}${filters}<p class="lede">Nothing found for this filter in the current window.</p>`;
     }
+    const featured = items.slice(0, BRIEFING_FEATURED);
+    const rest = items.slice(BRIEFING_FEATURED);
+    const archive = rest.length
+      ? ce.briefingShowAll
+        ? `<section class="ce-archive">
+        <div class="ce-archive-head">
+          <h3 class="ce-archive-title">More ranked stories</h3>
+          <button type="button" class="text-btn" id="ce-briefing-toggle">Hide extra stories</button>
+        </div>
+        ${briefingListHtml(rest, featured.length)}
+      </section>`
+        : `<p class="ce-archive-more">
+        <button type="button" class="secondary-btn" id="ce-briefing-toggle">Show all ranked stories (${items.length})</button>
+      </p>`
+      : "";
     return `
     ${freshNote}
-    <p class="ce-window">Covering ${fmtRange(payload.windowStart, payload.windowEnd)} · ${
-      items.length
-    } stories · ${rankedBy} Main people are in <strong>bold</strong>.</p>
+    <p class="ce-window">Covering ${fmtRange(payload.windowStart, payload.windowEnd)} · Top ${
+      featured.length
+    } of ${items.length} stories · ${rankedBy} Main people are in <strong>bold</strong>.</p>
     ${filters}
-    ${briefingListHtml(items)}`;
+    ${briefingListHtml(featured, 0)}
+    ${archive}`;
   }
   const payload = ce.data[ce.tab];
   if (!payload) return `<p class="error">No data for this section yet.</p>`;
@@ -553,7 +572,7 @@ function speechPanelHtml() {
     ce.mode === "netflix"
       ? "Hear upcoming Netflix originals, newest first."
       : ce.tab === "briefing"
-      ? "Hear the briefing, heaviest stories first."
+      ? "Hear the top briefing stories, heaviest coverage first."
       : `Hear the ${tabLabel} feed like a news brief, newest first.`;
   return `
     <section class="speech-panel ce-speech" aria-label="Read aloud">
@@ -618,7 +637,7 @@ function render() {
         <p class="lede">${
           ce.mode === "netflix"
             ? "Upcoming Netflix originals. Filter by shows or movies."
-            : "Sports and entertainment headlines update every few hours. On Tuesday, Copilot ranks those stories from the last three weeks into a briefing."
+            : "Sports and entertainment headlines update every few hours. On Tuesday, the last three weeks are clustered into a briefing; Copilot rewrites the top stories."
         }</p>
       </div>
       <div class="ce-refresh-wrap">
@@ -672,13 +691,21 @@ function render() {
       if (btn.dataset.bfilter) {
         ce.briefingFilter = btn.dataset.bfilter;
         ce.briefingSportFilter = "all";
+        ce.briefingShowAll = false;
       }
       if (btn.dataset.bsfilter) {
         ce.briefingFilter = "sports";
         ce.briefingSportFilter = btn.dataset.bsfilter;
+        ce.briefingShowAll = false;
       }
       render();
     });
+  });
+
+  document.getElementById("ce-briefing-toggle")?.addEventListener("click", () => {
+    stopPlayback();
+    ce.briefingShowAll = !ce.briefingShowAll;
+    render();
   });
 
   document.getElementById("ce-refresh")?.addEventListener("click", refreshData);
@@ -775,7 +802,12 @@ function stopPlayback() {
 function bindSpeechControls() {
   document.getElementById("ce-listen")?.addEventListener("click", () => {
     unlockSpeech();
-    playItems(activeItems().map((_, i) => i));
+    const items = activeItems();
+    const n =
+      ce.tab === "briefing" && !ce.briefingShowAll
+        ? Math.min(BRIEFING_FEATURED, items.length)
+        : items.length;
+    playItems(items.slice(0, n).map((_, i) => i));
   });
   document.getElementById("ce-stop")?.addEventListener("click", stopPlayback);
   document.getElementById("ce-voice-select")?.addEventListener("change", (e) => {

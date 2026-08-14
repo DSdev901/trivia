@@ -91,4 +91,4 @@ const payload = {
 };
 
 await writeFile(FILE, `${JSON.stringify(payload, null, 2)}\n`);
-console.log(`  [briefing] validated ${items.length} Copilot-ranked stories`);
+console.log(`  [briefing] validated ${items.length} stories`);

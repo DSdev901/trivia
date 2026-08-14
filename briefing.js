@@ -1,5 +1,8 @@
 /** Rank current-events headlines by story weight and pick the people to bold. */
 
+/** Top of the ranked list shown as the briefing; Haiku rewrites these. */
+export const BRIEFING_FEATURED = 40;
+
 const MONTHS = new Set([
   "January", "February", "March", "April", "May", "June", "July",
   "August", "September", "October", "November", "December", "Jan", "Feb",
@@ -746,11 +749,30 @@ function mentionCount(group, name) {
   return n;
 }
 
+function clusterAngles(ranked, bestHeadline) {
+  if (ranked.length < 2) return [];
+  const seen = [bestHeadline];
+  const angles = [];
+  for (const item of ranked) {
+    const headline = String(item.headline || "").trim();
+    if (!headline) continue;
+    if (seen.some((s) => sentenceOverlap(s, headline) >= 0.5)) continue;
+    seen.push(headline);
+    const fact = firstSentences(item.summary).find((s) => !isJunkFact(s)) || "";
+    const row = { headline };
+    if (fact && sentenceOverlap(headline, fact) < 0.55) row.fact = fact;
+    angles.push(row);
+    if (angles.length >= 5) break;
+  }
+  return angles;
+}
+
 function mergeGroup(group) {
   const ranked = [...group].sort(
     (a, b) => b.score - a.score || (b.date || "").localeCompare(a.date || "")
   );
   const best = ranked[0];
+  const angles = clusterAngles(ranked, best.headline);
   const people = [];
   const seen = new Set();
   for (const item of ranked) {
@@ -793,6 +815,7 @@ function mergeGroup(group) {
     people: who.slice(0, 3),
     coverage,
     score: best.score + Math.min(80, (coverage - 1) * 14),
+    ...(angles.length ? { angles } : {}),
   };
 }
 

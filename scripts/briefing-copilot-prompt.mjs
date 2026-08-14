@@ -30,13 +30,19 @@ const input = {
   windowEnd: data.windowEnd || "",
   offset,
   total: all.length,
-  items: slice.map((item) => ({
-    headline: item.headline,
-    people: item.people || [],
-    summary: item.summary,
-    section: item.section,
-    tag: item.tag,
-  })),
+  items: slice.map((item) => {
+    const row = {
+      headline: item.headline,
+      people: item.people || [],
+      summary: item.summary,
+      section: item.section,
+      tag: item.tag,
+    };
+    if (Array.isArray(item.angles) && item.angles.length) {
+      row.angles = item.angles;
+    }
+    return row;
+  }),
 };
 
 process.stdout.write(
