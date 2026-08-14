@@ -488,12 +488,44 @@ function mainlandForEl(el) {
 }
 
 /** Skip specks (Prince Edward Islands, etc.) that inflate a country's bbox. */
-function compactMainlandForEl(el) {
+function compactMainlandForEl(el, core = null) {
   const parts = elementParts(el);
   if (!parts.length) return null;
   const maxA = Math.max(...parts.map((p) => p.area));
   const kept = parts.filter((p) => p.area >= maxA * 0.02);
-  return clusterParts(kept.length ? kept : parts)[0] || null;
+  const clusters = clusterParts(kept.length ? kept : parts);
+  if (!clusters.length) return null;
+  if (!core || clusters.length === 1) return clusters[0];
+  let nearest = clusters[0];
+  let nearestD = Infinity;
+  for (const c of clusters) {
+    const d = Math.hypot(c.cx - core.x, c.cy - core.y);
+    if (d < nearestD) {
+      nearestD = d;
+      nearest = c;
+    }
+  }
+  const largest = clusters[0];
+  const far = Math.hypot(largest.cx - core.x, largest.cy - core.y);
+  if (far > Math.max(nearestD * 1.8, 70)) return nearest;
+  return largest;
+}
+
+function clipWideBox(box, core, mapW) {
+  if (!box || !core || !mapW) return box;
+  const w = box.maxX - box.minX;
+  if (w < mapW * 0.18) return box;
+  const reach = mapW * 0.14;
+  const minX = Math.max(box.minX, core.x - reach);
+  const maxX = Math.min(box.maxX, core.x + reach);
+  if (maxX - minX < 8) return box;
+  return {
+    ...box,
+    minX,
+    maxX,
+    cx: (minX + maxX) / 2,
+    area: (maxX - minX) * Math.max(0, box.maxY - box.minY),
+  };
 }
 
 function regionsForId(host, id) {
@@ -732,7 +764,7 @@ function quizBoundsForIds(host, ids, { mapW, mapH, core, coreOnly = false } = {}
   const boxes = [];
   for (const id of ids) {
     regionsForId(host, id).forEach((el) => {
-      const m = compactMainlandForEl(el);
+      const m = compactMainlandForEl(el, core);
       if (!m) return;
       let { minX, minY, maxX, maxY, cx, cy, area } = m;
       const dx = core ? unwrapDx(cx, core.x, mapW || 1000) : 0;
@@ -741,7 +773,9 @@ function quizBoundsForIds(host, ids, { mapW, mapH, core, coreOnly = false } = {}
         maxX += dx;
         cx += dx;
       }
-      boxes.push({ minX, minY, maxX, maxY, cx, cy, area });
+      let box = { minX, minY, maxX, maxY, cx, cy, area };
+      if (coreOnly) box = clipWideBox(box, core, mapW);
+      boxes.push(box);
     });
   }
   const used = coreOnly ? coreLandBoxes(boxes) : boxes;
@@ -764,6 +798,8 @@ function coreLandBoxes(boxes) {
   const mad =
     [...dists].sort((a, b) => a - b)[Math.floor(dists.length / 2)] || 1;
   const kept = boxes.filter((b, i) => {
+    const huge = (b.area || 0) >= maxA * 0.25;
+    if (huge && dists[i] > mad * 1.7) return false;
     if ((b.area || 0) >= maxA * 0.04) return true;
     return dists[i] <= mad * 1.7;
   });
