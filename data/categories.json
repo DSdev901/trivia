@@ -3,8 +3,14 @@
     {
       "id": "current-events",
       "name": "Current Events",
-      "description": "Sports and entertainment headlines update every few hours. On Tuesday, Copilot ranks the last three weeks into a briefing. Netflix originals have their own tab.",
+      "description": "Sports and entertainment headlines update every few hours. On Tuesday, Copilot ranks the last three weeks into a briefing.",
       "type": "current-events"
+    },
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "description": "Upcoming Netflix originals — shows and movies, with posters and who is in them.",
+      "type": "netflix"
     },
     {
       "id": "presidents",

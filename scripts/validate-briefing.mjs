@@ -83,7 +83,7 @@ if (items.length < 10) {
 const payload = {
   section: "briefing",
   source: "copilot-auto",
-  model: "claude-haiku-4.5",
+  model: process.env.COPILOT_MODEL || data.model || "claude-haiku-4.5",
   generatedAt: data.generatedAt || new Date().toISOString(),
   windowStart: data.windowStart || "",
   windowEnd: data.windowEnd || "",

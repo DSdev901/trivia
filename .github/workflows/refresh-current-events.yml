@@ -42,25 +42,41 @@ jobs:
       - name: Refresh current events data
         run: node scripts/refresh-current-events.mjs
 
-      - name: Rank Tuesday briefing with Copilot (Haiku)
+      # Optional repo secret COPILOT_BILLING_TOKEN: fine-grained PAT with
+      # user permission Plan: read. Without it, remaining credits are
+      # unknown and Copilot rewrites the top 50 with Haiku.
+      - name: Size Copilot briefing pass
+        id: briefing_budget
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COPILOT_BILLING_TOKEN: ${{ secrets.COPILOT_BILLING_TOKEN }}
+          COPILOT_BILLING_USER: DSdev901
+          COPILOT_MONTHLY_CREDITS: "1500"
+          BRIEFING_MODEL_FULL: claude-haiku-4.5
+          BRIEFING_MODEL_LOW: gemini-3.6-flash
+        run: |
+          cp data/current-events/briefing.json /tmp/briefing.fallback.json
+          node scripts/briefing-copilot-budget.mjs
+          cp data/current-events/briefing.json /tmp/briefing.input.json
+
+      - name: Rank Tuesday briefing with Copilot
+        if: steps.briefing_budget.outputs.skip != 'true'
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COPILOT_MODEL: claude-haiku-4.5
+          COPILOT_MODEL: ${{ steps.briefing_budget.outputs.model }}
         run: |
           npm install -g @github/copilot
-          cp data/current-events/briefing.json /tmp/briefing.fallback.json
-          node scripts/slim-briefing.mjs 50
-          cp data/current-events/briefing.json /tmp/briefing.slim.json
+          echo "Copilot mode=${{ steps.briefing_budget.outputs.mode }} model=${COPILOT_MODEL} keep=${{ steps.briefing_budget.outputs.keep }} max_credits=${{ steps.briefing_budget.outputs.max_credits }} remaining=${{ steps.briefing_budget.outputs.remaining }}"
           copilot -p "$(cat scripts/briefing-prompt.md)" \
-            --model=claude-haiku-4.5 \
+            --model="${COPILOT_MODEL}" \
             --no-ask-user \
             --add-dir=data/current-events \
             --allow-tool='write(data/current-events/briefing.json)' \
             --allow-all-paths \
             --deny-tool=shell \
-            --max-ai-credits=250
-          if cmp -s data/current-events/briefing.json /tmp/briefing.slim.json; then
+            --max-ai-credits="${{ steps.briefing_budget.outputs.max_credits }}"
+          if cmp -s data/current-events/briefing.json /tmp/briefing.input.json; then
             echo "Copilot did not rewrite the briefing — keeping full heuristic ranking."
             cp /tmp/briefing.fallback.json data/current-events/briefing.json
           elif ! node scripts/validate-briefing.mjs; then

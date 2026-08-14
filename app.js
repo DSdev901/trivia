@@ -125,7 +125,10 @@ async function loadBatch(category, batchNumber) {
 
 function categoryMetaLabel(category) {
   if (category?.type === "current-events") {
-    return "briefing · 3 feeds";
+    return "briefing · sports · entertainment";
+  }
+  if (category?.type === "netflix") {
+    return "shows · movies";
   }
   if (category?.type === "periodic-table") {
     return "118 elements · tours & quiz";
@@ -167,7 +170,12 @@ function openCategory(id) {
   state.lastResult = null;
   els.subtitle.textContent = category.name;
   if (category.type === "current-events") {
-    renderCurrentEvents({ els });
+    renderCurrentEvents({ els, mode: "news" });
+    show("currentEvents");
+    return;
+  }
+  if (category.type === "netflix") {
+    renderCurrentEvents({ els, mode: "netflix" });
     show("currentEvents");
     return;
   }

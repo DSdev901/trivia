@@ -2,7 +2,7 @@ Read ONLY this file:
 
 - data/current-events/briefing.json
 
-It is already clustered and ranked (highest coverage first). It has about 50 items.
+It is already clustered and ranked (highest coverage first). Rewrite every item in that file.
 
 Overwrite ONLY this file:
 
@@ -18,7 +18,7 @@ Write valid JSON (no markdown fences) with this shape:
 {
   "section": "briefing",
   "source": "copilot-auto",
-  "model": "claude-haiku-4.5",
+  "model": "<the model name you were started with>",
   "generatedAt": "<ISO timestamp>",
   "windowStart": "<YYYY-MM-DD from the input file>",
   "windowEnd": "<YYYY-MM-DD from the input file>",

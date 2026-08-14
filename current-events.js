@@ -1,4 +1,4 @@
-/** Current Events section — browsable Netflix / Sports / Entertainment feeds. */
+/** Current Events and Netflix category views. */
 
 import {
   getDefaultBrowserVoiceUri,
@@ -17,13 +17,20 @@ import {
 import { isLocalHost } from "./env.js";
 import { buildBriefing, highlightPeople } from "./briefing.js";
 
-const SECTIONS = [
-  { id: "netflix", label: "Netflix", path: "data/current-events/netflix.json" },
+const NEWS_SECTIONS = [
   { id: "sports", label: "Sports", path: "data/current-events/sports.json" },
   { id: "entertainment", label: "Entertainment", path: "data/current-events/entertainment.json" },
 ];
+const NETFLIX_SECTION = {
+  id: "netflix",
+  label: "Netflix",
+  path: "data/current-events/netflix.json",
+};
 
-const TABS = [{ id: "briefing", label: "Briefing" }, ...SECTIONS];
+function visibleTabs() {
+  if (ce.mode === "netflix") return [];
+  return [{ id: "briefing", label: "Briefing" }, ...NEWS_SECTIONS];
+}
 const BRIEFING_FILTERS = [
   { id: "all", label: "All" },
   { id: "sports", label: "Sports" },
@@ -33,6 +40,7 @@ const BRIEFING_FILTERS = [
 const ce = {
   data: {}, // sectionId -> payload
   briefing: null,
+  mode: "news", // "news" | "netflix"
   tab: "briefing",
   briefingFilter: "all", // "all" | "sports" | "entertainment"
   briefingSportFilter: "all", // "all" | sport tag e.g. "NFL"
@@ -179,11 +187,15 @@ async function fetchSection(section, bust) {
   return res.json();
 }
 
-async function loadAll(bust = false) {
+async function loadForMode(bust = false) {
+  if (ce.mode === "netflix") {
+    ce.data.netflix = await fetchSection(NETFLIX_SECTION, bust);
+    return;
+  }
   const entries = await Promise.all(
-    SECTIONS.map(async (s) => [s.id, await fetchSection(s, bust)])
+    NEWS_SECTIONS.map(async (s) => [s.id, await fetchSection(s, bust)])
   );
-  ce.data = Object.fromEntries(entries);
+  Object.assign(ce.data, Object.fromEntries(entries));
   try {
     const briefingSection = {
       id: "briefing",
@@ -196,7 +208,8 @@ async function loadAll(bust = false) {
 }
 
 function latestGeneratedAt() {
-  return [ce.briefing?.generatedAt, ...Object.values(ce.data).map((d) => d?.generatedAt)]
+  if (ce.mode === "netflix") return ce.data.netflix?.generatedAt || "";
+  return [ce.briefing?.generatedAt, ce.data.sports?.generatedAt, ce.data.entertainment?.generatedAt]
     .filter(Boolean)
     .sort()
     .pop();
@@ -303,7 +316,11 @@ function storyCard(item, idx) {
 }
 
 function sectionLabel(id) {
-  return TABS.find((t) => t.id === id)?.label || id;
+  if (id === "sports") return "Sports";
+  if (id === "entertainment") return "Entertainment";
+  if (id === "briefing") return "Briefing";
+  if (id === "netflix") return "Netflix";
+  return id;
 }
 
 function briefingCard(item, idx) {
@@ -529,9 +546,13 @@ function speechPanelHtml() {
   const savedRate = getSavedRate();
   const savedUri = getSavedVoiceUri();
   const tabLabel =
-    TABS.find((s) => s.id === ce.tab)?.label || "";
+    ce.mode === "netflix"
+      ? "Netflix"
+      : visibleTabs().find((s) => s.id === ce.tab)?.label || "";
   const listenHint =
-    ce.tab === "briefing"
+    ce.mode === "netflix"
+      ? "Hear upcoming Netflix originals, newest first."
+      : ce.tab === "briefing"
       ? "Hear the briefing, heaviest stories first."
       : `Hear the ${tabLabel} feed like a news brief, newest first.`;
   return `
@@ -593,10 +614,12 @@ function render() {
   ce.root.innerHTML = `
     <div class="ce-head">
       <div>
-        <h2 class="section-title">Current Events</h2>
-        <p class="lede">Sports and entertainment headlines update every few hours.
-        On Tuesday, Copilot ranks those stories from the last three weeks into a briefing.
-        Netflix has its own tab.</p>
+        <h2 class="section-title">${ce.mode === "netflix" ? "Netflix" : "Current Events"}</h2>
+        <p class="lede">${
+          ce.mode === "netflix"
+            ? "Upcoming Netflix originals. Filter by shows or movies."
+            : "Sports and entertainment headlines update every few hours. On Tuesday, Copilot ranks those stories from the last three weeks into a briefing."
+        }</p>
       </div>
       <div class="ce-refresh-wrap">
         ${updated ? `<span class="ce-updated">Updated ${timeAgo(updated)}</span>` : ""}
@@ -612,17 +635,23 @@ function render() {
     </div>
     ${ce.notice ? `<p class="ce-notice">${escapeHtml(ce.notice)}</p>` : ""}
     ${speechPanelHtml()}
-    <div class="ce-tabs" role="tablist">
-      ${TABS.map(
-        (s) => `
+    ${
+      ce.mode === "netflix"
+        ? ""
+        : `<div class="ce-tabs" role="tablist">
+      ${visibleTabs()
+        .map(
+          (s) => `
         <button type="button" role="tab" class="ce-tab ${s.id === ce.tab ? "is-active" : ""}"
           data-tab="${s.id}" aria-selected="${s.id === ce.tab}">${s.label}${
             s.id === "briefing" && briefingIsNew()
               ? `<span class="ce-tab-new">New</span>`
               : ""
           }</button>`
-      ).join("")}
-    </div>
+        )
+        .join("")}
+    </div>`
+    }
     <div class="ce-body">${renderBody()}</div>
   `;
 
@@ -778,14 +807,15 @@ async function refreshData() {
     if (!res.ok) throw new Error("no live endpoint");
     const payload = await res.json();
     ce.data = {
-      netflix: payload.netflix,
-      sports: payload.sports,
-      entertainment: payload.entertainment,
+      ...ce.data,
+      netflix: payload.netflix ?? ce.data.netflix,
+      sports: payload.sports ?? ce.data.sports,
+      entertainment: payload.entertainment ?? ce.data.entertainment,
     };
     ce.briefing = payload.briefing || ce.briefing;
     ce.notice = "Live data pulled just now.";
   } catch {
-    await loadAll(true);
+    await loadForMode(true);
     ce.notice =
       "Showing the latest saved data. For a live refresh, serve the app with: node scripts/serve.mjs (or run ./refresh-current-events.command first).";
   } finally {
@@ -796,15 +826,20 @@ async function refreshData() {
 
 /* ---------------- entry ---------------- */
 
-export async function renderCurrentEvents({ els }) {
+export async function renderCurrentEvents({ els, mode = "news" }) {
   ce.root = els.currentEvents;
-  ce.tab = "briefing";
+  ce.mode = mode === "netflix" ? "netflix" : "news";
+  ce.tab = ce.mode === "netflix" ? "netflix" : "briefing";
   ce.notice = "";
   ce.canSpeak = speechSupported();
-  if (!Object.keys(ce.data).length) {
-    ce.root.innerHTML = `<p class="lede">Loading current events…</p>`;
+  const needsLoad =
+    ce.mode === "netflix" ? !ce.data.netflix : !ce.data.sports || !ce.data.entertainment;
+  if (needsLoad) {
+    ce.root.innerHTML = `<p class="lede">${
+      ce.mode === "netflix" ? "Loading Netflix…" : "Loading current events…"
+    }</p>`;
     try {
-      await loadAll();
+      await loadForMode();
     } catch (err) {
       ce.root.innerHTML = `<p class="error">${escapeHtml(err.message)}</p>`;
       return;
