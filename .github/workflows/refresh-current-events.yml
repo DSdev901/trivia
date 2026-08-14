@@ -66,18 +66,24 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COPILOT_MODEL: ${{ steps.briefing_budget.outputs.model }}
         run: |
+          set -o pipefail
           npm install -g @github/copilot
           echo "Copilot mode=${{ steps.briefing_budget.outputs.mode }} model=${COPILOT_MODEL} keep=${{ steps.briefing_budget.outputs.keep }} max_credits=${{ steps.briefing_budget.outputs.max_credits }} remaining=${{ steps.briefing_budget.outputs.remaining }}"
-          copilot -p "$(cat scripts/briefing-prompt.md)" \
+          node scripts/briefing-copilot-prompt.mjs > /tmp/briefing.prompt.txt
+          # Prompt is piped on stdin so JSON quotes are not eaten by the shell.
+          # Create/edit tools are excluded: Haiku was calling them without path.
+          cat /tmp/briefing.prompt.txt | copilot \
             --model="${COPILOT_MODEL}" \
+            -s \
             --no-ask-user \
-            --add-dir=data/current-events \
-            --allow-tool='write(data/current-events/briefing.json)' \
-            --allow-all-paths \
+            --available-tools=view \
+            --excluded-tools=create,edit,apply_patch,bash,powershell \
+            --deny-tool=write \
             --deny-tool=shell \
-            --max-ai-credits="${{ steps.briefing_budget.outputs.max_credits }}"
-          if cmp -s data/current-events/briefing.json /tmp/briefing.input.json; then
-            echo "Copilot did not rewrite the briefing — keeping full heuristic ranking."
+            --max-ai-credits="${{ steps.briefing_budget.outputs.max_credits }}" \
+            | tee /tmp/briefing.copilot.txt
+          if ! node scripts/apply-briefing-rewrite.mjs /tmp/briefing.copilot.txt /tmp/briefing.input.json; then
+            echo "Copilot rewrite was unusable — keeping full heuristic ranking."
             cp /tmp/briefing.fallback.json data/current-events/briefing.json
           elif ! node scripts/validate-briefing.mjs; then
             echo "Copilot briefing was invalid — keeping full heuristic ranking."
