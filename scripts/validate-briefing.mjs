@@ -43,6 +43,7 @@ for (const row of data.items) {
     tag: String(row.tag || row.sport || row.type || section).trim(),
     date: String(row.date || "").slice(0, 10),
     url: String(row.url || "").trim(),
+    coverage: Math.max(1, Number(row.coverage) || 1),
   });
 }
 

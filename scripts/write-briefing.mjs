@@ -45,6 +45,7 @@ export async function writeBriefingFile({
       tag: item.tag,
       date: item.date,
       url: item.url || "",
+      coverage: item.coverage || 1,
     })),
   };
   await writeFile(OUT, `${JSON.stringify(payload, null, 2)}\n`);

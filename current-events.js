@@ -296,12 +296,18 @@ function sectionLabel(id) {
 
 function briefingCard(item, idx) {
   const people = item.people || [];
+  const coverage = Number(item.coverage) || 1;
   return `
     <article class="ce-card ce-story-card" data-idx="${idx}">
       <div class="ce-meta">
         <span class="ce-rank" aria-label="Rank ${idx + 1}">${idx + 1}</span>
         <span class="ce-badge">${escapeHtml(sectionLabel(item.section))}</span>
         <span class="ce-badge ce-badge-alt">${escapeHtml(item.tag || "News")}</span>
+        ${
+          coverage > 1
+            ? `<span class="ce-badge ce-badge-top">Mentioned ${coverage}×</span>`
+            : ""
+        }
         <span class="ce-date">${fmtDate(item.date)}</span>
         ${
           ce.canSpeak
@@ -393,8 +399,8 @@ function renderBody() {
     const items = briefingItems();
     const rankedBy =
       payload.source === "copilot-auto"
-        ? "Ranked by GitHub Copilot (Claude Haiku), heaviest stories first."
-        : "Ranked by story weight, heaviest first. Copilot will rewrite this on the next Tuesday refresh.";
+        ? "Related coverage is combined and ranked by how often a story was mentioned, then by weight. Copilot (Claude Haiku)."
+        : "Related coverage is combined. Stories mentioned most rank first. Copilot will rewrite this on Tuesday.";
     const freshNote = briefingIsNew()
       ? `<p class="ce-briefing-new">New Tuesday briefing — last three weeks of sports and entertainment.</p>`
       : "";

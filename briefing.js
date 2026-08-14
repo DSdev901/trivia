@@ -105,6 +105,8 @@ const TEAMS = new Set([
   "Trojans", "Ducks", "Nittany", "Seminoles", "Gators", "Volunteers",
   "Bulldogs", "Wildcats", "Jayhawks", "Hoosiers", "Illini", "Hawkeyes",
   "Spartans", "Badgers", "Boilermakers", "Cornhuskers", "Tigers",
+  "Aces", "Mystics", "Lynx", "Mercury", "Sparks", "Fever", "Liberty",
+  "Storm", "Dream", "Valkyries", "Wings",
 ]);
 
 /** Lowercase words that are almost never a surname in a headline. */
@@ -419,18 +421,403 @@ function storyWeight(item, now = Date.now()) {
   return score;
 }
 
-function contentTokens(headline) {
-  return String(headline || "")
+const CLUSTER_STOP = new Set([
+  "the", "and", "for", "with", "from", "that", "this", "have", "been", "into",
+  "after", "before", "over", "under", "about", "amid", "says", "said", "will",
+  "could", "would", "their", "they", "them", "his", "her", "its", "who", "what",
+  "when", "where", "how", "why", "not", "but", "are", "was", "were", "has",
+  "had", "offseason", "recap", "preview", "rumors", "rumour", "news", "latest",
+  "source", "sources", "report", "update", "updates", "tracker", "highlights",
+  "standouts", "questions", "betting", "odds", "early", "season", "schedule",
+  "week", "vs", "win", "won", "beat", "beats", "loss", "game", "games",
+  "points", "point", "yards", "innings", "thursday", "wednesday", "tuesday",
+  "monday", "friday", "saturday", "sunday", "night", "day", "look", "looks",
+  "take", "hold", "lead", "leads", "behind", "against", "first", "second",
+  "third", "hosts", "visits", "faces", "showing", "performance", "streak",
+  "skid", "victory", "rout", "past", "than", "wore", "wear", "dress", "trend",
+  "reveals", "reveal", "responds", "respond", "another", "like", "home",
+  "still", "just", "more", "most", "very", "says",
+]);
+
+function clusterTokens(text) {
+  return String(text || "")
     .toLowerCase()
     .replace(/[^a-z0-9 ]/g, " ")
     .split(/\s+/)
-    .filter((w) => w.length > 2 && !WORD_BLOCK.has(w[0].toUpperCase() + w.slice(1)));
+    .filter((w) => w.length > 2 && !CLUSTER_STOP.has(w));
 }
 
-function clusterKey(item) {
-  const people = (item.people || []).map((p) => p.toLowerCase()).sort().join("|");
-  if (people) return `p:${people}`;
-  return `h:${contentTokens(item.headline).slice(0, 6).join(" ")}`;
+function tokenSet(item) {
+  return new Set(clusterTokens(item.headline));
+}
+
+function sharedCount(a, b) {
+  let n = 0;
+  for (const w of a) if (b.has(w)) n += 1;
+  return n;
+}
+
+function notablePeopleOverlap(a, b) {
+  for (const x of a.people || []) {
+    const xl = x.toLowerCase();
+    const lastX = lastName(xl);
+    for (const y of b.people || []) {
+      const yl = y.toLowerCase();
+      if (xl === yl) return true;
+      // "Lionel Messi" vs "Messi" — not "Josh Lucas" vs "Jai Lucas"
+      if (lastX === yl || lastName(yl) === xl) return true;
+    }
+  }
+  return false;
+}
+
+function urlKey(url) {
+  const u = String(url || "").split("#")[0];
+  if (!u) return "";
+  const espn = u.match(/\/id\/(\d+)/);
+  if (espn) return `espn:${espn[1]}`;
+  const gameId = u.match(/[?&]gameId=(\d+)/i);
+  if (gameId) return `game:${gameId[1]}`;
+  const path = u.replace(/\?.*$/, "").replace(/\/$/, "");
+  const slug = path.split("/").pop() || "";
+  if (slug.length > 24) return `slug:${slug.replace(/-\d{6,}.*$/, "")}`;
+  return u.toLowerCase().replace(/\/$/, "");
+}
+
+function gameIdOf(url) {
+  const m = String(url || "").match(/[?&]gameId=(\d+)/i);
+  return m ? m[1] : "";
+}
+
+function isPreviewTemplate(headline) {
+  return (
+    /\bleads\b.+\b(against|into)\b/i.test(headline) ||
+    /\b(hosts|visits|faces|takes on|plays|play the)\b.+\b(after|following|against|matchup|streak|skid)\b/i.test(
+      headline
+    )
+  );
+}
+
+const TEAM_RE = new RegExp(
+  `\\b(${[...TEAMS]
+    .map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+    .sort((a, b) => b.length - a.length)
+    .join("|")})\\b`,
+  "gi"
+);
+
+function headlineTeams(item) {
+  const found = new Set();
+  const text = item.headline || "";
+  TEAM_RE.lastIndex = 0;
+  let m;
+  while ((m = TEAM_RE.exec(text))) found.add(m[1].toLowerCase());
+  return [...found].sort();
+}
+
+function scorePair(headline) {
+  const m = String(headline || "").match(/(\d+)\s*[-–]\s*(\d+)/);
+  if (!m) return "";
+  const x = Number(m[1]);
+  const y = Number(m[2]);
+  if (x > 200 || y > 200) return "";
+  return [Math.min(x, y), Math.max(x, y)].join("-");
+}
+
+function teamsScoreKey(item) {
+  if (!item._teams || item._teams.length < 2) return "";
+  if (item._scorePair) return `${item._teams.join("|")}|${item._scorePair}`;
+  if (item.date) return `${item._teams.join("|")}|${item.date}`;
+  return "";
+}
+
+function extraShared(a, b) {
+  const nameParts = new Set();
+  for (const n of [...(a.people || []), ...(b.people || [])]) {
+    for (const w of clusterTokens(n)) nameParts.add(w);
+  }
+  let n = 0;
+  for (const w of a._tokens) {
+    if (b._tokens.has(w) && !nameParts.has(w)) n += 1;
+  }
+  return n;
+}
+
+function titleHints(item) {
+  const quotes = new Set();
+  const topics = new Set();
+  const t = String(item.headline || "").toLowerCase();
+  if (/spider-?man/.test(t) && !/wolverine/.test(t) && !/odyssey/.test(t)) {
+    topics.add("spiderman");
+  }
+  for (const m of t.matchAll(/[‘'“"]([^'”"]{8,70})[’'”"]/g)) {
+    const key = m[1].replace(/[^a-z0-9]+/g, " ").trim();
+    if (key.length >= 8) quotes.add(key);
+  }
+  return { quotes, topics };
+}
+
+function hintOverlap(a, b) {
+  for (const t of a._topics) if (b._topics.has(t)) return true;
+  if (a._quotes.size === 1 && b._quotes.size === 1) {
+    const [q] = a._quotes;
+    return b._quotes.has(q);
+  }
+  return false;
+}
+
+function sameEventPeople(a, b) {
+  const shared = sharedCount(a._tokens, b._tokens);
+  return notablePeopleOverlap(a, b) && extraShared(a, b) >= 1 && shared >= 3;
+}
+
+function dealKey(item) {
+  const t = `${item.headline} ${item.summary}`.toLowerCase();
+  if (!/\b(sold|sale|buy|purchase|deal)\b/.test(t)) return "";
+  if (!/\b\d+(?:\.\d+)?\s*(billion|million)\b/.test(t) && !/\$\d/.test(t)) {
+    return "";
+  }
+  const teams = headlineTeams({ headline: item.headline });
+  if (teams.length) return `deal:${teams.sort().join("|")}`;
+  return "";
+}
+
+function relatedStories(a, b) {
+  if (a._urlKey && a._urlKey === b._urlKey) return true;
+  if (a._gameId && a._gameId === b._gameId) return true;
+  if (a._dealKey && a._dealKey === b._dealKey) return true;
+
+  const teamKeyA = teamsScoreKey(a);
+  const teamKeyB = teamsScoreKey(b);
+  if (a._isGame || b._isGame) {
+    return Boolean(teamKeyA && teamKeyA === teamKeyB);
+  }
+
+  if (a.section !== b.section) {
+    return hintOverlap(a, b) || sameEventPeople(a, b);
+  }
+
+  if (hintOverlap(a, b)) return true;
+  if (sameEventPeople(a, b)) return true;
+  const shared = sharedCount(a._tokens, b._tokens);
+  const union = a._tokens.size + b._tokens.size - shared;
+  const jaccard = union ? shared / union : 0;
+  if (shared >= 4 && jaccard >= 0.38) return true;
+  if (shared >= 3 && jaccard >= 0.52) return true;
+  return false;
+}
+
+function prepareCluster(item) {
+  item._urlKey = urlKey(item.url);
+  item._gameId = gameIdOf(item.url);
+  item._teams = headlineTeams(item);
+  item._scorePair = scorePair(item.headline);
+  item._tokens = tokenSet(item);
+  const hints = titleHints(item);
+  item._quotes = hints.quotes;
+  item._topics = hints.topics;
+  item._dealKey = dealKey(item);
+  item._isGame = Boolean(
+    item._gameId ||
+      recapUrl(item.url) ||
+      RECAP_HEADLINE.test(item.headline) ||
+      isPreviewTemplate(item.headline)
+  );
+  return item;
+}
+
+function firstSentences(text) {
+  return String(text || "")
+    .replace(/\s+/g, " ")
+    .replace(/\[…\]\s*$/, "")
+    .split(/(?<=[.!?])\s+/)
+    .map((s) => s.trim())
+    .filter((s) => s.length > 28 && !/^reported by\b/i.test(s));
+}
+
+function sentenceOverlap(a, b) {
+  const ta = new Set(clusterTokens(a));
+  const tb = new Set(clusterTokens(b));
+  const shared = sharedCount(ta, tb);
+  const union = ta.size + tb.size - shared;
+  return union ? shared / union : 0;
+}
+
+function isJunkFact(s) {
+  return (
+    /\bis a (?:\d{4}|multi-purpose)\b/i.test(s) ||
+    /Awards Circuit section is the home/i.test(s) ||
+    /^Read this article on /i.test(s) ||
+    /\b(?:Cinematic Universe|\d+th film in the Marvel|superhero film reboot)\b/i.test(s) ||
+    /\([A-Z]{2,4}\) is\b/.test(s)
+  );
+}
+
+function memorableSummary(group) {
+  const ranked = [...group].sort((a, b) => b.score - a.score);
+  const headTok = new Set(clusterTokens(ranked[0].headline));
+  const facts = [];
+  const consider = [];
+  for (const item of ranked) {
+    const fromSum = firstSentences(item.summary).filter((s) => {
+      if (isJunkFact(s)) return false;
+      return sharedCount(headTok, new Set(clusterTokens(s))) >= 2;
+    });
+    if (fromSum.length) consider.push(...fromSum);
+    else if (item === ranked[0] || extraShared(item, ranked[0]) >= 2) {
+      consider.push(item.headline.replace(/[.!?]+$/, "") + ".");
+    }
+  }
+  for (const fact of consider) {
+    if (facts.some((f) => sentenceOverlap(f, fact) >= 0.5)) continue;
+    facts.push(fact);
+    if (facts.length >= 3) break;
+  }
+  let out = facts.join(" ").replace(/\s+/g, " ").trim();
+  if (out.length > 380) out = `${out.slice(0, 377).replace(/\s+\S*$/, "")}…`;
+  return out;
+}
+
+const NAME_TRAIL_JUNK = new Set([
+  "Says", "Said", "Hits", "Sets", "Goes", "Buy", "Sells", "Wins", "Reveals",
+  "Wore", "Doesn't", "Doesn", "Exclusive", "Commitment", "Predictions",
+  "Shares", "Share", "Actress", "Actor", "Fans", "Media", "Kingdom", "Track",
+  "Urge", "Fast", "Following", "Braless", "Magic", "Wonder",
+]);
+
+function looksLikePersonName(name) {
+  const parts = String(name || "")
+    .replace(/['\u2019]s$/i, "")
+    .split(/\s+/)
+    .map((p) => p.replace(/[.,]+$/g, ""))
+    .filter(Boolean);
+  if (!parts.length || parts.length > 3) return false;
+  if (parts.length === 1) return MONONYMS.has(parts[0]);
+  if (looksLikeTeamOrPlace(parts)) return false;
+  if (parts.some((p) => NAME_TRAIL_JUNK.has(p) || FIRST_BLOCK.has(p))) return false;
+  const last = parts[parts.length - 1];
+  if (/n['\u2019]t$/i.test(last)) return false;
+  if (
+    /\b(universe|everything|commitment|exclusive|predictions|circuit|taiwan|oscars?|emmys?|actress|actor|supporting)\b/i.test(
+      name
+    )
+  ) {
+    return false;
+  }
+  return parts.every(
+    (p) =>
+      PARTICLES.has(p.toLowerCase()) ||
+      SUFFIXES.has(p) ||
+      HONORIFICS.has(p.replace(/\.$/, "")) ||
+      isNameToken(p)
+  );
+}
+
+function namesAreSamePerson(a, b) {
+  const pa = a.toLowerCase().split(/\s+/);
+  const pb = b.toLowerCase().split(/\s+/);
+  if (pa[pa.length - 1] !== pb[pb.length - 1] && !(pa.length === 1 && pa[0] === pb[pb.length - 1]) && !(pb.length === 1 && pb[0] === pa[pa.length - 1])) {
+    return false;
+  }
+  if (pa.length === 1 || pb.length === 1) return pa[pa.length - 1] === pb[pb.length - 1] || pa[0] === pb[pb.length - 1] || pb[0] === pa[pa.length - 1];
+  const fa = pa[0];
+  const fb = pb[0];
+  return fa === fb || fa.startsWith(fb) || fb.startsWith(fa);
+}
+
+function dedupePeople(people) {
+  const ranked = [...people].sort((a, b) => b.length - a.length);
+  const out = [];
+  for (const name of ranked) {
+    if (out.some((p) => namesAreSamePerson(p, name))) continue;
+    out.push(name);
+  }
+  return out;
+}
+
+function mentionCount(group, name) {
+  const key = name.toLowerCase();
+  const last = lastName(key);
+  let n = 0;
+  for (const item of group) {
+    const blob = `${item.headline} ${item.summary}`.toLowerCase();
+    if (blob.includes(key) || (last.length > 3 && blob.includes(last))) n += 1;
+  }
+  return n;
+}
+
+function mergeGroup(group) {
+  const ranked = [...group].sort(
+    (a, b) => b.score - a.score || (b.date || "").localeCompare(a.date || "")
+  );
+  const best = ranked[0];
+  const people = [];
+  const seen = new Set();
+  for (const item of ranked) {
+    for (const name of item.people || []) {
+      const cleaned = String(name).replace(/['\u2019]s$/i, "").trim();
+      if (!looksLikePersonName(cleaned)) continue;
+      const key = cleaned.toLowerCase();
+      if (seen.has(key)) continue;
+      seen.add(key);
+      people.push(cleaned);
+    }
+  }
+  const coverage = group.length;
+  const bestKeys = new Set(
+    (best.people || [])
+      .map((n) => n.replace(/['\u2019]s$/i, "").trim().toLowerCase())
+      .filter(Boolean)
+  );
+  const who = dedupePeople(people).sort((a, b) => {
+    const aBest = [...bestKeys].some((p) => p === a.toLowerCase() || namesAreSamePerson(p, a))
+      ? 1
+      : 0;
+    const bBest = [...bestKeys].some((p) => p === b.toLowerCase() || namesAreSamePerson(p, b))
+      ? 1
+      : 0;
+    if (bBest !== aBest) return bBest - aBest;
+    return mentionCount(ranked, b) - mentionCount(ranked, a) || b.length - a.length;
+  });
+  return {
+    section: best.section,
+    headline: best.headline,
+    summary: memorableSummary(ranked),
+    date: ranked.map((i) => i.date || "").sort().pop(),
+    url: best.url || "",
+    tag: best.tag,
+    top: best.top,
+    starring: best.starring,
+    image: best.image,
+    type: best.type,
+    people: who.slice(0, 3),
+    coverage,
+    score: best.score + Math.min(80, (coverage - 1) * 14),
+  };
+}
+
+function clusterStories(items) {
+  const n = items.length;
+  for (const item of items) prepareCluster(item);
+  const parent = Array.from({ length: n }, (_, i) => i);
+  const find = (i) => (parent[i] === i ? i : (parent[i] = find(parent[i])));
+  const unite = (a, b) => {
+    const ra = find(a);
+    const rb = find(b);
+    if (ra !== rb) parent[ra] = rb;
+  };
+  for (let i = 0; i < n; i++) {
+    for (let j = i + 1; j < n; j++) {
+      if (relatedStories(items[i], items[j])) unite(i, j);
+    }
+  }
+  const groups = new Map();
+  for (let i = 0; i < n; i++) {
+    const root = find(i);
+    if (!groups.has(root)) groups.set(root, []);
+    groups.get(root).push(items[i]);
+  }
+  return [...groups.values()].map(mergeGroup);
 }
 
 function normalizeItem(section, raw) {
@@ -463,34 +850,18 @@ function collectItems(data) {
   return out;
 }
 
-function applyClusterBoost(items) {
-  const groups = new Map();
-  items.forEach((item, idx) => {
-    const key = clusterKey(item);
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key).push(idx);
-  });
-  for (const idxs of groups.values()) {
-    if (idxs.length < 2) continue;
-    let best = idxs[0];
-    for (const i of idxs) {
-      if (items[i].score > items[best].score) best = i;
-    }
-    items[best].score += Math.min(24, (idxs.length - 1) * 8);
-    items[best].coverage = idxs.length;
-  }
-}
-
 /**
- * Rank every current-events headline. Heaviest stories first.
+ * Rank clustered current-events headlines. Related stories are merged;
+ * events mentioned in more outlets rank first.
  * `data` is { sports, entertainment } payloads from the JSON feeds.
  */
 export function buildBriefing(data, now = Date.now()) {
   const items = collectItems(data);
   for (const item of items) item.score = storyWeight(item, now);
-  applyClusterBoost(items);
-  items.sort(
+  const clustered = clusterStories(items);
+  clustered.sort(
     (a, b) =>
+      (b.coverage || 1) - (a.coverage || 1) ||
       b.score - a.score ||
       (b.date || "").localeCompare(a.date || "") ||
       a.headline.localeCompare(b.headline)
@@ -500,7 +871,7 @@ export function buildBriefing(data, now = Date.now()) {
     .map((d) => [d.windowStart, d.windowEnd]);
   const windowStart = windows.map((w) => w[0]).sort()[0] || "";
   const windowEnd = windows.map((w) => w[1]).sort().pop() || "";
-  return { windowStart, windowEnd, items };
+  return { windowStart, windowEnd, items: clustered };
 }
 
 export function highlightPeople(text, people) {
