@@ -1124,11 +1124,39 @@ body {
   color: var(--ink-soft);
 }
 
+.ce-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+}
+
+.ce-filters .ce-filter {
+  margin: 0;
+}
+
 .ce-filter {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
   margin: 0 0 1rem;
+}
+
+.ce-group {
+  margin: 0 0 1.35rem;
+}
+
+.ce-group:last-child {
+  margin-bottom: 0;
+}
+
+.ce-group-title {
+  margin: 0 0 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
 }
 
 .ce-filter-chip {
