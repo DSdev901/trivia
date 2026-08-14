@@ -10,8 +10,8 @@
  *   Netflix       — TVMaze web schedule (series that actually aired),
  *                   whats-on-netflix + Wikipedia originals lists for titles
  *                   and dates only, TMDB for plot / cast / poster.
- *                   Official TMDB API when TMDB_API_KEY is set; otherwise
- *                   the public TMDB pages.
+ *                   US vs outside-the-US chips match Netflix Tudum's
+ *                   US "New on Netflix" calendar (unknowns stay in All).
  *
  *   node scripts/refresh-current-events.mjs --netflix-images
  *     Backfill posters on the existing Netflix JSON without a full refresh.
@@ -407,6 +407,153 @@ function parseNetflixMonthly(html, year) {
   return items;
 }
 
+const TUDUM_SKIP_TITLE =
+  /^(coming soon|popular now|popular releases|remind me|new on netflix|latest news|adventure|date|genre|tv shows|movies|view by|more on\b|shop\b)/i;
+
+function parseTudumTitles(html) {
+  const titles = [];
+  const months = new Set();
+  const dateHeads = [];
+  for (const m of html.matchAll(/<h2[^>]*>([\s\S]{0,160}?)<\/h2>/gi)) {
+    const text = stripTags(m[1]).replace(/\s+/g, " ").trim();
+    const dm = text.match(
+      /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})$/i
+    );
+    if (!dm) continue;
+    const parsed = parseEnglishDate(`${dm[1]} ${dm[2]}, ${now.getFullYear()}`);
+    if (parsed) {
+      dateHeads.push(parsed);
+      months.add(parsed.slice(0, 7));
+    }
+  }
+  for (const m of html.matchAll(/<h3[^>]*>([\s\S]{0,200}?)<\/h3>/gi)) {
+    const title = stripTags(m[1]).replace(/\s+/g, " ").trim();
+    if (!title || title.length < 2 || title.length > 80) continue;
+    if (TUDUM_SKIP_TITLE.test(title)) continue;
+    titles.push(title);
+  }
+  return { titles, months, dateCount: dateHeads.length };
+}
+
+function usTitleMatch(itemTitle, listTitle) {
+  const a = titleCore(itemTitle);
+  const b = titleCore(listTitle);
+  if (!a || !b) return false;
+  if (a === b) return true;
+  if (a.length >= 10 && b.length >= 10 && (a.startsWith(b) || b.startsWith(a)))
+    return true;
+  return namesSimilar(itemTitle, listTitle);
+}
+
+function itemMatchesUsList(item, usTitles) {
+  const names = [item.title, ...(item.akas || [])].filter(Boolean);
+  for (const name of names) {
+    for (const listed of usTitles) {
+      if (usTitleMatch(name, listed)) return true;
+    }
+  }
+  return false;
+}
+
+async function fetchTudumHtml(url) {
+  return fetchText(url, 30000, UA);
+}
+
+async function fetchUsNetflixCatalog() {
+  const titles = [];
+  const coveredMonths = new Set();
+  const seen = new Set();
+  const addTitles = (list) => {
+    for (const raw of list || []) {
+      const t = String(raw || "").replace(/\s+/g, " ").trim();
+      const k = titleCore(t);
+      if (!k || seen.has(k)) continue;
+      seen.add(k);
+      titles.push(t);
+    }
+  };
+
+  try {
+    const html = await fetchTudumHtml(
+      "https://www.netflix.com/tudum/articles/new-on-netflix"
+    );
+    const parsed = parseTudumTitles(html);
+    addTitles(parsed.titles);
+    if (parsed.dateCount >= 8) {
+      for (const month of parsed.months) coveredMonths.add(month);
+    }
+    console.log(
+      `  [netflix] tudum monthly: ${parsed.titles.length} US titles` +
+        (parsed.dateCount >= 8 ? ` (covers ${[...parsed.months].join(", ")})` : "")
+    );
+  } catch (err) {
+    console.warn(`  [netflix] tudum monthly: ${err.message}`);
+  }
+
+  try {
+    const topics = await fetchTudumHtml(
+      "https://www.netflix.com/tudum/topics/new-on-netflix"
+    );
+    const links = [
+      ...new Set(
+        [
+          ...topics.matchAll(
+            /href="(\/tudum\/articles\/what-to-watch-on-netflix-[^"]+)"/gi
+          ),
+        ].map((m) => m[1])
+      ),
+    ];
+    const start = new Date(`${windowStart}T12:00:00Z`).getTime() - 8 * 86400000;
+    const end = new Date(`${windowEnd}T12:00:00Z`).getTime();
+    const weekUrls = [];
+    for (const href of links) {
+      const m = href.match(
+        /what-to-watch-on-netflix-([a-z]+)-(\d{1,2})-(\d{4})/i
+      );
+      if (!m) continue;
+      const month = MONTHS.indexOf(m[1].toLowerCase());
+      if (month < 0) continue;
+      const date = `${m[3]}-${String(month + 1).padStart(2, "0")}-${String(Number(m[2])).padStart(2, "0")}`;
+      const ts = Date.parse(`${date}T12:00:00Z`);
+      if (!Number.isFinite(ts) || ts < start || ts > end) continue;
+      weekUrls.push(`https://www.netflix.com${href.split("?")[0]}`);
+    }
+    for (const url of weekUrls.slice(0, 8)) {
+      try {
+        const html = await fetchTudumHtml(url);
+        addTitles(parseTudumTitles(html).titles);
+      } catch (err) {
+        console.warn(`  [netflix] tudum weekly ${url}: ${err.message}`);
+      }
+      await sleep(400);
+    }
+  } catch (err) {
+    console.warn(`  [netflix] tudum topics: ${err.message}`);
+  }
+
+  return { titles, coveredMonths };
+}
+
+function tagNetflixUs(items, catalog) {
+  const usTitles = catalog.titles || [];
+  const covered = catalog.coveredMonths || new Set();
+  let yes = 0;
+  let no = 0;
+  for (const item of items) {
+    if (itemMatchesUsList(item, usTitles)) {
+      item.inUS = true;
+      yes += 1;
+    } else if (covered.has(String(item.date || "").slice(0, 7))) {
+      item.inUS = false;
+      no += 1;
+    }
+  }
+  console.log(
+    `  [netflix] US catalog ${usTitles.length} titles; in US ${yes}, outside ${no}, unknown ${items.length - yes - no}`
+  );
+  return items;
+}
+
 function seriesTypeFromGenre(genre) {
   if (/docuseries/i.test(genre)) return "Docuseries";
   if (/documentary|true crime|sports/i.test(genre)) return "Documentary";
@@ -677,6 +824,8 @@ function publicNetflixItem(item) {
     starring: item.starring || [],
   };
   if (item.image) out.image = item.image;
+  if (item.inUS === true) out.inUS = true;
+  else if (item.inUS === false) out.inUS = false;
   return out;
 }
 
@@ -1357,6 +1506,7 @@ async function enrichNetflix(items) {
 
 async function buildNetflix() {
   let items = [];
+  const usCatalogPromise = fetchUsNetflixCatalog();
   // Primary: TVMaze episode schedule — every original that actually dropped
   // new episodes in the window, with synopsis + cast.
   try {
@@ -1437,6 +1587,7 @@ async function buildNetflix() {
   let merged = dedupeNetflix(items, false);
   merged = await enrichNetflix(merged);
   merged = dedupeNetflix(merged, true);
+  merged = tagNetflixUs(merged, await usCatalogPromise);
   const useful = merged.filter((i) => !isThinSynopsis(i.synopsis)).length;
   const withCast = merged.filter((i) => (i.starring || []).length > 0).length;
   console.log(

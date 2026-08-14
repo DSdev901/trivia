@@ -1,6 +1,6 @@
 {
   "section": "netflix",
-  "generatedAt": "2026-08-14T19:46:26.593Z",
+  "generatedAt": "2026-08-14T19:59:51.908Z",
   "windowStart": "2026-07-24",
   "windowEnd": "2026-08-14",
   "items": [
@@ -14,7 +14,8 @@
         "Tony Kgoroge",
         "Nqobile Khumalo"
       ],
-      "image": "data/current-events/posters/umthetho-859aebb6.jpg"
+      "image": "data/current-events/posters/umthetho-859aebb6.jpg",
+      "inUS": true
     },
     {
       "title": "Moria",
@@ -28,10 +29,11 @@
         "Moria Casán",
         "Marco Antonio Caponi"
       ],
-      "image": "data/current-events/posters/moria-cf20c385.jpg"
+      "image": "data/current-events/posters/moria-cf20c385.jpg",
+      "inUS": true
     },
     {
-      "title": "Don’t Say Good Luck",
+      "title": "Don't Say Good Luck",
       "type": "Film",
       "date": "2026-08-14",
       "synopsis": "Sophie Birenbaum is ready for the spotlight as the lead in her high school musical — until she's suddenly facing more drama at home than on the stage.",
@@ -43,7 +45,8 @@
         "Bebe Neuwirth",
         "Steve Buscemi"
       ],
-      "image": "data/current-events/posters/don-t-say-good-luck-d517b40d.jpg"
+      "image": "data/current-events/posters/don-t-say-good-luck-d517b40d.jpg",
+      "inUS": true
     },
     {
       "title": "My Best Friend, His Girlfriend and Me",
@@ -58,7 +61,8 @@
         "Clara Immel",
         "Mira Huber"
       ],
-      "image": "data/current-events/posters/my-best-friend-his-girlfriend-and-me-1c4c6ed2.jpg"
+      "image": "data/current-events/posters/my-best-friend-his-girlfriend-and-me-1c4c6ed2.jpg",
+      "inUS": true
     },
     {
       "title": "To the Max",
@@ -73,7 +77,8 @@
         "David Marcé",
         "Candela González"
       ],
-      "image": "data/current-events/posters/to-the-max-079b30f2.jpg"
+      "image": "data/current-events/posters/to-the-max-079b30f2.jpg",
+      "inUS": true
     },
     {
       "title": "Tires (Season 3)",
@@ -88,7 +93,8 @@
         "Stavros Halkias",
         "Thomas Haden Church"
       ],
-      "image": "data/current-events/posters/tires-0b8cba4d.jpg"
+      "image": "data/current-events/posters/tires-0b8cba4d.jpg",
+      "inUS": true
     },
     {
       "title": "My Brilliant Career",
@@ -103,29 +109,8 @@
         "Kate Mulvany",
         "Jake Dunn"
       ],
-      "image": "data/current-events/posters/my-brilliant-career-708cbc34.jpg"
-    },
-    {
-      "title": "A Child of My Own",
-      "type": "Film",
-      "date": "2026-08-13",
-      "synopsis": "Desperate for a baby and burdened by family and societal expectations, a woman fakes a pregnancy and gets tangled in a crime.",
-      "starring": [
-        "Ana Celeste",
-        "Armando Espitia",
-        "Ángeles Cruz",
-        "Mayra Sérbulo",
-        "Luisa Guzmán",
-        "Casio Figueroa"
-      ],
-      "image": "data/current-events/posters/a-child-of-my-own-72f3e26a.jpg"
-    },
-    {
-      "title": "MLB Field of Dreams: Phillies vs. Twins (LIVE)",
-      "type": "Live event",
-      "date": "2026-08-13",
-      "synopsis": "",
-      "starring": []
+      "image": "data/current-events/posters/my-brilliant-career-708cbc34.jpg",
+      "inUS": true
     },
     {
       "title": "This, That and Everything in Between",
@@ -140,7 +125,32 @@
         "Gabriel Lazaro",
         "RK Bagatsing"
       ],
-      "image": "data/current-events/posters/this-that-and-everything-in-between-513768a6.jpg"
+      "image": "data/current-events/posters/this-that-and-everything-in-between-513768a6.jpg",
+      "inUS": true
+    },
+    {
+      "title": "A Child of My Own",
+      "type": "Film",
+      "date": "2026-08-13",
+      "synopsis": "Desperate for a baby and burdened by family and societal expectations, a woman fakes a pregnancy and gets tangled in a crime.",
+      "starring": [
+        "Ana Celeste",
+        "Armando Espitia",
+        "Ángeles Cruz",
+        "Mayra Sérbulo",
+        "Luisa Guzmán",
+        "Casio Figueroa"
+      ],
+      "image": "data/current-events/posters/a-child-of-my-own-72f3e26a.jpg",
+      "inUS": true
+    },
+    {
+      "title": "MLB Field of Dreams: Phillies vs. Twins",
+      "type": "Film",
+      "date": "2026-08-13",
+      "synopsis": "",
+      "starring": [],
+      "inUS": true
     },
     {
       "title": "Conversations with a Killer: The Charles Manson Tapes",
@@ -150,7 +160,8 @@
       "starring": [
         "Charles Manson"
       ],
-      "image": "data/current-events/posters/conversations-with-a-killer-the-charles-manson-t-3af855a1.jpg"
+      "image": "data/current-events/posters/conversations-with-a-killer-the-charles-manson-t-3af855a1.jpg",
+      "inUS": false
     },
     {
       "title": "Nando Between Two Worlds",
@@ -165,7 +176,8 @@
         "Bruna Mascarenhas",
         "Enio Cavalcante"
       ],
-      "image": "data/current-events/posters/nando-between-two-worlds-bfa80b5b.jpg"
+      "image": "data/current-events/posters/nando-between-two-worlds-bfa80b5b.jpg",
+      "inUS": true
     },
     {
       "title": "Mourinho",
@@ -175,17 +187,19 @@
       "starring": [
         "José Mourinho"
       ],
-      "image": "data/current-events/posters/mourinho-a7db1dc6.jpg"
+      "image": "data/current-events/posters/mourinho-a7db1dc6.jpg",
+      "inUS": true
     },
     {
-      "title": "Rory Scovel: Show Must Go On",
+      "title": "Rory Scovel : Show Must Go On",
       "type": "Stand-up special",
       "date": "2026-08-11",
       "synopsis": "With a hypothetical home invasion, a biblical reenactment, and his late dad's final wish, Rory Scovel delivers unrelenting laughs in this raucous stand-up special filmed at The Neptune in Seattle, Washington.",
       "starring": [
         "Rory Scovel"
       ],
-      "image": "data/current-events/posters/rory-scovel-show-must-go-on-f393872d.jpg"
+      "image": "data/current-events/posters/rory-scovel-show-must-go-on-f393872d.jpg",
+      "inUS": true
     },
     {
       "title": "Dr. Seuss's Red Fish, Blue Fish (Season 3)",
@@ -197,7 +211,8 @@
         "Brian Drummond",
         "Naomi Tan"
       ],
-      "image": "data/current-events/posters/dr-seuss-s-red-fish-blue-fish-3e61f07d.jpg"
+      "image": "data/current-events/posters/dr-seuss-s-red-fish-blue-fish-3e61f07d.jpg",
+      "inUS": false
     },
     {
       "title": "The Ribbon Hero",
@@ -212,7 +227,8 @@
         "Haruhiko Jo",
         "Yoshimasa Hosoya"
       ],
-      "image": "data/current-events/posters/the-ribbon-hero-349c146e.jpg"
+      "image": "data/current-events/posters/the-ribbon-hero-349c146e.jpg",
+      "inUS": true
     },
     {
       "title": "Our Sticky Love",
@@ -224,7 +240,8 @@
         "Ha Young",
         "Heo Sung Tae"
       ],
-      "image": "data/current-events/posters/our-sticky-love-5c5e7f15.jpg"
+      "image": "data/current-events/posters/our-sticky-love-5c5e7f15.jpg",
+      "inUS": true
     },
     {
       "title": "Ricky Gervais Alley Cats",
@@ -239,7 +256,8 @@
         "Tom Basden",
         "Andrew Brooke"
       ],
-      "image": "data/current-events/posters/ricky-gervais-alley-cats-9b0405f7.jpg"
+      "image": "data/current-events/posters/ricky-gervais-alley-cats-9b0405f7.jpg",
+      "inUS": true
     },
     {
       "title": "Operation Safed Sagar: The Untold Story of the Kargil War",
@@ -254,15 +272,8 @@
         "Meiyang Chang",
         "Siddharth"
       ],
-      "image": "data/current-events/posters/operation-safed-sagar-the-untold-story-of-the-ka-450b8cf5.jpg"
-    },
-    {
-      "title": "Death Inc. (Season 4)",
-      "type": "Series",
-      "date": "2026-08-07",
-      "synopsis": "",
-      "starring": [],
-      "image": "data/current-events/posters/death-inc-1a3db9da.jpg"
+      "image": "data/current-events/posters/operation-safed-sagar-the-untold-story-of-the-ka-450b8cf5.jpg",
+      "inUS": true
     },
     {
       "title": "The Last House",
@@ -277,7 +288,17 @@
         "Emma Ho",
         "Gabriel Barbosa"
       ],
-      "image": "data/current-events/posters/the-last-house-f605bcf7.jpg"
+      "image": "data/current-events/posters/the-last-house-f605bcf7.jpg",
+      "inUS": true
+    },
+    {
+      "title": "Death Inc. (Season 4)",
+      "type": "Series",
+      "date": "2026-08-07",
+      "synopsis": "",
+      "starring": [],
+      "image": "data/current-events/posters/death-inc-1a3db9da.jpg",
+      "inUS": true
     },
     {
       "title": "My Life With the Walter Boys (Season 3)",
@@ -292,7 +313,8 @@
         "Noah LaLonde",
         "Ashby Gentry"
       ],
-      "image": "data/current-events/posters/my-life-with-the-walter-boys-ca9be420.jpg"
+      "image": "data/current-events/posters/my-life-with-the-walter-boys-ca9be420.jpg",
+      "inUS": true
     },
     {
       "title": "Cien años de soledad (Season 2)",
@@ -307,7 +329,8 @@
         "Marleyda Soto",
         "Loren Sofía"
       ],
-      "image": "data/current-events/posters/cien-a-os-de-soledad-8872ba6a.jpg"
+      "image": "data/current-events/posters/cien-a-os-de-soledad-8872ba6a.jpg",
+      "inUS": true
     },
     {
       "title": "1670 (Season 3)",
@@ -322,7 +345,8 @@
         "Dobromir Dymecki",
         "Michal Sikorski"
       ],
-      "image": "data/current-events/posters/1670-395c707e.jpg"
+      "image": "data/current-events/posters/1670-395c707e.jpg",
+      "inUS": true
     },
     {
       "title": "Let's Marry Harry",
@@ -332,7 +356,8 @@
       "starring": [
         "Harry Jowsey"
       ],
-      "image": "data/current-events/posters/let-s-marry-harry-4bf84089.jpg"
+      "image": "data/current-events/posters/let-s-marry-harry-4bf84089.jpg",
+      "inUS": true
     },
     {
       "title": "Big Chicken: A Fast Food Conspiracy",
@@ -347,11 +372,12 @@
         "David Ajao",
         "Laura Schmidt"
       ],
-      "image": "data/current-events/posters/big-chicken-a-fast-food-conspiracy-f924f706.jpg"
+      "image": "data/current-events/posters/big-chicken-a-fast-food-conspiracy-f924f706.jpg",
+      "inUS": true
     },
     {
       "title": "Inside the Trustor Scandal",
-      "type": "Documentary",
+      "type": "Film",
       "date": "2026-08-05",
       "synopsis": "For the first time since 1997, Joachim Posener finally emerges from hiding and allows himself to be interviewed about his life and the Trustor affair. Twenty-seven years ago, he disappeared without a trace, and ever since, he has been on the international most wanted list. Now, Karin af Klintberg searches for him…",
       "starring": [
@@ -362,7 +388,8 @@
         "Jochum Söderström",
         "Michael Wynne-Parker"
       ],
-      "image": "data/current-events/posters/inside-the-trustor-scandal-f11fc295.jpg"
+      "image": "data/current-events/posters/inside-the-trustor-scandal-f11fc295.jpg",
+      "inUS": true
     },
     {
       "title": "Ravu Jôtô (Season 2)",
@@ -370,7 +397,8 @@
       "date": "2026-08-04",
       "synopsis": "In Japan's first dating show for rebellious yankiis, 11 singles butt heads, forge bonds and live together for 14 days as they go all out to find the one.",
       "starring": [],
-      "image": "data/current-events/posters/ravu-j-t-6c1d6a9c.jpg"
+      "image": "data/current-events/posters/ravu-j-t-6c1d6a9c.jpg",
+      "inUS": true
     },
     {
       "title": "Sesame Street: Storm on the Street",
@@ -378,7 +406,8 @@
       "date": "2026-08-03",
       "synopsis": "",
       "starring": [],
-      "image": "data/current-events/posters/sesame-street-storm-on-the-street-5d723854.png"
+      "image": "data/current-events/posters/sesame-street-storm-on-the-street-5d723854.png",
+      "inUS": true
     },
     {
       "title": "The Bombing of Pan Am 103",
@@ -386,7 +415,8 @@
       "date": "2026-07-30",
       "synopsis": "",
       "starring": [],
-      "image": "data/current-events/posters/the-bombing-of-pan-am-103-f3fe544a.jpg"
+      "image": "data/current-events/posters/the-bombing-of-pan-am-103-f3fe544a.jpg",
+      "inUS": true
     },
     {
       "title": "Fúria",
@@ -428,7 +458,8 @@
         "Ian Sparrowe",
         "Flor Eduarda Gurrola"
       ],
-      "image": "data/current-events/posters/proyecto-final-7b4ef8a9.jpg"
+      "image": "data/current-events/posters/proyecto-final-7b4ef8a9.jpg",
+      "inUS": true
     },
     {
       "title": "The Idaho Murders: College Nightmare",
@@ -491,7 +522,8 @@
         "Mary Beth Barone",
         "Ky Newman"
       ],
-      "image": "data/current-events/posters/mary-beth-barone-galaxy-brain-026658d2.jpg"
+      "image": "data/current-events/posters/mary-beth-barone-galaxy-brain-026658d2.jpg",
+      "inUS": true
     },
     {
       "title": "WWE Monday Night RAW (Season 33)",
@@ -544,7 +576,8 @@
         "Tobie Donovan",
         "Corinna Brown"
       ],
-      "image": "data/current-events/posters/heartstopper-29aabcc1.jpg"
+      "image": "data/current-events/posters/heartstopper-29aabcc1.jpg",
+      "inUS": true
     },
     {
       "title": "The Adam Ray Show",
@@ -589,7 +622,8 @@
         "Ben Marshall",
         "Zach Cherry"
       ],
-      "image": "data/current-events/posters/72-hours-687aab3e.jpg"
+      "image": "data/current-events/posters/72-hours-687aab3e.jpg",
+      "inUS": true
     },
     {
       "title": "The Truthers",
@@ -604,7 +638,8 @@
         "Israel Ruiz",
         "Mabel del Pozo"
       ],
-      "image": "data/current-events/posters/the-truthers-d2c22739.jpg"
+      "image": "data/current-events/posters/the-truthers-d2c22739.jpg",
+      "inUS": true
     }
   ]
 }
