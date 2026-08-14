@@ -24,8 +24,7 @@ const ALLOWED_ORIGINS = String(process.env.ALLOWED_ORIGINS || "")
   .filter(Boolean);
 
 if (!process.env.DATABASE_URL) {
-  console.error("DATABASE_URL is required");
-  process.exit(1);
+  console.error("DATABASE_URL is missing — photo routes will fail until it is set");
 }
 
 const upload = multer({
@@ -69,6 +68,12 @@ app.get("/api/health", async (_req, res) => {
     res.status(503).json({ ok: false, error: err.message });
   }
 });
+
+if (!SERVE_FRONTEND) {
+  app.get("/", (_req, res) => {
+    res.json({ ok: true, service: "trivia-photo-api" });
+  });
+}
 
 app.get("/api/photos", requirePin, async (_req, res) => {
   const { rows } = await query(
@@ -191,14 +196,12 @@ if (SERVE_FRONTEND) {
   app.use(express.static(APP_ROOT));
 }
 
-const server = app.listen(PORT, () => {
-  console.log(`Photo API on http://localhost:${PORT}`);
+const server = app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Photo API on port ${PORT}`);
 });
 
 migrate()
   .then(() => console.log("Postgres schema ready"))
   .catch((err) => {
     console.error("Postgres migrate failed:", err.message);
-    server.close();
-    process.exit(1);
   });
