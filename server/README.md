@@ -24,4 +24,4 @@ Docker is optional if you do not want Homebrew Postgres: `docker compose -f serv
 
 Or put the Railway URL in `data/api.json` as `"baseUrl"` so Pages has a default.
 
-Photos are JPEG-compressed (max 1600px) and stored as `BYTEA` with a thumbnail. OCR is not wired yet; `extracted_text` is reserved.
+Photos are JPEG-compressed (max 1600px) and stored as `BYTEA` with a thumbnail. Viewing the list and images is public. Upload, edit, and delete still require `UPLOAD_PIN`. OCR is not wired yet; `extracted_text` is reserved.

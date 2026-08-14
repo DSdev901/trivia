@@ -2,7 +2,6 @@
 
 const PIN_KEY = "trivia.uploadPin";
 const API_KEY = "trivia.apiBase";
-const blobUrls = new Set();
 
 const cap = {
   root: null,
@@ -12,6 +11,7 @@ const cap = {
   uploading: false,
   selectedId: null,
   configured: false,
+  base: "",
 };
 
 function escapeHtml(s) {
@@ -22,13 +22,12 @@ function escapeHtml(s) {
     .replaceAll('"', "&quot;");
 }
 
-function revokeBlobs() {
-  for (const url of blobUrls) URL.revokeObjectURL(url);
-  blobUrls.clear();
-}
-
 function savedPin() {
   return localStorage.getItem(PIN_KEY) || "";
+}
+
+function canWrite() {
+  return Boolean(savedPin());
 }
 
 function savedApiBase() {
@@ -48,6 +47,11 @@ async function configuredBase() {
     /* use same origin */
   }
   return "";
+}
+
+function photoUrl(base, id, size) {
+  const qs = size === "thumb" ? "?size=thumb" : "";
+  return `${base}/api/photos/${id}${qs}`;
 }
 
 function apiHeaders(extra = {}) {
@@ -85,15 +89,6 @@ async function apiFetch(base, path, options = {}) {
   return res;
 }
 
-async function loadImageUrl(base, id, size) {
-  const qs = size === "thumb" ? "?size=thumb" : "";
-  const res = await apiFetch(base, `/api/photos/${id}${qs}`);
-  const blob = await res.blob();
-  const url = URL.createObjectURL(blob);
-  blobUrls.add(url);
-  return url;
-}
-
 function fmtWhen(iso) {
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return "";
@@ -108,12 +103,12 @@ function fmtWhen(iso) {
 function settingsHtml(base) {
   return `
     <details class="cap-settings">
-      <summary>API connection</summary>
-      <p class="lede">GitHub Pages talks to the Railway (or local) Express API. The PIN is not stored in the repo.</p>
+      <summary>Add or remove photos</summary>
+      <p class="lede">Anyone can view the photos. The PIN is only for uploading, editing, or deleting.</p>
       <form id="cap-settings-form" class="cap-form">
         <label class="voice-field">
           <span>API URL</span>
-          <input type="url" id="cap-api-url" placeholder="http://localhost:8787" value="${escapeHtml(
+          <input type="url" id="cap-api-url" placeholder="https://your-app.up.railway.app" value="${escapeHtml(
             savedApiBase() || base
           )}" />
         </label>
@@ -124,7 +119,7 @@ function settingsHtml(base) {
           )}" />
         </label>
         <div class="setup-actions">
-          <button type="submit" class="secondary-btn">Save connection</button>
+          <button type="submit" class="secondary-btn">Save</button>
         </div>
       </form>
     </details>`;
@@ -133,11 +128,7 @@ function settingsHtml(base) {
 function cardHtml(item) {
   return `
     <button type="button" class="cap-card" data-id="${escapeHtml(item.id)}">
-      ${
-        item.thumbUrl
-          ? `<img class="cap-thumb" src="${escapeHtml(item.thumbUrl)}" alt="" />`
-          : `<div class="cap-thumb cap-thumb-empty" aria-hidden="true"></div>`
-      }
+      <img class="cap-thumb" src="${escapeHtml(item.thumbUrl)}" alt="" />
       <span class="cap-card-meta">
         <span class="cap-card-date">${escapeHtml(fmtWhen(item.created_at))}</span>
         ${item.note ? `<span class="cap-card-note">${escapeHtml(item.note)}</span>` : ""}
@@ -147,10 +138,13 @@ function cardHtml(item) {
 
 function detailHtml(item) {
   if (!item) return "";
+  const write = canWrite();
   return `
     <section class="cap-detail">
-      <img class="cap-full" src="${escapeHtml(item.fullUrl || item.thumbUrl || "")}" alt="Original photo" />
-      <form id="cap-note-form" class="cap-form">
+      <img class="cap-full" src="${escapeHtml(item.fullUrl)}" alt="Original photo" />
+      ${
+        write
+          ? `<form id="cap-note-form" class="cap-form">
         <label class="voice-field">
           <span>Note</span>
           <textarea id="cap-note" rows="3" maxlength="2000" placeholder="Question, answer, or where this card is from">${escapeHtml(
@@ -160,34 +154,27 @@ function detailHtml(item) {
         ${
           item.extracted_text
             ? `<p class="lede"><strong>Extracted text</strong> ${escapeHtml(item.extracted_text)}</p>`
-            : `<p class="lede">Text parsing from photos is not wired up yet. The original image is stored in Postgres.</p>`
+            : ""
         }
         <div class="setup-actions">
           <button type="submit" class="primary-btn">Save note</button>
           <button type="button" class="secondary-btn" id="cap-close">Back to grid</button>
           <button type="button" class="text-btn" id="cap-delete">Delete photo</button>
         </div>
-      </form>
+      </form>`
+          : `<div class="setup-actions">
+        ${item.note ? `<p class="lede">${escapeHtml(item.note)}</p>` : ""}
+        <button type="button" class="secondary-btn" id="cap-close">Back to grid</button>
+      </div>`
+      }
     </section>`;
 }
 
-function render() {
-  if (!cap.root) return;
-  const selected = cap.items.find((i) => i.id === cap.selectedId) || null;
-  cap.root.innerHTML = `
-    <div class="cap-head">
-      <div>
-        <h2 class="section-title">Captured</h2>
-        <p class="lede">Photos of trivia questions and answers. Compressed copies are stored in Postgres so you can reopen the original here.</p>
-      </div>
-    </div>
-    ${settingsHtml(cap.base || "")}
-    ${cap.error ? `<p class="error">${escapeHtml(cap.error)}</p>` : ""}
-    ${cap.notice ? `<p class="ce-notice">${escapeHtml(cap.notice)}</p>` : ""}
-    ${
-      selected
-        ? detailHtml(selected)
-        : `
+function uploadHtml() {
+  if (!canWrite()) {
+    return `<p class="lede">Photos are public. Open <strong>Add or remove photos</strong> and enter the PIN if you need to upload.</p>`;
+  }
+  return `
     <form id="cap-upload" class="cap-upload">
       <label class="cap-file">
         <span>Add a photo</span>
@@ -200,9 +187,29 @@ function render() {
         <input type="text" id="cap-upload-note" maxlength="2000" placeholder="e.g. Jeopardy board — sports" />
       </label>
       <button type="submit" class="primary-btn" ${cap.uploading ? "disabled" : ""}>${
-          cap.uploading ? "Uploading…" : "Upload"
-        }</button>
-    </form>
+        cap.uploading ? "Uploading…" : "Upload"
+      }</button>
+    </form>`;
+}
+
+function render() {
+  if (!cap.root) return;
+  const selected = cap.items.find((i) => i.id === cap.selectedId) || null;
+  cap.root.innerHTML = `
+    <div class="cap-head">
+      <div>
+        <h2 class="section-title">Captured</h2>
+        <p class="lede">Photos of trivia questions and answers. Anyone can view them; adding or deleting needs the PIN.</p>
+      </div>
+    </div>
+    ${settingsHtml(cap.base || "")}
+    ${cap.error ? `<p class="error">${escapeHtml(cap.error)}</p>` : ""}
+    ${cap.notice ? `<p class="ce-notice">${escapeHtml(cap.notice)}</p>` : ""}
+    ${
+      selected
+        ? detailHtml(selected)
+        : `
+    ${uploadHtml()}
     ${
       cap.items.length
         ? `<div class="cap-grid">${cap.items.map(cardHtml).join("")}</div>`
@@ -222,7 +229,7 @@ function bind() {
     else localStorage.removeItem(API_KEY);
     if (pin) localStorage.setItem(PIN_KEY, pin);
     else localStorage.removeItem(PIN_KEY);
-    cap.notice = "Connection saved.";
+    cap.notice = "Saved.";
     cap.error = "";
     void loadItems();
   });
@@ -244,7 +251,7 @@ function bind() {
       cap.selectedId = btn.dataset.id;
       cap.error = "";
       cap.notice = "";
-      void openDetail(cap.selectedId);
+      render();
     });
   });
 
@@ -266,49 +273,28 @@ function bind() {
   });
 }
 
-async function openDetail(id) {
-  const item = cap.items.find((i) => i.id === id);
-  if (!item) return;
-  render();
-  try {
-    if (!item.fullUrl) item.fullUrl = await loadImageUrl(cap.base, id);
-    render();
-  } catch (err) {
-    cap.error = err.message;
-    render();
-  }
-}
-
 async function loadItems() {
   cap.base = await configuredBase();
   cap.error = "";
   if (!cap.base && /\.github\.io$/i.test(location.hostname)) {
     cap.items = [];
     cap.configured = false;
-    cap.error =
-      "Set the Railway API URL and PIN under API connection. GitHub Pages cannot store photos itself.";
+    cap.error = "The photo API URL is not set.";
     render();
     return;
   }
   try {
     const data = await apiFetch(cap.base, "/api/photos");
-    revokeBlobs();
-    cap.items = data.items || [];
+    cap.items = (data.items || []).map((item) => ({
+      ...item,
+      thumbUrl: photoUrl(cap.base, item.id, "thumb"),
+      fullUrl: photoUrl(cap.base, item.id),
+    }));
     cap.configured = true;
-    for (const item of cap.items) {
-      try {
-        item.thumbUrl = await loadImageUrl(cap.base, item.id, "thumb");
-      } catch {
-        item.thumbUrl = "";
-      }
-    }
   } catch (err) {
     cap.items = [];
     cap.configured = false;
-    cap.error =
-      err.status === 401
-        ? "PIN did not match. Open API connection and save the upload PIN."
-        : `Could not reach the photo API. Start it locally or set the Railway URL. ${err.message}`;
+    cap.error = `Could not load photos. ${err.message}`;
   }
   render();
 }
@@ -328,7 +314,10 @@ async function uploadFile(file, note) {
     await loadItems();
   } catch (err) {
     cap.uploading = false;
-    cap.error = err.message;
+    cap.error =
+      err.status === 401
+        ? "Upload PIN is missing or wrong. Save it under Add or remove photos."
+        : err.message;
     render();
   }
 }
@@ -340,11 +329,17 @@ async function saveNote(id, note) {
       json: { note },
     });
     const item = cap.items.find((i) => i.id === id);
-    if (item) Object.assign(item, row);
+    if (item) Object.assign(item, row, {
+      thumbUrl: photoUrl(cap.base, id, "thumb"),
+      fullUrl: photoUrl(cap.base, id),
+    });
     cap.notice = "Note saved.";
     render();
   } catch (err) {
-    cap.error = err.message;
+    cap.error =
+      err.status === 401
+        ? "Upload PIN is missing or wrong."
+        : err.message;
     render();
   }
 }
@@ -356,7 +351,10 @@ async function deletePhoto(id) {
     cap.notice = "Photo deleted.";
     await loadItems();
   } catch (err) {
-    cap.error = err.message;
+    cap.error =
+      err.status === 401
+        ? "Upload PIN is missing or wrong."
+        : err.message;
     render();
   }
 }
@@ -383,7 +381,6 @@ export function capturedGoBack() {
 }
 
 export function cleanupCaptured() {
-  revokeBlobs();
   cap.root = null;
   cap.items = [];
   cap.selectedId = null;

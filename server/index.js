@@ -75,7 +75,7 @@ if (!SERVE_FRONTEND) {
   });
 }
 
-app.get("/api/photos", requirePin, async (_req, res) => {
+app.get("/api/photos", async (_req, res) => {
   const { rows } = await query(
     `SELECT id, created_at, original_name, mime_type, width, height,
             byte_size, note, extracted_text
@@ -85,7 +85,7 @@ app.get("/api/photos", requirePin, async (_req, res) => {
   res.json({ items: rows });
 });
 
-app.get("/api/photos/:id", requirePin, async (req, res) => {
+app.get("/api/photos/:id", async (req, res) => {
   const thumb = req.query.size === "thumb";
   const { rows } = await query(
     thumb
@@ -100,7 +100,7 @@ app.get("/api/photos/:id", requirePin, async (req, res) => {
   }
   const body = Buffer.isBuffer(row.bytes) ? row.bytes : Buffer.from(row.bytes);
   res.setHeader("Content-Type", row.mime_type || "image/jpeg");
-  res.setHeader("Cache-Control", "private, max-age=3600");
+  res.setHeader("Cache-Control", "public, max-age=3600");
   res.send(body);
 });
 
