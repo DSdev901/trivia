@@ -8,6 +8,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { buildBriefing } from "../briefing.js";
+import { enrichThinSummaries } from "./lib/summaries.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIR = path.join(ROOT, "data", "current-events");
@@ -30,6 +31,16 @@ export async function writeBriefingFile({
     entertainment: await readFeed("entertainment"),
   };
   const built = buildBriefing(data);
+  const filled = await enrichThinSummaries(built.items, {
+    minLen: 80,
+    espn: true,
+    page: true,
+    wiki: false,
+    missingOnly: true,
+  });
+  if (filled) {
+    console.log(`  [briefing] filled missing figures on ${filled} stories`);
+  }
   const payload = {
     section: "briefing",
     source,

@@ -4,7 +4,7 @@
  */
 
 import { readFile, writeFile } from "node:fs/promises";
-import { enrichThinSummaries } from "./summaries.mjs";
+import { enrichThinSummaries, clusterHeadlinesFromRss, pickNamedHeadline } from "./summaries.mjs";
 
 export const RETENTION_DAYS = 21;
 
@@ -162,7 +162,13 @@ export async function googleNewsTopic(url, windowStart, windowEnd, limit = 15) {
         const block = m[1];
         const grab = (re) => (block.match(re) || [])[1] || "";
         const full = stripTags(grab(/<title>([\s\S]*?)<\/title>/));
-        const headline = full.replace(/ - [^-]{2,40}$/, "").trim();
+        const cluster = clusterHeadlinesFromRss(
+          grab(/<description>([\s\S]*?)<\/description>/)
+        );
+        const headline = pickNamedHeadline(
+          full.replace(/ - [^-]{2,40}$/, "").trim(),
+          cluster
+        );
         return {
           rank: idx,
           headline,
@@ -209,9 +215,16 @@ export async function googleNewsSearch(
         const block = m[1];
         const grab = (re) => (block.match(re) || [])[1] || "";
         const full = stripTags(grab(/<title>([\s\S]*?)<\/title>/));
+        const cluster = clusterHeadlinesFromRss(
+          grab(/<description>([\s\S]*?)<\/description>/)
+        );
+        const headline = pickNamedHeadline(
+          full.replace(/ - [^-]{2,40}$/, "").trim(),
+          cluster
+        );
         return {
           rank: idx + (range?.offset ?? 0),
-          headline: full.replace(/ - [^-]{2,40}$/, "").trim(),
+          headline,
           source: stripTags(grab(/<source[^>]*>([\s\S]*?)<\/source>/)),
           url: grab(/<link>([\s\S]*?)<\/link>/).trim(),
           date: isoFrom(grab(/<pubDate>(.*?)<\/pubDate>/)),

@@ -969,4 +969,4 @@ export function highlightPeople(text, people) {
   return out;
 }
 
-export { escapeHtml, stripHtml };
+export { escapeHtml, stripHtml, extractPeople };

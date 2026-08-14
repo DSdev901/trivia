@@ -24,7 +24,7 @@ Reply with ONLY valid JSON (no markdown fences, no commentary) of this shape:
 Rules:
 
 1. `items` must have the same length and the same order as INPUT.items. Do not drop or add events.
-2. Rewrite `headline` as a short news title (about 6–12 words). No listicles ("N things you need to know"), no EXCL/EXCLUSIVE, no clickbait questions. Keep names and facts from the item.
-3. Rewrite each `summary` as 1–3 short sentences from facts already in that item (headline, summary, and angles). Do not invent facts. Do not paste near-duplicate ledes. Make it easy to remember: who, what happened, why it matters.
+2. Rewrite `headline` as a short news title (about 6–12 words). No listicles ("N things you need to know"), no EXCL/EXCLUSIVE, no clickbait questions. Keep names and numbers from the item. If the item names the person, use that name — do not write "a rock star", "an actress", or "a quarterback".
+3. Rewrite each `summary` as 1–3 short sentences from facts already in that item (headline, summary, and angles). Do not invent facts. Do not paste near-duplicate ledes. Make it easy to remember: who, what happened, why it matters. If the item includes a concrete figure (sale price, box office, contract value, age, score, vote count, prison term), put that number in the summary. A "record price" or sale headline is incomplete without the amount. Never invent a number that is not in the item.
 4. `people` is 0–3 real human names the event is mainly about.
 5. The output must parse as JSON. No trailing commentary.
