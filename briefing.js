@@ -671,10 +671,10 @@ function memorableSummary(group) {
   for (const fact of consider) {
     if (facts.some((f) => sentenceOverlap(f, fact) >= 0.5)) continue;
     facts.push(fact);
-    if (facts.length >= 3) break;
+    if (facts.length >= 6) break;
   }
   let out = facts.join(" ").replace(/\s+/g, " ").trim();
-  if (out.length > 380) out = `${out.slice(0, 377).replace(/\s+\S*$/, "")}…`;
+  if (out.length > 720) out = `${out.slice(0, 717).replace(/\s+\S*$/, "")}…`;
   return out;
 }
 
