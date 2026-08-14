@@ -24,17 +24,20 @@
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  overflow-x: hidden;
 }
 
 html,
 body {
   margin: 0;
   min-height: 100%;
-  touch-action: manipulation;
+  /* pan-x pan-y allows scrolling but not pinch-zoom. manipulation was
+     leaving Safari's pull-to-refresh bounce stuck at a scaled viewport. */
+  touch-action: pan-x pan-y;
+  overscroll-behavior-x: none;
 }
 
 body {
+  overflow-x: hidden;
   padding-top: env(safe-area-inset-top);
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
@@ -68,6 +71,7 @@ body {
   margin: 0;
   font-family: var(--font-display);
   font-size: clamp(2rem, 5vw, 2.75rem);
+  font-size: clamp(2rem, 5svw, 2.75rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -248,6 +252,7 @@ body {
 
 .detail h1 {
   font-size: clamp(2rem, 5vw, 2.8rem);
+  font-size: clamp(2rem, 5svw, 2.8rem);
 }
 
 .detail-served {
@@ -826,6 +831,7 @@ body {
   margin: 0 0 1.25rem;
   font-family: var(--font-display);
   font-size: clamp(1.35rem, 3.5vw, 1.85rem);
+  font-size: clamp(1.35rem, 3.5svw, 1.85rem);
   font-weight: 700;
   line-height: 1.35;
   white-space: pre-wrap;
@@ -834,6 +840,7 @@ body {
 .quiz-prompt--dossier {
   font-family: var(--font-body, inherit);
   font-size: clamp(0.98rem, 2.2vw, 1.12rem);
+  font-size: clamp(0.98rem, 2.2svw, 1.12rem);
   font-weight: 500;
   line-height: 1.5;
   color: var(--ink);
@@ -1614,6 +1621,7 @@ body {
   top: 0.12rem;
   left: 0.2rem;
   font-size: clamp(0.55rem, 1.1vw, 0.7rem);
+  font-size: clamp(0.55rem, 1.1svw, 0.7rem);
   font-weight: 700;
   color: var(--ink-soft);
   line-height: 1;
@@ -1623,12 +1631,14 @@ body {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(0.85rem, 1.8vw, 1.15rem);
+  font-size: clamp(0.85rem, 1.8svw, 1.15rem);
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
 .pt-name {
   font-size: clamp(0.45rem, 0.95vw, 0.62rem);
+  font-size: clamp(0.45rem, 0.95svw, 0.62rem);
   line-height: 1.15;
   color: var(--ink-soft);
   max-width: 100%;
@@ -2447,6 +2457,7 @@ body {
   margin: 0 0 1rem;
   font-family: var(--font-display);
   font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  font-size: clamp(1.15rem, 2.5svw, 1.45rem);
   font-weight: 700;
   line-height: 1.35;
 }
@@ -2465,6 +2476,7 @@ body {
 .geo-flag-xl {
   display: inline-block;
   font-size: clamp(2.8rem, 8vw, 4rem);
+  font-size: clamp(2.8rem, 8svw, 4rem);
   line-height: 1;
   margin: 0.15rem 0 0.5rem;
 }
@@ -2776,9 +2788,30 @@ body {
   }
 }
 
-/* iOS keeps :hover after a touch-drag (including pull-to-refresh), so cards
-   and map pins can look stuck zoomed-in. Only lift on real pointers. */
-@media (pointer: coarse) {
+/* iOS keeps :hover after a touch-drag, and transform transitions can stay
+   composited at Safari's pull-to-refresh bounce scale. */
+@media (hover: none), (pointer: coarse) {
+  .nav-btn,
+  .batch-btn,
+  .president-btn,
+  .back-link,
+  .category-card,
+  .batch-card,
+  .speech-btn,
+  .hub-card,
+  .primary-btn,
+  .secondary-btn,
+  .choice-btn,
+  .ce-refresh,
+  .pt-cell,
+  .geo-pack-card,
+  .geo-mode-card,
+  .geo-continent-card,
+  .geo-map-frame .geo-marker {
+    transition-property: background, border-color, color, opacity, box-shadow, fill, stroke,
+      stroke-width;
+  }
+
   .nav-btn:hover,
   .batch-btn:hover,
   .president-btn:hover,

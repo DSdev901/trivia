@@ -1063,47 +1063,60 @@ init();
 const VIEWPORT_CONTENT =
   "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover";
 
+function forceLayoutReset() {
+  const root = document.documentElement;
+  root.style.height = `${Math.max(window.innerHeight, 1) + 1}px`;
+  void root.offsetHeight;
+  root.style.height = "";
+  window.scrollTo(0, window.scrollY);
+}
+
 function snapPageScale() {
   const meta = document.querySelector('meta[name="viewport"]');
-  if (!meta) return;
-  meta.setAttribute(
-    "content",
-    "width=device-width, initial-scale=1, maximum-scale=1.0001, viewport-fit=cover"
-  );
-  requestAnimationFrame(() => {
-    meta.setAttribute("content", VIEWPORT_CONTENT);
-  });
+  if (meta) {
+    meta.setAttribute(
+      "content",
+      "width=device-width, initial-scale=1, maximum-scale=1.0001, viewport-fit=cover"
+    );
+    requestAnimationFrame(() => {
+      meta.setAttribute("content", VIEWPORT_CONTENT);
+      forceLayoutReset();
+    });
+  } else {
+    forceLayoutReset();
+  }
+}
+
+function scaledAwayFrom1() {
+  const scale = window.visualViewport?.scale ?? 1;
+  return Math.abs(scale - 1) > 0.01;
+}
+
+let snapTimer = 0;
+function scheduleSnapIfScaled() {
+  clearTimeout(snapTimer);
+  snapTimer = window.setTimeout(() => {
+    if (scaledAwayFrom1()) snapPageScale();
+  }, 450);
 }
 
 const blockPageGesture = (e) => e.preventDefault();
 document.addEventListener("gesturestart", blockPageGesture, { passive: false });
 document.addEventListener("gesturechange", blockPageGesture, { passive: false });
-document.addEventListener(
-  "gestureend",
-  (e) => {
-    e.preventDefault();
-    snapPageScale();
-  },
-  { passive: false }
-);
+document.addEventListener("gestureend", blockPageGesture, { passive: false });
 
 window.addEventListener("pageshow", snapPageScale);
-window.addEventListener("orientationchange", snapPageScale);
-
-let gestureFingers = 0;
-window.addEventListener(
-  "touchstart",
-  (e) => {
-    gestureFingers = e.touches.length;
-  },
-  { passive: true }
-);
+window.addEventListener("orientationchange", () => {
+  window.setTimeout(snapPageScale, 200);
+});
+/* Wait until the rubber-band settles. Snapping mid-bounce (or on every
+   visualViewport resize) is what left Safari stuck zoomed-in. */
 window.addEventListener(
   "touchend",
-  () => {
-    if (gestureFingers !== 1) return;
-    const scale = window.visualViewport?.scale ?? 1;
-    if (Math.abs(scale - 1) > 0.01) snapPageScale();
+  (e) => {
+    if (e.touches.length) return;
+    scheduleSnapIfScaled();
   },
   { passive: true }
 );
+window.addEventListener("touchcancel", scheduleSnapIfScaled, { passive: true });
