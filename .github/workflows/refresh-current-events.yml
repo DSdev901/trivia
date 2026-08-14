@@ -50,6 +50,8 @@ jobs:
         run: |
           npm install -g @github/copilot
           cp data/current-events/briefing.json /tmp/briefing.fallback.json
+          node scripts/slim-briefing.mjs 50
+          cp data/current-events/briefing.json /tmp/briefing.slim.json
           copilot -p "$(cat scripts/briefing-prompt.md)" \
             --model=claude-haiku-4.5 \
             --no-ask-user \
@@ -58,10 +60,11 @@ jobs:
             --allow-all-paths \
             --deny-tool=shell \
             --max-ai-credits=250
-          if cmp -s data/current-events/briefing.json /tmp/briefing.fallback.json; then
-            echo "Copilot did not change the briefing — keeping heuristic ranking."
+          if cmp -s data/current-events/briefing.json /tmp/briefing.slim.json; then
+            echo "Copilot did not rewrite the briefing — keeping full heuristic ranking."
+            cp /tmp/briefing.fallback.json data/current-events/briefing.json
           elif ! node scripts/validate-briefing.mjs; then
-            echo "Copilot briefing was invalid — keeping heuristic ranking."
+            echo "Copilot briefing was invalid — keeping full heuristic ranking."
             cp /tmp/briefing.fallback.json data/current-events/briefing.json
           fi
 

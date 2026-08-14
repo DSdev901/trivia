@@ -1,14 +1,17 @@
-Read these two files and nothing else:
+Read ONLY this file:
 
-- data/current-events/sports.json
-- data/current-events/entertainment.json
+- data/current-events/briefing.json
 
-Then overwrite ONLY this file:
+It is already clustered and ranked (highest coverage first). It has about 50 items.
+
+Overwrite ONLY this file:
 
 - data/current-events/briefing.json
 
 Do not modify any other path. Do not run shell commands. Do not fetch URLs.
 Do not include Netflix titles.
+
+Do this in ONE write of the complete file. Do not make a series of small edits. Do not leave any text before or after the JSON. Stop as soon as the file is valid JSON.
 
 Write valid JSON (no markdown fences) with this shape:
 
@@ -17,13 +20,13 @@ Write valid JSON (no markdown fences) with this shape:
   "source": "copilot-auto",
   "model": "claude-haiku-4.5",
   "generatedAt": "<ISO timestamp>",
-  "windowStart": "<YYYY-MM-DD>",
-  "windowEnd": "<YYYY-MM-DD>",
+  "windowStart": "<YYYY-MM-DD from the input file>",
+  "windowEnd": "<YYYY-MM-DD from the input file>",
   "items": [
     {
       "headline": "<one clear headline for the event>",
       "people": ["<full name of a person mainly involved>"],
-      "summary": "<a short paragraph that is easy to remember; combine the important facts from every related article>",
+      "summary": "<a short paragraph that is easy to remember; combine the important facts already in this item>",
       "section": "sports" | "entertainment",
       "tag": "<sport or entertainment tag>",
       "date": "<YYYY-MM-DD of the latest related story>",
@@ -35,10 +38,9 @@ Write valid JSON (no markdown fences) with this shape:
 
 Rules:
 
-1. Cluster the same or closely related stories into ONE item. Example: several Lakers-sale headlines become one card. Do not list the same event twice.
-2. `coverage` is how many source articles were about that event. Rank `items` by coverage first (mentioned most), then by news weight.
-3. For each cluster, write a short memorable summary that folds in the important facts from all related pieces. Use as many sentences as you need, but keep it to a small paragraph — not a long recap. Do not invent facts. Do not paste near-duplicate ledes. Make it easy to remember: who, what happened, why it matters.
-4. `people` is the person or people the event is mainly about — real human names only. Use 0–3 names.
-5. Keep recaps and rumor roundups, but merge obvious duplicates and put thin recaps last.
-6. Different games are different events — even same league, same day. Do not combine a Nationals recap with a Brewers recap. Same game from multiple write-ups may merge. Same celebrity in unrelated stories (two people who share a last name, or two fashion items about different stars) must stay separate.
-7. Cover the full three-week window in the source files (windowStart / windowEnd).
+1. Keep every input item. Do not drop below the input count. Do not add new events.
+2. Keep `coverage`, `section`, `tag`, `date`, `url`, and ranking as they are unless a headline is unclear — then you may clarify the headline.
+3. Rewrite each `summary` as a short memorable paragraph from facts already in that item's headline and summary. Use as many sentences as you need, but keep it to a small paragraph. Do not invent facts. Do not paste near-duplicate ledes. Make it easy to remember: who, what happened, why it matters.
+4. `people` is 0–3 real human names the event is mainly about.
+5. For sports items, `tag` must stay the league or sport (MLB, NFL, NBA, WNBA, NHL, Soccer, College football, Tennis, Golf, F1, NASCAR, MMA, etc.). Entertainment keeps tags like Celebrity or Milestone.
+6. The output must parse as JSON. No trailing commentary.

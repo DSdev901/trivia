@@ -11,10 +11,39 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const FILE = path.join(ROOT, "data", "current-events", "briefing.json");
 const SECTIONS = new Set(["sports", "entertainment"]);
 
+function parseJsonValue(text) {
+  const start = text.search(/[{\[]/);
+  if (start < 0) throw new SyntaxError("No JSON value found");
+  let depth = 0;
+  let inStr = false;
+  let esc = false;
+  for (let i = start; i < text.length; i++) {
+    const c = text[i];
+    if (inStr) {
+      if (esc) esc = false;
+      else if (c === "\\") esc = true;
+      else if (c === '"') inStr = false;
+      continue;
+    }
+    if (c === '"') inStr = true;
+    else if (c === "{" || c === "[") depth += 1;
+    else if (c === "}" || c === "]") {
+      depth -= 1;
+      if (depth === 0) return JSON.parse(text.slice(start, i + 1));
+    }
+  }
+  throw new SyntaxError("Unterminated JSON value");
+}
+
 function parsePayload(raw) {
   const trimmed = String(raw || "").trim();
   const fenced = trimmed.match(/```(?:json)?\s*([\s\S]*?)```/);
-  return JSON.parse(fenced ? fenced[1] : trimmed);
+  const text = fenced ? fenced[1].trim() : trimmed;
+  try {
+    return JSON.parse(text);
+  } catch {
+    return parseJsonValue(text);
+  }
 }
 
 function asPeople(value) {

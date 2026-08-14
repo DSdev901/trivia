@@ -18,17 +18,18 @@ if git diff --cached --quiet; then
 fi
 
 git commit -m "$msg"
+export GIT_TERMINAL_PROMPT=0
 git config pull.rebase false
 
 for attempt in 1 2 3 4 5; do
-  git fetch origin main
-  if ! git merge --no-edit origin/main; then
+  echo "Syncing main before push (attempt ${attempt})..."
+  if ! git pull --no-rebase --no-edit origin main; then
     echo "Merge conflict — keeping this job's current-events files."
     git checkout --ours -- data/current-events/ || true
     git add data/current-events/
     git commit --no-edit || true
   fi
-  if git push origin HEAD:main; then
+  if git push origin HEAD; then
     echo "Pushed on attempt ${attempt}."
     exit 0
   fi
