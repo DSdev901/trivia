@@ -696,6 +696,8 @@ function memorableSummary(group) {
   for (const item of ranked) {
     const fromSum = firstSentences(item.summary).filter((s) => {
       if (isJunkFact(s)) return false;
+      if (/\$[\d.,]+|\b\d[\d.]*\s*(?:million|billion)\b/i.test(s)) return true;
+      if (/\b(?:at|age[d]?)\s+\d{1,3}\b|\b\d{1,3}\s+years old\b/i.test(s)) return true;
       return sharedCount(headTok, new Set(clusterTokens(s))) >= 2;
     });
     if (fromSum.length) consider.push(...fromSum);
@@ -783,18 +785,35 @@ function mentionCount(group, name) {
 
 function clusterAngles(ranked, bestHeadline) {
   if (ranked.length < 2) return [];
-  const seen = [bestHeadline];
+  const seenHead = [bestHeadline];
+  const seenFact = [];
   const angles = [];
   for (const item of ranked) {
     const headline = String(item.headline || "").trim();
-    if (!headline) continue;
-    if (seen.some((s) => sentenceOverlap(s, headline) >= 0.5)) continue;
-    seen.push(headline);
     const fact = firstSentences(item.summary).find((s) => !isJunkFact(s)) || "";
-    const row = { headline };
-    if (fact && sentenceOverlap(headline, fact) < 0.55) row.fact = fact;
+    const headDup =
+      Boolean(headline) &&
+      seenHead.some((s) => sentenceOverlap(s, headline) >= 0.5);
+    const factUseful =
+      Boolean(fact) &&
+      !seenFact.some((s) => sentenceOverlap(s, fact) >= 0.5) &&
+      (!headline || sentenceOverlap(headline, fact) < 0.55);
+    if (headDup && !factUseful) continue;
+    const row = {};
+    if (headline && !headDup) {
+      row.headline = headline;
+      seenHead.push(headline);
+    } else if (headline) {
+      row.headline = headline;
+    }
+    if (factUseful) {
+      row.fact = fact;
+      seenFact.push(fact);
+    }
+    if (!row.headline && !row.fact) continue;
+    if (!row.headline) row.headline = seenHead[0];
     angles.push(row);
-    if (angles.length >= 5) break;
+    if (angles.length >= 12) break;
   }
   return angles;
 }

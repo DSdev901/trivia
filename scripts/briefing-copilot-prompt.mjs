@@ -37,6 +37,7 @@ const input = {
       summary: item.summary,
       section: item.section,
       tag: item.tag,
+      coverage: item.coverage || 1,
     };
     if (Array.isArray(item.angles) && item.angles.length) {
       row.angles = item.angles;

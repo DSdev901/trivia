@@ -26,12 +26,13 @@ export async function writeBriefingFile({
   source = "heuristic",
   model = null,
 } = {}) {
-  const data = {
-    sports: await readFeed("sports"),
-    entertainment: await readFeed("entertainment"),
-  };
-  const built = buildBriefing(data);
-  const filled = await enrichThinSummaries(built.items, {
+  const sports = await readFeed("sports");
+  const entertainment = await readFeed("entertainment");
+  const sourceItems = [
+    ...(sports?.items || []),
+    ...(entertainment?.items || []),
+  ];
+  const filled = await enrichThinSummaries(sourceItems, {
     minLen: 80,
     espn: true,
     page: true,
@@ -39,8 +40,9 @@ export async function writeBriefingFile({
     missingOnly: true,
   });
   if (filled) {
-    console.log(`  [briefing] filled missing figures on ${filled} stories`);
+    console.log(`  [briefing] filled missing names/figures on ${filled} source stories`);
   }
+  const built = buildBriefing({ sports, entertainment });
   const payload = {
     section: "briefing",
     source,
