@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-14T17:33:04.387Z",
+  "generatedAt": "2026-08-14T17:57:53.691Z",
   "retentionDays": 21,
-  "windowStart": "2026-07-24T17:33:04.387Z",
-  "windowEnd": "2026-08-14T17:33:04.387Z",
+  "windowStart": "2026-07-24T17:57:53.691Z",
+  "windowEnd": "2026-08-14T17:57:53.691Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,19 @@
     "Tennis",
     "MMA"
   ],
-  "count": 932,
+  "count": 931,
   "items": [
+    {
+      "key": "40699880",
+      "id": "40699880",
+      "headline": "Fantasy football buzz: Thursday takeaways include potential draft bump for Spears",
+      "summary": "With Chuba Hubbard nursing a hamstring injury, 2024 second-rounder Jonathon Brooks has a chance to show what he can do.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "sport": "NFL",
+      "published": "2026-08-14T17:14:01.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
     {
       "key": "49610507",
       "id": "49610507",
@@ -41,7 +52,7 @@
       "summary": "McCarthy on his Steelers coaching debut: 'It was very emotional'",
       "url": "https://www.espn.com/video/clip/_/id/49610646/was-very-emotional",
       "sport": "NFL",
-      "published": "2026-08-14T16:59:36.000Z",
+      "published": "2026-08-14T17:00:21.000Z",
       "firstSeen": "2026-08-14T17:33:04.387Z",
       "bestRank": 1
     },
@@ -458,7 +469,7 @@
       "headline": "2027 NFL draft: College football teams with most top prospects",
       "summary": "Which schools have the most -- and best -- talent for the 2027 NFL draft? We picked out a dozen must-watch rosters full of potential early-rounders.",
       "url": "https://www.espn.com/nfl/draft2027/story/_/id/49583503/2027-nfl-draft-prospect-heavy-college-teams-texas-oregon-notre-dame-miami",
-      "sport": "College football",
+      "sport": "NFL",
       "published": "2026-08-14T12:58:39.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 4
@@ -469,7 +480,7 @@
       "headline": "Don't miss \"The Trade\" with Andscape's Kelley L. Carter",
       "summary": "Don't miss \"The Trade\" with Andscape's Kelley L. Carter",
       "url": "https://www.espn.com/video/clip/_/id/49608832/miss-trade-andscape-kelley-l-carter",
-      "sport": "Women's college basketball",
+      "sport": "NBA",
       "published": "2026-08-14T12:43:46.000Z",
       "firstSeen": "2026-08-14T15:15:56.143Z",
       "bestRank": 1
@@ -2320,17 +2331,6 @@
       "sport": "NBA",
       "published": "2026-08-13T19:36:47.000Z",
       "firstSeen": "2026-08-12T21:31:05.036Z",
-      "bestRank": 2
-    },
-    {
-      "key": "40699880",
-      "id": "40699880",
-      "headline": "Fantasy football buzz: Big opportunity for Jonathon Brooks; Jordyn Tyson injured",
-      "summary": "With Chuba Hubbard nursing a hamstring injury, 2024 second-rounder Jonathon Brooks has a chance to show what he can do.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "sport": "NFL",
-      "published": "2026-08-13T19:35:09.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
       "bestRank": 2
     },
     {
@@ -4231,7 +4231,7 @@
       "headline": "Rory: I'd love to give LeBron a golf lesson",
       "summary": "Rory: I'd love to give LeBron a golf lesson",
       "url": "https://www.espn.com/video/clip/_/id/49592244/love-give-lebron-golf-lesson",
-      "sport": "Golf",
+      "sport": "NBA",
       "published": "2026-08-12T19:15:37.000Z",
       "firstSeen": "2026-08-12T21:31:05.036Z",
       "bestRank": 2
@@ -4990,7 +4990,7 @@
       "headline": "What brought Cole Anthony to the NBL?",
       "summary": "Melbourne United shocked the NBL world when they announced the signing of Cole Anthony, but ESPN's Olgun Uluc asked him what go him over the line?",
       "url": "https://www.espn.com/video/clip/_/id/49588283/what-brought-cole-anthony-nbl",
-      "sport": "College basketball",
+      "sport": "NBA",
       "published": "2026-08-12T07:17:41.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
@@ -7366,7 +7366,7 @@
       "headline": "How a trip to 'The Sanctuary' transformed top prospect Ahmed Nur's future",
       "summary": "\"The Sanctuary\" is an offseason performance retreat for NBA players, and top high school prospect Ahmed Nur earned an exclusive ticket.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49556001/ahmed-nur-sanctuary-nba-overseas-offseason-factory-andalucia-spain",
-      "sport": "College basketball",
+      "sport": "NBA",
       "published": "2026-08-08T10:26:58.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 6
@@ -10263,17 +10263,6 @@
       "published": "2026-07-24T21:54:29.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 15
-    },
-    {
-      "key": "49431213",
-      "id": "49431213",
-      "headline": "Aston Martin's 'new car' suffers early setback; Adrian Newey still encouraged",
-      "summary": "Aston Martin's revamped Formula 1 car suffered a suspected rear suspension failure in the first practice session of the Hungarian Grand Prix.",
-      "url": "https://www.espn.com/f1/story/_/id/49431213/aston-martins-new-car-suffers-early-setback-adrian-newey-encouraged-hungarian-grand-prix-formula-1-hungaroring",
-      "sport": "F1",
-      "published": "2026-07-24T17:44:20.000Z",
-      "firstSeen": "2026-08-14T12:31:41.741Z",
-      "bestRank": 39
     }
   ]
 }
