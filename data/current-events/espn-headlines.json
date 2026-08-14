@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-14T06:48:05.030Z",
+  "generatedAt": "2026-08-14T09:39:35.868Z",
   "retentionDays": 14,
-  "windowStart": "2026-07-31T06:48:05.030Z",
-  "windowEnd": "2026-08-14T06:48:05.030Z",
+  "windowStart": "2026-07-31T09:39:35.868Z",
+  "windowEnd": "2026-08-14T09:39:35.868Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,206 @@
     "Tennis",
     "MMA"
   ],
-  "count": 769,
+  "count": 794,
   "items": [
+    {
+      "key": "49607343",
+      "id": "49607343",
+      "headline": "Montero, Tigers shut out Guardians without a strikeout, a first in MLB since 2014",
+      "summary": "— Keider Montero pitched three-hit ball into the seventh inning and the Detroit Tigers blanked the Cleveland Guardians 3-0 on Thursday despite failing to record a strikeout.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816511",
+      "sport": "MLB",
+      "published": "2026-08-14T08:11:56.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49607334",
+      "id": "49607334",
+      "headline": "Royals look to stop 4-game slide, take on the Angels",
+      "summary": "Kansas City Royals (49-73, fifth in the AL Central) vs. Los Angeles Angels (48-74, fourth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816529",
+      "sport": "MLB",
+      "published": "2026-08-14T08:03:18.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49607333",
+      "id": "49607333",
+      "headline": "Astros start 3-game series at home against the Mariners",
+      "summary": "Seattle Mariners (57-65, third in the AL West) vs. Houston Astros (62-60, first in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816526",
+      "sport": "MLB",
+      "published": "2026-08-14T08:03:14.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49607329",
+      "id": "49607329",
+      "headline": "Guardians bring home losing streak into matchup against the Padres",
+      "summary": "San Diego Padres (65-57, second in the NL West) vs. Cleveland Guardians (59-63, fourth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816523",
+      "sport": "MLB",
+      "published": "2026-08-14T08:03:10.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49607326",
+      "id": "49607326",
+      "headline": "Brewers face the Dodgers with 1-0 series lead",
+      "summary": "Milwaukee Brewers (75-47, first in the NL Central) vs. Los Angeles Dodgers (73-49, first in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816530",
+      "sport": "MLB",
+      "published": "2026-08-14T08:03:06.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49607325",
+      "id": "49607325",
+      "headline": "Cubs host the Cardinals in first of 3-game series",
+      "summary": "St. Louis Cardinals (61-60, third in the NL Central) vs. Chicago Cubs (71-51, second in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816527",
+      "sport": "MLB",
+      "published": "2026-08-14T08:03:02.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49607324",
+      "id": "49607324",
+      "headline": "Marlins take road skid into matchup against the Reds",
+      "summary": "Miami Marlins (62-60, third in the NL East) vs. Cincinnati Reds (58-62, fourth in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816521",
+      "sport": "MLB",
+      "published": "2026-08-14T08:02:59.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49607323",
+      "id": "49607323",
+      "headline": "Athletics look to stop 3-game skid, play the Rangers",
+      "summary": "Texas Rangers (60-62, second in the AL West) vs. Athletics (47-74, fifth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816531",
+      "sport": "MLB",
+      "published": "2026-08-14T08:02:55.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49607322",
+      "id": "49607322",
+      "headline": "Mets host the Nationals on 3-game home skid",
+      "summary": "Washington Nationals (60-63, fourth in the NL East) vs. New York Mets (53-69, fifth in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816524",
+      "sport": "MLB",
+      "published": "2026-08-14T08:02:51.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49607321",
+      "id": "49607321",
+      "headline": "Blue Jays host the Yankees to start 3-game series",
+      "summary": "New York Yankees (68-53, second in the AL East) vs. Toronto Blue Jays (59-64, fourth in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816522",
+      "sport": "MLB",
+      "published": "2026-08-14T08:02:48.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49607320",
+      "id": "49607320",
+      "headline": "Giants host the Rockies in first of 3-game series",
+      "summary": "Colorado Rockies (48-73, fifth in the NL West) vs. San Francisco Giants (50-71, fourth in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816528",
+      "sport": "MLB",
+      "published": "2026-08-14T08:02:44.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49607319",
+      "id": "49607319",
+      "headline": "Rays take on the Orioles in first of 4-game series",
+      "summary": "Baltimore Orioles (58-63, fifth in the AL East) vs. Tampa Bay Rays (74-46, first in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816518",
+      "sport": "MLB",
+      "published": "2026-08-14T08:02:40.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49607318",
+      "id": "49607318",
+      "headline": "Braves take on the Diamondbacks in first of 3-game series",
+      "summary": "Arizona Diamondbacks (64-58, third in the NL West) vs. Atlanta Braves (73-48, first in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816517",
+      "sport": "MLB",
+      "published": "2026-08-14T08:02:37.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49607317",
+      "id": "49607317",
+      "headline": "Pirates host the Red Sox in first of 3-game series",
+      "summary": "Boston Red Sox (65-56, third in the AL East) vs. Pittsburgh Pirates (59-64, fifth in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816519",
+      "sport": "MLB",
+      "published": "2026-08-14T08:02:33.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 14
+    },
+    {
+      "key": "49607316",
+      "id": "49607316",
+      "headline": "White Sox try to break road slide, play the Tigers",
+      "summary": "Chicago White Sox (62-58, first in the AL Central) vs. Detroit Tigers (60-61, second in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816520",
+      "sport": "MLB",
+      "published": "2026-08-14T08:02:29.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 15
+    },
+    {
+      "key": "49604057",
+      "id": "49604057",
+      "headline": "Sources: Facing charges, Terrion Arnold set to join Seahawks",
+      "summary": "Terrion Arnold, who sources told NFL Network plans to sign a one-year deal with the Seahawks, also had visited the Texans, Saints and Giants before choosing the Seahawks.",
+      "url": "https://www.espn.com/nfl/story/_/id/49604057/sources-terrion-arnold-plans-sign-seahawks",
+      "sport": "NFL",
+      "published": "2026-08-14T07:37:15.000Z",
+      "firstSeen": "2026-08-14T00:40:08.353Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49607082",
+      "id": "49607082",
+      "headline": "Roberts to stick with Diaz as Dodgers' closer after latest meltdown",
+      "summary": "Dodgers closer Edwin Diaz blew his third save in his past four chances Thursday night, but manager Dave Roberts said he'd stick with him as closer, lamenting that the team lacks better options.",
+      "url": "https://www.espn.com/mlb/story/_/id/49607082/roberts-stick-diaz-dodgers-closer-latest-meltdown",
+      "sport": "MLB",
+      "published": "2026-08-14T07:23:57.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 16
+    },
+    {
+      "key": "49605794",
+      "id": "49605794",
+      "headline": "Rangers' Jacob deGrom exits start due to triceps fatigue",
+      "summary": "Rangers pitcher Jacob deGrom left Thursday night's start against the Angels after two innings because of right triceps fatigue.",
+      "url": "https://www.espn.com/mlb/story/_/id/49605794/rangers-jacob-degrom-exits-start-due-triceps-fatigue",
+      "sport": "MLB",
+      "published": "2026-08-14T06:38:00.000Z",
+      "firstSeen": "2026-08-14T06:48:05.030Z",
+      "bestRank": 5
+    },
     {
       "key": "49600984",
       "id": "49600984",
@@ -112,15 +310,15 @@
       "bestRank": 4
     },
     {
-      "key": "49605794",
-      "id": "49605794",
-      "headline": "Rangers' Jacob deGrom exits start due to triceps fatigue",
-      "summary": "Rangers pitcher Jacob deGrom left Thursday night's start against the Angels after two innings because of right triceps fatigue.",
-      "url": "https://www.espn.com/mlb/story/_/id/49605794/rangers-jacob-degrom-exits-start-due-triceps-fatigue",
-      "sport": "MLB",
-      "published": "2026-08-14T04:56:31.000Z",
-      "firstSeen": "2026-08-14T06:48:05.030Z",
-      "bestRank": 5
+      "key": "49606140",
+      "id": "49606140",
+      "headline": "Aces hold off Mystics, lock up postseason berth behind Young's 32",
+      "summary": "Jackie Young scored 32 points to help the Aces clinch a playoff berth with an 83-76 win over the Mystics on Thursday night.",
+      "url": "https://www.espn.com/wnba/story/_/id/49606140/aces-hold-mystics-lock-postseason-berth-young-32",
+      "sport": "WNBA",
+      "published": "2026-08-14T04:56:58.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 1
     },
     {
       "key": "49605597",
@@ -156,6 +354,28 @@
       "bestRank": 2
     },
     {
+      "key": "49606039",
+      "id": "49606039",
+      "headline": "Aces secure playoff spot with 83-76 victory over the Mystics",
+      "summary": "— Jackie Young had a season-high 32 points and five 3-pointers, A’ja Wilson added 15 points and the Las Vegas Aces secured a playoff spot with an 83-76 victory over the Washington Mystics on Thursday night.",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857142",
+      "sport": "WNBA",
+      "published": "2026-08-14T04:23:30.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49606010",
+      "id": "49606010",
+      "headline": "Las Vegas Aces vs. Washington Mystics - Game Highlights",
+      "summary": "Watch the Game Highlights from Las Vegas Aces vs. Washington Mystics, 08/13/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49606010/las-vegas-aces-vs-washington-mystics-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-08-14T04:20:07.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 3
+    },
+    {
       "key": "49605693",
       "id": "49605693",
       "headline": "Texans' DeMeco Ryans praises rookie Marlin Klein after catch vs Chargers in his NFL debut",
@@ -189,15 +409,15 @@
       "bestRank": 2
     },
     {
-      "key": "49604057",
-      "id": "49604057",
-      "headline": "Sources: Facing charges, Terrion Arnold set to join Seahawks",
-      "summary": "Terrion Arnold, who sources told NFL Network plans to sign a one-year deal with the Seahawks, also had visited the Texans, Saints and Giants before choosing the Seahawks.",
-      "url": "https://www.espn.com/nfl/story/_/id/49604057/sources-terrion-arnold-plans-sign-seahawks",
-      "sport": "NFL",
-      "published": "2026-08-14T03:59:38.000Z",
-      "firstSeen": "2026-08-14T00:40:08.353Z",
-      "bestRank": 2
+      "key": "49605734",
+      "id": "49605734",
+      "headline": "Monfils ousted in 1st round by Hijikata in final Cincinnati Open",
+      "summary": "Gael Monfils, in his 14th and final appearance at the Cincinnati Open, lost 2-6, 7-6, 6-3 to Rinky Hijikata in their first-round match Thursday.",
+      "url": "https://www.espn.com/tennis/story/_/id/49605734/monfils-ousted-1st-round-hijikata-final-cincinnati-open",
+      "sport": "Tennis",
+      "published": "2026-08-14T03:43:36.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 1
     },
     {
       "key": "49605302",
@@ -321,6 +541,17 @@
       "bestRank": 11
     },
     {
+      "key": "49605238",
+      "id": "49605238",
+      "headline": "Ionescu scores 20 points and Liberty avoid record collapse to hold off Sparks",
+      "summary": "— Sabrina Ionescu scored 20 points and the New York Liberty avoided one of the biggest collapses in WNBA history, holding off the Los Angeles Sparks 85-81 on Thursday night.",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857141",
+      "sport": "WNBA",
+      "published": "2026-08-14T02:52:29.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 5
+    },
+    {
       "key": "49605408",
       "id": "49605408",
       "headline": "Phillies homer 3 times into the Field of Dreams corn in 7-1 win over Twins, with pair from Schwarber",
@@ -352,6 +583,17 @@
       "published": "2026-08-14T02:38:25.000Z",
       "firstSeen": "2026-08-14T04:00:04.618Z",
       "bestRank": 14
+    },
+    {
+      "key": "49605253",
+      "id": "49605253",
+      "headline": "New York Liberty vs. Los Angeles Sparks - Game Highlights",
+      "summary": "Watch the Game Highlights from New York Liberty vs. Los Angeles Sparks, 08/13/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49605253/new-york-liberty-vs-los-angeles-sparks-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-08-14T02:24:40.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 4
     },
     {
       "key": "49604927",
@@ -409,6 +651,28 @@
       "bestRank": 2
     },
     {
+      "key": "49604811",
+      "id": "49604811",
+      "headline": "Howard, Gray each score 29 points as the Dream ease by the Sun 104-69",
+      "summary": "— Rhyne Howard scored 29 points and made five 3-pointers, Allisha Gray also had 29 points, and the Atlanta Dream eased by the Connecticut Sun 104-69 on Thursday night.",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857140",
+      "sport": "WNBA",
+      "published": "2026-08-14T01:27:29.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49604788",
+      "id": "49604788",
+      "headline": "Connecticut Sun vs. Atlanta Dream - Game Highlights",
+      "summary": "Watch the Game Highlights from Connecticut Sun vs. Atlanta Dream, 08/13/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49604788/connecticut-sun-vs-atlanta-dream-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-08-14T01:22:15.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
+      "bestRank": 7
+    },
+    {
       "key": "49434181",
       "id": "49434181",
       "headline": "2026 New York Giants training camp: Latest intel, updates",
@@ -450,6 +714,17 @@
       "sport": "NBA",
       "published": "2026-08-14T00:50:49.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49604440",
+      "id": "49604440",
+      "headline": "Logan Reilly, Carter Loflin survive extra holes to stay alive at Merion",
+      "summary": "Logan Reilly had to go extra holes for the second time to advance in the U.S. Amateur.",
+      "url": "https://www.espn.com/golf/story/_/id/49604440/logan-reilly-carter-loflin-survive-extra-holes-stay-alive-us-amateur",
+      "sport": "Golf",
+      "published": "2026-08-14T00:50:33.000Z",
+      "firstSeen": "2026-08-14T09:39:35.868Z",
       "bestRank": 1
     },
     {
@@ -3098,7 +3373,7 @@
       "headline": "Reports: Sankey reminds SEC schools to follow eligibility rules",
       "summary": "Commissioner Greg Sankey sent a memo to SEC members reminding them to move carefully when adding players suddenly allowed by court rulings to seek a fifth year of eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49593224/reports-sankey-reminds-sec-schools-follow-eligibility-rules",
-      "sport": "Women's college basketball",
+      "sport": "College football",
       "published": "2026-08-12T21:10:17.000Z",
       "firstSeen": "2026-08-13T03:59:55.296Z",
       "bestRank": 1
@@ -4044,7 +4319,7 @@
       "headline": "What brought Cole Anthony to the NBL?",
       "summary": "Melbourne United shocked the NBL world when they announced the signing of Cole Anthony, but ESPN's Olgun Uluc asked him what go him over the line?",
       "url": "https://www.espn.com/video/clip/_/id/49588283/what-brought-cole-anthony-nbl",
-      "sport": "NBA",
+      "sport": "College basketball",
       "published": "2026-08-12T07:17:41.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
@@ -5408,7 +5683,7 @@
       "headline": "NCAA and FBI announce partnership to combat athlete sexploitation",
       "summary": "As college athletes become bigger targets for sexual exploitation online, the NCAA and FBI announced a partnership Monday to educate athletes on how to prevent private images from falling into the wrong hands.",
       "url": "https://www.espn.com/college-sports/story/_/id/49555079/ncaa-fbi-announce-partnership-combat-athlete-sexploitation",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-10T17:55:54.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 2
@@ -6354,7 +6629,7 @@
       "headline": "Senate vote on college sports bill now slated for September",
       "summary": "The Protect College Sports Act failed to reach a vote during an all-night, pre-recess session in the Senate, though the bill did gain a spot on next month's calendar after the chamber comes back from its summer break.",
       "url": "https://www.espn.com/college-sports/story/_/id/49560859/senate-vote-college-sports-bill-slated-september",
-      "sport": "Women's college basketball",
+      "sport": "College football",
       "published": "2026-08-08T16:30:20.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
@@ -6442,7 +6717,7 @@
       "headline": "How a trip to 'The Sanctuary' transformed top prospect Ahmed Nur's future",
       "summary": "\"The Sanctuary\" is an offseason performance retreat for NBA players, and top high school prospect Ahmed Nur earned an exclusive ticket.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49556001/ahmed-nur-sanctuary-nba-overseas-offseason-factory-andalucia-spain",
-      "sport": "NBA",
+      "sport": "College basketball",
       "published": "2026-08-08T10:26:58.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 6
@@ -6585,7 +6860,7 @@
       "headline": "Ex-NBA star Monta Ellis named Alcorn State basketball GM",
       "summary": "Former NBA standout Monta Ellis, who played in the league for more than a decade without playing college basketball, will serve as general manager at Alcorn State this season, the school announced Friday.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49554748/ex-nba-star-monta-ellis-named-alcorn-state-basketball-gm",
-      "sport": "NBA",
+      "sport": "College basketball",
       "published": "2026-08-07T18:54:56.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 8
@@ -6607,7 +6882,7 @@
       "headline": "New Purdue AD admits dig at Indiana was immediate error",
       "summary": "New Purdue athletic director Tommy McClelland is owning that an attempted one-liner at the expense of Indiana was a mistake \"the second it left my mouth.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49554744/new-purdue-ad-admits-dig-indiana-was-immediate-error",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-07T18:47:59.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 3
@@ -6706,7 +6981,7 @@
       "headline": "Mrs. Met, Goldy headline inductions into the Mascot Hall of Fame",
       "summary": "The announcement was made Friday morning on \"Good Morning America,\" with the five mascots on site to receive the news.",
       "url": "https://www.espn.com/mlb/story/_/id/49546890/mascot-hall-fame-inductions-class-2026",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-07T15:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 4
@@ -7168,7 +7443,7 @@
       "headline": "NCAA Division II votes to approve age-based eligibility model",
       "summary": "NCAA Division II will move to the age-based eligibility model that has prompted athlete lawsuits across the country since it was adopted in Division I.",
       "url": "https://www.espn.com/college-sports/story/_/id/49545296/ncaa-division-ii-votes-approve-age-based-eligibility-model",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-06T14:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 5
@@ -7300,7 +7575,7 @@
       "headline": "LSU officials meet with top donors about proposed sports funding plan",
       "summary": "LSU has completed a series of two meetings with top donors to outline what university President Wade Rousse has billed as a \"first of its kind\" revenue-generating proposal for athletics.",
       "url": "https://www.espn.com/college-sports/story/_/id/49542287/lsu-officials-meet-top-donors-proposed-sports-funding-plan",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-06T04:29:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 6
@@ -7476,7 +7751,7 @@
       "headline": "Purdue hires longtime AD Tommy McClelland from Rice",
       "summary": "Purdue has hired Rice athletic director Tommy McClelland as athletic director.",
       "url": "https://www.espn.com/college-sports/story/_/id/49525796/tommy-mcclelland-primary-target-purdue-ad-job-sources-say",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-05T16:48:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 9
@@ -7564,7 +7839,7 @@
       "headline": "Pac-12, MWC finalize settlement over 'poaching,' exit fees",
       "summary": "The Pac-12 and Mountain West have finalized a settlement over \"poaching\" and exit fees ahead of a number of former MWC schools heading to the Pac-12.",
       "url": "https://www.espn.com/college-sports/story/_/id/49535459/pac-12-mwc-finalize-settlement-poaching-exit-fees",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-05T11:31:11.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 7
@@ -7685,7 +7960,7 @@
       "headline": "MEAC signs commissioner Sonja Stills to 5-year extension through '31",
       "summary": "The Mid-Eastern Athletic Conference has signed Commissioner Sonja Stills to a five-year contract extension through 2031.",
       "url": "https://www.espn.com/college-sports/story/_/id/49532583/meac-signs-commissioner-sonja-stills-5-year-extension-2031",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-04T23:55:04.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 8
@@ -8323,7 +8598,7 @@
       "headline": "Sources: Former MLB executive Tim Brosnan to head Big East",
       "summary": "The Big East is expected to hire former MLB executive Tim Brosnan as the league's next commissioner, sources told ESPN.",
       "url": "https://www.espn.com/college-sports/story/_/id/49507446/source-former-mlb-executive-tim-brosnan-head-big-east",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T22:17:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 10
@@ -8345,7 +8620,7 @@
       "headline": "Judge grants injunction for Class of '22 athletes seeking 5th NCAA season",
       "summary": "A federal court dealt a major blow to the NCAA's new eligibility rule when it ruled that all high school class of 2022 athletes who exhausted their fourth season of college eligibility this spring are eligible for a fifth season in 2026-27.",
       "url": "https://www.espn.com/college-football/story/_/id/49501415/judge-grants-injunction-class-22-athletes-seeking-play-5th-ncaa-season",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T12:46:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 12
@@ -8356,7 +8631,7 @@
       "headline": "Big Ten, SEC support college sports bill, reviving Senate chances",
       "summary": "The Big Ten and SEC have agreed to support a Senate bill that seeks to regulate college sports.",
       "url": "https://www.espn.com/college-sports/story/_/id/49501752/big-ten-sec-support-college-sports-bill-reviving-senate-chances",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T12:38:24.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 11
@@ -8367,7 +8642,7 @@
       "headline": "FAU hires Josh McCowan as athletic director",
       "summary": "Josh McCowan was hired as Florida Atlantic vice president and athletic director.",
       "url": "https://www.espn.com/college-football/story/_/id/49498431/fau-hires-josh-mccowan-athletic-director-vice-president",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T11:04:41.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 13
