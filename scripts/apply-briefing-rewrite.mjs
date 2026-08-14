@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Merge Copilot's rewritten summaries onto the slimmed briefing, then
+ * Merge Copilot's rewritten summaries onto the clustered briefing, then
  * write data/current-events/briefing.json. Keeps ranking and metadata.
  *
  * Usage: node scripts/apply-briefing-rewrite.mjs <copilot-output> <input-briefing>

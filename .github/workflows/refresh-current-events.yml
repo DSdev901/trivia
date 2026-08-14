@@ -12,15 +12,6 @@ on:
     # During winter (CST, UTC-6) these fire an hour earlier local time.
     - cron: "0 11,18 * * 2"
   workflow_dispatch:
-    inputs:
-      briefing_pass:
-        description: Copilot briefing size (auto uses remaining credits if readable)
-        type: choice
-        options:
-          - auto
-          - full
-          - slim
-        default: auto
 
 permissions:
   contents: write # needed to push the refreshed data commit
@@ -52,9 +43,9 @@ jobs:
         run: node scripts/refresh-current-events.mjs
 
       # COPILOT_BILLING_TOKEN is optional. Remaining credits are read from
-      # Copilot's quota API when possible. If that fails, pick "full" or
-      # "slim" when running the workflow by hand.
-      - name: Size Copilot briefing pass
+      # Copilot's quota API when possible. Skip Haiku only when remaining is
+      # already 0; a failed or empty rewrite keeps the heuristic ranking.
+      - name: Check Copilot credits
         id: briefing_budget
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -62,8 +53,6 @@ jobs:
           COPILOT_BILLING_USER: DSdev901
           COPILOT_MONTHLY_CREDITS: "1500"
           BRIEFING_MODEL_FULL: claude-haiku-4.5
-          BRIEFING_MODEL_LOW: gemini-3.6-flash
-          BRIEFING_PASS: ${{ github.event.inputs.briefing_pass || 'auto' }}
         run: |
           cp data/current-events/briefing.json /tmp/briefing.fallback.json
           node scripts/briefing-copilot-budget.mjs
@@ -76,9 +65,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COPILOT_MODEL: ${{ steps.briefing_budget.outputs.model }}
         run: |
-          set -o pipefail
           npm install -g @github/copilot
-          echo "Copilot mode=${{ steps.briefing_budget.outputs.mode }} model=${COPILOT_MODEL} keep=${{ steps.briefing_budget.outputs.keep }} max_credits=${{ steps.briefing_budget.outputs.max_credits }} remaining=${{ steps.briefing_budget.outputs.remaining }}"
+          echo "Copilot mode=${{ steps.briefing_budget.outputs.mode }} model=${COPILOT_MODEL} cards=${{ steps.briefing_budget.outputs.keep }} remaining=${{ steps.briefing_budget.outputs.remaining }}"
           node scripts/briefing-copilot-prompt.mjs > /tmp/briefing.prompt.txt
           # Prompt is piped on stdin so JSON quotes are not eaten by the shell.
           # Create/edit tools are excluded: Haiku was calling them without path.
@@ -90,8 +78,8 @@ jobs:
             --excluded-tools=create,edit,apply_patch,bash,powershell \
             --deny-tool=write \
             --deny-tool=shell \
-            --max-ai-credits="${{ steps.briefing_budget.outputs.max_credits }}" \
-            | tee /tmp/briefing.copilot.txt
+            | tee /tmp/briefing.copilot.txt \
+            || true
           if ! node scripts/apply-briefing-rewrite.mjs /tmp/briefing.copilot.txt /tmp/briefing.input.json; then
             echo "Copilot rewrite was unusable — keeping full heuristic ranking."
             cp /tmp/briefing.fallback.json data/current-events/briefing.json

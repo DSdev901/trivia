@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 /**
- * Decide which Copilot model to use and how many clustered briefing
- * cards it should rewrite.
+ * Decide whether Haiku should rewrite the clustered briefing.
  *
  * Remaining credits: Copilot's /copilot_internal/user quota (same API the
  * CLI uses), then GitHub's public billing usage report. The public billing
  * URL often 404s for personal Copilot even with a classic PAT.
  *
- * BRIEFING_PASS=full|slim overrides the automatic size.
+ * If remaining is 0, skip Copilot and keep the heuristic ranking. Otherwise
+ * send the full clustered list with no session credit cap. If Haiku runs
+ * out or the rewrite is unusable, the job keeps the heuristic ranking.
  */
 
 import { readFile, writeFile } from "node:fs/promises";
@@ -18,15 +19,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const FILE = path.join(ROOT, "data", "current-events", "briefing.json");
 const USER = process.env.COPILOT_BILLING_USER || "DSdev901";
 const MONTHLY = Math.max(1, Number(process.env.COPILOT_MONTHLY_CREDITS || 1500));
-const FULL_NEED = Math.max(1, Number(process.env.BRIEFING_FULL_CREDITS || 400));
-const CHEAP_NEED = Math.max(1, Number(process.env.BRIEFING_CHEAP_CREDITS || 80));
-const SLIM_NEED = Math.max(1, Number(process.env.BRIEFING_SLIM_CREDITS || 25));
-const SLIM_KEEP = Math.max(10, Number(process.env.BRIEFING_SLIM_KEEP || 50));
-const SLIM_CAP = Math.max(50, Number(process.env.BRIEFING_SLIM_MAX_CREDITS || 250));
-const FULL_CAP = Math.max(SLIM_CAP, Number(process.env.BRIEFING_FULL_MAX_CREDITS || 800));
-const MODEL_FULL = process.env.BRIEFING_MODEL_FULL || "claude-haiku-4.5";
-const MODEL_LOW = process.env.BRIEFING_MODEL_LOW || "gemini-3.6-flash";
-const PASS = String(process.env.BRIEFING_PASS || "auto").toLowerCase();
+const MODEL = process.env.BRIEFING_MODEL_FULL || "claude-haiku-4.5";
 
 function currentMonth() {
   const now = new Date();
@@ -79,33 +72,32 @@ function usedFromUsageItems(data) {
 
 function remainingFromCopilotUser(data) {
   const snaps = data?.quota_snapshots || {};
-  const preferred = [
-    "premium_interactions",
-    "premium",
-    "chat",
-    "ai_credits",
-    "credits",
-  ];
-  const names = [
-    ...preferred.filter((k) => snaps[k]),
-    ...Object.keys(snaps).filter((k) => !preferred.includes(k)),
-  ];
-  for (const name of names) {
-    const row = snaps[name];
+  const candidates = [];
+  for (const [name, row] of Object.entries(snaps)) {
     if (!row || typeof row !== "object") continue;
     if (row.unlimited) {
-      return { remaining: MONTHLY, used: 0, via: `copilot ${name} unlimited` };
+      return {
+        remaining: MONTHLY,
+        used: 0,
+        entitlement: MONTHLY,
+        via: `copilot ${name} unlimited`,
+      };
     }
     const remaining = Number(row.remaining ?? row.quota_remaining);
     const entitlement = Number(row.entitlement);
-    if (Number.isFinite(remaining)) {
-      const used = Number.isFinite(entitlement)
+    if (!Number.isFinite(remaining)) continue;
+    candidates.push({
+      remaining: Math.max(0, remaining),
+      used: Number.isFinite(entitlement)
         ? Math.max(0, entitlement - remaining)
-        : null;
-      return { remaining: Math.max(0, remaining), used, via: `copilot ${name}` };
-    }
+        : null,
+      entitlement: Number.isFinite(entitlement) ? entitlement : null,
+      via: `copilot ${name}`,
+    });
   }
-  return null;
+  if (!candidates.length) return null;
+  candidates.sort((a, b) => b.remaining - a.remaining);
+  return candidates[0];
 }
 
 async function remainingCredits() {
@@ -175,11 +167,6 @@ async function remainingCredits() {
   };
 }
 
-function capCredits(desired, remaining) {
-  if (remaining == null) return desired;
-  return Math.max(0, Math.min(desired, remaining));
-}
-
 const data = JSON.parse(await readFile(FILE, "utf8"));
 const total = Array.isArray(data.items) ? data.items.length : 0;
 const billed = await remainingCredits().catch((err) => ({
@@ -189,63 +176,35 @@ const billed = await remainingCredits().catch((err) => ({
   probes: [],
 }));
 
-let mode = "slim";
-let model = MODEL_FULL;
-if (PASS === "full") {
-  mode = "full";
-  model = MODEL_FULL;
-} else if (PASS === "slim") {
-  mode = "slim";
-  model = MODEL_FULL;
-} else if (billed.remaining != null && billed.remaining >= FULL_NEED) {
-  mode = "full";
-  model = MODEL_FULL;
-} else if (billed.remaining != null && billed.remaining >= CHEAP_NEED) {
-  mode = "full";
-  model = MODEL_LOW;
-} else if (billed.remaining != null && billed.remaining >= SLIM_NEED) {
-  mode = "slim";
-  model = MODEL_LOW;
-} else if (billed.remaining != null) {
-  mode = "skip";
-  model = MODEL_LOW;
-}
+const skip = billed.remaining === 0;
+const mode = skip ? "skip" : "full";
 
-const keep = mode === "slim" ? Math.min(SLIM_KEEP, total) : total;
-const maxCredits = capCredits(mode === "full" ? FULL_CAP : SLIM_CAP, billed.remaining);
-
-if (mode === "slim" && keep < total) {
-  data.items = data.items.slice(0, keep);
-  await writeFile(FILE, `${JSON.stringify(data, null, 2)}\n`);
-}
-
+const pool = billed.entitlement || MONTHLY;
 const remainingLabel =
   billed.remaining == null
     ? `unknown (${billed.reason})`
     : `${billed.remaining} remaining${
-        billed.used == null ? "" : ` of ${MONTHLY} (used ${billed.used})`
+        billed.used == null ? "" : ` of ${pool} (used ${billed.used})`
       } — ${billed.reason}`;
 
 const lines = [
   `  [briefing] clustered stories: ${total}`,
   `  [briefing] Copilot credits: ${remainingLabel}`,
-  `  [briefing] pass override: ${PASS}`,
-  mode === "skip"
-    ? `  [briefing] mode: skip — not enough credits for Copilot; keeping full heuristic ranking`
-    : `  [briefing] mode: ${mode} — ${model}, ${keep} cards, session cap ${maxCredits}`,
+  skip
+    ? `  [briefing] mode: skip — no credits left; keeping full heuristic ranking`
+    : `  [briefing] mode: full — ${MODEL}, ${total} cards, no session credit cap`,
 ];
 console.log(lines.join("\n"));
 
-const out = process.env.GITHUB_OUTPUT;
-if (out) {
+const githubOut = process.env.GITHUB_OUTPUT;
+if (githubOut) {
   await writeFile(
-    out,
+    githubOut,
     [
       `mode=${mode}`,
-      `skip=${mode === "skip"}`,
-      `keep=${keep}`,
-      `max_credits=${maxCredits}`,
-      `model=${model}`,
+      `skip=${skip}`,
+      `keep=${total}`,
+      `model=${MODEL}`,
       `remaining=${billed.remaining == null ? "unknown" : billed.remaining}`,
       "",
     ].join("\n"),

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Build the Copilot prompt with the slimmed briefing inlined so the model
+ * Build the Copilot prompt with the clustered briefing inlined so the model
  * does not need create/edit tools (those calls were dropping path/file_text).
  */
 
