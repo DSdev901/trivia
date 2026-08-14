@@ -1,18 +1,26 @@
-/** Captured trivia photos stored on the Postgres API. */
+/** Captured trivia questions parsed from photos. */
 
 const PIN_KEY = "trivia.uploadPin";
 const API_KEY = "trivia.apiBase";
 
 const cap = {
   root: null,
+  mode: "browse", // "browse" | "upload"
   items: [],
   notice: "",
   error: "",
   uploading: false,
-  selectedId: null,
+  uploadProgress: "",
   configured: false,
   base: "",
+  search: "",
+  photoOpen: new Set(),
+  editingId: null,
 };
+
+function sitePrefix() {
+  return /question_upload/.test(location.pathname) ? "../" : "";
+}
 
 function escapeHtml(s) {
   return String(s ?? "")
@@ -38,7 +46,7 @@ async function configuredBase() {
   const fromStorage = savedApiBase();
   if (fromStorage) return fromStorage;
   try {
-    const res = await fetch("data/api.json");
+    const res = await fetch(`${sitePrefix()}data/api.json`);
     if (res.ok) {
       const cfg = await res.json();
       if (cfg.baseUrl) return String(cfg.baseUrl).replace(/\/$/, "");
@@ -52,6 +60,14 @@ async function configuredBase() {
 function photoUrl(base, id, size) {
   const qs = size === "thumb" ? "?size=thumb" : "";
   return `${base}/api/photos/${id}${qs}`;
+}
+
+function withUrls(item) {
+  return {
+    ...item,
+    thumbUrl: photoUrl(cap.base, item.id, "thumb"),
+    fullUrl: photoUrl(cap.base, item.id),
+  };
 }
 
 function apiHeaders(extra = {}) {
@@ -89,133 +105,157 @@ async function apiFetch(base, path, options = {}) {
   return res;
 }
 
-function fmtWhen(iso) {
-  const d = new Date(iso);
-  if (Number.isNaN(d.getTime())) return "";
-  return d.toLocaleString(undefined, {
-    month: "short",
-    day: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
-  });
+function visibleItems() {
+  const q = cap.search.trim().toLowerCase();
+  if (!q) return cap.items;
+  return cap.items.filter((item) =>
+    [item.question, item.answer, item.note, item.extracted_text].some((s) =>
+      String(s || "").toLowerCase().includes(q)
+    )
+  );
 }
 
 function settingsHtml(base) {
   return `
-    <details class="cap-settings">
-      <summary>Add or remove photos</summary>
-      <p class="lede">Anyone can view the photos. The PIN is only for uploading, editing, or deleting.</p>
-      <form id="cap-settings-form" class="cap-form">
-        <label class="voice-field">
-          <span>API URL</span>
-          <input type="url" id="cap-api-url" placeholder="https://your-app.up.railway.app" value="${escapeHtml(
-            savedApiBase() || base
-          )}" />
-        </label>
-        <label class="voice-field">
-          <span>Upload PIN</span>
-          <input type="password" id="cap-pin" autocomplete="current-password" value="${escapeHtml(
-            savedPin()
-          )}" />
-        </label>
-        <div class="setup-actions">
-          <button type="submit" class="secondary-btn">Save</button>
-        </div>
-      </form>
-    </details>`;
-}
-
-function cardHtml(item) {
-  return `
-    <button type="button" class="cap-card" data-id="${escapeHtml(item.id)}">
-      <img class="cap-thumb" src="${escapeHtml(item.thumbUrl)}" alt="" />
-      <span class="cap-card-meta">
-        <span class="cap-card-date">${escapeHtml(fmtWhen(item.created_at))}</span>
-        ${item.note ? `<span class="cap-card-note">${escapeHtml(item.note)}</span>` : ""}
-      </span>
-    </button>`;
-}
-
-function detailHtml(item) {
-  if (!item) return "";
-  const write = canWrite();
-  return `
-    <section class="cap-detail">
-      <img class="cap-full" src="${escapeHtml(item.fullUrl)}" alt="Original photo" />
-      ${
-        write
-          ? `<form id="cap-note-form" class="cap-form">
-        <label class="voice-field">
-          <span>Note</span>
-          <textarea id="cap-note" rows="3" maxlength="2000" placeholder="Question, answer, or where this card is from">${escapeHtml(
-            item.note || ""
-          )}</textarea>
-        </label>
-        ${
-          item.extracted_text
-            ? `<p class="lede"><strong>Extracted text</strong> ${escapeHtml(item.extracted_text)}</p>`
-            : ""
-        }
-        <div class="setup-actions">
-          <button type="submit" class="primary-btn">Save note</button>
-          <button type="button" class="secondary-btn" id="cap-close">Back to grid</button>
-          <button type="button" class="text-btn" id="cap-delete">Delete photo</button>
-        </div>
-      </form>`
-          : `<div class="setup-actions">
-        ${item.note ? `<p class="lede">${escapeHtml(item.note)}</p>` : ""}
-        <button type="button" class="secondary-btn" id="cap-close">Back to grid</button>
-      </div>`
-      }
-    </section>`;
+    <form id="cap-settings-form" class="cap-form cap-pin-form">
+      <label class="voice-field">
+        <span>API URL</span>
+        <input type="url" id="cap-api-url" placeholder="https://your-app.up.railway.app" value="${escapeHtml(
+          savedApiBase() || base
+        )}" />
+      </label>
+      <label class="voice-field">
+        <span>Upload PIN</span>
+        <input type="password" id="cap-pin" autocomplete="current-password" value="${escapeHtml(
+          savedPin()
+        )}" />
+      </label>
+      <div class="setup-actions">
+        <button type="submit" class="secondary-btn">Save PIN</button>
+      </div>
+    </form>`;
 }
 
 function uploadHtml() {
   if (!canWrite()) {
-    return `<p class="lede">Photos are public. Open <strong>Add or remove photos</strong> and enter the PIN if you need to upload.</p>`;
+    return `<p class="lede">Save the upload PIN above, then you can add photos from your phone.</p>`;
   }
   return `
     <form id="cap-upload" class="cap-upload">
       <label class="cap-file">
-        <span>Add a photo</span>
-        <input id="cap-file" type="file" accept="image/*" capture="environment" ${
+        <span>Photos</span>
+        <input id="cap-file" type="file" accept="image/*" multiple ${
           cap.uploading ? "disabled" : ""
         } />
       </label>
       <label class="voice-field">
-        <span>Note (optional)</span>
-        <input type="text" id="cap-upload-note" maxlength="2000" placeholder="e.g. Jeopardy board — sports" />
+        <span>Note for this batch (optional)</span>
+        <input type="text" id="cap-upload-note" maxlength="2000" placeholder="e.g. Jeopardy sports, pub quiz week 12" />
       </label>
       <button type="submit" class="primary-btn" ${cap.uploading ? "disabled" : ""}>${
-        cap.uploading ? "Uploading…" : "Upload"
+        cap.uploading ? escapeHtml(cap.uploadProgress || "Uploading…") : "Upload and parse"
       }</button>
     </form>`;
 }
 
+function cardHtml(item) {
+  const write = cap.mode === "upload" && canWrite();
+  const showPhoto = cap.photoOpen.has(item.id);
+  const editing = write && cap.editingId === item.id;
+  const question = item.question || "Question not read yet";
+  const answer = item.answer || "";
+  return `
+    <article class="ce-card cap-qa" data-id="${escapeHtml(item.id)}">
+      ${
+        editing
+          ? `<form class="cap-form cap-edit-form">
+        <label class="voice-field">
+          <span>Question</span>
+          <textarea name="question" rows="3" maxlength="2000">${escapeHtml(item.question || "")}</textarea>
+        </label>
+        <label class="voice-field">
+          <span>Answer</span>
+          <textarea name="answer" rows="2" maxlength="2000">${escapeHtml(item.answer || "")}</textarea>
+        </label>
+        <label class="voice-field">
+          <span>Note</span>
+          <input type="text" name="note" maxlength="2000" value="${escapeHtml(item.note || "")}" />
+        </label>
+        <div class="setup-actions">
+          <button type="submit" class="primary-btn">Save</button>
+          <button type="button" class="secondary-btn" data-cancel-edit>Cancel</button>
+          <button type="button" class="text-btn" data-reparse>Re-parse photo</button>
+        </div>
+      </form>`
+          : `<h3 class="cap-question">${escapeHtml(question)}</h3>
+      ${
+        answer
+          ? `<p class="cap-answer"><span class="cap-answer-label">Answer</span> ${escapeHtml(answer)}</p>`
+          : `<p class="cap-answer cap-answer-missing">No answer parsed yet.</p>`
+      }
+      ${item.note ? `<p class="cap-card-note">${escapeHtml(item.note)}</p>` : ""}`
+      }
+      ${
+        showPhoto
+          ? `<img class="cap-full" src="${escapeHtml(item.fullUrl)}" alt="Original photo" />`
+          : ""
+      }
+      <div class="setup-actions cap-card-actions">
+        <button type="button" class="text-btn" data-toggle-photo>${
+          showPhoto ? "Hide photo" : "Show photo"
+        }</button>
+        ${
+          write && !editing
+            ? `<button type="button" class="text-btn" data-edit>Edit</button>
+        <button type="button" class="text-btn" data-delete>Delete</button>`
+            : ""
+        }
+      </div>
+    </article>`;
+}
+
+function listHtml() {
+  const items = visibleItems();
+  if (!cap.items.length) return `<p class="lede">No cards yet.</p>`;
+  if (!items.length) return `<p class="lede">No cards match that search.</p>`;
+  return `<div class="ce-list" id="cap-list">${items.map(cardHtml).join("")}</div>`;
+}
+
 function render() {
   if (!cap.root) return;
-  const selected = cap.items.find((i) => i.id === cap.selectedId) || null;
-  cap.root.innerHTML = `
+  if (cap.mode === "upload") {
+    cap.root.innerHTML = `
     <div class="cap-head">
       <div>
-        <h2 class="section-title">Captured</h2>
-        <p class="lede">Photos of trivia questions and answers. Anyone can view them; adding or deleting needs the PIN.</p>
+        <h2 class="section-title">Upload questions</h2>
+        <p class="lede">Add photos of trivia questions and answers. They are parsed, then shown in Prior Saucer Trivia.</p>
       </div>
     </div>
     ${settingsHtml(cap.base || "")}
     ${cap.error ? `<p class="error">${escapeHtml(cap.error)}</p>` : ""}
     ${cap.notice ? `<p class="ce-notice">${escapeHtml(cap.notice)}</p>` : ""}
-    ${
-      selected
-        ? detailHtml(selected)
-        : `
     ${uploadHtml()}
-    ${
-      cap.items.length
-        ? `<div class="cap-grid">${cap.items.map(cardHtml).join("")}</div>`
-        : `<p class="lede">No photos yet.</p>`
-    }`
-    }
+    <p class="lede"><a class="ce-link" href="../">Back to trivia home</a></p>
+    ${listHtml()}`;
+    bind();
+    return;
+  }
+  cap.root.innerHTML = `
+    <div class="cap-head">
+      <div>
+        <h2 class="section-title">Prior Saucer Trivia</h2>
+        <p class="lede">Search the questions and answers. The original photo stays hidden unless you choose Show photo.</p>
+      </div>
+    </div>
+    ${cap.error ? `<p class="error">${escapeHtml(cap.error)}</p>` : ""}
+    ${cap.notice ? `<p class="ce-notice">${escapeHtml(cap.notice)}</p>` : ""}
+    <label class="voice-field cap-search">
+      <span>Search</span>
+      <input type="search" id="cap-search" placeholder="Question or answer" value="${escapeHtml(
+        cap.search
+      )}" />
+    </label>
+    ${listHtml()}
   `;
   bind();
 }
@@ -236,40 +276,74 @@ function bind() {
 
   document.getElementById("cap-upload")?.addEventListener("submit", (e) => {
     e.preventDefault();
-    const file = document.getElementById("cap-file")?.files?.[0];
+    const files = [...(document.getElementById("cap-file")?.files || [])];
     const note = document.getElementById("cap-upload-note")?.value || "";
-    if (!file) {
-      cap.error = "Choose a photo first.";
+    if (!files.length) {
+      cap.error = "Choose one or more photos first.";
       render();
       return;
     }
-    void uploadFile(file, note);
+    void uploadFiles(files, note);
   });
 
-  cap.root.querySelectorAll(".cap-card").forEach((btn) => {
+  const search = document.getElementById("cap-search");
+  search?.addEventListener("input", () => {
+    cap.search = search.value;
+    const after = search.closest(".cap-search")?.nextElementSibling;
+    if (after) after.outerHTML = listHtml();
+    bindList();
+  });
+
+  bindList();
+}
+
+function bindList() {
+  cap.root.querySelectorAll("[data-toggle-photo]").forEach((btn) => {
     btn.addEventListener("click", () => {
-      cap.selectedId = btn.dataset.id;
-      cap.error = "";
-      cap.notice = "";
+      const id = btn.closest("[data-id]")?.dataset.id;
+      if (!id) return;
+      if (cap.photoOpen.has(id)) cap.photoOpen.delete(id);
+      else cap.photoOpen.add(id);
       render();
     });
   });
-
-  document.getElementById("cap-close")?.addEventListener("click", () => {
-    cap.selectedId = null;
-    render();
+  cap.root.querySelectorAll("[data-edit]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      cap.editingId = btn.closest("[data-id]")?.dataset.id || null;
+      render();
+    });
   });
-
-  document.getElementById("cap-note-form")?.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const note = document.getElementById("cap-note")?.value || "";
-    void saveNote(cap.selectedId, note);
+  cap.root.querySelectorAll("[data-cancel-edit]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      cap.editingId = null;
+      render();
+    });
   });
-
-  document.getElementById("cap-delete")?.addEventListener("click", () => {
-    if (!cap.selectedId) return;
-    if (!confirm("Delete this photo from Postgres?")) return;
-    void deletePhoto(cap.selectedId);
+  cap.root.querySelectorAll("[data-delete]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.closest("[data-id]")?.dataset.id;
+      if (!id || !confirm("Delete this card?")) return;
+      void deletePhoto(id);
+    });
+  });
+  cap.root.querySelectorAll("[data-reparse]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.closest("[data-id]")?.dataset.id;
+      if (id) void reparsePhoto(id);
+    });
+  });
+  cap.root.querySelectorAll(".cap-edit-form").forEach((form) => {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const id = form.closest("[data-id]")?.dataset.id;
+      if (!id) return;
+      const data = new FormData(form);
+      void saveCard(id, {
+        question: data.get("question") || "",
+        answer: data.get("answer") || "",
+        note: data.get("note") || "",
+      });
+    });
   });
 }
 
@@ -285,61 +359,81 @@ async function loadItems() {
   }
   try {
     const data = await apiFetch(cap.base, "/api/photos");
-    cap.items = (data.items || []).map((item) => ({
-      ...item,
-      thumbUrl: photoUrl(cap.base, item.id, "thumb"),
-      fullUrl: photoUrl(cap.base, item.id),
-    }));
+    cap.items = (data.items || []).map(withUrls);
     cap.configured = true;
   } catch (err) {
     cap.items = [];
     cap.configured = false;
-    cap.error = `Could not load photos. ${err.message}`;
+    cap.error = `Could not load cards. ${err.message}`;
   }
   render();
 }
 
-async function uploadFile(file, note) {
+async function uploadFiles(files, note) {
   cap.uploading = true;
   cap.error = "";
   cap.notice = "";
-  render();
+  let ok = 0;
+  const failed = [];
+  for (let i = 0; i < files.length; i += 1) {
+    cap.uploadProgress = `Uploading and parsing ${i + 1} of ${files.length}…`;
+    render();
+    try {
+      const body = new FormData();
+      body.append("photo", files[i]);
+      if (note) body.append("note", note);
+      await apiFetch(cap.base, "/api/photos", { method: "POST", body });
+      ok += 1;
+    } catch (err) {
+      failed.push(files[i].name || `photo ${i + 1}`);
+      if (err.status === 401) {
+        cap.uploading = false;
+        cap.uploadProgress = "";
+        cap.error = "Upload PIN is missing or wrong.";
+        render();
+        return;
+      }
+    }
+  }
+  cap.uploading = false;
+  cap.uploadProgress = "";
+  cap.notice =
+    failed.length === 0
+      ? `Parsed ${ok} card${ok === 1 ? "" : "s"}.`
+      : `Parsed ${ok}. Could not upload: ${failed.join(", ")}.`;
+  await loadItems();
+}
+
+async function saveCard(id, fields) {
   try {
-    const body = new FormData();
-    body.append("photo", file);
-    if (note) body.append("note", note);
-    await apiFetch(cap.base, "/api/photos", { method: "POST", body });
-    cap.notice = "Photo stored in Postgres.";
-    cap.uploading = false;
-    await loadItems();
+    const row = await apiFetch(cap.base, `/api/photos/${id}`, {
+      method: "PATCH",
+      json: fields,
+    });
+    const item = cap.items.find((i) => i.id === id);
+    if (item) Object.assign(item, withUrls(row));
+    cap.editingId = null;
+    cap.notice = "Card saved.";
+    render();
   } catch (err) {
-    cap.uploading = false;
     cap.error =
-      err.status === 401
-        ? "Upload PIN is missing or wrong. Save it under Add or remove photos."
-        : err.message;
+      err.status === 401 ? "Upload PIN is missing or wrong." : err.message;
     render();
   }
 }
 
-async function saveNote(id, note) {
+async function reparsePhoto(id) {
+  cap.notice = "Re-reading the photo…";
+  render();
   try {
-    const row = await apiFetch(cap.base, `/api/photos/${id}`, {
-      method: "PATCH",
-      json: { note },
-    });
+    const row = await apiFetch(cap.base, `/api/photos/${id}/parse`, { method: "POST" });
     const item = cap.items.find((i) => i.id === id);
-    if (item) Object.assign(item, row, {
-      thumbUrl: photoUrl(cap.base, id, "thumb"),
-      fullUrl: photoUrl(cap.base, id),
-    });
-    cap.notice = "Note saved.";
+    if (item) Object.assign(item, withUrls(row));
+    cap.editingId = null;
+    cap.notice = "Question and answer updated from the photo.";
     render();
   } catch (err) {
-    cap.error =
-      err.status === 401
-        ? "Upload PIN is missing or wrong."
-        : err.message;
+    cap.error = err.message;
     render();
   }
 }
@@ -347,41 +441,61 @@ async function saveNote(id, note) {
 async function deletePhoto(id) {
   try {
     await apiFetch(cap.base, `/api/photos/${id}`, { method: "DELETE" });
-    cap.selectedId = null;
-    cap.notice = "Photo deleted.";
-    await loadItems();
+    cap.items = cap.items.filter((i) => i.id !== id);
+    cap.photoOpen.delete(id);
+    if (cap.editingId === id) cap.editingId = null;
+    cap.notice = "Card deleted.";
+    render();
   } catch (err) {
     cap.error =
-      err.status === 401
-        ? "Upload PIN is missing or wrong."
-        : err.message;
+      err.status === 401 ? "Upload PIN is missing or wrong." : err.message;
     render();
   }
 }
 
 export async function renderCaptured({ els }) {
   cap.root = els.captured;
-  cap.selectedId = null;
+  cap.mode = "browse";
+  cap.editingId = null;
   cap.notice = "";
   cap.error = "";
-  cap.root.innerHTML = `<p class="lede">Loading captured photos…</p>`;
+  cap.root.innerHTML = `<p class="lede">Loading Prior Saucer Trivia…</p>`;
+  await loadItems();
+}
+
+export async function renderQuestionUpload({ root }) {
+  cap.root = root;
+  cap.mode = "upload";
+  cap.editingId = null;
+  cap.notice = "";
+  cap.error = "";
+  cap.root.innerHTML = `<p class="lede">Loading upload…</p>`;
   await loadItems();
 }
 
 export function capturedCanGoBack() {
-  return Boolean(cap.selectedId);
+  if (cap.editingId) return true;
+  if (cap.photoOpen.size) return true;
+  return false;
 }
 
 export function capturedGoBack() {
-  if (!cap.selectedId) return false;
-  cap.selectedId = null;
-  cap.error = "";
-  render();
-  return true;
+  if (cap.editingId) {
+    cap.editingId = null;
+    render();
+    return true;
+  }
+  if (cap.photoOpen.size) {
+    cap.photoOpen.clear();
+    render();
+    return true;
+  }
+  return false;
 }
 
 export function cleanupCaptured() {
   cap.root = null;
   cap.items = [];
-  cap.selectedId = null;
+  cap.editingId = null;
+  cap.photoOpen.clear();
 }

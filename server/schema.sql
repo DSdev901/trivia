@@ -11,7 +11,12 @@ CREATE TABLE IF NOT EXISTS photos (
   image BYTEA NOT NULL,
   thumb BYTEA,
   note TEXT,
-  extracted_text TEXT
+  extracted_text TEXT,
+  question TEXT,
+  answer TEXT
 );
 
 CREATE INDEX IF NOT EXISTS photos_created_at_idx ON photos (created_at DESC);
+
+ALTER TABLE photos ADD COLUMN IF NOT EXISTS question TEXT;
+ALTER TABLE photos ADD COLUMN IF NOT EXISTS answer TEXT;

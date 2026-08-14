@@ -6,6 +6,7 @@ import sharp from "sharp";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { migrate, query } from "./db.js";
+import { parseConfigured, parseTriviaCard } from "./parse-photo.js";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const APP_ROOT = path.resolve(HERE, "..");
@@ -63,7 +64,7 @@ function requirePin(req, res, next) {
 app.get("/api/health", async (_req, res) => {
   try {
     await query("SELECT 1");
-    res.json({ ok: true, pin: Boolean(UPLOAD_PIN) });
+    res.json({ ok: true, pin: Boolean(UPLOAD_PIN), parse: parseConfigured() });
   } catch (err) {
     res.status(503).json({ ok: false, error: err.message });
   }
@@ -75,10 +76,28 @@ if (!SERVE_FRONTEND) {
   });
 }
 
-app.get("/api/photos", async (_req, res) => {
+const PHOTO_COLS = `id, created_at, original_name, mime_type, width, height,
+            byte_size, note, extracted_text, question, answer`;
+
+app.get("/api/photos", async (req, res) => {
+  const q = String(req.query.q || "").trim();
+  if (q) {
+    const like = `%${q.replace(/[%_]/g, "\\$&")}%`;
+    const { rows } = await query(
+      `SELECT ${PHOTO_COLS}
+       FROM photos
+       WHERE question ILIKE $1 ESCAPE '\\'
+          OR answer ILIKE $1 ESCAPE '\\'
+          OR note ILIKE $1 ESCAPE '\\'
+          OR extracted_text ILIKE $1 ESCAPE '\\'
+       ORDER BY created_at DESC`,
+      [like]
+    );
+    res.json({ items: rows });
+    return;
+  }
   const { rows } = await query(
-    `SELECT id, created_at, original_name, mime_type, width, height,
-            byte_size, note, extracted_text
+    `SELECT ${PHOTO_COLS}
      FROM photos
      ORDER BY created_at DESC`
   );
@@ -105,12 +124,22 @@ app.get("/api/photos/:id", async (req, res) => {
 });
 
 app.patch("/api/photos/:id", requirePin, async (req, res) => {
-  const note = req.body?.note == null ? null : String(req.body.note).slice(0, 2000);
+  const sets = [];
+  const vals = [req.params.id];
+  const add = (col, value, max) => {
+    vals.push(value == null ? null : String(value).slice(0, max));
+    sets.push(`${col} = $${vals.length}`);
+  };
+  if (req.body?.note !== undefined) add("note", req.body.note, 2000);
+  if (req.body?.question !== undefined) add("question", req.body.question, 2000);
+  if (req.body?.answer !== undefined) add("answer", req.body.answer, 2000);
+  if (!sets.length) {
+    res.status(400).json({ error: "Nothing to update" });
+    return;
+  }
   const { rows } = await query(
-    `UPDATE photos SET note = $2 WHERE id = $1
-     RETURNING id, created_at, original_name, mime_type, width, height,
-               byte_size, note, extracted_text`,
-    [req.params.id, note]
+    `UPDATE photos SET ${sets.join(", ")} WHERE id = $1 RETURNING ${PHOTO_COLS}`,
+    vals
   );
   if (!rows[0]) {
     res.status(404).json({ error: "Not found" });
@@ -126,6 +155,28 @@ app.delete("/api/photos/:id", requirePin, async (req, res) => {
     return;
   }
   res.json({ ok: true });
+});
+
+app.post("/api/photos/:id/parse", requirePin, async (req, res) => {
+  const { rows: found } = await query(`SELECT image FROM photos WHERE id = $1`, [req.params.id]);
+  if (!found[0]?.image) {
+    res.status(404).json({ error: "Not found" });
+    return;
+  }
+  const jpeg = Buffer.isBuffer(found[0].image) ? found[0].image : Buffer.from(found[0].image);
+  try {
+    const parsed = await parseTriviaCard(jpeg);
+    const { rows } = await query(
+      `UPDATE photos
+       SET question = $2, answer = $3, extracted_text = $4
+       WHERE id = $1
+       RETURNING ${PHOTO_COLS}`,
+      [req.params.id, parsed.question || null, parsed.answer || null, parsed.extracted_text || null]
+    );
+    res.json({ ...rows[0], parse_source: parsed.source });
+  } catch (err) {
+    res.status(502).json({ error: err.message });
+  }
 });
 
 app.post("/api/photos", requirePin, upload.single("photo"), async (req, res) => {
@@ -156,12 +207,18 @@ app.post("/api/photos", requirePin, upload.single("photo"), async (req, res) => 
       .jpeg({ quality: 70 })
       .toBuffer();
     const note = req.body?.note ? String(req.body.note).slice(0, 2000) : null;
+    let parsed = { question: "", answer: "", extracted_text: "", source: "none" };
+    try {
+      parsed = await parseTriviaCard(full);
+    } catch (err) {
+      console.error("Parse failed:", err.message);
+    }
     const { rows } = await query(
       `INSERT INTO photos
-        (original_name, mime_type, width, height, byte_size, image, thumb, note)
-       VALUES ($1, 'image/jpeg', $2, $3, $4, $5, $6, $7)
-       RETURNING id, created_at, original_name, mime_type, width, height,
-                 byte_size, note, extracted_text`,
+        (original_name, mime_type, width, height, byte_size, image, thumb, note,
+         extracted_text, question, answer)
+       VALUES ($1, 'image/jpeg', $2, $3, $4, $5, $6, $7, $8, $9, $10)
+       RETURNING ${PHOTO_COLS}`,
       [
         req.file.originalname || null,
         sized.width || meta.width || null,
@@ -170,9 +227,12 @@ app.post("/api/photos", requirePin, upload.single("photo"), async (req, res) => 
         full,
         thumb,
         note,
+        parsed.extracted_text || null,
+        parsed.question || null,
+        parsed.answer || null,
       ]
     );
-    res.status(201).json(rows[0]);
+    res.status(201).json({ ...rows[0], parse_source: parsed.source });
   } catch (err) {
     console.error(err);
     res.status(400).json({ error: "Could not read that image" });

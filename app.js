@@ -151,7 +151,7 @@ function categoryMetaLabel(category) {
     return "maps · pin · capitals · flags";
   }
   if (category?.type === "captured") {
-    return "photos · postgres";
+    return "questions · search";
   }
   return `${category.batchCount} batches`;
 }

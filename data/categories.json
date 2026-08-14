@@ -34,9 +34,9 @@
       "type": "periodic-table"
     },
     {
-      "id": "captured",
-      "name": "Captured",
-      "description": "Photos of trivia questions and answers, stored in Postgres, with the original image to review.",
+      "id": "prior-saucer",
+      "name": "Prior Saucer Trivia",
+      "description": "Questions and answers from uploaded photos. Search the text; show the original picture only if you want it.",
       "type": "captured"
     },
     {
