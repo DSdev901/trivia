@@ -34,6 +34,12 @@
       "type": "periodic-table"
     },
     {
+      "id": "captured",
+      "name": "Captured",
+      "description": "Photos of trivia questions and answers, stored in Postgres, with the original image to review.",
+      "type": "captured"
+    },
+    {
       "id": "geography",
       "name": "Geography",
       "description": "Map quizzes — pin countries and cities, drill capitals and flags, study or type answers.",

@@ -2836,3 +2836,120 @@ body {
     transform: none;
   }
 }
+
+.cap-head {
+  margin-bottom: 1rem;
+}
+
+.cap-settings {
+  margin: 0 0 1.25rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--stripe);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.cap-settings summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.cap-form,
+.cap-upload {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 0.85rem;
+}
+
+.voice-field input,
+.voice-field textarea {
+  font: inherit;
+  color: var(--ink);
+  border: 1px solid var(--stripe);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.65rem 0.8rem;
+}
+
+.voice-field input:focus,
+.voice-field textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+  background: #fff;
+}
+
+.cap-file {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.85rem;
+  margin-top: 1.25rem;
+}
+
+.cap-card {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0;
+  border: 1px solid var(--stripe);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  overflow: hidden;
+}
+
+.cap-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: var(--paper-deep);
+}
+
+.cap-thumb-empty {
+  background: linear-gradient(160deg, var(--accent-soft), var(--paper-deep));
+}
+
+.cap-card-meta {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0 0.7rem 0.7rem;
+}
+
+.cap-card-date {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.cap-card-note {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cap-detail {
+  display: grid;
+  gap: 1rem;
+}
+
+.cap-full {
+  width: min(100%, 720px);
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  background: var(--paper-deep);
+  border: 1px solid var(--stripe);
+}
+

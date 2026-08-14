@@ -1,3 +1,8 @@
 # macOS
 .DS_Store
 ._*
+
+# Photo API
+server/node_modules/
+server/.env
+

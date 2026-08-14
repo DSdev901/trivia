@@ -48,6 +48,12 @@ import {
   geographyGoBack,
   renderGeography,
 } from "./geography.js";
+import {
+  capturedCanGoBack,
+  capturedGoBack,
+  cleanupCaptured,
+  renderCaptured,
+} from "./captured.js";
 
 const els = {
   subtitle: document.getElementById("subtitle"),
@@ -66,6 +72,7 @@ const els = {
   currentEvents: document.getElementById("view-current-events"),
   periodicTable: document.getElementById("view-periodic-table"),
   geography: document.getElementById("view-geography"),
+  captured: document.getElementById("view-captured"),
 };
 
 const VIEWS = [
@@ -81,6 +88,7 @@ const VIEWS = [
   "currentEvents",
   "periodicTable",
   "geography",
+  "captured",
 ];
 
 const state = {
@@ -142,6 +150,9 @@ function categoryMetaLabel(category) {
   if (category?.type === "geography") {
     return "maps · pin · capitals · flags";
   }
+  if (category?.type === "captured") {
+    return "photos · postgres";
+  }
   return `${category.batchCount} batches`;
 }
 
@@ -193,6 +204,11 @@ function openCategory(id) {
   if (category.type === "geography") {
     void renderGeography({ els });
     show("geography");
+    return;
+  }
+  if (category.type === "captured") {
+    void renderCaptured({ els });
+    show("captured");
     return;
   }
   renderHub(category);
@@ -954,6 +970,7 @@ function goHome() {
   stopAllSpeech();
   cleanupPeriodicTable();
   cleanupGeography();
+  cleanupCaptured();
   state.category = null;
   state.batch = null;
   state.president = null;
@@ -1020,6 +1037,13 @@ function goBack() {
     }
     case "geography":
       if (geographyCanGoBack() && geographyGoBack()) {
+        els.subtitle.textContent = state.category.name;
+        break;
+      }
+      goHome();
+      break;
+    case "captured":
+      if (capturedCanGoBack() && capturedGoBack()) {
         els.subtitle.textContent = state.category.name;
         break;
       }
