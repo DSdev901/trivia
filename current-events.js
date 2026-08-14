@@ -820,6 +820,7 @@ function render() {
       stopPlayback();
       ce.tab = btn.dataset.tab;
       ce.notice = "";
+      window.scrollTo(0, 0);
       render();
     });
   });
@@ -844,6 +845,7 @@ function render() {
         ce.briefingSportFilter = btn.dataset.bsfilter;
         ce.briefingShowAll = false;
       }
+      window.scrollTo(0, 0);
       render();
     });
   });

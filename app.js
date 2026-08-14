@@ -93,7 +93,12 @@ const state = {
   lastResult: null,
 };
 
+function scrollPageTop() {
+  window.scrollTo(0, 0);
+}
+
 function show(view) {
+  const changed = state.view !== view;
   state.view = view;
   for (const key of VIEWS) {
     const el = els[key];
@@ -102,6 +107,7 @@ function show(view) {
   }
   els.nav.hidden = view === "categories";
   els.backBtn.hidden = view === "categories";
+  if (changed) scrollPageTop();
 }
 
 function batchLabel(category, n) {
@@ -763,6 +769,7 @@ function renderQuizQuestion() {
     return;
   }
 
+  scrollPageTop();
   const remaining = rotation.remaining.length;
   const progressRemoved = rotation.removed;
   const answered = rotation.answered;

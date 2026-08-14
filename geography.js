@@ -1797,10 +1797,15 @@ function packCardHtml(p) {
     </button>`;
 }
 
+function scrollPageTop() {
+  window.scrollTo(0, 0);
+}
+
 function renderHub() {
   geo.group = null;
   geo.pack = null;
   geo.mode = null;
+  scrollPageTop();
   geo.root.innerHTML = `
     <div class="geo-shell">
       <div class="geo-head">
@@ -1828,6 +1833,7 @@ function renderGroup() {
     renderHub();
     return;
   }
+  scrollPageTop();
   const sections =
     g.sections?.length > 0
       ? g.sections
@@ -1875,6 +1881,7 @@ function renderGroup() {
 
 function renderPackModes() {
   const pack = geo.pack;
+  scrollPageTop();
   geo.root.innerHTML = `
     <div class="geo-shell">
       <div class="geo-head">
@@ -1945,6 +1952,7 @@ function startMode(mode) {
 function renderStudy() {
   const item = byId(geo.selectedId) || geo.items[0];
   geo.selectedId = item?.id || null;
+  scrollPageTop();
   geo.root.innerHTML = `
     <div class="geo-shell geo-play geo-play--study">
       <div class="geo-toolbar">
@@ -2039,6 +2047,7 @@ function renderPlay() {
   }
 
   const showMap = playUsesMap();
+  scrollPageTop();
 
   let prompt = "";
   let controls = "";
@@ -2238,6 +2247,7 @@ function judge(ok, clickedMapId = null, clickedBtn = null) {
 
 function renderDone() {
   const total = geo.queue.length;
+  scrollPageTop();
   geo.root.innerHTML = `
     <div class="geo-shell">
       <div class="quiz-done">
