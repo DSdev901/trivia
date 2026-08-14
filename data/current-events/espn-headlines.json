@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-14T17:05:23.064Z",
+  "generatedAt": "2026-08-14T17:33:04.387Z",
   "retentionDays": 21,
-  "windowStart": "2026-07-24T17:05:23.064Z",
-  "windowEnd": "2026-08-14T17:05:23.064Z",
+  "windowStart": "2026-07-24T17:33:04.387Z",
+  "windowEnd": "2026-08-14T17:33:04.387Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -30,8 +30,19 @@
       "summary": "Kevin Garnett will have a second jersey number retired when the Timberwolves raise his No. 21 to the rafters.",
       "url": "https://www.espn.com/nba/story/_/id/49610507/timberwolves-set-garnett-jersey-retirement-celtics-clash",
       "sport": "NBA",
-      "published": "2026-08-14T16:57:52.000Z",
+      "published": "2026-08-14T17:03:19.000Z",
       "firstSeen": "2026-08-14T16:21:49.860Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49610646",
+      "id": "49610646",
+      "headline": "McCarthy on his Steelers coaching debut: 'It was very emotional'",
+      "summary": "McCarthy on his Steelers coaching debut: 'It was very emotional'",
+      "url": "https://www.espn.com/video/clip/_/id/49610646/was-very-emotional",
+      "sport": "NFL",
+      "published": "2026-08-14T16:59:36.000Z",
+      "firstSeen": "2026-08-14T17:33:04.387Z",
       "bestRank": 1
     },
     {
@@ -101,17 +112,6 @@
       "bestRank": 4
     },
     {
-      "key": "49593818",
-      "id": "49593818",
-      "headline": "Naismith Hall of Fame 2026: Why Parker, Delle Donne, Holdsclaw got in",
-      "summary": "The 1996 U.S. Olympic team, Elena Delle Donne, Chamique Holdsclaw and Candace Parker all helped move the sport forward.",
-      "url": "https://www.espn.com/wnba/story/_/id/49593818/naismith-hall-fame-2026-class-candace-parker-elena-delle-donne-chamique-holdsclaw",
-      "sport": "WNBA",
-      "published": "2026-08-14T15:46:49.000Z",
-      "firstSeen": "2026-08-14T15:15:56.143Z",
-      "bestRank": 1
-    },
-    {
       "key": "49610064",
       "id": "49610064",
       "headline": "Daniel Dopp cautions fantasy managers about Nico Collins' injury history",
@@ -132,17 +132,6 @@
       "published": "2026-08-14T15:43:29.000Z",
       "firstSeen": "2026-08-14T06:48:05.030Z",
       "bestRank": 4
-    },
-    {
-      "key": "49574597",
-      "id": "49574597",
-      "headline": "Ranking all 138 FBS teams in tiers: Who rises to the top?",
-      "summary": "Presenting a tiered ranking of all 138 FBS teams ahead of the 2026 season.",
-      "url": "https://www.espn.com/college-football/story/_/id/49574597/2026-138-fbs-college-football-teams-tiers-rankings",
-      "sport": "College football",
-      "published": "2026-08-14T15:37:45.000Z",
-      "firstSeen": "2026-08-14T15:15:56.143Z",
-      "bestRank": 2
     },
     {
       "key": "49610097",
@@ -187,6 +176,17 @@
       "published": "2026-08-14T15:07:28.000Z",
       "firstSeen": "2026-08-14T15:47:26.827Z",
       "bestRank": 1
+    },
+    {
+      "key": "49574597",
+      "id": "49574597",
+      "headline": "Ranking all 138 FBS teams in tiers: Who rises to the top?",
+      "summary": "Presenting a tiered ranking of all 138 FBS teams ahead of the 2026 season.",
+      "url": "https://www.espn.com/college-football/story/_/id/49574597/2026-138-fbs-college-football-teams-tiers-rankings",
+      "sport": "College football",
+      "published": "2026-08-14T14:55:10.000Z",
+      "firstSeen": "2026-08-14T15:15:56.143Z",
+      "bestRank": 2
     },
     {
       "key": "49603685",
@@ -348,7 +348,7 @@
       "headline": "Hidalgo, Strong among NCAA players inking NIL deals with Unrivaled",
       "summary": "Women's college basketball stars Hannah Hidalgo, Sarah Strong and Madison Booker are among a notable group of NCAA players signing NIL deals with Unrivaled.",
       "url": "https://www.espn.com/womens-college-basketball/story/_/id/49609172/hidalgo-strong-ncaa-players-inking-nil-deals-unrivaled",
-      "sport": "Women's college basketball",
+      "sport": "WNBA",
       "published": "2026-08-14T13:54:23.000Z",
       "firstSeen": "2026-08-14T15:26:38.251Z",
       "bestRank": 1
@@ -458,7 +458,7 @@
       "headline": "2027 NFL draft: College football teams with most top prospects",
       "summary": "Which schools have the most -- and best -- talent for the 2027 NFL draft? We picked out a dozen must-watch rosters full of potential early-rounders.",
       "url": "https://www.espn.com/nfl/draft2027/story/_/id/49583503/2027-nfl-draft-prospect-heavy-college-teams-texas-oregon-notre-dame-miami",
-      "sport": "NFL",
+      "sport": "College football",
       "published": "2026-08-14T12:58:39.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 4
@@ -469,7 +469,7 @@
       "headline": "Don't miss \"The Trade\" with Andscape's Kelley L. Carter",
       "summary": "Don't miss \"The Trade\" with Andscape's Kelley L. Carter",
       "url": "https://www.espn.com/video/clip/_/id/49608832/miss-trade-andscape-kelley-l-carter",
-      "sport": "NFL",
+      "sport": "Women's college basketball",
       "published": "2026-08-14T12:43:46.000Z",
       "firstSeen": "2026-08-14T15:15:56.143Z",
       "bestRank": 1
@@ -550,6 +550,17 @@
       "published": "2026-08-14T12:14:30.000Z",
       "firstSeen": "2026-08-14T15:15:56.143Z",
       "bestRank": 2
+    },
+    {
+      "key": "49593818",
+      "id": "49593818",
+      "headline": "Naismith Hall of Fame 2026: Why Parker, Delle Donne, Holdsclaw got in",
+      "summary": "The 1996 U.S. Olympic team, Elena Delle Donne, Chamique Holdsclaw and Candace Parker all helped move the sport forward.",
+      "url": "https://www.espn.com/wnba/story/_/id/49593818/naismith-hall-fame-2026-class-candace-parker-elena-delle-donne-chamique-holdsclaw",
+      "sport": "WNBA",
+      "published": "2026-08-14T11:39:02.000Z",
+      "firstSeen": "2026-08-14T15:15:56.143Z",
+      "bestRank": 1
     },
     {
       "key": "49600930",
@@ -2999,7 +3010,7 @@
       "headline": "Diana Taurasi tales: Untold stories about retired WNBA legend",
       "summary": "\"We got Diana\" ... and you don't forget a legend like that. Here's a look at Diana Taurasi from teammates who knew her best.",
       "url": "https://www.espn.com/wnba/story/_/id/41444903/diana-taurasi-retires-wnba-legend-phoenix-mercury-uconn-huskies",
-      "sport": "Women's college basketball",
+      "sport": "WNBA",
       "published": "2026-08-13T11:02:53.000Z",
       "firstSeen": "2026-08-13T15:37:22.626Z",
       "bestRank": 1
@@ -4033,7 +4044,7 @@
       "headline": "Reports: Sankey reminds SEC schools to follow eligibility rules",
       "summary": "Commissioner Greg Sankey sent a memo to SEC members reminding them to move carefully when adding players suddenly allowed by court rulings to seek a fifth year of eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49593224/reports-sankey-reminds-sec-schools-follow-eligibility-rules",
-      "sport": "College football",
+      "sport": "College basketball",
       "published": "2026-08-12T21:10:17.000Z",
       "firstSeen": "2026-08-13T03:59:55.296Z",
       "bestRank": 1
@@ -4374,7 +4385,7 @@
       "headline": "Lakers' $12 billion purchase tops record U.S. sports team sales",
       "summary": "The Lakers have been sold for a staggering $12 billion fee. It's a North American sports franchise record. Here are others that sold for big money.",
       "url": "https://www.espn.com/nfl/story/_/id/34060289/most-expensive-sports-franchise-sales",
-      "sport": "NBA",
+      "sport": "WNBA",
       "published": "2026-08-12T16:33:24.000Z",
       "firstSeen": "2026-08-12T15:36:55.019Z",
       "bestRank": 1
@@ -10263,17 +10274,6 @@
       "published": "2026-07-24T17:44:20.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 39
-    },
-    {
-      "key": "49441061",
-      "id": "49441061",
-      "headline": "'No way!' Caitlin Clark reacts to LeBron signing for Sixers",
-      "summary": "'No way!' Caitlin Clark reacts to LeBron signing for Sixers",
-      "url": "https://www.espn.com/video/clip/_/id/49441061/no-way-caitlin-clark-reacts-lebron-signing-sixers",
-      "sport": "Women's college basketball",
-      "published": "2026-07-24T17:26:39.000Z",
-      "firstSeen": "2026-08-14T12:31:41.741Z",
-      "bestRank": 26
     }
   ]
 }
