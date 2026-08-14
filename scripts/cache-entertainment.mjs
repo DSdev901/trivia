@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
  * Snapshot Google News + entertainment RSS and retain every observed story
- * for 14 days. Live feeds only carry a few days of posts, so frequent
- * snapshots are required to keep a two-week window without repeats.
+ * for 21 days. Live feeds only carry a few days of posts, so frequent
+ * snapshots are required to keep a three-week window without repeats.
  *
  * Also publishes data/current-events/entertainment.json so the live tab
  * updates every three hours.

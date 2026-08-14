@@ -1,7 +1,7 @@
 name: Cache Entertainment Headlines
 
 # Google News and RSS only keep a few days of posts. Snapshot every three
-# hours into a rolling 14-day archive and publish entertainment.json so the
+# hours into a rolling 21-day archive and publish entertainment.json so the
 # live Entertainment tab updates with each run.
 
 on:

@@ -1060,6 +1060,7 @@ body {
 
 .ce-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin: 1.25rem 0 1rem;
   border-bottom: 1px solid var(--stripe);
@@ -1067,6 +1068,9 @@ body {
 }
 
 .ce-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: 0.5rem 1.15rem;
   border-radius: 999px;
   border: 1px solid var(--stripe);
@@ -1087,6 +1091,31 @@ body {
   background: var(--accent);
   border-color: var(--accent);
   color: #fff;
+}
+
+.ce-tab-new {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.12rem 0.4rem;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--accent-deep);
+}
+
+.ce-tab.is-active .ce-tab-new {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.ce-briefing-new {
+  margin: 0 0 0.85rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+  font-size: 0.92rem;
+  font-weight: 600;
 }
 
 .ce-window {
@@ -1197,9 +1226,23 @@ body {
 
 .ce-meta {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
+}
+
+.ce-rank {
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  font-size: 0.78rem;
+  min-width: 1.55rem;
+  color: var(--ink-soft);
+}
+
+.ce-who {
+  font-weight: 800;
+  color: var(--ink);
 }
 
 .ce-badge {

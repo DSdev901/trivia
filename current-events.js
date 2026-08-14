@@ -15,6 +15,7 @@ import {
   voiceQualityTip,
 } from "./speech.js";
 import { isLocalHost } from "./env.js";
+import { buildBriefing, highlightPeople } from "./briefing.js";
 
 const SECTIONS = [
   { id: "netflix", label: "Netflix", path: "data/current-events/netflix.json" },
@@ -22,9 +23,18 @@ const SECTIONS = [
   { id: "entertainment", label: "Entertainment", path: "data/current-events/entertainment.json" },
 ];
 
+const TABS = [{ id: "briefing", label: "Briefing" }, ...SECTIONS];
+const BRIEFING_FILTERS = [
+  { id: "all", label: "All" },
+  { id: "sports", label: "Sports" },
+  { id: "entertainment", label: "Entertainment" },
+];
+
 const ce = {
   data: {}, // sectionId -> payload
-  tab: "netflix",
+  briefing: null,
+  tab: "briefing",
+  briefingFilter: "all", // "all" | "sports" | "entertainment"
   netflixFilter: "all", // "all" | "shows" | "movies"
   sportFilter: "all", // "all" | sport label e.g. "NFL"
   refreshing: false,
@@ -173,17 +183,44 @@ async function loadAll(bust = false) {
     SECTIONS.map(async (s) => [s.id, await fetchSection(s, bust)])
   );
   ce.data = Object.fromEntries(entries);
+  try {
+    const briefingSection = {
+      id: "briefing",
+      path: "data/current-events/briefing.json",
+    };
+    ce.briefing = await fetchSection(briefingSection, bust);
+  } catch {
+    ce.briefing = null;
+  }
 }
 
 function latestGeneratedAt() {
-  return Object.values(ce.data)
-    .map((d) => d?.generatedAt)
+  return [ce.briefing?.generatedAt, ...Object.values(ce.data).map((d) => d?.generatedAt)]
     .filter(Boolean)
     .sort()
     .pop();
 }
 
+function briefingPayload() {
+  if (ce.briefing?.items?.length) return ce.briefing;
+  return { ...buildBriefing(ce.data), source: "heuristic", model: null };
+}
+
+function briefingIsNew() {
+  const gen = ce.briefing?.generatedAt;
+  if (!gen) return false;
+  const ageH = (Date.now() - new Date(gen).getTime()) / 3600000;
+  return Number.isFinite(ageH) && ageH >= 0 && ageH <= 36;
+}
+
+function briefingItems() {
+  const items = briefingPayload().items || [];
+  if (ce.briefingFilter === "all") return items;
+  return items.filter((i) => i.section === ce.briefingFilter);
+}
+
 function activeItems() {
+  if (ce.tab === "briefing") return briefingItems();
   const payload = ce.data[ce.tab];
   const items = [...(payload?.items || [])].sort((a, b) =>
     (b.date || "").localeCompare(a.date || "")
@@ -253,6 +290,53 @@ function storyCard(item, idx) {
     </article>`;
 }
 
+function sectionLabel(id) {
+  return TABS.find((t) => t.id === id)?.label || id;
+}
+
+function briefingCard(item, idx) {
+  const people = item.people || [];
+  return `
+    <article class="ce-card ce-story-card" data-idx="${idx}">
+      <div class="ce-meta">
+        <span class="ce-rank" aria-label="Rank ${idx + 1}">${idx + 1}</span>
+        <span class="ce-badge">${escapeHtml(sectionLabel(item.section))}</span>
+        <span class="ce-badge ce-badge-alt">${escapeHtml(item.tag || "News")}</span>
+        <span class="ce-date">${fmtDate(item.date)}</span>
+        ${
+          ce.canSpeak
+            ? `<button type="button" class="ce-speak" data-speak="${idx}" aria-label="Read this story aloud" title="Read aloud">▶</button>`
+            : ""
+        }
+      </div>
+      <h3>${highlightPeople(item.headline, people)}</h3>
+      <p>${highlightPeople(item.summary, people)}</p>
+      ${
+        item.url
+          ? `<a class="ce-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">Read the full story →</a>`
+          : ""
+      }
+    </article>`;
+}
+
+function briefingFilterBar(allItems) {
+  const counts = { all: allItems.length, sports: 0, entertainment: 0 };
+  for (const i of allItems) {
+    if (counts[i.section] != null) counts[i.section] += 1;
+  }
+  return `
+    <div class="ce-filter" role="group" aria-label="Filter briefing">
+      ${BRIEFING_FILTERS.map(
+        (f) => `
+        <button type="button" class="ce-filter-chip ${
+          ce.briefingFilter === f.id ? "is-on" : ""
+        }" data-bfilter="${f.id}">${f.label} <span class="ce-filter-count">${
+          counts[f.id]
+        }</span></button>`
+      ).join("")}
+    </div>`;
+}
+
 function netflixFilterBar(allItems) {
   const counts = { all: allItems.length, shows: 0, movies: 0 };
   for (const i of allItems) counts[netflixKind(i)] += 1;
@@ -303,6 +387,28 @@ function sportFilterBar(allItems) {
 }
 
 function renderBody() {
+  if (ce.tab === "briefing") {
+    const payload = briefingPayload();
+    const allItems = payload.items || [];
+    const items = briefingItems();
+    const rankedBy =
+      payload.source === "copilot-auto"
+        ? "Ranked by GitHub Copilot (Claude Haiku), heaviest stories first."
+        : "Ranked by story weight, heaviest first. Copilot will rewrite this on the next Tuesday refresh.";
+    const freshNote = briefingIsNew()
+      ? `<p class="ce-briefing-new">New Tuesday briefing — last three weeks of sports and entertainment.</p>`
+      : "";
+    if (!items.length) {
+      return `${freshNote}${briefingFilterBar(allItems)}<p class="lede">Nothing found for this filter in the current window.</p>`;
+    }
+    return `
+    ${freshNote}
+    <p class="ce-window">Covering ${fmtRange(payload.windowStart, payload.windowEnd)} · ${
+      items.length
+    } stories · ${rankedBy} Main people are in <strong>bold</strong>.</p>
+    ${briefingFilterBar(allItems)}
+    <div class="ce-list">${items.map(briefingCard).join("")}</div>`;
+  }
   const payload = ce.data[ce.tab];
   if (!payload) return `<p class="error">No data for this section yet.</p>`;
   const items = activeItems();
@@ -336,7 +442,12 @@ function speechPanelHtml() {
   }
   const savedRate = getSavedRate();
   const savedUri = getSavedVoiceUri();
-  const tabLabel = SECTIONS.find((s) => s.id === ce.tab)?.label || "";
+  const tabLabel =
+    TABS.find((s) => s.id === ce.tab)?.label || "";
+  const listenHint =
+    ce.tab === "briefing"
+      ? "Hear the briefing, heaviest stories first."
+      : `Hear the ${tabLabel} feed like a news brief, newest first.`;
   return `
     <section class="speech-panel ce-speech" aria-label="Read aloud">
       <input type="checkbox" class="speech-fold" id="speech-fold-ce" aria-label="Show read-aloud options" />
@@ -344,7 +455,7 @@ function speechPanelHtml() {
         <label class="speech-fold-label" for="speech-fold-ce">Read aloud</label>
         <div class="speech-copy">
           <p class="speech-kicker speech-kicker-wide">Read aloud</p>
-          <p class="speech-lede speech-lede-wide">Hear the ${escapeHtml(tabLabel)} feed like a news brief, newest first.</p>
+          <p class="speech-lede speech-lede-wide">${escapeHtml(listenHint)}</p>
         </div>
         <div class="speech-actions" role="group" aria-label="Playback">
           <button type="button" class="speech-btn speech-btn-primary" id="ce-listen">Listen</button>
@@ -352,7 +463,7 @@ function speechPanelHtml() {
         </div>
       </div>
       <div class="speech-panel-body">
-        <p class="speech-lede speech-lede-mobile">Hear the ${escapeHtml(tabLabel)} feed like a news brief, newest first.</p>
+        <p class="speech-lede speech-lede-mobile">${escapeHtml(listenHint)}</p>
         <div class="speech-settings">
         <label class="voice-field">
           <span>Voice</span>
@@ -397,8 +508,9 @@ function render() {
     <div class="ce-head">
       <div>
         <h2 class="section-title">Current Events</h2>
-        <p class="lede">Netflix originals from the last three weeks, plus ESPN sports and
-        entertainment headlines from the last two weeks — refreshed every few hours.</p>
+        <p class="lede">Sports and entertainment headlines update every few hours.
+        On Tuesday, Copilot ranks those stories from the last three weeks into a briefing.
+        Netflix has its own tab.</p>
       </div>
       <div class="ce-refresh-wrap">
         ${updated ? `<span class="ce-updated">Updated ${timeAgo(updated)}</span>` : ""}
@@ -415,10 +527,14 @@ function render() {
     ${ce.notice ? `<p class="ce-notice">${escapeHtml(ce.notice)}</p>` : ""}
     ${speechPanelHtml()}
     <div class="ce-tabs" role="tablist">
-      ${SECTIONS.map(
+      ${TABS.map(
         (s) => `
         <button type="button" role="tab" class="ce-tab ${s.id === ce.tab ? "is-active" : ""}"
-          data-tab="${s.id}" aria-selected="${s.id === ce.tab}">${s.label}</button>`
+          data-tab="${s.id}" aria-selected="${s.id === ce.tab}">${s.label}${
+            s.id === "briefing" && briefingIsNew()
+              ? `<span class="ce-tab-new">New</span>`
+              : ""
+          }</button>`
       ).join("")}
     </div>
     <div class="ce-body">${renderBody()}</div>
@@ -438,6 +554,7 @@ function render() {
       stopPlayback();
       if (btn.dataset.nfilter) ce.netflixFilter = btn.dataset.nfilter;
       if (btn.dataset.sfilter) ce.sportFilter = btn.dataset.sfilter;
+      if (btn.dataset.bfilter) ce.briefingFilter = btn.dataset.bfilter;
       render();
     });
   });
@@ -572,6 +689,7 @@ async function refreshData() {
       sports: payload.sports,
       entertainment: payload.entertainment,
     };
+    ce.briefing = payload.briefing || ce.briefing;
     ce.notice = "Live data pulled just now.";
   } catch {
     await loadAll(true);
@@ -587,7 +705,7 @@ async function refreshData() {
 
 export async function renderCurrentEvents({ els }) {
   ce.root = els.currentEvents;
-  ce.tab = "netflix";
+  ce.tab = "briefing";
   ce.notice = "";
   ce.canSpeak = speechSupported();
   if (!Object.keys(ce.data).length) {

@@ -5,8 +5,8 @@
  *   node scripts/refresh-current-events.mjs
  *
  * Sources (no API keys, no dependencies):
- *   Sports        — ESPN only (rolling 14-day archive, published every 3h)
- *   Entertainment — Google News + RSS (rolling 14-day archive, published every 3h)
+ *   Sports        — ESPN only (rolling 21-day archive, published every 3h)
+ *   Entertainment — Google News + RSS (rolling 21-day archive, published every 3h)
  *   Netflix       — TVMaze web schedule first, then whats-on-netflix
  *                   listings, then Wikipedia originals lists. Cards are
  *                   merged field-wise (no duplicate titles); each keeps a
@@ -18,6 +18,7 @@
 
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
+import { writeBriefingFile } from "./write-briefing.mjs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import {
@@ -137,10 +138,10 @@ function guessSport(text, league) {
  * Sports is ESPN-only. The three-hour cache job owns the live Sports tab
  * (espn-headlines.json → sports.json). This builder reads that archive so
  * the Tuesday full refresh doesn't wipe sports with Google News stories.
- * Window is 14 days to match the rolling cache.
+ * Window is 21 days to match the rolling cache.
  */
 async function buildSports() {
-  const sportsStart = new Date(now.getTime() - 14 * 86400000)
+  const sportsStart = new Date(now.getTime() - WINDOW_DAYS * 86400000)
     .toISOString()
     .slice(0, 10);
   const seen = new Set();
@@ -265,7 +266,7 @@ function fuzzyDedupe(items) {
 /**
  * Entertainment is owned by the 3-hour cache (archive + published feed).
  * The Tuesday refresh merges a fresh snapshot into that archive so it
- * never wipes accumulated 14-day coverage.
+ * never wipes accumulated 21-day coverage.
  */
 async function buildEntertainment() {
   const archiveFile = path.join(OUT_DIR, "entertainment-headlines.json");
@@ -1426,6 +1427,7 @@ async function main() {
     const ok = await writeSection("netflix", netflix, 5);
     console.log(`Done — netflix ${ok ? "updated" : "kept"}.`);
     if (!ok) process.exitCode = 1;
+    else await writeBriefingFile();
     return;
   }
   const [sports, entertainment, netflix] = await Promise.all([
@@ -1435,13 +1437,14 @@ async function main() {
   ]);
   const results = await Promise.all([
     writeSection("sports", sports, 5),
-    // Entertainment is published by buildEntertainment() into the 14-day archive.
+    // Entertainment is published by buildEntertainment() into the 21-day archive.
     Promise.resolve(entertainment.length >= 5),
     writeSection("netflix", netflix, 5),
   ]);
   const ok = results.filter(Boolean).length;
   console.log(`Done — ${ok}/3 sections updated.`);
   if (ok === 0) process.exitCode = 1;
+  else await writeBriefingFile();
 }
 
 main().catch((err) => {

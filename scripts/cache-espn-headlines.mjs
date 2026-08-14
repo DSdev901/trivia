@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Snapshot ESPN's rolling news endpoints and retain every observed headline
- * for 14 days. ESPN caps each league response at 50 and does not expose
+ * for 21 days. ESPN caps each league response at 50 and does not expose
  * working pagination/date parameters, so frequent snapshots are required.
  *
  * Also publishes data/current-events/sports.json from that archive so the
@@ -22,7 +22,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_DIR = path.join(ROOT, "data", "current-events");
 const OUT_FILE = path.join(OUT_DIR, "espn-headlines.json");
 const SPORTS_FEED = path.join(OUT_DIR, "sports.json");
-const RETENTION_DAYS = 14;
+const RETENTION_DAYS = 21;
 const now = new Date();
 const nowIso = now.toISOString();
 const cutoff = new Date(now.getTime() - RETENTION_DAYS * 86400000);
@@ -163,7 +163,7 @@ async function main() {
   };
   await writeFile(OUT_FILE, `${JSON.stringify(payload, null, 2)}\n`);
 
-  // User-facing Sports tab: ESPN only, full 14-day window, newest first.
+  // User-facing Sports tab: ESPN only, full 21-day window, newest first.
   // Drop filler + video/highlight stubs (no real article body to summarize).
   const feedItems = items
     .filter(

@@ -125,7 +125,7 @@ async function loadBatch(category, batchNumber) {
 
 function categoryMetaLabel(category) {
   if (category?.type === "current-events") {
-    return "3 feeds · refreshable";
+    return "briefing · 3 feeds";
   }
   if (category?.type === "periodic-table") {
     return "118 elements · tours & quiz";

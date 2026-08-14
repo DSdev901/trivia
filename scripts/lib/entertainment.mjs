@@ -6,7 +6,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { enrichThinSummaries } from "./summaries.mjs";
 
-export const RETENTION_DAYS = 14;
+export const RETENTION_DAYS = 21;
 
 export const GN_ENTERTAINMENT =
   "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-US&gl=US&ceid=US:en";

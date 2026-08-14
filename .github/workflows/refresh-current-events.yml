@@ -1,6 +1,8 @@
 name: Refresh Current Events
 
-# Keeps data/current-events/*.json fresh so the live site stays current.
+# Keeps Netflix and the Tuesday sports/entertainment briefing current.
+# Sports and entertainment headlines still update every 3 hours via the
+# cache-espn-headlines and cache-entertainment workflows.
 # Runs on a schedule in UTC; can also be triggered by hand from the
 # repo's Actions tab ("Run workflow").
 
@@ -13,6 +15,7 @@ on:
 
 permissions:
   contents: write # needed to push the refreshed data commit
+  copilot-requests: write # Copilot CLI ranks the briefing on this runner
 
 concurrency:
   group: current-events-data-writer
@@ -36,6 +39,29 @@ jobs:
 
       - name: Refresh current events data
         run: node scripts/refresh-current-events.mjs
+
+      - name: Rank Tuesday briefing with Copilot (Haiku)
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COPILOT_MODEL: claude-haiku-4.5
+        run: |
+          npm install -g @github/copilot
+          cp data/current-events/briefing.json /tmp/briefing.fallback.json
+          copilot -p "$(cat scripts/briefing-prompt.md)" \
+            --model=claude-haiku-4.5 \
+            --no-ask-user \
+            --add-dir=data/current-events \
+            --allow-tool='write(data/current-events/briefing.json)' \
+            --allow-all-paths \
+            --deny-tool=shell \
+            --max-ai-credits=250
+          if cmp -s data/current-events/briefing.json /tmp/briefing.fallback.json; then
+            echo "Copilot did not change the briefing — keeping heuristic ranking."
+          elif ! node scripts/validate-briefing.mjs; then
+            echo "Copilot briefing was invalid — keeping heuristic ranking."
+            cp /tmp/briefing.fallback.json data/current-events/briefing.json
+          fi
 
       - name: Commit updated data
         run: |

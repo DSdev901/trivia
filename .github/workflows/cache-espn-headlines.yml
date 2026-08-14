@@ -1,7 +1,7 @@
 name: Cache ESPN Headlines
 
 # ESPN only exposes the latest 50 stories per league. Snapshot every three
-# hours into a rolling 14-day archive and publish sports.json so the live
+# hours into a rolling 21-day archive and publish sports.json so the live
 # Sports tab updates with each run (ESPN only — no Google News).
 
 on:
