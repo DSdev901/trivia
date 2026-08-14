@@ -10,15 +10,27 @@ import path from "node:path";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PROMPT = path.join(ROOT, "scripts", "briefing-prompt.md");
-const FILE = path.join(ROOT, "data", "current-events", "briefing.json");
+const FILE =
+  process.env.BRIEFING_INPUT ||
+  path.join(ROOT, "data", "current-events", "briefing.json");
 
 const instructions = (await readFile(PROMPT, "utf8")).trim();
 const data = JSON.parse(await readFile(FILE, "utf8"));
+const all = data.items || [];
+const offset = Math.max(0, Number(process.env.BRIEFING_OFFSET || 0));
+const limit = Math.max(0, Number(process.env.BRIEFING_LIMIT || 0));
+const slice = limit > 0 ? all.slice(offset, offset + limit) : all.slice(offset);
+const batchNote =
+  slice.length === all.length
+    ? ""
+    : `\nThis batch is items ${offset + 1}–${offset + slice.length} of ${all.length}. Rewrite only these items.\n`;
 const input = {
   model: process.env.COPILOT_MODEL || "claude-haiku-4.5",
   windowStart: data.windowStart || "",
   windowEnd: data.windowEnd || "",
-  items: (data.items || []).map((item) => ({
+  offset,
+  total: all.length,
+  items: slice.map((item) => ({
     headline: item.headline,
     people: item.people || [],
     summary: item.summary,
@@ -28,5 +40,5 @@ const input = {
 };
 
 process.stdout.write(
-  `${instructions}\n\nINPUT:\n${JSON.stringify(input, null, 2)}\n`
+  `${instructions}${batchNote}\nINPUT:\n${JSON.stringify(input, null, 2)}\n`
 );

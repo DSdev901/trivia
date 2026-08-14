@@ -1,0 +1,123 @@
+#!/usr/bin/env node
+/**
+ * Rewrite the clustered briefing with Copilot Haiku in chunks that fit
+ * Haiku's output cap. A failed chunk keeps heuristic summaries for that
+ * slice; if every chunk fails, restore the fallback file.
+ */
+
+import { spawnSync } from "node:child_process";
+import { copyFile, readFile, writeFile } from "node:fs/promises";
+import { fileURLToPath } from "node:url";
+import path from "node:path";
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const FILE = path.join(ROOT, "data", "current-events", "briefing.json");
+const PROMPT = path.join(ROOT, "scripts", "briefing-copilot-prompt.mjs");
+const APPLY = path.join(ROOT, "scripts", "apply-briefing-rewrite.mjs");
+const VALIDATE = path.join(ROOT, "scripts", "validate-briefing.mjs");
+const FALLBACK = process.env.BRIEFING_FALLBACK || "/tmp/briefing.fallback.json";
+const INPUT = process.env.BRIEFING_INPUT || "/tmp/briefing.input.json";
+const CHUNK = Math.max(40, Number(process.env.BRIEFING_CHUNK_SIZE || 200));
+const MODEL = process.env.COPILOT_MODEL || "claude-haiku-4.5";
+
+function runNode(script, args, extraEnv, stdio) {
+  return spawnSync(process.execPath, [script, ...args], {
+    cwd: ROOT,
+    env: { ...process.env, ...extraEnv },
+    encoding: "utf8",
+    maxBuffer: 32 * 1024 * 1024,
+    stdio: stdio || "pipe",
+  });
+}
+
+const original = JSON.parse(await readFile(INPUT, "utf8"));
+const total = Array.isArray(original.items) ? original.items.length : 0;
+if (total < 10) {
+  throw new Error(`briefing input had too few items (${total})`);
+}
+
+await copyFile(FALLBACK, FILE);
+
+let chunksOk = 0;
+for (let offset = 0; offset < total; offset += CHUNK) {
+  const limit = Math.min(CHUNK, total - offset);
+  console.log(
+    `  [briefing] Copilot chunk ${offset + 1}–${offset + limit} of ${total}`
+  );
+  const prompt = runNode(
+    PROMPT,
+    [],
+    {
+      BRIEFING_INPUT: INPUT,
+      BRIEFING_OFFSET: String(offset),
+      BRIEFING_LIMIT: String(limit),
+      COPILOT_MODEL: MODEL,
+    }
+  );
+  if (prompt.status !== 0) {
+    console.error(prompt.stderr || prompt.stdout || "prompt failed");
+    continue;
+  }
+
+  const copilot = spawnSync(
+    "copilot",
+    [
+      `--model=${MODEL}`,
+      "-s",
+      "--no-ask-user",
+      "--available-tools=view",
+      "--excluded-tools=create,edit,apply_patch,bash,powershell",
+      "--deny-tool=write",
+      "--deny-tool=shell",
+    ],
+    {
+      cwd: ROOT,
+      input: prompt.stdout,
+      encoding: "utf8",
+      maxBuffer: 32 * 1024 * 1024,
+      stdio: ["pipe", "pipe", "inherit"],
+    }
+  );
+  const outPath = `/tmp/briefing.copilot.${offset}.txt`;
+  await writeFile(outPath, copilot.stdout || "");
+  if (!copilot.stdout) {
+    console.log(`  [briefing] chunk at ${offset} was empty — keeping heuristic`);
+    continue;
+  }
+
+  const apply = runNode(
+    APPLY,
+    [outPath, INPUT],
+    {
+      BRIEFING_OFFSET: String(offset),
+      BRIEFING_LIMIT: String(limit),
+      COPILOT_MODEL: MODEL,
+    },
+    "inherit"
+  );
+  if (apply.status === 0) chunksOk += 1;
+  else {
+    console.log(
+      `  [briefing] chunk at ${offset} was unusable — keeping heuristic for this slice`
+    );
+  }
+}
+
+if (!chunksOk) {
+  await copyFile(FALLBACK, FILE);
+  console.log(
+    "  [briefing] all Copilot chunks failed — keeping full heuristic ranking"
+  );
+  process.exit(1);
+}
+
+const validate = runNode(VALIDATE, [], { COPILOT_MODEL: MODEL }, "inherit");
+if (validate.status !== 0) {
+  await copyFile(FALLBACK, FILE);
+  console.log(
+    "  [briefing] Copilot briefing was invalid — keeping full heuristic ranking"
+  );
+  process.exit(1);
+}
+
+console.log(`  [briefing] Copilot finished ${chunksOk} chunk(s)`);

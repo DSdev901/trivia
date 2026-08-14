@@ -7,8 +7,9 @@
  * URL often 404s for personal Copilot even with a classic PAT.
  *
  * If remaining is 0, skip Copilot and keep the heuristic ranking. Otherwise
- * send the full clustered list with no session credit cap. If Haiku runs
- * out or the rewrite is unusable, the job keeps the heuristic ranking.
+ * rewrite the full clustered list in Haiku-sized chunks. A failed chunk
+ * keeps heuristic text for that slice; if every chunk fails, keep the
+ * full heuristic ranking.
  */
 
 import { readFile, writeFile } from "node:fs/promises";

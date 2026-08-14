@@ -67,26 +67,11 @@ jobs:
         run: |
           npm install -g @github/copilot
           echo "Copilot mode=${{ steps.briefing_budget.outputs.mode }} model=${COPILOT_MODEL} cards=${{ steps.briefing_budget.outputs.keep }} remaining=${{ steps.briefing_budget.outputs.remaining }}"
-          node scripts/briefing-copilot-prompt.mjs > /tmp/briefing.prompt.txt
-          # Prompt is piped on stdin so JSON quotes are not eaten by the shell.
-          # Create/edit tools are excluded: Haiku was calling them without path.
-          cat /tmp/briefing.prompt.txt | copilot \
-            --model="${COPILOT_MODEL}" \
-            -s \
-            --no-ask-user \
-            --available-tools=view \
-            --excluded-tools=create,edit,apply_patch,bash,powershell \
-            --deny-tool=write \
-            --deny-tool=shell \
-            | tee /tmp/briefing.copilot.txt \
+          BRIEFING_FALLBACK=/tmp/briefing.fallback.json \
+          BRIEFING_INPUT=/tmp/briefing.input.json \
+          BRIEFING_CHUNK_SIZE=200 \
+            node scripts/run-briefing-copilot.mjs \
             || true
-          if ! node scripts/apply-briefing-rewrite.mjs /tmp/briefing.copilot.txt /tmp/briefing.input.json; then
-            echo "Copilot rewrite was unusable — keeping full heuristic ranking."
-            cp /tmp/briefing.fallback.json data/current-events/briefing.json
-          elif ! node scripts/validate-briefing.mjs; then
-            echo "Copilot briefing was invalid — keeping full heuristic ranking."
-            cp /tmp/briefing.fallback.json data/current-events/briefing.json
-          fi
 
       - name: Commit updated data
         run: |
