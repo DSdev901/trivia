@@ -86,10 +86,17 @@ function asPeople(value) {
   return value.map((n) => String(n || "").trim()).filter(Boolean).slice(0, 3);
 }
 
+function briefingTitle(raw, fallback) {
+  const t = String(raw || "").replace(/\s+/g, " ").trim();
+  if (t.length < 8) return fallback;
+  if (t.length > 110) return `${t.slice(0, 107).replace(/\s+\S*$/, "")}…`;
+  return t;
+}
+
 function mergeRow(orig, row) {
   const people = asPeople(row.people);
   const summary = String(row.summary || row.synopsis || "").trim();
-  const headline = String(row.headline || row.title || "").trim();
+  const headline = briefingTitle(row.headline || row.title || "", orig.headline);
   const section = SECTIONS.has(row.section) ? row.section : orig.section;
   return {
     headline: headline || orig.headline,

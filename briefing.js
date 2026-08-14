@@ -161,10 +161,10 @@ const CITIES = new Set([
 ]);
 
 const HIGH_WEIGHT = [
-  [/\b(dies?|died|dead|death|killed|murder(?:ed)?|assassinated)\b/i, 42],
+  [/\b(dies at|died at|dies:|died:|has died|dead at|killed|murder(?:ed)?|assassinated|death of)\b/i, 42],
   [/\b(merger|acquisition|antitrust|sold at|valuation)\b/i, 36],
   [/\b\$?\d+(?:\.\d+)?\s*(billion|trillion)\b/i, 34],
-  [/\b\$?\d+(?:\.\d+)?\s*million\b/i, 18],
+  [/\b\$?\d+(?:\.\d+)?\s*million\b.{0,40}\b(?:box office|ticket|sale|deal|contract|gross|settlement)\b/i, 18],
   [/\b(record-breaking|breaks? (?:a |the )?record|fastest .+ to|highest-grossing|milestone|surpass(?:es|ed)?)\b/i, 28],
   [/\b(retir(?:e|ed|es|ement)|steps? away)\b/i, 24],
   [/\b(sentenced|indicted|lawsuit|sued|prison|solitary|fraud|defraud)\b/i, 24],
@@ -185,6 +185,10 @@ const LOW_WEIGHT = [
   [/\bstandouts, questions for all\b/i, 18],
   [/\bunder-the-radar\b/i, 10],
   [/\bsocial media for the .+ schedule\b/i, 16],
+  [/\bbraless|sheer (?:lace|dress)|red carpet|what she wore\b/i, 32],
+  [/\band more\b|\bmore top stories\b/i, 22],
+  [/\baudience up\b/i, 14],
+  [/\bstock (?:award|grant|bonus)|beneficiary of \$\d/i, 16],
 ];
 
 const RECAP_HEADLINE =
@@ -397,6 +401,20 @@ function daysAgo(iso, now = Date.now()) {
   return Math.max(0, (now - t) / 86400000);
 }
 
+function recencyPoints(iso, now, maxPts, perDay) {
+  return Math.max(0, maxPts - daysAgo(iso, now) * perDay);
+}
+
+function listiclePenalty(headline) {
+  const h = String(headline || "");
+  let n = 0;
+  if (/\b\d+\s+things you (?:need to |should )?know\b/i.test(h)) n += 20;
+  if (/\bwhat we learned\b/i.test(h)) n += 14;
+  if (/\b(?:questions|takeaways) for\b/i.test(h)) n += 12;
+  if (/\(EXCL|\bEXCLUSIVE\b/i.test(h)) n += 8;
+  return n;
+}
+
 function recapUrl(url) {
   return /\/recap(?:\?|$)|gameId=/i.test(String(url || ""));
 }
@@ -405,7 +423,9 @@ function storyWeight(item, now = Date.now()) {
   const text = `${item.headline} ${item.summary}`;
   let score = 12;
   if (item.top) score += 6;
-  if (item.tag === "Milestone") score += 26;
+  if (item.tag === "Milestone" && !/\bbirthday|braless|red carpet\b/i.test(text)) {
+    score += 26;
+  }
   if (item.section === "netflix") score -= 8;
   else {
     for (const [re, pts] of HIGH_WEIGHT) {
@@ -413,7 +433,6 @@ function storyWeight(item, now = Date.now()) {
     }
   }
   if ((item.people || []).length) score += 4;
-  score += Math.max(0, 14 - daysAgo(item.date, now) * 0.9);
   for (const [re, pts] of LOW_WEIGHT) {
     if (re.test(text)) score -= pts;
   }
@@ -421,7 +440,20 @@ function storyWeight(item, now = Date.now()) {
   if (/\b(offseason recap|early .+ season preview)\b/i.test(item.headline)) score -= 12;
   if ((item.summary || "").length < 60) score -= 4;
   if ((item.summary || "").length > 180) score += 3;
-  return score;
+  score -= listiclePenalty(item.headline);
+  item.quality = score;
+  return score + recencyPoints(item.date, now, 12, 0.9);
+}
+
+function clusterRankScore(item, now = Date.now()) {
+  const coverage = Math.max(1, Number(item.coverage) || 1);
+  const quality = Number(item.quality ?? item.score) || 0;
+  const mention = 26 * Math.log2(coverage + 1);
+  return (
+    quality +
+    mention +
+    recencyPoints(item.date, now, 22, 1.35)
+  );
 }
 
 const CLUSTER_STOP = new Set([
@@ -814,7 +846,8 @@ function mergeGroup(group) {
     type: best.type,
     people: who.slice(0, 3),
     coverage,
-    score: best.score + Math.min(80, (coverage - 1) * 14),
+    quality: best.quality ?? best.score,
+    score: best.score,
     ...(angles.length ? { angles } : {}),
   };
 }
@@ -874,8 +907,9 @@ function collectItems(data) {
 }
 
 /**
- * Rank clustered current-events headlines. Related stories are merged;
- * events mentioned in more outlets rank first.
+ * Rank clustered current-events headlines. Related stories are merged.
+ * Rank blends how often a story was mentioned, story weight, and recency
+ * so a fresh milestone can outrank an older pile of recaps.
  * `data` is { sports, entertainment } payloads from the JSON feeds.
  */
 export function buildBriefing(data, now = Date.now()) {
@@ -884,8 +918,8 @@ export function buildBriefing(data, now = Date.now()) {
   const clustered = clusterStories(items);
   clustered.sort(
     (a, b) =>
+      clusterRankScore(b, now) - clusterRankScore(a, now) ||
       (b.coverage || 1) - (a.coverage || 1) ||
-      b.score - a.score ||
       (b.date || "").localeCompare(a.date || "") ||
       a.headline.localeCompare(b.headline)
   );

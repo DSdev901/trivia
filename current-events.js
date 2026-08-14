@@ -496,8 +496,8 @@ function renderBody() {
     const items = briefingItems();
     const rankedBy =
       payload.source === "copilot-auto"
-        ? "Ranked by how often a story was mentioned, then by weight. Top stories rewritten by Copilot (Claude Haiku)."
-        : "Ranked by how often a story was mentioned, then by weight. Copilot rewrites the top stories on Tuesday.";
+        ? "Ranked by coverage, story weight, and recency. Top stories rewritten by Copilot (Claude Haiku)."
+        : "Ranked by coverage, story weight, and recency. Copilot rewrites the top stories on Tuesday.";
     const freshNote = briefingIsNew()
       ? `<p class="ce-briefing-new">New Tuesday briefing — last three weeks of sports and entertainment.</p>`
       : "";
