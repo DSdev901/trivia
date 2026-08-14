@@ -46,7 +46,7 @@ const ce = {
   briefingSportFilter: "all", // "all" | sport tag e.g. "NFL"
   briefingShowAll: false,
   netflixFilter: "all", // "all" | "shows" | "movies"
-  netflixRegion: "all", // "all" | "us" | "intl"
+  netflixUsOnly: false,
   sportFilter: "all", // "all" | sport label e.g. "NFL"
   refreshing: false,
   notice: "",
@@ -71,11 +71,6 @@ const NETFLIX_FILTERS = [
   { id: "all", label: "All" },
   { id: "shows", label: "Shows" },
   { id: "movies", label: "Movies" },
-];
-const NETFLIX_REGION_FILTERS = [
-  { id: "all", label: "All" },
-  { id: "us", label: "In the US" },
-  { id: "intl", label: "Outside the US" },
 ];
 
 function netflixKind(item) {
@@ -262,8 +257,7 @@ function activeItems() {
     if (ce.netflixFilter !== "all") {
       out = out.filter((i) => netflixKind(i) === ce.netflixFilter);
     }
-    if (ce.netflixRegion === "us") out = out.filter((i) => i.inUS === true);
-    if (ce.netflixRegion === "intl") out = out.filter((i) => i.inUS === false);
+    if (ce.netflixUsOnly) out = out.filter((i) => i.inUS === true);
     return out;
   }
   if (ce.tab === "sports" && ce.sportFilter !== "all") {
@@ -453,51 +447,36 @@ function briefingListHtml(items, startIdx = 0) {
 }
 
 function netflixFilterBar(allItems) {
-  const typeCounts = { all: allItems.length, shows: 0, movies: 0 };
-  for (const i of allItems) typeCounts[netflixKind(i)] += 1;
+  const hasUs = allItems.some((i) => i.inUS === true);
+  if (ce.netflixUsOnly && !hasUs) ce.netflixUsOnly = false;
+  const pool = ce.netflixUsOnly
+    ? allItems.filter((i) => i.inUS === true)
+    : allItems;
+  const typeCounts = { all: pool.length, shows: 0, movies: 0 };
+  for (const i of pool) typeCounts[netflixKind(i)] += 1;
   const typed =
     ce.netflixFilter === "all"
       ? allItems
       : allItems.filter((i) => netflixKind(i) === ce.netflixFilter);
-  const regionCounts = {
-    all: typed.length,
-    us: typed.filter((i) => i.inUS === true).length,
-    intl: typed.filter((i) => i.inUS === false).length,
-  };
-  const hasRegion = allItems.some((i) => i.inUS === true || i.inUS === false);
-  if (
-    hasRegion &&
-    ce.netflixRegion !== "all" &&
-    !allItems.some((i) =>
-      ce.netflixRegion === "us" ? i.inUS === true : i.inUS === false
-    )
-  ) {
-    ce.netflixRegion = "all";
-  }
-  const typeBar = `
-    <div class="ce-filter" role="group" aria-label="Filter Netflix releases">
-      ${NETFLIX_FILTERS.map(
-        (f) => `
+  const usInType = typed.filter((i) => i.inUS === true).length;
+  const typeBar = NETFLIX_FILTERS.map(
+    (f) => `
         <button type="button" class="ce-filter-chip ${
           ce.netflixFilter === f.id ? "is-on" : ""
         }" data-nfilter="${f.id}">${f.label} <span class="ce-filter-count">${
-          typeCounts[f.id]
-        }</span></button>`
-      ).join("")}
+      typeCounts[f.id]
+    }</span></button>`
+  ).join("");
+  const usChip = hasUs
+    ? `
+        <button type="button" class="ce-filter-chip ce-filter-us ${
+          ce.netflixUsOnly ? "is-on" : ""
+        }" data-nusonly="1" aria-pressed="${ce.netflixUsOnly}">US only <span class="ce-filter-count">${usInType}</span></button>`
+    : "";
+  return `
+    <div class="ce-filter" role="group" aria-label="Filter Netflix releases">
+      ${typeBar}${usChip}
     </div>`;
-  if (!hasRegion) return typeBar;
-  const regionBar = `
-    <div class="ce-filter" role="group" aria-label="Filter Netflix by US catalog">
-      ${NETFLIX_REGION_FILTERS.map(
-        (f) => `
-        <button type="button" class="ce-filter-chip ${
-          ce.netflixRegion === f.id ? "is-on" : ""
-        }" data-nrfilter="${f.id}">${f.label} <span class="ce-filter-count">${
-          regionCounts[f.id]
-        }</span></button>`
-      ).join("")}
-    </div>`;
-  return `<div class="ce-filters">${typeBar}${regionBar}</div>`;
 }
 
 function sportFilterBar(allItems) {
@@ -731,7 +710,7 @@ function render() {
     btn.addEventListener("click", () => {
       stopPlayback();
       if (btn.dataset.nfilter) ce.netflixFilter = btn.dataset.nfilter;
-      if (btn.dataset.nrfilter) ce.netflixRegion = btn.dataset.nrfilter;
+      if (btn.dataset.nusonly) ce.netflixUsOnly = !ce.netflixUsOnly;
       if (btn.dataset.sfilter) ce.sportFilter = btn.dataset.sfilter;
       if (btn.dataset.bfilter) {
         ce.briefingFilter = btn.dataset.bfilter;
