@@ -21,11 +21,17 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
 html,
 body {
   margin: 0;
   min-height: 100%;
-  touch-action: pan-x pan-y;
+  touch-action: manipulation;
 }
 
 body {
@@ -2742,5 +2748,29 @@ body {
     margin: 0 0 0.55rem;
     font-size: 0.82rem;
     color: var(--ink-soft);
+  }
+}
+
+/* iOS keeps :hover after a touch-drag (including pull-to-refresh), so cards
+   and map pins can look stuck zoomed-in. Only lift on real pointers. */
+@media (pointer: coarse) {
+  .nav-btn:hover,
+  .batch-btn:hover,
+  .president-btn:hover,
+  .back-link:hover,
+  .category-card:hover,
+  .batch-card:hover,
+  .speech-btn:hover:not(:disabled),
+  .hub-card:hover,
+  .primary-btn:hover,
+  .secondary-btn:hover,
+  .choice-btn:hover:not(:disabled),
+  .ce-refresh:hover:not(:disabled),
+  .pt-cell:hover,
+  .geo-pack-card:hover,
+  .geo-mode-card:hover,
+  .geo-continent-card:hover,
+  .geo-map-frame .geo-pin:hover .geo-region.geo-marker:not(.is-active):not(.is-correct):not(.is-wrong) {
+    transform: none;
   }
 }
