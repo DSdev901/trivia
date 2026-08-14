@@ -4,13 +4,14 @@
  *
  *   node scripts/refresh-current-events.mjs
  *
- * Sources (no API keys, no dependencies):
+ * Sources (no dependencies; TMDB_API_KEY optional):
  *   Sports        — ESPN only (rolling 21-day archive, published every 3h)
  *   Entertainment — Google News + RSS (rolling 21-day archive, published every 3h)
- *   Netflix       — TVMaze web schedule first, then whats-on-netflix
- *                   listings, then Wikipedia originals lists. Cards are
- *                   merged field-wise (no duplicate titles); each keeps a
- *                   useful synopsis and main cast when sources provide them.
+ *   Netflix       — TVMaze web schedule (series that actually aired),
+ *                   whats-on-netflix + Wikipedia originals lists for titles
+ *                   and dates only, TMDB for plot / cast / poster.
+ *                   Official TMDB API when TMDB_API_KEY is set; otherwise
+ *                   the public TMDB pages.
  *
  *   node scripts/refresh-current-events.mjs --netflix-images
  *     Backfill posters on the existing Netflix JSON without a full refresh.
@@ -386,7 +387,7 @@ function parseNetflixMonthly(html, year) {
     for (const li of chunk.matchAll(/<li>([\s\S]*?)<\/li>/g)) {
       const text = stripTags(li[1]);
       if (!/netflix original/i.test(text)) continue;
-      const [left, ...rest] = text.split(/\s+[–—-]\s+/);
+      const [left] = text.split(/\s+[–—-]\s+/);
       const title = left
         .replace(/\(\d{4}\)/, "")
         .replace(/\(Limited Series\)/i, "")
@@ -398,7 +399,7 @@ function parseNetflixMonthly(html, year) {
         title,
         type: guessType(text),
         date,
-        synopsis: (rest.join(" — ") || "Netflix Original release.").trim(),
+        synopsis: "",
         starring: [],
       });
     }
@@ -413,10 +414,9 @@ function seriesTypeFromGenre(genre) {
 }
 
 /**
- * Wikipedia's original programming + stand-up lists — the series/specials
- * counterpart to the films list. These cover brand-new series premieres of
- * every genre (the Premiere column is the series debut); new *seasons* of
- * returning shows only come from whats-on-netflix when it isn't bot-blocking.
+ * Wikipedia original-programming + stand-up lists — titles and premiere
+ * dates only. Plot/cast/poster come from TMDB. New seasons of returning
+ * shows still come from TVMaze (and whats-on-netflix when it isn't blocked).
  */
 async function fetchWikipediaProgramming() {
   const sources = [
@@ -449,11 +449,7 @@ async function fetchWikipediaProgramming() {
           title,
           type: fixedType || seriesTypeFromGenre(genre),
           date,
-          synopsis: fixedType
-            ? `${fixedType}.`
-            : genre
-              ? `${genre} series.`
-              : "Netflix Original release.",
+          synopsis: "",
           starring: [],
         });
       }
@@ -464,7 +460,7 @@ async function fetchWikipediaProgramming() {
   return items;
 }
 
-/** Wikipedia's Netflix original films list — reliable fallback (dates + genres). */
+/** Wikipedia's Netflix original films list — titles and dates only. */
 async function fetchWikipediaFilms() {
   const url =
     "https://en.wikipedia.org/w/api.php?action=parse" +
@@ -484,7 +480,7 @@ async function fetchWikipediaFilms() {
       title,
       type: /documentary/i.test(genre) ? "Documentary" : "Film",
       date,
-      synopsis: `${genre || "Netflix Original"} film.`,
+      synopsis: "",
       starring: [],
     });
   }
@@ -586,6 +582,7 @@ function isThinSynopsis(s) {
   if (/^(Film|Series|Documentary|Reality|Docuseries|Special)\.?$/i.test(t))
     return true;
   if (/\b(series|film|special)\.?$/i.test(t) && t.length < 55) return true;
+  if (/\bmay refer to\b/i.test(t)) return true;
   return false;
 }
 
@@ -625,6 +622,7 @@ function mergeNetflixCards(keep, incoming) {
   out.starring = mergeStarring(keep.starring, incoming.starring);
   out.akas = [...new Set([...(keep.akas || []), ...(incoming.akas || [])])];
   if (incoming.tvmazeId && !out.tvmazeId) out.tvmazeId = incoming.tvmazeId;
+  if (incoming.tmdbId && !out.tmdbId) out.tmdbId = incoming.tmdbId;
   if (incoming.wikiTitle && !out.wikiTitle) out.wikiTitle = incoming.wikiTitle;
   if (incoming.image && !out.image) out.image = incoming.image;
   if (incoming.confirmedOriginal) out.confirmedOriginal = true;
@@ -686,6 +684,332 @@ function publicNetflixItem(item) {
 const WIKI_UA =
   "TriviaHelper/1.0 (https://github.com/DSdev901/trivia; trivia app data refresh)";
 const TVMAZE_UA = "TriviaHelper/1.0 (https://github.com/DSdev901/trivia)";
+const TMDB_UA = TVMAZE_UA;
+const TMDB_KEY = process.env.TMDB_API_KEY || "";
+
+function parseEnglishDate(raw) {
+  const s = String(raw || "").trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+  const m = s.match(
+    /\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s*(\d{4})\b/i
+  );
+  if (!m) return isoFrom(s);
+  const month = MONTHS.indexOf(m[1].toLowerCase());
+  if (month < 0) return isoFrom(s);
+  return `${m[3]}-${String(month + 1).padStart(2, "0")}-${String(Number(m[2])).padStart(2, "0")}`;
+}
+
+function tmdbImageUrl(path) {
+  const p = String(path || "").trim();
+  if (!p) return "";
+  if (/^https?:\/\//i.test(p)) {
+    return p.replace(/\/t\/p\/w\d+(?:_and_h\d+)?(?:_[a-z]+)?\//, "/t/p/w500/");
+  }
+  const file = p.startsWith("/") ? p : `/${p}`;
+  return `https://image.tmdb.org/t/p/w500${file}`;
+}
+
+function tmdbSearchKinds(item) {
+  const t = String(item.type || "");
+  if (/film|movie/i.test(t) && !/series/i.test(t)) return ["movie", "tv"];
+  if (/stand-up|special|live event/i.test(t)) return ["tv", "movie"];
+  if (/documentary/i.test(t) && !/series|docuseries/i.test(t))
+    return ["movie", "tv"];
+  return ["tv", "movie"];
+}
+
+function tmdbHitScore(item, hit) {
+  const bare = String(item.title || "")
+    .replace(/\s*\((?:Season|Part)\s+\d+\)/i, "")
+    .trim();
+  let titleScore = 0;
+  for (const name of [hit.title, hit.originalTitle].filter(Boolean)) {
+    const ca = titleCore(bare);
+    const cb = titleCore(name);
+    if (!ca || !cb) continue;
+    if (ca === cb) titleScore = Math.max(titleScore, 10);
+    else if (namesSimilar(bare, name)) titleScore = Math.max(titleScore, 4);
+  }
+  if (!titleScore) return 0;
+  const idate = item.date || "";
+  const hdate = hit.date || "";
+  if (idate && hdate && idate === hdate) return titleScore + 6;
+  if (idate && hdate) {
+    const days =
+      Math.abs(Date.parse(`${idate}T12:00:00Z`) - Date.parse(`${hdate}T12:00:00Z`)) /
+      86400000;
+    if (Number.isFinite(days) && days <= 3) return titleScore + 4;
+    if (Number.isFinite(days) && days <= 21) return titleScore + 2;
+    if (idate.slice(0, 4) === hdate.slice(0, 4)) return titleScore + 1;
+    return 0;
+  }
+  return titleScore;
+}
+
+async function tmdbApi(pathname, params = {}) {
+  if (!TMDB_KEY) return null;
+  const url = new URL(`https://api.themoviedb.org/3${pathname}`);
+  for (const [k, v] of Object.entries(params)) {
+    if (v != null && v !== "") url.searchParams.set(k, String(v));
+  }
+  const headers = { Accept: "application/json", "User-Agent": TMDB_UA };
+  if (TMDB_KEY.startsWith("eyJ") || TMDB_KEY.length > 48) {
+    headers.Authorization = `Bearer ${TMDB_KEY}`;
+  } else {
+    url.searchParams.set("api_key", TMDB_KEY);
+  }
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), 15000);
+  try {
+    const res = await fetch(url, { signal: ctrl.signal, headers });
+    if (!res.ok) throw new Error(`HTTP ${res.status} for ${pathname}`);
+    return await res.json();
+  } finally {
+    clearTimeout(t);
+  }
+}
+
+function tmdbMapApiResult(kind, r) {
+  return {
+    kind,
+    id: String(r.id),
+    title: r.title || r.name || "",
+    originalTitle: r.original_title || r.original_name || "",
+    date: String(r.release_date || r.first_air_date || "").slice(0, 10),
+    overview: r.overview || "",
+    image: tmdbImageUrl(r.poster_path),
+  };
+}
+
+async function tmdbApiSearch(kind, query, year) {
+  const params = { query, include_adult: "false", language: "en-US" };
+  if (year && kind === "movie") params.year = year;
+  if (year && kind === "tv") params.first_air_date_year = year;
+  const data = await tmdbApi(`/search/${kind}`, params);
+  return (data?.results || []).map((r) => tmdbMapApiResult(kind, r));
+}
+
+async function tmdbApiDetails(kind, id) {
+  const data = await tmdbApi(`/${kind}/${id}`, {
+    append_to_response: "credits",
+    language: "en-US",
+  });
+  if (!data) return null;
+  const cast = (data.credits?.cast || [])
+    .map((c) => c.name)
+    .filter(Boolean)
+    .slice(0, 6);
+  return {
+    kind,
+    id: String(data.id || id),
+    title: data.title || data.name || "",
+    originalTitle: data.original_title || data.original_name || "",
+    date: String(data.release_date || data.first_air_date || "").slice(0, 10),
+    overview: data.overview || "",
+    image: tmdbImageUrl(data.poster_path),
+    starring: cast,
+  };
+}
+
+function parseTmdbSearchHtml(html) {
+  const hits = [];
+  const seen = new Set();
+  for (const m of html.matchAll(
+    /data-media-type="(movie|tv)"[^>]*href="\/(?:movie|tv)\/(\d+)[^"]*"/gi
+  )) {
+    const kind = m[1];
+    const id = m[2];
+    const key = `${kind}:${id}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const slice = html.slice(m.index, m.index + 2800);
+    const titleM = slice.match(
+      /<span>([^<]{1,160})<\/span>(?:<span class="font-light">\s*\(([^)]*)\)<\/span>)?/
+    );
+    const dateM = slice.match(/<span class="release_date[^"]*">([^<]+)<\/span>/);
+    const plotM = slice.match(/<p>([\s\S]*?)<\/p>/);
+    const imgM = slice.match(
+      /src="(https:\/\/(?:media|image)\.themoviedb\.org\/[^"]+)"/
+    );
+    const title = stripTags(titleM?.[1] || "").trim();
+    if (!title) continue;
+    hits.push({
+      kind,
+      id,
+      title,
+      originalTitle: stripTags(titleM?.[2] || "").trim(),
+      date: parseEnglishDate(dateM?.[1] || ""),
+      overview: stripTags(plotM?.[1] || "").replace(/\s+/g, " ").trim(),
+      image: tmdbImageUrl(imgM?.[1] || ""),
+    });
+  }
+  return hits;
+}
+
+function parseTmdbJsonLd(html) {
+  for (const m of html.matchAll(
+    /<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi
+  )) {
+    const raw = m[1].replace(/\/\*[\s\S]*?\*\//g, "").trim();
+    if (!raw.startsWith("{") && !raw.startsWith("[")) continue;
+    try {
+      const json = JSON.parse(raw);
+      const nodes = Array.isArray(json) ? json : [json];
+      for (const node of nodes) {
+        const type = String(node?.["@type"] || "");
+        if (/Movie|TVSeries|TVEpisode/i.test(type)) return node;
+      }
+    } catch {
+      /* ignore malformed ld+json */
+    }
+  }
+  return null;
+}
+
+function parseTmdbCastHtml(html) {
+  const chunk = html.match(/id="cast_scroller"[\s\S]*?<\/ol>/i)?.[0] || "";
+  const names = [];
+  const seen = new Set();
+  for (const m of chunk.matchAll(
+    /<p><a href="\/person\/\d+[^"]*">([^<]+)<\/a><\/p>/g
+  )) {
+    const name = stripTags(m[1]).trim();
+    const k = foldName(name);
+    if (!k || seen.has(k)) continue;
+    seen.add(k);
+    names.push(name);
+    if (names.length >= 6) break;
+  }
+  return names;
+}
+
+async function tmdbFetch(url) {
+  let lastErr;
+  for (let i = 0; i < 3; i += 1) {
+    try {
+      return await fetchText(url, 20000, TMDB_UA);
+    } catch (err) {
+      lastErr = err;
+      if (!/429|503/.test(err.message) || i === 2) throw err;
+      await sleep(4000 * (i + 1));
+    }
+  }
+  throw lastErr;
+}
+
+async function tmdbHtmlSearch(kind, query) {
+  const html = await tmdbFetch(
+    `https://www.themoviedb.org/search/${kind}?query=${encodeURIComponent(query)}`
+  );
+  return parseTmdbSearchHtml(html).filter((h) => h.kind === kind);
+}
+
+async function tmdbHtmlDetails(kind, id) {
+  const html = await tmdbFetch(`https://www.themoviedb.org/${kind}/${id}`);
+  const ld = parseTmdbJsonLd(html);
+  const ev = ld?.releasedEvent;
+  const release = Array.isArray(ev) ? ev[0]?.startDate : ev?.startDate;
+  return {
+    kind,
+    id: String(id),
+    title: ld?.name || "",
+    originalTitle: "",
+    date: parseEnglishDate(release) || "",
+    overview: ld?.description || "",
+    image: tmdbImageUrl(ld?.image || ""),
+    starring: parseTmdbCastHtml(html),
+  };
+}
+
+async function tmdbSearchHits(item) {
+  const bare = String(item.title || "")
+    .replace(/\s*\((?:Season|Part)\s+\d+\)/i, "")
+    .trim();
+  const q = titleCore(bare) || bare;
+  if (!q) return [];
+  const year = (item.date || "").slice(0, 4);
+  const hits = [];
+  const seen = new Set();
+  const pushAll = (list) => {
+    for (const hit of list || []) {
+      const key = `${hit.kind}:${hit.id}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      hits.push(hit);
+    }
+  };
+  const hasExact = () => hits.some((h) => tmdbHitScore(item, h) >= 10);
+  for (const kind of tmdbSearchKinds(item)) {
+    if (TMDB_KEY && !hasExact()) {
+      try {
+        if (year) pushAll(await tmdbApiSearch(kind, q, year));
+        if (!hasExact()) pushAll(await tmdbApiSearch(kind, q, ""));
+      } catch (err) {
+        console.warn(`  [netflix] tmdb api search "${bare}": ${err.message}`);
+      }
+    }
+    if (!hasExact()) {
+      try {
+        if (year) pushAll(await tmdbHtmlSearch(kind, `${q} y:${year}`));
+        if (!hasExact()) pushAll(await tmdbHtmlSearch(kind, q));
+      } catch (err) {
+        console.warn(`  [netflix] tmdb search "${bare}": ${err.message}`);
+      }
+    }
+    await sleep(400);
+    if (hasExact()) break;
+  }
+  return hits;
+}
+
+async function tmdbDetailsFor(hit) {
+  if (TMDB_KEY) {
+    try {
+      const details = await tmdbApiDetails(hit.kind, hit.id);
+      if (details) return details;
+    } catch (err) {
+      console.warn(`  [netflix] tmdb api details ${hit.kind}/${hit.id}: ${err.message}`);
+    }
+  }
+  try {
+    return await tmdbHtmlDetails(hit.kind, hit.id);
+  } catch (err) {
+    console.warn(`  [netflix] tmdb details ${hit.kind}/${hit.id}: ${err.message}`);
+    return {
+      ...hit,
+      starring: hit.starring || [],
+    };
+  }
+}
+
+async function tmdbLookup(item) {
+  const hits = (await tmdbSearchHits(item))
+    .map((hit) => ({ hit, score: tmdbHitScore(item, hit) }))
+    .filter((row) => row.score >= 6)
+    .sort((a, b) => b.score - a.score);
+  if (!hits.length) return null;
+  const best = hits[0].hit;
+  const details = await tmdbDetailsFor(best);
+  const overview = String(details.overview || best.overview || "")
+    .replace(/\s+/g, " ")
+    .trim();
+  const clipped =
+    overview.length > 320
+      ? `${overview.slice(0, 317).replace(/\s+\S*$/, "")}…`
+      : overview;
+  const image = details.image || best.image || "";
+  const starring = details.starring || [];
+  const akas = [details.title, details.originalTitle, best.title, best.originalTitle]
+    .filter(Boolean)
+    .filter((n) => !sameTitle(n, item.title));
+  return {
+    tmdbId: `${details.kind}:${details.id}`,
+    synopsis: clipped,
+    starring,
+    image,
+    akas,
+  };
+}
 
 async function wikiJson(params) {
   const url =
@@ -746,54 +1070,6 @@ function starringFromExtract(extract) {
   return m ? namesFromList(m[1]) : [];
 }
 
-async function wikiInfoboxStarring(pageTitle) {
-  try {
-    const data = await wikiJson({
-      action: "parse",
-      page: pageTitle,
-      prop: "wikitext",
-    });
-    const wt = data?.parse?.wikitext?.["*"] || "";
-    const m = wt.match(
-      /\|\s*(?:starring|voices?|subject|narrator)\s*=\s*([\s\S]*?)(?=\n\s*\|\s*[a-zA-Z_]+\s*=)/
-    );
-    if (!m) return [];
-    const block = m[1];
-    const names = [];
-    for (const w of block.matchAll(/\[\[([^|\]]+)(?:\|([^\]]+))?\]\]/g)) {
-      names.push((w[2] || w[1]).replace(/\s*\([^)]*\)/g, "").trim());
-    }
-    for (const ill of block.matchAll(
-      /\{\{[Ii]ll\|(?:lt=([^|}]+)\|)?([^|}]+)/g
-    )) {
-      names.push((ill[1] || ill[2]).replace(/\s*\([^)]*\)/g, "").trim());
-    }
-    if (names.length) return namesFromList(names.join(", "));
-    const raw = block
-      .replace(/\{\{[^}]*\}\}/g, " ")
-      .replace(/\[\[([^|\]]*\|)?([^\]]+)\]\]/g, "$2")
-      .replace(/<br\s*\/?>/gi, "\n")
-      .replace(/\*/g, "\n");
-    return namesFromList(raw.replace(/\n/g, ", "));
-  } catch {
-    return [];
-  }
-}
-
-function wikiPagePlausible(page, item) {
-  const extract = page?.extract || "";
-  if (!extract || /^List of /i.test(page.title || "")) return false;
-  if (/netflix/i.test(extract)) return true;
-  const year = (item.date || "").slice(0, 4);
-  if (
-    year &&
-    extract.includes(year) &&
-    /(film|television|series|special|documentary)/i.test(extract)
-  )
-    return true;
-  return false;
-}
-
 async function wikiExactPage(title) {
   if (!title) return null;
   const data = await wikiJson({
@@ -809,93 +1085,6 @@ async function wikiExactPage(title) {
   if (!page || page.missing != null || /^List of /i.test(page.title || ""))
     return null;
   return page;
-}
-
-async function wikiDetailsFor(item) {
-  const year = (item.date || "").slice(0, 4);
-  const bare = String(item.title || "")
-    .replace(/\s*\((?:Season|Part)\s+\d+\)/i, "")
-    .trim();
-  const want = isStandup(item) ? comedianFromTitle(item.title) || bare : bare;
-  const queries = isStandup(item)
-    ? [want, `${item.title} Netflix`]
-    : [
-        want,
-        `${bare} ${year} Netflix`,
-        `${bare} (${year} film)`,
-        `${bare} Netflix`,
-      ];
-
-  let hit = await wikiExactPage(want);
-  if (hit && !wikiPagePlausible(hit, item)) hit = null;
-
-  for (const q of queries.filter(Boolean)) {
-    if (hit) break;
-    const pages = await wikiSearchPages(q);
-    hit =
-      pages.find(
-        (p) => namesSimilar(p.title, want) && /netflix/i.test(p.extract || "")
-      ) ||
-      pages.find(
-        (p) =>
-          namesSimilar(p.title, want) && new RegExp(year).test(p.extract || "")
-      ) ||
-      pages.find(
-        (p) => titleCore(p.title) === titleCore(want) && wikiPagePlausible(p, item)
-      ) ||
-      (isStandup(item) && pages.find((p) => namesSimilar(p.title, want))) ||
-      null;
-    if (hit && !wikiPagePlausible(hit, item) && !isStandup(item)) hit = null;
-    if (hit) break;
-    await sleep(150);
-  }
-  if (!hit) return null;
-  let starring = starringFromExtract(hit.extract || "");
-  if (starring.length < 2) {
-    starring = mergeStarring(starring, await wikiInfoboxStarring(hit.title));
-  }
-  return {
-    pageTitle: hit.title,
-    synopsis: synopsisFromExtract(hit.extract || ""),
-    starring,
-    exact: namesSimilar(hit.title, item.title) || namesSimilar(hit.title, want),
-    image: hit.thumbnail?.source || "",
-  };
-}
-
-async function wikiDetailsWithRetry(item) {
-  try {
-    return await wikiDetailsFor(item);
-  } catch (err) {
-    if (!/429/.test(err.message)) throw err;
-    await sleep(4000);
-    return wikiDetailsFor(item);
-  }
-}
-
-/** Keep plot sentences; skip "directed by…" boilerplate and cast-list sentences. */
-function synopsisFromExtract(extract) {
-  const raw = extract.match(/[^.!?]+[.!?]+/g) || [];
-  const sentences = [];
-  let buf = "";
-  for (const s of raw) {
-    buf += s;
-    if (buf.trim().length >= 40) {
-      sentences.push(buf);
-      buf = "";
-    }
-  }
-  if (buf.trim()) sentences.push(buf);
-  const isListLike = (s) => (s.match(/,/g) || []).length >= 3;
-  const isCastOrCrew = (s) =>
-    /directed by|created by|premiered|released on/i.test(s) ||
-    /\bstarring\b|\bstars\b/i.test(s);
-  const plot = sentences.filter((s) => !isCastOrCrew(s) && !isListLike(s));
-  const fallback = sentences.filter((s) => !isListLike(s));
-  let chosen = (plot.length ? plot : fallback).slice(0, 2).join(" ").trim();
-  if (chosen.length < 80)
-    chosen = sentences.slice(0, 2).join(" ").trim() || chosen;
-  return chosen.length > 320 ? `${chosen.slice(0, 317).trim()}…` : chosen;
 }
 
 function tvmazeType(show) {
@@ -1113,6 +1302,10 @@ function applyFeaturedNames(item) {
 }
 
 async function enrichNetflix(items) {
+  let tmdbHits = 0;
+  console.log(
+    `  [netflix] tmdb via ${TMDB_KEY ? "api" : "public pages"} (${items.length} cards)`
+  );
   for (const item of items) {
     applyStarringFromText(item);
     applyFeaturedNames(item);
@@ -1141,40 +1334,24 @@ async function enrichNetflix(items) {
 
     if (!needsCast(item) && !isThinSynopsis(item.synopsis) && item.image) continue;
 
+    item._tmdbTried = true;
     try {
-      const hit = await wikiDetailsWithRetry(item);
+      const hit = await tmdbLookup(item);
       if (hit) {
-        item.wikiTitle = hit.pageTitle;
+        tmdbHits += 1;
+        item.tmdbId = hit.tmdbId;
+        item.synopsis = pickSynopsis(item.synopsis, hit.synopsis);
+        item.starring = mergeStarring(item.starring, hit.starring);
+        item.akas = [...new Set([...(item.akas || []), ...(hit.akas || [])])];
         if (hit.image && !item.image) item.image = hit.image;
-        if (hit.starring.length)
-          item.starring = mergeStarring(item.starring, hit.starring);
-        if (isStandup(item) && isThinSynopsis(item.synopsis) && hit.synopsis) {
-          const name = comedianFromTitle(item.title);
-          const extra = item.title.includes(":")
-            ? item.title.split(":").slice(1).join(":").trim()
-            : "";
-          const lead = extra
-            ? `${name}'s Netflix stand-up special, ${extra}.`
-            : `${name}'s Netflix stand-up comedy special.`;
-          item.synopsis = `${lead} ${hit.synopsis}`.trim();
-          if (item.synopsis.length > 320)
-            item.synopsis = `${item.synopsis.slice(0, 317).trim()}…`;
-        } else {
-          item.synopsis = pickSynopsis(item.synopsis, hit.synopsis);
-          if (
-            isThinSynopsis(item.synopsis) &&
-            (hit.synopsis || "").length > (item.synopsis || "").length
-          )
-            item.synopsis = hit.synopsis;
-        }
-        if (hit.exact) item.confirmedOriginal = true;
       }
     } catch (err) {
-      console.warn(`  [netflix] wiki "${item.title}": ${err.message}`);
+      console.warn(`  [netflix] tmdb "${item.title}": ${err.message}`);
     }
     applyFeaturedNames(item);
     await sleep(200);
   }
+  console.log(`  [netflix] tmdb filled ${tmdbHits} cards`);
   return items;
 }
 
@@ -1222,16 +1399,41 @@ async function buildNetflix() {
   } catch (err) {
     console.warn(`  [netflix] rss: ${err.message}`);
   }
-  // Fallback / supplement: Wikipedia lists (whats-on-netflix sometimes 403s).
-  // All three lists are originals-only by definition.
+  // Title/date lists only (whats-on-netflix sometimes 403s). Plot comes from TMDB.
   try {
     items.push(...(await fetchWikipediaFilms()));
   } catch (err) {
     console.warn(`  [netflix] wikipedia films: ${err.message}`);
   }
   items.push(...(await fetchWikipediaProgramming()));
-  // TVMaze first, then listings, then Wikipedia. Merge field-wise so a
-  // later source fills synopsis/cast without replacing the TVMaze card.
+  try {
+    const prev = JSON.parse(
+      await readFile(path.join(OUT_DIR, "netflix.json"), "utf8")
+    );
+    const seeded = (prev.items || [])
+      .filter((i) => i?.title && i.date && inWindow(i.date))
+      .map((i) => ({
+        title: i.title,
+        type: i.type || "Film",
+        date: i.date,
+        synopsis:
+          isThinSynopsis(i.synopsis) || /\bmay refer to\b/i.test(i.synopsis || "")
+            ? ""
+            : i.synopsis,
+        starring: Array.isArray(i.starring) ? i.starring : [],
+        image:
+          String(i.image || "").startsWith(`${POSTER_URL_PREFIX}/`)
+            ? i.image
+            : "",
+      }));
+    items.push(...seeded);
+    if (seeded.length)
+      console.log(`  [netflix] kept ${seeded.length} in-window titles from last run`);
+  } catch {
+    /* first run or unreadable cache */
+  }
+  // TVMaze first, then title lists. Merge field-wise so a later source
+  // cannot replace a TVMaze synopsis with an empty listing stub.
   let merged = dedupeNetflix(items, false);
   merged = await enrichNetflix(merged);
   merged = dedupeNetflix(merged, true);
@@ -1270,7 +1472,8 @@ async function wikiPosterForTitle(title) {
     .trim();
   if (!want) return "";
   const page = await wikiExactPage(want);
-  if (page?.thumbnail?.source) return page.thumbnail.source;
+  if (page?.thumbnail?.source && !/\bmay refer to\b/i.test(page.extract || ""))
+    return page.thumbnail.source;
   const pages = await wikiSearchPages(`${want} Netflix`);
   const hit =
     pages.find((p) => namesSimilar(p.title, want)) ||
@@ -1283,6 +1486,26 @@ async function fillMissingNetflixImages(items) {
   let filled = 0;
   for (const item of items) {
     if (item.image) continue;
+    if (!item._tmdbTried) {
+      try {
+        const hit = await tmdbLookup(item);
+        item._tmdbTried = true;
+        if (hit?.image) {
+          item.tmdbId = hit.tmdbId || item.tmdbId;
+          item.image = hit.image;
+          if (isThinSynopsis(item.synopsis) && hit.synopsis)
+            item.synopsis = pickSynopsis(item.synopsis, hit.synopsis);
+          if (hit.starring?.length)
+            item.starring = mergeStarring(item.starring, hit.starring);
+          filled += 1;
+          await sleep(200);
+          continue;
+        }
+      } catch (err) {
+        console.warn(`  [netflix] poster tmdb "${item.title}": ${err.message}`);
+      }
+      await sleep(200);
+    }
     try {
       const fromTv = await tvmazePosterForTitle(item.title);
       if (fromTv) {
@@ -1337,7 +1560,9 @@ async function fetchBuffer(url) {
       headers: {
         "User-Agent": UA,
         Accept: "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
-        Referer: "https://www.tvmaze.com/",
+        Referer: /tmdb\.org|themoviedb/.test(url)
+          ? "https://www.themoviedb.org/"
+          : "https://www.tvmaze.com/",
       },
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -1427,7 +1652,6 @@ async function main() {
     const ok = await writeSection("netflix", netflix, 5);
     console.log(`Done — netflix ${ok ? "updated" : "kept"}.`);
     if (!ok) process.exitCode = 1;
-    else await writeBriefingFile();
     return;
   }
   const [sports, entertainment, netflix] = await Promise.all([

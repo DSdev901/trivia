@@ -40,6 +40,8 @@ jobs:
         run: node scripts/cache-entertainment.mjs
 
       - name: Refresh current events data
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: node scripts/refresh-current-events.mjs
 
       # COPILOT_BILLING_TOKEN is optional. Remaining credits are read from
