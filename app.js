@@ -125,7 +125,7 @@ async function loadBatch(category, batchNumber) {
 
 function categoryMetaLabel(category) {
   if (category?.type === "current-events") {
-    return "briefing · sports · entertainment";
+    return "briefing · live feed";
   }
   if (category?.type === "netflix") {
     return "shows · movies";

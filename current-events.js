@@ -29,7 +29,10 @@ const NETFLIX_SECTION = {
 
 function visibleTabs() {
   if (ce.mode === "netflix") return [];
-  return [{ id: "briefing", label: "Briefing" }, ...NEWS_SECTIONS];
+  return [
+    { id: "briefing", label: "Briefing" },
+    { id: "feed", label: "Live feed" },
+  ];
 }
 const BRIEFING_FILTERS = [
   { id: "all", label: "All" },
@@ -45,6 +48,7 @@ const ce = {
   briefingFilter: "all", // "all" | "sports" | "entertainment"
   briefingSportFilter: "all", // "all" | sport tag e.g. "NFL"
   briefingShowAll: false,
+  feedFilter: "all", // "all" | "sports" | "entertainment"
   netflixFilter: "all", // "all" | "shows" | "movies"
   netflixUsOnly: false,
   sportFilter: "all", // "all" | sport label e.g. "NFL"
@@ -235,6 +239,9 @@ function sportTag(item) {
 
 function briefingItems() {
   const items = briefingPayload().items || [];
+  items.forEach((item, i) => {
+    if (!item._rank) item._rank = i + 1;
+  });
   if (ce.briefingFilter === "all") return items;
   const sectioned = items.filter((i) => i.section === ce.briefingFilter);
   if (
@@ -246,8 +253,49 @@ function briefingItems() {
   return sectioned;
 }
 
+function combinedLiveItems() {
+  const sports = (ce.data.sports?.items || []).map((item) => ({
+    ...item,
+    section: "sports",
+  }));
+  const entertainment = (ce.data.entertainment?.items || []).map((item) => ({
+    ...item,
+    section: "entertainment",
+  }));
+  return [...sports, ...entertainment].sort((a, b) =>
+    (b.date || "").localeCompare(a.date || "")
+  );
+}
+
+function liveFeedItems() {
+  let items = combinedLiveItems();
+  if (ce.feedFilter === "sports") {
+    items = items.filter((i) => i.section === "sports");
+    if (ce.sportFilter !== "all") {
+      items = items.filter((i) => (i.sport || "Sports") === ce.sportFilter);
+    }
+  } else if (ce.feedFilter === "entertainment") {
+    items = items.filter((i) => i.section === "entertainment");
+  }
+  return items;
+}
+
+function feedWindow() {
+  const starts = [ce.data.sports?.windowStart, ce.data.entertainment?.windowStart]
+    .filter(Boolean)
+    .sort();
+  const ends = [ce.data.sports?.windowEnd, ce.data.entertainment?.windowEnd]
+    .filter(Boolean)
+    .sort();
+  return {
+    windowStart: starts[0] || "",
+    windowEnd: ends[ends.length - 1] || "",
+  };
+}
+
 function activeItems() {
   if (ce.tab === "briefing") return briefingItems();
+  if (ce.tab === "feed") return liveFeedItems();
   const payload = ce.data[ce.tab];
   const items = [...(payload?.items || [])].sort((a, b) =>
     (b.date || "").localeCompare(a.date || "")
@@ -259,9 +307,6 @@ function activeItems() {
     }
     if (ce.netflixUsOnly) out = out.filter((i) => i.inUS === true);
     return out;
-  }
-  if (ce.tab === "sports" && ce.sportFilter !== "all") {
-    return out.filter((i) => (i.sport || "Sports") === ce.sportFilter);
   }
   return out;
 }
@@ -336,8 +381,12 @@ function briefingCard(item, idx) {
   return `
     <article class="ce-card ce-story-card" data-idx="${idx}">
       <div class="ce-meta">
-        <span class="ce-rank" aria-label="Rank ${idx + 1}">${idx + 1}</span>
-        <span class="ce-badge">${escapeHtml(sectionLabel(item.section))}</span>
+        <span class="ce-rank" aria-label="Rank ${item._rank || idx + 1}">${item._rank || idx + 1}</span>
+        ${
+          ce.briefingFilter === "all"
+            ? ""
+            : `<span class="ce-badge">${escapeHtml(sectionLabel(item.section))}</span>`
+        }
         <span class="ce-badge ce-badge-alt">${escapeHtml(item.tag || "News")}</span>
         ${
           coverage > 1
@@ -412,7 +461,14 @@ function briefingSportFilterBar(allItems) {
     </div>`;
 }
 
-function briefingListHtml(items, startIdx = 0) {
+function briefingListHtml(items, allItems) {
+  const idxOf = (item) => {
+    const i = allItems.indexOf(item);
+    return i < 0 ? 0 : i;
+  };
+  if (ce.briefingFilter === "all") {
+    return groupedCardsHtml(items, idxOf, briefingCard);
+  }
   if (
     ce.briefingFilter === "sports" &&
     ce.briefingSportFilter === "all"
@@ -428,22 +484,61 @@ function briefingListHtml(items, startIdx = 0) {
         list.reduce((n, i) => n + (Number(i.coverage) || 1), 0);
       return cov(b[1]) - cov(a[1]) || b[1].length - a[1].length || a[0].localeCompare(b[0]);
     });
-    let idx = startIdx;
     return ordered
       .map(
         ([sport, list]) => `
       <section class="ce-group">
         <h3 class="ce-group-title">${escapeHtml(sport)}</h3>
         <div class="ce-list">${list
-          .map((item) => briefingCard(item, idx++))
+          .map((item) => briefingCard(item, idxOf(item)))
           .join("")}</div>
       </section>`
       )
       .join("");
   }
   return `<div class="ce-list">${items
-    .map((item, i) => briefingCard(item, startIdx + i))
+    .map((item) => briefingCard(item, idxOf(item)))
     .join("")}</div>`;
+}
+
+function groupedCardsHtml(items, idxOf, cardFn) {
+  const order = ["sports", "entertainment"];
+  const groups = new Map(order.map((id) => [id, []]));
+  for (const item of items) {
+    const key = item.section === "sports" ? "sports" : "entertainment";
+    groups.get(key).push(item);
+  }
+  return order
+    .filter((id) => groups.get(id).length)
+    .map(
+      (id) => `
+      <section class="ce-group">
+        <h3 class="ce-group-title">${escapeHtml(sectionLabel(id))}</h3>
+        <div class="ce-list">${groups
+          .get(id)
+          .map((item) => cardFn(item, idxOf(item)))
+          .join("")}</div>
+      </section>`
+    )
+    .join("");
+}
+
+function feedFilterBar(allItems) {
+  const counts = { all: allItems.length, sports: 0, entertainment: 0 };
+  for (const i of allItems) {
+    if (counts[i.section] != null) counts[i.section] += 1;
+  }
+  return `
+    <div class="ce-filter" role="group" aria-label="Filter live feed">
+      ${BRIEFING_FILTERS.map(
+        (f) => `
+        <button type="button" class="ce-filter-chip ${
+          ce.feedFilter === f.id ? "is-on" : ""
+        }" data-ffilter="${f.id}">${f.label} <span class="ce-filter-count">${
+          counts[f.id]
+        }</span></button>`
+      ).join("")}
+    </div>`;
 }
 
 function netflixFilterBar(allItems) {
@@ -530,8 +625,9 @@ function renderBody() {
     if (!items.length) {
       return `${freshNote}${filters}<p class="lede">Nothing found for this filter in the current window.</p>`;
     }
-    const featured = items.slice(0, BRIEFING_FEATURED);
-    const rest = items.slice(BRIEFING_FEATURED);
+    const showAllSections = ce.briefingFilter === "all";
+    const featured = showAllSections ? items : items.slice(0, BRIEFING_FEATURED);
+    const rest = showAllSections ? [] : items.slice(BRIEFING_FEATURED);
     const archive = rest.length
       ? ce.briefingShowAll
         ? `<section class="ce-archive">
@@ -539,43 +635,60 @@ function renderBody() {
           <h3 class="ce-archive-title">More ranked stories</h3>
           <button type="button" class="text-btn" id="ce-briefing-toggle">Hide extra stories</button>
         </div>
-        ${briefingListHtml(rest, featured.length)}
+        ${briefingListHtml(rest, items)}
       </section>`
         : `<p class="ce-archive-more">
         <button type="button" class="secondary-btn" id="ce-briefing-toggle">Show all ranked stories (${items.length})</button>
       </p>`
       : "";
+    const scope = showAllSections
+      ? `${items.length} stories, grouped by sports and entertainment`
+      : `Top ${featured.length} of ${items.length} stories`;
     return `
     ${freshNote}
-    <p class="ce-window">Covering ${fmtRange(payload.windowStart, payload.windowEnd)} · Top ${
-      featured.length
-    } of ${items.length} stories · ${rankedBy} Main people are in <strong>bold</strong>.</p>
+    <p class="ce-window">Covering ${fmtRange(payload.windowStart, payload.windowEnd)} · ${scope} · ${rankedBy} Main people are in <strong>bold</strong>.</p>
     ${filters}
-    ${briefingListHtml(featured, 0)}
+    ${briefingListHtml(featured, items)}
     ${archive}`;
   }
-  const payload = ce.data[ce.tab];
+  if (ce.tab === "feed") {
+    const allLive = combinedLiveItems();
+    const items = liveFeedItems();
+    const win = feedWindow();
+    const sportBar =
+      ce.feedFilter === "sports" ? sportFilterBar(allLive.filter((i) => i.section === "sports")) : "";
+    const filters = `<div class="ce-filters">${feedFilterBar(allLive)}${sportBar}</div>`;
+    if (!items.length) {
+      return `${filters}<p class="lede">Nothing found for this filter in the current window.</p>`;
+    }
+    const idxOf = (item) => {
+      const i = items.indexOf(item);
+      return i < 0 ? 0 : i;
+    };
+    const cards =
+      ce.feedFilter === "all"
+        ? groupedCardsHtml(items, idxOf, storyCard)
+        : `<div class="ce-list">${items.map((item, i) => storyCard(item, i)).join("")}</div>`;
+    return `
+    <p class="ce-window">Covering ${fmtRange(win.windowStart, win.windowEnd)} · ${
+      items.length
+    } stories · Rolling sports and entertainment headlines, newest first.</p>
+    ${filters}
+    ${cards}`;
+  }
+  const payload = ce.data.netflix;
   if (!payload) return `<p class="error">No data for this section yet.</p>`;
   const items = activeItems();
-  const filterBar =
-    ce.tab === "netflix"
-      ? netflixFilterBar([...(payload.items || [])])
-      : ce.tab === "sports"
-        ? sportFilterBar([...(payload.items || [])])
-        : "";
+  const filterBar = netflixFilterBar([...(payload.items || [])]);
   if (!items.length) {
     return `${filterBar}<p class="lede">Nothing found for this filter in the current window.</p>`;
   }
-  const cards =
-    ce.tab === "netflix"
-      ? items.map(netflixCard).join("")
-      : items.map(storyCard).join("");
   return `
     <p class="ce-window">Covering ${fmtRange(payload.windowStart, payload.windowEnd)} · ${
       items.length
-    } ${ce.tab === "netflix" ? "releases" : "stories"}</p>
+    } releases</p>
     ${filterBar}
-    <div class="${ce.tab === "netflix" ? "ce-grid" : "ce-list"}">${cards}</div>`;
+    <div class="ce-grid">${items.map(netflixCard).join("")}</div>`;
 }
 
 function speechPanelHtml() {
@@ -596,6 +709,8 @@ function speechPanelHtml() {
       ? "Hear upcoming Netflix originals, newest first."
       : ce.tab === "briefing"
       ? "Hear the top briefing stories, heaviest coverage first."
+      : ce.tab === "feed"
+      ? "Hear the live sports and entertainment feed, newest first."
       : `Hear the ${tabLabel} feed like a news brief, newest first.`;
   return `
     <section class="speech-panel ce-speech" aria-label="Read aloud">
@@ -651,6 +766,9 @@ function speechPanelHtml() {
 
 function render() {
   if (!ce.root) return;
+  if (ce.mode !== "netflix" && ce.tab !== "briefing" && ce.tab !== "feed") {
+    ce.tab = "briefing";
+  }
   const updated = latestGeneratedAt();
   const canRefresh = isLocalHost();
   ce.root.innerHTML = `
@@ -660,7 +778,7 @@ function render() {
         <p class="lede">${
           ce.mode === "netflix"
             ? "Upcoming Netflix originals. Filter by shows or movies."
-            : "Sports and entertainment headlines update every few hours. On Tuesday, the last three weeks are clustered into a briefing; Copilot rewrites the top stories."
+            : "The briefing is the Tuesday ranked digest, grouped by sports and entertainment. Live feed is the rolling headlines that update every few hours."
         }</p>
       </div>
       <div class="ce-refresh-wrap">
@@ -716,6 +834,10 @@ function render() {
         ce.briefingFilter = btn.dataset.bfilter;
         ce.briefingSportFilter = "all";
         ce.briefingShowAll = false;
+      }
+      if (btn.dataset.ffilter) {
+        ce.feedFilter = btn.dataset.ffilter;
+        if (btn.dataset.ffilter !== "sports") ce.sportFilter = "all";
       }
       if (btn.dataset.bsfilter) {
         ce.briefingFilter = "sports";

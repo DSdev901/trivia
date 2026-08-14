@@ -4,7 +4,7 @@
  * for 21 days. Live feeds only carry a few days of posts, so frequent
  * snapshots are required to keep a three-week window without repeats.
  *
- * Also publishes data/current-events/entertainment.json so the live tab
+ * Also publishes data/current-events/entertainment.json so the live feed
  * updates every three hours.
  *
  *   node scripts/cache-entertainment.mjs
