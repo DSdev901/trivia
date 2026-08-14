@@ -9,7 +9,12 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const PROMPT = path.join(ROOT, "scripts", "briefing-prompt.md");
+const MERGE = process.env.BRIEFING_MERGE === "1";
+const PROMPT = path.join(
+  ROOT,
+  "scripts",
+  MERGE ? "briefing-merge-prompt.md" : "briefing-prompt.md"
+);
 const FILE =
   process.env.BRIEFING_INPUT ||
   path.join(ROOT, "data", "current-events", "briefing.json");
@@ -20,8 +25,38 @@ const all = data.items || [];
 const offset = Math.max(0, Number(process.env.BRIEFING_OFFSET || 0));
 const limit = Math.max(0, Number(process.env.BRIEFING_LIMIT || 0));
 const slice = limit > 0 ? all.slice(offset, offset + limit) : all.slice(offset);
-const batchNote =
-  slice.length === all.length
+const clip = (s, n = 220) => {
+  const t = String(s || "").replace(/\s+/g, " ").trim();
+  return t.length <= n ? t : `${t.slice(0, n - 1).replace(/\s+\S*$/, "")}…`;
+};
+const items = MERGE
+  ? slice.map((item, i) => ({
+      i,
+      headline: item.headline,
+      people: item.people || [],
+      summary: clip(item.summary),
+      section: item.section,
+      tag: item.tag,
+      date: item.date,
+      coverage: item.coverage || 1,
+    }))
+  : slice.map((item) => {
+      const row = {
+        headline: item.headline,
+        people: item.people || [],
+        summary: item.summary,
+        section: item.section,
+        tag: item.tag,
+        coverage: item.coverage || 1,
+      };
+      if (Array.isArray(item.angles) && item.angles.length) {
+        row.angles = item.angles;
+      }
+      return row;
+    });
+const batchNote = MERGE
+  ? `\nIndexes are 0–${Math.max(0, items.length - 1)} in this list.\n`
+  : slice.length === all.length
     ? ""
     : `\nThis batch is items ${offset + 1}–${offset + slice.length} of ${all.length}. Rewrite only these items.\n`;
 const input = {
@@ -30,20 +65,7 @@ const input = {
   windowEnd: data.windowEnd || "",
   offset,
   total: all.length,
-  items: slice.map((item) => {
-    const row = {
-      headline: item.headline,
-      people: item.people || [],
-      summary: item.summary,
-      section: item.section,
-      tag: item.tag,
-      coverage: item.coverage || 1,
-    };
-    if (Array.isArray(item.angles) && item.angles.length) {
-      row.angles = item.angles;
-    }
-    return row;
-  }),
+  items,
 };
 
 process.stdout.write(

@@ -988,4 +988,82 @@ export function highlightPeople(text, people) {
   return out;
 }
 
+export function combineBriefingItems(group) {
+  const expanded = [];
+  for (const item of group) {
+    const score =
+      (Math.max(1, Number(item.coverage) || 1) * 10) + (Number(item.quality) || 0);
+    expanded.push({
+      ...item,
+      score,
+      people: item.people || [],
+    });
+    for (const ang of item.angles || []) {
+      expanded.push({
+        headline: ang.headline || item.headline,
+        summary: ang.fact || "",
+        people: [],
+        date: item.date,
+        url: item.url,
+        section: item.section,
+        tag: item.tag,
+        score: 1,
+      });
+    }
+  }
+  const merged = mergeGroup(expanded);
+  merged.coverage = group.reduce(
+    (n, item) => n + Math.max(1, Number(item.coverage) || 1),
+    0
+  );
+  const best = [...group].sort(
+    (a, b) =>
+      (b.coverage || 1) - (a.coverage || 1) ||
+      (b.date || "").localeCompare(a.date || "")
+  )[0];
+  merged.url = best?.url || merged.url;
+  merged.section = best?.section || merged.section;
+  merged.tag = best?.tag || merged.tag;
+  return merged;
+}
+
+/** Fold Haiku-proposed index groups into one card each. Indices are 0-based. */
+export function applyMergeGroups(items, groups) {
+  const n = items.length;
+  const parent = Array.from({ length: n }, (_, i) => i);
+  const find = (i) => (parent[i] === i ? i : (parent[i] = find(parent[i])));
+  const unite = (a, b) => {
+    const ra = find(a);
+    const rb = find(b);
+    if (ra !== rb) parent[ra] = rb;
+  };
+  for (const raw of groups || []) {
+    if (!Array.isArray(raw)) continue;
+    const idx = [
+      ...new Set(
+        raw
+          .map((v) => Number(v))
+          .filter((i) => Number.isInteger(i) && i >= 0 && i < n)
+      ),
+    ].sort((a, b) => a - b);
+    if (idx.length < 2 || idx.length > 4) continue;
+    const section = items[idx[0]].section;
+    if (idx.some((i) => items[i].section !== section)) continue;
+    for (let k = 1; k < idx.length; k++) unite(idx[0], idx[k]);
+  }
+  const seen = new Set();
+  const out = [];
+  for (let i = 0; i < n; i++) {
+    const root = find(i);
+    if (seen.has(root)) continue;
+    seen.add(root);
+    const members = [];
+    for (let j = 0; j < n; j++) {
+      if (find(j) === root) members.push(items[j]);
+    }
+    out.push(members.length === 1 ? members[0] : combineBriefingItems(members));
+  }
+  return out;
+}
+
 export { escapeHtml, stripHtml, extractPeople };

@@ -15,6 +15,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const FILE = path.join(ROOT, "data", "current-events", "briefing.json");
 const PROMPT = path.join(ROOT, "scripts", "briefing-copilot-prompt.mjs");
 const APPLY = path.join(ROOT, "scripts", "apply-briefing-rewrite.mjs");
+const APPLY_MERGES = path.join(ROOT, "scripts", "apply-briefing-merges.mjs");
 const VALIDATE = path.join(ROOT, "scripts", "validate-briefing.mjs");
 const FALLBACK = process.env.BRIEFING_FALLBACK || "/tmp/briefing.fallback.json";
 const INPUT = process.env.BRIEFING_INPUT || "/tmp/briefing.input.json";
@@ -40,7 +41,67 @@ if (total < 10) {
 
 await copyFile(FALLBACK, FILE);
 
-const rewriteUntil = Math.min(TOP, total);
+function runCopilot(promptText) {
+  return spawnSync(
+    "copilot",
+    [
+      `--model=${MODEL}`,
+      "-s",
+      "--no-ask-user",
+      "--available-tools=view",
+      "--excluded-tools=create,edit,apply_patch,bash,powershell",
+      "--deny-tool=write",
+      "--deny-tool=shell",
+    ],
+    {
+      cwd: ROOT,
+      input: promptText,
+      encoding: "utf8",
+      maxBuffer: 32 * 1024 * 1024,
+      stdio: ["pipe", "pipe", "inherit"],
+    }
+  );
+}
+
+{
+  const mergeUntil = Math.min(TOP, total);
+  console.log(
+    `  [briefing] Copilot combover on top ${mergeUntil} for same-story merges`
+  );
+  const mergePrompt = runNode(
+    PROMPT,
+    [],
+    {
+      BRIEFING_INPUT: INPUT,
+      BRIEFING_OFFSET: "0",
+      BRIEFING_LIMIT: String(mergeUntil),
+      BRIEFING_MERGE: "1",
+      COPILOT_MODEL: MODEL,
+    }
+  );
+  if (mergePrompt.status === 0 && mergePrompt.stdout) {
+    const mergeOut = "/tmp/briefing.copilot.merges.txt";
+    const copilot = runCopilot(mergePrompt.stdout);
+    await writeFile(mergeOut, copilot.stdout || "");
+    if (copilot.stdout) {
+      const applied = runNode(
+        APPLY_MERGES,
+        [mergeOut, INPUT],
+        { BRIEFING_TOP_N: String(TOP), COPILOT_MODEL: MODEL },
+        "inherit"
+      );
+      if (applied.status !== 0) {
+        console.log("  [briefing] combover unusable — keeping clustered cards");
+      }
+    } else {
+      console.log("  [briefing] combover was empty — keeping clustered cards");
+    }
+  } else {
+    console.log("  [briefing] combover prompt failed — keeping clustered cards");
+  }
+}
+
+const rewriteUntil = Math.min(TOP, JSON.parse(await readFile(INPUT, "utf8")).items.length);
 let chunksOk = 0;
 for (let offset = 0; offset < rewriteUntil; offset += CHUNK) {
   const limit = Math.min(CHUNK, rewriteUntil - offset);
@@ -62,25 +123,7 @@ for (let offset = 0; offset < rewriteUntil; offset += CHUNK) {
     continue;
   }
 
-  const copilot = spawnSync(
-    "copilot",
-    [
-      `--model=${MODEL}`,
-      "-s",
-      "--no-ask-user",
-      "--available-tools=view",
-      "--excluded-tools=create,edit,apply_patch,bash,powershell",
-      "--deny-tool=write",
-      "--deny-tool=shell",
-    ],
-    {
-      cwd: ROOT,
-      input: prompt.stdout,
-      encoding: "utf8",
-      maxBuffer: 32 * 1024 * 1024,
-      stdio: ["pipe", "pipe", "inherit"],
-    }
-  );
+  const copilot = runCopilot(prompt.stdout);
   const outPath = `/tmp/briefing.copilot.${offset}.txt`;
   await writeFile(outPath, copilot.stdout || "");
   if (!copilot.stdout) {
