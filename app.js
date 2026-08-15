@@ -976,7 +976,7 @@ function goHome() {
   state.president = null;
   state.quiz = null;
   state.lastResult = null;
-  els.subtitle.textContent = "Pick a category";
+  els.subtitle.textContent = "";
   show("categories");
 }
 
