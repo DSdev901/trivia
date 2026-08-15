@@ -13,6 +13,9 @@
   --radius: 14px;
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+  --app-max: 1280px;
+  --app-inset: 0.625rem;
+  --memphis-width: 180px;
 }
 
 *,
@@ -45,6 +48,8 @@ body {
   color: var(--ink);
   background-color: var(--paper);
   line-height: 1.5;
+  --app-width: min(var(--app-max), calc(100vw - 2 * var(--app-inset)));
+  --gutter: max(0px, calc((100vw - var(--app-width)) / 2));
 }
 
 body::before,
@@ -54,26 +59,26 @@ body::after {
   top: 0;
   bottom: 0;
   z-index: 0;
-  width: max(0px, calc((100vw - min(920px, 100vw - 2rem)) / 2));
+  width: min(var(--memphis-width), var(--gutter));
   pointer-events: none;
   background-color: var(--paper);
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='360' viewBox='0 0 280 360'><rect width='280' height='360' fill='%23f7f3eb'/><path d='M16 44c12-16 24 16 36 0s24 16 36 0' fill='none' stroke='%230b5f4b' stroke-width='3' stroke-linecap='round' opacity='.3'/><path d='M198 26l16 28h-32z' fill='%23c45c4a' opacity='.3'/><circle cx='72' cy='210' r='8' fill='%23b8860b' opacity='.32'/><circle cx='236' cy='88' r='5' fill='%233d6b9a' opacity='.3'/><circle cx='40' cy='300' r='3.5' fill='%230b5f4b' opacity='.28'/><circle cx='168' cy='328' r='3' fill='%23c45c4a' opacity='.3'/><rect x='214' y='188' width='20' height='20' rx='2' transform='rotate(18 224 198)' fill='none' stroke='%23b8860b' stroke-width='3' opacity='.28'/><path d='M118 128h32' stroke='%233d6b9a' stroke-width='3' stroke-linecap='round' stroke-dasharray='7 7' opacity='.28'/><path d='M24 168h14M31 161v14' stroke='%23c45c4a' stroke-width='3' stroke-linecap='round' opacity='.28'/><ellipse cx='150' cy='78' rx='26' ry='7' fill='%230b5f4b' opacity='.28'/><ellipse cx='150' cy='74' rx='11' ry='6' fill='%233d6b9a' opacity='.34'/><circle cx='138' cy='78' r='1.6' fill='%23f7f3eb' opacity='.7'/><circle cx='150' cy='78' r='1.6' fill='%23b8860b' opacity='.7'/><circle cx='162' cy='78' r='1.6' fill='%23f7f3eb' opacity='.7'/><ellipse cx='58' cy='252' rx='22' ry='6' fill='%23b8860b' opacity='.3'/><ellipse cx='58' cy='248' rx='9' ry='5' fill='%230b5f4b' opacity='.32'/><circle cx='48' cy='252' r='1.4' fill='%23f7f3eb' opacity='.7'/><circle cx='58' cy='252' r='1.4' fill='%23f7f3eb' opacity='.7'/><circle cx='68' cy='252' r='1.4' fill='%23f7f3eb' opacity='.7'/><ellipse cx='222' cy='292' rx='20' ry='5.5' fill='%233d6b9a' opacity='.28'/><ellipse cx='222' cy='288' rx='8' ry='4.5' fill='%23c45c4a' opacity='.3'/><rect x='102' y='158' width='13' height='17' rx='2' fill='%23b8860b' opacity='.34'/><rect x='102' y='155' width='13' height='5' rx='1.6' fill='%23f7f3eb' opacity='.7'/><path d='M115 163c5.5 0 5.5 9 0 9' fill='none' stroke='%23b8860b' stroke-width='2' opacity='.34'/><rect x='248' y='128' width='11' height='14' rx='2' fill='%23c45c4a' opacity='.32'/><rect x='248' y='125' width='11' height='4.5' rx='1.4' fill='%23f7f3eb' opacity='.7'/><path d='M259 132c4.5 0 4.5 7.5 0 7.5' fill='none' stroke='%23c45c4a' stroke-width='1.8' opacity='.32'/><rect x='18' y='318' width='12' height='15' rx='2' fill='%230b5f4b' opacity='.3'/><rect x='18' y='315' width='12' height='4.5' rx='1.4' fill='%23f7f3eb' opacity='.7'/><path d='M30 322c4.8 0 4.8 8 0 8' fill='none' stroke='%230b5f4b' stroke-width='1.8' opacity='.3'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='360' viewBox='0 0 280 360'><rect width='280' height='360' fill='%23f7f3eb'/><path d='M37 17C45 16 53 21 52 29C56 28 60 32 58 36C60 38 59 42 55 43L53 47C55 50 53 54 49 54L47 59L60 66L58 75L37 68L16 75L14 66L27 59L25 54C21 54 19 50 21 47L19 43C15 42 14 38 16 36C14 32 18 28 22 29C21 21 29 16 37 17Z' fill='%230b5f4b' opacity='.32'/><path d='M198 26l16 28h-32z' fill='%23c45c4a' opacity='.3'/><circle cx='72' cy='210' r='8' fill='%23b8860b' opacity='.32'/><circle cx='236' cy='88' r='5' fill='%233d6b9a' opacity='.3'/><circle cx='40' cy='300' r='3.5' fill='%230b5f4b' opacity='.28'/><circle cx='168' cy='328' r='3' fill='%23c45c4a' opacity='.3'/><rect x='214' y='188' width='20' height='20' rx='2' transform='rotate(18 224 198)' fill='none' stroke='%23b8860b' stroke-width='3' opacity='.28'/><path d='M118 128h32' stroke='%233d6b9a' stroke-width='3' stroke-linecap='round' stroke-dasharray='7 7' opacity='.28'/><path d='M24 168h14M31 161v14' stroke='%23c45c4a' stroke-width='3' stroke-linecap='round' opacity='.28'/><ellipse cx='150' cy='78' rx='26' ry='7' fill='%230b5f4b' opacity='.28'/><ellipse cx='150' cy='74' rx='11' ry='6' fill='%233d6b9a' opacity='.34'/><circle cx='138' cy='78' r='1.6' fill='%23f7f3eb' opacity='.7'/><circle cx='150' cy='78' r='1.6' fill='%23b8860b' opacity='.7'/><circle cx='162' cy='78' r='1.6' fill='%23f7f3eb' opacity='.7'/><ellipse cx='58' cy='252' rx='22' ry='6' fill='%23b8860b' opacity='.3'/><ellipse cx='58' cy='248' rx='9' ry='5' fill='%230b5f4b' opacity='.32'/><circle cx='48' cy='252' r='1.4' fill='%23f7f3eb' opacity='.7'/><circle cx='58' cy='252' r='1.4' fill='%23f7f3eb' opacity='.7'/><circle cx='68' cy='252' r='1.4' fill='%23f7f3eb' opacity='.7'/><ellipse cx='222' cy='292' rx='20' ry='5.5' fill='%233d6b9a' opacity='.28'/><ellipse cx='222' cy='288' rx='8' ry='4.5' fill='%23c45c4a' opacity='.3'/><rect x='102' y='158' width='13' height='17' rx='2' fill='%23b8860b' opacity='.34'/><rect x='102' y='155' width='13' height='5' rx='1.6' fill='%23f7f3eb' opacity='.7'/><path d='M115 163c5.5 0 5.5 9 0 9' fill='none' stroke='%23b8860b' stroke-width='2' opacity='.34'/><rect x='248' y='128' width='11' height='14' rx='2' fill='%23c45c4a' opacity='.32'/><rect x='248' y='125' width='11' height='4.5' rx='1.4' fill='%23f7f3eb' opacity='.7'/><path d='M259 132c4.5 0 4.5 7.5 0 7.5' fill='none' stroke='%23c45c4a' stroke-width='1.8' opacity='.32'/><rect x='18' y='318' width='12' height='15' rx='2' fill='%230b5f4b' opacity='.3'/><rect x='18' y='315' width='12' height='4.5' rx='1.4' fill='%23f7f3eb' opacity='.7'/><path d='M30 322c4.8 0 4.8 8 0 8' fill='none' stroke='%230b5f4b' stroke-width='1.8' opacity='.3'/></svg>");
   background-size: 180px 230px;
   background-repeat: repeat;
 }
 
 body::before {
-  left: 0;
+  left: max(0px, calc(var(--gutter) - var(--memphis-width)));
 }
 
 body::after {
-  right: 0;
+  right: max(0px, calc(var(--gutter) - var(--memphis-width)));
 }
 
 .app {
   position: relative;
   z-index: 1;
-  width: min(920px, calc(100% - 2rem));
+  width: min(var(--app-max), calc(100% - 2 * var(--app-inset)));
   margin: 0 auto;
   padding: 2rem 0 calc(4rem + env(safe-area-inset-bottom));
 }
@@ -1038,10 +1043,6 @@ body::after {
 
 /* ---------- Current Events ---------- */
 
-.app:has(.ce-head) {
-  width: min(1200px, calc(100% - 1.5rem));
-}
-
 .ce-head {
   display: flex;
   flex-wrap: wrap;
@@ -1481,10 +1482,6 @@ body::after {
 
 /* ---------- Periodic Table ---------- */
 
-.app:has(.pt-shell) {
-  width: min(1280px, calc(100% - 1.25rem));
-}
-
 .pt-head {
   margin-bottom: 0.75rem;
 }
@@ -1874,15 +1871,6 @@ body::after {
 }
 
 /* ---------- Geography ---------- */
-
-.app:has(.geo-shell) {
-  width: min(1100px, calc(100% - 1.25rem));
-}
-
-.app:has(.geo-play--map),
-.app:has(.geo-play--study) {
-  width: min(1240px, calc(100% - 0.75rem));
-}
 
 .geo-head {
   display: flex;
@@ -2588,54 +2576,54 @@ body::after {
     max-height: 32vh;
   }
 
-  body:has(.geo-play),
-  body:has(.quiz-shell) {
+  body:has(.view:not([hidden]) .geo-play),
+  body:has(.view:not([hidden]) .quiz-shell) {
     --mobile-chrome: 1;
   }
 
-  body:has(.geo-play) .app,
-  body:has(.quiz-shell) .app {
+  body:has(.view:not([hidden]) .geo-play) .app,
+  body:has(.view:not([hidden]) .quiz-shell) .app {
     width: min(1100px, calc(100% - 0.7rem));
     padding-top: 0.4rem;
     padding-bottom: calc(0.45rem + env(safe-area-inset-bottom));
   }
 
-  body:has(.geo-play--map) .app,
-  body:has(.geo-play--study) .app {
+  body:has(.view:not([hidden]) .geo-play--map) .app,
+  body:has(.view:not([hidden]) .geo-play--study) .app {
     width: 100%;
     padding-left: 0.45rem;
     padding-right: 0.45rem;
   }
 
-  body:has(.geo-play) .top,
-  body:has(.quiz-shell) .top {
+  body:has(.view:not([hidden]) .geo-play) .top,
+  body:has(.view:not([hidden]) .quiz-shell) .top {
     margin-bottom: 0.35rem;
     padding-bottom: 0.3rem;
     gap: 0.35rem;
   }
 
-  body:has(.geo-play) .brand {
+  body:has(.view:not([hidden]) .geo-play) .brand {
     display: none;
   }
 
-  body:has(.geo-play) .brand-logo,
-  body:has(.quiz-shell) .brand-logo {
+  body:has(.view:not([hidden]) .geo-play) .brand-logo,
+  body:has(.view:not([hidden]) .quiz-shell) .brand-logo {
     width: 2.4rem;
     height: 2.4rem;
   }
 
-  body:has(.geo-play) .brand-mark,
-  body:has(.quiz-shell) .brand-mark {
+  body:has(.view:not([hidden]) .geo-play) .brand-mark,
+  body:has(.view:not([hidden]) .quiz-shell) .brand-mark {
     font-size: 1.15rem;
   }
 
-  body:has(.geo-play) .brand-sub,
-  body:has(.quiz-shell) .brand-sub {
+  body:has(.view:not([hidden]) .geo-play) .brand-sub,
+  body:has(.view:not([hidden]) .quiz-shell) .brand-sub {
     display: none;
   }
 
-  body:has(.geo-play) .nav-btn-label,
-  body:has(.quiz-shell) .nav-btn-label {
+  body:has(.view:not([hidden]) .geo-play) .nav-btn-label,
+  body:has(.view:not([hidden]) .quiz-shell) .nav-btn-label {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -2643,14 +2631,14 @@ body::after {
     clip: rect(0 0 0 0);
   }
 
-  body:has(.geo-play) .nav-btn,
-  body:has(.quiz-shell) .nav-btn {
+  body:has(.view:not([hidden]) .geo-play) .nav-btn,
+  body:has(.view:not([hidden]) .quiz-shell) .nav-btn {
     min-height: 2.35rem;
     padding: 0.4rem 0.7rem;
   }
 
-  body:has(.geo-play) .nav-icon,
-  body:has(.quiz-shell) .nav-icon {
+  body:has(.view:not([hidden]) .geo-play) .nav-icon,
+  body:has(.view:not([hidden]) .quiz-shell) .nav-icon {
     width: 1.15rem;
     height: 1.15rem;
   }
