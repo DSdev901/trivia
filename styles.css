@@ -112,15 +112,12 @@ body::after {
 }
 
 .brand-logo--badge {
-  --badge-w: calc(6.5rem * 4 / 3);
-  --badge-h: calc(7.25rem * 4 / 3);
-  width: calc(var(--badge-h) + 0.9rem);
-  height: calc(var(--badge-h) + 0.9rem);
+  width: calc(6.5rem * 4 / 3);
+  height: calc(7.25rem * 4 / 3);
   margin-left: 1.35rem;
-  padding: 0.45rem;
-  border-radius: 50%;
+  border-radius: 0;
   object-fit: contain;
-  background: var(--paper);
+  background: transparent;
 }
 
 .brand-mark--sr {
