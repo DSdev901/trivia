@@ -43,10 +43,11 @@ body {
   padding-right: env(safe-area-inset-right);
   font-family: var(--font-body);
   color: var(--ink);
-  background:
-    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(11, 95, 75, 0.12), transparent 55%),
-    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(184, 134, 11, 0.1), transparent 50%),
-    linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
+  background-color: var(--paper);
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 320 320'><rect width='320' height='320' fill='%23f7f3eb'/><path d='M18 48c14-18 28 18 42 0s28 18 42 0' fill='none' stroke='%230b5f4b' stroke-width='3' stroke-linecap='round' opacity='.28'/><path d='M210 28l18 30h-36z' fill='%23c45c4a' opacity='.28'/><circle cx='86' cy='198' r='9' fill='%23b8860b' opacity='.3'/><circle cx='268' cy='92' r='6' fill='%233d6b9a' opacity='.28'/><circle cx='48' cy='268' r='4' fill='%230b5f4b' opacity='.26'/><circle cx='176' cy='252' r='3.5' fill='%23c45c4a' opacity='.28'/><circle cx='292' cy='230' r='3' fill='%23b8860b' opacity='.3'/><rect x='248' y='168' width='22' height='22' rx='2' transform='rotate(18 259 179)' fill='none' stroke='%23b8860b' stroke-width='3' opacity='.26'/><path d='M132 118h36' stroke='%233d6b9a' stroke-width='3' stroke-linecap='round' stroke-dasharray='7 7' opacity='.26'/><path d='M28 156h16M36 148v16' stroke='%23c45c4a' stroke-width='3' stroke-linecap='round' opacity='.26'/><path d='M198 206c10 12 28 4 34-10' fill='none' stroke='%23b8860b' stroke-width='3' stroke-linecap='round' opacity='.26'/><circle cx='154' cy='64' r='3' fill='%233d6b9a' opacity='.24'/><path d='M272 300c-16-6-10-24 6-22' fill='none' stroke='%230b5f4b' stroke-width='3' stroke-linecap='round' opacity='.24'/></svg>");
+  background-size: 280px 280px;
+  background-repeat: repeat;
   line-height: 1.5;
 }
 
