@@ -60,12 +60,32 @@ body {
 .top {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 2rem;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid var(--stripe);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.brand-logo {
+  width: 4.35rem;
+  height: 4.35rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--paper);
+}
+
+.brand-text {
+  min-width: 0;
 }
 
 .brand-mark {
@@ -2575,6 +2595,12 @@ body {
 
   body:has(.geo-play) .brand {
     display: none;
+  }
+
+  body:has(.geo-play) .brand-logo,
+  body:has(.quiz-shell) .brand-logo {
+    width: 2.4rem;
+    height: 2.4rem;
   }
 
   body:has(.geo-play) .brand-mark,

@@ -534,7 +534,7 @@ function setMediaSessionPlaying(playing) {
     navigator.mediaSession.playbackState = playing ? "playing" : "none";
     if (playing) {
       navigator.mediaSession.metadata = new MediaMetadata({
-        title: "Trivia Helper",
+        title: "General Trivia",
         artist: "Reading aloud",
         album: "Study",
       });
