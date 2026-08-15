@@ -113,8 +113,9 @@ body::after {
 }
 
 .brand-logo--badge {
-  width: 6.5rem;
-  height: 7.25rem;
+  width: calc(6.5rem * 4 / 3);
+  height: calc(7.25rem * 4 / 3);
+  margin-left: 0.85rem;
   border-radius: 0;
   object-fit: contain;
   background: transparent;
