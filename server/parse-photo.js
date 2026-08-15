@@ -22,10 +22,11 @@ function fromModelText(text) {
 }
 
 const PROMPT = `This photo is a trivia question and its answer (a card, screenshot, whiteboard, or handwritten note).
-Extract only text that is visible. Do not invent, guess, or complete missing words.
+Extract only the trivia question and the answer. Ignore logos, watermarks, page numbers, and decorative marks.
+Do not invent, guess, or complete missing words.
 Return JSON only, no markdown:
 {"question":"","answer":"","raw":""}
-raw is all visible text in reading order.
+raw is the readable trivia text in reading order.
 If a field cannot be read, use an empty string.`;
 
 async function parseAnthropic(jpeg) {
@@ -155,15 +156,27 @@ export function parseConfigured() {
 export async function parseTriviaCard(jpeg) {
   if (process.env.ANTHROPIC_API_KEY) return parseAnthropic(jpeg);
   if (process.env.OPENAI_API_KEY) return parseOpenAI(jpeg);
-  try {
-    return await parseOcr(jpeg);
-  } catch (err) {
-    console.error("OCR parse failed:", err.message);
-    return {
-      question: "",
-      answer: "",
-      extracted_text: "",
-      source: "none",
-    };
+  // Local OCR produces garbage on most phone photos of cards. Do not
+  // save that as the question unless PARSE_OCR=1 is set on purpose.
+  if (process.env.PARSE_OCR === "1") {
+    try {
+      const out = await parseOcr(jpeg);
+      if (ocrLooksUsable(out.extracted_text || out.question)) return out;
+    } catch (err) {
+      console.error("OCR parse failed:", err.message);
+    }
   }
+  return {
+    question: "",
+    answer: "",
+    extracted_text: "",
+    source: "none",
+  };
+}
+
+function ocrLooksUsable(text) {
+  const t = String(text || "");
+  const letters = (t.match(/[A-Za-z]/g) || []).length;
+  const junk = (t.match(/[^A-Za-z0-9\s.,?'"!:;()\-–—]/g) || []).length;
+  return letters >= 12 && letters > junk * 2;
 }

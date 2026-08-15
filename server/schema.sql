@@ -13,10 +13,13 @@ CREATE TABLE IF NOT EXISTS photos (
   note TEXT,
   extracted_text TEXT,
   question TEXT,
-  answer TEXT
+  answer TEXT,
+  trivia_date DATE
 );
 
 CREATE INDEX IF NOT EXISTS photos_created_at_idx ON photos (created_at DESC);
+CREATE INDEX IF NOT EXISTS photos_trivia_date_idx ON photos (trivia_date DESC);
 
 ALTER TABLE photos ADD COLUMN IF NOT EXISTS question TEXT;
 ALTER TABLE photos ADD COLUMN IF NOT EXISTS answer TEXT;
+ALTER TABLE photos ADD COLUMN IF NOT EXISTS trivia_date DATE;

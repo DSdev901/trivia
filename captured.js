@@ -11,7 +11,7 @@ const cap = {
   error: "",
   uploading: false,
   uploadProgress: "",
-  configured: false,
+  parseReady: null,
   base: "",
   search: "",
   photoOpen: new Set(),
@@ -109,8 +109,8 @@ function visibleItems() {
   const q = cap.search.trim().toLowerCase();
   if (!q) return cap.items;
   return cap.items.filter((item) =>
-    [item.question, item.answer, item.note, item.extracted_text].some((s) =>
-      String(s || "").toLowerCase().includes(q)
+    [item.question, item.answer, item.note, item.extracted_text, formatTriviaDate(item.trivia_date)].some(
+      (s) => String(s || "").toLowerCase().includes(q)
     )
   );
 }
@@ -136,6 +136,18 @@ function settingsHtml(base) {
     </form>`;
 }
 
+function formatTriviaDate(value) {
+  const iso = String(value || "").slice(0, 10);
+  const match = iso.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return "";
+  return `${Number(match[2])}/${Number(match[3])}/${match[1]}`;
+}
+
+function dateInputValue(value) {
+  const iso = String(value || "").slice(0, 10);
+  return /^\d{4}-\d{2}-\d{2}$/.test(iso) ? iso : "";
+}
+
 function uploadHtml() {
   if (!canWrite()) {
     return `<p class="lede">Save the upload PIN above, then you can add photos from your phone.</p>`;
@@ -147,6 +159,10 @@ function uploadHtml() {
         <input id="cap-file" type="file" accept="image/*" multiple ${
           cap.uploading ? "disabled" : ""
         } />
+      </label>
+      <label class="voice-field">
+        <span>Trivia date</span>
+        <input type="date" id="cap-upload-date" />
       </label>
       <label class="voice-field">
         <span>Note for this batch (optional)</span>
@@ -164,6 +180,7 @@ function cardHtml(item) {
   const editing = write && cap.editingId === item.id;
   const question = item.question || "Question not read yet";
   const answer = item.answer || "";
+  const triviaDate = formatTriviaDate(item.trivia_date);
   return `
     <article class="ce-card cap-qa" data-id="${escapeHtml(item.id)}">
       ${
@@ -176,6 +193,10 @@ function cardHtml(item) {
         <label class="voice-field">
           <span>Answer</span>
           <textarea name="answer" rows="2" maxlength="2000">${escapeHtml(item.answer || "")}</textarea>
+        </label>
+        <label class="voice-field">
+          <span>Trivia date</span>
+          <input type="date" name="trivia_date" value="${escapeHtml(dateInputValue(item.trivia_date))}" />
         </label>
         <label class="voice-field">
           <span>Note</span>
@@ -193,6 +214,7 @@ function cardHtml(item) {
           ? `<p class="cap-answer"><span class="cap-answer-label">Answer</span> ${escapeHtml(answer)}</p>`
           : `<p class="cap-answer cap-answer-missing">No answer parsed yet.</p>`
       }
+      ${triviaDate ? `<p class="cap-date">${escapeHtml(triviaDate)}</p>` : ""}
       ${item.note ? `<p class="cap-card-note">${escapeHtml(item.note)}</p>` : ""}`
       }
       ${
@@ -228,7 +250,11 @@ function render() {
     <div class="cap-head">
       <div>
         <h2 class="section-title">Upload questions</h2>
-        <p class="lede">Add photos of trivia questions and answers. They are parsed, then shown in Prior Saucer Trivia.</p>
+        <p class="lede">Add photos of trivia questions and answers. They are parsed, then shown in Prior Saucer Trivia.${
+          cap.parseReady === false
+            ? " Parsing is off until you add <strong>ANTHROPIC_API_KEY</strong> on the Railway GitHub service — until then, upload the photo and type the question and answer with Edit."
+            : ""
+        }</p>
       </div>
     </div>
     ${settingsHtml(cap.base || "")}
@@ -278,12 +304,13 @@ function bind() {
     e.preventDefault();
     const files = [...(document.getElementById("cap-file")?.files || [])];
     const note = document.getElementById("cap-upload-note")?.value || "";
+    const triviaDate = document.getElementById("cap-upload-date")?.value || "";
     if (!files.length) {
       cap.error = "Choose one or more photos first.";
       render();
       return;
     }
-    void uploadFiles(files, note);
+    void uploadFiles(files, note, triviaDate);
   });
 
   const search = document.getElementById("cap-search");
@@ -342,6 +369,7 @@ function bindList() {
         question: data.get("question") || "",
         answer: data.get("answer") || "",
         note: data.get("note") || "",
+        trivia_date: data.get("trivia_date") || "",
       });
     });
   });
@@ -358,6 +386,8 @@ async function loadItems() {
     return;
   }
   try {
+    const health = await apiFetch(cap.base, "/api/health");
+    cap.parseReady = Boolean(health.parse);
     const data = await apiFetch(cap.base, "/api/photos");
     cap.items = (data.items || []).map(withUrls);
     cap.configured = true;
@@ -369,7 +399,7 @@ async function loadItems() {
   render();
 }
 
-async function uploadFiles(files, note) {
+async function uploadFiles(files, note, triviaDate) {
   cap.uploading = true;
   cap.error = "";
   cap.notice = "";
@@ -382,6 +412,7 @@ async function uploadFiles(files, note) {
       const body = new FormData();
       body.append("photo", files[i]);
       if (note) body.append("note", note);
+      if (triviaDate) body.append("trivia_date", triviaDate);
       await apiFetch(cap.base, "/api/photos", { method: "POST", body });
       ok += 1;
     } catch (err) {

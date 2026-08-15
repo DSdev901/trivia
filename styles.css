@@ -2922,8 +2922,14 @@ body {
 }
 
 .cap-answer-missing,
-.cap-card-note {
+.cap-card-note,
+.cap-date {
   color: var(--ink-soft);
+}
+
+.cap-date {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
 }
 
 .cap-card-actions {

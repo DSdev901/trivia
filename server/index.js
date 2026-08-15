@@ -77,7 +77,38 @@ if (!SERVE_FRONTEND) {
 }
 
 const PHOTO_COLS = `id, created_at, original_name, mime_type, width, height,
-            byte_size, note, extracted_text, question, answer`;
+            byte_size, note, extracted_text, question, answer,
+            trivia_date::text AS trivia_date`;
+
+function parseTriviaDate(value) {
+  if (value == null || String(value).trim() === "") return null;
+  const s = String(value).trim();
+  const iso = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+  const us = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  let year;
+  let month;
+  let day;
+  if (iso) {
+    year = Number(iso[1]);
+    month = Number(iso[2]);
+    day = Number(iso[3]);
+  } else if (us) {
+    month = Number(us[1]);
+    day = Number(us[2]);
+    year = Number(us[3]);
+  } else {
+    return undefined;
+  }
+  const dt = new Date(Date.UTC(year, month - 1, day));
+  if (
+    dt.getUTCFullYear() !== year ||
+    dt.getUTCMonth() !== month - 1 ||
+    dt.getUTCDate() !== day
+  ) {
+    return undefined;
+  }
+  return `${String(year).padStart(4, "0")}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
 
 app.get("/api/photos", async (req, res) => {
   const q = String(req.query.q || "").trim();
@@ -90,7 +121,9 @@ app.get("/api/photos", async (req, res) => {
           OR answer ILIKE $1 ESCAPE '\\'
           OR note ILIKE $1 ESCAPE '\\'
           OR extracted_text ILIKE $1 ESCAPE '\\'
-       ORDER BY created_at DESC`,
+          OR trivia_date::text ILIKE $1 ESCAPE '\\'
+          OR to_char(trivia_date, 'FMMM/FMDD/YYYY') ILIKE $1 ESCAPE '\\'
+       ORDER BY trivia_date DESC NULLS LAST, created_at DESC`,
       [like]
     );
     res.json({ items: rows });
@@ -99,7 +132,7 @@ app.get("/api/photos", async (req, res) => {
   const { rows } = await query(
     `SELECT ${PHOTO_COLS}
      FROM photos
-     ORDER BY created_at DESC`
+     ORDER BY trivia_date DESC NULLS LAST, created_at DESC`
   );
   res.json({ items: rows });
 });
@@ -133,6 +166,15 @@ app.patch("/api/photos/:id", requirePin, async (req, res) => {
   if (req.body?.note !== undefined) add("note", req.body.note, 2000);
   if (req.body?.question !== undefined) add("question", req.body.question, 2000);
   if (req.body?.answer !== undefined) add("answer", req.body.answer, 2000);
+  if (req.body?.trivia_date !== undefined) {
+    const parsed = parseTriviaDate(req.body.trivia_date);
+    if (parsed === undefined) {
+      res.status(400).json({ error: "trivia_date must be a date like 8/11/2026" });
+      return;
+    }
+    vals.push(parsed);
+    sets.push(`trivia_date = $${vals.length}`);
+  }
   if (!sets.length) {
     res.status(400).json({ error: "Nothing to update" });
     return;
@@ -207,6 +249,11 @@ app.post("/api/photos", requirePin, upload.single("photo"), async (req, res) => 
       .jpeg({ quality: 70 })
       .toBuffer();
     const note = req.body?.note ? String(req.body.note).slice(0, 2000) : null;
+    const triviaDate = parseTriviaDate(req.body?.trivia_date);
+    if (req.body?.trivia_date !== undefined && req.body?.trivia_date !== "" && triviaDate === undefined) {
+      res.status(400).json({ error: "trivia_date must be a date like 8/11/2026" });
+      return;
+    }
     let parsed = { question: "", answer: "", extracted_text: "", source: "none" };
     try {
       parsed = await parseTriviaCard(full);
@@ -216,8 +263,8 @@ app.post("/api/photos", requirePin, upload.single("photo"), async (req, res) => 
     const { rows } = await query(
       `INSERT INTO photos
         (original_name, mime_type, width, height, byte_size, image, thumb, note,
-         extracted_text, question, answer)
-       VALUES ($1, 'image/jpeg', $2, $3, $4, $5, $6, $7, $8, $9, $10)
+         extracted_text, question, answer, trivia_date)
+       VALUES ($1, 'image/jpeg', $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
        RETURNING ${PHOTO_COLS}`,
       [
         req.file.originalname || null,
@@ -230,6 +277,7 @@ app.post("/api/photos", requirePin, upload.single("photo"), async (req, res) => 
         parsed.extracted_text || null,
         parsed.question || null,
         parsed.answer || null,
+        triviaDate,
       ]
     );
     res.status(201).json({ ...rows[0], parse_source: parsed.source });
