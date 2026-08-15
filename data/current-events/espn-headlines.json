@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-15T03:30:06.716Z",
+  "generatedAt": "2026-08-15T06:29:20.209Z",
   "retentionDays": 21,
-  "windowStart": "2026-07-25T03:30:06.716Z",
-  "windowEnd": "2026-08-15T03:30:06.716Z",
+  "windowStart": "2026-07-25T06:29:20.209Z",
+  "windowEnd": "2026-08-15T06:29:20.209Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,250 @@
     "Tennis",
     "MMA"
   ],
-  "count": 996,
+  "count": 1015,
   "items": [
+    {
+      "key": "49615402",
+      "id": "49615402",
+      "headline": "Milwaukee Brewers vs. Los Angeles Dodgers: Game Highlights",
+      "summary": "Milwaukee Brewers vs. Los Angeles Dodgers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49615402/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-15T05:36:04.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49600984",
+      "id": "49600984",
+      "headline": "2026 NFL preseason Week 1: Game takeaways, analysis",
+      "summary": "The NFL preseason is underway! How did rookies and players in new places perform in their debuts?",
+      "url": "https://www.espn.com/nfl/story/_/id/49600984/2026-nfl-preseason-week-1-takeaways-analysis",
+      "sport": "NFL",
+      "published": "2026-08-15T05:25:11.000Z",
+      "firstSeen": "2026-08-14T04:00:04.618Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49615392",
+      "id": "49615392",
+      "headline": "Freeland's 8 strong innings, Veen's home run power Rockies past Giants 5-2",
+      "summary": "— Kyle Freeland pitched eight innings of one-run ball, Zac Veen hit his second home run of the year and the Colorado Rockies beat the slumping San Francisco Giants 5-2 on Friday night to take the opener of a three-game series.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816528",
+      "sport": "MLB",
+      "published": "2026-08-15T05:09:30.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 2
+    },
+    {
+      "key": "48305211",
+      "id": "48305211",
+      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
+      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
+      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
+      "sport": "MLB",
+      "published": "2026-08-15T05:05:46.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49615362",
+      "id": "49615362",
+      "headline": "Yoshinobu Yamamoto helps the Dodgers beat the NL-leading Brewers 3-1",
+      "summary": "— Yoshinobu Yamamoto struck out nine in six innings and the Los Angeles Dodgers moved back within a game of the National League-leading Milwaukee Brewers with a 3-1 victory Friday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816530",
+      "sport": "MLB",
+      "published": "2026-08-15T05:05:29.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49615355",
+      "id": "49615355",
+      "headline": "Texas Rangers vs. Athletics: Game Highlights",
+      "summary": "Texas Rangers vs. Athletics: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49615355/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-15T05:04:58.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49615359",
+      "id": "49615359",
+      "headline": "Jeff McNeil goes 4 for 5 as the Athletics beat the Rangers 8-3",
+      "summary": "— Jeff McNeil was 4 for 5 with three RBI including the go-ahead home run as the Athletics snapped a three-game slide with an 8-3 win over the Texas Rangers on Friday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816531",
+      "sport": "MLB",
+      "published": "2026-08-15T05:04:33.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49615287",
+      "id": "49615287",
+      "headline": "Royals beat the Angels 7-6 to snap 4-game losing streak",
+      "summary": "— Jac Caglianone homered and drove in five runs on a three-hit night, Michael Massey also homered and had three hits and the Kansas City Royals beat the Los Angeles Angels 7-6 on Friday to snap a four-game losing streak.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816529",
+      "sport": "MLB",
+      "published": "2026-08-15T04:51:30.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49615223",
+      "id": "49615223",
+      "headline": "Colorado Rockies vs. San Francisco Giants: Game Highlights",
+      "summary": "Colorado Rockies vs. San Francisco Giants: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49615223/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-15T04:45:18.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49615169",
+      "id": "49615169",
+      "headline": "Kansas City Royals vs. Los Angeles Angels: Game Highlights",
+      "summary": "Kansas City Royals vs. Los Angeles Angels: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49615169/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-15T04:36:47.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49614844",
+      "id": "49614844",
+      "headline": "Seattle Mariners vs. Houston Astros: Game Highlights",
+      "summary": "Seattle Mariners vs. Houston Astros: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49614844/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-15T04:32:37.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49614843",
+      "id": "49614843",
+      "headline": "Jets' Geno Smith scratched vs. Bucs due to sore ankle, is day-to-day",
+      "summary": "Jets quarterback Geno Smith is day-to-day with an ankle injury that occurred Wednesday and resulted in him being scratched from the preseason opener Friday night against the Buccaneers.",
+      "url": "https://www.espn.com/nfl/story/_/id/49614843/jets-geno-smith-scratched-vs-bucs-due-sore-ankle-day-day",
+      "sport": "NFL",
+      "published": "2026-08-15T04:21:55.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49614782",
+      "id": "49614782",
+      "headline": "Tua Tagovailoa says Falcons' play 'not up to standard' in loss",
+      "summary": "Falcons QB Tua Tagovailoa said he was \"frustrated and disappointed\" after Friday night's preseason loss to the Broncos, during which he played two series and was 3-of-5 passing for 22 yards.",
+      "url": "https://www.espn.com/nfl/story/_/id/49614782/falcons-qb-tua-tagovailoa-frustrated-disappointed-play-preseason-loss-broncos",
+      "sport": "NFL",
+      "published": "2026-08-15T04:15:10.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49614925",
+      "id": "49614925",
+      "headline": "What adjustments do Tua, Falcons offense need to make?",
+      "summary": "What adjustments do Tua, Falcons offense need to make?",
+      "url": "https://www.espn.com/video/clip/_/id/49614925/what-adjustments-do-tua-falcons-offense-need-make",
+      "sport": "NFL",
+      "published": "2026-08-15T04:14:38.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49615032",
+      "id": "49615032",
+      "headline": "Walker’s 10th-inning 3-run blast lifts the Astros past the Mariners 10-7",
+      "summary": "— Christian Walker’s three-run home run with two outs in the 10th inning lifted the Houston Astros to a 10-7 win over the Seattle Mariners on Friday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816526",
+      "sport": "MLB",
+      "published": "2026-08-15T04:14:30.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49613878",
+      "id": "49613878",
+      "headline": "Jays' Vladimir Guerrero Jr. evaluated for concussion after collision at third",
+      "summary": "Six-time All-Star Vladimir Guerrero Jr. left the Toronto Blue Jays' 3-1 victory over the Yankees on Friday night and was evaluated for a concussion after colliding with New York rookie shortstop George Lombard Jr. on a chaotic play at third base.",
+      "url": "https://www.espn.com/mlb/story/_/id/49613878/blue-jays-vladimir-guerrero-jr-leaves-game-collision-third",
+      "sport": "MLB",
+      "published": "2026-08-15T03:58:04.000Z",
+      "firstSeen": "2026-08-15T03:30:06.716Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49614256",
+      "id": "49614256",
+      "headline": "San Diego Padres vs. Cleveland Guardians: Game Highlights",
+      "summary": "San Diego Padres vs. Cleveland Guardians: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49614256/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-15T03:50:44.000Z",
+      "firstSeen": "2026-08-15T03:30:06.716Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49614423",
+      "id": "49614423",
+      "headline": "Baltimore Orioles vs. Tampa Bay Rays: Game Highlights",
+      "summary": "Baltimore Orioles vs. Tampa Bay Rays: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49614423/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-15T03:49:45.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49614344",
+      "id": "49614344",
+      "headline": "Dolphins' Malik Willis has impressive start, Marcus Mariota injured as Commanders win 20-7",
+      "summary": "— Malik Willis got off to an impressive start as Miami's new quarterback, leading a 14-play, 93-yard touchdown drive as the Dolphins lost 20-7 to the Washington Commanders Friday night in the preseason opener for both teams.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873277",
+      "sport": "NFL",
+      "published": "2026-08-15T03:45:41.000Z",
+      "firstSeen": "2026-08-15T03:30:06.716Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49614496",
+      "id": "49614496",
+      "headline": "Tampa Bay Buccaneers vs. New York Jets Game Highlights",
+      "summary": "Tampa Bay Buccaneers vs. New York Jets Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49614496/tampa-bay-buccaneers-vs-new-york-jets-game-highlights",
+      "sport": "NFL",
+      "published": "2026-08-15T03:45:30.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49611663",
+      "id": "49611663",
+      "headline": "Falcons edge rusher James Pearce suspended 8 games by NFL",
+      "summary": "Falcons edge rusher James Pearce Jr. will be suspended by the NFL for eight games due to violating the league's personal conduct policy, the league announced Friday afternoon.",
+      "url": "https://www.espn.com/nfl/story/_/id/49611663/falcons-edge-rusher-james-pearce-suspended-8-games-nfl",
+      "sport": "NFL",
+      "published": "2026-08-15T03:40:14.000Z",
+      "firstSeen": "2026-08-14T21:27:33.281Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49614171",
+      "id": "49614171",
+      "headline": "Rookie Cade Klubnik leads 2 scoring drives after Geno Smith is scratched in Jets' 24-16 loss to Bucs",
+      "summary": "— Cade Klubnik knew he'd make his NFL debut early in the New York Jets' preseason opener. It turned out it came even sooner than expected for the rookie fourth-rounder.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873276",
+      "sport": "NFL",
+      "published": "2026-08-15T03:17:29.000Z",
+      "firstSeen": "2026-08-15T03:30:06.716Z",
+      "bestRank": 4
+    },
     {
       "key": "49614341",
       "id": "49614341",
@@ -33,6 +275,94 @@
       "published": "2026-08-15T03:09:32.000Z",
       "firstSeen": "2026-08-15T03:30:06.716Z",
       "bestRank": 1
+    },
+    {
+      "key": "49614199",
+      "id": "49614199",
+      "headline": "Barron returns pick 97 yards for a TD as Stidham leads Broncos to runaway 27-7 win over Falcons",
+      "summary": "— Jarrett Stidham threw a touchdown pass in his bid to keep his hold on Denver’s backup job and Jahdae Barron returned an interception 97 yards for a touchdown as the Broncos...",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873278",
+      "sport": "NFL",
+      "published": "2026-08-15T03:09:29.000Z",
+      "firstSeen": "2026-08-15T03:30:06.716Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49613839",
+      "id": "49613839",
+      "headline": "Pirates' Gonzales day-to-day after taking pitch to helmet",
+      "summary": "Pirates third baseman Nick Gonzalez suffered a facial contusion and is day-to-day after being struck on the helmet by a pitch in the fifth inning of Friday's game against the Red Sox.",
+      "url": "https://www.espn.com/mlb/story/_/id/49613839/pirates-gonzales-day-day-taking-pitch-helmet",
+      "sport": "MLB",
+      "published": "2026-08-15T03:06:58.000Z",
+      "firstSeen": "2026-08-15T03:30:06.716Z",
+      "bestRank": 14
+    },
+    {
+      "key": "49614040",
+      "id": "49614040",
+      "headline": "Kirk homers and drives in 2, Guerrero leaves injured as Blue Jays beat Yankees 3-1",
+      "summary": "— Alejandro Kirk homered and hit a tiebreaking double, Shane Bieber pitched six innings to win for the fourth time in six starts and the Toronto Blue Jays beat the New York Yankees 3-1 on Friday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816522",
+      "sport": "MLB",
+      "published": "2026-08-15T02:53:28.000Z",
+      "firstSeen": "2026-08-15T03:30:06.716Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49614504",
+      "id": "49614504",
+      "headline": "Miami Dolphins vs. Washington Commanders Game Highlights",
+      "summary": "Miami Dolphins vs. Washington Commanders Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49614504/miami-dolphins-vs-washington-commanders-game-highlights",
+      "sport": "NFL",
+      "published": "2026-08-15T02:52:53.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49614342",
+      "id": "49614342",
+      "headline": "Steelers' Keeanu Benton agrees to 4-year, $72M extension, sources say",
+      "summary": "The Steelers and defensive tackle Keeanu Benton agreed to a four-year, $72 million extension, sources told NFL Network's Ian Rapoport on Friday night.",
+      "url": "https://www.espn.com/nfl/story/_/id/49614342/steelers-keeanu-benton-agrees-4-year-72m-extension-sources-say",
+      "sport": "NFL",
+      "published": "2026-08-15T02:51:22.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49614490",
+      "id": "49614490",
+      "headline": "Beavers’ 2-run pinch-hit single sparks the Orioles’ 6-5 win over the Rays",
+      "summary": "— Dylan Beavers hit a two-run, pinch-hit single in the seventh to put Baltimore ahead to stay, Gunnar Henderson and Colton Cowser homered, and the Orioles beat Tampa Bay 6-5 on Friday night to snap the Rays' nine-game win streak.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816518",
+      "sport": "MLB",
+      "published": "2026-08-15T02:47:45.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49309401",
+      "id": "49309401",
+      "headline": "Fantasy football Knockout league rankings: The 252 players to draft",
+      "summary": "Rankings for knockout leagues, where the lowest-scoring team is eliminated and the last team standing wins.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49309401/fantasy-football-knockout-rankings-top-200",
+      "sport": "NFL",
+      "published": "2026-08-15T02:47:32.000Z",
+      "firstSeen": "2026-08-15T06:29:20.209Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49613288",
+      "id": "49613288",
+      "headline": "Diamondbacks' Ketel Marte day-to-day after exiting with knee soreness",
+      "summary": "Diamondbacks second baseman Ketel Marte will be day-to-day after leaving Arizona's 2-0 win against Atlanta after the first inning Friday with left knee soreness.",
+      "url": "https://www.espn.com/mlb/story/_/id/49613288/diamondbacks-marte-exits-vs-braves-left-knee-soreness",
+      "sport": "MLB",
+      "published": "2026-08-15T02:44:01.000Z",
+      "firstSeen": "2026-08-15T03:30:06.716Z",
+      "bestRank": 18
     },
     {
       "key": "49614376",
@@ -68,39 +398,6 @@
       "bestRank": 6
     },
     {
-      "key": "49613878",
-      "id": "49613878",
-      "headline": "Jays' Vladimir Guerrero Jr. evaluated for concussion after collision at third",
-      "summary": "Six-time All-Star Vladimir Guerrero Jr. left the Toronto Blue Jays' 3-1 victory over the Yankees on Friday night and was evaluated for a concussion after colliding with New York rookie shortstop George Lombard Jr. on a chaotic play at third base.",
-      "url": "https://www.espn.com/mlb/story/_/id/49613878/blue-jays-vladimir-guerrero-jr-leaves-game-collision-third",
-      "sport": "MLB",
-      "published": "2026-08-15T02:28:47.000Z",
-      "firstSeen": "2026-08-15T03:30:06.716Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49613288",
-      "id": "49613288",
-      "headline": "Diamondbacks' Marte exits vs. Braves with left knee soreness",
-      "summary": "Diamondbacks second baseman Ketel Marte left Arizona's game against Atlanta after the first inning Friday with left knee soreness.",
-      "url": "https://www.espn.com/mlb/story/_/id/49613288/diamondbacks-marte-exits-vs-braves-left-knee-soreness",
-      "sport": "MLB",
-      "published": "2026-08-15T02:28:46.000Z",
-      "firstSeen": "2026-08-15T03:30:06.716Z",
-      "bestRank": 18
-    },
-    {
-      "key": "49614344",
-      "id": "49614344",
-      "headline": "Dolphins' Malik Willis has impressive start, Marcus Mariota injured as Commanders win 20-7",
-      "summary": "— Malik Willis got off to an impressive start as Miami's new quarterback, leading a 14-play, 93-yard touchdown drive as the Dolphins lost 20-7 to the Washington Commanders Friday night in the preseason opener for both teams.",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873277",
-      "sport": "NFL",
-      "published": "2026-08-15T02:28:30.000Z",
-      "firstSeen": "2026-08-15T03:30:06.716Z",
-      "bestRank": 1
-    },
-    {
       "key": "49614251",
       "id": "49614251",
       "headline": "Chicago White Sox vs. Detroit Tigers: Game Highlights",
@@ -123,17 +420,6 @@
       "bestRank": 11
     },
     {
-      "key": "49614256",
-      "id": "49614256",
-      "headline": "San Diego Padres vs. Cleveland Guardians: Game Highlights",
-      "summary": "San Diego Padres vs. Cleveland Guardians: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49614256/game-highlights",
-      "sport": "MLB",
-      "published": "2026-08-15T02:20:24.000Z",
-      "firstSeen": "2026-08-15T03:30:06.716Z",
-      "bestRank": 3
-    },
-    {
       "key": "49614191",
       "id": "49614191",
       "headline": "Broncos down Falcons 27-7 in preseason opener",
@@ -143,28 +429,6 @@
       "published": "2026-08-15T02:12:50.000Z",
       "firstSeen": "2026-08-15T03:30:06.716Z",
       "bestRank": 3
-    },
-    {
-      "key": "49614199",
-      "id": "49614199",
-      "headline": "Barron returns pick 97 yards for a TD as Stidham leads Broncos to runaway 27-7 win over Falcons",
-      "summary": "— Jarrett Stidham threw a touchdown pass in his bid to keep his hold on Denver’s backup job and Jahdae Barron returned an interception 97 yards for a touchdown as the Broncos...",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873278",
-      "sport": "NFL",
-      "published": "2026-08-15T02:12:31.000Z",
-      "firstSeen": "2026-08-15T03:30:06.716Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49614171",
-      "id": "49614171",
-      "headline": "Rookie Cade Klubnik leads 2 scoring drives after Geno Smith is scratched in Jets' 24-16 loss to Bucs",
-      "summary": "— Rookie fourth-rounder Cade Klubnik led the New York Jets to scores on his two drives after a surprise start in place of Geno Smith in a...",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873276",
-      "sport": "NFL",
-      "published": "2026-08-15T02:09:30.000Z",
-      "firstSeen": "2026-08-15T03:30:06.716Z",
-      "bestRank": 4
     },
     {
       "key": "49614138",
@@ -187,17 +451,6 @@
       "published": "2026-08-15T02:00:33.000Z",
       "firstSeen": "2026-08-15T03:30:06.716Z",
       "bestRank": 7
-    },
-    {
-      "key": "49614040",
-      "id": "49614040",
-      "headline": "Kirk homers and drives in 2, Guerrero leaves injured as Blue Jays beat Yankees 3-1",
-      "summary": "— Alejandro Kirk homered and hit a tiebreaking double, Shane Bieber pitched six innings to win for the fourth time in six starts and the Toronto Blue Jays beat the New York Yankees 3-1 on Friday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816522",
-      "sport": "MLB",
-      "published": "2026-08-15T01:53:29.000Z",
-      "firstSeen": "2026-08-15T03:30:06.716Z",
-      "bestRank": 8
     },
     {
       "key": "49613998",
@@ -244,17 +497,6 @@
       "bestRank": 12
     },
     {
-      "key": "49613839",
-      "id": "49613839",
-      "headline": "Pirates' Gonzales day-to-day after taking pitch to helmet",
-      "summary": "Pirates third baseman Nick Gonzalez suffered a facial contusion and is day-to-day after being struck on the helmet by a pitch in the fifth inning of Friday's game against the Red Sox.",
-      "url": "https://www.espn.com/mlb/story/_/id/49613839/pirates-gonzales-day-day-taking-pitch-helmet",
-      "sport": "MLB",
-      "published": "2026-08-15T01:34:09.000Z",
-      "firstSeen": "2026-08-15T03:30:06.716Z",
-      "bestRank": 14
-    },
-    {
       "key": "49612240",
       "id": "49612240",
       "headline": "HC Mike Macdonald: 'Overwhelmingly positive' reviews helped with Terrion Arnold decision",
@@ -264,6 +506,17 @@
       "published": "2026-08-15T01:16:46.000Z",
       "firstSeen": "2026-08-14T21:27:33.281Z",
       "bestRank": 5
+    },
+    {
+      "key": "49612960",
+      "id": "49612960",
+      "headline": "Reports: Alabama's AK Dear to miss 6 weeks with ankle injury",
+      "summary": "Alabama running back AK Dear is expected to miss about six weeks because of an ankle injury sustained in a preseason scrimmage, according to multiple reports.",
+      "url": "https://www.espn.com/college-football/story/_/id/49612960/alabama-crimson-tide-running-back-ak-dear-expected-miss-six-weeks-ankle-injury",
+      "sport": "College football",
+      "published": "2026-08-15T01:08:03.000Z",
+      "firstSeen": "2026-08-15T00:30:29.342Z",
+      "bestRank": 1
     },
     {
       "key": "49613541",
@@ -343,17 +596,6 @@
       "bestRank": 1
     },
     {
-      "key": "49612960",
-      "id": "49612960",
-      "headline": "Reports: Alabama's AK Dear to miss 6 weeks with ankle injury",
-      "summary": "Alabama running back AK Dear is expected to miss about six weeks because of an ankle injury sustained in a preseason scrimmage, according to multiple reports.",
-      "url": "https://www.espn.com/college-football/story/_/id/49612960/alabama-crimson-tide-running-back-ak-dear-expected-miss-six-weeks-ankle-injury",
-      "sport": "College football",
-      "published": "2026-08-14T23:26:14.000Z",
-      "firstSeen": "2026-08-15T00:30:29.342Z",
-      "bestRank": 1
-    },
-    {
       "key": "49610211",
       "id": "49610211",
       "headline": "Mikel Arteta: Arsenal fans 'don't have to worry' about contract situation",
@@ -420,6 +662,17 @@
       "bestRank": 2
     },
     {
+      "key": "49603132",
+      "id": "49603132",
+      "headline": "FedEx St. Jude Championship 2026 highlights: Best shots and highlights from Friday",
+      "summary": "Here are the best sights and sounds from the second round of the 2026 FedEx St. Jude Championship at TPC Southwind.",
+      "url": "https://www.espn.com/golf/story/_/id/49603132/fedex-st-jude-championship-2026-second-round-sights-sounds-best-shots",
+      "sport": "Golf",
+      "published": "2026-08-14T22:16:51.000Z",
+      "firstSeen": "2026-08-14T15:15:56.143Z",
+      "bestRank": 1
+    },
+    {
       "key": "49424731",
       "id": "49424731",
       "headline": "2026 New Orleans Saints training camp: Latest intel, updates",
@@ -464,6 +717,17 @@
       "bestRank": 5
     },
     {
+      "key": "49612490",
+      "id": "49612490",
+      "headline": "Ohio St. shifts senior day celebration from home finale to opener",
+      "summary": "Ohio State is shifting its senior day celebration from its traditional spot in the regular-season home finale all the way to the season opener on Sept. 5.",
+      "url": "https://www.espn.com/college-football/story/_/id/49612490/ohio-st-shifts-senior-day-celebration-home-finale-opener",
+      "sport": "College football",
+      "published": "2026-08-14T21:39:55.000Z",
+      "firstSeen": "2026-08-15T00:30:29.342Z",
+      "bestRank": 1
+    },
+    {
       "key": "49612373",
       "id": "49612373",
       "headline": "Source: Colts' special teams coordinator has torn knee ligaments",
@@ -486,17 +750,6 @@
       "bestRank": 4
     },
     {
-      "key": "49612490",
-      "id": "49612490",
-      "headline": "Ohio St. shifts Senior Day celebration from home finale to opener",
-      "summary": "Ohio State is shifting its Senior Day celebration from its traditional spot in the regular season home finale all the way to the season opener on Sept. 5.",
-      "url": "https://www.espn.com/college-football/story/_/id/49612490/ohio-st-shifts-senior-day-celebration-home-finale-opener",
-      "sport": "College football",
-      "published": "2026-08-14T21:25:02.000Z",
-      "firstSeen": "2026-08-15T00:30:29.342Z",
-      "bestRank": 1
-    },
-    {
       "key": "49611801",
       "id": "49611801",
       "headline": "Commanders' Dorance Armstrong suspended for season opener",
@@ -517,17 +770,6 @@
       "published": "2026-08-14T21:14:30.000Z",
       "firstSeen": "2026-08-15T00:30:29.342Z",
       "bestRank": 5
-    },
-    {
-      "key": "49603132",
-      "id": "49603132",
-      "headline": "FedEx St. Jude Championship 2026 highlights: Best shots and highlights from Friday",
-      "summary": "Here are the best sights and sounds from the second round of the 2026 FedEx St. Jude Championship at TPC Southwind.",
-      "url": "https://www.espn.com/golf/story/_/id/49603132/fedex-st-jude-championship-2026-second-round-sights-sounds-best-shots",
-      "sport": "Golf",
-      "published": "2026-08-14T21:13:10.000Z",
-      "firstSeen": "2026-08-14T15:15:56.143Z",
-      "bestRank": 1
     },
     {
       "key": "49612217",
@@ -660,17 +902,6 @@
       "published": "2026-08-14T20:50:49.000Z",
       "firstSeen": "2026-08-13T18:36:48.185Z",
       "bestRank": 6
-    },
-    {
-      "key": "49611663",
-      "id": "49611663",
-      "headline": "Falcons edge rusher James Pearce suspended 8 games by NFL",
-      "summary": "Falcons edge rusher James Pearce Jr. will be suspended by the NFL for eight games due to violating the league's personal conduct policy, the league announced Friday afternoon.",
-      "url": "https://www.espn.com/nfl/story/_/id/49611663/falcons-edge-rusher-james-pearce-suspended-8-games-nfl",
-      "sport": "NFL",
-      "published": "2026-08-14T20:48:00.000Z",
-      "firstSeen": "2026-08-14T21:27:33.281Z",
-      "bestRank": 9
     },
     {
       "key": "49607175",
@@ -1206,7 +1437,7 @@
       "headline": "Hidalgo, Strong among NCAA players inking NIL deals with Unrivaled",
       "summary": "Women's college basketball stars Hannah Hidalgo, Sarah Strong and Madison Booker are among a notable group of NCAA players signing NIL deals with Unrivaled.",
       "url": "https://www.espn.com/womens-college-basketball/story/_/id/49609172/hidalgo-strong-ncaa-players-inking-nil-deals-unrivaled",
-      "sport": "WNBA",
+      "sport": "Women's college basketball",
       "published": "2026-08-14T13:54:23.000Z",
       "firstSeen": "2026-08-14T15:26:38.251Z",
       "bestRank": 1
@@ -1276,17 +1507,6 @@
       "published": "2026-08-14T13:33:08.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 5
-    },
-    {
-      "key": "49600984",
-      "id": "49600984",
-      "headline": "2026 NFL preseason Week 1: Game takeaways, analysis",
-      "summary": "The NFL preseason is underway! How did rookies and players in new places perform in their debuts?",
-      "url": "https://www.espn.com/nfl/story/_/id/49600984/2026-nfl-preseason-week-1-takeaways-analysis",
-      "sport": "NFL",
-      "published": "2026-08-14T13:20:23.000Z",
-      "firstSeen": "2026-08-14T04:00:04.618Z",
-      "bestRank": 3
     },
     {
       "key": "49583503",
@@ -3747,7 +3967,7 @@
       "headline": "Diana Taurasi tales: Untold stories about retired WNBA legend",
       "summary": "\"We got Diana\" ... and you don't forget a legend like that. Here's a look at Diana Taurasi from teammates who knew her best.",
       "url": "https://www.espn.com/wnba/story/_/id/41444903/diana-taurasi-retires-wnba-legend-phoenix-mercury-uconn-huskies",
-      "sport": "WNBA",
+      "sport": "Women's college basketball",
       "published": "2026-08-13T11:02:53.000Z",
       "firstSeen": "2026-08-13T15:37:22.626Z",
       "bestRank": 1
@@ -4069,17 +4289,6 @@
       "sport": "Tennis",
       "published": "2026-08-13T05:38:31.000Z",
       "firstSeen": "2026-08-13T09:42:20.516Z",
-      "bestRank": 1
-    },
-    {
-      "key": "48305211",
-      "id": "48305211",
-      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
-      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
-      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
-      "sport": "MLB",
-      "published": "2026-08-13T05:37:24.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
     },
     {
@@ -4781,7 +4990,7 @@
       "headline": "Reports: Sankey reminds SEC schools to follow eligibility rules",
       "summary": "Commissioner Greg Sankey sent a memo to SEC members reminding them to move carefully when adding players suddenly allowed by court rulings to seek a fifth year of eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49593224/reports-sankey-reminds-sec-schools-follow-eligibility-rules",
-      "sport": "College football",
+      "sport": "Women's college basketball",
       "published": "2026-08-12T21:10:17.000Z",
       "firstSeen": "2026-08-13T03:59:55.296Z",
       "bestRank": 1
@@ -4968,7 +5177,7 @@
       "headline": "Rory: I'd love to give LeBron a golf lesson",
       "summary": "Rory: I'd love to give LeBron a golf lesson",
       "url": "https://www.espn.com/video/clip/_/id/49592244/love-give-lebron-golf-lesson",
-      "sport": "Golf",
+      "sport": "NBA",
       "published": "2026-08-12T19:15:37.000Z",
       "firstSeen": "2026-08-12T21:31:05.036Z",
       "bestRank": 2
@@ -5122,7 +5331,7 @@
       "headline": "Lakers' $12 billion purchase tops record U.S. sports team sales",
       "summary": "The Lakers have been sold for a staggering $12 billion fee. It's a North American sports franchise record. Here are others that sold for big money.",
       "url": "https://www.espn.com/nfl/story/_/id/34060289/most-expensive-sports-franchise-sales",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-08-12T16:33:24.000Z",
       "firstSeen": "2026-08-12T15:36:55.019Z",
       "bestRank": 1
@@ -7069,7 +7278,7 @@
       "headline": "NCAA and FBI announce partnership to combat athlete sexploitation",
       "summary": "As college athletes become bigger targets for sexual exploitation online, the NCAA and FBI announced a partnership Monday to educate athletes on how to prevent private images from falling into the wrong hands.",
       "url": "https://www.espn.com/college-sports/story/_/id/49555079/ncaa-fbi-announce-partnership-combat-athlete-sexploitation",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-10T17:55:54.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 2
@@ -8015,7 +8224,7 @@
       "headline": "Senate vote on college sports bill now slated for September",
       "summary": "The Protect College Sports Act failed to reach a vote during an all-night, pre-recess session in the Senate, though the bill did gain a spot on next month's calendar after the chamber comes back from its summer break.",
       "url": "https://www.espn.com/college-sports/story/_/id/49560859/senate-vote-college-sports-bill-slated-september",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-08T16:30:20.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
@@ -8268,7 +8477,7 @@
       "headline": "New Purdue AD admits dig at Indiana was immediate error",
       "summary": "New Purdue athletic director Tommy McClelland is owning that an attempted one-liner at the expense of Indiana was a mistake \"the second it left my mouth.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49554744/new-purdue-ad-admits-dig-indiana-was-immediate-error",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-07T18:47:59.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 3
@@ -8367,7 +8576,7 @@
       "headline": "Mrs. Met, Goldy headline inductions into the Mascot Hall of Fame",
       "summary": "The announcement was made Friday morning on \"Good Morning America,\" with the five mascots on site to receive the news.",
       "url": "https://www.espn.com/mlb/story/_/id/49546890/mascot-hall-fame-inductions-class-2026",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-07T15:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 4
@@ -8829,7 +9038,7 @@
       "headline": "NCAA Division II votes to approve age-based eligibility model",
       "summary": "NCAA Division II will move to the age-based eligibility model that has prompted athlete lawsuits across the country since it was adopted in Division I.",
       "url": "https://www.espn.com/college-sports/story/_/id/49545296/ncaa-division-ii-votes-approve-age-based-eligibility-model",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-06T14:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 5
@@ -8961,7 +9170,7 @@
       "headline": "LSU officials meet with top donors about proposed sports funding plan",
       "summary": "LSU has completed a series of two meetings with top donors to outline what university President Wade Rousse has billed as a \"first of its kind\" revenue-generating proposal for athletics.",
       "url": "https://www.espn.com/college-sports/story/_/id/49542287/lsu-officials-meet-top-donors-proposed-sports-funding-plan",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-06T04:29:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 6
@@ -9137,7 +9346,7 @@
       "headline": "Purdue hires longtime AD Tommy McClelland from Rice",
       "summary": "Purdue has hired Rice athletic director Tommy McClelland as athletic director.",
       "url": "https://www.espn.com/college-sports/story/_/id/49525796/tommy-mcclelland-primary-target-purdue-ad-job-sources-say",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-05T16:48:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 9
@@ -9225,7 +9434,7 @@
       "headline": "Pac-12, MWC finalize settlement over 'poaching,' exit fees",
       "summary": "The Pac-12 and Mountain West have finalized a settlement over \"poaching\" and exit fees ahead of a number of former MWC schools heading to the Pac-12.",
       "url": "https://www.espn.com/college-sports/story/_/id/49535459/pac-12-mwc-finalize-settlement-poaching-exit-fees",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-05T11:31:11.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 7
@@ -9346,7 +9555,7 @@
       "headline": "MEAC signs commissioner Sonja Stills to 5-year extension through '31",
       "summary": "The Mid-Eastern Athletic Conference has signed Commissioner Sonja Stills to a five-year contract extension through 2031.",
       "url": "https://www.espn.com/college-sports/story/_/id/49532583/meac-signs-commissioner-sonja-stills-5-year-extension-2031",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-04T23:55:04.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 8
@@ -9984,7 +10193,7 @@
       "headline": "Sources: Former MLB executive Tim Brosnan to head Big East",
       "summary": "The Big East is expected to hire former MLB executive Tim Brosnan as the league's next commissioner, sources told ESPN.",
       "url": "https://www.espn.com/college-sports/story/_/id/49507446/source-former-mlb-executive-tim-brosnan-head-big-east",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-01T22:17:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 10
@@ -10006,7 +10215,7 @@
       "headline": "Judge grants injunction for Class of '22 athletes seeking 5th NCAA season",
       "summary": "A federal court dealt a major blow to the NCAA's new eligibility rule when it ruled that all high school class of 2022 athletes who exhausted their fourth season of college eligibility this spring are eligible for a fifth season in 2026-27.",
       "url": "https://www.espn.com/college-football/story/_/id/49501415/judge-grants-injunction-class-22-athletes-seeking-play-5th-ncaa-season",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-01T12:46:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 12
@@ -10017,7 +10226,7 @@
       "headline": "Big Ten, SEC support college sports bill, reviving Senate chances",
       "summary": "The Big Ten and SEC have agreed to support a Senate bill that seeks to regulate college sports.",
       "url": "https://www.espn.com/college-sports/story/_/id/49501752/big-ten-sec-support-college-sports-bill-reviving-senate-chances",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-01T12:38:24.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 11
@@ -10028,7 +10237,7 @@
       "headline": "FAU hires Josh McCowan as athletic director",
       "summary": "Josh McCowan was hired as Florida Atlantic vice president and athletic director.",
       "url": "https://www.espn.com/college-football/story/_/id/49498431/fau-hires-josh-mccowan-athletic-director-vice-president",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-01T11:04:41.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 13
@@ -10215,7 +10424,7 @@
       "headline": "Senate adjourns without scheduling vote Protect College Sports Act",
       "summary": "The U.S. Senate adjourned for the week Thursday without scheduling a vote for the Protect College Sports Act, a bill aimed at reforming college sports.",
       "url": "https://www.espn.com/college-sports/story/_/id/49491567/senate-adjourns-scheduling-vote-protect-college-sports-act",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-07-30T23:07:59.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 17
@@ -10435,7 +10644,7 @@
       "headline": "Sources: Notre Dame passes Ohio State for richest patch deal",
       "summary": "Notre Dame has reached a multiyear deal with SoFi Technologies that will place the financial service company's brand on the Fighting Irish's jerseys in every sport starting this season, the university announced Tuesday.",
       "url": "https://www.espn.com/college-football/story/_/id/49471461/notre-dame-passes-ohio-state-richest-patch-deal",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-07-28T18:03:40.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 19
@@ -10446,7 +10655,7 @@
       "headline": "Ohio State, JPMorganChase reach lucrative jersey patch deal",
       "summary": "Ohio State is entering a partnership with JPMorganChase that includes jersey patches for all 36 teams and will yield nearly $17 million per year for the athletic program.",
       "url": "https://www.espn.com/college-sports/story/_/id/49469951/ohio-state-jpmorganchase-reach-lucrative-jersey-patch-deal",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-07-28T17:46:29.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 20
@@ -10578,7 +10787,7 @@
       "headline": "Report: Michigan AD Warde Manuel to get $7M in departure deal",
       "summary": "Departing Michigan athletic director Warde Manuel will receive a $7 million lump sum payment as part of his separation deal, according to a document obtained Monday by The Associated Press.",
       "url": "https://www.espn.com/college-football/story/_/id/49462328/michigan-ad-warde-manuel-get-7m-departure-deal",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-07-27T14:36:43.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 23
@@ -10842,7 +11051,7 @@
       "headline": "Alabama NIL content director arrested in human trafficking sting",
       "summary": "Robert Suttles, content director for \"Yea Alabama,\" the name, image and likeness initiative for Alabama athletics, was arrested Thursday during a human trafficking operation.",
       "url": "https://www.espn.com/college-football/story/_/id/49448045/alabama-nil-content-director-arrested-human-trafficking-sting",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-07-25T18:38:33.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 25
@@ -10963,7 +11172,7 @@
       "headline": "Tennessee State places AD Mikki Allen on administrative leave",
       "summary": "Tennessee State athletic director Mikki Allen was placed on administrative leave following an internal investigation that was prompted by a vote of no confidence from six coaches at the school.",
       "url": "https://www.espn.com/college-sports/story/_/id/49435459/tennessee-state-places-ad-mikki-allen-administrative-leave",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-07-25T11:23:59.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 29
