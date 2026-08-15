@@ -221,6 +221,67 @@ app.post("/api/photos/:id/parse", requirePin, async (req, res) => {
   }
 });
 
+async function prepareImage(buffer) {
+  const full = await sharp(buffer, { failOn: "none" })
+    .rotate()
+    .resize({
+      width: 1600,
+      height: 1600,
+      fit: "inside",
+      withoutEnlargement: true,
+    })
+    .jpeg({ quality: 82, mozjpeg: true })
+    .toBuffer();
+  const sized = await sharp(full).metadata();
+  const thumb = await sharp(full)
+    .resize({ width: 480, height: 480, fit: "inside" })
+    .jpeg({ quality: 72 })
+    .toBuffer();
+  return {
+    full,
+    thumb,
+    width: sized.width || null,
+    height: sized.height || null,
+  };
+}
+
+app.put("/api/photos/:id/image", requirePin, upload.single("photo"), async (req, res) => {
+  if (!req.file?.buffer) {
+    res.status(400).json({ error: "Choose a photo to upload" });
+    return;
+  }
+  if (!req.file.mimetype.startsWith("image/")) {
+    res.status(400).json({ error: "File must be an image" });
+    return;
+  }
+  try {
+    const prepared = await prepareImage(req.file.buffer);
+    const { rows } = await query(
+      `UPDATE photos
+       SET mime_type = 'image/jpeg', width = $2, height = $3, byte_size = $4,
+           image = $5, thumb = $6
+       WHERE id = $1
+       RETURNING ${PHOTO_COLS}`,
+      [
+        req.params.id,
+        prepared.width,
+        prepared.height,
+        prepared.full.length,
+        prepared.full,
+        prepared.thumb,
+      ]
+    );
+    if (!rows[0]) {
+      res.status(404).json({ error: "Not found" });
+      return;
+    }
+    res.json(rows[0]);
+  } catch (err) {
+    console.error(err);
+    res.status(400).json({ error: "Could not read that image" });
+  }
+});
+
 app.post("/api/photos", requirePin, upload.single("photo"), async (req, res) => {
   if (!req.file?.buffer) {
     res.status(400).json({ error: "Choose a photo to upload" });
@@ -231,23 +292,8 @@ app.post("/api/photos", requirePin, upload.single("photo"), async (req, res) => 
     return;
   }
   try {
-    const source = sharp(req.file.buffer, { failOn: "none" }).rotate();
-    const meta = await source.metadata();
-    const full = await sharp(req.file.buffer, { failOn: "none" })
-      .rotate()
-      .resize({
-        width: 1600,
-        height: 1600,
-        fit: "inside",
-        withoutEnlargement: true,
-      })
-      .jpeg({ quality: 78, mozjpeg: true })
-      .toBuffer();
-    const sized = await sharp(full).metadata();
-    const thumb = await sharp(full)
-      .resize({ width: 480, height: 480, fit: "inside" })
-      .jpeg({ quality: 70 })
-      .toBuffer();
+    const prepared = await prepareImage(req.file.buffer);
+    const { full, thumb, width, height } = prepared;
     const note = req.body?.note ? String(req.body.note).slice(0, 2000) : null;
     const triviaDate = parseTriviaDate(req.body?.trivia_date);
     if (req.body?.trivia_date !== undefined && req.body?.trivia_date !== "" && triviaDate === undefined) {
@@ -268,8 +314,8 @@ app.post("/api/photos", requirePin, upload.single("photo"), async (req, res) => 
        RETURNING ${PHOTO_COLS}`,
       [
         req.file.originalname || null,
-        sized.width || meta.width || null,
-        sized.height || meta.height || null,
+        width,
+        height,
         full.length,
         full,
         thumb,
