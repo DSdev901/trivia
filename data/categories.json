@@ -13,6 +13,12 @@
       "type": "netflix"
     },
     {
+      "id": "prior-saucer",
+      "name": "Prior Saucer Trivia",
+      "description": "Questions and answers from uploaded photos. Search the text; show the original picture only if you want it.",
+      "type": "captured"
+    },
+    {
       "id": "presidents",
       "name": "Presidential Knowledge",
       "description": "All U.S. presidents — number, years served, ten facts, plus a shorthand connector fact each.",
@@ -32,12 +38,6 @@
       "name": "Periodic Table",
       "description": "Interactive table of all 118 elements — discovery, naming, and trivia facts, with spoken tours by group.",
       "type": "periodic-table"
-    },
-    {
-      "id": "prior-saucer",
-      "name": "Prior Saucer Trivia",
-      "description": "Questions and answers from uploaded photos. Search the text; show the original picture only if you want it.",
-      "type": "captured"
     },
     {
       "id": "geography",
