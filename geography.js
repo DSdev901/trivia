@@ -729,12 +729,19 @@ function coverOcean(svg, minX, minY, w, h) {
   rect.setAttribute("height", String(h + pad * 2));
 }
 
+function packFitPadRatio() {
+  // Marker packs have no land extent, so a country-style 3% crop sits on top of the dots.
+  if (geo.pack?.overlay === "markers") return 0.32;
+  return 0.03;
+}
+
 function paddedViewBox(bounds, padRatio) {
   const { minX, minY, maxX, maxY } = bounds;
   const bw = Math.max(1, maxX - minX);
   const bh = Math.max(1, maxY - minY);
-  const padX = Math.max(8, bw * padRatio);
-  const padY = Math.max(8, bh * padRatio);
+  const minPad = geo.pack?.overlay === "markers" ? 36 : 8;
+  const padX = Math.max(minPad, bw * padRatio);
+  const padY = Math.max(minPad, bh * padRatio);
   return {
     x: minX - padX,
     y: minY - padY,
@@ -942,7 +949,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     if (host.dataset.geoFitted !== "1") {
       const packIds = [...inPack];
       fitMapToIds(packIds, {
-        padRatio: 0.03,
+        padRatio: packFitPadRatio(),
         storeAsPack: !geo._packViewBox,
         panIds: panIdsForPack(host, inPack),
       });
