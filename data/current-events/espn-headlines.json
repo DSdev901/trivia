@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-16T17:41:08.640Z",
+  "generatedAt": "2026-08-16T18:28:23.012Z",
   "retentionDays": 21,
-  "windowStart": "2026-07-26T17:41:08.640Z",
-  "windowEnd": "2026-08-16T17:41:08.640Z",
+  "windowStart": "2026-07-26T18:28:23.012Z",
+  "windowEnd": "2026-08-16T18:28:23.012Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,30 @@
     "Tennis",
     "MMA"
   ],
-  "count": 1160,
+  "count": 1161,
   "items": [
+    {
+      "key": "49630369",
+      "id": "49630369",
+      "headline": "Ex-MLB pitcher Tommy John, namesake of pioneering surgery, dies",
+      "summary": "Former major league pitcher Tommy John, the namesake behind the pioneering elbow surgery that prolonged his career for 14 more years, has died at the age of 83.",
+      "url": "https://www.espn.com/mlb/story/_/id/49630369/ex-mlb-pitcher-tommy-john-namesake-pioneering-surgery-dies",
+      "sport": "MLB",
+      "published": "2026-08-16T18:18:50.000Z",
+      "firstSeen": "2026-08-16T18:28:23.012Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49427699",
+      "id": "49427699",
+      "headline": "2026 Seattle Seahawks training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Seahawks training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49427699/seattle-seahawks-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-16T18:10:40.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
     {
       "key": "49629825",
       "id": "49629825",
@@ -30,7 +52,7 @@
       "summary": "Outfielder Cody Bellinger, who hasn't played since July 26 due to a hamstring injury, will begin a rehab assignment Tuesday and could rejoin the Yankees next weekend.",
       "url": "https://www.espn.com/mlb/story/_/id/49629825/yankees-cody-bellinger-begin-rehab-assignment-tuesday",
       "sport": "MLB",
-      "published": "2026-08-16T17:36:56.000Z",
+      "published": "2026-08-16T18:09:14.000Z",
       "firstSeen": "2026-08-16T17:41:08.640Z",
       "bestRank": 1
     },
@@ -57,6 +79,17 @@
       "bestRank": 1
     },
     {
+      "key": "49629312",
+      "id": "49629312",
+      "headline": "Should Prates or Morales be next to challenges the pound-for-pound king?",
+      "summary": "Two exciting welterweights, Carlos Prates and Michael Morales, have now entered the Islam Makhachev sweepstakes.",
+      "url": "https://www.espn.com/mma/story/_/id/49629312/next-islam-makhachev-mackenzie-dern-ufc-330",
+      "sport": "MMA",
+      "published": "2026-08-16T17:11:57.000Z",
+      "firstSeen": "2026-08-16T18:28:23.012Z",
+      "bestRank": 1
+    },
+    {
       "key": "49624712",
       "id": "49624712",
       "headline": "Cleveland Guardians secure franchise's 10,000th victory",
@@ -77,17 +110,6 @@
       "published": "2026-08-16T17:03:06.000Z",
       "firstSeen": "2026-08-16T16:28:50.218Z",
       "bestRank": 2
-    },
-    {
-      "key": "49427699",
-      "id": "49427699",
-      "headline": "2026 Seattle Seahawks training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Seahawks training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49427699/seattle-seahawks-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-16T16:57:45.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
     },
     {
       "key": "49583228",
@@ -3417,7 +3439,7 @@
       "headline": "Hidalgo, Strong among NCAA players inking NIL deals with Unrivaled",
       "summary": "Women's college basketball stars Hannah Hidalgo, Sarah Strong and Madison Booker are among a notable group of NCAA players signing NIL deals with Unrivaled.",
       "url": "https://www.espn.com/womens-college-basketball/story/_/id/49609172/hidalgo-strong-ncaa-players-inking-nil-deals-unrivaled",
-      "sport": "Women's college basketball",
+      "sport": "WNBA",
       "published": "2026-08-14T13:54:23.000Z",
       "firstSeen": "2026-08-14T15:26:38.251Z",
       "bestRank": 1
@@ -5815,7 +5837,7 @@
       "headline": "Diana Taurasi tales: Untold stories about retired WNBA legend",
       "summary": "\"We got Diana\" ... and you don't forget a legend like that. Here's a look at Diana Taurasi from teammates who knew her best.",
       "url": "https://www.espn.com/wnba/story/_/id/41444903/diana-taurasi-retires-wnba-legend-phoenix-mercury-uconn-huskies",
-      "sport": "Women's college basketball",
+      "sport": "WNBA",
       "published": "2026-08-13T11:02:53.000Z",
       "firstSeen": "2026-08-13T15:37:22.626Z",
       "bestRank": 1
@@ -7179,7 +7201,7 @@
       "headline": "Lakers' $12 billion purchase tops record U.S. sports team sales",
       "summary": "The Lakers have been sold for a staggering $12 billion fee. It's a North American sports franchise record. Here are others that sold for big money.",
       "url": "https://www.espn.com/nfl/story/_/id/34060289/most-expensive-sports-franchise-sales",
-      "sport": "NBA",
+      "sport": "WNBA",
       "published": "2026-08-12T16:33:24.000Z",
       "firstSeen": "2026-08-12T15:36:55.019Z",
       "bestRank": 1
@@ -12771,17 +12793,6 @@
       "published": "2026-07-26T18:36:32.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 21
-    },
-    {
-      "key": "49456278",
-      "id": "49456278",
-      "headline": "Lewis Hamilton questions Ferrari strategy after 'missed opportunity' in Hungary",
-      "summary": "Lewis Hamilton has said he will seek an explanation from Ferrari about the team's strategy at Sunday's Hungarian Grand Prix.",
-      "url": "https://www.espn.com/f1/story/_/id/49456278/lewis-hamilton-questions-ferrari-strategy-missed-opportunity-hungary",
-      "sport": "F1",
-      "published": "2026-07-26T17:53:00.000Z",
-      "firstSeen": "2026-08-14T12:31:41.741Z",
-      "bestRank": 22
     }
   ]
 }
