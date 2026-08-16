@@ -1191,8 +1191,7 @@ function scheduleFocusPlace(host, id) {
 function ensureBorderOverlay(host) {
   if (!host || isOutlineView()) return;
   const svg = host.querySelector("svg");
-  const water = svg?.querySelector(".geo-waterways");
-  if (!svg || !water || svg.querySelector(".geo-border-overlay")) return;
+  if (!svg || svg.querySelector(".geo-border-overlay")) return;
   const NS = "http://www.w3.org/2000/svg";
   const g = document.createElementNS(NS, "g");
   g.setAttribute("class", "geo-border-overlay");
@@ -1208,7 +1207,13 @@ function ensureBorderOverlay(host) {
     line.setAttribute("class", "geo-border-line");
     g.appendChild(line);
   });
-  water.after(g);
+  if (!g.childNodes.length) return;
+  // Above rivers when present (hybrid water + border); otherwise above land fills.
+  const water = svg.querySelector(".geo-waterways");
+  const land = svg.querySelector(".geo-region, .geo-land-bg");
+  if (water) water.after(g);
+  else if (land) land.parentNode?.appendChild(g);
+  else svg.appendChild(g);
 }
 
 function elFullBox(el) {
