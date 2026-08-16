@@ -1,6 +1,6 @@
 {
   "section": "netflix",
-  "generatedAt": "2026-08-16T16:30:41.808Z",
+  "generatedAt": "2026-08-16T17:16:47.676Z",
   "windowStart": "2026-07-19",
   "windowEnd": "2026-08-16",
   "items": [
@@ -33,7 +33,7 @@
       "inUS": true
     },
     {
-      "title": "Don’t Say Good Luck",
+      "title": "Don't Say Good Luck",
       "type": "Film",
       "date": "2026-08-14",
       "synopsis": "Sophie Birenbaum is ready for the spotlight as the lead in her high school musical — until she's suddenly facing more drama at home than on the stage.",
@@ -113,6 +113,22 @@
       "inUS": true
     },
     {
+      "title": "This, That and Everything in Between",
+      "type": "Film",
+      "date": "2026-08-13",
+      "synopsis": "A TV writer returns home to her estranged mother, igniting chaos as they navigate painful secrets and the complexities of their dysfunctional family.",
+      "starring": [
+        "Jodi Sta. Maria",
+        "Agot Isidro",
+        "Gardo Versoza",
+        "Ruby Ruiz",
+        "Gabriel Lazaro",
+        "RK Bagatsing"
+      ],
+      "image": "data/current-events/posters/this-that-and-everything-in-between-513768a6.jpg",
+      "inUS": true
+    },
+    {
       "title": "A Child of My Own",
       "type": "Film",
       "date": "2026-08-13",
@@ -129,27 +145,11 @@
       "inUS": true
     },
     {
-      "title": "MLB Field of Dreams: Phillies vs. Twins (LIVE)",
-      "type": "Live event",
+      "title": "MLB Field of Dreams: Phillies vs. Twins",
+      "type": "Film",
       "date": "2026-08-13",
       "synopsis": "",
       "starring": [],
-      "inUS": true
-    },
-    {
-      "title": "This, That and Everything in Between",
-      "type": "Film",
-      "date": "2026-08-13",
-      "synopsis": "A TV writer returns home to her estranged mother, igniting chaos as they navigate painful secrets and the complexities of their dysfunctional family.",
-      "starring": [
-        "Jodi Sta. Maria",
-        "Agot Isidro",
-        "Gardo Versoza",
-        "Ruby Ruiz",
-        "Gabriel Lazaro",
-        "RK Bagatsing"
-      ],
-      "image": "data/current-events/posters/this-that-and-everything-in-between-513768a6.jpg",
       "inUS": true
     },
     {
@@ -191,7 +191,7 @@
       "inUS": true
     },
     {
-      "title": "Rory Scovel: Show Must Go On",
+      "title": "Rory Scovel : Show Must Go On",
       "type": "Stand-up special",
       "date": "2026-08-11",
       "synopsis": "With a hypothetical home invasion, a biblical reenactment, and his late dad's final wish, Rory Scovel delivers unrelenting laughs in this raucous stand-up special filmed at The Neptune in Seattle, Washington.",
@@ -276,15 +276,6 @@
       "inUS": true
     },
     {
-      "title": "Death Inc. (Season 4)",
-      "type": "Series",
-      "date": "2026-08-07",
-      "synopsis": "",
-      "starring": [],
-      "image": "data/current-events/posters/death-inc-1a3db9da.jpg",
-      "inUS": true
-    },
-    {
       "title": "The Last House",
       "type": "Film",
       "date": "2026-08-07",
@@ -298,6 +289,15 @@
         "Gabriel Barbosa"
       ],
       "image": "data/current-events/posters/the-last-house-f605bcf7.jpg",
+      "inUS": true
+    },
+    {
+      "title": "Death Inc. (Season 4)",
+      "type": "Series",
+      "date": "2026-08-07",
+      "synopsis": "",
+      "starring": [],
+      "image": "data/current-events/posters/death-inc-1a3db9da.jpg",
       "inUS": true
     },
     {
@@ -377,7 +377,7 @@
     },
     {
       "title": "Inside the Trustor Scandal",
-      "type": "Documentary",
+      "type": "Film",
       "date": "2026-08-05",
       "synopsis": "For the first time since 1997, Joachim Posener finally emerges from hiding and allows himself to be interviewed about his life and the Trustor affair. Twenty-seven years ago, he disappeared without a trace, and ever since, he has been on the international most wanted list. Now, Karin af Klintberg searches for him…",
       "starring": [
@@ -785,7 +785,7 @@
     {
       "title": "Lock Upp (Season 2)",
       "type": "Reality",
-      "date": "2026-07-19",
+      "date": "2026-07-20",
       "synopsis": "Fifteen newsworthy celebrities must own their truth in the court of public opinion. Can they control the narrative, or will they be locked out?",
       "starring": [],
       "image": "data/current-events/posters/lock-upp-3af6a4be.jpg"

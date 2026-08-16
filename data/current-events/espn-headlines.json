@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-16T16:28:50.218Z",
+  "generatedAt": "2026-08-16T17:14:45.458Z",
   "retentionDays": 21,
-  "windowStart": "2026-07-26T16:28:50.218Z",
-  "windowEnd": "2026-08-16T16:28:50.218Z",
+  "windowStart": "2026-07-26T17:14:45.458Z",
+  "windowEnd": "2026-08-16T17:14:45.458Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,41 @@
     "Tennis",
     "MMA"
   ],
-  "count": 1158,
+  "count": 1159,
   "items": [
+    {
+      "key": "49583228",
+      "id": "49583228",
+      "headline": "Memphis Grizzlies offseason recap, early 2026-27 season preview",
+      "summary": "How will the Grizzlies look after trading two cornerstone players? We're looking back at the offseason and taking an early look at the 2026-27 season.",
+      "url": "https://www.espn.com/nba/story/_/id/49583228/memphis-grizzlies-offseason-recap-2026-27-season-preview-stats-roster-depth-chart",
+      "sport": "NBA",
+      "published": "2026-08-16T16:51:10.000Z",
+      "firstSeen": "2026-08-14T12:31:41.741Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49622134",
+      "id": "49622134",
+      "headline": "Giants QB Jaxson Dart 'puzzled' by latest concussion test request",
+      "summary": "Giants quarterback Jaxson Dart said he is 'puzzled' after being checked for a concussion during Saturday's preseason game against the Vikings.",
+      "url": "https://www.espn.com/nfl/story/_/id/49622134/giants-qb-jaxson-dart-puzzled-latest-concussion-test",
+      "sport": "NFL",
+      "published": "2026-08-16T16:31:58.000Z",
+      "firstSeen": "2026-08-16T17:14:45.458Z",
+      "bestRank": 17
+    },
+    {
+      "key": "49627652",
+      "id": "49627652",
+      "headline": "Aaron Donald decision has no 'invisible deadline,' Sean McVay says",
+      "summary": "Rams coach Sean McVay says he won't put an \"invisible deadline\" on Aaron Donald to come out of retirement but added that he hopes the former star defensive tackle makes a decision \"sooner than later.\"",
+      "url": "https://www.espn.com/nfl/story/_/id/49627652/aaron-donald-decision-no-invisible-deadline-sean-mcvay-says",
+      "sport": "NFL",
+      "published": "2026-08-16T16:14:37.000Z",
+      "firstSeen": "2026-08-16T15:27:05.738Z",
+      "bestRank": 1
+    },
     {
       "key": "49629221",
       "id": "49629221",
@@ -76,6 +109,17 @@
       "sport": "NFL",
       "published": "2026-08-16T15:36:46.000Z",
       "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49601593",
+      "id": "49601593",
+      "headline": "FAQ: Latest on FIFA, Infantino mess as opposition applies pressure",
+      "summary": "Lots has happened since FIFA president Gianni Infantino rolled back his controversial plan to \"sell\" stakes in the FIFA World Cup, with opposition swirling and his future uncertain. We answer some of the big questions.",
+      "url": "https://www.espn.com/soccer/story/_/id/49601593/fifa-gianni-infantino-presidency-world-cup-explainer-saudi-arabia-analysis-marcotti",
+      "sport": "Soccer",
+      "published": "2026-08-16T15:30:33.000Z",
+      "firstSeen": "2026-08-16T17:14:45.458Z",
       "bestRank": 1
     },
     {
@@ -156,6 +200,17 @@
       "bestRank": 2
     },
     {
+      "key": "49625277",
+      "id": "49625277",
+      "headline": "Islam Makhachev notches 17th consecutive victory at UFC 330",
+      "summary": "Islam Makhachev further cemented himself as one of the greatest fighters ever, surpassing middleweight legend Anderson Silva's all-time record of 16 consecutive UFC wins with a decision over Ian Machado Garry at UFC 330.",
+      "url": "https://www.espn.com/mma/story/_/id/49625277/islam-makhachev-notches-17th-consecutive-victory-ufc-330",
+      "sport": "MMA",
+      "published": "2026-08-16T13:42:48.000Z",
+      "firstSeen": "2026-08-16T17:14:45.458Z",
+      "bestRank": 3
+    },
+    {
       "key": "49627647",
       "id": "49627647",
       "headline": "LeBron James launches YouTube golf venture with Cavs reunion",
@@ -189,17 +244,6 @@
       "bestRank": 1
     },
     {
-      "key": "49627652",
-      "id": "49627652",
-      "headline": "Aaron Donald decision has no 'invisible deadline,' Sean McVay says",
-      "summary": "Rams coach Sean McVay says he won't put an \"invisible deadline\" on Aaron Donald to come out of retirement but added that he hopes the former star defensive tackle makes a decision \"sooner than later.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/49627652/aaron-donald-decision-no-invisible-deadline-sean-mcvay-says",
-      "sport": "NFL",
-      "published": "2026-08-16T12:56:11.000Z",
-      "firstSeen": "2026-08-16T15:27:05.738Z",
-      "bestRank": 1
-    },
-    {
       "key": "49611879",
       "id": "49611879",
       "headline": "BYU's Kalani Sitake, a favorite coach, on the verge of the CFP",
@@ -227,7 +271,7 @@
       "headline": "Basketball HOF class of 2026 honors women's hoops, NBA icons",
       "summary": "Candace Parker and Elena Delle Donne headlined a 2026 Hall of Fame class that honored women's hoops, as well as NBA luminaries such as Doc Rivers, Mike D'Antoni and Amar'e Stoudemire.",
       "url": "https://www.espn.com/espn/story/_/id/49623875/basketball-hof-class-2026-honors-women-hoops-nba-icons",
-      "sport": "WNBA",
+      "sport": "College basketball",
       "published": "2026-08-16T11:21:36.000Z",
       "firstSeen": "2026-08-16T03:34:19.324Z",
       "bestRank": 1
@@ -431,6 +475,28 @@
       "bestRank": 1
     },
     {
+      "key": "49625523",
+      "id": "49625523",
+      "headline": "UFC 330 takeaways: Makhachev extends legacy; Dern tees up next matchup",
+      "summary": "Islam Makhachev and Mackenzie Dern picked up dominant title defenses to close out the UFC 330 main card.",
+      "url": "https://www.espn.com/mma/story/_/id/49625523/makhachev-extends-legacy-dern-tees-next-matchup",
+      "sport": "MMA",
+      "published": "2026-08-16T07:13:23.000Z",
+      "firstSeen": "2026-08-16T06:29:27.265Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49591854",
+      "id": "49591854",
+      "headline": "UFC 330 results and analysis from Makhachev's record-setting victory",
+      "summary": "Brett Okamoto and Dre Waters break down all the action from UFC 330 at Xfinity Mobile Arena in Philly.",
+      "url": "https://www.espn.com/mma/story/_/id/49591854/ufc-330-live-results-analysis-islam-makhachev-vs-ian-machado-garry-mackenzie-dern-vs-gillian-robertson",
+      "sport": "MMA",
+      "published": "2026-08-16T06:51:35.000Z",
+      "firstSeen": "2026-08-16T03:34:19.324Z",
+      "bestRank": 1
+    },
+    {
       "key": "49154575",
       "id": "49154575",
       "headline": "Premier League preseason friendlies 2026-27: Fixtures, UK kick-off times and summer tour schedule",
@@ -464,6 +530,17 @@
       "bestRank": 1
     },
     {
+      "key": "49409520",
+      "id": "49409520",
+      "headline": "Dutch Grand Prix 2026: Race start time, how to watch, full schedule, predictions",
+      "summary": "Formula 1 is back and it's taking place in the sand dunes of Zandvoort at the Dutch Grand Prix.",
+      "url": "https://www.espn.com/f1/story/_/id/49409520/dutch-grand-prix-2026-circuit-zandvoort-race-f1-start-s-how-watch-schedule-usa-tv-channel-live-stream-predictions-results",
+      "sport": "F1",
+      "published": "2026-08-16T06:41:39.000Z",
+      "firstSeen": "2026-08-14T15:15:56.143Z",
+      "bestRank": 1
+    },
+    {
       "key": "49623511",
       "id": "49623511",
       "headline": "Messi has 3rd straight penalty miss as Nashville routs Miami",
@@ -484,28 +561,6 @@
       "published": "2026-08-16T06:35:57.000Z",
       "firstSeen": "2026-08-16T15:27:05.738Z",
       "bestRank": 3
-    },
-    {
-      "key": "49625523",
-      "id": "49625523",
-      "headline": "UFC 330 takeaways: Makhachev extends legacy; Dern tees up next matchup",
-      "summary": "Islam Makhachev and Mackenzie Dern picked up dominant title defenses to close out the UFC 330 main card.",
-      "url": "https://www.espn.com/mma/story/_/id/49625523/makhachev-extends-legacy-dern-tees-next-matchup",
-      "sport": "MMA",
-      "published": "2026-08-16T06:27:44.000Z",
-      "firstSeen": "2026-08-16T06:29:27.265Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49591854",
-      "id": "49591854",
-      "headline": "UFC 330 results and analysis from Makhachev's record-setting victory",
-      "summary": "Brett Okamoto and Dre Waters break down all the action from UFC 330 at Xfinity Mobile Arena in Philly.",
-      "url": "https://www.espn.com/mma/story/_/id/49591854/ufc-330-live-results-analysis-islam-makhachev-vs-ian-machado-garry-mackenzie-dern-vs-gillian-robertson",
-      "sport": "MMA",
-      "published": "2026-08-16T06:22:27.000Z",
-      "firstSeen": "2026-08-16T03:34:19.324Z",
-      "bestRank": 1
     },
     {
       "key": "49625723",
@@ -2037,17 +2092,6 @@
       "bestRank": 1
     },
     {
-      "key": "49409520",
-      "id": "49409520",
-      "headline": "Dutch Grand Prix 2026: Race start time, how to watch, full schedule, predictions",
-      "summary": "Formula 1 is back and it's taking place in the sand dunes of Zandvoort at the Dutch Grand Prix.",
-      "url": "https://www.espn.com/f1/story/_/id/49409520/dutch-grand-prix-2026-circuit-zandvoort-race-f1-start-s-how-watch-schedule-usa-tv-channel-live-stream-predictions-results",
-      "sport": "F1",
-      "published": "2026-08-15T06:46:05.000Z",
-      "firstSeen": "2026-08-14T15:15:56.143Z",
-      "bestRank": 1
-    },
-    {
       "key": "49615873",
       "id": "49615873",
       "headline": "Winterburn leads Portland against Phoenix after 20-point showing",
@@ -3542,17 +3586,6 @@
       "published": "2026-08-14T11:10:41.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 3
-    },
-    {
-      "key": "49583228",
-      "id": "49583228",
-      "headline": "Memphis Grizzlies offseason recap, early 2026-27 season preview",
-      "summary": "How will the Grizzlies look after trading two cornerstone players? We're looking back at the offseason and taking an early look at the 2026-27 season.",
-      "url": "https://www.espn.com/nba/story/_/id/49583228/memphis-grizzlies-offseason-recap-2026-27-season-preview-stats-roster-depth-chart",
-      "sport": "NBA",
-      "published": "2026-08-14T11:08:30.000Z",
-      "firstSeen": "2026-08-14T12:31:41.741Z",
-      "bestRank": 2
     },
     {
       "key": "49585132",
@@ -6794,7 +6827,7 @@
       "headline": "Reports: Sankey reminds SEC schools to follow eligibility rules",
       "summary": "Commissioner Greg Sankey sent a memo to SEC members reminding them to move carefully when adding players suddenly allowed by court rulings to seek a fifth year of eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49593224/reports-sankey-reminds-sec-schools-follow-eligibility-rules",
-      "sport": "College basketball",
+      "sport": "College football",
       "published": "2026-08-12T21:10:17.000Z",
       "firstSeen": "2026-08-13T03:59:55.296Z",
       "bestRank": 1
@@ -12738,28 +12771,6 @@
       "published": "2026-07-26T17:53:00.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 22
-    },
-    {
-      "key": "49455966",
-      "id": "49455966",
-      "headline": "Oscar Piastri: Carlos Sainz needs to 'look in the mirror' after 'unacceptable' collision",
-      "summary": "Oscar Piastri labelled Carlos Sainz's collision with him at the Hungarian Grand Prix as \"unacceptable.\" saying the Williams driver should take a \"look in the mirror\" given his criticism of other drivers in the past.",
-      "url": "https://www.espn.com/f1/story/_/id/49455966/oscar-piastri-carlos-sainz-needs-look-mirror-unacceptable-collision-hungarian-grand-prix",
-      "sport": "F1",
-      "published": "2026-07-26T17:11:31.000Z",
-      "firstSeen": "2026-08-14T12:31:41.741Z",
-      "bestRank": 23
-    },
-    {
-      "key": "49455960",
-      "id": "49455960",
-      "headline": "Norris praises 'incredible' pace after Hungarian GP win",
-      "summary": "Norris praises 'incredible' pace after Hungarian GP win",
-      "url": "https://www.espn.com/video/clip/_/id/49455960/norris-praises-incredible-pace-hungarian-gp-win",
-      "sport": "F1",
-      "published": "2026-07-26T16:54:12.000Z",
-      "firstSeen": "2026-08-14T12:31:41.741Z",
-      "bestRank": 24
     }
   ]
 }
