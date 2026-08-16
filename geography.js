@@ -1987,7 +1987,7 @@ function renderStudy() {
       </div>
     </div>`;
 
-  paintMap(geo.selectedId, { dimOthers: true });
+  paintMap(geo.selectedId);
   bindMapControls(geo.root.querySelector("#geo-map"));
   bindStudy();
 }
@@ -2019,7 +2019,7 @@ function selectStudyItem(id) {
   root
     .querySelector(`.geo-item-btn[data-id="${CSS.escape(id)}"]`)
     ?.scrollIntoView({ block: "nearest" });
-  paintMap(id, { dimOthers: true });
+  paintMap(id);
 }
 
 function bindStudy() {
@@ -2105,7 +2105,7 @@ function renderPlay() {
     </div>`;
 
   if (playHighlightsTarget()) {
-    paintMap(item.id, { dimOthers: true });
+    paintMap(item.id);
   } else if (showMap) {
     paintMap(null);
   }
@@ -2230,7 +2230,6 @@ function judge(ok, clickedMapId = null, clickedBtn = null) {
 
   if (playHighlightsTarget(true)) {
     paintMap(item.id, {
-      dimOthers: true,
       flash: {
         correctId: item.id,
         wrongId:

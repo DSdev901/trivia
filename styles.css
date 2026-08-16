@@ -2140,6 +2140,7 @@ body::after {
   stroke-width: 0.85;
   stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
+  opacity: 1;
 }
 
 .geo-map-frame.is-outline-mode .geo-waterways {
@@ -2168,9 +2169,10 @@ body::after {
   stroke-width: 1.45;
 }
 
+/* Mute with fill only — opacity washed out the white border overlay. */
 .geo-map-frame .geo-region.is-dim {
-  fill: #9eb6cc;
-  opacity: 0.45;
+  fill: #c2d0dc;
+  opacity: 1;
 }
 
 .geo-map-frame .geo-region.is-correct {
@@ -2301,7 +2303,8 @@ body::after {
 }
 
 .geo-island-boost.is-dim {
-  opacity: 0.45;
+  fill: #c2d0dc;
+  opacity: 1;
 }
 
 .geo-focus-mark {
@@ -2372,7 +2375,7 @@ body::after {
 
 .geo-map-frame .geo-region.geo-marker.is-dim {
   fill: #8a9aaa;
-  opacity: 0.36;
+  opacity: 1;
 }
 
 .geo-map-frame .geo-pin:hover .geo-region.geo-marker:not(.is-active):not(.is-correct):not(.is-wrong) {
