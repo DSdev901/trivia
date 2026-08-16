@@ -18,6 +18,6 @@ Rules:
 1. Each inner array is 2–4 indexes from INPUT.items that should become ONE card.
 2. Merge when a reader would treat them as updates on one unfolding event, even if the headlines share few words — a union letter about a deal and the trial date in that same case; two box-office notes for the same film this week; two write-ups of the same sale; an announcement and a reaction/praise/legacy piece about the same retirement, firing, trade, death, signing, or verdict.
 3. Do not merge just because they share a person, studio, league, franchise, or the word "merger". A CEO selling stock is not the merger trial. Spider-Man box office is not The Odyssey. A congressional letter is not the same card as the court schedule unless both are clearly the same proceeding. Two different games or two different awards for the same athlete stay separate.
-4. Do not merge sports with entertainment.
+4. Do not merge sports, entertainment, and world with each other.
 5. If nothing should merge, return {"merges": []}. Prefer too few merges over a mash-up.
 6. Indexes are 0-based in INPUT.items. Do not invent indexes.

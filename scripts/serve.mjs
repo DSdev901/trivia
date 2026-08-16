@@ -45,7 +45,7 @@ function runRefresh() {
         process.stdout.write(stdout || "");
         if (stderr) process.stderr.write(stderr);
         const out = { ok: !err, sections: {} };
-        for (const s of ["netflix", "sports", "entertainment", "briefing"]) {
+        for (const s of ["netflix", "sports", "entertainment", "world", "briefing"]) {
           try {
             out.sections[s] = JSON.parse(
               await readFile(path.join(ROOT, "data", "current-events", `${s}.json`), "utf8")
@@ -74,6 +74,7 @@ const server = http.createServer(async (req, res) => {
         netflix: out.sections.netflix,
         sports: out.sections.sports,
         entertainment: out.sections.entertainment,
+        world: out.sections.world,
         briefing: out.sections.briefing,
       })
     );

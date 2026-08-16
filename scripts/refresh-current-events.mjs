@@ -7,6 +7,7 @@
  * Sources (no dependencies; TMDB_API_KEY optional):
  *   Sports        — ESPN only (rolling 21-day archive, published every 3h)
  *   Entertainment — Google News + RSS (rolling 21-day archive, published every 3h)
+ *   World         — Google News World + BBC/NPR (rolling 21-day archive, 3h)
  *   Netflix       — TVMaze web schedule (series that actually aired),
  *                   whats-on-netflix + Wikipedia originals lists for titles
  *                   and dates only, TMDB for plot / cast / poster.
@@ -34,6 +35,12 @@ import {
   readArchive as readEntertainmentArchive,
   upsertStories,
 } from "./lib/entertainment.mjs";
+import {
+  fetchLiveWorld,
+  publishWorldFeed,
+  readArchive as readWorldArchive,
+  upsertStories as upsertWorldStories,
+} from "./lib/world.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_DIR = path.join(ROOT, "data", "current-events");
@@ -307,6 +314,54 @@ async function buildEntertainment() {
   });
   console.log(
     `  [entertainment] archive ${result.archived}; feed ${result.published} ` +
+      `(${result.enriched} summaries enriched)`
+  );
+  return items.map((i) => ({
+    headline: i.headline,
+    date: i.date,
+    tag: i.bucket,
+    summary: i.summary,
+    url: i.url,
+  }));
+}
+
+/**
+ * World is owned by the 3-hour cache (archive + published feed).
+ * The Tuesday refresh merges a fresh snapshot so the 21-day window stays.
+ */
+async function buildWorld() {
+  const archiveFile = path.join(OUT_DIR, "world-headlines.json");
+  const feedFile = path.join(OUT_DIR, "world.json");
+  const worldStart = new Date(now.getTime() - ENT_DAYS * 86400000)
+    .toISOString()
+    .slice(0, 10);
+  const existing = (await readWorldArchive(archiveFile)).filter(
+    (i) => i.date >= worldStart && i.date <= windowEnd
+  );
+  const byKey = new Map();
+  upsertWorldStories(byKey, existing);
+  const live = await fetchLiveWorld(worldStart, windowEnd);
+  upsertWorldStories(
+    byKey,
+    live.map((i) => ({ ...i, firstSeen: now.toISOString() }))
+  );
+  const items = [...byKey.values()]
+    .filter((i) => i.date >= worldStart && i.date <= windowEnd)
+    .sort(
+      (a, b) =>
+        b.date.localeCompare(a.date) ||
+        (a.bestRank ?? 1e9) - (b.bestRank ?? 1e9)
+    );
+  const result = await publishWorldFeed({
+    archiveFile,
+    feedFile,
+    items,
+    nowIso: now.toISOString(),
+    windowStart: worldStart,
+    windowEnd,
+  });
+  console.log(
+    `  [world] archive ${result.archived}; feed ${result.published} ` +
       `(${result.enriched} summaries enriched)`
   );
   return items.map((i) => ({
@@ -1813,19 +1868,21 @@ async function main() {
     if (!ok) process.exitCode = 1;
     return;
   }
-  const [sports, entertainment, netflix] = await Promise.all([
+  const [sports, entertainment, world, netflix] = await Promise.all([
     buildSports(),
     buildEntertainment(),
+    buildWorld(),
     buildNetflix(),
   ]);
   const results = await Promise.all([
     writeSection("sports", sports, 5),
     // Entertainment is published by buildEntertainment() into the 21-day archive.
     Promise.resolve(entertainment.length >= 5),
+    Promise.resolve(world.length >= 5),
     writeSection("netflix", netflix, 5, netflixWin),
   ]);
   const ok = results.filter(Boolean).length;
-  console.log(`Done — ${ok}/3 sections updated.`);
+  console.log(`Done — ${ok}/4 sections updated.`);
   if (ok === 0) process.exitCode = 1;
   else await writeBriefingFile();
 }

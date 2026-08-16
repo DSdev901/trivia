@@ -436,7 +436,7 @@ function hasTriviaHook(text) {
 /** US trivia desk: boost US leagues; demote overseas sports as a class. */
 function sportsAudienceAdjust(item, text) {
   const tag = item.tag || "";
-  if (item.section === "entertainment") return 0;
+  if (item.section === "entertainment" || item.section === "world") return 0;
   let n = 0;
   if (US_SPORT_TAGS.has(tag)) n += 12;
   if (tag === "MMA") n += 4;
@@ -1091,6 +1091,9 @@ function collectItems(data) {
   for (const item of data.entertainment?.items || []) {
     out.push(normalizeItem("entertainment", item));
   }
+  for (const item of data.world?.items || []) {
+    out.push(normalizeItem("world", item));
+  }
   return out;
 }
 
@@ -1098,13 +1101,13 @@ function collectItems(data) {
  * Rank clustered current-events headlines. Related stories are merged.
  * Rank blends coverage, story weight, recency, and a US-trivia audience prior
  * so Premier League club chatter does not outrank NFL/NBA/MLB news.
- * `data` is { sports, entertainment } payloads from the JSON feeds.
+ * `data` is { sports, entertainment, world } payloads from the JSON feeds.
  */
 export function buildBriefing(data, now = Date.now()) {
   const items = collectItems(data);
   for (const item of items) item.score = storyWeight(item, now);
   const clustered = sortByClusterRank(clusterStories(items), now);
-  const windows = [data.sports, data.entertainment]
+  const windows = [data.sports, data.entertainment, data.world]
     .filter(Boolean)
     .map((d) => [d.windowStart, d.windowEnd]);
   const windowStart = windows.map((w) => w[0]).sort()[0] || "";

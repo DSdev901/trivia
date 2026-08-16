@@ -1,8 +1,8 @@
 name: Refresh Current Events
 
-# Keeps Netflix and the Tuesday sports/entertainment briefing current.
-# Sports and entertainment headlines still update every 3 hours via the
-# cache-espn-headlines and cache-entertainment workflows.
+# Keeps Netflix and the Tuesday sports/entertainment/world briefing current.
+# Sports, entertainment, and world headlines still update every 3 hours via
+# the cache-espn-headlines, cache-entertainment, and cache-world workflows.
 # Runs on a schedule in UTC; can also be triggered by hand from the
 # repo's Actions tab ("Run workflow").
 
@@ -38,6 +38,9 @@ jobs:
 
       - name: Refresh entertainment archive
         run: node scripts/cache-entertainment.mjs
+
+      - name: Refresh world archive
+        run: node scripts/cache-world.mjs
 
       - name: Refresh current events data
         env:

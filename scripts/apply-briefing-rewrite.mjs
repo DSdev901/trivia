@@ -16,7 +16,7 @@ import path from "node:path";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "current-events", "briefing.json");
-const SECTIONS = new Set(["sports", "entertainment"]);
+const SECTIONS = new Set(["sports", "entertainment", "world"]);
 
 function scanJsonValue(text, start) {
   let depth = 0;

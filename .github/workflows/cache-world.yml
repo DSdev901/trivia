@@ -1,0 +1,40 @@
+name: Cache World Headlines
+
+# Google News World only keeps a few days of posts. Snapshot every three
+# hours into a rolling 21-day archive and publish world.json so the live
+# World tab updates with each run.
+
+on:
+  schedule:
+    # Staggered after entertainment (24 */3) to avoid colliding writers.
+    - cron: "31 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: current-events-data-writer
+  cancel-in-progress: false
+
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Update world archive and feed
+        run: node scripts/cache-world.mjs
+
+      - name: Commit updated World data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          bash scripts/git-push-current-events.sh "Cache world headlines" \
+            data/current-events/world-headlines.json data/current-events/world.json

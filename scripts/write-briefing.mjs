@@ -28,9 +28,11 @@ export async function writeBriefingFile({
 } = {}) {
   const sports = await readFeed("sports");
   const entertainment = await readFeed("entertainment");
+  const world = await readFeed("world");
   const sourceItems = [
     ...(sports?.items || []),
     ...(entertainment?.items || []),
+    ...(world?.items || []),
   ];
   const filled = await enrichThinSummaries(sourceItems, {
     minLen: 80,
@@ -42,7 +44,7 @@ export async function writeBriefingFile({
   if (filled) {
     console.log(`  [briefing] filled missing names/figures on ${filled} source stories`);
   }
-  const built = buildBriefing({ sports, entertainment });
+  const built = buildBriefing({ sports, entertainment, world });
   const payload = {
     section: "briefing",
     source,
