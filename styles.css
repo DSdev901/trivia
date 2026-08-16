@@ -1304,8 +1304,35 @@ body::after {
   color: #fff;
 }
 
-.ce-filter-us {
+.ce-filter-region {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.85rem;
   margin-left: 0.35rem;
+  align-items: center;
+}
+
+.ce-filter-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  cursor: pointer;
+  user-select: none;
+}
+
+.ce-filter-radio input {
+  accent-color: var(--accent);
+  width: 0.95rem;
+  height: 0.95rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.ce-filter-radio:has(input:checked) {
+  color: var(--accent);
 }
 
 .ce-filter-count {

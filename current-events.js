@@ -572,15 +572,26 @@ function netflixFilterBar(allItems) {
       typeCounts[f.id]
     }</span></button>`
   ).join("");
-  const usChip = hasUs
+  const usRadios = hasUs
     ? `
-        <button type="button" class="ce-filter-chip ce-filter-us ${
-          ce.netflixUsOnly ? "is-on" : ""
-        }" data-nusonly="1" aria-pressed="${ce.netflixUsOnly}">US only <span class="ce-filter-count">${usInType}</span></button>`
+      <div class="ce-filter-region" role="radiogroup" aria-label="Region">
+        <label class="ce-filter-radio">
+          <input type="radio" name="netflix-region" value="all" ${
+            ce.netflixUsOnly ? "" : "checked"
+          } />
+          All regions
+        </label>
+        <label class="ce-filter-radio">
+          <input type="radio" name="netflix-region" value="us" ${
+            ce.netflixUsOnly ? "checked" : ""
+          } />
+          US only <span class="ce-filter-count">${usInType}</span>
+        </label>
+      </div>`
     : "";
   return `
     <div class="ce-filter" role="group" aria-label="Filter Netflix releases">
-      ${typeBar}${usChip}
+      ${typeBar}${usRadios}
     </div>`;
 }
 
@@ -624,7 +635,7 @@ function renderBody() {
     const items = briefingItems();
     const rankedBy =
       payload.source === "copilot-auto"
-        ? "Ranked by coverage, story weight, and recency. Top stories rewritten by Copilot (Claude Haiku)."
+        ? "Ranked by coverage, story weight, and recency. Top stories are summarized by Copilot AI."
         : "Ranked by coverage, story weight, and recency.";
     const runDay = fmtBriefingRunDay(payload.generatedAt || ce.briefing?.generatedAt);
     const runNote = runDay
@@ -838,11 +849,19 @@ function render() {
     });
   });
 
+  ce.root.querySelectorAll('input[name="netflix-region"]').forEach((radio) => {
+    radio.addEventListener("change", () => {
+      stopPlayback();
+      ce.netflixUsOnly = radio.value === "us";
+      window.scrollTo(0, 0);
+      render();
+    });
+  });
+
   ce.root.querySelectorAll(".ce-filter-chip").forEach((btn) => {
     btn.addEventListener("click", () => {
       stopPlayback();
       if (btn.dataset.nfilter) ce.netflixFilter = btn.dataset.nfilter;
-      if (btn.dataset.nusonly) ce.netflixUsOnly = !ce.netflixUsOnly;
       if (btn.dataset.sfilter) ce.sportFilter = btn.dataset.sfilter;
       if (btn.dataset.bfilter) {
         ce.briefingFilter = btn.dataset.bfilter;
