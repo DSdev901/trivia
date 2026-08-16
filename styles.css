@@ -2363,7 +2363,7 @@ body::after {
 .geo-map-frame .geo-marker-hit {
   fill: transparent;
   stroke: transparent;
-  stroke-width: 20;
+  stroke-width: 28;
   vector-effect: non-scaling-stroke;
   pointer-events: all;
   cursor: pointer;
@@ -2379,10 +2379,11 @@ body::after {
 }
 
 .geo-map-frame .geo-land-bg {
-  fill: #c5d4e0;
-  stroke: #e8eef4;
-  stroke-width: 0.35;
+  fill: #9eb6cc;
+  stroke: #f4f8fb;
+  stroke-width: 0.6;
   pointer-events: none;
+  vector-effect: non-scaling-stroke;
 }
 
 .geo-map-frame.is-feature-map .geo-marker {

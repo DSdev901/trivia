@@ -1,148 +1,209 @@
 {
   "id": "world-lakes",
   "name": "World: Lakes",
-  "map": "world-lakes",
+  "map": "world-countries",
+  "overlay": "markers",
   "quiz": "places",
   "items": [
+    {
+      "id": "aral",
+      "name": "Aral Sea",
+      "fact": "Once a great lake; now largely dried.",
+      "kind": "water",
+      "lat": 45,
+      "lon": 60,
+      "x": 647.8,
+      "y": 113.3
+    },
     {
       "id": "caspian",
       "name": "Caspian Sea",
       "fact": "Largest inland body of water on Earth.",
+      "kind": "water",
       "lat": 41.8,
-      "lon": 50.5
-    },
-    {
-      "id": "superior",
-      "name": "Lake Superior",
-      "fact": "Largest freshwater lake by area.",
-      "lat": 47.7,
-      "lon": -87.5
-    },
-    {
-      "id": "victoria",
-      "name": "Lake Victoria",
-      "fact": "Largest lake in Africa by area.",
-      "lat": -1,
-      "lon": 33
-    },
-    {
-      "id": "huron",
-      "name": "Lake Huron",
-      "fact": "Second-largest Great Lake by area.",
-      "lat": 44.8,
-      "lon": -82.4
-    },
-    {
-      "id": "michigan",
-      "name": "Lake Michigan",
-      "fact": "Third-largest Great Lake by area.",
-      "lat": 44,
-      "lon": -87
-    },
-    {
-      "id": "tanganyika",
-      "name": "Lake Tanganyika",
-      "fact": "Longest freshwater lake; second-deepest.",
-      "lat": -6.5,
-      "lon": 29.8
+      "lon": 50.5,
+      "x": 626.4,
+      "y": 123.3
     },
     {
       "id": "baikal",
       "name": "Lake Baikal",
       "fact": "Deepest and oldest freshwater lake.",
+      "kind": "water",
       "lat": 53.5,
-      "lon": 108
-    },
-    {
-      "id": "great-bear",
-      "name": "Great Bear Lake",
-      "fact": "Largest lake entirely in Canada.",
-      "lat": 66,
-      "lon": -121
-    },
-    {
-      "id": "malawi",
-      "name": "Lake Malawi",
-      "fact": "Also called Lake Nyasa; African Rift lake.",
-      "lat": -12,
-      "lon": 34.5
-    },
-    {
-      "id": "great-slave",
-      "name": "Great Slave Lake",
-      "fact": "Deepest lake in North America.",
-      "lat": 61.5,
-      "lon": -114
-    },
-    {
-      "id": "erie",
-      "name": "Lake Erie",
-      "fact": "Shallowest of the Great Lakes.",
-      "lat": 42.2,
-      "lon": -81.2
-    },
-    {
-      "id": "winnipeg",
-      "name": "Lake Winnipeg",
-      "fact": "Large prairie lake in Manitoba.",
-      "lat": 52.5,
-      "lon": -97.5
-    },
-    {
-      "id": "ontario",
-      "name": "Lake Ontario",
-      "fact": "Easternmost Great Lake.",
-      "lat": 43.7,
-      "lon": -77.9
-    },
-    {
-      "id": "ladoga",
-      "name": "Lake Ladoga",
-      "fact": "Largest lake in Europe.",
-      "lat": 61,
-      "lon": 31.5
+      "lon": 108,
+      "x": 753.2,
+      "y": 87.2
     },
     {
       "id": "balkhash",
       "name": "Lake Balkhash",
       "fact": "Large endorheic lake in Kazakhstan.",
+      "kind": "water",
       "lat": 46,
-      "lon": 74
-    },
-    {
-      "id": "aral",
-      "name": "Aral Sea",
-      "fact": "Once a great lake; now largely dried.",
-      "lat": 45,
-      "lon": 60
-    },
-    {
-      "id": "titicaca",
-      "name": "Lake Titicaca",
-      "fact": "Highest large navigable lake; Andes.",
-      "lat": -15.8,
-      "lon": -69.4
-    },
-    {
-      "id": "nicaragua",
-      "name": "Lake Nicaragua",
-      "fact": "Largest lake in Central America.",
-      "lat": 11.6,
-      "lon": -85.4
+      "lon": 74,
+      "x": 681.3,
+      "y": 110.2
     },
     {
       "id": "chad",
       "name": "Lake Chad",
       "fact": "Shallow African lake; size varies greatly.",
+      "kind": "water",
       "lat": 13,
-      "lon": 14
+      "lon": 14,
+      "x": 538,
+      "y": 214.9
+    },
+    {
+      "id": "erie",
+      "name": "Lake Erie",
+      "fact": "Shallowest of the Great Lakes.",
+      "kind": "water",
+      "lat": 42.2,
+      "lon": -81.2,
+      "x": 297.2,
+      "y": 122.1
+    },
+    {
+      "id": "great-bear",
+      "name": "Great Bear Lake",
+      "fact": "Largest lake entirely in Canada.",
+      "kind": "water",
+      "lat": 66,
+      "lon": -121,
+      "x": 241.8,
+      "y": 51.1
+    },
+    {
+      "id": "great-slave",
+      "name": "Great Slave Lake",
+      "fact": "Deepest lake in North America.",
+      "kind": "water",
+      "lat": 61.5,
+      "lon": -114,
+      "x": 247.6,
+      "y": 63.7
+    },
+    {
+      "id": "huron",
+      "name": "Lake Huron",
+      "fact": "Second-largest Great Lake by area.",
+      "kind": "water",
+      "lat": 44.8,
+      "lon": -82.4,
+      "x": 296.8,
+      "y": 113.9
+    },
+    {
+      "id": "ladoga",
+      "name": "Lake Ladoga",
+      "fact": "Largest lake in Europe.",
+      "kind": "water",
+      "lat": 61,
+      "lon": 31.5,
+      "x": 570,
+      "y": 65.2
+    },
+    {
+      "id": "malawi",
+      "name": "Lake Malawi",
+      "fact": "Also called Lake Nyasa; African Rift lake.",
+      "kind": "water",
+      "lat": -12,
+      "lon": 34.5,
+      "x": 593.7,
+      "y": 294
+    },
+    {
+      "id": "michigan",
+      "name": "Lake Michigan",
+      "fact": "Third-largest Great Lake by area.",
+      "kind": "water",
+      "lat": 44,
+      "lon": -87,
+      "x": 284.6,
+      "y": 116.4
+    },
+    {
+      "id": "nicaragua",
+      "name": "Lake Nicaragua",
+      "fact": "Largest lake in Central America.",
+      "kind": "water",
+      "lat": 11.6,
+      "lon": -85.4,
+      "x": 267.9,
+      "y": 219.3
+    },
+    {
+      "id": "ontario",
+      "name": "Lake Ontario",
+      "fact": "Easternmost Great Lake.",
+      "kind": "water",
+      "lat": 43.7,
+      "lon": -77.9,
+      "x": 306.8,
+      "y": 117.4
+    },
+    {
+      "id": "superior",
+      "name": "Lake Superior",
+      "fact": "Largest freshwater lake by area.",
+      "kind": "water",
+      "lat": 47.7,
+      "lon": -87.5,
+      "x": 287.5,
+      "y": 104.9
+    },
+    {
+      "id": "tanganyika",
+      "name": "Lake Tanganyika",
+      "fact": "Longest freshwater lake; second-deepest.",
+      "kind": "water",
+      "lat": -6.5,
+      "lon": 29.8,
+      "x": 581.3,
+      "y": 276.6
+    },
+    {
+      "id": "titicaca",
+      "name": "Lake Titicaca",
+      "fact": "Highest large navigable lake; Andes.",
+      "kind": "water",
+      "lat": -15.8,
+      "lon": -69.4,
+      "x": 312.4,
+      "y": 306.1
     },
     {
       "id": "tonle-sap",
       "name": "Tonlé Sap",
       "fact": "Southeast Asia’s largest freshwater lake.",
+      "kind": "water",
       "lat": 12.9,
-      "lon": 104.1
+      "lon": 104.1,
+      "x": 782.5,
+      "y": 215.2
+    },
+    {
+      "id": "victoria",
+      "name": "Lake Victoria",
+      "fact": "Largest lake in Africa by area.",
+      "kind": "water",
+      "lat": -1,
+      "lon": 33,
+      "x": 590.2,
+      "y": 259.2
+    },
+    {
+      "id": "winnipeg",
+      "name": "Lake Winnipeg",
+      "fact": "Large prairie lake in Manitoba.",
+      "kind": "water",
+      "lat": 52.5,
+      "lon": -97.5,
+      "x": 269.9,
+      "y": 90.2
     }
   ]
 }

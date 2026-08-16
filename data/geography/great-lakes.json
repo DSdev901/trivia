@@ -1,33 +1,59 @@
 {
   "id": "great-lakes",
   "name": "The Great Lakes",
-  "map": "great-lakes",
+  "map": "world-countries",
+  "overlay": "markers",
   "quiz": "places",
   "items": [
     {
       "id": "superior",
       "name": "Lake Superior",
-      "fact": "Largest freshwater lake by surface area in the world."
+      "fact": "Largest freshwater lake by surface area in the world.",
+      "kind": "water",
+      "lat": 47.7,
+      "lon": -87.5,
+      "x": 287.5,
+      "y": 104.9
     },
     {
       "id": "michigan",
       "name": "Lake Michigan",
-      "fact": "The only Great Lake entirely within the United States."
+      "fact": "The only Great Lake entirely within the United States.",
+      "kind": "water",
+      "lat": 44,
+      "lon": -87,
+      "x": 284.6,
+      "y": 116.4
     },
     {
       "id": "huron",
       "name": "Lake Huron",
-      "fact": "Includes Georgian Bay; second-largest of the Great Lakes by area."
+      "fact": "Includes Georgian Bay; second-largest of the Great Lakes by area.",
+      "kind": "water",
+      "lat": 44.8,
+      "lon": -82.4,
+      "x": 296.8,
+      "y": 113.9
     },
     {
       "id": "erie",
       "name": "Lake Erie",
-      "fact": "Shallowest of the Great Lakes and the warmest in summer."
+      "fact": "Shallowest of the Great Lakes and the warmest in summer.",
+      "kind": "water",
+      "lat": 42.2,
+      "lon": -81.2,
+      "x": 297.2,
+      "y": 122.1
     },
     {
       "id": "ontario",
       "name": "Lake Ontario",
-      "fact": "Smallest Great Lake by area; drains to the Atlantic via the St. Lawrence."
+      "fact": "Smallest Great Lake by area; drains to the Atlantic via the St. Lawrence.",
+      "kind": "water",
+      "lat": 43.7,
+      "lon": -77.9,
+      "x": 306.8,
+      "y": 117.4
     }
   ]
 }

@@ -193,6 +193,37 @@ const NA_LAKES = [
   f("woods", "Lake of the Woods", 49.1, -94.8, "Lake on the U.S.–Canada border.", "water"),
 ];
 
+const GREAT_LAKES = [
+  f("superior", "Lake Superior", 47.7, -87.5, "Largest freshwater lake by surface area in the world.", "water"),
+  f("michigan", "Lake Michigan", 44.0, -87.0, "The only Great Lake entirely within the United States.", "water"),
+  f("huron", "Lake Huron", 44.8, -82.4, "Includes Georgian Bay; second-largest of the Great Lakes by area.", "water"),
+  f("erie", "Lake Erie", 42.2, -81.2, "Shallowest of the Great Lakes and the warmest in summer.", "water"),
+  f("ontario", "Lake Ontario", 43.7, -77.9, "Smallest Great Lake by area; drains to the Atlantic via the St. Lawrence.", "water"),
+];
+
+const WORLD_LAKES = [
+  f("aral", "Aral Sea", 45.0, 60.0, "Once a great lake; now largely dried.", "water"),
+  f("caspian", "Caspian Sea", 41.8, 50.5, "Largest inland body of water on Earth.", "water"),
+  f("baikal", "Lake Baikal", 53.5, 108.0, "Deepest and oldest freshwater lake.", "water"),
+  f("balkhash", "Lake Balkhash", 46.0, 74.0, "Large endorheic lake in Kazakhstan.", "water"),
+  f("chad", "Lake Chad", 13.0, 14.0, "Shallow African lake; size varies greatly.", "water"),
+  f("erie", "Lake Erie", 42.2, -81.2, "Shallowest of the Great Lakes.", "water"),
+  f("great-bear", "Great Bear Lake", 66.0, -121.0, "Largest lake entirely in Canada.", "water"),
+  f("great-slave", "Great Slave Lake", 61.5, -114.0, "Deepest lake in North America.", "water"),
+  f("huron", "Lake Huron", 44.8, -82.4, "Second-largest Great Lake by area.", "water"),
+  f("ladoga", "Lake Ladoga", 61.0, 31.5, "Largest lake in Europe.", "water"),
+  f("malawi", "Lake Malawi", -12.0, 34.5, "Also called Lake Nyasa; African Rift lake.", "water"),
+  f("michigan", "Lake Michigan", 44.0, -87.0, "Third-largest Great Lake by area.", "water"),
+  f("nicaragua", "Lake Nicaragua", 11.6, -85.4, "Largest lake in Central America.", "water"),
+  f("ontario", "Lake Ontario", 43.7, -77.9, "Easternmost Great Lake.", "water"),
+  f("superior", "Lake Superior", 47.7, -87.5, "Largest freshwater lake by area.", "water"),
+  f("tanganyika", "Lake Tanganyika", -6.5, 29.8, "Longest freshwater lake; second-deepest.", "water"),
+  f("titicaca", "Lake Titicaca", -15.8, -69.4, "Highest large navigable lake; Andes.", "water"),
+  f("tonle-sap", "Tonlé Sap", 12.9, 104.1, "Southeast Asia’s largest freshwater lake.", "water"),
+  f("victoria", "Lake Victoria", -1.0, 33.0, "Largest lake in Africa by area.", "water"),
+  f("winnipeg", "Lake Winnipeg", 52.5, -97.5, "Large prairie lake in Manitoba.", "water"),
+];
+
 const US_RIVERS = [
   f("arkansas", "Arkansas River", 35.4, -95.0, "Major Mississippi tributary of the southern plains.", "water"),
   f("chattahoochee", "Chattahoochee River", 32.5, -85.0, "Forms part of the Georgia–Alabama border.", "water"),
@@ -457,6 +488,12 @@ const metas = [
     blurb: "Famous wonders and landmarks on the world map.",
     items: WORLD_LANDMARKS,
   }),
+  writePack("world-lakes.json", {
+    id: "world-lakes",
+    name: "World: Lakes",
+    blurb: "Major lakes — Pin them or Type their names.",
+    items: WORLD_LAKES,
+  }),
   writePack("na-physical.json", {
     id: "na-physical",
     name: "North America: Physical Features",
@@ -468,6 +505,12 @@ const metas = [
     name: "North America: Lakes",
     blurb: "The Great Lakes and other major North American lakes.",
     items: NA_LAKES,
+  }),
+  writePack("great-lakes.json", {
+    id: "great-lakes",
+    name: "The Great Lakes",
+    blurb: "Superior, Michigan, Huron, Erie, and Ontario.",
+    items: GREAT_LAKES,
   }),
   writePack("us-rivers.json", {
     id: "us-rivers",
@@ -544,8 +587,8 @@ const metas = [
 ];
 
 const byGroup = {
-  world: ["world-physical", "world-rivers", "world-landmarks"],
-  "north-america": ["na-physical", "na-lakes", "us-rivers", "us-landmarks"],
+  world: ["world-physical", "world-rivers", "world-lakes", "world-landmarks"],
+  "north-america": ["na-physical", "na-lakes", "great-lakes", "us-rivers", "us-landmarks"],
   "south-america": ["sa-physical", "sa-landmarks"],
   europe: ["europe-physical", "europe-rivers", "europe-landmarks"],
   africa: ["africa-physical", "africa-landmarks"],

@@ -17,13 +17,6 @@ function writeJson(name, data) {
   return writeFile(path.join(OUT, name), `${JSON.stringify(data, null, 2)}\n`);
 }
 
-/** Equirectangular project for BlankMap-World-ish 2754×1398. */
-function worldXY(lat, lon) {
-  const x = ((lon + 180) / 360) * 2754;
-  const y = ((90 - lat) / 180) * 1398;
-  return [Math.round(x * 10) / 10, Math.round(y * 10) / 10];
-}
-
 /** North America sports map 1000×720 (lat 14–72, lon −168…−52). */
 function naXY(lat, lon) {
   const x = ((lon - -168) / (-52 - -168)) * 1000;
@@ -77,25 +70,8 @@ const GREAT_LAKES = [
   },
 ];
 
-const greatLakesSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="100%" height="100%" role="img" aria-label="Great Lakes map">
-  <rect width="900" height="560" fill="#e8f0e4"/>
-  <path class="geo-land-bg" fill="#c5d4b8" d="M40,40 L860,40 L860,520 L40,520 Z"/>
-  <path id="superior" data-id="superior" class="geo-region geo-lake" d="M180,70 C260,40 420,35 520,70 C580,95 600,140 560,175 C500,210 380,220 280,200 C200,180 150,130 180,70 Z"/>
-  <path id="michigan" data-id="michigan" class="geo-region geo-lake" d="M300,210 C340,200 380,230 390,300 C400,380 385,450 350,470 C310,490 270,450 265,360 C260,280 270,220 300,210 Z"/>
-  <path id="huron" data-id="huron" class="geo-region geo-lake" d="M400,180 C480,150 580,160 620,210 C650,250 640,320 590,350 C520,390 440,360 410,300 C390,250 370,200 400,180 Z"/>
-  <path id="erie" data-id="erie" class="geo-region geo-lake" d="M480,400 C560,385 680,390 740,420 C760,440 740,470 680,475 C580,485 500,470 480,445 C465,425 465,410 480,400 Z"/>
-  <path id="ontario" data-id="ontario" class="geo-region geo-lake" d="M700,330 C760,315 820,330 845,365 C860,390 840,420 790,425 C740,430 700,410 690,380 C680,350 680,340 700,330 Z"/>
-</svg>
-`;
-
-await writeFile(path.join(MAPS, "great-lakes.svg"), greatLakesSvg);
-await writeJson("great-lakes.json", {
-  id: "great-lakes",
-  name: "The Great Lakes",
-  map: "great-lakes",
-  quiz: "places",
-  items: GREAT_LAKES,
-});
+// Lake packs (world-lakes, great-lakes) are written by scripts/build-geography-features.mjs
+// onto world-countries with the same border overlay as pin/study.
 
 // —— World lakes (markers on world canvas) ——
 const WORLD_LAKES = [
@@ -120,29 +96,6 @@ const WORLD_LAKES = [
   { id: "chad", name: "Lake Chad", lat: 13.0, lon: 14.0, fact: "Shallow African lake; size varies greatly." },
   { id: "tonle-sap", name: "Tonlé Sap", lat: 12.9, lon: 104.1, fact: "Southeast Asia’s largest freshwater lake." },
 ];
-
-const worldLandHint = `<path fill="#c8d5e3" opacity="0.55" d="M200,200 Q400,80 700,150 T1400,200 T2000,280 T2500,220 L2500,900 Q1800,1000 1200,950 T400,1000 Z"/>`;
-
-await writeFile(
-  path.join(MAPS, "world-lakes.svg"),
-  markersSvg([2754, 1398], worldLandHint, WORLD_LAKES, worldXY, {
-    r: 18,
-    label: "World lakes",
-  })
-);
-await writeJson("world-lakes.json", {
-  id: "world-lakes",
-  name: "World: Lakes",
-  map: "world-lakes",
-  quiz: "places",
-  items: WORLD_LAKES.map(({ id, name, fact, lat, lon }) => ({
-    id,
-    name,
-    fact,
-    lat,
-    lon,
-  })),
-});
 
 // —— Physical features ——
 const WORLD_PHYSICAL = [
@@ -470,7 +423,8 @@ const extraByGroup = {
       id: "world-lakes",
       name: "World: Lakes",
       blurb: "Major lakes — Pin them or Type their names.",
-      map: "world-lakes",
+      map: "world-countries",
+      overlay: "markers",
       quiz: "places",
       modes: ["pin", "type", "name", "choice", "study"],
       itemCount: WORLD_LAKES.length,
@@ -482,7 +436,8 @@ const extraByGroup = {
       id: "great-lakes",
       name: "The Great Lakes",
       blurb: "Superior, Michigan, Huron, Erie, and Ontario.",
-      map: "great-lakes",
+      map: "world-countries",
+      overlay: "markers",
       quiz: "places",
       modes: ["pin", "type", "name", "choice", "study"],
       itemCount: GREAT_LAKES.length,

@@ -7,8 +7,6 @@ const MAPS = {
   "continents-cartoon": "data/geography/maps/continents-cartoon.svg",
   "world-countries": "data/geography/maps/world-countries.svg",
   "us-states": "data/geography/maps/us-states.svg",
-  "great-lakes": "data/geography/maps/great-lakes.svg",
-  "world-lakes": "data/geography/maps/world-lakes.svg",
   "world-physical": "data/geography/maps/world-physical.svg",
   "na-physical": "data/geography/maps/na-physical.svg",
   "nba-teams": "data/geography/maps/nba-teams.svg",
@@ -249,6 +247,27 @@ function injectFeatureMarkers(svgText, items) {
     })
     .join("\n  ");
   return svg.replace(/<\/svg>\s*$/i, `  ${markers}\n</svg>`);
+}
+
+function ensureMarkerPins(host) {
+  const svg = host?.querySelector("svg");
+  if (!svg || svg.dataset.geoPinsWrapped === "1") return;
+  const NS = "http://www.w3.org/2000/svg";
+  svg.querySelectorAll(".geo-region.geo-marker").forEach((el) => {
+    if (el.closest(".geo-pin")) return;
+    const g = document.createElementNS(NS, "g");
+    g.setAttribute("class", "geo-pin");
+    const id = el.dataset.id || el.id;
+    if (id) g.setAttribute("data-id", id);
+    const hit = document.createElementNS(NS, "circle");
+    hit.setAttribute("class", "geo-marker-hit");
+    hit.setAttribute("cx", el.getAttribute("cx") || "0");
+    hit.setAttribute("cy", el.getAttribute("cy") || "0");
+    hit.setAttribute("r", el.getAttribute("r") || "3");
+    el.parentNode?.insertBefore(g, el);
+    g.append(hit, el);
+  });
+  svg.dataset.geoPinsWrapped = "1";
 }
 
 async function loadPack(packMeta) {
@@ -879,6 +898,7 @@ function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false, panIds = null 
 function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   const host = geo.root?.querySelector("#geo-map");
   if (!host) return;
+  ensureMarkerPins(host);
   const outline = isOutlineView() && activeId;
   const correctId = flash?.correctId ?? (flash?.ok ? flash.id : null);
   const wrongId = flash?.wrongId ?? (flash && flash.ok === false ? flash.id : null);
@@ -956,11 +976,59 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   }
 }
 
+function clientToSvgPoint(svg, clientX, clientY) {
+  try {
+    const ctm = svg.getScreenCTM();
+    if (ctm) {
+      const pt = svg.createSVGPoint();
+      pt.x = clientX;
+      pt.y = clientY;
+      const p = pt.matrixTransform(ctm.inverse());
+      if (Number.isFinite(p.x) && Number.isFinite(p.y)) return { x: p.x, y: p.y };
+    }
+  } catch {
+    /* fall through */
+  }
+  const rect = svg.getBoundingClientRect();
+  const vb = viewBoxParts(svg.getAttribute("viewBox"));
+  return {
+    x: vb.x + ((clientX - rect.left) / Math.max(rect.width, 1)) * vb.w,
+    y: vb.y + ((clientY - rect.top) / Math.max(rect.height, 1)) * vb.h,
+  };
+}
+
 function mapTargetId(e) {
-  const fromEvent = regionIdFromNode(e.target);
-  if (fromEvent) return fromEvent;
-  const hit = document.elementFromPoint(e.clientX, e.clientY);
-  return regionIdFromNode(hit);
+  const host = e.currentTarget?.closest?.("#geo-map") || geo.root?.querySelector("#geo-map");
+  const svg = host?.querySelector("svg");
+  const stacked =
+    typeof document.elementsFromPoint === "function"
+      ? document.elementsFromPoint(e.clientX, e.clientY)
+      : [e.target];
+  const ids = [];
+  const seen = new Set();
+  for (const node of stacked) {
+    if (host && node instanceof Node && !host.contains(node)) continue;
+    const id = regionIdFromNode(node);
+    if (!id || seen.has(id)) continue;
+    seen.add(id);
+    ids.push(id);
+  }
+  if (ids.length <= 1) return ids[0] || null;
+  if (!svg || !host) return ids[0];
+  const pt = clientToSvgPoint(svg, e.clientX, e.clientY);
+  if (!pt) return ids[0];
+  let best = ids[0];
+  let bestD = Infinity;
+  for (const id of ids) {
+    const a = regionAnchor(host, id);
+    if (!a) continue;
+    const d = (pt.x - a.x) ** 2 + (pt.y - a.y) ** 2;
+    if (d < bestD) {
+      bestD = d;
+      best = id;
+    }
+  }
+  return best;
 }
 
 function regionIdFromNode(node) {

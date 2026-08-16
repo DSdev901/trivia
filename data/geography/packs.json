@@ -103,7 +103,8 @@
           "id": "world-lakes",
           "name": "World: Lakes",
           "blurb": "Major lakes — Pin them or Type their names.",
-          "map": "world-lakes",
+          "map": "world-countries",
+          "overlay": "markers",
           "quiz": "places",
           "modes": [
             "pin",
@@ -312,7 +313,8 @@
           "id": "great-lakes",
           "name": "The Great Lakes",
           "blurb": "Superior, Michigan, Huron, Erie, and Ontario.",
-          "map": "great-lakes",
+          "map": "world-countries",
+          "overlay": "markers",
           "quiz": "places",
           "modes": [
             "pin",
@@ -2938,7 +2940,8 @@
       "id": "world-lakes",
       "name": "World: Lakes",
       "blurb": "Major lakes — Pin them or Type their names.",
-      "map": "world-lakes",
+      "map": "world-countries",
+      "overlay": "markers",
       "quiz": "places",
       "modes": [
         "pin",
@@ -2983,7 +2986,8 @@
       "id": "great-lakes",
       "name": "The Great Lakes",
       "blurb": "Superior, Michigan, Huron, Erie, and Ontario.",
-      "map": "great-lakes",
+      "map": "world-countries",
+      "overlay": "markers",
       "quiz": "places",
       "modes": [
         "pin",
