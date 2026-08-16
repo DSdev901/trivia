@@ -10,6 +10,7 @@
  *   Netflix       — TVMaze web schedule (series that actually aired),
  *                   whats-on-netflix + Wikipedia originals lists for titles
  *                   and dates only, TMDB for plot / cast / poster.
+ *                   Rolling 28-day (4-week) window.
  *                   US vs outside-the-US chips match Netflix Tudum's
  *                   US "New on Netflix" calendar (unknowns stay in All).
  *
@@ -39,10 +40,14 @@ const OUT_DIR = path.join(ROOT, "data", "current-events");
 const POSTER_DIR = path.join(OUT_DIR, "posters");
 const POSTER_URL_PREFIX = "data/current-events/posters";
 const WINDOW_DAYS = 21;
+const NETFLIX_WINDOW_DAYS = 28;
 
 const now = new Date();
 const windowEnd = now.toISOString().slice(0, 10);
 const windowStart = new Date(now.getTime() - WINDOW_DAYS * 86400000)
+  .toISOString()
+  .slice(0, 10);
+const netflixWindowStart = new Date(now.getTime() - NETFLIX_WINDOW_DAYS * 86400000)
   .toISOString()
   .slice(0, 10);
 
@@ -88,8 +93,8 @@ function stripTags(html) {
     .trim();
 }
 
-function inWindow(dateStr) {
-  return dateStr >= windowStart && dateStr <= windowEnd;
+function inNetflixWindow(dateStr) {
+  return dateStr >= netflixWindowStart && dateStr <= windowEnd;
 }
 
 function isoFrom(dateLike) {
@@ -381,7 +386,7 @@ function parseNetflixMonthly(html, year) {
   }
   for (let i = 0; i < headers.length; i += 1) {
     const { date, pos } = headers[i];
-    if (!inWindow(date)) continue;
+    if (!inNetflixWindow(date)) continue;
     const end = i + 1 < headers.length ? headers[i + 1].pos : html.length;
     const chunk = html.slice(pos, end);
     for (const li of chunk.matchAll(/<li>([\s\S]*?)<\/li>/g)) {
@@ -503,7 +508,7 @@ async function fetchUsNetflixCatalog() {
         ].map((m) => m[1])
       ),
     ];
-    const start = new Date(`${windowStart}T12:00:00Z`).getTime() - 8 * 86400000;
+    const start = new Date(`${netflixWindowStart}T12:00:00Z`).getTime() - 8 * 86400000;
     const end = new Date(`${windowEnd}T12:00:00Z`).getTime();
     const weekUrls = [];
     for (const href of links) {
@@ -590,7 +595,7 @@ async function fetchWikipediaProgramming() {
           }
         }
         const title = cells[0];
-        if (!date || !inWindow(date) || !title || title === "Title") continue;
+        if (!date || !inNetflixWindow(date) || !title || title === "Title") continue;
         const genre = dateIdx > 1 ? cells[1] : "";
         items.push({
           title,
@@ -622,7 +627,7 @@ async function fetchWikipediaFilms() {
     if (cells.length < 3) continue;
     const [title, dateRaw, genre] = cells;
     const date = isoFrom(dateRaw);
-    if (!date || !inWindow(date) || !title || title === "Title") continue;
+    if (!date || !inNetflixWindow(date) || !title || title === "Title") continue;
     items.push({
       title,
       type: /documentary/i.test(genre) ? "Documentary" : "Film",
@@ -888,7 +893,7 @@ function tmdbHitScore(item, hit) {
       Math.abs(Date.parse(`${idate}T12:00:00Z`) - Date.parse(`${hdate}T12:00:00Z`)) /
       86400000;
     if (Number.isFinite(days) && days <= 3) return titleScore + 4;
-    if (Number.isFinite(days) && days <= 21) return titleScore + 2;
+    if (Number.isFinite(days) && days <= NETFLIX_WINDOW_DAYS) return titleScore + 2;
     if (idate.slice(0, 4) === hdate.slice(0, 4)) return titleScore + 1;
     return 0;
   }
@@ -1263,7 +1268,7 @@ function stripHtmlBrief(html) {
  */
 async function fetchTvmazeNetflix() {
   const byShow = new Map();
-  const start = new Date(`${windowStart}T12:00:00Z`);
+  const start = new Date(`${netflixWindowStart}T12:00:00Z`);
   const end = new Date(`${windowEnd}T12:00:00Z`);
   for (let t = start.getTime(); t <= end.getTime(); t += 86400000) {
     const date = new Date(t).toISOString().slice(0, 10);
@@ -1279,7 +1284,7 @@ async function fetchTvmazeNetflix() {
         const show = ep._embedded?.show;
         if (show?.webChannel?.name !== "Netflix") continue;
         const air = isoFrom(ep.airdate || date);
-        if (!air || !inWindow(air)) continue;
+        if (!air || !inNetflixWindow(air)) continue;
         const prev = byShow.get(show.id);
         if (!prev || air < prev.date) {
           byShow.set(show.id, {
@@ -1561,7 +1566,7 @@ async function buildNetflix() {
       await readFile(path.join(OUT_DIR, "netflix.json"), "utf8")
     );
     const seeded = (prev.items || [])
-      .filter((i) => i?.title && i.date && inWindow(i.date))
+      .filter((i) => i?.title && i.date && inNetflixWindow(i.date))
       .map((i) => ({
         title: i.title,
         type: i.type || "Film",
@@ -1767,7 +1772,7 @@ async function backfillNetflixImages() {
 
 /* ---------------- write ---------------- */
 
-async function writeSection(section, items, minItems) {
+async function writeSection(section, items, minItems, win = null) {
   const file = path.join(OUT_DIR, `${section}.json`);
   if (items.length < minItems) {
     console.warn(
@@ -1778,8 +1783,8 @@ async function writeSection(section, items, minItems) {
   const payload = {
     section,
     generatedAt: now.toISOString(),
-    windowStart,
-    windowEnd,
+    windowStart: win?.start || windowStart,
+    windowEnd: win?.end || windowEnd,
     items,
   };
   await writeFile(file, `${JSON.stringify(payload, null, 2)}\n`);
@@ -1790,8 +1795,11 @@ async function writeSection(section, items, minItems) {
 async function main() {
   const onlyNetflix = process.argv.includes("--netflix");
   const onlyImages = process.argv.includes("--netflix-images");
+  const netflixWin = { start: netflixWindowStart, end: windowEnd };
   console.log(
-    `Refreshing current events (${windowStart} → ${windowEnd})…`
+    onlyNetflix || onlyImages
+      ? `Refreshing Netflix (${netflixWindowStart} → ${windowEnd})…`
+      : `Refreshing current events (${windowStart} → ${windowEnd}; Netflix ${netflixWindowStart})…`
   );
   if (onlyImages) {
     await backfillNetflixImages();
@@ -1800,7 +1808,7 @@ async function main() {
   }
   if (onlyNetflix) {
     const netflix = await buildNetflix();
-    const ok = await writeSection("netflix", netflix, 5);
+    const ok = await writeSection("netflix", netflix, 5, netflixWin);
     console.log(`Done — netflix ${ok ? "updated" : "kept"}.`);
     if (!ok) process.exitCode = 1;
     return;
@@ -1814,7 +1822,7 @@ async function main() {
     writeSection("sports", sports, 5),
     // Entertainment is published by buildEntertainment() into the 21-day archive.
     Promise.resolve(entertainment.length >= 5),
-    writeSection("netflix", netflix, 5),
+    writeSection("netflix", netflix, 5, netflixWin),
   ]);
   const ok = results.filter(Boolean).length;
   console.log(`Done — ${ok}/3 sections updated.`);

@@ -706,7 +706,7 @@ function speechPanelHtml() {
       : visibleTabs().find((s) => s.id === ce.tab)?.label || "";
   const listenHint =
     ce.mode === "netflix"
-      ? "Hear upcoming Netflix originals, newest first."
+      ? "Hear Netflix originals from the last four weeks, newest first."
       : ce.tab === "briefing"
       ? "Hear the top briefing stories, heaviest coverage first."
       : ce.tab === "feed"
@@ -777,7 +777,7 @@ function render() {
         <h2 class="section-title">${ce.mode === "netflix" ? "Netflix" : "Current Events"}</h2>
         <p class="lede">${
           ce.mode === "netflix"
-            ? "Upcoming Netflix originals. Filter by shows or movies."
+            ? "Netflix originals from the last four weeks. Filter by shows or movies."
             : "The briefing is the Tuesday ranked digest, grouped by sports and entertainment. Live feed is the rolling headlines that update every few hours."
         }</p>
       </div>
