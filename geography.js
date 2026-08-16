@@ -1233,6 +1233,12 @@ function maybeFocusTinyPlace(host, id) {
   const anchor = regionAnchor(host, id);
   geo._focusHalo = false;
   if (!svg || !anchor) return true;
+  if (geo.pack?.overlay === "markers") {
+    geo._focusHalo = true;
+    stopFocusZoom();
+    if (geo._packViewBox) svg.setAttribute("viewBox", geo._packViewBox);
+    return true;
+  }
   const packRaw = geo._packViewBox || svg.getAttribute("viewBox");
   const pack = viewBoxParts(packRaw);
   const px = placePixelSize(svg, anchor, packRaw);
