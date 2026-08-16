@@ -147,7 +147,7 @@ const WORLD_LANDMARKS = [
 
 const NA_PHYSICAL = [
   f("alaska-peninsula", "Alaska Peninsula", 56.5, -158.5, "Peninsula of southwest Alaska.", "land"),
-  f("alaska-range", "Alaska Range", 63.4, -150.5, "Range that includes Denali.", "range"),
+  f("alaska-range", "Alaska Range", 63.35, -147.2, "Range that includes Denali.", "range"),
   f("appalachians", "Appalachian Mountains", 37.0, -81.0, "Ancient range of eastern North America.", "range"),
   f("atlantic-ocean", "Atlantic Ocean", 35.0, -65.0, "Ocean off the east coast.", "water"),
   f("bering-strait", "Bering Strait", 65.8, -168.5, "Separates Alaska from Russia.", "water"),

@@ -270,6 +270,88 @@ function ensureMarkerPins(host) {
   svg.dataset.geoPinsWrapped = "1";
 }
 
+/** Nudge stacked pins apart so overlapping features stay separately tappable. */
+function spreadClosePins(host) {
+  const svg = host?.querySelector("svg");
+  if (!svg || svg.dataset.geoPinsSpread === "1") return;
+  if (!host.isConnected) return;
+  const rect = svg.getBoundingClientRect();
+  if (rect.width < 8) {
+    requestAnimationFrame(() => spreadClosePins(host));
+    return;
+  }
+  const pins = [...svg.querySelectorAll(".geo-pin")];
+  if (pins.length < 2) {
+    svg.dataset.geoPinsSpread = "1";
+    return;
+  }
+  const vb = viewBoxParts(svg.getAttribute("viewBox"));
+  const unit = vb.w / rect.width;
+  const minDist = 22 * unit;
+  const maxNudge = 28 * unit;
+  const pts = [];
+  for (const g of pins) {
+    const c = g.querySelector(".geo-region") || g.querySelector("circle");
+    if (!c) continue;
+    const x = parseFloat(c.getAttribute("cx"));
+    const y = parseFloat(c.getAttribute("cy"));
+    if (!Number.isFinite(x) || !Number.isFinite(y)) continue;
+    pts.push({
+      c,
+      hit: g.querySelector(".geo-marker-hit"),
+      x,
+      y,
+      ox: x,
+      oy: y,
+    });
+  }
+  for (let iter = 0; iter < 14; iter += 1) {
+    let moved = false;
+    for (let i = 0; i < pts.length; i += 1) {
+      for (let j = i + 1; j < pts.length; j += 1) {
+        const a = pts[i];
+        const b = pts[j];
+        let dx = b.x - a.x;
+        let dy = b.y - a.y;
+        let d = Math.hypot(dx, dy);
+        if (d < 1e-6) {
+          dx = 1;
+          dy = 0;
+          d = 1;
+        }
+        if (d >= minDist) continue;
+        const push = (minDist - d) / 2;
+        const ux = dx / d;
+        const uy = dy / d;
+        a.x -= ux * push;
+        a.y -= uy * push;
+        b.x += ux * push;
+        b.y += uy * push;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  for (const p of pts) {
+    const ndx = p.x - p.ox;
+    const ndy = p.y - p.oy;
+    const n = Math.hypot(ndx, ndy);
+    if (n > maxNudge) {
+      p.x = p.ox + (ndx / n) * maxNudge;
+      p.y = p.oy + (ndy / n) * maxNudge;
+    }
+    const x = trimNum(p.x);
+    const y = trimNum(p.y);
+    p.c.setAttribute("cx", x);
+    p.c.setAttribute("cy", y);
+    if (p.hit) {
+      p.hit.setAttribute("cx", x);
+      p.hit.setAttribute("cy", y);
+    }
+  }
+  svg.dataset.geoPinsSpread = "1";
+}
+
 async function loadPack(packMeta) {
   const res = await fetch(`data/geography/${packMeta.id}.json`);
   if (!res.ok) throw new Error(`Failed to load ${packMeta.id}`);
@@ -964,6 +1046,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   if (!outline) {
     ensureBorderOverlay(host);
     syncTinyIslandScale(host);
+    spreadClosePins(host);
   }
   if (outline) setMapLabel(host, null);
   else if (correctId) {
