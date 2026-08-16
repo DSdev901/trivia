@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-16T15:27:05.738Z",
+  "generatedAt": "2026-08-16T16:28:50.218Z",
   "retentionDays": 21,
-  "windowStart": "2026-07-26T15:27:05.738Z",
-  "windowEnd": "2026-08-16T15:27:05.738Z",
+  "windowStart": "2026-07-26T16:28:50.218Z",
+  "windowEnd": "2026-08-16T16:28:50.218Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,74 @@
     "Tennis",
     "MMA"
   ],
-  "count": 1156,
+  "count": 1158,
   "items": [
+    {
+      "key": "49629221",
+      "id": "49629221",
+      "headline": "Red Sox place Masataka Yoshida on IL with hamstring strain",
+      "summary": "The Red Sox placed Masataka Yoshida on the 10-day IL because of a left hamstring strain.",
+      "url": "https://www.espn.com/mlb/story/_/id/49629221/red-sox-place-masataka-yoshida-il-hamstring-strain",
+      "sport": "MLB",
+      "published": "2026-08-16T16:13:18.000Z",
+      "firstSeen": "2026-08-16T16:28:50.218Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49629286",
+      "id": "49629286",
+      "headline": "Braves recall Ray Kerr, designate Danny Young for assignment",
+      "summary": "The Braves have recalled left-handed reliever Ray Kerr and designated Danny Young for assignment.",
+      "url": "https://www.espn.com/mlb/story/_/id/49629286/braves-recall-ray-kerr-designate-danny-young-assignment",
+      "sport": "MLB",
+      "published": "2026-08-16T15:54:49.000Z",
+      "firstSeen": "2026-08-16T16:28:50.218Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49623285",
+      "id": "49623285",
+      "headline": "Red Sox DH Masataka Yoshida exits with hamstring tightness",
+      "summary": "Boston Red Sox designated hitter Masataka Yoshida left Saturday's game against the Pittsburgh Pirates with left hamstring tightness.",
+      "url": "https://www.espn.com/mlb/story/_/id/49623285/red-sox-dh-masataka-yoshida-exits-hamstring-tightness",
+      "sport": "MLB",
+      "published": "2026-08-16T15:42:25.000Z",
+      "firstSeen": "2026-08-16T03:34:19.324Z",
+      "bestRank": 16
+    },
+    {
+      "key": "49628873",
+      "id": "49628873",
+      "headline": "Commanders QB Marcus Mariota has sprained MCL, sources say",
+      "summary": "Commanders quarterback Marcus Mariota suffered a sprained MCL that is likely to sideline him for the remainder of the preseason, sources told ESPN.",
+      "url": "https://www.espn.com/nfl/story/_/id/49628873/commanders-qb-marcus-mariota-sprained-mcl-sources-say",
+      "sport": "NFL",
+      "published": "2026-08-16T15:36:54.000Z",
+      "firstSeen": "2026-08-16T16:28:50.218Z",
+      "bestRank": 1
+    },
+    {
+      "key": "40699880",
+      "id": "40699880",
+      "headline": "Fantasy football buzz: Jaxson Dart's risk and reward both on display Saturday",
+      "summary": "With Chuba Hubbard nursing a hamstring injury, 2024 second-rounder Jonathon Brooks has a chance to show what he can do.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "sport": "NFL",
+      "published": "2026-08-16T15:36:46.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49621752",
+      "id": "49621752",
+      "headline": "Mets troll Jayden Daniels over LSU NIL dispute",
+      "summary": "The team is the latest to poke fun at Daniels over his jersey number dispute with his alma mater, LSU.",
+      "url": "https://www.espn.com/mlb/story/_/id/49621752/new-york-mets-jayden-daniels-no-5-jersey-washington-commanders-lsu-tigers",
+      "sport": "MLB",
+      "published": "2026-08-16T14:53:49.000Z",
+      "firstSeen": "2026-08-16T00:30:32.224Z",
+      "bestRank": 1
+    },
     {
       "key": "49621570",
       "id": "49621570",
@@ -154,6 +220,17 @@
       "published": "2026-08-16T11:29:46.000Z",
       "firstSeen": "2026-08-16T12:28:56.476Z",
       "bestRank": 2
+    },
+    {
+      "key": "49623875",
+      "id": "49623875",
+      "headline": "Basketball HOF class of 2026 honors women's hoops, NBA icons",
+      "summary": "Candace Parker and Elena Delle Donne headlined a 2026 Hall of Fame class that honored women's hoops, as well as NBA luminaries such as Doc Rivers, Mike D'Antoni and Amar'e Stoudemire.",
+      "url": "https://www.espn.com/espn/story/_/id/49623875/basketball-hof-class-2026-honors-women-hoops-nba-icons",
+      "sport": "WNBA",
+      "published": "2026-08-16T11:21:36.000Z",
+      "firstSeen": "2026-08-16T03:34:19.324Z",
+      "bestRank": 1
     },
     {
       "key": "49619516",
@@ -354,28 +431,6 @@
       "bestRank": 1
     },
     {
-      "key": "49625523",
-      "id": "49625523",
-      "headline": "UFC 330 takeaways: Makhachev extends legacy; Dern tees up next matchup",
-      "summary": "Islam Makhachev and Mackenzie Dern picked up dominant title defenses to close out the UFC 330 main card.",
-      "url": "https://www.espn.com/mma/story/_/id/49625523/makhachev-extends-legacy-dern-tees-next-matchup",
-      "sport": "MMA",
-      "published": "2026-08-16T07:13:23.000Z",
-      "firstSeen": "2026-08-16T06:29:27.265Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49591854",
-      "id": "49591854",
-      "headline": "UFC 330 results and analysis from Makhachev's record-setting victory",
-      "summary": "Brett Okamoto and Dre Waters break down all the action from UFC 330 at Xfinity Mobile Arena in Philly.",
-      "url": "https://www.espn.com/mma/story/_/id/49591854/ufc-330-live-results-analysis-islam-makhachev-vs-ian-machado-garry-mackenzie-dern-vs-gillian-robertson",
-      "sport": "MMA",
-      "published": "2026-08-16T06:51:35.000Z",
-      "firstSeen": "2026-08-16T03:34:19.324Z",
-      "bestRank": 1
-    },
-    {
       "key": "49154575",
       "id": "49154575",
       "headline": "Premier League preseason friendlies 2026-27: Fixtures, UK kick-off times and summer tour schedule",
@@ -409,17 +464,6 @@
       "bestRank": 1
     },
     {
-      "key": "49409520",
-      "id": "49409520",
-      "headline": "Dutch Grand Prix 2026: Race start time, how to watch, full schedule, predictions",
-      "summary": "Formula 1 is back and it's taking place in the sand dunes of Zandvoort at the Dutch Grand Prix.",
-      "url": "https://www.espn.com/f1/story/_/id/49409520/dutch-grand-prix-2026-circuit-zandvoort-race-f1-start-s-how-watch-schedule-usa-tv-channel-live-stream-predictions-results",
-      "sport": "F1",
-      "published": "2026-08-16T06:41:39.000Z",
-      "firstSeen": "2026-08-14T15:15:56.143Z",
-      "bestRank": 1
-    },
-    {
       "key": "49623511",
       "id": "49623511",
       "headline": "Messi has 3rd straight penalty miss as Nashville routs Miami",
@@ -440,6 +484,28 @@
       "published": "2026-08-16T06:35:57.000Z",
       "firstSeen": "2026-08-16T15:27:05.738Z",
       "bestRank": 3
+    },
+    {
+      "key": "49625523",
+      "id": "49625523",
+      "headline": "UFC 330 takeaways: Makhachev extends legacy; Dern tees up next matchup",
+      "summary": "Islam Makhachev and Mackenzie Dern picked up dominant title defenses to close out the UFC 330 main card.",
+      "url": "https://www.espn.com/mma/story/_/id/49625523/makhachev-extends-legacy-dern-tees-next-matchup",
+      "sport": "MMA",
+      "published": "2026-08-16T06:27:44.000Z",
+      "firstSeen": "2026-08-16T06:29:27.265Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49591854",
+      "id": "49591854",
+      "headline": "UFC 330 results and analysis from Makhachev's record-setting victory",
+      "summary": "Brett Okamoto and Dre Waters break down all the action from UFC 330 at Xfinity Mobile Arena in Philly.",
+      "url": "https://www.espn.com/mma/story/_/id/49591854/ufc-330-live-results-analysis-islam-makhachev-vs-ian-machado-garry-mackenzie-dern-vs-gillian-robertson",
+      "sport": "MMA",
+      "published": "2026-08-16T06:22:27.000Z",
+      "firstSeen": "2026-08-16T03:34:19.324Z",
+      "bestRank": 1
     },
     {
       "key": "49625723",
@@ -517,17 +583,6 @@
       "published": "2026-08-16T04:31:06.000Z",
       "firstSeen": "2026-08-16T06:29:27.265Z",
       "bestRank": 4
-    },
-    {
-      "key": "49623285",
-      "id": "49623285",
-      "headline": "Red Sox DH Masataka Yoshida exits with hamstring tightness",
-      "summary": "Boston Red Sox designated hitter Masataka Yoshida left Saturday's game against the Pittsburgh Pirates with left hamstring tightness.",
-      "url": "https://www.espn.com/mlb/story/_/id/49623285/red-sox-dh-masataka-yoshida-exits-hamstring-tightness",
-      "sport": "MLB",
-      "published": "2026-08-16T04:26:57.000Z",
-      "firstSeen": "2026-08-16T03:34:19.324Z",
-      "bestRank": 16
     },
     {
       "key": "49624982",
@@ -648,17 +703,6 @@
       "sport": "Soccer",
       "published": "2026-08-16T03:22:51.000Z",
       "firstSeen": "2026-08-16T06:29:27.265Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49623875",
-      "id": "49623875",
-      "headline": "Basketball HOF class of 2026 honors women's hoops, NBA icons",
-      "summary": "Candace Parker and Elena Delle Donne headlined a 2026 Hall of Fame class that honored women's hoops, as well as NBA luminaries such as Doc Rivers, Mike D'Antoni and Amar'e Stoudemire.",
-      "url": "https://www.espn.com/espn/story/_/id/49623875/basketball-hof-class-2026-honors-women-hoops-nba-icons",
-      "sport": "Women's college basketball",
-      "published": "2026-08-16T03:15:39.000Z",
-      "firstSeen": "2026-08-16T03:34:19.324Z",
       "bestRank": 1
     },
     {
@@ -1012,17 +1056,6 @@
       "published": "2026-08-16T00:49:39.000Z",
       "firstSeen": "2026-08-16T06:29:27.265Z",
       "bestRank": 7
-    },
-    {
-      "key": "49621752",
-      "id": "49621752",
-      "headline": "Mets troll Jayden Daniels over LSU NIL dispute",
-      "summary": "The team is the latest to poke fun at Daniels over his jersey number dispute with his alma mater, LSU.",
-      "url": "https://www.espn.com/mlb/story/_/id/49621752/new-york-mets-jayden-daniels-no-5-jersey-washington-commanders-lsu-tigers",
-      "sport": "College football",
-      "published": "2026-08-16T00:47:12.000Z",
-      "firstSeen": "2026-08-16T00:30:32.224Z",
-      "bestRank": 1
     },
     {
       "key": "49622047",
@@ -1652,17 +1685,6 @@
       "bestRank": 9
     },
     {
-      "key": "40699880",
-      "id": "40699880",
-      "headline": "Fantasy football buzz: Jonah Coleman's stock rising and more takeaways from Friday",
-      "summary": "With Chuba Hubbard nursing a hamstring injury, 2024 second-rounder Jonathon Brooks has a chance to show what he can do.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "sport": "NFL",
-      "published": "2026-08-15T13:36:49.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
-    },
-    {
       "key": "48677635",
       "id": "48677635",
       "headline": "2026 Fantasy Football Draft Guide: Rankings, mock drafts and analysis",
@@ -2012,6 +2034,17 @@
       "sport": "NFL",
       "published": "2026-08-15T06:56:11.000Z",
       "firstSeen": "2026-08-15T09:27:43.468Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49409520",
+      "id": "49409520",
+      "headline": "Dutch Grand Prix 2026: Race start time, how to watch, full schedule, predictions",
+      "summary": "Formula 1 is back and it's taking place in the sand dunes of Zandvoort at the Dutch Grand Prix.",
+      "url": "https://www.espn.com/f1/story/_/id/49409520/dutch-grand-prix-2026-circuit-zandvoort-race-f1-start-s-how-watch-schedule-usa-tv-channel-live-stream-predictions-results",
+      "sport": "F1",
+      "published": "2026-08-15T06:46:05.000Z",
+      "firstSeen": "2026-08-14T15:15:56.143Z",
       "bestRank": 1
     },
     {
@@ -3329,7 +3362,7 @@
       "headline": "Hidalgo, Strong among NCAA players inking NIL deals with Unrivaled",
       "summary": "Women's college basketball stars Hannah Hidalgo, Sarah Strong and Madison Booker are among a notable group of NCAA players signing NIL deals with Unrivaled.",
       "url": "https://www.espn.com/womens-college-basketball/story/_/id/49609172/hidalgo-strong-ncaa-players-inking-nil-deals-unrivaled",
-      "sport": "Women's college basketball",
+      "sport": "WNBA",
       "published": "2026-08-14T13:54:23.000Z",
       "firstSeen": "2026-08-14T15:26:38.251Z",
       "bestRank": 1
@@ -5738,7 +5771,7 @@
       "headline": "Diana Taurasi tales: Untold stories about retired WNBA legend",
       "summary": "\"We got Diana\" ... and you don't forget a legend like that. Here's a look at Diana Taurasi from teammates who knew her best.",
       "url": "https://www.espn.com/wnba/story/_/id/41444903/diana-taurasi-retires-wnba-legend-phoenix-mercury-uconn-huskies",
-      "sport": "Women's college basketball",
+      "sport": "WNBA",
       "published": "2026-08-13T11:02:53.000Z",
       "firstSeen": "2026-08-13T15:37:22.626Z",
       "bestRank": 1
@@ -6761,7 +6794,7 @@
       "headline": "Reports: Sankey reminds SEC schools to follow eligibility rules",
       "summary": "Commissioner Greg Sankey sent a memo to SEC members reminding them to move carefully when adding players suddenly allowed by court rulings to seek a fifth year of eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49593224/reports-sankey-reminds-sec-schools-follow-eligibility-rules",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-12T21:10:17.000Z",
       "firstSeen": "2026-08-13T03:59:55.296Z",
       "bestRank": 1
@@ -9038,7 +9071,7 @@
       "headline": "NCAA and FBI announce partnership to combat athlete sexploitation",
       "summary": "As college athletes become bigger targets for sexual exploitation online, the NCAA and FBI announced a partnership Monday to educate athletes on how to prevent private images from falling into the wrong hands.",
       "url": "https://www.espn.com/college-sports/story/_/id/49555079/ncaa-fbi-announce-partnership-combat-athlete-sexploitation",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-10T17:55:54.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 2
@@ -9984,7 +10017,7 @@
       "headline": "Senate vote on college sports bill now slated for September",
       "summary": "The Protect College Sports Act failed to reach a vote during an all-night, pre-recess session in the Senate, though the bill did gain a spot on next month's calendar after the chamber comes back from its summer break.",
       "url": "https://www.espn.com/college-sports/story/_/id/49560859/senate-vote-college-sports-bill-slated-september",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-08T16:30:20.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
@@ -10237,7 +10270,7 @@
       "headline": "New Purdue AD admits dig at Indiana was immediate error",
       "summary": "New Purdue athletic director Tommy McClelland is owning that an attempted one-liner at the expense of Indiana was a mistake \"the second it left my mouth.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49554744/new-purdue-ad-admits-dig-indiana-was-immediate-error",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-07T18:47:59.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 3
@@ -10336,7 +10369,7 @@
       "headline": "Mrs. Met, Goldy headline inductions into the Mascot Hall of Fame",
       "summary": "The announcement was made Friday morning on \"Good Morning America,\" with the five mascots on site to receive the news.",
       "url": "https://www.espn.com/mlb/story/_/id/49546890/mascot-hall-fame-inductions-class-2026",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-07T15:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 4
@@ -10798,7 +10831,7 @@
       "headline": "NCAA Division II votes to approve age-based eligibility model",
       "summary": "NCAA Division II will move to the age-based eligibility model that has prompted athlete lawsuits across the country since it was adopted in Division I.",
       "url": "https://www.espn.com/college-sports/story/_/id/49545296/ncaa-division-ii-votes-approve-age-based-eligibility-model",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-06T14:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 5
@@ -10930,7 +10963,7 @@
       "headline": "LSU officials meet with top donors about proposed sports funding plan",
       "summary": "LSU has completed a series of two meetings with top donors to outline what university President Wade Rousse has billed as a \"first of its kind\" revenue-generating proposal for athletics.",
       "url": "https://www.espn.com/college-sports/story/_/id/49542287/lsu-officials-meet-top-donors-proposed-sports-funding-plan",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-06T04:29:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 6
@@ -11106,7 +11139,7 @@
       "headline": "Purdue hires longtime AD Tommy McClelland from Rice",
       "summary": "Purdue has hired Rice athletic director Tommy McClelland as athletic director.",
       "url": "https://www.espn.com/college-sports/story/_/id/49525796/tommy-mcclelland-primary-target-purdue-ad-job-sources-say",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-05T16:48:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 9
@@ -11194,7 +11227,7 @@
       "headline": "Pac-12, MWC finalize settlement over 'poaching,' exit fees",
       "summary": "The Pac-12 and Mountain West have finalized a settlement over \"poaching\" and exit fees ahead of a number of former MWC schools heading to the Pac-12.",
       "url": "https://www.espn.com/college-sports/story/_/id/49535459/pac-12-mwc-finalize-settlement-poaching-exit-fees",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-05T11:31:11.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 7
@@ -11315,7 +11348,7 @@
       "headline": "MEAC signs commissioner Sonja Stills to 5-year extension through '31",
       "summary": "The Mid-Eastern Athletic Conference has signed Commissioner Sonja Stills to a five-year contract extension through 2031.",
       "url": "https://www.espn.com/college-sports/story/_/id/49532583/meac-signs-commissioner-sonja-stills-5-year-extension-2031",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-04T23:55:04.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 8
@@ -11953,7 +11986,7 @@
       "headline": "Sources: Former MLB executive Tim Brosnan to head Big East",
       "summary": "The Big East is expected to hire former MLB executive Tim Brosnan as the league's next commissioner, sources told ESPN.",
       "url": "https://www.espn.com/college-sports/story/_/id/49507446/source-former-mlb-executive-tim-brosnan-head-big-east",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T22:17:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 10
@@ -11975,7 +12008,7 @@
       "headline": "Judge grants injunction for Class of '22 athletes seeking 5th NCAA season",
       "summary": "A federal court dealt a major blow to the NCAA's new eligibility rule when it ruled that all high school class of 2022 athletes who exhausted their fourth season of college eligibility this spring are eligible for a fifth season in 2026-27.",
       "url": "https://www.espn.com/college-football/story/_/id/49501415/judge-grants-injunction-class-22-athletes-seeking-play-5th-ncaa-season",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T12:46:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 12
@@ -11986,7 +12019,7 @@
       "headline": "Big Ten, SEC support college sports bill, reviving Senate chances",
       "summary": "The Big Ten and SEC have agreed to support a Senate bill that seeks to regulate college sports.",
       "url": "https://www.espn.com/college-sports/story/_/id/49501752/big-ten-sec-support-college-sports-bill-reviving-senate-chances",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T12:38:24.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 11
@@ -11997,7 +12030,7 @@
       "headline": "FAU hires Josh McCowan as athletic director",
       "summary": "Josh McCowan was hired as Florida Atlantic vice president and athletic director.",
       "url": "https://www.espn.com/college-football/story/_/id/49498431/fau-hires-josh-mccowan-athletic-director-vice-president",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-01T11:04:41.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 13
@@ -12184,7 +12217,7 @@
       "headline": "Senate adjourns without scheduling vote Protect College Sports Act",
       "summary": "The U.S. Senate adjourned for the week Thursday without scheduling a vote for the Protect College Sports Act, a bill aimed at reforming college sports.",
       "url": "https://www.espn.com/college-sports/story/_/id/49491567/senate-adjourns-scheduling-vote-protect-college-sports-act",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-07-30T23:07:59.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 17
@@ -12404,7 +12437,7 @@
       "headline": "Sources: Notre Dame passes Ohio State for richest patch deal",
       "summary": "Notre Dame has reached a multiyear deal with SoFi Technologies that will place the financial service company's brand on the Fighting Irish's jerseys in every sport starting this season, the university announced Tuesday.",
       "url": "https://www.espn.com/college-football/story/_/id/49471461/notre-dame-passes-ohio-state-richest-patch-deal",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-07-28T18:03:40.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 19
@@ -12415,7 +12448,7 @@
       "headline": "Ohio State, JPMorganChase reach lucrative jersey patch deal",
       "summary": "Ohio State is entering a partnership with JPMorganChase that includes jersey patches for all 36 teams and will yield nearly $17 million per year for the athletic program.",
       "url": "https://www.espn.com/college-sports/story/_/id/49469951/ohio-state-jpmorganchase-reach-lucrative-jersey-patch-deal",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-07-28T17:46:29.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 20
@@ -12547,7 +12580,7 @@
       "headline": "Report: Michigan AD Warde Manuel to get $7M in departure deal",
       "summary": "Departing Michigan athletic director Warde Manuel will receive a $7 million lump sum payment as part of his separation deal, according to a document obtained Monday by The Associated Press.",
       "url": "https://www.espn.com/college-football/story/_/id/49462328/michigan-ad-warde-manuel-get-7m-departure-deal",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-07-27T14:36:43.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 23
@@ -12727,17 +12760,6 @@
       "published": "2026-07-26T16:54:12.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 24
-    },
-    {
-      "key": "49436081",
-      "id": "49436081",
-      "headline": "Ben Kohles fires 62 to take 3M Open lead; Scottie Scheffler 3 shots back",
-      "summary": "Ben Kohles eagled the final hole for a 9-under 62 and a two-shot lead Thursday after the first round of the 3M Open, leaving top-ranked Scottie Scheffler three shots back.",
-      "url": "https://www.espn.com/golf/story/_/id/49436081/ben-kohles-shoots-62-take-3m-open-lead-scottie-scheffler-3-shots-back",
-      "sport": "Golf",
-      "published": "2026-07-26T16:23:53.000Z",
-      "firstSeen": "2026-08-14T12:31:41.741Z",
-      "bestRank": 34
     }
   ]
 }
