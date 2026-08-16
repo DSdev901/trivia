@@ -168,7 +168,7 @@ const HIGH_WEIGHT = [
   [/\b(record-breaking|breaks? (?:a |the )?record|fastest .+ to|highest-grossing|milestone|surpass(?:es|ed)?)\b/i, 28],
   [/\b(retir(?:e|ed|es|ement)|steps? away)\b/i, 24],
   [/\b(sentenced|indicted|lawsuit|sued|prison|solitary|fraud|defraud)\b/i, 24],
-  [/\b(super bowl|world series|world cup|nba finals|stanley cup|championship game)\b/i, 30],
+  [/\b(super bowl|world series|world cup|nba finals|stanley cup|championship game|march madness|us open|wimbledon|french open|australian open|the masters|pga championship|ryder cup)\b/i, 30],
   [/\b(tommy john|season-ending|out for (?:the )?season|acl|achilles)\b/i, 22],
   [/\b(traded? to|sign(?:s|ed)? (?:a )?(?:max |supermax |\$))/i, 16],
   [/\b(impeach|elected|inaugur|executive order|white house)\b/i, 20],
@@ -177,19 +177,30 @@ const HIGH_WEIGHT = [
 
 const LOW_WEIGHT = [
   [/\boffseason recap|season preview|betting preview\b/i, 28],
-  [/\btransfer rumors?\b/i, 20],
+  [/\btransfer (?:rumors?|window)\b/i, 20],
   [/\btracker:\b/i, 22],
   [/\bhighlights?:|best shots\b/i, 18],
   [/\bhow to watch|what to watch|where to watch\b/i, 22],
   [/\brumors?, news\b/i, 16],
-  [/\bstandouts, questions for all\b/i, 18],
-  [/\bunder-the-radar\b/i, 10],
-  [/\bsocial media for the .+ schedule\b/i, 16],
-  [/\bbraless|sheer (?:lace|dress)|red carpet|what she wore\b/i, 32],
+  [/\bred carpet|what she wore\b/i, 32],
   [/\band more\b|\bmore top stories\b/i, 22],
-  [/\baudience up\b/i, 14],
-  [/\bstock (?:award|grant|bonus)|beneficiary of \$\d/i, 16],
 ];
+
+const US_SPORT_TAGS = new Set([
+  "NFL",
+  "NBA",
+  "MLB",
+  "NHL",
+  "WNBA",
+  "NASCAR",
+  "College football",
+  "College basketball",
+  "Women's college basketball",
+]);
+
+const OVERSEAS_SPORT_TAGS = new Set(["Soccer", "F1", "Tennis", "Golf"]);
+
+const US_SOCCER_RE = /\b(mls|nwsl|usmnt|uswnt|u\.s\. soccer|usa soccer)\b/i;
 
 const RECAP_HEADLINE =
   /\b(?:beat|beats|beat|down|rout(?:s)?|hold off|shuts? out|win over|victory over)\b.+\b\d+-\d+\b|\b\d+-\d+\b.+\b(?:win|victory|loss)\b/i;
@@ -411,7 +422,6 @@ function listiclePenalty(headline) {
   if (/\b\d+\s+things you (?:need to |should )?know\b/i.test(h)) n += 20;
   if (/\bwhat we learned\b/i.test(h)) n += 14;
   if (/\b(?:questions|takeaways) for\b/i.test(h)) n += 12;
-  if (/\(EXCL|\bEXCLUSIVE\b/i.test(h)) n += 8;
   return n;
 }
 
@@ -419,11 +429,38 @@ function recapUrl(url) {
   return /\/recap(?:\?|$)|gameId=/i.test(String(url || ""));
 }
 
+function hasTriviaHook(text) {
+  return HIGH_WEIGHT.some(([re]) => re.test(text));
+}
+
+/** US trivia desk: boost US leagues; demote overseas sports as a class. */
+function sportsAudienceAdjust(item, text) {
+  const tag = item.tag || "";
+  if (item.section === "entertainment") return 0;
+  let n = 0;
+  if (US_SPORT_TAGS.has(tag)) n += 12;
+  if (tag === "MMA") n += 4;
+  if (OVERSEAS_SPORT_TAGS.has(tag)) {
+    if (tag === "Soccer" && US_SOCCER_RE.test(text)) n += 10;
+    else n -= 14;
+  }
+  return n;
+}
+
+function shouldDampenCoverage(item) {
+  const tag = item.tag || "";
+  if (!OVERSEAS_SPORT_TAGS.has(tag)) return false;
+  const text = `${item.headline} ${item.summary}`;
+  if (tag === "Soccer" && US_SOCCER_RE.test(text)) return false;
+  if (hasTriviaHook(text)) return false;
+  return true;
+}
+
 function storyWeight(item, now = Date.now()) {
   const text = `${item.headline} ${item.summary}`;
   let score = 12;
   if (item.top) score += 6;
-  if (item.tag === "Milestone" && !/\bbirthday|braless|red carpet\b/i.test(text)) {
+  if (item.tag === "Milestone" && !/\bbirthday|red carpet\b/i.test(text)) {
     score += 26;
   }
   if (item.section === "netflix") score -= 8;
@@ -436,6 +473,7 @@ function storyWeight(item, now = Date.now()) {
   for (const [re, pts] of LOW_WEIGHT) {
     if (re.test(text)) score -= pts;
   }
+  score += sportsAudienceAdjust(item, text);
   if (RECAP_HEADLINE.test(item.headline) || recapUrl(item.url)) score -= 30;
   if (/\b(offseason recap|early .+ season preview)\b/i.test(item.headline)) score -= 12;
   if ((item.summary || "").length < 60) score -= 4;
@@ -446,7 +484,8 @@ function storyWeight(item, now = Date.now()) {
 }
 
 function clusterRankScore(item, now = Date.now()) {
-  const coverage = Math.max(1, Number(item.coverage) || 1);
+  let coverage = Math.max(1, Number(item.coverage) || 1);
+  if (shouldDampenCoverage(item)) coverage = Math.min(coverage, 3);
   const quality = Number(item.quality ?? item.score) || 0;
   const mention = 26 * Math.log2(coverage + 1);
   return (
@@ -454,6 +493,22 @@ function clusterRankScore(item, now = Date.now()) {
     mention +
     recencyPoints(item.date, now, 22, 1.35)
   );
+}
+
+function sortByClusterRank(items, now = Date.now()) {
+  return [...items].sort(
+    (a, b) =>
+      clusterRankScore(b, now) - clusterRankScore(a, now) ||
+      (b.coverage || 1) - (a.coverage || 1) ||
+      (b.date || "").localeCompare(a.date || "") ||
+      a.headline.localeCompare(b.headline)
+  );
+}
+
+/** Re-score and sort already-clustered briefing cards (keeps Copilot copy). */
+export function rankBriefingItems(items, now = Date.now()) {
+  for (const item of items) storyWeight(item, now);
+  return sortByClusterRank(items, now);
 }
 
 const CLUSTER_STOP = new Set([
@@ -633,6 +688,10 @@ function daysApart(a, b) {
 const EVENT_CUES = [
   [/\bretir(?:e|es|ed|ing|ement)\b/i, "retire"],
   [/\b(dies?|died|dead at|passes away|passed away|death of)\b/i, "death"],
+  [
+    /\b(record-breaking|breaks? (?:a |the )?record|sets? (?:a |the )?(?:new )?record)\b/i,
+    "record",
+  ],
   [/\b(traded?|trade to|acquires?|acquired)\b/i, "trade"],
   [
     /\b(fired?|dismissed|ousted|steps? down|resign(?:s|ed|ation)?|leaves? (?:the )?(?:job|role|team))\b/i,
@@ -1037,21 +1096,14 @@ function collectItems(data) {
 
 /**
  * Rank clustered current-events headlines. Related stories are merged.
- * Rank blends how often a story was mentioned, story weight, and recency
- * so a fresh milestone can outrank an older pile of recaps.
+ * Rank blends coverage, story weight, recency, and a US-trivia audience prior
+ * so Premier League club chatter does not outrank NFL/NBA/MLB news.
  * `data` is { sports, entertainment } payloads from the JSON feeds.
  */
 export function buildBriefing(data, now = Date.now()) {
   const items = collectItems(data);
   for (const item of items) item.score = storyWeight(item, now);
-  const clustered = clusterStories(items);
-  clustered.sort(
-    (a, b) =>
-      clusterRankScore(b, now) - clusterRankScore(a, now) ||
-      (b.coverage || 1) - (a.coverage || 1) ||
-      (b.date || "").localeCompare(a.date || "") ||
-      a.headline.localeCompare(b.headline)
-  );
+  const clustered = sortByClusterRank(clusterStories(items), now);
   const windows = [data.sports, data.entertainment]
     .filter(Boolean)
     .map((d) => [d.windowStart, d.windowEnd]);

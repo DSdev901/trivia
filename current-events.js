@@ -30,8 +30,8 @@ const NETFLIX_SECTION = {
 function visibleTabs() {
   if (ce.mode === "netflix") return [];
   return [
-    { id: "feed", label: "Live feed" },
     { id: "briefing", label: "Briefing" },
+    { id: "feed", label: "Live feed" },
   ];
 }
 const BRIEFING_FILTERS = [
