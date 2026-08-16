@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-16T17:14:45.458Z",
+  "generatedAt": "2026-08-16T17:41:08.640Z",
   "retentionDays": 21,
-  "windowStart": "2026-07-26T17:14:45.458Z",
-  "windowEnd": "2026-08-16T17:14:45.458Z",
+  "windowStart": "2026-07-26T17:41:08.640Z",
+  "windowEnd": "2026-08-16T17:41:08.640Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,74 @@
     "Tennis",
     "MMA"
   ],
-  "count": 1159,
+  "count": 1160,
   "items": [
+    {
+      "key": "49629825",
+      "id": "49629825",
+      "headline": "Yankees' Cody Bellinger to begin rehab assignment Tuesday",
+      "summary": "Outfielder Cody Bellinger, who hasn't played since July 26 due to a hamstring injury, will begin a rehab assignment Tuesday and could rejoin the Yankees next weekend.",
+      "url": "https://www.espn.com/mlb/story/_/id/49629825/yankees-cody-bellinger-begin-rehab-assignment-tuesday",
+      "sport": "MLB",
+      "published": "2026-08-16T17:36:56.000Z",
+      "firstSeen": "2026-08-16T17:41:08.640Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49624578",
+      "id": "49624578",
+      "headline": "Randle El takes over playcalling, sparking Bears' 24-0 run",
+      "summary": "Bears assistant head coach Antwaan Randle El took over playcalling duties for the second half of the preseason opener against the Browns, helping Chicago score 24 unanswered points in the 34-10 win.",
+      "url": "https://www.espn.com/nfl/story/_/id/49624578/randle-el-takes-play-calling-sparking-bears-24-0-run",
+      "sport": "NFL",
+      "published": "2026-08-16T17:16:34.000Z",
+      "firstSeen": "2026-08-16T06:29:27.265Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49611879",
+      "id": "49611879",
+      "headline": "BYU's Kalani Sitake, a favorite coach, on the verge of the CFP",
+      "summary": "The ever-friendly coach nearly left his alma mater for Penn State. But now, doing it his way, he's trying to reach new heights.",
+      "url": "https://www.espn.com/college-football/story/_/id/49611879/college-football-2026-byu-cougars-kalani-sitake-cfp",
+      "sport": "College football",
+      "published": "2026-08-16T17:13:01.000Z",
+      "firstSeen": "2026-08-16T12:28:56.476Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49624712",
+      "id": "49624712",
+      "headline": "Cleveland Guardians secure franchise's 10,000th victory",
+      "summary": "The Cleveland Guardians, an organization founded in 1901, became the third American League franchise to reach 10,000 victories with a 6-1 win over the San Diego Padres at Progressive Field on Saturday night.",
+      "url": "https://www.espn.com/mlb/story/_/id/49624712/cleveland-guardians-secure-franchise-10000th-victory",
+      "sport": "MLB",
+      "published": "2026-08-16T17:08:25.000Z",
+      "firstSeen": "2026-08-16T06:29:27.265Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49629221",
+      "id": "49629221",
+      "headline": "Red Sox place Masataka Yoshida on IL with hamstring strain",
+      "summary": "The Red Sox have placed Masataka Yoshida on the 10-day injured list because of a left hamstring strain.",
+      "url": "https://www.espn.com/mlb/story/_/id/49629221/red-sox-place-masataka-yoshida-il-hamstring-strain",
+      "sport": "MLB",
+      "published": "2026-08-16T17:03:06.000Z",
+      "firstSeen": "2026-08-16T16:28:50.218Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49427699",
+      "id": "49427699",
+      "headline": "2026 Seattle Seahawks training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Seahawks training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49427699/seattle-seahawks-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-16T16:57:45.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
     {
       "key": "49583228",
       "id": "49583228",
@@ -55,17 +121,6 @@
       "published": "2026-08-16T16:14:37.000Z",
       "firstSeen": "2026-08-16T15:27:05.738Z",
       "bestRank": 1
-    },
-    {
-      "key": "49629221",
-      "id": "49629221",
-      "headline": "Red Sox place Masataka Yoshida on IL with hamstring strain",
-      "summary": "The Red Sox placed Masataka Yoshida on the 10-day IL because of a left hamstring strain.",
-      "url": "https://www.espn.com/mlb/story/_/id/49629221/red-sox-place-masataka-yoshida-il-hamstring-strain",
-      "sport": "MLB",
-      "published": "2026-08-16T16:13:18.000Z",
-      "firstSeen": "2026-08-16T16:28:50.218Z",
-      "bestRank": 2
     },
     {
       "key": "49629286",
@@ -128,7 +183,7 @@
       "headline": "Mets troll Jayden Daniels over LSU NIL dispute",
       "summary": "The team is the latest to poke fun at Daniels over his jersey number dispute with his alma mater, LSU.",
       "url": "https://www.espn.com/mlb/story/_/id/49621752/new-york-mets-jayden-daniels-no-5-jersey-washington-commanders-lsu-tigers",
-      "sport": "MLB",
+      "sport": "College football",
       "published": "2026-08-16T14:53:49.000Z",
       "firstSeen": "2026-08-16T00:30:32.224Z",
       "bestRank": 1
@@ -240,17 +295,6 @@
       "url": "https://www.espn.com/mlb/story/_/id/49627411/paul-skenes-start-moved-back-pirates-rest-struggling-ace",
       "sport": "MLB",
       "published": "2026-08-16T13:13:09.000Z",
-      "firstSeen": "2026-08-16T12:28:56.476Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49611879",
-      "id": "49611879",
-      "headline": "BYU's Kalani Sitake, a favorite coach, on the verge of the CFP",
-      "summary": "The ever-friendly coach nearly left his alma mater for Penn State. But now, doing it his way, he's trying to reach new heights.",
-      "url": "https://www.espn.com/college-football/story/_/id/49611879/college-football-2026-byu-cougars-kalani-sitake-cfp",
-      "sport": "College football",
-      "published": "2026-08-16T11:39:26.000Z",
       "firstSeen": "2026-08-16T12:28:56.476Z",
       "bestRank": 1
     },
@@ -651,17 +695,6 @@
       "bestRank": 4
     },
     {
-      "key": "49624712",
-      "id": "49624712",
-      "headline": "Cleveland Guardians secure franchise's 10,000th victory",
-      "summary": "The Cleveland Guardians, an organization founded in 1901, became the third American League franchise to reach 10,000 victories with a 6-1 win over the San Diego Padres at Progressive Field on Saturday night.",
-      "url": "https://www.espn.com/mlb/story/_/id/49624712/cleveland-guardians-secure-franchise-10000th-victory",
-      "sport": "MLB",
-      "published": "2026-08-16T04:23:34.000Z",
-      "firstSeen": "2026-08-16T06:29:27.265Z",
-      "bestRank": 7
-    },
-    {
       "key": "49624842",
       "id": "49624842",
       "headline": "Kansas City Royals vs. Los Angeles Angels: Game Highlights",
@@ -671,17 +704,6 @@
       "published": "2026-08-16T04:15:34.000Z",
       "firstSeen": "2026-08-16T06:29:27.265Z",
       "bestRank": 5
-    },
-    {
-      "key": "49624578",
-      "id": "49624578",
-      "headline": "Randle El takes over playcalling, sparking Bears' 24-0 run",
-      "summary": "Bears assistant head coach Antwaan Randle El took over playcalling duties for the second half of the preseason opener vs. the Browns, helping Chicago score 24 unanswered points in the 34-10 win.",
-      "url": "https://www.espn.com/nfl/story/_/id/49624578/randle-el-takes-play-calling-sparking-bears-24-0-run",
-      "sport": "NFL",
-      "published": "2026-08-16T04:06:17.000Z",
-      "firstSeen": "2026-08-16T06:29:27.265Z",
-      "bestRank": 1
     },
     {
       "key": "49624575",
@@ -2675,17 +2697,6 @@
       "bestRank": 3
     },
     {
-      "key": "49427699",
-      "id": "49427699",
-      "headline": "2026 Seattle Seahawks training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Seahawks training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49427699/seattle-seahawks-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-14T22:03:04.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 2
-    },
-    {
       "key": "49612636",
       "id": "49612636",
       "headline": "Athletics P Sterner out remainder of season after knee surgery",
@@ -3406,7 +3417,7 @@
       "headline": "Hidalgo, Strong among NCAA players inking NIL deals with Unrivaled",
       "summary": "Women's college basketball stars Hannah Hidalgo, Sarah Strong and Madison Booker are among a notable group of NCAA players signing NIL deals with Unrivaled.",
       "url": "https://www.espn.com/womens-college-basketball/story/_/id/49609172/hidalgo-strong-ncaa-players-inking-nil-deals-unrivaled",
-      "sport": "WNBA",
+      "sport": "Women's college basketball",
       "published": "2026-08-14T13:54:23.000Z",
       "firstSeen": "2026-08-14T15:26:38.251Z",
       "bestRank": 1
@@ -3494,7 +3505,7 @@
       "headline": "Don't miss \"The Trade\" with Andscape's Kelley L. Carter",
       "summary": "Don't miss \"The Trade\" with Andscape's Kelley L. Carter",
       "url": "https://www.espn.com/video/clip/_/id/49608832/miss-trade-andscape-kelley-l-carter",
-      "sport": "Women's college basketball",
+      "sport": "NBA",
       "published": "2026-08-14T12:43:46.000Z",
       "firstSeen": "2026-08-14T15:15:56.143Z",
       "bestRank": 1
@@ -5804,7 +5815,7 @@
       "headline": "Diana Taurasi tales: Untold stories about retired WNBA legend",
       "summary": "\"We got Diana\" ... and you don't forget a legend like that. Here's a look at Diana Taurasi from teammates who knew her best.",
       "url": "https://www.espn.com/wnba/story/_/id/41444903/diana-taurasi-retires-wnba-legend-phoenix-mercury-uconn-huskies",
-      "sport": "WNBA",
+      "sport": "Women's college basketball",
       "published": "2026-08-13T11:02:53.000Z",
       "firstSeen": "2026-08-13T15:37:22.626Z",
       "bestRank": 1
@@ -7014,7 +7025,7 @@
       "headline": "Rory: I'd love to give LeBron a golf lesson",
       "summary": "Rory: I'd love to give LeBron a golf lesson",
       "url": "https://www.espn.com/video/clip/_/id/49592244/love-give-lebron-golf-lesson",
-      "sport": "Golf",
+      "sport": "NBA",
       "published": "2026-08-12T19:15:37.000Z",
       "firstSeen": "2026-08-12T21:31:05.036Z",
       "bestRank": 2
@@ -7168,7 +7179,7 @@
       "headline": "Lakers' $12 billion purchase tops record U.S. sports team sales",
       "summary": "The Lakers have been sold for a staggering $12 billion fee. It's a North American sports franchise record. Here are others that sold for big money.",
       "url": "https://www.espn.com/nfl/story/_/id/34060289/most-expensive-sports-franchise-sales",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-08-12T16:33:24.000Z",
       "firstSeen": "2026-08-12T15:36:55.019Z",
       "bestRank": 1

@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-08-16T17:34:31.218Z",
+  "generatedAt": "2026-08-16T17:43:31.224Z",
   "retentionDays": 21,
   "windowStart": "2026-07-26",
   "windowEnd": "2026-08-16",
   "snapshotIntervalHours": 3,
-  "count": 71,
+  "count": 77,
   "items": [
     {
       "headline": "Russia says at least seven killed in largest Ukrainian attack of 2026",
@@ -13,6 +13,16 @@
       "bucket": "World",
       "summary": "Moscow also launched deadly strikes against Ukraine overnight, sparking fires across the capital Kyiv.",
       "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-16T17:33:43.926Z",
+      "top": true,
+      "bestRank": 2
+    },
+    {
+      "headline": "Ukraine launches one of its largest aerial attacks of the war, killing at least 6 people in Russia",
+      "date": "2026-08-16",
+      "bucket": "Conflict",
+      "summary": "Ukraine launched hundreds of drones across Russia Sunday, killing at least six people in one of Kyiv's largest aerial attacks of the war.",
+      "url": "https://www.npr.org/2026/08/16/nx-s1-5933006/ukraine-aerial-attack-6-dead-russia",
       "firstSeen": "2026-08-16T17:33:43.926Z",
       "top": true,
       "bestRank": 2
@@ -44,7 +54,7 @@
       "summary": "Reported by WSJ.",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNGhfVll2bXdiSkpCbEhfN0Fwb0hSV3IycHN5Qk9nVzVqSjVNLWpFNFdqeUVsbDVfQ3BHN09GbFdFWGJ6bGpjMUxJSEtLTE1GTkNGaW1EeXU5Q2dSY1A5TFlmZmJqcGtLelpBTF9tbzB6NkNaOVdFZ2lWeGFDcVJMZnh6TXhOSGp2WXFpbFBvcWNBZFNTU0JSaDdLZFRER29Mb0dOMjNVUTNRaFVfYmc?oc=5",
       "top": true,
-      "bestRank": 5,
+      "bestRank": 4,
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
@@ -56,6 +66,16 @@
       "top": true,
       "bestRank": 6,
       "firstSeen": "2026-08-16T17:33:43.926Z"
+    },
+    {
+      "headline": "Caritas Indonesia mobilizes in response to Flores earthquake",
+      "date": "2026-08-16",
+      "bucket": "Disaster",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOekM5VXhLY1NEVEZnWUFWdzdpd3VnekF5UUkzdzQxSDFLWnJpbHlzN2ZQU2hwTDRVcWthLTJMWmNWUjVQdXRyejZwNllFMm1TNHFSZ05DQjBVQXc3Z01Tc3BiX29TVHVwNlhfakI5eHl5UTZmUm82VGtaR3o2eF9UODl3RHZQTHFwQ2RxdjJqLTJoaHVJSUFSdTBQV3VIdw?oc=5",
+      "top": true,
+      "bestRank": 6,
+      "firstSeen": "2026-08-16T17:43:05.796Z"
     },
     {
       "headline": "Thousands displaced by deadly Indonesia earthquake as rescue efforts continue",
@@ -74,7 +94,7 @@
       "summary": "Reported by Al Jazeera.",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdlJXVVpubVFvQ0ZEdGozSWQxWUNVNTYwM3ZtaEw3NklHd3F2R0NJN1p3ZHBBaVN4VWNiVGhWaGwzaUw5NEtHZzEyM2xld2RteFhjcXZTejdLT2drTy1kWDViZ1MtanVuQm9kM1MyLTVkZVJpakFLSTFVWkZwbjl0OEpaV2Y5cEF4Vk5RM2xZUEVTV01CczlXSHRPdEEtaHVjYmswdHZjWkZjRUMtRjhSUtIBtgFBVV95cUxNS0tQa0NydXRYR0NONnFlRVBhRXlnOF9PZTBUUC1WbjhIMTZFNGVDQnhqaVBxT3kzR2k2UEVndWtRWndvdDBNR2FxeW8xcGNfVTI1TEpCR1A5dWFUcThLLVljSTg0aDg2UU9hWTBPdGhBaS1oQmFua2Y3T0Jlc2doWFYxVWZRYlJkenIwRTRvQVNwYWVxSnVHN2ZDOU1DUm0yWDRWNDcwQktnUUd3YXBGVEdoVzNrdw?oc=5",
       "top": true,
-      "bestRank": 8,
+      "bestRank": 7,
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
@@ -84,8 +104,18 @@
       "summary": "Reported by Al Jazeera.",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaUtRSVJ6QWliMjZPY0VaSnM1TDBmeldLMm83RGctMVcybUcyeGJVRkpZMnBTVWJjaUZLMi1mWDdfRTRQOTlWemlMbGJMcGJDSGNScUc3Y3ZIaWhWeE9xRWo5Z1NFWW9KZnYySl92eUlzQ082cVlPckV2SENBZXh5VlgwbDdLNDd6cTktbjd3VnIzREVlYThUWkZfMUlUREhSaHE0R2RWeG96LTR2Sl9SczNyZUt2UdIBuwFBVV95cUxPZWdraHAya2tJc1RmZ1NaQTdHUnl2dzFsTE5SWFJWazFGSV93cVA3QnNkRDBXRTVHUWRFY1NoaDRXd1loUVUwMTZNMms0QVdSU0pnU3NaNXhmZjNGbmRqOS15aHpvb1pNM0ZGVVZVc3pQTWZKZ1VLRDBsd1Z6R1BCQlpjTzBCMTRaZ1B6dVlSU251QXNPaU82MV9mVEVzTEdfajJsTVVidXlrV09ySDlTU090a3Zvem5hTHhZ?oc=5",
       "top": true,
-      "bestRank": 9,
+      "bestRank": 8,
       "firstSeen": "2026-08-16T17:33:43.926Z"
+    },
+    {
+      "headline": "UK-made drones 'strike Russia' and 'phone theft Britain'",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by Yahoo.",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaHNRel9yQ3NrSm9iUXM2SllQcE5FUWw0dUdUdzhCem1KSjZwd1pIS3VUaXdPMjlQTjdWQnNGczBDY0FSRWpmLWdnamZpT0ZBUDZIQjh2N29sbWFETEcxZ3A1VldvbEZFdzlXWW9IUkVsTDE3TjVIU2RGUFpLYks2QVJxdHdISkVJUGNybGVn?oc=5",
+      "top": true,
+      "bestRank": 9,
+      "firstSeen": "2026-08-16T17:43:05.796Z"
     },
     {
       "headline": "Two dead and hundreds evacuated as twin fires break out on Greek island",
@@ -114,7 +144,7 @@
       "summary": "Reported by Axios.",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZUJUUXNZOERVdVVpWENGOE94TkdCQU1mdmItQmt5cFRZWEFCcklSYlhtSnE0bzU1NVVYNXV0QlZMTnRRNmhMM0JLa1RnZ3VHNzRIT0F3ckVhdUwyS0pCMU14aFRNVVdERVJCSDRMaXZtanozMWtuNEJnckdlVWprVmVR?oc=5",
       "top": true,
-      "bestRank": 12,
+      "bestRank": 11,
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
@@ -134,8 +164,18 @@
       "summary": "Reported by apnews.com.",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONjVFSk1Pdmcxb29Gb1lYWTIzSU0xdzhLcjc3V3NSNzhYVzc3SXp1VFZ0OUQ0ZU1MRHIyTkp4OF93bV92SlRQRHg2ZE1abE1sSkJ1Y2E1UlFGa3dJaS1JRlJJYnFQUWtpTnE0T2kzdVNjZVI4akd5SXpkNEFxeHl1ZW1obGpHbElGTHR3QXJjRjh5RjBsX2NHQ0NaMXM5T0c4dUxGRnJwUHkxbVU?oc=5",
       "top": true,
-      "bestRank": 20,
+      "bestRank": 16,
       "firstSeen": "2026-08-16T17:33:43.926Z"
+    },
+    {
+      "headline": "PM Tusk: Poland to Send Emergency Aircraft to Budapest after Coach Crash",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZ2puckZxdHQ1aDQ2YmsxMXpuTHd6M0ZkMVhzOFNjXzJ3aTEzeHN6OEMyMkRCWTU2Y21MUUR2YlFjUlJmSG1Eb0JiOF9sVkdxY1dLMTBUY2xiUnNQdXlCRkFSeFNsdUJ0REd4NGxINnRZMDhyZWoxMzRMWlNTSWExd0xGT1pLWWJUcDQ5WEJPYVlBdDQ2aE0wazZRMzlrdw?oc=5",
+      "top": true,
+      "bestRank": 17,
+      "firstSeen": "2026-08-16T17:43:05.796Z"
     },
     {
       "headline": "A bus crash in Hungary kills 12 people, injures at least 10 others",
@@ -143,6 +183,16 @@
       "bucket": "World",
       "summary": "Reported by apnews.com.",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONTIxNFpid1R2dnoxVVVoblpFcGtqeGV1UDJWdkZwMXlLM0hqVUxaYW8yRkFuNWpleGlBY2s0OG1FckRwajM0NHZJSWljNTJIUGxEdUdVOFRpUzVwWGgtLUI5WDlFU1NVVVhTTWpuRlRCYi1qLUZ0U2pZTHZrck1sS3FCVXNLRzNlZl8zM21YNlV6RVY2dThR?oc=5",
+      "top": true,
+      "bestRank": 21,
+      "firstSeen": "2026-08-16T17:33:43.926Z"
+    },
+    {
+      "headline": "Second Ceuta Border Push Falls Flat With Security Forces Ready",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by Euronews.com.",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORUVrbGpuRkJoS1dpbjYzTVZTWFZseklPSG9oMUQ5RlpWUTVBRVg3cWJDUGhfMVU4bWUwLWh3bUVJMXFjZWsycUtleEFQbHRmcTNlM1AwSXBYNDU3ZWx0R1BpNlJsTFhWTjhSWmJuMXQ2dkc1OG9xclV4cjl3RnlrRkxHU2Rnb0ZKN0tLWkczVVJ6X3FCcExnUjB0ODZKSW9PaUJ1YTJNZ0s?oc=5",
       "top": true,
       "bestRank": 21,
       "firstSeen": "2026-08-16T17:33:43.926Z"
@@ -158,13 +208,13 @@
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
-      "headline": "Second Ceuta Border Push Falls Flat With Security Forces Ready",
+      "headline": "Wildberries Depot Ablaze Near Moscow as Drone Downed in Romania",
       "date": "2026-08-16",
       "bucket": "World",
-      "summary": "Reported by Euronews.com.",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORUVrbGpuRkJoS1dpbjYzTVZTWFZseklPSG9oMUQ5RlpWUTVBRVg3cWJDUGhfMVU4bWUwLWh3bUVJMXFjZWsycUtleEFQbHRmcTNlM1AwSXBYNDU3ZWx0R1BpNlJsTFhWTjhSWmJuMXQ2dkc1OG9xclV4cjl3RnlrRkxHU2Rnb0ZKN0tLWkczVVJ6X3FCcExnUjB0ODZKSW9PaUJ1YTJNZ0s?oc=5",
+      "summary": "Reported by The Independent.",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQelRzWHNFMVBHUDZPeGpleHRQa2d4cHBzT01CTlNJNE53YnZkSUNRZ3R2Q05mclVzeVkwcGFyazAzVmwwMk1ORnhCUE4zTTFmdGd5UWloaHU2eGl5eFVkZHZfR1dpcTR4ZmpJTE53R0llaHdtalJNcFlodGtLcjlJWDV5WHg5Njg5b25lZG05MlV1OTg0b0pqRkFKaW1xa2RLOXVieWgzTmZDbVcwclZZ?oc=5",
       "top": true,
-      "bestRank": 23,
+      "bestRank": 22,
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
@@ -188,14 +238,14 @@
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
-      "headline": "Wildberries Depot Ablaze Near Moscow as Drone Downed in Romania",
+      "headline": "Europe's tallest Virgin Mary statue unveiled in rural Poland",
       "date": "2026-08-16",
       "bucket": "World",
-      "summary": "Reported by The Independent.",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQelRzWHNFMVBHUDZPeGpleHRQa2d4cHBzT01CTlNJNE53YnZkSUNRZ3R2Q05mclVzeVkwcGFyazAzVmwwMk1ORnhCUE4zTTFmdGd5UWloaHU2eGl5eFVkZHZfR1dpcTR4ZmpJTE53R0llaHdtalJNcFlodGtLcjlJWDV5WHg5Njg5b25lZG05MlV1OTg0b0pqRkFKaW1xa2RLOXVieWgzTmZDbVcwclZZ?oc=5",
+      "summary": "The 55.6-metre (182ft) concrete figure is head-and-shoulders above Rio de Jaineiro's Christ the Redeemer.",
+      "url": "https://www.bbc.co.uk/news/articles/cn5nnlq2pwpo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-16T17:33:43.926Z",
       "top": true,
-      "bestRank": 29,
-      "firstSeen": "2026-08-16T17:33:43.926Z"
+      "bestRank": 28
     },
     {
       "headline": "Russian Offensive Campaign Assessment, August 11, 2026",
@@ -208,6 +258,16 @@
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
+      "headline": "North Korea's Kim tells Putin he is 'proud' of strong ties, state media reports",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by The Economic Times.",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQUm04elZFaFYyQWlGNzZhNWVNRHl2Sm5sdFRET1lscVNMMlpNZVd2bzJMYjVReG95QW5LeV9WRGg4TG1XUFBPQ2h6Vm1nb3owSlRNQkx1eWJILWpha05pT0VGMWtwdXBNMEdPbUx0Yzd1QU5BbnhUczcyazZ6VTUxN1BRSEJGNGM2dVd6YU5UdHdiUnRjRFZxcGlMYkh1SlNDMnJWeE1WV1AxbkQtSXFXY1BIbUIyUlpGc3hRYU1KUHh6Yi1vdnJDb0xaVVVPdXMyMkcxMnJMaDFqcE5kYjc2QmZldVVJd2pkSTVUTWx1Y2Y?oc=5",
+      "top": true,
+      "bestRank": 30,
+      "firstSeen": "2026-08-16T17:43:05.796Z"
+    },
+    {
       "headline": "Fox News Anchor Goes Off On 'Weak' Soldiers Complaining About The USS Lincoln",
       "date": "2026-08-16",
       "bucket": "World",
@@ -218,14 +278,14 @@
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
-      "headline": "Europe's tallest Virgin Mary statue unveiled in rural Poland",
+      "headline": "Fox News Host Slams U.S. Troops as ‘Weak’ in Stunning Rant",
       "date": "2026-08-16",
-      "bucket": "World",
-      "summary": "The 55.6-metre (182ft) concrete figure is head-and-shoulders above Rio de Jaineiro's Christ the Redeemer.",
-      "url": "https://www.bbc.co.uk/news/articles/cn5nnlq2pwpo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-16T17:33:43.926Z",
+      "bucket": "Conflict",
+      "summary": "Reported by The Daily Beast.",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQ2ZkUnpYZzVsS3dQTzlUZTlUSXRtUnJzM1FwYWlWT1FTM1pKV051WGtHVTFXUzZrLWZfVnRGQy12YzhsaWJ4M1hzUGQ3X3NSa1B6cExxUUtJT1R0V3pjcnZTYzAycTEyb2xOS2ZHOVNpN1R3c1FpLWVqYzhiT2hrU2J4aWhGdVlsVk9TWHZR?oc=5",
       "top": true,
-      "bestRank": 32
+      "bestRank": 31,
+      "firstSeen": "2026-08-16T17:43:05.796Z"
     },
     {
       "headline": "Iran’s strategy to simply outlast Trump’s presidency",
@@ -234,7 +294,7 @@
       "summary": "Reported by Salon.com.",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRldEVkRWZGJvUTB5XzFEVEZfd1VfWlpuVnVLVXprRFFGa3F3T1RCSlpSQXhURG94VUg0TVNrVmxvZG1ITEQzRWMyMlM5YWtTX2stWWxEMlVrV3hSdGc4MkpaQ0tqelBfMVFpWHZxSS1LeHZBUnhLOWMzUXVyU1ZfSllwVnNRdWhsR01GXw?oc=5",
       "top": true,
-      "bestRank": 34,
+      "bestRank": 33,
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
@@ -244,8 +304,18 @@
       "summary": "Reported by The New York Times.",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObG5QZDVXcnZLcnJGVGcxazlsbW5JeXBTR0NZdTV4WFNRRkxXN1czZW9nbHZoZjFaTFcwQVY2T2poQmU3RUFZZ1VjeEo1UVJ3Wlc4ZlBUbHQ3UFRqa3E0bUthamZNelZDRWR4NmY2TXQ1VEItNDRDUW9EcWljTlBObQ?oc=5",
       "top": true,
-      "bestRank": 35,
+      "bestRank": 34,
       "firstSeen": "2026-08-16T17:33:43.926Z"
+    },
+    {
+      "headline": "Bou Meng, a Cambodian artist and survivor of a Khmer Rouge torture center, has died at 85",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZjFGcTZ1dDRGUTQ5THNwQUlUdDBkY0FUQTVlSXpSMnR3eGh1d1hMdzRZUGE5MDlTeGstdEEyS0NfMGNrQ3U1UVYxT04zaXFiX0lhNHVXUnJfdDhBd0ZSTG54a2k1R09hRUxmM3JhZHBJdkEwZm0tbHlWQmNIeVlQM0xiSnI1d3NnTnJHVjJiZEYzaXRxcVMzYWVGck5uVHR4b3RFcUdMaw?oc=5",
+      "top": true,
+      "bestRank": 35,
+      "firstSeen": "2026-08-16T17:43:05.796Z"
     },
     {
       "headline": "2 Brothers May Only Have Years Left Before Mom’s Rare Disease Kills Them, Too. They’re Not Going Quietly (Exclusive)",
@@ -264,7 +334,7 @@
       "summary": "Reported by The New York Times.",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZjUzZmJ0UzBCbk1XSUFGRGxxUHRzUW85TFlvMXRDa1RpRFRnZGxPRktvWGw2UU4tRko0UGlVWDBYY2xOZndvcE96Um9yNUk3dVZsanFHcUxBT0NxM0xzVzdVTnZOeEJjYzJJV0toNy1xTEYydVAwS2NVeklXdWlrRGZVbkZIMTNtblJsTWNiMnV6TndGU1hhYi05QQ?oc=5",
       "top": true,
-      "bestRank": 38,
+      "bestRank": 37,
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
@@ -274,7 +344,7 @@
       "summary": "Reported by BBC.",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNa3VCYVZuTU55UWxXT0p5Z0FmbHo1cVpJVnc3VWNsMmZUZFZHYTc1ZlY4MFB6TVo0Y0FWdVpEeGhYVzJtSU04ai1mdl9zcTd2N1V3SDFtak83dzhqczJLb0VMbFdnOGVGMjBXTHBBLXpJa2xpSlBlR3d3ZmhwbzJ6SlZBbkZpaHB6UEMzbVdoc0JTNGdadjNuQWVKdHVOV1NIWGRoY1A0SmNHeEY5QVpfVk14eWxMeGRx?oc=5",
       "top": true,
-      "bestRank": 39,
+      "bestRank": 38,
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
@@ -363,16 +433,6 @@
       "bucket": "World",
       "summary": "Hundreds of migrants have again attempted to cross from Morocco into the Spanish territory of Ceuta. This time, Moroccan officials fended them off, raising new questions about the crossing of July 30.",
       "url": "https://www.npr.org/2026/08/16/nx-s1-5927053/what-happened-in-ceuta",
-      "firstSeen": "2026-08-16T17:33:43.926Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Ukraine launches one of its largest aerial attacks of the war, killing at least 6 people in Russia",
-      "date": "2026-08-16",
-      "bucket": "Conflict",
-      "summary": "Ukraine launched hundreds of drones across Russia Sunday, killing at least six people in one of Kyiv's largest aerial attacks of the war.",
-      "url": "https://www.npr.org/2026/08/16/nx-s1-5933006/ukraine-aerial-attack-6-dead-russia",
       "firstSeen": "2026-08-16T17:33:43.926Z",
       "top": false,
       "bestRank": null
@@ -475,7 +535,7 @@
       "url": "https://www.bbc.co.uk/news/articles/c8en2z9jp2xo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-08-16T17:33:43.926Z",
       "top": true,
-      "bestRank": 37
+      "bestRank": 36
     },
     {
       "headline": "The new crescent: Mecca pact gives rise to a Saudi-led Sunni bloc, posing new challenges for Israel",
@@ -484,7 +544,7 @@
       "summary": "Reported by The Jerusalem Post.",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tYVR4cDRQdW1icVJNbnRhbE1yaXBGZ2ZlT1hRN3J1R0M3dW5LalRHLWJkQ3VDWEZVM0xTamtBUWZ4aVpHclpHLS1BNGFFcGU4TEpkc2pYeklHd1BB?oc=5",
       "top": true,
-      "bestRank": 40,
+      "bestRank": 39,
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
