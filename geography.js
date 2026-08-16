@@ -241,7 +241,7 @@ function injectFeatureMarkers(svgText, items) {
     .map((it) => {
       const kind = it.kind ? ` geo-marker-${it.kind}` : "";
       return `<g class="geo-pin" data-id="${it.id}">
-        <circle class="geo-marker-hit" cx="${it.x}" cy="${it.y}" r="12"/>
+        <circle class="geo-marker-hit" cx="${it.x}" cy="${it.y}" r="${r}"/>
         <circle id="${it.id}" data-id="${it.id}" class="geo-region geo-marker${kind}" cx="${it.x}" cy="${it.y}" r="${r}"/>
       </g>`;
     })
@@ -1004,38 +1004,49 @@ function clientToSvgPoint(svg, clientX, clientY) {
   };
 }
 
-function mapTargetId(e) {
-  const host = e.currentTarget?.closest?.("#geo-map") || geo.root?.querySelector("#geo-map");
-  const svg = host?.querySelector("svg");
-  const stacked =
-    typeof document.elementsFromPoint === "function"
-      ? document.elementsFromPoint(e.clientX, e.clientY)
-      : [e.target];
-  const ids = [];
-  const seen = new Set();
-  for (const node of stacked) {
-    if (host && node instanceof Node && !host.contains(node)) continue;
-    const id = regionIdFromNode(node);
-    if (!id || seen.has(id)) continue;
-    seen.add(id);
-    ids.push(id);
-  }
-  if (ids.length <= 1) return ids[0] || null;
-  if (!svg || !host) return ids[0];
-  const pt = clientToSvgPoint(svg, e.clientX, e.clientY);
-  if (!pt) return ids[0];
-  let best = ids[0];
+function usesMarkerPins(host) {
+  return geo.pack?.overlay === "markers" || Boolean(host?.querySelector(".geo-pin"));
+}
+
+function markerTapRadiusSvg(svg) {
+  const rect = svg.getBoundingClientRect();
+  const vb = viewBoxParts(svg.getAttribute("viewBox"));
+  const unit = Math.max(vb.w / Math.max(rect.width, 1), vb.h / Math.max(rect.height, 1));
+  const px = window.matchMedia("(pointer: coarse)").matches ? 44 : 30;
+  return px * unit;
+}
+
+function nearestMarkerId(host, svg, pt) {
+  const maxR = markerTapRadiusSvg(svg);
+  const maxR2 = maxR * maxR;
+  let best = null;
   let bestD = Infinity;
-  for (const id of ids) {
-    const a = regionAnchor(host, id);
+  for (const item of geo.items) {
+    const a = regionAnchor(host, item.id);
     if (!a) continue;
-    const d = (pt.x - a.x) ** 2 + (pt.y - a.y) ** 2;
-    if (d < bestD) {
-      bestD = d;
-      best = id;
+    const d2 = (pt.x - a.x) ** 2 + (pt.y - a.y) ** 2;
+    if (d2 <= maxR2 && d2 < bestD) {
+      bestD = d2;
+      best = item.id;
     }
   }
   return best;
+}
+
+function mapTargetId(e) {
+  const host = e.currentTarget?.closest?.("#geo-map") || geo.root?.querySelector("#geo-map");
+  const svg = host?.querySelector("svg");
+  if (host && svg && usesMarkerPins(host)) {
+    const pt = clientToSvgPoint(svg, e.clientX, e.clientY);
+    if (pt) {
+      const nearest = nearestMarkerId(host, svg, pt);
+      if (nearest) return nearest;
+    }
+    if (geo.pack?.overlay === "markers") return null;
+  }
+  const fromEvent = regionIdFromNode(e.target);
+  if (fromEvent) return fromEvent;
+  return regionIdFromNode(document.elementFromPoint(e.clientX, e.clientY));
 }
 
 function regionIdFromNode(node) {
