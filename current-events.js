@@ -382,14 +382,18 @@ function storyCard(item, idx) {
   return `
     <article class="ce-card ce-story-card" data-idx="${idx}">
       <div class="ce-meta">
-        <span class="ce-badge ce-badge-alt">${escapeHtml(item.sport || item.tag || "News")}</span>
-        ${item.top ? `<span class="ce-badge ce-badge-top">Top story</span>` : ""}
-        <span class="ce-date">${fmtDate(item.date)}</span>
-        ${
-          ce.canSpeak
-            ? `<button type="button" class="ce-speak" data-speak="${idx}" aria-label="Read this story aloud" title="Read aloud">▶</button>`
-            : ""
-        }
+        <div class="ce-meta-lead">
+          <span class="ce-badge ce-badge-alt">${escapeHtml(item.sport || item.tag || "News")}</span>
+          ${item.top ? `<span class="ce-badge ce-badge-top">Top story</span>` : ""}
+        </div>
+        <div class="ce-meta-end">
+          <span class="ce-date">${fmtDate(item.date)}</span>
+          ${
+            ce.canSpeak
+              ? `<button type="button" class="ce-speak" data-speak="${idx}" aria-label="Read this story aloud" title="Read aloud">▶</button>`
+              : ""
+          }
+        </div>
       </div>
       <h3>${escapeHtml(item.headline)}</h3>
       <p>${escapeHtml(item.summary)}</p>
@@ -416,24 +420,28 @@ function briefingCard(item, idx) {
   return `
     <article class="ce-card ce-story-card" data-idx="${idx}">
       <div class="ce-meta">
-        <span class="ce-rank" aria-label="Rank ${item._rank || idx + 1}">${item._rank || idx + 1}</span>
-        ${
-          ce.briefingFilter === "all"
-            ? `<span class="ce-badge">${escapeHtml(sectionLabel(item.section))}</span>`
-            : ""
-        }
-        <span class="ce-badge ce-badge-alt">${escapeHtml(item.tag || "News")}</span>
-        ${
-          coverage > 1
-            ? `<span class="ce-badge ce-badge-top">Mentioned ${coverage}×</span>`
-            : ""
-        }
-        <span class="ce-date">${fmtDate(item.date)}</span>
-        ${
-          ce.canSpeak
-            ? `<button type="button" class="ce-speak" data-speak="${idx}" aria-label="Read this story aloud" title="Read aloud">▶</button>`
-            : ""
-        }
+        <div class="ce-meta-lead">
+          <span class="ce-rank" aria-label="Rank ${item._rank || idx + 1}">${item._rank || idx + 1}</span>
+          ${
+            ce.briefingFilter === "all"
+              ? `<span class="ce-badge">${escapeHtml(sectionLabel(item.section))}</span>`
+              : ""
+          }
+          <span class="ce-badge ce-badge-alt">${escapeHtml(item.tag || "News")}</span>
+          ${
+            coverage > 1
+              ? `<span class="ce-badge ce-badge-top">Mentioned ${coverage}×</span>`
+              : ""
+          }
+        </div>
+        <div class="ce-meta-end">
+          <span class="ce-date">${fmtDate(item.date)}</span>
+          ${
+            ce.canSpeak
+              ? `<button type="button" class="ce-speak" data-speak="${idx}" aria-label="Read this story aloud" title="Read aloud">▶</button>`
+              : ""
+          }
+        </div>
       </div>
       <h3>${highlightPeople(item.headline, people)}</h3>
       <p>${highlightPeople(item.summary, people)}</p>
