@@ -617,6 +617,113 @@ function dealKey(item) {
   return "";
 }
 
+function daysApart(a, b) {
+  const da = String(a.date || "").slice(0, 10);
+  const db = String(b.date || "").slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(da) || !/^\d{4}-\d{2}-\d{2}$/.test(db)) {
+    return 99;
+  }
+  return Math.abs(
+    (new Date(`${da}T12:00:00`).getTime() - new Date(`${db}T12:00:00`).getTime()) /
+      86400000
+  );
+}
+
+/** Shared major-event cues (announcement + reaction/legacy of the same beat). */
+const EVENT_CUES = [
+  [/\bretir(?:e|es|ed|ing|ement)\b/i, "retire"],
+  [/\b(dies?|died|dead at|passes away|passed away|death of)\b/i, "death"],
+  [/\b(traded?|trade to|acquires?|acquired)\b/i, "trade"],
+  [
+    /\b(fired?|dismissed|ousted|steps? down|resign(?:s|ed|ation)?|leaves? (?:the )?(?:job|role|team))\b/i,
+    "exit",
+  ],
+  [
+    /\b(sign(?:s|ed|ing)?|agrees? to)\b.{0,48}\b(deal|contract|extension|max)\b/i,
+    "signing",
+  ],
+  [
+    /\b(indicted|arrested|sentenced|acquitted|convicted|charged with|lawsuit|sued)\b/i,
+    "legal",
+  ],
+  [
+    /\b(sold|sale|buys?|bought|purchase|acquisition|merger)\b.{0,40}\b(\$|\d|billion|million)\b|\b(\$|\d[\d.]*)\s*(billion|million)\b.{0,40}\b(sold|sale|buy|deal)\b/i,
+    "deal",
+  ],
+  [/\b(box office|gross(?:es|ed)?)\b/i, "boxoffice"],
+  [
+    /\b(oscar|emmy|grammy|golden globe|ballon d['’]or|mvp award|hall of fame)\b/i,
+    "award",
+  ],
+];
+
+function eventKinds(item, { headlineOnly = false } = {}) {
+  const text = headlineOnly
+    ? String(item.headline || "")
+    : `${item.headline || ""} ${item.summary || ""}`;
+  const kinds = new Set();
+  for (const [re, kind] of EVENT_CUES) {
+    if (re.test(text)) kinds.add(kind);
+  }
+  return kinds;
+}
+
+function sharedEventKind(a, b) {
+  for (const k of a._events || []) {
+    if (b._events?.has(k)) return k;
+  }
+  return "";
+}
+
+/** Capitalized name-like words from a headline (Westbrook, LeBron, …). */
+function headlineNameHints(headline) {
+  const out = new Set();
+  const text = String(headline || "");
+  for (const m of text.matchAll(/\b([A-Z][a-zA-Z'’-]{3,})\b/g)) {
+    const raw = m[1];
+    if (/^[A-Z]{2,}$/.test(raw)) continue; // NBA, ESPN
+    if (
+      /\b(retir|dies?|died|dead|traded?|fired?|signed?|indicted|arrested|sentenced|acquitted|convicted|sold|sale|buys?|bought|gross)\w*\b/i.test(
+        raw
+      )
+    ) {
+      continue;
+    }
+    const title = raw[0] + raw.slice(1).toLowerCase();
+    if (WORD_BLOCK.has(title) || TEAMS.has(title) || MONTHS.has(title) || DAYS.has(title)) {
+      continue;
+    }
+    out.add(raw.toLowerCase());
+  }
+  return out;
+}
+
+function sharedPersonHint(a, b) {
+  if (notablePeopleOverlap(a, b)) return true;
+  const ha = a._nameHints || headlineNameHints(a.headline);
+  const hb = b._nameHints || headlineNameHints(b.headline);
+  for (const w of ha) {
+    if (w.length >= 5 && hb.has(w)) return true;
+  }
+  // People array last names vs headline hints
+  for (const p of a.people || []) {
+    const last = lastName(p).toLowerCase();
+    if (last.length >= 5 && hb.has(last)) return true;
+  }
+  for (const p of b.people || []) {
+    const last = lastName(p).toLowerCase();
+    if (last.length >= 5 && ha.has(last)) return true;
+  }
+  return false;
+}
+
+function samePersonEvent(a, b) {
+  // Headline cues only — a listicle summary that name-drops someone must not glue topics.
+  if (!sharedEventKind(a, b)) return false;
+  if (daysApart(a, b) > 5) return false;
+  return sharedPersonHint(a, b);
+}
+
 function relatedStories(a, b) {
   if (a._urlKey && a._urlKey === b._urlKey) return true;
   if (a._gameId && a._gameId === b._gameId) return true;
@@ -634,6 +741,7 @@ function relatedStories(a, b) {
 
   if (hintOverlap(a, b)) return true;
   if (sameEventPeople(a, b)) return true;
+  if (samePersonEvent(a, b)) return true;
   const shared = sharedCount(a._tokens, b._tokens);
   const union = a._tokens.size + b._tokens.size - shared;
   const jaccard = union ? shared / union : 0;
@@ -652,6 +760,8 @@ function prepareCluster(item) {
   item._quotes = hints.quotes;
   item._topics = hints.topics;
   item._dealKey = dealKey(item);
+  item._events = eventKinds(item, { headlineOnly: true });
+  item._nameHints = headlineNameHints(item.headline);
   item._isGame = Boolean(
     item._gameId ||
       recapUrl(item.url) ||

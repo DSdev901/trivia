@@ -1203,7 +1203,8 @@ body::after {
   background: rgba(255, 255, 255, 0.92);
 }
 
-.ce-briefing-new {
+.ce-briefing-new,
+.ce-briefing-ran {
   margin: 0 0 0.85rem;
   padding: 0.65rem 0.9rem;
   border-radius: 10px;

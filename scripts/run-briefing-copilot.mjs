@@ -21,6 +21,11 @@ const FALLBACK = process.env.BRIEFING_FALLBACK || "/tmp/briefing.fallback.json";
 const INPUT = process.env.BRIEFING_INPUT || "/tmp/briefing.input.json";
 const CHUNK = Math.max(40, Number(process.env.BRIEFING_CHUNK_SIZE || 200));
 const TOP = Math.max(10, Number(process.env.BRIEFING_TOP_N || BRIEFING_FEATURED));
+/** Combover sees farther down the list so announcement+reaction pairs still get judged. */
+const MERGE_TOP = Math.max(
+  TOP,
+  Number(process.env.BRIEFING_MERGE_TOP || Math.max(120, TOP * 3))
+);
 const MODEL = process.env.COPILOT_MODEL || "claude-haiku-4.5";
 
 function runNode(script, args, extraEnv, stdio) {
@@ -64,7 +69,7 @@ function runCopilot(promptText) {
 }
 
 {
-  const mergeUntil = Math.min(TOP, total);
+  const mergeUntil = Math.min(MERGE_TOP, total);
   console.log(
     `  [briefing] Copilot combover on top ${mergeUntil} for same-story merges`
   );

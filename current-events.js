@@ -30,8 +30,8 @@ const NETFLIX_SECTION = {
 function visibleTabs() {
   if (ce.mode === "netflix") return [];
   return [
-    { id: "briefing", label: "Briefing" },
     { id: "feed", label: "Live feed" },
+    { id: "briefing", label: "Briefing" },
   ];
 }
 const BRIEFING_FILTERS = [
@@ -93,6 +93,16 @@ function fmtDate(iso) {
   const d = new Date(`${iso}T12:00:00`);
   if (Number.isNaN(d.getTime())) return iso;
   return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+}
+
+function fmtBriefingRunDay(iso) {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleDateString(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  });
 }
 
 function fmtRange(a, b) {
@@ -615,15 +625,18 @@ function renderBody() {
     const rankedBy =
       payload.source === "copilot-auto"
         ? "Ranked by coverage, story weight, and recency. Top stories rewritten by Copilot (Claude Haiku)."
-        : "Ranked by coverage, story weight, and recency. Copilot rewrites the top stories on Tuesday.";
-    const freshNote = briefingIsNew()
-      ? `<p class="ce-briefing-new">New Tuesday briefing — last three weeks of sports and entertainment.</p>`
+        : "Ranked by coverage, story weight, and recency.";
+    const runDay = fmtBriefingRunDay(payload.generatedAt || ce.briefing?.generatedAt);
+    const runNote = runDay
+      ? `<p class="ce-briefing-ran">Briefing last ran <strong>${escapeHtml(
+          runDay
+        )}</strong> — the most notable sports and entertainment stories in the window below.</p>`
       : "";
     const sportBar =
       ce.briefingFilter === "sports" ? briefingSportFilterBar(allItems) : "";
     const filters = `<div class="ce-filters">${briefingFilterBar(allItems)}${sportBar}</div>`;
     if (!items.length) {
-      return `${freshNote}${filters}<p class="lede">Nothing found for this filter in the current window.</p>`;
+      return `${runNote}${filters}<p class="lede">Nothing found for this filter in the current window.</p>`;
     }
     const showAllSections = ce.briefingFilter === "all";
     const featured = showAllSections ? items : items.slice(0, BRIEFING_FEATURED);
@@ -645,7 +658,7 @@ function renderBody() {
       ? `${items.length} stories, grouped by sports and entertainment`
       : `Top ${featured.length} of ${items.length} stories`;
     return `
-    ${freshNote}
+    ${runNote}
     <p class="ce-window">Covering ${fmtRange(payload.windowStart, payload.windowEnd)} · ${scope} · ${rankedBy} Main people are in <strong>bold</strong>.</p>
     ${filters}
     ${briefingListHtml(featured, items)}
@@ -778,7 +791,7 @@ function render() {
         <p class="lede">${
           ce.mode === "netflix"
             ? "Netflix originals from the last four weeks. Filter by shows or movies."
-            : "The briefing is the Tuesday ranked digest, grouped by sports and entertainment. Live feed is the rolling headlines that update every few hours."
+            : "Briefing ranks the most notable sports and entertainment stories from the covering window. Live feed is the rolling headlines that update every few hours."
         }</p>
       </div>
       <div class="ce-refresh-wrap">
