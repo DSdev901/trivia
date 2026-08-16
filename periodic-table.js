@@ -1,10 +1,12 @@
 /** Interactive periodic table with trivia facts and spoken tours. */
 
 import {
+  getSavedLoops,
   getSavedRate,
   getSavedVoiceUri,
   listEnglishVoices,
   prepareSpokenLine,
+  saveLoops,
   saveRate,
   saveVoiceUri,
   speakLines,
@@ -253,30 +255,57 @@ async function speakTour() {
   const listen = pt.root?.querySelector("#pt-listen");
   if (listen) listen.disabled = true;
 
-  setStatus(`Touring ${scopeLabel()} (${list.length})…`);
+  const loops = Math.max(
+    1,
+    Math.min(
+      20,
+      Number(pt.root?.querySelector("#pt-loop-select")?.value || getSavedLoops()) || 1
+    )
+  );
+  const loopPadMs = 7000;
+  setStatus(
+    loops > 1
+      ? `Touring ${scopeLabel()} (${list.length}) · ${loops} loops…`
+      : `Touring ${scopeLabel()} (${list.length})…`
+  );
 
-  for (let i = 0; i < list.length; i += 1) {
+  for (let loop = 0; loop < loops; loop += 1) {
     if (!pt.playing || session !== pt.tourSession) break;
-    const el = list[i];
-    pt.selectedZ = el.Z;
-    highlight(el.Z);
-    renderDetail();
-    bindDetailSpeech();
-    setStatus(`Reading ${el.name} (${i + 1} of ${list.length})…`);
-    await new Promise((resolve) => {
-      speakLines(spokenScript(el), {
-        voiceUri: getSavedVoiceUri(),
-        rate: getSavedRate(),
-        onStatus: setStatus,
-        onEnd: () => resolve(),
-      }).catch((err) => {
-        setStatus(err.message);
-        pt.playing = false;
-        resolve();
+    if (loop > 0) {
+      setStatus(
+        `Loop ${loop} finished. Waiting 7 seconds before loop ${loop + 1} of ${loops}…`
+      );
+      await new Promise((r) => setTimeout(r, loopPadMs));
+      if (!pt.playing || session !== pt.tourSession) break;
+    }
+    if (loops > 1) {
+      setStatus(`Playing loop ${loop + 1} of ${loops}…`);
+    }
+
+    for (let i = 0; i < list.length; i += 1) {
+      if (!pt.playing || session !== pt.tourSession) break;
+      const el = list[i];
+      pt.selectedZ = el.Z;
+      highlight(el.Z);
+      renderDetail();
+      bindDetailSpeech();
+      const loopBit = loops > 1 ? ` · loop ${loop + 1}/${loops}` : "";
+      setStatus(`Reading ${el.name} (${i + 1} of ${list.length})${loopBit}…`);
+      await new Promise((resolve) => {
+        speakLines(spokenScript(el), {
+          voiceUri: getSavedVoiceUri(),
+          rate: getSavedRate(),
+          onStatus: setStatus,
+          onEnd: () => resolve(),
+        }).catch((err) => {
+          setStatus(err.message);
+          pt.playing = false;
+          resolve();
+        });
       });
-    });
-    if (!pt.playing || session !== pt.tourSession) break;
-    await new Promise((r) => setTimeout(r, 450));
+      if (!pt.playing || session !== pt.tourSession) break;
+      await new Promise((r) => setTimeout(r, 450));
+    }
   }
 
   if (session === pt.tourSession) {
@@ -403,6 +432,13 @@ function speechPanelHtml() {
   }
   const savedRate = getSavedRate();
   const savedUri = getSavedVoiceUri();
+  const savedLoops = getSavedLoops();
+  const loopOptions = Array.from({ length: 10 }, (_, i) => {
+    const n = i + 1;
+    return `<option value="${n}" ${savedLoops === n ? "selected" : ""}>${n}${
+      n === 1 ? " (default)" : ""
+    }</option>`;
+  }).join("");
   return `
     <section class="speech-panel pt-speech" aria-label="Read aloud">
       <input type="checkbox" class="speech-fold" id="speech-fold-pt" aria-label="Show read-aloud options" />
@@ -446,6 +482,10 @@ function speechPanelHtml() {
             <option value="0.9" ${savedRate === 0.9 ? "selected" : ""}>Natural</option>
             <option value="1" ${savedRate === 1 ? "selected" : ""}>Faster</option>
           </select>
+        </label>
+        <label class="voice-field">
+          <span>Loops</span>
+          <select id="pt-loop-select">${loopOptions}</select>
         </label>
       </div>
       <p class="speech-status" id="pt-speech-status">${escapeHtml(
@@ -547,6 +587,9 @@ function bind() {
   });
   pt.root.querySelector("#pt-rate-select")?.addEventListener("change", (e) => {
     saveRate(Number(e.target.value));
+  });
+  pt.root.querySelector("#pt-loop-select")?.addEventListener("change", (e) => {
+    saveLoops(Number(e.target.value));
   });
 
   pt.root.querySelector("#pt-listen")?.addEventListener("click", () => {

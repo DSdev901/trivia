@@ -123,7 +123,7 @@ function batchLabel(category, n) {
   if (meta) return meta.label;
   return n < category.batchCount
     ? `Presidents ${(n - 1) * 10 + 1}–${n * 10}`
-    : `Batch ${n}`;
+    : `Section ${n}`;
 }
 
 async function loadJSON(path) {
@@ -153,7 +153,7 @@ function categoryMetaLabel(category) {
   if (category?.type === "captured") {
     return "questions · search";
   }
-  return `${category.batchCount} batches`;
+  return `${category.batchCount} sections`;
 }
 
 function renderCategories(categories) {
@@ -230,11 +230,11 @@ function renderHub(category) {
     <div class="hub-actions">
       <button type="button" class="hub-card" id="hub-study">
         <h3>Study</h3>
-        <p>Browse batches and review each president’s facts.</p>
+        <p>Browse sections and review each president’s facts.</p>
       </button>
       <button type="button" class="hub-card hub-card-accent" id="hub-quiz">
         <h3>Quiz</h3>
-        <p>Pick one or more batches and work through multiple-choice questions.</p>
+        <p>Pick one or more sections and work through multiple-choice questions.</p>
       </button>
       ${
         canFlag
@@ -310,14 +310,14 @@ function renderBatches(category) {
     const n = i + 1;
     return `
       <button type="button" class="batch-card" data-batch="${n}">
-        <h2>Batch ${n}</h2>
+        <h2>Section ${n}</h2>
         <p>${batchLabel(category, n)}</p>
         <span class="meta">Study mode</span>
       </button>`;
   }).join("");
 
   els.batches.innerHTML = `
-    <h2 class="section-title">Choose a batch</h2>
+    <h2 class="section-title">Choose a section</h2>
     <div class="batch-grid">${cards}</div>
   `;
 
@@ -331,7 +331,7 @@ async function openBatch(batchNumber) {
     const batch = await loadBatch(state.category, batchNumber);
     state.batch = batch;
     state.president = null;
-    els.subtitle.textContent = `${state.category.name} · Batch ${batch.batch} (${batch.range})`;
+    els.subtitle.textContent = `${state.category.name} · Section ${batch.batch} (${batch.range})`;
     renderPresidents(batch);
     show("presidents");
   } catch (err) {
@@ -342,7 +342,7 @@ async function openBatch(batchNumber) {
 
 function renderPresidents(batch) {
   els.presidents.innerHTML = `
-    <h2 class="section-title">Batch ${batch.batch}: Presidents ${batch.range}</h2>
+    <h2 class="section-title">Section ${batch.batch}: Presidents ${batch.range}</h2>
     <div class="president-list">
       ${batch.presidents
         .map(
@@ -630,7 +630,7 @@ function renderFlags() {
                 </header>
                 <p class="flag-meta">${
                   f.type === "fact"
-                    ? `Batch ${f.batch ?? "?"} · #${f.presidentNumber} ${escapeHtml(f.presidentName)} · fact ${f.factIndex + 1}`
+                    ? `Section ${f.batch ?? "?"} · #${f.presidentNumber} ${escapeHtml(f.presidentName)} · fact ${f.factIndex + 1}`
                     : `Quiz ID: ${escapeHtml(f.questionId)}`
                 }</p>
                 <p class="flag-text">${escapeHtml(f.text)}</p>
@@ -688,7 +688,7 @@ function renderQuizSetup(category) {
       <label class="batch-check">
         <input type="checkbox" name="quiz-batch" value="${n}" checked />
         <span class="batch-check-body">
-          <strong>Batch ${n}</strong>
+          <strong>Section ${n}</strong>
           <span>${batchLabel(category, n)}</span>
         </span>
       </label>`;
@@ -696,7 +696,7 @@ function renderQuizSetup(category) {
 
   els.quizSetup.innerHTML = `
     <h2 class="section-title">Quiz setup</h2>
-    <p class="lede">Select the batches to include. After each answer you’ll see if you were right, then choose whether to keep that question in rotation.</p>
+    <p class="lede">Select the sections to include. After each answer you’ll see if you were right, then choose whether to keep that question in rotation.</p>
     <div class="batch-check-list" id="quiz-batch-list">${options}</div>
     <div class="setup-actions">
       <button type="button" class="text-btn" id="select-all">Select all</button>
@@ -732,7 +732,7 @@ async function startQuiz(batchNumbers) {
   const errorEl = document.getElementById("setup-error");
   if (!batchNumbers.length) {
     errorEl.hidden = false;
-    errorEl.textContent = "Select at least one batch.";
+    errorEl.textContent = "Select at least one section.";
     return;
   }
 
@@ -755,7 +755,7 @@ async function startQuiz(batchNumbers) {
 
     if (questions.length < 1) {
       errorEl.hidden = false;
-      errorEl.textContent = "Not enough material to build quiz questions from those batches.";
+      errorEl.textContent = "Not enough material to build quiz questions from those sections.";
       return;
     }
 
@@ -905,7 +905,7 @@ function renderQuizDone() {
     ? `${quiz.difficulty === "easy" ? "Easy · " : "Hard · "}${
         quiz.scopeLabel || "Elements"
       }`
-    : (quiz.batchNumbers || []).map((n) => `Batch ${n}`).join(", ");
+    : (quiz.batchNumbers || []).map((n) => `Section ${n}`).join(", ");
   els.subtitle.textContent = `${state.category.name} · Quiz complete`;
   els.quizDone.innerHTML = `
     <div class="quiz-done">
@@ -916,7 +916,7 @@ function renderQuizDone() {
         <li><strong>${rotation.correctCount}</strong> correct answers</li>
         <li><strong>${rotation.wrongCount}</strong> wrong answers</li>
         <li><strong>${rotation.kept}</strong> times kept for another pass</li>
-        <li>${isElements ? "Scope" : "Batches"}: ${escapeHtml(scopeText)}</li>
+        <li>${isElements ? "Scope" : "Sections"}: ${escapeHtml(scopeText)}</li>
       </ul>
       <div class="setup-actions">
         <button type="button" class="primary-btn" id="quiz-again">Quiz again</button>
@@ -985,7 +985,7 @@ function goBack() {
   switch (state.view) {
     case "detail":
       state.president = null;
-      els.subtitle.textContent = `${state.category.name} · Batch ${state.batch.batch} (${state.batch.range})`;
+      els.subtitle.textContent = `${state.category.name} · Section ${state.batch.batch} (${state.batch.range})`;
       show("presidents");
       break;
     case "presidents":
