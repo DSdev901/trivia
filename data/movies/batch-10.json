@@ -6,72 +6,122 @@
   "questions": [
     {
       "id": "film-10-01",
-      "question": "Which 2008 superhero film is usually credited with launching the Marvel Cinematic Universe?",
-      "answer": "Iron Man",
-      "choices": ["Iron Man", "Spider-Man", "X-Men", "The Incredible Hulk"],
-      "note": "The Incredible Hulk followed the same year; Nick Fury’s post-credits scene set the table."
+      "question": "Who directed Iron Man (2008), the film that launched the MCU?",
+      "answer": "Jon Favreau",
+      "choices": [
+        "Jon Favreau",
+        "Joss Whedon",
+        "The Russo brothers",
+        "Shane Black"
+      ],
+      "note": "Favreau also plays Happy Hogan. Black directed Iron Man 3."
     },
     {
       "id": "film-10-02",
       "question": "What 2009 James Cameron film was the first to gross over $2 billion worldwide?",
       "answer": "Avatar",
-      "choices": ["Avatar", "Titanic", "Avengers: Endgame", "The Lion King"],
+      "choices": [
+        "Avatar",
+        "Titanic",
+        "Avengers: Endgame",
+        "The Lion King"
+      ],
       "note": "Set on Pandora among the Na’vi; sequels followed in the 2020s."
     },
     {
       "id": "film-10-03",
-      "question": "Which 2010 drama about the founding of Facebook was directed by David Fincher?",
-      "answer": "The Social Network",
-      "choices": ["The Social Network", "Steve Jobs", "The Internship", "Jobs"],
-      "note": "Jesse Eisenberg as Mark Zuckerberg; Aaron Sorkin wrote the script."
+      "question": "Who played Mark Zuckerberg in The Social Network (2010)?",
+      "answer": "Jesse Eisenberg",
+      "choices": [
+        "Jesse Eisenberg",
+        "Andrew Garfield",
+        "Justin Timberlake",
+        "Jesse McCartney"
+      ],
+      "note": "Garfield is Eduardo Saverin; Timberlake is Sean Parker. Aaron Sorkin wrote the script."
     },
     {
       "id": "film-10-04",
-      "question": "Which 2014 Christopher Nolan film follows a team traveling through a wormhole to save humanity?",
-      "answer": "Interstellar",
-      "choices": ["Interstellar", "Inception", "Gravity", "Arrival"],
-      "note": "Matthew McConaughey, Anne Hathaway, and a lot of Hans Zimmer organ."
+      "question": "In Interstellar, what is the name of the boxy robot that accompanies Cooper?",
+      "answer": "TARS",
+      "choices": [
+        "TARS",
+        "HAL 9000",
+        "GERTY",
+        "MARVIN"
+      ],
+      "note": "CASE is the other folding robot on the mission; GERTY is the robot in Moon (2009)."
     },
     {
       "id": "film-10-05",
-      "question": "Which 2017 horror-satire follows a Black man meeting his white girlfriend’s family for the weekend?",
-      "answer": "Get Out",
-      "choices": ["Get Out", "Us", "Nope", "The Hunt"],
-      "note": "Jordan Peele’s debut; the sunken place became a cultural shorthand."
+      "question": "In Get Out, what does Missy Armitage call the hypnotic state she drops Chris into?",
+      "answer": "The sunken place",
+      "choices": [
+        "The sunken place",
+        "The upside down",
+        "The shadow realm",
+        "The void"
+      ],
+      "note": "Triggered with the clink of a teacup. Catherine Keener plays Missy."
     },
     {
       "id": "film-10-06",
       "question": "In which Marvel film does Thanos first snap his fingers and wipe out half of all life?",
       "answer": "Avengers: Infinity War",
-      "choices": ["Avengers: Infinity War", "Avengers: Endgame", "Avengers: Age of Ultron", "Captain America: Civil War"],
+      "choices": [
+        "Avengers: Infinity War",
+        "Avengers: Endgame",
+        "Avengers: Age of Ultron",
+        "Captain America: Civil War"
+      ],
       "note": "2018. Endgame (2019) is the time-heist aftermath."
     },
     {
       "id": "film-10-07",
-      "question": "Which 2019 Joaquin Phoenix film about a failed clown won him Best Actor?",
-      "answer": "Joker",
-      "choices": ["Joker", "The Dark Knight", "The King of Comedy", "Nightcrawler"],
-      "note": "Todd Phillips directed; it also won Best Original Score."
+      "question": "Who directed Joker (2019), the Joaquin Phoenix film that won him Best Actor?",
+      "answer": "Todd Phillips",
+      "choices": [
+        "Todd Phillips",
+        "Christopher Nolan",
+        "Martin Scorsese",
+        "Darren Aronofsky"
+      ],
+      "note": "Phillips is best known for The Hangover. Scorsese’s King of Comedy is a clear influence."
     },
     {
       "id": "film-10-08",
       "question": "In Top Gun: Maverick, what is the call sign of Miles Teller’s character?",
       "answer": "Rooster",
-      "choices": ["Rooster", "Goose", "Hangman", "Phoenix"],
+      "choices": [
+        "Rooster",
+        "Goose",
+        "Hangman",
+        "Phoenix"
+      ],
       "note": "He’s Goose’s son. Hangman is Glen Powell; Phoenix is Monica Barbaro."
     },
     {
       "id": "film-10-09",
-      "question": "Who plays Ken in Greta Gerwig’s Barbie (2023)?",
-      "answer": "Ryan Gosling",
-      "choices": ["Ryan Gosling", "Simu Liu", "Margot Robbie", "Ryan Reynolds"],
-      "note": "Liu is another Ken; Robbie is Barbie. “Barbenheimer” weekend with Oppenheimer."
+      "question": "Which song did Ryan Gosling perform from Barbie at the 2024 Oscars?",
+      "answer": "I'm Just Ken",
+      "choices": [
+        "I'm Just Ken",
+        "What Was I Made For?",
+        "Pink Pony Club",
+        "Dance the Night"
+      ],
+      "note": "Billie Eilish’s “What Was I Made For?” won Best Original Song; Gosling still stole the night."
     },
     {
       "id": "film-10-10",
       "question": "Who played the title physicist in Christopher Nolan’s Oppenheimer (2023)?",
       "answer": "Cillian Murphy",
-      "choices": ["Cillian Murphy", "Robert Downey Jr.", "Matt Damon", "Gary Oldman"],
+      "choices": [
+        "Cillian Murphy",
+        "Robert Downey Jr.",
+        "Matt Damon",
+        "Gary Oldman"
+      ],
       "note": "Murphy won Best Actor; RDJ won Supporting Actor as Lewis Strauss."
     }
   ]

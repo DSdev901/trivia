@@ -6,73 +6,123 @@
   "questions": [
     {
       "id": "film-6-01",
-      "question": "In the Harry Potter films, what is the name of Harry’s owl?",
-      "answer": "Hedwig",
-      "choices": ["Hedwig", "Errol", "Crookshanks", "Fawkes"],
-      "note": "A snowy owl. Errol is the Weasleys’; Crookshanks is Hermione’s cat; Fawkes is Dumbledore’s phoenix."
+      "question": "In the Harry Potter films, what is the name of Hermione’s cat?",
+      "answer": "Crookshanks",
+      "choices": [
+        "Crookshanks",
+        "Hedwig",
+        "Scabbers",
+        "Fang"
+      ],
+      "note": "The squashed-face half-Kneazle. Scabbers is Ron’s rat; Fang is Hagrid’s dog."
     },
     {
       "id": "film-6-02",
       "question": "What Quidditch position does Harry Potter play?",
       "answer": "Seeker",
-      "choices": ["Seeker", "Keeper", "Chaser", "Beater"],
+      "choices": [
+        "Seeker",
+        "Keeper",
+        "Chaser",
+        "Beater"
+      ],
       "note": "The Seeker hunts the Golden Snitch."
     },
     {
       "id": "film-6-03",
       "question": "What is the name of Elsa and Anna’s kingdom in Frozen?",
       "answer": "Arendelle",
-      "choices": ["Arendelle", "Corona", "Atlantica", "DunBroch"],
+      "choices": [
+        "Arendelle",
+        "Corona",
+        "Atlantica",
+        "DunBroch"
+      ],
       "note": "Corona is Tangled; Atlantica is The Little Mermaid; DunBroch is Brave."
     },
     {
       "id": "film-6-04",
-      "question": "Which superhero team’s first standalone Marvel Cinematic Universe film was released in 2012?",
-      "answer": "The Avengers",
-      "choices": ["The Avengers", "The X-Men", "The Justice League", "The Guardians of the Galaxy"],
-      "note": "Directed by Joss Whedon; it assembled Iron Man, Captain America, Thor, and Hulk."
+      "question": "Who directed The Avengers (2012), the first time the MCU heroes shared a film?",
+      "answer": "Joss Whedon",
+      "choices": [
+        "Joss Whedon",
+        "The Russo brothers",
+        "Jon Favreau",
+        "Kenneth Branagh"
+      ],
+      "note": "The Russos later did Winter Soldier, Civil War, Infinity War, and Endgame."
     },
     {
       "id": "film-6-05",
       "question": "In The Lord of the Rings, who is Frodo’s gardener and companion on the road to Mordor?",
       "answer": "Samwise Gamgee",
-      "choices": ["Samwise Gamgee", "Meriadoc Brandybuck", "Peregrin Took", "Frodo Baggins"],
+      "choices": [
+        "Samwise Gamgee",
+        "Meriadoc Brandybuck",
+        "Peregrin Took",
+        "Frodo Baggins"
+      ],
       "note": "Sean Astin plays Sam. Merry and Pippin take a different path."
     },
     {
       "id": "film-6-06",
       "question": "What is the title of Spielberg’s 1997 sequel to Jurassic Park?",
       "answer": "The Lost World: Jurassic Park",
-      "choices": ["The Lost World: Jurassic Park", "Jurassic Park III", "Jurassic World", "The Lost World"],
+      "choices": [
+        "The Lost World: Jurassic Park",
+        "Jurassic Park III",
+        "Jurassic World",
+        "The Lost World"
+      ],
       "note": "Jeff Goldblum’s Ian Malcolm is the lead this time; the island is Isla Sorna."
     },
     {
       "id": "film-6-07",
-      "question": "What is the name of Tom Cruise’s spy in the Mission: Impossible films?",
-      "answer": "Ethan Hunt",
-      "choices": ["Ethan Hunt", "Jason Bourne", "Jack Ryan", "James Bond"],
-      "note": "The first Mission: Impossible film landed in 1996."
+      "question": "Who directed the first Mission: Impossible film (1996)?",
+      "answer": "Brian De Palma",
+      "choices": [
+        "Brian De Palma",
+        "John Woo",
+        "Christopher McQuarrie",
+        "J. J. Abrams"
+      ],
+      "note": "Woo did the 2000 sequel; Abrams did III; McQuarrie took over from Rogue Nation on."
     },
     {
       "id": "film-6-08",
       "question": "What is the subtitle of the second Hunger Games film?",
       "answer": "Catching Fire",
-      "choices": ["Catching Fire", "Mockingjay", "The Half-Blood Prince", "Breaking Dawn"],
+      "choices": [
+        "Catching Fire",
+        "Mockingjay",
+        "The Half-Blood Prince",
+        "Breaking Dawn"
+      ],
       "note": "Mockingjay was then split into two films."
     },
     {
       "id": "film-6-09",
       "question": "In the Marvel films, what is the name of Thor’s hammer?",
       "answer": "Mjolnir",
-      "choices": ["Mjolnir", "Stormbreaker", "Gungnir", "Hofund"],
+      "choices": [
+        "Mjolnir",
+        "Stormbreaker",
+        "Gungnir",
+        "Hofund"
+      ],
       "note": "Stormbreaker is the later axe; Gungnir is Odin’s spear."
     },
     {
       "id": "film-6-10",
-      "question": "Which Star Wars film, released in 1999, began the prequel trilogy?",
-      "answer": "The Phantom Menace",
-      "choices": ["The Phantom Menace", "Attack of the Clones", "Revenge of the Sith", "The Force Awakens"],
-      "note": "Episode I — a young Anakin, podracing, and a lot of debate about Jar Jar."
+      "question": "In The Phantom Menace, what is the name of the Sith apprentice with a double-bladed lightsaber?",
+      "answer": "Darth Maul",
+      "choices": [
+        "Darth Maul",
+        "Darth Sidious",
+        "Darth Tyranus",
+        "Darth Vader"
+      ],
+      "note": "Ray Park in the makeup; voiced by Peter Serafinowicz. Sidious is the Emperor."
     }
   ]
 }

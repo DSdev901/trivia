@@ -6,73 +6,123 @@
   "questions": [
     {
       "id": "film-2-01",
-      "question": "In which film does Arnold Schwarzenegger say, “Hasta la vista, baby”?",
-      "answer": "Terminator 2: Judgment Day",
-      "choices": ["Terminator 2: Judgment Day", "The Terminator", "True Lies", "Total Recall"],
-      "note": "1991 — he says it to the T-1000, not in the 1984 original."
+      "question": "In which 1990 film does Joe Pesci’s character take offense at being called funny?",
+      "answer": "Goodfellas",
+      "choices": [
+        "Goodfellas",
+        "Casino",
+        "Donnie Brasco",
+        "A Bronx Tale"
+      ],
+      "note": "“Funny how?” — Tommy DeVito, in a crowded restaurant."
     },
     {
       "id": "film-2-02",
       "question": "Which film includes the courtroom outburst “You can’t handle the truth!”?",
       "answer": "A Few Good Men",
-      "choices": ["A Few Good Men", "The Firm", "Philadelphia", "A Time to Kill"],
+      "choices": [
+        "A Few Good Men",
+        "The Firm",
+        "Philadelphia",
+        "A Time to Kill"
+      ],
       "note": "1992 — Jack Nicholson’s Colonel Jessup, opposite Tom Cruise."
     },
     {
       "id": "film-2-03",
-      "question": "Which film popularized the line “Houston, we have a problem”?",
-      "answer": "Apollo 13",
-      "choices": ["Apollo 13", "The Right Stuff", "Gravity", "Hidden Figures"],
-      "note": "1995. The real radio call was slightly different; the movie made this wording famous."
+      "question": "In which film does Tom Hanks yell “Wilson!” at a volleyball?",
+      "answer": "Cast Away",
+      "choices": [
+        "Cast Away",
+        "Forrest Gump",
+        "Captain Phillips",
+        "The Terminal"
+      ],
+      "note": "2000 — Chuck Noland, stranded after a FedEx plane crash."
     },
     {
       "id": "film-2-04",
       "question": "In which film does Cuba Gooding Jr. yell, “Show me the money!”?",
       "answer": "Jerry Maguire",
-      "choices": ["Jerry Maguire", "Any Given Sunday", "The Wolf of Wall Street", "Moneyball"],
+      "choices": [
+        "Jerry Maguire",
+        "Any Given Sunday",
+        "The Wolf of Wall Street",
+        "Moneyball"
+      ],
       "note": "1996 — Tom Cruise’s sports agent; “You had me at hello” is the other famous line."
     },
     {
       "id": "film-2-05",
-      "question": "Which 1995 epic includes the line “They may take our lives, but they’ll never take our freedom!”?",
-      "answer": "Braveheart",
-      "choices": ["Braveheart", "Gladiator", "Rob Roy", "The Patriot"],
-      "note": "Mel Gibson as William Wallace, face painted blue."
+      "question": "Which 1992 baseball film includes the line “There’s no crying in baseball!”?",
+      "answer": "A League of Their Own",
+      "choices": [
+        "A League of Their Own",
+        "Field of Dreams",
+        "The Sandlot",
+        "Bull Durham"
+      ],
+      "note": "Tom Hanks as coach Jimmy Dugan. Geena Davis, Madonna, and Rosie O’Donnell play the Peaches."
     },
     {
       "id": "film-2-06",
       "question": "Which film includes the line “That’ll do, pig”?",
       "answer": "Babe",
-      "choices": ["Babe", "Charlotte's Web", "Gordy", "Chicken Run"],
+      "choices": [
+        "Babe",
+        "Charlotte's Web",
+        "Gordy",
+        "Chicken Run"
+      ],
       "note": "1995 — Farmer Hoggett to the sheep-pig, after the herding trial."
     },
     {
       "id": "film-2-07",
-      "question": "Which film includes the line “I see dead people”?",
-      "answer": "The Sixth Sense",
-      "choices": ["The Sixth Sense", "The Others", "The Ring", "Stir of Echoes"],
-      "note": "1999 — Haley Joel Osment, whispering to Bruce Willis."
+      "question": "Which prison drama includes the line “Get busy living, or get busy dying”?",
+      "answer": "The Shawshank Redemption",
+      "choices": [
+        "The Shawshank Redemption",
+        "The Green Mile",
+        "Cool Hand Luke",
+        "Dead Man Walking"
+      ],
+      "note": "Andy Dufresne, laying out the choice to Red."
     },
     {
       "id": "film-2-08",
       "question": "Which film includes the line “One does not simply walk into Mordor”?",
       "answer": "The Fellowship of the Ring",
-      "choices": ["The Fellowship of the Ring", "The Two Towers", "The Return of the King", "The Hobbit: An Unexpected Journey"],
+      "choices": [
+        "The Fellowship of the Ring",
+        "The Two Towers",
+        "The Return of the King",
+        "The Hobbit: An Unexpected Journey"
+      ],
       "note": "Boromir (Sean Bean) at the Council of Elrond."
     },
     {
       "id": "film-2-09",
-      "question": "In which film does the Joker ask, “Why so serious?”?",
-      "answer": "The Dark Knight",
-      "choices": ["The Dark Knight", "Joker", "Batman", "Batman Begins"],
-      "note": "Heath Ledger, in Christopher Nolan’s 2008 Batman film."
+      "question": "In which 2007 film does Daniel Day-Lewis declare, “I drink your milkshake!”?",
+      "answer": "There Will Be Blood",
+      "choices": [
+        "There Will Be Blood",
+        "No Country for Old Men",
+        "Giant",
+        "The Treasure of the Sierra Madre"
+      ],
+      "note": "Daniel Plainview, in Paul Thomas Anderson’s oil-boom epic."
     },
     {
       "id": "film-2-10",
-      "question": "Which film includes the line “I volunteer as tribute!”?",
-      "answer": "The Hunger Games",
-      "choices": ["The Hunger Games", "Divergent", "The Maze Runner", "Twilight"],
-      "note": "2012 — Jennifer Lawrence’s Katniss, stepping in for her sister Prim."
+      "question": "Which film includes the line “I’m also just a girl, standing in front of a boy, asking him to love her”?",
+      "answer": "Notting Hill",
+      "choices": [
+        "Notting Hill",
+        "Pretty Woman",
+        "Love Actually",
+        "Four Weddings and a Funeral"
+      ],
+      "note": "1999 — Julia Roberts’s movie star to Hugh Grant’s bookshop owner."
     }
   ]
 }

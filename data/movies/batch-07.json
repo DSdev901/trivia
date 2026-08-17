@@ -8,71 +8,121 @@
       "id": "film-7-01",
       "question": "Which 1991 Disney film was the first animated feature nominated for Best Picture?",
       "answer": "Beauty and the Beast",
-      "choices": ["Beauty and the Beast", "The Little Mermaid", "Aladdin", "The Lion King"],
+      "choices": [
+        "Beauty and the Beast",
+        "The Little Mermaid",
+        "Aladdin",
+        "The Lion King"
+      ],
       "note": "The Little Mermaid started the Disney Renaissance; this one got the Oscar nod."
     },
     {
       "id": "film-7-02",
       "question": "Who voices Scar in Disney’s The Lion King (1994)?",
       "answer": "Jeremy Irons",
-      "choices": ["Jeremy Irons", "James Earl Jones", "Matthew Broderick", "Nathan Lane"],
+      "choices": [
+        "Jeremy Irons",
+        "James Earl Jones",
+        "Matthew Broderick",
+        "Nathan Lane"
+      ],
       "note": "Jones is Mufasa; Broderick is adult Simba; Lane is Timon."
     },
     {
       "id": "film-7-03",
-      "question": "Which studio made Toy Story, the first fully computer-animated feature film?",
-      "answer": "Pixar",
-      "choices": ["Pixar", "DreamWorks", "Illumination", "Blue Sky"],
-      "note": "1995, released by Disney; Woody and Buzz Lightyear."
+      "question": "In Toy Story, what is the name of Andy’s next-door neighbor who blows up toys?",
+      "answer": "Sid",
+      "choices": [
+        "Sid",
+        "Andy",
+        "Al",
+        "Stinky Pete"
+      ],
+      "note": "The black-hoodie kid with the mutant toys. Al is the collector in Toy Story 2."
     },
     {
       "id": "film-7-04",
       "question": "Who voices Buzz Lightyear in the Toy Story films?",
       "answer": "Tim Allen",
-      "choices": ["Tim Allen", "Tom Hanks", "Tim Curry", "John Goodman"],
+      "choices": [
+        "Tim Allen",
+        "Tom Hanks",
+        "Tim Curry",
+        "John Goodman"
+      ],
       "note": "Tom Hanks is Woody."
     },
     {
       "id": "film-7-05",
       "question": "In the first Shrek film, what is the name of the diminutive lord who wants to marry Fiona?",
       "answer": "Lord Farquaad",
-      "choices": ["Lord Farquaad", "Prince Charming", "Lord Business", "King Harold"],
+      "choices": [
+        "Lord Farquaad",
+        "Prince Charming",
+        "Lord Business",
+        "King Harold"
+      ],
       "note": "John Lithgow’s voice; Duloc is his perfectly ordered duchy."
     },
     {
       "id": "film-7-06",
-      "question": "In Shrek, who voices the talking Donkey?",
-      "answer": "Eddie Murphy",
-      "choices": ["Eddie Murphy", "Mike Myers", "Cameron Diaz", "Chris Rock"],
-      "note": "Mike Myers is Shrek; Cameron Diaz is Princess Fiona."
+      "question": "Who voices Princess Fiona in the Shrek films?",
+      "answer": "Cameron Diaz",
+      "choices": [
+        "Cameron Diaz",
+        "Eddie Murphy",
+        "Mike Myers",
+        "Reese Witherspoon"
+      ],
+      "note": "Myers is Shrek; Murphy is Donkey."
     },
     {
       "id": "film-7-07",
       "question": "Who voices Dory in Finding Nemo and Finding Dory?",
       "answer": "Ellen DeGeneres",
-      "choices": ["Ellen DeGeneres", "Albert Brooks", "Tina Fey", "Amy Poehler"],
+      "choices": [
+        "Ellen DeGeneres",
+        "Albert Brooks",
+        "Tina Fey",
+        "Amy Poehler"
+      ],
       "note": "Albert Brooks is Marlin, Nemo’s father."
     },
     {
       "id": "film-7-08",
-      "question": "What 2007 Pixar film is about a rat who dreams of becoming a chef in Paris?",
-      "answer": "Ratatouille",
-      "choices": ["Ratatouille", "The Aristocats", "Flushed Away", "Chef"],
-      "note": "Remy and Linguini; the critic is Anton Ego."
+      "question": "What is the name of the rat who dreams of becoming a chef in Ratatouille?",
+      "answer": "Remy",
+      "choices": [
+        "Remy",
+        "Linguini",
+        "Emile",
+        "Anton Ego"
+      ],
+      "note": "Linguini is the hapless human cook; Emile is Remy’s brother."
     },
     {
       "id": "film-7-09",
       "question": "Who voices Elsa in Frozen?",
       "answer": "Idina Menzel",
-      "choices": ["Idina Menzel", "Kristen Bell", "Kristin Chenoweth", "Lea Michele"],
+      "choices": [
+        "Idina Menzel",
+        "Kristen Bell",
+        "Kristin Chenoweth",
+        "Lea Michele"
+      ],
       "note": "Kristen Bell is Anna. Menzel’s “Let It Go” became inescapable."
     },
     {
       "id": "film-7-10",
-      "question": "What Pixar film is set inside a young girl’s mind, with characters like Joy and Sadness?",
-      "answer": "Inside Out",
-      "choices": ["Inside Out", "Soul", "Coco", "Turning Red"],
-      "note": "Riley’s headquarters; Bing Bong is her imaginary friend."
+      "question": "In Inside Out, what is the name of the girl whose mind the story takes place in?",
+      "answer": "Riley",
+      "choices": [
+        "Riley",
+        "Joy",
+        "Bing Bong",
+        "Meg"
+      ],
+      "note": "Riley Andersen, who moves from Minnesota to San Francisco."
     }
   ]
 }

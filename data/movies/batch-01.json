@@ -8,70 +8,120 @@
       "id": "film-1-01",
       "question": "In Home Alone, what is the family’s last name?",
       "answer": "McCallister",
-      "choices": ["McCallister", "McCauley", "Parker", "Pruitt"],
+      "choices": [
+        "McCallister",
+        "McCauley",
+        "Parker",
+        "Pruitt"
+      ],
       "note": "Kevin McCallister, played by Macaulay Culkin."
     },
     {
       "id": "film-1-02",
       "question": "In The Silence of the Lambs, what name does the FBI give the serial killer Clarice is hunting?",
       "answer": "Buffalo Bill",
-      "choices": ["Buffalo Bill", "The Tooth Fairy", "John Doe", "The Zodiac"],
+      "choices": [
+        "Buffalo Bill",
+        "The Tooth Fairy",
+        "John Doe",
+        "The Zodiac"
+      ],
       "note": "Ted Levine’s Jame Gumb; Hannibal Lecter is already behind bars."
     },
     {
       "id": "film-1-03",
-      "question": "Who plays chaos-theory mathematician Ian Malcolm in Jurassic Park?",
-      "answer": "Jeff Goldblum",
-      "choices": ["Jeff Goldblum", "Sam Neill", "Wayne Knight", "Richard Attenborough"],
-      "note": "Neill is Dr. Grant; Attenborough is John Hammond; Knight is Newman-ish Nedry."
+      "question": "What is the name of the chaos-theory mathematician Jeff Goldblum plays in Jurassic Park?",
+      "answer": "Ian Malcolm",
+      "choices": [
+        "Ian Malcolm",
+        "Alan Grant",
+        "John Hammond",
+        "Robert Muldoon"
+      ],
+      "note": "Sam Neill is Dr. Grant; Richard Attenborough is Hammond."
     },
     {
       "id": "film-1-04",
-      "question": "Which 1994 prison drama, based on a Stephen King novella, follows banker Andy Dufresne?",
-      "answer": "The Shawshank Redemption",
-      "choices": ["The Shawshank Redemption", "The Green Mile", "Cool Hand Luke", "The Hurricane"],
-      "note": "A slow starter in theaters; now a fixture of “best film ever” polls."
+      "question": "In The Shawshank Redemption, what is the name of the banker Tim Robbins plays?",
+      "answer": "Andy Dufresne",
+      "choices": [
+        "Andy Dufresne",
+        "Ellis Boyd Redding",
+        "Warden Norton",
+        "Tommy Williams"
+      ],
+      "note": "Morgan Freeman’s Red is Ellis Boyd Redding."
     },
     {
       "id": "film-1-05",
       "question": "Which 1994 film features a twist contest at a diner called Jack Rabbit Slim’s?",
       "answer": "Pulp Fiction",
-      "choices": ["Pulp Fiction", "Reservoir Dogs", "Swingers", "Diner"],
+      "choices": [
+        "Pulp Fiction",
+        "Reservoir Dogs",
+        "Swingers",
+        "Diner"
+      ],
       "note": "Uma Thurman and John Travolta; the trophy is a modest little statuette."
     },
     {
       "id": "film-1-06",
       "question": "In Forrest Gump, what does Forrest name his shrimp boat?",
       "answer": "Jenny",
-      "choices": ["Jenny", "Bubba", "Mama", "Alabama"],
+      "choices": [
+        "Jenny",
+        "Bubba",
+        "Mama",
+        "Alabama"
+      ],
       "note": "After Jenny Curran; the company is Bubba Gump Shrimp."
     },
     {
       "id": "film-1-07",
       "question": "In Titanic, what is the name of the blue diamond necklace?",
       "answer": "The Heart of the Ocean",
-      "choices": ["The Heart of the Ocean", "The Hope Diamond", "The Star of the Sea", "Le Cœur Bleu"],
+      "choices": [
+        "The Heart of the Ocean",
+        "The Hope Diamond",
+        "The Star of the Sea",
+        "Le Cœur Bleu"
+      ],
       "note": "Cal’s gift to Rose; it ends up on the ocean floor."
     },
     {
       "id": "film-1-08",
       "question": "In The Matrix, what is Neo’s name inside the simulation?",
       "answer": "Thomas Anderson",
-      "choices": ["Thomas Anderson", "John Anderson", "Thomas Smith", "Mr. Anderson"],
+      "choices": [
+        "Thomas Anderson",
+        "John Anderson",
+        "Thomas Smith",
+        "Mr. Anderson"
+      ],
       "note": "Agent Smith calls him “Mr. Anderson.”"
     },
     {
       "id": "film-1-09",
-      "question": "What is the name of Russell Crowe’s character in Gladiator?",
-      "answer": "Maximus",
-      "choices": ["Maximus", "Commodus", "Lucilla", "Marcus Aurelius"],
-      "note": "Maximus Decimus Meridius, commander of the Armies of the North."
+      "question": "In Gladiator, what is the name of the emperor’s son who becomes Maximus’s rival?",
+      "answer": "Commodus",
+      "choices": [
+        "Commodus",
+        "Marcus Aurelius",
+        "Lucilla",
+        "Juba"
+      ],
+      "note": "Joaquin Phoenix; Marcus Aurelius is the dying emperor, his father."
     },
     {
       "id": "film-1-10",
       "question": "In The Lord of the Rings, what was Gollum’s name before the Ring corrupted him?",
       "answer": "Sméagol",
-      "choices": ["Sméagol", "Déagol", "Bilbo", "Isildur"],
+      "choices": [
+        "Sméagol",
+        "Déagol",
+        "Bilbo",
+        "Isildur"
+      ],
       "note": "Déagol is the cousin who first finds the Ring in the river."
     }
   ]
