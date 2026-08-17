@@ -8,71 +8,121 @@
       "id": "film-9-01",
       "question": "In Terminator 2: Judgment Day, what is the liquid-metal terminator called?",
       "answer": "T-1000",
-      "choices": ["T-1000", "T-800", "T-X", "T-3000"],
-      "note": "Robert Patrick; Arnold’s T-800 is the good guy this time."
+      "choices": [
+        "T-1000",
+        "T-800",
+        "T-X",
+        "T-3000"
+      ],
+      "note": "Robert Patrick; Arnold’s T-800 is the protector this time."
     },
     {
       "id": "film-9-02",
-      "question": "What 1999 film asks you to choose between a red pill and a blue pill?",
-      "answer": "The Matrix",
-      "choices": ["The Matrix", "Inception", "Dark City", "The Thirteenth Floor"],
-      "note": "Red pill: the truth. Blue pill: back to the simulation."
+      "question": "Who played Trinity in The Matrix?",
+      "answer": "Carrie-Anne Moss",
+      "choices": [
+        "Carrie-Anne Moss",
+        "Sandra Bullock",
+        "Monica Bellucci",
+        "Jennifer Connelly"
+      ],
+      "note": "Keanu Reeves is Neo; Laurence Fishburne is Morpheus."
     },
     {
       "id": "film-9-03",
-      "question": "In Jurassic Park, what is the name of the island that holds the park?",
-      "answer": "Isla Nublar",
-      "choices": ["Isla Nublar", "Isla Sorna", "Skull Island", "Isla Muerta"],
-      "note": "Isla Sorna is the “Site B” island in The Lost World."
+      "question": "In Jurassic Park, which dinosaurs hunt the children through the kitchen?",
+      "answer": "Velociraptors",
+      "choices": [
+        "Velociraptors",
+        "T. rex",
+        "Dilophosaurus",
+        "Spinosaurus"
+      ],
+      "note": "The T. rex gets the goat and the Jeep; the raptors get the kitchen."
     },
     {
       "id": "film-9-04",
       "question": "In the Scream films, what is the name of the masked killer?",
       "answer": "Ghostface",
-      "choices": ["Ghostface", "Jigsaw", "Michael Myers", "Ghostface Killah"],
+      "choices": [
+        "Ghostface",
+        "Jigsaw",
+        "Michael Myers",
+        "Ghostface Killah"
+      ],
       "note": "The first Scream landed in 1996; “Do you like scary movies?”"
     },
     {
       "id": "film-9-05",
       "question": "Which 1999 found-footage horror film is about three student filmmakers lost in the woods?",
       "answer": "The Blair Witch Project",
-      "choices": ["The Blair Witch Project", "Paranormal Activity", "The Descent", "Cannibal Holocaust"],
+      "choices": [
+        "The Blair Witch Project",
+        "Paranormal Activity",
+        "The Descent",
+        "The Witch"
+      ],
       "note": "A marketing legend; it looked like a real missing-persons case."
     },
     {
       "id": "film-9-06",
       "question": "In the 2017 film It, what is the name of the dancing clown?",
       "answer": "Pennywise",
-      "choices": ["Pennywise", "Krusty", "Captain Spaulding", "Jigsaw"],
+      "choices": [
+        "Pennywise",
+        "Krusty",
+        "Captain Spaulding",
+        "Jigsaw"
+      ],
       "note": "Bill Skarsgård; the Losers’ Club vs. a nightmare in Derry, Maine."
     },
     {
       "id": "film-9-07",
       "question": "In Avatar, what is the name of the moon the Na’vi call home?",
       "answer": "Pandora",
-      "choices": ["Pandora", "Arrakis", "Ego", "LV-426"],
+      "choices": [
+        "Pandora",
+        "Arrakis",
+        "Ego",
+        "Tatooine"
+      ],
       "note": "James Cameron, 2009; unobtanium and a very long runtime."
     },
     {
       "id": "film-9-08",
       "question": "In Black Panther, what is the name of T’Challa’s hidden African nation?",
       "answer": "Wakanda",
-      "choices": ["Wakanda", "Asgard", "Genosha", "Zamunda"],
+      "choices": [
+        "Wakanda",
+        "Asgard",
+        "Genosha",
+        "Zamunda"
+      ],
       "note": "2018 — vibranium, the Heart-Shaped Herb, and “Wakanda forever.”"
     },
     {
       "id": "film-9-09",
       "question": "In Denis Villeneuve’s Dune films, what is the name of the desert planet?",
       "answer": "Arrakis",
-      "choices": ["Arrakis", "Pandora", "Tatooine", "Caladan"],
+      "choices": [
+        "Arrakis",
+        "Pandora",
+        "Tatooine",
+        "Caladan"
+      ],
       "note": "Also called Dune; the spice is melange. Caladan is the Atreides homeworld."
     },
     {
       "id": "film-9-10",
-      "question": "In A Quiet Place (2018), what must the family avoid doing to stay alive?",
-      "answer": "Making a sound",
-      "choices": ["Making a sound", "Going outside in daylight", "Using electricity", "Looking at the creatures"],
-      "note": "John Krasinski directed and starred; the monsters hunt by hearing."
+      "question": "Who directed and starred in A Quiet Place (2018)?",
+      "answer": "John Krasinski",
+      "choices": [
+        "John Krasinski",
+        "Emily Blunt",
+        "M. Night Shyamalan",
+        "Jordan Peele"
+      ],
+      "note": "Blunt co-stars as his wife; the creatures hunt by sound."
     }
   ]
 }

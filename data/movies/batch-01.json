@@ -6,73 +6,73 @@
   "questions": [
     {
       "id": "film-1-01",
-      "question": "In which 1990 Christmas comedy is a boy accidentally left behind when his family flies to Paris?",
-      "answer": "Home Alone",
-      "choices": ["Home Alone", "Elf", "The Santa Clause", "Mrs. Doubtfire"],
-      "note": "Macaulay Culkin as Kevin McCallister; the Wet Bandits never recover."
+      "question": "In Home Alone, what is the family’s last name?",
+      "answer": "McCallister",
+      "choices": ["McCallister", "McCauley", "Parker", "Pruitt"],
+      "note": "Kevin McCallister, played by Macaulay Culkin."
     },
     {
       "id": "film-1-02",
-      "question": "Which 1991 thriller pairs Jodie Foster’s FBI trainee with Anthony Hopkins as Hannibal Lecter?",
-      "answer": "The Silence of the Lambs",
-      "choices": ["The Silence of the Lambs", "Seven", "Zodiac", "The Bone Collector"],
-      "note": "It swept the “Big Five” Oscars — Picture, Director, Actor, Actress, Screenplay."
+      "question": "In The Silence of the Lambs, what name does the FBI give the serial killer Clarice is hunting?",
+      "answer": "Buffalo Bill",
+      "choices": ["Buffalo Bill", "The Tooth Fairy", "John Doe", "The Zodiac"],
+      "note": "Ted Levine’s Jame Gumb; Hannibal Lecter is already behind bars."
     },
     {
       "id": "film-1-03",
-      "question": "What 1993 Steven Spielberg film opens a dinosaur theme park that goes very wrong?",
-      "answer": "Jurassic Park",
-      "choices": ["Jurassic Park", "Jaws", "King Kong", "The Lost World"],
-      "note": "Based on Michael Crichton’s novel; “life finds a way.”"
+      "question": "Who plays chaos-theory mathematician Ian Malcolm in Jurassic Park?",
+      "answer": "Jeff Goldblum",
+      "choices": ["Jeff Goldblum", "Sam Neill", "Wayne Knight", "Richard Attenborough"],
+      "note": "Neill is Dr. Grant; Attenborough is John Hammond; Knight is Newman-ish Nedry."
     },
     {
       "id": "film-1-04",
-      "question": "Which 1994 prison drama, based on a Stephen King novella, follows Andy Dufresne at Shawshank?",
+      "question": "Which 1994 prison drama, based on a Stephen King novella, follows banker Andy Dufresne?",
       "answer": "The Shawshank Redemption",
-      "choices": ["The Shawshank Redemption", "The Green Mile", "Cool Hand Luke", "Papillon"],
-      "note": "A slow starter at the box office; now a perennial “best film ever” poll champ."
+      "choices": ["The Shawshank Redemption", "The Green Mile", "Cool Hand Luke", "The Hurricane"],
+      "note": "A slow starter in theaters; now a fixture of “best film ever” polls."
     },
     {
       "id": "film-1-05",
-      "question": "Which 1994 Quentin Tarantino film is told out of order and follows hitmen Vincent and Jules?",
+      "question": "Which 1994 film features a twist contest at a diner called Jack Rabbit Slim’s?",
       "answer": "Pulp Fiction",
-      "choices": ["Pulp Fiction", "Reservoir Dogs", "Kill Bill", "Lock, Stock and Two Smoking Barrels"],
-      "note": "John Travolta’s comeback; the dance at Jack Rabbit Slim’s."
+      "choices": ["Pulp Fiction", "Reservoir Dogs", "Swingers", "Diner"],
+      "note": "Uma Thurman and John Travolta; the trophy is a modest little statuette."
     },
     {
       "id": "film-1-06",
-      "question": "Which 1994 Tom Hanks film follows an Alabama man through decades of U.S. history?",
-      "answer": "Forrest Gump",
-      "choices": ["Forrest Gump", "Big", "Cast Away", "The Green Mile"],
-      "note": "It beat Pulp Fiction and The Shawshank Redemption to Best Picture."
+      "question": "In Forrest Gump, what does Forrest name his shrimp boat?",
+      "answer": "Jenny",
+      "choices": ["Jenny", "Bubba", "Mama", "Alabama"],
+      "note": "After Jenny Curran; the company is Bubba Gump Shrimp."
     },
     {
       "id": "film-1-07",
-      "question": "Which 1997 disaster romance about a sinking ocean liner starred Leonardo DiCaprio and Kate Winslet?",
-      "answer": "Titanic",
-      "choices": ["Titanic", "The Perfect Storm", "Pearl Harbor", "Poseidon"],
-      "note": "James Cameron; “I’m the king of the world!”"
+      "question": "In Titanic, what is the name of the blue diamond necklace?",
+      "answer": "The Heart of the Ocean",
+      "choices": ["The Heart of the Ocean", "The Hope Diamond", "The Star of the Sea", "Le Cœur Bleu"],
+      "note": "Cal’s gift to Rose; it ends up on the ocean floor."
     },
     {
       "id": "film-1-08",
-      "question": "Which 1999 sci-fi film asks Neo to choose between a red pill and a blue pill?",
-      "answer": "The Matrix",
-      "choices": ["The Matrix", "Dark City", "Inception", "eXistenZ"],
-      "note": "Keanu Reeves, Carrie-Anne Moss, and a lot of black leather."
+      "question": "In The Matrix, what is Neo’s name inside the simulation?",
+      "answer": "Thomas Anderson",
+      "choices": ["Thomas Anderson", "John Anderson", "Thomas Smith", "Mr. Anderson"],
+      "note": "Agent Smith calls him “Mr. Anderson.”"
     },
     {
       "id": "film-1-09",
-      "question": "Which 2000 Ridley Scott epic stars Russell Crowe as a Roman general sold into slavery?",
-      "answer": "Gladiator",
-      "choices": ["Gladiator", "Troy", "Ben-Hur", "300"],
-      "note": "“Are you not entertained?” — and a Best Picture winner."
+      "question": "What is the name of Russell Crowe’s character in Gladiator?",
+      "answer": "Maximus",
+      "choices": ["Maximus", "Commodus", "Lucilla", "Marcus Aurelius"],
+      "note": "Maximus Decimus Meridius, commander of the Armies of the North."
     },
     {
       "id": "film-1-10",
-      "question": "Which 2001 film began Peter Jackson’s Lord of the Rings trilogy?",
-      "answer": "The Fellowship of the Ring",
-      "choices": ["The Fellowship of the Ring", "The Two Towers", "The Return of the King", "The Hobbit: An Unexpected Journey"],
-      "note": "Nine walkers leave Rivendell; the trilogy wraps in 2003."
+      "question": "In The Lord of the Rings, what was Gollum’s name before the Ring corrupted him?",
+      "answer": "Sméagol",
+      "choices": ["Sméagol", "Déagol", "Bilbo", "Isildur"],
+      "note": "Déagol is the cousin who first finds the Ring in the river."
     }
   ]
 }
