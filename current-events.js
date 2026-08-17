@@ -510,38 +510,6 @@ function briefingListHtml(items, allItems) {
     const i = allItems.indexOf(item);
     return i < 0 ? 0 : i;
   };
-  if (ce.briefingFilter === "all") {
-    return `<div class="ce-list">${items
-      .map((item) => briefingCard(item, idxOf(item)))
-      .join("")}</div>`;
-  }
-  if (
-    ce.briefingFilter === "sports" &&
-    ce.briefingSportFilter === "all"
-  ) {
-    const groups = new Map();
-    for (const item of items) {
-      const key = sportTag(item);
-      if (!groups.has(key)) groups.set(key, []);
-      groups.get(key).push(item);
-    }
-    const ordered = [...groups.entries()].sort((a, b) => {
-      const cov = (list) =>
-        list.reduce((n, i) => n + (Number(i.coverage) || 1), 0);
-      return cov(b[1]) - cov(a[1]) || b[1].length - a[1].length || a[0].localeCompare(b[0]);
-    });
-    return ordered
-      .map(
-        ([sport, list]) => `
-      <section class="ce-group">
-        <h3 class="ce-group-title">${escapeHtml(sport)}</h3>
-        <div class="ce-list">${list
-          .map((item) => briefingCard(item, idxOf(item)))
-          .join("")}</div>
-      </section>`
-      )
-      .join("");
-  }
   return `<div class="ce-list">${items
     .map((item) => briefingCard(item, idxOf(item)))
     .join("")}</div>`;
