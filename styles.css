@@ -281,15 +281,6 @@ body::after {
   color: var(--accent);
 }
 
-.cat-path {
-  display: block;
-  margin-top: 0.45rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: var(--ink-soft);
-}
-
 .crumbs {
   display: flex;
   flex-wrap: wrap;

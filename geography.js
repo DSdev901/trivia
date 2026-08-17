@@ -2107,13 +2107,11 @@ function continentCardHtml(g) {
       <h3>${escapeHtml(g.name)}</h3>
       <p>${escapeHtml(g.blurb || "Map quizzes by region.")}</p>
       <span class="meta">${n} quiz${n === 1 ? "" : "zes"}</span>
-      <span class="cat-path">/geography/${escapeHtml(g.id)}</span>
     </a>`;
 }
 
 function packCardHtml(p, groupId) {
   const gid = groupId || geo.group?.id || groupForPack(p.id)?.id;
-  const path = gid ? `/geography/${gid}/${p.id}` : `/geography/${p.id}`;
   return `
     <a class="geo-pack-card" href="${gid ? href(["geography", gid, p.id]) : href(["geography", p.id])}">
       <h3>${escapeHtml(p.name)}</h3>
@@ -2121,7 +2119,6 @@ function packCardHtml(p, groupId) {
       <span class="meta">${p.itemCount} places · ${(p.modes || [])
         .map((m) => MODE_META[m]?.label || m)
         .join(" · ")}</span>
-      <span class="cat-path">${escapeHtml(path)}</span>
     </a>`;
 }
 

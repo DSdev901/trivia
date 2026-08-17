@@ -165,7 +165,6 @@ function renderCategories(categories) {
           <h2>${c.name}</h2>
           <p>${c.description}</p>
           <span class="meta">${categoryMetaLabel(c)}</span>
-          <span class="cat-path">/${c.id}</span>
         </a>`
         )
         .join("")}
@@ -199,12 +198,10 @@ function renderHub(category) {
       <a class="hub-card" href="${href([category.id, "study"])}">
         <h3>Study</h3>
         <p>Browse sections and review each president’s facts.</p>
-        <span class="cat-path">/${category.id}/study</span>
       </a>
       <a class="hub-card hub-card-accent" href="${href([category.id, "quiz"])}">
         <h3>Quiz</h3>
         <p>Pick one or more sections and work through multiple-choice questions.</p>
-        <span class="cat-path">/${category.id}/quiz</span>
       </a>
       ${
         canFlag
@@ -265,7 +262,6 @@ function renderBatches(category) {
         <h2>Section ${n}</h2>
         <p>${batchLabel(category, n)}</p>
         <span class="meta">Study mode</span>
-        <span class="cat-path">/${category.id}/study/${n}</span>
       </a>`;
   }).join("");
 
