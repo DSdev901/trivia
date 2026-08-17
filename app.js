@@ -130,18 +130,16 @@ function batchLabel(category, n) {
 function nextStudyNavHtml(category, batchNumber) {
   const unit = category.type === "movies" ? "round" : "section";
   const total = category.batchCount;
-  if (batchNumber < total) {
-    const next = batchNumber + 1;
-    const label = batchLabel(category, next);
-    return `
-    <div class="batch-next-row">
-      <a class="primary-btn" href="${href([category.id, "study", String(next)])}">Next ${unit}: ${escapeHtml(label)}</a>
-    </div>`;
-  }
+  const prev = batchNumber > 1 ? batchNumber - 1 : null;
+  const next = batchNumber < total ? batchNumber + 1 : null;
+  const prevBtn = prev
+    ? `<a class="secondary-btn" href="${href([category.id, "study", String(prev)])}">Previous ${unit}: ${escapeHtml(batchLabel(category, prev))}</a>`
+    : `<span class="batch-next-placeholder"></span>`;
+  const nextBtn = next
+    ? `<a class="primary-btn" href="${href([category.id, "study", String(next)])}">Next ${unit}: ${escapeHtml(batchLabel(category, next))}</a>`
+    : `<a class="secondary-btn" href="${href([category.id, "study"])}">Back to ${unit}s</a>`;
   return `
-    <div class="batch-next-row">
-      <a class="secondary-btn" href="${href([category.id, "study"])}">Back to ${unit}s</a>
-    </div>`;
+    <div class="batch-next-row">${prevBtn}${nextBtn}</div>`;
 }
 
 async function loadJSON(path) {
@@ -150,9 +148,16 @@ async function loadJSON(path) {
   return res.json();
 }
 
+const batchCache = new Map();
+
 async function loadBatch(category, batchNumber) {
+  const key = `${category.id}:${batchNumber}`;
+  const hit = batchCache.get(key);
+  if (hit) return hit;
   const path = category.batchPath.replace("{n}", String(batchNumber).padStart(2, "0"));
-  return loadJSON(path);
+  const data = await loadJSON(path);
+  batchCache.set(key, data);
+  return data;
 }
 
 function categoryMetaLabel(category) {
@@ -646,11 +651,83 @@ function openPresident(president) {
   show("detail");
 }
 
+function presidentNavHtml(prev, next) {
+  const prevBtn = prev
+    ? `<button type="button" class="secondary-btn president-nav-btn" data-president-nav="prev">
+        <span class="president-nav-dir">Previous</span>
+        <span class="president-nav-name">#${prev.number} ${escapeHtml(prev.name)}</span>
+      </button>`
+    : `<span class="president-nav-placeholder"></span>`;
+  const nextBtn = next
+    ? `<button type="button" class="primary-btn president-nav-btn" data-president-nav="next">
+        <span class="president-nav-dir">Next</span>
+        <span class="president-nav-name">#${next.number} ${escapeHtml(next.name)}</span>
+      </button>`
+    : `<span class="president-nav-placeholder"></span>`;
+  return `<nav class="president-nav" aria-label="President">${prevBtn}${nextBtn}</nav>`;
+}
+
+async function findNeighborPresidents(batch, president) {
+  const list = batch?.presidents || [];
+  const i = list.findIndex((p) => Number(p.number) === Number(president.number));
+  const out = { prev: null, next: null };
+  if (i < 0) return out;
+  if (i > 0) out.prev = list[i - 1];
+  if (i < list.length - 1) out.next = list[i + 1];
+  const category = state.category;
+  if (!category) return out;
+  try {
+    if (!out.prev && batch.batch > 1) {
+      const prevBatch = await loadBatch(category, batch.batch - 1);
+      const prevList = prevBatch.presidents || [];
+      out.prev = prevList[prevList.length - 1] || null;
+    }
+    if (!out.next && batch.batch < category.batchCount) {
+      const nextBatch = await loadBatch(category, batch.batch + 1);
+      out.next = nextBatch.presidents?.[0] || null;
+    }
+  } catch {
+    /* keep in-section neighbors */
+  }
+  return out;
+}
+
+async function goNeighborPresident(delta) {
+  const category = state.category;
+  const batch = state.batch;
+  const president = state.president;
+  if (!category || !batch || !president) return;
+  const list = batch.presidents || [];
+  const i = list.findIndex((p) => Number(p.number) === Number(president.number));
+  const targetI = i + delta;
+  stopAllSpeech();
+  if (i >= 0 && targetI >= 0 && targetI < list.length) {
+    openPresident(list[targetI]);
+    window.scrollTo(0, 0);
+    return;
+  }
+  const nextBatchNum = batch.batch + delta;
+  if (nextBatchNum < 1 || nextBatchNum > category.batchCount) return;
+  const nextBatch = await loadBatch(category, nextBatchNum);
+  if (state.president !== president) return;
+  const neighbors = nextBatch.presidents || [];
+  const pick = delta > 0 ? neighbors[0] : neighbors[neighbors.length - 1];
+  if (!pick) return;
+  state.batch = nextBatch;
+  openPresident(pick);
+  const nextHash = href([category.id, "study", String(nextBatch.batch)]);
+  if (hashPath() !== nextHash) history.replaceState(null, "", nextHash);
+  window.scrollTo(0, 0);
+}
+
 async function renderPresidentDetail() {
   const president = state.president;
   const batchNum = state.batch.batch;
   const canSpeak = speechSupported();
-  const rankedVoices = canSpeak ? await listEnglishVoices() : [];
+  const [rankedVoices, neighbors] = await Promise.all([
+    canSpeak ? listEnglishVoices() : Promise.resolve([]),
+    findNeighborPresidents(state.batch, president),
+  ]);
   const defaultUri = canSpeak ? await getDefaultBrowserVoiceUri() : "";
   const savedUri = getSavedVoiceUri();
   const selectedUri =
@@ -737,6 +814,7 @@ async function renderPresidentDetail() {
           </div>
         </section>
       </header>
+      ${presidentNavHtml(neighbors.prev, neighbors.next)}
       <ol class="facts">
         ${president.trivia
           .map((fact, i) => {
@@ -759,6 +837,7 @@ async function renderPresidentDetail() {
           })
           .join("")}
       </ol>
+      ${presidentNavHtml(neighbors.prev, neighbors.next)}
     </article>
   `;
 
@@ -875,6 +954,12 @@ async function renderPresidentDetail() {
         text: president.trivia[factIndex],
       });
       renderPresidentDetail();
+    });
+  });
+
+  els.detail.querySelectorAll("[data-president-nav]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      void goNeighborPresident(btn.dataset.presidentNav === "next" ? 1 : -1);
     });
   });
 }
