@@ -16,6 +16,7 @@ import {
 } from "./speech.js";
 import { isLocalHost } from "./env.js";
 import { buildBriefing, highlightPeople, BRIEFING_FEATURED, rankBriefingItems } from "./briefing.js";
+import { crumbsHtml, href } from "./routes.js";
 
 const NEWS_SECTIONS = [
   { id: "sports", label: "Sports", path: "data/current-events/sports.json" },
@@ -828,6 +829,21 @@ function render() {
   const updated = latestGeneratedAt();
   const canRefresh = isLocalHost();
   ce.root.innerHTML = `
+    ${crumbsHtml(
+      ce.mode === "netflix"
+        ? [
+            { label: "Home", href: href([]) },
+            { label: "Netflix", href: href(["netflix"]) },
+          ]
+        : [
+            { label: "Home", href: href([]) },
+            { label: "Current Events", href: href(["current-events"]) },
+            ...(ce.tab === "feed"
+              ? [{ label: "Live feed", href: href(["current-events", "feed"]) }]
+              : []),
+          ],
+      escapeHtml
+    )}
     <div class="ce-head">
       <div>
         <h2 class="section-title">${ce.mode === "netflix" ? "Netflix" : "Current Events"}</h2>
@@ -856,15 +872,19 @@ function render() {
         ? ""
         : `<div class="ce-tabs" role="tablist">
       ${visibleTabs()
-        .map(
-          (s) => `
-        <button type="button" role="tab" class="ce-tab ${s.id === ce.tab ? "is-active" : ""}"
-          data-tab="${s.id}" aria-selected="${s.id === ce.tab}">${s.label}${
+        .map((s) => {
+          const tabHref =
+            s.id === "feed"
+              ? href(["current-events", "feed"])
+              : href(["current-events"]);
+          return `
+        <a role="tab" class="ce-tab ${s.id === ce.tab ? "is-active" : ""}"
+          href="${tabHref}" data-tab="${s.id}" aria-selected="${s.id === ce.tab}">${s.label}${
             s.id === "briefing" && briefingIsNew()
               ? `<span class="ce-tab-new">New</span>`
               : ""
-          }</button>`
-        )
+          }</a>`;
+        })
         .join("")}
     </div>`
     }
@@ -874,10 +894,6 @@ function render() {
   ce.root.querySelectorAll(".ce-tab").forEach((btn) => {
     btn.addEventListener("click", () => {
       stopPlayback();
-      ce.tab = btn.dataset.tab;
-      ce.notice = "";
-      window.scrollTo(0, 0);
-      render();
     });
   });
 
@@ -1071,10 +1087,14 @@ async function refreshData() {
 
 /* ---------------- entry ---------------- */
 
-export async function renderCurrentEvents({ els, mode = "news" }) {
+export async function renderCurrentEvents({ els, mode = "news", tab } = {}) {
+  const nextMode = mode === "netflix" ? "netflix" : "news";
+  const nextTab =
+    nextMode === "netflix" ? "netflix" : tab === "feed" ? "feed" : "briefing";
+  if (ce.mode !== nextMode || ce.tab !== nextTab) stopPlayback();
   ce.root = els.currentEvents;
-  ce.mode = mode === "netflix" ? "netflix" : "news";
-  ce.tab = ce.mode === "netflix" ? "netflix" : "briefing";
+  ce.mode = nextMode;
+  ce.tab = nextTab;
   ce.notice = "";
   ce.canSpeak = speechSupported();
   const needsLoad =

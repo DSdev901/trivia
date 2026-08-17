@@ -1,5 +1,7 @@
 /** Captured trivia questions parsed from photos. */
 
+import { crumbsHtml, href } from "./routes.js";
+
 const PIN_KEY = "trivia.uploadPin";
 const API_KEY = "trivia.apiBase";
 
@@ -267,6 +269,13 @@ function render() {
     return;
   }
   cap.root.innerHTML = `
+    ${crumbsHtml(
+      [
+        { label: "Home", href: href([]) },
+        { label: "Prior Saucer Trivia", href: href(["prior-saucer"]) },
+      ],
+      escapeHtml
+    )}
     <div class="cap-head">
       <div>
         <h2 class="section-title">Prior Saucer Trivia</h2>

@@ -1,5 +1,7 @@
 /** Geography map quizzes: study, pin, name, type, capitals, flags. */
 
+import { crumbsHtml, href, toSlug } from "./routes.js";
+
 const PACKS_PATH = "data/geography/packs.json";
 const MAPS = {
   continents: "data/geography/maps/continents.svg",
@@ -2062,25 +2064,68 @@ function packById(id) {
   );
 }
 
+function groupForPack(packId) {
+  return (
+    geo.groups.find((g) => (g.packs || []).some((p) => p.id === packId)) || null
+  );
+}
+
+function groupHref() {
+  return geo.group ? href(["geography", geo.group.id]) : href(["geography"]);
+}
+
+function packHref(pack = geo.pack, group = geo.group) {
+  if (!pack) return groupHref();
+  const gid = group?.id || groupForPack(pack.id)?.id;
+  return gid ? href(["geography", gid, pack.id]) : href(["geography", pack.id]);
+}
+
+function modeHref(mode, pack = geo.pack, group = geo.group) {
+  if (!pack) return groupHref();
+  const gid = group?.id || groupForPack(pack.id)?.id;
+  return gid
+    ? href(["geography", gid, pack.id, mode])
+    : href(["geography", pack.id, mode]);
+}
+
+function geoCrumbs(tailLabel) {
+  const items = [
+    { label: "Home", href: href([]) },
+    { label: "Geography", href: href(["geography"]) },
+  ];
+  if (geo.group) {
+    items.push({ label: geo.group.name, href: href(["geography", geo.group.id]) });
+  }
+  if (geo.pack) {
+    items.push({ label: geo.pack.name, href: packHref() });
+  }
+  if (tailLabel) items.push({ label: tailLabel, href: "" });
+  return crumbsHtml(items, escapeHtml);
+}
+
 function continentCardHtml(g) {
   const n = (g.packs || []).length;
   return `
-    <button type="button" class="geo-continent-card" data-group="${escapeHtml(g.id)}">
+    <a class="geo-continent-card" href="${href(["geography", g.id])}">
       <h3>${escapeHtml(g.name)}</h3>
       <p>${escapeHtml(g.blurb || "Map quizzes by region.")}</p>
       <span class="meta">${n} quiz${n === 1 ? "" : "zes"}</span>
-    </button>`;
+      <span class="cat-path">/geography/${escapeHtml(g.id)}</span>
+    </a>`;
 }
 
-function packCardHtml(p) {
+function packCardHtml(p, groupId) {
+  const gid = groupId || geo.group?.id || groupForPack(p.id)?.id;
+  const path = gid ? `/geography/${gid}/${p.id}` : `/geography/${p.id}`;
   return `
-    <button type="button" class="geo-pack-card" data-pack="${escapeHtml(p.id)}">
+    <a class="geo-pack-card" href="${gid ? href(["geography", gid, p.id]) : href(["geography", p.id])}">
       <h3>${escapeHtml(p.name)}</h3>
       <p>${escapeHtml(p.blurb)}</p>
       <span class="meta">${p.itemCount} places · ${(p.modes || [])
         .map((m) => MODE_META[m]?.label || m)
         .join(" · ")}</span>
-    </button>`;
+      <span class="cat-path">${escapeHtml(path)}</span>
+    </a>`;
 }
 
 function scrollPageTop() {
@@ -2094,6 +2139,7 @@ function renderHub() {
   scrollPageTop();
   geo.root.innerHTML = `
     <div class="geo-shell">
+      ${geoCrumbs()}
       <div class="geo-head">
         <div>
           <h2 class="section-title">Geography</h2>
@@ -2104,13 +2150,6 @@ function renderHub() {
         ${geo.groups.map(continentCardHtml).join("")}
       </div>
     </div>`;
-
-  geo.root.querySelectorAll(".geo-continent-card").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      geo.group = geo.groups.find((g) => g.id === btn.dataset.group) || null;
-      renderGroup();
-    });
-  });
 }
 
 function renderGroup() {
@@ -2126,13 +2165,14 @@ function renderGroup() {
       : [{ name: "Quizzes", packIds: (g.packs || []).map((p) => p.id) }];
   geo.root.innerHTML = `
     <div class="geo-shell">
+      ${geoCrumbs()}
       <div class="geo-head">
         <div>
           <p class="speech-kicker">Geography</p>
           <h2 class="section-title">${escapeHtml(g.name)}</h2>
           <p class="lede">${escapeHtml(g.blurb || "Map quizzes by region.")}</p>
         </div>
-        <button type="button" class="secondary-btn" id="geo-back-continents">All continents</button>
+        <a class="secondary-btn" href="${href(["geography"])}">All continents</a>
       </div>
       ${sections
         .map((sec) => {
@@ -2140,29 +2180,24 @@ function renderGroup() {
             .map((id) => (g.packs || []).find((p) => p.id === id) || packById(id))
             .filter(Boolean);
           if (!packs.length) return "";
+          const slug = toSlug(sec.name);
           return `
-            <section class="geo-group">
-              <h3 class="geo-group-title">${escapeHtml(sec.name)}</h3>
+            <section class="geo-group" id="geo-sec-${escapeHtml(slug)}">
+              <h3 class="geo-group-title">
+                <a class="geo-section-link" href="${href(["geography", g.id, slug])}">${escapeHtml(sec.name)}</a>
+              </h3>
               ${
                 sec.blurb
                   ? `<p class="geo-section-lede">${escapeHtml(sec.blurb)}</p>`
                   : ""
               }
               <div class="geo-pack-grid">
-                ${packs.map(packCardHtml).join("")}
+                ${packs.map((p) => packCardHtml(p, g.id)).join("")}
               </div>
             </section>`;
         })
         .join("")}
     </div>`;
-
-  geo.root.querySelector("#geo-back-continents")?.addEventListener("click", () => {
-    geo.group = null;
-    renderHub();
-  });
-  geo.root.querySelectorAll(".geo-pack-card").forEach((btn) => {
-    btn.addEventListener("click", () => void openPack(btn.dataset.pack));
-  });
 }
 
 function renderPackModes() {
@@ -2170,25 +2205,26 @@ function renderPackModes() {
   scrollPageTop();
   geo.root.innerHTML = `
     <div class="geo-shell">
+      ${geoCrumbs()}
       <div class="geo-head">
         <div>
           <p class="speech-kicker">Geography pack</p>
           <h2 class="section-title">${escapeHtml(pack.name)}</h2>
           <p class="lede">${escapeHtml(pack.blurb || "")}</p>
         </div>
-        <button type="button" class="secondary-btn" id="geo-back-hub">${
+        <a class="secondary-btn" href="${groupHref()}">${
           geo.group ? `Back to ${escapeHtml(geo.group.name)}` : "All continents"
-        }</button>
+        }</a>
       </div>
       <div class="geo-mode-grid">
         ${(pack.modes || [])
           .map((m) => {
             const meta = MODE_META[m] || { label: m, blurb: "" };
             return `
-              <button type="button" class="geo-mode-card" data-mode="${escapeHtml(m)}">
+              <a class="geo-mode-card" href="${modeHref(m, pack)}">
                 <h3>${escapeHtml(meta.label)}</h3>
                 <p>${escapeHtml(meta.blurb)}</p>
-              </button>`;
+              </a>`;
           })
           .join("")}
       </div>
@@ -2207,17 +2243,6 @@ function renderPackModes() {
     paintMap(null);
     bindMapControls(geo.root.querySelector("#geo-map"));
   }
-  geo.root.querySelector("#geo-back-hub")?.addEventListener("click", () => {
-    geo.pack = null;
-    geo.mode = null;
-    geo._packViewBox = null;
-    geo._panLimit = null;
-    if (geo.group) renderGroup();
-    else renderHub();
-  });
-  geo.root.querySelectorAll(".geo-mode-card").forEach((btn) => {
-    btn.addEventListener("click", () => startMode(btn.dataset.mode));
-  });
 }
 
 function startMode(mode) {
@@ -2241,8 +2266,9 @@ function renderStudy() {
   scrollPageTop();
   geo.root.innerHTML = `
     <div class="geo-shell geo-play geo-play--study">
+      ${geoCrumbs("Study")}
       <div class="geo-toolbar">
-        <button type="button" class="secondary-btn" id="geo-back-modes">Modes</button>
+        <a class="secondary-btn" href="${packHref()}">Modes</a>
         <p class="speech-kicker">${escapeHtml(geo.pack.name)} · Study</p>
       </div>
       <div class="geo-play-layout ${geo.mapSvg ? "" : "no-map"}">
@@ -2304,9 +2330,6 @@ function selectStudyItem(id) {
 }
 
 function bindStudy() {
-  geo.root.querySelector("#geo-back-modes")?.addEventListener("click", () => {
-    renderPackModes();
-  });
   geo.root.querySelectorAll(".geo-item-btn").forEach((btn) => {
     btn.addEventListener("click", () => selectStudyItem(btn.dataset.id));
   });
@@ -2365,8 +2388,9 @@ function renderPlay() {
 
   geo.root.innerHTML = `
     <div class="${playClass}">
+      ${geoCrumbs(MODE_META[geo.mode]?.label || geo.mode)}
       <div class="geo-toolbar">
-        <button type="button" class="secondary-btn" id="geo-back-modes">Modes</button>
+        <a class="secondary-btn" href="${packHref()}">Modes</a>
         <p class="speech-kicker">${escapeHtml(geo.pack.name)} · ${escapeHtml(
           MODE_META[geo.mode]?.label || geo.mode
         )}</p>
@@ -2544,25 +2568,16 @@ function renderDone() {
         </ul>
         <div class="setup-actions">
           <button type="button" class="primary-btn" id="geo-again">Quiz again</button>
-          <button type="button" class="secondary-btn" id="geo-to-modes">Back to modes</button>
-          <button type="button" class="secondary-btn" id="geo-to-hub">${
+          <a class="secondary-btn" href="${packHref()}">Back to modes</a>
+          <a class="secondary-btn" href="${groupHref()}">${
             geo.group ? `Back to ${escapeHtml(geo.group.name)}` : "All continents"
-          }</button>
+          }</a>
         </div>
       </div>
     </div>`;
 
   geo.root.querySelector("#geo-again")?.addEventListener("click", () => {
     startMode(geo.mode);
-  });
-  geo.root.querySelector("#geo-to-modes")?.addEventListener("click", () => {
-    renderPackModes();
-  });
-  geo.root.querySelector("#geo-to-hub")?.addEventListener("click", () => {
-    geo.pack = null;
-    geo.mode = null;
-    if (geo.group) renderGroup();
-    else renderHub();
   });
 }
 
@@ -2593,16 +2608,90 @@ export function cleanupGeography() {
   stopFocusZoom();
 }
 
-export async function renderGeography({ els }) {
+async function ensureIndex() {
+  if (geo.groups.length) return;
+  const res = await fetch(PACKS_PATH);
+  if (!res.ok) throw new Error(`Failed to load ${PACKS_PATH}`);
+  const data = await res.json();
+  geo.groups = data.groups || [];
+  geo.packs = data.packs || geo.groups.flatMap((g) => g.packs || []);
+}
+
+function isSectionSlug(group, token) {
+  if (!group || !token) return false;
+  if ((group.packs || []).some((p) => p.id === token)) return false;
+  return (group.sections || []).some((s) => toSlug(s.name) === token);
+}
+
+async function showGeographyRoute({ groupId, packId, mode } = {}) {
+  let group = groupId ? geo.groups.find((g) => g.id === groupId) || null : null;
+  let packToken = packId || "";
+  let playMode = mode || "";
+  let section = "";
+
+  if (packToken && !group) group = groupForPack(packToken);
+  if (group && packToken && isSectionSlug(group, packToken)) {
+    section = packToken;
+    packToken = "";
+    playMode = "";
+  }
+  if (packToken && !packById(packToken)) {
+    packToken = "";
+    playMode = "";
+  }
+
+  geo.group = group;
+
+  if (!packToken) {
+    geo.pack = null;
+    geo.mode = null;
+    if (group) {
+      renderGroup();
+      if (section) {
+        requestAnimationFrame(() => {
+          geo.root
+            ?.querySelector(`#geo-sec-${CSS.escape(section)}`)
+            ?.scrollIntoView({ block: "start" });
+        });
+      }
+    } else {
+      renderHub();
+    }
+    return;
+  }
+
+  const already =
+    geo.pack?.id === packToken &&
+    geo.items.length &&
+    geo.mode === playMode &&
+    playMode &&
+    geo.root?.querySelector(".geo-play, .quiz-done");
+  if (already) return;
+
+  if (geo.pack?.id !== packToken || !geo.items.length) {
+    const meta = packById(packToken);
+    if (!meta) {
+      if (group) renderGroup();
+      else renderHub();
+      return;
+    }
+    await loadPack(meta);
+  }
+  geo.group = group || groupForPack(packToken) || geo.group;
+
+  if (playMode && (geo.pack.modes || []).includes(playMode)) {
+    startMode(playMode);
+    return;
+  }
+  geo.mode = null;
+  renderPackModes();
+}
+
+export async function renderGeography({ els, groupId, packId, mode } = {}) {
   geo.root = els.geography;
-  cleanupGeography();
   try {
-    const res = await fetch(PACKS_PATH);
-    if (!res.ok) throw new Error(`Failed to load ${PACKS_PATH}`);
-    const data = await res.json();
-    geo.groups = data.groups || [];
-    geo.packs = data.packs || geo.groups.flatMap((g) => g.packs || []);
-    renderHub();
+    await ensureIndex();
+    await showGeographyRoute({ groupId, packId, mode });
   } catch (err) {
     geo.root.innerHTML = `<p class="error">${escapeHtml(err.message)}</p>`;
   }

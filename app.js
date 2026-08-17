@@ -44,8 +44,6 @@ import {
 } from "./periodic-table.js";
 import {
   cleanupGeography,
-  geographyCanGoBack,
-  geographyGoBack,
   renderGeography,
 } from "./geography.js";
 import {
@@ -54,6 +52,7 @@ import {
   cleanupCaptured,
   renderCaptured,
 } from "./captured.js";
+import { crumbsHtml, hashPath, href, parseHash } from "./routes.js";
 
 const els = {
   subtitle: document.getElementById("subtitle"),
@@ -162,57 +161,20 @@ function renderCategories(categories) {
       ${categories
         .map(
           (c) => `
-        <button type="button" class="category-card" data-id="${c.id}">
+        <a class="category-card" href="${href([c.id])}">
           <h2>${c.name}</h2>
           <p>${c.description}</p>
           <span class="meta">${categoryMetaLabel(c)}</span>
-        </button>`
+          <span class="cat-path">/${c.id}</span>
+        </a>`
         )
         .join("")}
     </div>
   `;
-
-  els.categories.querySelectorAll(".category-card").forEach((btn) => {
-    btn.addEventListener("click", () => openCategory(btn.dataset.id));
-  });
 }
 
 function openCategory(id) {
-  const category = state.categories.find((c) => c.id === id);
-  if (!category) return;
-  state.category = category;
-  state.batch = null;
-  state.president = null;
-  state.quiz = null;
-  state.lastResult = null;
-  els.subtitle.textContent = category.name;
-  if (category.type === "current-events") {
-    renderCurrentEvents({ els, mode: "news" });
-    show("currentEvents");
-    return;
-  }
-  if (category.type === "netflix") {
-    renderCurrentEvents({ els, mode: "netflix" });
-    show("currentEvents");
-    return;
-  }
-  if (category.type === "periodic-table") {
-    void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
-    show("periodicTable");
-    return;
-  }
-  if (category.type === "geography") {
-    void renderGeography({ els });
-    show("geography");
-    return;
-  }
-  if (category.type === "captured") {
-    void renderCaptured({ els });
-    show("captured");
-    return;
-  }
-  renderHub(category);
-  show("hub");
+  goToHash([id]);
 }
 
 function renderHub(category) {
@@ -221,6 +183,13 @@ function renderHub(category) {
   const canFlag = isLocalHost();
 
   els.hub.innerHTML = `
+    ${crumbsHtml(
+      [
+        { label: "Home", href: href([]) },
+        { label: category.name, href: href([category.id]) },
+      ],
+      escapeHtml
+    )}
     <h2 class="section-title">${category.name}</h2>
     <p class="lede">${
       canFlag
@@ -228,46 +197,30 @@ function renderHub(category) {
         : "Study the material, or quiz yourself until every question is cleared from rotation."
     }</p>
     <div class="hub-actions">
-      <button type="button" class="hub-card" id="hub-study">
+      <a class="hub-card" href="${href([category.id, "study"])}">
         <h3>Study</h3>
         <p>Browse sections and review each president’s facts.</p>
-      </button>
-      <button type="button" class="hub-card hub-card-accent" id="hub-quiz">
+        <span class="cat-path">/${category.id}/study</span>
+      </a>
+      <a class="hub-card hub-card-accent" href="${href([category.id, "quiz"])}">
         <h3>Quiz</h3>
         <p>Pick one or more sections and work through multiple-choice questions.</p>
-      </button>
+        <span class="cat-path">/${category.id}/quiz</span>
+      </a>
       ${
         canFlag
-          ? `<button type="button" class="hub-card" id="hub-flags">
+          ? `<a class="hub-card" href="${href([category.id, "flags"])}">
         <h3>Flagged for replacement</h3>
         <p>${
           flagged
             ? `${flagged} item${flagged === 1 ? "" : "s"} waiting to be rewritten.`
             : "Nothing flagged yet. Use Flag on any fact or quiz question."
         }</p>
-      </button>`
+      </a>`
           : ""
       }
     </div>
   `;
-
-  document.getElementById("hub-study").addEventListener("click", () => {
-    renderBatches(category);
-    show("batches");
-    els.subtitle.textContent = `${category.name} · Study`;
-  });
-
-  document.getElementById("hub-quiz").addEventListener("click", () => {
-    renderQuizSetup(category);
-    show("quizSetup");
-    els.subtitle.textContent = `${category.name} · Quiz setup`;
-  });
-
-  document.getElementById("hub-flags")?.addEventListener("click", () => {
-    renderFlags();
-    show("flags");
-    els.subtitle.textContent = `${category.name} · Flagged`;
-  });
 }
 
 function startElementQuiz({
@@ -309,21 +262,26 @@ function renderBatches(category) {
   const cards = Array.from({ length: category.batchCount }, (_, i) => {
     const n = i + 1;
     return `
-      <button type="button" class="batch-card" data-batch="${n}">
+      <a class="batch-card" href="${href([category.id, "study", String(n)])}">
         <h2>Section ${n}</h2>
         <p>${batchLabel(category, n)}</p>
         <span class="meta">Study mode</span>
-      </button>`;
+        <span class="cat-path">/${category.id}/study/${n}</span>
+      </a>`;
   }).join("");
 
   els.batches.innerHTML = `
+    ${crumbsHtml(
+      [
+        { label: "Home", href: href([]) },
+        { label: category.name, href: href([category.id]) },
+        { label: "Study", href: href([category.id, "study"]) },
+      ],
+      escapeHtml
+    )}
     <h2 class="section-title">Choose a section</h2>
     <div class="batch-grid">${cards}</div>
   `;
-
-  els.batches.querySelectorAll(".batch-card").forEach((btn) => {
-    btn.addEventListener("click", () => openBatch(Number(btn.dataset.batch)));
-  });
 }
 
 async function openBatch(batchNumber) {
@@ -341,7 +299,20 @@ async function openBatch(batchNumber) {
 }
 
 function renderPresidents(batch) {
+  const category = state.category;
   els.presidents.innerHTML = `
+    ${crumbsHtml(
+      [
+        { label: "Home", href: href([]) },
+        { label: category.name, href: href([category.id]) },
+        { label: "Study", href: href([category.id, "study"]) },
+        {
+          label: batchLabel(category, batch.batch),
+          href: href([category.id, "study", String(batch.batch)]),
+        },
+      ],
+      escapeHtml
+    )}
     <h2 class="section-title">Section ${batch.batch}: Presidents ${batch.range}</h2>
     <div class="president-list">
       ${batch.presidents
@@ -615,6 +586,14 @@ function renderFlags() {
   }
   const flags = listFlags(state.category.id);
   els.flags.innerHTML = `
+    ${crumbsHtml(
+      [
+        { label: "Home", href: href([]) },
+        { label: state.category.name, href: href([state.category.id]) },
+        { label: "Flagged", href: href([state.category.id, "flags"]) },
+      ],
+      escapeHtml
+    )}
     <h2 class="section-title">Flagged for replacement</h2>
     <p class="lede">These stay on this browser until you clear them. Copy the list when you want them rewritten.</p>
     ${
@@ -695,6 +674,14 @@ function renderQuizSetup(category) {
   }).join("");
 
   els.quizSetup.innerHTML = `
+    ${crumbsHtml(
+      [
+        { label: "Home", href: href([]) },
+        { label: category.name, href: href([category.id]) },
+        { label: "Quiz", href: href([category.id, "quiz"]) },
+      ],
+      escapeHtml
+    )}
     <h2 class="section-title">Quiz setup</h2>
     <p class="lede">Select the sections to include. After each answer you’ll see if you were right, then choose whether to keep that question in rotation.</p>
     <div class="batch-check-list" id="quiz-batch-list">${options}</div>
@@ -946,15 +933,8 @@ function renderQuizDone() {
 
   document.getElementById("quiz-to-hub").addEventListener("click", () => {
     state.quiz = null;
-    if (isElements) {
-      void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
-      show("periodicTable");
-      els.subtitle.textContent = state.category.name;
-      return;
-    }
-    renderHub(state.category);
-    show("hub");
-    els.subtitle.textContent = state.category.name;
+    if (isElements) goToHash(["periodic-table"]);
+    else goToHash([state.category.id]);
   });
 }
 
@@ -966,119 +946,245 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;");
 }
 
-function goHome() {
+function goToHash(parts) {
+  const next = href(parts);
+  if (hashPath() === next) {
+    void applyRoute();
+    return;
+  }
+  location.hash = next;
+}
+
+function setPageTitle(parts) {
+  const bits = (parts || []).filter(Boolean);
+  document.title = bits.length ? `${bits.join(" · ")} — General Trivia` : "General Trivia";
+}
+
+function quizInProgress() {
+  return Boolean(state.view === "quiz" && state.quiz?.rotation?.remaining?.length);
+}
+
+function confirmLeaveQuiz() {
+  if (!quizInProgress()) return true;
+  return confirm("Leave this quiz? Your current rotation progress will be lost.");
+}
+
+function quizStaysOnRoute(catId, rest) {
+  if (!state.quiz || state.category?.id !== catId) return false;
+  if (state.quiz.mode === "elements") return catId === "periodic-table";
+  return rest[0] === "quiz";
+}
+
+let routeSeq = 0;
+
+async function applyRoute() {
+  const seq = ++routeSeq;
+  const { category: catId, rest } = parseHash();
+
+  if (quizInProgress() && !quizStaysOnRoute(catId, rest)) {
+    if (!confirmLeaveQuiz()) {
+      const back =
+        state.quiz.mode === "elements"
+          ? href(["periodic-table"])
+          : href([state.category.id, "quiz"]);
+      history.replaceState(null, "", back);
+      return;
+    }
+    state.quiz = null;
+    state.lastResult = null;
+  }
+
+  if (!catId) {
+    stopAllSpeech();
+    cleanupPeriodicTable();
+    cleanupGeography();
+    cleanupCaptured();
+    state.category = null;
+    state.batch = null;
+    state.president = null;
+    state.quiz = null;
+    state.lastResult = null;
+    els.subtitle.textContent = "";
+    setPageTitle([]);
+    show("categories");
+    return;
+  }
+
+  const category = state.categories.find((c) => c.id === catId);
+  if (!category) {
+    goToHash([]);
+    return;
+  }
+
+  if (state.view === "quiz" && quizStaysOnRoute(catId, rest)) return;
+  if (state.view === "quizDone" && quizStaysOnRoute(catId, rest)) return;
+  if (
+    state.view === "detail" &&
+    catId === "presidents" &&
+    rest[0] === "study" &&
+    String(state.batch?.batch) === rest[1]
+  ) {
+    return;
+  }
+
   stopAllSpeech();
-  cleanupPeriodicTable();
-  cleanupGeography();
-  cleanupCaptured();
-  state.category = null;
+  if (catId !== "geography") cleanupGeography();
+  if (catId !== "periodic-table") cleanupPeriodicTable();
+  if (catId !== "prior-saucer") cleanupCaptured();
+
+  state.category = category;
+
+  if (category.type === "current-events") {
+    show("currentEvents");
+    await renderCurrentEvents({ els, mode: "news", tab: rest[0] });
+    if (seq !== routeSeq) return;
+    const bits = rest[0] === "feed" ? [category.name, "Live feed"] : [category.name];
+    els.subtitle.textContent = bits.join(" · ");
+    setPageTitle(bits);
+    return;
+  }
+  if (category.type === "netflix") {
+    show("currentEvents");
+    await renderCurrentEvents({ els, mode: "netflix" });
+    if (seq !== routeSeq) return;
+    els.subtitle.textContent = category.name;
+    setPageTitle([category.name]);
+    return;
+  }
+  if (category.type === "periodic-table") {
+    if (state.view !== "periodicTable") {
+      void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
+    }
+    show("periodicTable");
+    els.subtitle.textContent = category.name;
+    setPageTitle([category.name]);
+    return;
+  }
+  if (category.type === "geography") {
+    show("geography");
+    await renderGeography({
+      els,
+      groupId: rest[0] || "",
+      packId: rest[1] || "",
+      mode: rest[2] || "",
+    });
+    if (seq !== routeSeq) return;
+    els.subtitle.textContent = category.name;
+    setPageTitle([category.name, rest[0], rest[1], rest[2]].filter(Boolean));
+    return;
+  }
+  if (category.type === "captured") {
+    if (state.view !== "captured") void renderCaptured({ els });
+    show("captured");
+    els.subtitle.textContent = category.name;
+    setPageTitle([category.name]);
+    return;
+  }
+
+  if (rest[0] === "study") {
+    const n = Number(rest[1]);
+    if (n) {
+      if (state.batch?.batch === n && state.view === "presidents") {
+        els.subtitle.textContent = `${category.name} · Section ${state.batch.batch} (${state.batch.range})`;
+        setPageTitle([category.name, batchLabel(category, n)]);
+        show("presidents");
+        return;
+      }
+      try {
+        await openBatch(n);
+      } catch {
+        /* openBatch renders the error */
+      }
+      if (seq !== routeSeq) return;
+      setPageTitle([category.name, batchLabel(category, n)]);
+      return;
+    }
+    state.batch = null;
+    renderBatches(category);
+    show("batches");
+    els.subtitle.textContent = `${category.name} · Study`;
+    setPageTitle([category.name, "Study"]);
+    return;
+  }
+  if (rest[0] === "quiz") {
+    state.quiz = null;
+    renderQuizSetup(category);
+    show("quizSetup");
+    els.subtitle.textContent = `${category.name} · Quiz setup`;
+    setPageTitle([category.name, "Quiz"]);
+    return;
+  }
+  if (rest[0] === "flags") {
+    renderFlags();
+    show("flags");
+    els.subtitle.textContent = `${category.name} · Flagged`;
+    setPageTitle([category.name, "Flagged"]);
+    return;
+  }
+
   state.batch = null;
-  state.president = null;
-  state.quiz = null;
-  state.lastResult = null;
-  els.subtitle.textContent = "";
-  show("categories");
+  renderHub(category);
+  show("hub");
+  els.subtitle.textContent = category.name;
+  setPageTitle([category.name]);
+}
+
+function goHome() {
+  goToHash([]);
 }
 
 function goBack() {
-  stopAllSpeech();
-  switch (state.view) {
-    case "detail":
-      state.president = null;
-      els.subtitle.textContent = `${state.category.name} · Section ${state.batch.batch} (${state.batch.range})`;
-      show("presidents");
-      break;
-    case "presidents":
-      state.batch = null;
-      els.subtitle.textContent = `${state.category.name} · Study`;
-      show("batches");
-      break;
-    case "batches":
-    case "quizSetup":
-    case "flags":
-      state.quiz = null;
-      renderHub(state.category);
-      els.subtitle.textContent = state.category.name;
-      show("hub");
-      break;
-    case "quizDone":
-      state.quiz = null;
-      if (state.category?.type === "periodic-table") {
-        void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
-        els.subtitle.textContent = state.category.name;
-        show("periodicTable");
-      } else {
-        renderHub(state.category);
-        els.subtitle.textContent = state.category.name;
-        show("hub");
-      }
-      break;
-    case "quiz": {
-      const hasProgress = state.quiz?.rotation?.remaining?.length;
-      if (
-        hasProgress &&
-        !confirm("Leave this quiz? Your current rotation progress will be lost.")
-      ) {
-        return;
-      }
-      const wasElements = state.quiz?.mode === "elements";
-      state.quiz = null;
-      state.lastResult = null;
-      if (wasElements) {
-        void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
-        els.subtitle.textContent = state.category.name;
-        show("periodicTable");
-      } else {
-        renderQuizSetup(state.category);
-        els.subtitle.textContent = `${state.category.name} · Quiz setup`;
-        show("quizSetup");
-      }
-      break;
-    }
-    case "geography":
-      if (geographyCanGoBack() && geographyGoBack()) {
-        els.subtitle.textContent = state.category.name;
-        break;
-      }
-      goHome();
-      break;
-    case "captured":
-      if (capturedCanGoBack() && capturedGoBack()) {
-        els.subtitle.textContent = state.category.name;
-        break;
-      }
-      goHome();
-      break;
-    case "hub":
-    case "currentEvents":
-    case "periodicTable":
-      goHome();
-      break;
-    default:
-      goHome();
+  if (state.view === "detail") {
+    state.president = null;
+    els.subtitle.textContent = `${state.category.name} · Section ${state.batch.batch} (${state.batch.range})`;
+    show("presidents");
+    return;
   }
+  if (state.view === "quiz") {
+    if (!confirmLeaveQuiz()) return;
+    const wasElements = state.quiz?.mode === "elements";
+    state.quiz = null;
+    state.lastResult = null;
+    if (wasElements) {
+      void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
+      show("periodicTable");
+      els.subtitle.textContent = state.category.name;
+      return;
+    }
+    renderQuizSetup(state.category);
+    show("quizSetup");
+    els.subtitle.textContent = `${state.category.name} · Quiz setup`;
+    return;
+  }
+  if (state.view === "quizDone") {
+    state.quiz = null;
+    if (state.category?.type === "periodic-table") {
+      goToHash(["periodic-table"]);
+      return;
+    }
+    goToHash([state.category.id]);
+    return;
+  }
+  if (state.view === "captured" && capturedCanGoBack() && capturedGoBack()) {
+    els.subtitle.textContent = state.category.name;
+    return;
+  }
+  const { parts } = parseHash();
+  if (parts.length <= 1) goToHash([]);
+  else goToHash(parts.slice(0, -1));
 }
 
 els.backBtn.addEventListener("click", goBack);
-els.homeBtn.addEventListener("click", () => {
-  if (state.view === "quiz") {
-    const hasProgress = state.quiz?.rotation?.remaining?.length;
-    if (
-      hasProgress &&
-      !confirm("Leave this quiz? Your current rotation progress will be lost.")
-    ) {
-      return;
-    }
-  }
-  goHome();
-});
+els.homeBtn.addEventListener("click", () => goToHash([]));
 
 async function init() {
   try {
     const data = await loadJSON("data/categories.json");
     state.categories = data.categories;
     renderCategories(state.categories);
-    show("categories");
+    if (!location.hash) history.replaceState(null, "", "#/");
+    window.addEventListener("hashchange", () => void applyRoute());
+    await applyRoute();
   } catch (err) {
     // Local runs usually fail because no static server is running; on the
     // live site a load failure is a network problem, so the advice differs.

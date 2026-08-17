@@ -15,6 +15,7 @@ import {
   unlockSpeech,
   voiceQualityTip,
 } from "./speech.js";
+import { crumbsHtml, href } from "./routes.js";
 
 const DATA_PATH = "data/periodic-table/elements.json";
 
@@ -540,6 +541,13 @@ function render() {
   if (!pt.root || !pt.data) return;
   pt.root.innerHTML = `
     <div class="pt-shell">
+      ${crumbsHtml(
+        [
+          { label: "Home", href: href([]) },
+          { label: "Periodic Table", href: href(["periodic-table"]) },
+        ],
+        escapeHtml
+      )}
       <div class="pt-head">
         <div>
           <h2 class="section-title">Periodic Table</h2>
