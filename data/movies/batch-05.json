@@ -9,7 +9,7 @@
       "question": "Who played Jack Dawson in Titanic?",
       "answer": "Leonardo DiCaprio",
       "choices": ["Leonardo DiCaprio", "Brad Pitt", "Matt Damon", "Johnny Depp"],
-      "note": "Kate Winslet played Rose; they were reunited on-screen in Revolutionary Road."
+      "note": "Kate Winslet played Rose; they were later reunited in Revolutionary Road."
     },
     {
       "id": "film-5-02",
@@ -20,59 +20,59 @@
     },
     {
       "id": "film-5-03",
-      "question": "Who played Tony Stark / Iron Man in the Marvel Cinematic Universe?",
-      "answer": "Robert Downey Jr.",
-      "choices": ["Robert Downey Jr.", "Chris Evans", "Chris Hemsworth", "Mark Ruffalo"],
-      "note": "The role that relaunched his career, starting with Iron Man in 2008."
+      "question": "Who played Clarice Starling in The Silence of the Lambs?",
+      "answer": "Jodie Foster",
+      "choices": ["Jodie Foster", "Julianne Moore", "Michelle Pfeiffer", "Glenn Close"],
+      "note": "Opposite Anthony Hopkins as Hannibal Lecter. Moore played Clarice in the 2001 sequel."
     },
     {
       "id": "film-5-04",
+      "question": "Who played Neo in The Matrix?",
+      "answer": "Keanu Reeves",
+      "choices": ["Keanu Reeves", "Will Smith", "Brad Pitt", "Laurence Fishburne"],
+      "note": "Laurence Fishburne played Morpheus; Carrie-Anne Moss played Trinity. Will Smith turned the role down."
+    },
+    {
+      "id": "film-5-05",
+      "question": "Who played Captain Jack Sparrow in the Pirates of the Caribbean films?",
+      "answer": "Johnny Depp",
+      "choices": ["Johnny Depp", "Orlando Bloom", "Geoffrey Rush", "Javier Bardem"],
+      "note": "The first film, The Curse of the Black Pearl, landed in 2003."
+    },
+    {
+      "id": "film-5-06",
       "question": "Who played Hermione Granger in the Harry Potter films?",
       "answer": "Emma Watson",
       "choices": ["Emma Watson", "Emma Thompson", "Bonnie Wright", "Evanna Lynch"],
       "note": "Daniel Radcliffe is Harry; Rupert Grint is Ron."
     },
     {
-      "id": "film-5-05",
-      "question": "Who starred as Eliza Doolittle in the 1964 film My Fair Lady?",
-      "answer": "Audrey Hepburn",
-      "choices": ["Audrey Hepburn", "Julie Andrews", "Audrey Meadows", "Deborah Kerr"],
-      "note": "Julie Andrews originated the role on stage and won an Oscar the same year for Mary Poppins."
-    },
-    {
-      "id": "film-5-06",
+      "id": "film-5-07",
       "question": "Who played the Joker in The Dark Knight?",
       "answer": "Heath Ledger",
       "choices": ["Heath Ledger", "Joaquin Phoenix", "Jack Nicholson", "Jared Leto"],
       "note": "A posthumous Best Supporting Actor Oscar."
     },
     {
-      "id": "film-5-07",
-      "question": "Who played Clarice Starling in The Silence of the Lambs?",
-      "answer": "Jodie Foster",
-      "choices": ["Jodie Foster", "Julianne Moore", "Michelle Pfeiffer", "Glenn Close"],
-      "note": "Opposite Anthony Hopkins as Hannibal Lecter; the film swept the “Big Five” Oscars."
-    },
-    {
       "id": "film-5-08",
-      "question": "Who played Neo in The Matrix?",
-      "answer": "Keanu Reeves",
-      "choices": ["Keanu Reeves", "Will Smith", "Brad Pitt", "Laurence Fishburne"],
-      "note": "Laurence Fishburne played Morpheus; Carrie-Anne Moss played Trinity."
+      "question": "Who played Tony Stark / Iron Man in the Marvel Cinematic Universe?",
+      "answer": "Robert Downey Jr.",
+      "choices": ["Robert Downey Jr.", "Chris Evans", "Chris Hemsworth", "Mark Ruffalo"],
+      "note": "The role that relaunched his career, starting with Iron Man in 2008."
     },
     {
       "id": "film-5-09",
-      "question": "Who played the title role in Erin Brockovich?",
-      "answer": "Julia Roberts",
-      "choices": ["Julia Roberts", "Sandra Bullock", "Reese Witherspoon", "Meg Ryan"],
-      "note": "She won Best Actress; the film is based on a real legal case."
+      "question": "Who played Katniss Everdeen in The Hunger Games films?",
+      "answer": "Jennifer Lawrence",
+      "choices": ["Jennifer Lawrence", "Shailene Woodley", "Emma Stone", "Kristen Stewart"],
+      "note": "Woodley was Tris in Divergent; Stewart was Bella in Twilight."
     },
     {
       "id": "film-5-10",
-      "question": "Who played James Bond in the first official Bond film, Dr. No?",
-      "answer": "Sean Connery",
-      "choices": ["Sean Connery", "Roger Moore", "George Lazenby", "Pierce Brosnan"],
-      "note": "Connery was the first of the Eon series; Lazenby did only On Her Majesty’s Secret Service."
+      "question": "Who played James Bond in Casino Royale (2006), his first film in the role?",
+      "answer": "Daniel Craig",
+      "choices": ["Daniel Craig", "Pierce Brosnan", "Sean Connery", "Timothy Dalton"],
+      "note": "Brosnan’s last Bond film was Die Another Day (2002)."
     }
   ]
 }

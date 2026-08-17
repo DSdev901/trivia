@@ -48,7 +48,7 @@
     {
       "id": "movies",
       "name": "Film & Movies",
-      "description": "One hundred pub-quiz film questions in ten rounds of ten — study the answers, listen, then quiz.",
+      "description": "One hundred pub-quiz film questions from 1990 on, in ten rounds of ten — study the answers, listen, then quiz.",
       "type": "movies",
       "batchCount": 10,
       "batchPath": "data/movies/batch-{n}.json",

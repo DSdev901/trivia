@@ -6,73 +6,73 @@
   "questions": [
     {
       "id": "film-3-01",
-      "question": "What silent World War I flying film won the first Academy Award for Best Picture?",
-      "answer": "Wings",
-      "choices": ["Wings", "Sunrise", "The Jazz Singer", "Metropolis"],
-      "note": "Outstanding Picture for 1927/28; Sunrise won a separate “Unique and Artistic Picture” prize that year."
+      "question": "Which 1991 film is the only horror movie to win Best Picture?",
+      "answer": "The Silence of the Lambs",
+      "choices": ["The Silence of the Lambs", "Get Out", "The Exorcist", "Jaws"],
+      "note": "Oscars 1992; it also won the other four “Big Five” awards."
     },
     {
       "id": "film-3-02",
-      "question": "How many Oscars did Titanic win, tying Ben-Hur’s long-standing record?",
-      "answer": "11",
-      "choices": ["11", "9", "10", "14"],
-      "note": "The Lord of the Rings: The Return of the King later also won 11, from 11 nominations."
+      "question": "Which 1994 film won Best Picture over Pulp Fiction and The Shawshank Redemption?",
+      "answer": "Forrest Gump",
+      "choices": ["Forrest Gump", "Pulp Fiction", "The Shawshank Redemption", "Quiz Show"],
+      "note": "Tom Hanks won Best Actor; Robert Zemeckis won Best Director."
     },
     {
       "id": "film-3-03",
-      "question": "Who is the only person to win four acting Oscars?",
-      "answer": "Katharine Hepburn",
-      "choices": ["Katharine Hepburn", "Meryl Streep", "Jack Nicholson", "Daniel Day-Lewis"],
-      "note": "All four were Best Actress; Streep has the most acting nominations."
+      "question": "How many Oscars did Titanic win, tying Ben-Hur’s long-standing record?",
+      "answer": "11",
+      "choices": ["11", "9", "10", "14"],
+      "note": "The Return of the King later also won 11, from 11 nominations."
     },
     {
       "id": "film-3-04",
-      "question": "Which Lord of the Rings film won Best Picture?",
-      "answer": "The Return of the King",
-      "choices": ["The Return of the King", "The Fellowship of the Ring", "The Two Towers", "The Hobbit: An Unexpected Journey"],
-      "note": "It swept 11 Oscars in 2004, including Best Director for Peter Jackson."
-    },
-    {
-      "id": "film-3-05",
-      "question": "Who directed Schindler’s List, which won Best Picture in 1994?",
-      "answer": "Steven Spielberg",
-      "choices": ["Steven Spielberg", "Martin Scorsese", "Roman Polanski", "Francis Ford Coppola"],
-      "note": "Spielberg’s first Best Director Oscar; he also won for Saving Private Ryan’s direction, not Picture."
-    },
-    {
-      "id": "film-3-06",
-      "question": "Which Bong Joon-ho film was the first non-English-language film to win Best Picture?",
-      "answer": "Parasite",
-      "choices": ["Parasite", "Crouching Tiger, Hidden Dragon", "Roma", "Amour"],
-      "note": "South Korea, 2019 — it also won Best Director, Original Screenplay, and International Feature."
-    },
-    {
-      "id": "film-3-07",
-      "question": "Who won Best Actor for The Godfather and sent Sacheen Littlefeather to refuse the Oscar?",
-      "answer": "Marlon Brando",
-      "choices": ["Marlon Brando", "Al Pacino", "Robert De Niro", "Jack Nicholson"],
-      "note": "Pacino was nominated for Supporting Actor that year; he later won Best Actor for Scent of a Woman."
-    },
-    {
-      "id": "film-3-08",
       "question": "Which film won Best Picture at the 1999 Oscars, beating Saving Private Ryan?",
       "answer": "Shakespeare in Love",
       "choices": ["Shakespeare in Love", "Saving Private Ryan", "Life Is Beautiful", "The Thin Red Line"],
       "note": "A famous “they robbed Spielberg” pub-quiz gripe."
     },
     {
-      "id": "film-3-09",
+      "id": "film-3-05",
+      "question": "Which Lord of the Rings film won Best Picture?",
+      "answer": "The Return of the King",
+      "choices": ["The Return of the King", "The Fellowship of the Ring", "The Two Towers", "The Hobbit: An Unexpected Journey"],
+      "note": "It went 11-for-11 at the 2004 Oscars, including Best Director for Peter Jackson."
+    },
+    {
+      "id": "film-3-06",
+      "question": "Which 2013 historical drama directed by Steve McQueen won Best Picture?",
+      "answer": "12 Years a Slave",
+      "choices": ["12 Years a Slave", "Gravity", "American Hustle", "Dallas Buyers Club"],
+      "note": "Based on Solomon Northup’s memoir; McQueen was the first Black director to win Best Picture."
+    },
+    {
+      "id": "film-3-07",
       "question": "In 2017, which film was mistakenly announced as Best Picture before Moonlight was named the winner?",
       "answer": "La La Land",
-      "choices": ["La La Land", "Arrival", "Manchester by the Sea", "Hell or High Water"],
+      "choices": ["La La Land", "Arrival", "Manchester by the Sea", "Hidden Figures"],
       "note": "Warren Beatty and Faye Dunaway were handed the wrong envelope."
     },
     {
+      "id": "film-3-08",
+      "question": "Which 2018 Marvel film was the first superhero movie nominated for Best Picture?",
+      "answer": "Black Panther",
+      "choices": ["Black Panther", "The Dark Knight", "Iron Man", "Wonder Woman"],
+      "note": "The Dark Knight was famously snubbed for Picture; Black Panther broke through."
+    },
+    {
+      "id": "film-3-09",
+      "question": "Which Bong Joon-ho film was the first non-English-language film to win Best Picture?",
+      "answer": "Parasite",
+      "choices": ["Parasite", "Crouching Tiger, Hidden Dragon", "Roma", "Amour"],
+      "note": "South Korea, 2019 — it also won Director, Original Screenplay, and International Feature."
+    },
+    {
       "id": "film-3-10",
-      "question": "Which filmmaker holds the record for the most Academy Awards won by a single person?",
-      "answer": "Walt Disney",
-      "choices": ["Walt Disney", "Alan Menken", "John Williams", "Katharine Hepburn"],
-      "note": "22 competitive Oscars, plus honorary awards — far ahead of anyone else."
+      "question": "Which 2022 Best Picture winner stars Michelle Yeoh in a story about a multiverse of lives?",
+      "answer": "Everything Everywhere All at Once",
+      "choices": ["Everything Everywhere All at Once", "CODA", "Nomadland", "The Shape of Water"],
+      "note": "A24; Yeoh won Best Actress. CODA had won Picture the year before."
     }
   ]
 }

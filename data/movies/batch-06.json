@@ -6,73 +6,123 @@
   "questions": [
     {
       "id": "film-6-01",
-      "question": "What was the first James Bond film released in cinemas?",
-      "answer": "Dr. No",
-      "choices": ["Dr. No", "From Russia with Love", "Goldfinger", "Casino Royale"],
-      "note": "1962. Casino Royale became an official Eon Bond film much later, in 2006."
+      "question": "In the Harry Potter films, what is the name of Harry’s owl?",
+      "answer": "Hedwig",
+      "choices": [
+        "Hedwig",
+        "Errol",
+        "Crookshanks",
+        "Fawkes"
+      ],
+      "note": "A snowy owl; Errol is the Weasleys’, Crookshanks is Hermione’s cat, Fawkes is Dumbledore’s phoenix."
     },
     {
       "id": "film-6-02",
       "question": "In the Harry Potter films, what school does Harry attend?",
       "answer": "Hogwarts",
-      "choices": ["Hogwarts", "Beauxbatons", "Durmstrang", "Ilvermorny"],
+      "choices": [
+        "Hogwarts",
+        "Beauxbatons",
+        "Durmstrang",
+        "Ilvermorny"
+      ],
       "note": "Full name: Hogwarts School of Witchcraft and Wizardry."
     },
     {
       "id": "film-6-03",
       "question": "What is the name of Elsa and Anna’s kingdom in Frozen?",
       "answer": "Arendelle",
-      "choices": ["Arendelle", "Corona", "Atlantica", "DunBroch"],
+      "choices": [
+        "Arendelle",
+        "Corona",
+        "Atlantica",
+        "DunBroch"
+      ],
       "note": "Corona is Tangled; Atlantica is The Little Mermaid; DunBroch is Brave."
     },
     {
       "id": "film-6-04",
       "question": "Which superhero team’s first standalone Marvel Cinematic Universe film was released in 2012?",
       "answer": "The Avengers",
-      "choices": ["The Avengers", "The X-Men", "The Justice League", "The Guardians of the Galaxy"],
+      "choices": [
+        "The Avengers",
+        "The X-Men",
+        "The Justice League",
+        "The Guardians of the Galaxy"
+      ],
       "note": "Directed by Joss Whedon; it assembled Iron Man, Captain America, Thor, and Hulk."
     },
     {
       "id": "film-6-05",
       "question": "In The Lord of the Rings, who is tasked with destroying the One Ring?",
       "answer": "Frodo Baggins",
-      "choices": ["Frodo Baggins", "Gandalf", "Aragorn", "Bilbo Baggins"],
+      "choices": [
+        "Frodo Baggins",
+        "Gandalf",
+        "Aragorn",
+        "Bilbo Baggins"
+      ],
       "note": "Bilbo found it; Frodo takes it to Mount Doom, with Sam."
     },
     {
       "id": "film-6-06",
       "question": "What 1993 dinosaur film, directed by Steven Spielberg, launched a major franchise?",
       "answer": "Jurassic Park",
-      "choices": ["Jurassic Park", "King Kong", "The Lost World", "Land of the Lost"],
-      "note": "Based on Michael Crichton’s novel; The Lost World was the 1997 sequel."
+      "choices": [
+        "Jurassic Park",
+        "King Kong",
+        "The Lost World",
+        "Land of the Lost"
+      ],
+      "note": "The Lost World was the 1997 sequel."
     },
     {
       "id": "film-6-07",
       "question": "What is the name of Tom Cruise’s spy in the Mission: Impossible films?",
       "answer": "Ethan Hunt",
-      "choices": ["Ethan Hunt", "Jason Bourne", "Jack Ryan", "James Bond"],
-      "note": "IMF: Impossible Mission Force."
+      "choices": [
+        "Ethan Hunt",
+        "Jason Bourne",
+        "Jack Ryan",
+        "James Bond"
+      ],
+      "note": "The first Mission: Impossible film landed in 1996."
     },
     {
       "id": "film-6-08",
       "question": "What is the subtitle of the second Hunger Games film?",
       "answer": "Catching Fire",
-      "choices": ["Catching Fire", "Mockingjay", "The Half-Blood Prince", "Breaking Dawn"],
-      "note": "Mockingjay was split into two films after that."
+      "choices": [
+        "Catching Fire",
+        "Mockingjay",
+        "The Half-Blood Prince",
+        "Breaking Dawn"
+      ],
+      "note": "Mockingjay was then split into two films."
     },
     {
       "id": "film-6-09",
       "question": "In the Marvel films, what is the name of Thor’s hammer?",
       "answer": "Mjolnir",
-      "choices": ["Mjolnir", "Stormbreaker", "Gungnir", "Hofund"],
+      "choices": [
+        "Mjolnir",
+        "Stormbreaker",
+        "Gungnir",
+        "Hofund"
+      ],
       "note": "Stormbreaker is the later axe; Gungnir is Odin’s spear."
     },
     {
       "id": "film-6-10",
-      "question": "Which Star Wars film was the first one released in theaters?",
-      "answer": "Star Wars (A New Hope)",
-      "choices": ["Star Wars (A New Hope)", "The Phantom Menace", "The Empire Strikes Back", "Revenge of the Sith"],
-      "note": "1977, originally just titled Star Wars; later numbered Episode IV."
+      "question": "Which Star Wars film, released in 1999, began the prequel trilogy?",
+      "answer": "The Phantom Menace",
+      "choices": [
+        "The Phantom Menace",
+        "Attack of the Clones",
+        "Revenge of the Sith",
+        "The Force Awakens"
+      ],
+      "note": "Episode I — Jar Jar, podracing, and a young Darth Vader named Anakin."
     }
   ]
 }

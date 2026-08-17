@@ -6,73 +6,73 @@
   "questions": [
     {
       "id": "film-9-01",
-      "question": "In Alien, what is the name of the warrant officer played by Sigourney Weaver?",
-      "answer": "Ellen Ripley",
-      "choices": ["Ellen Ripley", "Sarah Connor", "Dana Scully", "Katniss Everdeen"],
-      "note": "She returns in Aliens, Alien 3, and Alien Resurrection."
+      "question": "In Terminator 2: Judgment Day, what is the liquid-metal terminator called?",
+      "answer": "T-1000",
+      "choices": ["T-1000", "T-800", "T-X", "T-3000"],
+      "note": "Robert Patrick; Arnold’s T-800 is the good guy this time."
     },
     {
       "id": "film-9-02",
       "question": "What 1999 film asks you to choose between a red pill and a blue pill?",
       "answer": "The Matrix",
-      "choices": ["The Matrix", "Inception", "Dark City", "eXistenZ"],
+      "choices": ["The Matrix", "Inception", "Dark City", "The Thirteenth Floor"],
       "note": "Red pill: the truth. Blue pill: back to the simulation."
     },
     {
       "id": "film-9-03",
-      "question": "Who created Star Wars?",
-      "answer": "George Lucas",
-      "choices": ["George Lucas", "Steven Spielberg", "Gene Roddenberry", "Irvin Kershner"],
-      "note": "He directed A New Hope and the prequels; Kershner directed Empire."
+      "question": "In Jurassic Park, what is the name of the island that holds the park?",
+      "answer": "Isla Nublar",
+      "choices": ["Isla Nublar", "Isla Sorna", "Skull Island", "Isla Muerta"],
+      "note": "Isla Sorna is the “Site B” island in The Lost World."
     },
     {
       "id": "film-9-04",
-      "question": "What is the name of the hotel in The Shining?",
-      "answer": "The Overlook Hotel",
-      "choices": ["The Overlook Hotel", "The Bates Motel", "The Grand Budapest Hotel", "The Stanley Hotel"],
-      "note": "Stephen King was inspired by Colorado’s Stanley Hotel; Kubrick’s film uses the Overlook."
+      "question": "In the Scream films, what is the name of the masked killer?",
+      "answer": "Ghostface",
+      "choices": ["Ghostface", "Jigsaw", "Michael Myers", "Ghostface Killah"],
+      "note": "The first Scream landed in 1996; “Do you like scary movies?”"
     },
     {
       "id": "film-9-05",
-      "question": "In Blade Runner, what are the artificial humans called?",
-      "answer": "Replicants",
-      "choices": ["Replicants", "Cylons", "Hosts", "Synthetics"],
-      "note": "Harrison Ford’s Deckard hunts them in a rainy 2019 Los Angeles."
+      "question": "Which 1999 found-footage horror film is about three student filmmakers lost in the woods?",
+      "answer": "The Blair Witch Project",
+      "choices": ["The Blair Witch Project", "Paranormal Activity", "The Descent", "Cannibal Holocaust"],
+      "note": "A marketing legend; it looked like a real missing-persons case."
     },
     {
       "id": "film-9-06",
-      "question": "What 1973 horror film about a possessed girl was directed by William Friedkin?",
-      "answer": "The Exorcist",
-      "choices": ["The Exorcist", "Rosemary's Baby", "The Omen", "Carrie"],
-      "note": "Linda Blair as Regan; “the power of Christ compels you.”"
+      "question": "In the 2017 film It, what is the name of the dancing clown?",
+      "answer": "Pennywise",
+      "choices": ["Pennywise", "Krusty", "Captain Spaulding", "Jigsaw"],
+      "note": "Bill Skarsgård; the Losers’ Club vs. a nightmare in Derry, Maine."
     },
     {
       "id": "film-9-07",
-      "question": "In Back to the Future, what kind of car is the time machine?",
-      "answer": "DeLorean",
-      "choices": ["DeLorean", "Mustang", "Corvette", "Firebird"],
-      "note": "A DMC-12; it needs 1.21 gigawatts and a flux capacitor."
+      "question": "In Avatar, what is the name of the moon the Na’vi call home?",
+      "answer": "Pandora",
+      "choices": ["Pandora", "Arrakis", "Ego", "LV-426"],
+      "note": "James Cameron, 2009; unobtanium and a very long runtime."
     },
     {
       "id": "film-9-08",
-      "question": "What 1982 Steven Spielberg film features a friendly alien who wants to “phone home”?",
-      "answer": "E.T. the Extra-Terrestrial",
-      "choices": ["E.T. the Extra-Terrestrial", "Close Encounters of the Third Kind", "Cocoon", "Flight of the Navigator"],
-      "note": "Drew Barrymore is Gertie; the boy is Elliott."
+      "question": "In Black Panther, what is the name of T’Challa’s hidden African nation?",
+      "answer": "Wakanda",
+      "choices": ["Wakanda", "Asgard", "Genosha", "Zamunda"],
+      "note": "2018 — vibranium, the Heart-Shaped Herb, and “Wakanda forever.”"
     },
     {
       "id": "film-9-09",
-      "question": "Which 1979 Ridley Scott film used the tagline “In space, no one can hear you scream”?",
-      "answer": "Alien",
-      "choices": ["Alien", "Prometheus", "Event Horizon", "Sunshine"],
-      "note": "The xenomorph and the Nostromo; Scott returned decades later with Prometheus."
+      "question": "In Denis Villeneuve’s Dune films, what is the name of the desert planet?",
+      "answer": "Arrakis",
+      "choices": ["Arrakis", "Pandora", "Tatooine", "Caladan"],
+      "note": "Also called Dune; the spice is melange. Caladan is the Atreides homeworld."
     },
     {
       "id": "film-9-10",
-      "question": "What planet is Superman from?",
-      "answer": "Krypton",
-      "choices": ["Krypton", "Gallifrey", "Vulcan", "Asgard"],
-      "note": "He lands in Kansas and grows up as Clark Kent."
+      "question": "In A Quiet Place (2018), what must the family avoid doing to stay alive?",
+      "answer": "Making a sound",
+      "choices": ["Making a sound", "Going outside in daylight", "Using electricity", "Looking at the creatures"],
+      "note": "John Krasinski directed and starred; the monsters hunt by hearing."
     }
   ]
 }

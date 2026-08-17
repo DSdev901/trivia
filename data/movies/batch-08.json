@@ -6,73 +6,73 @@
   "questions": [
     {
       "id": "film-8-01",
-      "question": "Who wrote the novel The Godfather, later filmed by Francis Ford Coppola?",
-      "answer": "Mario Puzo",
-      "choices": ["Mario Puzo", "Mario Vargas Llosa", "Nicholas Pileggi", "Elmore Leonard"],
-      "note": "Puzo also co-wrote the screenplays with Coppola."
-    },
-    {
-      "id": "film-8-02",
       "question": "Who wrote the novel Jurassic Park?",
       "answer": "Michael Crichton",
       "choices": ["Michael Crichton", "Carl Sagan", "Isaac Asimov", "Arthur C. Clarke"],
-      "note": "Crichton also created the TV series ER."
+      "note": "The 1993 Spielberg film followed; Crichton also created the TV series ER."
     },
     {
-      "id": "film-8-03",
-      "question": "Which J. R. R. Tolkien work did Peter Jackson adapt into a trilogy released in 2001–2003?",
-      "answer": "The Lord of the Rings",
-      "choices": ["The Lord of the Rings", "The Hobbit", "The Silmarillion", "Beowulf"],
-      "note": "The Hobbit trilogy came later, in the 2010s."
-    },
-    {
-      "id": "film-8-04",
+      "id": "film-8-02",
       "question": "The Shawshank Redemption is based on a novella by which author?",
       "answer": "Stephen King",
       "choices": ["Stephen King", "John Grisham", "Dean Koontz", "James Patterson"],
       "note": "The novella is Rita Hayworth and Shawshank Redemption."
     },
     {
-      "id": "film-8-05",
+      "id": "film-8-03",
+      "question": "Schindler’s List is based on a Booker Prize-winning novel by which author?",
+      "answer": "Thomas Keneally",
+      "choices": ["Thomas Keneally", "Steven Spielberg", "Elie Wiesel", "Primo Levi"],
+      "note": "The book is Schindler’s Ark in some editions; the film is from 1993."
+    },
+    {
+      "id": "film-8-04",
       "question": "Who wrote the Harry Potter books?",
       "answer": "J. K. Rowling",
       "choices": ["J. K. Rowling", "C. S. Lewis", "Philip Pullman", "Roald Dahl"],
       "note": "Seven novels; eight films, because Deathly Hallows was split in two."
     },
     {
+      "id": "film-8-05",
+      "question": "Which J. R. R. Tolkien work did Peter Jackson adapt into a trilogy released in 2001–2003?",
+      "answer": "The Lord of the Rings",
+      "choices": ["The Lord of the Rings", "The Hobbit", "The Silmarillion", "Beowulf"],
+      "note": "The Hobbit trilogy came later, in the 2010s."
+    },
+    {
       "id": "film-8-06",
-      "question": "Schindler’s List is based on a Booker Prize-winning novel by which author?",
-      "answer": "Thomas Keneally",
-      "choices": ["Thomas Keneally", "Steven Spielberg", "Elie Wiesel", "Primo Levi"],
-      "note": "The book is Schindler’s Ark in some editions."
-    },
-    {
-      "id": "film-8-07",
-      "question": "Which Agatha Christie mystery was filmed in 1974 with an all-star cast aboard a train?",
-      "answer": "Murder on the Orient Express",
-      "choices": ["Murder on the Orient Express", "Death on the Nile", "And Then There Were None", "The Mousetrap"],
-      "note": "Albert Finney played Hercule Poirot; Sidney Lumet directed."
-    },
-    {
-      "id": "film-8-08",
-      "question": "Who wrote the novel Fight Club, later filmed by David Fincher?",
+      "question": "Who wrote the novel Fight Club, filmed by David Fincher in 1999?",
       "answer": "Chuck Palahniuk",
       "choices": ["Chuck Palahniuk", "Bret Easton Ellis", "Irvine Welsh", "Nick Hornby"],
       "note": "The first rule of Fight Club is you do not talk about Fight Club."
     },
     {
+      "id": "film-8-07",
+      "question": "Who wrote the Twilight novels, later a five-film saga?",
+      "answer": "Stephenie Meyer",
+      "choices": ["Stephenie Meyer", "Suzanne Collins", "Veronica Roth", "E. L. James"],
+      "note": "Bella, Edward, and Jacob; the first film arrived in 2008."
+    },
+    {
+      "id": "film-8-08",
+      "question": "Who wrote The Hunger Games novels?",
+      "answer": "Suzanne Collins",
+      "choices": ["Suzanne Collins", "Stephenie Meyer", "Veronica Roth", "Cassandra Clare"],
+      "note": "Katniss Everdeen; four films from 2012 to 2015, plus later prequels."
+    },
+    {
       "id": "film-8-09",
-      "question": "The Devil Wears Prada is set at a fashion magazine inspired by which real publication?",
+      "question": "The Devil Wears Prada (2006) is set at a fashion magazine inspired by which real publication?",
       "answer": "Vogue",
       "choices": ["Vogue", "Elle", "Harper's Bazaar", "Cosmopolitan"],
       "note": "Meryl Streep’s Miranda Priestly is widely compared to Anna Wintour."
     },
     {
       "id": "film-8-10",
-      "question": "Who wrote the play A Streetcar Named Desire, later a Marlon Brando film?",
-      "answer": "Tennessee Williams",
-      "choices": ["Tennessee Williams", "Arthur Miller", "Eugene O'Neill", "Edward Albee"],
-      "note": "Vivien Leigh played Blanche; Brando’s “Stella!” is the clip everyone knows."
+      "question": "Who wrote the novel The Da Vinci Code, filmed in 2006 with Tom Hanks?",
+      "answer": "Dan Brown",
+      "choices": ["Dan Brown", "John Grisham", "Ken Follett", "Robert Ludlum"],
+      "note": "Ron Howard directed; Audrey Tautou and Ian McKellen co-starred."
     }
   ]
 }
