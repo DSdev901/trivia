@@ -653,13 +653,13 @@ function openPresident(president) {
 
 function presidentNavHtml(prev, next) {
   const prevBtn = prev
-    ? `<button type="button" class="secondary-btn president-nav-btn" data-president-nav="prev">
+    ? `<button type="button" class="president-nav-btn" data-president-nav="prev">
         <span class="president-nav-dir">Previous</span>
         <span class="president-nav-name">#${prev.number} ${escapeHtml(prev.name)}</span>
       </button>`
     : `<span class="president-nav-placeholder"></span>`;
   const nextBtn = next
-    ? `<button type="button" class="primary-btn president-nav-btn" data-president-nav="next">
+    ? `<button type="button" class="president-nav-btn" data-president-nav="next">
         <span class="president-nav-dir">Next</span>
         <span class="president-nav-name">#${next.number} ${escapeHtml(next.name)}</span>
       </button>`
@@ -814,7 +814,6 @@ async function renderPresidentDetail() {
           </div>
         </section>
       </header>
-      ${presidentNavHtml(neighbors.prev, neighbors.next)}
       <ol class="facts">
         ${president.trivia
           .map((fact, i) => {

@@ -574,26 +574,37 @@ a.ce-tab {
 .president-nav {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  gap: 0.65rem;
-  margin: 1.15rem 0 0;
-}
-
-.president-nav + .facts {
-  margin-top: 1.15rem;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--stripe);
 }
 
 .president-nav-btn {
   flex: 1 1 0;
-  max-width: calc(50% - 0.35rem);
+  max-width: calc(50% - 0.5rem);
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.15rem;
+  gap: 0.08rem;
+  margin: 0;
+  padding: 0.15rem 0;
+  border: 0;
+  background: none;
+  border-radius: 0;
+  font: inherit;
+  cursor: pointer;
+  color: var(--ink-soft);
   text-align: left;
   white-space: normal;
-  line-height: 1.25;
-  border-radius: 0.85rem;
+  line-height: 1.3;
+}
+
+.president-nav-btn:hover,
+.president-nav-btn:focus-visible {
+  color: var(--accent-deep);
+  transform: none;
 }
 
 .president-nav-btn[data-president-nav="next"] {
@@ -603,15 +614,21 @@ a.ce-tab {
 }
 
 .president-nav-dir {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  opacity: 0.85;
 }
 
 .president-nav-name {
-  font-weight: 700;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.president-nav-btn:hover .president-nav-name,
+.president-nav-btn:focus-visible .president-nav-name {
+  color: var(--accent-deep);
 }
 
 .president-nav-placeholder {
