@@ -34,6 +34,18 @@
       ]
     },
     {
+      "id": "periodic-table",
+      "name": "Periodic Table",
+      "description": "Interactive table of all 118 elements — discovery, naming, and trivia facts, with spoken tours by group.",
+      "type": "periodic-table"
+    },
+    {
+      "id": "geography",
+      "name": "Geography",
+      "description": "Map quizzes — pin countries and cities, drill capitals and flags, study or type answers.",
+      "type": "geography"
+    },
+    {
       "id": "movies",
       "name": "Film & Movies",
       "description": "One hundred pub-quiz film questions in ten rounds of ten — study the answers, listen, then quiz.",
@@ -52,18 +64,6 @@
         { "n": 9, "label": "Sci-Fi, Horror & Fantasy", "range": "Sci-Fi, Horror & Fantasy" },
         { "n": 10, "label": "This Century", "range": "This Century" }
       ]
-    },
-    {
-      "id": "periodic-table",
-      "name": "Periodic Table",
-      "description": "Interactive table of all 118 elements — discovery, naming, and trivia facts, with spoken tours by group.",
-      "type": "periodic-table"
-    },
-    {
-      "id": "geography",
-      "name": "Geography",
-      "description": "Map quizzes — pin countries and cities, drill capitals and flags, study or type answers.",
-      "type": "geography"
     }
   ]
 }

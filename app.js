@@ -96,7 +96,6 @@ const state = {
   category: null,
   batch: null,
   president: null,
-  movieQ: null,
   view: "categories",
   quiz: null,
   lastResult: null,
@@ -297,7 +296,6 @@ async function openBatch(batchNumber) {
     const batch = await loadBatch(state.category, batchNumber);
     state.batch = batch;
     state.president = null;
-    state.movieQ = null;
     if (state.category.type === "movies") {
       await renderMovieRound(batch);
     } else {
@@ -522,6 +520,7 @@ async function renderMovieRound(batch) {
   const title = batch.title || batch.range || batchLabel(category, batch.batch);
   const chrome = await getSpeechChrome();
   if (state.batch !== batch) return;
+  const canFlag = isLocalHost();
 
   els.presidents.innerHTML = `
     ${crumbsHtml(
@@ -536,104 +535,89 @@ async function renderMovieRound(batch) {
       escapeHtml
     )}
     <h2 class="section-title">Round ${batch.batch}: ${escapeHtml(title)}</h2>
-    <p class="lede">Ten pub-quiz questions. Open one to see the answer, or listen to the whole round.</p>
+    <p class="lede">Ten pub-quiz questions. Expand a card for the answer, or listen to the whole round.</p>
     ${speechPanelHtml("speech-fold-movies-round", "Hear this round’s questions and answers in order.", chrome)}
-    <div class="president-list">
+    <div class="president-list movie-q-list">
       ${batch.questions
-        .map(
-          (q, i) => `
-        <button type="button" class="president-btn is-prompt" data-index="${i}">
-          <span class="num">#${i + 1}</span>
-          <span class="prompt">${escapeHtml(q.question)}</span>
-        </button>`
-        )
+        .map((q, i) => {
+          const ansId = `movie-ans-${batch.batch}-${i}`;
+          const flagId = factFlagId(state.category.id, `${batch.batch}-${i}`, 0);
+          const flagged = canFlag && isFlagged(flagId);
+          return `
+        <article class="movie-q" data-index="${i}">
+          <button type="button" class="movie-q-toggle" data-index="${i}" aria-expanded="false" aria-controls="${ansId}">
+            <span class="num">#${i + 1}</span>
+            <span class="prompt">${escapeHtml(q.question)}</span>
+            <svg class="movie-q-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M9.4 6.6a1 1 0 0 1 1.4 0l5.2 5.2a1 1 0 0 1 0 1.4l-5.2 5.2a1 1 0 1 1-1.4-1.4L13.9 12 9.4 7.6a1 1 0 0 1 0-1.4Z"/>
+            </svg>
+          </button>
+          <div class="movie-q-answer" id="${ansId}" hidden>
+            <div class="movie-q-answer-inner">
+              <p class="movie-q-answer-text">${escapeHtml(q.answer)}</p>
+              ${q.note ? `<p class="movie-q-note">${escapeHtml(q.note)}</p>` : ""}
+              ${
+                canFlag
+                  ? `<button type="button" class="flag-btn movie-q-flag ${flagged ? "is-on" : ""}" data-index="${i}">${
+                      flagged ? "Flagged" : "Flag for replacement"
+                    }</button>`
+                  : ""
+              }
+            </div>
+          </div>
+        </article>`;
+        })
         .join("")}
     </div>
   `;
+
+  function setMovieOpen(card, open) {
+    const btn = card.querySelector(".movie-q-toggle");
+    const panel = card.querySelector(".movie-q-answer");
+    card.classList.toggle("is-open", open);
+    btn?.setAttribute("aria-expanded", String(open));
+    if (panel) panel.hidden = !open;
+  }
 
   bindSpeechPanel(els.presidents, chrome, {
     getLines: () =>
       batch.questions.map((q, i) => toMovieQuestionSpeech(q, i + 1)),
     highlight: (lineIndex) => {
-      els.presidents.querySelectorAll(".president-btn").forEach((btn) => {
-        btn.classList.toggle("is-speaking", Number(btn.dataset.index) === lineIndex);
+      els.presidents.querySelectorAll(".movie-q").forEach((card) => {
+        const on = Number(card.dataset.index) === lineIndex;
+        card.classList.toggle("is-speaking", on);
+        if (on) setMovieOpen(card, true);
       });
     },
   });
 
-  els.presidents.querySelectorAll(".president-btn").forEach((btn) => {
+  els.presidents.querySelectorAll(".movie-q-toggle").forEach((btn) => {
     btn.addEventListener("click", () => {
-      openMovieQuestion(batch.questions[Number(btn.dataset.index)], Number(btn.dataset.index));
+      const card = btn.closest(".movie-q");
+      if (!card) return;
+      setMovieOpen(card, !card.classList.contains("is-open"));
     });
   });
-}
 
-function openMovieQuestion(item, index) {
-  stopAllSpeech();
-  state.movieQ = { item, index };
-  void renderMovieQuestionDetail();
-  show("detail");
-}
-
-async function renderMovieQuestionDetail() {
-  const selected = state.movieQ;
-  const batch = state.batch;
-  if (!selected || !batch) return;
-  const { item, index } = selected;
-  const chrome = await getSpeechChrome();
-  if (state.movieQ !== selected) return;
-
-  const canFlag = isLocalHost();
-  const flagId = factFlagId(state.category.id, `${batch.batch}-${index}`, 0);
-  const flagged = canFlag && isFlagged(flagId);
-
-  els.detail.innerHTML = `
-    <article class="detail is-movie">
-      <header class="detail-header">
-        <p class="detail-number">Round ${batch.batch} · Question ${index + 1}</p>
-        <h1>${escapeHtml(item.question)}</h1>
-        <div class="detail-answer">
-          <p class="detail-answer-kicker">Answer</p>
-          <p class="detail-answer-text">${escapeHtml(item.answer)}</p>
-        </div>
-        ${item.note ? `<p class="detail-note">${escapeHtml(item.note)}</p>` : ""}
-        ${
-          canFlag
-            ? `<p class="flag-hint">Flag a weak question for replacement — it saves on this device.</p>`
-            : ""
-        }
-        ${speechPanelHtml("speech-fold-movies-q", "Hear this question and answer.", chrome)}
-      </header>
-      ${
-        canFlag
-          ? `<div class="fact-actions">
-              <button type="button" class="flag-btn ${flagged ? "is-on" : ""}" id="flag-movie-q" aria-pressed="${flagged}">
-                ${flagged ? "Flagged" : "Flag for replacement"}
-              </button>
-            </div>`
-          : ""
-      }
-    </article>
-  `;
-
-  bindSpeechPanel(els.detail, chrome, {
-    getLines: () => [toMovieQuestionSpeech(item, index + 1)],
-    highlight: () => {},
-  });
-
-  document.getElementById("flag-movie-q")?.addEventListener("click", () => {
-    stopAllSpeech();
-    toggleFlag({
-      id: flagId,
-      type: "fact",
-      categoryId: state.category.id,
-      presidentNumber: `${batch.batch}-${index}`,
-      presidentName: item.answer,
-      factIndex: 0,
-      batch: batch.batch,
-      text: `${item.question} → ${item.answer}`,
+  els.presidents.querySelectorAll(".movie-q-flag").forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      const index = Number(btn.dataset.index);
+      const item = batch.questions[index];
+      const id = factFlagId(state.category.id, `${batch.batch}-${index}`, 0);
+      const now = toggleFlag({
+        id,
+        type: "fact",
+        categoryId: state.category.id,
+        presidentNumber: `${batch.batch}-${index}`,
+        presidentName: item.answer,
+        factIndex: 0,
+        batch: batch.batch,
+        text: `${item.question} → ${item.answer}`,
+      });
+      btn.classList.toggle("is-on", now);
+      btn.textContent = now ? "Flagged" : "Flag for replacement";
     });
-    void renderMovieQuestionDetail();
   });
 }
 
@@ -1302,7 +1286,6 @@ async function applyRoute() {
     state.category = null;
     state.batch = null;
     state.president = null;
-    state.movieQ = null;
     state.quiz = null;
     state.lastResult = null;
     setPageTitle([]);
@@ -1426,7 +1409,6 @@ function goBack() {
   if (state.view === "detail") {
     stopAllSpeech();
     state.president = null;
-    state.movieQ = null;
     show("presidents");
     return;
   }
