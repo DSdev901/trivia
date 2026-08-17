@@ -42,11 +42,13 @@ export function toSlug(s) {
 }
 
 export function crumbsHtml(items, escape) {
+  const list = (items || []).filter((it) => it?.label);
+  if (list.length < 2) return "";
   const esc = escape || ((v) => String(v));
-  return `<nav class="crumbs" aria-label="Directory">${items
+  return `<nav class="crumbs" aria-label="Directory">${list
     .map((it, i) => {
       const label = esc(it.label);
-      if (i === items.length - 1) {
+      if (i === list.length - 1) {
         return `<span class="crumbs-now">${label}</span>`;
       }
       return `<a href="${it.href}">${label}</a><span class="crumbs-sep" aria-hidden="true">/</span>`;

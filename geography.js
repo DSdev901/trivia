@@ -2089,10 +2089,7 @@ function modeHref(mode, pack = geo.pack, group = geo.group) {
 }
 
 function geoCrumbs(tailLabel) {
-  const items = [
-    { label: "Home", href: href([]) },
-    { label: "Geography", href: href(["geography"]) },
-  ];
+  const items = [{ label: "Geography", href: href(["geography"]) }];
   if (geo.group) {
     items.push({ label: geo.group.name, href: href(["geography", geo.group.id]) });
   }

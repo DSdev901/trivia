@@ -542,10 +542,7 @@ function render() {
   pt.root.innerHTML = `
     <div class="pt-shell">
       ${crumbsHtml(
-        [
-          { label: "Home", href: href([]) },
-          { label: "Periodic Table", href: href(["periodic-table"]) },
-        ],
+        [{ label: "Periodic Table", href: href(["periodic-table"]) }],
         escapeHtml
       )}
       <div class="pt-head">

@@ -270,10 +270,7 @@ function render() {
   }
   cap.root.innerHTML = `
     ${crumbsHtml(
-      [
-        { label: "Home", href: href([]) },
-        { label: "Prior Saucer Trivia", href: href(["prior-saucer"]) },
-      ],
+      [{ label: "Prior Saucer Trivia", href: href(["prior-saucer"]) }],
       escapeHtml
     )}
     <div class="cap-head">

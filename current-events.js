@@ -831,12 +831,8 @@ function render() {
   ce.root.innerHTML = `
     ${crumbsHtml(
       ce.mode === "netflix"
-        ? [
-            { label: "Home", href: href([]) },
-            { label: "Netflix", href: href(["netflix"]) },
-          ]
+        ? [{ label: "Netflix", href: href(["netflix"]) }]
         : [
-            { label: "Home", href: href([]) },
             { label: "Current Events", href: href(["current-events"]) },
             ...(ce.tab === "feed"
               ? [{ label: "Live feed", href: href(["current-events", "feed"]) }]

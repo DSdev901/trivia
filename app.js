@@ -185,7 +185,6 @@ function renderHub(category) {
   els.hub.innerHTML = `
     ${crumbsHtml(
       [
-        { label: "Home", href: href([]) },
         { label: category.name, href: href([category.id]) },
       ],
       escapeHtml
@@ -273,7 +272,6 @@ function renderBatches(category) {
   els.batches.innerHTML = `
     ${crumbsHtml(
       [
-        { label: "Home", href: href([]) },
         { label: category.name, href: href([category.id]) },
         { label: "Study", href: href([category.id, "study"]) },
       ],
@@ -303,7 +301,6 @@ function renderPresidents(batch) {
   els.presidents.innerHTML = `
     ${crumbsHtml(
       [
-        { label: "Home", href: href([]) },
         { label: category.name, href: href([category.id]) },
         { label: "Study", href: href([category.id, "study"]) },
         {
@@ -588,7 +585,6 @@ function renderFlags() {
   els.flags.innerHTML = `
     ${crumbsHtml(
       [
-        { label: "Home", href: href([]) },
         { label: state.category.name, href: href([state.category.id]) },
         { label: "Flagged", href: href([state.category.id, "flags"]) },
       ],
@@ -676,7 +672,6 @@ function renderQuizSetup(category) {
   els.quizSetup.innerHTML = `
     ${crumbsHtml(
       [
-        { label: "Home", href: href([]) },
         { label: category.name, href: href([category.id]) },
         { label: "Quiz", href: href([category.id, "quiz"]) },
       ],
