@@ -127,6 +127,23 @@ function batchLabel(category, n) {
   return `Section ${n}`;
 }
 
+function nextStudyNavHtml(category, batchNumber) {
+  const unit = category.type === "movies" ? "round" : "section";
+  const total = category.batchCount;
+  if (batchNumber < total) {
+    const next = batchNumber + 1;
+    const label = batchLabel(category, next);
+    return `
+    <div class="batch-next-row">
+      <a class="primary-btn" href="${href([category.id, "study", String(next)])}">Next ${unit}: ${escapeHtml(label)}</a>
+    </div>`;
+  }
+  return `
+    <div class="batch-next-row">
+      <a class="secondary-btn" href="${href([category.id, "study"])}">Back to ${unit}s</a>
+    </div>`;
+}
+
 async function loadJSON(path) {
   const res = await fetch(path);
   if (!res.ok) throw new Error(`Failed to load ${path}`);
@@ -155,7 +172,7 @@ function categoryMetaLabel(category) {
     return "questions · search";
   }
   if (category?.type === "movies") {
-    return "10 rounds · listen & quiz";
+    return `${category.batchCount} rounds · listen & quiz`;
   }
   return `${category.batchCount} sections`;
 }
@@ -204,7 +221,7 @@ function renderHub(category) {
         <h3>Study</h3>
         <p>${
           category.type === "movies"
-            ? "Browse ten rounds and review each question and answer."
+            ? `Browse ${category.batchCount} rounds and review each question and answer.`
             : "Browse sections and review each president’s facts."
         }</p>
       </a>
@@ -335,6 +352,7 @@ function renderPresidents(batch) {
         )
         .join("")}
     </div>
+    ${nextStudyNavHtml(category, batch.batch)}
   `;
 
   els.presidents.querySelectorAll(".president-btn").forEach((btn) => {
@@ -569,6 +587,7 @@ async function renderMovieRound(batch) {
         })
         .join("")}
     </div>
+    ${nextStudyNavHtml(category, batch.batch)}
   `;
 
   function setMovieOpen(card, open) {

@@ -48,9 +48,9 @@
     {
       "id": "movies",
       "name": "Film & Movies",
-      "description": "One hundred pub-quiz film questions from 1990 on, in ten rounds of ten — study the answers, listen, then quiz.",
+      "description": "One hundred fifty pub-quiz film questions from 1990 on, in fifteen rounds of ten — study the answers, listen, then quiz.",
       "type": "movies",
-      "batchCount": 10,
+      "batchCount": 15,
       "batchPath": "data/movies/batch-{n}.json",
       "batches": [
         { "n": 1, "label": "Opening Credits", "range": "Opening Credits" },
@@ -62,7 +62,12 @@
         { "n": 7, "label": "Animation & Family", "range": "Animation & Family" },
         { "n": 8, "label": "Page to Screen", "range": "Page to Screen" },
         { "n": 9, "label": "Sci-Fi, Horror & Fantasy", "range": "Sci-Fi, Horror & Fantasy" },
-        { "n": 10, "label": "This Century", "range": "This Century" }
+        { "n": 10, "label": "This Century", "range": "This Century" },
+        { "n": 11, "label": "Crime & Capers", "range": "Crime & Capers" },
+        { "n": 12, "label": "Quote Unquote", "range": "Quote Unquote" },
+        { "n": 13, "label": "Supporting Cast", "range": "Supporting Cast" },
+        { "n": 14, "label": "Sequels & Series", "range": "Sequels & Series" },
+        { "n": 15, "label": "Hits Since 2000", "range": "Hits Since 2000" }
       ]
     }
   ]
