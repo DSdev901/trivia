@@ -105,6 +105,31 @@ export function buildPresidentQuestions(presidents) {
   return shuffle(questions);
 }
 
+/** Build multiple-choice questions from film pub-quiz rounds. */
+export function buildMovieQuestions(items) {
+  const questions = [];
+  for (const item of items) {
+    const correct = String(item.answer || "").trim();
+    if (!correct || !item.question) continue;
+    const raw = (item.choices || []).map((c) => String(c).trim()).filter(Boolean);
+    const unique = [];
+    for (const c of raw) {
+      if (!unique.includes(c)) unique.push(c);
+    }
+    if (!unique.includes(correct)) unique.unshift(correct);
+    const distractors = shuffle(unique.filter((c) => c !== correct)).slice(0, 3);
+    if (distractors.length < 3) continue;
+    questions.push({
+      id: item.id,
+      prompt: item.question,
+      choices: makeChoices(correct, distractors),
+      correct,
+      batch: item._batch,
+    });
+  }
+  return shuffle(questions);
+}
+
 /**
  * Element quiz mix (retrieval practice):
  * 1. Lean ID — symbol ↔ name, Z ↔ name (core)

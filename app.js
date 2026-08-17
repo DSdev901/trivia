@@ -1,6 +1,7 @@
 import {
   buildEasyElementQuestions,
   buildElementQuestions,
+  buildMovieQuestions,
   buildPresidentQuestions,
   createRotation,
   currentQuestion,
@@ -34,6 +35,7 @@ import {
   speechSupported,
   stopSpeech,
   toConversationalSpeech,
+  toMovieQuestionSpeech,
   unlockSpeech,
   voiceQualityTip,
 } from "./speech.js";
@@ -94,6 +96,7 @@ const state = {
   category: null,
   batch: null,
   president: null,
+  movieQ: null,
   view: "categories",
   quiz: null,
   lastResult: null,
@@ -119,9 +122,10 @@ function show(view) {
 function batchLabel(category, n) {
   const meta = category.batches?.find((b) => b.n === n);
   if (meta) return meta.label;
-  return n < category.batchCount
-    ? `Presidents ${(n - 1) * 10 + 1}–${n * 10}`
-    : `Section ${n}`;
+  if (category?.type === "presidents" && n < category.batchCount) {
+    return `Presidents ${(n - 1) * 10 + 1}–${n * 10}`;
+  }
+  return `Section ${n}`;
 }
 
 async function loadJSON(path) {
@@ -150,6 +154,9 @@ function categoryMetaLabel(category) {
   }
   if (category?.type === "captured") {
     return "questions · search";
+  }
+  if (category?.type === "movies") {
+    return "10 rounds · listen & quiz";
   }
   return `${category.batchCount} sections`;
 }
@@ -196,11 +203,19 @@ function renderHub(category) {
     <div class="hub-actions">
       <a class="hub-card" href="${href([category.id, "study"])}">
         <h3>Study</h3>
-        <p>Browse sections and review each president’s facts.</p>
+        <p>${
+          category.type === "movies"
+            ? "Browse ten rounds and review each question and answer."
+            : "Browse sections and review each president’s facts."
+        }</p>
       </a>
       <a class="hub-card hub-card-accent" href="${href([category.id, "quiz"])}">
         <h3>Quiz</h3>
-        <p>Pick one or more sections and work through multiple-choice questions.</p>
+        <p>${
+          category.type === "movies"
+            ? "Pick one or more rounds and work through multiple-choice questions."
+            : "Pick one or more sections and work through multiple-choice questions."
+        }</p>
       </a>
       ${
         canFlag
@@ -253,11 +268,12 @@ function startElementQuiz({
 }
 
 function renderBatches(category) {
+  const unit = category.type === "movies" ? "Round" : "Section";
   const cards = Array.from({ length: category.batchCount }, (_, i) => {
     const n = i + 1;
     return `
       <a class="batch-card" href="${href([category.id, "study", String(n)])}">
-        <h2>Section ${n}</h2>
+        <h2>${unit} ${n}</h2>
         <p>${batchLabel(category, n)}</p>
         <span class="meta">Study mode</span>
       </a>`;
@@ -271,7 +287,7 @@ function renderBatches(category) {
       ],
       escapeHtml
     )}
-    <h2 class="section-title">Choose a section</h2>
+    <h2 class="section-title">Choose a ${unit.toLowerCase()}</h2>
     <div class="batch-grid">${cards}</div>
   `;
 }
@@ -281,7 +297,12 @@ async function openBatch(batchNumber) {
     const batch = await loadBatch(state.category, batchNumber);
     state.batch = batch;
     state.president = null;
-    renderPresidents(batch);
+    state.movieQ = null;
+    if (state.category.type === "movies") {
+      await renderMovieRound(batch);
+    } else {
+      renderPresidents(batch);
+    }
     show("presidents");
   } catch (err) {
     els.batches.innerHTML = `<p class="error">${err.message}</p>`;
@@ -327,6 +348,293 @@ function renderPresidents(batch) {
 
 function stopAllSpeech() {
   stopSpeech();
+}
+
+async function getSpeechChrome() {
+  const canSpeak = speechSupported();
+  const rankedVoices = canSpeak ? await listEnglishVoices() : [];
+  const defaultUri = canSpeak ? await getDefaultBrowserVoiceUri() : "";
+  const savedUri = getSavedVoiceUri();
+  const selectedUri =
+    (savedUri && rankedVoices.some((v) => v.uri === savedUri) && savedUri) ||
+    defaultUri ||
+    rankedVoices[0]?.uri ||
+    "";
+  if (!savedUri && selectedUri) saveVoiceUri(selectedUri);
+  return {
+    canSpeak,
+    rankedVoices,
+    selectedUri,
+    savedRate: getSavedRate(),
+    savedLoops: getSavedLoops(),
+    tip: canSpeak
+      ? voiceQualityTip(rankedVoices)
+      : "Read-aloud needs a Chromium browser with sound allowed (Brave/Chrome/Edge).",
+  };
+}
+
+function speechPanelHtml(foldId, lede, chrome) {
+  const { rankedVoices, selectedUri, savedRate, savedLoops, canSpeak, tip } = chrome;
+  const loopOptions = Array.from({ length: 10 }, (_, i) => {
+    const n = i + 1;
+    return `<option value="${n}" ${savedLoops === n ? "selected" : ""}>${n}${
+      n === 1 ? " (default)" : ""
+    }</option>`;
+  }).join("");
+  return `
+        <section class="speech-panel" aria-label="Read aloud">
+          <input type="checkbox" class="speech-fold" id="${foldId}" aria-label="Show read-aloud options" />
+          <div class="speech-panel-head">
+            <label class="speech-fold-label" for="${foldId}">Read aloud</label>
+            <div class="speech-copy">
+              <p class="speech-kicker speech-kicker-wide">Read aloud</p>
+              <p class="speech-lede speech-lede-wide">${lede}</p>
+            </div>
+            <div class="speech-actions" role="group" aria-label="Playback">
+              <button type="button" class="speech-btn speech-btn-primary" id="listen-all">Listen</button>
+              <button type="button" class="speech-btn speech-btn-quiet" id="stop-speech">Stop</button>
+            </div>
+          </div>
+          <div class="speech-panel-body">
+            <p class="speech-lede speech-lede-mobile">${lede}</p>
+            <div class="speech-settings">
+            <label class="voice-field">
+              <span>Voice</span>
+              <select id="voice-select" ${rankedVoices.length ? "" : "disabled"}>
+                ${
+                  rankedVoices.length
+                    ? rankedVoices
+                        .map(
+                          (v) =>
+                            `<option value="${escapeHtml(v.uri)}" ${
+                              v.uri === selectedUri ? "selected" : ""
+                            }>${escapeHtml(v.name)}${
+                              /\bdaniel\b/i.test(v.name) ? " (default)" : ""
+                            }</option>`
+                        )
+                        .join("")
+                    : `<option>No voices found</option>`
+                }
+              </select>
+            </label>
+            <label class="voice-field">
+              <span>Speed</span>
+              <select id="rate-select">
+                <option value="0.8" ${savedRate === 0.8 ? "selected" : ""}>Slower</option>
+                <option value="0.9" ${savedRate === 0.9 ? "selected" : ""}>Natural</option>
+                <option value="1" ${savedRate === 1 ? "selected" : ""}>Faster</option>
+              </select>
+            </label>
+            <label class="voice-field">
+              <span>Loops</span>
+              <select id="loop-select">${loopOptions}</select>
+            </label>
+            </div>
+            <p class="speech-status" id="speech-status">${escapeHtml(tip)}</p>
+          </div>
+        </section>`;
+}
+
+function bindSpeechPanel(root, chrome, { getLines, highlight }) {
+  const { canSpeak, selectedUri, savedRate, savedLoops, tip } = chrome;
+  const statusEl = root.querySelector("#speech-status");
+  const stopBtn = root.querySelector("#stop-speech");
+  const voiceSelect = root.querySelector("#voice-select");
+  const rateSelect = root.querySelector("#rate-select");
+  const loopSelect = root.querySelector("#loop-select");
+  const listenBtn = root.querySelector("#listen-all");
+  const speechPanel = root.querySelector(".speech-panel");
+
+  function currentTip() {
+    return canSpeak
+      ? tip
+      : "Read-aloud needs a Chromium browser with sound allowed (Brave/Chrome/Edge).";
+  }
+
+  function setSpeakingUI(active, message = "") {
+    if (stopBtn) {
+      stopBtn.disabled = !active;
+      stopBtn.classList.toggle("is-active-stop", active);
+    }
+    if (listenBtn) {
+      listenBtn.disabled = active;
+      listenBtn.classList.toggle("is-playing", active);
+    }
+    speechPanel?.classList.toggle("is-live", active);
+    if (statusEl) statusEl.textContent = message || currentTip();
+    if (!active) highlight?.(-1);
+  }
+
+  setSpeakingUI(false, tip);
+
+  async function playAll() {
+    if (!canSpeak) {
+      setSpeakingUI(
+        false,
+        "Browser speech isn’t available. Allow sound in Brave, then hard-refresh."
+      );
+      return;
+    }
+    const lines = getLines().map((line) => prepareSpokenLine(line));
+    const loops = Number(loopSelect?.value || savedLoops) || 1;
+    setSpeakingUI(true, loops > 1 ? `Starting… (${loops} loops)` : "Starting…");
+    try {
+      await speakLines(lines, {
+        voiceUri: voiceSelect?.value || selectedUri,
+        rate: Number(rateSelect?.value || savedRate),
+        loops,
+        loopPadMs: 7000,
+        onStartLine: (lineIndex) => highlight?.(lineIndex),
+        onStatus: (msg) => {
+          if (statusEl) statusEl.textContent = msg;
+        },
+        onEnd: () => setSpeakingUI(false, ""),
+      });
+      setSpeakingUI(false, "");
+    } catch (err) {
+      setSpeakingUI(false, err.message);
+    }
+  }
+
+  voiceSelect?.addEventListener("change", () => {
+    saveVoiceUri(voiceSelect.value);
+    stopAllSpeech();
+    setSpeakingUI(false, `Voice set to “${voiceSelect.selectedOptions[0]?.text || "selected"}”.`);
+  });
+  rateSelect?.addEventListener("change", () => {
+    saveRate(Number(rateSelect.value));
+  });
+  loopSelect?.addEventListener("change", () => {
+    saveLoops(Number(loopSelect.value));
+  });
+  listenBtn?.addEventListener("click", () => {
+    unlockSpeech();
+    playAll();
+  });
+  stopBtn?.addEventListener("click", () => {
+    stopAllSpeech();
+    setSpeakingUI(false, "");
+  });
+}
+
+async function renderMovieRound(batch) {
+  const category = state.category;
+  const title = batch.title || batch.range || batchLabel(category, batch.batch);
+  const chrome = await getSpeechChrome();
+  if (state.batch !== batch) return;
+
+  els.presidents.innerHTML = `
+    ${crumbsHtml(
+      [
+        { label: category.name, href: href([category.id]) },
+        { label: "Study", href: href([category.id, "study"]) },
+        {
+          label: batchLabel(category, batch.batch),
+          href: href([category.id, "study", String(batch.batch)]),
+        },
+      ],
+      escapeHtml
+    )}
+    <h2 class="section-title">Round ${batch.batch}: ${escapeHtml(title)}</h2>
+    <p class="lede">Ten pub-quiz questions. Open one to see the answer, or listen to the whole round.</p>
+    ${speechPanelHtml("speech-fold-movies-round", "Hear this round’s questions and answers in order.", chrome)}
+    <div class="president-list">
+      ${batch.questions
+        .map(
+          (q, i) => `
+        <button type="button" class="president-btn is-prompt" data-index="${i}">
+          <span class="num">#${i + 1}</span>
+          <span class="prompt">${escapeHtml(q.question)}</span>
+        </button>`
+        )
+        .join("")}
+    </div>
+  `;
+
+  bindSpeechPanel(els.presidents, chrome, {
+    getLines: () =>
+      batch.questions.map((q, i) => toMovieQuestionSpeech(q, i + 1)),
+    highlight: (lineIndex) => {
+      els.presidents.querySelectorAll(".president-btn").forEach((btn) => {
+        btn.classList.toggle("is-speaking", Number(btn.dataset.index) === lineIndex);
+      });
+    },
+  });
+
+  els.presidents.querySelectorAll(".president-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      openMovieQuestion(batch.questions[Number(btn.dataset.index)], Number(btn.dataset.index));
+    });
+  });
+}
+
+function openMovieQuestion(item, index) {
+  stopAllSpeech();
+  state.movieQ = { item, index };
+  void renderMovieQuestionDetail();
+  show("detail");
+}
+
+async function renderMovieQuestionDetail() {
+  const selected = state.movieQ;
+  const batch = state.batch;
+  if (!selected || !batch) return;
+  const { item, index } = selected;
+  const chrome = await getSpeechChrome();
+  if (state.movieQ !== selected) return;
+
+  const canFlag = isLocalHost();
+  const flagId = factFlagId(state.category.id, `${batch.batch}-${index}`, 0);
+  const flagged = canFlag && isFlagged(flagId);
+
+  els.detail.innerHTML = `
+    <article class="detail is-movie">
+      <header class="detail-header">
+        <p class="detail-number">Round ${batch.batch} · Question ${index + 1}</p>
+        <h1>${escapeHtml(item.question)}</h1>
+        <div class="detail-answer">
+          <p class="detail-answer-kicker">Answer</p>
+          <p class="detail-answer-text">${escapeHtml(item.answer)}</p>
+        </div>
+        ${item.note ? `<p class="detail-note">${escapeHtml(item.note)}</p>` : ""}
+        ${
+          canFlag
+            ? `<p class="flag-hint">Flag a weak question for replacement — it saves on this device.</p>`
+            : ""
+        }
+        ${speechPanelHtml("speech-fold-movies-q", "Hear this question and answer.", chrome)}
+      </header>
+      ${
+        canFlag
+          ? `<div class="fact-actions">
+              <button type="button" class="flag-btn ${flagged ? "is-on" : ""}" id="flag-movie-q" aria-pressed="${flagged}">
+                ${flagged ? "Flagged" : "Flag for replacement"}
+              </button>
+            </div>`
+          : ""
+      }
+    </article>
+  `;
+
+  bindSpeechPanel(els.detail, chrome, {
+    getLines: () => [toMovieQuestionSpeech(item, index + 1)],
+    highlight: () => {},
+  });
+
+  document.getElementById("flag-movie-q")?.addEventListener("click", () => {
+    stopAllSpeech();
+    toggleFlag({
+      id: flagId,
+      type: "fact",
+      categoryId: state.category.id,
+      presidentNumber: `${batch.batch}-${index}`,
+      presidentName: item.answer,
+      factIndex: 0,
+      batch: batch.batch,
+      text: `${item.question} → ${item.answer}`,
+    });
+    void renderMovieQuestionDetail();
+  });
 }
 
 function openPresident(president) {
@@ -649,13 +957,14 @@ function renderFlags() {
 }
 
 function renderQuizSetup(category) {
+  const unit = category.type === "movies" ? "Round" : "Section";
   const options = Array.from({ length: category.batchCount }, (_, i) => {
     const n = i + 1;
     return `
       <label class="batch-check">
         <input type="checkbox" name="quiz-batch" value="${n}" checked />
         <span class="batch-check-body">
-          <strong>Section ${n}</strong>
+          <strong>${unit} ${n}</strong>
           <span>${batchLabel(category, n)}</span>
         </span>
       </label>`;
@@ -670,7 +979,9 @@ function renderQuizSetup(category) {
       escapeHtml
     )}
     <h2 class="section-title">Quiz setup</h2>
-    <p class="lede">Select the sections to include. After each answer you’ll see if you were right, then choose whether to keep that question in rotation.</p>
+    <p class="lede">Select the ${
+      category.type === "movies" ? "rounds" : "sections"
+    } to include. After each answer you’ll see if you were right, then choose whether to keep that question in rotation.</p>
     <div class="batch-check-list" id="quiz-batch-list">${options}</div>
     <div class="setup-actions">
       <button type="button" class="text-btn" id="select-all">Select all</button>
@@ -716,12 +1027,17 @@ async function startQuiz(batchNumbers) {
     const batches = await Promise.all(
       batchNumbers.map((n) => loadBatch(state.category, n))
     );
-    const presidents = batches.flatMap((batch) =>
-      batch.presidents.map((p) => ({ ...p, _batch: batch.batch }))
-    );
 
     let questions;
-    if (state.category.id === "presidents") {
+    if (state.category.type === "movies") {
+      const items = batches.flatMap((batch) =>
+        (batch.questions || []).map((q) => ({ ...q, _batch: batch.batch }))
+      );
+      questions = buildMovieQuestions(items);
+    } else if (state.category.id === "presidents") {
+      const presidents = batches.flatMap((batch) =>
+        batch.presidents.map((p) => ({ ...p, _batch: batch.batch }))
+      );
       questions = buildPresidentQuestions(presidents);
     } else {
       throw new Error("Quiz generation is not available for this category yet.");
@@ -734,7 +1050,7 @@ async function startQuiz(batchNumbers) {
     }
 
     state.quiz = {
-      mode: "presidents",
+      mode: state.category.type === "movies" ? "movies" : "presidents",
       batchNumbers,
       rotation: createRotation(questions),
       total: questions.length,
@@ -986,6 +1302,7 @@ async function applyRoute() {
     state.category = null;
     state.batch = null;
     state.president = null;
+    state.movieQ = null;
     state.quiz = null;
     state.lastResult = null;
     setPageTitle([]);
@@ -1003,7 +1320,6 @@ async function applyRoute() {
   if (state.view === "quizDone" && quizStaysOnRoute(catId, rest)) return;
   if (
     state.view === "detail" &&
-    catId === "presidents" &&
     rest[0] === "study" &&
     String(state.batch?.batch) === rest[1]
   ) {
@@ -1108,7 +1424,9 @@ function goHome() {
 
 function goBack() {
   if (state.view === "detail") {
+    stopAllSpeech();
     state.president = null;
+    state.movieQ = null;
     show("presidents");
     return;
   }

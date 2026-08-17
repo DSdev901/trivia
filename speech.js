@@ -355,6 +355,9 @@ function expandForSpeech(text) {
     .replace(/\bFDR\b/g, "F D R")
     .replace(/\bJFK\b/g, "J F K")
     .replace(/\bLBJ\b/g, "L B J")
+    .replace(/\bMCU\b/g, "Marvel Cinematic Universe")
+    .replace(/\bIMF\b/g, "I M F")
+    .replace(/\bA24\b/g, "A twenty-four")
     .replace(/\bTR\b/g, "T R")
     .replace(/\bD\.C\./g, "D C")
     .replace(/\$([\d,]+)/g, (_, n) => `${n.replace(/,/g, "")} dollars`)
@@ -457,6 +460,33 @@ export function toConversationalSpeech(president, fact, factNumber) {
   }
 
   return `${factLabel} ${text}`;
+}
+
+/** Read a film pub-quiz item as question, then answer. */
+export function toMovieQuestionSpeech(item, questionNumber) {
+  const n = Number(questionNumber) || 1;
+  let question = String(item.question || "")
+    .trim()
+    .replace(/—/g, ", ")
+    .replace(/–/g, " to ")
+    .replace(/\s+/g, " ");
+  if (question && !/[?!.]$/.test(question)) question += "?";
+
+  const answer = String(item.answer || "")
+    .trim()
+    .replace(/—/g, ", ")
+    .replace(/\bMjolnir\b/g, "Meeol-neer");
+
+  let line = `Question ${n}. ${question} The answer is ${answer}.`;
+  const note = String(item.note || "")
+    .trim()
+    .replace(/—/g, ", ")
+    .replace(/–/g, " to ");
+  if (note) {
+    const extra = /[.!?]$/.test(note) ? note : `${note}.`;
+    line += ` ${extra}`;
+  }
+  return line;
 }
 
 let browserSpeakSession = 0;

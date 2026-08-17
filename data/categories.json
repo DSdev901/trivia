@@ -34,6 +34,26 @@
       ]
     },
     {
+      "id": "movies",
+      "name": "Film & Movies",
+      "description": "One hundred pub-quiz film questions in ten rounds of ten — study the answers, listen, then quiz.",
+      "type": "movies",
+      "batchCount": 10,
+      "batchPath": "data/movies/batch-{n}.json",
+      "batches": [
+        { "n": 1, "label": "Opening Credits", "range": "Opening Credits" },
+        { "n": 2, "label": "Line, Please", "range": "Line, Please" },
+        { "n": 3, "label": "Oscar Night", "range": "Oscar Night" },
+        { "n": 4, "label": "Who Directed?", "range": "Who Directed?" },
+        { "n": 5, "label": "Cast List", "range": "Cast List" },
+        { "n": 6, "label": "Franchises", "range": "Franchises" },
+        { "n": 7, "label": "Animation & Family", "range": "Animation & Family" },
+        { "n": 8, "label": "Page to Screen", "range": "Page to Screen" },
+        { "n": 9, "label": "Sci-Fi, Horror & Fantasy", "range": "Sci-Fi, Horror & Fantasy" },
+        { "n": 10, "label": "This Century", "range": "This Century" }
+      ]
+    },
+    {
       "id": "periodic-table",
       "name": "Periodic Table",
       "description": "Interactive table of all 118 elements — discovery, naming, and trivia facts, with spoken tours by group.",

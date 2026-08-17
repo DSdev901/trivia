@@ -1,0 +1,78 @@
+{
+  "category": "Film & Movies",
+  "batch": 9,
+  "title": "Sci-Fi, Horror & Fantasy",
+  "range": "Sci-Fi, Horror & Fantasy",
+  "questions": [
+    {
+      "id": "film-9-01",
+      "question": "In Alien, what is the name of the warrant officer played by Sigourney Weaver?",
+      "answer": "Ellen Ripley",
+      "choices": ["Ellen Ripley", "Sarah Connor", "Dana Scully", "Katniss Everdeen"],
+      "note": "She returns in Aliens, Alien 3, and Alien Resurrection."
+    },
+    {
+      "id": "film-9-02",
+      "question": "What 1999 film asks you to choose between a red pill and a blue pill?",
+      "answer": "The Matrix",
+      "choices": ["The Matrix", "Inception", "Dark City", "eXistenZ"],
+      "note": "Red pill: the truth. Blue pill: back to the simulation."
+    },
+    {
+      "id": "film-9-03",
+      "question": "Who created Star Wars?",
+      "answer": "George Lucas",
+      "choices": ["George Lucas", "Steven Spielberg", "Gene Roddenberry", "Irvin Kershner"],
+      "note": "He directed A New Hope and the prequels; Kershner directed Empire."
+    },
+    {
+      "id": "film-9-04",
+      "question": "What is the name of the hotel in The Shining?",
+      "answer": "The Overlook Hotel",
+      "choices": ["The Overlook Hotel", "The Bates Motel", "The Grand Budapest Hotel", "The Stanley Hotel"],
+      "note": "Stephen King was inspired by Colorado’s Stanley Hotel; Kubrick’s film uses the Overlook."
+    },
+    {
+      "id": "film-9-05",
+      "question": "In Blade Runner, what are the artificial humans called?",
+      "answer": "Replicants",
+      "choices": ["Replicants", "Cylons", "Hosts", "Synthetics"],
+      "note": "Harrison Ford’s Deckard hunts them in a rainy 2019 Los Angeles."
+    },
+    {
+      "id": "film-9-06",
+      "question": "What 1973 horror film about a possessed girl was directed by William Friedkin?",
+      "answer": "The Exorcist",
+      "choices": ["The Exorcist", "Rosemary's Baby", "The Omen", "Carrie"],
+      "note": "Linda Blair as Regan; “the power of Christ compels you.”"
+    },
+    {
+      "id": "film-9-07",
+      "question": "In Back to the Future, what kind of car is the time machine?",
+      "answer": "DeLorean",
+      "choices": ["DeLorean", "Mustang", "Corvette", "Firebird"],
+      "note": "A DMC-12; it needs 1.21 gigawatts and a flux capacitor."
+    },
+    {
+      "id": "film-9-08",
+      "question": "What 1982 Steven Spielberg film features a friendly alien who wants to “phone home”?",
+      "answer": "E.T. the Extra-Terrestrial",
+      "choices": ["E.T. the Extra-Terrestrial", "Close Encounters of the Third Kind", "Cocoon", "Flight of the Navigator"],
+      "note": "Drew Barrymore is Gertie; the boy is Elliott."
+    },
+    {
+      "id": "film-9-09",
+      "question": "Which 1979 Ridley Scott film used the tagline “In space, no one can hear you scream”?",
+      "answer": "Alien",
+      "choices": ["Alien", "Prometheus", "Event Horizon", "Sunshine"],
+      "note": "The xenomorph and the Nostromo; Scott returned decades later with Prometheus."
+    },
+    {
+      "id": "film-9-10",
+      "question": "What planet is Superman from?",
+      "answer": "Krypton",
+      "choices": ["Krypton", "Gallifrey", "Vulcan", "Asgard"],
+      "note": "He lands in Kansas and grows up as Clark Kent."
+    }
+  ]
+}

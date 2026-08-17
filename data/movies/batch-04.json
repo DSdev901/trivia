@@ -1,0 +1,78 @@
+{
+  "category": "Film & Movies",
+  "batch": 4,
+  "title": "Who Directed?",
+  "range": "Who Directed?",
+  "questions": [
+    {
+      "id": "film-4-01",
+      "question": "Who directed Pulp Fiction?",
+      "answer": "Quentin Tarantino",
+      "choices": ["Quentin Tarantino", "Martin Scorsese", "Guy Ritchie", "Robert Rodriguez"],
+      "note": "1994 — the non-linear crime film that made him a household name."
+    },
+    {
+      "id": "film-4-02",
+      "question": "Who directed Jaws, E.T. the Extra-Terrestrial, and Jurassic Park?",
+      "answer": "Steven Spielberg",
+      "choices": ["Steven Spielberg", "George Lucas", "Robert Zemeckis", "James Cameron"],
+      "note": "Three defining summer-movie templates from one director."
+    },
+    {
+      "id": "film-4-03",
+      "question": "Who directed Inception and The Dark Knight?",
+      "answer": "Christopher Nolan",
+      "choices": ["Christopher Nolan", "Zack Snyder", "Denis Villeneuve", "David Fincher"],
+      "note": "Also behind Memento, Dunkirk, Interstellar, and Oppenheimer."
+    },
+    {
+      "id": "film-4-04",
+      "question": "Who directed Psycho, Vertigo, and Rear Window?",
+      "answer": "Alfred Hitchcock",
+      "choices": ["Alfred Hitchcock", "Orson Welles", "Billy Wilder", "Fritz Lang"],
+      "note": "The Master of Suspense; he never won a competitive Best Director Oscar."
+    },
+    {
+      "id": "film-4-05",
+      "question": "Who directed The Godfather and The Godfather Part II?",
+      "answer": "Francis Ford Coppola",
+      "choices": ["Francis Ford Coppola", "Martin Scorsese", "Sergio Leone", "Brian De Palma"],
+      "note": "Part II is one of the few sequels to win Best Picture."
+    },
+    {
+      "id": "film-4-06",
+      "question": "Who directed 2001: A Space Odyssey?",
+      "answer": "Stanley Kubrick",
+      "choices": ["Stanley Kubrick", "Ridley Scott", "George Lucas", "Steven Spielberg"],
+      "note": "Made with writer Arthur C. Clarke; also the man behind The Shining and Dr. Strangelove."
+    },
+    {
+      "id": "film-4-07",
+      "question": "Who directed Titanic and Avatar?",
+      "answer": "James Cameron",
+      "choices": ["James Cameron", "Steven Spielberg", "Peter Jackson", "Ridley Scott"],
+      "note": "Also Aliens, The Terminator, and The Abyss."
+    },
+    {
+      "id": "film-4-08",
+      "question": "Who directed the Oscar-winning animated film Spirited Away?",
+      "answer": "Hayao Miyazaki",
+      "choices": ["Hayao Miyazaki", "Isao Takahata", "Makoto Shinkai", "Pete Docter"],
+      "note": "Studio Ghibli’s most famous film outside Japan."
+    },
+    {
+      "id": "film-4-09",
+      "question": "Who directed the 2017 horror-satire Get Out?",
+      "answer": "Jordan Peele",
+      "choices": ["Jordan Peele", "M. Night Shyamalan", "Jordan Vogt-Roberts", "Barry Jenkins"],
+      "note": "His directing debut; he later made Us and Nope."
+    },
+    {
+      "id": "film-4-10",
+      "question": "Who directed the 2023 hit Barbie?",
+      "answer": "Greta Gerwig",
+      "choices": ["Greta Gerwig", "Nora Ephron", "Sofia Coppola", "Patty Jenkins"],
+      "note": "She also wrote and directed Lady Bird and Little Women (2019)."
+    }
+  ]
+}
