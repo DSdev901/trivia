@@ -55,7 +55,6 @@ import {
 import { crumbsHtml, hashPath, href, parseHash } from "./routes.js";
 
 const els = {
-  subtitle: document.getElementById("subtitle"),
   nav: document.getElementById("nav"),
   backBtn: document.getElementById("back-btn"),
   homeBtn: document.getElementById("home-btn"),
@@ -249,7 +248,6 @@ function startElementQuiz({
   };
   state.lastResult = null;
   const modeLabel = easy ? "Easy" : "Hard";
-  els.subtitle.textContent = `${state.category.name} · ${modeLabel} · ${scopeLabel}`;
   renderQuizQuestion();
   show("quiz");
 }
@@ -283,7 +281,6 @@ async function openBatch(batchNumber) {
     const batch = await loadBatch(state.category, batchNumber);
     state.batch = batch;
     state.president = null;
-    els.subtitle.textContent = `${state.category.name} · Section ${batch.batch} (${batch.range})`;
     renderPresidents(batch);
     show("presidents");
   } catch (err) {
@@ -334,7 +331,6 @@ function stopAllSpeech() {
 
 function openPresident(president) {
   state.president = president;
-  els.subtitle.textContent = president.name;
   renderPresidentDetail();
   show("detail");
 }
@@ -744,7 +740,6 @@ async function startQuiz(batchNumbers) {
       total: questions.length,
     };
     state.lastResult = null;
-    els.subtitle.textContent = `${state.category.name} · Quiz`;
     renderQuizQuestion();
     show("quiz");
   } catch (err) {
@@ -884,7 +879,6 @@ function renderQuizDone() {
         quiz.scopeLabel || "Elements"
       }`
     : (quiz.batchNumbers || []).map((n) => `Section ${n}`).join(", ");
-  els.subtitle.textContent = `${state.category.name} · Quiz complete`;
   els.quizDone.innerHTML = `
     <div class="quiz-done">
       <h2 class="section-title">Rotation cleared</h2>
@@ -919,7 +913,6 @@ function renderQuizDone() {
     }
     renderQuizSetup(state.category);
     show("quizSetup");
-    els.subtitle.textContent = `${state.category.name} · Quiz setup`;
   });
 
   document.getElementById("quiz-to-hub").addEventListener("click", () => {
@@ -995,7 +988,6 @@ async function applyRoute() {
     state.president = null;
     state.quiz = null;
     state.lastResult = null;
-    els.subtitle.textContent = "";
     setPageTitle([]);
     show("categories");
     return;
@@ -1030,7 +1022,6 @@ async function applyRoute() {
     await renderCurrentEvents({ els, mode: "news", tab: rest[0] });
     if (seq !== routeSeq) return;
     const bits = rest[0] === "feed" ? [category.name, "Live feed"] : [category.name];
-    els.subtitle.textContent = bits.join(" · ");
     setPageTitle(bits);
     return;
   }
@@ -1038,7 +1029,6 @@ async function applyRoute() {
     show("currentEvents");
     await renderCurrentEvents({ els, mode: "netflix" });
     if (seq !== routeSeq) return;
-    els.subtitle.textContent = category.name;
     setPageTitle([category.name]);
     return;
   }
@@ -1047,7 +1037,6 @@ async function applyRoute() {
       void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
     }
     show("periodicTable");
-    els.subtitle.textContent = category.name;
     setPageTitle([category.name]);
     return;
   }
@@ -1060,14 +1049,12 @@ async function applyRoute() {
       mode: rest[2] || "",
     });
     if (seq !== routeSeq) return;
-    els.subtitle.textContent = category.name;
     setPageTitle([category.name, rest[0], rest[1], rest[2]].filter(Boolean));
     return;
   }
   if (category.type === "captured") {
     if (state.view !== "captured") void renderCaptured({ els });
     show("captured");
-    els.subtitle.textContent = category.name;
     setPageTitle([category.name]);
     return;
   }
@@ -1076,7 +1063,6 @@ async function applyRoute() {
     const n = Number(rest[1]);
     if (n) {
       if (state.batch?.batch === n && state.view === "presidents") {
-        els.subtitle.textContent = `${category.name} · Section ${state.batch.batch} (${state.batch.range})`;
         setPageTitle([category.name, batchLabel(category, n)]);
         show("presidents");
         return;
@@ -1093,7 +1079,6 @@ async function applyRoute() {
     state.batch = null;
     renderBatches(category);
     show("batches");
-    els.subtitle.textContent = `${category.name} · Study`;
     setPageTitle([category.name, "Study"]);
     return;
   }
@@ -1101,14 +1086,12 @@ async function applyRoute() {
     state.quiz = null;
     renderQuizSetup(category);
     show("quizSetup");
-    els.subtitle.textContent = `${category.name} · Quiz setup`;
     setPageTitle([category.name, "Quiz"]);
     return;
   }
   if (rest[0] === "flags") {
     renderFlags();
     show("flags");
-    els.subtitle.textContent = `${category.name} · Flagged`;
     setPageTitle([category.name, "Flagged"]);
     return;
   }
@@ -1116,7 +1099,6 @@ async function applyRoute() {
   state.batch = null;
   renderHub(category);
   show("hub");
-  els.subtitle.textContent = category.name;
   setPageTitle([category.name]);
 }
 
@@ -1127,7 +1109,6 @@ function goHome() {
 function goBack() {
   if (state.view === "detail") {
     state.president = null;
-    els.subtitle.textContent = `${state.category.name} · Section ${state.batch.batch} (${state.batch.range})`;
     show("presidents");
     return;
   }
@@ -1139,12 +1120,10 @@ function goBack() {
     if (wasElements) {
       void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
       show("periodicTable");
-      els.subtitle.textContent = state.category.name;
       return;
     }
     renderQuizSetup(state.category);
     show("quizSetup");
-    els.subtitle.textContent = `${state.category.name} · Quiz setup`;
     return;
   }
   if (state.view === "quizDone") {
@@ -1157,7 +1136,6 @@ function goBack() {
     return;
   }
   if (state.view === "captured" && capturedCanGoBack() && capturedGoBack()) {
-    els.subtitle.textContent = state.category.name;
     return;
   }
   const { parts } = parseHash();

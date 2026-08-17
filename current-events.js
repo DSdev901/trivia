@@ -608,26 +608,19 @@ function netflixFilterBar(allItems) {
       typeCounts[f.id]
     }</span></button>`
   ).join("");
-  const usRadios = hasUs
+  const usToggle = hasUs
     ? `
-      <div class="ce-filter-region" role="radiogroup" aria-label="Region">
-        <label class="ce-filter-radio">
-          <input type="radio" name="netflix-region" value="all" ${
-            ce.netflixUsOnly ? "" : "checked"
-          } />
-          All regions
-        </label>
-        <label class="ce-filter-radio">
-          <input type="radio" name="netflix-region" value="us" ${
-            ce.netflixUsOnly ? "checked" : ""
-          } />
-          US only <span class="ce-filter-count">${usInType}</span>
-        </label>
-      </div>`
+      <label class="ce-toggle">
+        <input type="checkbox" id="netflix-us-only" ${
+          ce.netflixUsOnly ? "checked" : ""
+        } />
+        <span class="ce-toggle-switch" aria-hidden="true"></span>
+        <span class="ce-toggle-text">US only <span class="ce-filter-count">${usInType}</span></span>
+      </label>`
     : "";
   return `
     <div class="ce-filter" role="group" aria-label="Filter Netflix releases">
-      ${typeBar}${usRadios}
+      ${typeBar}${usToggle}
     </div>`;
 }
 
@@ -893,13 +886,11 @@ function render() {
     });
   });
 
-  ce.root.querySelectorAll('input[name="netflix-region"]').forEach((radio) => {
-    radio.addEventListener("change", () => {
-      stopPlayback();
-      ce.netflixUsOnly = radio.value === "us";
-      window.scrollTo(0, 0);
-      render();
-    });
+  document.getElementById("netflix-us-only")?.addEventListener("change", (e) => {
+    stopPlayback();
+    ce.netflixUsOnly = e.target.checked;
+    window.scrollTo(0, 0);
+    render();
   });
 
   ce.root.querySelectorAll(".ce-filter-chip").forEach((btn) => {
