@@ -1928,6 +1928,102 @@ function expectedAnswer(item) {
   return item.name;
 }
 
+function foldPlaceName(s) {
+  return String(s || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function foldedContains(haystack, needle) {
+  if (!needle) return false;
+  const esc = needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`(?:^| )${esc}(?: |$)`).test(haystack);
+}
+
+function packNationalScope() {
+  const id = (geo.pack?.id || "").toLowerCase();
+  const nameFold = foldPlaceName(geo.pack?.name || "");
+  if (
+    /^(us|usa)(-|$)/.test(id) ||
+    /\bu s\b/.test(nameFold) ||
+    foldedContains(nameFold, "united states")
+  ) {
+    return "united states";
+  }
+  if (id === "canada" || id.startsWith("canada-") || foldedContains(nameFold, "canada")) {
+    return "canada";
+  }
+  if (
+    /^(uk|gb)(-|$)/.test(id) ||
+    /\bu k\b/.test(nameFold) ||
+    foldedContains(nameFold, "united kingdom") ||
+    foldedContains(nameFold, "great britain")
+  ) {
+    return "united kingdom";
+  }
+  return "";
+}
+
+function packAlreadyNamesCountry(country) {
+  const c = foldPlaceName(country);
+  const scope = packNationalScope();
+  if (
+    scope &&
+    (c === scope ||
+      (scope === "united states" && c === "united states of america") ||
+      (scope === "united kingdom" && c === "great britain"))
+  ) {
+    return true;
+  }
+  const nameFold = foldPlaceName(geo.pack?.name || "");
+  const idFold = foldPlaceName(geo.pack?.id || "");
+  return foldedContains(nameFold, c) || foldedContains(idFold, c);
+}
+
+function promptAlreadyNamesCountry(item, country) {
+  const c = foldPlaceName(country);
+  if (!c) return true;
+  const prompt = foldPlaceName(String(promptForMode(item) || "").replace(/<[^>]+>/g, " "));
+  return foldedContains(prompt, c) || packAlreadyNamesCountry(country);
+}
+
+function confirmParts(item) {
+  const kind = quizKind();
+  const mode = geo.mode;
+  const expected = expectedAnswer(item);
+  if (mode === "reverse") return { place: expected, country: "" };
+  if (item.capital && (mode === "capitals" || kind === "capitals")) {
+    return { place: item.capital, country: item.name || "" };
+  }
+  if (item.kind === "landmark" || item.kind === "water") {
+    if (packNationalScope()) return { place: expected, country: "" };
+    return { place: expected, country: item.country || "" };
+  }
+  return { place: expected, country: "" };
+}
+
+function confirmAnswerHtml(ok, item) {
+  const { place, country: rawCountry } = confirmParts(item);
+  const country =
+    rawCountry &&
+    foldPlaceName(rawCountry) !== foldPlaceName(place) &&
+    !promptAlreadyNamesCountry(item, rawCountry)
+      ? rawCountry
+      : "";
+  const where = country ? ` · ${escapeHtml(country)}` : "";
+  const cap =
+    ok && item.capital && place === item.name
+      ? ` · capital ${escapeHtml(item.capital)}`
+      : "";
+  if (ok) return `<strong>Correct.</strong> ${escapeHtml(place)}${where}${cap}`;
+  return `<strong>Not quite.</strong> Answer: <strong>${escapeHtml(
+    place
+  )}</strong>${where}`;
+}
+
 function buildChoices(item) {
   const mode = geo.mode;
   const kind = quizKind();
@@ -2403,13 +2499,7 @@ function judge(ok, clickedMapId = null, clickedBtn = null) {
   if (feedback) {
     feedback.hidden = false;
     feedback.className = `quiz-feedback ${ok ? "is-correct" : "is-wrong"}`;
-    feedback.innerHTML = ok
-      ? `<strong>Correct.</strong> ${escapeHtml(item.name)}${
-          item.capital ? ` · capital ${escapeHtml(item.capital)}` : ""
-        }`
-      : `<strong>Not quite.</strong> Answer: <strong>${escapeHtml(
-          expectedAnswer(item)
-        )}</strong>`;
+    feedback.innerHTML = confirmAnswerHtml(ok, item);
   }
   if (nextRow) nextRow.hidden = false;
 

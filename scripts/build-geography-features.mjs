@@ -16,7 +16,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "geography");
 
 const { feature } = require("/tmp/geo-build/node_modules/topojson-client");
-const { geoNaturalEarth1, geoPath } = require("/tmp/geo-build/node_modules/d3-geo");
+const { geoNaturalEarth1, geoPath, geoContains, geoBounds } = require("/tmp/geo-build/node_modules/d3-geo");
 
 const topo = JSON.parse(readFileSync("/tmp/countries-50m.json", "utf8"));
 const countries = feature(topo, topo.objects.countries);
@@ -31,10 +31,132 @@ const projection = geoNaturalEarth1().fitExtent(
 );
 geoPath(projection);
 
+const NE_NAME_TO_ISO = {
+  "bosnia and herz.": "BA",
+  "solomon is.": "SB",
+  "n. cyprus": "CY",
+  somaliland: "SO",
+  kosovo: "XK",
+  "eq. guinea": "GQ",
+  "w. sahara": "EH",
+  "central african rep.": "CF",
+  "dem. rep. congo": "CD",
+  congo: "CG",
+  "côte d'ivoire": "CI",
+  "dominican rep.": "DO",
+  "falkland is.": "FK",
+  "guinea-bissau": "GW",
+  "n. macedonia": "MK",
+  palestine: "PS",
+  "s. sudan": "SS",
+  taiwan: "TW",
+  "united states of america": "US",
+  tanzania: "TZ",
+  venezuela: "VE",
+  vietnam: "VN",
+  syria: "SY",
+  russia: "RU",
+  "south korea": "KR",
+  "north korea": "KP",
+  laos: "LA",
+  brunei: "BN",
+  "czech rep.": "CZ",
+  czechia: "CZ",
+};
+
+function loadCountryIndex() {
+  const nameByIso = new Map();
+  try {
+    const packs = JSON.parse(readFileSync(path.join(OUT, "world-countries.json"), "utf8"));
+    for (const it of packs.items || []) nameByIso.set(it.id, it.name);
+  } catch {
+    /* names fall back to Natural Earth */
+  }
+  const byNum = new Map();
+  const byName = new Map();
+  try {
+    const numeric = JSON.parse(readFileSync("/tmp/countries.json", "utf8"));
+    for (const c of numeric) {
+      if (c.ccn3) byNum.set(String(Number(c.ccn3)), c.cca2);
+      if (c.name?.common) byName.set(c.name.common.toLowerCase(), c.cca2);
+    }
+  } catch {
+    /* ISO lookup optional */
+  }
+  const rows = [];
+  for (const f of countries.features) {
+    const idNum = f.id != null ? String(Number(f.id)) : "";
+    const nm = (f.properties?.name || "").toLowerCase();
+    const iso = (idNum && byNum.get(idNum)) || NE_NAME_TO_ISO[nm] || byName.get(nm) || "";
+    const name = (iso && nameByIso.get(iso)) || f.properties?.name || iso;
+    if (!name) continue;
+    rows.push({ iso, name, feature: f, bounds: geoBounds(f) });
+  }
+  return rows;
+}
+
+const COUNTRY_ROWS = loadCountryIndex();
+const countryCache = new Map();
+
+function lonInRange(lon, minLon, maxLon, pad) {
+  const a = minLon - pad;
+  const b = maxLon + pad;
+  if (a <= b) return lon >= a && lon <= b;
+  return lon >= a || lon <= b;
+}
+
+function countryAt(lon, lat) {
+  const key = `${lon},${lat}`;
+  if (countryCache.has(key)) return countryCache.get(key);
+  const tries = [[lon, lat]];
+  for (const d of [0.4, 0.8, 1.6, 3, 6]) {
+    tries.push(
+      [lon + d, lat],
+      [lon - d, lat],
+      [lon, lat + d],
+      [lon, lat - d],
+      [lon + d, lat + d],
+      [lon - d, lat + d],
+      [lon + d, lat - d],
+      [lon - d, lat - d]
+    );
+  }
+  let found = "";
+  for (const pt of tries) {
+    const [x, y] = pt;
+    for (const row of COUNTRY_ROWS) {
+      const [[minLon, minLat], [maxLon, maxLat]] = row.bounds;
+      if (y < minLat - 6 || y > maxLat + 6) continue;
+      if (!lonInRange(x, minLon, maxLon, 6)) continue;
+      try {
+        if (geoContains(row.feature, pt)) {
+          found = row.name;
+          break;
+        }
+      } catch {
+        /* skip uncontainable geometry */
+      }
+    }
+    if (found) break;
+  }
+  countryCache.set(key, found);
+  return found;
+}
+
+function wantsCountry(it) {
+  if (it.country) return false;
+  if (it.kind === "landmark") return true;
+  if (it.kind !== "water") return false;
+  const n = it.name || "";
+  if (/\bLake\b/i.test(n) || /^(Aral|Caspian|Tonlé Sap)/i.test(n)) return true;
+  if (/\b(Ocean|Sea|Gulf|Strait|Bay|Channel)\b/i.test(n)) return false;
+  return true;
+}
+
 const MODES = ["pin", "type", "name", "choice", "study"];
 
-function f(id, name, lat, lon, fact, kind = "land") {
-  return { id, name, lat, lon, fact, kind };
+function f(id, name, lat, lon, fact, kind = "land", country = "") {
+  return { id, name, lat, lon, fact, kind, country };
 }
 
 function projectItems(items) {
@@ -43,7 +165,11 @@ function projectItems(items) {
     if (!xy || !Number.isFinite(xy[0]) || !Number.isFinite(xy[1])) {
       throw new Error(`Could not project ${it.id} (${it.lat}, ${it.lon})`);
     }
-    return {
+    const country = it.country || (wantsCountry(it) ? countryAt(it.lon, it.lat) : "");
+    if (wantsCountry({ ...it, country: "" }) && !country) {
+      console.warn(`  [geo] no country for ${it.id} (${it.name})`);
+    }
+    const out = {
       id: it.id,
       name: it.name,
       fact: it.fact,
@@ -53,6 +179,8 @@ function projectItems(items) {
       x: Math.round(xy[0] * 10) / 10,
       y: Math.round(xy[1] * 10) / 10,
     };
+    if (country) out.country = country;
+    return out;
   });
 }
 
@@ -206,13 +334,13 @@ const WORLD_LAKES = [
   f("caspian", "Caspian Sea", 41.8, 50.5, "Largest inland body of water on Earth.", "water"),
   f("baikal", "Lake Baikal", 53.5, 108.0, "Deepest and oldest freshwater lake.", "water"),
   f("balkhash", "Lake Balkhash", 46.0, 74.0, "Large endorheic lake in Kazakhstan.", "water"),
-  f("chad", "Lake Chad", 13.0, 14.0, "Shallow African lake; size varies greatly.", "water"),
+  f("chad", "Lake Chad", 13.0, 14.0, "Shallow African lake; size varies greatly.", "water", "Chad"),
   f("erie", "Lake Erie", 42.2, -81.2, "Shallowest of the Great Lakes.", "water"),
   f("great-bear", "Great Bear Lake", 66.0, -121.0, "Largest lake entirely in Canada.", "water"),
   f("great-slave", "Great Slave Lake", 61.5, -114.0, "Deepest lake in North America.", "water"),
   f("huron", "Lake Huron", 44.8, -82.4, "Second-largest Great Lake by area.", "water"),
   f("ladoga", "Lake Ladoga", 61.0, 31.5, "Largest lake in Europe.", "water"),
-  f("malawi", "Lake Malawi", -12.0, 34.5, "Also called Lake Nyasa; African Rift lake.", "water"),
+  f("malawi", "Lake Malawi", -12.0, 34.5, "Also called Lake Nyasa; African Rift lake.", "water", "Malawi"),
   f("michigan", "Lake Michigan", 44.0, -87.0, "Third-largest Great Lake by area.", "water"),
   f("nicaragua", "Lake Nicaragua", 11.6, -85.4, "Largest lake in Central America.", "water"),
   f("ontario", "Lake Ontario", 43.7, -77.9, "Easternmost Great Lake.", "water"),
@@ -253,7 +381,7 @@ const US_LANDMARKS = [
   f("space-needle", "Space Needle", 47.6205, -122.3493, "Seattle tower from the 1962 World’s Fair.", "landmark"),
   f("independence", "Independence Hall", 39.9489, -75.15, "Where the Declaration of Independence was adopted.", "landmark"),
   f("alamo", "The Alamo", 29.4259, -98.4861, "Mission and fortress in San Antonio.", "landmark"),
-  f("niagara", "Niagara Falls", 43.0799, -79.0747, "Waterfalls on the U.S.–Canada border.", "landmark"),
+  f("niagara", "Niagara Falls", 43.0799, -79.0747, "Waterfalls on the U.S.–Canada border.", "landmark", "United States"),
 ];
 
 const CA_RIVERS = [
@@ -310,9 +438,9 @@ const SA_LANDMARKS = [
   f("angel-falls", "Angel Falls", 5.967, -62.535, "World’s highest uninterrupted waterfall.", "landmark"),
   f("brasilia-cathedral", "Brasilia Cathedral", -15.798, -47.875, "Cathedral of Brasília.", "landmark"),
   f("christ-redeemer", "Christ the Redeemer", -22.9519, -43.2105, "Statue overlooking Rio de Janeiro.", "landmark"),
-  f("easter-island", "Easter Island", -27.1127, -109.3497, "Rapa Nui, known for moai statues.", "landmark"),
+  f("easter-island", "Easter Island", -27.1127, -109.3497, "Rapa Nui, known for moai statues.", "landmark", "Chile"),
   f("penol", "El Peñón de Guatapé", 6.223, -75.178, "Rock landmark in Colombia.", "landmark"),
-  f("galapagos", "Galápagos Islands", -0.7, -90.3, "UNESCO volcanic archipelago.", "landmark"),
+  f("galapagos", "Galápagos Islands", -0.7, -90.3, "UNESCO volcanic archipelago.", "landmark", "Ecuador"),
   f("iguazu", "Iguazu Falls", -25.695, -54.437, "Waterfalls on the Argentina–Brazil border.", "landmark"),
   f("la-mano", "La Mano de Punta del Este", -34.957, -54.937, "Sculpture on a Uruguayan beach.", "landmark"),
   f("machu-picchu", "Machu Picchu", -13.1631, -72.545, "Inca citadel in Peru.", "landmark"),
@@ -391,7 +519,7 @@ const AFRICA_PHYSICAL = [
   f("indian-ocean", "Indian Ocean", -10.0, 55.0, "Ocean off Africa’s east coast.", "water"),
   f("kalahari", "Kalahari Desert", -23.0, 22.0, "Sandy basin of southern Africa.", "land"),
   f("kilimanjaro", "Kilimanjaro", -3.067, 37.355, "Africa’s highest mountain.", "range"),
-  f("malawi", "Lake Malawi", -12.0, 34.5, "Also called Lake Nyasa.", "water"),
+  f("malawi", "Lake Malawi", -12.0, 34.5, "Also called Lake Nyasa.", "water", "Malawi"),
   f("tanganyika", "Lake Tanganyika", -6.5, 29.8, "World’s longest freshwater lake.", "water"),
   f("victoria", "Lake Victoria", -1.0, 33.0, "Africa’s largest lake by area.", "water"),
   f("madagascar", "Madagascar", -19.0, 46.5, "World’s fourth-largest island.", "land"),
@@ -419,7 +547,7 @@ const AFRICA_LANDMARKS = [
   f("timbuktu", "Timbuktu", 16.773, -3.007, "Historic Saharan city in Mali.", "landmark"),
   f("valley-kings", "Valley of the Kings", 25.7402, 32.6014, "Royal burial ground near Luxor.", "landmark"),
   f("victoria-falls", "Victoria Falls", -17.9243, 25.8572, "Waterfall on the Zambezi River.", "landmark"),
-  f("zanzibar", "Zanzibar", -6.165, 39.202, "Island off Tanzania.", "landmark"),
+  f("zanzibar", "Zanzibar", -6.165, 39.202, "Island off Tanzania.", "landmark", "Tanzania"),
   f("zuma", "Zuma Rock", 9.13, 7.23, "Monolith near Abuja, Nigeria.", "landmark"),
 ];
 
@@ -456,11 +584,11 @@ const ASIA_PHYSICAL = [
 
 const ASIA_LANDMARKS = [
   f("angkor", "Angkor Wat", 13.4125, 103.867, "Temple complex in Cambodia.", "landmark"),
-  f("big-buddha", "Big Buddha", 22.254, 114.155, "Tian Tan Buddha on Lantau Island, Hong Kong.", "landmark"),
+  f("big-buddha", "Big Buddha", 22.254, 114.155, "Tian Tan Buddha on Lantau Island, Hong Kong.", "landmark", "China"),
   f("burj", "Burj Khalifa", 25.1972, 55.2744, "World’s tallest building, in Dubai.", "landmark"),
   f("forbidden-city", "Forbidden City", 39.9163, 116.3972, "Imperial palace in Beijing.", "landmark"),
   f("great-wall", "Great Wall Of China", 40.4319, 116.5704, "Historic fortifications north of Beijing.", "landmark"),
-  f("marina-bay", "Marina Bay Sands", 1.2834, 103.8607, "Hotel and sky park in Singapore.", "landmark"),
+  f("marina-bay", "Marina Bay Sands", 1.2834, 103.8607, "Hotel and sky park in Singapore.", "landmark", "Singapore"),
   f("fuji", "Mount Fuji", 35.3606, 138.7274, "Japan’s highest and most iconic peak.", "landmark"),
   f("petra", "Petra", 30.3285, 35.4444, "Rock-cut city in Jordan.", "landmark"),
   f("petronas", "Petronas Twin Towers", 3.1579, 101.7116, "Twin skyscrapers in Kuala Lumpur.", "landmark"),
