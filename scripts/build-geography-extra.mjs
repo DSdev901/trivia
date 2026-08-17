@@ -365,13 +365,13 @@ await writeJson("continents-cartoon.json", {
 });
 
 // —— Outline-only packs (reuse country item lists) ——
-async function outlinePack(srcId, id, name, blurb) {
+async function outlinePack(srcId, id, name, blurb, map = "world-countries") {
   const src = JSON.parse(await readFile(path.join(OUT, `${srcId}.json`), "utf8"));
   const items = src.items;
   await writeJson(`${id}.json`, {
     id,
     name,
-    map: "world-countries",
+    map,
     quiz: "outlines",
     items,
   });
@@ -379,7 +379,7 @@ async function outlinePack(srcId, id, name, blurb) {
     id,
     name,
     blurb,
-    map: "world-countries",
+    map,
     quiz: "outlines",
     modes: ["outline", "type", "choice", "study"],
     itemCount: items.length,
@@ -395,14 +395,16 @@ const outlinePacks = [
   await outlinePack("asia-countries", "asia-outlines", "Asia: Outlines", "Silhouette drills for Asia."),
   await outlinePack("oceania-countries", "oceania-outlines", "Oceania: Outlines", "Silhouette drills for Oceania."),
   await outlinePack("us-states", "us-outlines", "U.S.: State Outlines", "Identify U.S. states from their shapes.", "us-states"),
+  await outlinePack("canada-provinces", "canada-outlines", "Canada: Province Outlines", "Identify provinces and territories from their shapes.", "canada-provinces"),
 ];
 
-// Fix us outlines map
+// Keep the U.S. outlines pack on the states map (legacy callers).
 {
   const us = JSON.parse(await readFile(path.join(OUT, "us-outlines.json"), "utf8"));
   us.map = "us-states";
   await writeJson("us-outlines.json", us);
-  outlinePacks[outlinePacks.length - 1].map = "us-states";
+  const usMeta = outlinePacks.find((p) => p.id === "us-outlines");
+  if (usMeta) usMeta.map = "us-states";
 }
 
 // —— Merge into packs.json ——
@@ -444,6 +446,7 @@ const extraByGroup = {
     },
     outlinePacks[1],
     outlinePacks[7],
+    outlinePacks[8],
     ...sportsPacks,
   ],
   "south-america": [outlinePacks[2]],

@@ -1,0 +1,32 @@
+{
+  "id": "canada-atlantic",
+  "name": "Canada: Atlantic Provinces",
+  "map": "canada-provinces",
+  "quiz": "countries",
+  "items": [
+    {
+      "id": "NL",
+      "name": "Newfoundland and Labrador",
+      "capital": "St. John's",
+      "abbr": "NL"
+    },
+    {
+      "id": "PE",
+      "name": "Prince Edward Island",
+      "capital": "Charlottetown",
+      "abbr": "PE"
+    },
+    {
+      "id": "NS",
+      "name": "Nova Scotia",
+      "capital": "Halifax",
+      "abbr": "NS"
+    },
+    {
+      "id": "NB",
+      "name": "New Brunswick",
+      "capital": "Fredericton",
+      "abbr": "NB"
+    }
+  ]
+}

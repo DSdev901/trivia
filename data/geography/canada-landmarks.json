@@ -1,0 +1,129 @@
+{
+  "id": "canada-landmarks",
+  "name": "Canada: 12 Landmarks",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "banff",
+      "name": "Banff National Park",
+      "fact": "Canada’s first national park, in the Rockies.",
+      "kind": "landmark",
+      "lat": 51.496,
+      "lon": -115.928,
+      "x": 224.7,
+      "y": 93.3
+    },
+    {
+      "id": "capilano",
+      "name": "Capilano Suspension Bridge",
+      "fact": "Footbridge over the Capilano River in North Vancouver.",
+      "kind": "landmark",
+      "lat": 49.343,
+      "lon": -123.115,
+      "x": 203.8,
+      "y": 99.9
+    },
+    {
+      "id": "chateau-frontenac",
+      "name": "Château Frontenac",
+      "fact": "Historic hotel above Old Quebec.",
+      "kind": "landmark",
+      "lat": 46.812,
+      "lon": -71.205,
+      "x": 326.3,
+      "y": 107.7
+    },
+    {
+      "id": "cn-tower",
+      "name": "CN Tower",
+      "fact": "Toronto tower that was once the world’s tallest.",
+      "kind": "landmark",
+      "lat": 43.643,
+      "lon": -79.387,
+      "x": 303.1,
+      "y": 117.6
+    },
+    {
+      "id": "hopewell-rocks",
+      "name": "Hopewell Rocks",
+      "fact": "Tide-carved flowerpot rocks in the Bay of Fundy.",
+      "kind": "landmark",
+      "lat": 45.82,
+      "lon": -64.577,
+      "x": 341.6,
+      "y": 110.8
+    },
+    {
+      "id": "lake-louise",
+      "name": "Lake Louise",
+      "fact": "Glacial lake in Banff National Park.",
+      "kind": "landmark",
+      "lat": 51.425,
+      "lon": -116.177,
+      "x": 224,
+      "y": 93.5
+    },
+    {
+      "id": "notre-dame-montreal",
+      "name": "Notre-Dame Basilica",
+      "fact": "Gothic Revival church in Old Montreal.",
+      "kind": "landmark",
+      "lat": 45.505,
+      "lon": -73.556,
+      "x": 319.3,
+      "y": 111.7
+    },
+    {
+      "id": "parliament-hill",
+      "name": "Parliament Hill",
+      "fact": "Seat of Canada’s Parliament in Ottawa.",
+      "kind": "landmark",
+      "lat": 45.424,
+      "lon": -75.699,
+      "x": 313.9,
+      "y": 112
+    },
+    {
+      "id": "peggys-cove",
+      "name": "Peggy’s Cove",
+      "fact": "Fishing village and lighthouse on the Nova Scotia coast.",
+      "kind": "landmark",
+      "lat": 44.493,
+      "lon": -63.918,
+      "x": 342.1,
+      "y": 114.9
+    },
+    {
+      "id": "rideau-canal",
+      "name": "Rideau Canal",
+      "fact": "UNESCO-listed canal through Ottawa.",
+      "kind": "landmark",
+      "lat": 45.421,
+      "lon": -75.697,
+      "x": 313.9,
+      "y": 112
+    },
+    {
+      "id": "signal-hill",
+      "name": "Signal Hill",
+      "fact": "Historic hill above St. John’s harbour.",
+      "kind": "landmark",
+      "lat": 47.57,
+      "lon": -52.682,
+      "x": 372,
+      "y": 105.3
+    },
+    {
+      "id": "stanley-park",
+      "name": "Stanley Park",
+      "fact": "Urban park on Vancouver’s downtown peninsula.",
+      "kind": "landmark",
+      "lat": 49.304,
+      "lon": -123.145,
+      "x": 203.7,
+      "y": 100
+    }
+  ]
+}

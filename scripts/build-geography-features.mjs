@@ -256,6 +256,35 @@ const US_LANDMARKS = [
   f("niagara", "Niagara Falls", 43.0799, -79.0747, "Waterfalls on the U.S.–Canada border.", "landmark"),
 ];
 
+const CA_RIVERS = [
+  f("athabasca", "Athabasca River", 56.7, -111.4, "Flows from the Columbia Icefield to Lake Athabasca.", "water"),
+  f("fraser", "Fraser River", 49.2, -122.9, "The main river of British Columbia.", "water"),
+  f("mackenzie", "Mackenzie River", 67.4, -133.7, "Canada’s longest river, flowing to the Arctic Ocean.", "water"),
+  f("nelson", "Nelson River", 56.5, -94.0, "Drains Lake Winnipeg toward Hudson Bay.", "water"),
+  f("ottawa-river", "Ottawa River", 45.6, -76.2, "Forms much of the Ontario–Quebec border.", "water"),
+  f("peace", "Peace River", 56.2, -117.3, "Major river of northern Alberta and B.C.", "water"),
+  f("red-river", "Red River", 49.0, -97.2, "Flows north into Lake Winnipeg.", "water"),
+  f("saint-john-river", "Saint John River", 46.3, -67.2, "Main river of New Brunswick.", "water"),
+  f("saskatchewan", "Saskatchewan River", 53.2, -105.0, "Prairie river formed by the North and South Saskatchewan.", "water"),
+  f("st-lawrence-ca", "Saint Lawrence River", 47.5, -69.5, "Outlet of the Great Lakes to the Atlantic.", "water"),
+  f("yukon-river", "Yukon River", 64.0, -139.4, "Rises in British Columbia and Yukon, then crosses Alaska.", "water"),
+];
+
+const CA_LANDMARKS = [
+  f("banff", "Banff National Park", 51.496, -115.928, "Canada’s first national park, in the Rockies.", "landmark"),
+  f("capilano", "Capilano Suspension Bridge", 49.343, -123.115, "Footbridge over the Capilano River in North Vancouver.", "landmark"),
+  f("chateau-frontenac", "Château Frontenac", 46.812, -71.205, "Historic hotel above Old Quebec.", "landmark"),
+  f("cn-tower", "CN Tower", 43.643, -79.387, "Toronto tower that was once the world’s tallest.", "landmark"),
+  f("hopewell-rocks", "Hopewell Rocks", 45.82, -64.577, "Tide-carved flowerpot rocks in the Bay of Fundy.", "landmark"),
+  f("lake-louise", "Lake Louise", 51.425, -116.177, "Glacial lake in Banff National Park.", "landmark"),
+  f("notre-dame-montreal", "Notre-Dame Basilica", 45.505, -73.556, "Gothic Revival church in Old Montreal.", "landmark"),
+  f("parliament-hill", "Parliament Hill", 45.424, -75.699, "Seat of Canada’s Parliament in Ottawa.", "landmark"),
+  f("peggys-cove", "Peggy’s Cove", 44.493, -63.918, "Fishing village and lighthouse on the Nova Scotia coast.", "landmark"),
+  f("rideau-canal", "Rideau Canal", 45.421, -75.697, "UNESCO-listed canal through Ottawa.", "landmark"),
+  f("signal-hill", "Signal Hill", 47.57, -52.682, "Historic hill above St. John’s harbour.", "landmark"),
+  f("stanley-park", "Stanley Park", 49.304, -123.145, "Urban park on Vancouver’s downtown peninsula.", "landmark"),
+];
+
 const SA_PHYSICAL = [
   f("amazon", "Amazon", -3.0, -60.0, "Largest river by discharge.", "water"),
   f("amazon-rainforest", "Amazon Rainforest", -4.0, -62.0, "World’s largest tropical rainforest.", "land"),
@@ -524,6 +553,18 @@ const metas = [
     blurb: "Iconic American landmarks.",
     items: US_LANDMARKS,
   }),
+  writePack("canada-rivers.json", {
+    id: "canada-rivers",
+    name: "Canada: Rivers",
+    blurb: "Mackenzie, Fraser, Saint Lawrence, and more.",
+    items: CA_RIVERS,
+  }),
+  writePack("canada-landmarks.json", {
+    id: "canada-landmarks",
+    name: "Canada: 12 Landmarks",
+    blurb: "CN Tower, Parliament Hill, Banff, and more.",
+    items: CA_LANDMARKS,
+  }),
   writePack("sa-physical.json", {
     id: "sa-physical",
     name: "South America: Physical Features",
@@ -588,7 +629,7 @@ const metas = [
 
 const byGroup = {
   world: ["world-physical", "world-rivers", "world-lakes", "world-landmarks"],
-  "north-america": ["na-physical", "na-lakes", "great-lakes", "us-rivers", "us-landmarks"],
+  "north-america": ["na-physical", "na-lakes", "great-lakes", "us-rivers", "us-landmarks", "canada-rivers", "canada-landmarks"],
   "south-america": ["sa-physical", "sa-landmarks"],
   europe: ["europe-physical", "europe-rivers", "europe-landmarks"],
   africa: ["africa-physical", "africa-landmarks"],

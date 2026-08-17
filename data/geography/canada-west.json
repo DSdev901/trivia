@@ -1,0 +1,32 @@
+{
+  "id": "canada-west",
+  "name": "Canada: Western Provinces",
+  "map": "canada-provinces",
+  "quiz": "countries",
+  "items": [
+    {
+      "id": "BC",
+      "name": "British Columbia",
+      "capital": "Victoria",
+      "abbr": "BC"
+    },
+    {
+      "id": "AB",
+      "name": "Alberta",
+      "capital": "Edmonton",
+      "abbr": "AB"
+    },
+    {
+      "id": "SK",
+      "name": "Saskatchewan",
+      "capital": "Regina",
+      "abbr": "SK"
+    },
+    {
+      "id": "MB",
+      "name": "Manitoba",
+      "capital": "Winnipeg",
+      "abbr": "MB"
+    }
+  ]
+}

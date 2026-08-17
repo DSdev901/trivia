@@ -7,6 +7,7 @@ const MAPS = {
   "continents-cartoon": "data/geography/maps/continents-cartoon.svg",
   "world-countries": "data/geography/maps/world-countries.svg",
   "us-states": "data/geography/maps/us-states.svg",
+  "canada-provinces": "data/geography/maps/canada-provinces.svg",
   "world-physical": "data/geography/maps/world-physical.svg",
   "na-physical": "data/geography/maps/na-physical.svg",
   "nba-teams": "data/geography/maps/nba-teams.svg",
@@ -76,11 +77,11 @@ const MODE_META = {
   },
   capitals: {
     label: "Capitals",
-    blurb: "Name the capital of the highlighted state or country.",
+    blurb: "Name the capital of the highlighted state, province, or country.",
   },
   abbr: {
     label: "Abbreviations",
-    blurb: "Match state names and two-letter postal codes.",
+    blurb: "Match names and two-letter postal codes.",
   },
   reverse: {
     label: "Reverse",
@@ -194,6 +195,12 @@ const ANSWER_ALIAS_GROUPS = [
   ["ulan bator", "ulaanbaatar"],
   ["turkiye", "turkey"],
   ["micronesia", "federated states of micronesia", "the federated states of micronesia"],
+  ["newfoundland and labrador", "newfoundland"],
+  ["prince edward island", "pei"],
+  ["saint john s", "saint johns", "st johns"],
+  ["greater sudbury", "sudbury"],
+  ["sault ste marie", "sault saint marie", "the soo"],
+  ["northwest territories", "nwt"],
 ];
 
 function answersMatch(input, expected, { kind } = {}) {
@@ -930,7 +937,7 @@ function panIdsForPack(host, inPack) {
   const ids = [...inPack];
   if (!host || geo.pack?.overlay === "markers") return ids;
 
-  if (geo.pack?.map === "us-states") {
+  if (geo.pack?.map === "us-states" || geo.pack?.map === "canada-provinces") {
     const all = allRegionIds(host);
     return ids.length < all.length * 0.85 ? all : ids;
   }
@@ -1165,6 +1172,8 @@ function pinTargetNoun() {
     return "place";
   }
   const q = quizKind();
+  if (geo.pack?.map === "canada-provinces") return "province or territory";
+  if (geo.pack?.map === "us-states") return "state";
   if (q === "capitals" || q === "countries") return "country";
   if (q === "teams") return "team";
   if (blob.includes("continent")) return "continent";
@@ -1870,9 +1879,10 @@ function promptForMode(item) {
   if (mode === "capitals")
     return `What is the capital of <strong>${escapeHtml(item.name)}</strong>?`;
   if (mode === "abbr") {
+    const unit = geo.pack?.map === "canada-provinces" ? "province or territory" : "state";
     return geo._abbrAskName
       ? `What is the postal abbreviation for <strong>${escapeHtml(item.name)}</strong>?`
-      : `Which state uses the abbreviation <strong>${escapeHtml(item.abbr)}</strong>?`;
+      : `Which ${unit} uses the abbreviation <strong>${escapeHtml(item.abbr)}</strong>?`;
   }
   if (mode === "type") {
     if (kind === "capitals")

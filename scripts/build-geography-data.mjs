@@ -9,6 +9,7 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { CA_PROVINCES } from "./lib/canada-provinces.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "geography");
@@ -469,6 +470,31 @@ addPack(
     modes: ["pin", "type", "name", "choice", "capitals", "abbr", "study"],
   },
   US_STATES
+);
+
+await writeJson("canada-provinces.json", {
+  id: "canada-provinces",
+  name: "Canada Provinces and Territories",
+  map: "canada-provinces",
+  quiz: "countries",
+  items: CA_PROVINCES.map((p) => ({
+    id: p.id,
+    name: p.name,
+    capital: p.capital,
+    abbr: p.id,
+  })),
+});
+addPack(
+  "north-america",
+  {
+    id: "canada-provinces",
+    name: "Canada: Provinces and Territories",
+    blurb: "Ten provinces and three territories — Pin, Type, capitals, and abbreviations.",
+    map: "canada-provinces",
+    quiz: "countries",
+    modes: ["pin", "type", "name", "choice", "capitals", "abbr", "study"],
+  },
+  CA_PROVINCES
 );
 
 await writeCountryPack(

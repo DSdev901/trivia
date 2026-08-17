@@ -425,6 +425,192 @@
           "itemCount": 13
         },
         {
+          "id": "canada-provinces",
+          "name": "Canada: Provinces and Territories",
+          "blurb": "Ten provinces and three territories — Pin, Type, capitals, and abbreviations.",
+          "map": "canada-provinces",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "abbr",
+            "study"
+          ],
+          "itemCount": 13
+        },
+        {
+          "id": "canada-cities",
+          "name": "Canada: Cities",
+          "blurb": "Major Canadian cities — Pin them or Type their names.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 18
+        },
+        {
+          "id": "canada-cities-difficult",
+          "name": "Canada: Cities (Difficult Version)",
+          "blurb": "Canadian cities large and small — a tougher Pin and Type drill.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 42
+        },
+        {
+          "id": "canada-landmarks",
+          "name": "Canada: 12 Landmarks",
+          "blurb": "CN Tower, Parliament Hill, Banff, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 12
+        },
+        {
+          "id": "canada-rivers",
+          "name": "Canada: Rivers",
+          "blurb": "Mackenzie, Fraser, Saint Lawrence, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 11
+        },
+        {
+          "id": "canada-atlantic",
+          "name": "Canada: Atlantic Provinces",
+          "blurb": "Newfoundland and Labrador, Prince Edward Island, Nova Scotia, and New Brunswick.",
+          "map": "canada-provinces",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "abbr",
+            "study"
+          ],
+          "itemCount": 4
+        },
+        {
+          "id": "canada-east",
+          "name": "Canada: Eastern Provinces",
+          "blurb": "Ontario, Quebec, and the Atlantic provinces.",
+          "map": "canada-provinces",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "abbr",
+            "study"
+          ],
+          "itemCount": 6
+        },
+        {
+          "id": "canada-prairies",
+          "name": "Canada: Prairie Provinces",
+          "blurb": "Manitoba, Saskatchewan, and Alberta.",
+          "map": "canada-provinces",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "abbr",
+            "study"
+          ],
+          "itemCount": 3
+        },
+        {
+          "id": "canada-west",
+          "name": "Canada: Western Provinces",
+          "blurb": "British Columbia and the Prairie provinces.",
+          "map": "canada-provinces",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "abbr",
+            "study"
+          ],
+          "itemCount": 4
+        },
+        {
+          "id": "canada-territories",
+          "name": "Canada: Territories",
+          "blurb": "Yukon, the Northwest Territories, and Nunavut.",
+          "map": "canada-provinces",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "abbr",
+            "study"
+          ],
+          "itemCount": 3
+        },
+        {
+          "id": "canada-outlines",
+          "name": "Canada: Province Outlines",
+          "blurb": "Identify provinces and territories from their shapes.",
+          "map": "canada-provinces",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 13
+        },
+        {
           "id": "us-states",
           "name": "U.S.: 50 States",
           "blurb": "All 50 states — Pin, Type, capitals, and abbreviations.",
@@ -781,7 +967,7 @@
           "itemCount": 30
         }
       ],
-      "blurb": "Countries, the U.S., the Caribbean, and North American landmarks.",
+      "blurb": "Countries, Canada, the U.S., the Caribbean, and North American landmarks.",
       "sections": [
         {
           "name": "The continent",
@@ -802,6 +988,22 @@
             "central-america-capitals",
             "caribbean-countries",
             "caribbean-capitals"
+          ]
+        },
+        {
+          "name": "Canada",
+          "packIds": [
+            "canada-provinces",
+            "canada-cities",
+            "canada-cities-difficult",
+            "canada-landmarks",
+            "canada-rivers",
+            "canada-atlantic",
+            "canada-east",
+            "canada-prairies",
+            "canada-west",
+            "canada-territories",
+            "canada-outlines"
           ]
         },
         {
@@ -4511,6 +4713,192 @@
         "study"
       ],
       "itemCount": 8
+    },
+    {
+      "id": "canada-rivers",
+      "name": "Canada: Rivers",
+      "blurb": "Mackenzie, Fraser, Saint Lawrence, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 11
+    },
+    {
+      "id": "canada-landmarks",
+      "name": "Canada: 12 Landmarks",
+      "blurb": "CN Tower, Parliament Hill, Banff, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "canada-outlines",
+      "name": "Canada: Province Outlines",
+      "blurb": "Identify provinces and territories from their shapes.",
+      "map": "canada-provinces",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 13
+    },
+    {
+      "id": "canada-provinces",
+      "name": "Canada: Provinces and Territories",
+      "blurb": "Ten provinces and three territories — Pin, Type, capitals, and abbreviations.",
+      "map": "canada-provinces",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "outline",
+        "name",
+        "choice",
+        "capitals",
+        "abbr",
+        "study"
+      ],
+      "itemCount": 13
+    },
+    {
+      "id": "canada-atlantic",
+      "name": "Canada: Atlantic Provinces",
+      "blurb": "Newfoundland and Labrador, Prince Edward Island, Nova Scotia, and New Brunswick.",
+      "map": "canada-provinces",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "outline",
+        "name",
+        "choice",
+        "capitals",
+        "abbr",
+        "study"
+      ],
+      "itemCount": 4
+    },
+    {
+      "id": "canada-east",
+      "name": "Canada: Eastern Provinces",
+      "blurb": "Ontario, Quebec, and the Atlantic provinces.",
+      "map": "canada-provinces",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "outline",
+        "name",
+        "choice",
+        "capitals",
+        "abbr",
+        "study"
+      ],
+      "itemCount": 6
+    },
+    {
+      "id": "canada-prairies",
+      "name": "Canada: Prairie Provinces",
+      "blurb": "Manitoba, Saskatchewan, and Alberta.",
+      "map": "canada-provinces",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "outline",
+        "name",
+        "choice",
+        "capitals",
+        "abbr",
+        "study"
+      ],
+      "itemCount": 3
+    },
+    {
+      "id": "canada-west",
+      "name": "Canada: Western Provinces",
+      "blurb": "British Columbia and the Prairie provinces.",
+      "map": "canada-provinces",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "outline",
+        "name",
+        "choice",
+        "capitals",
+        "abbr",
+        "study"
+      ],
+      "itemCount": 4
+    },
+    {
+      "id": "canada-territories",
+      "name": "Canada: Territories",
+      "blurb": "Yukon, the Northwest Territories, and Nunavut.",
+      "map": "canada-provinces",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "outline",
+        "name",
+        "choice",
+        "capitals",
+        "abbr",
+        "study"
+      ],
+      "itemCount": 3
+    },
+    {
+      "id": "canada-cities",
+      "name": "Canada: Cities",
+      "blurb": "Major Canadian cities — Pin them or Type their names.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 18
+    },
+    {
+      "id": "canada-cities-difficult",
+      "name": "Canada: Cities (Difficult Version)",
+      "blurb": "Canadian cities large and small — a tougher Pin and Type drill.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 42
     }
   ]
 }

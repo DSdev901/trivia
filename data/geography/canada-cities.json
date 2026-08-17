@@ -1,0 +1,189 @@
+{
+  "id": "canada-cities",
+  "name": "Canada: Cities",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "calgary",
+      "name": "Calgary",
+      "lat": 51.045,
+      "lon": -114.063,
+      "fact": "Largest city of Alberta.",
+      "kind": "city",
+      "x": 228.4,
+      "y": 94.7
+    },
+    {
+      "id": "edmonton",
+      "name": "Edmonton",
+      "lat": 53.546,
+      "lon": -113.494,
+      "fact": "Capital of Alberta.",
+      "kind": "city",
+      "x": 234,
+      "y": 87.1
+    },
+    {
+      "id": "halifax",
+      "name": "Halifax",
+      "lat": 44.649,
+      "lon": -63.575,
+      "fact": "Capital of Nova Scotia.",
+      "kind": "city",
+      "x": 343.1,
+      "y": 114.4
+    },
+    {
+      "id": "hamilton",
+      "name": "Hamilton",
+      "lat": 43.256,
+      "lon": -79.871,
+      "fact": "City at the western end of Lake Ontario.",
+      "kind": "city",
+      "x": 301.5,
+      "y": 118.8
+    },
+    {
+      "id": "kelowna",
+      "name": "Kelowna",
+      "lat": 49.888,
+      "lon": -119.496,
+      "fact": "Largest city of British Columbia’s Okanagan.",
+      "kind": "city",
+      "x": 213.5,
+      "y": 98.2
+    },
+    {
+      "id": "kitchener",
+      "name": "Kitchener",
+      "lat": 43.451,
+      "lon": -80.493,
+      "fact": "City in southwestern Ontario.",
+      "kind": "city",
+      "x": 300.2,
+      "y": 118.2
+    },
+    {
+      "id": "london-on",
+      "name": "London",
+      "lat": 42.985,
+      "lon": -81.246,
+      "fact": "City in southwestern Ontario.",
+      "kind": "city",
+      "x": 297.8,
+      "y": 119.6
+    },
+    {
+      "id": "montreal",
+      "name": "Montreal",
+      "lat": 45.502,
+      "lon": -73.567,
+      "fact": "Largest city of Quebec.",
+      "kind": "city",
+      "x": 319.2,
+      "y": 111.7
+    },
+    {
+      "id": "ottawa",
+      "name": "Ottawa",
+      "lat": 45.421,
+      "lon": -75.697,
+      "fact": "Capital of Canada.",
+      "kind": "city",
+      "x": 313.9,
+      "y": 112
+    },
+    {
+      "id": "quebec-city",
+      "name": "Quebec City",
+      "lat": 46.813,
+      "lon": -71.208,
+      "fact": "Capital of Quebec.",
+      "kind": "city",
+      "x": 326.3,
+      "y": 107.7
+    },
+    {
+      "id": "regina",
+      "name": "Regina",
+      "lat": 50.445,
+      "lon": -104.618,
+      "fact": "Capital of Saskatchewan.",
+      "kind": "city",
+      "x": 250,
+      "y": 96.5
+    },
+    {
+      "id": "saskatoon",
+      "name": "Saskatoon",
+      "lat": 52.134,
+      "lon": -106.648,
+      "fact": "Largest city of Saskatchewan.",
+      "kind": "city",
+      "x": 247.8,
+      "y": 91.3
+    },
+    {
+      "id": "st-johns",
+      "name": "St. John's",
+      "lat": 47.561,
+      "lon": -52.713,
+      "fact": "Capital of Newfoundland and Labrador.",
+      "kind": "city",
+      "x": 371.9,
+      "y": 105.4
+    },
+    {
+      "id": "toronto",
+      "name": "Toronto",
+      "lat": 43.653,
+      "lon": -79.383,
+      "fact": "Largest city of Canada.",
+      "kind": "city",
+      "x": 303.1,
+      "y": 117.5
+    },
+    {
+      "id": "vancouver",
+      "name": "Vancouver",
+      "lat": 49.282,
+      "lon": -123.121,
+      "fact": "Largest city of British Columbia.",
+      "kind": "city",
+      "x": 203.7,
+      "y": 100
+    },
+    {
+      "id": "victoria-bc",
+      "name": "Victoria",
+      "lat": 48.429,
+      "lon": -123.366,
+      "fact": "Capital of British Columbia.",
+      "kind": "city",
+      "x": 201.7,
+      "y": 102.7
+    },
+    {
+      "id": "windsor",
+      "name": "Windsor",
+      "lat": 42.315,
+      "lon": -83.037,
+      "fact": "Ontario city across from Detroit.",
+      "kind": "city",
+      "x": 292.7,
+      "y": 121.7
+    },
+    {
+      "id": "winnipeg",
+      "name": "Winnipeg",
+      "lat": 49.895,
+      "lon": -97.138,
+      "fact": "Capital of Manitoba.",
+      "kind": "city",
+      "x": 267.1,
+      "y": 98.2
+    }
+  ]
+}

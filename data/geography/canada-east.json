@@ -1,0 +1,44 @@
+{
+  "id": "canada-east",
+  "name": "Canada: Eastern Provinces",
+  "map": "canada-provinces",
+  "quiz": "countries",
+  "items": [
+    {
+      "id": "ON",
+      "name": "Ontario",
+      "capital": "Toronto",
+      "abbr": "ON"
+    },
+    {
+      "id": "QC",
+      "name": "Quebec",
+      "capital": "Quebec City",
+      "abbr": "QC"
+    },
+    {
+      "id": "NL",
+      "name": "Newfoundland and Labrador",
+      "capital": "St. John's",
+      "abbr": "NL"
+    },
+    {
+      "id": "PE",
+      "name": "Prince Edward Island",
+      "capital": "Charlottetown",
+      "abbr": "PE"
+    },
+    {
+      "id": "NS",
+      "name": "Nova Scotia",
+      "capital": "Halifax",
+      "abbr": "NS"
+    },
+    {
+      "id": "NB",
+      "name": "New Brunswick",
+      "capital": "Fredericton",
+      "abbr": "NB"
+    }
+  ]
+}

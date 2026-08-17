@@ -1,0 +1,26 @@
+{
+  "id": "canada-territories",
+  "name": "Canada: Territories",
+  "map": "canada-provinces",
+  "quiz": "countries",
+  "items": [
+    {
+      "id": "YT",
+      "name": "Yukon",
+      "capital": "Whitehorse",
+      "abbr": "YT"
+    },
+    {
+      "id": "NT",
+      "name": "Northwest Territories",
+      "capital": "Yellowknife",
+      "abbr": "NT"
+    },
+    {
+      "id": "NU",
+      "name": "Nunavut",
+      "capital": "Iqaluit",
+      "abbr": "NU"
+    }
+  ]
+}

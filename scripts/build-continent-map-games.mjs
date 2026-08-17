@@ -23,7 +23,10 @@ import {
   ANZ_CITIES,
   US_CITIES_EASY,
   US_CITIES_EXTRA,
+  CA_CITIES_EASY,
+  CA_CITIES_EXTRA,
 } from "./lib/continent-cities.mjs";
+import { CA_PROVINCES, CA_REGIONS } from "./lib/canada-provinces.mjs";
 
 const require = createRequire(import.meta.url);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -162,7 +165,7 @@ const AU_STATES = [
 
 const GROUP_BLURBS = {
   world: "Continents, countries, and physical features of the whole planet.",
-  "north-america": "Countries, the U.S., the Caribbean, and North American landmarks.",
+  "north-america": "Countries, Canada, the U.S., the Caribbean, and North American landmarks.",
   "south-america": "Countries, cities, landmarks, and physical features.",
   europe: "Countries, cities, regions, rivers, and landmarks.",
   africa: "Countries, cities, regions, landmarks, and physical features.",
@@ -190,6 +193,22 @@ const SECTIONS = {
         "central-america-capitals",
         "caribbean-countries",
         "caribbean-capitals",
+      ],
+    },
+    {
+      name: "Canada",
+      packIds: [
+        "canada-provinces",
+        "canada-cities",
+        "canada-cities-difficult",
+        "canada-landmarks",
+        "canada-rivers",
+        "canada-atlantic",
+        "canada-east",
+        "canada-prairies",
+        "canada-west",
+        "canada-territories",
+        "canada-outlines",
       ],
     },
     {
@@ -526,6 +545,31 @@ function writeCityPack(id, name, blurb, groupId, items, projection) {
 
 const usStates = loadJson("us-states.json").items;
 const usById = new Map(usStates.map((it) => [it.id, it]));
+const caProvinces = CA_PROVINCES.map((p) => ({
+  id: p.id,
+  name: p.name,
+  capital: p.capital,
+  abbr: p.id,
+}));
+const caById = new Map(caProvinces.map((it) => [it.id, it]));
+
+writeJson("canada-provinces.json", {
+  id: "canada-provinces",
+  name: "Canada Provinces and Territories",
+  map: "canada-provinces",
+  quiz: "countries",
+  items: caProvinces,
+});
+addMeta({
+  id: "canada-provinces",
+  name: "Canada: Provinces and Territories",
+  blurb: "Ten provinces and three territories — Pin, Type, capitals, and abbreviations.",
+  map: "canada-provinces",
+  quiz: "countries",
+  modes: MODES_STATES,
+  itemCount: caProvinces.length,
+  groupId: "north-america",
+});
 
 function writeUsRegion(id, spec) {
   const items = spec.ids.map((sid) => {
@@ -539,6 +583,25 @@ function writeUsRegion(id, spec) {
     name: spec.name,
     blurb: spec.blurb,
     map: "us-states",
+    quiz: "countries",
+    modes: MODES_STATES,
+    itemCount: items.length,
+    groupId: "north-america",
+  });
+}
+
+function writeCaRegion(id, spec) {
+  const items = spec.ids.map((sid) => {
+    const it = caById.get(sid);
+    if (!it) throw new Error(`Missing Canadian province ${sid}`);
+    return it;
+  });
+  writeJson(`${id}.json`, { id, name: spec.name, map: "canada-provinces", quiz: "countries", items });
+  return addMeta({
+    id,
+    name: spec.name,
+    blurb: spec.blurb,
+    map: "canada-provinces",
     quiz: "countries",
     modes: MODES_STATES,
     itemCount: items.length,
@@ -584,6 +647,25 @@ writeOutlinePack("caribbean-outlines", "The Caribbean: Country Outlines", "Silho
 ]);
 
 for (const [id, spec] of Object.entries(US_REGIONS)) writeUsRegion(id, spec);
+for (const [id, spec] of Object.entries(CA_REGIONS)) writeCaRegion(id, spec);
+
+writeJson("canada-outlines.json", {
+  id: "canada-outlines",
+  name: "Canada: Province Outlines",
+  map: "canada-provinces",
+  quiz: "outlines",
+  items: caProvinces,
+});
+addMeta({
+  id: "canada-outlines",
+  name: "Canada: Province Outlines",
+  blurb: "Identify provinces and territories from their shapes.",
+  map: "canada-provinces",
+  quiz: "outlines",
+  modes: MODES_OUTLINE,
+  itemCount: caProvinces.length,
+  groupId: "north-america",
+});
 
 // —— Oceania ——
 writeCountryPack("australia-surrounding", "Australia: Surrounding Countries", "Neighbors across the Timor, Coral, and Tasman seas.", "oceania", LISTS["australia-surrounding"]);
@@ -603,6 +685,15 @@ writeCityPack("australia-cities-difficult", "Australia: Cities (Difficult Versio
 writeCityPack("anz-cities", "Australia and New Zealand: Cities", "Main cities of Australia, New Zealand, and Port Moresby.", "oceania", ANZ_CITIES, projection);
 writeCityPack("us-cities", "The U.S.: Cities", "Major U.S. cities — Pin them or Type their names.", "north-america", US_CITIES_EASY, projection);
 writeCityPack("us-cities-difficult", "The U.S.: Cities (Difficult Version)", "U.S. cities large and small — a tougher Pin and Type drill.", "north-america", [...US_CITIES_EASY, ...US_CITIES_EXTRA], projection);
+writeCityPack("canada-cities", "Canada: Cities", "Major Canadian cities — Pin them or Type their names.", "north-america", CA_CITIES_EASY, projection);
+writeCityPack(
+  "canada-cities-difficult",
+  "Canada: Cities (Difficult Version)",
+  "Canadian cities large and small — a tougher Pin and Type drill.",
+  "north-america",
+  [...CA_CITIES_EASY, ...CA_CITIES_EXTRA],
+  projection
+);
 writeCityPack(
   "australia-states",
   "Australia: States and Territories",

@@ -1,0 +1,429 @@
+{
+  "id": "canada-cities-difficult",
+  "name": "Canada: Cities (Difficult Version)",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "abbotsford",
+      "name": "Abbotsford",
+      "lat": 49.051,
+      "lon": -122.329,
+      "fact": "City in the Fraser Valley of British Columbia.",
+      "kind": "city",
+      "x": 205.2,
+      "y": 100.8
+    },
+    {
+      "id": "barrie",
+      "name": "Barrie",
+      "lat": 44.389,
+      "lon": -79.69,
+      "fact": "City on Lake Simcoe in Ontario.",
+      "kind": "city",
+      "x": 303.1,
+      "y": 115.2
+    },
+    {
+      "id": "calgary",
+      "name": "Calgary",
+      "lat": 51.045,
+      "lon": -114.063,
+      "fact": "Largest city of Alberta.",
+      "kind": "city",
+      "x": 228.4,
+      "y": 94.7
+    },
+    {
+      "id": "charlottetown",
+      "name": "Charlottetown",
+      "lat": 46.238,
+      "lon": -63.131,
+      "fact": "Capital of Prince Edward Island.",
+      "kind": "city",
+      "x": 345.5,
+      "y": 109.5
+    },
+    {
+      "id": "edmonton",
+      "name": "Edmonton",
+      "lat": 53.546,
+      "lon": -113.494,
+      "fact": "Capital of Alberta.",
+      "kind": "city",
+      "x": 234,
+      "y": 87.1
+    },
+    {
+      "id": "fredericton",
+      "name": "Fredericton",
+      "lat": 45.964,
+      "lon": -66.643,
+      "fact": "Capital of New Brunswick.",
+      "kind": "city",
+      "x": 336.7,
+      "y": 110.3
+    },
+    {
+      "id": "sudbury",
+      "name": "Greater Sudbury",
+      "lat": 46.492,
+      "lon": -80.993,
+      "fact": "Largest city of northern Ontario.",
+      "kind": "city",
+      "x": 302,
+      "y": 108.7
+    },
+    {
+      "id": "guelph",
+      "name": "Guelph",
+      "lat": 43.545,
+      "lon": -80.248,
+      "fact": "City in southwestern Ontario.",
+      "kind": "city",
+      "x": 300.9,
+      "y": 117.9
+    },
+    {
+      "id": "halifax",
+      "name": "Halifax",
+      "lat": 44.649,
+      "lon": -63.575,
+      "fact": "Capital of Nova Scotia.",
+      "kind": "city",
+      "x": 343.1,
+      "y": 114.4
+    },
+    {
+      "id": "hamilton",
+      "name": "Hamilton",
+      "lat": 43.256,
+      "lon": -79.871,
+      "fact": "City at the western end of Lake Ontario.",
+      "kind": "city",
+      "x": 301.5,
+      "y": 118.8
+    },
+    {
+      "id": "iqaluit",
+      "name": "Iqaluit",
+      "lat": 63.747,
+      "lon": -68.517,
+      "fact": "Capital of Nunavut.",
+      "kind": "city",
+      "x": 351,
+      "y": 57.4
+    },
+    {
+      "id": "kamloops",
+      "name": "Kamloops",
+      "lat": 50.675,
+      "lon": -120.328,
+      "fact": "City at the confluence of the Thompson rivers.",
+      "kind": "city",
+      "x": 212.8,
+      "y": 95.8
+    },
+    {
+      "id": "kelowna",
+      "name": "Kelowna",
+      "lat": 49.888,
+      "lon": -119.496,
+      "fact": "Largest city of British Columbia’s Okanagan.",
+      "kind": "city",
+      "x": 213.5,
+      "y": 98.2
+    },
+    {
+      "id": "kingston",
+      "name": "Kingston",
+      "lat": 44.231,
+      "lon": -76.481,
+      "fact": "City at the eastern end of Lake Ontario.",
+      "kind": "city",
+      "x": 310.9,
+      "y": 115.7
+    },
+    {
+      "id": "kitchener",
+      "name": "Kitchener",
+      "lat": 43.451,
+      "lon": -80.493,
+      "fact": "City in southwestern Ontario.",
+      "kind": "city",
+      "x": 300.2,
+      "y": 118.2
+    },
+    {
+      "id": "lethbridge",
+      "name": "Lethbridge",
+      "lat": 49.694,
+      "lon": -112.833,
+      "fact": "City in southern Alberta.",
+      "kind": "city",
+      "x": 229.1,
+      "y": 98.8
+    },
+    {
+      "id": "london-on",
+      "name": "London",
+      "lat": 42.985,
+      "lon": -81.246,
+      "fact": "City in southwestern Ontario.",
+      "kind": "city",
+      "x": 297.8,
+      "y": 119.6
+    },
+    {
+      "id": "moncton",
+      "name": "Moncton",
+      "lat": 46.088,
+      "lon": -64.778,
+      "fact": "Largest city of New Brunswick.",
+      "kind": "city",
+      "x": 341.3,
+      "y": 109.9
+    },
+    {
+      "id": "montreal",
+      "name": "Montreal",
+      "lat": 45.502,
+      "lon": -73.567,
+      "fact": "Largest city of Quebec.",
+      "kind": "city",
+      "x": 319.2,
+      "y": 111.7
+    },
+    {
+      "id": "nanaimo",
+      "name": "Nanaimo",
+      "lat": 49.166,
+      "lon": -123.94,
+      "fact": "City on Vancouver Island.",
+      "kind": "city",
+      "x": 201.6,
+      "y": 100.4
+    },
+    {
+      "id": "oshawa",
+      "name": "Oshawa",
+      "lat": 43.897,
+      "lon": -78.866,
+      "fact": "City east of Toronto on Lake Ontario.",
+      "kind": "city",
+      "x": 304.6,
+      "y": 116.8
+    },
+    {
+      "id": "ottawa",
+      "name": "Ottawa",
+      "lat": 45.421,
+      "lon": -75.697,
+      "fact": "Capital of Canada.",
+      "kind": "city",
+      "x": 313.9,
+      "y": 112
+    },
+    {
+      "id": "peterborough",
+      "name": "Peterborough",
+      "lat": 44.309,
+      "lon": -78.32,
+      "fact": "City in central Ontario.",
+      "kind": "city",
+      "x": 306.4,
+      "y": 115.5
+    },
+    {
+      "id": "prince-george",
+      "name": "Prince George",
+      "lat": 53.917,
+      "lon": -122.749,
+      "fact": "Largest city of northern British Columbia.",
+      "kind": "city",
+      "x": 213,
+      "y": 86
+    },
+    {
+      "id": "quebec-city",
+      "name": "Quebec City",
+      "lat": 46.813,
+      "lon": -71.208,
+      "fact": "Capital of Quebec.",
+      "kind": "city",
+      "x": 326.3,
+      "y": 107.7
+    },
+    {
+      "id": "red-deer",
+      "name": "Red Deer",
+      "lat": 52.269,
+      "lon": -113.811,
+      "fact": "City between Calgary and Edmonton.",
+      "kind": "city",
+      "x": 231,
+      "y": 90.9
+    },
+    {
+      "id": "regina",
+      "name": "Regina",
+      "lat": 50.445,
+      "lon": -104.618,
+      "fact": "Capital of Saskatchewan.",
+      "kind": "city",
+      "x": 250,
+      "y": 96.5
+    },
+    {
+      "id": "saguenay",
+      "name": "Saguenay",
+      "lat": 48.428,
+      "lon": -71.069,
+      "fact": "City at the head of the Saguenay Fjord.",
+      "kind": "city",
+      "x": 328.1,
+      "y": 102.7
+    },
+    {
+      "id": "saint-john",
+      "name": "Saint John",
+      "lat": 45.273,
+      "lon": -66.063,
+      "fact": "Largest city of New Brunswick’s Bay of Fundy coast.",
+      "kind": "city",
+      "x": 337.5,
+      "y": 112.5
+    },
+    {
+      "id": "saskatoon",
+      "name": "Saskatoon",
+      "lat": 52.134,
+      "lon": -106.648,
+      "fact": "Largest city of Saskatchewan.",
+      "kind": "city",
+      "x": 247.8,
+      "y": 91.3
+    },
+    {
+      "id": "sault-ste-marie",
+      "name": "Sault Ste. Marie",
+      "lat": 46.514,
+      "lon": -84.335,
+      "fact": "Ontario city on the St. Marys River.",
+      "kind": "city",
+      "x": 293.9,
+      "y": 108.6
+    },
+    {
+      "id": "sherbrooke",
+      "name": "Sherbrooke",
+      "lat": 45.401,
+      "lon": -71.893,
+      "fact": "Largest city of Quebec’s Eastern Townships.",
+      "kind": "city",
+      "x": 323.3,
+      "y": 112.1
+    },
+    {
+      "id": "st-johns",
+      "name": "St. John's",
+      "lat": 47.561,
+      "lon": -52.713,
+      "fact": "Capital of Newfoundland and Labrador.",
+      "kind": "city",
+      "x": 371.9,
+      "y": 105.4
+    },
+    {
+      "id": "thunder-bay",
+      "name": "Thunder Bay",
+      "lat": 48.381,
+      "lon": -89.248,
+      "fact": "Port city on Lake Superior.",
+      "kind": "city",
+      "x": 284.1,
+      "y": 102.8
+    },
+    {
+      "id": "toronto",
+      "name": "Toronto",
+      "lat": 43.653,
+      "lon": -79.383,
+      "fact": "Largest city of Canada.",
+      "kind": "city",
+      "x": 303.1,
+      "y": 117.5
+    },
+    {
+      "id": "trois-rivieres",
+      "name": "Trois-Rivières",
+      "lat": 46.343,
+      "lon": -72.543,
+      "fact": "City at the mouth of the Saint-Maurice.",
+      "kind": "city",
+      "x": 322.6,
+      "y": 109.1
+    },
+    {
+      "id": "vancouver",
+      "name": "Vancouver",
+      "lat": 49.282,
+      "lon": -123.121,
+      "fact": "Largest city of British Columbia.",
+      "kind": "city",
+      "x": 203.7,
+      "y": 100
+    },
+    {
+      "id": "victoria-bc",
+      "name": "Victoria",
+      "lat": 48.429,
+      "lon": -123.366,
+      "fact": "Capital of British Columbia.",
+      "kind": "city",
+      "x": 201.7,
+      "y": 102.7
+    },
+    {
+      "id": "whitehorse",
+      "name": "Whitehorse",
+      "lat": 60.721,
+      "lon": -135.057,
+      "fact": "Capital of Yukon.",
+      "kind": "city",
+      "x": 199.2,
+      "y": 66
+    },
+    {
+      "id": "windsor",
+      "name": "Windsor",
+      "lat": 42.315,
+      "lon": -83.037,
+      "fact": "Ontario city across from Detroit.",
+      "kind": "city",
+      "x": 292.7,
+      "y": 121.7
+    },
+    {
+      "id": "winnipeg",
+      "name": "Winnipeg",
+      "lat": 49.895,
+      "lon": -97.138,
+      "fact": "Capital of Manitoba.",
+      "kind": "city",
+      "x": 267.1,
+      "y": 98.2
+    },
+    {
+      "id": "yellowknife",
+      "name": "Yellowknife",
+      "lat": 62.454,
+      "lon": -114.372,
+      "fact": "Capital of the Northwest Territories.",
+      "kind": "city",
+      "x": 248.7,
+      "y": 61
+    }
+  ]
+}
