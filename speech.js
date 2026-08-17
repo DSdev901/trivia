@@ -8,20 +8,28 @@ const DANIEL_DEFAULT_FLAG = "trivia-helper-default-daniel-v1";
 let voicesReady = null;
 
 function loadVoices() {
+  const grab = () => window.speechSynthesis?.getVoices?.() ?? [];
+  const existing = grab();
+  if (existing.length) {
+    voicesReady = Promise.resolve(existing);
+    return voicesReady;
+  }
   if (voicesReady) return voicesReady;
   voicesReady = new Promise((resolve) => {
-    const grab = () => window.speechSynthesis?.getVoices?.() ?? [];
-    const existing = grab();
-    if (existing.length) {
-      resolve(existing);
-      return;
-    }
     const onVoices = () => {
+      const list = grab();
+      if (!list.length) return;
       window.speechSynthesis.removeEventListener("voiceschanged", onVoices);
-      resolve(grab());
+      resolve(list);
     };
     window.speechSynthesis?.addEventListener?.("voiceschanged", onVoices);
-    setTimeout(() => resolve(grab()), 700);
+    setTimeout(() => {
+      window.speechSynthesis.removeEventListener("voiceschanged", onVoices);
+      resolve(grab());
+    }, 1500);
+  }).then((list) => {
+    if (!list.length) voicesReady = null;
+    return list;
   });
   return voicesReady;
 }
@@ -151,8 +159,15 @@ function pickVoiceNow(preferredUri) {
   if (!ranked.length) return null;
   if (preferredUri) {
     const match = ranked.find((v) => v.uri === preferredUri);
-    if (match) return match.voice;
+    if (match) {
+      if (isIOSWebKit() && /premium|enhanced|neural|superstar|\bdaniel\b/i.test(match.name)) {
+        return null;
+      }
+      return match.voice;
+    }
   }
+  // iPhone: the system default (no voice object) is more reliable than Daniel.
+  if (isIOSWebKit()) return null;
   return (findDaniel(ranked) || ranked[0]).voice;
 }
 
@@ -170,15 +185,15 @@ async function resolveVoice(preferredUri) {
 export async function getDefaultBrowserVoiceUri() {
   const ranked = await listEnglishVoices();
   const daniel = findDaniel(ranked);
-  // One-time: switch existing saved preference over to Daniel.
   try {
-    if (daniel && !localStorage.getItem(DANIEL_DEFAULT_FLAG)) {
+    if (!isIOSWebKit() && daniel && !localStorage.getItem(DANIEL_DEFAULT_FLAG)) {
       localStorage.setItem(VOICE_KEY, daniel.uri);
       localStorage.setItem(DANIEL_DEFAULT_FLAG, "1");
     }
   } catch {
     /* ignore */
   }
+  if (isIOSWebKit()) return "";
   return (daniel || ranked[0])?.uri || "";
 }
 
@@ -510,9 +525,18 @@ function wakeLockSupported() {
   return typeof navigator !== "undefined" && "wakeLock" in navigator;
 }
 
+function synthIsBusy() {
+  try {
+    return Boolean(window.speechSynthesis?.speaking || window.speechSynthesis?.pending);
+  } catch {
+    return false;
+  }
+}
+
 /**
  * WebKit (Safari / Brave / Chrome on iOS) only starts TTS inside a user
  * gesture. Call this synchronously from Listen taps before any await.
+ * Do not queue a dummy utterance — a space-only speak can stall iOS forever.
  */
 export function unlockSpeech() {
   if (!speechSupported()) return;
@@ -521,9 +545,10 @@ export function unlockSpeech() {
   } catch {
     /* ignore */
   }
+  if (isIOSWebKit()) return;
   try {
-    const warm = new SpeechSynthesisUtterance(" ");
-    warm.volume = 1;
+    const warm = new SpeechSynthesisUtterance(".");
+    warm.volume = 0.01;
     warm.rate = 1;
     warm.pitch = 1;
     window.speechSynthesis.speak(warm);
@@ -740,25 +765,31 @@ export function stopSpeech() {
   browserSpeakSession += 1;
   void endSpeechKeepalive();
   if (!speechSupported()) return;
-  window.speechSynthesis.cancel();
-  // pause() leaves WebKit (Brave/Safari iOS) unable to speak again.
+  const synth = window.speechSynthesis;
+  // cancel() while idle, or pause(), can leave iOS unable to speak until reload.
   if (isIOSWebKit()) {
     try {
-      window.speechSynthesis.resume();
+      if (synthIsBusy()) synth.cancel();
+    } catch {
+      /* ignore */
+    }
+    try {
+      synth.resume();
     } catch {
       /* ignore */
     }
     return;
   }
+  synth.cancel();
   // Chromium often needs cancel more than once to fully halt speech.
-  window.speechSynthesis.pause();
-  window.speechSynthesis.cancel();
+  synth.pause();
+  synth.cancel();
   try {
-    window.speechSynthesis.resume();
+    synth.resume();
   } catch {
     /* ignore */
   }
-  window.speechSynthesis.cancel();
+  synth.cancel();
 }
 
 function wait(ms, session) {
@@ -776,16 +807,16 @@ function wait(ms, session) {
   });
 }
 
-function speakUtterance(text, voice, rate, session) {
+function speakUtterance(text, voice, rate, session, { allowVoice = true } = {}) {
   return new Promise((resolve, reject) => {
     if (session !== browserSpeakSession) {
       resolve(false);
       return;
     }
     const utter = new SpeechSynthesisUtterance(text);
-    if (voice) {
+    if (allowVoice && voice) {
       utter.voice = voice;
-      if (voice.lang) utter.lang = voice.lang;
+      if (voice.lang && !isIOSWebKit()) utter.lang = voice.lang;
     }
     utter.rate = rate;
     utter.pitch = 1;
@@ -800,10 +831,28 @@ function speakUtterance(text, voice, rate, session) {
     };
     utter.onend = () => finish(session === browserSpeakSession);
     utter.onerror = (event) => {
+      const err = event.error || "";
       if (
-        event.error === "interrupted" ||
-        event.error === "canceled" ||
-        event.error === "not-allowed" ||
+        allowVoice &&
+        voice &&
+        isIOSWebKit() &&
+        session === browserSpeakSession &&
+        err !== "interrupted" &&
+        err !== "canceled"
+      ) {
+        settled = true;
+        clearInterval(watchdog);
+        clearTimeout(safety);
+        speakUtterance(text, voice, rate, session, { allowVoice: false }).then(
+          resolve,
+          reject
+        );
+        return;
+      }
+      if (
+        err === "interrupted" ||
+        err === "canceled" ||
+        err === "not-allowed" ||
         session !== browserSpeakSession
       ) {
         finish(false);
@@ -811,7 +860,7 @@ function speakUtterance(text, voice, rate, session) {
         settled = true;
         clearInterval(watchdog);
         clearTimeout(safety);
-        reject(new Error(event.error || "Speech failed"));
+        reject(new Error(err || "Speech failed"));
       }
     };
     try {
@@ -822,14 +871,14 @@ function speakUtterance(text, voice, rate, session) {
       finish(false);
       return;
     }
-    // iOS pauses speechSynthesis after ~15s; kick it.
+    // iOS pauses speechSynthesis after ~15s; only resume when actually paused.
     const watchdog = setInterval(() => {
       if (session !== browserSpeakSession) {
         finish(false);
         return;
       }
       try {
-        window.speechSynthesis.resume();
+        if (window.speechSynthesis.paused) window.speechSynthesis.resume();
       } catch {
         /* ignore */
       }
@@ -929,7 +978,7 @@ export async function speakLines(lines, opts = {}) {
 
 export function voiceQualityTip(rankedVoices) {
   if (isIOSWebKit()) {
-    return "On iPhone, turn the silent switch off. If Brave stays quiet, disable Shields for this site or use Safari.";
+    return "On iPhone, turn the silent switch off and use the media volume buttons. If Brave stays quiet, try Safari.";
   }
   const best = rankedVoices[0];
   if (!best) {
