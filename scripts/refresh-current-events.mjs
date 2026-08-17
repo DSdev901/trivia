@@ -950,7 +950,9 @@ function tmdbHitScore(item, hit) {
     if (Number.isFinite(days) && days <= 3) return titleScore + 4;
     if (Number.isFinite(days) && days <= NETFLIX_WINDOW_DAYS) return titleScore + 2;
     if (idate.slice(0, 4) === hdate.slice(0, 4)) return titleScore + 1;
-    return 0;
+    // Returning seasons and delayed Netflix pickups often have a first-air
+    // year years before the card date. Keep an exact/strong title match.
+    return titleScore;
   }
   return titleScore;
 }
@@ -1432,8 +1434,9 @@ async function tvmazeSearchShow(title) {
   const list = results || [];
   const named =
     list.find((r) => isNetflixShow(r.show) && namesSimilar(r.show.name, title)) ||
+    list.find((r) => titleCore(r.show.name) === q) ||
     list.find((r) => namesSimilar(r.show.name, title) && r.score >= 1.2);
-  if (named && isNetflixShow(named.show)) return tvmazeShowDetails(named.show);
+  if (named) return tvmazeShowDetails(named.show);
 
   const netflixHits = list.filter((r) => isNetflixShow(r.show)).slice(0, 4);
   for (const r of netflixHits) {
@@ -1556,6 +1559,18 @@ async function enrichNetflix(items) {
       }
     } catch (err) {
       console.warn(`  [netflix] tmdb "${item.title}": ${err.message}`);
+    }
+    if (isThinSynopsis(item.synopsis)) {
+      try {
+        const wiki = await wikiSynopsisForTitle(item.title);
+        if (wiki) {
+          item.synopsis = pickSynopsis(item.synopsis, wiki.synopsis);
+          item.starring = mergeStarring(item.starring, wiki.starring);
+        }
+      } catch (err) {
+        console.warn(`  [netflix] wiki "${item.title}": ${err.message}`);
+      }
+      await sleep(150);
     }
     applyFeaturedNames(item);
     await sleep(200);
@@ -1691,6 +1706,39 @@ async function wikiPosterForTitle(title) {
     pages.find((p) => /netflix/i.test(p.extract || "")) ||
     pages[0];
   return hit?.thumbnail?.source || "";
+}
+
+function clipWikiExtract(text, max = 360) {
+  const t = String(text || "").replace(/\s+/g, " ").trim();
+  if (!t) return "";
+  if (t.length <= max) return t;
+  const cut = t.slice(0, max - 1);
+  const at = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("; "));
+  return `${(at > 80 ? cut.slice(0, at + 1) : cut).trim()}…`;
+}
+
+async function wikiSynopsisForTitle(title) {
+  const want = String(title || "")
+    .replace(/\s*\((?:Season|Part)\s+\d+\)/i, "")
+    .trim();
+  if (!want) return null;
+  const pages = [];
+  const exact = await wikiExactPage(want);
+  if (exact?.extract) pages.push(exact);
+  const searched = await wikiSearchPages(`${want} Netflix`);
+  pages.push(...(searched || []));
+  const hit = pages.find(
+    (p) =>
+      p.extract &&
+      !/\bmay refer to\b/i.test(p.extract) &&
+      (namesSimilar(p.title, want) || /netflix/i.test(p.extract))
+  );
+  const extract = String(hit?.extract || "").trim();
+  if (isThinSynopsis(extract)) return null;
+  return {
+    synopsis: clipWikiExtract(extract),
+    starring: starringFromExtract(extract),
+  };
 }
 
 async function fillMissingNetflixImages(items) {
