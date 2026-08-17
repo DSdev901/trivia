@@ -1,12 +1,22 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-08-16T21:36:27.244Z",
+  "generatedAt": "2026-08-17T00:46:58.396Z",
   "retentionDays": 21,
-  "windowStart": "2026-07-26",
-  "windowEnd": "2026-08-16",
+  "windowStart": "2026-07-27",
+  "windowEnd": "2026-08-17",
   "snapshotIntervalHours": 3,
-  "count": 97,
+  "count": 107,
   "items": [
+    {
+      "headline": "About 100 homes swept away after Hurricane Lala lashes Hawaii",
+      "date": "2026-08-17",
+      "bucket": "Disaster",
+      "summary": "The state's governor says there \"amazingly\" does not seem to have been any loss of life besides a car crash.",
+      "url": "https://www.bbc.co.uk/news/articles/crmrr7kjy9vo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-16T21:36:27.244Z",
+      "top": false,
+      "bestRank": null
+    },
     {
       "headline": "Kushner meets with Hamas on the Gaza road map ahead of talks with Netanyahu",
       "date": "2026-08-16",
@@ -16,6 +26,16 @@
       "firstSeen": "2026-08-16T21:36:27.244Z",
       "top": true,
       "bestRank": 1
+    },
+    {
+      "headline": "Inside Kushner's Hamas meeting: What comes next in Gaza",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPb0Y1TS1qdDcwMzNLTFRNZDVmMF9uX1lHaVVLb1psczZULTFMUHRNaDBHR2lUcnpPVDBNRG9RdVc2TnluSTBGbnZ3QXFNOFlzS0N3MHNueEg1TVE0a1ktV3BMRFEtSE5URldfelNiUWpHS2FjcGpSUF9kRUxOalMtLW13?oc=5",
+      "top": true,
+      "bestRank": 1,
+      "firstSeen": "2026-08-17T00:46:58.396Z"
     },
     {
       "headline": "Russia says at least seven killed in largest Ukrainian attack of 2026",
@@ -38,6 +58,16 @@
       "bestRank": 2
     },
     {
+      "headline": "Brazil: Lula, Bolsonaro return to strongholds to launch runs for president",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeEl6U1RsX2F2XzJtaFd2cHMyWDhqMzhBdnI1QTJnTnNmV3BST19jNlRHTTNOejFuVTdlRTNzOGdFTG1MRTF1VE1hSnR2eGZOQnhoQWIzOG1DcWxpbkZXTkhSbDQwMmV1OGh5ay0tclhVcnBUUVh4cG1jZk1VeDV6eTgxdjdxMnFnelY1cEZSQVNTOE9nVE1HR2FSM1NvSzE2aVVPYWhzVmlSNlF4OGNBWEEtd0NYWXpBZm9weFl5U1RuaWhCelE?oc=5",
+      "top": true,
+      "bestRank": 2,
+      "firstSeen": "2026-08-16T21:36:27.244Z"
+    },
+    {
       "headline": "Brazil's Lula launches reelection bid, aims to win back workers to his Workers Party",
       "date": "2026-08-16",
       "bucket": "World",
@@ -46,6 +76,16 @@
       "top": true,
       "bestRank": 3,
       "firstSeen": "2026-08-16T17:33:43.926Z"
+    },
+    {
+      "headline": "Trump says US will scale back military drills with South Korea",
+      "date": "2026-08-16",
+      "bucket": "Conflict",
+      "summary": "His decision to reduce the partnership came after South Korea recently declined to aid his war effort in Iran.",
+      "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-16T21:36:27.244Z",
+      "top": true,
+      "bestRank": 3
     },
     {
       "headline": "British-Made Drones Are Now Striking Russian Oil Refineries, The Times Reports",
@@ -68,14 +108,14 @@
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
-      "headline": "Brazil: Lula, Bolsonaro return to strongholds to launch runs for president",
+      "headline": "Kyiv launches large attack on Russian military and energy facilities",
       "date": "2026-08-16",
       "bucket": "World",
-      "summary": "Reported by Reuters.",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeEl6U1RsX2F2XzJtaFd2cHMyWDhqMzhBdnI1QTJnTnNmV3BST19jNlRHTTNOejFuVTdlRTNzOGdFTG1MRTF1VE1hSnR2eGZOQnhoQWIzOG1DcWxpbkZXTkhSbDQwMmV1OGh5ay0tclhVcnBUUVh4cG1jZk1VeDV6eTgxdjdxMnFnelY1cEZSQVNTOE9nVE1HR2FSM1NvSzE2aVVPYWhzVmlSNlF4OGNBWEEtd0NYWXpBZm9weFl5U1RuaWhCelE?oc=5",
+      "summary": "Reported by Euronews.com.",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQ2hhaUsxR3BDcm92cTJiclVLLVNIQ1kxZktzajNHSkRNN0t5LTdKVGVDS05XaTZZTldZOUdZWDR1dHFiWGZrYjV6di1qMmZydW5tbGd5eEFQLTA5THRuV1k4MGN4cUxjY3BXTTkxOVFyaUNBNUNqQnFHZzBYOWdqQlRBZTA0UWh1NTNXcW5XaXliSXM0UlFMX3E1dkp1aGFkajdrb09DY2FJSHoydm1ESjRDdEJMSVh1YVBiM3FrTEc1LXhram56WmpkcmJxVlk?oc=5",
       "top": true,
       "bestRank": 4,
-      "firstSeen": "2026-08-16T21:36:27.244Z"
+      "firstSeen": "2026-08-17T00:46:58.396Z"
     },
     {
       "headline": "Thousands displaced by deadly Indonesia earthquake as rescue efforts continue",
@@ -86,6 +126,16 @@
       "firstSeen": "2026-08-16T17:33:43.926Z",
       "top": true,
       "bestRank": 5
+    },
+    {
+      "headline": "Tsunami Warning issued after massive magnitude 7.7 earthquake rocks Indonesia along the Pacific Ring of Fire",
+      "date": "2026-08-16",
+      "bucket": "Disaster",
+      "summary": "Reported by CBS News.",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE83T1pObWFEcjlUbml5M01PQTU1SGRNOWlBc2tvcmtrQVFqTXdMcFEwZE00THltVGdrZVRJNHcwdFJ3MHFWdHVucGNXdjFHTEh6RTY1Vi1KMVBsaUxMRjQ2Qk5YVks4NFNmMkZJOFhtS1Z1Vmhl?oc=5",
+      "top": true,
+      "bestRank": 5,
+      "firstSeen": "2026-08-17T00:46:58.396Z"
     },
     {
       "headline": "Opinion | Spain’s Migration Invasion Wasn’t Normal",
@@ -128,6 +178,16 @@
       "firstSeen": "2026-08-16T21:36:27.244Z"
     },
     {
+      "headline": "In Spain's Ceuta, hundreds of migrants stage protest and demand asylum",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by reuters.com.",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUjduYzlVZEN3NjI2YktjT0dyU3g2cVVudlhDLV95RERScG5tZ0RHb01Sdy0tTDZnMHQxdXRTa2c5dm5DY1dmTnN5WVJnVGQzemhsYjQwem9XVDNyQ1V0cHN4S2J2NzRkREd1ZWwtRWZ4RU90SDRZckpYaXo0ZEotTkx0eHI4anlfQzV4Y25VODA0MnZySVhxUXNfekowTGtmb1NLZGE3UWVuVnRDTG1MaVRRZw?oc=5",
+      "top": true,
+      "bestRank": 6,
+      "firstSeen": "2026-08-17T00:46:58.396Z"
+    },
+    {
       "headline": "Photos: Patriotic music and flags mark Taliban rule anniversary in Kabul",
       "date": "2026-08-16",
       "bucket": "World",
@@ -136,6 +196,16 @@
       "top": true,
       "bestRank": 7,
       "firstSeen": "2026-08-16T17:33:43.926Z"
+    },
+    {
+      "headline": "Ukraine attacks Wildberries, Russia's biggest online market",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by DW.com.",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaWx5VUFJbnV2NUdqdkctVFdrSU5lWEdlalVLTDZGTXk2MnhmNlEtamdVM0x1R1dMRG9DRlpLYnZEeFFvc1VLV3FBdTJlc1ZzMHRLSFRXdjJZYldoM1Q5ai1DNU0yemdzVENSbnl1S0hnX05wVUlhb0F4WWFUUldHTUk3NThPcEFqd1BhVlNCbUtVbnc40gGUAUFVX3lxTFBYUTNuLW4yZVRybjJTYXhjTjQyQnROVkx0VE1BeXZOeW56TjdRVmI0dTltUUZza0ZtUjhBRzQxdk5udzdYeDBOOUkyN1RXN3pJVDhPc2xCcUZCVUZNaUV1ZGRxbmtXYWpzODY4RjlxUENHekxrQW5MZ0FEX3FNZlBNVmRzTlQ0ak5tenJuU18zZXllVjg?oc=5",
+      "top": true,
+      "bestRank": 7,
+      "firstSeen": "2026-08-16T21:36:27.244Z"
     },
     {
       "headline": "Trump's envoys meet mediators, Israel strikes Gaza",
@@ -178,13 +248,13 @@
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
-      "headline": "Ukraine attacks Wildberries, Russia's biggest online market",
+      "headline": "Firefighters battle massive wildfires in Belgium and Greece as 2 die on an island near Athens",
       "date": "2026-08-16",
       "bucket": "World",
-      "summary": "Reported by DW.com.",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaWx5VUFJbnV2NUdqdkctVFdrSU5lWEdlalVLTDZGTXk2MnhmNlEtamdVM0x1R1dMRG9DRlpLYnZEeFFvc1VLV3FBdTJlc1ZzMHRLSFRXdjJZYldoM1Q5ai1DNU0yemdzVENSbnl1S0hnX05wVUlhb0F4WWFUUldHTUk3NThPcEFqd1BhVlNCbUtVbnc40gGUAUFVX3lxTFBYUTNuLW4yZVRybjJTYXhjTjQyQnROVkx0VE1BeXZOeW56TjdRVmI0dTltUUZza0ZtUjhBRzQxdk5udzdYeDBOOUkyN1RXN3pJVDhPc2xCcUZCVUZNaUV1ZGRxbmtXYWpzODY4RjlxUENHekxrQW5MZ0FEX3FNZlBNVmRzTlQ0ak5tenJuU18zZXllVjg?oc=5",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYktmWUtyRG1meHR2M1NtVDdScldwOVk4enpGWC1RUUJKUG5lUlNmekFhZGhpeElsaWgyUEQ3VnlTdldXX1A1enJHUXluZDRseHFfMG1VU0l3RHQ3LWhGS1dlTGx3aS1ORFhjYXEwTXRSVTZUYTlreFdkV2kxQ0tjQ1JONENqelJvSFp6NQ?oc=5",
       "top": true,
-      "bestRank": 10,
+      "bestRank": 9,
       "firstSeen": "2026-08-16T21:36:27.244Z"
     },
     {
@@ -196,16 +266,6 @@
       "firstSeen": "2026-08-16T17:33:43.926Z",
       "top": true,
       "bestRank": 11
-    },
-    {
-      "headline": "Firefighters battle massive wildfires in Belgium and Greece as 2 die on an island near Athens",
-      "date": "2026-08-16",
-      "bucket": "World",
-      "summary": "Reported by AP News.",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYktmWUtyRG1meHR2M1NtVDdScldwOVk4enpGWC1RUUJKUG5lUlNmekFhZGhpeElsaWgyUEQ3VnlTdldXX1A1enJHUXluZDRseHFfMG1VU0l3RHQ3LWhGS1dlTGx3aS1ORFhjYXEwTXRSVTZUYTlreFdkV2kxQ0tjQ1JONENqelJvSFp6NQ?oc=5",
-      "top": true,
-      "bestRank": 11,
-      "firstSeen": "2026-08-16T21:36:27.244Z"
     },
     {
       "headline": "Corgis run, bark and sniff their way to glory at a growing international race",
@@ -251,7 +311,7 @@
       "headline": "PM Tusk: Poland to Send Emergency Aircraft to Budapest after Coach Crash",
       "date": "2026-08-16",
       "bucket": "World",
-      "summary": "Reported by Reuters.",
+      "summary": "Reported by reuters.com.",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZ2puckZxdHQ1aDQ2YmsxMXpuTHd6M0ZkMVhzOFNjXzJ3aTEzeHN6OEMyMkRCWTU2Y21MUUR2YlFjUlJmSG1Eb0JiOF9sVkdxY1dLMTBUY2xiUnNQdXlCRkFSeFNsdUJ0REd4NGxINnRZMDhyZWoxMzRMWlNTSWExd0xGT1pLWWJUcDQ5WEJPYVlBdDQ2aE0wazZRMzlrdw?oc=5",
       "top": true,
       "bestRank": 17,
@@ -266,6 +326,26 @@
       "top": true,
       "bestRank": 19,
       "firstSeen": "2026-08-16T17:33:43.926Z"
+    },
+    {
+      "headline": "Arab allies join Trump in calling for Israel to drop opposition to US-backed Gaza peace plan",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by New York Post.",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQeDk0QldvT1hkRV9VSDY2dXBuWUJNQjlacm9OWGpHOVpKclVvV1lnWklrY0psSzFZWTZOLVlvY1lZdDVDUmpwczRFUWpZbTcwYmdyWGo5QTctQllPc05ubS1ZZFd3cVI1NmdCQThQS1F0T252T2JfbjdpaDZwTXBCbmlOeTdFaHVQN1c2b3NZQ0VrSk81TzNBLVRIUnp6alR6MTI2MDFCWW40bmFnd2p0dDYwa2F4cmFBZjIwd19KaElwOFA4TzVHa3pFZEVBQmc?oc=5",
+      "top": true,
+      "bestRank": 19,
+      "firstSeen": "2026-08-16T21:36:27.244Z"
+    },
+    {
+      "headline": "Far-right Israeli minister advocates killing ‘30 to 40’ Gazans each night",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by Financial Times.",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQ0xKUVVNVERJWGdNcGtLbXZjNktVUElUcncxVlN5TzJMRlNjZW1KU2VZcmpYWlRtZldUQlFhN0ltUXRpVTN2SWcxMEVpRHZSNy1qWEZsYnUzTml3cTZtaEFKUGJfQlI5NnR4T2ZjY3NpNFBVTWRCdzlPR3I2R0haeGkxU3A?oc=5",
+      "top": true,
+      "bestRank": 21,
+      "firstSeen": "2026-08-16T21:36:27.244Z"
     },
     {
       "headline": "Israel's Ben Gvir advocates killing '30 to 40' people in Gaza nightly while speaking to ex-hostage",
@@ -296,16 +376,6 @@
       "top": true,
       "bestRank": 22,
       "firstSeen": "2026-08-16T17:33:43.926Z"
-    },
-    {
-      "headline": "Far-right Israeli minister advocates killing ‘30 to 40’ Gazans each night",
-      "date": "2026-08-16",
-      "bucket": "World",
-      "summary": "Reported by Financial Times.",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQ0xKUVVNVERJWGdNcGtLbXZjNktVUElUcncxVlN5TzJMRlNjZW1KU2VZcmpYWlRtZldUQlFhN0ltUXRpVTN2SWcxMEVpRHZSNy1qWEZsYnUzTml3cTZtaEFKUGJfQlI5NnR4T2ZjY3NpNFBVTWRCdzlPR3I2R0haeGkxU3A?oc=5",
-      "top": true,
-      "bestRank": 23,
-      "firstSeen": "2026-08-16T21:36:27.244Z"
     },
     {
       "headline": "Russian Offensive Campaign Assessment, August 11, 2026",
@@ -358,6 +428,16 @@
       "firstSeen": "2026-08-16T17:43:05.796Z"
     },
     {
+      "headline": "12 more bodies are recovered in Zimbabwe’s ferry disaster, bringing death toll to 84",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWEhNNDJ6cW45ODlWdlV4YUtLM0hwMHZOVXRHaVdLSVRiUVVlZnZMck1idmdvTjBDakVyazRsWTg2UV96ZWxZVGxZVERqMnZhYzhIQUd1S3VncklFYVFESExYanNoNFpHQ0NwcGRYZlRPMFN2RlU3b1I0dWRGWURWV250Q2N2YWxkZDVmY2FUNU5YSDNZaUtmSVVqSURLa1BEaGN0bUhXQV9hMmVL?oc=5",
+      "top": true,
+      "bestRank": 28,
+      "firstSeen": "2026-08-17T00:46:58.396Z"
+    },
+    {
       "headline": "Fox News Host Slams U.S. Troops as ‘Weak’ in Stunning Rant",
       "date": "2026-08-16",
       "bucket": "Conflict",
@@ -366,6 +446,16 @@
       "top": true,
       "bestRank": 29,
       "firstSeen": "2026-08-16T17:43:05.796Z"
+    },
+    {
+      "headline": "How Keating coached Albo on China",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Reported by Politico.",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPTHFuOEowTEUweF9rdk5XRktfbWNqZkw4ek95bzVxeTFHVm53VGFhVllkWGlBa19qY0lWMUZoSEJUOElFbHdCNzROQUNiTUU0Nmd2ckRjc185YWtLMkZTZzZqTllhb3NWYVVZTjRBS00wVE9ZSllCTjlpUW1yOWVpVzJXY3pIVlNBMlNvQ1hpMGJlTDl0bmxLUXVCOUtTc1p1TFJpNUtrQ3N0eFN1T3ZhRVVkdzNRc0ZOZ2FCMkpfVWRiczJSNUF2bUFzaVVsVnh1ZV9xT3dPeFRRZTQ?oc=5",
+      "top": true,
+      "bestRank": 30,
+      "firstSeen": "2026-08-17T00:46:58.396Z"
     },
     {
       "headline": "Fox News Anchor Goes Off On 'Weak' Soldiers Complaining About The USS Lincoln",
@@ -388,14 +478,14 @@
       "firstSeen": "2026-08-16T17:43:05.796Z"
     },
     {
-      "headline": "Arab allies join Trump in calling for Israel to drop opposition to US-backed Gaza peace plan",
+      "headline": "Russia Sends Four Missile Warships Near Japan After Putin’s Provocative Kuril Islands Visit",
       "date": "2026-08-16",
-      "bucket": "World",
-      "summary": "Reported by New York Post.",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQeDk0QldvT1hkRV9VSDY2dXBuWUJNQjlacm9OWGpHOVpKclVvV1lnWklrY0psSzFZWTZOLVlvY1lZdDVDUmpwczRFUWpZbTcwYmdyWGo5QTctQllPc05ubS1ZZFd3cVI1NmdCQThQS1F0T252T2JfbjdpaDZwTXBCbmlOeTdFaHVQN1c2b3NZQ0VrSk81TzNBLVRIUnp6alR6MTI2MDFCWW40bmFnd2p0dDYwa2F4cmFBZjIwd19KaElwOFA4TzVHa3pFZEVBQmc?oc=5",
+      "bucket": "Conflict",
+      "summary": "Reported by UNITED24 Media.",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWFoyMmtpUnZBUzFPSVpuMlExaTVURmdDa3A3Q1RSenlYblRKVFFzRDhFYkJoQ195UlN4V3RnTWFXQ01KVXRIM0VMSG5tQ0h0emZBakVBYUd0THdXZHBBTnZoNW9ReGUtN3paRl91MnUtR3BReW52VkFreHItSldRYWM0d0xieElrUTFHSjE4NFF3UFYwSUJ1YkJsNXV1MzJNX2E5MndZZ3FEY2JjMkNWVF9PZi1rR1pCOFpSS3djWlJWRTBHSkIw?oc=5",
       "top": true,
       "bestRank": 31,
-      "firstSeen": "2026-08-16T21:36:27.244Z"
+      "firstSeen": "2026-08-17T00:46:58.396Z"
     },
     {
       "headline": "Iran’s strategy to simply outlast Trump’s presidency",
@@ -478,12 +568,28 @@
       "bestRank": null
     },
     {
-      "headline": "Trump says US will scale back military drills with South Korea",
+      "headline": "US commander says mental health a 'priority' on USS Lincoln",
       "date": "2026-08-16",
-      "bucket": "Conflict",
-      "summary": "His decision to reduce the partnership came after South Korea recently declined to aid his war effort in Iran.",
-      "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-16T21:36:27.244Z"
+      "bucket": "World",
+      "summary": "Adm Brad Cooper acknowledged that navy service at sea for long periods is \"uniquely challenging and tough\", following a visit to the warship.",
+      "url": "https://www.bbc.co.uk/news/articles/ceqeeendz42o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-17T00:46:58.396Z"
+    },
+    {
+      "headline": "Thailand has a gun problem - 10 million of them",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Recent shootings have highlighted the country's troubled relationship with guns, with laws doing little to curb the violence.",
+      "url": "https://www.bbc.co.uk/news/articles/cevml4701emo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-17T00:46:58.396Z"
+    },
+    {
+      "headline": "'Ghana was the crime scene' - the country leading the demand for slavery reparations",
+      "date": "2026-08-16",
+      "bucket": "World",
+      "summary": "Ghana has become Africa's leading voice in telling the world that Western nations owe reparations",
+      "url": "https://www.bbc.co.uk/news/articles/cy0j2r15dr1o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-17T00:46:58.396Z"
     },
     {
       "headline": "Teen suspect in Virginia campus shooting found hiding in closet",
@@ -491,15 +597,9 @@
       "bucket": "World",
       "summary": "The attack left five injured outside a halls of residence, and the suspect was not a student there, say police.",
       "url": "https://www.bbc.co.uk/news/articles/c0l5583903yo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-16T21:36:27.244Z"
-    },
-    {
-      "headline": "One dead, homes swept away after Hurricane Lala lashes Hawaii",
-      "date": "2026-08-16",
-      "bucket": "Disaster",
-      "summary": "A search-and-rescue operation is under way after properties were uprooted from their foundations.",
-      "url": "https://www.bbc.co.uk/news/articles/crmrr7kjy9vo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-16T21:36:27.244Z"
+      "firstSeen": "2026-08-16T21:36:27.244Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Twelve killed as Polish bus veers off Hungarian motorway",
@@ -582,10 +682,20 @@
       "bestRank": 1
     },
     {
+      "headline": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
+      "date": "2026-08-15",
+      "bucket": "World",
+      "summary": "Israel's military said it had struck \"Hezbollah terror infrastructure\" in response to what it described as earlier action against its soldiers.",
+      "url": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-16T17:33:43.926Z",
+      "top": true,
+      "bestRank": 10
+    },
+    {
       "headline": "Hopes fade in Colombia as more bodies recovered days after powerful quake",
       "date": "2026-08-15",
       "bucket": "World",
-      "summary": "Reported by Reuters.",
+      "summary": "Reported by reuters.com.",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTVVtWHRQWDU1UXU5RHBDM2hOaG1YcVdpMHIyTGtFbnJtQi13c09KUnFlUlRzaDZLSldMZF91NnhFTmhjTERDaXduYktlSTZ0V0h2N2R0M0VoSzBfNjdGcmJCUkhLX01aRkUyRDA5dFZVZWkxazhMT3dNTUs2T1JLX3dCY25KdVlJRjFQTThiV0JNR2VXVEZ5VFh3cGloSnI0SlpEZXVFWXFtblRaXy1CZ18tanp0akpGNGRLQXZ4a09DUQ?oc=5",
       "top": true,
       "bestRank": 11,
@@ -672,6 +782,16 @@
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
+      "headline": "Europe's scorched landscapes seen from space after summer heatwaves",
+      "date": "2026-08-15",
+      "bucket": "World",
+      "summary": "From glaciers shrinking to an exposed shipwreck, satellites capture the impact of extreme heat and drought.",
+      "url": "https://www.bbc.co.uk/news/articles/c4gxy0wqqd9o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-16T17:33:43.926Z",
+      "top": true,
+      "bestRank": 25
+    },
+    {
       "headline": "Australian state to launch gun buyback after Bondi Beach attack",
       "date": "2026-08-15",
       "bucket": "World",
@@ -732,6 +852,16 @@
       "firstSeen": "2026-08-16T18:42:15.985Z"
     },
     {
+      "headline": "I wish I had been a more rebellious teenager, says Bella Ramsey",
+      "date": "2026-08-15",
+      "bucket": "World",
+      "summary": "Ramsey stars in a new film about a cancer survivor who attends “chemo camp” and finds friendship, love and freedom.",
+      "url": "https://www.bbc.co.uk/news/articles/c87nwq9qe24o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-16T17:33:43.926Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
       "headline": "Morocco detains dozens of migrants trying to cross into Ceuta, reports say",
       "date": "2026-08-15",
       "bucket": "World",
@@ -752,41 +882,11 @@
       "bestRank": null
     },
     {
-      "headline": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
-      "date": "2026-08-15",
-      "bucket": "World",
-      "summary": "Israel's military said it had struck \"Hezbollah terror infrastructure\" in response to what it described as earlier action against its soldiers.",
-      "url": "https://www.bbc.co.uk/news/articles/c4gjygx4gjeo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-16T17:33:43.926Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "Secondhand book sales are booming. Is it because of AI?",
       "date": "2026-08-15",
       "bucket": "World",
       "summary": "Booksellers are reporting mysterious bulk orders. It's thought the books are being used to train AI - and ending up pulped.",
       "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-16T17:33:43.926Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Europe's scorched landscapes seen from space after summer heatwaves",
-      "date": "2026-08-15",
-      "bucket": "World",
-      "summary": "From glaciers shrinking to an exposed shipwreck, satellites capture the impact of extreme heat and drought.",
-      "url": "https://www.bbc.co.uk/news/articles/c4gxy0wqqd9o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-16T17:33:43.926Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "I wish I had been a more rebellious teenager, says Bella Ramsey",
-      "date": "2026-08-15",
-      "bucket": "World",
-      "summary": "Ramsey stars in a new film about a cancer survivor who attends “chemo camp” and finds friendship, love and freedom.",
-      "url": "https://www.bbc.co.uk/news/articles/c87nwq9qe24o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-08-16T17:33:43.926Z",
       "top": false,
       "bestRank": null
@@ -862,6 +962,16 @@
       "firstSeen": "2026-08-16T17:33:43.926Z"
     },
     {
+      "headline": "US aircraft carrier on way to relieve USS Lincoln after issues reported aboard",
+      "date": "2026-08-14",
+      "bucket": "World",
+      "summary": "Thousands of sailors on the Lincoln have reportedly faced food shortages and broken plumbing, with some considering jumping overboard.",
+      "url": "https://www.bbc.co.uk/news/articles/c171yp5zdrxo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-16T17:33:43.926Z",
+      "top": true,
+      "bestRank": 18
+    },
+    {
       "headline": "U.S. ambassador calls settlers who sieged Palestinian homes in Qusra ‘terrorists’",
       "date": "2026-08-14",
       "bucket": "World",
@@ -892,11 +1002,11 @@
       "bestRank": null
     },
     {
-      "headline": "US aircraft carrier on way to relieve USS Lincoln after issues reported aboard",
+      "headline": "The Polygamist's author says women see themselves reflected in her Netflix hit",
       "date": "2026-08-14",
       "bucket": "World",
-      "summary": "Thousands of sailors on the Lincoln have reportedly faced food shortages and broken plumbing, with some considering jumping overboard.",
-      "url": "https://www.bbc.co.uk/news/articles/c171yp5zdrxo?at_medium=RSS&at_campaign=rss",
+      "summary": "Zimbabwean novelist Sue Nyathi self-funded her debut novel and now asks who can afford to write at all.",
+      "url": "https://www.bbc.co.uk/news/articles/cd0xk82mrpyo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-08-16T17:33:43.926Z",
       "top": false,
       "bestRank": null
@@ -927,16 +1037,6 @@
       "bucket": "World",
       "summary": "It marked the first time a court had heard Mangione describe how he committed a crime that garnered worldwide attention.",
       "url": "https://www.bbc.co.uk/news/articles/c4gkyez7195o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-16T17:33:43.926Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "The Polygamist's author says women see themselves reflected in her Netflix hit",
-      "date": "2026-08-14",
-      "bucket": "World",
-      "summary": "Zimbabwean novelist Sue Nyathi self-funded her debut novel and now asks who can afford to write at all.",
-      "url": "https://www.bbc.co.uk/news/articles/cd0xk82mrpyo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-08-16T17:33:43.926Z",
       "top": false,
       "bestRank": null
