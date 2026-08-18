@@ -6,9 +6,16 @@ const LOOP_KEY = "trivia-helper-fact-loops";
 const DANIEL_DEFAULT_FLAG = "trivia-helper-default-daniel-v1";
 
 let voicesReady = null;
+let cachedVoices = [];
+
+function snapshotVoices() {
+  const live = window.speechSynthesis?.getVoices?.() ?? [];
+  if (live.length) cachedVoices = live;
+  return live.length ? live : cachedVoices;
+}
 
 function loadVoices() {
-  const grab = () => window.speechSynthesis?.getVoices?.() ?? [];
+  const grab = () => snapshotVoices();
   const existing = grab();
   if (existing.length) {
     voicesReady = Promise.resolve(existing);
@@ -74,9 +81,8 @@ function scoreVoice(voice) {
   return score;
 }
 
-export async function listEnglishVoices() {
-  const voices = await loadVoices();
-  return voices
+function rankedEnglishNow() {
+  return snapshotVoices()
     .filter(isEnglish)
     .map((v) => ({
       voice: v,
@@ -87,6 +93,11 @@ export async function listEnglishVoices() {
       local: Boolean(v.localService),
     }))
     .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+}
+
+export async function listEnglishVoices() {
+  await loadVoices();
+  return rankedEnglishNow();
 }
 
 export function getSavedVoiceUri() {
@@ -146,39 +157,45 @@ function findDaniel(ranked) {
   return ranked.find((v) => /\bdaniel\b/i.test(v.name)) || null;
 }
 
-function pickVoiceNow(preferredUri) {
-  const ranked = (window.speechSynthesis?.getVoices?.() ?? [])
-    .filter(isEnglish)
-    .map((v) => ({
-      voice: v,
-      uri: v.voiceURI,
-      name: v.name,
-      score: scoreVoice(v),
-    }))
-    .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+function voiceLabel(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/\(.*?\)/g, " ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function matchRankedVoice(ranked, preferredUri) {
+  if (!preferredUri || !ranked.length) return null;
+  const exact = ranked.find((v) => v.uri === preferredUri);
+  if (exact) return exact;
+  if (/\bdaniel\b/i.test(preferredUri)) return findDaniel(ranked);
+  const want = voiceLabel(preferredUri);
+  return ranked.find((v) => voiceLabel(v.name) === want) || null;
+}
+
+function listedVoiceOrDefault(ranked, preferredUri) {
   if (!ranked.length) return null;
-  if (preferredUri) {
-    const match = ranked.find((v) => v.uri === preferredUri);
-    if (match) {
-      if (isIOSWebKit() && /premium|enhanced|neural|superstar|\bdaniel\b/i.test(match.name)) {
-        return null;
-      }
-      return match.voice;
-    }
-  }
-  // iPhone: the system default (no voice object) is more reliable than Daniel.
-  if (isIOSWebKit()) return null;
-  return (findDaniel(ranked) || ranked[0]).voice;
+  return (matchRankedVoice(ranked, preferredUri) || findDaniel(ranked) || ranked[0]).voice;
+}
+
+function pickVoiceNow(preferredUri) {
+  return listedVoiceOrDefault(rankedEnglishNow(), preferredUri);
 }
 
 async function resolveVoice(preferredUri) {
-  const ranked = await listEnglishVoices();
-  if (!ranked.length) return null;
-  if (preferredUri) {
-    const match = ranked.find((v) => v.uri === preferredUri);
-    if (match) return match.voice;
-  }
-  return (findDaniel(ranked) || ranked[0]).voice;
+  return listedVoiceOrDefault(await listEnglishVoices(), preferredUri);
+}
+
+function pickListedFallbackVoice(failedVoice) {
+  const ranked = rankedEnglishNow();
+  const failedUri = failedVoice?.voiceURI;
+  const usable = ranked.filter((v) => {
+    if (v.uri === failedUri) return false;
+    if (/premium|enhanced|neural|superstar|siri/i.test(v.name)) return false;
+    return true;
+  });
+  return (usable.find((v) => v.local) || usable[0])?.voice || null;
 }
 
 /** Default system voice URI — Daniel when available. */
@@ -193,7 +210,6 @@ export async function getDefaultBrowserVoiceUri() {
   } catch {
     /* ignore */
   }
-  if (isIOSWebKit()) return "";
   return (daniel || ranked[0])?.uri || "";
 }
 
@@ -807,7 +823,7 @@ function wait(ms, session) {
   });
 }
 
-function speakUtterance(text, voice, rate, session, { allowVoice = true } = {}) {
+function speakUtterance(text, voice, rate, session, { allowVoice = true, triedFallback = false } = {}) {
   return new Promise((resolve, reject) => {
     if (session !== browserSpeakSession) {
       resolve(false);
@@ -843,10 +859,11 @@ function speakUtterance(text, voice, rate, session, { allowVoice = true } = {}) 
         settled = true;
         clearInterval(watchdog);
         clearTimeout(safety);
-        speakUtterance(text, voice, rate, session, { allowVoice: false }).then(
-          resolve,
-          reject
-        );
+        const fallback = triedFallback ? null : pickListedFallbackVoice(voice);
+        speakUtterance(text, fallback || voice, rate, session, {
+          allowVoice: Boolean(fallback),
+          triedFallback: true,
+        }).then(resolve, reject);
         return;
       }
       if (
