@@ -33,3 +33,18 @@ CREATE TABLE IF NOT EXISTS hit_rate (
   ip TEXT PRIMARY KEY,
   last_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+CREATE TABLE IF NOT EXISTS guestbook (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  name TEXT NOT NULL,
+  location TEXT NOT NULL DEFAULT '',
+  message TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS guestbook_created_at_idx ON guestbook (created_at DESC);
+
+CREATE TABLE IF NOT EXISTS guestbook_rate (
+  ip TEXT PRIMARY KEY,
+  last_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);

@@ -25,3 +25,5 @@ Docker is optional if you do not want Homebrew Postgres: `docker compose -f serv
 Anyone can view and search questions. Upload, edit, and delete still require `UPLOAD_PIN`. Photos stay hidden until **Show photo**. Images are JPEG-compressed (max 1600px) in Postgres.
 
 `GET`/`POST /api/hits` is the shared home-page visitor tally (starts at 901). No PIN. The same IP is counted at most once every 30 minutes. IPs in `HIT_SKIP_IPS` are shown the current count but never added.
+
+`GET`/`POST /api/guestbook` is the home-page guestbook. No PIN. Name (2–28) and message (2–240); optional hometown. Links and vulgar language are rejected (with a scolding). The same IP can sign at most once every 30 minutes.

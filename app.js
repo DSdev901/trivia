@@ -57,6 +57,7 @@ import {
   renderCaptured,
 } from "./captured.js";
 import { crumbsHtml, hashPath, href, parseHash } from "./routes.js";
+import { homeWebBadgesHtml, renderGuestbook } from "./guestbook.js";
 
 const els = {
   nav: document.getElementById("nav"),
@@ -75,6 +76,7 @@ const els = {
   periodicTable: document.getElementById("view-periodic-table"),
   geography: document.getElementById("view-geography"),
   captured: document.getElementById("view-captured"),
+  guestbook: document.getElementById("view-guestbook"),
 };
 
 const VIEWS = [
@@ -91,6 +93,7 @@ const VIEWS = [
   "periodicTable",
   "geography",
   "captured",
+  "guestbook",
 ];
 
 const state = {
@@ -385,6 +388,7 @@ function renderCategories(categories) {
     </div>
     <div class="home-retro">
       ${hitCounterHtml(cachedHitCount())}
+      ${homeWebBadgesHtml()}
     </div>
   `;
   void decorateHomeExtras();
@@ -1566,6 +1570,22 @@ async function applyRoute() {
     state.lastResult = null;
     setPageTitle([]);
     show("categories");
+    return;
+  }
+
+  if (catId === "guestbook") {
+    stopAllSpeech();
+    cleanupPeriodicTable();
+    cleanupGeography();
+    cleanupCaptured();
+    state.category = null;
+    state.batch = null;
+    state.president = null;
+    state.quiz = null;
+    state.lastResult = null;
+    setPageTitle(["Guestbook"]);
+    show("guestbook");
+    void renderGuestbook({ els });
     return;
   }
 

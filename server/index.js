@@ -7,6 +7,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { migrate, query } from "./db.js";
 import { parseConfigured, parseTriviaCard } from "./parse-photo.js";
+import { chastiseGuestbook, guestbookHasVulgar } from "./guestbook-filter.js";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const APP_ROOT = path.resolve(HERE, "..");
@@ -133,6 +134,92 @@ app.get("/api/hits", async (_req, res) => {
 app.post("/api/hits", async (req, res) => {
   try {
     res.json(await bumpHitCount(clientIp(req)));
+  } catch (err) {
+    res.status(503).json({ error: err.message });
+  }
+});
+
+const GB_NAME_MAX = 28;
+const GB_LOCATION_MAX = 32;
+const GB_MESSAGE_MAX = 240;
+const GB_URLISH = /https?:\/\/|www\.|\[url\]/i;
+
+function cleanGuestbookField(value, max) {
+  return String(value ?? "")
+    .replace(/[\u0000-\u001F\u007F]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, max);
+}
+
+function guestbookRow(row) {
+  return {
+    id: row.id,
+    createdAt: row.created_at,
+    name: row.name,
+    location: row.location || "",
+    message: row.message,
+  };
+}
+
+app.get("/api/guestbook", async (_req, res) => {
+  try {
+    const { rows } = await query(
+      `SELECT id, created_at, name, location, message
+       FROM guestbook
+       ORDER BY created_at DESC
+       LIMIT 80`
+    );
+    res.json({ entries: rows.map(guestbookRow) });
+  } catch (err) {
+    res.status(503).json({ error: err.message });
+  }
+});
+
+app.post("/api/guestbook", async (req, res) => {
+  try {
+    const trap = cleanGuestbookField(req.body?.homepage, 80);
+    if (trap) {
+      res.json({ ok: true });
+      return;
+    }
+    const name = cleanGuestbookField(req.body?.name, GB_NAME_MAX);
+    const location = cleanGuestbookField(req.body?.location, GB_LOCATION_MAX);
+    const message = cleanGuestbookField(req.body?.message, GB_MESSAGE_MAX);
+    if (name.length < 2 || message.length < 2) {
+      res.status(400).json({ error: "Name and message, please." });
+      return;
+    }
+    if (GB_URLISH.test(`${name} ${location} ${message}`)) {
+      res.status(400).json({ error: "Keep links out of the guestbook." });
+      return;
+    }
+    const signed = `${name} ${location} ${message}`;
+    if (guestbookHasVulgar(signed)) {
+      res.status(400).json({ error: chastiseGuestbook(signed) });
+      return;
+    }
+    const ip = clientIp(req);
+    const { rowCount } = await query(
+      `INSERT INTO guestbook_rate (ip, last_at) VALUES ($1, NOW())
+       ON CONFLICT (ip) DO UPDATE
+         SET last_at = NOW()
+         WHERE guestbook_rate.last_at < NOW() - INTERVAL '30 minutes'`,
+      [ip]
+    );
+    if (!rowCount) {
+      res.status(429).json({
+        error: "Too soon — wait a few minutes before signing again.",
+      });
+      return;
+    }
+    const { rows } = await query(
+      `INSERT INTO guestbook (name, location, message)
+       VALUES ($1, $2, $3)
+       RETURNING id, created_at, name, location, message`,
+      [name, location, message]
+    );
+    res.status(201).json({ ok: true, entry: guestbookRow(rows[0]) });
   } catch (err) {
     res.status(503).json({ error: err.message });
   }
