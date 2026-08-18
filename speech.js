@@ -175,8 +175,26 @@ function matchRankedVoice(ranked, preferredUri) {
   return ranked.find((v) => voiceLabel(v.name) === want) || null;
 }
 
+function systemDefaultVoice() {
+  const all = snapshotVoices().filter(isEnglish);
+  // Keep On-device distinct from the app’s Daniel default.
+  const pool = all.filter((v) => !/\bdaniel\b/i.test(v.name));
+  const candidates = pool.length ? pool : all;
+  if (!candidates.length) return null;
+  const flagged = candidates.filter((v) => v.default);
+  const navLang = String(navigator.language || "en-US").replace("_", "-").toLowerCase();
+  const navBase = navLang.slice(0, 2);
+  return (
+    flagged.find((v) => String(v.lang || "").replace("_", "-").toLowerCase().startsWith(navLang)) ||
+    flagged.find((v) => String(v.lang || "").toLowerCase().startsWith(navBase)) ||
+    flagged[0] ||
+    candidates.find((v) => v.localService) ||
+    candidates[0]
+  );
+}
+
 function listedVoiceOrDefault(ranked, preferredUri) {
-  if (preferredUri === ON_DEVICE_VOICE_URI) return null;
+  if (preferredUri === ON_DEVICE_VOICE_URI) return systemDefaultVoice();
   if (!ranked.length) return null;
   return (matchRankedVoice(ranked, preferredUri) || findDaniel(ranked) || ranked[0]).voice;
 }
@@ -869,9 +887,18 @@ function speakUtterance(text, voice, rate, session, { allowVoice = true, triedFa
       return;
     }
     const utter = new SpeechSynthesisUtterance(text);
-    if (allowVoice && voice) {
-      utter.voice = voice;
-      if (voice.lang && !isIOSWebKit()) utter.lang = voice.lang;
+    const resolvedFromSystem = Boolean(allowVoice && !voice);
+    let voiceToUse = voice;
+    if (resolvedFromSystem) voiceToUse = systemDefaultVoice();
+    if (allowVoice && voiceToUse) {
+      utter.voice = voiceToUse;
+      const followDevice = resolvedFromSystem || Boolean(voiceToUse.default);
+      if (voiceToUse.lang && (!isIOSWebKit() || followDevice)) {
+        utter.lang = voiceToUse.lang;
+      }
+    } else if (isIOSWebKit()) {
+      // Unset voice on iOS reuses the last spoken voice (often Daniel).
+      utter.lang = String(navigator.language || "en-US").replace("_", "-");
     }
     utter.rate = rate;
     utter.pitch = 1;
