@@ -163,6 +163,14 @@ async function loadBatch(category, batchNumber) {
   return data;
 }
 
+function categoryMetaHtml(category) {
+  const label = categoryMetaLabel(category);
+  if (category?.id === "current-events") {
+    return `<span class="meta category-card-meta"><span>${label}</span><span class="home-briefing-ran" hidden></span></span>`;
+  }
+  return `<span class="meta">${label}</span>`;
+}
+
 function categoryMetaLabel(category) {
   if (category?.type === "current-events") {
     return "briefing · live feed";
@@ -370,14 +378,14 @@ function renderCategories(categories) {
           <h2>${c.name}</h2>
           <p>${categoryKicker(c)}</p>
           ${categoryExtraHtml(c)}
-          <span class="meta">${categoryMetaLabel(c)}</span>
+          ${categoryMetaHtml(c)}
         </a>`
         )
         .join("")}
     </div>
     <div class="home-retro">
+      <p class="home-welcome">Welcome!</p>
       ${hitCounterHtml(cachedHitCount())}
-      <p class="home-briefing-ran" hidden></p>
     </div>
   `;
   void decorateHomeExtras();
