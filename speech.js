@@ -265,7 +265,7 @@ export function voiceSelectOptionsHtml(ranked, selectedUri) {
   }
   choices.push({
     uri: NATURAL_VOICE_URI,
-    label: "Natural voice",
+    label: "Natural voice (quick download first time)",
   });
   choices.push({
     uri: ON_DEVICE_VOICE_URI,
@@ -1105,8 +1105,8 @@ export async function speakLines(lines, opts = {}) {
 export function voiceQualityTip(rankedVoices) {
   if (getSavedVoiceUri() === NATURAL_VOICE_URI) {
     return isIOSWebKit()
-      ? "Natural voice downloads once (~60 MB). Turn the silent switch off and use the volume buttons."
-      : "Natural voice downloads once (~60 MB), then works in this browser. First Listen can take a minute.";
+      ? "Natural voice needs a quick download the first time you Listen. Turn the silent switch off and use the volume buttons."
+      : "Natural voice needs a quick download the first time you Listen, then it stays in this browser.";
   }
   if (isIOSWebKit()) {
     return "On iPhone, turn the silent switch off and use the media volume buttons. If Brave stays quiet, try Safari.";
