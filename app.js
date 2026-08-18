@@ -326,7 +326,7 @@ function hitCounterHtml(count) {
   const cells = [...digits]
     .map((d) => `<span>${d}</span>`)
     .join("");
-  return `<p class="hit-counter"><span class="hit-counter-kicker">You are visitor</span> <span class="hit-counter-digits" aria-label="${count}">${cells}</span></p>`;
+  return `<p class="hit-counter"><span class="hit-counter-kicker">You are visitor</span> <span class="hit-counter-digits" aria-label="${count}">${cells}</span> <span class="home-welcome">Welcome!</span></p>`;
 }
 
 function setHitCounterDigits(count) {
@@ -384,7 +384,6 @@ function renderCategories(categories) {
         .join("")}
     </div>
     <div class="home-retro">
-      <p class="home-welcome">Welcome!</p>
       ${hitCounterHtml(cachedHitCount())}
     </div>
   `;
