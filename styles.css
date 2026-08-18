@@ -156,6 +156,10 @@ body::after {
 }
 
 @media (max-width: 860px) {
+  :root {
+    --app-inset: 1.2rem;
+  }
+
   /* Keep content inset via .top padding; don't leave a blank band above the pattern. */
   .app {
     padding-top: 0;
@@ -320,13 +324,25 @@ body.is-home .brand-logo--badge {
   margin-left: 0;
 }
 
+.home-well {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0.85rem 0.85rem 1rem;
+  background: rgba(255, 253, 246, 0.62);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #9a8f7a #f7f1e4 #f7f1e4 #9a8f7a;
+  box-shadow:
+    inset 1px 1px 0 #6a6154,
+    inset -1px -1px 0 #fff,
+    3px 3px 0 rgba(26, 35, 50, 0.08);
+}
+
 .home-menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
   gap: 1rem;
-  max-width: 40rem;
-  margin: 0 auto;
 }
 
 .home-menu .category-card--feature {
@@ -491,6 +507,10 @@ body.is-home .brand-logo--badge {
 }
 
 @media (max-width: 640px) {
+  .home-well {
+    padding: 0.65rem 0.65rem 0.8rem;
+  }
+
   .home-menu {
     grid-template-columns: 1fr;
   }
@@ -523,8 +543,7 @@ body.is-home .brand-logo--badge {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 40rem;
-  margin: 1.35rem auto 0;
+  margin: 1.1rem 0 0;
   gap: 0.85rem;
   text-align: center;
 }
