@@ -1,9 +1,35 @@
 {
   "section": "netflix",
-  "generatedAt": "2026-08-16T17:43:31.224Z",
-  "windowStart": "2026-07-19",
-  "windowEnd": "2026-08-16",
+  "generatedAt": "2026-08-18T11:14:36.374Z",
+  "windowStart": "2026-07-21",
+  "windowEnd": "2026-08-18",
   "items": [
+    {
+      "title": "Take a Hike!",
+      "type": "Reality",
+      "date": "2026-08-18",
+      "synopsis": "Four celebrity hiking newbies end up forming a club to tackle Korea's snow‑capped peaks. Can they figure out why on earth people go to the mountains?",
+      "starring": [
+        "Car, the garden",
+        "DOWOON",
+        "Lee Chae-min",
+        "Tarzzan"
+      ],
+      "image": "data/current-events/posters/take-a-hike-c6e857f1.jpg",
+      "inUS": true
+    },
+    {
+      "title": "Kelsey Cook: Happy Hour",
+      "type": "Stand-up special",
+      "date": "2026-08-18",
+      "synopsis": "In this candid and clever stand-up special, Kelsey Cook explores \"hangxiety,\" relives a plane bathroom nightmare and breaks down dating a literal Chad.",
+      "starring": [
+        "Happy Hour",
+        "Kelsey Cook"
+      ],
+      "image": "data/current-events/posters/kelsey-cook-happy-hour-40d68f44.jpg",
+      "inUS": true
+    },
     {
       "title": "Umthetho",
       "type": "Series",
@@ -33,7 +59,7 @@
       "inUS": true
     },
     {
-      "title": "Don't Say Good Luck",
+      "title": "Don’t Say Good Luck",
       "type": "Film",
       "date": "2026-08-14",
       "synopsis": "Sophie Birenbaum is ready for the spotlight as the lead in her high school musical — until she's suddenly facing more drama at home than on the stage.",
@@ -113,22 +139,6 @@
       "inUS": true
     },
     {
-      "title": "This, That and Everything in Between",
-      "type": "Film",
-      "date": "2026-08-13",
-      "synopsis": "A TV writer returns home to her estranged mother, igniting chaos as they navigate painful secrets and the complexities of their dysfunctional family.",
-      "starring": [
-        "Jodi Sta. Maria",
-        "Agot Isidro",
-        "Gardo Versoza",
-        "Ruby Ruiz",
-        "Gabriel Lazaro",
-        "RK Bagatsing"
-      ],
-      "image": "data/current-events/posters/this-that-and-everything-in-between-513768a6.jpg",
-      "inUS": true
-    },
-    {
       "title": "A Child of My Own",
       "type": "Film",
       "date": "2026-08-13",
@@ -145,11 +155,27 @@
       "inUS": true
     },
     {
-      "title": "MLB Field of Dreams: Phillies vs. Twins",
-      "type": "Film",
+      "title": "MLB Field of Dreams: Phillies vs. Twins (LIVE)",
+      "type": "Live event",
       "date": "2026-08-13",
       "synopsis": "The Philadelphia Phillies face the Minnesota Twins in a regular-season game at the Field of Dreams ballpark in Dyersville, Iowa — baseball’s return to the cornfields, streamed live on Netflix.",
       "starring": [],
+      "inUS": true
+    },
+    {
+      "title": "This, That and Everything in Between",
+      "type": "Film",
+      "date": "2026-08-13",
+      "synopsis": "A TV writer returns home to her estranged mother, igniting chaos as they navigate painful secrets and the complexities of their dysfunctional family.",
+      "starring": [
+        "Jodi Sta. Maria",
+        "Agot Isidro",
+        "Gardo Versoza",
+        "Ruby Ruiz",
+        "Gabriel Lazaro",
+        "RK Bagatsing"
+      ],
+      "image": "data/current-events/posters/this-that-and-everything-in-between-513768a6.jpg",
       "inUS": true
     },
     {
@@ -191,7 +217,7 @@
       "inUS": true
     },
     {
-      "title": "Rory Scovel : Show Must Go On",
+      "title": "Rory Scovel: Show Must Go On",
       "type": "Stand-up special",
       "date": "2026-08-11",
       "synopsis": "With a hypothetical home invasion, a biblical reenactment, and his late dad's final wish, Rory Scovel delivers unrelenting laughs in this raucous stand-up special filmed at The Neptune in Seattle, Washington.",
@@ -276,22 +302,6 @@
       "inUS": true
     },
     {
-      "title": "The Last House",
-      "type": "Film",
-      "date": "2026-08-07",
-      "synopsis": "A family suddenly sealed inside their home must work together to survive against dwindling resources and the ominous threat keeping them trapped.",
-      "starring": [
-        "Greta Lee",
-        "Wagner Moura",
-        "Riley Chung",
-        "Noah Alexander Sosnowski",
-        "Emma Ho",
-        "Gabriel Barbosa"
-      ],
-      "image": "data/current-events/posters/the-last-house-f605bcf7.jpg",
-      "inUS": true
-    },
-    {
       "title": "Death Inc. (Season 4)",
       "type": "Series",
       "date": "2026-08-07",
@@ -305,6 +315,22 @@
         "Gerald B. Fillmore"
       ],
       "image": "data/current-events/posters/death-inc-1a3db9da.jpg",
+      "inUS": true
+    },
+    {
+      "title": "The Last House",
+      "type": "Film",
+      "date": "2026-08-07",
+      "synopsis": "A family suddenly sealed inside their home must work together to survive against dwindling resources and the ominous threat keeping them trapped.",
+      "starring": [
+        "Greta Lee",
+        "Wagner Moura",
+        "Riley Chung",
+        "Noah Alexander Sosnowski",
+        "Emma Ho",
+        "Gabriel Barbosa"
+      ],
+      "image": "data/current-events/posters/the-last-house-f605bcf7.jpg",
       "inUS": true
     },
     {
@@ -384,7 +410,7 @@
     },
     {
       "title": "Inside the Trustor Scandal",
-      "type": "Film",
+      "type": "Documentary",
       "date": "2026-08-05",
       "synopsis": "For the first time since 1997, Joachim Posener finally emerges from hiding and allows himself to be interviewed about his life and the Trustor affair. Twenty-seven years ago, he disappeared without a trace, and ever since, he has been on the international most wanted list. Now, Karin af Klintberg searches for him…",
       "starring": [
@@ -489,6 +515,19 @@
       "image": "data/current-events/posters/forbidden-woman-6a926e5c.jpg"
     },
     {
+      "title": "Better Late Than Single (Season 2)",
+      "type": "Reality",
+      "date": "2026-07-28",
+      "synopsis": "Ready to step into the dating world, lifelong singles get expert help for style, health and confidence. Will they manage hiccups on their way to love?",
+      "starring": [
+        "Car, the garden",
+        "Seo In-guk",
+        "Kang Han-na",
+        "Lee Eun-ji"
+      ],
+      "image": "data/current-events/posters/better-late-than-single-ca8c1b77.jpg"
+    },
+    {
       "title": "Bloody Smart",
       "type": "Series",
       "date": "2026-07-28",
@@ -515,6 +554,21 @@
       ],
       "image": "data/current-events/posters/mary-beth-barone-galaxy-brain-026658d2.jpg",
       "inUS": true
+    },
+    {
+      "title": "WWE Monday Night RAW (Season 33)",
+      "type": "Documentary",
+      "date": "2026-07-27",
+      "synopsis": "WWE Monday Night RAW is World Wrestling Entertainment's (formerly the WWF and the WWWF before that) premiere wrestling event and brand. Since its launch in 1993, WWE Monday Night RAW continues to air live on Monday nights. It is generally seen as the company's flagship program due to its prolific history, high ratings, weekly live format, and emphasis on pay-per-views. Monday Night RAW is high profile enough to attract frequent visits from celebrities who usually serve as guest hosts for a single live event. Since its first episode, the show has been broadcast live or recorded from more than 197 different arenas in 165 cities and towns in seven different nations: including the United States, Canada, the United Kingdom twice a year, Afghanistan for a special Tribute to the Troops, Germany, Japan, Italy and Mexico.",
+      "starring": [
+        "Alicia Warrington",
+        "Adam Pearce",
+        "Michael Coulthard",
+        "Corey Graves",
+        "Jackie Redmond",
+        "Roman Reigns"
+      ],
+      "image": "data/current-events/posters/wwe-monday-night-raw-5fb0ff9d.jpg"
     },
     {
       "title": "Instadocs: The Prediction Games",
@@ -638,6 +692,17 @@
       "inUS": true
     },
     {
+      "title": "K-foodie meets J-foodie (Season 6)",
+      "type": "Documentary",
+      "date": "2026-07-23",
+      "synopsis": "Korea's top foodie Sung Si-kyung joins Japan's beloved Yutaka Matsushige on a tasty adventure as they explore culinary gems across Korea and Japan.",
+      "starring": [
+        "Sung Si-kyung",
+        "Yutaka Matsushige"
+      ],
+      "image": "data/current-events/posters/k-foodie-meets-j-foodie-e019f5bb.jpg"
+    },
+    {
       "title": "Love in Slow Motion",
       "type": "Film",
       "date": "2026-07-23",
@@ -690,6 +755,18 @@
         "Junbbang Jogyo"
       ],
       "image": "data/current-events/posters/the-love-lab-dfd3e1a9.jpg"
+    },
+    {
+      "title": "Lock Upp (Season 2)",
+      "type": "Reality",
+      "date": "2026-07-22",
+      "synopsis": "Fifteen newsworthy celebrities must own their truth in the court of public opinion. Can they control the narrative, or will they be locked out?",
+      "starring": [
+        "Kangana Ranaut",
+        "Riteish Deshmukh",
+        "Farah Khan"
+      ],
+      "image": "data/current-events/posters/lock-upp-3af6a4be.jpg"
     },
     {
       "title": "GIGN",
@@ -752,8 +829,8 @@
       "image": "data/current-events/posters/elize-shadows-of-a-woman-ec3ec43c.jpg"
     },
     {
-      "title": "Mark Twain Prize for American Humor (Season 2026)",
-      "type": "Special",
+      "title": "Bill Maher: The Kennedy Center Mark Twain Prize for American Humor",
+      "type": "Film",
       "date": "2026-07-21",
       "synopsis": "The Mark Twain Prize for American Humor (aka: The Mark Twain Prize) is an American award for humor awarded by the John F. Kennedy Center for the Performing Arts annually since 1998. It is named after the 19th century novelist, essayist and humorist Mark Twain and is presented to an individual who has made a significant contribution to American humor. The prize is presented and show is taped in the Kennedy Center Concert Hall in Washington DC, during which the honoree is celebrated by his or her peers. The event is a significant fundraiser to benefit the Kennedy Center, which sells tickets as well as access to dinners and after-parties featuring the celebrities. Recipients of the Twain Prize receive a copy of an 1884 bronze portrait bust of Mark Twain sculpted by Karl Gerhardt (1853-1940).",
       "starring": [],
@@ -761,50 +838,19 @@
     },
     {
       "title": "WWE: Unreal (Season 3)",
-      "type": "Documentary",
+      "type": "Series",
       "date": "2026-07-21",
       "synopsis": "See John Cena, Cody Rhodes, Rhea Ripley and other Superstars like never before in this unprecedented backstage look at the WWE Universe.",
       "starring": [
-        "Unreal"
+        "Unreal",
+        "Paul Levesque",
+        "Michael Seitz",
+        "Cody Rhodes",
+        "Bruce Prichard",
+        "Ed Koskey"
       ],
       "image": "data/current-events/posters/wwe-unreal-c024067d.jpg",
       "inUS": true
-    },
-    {
-      "title": "Better Late Than Single (Season 2)",
-      "type": "Reality",
-      "date": "2026-07-21",
-      "synopsis": "Ready to step into the dating world, lifelong singles get expert help for style, health and confidence. Will they manage hiccups on their way to love?",
-      "starring": [
-        "Car, the garden",
-        "Seo In-guk",
-        "Kang Han-na",
-        "Lee Eun-ji"
-      ],
-      "image": "data/current-events/posters/better-late-than-single-ca8c1b77.jpg"
-    },
-    {
-      "title": "WWE Monday Night RAW (Season 33)",
-      "type": "Documentary",
-      "date": "2026-07-20",
-      "synopsis": "WWE Monday Night RAW is World Wrestling Entertainment's (formerly the WWF and the WWWF before that) premiere wrestling event and brand. Since its launch in 1993, WWE Monday Night RAW continues to air live on Monday nights. It is generally seen as the company's flagship program due to its prolific history, high ratings, weekly live format, and emphasis on pay-per-views. Monday Night RAW is high profile enough to attract frequent visits from celebrities who usually serve as guest hosts for a single live event. Since its first episode, the show has been broadcast live or recorded from more than 197 different arenas in 165 cities and towns in seven different nations: including the United States, Canada, the United Kingdom twice a year, Afghanistan for a special Tribute to the Troops, Germany, Japan, Italy and Mexico.",
-      "starring": [
-        "Alicia Warrington",
-        "Adam Pearce",
-        "Michael Coulthard",
-        "Corey Graves",
-        "Jackie Redmond",
-        "Roman Reigns"
-      ],
-      "image": "data/current-events/posters/wwe-monday-night-raw-5fb0ff9d.jpg"
-    },
-    {
-      "title": "Lock Upp (Season 2)",
-      "type": "Reality",
-      "date": "2026-07-20",
-      "synopsis": "Fifteen newsworthy celebrities must own their truth in the court of public opinion. Can they control the narrative, or will they be locked out?",
-      "starring": [],
-      "image": "data/current-events/posters/lock-upp-3af6a4be.jpg"
     }
   ]
 }
