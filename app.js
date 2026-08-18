@@ -166,10 +166,14 @@ async function loadBatch(category, batchNumber) {
   return data;
 }
 
-function categoryMetaHtml(category) {
+function categoryMetaHtml(category, stamp) {
   const label = categoryMetaLabel(category);
   if (category?.id === "current-events") {
-    return `<span class="meta category-card-meta"><span>${label}</span><span class="home-briefing-ran" hidden></span></span>`;
+    const day = formatBriefingDay(stamp?.generatedAt);
+    const ran = day
+      ? `<span class="home-briefing-ran">Last briefing: ${escapeHtml(day)}</span>`
+      : `<span class="home-briefing-ran" hidden></span>`;
+    return `<span class="meta category-card-meta"><span>${label}</span>${ran}</span>`;
   }
   return `<span class="meta">${label}</span>`;
 }
@@ -261,12 +265,16 @@ let briefingStampPromise;
 
 function loadBriefingStamp() {
   if (!briefingStampPromise) {
-    briefingStampPromise = loadJSON(
-      "data/current-events/briefing-stamp.json"
-    ).catch(() => null);
+    briefingStampPromise = fetch("data/current-events/briefing-stamp.json", {
+      credentials: "omit",
+    })
+      .then((res) => (res.ok ? res.json() : null))
+      .catch(() => null);
   }
   return briefingStampPromise;
 }
+
+loadBriefingStamp();
 
 function formatBriefingDay(iso) {
   const d = new Date(iso);
@@ -344,30 +352,9 @@ function currentEventsSparkleHtml() {
   return `<span class="new-sparkle" aria-label="New briefing today"><span class="new-sparkle-label" aria-hidden="true">New Briefing today</span></span>`;
 }
 
-function decorateCurrentEventsSparkle(stamp) {
-  if (!isSameLocalDay(stamp?.generatedAt)) return;
-  const card = els.categories.querySelector(
-    `a.category-card[href="${href(["current-events"])}"]`
-  );
-  if (!card || card.querySelector(".new-sparkle")) return;
-  card.classList.add("category-card--fresh");
-  const title = card.querySelector("h2");
-  if (title) title.insertAdjacentHTML("afterend", currentEventsSparkleHtml());
-  else card.insertAdjacentHTML("beforeend", currentEventsSparkleHtml());
-}
-
 async function decorateHomeExtras() {
-  const [stamp, count] = await Promise.all([
-    loadBriefingStamp(),
-    bumpHitCount(),
-  ]);
-  decorateCurrentEventsSparkle(stamp);
+  const count = await bumpHitCount();
   setHitCounterDigits(count);
-  const ran = els.categories.querySelector(".home-briefing-ran");
-  const day = formatBriefingDay(stamp?.generatedAt);
-  if (!ran || !day) return;
-  ran.hidden = false;
-  ran.textContent = `Last briefing: ${day}`;
 }
 
 const TRIVIA_NIGHTS = [
@@ -396,15 +383,15 @@ function homeTickerItemsHtml() {
     const label = `${n.month}/${n.day} ${n.theme}`;
     const upcoming = i === next ? `<span class="home-ticker-next">Next</span>` : "";
     return `<span class="home-ticker-item">${upcoming}${escapeHtml(label)}</span>`;
-  }).join('<span class="home-ticker-dot" aria-hidden="true">★</span>');
-  return `<span class="home-ticker-item">Flying Saucer Trivia Tuesdays</span><span class="home-ticker-dot" aria-hidden="true">★</span>${items}`;
+  }).join('<span class="home-ticker-dot" aria-hidden="true">***</span>');
+  return `<span class="home-ticker-item">Flying Saucer Trivia Tuesdays</span><span class="home-ticker-dot" aria-hidden="true">***</span>${items}`;
 }
 
 function homeTickerHtml() {
   const strip = homeTickerItemsHtml();
   return `
-    <div class="home-ticker" role="region" aria-label="Flying Saucer Trivia Tuesdays">
-      <p class="home-ticker-kicker">Tonight's board</p>
+    <div class="home-ticker" role="region" aria-label="Themed trivia">
+      <p class="home-ticker-kicker">Themed trivia</p>
       <div class="home-ticker-track">
         <div class="home-ticker-copy">
           <div class="home-ticker-seq">${strip}</div>
@@ -414,19 +401,23 @@ function homeTickerHtml() {
     </div>`;
 }
 
-function renderCategories(categories) {
+function renderCategories(categories, stamp) {
+  const fresh = isSameLocalDay(stamp?.generatedAt);
   els.categories.innerHTML = `
     ${homeTickerHtml()}
     <div class="home-menu">
       ${categories
         .map(
           (c, i) => `
-        <a class="category-card${i === 0 ? " category-card--feature" : ""}" href="${href([c.id])}">
+        <a class="category-card${i === 0 ? " category-card--feature" : ""}${
+            c.id === "current-events" && fresh ? " category-card--fresh" : ""
+          }" href="${href([c.id])}">
           ${categoryMarkHtml(c)}
           <h2>${c.name}</h2>
+          ${c.id === "current-events" && fresh ? currentEventsSparkleHtml() : ""}
           <p>${categoryKicker(c)}</p>
           ${categoryExtraHtml(c)}
-          ${categoryMetaHtml(c)}
+          ${categoryMetaHtml(c, stamp)}
         </a>`
         )
         .join("")}
@@ -1789,9 +1780,12 @@ els.homeBtn.addEventListener("click", () => goToHash([]));
 
 async function init() {
   try {
-    const data = await loadJSON("data/categories.json");
+    const [data, stamp] = await Promise.all([
+      loadJSON("data/categories.json"),
+      loadBriefingStamp(),
+    ]);
     state.categories = data.categories;
-    renderCategories(state.categories);
+    renderCategories(state.categories, stamp);
     if (!location.hash) history.replaceState(null, "", "#/");
     window.addEventListener("hashchange", () => void applyRoute());
     await applyRoute();
