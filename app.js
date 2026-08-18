@@ -206,6 +206,35 @@ function categoryKicker(category) {
   }
 }
 
+function isSameLocalDay(iso) {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return false;
+  const now = new Date();
+  return (
+    d.getFullYear() === now.getFullYear() &&
+    d.getMonth() === now.getMonth() &&
+    d.getDate() === now.getDate()
+  );
+}
+
+function currentEventsSparkleHtml() {
+  return `<span class="new-sparkle" aria-label="Updated today"><span class="new-sparkle-star" aria-hidden="true"></span><span class="new-sparkle-label" aria-hidden="true">New!</span></span>`;
+}
+
+async function decorateCurrentEventsSparkle() {
+  try {
+    const stamp = await loadJSON("data/current-events/briefing-stamp.json");
+    if (!isSameLocalDay(stamp?.generatedAt)) return;
+  } catch {
+    return;
+  }
+  const card = els.categories.querySelector(
+    `a.category-card[href="${href(["current-events"])}"]`
+  );
+  if (!card || card.querySelector(".new-sparkle")) return;
+  card.insertAdjacentHTML("beforeend", currentEventsSparkleHtml());
+}
+
 function renderCategories(categories) {
   els.categories.innerHTML = `
     <div class="home-menu">
@@ -221,6 +250,7 @@ function renderCategories(categories) {
         .join("")}
     </div>
   `;
+  void decorateCurrentEventsSparkle();
 }
 
 function openCategory(id) {

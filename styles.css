@@ -330,7 +330,9 @@ body.is-home .brand-logo--badge {
 }
 
 .home-menu .category-card--feature {
+  position: relative;
   grid-column: 1 / -1;
+  padding-right: 4rem;
 }
 
 .home-menu .category-card {
@@ -344,6 +346,102 @@ body.is-home .brand-logo--badge {
 
 .home-menu .category-card--feature h2 {
   font-size: 1.55rem;
+}
+
+.new-sparkle {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.6rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.new-sparkle-star,
+.new-sparkle-star::before {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, #e8c04a 0%, var(--gold) 55%, #8f6808 100%);
+  box-shadow: 0 2px 8px rgba(184, 134, 11, 0.38);
+}
+
+.new-sparkle-star {
+  transform: rotate(22deg);
+  border-radius: 4px;
+}
+
+.new-sparkle-star::before {
+  content: "";
+  transform: rotate(45deg);
+  border-radius: 4px;
+}
+
+.new-sparkle-label {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(58, 42, 0, 0.35);
+}
+
+.new-sparkle::before,
+.new-sparkle::after {
+  content: "✦";
+  position: absolute;
+  color: #fff8d4;
+  font-size: 0.62rem;
+  line-height: 1;
+  text-shadow: 0 0 6px rgba(255, 236, 160, 0.9);
+}
+
+.new-sparkle::before {
+  top: -0.15rem;
+  right: 0.05rem;
+}
+
+.new-sparkle::after {
+  bottom: -0.05rem;
+  left: 0.05rem;
+  animation-delay: 0.85s;
+}
+
+@keyframes new-sparkle-spin {
+  from {
+    transform: rotate(22deg);
+  }
+  to {
+    transform: rotate(382deg);
+  }
+}
+
+@keyframes new-sparkle-glint {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.7);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .new-sparkle-star {
+    animation: new-sparkle-spin 9s linear infinite;
+  }
+
+  .new-sparkle::before,
+  .new-sparkle::after {
+    animation: new-sparkle-glint 1.7s ease-in-out infinite;
+  }
 }
 
 @media (max-width: 640px) {

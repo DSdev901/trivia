@@ -6,6 +6,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { writeBriefingStamp } from "./lib/briefing-stamp.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const FILE = path.join(ROOT, "data", "current-events", "briefing.json");
@@ -91,4 +92,5 @@ const payload = {
 };
 
 await writeFile(FILE, `${JSON.stringify(payload, null, 2)}\n`);
+await writeBriefingStamp(payload.generatedAt);
 console.log(`  [briefing] validated ${items.length} stories`);

@@ -9,6 +9,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { applyMergeGroups } from "../briefing.js";
+import { writeBriefingStamp } from "./lib/briefing-stamp.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "current-events", "briefing.json");
@@ -87,6 +88,7 @@ const payload = {
 const json = `${JSON.stringify(payload, null, 2)}\n`;
 await writeFile(inputPath, json);
 await writeFile(OUT, json);
+await writeBriefingStamp(payload.generatedAt);
 console.log(
   `  [briefing] Haiku combover merged ${merged} extra card(s) (${before} → ${items.length})`
 );

@@ -8,6 +8,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { buildBriefing } from "../briefing.js";
+import { writeBriefingStamp } from "./lib/briefing-stamp.mjs";
 import { enrichThinSummaries } from "./lib/summaries.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -70,6 +71,7 @@ export async function writeBriefingFile({
     }),
   };
   await writeFile(OUT, `${JSON.stringify(payload, null, 2)}\n`);
+  await writeBriefingStamp(payload.generatedAt);
   console.log(
     `  [briefing] wrote ${payload.items.length} ranked stories (${source})`
   );

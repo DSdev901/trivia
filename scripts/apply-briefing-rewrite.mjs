@@ -13,6 +13,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { writeBriefingStamp } from "./lib/briefing-stamp.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "current-events", "briefing.json");
@@ -166,6 +167,7 @@ const payload = {
 };
 
 await writeFile(OUT, `${JSON.stringify(payload, null, 2)}\n`);
+await writeBriefingStamp(payload.generatedAt);
 const short =
   used < expected ? ` (salvaged ${used} of ${expected})` : "";
 console.log(
