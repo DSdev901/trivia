@@ -464,6 +464,58 @@ body.is-home .brand-logo--badge {
   }
 }
 
+.home-retro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem 1.15rem;
+  max-width: 40rem;
+  margin: 1.35rem auto 0;
+  text-align: center;
+}
+
+.hit-counter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.hit-counter-digits {
+  display: inline-flex;
+  gap: 0.1rem;
+  padding: 0.2rem 0.28rem;
+  background: var(--ink);
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.hit-counter-digits span {
+  display: inline-block;
+  width: 0.72rem;
+  font-family: ui-monospace, "Cascadia Mono", "Courier New", monospace;
+  font-size: 0.92rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  color: #e4b12a;
+  text-shadow: 0 0 6px rgba(228, 177, 42, 0.4);
+}
+
+.home-briefing-ran {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
 .crumbs {
   display: flex;
   flex-wrap: wrap;

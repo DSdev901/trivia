@@ -244,17 +244,57 @@ function categoryMarkHtml(category) {
   return `<span class="category-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false">${inner}</svg></span>`;
 }
 
+const HIT_STORE = "trivia-hit-count";
+const HIT_OFFSET = 901;
+
+let briefingStampPromise;
+
+function loadBriefingStamp() {
+  if (!briefingStampPromise) {
+    briefingStampPromise = loadJSON(
+      "data/current-events/briefing-stamp.json"
+    ).catch(() => null);
+  }
+  return briefingStampPromise;
+}
+
+function formatBriefingDay(iso) {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleDateString(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  });
+}
+
+function nextHitCount() {
+  let n = 0;
+  try {
+    n = Number(localStorage.getItem(HIT_STORE) || 0);
+    if (!Number.isFinite(n) || n < 0) n = 0;
+    n += 1;
+    localStorage.setItem(HIT_STORE, String(n));
+  } catch {
+    n += 1;
+  }
+  return HIT_OFFSET + n;
+}
+
+function hitCounterHtml(count) {
+  const digits = String(Math.max(0, count)).padStart(6, "0");
+  const cells = [...digits]
+    .map((d) => `<span>${d}</span>`)
+    .join("");
+  return `<p class="hit-counter"><span class="hit-counter-kicker">You are visitor</span> <span class="hit-counter-digits" aria-label="${count}">${cells}</span></p>`;
+}
+
 function currentEventsSparkleHtml() {
   return `<span class="new-sparkle" aria-label="New briefing today"><span class="new-sparkle-label" aria-hidden="true">New Briefing today</span></span>`;
 }
 
-async function decorateCurrentEventsSparkle() {
-  try {
-    const stamp = await loadJSON("data/current-events/briefing-stamp.json");
-    if (!isSameLocalDay(stamp?.generatedAt)) return;
-  } catch {
-    return;
-  }
+function decorateCurrentEventsSparkle(stamp) {
+  if (!isSameLocalDay(stamp?.generatedAt)) return;
   const card = els.categories.querySelector(
     `a.category-card[href="${href(["current-events"])}"]`
   );
@@ -263,6 +303,16 @@ async function decorateCurrentEventsSparkle() {
   const title = card.querySelector("h2");
   if (title) title.insertAdjacentHTML("afterend", currentEventsSparkleHtml());
   else card.insertAdjacentHTML("beforeend", currentEventsSparkleHtml());
+}
+
+async function decorateHomeExtras() {
+  const stamp = await loadBriefingStamp();
+  decorateCurrentEventsSparkle(stamp);
+  const ran = els.categories.querySelector(".home-briefing-ran");
+  const day = formatBriefingDay(stamp?.generatedAt);
+  if (!ran || !day) return;
+  ran.hidden = false;
+  ran.textContent = `Last briefing: ${day}`;
 }
 
 function renderCategories(categories) {
@@ -281,8 +331,12 @@ function renderCategories(categories) {
         )
         .join("")}
     </div>
+    <div class="home-retro">
+      ${hitCounterHtml(nextHitCount())}
+      <p class="home-briefing-ran" hidden></p>
+    </div>
   `;
-  void decorateCurrentEventsSparkle();
+  void decorateHomeExtras();
 }
 
 function openCategory(id) {
