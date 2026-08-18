@@ -332,7 +332,10 @@ body.is-home .brand-logo--badge {
 .home-menu .category-card--feature {
   position: relative;
   grid-column: 1 / -1;
-  padding-right: 4rem;
+}
+
+.home-menu .category-card--fresh {
+  padding-right: 9.25rem;
 }
 
 .home-menu .category-card {
@@ -350,33 +353,18 @@ body.is-home .brand-logo--badge {
 
 .new-sparkle {
   position: absolute;
-  top: 0.55rem;
-  right: 0.6rem;
-  width: 3.2rem;
-  height: 3.2rem;
-  display: grid;
-  place-items: center;
-  pointer-events: none;
+  top: 0.7rem;
+  right: 0.65rem;
   z-index: 1;
-}
-
-.new-sparkle-star,
-.new-sparkle-star::before {
-  position: absolute;
-  inset: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.32rem 0.62rem 0.34rem;
+  pointer-events: none;
   background: linear-gradient(160deg, #e8c04a 0%, var(--gold) 55%, #8f6808 100%);
+  border-radius: 5px;
   box-shadow: 0 2px 8px rgba(184, 134, 11, 0.38);
-}
-
-.new-sparkle-star {
-  transform: rotate(22deg);
-  border-radius: 4px;
-}
-
-.new-sparkle-star::before {
-  content: "";
-  transform: rotate(45deg);
-  border-radius: 4px;
+  transform: rotate(-6deg);
 }
 
 .new-sparkle-label {
@@ -385,10 +373,12 @@ body.is-home .brand-logo--badge {
   font-family: var(--font-display);
   font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
   text-transform: uppercase;
   color: #fff;
   text-shadow: 0 1px 0 rgba(58, 42, 0, 0.35);
+  white-space: nowrap;
 }
 
 .new-sparkle::before,
@@ -396,29 +386,20 @@ body.is-home .brand-logo--badge {
   content: "✦";
   position: absolute;
   color: #fff8d4;
-  font-size: 0.62rem;
+  font-size: 0.58rem;
   line-height: 1;
   text-shadow: 0 0 6px rgba(255, 236, 160, 0.9);
 }
 
 .new-sparkle::before {
-  top: -0.15rem;
-  right: 0.05rem;
+  top: -0.35rem;
+  right: -0.15rem;
 }
 
 .new-sparkle::after {
-  bottom: -0.05rem;
-  left: 0.05rem;
+  bottom: -0.28rem;
+  left: -0.12rem;
   animation-delay: 0.85s;
-}
-
-@keyframes new-sparkle-spin {
-  from {
-    transform: rotate(22deg);
-  }
-  to {
-    transform: rotate(382deg);
-  }
 }
 
 @keyframes new-sparkle-glint {
@@ -434,10 +415,6 @@ body.is-home .brand-logo--badge {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .new-sparkle-star {
-    animation: new-sparkle-spin 9s linear infinite;
-  }
-
   .new-sparkle::before,
   .new-sparkle::after {
     animation: new-sparkle-glint 1.7s ease-in-out infinite;
@@ -447,6 +424,20 @@ body.is-home .brand-logo--badge {
 @media (max-width: 640px) {
   .home-menu {
     grid-template-columns: 1fr;
+  }
+
+  .home-menu .category-card--fresh {
+    padding-right: 7.75rem;
+  }
+
+  .new-sparkle {
+    top: 0.55rem;
+    right: 0.5rem;
+    padding: 0.28rem 0.5rem 0.3rem;
+  }
+
+  .new-sparkle-label {
+    font-size: 0.62rem;
   }
 }
 

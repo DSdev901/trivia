@@ -217,8 +217,13 @@ function isSameLocalDay(iso) {
   );
 }
 
+function categoryExtraHtml(category) {
+  if (category?.id !== "current-events") return "";
+  return `<p>Live news feed, and weekly Tuesday briefing</p>`;
+}
+
 function currentEventsSparkleHtml() {
-  return `<span class="new-sparkle" aria-label="Updated today"><span class="new-sparkle-star" aria-hidden="true"></span><span class="new-sparkle-label" aria-hidden="true">New!</span></span>`;
+  return `<span class="new-sparkle" aria-label="New briefing today"><span class="new-sparkle-label" aria-hidden="true">New Briefing today</span></span>`;
 }
 
 async function decorateCurrentEventsSparkle() {
@@ -232,6 +237,7 @@ async function decorateCurrentEventsSparkle() {
     `a.category-card[href="${href(["current-events"])}"]`
   );
   if (!card || card.querySelector(".new-sparkle")) return;
+  card.classList.add("category-card--fresh");
   card.insertAdjacentHTML("beforeend", currentEventsSparkleHtml());
 }
 
@@ -244,6 +250,7 @@ function renderCategories(categories) {
         <a class="category-card${i === 0 ? " category-card--feature" : ""}" href="${href([c.id])}">
           <h2>${c.name}</h2>
           <p>${categoryKicker(c)}</p>
+          ${categoryExtraHtml(c)}
           <span class="meta">${categoryMetaLabel(c)}</span>
         </a>`
         )
