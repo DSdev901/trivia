@@ -387,12 +387,19 @@ body.is-home .brand-logo--badge {
   box-sizing: border-box;
 }
 
+.home-menu .category-card-meta {
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .home-menu .home-briefing-ran {
   margin: 0 0 0 auto;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
+  white-space: nowrap;
   color: var(--ink-soft);
 }
 
@@ -490,6 +497,14 @@ body.is-home .brand-logo--badge {
 
   .home-menu a.category-card--fresh {
     column-gap: 0.35rem;
+  }
+
+  .home-menu .category-card-meta {
+    gap: 0.3rem;
+  }
+
+  .home-menu .home-briefing-ran {
+    font-size: 0.55rem;
   }
 
   .new-sparkle {
