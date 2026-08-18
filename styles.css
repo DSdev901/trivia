@@ -125,7 +125,7 @@ body::after {
 .brand-logo--badge {
   width: calc(6.5rem * 4 / 3);
   height: calc(7.25rem * 4 / 3);
-  margin-left: 1.35rem;
+  margin-left: 0.35rem;
   border-radius: 0;
   object-fit: contain;
   background: transparent;
@@ -191,6 +191,12 @@ body::after {
     background-repeat: repeat;
     background-position: top left;
     border-bottom-color: color-mix(in srgb, var(--stripe) 70%, transparent);
+  }
+
+  body:not(.is-home) .top {
+    flex-wrap: nowrap;
+    gap: 0.45rem;
+    padding-left: max(0.55rem, env(safe-area-inset-left));
   }
 
   body.is-home .app {
