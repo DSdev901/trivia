@@ -23,7 +23,15 @@
       crossorigin
     />
   </head>
-  <body>
+  <body class="is-home">
+    <script>
+      (function () {
+        var raw = String(location.hash || "")
+          .replace(/^#/, "")
+          .replace(/^\/+|\/+$/g, "");
+        if (raw) document.body.classList.remove("is-home");
+      })();
+    </script>
     <div class="app">
       <header class="top">
         <div class="brand">

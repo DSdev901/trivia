@@ -1779,6 +1779,7 @@ els.backBtn.addEventListener("click", goBack);
 els.homeBtn.addEventListener("click", () => goToHash([]));
 
 async function init() {
+  document.body.classList.toggle("is-home", !parseHash().category);
   try {
     const [data, stamp] = await Promise.all([
       loadJSON("data/categories.json"),
