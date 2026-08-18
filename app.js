@@ -117,6 +117,7 @@ function show(view) {
   }
   els.nav.hidden = view === "categories";
   els.backBtn.hidden = view === "categories";
+  document.body.classList.toggle("is-home", view === "categories");
   if (changed) scrollPageTop();
 }
 
@@ -184,15 +185,36 @@ function categoryMetaLabel(category) {
   return `${category.batchCount} sections`;
 }
 
+function categoryKicker(category) {
+  switch (category?.id) {
+    case "current-events":
+      return "Sports, entertainment, and world stories";
+    case "netflix":
+      return "New originals from the last four weeks";
+    case "prior-saucer":
+      return "Questions from uploaded photos";
+    case "presidents":
+      return "All 47 presidents — facts and quizzes";
+    case "periodic-table":
+      return "All 118 elements — tours and quizzes";
+    case "geography":
+      return "Pin maps, capitals, and flags";
+    case "movies":
+      return "15 rounds of pub-quiz film questions";
+    default:
+      return category?.description || "";
+  }
+}
+
 function renderCategories(categories) {
   els.categories.innerHTML = `
-    <div class="grid">
+    <div class="home-menu">
       ${categories
         .map(
-          (c) => `
-        <a class="category-card" href="${href([c.id])}">
+          (c, i) => `
+        <a class="category-card${i === 0 ? " category-card--feature" : ""}" href="${href([c.id])}">
           <h2>${c.name}</h2>
-          <p>${c.description}</p>
+          <p>${categoryKicker(c)}</p>
           <span class="meta">${categoryMetaLabel(c)}</span>
         </a>`
         )
