@@ -1,10 +1,18 @@
 /** Browser text-to-speech helpers for conversational study readouts. */
 
+import {
+  NATURAL_VOICE_URI,
+  stopNaturalAudio,
+  unlockNaturalAudio,
+  speakNaturalText,
+} from "./natural-tts.js";
+
 const VOICE_KEY = "trivia-helper-voice-uri";
 const RATE_KEY = "trivia-helper-voice-rate";
 const LOOP_KEY = "trivia-helper-fact-loops";
 const DANIEL_DEFAULT_FLAG = "trivia-helper-default-daniel-v1";
 export const ON_DEVICE_VOICE_URI = "on-device";
+export { NATURAL_VOICE_URI };
 
 let voicesReady = null;
 let cachedVoices = [];
@@ -194,6 +202,7 @@ function systemDefaultVoice() {
 }
 
 function listedVoiceOrDefault(ranked, preferredUri) {
+  if (preferredUri === NATURAL_VOICE_URI) return null;
   if (preferredUri === ON_DEVICE_VOICE_URI) return systemDefaultVoice();
   if (!ranked.length) return null;
   return (matchRankedVoice(ranked, preferredUri) || findDaniel(ranked) || ranked[0]).voice;
@@ -235,7 +244,7 @@ export async function getDefaultBrowserVoiceUri() {
 
 export function isUsableVoiceUri(ranked, uri) {
   if (!uri) return false;
-  if (uri === ON_DEVICE_VOICE_URI) return true;
+  if (uri === ON_DEVICE_VOICE_URI || uri === NATURAL_VOICE_URI) return true;
   return ranked.some((v) => v.uri === uri);
 }
 
@@ -246,7 +255,7 @@ function escapeOption(value) {
     .replace(/"/g, "&quot;");
 }
 
-/** Daniel first (default), then the device’s system voice, then the rest. */
+/** Daniel first (default), then Natural, then the device’s system voice, then the rest. */
 export function voiceSelectOptionsHtml(ranked, selectedUri) {
   const daniel = findDaniel(ranked);
   const others = ranked.filter((v) => v !== daniel);
@@ -254,6 +263,10 @@ export function voiceSelectOptionsHtml(ranked, selectedUri) {
   if (daniel) {
     choices.push({ uri: daniel.uri, label: `${daniel.name} (default)` });
   }
+  choices.push({
+    uri: NATURAL_VOICE_URI,
+    label: "Natural voice",
+  });
   choices.push({
     uri: ON_DEVICE_VOICE_URI,
     label: "On-device voice",
@@ -581,6 +594,7 @@ let browserSpeakSession = 0;
 let wakeLockSentinel = null;
 let speechKeepaliveActive = false;
 let speechKeepaliveOwner = 0;
+let naturalPlaybackActive = false;
 let keepaliveAudio = null;
 let keepaliveAudioUrl = null;
 let keepaliveAudioContext = null;
@@ -612,6 +626,10 @@ function synthIsBusy() {
  * Do not queue a dummy utterance — a space-only speak can stall iOS forever.
  */
 export function unlockSpeech() {
+  if (getSavedVoiceUri() === NATURAL_VOICE_URI) {
+    unlockNaturalAudio();
+    return;
+  }
   if (!speechSupported()) return;
   try {
     window.speechSynthesis.resume();
@@ -744,6 +762,10 @@ function stopPlaybackKeepalive() {
 
 async function ensureKeepalivePlaying() {
   if (!speechKeepaliveActive) return;
+  if (naturalPlaybackActive) {
+    setMediaSessionPlaying(true);
+    return;
+  }
   try {
     if (window.speechSynthesis?.paused) window.speechSynthesis.resume();
   } catch {
@@ -836,6 +858,8 @@ export function speechSupported() {
 
 export function stopSpeech() {
   browserSpeakSession += 1;
+  naturalPlaybackActive = false;
+  stopNaturalAudio();
   void endSpeechKeepalive();
   if (!speechSupported()) return;
   const synth = window.speechSynthesis;
@@ -983,33 +1007,50 @@ export async function speakLines(lines, opts = {}) {
   }
   stopSpeech();
   const session = browserSpeakSession;
-  // Must run in the same tap as Listen — Brave/Safari iOS drop TTS after await.
-  unlockSpeech();
-  if (isIOSWebKit()) {
+  const preferred = opts.voiceUri || getSavedVoiceUri();
+  const usingNatural = preferred === NATURAL_VOICE_URI;
+  // Must run in the same tap as Listen — Brave/Safari iOS drop audio after await.
+  if (usingNatural) unlockNaturalAudio();
+  else unlockSpeech();
+
+  naturalPlaybackActive = usingNatural;
+  if (isIOSWebKit() || usingNatural) {
     speechKeepaliveActive = true;
     speechKeepaliveOwner = session;
     void acquireWakeLock(session);
+    if (usingNatural) setMediaSessionPlaying(true);
   } else {
     void beginSpeechKeepalive(session);
   }
 
-  const preferred = opts.voiceUri || getSavedVoiceUri();
-  const voice = isIOSWebKit()
-    ? pickVoiceNow(preferred)
-    : await resolveVoice(preferred);
-  if (session !== browserSpeakSession) {
-    opts.onEnd?.();
-    return;
-  }
   const rate = opts.rate ?? getSavedRate();
   const loops = Math.max(1, Math.min(20, Number(opts.loops) || 1));
   const loopPadMs = opts.loopPadMs ?? 7000;
+  const stillThis = () => session === browserSpeakSession;
 
-  if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+  if (!usingNatural && window.speechSynthesis.paused) window.speechSynthesis.resume();
+
+  const speakChunk = usingNatural
+    ? (text) =>
+        speakNaturalText(text, {
+          rate,
+          shouldContinue: stillThis,
+          onStatus: opts.onStatus,
+        })
+    : (text, voice) => speakUtterance(text, voice, rate, session);
+
+  let voice = null;
+  if (!usingNatural) {
+    voice = isIOSWebKit() ? pickVoiceNow(preferred) : await resolveVoice(preferred);
+    if (!stillThis()) {
+      opts.onEnd?.();
+      return;
+    }
+  }
 
   try {
     for (let loop = 0; loop < loops; loop += 1) {
-      if (session !== browserSpeakSession) break;
+      if (!stillThis()) break;
 
       if (loop > 0) {
         opts.onStatus?.(
@@ -1025,25 +1066,25 @@ export async function speakLines(lines, opts = {}) {
       }
 
       for (let i = 0; i < lines.length; i += 1) {
-        if (session !== browserSpeakSession) break;
+        if (!stillThis()) break;
         opts.onStartLine?.(i);
         const chunks = chunkForSpeech(lines[i]);
         for (let c = 0; c < chunks.length; c += 1) {
-          if (session !== browserSpeakSession) break;
+          if (!stillThis()) break;
           const backgrounded =
             typeof document !== "undefined" && document.visibilityState === "hidden";
           if (backgrounded) {
             void ensureKeepalivePlaying();
           }
-          const keepGoing = await speakUtterance(chunks[c], voice, rate, session);
-          if (!keepGoing || session !== browserSpeakSession) break;
+          const keepGoing = await speakChunk(chunks[c], voice);
+          if (!keepGoing || !stillThis()) break;
           if (c < chunks.length - 1) {
             const gap = backgrounded ? 40 : 140;
             const ok = await wait(gap, session);
             if (!ok) break;
           }
         }
-        if (session !== browserSpeakSession) break;
+        if (!stillThis()) break;
         if (i < lines.length - 1) {
           const backgrounded =
             typeof document !== "undefined" && document.visibilityState === "hidden";
@@ -1054,12 +1095,19 @@ export async function speakLines(lines, opts = {}) {
       }
     }
   } finally {
+    if (usingNatural) naturalPlaybackActive = false;
     opts.onEnd?.();
     await endSpeechKeepalive(session);
+    if (usingNatural) stopNaturalAudio();
   }
 }
 
 export function voiceQualityTip(rankedVoices) {
+  if (getSavedVoiceUri() === NATURAL_VOICE_URI) {
+    return isIOSWebKit()
+      ? "Natural voice downloads once (~60 MB). Turn the silent switch off and use the volume buttons."
+      : "Natural voice downloads once (~60 MB), then works in this browser. First Listen can take a minute.";
+  }
   if (isIOSWebKit()) {
     return "On iPhone, turn the silent switch off and use the media volume buttons. If Brave stays quiet, try Safari.";
   }
