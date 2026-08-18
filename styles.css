@@ -335,14 +335,14 @@ body.is-home .brand-logo--badge {
   margin-left: 0;
 }
 
-/* Man's left eye (viewer's right), tucked under the hat brim. */
+/* Man's left eye (viewer's right): a wink under the white brow. */
 body.is-home .brand-eye-glint {
   display: block;
   position: absolute;
-  left: 58.9%;
-  top: 39.9%;
-  width: 3.35%;
-  height: 3.35%;
+  left: 57.9%;
+  top: 43.3%;
+  width: 2.15%;
+  height: 2.15%;
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 1;
@@ -411,13 +411,13 @@ body.is-home .brand-eye-glint::after {
   padding: 3px;
   gap: 3px;
   overflow: hidden;
-  background: #c0c0c0;
+  background: var(--paper-deep);
   border-radius: 0;
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
-  border-right: 2px solid #404040;
-  border-bottom: 2px solid #404040;
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.28);
+  border-right: 2px solid var(--ink-soft);
+  border-bottom: 2px solid var(--ink-soft);
+  box-shadow: 2px 2px 0 rgba(26, 35, 50, 0.16);
 }
 
 .home-ticker-kicker {
@@ -427,16 +427,16 @@ body.is-home .brand-eye-glint::after {
   align-items: center;
   justify-content: center;
   padding: 0.28rem 0.22rem;
-  background: #000080;
-  color: #fff;
-  font-family: Tahoma, "MS Sans Serif", "Segoe UI", sans-serif;
+  background: var(--accent);
+  color: var(--paper);
+  font-family: var(--font-body);
   font-size: 0.58rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   line-height: 1.15;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0 #000;
+  text-shadow: 1px 1px 0 var(--accent-deep);
   white-space: normal;
   z-index: 1;
 }
@@ -446,11 +446,11 @@ body.is-home .brand-eye-glint::after {
   flex: 1 1 auto;
   min-width: 0;
   overflow: hidden;
-  background: #000;
-  border-top: 2px solid #808080;
-  border-left: 2px solid #808080;
-  border-right: 2px solid #dfdfdf;
-  border-bottom: 2px solid #dfdfdf;
+  background: var(--ink);
+  border-top: 2px solid var(--ink-soft);
+  border-left: 2px solid var(--ink-soft);
+  border-right: 2px solid var(--stripe);
+  border-bottom: 2px solid var(--stripe);
 }
 
 .home-ticker-track::after {
@@ -460,7 +460,7 @@ body.is-home .brand-eye-glint::after {
   pointer-events: none;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0.06) 0 1px,
+    rgba(232, 192, 74, 0.07) 0 1px,
     transparent 1px 3px
   );
 }
@@ -510,9 +510,9 @@ body.is-home .brand-eye-glint::after {
 .home-ticker-next {
   padding: 0.06rem 0.28rem 0.08rem;
   border-radius: 0;
-  background: #c00;
-  color: #fff;
-  font-family: Tahoma, "MS Sans Serif", "Segoe UI", sans-serif;
+  background: var(--gold);
+  color: #1a1400;
+  font-family: var(--font-body);
   font-size: 0.52rem;
   letter-spacing: 0.08em;
   text-shadow: none;
