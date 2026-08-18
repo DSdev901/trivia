@@ -370,8 +370,53 @@ async function decorateHomeExtras() {
   ran.textContent = `Last briefing: ${day}`;
 }
 
+const TRIVIA_NIGHTS = [
+  { month: 7, day: 28, theme: "Red, White & Blue Trivia" },
+  { month: 8, day: 25, theme: "SpongeBob SquarePants" },
+  { month: 9, day: 29, theme: "Harrison Ford Movies" },
+  { month: 10, day: 27, theme: "Harry Potter Movies" },
+  { month: 11, day: 24, theme: "Lord of the Rings Movies" },
+  { month: 12, day: 29, theme: "Hunger Games Movies" },
+];
+
+function triviaNightKey(night, year) {
+  return new Date(year, night.month - 1, night.day).getTime();
+}
+
+function nextTriviaNightIndex(now = new Date()) {
+  const year = now.getFullYear();
+  const start = new Date(year, now.getMonth(), now.getDate()).getTime();
+  const idx = TRIVIA_NIGHTS.findIndex((n) => triviaNightKey(n, year) >= start);
+  return idx < 0 ? 0 : idx;
+}
+
+function homeTickerItemsHtml() {
+  const next = nextTriviaNightIndex();
+  const items = TRIVIA_NIGHTS.map((n, i) => {
+    const label = `${n.month}/${n.day} ${n.theme}`;
+    const upcoming = i === next ? `<span class="home-ticker-next">Next</span>` : "";
+    return `<span class="home-ticker-item">${upcoming}${escapeHtml(label)}</span>`;
+  }).join('<span class="home-ticker-dot" aria-hidden="true">★</span>');
+  return `<span class="home-ticker-item">Flying Saucer Trivia Tuesdays</span><span class="home-ticker-dot" aria-hidden="true">★</span>${items}`;
+}
+
+function homeTickerHtml() {
+  const strip = homeTickerItemsHtml();
+  return `
+    <div class="home-ticker" role="region" aria-label="Flying Saucer Trivia Tuesdays">
+      <p class="home-ticker-kicker">Tonight's board</p>
+      <div class="home-ticker-track">
+        <div class="home-ticker-copy">
+          <div class="home-ticker-seq">${strip}</div>
+          <div class="home-ticker-seq" aria-hidden="true">${strip}</div>
+        </div>
+      </div>
+    </div>`;
+}
+
 function renderCategories(categories) {
   els.categories.innerHTML = `
+    ${homeTickerHtml()}
     <div class="home-menu">
       ${categories
         .map(
