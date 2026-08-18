@@ -298,7 +298,9 @@ async function bumpHitCount() {
   const base = await apiBaseUrl();
   if (!base) return cachedHitCount();
   try {
-    const res = await fetch(`${base}/api/hits`, { method: "POST" });
+    const res = await fetch(`${base}/api/hits`, {
+      method: isLocalHost() ? "GET" : "POST",
+    });
     if (!res.ok) return cachedHitCount();
     const data = await res.json();
     const n = Number(data.count);

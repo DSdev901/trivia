@@ -33,6 +33,13 @@ const upload = multer({
   limits: { fileSize: MAX_UPLOAD_BYTES, files: 1 },
 });
 
+const HIT_SKIP_IPS = new Set(
+  String(process.env.HIT_SKIP_IPS || "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean)
+);
+
 function originAllowed(origin) {
   if (!origin) return true;
   if (!ALLOWED_ORIGINS.length) return true;
@@ -75,7 +82,14 @@ function clientIp(req) {
   const fwd = String(req.get("x-forwarded-for") || "")
     .split(",")[0]
     .trim();
-  return (fwd || req.ip || req.socket?.remoteAddress || "unknown").slice(0, 64);
+  let ip = fwd || req.ip || req.socket?.remoteAddress || "unknown";
+  if (ip.startsWith("::ffff:")) ip = ip.slice(7);
+  return ip.slice(0, 64);
+}
+
+function skipHitIp(ip) {
+  if (!ip || ip === "unknown") return false;
+  return HIT_SKIP_IPS.has(ip) || HIT_SKIP_IPS.has(`::ffff:${ip}`);
 }
 
 async function currentHitCount() {
@@ -87,6 +101,9 @@ async function currentHitCount() {
 }
 
 async function bumpHitCount(ip) {
+  if (skipHitIp(ip)) {
+    return { count: await currentHitCount(), incremented: false };
+  }
   const { rowCount } = await query(
     `INSERT INTO hit_rate (ip, last_at) VALUES ($1, NOW())
      ON CONFLICT (ip) DO UPDATE
