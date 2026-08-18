@@ -449,18 +449,18 @@ body.is-home .brand-logo--badge {
   }
 
   .home-menu .category-card--fresh h2 {
-    padding-right: 0;
+    padding-right: 6.75rem;
   }
 
   .new-sparkle {
-    position: static;
-    margin: 0.4rem 0 0.15rem;
-    transform: rotate(-4deg);
-    padding: 0.28rem 0.5rem 0.3rem;
+    top: 0.5rem;
+    right: 0.45rem;
+    padding: 0.24rem 0.45rem 0.26rem;
+    transform: rotate(-5deg);
   }
 
   .new-sparkle-label {
-    font-size: 0.62rem;
+    font-size: 0.58rem;
   }
 }
 
