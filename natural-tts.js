@@ -101,7 +101,7 @@ function friendlyError(err) {
     return "Natural voice couldn’t run on this device. Try Daniel or On-device voice.";
   }
   if (/download|fetch|network|failed to fetch|status/i.test(msg)) {
-    return "Couldn’t download the natural voice. Check your connection and try again.";
+    return "Couldn’t load the natural voice. Check your connection and try again.";
   }
   return "Natural voice couldn’t run on this device. Try Daniel or On-device voice.";
 }
@@ -119,18 +119,18 @@ export async function ensureNaturalModel(onStatus) {
         cached = false;
       }
       if (!cached) {
-        onStatus?.("Downloading natural voice…");
+        onStatus?.("Loading natural voice…");
         await download(MODEL_ID, (prog) => {
           const total = Number(prog?.total) || 0;
           const loaded = Number(prog?.loaded) || 0;
           if (total > 0) {
             const pct = Math.min(99, Math.round((loaded / total) * 100));
-            onStatus?.(`Downloading natural voice… ${pct}%`);
+            onStatus?.(`Loading natural voice… ${pct}%`);
           } else if (loaded > 0) {
             const mb = Math.max(1, Math.round(loaded / 1048576));
-            onStatus?.(`Downloading natural voice… ${mb} MB`);
+            onStatus?.(`Loading natural voice… ${mb} MB`);
           } else {
-            onStatus?.("Downloading natural voice…");
+            onStatus?.("Loading natural voice…");
           }
         });
       }
