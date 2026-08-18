@@ -372,25 +372,23 @@ async function decorateHomeExtras() {
 
 function renderCategories(categories) {
   els.categories.innerHTML = `
-    <div class="home-well">
-      <div class="home-menu">
-        ${categories
-          .map(
-            (c, i) => `
-          <a class="category-card${i === 0 ? " category-card--feature" : ""}" href="${href([c.id])}">
-            ${categoryMarkHtml(c)}
-            <h2>${c.name}</h2>
-            <p>${categoryKicker(c)}</p>
-            ${categoryExtraHtml(c)}
-            ${categoryMetaHtml(c)}
-          </a>`
-          )
-          .join("")}
-      </div>
-      <div class="home-retro">
-        ${hitCounterHtml(cachedHitCount())}
-        ${homeWebBadgesHtml()}
-      </div>
+    <div class="home-menu">
+      ${categories
+        .map(
+          (c, i) => `
+        <a class="category-card${i === 0 ? " category-card--feature" : ""}" href="${href([c.id])}">
+          ${categoryMarkHtml(c)}
+          <h2>${c.name}</h2>
+          <p>${categoryKicker(c)}</p>
+          ${categoryExtraHtml(c)}
+          ${categoryMetaHtml(c)}
+        </a>`
+        )
+        .join("")}
+    </div>
+    <div class="home-retro">
+      ${hitCounterHtml(cachedHitCount())}
+      ${homeWebBadgesHtml()}
     </div>
   `;
   void decorateHomeExtras();
