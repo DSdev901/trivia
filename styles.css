@@ -334,11 +334,8 @@ body.is-home .brand-logo--badge {
   grid-column: 1 / -1;
 }
 
-.home-menu .category-card--fresh {
-  padding-right: 9.25rem;
-}
-
 .home-menu .category-card {
+  position: relative;
   height: 100%;
   background: rgba(255, 255, 255, 0.94);
 }
@@ -349,6 +346,31 @@ body.is-home .brand-logo--badge {
 
 .home-menu .category-card--feature h2 {
   font-size: 1.55rem;
+}
+
+.home-menu .category-card--fresh h2 {
+  padding-right: 8.75rem;
+}
+
+.home-menu .category-card .meta {
+  padding-right: 1.85rem;
+}
+
+.category-mark {
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  color: var(--accent);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.category-mark svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .new-sparkle {
@@ -426,13 +448,14 @@ body.is-home .brand-logo--badge {
     grid-template-columns: 1fr;
   }
 
-  .home-menu .category-card--fresh {
-    padding-right: 7.75rem;
+  .home-menu .category-card--fresh h2 {
+    padding-right: 0;
   }
 
   .new-sparkle {
-    top: 0.55rem;
-    right: 0.5rem;
+    position: static;
+    margin: 0.4rem 0 0.15rem;
+    transform: rotate(-4deg);
     padding: 0.28rem 0.5rem 0.3rem;
   }
 

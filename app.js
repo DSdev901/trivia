@@ -222,6 +222,28 @@ function categoryExtraHtml(category) {
   return `<p>Live news feed, and weekly Tuesday briefing</p>`;
 }
 
+function categoryMarkHtml(category) {
+  const icons = {
+    "current-events":
+      '<rect x="4" y="5" width="16" height="14" rx="1.5"/><path d="M7.5 9h5M7.5 12h9M7.5 15h7"/>',
+    netflix:
+      '<rect x="4" y="5" width="16" height="14" rx="2.2"/><path d="M10 8.4v7.2L16.5 12z"/>',
+    "prior-saucer":
+      '<path d="M8.2 8.4h1.8l.7-1.3h2.6l.7 1.3h1.8A2 2 0 0 1 17.8 10.4v5.1a2 2 0 0 1-2 2H8.2a2 2 0 0 1-2-2v-5.1a2 2 0 0 1 2-2z"/><circle cx="12" cy="12.8" r="2.2"/>',
+    presidents:
+      '<path d="M5.5 18.2V9.4L12 5.8l6.5 3.6v8.8"/><path d="M9 18.2v-4h6v4M4.5 18.2h15"/>',
+    "periodic-table":
+      '<path d="M9.4 5h5.2l.8 1.7h2.1A1.6 1.6 0 0 1 19.1 8.3v1.8c0 3.4-2.6 6.3-7.1 7.7-4.5-1.4-7.1-4.3-7.1-7.7V8.3A1.6 1.6 0 0 1 6.5 6.7h2.1z"/><path d="M9.5 11.4h5M12 8.9v5.8"/>',
+    geography:
+      '<circle cx="12" cy="12" r="7"/><path d="M12 5v14M5 12h14M7.3 7.4c1.7 1.3 3.2 1.3 4.7 0s3.1-1.3 4.7 0M7.3 16.6c1.7-1.3 3.2-1.3 4.7 0s3.1 1.3 4.7 0"/>',
+    movies:
+      '<path d="M5.5 9.3h13v9.2h-13z"/><path d="M5.5 9.3 18.5 6v3.3"/><path d="M8.3 12.4h7.4M8.3 15.4h5.5"/>',
+  };
+  const inner = icons[category?.id];
+  if (!inner) return "";
+  return `<span class="category-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false">${inner}</svg></span>`;
+}
+
 function currentEventsSparkleHtml() {
   return `<span class="new-sparkle" aria-label="New briefing today"><span class="new-sparkle-label" aria-hidden="true">New Briefing today</span></span>`;
 }
@@ -238,7 +260,9 @@ async function decorateCurrentEventsSparkle() {
   );
   if (!card || card.querySelector(".new-sparkle")) return;
   card.classList.add("category-card--fresh");
-  card.insertAdjacentHTML("beforeend", currentEventsSparkleHtml());
+  const title = card.querySelector("h2");
+  if (title) title.insertAdjacentHTML("afterend", currentEventsSparkleHtml());
+  else card.insertAdjacentHTML("beforeend", currentEventsSparkleHtml());
 }
 
 function renderCategories(categories) {
@@ -248,6 +272,7 @@ function renderCategories(categories) {
         .map(
           (c, i) => `
         <a class="category-card${i === 0 ? " category-card--feature" : ""}" href="${href([c.id])}">
+          ${categoryMarkHtml(c)}
           <h2>${c.name}</h2>
           <p>${categoryKicker(c)}</p>
           ${categoryExtraHtml(c)}
