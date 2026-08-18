@@ -13,6 +13,7 @@ import {
   stopSpeech,
   unlockSpeech,
   voiceQualityTip,
+  voiceSelectOptionsHtml,
 } from "./speech.js";
 import { isLocalHost } from "./env.js";
 import { buildBriefing, highlightPeople, BRIEFING_FEATURED, rankBriefingItems } from "./briefing.js";
@@ -749,19 +750,10 @@ function speechPanelHtml() {
         <div class="speech-settings">
         <label class="voice-field">
           <span>Voice</span>
-          <select id="ce-voice-select" ${ce.voices.length ? "" : "disabled"}>
+          <select id="ce-voice-select" ${ce.canSpeak ? "" : "disabled"}>
             ${
-              ce.voices.length
-                ? ce.voices
-                    .map(
-                      (v) =>
-                        `<option value="${escapeHtml(v.uri)}" ${
-                          v.uri === savedUri ? "selected" : ""
-                        }>${escapeHtml(v.name)}${
-                          /\bdaniel\b/i.test(v.name) ? " (default)" : ""
-                        }</option>`
-                    )
-                    .join("")
+              ce.canSpeak
+                ? voiceSelectOptionsHtml(ce.voices, savedUri)
                 : `<option>No voices found</option>`
             }
           </select>

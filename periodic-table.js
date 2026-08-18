@@ -14,6 +14,7 @@ import {
   stopSpeech,
   unlockSpeech,
   voiceQualityTip,
+  voiceSelectOptionsHtml,
 } from "./speech.js";
 import { crumbsHtml, href } from "./routes.js";
 
@@ -459,19 +460,10 @@ function speechPanelHtml() {
         <div class="speech-settings">
         <label class="voice-field">
           <span>Voice</span>
-          <select id="pt-voice-select" ${pt.voices.length ? "" : "disabled"}>
+          <select id="pt-voice-select" ${pt.canSpeak ? "" : "disabled"}>
             ${
-              pt.voices.length
-                ? pt.voices
-                    .map(
-                      (v) =>
-                        `<option value="${escapeHtml(v.uri)}" ${
-                          v.uri === savedUri ? "selected" : ""
-                        }>${escapeHtml(v.name)}${
-                          /\bdaniel\b/i.test(v.name) ? " (default)" : ""
-                        }</option>`
-                    )
-                    .join("")
+              pt.canSpeak
+                ? voiceSelectOptionsHtml(pt.voices, savedUri)
                 : `<option>No voices found</option>`
             }
           </select>

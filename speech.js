@@ -4,6 +4,7 @@ const VOICE_KEY = "trivia-helper-voice-uri";
 const RATE_KEY = "trivia-helper-voice-rate";
 const LOOP_KEY = "trivia-helper-fact-loops";
 const DANIEL_DEFAULT_FLAG = "trivia-helper-default-daniel-v1";
+export const ON_DEVICE_VOICE_URI = "on-device";
 
 let voicesReady = null;
 let cachedVoices = [];
@@ -175,6 +176,7 @@ function matchRankedVoice(ranked, preferredUri) {
 }
 
 function listedVoiceOrDefault(ranked, preferredUri) {
+  if (preferredUri === ON_DEVICE_VOICE_URI) return null;
   if (!ranked.length) return null;
   return (matchRankedVoice(ranked, preferredUri) || findDaniel(ranked) || ranked[0]).voice;
 }
@@ -211,6 +213,43 @@ export async function getDefaultBrowserVoiceUri() {
     /* ignore */
   }
   return (daniel || ranked[0])?.uri || "";
+}
+
+export function isUsableVoiceUri(ranked, uri) {
+  if (!uri) return false;
+  if (uri === ON_DEVICE_VOICE_URI) return true;
+  return ranked.some((v) => v.uri === uri);
+}
+
+function escapeOption(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/"/g, "&quot;");
+}
+
+/** Daniel first (default), then the device’s system voice, then the rest. */
+export function voiceSelectOptionsHtml(ranked, selectedUri) {
+  const daniel = findDaniel(ranked);
+  const others = ranked.filter((v) => v !== daniel);
+  const choices = [];
+  if (daniel) {
+    choices.push({ uri: daniel.uri, label: `${daniel.name} (default)` });
+  }
+  choices.push({
+    uri: ON_DEVICE_VOICE_URI,
+    label: "On-device voice",
+  });
+  for (const v of others) {
+    choices.push({ uri: v.uri, label: v.name });
+  }
+  if (!choices.length) return `<option>No voices found</option>`;
+  return choices
+    .map((c) => {
+      const selected = c.uri === selectedUri ? " selected" : "";
+      return `<option value="${escapeOption(c.uri)}"${selected}>${escapeOption(c.label)}</option>`;
+    })
+    .join("");
 }
 
 const ONES = [

@@ -26,6 +26,7 @@ import {
   getSavedLoops,
   getSavedRate,
   getSavedVoiceUri,
+  isUsableVoiceUri,
   listEnglishVoices,
   prepareSpokenLine,
   saveLoops,
@@ -38,6 +39,7 @@ import {
   toMovieQuestionSpeech,
   unlockSpeech,
   voiceQualityTip,
+  voiceSelectOptionsHtml,
 } from "./speech.js";
 import { renderCurrentEvents } from "./current-events.js";
 import {
@@ -377,7 +379,7 @@ async function getSpeechChrome() {
   const defaultUri = canSpeak ? await getDefaultBrowserVoiceUri() : "";
   const savedUri = getSavedVoiceUri();
   const selectedUri =
-    (savedUri && rankedVoices.some((v) => v.uri === savedUri) && savedUri) ||
+    (isUsableVoiceUri(rankedVoices, savedUri) && savedUri) ||
     defaultUri ||
     rankedVoices[0]?.uri ||
     "";
@@ -421,19 +423,10 @@ function speechPanelHtml(foldId, lede, chrome) {
             <div class="speech-settings">
             <label class="voice-field">
               <span>Voice</span>
-              <select id="voice-select" ${rankedVoices.length ? "" : "disabled"}>
+              <select id="voice-select" ${canSpeak ? "" : "disabled"}>
                 ${
-                  rankedVoices.length
-                    ? rankedVoices
-                        .map(
-                          (v) =>
-                            `<option value="${escapeHtml(v.uri)}" ${
-                              v.uri === selectedUri ? "selected" : ""
-                            }>${escapeHtml(v.name)}${
-                              /\bdaniel\b/i.test(v.name) ? " (default)" : ""
-                            }</option>`
-                        )
-                        .join("")
+                  canSpeak
+                    ? voiceSelectOptionsHtml(rankedVoices, selectedUri)
                     : `<option>No voices found</option>`
                 }
               </select>
@@ -731,7 +724,7 @@ async function renderPresidentDetail() {
   const defaultUri = canSpeak ? await getDefaultBrowserVoiceUri() : "";
   const savedUri = getSavedVoiceUri();
   const selectedUri =
-    (savedUri && rankedVoices.some((v) => v.uri === savedUri) && savedUri) ||
+    (isUsableVoiceUri(rankedVoices, savedUri) && savedUri) ||
     defaultUri ||
     rankedVoices[0]?.uri ||
     "";
@@ -780,19 +773,10 @@ async function renderPresidentDetail() {
             <div class="speech-settings">
             <label class="voice-field">
               <span>Voice</span>
-              <select id="voice-select" ${rankedVoices.length ? "" : "disabled"}>
+              <select id="voice-select" ${canSpeak ? "" : "disabled"}>
                 ${
-                  rankedVoices.length
-                    ? rankedVoices
-                        .map(
-                          (v) =>
-                            `<option value="${escapeHtml(v.uri)}" ${
-                              v.uri === selectedUri ? "selected" : ""
-                            }>${escapeHtml(v.name)}${
-                              /\bdaniel\b/i.test(v.name) ? " (default)" : ""
-                            }</option>`
-                        )
-                        .join("")
+                  canSpeak
+                    ? voiceSelectOptionsHtml(rankedVoices, selectedUri)
                     : `<option>No voices found</option>`
                 }
               </select>
