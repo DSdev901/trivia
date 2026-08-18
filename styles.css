@@ -581,6 +581,7 @@ body.is-home .brand-eye-glint::after {
 .home-menu .category-card {
   position: relative;
   height: 100%;
+  padding: 1.2rem 1.1rem;
   background: rgba(255, 255, 255, 0.94);
 }
 
@@ -627,7 +628,7 @@ body.is-home .brand-eye-glint::after {
   justify-content: space-between;
   gap: 0.25rem 0.75rem;
   width: 100%;
-  padding-right: 1.85rem;
+  padding-right: 1.2rem;
   box-sizing: border-box;
 }
 
@@ -749,6 +750,18 @@ body.is-home .brand-eye-glint::after {
 
   .home-menu {
     grid-template-columns: 1fr;
+  }
+
+  .home-menu .category-card {
+    padding: 1.05rem 0.8rem;
+  }
+
+  .home-menu .category-card--feature h2 {
+    font-size: 1.4rem;
+  }
+
+  .home-menu .category-card .meta {
+    padding-right: 1.05rem;
   }
 
   .home-menu a.category-card--fresh {
