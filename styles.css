@@ -521,18 +521,18 @@ body.is-home .brand-logo--badge {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   max-width: 40rem;
   margin: 1.35rem auto 0;
   text-align: center;
 }
 
 .hit-counter {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: center;
+  column-gap: 0.65rem;
   width: 100%;
-  gap: 0.45rem 0.65rem;
   margin: 0;
   font-size: 0.72rem;
   font-weight: 700;
@@ -541,17 +541,27 @@ body.is-home .brand-logo--badge {
   color: var(--ink-soft);
 }
 
+.hit-counter-kicker {
+  justify-self: end;
+  text-align: right;
+  white-space: nowrap;
+}
+
 .home-welcome {
+  justify-self: start;
+  text-align: left;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
   letter-spacing: inherit;
   text-transform: inherit;
   color: inherit;
+  white-space: nowrap;
 }
 
 .hit-counter-digits {
   display: inline-flex;
+  justify-self: center;
   gap: 0.1rem;
   padding: 0.2rem 0.28rem;
   background: var(--ink);
