@@ -23,3 +23,5 @@ Docker is optional if you do not want Homebrew Postgres: `docker compose -f serv
 5. In the live app, open Captured → **Add or remove cards** and enter the PIN to upload.
 
 Anyone can view and search questions. Upload, edit, and delete still require `UPLOAD_PIN`. Photos stay hidden until **Show photo**. Images are JPEG-compressed (max 1600px) in Postgres.
+
+`GET`/`POST /api/hits` is the shared home-page visitor tally (starts at 901). No PIN. The same IP is counted at most once every 30 minutes.

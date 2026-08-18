@@ -23,3 +23,13 @@ ALTER TABLE photos ADD COLUMN IF NOT EXISTS trivia_date DATE;
 
 CREATE INDEX IF NOT EXISTS photos_created_at_idx ON photos (created_at DESC);
 CREATE INDEX IF NOT EXISTS photos_trivia_date_idx ON photos (trivia_date DESC);
+
+CREATE TABLE IF NOT EXISTS site_stats (
+  key TEXT PRIMARY KEY,
+  value BIGINT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS hit_rate (
+  ip TEXT PRIMARY KEY,
+  last_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);

@@ -244,8 +244,7 @@ function categoryMarkHtml(category) {
   return `<span class="category-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false">${inner}</svg></span>`;
 }
 
-const HIT_STORE = "trivia-hit-count";
-const HIT_OFFSET = 901;
+const HIT_CACHE = "trivia-hit-shown";
 
 let briefingStampPromise;
 
@@ -268,17 +267,48 @@ function formatBriefingDay(iso) {
   });
 }
 
-function nextHitCount() {
-  let n = 0;
+function cachedHitCount() {
   try {
-    n = Number(localStorage.getItem(HIT_STORE) || 0);
-    if (!Number.isFinite(n) || n < 0) n = 0;
-    n += 1;
-    localStorage.setItem(HIT_STORE, String(n));
+    const n = Number(localStorage.getItem(HIT_CACHE));
+    if (Number.isFinite(n) && n >= 901) return Math.floor(n);
   } catch {
-    n += 1;
+    /* private mode */
   }
-  return HIT_OFFSET + n;
+  return 901;
+}
+
+function rememberHitCount(count) {
+  try {
+    localStorage.setItem(HIT_CACHE, String(count));
+  } catch {
+    /* private mode */
+  }
+}
+
+async function apiBaseUrl() {
+  try {
+    const cfg = await loadJSON("data/api.json");
+    return String(cfg.baseUrl || "").replace(/\/$/, "");
+  } catch {
+    return "";
+  }
+}
+
+async function bumpHitCount() {
+  const base = await apiBaseUrl();
+  if (!base) return cachedHitCount();
+  try {
+    const res = await fetch(`${base}/api/hits`, { method: "POST" });
+    if (!res.ok) return cachedHitCount();
+    const data = await res.json();
+    const n = Number(data.count);
+    if (!Number.isFinite(n) || n < 901) return cachedHitCount();
+    const count = Math.floor(n);
+    rememberHitCount(count);
+    return count;
+  } catch {
+    return cachedHitCount();
+  }
 }
 
 function hitCounterHtml(count) {
@@ -287,6 +317,14 @@ function hitCounterHtml(count) {
     .map((d) => `<span>${d}</span>`)
     .join("");
   return `<p class="hit-counter"><span class="hit-counter-kicker">You are visitor</span> <span class="hit-counter-digits" aria-label="${count}">${cells}</span></p>`;
+}
+
+function setHitCounterDigits(count) {
+  const el = els.categories.querySelector(".hit-counter-digits");
+  if (!el) return;
+  const digits = String(Math.max(0, count)).padStart(6, "0");
+  el.setAttribute("aria-label", String(count));
+  el.innerHTML = [...digits].map((d) => `<span>${d}</span>`).join("");
 }
 
 function currentEventsSparkleHtml() {
@@ -306,8 +344,12 @@ function decorateCurrentEventsSparkle(stamp) {
 }
 
 async function decorateHomeExtras() {
-  const stamp = await loadBriefingStamp();
+  const [stamp, count] = await Promise.all([
+    loadBriefingStamp(),
+    bumpHitCount(),
+  ]);
   decorateCurrentEventsSparkle(stamp);
+  setHitCounterDigits(count);
   const ran = els.categories.querySelector(".home-briefing-ran");
   const day = formatBriefingDay(stamp?.generatedAt);
   if (!ran || !day) return;
@@ -332,7 +374,7 @@ function renderCategories(categories) {
         .join("")}
     </div>
     <div class="home-retro">
-      ${hitCounterHtml(nextHitCount())}
+      ${hitCounterHtml(cachedHitCount())}
       <p class="home-briefing-ran" hidden></p>
     </div>
   `;

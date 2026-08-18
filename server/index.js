@@ -41,6 +41,7 @@ function originAllowed(origin) {
 
 const app = express();
 app.disable("x-powered-by");
+app.set("trust proxy", 1);
 app.use(
   cors({
     origin(origin, cb) {
@@ -67,6 +68,56 @@ app.get("/api/health", async (_req, res) => {
     res.json({ ok: true, pin: Boolean(UPLOAD_PIN), parse: parseConfigured() });
   } catch (err) {
     res.status(503).json({ ok: false, error: err.message });
+  }
+});
+
+function clientIp(req) {
+  const fwd = String(req.get("x-forwarded-for") || "")
+    .split(",")[0]
+    .trim();
+  return (fwd || req.ip || req.socket?.remoteAddress || "unknown").slice(0, 64);
+}
+
+async function currentHitCount() {
+  const { rows } = await query(
+    `SELECT value FROM site_stats WHERE key = 'hits'`
+  );
+  const n = Number(rows[0]?.value);
+  return Number.isFinite(n) && n >= 901 ? n : 901;
+}
+
+async function bumpHitCount(ip) {
+  const { rowCount } = await query(
+    `INSERT INTO hit_rate (ip, last_at) VALUES ($1, NOW())
+     ON CONFLICT (ip) DO UPDATE
+       SET last_at = NOW()
+       WHERE hit_rate.last_at < NOW() - INTERVAL '30 minutes'`,
+    [ip]
+  );
+  if (!rowCount) {
+    return { count: await currentHitCount(), incremented: false };
+  }
+  const { rows } = await query(
+    `INSERT INTO site_stats (key, value) VALUES ('hits', 901)
+     ON CONFLICT (key) DO UPDATE SET value = site_stats.value + 1
+     RETURNING value`
+  );
+  return { count: Number(rows[0].value), incremented: true };
+}
+
+app.get("/api/hits", async (_req, res) => {
+  try {
+    res.json({ count: await currentHitCount() });
+  } catch (err) {
+    res.status(503).json({ error: err.message });
+  }
+});
+
+app.post("/api/hits", async (req, res) => {
+  try {
+    res.json(await bumpHitCount(clientIp(req)));
+  } catch (err) {
+    res.status(503).json({ error: err.message });
   }
 });
 
