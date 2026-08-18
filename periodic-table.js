@@ -76,7 +76,7 @@ function stopTour() {
   pt.root?.querySelector(".pt-shell")?.classList.remove("is-speaking");
   const listen = pt.root?.querySelector("#pt-listen");
   if (listen) listen.disabled = false;
-  highlight(pt.selectedZ);
+  highlight(pt.selectedZ, { scroll: false });
 }
 
 function spokenScript(el) {
@@ -107,7 +107,49 @@ function spokenScript(el) {
   return lines;
 }
 
-function highlight(z) {
+const FOCUS_KEY = "trivia-helper-pt-listen-focus";
+
+function getSavedListenFocus() {
+  try {
+    const v = localStorage.getItem(FOCUS_KEY);
+    if (v === "panel" || v === "table") return v;
+  } catch {
+    /* ignore */
+  }
+  return "table";
+}
+
+function saveListenFocus(focus) {
+  try {
+    localStorage.setItem(FOCUS_KEY, focus === "panel" ? "panel" : "table");
+  } catch {
+    /* ignore */
+  }
+}
+
+function applyListenFocusClass() {
+  pt.root?.querySelector(".pt-detail-card")?.classList.toggle(
+    "is-listen-focus",
+    Boolean(pt.playing && getSavedListenFocus() === "panel")
+  );
+}
+
+function scrollListenFocus(z) {
+  if (!pt.root) return;
+  applyListenFocusClass();
+  if (pt.playing && getSavedListenFocus() === "panel") {
+    pt.root.querySelector("#pt-detail")?.scrollIntoView({
+      block: "nearest",
+      inline: "nearest",
+      behavior: "smooth",
+    });
+    return;
+  }
+  const cell = pt.root.querySelector(`.pt-cell[data-z="${z}"]`);
+  cell?.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "smooth" });
+}
+
+function highlight(z, { scroll = true } = {}) {
   if (!pt.root) return;
   pt.root.querySelectorAll(".pt-cell.is-active, .pt-cell.is-tour").forEach((n) => {
     n.classList.remove("is-active", "is-tour");
@@ -115,8 +157,9 @@ function highlight(z) {
   const cell = pt.root.querySelector(`.pt-cell[data-z="${z}"]`);
   if (cell) {
     cell.classList.add(pt.playing ? "is-tour" : "is-active");
-    cell.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "smooth" });
   }
+  applyListenFocusClass();
+  if (scroll) scrollListenFocus(z);
 }
 
 function isAllSelected(cats = pt.focusCategories) {
@@ -233,7 +276,7 @@ async function speakElement(el) {
       onEnd: () => {
         pt.playing = false;
         pt.root?.querySelector(".pt-shell")?.classList.remove("is-speaking");
-        highlight(pt.selectedZ);
+        highlight(pt.selectedZ, { scroll: false });
         setStatus(voiceQualityTip(pt.voices));
       },
     });
@@ -291,6 +334,7 @@ async function speakTour() {
       highlight(el.Z);
       renderDetail();
       bindDetailSpeech();
+      if (getSavedListenFocus() === "panel") scrollListenFocus(el.Z);
       const loopBit = loops > 1 ? ` · loop ${loop + 1}/${loops}` : "";
       setStatus(`Reading ${el.name} (${i + 1} of ${list.length})${loopBit}…`);
       await new Promise((resolve) => {
@@ -315,7 +359,7 @@ async function speakTour() {
     pt.tourIds = [];
     pt.root?.querySelector(".pt-shell")?.classList.remove("is-speaking");
     if (listen) listen.disabled = false;
-    highlight(pt.selectedZ);
+    highlight(pt.selectedZ, { scroll: false });
     setStatus(voiceQualityTip(pt.voices));
   }
 }
@@ -415,6 +459,7 @@ function renderDetail() {
           : ""
       }
     </div>`;
+  applyListenFocusClass();
 }
 
 function bindDetailSpeech() {
@@ -435,6 +480,7 @@ function speechPanelHtml() {
   const savedRate = getSavedRate();
   const savedUri = getSavedVoiceUri();
   const savedLoops = getSavedLoops();
+  const savedFocus = getSavedListenFocus();
   const loopOptions = Array.from({ length: 10 }, (_, i) => {
     const n = i + 1;
     return `<option value="${n}" ${savedLoops === n ? "selected" : ""}>${n}${
@@ -479,6 +525,13 @@ function speechPanelHtml() {
         <label class="voice-field">
           <span>Loops</span>
           <select id="pt-loop-select">${loopOptions}</select>
+        </label>
+        <label class="voice-field">
+          <span>Focus</span>
+          <select id="pt-focus-select">
+            <option value="table" ${savedFocus === "table" ? "selected" : ""}>Periodic table</option>
+            <option value="panel" ${savedFocus === "panel" ? "selected" : ""}>Information panel</option>
+          </select>
         </label>
       </div>
       <p class="speech-status" id="pt-speech-status">${escapeHtml(
@@ -587,6 +640,10 @@ function bind() {
   });
   pt.root.querySelector("#pt-loop-select")?.addEventListener("change", (e) => {
     saveLoops(Number(e.target.value));
+  });
+  pt.root.querySelector("#pt-focus-select")?.addEventListener("change", (e) => {
+    saveListenFocus(e.target.value);
+    if (pt.playing) scrollListenFocus(pt.selectedZ);
   });
 
   pt.root.querySelector("#pt-listen")?.addEventListener("click", () => {

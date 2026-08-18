@@ -867,6 +867,10 @@ a.ce-tab {
     grid-template-columns: 1.5fr 0.75fr 0.75fr;
     align-items: end;
   }
+
+  .pt-speech .speech-settings {
+    grid-template-columns: 1.25fr 0.7fr 0.55fr 1.15fr;
+  }
 }
 
 .facts li.is-speaking {
@@ -2094,6 +2098,7 @@ a.ce-tab {
 
 .pt-detail {
   margin-top: 0.5rem;
+  scroll-margin-top: 1rem;
 }
 
 .pt-detail-card {
@@ -2103,6 +2108,11 @@ a.ce-tab {
   padding: 1.15rem 1.25rem 1.35rem;
   box-shadow: var(--shadow);
   border-left-width: 5px;
+}
+
+.pt-detail-card.is-listen-focus {
+  border-color: var(--accent-deep);
+  box-shadow: 0 0 0 2px var(--accent-soft), var(--shadow);
 }
 
 .pt-detail-card.pt-cat-alkali-metal {
