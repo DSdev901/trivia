@@ -303,7 +303,7 @@ body.is-home .app {
 
 body.is-home .top {
   justify-content: center;
-  margin-bottom: 0.35rem;
+  margin-bottom: 1.25rem;
   padding-bottom: 0;
   border-bottom: none;
 }
@@ -323,9 +323,10 @@ body.is-home .brand-logo--badge {
 .home-menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.8rem 0.85rem;
+  align-items: stretch;
+  gap: 1rem;
   max-width: 40rem;
-  margin: 0.35rem auto 0;
+  margin: 0 auto;
 }
 
 .home-menu .category-card--feature {
@@ -333,25 +334,7 @@ body.is-home .brand-logo--badge {
 }
 
 .home-menu .category-card {
-  padding: 1rem 1.1rem 0.95rem;
-  border: 2.5px solid var(--ink);
-  border-radius: 8px;
-  background: var(--paper);
-  box-shadow: none;
-  transition: background 160ms ease, border-color 160ms ease;
-}
-
-.home-menu .category-card:nth-child(3n) {
-  transform: rotate(0.35deg);
-}
-
-.home-menu .category-card:nth-child(3n + 2) {
-  transform: rotate(-0.45deg);
-}
-
-.home-menu .category-card--feature {
-  transform: none;
-  padding: 1.15rem 1.25rem 1.05rem;
+  height: 100%;
 }
 
 .home-menu .category-card h2 {
@@ -362,45 +345,9 @@ body.is-home .brand-logo--badge {
   font-size: 1.55rem;
 }
 
-.home-menu .category-card p {
-  margin-top: 0.3rem;
-  font-size: 0.95rem;
-}
-
-.home-menu .category-card .meta {
-  margin-top: 0.7rem;
-  padding: 0.12rem 0.45rem;
-  border: 1.5px solid var(--accent);
-  border-radius: 3px;
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  color: var(--accent-deep);
-  background: var(--accent-soft);
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .home-menu .category-card:hover {
-    background: #fffdf8;
-    border-color: var(--ink);
-    transform: rotate(-0.2deg);
-  }
-
-  .home-menu .category-card--feature:hover {
-    transform: none;
-  }
-}
-
 @media (max-width: 640px) {
   .home-menu {
     grid-template-columns: 1fr;
-    gap: 0.7rem;
-  }
-
-  .home-menu .category-card,
-  .home-menu .category-card:nth-child(3n),
-  .home-menu .category-card:nth-child(3n + 2),
-  .home-menu .category-card--feature {
-    transform: none;
   }
 }
 
