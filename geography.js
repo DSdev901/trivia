@@ -2561,7 +2561,7 @@ function renderDone() {
           }%</strong> accuracy</li>
         </ul>
         <div class="setup-actions">
-          <button type="button" class="primary-btn" id="geo-again">Quiz again</button>
+          <button type="button" class="primary-btn quiz-cta" id="geo-again">Quiz again</button>
           <a class="secondary-btn" href="${packHref()}">Back to modes</a>
           <a class="secondary-btn" href="${groupHref()}">${
             geo.group ? `Back to ${escapeHtml(geo.group.name)}` : "All continents"

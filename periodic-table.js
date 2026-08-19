@@ -554,7 +554,7 @@ function quizPanelHtml() {
           <strong>Easy</strong> shows a full clue sheet. <strong>Hard</strong> mixes symbols, numbers, families, and facts.</p>
       </div>
       <div class="pt-quiz-actions">
-        <button type="button" class="speech-btn speech-btn-primary" id="pt-quiz-easy"
+        <button type="button" class="speech-btn quiz-cta" id="pt-quiz-easy"
           ${n < 1 ? "disabled" : ""}>Easy · ${escapeHtml(label)}</button>
         <button type="button" class="speech-btn" id="pt-quiz-hard"
           ${n < 1 ? "disabled" : ""}>Hard · ${escapeHtml(label)}</button>

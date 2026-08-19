@@ -57,7 +57,7 @@ import {
   renderCaptured,
 } from "./captured.js";
 import { crumbsHtml, hashPath, href, parseHash } from "./routes.js";
-import { bindNetscapeBadge, homeWebBadgesHtml, renderGuestbook } from "./guestbook.js";
+import { homeWebBadgesHtml, renderGuestbook } from "./guestbook.js";
 
 const els = {
   nav: document.getElementById("nav"),
@@ -399,42 +399,6 @@ function homeBannerHtml() {
     </div>`;
 }
 
-function homeUpdatedHtml(stamp) {
-  const day = formatBriefingDay(stamp?.generatedAt);
-  const updated = day
-    ? `<span>Last updated: ${escapeHtml(day)}</span>`
-    : "";
-  const mail = `<a href="${href(["guestbook"])}">Write the webmaster</a>`;
-  const sep = day ? `<span aria-hidden="true"> · </span>` : "";
-  return `<p class="home-updated">${updated}${sep}${mail}</p>`;
-}
-
-function homeWebringHtml(categories) {
-  const ids = (categories || []).map((c) => c.id).filter(Boolean);
-  if (!ids.length) return "";
-  const first = href([ids[0]]);
-  const last = href([ids[ids.length - 1]]);
-  return `
-    <nav class="home-webring" aria-label="Trivia webring">
-      <span class="home-webring-mark">Webring</span>
-      <a href="${last}">&lt;&lt; Prev</a>
-      <a href="${href([])}">List</a>
-      <a href="${first}" data-webring-random>Random</a>
-      <a href="${first}">Next &gt;&gt;</a>
-    </nav>`;
-}
-
-function bindHomeWebring(categories) {
-  const link = els.categories.querySelector("[data-webring-random]");
-  if (!link) return;
-  link.addEventListener("click", (ev) => {
-    ev.preventDefault();
-    const ids = (categories || []).map((c) => c.id).filter(Boolean);
-    if (!ids.length) return;
-    goToHash([ids[Math.floor(Math.random() * ids.length)]]);
-  });
-}
-
 function homeTickerHtml() {
   const strip = homeTickerItemsHtml();
   return `
@@ -473,13 +437,9 @@ function renderCategories(categories, stamp) {
     <div class="home-retro">
       ${homeBannerHtml()}
       ${hitCounterHtml(cachedHitCount())}
-      ${homeUpdatedHtml(stamp)}
-      ${homeWebringHtml(categories)}
       ${homeWebBadgesHtml()}
     </div>
   `;
-  bindNetscapeBadge(els.categories);
-  bindHomeWebring(categories);
   void decorateHomeExtras();
 }
 
@@ -514,7 +474,7 @@ function renderHub(category) {
             : "Browse sections and review each president’s facts."
         }</p>
       </a>
-      <a class="hub-card hub-card-accent" href="${href([category.id, "quiz"])}">
+      <a class="hub-card" href="${href([category.id, "quiz"])}">
         <h3>Quiz</h3>
         <p>${
           category.type === "movies"
@@ -1339,7 +1299,7 @@ function renderQuizSetup(category) {
     <div class="setup-actions">
       <button type="button" class="text-btn" id="select-all">Select all</button>
       <button type="button" class="text-btn" id="select-none">Select none</button>
-      <button type="button" class="primary-btn" id="start-quiz">Start quiz</button>
+      <button type="button" class="primary-btn quiz-cta" id="start-quiz">Start quiz</button>
     </div>
     <p class="setup-error" id="setup-error" hidden></p>
   `;
@@ -1560,7 +1520,7 @@ function renderQuizDone() {
         <li>${isElements ? "Scope" : "Sections"}: ${escapeHtml(scopeText)}</li>
       </ul>
       <div class="setup-actions">
-        <button type="button" class="primary-btn" id="quiz-again">Quiz again</button>
+        <button type="button" class="primary-btn quiz-cta" id="quiz-again">Quiz again</button>
         <button type="button" class="secondary-btn" id="quiz-to-hub">${
           isElements ? "Back to table" : "Back to section"
         }</button>

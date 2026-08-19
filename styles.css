@@ -877,13 +877,15 @@ body.is-home .brand-eye-glint::after {
 }
 
 .web-badge--netscape,
-.web-badge--gb {
+.web-badge--gb,
+.web-badge--y2k {
   width: 132px;
   height: 47px;
 }
 
 .web-badge--netscape svg,
-.web-badge--gb svg {
+.web-badge--gb svg,
+.web-badge--y2k svg {
   width: 132px;
   height: 47px;
 }
@@ -893,15 +895,6 @@ a.web-badge {
 }
 
 a.web-badge:focus-visible {
-  outline: 2px solid var(--gold);
-  outline-offset: 2px;
-}
-
-.web-badge--netscape {
-  cursor: pointer;
-}
-
-.web-badge--netscape:focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 2px;
 }
@@ -943,136 +936,6 @@ a.web-badge:focus-visible {
   font-weight: 600;
   letter-spacing: 0.02em;
   color: #d8ebe4;
-}
-
-.home-updated {
-  margin: 0;
-  font-size: 0.78rem;
-  color: var(--ink-soft);
-}
-
-.home-updated a {
-  color: var(--accent);
-  font-weight: 700;
-  text-underline-offset: 2px;
-}
-
-.home-webring {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.28rem 0.7rem;
-  width: min(468px, 100%);
-  padding: 0.45rem 0.7rem;
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--ink);
-  background: #fffdf6;
-  border: 2px solid #c4b89a;
-  box-shadow: inset 1px 1px 0 #fff, 2px 2px 0 rgba(26, 35, 50, 0.1);
-}
-
-.home-webring-mark {
-  font-family: var(--font-display);
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.home-webring a {
-  color: var(--ink);
-  text-underline-offset: 2px;
-}
-
-.home-webring a:focus-visible {
-  outline: 2px solid var(--gold);
-  outline-offset: 2px;
-}
-
-body.has-skip-intro {
-  overflow: hidden;
-}
-
-body.has-skip-intro .app {
-  visibility: hidden;
-}
-
-.skip-intro {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 80;
-  align-items: center;
-  justify-content: center;
-  padding: max(1rem, env(safe-area-inset-top)) 1rem max(1rem, env(safe-area-inset-bottom));
-  background: var(--ink);
-  color: var(--paper);
-}
-
-body.has-skip-intro .skip-intro {
-  display: flex;
-}
-
-.skip-intro-skip {
-  position: absolute;
-  top: max(0.7rem, env(safe-area-inset-top));
-  right: max(0.7rem, env(safe-area-inset-right));
-  padding: 0.2rem 0.15rem;
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #e8c04a;
-  background: none;
-  border: 0;
-  cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.skip-intro-skip:focus-visible,
-.skip-intro-go:focus-visible {
-  outline: 2px solid var(--gold);
-  outline-offset: 3px;
-}
-
-.skip-intro-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.85rem;
-  text-align: center;
-}
-
-.skip-intro-logo {
-  width: 5.5rem;
-  height: 5.5rem;
-  border-radius: 50%;
-  background: var(--paper);
-}
-
-.skip-intro-enter {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 8vw, 3.2rem);
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  line-height: 1;
-  color: var(--gold);
-}
-
-.skip-intro-go {
-  padding: 0.45rem 1.35rem 0.5rem;
-  font-family: var(--font-body);
-  font-size: 0.92rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--paper);
-  background: var(--accent);
-  border: 2px solid var(--gold);
-  cursor: pointer;
 }
 
 .win95-overlay {
@@ -2068,11 +1931,6 @@ a.ce-tab {
   color: var(--ink-soft);
 }
 
-.hub-card-accent {
-  border-color: rgba(11, 95, 75, 0.35);
-  background: linear-gradient(160deg, var(--accent-soft), rgba(255, 255, 255, 0.8));
-}
-
 .batch-check-list {
   display: grid;
   gap: 0.65rem;
@@ -2164,6 +2022,17 @@ a.ce-tab {
 .primary-btn:hover {
   background: var(--accent-deep);
   transform: translateY(-1px);
+}
+
+.quiz-cta {
+  background: var(--ink);
+  border-color: #121a26;
+  color: var(--paper);
+}
+
+.quiz-cta:hover:not(:disabled) {
+  background: #101826;
+  border-color: #101826;
 }
 
 .secondary-btn {
