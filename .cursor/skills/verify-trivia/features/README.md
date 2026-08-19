@@ -27,8 +27,7 @@ This directory is the maintained source for verifying user-facing behavior of Ge
 
 ## Features
 
-- [Home](./home.md) covers the category menu, ticker, visitor chrome, and guidelines badge.
+- [Home](./home.md) covers the category menu, ticker, visitor chrome, and 90s badges.
 - [Movies quiz](./movies-quiz.md) covers hub, setup, and starting a round.
-- [Guidelines](./guidelines.md) covers the brand-guidelines page linked from home.
 - [Geography](./geography.md) covers opening the geography category from home.
 - [Guestbook](./guestbook.md) covers opening the guestbook view without signing.

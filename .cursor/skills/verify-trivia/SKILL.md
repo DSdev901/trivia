@@ -1,6 +1,6 @@
 ---
 name: verify-trivia
-description: Drive the General Trivia static web app locally (home, hash-routed categories, quiz, guidelines, guestbook view) and prove user-visible behavior. Use after UI or routing changes, or when a trivia PR needs runtime evidence.
+description: Drive the General Trivia static web app locally (home, hash-routed categories, quiz, guestbook view) and prove user-visible behavior. Use after UI or routing changes, or when a trivia PR needs runtime evidence.
 ---
 
 # Verify General Trivia
@@ -29,7 +29,7 @@ Teardown is **Cleanup** below. Never `pkill -f serve.mjs`.
 node .cursor/skills/verify-trivia/scripts/run.mjs doctor
 ```
 
-Must print JSON with `ok: true`, the recorded `pid` still alive, home HTML containing the General Trivia mark, `data/categories.json` including `movies`, `presidents`, `geography`, `current-events`, and `guidelines/` HTTP 200. If doctor fails, cleanup and launch again. Do not drive.
+Must print JSON with `ok: true`, the recorded `pid` still alive, home HTML containing the General Trivia mark, and `data/categories.json` including `movies`, `presidents`, `geography`, and `current-events`. If doctor fails, cleanup and launch again. Do not drive.
 
 ## Drive
 
@@ -40,7 +40,7 @@ Stable handles:
 - Home category cards are links whose accessible name includes the category heading (`Current Events`, `Film & Movies`, `Geography`, …).
 - Quiz hub: link named `Quiz`.
 - Quiz setup: button `Start quiz` (`#start-quiz`, class `quiz-cta`).
-- Home: region `Themed trivia`; link `Brand guidelines` (`guidelines/`); link `Sign the guestbook`.
+- Home: region `Themed trivia`; link `Sign the guestbook`.
 - After leaving home: button `Home` (`#home-btn`).
 
 Read `features/` before driving. Exercise the mapped entry points, not a shortcut into quiz state via localStorage.
@@ -54,7 +54,7 @@ Write under `.cursor/skills/verify-trivia/artifacts/<feature-id>/`. Keep artifac
 Proof standards:
 
 - Real user path (click or hash the user would use).
-- Capture the action and the resulting view (ARIA snapshot + screenshot with the General logo or `Brand guidelines` title visible).
+- Capture the action and the resulting view (ARIA snapshot + screenshot with the General logo or a section title visible).
 - Side effects: static routes 200; do not treat Railway POST as in-scope.
 - Name the feature ID and URL (including hash) in a `proof.txt` next to the screenshot.
 

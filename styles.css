@@ -118,6 +118,15 @@ body::after {
   background: var(--paper);
 }
 
+.brand-logo--badge {
+  width: calc(6.5rem * 4 / 3);
+  height: calc(7.25rem * 4 / 3);
+  margin-left: 0.35rem;
+  border-radius: 0;
+  object-fit: contain;
+  background: transparent;
+}
+
 .brand-eye-glint {
   display: none;
 }
@@ -200,6 +209,9 @@ body::after {
   body:not(.is-home) .brand-logo {
     width: 2.75rem;
     height: 2.75rem;
+    border-radius: 0;
+    object-fit: contain;
+    background: transparent;
   }
 
   body.is-home .app {
@@ -640,7 +652,7 @@ body.is-home .brand-eye-glint::after {
   justify-content: space-between;
   gap: 0.25rem 0.75rem;
   width: 100%;
-  padding-right: 1.2rem;
+  padding-right: 2.35rem;
   box-sizing: border-box;
 }
 
@@ -776,10 +788,6 @@ body.is-home .brand-eye-glint::after {
     font-size: 1.4rem;
   }
 
-  .home-menu .category-card .meta {
-    padding-right: 1.45rem;
-  }
-
   .home-menu a.category-card--fresh {
     column-gap: 0.35rem;
   }
@@ -898,16 +906,14 @@ body.is-home .brand-eye-glint::after {
 
 .web-badge--netscape,
 .web-badge--gb,
-.web-badge--y2k,
-.web-badge--guide {
+.web-badge--y2k {
   width: 132px;
   height: 47px;
 }
 
 .web-badge--netscape svg,
 .web-badge--gb svg,
-.web-badge--y2k svg,
-.web-badge--guide svg {
+.web-badge--y2k svg {
   width: 132px;
   height: 47px;
 }
@@ -2241,6 +2247,13 @@ a.ce-tab {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
+}
+
+@media (min-width: 700px) {
+  .ce-head {
+    padding-left: clamp(1.25rem, 4vw, 3rem);
+    padding-right: clamp(1.25rem, 4vw, 3rem);
+  }
 }
 
 .ce-refresh-wrap {

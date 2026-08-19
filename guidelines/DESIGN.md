@@ -1,6 +1,6 @@
 # General Trivia — DESIGN.md
 
-Canonical brand spec for the **trivia page** (`index.html` + `styles.css`). The guidelines site in this folder renders this document. If they disagree, this file wins.
+Canonical brand spec for the trivia page (`index.html` + `styles.css`). Internal. Not a public site.
 
 **Status:** `PROPOSED` — extracted from the live site on 2026-08-19. Correct anything that is wrong; then lock.
 
@@ -122,7 +122,7 @@ No gradients as brand surfaces (context).
 - Labels / hit-counter kicker: 0.72rem, uppercase, tracking `0.05em`, weight 700
 - Do not faux-bold. Do not outline Fraunces. Do not set quiz questions in all-caps.
 
-**Alternate (encoded, researched):** display = Source Sans 3 — closer to 90s webmaster, colder clubhouse. Toggle on the guidelines site (`data-alt-display="b"`). Default remains Fraunces.
+**Alternate (encoded, researched):** display = Source Sans 3 — closer to 90s webmaster, colder clubhouse. Default remains Fraunces.
 
 ## 05 · Iconography
 

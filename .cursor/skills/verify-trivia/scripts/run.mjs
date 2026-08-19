@@ -142,9 +142,6 @@ async function doctor() {
     if (!ids.includes(id)) throw new Error(`categories.json missing ${id}`);
   }
 
-  const guide = await fetch(new URL("guidelines/", run.url));
-  if (!guide.ok) throw new Error(`guidelines/ HTTP ${guide.status}`);
-
   const out = {
     ok: true,
     pid: run.pid,
