@@ -57,7 +57,7 @@ import {
   renderCaptured,
 } from "./captured.js";
 import { crumbsHtml, hashPath, href, parseHash } from "./routes.js";
-import { homeWebBadgesHtml, renderGuestbook } from "./guestbook.js";
+import { bindNetscapeBadge, homeWebBadgesHtml, renderGuestbook } from "./guestbook.js";
 
 const els = {
   nav: document.getElementById("nav"),
@@ -289,11 +289,14 @@ function formatBriefingDay(iso) {
 function cachedHitCount() {
   try {
     const n = Number(localStorage.getItem(HIT_CACHE));
-    if (Number.isFinite(n) && n >= 901) return Math.floor(n);
+    if (Number.isFinite(n) && n >= 0) {
+      const v = Math.floor(n);
+      return v >= 901 ? v - 900 : v;
+    }
   } catch {
     /* private mode */
   }
-  return 901;
+  return 0;
 }
 
 function rememberHitCount(count) {
@@ -323,7 +326,7 @@ async function bumpHitCount() {
     if (!res.ok) return cachedHitCount();
     const data = await res.json();
     const n = Number(data.count);
-    if (!Number.isFinite(n) || n < 901) return cachedHitCount();
+    if (!Number.isFinite(n) || n < 0) return cachedHitCount();
     const count = Math.floor(n);
     rememberHitCount(count);
     return count;
@@ -387,6 +390,51 @@ function homeTickerItemsHtml() {
   return `<span class="home-ticker-item">Flying Saucer Trivia Tuesdays</span><span class="home-ticker-dot" aria-hidden="true">***</span>${items}`;
 }
 
+function homeBannerHtml() {
+  return `
+    <div class="home-banner" role="img" aria-label="Flying Saucer Trivia Tuesdays banner">
+      <span class="home-banner-kicker">Fly the Saucer</span>
+      <span class="home-banner-title">Trivia Tuesdays</span>
+      <span class="home-banner-sub">Themed nights · cheap pitchers · dubious confidence</span>
+    </div>`;
+}
+
+function homeUpdatedHtml(stamp) {
+  const day = formatBriefingDay(stamp?.generatedAt);
+  const updated = day
+    ? `<span>Last updated: ${escapeHtml(day)}</span>`
+    : "";
+  const mail = `<a href="${href(["guestbook"])}">Write the webmaster</a>`;
+  const sep = day ? `<span aria-hidden="true"> · </span>` : "";
+  return `<p class="home-updated">${updated}${sep}${mail}</p>`;
+}
+
+function homeWebringHtml(categories) {
+  const ids = (categories || []).map((c) => c.id).filter(Boolean);
+  if (!ids.length) return "";
+  const first = href([ids[0]]);
+  const last = href([ids[ids.length - 1]]);
+  return `
+    <nav class="home-webring" aria-label="Trivia webring">
+      <span class="home-webring-mark">Webring</span>
+      <a href="${last}">&lt;&lt; Prev</a>
+      <a href="${href([])}">List</a>
+      <a href="${first}" data-webring-random>Random</a>
+      <a href="${first}">Next &gt;&gt;</a>
+    </nav>`;
+}
+
+function bindHomeWebring(categories) {
+  const link = els.categories.querySelector("[data-webring-random]");
+  if (!link) return;
+  link.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    const ids = (categories || []).map((c) => c.id).filter(Boolean);
+    if (!ids.length) return;
+    goToHash([ids[Math.floor(Math.random() * ids.length)]]);
+  });
+}
+
 function homeTickerHtml() {
   const strip = homeTickerItemsHtml();
   return `
@@ -423,10 +471,15 @@ function renderCategories(categories, stamp) {
         .join("")}
     </div>
     <div class="home-retro">
+      ${homeBannerHtml()}
       ${hitCounterHtml(cachedHitCount())}
+      ${homeUpdatedHtml(stamp)}
+      ${homeWebringHtml(categories)}
       ${homeWebBadgesHtml()}
     </div>
   `;
+  bindNetscapeBadge(els.categories);
+  bindHomeWebring(categories);
   void decorateHomeExtras();
 }
 
@@ -1777,6 +1830,119 @@ function goBack() {
 
 els.backBtn.addEventListener("click", goBack);
 els.homeBtn.addEventListener("click", () => goToHash([]));
+
+const KONAMI_SEQ = [
+  "ArrowUp",
+  "ArrowUp",
+  "ArrowDown",
+  "ArrowDown",
+  "ArrowLeft",
+  "ArrowRight",
+  "ArrowLeft",
+  "ArrowRight",
+  "KeyB",
+  "KeyA",
+];
+
+const KONAMI_FACTS = [
+  "Oxford University is older than the Aztec Empire.",
+  "Bananas are berries. Strawberries are not.",
+  "The shortest war on record, Britain vs. Zanzibar in 1896, lasted 38 minutes.",
+  "A group of flamingos is called a flamboyance.",
+  "Honey sealed in some ancient Egyptian tombs is still edible.",
+  "Venus spins backwards compared with most planets in the solar system.",
+  "The first computer bug was a moth found in a Harvard Mark II in 1947.",
+  "There are more possible games of chess than atoms in the observable universe.",
+  "Netscape Navigator 1.0 shipped in December 1994. This page is still waiting for the plugin.",
+];
+
+function konamiTypingTarget(el) {
+  if (!el) return false;
+  const tag = el.tagName;
+  return (
+    tag === "INPUT" ||
+    tag === "TEXTAREA" ||
+    tag === "SELECT" ||
+    el.isContentEditable
+  );
+}
+
+function showWin95IllegalOp() {
+  if (document.querySelector(".win95-overlay")) return;
+  const fact =
+    KONAMI_FACTS[Math.floor(Math.random() * KONAMI_FACTS.length)];
+  const overlay = document.createElement("div");
+  overlay.className = "win95-overlay";
+  overlay.setAttribute("role", "dialog");
+  overlay.setAttribute("aria-modal", "true");
+  overlay.setAttribute("aria-labelledby", "win95-title");
+  overlay.innerHTML = `
+    <div class="win95-dialog">
+      <div class="win95-titlebar">
+        <span id="win95-title">General Trivia</span>
+        <button type="button" class="win95-x" aria-label="Close">×</button>
+      </div>
+      <div class="win95-body">
+        <span class="win95-icon" aria-hidden="true"></span>
+        <p>This program has performed an illegal operation and will be shut down.<br /><br />If the problem persists, contact the program vendor.</p>
+      </div>
+      <p class="win95-fact" hidden><strong>Details:</strong> ${escapeHtml(fact)}</p>
+      <div class="win95-actions">
+        <button type="button" class="win95-btn" data-win95-details>Details &gt;&gt;</button>
+        <button type="button" class="win95-btn" data-win95-close>Close</button>
+      </div>
+    </div>`;
+  const factEl = overlay.querySelector(".win95-fact");
+  const detailsBtn = overlay.querySelector("[data-win95-details]");
+  const onKey = (ev) => {
+    if (ev.key !== "Escape") return;
+    ev.preventDefault();
+    close();
+  };
+  const close = () => {
+    document.removeEventListener("keydown", onKey);
+    overlay.remove();
+  };
+  overlay.querySelector(".win95-x").addEventListener("click", close);
+  overlay.querySelector("[data-win95-close]").addEventListener("click", close);
+  detailsBtn.addEventListener("click", () => {
+    const open = factEl.hasAttribute("hidden");
+    factEl.toggleAttribute("hidden", !open);
+    detailsBtn.textContent = open ? "Details <<" : "Details >>";
+  });
+  overlay.addEventListener("click", (ev) => {
+    if (ev.target === overlay) close();
+  });
+  document.addEventListener("keydown", onKey);
+  document.body.appendChild(overlay);
+  overlay.querySelector("[data-win95-close]").focus();
+}
+
+function bindKonamiEgg() {
+  if (window.__triviaKonami) return;
+  window.__triviaKonami = true;
+  let i = 0;
+  document.addEventListener("keydown", (ev) => {
+    if (konamiTypingTarget(document.activeElement)) {
+      i = 0;
+      return;
+    }
+    if (ev.repeat) return;
+    const expected = KONAMI_SEQ[i];
+    const got = ev.code === "KeyB" || ev.code === "KeyA" ? ev.code : ev.key;
+    if (got === expected || ev.code === expected) {
+      i += 1;
+      if (i === KONAMI_SEQ.length) {
+        i = 0;
+        showWin95IllegalOp();
+      }
+      return;
+    }
+    i = ev.key === KONAMI_SEQ[0] || ev.code === KONAMI_SEQ[0] ? 1 : 0;
+  });
+}
+
+bindKonamiEgg();
 
 async function init() {
   document.body.classList.toggle("is-home", !parseHash().category);

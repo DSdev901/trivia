@@ -31,7 +31,7 @@ function formatGuestDay(iso) {
 }
 
 function netscapeBadgeHtml() {
-  return `<span class="web-badge web-badge--netscape" role="img" aria-label="Netscape Site of the Day">
+  return `<span class="web-badge web-badge--netscape" tabindex="0" role="button" aria-label="Netscape Site of the Day">
     <svg viewBox="0 0 88 31" width="88" height="31" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" aria-hidden="true">
       <rect width="88" height="31" fill="#000"/>
       <rect x="1" y="1" width="86" height="29" fill="#1a1048"/>
@@ -41,7 +41,7 @@ function netscapeBadgeHtml() {
       <rect x="4" y="6" width="18" height="1" fill="#7b3aad"/>
       <text x="13" y="20" text-anchor="middle" fill="#fff8d4" font-family="Georgia, Times, serif" font-size="15" font-weight="700">N</text>
       <text x="27" y="14" fill="#e8c04a" font-family="Tahoma, Geneva, sans-serif" font-size="7" font-weight="700">NETSCAPE</text>
-      <text x="27" y="24" fill="#f4f0ff" font-family="Tahoma, Geneva, sans-serif" font-size="5.6" font-weight="700">SITE OF THE DAY</text>
+      <text class="js-netscape-period" x="27" y="24" fill="#f4f0ff" font-family="Tahoma, Geneva, sans-serif" font-size="5.4" font-weight="700">SITE OF THE DAY</text>
     </svg>
   </span>`;
 }
@@ -59,8 +59,90 @@ function guestbookBadgeHtml() {
   </a>`;
 }
 
+function y2kBadgeHtml() {
+  return `<span class="web-badge" role="img" aria-label="Y2K compliant">
+    <svg viewBox="0 0 88 31" width="88" height="31" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" aria-hidden="true">
+      <rect width="88" height="31" fill="#1a1400"/>
+      <rect x="1" y="1" width="86" height="29" fill="#3d3208"/>
+      <rect x="2" y="2" width="84" height="1" fill="#e8c04a"/>
+      <text x="44" y="13" text-anchor="middle" fill="#e8c04a" font-family="Tahoma, Geneva, sans-serif" font-size="8" font-weight="700">Y2K</text>
+      <text x="44" y="24" text-anchor="middle" fill="#f7f3eb" font-family="Tahoma, Geneva, sans-serif" font-size="6.2" font-weight="700">COMPLIANT</text>
+    </svg>
+  </span>`;
+}
+
+function bestViewedBadgeHtml() {
+  return `<span class="web-badge" role="img" aria-label="Best viewed with Netscape Navigator">
+    <svg viewBox="0 0 88 31" width="88" height="31" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" aria-hidden="true">
+      <rect width="88" height="31" fill="#0b1c3a"/>
+      <rect x="1" y="1" width="86" height="29" fill="#14315c"/>
+      <rect x="2" y="2" width="84" height="1" fill="#7eb0e0"/>
+      <text x="44" y="13" text-anchor="middle" fill="#d6e8fb" font-family="Tahoma, Geneva, sans-serif" font-size="5.6" font-weight="700">BEST VIEWED WITH</text>
+      <text x="44" y="24" text-anchor="middle" fill="#fff8d4" font-family="Tahoma, Geneva, sans-serif" font-size="7" font-weight="700">NETSCAPE</text>
+    </svg>
+  </span>`;
+}
+
+function validHtmlBadgeHtml() {
+  return `<span class="web-badge" role="img" aria-label="Valid HTML, sort of">
+    <svg viewBox="0 0 88 31" width="88" height="31" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" aria-hidden="true">
+      <rect width="88" height="31" fill="#fff"/>
+      <rect x="1" y="1" width="86" height="29" fill="none" stroke="#000" stroke-width="1"/>
+      <rect x="2" y="2" width="24" height="27" fill="#fc0"/>
+      <text x="14" y="20" text-anchor="middle" fill="#000" font-family="Tahoma, Geneva, sans-serif" font-size="9" font-weight="700">W3C</text>
+      <text x="56" y="14" text-anchor="middle" fill="#069" font-family="Tahoma, Geneva, sans-serif" font-size="7" font-weight="700">HTML 4.01</text>
+      <text x="56" y="24" text-anchor="middle" fill="#000" font-family="Tahoma, Geneva, sans-serif" font-size="6.2" font-weight="700">VALID</text>
+    </svg>
+  </span>`;
+}
+
+function flashBadgeHtml() {
+  return `<span class="web-badge" role="img" aria-label="Get Flash Player, decorative">
+    <svg viewBox="0 0 88 31" width="88" height="31" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" aria-hidden="true">
+      <rect width="88" height="31" fill="#000"/>
+      <rect x="1" y="1" width="86" height="29" fill="#8b0000"/>
+      <rect x="2" y="2" width="84" height="1" fill="#ff6a6a"/>
+      <text x="44" y="13" text-anchor="middle" fill="#fff" font-family="Tahoma, Geneva, sans-serif" font-size="6.2" font-weight="700">GET</text>
+      <text x="44" y="24" text-anchor="middle" fill="#ffd24a" font-family="Tahoma, Geneva, sans-serif" font-size="7.4" font-weight="700">FLASH PLAYER</text>
+    </svg>
+  </span>`;
+}
+
+const NETSCAPE_PERIODS = [
+  "SITE OF THE DAY",
+  "SITE OF THE WEEK",
+  "SITE OF THE MILLENNIUM",
+];
+
+export function bindNetscapeBadge(root = document) {
+  const badge = root.querySelector(".web-badge--netscape");
+  const label = badge?.querySelector(".js-netscape-period");
+  if (!badge || !label || badge.dataset.bound === "1") return;
+  badge.dataset.bound = "1";
+  let i = 0;
+  let lastCycle = 0;
+  const cycle = () => {
+    const now = Date.now();
+    if (now - lastCycle < 250) return;
+    lastCycle = now;
+    i = (i + 1) % NETSCAPE_PERIODS.length;
+    const text = NETSCAPE_PERIODS[i];
+    label.textContent = text;
+    label.setAttribute("font-size", text.length > 16 ? "4.15" : "5.4");
+    badge.setAttribute("aria-label", `Netscape ${text}`);
+  };
+  badge.addEventListener("mouseenter", cycle);
+  badge.addEventListener("focus", cycle);
+  badge.addEventListener("click", cycle);
+  badge.addEventListener("keydown", (ev) => {
+    if (ev.key !== "Enter" && ev.key !== " ") return;
+    ev.preventDefault();
+    cycle();
+  });
+}
+
 export function homeWebBadgesHtml() {
-  return `<div class="web-badges">${netscapeBadgeHtml()}${guestbookBadgeHtml()}</div>`;
+  return `<div class="web-badges">${netscapeBadgeHtml()}${guestbookBadgeHtml()}${y2kBadgeHtml()}${bestViewedBadgeHtml()}${validHtmlBadgeHtml()}${flashBadgeHtml()}</div>`;
 }
 
 function entryHtml(entry) {

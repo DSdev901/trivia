@@ -876,6 +876,18 @@ body.is-home .brand-eye-glint::after {
   height: 31px;
 }
 
+.web-badge--netscape,
+.web-badge--gb {
+  width: 132px;
+  height: 47px;
+}
+
+.web-badge--netscape svg,
+.web-badge--gb svg {
+  width: 132px;
+  height: 47px;
+}
+
 a.web-badge {
   text-decoration: none;
 }
@@ -883,6 +895,308 @@ a.web-badge {
 a.web-badge:focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 2px;
+}
+
+.web-badge--netscape {
+  cursor: pointer;
+}
+
+.web-badge--netscape:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.home-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.08rem;
+  width: min(468px, 100%);
+  min-height: 60px;
+  padding: 0.32rem 0.7rem 0.38rem;
+  text-align: center;
+  color: var(--paper);
+  background: linear-gradient(#0d6e58, var(--accent-deep));
+  border: 2px solid var(--gold);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.home-banner-kicker {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #e8c04a;
+}
+
+.home-banner-title {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--paper);
+}
+
+.home-banner-sub {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #d8ebe4;
+}
+
+.home-updated {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.home-updated a {
+  color: var(--accent);
+  font-weight: 700;
+  text-underline-offset: 2px;
+}
+
+.home-webring {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.28rem 0.7rem;
+  width: min(468px, 100%);
+  padding: 0.45rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ink);
+  background: #fffdf6;
+  border: 2px solid #c4b89a;
+  box-shadow: inset 1px 1px 0 #fff, 2px 2px 0 rgba(26, 35, 50, 0.1);
+}
+
+.home-webring-mark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.home-webring a {
+  color: var(--ink);
+  text-underline-offset: 2px;
+}
+
+.home-webring a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+body.has-skip-intro {
+  overflow: hidden;
+}
+
+body.has-skip-intro .app {
+  visibility: hidden;
+}
+
+.skip-intro {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  align-items: center;
+  justify-content: center;
+  padding: max(1rem, env(safe-area-inset-top)) 1rem max(1rem, env(safe-area-inset-bottom));
+  background: var(--ink);
+  color: var(--paper);
+}
+
+body.has-skip-intro .skip-intro {
+  display: flex;
+}
+
+.skip-intro-skip {
+  position: absolute;
+  top: max(0.7rem, env(safe-area-inset-top));
+  right: max(0.7rem, env(safe-area-inset-right));
+  padding: 0.2rem 0.15rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e8c04a;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.skip-intro-skip:focus-visible,
+.skip-intro-go:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.skip-intro-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  text-align: center;
+}
+
+.skip-intro-logo {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background: var(--paper);
+}
+
+.skip-intro-enter {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 8vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  color: var(--gold);
+}
+
+.skip-intro-go {
+  padding: 0.45rem 1.35rem 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--accent);
+  border: 2px solid var(--gold);
+  cursor: pointer;
+}
+
+.win95-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.win95-dialog {
+  width: min(22rem, 100%);
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #fff #000 #000 #fff;
+  box-shadow: 2px 2px 0 #000;
+  font-family: Tahoma, "Segoe UI", sans-serif;
+  font-size: 12px;
+  color: #000;
+}
+
+.win95-titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 2px;
+  padding: 3px 4px 3px 6px;
+  background: #000080;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.win95-x {
+  width: 16px;
+  height: 14px;
+  padding: 0;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #fff #000 #000 #fff;
+  cursor: pointer;
+}
+
+.win95-body {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 14px 6px;
+}
+
+.win95-body p {
+  margin: 0;
+  line-height: 1.35;
+}
+
+.win95-icon {
+  position: relative;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ff6b6b, #c00 55%, #7a0000);
+  box-shadow: inset 0 0 0 2px #fff, 0 0 0 1px #400;
+}
+
+.win95-icon::before,
+.win95-icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 16px;
+  height: 3px;
+  background: #fff;
+}
+
+.win95-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.win95-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.win95-fact {
+  margin: 0 14px 4px;
+  padding: 8px 8px 7px;
+  line-height: 1.35;
+  background: #fff;
+  border: 2px solid;
+  border-color: #808080 #fff #fff #808080;
+}
+
+.win95-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 8px 12px 12px;
+}
+
+.win95-btn {
+  min-width: 74px;
+  padding: 3px 10px 4px;
+  font: inherit;
+  font-weight: 700;
+  color: #000;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #fff #000 #000 #fff;
+  cursor: pointer;
+}
+
+.win95-btn:focus-visible,
+.win95-x:focus-visible {
+  outline: 1px dotted #000;
+  outline-offset: -4px;
 }
 
 .gb-page {

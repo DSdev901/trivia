@@ -30,8 +30,36 @@
           .replace(/^#/, "")
           .replace(/^\/+|\/+$/g, "");
         if (raw) document.body.classList.remove("is-home");
+        var reduce =
+          window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var seen = false;
+        try {
+          seen = Boolean(sessionStorage.getItem("trivia-intro-seen"));
+        } catch (e) {}
+        if (!raw && !reduce && !seen) {
+          document.body.classList.add("has-skip-intro");
+        }
       })();
     </script>
+    <div class="skip-intro" id="skip-intro" role="dialog" aria-modal="true" aria-label="Enter site">
+      <button type="button" class="skip-intro-skip" id="skip-intro-skip">
+        Skip Intro
+      </button>
+      <div class="skip-intro-card">
+        <img
+          class="skip-intro-logo"
+          src="trivia-general-logo-alt.png"
+          alt=""
+          width="96"
+          height="96"
+        />
+        <p class="skip-intro-enter">ENTER SITE</p>
+        <button type="button" class="skip-intro-go" id="skip-intro-enter">
+          Enter
+        </button>
+      </div>
+    </div>
     <div class="app">
       <header class="top">
         <div class="brand">
@@ -80,6 +108,45 @@
         <section id="view-guestbook" class="view" hidden></section>
       </main>
     </div>
+    <script>
+      (function () {
+        var skipIntro = document.getElementById("skip-intro");
+        var app = document.querySelector(".app");
+        var skip = document.getElementById("skip-intro-skip");
+        var enter = document.getElementById("skip-intro-enter");
+        function hideSplash() {
+          document.body.classList.remove("has-skip-intro");
+          if (app) app.inert = false;
+          if (skipIntro) {
+            skipIntro.setAttribute("aria-hidden", "true");
+            skipIntro.inert = true;
+          }
+        }
+        function dismiss() {
+          try {
+            sessionStorage.setItem("trivia-intro-seen", "1");
+          } catch (e) {}
+          hideSplash();
+        }
+        if (!document.body.classList.contains("has-skip-intro")) {
+          hideSplash();
+          return;
+        }
+        if (app) app.inert = true;
+        skipIntro.removeAttribute("aria-hidden");
+        skip.addEventListener("click", dismiss);
+        enter.addEventListener("click", dismiss);
+        document.addEventListener("keydown", function (ev) {
+          if (
+            ev.key === "Escape" &&
+            document.body.classList.contains("has-skip-intro")
+          ) {
+            dismiss();
+          }
+        });
+        skip.focus();
+      })();
+    </script>
     <script src="app.js" type="module"></script>
   </body>
 </html>

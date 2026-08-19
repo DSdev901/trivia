@@ -98,7 +98,7 @@ async function currentHitCount() {
     `SELECT value FROM site_stats WHERE key = 'hits'`
   );
   const n = Number(rows[0]?.value);
-  return Number.isFinite(n) && n >= 901 ? n : 901;
+  return Number.isFinite(n) && n >= 0 ? n : 0;
 }
 
 async function bumpHitCount(ip) {
@@ -116,7 +116,7 @@ async function bumpHitCount(ip) {
     return { count: await currentHitCount(), incremented: false };
   }
   const { rows } = await query(
-    `INSERT INTO site_stats (key, value) VALUES ('hits', 901)
+    `INSERT INTO site_stats (key, value) VALUES ('hits', 1)
      ON CONFLICT (key) DO UPDATE SET value = site_stats.value + 1
      RETURNING value`
   );
