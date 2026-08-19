@@ -899,45 +899,6 @@ a.web-badge:focus-visible {
   outline-offset: 2px;
 }
 
-.home-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.08rem;
-  width: min(468px, 100%);
-  min-height: 60px;
-  padding: 0.32rem 0.7rem 0.38rem;
-  text-align: center;
-  color: var(--paper);
-  background: linear-gradient(#0d6e58, var(--accent-deep));
-  border: 2px solid var(--gold);
-  box-shadow: 2px 2px 0 var(--ink);
-}
-
-.home-banner-kicker {
-  font-size: 0.58rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #e8c04a;
-}
-
-.home-banner-title {
-  font-family: var(--font-display);
-  font-size: 1.12rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: var(--paper);
-}
-
-.home-banner-sub {
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: #d8ebe4;
-}
-
 .win95-overlay {
   position: fixed;
   inset: 0;

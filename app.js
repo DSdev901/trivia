@@ -390,15 +390,6 @@ function homeTickerItemsHtml() {
   return `<span class="home-ticker-item">Flying Saucer Trivia Tuesdays</span><span class="home-ticker-dot" aria-hidden="true">***</span>${items}`;
 }
 
-function homeBannerHtml() {
-  return `
-    <div class="home-banner" role="img" aria-label="Flying Saucer Trivia Tuesdays banner">
-      <span class="home-banner-kicker">Fly the Saucer</span>
-      <span class="home-banner-title">Trivia Tuesdays</span>
-      <span class="home-banner-sub">Themed nights · cheap pitchers · dubious confidence</span>
-    </div>`;
-}
-
 function homeTickerHtml() {
   const strip = homeTickerItemsHtml();
   return `
@@ -435,7 +426,6 @@ function renderCategories(categories, stamp) {
         .join("")}
     </div>
     <div class="home-retro">
-      ${homeBannerHtml()}
       ${hitCounterHtml(cachedHitCount())}
       ${homeWebBadgesHtml()}
     </div>
