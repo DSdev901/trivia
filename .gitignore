@@ -6,3 +6,7 @@
 server/node_modules/
 server/.env
 
+# Local verify-trivia proof output (keep the skill; drop binaries)
+.cursor/skills/verify-trivia/artifacts/*
+!.cursor/skills/verify-trivia/artifacts/.gitkeep
+

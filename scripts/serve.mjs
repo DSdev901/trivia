@@ -9,7 +9,7 @@
  */
 
 import http from "node:http";
-import { readFile } from "node:fs/promises";
+import { readFile, stat } from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
@@ -89,8 +89,14 @@ const server = http.createServer(async (req, res) => {
     return;
   }
   try {
-    const body = await readFile(abs);
-    const ext = path.extname(abs).toLowerCase();
+    let target = abs;
+    const st = await stat(target).catch(() => null);
+    if (st?.isDirectory()) target = path.join(target, "index.html");
+    else if (filePath.endsWith("/") || filePath.endsWith("\\")) {
+      target = path.join(abs, "index.html");
+    }
+    const body = await readFile(target);
+    const ext = path.extname(target).toLowerCase();
     res.writeHead(200, {
       "Content-Type": MIME[ext] || "application/octet-stream",
       ...(ext === ".json" || ext === ".geojson"

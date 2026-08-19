@@ -59,6 +59,18 @@ function guestbookBadgeHtml() {
   </a>`;
 }
 
+function guidelinesBadgeHtml() {
+  return `<a class="web-badge web-badge--guide" href="guidelines/" aria-label="Brand guidelines">
+    <svg viewBox="0 0 88 31" width="88" height="31" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" aria-hidden="true">
+      <rect width="88" height="31" fill="#1a2332"/>
+      <rect x="1" y="1" width="86" height="29" fill="#1a2332"/>
+      <rect x="2" y="2" width="84" height="1" fill="#e8c04a"/>
+      <text x="44" y="13" text-anchor="middle" fill="#f7f3eb" font-family="Tahoma, Geneva, sans-serif" font-size="7" font-weight="700">STYLE</text>
+      <text x="44" y="23" text-anchor="middle" fill="#e8c04a" font-family="Tahoma, Geneva, sans-serif" font-size="7.2" font-weight="700">GUIDELINES</text>
+    </svg>
+  </a>`;
+}
+
 function y2kBadgeHtml() {
   return `<span class="web-badge web-badge--y2k" role="img" aria-label="Y2K compliant">
     <svg viewBox="0 0 88 31" width="88" height="31" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" aria-hidden="true">
@@ -72,7 +84,7 @@ function y2kBadgeHtml() {
 }
 
 export function homeWebBadgesHtml() {
-  return `<div class="web-badges">${netscapeBadgeHtml()}${guestbookBadgeHtml()}${y2kBadgeHtml()}</div>`;
+  return `<div class="web-badges">${netscapeBadgeHtml()}${guestbookBadgeHtml()}${y2kBadgeHtml()}${guidelinesBadgeHtml()}</div>`;
 }
 
 function entryHtml(entry) {
