@@ -22,6 +22,11 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { writeBriefingFile } from "./write-briefing.mjs";
+import {
+  briefIsUsable,
+  compressBrief,
+  tidyBrief,
+} from "./apply-netflix-briefs.mjs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import {
@@ -888,8 +893,13 @@ function publicNetflixItem(item) {
     synopsis: String(item.synopsis || "").replace(/\s+/g, " ").trim(),
     starring: item.starring || [],
   };
-  const brief = String(item.brief || "").replace(/\s+/g, " ").trim();
-  if (brief) out.brief = brief;
+  const synopsis = out.synopsis;
+  const brief = tidyBrief(item.brief);
+  if (briefIsUsable(brief, synopsis)) out.brief = brief;
+  else {
+    const compressed = compressBrief(synopsis);
+    if (compressed) out.brief = compressed;
+  }
   if (item.image) out.image = item.image;
   if (item.inUS === true) out.inUS = true;
   else if (item.inUS === false) out.inUS = false;
@@ -910,10 +920,22 @@ async function withPreservedNetflixBriefs(items) {
     const brief = String(row.brief || "").replace(/\s+/g, " ").trim();
     if (brief) briefs.set(normNetflixTitle(row.title), brief);
   }
-  if (!briefs.size) return items;
+  if (!briefs.size) {
+    return items.map((item) => {
+      if (briefIsUsable(item.brief, item.synopsis)) return item;
+      const brief = compressBrief(item.synopsis);
+      return brief ? { ...item, brief } : item;
+    });
+  }
   return items.map((item) => {
-    if (item.brief) return item;
-    const brief = briefs.get(normNetflixTitle(item.title));
+    const preserved = briefs.get(normNetflixTitle(item.title));
+    if (briefIsUsable(item.brief, item.synopsis)) {
+      return { ...item, brief: tidyBrief(item.brief) };
+    }
+    if (briefIsUsable(preserved, item.synopsis)) {
+      return { ...item, brief: tidyBrief(preserved) };
+    }
+    const brief = compressBrief(item.synopsis);
     return brief ? { ...item, brief } : item;
   });
 }

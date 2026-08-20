@@ -21,9 +21,9 @@ Preconditions:
 - `data/current-events/netflix.json` includes at least one item with `brief`, or the Brevity toggle will not render.
 
 - **Open Netflix.** From home, click the link whose name includes `Netflix`. Heading is `Netflix`.
-- **Brevity.** Snapshot until a checkbox named `Brevity` exists. Click it. Card copy switches from `synopsis` to `brief` (CDP on `.ce-netflix-copy p`). Click again to restore.
+- **Brevity.** Snapshot until a checkbox named `Brevity` exists. Click it. Card copy switches from `synopsis` to `brief` on every card that has copy, not only the first few (CDP on `.ce-netflix-copy p`). Click again to restore.
 
 ## Gotchas
 
 - Netflix is `current-events.js` with `mode: "netflix"`, not a separate page.
-- `brief` is filled on Tuesdays by Copilot Haiku after the briefing rewrite. A refresh keeps existing briefs by title until that job runs.
+- Every title with a synopsis should have a `brief` (local compress, then Tuesday Copilot rewrite). A refresh keeps a usable brief by title.
