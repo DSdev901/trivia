@@ -258,7 +258,13 @@ body::after {
 
 @media (min-width: 861px) {
   body:not(.is-home) {
-    --app-max: 100%;
+    --app-max: calc(100% - 7rem);
+    --pattern-gap: 0.7rem;
+  }
+
+  body:not(.is-home)::before,
+  body:not(.is-home)::after {
+    width: max(0px, calc(var(--gutter) - var(--pattern-gap)));
   }
 
   body:not(.is-home) .top {
@@ -2458,8 +2464,20 @@ a.ce-tab {
 .ce-filter {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.4rem;
   margin: 0 0 1rem;
+}
+
+.ce-filter-toggles {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.15rem;
+}
+
+.ce-filter-toggles .ce-toggle {
+  margin-left: 0;
 }
 
 .ce-group {
@@ -4341,6 +4359,15 @@ a.ce-tab {
 }
 
 @media (max-width: 860px) {
+  .ce-filter:has(.ce-filter-toggles) {
+    row-gap: 0.85rem;
+  }
+
+  .ce-filter-toggles {
+    flex: 1 1 100%;
+    padding-top: 0.05rem;
+  }
+
   .section-title {
     font-size: 1.4rem;
   }

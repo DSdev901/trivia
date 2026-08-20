@@ -615,9 +615,13 @@ function netflixFilterBar(allItems) {
         <span class="ce-toggle-text">Brevity</span>
       </label>`
     : "";
+  const toggles =
+    usToggle || brevityToggle
+      ? `<div class="ce-filter-toggles">${usToggle}${brevityToggle}</div>`
+      : "";
   return `
     <div class="ce-filter" role="group" aria-label="Filter Netflix releases">
-      ${typeBar}${usToggle}${brevityToggle}
+      ${typeBar}${toggles}
     </div>`;
 }
 
