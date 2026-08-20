@@ -296,6 +296,10 @@ body:not(.is-home) .app {
   transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
 
+.nav-btn {
+  background: #fff;
+}
+
 .nav-btn#home-btn {
   display: inline-flex;
   align-items: center;
