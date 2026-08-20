@@ -286,7 +286,7 @@ body:not(.is-home) .app {
   }
 
   body:not(.is-home) .view:not(#view-periodic-table):not(#view-geography):not([data-mode="netflix"]) {
-    width: min(44.444vw, 100%);
+    width: min(53.333vw, 100%);
     margin-left: auto;
     margin-right: auto;
   }
