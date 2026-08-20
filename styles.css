@@ -266,8 +266,12 @@ body:not(.is-home) .app {
     padding-right: calc((100vw - 100%) / 2 + var(--inner-chrome-inset));
     position: relative;
     z-index: 2;
-    background-color: color-mix(in srgb, var(--paper) 70%, var(--paper-deep));
-    background-image: none;
+    background-color: var(--paper-deep);
+    background-image: var(--memphis-image);
+    background-size: var(--memphis-size);
+    background-repeat: repeat;
+    background-position: top left;
+    background-blend-mode: darken;
     border-bottom: 0;
     box-shadow:
       inset -1px -1px 0 #1a2332,
