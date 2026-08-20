@@ -106,9 +106,9 @@ export async function renderGuestbook({ els }) {
       ],
       escapeHtml
     )}
+    <h2 class="section-title">Guestbook</h2>
+    <p class="lede">Thanks for stopping by. Sign the book — a name, a hometown if you like, and a short note.</p>
     <div class="gb-page">
-      <h2 class="section-title">Guestbook</h2>
-      <p class="lede">Thanks for stopping by. Sign the book — a name, a hometown if you like, and a short note.</p>
       <form class="gb-form" id="gb-form" autocomplete="on">
         <label class="gb-hp" aria-hidden="true">Homepage<input type="text" name="homepage" tabindex="-1" autocomplete="off"></label>
         <label>Name <input type="text" name="name" maxlength="28" required></label>
