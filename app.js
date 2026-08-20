@@ -79,6 +79,8 @@ const els = {
   guestbook: document.getElementById("view-guestbook"),
 };
 
+const WIDE_VIEWS = new Set(["netflix", "periodic-table", "geography"]);
+
 const VIEWS = [
   "categories",
   "hub",
@@ -121,6 +123,10 @@ function show(view) {
   els.nav.hidden = view === "categories";
   els.backBtn.hidden = view === "categories";
   document.body.classList.toggle("is-home", view === "categories");
+  document.body.classList.toggle(
+    "is-wide-view",
+    WIDE_VIEWS.has(state.category?.id)
+  );
   if (changed) scrollPageTop();
 }
 

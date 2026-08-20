@@ -284,6 +284,12 @@ body:not(.is-home) .app {
     padding-left: var(--inner-chrome-inset);
     padding-right: var(--inner-chrome-inset);
   }
+
+  body:not(.is-home):not(.is-wide-view) .view {
+    width: min(33.333vw, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
