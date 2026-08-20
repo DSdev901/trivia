@@ -30,14 +30,6 @@
           .replace(/^#/, "")
           .replace(/^\/+|\/+$/g, "");
         if (raw) document.body.classList.remove("is-home");
-        var first = raw.split("/")[0];
-        if (
-          first === "netflix" ||
-          first === "periodic-table" ||
-          first === "geography"
-        ) {
-          document.body.classList.add("is-wide-view");
-        }
       })();
     </script>
     <div class="app">

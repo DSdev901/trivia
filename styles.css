@@ -266,7 +266,7 @@ body:not(.is-home) .app {
     padding-right: calc((100vw - 100%) / 2 + var(--inner-chrome-inset));
     position: relative;
     z-index: 2;
-    background-color: var(--paper-deep);
+    background-color: color-mix(in srgb, var(--paper) 70%, var(--paper-deep));
     background-image: none;
     border-bottom: 0;
     box-shadow:
@@ -285,8 +285,8 @@ body:not(.is-home) .app {
     padding-right: var(--inner-chrome-inset);
   }
 
-  body:not(.is-home):not(.is-wide-view) .view {
-    width: min(33.333vw, 100%);
+  body:not(.is-home) .view:not(#view-periodic-table):not(#view-geography):not([data-mode="netflix"]) {
+    width: min(44.444vw, 100%);
     margin-left: auto;
     margin-right: auto;
   }

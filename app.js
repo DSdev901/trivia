@@ -79,8 +79,6 @@ const els = {
   guestbook: document.getElementById("view-guestbook"),
 };
 
-const WIDE_VIEWS = new Set(["netflix", "periodic-table", "geography"]);
-
 const VIEWS = [
   "categories",
   "hub",
@@ -123,10 +121,6 @@ function show(view) {
   els.nav.hidden = view === "categories";
   els.backBtn.hidden = view === "categories";
   document.body.classList.toggle("is-home", view === "categories");
-  document.body.classList.toggle(
-    "is-wide-view",
-    WIDE_VIEWS.has(state.category?.id)
-  );
   if (changed) scrollPageTop();
 }
 
@@ -1738,6 +1732,7 @@ async function applyRoute() {
   state.category = category;
 
   if (category.type === "current-events") {
+    els.currentEvents.dataset.mode = "news";
     show("currentEvents");
     await renderCurrentEvents({ els, mode: "news", tab: rest[0] });
     if (seq !== routeSeq) return;
@@ -1746,6 +1741,7 @@ async function applyRoute() {
     return;
   }
   if (category.type === "netflix") {
+    els.currentEvents.dataset.mode = "netflix";
     show("currentEvents");
     await renderCurrentEvents({ els, mode: "netflix" });
     if (seq !== routeSeq) return;
