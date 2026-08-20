@@ -272,13 +272,6 @@ function briefingPayload() {
   };
 }
 
-function briefingIsNew() {
-  const gen = ce.briefing?.generatedAt;
-  if (!gen) return false;
-  const ageH = (Date.now() - new Date(gen).getTime()) / 3600000;
-  return Number.isFinite(ageH) && ageH >= 0 && ageH <= 36;
-}
-
 function sportTag(item) {
   return item.sport || item.tag || "Sports";
 }
@@ -863,11 +856,7 @@ function render() {
               : href(["current-events"]);
           return `
         <a role="tab" class="ce-tab ${s.id === ce.tab ? "is-active" : ""}"
-          href="${tabHref}" data-tab="${s.id}" aria-selected="${s.id === ce.tab}">${s.label}${
-            s.id === "briefing" && briefingIsNew()
-              ? `<span class="ce-tab-new">New</span>`
-              : ""
-          }</a>`;
+          href="${tabHref}" data-tab="${s.id}" aria-selected="${s.id === ce.tab}">${s.label}</a>`;
         })
         .join("")}
     </div>`
