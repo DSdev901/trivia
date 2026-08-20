@@ -2583,6 +2583,7 @@ a.ce-tab {
 }
 
 .ce-card {
+  position: relative;
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid var(--stripe);
   border-radius: var(--radius);
@@ -2689,6 +2690,21 @@ a.ce-tab {
 .ce-badge-top {
   color: #fff;
   background: var(--accent-deep);
+}
+
+.ce-coverage {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  font-size: 0.82rem;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.ce-card:has(.ce-coverage) {
+  padding-right: 2.6rem;
 }
 
 .ce-date {

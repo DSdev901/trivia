@@ -438,6 +438,11 @@ function briefingCard(item, idx) {
   const coverage = Number(item.coverage) || 1;
   return `
     <article class="ce-card ce-story-card" data-idx="${idx}">
+      ${
+        coverage > 1
+          ? `<span class="ce-coverage" aria-label="Mentioned ${coverage} times">#${coverage}</span>`
+          : ""
+      }
       <div class="ce-meta">
         <div class="ce-meta-lead">
           <span class="ce-rank" aria-label="Rank ${item._rank || idx + 1}">${item._rank || idx + 1}</span>
@@ -447,11 +452,6 @@ function briefingCard(item, idx) {
               : ""
           }
           <span class="ce-badge ce-badge-alt">${escapeHtml(item.tag || "News")}</span>
-          ${
-            coverage > 1
-              ? `<span class="ce-badge ce-badge-top">Mentioned ${coverage}×</span>`
-              : ""
-          }
         </div>
         <div class="ce-meta-end">
           <span class="ce-date">${fmtDate(item.date)}</span>
