@@ -84,6 +84,23 @@ textarea,
   outline: none;
 }
 
+html:has(body:not(.is-home)),
+body:not(.is-home) {
+  background-attachment: fixed;
+}
+
+body:not(.is-home)::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-color: var(--paper);
+  background-image: var(--memphis-image);
+  background-size: var(--memphis-size);
+  background-repeat: repeat;
+}
+
 .app {
   position: relative;
   z-index: 1;
