@@ -1246,34 +1246,6 @@ a.web-badge:focus-visible {
   color: var(--ink-soft);
 }
 
-.crumbs {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.35rem 0.45rem;
-  margin: 0 0 0.85rem;
-  font-size: 0.88rem;
-  font-weight: 600;
-}
-
-.crumbs a {
-  color: var(--accent-deep);
-  text-decoration: none;
-}
-
-.crumbs a:hover {
-  text-decoration: underline;
-}
-
-.crumbs-sep {
-  color: var(--ink-soft);
-  font-weight: 500;
-}
-
-.crumbs-now {
-  color: var(--ink-soft);
-}
-
 a.category-card,
 a.batch-card,
 a.hub-card,
@@ -3295,11 +3267,6 @@ a.ce-tab {
   margin-bottom: 0.85rem;
 }
 
-.geo-play--map .crumbs,
-.geo-play--study .crumbs {
-  display: none;
-}
-
 .geo-play .geo-toolbar {
   gap: 0.45rem 0.75rem;
   margin-bottom: 0.55rem;
@@ -4418,10 +4385,6 @@ a.ce-tab {
   .batch-check-body {
     min-height: 2.75rem;
     padding: 0.8rem 0.85rem 0.8rem 2.5rem;
-  }
-
-  .crumbs {
-    margin-bottom: 0.55rem;
   }
 
   .geo-pack-card,
