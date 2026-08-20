@@ -50,8 +50,21 @@ body {
   color: var(--ink);
   background-color: var(--paper);
   line-height: 1.5;
+  cursor: default;
+  caret-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
   --app-width: min(var(--app-max), calc(100vw - 2 * var(--app-inset)));
   --gutter: max(0px, calc((100vw - var(--app-width)) / 2));
+}
+
+input:not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="range"]):not([type="color"]):not([type="hidden"]),
+textarea,
+[contenteditable="true"] {
+  caret-color: auto;
+  cursor: text;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 /* Click/tap must not leave a ring. Caret fields keep :focus chrome. */

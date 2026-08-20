@@ -1934,6 +1934,7 @@ function suppressPointerFocus() {
       if (el.closest("button, a, summary, [role='button']")) {
         event.preventDefault();
       }
+      window.getSelection()?.removeAllRanges();
     },
     true
   );
@@ -1944,6 +1945,7 @@ function suppressPointerFocus() {
       const active = document.activeElement;
       if (!(active instanceof HTMLElement) || allowsCaretFocus(active)) return;
       active.blur();
+      window.getSelection()?.removeAllRanges();
     },
     true
   );
