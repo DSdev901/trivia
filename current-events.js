@@ -44,6 +44,24 @@ const BRIEFING_FILTERS = [
   { id: "world", label: "World" },
 ];
 
+const NETFLIX_BREVITY_KEY = "trivia-netflix-brevity";
+
+function readNetflixBrevity() {
+  try {
+    return localStorage.getItem(NETFLIX_BREVITY_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function saveNetflixBrevity(on) {
+  try {
+    localStorage.setItem(NETFLIX_BREVITY_KEY, on ? "1" : "0");
+  } catch {
+    /* private mode */
+  }
+}
+
 const ce = {
   data: {}, // sectionId -> payload
   briefing: null,
@@ -55,6 +73,7 @@ const ce = {
   feedFilter: "all", // "all" | "sports" | "entertainment" | "world"
   netflixFilter: "all", // "all" | "shows" | "movies"
   netflixUsOnly: false,
+  netflixBrevity: readNetflixBrevity(),
   sportFilter: "all", // "all" | sport label e.g. "NFL"
   refreshing: false,
   notice: "",
@@ -173,12 +192,17 @@ function newsSpeakCleanup(text) {
     .replace(/\bIMAX\b/g, "I MAX");
 }
 
+function netflixBlurb(item) {
+  if (ce.netflixBrevity && item.brief) return item.brief;
+  return item.synopsis;
+}
+
 function netflixSpeechLine(item) {
   // Labels like "Docuseries" / "Film" stay visual-only — not read aloud.
   const parts = [
     `${item.title}.`,
     `Released ${spokenDate(item.date)}.`,
-    item.synopsis,
+    netflixBlurb(item),
   ];
   const stars = (item.starring || []).filter(Boolean);
   if (stars.length) parts.push(`Starring ${joinNames(stars)}.`);
@@ -368,7 +392,7 @@ function netflixCard(item, idx) {
         }
       </div>
       <h3>${escapeHtml(item.title)}</h3>
-      <p>${escapeHtml(item.synopsis)}</p>
+      <p>${escapeHtml(netflixBlurb(item))}</p>
       ${
         stars.length
           ? `<div class="ce-stars"><span class="ce-stars-label">Starring</span>${stars
@@ -587,9 +611,20 @@ function netflixFilterBar(allItems) {
         <span class="ce-toggle-text">US only <span class="ce-filter-count">${usInType}</span></span>
       </label>`
     : "";
+  const hasBriefs = allItems.some((i) => String(i.brief || "").trim());
+  const brevityToggle = hasBriefs
+    ? `
+      <label class="ce-toggle">
+        <input type="checkbox" id="netflix-brevity" ${
+          ce.netflixBrevity ? "checked" : ""
+        } />
+        <span class="ce-toggle-switch" aria-hidden="true"></span>
+        <span class="ce-toggle-text">Brevity</span>
+      </label>`
+    : "";
   return `
     <div class="ce-filter" role="group" aria-label="Filter Netflix releases">
-      ${typeBar}${usToggle}
+      ${typeBar}${usToggle}${brevityToggle}
     </div>`;
 }
 
@@ -850,6 +885,13 @@ function render() {
     stopPlayback();
     ce.netflixUsOnly = e.target.checked;
     window.scrollTo(0, 0);
+    render();
+  });
+
+  document.getElementById("netflix-brevity")?.addEventListener("change", (e) => {
+    stopPlayback();
+    ce.netflixBrevity = e.target.checked;
+    saveNetflixBrevity(ce.netflixBrevity);
     render();
   });
 

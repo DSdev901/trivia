@@ -832,6 +832,7 @@ function mergeNetflixCards(keep, incoming) {
   if (incoming.tmdbId && !out.tmdbId) out.tmdbId = incoming.tmdbId;
   if (incoming.wikiTitle && !out.wikiTitle) out.wikiTitle = incoming.wikiTitle;
   if (incoming.image && !out.image) out.image = incoming.image;
+  if (incoming.brief && !out.brief) out.brief = incoming.brief;
   if (incoming.confirmedOriginal) out.confirmedOriginal = true;
   return out;
 }
@@ -875,6 +876,10 @@ function dedupeNetflix(items, loose) {
   return out;
 }
 
+function normNetflixTitle(s) {
+  return String(s || "").replace(/\s+/g, " ").trim().toLowerCase();
+}
+
 function publicNetflixItem(item) {
   const out = {
     title: item.title,
@@ -883,10 +888,34 @@ function publicNetflixItem(item) {
     synopsis: String(item.synopsis || "").replace(/\s+/g, " ").trim(),
     starring: item.starring || [],
   };
+  const brief = String(item.brief || "").replace(/\s+/g, " ").trim();
+  if (brief) out.brief = brief;
   if (item.image) out.image = item.image;
   if (item.inUS === true) out.inUS = true;
   else if (item.inUS === false) out.inUS = false;
   return out;
+}
+
+async function withPreservedNetflixBriefs(items) {
+  let prev = [];
+  try {
+    prev =
+      JSON.parse(await readFile(path.join(OUT_DIR, "netflix.json"), "utf8"))
+        .items || [];
+  } catch {
+    prev = [];
+  }
+  const briefs = new Map();
+  for (const row of prev) {
+    const brief = String(row.brief || "").replace(/\s+/g, " ").trim();
+    if (brief) briefs.set(normNetflixTitle(row.title), brief);
+  }
+  if (!briefs.size) return items;
+  return items.map((item) => {
+    if (item.brief) return item;
+    const brief = briefs.get(normNetflixTitle(item.title));
+    return brief ? { ...item, brief } : item;
+  });
 }
 
 // Wikimedia asks API clients for a descriptive UA; browser UAs get throttled.
@@ -1650,6 +1679,9 @@ async function buildNetflix() {
           String(i.image || "").startsWith(`${POSTER_URL_PREFIX}/`)
             ? i.image
             : "",
+        ...(String(i.brief || "").trim()
+          ? { brief: String(i.brief).replace(/\s+/g, " ").trim() }
+          : {}),
       }));
     items.push(...seeded);
     if (seeded.length)
@@ -1883,12 +1915,16 @@ async function writeSection(section, items, minItems, win = null) {
     );
     return false;
   }
+  let outItems = items;
+  if (section === "netflix") {
+    outItems = await withPreservedNetflixBriefs(items);
+  }
   const payload = {
     section,
     generatedAt: now.toISOString(),
     windowStart: win?.start || windowStart,
     windowEnd: win?.end || windowEnd,
-    items,
+    items: outItems,
   };
   await writeFile(file, `${JSON.stringify(payload, null, 2)}\n`);
   console.log(`  [${section}] wrote ${items.length} items`);

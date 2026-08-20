@@ -404,6 +404,85 @@ function homeTickerHtml() {
     </div>`;
 }
 
+function tickerCopyX(el) {
+  const t = getComputedStyle(el).transform;
+  if (!t || t === "none") return 0;
+  return new DOMMatrix(t).m41;
+}
+
+function wrapTickerX(x, seq) {
+  if (seq <= 0) return 0;
+  x %= seq;
+  if (x > 0) x -= seq;
+  if (x <= -seq) x += seq;
+  return x;
+}
+
+function bindHomeTickerDrag() {
+  const ticker = document.querySelector("#view-categories .home-ticker");
+  const track = ticker?.querySelector(".home-ticker-track");
+  const copy = ticker?.querySelector(".home-ticker-copy");
+  if (!ticker || !track || !copy) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  let dragging = false;
+  let startX = 0;
+  let baseX = 0;
+  let lastX = 0;
+
+  const seqW = () => {
+    const seq = copy.querySelector(".home-ticker-seq");
+    return seq ? seq.getBoundingClientRect().width : copy.scrollWidth / 2;
+  };
+
+  const onMove = (event) => {
+    if (!dragging) return;
+    lastX = wrapTickerX(baseX + (event.clientX - startX), seqW());
+    copy.style.transform = `translateX(${lastX}px)`;
+  };
+
+  const endDrag = () => {
+    if (!dragging) return;
+    dragging = false;
+    window.removeEventListener("pointermove", onMove);
+    window.removeEventListener("pointerup", endDrag);
+    window.removeEventListener("pointercancel", endDrag);
+    const seq = seqW();
+    const x = wrapTickerX(lastX, seq);
+    const dur = parseFloat(getComputedStyle(copy).animationDuration) || 40;
+    const progress = seq ? Math.min(1, Math.max(0, -x / seq)) : 0;
+    ticker.classList.remove("is-dragging");
+    copy.style.transform = "";
+    copy.style.animation = "none";
+    void copy.offsetWidth;
+    copy.style.animation = "";
+    copy.style.animationDelay = `-${progress * dur}s`;
+  };
+
+  track.addEventListener("pointerdown", (event) => {
+    if (event.button !== 0) return;
+    event.preventDefault();
+    dragging = true;
+    startX = event.clientX;
+    ticker.classList.add("is-dragging");
+    baseX = tickerCopyX(copy);
+    lastX = baseX;
+    // CSS animations override inline transform even while paused.
+    copy.style.animation = "none";
+    copy.style.transform = `translateX(${baseX}px)`;
+    try {
+      track.setPointerCapture(event.pointerId);
+    } catch (_) {
+      /* constructed / uncaptured pointers still move via window */
+    }
+    window.addEventListener("pointermove", onMove);
+    window.addEventListener("pointerup", endDrag);
+    window.addEventListener("pointercancel", endDrag);
+  });
+
+  track.addEventListener("pointermove", onMove);
+}
+
 function renderCategories(categories, stamp) {
   const fresh = isSameLocalDay(stamp?.generatedAt);
   els.categories.innerHTML = `
@@ -430,6 +509,7 @@ function renderCategories(categories, stamp) {
       ${homeWebBadgesHtml()}
     </div>
   `;
+  bindHomeTickerDrag();
   void decorateHomeExtras();
 }
 
@@ -1817,6 +1897,58 @@ function konamiTypingTarget(el) {
   );
 }
 
+const POINTER_FOCUS_SKIP = new Set([
+  "checkbox",
+  "radio",
+  "button",
+  "submit",
+  "reset",
+  "image",
+  "hidden",
+  "range",
+  "color",
+]);
+
+function allowsCaretFocus(el) {
+  if (!el || el === document.body || el === document.documentElement) {
+    return false;
+  }
+  if (el.isContentEditable) return true;
+  if (el instanceof HTMLTextAreaElement || el instanceof HTMLSelectElement) {
+    return true;
+  }
+  if (el instanceof HTMLInputElement) {
+    return !POINTER_FOCUS_SKIP.has(el.type);
+  }
+  return false;
+}
+
+function suppressPointerFocus() {
+  document.addEventListener(
+    "mousedown",
+    (event) => {
+      const el = event.target instanceof Element ? event.target : null;
+      if (!el || el.closest("input, textarea, select, [contenteditable='true']")) {
+        return;
+      }
+      if (el.closest("button, a, summary, [role='button']")) {
+        event.preventDefault();
+      }
+    },
+    true
+  );
+  document.addEventListener(
+    "click",
+    (event) => {
+      if (event.detail === 0) return;
+      const active = document.activeElement;
+      if (!(active instanceof HTMLElement) || allowsCaretFocus(active)) return;
+      active.blur();
+    },
+    true
+  );
+}
+
 function showWin95IllegalOp() {
   if (document.querySelector(".win95-overlay")) return;
   const fact =
@@ -1893,6 +2025,7 @@ function bindKonamiEgg() {
 }
 
 bindKonamiEgg();
+suppressPointerFocus();
 
 async function init() {
   document.body.classList.toggle("is-home", !parseHash().category);

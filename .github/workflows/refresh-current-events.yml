@@ -15,7 +15,7 @@ on:
 
 permissions:
   contents: write # needed to push the refreshed data commit
-  copilot-requests: write # Copilot CLI rewrites the top briefing stories
+  copilot-requests: write # Copilot CLI rewrites briefing stories and Netflix briefs
 
 concurrency:
   group: current-events-data-writer
@@ -63,6 +63,10 @@ jobs:
           node scripts/briefing-copilot-budget.mjs
           cp data/current-events/briefing.json /tmp/briefing.input.json
 
+      - name: Install Copilot CLI
+        if: steps.briefing_budget.outputs.skip != 'true'
+        run: npm install -g @github/copilot
+
       - name: Rank Tuesday briefing with Copilot
         if: steps.briefing_budget.outputs.skip != 'true'
         continue-on-error: true
@@ -70,13 +74,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COPILOT_MODEL: ${{ steps.briefing_budget.outputs.model }}
         run: |
-          npm install -g @github/copilot
           echo "Copilot mode=${{ steps.briefing_budget.outputs.mode }} model=${COPILOT_MODEL} cards=${{ steps.briefing_budget.outputs.keep }} remaining=${{ steps.briefing_budget.outputs.remaining }}"
           BRIEFING_FALLBACK=/tmp/briefing.fallback.json \
           BRIEFING_INPUT=/tmp/briefing.input.json \
           BRIEFING_TOP_N=40 \
             node scripts/run-briefing-copilot.mjs \
             || true
+
+      - name: Shorten Netflix synopses with Copilot
+        if: steps.briefing_budget.outputs.skip != 'true'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COPILOT_MODEL: ${{ steps.briefing_budget.outputs.model }}
+        run: node scripts/run-netflix-brevity-copilot.mjs || true
 
       - name: Commit updated data
         run: |
