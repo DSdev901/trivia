@@ -26,11 +26,6 @@
   box-sizing: border-box;
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
 html,
 body {
   margin: 0;
@@ -41,6 +36,16 @@ body {
   overscroll-behavior-x: none;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  min-height: 100vh;
+  background-color: var(--paper);
+  background-image: var(--memphis-image);
+  background-size: var(--memphis-size);
+  background-repeat: repeat;
+}
+
 body {
   overflow-x: hidden;
   padding-top: env(safe-area-inset-top);
@@ -49,6 +54,9 @@ body {
   font-family: var(--font-body);
   color: var(--ink);
   background-color: var(--paper);
+  background-image: var(--memphis-image);
+  background-size: var(--memphis-size);
+  background-repeat: repeat;
   line-height: 1.5;
   cursor: default;
   caret-color: transparent;
@@ -74,29 +82,6 @@ textarea,
 
 .ce-toggle:has(:focus:not(:focus-visible)) .ce-toggle-switch {
   outline: none;
-}
-
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: 0;
-  width: var(--gutter);
-  pointer-events: none;
-  background-color: var(--paper);
-  background-image: var(--memphis-image);
-  background-size: var(--memphis-size);
-  background-repeat: repeat;
-}
-
-body::before {
-  left: 0;
-}
-
-body::after {
-  right: 0;
 }
 
 .app {
@@ -256,15 +241,14 @@ body::after {
   }
 }
 
+body:not(.is-home) .app {
+  min-height: 100vh;
+  background-color: color-mix(in srgb, var(--paper) 95%, transparent);
+}
+
 @media (min-width: 861px) {
   body:not(.is-home) {
     --app-max: calc(100% - 7rem);
-    --pattern-gap: 0.7rem;
-  }
-
-  body:not(.is-home)::before,
-  body:not(.is-home)::after {
-    width: max(0px, calc(var(--gutter) - var(--pattern-gap)));
   }
 
   body:not(.is-home) .top {
@@ -379,17 +363,6 @@ body::after {
 }
 
 /* Home: pub-quiz menu board */
-body.is-home {
-  background-image: var(--memphis-image);
-  background-size: var(--memphis-size);
-  background-repeat: repeat;
-}
-
-body.is-home::before,
-body.is-home::after {
-  display: none;
-}
-
 body.is-home .app {
   padding-top: 1.15rem;
 }
