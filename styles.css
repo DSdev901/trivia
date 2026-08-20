@@ -266,18 +266,14 @@ body:not(.is-home) .app {
     padding-right: calc((100vw - 100%) / 2 + var(--inner-chrome-inset));
     position: relative;
     z-index: 2;
-    background-color: var(--paper);
-    background-image: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0) 28%,
-      rgba(26, 35, 50, 0.045) 100%
-    );
-    border-bottom-color: color-mix(in srgb, var(--stripe) 85%, transparent);
+    background-color: var(--paper-deep);
+    background-image: none;
+    border-bottom: 0;
     box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.9),
-      inset 0 -1px 0 rgba(26, 35, 50, 0.06),
-      0 8px 20px rgba(26, 35, 50, 0.09);
+      inset -1px -1px 0 #1a2332,
+      inset 1px 1px 0 #fff,
+      inset -2px -2px 0 #808080,
+      inset 2px 2px 0 #fff;
   }
 
   body:not(.is-home) .brand-logo--badge {
