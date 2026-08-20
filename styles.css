@@ -41,9 +41,6 @@ html {
   text-size-adjust: 100%;
   min-height: 100vh;
   background-color: var(--paper);
-  background-image: var(--memphis-image);
-  background-size: var(--memphis-size);
-  background-repeat: repeat;
 }
 
 body {
@@ -54,9 +51,6 @@ body {
   font-family: var(--font-body);
   color: var(--ink);
   background-color: var(--paper);
-  background-image: var(--memphis-image);
-  background-size: var(--memphis-size);
-  background-repeat: repeat;
   line-height: 1.5;
   cursor: default;
   caret-color: transparent;
@@ -84,18 +78,8 @@ textarea,
   outline: none;
 }
 
-html:has(body:not(.is-home)),
-body:not(.is-home) {
-  background-attachment: fixed;
-}
-
-body:not(.is-home)::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background-color: var(--paper);
+html:has(body.is-home),
+body.is-home {
   background-image: var(--memphis-image);
   background-size: var(--memphis-size);
   background-repeat: repeat;
@@ -260,7 +244,7 @@ body:not(.is-home)::before {
 
 body:not(.is-home) .app {
   min-height: 100vh;
-  background-color: color-mix(in srgb, var(--paper) 95%, transparent);
+  background-color: var(--paper);
 }
 
 @media (min-width: 861px) {
@@ -268,9 +252,23 @@ body:not(.is-home) .app {
     --app-max: calc(100% - 7rem);
   }
 
+  body:not(.is-home) .app {
+    padding-top: 0;
+  }
+
   body:not(.is-home) .top {
-    padding-left: var(--inner-chrome-inset);
-    padding-right: var(--inner-chrome-inset);
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-top: 2rem;
+    padding-left: calc((100vw - 100%) / 2 + var(--inner-chrome-inset));
+    padding-right: calc((100vw - 100%) / 2 + var(--inner-chrome-inset));
+    background-color: var(--paper);
+    background-image: var(--memphis-image);
+    background-size: var(--memphis-size);
+    background-repeat: repeat;
+    background-position: top left;
   }
 
   body:not(.is-home) .brand-logo--badge {
