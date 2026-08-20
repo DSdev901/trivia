@@ -2380,8 +2380,32 @@ function renderPlay() {
     .filter(Boolean)
     .join(" ");
 
+  const closeHtml = showMap
+    ? `<a class="geo-play-close" href="${packHref()}" aria-label="Close">×</a>`
+    : "";
+  const actionsHtml = controls
+    ? `<div class="geo-quiz-actions">${controls}</div>`
+    : "";
+  const feedbackHtml = `<div id="geo-feedback" class="quiz-feedback" hidden></div>`;
+  const nextHtml = `
+          <div class="geo-next-row" id="geo-next-row" hidden>
+            <button type="button" class="primary-btn" id="geo-next">Next</button>
+          </div>`;
+  const answerHtml = showMap
+    ? `<div class="geo-answer-bar">
+          <div class="geo-answer-cluster">
+            ${actionsHtml}
+            ${feedbackHtml}
+          </div>
+          ${nextHtml}
+        </div>`
+    : `${actionsHtml}
+          ${feedbackHtml}
+          ${nextHtml}`;
+
   geo.root.innerHTML = `
     <div class="${playClass}">
+      ${closeHtml}
       ${geoCrumbs(MODE_META[geo.mode]?.label || geo.mode)}
       <div class="geo-toolbar">
         <a class="secondary-btn" href="${packHref()}">Modes</a>
@@ -2394,11 +2418,7 @@ function renderPlay() {
         ${showMap ? `<div class="geo-map-wrap">${mapHtml()}</div>` : ""}
         <aside class="geo-side">
           <div class="geo-quiz-panel" id="geo-quiz-panel">${prompt}</div>
-          ${controls ? `<div class="geo-quiz-actions">${controls}</div>` : ""}
-          <div id="geo-feedback" class="quiz-feedback" hidden></div>
-          <div class="geo-next-row" id="geo-next-row" hidden>
-            <button type="button" class="primary-btn" id="geo-next">Next</button>
-          </div>
+          ${answerHtml}
         </aside>
       </div>
     </div>`;
@@ -2435,16 +2455,6 @@ function flashPinMiss(id) {
 }
 
 function bindPlay() {
-  geo.root.querySelector("#geo-back-modes")?.addEventListener("click", () => {
-    if (
-      remaining() < geo.queue.length &&
-      !confirm("Leave this quiz? Progress on this run will be lost.")
-    ) {
-      return;
-    }
-    renderPackModes();
-  });
-
   geo.root.querySelector("#geo-next")?.addEventListener("click", () => {
     geo.index += 1;
     geo.answered = false;
