@@ -2401,7 +2401,7 @@ function renderPlay() {
   const feedbackHtml = `<div id="geo-feedback" class="quiz-feedback" hidden></div>`;
   const nextHtml = `
           <div class="geo-next-row" id="geo-next-row" hidden>
-            <button type="button" class="primary-btn" id="geo-next">Next</button>
+            <button type="button" class="secondary-btn pager-btn pager-btn--next" id="geo-next">Next</button>
           </div>`;
   const answerHtml = showMap
     ? `<div class="geo-answer-bar">

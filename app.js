@@ -139,10 +139,10 @@ function nextStudyNavHtml(category, batchNumber) {
   const prev = batchNumber > 1 ? batchNumber - 1 : null;
   const next = batchNumber < total ? batchNumber + 1 : null;
   const prevBtn = prev
-    ? `<a class="secondary-btn" href="${href([category.id, "study", String(prev)])}">Previous ${unit}: ${escapeHtml(batchLabel(category, prev))}</a>`
+    ? `<a class="secondary-btn pager-btn pager-btn--prev" href="${href([category.id, "study", String(prev)])}">Previous ${unit}: ${escapeHtml(batchLabel(category, prev))}</a>`
     : `<span class="batch-next-placeholder"></span>`;
   const nextBtn = next
-    ? `<a class="primary-btn" href="${href([category.id, "study", String(next)])}">Next ${unit}: ${escapeHtml(batchLabel(category, next))}</a>`
+    ? `<a class="secondary-btn pager-btn pager-btn--next" href="${href([category.id, "study", String(next)])}">Next ${unit}: ${escapeHtml(batchLabel(category, next))}</a>`
     : `<a class="secondary-btn" href="${href([category.id, "study"])}">Back to ${unit}s</a>`;
   return `
     <div class="batch-next-row">${prevBtn}${nextBtn}</div>`;
