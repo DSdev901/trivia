@@ -7,7 +7,7 @@ This directory is the maintained source for verifying user-facing behavior of Ge
 - Launch with `node .cursor/skills/verify-trivia/scripts/run.mjs launch` from the repo root.
 - Run `node .cursor/skills/verify-trivia/scripts/run.mjs doctor` and require `ok: true` for that pid and URL.
 - Drive only that loopback origin. Never the GitHub Pages host for a local proof.
-- Do not POST `/api/guestbook` or `/api/hits` to Railway.
+- Do not POST `/api/hits` to Railway.
 - Restore nothing on disk. Static JSON is the fixture.
 - Keep proof artifacts under `.cursor/skills/verify-trivia/artifacts/`.
 
@@ -15,7 +15,7 @@ This directory is the maintained source for verifying user-facing behavior of Ge
 
 - Start every recipe from home (`http://127.0.0.1:<port>/` with empty or `#/` hash) unless the feature says otherwise.
 - Prefer accessible names from `browser_snapshot` over CSS and coordinates.
-- Hash paths are user-visible: `#/movies`, `#/movies/quiz`, `#/geography`, `#/guestbook`.
+- Hash paths are user-visible: `#/movies`, `#/movies/quiz`, `#/geography`.
 - After a mutation-free navigation, prove with a snapshot and a screenshot.
 
 ## Proof and skip reporting
@@ -31,4 +31,3 @@ This directory is the maintained source for verifying user-facing behavior of Ge
 - [Netflix](./netflix.md) covers the originals list, filters, and the Brevity toggle.
 - [Movies quiz](./movies-quiz.md) covers hub, setup, and starting a round.
 - [Geography](./geography.md) covers opening the geography category from home.
-- [Guestbook](./guestbook.md) covers opening the guestbook view without signing.

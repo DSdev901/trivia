@@ -7,7 +7,7 @@ Home is the category menu for General Trivia. The user sees the General badge, a
 - `home-load` renders the menu from `data/categories.json`.
 - `home-ticker` exposes region `Themed trivia`.
 - `home-categories` lists Current Events, Netflix, Prior Saucer Trivia, Presidential Knowledge, Periodic Table, Geography, and Film & Movies.
-- `home-badges` includes Netscape and Sign the guestbook.
+- `home-badges` includes Netscape Site of the Day and Y2K Compliant.
 
 ## How to get to it (user POV)
 
@@ -24,7 +24,7 @@ Preconditions:
 - **Open home.** Navigate to the recorded URL. Run `browser_navigate` with that URL. The page title is `General Trivia` and `body` has class `is-home` once categories render.
 - **Wait for cards.** Snapshot until a link named `Film & Movies` exists. Category cards are injected by `app.js`; a snapshot taken too early only shows the empty `#view-categories`.
 - **Ticker.** Confirm a region named `Themed trivia`.
-- **Badges.** Confirm a link named `Sign the guestbook`.
+- **Badges.** Confirm images named `Netscape Site of the Day` and `Y2K compliant`.
 - **Proof.** Save `browser_snapshot` YAML to `artifacts/home/home.aria.yml` and a screenshot to `artifacts/home/home.png`. Write `artifacts/home/proof.txt` with the URL. The snapshot must contain `Film & Movies` and `Themed trivia`.
 
 ## Gotchas

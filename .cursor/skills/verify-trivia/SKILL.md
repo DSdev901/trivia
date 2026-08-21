@@ -1,13 +1,13 @@
 ---
 name: verify-trivia
-description: Drive the General Trivia static web app locally (home, hash-routed categories, quiz, guestbook view) and prove user-visible behavior. Use after UI or routing changes, or when a trivia PR needs runtime evidence.
+description: Drive the General Trivia static web app locally (home, hash-routed categories, quiz) and prove user-visible behavior. Use after UI or routing changes, or when a trivia PR needs runtime evidence.
 ---
 
 # Verify General Trivia
 
-Agent-facing. Read this cold. The user plays a static site (GitHub Pages). Local proof uses `scripts/serve.mjs`, not Railway. Do not POST guestbook or hits to production.
+Agent-facing. Read this cold. The user plays a static site (GitHub Pages). Local proof uses `scripts/serve.mjs`, not Railway. Do not POST hits to production.
 
-Primary surface: web UI at a loopback URL. Secondary: Railway API (`data/api.json`) for hits GET and guestbook GET. Mutations against that API are out of scope unless a disposable local `server/` is running (Postgres + `UPLOAD_PIN`). This skill does not start Postgres.
+Primary surface: web UI at a loopback URL. Secondary: Railway API (`data/api.json`) for hits GET. Mutations against that API are out of scope unless a disposable local `server/` is running (Postgres + `UPLOAD_PIN`). This skill does not start Postgres.
 
 Two instances can run on different ports. Do not drive a server you did not launch. Shared static files on disk are read-only; that is safe.
 
@@ -40,12 +40,12 @@ Stable handles:
 - Home category cards are links whose accessible name includes the category heading (`Current Events`, `Film & Movies`, `Geography`, …).
 - Quiz hub: link named `Quiz`.
 - Quiz setup: button `Start quiz` (`#start-quiz`, class `quiz-cta`).
-- Home: region `Themed trivia`; link `Sign the guestbook`.
+- Home: region `Themed trivia`.
 - After leaving home: button `Home` (`#home-btn`).
 
 Read `features/` before driving. Exercise the mapped entry points, not a shortcut into quiz state via localStorage.
 
-Localhost uses GET for `/api/hits` (no increment). Do not submit the guestbook form against production.
+Localhost uses GET for `/api/hits` (no increment).
 
 ## Evidence
 
