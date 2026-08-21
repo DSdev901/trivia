@@ -2602,18 +2602,13 @@ a.ce-tab {
 }
 
 .ce-coverage {
-  position: absolute;
-  top: 0.7rem;
-  right: 0.75rem;
   font-variant-numeric: tabular-nums;
   font-weight: 800;
   font-size: 0.82rem;
   line-height: 1;
   color: var(--accent);
-}
-
-.ce-card:has(.ce-coverage) {
-  padding-right: 2.6rem;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 .ce-date {
@@ -2646,6 +2641,18 @@ a.ce-tab {
   border: 1px solid var(--stripe);
   background: rgba(255, 255, 255, 0.6);
   color: var(--ink);
+}
+
+.ce-card-foot {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.6rem;
+}
+
+.ce-card-foot .ce-link {
+  margin-top: 0;
 }
 
 .ce-link {

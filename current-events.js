@@ -436,13 +436,15 @@ function sectionLabel(id) {
 function briefingCard(item, idx) {
   const people = item.people || [];
   const coverage = Number(item.coverage) || 1;
+  const link = item.url
+    ? `<a class="ce-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">Read the full story →</a>`
+    : "";
+  const times =
+    coverage > 1
+      ? `<span class="ce-coverage" aria-label="Mentioned ${coverage} times">${coverage}x</span>`
+      : "";
   return `
     <article class="ce-card ce-story-card" data-idx="${idx}">
-      ${
-        coverage > 1
-          ? `<span class="ce-coverage" aria-label="Mentioned ${coverage} times">#${coverage}</span>`
-          : ""
-      }
       <div class="ce-meta">
         <div class="ce-meta-lead">
           <span class="ce-rank" aria-label="Rank ${item._rank || idx + 1}">${item._rank || idx + 1}</span>
@@ -465,8 +467,8 @@ function briefingCard(item, idx) {
       <h3>${highlightPeople(item.headline, people)}</h3>
       <p>${highlightPeople(item.summary, people)}</p>
       ${
-        item.url
-          ? `<a class="ce-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">Read the full story →</a>`
+        link || times
+          ? `<div class="ce-card-foot">${link}${times}</div>`
           : ""
       }
     </article>`;
