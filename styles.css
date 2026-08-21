@@ -964,15 +964,13 @@ body.is-home .brand-eye-glint::after {
 }
 
 .web-badge--netscape,
-.web-badge--gb,
-.web-badge--y2k {
+.web-badge--gb {
   width: 132px;
   height: 47px;
 }
 
 .web-badge--netscape svg,
-.web-badge--gb svg,
-.web-badge--y2k svg {
+.web-badge--gb svg {
   width: 132px;
   height: 47px;
 }
@@ -1951,6 +1949,10 @@ a.ce-tab {
 .hub-card p {
   margin: 0.45rem 0 0;
   color: var(--ink-soft);
+}
+
+.quiz-select-actions {
+  margin-bottom: 0.85rem;
 }
 
 .batch-check-list {
@@ -4477,6 +4479,12 @@ a.ce-tab {
   .setup-actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .quiz-select-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .setup-actions .quiz-cta,

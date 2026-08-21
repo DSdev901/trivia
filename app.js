@@ -1365,10 +1365,12 @@ function renderQuizSetup(category) {
     <p class="lede">Select the ${
       category.type === "movies" ? "rounds" : "sections"
     } to include. After each answer you’ll see if you were right, then choose whether to keep that question in rotation.</p>
-    <div class="batch-check-list" id="quiz-batch-list">${options}</div>
-    <div class="setup-actions">
+    <div class="setup-actions quiz-select-actions">
       <button type="button" class="text-btn" id="select-all">Select all</button>
       <button type="button" class="text-btn" id="select-none">Select none</button>
+    </div>
+    <div class="batch-check-list" id="quiz-batch-list">${options}</div>
+    <div class="setup-actions">
       <button type="button" class="primary-btn quiz-cta" id="start-quiz">Start quiz</button>
     </div>
     <p class="setup-error" id="setup-error" hidden></p>
