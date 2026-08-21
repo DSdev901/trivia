@@ -820,7 +820,7 @@ function coverOcean(svg, minX, minY, w, h) {
   rect.setAttribute("height", String(h + pad * 2));
 }
 
-const PLACE_ZOOM = 0.65;
+const PLACE_ZOOM = 0.35;
 
 function pullbackPadRatio(padRatio) {
   return ((1 + 2 * padRatio) / PLACE_ZOOM - 1) / 2;
@@ -1113,12 +1113,15 @@ function usesMarkerPins(host) {
   return geo.pack?.overlay === "markers" || Boolean(host?.querySelector(".geo-pin"));
 }
 
-function markerTapRadiusSvg(svg) {
+function mapPxScale(svg, vbRaw) {
+  const vb = viewBoxParts(vbRaw || svg.getAttribute("viewBox"));
   const rect = svg.getBoundingClientRect();
-  const vb = viewBoxParts(svg.getAttribute("viewBox"));
-  const unit = Math.max(vb.w / Math.max(rect.width, 1), vb.h / Math.max(rect.height, 1));
+  return Math.min(rect.width / Math.max(vb.w, 1), rect.height / Math.max(vb.h, 1));
+}
+
+function markerTapRadiusSvg(svg) {
   const px = window.matchMedia("(pointer: coarse)").matches ? 44 : 30;
-  return px * unit;
+  return px / Math.max(mapPxScale(svg), 1e-9);
 }
 
 function nearestMarkerId(host, svg, pt) {
@@ -1234,11 +1237,12 @@ function regionAnchor(host, id) {
 }
 
 function placePixelSize(svg, anchor, vbRaw) {
-  const vb = viewBoxParts(vbRaw || svg.getAttribute("viewBox"));
-  const rect = svg.getBoundingClientRect();
-  const sx = rect.width / Math.max(vb.w, 1);
-  const sy = rect.height / Math.max(vb.h, 1);
-  return { pxW: anchor.w * sx, pxH: anchor.h * sy, rect };
+  const s = mapPxScale(svg, vbRaw);
+  return {
+    pxW: anchor.w * s,
+    pxH: anchor.h * s,
+    rect: svg.getBoundingClientRect(),
+  };
 }
 
 function placeInViewBox(vb, anchor, edge = 0.1) {
@@ -1473,16 +1477,14 @@ function landPixelSize(anchor, sx, sy) {
   return Math.max(w * sx, h * sy);
 }
 
-function tinyLandIds(host, svg, packRect) {
+function tinyLandIds(host, svg) {
   if (host._tinyLandIds) return host._tinyLandIds;
-  const pack = viewBoxParts(geo._packViewBox || svg.getAttribute("viewBox"));
-  const sx = packRect.width / Math.max(pack.w, 1);
-  const sy = packRect.height / Math.max(pack.h, 1);
+  const s = mapPxScale(svg, geo._packViewBox || svg.getAttribute("viewBox"));
   const ids = [];
   for (const id of packItemIds()) {
     const a = placeAnchorCached(host, id);
     if (!a) continue;
-    if (landPixelSize(a, sx, sy) >= TINY_LAND_SEE_PX) continue;
+    if (landPixelSize(a, s, s) >= TINY_LAND_SEE_PX) continue;
     ids.push(id);
   }
   host._tinyLandIds = ids;
@@ -1502,11 +1504,11 @@ function syncTinyIslandScale(host) {
   if (!svg) return;
   const rect = svg.getBoundingClientRect();
   if (rect.width < 8 || rect.height < 8) return;
-  const vb = viewBoxParts(svg.getAttribute("viewBox"));
-  const sx = rect.width / Math.max(vb.w, 1);
-  const sy = rect.height / Math.max(vb.h, 1);
-  const unit = vb.w / rect.width;
-  const ids = tinyLandIds(host, svg, rect);
+  const s = mapPxScale(svg);
+  const sx = s;
+  const sy = s;
+  const unit = 1 / Math.max(s, 1e-9);
+  const ids = tinyLandIds(host, svg);
   const NS = "http://www.w3.org/2000/svg";
   host.querySelectorAll(".geo-island-boost").forEach((n) => n.remove());
 
@@ -1562,18 +1564,14 @@ function syncTinyHitPads(host) {
   if (!svg) return;
   const rect = svg.getBoundingClientRect();
   if (rect.width < 8) return;
-  const vb = viewBoxParts(svg.getAttribute("viewBox"));
-  const unit = vb.w / rect.width;
-  const minR = 13 * unit;
+  const s = mapPxScale(svg);
+  const minR = markerTapRadiusSvg(svg);
   const inPack = packItemIds();
   const NS = "http://www.w3.org/2000/svg";
   for (const id of inPack) {
     const anchor = regionAnchor(host, id);
     if (!anchor) continue;
-    const longPx = Math.max(
-      anchor.w * (rect.width / vb.w),
-      anchor.h * (rect.height / Math.max(vb.h, 1))
-    );
+    const longPx = Math.max(anchor.w, anchor.h) * s;
     const tinyDot =
       anchor.el.classList.contains("geo-island-dot") ||
       anchor.el.tagName.toLowerCase() === "circle";
@@ -1705,6 +1703,7 @@ function bindMapControls(host) {
     svg.setAttribute("viewBox", `${next.x} ${next.y} ${next.w} ${next.h}`);
     syncTinyIslandScale(host);
     drawMapLabel(host);
+    syncTinyHitPads(host);
   };
 
   host.addEventListener(
