@@ -266,18 +266,9 @@ body:not(.is-home) .app {
     padding-right: calc((100vw - 100%) / 2 + var(--inner-chrome-inset));
     position: relative;
     z-index: 2;
-    background-color: var(--paper-deep);
-    background-image: var(--memphis-image);
-    background-size: var(--memphis-size);
-    background-repeat: repeat;
-    background-position: top left;
-    background-blend-mode: darken;
-    border-bottom: 0;
-    box-shadow:
-      inset -1px -1px 0 #1a2332,
-      inset 1px 1px 0 #fff,
-      inset -2px -2px 0 #808080,
-      inset 2px 2px 0 #fff;
+    background-color: color-mix(in srgb, var(--paper) 82%, var(--paper-deep));
+    background-image: none;
+    border-bottom: 1px solid var(--stripe);
   }
 
   body:not(.is-home) .brand-logo--badge {
