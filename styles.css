@@ -271,7 +271,7 @@ body:not(.is-home) .app {
     z-index: 2;
     background-color: var(--nav-bar);
     background-image: none;
-    border-bottom: 1px solid var(--stripe);
+    border-bottom: none;
   }
 
   body:not(.is-home) .brand-logo--badge {
