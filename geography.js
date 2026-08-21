@@ -2166,7 +2166,6 @@ function renderGroup() {
           <h2 class="section-title">${escapeHtml(g.name)}</h2>
           <p class="lede">${escapeHtml(g.blurb || "Map quizzes by region.")}</p>
         </div>
-        <a class="secondary-btn" href="${href(["geography"])}">All continents</a>
       </div>
       ${sections
         .map((sec) => {
@@ -2206,9 +2205,6 @@ function renderPackModes() {
           <h2 class="section-title">${escapeHtml(pack.name)}</h2>
           <p class="lede">${escapeHtml(pack.blurb || "")}</p>
         </div>
-        <a class="secondary-btn" href="${groupHref()}">${
-          geo.group ? `Back to ${escapeHtml(geo.group.name)}` : "All continents"
-        }</a>
       </div>
       <div class="geo-mode-grid">
         ${(pack.modes || [])
@@ -2572,10 +2568,6 @@ function renderDone() {
         </ul>
         <div class="setup-actions">
           <button type="button" class="primary-btn quiz-cta" id="geo-again">Quiz again</button>
-          <a class="secondary-btn" href="${packHref()}">Back to modes</a>
-          <a class="secondary-btn" href="${groupHref()}">${
-            geo.group ? `Back to ${escapeHtml(geo.group.name)}` : "All continents"
-          }</a>
         </div>
       </div>
     </div>`;
