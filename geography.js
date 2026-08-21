@@ -1147,15 +1147,21 @@ function mapTargetId(e) {
     }
     if (geo.pack?.overlay === "markers") return null;
   }
-  const fromEvent = regionIdFromNode(e.target);
-  if (fromEvent) return fromEvent;
-  return regionIdFromNode(document.elementFromPoint(e.clientX, e.clientY));
+  const stack = document.elementsFromPoint(e.clientX, e.clientY);
+  let tinyId = null;
+  for (const node of stack) {
+    if (node.classList?.contains("geo-tiny-hit")) {
+      if (!tinyId && node.dataset.id) tinyId = node.dataset.id;
+      continue;
+    }
+    const id = regionIdFromNode(node);
+    if (id) return id;
+  }
+  return tinyId;
 }
 
 function regionIdFromNode(node) {
   if (!node?.closest) return null;
-  const pad = node.closest(".geo-tiny-hit");
-  if (pad?.dataset.id) return pad.dataset.id;
   const pin = node.closest(".geo-pin");
   if (pin) {
     const visual = pin.querySelector(".geo-region");
@@ -1163,7 +1169,7 @@ function regionIdFromNode(node) {
     return pin.dataset.id || visual?.dataset.id || visual?.id || null;
   }
   const el = node.closest(".geo-region");
-  if (!el || el.classList.contains("is-out")) return null;
+  if (!el || el.classList.contains("is-out") || el.classList.contains("geo-marker")) return null;
   return el.dataset.id || el.id || null;
 }
 
