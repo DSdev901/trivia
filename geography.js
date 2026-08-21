@@ -820,6 +820,12 @@ function coverOcean(svg, minX, minY, w, h) {
   rect.setAttribute("height", String(h + pad * 2));
 }
 
+const PLACE_ZOOM = 0.65;
+
+function pullbackPadRatio(padRatio) {
+  return ((1 + 2 * padRatio) / PLACE_ZOOM - 1) / 2;
+}
+
 function packFitPadRatio() {
   // Marker packs have no land extent, so a country-style 3% crop sits on top of the dots.
   if (geo.pack?.overlay === "markers") return 0.32;
@@ -833,11 +839,12 @@ function paddedViewBox(bounds, padRatio) {
   const minPad = geo.pack?.overlay === "markers" ? 36 : 8;
   const padX = Math.max(minPad, bw * padRatio);
   const padY = Math.max(minPad, bh * padRatio);
+  const minSpan = 30 / PLACE_ZOOM;
   return {
     x: minX - padX,
     y: minY - padY,
-    w: Math.max(30, bw + padX * 2),
-    h: Math.max(30, bh + padY * 2),
+    w: Math.max(minSpan, bw + padX * 2),
+    h: Math.max(minSpan, bh + padY * 2),
   };
 }
 
@@ -984,11 +991,17 @@ function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false, panIds = null 
     return;
   }
 
-  const packVb = applyViewBox(svg, bounds, padRatio, storeAsPack);
+  let pad = padRatio;
+  if (geo.pack?.overlay === "markers") {
+    const size = mapSize(svg);
+    const frac = boundsArea(bounds) / Math.max(1, size.mapW * size.mapH);
+    if (frac < 0.2) pad = pullbackPadRatio(pad);
+  }
+  const packVb = applyViewBox(svg, bounds, pad, storeAsPack);
   const panSource = panIds?.length ? panIds : ids;
   const panBounds = boundsForFitIds(host, svg, panSource);
   if (!panBounds || panBounds.useFullMap) return;
-  const panVb = unionViewBox(packVb, paddedViewBox(panBounds, Math.max(padRatio, 0.1)));
+  const panVb = unionViewBox(packVb, paddedViewBox(panBounds, Math.max(pad, 0.1)));
   geo._panLimit = viewBoxAttr(panVb);
   coverOcean(svg, panVb.x, panVb.y, panVb.w, panVb.h);
 }
@@ -1033,7 +1046,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   });
   if (outline) {
     if (host.dataset.geoOutlineId !== activeId) {
-      fitMapToIds([activeId], { padRatio: 0.05 });
+      fitMapToIds([activeId], { padRatio: pullbackPadRatio(0.05) });
       host.dataset.geoOutlineId = activeId;
     }
   } else if (scopePack) {
@@ -1264,7 +1277,10 @@ function maybeFocusTinyPlace(host, id) {
     return true;
   }
 
-  const scale = longPx < 28 ? Math.min(80, 56 / Math.max(longPx, 0.25)) : 1;
+  const scale =
+    longPx < 28
+      ? Math.max(1, Math.min(80, 56 / Math.max(longPx, 0.25)) * PLACE_ZOOM)
+      : 1;
   let nw = pack.w / scale;
   let nh = pack.h / scale;
   const limit = panLimitBox();
