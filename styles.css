@@ -509,7 +509,7 @@ body.is-home .brand-eye-glint::after {
   align-items: center;
   justify-content: center;
   padding: 0.28rem 0.22rem;
-  background: #0490a4;
+  background: var(--accent);
   color: var(--paper);
   font-family: var(--font-body);
   font-size: 0.58rem;
@@ -518,7 +518,7 @@ body.is-home .brand-eye-glint::after {
   line-height: 1.15;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0 #036a78;
+  text-shadow: 1px 1px 0 var(--accent-deep);
   white-space: normal;
   z-index: 1;
 }
@@ -528,7 +528,7 @@ body.is-home .brand-eye-glint::after {
   flex: 1 1 auto;
   min-width: 0;
   overflow: hidden;
-  background: #fff;
+  background: var(--ink);
   border-top: 2px solid var(--ink-soft);
   border-left: 2px solid var(--ink-soft);
   border-right: 2px solid var(--stripe);
@@ -536,6 +536,18 @@ body.is-home .brand-eye-glint::after {
   touch-action: none;
   cursor: grab;
   user-select: none;
+}
+
+.home-ticker-track::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(232, 192, 74, 0.07) 0 1px,
+    transparent 1px 3px
+  );
 }
 
 .home-ticker-copy {
@@ -564,11 +576,13 @@ body.is-home .brand-eye-glint::after {
 .home-ticker-dot {
   flex-shrink: 0;
   white-space: nowrap;
+  color: #e4b12a;
   font-family: "Courier New", Courier, ui-monospace, monospace;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-shadow: 0 0 6px rgba(228, 177, 42, 0.55);
 }
 
 .home-ticker-item {
@@ -576,19 +590,18 @@ body.is-home .brand-eye-glint::after {
   align-items: center;
   gap: 0.4rem;
   padding: 0.38rem 0.5rem;
-  color: #0490a4;
 }
 
 .home-ticker-dot {
   padding: 0 0.15rem;
-  color: #d0201c;
+  opacity: 0.7;
 }
 
 .home-ticker-next {
   padding: 0.06rem 0.28rem 0.08rem;
   border-radius: 0;
-  background: #0490a4;
-  color: #fff;
+  background: var(--gold);
+  color: #1a1400;
   font-family: var(--font-body);
   font-size: 0.52rem;
   letter-spacing: 0.08em;
