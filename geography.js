@@ -827,8 +827,7 @@ function pullbackPadRatio(padRatio) {
 }
 
 function packFitPadRatio() {
-  // Marker packs have no land extent, so a country-style 3% crop sits on top of the dots.
-  if (geo.pack?.overlay === "markers") return 0.32;
+  if (geo.pack?.overlay === "markers") return 0.12;
   return 0.03;
 }
 
@@ -836,10 +835,11 @@ function paddedViewBox(bounds, padRatio) {
   const { minX, minY, maxX, maxY } = bounds;
   const bw = Math.max(1, maxX - minX);
   const bh = Math.max(1, maxY - minY);
-  const minPad = geo.pack?.overlay === "markers" ? 36 : 8;
+  const markers = geo.pack?.overlay === "markers";
+  const minPad = markers ? 16 : 8;
   const padX = Math.max(minPad, bw * padRatio);
   const padY = Math.max(minPad, bh * padRatio);
-  const minSpan = 30 / PLACE_ZOOM;
+  const minSpan = markers ? 0 : 30 / PLACE_ZOOM;
   return {
     x: minX - padX,
     y: minY - padY,
@@ -932,6 +932,7 @@ function coreLandBoxes(boxes) {
 }
 
 function boundsForFitIds(host, svg, ids, { coreOnly = false } = {}) {
+  if (geo.pack?.overlay === "markers") return simpleBoundsForIds(host, ids);
   if (isWorldCountriesMap()) {
     if (ids.length <= 1) return mainlandBoundsForIds(host, ids);
     const { mapW, mapH } = mapSize(svg);
@@ -991,17 +992,11 @@ function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false, panIds = null 
     return;
   }
 
-  let pad = padRatio;
-  if (geo.pack?.overlay === "markers") {
-    const size = mapSize(svg);
-    const frac = boundsArea(bounds) / Math.max(1, size.mapW * size.mapH);
-    if (frac < 0.2) pad = pullbackPadRatio(pad);
-  }
-  const packVb = applyViewBox(svg, bounds, pad, storeAsPack);
+  const packVb = applyViewBox(svg, bounds, padRatio, storeAsPack);
   const panSource = panIds?.length ? panIds : ids;
   const panBounds = boundsForFitIds(host, svg, panSource);
   if (!panBounds || panBounds.useFullMap) return;
-  const panVb = unionViewBox(packVb, paddedViewBox(panBounds, Math.max(pad, 0.1)));
+  const panVb = unionViewBox(packVb, paddedViewBox(panBounds, Math.max(padRatio, 0.1)));
   geo._panLimit = viewBoxAttr(panVb);
   coverOcean(svg, panVb.x, panVb.y, panVb.w, panVb.h);
 }
