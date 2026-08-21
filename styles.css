@@ -41,7 +41,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   min-height: 100vh;
-  background-color: var(--paper);
+  background-color: var(--memphis-base);
 }
 
 body {
@@ -51,7 +51,7 @@ body {
   padding-right: env(safe-area-inset-right);
   font-family: var(--font-body);
   color: var(--ink);
-  background-color: var(--paper);
+  background-color: var(--memphis-base);
   line-height: 1.5;
   cursor: default;
   caret-color: transparent;
@@ -214,7 +214,7 @@ body.is-home {
     padding-left: max(0.55rem, env(safe-area-inset-left));
     padding-right: max(0.55rem, env(safe-area-inset-right));
     background-image: none;
-    background-color: var(--paper);
+    background-color: var(--memphis-base);
   }
 
   body:not(.is-home) .brand-logo,
@@ -246,7 +246,7 @@ body.is-home {
 
 body:not(.is-home) .app {
   min-height: 100vh;
-  background-color: var(--paper);
+  background-color: var(--memphis-base);
 }
 
 @media (min-width: 861px) {
