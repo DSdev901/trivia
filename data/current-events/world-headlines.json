@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-08-21T21:38:25.510Z",
+  "generatedAt": "2026-08-22T00:47:24.424Z",
   "retentionDays": 21,
-  "windowStart": "2026-07-31",
-  "windowEnd": "2026-08-21",
+  "windowStart": "2026-08-01",
+  "windowEnd": "2026-08-22",
   "snapshotIntervalHours": 3,
-  "count": 668,
+  "count": 672,
   "items": [
     {
       "headline": "Army plans to phase out drone unit championed by sacked general",
@@ -44,6 +44,16 @@
       "summary": "Officials say another three people were injured, and an 18-year-old male suspect shot and arrested.",
       "url": "https://www.bbc.co.uk/news/articles/c3r0g7gj2n3o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-08-21T15:42:46.774Z",
+      "top": true,
+      "bestRank": 1
+    },
+    {
+      "headline": "Russian double-tap drone strike kills 15 in Ukrainian mall, officials say",
+      "date": "2026-08-21",
+      "bucket": "World",
+      "summary": "At least 130 people, including 23 children, were also injured when the shopping centre was hit, according to the regional head.",
+      "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-21T18:44:33.632Z",
       "top": true,
       "bestRank": 1
     },
@@ -128,16 +138,6 @@
       "firstSeen": "2026-08-21T15:42:46.774Z"
     },
     {
-      "headline": "Russian double-tap drone strike kills 15 in Ukrainian mall, officials say",
-      "date": "2026-08-21",
-      "bucket": "World",
-      "summary": "At least 130 people, including 23 children, were also injured when the shopping centre was hit, according to the regional head.",
-      "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-21T18:44:33.632Z",
-      "top": true,
-      "bestRank": 3
-    },
-    {
       "headline": "Myanmar Military Advances Into ‘Anyar Dubai’ Oil Fields Amid Heavy Clashes",
       "date": "2026-08-21",
       "bucket": "World",
@@ -185,7 +185,7 @@
       "url": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-08-19T18:44:41.489Z",
       "top": true,
-      "bestRank": 7
+      "bestRank": 6
     },
     {
       "headline": "Myanmar military offensive targets land for Russia-backed port project",
@@ -238,14 +238,14 @@
       "firstSeen": "2026-08-21T03:46:22.217Z"
     },
     {
-      "headline": "Guatemala says it received nearly 2,300 US-deported Mexicans",
+      "headline": "Panama Canal to cap ship transits due to El Nino drought",
       "date": "2026-08-21",
       "bucket": "World",
-      "summary": "Reported by Al Jazeera.",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPb3lLVnZpZF9kc25MNkpLMEJ1SExrUXRyd0dncG9nclBqMkI4ajdxX1A3TVgxcE1pTnF3M0JtMlUyNUdVeWVobWdneVFOMThMQzdyNXc2RmxqUms1X0c4eTBZRGdxVjYtTUs3LUJ2OWpVZXQtR2RvcU9yZFlKYmdmNFRyckVKa1dfWlgwdTc1SGdmd3BEMVJ2WTlNWWlrc3hmb2NUenloNlNSQ1FXWWfSAbMBQVVfeXFMT3RrdnZwamd0dV9tVVBMRnc0SXpPaE1ObzI5QXdoUnlVZTN4SUNYZ2FGVFFZaTA1RUF2YXVsczY4czBoRHd4N3hGeEJZQWtEM3FWUGQ2YnVyTkZIOTJWYk5mRzZjaTJncklFd2xMdGlUS3kxUG1JeXllMkhtZXU2N3JxbDItR1hab3pCVk9FWjFxeTNWT1FuMlFWVGM3eU93Z2dwaFFHM3Fuc1VDUTdtbTROTWM?oc=5",
+      "summary": "Reported by dw.com.",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE85WjRqRFlVblNta0YzX1VBNU9zTmpud2tHSjZnZnR4VnpFM3VZUWYxTThKR0c0aGtZN01QemI2eTVKSFpoSXEyYWlpZVI2amNuaWxaX2NXNGwyM2VDbUk2Mi13MNIBY0FVX3lxTFBxWHoySjFLVTBEMzFYWTRsaF9xVlhQMG1Mc3VqTE9HX05WTTNzZWg3WU4zLXA1THB1YVk1R2F2LURnWXEzYWdubVRtM1pBOEdIN3ZqM0ItelJqZFQ1cXltRlNxMA?oc=5",
       "top": true,
-      "bestRank": 11,
-      "firstSeen": "2026-08-21T03:46:22.217Z"
+      "bestRank": 9,
+      "firstSeen": "2026-08-22T00:47:24.424Z"
     },
     {
       "headline": "Defense Department Reveals How Many Americans Have Been Wounded in Iran War",
@@ -254,8 +254,18 @@
       "summary": "Reported by The Washington Post.",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNHQ3Zm9lU2xoYlZiSmN0bVlWZ08wMFNVa1A5ZDU5d2w5VjJCQXY0bnoxLW1FS1dxVnZsSHZzeVRyYmRiQldQUkxRNkxDSy05cy1pR1ZVbFQtd0FCMVpVSkNTdENBbV8xd0tjVHhTSE9fYXFWVElhejA2UFZJU2tXaV9sUDdWNWt3MFdtY1V0T3BFRUtkV0NCR3hqOERrcUYxVmw5NkhYUnFZaE1UMFYw?oc=5",
       "top": true,
-      "bestRank": 11,
+      "bestRank": 10,
       "firstSeen": "2026-08-21T21:38:25.510Z"
+    },
+    {
+      "headline": "Guatemala says it received nearly 2,300 US-deported Mexicans",
+      "date": "2026-08-21",
+      "bucket": "World",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPb3lLVnZpZF9kc25MNkpLMEJ1SExrUXRyd0dncG9nclBqMkI4ajdxX1A3TVgxcE1pTnF3M0JtMlUyNUdVeWVobWdneVFOMThMQzdyNXc2RmxqUms1X0c4eTBZRGdxVjYtTUs3LUJ2OWpVZXQtR2RvcU9yZFlKYmdmNFRyckVKa1dfWlgwdTc1SGdmd3BEMVJ2WTlNWWlrc3hmb2NUenloNlNSQ1FXWWfSAbMBQVVfeXFMT3RrdnZwamd0dV9tVVBMRnc0SXpPaE1ObzI5QXdoUnlVZTN4SUNYZ2FGVFFZaTA1RUF2YXVsczY4czBoRHd4N3hGeEJZQWtEM3FWUGQ2YnVyTkZIOTJWYk5mRzZjaTJncklFd2xMdGlUS3kxUG1JeXllMkhtZXU2N3JxbDItR1hab3pCVk9FWjFxeTNWT1FuMlFWVGM3eU93Z2dwaFFHM3Fuc1VDUTdtbTROTWM?oc=5",
+      "top": true,
+      "bestRank": 11,
+      "firstSeen": "2026-08-21T03:46:22.217Z"
     },
     {
       "headline": "New Details Emerge About Ukraine’s Homegrown “Equalizer” Glide Bomb",
@@ -348,23 +358,23 @@
       "firstSeen": "2026-08-21T09:44:39.427Z"
     },
     {
-      "headline": "Turkey Requests Netanyahu’s Arrest, Saying Israel Abused Flotilla Activists",
-      "date": "2026-08-21",
-      "bucket": "World",
-      "summary": "Reported by Reuters.",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVUoyZkFhckp4LWRTcFQ5azZpNDRPZjdVNGNnUVBocG9kRkN4Yk5aSHZTczg0cWhudS1FRk1EbGhGemliM1VqZWVQMUphTkk4VmhyTVAzU2tOSVZ2WExhS0ExQnB6UlpDTmZ0UWJiU3ZpRFp6N2RjZkdsVTlJb2QzMmdfVXd5RlMyOXhSZ1ZRMkkzNDA4WFplS1ppeFg0QmNlUnNLM1M4OHlKam5VMnJF?oc=5",
-      "top": true,
-      "bestRank": 33,
-      "firstSeen": "2026-08-21T21:38:25.510Z"
-    },
-    {
       "headline": "Ukraine Sanctions ‘Masha and the Bear’ Creators Over Alleged Kremlin Propaganda",
       "date": "2026-08-21",
       "bucket": "World",
       "summary": "Reported by The Moscow Times.",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNemZpMWtaNjRKVWNkb3dBTTVVMXJneHc0ZzhyNEk3VUJ3em9NdDcwazVqVkN6S0pjZUw4c2Z4VktzVjdBZWVwSGlCRkZ1LXF0NklQandlNWpxMnJCQXdjRG1oVTZfMnVPV2xEcE5maFMzZElPYWdGTVUxU0p1Qm1GR1hERFVNNC01NU9kOXNLNllRVmdoYmh3eVJhVVl2aUhiNjJyTzVOOE4tWjM2NV9HVVQ4OV9LYWUwVmJ3LXQzT2RmVnZz?oc=5",
       "top": true,
-      "bestRank": 34,
+      "bestRank": 29,
+      "firstSeen": "2026-08-21T21:38:25.510Z"
+    },
+    {
+      "headline": "Turkey Requests Netanyahu’s Arrest, Saying Israel Abused Flotilla Activists",
+      "date": "2026-08-21",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbno1WDlvOFFhQWJCMEZ4ZXZjTnNhdjFtTEJzYVpsTGFPZUhTRVpVYkNkcElRaFhkbDMxLUdPMHJlbFEyNWYyQVhuNHZsOVdsTkdsUmZ1RmF1SEdZc25CMDVfazlta2tuYkQwbWg5aUZWck5EVHBZQ2pKSmRoenVOTlJfZ1luU0pCR3NobFhYbkQ?oc=5",
+      "top": true,
+      "bestRank": 31,
       "firstSeen": "2026-08-21T21:38:25.510Z"
     },
     {
@@ -378,6 +388,26 @@
       "firstSeen": "2026-08-21T15:42:46.774Z"
     },
     {
+      "headline": "Hamid Karzai Helped Oust the Taliban. Now He Lives Under Their Rule",
+      "date": "2026-08-21",
+      "bucket": "World",
+      "summary": "Reported by Bloomberg.com.",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1FUDU2MWUxQURuQmFmNEdXNmFvcnc4UkUxVlJOdHc3Sk5MYnoxdXI4ZEdxNHBuLWJGNDRDSXhLQVNWUnlIYjVBWGFSaDJmQ3NtU01kbDV5V0dTTGR5XzN4TEVLYmNOT2h4ZGVWOUotVUhablRYU0FmV1pEVQ?oc=5",
+      "top": true,
+      "bestRank": 37,
+      "firstSeen": "2026-08-21T21:38:25.510Z"
+    },
+    {
+      "headline": "Father abandons 7-year-old on Mount Fuji to reach summit",
+      "date": "2026-08-21",
+      "bucket": "World",
+      "summary": "Reported by KOMO.",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPV1hRd1FoZnBWc2ZITE84MDZqSzBhbUk5endsUmR2ZTl5M09pVkJEeEpHcFhSeWJqMWFaNWRLN0hVa0pZWU5tT0M0V2dNVVZXenBUYXFEeVNVZVJHV1dDTUhUUk9tcFQxcVF3WTlrZ1NoRGctaTdCd0ppaUphWFB3RDlreENtZmNteWYyNEdSOEt0VTBhWkd1U0p0MFZtZXM?oc=5",
+      "top": true,
+      "bestRank": 38,
+      "firstSeen": "2026-08-22T00:47:24.424Z"
+    },
+    {
       "headline": "Report: Turkey Seeks Interpol Red Notice For Netanyahu Over Gaza Flotilla Case",
       "date": "2026-08-21",
       "bucket": "World",
@@ -386,16 +416,6 @@
       "top": true,
       "bestRank": 39,
       "firstSeen": "2026-08-21T18:44:33.632Z"
-    },
-    {
-      "headline": "Hamid Karzai Helped Oust the Taliban. Now He Lives Under Their Rule",
-      "date": "2026-08-21",
-      "bucket": "World",
-      "summary": "Reported by Bloomberg.com.",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1FUDU2MWUxQURuQmFmNEdXNmFvcnc4UkUxVlJOdHc3Sk5MYnoxdXI4ZEdxNHBuLWJGNDRDSXhLQVNWUnlIYjVBWGFSaDJmQ3NtU01kbDV5V0dTTGR5XzN4TEVLYmNOT2h4ZGVWOUotVUhablRYU0FmV1pEVQ?oc=5",
-      "top": true,
-      "bestRank": 39,
-      "firstSeen": "2026-08-21T21:38:25.510Z"
     },
     {
       "headline": "El Niño set to be 'strongest in living memory', says Met Office",
@@ -520,12 +540,22 @@
       "bestRank": null
     },
     {
+      "headline": "Big tech companies will have to pay to publish Australian news content under new laws",
+      "date": "2026-08-21",
+      "bucket": "World",
+      "summary": "Australia has passed a law requiring major tech platforms such as Google and Meta to strike deals with Australian news publishers or pay a levy on their advertising revenue.",
+      "url": "https://www.npr.org/2026/08/21/nx-s1-5939814/big-tech-companies-will-have-to-pay-to-publish-australian-news-content-under-new-laws",
+      "firstSeen": "2026-08-22T00:47:24.424Z"
+    },
+    {
       "headline": "How Israel is expanding settlements in drive to reshape West Bank",
       "date": "2026-08-21",
       "bucket": "World",
       "summary": "There has been a significant expansion of building and road construction on Palestinian land occupied by Israel in recent years.",
       "url": "https://www.bbc.co.uk/news/articles/c2lq5g4dedpo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-21T21:38:25.510Z"
+      "firstSeen": "2026-08-21T21:38:25.510Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "UK, Canada and Australia condemn Israel for refusing criminal probe into aid worker killings in Gaza",
@@ -541,7 +571,7 @@
       "headline": "Two injured in stabbing attack at Canada Sikh temple",
       "date": "2026-08-21",
       "bucket": "World",
-      "summary": "One suspect is in custody, but police have not disclosed a possible motive.",
+      "summary": "One suspect is in custody, and police have said they are still investigating if the attack was motivated by hate.",
       "url": "https://www.bbc.co.uk/news/articles/ce8l7w0n0jeo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-08-21T18:44:33.632Z",
       "top": false,
@@ -1098,6 +1128,16 @@
       "firstSeen": "2026-08-21T09:44:39.427Z"
     },
     {
+      "headline": "Cameroon’s Aging President Returns From Monthslong Stay Abroad",
+      "date": "2026-08-20",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMkhfdlJFNncxRzRvWUt6d3VXNmIxdlNseFdZX1NtTHNFYTRyc2JRTVluaVNVSVZEU3JHaHdKd1djbWNXVFhqSXZHbzBuTjdYSW9HNVM1THAzcHpmNW9VUF9HNVlucUdBcXFrZlplNnB1WGFLR1FRcHZrY240N2lsZU5IUEZSYzFuOXRjeGJtNEluZzdMRldxWUoxNDVxVXFkeXBTdg?oc=5",
+      "top": true,
+      "bestRank": 12,
+      "firstSeen": "2026-08-21T12:46:04.314Z"
+    },
+    {
       "headline": "Bodies discovered in Swiss Alps as melting glaciers reveal remains",
       "date": "2026-08-20",
       "bucket": "World",
@@ -1148,6 +1188,16 @@
       "bestRank": 15
     },
     {
+      "headline": "Kazakhstan, Moldova discuss cooperation in electoral field",
+      "date": "2026-08-20",
+      "bucket": "World",
+      "summary": "Reported by The Economist.",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONG1DdmI2ZFgtOXVVWDRnRGFUYmhfTmtNcUJ5RnE3enc3Z0lKQUhKX05UNU1CWkZqbTBjdFNBYm1YQUx3X3dxUHpmSExFUU8weEU5SDBLWVdpUlJYbFBCY1RsU0VQak5SM1c5RTVwTGdQbzhNRXlBMTRRQXZMdWNySGNxRzFOa3VuQkdvb0NLeUVHZUQyVkcw?oc=5",
+      "top": true,
+      "bestRank": 16,
+      "firstSeen": "2026-08-22T00:47:24.424Z"
+    },
+    {
       "headline": "Volodymyr Zelenskyy sacks senior aide amid Ukraine corruption crisis",
       "date": "2026-08-20",
       "bucket": "World",
@@ -1178,16 +1228,6 @@
       "firstSeen": "2026-08-21T03:46:22.217Z"
     },
     {
-      "headline": "Cameroon’s Aging President Returns From Monthslong Stay Abroad",
-      "date": "2026-08-20",
-      "bucket": "World",
-      "summary": "Reported by Reuters.",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMkhfdlJFNncxRzRvWUt6d3VXNmIxdlNseFdZX1NtTHNFYTRyc2JRTVluaVNVSVZEU3JHaHdKd1djbWNXVFhqSXZHbzBuTjdYSW9HNVM1THAzcHpmNW9VUF9HNVlucUdBcXFrZlplNnB1WGFLR1FRcHZrY240N2lsZU5IUEZSYzFuOXRjeGJtNEluZzdMRldxWUoxNDVxVXFkeXBTdg?oc=5",
-      "top": true,
-      "bestRank": 18,
-      "firstSeen": "2026-08-21T12:46:04.314Z"
-    },
-    {
       "headline": "Jailed Pakistan ex-PM Imran Khan taken to hospital for treatment",
       "date": "2026-08-20",
       "bucket": "World",
@@ -1216,6 +1256,16 @@
       "top": true,
       "bestRank": 20,
       "firstSeen": "2026-08-21T09:44:39.427Z"
+    },
+    {
+      "headline": "With ICC sanctions, Trump wants to make the world safe for war criminals | Kenneth Roth",
+      "date": "2026-08-20",
+      "bucket": "Conflict",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSUdMVEt2dm1hdjVlYWFERUtqUExDNGFybzRBaXNObHdWTDFubkVETGZId3oxNXR2R2VyVVRZaWE4WFo2U2RKai1ETmVRN1lFSjIySWFOSk5Dc3JfLXFHSV9GUGl3Vy0ycGE5eUQtZzVlRHgzcWFacUZCeUVRMWQ2QUJQd2ZzOG9pNlE?oc=5",
+      "top": true,
+      "bestRank": 20,
+      "firstSeen": "2026-08-21T21:38:25.510Z"
     },
     {
       "headline": "SCO Observer Mission Continues its Work in Kazakhstan",
@@ -1318,16 +1368,6 @@
       "firstSeen": "2026-08-21T09:44:39.427Z"
     },
     {
-      "headline": "With ICC sanctions, Trump wants to make the world safe for war criminals | Kenneth Roth",
-      "date": "2026-08-20",
-      "bucket": "Conflict",
-      "summary": "Reported by The New York Times.",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSUdMVEt2dm1hdjVlYWFERUtqUExDNGFybzRBaXNObHdWTDFubkVETGZId3oxNXR2R2VyVVRZaWE4WFo2U2RKai1ETmVRN1lFSjIySWFOSk5Dc3JfLXFHSV9GUGl3Vy0ycGE5eUQtZzVlRHgzcWFacUZCeUVRMWQ2QUJQd2ZzOG9pNlE?oc=5",
-      "top": true,
-      "bestRank": 25,
-      "firstSeen": "2026-08-21T21:38:25.510Z"
-    },
-    {
       "headline": "Express train hits and kills 4 workers at a railway station in Japan",
       "date": "2026-08-20",
       "bucket": "World",
@@ -1418,6 +1458,16 @@
       "firstSeen": "2026-08-20T21:40:20.060Z"
     },
     {
+      "headline": "Prayer, anticipation and hard work: How San Marino awaits Pope Leo",
+      "date": "2026-08-20",
+      "bucket": "World",
+      "summary": "Reported by The Pillar.",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9adXBwVEtZRVg2X0pWQ08xcG0zMVJkVUEzSER0SU5xV1FQQXBFMmtremJWZTFBemdsYmVvZV9UT2cwWURoRWFKbzVDaWpDZ1VzdUtGZUpwRmNyZHNhS2hFVjBnVXNEMjBSbnQ1ZmJmWjdJUDJNak9YMGVR?oc=5",
+      "top": true,
+      "bestRank": 33,
+      "firstSeen": "2026-08-21T18:44:33.632Z"
+    },
+    {
       "headline": "Romanian jet blasts drone near offshore gas platform, president blames Moscow",
       "date": "2026-08-20",
       "bucket": "World",
@@ -1446,16 +1496,6 @@
       "firstSeen": "2026-08-18T18:14:08.898Z",
       "top": true,
       "bestRank": 35
-    },
-    {
-      "headline": "Prayer, anticipation and hard work: How San Marino awaits Pope Leo",
-      "date": "2026-08-20",
-      "bucket": "World",
-      "summary": "Reported by The Pillar.",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9adXBwVEtZRVg2X0pWQ08xcG0zMVJkVUEzSER0SU5xV1FQQXBFMmtremJWZTFBemdsYmVvZV9UT2cwWURoRWFKbzVDaWpDZ1VzdUtGZUpwRmNyZHNhS2hFVjBnVXNEMjBSbnQ1ZmJmWjdJUDJNak9YMGVR?oc=5",
-      "top": true,
-      "bestRank": 35,
-      "firstSeen": "2026-08-21T18:44:33.632Z"
     },
     {
       "headline": "Vadym Yermolayev Revealed Previously Unknown Details About the Assassination Attempt in Monaco",
