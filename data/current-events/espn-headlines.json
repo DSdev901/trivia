@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-22T06:29:26.530Z",
+  "generatedAt": "2026-08-22T09:27:36.985Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-01T06:29:26.530Z",
-  "windowEnd": "2026-08-22T06:29:26.530Z",
+  "windowStart": "2026-08-01T09:27:36.985Z",
+  "windowEnd": "2026-08-22T09:27:36.985Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,283 @@
     "Tennis",
     "MMA"
   ],
-  "count": 1993,
+  "count": 2018,
   "items": [
+    {
+      "key": "49688814",
+      "id": "49688814",
+      "headline": "Man City boss Enzo Maresca backs Phil Foden to rediscover his spark this season",
+      "summary": "Enzo Maresca is hopeful Phil Foden will rediscover his spark this season.",
+      "url": "https://www.espn.com/soccer/story/_/id/49688814/man-city-boss-enzo-maresca-backs-phil-foden-rediscover-spark-season",
+      "sport": "Soccer",
+      "published": "2026-08-22T08:53:54.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49688657",
+      "id": "49688657",
+      "headline": "Baltimore Orioles and Tampa Bay Rays meet in game 2 of series",
+      "summary": "Tampa Bay Rays (76-52, first in the AL East) vs. Baltimore Orioles (62-67, fifth in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816627",
+      "sport": "MLB",
+      "published": "2026-08-22T08:03:14.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49688656",
+      "id": "49688656",
+      "headline": "Yankees bring 1-0 series advantage over Blue Jays into game 2",
+      "summary": "Toronto Blue Jays (63-67, fourth in the AL East) vs. New York Yankees (73-55, second in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816628",
+      "sport": "MLB",
+      "published": "2026-08-22T08:03:11.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49688655",
+      "id": "49688655",
+      "headline": "Athletics bring road losing streak into matchup against the Astros",
+      "summary": "Athletics (49-80, fifth in the AL West) vs. Houston Astros (65-64, first in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816631",
+      "sport": "MLB",
+      "published": "2026-08-22T08:03:07.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49688654",
+      "id": "49688654",
+      "headline": "Mets bring road losing streak into matchup against the White Sox",
+      "summary": "New York Mets (58-71, fifth in the NL East) vs. Chicago White Sox (67-61, first in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816634",
+      "sport": "MLB",
+      "published": "2026-08-22T08:03:04.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49688653",
+      "id": "49688653",
+      "headline": "Dodgers face the Pirates leading series 1-0",
+      "summary": "Pittsburgh Pirates (63-67, fourth in the NL Central) vs. Los Angeles Dodgers (78-51, first in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816639",
+      "sport": "MLB",
+      "published": "2026-08-22T08:03:00.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49688652",
+      "id": "49688652",
+      "headline": "Phillies take on the Cardinals on home winning streak",
+      "summary": "St. Louis Cardinals (66-64, third in the NL Central) vs. Philadelphia Phillies (71-58, second in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816626",
+      "sport": "MLB",
+      "published": "2026-08-22T08:02:57.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49688651",
+      "id": "49688651",
+      "headline": "Marlins meet the Nationals with 1-0 series lead",
+      "summary": "Washington Nationals (61-69, fourth in the NL East) vs. Miami Marlins (65-64, third in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816629",
+      "sport": "MLB",
+      "published": "2026-08-22T08:02:54.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49688650",
+      "id": "49688650",
+      "headline": "Mariners bring 1-0 series lead over Cubs into game 2",
+      "summary": "Chicago Cubs (74-55, second in the NL Central) vs. Seattle Mariners (61-68, third in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816636",
+      "sport": "MLB",
+      "published": "2026-08-22T08:02:50.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49688649",
+      "id": "49688649",
+      "headline": "Guardians play the Rockies after Bazzana's 4-hit game",
+      "summary": "Cleveland Guardians (63-66, third in the AL Central) vs. Colorado Rockies (50-78, fifth in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816635",
+      "sport": "MLB",
+      "published": "2026-08-22T08:02:47.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49688648",
+      "id": "49688648",
+      "headline": "Padres try to keep home win streak alive, host the Twins",
+      "summary": "Minnesota Twins (63-66, second in the AL Central) vs. San Diego Padres (69-60, second in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816638",
+      "sport": "MLB",
+      "published": "2026-08-22T08:02:43.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49688645",
+      "id": "49688645",
+      "headline": "Arizona Diamondbacks and Cincinnati Reds meet in game 2 of series",
+      "summary": "Cincinnati Reds (61-68, fifth in the NL Central) vs. Arizona Diamondbacks (68-61, third in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816637",
+      "sport": "MLB",
+      "published": "2026-08-22T08:02:40.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49688644",
+      "id": "49688644",
+      "headline": "Duran leads Rangers against the Angels after 4-hit game",
+      "summary": "Los Angeles Angels (51-78, fourth in the AL West) vs. Texas Rangers (64-65, second in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816630",
+      "sport": "MLB",
+      "published": "2026-08-22T08:02:36.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49688643",
+      "id": "49688643",
+      "headline": "Royals host the Tigers on 5-game home win streak",
+      "summary": "Detroit Tigers (61-67, fourth in the AL Central) vs. Kansas City Royals (56-74, fifth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816633",
+      "sport": "MLB",
+      "published": "2026-08-22T08:02:33.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49688642",
+      "id": "49688642",
+      "headline": "Contreras leads Brewers against the Braves after 4-hit outing",
+      "summary": "Atlanta Braves (75-54, first in the NL East) vs. Milwaukee Brewers (80-49, first in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816632",
+      "sport": "MLB",
+      "published": "2026-08-22T08:02:29.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 14
+    },
+    {
+      "key": "49686334",
+      "id": "49686334",
+      "headline": "Dodgers' Kyle Tucker 'grinding' to battle out of brutal slump",
+      "summary": "The Dodgers' Kyle Tucker is searching at the plate, looking for anything to escape an offensive slump.",
+      "url": "https://www.espn.com/mlb/story/_/id/49686334/dodgers-kyle-tucker-grinding-battle-brutal-slump",
+      "sport": "MLB",
+      "published": "2026-08-22T06:56:58.000Z",
+      "firstSeen": "2026-08-22T03:30:54.949Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49687231",
+      "id": "49687231",
+      "headline": "Dodgers' Pages fractures hand; 'not season-ending,' Roberts says",
+      "summary": "Dodgers center fielder Andy Pages suffered a fractured left hand when he was hit by a pitch Friday night, but manager Dave Roberts said he expects him to return this season.",
+      "url": "https://www.espn.com/mlb/story/_/id/49687231/dodgers-andy-pages-exits-being-hit-left-hand-pitch",
+      "sport": "MLB",
+      "published": "2026-08-22T06:47:59.000Z",
+      "firstSeen": "2026-08-22T06:29:26.530Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49686743",
+      "id": "49686743",
+      "headline": "Dodgers president shuts down sale talk after Mark Walter's Lakers deal",
+      "summary": "Los Angeles Dodgers president Stan Kasten addressed online speculation about the team's future under owner Mark Walter.",
+      "url": "https://www.espn.com/mlb/story/_/id/49686743/dodgers-president-shuts-sale-talk-mark-walter-lakers-deal",
+      "sport": "MLB",
+      "published": "2026-08-22T06:33:34.000Z",
+      "firstSeen": "2026-08-22T06:29:26.530Z",
+      "bestRank": 19
+    },
+    {
+      "key": "49687995",
+      "id": "49687995",
+      "headline": "Tommy Edman delivers a 2-strike, 10th-inning walk-off single as the Dodgers edge the Pirates 5-4",
+      "summary": "— Tommy Edman singled in the winning run with two strikes in the 10th inning, lifting the Los Angeles Dodgers over the Pittsburgh Pirates 5-4 on Friday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816624",
+      "sport": "MLB",
+      "published": "2026-08-22T06:30:29.000Z",
+      "firstSeen": "2026-08-22T06:29:26.530Z",
+      "bestRank": 1
+    },
+    {
+      "key": "48944912",
+      "id": "48944912",
+      "headline": "Premier League, EFL summer transfer window 2026 dates: When is Deadline Day?",
+      "summary": "Everything that Premier League and EFL supporters need to know about the 2026 summer transfer window, and key dates around it.",
+      "url": "https://www.espn.com/soccer/story/_/id/48944912/premier-league-efl-summer-transfer-window-2026-dates-does-open-deadline-day",
+      "sport": "Soccer",
+      "published": "2026-08-22T06:25:40.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 2
+    },
+    {
+      "key": "48305211",
+      "id": "48305211",
+      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
+      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
+      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
+      "sport": "MLB",
+      "published": "2026-08-22T06:14:53.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "48955344",
+      "id": "48955344",
+      "headline": "Premier League 2026 summer transfers: All confirmed ins, outs for every club",
+      "summary": "Here's every Premier League in and out before the 2026-27 season begins.",
+      "url": "https://www.espn.com/soccer/story/_/id/48955344/premier-league-2026-summer-transfers-all-confirmed-ins-outs-every-club",
+      "sport": "Soccer",
+      "published": "2026-08-22T06:12:33.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49688103",
+      "id": "49688103",
+      "headline": "Dallas faces Seattle after Ogunbowale's 32-point game",
+      "summary": "Seattle Storm (7-30, 1-16 Western Conference) at Dallas Wings (21-16, 8-9 Western Conference)",
+      "url": "http://www.espn.com/wnba/preview?gameId=401857167",
+      "sport": "WNBA",
+      "published": "2026-08-22T06:10:36.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49688101",
+      "id": "49688101",
+      "headline": "Toronto hosts Las Vegas after Harrison's 25-point game",
+      "summary": "Las Vegas Aces (25-13, 13-6 Western Conference) at Toronto Tempo (11-25, 5-11 Eastern Conference)",
+      "url": "http://www.espn.com/wnba/preview?gameId=401857170",
+      "sport": "WNBA",
+      "published": "2026-08-22T06:10:32.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49688100",
+      "id": "49688100",
+      "headline": "Portland and Washington meet for non-conference matchup",
+      "summary": "Washington Mystics (21-15, 11-5 Eastern Conference) at Portland Fire (15-21, 6-11 Western Conference)",
+      "url": "http://www.espn.com/wnba/preview?gameId=401857169",
+      "sport": "WNBA",
+      "published": "2026-08-22T06:10:29.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 3
+    },
     {
       "key": "49687942",
       "id": "49687942",
@@ -33,28 +308,6 @@
       "published": "2026-08-22T06:06:40.000Z",
       "firstSeen": "2026-08-22T06:29:26.530Z",
       "bestRank": 1
-    },
-    {
-      "key": "49687995",
-      "id": "49687995",
-      "headline": "Tommy Edman delivers a 10th-inning walk-off single as the Dodgers edge the Pirates 5-4",
-      "summary": "— Tommy Edman singled in the winning run with two outs in the 10th inning, lifting the Los Angeles Dodgers over the Pittsburgh Pirates 5-4 on Friday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816624",
-      "sport": "MLB",
-      "published": "2026-08-22T05:48:31.000Z",
-      "firstSeen": "2026-08-22T06:29:26.530Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49687231",
-      "id": "49687231",
-      "headline": "Dodgers' Andy Pages exits with left hand contusion after HBP",
-      "summary": "Los Angeles Dodgers center fielder Andy Pages left the game after being hit on his left hand by a pitch.",
-      "url": "https://www.espn.com/mlb/story/_/id/49687231/dodgers-andy-pages-exits-being-hit-left-hand-pitch",
-      "sport": "MLB",
-      "published": "2026-08-22T05:44:21.000Z",
-      "firstSeen": "2026-08-22T06:29:26.530Z",
-      "bestRank": 10
     },
     {
       "key": "49687925",
@@ -145,15 +398,15 @@
       "bestRank": 1
     },
     {
-      "key": "49686743",
-      "id": "49686743",
-      "headline": "Dodgers president shuts down sale talk after Mark Walter's Lakers deal",
-      "summary": "Los Angeles Dodgers president Stan Kasten addressed online speculation about the team's future under owner Mark Walter.",
-      "url": "https://www.espn.com/mlb/story/_/id/49686743/dodgers-president-shuts-sale-talk-mark-walter-lakers-deal",
-      "sport": "MLB",
-      "published": "2026-08-22T04:49:33.000Z",
-      "firstSeen": "2026-08-22T06:29:26.530Z",
-      "bestRank": 19
+      "key": "49686794",
+      "id": "49686794",
+      "headline": "Sex toys thrown onto court during Sky's game vs. Valkyries",
+      "summary": "The Sky's home game against the Valkyries was interrupted when multiple sex toys were thrown on the court Friday night, prompting Chicago's Natasha Cloud to speak out against what she described as \"weird\" behavior.",
+      "url": "https://www.espn.com/wnba/story/_/id/49686794/sex-toys-thrown-court-sky-game-vs-valkyries",
+      "sport": "WNBA",
+      "published": "2026-08-22T04:50:31.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 6
     },
     {
       "key": "49640211",
@@ -165,6 +418,17 @@
       "published": "2026-08-22T04:47:15.000Z",
       "firstSeen": "2026-08-19T12:30:01.795Z",
       "bestRank": 1
+    },
+    {
+      "key": "49687566",
+      "id": "49687566",
+      "headline": "Tempo snap 12-game skid with an 82-79 win over the Fire at Rogers Arena in Vancouver",
+      "summary": "— Isabelle Harrison had 25 points and 10 rebounds and the short-handed Toronto Tempo snapped a 12-game skid with an 82-79 win over the Portland Fire on Friday night.",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857163",
+      "sport": "WNBA",
+      "published": "2026-08-22T04:41:30.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 4
     },
     {
       "key": "49687521",
@@ -187,6 +451,17 @@
       "published": "2026-08-22T04:31:36.000Z",
       "firstSeen": "2026-08-22T06:29:26.530Z",
       "bestRank": 1
+    },
+    {
+      "key": "49687468",
+      "id": "49687468",
+      "headline": "Toronto Tempo vs. Fire - Game Highlights",
+      "summary": "Watch the Game Highlights from Toronto Tempo vs. Fire, 08/21/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49687468/toronto-tempo-vs-fire-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-08-22T04:25:38.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 5
     },
     {
       "key": "49684895",
@@ -486,6 +761,17 @@
       "bestRank": 3
     },
     {
+      "key": "49686697",
+      "id": "49686697",
+      "headline": "Sydney Taylor hits 3-pointer with 1.6 seconds left as the Sky beat Valkyries 73-70",
+      "summary": "— Sydney Taylor hit a pull-up 3-pointer with 1.6 seconds left and the Chicago Sky beat the Golden State Valkyries 73-70 on Friday night after squandering a 21-point lead.",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857162",
+      "sport": "WNBA",
+      "published": "2026-08-22T02:44:30.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 7
+    },
+    {
       "key": "49686612",
       "id": "49686612",
       "headline": "Bohm's triple in the 10th scores 2 runs as the Phillies beat the Cardinals 7-6",
@@ -541,17 +827,6 @@
       "bestRank": 5
     },
     {
-      "key": "49686334",
-      "id": "49686334",
-      "headline": "Dodgers' Kyle Tucker 'grinding' to battle out of brutal slump",
-      "summary": "The Dodgers' Kyle Tucker is searching at the plate, looking for anything to escape an offensive slump.",
-      "url": "https://www.espn.com/mlb/story/_/id/49686334/dodgers-kyle-tucker-grinding-battle-brutal-slump",
-      "sport": "MLB",
-      "published": "2026-08-22T02:02:52.000Z",
-      "firstSeen": "2026-08-22T03:30:54.949Z",
-      "bestRank": 6
-    },
-    {
       "key": "49686335",
       "id": "49686335",
       "headline": "New York Jets vs. Pittsburgh Steelers: Game Highlights",
@@ -563,6 +838,39 @@
       "bestRank": 5
     },
     {
+      "key": "49686350",
+      "id": "49686350",
+      "headline": "Chicago Sky vs. Golden State Valkyries - Game Highlights",
+      "summary": "Watch the Game Highlights from Chicago Sky vs. Golden State Valkyries, 08/21/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49686350/chicago-sky-vs-golden-state-valkyries-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-08-22T01:53:34.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49686351",
+      "id": "49686351",
+      "headline": "Miles scores 24, Howard adds 21 as Lynx beat Mystics 94-84, win 6th straight",
+      "summary": "— Olivia Miles scored 24 points Natasha Howard added 21 points on 10-of-12 shooting and the Minnesota Lynx beat the Washington Mystics 94-84 on Friday night for their sixth straight win.",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857161",
+      "sport": "WNBA",
+      "published": "2026-08-22T01:53:29.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49686309",
+      "id": "49686309",
+      "headline": "Washington Mystics vs. Minnesota Lynx - Game Highlights",
+      "summary": "Watch the Game Highlights from Washington Mystics vs. Minnesota Lynx, 08/21/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49686309/washington-mystics-vs-minnesota-lynx-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-08-22T01:44:51.000Z",
+      "firstSeen": "2026-08-22T09:27:36.985Z",
+      "bestRank": 10
+    },
+    {
       "key": "49686303",
       "id": "49686303",
       "headline": "Alonso's 30th homer powers Orioles past Rays 5-3",
@@ -572,6 +880,17 @@
       "published": "2026-08-22T01:43:35.000Z",
       "firstSeen": "2026-08-22T03:30:54.949Z",
       "bestRank": 7
+    },
+    {
+      "key": "49681800",
+      "id": "49681800",
+      "headline": "Stad takes controlling stake in NBA's Timberwolves, WNBA's Lynx",
+      "summary": "American businessman Marc Stad has purchased and taken a controlling interest in the NBA's Minnesota Timberwolves and WNBA's Minnesota Lynx.",
+      "url": "https://www.espn.com/nba/story/_/id/49681800/sources-stad-reaches-deal-controlling-stake-t-wolves-lynx",
+      "sport": "WNBA",
+      "published": "2026-08-22T01:37:04.000Z",
+      "firstSeen": "2026-08-21T18:29:16.669Z",
+      "bestRank": 1
     },
     {
       "key": "49685946",
@@ -1058,17 +1377,6 @@
       "bestRank": 2
     },
     {
-      "key": "49681800",
-      "id": "49681800",
-      "headline": "Stad takes controlling stake in NBA's Timberwolves, WNBA's Lynx",
-      "summary": "American businessman Marc Stad has purchased and taken a controlling interest in the NBA's Minnesota Timberwolves and WNBA's Minnesota Lynx.",
-      "url": "https://www.espn.com/nba/story/_/id/49681800/sources-stad-reaches-deal-controlling-stake-t-wolves-lynx",
-      "sport": "WNBA",
-      "published": "2026-08-21T18:42:12.000Z",
-      "firstSeen": "2026-08-21T18:29:16.669Z",
-      "bestRank": 1
-    },
-    {
       "key": "49683048",
       "id": "49683048",
       "headline": "Why Brock Purdy is 'extremely happy' for Deebo to be back",
@@ -1265,17 +1573,6 @@
       "published": "2026-08-21T15:52:54.000Z",
       "firstSeen": "2026-08-21T21:27:41.439Z",
       "bestRank": 2
-    },
-    {
-      "key": "48955344",
-      "id": "48955344",
-      "headline": "Premier League 2026 summer transfers: All confirmed ins, outs for every club",
-      "summary": "Here's every Premier League in and out before the 2026-27 season begins.",
-      "url": "https://www.espn.com/soccer/story/_/id/48955344/premier-league-2026-summer-transfers-all-confirmed-ins-outs-every-club",
-      "sport": "Soccer",
-      "published": "2026-08-21T15:45:54.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
     },
     {
       "key": "49681409",
@@ -2037,17 +2334,6 @@
       "bestRank": 3
     },
     {
-      "key": "48944912",
-      "id": "48944912",
-      "headline": "Premier League, EFL summer transfer window 2026 dates: When is Deadline Day?",
-      "summary": "Everything that Premier League and EFL supporters need to know about the 2026 summer transfer window, and key dates around it.",
-      "url": "https://www.espn.com/soccer/story/_/id/48944912/premier-league-efl-summer-transfer-window-2026-dates-does-open-deadline-day",
-      "sport": "Soccer",
-      "published": "2026-08-21T06:07:20.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 3
-    },
-    {
       "key": "49535348",
       "id": "49535348",
       "headline": "Formula 1 2026: The surprises, talking points and battles shaping the season",
@@ -2221,17 +2507,6 @@
       "sport": "NBA",
       "published": "2026-08-21T04:02:18.000Z",
       "firstSeen": "2026-08-21T06:30:15.349Z",
-      "bestRank": 1
-    },
-    {
-      "key": "48305211",
-      "id": "48305211",
-      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
-      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
-      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
-      "sport": "MLB",
-      "published": "2026-08-21T03:45:15.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
     },
     {
@@ -3791,7 +4066,7 @@
       "headline": "NBA draft: Early players to watch from the 2027, 2028 classes",
       "summary": "After a summer of scouting, draft analyst Jeremy Woo breaks down the early players to keep an eye on for the 2027 and 2028 draft.",
       "url": "https://www.espn.com/nba/story/_/id/49660393/2027-2028-nba-draft-summer-scouting-top-players-watch-stokes-joksimovic-boumtje-boumtje",
-      "sport": "NBA",
+      "sport": "College basketball",
       "published": "2026-08-20T12:32:45.000Z",
       "firstSeen": "2026-08-20T12:30:09.711Z",
       "bestRank": 1
@@ -8708,7 +8983,7 @@
       "headline": "UConn hiring Charlie Stevens from Spurs as GM, source says",
       "summary": "UConn has found its replacement for general manager Tom Moore with the hiring of Spurs director of grassroots scouting Charlie Stevens, a source said.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49642766/uconn-hiring-charlie-stevens-spurs-gm-source-says",
-      "sport": "NBA",
+      "sport": "College basketball",
       "published": "2026-08-17T22:55:40.000Z",
       "firstSeen": "2026-08-18T00:30:53.864Z",
       "bestRank": 2
