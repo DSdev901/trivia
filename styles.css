@@ -345,7 +345,7 @@ body:not(.is-home) .app {
   width: 100%;
   border: 1px solid var(--stripe);
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.65);
+  background: #fff;
   box-shadow: var(--shadow);
   padding: 1.35rem 1.5rem;
   cursor: pointer;
@@ -668,7 +668,7 @@ body.is-home .brand-eye-glint::after {
   position: relative;
   height: 100%;
   padding: 1.2rem 1.1rem;
-  background: rgba(255, 255, 255, 0.94);
+  background: #fff;
 }
 
 .home-menu .category-card h2 {
@@ -2494,7 +2494,7 @@ a.ce-tab {
 
 .ce-card {
   position: relative;
-  background: rgba(255, 255, 255, 0.72);
+  background: #fff;
   border: 1px solid var(--stripe);
   border-radius: var(--radius);
   padding: 1rem 1.15rem;
