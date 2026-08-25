@@ -164,12 +164,19 @@ async function loadBatch(category, batchNumber) {
   return data;
 }
 
-function categoryMetaHtml(category, stamp) {
+function categoryMetaHtml(category, stamps) {
   const label = categoryMetaLabel(category);
   if (category?.id === "current-events") {
-    const day = formatBriefingDay(stamp?.generatedAt);
+    const day = formatBriefingDay(stamps?.briefing?.generatedAt);
     const ran = day
       ? `<span class="home-briefing-ran">Last briefing: ${escapeHtml(day)}</span>`
+      : `<span class="home-briefing-ran" hidden></span>`;
+    return `<span class="meta category-card-meta"><span>${label}</span>${ran}</span>`;
+  }
+  if (category?.id === "netflix") {
+    const day = formatBriefingDay(stamps?.netflix?.generatedAt);
+    const ran = day
+      ? `<span class="home-briefing-ran">Last updated: ${escapeHtml(day)}</span>`
       : `<span class="home-briefing-ran" hidden></span>`;
     return `<span class="meta category-card-meta"><span>${label}</span>${ran}</span>`;
   }
@@ -260,19 +267,32 @@ function categoryMarkHtml(category) {
 const HIT_CACHE = "trivia-hit-shown";
 
 let briefingStampPromise;
+let netflixStampPromise;
+
+function loadStamp(url) {
+  return fetch(url, { credentials: "omit" })
+    .then((res) => (res.ok ? res.json() : null))
+    .catch(() => null);
+}
 
 function loadBriefingStamp() {
   if (!briefingStampPromise) {
-    briefingStampPromise = fetch("data/current-events/briefing-stamp.json", {
-      credentials: "omit",
-    })
-      .then((res) => (res.ok ? res.json() : null))
-      .catch(() => null);
+    briefingStampPromise = loadStamp(
+      "data/current-events/briefing-stamp.json"
+    );
   }
   return briefingStampPromise;
 }
 
+function loadNetflixStamp() {
+  if (!netflixStampPromise) {
+    netflixStampPromise = loadStamp("data/current-events/netflix-stamp.json");
+  }
+  return netflixStampPromise;
+}
+
 loadBriefingStamp();
+loadNetflixStamp();
 
 function formatBriefingDay(iso) {
   const d = new Date(iso);
@@ -481,8 +501,8 @@ function bindHomeTickerDrag() {
   track.addEventListener("pointermove", onMove);
 }
 
-function renderCategories(categories, stamp) {
-  const fresh = isSameLocalDay(stamp?.generatedAt);
+function renderCategories(categories, stamps) {
+  const fresh = isSameLocalDay(stamps?.briefing?.generatedAt);
   els.categories.innerHTML = `
     ${homeTickerHtml()}
     <div class="home-menu">
@@ -497,7 +517,7 @@ function renderCategories(categories, stamp) {
           ${c.id === "current-events" && fresh ? currentEventsSparkleHtml() : ""}
           <p>${categoryKicker(c)}</p>
           ${categoryExtraHtml(c)}
-          ${categoryMetaHtml(c, stamp)}
+          ${categoryMetaHtml(c, stamps)}
         </a>`
         )
         .join("")}
@@ -2018,12 +2038,13 @@ suppressPointerFocus();
 async function init() {
   document.body.classList.toggle("is-home", !parseHash().category);
   try {
-    const [data, stamp] = await Promise.all([
+    const [data, briefing, netflix] = await Promise.all([
       loadJSON("data/categories.json"),
       loadBriefingStamp(),
+      loadNetflixStamp(),
     ]);
     state.categories = data.categories;
-    renderCategories(state.categories, stamp);
+    renderCategories(state.categories, { briefing, netflix });
     if (!location.hash) history.replaceState(null, "", "#/");
     window.addEventListener("hashchange", () => void applyRoute());
     await applyRoute();

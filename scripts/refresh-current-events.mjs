@@ -33,6 +33,7 @@ import {
   enrichThinSummaries,
   isEspnVideoStub,
 } from "./lib/summaries.mjs";
+import { writeNetflixStamp } from "./lib/netflix-stamp.mjs";
 import {
   RETENTION_DAYS as ENT_DAYS,
   fetchLiveEntertainment,
@@ -1923,6 +1924,7 @@ async function backfillNetflixImages() {
   );
   raw.generatedAt = now.toISOString();
   await writeFile(file, `${JSON.stringify(raw, null, 2)}\n`);
+  await writeNetflixStamp(raw.generatedAt);
   console.log(`  [netflix] wrote ${raw.items.length} items with posters`);
   return true;
 }
@@ -1949,6 +1951,7 @@ async function writeSection(section, items, minItems, win = null) {
     items: outItems,
   };
   await writeFile(file, `${JSON.stringify(payload, null, 2)}\n`);
+  if (section === "netflix") await writeNetflixStamp(payload.generatedAt);
   console.log(`  [${section}] wrote ${items.length} items`);
   return true;
 }
