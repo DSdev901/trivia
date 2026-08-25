@@ -37,6 +37,7 @@ import {
   stopSpeech,
   toConversationalSpeech,
   toMovieQuestionSpeech,
+  toPresidentRosterSpeech,
   unlockSpeech,
   voiceQualityTip,
   voiceSelectOptionsHtml,
@@ -654,7 +655,7 @@ async function openBatch(batchNumber) {
     if (state.category.type === "movies") {
       await renderMovieRound(batch);
     } else {
-      renderPresidents(batch);
+      await renderPresidents(batch);
     }
     show("presidents");
   } catch (err) {
@@ -663,8 +664,11 @@ async function openBatch(batchNumber) {
   }
 }
 
-function renderPresidents(batch) {
+async function renderPresidents(batch) {
   const category = state.category;
+  const chrome = await getSpeechChrome();
+  if (state.batch !== batch) return;
+
   els.presidents.innerHTML = `
     ${crumbsHtml(
       [
@@ -678,6 +682,12 @@ function renderPresidents(batch) {
       escapeHtml
     )}
     <h2 class="section-title">Section ${batch.batch}: Presidents ${batch.range}</h2>
+    <p class="lede">Tap a president for facts, or listen to names and years served.</p>
+    ${speechPanelHtml(
+      `speech-fold-presidents-${batch.batch}`,
+      "Hear each president’s name and years served in order.",
+      chrome
+    )}
     <div class="president-list">
       ${batch.presidents
         .map(
@@ -692,6 +702,17 @@ function renderPresidents(batch) {
     </div>
     ${nextStudyNavHtml(category, batch.batch)}
   `;
+
+  bindSpeechPanel(els.presidents, chrome, {
+    getLines: () => batch.presidents.map((p) => toPresidentRosterSpeech(p)),
+    highlight: (lineIndex) => {
+      els.presidents.querySelectorAll(".president-btn").forEach((btn) => {
+        const on = Number(btn.dataset.index) === lineIndex;
+        btn.classList.toggle("is-speaking", on);
+        if (on) btn.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      });
+    },
+  });
 
   els.presidents.querySelectorAll(".president-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
