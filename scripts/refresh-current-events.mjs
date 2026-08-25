@@ -1956,6 +1956,18 @@ async function writeSection(section, items, minItems, win = null) {
   return true;
 }
 
+/** Keep the home-card stamp aligned with netflix.json (even when the list is kept). */
+async function syncNetflixStamp() {
+  try {
+    const raw = JSON.parse(
+      await readFile(path.join(OUT_DIR, "netflix.json"), "utf8")
+    );
+    await writeNetflixStamp(raw.generatedAt);
+  } catch {
+    /* no netflix file yet */
+  }
+}
+
 async function main() {
   const onlyNetflix = process.argv.includes("--netflix");
   const onlyImages = process.argv.includes("--netflix-images");
@@ -1967,12 +1979,14 @@ async function main() {
   );
   if (onlyImages) {
     await backfillNetflixImages();
+    await syncNetflixStamp();
     console.log("Done — netflix posters updated.");
     return;
   }
   if (onlyNetflix) {
     const netflix = await buildNetflix();
     const ok = await writeSection("netflix", netflix, 5, netflixWin);
+    await syncNetflixStamp();
     console.log(`Done — netflix ${ok ? "updated" : "kept"}.`);
     if (!ok) process.exitCode = 1;
     return;
@@ -1990,6 +2004,7 @@ async function main() {
     Promise.resolve(world.length >= 5),
     writeSection("netflix", netflix, 5, netflixWin),
   ]);
+  await syncNetflixStamp();
   const ok = results.filter(Boolean).length;
   console.log(`Done — ${ok}/4 sections updated.`);
   if (ok === 0) process.exitCode = 1;
