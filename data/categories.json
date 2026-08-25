@@ -48,9 +48,9 @@
     {
       "id": "movies",
       "name": "Film & Movies",
-      "description": "One hundred fifty pub-quiz film questions from 1990 on, in fifteen rounds of ten — study the answers, listen, then quiz.",
+      "description": "Two hundred pub-quiz film questions from 1990 on, in twenty rounds of ten — study the answers, listen, then quiz.",
       "type": "movies",
-      "batchCount": 15,
+      "batchCount": 20,
       "batchPath": "data/movies/batch-{n}.json",
       "batches": [
         { "n": 1, "label": "Opening Credits", "range": "Opening Credits" },
@@ -67,7 +67,12 @@
         { "n": 12, "label": "Quote Unquote", "range": "Quote Unquote" },
         { "n": 13, "label": "Supporting Cast", "range": "Supporting Cast" },
         { "n": 14, "label": "Sequels & Series", "range": "Sequels & Series" },
-        { "n": 15, "label": "Hits Since 2000", "range": "Hits Since 2000" }
+        { "n": 15, "label": "Hits Since 2000", "range": "Hits Since 2000" },
+        { "n": 16, "label": "On the Soundtrack", "range": "On the Soundtrack" },
+        { "n": 17, "label": "The Bad Guys", "range": "The Bad Guys" },
+        { "n": 18, "label": "On Location", "range": "On Location" },
+        { "n": 19, "label": "First Time Out", "range": "First Time Out" },
+        { "n": 20, "label": "The 2010s", "range": "The 2010s" }
       ]
     }
   ]

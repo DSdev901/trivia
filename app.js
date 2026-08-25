@@ -213,7 +213,7 @@ function categoryKicker(category) {
     case "geography":
       return "Pin maps, capitals, and flags";
     case "movies":
-      return "15 rounds of pub-quiz film questions";
+      return "20 rounds of pub-quiz film questions";
     default:
       return category?.description || "";
   }
