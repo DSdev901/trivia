@@ -2102,4 +2102,14 @@ window.addEventListener(
   },
   { passive: true }
 );
-window.addEventListener("touchcancel", scheduleSnapIfScaled, { passive: true });
+window.addEventListener(
+  "touchcancel",
+  (e) => {
+    const t = e.target;
+    if (t && typeof t.closest === "function" && t.closest("#geo-map, .is-zoomable")) {
+      return;
+    }
+    scheduleSnapIfScaled();
+  },
+  { passive: true }
+);

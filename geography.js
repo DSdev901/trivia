@@ -1692,34 +1692,46 @@ function bindMapControls(host) {
   ensureBaseViewBox(svg);
 
   const PAN_SLOP = 10;
-  const STALE_MS = 280;
-  const pointers = new Map();
+  const contacts = new Map();
   let dragging = false;
   let last = null;
   let downPt = null;
   let pinch = null;
   let moved = false;
+  let winBound = false;
+  let lastTouchAt = 0;
 
   const readVb = () => {
     const raw = (svg.getAttribute("viewBox") || geo._baseViewBox).split(/\s+/).map(Number);
     return { x: raw[0], y: raw[1], w: raw[2], h: raw[3] };
   };
-  const writeVb = (vb, { scaleChanged = true } = {}) => {
+  const writeVb = (vb, { live = false } = {}) => {
     stopFocusZoom();
     const next = clampViewBox(vb);
     svg.setAttribute("viewBox", `${next.x} ${next.y} ${next.w} ${next.h}`);
-    if (scaleChanged) syncTinyIslandScale(host);
+    if (live) return;
+    syncTinyIslandScale(host);
     drawMapLabel(host);
   };
   const finishNav = () => {
+    if (contacts.size) return;
     syncTinyIslandScale(host);
     syncTinyHitPads(host);
+    drawMapLabel(host);
   };
-  const capture = (e) => {
+  const captureMouse = (e) => {
+    if (e.pointerType === "touch") return;
     try {
       host.setPointerCapture(e.pointerId);
     } catch {
       /* Safari can throw if the pointer already ended. */
+    }
+  };
+  const releaseMouse = (e) => {
+    try {
+      if (host.hasPointerCapture(e.pointerId)) host.releasePointerCapture(e.pointerId);
+    } catch {
+      /* already released */
     }
   };
 
@@ -1727,7 +1739,7 @@ function bindMapControls(host) {
     "wheel",
     (e) => {
       e.preventDefault();
-      if (pointers.size) return;
+      if (contacts.size) return;
       stopFocusZoom();
       const vb = readVb();
       const rect = svg.getBoundingClientRect();
@@ -1740,28 +1752,13 @@ function bindMapControls(host) {
     { passive: false }
   );
 
-  const setPointer = (e) => {
-    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY, t: performance.now() });
-  };
-  const dropStalePointers = (keepId = null) => {
-    if (pointers.size < 2) return false;
-    const now = performance.now();
-    const live = [...pointers.entries()].filter(
-      ([id, p]) => id === keepId || now - p.t < STALE_MS
-    );
-    if (live.length >= pointers.size) return false;
-    pointers.clear();
-    for (const [id, p] of live) pointers.set(id, p);
-    pinch = null;
-    return true;
-  };
   const pinchDist = () => {
-    const pts = [...pointers.values()];
+    const pts = [...contacts.values()];
     if (pts.length < 2) return 0;
     return Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
   };
   const pinchMid = () => {
-    const pts = [...pointers.values()];
+    const pts = [...contacts.values()];
     return { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 };
   };
   const beginPinch = () => {
@@ -1788,7 +1785,7 @@ function bindMapControls(host) {
     const vb = zoomViewBox(pinch.vb, pinch.dist / dist, pinch.mx, pinch.my);
     vb.x -= ((mid.x - pinch.mid.x) / Math.max(rect.width, 1)) * vb.w;
     vb.y -= ((mid.y - pinch.mid.y) / Math.max(rect.height, 1)) * vb.h;
-    writeVb(vb);
+    writeVb(vb, { live: true });
   };
   const startPanFrom = (pt) => {
     dragging = true;
@@ -1796,10 +1793,10 @@ function bindMapControls(host) {
     downPt = { x: pt.x, y: pt.y };
   };
   const settleFingers = () => {
-    if (pointers.size >= 2) return;
+    if (contacts.size >= 2) return;
     pinch = null;
-    if (pointers.size === 1) {
-      startPanFrom([...pointers.values()][0]);
+    if (contacts.size === 1) {
+      startPanFrom([...contacts.values()][0]);
       return;
     }
     dragging = false;
@@ -1807,98 +1804,138 @@ function bindMapControls(host) {
     downPt = null;
     host.classList.remove("is-panning");
     finishNav();
+    unbindWin();
   };
-  const syncFromTouches = (touchList) => {
-    if (pointers.size <= touchList.length) return;
-    const used = new Set();
-    const keep = new Map();
-    for (const t of touchList) {
-      let bestId = null;
-      let bestD = Infinity;
-      for (const [id, p] of pointers) {
-        if (used.has(id)) continue;
-        const d = Math.hypot(p.x - t.clientX, p.y - t.clientY);
-        if (d < bestD) {
-          bestD = d;
-          bestId = id;
-        }
-      }
-      if (bestId == null) continue;
-      used.add(bestId);
-      keep.set(bestId, { x: t.clientX, y: t.clientY, t: performance.now() });
-    }
-    pointers.clear();
-    for (const [id, p] of keep) pointers.set(id, p);
-    settleFingers();
-  };
-
-  host.addEventListener(
-    "touchmove",
-    (e) => {
-      e.preventDefault();
-      if (e.touches.length < pointers.size) syncFromTouches(e.touches);
-    },
-    { passive: false }
-  );
-  host.addEventListener("touchend", (e) => syncFromTouches(e.touches), { passive: true });
-  host.addEventListener("touchcancel", (e) => syncFromTouches(e.touches), { passive: true });
-
-  host.addEventListener("pointerdown", (e) => {
-    if (e.button !== 0) return;
-    stopFocusZoom();
-    dropStalePointers(e.pointerId);
-    setPointer(e);
-    capture(e);
-    if (pointers.size >= 2) {
+  const applyContacts = () => {
+    if (contacts.size >= 2) {
+      moved = true;
       dragging = false;
       last = null;
       downPt = null;
-      moved = true;
-      beginPinch();
-      host.classList.add("is-panning");
-      return;
-    }
-    moved = false;
-    startPanFrom(e);
-  });
-  host.addEventListener("pointermove", (e) => {
-    if (pointers.has(e.pointerId)) setPointer(e);
-    dropStalePointers(e.pointerId);
-    if (pointers.size >= 2) {
-      moved = true;
-      dragging = false;
       applyPinch();
+      host.classList.add("is-panning");
       return;
     }
     if (pinch) {
       pinch = null;
-      const pt = pointers.get(e.pointerId) || { x: e.clientX, y: e.clientY };
-      startPanFrom(pt);
+      const pt = [...contacts.values()][0];
+      if (pt) startPanFrom(pt);
     }
-    if (!dragging || !last || !downPt) return;
+    if (contacts.size !== 1 || !dragging || !last || !downPt) return;
+    const pt = [...contacts.values()][0];
     if (!moved) {
-      const dist = Math.hypot(e.clientX - downPt.x, e.clientY - downPt.y);
+      const dist = Math.hypot(pt.x - downPt.x, pt.y - downPt.y);
       if (dist < PAN_SLOP) return;
       moved = true;
       host.classList.add("is-panning");
     }
     const vb = readVb();
     const rect = svg.getBoundingClientRect();
-    const dx = ((e.clientX - last.x) / rect.width) * vb.w;
-    const dy = ((e.clientY - last.y) / rect.height) * vb.h;
+    const dx = ((pt.x - last.x) / Math.max(rect.width, 1)) * vb.w;
+    const dy = ((pt.y - last.y) / Math.max(rect.height, 1)) * vb.h;
     vb.x -= dx;
     vb.y -= dy;
-    writeVb(vb, { scaleChanged: false });
-    last = { x: e.clientX, y: e.clientY };
-  });
-  const endPointer = (e) => {
-    if (!pointers.has(e.pointerId)) return;
-    pointers.delete(e.pointerId);
-    dropStalePointers();
+    writeVb(vb, { live: true });
+    last = { x: pt.x, y: pt.y };
+  };
+  const syncTouches = (touchList) => {
+    contacts.clear();
+    for (const t of touchList) {
+      contacts.set(`t${t.identifier}`, { x: t.clientX, y: t.clientY });
+    }
+  };
+
+  /* TouchList is the source of truth on phones. Pointer Events on iOS often
+     skip moves for a still pinch finger; dropping that contact froze the map
+     until both fingers lifted. */
+  host.addEventListener(
+    "touchstart",
+    (e) => {
+      lastTouchAt = performance.now();
+      if (e.touches.length >= 2) e.preventDefault();
+      stopFocusZoom();
+      syncTouches(e.touches);
+      if (contacts.size >= 2) {
+        dragging = false;
+        last = null;
+        downPt = null;
+        moved = true;
+        beginPinch();
+        host.classList.add("is-panning");
+        return;
+      }
+      const pt = [...contacts.values()][0];
+      if (!pt) return;
+      moved = false;
+      startPanFrom(pt);
+    },
+    { passive: false }
+  );
+  host.addEventListener(
+    "touchmove",
+    (e) => {
+      lastTouchAt = performance.now();
+      e.preventDefault();
+      syncTouches(e.touches);
+      applyContacts();
+    },
+    { passive: false }
+  );
+  const endTouches = (e) => {
+    lastTouchAt = performance.now();
+    syncTouches(e.touches);
     settleFingers();
   };
-  host.addEventListener("pointerup", endPointer);
-  host.addEventListener("pointercancel", endPointer);
+  host.addEventListener("touchend", endTouches, { passive: true });
+  host.addEventListener("touchcancel", endTouches, { passive: true });
+
+  const onMouseMove = (e) => {
+    if (e.pointerType === "touch") return;
+    const key = `p${e.pointerId}`;
+    if (!contacts.has(key)) return;
+    contacts.set(key, { x: e.clientX, y: e.clientY });
+    applyContacts();
+  };
+  const endMouse = (e) => {
+    if (e.pointerType === "touch") return;
+    const key = `p${e.pointerId}`;
+    if (!contacts.has(key)) return;
+    contacts.delete(key);
+    releaseMouse(e);
+    settleFingers();
+  };
+  const unbindWin = () => {
+    if (!winBound || contacts.size) return;
+    winBound = false;
+    window.removeEventListener("pointermove", onMouseMove);
+    window.removeEventListener("pointerup", endMouse);
+    window.removeEventListener("pointercancel", endMouse);
+    window.removeEventListener("lostpointercapture", endMouse);
+  };
+  const bindWin = () => {
+    if (winBound) return;
+    winBound = true;
+    window.addEventListener("pointermove", onMouseMove);
+    window.addEventListener("pointerup", endMouse);
+    window.addEventListener("pointercancel", endMouse);
+    window.addEventListener("lostpointercapture", endMouse);
+  };
+
+  host.addEventListener("pointerdown", (e) => {
+    if (e.button !== 0 || e.pointerType === "touch") return;
+    if (performance.now() - lastTouchAt < 800) return;
+    if ([...contacts.keys()].some((k) => k.startsWith("t"))) return;
+    stopFocusZoom();
+    contacts.set(`p${e.pointerId}`, { x: e.clientX, y: e.clientY });
+    captureMouse(e);
+    bindWin();
+    moved = false;
+    startPanFrom(e);
+  });
+  host.addEventListener("pointermove", onMouseMove);
+  host.addEventListener("pointerup", endMouse);
+  host.addEventListener("pointercancel", endMouse);
+  host.addEventListener("lostpointercapture", endMouse);
   host.addEventListener(
     "click",
     (e) => {
