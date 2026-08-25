@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-25T06:29:49.263Z",
+  "generatedAt": "2026-08-25T09:29:32.844Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-04T06:29:49.263Z",
-  "windowEnd": "2026-08-25T06:29:49.263Z",
+  "windowStart": "2026-08-04T09:29:32.844Z",
+  "windowEnd": "2026-08-25T09:29:32.844Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,228 @@
     "Tennis",
     "MMA"
   ],
-  "count": 2430,
+  "count": 2451,
   "items": [
+    {
+      "key": "49719909",
+      "id": "49719909",
+      "headline": "Tottenham complete the signing of Savinho from Man City",
+      "summary": "Savinho has joined Tottenham from Manchester City in a deal worth up to £85 million ($116m).",
+      "url": "https://www.espn.com/soccer/story/_/id/49719909/tottenham-savinho-premier-league-transfers-man-city",
+      "sport": "Soccer",
+      "published": "2026-08-25T09:14:19.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49719456",
+      "id": "49719456",
+      "headline": "Transfer rumors, news: Could Jackson to Atlético pave way for Álvarez exit?",
+      "summary": "Atlético Madrid want Chelsea striker Nicolas Jackson, plus Bournemouth's Junior Kroupi is still attracting interest. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/49719456/transfer-rumors-news-nicolas-jackson-atletico-madrid-pave-way-julian-alvarez-arsenal-barcelona",
+      "sport": "Soccer",
+      "published": "2026-08-25T08:56:55.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49719832",
+      "id": "49719832",
+      "headline": "Man City monitoring Liverpool's Cody Gakpo before transfer deadline - sources",
+      "summary": "Cody Gakpo is one of a number of forwards Manchester City are monitoring ahead of the transfer deadline, sources have told ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/49719832/manchester-city-monitoring-liverpool-cody-gakpo-transfer-deadline-sources",
+      "sport": "Soccer",
+      "published": "2026-08-25T08:42:37.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49719477",
+      "id": "49719477",
+      "headline": "Former players say 'enough is enough' and 'change is necessary' at FIFA amid Infantino pressure",
+      "summary": "Several current and former professionals have applied further pressure on FIFA president Gianni Infantino, saying \"change is necessary\" on social media.",
+      "url": "https://www.espn.com/soccer/story/_/id/49719477/former-players-say-enough-enough-change-necessary-fifa-amid-infantino-pressure",
+      "sport": "Soccer",
+      "published": "2026-08-25T08:24:45.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49719665",
+      "id": "49719665",
+      "headline": "Mariners take on the Phillies following Raleigh's 3-home run game",
+      "summary": "Philadelphia Phillies (73-59, second in the NL East) vs. Seattle Mariners (63-69, third in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816678",
+      "sport": "MLB",
+      "published": "2026-08-25T08:02:05.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49719664",
+      "id": "49719664",
+      "headline": "Royals take win streak into game against the Blue Jays",
+      "summary": "Kansas City Royals (58-74, fifth in the AL Central) vs. Toronto Blue Jays (64-68, fourth in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816668",
+      "sport": "MLB",
+      "published": "2026-08-25T08:02:01.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49719663",
+      "id": "49719663",
+      "headline": "Yankees host the Astros to open 3-game series",
+      "summary": "Houston Astros (65-66, second in the AL West) vs. New York Yankees (74-56, second in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816667",
+      "sport": "MLB",
+      "published": "2026-08-25T08:01:57.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49719662",
+      "id": "49719662",
+      "headline": "Mets host the Brewers to open 3-game series",
+      "summary": "Milwaukee Brewers (81-50, first in the NL Central) vs. New York Mets (59-72, fifth in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816670",
+      "sport": "MLB",
+      "published": "2026-08-25T08:01:54.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49719661",
+      "id": "49719661",
+      "headline": "Guardians take 4-game road win streak into matchup with the Angels",
+      "summary": "Cleveland Guardians (66-66, second in the AL Central) vs. Los Angeles Angels (52-80, fourth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816676",
+      "sport": "MLB",
+      "published": "2026-08-25T08:01:50.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49719660",
+      "id": "49719660",
+      "headline": "Rockies take 7-game losing streak into matchup against the Nationals",
+      "summary": "Colorado Rockies (50-81, fifth in the NL West) vs. Washington Nationals (62-71, fourth in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816666",
+      "sport": "MLB",
+      "published": "2026-08-25T08:01:47.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49719659",
+      "id": "49719659",
+      "headline": "Orioles visit the Cardinals to start 3-game series",
+      "summary": "Baltimore Orioles (63-68, fifth in the AL East) vs. St. Louis Cardinals (66-66, third in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816672",
+      "sport": "MLB",
+      "published": "2026-08-25T08:01:43.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49719658",
+      "id": "49719658",
+      "headline": "Culpepper leads Twins against the Athletics after 4-hit outing",
+      "summary": "Minnesota Twins (64-68, third in the AL Central) vs. Athletics (51-81, fifth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816677",
+      "sport": "MLB",
+      "published": "2026-08-25T08:01:39.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49719657",
+      "id": "49719657",
+      "headline": "Cubs bring 1-0 series lead over Diamondbacks into game 2",
+      "summary": "Chicago Cubs (76-56, second in the NL Central) vs. Arizona Diamondbacks (69-63, third in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816674",
+      "sport": "MLB",
+      "published": "2026-08-25T08:01:36.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49719656",
+      "id": "49719656",
+      "headline": "Tigers host the Rays on 4-game home losing streak",
+      "summary": "Tampa Bay Rays (78-53, first in the AL East) vs. Detroit Tigers (61-70, fourth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816671",
+      "sport": "MLB",
+      "published": "2026-08-25T08:01:32.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49719655",
+      "id": "49719655",
+      "headline": "Red Sox seek to extend win streak, take on the Marlins",
+      "summary": "Boston Red Sox (72-59, third in the AL East) vs. Miami Marlins (67-65, third in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816665",
+      "sport": "MLB",
+      "published": "2026-08-25T08:01:29.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49719653",
+      "id": "49719653",
+      "headline": "Dodgers try to keep win streak going against the Braves",
+      "summary": "Los Angeles Dodgers (80-51, first in the NL West) vs. Atlanta Braves (76-55, first in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816669",
+      "sport": "MLB",
+      "published": "2026-08-25T08:00:42.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49719652",
+      "id": "49719652",
+      "headline": "Giants face the Reds leading series 1-0",
+      "summary": "Cincinnati Reds (62-70, fifth in the NL Central) vs. San Francisco Giants (53-78, fourth in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816675",
+      "sport": "MLB",
+      "published": "2026-08-25T08:00:38.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49719175",
+      "id": "49719175",
+      "headline": "Has Brentford's Mamadou Sangare won signing of the season already?",
+      "summary": "Twelve minutes were enough for Mamadou Sangare to prove that the pre-match hype was real.",
+      "url": "https://www.espn.com/espn/story/_/id/49719175/has-brentford-mamadou-sangare-won-signing-season-already",
+      "sport": "Soccer",
+      "published": "2026-08-25T07:56:48.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49719549",
+      "id": "49719549",
+      "headline": "Alonso: Chelsea are better when Palmer plays with freedom",
+      "summary": "Alonso: Chelsea are better when Palmer plays with freedom",
+      "url": "https://www.espn.com/video/clip/_/id/49719549/chelsea-better-palmer-plays-freedom",
+      "sport": "Soccer",
+      "published": "2026-08-25T07:35:58.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49716245",
+      "id": "49716245",
+      "headline": "Premier League overreactions: Takeaways now that all 20 teams played their first games",
+      "summary": "The first week of the Premier League is over: What does it tell us about how Arsenal, Liverpool, Man United and the rest will do this season?",
+      "url": "https://www.espn.com/soccer/story/_/id/49716245/premier-league-overreactions-takeaways-now-all-20-teams-played-their-first-games",
+      "sport": "Soccer",
+      "published": "2026-08-25T07:20:34.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 6
+    },
     {
       "key": "49718736",
       "id": "49718736",
@@ -30,9 +250,53 @@
       "summary": "Cal Raleigh, a switch-hitting catcher who has been in a seasonlong slump after a career season last year, busted out with the first three-homer game of his career Monday, as the Seattle Mariners polished off a 9-2 victory over the Philadelphia Phillies.",
       "url": "https://www.espn.com/mlb/story/_/id/49718736/cal-raleigh-hits-career-high-3-hrs-mariners-top-phillies",
       "sport": "MLB",
-      "published": "2026-08-25T05:57:56.000Z",
+      "published": "2026-08-25T06:33:34.000Z",
       "firstSeen": "2026-08-25T06:29:49.263Z",
       "bestRank": 2
+    },
+    {
+      "key": "49716807",
+      "id": "49716807",
+      "headline": "Season over for Mariners' Emerson; Woo to make next start",
+      "summary": "Mariners rookie shortstop Colt Emerson will have season-ending surgery Wednesday, but Seattle right-hander Bryan Woo will make his scheduled start.",
+      "url": "https://www.espn.com/mlb/story/_/id/49716807/season-mariners-emerson-woo-make-next-start",
+      "sport": "MLB",
+      "published": "2026-08-25T06:11:46.000Z",
+      "firstSeen": "2026-08-25T03:33:46.697Z",
+      "bestRank": 10
+    },
+    {
+      "key": "48305211",
+      "id": "48305211",
+      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
+      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
+      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
+      "sport": "MLB",
+      "published": "2026-08-25T06:04:38.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49719032",
+      "id": "49719032",
+      "headline": "Pittsburgh Pirates vs. San Diego Padres: Game Highlights",
+      "summary": "Pittsburgh Pirates vs. San Diego Padres: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49719032/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-25T06:03:12.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 15
+    },
+    {
+      "key": "49719033",
+      "id": "49719033",
+      "headline": "Nick Gonzales' 12th-inning RBI single sends Pirates past Padres 3-2",
+      "summary": "— Nick Gonzales led off the 12th inning with an RBI single and the Pittsburgh Pirates snapped their three-game skid with a 3-2 victory over the San Diego Padres on Monday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816664",
+      "sport": "MLB",
+      "published": "2026-08-25T06:02:30.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 14
     },
     {
       "key": "49718513",
@@ -134,17 +398,6 @@
       "bestRank": 8
     },
     {
-      "key": "49715699",
-      "id": "49715699",
-      "headline": "LSU's Lane Kiffin defends pursuit of NFL players returning to college",
-      "summary": "LSU's Lane Kiffin defended his decision to pursue NFL rookies seeking a fifth year of playing college football, saying he's just one of many coaches trying to do so.",
-      "url": "https://www.espn.com/college-football/story/_/id/49715699/lsu-lane-kiffin-defends-pursuit-nfl-players-returning-college",
-      "sport": "College football",
-      "published": "2026-08-25T04:41:37.000Z",
-      "firstSeen": "2026-08-25T00:30:49.786Z",
-      "bestRank": 4
-    },
-    {
       "key": "49718482",
       "id": "49718482",
       "headline": "Minnesota Twins vs. Athletics: Game Highlights",
@@ -154,17 +407,6 @@
       "published": "2026-08-25T04:40:56.000Z",
       "firstSeen": "2026-08-25T06:29:49.263Z",
       "bestRank": 6
-    },
-    {
-      "key": "49717877",
-      "id": "49717877",
-      "headline": "Koval of Ukraine leaves LSU after Tigers sign Russian player",
-      "summary": "Ukrainian center Kate Koval is leaving LSU less than two weeks after the Tigers brought in a player from Russia.",
-      "url": "https://www.espn.com/womens-college-basketball/story/_/id/49717877/koval-ukraine-leaves-lsu-tigers-sign-russian-player",
-      "sport": "Women's college basketball",
-      "published": "2026-08-25T04:30:22.000Z",
-      "firstSeen": "2026-08-25T06:29:49.263Z",
-      "bestRank": 1
     },
     {
       "key": "49718354",
@@ -233,17 +475,6 @@
       "bestRank": 7
     },
     {
-      "key": "49640698",
-      "id": "49640698",
-      "headline": "WNBA playoffs 2026: Which teams have clinched berths",
-      "summary": "Minnesota, Las Vegas, Golden State, Indiana, Atlanta, New York and Washington will play in the 2026 WNBA playoffs.",
-      "url": "https://www.espn.com/wnba/story/_/id/49640698/wnba-playoffs-2026-which-teams-clinched-postseason-berth",
-      "sport": "WNBA",
-      "published": "2026-08-25T04:19:36.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 1
-    },
-    {
       "key": "49641350",
       "id": "49641350",
       "headline": "NBA Summer Forecast 2026-27: Projections for East and West standings",
@@ -264,6 +495,17 @@
       "published": "2026-08-25T03:32:45.000Z",
       "firstSeen": "2026-08-25T06:29:49.263Z",
       "bestRank": 13
+    },
+    {
+      "key": "49717877",
+      "id": "49717877",
+      "headline": "Koval of Ukraine leaves LSU after Tigers sign Russian player",
+      "summary": "Ukrainian center Kate Koval is leaving LSU less than two weeks after the Tigers brought in a player from Russia.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/49717877/koval-ukraine-leaves-lsu-tigers-sign-russian-player",
+      "sport": "Women's college basketball",
+      "published": "2026-08-25T03:19:38.000Z",
+      "firstSeen": "2026-08-25T06:29:49.263Z",
+      "bestRank": 1
     },
     {
       "key": "49717675",
@@ -321,6 +563,17 @@
       "bestRank": 2
     },
     {
+      "key": "49640698",
+      "id": "49640698",
+      "headline": "WNBA playoffs 2026: Which teams have clinched berths",
+      "summary": "Minnesota, Las Vegas, Golden State, Indiana, Atlanta, New York and Washington will play in the 2026 WNBA playoffs.",
+      "url": "https://www.espn.com/wnba/story/_/id/49640698/wnba-playoffs-2026-which-teams-clinched-postseason-berth",
+      "sport": "WNBA",
+      "published": "2026-08-25T02:18:06.000Z",
+      "firstSeen": "2026-08-18T09:29:00.803Z",
+      "bestRank": 1
+    },
+    {
       "key": "49717533",
       "id": "49717533",
       "headline": "Colorado Rockies vs. Washington Nationals: Game Highlights",
@@ -340,7 +593,7 @@
       "sport": "WNBA",
       "published": "2026-08-25T02:15:28.000Z",
       "firstSeen": "2026-08-25T06:29:49.263Z",
-      "bestRank": 4
+      "bestRank": 1
     },
     {
       "key": "49377273",
@@ -453,6 +706,17 @@
       "bestRank": 2
     },
     {
+      "key": "49715699",
+      "id": "49715699",
+      "headline": "LSU's Lane Kiffin defends pursuit of NFL players returning to college",
+      "summary": "LSU's Lane Kiffin defended his decision to pursue NFL rookies seeking a fifth year of playing college football, saying he's just one of many coaches trying to do so.",
+      "url": "https://www.espn.com/college-football/story/_/id/49715699/lsu-lane-kiffin-defends-pursuit-nfl-players-returning-college",
+      "sport": "College football",
+      "published": "2026-08-25T00:57:07.000Z",
+      "firstSeen": "2026-08-25T00:30:49.786Z",
+      "bestRank": 4
+    },
+    {
       "key": "49717034",
       "id": "49717034",
       "headline": "Why Liz Loza is avoiding Joe Burrow in fantasy drafts",
@@ -462,17 +726,6 @@
       "published": "2026-08-25T00:49:59.000Z",
       "firstSeen": "2026-08-25T03:33:46.697Z",
       "bestRank": 1
-    },
-    {
-      "key": "49716807",
-      "id": "49716807",
-      "headline": "Season over for Mariners' Emerson; Woo to make next start",
-      "summary": "Mariners rookie shortstop Colt Emerson will have season-ending surgery Wednesday, but Seattle right-hander Bryan Woo will make his scheduled start.",
-      "url": "https://www.espn.com/mlb/story/_/id/49716807/season-mariners-emerson-woo-make-next-start",
-      "sport": "MLB",
-      "published": "2026-08-25T00:49:13.000Z",
-      "firstSeen": "2026-08-25T03:33:46.697Z",
-      "bestRank": 10
     },
     {
       "key": "49466177",
@@ -2562,17 +2815,6 @@
       "sport": "NBA",
       "published": "2026-08-24T02:37:48.000Z",
       "firstSeen": "2026-08-24T00:30:29.975Z",
-      "bestRank": 1
-    },
-    {
-      "key": "48305211",
-      "id": "48305211",
-      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
-      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
-      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
-      "sport": "MLB",
-      "published": "2026-08-24T02:36:07.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
     },
     {
@@ -5584,7 +5826,7 @@
       "headline": "Stad takes controlling stake in NBA's Timberwolves, WNBA's Lynx",
       "summary": "American businessman Marc Stad has purchased and taken a controlling interest in the NBA's Minnesota Timberwolves and WNBA's Minnesota Lynx.",
       "url": "https://www.espn.com/nba/story/_/id/49681800/sources-stad-reaches-deal-controlling-stake-t-wolves-lynx",
-      "sport": "NBA",
+      "sport": "WNBA",
       "published": "2026-08-22T11:11:14.000Z",
       "firstSeen": "2026-08-21T18:29:16.669Z",
       "bestRank": 1
@@ -26741,17 +26983,6 @@
       "published": "2026-08-04T11:58:47.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 39
-    },
-    {
-      "key": "49522542",
-      "id": "49522542",
-      "headline": "Emma Raducanu set to miss US Open, continue recovery from stress fracture",
-      "summary": "Emma Raducanu's stress fracture will force her to miss the US Open.",
-      "url": "https://www.espn.com/tennis/story/_/id/49522542/emma-raducanu-set-miss-us-open-continue-recovery-stress-fracture",
-      "sport": "Tennis",
-      "published": "2026-08-04T06:57:11.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 9
     }
   ]
 }
