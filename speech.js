@@ -563,6 +563,19 @@ export function toConversationalSpeech(president, fact, factNumber) {
   return `${factLabel} ${text}`;
 }
 
+/** Read a section roster line: number, name, years served. */
+export function toPresidentRosterSpeech(president) {
+  const number = president.number;
+  const name = String(president.name || "").trim();
+  const served = String(president.served || "")
+    .replaceAll("–", " to ")
+    .replaceAll("-", " to ")
+    .trim();
+  if (!name) return `President number ${number}.`;
+  if (!served) return `President number ${number}. ${name}.`;
+  return `President number ${number}. ${name}. Served ${served}.`;
+}
+
 /** Read a film pub-quiz item as question, then answer. */
 export function toMovieQuestionSpeech(item, questionNumber) {
   const n = Number(questionNumber) || 1;
