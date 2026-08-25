@@ -438,19 +438,14 @@ function panLimitBox() {
 function clampViewBox(vb) {
   const limit = panLimitBox();
   let { x, y, w, h } = vb;
-  if (w > limit.w) {
-    const s = limit.w / w;
-    w = limit.w;
+  if (w > limit.w + 0.05 || h > limit.h + 0.05) {
+    const s = Math.min(limit.w / w, limit.h / h, 1);
+    w *= s;
     h *= s;
   }
-  if (h > limit.h) {
-    const s = limit.h / h;
-    h = limit.h;
-    w *= s;
-  }
-  if (w >= limit.w - 0.001) x = limit.x + (limit.w - w) / 2;
+  if (w >= limit.w - 0.05) x = limit.x + (limit.w - w) / 2;
   else x = Math.min(Math.max(x, limit.x), limit.x + limit.w - w);
-  if (h >= limit.h - 0.001) y = limit.y + (limit.h - h) / 2;
+  if (h >= limit.h - 0.05) y = limit.y + (limit.h - h) / 2;
   else y = Math.min(Math.max(y, limit.y), limit.y + limit.h - h);
   return { x, y, w, h };
 }
@@ -860,6 +855,25 @@ function unionViewBox(a, b) {
   return { x: minX, y: minY, w: maxX - minX, h: maxY - minY };
 }
 
+function expandViewBox(vb, ratio) {
+  const padX = Math.max(0, vb.w * ratio);
+  const padY = Math.max(0, vb.h * ratio);
+  return { x: vb.x - padX, y: vb.y - padY, w: vb.w + padX * 2, h: vb.h + padY * 2 };
+}
+
+function intersectViewBox(a, b) {
+  const minX = Math.max(a.x, b.x);
+  const minY = Math.max(a.y, b.y);
+  const maxX = Math.min(a.x + a.w, b.x + b.w);
+  const maxY = Math.min(a.y + a.h, b.y + b.h);
+  if (maxX - minX < 1 || maxY - minY < 1) return b;
+  return { x: minX, y: minY, w: maxX - minX, h: maxY - minY };
+}
+
+function fullMapViewBox() {
+  return viewBoxParts(geo._baseViewBox || geo._packViewBox);
+}
+
 function applyViewBox(svg, bounds, padRatio, storeAsPack) {
   const vb = paddedViewBox(bounds, padRatio);
   svg.setAttribute("viewBox", viewBoxAttr(vb));
@@ -867,11 +881,6 @@ function applyViewBox(svg, bounds, padRatio, storeAsPack) {
   if (storeAsPack) geo._packViewBox = viewBoxAttr(vb);
   geo._panLimit = viewBoxAttr(vb);
   return vb;
-}
-
-function boundsArea(b) {
-  if (!b || b.useFullMap) return 0;
-  return Math.max(0, b.maxX - b.minX) * Math.max(0, b.maxY - b.minY);
 }
 
 function allRegionIds(host) {
@@ -947,9 +956,10 @@ function panIdsForPack(host, inPack) {
   const ids = [...inPack];
   if (!host || geo.pack?.overlay === "markers") return ids;
 
-  if (geo.pack?.map === "us-states" || geo.pack?.map === "canada-provinces") {
-    const all = allRegionIds(host);
-    return ids.length < all.length * 0.85 ? all : ids;
+  const all = allRegionIds(host);
+  if (ids.length && all.length && ids.length < all.length * 0.85) {
+    if (geo.pack?.map === "us-states" || geo.pack?.map === "canada-provinces") return all;
+    if (!isWorldCountriesMap()) return all;
   }
 
   if (!isWorldCountriesMap()) return ids;
@@ -957,24 +967,7 @@ function panIdsForPack(host, inPack) {
   if (conts.size !== 1) return ids;
   const contIds = Object.keys(ISO_CONT).filter((iso) => ISO_CONT[iso] === [...conts][0]);
   if (!contIds.length || ids.length >= contIds.length * 0.85) return ids;
-
-  const svg = host.querySelector("svg");
-  if (!svg) return ids;
-  const { mapW, mapH } = mapSize(svg);
-  const packB = quizBoundsForIds(host, ids, {
-    mapW,
-    mapH,
-    core: packCorePoint(host, ids),
-  });
-  const contB = quizBoundsForIds(host, contIds, {
-    mapW,
-    mapH,
-    core: packCorePoint(host, contIds),
-  });
-  const packA = boundsArea(packB);
-  const contA = boundsArea(contB);
-  if (contA > 0 && packA / contA >= 0.2) return contIds;
-  return ids;
+  return contIds;
 }
 
 function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false, panIds = null } = {}) {
@@ -995,8 +988,14 @@ function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false, panIds = null 
   const packVb = applyViewBox(svg, bounds, padRatio, storeAsPack);
   const panSource = panIds?.length ? panIds : ids;
   const panBounds = boundsForFitIds(host, svg, panSource);
-  if (!panBounds || panBounds.useFullMap) return;
-  const panVb = unionViewBox(packVb, paddedViewBox(panBounds, Math.max(padRatio, 0.1)));
+  const full = expandViewBox(fullMapViewBox(), 0.04);
+  let panVb = expandViewBox(packVb, 0.35);
+  if (panBounds?.useFullMap) panVb = full;
+  else if (panBounds) {
+    panVb = unionViewBox(panVb, paddedViewBox(panBounds, Math.max(padRatio, 0.45)));
+    panVb = intersectViewBox(panVb, full);
+  }
+  panVb = unionViewBox(packVb, panVb);
   geo._panLimit = viewBoxAttr(panVb);
   coverOcean(svg, panVb.x, panVb.y, panVb.w, panVb.h);
 }
@@ -1693,35 +1692,7 @@ function bindMapControls(host) {
   ensureBaseViewBox(svg);
 
   const PAN_SLOP = 10;
-
-  const readVb = () => {
-    const raw = (svg.getAttribute("viewBox") || geo._baseViewBox).split(/\s+/).map(Number);
-    return { x: raw[0], y: raw[1], w: raw[2], h: raw[3] };
-  };
-  const writeVb = (vb) => {
-    stopFocusZoom();
-    const next = clampViewBox(vb);
-    svg.setAttribute("viewBox", `${next.x} ${next.y} ${next.w} ${next.h}`);
-    syncTinyIslandScale(host);
-    drawMapLabel(host);
-    syncTinyHitPads(host);
-  };
-
-  host.addEventListener(
-    "wheel",
-    (e) => {
-      e.preventDefault();
-      stopFocusZoom();
-      const vb = readVb();
-      const rect = svg.getBoundingClientRect();
-      const mx = (e.clientX - rect.left) / rect.width;
-      const my = (e.clientY - rect.top) / rect.height;
-      const factor = e.deltaY > 0 ? 1.12 : 1 / 1.12;
-      writeVb(zoomViewBox(vb, factor, mx, my));
-    },
-    { passive: false }
-  );
-
+  const STALE_MS = 280;
   const pointers = new Map();
   let dragging = false;
   let last = null;
@@ -1729,8 +1700,60 @@ function bindMapControls(host) {
   let pinch = null;
   let moved = false;
 
+  const readVb = () => {
+    const raw = (svg.getAttribute("viewBox") || geo._baseViewBox).split(/\s+/).map(Number);
+    return { x: raw[0], y: raw[1], w: raw[2], h: raw[3] };
+  };
+  const writeVb = (vb, { scaleChanged = true } = {}) => {
+    stopFocusZoom();
+    const next = clampViewBox(vb);
+    svg.setAttribute("viewBox", `${next.x} ${next.y} ${next.w} ${next.h}`);
+    if (scaleChanged) syncTinyIslandScale(host);
+    drawMapLabel(host);
+  };
+  const finishNav = () => {
+    syncTinyIslandScale(host);
+    syncTinyHitPads(host);
+  };
+  const capture = (e) => {
+    try {
+      host.setPointerCapture(e.pointerId);
+    } catch {
+      /* Safari can throw if the pointer already ended. */
+    }
+  };
+
+  host.addEventListener(
+    "wheel",
+    (e) => {
+      e.preventDefault();
+      if (pointers.size) return;
+      stopFocusZoom();
+      const vb = readVb();
+      const rect = svg.getBoundingClientRect();
+      const mx = (e.clientX - rect.left) / rect.width;
+      const my = (e.clientY - rect.top) / rect.height;
+      const factor = e.deltaY > 0 ? 1.12 : 1 / 1.12;
+      writeVb(zoomViewBox(vb, factor, mx, my));
+      finishNav();
+    },
+    { passive: false }
+  );
+
   const setPointer = (e) => {
-    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY, t: performance.now() });
+  };
+  const dropStalePointers = (keepId = null) => {
+    if (pointers.size < 2) return false;
+    const now = performance.now();
+    const live = [...pointers.entries()].filter(
+      ([id, p]) => id === keepId || now - p.t < STALE_MS
+    );
+    if (live.length >= pointers.size) return false;
+    pointers.clear();
+    for (const [id, p] of live) pointers.set(id, p);
+    pinch = null;
+    return true;
   };
   const pinchDist = () => {
     const pts = [...pointers.values()];
@@ -1767,11 +1790,65 @@ function bindMapControls(host) {
     vb.y -= ((mid.y - pinch.mid.y) / Math.max(rect.height, 1)) * vb.h;
     writeVb(vb);
   };
+  const startPanFrom = (pt) => {
+    dragging = true;
+    last = { x: pt.x, y: pt.y };
+    downPt = { x: pt.x, y: pt.y };
+  };
+  const settleFingers = () => {
+    if (pointers.size >= 2) return;
+    pinch = null;
+    if (pointers.size === 1) {
+      startPanFrom([...pointers.values()][0]);
+      return;
+    }
+    dragging = false;
+    last = null;
+    downPt = null;
+    host.classList.remove("is-panning");
+    finishNav();
+  };
+  const syncFromTouches = (touchList) => {
+    if (pointers.size <= touchList.length) return;
+    const used = new Set();
+    const keep = new Map();
+    for (const t of touchList) {
+      let bestId = null;
+      let bestD = Infinity;
+      for (const [id, p] of pointers) {
+        if (used.has(id)) continue;
+        const d = Math.hypot(p.x - t.clientX, p.y - t.clientY);
+        if (d < bestD) {
+          bestD = d;
+          bestId = id;
+        }
+      }
+      if (bestId == null) continue;
+      used.add(bestId);
+      keep.set(bestId, { x: t.clientX, y: t.clientY, t: performance.now() });
+    }
+    pointers.clear();
+    for (const [id, p] of keep) pointers.set(id, p);
+    settleFingers();
+  };
+
+  host.addEventListener(
+    "touchmove",
+    (e) => {
+      e.preventDefault();
+      if (e.touches.length < pointers.size) syncFromTouches(e.touches);
+    },
+    { passive: false }
+  );
+  host.addEventListener("touchend", (e) => syncFromTouches(e.touches), { passive: true });
+  host.addEventListener("touchcancel", (e) => syncFromTouches(e.touches), { passive: true });
 
   host.addEventListener("pointerdown", (e) => {
     if (e.button !== 0) return;
     stopFocusZoom();
+    dropStalePointers(e.pointerId);
     setPointer(e);
+    capture(e);
     if (pointers.size >= 2) {
       dragging = false;
       last = null;
@@ -1779,20 +1856,24 @@ function bindMapControls(host) {
       moved = true;
       beginPinch();
       host.classList.add("is-panning");
-      host.setPointerCapture?.(e.pointerId);
       return;
     }
     moved = false;
-    dragging = true;
-    last = { x: e.clientX, y: e.clientY };
-    downPt = { x: e.clientX, y: e.clientY };
+    startPanFrom(e);
   });
   host.addEventListener("pointermove", (e) => {
     if (pointers.has(e.pointerId)) setPointer(e);
+    dropStalePointers(e.pointerId);
     if (pointers.size >= 2) {
       moved = true;
+      dragging = false;
       applyPinch();
       return;
+    }
+    if (pinch) {
+      pinch = null;
+      const pt = pointers.get(e.pointerId) || { x: e.clientX, y: e.clientY };
+      startPanFrom(pt);
     }
     if (!dragging || !last || !downPt) return;
     if (!moved) {
@@ -1800,7 +1881,6 @@ function bindMapControls(host) {
       if (dist < PAN_SLOP) return;
       moved = true;
       host.classList.add("is-panning");
-      host.setPointerCapture?.(e.pointerId);
     }
     const vb = readVb();
     const rect = svg.getBoundingClientRect();
@@ -1808,25 +1888,14 @@ function bindMapControls(host) {
     const dy = ((e.clientY - last.y) / rect.height) * vb.h;
     vb.x -= dx;
     vb.y -= dy;
-    writeVb(vb);
+    writeVb(vb, { scaleChanged: false });
     last = { x: e.clientX, y: e.clientY };
   });
   const endPointer = (e) => {
+    if (!pointers.has(e.pointerId)) return;
     pointers.delete(e.pointerId);
-    if (pointers.size < 2) pinch = null;
-    if (pointers.size === 1) {
-      const pt = [...pointers.values()][0];
-      dragging = true;
-      last = { x: pt.x, y: pt.y };
-      downPt = { x: pt.x, y: pt.y };
-      return;
-    }
-    if (pointers.size === 0) {
-      dragging = false;
-      last = null;
-      downPt = null;
-      host.classList.remove("is-panning");
-    }
+    dropStalePointers();
+    settleFingers();
   };
   host.addEventListener("pointerup", endPointer);
   host.addEventListener("pointercancel", endPointer);

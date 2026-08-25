@@ -3274,6 +3274,7 @@ a.ce-tab {
   width: 100%;
   height: auto;
   max-height: min(56vh, 520px);
+  touch-action: none;
 }
 
 .geo-play--map .geo-map-frame svg {
