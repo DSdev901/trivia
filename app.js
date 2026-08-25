@@ -297,6 +297,7 @@ loadNetflixStamp();
 function formatBriefingDay(iso) {
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return "";
+  if (isSameLocalDay(iso)) return "today";
   return d.toLocaleDateString(undefined, {
     weekday: "short",
     month: "short",
