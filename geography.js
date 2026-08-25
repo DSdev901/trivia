@@ -1149,6 +1149,13 @@ function mapTargetId(e) {
   const stack = document.elementsFromPoint(e.clientX, e.clientY);
   let tinyId = null;
   for (const node of stack) {
+    if (
+      node.classList?.contains("geo-map-nav") ||
+      node.classList?.contains("geo-map-hint") ||
+      node.id === "geo-map"
+    ) {
+      continue;
+    }
     if (node.classList?.contains("geo-tiny-hit")) {
       if (!tinyId && node.dataset.id) tinyId = node.dataset.id;
       continue;
@@ -1685,11 +1692,22 @@ function zoomViewBox(src, factor, mx, my) {
   return vb;
 }
 
+function ensureNavLayer(host) {
+  let nav = host.querySelector(".geo-map-nav");
+  if (nav) return nav;
+  nav = document.createElement("div");
+  nav.className = "geo-map-nav";
+  nav.setAttribute("aria-hidden", "true");
+  host.appendChild(nav);
+  return nav;
+}
+
 function bindMapControls(host) {
   const svg = host?.querySelector("svg");
   if (!host || !svg || host.dataset.navBound === "1") return;
   host.dataset.navBound = "1";
   ensureBaseViewBox(svg);
+  const nav = ensureNavLayer(host);
 
   const PAN_SLOP = 10;
   const contacts = new Map();
@@ -1699,6 +1717,8 @@ function bindMapControls(host) {
   let pinch = null;
   let moved = false;
   let winBound = false;
+  let navRaf = 0;
+  let finishTimer = 0;
   let lastTouchAt = 0;
 
   const readVb = () => {
@@ -1719,17 +1739,23 @@ function bindMapControls(host) {
     syncTinyHitPads(host);
     drawMapLabel(host);
   };
-  const captureMouse = (e) => {
-    if (e.pointerType === "touch") return;
+  const scheduleFinishNav = () => {
+    clearTimeout(finishTimer);
+    finishTimer = window.setTimeout(() => {
+      finishTimer = 0;
+      finishNav();
+    }, 120);
+  };
+  const capturePtr = (el, e) => {
     try {
-      host.setPointerCapture(e.pointerId);
+      el.setPointerCapture(e.pointerId);
     } catch {
       /* Safari can throw if the pointer already ended. */
     }
   };
-  const releaseMouse = (e) => {
+  const releasePtr = (el, e) => {
     try {
-      if (host.hasPointerCapture(e.pointerId)) host.releasePointerCapture(e.pointerId);
+      if (el.hasPointerCapture(e.pointerId)) el.releasePointerCapture(e.pointerId);
     } catch {
       /* already released */
     }
@@ -1792,6 +1818,17 @@ function bindMapControls(host) {
     last = { x: pt.x, y: pt.y };
     downPt = { x: pt.x, y: pt.y };
   };
+  const unbindWin = () => {
+    if (!winBound || contacts.size) return;
+    winBound = false;
+    window.removeEventListener("pointermove", onPtrMove);
+    window.removeEventListener("pointerup", onPtrEnd);
+    window.removeEventListener("pointercancel", onPtrEnd);
+    window.removeEventListener("lostpointercapture", onPtrEnd);
+    window.removeEventListener("touchmove", onWinTouchMove, true);
+    window.removeEventListener("touchend", onWinTouchEnd, true);
+    window.removeEventListener("touchcancel", onWinTouchEnd, true);
+  };
   const settleFingers = () => {
     if (contacts.size >= 2) return;
     pinch = null;
@@ -1803,7 +1840,7 @@ function bindMapControls(host) {
     last = null;
     downPt = null;
     host.classList.remove("is-panning");
-    finishNav();
+    scheduleFinishNav();
     unbindWin();
   };
   const applyContacts = () => {
@@ -1838,104 +1875,172 @@ function bindMapControls(host) {
     writeVb(vb, { live: true });
     last = { x: pt.x, y: pt.y };
   };
-  const syncTouches = (touchList) => {
-    contacts.clear();
-    for (const t of touchList) {
-      contacts.set(`t${t.identifier}`, { x: t.clientX, y: t.clientY });
+  const dropExtraTouches = (touchList) => {
+    if (!contacts.size) return;
+    const touches = [...touchList];
+    if (!touches.length) {
+      contacts.clear();
+      return;
     }
-  };
-
-  /* TouchList is the source of truth on phones. Pointer Events on iOS often
-     skip moves for a still pinch finger; dropping that contact froze the map
-     until both fingers lifted. */
-  host.addEventListener(
-    "touchstart",
-    (e) => {
-      lastTouchAt = performance.now();
-      if (e.touches.length >= 2) e.preventDefault();
-      stopFocusZoom();
-      syncTouches(e.touches);
-      if (contacts.size >= 2) {
-        dragging = false;
-        last = null;
-        downPt = null;
-        moved = true;
-        beginPinch();
-        host.classList.add("is-panning");
-        return;
+    if (contacts.size <= touches.length) return;
+    const used = new Set();
+    const keep = new Map();
+    for (const t of touches) {
+      let bestId = null;
+      let bestD = Infinity;
+      for (const [id, p] of contacts) {
+        if (used.has(id)) continue;
+        const d = Math.hypot(p.x - t.clientX, p.y - t.clientY);
+        if (d < bestD) {
+          bestD = d;
+          bestId = id;
+        }
       }
-      const pt = [...contacts.values()][0];
-      if (!pt) return;
-      moved = false;
-      startPanFrom(pt);
-    },
-    { passive: false }
-  );
-  host.addEventListener(
-    "touchmove",
-    (e) => {
-      lastTouchAt = performance.now();
-      e.preventDefault();
-      syncTouches(e.touches);
-      applyContacts();
-    },
-    { passive: false }
-  );
-  const endTouches = (e) => {
-    lastTouchAt = performance.now();
-    syncTouches(e.touches);
-    settleFingers();
+      if (bestId == null) continue;
+      used.add(bestId);
+      keep.set(bestId, { x: t.clientX, y: t.clientY });
+    }
+    contacts.clear();
+    for (const [id, p] of keep) contacts.set(id, p);
   };
-  host.addEventListener("touchend", endTouches, { passive: true });
-  host.addEventListener("touchcancel", endTouches, { passive: true });
-
-  const onMouseMove = (e) => {
-    if (e.pointerType === "touch") return;
-    const key = `p${e.pointerId}`;
-    if (!contacts.has(key)) return;
-    contacts.set(key, { x: e.clientX, y: e.clientY });
+  const scheduleNav = () => {
+    if (navRaf) return;
+    navRaf = requestAnimationFrame(() => {
+      navRaf = 0;
+      applyContacts();
+    });
+  };
+  const flushNav = () => {
+    if (navRaf) {
+      cancelAnimationFrame(navRaf);
+      navRaf = 0;
+    }
     applyContacts();
   };
-  const endMouse = (e) => {
-    if (e.pointerType === "touch") return;
-    const key = `p${e.pointerId}`;
-    if (!contacts.has(key)) return;
-    contacts.delete(key);
-    releaseMouse(e);
+
+  const onPtrMove = (e) => {
+    if (!contacts.has(e.pointerId)) return;
+    contacts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    scheduleNav();
+  };
+  const onPtrEnd = (e) => {
+    if (!contacts.has(e.pointerId)) return;
+    contacts.delete(e.pointerId);
+    releasePtr(nav, e);
+    flushNav();
     settleFingers();
   };
-  const unbindWin = () => {
-    if (!winBound || contacts.size) return;
-    winBound = false;
-    window.removeEventListener("pointermove", onMouseMove);
-    window.removeEventListener("pointerup", endMouse);
-    window.removeEventListener("pointercancel", endMouse);
-    window.removeEventListener("lostpointercapture", endMouse);
+  const onWinTouchMove = (e) => {
+    if (!contacts.size) return;
+    e.preventDefault();
+    dropExtraTouches(e.touches);
+    const used = new Set();
+    for (const t of e.changedTouches) {
+      let bestId = null;
+      let bestD = Infinity;
+      for (const [id, p] of contacts) {
+        if (used.has(id)) continue;
+        const d = Math.hypot(p.x - t.clientX, p.y - t.clientY);
+        if (d < bestD) {
+          bestD = d;
+          bestId = id;
+        }
+      }
+      if (bestId == null) continue;
+      used.add(bestId);
+      contacts.set(bestId, { x: t.clientX, y: t.clientY });
+    }
+    scheduleNav();
+  };
+  const onWinTouchEnd = (e) => {
+    if (!contacts.size) return;
+    dropExtraTouches(e.touches);
+    flushNav();
+    settleFingers();
   };
   const bindWin = () => {
     if (winBound) return;
     winBound = true;
-    window.addEventListener("pointermove", onMouseMove);
-    window.addEventListener("pointerup", endMouse);
-    window.addEventListener("pointercancel", endMouse);
-    window.addEventListener("lostpointercapture", endMouse);
+    window.addEventListener("pointermove", onPtrMove);
+    window.addEventListener("pointerup", onPtrEnd);
+    window.addEventListener("pointercancel", onPtrEnd);
+    window.addEventListener("lostpointercapture", onPtrEnd);
+    window.addEventListener("touchmove", onWinTouchMove, { passive: false, capture: true });
+    window.addEventListener("touchend", onWinTouchEnd, { capture: true });
+    window.addEventListener("touchcancel", onWinTouchEnd, { capture: true });
+  };
+  const abortNav = () => {
+    contacts.clear();
+    pinch = null;
+    dragging = false;
+    last = null;
+    downPt = null;
+    host.classList.remove("is-panning");
+    if (navRaf) {
+      cancelAnimationFrame(navRaf);
+      navRaf = 0;
+    }
+    unbindWin();
+    scheduleFinishNav();
   };
 
-  host.addEventListener("pointerdown", (e) => {
-    if (e.button !== 0 || e.pointerType === "touch") return;
-    if (performance.now() - lastTouchAt < 800) return;
-    if ([...contacts.keys()].some((k) => k.startsWith("t"))) return;
+  /* Overlay is the touch target so island/hit-pad rebuilds cannot cancel the
+     gesture. Window listeners keep move/end if Safari retargets. */
+  nav.addEventListener("pointerdown", (e) => {
+    if (e.button !== 0) return;
+    if (e.pointerType === "touch") lastTouchAt = performance.now();
+    if (e.pointerType === "mouse" && performance.now() - lastTouchAt < 800) return;
+    clearTimeout(finishTimer);
+    finishTimer = 0;
     stopFocusZoom();
-    contacts.set(`p${e.pointerId}`, { x: e.clientX, y: e.clientY });
-    captureMouse(e);
+    if (e.isPrimary) {
+      for (const id of [...contacts.keys()]) {
+        if (id === e.pointerId) continue;
+        let live = false;
+        try {
+          live = nav.hasPointerCapture(id);
+        } catch {
+          live = false;
+        }
+        if (!live) contacts.delete(id);
+      }
+    }
+    contacts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    capturePtr(nav, e);
     bindWin();
+    if (contacts.size >= 2) {
+      dragging = false;
+      last = null;
+      downPt = null;
+      moved = true;
+      beginPinch();
+      host.classList.add("is-panning");
+      return;
+    }
     moved = false;
     startPanFrom(e);
   });
-  host.addEventListener("pointermove", onMouseMove);
-  host.addEventListener("pointerup", endMouse);
-  host.addEventListener("pointercancel", endMouse);
-  host.addEventListener("lostpointercapture", endMouse);
+  nav.addEventListener(
+    "touchstart",
+    (e) => {
+      if (e.touches.length >= 2) e.preventDefault();
+      bindWin();
+    },
+    { passive: false }
+  );
+  nav.addEventListener("pointermove", onPtrMove);
+  nav.addEventListener("pointerup", onPtrEnd);
+  nav.addEventListener("pointercancel", onPtrEnd);
+  nav.addEventListener("lostpointercapture", onPtrEnd);
+  const vis = () => {
+    if (!host.isConnected) {
+      document.removeEventListener("visibilitychange", vis);
+      abortNav();
+      return;
+    }
+    if (document.hidden) abortNav();
+  };
+  document.addEventListener("visibilitychange", vis);
   host.addEventListener(
     "click",
     (e) => {
@@ -1953,6 +2058,7 @@ function mapHtml() {
   const zoomHint = coarse ? "pinch to zoom" : "pinch or scroll to zoom";
   const pinHint = geo.mode === "pin" ? " · tap a place to answer" : "";
   return `<div class="geo-map-frame is-zoomable" id="geo-map">${geo.mapSvg}
+    <div class="geo-map-nav" aria-hidden="true"></div>
     <p class="geo-map-hint">Drag to pan · ${zoomHint}${pinHint}</p>
   </div>`;
 }

@@ -3259,6 +3259,15 @@ a.ce-tab {
   touch-action: none;
   overscroll-behavior: none;
   cursor: grab;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.geo-map-nav {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  touch-action: none;
 }
 
 .is-zoomable {
@@ -3267,6 +3276,10 @@ a.ce-tab {
 
 .geo-map-frame.is-panning {
   cursor: grabbing;
+}
+
+.geo-map-frame.is-panning svg {
+  pointer-events: none;
 }
 
 .geo-map-frame svg {
@@ -3289,6 +3302,7 @@ a.ce-tab {
   position: absolute;
   left: 0.45rem;
   bottom: 0.4rem;
+  z-index: 3;
   margin: 0;
   padding: 0.12rem 0.4rem;
   font-size: 0.7rem;
