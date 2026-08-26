@@ -310,68 +310,62 @@ async function speakTour() {
       Number(pt.root?.querySelector("#pt-loop-select")?.value || getSavedLoops()) || 1
     )
   );
-  const loopPadMs = 7000;
-  const itemDelayMs = Math.round(
-    Number(
-      pt.root?.querySelector("#pt-item-delay-select")?.value ?? getSavedItemDelay()
-    ) * 1000
+  const itemDelaySec = Number(
+    pt.root?.querySelector("#pt-item-delay-select")?.value ?? getSavedItemDelay()
   );
+  // One line per element so the whole tour can be buffered for lock-screen play.
+  const lines = list.map((el) => spokenScript(el).join(" "));
   setStatus(
     loops > 1
       ? `Touring ${scopeLabel()} (${list.length}) · ${loops} loops…`
       : `Touring ${scopeLabel()} (${list.length})…`
   );
 
-  for (let loop = 0; loop < loops; loop += 1) {
-    if (!pt.playing || session !== pt.tourSession) break;
-    if (loop > 0) {
-      setStatus(
-        `Loop ${loop} finished. Waiting 7 seconds before loop ${loop + 1} of ${loops}…`
-      );
-      await new Promise((r) => setTimeout(r, loopPadMs));
-      if (!pt.playing || session !== pt.tourSession) break;
-    }
-    if (loops > 1) {
-      setStatus(`Playing loop ${loop + 1} of ${loops}…`);
-    }
-
-    for (let i = 0; i < list.length; i += 1) {
-      if (!pt.playing || session !== pt.tourSession) break;
-      const el = list[i];
-      pt.selectedZ = el.Z;
-      highlight(el.Z);
-      renderDetail();
-      bindDetailSpeech();
-      if (getSavedListenFocus() === "panel") scrollListenFocus(el.Z);
-      const loopBit = loops > 1 ? ` · loop ${loop + 1}/${loops}` : "";
-      setStatus(`Reading ${el.name} (${i + 1} of ${list.length})${loopBit}…`);
-      await new Promise((resolve) => {
-        speakLines(spokenScript(el), {
-          voiceUri: getSavedVoiceUri(),
-          rate: getSavedRate(),
-          itemDelaySec: 0,
-          onStatus: setStatus,
-          onEnd: () => resolve(),
-        }).catch((err) => {
-          setStatus(err.message);
-          pt.playing = false;
-          resolve();
-        });
-      });
-      if (!pt.playing || session !== pt.tourSession) break;
-      if (i < list.length - 1 && itemDelayMs > 0) {
-        await new Promise((r) => setTimeout(r, itemDelayMs));
-      }
+  try {
+    await speakLines(lines, {
+      voiceUri: getSavedVoiceUri(),
+      rate: getSavedRate(),
+      loops,
+      loopPadMs: 7000,
+      itemDelaySec,
+      onStartLine: (lineIndex) => {
+        if (!pt.playing || session !== pt.tourSession) return;
+        const el = list[lineIndex];
+        if (!el) return;
+        pt.selectedZ = el.Z;
+        highlight(el.Z);
+        renderDetail();
+        bindDetailSpeech();
+        if (getSavedListenFocus() === "panel") scrollListenFocus(el.Z);
+        setStatus(`Reading ${el.name} (${lineIndex + 1} of ${list.length})…`);
+      },
+      onStatus: setStatus,
+      onEnd: () => {
+        if (session !== pt.tourSession) return;
+        pt.playing = false;
+        pt.tourIds = [];
+        pt.root?.querySelector(".pt-shell")?.classList.remove("is-speaking");
+        if (listen) listen.disabled = false;
+        highlight(pt.selectedZ, { scroll: false });
+        setStatus(voiceQualityTip(pt.voices));
+      },
+    });
+  } catch (err) {
+    if (session === pt.tourSession) {
+      pt.playing = false;
+      pt.tourIds = [];
+      pt.root?.querySelector(".pt-shell")?.classList.remove("is-speaking");
+      if (listen) listen.disabled = false;
+      setStatus(err.message);
     }
   }
 
-  if (session === pt.tourSession) {
+  if (session === pt.tourSession && pt.playing) {
     pt.playing = false;
     pt.tourIds = [];
     pt.root?.querySelector(".pt-shell")?.classList.remove("is-speaking");
     if (listen) listen.disabled = false;
     highlight(pt.selectedZ, { scroll: false });
-    setStatus(voiceQualityTip(pt.voices));
   }
 }
 

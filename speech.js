@@ -967,6 +967,203 @@ function wait(ms, session) {
   });
 }
 
+function configureUtterance(utter, voice, rate) {
+  const resolvedFromSystem = Boolean(!voice);
+  let voiceToUse = voice;
+  if (resolvedFromSystem) voiceToUse = systemDefaultVoice();
+  if (voiceToUse) {
+    utter.voice = voiceToUse;
+    const followDevice = resolvedFromSystem || Boolean(voiceToUse.default);
+    if (voiceToUse.lang && (!isIOSWebKit() || followDevice)) {
+      utter.lang = voiceToUse.lang;
+    }
+  } else if (isIOSWebKit()) {
+    // Unset voice on iOS reuses the last spoken voice (often Daniel).
+    utter.lang = String(navigator.language || "en-US").replace("_", "-");
+  }
+  utter.rate = rate;
+  utter.pitch = 1;
+  utter.volume = 1;
+  return utter;
+}
+
+function silenceUtterance(ms, voice, rate) {
+  const pauseMs = Math.max(0, Math.round(Number(ms) || 0));
+  if (pauseMs <= 0) return null;
+  // Apple voices honor [[slnc N]]; other engines may read the markup aloud.
+  const utter = new SpeechSynthesisUtterance(`[[slnc ${pauseMs}]]`);
+  configureUtterance(utter, voice, rate);
+  return utter;
+}
+
+/**
+ * Queue every chunk up front so iOS can keep reading after the screen locks.
+ * Sequential speak()-after-await only finishes the in-flight utterance when locked.
+ */
+function speakBrowserPlaylist(lines, opts) {
+  const {
+    session,
+    voice,
+    rate,
+    loops,
+    loopPadMs,
+    itemDelayMs,
+    onStartLine,
+    onLoopStart,
+    onStatus,
+  } = opts;
+  const synth = window.speechSynthesis;
+  const stillThis = () => session === browserSpeakSession;
+
+  /** @type {{ kind: "speech"|"silence"|"loop", text?: string, lineIndex?: number, ms?: number, loop?: number, total?: number }[]} */
+  const playlist = [];
+  for (let loop = 0; loop < loops; loop += 1) {
+    if (loop > 0 && loopPadMs > 0) {
+      playlist.push({ kind: "silence", ms: loopPadMs });
+    }
+    playlist.push({ kind: "loop", loop, total: loops });
+    for (let i = 0; i < lines.length; i += 1) {
+      const chunks = chunkForSpeech(lines[i]);
+      for (const text of chunks) {
+        playlist.push({ kind: "speech", text, lineIndex: i });
+      }
+      if (i < lines.length - 1 && itemDelayMs > 0) {
+        playlist.push({ kind: "silence", ms: itemDelayMs });
+      }
+    }
+  }
+
+  const speechEntries = playlist.filter((e) => e.kind === "speech");
+  if (!speechEntries.length) return Promise.resolve(true);
+
+  return new Promise((resolve) => {
+    if (!stillThis()) {
+      resolve(false);
+      return;
+    }
+
+    let settled = false;
+    let speechEnded = 0;
+    const speechTotal = speechEntries.length;
+    const finish = (ok) => {
+      if (settled) return;
+      settled = true;
+      clearInterval(watchdog);
+      clearTimeout(safety);
+      resolve(Boolean(ok) && stillThis());
+    };
+
+    const totalChars = speechEntries.reduce(
+      (n, e) => n + String(e.text || "").length,
+      0
+    );
+    const pauseBudget =
+      Math.max(0, loops - 1) * loopPadMs +
+      Math.max(0, lines.length - 1) * itemDelayMs * loops;
+    const safetyMs = Math.min(
+      45 * 60 * 1000,
+      Math.max(
+        8000,
+        totalChars * (90 / Math.max(0.5, rate)) + pauseBudget + 5000
+      )
+    );
+    const safety = setTimeout(() => finish(stillThis()), safetyMs);
+    const watchdog = setInterval(() => {
+      if (!stillThis()) {
+        finish(false);
+        return;
+      }
+      try {
+        if (synth.paused) synth.resume();
+      } catch {
+        /* ignore */
+      }
+      void ensureKeepalivePlaying();
+    }, 4000);
+
+    try {
+      if (synth.paused) synth.resume();
+    } catch {
+      /* ignore */
+    }
+
+    let pendingLoop = null;
+
+    for (const entry of playlist) {
+      if (!stillThis()) {
+        finish(false);
+        return;
+      }
+
+      if (entry.kind === "loop") {
+        pendingLoop = entry;
+        continue;
+      }
+
+      if (entry.kind === "silence") {
+        const utter = silenceUtterance(entry.ms, voice, rate);
+        if (!utter) continue;
+        utter.onerror = () => {
+          /* ignore pause failures */
+        };
+        try {
+          synth.speak(utter);
+        } catch {
+          /* ignore */
+        }
+        continue;
+      }
+
+      const utter = new SpeechSynthesisUtterance(entry.text);
+      configureUtterance(utter, voice, rate);
+      const lineIndex = entry.lineIndex;
+      utter.onstart = () => {
+        if (!stillThis()) return;
+        if (pendingLoop) {
+          const mark = pendingLoop;
+          pendingLoop = null;
+          onLoopStart?.(mark.loop, mark.total);
+          if (mark.total > 1) {
+            onStatus?.(`Playing loop ${mark.loop + 1} of ${mark.total}…`);
+          }
+        }
+        onStartLine?.(lineIndex);
+      };
+      utter.onend = () => {
+        speechEnded += 1;
+        if (speechEnded >= speechTotal) finish(true);
+      };
+      utter.onerror = (event) => {
+        const err = event.error || "";
+        if (
+          err === "interrupted" ||
+          err === "canceled" ||
+          err === "not-allowed" ||
+          !stillThis()
+        ) {
+          finish(false);
+          return;
+        }
+        // Count failed chunk so a single glitch doesn't hang the playlist.
+        speechEnded += 1;
+        if (speechEnded >= speechTotal) finish(true);
+      };
+      try {
+        synth.speak(utter);
+      } catch {
+        speechEnded += 1;
+        if (speechEnded >= speechTotal) finish(false);
+      }
+    }
+
+    try {
+      if (synth.paused) synth.resume();
+    } catch {
+      /* ignore */
+    }
+  });
+}
+
 function speakUtterance(text, voice, rate, session, { allowVoice = true, triedFallback = false } = {}) {
   return new Promise((resolve, reject) => {
     if (session !== browserSpeakSession) {
@@ -975,21 +1172,20 @@ function speakUtterance(text, voice, rate, session, { allowVoice = true, triedFa
     }
     const utter = new SpeechSynthesisUtterance(text);
     const resolvedFromSystem = Boolean(allowVoice && !voice);
-    let voiceToUse = voice;
+    let voiceToUse = allowVoice ? voice : null;
     if (resolvedFromSystem) voiceToUse = systemDefaultVoice();
     if (allowVoice && voiceToUse) {
-      utter.voice = voiceToUse;
-      const followDevice = resolvedFromSystem || Boolean(voiceToUse.default);
-      if (voiceToUse.lang && (!isIOSWebKit() || followDevice)) {
-        utter.lang = voiceToUse.lang;
-      }
+      configureUtterance(utter, voiceToUse, rate);
     } else if (isIOSWebKit()) {
-      // Unset voice on iOS reuses the last spoken voice (often Daniel).
       utter.lang = String(navigator.language || "en-US").replace("_", "-");
+      utter.rate = rate;
+      utter.pitch = 1;
+      utter.volume = 1;
+    } else {
+      utter.rate = rate;
+      utter.pitch = 1;
+      utter.volume = 1;
     }
-    utter.rate = rate;
-    utter.pitch = 1;
-    utter.volume = 1;
     let settled = false;
     const finish = (ok) => {
       if (settled) return;
@@ -1100,18 +1296,13 @@ export async function speakLines(lines, opts = {}) {
 
   if (!usingNatural && window.speechSynthesis.paused) window.speechSynthesis.resume();
 
-  const speakChunk = usingNatural
-    ? (text) =>
-        speakNaturalText(text, {
-          rate,
-          shouldContinue: stillThis,
-          onStatus: opts.onStatus,
-        })
-    : (text, voice) => speakUtterance(text, voice, rate, session);
-
   let voice = null;
   if (!usingNatural) {
-    voice = isIOSWebKit() ? pickVoiceNow(preferred) : await resolveVoice(preferred);
+    // Queue the full playlist synchronously on iOS — awaiting first breaks lock-screen play.
+    voice = pickVoiceNow(preferred);
+    if (!isIOSWebKit() && !voice) {
+      voice = await resolveVoice(preferred);
+    }
     if (!stillThis()) {
       opts.onEnd?.();
       return;
@@ -1119,6 +1310,34 @@ export async function speakLines(lines, opts = {}) {
   }
 
   try {
+    if (!usingNatural && isIOSWebKit()) {
+      setMediaSessionPlaying(true);
+      if (loops > 1) {
+        opts.onStatus?.(`Starting… (${loops} loops)`);
+      }
+      await speakBrowserPlaylist(lines, {
+        session,
+        voice,
+        rate,
+        loops,
+        loopPadMs,
+        itemDelayMs,
+        onStartLine: opts.onStartLine,
+        onLoopStart: opts.onLoopStart,
+        onStatus: opts.onStatus,
+      });
+      return;
+    }
+
+    const speakChunk = usingNatural
+      ? (text) =>
+          speakNaturalText(text, {
+            rate,
+            shouldContinue: stillThis,
+            onStatus: opts.onStatus,
+          })
+      : (text, voiceArg) => speakUtterance(text, voiceArg, rate, session);
+
     for (let loop = 0; loop < loops; loop += 1) {
       if (!stillThis()) break;
 
@@ -1176,7 +1395,7 @@ export function voiceQualityTip(rankedVoices) {
       : "Natural voice requires a brief load time the first time you Listen, then it stays in this browser.";
   }
   if (isIOSWebKit()) {
-    return "On iPhone, turn the silent switch off and use the media volume buttons. If Brave stays quiet, try Safari.";
+    return "On iPhone, turn the silent switch off and use the media volume buttons. Listen queues the full list so it can keep going after you lock the screen; the highlight still tracks each item. If Brave stays quiet, try Safari.";
   }
   const best = rankedVoices[0];
   if (!best) {
