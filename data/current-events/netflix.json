@@ -1,6 +1,6 @@
 {
   "section": "netflix",
-  "generatedAt": "2026-08-25T11:22:31.251Z",
+  "generatedAt": "2026-08-25T18:29:22.303Z",
   "windowStart": "2026-07-28",
   "windowEnd": "2026-08-25",
   "items": [
@@ -12,9 +12,26 @@
       "starring": [
         "Untold"
       ],
-      "brief": "A sports docuseries exploring overlooked stories from tennis, boxing, basketball and beyond.",
+      "brief": "A sports docuseries offering fresh perspectives on major stories from tennis, boxing, basketball and more.",
       "image": "data/current-events/posters/untold-45835d83.jpg",
       "inUS": false
+    },
+    {
+      "title": "Stamptown",
+      "type": "Stand-up special",
+      "date": "2026-08-25",
+      "synopsis": "Blending the wild worlds of circus and comedy, anarchic acts collide for this raunchy and explicit variety show - clothing not guaranteed.",
+      "starring": [
+        "Zach Zucker",
+        "Neil Patrick Harris",
+        "Natalie Palamides",
+        "Nick Kocher",
+        "Demi Adejuyigbe",
+        "Courtney Pauroso"
+      ],
+      "brief": "A variety show blending circus and comedy acts in an explicit, anarchic performance.",
+      "image": "data/current-events/posters/stamptown-31677438.jpg",
+      "inUS": true
     },
     {
       "title": "Rhythm + Flow France (Season 5)",
@@ -29,26 +46,9 @@
         "Aya Nakamura",
         "Driver"
       ],
-      "brief": "French rappers compete for 100,000 euros in a music competition judged by Niska, Shay and SCH.",
+      "brief": "French rappers compete in a music competition for a 100,000 euro prize judged by Niska, Shay and SCH.",
       "image": "data/current-events/posters/rhythm-flow-france-b7507d15.jpg",
       "inUS": false
-    },
-    {
-      "title": "Stamptown",
-      "type": "Special",
-      "date": "2026-08-25",
-      "synopsis": "Blending the wild worlds of circus and comedy, anarchic acts collide for this raunchy and explicit variety show - clothing not guaranteed.",
-      "starring": [
-        "Zach Zucker",
-        "Neil Patrick Harris",
-        "Natalie Palamides",
-        "Nick Kocher",
-        "Demi Adejuyigbe",
-        "Courtney Pauroso"
-      ],
-      "brief": "A variety show blending circus and comedy acts.",
-      "image": "data/current-events/posters/stamptown-31677438.jpg",
-      "inUS": true
     },
     {
       "title": "Facing El Chapo",
@@ -80,7 +80,7 @@
         "Yogi Babu",
         "Geetha Kailasam"
       ],
-      "brief": "A bride refuses to leave her family home after marriage, challenging her husband's expectations.",
+      "brief": "A newlywed husband adjusts to living with his bride's family after she refuses to leave home.",
       "image": "data/current-events/posters/pyaar-prema-kalyanam-3aa8e4a4.jpg",
       "inUS": false
     },
@@ -97,7 +97,7 @@
         "Drew Starkey",
         "Rudy Pankow"
       ],
-      "brief": "Teen John B and his friends hunt for treasure linked to his father's disappearance.",
+      "brief": "Teen John B and friends hunt for legendary treasure linked to his father's disappearance on an island.",
       "image": "data/current-events/posters/outer-banks-536c2699.jpg",
       "inUS": true
     },
@@ -110,7 +110,7 @@
         "Jakob Oftebro",
         "Peter Andersson"
       ],
-      "brief": "Detective Berg reunites with his estranged ex-cop father after a double police murder.",
+      "brief": "Detective Berg reunites with his estranged ex-cop father to investigate a double police murder.",
       "image": "data/current-events/posters/blodsoffer-62450b36.jpg",
       "inUS": true
     },
@@ -127,13 +127,13 @@
         "Aoi Nakamura",
         "Rinka Kumada"
       ],
-      "brief": "A sex therapist treats patients' intimate issues while concealing his own struggle.",
+      "brief": "A sex therapist treats intimate issues for clients while hiding a personal struggle of his own.",
       "image": "data/current-events/posters/s-x-edda755c.jpg",
       "inUS": true
     },
     {
       "title": "Chompoo: Lost & Forgotten",
-      "type": "Documentary",
+      "type": "Film",
       "date": "2026-08-20",
       "synopsis": "When a young girl vanishes from a remote village, the frantic police hunt become a media frenzy. But who turned a suspected criminal into a celebrity?",
       "starring": [
@@ -144,7 +144,7 @@
         "Phetkasem Suriyawongwongsa",
         "Somchai Mahachaicharoen"
       ],
-      "brief": "When a young girl vanishes from a remote village, the police hunt becomes a media sensation.",
+      "brief": "When a girl vanishes from a remote village, a police hunt becomes a media frenzy over the suspect.",
       "image": "data/current-events/posters/chompoo-lost-forgotten-4d66a902.jpg",
       "inUS": false
     },
@@ -157,13 +157,13 @@
         "Emma Willis",
         "Matt Willis"
       ],
-      "brief": "British singles get engaged before meeting in person in this social experiment.",
+      "brief": "British singles get engaged before meeting in person, hosted by Emma and Matt Willis.",
       "image": "data/current-events/posters/love-is-blind-uk-72c8fecc.jpg",
       "inUS": true
     },
     {
       "title": "Freefall: A Reckoning for Boeing",
-      "type": "Documentary",
+      "type": "Film",
       "date": "2026-08-19",
       "synopsis": "Following the highly publicized death of Boeing whistleblower John Barnett, the investigation continues into the once-iconic aviation giant, uncovering startling new revelations and insider accounts in the wake of a deepening corporate crisis..",
       "starring": [
@@ -174,7 +174,7 @@
         "Sam Salehpour",
         "Merle Meyers"
       ],
-      "brief": "An investigation into Boeing's corporate crisis follows whistleblower John Barnett's death.",
+      "brief": "An investigation into Boeing follows whistleblower John Barnett's death and corporate crisis.",
       "image": "data/current-events/posters/freefall-a-reckoning-for-boeing-2d3a3c34.jpg",
       "inUS": true
     },
@@ -191,7 +191,7 @@
         "Isabella Moreira",
         "Mariana Santos"
       ],
-      "brief": "An insecure teenager's vacation is disrupted when his neighbor and school crush stays with him.",
+      "brief": "A teenager's vacation is disrupted when his school crush stays at his house for two weeks.",
       "image": "data/current-events/posters/here-the-whole-time-fb02ac8f.jpg",
       "inUS": true
     },
@@ -206,12 +206,12 @@
         "Lee Chae-min",
         "Tarzzan"
       ],
-      "brief": "Four celebrity novices form a hiking club to tackle Korea's snow-capped peaks.",
+      "brief": "Four celebrity hiking newbies form a club to tackle Korea's snow-capped peaks.",
       "image": "data/current-events/posters/take-a-hike-c6e857f1.jpg",
       "inUS": true
     },
     {
-      "title": "Kelsey Cook: Happy Hour",
+      "title": "Kelsey Cook : Happy Hour",
       "type": "Stand-up special",
       "date": "2026-08-18",
       "synopsis": "In this candid and clever stand-up special, Kelsey Cook explores \"hangxiety,\" relives a plane bathroom nightmare and breaks down dating a literal Chad.",
@@ -219,7 +219,7 @@
         "Happy Hour",
         "Kelsey Cook"
       ],
-      "brief": "Kelsey Cook explores hangovers, plane mishaps and dating in this stand-up special.",
+      "brief": "Kelsey Cook explores hangxiety, plane bathroom nightmares and dating in this stand-up special.",
       "image": "data/current-events/posters/kelsey-cook-happy-hour-40d68f44.jpg",
       "inUS": true
     },
@@ -233,7 +233,7 @@
         "Tony Kgoroge",
         "Nqobile Khumalo"
       ],
-      "brief": "A young prosecutor confronts a prison syndicate run by her thought-lost brother.",
+      "brief": "A prosecutor discovers her lost brother leads a prison syndicate, forcing her to choose between law and family.",
       "image": "data/current-events/posters/umthetho-151a4ef0.jpg",
       "inUS": true
     },
@@ -249,12 +249,12 @@
         "Moria Casán",
         "Marco Antonio Caponi"
       ],
-      "brief": "Moria Casán dramatizes her life through fame, controversy and constant reinvention.",
+      "brief": "Moria Casán transforms her life story into a symbolic spectacle of fame and reinvention.",
       "image": "data/current-events/posters/moria-cf20c385.jpg",
       "inUS": true
     },
     {
-      "title": "Don’t Say Good Luck",
+      "title": "Don't Say Good Luck",
       "type": "Film",
       "date": "2026-08-14",
       "synopsis": "Sophie Birenbaum is ready for the spotlight as the lead in her high school musical — until she's suddenly facing more drama at home than on the stage.",
@@ -266,7 +266,7 @@
         "Bebe Neuwirth",
         "Steve Buscemi"
       ],
-      "brief": "Sophie Birenbaum is ready for the spotlight as the lead in her high school musical.",
+      "brief": "A high school student preparing for her musical's lead role faces unexpected family drama.",
       "image": "data/current-events/posters/don-t-say-good-luck-d517b40d.jpg",
       "inUS": true
     },
@@ -283,7 +283,7 @@
         "Clara Immel",
         "Mira Huber"
       ],
-      "brief": "Best friends' travel plans are upended when one falls in love with Rebecca.",
+      "brief": "Best friends Olli and Matze's plans to travel are upended by Matze's romance with Rebecca.",
       "image": "data/current-events/posters/my-best-friend-his-girlfriend-and-me-1c4c6ed2.jpg",
       "inUS": true
     },
@@ -300,7 +300,7 @@
         "David Marcé",
         "Candela González"
       ],
-      "brief": "Three skydivers died in similar accidents; filmmaker tells their stories with sole survivor Carlos Suárez.",
+      "brief": "Three skydivers died in similar accidents; a documentary tells their stories with survivor Carlos Suárez.",
       "image": "data/current-events/posters/to-the-max-079b30f2.jpg",
       "inUS": true
     },
@@ -317,7 +317,7 @@
         "Stavros Halkias",
         "Thomas Haden Church"
       ],
-      "brief": "A manager at his father's auto shop improves business while keeping his troublemaking cousin in line.",
+      "brief": "A manager at his father's auto shop improves business while managing his troublemaking cousin.",
       "image": "data/current-events/posters/tires-0b8cba4d.jpg",
       "inUS": true
     },
@@ -334,34 +334,8 @@
         "Kate Mulvany",
         "Jake Dunn"
       ],
-      "brief": "In 1900 Australia, a woman determined to become a writer navigates family pressure to marry.",
+      "brief": "In 1900 Australia, Sybylla defies convention pursuing writing while her family pushes marriage.",
       "image": "data/current-events/posters/my-brilliant-career-708cbc34.jpg",
-      "inUS": true
-    },
-    {
-      "title": "A Child of My Own",
-      "type": "Film",
-      "date": "2026-08-13",
-      "synopsis": "Desperate for a baby and burdened by family and societal expectations, a woman fakes a pregnancy and gets tangled in a crime.",
-      "starring": [
-        "Ana Celeste",
-        "Armando Espitia",
-        "Ángeles Cruz",
-        "Mayra Sérbulo",
-        "Luisa Guzmán",
-        "Casio Figueroa"
-      ],
-      "brief": "A woman fakes pregnancy out of desperation and family pressure, becoming entangled in crime.",
-      "image": "data/current-events/posters/a-child-of-my-own-72f3e26a.jpg",
-      "inUS": true
-    },
-    {
-      "title": "MLB Field of Dreams: Phillies vs. Twins (LIVE)",
-      "type": "Live event",
-      "date": "2026-08-13",
-      "synopsis": "The Philadelphia Phillies face the Minnesota Twins in a regular-season game at the Field of Dreams ballpark in Dyersville, Iowa — baseball’s return to the cornfields, streamed live on Netflix.",
-      "starring": [],
-      "brief": "The Philadelphia Phillies face the Minnesota Twins at the Field of Dreams ballpark in Iowa.",
       "inUS": true
     },
     {
@@ -377,8 +351,34 @@
         "Gabriel Lazaro",
         "RK Bagatsing"
       ],
-      "brief": "A TV writer returns home to her estranged mother, uncovering painful family secrets.",
+      "brief": "A TV writer returns home to her estranged mother, revealing painful family secrets and chaos.",
       "image": "data/current-events/posters/this-that-and-everything-in-between-513768a6.jpg",
+      "inUS": true
+    },
+    {
+      "title": "A Child of My Own",
+      "type": "Film",
+      "date": "2026-08-13",
+      "synopsis": "Desperate for a baby and burdened by family and societal expectations, a woman fakes a pregnancy and gets tangled in a crime.",
+      "starring": [
+        "Ana Celeste",
+        "Armando Espitia",
+        "Ángeles Cruz",
+        "Mayra Sérbulo",
+        "Luisa Guzmán",
+        "Casio Figueroa"
+      ],
+      "brief": "A woman desperate for a baby fakes a pregnancy and becomes tangled in a crime.",
+      "image": "data/current-events/posters/a-child-of-my-own-72f3e26a.jpg",
+      "inUS": true
+    },
+    {
+      "title": "MLB Field of Dreams: Phillies vs. Twins",
+      "type": "Film",
+      "date": "2026-08-13",
+      "synopsis": "The Philadelphia Phillies face the Minnesota Twins in a regular-season game at the Field of Dreams ballpark in Dyersville, Iowa — baseball’s return to the cornfields, streamed live on Netflix.",
+      "starring": [],
+      "brief": "The Philadelphia Phillies face the Minnesota Twins at the Field of Dreams ballpark.",
       "inUS": true
     },
     {
@@ -389,7 +389,7 @@
       "starring": [
         "Charles Manson"
       ],
-      "brief": "In prison recordings, convicted killer Charles Manson reveals his twisted criminal motivations.",
+      "brief": "In prison recordings, convicted killer Charles Manson reveals his motivations for his crimes.",
       "image": "data/current-events/posters/conversations-with-a-killer-the-charles-manson-t-3af855a1.jpg",
       "inUS": false
     },
@@ -406,7 +406,7 @@
         "Bruna Mascarenhas",
         "Enio Cavalcante"
       ],
-      "brief": "Caught between family and criminal obligations, Nando faces impossible loyalty choices.",
+      "brief": "Caught between family and the criminal underworld, Nando faces an impossible choice about his loyalties.",
       "image": "data/current-events/posters/nando-between-two-worlds-bfa80b5b.jpg",
       "inUS": true
     },
@@ -418,19 +418,19 @@
       "starring": [
         "José Mourinho"
       ],
-      "brief": "José Mourinho's fiery football career unfolds through game footage and interviews.",
+      "brief": "Iconic game footage and interviews trace José Mourinho's firecracker career through football.",
       "image": "data/current-events/posters/mourinho-a7db1dc6.jpg",
       "inUS": true
     },
     {
-      "title": "Rory Scovel: Show Must Go On",
+      "title": "Rory Scovel : Show Must Go On",
       "type": "Stand-up special",
       "date": "2026-08-11",
       "synopsis": "With a hypothetical home invasion, a biblical reenactment, and his late dad's final wish, Rory Scovel delivers unrelenting laughs in this raucous stand-up special filmed at The Neptune in Seattle, Washington.",
       "starring": [
         "Rory Scovel"
       ],
-      "brief": "Rory Scovel performs stand-up exploring home invasions, biblical reenactments and family.",
+      "brief": "Rory Scovel performs stand-up about home invasions, biblical reenactments and his late father's wish.",
       "image": "data/current-events/posters/rory-scovel-show-must-go-on-f393872d.jpg",
       "inUS": true
     },
@@ -444,7 +444,7 @@
         "Brian Drummond",
         "Naomi Tan"
       ],
-      "brief": "Red and Blue experience daily adventures with ocean creatures of all shapes and sizes.",
+      "brief": "Red and Blue's ocean days are full of surprises with friends of all shapes and sizes.",
       "image": "data/current-events/posters/dr-seuss-s-red-fish-blue-fish-3e61f07d.jpg",
       "inUS": false
     },
@@ -461,7 +461,7 @@
         "Haruhiko Jo",
         "Yoshimasa Hosoya"
       ],
-      "brief": "When her kingdom is devastated, Princess Sapphire becomes the Ribbon Hero to save her new home.",
+      "brief": "Princess Sapphire reawakens as the Ribbon Hero to save her kingdom from the monstrous Nergal.",
       "image": "data/current-events/posters/the-ribbon-hero-349c146e.jpg",
       "inUS": true
     },
@@ -475,7 +475,7 @@
         "Ha Young",
         "Heo Sung Tae"
       ],
-      "brief": "A star prosecutor and boxing coach navigate romance amid amnesia, small-town drama and secrets.",
+      "brief": "A star prosecutor and boxing coach navigate amnesia, small-town hijinks and a shadowy past.",
       "image": "data/current-events/posters/our-sticky-love-5c5e7f15.jpg",
       "inUS": true
     },
@@ -492,7 +492,7 @@
         "Tom Basden",
         "Andrew Brooke"
       ],
-      "brief": "A clutter of cats swear at the television, debate outrageous questions and cause community chaos.",
+      "brief": "Cats swear at the telly, debate outrageous questions and cause chaos in their community.",
       "image": "data/current-events/posters/ricky-gervais-alley-cats-9b0405f7.jpg",
       "inUS": true
     },
@@ -509,25 +509,8 @@
         "Meiyang Chang",
         "Siddharth"
       ],
-      "brief": "The Golden Arrows Air Force squadron undertakes a dangerous mission during the Kargil War.",
+      "brief": "The Golden Arrows Air Force squadron flies a dangerous mission during the Kargil War between India and Pakistan.",
       "image": "data/current-events/posters/operation-safed-sagar-the-untold-story-of-the-ka-450b8cf5.jpg",
-      "inUS": true
-    },
-    {
-      "title": "Death Inc. (Season 4)",
-      "type": "Series",
-      "date": "2026-08-07",
-      "synopsis": "Staff at a Spanish funeral home wage a black-comedy fight for the director’s chair. In the final season, Chemi takes the job “just for a little while” — and Dámaso cannot decide whether to undermine him or curry favor.",
-      "starring": [
-        "Carlos Areces",
-        "Diego Martín",
-        "Amaia Salamanca",
-        "Salva Reina",
-        "Adriana Torrebejano",
-        "Gerald B. Fillmore"
-      ],
-      "brief": "Spanish funeral home staff wage a black-comedy battle for the director position in the final season.",
-      "image": "data/current-events/posters/death-inc-1a3db9da.jpg",
       "inUS": true
     },
     {
@@ -543,8 +526,25 @@
         "Emma Ho",
         "Gabriel Barbosa"
       ],
-      "brief": "A family sealed in their home must survive with dwindling resources and an ominous external threat.",
+      "brief": "A family sealed in their home survives with dwindling resources and an ominous threat.",
       "image": "data/current-events/posters/the-last-house-f605bcf7.jpg",
+      "inUS": true
+    },
+    {
+      "title": "Death Inc. (Season 4)",
+      "type": "Series",
+      "date": "2026-08-07",
+      "synopsis": "Staff at a Spanish funeral home wage a black-comedy fight for the director’s chair. In the final season, Chemi takes the job “just for a little while” — and Dámaso cannot decide whether to undermine him or curry favor.",
+      "starring": [
+        "Carlos Areces",
+        "Diego Martín",
+        "Amaia Salamanca",
+        "Salva Reina",
+        "Adriana Torrebejano",
+        "Gerald B. Fillmore"
+      ],
+      "brief": "Staff at a Spanish funeral home wage a black-comedy fight for the director's chair.",
+      "image": "data/current-events/posters/death-inc-1a3db9da.jpg",
       "inUS": true
     },
     {
@@ -560,7 +560,7 @@
         "Noah LaLonde",
         "Ashby Gentry"
       ],
-      "brief": "A 16-year-old New York girl adapts to life in rural Colorado with her guardian and twelve boys.",
+      "brief": "After losing her family, Jackie must adapt to rural Colorado life with her guardian and 12 rowdy kids.",
       "image": "data/current-events/posters/my-life-with-the-walter-boys-ca9be420.jpg",
       "inUS": true
     },
@@ -577,7 +577,7 @@
         "Marleyda Soto",
         "Loren Sofía"
       ],
-      "brief": "The Buendia family lives for a century in Macondo in an adaptation of García Márquez's novel.",
+      "brief": "The Buendía family's century in the town of Macondo, adapted from Gabriel García Márquez's novel.",
       "image": "data/current-events/posters/cien-a-os-de-soledad-d7298494.jpg",
       "inUS": true
     },
@@ -594,7 +594,7 @@
         "Dobromir Dymecki",
         "Michal Sikorski"
       ],
-      "brief": "A nobleman navigates family feuds and peasant clashes in his quest for Polish fame.",
+      "brief": "A zany Polish nobleman navigates family feuds and peasant clashes while seeking fame.",
       "image": "data/current-events/posters/1670-395c707e.jpg",
       "inUS": true
     },
@@ -606,7 +606,7 @@
       "starring": [
         "Harry Jowsey"
       ],
-      "brief": "Harry Jowsey's inner circle guides him through dates with potential partners to find a wife.",
+      "brief": "Harry Jowsey's inner circle guides his dating life as he seeks a wife and settles down.",
       "image": "data/current-events/posters/let-s-marry-harry-4bf84089.jpg",
       "inUS": true
     },
@@ -629,7 +629,7 @@
     },
     {
       "title": "Inside the Trustor Scandal",
-      "type": "Documentary",
+      "type": "Film",
       "date": "2026-08-05",
       "synopsis": "For the first time since 1997, Joachim Posener finally emerges from hiding and allows himself to be interviewed about his life and the Trustor affair. Twenty-seven years ago, he disappeared without a trace, and ever since, he has been on the international most wanted list. Now, Karin af Klintberg searches for him…",
       "starring": [
@@ -640,7 +640,7 @@
         "Jochum Söderström",
         "Michael Wynne-Parker"
       ],
-      "brief": "After 27 years, Joachim Posener emerges to discuss the 1997 Trustor affair and his life in hiding.",
+      "brief": "After 27 years in hiding, Joachim Posener emerges to discuss his life and the Trustor affair.",
       "image": "data/current-events/posters/inside-the-trustor-scandal-f11fc295.jpg",
       "inUS": true
     },
@@ -650,7 +650,7 @@
       "date": "2026-08-04",
       "synopsis": "In Japan's first dating show for rebellious yankiis, 11 singles butt heads, forge bonds and live together for 14 days as they go all out to find the one.",
       "starring": [],
-      "brief": "In Japan's first dating show for rebellious yankiis, 11 singles live together seeking connection.",
+      "brief": "In Japan's first dating show for rebellious yankiis, 11 singles seek romance over 14 days.",
       "image": "data/current-events/posters/ravu-j-t-6c1d6a9c.jpg",
       "inUS": true
     },
@@ -667,7 +667,7 @@
         "Jackie Redmond",
         "Roman Reigns"
       ],
-      "brief": "WWE's flagship wrestling program features live matches, celebrity guests and major events.",
+      "brief": "WWE's flagship wrestling program featuring live matches and celebrity guest hosts.",
       "image": "data/current-events/posters/wwe-monday-night-raw-5fb0ff9d.jpg",
       "inUS": false
     },
@@ -680,7 +680,7 @@
         "Post Malone",
         "Michelle Buteau"
       ],
-      "brief": "Elmo and friends learn to prepare for storms, stay calm and help neighbors rebuild.",
+      "brief": "Elmo and friends learn to prepare for storms, stay calm and rebuild with Post Malone and Michelle Buteau.",
       "image": "data/current-events/posters/sesame-street-storm-on-the-street-5d723854.png",
       "inUS": false
     },
@@ -697,7 +697,7 @@
         "Michael Bublé",
         "Sal Vulcano"
       ],
-      "brief": "Adam Ray's roster of alter egos interview celebrity guests in this weekly chaotic series.",
+      "brief": "Each week, Adam Ray uses alter egos to interview famous guests in scenes full of chaos.",
       "image": "data/current-events/posters/the-adam-ray-show-ceaa0299.jpg"
     },
     {
@@ -709,7 +709,7 @@
         "Sung Si-kyung",
         "Yutaka Matsushige"
       ],
-      "brief": "Korean foodie Sung Si-kyung and Japanese actor Yutaka Matsushige explore culinary gems.",
+      "brief": "Korean foodie Sung Si-kyung and Japanese Yutaka Matsushige explore culinary gems across their countries.",
       "image": "data/current-events/posters/k-foodie-meets-j-foodie-e019f5bb.jpg"
     },
     {
@@ -724,7 +724,7 @@
         "Tony Curran",
         "Peter Mullan"
       ],
-      "brief": "Scottish police and the FBI hunt those responsible for Pan Am Flight 103's 1988 explosion.",
+      "brief": "Scottish police and the FBI hunt those responsible after Pan Am Flight 103 explodes over Lockerbie in 1988.",
       "image": "data/current-events/posters/the-bombing-of-pan-am-103-f3fe544a.jpg",
       "inUS": true
     },
@@ -741,7 +741,7 @@
         "Bianca Comparato",
         "Cláudia Raia"
       ],
-      "brief": "A young amnesiac is rescued by an MMA coach and discovers his purpose fighting while uncovering his past.",
+      "brief": "An MMA coach rescues an amnesiac named Marcelo, who uncovers his past amid crime and corruption.",
       "image": "data/current-events/posters/f-ria-3f9cfb23.jpg"
     },
     {
@@ -754,7 +754,7 @@
         "CharlesEnter",
         "Junbbang Jogyo"
       ],
-      "brief": "An innovative dating experiment places participants in extreme scenarios to observe raw emotions.",
+      "brief": "Men and women face unpredictable dating experiments in controlled environments measuring raw emotions.",
       "image": "data/current-events/posters/the-love-lab-dfd3e1a9.jpg"
     },
     {
@@ -767,7 +767,7 @@
         "Riteish Deshmukh",
         "Farah Khan"
       ],
-      "brief": "Fifteen newsworthy celebrities must control their narratives or be locked out by public opinion.",
+      "brief": "Fifteen newsworthy celebrities must own their truth and control the narrative in court of public opinion.",
       "image": "data/current-events/posters/lock-upp-3af6a4be.jpg"
     },
     {
@@ -783,7 +783,7 @@
         "Ian Sparrowe",
         "Flor Eduarda Gurrola"
       ],
-      "brief": "A new student faces vicious online attacks and a dangerous challenge that transforms her life.",
+      "brief": "A new student faces vicious online attacks and a twisted challenge sparking a dangerous bond.",
       "image": "data/current-events/posters/proyecto-final-7b4ef8a9.jpg",
       "inUS": true
     },
@@ -793,7 +793,7 @@
       "date": "2026-07-29",
       "synopsis": "From the crime scene to the courtroom, this true-crime series unpacks the University of Idaho murders and the hunt for Bryan Kohberger in forensic detail.",
       "starring": [],
-      "brief": "This true-crime series unpacks the University of Idaho murders and the hunt for Bryan Kohberger.",
+      "brief": "A true-crime series unpacks the University of Idaho murders and the hunt for Bryan Kohberger.",
       "image": "data/current-events/posters/the-idaho-murders-college-nightmare-5e575de2.jpg"
     },
     {
@@ -809,7 +809,7 @@
         "Caterin Escobar",
         "Fernando Solórzano"
       ],
-      "brief": "A musician and married woman fall in love despite their complicated circumstances and obligations.",
+      "brief": "Victor and Karen's connection ignites after he saves her from assassination, defying their obligations.",
       "image": "data/current-events/posters/la-mujer-prohibida-64b68b72.jpg"
     },
     {
@@ -822,7 +822,7 @@
         "Mary Beth Barone",
         "Ky Newman"
       ],
-      "brief": "Mary Beth Barone explores relationships, dating apps and absurdities in this stand-up special.",
+      "brief": "Mary Beth Barone answers questions about ex-best friends, dating apps and NYPD merch.",
       "image": "data/current-events/posters/mary-beth-barone-galaxy-brain-026658d2.jpg",
       "inUS": true
     },
@@ -837,7 +837,7 @@
         "Kang Han-na",
         "Lee Eun-ji"
       ],
-      "brief": "Lifelong singles receive expert guidance on style and confidence as they enter the dating world.",
+      "brief": "Lifelong singles get expert help with style, health and confidence entering the dating world.",
       "image": "data/current-events/posters/better-late-than-single-ca8c1b77.jpg"
     },
     {
@@ -853,7 +853,7 @@
         "Cheng Wei-ling",
         "許曦文"
       ],
-      "brief": "In a strict town, a mysterious boy distributes crimson fruit that awakens suppressed desires.",
+      "brief": "In a strict town, a mysterious boy distributes fruit that awakens students' suppressed desires.",
       "image": "data/current-events/posters/bloody-smart-e3c85c32.jpg"
     }
   ]
