@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-25T21:28:21.180Z",
+  "generatedAt": "2026-08-26T00:30:34.769Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-04T21:28:21.180Z",
-  "windowEnd": "2026-08-25T21:28:21.180Z",
+  "windowStart": "2026-08-05T00:30:34.769Z",
+  "windowEnd": "2026-08-26T00:30:34.769Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,17 +21,83 @@
     "Tennis",
     "MMA"
   ],
-  "count": 2504,
+  "count": 2530,
   "items": [
     {
-      "key": "49434181",
-      "id": "49434181",
-      "headline": "2026 New York Giants training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Giants training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49434181/new-york-giants-training-camp-2026-intel-updates",
+      "key": "49726223",
+      "id": "49726223",
+      "headline": "Sources: Warriors to sign Georges Niang, completing roster",
+      "summary": "The Warriors are signing veteran power forward Georges Niang to a one-year, $3.9 million deal, completing the team's 15-man roster for the upcoming season.",
+      "url": "https://www.espn.com/nba/story/_/id/49726223/sources-warriors-sign-georges-niang-completing-roster",
+      "sport": "NBA",
+      "published": "2026-08-26T00:15:50.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49725854",
+      "id": "49725854",
+      "headline": "Gonzalez focused on season, but irked by talks with Patriots",
+      "summary": "Cornerback Christian Gonzalez, 24, and the New England Patriots continue to discuss a contract extension, and with the regular-season opener Sept. 9 closing in, the veteran defensive back expressed disappointment the sides have yet to reach an agreement.",
+      "url": "https://www.espn.com/nfl/story/_/id/49725854/gonzalez-focused-season-irked-talks-patriots",
       "sport": "NFL",
-      "published": "2026-08-25T21:13:40.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "published": "2026-08-25T23:49:05.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49726410",
+      "id": "49726410",
+      "headline": "Chargers wrap training camp with a familiar question: Is the offensive line good enough to contend?",
+      "summary": "As the Chargers close out training camp, questions remain about whether their offensive line is strong enough to help the team make a serious run this season.",
+      "url": "https://www.espn.com/video/clip/_/id/49726410/offensive-line-good-enough-contend",
+      "sport": "NFL",
+      "published": "2026-08-25T23:46:26.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49726290",
+      "id": "49726290",
+      "headline": "White Sox place Huascar Brazoban on 15-day IL with lat strain",
+      "summary": "The White Sox placed reliever Huascar Brazoban on the 15-day injured list Tuesday and recalled right-hander Jonathan Cannon from Triple-A Charlotte.",
+      "url": "https://www.espn.com/mlb/story/_/id/49726290/white-sox-place-huascar-brazoban-15-day-il-lat-strain",
+      "sport": "MLB",
+      "published": "2026-08-25T23:31:33.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49726103",
+      "id": "49726103",
+      "headline": "Astros owner says manager Joe Espada will finish season",
+      "summary": "A day after parting ways with general manager Dana Brown, Astros owner Jim Crane addressed the move and said manager Joe Espada will remain in the role for the remainder of the season.",
+      "url": "https://www.espn.com/mlb/story/_/id/49726103/after-ouster-gm-dana-brown-astros-owner-jim-crane-says-manager-joe-espada-finish-season",
+      "sport": "MLB",
+      "published": "2026-08-25T23:19:57.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49724296",
+      "id": "49724296",
+      "headline": "Kiffin: Conferences using double standard with court orders",
+      "summary": "Lane Kiffin said that the SEC and Big Ten are using a moralistic double standard by allowing certain players with court orders to play while attempting to ban others.",
+      "url": "https://www.espn.com/college-football/story/_/id/49724296/kiffin-conferences-using-double-standard-court-orders",
+      "sport": "College football",
+      "published": "2026-08-25T23:01:44.000Z",
+      "firstSeen": "2026-08-25T21:28:21.180Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49725856",
+      "id": "49725856",
+      "headline": "Sky ban Kanter Freedom from arena after clash with Cloud",
+      "summary": "Chicago Sky owner Michael Alter said Enes Kanter Freedom has been banned from Wintrust Arena after showing he has the potential to be a threat when he was tossed from a game Sunday for a verbal altercation with a Sky player.",
+      "url": "https://www.espn.com/wnba/story/_/id/49725856/sky-ban-kanter-freedom-arena-clash-cloud",
+      "sport": "WNBA",
+      "published": "2026-08-25T22:58:51.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
       "bestRank": 1
     },
     {
@@ -40,10 +106,65 @@
       "headline": "Big Ten won't allow football players to return from NFL",
       "summary": "The Big Ten is set to pass a rule Tuesday that doesn't allow players to return from the NFL and play for one of its schools, sources told ESPN's Pete Thamel.",
       "url": "https://www.espn.com/college-football/story/_/id/49721908/sources-big-ten-allow-players-return-nfl",
-      "sport": "NFL",
-      "published": "2026-08-25T21:11:44.000Z",
+      "sport": "College football",
+      "published": "2026-08-25T22:57:50.000Z",
       "firstSeen": "2026-08-25T15:31:13.856Z",
       "bestRank": 3
+    },
+    {
+      "key": "49723398",
+      "id": "49723398",
+      "headline": "Spouses Svitolina, Monfils into US Open mixed doubles semis",
+      "summary": "Spouses Elina Svitolina and Gael Monfils became the first team into the mixed doubles semifinals by edging Katerina Siniakova and Henry Patten.",
+      "url": "https://www.espn.com/tennis/story/_/id/49723398/aryna-sabalenka-novak-djokovic-upset-us-open-mixed-doubles",
+      "sport": "Tennis",
+      "published": "2026-08-25T22:56:07.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49725177",
+      "id": "49725177",
+      "headline": "Serena Williams, Carlos Alcaraz out in mixed doubles at US Open",
+      "summary": "Serena Williams and Carlos Alcaraz got knocked out in the US Open mixed doubles quarterfinals by Belinda Bencic and Flavio Cobolli on Tuesday.",
+      "url": "https://www.espn.com/tennis/story/_/id/49725177/serena-williams-carlos-alcaraz-mixed-doubles-us-open",
+      "sport": "Tennis",
+      "published": "2026-08-25T22:50:39.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49725155",
+      "id": "49725155",
+      "headline": "Tennessee, Peyton Manning, Dallas Cowboys lead tributes to Dolly Parton",
+      "summary": "The legendary singer-songwriter from the Volunteer State died Tuesday at the age of 80.",
+      "url": "https://www.espn.com/college-football/story/_/id/49725155/tennessee-volunteers-dallas-cowboys-dolly-parton-tributes-social-media",
+      "sport": "College football",
+      "published": "2026-08-25T22:50:38.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49725897",
+      "id": "49725897",
+      "headline": "Liverpool reignite Bradley Barcola talks with PSG - sources",
+      "summary": "Paris Saint-Germain and Liverpool restarted discussions over the transfer of Bradley Barcola on Tuesday, sources have told ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/49725897/liverpool-psg-bradley-barcola-transfer-talks",
+      "sport": "Soccer",
+      "published": "2026-08-25T22:49:40.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49725718",
+      "id": "49725718",
+      "headline": "Bears LT competition still 'a hot spot,' Ben Johnson says",
+      "summary": "The Bears are still searching for their starting left tackle 19 days ahead of their season opener at the Panthers.",
+      "url": "https://www.espn.com/nfl/story/_/id/49725718/bears-lt-competition-hot-spot-ben-johnson-says",
+      "sport": "NFL",
+      "published": "2026-08-25T22:42:02.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 6
     },
     {
       "key": "48377855",
@@ -52,9 +173,251 @@
       "summary": "We're tracking deals, trades and buzz across the NBA, including the latest on Russell Westbrook and DeMar DeRozan.",
       "url": "https://www.espn.com/nba/story/_/id/48377855/2026-nba-buzz-latest-live-updates-news-intel-nba-draft-offseason",
       "sport": "NBA",
-      "published": "2026-08-25T21:11:34.000Z",
+      "published": "2026-08-25T22:32:49.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
+    },
+    {
+      "key": "49725327",
+      "id": "49725327",
+      "headline": "Klay Thompson says he chose Heat for opportunity to win again",
+      "summary": "Klay Thompson said he's relishing the chance to win at the highest level again with a revamped Miami Heat team featuring Giannis Antetokounmpo.",
+      "url": "https://www.espn.com/nba/story/_/id/49725327/klay-thompson-says-chose-heat-opportunity-win-again",
+      "sport": "NBA",
+      "published": "2026-08-25T22:24:50.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49725726",
+      "id": "49725726",
+      "headline": "Commanders to sign veteran tackle Humphries, source says",
+      "summary": "The Commanders, who lost Laremy Tunsil to a torn triceps on Aug. 5, are signing veteran tackle D.J. Humphries, a source told ESPN.",
+      "url": "https://www.espn.com/nfl/story/_/id/49725726/commanders-sign-veteran-tackle-humphries-source-says",
+      "sport": "NFL",
+      "published": "2026-08-25T22:23:31.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49725725",
+      "id": "49725725",
+      "headline": "Klay excited to play high-level basketball with Heat",
+      "summary": "Klay excited to play high-level basketball with Heat",
+      "url": "https://www.espn.com/video/clip/_/id/49725725/klay-excited-play-high-level-basketball-heat",
+      "sport": "NBA",
+      "published": "2026-08-25T22:23:19.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49725855",
+      "id": "49725855",
+      "headline": "Ogden: I'd be surprised if Gakpo leaves Liverpool",
+      "summary": "Ogden: I'd be surprised if Gakpo leaves Liverpool",
+      "url": "https://www.espn.com/video/clip/_/id/49725855/surprised-gakpo-leaves-liverpool",
+      "sport": "Soccer",
+      "published": "2026-08-25T22:22:22.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49725848",
+      "id": "49725848",
+      "headline": "Nicol: Rogers deserved to be in the PFA team of the year over Cherki",
+      "summary": "Nicol: Rogers deserved to be in the PFA team of the year over Cherki",
+      "url": "https://www.espn.com/video/clip/_/id/49725848/rogers-deserved-the-pfa-team-year-cherki",
+      "sport": "Soccer",
+      "published": "2026-08-25T22:21:43.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49725757",
+      "id": "49725757",
+      "headline": "Panthers coach Canales backs QB Young, defers on extension",
+      "summary": "Dave Canales reiterated Carolina's commitment to Bryce Young for the 2026 season but said any talk of a potential long-term pact with the quarterback will be the responsibility of the front office.",
+      "url": "https://www.espn.com/nfl/story/_/id/49725757/panthers-coach-canales-backs-qb-young-defers-extension",
+      "sport": "NFL",
+      "published": "2026-08-25T22:21:38.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49725837",
+      "id": "49725837",
+      "headline": "Hutchison: Bruno Fernandes deserved to win the PFA player of the year award",
+      "summary": "Hutchison: Bruno Fernandes deserved to win the PFA player of the year award",
+      "url": "https://www.espn.com/video/clip/_/id/49725837/bruno-fernandes-deserved-win-pfa-player-year-award",
+      "sport": "Soccer",
+      "published": "2026-08-25T22:20:57.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49725702",
+      "id": "49725702",
+      "headline": "Carlos Alcaraz, Serena Williams wow the US Open crowd with tremendous point",
+      "summary": "Carlos Alcaraz, Serena Williams wow the US Open crowd with tremendous point",
+      "url": "https://www.espn.com/video/clip/_/id/49725702/carlos-alcaraz-serena-williams-wow-us-open-crowd-tremendous-point",
+      "sport": "Tennis",
+      "published": "2026-08-25T22:19:41.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49724848",
+      "id": "49724848",
+      "headline": "Bengals' Ja'Marr Chase says he is 'fine' after injury scare",
+      "summary": "Bengals star Ja'Marr Chase says he is \"fine\" after an injury scare at practice in which the WR appeared to injure his left knee.",
+      "url": "https://www.espn.com/nfl/story/_/id/49724848/bengals-jamarr-chase-says-fine-injury-scare",
+      "sport": "NFL",
+      "published": "2026-08-25T22:16:34.000Z",
+      "firstSeen": "2026-08-25T21:28:21.180Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49725796",
+      "id": "49725796",
+      "headline": "Carlos Alcaraz and Serena Williams bow out of US Open mixed doubles quarterfinals",
+      "summary": "Carlos Alcaraz and Serena Williams bow out of US Open mixed doubles quarterfinals",
+      "url": "https://www.espn.com/video/clip/_/id/49725796/carlos-alcaraz-serena-williams-bow-us-open-mixed-doubles-quarterfinals",
+      "sport": "Tennis",
+      "published": "2026-08-25T22:14:08.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49419756",
+      "id": "49419756",
+      "headline": "2026 New York Jets training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Jets training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49419756/new-york-jets-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-25T21:58:34.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49434181",
+      "id": "49434181",
+      "headline": "2026 New York Giants training camp: Latest intel, updates",
+      "summary": "Catch up on our daily updates from Giants training camp, including intel on QBs, position battles and potential breakouts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49434181/new-york-giants-training-camp-2026-intel-updates",
+      "sport": "NFL",
+      "published": "2026-08-25T21:57:05.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49725104",
+      "id": "49725104",
+      "headline": "York's arrest has 'no effect' on team, says 49ers coach Shanahan",
+      "summary": "49ers coach Kyle Shanahan says the recent arrest of team owner Jed York for attempting to engage in prostitution has \"no effect\" on the team's goals on the field.",
+      "url": "https://www.espn.com/nfl/story/_/id/49725104/york-arrest-no-effect-team-says-49ers-coach-shanahan",
+      "sport": "NFL",
+      "published": "2026-08-25T21:53:24.000Z",
+      "firstSeen": "2026-08-25T21:28:21.180Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49725029",
+      "id": "49725029",
+      "headline": "Fantasy baseball lineup advice for Wednesday: Lambert, May look to rebound vs. New York",
+      "summary": "Everything you need to know to set your fantasy baseball lineups for Wednesday's MLB action.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/49725029/fantasy-baseball-pitcher-rankings-lineup-advice-tips-mlb-daily-notes-august-26-games",
+      "sport": "MLB",
+      "published": "2026-08-25T21:52:56.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49725525",
+      "id": "49725525",
+      "headline": "Cardinals place Masyn Winn on IL, recall Nolan Gorman",
+      "summary": "The Cardinals put shortstop Masyn Winn on the 10-day injured list with a broken left thumb on Tuesday.",
+      "url": "https://www.espn.com/mlb/story/_/id/49725525/cardinals-place-masyn-winn-il-recall-nolan-gorman",
+      "sport": "MLB",
+      "published": "2026-08-25T21:41:01.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49725406",
+      "id": "49725406",
+      "headline": "Patrick Mahomes feeling great ahead of regular season",
+      "summary": "Patrick Mahomes feeling great ahead of regular season",
+      "url": "https://www.espn.com/video/clip/_/id/49725406/patrick-mahomes-feeling-great-ahead-regular-season",
+      "sport": "NFL",
+      "published": "2026-08-25T21:32:50.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49722530",
+      "id": "49722530",
+      "headline": "Why Davante Adams is one of Daniel Dopp's 'do not draft' players",
+      "summary": "Why Davante Adams is one of Daniel Dopp's 'do not draft' players",
+      "url": "https://www.espn.com/video/clip/_/id/49722530/why-davante-adams-one-daniel-dopp-do-not-draft-players",
+      "sport": "NFL",
+      "published": "2026-08-25T21:28:53.000Z",
+      "firstSeen": "2026-08-25T18:12:46.181Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49725451",
+      "id": "49725451",
+      "headline": "Seahawks put Clark, Richman on season-ending injured reserve",
+      "summary": "Seahawks rookie safety Bud Clark and offensive lineman Mason Richman, who were both injured in the team's preseason game against the Titans on Sunday, will miss the 2026 season after being placed on injured reserve Tuesday.",
+      "url": "https://www.espn.com/nfl/story/_/id/49725451/seahawks-put-clark-richman-season-ending-injured-reserve",
+      "sport": "NFL",
+      "published": "2026-08-25T21:28:00.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49724277",
+      "id": "49724277",
+      "headline": "Patrick Mahomes feeling 'great,' on track to start Week 1",
+      "summary": "Chiefs QB Patrick Mahomes said he has felt better and better the more he has practiced this summer and expects to remain on track to start in Week 1.",
+      "url": "https://www.espn.com/nfl/story/_/id/49724277/patrick-mahomes-feeling-great-track-start-week-1",
+      "sport": "NFL",
+      "published": "2026-08-25T21:26:26.000Z",
+      "firstSeen": "2026-08-25T21:28:21.180Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49719456",
+      "id": "49719456",
+      "headline": "Transfer rumors, news: Liverpool, Arsenal eye move for Kroupi",
+      "summary": "Atlético Madrid want Chelsea striker Nicolas Jackson, plus Bournemouth's Junior Kroupi is still attracting interest. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/49719456/transfer-rumors-news-nicolas-jackson-atletico-madrid-pave-way-julian-alvarez-arsenal-barcelona",
+      "sport": "Soccer",
+      "published": "2026-08-25T21:22:54.000Z",
+      "firstSeen": "2026-08-25T09:29:32.844Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49724505",
+      "id": "49724505",
+      "headline": "New York Giants WR Calvin Austin carted off practice field",
+      "summary": "New York receiver Calvin Austin III, 27, who signed with the Giants after spending four seasons with Pittsburgh, suffered a \"serious\" injury to his right knee while running a route at Tuesday's training camp practice, a source told ESPN's Adam Schefter.",
+      "url": "https://www.espn.com/nfl/story/_/id/49724505/new-york-giants-wr-calvin-austin-carted-practice-field",
+      "sport": "NFL",
+      "published": "2026-08-25T21:18:06.000Z",
+      "firstSeen": "2026-08-25T21:28:21.180Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49725264",
+      "id": "49725264",
+      "headline": "Leeds beat Nottingham Forest for second time in three days in League Cup",
+      "summary": "Leeds United produced a second win at Nottingham Forest in three days as they booked their spot in the Carabao Cup third round on Tuesday.",
+      "url": "https://www.espn.com/soccer/story/_/id/49725264/leeds-beat-nottingham-forest-second-three-days-league-cup",
+      "sport": "Soccer",
+      "published": "2026-08-25T21:16:56.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 6
     },
     {
       "key": "49720000",
@@ -101,17 +464,6 @@
       "bestRank": 3
     },
     {
-      "key": "49725104",
-      "id": "49725104",
-      "headline": "York's arrest has 'no effect' on team, says 49ers coach Shanahan",
-      "summary": "49ers coach Kyle Shanahan says the recent arrest of team owner Jed York for attempting to engage in prostitution has \"no effect\" on the team's goals on the field.",
-      "url": "https://www.espn.com/nfl/story/_/id/49725104/york-arrest-no-effect-team-says-49ers-coach-shanahan",
-      "sport": "NFL",
-      "published": "2026-08-25T20:51:47.000Z",
-      "firstSeen": "2026-08-25T21:28:21.180Z",
-      "bestRank": 2
-    },
-    {
       "key": "49427696",
       "id": "49427696",
       "headline": "2026 San Francisco 49ers training camp: Latest intel, updates",
@@ -121,17 +473,6 @@
       "published": "2026-08-25T20:48:33.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
-    },
-    {
-      "key": "49724848",
-      "id": "49724848",
-      "headline": "Bengals' Ja'Marr Chase says he is 'fine' after injury scare",
-      "summary": "Bengals star Ja'Marr Chase says he is \"fine\" after an injury scare at practice in which the WR appeared to injure his left knee.",
-      "url": "https://www.espn.com/nfl/story/_/id/49724848/bengals-jamarr-chase-says-fine-injury-scare",
-      "sport": "NFL",
-      "published": "2026-08-25T20:46:27.000Z",
-      "firstSeen": "2026-08-25T21:28:21.180Z",
-      "bestRank": 5
     },
     {
       "key": "47979684",
@@ -145,36 +486,25 @@
       "bestRank": 1
     },
     {
-      "key": "49724505",
-      "id": "49724505",
-      "headline": "New York Giants WR Calvin Austin carted off practice field",
-      "summary": "New York receiver Calvin Austin III, 27, who signed with the Giants after spending four seasons with Pittsburgh, suffered a \"serious\" injury to his right knee while running a route at Tuesday's training camp practice, a source told ESPN's Adam Schefter.",
-      "url": "https://www.espn.com/nfl/story/_/id/49724505/new-york-giants-wr-calvin-austin-carted-practice-field",
-      "sport": "NFL",
-      "published": "2026-08-25T20:39:18.000Z",
-      "firstSeen": "2026-08-25T21:28:21.180Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49724296",
-      "id": "49724296",
-      "headline": "Kiffin: Conferences using double standard with court orders",
-      "summary": "Lane Kiffin said that the SEC and Big Ten are using a moralistic double standard by allowing certain players with court orders to play while attempting to ban others.",
-      "url": "https://www.espn.com/college-football/story/_/id/49724296/kiffin-conferences-using-double-standard-court-orders",
-      "sport": "College football",
-      "published": "2026-08-25T20:27:28.000Z",
-      "firstSeen": "2026-08-25T21:28:21.180Z",
-      "bestRank": 1
-    },
-    {
       "key": "49721608",
       "id": "49721608",
       "headline": "LeBron James, PGA Tour partner on event focused on community",
       "summary": "The LeBron James Family Foundation Invitational will be played in James' hometown of Akron, Ohio, in July 2027, James' foundation announced Tuesday.",
       "url": "https://www.espn.com/golf/story/_/id/49721608/lebron-james-pga-tour-partner-event-focused-amateurs",
-      "sport": "NBA",
+      "sport": "Golf",
       "published": "2026-08-25T20:15:43.000Z",
       "firstSeen": "2026-08-25T15:31:13.856Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49723977",
+      "id": "49723977",
+      "headline": "PGA Tour CEO excited to partner with LeBron for event in Akron",
+      "summary": "PGA Tour CEO excited to partner with LeBron for event in Akron",
+      "url": "https://www.espn.com/video/clip/_/id/49723977/pga-tour-ceo-excited-partner-lebron-event-akron",
+      "sport": "Golf",
+      "published": "2026-08-25T20:15:19.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
       "bestRank": 1
     },
     {
@@ -200,15 +530,37 @@
       "bestRank": 2
     },
     {
-      "key": "49724277",
-      "id": "49724277",
-      "headline": "Patrick Mahomes feeling 'great,' on track to start Week 1",
-      "summary": "Chiefs QB Patrick Mahomes said he has felt better and better the more he has practiced this summer and expects to remain on track to start in Week 1.",
-      "url": "https://www.espn.com/nfl/story/_/id/49724277/patrick-mahomes-feeling-great-track-start-week-1",
-      "sport": "NFL",
-      "published": "2026-08-25T20:07:50.000Z",
-      "firstSeen": "2026-08-25T21:28:21.180Z",
-      "bestRank": 8
+      "key": "49723479",
+      "id": "49723479",
+      "headline": "PGA Tour CEO: LIV golfers would have to earn their way in, just like any other player",
+      "summary": "PGA Tour CEO: LIV golfers would have to earn their way in, just like any other player",
+      "url": "https://www.espn.com/video/clip/_/id/49723479/liv-golfers-earn-their-way-just-other-player",
+      "sport": "Golf",
+      "published": "2026-08-25T18:26:27.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49723368",
+      "id": "49723368",
+      "headline": "PGA CEO Brian Rolapp compares new postseason format to March Madness",
+      "summary": "PGA CEO Brian Rolapp compares new postseason format to March Madness",
+      "url": "https://www.espn.com/video/clip/_/id/49723368/pga-ceo-brian-rolapp-compares-new-postseason-format-march-madness",
+      "sport": "Golf",
+      "published": "2026-08-25T18:26:25.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 3
+    },
+    {
+      "key": "48113442",
+      "id": "48113442",
+      "headline": "'Right now, I could be UFC champion': Bella Mir is the future face of fighting",
+      "summary": "With Dana White as her mentor, the daughter of heavyweight champ Frank grapples for an NCAA title this weekend.",
+      "url": "https://www.espn.com/mma/story/_/id/48113442/bella-mir-daughter-ufc-champion-frank-mir-ncaa-women-college-wrestling",
+      "sport": "MMA",
+      "published": "2026-08-25T18:22:42.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 1
     },
     {
       "key": "49366855",
@@ -231,17 +583,6 @@
       "published": "2026-08-25T18:20:33.000Z",
       "firstSeen": "2026-08-25T18:12:46.181Z",
       "bestRank": 7
-    },
-    {
-      "key": "49722530",
-      "id": "49722530",
-      "headline": "Why Davante Adams is one of Daniel Dopp's 'do not draft players'",
-      "summary": "Why Davante Adams is one of Daniel Dopp's 'do not draft players'",
-      "url": "https://www.espn.com/video/clip/_/id/49722530/why-davante-adams-one-daniel-dopp-do-not-draft-players",
-      "sport": "NFL",
-      "published": "2026-08-25T18:19:52.000Z",
-      "firstSeen": "2026-08-25T18:12:46.181Z",
-      "bestRank": 11
     },
     {
       "key": "49723938",
@@ -274,6 +615,17 @@
       "sport": "College football",
       "published": "2026-08-25T18:07:54.000Z",
       "firstSeen": "2026-08-25T21:28:21.180Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49723947",
+      "id": "49723947",
+      "headline": "Djokovic, Sabalenka fall in US Open mixed doubles match",
+      "summary": "Djokovic, Sabalenka fall in US Open mixed doubles match",
+      "url": "https://www.espn.com/video/clip/_/id/49723947/djokovic-sabalenka-fall-us-open-mixed-doubles-match",
+      "sport": "Tennis",
+      "published": "2026-08-25T18:05:26.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
       "bestRank": 4
     },
     {
@@ -332,6 +684,17 @@
       "bestRank": 2
     },
     {
+      "key": "49721526",
+      "id": "49721526",
+      "headline": "PGA Tour future postseason to conclude with match-play event",
+      "summary": "The PGA Tour's future postseason will include a Championship Series finale -- a 72-hole, stroke-play tournament that will finalize the points list and determine the seasonlong champion -- followed by match play over two weeks.",
+      "url": "https://www.espn.com/golf/story/_/id/49721526/pga-tour-future-postseason-conclude-match-play-event",
+      "sport": "Golf",
+      "published": "2026-08-25T17:46:25.000Z",
+      "firstSeen": "2026-08-25T15:31:13.856Z",
+      "bestRank": 2
+    },
+    {
       "key": "49702808",
       "id": "49702808",
       "headline": "2026 NFL rookies to pick in later rounds of fantasy football drafts",
@@ -352,6 +715,39 @@
       "published": "2026-08-25T17:37:22.000Z",
       "firstSeen": "2026-08-25T21:28:21.180Z",
       "bestRank": 5
+    },
+    {
+      "key": "49723306",
+      "id": "49723306",
+      "headline": "PGA Tour commish says no path back planned for LIV golfers",
+      "summary": "PGA Tour CEO/commissioner Brian Rolapp said the tour has no current plan to bring back LIV golfers Bryson DeChambeau, Jon Rahm and Cameron Smith.",
+      "url": "https://www.espn.com/golf/story/_/id/49723306/pga-tour-commish-says-no-path-back-planned-liv-golfers",
+      "sport": "Golf",
+      "published": "2026-08-25T17:35:28.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 4
+    },
+    {
+      "key": "21807736",
+      "id": "21807736",
+      "headline": "Gregory Rodrigues stands his ground, enters middleweight top 10",
+      "summary": "Here's a look at every weight class to determine the best of the best in UFC, PFL and beyond.",
+      "url": "https://www.espn.com/mma/story/_/id/21807736/mma-divisional-rankings-ufc-pfl-rankings-weight-class",
+      "sport": "MMA",
+      "published": "2026-08-25T17:18:01.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49723267",
+      "id": "49723267",
+      "headline": "Stan Wawrinka thanks New York, US Open despite no wild card",
+      "summary": "Former US Open champion Stan Wawrinka didn't get into the tournament in his final season before retiring, but he thanked New York in a social media post.",
+      "url": "https://www.espn.com/tennis/story/_/id/49723267/stan-wawrinka-thanks-new-york-us-open-no-wild-card",
+      "sport": "Tennis",
+      "published": "2026-08-25T17:01:02.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 6
     },
     {
       "key": "49692021",
@@ -495,6 +891,17 @@
       "published": "2026-08-25T15:58:14.000Z",
       "firstSeen": "2026-08-25T18:12:46.181Z",
       "bestRank": 4
+    },
+    {
+      "key": "49439341",
+      "id": "49439341",
+      "headline": "Max vs 100: When is Verstappen race, how to watch on Disney+, how it works, who's taking part?",
+      "summary": "Four-time Formula 1 world champion Max Verstappen is taking on his next challenge -- which could be his most entertaining yet.",
+      "url": "https://www.espn.com/f1/story/_/id/49439341/verstappen-race-how-watch-disney+-how-works-taking-part",
+      "sport": "F1",
+      "published": "2026-08-25T15:53:06.000Z",
+      "firstSeen": "2026-08-26T00:30:34.769Z",
+      "bestRank": 1
     },
     {
       "key": "49722598",
@@ -673,15 +1080,15 @@
       "bestRank": 2
     },
     {
-      "key": "49721526",
-      "id": "49721526",
-      "headline": "PGA Tour future postseason to conclude with match-play event",
-      "summary": "The PGA Tour's future postseason will include a Championship Series finale -- a 72-hole, stroke-play tournament that will finalize the points list and determine the seasonlong champion -- followed by match play over two weeks.",
-      "url": "https://www.espn.com/golf/story/_/id/49721526/pga-tour-future-postseason-conclude-match-play-event",
-      "sport": "Golf",
-      "published": "2026-08-25T13:48:07.000Z",
-      "firstSeen": "2026-08-25T15:31:13.856Z",
-      "bestRank": 2
+      "key": "49696956",
+      "id": "49696956",
+      "headline": "Inside Bianca Andreescu's hard-fought road back to the US Open",
+      "summary": "Seven years -- and countless setbacks -- after her incredible US Open victory, Bianca Andreescu is back, fighting to make the main draw.",
+      "url": "https://www.espn.com/tennis/story/_/id/49696956/bianca-andreescu-former-us-open-champion-qualfying-main-draw",
+      "sport": "Tennis",
+      "published": "2026-08-25T13:53:08.000Z",
+      "firstSeen": "2026-08-25T00:30:49.786Z",
+      "bestRank": 1
     },
     {
       "key": "49721716",
@@ -714,17 +1121,6 @@
       "sport": "F1",
       "published": "2026-08-25T13:21:00.000Z",
       "firstSeen": "2026-08-25T15:31:13.856Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49719456",
-      "id": "49719456",
-      "headline": "Transfer rumors, news: Could Jackson to Atlético pave way for Álvarez exit?",
-      "summary": "Atlético Madrid want Chelsea striker Nicolas Jackson, plus Bournemouth's Junior Kroupi is still attracting interest. Transfer Talk has the latest.",
-      "url": "https://www.espn.com/soccer/story/_/id/49719456/transfer-rumors-news-nicolas-jackson-atletico-madrid-pave-way-julian-alvarez-arsenal-barcelona",
-      "sport": "Soccer",
-      "published": "2026-08-25T13:09:25.000Z",
-      "firstSeen": "2026-08-25T09:29:32.844Z",
       "bestRank": 1
     },
     {
@@ -835,6 +1231,17 @@
       "sport": "WNBA",
       "published": "2026-08-25T12:24:41.000Z",
       "firstSeen": "2026-08-25T15:31:13.856Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49515865",
+      "id": "49515865",
+      "headline": "F1 2027 driver lineups: Who has a seat - and who's out of contract?",
+      "summary": "The 2026 rule changes threw Formula 1 into a new era of challenges and uncertainty, but the real moments of unpredictability are still to come.",
+      "url": "https://www.espn.com/f1/story/_/id/49515865/f1-2027-driver-lineups-lewis-hamilton-max-verstappen-seat-contract",
+      "sport": "F1",
+      "published": "2026-08-25T12:16:46.000Z",
+      "firstSeen": "2026-08-19T12:30:01.795Z",
       "bestRank": 1
     },
     {
@@ -1382,7 +1789,7 @@
       "headline": "LSU's Lane Kiffin defends pursuit of NFL players returning to college",
       "summary": "LSU's Lane Kiffin defended his decision to pursue NFL rookies seeking a fifth year of playing college football, saying he's just one of many coaches trying to do so.",
       "url": "https://www.espn.com/college-football/story/_/id/49715699/lsu-lane-kiffin-defends-pursuit-nfl-players-returning-college",
-      "sport": "NFL",
+      "sport": "College football",
       "published": "2026-08-25T04:41:37.000Z",
       "firstSeen": "2026-08-25T00:30:49.786Z",
       "bestRank": 4
@@ -1558,7 +1965,7 @@
       "headline": "SEC: Pro athletes should not 'return to college competition'",
       "summary": "As LSU hopes to sign NFL tight end Dae'Quan Wright, if he clears waivers, the SEC on Monday issued a statement emphasizing its belief that athletes who choose to leave to sign pro contracts \"should not then be permitted to return to college competition.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49716985/pro-athletes-not-return-college-competition",
-      "sport": "College basketball",
+      "sport": "College football",
       "published": "2026-08-25T02:19:56.000Z",
       "firstSeen": "2026-08-25T03:33:46.697Z",
       "bestRank": 2
@@ -2673,17 +3080,6 @@
       "published": "2026-08-24T14:12:59.000Z",
       "firstSeen": "2026-08-24T12:30:02.312Z",
       "bestRank": 11
-    },
-    {
-      "key": "49696956",
-      "id": "49696956",
-      "headline": "Inside Bianca Andreescu's hard-fought road back to the US Open",
-      "summary": "Seven years -- and countless setbacks -- after her incredible US Open victory, Bianca Andreescu is back, fighting to make the main draw.",
-      "url": "https://www.espn.com/tennis/story/_/id/49696956/bianca-andreescu-former-us-open-champion-qualfying-main-draw",
-      "sport": "Tennis",
-      "published": "2026-08-24T14:02:05.000Z",
-      "firstSeen": "2026-08-25T00:30:49.786Z",
-      "bestRank": 1
     },
     {
       "key": "49708776",
@@ -4649,7 +5045,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "College basketball is in chaos over eligibility issues. Here's how we got here, the latest updates and what's next.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-23T14:14:54.000Z",
       "firstSeen": "2026-08-22T21:27:10.267Z",
       "bestRank": 1
@@ -6112,7 +6508,7 @@
       "headline": "Greg Sankey, in filing, speaks out against pros returning to NCAA",
       "summary": "SEC commissioner Greg Sankey asked a judge to uphold NCAA rules that prevent athletes from returning to play in college.",
       "url": "https://www.espn.com/college-sports/story/_/id/49672789/greg-sankey-filing-speaks-pros-returning-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-22T18:27:32.000Z",
       "firstSeen": "2026-08-20T21:27:59.718Z",
       "bestRank": 1
@@ -6134,7 +6530,7 @@
       "headline": "Court halts order, denies extra year of eligibility",
       "summary": "In a legal victory for the NCAA, a federal appeals court has temporarily halted a court order that would have granted thousands of athletes who left college an extra year of eligibility.",
       "url": "https://www.espn.com/college-football/story/_/id/49682102/court-halts-order-denies-extra-year-eligibility",
-      "sport": "College basketball",
+      "sport": "College football",
       "published": "2026-08-22T18:26:52.000Z",
       "firstSeen": "2026-08-21T21:27:41.439Z",
       "bestRank": 1
@@ -9940,7 +10336,7 @@
       "headline": "NCAA lands new deal to promote championship events",
       "summary": "The NCAA and Playfly Sports have agreed to a deal that will open the door to more marketing opportunities around championship events, including possible NIL deals for student-athletes.",
       "url": "https://www.espn.com/college-sports/story/_/id/49670866/ncaa-lands-new-deal-promote-championship-events",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-20T15:20:41.000Z",
       "firstSeen": "2026-08-20T18:29:37.526Z",
       "bestRank": 1
@@ -11475,17 +11871,6 @@
       "bestRank": 4
     },
     {
-      "key": "49419756",
-      "id": "49419756",
-      "headline": "2026 New York Jets training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Jets training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49419756/new-york-jets-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-19T20:17:44.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 3
-    },
-    {
       "key": "49662563",
       "id": "49662563",
       "headline": "Carson Benge hits a two-run homer to help the surging Mets past the Padres, 4-2",
@@ -12287,17 +12672,6 @@
       "published": "2026-08-19T09:24:33.000Z",
       "firstSeen": "2026-08-19T12:30:01.795Z",
       "bestRank": 2
-    },
-    {
-      "key": "49515865",
-      "id": "49515865",
-      "headline": "F1 2027 driver lineups: Who has a seat - and who's out of contract?",
-      "summary": "The 2026 rule changes threw Formula 1 into a new era of challenges and uncertainty, but the real moments of unpredictability are still to come.",
-      "url": "https://www.espn.com/f1/story/_/id/49515865/f1-2027-driver-lineups-lewis-hamilton-max-verstappen-seat-contract",
-      "sport": "F1",
-      "published": "2026-08-19T09:08:14.000Z",
-      "firstSeen": "2026-08-19T12:30:01.795Z",
-      "bestRank": 1
     },
     {
       "key": "49656463",
@@ -13917,17 +14291,6 @@
       "bestRank": 2
     },
     {
-      "key": "21807736",
-      "id": "21807736",
-      "headline": "Mackenzie Dern, Islam Makhachev solidify positions in divisional top 10s",
-      "summary": "Here's a look at every weight class to determine the best of the best in UFC, PFL and beyond.",
-      "url": "https://www.espn.com/mma/story/_/id/21807736/mma-divisional-rankings-ufc-pfl-rankings-weight-class",
-      "sport": "MMA",
-      "published": "2026-08-18T13:48:26.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
-    },
-    {
       "key": "49648078",
       "id": "49648078",
       "headline": "Falcons sign veteran Za'Darius Smith to aid pass rush",
@@ -14901,7 +15264,7 @@
       "headline": "Notable Walk-Offs: Reflect on historic moments across the SEC",
       "summary": "On SEC Now, Dari Nowkhah and Matt Stinchcomb look back on some of the most legendary moments from SEC history across all sports.",
       "url": "https://www.espn.com/video/clip/_/id/49643359/reflect-historic-moments-sec",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-17T23:54:12.000Z",
       "firstSeen": "2026-08-18T06:29:33.134Z",
       "bestRank": 1
@@ -15638,7 +16001,7 @@
       "headline": "Sources: Michigan State to hire Western Michigan AD Bartholomae",
       "summary": "Michigan State is finalizing a deal to hire Western Michigan athletic director Dan Bartholomae as its new AD, sources told ESPN's Pete Thamel on Monday.",
       "url": "https://www.espn.com/college-football/story/_/id/49638615/sources-michigan-state-hire-western-michigan-ad-bartholomae",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-17T14:32:16.000Z",
       "firstSeen": "2026-08-17T21:27:47.678Z",
       "bestRank": 1
@@ -17079,7 +17442,7 @@
       "headline": "Basketball HOF class of 2026 honors women's hoops, NBA icons",
       "summary": "Candace Parker and Elena Delle Donne headlined a 2026 Hall of Fame class that honored women's hoops, as well as NBA luminaries such as Doc Rivers, Mike D'Antoni and Amar'e Stoudemire.",
       "url": "https://www.espn.com/espn/story/_/id/49623875/basketball-hof-class-2026-honors-women-hoops-nba-icons",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-16T11:21:36.000Z",
       "firstSeen": "2026-08-16T03:34:19.324Z",
       "bestRank": 1
@@ -23030,7 +23393,7 @@
       "headline": "Reports: Sankey reminds SEC schools to follow eligibility rules",
       "summary": "Commissioner Greg Sankey sent a memo to SEC members reminding them to move carefully when adding players suddenly allowed by court rulings to seek a fifth year of eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49593224/reports-sankey-reminds-sec-schools-follow-eligibility-rules",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-12T21:10:17.000Z",
       "firstSeen": "2026-08-13T03:59:55.296Z",
       "bestRank": 1
@@ -25274,7 +25637,7 @@
       "headline": "NCAA and FBI announce partnership to combat athlete sexploitation",
       "summary": "As college athletes become bigger targets for sexual exploitation online, the NCAA and FBI announced a partnership Monday to educate athletes on how to prevent private images from falling into the wrong hands.",
       "url": "https://www.espn.com/college-sports/story/_/id/49555079/ncaa-fbi-announce-partnership-combat-athlete-sexploitation",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-10T17:55:54.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 2
@@ -26198,7 +26561,7 @@
       "headline": "Senate vote on college sports bill now slated for September",
       "summary": "The Protect College Sports Act failed to reach a vote during an all-night, pre-recess session in the Senate, though the bill did gain a spot on next month's calendar after the chamber comes back from its summer break.",
       "url": "https://www.espn.com/college-sports/story/_/id/49560859/senate-vote-college-sports-bill-slated-september",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-08T16:30:20.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
@@ -26451,7 +26814,7 @@
       "headline": "New Purdue AD admits dig at Indiana was immediate error",
       "summary": "New Purdue athletic director Tommy McClelland is owning that an attempted one-liner at the expense of Indiana was a mistake \"the second it left my mouth.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49554744/new-purdue-ad-admits-dig-indiana-was-immediate-error",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-07T18:47:59.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 3
@@ -26550,7 +26913,7 @@
       "headline": "Mrs. Met, Goldy headline inductions into the Mascot Hall of Fame",
       "summary": "The announcement was made Friday morning on \"Good Morning America,\" with the five mascots on site to receive the news.",
       "url": "https://www.espn.com/mlb/story/_/id/49546890/mascot-hall-fame-inductions-class-2026",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-07T15:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 4
@@ -26990,7 +27353,7 @@
       "headline": "NCAA Division II votes to approve age-based eligibility model",
       "summary": "NCAA Division II will move to the age-based eligibility model that has prompted athlete lawsuits across the country since it was adopted in Division I.",
       "url": "https://www.espn.com/college-sports/story/_/id/49545296/ncaa-division-ii-votes-approve-age-based-eligibility-model",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-06T14:52:10.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 5
@@ -27122,7 +27485,7 @@
       "headline": "LSU officials meet with top donors about proposed sports funding plan",
       "summary": "LSU has completed a series of two meetings with top donors to outline what university President Wade Rousse has billed as a \"first of its kind\" revenue-generating proposal for athletics.",
       "url": "https://www.espn.com/college-sports/story/_/id/49542287/lsu-officials-meet-top-donors-proposed-sports-funding-plan",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-06T04:29:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 6
@@ -27298,7 +27661,7 @@
       "headline": "Purdue hires longtime AD Tommy McClelland from Rice",
       "summary": "Purdue has hired Rice athletic director Tommy McClelland as athletic director.",
       "url": "https://www.espn.com/college-sports/story/_/id/49525796/tommy-mcclelland-primary-target-purdue-ad-job-sources-say",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-05T16:48:55.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 9
@@ -27375,7 +27738,7 @@
       "headline": "Pac-12, MWC finalize settlement over 'poaching,' exit fees",
       "summary": "The Pac-12 and Mountain West have finalized a settlement over \"poaching\" and exit fees ahead of a number of former MWC schools heading to the Pac-12.",
       "url": "https://www.espn.com/college-sports/story/_/id/49535459/pac-12-mwc-finalize-settlement-poaching-exit-fees",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-05T11:31:11.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 7
@@ -27489,83 +27852,6 @@
       "published": "2026-08-05T00:35:41.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 2
-    },
-    {
-      "key": "49532583",
-      "id": "49532583",
-      "headline": "MEAC signs commissioner Sonja Stills to 5-year extension through '31",
-      "summary": "The Mid-Eastern Athletic Conference has signed Commissioner Sonja Stills to a five-year contract extension through 2031.",
-      "url": "https://www.espn.com/college-sports/story/_/id/49532583/meac-signs-commissioner-sonja-stills-5-year-extension-2031",
-      "sport": "College basketball",
-      "published": "2026-08-04T23:55:04.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49532210",
-      "id": "49532210",
-      "headline": "Nicol: It's time for Rodri to leave Man City",
-      "summary": "Nicol: It's time for Rodri to leave Man City",
-      "url": "https://www.espn.com/video/clip/_/id/49532210/rodri-leave-man-city",
-      "sport": "Soccer",
-      "published": "2026-08-04T22:33:30.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 33
-    },
-    {
-      "key": "49532171",
-      "id": "49532171",
-      "headline": "Combat sports icon, 10-time WWE champ Brock Lesnar retires",
-      "summary": "Brock Lesnar, a 10-time WWE world champ and former UFC heavyweight champ, said his match at WWE SummerSlam was his last and that he's retiring from combat sports.",
-      "url": "https://www.espn.com/wwe/story/_/id/49532171/combat-sports-icon-10-wwe-champ-brock-lesnar-retires",
-      "sport": "MMA",
-      "published": "2026-08-04T22:30:53.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49527513",
-      "id": "49527513",
-      "headline": "Top FIFA executives break with Infantino over World Cup plan",
-      "summary": "Two senior FIFA executives -- coaching great Arsène Wenger and CEO-like secretary general Mattias Grafström -- distanced themselves Tuesday from their boss Gianni Infantino's failed plan to sell stakes in future World Cup profits to private investors.",
-      "url": "https://www.espn.com/soccer/story/_/id/49527513/arsene-wenger-gianni-infantino-fifa-world-cup-sell-u-turn-absolutely-necessary",
-      "sport": "Soccer",
-      "published": "2026-08-04T22:20:39.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 35
-    },
-    {
-      "key": "49531647",
-      "id": "49531647",
-      "headline": "Luka Doncic's ex-fiancée withdraws child support petition",
-      "summary": "Luka Doncic's ex-fiancée Anamaria Goltes is withdrawing her petition seeking child support and attorney fees from the Lakers star.",
-      "url": "https://www.espn.com/nba/story/_/id/49531647/luka-doncic-ex-fiancee-withdraws-child-support-petition",
-      "sport": "NBA",
-      "published": "2026-08-04T22:15:10.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 45
-    },
-    {
-      "key": "49531779",
-      "id": "49531779",
-      "headline": "Source: Zavier Gozo close to Palace move from Salt Lake",
-      "summary": "Premier League side Crystal Palace are in advanced talks to sign Real Salt Lake's 19-year-old wing-back Zavier Gozo, a source confirmed to ESPN.",
-      "url": "https://www.espn.com/soccer/story/_/id/49531779/zavier-gozo-close-palace-move-salt-lake",
-      "sport": "Soccer",
-      "published": "2026-08-04T21:53:22.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 38
-    },
-    {
-      "key": "49531279",
-      "id": "49531279",
-      "headline": "Jaylen Brown expresses love desire after Donovan Mitchell wedding",
-      "summary": "The Philadelphia 76ers guard left Donovan Mitchell and Coco Jones' wedding inspired for his next relationship.",
-      "url": "https://www.espn.com/nba/story/_/id/49531279/jaylen-brown-love-desire-philadelphia-76ers-donovan-mitchell-coco-jones-wedding",
-      "sport": "NBA",
-      "published": "2026-08-04T21:46:51.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 44
     }
   ]
 }
