@@ -987,22 +987,173 @@ function configureUtterance(utter, voice, rate) {
   return utter;
 }
 
-/** Breath after an item when the playlist is pre-queued (iOS can’t await between speaks). */
-function pauseSuffix(ms) {
+/**
+ * Near-silent filler for pre-queued gaps (lock-screen flush path only).
+ * Screen-on iOS playback uses real wait() instead.
+ */
+function pauseUtterance(ms, voice, rate) {
   const pauseMs = Math.max(0, Math.round(Number(ms) || 0));
-  if (pauseMs <= 0) return "";
-  // Ellipsis tends to land as a pause; never use [[slnc N]] — Safari reads that aloud.
-  const beats = Math.min(12, Math.max(1, Math.round(pauseMs / 400)));
-  return ` ${"…".repeat(beats)}`;
+  if (pauseMs <= 0) return null;
+  const r = 0.5;
+  // Invert ms ≈ chars * 90 / rate, with headroom so gaps don’t run short.
+  const chars = Math.max(3, Math.round((pauseMs * r) / 70));
+  const utter = new SpeechSynthesisUtterance("m ".repeat(chars).trim());
+  configureUtterance(utter, voice, r);
+  utter.volume = 0.01;
+  return utter;
 }
 
-function appendPauseToLastSpeech(playlist, ms) {
-  const suffix = pauseSuffix(ms);
-  if (!suffix) return;
-  for (let i = playlist.length - 1; i >= 0; i -= 1) {
-    if (playlist[i].kind === "speech") {
-      playlist[i].text = `${playlist[i].text}${suffix}`;
-      return;
+/**
+ * iOS: real between-item waits while the screen is on; if the user locks, flush
+ * the rest of the playlist into speechSynthesis so playback can continue.
+ */
+async function speakIOSLines(lines, opts) {
+  const {
+    session,
+    voice,
+    rate,
+    loops,
+    loopPadMs,
+    itemDelayMs,
+    onStartLine,
+    onLoopStart,
+    onStatus,
+  } = opts;
+  const stillThis = () => session === browserSpeakSession;
+  const synth = window.speechSynthesis;
+
+  if (typeof document !== "undefined" && document.visibilityState === "hidden") {
+    return speakBrowserPlaylist(lines, opts);
+  }
+
+  let flushed = false;
+  let flushWait = null;
+  let cursor = { loop: 0, line: 0, chunkIndex: -1 };
+
+  const flushRemaining = () => {
+    if (flushed || !stillThis()) return;
+    flushed = true;
+
+    const fromLoop = cursor.loop;
+    const fromLine = cursor.line;
+    const fromChunk = cursor.chunkIndex + 1;
+
+    flushWait = new Promise((resolve) => {
+      /** @type {SpeechSynthesisUtterance[]} */
+      const pending = [];
+
+      const queueSpeech = (text, lineIndex) => {
+        const utter = new SpeechSynthesisUtterance(text);
+        configureUtterance(utter, voice, rate);
+        utter.onstart = () => {
+          if (stillThis()) onStartLine?.(lineIndex);
+        };
+        pending.push(utter);
+      };
+
+      const queuePause = (ms) => {
+        const utter = pauseUtterance(ms, voice, rate);
+        if (utter) pending.push(utter);
+      };
+
+      for (let loop = fromLoop; loop < loops; loop += 1) {
+        if (loop > fromLoop && loopPadMs > 0) queuePause(loopPadMs);
+        const lineStart = loop === fromLoop ? fromLine : 0;
+        for (let i = lineStart; i < lines.length; i += 1) {
+          const chunks = chunkForSpeech(lines[i]);
+          const chunkStart =
+            loop === fromLoop && i === fromLine ? Math.max(0, fromChunk) : 0;
+          for (let c = chunkStart; c < chunks.length; c += 1) {
+            queueSpeech(chunks[c], i);
+          }
+          if (i < lines.length - 1 && itemDelayMs > 0) queuePause(itemDelayMs);
+        }
+      }
+
+      if (!pending.length) {
+        resolve(true);
+        return;
+      }
+
+      let left = pending.length;
+      const doneOne = () => {
+        left -= 1;
+        if (left <= 0) resolve(stillThis());
+      };
+
+      try {
+        if (synth.paused) synth.resume();
+      } catch {
+        /* ignore */
+      }
+
+      for (const utter of pending) {
+        utter.onend = doneOne;
+        utter.onerror = doneOne;
+        try {
+          synth.speak(utter);
+        } catch {
+          doneOne();
+        }
+      }
+    });
+  };
+
+  const onHide = () => {
+    if (typeof document !== "undefined" && document.visibilityState === "hidden") {
+      flushRemaining();
+    }
+  };
+
+  if (typeof document !== "undefined") {
+    document.addEventListener("visibilitychange", onHide);
+    document.addEventListener("freeze", onHide);
+  }
+
+  try {
+    for (let loop = 0; loop < loops; loop += 1) {
+      if (!stillThis() || flushed) break;
+      cursor = { loop, line: 0, chunkIndex: -1 };
+
+      if (loop > 0) {
+        onStatus?.(
+          `Loop ${loop} finished. Waiting 7 seconds before loop ${loop + 1} of ${loops}…`
+        );
+        const ok = await wait(loopPadMs, session);
+        if (!ok || flushed || !stillThis()) break;
+      }
+
+      onLoopStart?.(loop, loops);
+      if (loops > 1) {
+        onStatus?.(`Playing loop ${loop + 1} of ${loops}…`);
+      }
+
+      for (let i = 0; i < lines.length; i += 1) {
+        if (!stillThis() || flushed) break;
+        onStartLine?.(i);
+        const chunks = chunkForSpeech(lines[i]);
+        for (let c = 0; c < chunks.length; c += 1) {
+          if (!stillThis() || flushed) break;
+          cursor = { loop, line: i, chunkIndex: c };
+          const keep = await speakUtterance(chunks[c], voice, rate, session);
+          if (!keep || !stillThis()) return false;
+          if (flushed) break;
+        }
+        if (flushed) break;
+        cursor = { loop, line: i + 1, chunkIndex: -1 };
+        if (i < lines.length - 1 && itemDelayMs > 0) {
+          const ok = await wait(itemDelayMs, session);
+          if (!ok || flushed || !stillThis()) break;
+        }
+      }
+    }
+
+    if (flushed && flushWait) await flushWait;
+    return stillThis();
+  } finally {
+    if (typeof document !== "undefined") {
+      document.removeEventListener("visibilitychange", onHide);
+      document.removeEventListener("freeze", onHide);
     }
   }
 }
@@ -1026,11 +1177,11 @@ function speakBrowserPlaylist(lines, opts) {
   const synth = window.speechSynthesis;
   const stillThis = () => session === browserSpeakSession;
 
-  /** @type {{ kind: "speech"|"loop", text?: string, lineIndex?: number, loop?: number, total?: number }[]} */
+  /** @type {{ kind: "speech"|"pause"|"loop", text?: string, lineIndex?: number, ms?: number, loop?: number, total?: number }[]} */
   const playlist = [];
   for (let loop = 0; loop < loops; loop += 1) {
     if (loop > 0 && loopPadMs > 0) {
-      appendPauseToLastSpeech(playlist, loopPadMs);
+      playlist.push({ kind: "pause", ms: loopPadMs });
     }
     playlist.push({ kind: "loop", loop, total: loops });
     for (let i = 0; i < lines.length; i += 1) {
@@ -1039,13 +1190,17 @@ function speakBrowserPlaylist(lines, opts) {
         playlist.push({ kind: "speech", text, lineIndex: i });
       }
       if (i < lines.length - 1 && itemDelayMs > 0) {
-        appendPauseToLastSpeech(playlist, itemDelayMs);
+        playlist.push({ kind: "pause", ms: itemDelayMs });
       }
     }
   }
 
-  const speechEntries = playlist.filter((e) => e.kind === "speech");
-  if (!speechEntries.length) return Promise.resolve(true);
+  const speakEntries = playlist.filter(
+    (e) => e.kind === "speech" || e.kind === "pause"
+  );
+  if (!playlist.some((e) => e.kind === "speech")) {
+    return Promise.resolve(true);
+  }
 
   return new Promise((resolve) => {
     if (!stillThis()) {
@@ -1054,8 +1209,8 @@ function speakBrowserPlaylist(lines, opts) {
     }
 
     let settled = false;
-    let speechEnded = 0;
-    const speechTotal = speechEntries.length;
+    let ended = 0;
+    const endTotal = speakEntries.length;
     const finish = (ok) => {
       if (settled) return;
       settled = true;
@@ -1064,10 +1219,13 @@ function speakBrowserPlaylist(lines, opts) {
       resolve(Boolean(ok) && stillThis());
     };
 
-    const totalChars = speechEntries.reduce(
-      (n, e) => n + String(e.text || "").length,
-      0
-    );
+    const totalChars = playlist.reduce((n, e) => {
+      if (e.kind === "speech") return n + String(e.text || "").length;
+      if (e.kind === "pause") {
+        return n + Math.max(3, Math.round((e.ms * 0.5) / 70));
+      }
+      return n;
+    }, 0);
     const pauseBudget =
       Math.max(0, loops - 1) * loopPadMs +
       Math.max(0, lines.length - 1) * itemDelayMs * loops;
@@ -1100,6 +1258,11 @@ function speakBrowserPlaylist(lines, opts) {
 
     let pendingLoop = null;
 
+    const markEnded = () => {
+      ended += 1;
+      if (ended >= endTotal) finish(true);
+    };
+
     for (const entry of playlist) {
       if (!stillThis()) {
         finish(false);
@@ -1108,6 +1271,22 @@ function speakBrowserPlaylist(lines, opts) {
 
       if (entry.kind === "loop") {
         pendingLoop = entry;
+        continue;
+      }
+
+      if (entry.kind === "pause") {
+        const utter = pauseUtterance(entry.ms, voice, rate);
+        if (!utter) {
+          markEnded();
+          continue;
+        }
+        utter.onend = markEnded;
+        utter.onerror = markEnded;
+        try {
+          synth.speak(utter);
+        } catch {
+          markEnded();
+        }
         continue;
       }
 
@@ -1126,10 +1305,7 @@ function speakBrowserPlaylist(lines, opts) {
         }
         onStartLine?.(lineIndex);
       };
-      utter.onend = () => {
-        speechEnded += 1;
-        if (speechEnded >= speechTotal) finish(true);
-      };
+      utter.onend = markEnded;
       utter.onerror = (event) => {
         const err = event.error || "";
         if (
@@ -1141,15 +1317,12 @@ function speakBrowserPlaylist(lines, opts) {
           finish(false);
           return;
         }
-        // Count failed chunk so a single glitch doesn't hang the playlist.
-        speechEnded += 1;
-        if (speechEnded >= speechTotal) finish(true);
+        markEnded();
       };
       try {
         synth.speak(utter);
       } catch {
-        speechEnded += 1;
-        if (speechEnded >= speechTotal) finish(false);
+        markEnded();
       }
     }
 
@@ -1312,7 +1485,7 @@ export async function speakLines(lines, opts = {}) {
       if (loops > 1) {
         opts.onStatus?.(`Starting… (${loops} loops)`);
       }
-      await speakBrowserPlaylist(lines, {
+      await speakIOSLines(lines, {
         session,
         voice,
         rate,
@@ -1392,7 +1565,7 @@ export function voiceQualityTip(rankedVoices) {
       : "Natural voice requires a brief load time the first time you Listen, then it stays in this browser.";
   }
   if (isIOSWebKit()) {
-    return "On iPhone, turn the silent switch off and use the media volume buttons. Listen queues the full list so it can keep going after you lock the screen; the highlight still tracks each item. If Brave stays quiet, try Safari.";
+    return "On iPhone, turn the silent switch off and use the media volume buttons. Between-items pauses use a real timer while the screen is on; if you lock mid-listen, the rest of the list is queued so it can keep going. If Brave stays quiet, try Safari.";
   }
   const best = rankedVoices[0];
   if (!best) {
