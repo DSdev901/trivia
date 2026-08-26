@@ -2,10 +2,13 @@
 
 import {
   getDefaultBrowserVoiceUri,
+  getSavedItemDelay,
   getSavedRate,
   getSavedVoiceUri,
+  itemDelayOptionsHtml,
   listEnglishVoices,
   prepareSpokenLine,
+  saveItemDelay,
   saveRate,
   saveVoiceUri,
   speakLines,
@@ -753,6 +756,7 @@ function speechPanelHtml() {
   }
   const savedRate = getSavedRate();
   const savedUri = getSavedVoiceUri();
+  const savedItemDelay = getSavedItemDelay();
   const tabLabel =
     ce.mode === "netflix"
       ? "Netflix"
@@ -799,6 +803,10 @@ function speechPanelHtml() {
             <option value="0.9" ${savedRate === 0.9 ? "selected" : ""}>Natural</option>
             <option value="1" ${savedRate === 1 ? "selected" : ""}>Faster</option>
           </select>
+        </label>
+        <label class="voice-field">
+          <span>Between items</span>
+          <select id="ce-item-delay-select">${itemDelayOptionsHtml(savedItemDelay)}</select>
         </label>
       </div>
       <p class="speech-status" id="ce-speech-status">${escapeHtml(
@@ -993,6 +1001,9 @@ async function playItems(indices) {
     await speakLines(lines, {
       voiceUri: document.getElementById("ce-voice-select")?.value || getSavedVoiceUri(),
       rate: Number(document.getElementById("ce-rate-select")?.value || getSavedRate()),
+      itemDelaySec: Number(
+        document.getElementById("ce-item-delay-select")?.value ?? getSavedItemDelay()
+      ),
       onStartLine: (lineIndex) => highlightCard(indices[lineIndex]),
       onStatus: (msg) => {
         const status = statusEl();
@@ -1032,6 +1043,9 @@ function bindSpeechControls() {
   });
   document.getElementById("ce-rate-select")?.addEventListener("change", (e) => {
     saveRate(Number(e.target.value));
+  });
+  document.getElementById("ce-item-delay-select")?.addEventListener("change", (e) => {
+    saveItemDelay(Number(e.target.value));
   });
 }
 

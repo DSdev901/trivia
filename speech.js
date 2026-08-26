@@ -10,9 +10,14 @@ import {
 const VOICE_KEY = "trivia-helper-voice-uri";
 const RATE_KEY = "trivia-helper-voice-rate";
 const LOOP_KEY = "trivia-helper-fact-loops";
+const ITEM_DELAY_KEY = "trivia-helper-item-delay-sec";
 const DANIEL_DEFAULT_FLAG = "trivia-helper-default-daniel-v1";
 export const ON_DEVICE_VOICE_URI = "on-device";
 export { NATURAL_VOICE_URI };
+
+/** Half-second steps from 0–5s; default pause between list items. */
+export const ITEM_DELAY_STEPS = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5];
+export const DEFAULT_ITEM_DELAY_SEC = 1.5;
 
 let voicesReady = null;
 let cachedVoices = [];
@@ -160,6 +165,51 @@ export function saveLoops(loops) {
   } catch {
     /* ignore */
   }
+}
+
+function snapItemDelaySec(sec) {
+  const n = Number(sec);
+  if (!Number.isFinite(n)) return DEFAULT_ITEM_DELAY_SEC;
+  const clamped = Math.max(0, Math.min(5, n));
+  let best = ITEM_DELAY_STEPS[0];
+  let bestDist = Math.abs(clamped - best);
+  for (const step of ITEM_DELAY_STEPS) {
+    const dist = Math.abs(clamped - step);
+    if (dist < bestDist) {
+      best = step;
+      bestDist = dist;
+    }
+  }
+  return best;
+}
+
+/** Pause in seconds before the next list item (0–5, default 1.5). */
+export function getSavedItemDelay() {
+  try {
+    const raw = localStorage.getItem(ITEM_DELAY_KEY);
+    if (raw == null || raw === "") return DEFAULT_ITEM_DELAY_SEC;
+    return snapItemDelaySec(raw);
+  } catch {
+    /* ignore */
+  }
+  return DEFAULT_ITEM_DELAY_SEC;
+}
+
+export function saveItemDelay(sec) {
+  try {
+    localStorage.setItem(ITEM_DELAY_KEY, String(snapItemDelaySec(sec)));
+  } catch {
+    /* ignore */
+  }
+}
+
+export function itemDelayOptionsHtml(selectedSec = getSavedItemDelay()) {
+  const selected = snapItemDelaySec(selectedSec);
+  return ITEM_DELAY_STEPS.map((sec) => {
+    const label =
+      sec === DEFAULT_ITEM_DELAY_SEC ? `${sec} s (default)` : `${sec} s`;
+    return `<option value="${sec}" ${sec === selected ? "selected" : ""}>${label}</option>`;
+  }).join("");
 }
 
 function findDaniel(ranked) {
@@ -1012,7 +1062,7 @@ function speakUtterance(text, voice, rate, session, { allowVoice = true, triedFa
 /**
  * Speak one or more lines with natural chunking/pauses.
  * @param {string[]} lines
- * @param {{ rate?: number, voiceUri?: string, loops?: number, loopPadMs?: number, onStartLine?: (i:number)=>void, onLoopStart?: (loop:number, total:number)=>void, onStatus?: (msg:string)=>void, onEnd?: ()=>void }} [opts]
+ * @param {{ rate?: number, voiceUri?: string, loops?: number, loopPadMs?: number, itemDelayMs?: number, itemDelaySec?: number, onStartLine?: (i:number)=>void, onLoopStart?: (loop:number, total:number)=>void, onStatus?: (msg:string)=>void, onEnd?: ()=>void }} [opts]
  */
 export async function speakLines(lines, opts = {}) {
   if (!speechSupported()) {
@@ -1039,6 +1089,13 @@ export async function speakLines(lines, opts = {}) {
   const rate = opts.rate ?? getSavedRate();
   const loops = Math.max(1, Math.min(20, Number(opts.loops) || 1));
   const loopPadMs = opts.loopPadMs ?? 7000;
+  const itemDelayMs =
+    opts.itemDelayMs ??
+    Math.round(
+      snapItemDelaySec(
+        opts.itemDelaySec ?? getSavedItemDelay()
+      ) * 1000
+    );
   const stillThis = () => session === browserSpeakSession;
 
   if (!usingNatural && window.speechSynthesis.paused) window.speechSynthesis.resume();
@@ -1098,11 +1155,8 @@ export async function speakLines(lines, opts = {}) {
           }
         }
         if (!stillThis()) break;
-        if (i < lines.length - 1) {
-          const backgrounded =
-            typeof document !== "undefined" && document.visibilityState === "hidden";
-          const gap = backgrounded ? 60 : 320;
-          const ok = await wait(gap, session);
+        if (i < lines.length - 1 && itemDelayMs > 0) {
+          const ok = await wait(itemDelayMs, session);
           if (!ok) break;
         }
       }

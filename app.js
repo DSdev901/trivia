@@ -23,12 +23,15 @@ import {
 import { isLocalHost } from "./env.js";
 import {
   getDefaultBrowserVoiceUri,
+  getSavedItemDelay,
   getSavedLoops,
   getSavedRate,
   getSavedVoiceUri,
   isUsableVoiceUri,
+  itemDelayOptionsHtml,
   listEnglishVoices,
   prepareSpokenLine,
+  saveItemDelay,
   saveLoops,
   saveRate,
   saveVoiceUri,
@@ -742,6 +745,7 @@ async function getSpeechChrome() {
     selectedUri,
     savedRate: getSavedRate(),
     savedLoops: getSavedLoops(),
+    savedItemDelay: getSavedItemDelay(),
     tip: canSpeak
       ? voiceQualityTip(rankedVoices)
       : "Read-aloud needs a Chromium browser with sound allowed (Brave/Chrome/Edge).",
@@ -749,7 +753,15 @@ async function getSpeechChrome() {
 }
 
 function speechPanelHtml(foldId, lede, chrome) {
-  const { rankedVoices, selectedUri, savedRate, savedLoops, canSpeak, tip } = chrome;
+  const {
+    rankedVoices,
+    selectedUri,
+    savedRate,
+    savedLoops,
+    savedItemDelay,
+    canSpeak,
+    tip,
+  } = chrome;
   const loopOptions = Array.from({ length: 10 }, (_, i) => {
     const n = i + 1;
     return `<option value="${n}" ${savedLoops === n ? "selected" : ""}>${n}${
@@ -795,6 +807,10 @@ function speechPanelHtml(foldId, lede, chrome) {
               <span>Loops</span>
               <select id="loop-select">${loopOptions}</select>
             </label>
+            <label class="voice-field">
+              <span>Between items</span>
+              <select id="item-delay-select">${itemDelayOptionsHtml(savedItemDelay)}</select>
+            </label>
             </div>
             <p class="speech-status" id="speech-status">${escapeHtml(tip)}</p>
           </div>
@@ -802,12 +818,14 @@ function speechPanelHtml(foldId, lede, chrome) {
 }
 
 function bindSpeechPanel(root, chrome, { getLines, highlight }) {
-  const { canSpeak, selectedUri, savedRate, savedLoops, tip } = chrome;
+  const { canSpeak, selectedUri, savedRate, savedLoops, savedItemDelay, tip } =
+    chrome;
   const statusEl = root.querySelector("#speech-status");
   const stopBtn = root.querySelector("#stop-speech");
   const voiceSelect = root.querySelector("#voice-select");
   const rateSelect = root.querySelector("#rate-select");
   const loopSelect = root.querySelector("#loop-select");
+  const itemDelaySelect = root.querySelector("#item-delay-select");
   const listenBtn = root.querySelector("#listen-all");
   const speechPanel = root.querySelector(".speech-panel");
 
@@ -843,6 +861,7 @@ function bindSpeechPanel(root, chrome, { getLines, highlight }) {
     }
     const lines = getLines().map((line) => prepareSpokenLine(line));
     const loops = Number(loopSelect?.value || savedLoops) || 1;
+    const itemDelaySec = Number(itemDelaySelect?.value ?? savedItemDelay);
     setSpeakingUI(true, loops > 1 ? `Starting… (${loops} loops)` : "Starting…");
     try {
       await speakLines(lines, {
@@ -850,6 +869,7 @@ function bindSpeechPanel(root, chrome, { getLines, highlight }) {
         rate: Number(rateSelect?.value || savedRate),
         loops,
         loopPadMs: 7000,
+        itemDelaySec,
         onStartLine: (lineIndex) => highlight?.(lineIndex),
         onStatus: (msg) => {
           if (statusEl) statusEl.textContent = msg;
@@ -872,6 +892,9 @@ function bindSpeechPanel(root, chrome, { getLines, highlight }) {
   });
   loopSelect?.addEventListener("change", () => {
     saveLoops(Number(loopSelect.value));
+  });
+  itemDelaySelect?.addEventListener("change", () => {
+    saveItemDelay(Number(itemDelaySelect.value));
   });
   listenBtn?.addEventListener("click", () => {
     unlockSpeech();
@@ -1083,6 +1106,7 @@ async function renderPresidentDetail() {
   if (!savedUri && selectedUri) saveVoiceUri(selectedUri);
   const savedRate = getSavedRate();
   const savedLoops = getSavedLoops();
+  const savedItemDelay = getSavedItemDelay();
   const tip = canSpeak
     ? voiceQualityTip(rankedVoices)
     : "Read-aloud needs a Chromium browser with sound allowed (Brave/Chrome/Edge).";
@@ -1145,6 +1169,10 @@ async function renderPresidentDetail() {
               <span>Loops</span>
               <select id="loop-select">${loopOptions}</select>
             </label>
+            <label class="voice-field">
+              <span>Between items</span>
+              <select id="item-delay-select">${itemDelayOptionsHtml(savedItemDelay)}</select>
+            </label>
             </div>
             <p class="speech-status" id="speech-status">${escapeHtml(tip)}</p>
           </div>
@@ -1181,6 +1209,7 @@ async function renderPresidentDetail() {
   const voiceSelect = document.getElementById("voice-select");
   const rateSelect = document.getElementById("rate-select");
   const loopSelect = document.getElementById("loop-select");
+  const itemDelaySelect = document.getElementById("item-delay-select");
 
   function currentTip() {
     return canSpeak
@@ -1230,6 +1259,7 @@ async function renderPresidentDetail() {
       prepareSpokenLine(toConversationalSpeech(president, president.trivia[i], i + 1))
     );
     const loops = Number(loopSelect?.value || savedLoops) || 1;
+    const itemDelaySec = Number(itemDelaySelect?.value ?? savedItemDelay);
     setSpeakingUI(true, loops > 1 ? `Starting… (${loops} loops)` : "Starting…");
     try {
       await speakLines(lines, {
@@ -1237,6 +1267,7 @@ async function renderPresidentDetail() {
         rate: Number(rateSelect?.value || savedRate),
         loops,
         loopPadMs: 7000,
+        itemDelaySec,
         onStartLine: (lineIndex) => highlightFact(indices[lineIndex]),
         onStatus: (msg) => {
           if (statusEl) statusEl.textContent = msg;
@@ -1261,6 +1292,10 @@ async function renderPresidentDetail() {
 
   loopSelect?.addEventListener("change", () => {
     saveLoops(Number(loopSelect.value));
+  });
+
+  itemDelaySelect?.addEventListener("change", () => {
+    saveItemDelay(Number(itemDelaySelect.value));
   });
 
   listenBtn?.addEventListener("click", () => {

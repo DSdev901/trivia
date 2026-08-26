@@ -1,11 +1,14 @@
 /** Interactive periodic table with trivia facts and spoken tours. */
 
 import {
+  getSavedItemDelay,
   getSavedLoops,
   getSavedRate,
   getSavedVoiceUri,
+  itemDelayOptionsHtml,
   listEnglishVoices,
   prepareSpokenLine,
+  saveItemDelay,
   saveLoops,
   saveRate,
   saveVoiceUri,
@@ -308,6 +311,11 @@ async function speakTour() {
     )
   );
   const loopPadMs = 7000;
+  const itemDelayMs = Math.round(
+    Number(
+      pt.root?.querySelector("#pt-item-delay-select")?.value ?? getSavedItemDelay()
+    ) * 1000
+  );
   setStatus(
     loops > 1
       ? `Touring ${scopeLabel()} (${list.length}) · ${loops} loops…`
@@ -341,6 +349,7 @@ async function speakTour() {
         speakLines(spokenScript(el), {
           voiceUri: getSavedVoiceUri(),
           rate: getSavedRate(),
+          itemDelaySec: 0,
           onStatus: setStatus,
           onEnd: () => resolve(),
         }).catch((err) => {
@@ -350,7 +359,9 @@ async function speakTour() {
         });
       });
       if (!pt.playing || session !== pt.tourSession) break;
-      await new Promise((r) => setTimeout(r, 450));
+      if (i < list.length - 1 && itemDelayMs > 0) {
+        await new Promise((r) => setTimeout(r, itemDelayMs));
+      }
     }
   }
 
@@ -480,6 +491,7 @@ function speechPanelHtml() {
   const savedRate = getSavedRate();
   const savedUri = getSavedVoiceUri();
   const savedLoops = getSavedLoops();
+  const savedItemDelay = getSavedItemDelay();
   const savedFocus = getSavedListenFocus();
   const loopOptions = Array.from({ length: 10 }, (_, i) => {
     const n = i + 1;
@@ -525,6 +537,10 @@ function speechPanelHtml() {
         <label class="voice-field">
           <span>Loops</span>
           <select id="pt-loop-select">${loopOptions}</select>
+        </label>
+        <label class="voice-field">
+          <span>Between items</span>
+          <select id="pt-item-delay-select">${itemDelayOptionsHtml(savedItemDelay)}</select>
         </label>
         <label class="voice-field">
           <span>Focus</span>
@@ -640,6 +656,9 @@ function bind() {
   });
   pt.root.querySelector("#pt-loop-select")?.addEventListener("change", (e) => {
     saveLoops(Number(e.target.value));
+  });
+  pt.root.querySelector("#pt-item-delay-select")?.addEventListener("change", (e) => {
+    saveItemDelay(Number(e.target.value));
   });
   pt.root.querySelector("#pt-focus-select")?.addEventListener("change", (e) => {
     saveListenFocus(e.target.value);
