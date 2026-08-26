@@ -987,13 +987,24 @@ function configureUtterance(utter, voice, rate) {
   return utter;
 }
 
-function silenceUtterance(ms, voice, rate) {
+/** Breath after an item when the playlist is pre-queued (iOS can’t await between speaks). */
+function pauseSuffix(ms) {
   const pauseMs = Math.max(0, Math.round(Number(ms) || 0));
-  if (pauseMs <= 0) return null;
-  // Apple voices honor [[slnc N]]; other engines may read the markup aloud.
-  const utter = new SpeechSynthesisUtterance(`[[slnc ${pauseMs}]]`);
-  configureUtterance(utter, voice, rate);
-  return utter;
+  if (pauseMs <= 0) return "";
+  // Ellipsis tends to land as a pause; never use [[slnc N]] — Safari reads that aloud.
+  const beats = Math.min(12, Math.max(1, Math.round(pauseMs / 400)));
+  return ` ${"…".repeat(beats)}`;
+}
+
+function appendPauseToLastSpeech(playlist, ms) {
+  const suffix = pauseSuffix(ms);
+  if (!suffix) return;
+  for (let i = playlist.length - 1; i >= 0; i -= 1) {
+    if (playlist[i].kind === "speech") {
+      playlist[i].text = `${playlist[i].text}${suffix}`;
+      return;
+    }
+  }
 }
 
 /**
@@ -1015,11 +1026,11 @@ function speakBrowserPlaylist(lines, opts) {
   const synth = window.speechSynthesis;
   const stillThis = () => session === browserSpeakSession;
 
-  /** @type {{ kind: "speech"|"silence"|"loop", text?: string, lineIndex?: number, ms?: number, loop?: number, total?: number }[]} */
+  /** @type {{ kind: "speech"|"loop", text?: string, lineIndex?: number, loop?: number, total?: number }[]} */
   const playlist = [];
   for (let loop = 0; loop < loops; loop += 1) {
     if (loop > 0 && loopPadMs > 0) {
-      playlist.push({ kind: "silence", ms: loopPadMs });
+      appendPauseToLastSpeech(playlist, loopPadMs);
     }
     playlist.push({ kind: "loop", loop, total: loops });
     for (let i = 0; i < lines.length; i += 1) {
@@ -1028,7 +1039,7 @@ function speakBrowserPlaylist(lines, opts) {
         playlist.push({ kind: "speech", text, lineIndex: i });
       }
       if (i < lines.length - 1 && itemDelayMs > 0) {
-        playlist.push({ kind: "silence", ms: itemDelayMs });
+        appendPauseToLastSpeech(playlist, itemDelayMs);
       }
     }
   }
@@ -1097,20 +1108,6 @@ function speakBrowserPlaylist(lines, opts) {
 
       if (entry.kind === "loop") {
         pendingLoop = entry;
-        continue;
-      }
-
-      if (entry.kind === "silence") {
-        const utter = silenceUtterance(entry.ms, voice, rate);
-        if (!utter) continue;
-        utter.onerror = () => {
-          /* ignore pause failures */
-        };
-        try {
-          synth.speak(utter);
-        } catch {
-          /* ignore */
-        }
         continue;
       }
 
