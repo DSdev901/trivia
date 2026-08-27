@@ -4541,6 +4541,38 @@ a.ce-tab {
   color: var(--ink-soft);
 }
 
+.tr-fact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.tr-fact {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0.75rem;
+  align-items: start;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--stripe);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.tr-fact-n {
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.45;
+}
+
+.tr-fact p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
 .tr-grid {
   display: grid;
   gap: 0.9rem;

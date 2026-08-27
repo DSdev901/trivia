@@ -1,4 +1,4 @@
-/** Trending category — cliff notes for shows in the cultural air right now. */
+/** Trending category — cliff notes for what’s in the cultural air right now. */
 
 import { crumbsHtml, href } from "./routes.js";
 
@@ -126,7 +126,53 @@ function weeklyHtml(weekly) {
     </section>`;
 }
 
-function showHtml(show) {
+function factsHtml(topic) {
+  const facts = topic.facts || [];
+  return `
+    ${crumbsHtml(
+      [
+        { label: "Trending", href: href(["trending"]) },
+        {
+          label: topic.title,
+          href: href(["trending", topic.id]),
+        },
+      ],
+      escapeHtml
+    )}
+    <header class="tr-show-head">
+      <p class="tr-kicker">${escapeHtml(
+        topic.kicker || topic.network || "Trending"
+      )}</p>
+      <h2 class="section-title">${escapeHtml(topic.title)}</h2>
+      <p class="lede">${escapeHtml(topic.overview || "")}</p>
+      ${
+        topic.spoilerNote
+          ? `<p class="tr-spoiler">${escapeHtml(topic.spoilerNote)}</p>`
+          : ""
+      }
+    </header>
+    <section class="tr-section" aria-label="Trivia facts">
+      <h2 class="tr-section-title">${escapeHtml(
+        String(facts.length)
+      )} pub-trivia facts</h2>
+      <ol class="tr-fact-list">
+        ${facts
+          .map(
+            (f, i) => `
+          <li class="tr-fact">
+            <span class="tr-fact-n" aria-hidden="true">${escapeHtml(
+              String(f.n ?? i + 1)
+            )}</span>
+            <p>${escapeHtml(f.fact || "")}</p>
+          </li>`
+          )
+          .join("")}
+      </ol>
+    </section>
+  `;
+}
+
+function castShowHtml(show) {
   const blacks = (show.characters || []).filter((c) => c.faction === "blacks");
   const greens = (show.characters || []).filter((c) => c.faction === "greens");
   const other = (show.characters || []).filter(
@@ -169,12 +215,19 @@ function showHtml(show) {
   `;
 }
 
+function showHtml(show) {
+  if (show.type === "facts" || (show.facts && !show.characters)) {
+    return factsHtml(show);
+  }
+  return castShowHtml(show);
+}
+
 function indexHtml(index) {
   const shows = index.shows || [];
   return `
     ${crumbsHtml([{ label: "Trending", href: href(["trending"]) }], escapeHtml)}
     <h2 class="section-title">Trending</h2>
-    <p class="lede">Short cliff notes for shows people are actually talking about.</p>
+    <p class="lede">Short cliff notes for what people are actually talking about.</p>
     <div class="tr-show-list">
       ${shows
         .map(
@@ -182,7 +235,7 @@ function indexHtml(index) {
         <a class="tr-show-link" href="${href(["trending", s.id])}">
           <h3>${escapeHtml(s.title)}</h3>
           <p>${escapeHtml(s.blurb || "")}</p>
-          <span class="meta">${escapeHtml(s.network || "Show")}</span>
+          <span class="meta">${escapeHtml(s.network || "Topic")}</span>
         </a>`
         )
         .join("")}

@@ -222,7 +222,7 @@ function categoryKicker(category) {
     case "netflix":
       return "New originals from the last four weeks";
     case "trending":
-      return "House of the Dragon and more in the air";
+      return "Dolly Parton, House of the Dragon, and more in the air";
     case "prior-saucer":
       return "Questions from uploaded photos";
     case "presidents":
