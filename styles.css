@@ -4655,9 +4655,6 @@ a.ce-tab {
   border-radius: 10px;
   object-fit: cover;
   object-position: center center;
-  /* Mild lift for small thumbs; faces are pre-brightened in the JPGs */
-  filter: brightness(1.1) contrast(1.08) saturate(1.04);
-  background: #f0e6d4;
 }
 
 .tr-dragon-name {
