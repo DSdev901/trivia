@@ -4650,10 +4650,11 @@ a.ce-tab {
 }
 
 .tr-dragon .tr-portrait {
-  width: 4.25rem;
-  height: 4.25rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 10px;
-  object-position: center 30%;
+  object-fit: cover;
+  object-position: center 25%;
 }
 
 .tr-dragon-name {
