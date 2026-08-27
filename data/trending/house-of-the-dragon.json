@@ -1,0 +1,231 @@
+{
+  "id": "house-of-the-dragon",
+  "title": "House of the Dragon",
+  "network": "HBO",
+  "tmdbId": 94997,
+  "updatedAt": "2026-08-27T12:33:18.715Z",
+  "overview": "King Viserys names his daughter Rhaenyra heir. After he dies, the court crowns her half-brother Aegon instead. The realm splits into Blacks and Greens, and the Dance of the Dragons begins — a family war fought with the last great dragons.",
+  "spoilerNote": "Spoilers through Season 3.",
+  "factions": [
+    {
+      "id": "blacks",
+      "label": "The Blacks",
+      "note": "Rhaenyra’s claim"
+    },
+    {
+      "id": "greens",
+      "label": "The Greens",
+      "note": "Aegon’s claim"
+    }
+  ],
+  "characters": [
+    {
+      "id": "rhaenyra",
+      "name": "Rhaenyra Targaryen",
+      "faction": "blacks",
+      "role": "Queen of the Blacks",
+      "tmdbPersonId": 2121005,
+      "image": "data/trending/posters/rhaenyra-eea0444a75.jpg",
+      "plot": "Named heir, then usurped. Leads the war for the Iron Throne from Dragonstone.",
+      "dragon": {
+        "name": "Syrax",
+        "note": "Her golden she-dragon; often kept close to home.",
+        "image": ""
+      }
+    },
+    {
+      "id": "daemon",
+      "name": "Daemon Targaryen",
+      "faction": "blacks",
+      "role": "Rhaenyra’s consort",
+      "tmdbPersonId": 136532,
+      "image": "data/trending/posters/daemon-c12737fc32.jpg",
+      "plot": "Warrior-prince, unpredictable ally. Presses the war hard and rarely asks permission.",
+      "dragon": {
+        "name": "Caraxes",
+        "note": "The Blood Wyrm — long, lean, and built for a fight.",
+        "image": ""
+      }
+    },
+    {
+      "id": "jacaerys",
+      "name": "Jacaerys Velaryon",
+      "faction": "blacks",
+      "role": "Rhaenyra’s eldest son",
+      "tmdbPersonId": 1789952,
+      "image": "data/trending/posters/jacaerys-87ca78b590.jpg",
+      "plot": "Heir apparent on her side. Brokers alliances and bears the weight of disputed parentage.",
+      "dragon": {
+        "name": "Vermax",
+        "note": "Younger dragon; grows into the war with him.",
+        "image": ""
+      }
+    },
+    {
+      "id": "baela",
+      "name": "Baela Targaryen",
+      "faction": "blacks",
+      "role": "Daemon’s daughter",
+      "tmdbPersonId": 1881108,
+      "image": "data/trending/posters/baela-0f5a8f68cb.jpg",
+      "plot": "Fierce and forward. Carries Velaryon and Targaryen blood into every fight she can reach.",
+      "dragon": {
+        "name": "Moondancer",
+        "note": "Small, quick, and deadly in a scrap.",
+        "image": ""
+      }
+    },
+    {
+      "id": "addam",
+      "name": "Addam of Hull",
+      "faction": "blacks",
+      "role": "Dragonseed rider",
+      "tmdbPersonId": 2485308,
+      "image": "data/trending/posters/addam-fda3e2d725.jpg",
+      "plot": "A shipyard bastard who claims a riderless dragon — and Corlys’s trust.",
+      "dragon": {
+        "name": "Seasmoke",
+        "note": "Once Laenor’s; chooses Addam in the war.",
+        "image": ""
+      }
+    },
+    {
+      "id": "corlys",
+      "name": "Corlys Velaryon",
+      "faction": "blacks",
+      "role": "Lord of the Tides",
+      "tmdbPersonId": 55412,
+      "image": "data/trending/posters/corlys-ace43bbe4a.jpg",
+      "plot": "Sea power and pragmatic loyalty. The Blacks’ fleet often hinges on him.",
+      "dragon": null
+    },
+    {
+      "id": "alicent",
+      "name": "Alicent Hightower",
+      "faction": "greens",
+      "role": "Dowager queen",
+      "tmdbPersonId": 1173984,
+      "image": "data/trending/posters/alicent-9bf4ba2ad2.jpg",
+      "plot": "Raised beside Rhaenyra, then locked into crowning her own son. Conscience and politics keep colliding.",
+      "dragon": null
+    },
+    {
+      "id": "aegon-ii",
+      "name": "Aegon II Targaryen",
+      "faction": "greens",
+      "role": "King on the Iron Throne",
+      "tmdbPersonId": 1765227,
+      "image": "data/trending/posters/aegon-ii-1c4ffab309.jpg",
+      "plot": "Reluctant crown, real consequences. The Greens’ answer to Rhaenyra’s claim.",
+      "dragon": {
+        "name": "Sunfyre",
+        "note": "Gorgeous and vicious — a king’s dragon in gold.",
+        "image": ""
+      }
+    },
+    {
+      "id": "aemond",
+      "name": "Aemond Targaryen",
+      "faction": "greens",
+      "role": "One-eyed prince",
+      "tmdbPersonId": 1829122,
+      "image": "data/trending/posters/aemond-2caae272a2.jpg",
+      "plot": "Claims the largest living dragon and turns every slight into a campaign.",
+      "dragon": {
+        "name": "Vhagar",
+        "note": "Oldest and largest — a living siege engine.",
+        "image": ""
+      }
+    },
+    {
+      "id": "helaena",
+      "name": "Helaena Targaryen",
+      "faction": "greens",
+      "role": "Queen / dreamer",
+      "tmdbPersonId": 3594113,
+      "image": "data/trending/posters/helaena-734e0c76d3.jpg",
+      "plot": "Speaks in riddles that keep coming true. The war breaks her gently, then all at once.",
+      "dragon": {
+        "name": "Dreamfyre",
+        "note": "Pale and ancient; more omen than weapon in her hands.",
+        "image": ""
+      }
+    },
+    {
+      "id": "otto",
+      "name": "Otto Hightower",
+      "faction": "greens",
+      "role": "Hand of the King",
+      "tmdbPersonId": 7026,
+      "image": "data/trending/posters/otto-c687fd861a.jpg",
+      "plot": "Architect of the Green coup. Plays the long game until the board catches fire.",
+      "dragon": null
+    },
+    {
+      "id": "criston",
+      "name": "Criston Cole",
+      "faction": "greens",
+      "role": "Lord Commander",
+      "tmdbPersonId": 2583704,
+      "image": "data/trending/posters/criston-7d63899c7c.jpg",
+      "plot": "From Rhaenyra’s sworn shield to the Greens’ sharpest edge on the ground.",
+      "dragon": null
+    }
+  ],
+  "weekly": {
+    "active": false,
+    "season": 3,
+    "status": "Season 3 finished airing August 2026. Weekly recaps pause until Season 4.",
+    "updatedAt": "2026-08-27T12:00:00.000Z",
+    "episodes": [
+      {
+        "n": 1,
+        "title": "Salt and Sea, Fire and Blood",
+        "aired": "2026-06-21",
+        "recap": "The season opens with the war already ugly. Old alliances strain, and both courts stop pretending this stays contained."
+      },
+      {
+        "n": 2,
+        "title": "Queen's Landing",
+        "aired": "2026-06-28",
+        "recap": "Power in King’s Landing gets personal. Crowns, councils, and quiet knives decide who still has a seat."
+      },
+      {
+        "n": 3,
+        "title": "Rhaenyra Triumphant",
+        "aired": "2026-07-05",
+        "recap": "The Blacks take a swing that lands. Momentum shifts — and so does who feels safe on dragonback."
+      },
+      {
+        "n": 4,
+        "title": "Tumbleton",
+        "aired": "2026-07-12",
+        "recap": "A town becomes a warning. Dragonseed politics and battlefield chaos rewrite who can be trusted."
+      },
+      {
+        "n": 5,
+        "title": "Unbowed and Unbent",
+        "aired": "2026-07-19",
+        "recap": "Houses dig in. Negotiations fail the way they always do in this war — loudly, then with fire."
+      },
+      {
+        "n": 6,
+        "title": "Faceless Men",
+        "aired": "2026-07-26",
+        "recap": "Masks, missions, and unpaid debts. The fight leaves the open sky for darker corridors."
+      },
+      {
+        "n": 7,
+        "title": "The Dragon in Winter",
+        "aired": "2026-08-02",
+        "recap": "Cold choices. A dragon’s shadow falls on whatever hope either side still called mercy."
+      },
+      {
+        "n": 8,
+        "title": "Season Finale",
+        "aired": "2026-08-09",
+        "recap": "Season 3 closes the middle of the Dance. Lines are drawn for the next war — and fewer riders are left to cross them."
+      }
+    ]
+  }
+}

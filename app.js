@@ -46,6 +46,7 @@ import {
   voiceSelectOptionsHtml,
 } from "./speech.js";
 import { renderCurrentEvents } from "./current-events.js";
+import { renderTrending } from "./trending.js";
 import {
   cleanupPeriodicTable,
   renderPeriodicTable,
@@ -77,6 +78,7 @@ const els = {
   quizDone: document.getElementById("view-quiz-done"),
   flags: document.getElementById("view-flags"),
   currentEvents: document.getElementById("view-current-events"),
+  trending: document.getElementById("view-trending"),
   periodicTable: document.getElementById("view-periodic-table"),
   geography: document.getElementById("view-geography"),
   captured: document.getElementById("view-captured"),
@@ -93,6 +95,7 @@ const VIEWS = [
   "quizDone",
   "flags",
   "currentEvents",
+  "trending",
   "periodicTable",
   "geography",
   "captured",
@@ -194,6 +197,9 @@ function categoryMetaLabel(category) {
   if (category?.type === "netflix") {
     return "shows · movies";
   }
+  if (category?.type === "trending") {
+    return "cliff notes · weekly";
+  }
   if (category?.type === "periodic-table") {
     return "118 elements · tours & quiz";
   }
@@ -215,6 +221,8 @@ function categoryKicker(category) {
       return "Sports, entertainment, and world stories";
     case "netflix":
       return "New originals from the last four weeks";
+    case "trending":
+      return "House of the Dragon and more in the air";
     case "prior-saucer":
       return "Questions from uploaded photos";
     case "presidents":
@@ -252,6 +260,8 @@ function categoryMarkHtml(category) {
       '<rect x="4" y="5" width="16" height="14" rx="1.5"/><path d="M7.5 9h5M7.5 12h9M7.5 15h7"/>',
     netflix:
       '<rect x="4" y="5" width="16" height="14" rx="2.2"/><path d="M10 8.4v7.2L16.5 12z"/>',
+    trending:
+      '<path d="M5 16.5 9.2 10l3.2 3.4L19 6.5"/><path d="M14.5 6.5H19v4.5"/>',
     "prior-saucer":
       '<path d="M8.2 8.4h1.8l.7-1.3h2.6l.7 1.3h1.8A2 2 0 0 1 17.8 10.4v5.1a2 2 0 0 1-2 2H8.2a2 2 0 0 1-2-2v-5.1a2 2 0 0 1 2-2z"/><circle cx="12" cy="12.8" r="2.2"/>',
     presidents:
@@ -1807,6 +1817,13 @@ async function applyRoute() {
     await renderCurrentEvents({ els, mode: "netflix" });
     if (seq !== routeSeq) return;
     setPageTitle([category.name]);
+    return;
+  }
+  if (category.type === "trending") {
+    show("trending");
+    await renderTrending({ els, showId: rest[0] || "" });
+    if (seq !== routeSeq) return;
+    setPageTitle([category.name, rest[0]].filter(Boolean));
     return;
   }
   if (category.type === "periodic-table") {

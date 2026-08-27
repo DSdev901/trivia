@@ -1,6 +1,7 @@
 name: Refresh Current Events
 
 # Keeps Netflix and the Tuesday sports/entertainment/world briefing current.
+# Also refreshes House of the Dragon weekly cliff notes while a season airs.
 # Sports, entertainment, and world headlines still update every 3 hours via
 # the cache-espn-headlines, cache-entertainment, and cache-world workflows.
 # Runs on a schedule in UTC; can also be triggered by hand from the
@@ -46,6 +47,11 @@ jobs:
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: node scripts/refresh-current-events.mjs
+
+      - name: Refresh House of the Dragon weekly cliff notes
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: node scripts/refresh-trending-hotd.mjs
 
       # COPILOT_BILLING_TOKEN is optional. Remaining credits are read from
       # Copilot's quota API when possible. Skip Haiku only when remaining is
@@ -93,4 +99,4 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          bash scripts/git-push-current-events.sh "Refresh current events data"
+          bash scripts/git-push-current-events.sh "Refresh current events data" data/current-events/ data/trending/

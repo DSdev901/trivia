@@ -7,7 +7,7 @@ msg=${1:?commit message}
 shift
 
 if [ "$#" -eq 0 ]; then
-  git add data/current-events/
+  git add data/current-events/ data/trending/
 else
   git add "$@"
 fi
@@ -24,9 +24,14 @@ git config pull.rebase false
 for attempt in 1 2 3 4 5; do
   echo "Syncing main before push (attempt ${attempt})..."
   if ! git pull --no-rebase --no-edit origin main; then
-    echo "Merge conflict — keeping this job's current-events files."
-    git checkout --ours -- data/current-events/ || true
-    git add data/current-events/
+    echo "Merge conflict — keeping this job's data files."
+    if [ "$#" -eq 0 ]; then
+      git checkout --ours -- data/current-events/ data/trending/ || true
+      git add data/current-events/ data/trending/
+    else
+      git checkout --ours -- "$@" || true
+      git add "$@"
+    fi
     git commit --no-edit || true
   fi
   if git push origin HEAD; then
