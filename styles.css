@@ -659,7 +659,8 @@ body.is-home .brand-eye-glint::after {
   margin: 0 auto;
 }
 
-.home-menu .category-card--feature {
+.home-menu .category-card--feature,
+.home-menu .category-card--orphan {
   position: relative;
   grid-column: 1 / -1;
 }
@@ -4649,9 +4650,10 @@ a.ce-tab {
 }
 
 .tr-dragon .tr-portrait {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 4.25rem;
+  height: 4.25rem;
   border-radius: 10px;
+  object-position: center 30%;
 }
 
 .tr-dragon-name {

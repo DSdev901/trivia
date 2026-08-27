@@ -518,13 +518,25 @@ function bindHomeTickerDrag() {
 
 function renderCategories(categories, stamps) {
   const fresh = isSameLocalDay(stamps?.briefing?.generatedAt);
+  // First card is full-width; with a 2-col home grid, an odd leftover after that
+  // would sit alone in the last row — span it like the feature card.
+  const orphanIndex =
+    categories.length > 1 && (categories.length - 1) % 2 === 1
+      ? categories.length - 1
+      : -1;
   els.categories.innerHTML = `
     ${homeTickerHtml()}
     <div class="home-menu">
       ${categories
         .map(
           (c, i) => `
-        <a class="category-card${i === 0 ? " category-card--feature" : ""}${
+        <a class="category-card${
+            i === 0
+              ? " category-card--feature"
+              : i === orphanIndex
+                ? " category-card--orphan"
+                : ""
+          }${
             c.id === "current-events" && fresh ? " category-card--fresh" : ""
           }" href="${href([c.id])}">
           ${categoryMarkHtml(c)}
