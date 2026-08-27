@@ -4654,7 +4654,7 @@ a.ce-tab {
   height: 5rem;
   border-radius: 10px;
   object-fit: cover;
-  object-position: center 25%;
+  object-position: center center;
 }
 
 .tr-dragon-name {
