@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-28T03:24:34.178Z",
+  "generatedAt": "2026-08-28T09:27:54.171Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-07T03:24:34.178Z",
-  "windowEnd": "2026-08-28T03:24:34.178Z",
+  "windowStart": "2026-08-07T09:27:54.171Z",
+  "windowEnd": "2026-08-28T09:27:54.171Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,481 @@
     "Tennis",
     "MMA"
   ],
-  "count": 2817,
+  "count": 2874,
   "items": [
+    {
+      "key": "49744909",
+      "id": "49744909",
+      "headline": "Champions League draw becomes UEFA's latest stand against FIFA president Infantino",
+      "summary": "Thursday saw the UEFA Champions League draw take place in Monaco, but the big news beyond the pots involved Europe taking their battle with FIFA president Gianni Infantino into criminal court.",
+      "url": "https://www.espn.com/soccer/story/_/id/49744909/uefa-fifa-world-cup-champions-league-gianni-infantino-lawsuits-gab-marcotti",
+      "sport": "Soccer",
+      "published": "2026-08-28T08:19:41.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49742465",
+      "id": "49742465",
+      "headline": "What Arsenal's Premier League title rivals still need in transfer window",
+      "summary": "Arsenal look as strong as ever, but the transfer window is still open. Here's how their title rivals can dethrone the reigning champs.",
+      "url": "https://www.espn.com/soccer/story/_/id/49742465/what-arsenal-premier-league-title-rivals-need-transfer-window-man-city-man-united-liverpool-chelsea",
+      "sport": "Soccer",
+      "published": "2026-08-28T08:19:23.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 3
+    },
+    {
+      "key": "48833505",
+      "id": "48833505",
+      "headline": "When does the 2026 summer transfer window open and close?",
+      "summary": "Find out when the 2026 summer transfer window will close in the Premier League, LaLiga, Serie A, Bundesliga and Ligue 1.",
+      "url": "https://www.espn.com/soccer/story/_/id/48833505/when-does-summer-transfer-window-close-premier-league-serie-laliga-bundesliga-ligue-1",
+      "sport": "Soccer",
+      "published": "2026-08-28T08:07:15.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49750272",
+      "id": "49750272",
+      "headline": "Transfer rumors, news: Liverpool still eyeing Sarr after Barcola deal agreed",
+      "summary": "Liverpool are still trying to sign Crystal Palace winger Ismaïla Sarr. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/49750272/transfer-rumors-news-liverpool-eyeing-sarr-barcola-deal-agreed",
+      "sport": "Soccer",
+      "published": "2026-08-28T08:04:59.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49750459",
+      "id": "49750459",
+      "headline": "Brewers take on the Rangers after Chourio's 4-hit game",
+      "summary": "Texas Rangers (66-68, second in the AL West) vs. Milwaukee Brewers (83-51, first in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816713",
+      "sport": "MLB",
+      "published": "2026-08-28T08:03:16.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49750458",
+      "id": "49750458",
+      "headline": "Dodgers aim to stop road skid, take on the Tigers",
+      "summary": "Los Angeles Dodgers (80-54, first in the NL West) vs. Detroit Tigers (62-71, fourth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816706",
+      "sport": "MLB",
+      "published": "2026-08-28T08:03:12.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49750457",
+      "id": "49750457",
+      "headline": "Angels aim to stop 4-game slide, play the Phillies",
+      "summary": "Philadelphia Phillies (74-60, second in the NL East) vs. Los Angeles Angels (52-82, fifth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816716",
+      "sport": "MLB",
+      "published": "2026-08-28T08:03:09.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49750456",
+      "id": "49750456",
+      "headline": "Twins host the White Sox on 3-game home win streak",
+      "summary": "Chicago White Sox (70-63, first in the AL Central) vs. Minnesota Twins (64-70, third in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816710",
+      "sport": "MLB",
+      "published": "2026-08-28T08:03:05.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49750455",
+      "id": "49750455",
+      "headline": "Braves begin 3-game series at home against the Rockies",
+      "summary": "Colorado Rockies (52-82, fifth in the NL West) vs. Atlanta Braves (79-55, first in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816703",
+      "sport": "MLB",
+      "published": "2026-08-28T08:03:01.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49750454",
+      "id": "49750454",
+      "headline": "Guardians host the Royals to start 3-game series",
+      "summary": "Kansas City Royals (60-75, fifth in the AL Central) vs. Cleveland Guardians (68-66, second in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816705",
+      "sport": "MLB",
+      "published": "2026-08-28T08:02:58.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49750453",
+      "id": "49750453",
+      "headline": "Yankees host the Red Sox to open 4-game series",
+      "summary": "Boston Red Sox (73-60, third in the AL East) vs. New York Yankees (75-58, second in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816702",
+      "sport": "MLB",
+      "published": "2026-08-28T08:02:54.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49750451",
+      "id": "49750451",
+      "headline": "Blue Jays open 3-game series against the Mariners",
+      "summary": "Seattle Mariners (64-70, third in the AL West) vs. Toronto Blue Jays (65-70, fifth in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816709",
+      "sport": "MLB",
+      "published": "2026-08-28T08:02:51.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49750450",
+      "id": "49750450",
+      "headline": "Mets host the Astros in first of 3-game series",
+      "summary": "Houston Astros (67-67, first in the AL West) vs. New York Mets (60-74, fifth in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816704",
+      "sport": "MLB",
+      "published": "2026-08-28T08:02:47.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49750449",
+      "id": "49750449",
+      "headline": "Cubs play the Reds in first of 3-game series",
+      "summary": "Cincinnati Reds (63-71, fifth in the NL Central) vs. Chicago Cubs (76-58, second in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816711",
+      "sport": "MLB",
+      "published": "2026-08-28T08:02:43.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49750448",
+      "id": "49750448",
+      "headline": "Cardinals start 3-game series at home against the Pirates",
+      "summary": "Pittsburgh Pirates (65-70, fourth in the NL Central) vs. St. Louis Cardinals (67-68, third in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816712",
+      "sport": "MLB",
+      "published": "2026-08-28T08:02:40.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49750447",
+      "id": "49750447",
+      "headline": "Padres visit the Rays to begin 3-game series",
+      "summary": "San Diego Padres (72-62, second in the NL West) vs. Tampa Bay Rays (79-54, first in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816708",
+      "sport": "MLB",
+      "published": "2026-08-28T08:02:36.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49750446",
+      "id": "49750446",
+      "headline": "Giants face the Diamondbacks leading series 1-0",
+      "summary": "Arizona Diamondbacks (71-64, third in the NL West) vs. San Francisco Giants (55-79, fourth in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816714",
+      "sport": "MLB",
+      "published": "2026-08-28T08:02:32.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49750445",
+      "id": "49750445",
+      "headline": "Nationals open 4-game series against the Marlins",
+      "summary": "Miami Marlins (68-66, third in the NL East) vs. Washington Nationals (63-73, fourth in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816707",
+      "sport": "MLB",
+      "published": "2026-08-28T08:02:29.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 14
+    },
+    {
+      "key": "48990955",
+      "id": "48990955",
+      "headline": "Summer transfer window: Grading big signings in men's soccer",
+      "summary": "The 2026 summer transfer window is open. Here is how we rated the biggest deals.",
+      "url": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
+      "sport": "Soccer",
+      "published": "2026-08-28T07:54:19.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49732248",
+      "id": "49732248",
+      "headline": "'That lifelong dream is done': USMNT's Richards puts World Cup heartbreak behind him",
+      "summary": "Playing in this World Cup was Chris Richards' lifelong dream, but its abrupt end gave him little time to grieve before returning to the Premier League.",
+      "url": "https://www.espn.com/soccer/story/_/id/49732248/that-lifelong-dream-done-usmnt-chris-richards-puts-world-cup-heartbreak-focus-palace-premier-league",
+      "sport": "Soccer",
+      "published": "2026-08-28T07:43:57.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49750040",
+      "id": "49750040",
+      "headline": "Rams' McVay: Atwell trade about depth, not possible Nacua ban",
+      "summary": "Rams coach Sean McVay said the team acquired Tutu Atwell to add depth to the receiver room and had \"nothing to do\" with a possible suspension for Puka Nacua.",
+      "url": "https://www.espn.com/nfl/story/_/id/49750040/atwell-trade-depth-not-possible-nacua-ban",
+      "sport": "NFL",
+      "published": "2026-08-28T07:11:05.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49742377",
+      "id": "49742377",
+      "headline": "10 Best: Ranking the top soccer players in the world right now",
+      "summary": "Who is the best soccer player in the world right now? ESPN's new ranking can tell you -- and some names might surprise you.",
+      "url": "https://www.espn.com/soccer/story/_/id/49742377/10-best-ranking-top-soccer-players-world-right-now",
+      "sport": "Soccer",
+      "published": "2026-08-28T06:57:52.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 4
+    },
+    {
+      "key": "48305211",
+      "id": "48305211",
+      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
+      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
+      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
+      "sport": "MLB",
+      "published": "2026-08-28T06:23:56.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49749940",
+      "id": "49749940",
+      "headline": "Kubiak mum on Raiders starter as Fernando Mendoza struggles",
+      "summary": "Raiders coach Klint Kubiak refused to name a regular-season starter after Thursday's preseason finale, although his utilization hints at Kirk Cousins getting the call in Week 1.",
+      "url": "https://www.espn.com/nfl/story/_/id/49749940/kubiak-mum-raiders-starter-fernando-mendoza-struggles",
+      "sport": "NFL",
+      "published": "2026-08-28T06:12:33.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49749533",
+      "id": "49749533",
+      "headline": "Browns' Monken noncommittal on 4-QB room as Gabriel shines",
+      "summary": "Todd Monken sidestepped a question about keeping four quarterbacks on the 53-man roster after Dillon Gabriel impressed in the preseason finale against the Patriots on Thursday night.",
+      "url": "https://www.espn.com/nfl/story/_/id/49749533/browns-monken-noncommittal-4-qb-room-gabriel-shines",
+      "sport": "NFL",
+      "published": "2026-08-28T05:53:40.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49749433",
+      "id": "49749433",
+      "headline": "George Lombard Jr. first Yankee with error in 6 straight games since 1921",
+      "summary": "Three weeks into his career, Yankees shortstop George Lombard Jr. set a dubious franchise mark by committing an error for the sixth straight game in Thursday night's 5-1 loss to the Houston Astros.",
+      "url": "https://www.espn.com/mlb/story/_/id/49749433/george-lombard-jr-first-yankee-error-6-straight-games-1921",
+      "sport": "MLB",
+      "published": "2026-08-28T05:53:35.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 17
+    },
+    {
+      "key": "49749704",
+      "id": "49749704",
+      "headline": "No starters, no problem: Ty Simpson’s 2nd-quarter TD sparks the Rams’ preseason sweep",
+      "summary": "— Ty Simpson threw a go-ahead touchdown in the second quarter, Harrison Mevis kicked two 27-yard field goals and the Los Angeles Rams beat the Los Angeles Chargers 20-18 on Thursday night in the teams' preseason finale.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873300",
+      "sport": "NFL",
+      "published": "2026-08-28T05:51:29.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49749680",
+      "id": "49749680",
+      "headline": "Los Angeles Rams vs. Los Angeles Chargers: Game Highlights",
+      "summary": "Los Angeles Rams vs. Los Angeles Chargers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49749680/game-highlights",
+      "sport": "NFL",
+      "published": "2026-08-28T05:08:22.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49749538",
+      "id": "49749538",
+      "headline": "Drew Gilbert homers and Landen Roupp pitches 5 solid innings as Giants beat Diamondbacks 6-1",
+      "summary": "— Drew Gilbert homered and drove in the go-ahead run, Landen Roupp pitched five solid innings and the San Francisco Giants beat Arizona 6-1 on Thursday night to snap a four-game home losing streak against the Diamondbacks.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816701",
+      "sport": "MLB",
+      "published": "2026-08-28T04:46:29.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 16
+    },
+    {
+      "key": "49749335",
+      "id": "49749335",
+      "headline": "Sale tops 100 mph, throws complete game as Braves sweep Dodgers",
+      "summary": "Chris Sale threw his two fastest pitches since 2018, both to Shohei Ohtani, in his first complete game since 2019 as the Braves clinched a sweep of the Dodgers.",
+      "url": "https://www.espn.com/mlb/story/_/id/49749335/sale-tops-100-mph-throws-complete-game-braves-sweep-dodgers",
+      "sport": "MLB",
+      "published": "2026-08-28T04:42:39.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 19
+    },
+    {
+      "key": "49749300",
+      "id": "49749300",
+      "headline": "McCarthy says all four Steelers quarterbacks have earned spots",
+      "summary": "Steelers coach Mike McCarthy said all four of the team's quarterbacks have earned roster spots, saying, \"We got two veterans that we can win with, and we got two young guys that we're excited about the future.\"",
+      "url": "https://www.espn.com/nfl/story/_/id/49749300/mccarthy-says-all-four-steelers-quarterbacks-earned-spots",
+      "sport": "NFL",
+      "published": "2026-08-28T04:39:41.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49749474",
+      "id": "49749474",
+      "headline": "Georgia Amoore scores career-high 25 and the Mystics move into 6th with 80-73 win over Mercury",
+      "summary": "— Georgia Amoore scored 16 of her career-high 25 points in the fourth quarter, Kiki Iriafen added 20 points and 12 rebounds for her 19th double-double of the season and the Washington Mystics beat the Phoenix Mercury 80-73 on Thursday night.",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857179",
+      "sport": "WNBA",
+      "published": "2026-08-28T04:32:30.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49747315",
+      "id": "49747315",
+      "headline": "Brent Strom returning to Astros amid pitching struggles",
+      "summary": "Five years after leaving Houston, longtime pitching coach Brent Strom is returning as a consultant to help the team's struggling staff.",
+      "url": "https://www.espn.com/mlb/story/_/id/49747315/brent-strom-returning-astros-amid-pitching-struggles",
+      "sport": "MLB",
+      "published": "2026-08-28T04:30:16.000Z",
+      "firstSeen": "2026-08-28T03:24:34.178Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49749416",
+      "id": "49749416",
+      "headline": "Phoenix Mercury vs. Washington Mystics - Game Highlights",
+      "summary": "Watch the Game Highlights from Phoenix Mercury vs. Washington Mystics, 08/27/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49749416/phoenix-mercury-vs-washington-mystics-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-08-28T04:21:09.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49749042",
+      "id": "49749042",
+      "headline": "A rough night for Raiders rookie Fernando Mendoza in 18-12 preseason loss to the 49ers",
+      "summary": "— Las Vegas rookie quarterback Fernando Mendoza saw what it was like to face a strong NFL pass rush, even against a San Francisco defense comprised of reserves, and he was sacked twice and threw an interception in the 49ers' 18-12 preseason victory...",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873641",
+      "sport": "NFL",
+      "published": "2026-08-28T04:20:29.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49749375",
+      "id": "49749375",
+      "headline": "Arizona Diamondbacks vs. San Francisco Giants: Game Highlights",
+      "summary": "Arizona Diamondbacks vs. San Francisco Giants: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49749375/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-28T04:19:55.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 18
+    },
+    {
+      "key": "49749032",
+      "id": "49749032",
+      "headline": "San Francisco 49ers vs. Las Vegas Raiders Game Highlights",
+      "summary": "San Francisco 49ers vs. Las Vegas Raiders Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49749032/san-francisco-49ers-vs-las-vegas-raiders-game-highlights",
+      "sport": "NFL",
+      "published": "2026-08-28T03:54:14.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49748651",
+      "id": "49748651",
+      "headline": "Bills close preseason with 28-27 win over Steelers on Buechele's late 2-point conversion",
+      "summary": "— Ian Wheeler scored on a 2-yard run with 1:06 left, Steve Buechele completed an off-balance pass to Dante Pettis for a 2-point conversion and the Buffalo Bills beat the Pittsburgh Steelers 28-27 in the preseason finale for each team Thursday night.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873298",
+      "sport": "NFL",
+      "published": "2026-08-28T03:52:29.000Z",
+      "firstSeen": "2026-08-28T03:24:34.178Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49749029",
+      "id": "49749029",
+      "headline": "Browns dominate final preseason game vs. Pats",
+      "summary": "Browns dominate final preseason game vs. Pats",
+      "url": "https://www.espn.com/video/clip/_/id/49749029/browns-dominate-final-preseason-game-vs-pats",
+      "sport": "NFL",
+      "published": "2026-08-28T03:15:49.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49749059",
+      "id": "49749059",
+      "headline": "West Florida secures first-ever DI win topping Southern Illinois 34-31",
+      "summary": "— Ty'ray Davis threw for two touchdowns and ran for another and West Florida won its first-ever Division I FCS contest upsetting Southern Illinois 34-31 on Thursday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401874035",
+      "sport": "College football",
+      "published": "2026-08-28T03:13:29.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49749033",
+      "id": "49749033",
+      "headline": "Donovyn Omolo's 3 TD passes power Central Arkansas in 36-24 win over UT Martin",
+      "summary": "— Donovyn Omolo threw three touchdown passes in his first game with Central Arkansas, leading the Bears to a 36-24 victory over UT Martin in a Football Championship Subdivision season opener on Thursday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401868070",
+      "sport": "College football",
+      "published": "2026-08-28T03:09:32.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49748488",
+      "id": "49748488",
+      "headline": "Chris Sale strikes out 11 in 5-hit shutout as Braves beat Yamamoto and Dodgers 1-0 for 3-game sweep",
+      "summary": "— Chris Sale struck out 11 in a five-hit shutout, Drake Baldwin launched a leadoff homer against Yoshinobu Yamamoto, and the Atlanta Braves edged the Los Angeles Dodgers 1-0 on...",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816698",
+      "sport": "MLB",
+      "published": "2026-08-28T03:03:28.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 26
+    },
+    {
+      "key": "49748918",
+      "id": "49748918",
+      "headline": "Parson, Simmons lead Austin Peay in 35-17 win over Gardner-Webb",
+      "summary": "— Chris Parson threw for 308 yards and a touchdown, Courtland Simmons ran for two touchdowns and Austin Peay beat Gardner-Webb 35-17 on Thursday night in a season opener for both teams.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401868060",
+      "sport": "College football",
+      "published": "2026-08-28T03:01:29.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 3
+    },
     {
       "key": "49748897",
       "id": "49748897",
@@ -33,6 +506,138 @@
       "published": "2026-08-28T03:01:18.000Z",
       "firstSeen": "2026-08-28T03:24:34.178Z",
       "bestRank": 1
+    },
+    {
+      "key": "49748893",
+      "id": "49748893",
+      "headline": "Cutter Stewart returns from junior college ranks, leads Houston Christian past SE Louisiana 34-28",
+      "summary": "— Cutter Stewart celebrated his return to Division I with 268 total yards and Houston Christian held off a fourth-quarter rally to defeat Southeastern Louisiana 34-28 in a season and Southland Conference opener on Thursday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401868315",
+      "sport": "College football",
+      "published": "2026-08-28T02:58:29.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49745949",
+      "id": "49745949",
+      "headline": "Good Good Golf out as PGA Tour event title sponsor amid ad backlash",
+      "summary": "Good Good Golf is stepping away from its sponsorship of a PGA Tour tournament in November.",
+      "url": "https://www.espn.com/golf/story/_/id/49745949/good-good-golf-pga-tour-event-title-sponsor-amid-ad-backlash",
+      "sport": "Golf",
+      "published": "2026-08-28T02:51:30.000Z",
+      "firstSeen": "2026-08-28T03:24:34.178Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49748207",
+      "id": "49748207",
+      "headline": "Mercyhurst Lakers vs. Youngstown State Penguins: Full Highlights",
+      "summary": "Mercyhurst Lakers vs. Youngstown State Penguins: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49748207/full-highlights",
+      "sport": "College football",
+      "published": "2026-08-28T02:47:09.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 15
+    },
+    {
+      "key": "49748493",
+      "id": "49748493",
+      "headline": "Chattanooga Mocs vs. West Georgia Wolves: Full Highlights",
+      "summary": "Chattanooga Mocs vs. West Georgia Wolves: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49748493/full-highlights",
+      "sport": "College football",
+      "published": "2026-08-28T02:46:55.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49748832",
+      "id": "49748832",
+      "headline": "Central Arkansas Bears vs. UT Martin Skyhawks: Full Highlights",
+      "summary": "Central Arkansas Bears vs. UT Martin Skyhawks: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49748832/full-highlights",
+      "sport": "College football",
+      "published": "2026-08-28T02:46:49.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49748567",
+      "id": "49748567",
+      "headline": "Houston Baptist Huskies vs. SE Louisiana Lions: Full Highlights",
+      "summary": "Houston Baptist Huskies vs. SE Louisiana Lions: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49748567/full-highlights",
+      "sport": "College football",
+      "published": "2026-08-28T02:46:43.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49748589",
+      "id": "49748589",
+      "headline": "Anderson (SC) Trojans vs. Furman Paladins: Full Highlights",
+      "summary": "Anderson (SC) Trojans vs. Furman Paladins: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49748589/full-highlights",
+      "sport": "College football",
+      "published": "2026-08-28T02:46:37.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49748617",
+      "id": "49748617",
+      "headline": "Eastern Illinois Panthers vs. Murray State Racers: Full Highlights",
+      "summary": "Eastern Illinois Panthers vs. Murray State Racers: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49748617/full-highlights",
+      "sport": "College football",
+      "published": "2026-08-28T02:46:33.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49748771",
+      "id": "49748771",
+      "headline": "Southern Illinois Salukis vs. West Florida Argonauts: Full Highlights",
+      "summary": "Southern Illinois Salukis vs. West Florida Argonauts: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49748771/full-highlights",
+      "sport": "College football",
+      "published": "2026-08-28T02:46:26.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49748694",
+      "id": "49748694",
+      "headline": "Gardner-Webb Bulldogs vs. Austin Peay Governors: Full Highlights",
+      "summary": "Gardner-Webb Bulldogs vs. Austin Peay Governors: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49748694/full-highlights",
+      "sport": "College football",
+      "published": "2026-08-28T02:46:08.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49748828",
+      "id": "49748828",
+      "headline": "Kansas City Royals vs. Toronto Blue Jays: Game Highlights",
+      "summary": "Kansas City Royals vs. Toronto Blue Jays: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49748828/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-28T02:46:08.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 20
+    },
+    {
+      "key": "49748779",
+      "id": "49748779",
+      "headline": "Milwaukee Brewers vs. New York Mets: Game Highlights",
+      "summary": "Milwaukee Brewers vs. New York Mets: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49748779/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-28T02:44:24.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 21
     },
     {
       "key": "49748391",
@@ -46,15 +651,48 @@
       "bestRank": 4
     },
     {
-      "key": "49748651",
-      "id": "49748651",
-      "headline": "Bills close preseason with 28-27 win over Steelers on Buechele's late 2-point conversion",
-      "summary": "— Ian Wheeler scored on a 2-yard run with 1:06 left, Steve Buechele completed an off-balance pass to Dante Pettis for a 2-point conversion and the Buffalo Bills beat the Pittsburgh Steelers 28-27 in the preseason finale for each team Thursday night.",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873298",
-      "sport": "NFL",
-      "published": "2026-08-28T02:35:28.000Z",
-      "firstSeen": "2026-08-28T03:24:34.178Z",
-      "bestRank": 2
+      "key": "49748700",
+      "id": "49748700",
+      "headline": "Jackson Chourio and Jacob Misiorowski lead the Brewers to an 8-2 victory over the Mets",
+      "summary": "— Jackson Chourio went 4 for 5 with two homers, four RBI and four runs to help Jacob Misiorowski and the Milwaukee Brewers beat the New York Mets 8-2 on Thursday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816699",
+      "sport": "MLB",
+      "published": "2026-08-28T02:42:38.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 22
+    },
+    {
+      "key": "49748658",
+      "id": "49748658",
+      "headline": "Cecilia Zandalasini scores 20 and the Valkyries shut down the Liberty 79-60",
+      "summary": "— Cecilia Zandalasini scored 14 of her 20 points in the first half, Gabby Williams added 16 points and the Golden State Valkyries beat the New York Liberty 79-60 on Thursday night.",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857178",
+      "sport": "WNBA",
+      "published": "2026-08-28T02:25:29.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49748620",
+      "id": "49748620",
+      "headline": "Houston Astros vs. New York Yankees: Game Highlights",
+      "summary": "Houston Astros vs. New York Yankees: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49748620/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-28T02:21:15.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 24
+    },
+    {
+      "key": "49748623",
+      "id": "49748623",
+      "headline": "Christian Walker and Jeremy Peña power the Astros to a 5-1 win over Gerrit Cole and the Yankees",
+      "summary": "— Christian Walker had three hits, including a two-run homer off Gerrit Cole in the sixth inning, and Jeremy Peña added a solo shot to power the Houston Astros to a 5-1 victory over the New York Yankees on Thursday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816696",
+      "sport": "MLB",
+      "published": "2026-08-28T02:20:30.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 23
     },
     {
       "key": "49748587",
@@ -68,6 +706,61 @@
       "bestRank": 3
     },
     {
+      "key": "49748302",
+      "id": "49748302",
+      "headline": "BYU coach Sitake will no longer report to AD amid resource tension",
+      "summary": "BYU coach Kalani Sitake will now report to a university vice president rather than athletic director Brian Santiago, who will continue to oversee the school's other sports programs.",
+      "url": "https://www.espn.com/college-football/story/_/id/49748302/byu-coach-sitake-no-longer-report-ad-amid-resource-tension",
+      "sport": "College football",
+      "published": "2026-08-28T02:14:31.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49748583",
+      "id": "49748583",
+      "headline": "Caglianone goes 5 for 6 with HR, 6 RBIs to power the Royals past the Blue Jays 13-2",
+      "summary": "— Jac Caglianone had a homer among his career-best five hits and finished with a career-high six RBI, Noah Cameron pitched six strong innings and the Kansas City Royals beat the Toronto Blue Jays 13-2 on Thursday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816697",
+      "sport": "MLB",
+      "published": "2026-08-28T02:13:37.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 25
+    },
+    {
+      "key": "49748570",
+      "id": "49748570",
+      "headline": "New York Liberty vs. Golden State Valkyries - Game Highlights",
+      "summary": "Watch the Game Highlights from New York Liberty vs. Golden State Valkyries, 08/27/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49748570/new-york-liberty-vs-golden-state-valkyries-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-08-28T02:11:44.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49748286",
+      "id": "49748286",
+      "headline": "New Mexico starting QB Jack Layne to sit out season due to injury",
+      "summary": "New Mexico starting quarterback Jack Layne will sit out the 2026 season as he prepares to undergo a second surgery on his throwing elbow.",
+      "url": "https://www.espn.com/college-football/story/_/id/49748286/new-mexico-starting-qb-jack-layne-miss-season-due-injury",
+      "sport": "College football",
+      "published": "2026-08-28T01:53:21.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 14
+    },
+    {
+      "key": "49748395",
+      "id": "49748395",
+      "headline": "Los Angeles Dodgers vs. Atlanta Braves: Game Highlights",
+      "summary": "Los Angeles Dodgers vs. Atlanta Braves: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49748395/game-highlights",
+      "sport": "MLB",
+      "published": "2026-08-28T01:49:10.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 27
+    },
+    {
       "key": "49427699",
       "id": "49427699",
       "headline": "2026 Seattle Seahawks training camp: Latest intel, updates",
@@ -77,6 +770,17 @@
       "published": "2026-08-28T01:47:52.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
+    },
+    {
+      "key": "49748347",
+      "id": "49748347",
+      "headline": "Beau Brungard accounts for 5 touchdowns in Youngstown State's season-opening win over Mercyhurst",
+      "summary": "— Beau Brungard threw for three touchdowns and ran for two, leading Youngstown State to a 43-10 rout of Mercyhurst in a Football Championship Subdivision season opener on Thursday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401867894",
+      "sport": "College football",
+      "published": "2026-08-28T01:36:29.000Z",
+      "firstSeen": "2026-08-28T09:27:54.171Z",
+      "bestRank": 12
     },
     {
       "key": "49747454",
@@ -178,17 +882,6 @@
       "bestRank": 1
     },
     {
-      "key": "49747315",
-      "id": "49747315",
-      "headline": "Brent Strom returning to Astros amid pitching struggles",
-      "summary": "Five years after leaving Houston, longtime pitching coach Brent Strom is returning as a consultant to help the team's struggling staff.",
-      "url": "https://www.espn.com/mlb/story/_/id/49747315/brent-strom-returning-astros-amid-pitching-struggles",
-      "sport": "MLB",
-      "published": "2026-08-27T23:38:41.000Z",
-      "firstSeen": "2026-08-28T03:24:34.178Z",
-      "bestRank": 4
-    },
-    {
       "key": "49747134",
       "id": "49747134",
       "headline": "Michigan freshman McCoy's injury mars exhibition win in Croatia",
@@ -230,17 +923,6 @@
       "sport": "NFL",
       "published": "2026-08-27T22:45:52.000Z",
       "firstSeen": "2026-08-27T21:28:58.094Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49745949",
-      "id": "49745949",
-      "headline": "Good Good Golf out as PGA Tour event title sponsor amid ad backlash",
-      "summary": "Good Good Golf is stepping away from its sponsorship of a PGA Tour tournament in November.",
-      "url": "https://www.espn.com/golf/story/_/id/49745949/good-good-golf-pga-tour-event-title-sponsor-amid-ad-backlash",
-      "sport": "Golf",
-      "published": "2026-08-27T22:37:24.000Z",
-      "firstSeen": "2026-08-28T03:24:34.178Z",
       "bestRank": 3
     },
     {
@@ -770,17 +1452,6 @@
       "published": "2026-08-27T17:42:25.000Z",
       "firstSeen": "2026-08-27T21:28:58.094Z",
       "bestRank": 2
-    },
-    {
-      "key": "48990955",
-      "id": "48990955",
-      "headline": "Summer transfer window: Grading big signings in men's soccer",
-      "summary": "The 2026 summer transfer window is open. Here is how we rated the biggest deals.",
-      "url": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
-      "sport": "Soccer",
-      "published": "2026-08-27T17:36:05.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
     },
     {
       "key": "49743588",
@@ -1947,17 +2618,6 @@
       "published": "2026-08-27T04:43:27.000Z",
       "firstSeen": "2026-08-27T05:04:37.019Z",
       "bestRank": 15
-    },
-    {
-      "key": "48305211",
-      "id": "48305211",
-      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
-      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
-      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
-      "sport": "MLB",
-      "published": "2026-08-27T04:22:50.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
     },
     {
       "key": "49738588",
@@ -4814,7 +5474,7 @@
       "headline": "LeBron James, PGA Tour partner on event focused on community",
       "summary": "The LeBron James Family Foundation Invitational will be played in James' hometown of Akron, Ohio, in July 2027, James' foundation announced Tuesday.",
       "url": "https://www.espn.com/golf/story/_/id/49721608/lebron-james-pga-tour-partner-event-focused-amateurs",
-      "sport": "NBA",
+      "sport": "Golf",
       "published": "2026-08-25T20:15:43.000Z",
       "firstSeen": "2026-08-25T15:31:13.856Z",
       "bestRank": 1
@@ -30976,39 +31636,6 @@
       "published": "2026-08-07T09:53:01.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 23
-    },
-    {
-      "key": "49551026",
-      "id": "49551026",
-      "headline": "CAF agree to support Gianni Infantino amid FIFA governance crisis",
-      "summary": "The Confederation of African Football has thrown its full weight behind FIFA president Gianni Infantino, unanimously reaffirming its support for the embattled Swiss administrator.",
-      "url": "https://www.espn.com/espn/story/_/id/49551026/caf-agree-support-gianni-infantino-amid-fifa-governance-crisis",
-      "sport": "Soccer",
-      "published": "2026-08-07T08:03:52.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49546977",
-      "id": "49546977",
-      "headline": "USMNT hasn't really improved under Poch: Will new contract change that?",
-      "summary": "The USMNT hasn't meaningfully improved since Pochettino was first hired as coach -- and he just got a contract extension. What now?",
-      "url": "https://www.espn.com/soccer/story/_/id/49546977/usmnt-not-improved-pochettino-new-contract-coach-extension-2026",
-      "sport": "Soccer",
-      "published": "2026-08-07T07:34:29.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49536934",
-      "id": "49536934",
-      "headline": "Which big clubs are struggling with World Cup burnout?",
-      "summary": "The World Cup was a great spectacle, but it was also hard work for the players, and as many of the game's stars return to their clubs to prepare for the 2026-27, which clubs are battling burnout the most?",
-      "url": "https://www.espn.com/soccer/story/_/id/49536934/world-cup-burnout-premier-league-laliga-liverpool-arsenal-barcelona-bayern-munich-man-united",
-      "sport": "Soccer",
-      "published": "2026-08-07T07:22:58.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 14
     }
   ]
 }
