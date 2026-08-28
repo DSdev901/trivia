@@ -37,7 +37,7 @@ Harness: Cursor browser MCP (`browser_navigate`, `browser_lock`, `browser_snapsh
 
 Stable handles:
 
-- Home category cards are links whose accessible name includes the category heading (`Current Events`, `Film & Movies`, `Geography`, …).
+- Home category cards are links whose accessible name includes the category heading (`News Feed`, `Film & Movies`, `Geography`, …).
 - Quiz hub: link named `Quiz`.
 - Quiz setup: button `Start quiz` (`#start-quiz`, class `quiz-cta`).
 - Home: region `Themed trivia`.

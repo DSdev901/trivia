@@ -828,7 +828,7 @@ function render() {
       ce.mode === "netflix"
         ? [{ label: "Netflix", href: href(["netflix"]) }]
         : [
-            { label: "Current Events", href: href(["current-events"]) },
+            { label: "News Feed", href: href(["current-events"]) },
             ...(ce.tab === "feed"
               ? [{ label: "Live feed", href: href(["current-events", "feed"]) }]
               : []),
@@ -837,7 +837,7 @@ function render() {
     )}
     <div class="ce-head">
       <div>
-        <h2 class="section-title">${ce.mode === "netflix" ? "Netflix" : "Current Events"}</h2>
+        <h2 class="section-title">${ce.mode === "netflix" ? "Netflix" : "News Feed"}</h2>
         <p class="lede">${
           ce.mode === "netflix"
             ? "Netflix originals from the last four weeks. Filter by shows or movies."
@@ -1099,7 +1099,7 @@ export async function renderCurrentEvents({ els, mode = "news", tab } = {}) {
     ce.mode === "netflix" ? !ce.data.netflix : !ce.data.sports || !ce.data.entertainment;
   if (needsLoad) {
     ce.root.innerHTML = `<p class="lede">${
-      ce.mode === "netflix" ? "Loading Netflix…" : "Loading current events…"
+      ce.mode === "netflix" ? "Loading Netflix…" : "Loading News Feed…"
     }</p>`;
     try {
       await loadForMode();
