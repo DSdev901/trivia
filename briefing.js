@@ -161,7 +161,7 @@ const CITIES = new Set([
 ]);
 
 const HIGH_WEIGHT = [
-  [/\b(dies at|died at|dies:|died:|has died|dead at|killed|murder(?:ed)?|assassinated|death of)\b/i, 42],
+  [/\b(dies at|died at|dies:|died:|has died|dead at|killed|murder(?:ed)?|assassinated|death of)\b/i, 16],
   [/\b(merger|acquisition|antitrust|sold at|valuation)\b/i, 36],
   [/\b\$?\d+(?:\.\d+)?\s*(billion|trillion)\b/i, 34],
   [/\b\$?\d+(?:\.\d+)?\s*million\b.{0,40}\b(?:box office|ticket|sale|deal|contract|gross|settlement)\b/i, 18],
@@ -568,6 +568,31 @@ function isProcessNews(text) {
   );
 }
 
+const DEATH_RE =
+  /\b(dies at|died at|dead at|has died|died [A-Z][a-z]+day|death of)\b/i;
+
+/** Copy that makes an obit quizable, not just named. */
+const NOTABLE_DEATH_HOOK = [
+  /\b(oscar|academy award|grammy|emmy|tony award|golden globe|nobel|pulitzer|hall of fame)\b/i,
+  /\b(super bowl|world series|world cup|nba finals|stanley cup|championship|winningest|namesake)\b/i,
+  /\b(hits? including|hit songs?|co-wrote|no\.?\s*1\b|number[- ]one|chart-topp|platinum)\b/i,
+  /\b(known for|star of|starring (?:in|as)|leading (?:lady|man)|behind hits)\b/i,
+  /\bstar\b.{0,48}\bof [A-Z]/,
+  /\b(?:lead )?(?:singer|drummer|guitarist|frontman|bassist) (?:of|for|in)\b/i,
+];
+
+const NOTABLE_DEATH_COVERAGE = 20;
+
+function isDeathCopy(text) {
+  return DEATH_RE.test(text);
+}
+
+function notableDeath(item, text) {
+  const coverage = Math.max(1, Number(item.coverage) || 1);
+  if (coverage >= NOTABLE_DEATH_COVERAGE) return true;
+  return NOTABLE_DEATH_HOOK.some((re) => re.test(text));
+}
+
 /** Extra rank for facts a stranger could answer on Tuesday night. */
 function quizability(item) {
   const text = `${item.headline || ""} ${item.summary || ""}`;
@@ -575,15 +600,15 @@ function quizability(item) {
   const hasPerson = (item.people || hooks.who || []).length > 0;
   const hasNumber = (hooks.number || []).length > 0;
   const hasTitle = (hooks.what || []).length > 0;
-  const isDeath = /\b(dies at|died at|dead at|has died|died [A-Z][a-z]+day|death of)\b/i.test(
-    text
-  );
+  const isDeath = isDeathCopy(text);
+  const notable = isDeath && notableDeath(item, text);
   const process = isProcessNews(text);
   let n = 0;
-  if (isDeath && (hasPerson || hasNumber)) n += 36;
-  if (hasPerson && hasNumber && !process) n += 18;
-  if (hasTitle) n += 14;
-  if (isDeath && (hooks.where || []).length) n += 8;
+  if (isDeath && (hasPerson || hasNumber)) n += 8;
+  if (notable) n += 32;
+  if (hasPerson && hasNumber && !process && (!isDeath || notable)) n += 18;
+  if (hasTitle && (!isDeath || notable)) n += 14;
+  if (notable && (hooks.where || []).length) n += 8;
   if (
     /\b(oscar|academy award|grammy|emmy|tony award|golden globe|nobel|pulitzer|hall of fame)\b/i.test(
       text
@@ -689,6 +714,10 @@ function storyWeight(item, now = Date.now()) {
 function clusterRankScore(item, now = Date.now()) {
   let coverage = Math.max(1, Number(item.coverage) || 1);
   if (shouldDampenCoverage(item)) coverage = Math.min(coverage, 3);
+  const text = `${item.headline || ""} ${item.summary || ""}`;
+  if (isDeathCopy(text) && !notableDeath(item, text)) {
+    coverage = Math.min(coverage, 4);
+  }
   const quality = Number(item.quality ?? item.score) || 0;
   const mention = 26 * Math.log2(coverage + 1);
   return (
@@ -1307,7 +1336,8 @@ function collectItems(data) {
 /**
  * Rank clustered current-events headlines. Related stories are merged.
  * Rank blends coverage, story weight, recency, a US-trivia audience prior,
- * and quizability so sticky answers outrank process news.
+ * and quizability so sticky answers outrank process news. Deaths need
+ * coverage or a household hook (hit, title, award, championship) to climb.
  * `data` is { sports, entertainment, world } payloads from the JSON feeds.
  */
 export function buildBriefing(data, now = Date.now()) {
