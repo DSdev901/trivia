@@ -25,6 +25,18 @@
       "type": "trending"
     },
     {
+      "id": "themed",
+      "name": "Themed Trivia",
+      "description": "Tuesday night themes you can study and quiz. Harrison Ford Movies is first, with 100 pub questions in ten rounds.",
+      "type": "themed",
+      "packs": [
+        {
+          "id": "harrison-ford",
+          "blurb": "100 pub-quiz questions in ten rounds. Han, Indy, Deckard, Kimble, and the rest of the Ford night."
+        }
+      ]
+    },
+    {
       "id": "presidents",
       "name": "Presidential Knowledge",
       "description": "All U.S. presidents — number, years served, ten facts, plus a shorthand connector fact each.",
@@ -79,6 +91,28 @@
         { "n": 18, "label": "On Location", "range": "On Location" },
         { "n": 19, "label": "First Time Out", "range": "First Time Out" },
         { "n": 20, "label": "The 2010s", "range": "The 2010s" }
+      ]
+    },
+    {
+      "id": "harrison-ford",
+      "name": "Harrison Ford Movies",
+      "description": "One hundred pub-quiz questions in ten rounds. Han, Indy, Deckard, Kimble, and the rest of the Ford night.",
+      "type": "movies",
+      "home": false,
+      "parentId": "themed",
+      "batchCount": 10,
+      "batchPath": "data/themed/harrison-ford/batch-{n}.json",
+      "batches": [
+        { "n": 1, "label": "Han Solo", "range": "Han Solo" },
+        { "n": 2, "label": "Raiders of the Lost Ark", "range": "Raiders of the Lost Ark" },
+        { "n": 3, "label": "Temple of Doom & Last Crusade", "range": "Temple of Doom & Last Crusade" },
+        { "n": 4, "label": "Later Indy", "range": "Later Indy" },
+        { "n": 5, "label": "Blade Runner", "range": "Blade Runner" },
+        { "n": 6, "label": "The Fugitive", "range": "The Fugitive" },
+        { "n": 7, "label": "Jack Ryan & Air Force One", "range": "Jack Ryan & Air Force One" },
+        { "n": 8, "label": "Witness & the '80s", "range": "Witness & the '80s" },
+        { "n": 9, "label": "Later career", "range": "Later career" },
+        { "n": 10, "label": "Pub extras", "range": "Pub extras" }
       ]
     }
   ]

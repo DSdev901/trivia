@@ -209,6 +209,9 @@ function categoryMetaLabel(category) {
   if (category?.type === "captured") {
     return "questions · search";
   }
+  if (category?.type === "themed") {
+    return "tuesday nights · listen & quiz";
+  }
   if (category?.type === "movies") {
     return `${category.batchCount} rounds · listen & quiz`;
   }
@@ -223,6 +226,10 @@ function categoryKicker(category) {
       return "New originals from the last four weeks";
     case "trending":
       return "Dolly Parton, House of the Dragon, and more in the air";
+    case "themed":
+      return "Harrison Ford Movies first, more Tuesday themes later";
+    case "harrison-ford":
+      return "100 pub-quiz questions in ten rounds";
     case "prior-saucer":
       return "Questions from uploaded photos";
     case "presidents":
@@ -262,6 +269,8 @@ function categoryMarkHtml(category) {
       '<rect x="4" y="5" width="16" height="14" rx="2.2"/><path d="M10 8.4v7.2L16.5 12z"/>',
     trending:
       '<path d="M5 16.5 9.2 10l3.2 3.4L19 6.5"/><path d="M14.5 6.5H19v4.5"/>',
+    themed:
+      '<rect x="5.5" y="7.2" width="13" height="11.3" rx="1.4"/><path d="M5.5 11h13M9.2 7.2V5.6M14.8 7.2V5.6"/>',
     "prior-saucer":
       '<path d="M8.2 8.4h1.8l.7-1.3h2.6l.7 1.3h1.8A2 2 0 0 1 17.8 10.4v5.1a2 2 0 0 1-2 2H8.2a2 2 0 0 1-2-2v-5.1a2 2 0 0 1 2-2z"/><circle cx="12" cy="12.8" r="2.2"/>',
     presidents:
@@ -516,18 +525,50 @@ function bindHomeTickerDrag() {
   track.addEventListener("pointermove", onMove);
 }
 
+function homeCategories(categories) {
+  return categories.filter((c) => c.home !== false);
+}
+
+function renderThemedHub(category) {
+  const packs = (category.packs || [])
+    .map((pack) => {
+      const full = state.categories.find((c) => c.id === pack.id);
+      if (!full) return null;
+      return { ...full, blurb: pack.blurb || full.description };
+    })
+    .filter(Boolean);
+
+  els.hub.innerHTML = `
+    ${crumbsHtml([{ label: category.name, href: href([category.id]) }], escapeHtml)}
+    <h2 class="section-title">${escapeHtml(category.name)}</h2>
+    <p class="lede">Tuesday night themes you can study and quiz. Harrison Ford Movies is first.</p>
+    <div class="hub-actions">
+      ${packs
+        .map(
+          (p) => `
+      <a class="hub-card" href="${href([p.id])}">
+        <h3>${escapeHtml(p.name)}</h3>
+        <p>${escapeHtml(p.blurb)}</p>
+      </a>`
+        )
+        .join("")}
+    </div>
+  `;
+}
+
 function renderCategories(categories, stamps) {
   const fresh = isSameLocalDay(stamps?.briefing?.generatedAt);
+  const visible = homeCategories(categories);
   // First card is full-width; with a 2-col home grid, an odd leftover after that
   // would sit alone in the last row — span it like the feature card.
   const orphanIndex =
-    categories.length > 1 && (categories.length - 1) % 2 === 1
-      ? categories.length - 1
+    visible.length > 1 && (visible.length - 1) % 2 === 1
+      ? visible.length - 1
       : -1;
   els.categories.innerHTML = `
     ${homeTickerHtml()}
     <div class="home-menu">
-      ${categories
+      ${visible
         .map(
           (c, i) => `
         <a class="category-card${
@@ -1705,6 +1746,16 @@ async function applyRoute() {
     setPageTitle([category.name, rest[0]].filter(Boolean));
     return;
   }
+  if (category.type === "themed") {
+    if (rest[0]) {
+      goToHash([rest[0], ...rest.slice(1)]);
+      return;
+    }
+    renderThemedHub(category);
+    show("hub");
+    setPageTitle([category.name]);
+    return;
+  }
   if (category.type === "periodic-table") {
     if (state.view !== "periodicTable") {
       void renderPeriodicTable({ els, onStartQuiz: startElementQuiz });
@@ -1813,8 +1864,16 @@ function goBack() {
     return;
   }
   const { parts } = parseHash();
-  if (parts.length <= 1) goToHash([]);
-  else goToHash(parts.slice(0, -1));
+  if (parts.length <= 1) {
+    const here = state.categories.find((c) => c.id === parts[0]);
+    if (here?.parentId) {
+      goToHash([here.parentId]);
+      return;
+    }
+    goToHash([]);
+    return;
+  }
+  goToHash(parts.slice(0, -1));
 }
 
 els.backBtn.addEventListener("click", goBack);

@@ -29,5 +29,6 @@ This directory is the maintained source for verifying user-facing behavior of Ge
 
 - [Home](./home.md) covers the category menu, ticker, visitor chrome, and 90s badges.
 - [Netflix](./netflix.md) covers the originals list, filters, and the Brevity toggle.
+- [Themed trivia](./themed-trivia.md) covers the Tuesday-theme hub, Harrison Ford study, and quiz start.
 - [Movies quiz](./movies-quiz.md) covers hub, setup, and starting a round.
 - [Geography](./geography.md) covers opening the geography category from home.

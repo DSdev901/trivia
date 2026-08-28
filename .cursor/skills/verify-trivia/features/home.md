@@ -6,7 +6,7 @@ Home is the category menu for General Trivia. The user sees the General badge, a
 
 - `home-load` renders the menu from `data/categories.json`.
 - `home-ticker` exposes region `Themed trivia`.
-- `home-categories` lists News Feed, Netflix, Prior Saucer Trivia, Presidential Knowledge, Periodic Table, Geography, and Film & Movies.
+- `home-categories` lists News Feed, Netflix, Prior Saucer Trivia, Trending, Themed Trivia, Presidential Knowledge, Periodic Table, Geography, and Film & Movies.
 - `home-badges` includes Netscape Site of the Day and Y2K Compliant.
 
 ## How to get to it (user POV)

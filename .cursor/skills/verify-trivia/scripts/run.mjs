@@ -138,7 +138,7 @@ async function doctor() {
   const cats = await fetch(new URL("data/categories.json", run.url));
   const data = await cats.json();
   const ids = (data.categories || []).map((c) => c.id);
-  for (const id of ["movies", "presidents", "geography", "current-events"]) {
+  for (const id of ["movies", "presidents", "geography", "current-events", "themed", "harrison-ford"]) {
     if (!ids.includes(id)) throw new Error(`categories.json missing ${id}`);
   }
 
