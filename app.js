@@ -711,7 +711,8 @@ async function renderPresidents(batch) {
     ${speechPanelHtml(
       `speech-fold-presidents-${batch.batch}`,
       "Hear each president’s name and years served in order.",
-      chrome
+      chrome,
+      "presidents-roster"
     )}
     <div class="president-list">
       ${batch.presidents
@@ -729,6 +730,7 @@ async function renderPresidents(batch) {
   `;
 
   bindSpeechPanel(els.presidents, chrome, {
+    idPrefix: "presidents-roster",
     getLines: () => batch.presidents.map((p) => toPresidentRosterSpeech(p)),
     highlight: (lineIndex) => {
       els.presidents.querySelectorAll(".president-btn").forEach((btn) => {
@@ -774,7 +776,20 @@ async function getSpeechChrome() {
   };
 }
 
-function speechPanelHtml(foldId, lede, chrome) {
+function speechControlIds(prefix) {
+  const p = prefix || "speech";
+  return {
+    listen: `${p}-listen`,
+    stop: `${p}-stop`,
+    voice: `${p}-voice`,
+    rate: `${p}-rate`,
+    loops: `${p}-loops`,
+    delay: `${p}-delay`,
+    status: `${p}-status`,
+  };
+}
+
+function speechPanelHtml(foldId, lede, chrome, idPrefix = "speech") {
   const {
     rankedVoices,
     selectedUri,
@@ -784,6 +799,7 @@ function speechPanelHtml(foldId, lede, chrome) {
     canSpeak,
     tip,
   } = chrome;
+  const ids = speechControlIds(idPrefix);
   const loopOptions = Array.from({ length: 10 }, (_, i) => {
     const n = i + 1;
     return `<option value="${n}" ${savedLoops === n ? "selected" : ""}>${n}${
@@ -800,8 +816,8 @@ function speechPanelHtml(foldId, lede, chrome) {
               <p class="speech-lede speech-lede-wide">${lede}</p>
             </div>
             <div class="speech-actions" role="group" aria-label="Playback">
-              <button type="button" class="speech-btn speech-btn-primary" id="listen-all">Listen</button>
-              <button type="button" class="speech-btn speech-btn-quiet" id="stop-speech">Stop</button>
+              <button type="button" class="speech-btn speech-btn-primary" id="${ids.listen}">Listen</button>
+              <button type="button" class="speech-btn speech-btn-quiet" id="${ids.stop}">Stop</button>
             </div>
           </div>
           <div class="speech-panel-body">
@@ -809,7 +825,7 @@ function speechPanelHtml(foldId, lede, chrome) {
             <div class="speech-settings">
             <label class="voice-field">
               <span>Voice</span>
-              <select id="voice-select" ${canSpeak ? "" : "disabled"}>
+              <select id="${ids.voice}" ${canSpeak ? "" : "disabled"}>
                 ${
                   canSpeak
                     ? voiceSelectOptionsHtml(rankedVoices, selectedUri)
@@ -819,7 +835,7 @@ function speechPanelHtml(foldId, lede, chrome) {
             </label>
             <label class="voice-field">
               <span>Speed</span>
-              <select id="rate-select">
+              <select id="${ids.rate}">
                 <option value="0.8" ${savedRate === 0.8 ? "selected" : ""}>Slower</option>
                 <option value="0.9" ${savedRate === 0.9 ? "selected" : ""}>Natural</option>
                 <option value="1" ${savedRate === 1 ? "selected" : ""}>Faster</option>
@@ -827,28 +843,29 @@ function speechPanelHtml(foldId, lede, chrome) {
             </label>
             <label class="voice-field">
               <span>Loops</span>
-              <select id="loop-select">${loopOptions}</select>
+              <select id="${ids.loops}">${loopOptions}</select>
             </label>
             <label class="voice-field">
               <span>Between items</span>
-              <select id="item-delay-select">${itemDelayOptionsHtml(savedItemDelay)}</select>
+              <select id="${ids.delay}">${itemDelayOptionsHtml(savedItemDelay)}</select>
             </label>
             </div>
-            <p class="speech-status" id="speech-status">${escapeHtml(tip)}</p>
+            <p class="speech-status" id="${ids.status}">${escapeHtml(tip)}</p>
           </div>
         </section>`;
 }
 
-function bindSpeechPanel(root, chrome, { getLines, highlight }) {
+function bindSpeechPanel(root, chrome, { getLines, highlight, idPrefix = "speech" }) {
   const { canSpeak, selectedUri, savedRate, savedLoops, savedItemDelay, tip } =
     chrome;
-  const statusEl = root.querySelector("#speech-status");
-  const stopBtn = root.querySelector("#stop-speech");
-  const voiceSelect = root.querySelector("#voice-select");
-  const rateSelect = root.querySelector("#rate-select");
-  const loopSelect = root.querySelector("#loop-select");
-  const itemDelaySelect = root.querySelector("#item-delay-select");
-  const listenBtn = root.querySelector("#listen-all");
+  const ids = speechControlIds(idPrefix);
+  const statusEl = root.querySelector(`#${ids.status}`);
+  const stopBtn = root.querySelector(`#${ids.stop}`);
+  const voiceSelect = root.querySelector(`#${ids.voice}`);
+  const rateSelect = root.querySelector(`#${ids.rate}`);
+  const loopSelect = root.querySelector(`#${ids.loops}`);
+  const itemDelaySelect = root.querySelector(`#${ids.delay}`);
+  const listenBtn = root.querySelector(`#${ids.listen}`);
   const speechPanel = root.querySelector(".speech-panel");
 
   function currentTip() {
@@ -949,7 +966,7 @@ async function renderMovieRound(batch) {
     )}
     <h2 class="section-title">Round ${batch.batch}: ${escapeHtml(title)}</h2>
     <p class="lede">Ten pub-quiz questions. Expand a card for the answer, or listen to the whole round.</p>
-    ${speechPanelHtml("speech-fold-movies-round", "Hear this round’s questions and answers in order.", chrome)}
+    ${speechPanelHtml("speech-fold-movies-round", "Hear this round’s questions and answers in order.", chrome, "movies-round")}
     <div class="president-list movie-q-list">
       ${batch.questions
         .map((q, i) => {
@@ -994,6 +1011,7 @@ async function renderMovieRound(batch) {
   }
 
   bindSpeechPanel(els.presidents, chrome, {
+    idPrefix: "movies-round",
     getLines: () =>
       batch.questions.map((q, i) => toMovieQuestionSpeech(q, i + 1)),
     highlight: (lineIndex) => {
@@ -1113,34 +1131,12 @@ async function goNeighborPresident(delta) {
 async function renderPresidentDetail() {
   const president = state.president;
   const batchNum = state.batch.batch;
-  const canSpeak = speechSupported();
-  const [rankedVoices, neighbors] = await Promise.all([
-    canSpeak ? listEnglishVoices() : Promise.resolve([]),
+  const [chrome, neighbors] = await Promise.all([
+    getSpeechChrome(),
     findNeighborPresidents(state.batch, president),
   ]);
-  const defaultUri = canSpeak ? await getDefaultBrowserVoiceUri() : "";
-  const savedUri = getSavedVoiceUri();
-  const selectedUri =
-    (isUsableVoiceUri(rankedVoices, savedUri) && savedUri) ||
-    defaultUri ||
-    rankedVoices[0]?.uri ||
-    "";
-  if (!savedUri && selectedUri) saveVoiceUri(selectedUri);
-  const savedRate = getSavedRate();
-  const savedLoops = getSavedLoops();
-  const savedItemDelay = getSavedItemDelay();
-  const tip = canSpeak
-    ? voiceQualityTip(rankedVoices)
-    : "Read-aloud needs a Chromium browser with sound allowed (Brave/Chrome/Edge).";
 
   if (state.view !== "detail" || state.president !== president) return;
-
-  const loopOptions = Array.from({ length: 10 }, (_, i) => {
-    const n = i + 1;
-    return `<option value="${n}" ${savedLoops === n ? "selected" : ""}>${n}${
-      n === 1 ? " (default)" : ""
-    }</option>`;
-  }).join("");
 
   els.detail.innerHTML = `
     <article class="detail">
@@ -1153,52 +1149,12 @@ async function renderPresidentDetail() {
             ? `<p class="flag-hint">Flag any weak fact for replacement — it saves on this device.</p>`
             : ""
         }
-        <section class="speech-panel" aria-label="Read aloud">
-          <input type="checkbox" class="speech-fold" id="speech-fold-president" aria-label="Show read-aloud options" />
-          <div class="speech-panel-head">
-            <label class="speech-fold-label" for="speech-fold-president">Read aloud</label>
-            <div class="speech-copy">
-              <p class="speech-kicker speech-kicker-wide">Read aloud</p>
-              <p class="speech-lede speech-lede-wide">Hear this president’s facts in order.</p>
-            </div>
-            <div class="speech-actions" role="group" aria-label="Playback">
-              <button type="button" class="speech-btn speech-btn-primary" id="listen-all">Listen</button>
-              <button type="button" class="speech-btn speech-btn-quiet" id="stop-speech">Stop</button>
-            </div>
-          </div>
-          <div class="speech-panel-body">
-            <p class="speech-lede speech-lede-mobile">Hear this president’s facts in order.</p>
-            <div class="speech-settings">
-            <label class="voice-field">
-              <span>Voice</span>
-              <select id="voice-select" ${canSpeak ? "" : "disabled"}>
-                ${
-                  canSpeak
-                    ? voiceSelectOptionsHtml(rankedVoices, selectedUri)
-                    : `<option>No voices found</option>`
-                }
-              </select>
-            </label>
-            <label class="voice-field">
-              <span>Speed</span>
-              <select id="rate-select">
-                <option value="0.8" ${savedRate === 0.8 ? "selected" : ""}>Slower</option>
-                <option value="0.9" ${savedRate === 0.9 ? "selected" : ""}>Natural</option>
-                <option value="1" ${savedRate === 1 ? "selected" : ""}>Faster</option>
-              </select>
-            </label>
-            <label class="voice-field">
-              <span>Loops</span>
-              <select id="loop-select">${loopOptions}</select>
-            </label>
-            <label class="voice-field">
-              <span>Between items</span>
-              <select id="item-delay-select">${itemDelayOptionsHtml(savedItemDelay)}</select>
-            </label>
-            </div>
-            <p class="speech-status" id="speech-status">${escapeHtml(tip)}</p>
-          </div>
-        </section>
+        ${speechPanelHtml(
+          "speech-fold-president",
+          "Hear this president’s facts in order.",
+          chrome,
+          "president"
+        )}
       </header>
       <ol class="facts">
         ${president.trivia
@@ -1226,108 +1182,19 @@ async function renderPresidentDetail() {
     </article>
   `;
 
-  const statusEl = document.getElementById("speech-status");
-  const stopBtn = document.getElementById("stop-speech");
-  const voiceSelect = document.getElementById("voice-select");
-  const rateSelect = document.getElementById("rate-select");
-  const loopSelect = document.getElementById("loop-select");
-  const itemDelaySelect = document.getElementById("item-delay-select");
-
-  function currentTip() {
-    return canSpeak
-      ? voiceQualityTip(rankedVoices)
-      : "Read-aloud needs a Chromium browser with sound allowed (Brave/Chrome/Edge).";
-  }
-
-  const listenBtn = document.getElementById("listen-all");
-
-  const speechPanel = els.detail.querySelector(".speech-panel");
-
-  function setSpeakingUI(active, message = "") {
-    if (stopBtn) {
-      stopBtn.disabled = !active;
-      stopBtn.classList.toggle("is-active-stop", active);
-    }
-    if (listenBtn) {
-      listenBtn.disabled = active;
-      listenBtn.classList.toggle("is-playing", active);
-    }
-    speechPanel?.classList.toggle("is-live", active);
-    if (statusEl) statusEl.textContent = message || currentTip();
-    if (!active) {
+  bindSpeechPanel(els.detail, chrome, {
+    idPrefix: "president",
+    getLines: () =>
+      president.trivia.map((fact, i) =>
+        toConversationalSpeech(president, fact, i + 1)
+      ),
+    highlight: (lineIndex) => {
       els.detail.querySelectorAll(".facts li").forEach((li) => {
-        li.classList.remove("is-speaking");
+        const on = Number(li.dataset.factIndex) === lineIndex;
+        li.classList.toggle("is-speaking", on);
+        if (on) li.scrollIntoView({ block: "nearest", behavior: "smooth" });
       });
-    }
-  }
-
-  setSpeakingUI(false, tip);
-
-  function highlightFact(index) {
-    els.detail.querySelectorAll(".facts li").forEach((li) => {
-      li.classList.toggle("is-speaking", Number(li.dataset.factIndex) === index);
-    });
-  }
-
-  async function playFacts(indices) {
-    if (!canSpeak) {
-      setSpeakingUI(
-        false,
-        "Browser speech isn’t available. Allow sound in Brave, then hard-refresh."
-      );
-      return;
-    }
-    const lines = indices.map((i) =>
-      prepareSpokenLine(toConversationalSpeech(president, president.trivia[i], i + 1))
-    );
-    const loops = Number(loopSelect?.value || savedLoops) || 1;
-    const itemDelaySec = Number(itemDelaySelect?.value ?? savedItemDelay);
-    setSpeakingUI(true, loops > 1 ? `Starting… (${loops} loops)` : "Starting…");
-    try {
-      await speakLines(lines, {
-        voiceUri: voiceSelect?.value || selectedUri,
-        rate: Number(rateSelect?.value || savedRate),
-        loops,
-        loopPadMs: 7000,
-        itemDelaySec,
-        onStartLine: (lineIndex) => highlightFact(indices[lineIndex]),
-        onStatus: (msg) => {
-          if (statusEl) statusEl.textContent = msg;
-        },
-        onEnd: () => setSpeakingUI(false, ""),
-      });
-      setSpeakingUI(false, "");
-    } catch (err) {
-      setSpeakingUI(false, err.message);
-    }
-  }
-
-  voiceSelect?.addEventListener("change", () => {
-    saveVoiceUri(voiceSelect.value);
-    stopAllSpeech();
-    setSpeakingUI(false, `Voice set to “${voiceSelect.selectedOptions[0]?.text || "selected"}”.`);
-  });
-
-  rateSelect?.addEventListener("change", () => {
-    saveRate(Number(rateSelect.value));
-  });
-
-  loopSelect?.addEventListener("change", () => {
-    saveLoops(Number(loopSelect.value));
-  });
-
-  itemDelaySelect?.addEventListener("change", () => {
-    saveItemDelay(Number(itemDelaySelect.value));
-  });
-
-  listenBtn?.addEventListener("click", () => {
-    unlockSpeech();
-    playFacts(president.trivia.map((_, i) => i));
-  });
-
-  stopBtn?.addEventListener("click", () => {
-    stopAllSpeech();
-    setSpeakingUI(false, "");
+    },
   });
 
   els.detail.querySelectorAll(".flag-btn").forEach((btn) => {
