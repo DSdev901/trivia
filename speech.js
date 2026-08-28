@@ -658,10 +658,7 @@ let wakeLockSentinel = null;
 let speechKeepaliveActive = false;
 let speechKeepaliveOwner = 0;
 let naturalPlaybackActive = false;
-let keepaliveAudio = null;
-let keepaliveAudioUrl = null;
-let keepaliveAudioContext = null;
-let keepaliveBufferSource = null;
+let lastSynthCancelAt = 0;
 
 function isIOSWebKit() {
   if (typeof navigator === "undefined") return false;
@@ -699,42 +696,8 @@ export function unlockSpeech() {
   } catch {
     /* ignore */
   }
-  if (isIOSWebKit()) return;
-  try {
-    const warm = new SpeechSynthesisUtterance(".");
-    warm.volume = 0.01;
-    warm.rate = 1;
-    warm.pitch = 1;
-    window.speechSynthesis.speak(warm);
-  } catch {
-    /* ignore */
-  }
-}
-
-/** Tiny silent WAV so the OS treats us as active media while speaking. */
-function silentWavObjectUrl(seconds = 2) {
-  const sampleRate = 8000;
-  const numSamples = Math.max(1, Math.floor(sampleRate * seconds));
-  const dataSize = numSamples * 2;
-  const buffer = new ArrayBuffer(44 + dataSize);
-  const view = new DataView(buffer);
-  const writeStr = (offset, str) => {
-    for (let i = 0; i < str.length; i += 1) view.setUint8(offset + i, str.charCodeAt(i));
-  };
-  writeStr(0, "RIFF");
-  view.setUint32(4, 36 + dataSize, true);
-  writeStr(8, "WAVE");
-  writeStr(12, "fmt ");
-  view.setUint32(16, 16, true);
-  view.setUint16(20, 1, true);
-  view.setUint16(22, 1, true);
-  view.setUint32(24, sampleRate, true);
-  view.setUint32(28, sampleRate * 2, true);
-  view.setUint16(32, 2, true);
-  view.setUint16(34, 16, true);
-  writeStr(36, "data");
-  view.setUint32(40, dataSize, true);
-  return URL.createObjectURL(new Blob([buffer], { type: "audio/wav" }));
+  // Do not queue a dummy utterance. Chromium often cancels the real Listen
+  // that follows, and a leftover pause() from Stop can stay muted until reload.
 }
 
 function setMediaSessionPlaying(playing) {
@@ -753,73 +716,7 @@ function setMediaSessionPlaying(playing) {
   }
 }
 
-function startWebAudioKeepalive() {
-  const AC = window.AudioContext || window.webkitAudioContext;
-  if (!AC) return;
-  try {
-    if (!keepaliveAudioContext) keepaliveAudioContext = new AC();
-    if (keepaliveAudioContext.state === "suspended") {
-      void keepaliveAudioContext.resume();
-    }
-    stopWebAudioKeepalive();
-    const buffer = keepaliveAudioContext.createBuffer(
-      1,
-      keepaliveAudioContext.sampleRate,
-      keepaliveAudioContext.sampleRate
-    );
-    const source = keepaliveAudioContext.createBufferSource();
-    source.buffer = buffer;
-    source.loop = true;
-    const gain = keepaliveAudioContext.createGain();
-    // Non-zero so some mobile browsers keep the audio session alive.
-    gain.gain.value = 0.0001;
-    source.connect(gain);
-    gain.connect(keepaliveAudioContext.destination);
-    source.start();
-    keepaliveBufferSource = source;
-  } catch {
-    /* ignore */
-  }
-}
-
-function stopWebAudioKeepalive() {
-  try {
-    keepaliveBufferSource?.stop();
-  } catch {
-    /* ignore */
-  }
-  keepaliveBufferSource = null;
-}
-
-async function startPlaybackKeepalive() {
-  setMediaSessionPlaying(true);
-  // Silent HTML/Web Audio fights speechSynthesis on iOS (Brave/Safari).
-  if (isIOSWebKit()) return;
-  try {
-    if (!keepaliveAudio) {
-      keepaliveAudioUrl = silentWavObjectUrl(2);
-      keepaliveAudio = new Audio(keepaliveAudioUrl);
-      keepaliveAudio.loop = true;
-      keepaliveAudio.preload = "auto";
-      // Near-silent; volume 0 is ignored as "not playing" on some phones.
-      keepaliveAudio.volume = 0.001;
-    }
-    keepaliveAudio.currentTime = 0;
-    await keepaliveAudio.play();
-  } catch {
-    /* Autoplay / policy — fall through to Web Audio. */
-  }
-  startWebAudioKeepalive();
-}
-
 function stopPlaybackKeepalive() {
-  try {
-    keepaliveAudio?.pause();
-    if (keepaliveAudio) keepaliveAudio.currentTime = 0;
-  } catch {
-    /* ignore */
-  }
-  stopWebAudioKeepalive();
   setMediaSessionPlaying(false);
 }
 
@@ -834,23 +731,6 @@ async function ensureKeepalivePlaying() {
   } catch {
     /* ignore */
   }
-  if (isIOSWebKit()) {
-    setMediaSessionPlaying(true);
-    return;
-  }
-  try {
-    if (keepaliveAudioContext?.state === "suspended") {
-      await keepaliveAudioContext.resume();
-    }
-  } catch {
-    /* ignore */
-  }
-  try {
-    if (keepaliveAudio?.paused) await keepaliveAudio.play();
-  } catch {
-    /* ignore */
-  }
-  if (!keepaliveBufferSource) startWebAudioKeepalive();
   setMediaSessionPlaying(true);
 }
 
@@ -879,13 +759,6 @@ async function releaseWakeLock(owner = null) {
   } catch {
     /* ignore */
   }
-}
-
-async function beginSpeechKeepalive(owner) {
-  speechKeepaliveActive = true;
-  speechKeepaliveOwner = owner;
-  await startPlaybackKeepalive();
-  await acquireWakeLock(owner);
 }
 
 async function endSpeechKeepalive(owner = null) {
@@ -926,30 +799,29 @@ export function stopSpeech() {
   void endSpeechKeepalive();
   if (!speechSupported()) return;
   const synth = window.speechSynthesis;
-  // cancel() while idle, or pause(), can leave iOS unable to speak until reload.
-  if (isIOSWebKit()) {
-    try {
-      if (synthIsBusy()) synth.cancel();
-    } catch {
-      /* ignore */
+  // pause() or cancel() while idle can leave Chromium and WebKit muted until reload.
+  try {
+    if (synthIsBusy()) {
+      synth.cancel();
+      synth.cancel();
+      lastSynthCancelAt = typeof performance !== "undefined" ? performance.now() : Date.now();
     }
-    try {
-      synth.resume();
-    } catch {
-      /* ignore */
-    }
-    return;
+  } catch {
+    /* ignore */
   }
-  synth.cancel();
-  // Chromium often needs cancel more than once to fully halt speech.
-  synth.pause();
-  synth.cancel();
   try {
     synth.resume();
   } catch {
     /* ignore */
   }
-  synth.cancel();
+}
+
+/** Chromium drops speak() if it runs in the same turn as cancel(). */
+function waitAfterSynthCancel(session) {
+  const now = typeof performance !== "undefined" ? performance.now() : Date.now();
+  const remain = 120 - (now - lastSynthCancelAt);
+  if (remain <= 0) return Promise.resolve(session === browserSpeakSession);
+  return wait(remain, session);
 }
 
 function wait(ms, session) {
@@ -1443,14 +1315,10 @@ export async function speakLines(lines, opts = {}) {
   else unlockSpeech();
 
   naturalPlaybackActive = usingNatural;
-  if (isIOSWebKit() || usingNatural) {
-    speechKeepaliveActive = true;
-    speechKeepaliveOwner = session;
-    void acquireWakeLock(session);
-    if (usingNatural) setMediaSessionPlaying(true);
-  } else {
-    void beginSpeechKeepalive(session);
-  }
+  speechKeepaliveActive = true;
+  speechKeepaliveOwner = session;
+  void acquireWakeLock(session);
+  setMediaSessionPlaying(true);
 
   const rate = opts.rate ?? getSavedRate();
   const loops = Math.max(1, Math.min(20, Number(opts.loops) || 1));
@@ -1474,6 +1342,14 @@ export async function speakLines(lines, opts = {}) {
       voice = await resolveVoice(preferred);
     }
     if (!stillThis()) {
+      opts.onEnd?.();
+      return;
+    }
+  }
+
+  if (!usingNatural && !isIOSWebKit()) {
+    const ok = await waitAfterSynthCancel(session);
+    if (!ok) {
       opts.onEnd?.();
       return;
     }
