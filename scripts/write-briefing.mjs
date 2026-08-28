@@ -64,6 +64,9 @@ export async function writeBriefingFile({
         url: item.url || "",
         coverage: item.coverage || 1,
       };
+      if (item.hooks && Object.keys(item.hooks).length) {
+        row.hooks = item.hooks;
+      }
       if (Array.isArray(item.angles) && item.angles.length) {
         row.angles = item.angles;
       }

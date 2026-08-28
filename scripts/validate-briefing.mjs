@@ -7,6 +7,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { writeBriefingStamp } from "./lib/briefing-stamp.mjs";
+import { attachHooks } from "../briefing.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const FILE = path.join(ROOT, "data", "current-events", "briefing.json");
@@ -65,16 +66,18 @@ for (const row of data.items) {
   const headline = String(row?.headline || row?.title || "").trim();
   if (!headline) continue;
   const section = SECTIONS.has(row.section) ? row.section : "entertainment";
-  items.push({
-    headline,
-    people: asPeople(row.people),
-    summary: String(row.summary || row.synopsis || "").trim(),
-    section,
-    tag: String(row.tag || row.sport || row.type || section).trim(),
-    date: String(row.date || "").slice(0, 10),
-    url: String(row.url || "").trim(),
-    coverage: Math.max(1, Number(row.coverage) || 1),
-  });
+  items.push(
+    attachHooks({
+      headline,
+      people: asPeople(row.people),
+      summary: String(row.summary || row.synopsis || "").trim(),
+      section,
+      tag: String(row.tag || row.sport || row.type || section).trim(),
+      date: String(row.date || "").slice(0, 10),
+      url: String(row.url || "").trim(),
+      coverage: Math.max(1, Number(row.coverage) || 1),
+    })
+  );
 }
 
 if (items.length < 10) {

@@ -14,6 +14,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { writeBriefingStamp } from "./lib/briefing-stamp.mjs";
+import { attachHooks } from "../briefing.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "current-events", "briefing.json");
@@ -99,7 +100,7 @@ function mergeRow(orig, row) {
   const summary = String(row.summary || row.synopsis || "").trim();
   const headline = briefingTitle(row.headline || row.title || "", orig.headline);
   const section = SECTIONS.has(row.section) ? row.section : orig.section;
-  return {
+  return attachHooks({
     headline: headline || orig.headline,
     people: people && people.length ? people : orig.people || [],
     summary: summary || orig.summary,
@@ -108,7 +109,7 @@ function mergeRow(orig, row) {
     date: String(orig.date || row.date || "").slice(0, 10),
     url: String(orig.url || row.url || "").trim(),
     coverage: Math.max(1, Number(orig.coverage) || Number(row.coverage) || 1),
-  };
+  });
 }
 
 const copilotPath = process.argv[2];

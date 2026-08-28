@@ -19,7 +19,7 @@ import {
   voiceSelectOptionsHtml,
 } from "./speech.js";
 import { isLocalHost } from "./env.js";
-import { buildBriefing, highlightPeople, BRIEFING_FEATURED, rankBriefingItems } from "./briefing.js";
+import { buildBriefing, highlightPeople, highlightQuizFacts, BRIEFING_FEATURED, rankBriefingItems } from "./briefing.js";
 import { crumbsHtml, href } from "./routes.js";
 
 const NEWS_SECTIONS = [
@@ -213,10 +213,19 @@ function netflixSpeechLine(item) {
 }
 
 function storySpeechLine(item) {
-  // Sport/tag badges ("NFL", "Celebrity", "Milestone") stay visual-only.
+  const hooks = item.hooks || {};
+  const spoken = `${item.headline || ""} ${item.summary || ""}`.toLowerCase();
+  const extras = [
+    ...(hooks.what || []),
+    ...(hooks.number || []),
+    ...(hooks.where || []),
+  ].filter((bit) => bit && !spoken.includes(String(bit).toLowerCase()));
+  const key = extras.length ? ` Key facts: ${extras.join(", ")}.` : "";
   return prepareSpokenLine(
     newsSpeakCleanup(
-      [`${item.headline}.`, `${spokenDate(item.date)}.`, item.summary].join(" ")
+      [`${item.headline}.`, `${spokenDate(item.date)}.`, key, item.summary]
+        .filter(Boolean)
+        .join(" ")
     )
   );
 }
@@ -267,11 +276,14 @@ function briefingPayload() {
     ? ce.briefing
     : { ...buildBriefing(ce.data), source: "heuristic", model: null };
   const hasWorld = (base.items || []).some((i) => i.section === "world");
-  if (hasWorld || !ce.data.world?.items?.length) return base;
-  const worldOnly = buildBriefing({ world: ce.data.world });
+  let items = [...(base.items || [])];
+  if (!hasWorld && ce.data.world?.items?.length) {
+    const worldOnly = buildBriefing({ world: ce.data.world });
+    items = [...items, ...(worldOnly.items || [])];
+  }
   return {
     ...base,
-    items: rankBriefingItems([...(base.items || []), ...(worldOnly.items || [])]),
+    items: rankBriefingItems(items),
   };
 }
 
@@ -437,7 +449,6 @@ function sectionLabel(id) {
 }
 
 function briefingCard(item, idx) {
-  const people = item.people || [];
   const coverage = Number(item.coverage) || 1;
   const link = item.url
     ? `<a class="ce-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">Read the full story →</a>`
@@ -467,8 +478,8 @@ function briefingCard(item, idx) {
           }
         </div>
       </div>
-      <h3>${highlightPeople(item.headline, people)}</h3>
-      <p>${highlightPeople(item.summary, people)}</p>
+      <h3>${highlightQuizFacts(item.headline, item)}</h3>
+      <p>${highlightQuizFacts(item.summary, item)}</p>
       ${
         link || times
           ? `<div class="ce-card-foot">${link}${times}</div>`
@@ -670,8 +681,8 @@ function renderBody() {
     const items = briefingItems();
     const rankedBy =
       payload.source === "copilot-auto"
-        ? "Ranked by coverage, story weight, and recency. Top stories are summarized by Copilot AI."
-        : "Ranked by coverage, story weight, and recency.";
+        ? "Ranked by coverage, story weight, recency, and quizability. Top stories are summarized by Copilot AI."
+        : "Ranked by coverage, story weight, recency, and quizability.";
     const runDay = fmtBriefingRunDay(payload.generatedAt || ce.briefing?.generatedAt);
     const runNote = runDay
       ? `<p class="ce-briefing-ran">Briefing last ran <strong>${escapeHtml(
@@ -702,7 +713,7 @@ function renderBody() {
     const scope = `Top ${featured.length} of ${items.length} stories`;
     return `
     ${runNote}
-    <p class="ce-window">Covering ${fmtRange(payload.windowStart, payload.windowEnd)} · ${scope} · ${rankedBy} Main people are in <strong>bold</strong>.</p>
+    <p class="ce-window">Covering ${fmtRange(payload.windowStart, payload.windowEnd)} · ${scope} · ${rankedBy} People, titles, numbers, and places are in <strong>bold</strong>.</p>
     ${filters}
     ${briefingListHtml(featured, items)}
     ${archive}`;
@@ -765,7 +776,7 @@ function speechPanelHtml() {
     ce.mode === "netflix"
       ? "Hear Netflix originals from the last four weeks, newest first."
       : ce.tab === "briefing"
-      ? "Hear the top briefing stories, heaviest coverage first."
+      ? "Hear the top briefing stories, quiz-sticky answers first."
       : ce.tab === "feed"
       ? "Hear the live sports, entertainment, and world feed, newest first."
       : `Hear the ${tabLabel} feed like a news brief, newest first.`;

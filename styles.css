@@ -2592,6 +2592,23 @@ a.ce-tab {
   color: var(--ink);
 }
 
+.ce-title {
+  font-weight: 700;
+  font-style: italic;
+  color: var(--ink);
+}
+
+.ce-num {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.ce-place {
+  font-weight: 700;
+  color: var(--ink);
+}
+
 .ce-badge {
   font-size: 0.72rem;
   font-weight: 700;

@@ -173,6 +173,7 @@ const HIGH_WEIGHT = [
   [/\b(traded? to|sign(?:s|ed)? (?:a )?(?:max |supermax |\$))/i, 16],
   [/\b(impeach|elected|inaugur|executive order|white house)\b/i, 20],
   [/\b(plane crash|killed in|mass shooting)\b/i, 36],
+  [/\b(oscar|academy award|grammy|emmy|tony award|golden globe|nobel|pulitzer)\b/i, 16],
 ];
 
 const LOW_WEIGHT = [
@@ -406,6 +407,204 @@ function extractPeople(item) {
   return people.slice(0, 4);
 }
 
+const EXTRA_PLACES = new Set([
+  "Nashville", "Memphis", "Knoxville", "Sevierville", "Pigeon", "Kenya",
+  "Nairobi", "Greenville", "Tennessee", "California", "Texas", "Florida",
+  "Georgia", "Mexico", "Canada", "England", "London", "Paris", "France",
+  "Germany", "China", "Japan", "India", "Brazil", "Australia", "Ireland",
+  "Scotland", "Ukraine", "Russia", "Israel", "Gaza", "Egypt", "Spain",
+  "Italy", "Hollywood", "Broadway", "Manhattan", "Wimbledon", "Davos",
+  "Carolina",
+]);
+
+function uniqKeepOrder(list) {
+  const seen = new Set();
+  const out = [];
+  for (const raw of list || []) {
+    const x = String(raw || "").replace(/\s+/g, " ").trim();
+    if (!x) continue;
+    const k = x.toLowerCase();
+    if (seen.has(k)) continue;
+    seen.add(k);
+    out.push(x);
+  }
+  return out;
+}
+
+function isYearish(raw) {
+  const n = Number(String(raw).replace(/[^\d.]/g, ""));
+  return n >= 1900 && n <= 2100;
+}
+
+function extractTitles(text) {
+  const out = [];
+  const src = String(text || "");
+  for (const m of src.matchAll(/[“"]([^”"]{2,80})[”"]/g)) {
+    const t = m[1].replace(/\s+/g, " ").trim().replace(/[,.;:]+$/, "");
+    if (t.split(/\s+/).length > 8) continue;
+    if (/^(the|a|an)$/i.test(t)) continue;
+    out.push(t);
+  }
+  const colon = src.match(
+    /\b([A-Z0-9][\w'.-]*(?:[\s-][A-Z0-9][\w'.-]*)*:\s+[A-Z][\w'.-]*(?:\s+[A-Z][\w'.-]*){0,6})/
+  );
+  if (colon) out.push(colon[1].replace(/\s+/g, " ").trim());
+  return uniqKeepOrder(out).slice(0, 4);
+}
+
+function extractNumbers(text) {
+  const src = String(text || "");
+  const out = [];
+  for (const m of src.matchAll(
+    /\$[\d,]+(?:\.\d+)?\s*(?:billion|million|trillion)?|\b\d+(?:\.\d+)?\s*(?:billion|million|trillion)\b/gi
+  )) {
+    const n = m[0].replace(/\s+/g, " ").trim();
+    if (!isYearish(n)) out.push(n);
+  }
+  for (const m of src.matchAll(
+    /\b(?:died|dead|dies|dying)\b[^.?]{0,28}\b(?:at(?:\s+age)?|age[d]?)\s+(\d{1,3})\b/gi
+  )) {
+    out.push(m[1]);
+  }
+  for (const m of src.matchAll(/\b(?:dead|dies|died)\s+at\s+(\d{1,3})\b/gi)) {
+    out.push(m[1]);
+  }
+  return uniqKeepOrder(out).slice(0, 4);
+}
+
+const MULTI_PLACES = [
+  "Los Angeles",
+  "New York",
+  "Las Vegas",
+  "San Francisco",
+  "San Diego",
+  "New Orleans",
+  "Kansas City",
+  "Green Bay",
+  "Tampa Bay",
+  "Oklahoma City",
+  "South Carolina",
+  "North Carolina",
+  "Pigeon Forge",
+];
+
+function quotedSpans(text) {
+  return [...String(text || "").matchAll(/[“"]([^”"]{2,80})[”"]/g)].map((m) =>
+    m[1].toLowerCase()
+  );
+}
+
+function onlyInsideQuotes(term, text) {
+  const lower = term.toLowerCase();
+  const src = String(text || "");
+  const re = new RegExp(`\\b${escapeRegExp(term)}\\b`, "i");
+  if (!re.test(src)) return true;
+  const withoutQuotes = src.replace(/[“"][^”"]{2,80}[”"]/g, " ");
+  if (new RegExp(`\\b${escapeRegExp(term)}\\b`, "i").test(withoutQuotes)) {
+    return false;
+  }
+  return quotedSpans(src).some((q) => q.includes(lower));
+}
+
+function dropShorterPlaces(list) {
+  return list.filter(
+    (a) =>
+      !list.some(
+        (b) => b !== a && b.toLowerCase().includes(a.toLowerCase())
+      )
+  );
+}
+
+function extractPlaces(text) {
+  const src = String(text || "");
+  const catalog = [...EXTRA_PLACES];
+  const out = [];
+  for (const p of MULTI_PLACES) {
+    if (new RegExp(`\\b${escapeRegExp(p)}\\b`, "i").test(src)) out.push(p);
+  }
+  for (const p of catalog) {
+    if (!new RegExp(`\\b${escapeRegExp(p)}\\b`, "i").test(src)) continue;
+    if (onlyInsideQuotes(p, src)) continue;
+    out.push(p);
+  }
+  return dropShorterPlaces(uniqKeepOrder(out)).slice(0, 4);
+}
+
+/** Quiz answers already in the copy: people, titled works, figures, places. */
+export function extractHooks(item) {
+  const text = `${item.headline || ""} ${item.summary || ""}`;
+  const who = uniqKeepOrder(item.people || []).slice(0, 3);
+  return {
+    who,
+    what: extractTitles(text),
+    number: extractNumbers(text),
+    where: extractPlaces(text),
+  };
+}
+
+function compactHooks(hooks) {
+  if (!hooks) return undefined;
+  const row = {};
+  if (hooks.who?.length) row.who = hooks.who;
+  if (hooks.what?.length) row.what = hooks.what;
+  if (hooks.number?.length) row.number = hooks.number;
+  if (hooks.where?.length) row.where = hooks.where;
+  return Object.keys(row).length ? row : undefined;
+}
+
+export function attachHooks(item) {
+  const hooks = extractHooks(item);
+  const compact = compactHooks(hooks);
+  if (compact) item.hooks = compact;
+  else delete item.hooks;
+  return item;
+}
+
+function isProcessNews(text) {
+  return (
+    /\b(settlement talks?|cancels? (?:planned )?talks?|lawsuit seeking to block|acting in bad faith|requesting a .{0,24}bond|antitrust)\b/i.test(
+      text
+    ) && !/\b(sentenced|verdict|convicted|acquitted|indicted)\b/i.test(text)
+  );
+}
+
+/** Extra rank for facts a stranger could answer on Tuesday night. */
+function quizability(item) {
+  const text = `${item.headline || ""} ${item.summary || ""}`;
+  const hooks = item.hooks || extractHooks(item);
+  const hasPerson = (item.people || hooks.who || []).length > 0;
+  const hasNumber = (hooks.number || []).length > 0;
+  const hasTitle = (hooks.what || []).length > 0;
+  const isDeath = /\b(dies at|died at|dead at|has died|died [A-Z][a-z]+day|death of)\b/i.test(
+    text
+  );
+  const process = isProcessNews(text);
+  let n = 0;
+  if (isDeath && (hasPerson || hasNumber)) n += 36;
+  if (hasPerson && hasNumber && !process) n += 18;
+  if (hasTitle) n += 14;
+  if (isDeath && (hooks.where || []).length) n += 8;
+  if (
+    /\b(oscar|academy award|grammy|emmy|tony award|golden globe|nobel|pulitzer|hall of fame)\b/i.test(
+      text
+    )
+  ) {
+    n += 14;
+  }
+  if (/\b(first-ever|for the first time|first .+ to)\b/i.test(text)) n += 10;
+  if (
+    /\b(sold for|purchased|box office|worldwide)\b/i.test(text) &&
+    hasNumber &&
+    !process
+  ) {
+    n += 12;
+  }
+  if (process) n -= 48;
+  if (/\bcancels? (?:planned )?talks?\b/i.test(text)) n -= 20;
+  if (/\b(tracker:|rumors?, news|transfer rumors?)\b/i.test(text)) n -= 22;
+  return n;
+}
+
 function daysAgo(iso, now = Date.now()) {
   const t = new Date(`${iso}T12:00:00`).getTime();
   if (!t) return 20;
@@ -460,7 +659,11 @@ function storyWeight(item, now = Date.now()) {
   const text = `${item.headline} ${item.summary}`;
   let score = 12;
   if (item.top) score += 6;
-  if (item.tag === "Milestone" && !/\bbirthday|red carpet\b/i.test(text)) {
+  if (
+    item.tag === "Milestone" &&
+    !/\bbirthday|red carpet\b/i.test(text) &&
+    !isProcessNews(text)
+  ) {
     score += 26;
   }
   if (item.section === "netflix") score -= 8;
@@ -491,7 +694,8 @@ function clusterRankScore(item, now = Date.now()) {
   return (
     quality +
     mention +
-    recencyPoints(item.date, now, 22, 1.35)
+    recencyPoints(item.date, now, 22, 1.35) +
+    quizability(item)
   );
 }
 
@@ -507,7 +711,10 @@ function sortByClusterRank(items, now = Date.now()) {
 
 /** Re-score and sort already-clustered briefing cards (keeps Copilot copy). */
 export function rankBriefingItems(items, now = Date.now()) {
-  for (const item of items) storyWeight(item, now);
+  for (const item of items) {
+    attachHooks(item);
+    storyWeight(item, now);
+  }
   return sortByClusterRank(items, now);
 }
 
@@ -1099,20 +1306,22 @@ function collectItems(data) {
 
 /**
  * Rank clustered current-events headlines. Related stories are merged.
- * Rank blends coverage, story weight, recency, and a US-trivia audience prior
- * so Premier League club chatter does not outrank NFL/NBA/MLB news.
+ * Rank blends coverage, story weight, recency, a US-trivia audience prior,
+ * and quizability so sticky answers outrank process news.
  * `data` is { sports, entertainment, world } payloads from the JSON feeds.
  */
 export function buildBriefing(data, now = Date.now()) {
   const items = collectItems(data);
   for (const item of items) item.score = storyWeight(item, now);
-  const clustered = sortByClusterRank(clusterStories(items), now);
+  const clustered = clusterStories(items);
+  for (const item of clustered) attachHooks(item);
+  const ranked = sortByClusterRank(clustered, now);
   const windows = [data.sports, data.entertainment, data.world]
     .filter(Boolean)
     .map((d) => [d.windowStart, d.windowEnd]);
   const windowStart = windows.map((w) => w[0]).sort()[0] || "";
   const windowEnd = windows.map((w) => w[1]).sort().pop() || "";
-  return { windowStart, windowEnd, items: clustered };
+  return { windowStart, windowEnd, items: ranked };
 }
 
 export function highlightPeople(text, people) {
@@ -1153,6 +1362,37 @@ export function highlightPeople(text, people) {
   return out;
 }
 
+function insideStrong(html, offset) {
+  const head = html.slice(0, offset);
+  const opens = (head.match(/<strong\b/g) || []).length;
+  const closes = (head.match(/<\/strong>/g) || []).length;
+  return opens > closes;
+}
+
+function wrapPhrase(html, phrase, className) {
+  const needle = escapeHtml(phrase);
+  if (!needle) return html;
+  const re = new RegExp(`\\b(${escapeRegExp(needle)})(['’]s)?\\b`, "gi");
+  return html.replace(re, (m, g1, g2, offset, full) => {
+    if (insideStrong(full, offset)) return m;
+    return `<strong class="${className}">${g1}</strong>${g2 || ""}`;
+  });
+}
+
+/** Bold people, titled works, numbers, and places for the briefing cards. */
+export function highlightQuizFacts(text, item) {
+  const hooks = item?.hooks || extractHooks(item || {});
+  const people = item?.people?.length ? item.people : hooks.who || [];
+  let out = highlightPeople(text, people);
+  const titles = [...(hooks.what || [])].sort((a, b) => b.length - a.length);
+  for (const t of titles) out = wrapPhrase(out, t, "ce-title");
+  const numbers = [...(hooks.number || [])].sort((a, b) => b.length - a.length);
+  for (const n of numbers) out = wrapPhrase(out, n, "ce-num");
+  const places = [...(hooks.where || [])].sort((a, b) => b.length - a.length);
+  for (const p of places) out = wrapPhrase(out, p, "ce-place");
+  return out;
+}
+
 export function combineBriefingItems(group) {
   const expanded = [];
   for (const item of group) {
@@ -1189,6 +1429,7 @@ export function combineBriefingItems(group) {
   merged.url = best?.url || merged.url;
   merged.section = best?.section || merged.section;
   merged.tag = best?.tag || merged.tag;
+  attachHooks(merged);
   return merged;
 }
 

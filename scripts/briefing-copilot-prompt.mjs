@@ -7,6 +7,7 @@
 import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { extractHooks } from "../briefing.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const MERGE = process.env.BRIEFING_MERGE === "1";
@@ -49,6 +50,16 @@ const items = MERGE
         tag: item.tag,
         coverage: item.coverage || 1,
       };
+      const hooks = item.hooks && Object.keys(item.hooks).length
+        ? item.hooks
+        : extractHooks(item);
+      if (hooks.who?.length || hooks.what?.length || hooks.number?.length || hooks.where?.length) {
+        row.hooks = {};
+        if (hooks.who?.length) row.hooks.who = hooks.who;
+        if (hooks.what?.length) row.hooks.what = hooks.what;
+        if (hooks.number?.length) row.hooks.number = hooks.number;
+        if (hooks.where?.length) row.hooks.where = hooks.where;
+      }
       if (Array.isArray(item.angles) && item.angles.length) {
         row.angles = item.angles;
       }
