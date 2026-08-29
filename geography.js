@@ -2091,14 +2091,19 @@ function choiceButtons(choices) {
     </div>`;
 }
 
+function promptFlag(item) {
+  if (!item?.flag) return "";
+  return `<span class="geo-flag" aria-hidden="true">${item.flag}</span> `;
+}
+
 function promptForMode(item) {
   const mode = geo.mode;
   const kind = quizKind();
   if (mode === "pin") {
     if (kind === "capitals" && item.capital) {
-      return `Find <strong>${escapeHtml(item.capital)}</strong> on the map.`;
+      return `Find ${promptFlag(item)}<strong>${escapeHtml(item.capital)}</strong> on the map.`;
     }
-    return `Find <strong>${escapeHtml(item.name)}</strong> on the map.`;
+    return `Find ${promptFlag(item)}<strong>${escapeHtml(item.name)}</strong> on the map.`;
   }
   if (mode === "outline") return `What place is this outline?`;
   if (mode === "name") {
@@ -2107,7 +2112,7 @@ function promptForMode(item) {
     return `What is the highlighted place called?`;
   }
   if (mode === "capitals")
-    return `What is the capital of <strong>${escapeHtml(item.name)}</strong>?`;
+    return `What is the capital of ${promptFlag(item)}<strong>${escapeHtml(item.name)}</strong>?`;
   if (mode === "abbr") {
     const unit = geo.pack?.map === "canada-provinces" ? "province or territory" : "state";
     return geo._abbrAskName
@@ -2116,7 +2121,7 @@ function promptForMode(item) {
   }
   if (mode === "type") {
     if (kind === "capitals")
-      return `Type the capital of <strong>${escapeHtml(item.name)}</strong>.`;
+      return `Type the capital of ${promptFlag(item)}<strong>${escapeHtml(item.name)}</strong>.`;
     if (kind === "flags")
       return `<span class="geo-flag-xl" aria-hidden="true">${item.flag}</span><br />Type the country.`;
     if (kind === "teams")
@@ -2134,7 +2139,7 @@ function promptForMode(item) {
     if (kind === "flags")
       return `<span class="geo-flag-xl" aria-hidden="true">${item.flag}</span><br />Which country is this?`;
     if (kind === "capitals")
-      return `What is the capital of <strong>${escapeHtml(item.name)}</strong>?`;
+      return `What is the capital of ${promptFlag(item)}<strong>${escapeHtml(item.name)}</strong>?`;
     if (isOutlineView()) return `What place is this outline?`;
     return `Which place is this?`;
   }

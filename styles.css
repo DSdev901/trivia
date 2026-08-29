@@ -3820,6 +3820,11 @@ a.ce-tab {
   line-height: 1.35;
 }
 
+.geo-prompt .geo-flag {
+  font-size: 1.15em;
+  vertical-align: -0.12em;
+}
+
 .geo-hint {
   margin: 0;
   color: var(--ink-soft);
