@@ -71,6 +71,87 @@ const EXTRA = {
     flag: "🇪🇭",
     region: "Africa",
     subregion: "Northern Africa",
+    fact: "UN non-self-governing territory. Morocco administers most of it. The Sahrawi Arab Democratic Republic claims it.",
+  },
+  GF: {
+    id: "GF",
+    name: "French Guiana",
+    capital: "Cayenne",
+    flag: "🇬🇫",
+    region: "Americas",
+    subregion: "South America",
+  },
+  AS: {
+    id: "AS",
+    name: "American Samoa",
+    capital: "Pago Pago",
+    flag: "🇦🇸",
+    region: "Oceania",
+    subregion: "Polynesia",
+  },
+  CK: {
+    id: "CK",
+    name: "Cook Islands",
+    capital: "Avarua",
+    flag: "🇨🇰",
+    region: "Oceania",
+    subregion: "Polynesia",
+  },
+  PF: {
+    id: "PF",
+    name: "French Polynesia",
+    capital: "Papeete",
+    flag: "🇵🇫",
+    region: "Oceania",
+    subregion: "Polynesia",
+  },
+  GU: {
+    id: "GU",
+    name: "Guam",
+    capital: "Hagåtña",
+    flag: "🇬🇺",
+    region: "Oceania",
+    subregion: "Micronesia",
+  },
+  NU: {
+    id: "NU",
+    name: "Niue",
+    capital: "Alofi",
+    flag: "🇳🇺",
+    region: "Oceania",
+    subregion: "Polynesia",
+  },
+  MP: {
+    id: "MP",
+    name: "Northern Mariana Islands",
+    capital: "Saipan",
+    flag: "🇲🇵",
+    region: "Oceania",
+    subregion: "Micronesia",
+  },
+  PN: {
+    id: "PN",
+    name: "Pitcairn Islands",
+    capital: "Adamstown",
+    flag: "🇵🇳",
+    region: "Oceania",
+    subregion: "Polynesia",
+  },
+  TK: {
+    id: "TK",
+    name: "Tokelau",
+    capital: "Nukunonu",
+    flag: "🇹🇰",
+    region: "Oceania",
+    subregion: "Polynesia",
+  },
+  WF: {
+    id: "WF",
+    name: "Wallis and Futuna",
+    capital: "Mata-Utu",
+    flag: "🇼🇫",
+    region: "Oceania",
+    subregion: "Polynesia",
   },
 };
 
@@ -101,6 +182,12 @@ const LISTS = {
   melanesia: ["FJ", "PG", "SB", "VU"],
   micronesia: ["KI", "MH", "FM", "NR", "PW"],
   polynesia: ["WS", "TO", "TV"],
+  // Seterra Oceania: Countries and Territories (vgp/3128), minus Hawaii
+  // which is not a separate region on the world countries map.
+  "oceania-territories": [
+    "AS", "CK", "FJ", "PF", "GU", "KI", "MH", "FM", "NR", "NC", "NU", "MP",
+    "PW", "PG", "PN", "WS", "SB", "TK", "TO", "TV", "VU", "WF",
+  ],
 };
 
 const US_REGIONS = {
@@ -338,7 +425,15 @@ const SECTIONS = {
     },
   ],
   oceania: [
-    { name: "The continent", packIds: ["oceania-countries", "oceania-capitals"] },
+    {
+      name: "The continent",
+      packIds: [
+        "oceania-countries",
+        "oceania-capitals",
+        "oceania-territories",
+        "oceania-territories-capitals",
+      ],
+    },
     {
       name: "Australia & New Zealand",
       packIds: [
@@ -354,7 +449,7 @@ const SECTIONS = {
       name: "Pacific regions",
       packIds: ["melanesia-countries", "micronesia-countries", "polynesia-countries"],
     },
-    { name: "Flags & outlines", packIds: ["oceania-flags", "oceania-outlines"] },
+    { name: "Flags & outlines", packIds: ["oceania-flags", "oceania-territories-flags", "oceania-outlines"] },
   ],
 };
 
@@ -642,7 +737,7 @@ writeFlagPack("middle-east-flags", "The Middle East: Flags", "Flags of the Middl
 // —— Americas extras ——
 writeCountryPack("latin-america-countries", "Latin America: Countries", "Mexico, Central America, and South America.", "south-america", LISTS["latin-america"]);
 writeCapitalPack("northern-america-capitals", "Northern America: Capitals", "Ottawa, Washington, D.C., and Mexico City.", "north-america", ["CA", "US", "MX"]);
-writeOutlinePack("caribbean-outlines", "The Caribbean: Country Outlines", "Silhouette drills for Caribbean countries.", "north-america", [
+writeOutlinePack("caribbean-outlines", "The Caribbean: Country Outlines", "Silhouettes of the 13 independent Caribbean countries.", "north-america", [
   "AG", "BS", "BB", "CU", "DM", "DO", "GD", "HT", "JM", "KN", "LC", "VC", "TT",
 ]);
 
@@ -672,6 +767,27 @@ writeCountryPack("australia-surrounding", "Australia: Surrounding Countries", "N
 writeCountryPack("melanesia-countries", "Melanesia: Countries", "Fiji, Papua New Guinea, Solomon Islands, and Vanuatu.", "oceania", LISTS.melanesia);
 writeCountryPack("micronesia-countries", "Micronesia: Countries", "The independent countries of Micronesia.", "oceania", LISTS.micronesia);
 writeCountryPack("polynesia-countries", "Polynesia: Countries", "Samoa, Tonga, and Tuvalu.", "oceania", LISTS.polynesia);
+writeCountryPack(
+  "oceania-territories",
+  "Oceania: Countries and Territories",
+  "Independent Pacific countries plus territories. Hawaii is on the U.S. states quiz.",
+  "oceania",
+  LISTS["oceania-territories"]
+);
+writeCapitalPack(
+  "oceania-territories-capitals",
+  "Oceania: Capitals of Countries and Territories",
+  "Capitals of those Pacific countries and territories.",
+  "oceania",
+  LISTS["oceania-territories"]
+);
+writeFlagPack(
+  "oceania-territories-flags",
+  "Oceania: Flags of Countries and Territories",
+  "Flags of those Pacific countries and territories.",
+  "oceania",
+  LISTS["oceania-territories"]
+);
 
 const projection = loadProjection();
 writeCityPack("europe-cities", "Europe: Cities", "Major European cities — Pin them or Type their names.", "europe", EUROPE_CITIES_EASY, projection);

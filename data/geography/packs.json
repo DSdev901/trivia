@@ -247,7 +247,7 @@
         {
           "id": "na-countries",
           "name": "North & Central America: Countries",
-          "blurb": "Canada, the U.S., Mexico, Central America, and the Caribbean.",
+          "blurb": "Canada, the U.S., Mexico, Central America, plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
           "map": "world-countries",
           "quiz": "countries",
           "modes": [
@@ -259,12 +259,12 @@
             "capitals",
             "study"
           ],
-          "itemCount": 23
+          "itemCount": 14
         },
         {
           "id": "na-capitals",
           "name": "North & Central America: Capitals",
-          "blurb": "North & Central America: Capitals — Pin them or Type their names.",
+          "blurb": "Capitals from Canada to Panama, plus Havana, Kingston, Port-au-Prince, and Santo Domingo.",
           "map": "world-countries",
           "quiz": "capitals",
           "modes": [
@@ -275,7 +275,7 @@
             "reverse",
             "study"
           ],
-          "itemCount": 23
+          "itemCount": 14
         },
         {
           "id": "na-physical",
@@ -393,8 +393,8 @@
         },
         {
           "id": "caribbean-countries",
-          "name": "Caribbean: Countries",
-          "blurb": "Island nations of the Caribbean.",
+          "name": "The Caribbean: Countries",
+          "blurb": "The 13 independent island nations. Cuba, Haiti, the Dominican Republic, and Jamaica also appear on the continent quiz.",
           "map": "world-countries",
           "quiz": "countries",
           "modes": [
@@ -410,8 +410,8 @@
         },
         {
           "id": "caribbean-capitals",
-          "name": "Caribbean: Capitals",
-          "blurb": "Caribbean: Capitals — Pin them or Type their names.",
+          "name": "The Caribbean: Capitals",
+          "blurb": "Capitals of the 13 independent Caribbean countries.",
           "map": "world-countries",
           "quiz": "capitals",
           "modes": [
@@ -853,7 +853,7 @@
         {
           "id": "na-flags",
           "name": "North & Central America: Flags",
-          "blurb": "Flags for North America, Central America, and the Caribbean.",
+          "blurb": "Flags for the mainland plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
           "map": null,
           "quiz": "flags",
           "modes": [
@@ -862,12 +862,12 @@
             "reverse",
             "study"
           ],
-          "itemCount": 23
+          "itemCount": 14
         },
         {
           "id": "caribbean-flags",
-          "name": "Caribbean: Flags",
-          "blurb": "Flags of Caribbean countries.",
+          "name": "The Caribbean: Flags",
+          "blurb": "Flags of the 13 independent Caribbean countries.",
           "map": null,
           "quiz": "flags",
           "modes": [
@@ -881,7 +881,7 @@
         {
           "id": "na-outlines",
           "name": "North & Central America: Outlines",
-          "blurb": "Silhouette drills for North & Central America.",
+          "blurb": "Silhouettes of the mainland plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
           "map": "world-countries",
           "quiz": "outlines",
           "modes": [
@@ -890,12 +890,12 @@
             "choice",
             "study"
           ],
-          "itemCount": 23
+          "itemCount": 14
         },
         {
           "id": "caribbean-outlines",
           "name": "The Caribbean: Country Outlines",
-          "blurb": "Silhouette drills for Caribbean countries.",
+          "blurb": "Silhouettes of the 13 independent Caribbean countries.",
           "map": "world-countries",
           "quiz": "outlines",
           "modes": [
@@ -1052,7 +1052,7 @@
         {
           "id": "sa-countries",
           "name": "South America: Countries",
-          "blurb": "Every South American country — Pin and Type.",
+          "blurb": "The 12 countries plus French Guiana.",
           "map": "world-countries",
           "quiz": "countries",
           "modes": [
@@ -1064,7 +1064,7 @@
             "capitals",
             "study"
           ],
-          "itemCount": 12
+          "itemCount": 13
         },
         {
           "id": "sa-capitals",
@@ -1080,7 +1080,7 @@
             "reverse",
             "study"
           ],
-          "itemCount": 12
+          "itemCount": 13
         },
         {
           "id": "sa-cities",
@@ -1175,7 +1175,7 @@
             "reverse",
             "study"
           ],
-          "itemCount": 12
+          "itemCount": 13
         },
         {
           "id": "sa-outlines",
@@ -1189,7 +1189,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 12
+          "itemCount": 13
         }
       ],
       "blurb": "Countries, cities, landmarks, and physical features.",
@@ -1239,7 +1239,7 @@
             "capitals",
             "study"
           ],
-          "itemCount": 45
+          "itemCount": 46
         },
         {
           "id": "europe-capitals",
@@ -1255,7 +1255,7 @@
             "reverse",
             "study"
           ],
-          "itemCount": 45
+          "itemCount": 46
         },
         {
           "id": "europe-cities",
@@ -1515,7 +1515,7 @@
             "reverse",
             "study"
           ],
-          "itemCount": 45
+          "itemCount": 46
         },
         {
           "id": "western-europe-flags",
@@ -1557,7 +1557,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 45
+          "itemCount": 46
         }
       ],
       "blurb": "Countries, cities, regions, rivers, and landmarks.",
@@ -1607,7 +1607,7 @@
         {
           "id": "africa-countries",
           "name": "Africa: Countries",
-          "blurb": "African countries — Pin and Type.",
+          "blurb": "African countries, including Western Sahara.",
           "map": "world-countries",
           "quiz": "countries",
           "modes": [
@@ -1619,7 +1619,7 @@
             "capitals",
             "study"
           ],
-          "itemCount": 54
+          "itemCount": 55
         },
         {
           "id": "africa-capitals",
@@ -1912,7 +1912,7 @@
             "reverse",
             "study"
           ],
-          "itemCount": 54
+          "itemCount": 55
         },
         {
           "id": "africa-outlines",
@@ -1926,7 +1926,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 54
+          "itemCount": 55
         }
       ],
       "blurb": "Countries, cities, regions, landmarks, and physical features.",
@@ -2401,6 +2401,39 @@
           "itemCount": 14
         },
         {
+          "id": "oceania-territories",
+          "name": "Oceania: Countries and Territories",
+          "blurb": "Independent Pacific countries plus territories. Hawaii is on the U.S. states quiz.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 22
+        },
+        {
+          "id": "oceania-territories-capitals",
+          "name": "Oceania: Capitals of Countries and Territories",
+          "blurb": "Capitals of those Pacific countries and territories.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 22
+        },
+        {
           "id": "australia-cities",
           "name": "Australia: Cities",
           "blurb": "Major Australian cities — Pin them or Type their names.",
@@ -2563,6 +2596,20 @@
           "itemCount": 14
         },
         {
+          "id": "oceania-territories-flags",
+          "name": "Oceania: Flags of Countries and Territories",
+          "blurb": "Flags of those Pacific countries and territories.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 22
+        },
+        {
           "id": "oceania-outlines",
           "name": "Oceania: Outlines",
           "blurb": "Silhouette drills for Oceania.",
@@ -2583,7 +2630,9 @@
           "name": "The continent",
           "packIds": [
             "oceania-countries",
-            "oceania-capitals"
+            "oceania-capitals",
+            "oceania-territories",
+            "oceania-territories-capitals"
           ]
         },
         {
@@ -2609,6 +2658,7 @@
           "name": "Flags & outlines",
           "packIds": [
             "oceania-flags",
+            "oceania-territories-flags",
             "oceania-outlines"
           ]
         }
@@ -2747,7 +2797,7 @@
     {
       "id": "na-countries",
       "name": "North & Central America: Countries",
-      "blurb": "Canada, the U.S., Mexico, Central America, and the Caribbean.",
+      "blurb": "Canada, the U.S., Mexico, Central America, plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
       "map": "world-countries",
       "quiz": "countries",
       "modes": [
@@ -2759,12 +2809,12 @@
         "capitals",
         "study"
       ],
-      "itemCount": 23
+      "itemCount": 14
     },
     {
       "id": "na-capitals",
       "name": "North & Central America: Capitals",
-      "blurb": "North & Central America: Capitals — Pin them or Type their names.",
+      "blurb": "Capitals from Canada to Panama, plus Havana, Kingston, Port-au-Prince, and Santo Domingo.",
       "map": "world-countries",
       "quiz": "capitals",
       "modes": [
@@ -2775,12 +2825,12 @@
         "reverse",
         "study"
       ],
-      "itemCount": 23
+      "itemCount": 14
     },
     {
       "id": "na-flags",
       "name": "North & Central America: Flags",
-      "blurb": "Flags for North America, Central America, and the Caribbean.",
+      "blurb": "Flags for the mainland plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
       "map": null,
       "quiz": "flags",
       "modes": [
@@ -2789,7 +2839,7 @@
         "reverse",
         "study"
       ],
-      "itemCount": 23
+      "itemCount": 14
     },
     {
       "id": "central-america-countries",
@@ -2826,8 +2876,8 @@
     },
     {
       "id": "caribbean-countries",
-      "name": "Caribbean: Countries",
-      "blurb": "Island nations of the Caribbean.",
+      "name": "The Caribbean: Countries",
+      "blurb": "The 13 independent island nations. Cuba, Haiti, the Dominican Republic, and Jamaica also appear on the continent quiz.",
       "map": "world-countries",
       "quiz": "countries",
       "modes": [
@@ -2843,8 +2893,8 @@
     },
     {
       "id": "caribbean-capitals",
-      "name": "Caribbean: Capitals",
-      "blurb": "Caribbean: Capitals — Pin them or Type their names.",
+      "name": "The Caribbean: Capitals",
+      "blurb": "Capitals of the 13 independent Caribbean countries.",
       "map": "world-countries",
       "quiz": "capitals",
       "modes": [
@@ -2859,8 +2909,8 @@
     },
     {
       "id": "caribbean-flags",
-      "name": "Caribbean: Flags",
-      "blurb": "Flags of Caribbean countries.",
+      "name": "The Caribbean: Flags",
+      "blurb": "Flags of the 13 independent Caribbean countries.",
       "map": null,
       "quiz": "flags",
       "modes": [
@@ -2891,7 +2941,7 @@
     {
       "id": "sa-countries",
       "name": "South America: Countries",
-      "blurb": "Every South American country — Pin and Type.",
+      "blurb": "The 12 countries plus French Guiana.",
       "map": "world-countries",
       "quiz": "countries",
       "modes": [
@@ -2903,7 +2953,7 @@
         "capitals",
         "study"
       ],
-      "itemCount": 12
+      "itemCount": 13
     },
     {
       "id": "sa-capitals",
@@ -2919,7 +2969,7 @@
         "reverse",
         "study"
       ],
-      "itemCount": 12
+      "itemCount": 13
     },
     {
       "id": "sa-flags",
@@ -2933,7 +2983,7 @@
         "reverse",
         "study"
       ],
-      "itemCount": 12
+      "itemCount": 13
     },
     {
       "id": "europe-countries",
@@ -2950,7 +3000,7 @@
         "capitals",
         "study"
       ],
-      "itemCount": 45
+      "itemCount": 46
     },
     {
       "id": "europe-capitals",
@@ -2966,7 +3016,7 @@
         "reverse",
         "study"
       ],
-      "itemCount": 45
+      "itemCount": 46
     },
     {
       "id": "europe-flags",
@@ -2980,12 +3030,12 @@
         "reverse",
         "study"
       ],
-      "itemCount": 45
+      "itemCount": 46
     },
     {
       "id": "africa-countries",
       "name": "Africa: Countries",
-      "blurb": "African countries — Pin and Type.",
+      "blurb": "African countries, including Western Sahara.",
       "map": "world-countries",
       "quiz": "countries",
       "modes": [
@@ -2997,7 +3047,7 @@
         "capitals",
         "study"
       ],
-      "itemCount": 54
+      "itemCount": 55
     },
     {
       "id": "africa-capitals",
@@ -3027,7 +3077,7 @@
         "reverse",
         "study"
       ],
-      "itemCount": 54
+      "itemCount": 55
     },
     {
       "id": "asia-countries",
@@ -3108,6 +3158,53 @@
         "study"
       ],
       "itemCount": 14
+    },
+    {
+      "id": "oceania-territories",
+      "name": "Oceania: Countries and Territories",
+      "blurb": "Independent Pacific countries plus territories. Hawaii is on the U.S. states quiz.",
+      "map": "world-countries",
+      "quiz": "countries",
+      "modes": [
+        "pin",
+        "type",
+        "outline",
+        "name",
+        "choice",
+        "capitals",
+        "study"
+      ],
+      "itemCount": 22
+    },
+    {
+      "id": "oceania-territories-capitals",
+      "name": "Oceania: Capitals of Countries and Territories",
+      "blurb": "Capitals of those Pacific countries and territories.",
+      "map": "world-countries",
+      "quiz": "capitals",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 22
+    },
+    {
+      "id": "oceania-territories-flags",
+      "name": "Oceania: Flags of Countries and Territories",
+      "blurb": "Flags of those Pacific countries and territories.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 22
     },
     {
       "id": "oceania-flags",
@@ -3219,7 +3316,7 @@
     {
       "id": "na-outlines",
       "name": "North & Central America: Outlines",
-      "blurb": "Silhouette drills for North & Central America.",
+      "blurb": "Silhouettes of the mainland plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
       "map": "world-countries",
       "quiz": "outlines",
       "modes": [
@@ -3228,7 +3325,7 @@
         "choice",
         "study"
       ],
-      "itemCount": 23
+      "itemCount": 14
     },
     {
       "id": "us-outlines",
@@ -3316,7 +3413,7 @@
         "choice",
         "study"
       ],
-      "itemCount": 12
+      "itemCount": 13
     },
     {
       "id": "europe-outlines",
@@ -3330,7 +3427,7 @@
         "choice",
         "study"
       ],
-      "itemCount": 45
+      "itemCount": 46
     },
     {
       "id": "africa-outlines",
@@ -3344,7 +3441,7 @@
         "choice",
         "study"
       ],
-      "itemCount": 54
+      "itemCount": 55
     },
     {
       "id": "asia-outlines",
@@ -4299,7 +4396,7 @@
     {
       "id": "caribbean-outlines",
       "name": "The Caribbean: Country Outlines",
-      "blurb": "Silhouette drills for Caribbean countries.",
+      "blurb": "Silhouettes of the 13 independent Caribbean countries.",
       "map": "world-countries",
       "quiz": "outlines",
       "modes": [

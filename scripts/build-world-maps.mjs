@@ -21,7 +21,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "geography", "maps");
 
 const { feature } = require("/tmp/geo-build/node_modules/topojson-client");
-const { geoNaturalEarth1, geoPath } = require("/tmp/geo-build/node_modules/d3-geo");
+const { geoNaturalEarth1, geoPath, geoCentroid } = require("/tmp/geo-build/node_modules/d3-geo");
 
 const topo = JSON.parse(readFileSync("/tmp/countries-50m.json", "utf8"));
 const countries = feature(topo, topo.objects.countries);
@@ -107,16 +107,28 @@ const projection = geoNaturalEarth1().fitExtent(
 );
 const toPath = geoPath(projection);
 const byIso = new Map();
+function addPath(iso, d) {
+  if (!d) return;
+  if (!byIso.has(iso)) byIso.set(iso, []);
+  byIso.get(iso).push(d);
+}
 for (const f of countries.features) {
   const idNum = f.id != null ? String(Number(f.id)) : "";
   let iso = idNum ? byNum.get(idNum) : null;
   const nm = (f.properties?.name || "").toLowerCase();
   if (!iso) iso = nameAliases[nm] || byName.get(nm);
   if (!iso) continue;
-  const d = toPath(f);
-  if (!d) continue;
-  if (!byIso.has(iso)) byIso.set(iso, []);
-  byIso.get(iso).push(d);
+  if (iso === "FR" && f.geometry?.type === "MultiPolygon") {
+    for (const poly of f.geometry.coordinates) {
+      const geom = { type: "Polygon", coordinates: poly };
+      const [lon, lat] = geoCentroid(geom);
+      const d = toPath(geom);
+      if (lon > -55 && lon < -50 && lat > 1 && lat < 6) addPath("GF", d);
+      else addPath("FR", d);
+    }
+    continue;
+  }
+  addPath(iso, toPath(f));
 }
 
 const contPaths = new Map();
@@ -179,6 +191,12 @@ if (!byIso.has("TV")) {
   const [x, y] = projection([179.1962, -8.5211]);
   extras.push(
     `<circle id="TV" data-id="TV" class="geo-region geo-island-dot" cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="5.5"/>`
+  );
+}
+if (!byIso.has("TK")) {
+  const [x, y] = projection([-171.833, -9.167]);
+  extras.push(
+    `<circle id="TK" data-id="TK" class="geo-region geo-island-dot" cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="5.5"/>`
   );
 }
 

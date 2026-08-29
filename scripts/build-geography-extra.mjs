@@ -388,7 +388,7 @@ async function outlinePack(srcId, id, name, blurb, map = "world-countries") {
 
 const outlinePacks = [
   await outlinePack("world-countries", "world-outlines", "World: Country Outlines", "Identify countries from their silhouettes."),
-  await outlinePack("na-countries", "na-outlines", "North & Central America: Outlines", "Silhouette drills for North & Central America."),
+  await outlinePack("na-countries", "na-outlines", "North & Central America: Outlines", "Silhouettes of the mainland plus Cuba, Haiti, the Dominican Republic, and Jamaica."),
   await outlinePack("sa-countries", "sa-outlines", "South America: Outlines", "Silhouette drills for South America."),
   await outlinePack("europe-countries", "europe-outlines", "Europe: Outlines", "Silhouette drills for Europe."),
   await outlinePack("africa-countries", "africa-outlines", "Africa: Outlines", "Silhouette drills for Africa."),
