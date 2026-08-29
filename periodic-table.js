@@ -362,6 +362,7 @@ function bindDetailSwipe() {
     if (detailSwipe.axis !== "h") return;
     if (e.cancelable) e.preventDefault();
     e.stopPropagation();
+    if (window.scrollX) window.scrollTo(0, window.scrollY);
     const el = cardEl();
     if (!el) return;
     const nextZ = dx < 0 ? pt.selectedZ + 1 : pt.selectedZ - 1;

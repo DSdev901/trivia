@@ -3023,9 +3023,10 @@ a.ce-tab {
   max-width: 36rem;
   width: 100%;
   scroll-margin-top: 1rem;
-  touch-action: pan-x;
+  touch-action: none;
   overscroll-behavior: none;
   overflow-anchor: none;
+  overflow-x: hidden;
 }
 
 .pt-detail.is-swiping,
@@ -3085,6 +3086,7 @@ a.ce-tab {
   padding: 1.15rem 1.25rem 1.35rem;
   box-shadow: var(--shadow);
   border-left-width: 5px;
+  touch-action: none;
 }
 
 .pt-detail-card.is-slide-next {
