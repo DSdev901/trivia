@@ -11,7 +11,7 @@
   --danger: #8b2e2e;
   --shadow: 0 12px 40px rgba(26, 35, 50, 0.08);
   --radius: 14px;
-  --font-display: "Outfit", "Segoe UI", sans-serif;
+  --font-display: "Oswald", "Arial Narrow", sans-serif;
   --font-body: "Source Sans 3", "Segoe UI", sans-serif;
   --app-max: 1280px;
   --app-inset: calc(0.625rem / 3);
@@ -165,7 +165,7 @@ body.is-home {
   font-size: clamp(2rem, 5vw, 2.75rem);
   font-size: clamp(2rem, 5svw, 2.75rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.03em;
   line-height: 1.1;
 }
 
@@ -367,7 +367,7 @@ body:not(.is-home) .app {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.03em;
 }
 
 .category-card h2 {
@@ -1301,7 +1301,7 @@ a.ce-tab {
   font-family: var(--font-display);
   font-size: 1.12rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   color: var(--ink);
 }
 
@@ -1798,7 +1798,7 @@ a.ce-tab {
   font-family: var(--font-display);
   font-size: clamp(1.65rem, 2.2vw, 1.9rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.03em;
 }
 
 .error {
@@ -1845,7 +1845,7 @@ a.ce-tab {
   font-family: var(--font-display);
   font-size: 1.45rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.03em;
 }
 
 .hub-card p {
@@ -2043,7 +2043,7 @@ a.ce-tab {
   font-size: clamp(1.35rem, 3.5vw, 1.85rem);
   font-size: clamp(1.35rem, 3.5svw, 1.85rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   line-height: 1.35;
   white-space: pre-wrap;
 }
@@ -2959,7 +2959,7 @@ a.ce-tab {
   font-size: clamp(0.85rem, 1.8vw, 1.15rem);
   font-size: clamp(0.85rem, 1.8svw, 1.15rem);
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 }
 
 .pt-name {
