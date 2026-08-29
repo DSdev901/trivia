@@ -314,8 +314,11 @@ const detailSwipe = {
   startY: 0,
   dx: 0,
   axis: null,
+  lockY: 0,
   unbind: null,
 };
+
+const SWIPE_AXIS_PX = 10;
 
 function unbindDetailSwipe() {
   detailSwipe.unbind?.();
@@ -347,6 +350,7 @@ function bindDetailSwipe() {
     detailSwipe.startY = y;
     detailSwipe.dx = 0;
     detailSwipe.axis = null;
+    detailSwipe.lockY = window.scrollY;
   };
 
   const move = (x, y, e) => {
@@ -355,14 +359,17 @@ function bindDetailSwipe() {
     const dy = y - detailSwipe.startY;
     detailSwipe.dx = dx;
     if (!detailSwipe.axis) {
-      if (Math.abs(dx) < 4 && Math.abs(dy) < 4) return;
+      if (Math.abs(dx) < SWIPE_AXIS_PX && Math.abs(dy) < SWIPE_AXIS_PX) return;
       detailSwipe.axis = Math.abs(dx) > Math.abs(dy) ? "h" : "v";
-      if (detailSwipe.axis === "h") panel.classList.add("is-swiping");
+      if (detailSwipe.axis === "h") {
+        panel.classList.add("is-swiping");
+        detailSwipe.lockY = window.scrollY;
+      }
     }
     if (detailSwipe.axis !== "h") return;
     if (e.cancelable) e.preventDefault();
     e.stopPropagation();
-    if (window.scrollX) window.scrollTo(0, window.scrollY);
+    window.scrollTo(window.scrollX, detailSwipe.lockY);
     const el = cardEl();
     if (!el) return;
     const nextZ = dx < 0 ? pt.selectedZ + 1 : pt.selectedZ - 1;

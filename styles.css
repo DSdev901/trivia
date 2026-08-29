@@ -3096,7 +3096,11 @@ a.ce-tab {
   padding: 1.15rem 1.25rem 1.35rem;
   box-shadow: var(--shadow);
   border-left-width: 5px;
-  touch-action: none;
+  touch-action: pan-y;
+}
+
+.pt-detail-card * {
+  touch-action: pan-y;
 }
 
 .pt-detail-card.is-slide-next {
