@@ -3070,14 +3070,22 @@ a.ce-tab {
   box-shadow: var(--shadow);
 }
 
-.pt-detail-step:hover:not(:disabled) {
-  border-color: var(--accent);
-  color: var(--accent-deep);
+@media (hover: hover) {
+  .pt-detail-step:hover:not(:disabled) {
+    border-color: var(--accent);
+    color: var(--accent-deep);
+  }
 }
 
 .pt-detail-step:disabled {
   opacity: 0.35;
   cursor: default;
+}
+
+.pt-detail-step.is-swipe-hint {
+  border-color: var(--accent);
+  color: var(--accent-deep);
+  opacity: 1;
 }
 
 .pt-detail-card {

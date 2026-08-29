@@ -369,6 +369,8 @@ function bindDetailSwipe() {
     const xOff = byZ(nextZ) ? dx : dx * 0.22;
     el.style.transform = `translateX(${xOff}px)`;
     el.style.opacity = String(1 - Math.min(0.35, Math.abs(xOff) / 420));
+    panel.querySelector("#pt-prev")?.classList.toggle("is-swipe-hint", dx < 0);
+    panel.querySelector("#pt-next")?.classList.toggle("is-swipe-hint", dx > 0);
   };
 
   const end = () => {
@@ -380,6 +382,8 @@ function bindDetailSwipe() {
     detailSwipe.axis = null;
     detailSwipe.dx = 0;
     panel.classList.remove("is-swiping");
+    panel.querySelector("#pt-prev")?.classList.remove("is-swipe-hint");
+    panel.querySelector("#pt-next")?.classList.remove("is-swipe-hint");
     resetCard();
     if (axis !== "h" || Math.abs(dx) < 28) return;
     stepElement(dx < 0 ? 1 : -1);
