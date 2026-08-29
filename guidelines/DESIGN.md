@@ -109,20 +109,20 @@ No gradients as brand surfaces (context).
 
 | Role | Face | License | Provenance |
 |---|---|---|---|
-| Display | Fraunces 500/700 | Google Fonts / OFL | context |
+| Display | Oswald 500/600/700 | Google Fonts / OFL | context |
 | Body | Source Sans 3 400/600/700 | Google Fonts / OFL | context |
 | Retro badges | Tahoma / Geneva | System | context |
 | Counter | ui-monospace / Courier | System | context |
 
 **Hierarchy (context, fluid where the live site already clamps)**
 
-- Hero / brand: Fraunces 700, `clamp(2rem, 5vw, 2.75rem)`, tracking `-0.02em`
-- Section titles: Fraunces 700, ~1.45–1.85rem
+- Hero / brand: Oswald 700, `clamp(2rem, 5vw, 2.75rem)`, tracking `0.03em`
+- Section titles: Oswald 700, ~1.45–1.85rem, tracking `0.03em`
 - Body: Source Sans 3, ~1.05rem, line-height 1.5, measure ≤ 65ch on ledes
 - Labels / hit-counter kicker: 0.72rem, uppercase, tracking `0.05em`, weight 700
-- Do not faux-bold. Do not outline Fraunces. Do not set quiz questions in all-caps.
+- Do not faux-bold. Do not outline Oswald. Do not set quiz questions in all-caps.
 
-**Alternate (encoded, researched):** display = Source Sans 3 — closer to 90s webmaster, colder clubhouse. Default remains Fraunces.
+**Alternate (encoded, researched):** display = Source Sans 3 — closer to 90s webmaster, colder clubhouse. Default remains Oswald.
 
 ## 05 · Iconography
 
@@ -243,7 +243,7 @@ Disclosure: this book was drafted by an agent from the repo (`context`). It is p
 
 Not a multi-brand company. **Hub-and-spoke categories** on one site: Current Events, Netflix, Prior Saucer Trivia, Presidential Knowledge, Periodic Table, Geography, Film & Movies, guestbook.
 
-Shared core: paper, ink, Fraunces, the General, quiz CTAs in ink.  
+Shared core: paper, ink, Oswald, the General, quiz CTAs in ink.  
 Allowed deviation: a category illustration on its card; maps vs posters vs tables.  
 Not a sub-brand: Radiant Art Room.
 
