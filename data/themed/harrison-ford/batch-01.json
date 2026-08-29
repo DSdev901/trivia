@@ -6,27 +6,27 @@
   "questions": [
     {
       "id": "ford-1-01",
-      "question": "What is Harrison Ford’s character named in Star Wars?",
-      "answer": "Han Solo",
+      "question": "In Star Wars, what does Han say he’s in it for, not the revolution?",
+      "answer": "The money",
       "choices": [
-        "Han Solo",
-        "Lando Calrissian",
-        "Wedge Antilles",
-        "Dexter Jettster"
+        "The money",
+        "The princess",
+        "A medal",
+        "A commission in the Alliance"
       ],
-      "note": "The smuggler from Corellia. Ford was a carpenter on the lot when George Lucas cast him."
+      "note": "He takes Luke’s charter to pay off a debt. The rescue is not the plan."
     },
     {
       "id": "ford-1-02",
-      "question": "What is the name of Han Solo’s ship?",
-      "answer": "Millennium Falcon",
+      "question": "In The Empire Strikes Back, how do Han and Leia hide the Falcon from the Star Destroyer after the asteroid chase?",
+      "answer": "They cling to its hull, then drift off with the garbage",
       "choices": [
-        "Millennium Falcon",
-        "Slave I",
-        "Tantive IV",
-        "Razor Crest"
+        "They cling to its hull, then drift off with the garbage",
+        "They jump to hyperspace from the hangar",
+        "They land in a crater and power down",
+        "They hide in a space slug the whole time"
       ],
-      "note": "The piece of junk that made the Kessel Run. Slave I is Boba Fett’s ship."
+      "note": "The slug comes first. Then the hull trick. Then the garbage dump."
     },
     {
       "id": "ford-1-03",

@@ -229,7 +229,7 @@ function categoryKicker(category) {
     case "themed":
       return "Harrison Ford Movies first, more Tuesday themes later";
     case "harrison-ford":
-      return "100 pub-quiz questions in ten rounds";
+      return "110 pub-quiz questions in eleven rounds";
     case "prior-saucer":
       return "Questions from uploaded photos";
     case "presidents":

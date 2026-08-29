@@ -78,6 +78,18 @@
     },
     {
       "id": "ford-8-07",
+      "question": "Who directed Working Girl (1988)?",
+      "answer": "Mike Nichols",
+      "choices": [
+        "Mike Nichols",
+        "Peter Weir",
+        "Sydney Pollack",
+        "Alan J. Pakula"
+      ],
+      "note": "Nichols also made The Graduate and Regarding Henry. The Carly Simon theme won the Oscar."
+    },
+    {
+      "id": "ford-8-08",
       "question": "In Frantic, Ford’s American doctor is in Paris when his wife vanishes. What got switched at the airport?",
       "answer": "Their suitcase",
       "choices": [
@@ -86,43 +98,31 @@
         "Their hotel reservation",
         "Their rental car"
       ],
-      "note": "Roman Polanski directed. 1988. He is San Francisco surgeon Richard Walker, in town for a conference."
-    },
-    {
-      "id": "ford-8-08",
-      "question": "In The Mosquito Coast, what does Ford’s Allie Fox haul into the jungle to build?",
-      "answer": "An ice machine",
-      "choices": [
-        "An ice machine",
-        "A radio tower",
-        "A dam",
-        "A school"
-      ],
-      "note": "He is an inventor who has had it with America. The machine is named Fat Boy."
+      "note": "Roman Polanski directed. 1988. The mix-up is at de Gaulle."
     },
     {
       "id": "ford-8-09",
-      "question": "In Regarding Henry, what is Ford’s ruthless lawyer named?",
-      "answer": "Henry Turner",
+      "question": "In Frantic, what is Ford’s San Francisco doctor named?",
+      "answer": "Richard Walker",
       "choices": [
+        "Richard Walker",
+        "Richard Kimble",
         "Henry Turner",
-        "Allie Fox",
-        "Jack Trainer",
-        "Linus Larrabee"
+        "John Book"
       ],
-      "note": "He is shot in the head during a convenience-store robbery and has to start over. Annette Bening is his wife. Mike Nichols directed."
+      "note": "A heart surgeon. He is in town for a conference when Sondra disappears."
     },
     {
       "id": "ford-8-10",
-      "question": "In Presumed Innocent, what is Ford’s prosecutor named?",
-      "answer": "Rusty Sabich",
+      "question": "In Frantic, why is Ford’s doctor in Paris in the first place?",
+      "answer": "A medical conference",
       "choices": [
-        "Rusty Sabich",
-        "John Book",
-        "Richard Kimble",
-        "Henry Turner"
+        "A medical conference",
+        "A second honeymoon",
+        "A CIA briefing",
+        "To buy an apartment"
       ],
-      "note": "He is on trial for killing Carolyn Polhemus, a colleague he had an affair with. Alan J. Pakula directed, from Scott Turow’s novel. 1990."
+      "note": "They land, grab the wrong bag, and his wife is gone from the hotel."
     }
   ]
 }

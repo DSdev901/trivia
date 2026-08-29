@@ -1,6 +1,6 @@
 # Themed trivia
 
-Themed Trivia is a home category for Tuesday night themes. Harrison Ford Movies is the first pack: 100 questions in ten rounds, with Study and Quiz.
+Themed Trivia is a home category for Tuesday night themes. Harrison Ford Movies is the first pack: 110 questions in eleven rounds, with Study and Quiz.
 
 ## Sub-features
 
