@@ -46,17 +46,7 @@ const ISO_CONT = {
   BH: "AS", KW: "AS",
   AU: "OC", NZ: "OC", PG: "OC", SB: "OC", VU: "OC", NC: "OC", FJ: "OC", TO: "OC",
   WS: "OC", KI: "OC", TV: "OC", NR: "OC", PW: "OC", FM: "OC", MH: "OC",
-  AS: "OC", CK: "OC", PF: "OC", GU: "OC", NU: "OC", MP: "OC", PN: "OC", TK: "OC",
-  WF: "OC",
 };
-
-/** Small Pacific islands. Pin zooms to the cluster, not the whole continent. */
-const PACIFIC_CLUSTERS = [
-  ["FJ", "SB", "VU", "NC"],
-  ["KI", "MH", "FM", "NR", "PW", "GU", "MP"],
-  ["WS", "TO", "TV", "AS", "NU", "TK", "WF", "CK"],
-  ["PF", "PN"],
-];
 
 const LANDLOCKED = new Set([
   "AD", "AF", "AM", "AT", "AZ", "BY", "BF", "BI", "BO", "BT", "BW", "CF", "CH",
@@ -122,8 +112,6 @@ const geo = {
   selectedId: null,
   _mapLabel: null,
   _focusHalo: false,
-  _packViewBox: null,
-  _packPanLimit: null,
   _panLimit: null,
   _zoomAnim: 0,
   _pinMisses: 0,
@@ -382,7 +370,6 @@ async function loadPack(packMeta) {
   geo.mapSvg = "";
   geo._baseViewBox = null;
   geo._packViewBox = null;
-  geo._packPanLimit = null;
   geo._panLimit = null;
   if (packMeta.map && MAPS[packMeta.map]) {
     const mapRes = await fetch(MAPS[packMeta.map]);
@@ -839,7 +826,7 @@ function packFitPadRatio() {
   return 0.03;
 }
 
-function paddedViewBox(bounds, padRatio, { minSpan } = {}) {
+function paddedViewBox(bounds, padRatio) {
   const { minX, minY, maxX, maxY } = bounds;
   const bw = Math.max(1, maxX - minX);
   const bh = Math.max(1, maxY - minY);
@@ -847,20 +834,13 @@ function paddedViewBox(bounds, padRatio, { minSpan } = {}) {
   const minPad = markers ? 16 : 8;
   const padX = Math.max(minPad, bw * padRatio);
   const padY = Math.max(minPad, bh * padRatio);
-  const floor = minSpan != null ? minSpan : markers ? 0 : 30 / PLACE_ZOOM;
-  let w = bw + padX * 2;
-  let h = bh + padY * 2;
-  let x = minX - padX;
-  let y = minY - padY;
-  if (w < floor) {
-    x -= (floor - w) / 2;
-    w = floor;
-  }
-  if (h < floor) {
-    y -= (floor - h) / 2;
-    h = floor;
-  }
-  return { x, y, w, h };
+  const minSpan = markers ? 0 : 30 / PLACE_ZOOM;
+  return {
+    x: minX - padX,
+    y: minY - padY,
+    w: Math.max(minSpan, bw + padX * 2),
+    h: Math.max(minSpan, bh + padY * 2),
+  };
 }
 
 function viewBoxAttr(vb) {
@@ -894,8 +874,8 @@ function fullMapViewBox() {
   return viewBoxParts(geo._baseViewBox || geo._packViewBox);
 }
 
-function applyViewBox(svg, bounds, padRatio, storeAsPack, padOpts) {
-  const vb = paddedViewBox(bounds, padRatio, padOpts);
+function applyViewBox(svg, bounds, padRatio, storeAsPack) {
+  const vb = paddedViewBox(bounds, padRatio);
   svg.setAttribute("viewBox", viewBoxAttr(vb));
   coverOcean(svg, vb.x, vb.y, vb.w, vb.h);
   if (storeAsPack) geo._packViewBox = viewBoxAttr(vb);
@@ -990,27 +970,22 @@ function panIdsForPack(host, inPack) {
   return contIds;
 }
 
-function fitMapToIds(
-  ids,
-  { padRatio = 0.12, storeAsPack = false, panIds = null, allowFullMap = true, minSpan } = {}
-) {
+function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false, panIds = null } = {}) {
   const host = geo.root?.querySelector("#geo-map");
   const svg = host?.querySelector("svg");
-  if (!host || !svg) return false;
+  if (!host || !svg) return;
   ensureBaseViewBox(svg);
   unwrapPackRegions(host, svg);
 
   const bounds = boundsForFitIds(host, svg, ids, { coreOnly: true });
   if (!bounds || bounds.useFullMap) {
-    if (!allowFullMap) return false;
     resetMapViewBox();
     if (storeAsPack) geo._packViewBox = geo._baseViewBox;
     geo._panLimit = geo._packViewBox || geo._baseViewBox;
-    if (storeAsPack) geo._packPanLimit = geo._panLimit;
-    return false;
+    return;
   }
 
-  const packVb = applyViewBox(svg, bounds, padRatio, storeAsPack, { minSpan });
+  const packVb = applyViewBox(svg, bounds, padRatio, storeAsPack);
   const panSource = panIds?.length ? panIds : ids;
   const panBounds = boundsForFitIds(host, svg, panSource);
   const full = expandViewBox(fullMapViewBox(), 0.04);
@@ -1022,85 +997,7 @@ function fitMapToIds(
   }
   panVb = unionViewBox(packVb, panVb);
   geo._panLimit = viewBoxAttr(panVb);
-  if (storeAsPack) geo._packPanLimit = geo._panLimit;
   coverOcean(svg, panVb.x, panVb.y, panVb.w, panVb.h);
-  return true;
-}
-
-function pacificClusterIds(id) {
-  if (!id || !isWorldCountriesMap()) return null;
-  const cluster = PACIFIC_CLUSTERS.find((c) => c.includes(id));
-  if (!cluster) return null;
-  const inPack = packItemIds();
-  const ids = cluster.filter((iso) => inPack.has(iso));
-  if (ids.length < 2) return null;
-  return ids;
-}
-
-/** Keep enough neighbors to read the region, drop islands that blow the zoom. */
-function pinPacificCropIds(host, svg, id) {
-  const cluster = pacificClusterIds(id);
-  if (!cluster) return null;
-  const self = regionAnchor(host, id);
-  const ranked = cluster
-    .map((cid) => {
-      const a = regionAnchor(host, cid);
-      const d = a && self ? Math.hypot(a.x - self.x, a.y - self.y) : cid === id ? 0 : Infinity;
-      return { id: cid, d };
-    })
-    .sort((a, b) => a.d - b.d);
-
-  const fits = (ids) => {
-    const bounds = boundsForFitIds(host, svg, ids, { coreOnly: true });
-    return Boolean(bounds && !bounds.useFullMap);
-  };
-  const targetShare = (ids) => {
-    const bounds = boundsForFitIds(host, svg, ids, { coreOnly: true });
-    if (!bounds || bounds.useFullMap) return 0;
-    const span = Math.max(bounds.maxX - bounds.minX, bounds.maxY - bounds.minY, 1);
-    const a = regionAnchor(host, id);
-    if (!a) return 1;
-    return Math.min(a.w, a.h) / span;
-  };
-
-  const picked = [];
-  for (const row of ranked) {
-    const next = [...picked, row.id];
-    if (!fits(next)) continue;
-    if (picked.length >= 2 && targetShare(next) < 0.02) break;
-    picked.push(row.id);
-  }
-  return picked.length >= 2 ? picked : null;
-}
-
-function restorePackView(host) {
-  const svg = host?.querySelector("svg");
-  if (!svg || !geo._packViewBox) return;
-  svg.setAttribute("viewBox", geo._packViewBox);
-  geo._panLimit = geo._packPanLimit || geo._packViewBox;
-  const vb = viewBoxParts(geo._panLimit);
-  coverOcean(svg, vb.x, vb.y, vb.w, vb.h);
-}
-
-function applyPinPacificCrop(host) {
-  if (geo.mode !== "pin" || geo.pack?.overlay === "markers") return;
-  const svg = host.querySelector("svg");
-  const cropIds = svg ? pinPacificCropIds(host, svg, currentItem()?.id) : null;
-  const cropKey = cropIds ? cropIds.slice().sort().join(" ") : "pack";
-  if (host.dataset.geoPinCrop === cropKey) return;
-  host.dataset.geoPinCrop = cropKey;
-  if (!cropIds) {
-    restorePackView(host);
-    return;
-  }
-  const ok = fitMapToIds(cropIds, {
-    padRatio: 0.35,
-    storeAsPack: false,
-    panIds: cropIds,
-    allowFullMap: false,
-    minSpan: 0,
-  });
-  if (!ok) restorePackView(host);
 }
 
 function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
@@ -1158,9 +1055,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
         host.querySelector("svg")?.setAttribute("viewBox", geo._packViewBox);
       }
       host.dataset.geoFitted = "1";
-      host.dataset.geoPinCrop = "";
     }
-    applyPinPacificCrop(host);
   } else {
     resetMapViewBox();
   }
@@ -1240,31 +1135,6 @@ function nearestMarkerId(host, svg, pt) {
   return best;
 }
 
-function isSoftTapTarget(anchor, svg) {
-  if (!anchor?.el) return false;
-  if (anchor.el.classList.contains("geo-island-dot")) return true;
-  if (anchor.el.tagName.toLowerCase() === "circle") return true;
-  const s = mapPxScale(svg);
-  return Math.max(anchor.w, anchor.h) * s < 28;
-}
-
-function nearestSoftTargetId(host, svg, pt) {
-  const maxR = markerTapRadiusSvg(svg);
-  const maxR2 = maxR * maxR;
-  let best = null;
-  let bestD = Infinity;
-  for (const item of geo.items) {
-    const a = regionAnchor(host, item.id);
-    if (!a || !isSoftTapTarget(a, svg)) continue;
-    const d2 = (pt.x - a.x) ** 2 + (pt.y - a.y) ** 2;
-    if (d2 <= maxR2 && d2 < bestD) {
-      bestD = d2;
-      best = item.id;
-    }
-  }
-  return best;
-}
-
 function mapTargetId(e) {
   const host = e.currentTarget?.closest?.("#geo-map") || geo.root?.querySelector("#geo-map");
   const svg = host?.querySelector("svg");
@@ -1276,8 +1146,6 @@ function mapTargetId(e) {
     }
     if (geo.pack?.overlay === "markers") return null;
   }
-  const svgPt = host && svg ? clientToSvgPoint(svg, e.clientX, e.clientY) : null;
-  const soft = svgPt ? nearestSoftTargetId(host, svg, svgPt) : null;
   const stack = document.elementsFromPoint(e.clientX, e.clientY);
   let tinyId = null;
   for (const node of stack) {
@@ -1293,13 +1161,9 @@ function mapTargetId(e) {
       continue;
     }
     const id = regionIdFromNode(node);
-    if (id) {
-      const a = regionAnchor(host, id);
-      if (a && !isSoftTapTarget(a, svg) && soft !== id) return id;
-      return soft || id;
-    }
+    if (id) return id;
   }
-  return soft || tinyId;
+  return tinyId;
 }
 
 function regionIdFromNode(node) {
@@ -2966,7 +2830,6 @@ export function cleanupGeography() {
   geo.mapSvg = "";
   geo._baseViewBox = null;
   geo._packViewBox = null;
-  geo._packPanLimit = null;
   geo._panLimit = null;
   geo._mapLabel = null;
   geo._pinMisses = 0;

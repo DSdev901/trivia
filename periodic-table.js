@@ -137,6 +137,48 @@ function applyListenFocusClass() {
   );
 }
 
+function scrollTableCellIntoView(z) {
+  const cell = pt.root?.querySelector(`.pt-cell[data-z="${z}"]`);
+  const stage = pt.root?.querySelector(".pt-stage");
+  if (!cell || !stage) return;
+  const cellRect = cell.getBoundingClientRect();
+  const stageRect = stage.getBoundingClientRect();
+  const pad = 10;
+  let dx = 0;
+  if (cellRect.left < stageRect.left + pad) {
+    dx = cellRect.left - stageRect.left - pad;
+  } else if (cellRect.right > stageRect.right - pad) {
+    dx = cellRect.right - stageRect.right + pad;
+  }
+  if (!dx) return;
+  const pageX = window.scrollX;
+  const pageY = window.scrollY;
+  stage.scrollLeft += dx;
+  window.scrollTo(pageX, pageY);
+}
+
+function stepElement(delta) {
+  const z = pt.selectedZ + delta;
+  if (!byZ(z)) return false;
+  if (pt.playing) stopTour();
+  const pageX = window.scrollX;
+  const pageY = window.scrollY;
+  const active = document.activeElement;
+  if (active instanceof HTMLElement && active.closest("#pt-detail")) {
+    active.blur();
+  }
+  selectElement(z, { scroll: false, slide: delta });
+  const pinPage = () => window.scrollTo(pageX, pageY);
+  pinPage();
+  scrollTableCellIntoView(z);
+  pinPage();
+  requestAnimationFrame(() => {
+    pinPage();
+    requestAnimationFrame(pinPage);
+  });
+  return true;
+}
+
 function scrollListenFocus(z) {
   if (!pt.root) return;
   applyListenFocusClass();
@@ -265,14 +307,6 @@ function selectElement(z, { speakOne = false, scroll = true, slide = 0 } = {}) {
   }
 }
 
-function stepElement(delta) {
-  const z = pt.selectedZ + delta;
-  if (!byZ(z)) return false;
-  if (pt.playing) stopTour();
-  selectElement(z, { scroll: false, slide: delta });
-  return true;
-}
-
 const detailSwipe = {
   id: null,
   using: null,
@@ -327,6 +361,7 @@ function bindDetailSwipe() {
     }
     if (detailSwipe.axis !== "h") return;
     if (e.cancelable) e.preventDefault();
+    e.stopPropagation();
     const el = cardEl();
     if (!el) return;
     const nextZ = dx < 0 ? pt.selectedZ + 1 : pt.selectedZ - 1;
@@ -350,6 +385,7 @@ function bindDetailSwipe() {
   };
 
   const onTouchStart = (e) => {
+    if (e.target.closest("button")) return;
     if (e.touches.length !== 1) return;
     const t = e.touches[0];
     begin(t.clientX, t.clientY, t.identifier, "touch");
@@ -373,6 +409,7 @@ function bindDetailSwipe() {
 
   const onPointerDown = (e) => {
     if (e.button !== 0) return;
+    if (e.target.closest("button")) return;
     if (detailSwipe.id != null) return;
     if (e.pointerType === "mouse" && !coarsePointer()) return;
     begin(e.clientX, e.clientY, e.pointerId, "pointer");
@@ -587,7 +624,18 @@ function renderDetail(slide = 0) {
     el.discoveredYear != null ? String(el.discoveredYear) : "ancient times";
   const slideClass =
     slide > 0 ? " is-slide-next" : slide < 0 ? " is-slide-prev" : "";
+  const canPrev = Boolean(byZ(el.Z - 1));
+  const canNext = Boolean(byZ(el.Z + 1));
   panel.innerHTML = `
+    <div class="pt-detail-swipe-row">
+      <button type="button" class="pt-detail-step" id="pt-prev" aria-label="Previous element"${
+        canPrev ? "" : " disabled"
+      }>‹</button>
+      <p class="pt-detail-swipe-label">swipe card</p>
+      <button type="button" class="pt-detail-step" id="pt-next" aria-label="Next element"${
+        canNext ? "" : " disabled"
+      }>›</button>
+    </div>
     <div class="pt-detail-card pt-cat-${escapeHtml(el.category)}${slideClass}">
       <div class="pt-detail-head">
         <div class="pt-detail-symbol" aria-hidden="true">${escapeHtml(el.symbol)}</div>
@@ -617,7 +665,6 @@ function renderDetail(slide = 0) {
             </div>`
           : ""
       }
-      <p class="pt-detail-swipe-hint">Swipe left for the next atomic number, right for the previous.</p>
     </div>`;
   applyListenFocusClass();
 }
@@ -627,6 +674,12 @@ function bindDetailSpeech() {
     unlockSpeech();
     const el = byZ(pt.selectedZ);
     if (el) void speakElement(el);
+  });
+  pt.root?.querySelector("#pt-prev")?.addEventListener("click", () => {
+    stepElement(-1);
+  });
+  pt.root?.querySelector("#pt-next")?.addEventListener("click", () => {
+    stepElement(1);
   });
 }
 
