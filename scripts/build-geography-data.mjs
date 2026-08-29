@@ -276,22 +276,98 @@ const byRegion = (region) =>
 const northernAmerica = bySub(["North America"]);
 const centralAmerica = bySub(["Central America"]);
 const caribbean = bySub(["Caribbean"]);
-const northCentralCaribbean = filterCountries(
+// Seterra North and Central America: Countries (geoguessr.com/vgp/3015).
+// Tiny island states are unclickable on the continent map, so they live on
+// the Caribbean quizzes. Cuba, Haiti, the Dominican Republic, and Jamaica
+// stay here and also appear on Caribbean: Countries.
+const SETERRA_NA_COUNTRIES = new Set([
+  "BZ",
+  "CA",
+  "CR",
+  "CU",
+  "DO",
+  "SV",
+  "GT",
+  "HT",
+  "HN",
+  "JM",
+  "MX",
+  "NI",
+  "PA",
+  "US",
+]);
+const naContinentCountries = filterCountries(
   raw,
   mapIds,
-  (c) =>
-    c.unMember === true &&
-    ["North America", "Central America", "Caribbean"].includes(c.subregion)
+  (c) => c.unMember === true && SETERRA_NA_COUNTRIES.has(c.cca2)
 );
-const southAmerica = bySub(["South America"]);
-const europe = filterCountries(
-  raw,
-  mapIds,
-  (c) =>
-    (c.unMember === true || c.cca2 === "XK") &&
-    c.region === "Europe"
+const PACK_EXTRAS = {
+  XK: {
+    id: "XK",
+    name: "Kosovo",
+    capital: "Pristina",
+    flag: "🇽🇰",
+    region: "Europe",
+    subregion: "Southeast Europe",
+  },
+  EH: {
+    id: "EH",
+    name: "Western Sahara",
+    capital: "",
+    flag: "🇪🇭",
+    region: "Africa",
+    subregion: "Northern Africa",
+    fact: "UN non-self-governing territory. Morocco administers most of it. The Sahrawi Arab Democratic Republic claims it.",
+  },
+  GF: {
+    id: "GF",
+    name: "French Guiana",
+    capital: "Cayenne",
+    flag: "🇬🇫",
+    region: "Americas",
+    subregion: "South America",
+  },
+};
+
+function withMapExtras(items, ids) {
+  const have = new Set(items.map((it) => it.id));
+  const next = items.slice();
+  for (const id of ids) {
+    if (!have.has(id) && mapIds.has(id) && PACK_EXTRAS[id]) next.push(PACK_EXTRAS[id]);
+  }
+  return next.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+const southAmerica = withMapExtras(
+  filterCountries(
+    raw,
+    mapIds,
+    (c) =>
+      c.subregion === "South America" &&
+      (c.unMember === true || c.cca2 === "GF")
+  ),
+  ["GF"]
 );
-const africa = byRegion("Africa");
+const europe = withMapExtras(
+  filterCountries(
+    raw,
+    mapIds,
+    (c) =>
+      (c.unMember === true || c.cca2 === "XK") &&
+      c.region === "Europe"
+  ),
+  ["XK"]
+);
+const africa = withMapExtras(
+  filterCountries(
+    raw,
+    mapIds,
+    (c) =>
+      c.region === "Africa" &&
+      (c.unMember === true || c.cca2 === "EH")
+  ),
+  ["EH"]
+);
 const asia = byRegion("Asia");
 const oceania = byRegion("Oceania");
 
@@ -500,23 +576,23 @@ addPack(
 await writeCountryPack(
   "na-countries",
   "North & Central America: Countries",
-  "Canada, the U.S., Mexico, Central America, and the Caribbean.",
+  "Canada, the U.S., Mexico, Central America, plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
   "north-america",
-  northCentralCaribbean
+  naContinentCountries
 );
 await writeCapitalPack(
   "na-capitals",
   "North & Central America: Capitals",
-  "Capitals across North America, Central America, and the Caribbean.",
+  "Capitals from Canada to Panama, plus Havana, Kingston, Port-au-Prince, and Santo Domingo.",
   "north-america",
-  northCentralCaribbean
+  naContinentCountries
 );
 await writeFlagPack(
   "na-flags",
   "North & Central America: Flags",
-  "Flags for North America, Central America, and the Caribbean.",
+  "Flags for the mainland plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
   "north-america",
-  northCentralCaribbean
+  naContinentCountries
 );
 await writeCountryPack(
   "central-america-countries",
@@ -534,22 +610,22 @@ await writeCapitalPack(
 );
 await writeCountryPack(
   "caribbean-countries",
-  "Caribbean: Countries",
-  "Island nations of the Caribbean.",
+  "The Caribbean: Countries",
+  "The 13 independent island nations. Cuba, Haiti, the Dominican Republic, and Jamaica also appear on the continent quiz.",
   "north-america",
   caribbean
 );
 await writeCapitalPack(
   "caribbean-capitals",
-  "Caribbean: Capitals",
-  "Capitals of Caribbean countries.",
+  "The Caribbean: Capitals",
+  "Capitals of the 13 independent Caribbean countries.",
   "north-america",
   caribbean
 );
 await writeFlagPack(
   "caribbean-flags",
-  "Caribbean: Flags",
-  "Flags of Caribbean countries.",
+  "The Caribbean: Flags",
+  "Flags of the 13 independent Caribbean countries.",
   "north-america",
   caribbean
 );
@@ -565,7 +641,7 @@ await writeCountryPack(
 await writeCountryPack(
   "sa-countries",
   "South America: Countries",
-  "Every South American country — Pin and Type.",
+  "The 12 countries plus French Guiana.",
   "south-america",
   southAmerica
 );
@@ -611,7 +687,7 @@ await writeFlagPack(
 await writeCountryPack(
   "africa-countries",
   "Africa: Countries",
-  "African countries — Pin and Type.",
+  "African countries, including Western Sahara.",
   "africa",
   africa
 );
