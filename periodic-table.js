@@ -387,6 +387,7 @@ function bindDetailSwipe() {
 
   const onTouchStart = (e) => {
     if (e.target.closest("button")) return;
+    if (!e.target.closest(".pt-detail-card")) return;
     if (e.touches.length !== 1) return;
     const t = e.touches[0];
     begin(t.clientX, t.clientY, t.identifier, "touch");
@@ -411,6 +412,7 @@ function bindDetailSwipe() {
   const onPointerDown = (e) => {
     if (e.button !== 0) return;
     if (e.target.closest("button")) return;
+    if (!e.target.closest(".pt-detail-card")) return;
     if (detailSwipe.id != null) return;
     if (e.pointerType === "mouse" && !coarsePointer()) return;
     begin(e.clientX, e.clientY, e.pointerId, "pointer");
