@@ -265,6 +265,138 @@ function selectElement(z, { speakOne = false } = {}) {
   }
 }
 
+function swipeList() {
+  const all = pt.data?.elements || [];
+  const scoped = elementsForScope();
+  if (scoped.some((e) => e.Z === pt.selectedZ)) return scoped;
+  return all;
+}
+
+function peekSwipeZ(delta) {
+  const list = swipeList();
+  const i = list.findIndex((e) => e.Z === pt.selectedZ);
+  if (i < 0) return null;
+  return list[i + delta]?.Z ?? null;
+}
+
+function stepElement(delta) {
+  const z = peekSwipeZ(delta);
+  if (z == null) return false;
+  if (pt.playing) stopTour();
+  selectElement(z);
+  return true;
+}
+
+const detailSwipe = {
+  pointerId: null,
+  startX: 0,
+  startY: 0,
+  dx: 0,
+  axis: null,
+  unbind: null,
+};
+
+function unbindDetailSwipe() {
+  detailSwipe.unbind?.();
+  detailSwipe.unbind = null;
+  detailSwipe.pointerId = null;
+  detailSwipe.axis = null;
+}
+
+function bindDetailSwipe() {
+  unbindDetailSwipe();
+  const panel = pt.root?.querySelector("#pt-detail");
+  if (!panel) return;
+
+  const card = () => panel.querySelector(".pt-detail-card");
+
+  const resetCard = () => {
+    const el = card();
+    if (!el) return;
+    el.style.transform = "";
+    el.style.opacity = "";
+  };
+
+  const finish = () => {
+    const dx = detailSwipe.dx;
+    const axis = detailSwipe.axis;
+    detailSwipe.pointerId = null;
+    detailSwipe.axis = null;
+    detailSwipe.dx = 0;
+    panel.classList.remove("is-swiping");
+    resetCard();
+    if (axis !== "h" || Math.abs(dx) < 48) return;
+    stepElement(dx < 0 ? 1 : -1);
+  };
+
+  const onDown = (e) => {
+    if (e.button !== 0) return;
+    if (e.pointerType === "mouse") return;
+    detailSwipe.pointerId = e.pointerId;
+    detailSwipe.startX = e.clientX;
+    detailSwipe.startY = e.clientY;
+    detailSwipe.dx = 0;
+    detailSwipe.axis = null;
+  };
+
+  const onMove = (e) => {
+    if (e.pointerId !== detailSwipe.pointerId) return;
+    const dx = e.clientX - detailSwipe.startX;
+    const dy = e.clientY - detailSwipe.startY;
+    detailSwipe.dx = dx;
+    if (!detailSwipe.axis) {
+      if (Math.abs(dx) < 12 && Math.abs(dy) < 12) return;
+      detailSwipe.axis = Math.abs(dx) > Math.abs(dy) ? "h" : "v";
+      if (detailSwipe.axis === "h") {
+        panel.classList.add("is-swiping");
+        try {
+          panel.setPointerCapture(e.pointerId);
+        } catch {
+          /* still get events while over the panel */
+        }
+      }
+    }
+    if (detailSwipe.axis !== "h") return;
+    const el = card();
+    if (!el) return;
+    const blocked =
+      (dx < 0 && peekSwipeZ(1) == null) || (dx > 0 && peekSwipeZ(-1) == null);
+    const x = blocked ? dx * 0.22 : dx;
+    el.style.transform = `translateX(${x}px)`;
+    el.style.opacity = String(1 - Math.min(0.35, Math.abs(x) / 420));
+  };
+
+  const onUp = (e) => {
+    if (e.pointerId !== detailSwipe.pointerId) return;
+    finish();
+  };
+
+  const onTouchMove = (e) => {
+    if (detailSwipe.axis !== "h") return;
+    e.preventDefault();
+  };
+
+  panel.addEventListener("pointerdown", onDown);
+  panel.addEventListener("pointermove", onMove);
+  panel.addEventListener("pointerup", onUp);
+  panel.addEventListener("pointercancel", onUp);
+  panel.addEventListener("lostpointercapture", onUp);
+  panel.addEventListener("touchmove", onTouchMove, { passive: false });
+  window.addEventListener("pointerup", onUp);
+  window.addEventListener("pointercancel", onUp);
+
+  detailSwipe.unbind = () => {
+    panel.removeEventListener("pointerdown", onDown);
+    panel.removeEventListener("pointermove", onMove);
+    panel.removeEventListener("pointerup", onUp);
+    panel.removeEventListener("pointercancel", onUp);
+    panel.removeEventListener("lostpointercapture", onUp);
+    panel.removeEventListener("touchmove", onTouchMove);
+    window.removeEventListener("pointerup", onUp);
+    window.removeEventListener("pointercancel", onUp);
+  };
+}
+
 async function speakElement(el) {
   stopTour();
   pt.playing = true;
@@ -463,6 +595,7 @@ function renderDetail() {
             </div>`
           : ""
       }
+      <p class="pt-detail-swipe-hint">Swipe left or right for the previous or next element.</p>
     </div>`;
   applyListenFocusClass();
 }
@@ -693,6 +826,7 @@ function bind() {
   });
 
   bindDetailSpeech();
+  bindDetailSwipe();
 }
 
 export async function renderPeriodicTable({ els, onStartQuiz = null }) {
@@ -718,5 +852,6 @@ export async function renderPeriodicTable({ els, onStartQuiz = null }) {
 }
 
 export function cleanupPeriodicTable() {
+  unbindDetailSwipe();
   stopTour();
 }

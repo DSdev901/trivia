@@ -3020,6 +3020,16 @@ a.ce-tab {
 .pt-detail {
   margin-top: 0.5rem;
   scroll-margin-top: 1rem;
+  touch-action: pan-y;
+}
+
+.pt-detail.is-swiping,
+.pt-detail.is-swiping * {
+  user-select: none;
+}
+
+.pt-detail-swipe-hint {
+  display: none;
 }
 
 .pt-detail-card {
@@ -4217,6 +4227,13 @@ a.ce-tab {
   .pt-swipe-hint {
     display: block;
     margin: 0 0 0.55rem;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+
+  .pt-detail-swipe-hint {
+    display: block;
+    margin: 0.85rem 0 0;
     font-size: 0.82rem;
     color: var(--ink-soft);
   }
