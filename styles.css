@@ -3021,6 +3021,7 @@ a.ce-tab {
   margin-top: 0.5rem;
   scroll-margin-top: 1rem;
   touch-action: pan-y;
+  overscroll-behavior-x: none;
 }
 
 .pt-detail.is-swiping,
@@ -3039,6 +3040,43 @@ a.ce-tab {
   padding: 1.15rem 1.25rem 1.35rem;
   box-shadow: var(--shadow);
   border-left-width: 5px;
+}
+
+.pt-detail-card.is-slide-next {
+  animation: pt-slide-next 0.22s ease;
+}
+
+.pt-detail-card.is-slide-prev {
+  animation: pt-slide-prev 0.22s ease;
+}
+
+@keyframes pt-slide-next {
+  from {
+    transform: translateX(32%);
+    opacity: 0.35;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes pt-slide-prev {
+  from {
+    transform: translateX(-32%);
+    opacity: 0.35;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pt-detail-card.is-slide-next,
+  .pt-detail-card.is-slide-prev {
+    animation: none;
+  }
 }
 
 .pt-detail-card.is-listen-focus {

@@ -253,42 +253,29 @@ function applyCategoryFilter() {
   }
 }
 
-function selectElement(z, { speakOne = false } = {}) {
+function selectElement(z, { speakOne = false, scroll = true, slide = 0 } = {}) {
   const el = byZ(z);
   if (!el) return;
   pt.selectedZ = z;
-  highlight(z);
-  renderDetail();
+  highlight(z, { scroll });
+  renderDetail(slide);
   bindDetailSpeech();
   if (speakOne && pt.canSpeak && !pt.playing) {
     void speakElement(el);
   }
 }
 
-function swipeList() {
-  const all = pt.data?.elements || [];
-  const scoped = elementsForScope();
-  if (scoped.some((e) => e.Z === pt.selectedZ)) return scoped;
-  return all;
-}
-
-function peekSwipeZ(delta) {
-  const list = swipeList();
-  const i = list.findIndex((e) => e.Z === pt.selectedZ);
-  if (i < 0) return null;
-  return list[i + delta]?.Z ?? null;
-}
-
 function stepElement(delta) {
-  const z = peekSwipeZ(delta);
-  if (z == null) return false;
+  const z = pt.selectedZ + delta;
+  if (!byZ(z)) return false;
   if (pt.playing) stopTour();
-  selectElement(z);
+  selectElement(z, { scroll: false, slide: delta });
   return true;
 }
 
 const detailSwipe = {
-  pointerId: null,
+  id: null,
+  using: null,
   startX: 0,
   startY: 0,
   dx: 0,
@@ -299,7 +286,8 @@ const detailSwipe = {
 function unbindDetailSwipe() {
   detailSwipe.unbind?.();
   detailSwipe.unbind = null;
-  detailSwipe.pointerId = null;
+  detailSwipe.id = null;
+  detailSwipe.using = null;
   detailSwipe.axis = null;
 }
 
@@ -308,92 +296,124 @@ function bindDetailSwipe() {
   const panel = pt.root?.querySelector("#pt-detail");
   if (!panel) return;
 
-  const card = () => panel.querySelector(".pt-detail-card");
+  const cardEl = () => panel.querySelector(".pt-detail-card");
 
   const resetCard = () => {
-    const el = card();
+    const el = cardEl();
     if (!el) return;
     el.style.transform = "";
     el.style.opacity = "";
   };
 
-  const finish = () => {
+  const begin = (x, y, id, using) => {
+    if (detailSwipe.id != null) return;
+    detailSwipe.id = id;
+    detailSwipe.using = using;
+    detailSwipe.startX = x;
+    detailSwipe.startY = y;
+    detailSwipe.dx = 0;
+    detailSwipe.axis = null;
+  };
+
+  const move = (x, y, e) => {
+    if (detailSwipe.id == null) return;
+    const dx = x - detailSwipe.startX;
+    const dy = y - detailSwipe.startY;
+    detailSwipe.dx = dx;
+    if (!detailSwipe.axis) {
+      if (Math.abs(dx) < 4 && Math.abs(dy) < 4) return;
+      detailSwipe.axis = Math.abs(dx) > Math.abs(dy) ? "h" : "v";
+      if (detailSwipe.axis === "h") panel.classList.add("is-swiping");
+    }
+    if (detailSwipe.axis !== "h") return;
+    if (e.cancelable) e.preventDefault();
+    const el = cardEl();
+    if (!el) return;
+    const nextZ = dx < 0 ? pt.selectedZ + 1 : pt.selectedZ - 1;
+    const xOff = byZ(nextZ) ? dx : dx * 0.22;
+    el.style.transform = `translateX(${xOff}px)`;
+    el.style.opacity = String(1 - Math.min(0.35, Math.abs(xOff) / 420));
+  };
+
+  const end = () => {
+    if (detailSwipe.id == null) return;
     const dx = detailSwipe.dx;
     const axis = detailSwipe.axis;
-    detailSwipe.pointerId = null;
+    detailSwipe.id = null;
+    detailSwipe.using = null;
     detailSwipe.axis = null;
     detailSwipe.dx = 0;
     panel.classList.remove("is-swiping");
     resetCard();
-    if (axis !== "h" || Math.abs(dx) < 48) return;
+    if (axis !== "h" || Math.abs(dx) < 28) return;
     stepElement(dx < 0 ? 1 : -1);
   };
 
-  const onDown = (e) => {
-    if (e.button !== 0) return;
-    if (e.pointerType === "mouse") return;
-    detailSwipe.pointerId = e.pointerId;
-    detailSwipe.startX = e.clientX;
-    detailSwipe.startY = e.clientY;
-    detailSwipe.dx = 0;
-    detailSwipe.axis = null;
-  };
-
-  const onMove = (e) => {
-    if (e.pointerId !== detailSwipe.pointerId) return;
-    const dx = e.clientX - detailSwipe.startX;
-    const dy = e.clientY - detailSwipe.startY;
-    detailSwipe.dx = dx;
-    if (!detailSwipe.axis) {
-      if (Math.abs(dx) < 12 && Math.abs(dy) < 12) return;
-      detailSwipe.axis = Math.abs(dx) > Math.abs(dy) ? "h" : "v";
-      if (detailSwipe.axis === "h") {
-        panel.classList.add("is-swiping");
-        try {
-          panel.setPointerCapture(e.pointerId);
-        } catch {
-          /* still get events while over the panel */
-        }
-      }
-    }
-    if (detailSwipe.axis !== "h") return;
-    const el = card();
-    if (!el) return;
-    const blocked =
-      (dx < 0 && peekSwipeZ(1) == null) || (dx > 0 && peekSwipeZ(-1) == null);
-    const x = blocked ? dx * 0.22 : dx;
-    el.style.transform = `translateX(${x}px)`;
-    el.style.opacity = String(1 - Math.min(0.35, Math.abs(x) / 420));
-  };
-
-  const onUp = (e) => {
-    if (e.pointerId !== detailSwipe.pointerId) return;
-    finish();
+  const onTouchStart = (e) => {
+    if (e.touches.length !== 1) return;
+    const t = e.touches[0];
+    begin(t.clientX, t.clientY, t.identifier, "touch");
   };
 
   const onTouchMove = (e) => {
-    if (detailSwipe.axis !== "h") return;
-    e.preventDefault();
+    if (detailSwipe.using !== "touch") return;
+    const t =
+      [...e.touches].find((p) => p.identifier === detailSwipe.id) || e.touches[0];
+    if (!t) return;
+    move(t.clientX, t.clientY, e);
   };
 
-  panel.addEventListener("pointerdown", onDown);
-  panel.addEventListener("pointermove", onMove);
-  panel.addEventListener("pointerup", onUp);
-  panel.addEventListener("pointercancel", onUp);
-  panel.addEventListener("lostpointercapture", onUp);
-  panel.addEventListener("touchmove", onTouchMove, { passive: false });
-  window.addEventListener("pointerup", onUp);
-  window.addEventListener("pointercancel", onUp);
+  const onTouchEnd = (e) => {
+    if (detailSwipe.using !== "touch") return;
+    if ([...e.touches].some((p) => p.identifier === detailSwipe.id)) return;
+    end();
+  };
+
+  const coarsePointer = () => window.matchMedia("(pointer: coarse)").matches;
+
+  const onPointerDown = (e) => {
+    if (e.button !== 0) return;
+    if (detailSwipe.id != null) return;
+    if (e.pointerType === "mouse" && !coarsePointer()) return;
+    begin(e.clientX, e.clientY, e.pointerId, "pointer");
+  };
+
+  const onPointerMove = (e) => {
+    if (detailSwipe.using !== "pointer") return;
+    if (e.pointerId !== detailSwipe.id) return;
+    move(e.clientX, e.clientY, e);
+  };
+
+  const onPointerUp = (e) => {
+    if (detailSwipe.using !== "pointer") return;
+    if (e.pointerId !== detailSwipe.id) return;
+    end();
+  };
+
+  panel.addEventListener("touchstart", onTouchStart, { passive: true });
+  panel.addEventListener("touchmove", onTouchMove, { passive: false, capture: true });
+  panel.addEventListener("touchend", onTouchEnd);
+  panel.addEventListener("touchcancel", onTouchEnd);
+  window.addEventListener("touchmove", onTouchMove, { passive: false, capture: true });
+  window.addEventListener("touchend", onTouchEnd, { capture: true });
+  window.addEventListener("touchcancel", onTouchEnd, { capture: true });
+  panel.addEventListener("pointerdown", onPointerDown);
+  window.addEventListener("pointermove", onPointerMove);
+  window.addEventListener("pointerup", onPointerUp);
+  window.addEventListener("pointercancel", onPointerUp);
 
   detailSwipe.unbind = () => {
-    panel.removeEventListener("pointerdown", onDown);
-    panel.removeEventListener("pointermove", onMove);
-    panel.removeEventListener("pointerup", onUp);
-    panel.removeEventListener("pointercancel", onUp);
-    panel.removeEventListener("lostpointercapture", onUp);
-    panel.removeEventListener("touchmove", onTouchMove);
-    window.removeEventListener("pointerup", onUp);
-    window.removeEventListener("pointercancel", onUp);
+    panel.removeEventListener("touchstart", onTouchStart);
+    panel.removeEventListener("touchmove", onTouchMove, true);
+    panel.removeEventListener("touchend", onTouchEnd);
+    panel.removeEventListener("touchcancel", onTouchEnd);
+    window.removeEventListener("touchmove", onTouchMove, true);
+    window.removeEventListener("touchend", onTouchEnd, true);
+    window.removeEventListener("touchcancel", onTouchEnd, true);
+    panel.removeEventListener("pointerdown", onPointerDown);
+    window.removeEventListener("pointermove", onPointerMove);
+    window.removeEventListener("pointerup", onPointerUp);
+    window.removeEventListener("pointercancel", onPointerUp);
   };
 }
 
@@ -555,7 +575,7 @@ function buildFBlock(kind) {
   return list.map(cellHtml).join("");
 }
 
-function renderDetail() {
+function renderDetail(slide = 0) {
   const panel = pt.root?.querySelector("#pt-detail");
   if (!panel) return;
   const el = byZ(pt.selectedZ);
@@ -565,8 +585,10 @@ function renderDetail() {
   }
   const year =
     el.discoveredYear != null ? String(el.discoveredYear) : "ancient times";
+  const slideClass =
+    slide > 0 ? " is-slide-next" : slide < 0 ? " is-slide-prev" : "";
   panel.innerHTML = `
-    <div class="pt-detail-card pt-cat-${escapeHtml(el.category)}">
+    <div class="pt-detail-card pt-cat-${escapeHtml(el.category)}${slideClass}">
       <div class="pt-detail-head">
         <div class="pt-detail-symbol" aria-hidden="true">${escapeHtml(el.symbol)}</div>
         <div>
@@ -595,7 +617,7 @@ function renderDetail() {
             </div>`
           : ""
       }
-      <p class="pt-detail-swipe-hint">Swipe left or right for the previous or next element.</p>
+      <p class="pt-detail-swipe-hint">Swipe left for the next atomic number, right for the previous.</p>
     </div>`;
   applyListenFocusClass();
 }
