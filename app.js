@@ -1182,9 +1182,11 @@ async function renderPresidentDetail() {
   els.detail.innerHTML = `
     <article class="detail">
       <header class="detail-header">
-        <p class="detail-number">President #${president.number}</p>
-        <h1>${president.name}</h1>
-        <p class="detail-served">Served ${president.served}</p>
+        <div class="detail-identity">
+          <p class="detail-number">President #${president.number}</p>
+          <h1>${president.name}</h1>
+          <p class="detail-served">Served ${president.served}</p>
+        </div>
         ${
           isLocalHost()
             ? `<p class="flag-hint">Flag any weak fact for replacement — it saves on this device.</p>`

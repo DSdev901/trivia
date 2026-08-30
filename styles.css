@@ -4532,6 +4532,34 @@ a.ce-tab {
     margin-bottom: 1rem;
   }
 
+  .detail-identity {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    margin: 0 calc(50% - 50vw) 0.35rem;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0.45rem max(var(--inner-chrome-inset), env(safe-area-inset-left)) 0.5rem;
+    padding-right: max(var(--inner-chrome-inset), env(safe-area-inset-right));
+    background: var(--nav-bar);
+    border-bottom: 1px solid color-mix(in srgb, var(--stripe) 70%, transparent);
+  }
+
+  .detail-identity .detail-number {
+    margin-bottom: 0.15rem;
+  }
+
+  .detail-identity h1 {
+    margin: 0;
+    font-size: 1.45rem;
+    line-height: 1.15;
+  }
+
+  .detail-identity .detail-served {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+  }
+
   .setup-actions {
     flex-direction: column;
     align-items: stretch;
