@@ -1,19 +1,29 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-08-30T01:13:44.424Z",
+  "generatedAt": "2026-08-30T03:40:11.819Z",
   "retentionDays": 21,
   "windowStart": "2026-08-09",
   "windowEnd": "2026-08-30",
   "snapshotIntervalHours": 3,
-  "count": 1432,
+  "count": 1438,
   "items": [
+    {
+      "headline": "Icelanders vote on whether they want to join the EU",
+      "date": "2026-08-30",
+      "bucket": "Politics",
+      "summary": "The final vote is expected to be extremely close, with ballot counting continuing through the night.",
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5948759/iceland-european-union-referendum-vote",
+      "firstSeen": "2026-08-30T03:40:11.819Z"
+    },
     {
       "headline": "Canada installs large Lake Ontario sign in latest jab at US",
       "date": "2026-08-30",
       "bucket": "World",
       "summary": "Ontario Premier Doug Ford unveiled a billboard on Canada's shoreline with the message: \"Lake Ontario. Now and Always.\"",
       "url": "https://www.bbc.co.uk/news/articles/cpq09594vw7o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-30T01:13:44.424Z"
+      "firstSeen": "2026-08-30T01:13:44.424Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Nepali Flood Survivors Face Profound Loss, Pressing Needs and Murky Futures",
@@ -79,8 +89,8 @@
       "headline": "Six months into the Iran war, Iranian Americans remain divided over what comes next",
       "date": "2026-08-29",
       "bucket": "Conflict",
-      "summary": "Reported by AP News.",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORjRJeFc5Nk44Q2ZySjE2S3JFeUs1TDVmdS1jdEd2V3otb3lETXFyeTdGMG1jN3lOdE1IaUk4T0h3Skd3VEE5ZkFKdEpueHJFUmVWdkZ1R0JzdDBOb09ocmVGQkdyQzBsQUd1ejNqUm91R0RKRUJRQU03LUhnWG9RdHdkTUtWdlNjSy1LMklMdm9qaUdlb1R5YnJ2aHlObVhHV0E?oc=5",
+      "summary": "Reported by Rolling Stone.",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQU2VnUW1tNlhmVEFkOXlpWnBDNnN0WHBSZkNzTEI0bWVGQjl1bTRGdFRYNzBfMWhpS2h5UXVvY25hemFyNVhoSkU4QmFlVkpKMzV5a1pXdUF1akNqWk04M2ZpcElGYWtRNU5DWVo1aVpjSG42c0tvdDFvOXFHa1ZYMngwOUpNVW04ZTdrZ254ZWRkVGs0X1BmX2NRVG9tTmZaVmdxcUFxcnd5WmdFcy1qdFdR?oc=5",
       "top": true,
       "bestRank": 2,
       "firstSeen": "2026-08-29T09:33:49.585Z"
@@ -216,6 +226,16 @@
       "firstSeen": "2026-08-29T15:33:28.462Z"
     },
     {
+      "headline": "Israeli Settlers Attack Palestinians, Drawing Sharp Rebukes",
+      "date": "2026-08-29",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWWZHWktIM3ZlMFM3VUtxT2ZoU3ZiOGdLcW5lZ2JFRFVoclF1NjR2Wk4wSTl6T19GUGxLWEVxbGt4RlkxVHRSMnBfS0ZZWTVaNk1jamdNYWtrNEVhRzQxS0Ryc2RhWGNyOWdCRjJXdEYtYUFkOWZFdXhsQUJLYkJCT0ktUTI3TWVuakVkV2NRYV81cVItcFd2TmplYm5OX1poRml5VVd5VkQ5WWc?oc=5",
+      "top": true,
+      "bestRank": 6,
+      "firstSeen": "2026-08-30T03:40:11.819Z"
+    },
+    {
       "headline": "Niger: Gunfire and explosions heard in capital",
       "date": "2026-08-29",
       "bucket": "World",
@@ -326,16 +346,6 @@
       "firstSeen": "2026-08-29T21:34:18.893Z"
     },
     {
-      "headline": "Ukraine Says Russia Planning Ground Offensive on Kyiv, Chernihiv",
-      "date": "2026-08-29",
-      "bucket": "World",
-      "summary": "Reported by politico.eu.",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMGFMeUxaUDcxZHE4Tl9GTkplZXdESlM2NmFFZjNDZ0lTZFJnaTdMSTJBejdMT3pxbzRjb24tUjJnSGtOQm84LW5BZ1QyVW9VSnJYT0xzaDJZY3RHOXgtUUk2Qm1uVUZ0eHVJZjNqY1J2bnJNV3JKN0RzVEtVMlVsM09iTmZHNmliazV3SFVn?oc=5",
-      "top": true,
-      "bestRank": 15,
-      "firstSeen": "2026-08-30T01:13:44.424Z"
-    },
-    {
       "headline": "Relative of Afghans Who Helped U.S. Military Is Deported to Africa",
       "date": "2026-08-29",
       "bucket": "World",
@@ -351,6 +361,16 @@
       "bucket": "Conflict",
       "summary": "Reported by Euromaidan Press.",
       "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOemM4RENuWDNPVHFHTTJlenpOaWJoSEQ1eEdhOEM2VVRzQzFjUG10NkVtbVpBdDZQb1NuYmxMdm9oaHA0Z0RiUUtfcWhEVFlXajJVQjNIUkp6cG5kS29ERTcwclRFS2ZEYm5jMF9IV1NfVTI0R0I0YkNFZVFHZDI0X2RkVWhLZ1FxdDdXNEhrMWtiLWI2WWdLZ2hLZkx5cEdtZXFVTlVPSjczOG9nb1cyUzRWZ3RmdkRiZlhWMy05LXhwaHdTTDNjV3ZKd3NqN1JlaWgyYU9Mak5WRWg3M05oV2M4ZXYydktlN1BHZ3Y0b1U0NXI1OGRQWmI1czU4dXNKWVI0?oc=5",
+      "top": true,
+      "bestRank": 17,
+      "firstSeen": "2026-08-29T21:34:18.893Z"
+    },
+    {
+      "headline": "Driven by faith, Jewish activists stand up to settlers to protect West Bank Palestinians",
+      "date": "2026-08-29",
+      "bucket": "World",
+      "summary": "Reported by NBC News.",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPaE1GdkVxeTRGTW91STNBLWNhY1E0T2k5V0JKOE1JQVdzT3pqc3A5a1hRQ2VKTGNIY2txODZWc3BRWWZiVkM3dzB3RTFXVV9GZ0NjcFhUUkNfSFUyd2xoamFZUUF4VXZnZ25aWlBZc1pXMGgzU21zQXB3R1BvU3NWNzd4OF92QTNrejVIRkVIejFHdmNIMmJKcHE0VGZPbjhVb3FXUXA4bk5BbjNMSFZscw?oc=5",
       "top": true,
       "bestRank": 17,
       "firstSeen": "2026-08-29T21:34:18.893Z"
@@ -374,6 +394,16 @@
       "top": true,
       "bestRank": 19,
       "firstSeen": "2026-08-29T18:39:00.901Z"
+    },
+    {
+      "headline": "Live Updates: Iran vows to resist U.S. sanctions as war passes 6-month mark",
+      "date": "2026-08-29",
+      "bucket": "Conflict",
+      "summary": "Reported by CBS News.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY3ZaTmR4OEVQWjVMZWRibUo2TGJTRDMtUVl6SmdLblprZlRsOXNPeTNvVmJRX2VUbU5JX3dCeXFfbUtqaExPa2pxZzByOEl4aDNNOThMajlXMnNHdFhFVlViTmIzTVZqMmh4RnVsMkdNTmV5ZGNVUThJYjZBRHpfdmFTY0QzYVpuUDdXUFl4c21VWDhvNWZib3NFbE00QQ?oc=5",
+      "top": true,
+      "bestRank": 19,
+      "firstSeen": "2026-08-30T03:40:11.819Z"
     },
     {
       "headline": "Mount Everest Base Camp Is Melting. Human Urine Is a Contributor.",
@@ -406,16 +436,6 @@
       "firstSeen": "2026-08-29T15:33:28.462Z"
     },
     {
-      "headline": "Driven by faith, Jewish activists stand up to settlers to protect West Bank Palestinians",
-      "date": "2026-08-29",
-      "bucket": "World",
-      "summary": "Reported by NBC News.",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPaE1GdkVxeTRGTW91STNBLWNhY1E0T2k5V0JKOE1JQVdzT3pqc3A5a1hRQ2VKTGNIY2txODZWc3BRWWZiVkM3dzB3RTFXVV9GZ0NjcFhUUkNfSFUyd2xoamFZUUF4VXZnZ25aWlBZc1pXMGgzU21zQXB3R1BvU3NWNzd4OF92QTNrejVIRkVIejFHdmNIMmJKcHE0VGZPbjhVb3FXUXA4bk5BbjNMSFZscw?oc=5",
-      "top": true,
-      "bestRank": 23,
-      "firstSeen": "2026-08-29T21:34:18.893Z"
-    },
-    {
       "headline": "Nepal’s Glaciers Will Flood Again. Can Scientists Predict the Next One?",
       "date": "2026-08-29",
       "bucket": "Disaster",
@@ -424,6 +444,26 @@
       "top": true,
       "bestRank": 23,
       "firstSeen": "2026-08-29T03:37:25.964Z"
+    },
+    {
+      "headline": "Moscow’s Battlefield Losses Outpace Recruitment by 6,000 Troops a Month",
+      "date": "2026-08-29",
+      "bucket": "Conflict",
+      "summary": "Reported by Defense Express.",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNc0lKcFl6UDVQTnNVUHhRY2RpdDZXZy1qWXFjVkdBRVZRRmdFLUhjYkFsa2VxUlhldEZDZW1JaFZfc1hqT0JrWUNnNjNOXzNBcGU3SHk2Z0F5aXNJQnJyS0xJMm9hRG5IZVYwZnMxT3VfdTlwaUluWEx6ZHozOGhJQVlhaGFiX2gxY1Q2RkRKNENTQkxmc3dZOVZyTVpkQ0dCZFZHTmFB?oc=5",
+      "top": true,
+      "bestRank": 23,
+      "firstSeen": "2026-08-29T09:33:49.585Z"
+    },
+    {
+      "headline": "Sweden to Transfer 10 High-Speed Boats to Ukraine",
+      "date": "2026-08-29",
+      "bucket": "World",
+      "summary": "Reported by Euromaidan Press.",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQMHBUMENYOWdmZXB2VUpDS0pya2ZqVU12bGhQZWlxWXJjamlOZlM2VDNFUTNfaC1pVENoYVFwU2hGZDB5czJXemVva1Q3Rk8xTU85bmhtTnJhMjhpczVRcmxCLU1Ub1RwQ0lkd21tcmxaOGlRS014bVUxaG1XUVZPS3U1cFAwNFJTMTY5S0htcG01VnpnVm5lSU1EWUJFMDB0Nm9VTC16ZTJCdnFqaHFJUVR2clpuWDlwZVQ1bXU3SUt2SHI4d29NVXZfX0FvQThHTXJ1MnR6Zm05aEJ5eEU2aEFnQmFwaTMyNGhMTF9sOTJNTWhiVzZBV1AzcDhiT3Q5YWdVbW1B?oc=5",
+      "top": true,
+      "bestRank": 24,
+      "firstSeen": "2026-08-29T21:34:18.893Z"
     },
     {
       "headline": "Pope Leo grants Eastern Synods the faculty to remove Patriarchs",
@@ -456,14 +496,14 @@
       "firstSeen": "2026-08-29T21:34:18.893Z"
     },
     {
-      "headline": "Sweden to Transfer 10 High-Speed Boats to Ukraine",
+      "headline": "Finland's Stubb tells German newspaper Russia unlikely to risk attack on NATO",
       "date": "2026-08-29",
       "bucket": "World",
-      "summary": "Reported by Euromaidan Press.",
-      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQMHBUMENYOWdmZXB2VUpDS0pya2ZqVU12bGhQZWlxWXJjamlOZlM2VDNFUTNfaC1pVENoYVFwU2hGZDB5czJXemVva1Q3Rk8xTU85bmhtTnJhMjhpczVRcmxCLU1Ub1RwQ0lkd21tcmxaOGlRS014bVUxaG1XUVZPS3U1cFAwNFJTMTY5S0htcG01VnpnVm5lSU1EWUJFMDB0Nm9VTC16ZTJCdnFqaHFJUVR2clpuWDlwZVQ1bXU3SUt2SHI4d29NVXZfX0FvQThHTXJ1MnR6Zm05aEJ5eEU2aEFnQmFwaTMyNGhMTF9sOTJNTWhiVzZBV1AzcDhiT3Q5YWdVbW1B?oc=5",
+      "summary": "Reported by The Kyiv Independent.",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNYUVPX3hJSTFnMzJPTUFhTDBUX3dQTjdWVzg5LWNTY0V1akNrRGRxOFpLN3BwS3VtaGxfWGVQRHoycjh5V2dzSlRuOWxFaVlXNE1qdWhESHpJV0pkcElxRlUzREtJMlZjdTB4MnZHZC1xbWpaNEhveVNfbTlSVFFzNnJqZXR2dk1DVmJVLUxZSjJlWU1wVzU4c2VVQ1ltYnkx?oc=5",
       "top": true,
       "bestRank": 30,
-      "firstSeen": "2026-08-29T21:34:18.893Z"
+      "firstSeen": "2026-08-30T03:40:11.819Z"
     },
     {
       "headline": "Tensions Spike Between Turkey and Israel as They Vie for Regional Influence",
@@ -496,6 +536,16 @@
       "firstSeen": "2026-08-30T01:13:44.424Z"
     },
     {
+      "headline": "Donald Trump’s Awkward Korean Love Triangle",
+      "date": "2026-08-29",
+      "bucket": "World",
+      "summary": "Reported by Newsweek.",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbFF2Vm9ZZWw3TXVLaGRUYmtiYzVPSk1GTWpvRGgxVjRVQnZkZkdmX3JOSS03MFJZZUE5bmtTMkpkUm9YWUFnWVltSkFHUGdkQWMxSXRQTjFvYkFaNGJmUEdmZGlMSTJvVkszSnQtdUJPdlNYZEtJdDFOS1BjUFEtaEFR?oc=5",
+      "top": true,
+      "bestRank": 31,
+      "firstSeen": "2026-08-30T03:40:11.819Z"
+    },
+    {
       "headline": "‘Inept, incompetent, craven’: Scott Bessent struggles to clean up the president’s mess",
       "date": "2026-08-29",
       "bucket": "World",
@@ -524,6 +574,16 @@
       "top": true,
       "bestRank": 35,
       "firstSeen": "2026-08-29T21:34:18.893Z"
+    },
+    {
+      "headline": "Putin Sparks Health Concerns With Deranged Tale of Polar Bear Slaughter",
+      "date": "2026-08-29",
+      "bucket": "World",
+      "summary": "Reported by The Daily Beast.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMFdMM3pKOERKVDFxeHlNSUV2UWgwRzMwTHpycUJKeEN0S0szdERQdlJ0ZkxtOXZ6aFVEUzlhYzB3M08wOUNXWXBTbWY5UE9nTFZvVFNtcW8xTndOaVdnVFFnd0haajlONFV2djNKT3RTSlc2X0JCMlVic1F6anNrSUM4LWRpLU9ZWk1salFFc19tcDJPcERoQVViWFBvN1FtWk9lUw?oc=5",
+      "top": true,
+      "bestRank": 36,
+      "firstSeen": "2026-08-30T01:13:44.424Z"
     },
     {
       "headline": "A Ukrainian air-defense sergeant says missiles aren't his most challenging shortage. It's the gear that finds enemy targets.",
@@ -564,16 +624,6 @@
       "top": true,
       "bestRank": 40,
       "firstSeen": "2026-08-29T21:34:18.893Z"
-    },
-    {
-      "headline": "Putin Sparks Health Concerns With Deranged Tale of Polar Bear Slaughter",
-      "date": "2026-08-29",
-      "bucket": "World",
-      "summary": "Reported by The Daily Beast.",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMFdMM3pKOERKVDFxeHlNSUV2UWgwRzMwTHpycUJKeEN0S0szdERQdlJ0ZkxtOXZ6aFVEUzlhYzB3M08wOUNXWXBTbWY5UE9nTFZvVFNtcW8xTndOaVdnVFFnd0haajlONFV2djNKT3RTSlc2X0JCMlVic1F6anNrSUM4LWRpLU9ZWk1salFFc19tcDJPcERoQVViWFBvN1FtWk9lUw?oc=5",
-      "top": true,
-      "bestRank": 40,
-      "firstSeen": "2026-08-30T01:13:44.424Z"
     },
     {
       "headline": "Norway's new king remembers 'my dear father' in first speech",
@@ -1246,16 +1296,6 @@
       "firstSeen": "2026-08-29T15:33:28.462Z"
     },
     {
-      "headline": "Moscow’s Battlefield Losses Outpace Recruitment by 6,000 Troops a Month",
-      "date": "2026-08-28",
-      "bucket": "Conflict",
-      "summary": "Reported by UNITED24 Media.",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMURLendMX1AxSHVVUmhSdzBDbEF4TGN2aVNWSkdXSFRwemdaN21GOEwzN19jM2RMUlB2UDdMYXNtd0FmQzViYVRFWDdpblhSTkExUVNER3NGbURFN1RCSy14SzJORVdRRXpycTdfb19WTTB2Y2JSdzgxTVp4ak9id3RYWlR4TTcxS1VvSGtJVlB1NlJJcUpkNUhkNkZYYU9ZSElaT2pCUV9XXzVUaTlINHRUZjMzQVk?oc=5",
-      "top": true,
-      "bestRank": 23,
-      "firstSeen": "2026-08-29T09:33:49.585Z"
-    },
-    {
       "headline": "Sweden to deploy fighter jets, warships to Finland",
       "date": "2026-08-28",
       "bucket": "World",
@@ -1416,6 +1456,16 @@
       "bestRank": 33
     },
     {
+      "headline": "Exclusive: Cambridge colleagues argued a Google search would have prevented Nathan Cofnas hiring",
+      "date": "2026-08-28",
+      "bucket": "World",
+      "summary": "Reported by Middle East Eye.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcDgxV2tnU1VuN3VaSDlQVzFOX2FiTmdXX08xLWd0cUR2X01FbHRXSFJBOG5sUkEyMFFWU29IbW9Ebk44clU0WXFuS25taURTVzhTMkJCbnREZlNnTHEyd2haNTNpSmxsUTlOcTd3aV83WVZIcHlpcVU5UzNHeTUtSkxodHRTSXp3dnExZzJ2Z3JvS1ZlWmY1ck9iM0lhS2c1X0pnMg?oc=5",
+      "top": true,
+      "bestRank": 33,
+      "firstSeen": "2026-08-30T03:40:11.819Z"
+    },
+    {
       "headline": "Iran’s Hidden Weapon Leaves US Exposed to Catastrophic Attack",
       "date": "2026-08-28",
       "bucket": "World",
@@ -1494,6 +1544,16 @@
       "top": true,
       "bestRank": 37,
       "firstSeen": "2026-08-29T21:34:18.893Z"
+    },
+    {
+      "headline": "Bloomberg: Ukraine’s drones have pushed Russian oil refining to a 20-year low",
+      "date": "2026-08-28",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZFVVNVA5aWJkQWJuSlR2cEhkZTUyejJfU3QzMEJVWWNZT3BzaDI0SHB0OUJfcUtrcnFvNDhFR2hodEktMW9QWnkxb3dOZDBsTUxmS0pjcERvN0VmLXFDajhxNDBrcEFLS3diMzhKMHhnbExMdjh0YThOaUQ4cmRHOW1oQ081ZHpVdEJieGE5MnhONUlPRkhqc3FkaXQ3WmxLWEpoS09ManlqMXVkMHVQTXdTTE84TEo0NWZWRFM2ZjRfXzZZMGRweDNNc28?oc=5",
+      "top": true,
+      "bestRank": 37,
+      "firstSeen": "2026-08-30T03:40:11.819Z"
     },
     {
       "headline": "China strips former generals Zhang Youxia and Liu Zhenli of top military positions",
@@ -1674,6 +1734,16 @@
       "bestRank": null
     },
     {
+      "headline": "'It's essentially been one long day': A daughter details search for parents in Nepal",
+      "date": "2026-08-28",
+      "bucket": "World",
+      "summary": "Shreya Ahuja is searching for her parents after devastating floods struck Nepal. She is calling for international help and communications access as her family waits for news.",
+      "url": "https://www.npr.org/2026/08/28/nx-s1-5946690/nepal-floods-missing-parents-shreya-ahuja",
+      "firstSeen": "2026-08-28T21:45:27.205Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
       "headline": "Canada poaches dozens of top US researchers for its universities",
       "date": "2026-08-28",
       "bucket": "World",
@@ -1749,16 +1819,6 @@
       "bucket": "Conflict",
       "summary": "Instead of collapsing, the Iranian regime has dug in its heels and taken an even harder line.",
       "url": "https://www.npr.org/2026/08/28/nx-s1-5947854/us-iran-war",
-      "firstSeen": "2026-08-28T21:45:27.205Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "'It's essentially been one long day': A daughter details search for parents in Nepal",
-      "date": "2026-08-28",
-      "bucket": "World",
-      "summary": "Shreya Ahuja is searching for her parents after devastating floods struck Nepal. She is calling for international help and communications access as her family waits for news.",
-      "url": "https://www.npr.org/2026/08/28/nx-s1-5946690/nepal-floods-missing-parents-shreya-ahuja",
       "firstSeen": "2026-08-28T21:45:27.205Z",
       "top": false,
       "bestRank": null
@@ -2692,6 +2752,16 @@
       "bestRank": 2
     },
     {
+      "headline": "Iceland holds knife-edge referendum on EU - and it could be decided on fish",
+      "date": "2026-08-26",
+      "bucket": "Politics",
+      "summary": "On Saturday, Iceland will vote on EU membership talks, amid economic and geopolitical tensions.",
+      "url": "https://www.bbc.co.uk/news/articles/c99dvmyr4glo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-08-27T02:09:29.263Z",
+      "top": true,
+      "bestRank": 2
+    },
+    {
       "headline": "South Korea's Lee calls for greater police accountability after Jeju missing-person cases",
       "date": "2026-08-26",
       "bucket": "World",
@@ -2870,16 +2940,6 @@
       "top": true,
       "bestRank": 8,
       "firstSeen": "2026-08-26T19:14:56.240Z"
-    },
-    {
-      "headline": "Iceland holds knife-edge referendum on EU - and it could be decided on fish",
-      "date": "2026-08-26",
-      "bucket": "Politics",
-      "summary": "On Saturday, Iceland will vote on EU membership talks, amid economic and geopolitical tensions.",
-      "url": "https://www.bbc.co.uk/news/articles/c99dvmyr4glo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-27T02:09:29.263Z",
-      "top": true,
-      "bestRank": 8
     },
     {
       "headline": "China: Maximum sentence for artist Gao Zhen is an assault on artistic freedom",
@@ -3637,7 +3697,7 @@
       "bucket": "World",
       "summary": "Fuel companies are urging customers not to linger at the pumps after a wave of deadly attacks.",
       "url": "https://www.bbc.co.uk/news/articles/c5y6x777gk4o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-08-29T15:33:28.462Z",
+      "firstSeen": "2026-08-30T01:13:44.424Z",
       "top": true,
       "bestRank": 3
     },
