@@ -126,6 +126,7 @@ function show(view) {
   els.nav.hidden = view === "categories";
   els.backBtn.hidden = view === "categories";
   document.body.classList.toggle("is-home", view === "categories");
+  if (view !== "detail") unbindPresidentPin?.();
   if (changed) scrollPageTop();
 }
 
@@ -1169,6 +1170,52 @@ async function goNeighborPresident(delta) {
   window.scrollTo(0, 0);
 }
 
+let unbindPresidentPin = null;
+
+function bindPresidentPin() {
+  unbindPresidentPin?.();
+  unbindPresidentPin = null;
+  const identity = els.detail.querySelector(".detail-identity");
+  const anchor = els.detail.querySelector(".detail-identity-anchor");
+  const topEl = document.querySelector(".top");
+  if (!identity || !anchor) return;
+
+  const mq = window.matchMedia("(max-width: 860px)");
+  const apply = () => {
+    if (!mq.matches) {
+      identity.style.position = "";
+      identity.style.top = "";
+      identity.style.left = "";
+      identity.style.right = "";
+      anchor.style.minHeight = "";
+      return;
+    }
+    const navBottom = topEl ? Math.max(0, topEl.getBoundingClientRect().bottom) : 0;
+    identity.style.top = `max(${navBottom}px, env(safe-area-inset-top, 0px))`;
+    anchor.style.minHeight = `${identity.offsetHeight}px`;
+  };
+
+  apply();
+  window.addEventListener("scroll", apply, { passive: true });
+  window.addEventListener("resize", apply);
+  window.visualViewport?.addEventListener("resize", apply);
+  window.visualViewport?.addEventListener("scroll", apply);
+  mq.addEventListener("change", apply);
+  unbindPresidentPin = () => {
+    window.removeEventListener("scroll", apply);
+    window.removeEventListener("resize", apply);
+    window.visualViewport?.removeEventListener("resize", apply);
+    window.visualViewport?.removeEventListener("scroll", apply);
+    mq.removeEventListener("change", apply);
+    identity.style.top = "";
+    identity.style.position = "";
+    identity.style.left = "";
+    identity.style.right = "";
+    if (anchor) anchor.style.minHeight = "";
+    unbindPresidentPin = null;
+  };
+}
+
 async function renderPresidentDetail() {
   const president = state.president;
   const batchNum = state.batch.batch;
@@ -1179,13 +1226,16 @@ async function renderPresidentDetail() {
 
   if (state.view !== "detail" || state.president !== president) return;
 
+  unbindPresidentPin?.();
   els.detail.innerHTML = `
-    <article class="detail">
+    <article class="detail detail--president">
       <header class="detail-header">
-        <div class="detail-identity">
-          <p class="detail-number">President #${president.number}</p>
-          <h1>${president.name}</h1>
-          <p class="detail-served">Served ${president.served}</p>
+        <div class="detail-identity-anchor">
+          <div class="detail-identity">
+            <p class="detail-number">President #${president.number}</p>
+            <h1>${president.name}</h1>
+            <p class="detail-served">Served ${president.served}</p>
+          </div>
         </div>
         ${
           isLocalHost()
@@ -1264,6 +1314,8 @@ async function renderPresidentDetail() {
       void goNeighborPresident(btn.dataset.presidentNav === "next" ? 1 : -1);
     });
   });
+
+  bindPresidentPin();
 }
 
 function renderFlags() {
