@@ -3955,6 +3955,19 @@ a.ce-tab {
   margin: 0.15rem 0 0.5rem;
 }
 
+.geo-play .geo-prompt .geo-flag-xl {
+  display: block;
+  font-size: clamp(5.5rem, 32vmin, 8.75rem);
+  margin: 0.35rem auto 0.7rem;
+  padding: 0.55rem 0.85rem;
+  width: fit-content;
+  max-width: 100%;
+  background: #fff;
+  border: 1px solid var(--stripe);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow);
+}
+
 .geo-item-list {
   display: grid;
   grid-template-columns: 1fr;
