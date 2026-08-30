@@ -2289,6 +2289,18 @@ function confirmParts(item) {
   return { place: expected, country: "" };
 }
 
+function confirmShowsRevealFlag(item) {
+  if (!item?.flag) return false;
+  if (quizKind() === "flags") return false;
+  const mode = geo.mode;
+  return mode === "pin" || mode === "type" || mode === "outline";
+}
+
+function revealFlagHtml(item) {
+  if (!item?.flag) return "";
+  return `<span class="geo-flag-reveal" aria-hidden="true">${item.flag}</span>`;
+}
+
 function confirmAnswerHtml(ok, item) {
   const { place, country: rawCountry } = confirmParts(item);
   const country =
@@ -2299,13 +2311,19 @@ function confirmAnswerHtml(ok, item) {
       : "";
   const where = country ? ` · ${escapeHtml(country)}` : "";
   const cap =
-    ok && item.capital && place === item.name
-      ? ` · capital ${escapeHtml(item.capital)}`
+    item.capital &&
+    place === item.name &&
+    (ok || confirmShowsRevealFlag(item))
+      ? `<span class="geo-identity-cap">capital ${escapeHtml(item.capital)}</span>`
       : "";
-  if (ok) return `<strong>Correct.</strong> ${escapeHtml(place)}${where}${cap}`;
-  return `<strong>Not quite.</strong> Answer: <strong>${escapeHtml(
-    place
-  )}</strong>${where}`;
+  const flag = confirmShowsRevealFlag(item) ? revealFlagHtml(item) : "";
+  const copy = ok
+    ? `<strong>Correct.</strong> ${escapeHtml(place)}${where}`
+    : `<strong>Not quite.</strong> Answer: <strong>${escapeHtml(
+        place
+      )}</strong>${where}`;
+  if (!flag) return `<span class="quiz-feedback-copy">${copy}${cap}</span>`;
+  return `<div class="geo-identity">${flag}<span class="quiz-feedback-copy">${copy}${cap}</span></div>`;
 }
 
 function buildChoices(item) {
@@ -2573,11 +2591,18 @@ function renderStudy() {
 
 function studyDetailHtml(item) {
   if (!item) return `<p class="lede">Select a place.</p>`;
+  const flag = item.flag
+    ? `<span class="geo-flag-reveal" aria-hidden="true">${item.flag}</span>`
+    : "";
   return `
-    ${item.flag ? `<p class="geo-flag-xl">${item.flag}</p>` : ""}
-    <h3>${escapeHtml(item.name)}</h3>
+    <div class="geo-identity">
+      ${flag}
+      <div class="geo-identity-copy">
+        <h3>${escapeHtml(item.name)}</h3>
+        ${item.capital ? `<p class="geo-meta-line">Capital <strong>${escapeHtml(item.capital)}</strong></p>` : ""}
+      </div>
+    </div>
     ${item.abbr ? `<p class="geo-meta-line">Abbreviation <strong>${escapeHtml(item.abbr)}</strong></p>` : ""}
-    ${item.capital ? `<p class="geo-meta-line">Capital <strong>${escapeHtml(item.capital)}</strong></p>` : ""}
     ${item.city ? `<p class="geo-meta-line">City <strong>${escapeHtml(item.city)}</strong></p>` : ""}
     ${item.fact ? `<p class="lede">${escapeHtml(item.fact)}</p>` : ""}`;
 }
