@@ -1066,7 +1066,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   }
   if (outline) setMapLabel(host, null);
   else if (correctId) {
-    scheduleFocusPlace(host, correctId, { reveal: geo.mode === "pin" });
+    scheduleFocusPlace(host, correctId);
   } else if (geo.mode === "study" && activeId) {
     const svg = host.querySelector("svg");
     stopFocusZoom();
@@ -1263,86 +1263,47 @@ function placeInViewBox(vb, anchor, edge = 0.1) {
   );
 }
 
-function pinRevealViewBox(host, svg, id) {
-  const anchor = regionAnchor(host, id);
-  if (!anchor) return null;
-  const rect = svg.getBoundingClientRect();
-  if (rect.width < 8 || rect.height < 8) return null;
-  const aspect = rect.width / Math.max(rect.height, 1);
-  const fill = usesMarkerPins(host) ? 0.14 : 0.52;
-  const long = Math.max(anchor.w, anchor.h, 1);
-  let vbW;
-  let vbH;
-  if (anchor.w / Math.max(anchor.h, 0.001) >= aspect) {
-    vbW = long / fill;
-    vbH = vbW / aspect;
-  } else {
-    vbH = long / fill;
-    vbW = vbH * aspect;
-  }
-  return clampViewBox({
-    x: anchor.x - vbW / 2,
-    y: anchor.y - vbH / 2,
-    w: vbW,
-    h: vbH,
-  });
-}
-
-function maybeFocusRevealedPlace(host, id) {
-  const svg = host.querySelector("svg");
-  geo._focusHalo = false;
-  if (!svg) return true;
-  const rect = svg.getBoundingClientRect();
-  if (rect.width < 8 || rect.height < 8) return false;
-  const next = pinRevealViewBox(host, svg, id);
-  const anchor = regionAnchor(host, id);
-  if (anchor) {
-    const px = placePixelSize(svg, anchor, next ? viewBoxAttr(next) : svg.getAttribute("viewBox"));
-    const longPx = Math.max(px.pxW, px.pxH);
-    const tinyDot =
-      anchor.el.classList.contains("geo-island-dot") ||
-      anchor.el.tagName.toLowerCase() === "circle";
-    geo._focusHalo = longPx < 44 || tinyDot || usesMarkerPins(host);
-  }
-  if (!next) return true;
-  const from = viewBoxParts(svg.getAttribute("viewBox"));
-  animateFocusView(host, svg, from, next);
-  return true;
-}
+const FOCUS_SEE_PX = 16;
+const FOCUS_TARGET_PX = 28;
+const FOCUS_MAX_SCALE = 7;
 
 function maybeFocusTinyPlace(host, id) {
   const svg = host.querySelector("svg");
   const anchor = regionAnchor(host, id);
   geo._focusHalo = false;
   if (!svg || !anchor) return true;
-  if (geo.pack?.overlay === "markers") {
-    geo._focusHalo = true;
-    stopFocusZoom();
-    if (geo._packViewBox) svg.setAttribute("viewBox", geo._packViewBox);
-    return true;
-  }
-  const packRaw = geo._packViewBox || svg.getAttribute("viewBox");
-  const pack = viewBoxParts(packRaw);
-  const px = placePixelSize(svg, anchor, packRaw);
+  const currentRaw = svg.getAttribute("viewBox");
+  const current = viewBoxParts(currentRaw);
+  const px = placePixelSize(svg, anchor, currentRaw);
   if (px.rect.width < 8 || px.rect.height < 8) return false;
   const longPx = Math.max(px.pxW, px.pxH);
   const tinyDot =
     anchor.el.classList.contains("geo-island-dot") ||
     anchor.el.tagName.toLowerCase() === "circle";
-  geo._focusHalo = longPx < 44 || tinyDot;
-  if (longPx >= 28 && placeInViewBox(pack, anchor)) {
+  geo._focusHalo = longPx < 44 || tinyDot || usesMarkerPins(host);
+  if (geo.pack?.overlay === "markers") {
+    stopFocusZoom();
+    return true;
+  }
+  const inView = placeInViewBox(current, anchor, 0.06);
+  const needsZoom = tinyDot || longPx < FOCUS_SEE_PX;
+  if (!needsZoom) {
+    stopFocusZoom();
+    return true;
+  }
+  if (inView && longPx >= FOCUS_TARGET_PX) {
     stopFocusZoom();
     return true;
   }
 
-  const scale =
-    longPx < 28
-      ? Math.max(1, Math.min(80, 56 / Math.max(longPx, 0.25)) * PLACE_ZOOM)
-      : 1;
-  let nw = pack.w / scale;
-  let nh = pack.h / scale;
+  const scale = Math.min(
+    FOCUS_MAX_SCALE,
+    Math.max(1, FOCUS_TARGET_PX / Math.max(longPx, 0.25))
+  );
+  let nw = current.w / scale;
+  let nh = current.h / scale;
   const limit = panLimitBox();
-  const minW = limit.w * 0.01;
+  const minW = Math.max(limit.w * 0.12, current.w / FOCUS_MAX_SCALE);
   if (nw < minW) {
     const s = minW / nw;
     nw = minW;
@@ -1354,8 +1315,7 @@ function maybeFocusTinyPlace(host, id) {
     w: nw,
     h: nh,
   });
-  const from = viewBoxParts(svg.getAttribute("viewBox"));
-  animateFocusView(host, svg, from, next);
+  animateFocusView(host, svg, current, next, { x: anchor.x, y: anchor.y });
   return true;
 }
 
@@ -1384,17 +1344,18 @@ function viewBoxClose(a, b) {
 
 const FOCUS_ZOOM_MS = 800;
 
-function animateFocusView(host, svg, from, to) {
+function animateFocusView(host, svg, from, to, focus = null) {
   stopFocusZoom();
   if (viewBoxClose(from, to)) {
     svg.setAttribute("viewBox", `${to.x} ${to.y} ${to.w} ${to.h}`);
     syncTinyIslandScale(host);
     return;
   }
-  const fromCx = from.x + from.w / 2;
-  const fromCy = from.y + from.h / 2;
-  const toCx = to.x + to.w / 2;
-  const toCy = to.y + to.h / 2;
+  const pt = focus || { x: to.x + to.w / 2, y: to.y + to.h / 2 };
+  const fromRx = (pt.x - from.x) / Math.max(from.w, 0.01);
+  const fromRy = (pt.y - from.y) / Math.max(from.h, 0.01);
+  const toRx = (pt.x - to.x) / Math.max(to.w, 0.01);
+  const toRy = (pt.y - to.y) / Math.max(to.h, 0.01);
   const logFromW = Math.log(Math.max(from.w, 0.01));
   const logFromH = Math.log(Math.max(from.h, 0.01));
   const logToW = Math.log(Math.max(to.w, 0.01));
@@ -1409,12 +1370,14 @@ function animateFocusView(host, svg, from, to) {
     const e = easeInOutQuad(t);
     const w = Math.exp(lerp(logFromW, logToW, e));
     const h = Math.exp(lerp(logFromH, logToH, e));
-    const vb = {
-      x: lerp(fromCx, toCx, e) - w / 2,
-      y: lerp(fromCy, toCy, e) - h / 2,
+    const rx = lerp(fromRx, toRx, e);
+    const ry = lerp(fromRy, toRy, e);
+    const vb = clampViewBox({
+      x: pt.x - rx * w,
+      y: pt.y - ry * h,
       w,
       h,
-    };
+    });
     svg.setAttribute("viewBox", `${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
     syncTinyIslandScale(host);
     drawMapLabel(host);
@@ -1431,13 +1394,11 @@ function animateFocusView(host, svg, from, to) {
   geo._zoomAnim = requestAnimationFrame(step);
 }
 
-function scheduleFocusPlace(host, id, { reveal = false } = {}) {
+function scheduleFocusPlace(host, id) {
   let tries = 0;
   const run = () => {
     if (!host.isConnected) return;
-    const ok = reveal
-      ? maybeFocusRevealedPlace(host, id)
-      : maybeFocusTinyPlace(host, id);
+    const ok = maybeFocusTinyPlace(host, id);
     if (!ok && tries < 2) {
       tries += 1;
       requestAnimationFrame(run);
