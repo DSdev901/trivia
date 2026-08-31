@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-08-31T15:27:20.821Z",
+  "generatedAt": "2026-08-31T18:32:19.074Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-10T15:27:20.821Z",
-  "windowEnd": "2026-08-31T15:27:20.821Z",
+  "windowStart": "2026-08-10T18:32:19.074Z",
+  "windowEnd": "2026-08-31T18:32:19.074Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,382 @@
     "Tennis",
     "MMA"
   ],
-  "count": 3283,
+  "count": 3301,
   "items": [
+    {
+      "key": "49782349",
+      "id": "49782349",
+      "headline": "Fantasy football mock draft: Josh Jacobs drops, MarShawn Lloyd goes in Round 6",
+      "summary": "The final mock draft of the summer revealed where our drafters stand on the Packers' backfield.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFMockDraft26-49782349/fantasy-football-mock-draft-12-teams-ppr",
+      "sport": "NFL",
+      "published": "2026-08-31T18:24:48.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49784715",
+      "id": "49784715",
+      "headline": "USC on sparse opening crowd: We hope for 'increased attendance'",
+      "summary": "USC addressed the widespread criticism over the sparse crowd Saturday at the Los Angeles Memorial Coliseum, acknowledging \"factors\" that contributed to the low attendance.",
+      "url": "https://www.espn.com/college-football/story/_/id/49784715/usc-sparse-opening-crowd-hope-increased-attendance",
+      "sport": "College football",
+      "published": "2026-08-31T18:15:39.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49784462",
+      "id": "49784462",
+      "headline": "Fickell: Wisconsin won't shy away from Notre Dame CB Moore",
+      "summary": "Wisconsin coach Luke Fickell said his team won't avoid throwing at Notre Dame star cornerback Leonard Moore.",
+      "url": "https://www.espn.com/college-football/story/_/id/49784462/fickell-wisconsin-shy-away-notre-dame-cb-moore",
+      "sport": "College football",
+      "published": "2026-08-31T18:13:43.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49784523",
+      "id": "49784523",
+      "headline": "Volunteers to honor late Dolly Parton with helmet decal",
+      "summary": "Tennessee will honor the late Dolly Parton with a helmet sticker this season. The 80-year-old country singer and philanthropist was a native of Tennessee and had ties to the university.",
+      "url": "https://www.espn.com/college-football/story/_/id/49784523/volunteers-honor-late-dolly-parton-helmet-decal",
+      "sport": "College football",
+      "published": "2026-08-31T17:56:30.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49746585",
+      "id": "49746585",
+      "headline": "Premier League live updates: Aston Villa host defending champs Arsenal",
+      "summary": "Enjoy all the updates from Villa Park as Aston Villa host defending Premier League champions Arsenal.",
+      "url": "https://www.espn.com/soccer/story/_/id/49746585/premier-league-live-updates-aston-villa-host-defending-champs-arsenal",
+      "sport": "Soccer",
+      "published": "2026-08-31T17:56:18.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49784391",
+      "id": "49784391",
+      "headline": "Stephen A.: There's no loophole Lane Kiffin won't exploit to improve roster",
+      "summary": "Stephen A.: There's no loophole Lane Kiffin won't exploit to improve roster",
+      "url": "https://www.espn.com/video/clip/_/id/49784391/there-no-loophole-lane-kiffin-exploit-improve-roster",
+      "sport": "College football",
+      "published": "2026-08-31T17:47:01.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49784093",
+      "id": "49784093",
+      "headline": "Rams GM joins McAfee, dishes on Aaron Donald's return",
+      "summary": "Rams GM joins McAfee, dishes on Aaron Donald's return",
+      "url": "https://www.espn.com/video/clip/_/id/49784093/rams-gm-joins-mcafee-dishes-aaron-donald-return",
+      "sport": "NFL",
+      "published": "2026-08-31T17:27:30.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49266819",
+      "id": "49266819",
+      "headline": "Argentina legend Lionel Messi announces international retirement",
+      "summary": "Lionel Messi on Monday announced his retirement from international soccer with a heartfelt Instagram post.",
+      "url": "https://www.espn.com/soccer/story/_/id/49266819/lionel-messi-argentina-international-retirement-world-cup-copa-america",
+      "sport": "Soccer",
+      "published": "2026-08-31T17:21:31.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49784066",
+      "id": "49784066",
+      "headline": "Lionel Messi's Argentina career: the stats, records and how he compares to Cristiano Ronaldo",
+      "summary": "After Lionel Messi announced his international retirement, ESPN takes a look at the numbers behind his storied Argentina career.",
+      "url": "https://www.espn.com/soccer/story/_/id/49784066/lionel-messi-argentina-career-stats-records-how-compares-cristiano-ronaldo",
+      "sport": "Soccer",
+      "published": "2026-08-31T17:20:13.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49784295",
+      "id": "49784295",
+      "headline": "Lionel Messi's Argentina career in numbers",
+      "summary": "Lionel Messi's Argentina career in numbers",
+      "url": "https://www.espn.com/video/clip/_/id/49784295/lionel-messi-argentina-career-numbers",
+      "sport": "Soccer",
+      "published": "2026-08-31T17:15:28.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49783362",
+      "id": "49783362",
+      "headline": "EFL criticises UEFA after rescheduling three domestic fixtures",
+      "summary": "The English Football League has accused UEFA of an \"unwillingness to cooperate\" after it says the European governing body's stance forced them to rearrange three domestic fixtures.",
+      "url": "https://www.espn.com/soccer/story/_/id/49783362/efl-criticises-uefa-rescheduling-three-domestic-fixtures",
+      "sport": "Soccer",
+      "published": "2026-08-31T17:12:54.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49784065",
+      "id": "49784065",
+      "headline": "Hokies name Penn State transfer Ethan Grunkemeyer top QB",
+      "summary": "Virginia Tech has named Ethan Grunkemeyer the team's starting quarterback. A backup at Penn State, Grunkemeyer followed Hokies coach James Franklin to Blacksburg.",
+      "url": "https://www.espn.com/college-football/story/_/id/49784065/hokies-name-penn-state-transfer-ethan-grunkemeyer-top-qb",
+      "sport": "College football",
+      "published": "2026-08-31T17:05:35.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49783355",
+      "id": "49783355",
+      "headline": "Freshman Tommy Carr named Michigan's QB2 entering season",
+      "summary": "Michigan has named freshman Tommy Carr as its backup quarterback entering the season under first-year coach Kyle Whittingham.",
+      "url": "https://www.espn.com/college-football/story/_/id/49783355/freshman-tommy-carr-named-michigan-qb2-entering-season",
+      "sport": "College football",
+      "published": "2026-08-31T16:54:06.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49784048",
+      "id": "49784048",
+      "headline": "Cody Gakpo set for Liverpool stay after Man City offer rejected - sources",
+      "summary": "Cody Gakpo looks set to stay at Liverpool after the club rejected a bid for the forward from Manchester City, sources told ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/49784048/cody-gakpo-set-liverpool-stay-man-city-bid-rejected-sources",
+      "sport": "Soccer",
+      "published": "2026-08-31T16:53:31.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49752772",
+      "id": "49752772",
+      "headline": "How many different Week 1 starting QBs has each NFL team used?",
+      "summary": "Since the NFL expanded to 32 teams in 2002, no team has used more Week 1 starting quarterbacks than the Browns.",
+      "url": "https://www.espn.com/nfl/story/_/id/49752772/week-1-starting-quarterbacks-modern-era",
+      "sport": "NFL",
+      "published": "2026-08-31T16:49:25.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49783677",
+      "id": "49783677",
+      "headline": "Everton near deal for USMNT forward Folarin Balogun - sources",
+      "summary": "Everton are closing in on a move for Folarin Balogun after submitting a £35 million offer ($47.5m) for the AS Monaco forward, sources have told ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/49783677/everton-deal-usmnt-forward-folarin-balogun-sources",
+      "sport": "Soccer",
+      "published": "2026-08-31T16:40:31.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49745133",
+      "id": "49745133",
+      "headline": "Chippy Will Hammond, not Brendan Sorsby, leading Texas Tech",
+      "summary": "Some wrote off Tech when Sorsby was ruled ineligible. Hammond planned on starting all along.",
+      "url": "https://www.espn.com/college-football/story/_/id/49745133/texas-tech-brendan-sorsby-hammond-college-football",
+      "sport": "College football",
+      "published": "2026-08-31T16:37:01.000Z",
+      "firstSeen": "2026-08-31T12:38:41.577Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49732045",
+      "id": "49732045",
+      "headline": "How to keep losing teams out of MLB playoffs",
+      "summary": "It's possible that we could see multiple teams with records under .500 playing this October. That's a shame.",
+      "url": "https://www.espn.com/mlb/story/_/id/49732045/mlb-2026-playoffs-postseason-losing-teams-500-schedule-format-interleague-intraleague",
+      "sport": "MLB",
+      "published": "2026-08-31T16:35:31.000Z",
+      "firstSeen": "2026-08-31T12:38:41.577Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49537787",
+      "id": "49537787",
+      "headline": "Do NFL superteams usually win the Super Bowl? Will the Rams?",
+      "summary": "The Rams are loaded this season, and basically everyone is picking them to win the Super Bowl. But preseason darlings of the past 35 years haven't always met expectations.",
+      "url": "https://www.espn.com/nfl/story/_/id/49537787/2026-nfl-season-rams-superteams-preseason-favorites-win-super-bowl-barnwell",
+      "sport": "NFL",
+      "published": "2026-08-31T16:33:26.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49742747",
+      "id": "49742747",
+      "headline": "College football coaching carousel 2026: Who to watch for the next big job opening",
+      "summary": "After an unprecedented cycle of changes, what can we expect in 2026?",
+      "url": "https://www.espn.com/college-football/story/_/id/49742747/college-football-coaching-hot-seats-2026-next-big-jobs",
+      "sport": "College football",
+      "published": "2026-08-31T16:33:16.000Z",
+      "firstSeen": "2026-08-31T12:38:41.577Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49784004",
+      "id": "49784004",
+      "headline": "David Shuman joins Islanders' ownership group as limited partner",
+      "summary": "David Shuman has joined the New York Islanders' ownership group as a limited partner, subject to NHL approval.",
+      "url": "https://www.espn.com/nhl/story/_/id/49784004/david-shuman-joins-islanders-ownership-group-limited-partner",
+      "sport": "NHL",
+      "published": "2026-08-31T16:30:56.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49782322",
+      "id": "49782322",
+      "headline": "Red Sox broadcaster rips Jazz Chisholm Jr. as 'bush league player'",
+      "summary": "The Red Sox radio play-by-play announcer ripped Jazz Chisholm Jr. during Sunday's game against the Yankees, calling the second baseman a \"bush league player\" and suggesting that Boston should \"drill\" one of his teammates.",
+      "url": "https://www.espn.com/mlb/story/_/id/49782322/red-sox-broadcaster-rips-jazz-chisholm-jr-bush-league-player",
+      "sport": "MLB",
+      "published": "2026-08-31T16:23:57.000Z",
+      "firstSeen": "2026-08-31T15:27:20.821Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49753915",
+      "id": "49753915",
+      "headline": "Fantasy Baseball Forecaster Playoff Round 1, Week 1: Aug. 31- Sept. 6",
+      "summary": "Set your lineups for the weeks ahead in fantasy baseball with our preview featuring pitcher rankings, hitter ratings and schedule observations.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/49753915/fantasy-baseball-forecaster-espn-2026-mlb-starting-pitcher-hitter-ranks-week-22-august-31-sept-6",
+      "sport": "MLB",
+      "published": "2026-08-31T16:07:44.000Z",
+      "firstSeen": "2026-08-28T21:31:53.473Z",
+      "bestRank": 1
+    },
+    {
+      "key": "31165089",
+      "id": "31165089",
+      "headline": "Fantasy baseball forecaster: Team hitting ratings",
+      "summary": "Stay ahead of the game and optimize your fantasy baseball hitters with our forecaster, which provides a rolling 10-day outlook of every team's hitting matchups as well as the potential for stolen bases.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/31165089/fantasy-baseball-forecaster-team-hitting-stolen-base-ratings-platoon-matchups-daily-weekly-leagues",
+      "sport": "MLB",
+      "published": "2026-08-31T16:06:05.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "31165100",
+      "id": "31165100",
+      "headline": "Fantasy baseball forecaster: Pitcher projections for the next 10 days",
+      "summary": "Keep up to date on who is pitching -- and how well they're expected to do -- with our forecaster, which provides a rolling 10-day outlook of every team's probable starting pitchers with game score projections.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/31165100/fantasy-baseball-forecaster-probable-starting-pitcher-projections-matchups-daily-weekly-leagues",
+      "sport": "MLB",
+      "published": "2026-08-31T16:05:59.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49783482",
+      "id": "49783482",
+      "headline": "Where is an appropriate spot to draft Jeremiyah Love in fantasy?",
+      "summary": "Where is an appropriate spot to draft Jeremiyah Love in fantasy?",
+      "url": "https://www.espn.com/video/clip/_/id/49783482/where-appropriate-spot-draft-jeremiyah-love-fantasy",
+      "sport": "NFL",
+      "published": "2026-08-31T16:02:21.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49783484",
+      "id": "49783484",
+      "headline": "Why MarShawn Lloyd could be a strong short-term option for fantasy managers",
+      "summary": "Why MarShawn Lloyd could be a strong short-term option for fantasy managers",
+      "url": "https://www.espn.com/video/clip/_/id/49783484/why-marshawn-lloyd-strong-short-term-option-fantasy-managers",
+      "sport": "NFL",
+      "published": "2026-08-31T16:01:35.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49783678",
+      "id": "49783678",
+      "headline": "Flag football to be part of '27 CFP championship festivities",
+      "summary": "The CFP is partnering with iFlag to launch a flag football showcase during the 2027 CFP national championship weekend festivities. Men's and women's teams will compete in an open invitational tournament.",
+      "url": "https://www.espn.com/college-football/story/_/id/49783678/flag-football-part-27-cfp-championship-festivities",
+      "sport": "College football",
+      "published": "2026-08-31T15:59:33.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49556816",
+      "id": "49556816",
+      "headline": "Fantasy Football 'Do Draft' list: Derrick Henry, Patrick Mahomes among undervalued players to pick",
+      "summary": "You've read the \"Do Not Draft\" list. Now, Eric Karabell lists players being drafted later than they should be.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49556816/2026-fantasy-football-sleepers-value-picks-undervalued-karabell",
+      "sport": "NFL",
+      "published": "2026-08-31T15:59:19.000Z",
+      "firstSeen": "2026-08-15T15:27:03.958Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49529494",
+      "id": "49529494",
+      "headline": "Fantasy Football 'Do Not Draft' list: Giants' young trio among players being overvalued",
+      "summary": "The annual hit is back, with players Eric Karabell feels are going earlier than they should in drafts this summer.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49529494/2026-fantasy-football-busts-overvalued-do-not-draft-karabell",
+      "sport": "NFL",
+      "published": "2026-08-31T15:58:09.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49783507",
+      "id": "49783507",
+      "headline": "Why Daniel Dopp is moving Puka Nacua up his fantasy rankings",
+      "summary": "Why Daniel Dopp is moving Puka Nacua up his fantasy rankings",
+      "url": "https://www.espn.com/video/clip/_/id/49783507/why-daniel-dopp-moving-puka-nacua-fantasy-rankings",
+      "sport": "NFL",
+      "published": "2026-08-31T15:51:46.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49782936",
+      "id": "49782936",
+      "headline": "Fantasy baseball playoff pickups: Work the waiver wire to win",
+      "summary": "The top players you should consider claiming off the fantasy baseball waiver wire this week for the fantasy playoffs.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/49782936/fantasy-baseball-free-agent-pickups-waiver-wire-august-31-2026",
+      "sport": "MLB",
+      "published": "2026-08-31T15:46:35.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49783517",
+      "id": "49783517",
+      "headline": "Liz Loza's fantasy hot take about Isiah Pacheco and Breece Hall",
+      "summary": "Liz Loza's fantasy hot take about Isiah Pacheco and Breece Hall",
+      "url": "https://www.espn.com/video/clip/_/id/49783517/liz-loza-fantasy-hot-take-isiah-pacheco-breece-hall",
+      "sport": "NFL",
+      "published": "2026-08-31T15:38:21.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49783363",
+      "id": "49783363",
+      "headline": "Why Stephen A. isn't putting much stock in UNC after win over TCU",
+      "summary": "Why Stephen A. isn't putting much stock in UNC after win over TCU",
+      "url": "https://www.espn.com/video/clip/_/id/49783363/why-stephen-putting-much-stock-unc-win-tcu",
+      "sport": "College football",
+      "published": "2026-08-31T15:38:15.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 7
+    },
     {
       "key": "47539664",
       "id": "47539664",
@@ -57,17 +431,6 @@
       "bestRank": 17
     },
     {
-      "key": "49753915",
-      "id": "49753915",
-      "headline": "Fantasy Baseball Forecaster Playoff Round 1, Week 1: Aug. 31- Sept. 6",
-      "summary": "Set your lineups for the weeks ahead in fantasy baseball with our preview featuring pitcher rankings, hitter ratings and schedule observations.",
-      "url": "https://www.espn.com/fantasy/baseball/story/_/id/49753915/fantasy-baseball-forecaster-espn-2026-mlb-starting-pitcher-hitter-ranks-week-22-august-31-sept-6",
-      "sport": "MLB",
-      "published": "2026-08-31T15:05:11.000Z",
-      "firstSeen": "2026-08-28T21:31:53.473Z",
-      "bestRank": 1
-    },
-    {
       "key": "49780513",
       "id": "49780513",
       "headline": "Transfer rumors, news: Spurs to make late move for Pulisic?",
@@ -77,28 +440,6 @@
       "published": "2026-08-31T14:57:09.000Z",
       "firstSeen": "2026-08-31T09:35:03.395Z",
       "bestRank": 1
-    },
-    {
-      "key": "31165089",
-      "id": "31165089",
-      "headline": "Fantasy baseball forecaster: Team hitting ratings",
-      "summary": "Stay ahead of the game and optimize your fantasy baseball hitters with our forecaster, which provides a rolling 10-day outlook of every team's hitting matchups as well as the potential for stolen bases.",
-      "url": "https://www.espn.com/fantasy/baseball/story/_/id/31165089/fantasy-baseball-forecaster-team-hitting-stolen-base-ratings-platoon-matchups-daily-weekly-leagues",
-      "sport": "MLB",
-      "published": "2026-08-31T14:56:36.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
-    },
-    {
-      "key": "31165100",
-      "id": "31165100",
-      "headline": "Fantasy baseball forecaster: Pitcher projections for the next 10 days",
-      "summary": "Keep up to date on who is pitching -- and how well they're expected to do -- with our forecaster, which provides a rolling 10-day outlook of every team's probable starting pitchers with game score projections.",
-      "url": "https://www.espn.com/fantasy/baseball/story/_/id/31165100/fantasy-baseball-forecaster-probable-starting-pitcher-projections-matchups-daily-weekly-leagues",
-      "sport": "MLB",
-      "published": "2026-08-31T14:56:29.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 2
     },
     {
       "key": "4053281",
@@ -132,28 +473,6 @@
       "published": "2026-08-31T14:37:58.000Z",
       "firstSeen": "2026-08-31T15:27:20.821Z",
       "bestRank": 1
-    },
-    {
-      "key": "49742747",
-      "id": "49742747",
-      "headline": "College football coaching carousel 2026: Who to watch for the next big job opening",
-      "summary": "After an unprecedented cycle of changes, what can we expect in 2026?",
-      "url": "https://www.espn.com/college-football/story/_/id/49742747/college-football-coaching-hot-seats-2026-next-big-jobs",
-      "sport": "College football",
-      "published": "2026-08-31T14:24:41.000Z",
-      "firstSeen": "2026-08-31T12:38:41.577Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49782322",
-      "id": "49782322",
-      "headline": "Red Sox broadcaster rips Jazz Chisholm Jr. as 'bush league player'",
-      "summary": "The Red Sox radio play-by-play announcer ripped Jazz Chisholm Jr. during Sunday's game against the Yankees, calling the second baseman a \"bush league player\" and suggesting that Boston should \"drill\" one of his teammates.",
-      "url": "https://www.espn.com/mlb/story/_/id/49782322/red-sox-broadcaster-rips-jazz-chisholm-jr-bush-league-player",
-      "sport": "MLB",
-      "published": "2026-08-31T14:15:41.000Z",
-      "firstSeen": "2026-08-31T15:27:20.821Z",
-      "bestRank": 5
     },
     {
       "key": "49782749",
@@ -200,6 +519,17 @@
       "bestRank": 2
     },
     {
+      "key": "49782113",
+      "id": "49782113",
+      "headline": "A'ja Wilson, Kelsey Plum to miss the FIBA Women's World Cup",
+      "summary": "Kelsey Plum and A'ja Wilson will miss the FIBA Women's World Cup for health reasons, with the Mercury announcing that Plum will miss the rest of the 2026 season. Kiki Iriafen and Sonia Citron will replace Plum and Wilson, USA Basketball announced Monday.",
+      "url": "https://www.espn.com/wnba/story/_/id/49782113/aja-wilson-kelsey-plum-miss-fiba-women-world-cup",
+      "sport": "WNBA",
+      "published": "2026-08-31T13:53:27.000Z",
+      "firstSeen": "2026-08-31T15:27:20.821Z",
+      "bestRank": 1
+    },
+    {
       "key": "40699880",
       "id": "40699880",
       "headline": "Fantasy football buzz: What to know about Packers RBs before you draft",
@@ -219,17 +549,6 @@
       "sport": "NFL",
       "published": "2026-08-31T13:34:05.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49782113",
-      "id": "49782113",
-      "headline": "A'ja Wilson, Kelsey Plum to miss the FIBA Women's World Cup",
-      "summary": "Kelsey Plum and A'Ja Wilson will miss the FIBA Women's World Cup for health reasons, with the Mercury announcing that Plum will miss the rest of the 2026 season. Kiki Iriafen and Sonia Citron will replace Plum and Wilson, USA Basketball announced Monday.",
-      "url": "https://www.espn.com/wnba/story/_/id/49782113/aja-wilson-kelsey-plum-miss-fiba-women-world-cup",
-      "sport": "WNBA",
-      "published": "2026-08-31T13:26:32.000Z",
-      "firstSeen": "2026-08-31T15:27:20.821Z",
       "bestRank": 1
     },
     {
@@ -348,7 +667,7 @@
       "headline": "Sankey, SEC 'prepared to contest' judge's order in Louisiana",
       "summary": "Though the SEC said it will comply with an order that prohibits commissioner Greg Sankey from punishing schools if they roster a player who returns from a pro contract, the league said in a statement Sunday that it will defend its rights in court.",
       "url": "https://www.espn.com/college-sports/story/_/id/49778057/sankey-sec-prepared-contest-judge-order-louisiana",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-31T12:23:32.000Z",
       "firstSeen": "2026-08-31T01:06:00.592Z",
       "bestRank": 1
@@ -414,21 +733,10 @@
       "headline": "Inside Brendan Sorsby's eligibility saga and the scars it left",
       "summary": "The fighting behind the scenes between the Big 12 and Texas Tech, and the NFL's ultimate decision of denial.",
       "url": "https://www.espn.com/college-football/story/_/id/49277965/college-football-texas-tech-brendan-sorsby-eligibility-ncaa-big12-nfl",
-      "sport": "NFL",
+      "sport": "College football",
       "published": "2026-08-31T11:21:56.000Z",
       "firstSeen": "2026-08-31T12:38:41.577Z",
       "bestRank": 1
-    },
-    {
-      "key": "49745133",
-      "id": "49745133",
-      "headline": "Chippy Will Hammond, not Brendan Sorsby, leading Texas Tech",
-      "summary": "Some wrote off Tech when Sorsby was ruled ineligible. Hammond planned on starting all along.",
-      "url": "https://www.espn.com/college-football/story/_/id/49745133/texas-tech-brendan-sorsby-hammond-college-football",
-      "sport": "College football",
-      "published": "2026-08-31T11:19:36.000Z",
-      "firstSeen": "2026-08-31T12:38:41.577Z",
-      "bestRank": 2
     },
     {
       "key": "49775156",
@@ -627,17 +935,6 @@
       "published": "2026-08-31T10:36:34.000Z",
       "firstSeen": "2026-08-31T12:38:41.577Z",
       "bestRank": 21
-    },
-    {
-      "key": "49732045",
-      "id": "49732045",
-      "headline": "How to keep losing teams out of MLB playoffs",
-      "summary": "It's possible that we could see multiple teams with records under .500 playing this October. That's a shame.",
-      "url": "https://www.espn.com/mlb/story/_/id/49732045/mlb-2026-playoffs-postseason-losing-teams-500-schedule-format-interleague-intraleague",
-      "sport": "MLB",
-      "published": "2026-08-31T10:33:10.000Z",
-      "firstSeen": "2026-08-31T12:38:41.577Z",
-      "bestRank": 3
     },
     {
       "key": "49781322",
@@ -4330,7 +4627,7 @@
       "headline": "ACC joins other Power 4 conferences in banning pros from returning",
       "summary": "The ACC passed a resolution Thursday banning professionals from returning to college in football, plus men's and women's basketball, joining the other Power 4 conferences in setting forth eligibility enforcement.",
       "url": "https://www.espn.com/college-football/story/_/id/49746151/acc-joins-other-power-4-conferences-bans-pros-returning",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-29T11:46:47.000Z",
       "firstSeen": "2026-08-28T03:24:34.178Z",
       "bestRank": 1
@@ -5452,7 +5749,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "College basketball is in chaos over eligibility issues. Here's how we got here, the latest updates and what's next.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-29T00:45:57.000Z",
       "firstSeen": "2026-08-22T21:27:10.267Z",
       "bestRank": 1
@@ -5518,7 +5815,7 @@
       "headline": "Ruling: SEC can't sanction teams using players with NFL ties",
       "summary": "A temporary restraining order prohibits the SEC from enforcing a new rule that threatens stiff penalties for any team that uses a player who previously signed a contract to play in the NFL, NBA or WNBA.",
       "url": "https://www.espn.com/college-football/story/_/id/49753638/ruling-sec-sanction-teams-using-players-nfl-ties",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-28T23:08:04.000Z",
       "firstSeen": "2026-08-29T00:53:26.639Z",
       "bestRank": 2
@@ -9016,7 +9313,7 @@
       "headline": "Big 12 announces ban on all professionals from returning",
       "summary": "The Big 12 has unanimously agreed to ban professionals from returning to Big 12 schools in all sports, the conference announced on Wednesday.",
       "url": "https://www.espn.com/college-football/story/_/id/49735747/big-12-announces-ban-all-professionals-returning",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-27T01:47:48.000Z",
       "firstSeen": "2026-08-27T02:01:23.994Z",
       "bestRank": 1
@@ -9159,7 +9456,7 @@
       "headline": "Sources: SEC to suspend head coaches who add pro players",
       "summary": "SEC schools that bring back NFL, NBA or WNBA players to their programs will face steep discipline under a new policy unanimously approved by the conference's 16 members, sources confirmed to ESPN.",
       "url": "https://www.espn.com/college-football/story/_/id/49734134/sources-sec-suspend-head-coaches-add-pro-players",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-27T00:12:05.000Z",
       "firstSeen": "2026-08-26T22:17:35.293Z",
       "bestRank": 2
@@ -9533,7 +9830,7 @@
       "headline": "Big Ten rewards commissioner Tony Petitti with five-year extension",
       "summary": "The Big Ten and commissioner Tony Petitti agreed to a five-year contract extension that will keep him with the conference through the summer of 2033, the league announced Wednesday.",
       "url": "https://www.espn.com/college-football/story/_/id/49734570/big-ten-rewards-commissioner-tony-petitti-five-year-extension",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-26T21:18:53.000Z",
       "firstSeen": "2026-08-26T22:17:35.293Z",
       "bestRank": 1
@@ -10281,7 +10578,7 @@
       "headline": "SEC draws rule to stop NFL, NBA, WNBA players from returning",
       "summary": "After the Big Ten passed a rule stopping players returning from the NFL from playing at its schools, the SEC followed suit, but took it further, adding basketball in announcing a policy forbidding members from rostering anyone from the NFL, NBA and WNBA.",
       "url": "https://www.espn.com/college-football/story/_/id/49726430/sec-draws-rule-stop-nfl-nba-wnba-players-returning",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-26T10:21:33.000Z",
       "firstSeen": "2026-08-26T03:37:25.782Z",
       "bestRank": 1
@@ -11590,7 +11887,7 @@
       "headline": "LeBron James, PGA Tour partner on event focused on community",
       "summary": "The LeBron James Family Foundation Invitational will be played in James' hometown of Akron, Ohio, in July 2027, James' foundation announced Tuesday.",
       "url": "https://www.espn.com/golf/story/_/id/49721608/lebron-james-pga-tour-partner-event-focused-amateurs",
-      "sport": "NBA",
+      "sport": "Golf",
       "published": "2026-08-25T20:15:43.000Z",
       "firstSeen": "2026-08-25T15:31:13.856Z",
       "bestRank": 1
@@ -17255,7 +17552,7 @@
       "headline": "Greg Sankey, in filing, speaks out against pros returning to NCAA",
       "summary": "SEC commissioner Greg Sankey asked a judge to uphold NCAA rules that prevent athletes from returning to play in college.",
       "url": "https://www.espn.com/college-sports/story/_/id/49672789/greg-sankey-filing-speaks-pros-returning-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-22T18:27:32.000Z",
       "firstSeen": "2026-08-20T21:27:59.718Z",
       "bestRank": 1
@@ -17277,7 +17574,7 @@
       "headline": "Court halts order, denies extra year of eligibility",
       "summary": "In a legal victory for the NCAA, a federal appeals court has temporarily halted a court order that would have granted thousands of athletes who left college an extra year of eligibility.",
       "url": "https://www.espn.com/college-football/story/_/id/49682102/court-halts-order-denies-extra-year-eligibility",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-22T18:26:52.000Z",
       "firstSeen": "2026-08-21T21:27:41.439Z",
       "bestRank": 1
@@ -20896,7 +21193,7 @@
       "headline": "NCAA lands new deal to promote championship events",
       "summary": "The NCAA and Playfly Sports have agreed to a deal that will open the door to more marketing opportunities around championship events, including possible NIL deals for student-athletes.",
       "url": "https://www.espn.com/college-sports/story/_/id/49670866/ncaa-lands-new-deal-promote-championship-events",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-20T15:20:41.000Z",
       "firstSeen": "2026-08-20T18:29:37.526Z",
       "bestRank": 1
@@ -25736,7 +26033,7 @@
       "headline": "Notable Walk-Offs: Reflect on historic moments across the SEC",
       "summary": "On SEC Now, Dari Nowkhah and Matt Stinchcomb look back on some of the most legendary moments from SEC history across all sports.",
       "url": "https://www.espn.com/video/clip/_/id/49643359/reflect-historic-moments-sec",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-17T23:54:12.000Z",
       "firstSeen": "2026-08-18T06:29:33.134Z",
       "bestRank": 1
@@ -26473,7 +26770,7 @@
       "headline": "Sources: Michigan State to hire Western Michigan AD Bartholomae",
       "summary": "Michigan State is finalizing a deal to hire Western Michigan athletic director Dan Bartholomae as its new AD, sources told ESPN's Pete Thamel on Monday.",
       "url": "https://www.espn.com/college-football/story/_/id/49638615/sources-michigan-state-hire-western-michigan-ad-bartholomae",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-17T14:32:16.000Z",
       "firstSeen": "2026-08-17T21:27:47.678Z",
       "bestRank": 1
@@ -27903,7 +28200,7 @@
       "headline": "Basketball HOF class of 2026 honors women's hoops, NBA icons",
       "summary": "Candace Parker and Elena Delle Donne headlined a 2026 Hall of Fame class that honored women's hoops, as well as NBA luminaries such as Doc Rivers, Mike D'Antoni and Amar'e Stoudemire.",
       "url": "https://www.espn.com/espn/story/_/id/49623875/basketball-hof-class-2026-honors-women-hoops-nba-icons",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-16T11:21:36.000Z",
       "firstSeen": "2026-08-16T03:34:19.324Z",
       "bestRank": 1
@@ -29172,17 +29469,6 @@
       "published": "2026-08-15T16:06:28.000Z",
       "firstSeen": "2026-08-15T18:28:23.382Z",
       "bestRank": 2
-    },
-    {
-      "key": "49556816",
-      "id": "49556816",
-      "headline": "Fantasy Football 'Do Draft' list: Derrick Henry, Patrick Mahomes among undervalued players to pick",
-      "summary": "You've read the \"Do Not Draft\" list. Now, Eric Karabell lists players being drafted later than they should be.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49556816/2026-fantasy-football-sleepers-value-picks-undervalued-karabell",
-      "sport": "NFL",
-      "published": "2026-08-15T15:37:59.000Z",
-      "firstSeen": "2026-08-15T15:27:03.958Z",
-      "bestRank": 3
     },
     {
       "key": "49618875",
@@ -33821,7 +34107,7 @@
       "headline": "Reports: Sankey reminds SEC schools to follow eligibility rules",
       "summary": "Commissioner Greg Sankey sent a memo to SEC members reminding them to move carefully when adding players suddenly allowed by court rulings to seek a fifth year of eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49593224/reports-sankey-reminds-sec-schools-follow-eligibility-rules",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-12T21:10:17.000Z",
       "firstSeen": "2026-08-13T03:59:55.296Z",
       "bestRank": 1
@@ -36047,94 +36333,6 @@
       "published": "2026-08-10T18:58:12.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 16
-    },
-    {
-      "key": "49567137",
-      "id": "49567137",
-      "headline": "Liverpool sign Barcelona defender Ronald Araújo on loan with €55m permanent option",
-      "summary": "Liverpool have completed the signing of Barcelona defender Ronald Araújo on a season long loan, the two clubs have confirmed.",
-      "url": "https://www.espn.com/soccer/story/_/id/49567137/liverpool-sign-barcelona-defender-ronald-araujo-loan-55m-permanent-option",
-      "sport": "Soccer",
-      "published": "2026-08-10T17:59:59.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 26
-    },
-    {
-      "key": "49555079",
-      "id": "49555079",
-      "headline": "NCAA and FBI announce partnership to combat athlete sexploitation",
-      "summary": "As college athletes become bigger targets for sexual exploitation online, the NCAA and FBI announced a partnership Monday to educate athletes on how to prevent private images from falling into the wrong hands.",
-      "url": "https://www.espn.com/college-sports/story/_/id/49555079/ncaa-fbi-announce-partnership-combat-athlete-sexploitation",
-      "sport": "College basketball",
-      "published": "2026-08-10T17:55:54.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49573469",
-      "id": "49573469",
-      "headline": "Why have Liverpool signed Barcelona captain Ronald Araújo, and what will he bring?",
-      "summary": "Liverpool have signed versatile Barcelona defender Ronald Araújo on loan, with a €55 million option. But is it a good deal for them? And why have they done it?",
-      "url": "https://www.espn.com/soccer/story/_/id/49573469/why-liverpool-signed-barcelona-captain-ronald-araujo-he-bring",
-      "sport": "Soccer",
-      "published": "2026-08-10T17:51:23.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 25
-    },
-    {
-      "key": "49575786",
-      "id": "49575786",
-      "headline": "Ron Snodgrass named coordinator of college football officials",
-      "summary": "Longtime college football referee Ron Snodgrass will replace retiring Steve Shaw as the national coordinator of officials, the NCAA announced.",
-      "url": "https://www.espn.com/college-football/story/_/id/49575786/ron-snodgrass-named-coordinator-college-football-officials",
-      "sport": "College football",
-      "published": "2026-08-10T17:31:34.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 20
-    },
-    {
-      "key": "49575753",
-      "id": "49575753",
-      "headline": "Barred Somali World Cup ref 'grateful' for Super Cup shot",
-      "summary": "Omar Artan -- the Somali World Cup referee refused entry to the United States -- has spoken about the \"very tough period\" during what should have been the highlight of his career.",
-      "url": "https://www.espn.com/soccer/story/_/id/49575753/barred-somali-world-cup-ref-grateful-super-cup-shot",
-      "sport": "Soccer",
-      "published": "2026-08-10T17:30:03.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49235590",
-      "id": "49235590",
-      "headline": "2026 NHL free agency tracker: News, contracts, grades, buzz",
-      "summary": "Get up to speed on all the latest veteran additions teams are making beginning on June 30.",
-      "url": "https://www.espn.com/nhl/story/_/id/49235590/nhl-free-agency-tracker-2026-contracts-teams-analysis-updates",
-      "sport": "NHL",
-      "published": "2026-08-10T17:15:15.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49528890",
-      "id": "49528890",
-      "headline": "Insider intel on college football's top QBs",
-      "summary": "Which QBs will be stars? Which players do opposing coaches fear or have questions about? We break down 43 signal-callers.",
-      "url": "https://www.espn.com/college-football/story/_/id/49528890/college-football-2026-intel-top-qbs-arch-manning-julian-sayin-dante-moore-trinidad-chambliss-more",
-      "sport": "College football",
-      "published": "2026-08-10T16:56:00.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 21
-    },
-    {
-      "key": "49573256",
-      "id": "49573256",
-      "headline": "UEFA, Concacaf, AFC accuse FIFA of 'breach of trust,' 'deception' over World Cup plan",
-      "summary": "UEFA, Concacaf and the Asian Football Confederation (AFC) have accused FIFA of a \"fundamental breach of trust\" over its handling of plans to sell a stake in the World Cup.",
-      "url": "https://www.espn.com/soccer/story/_/id/49573256/uefa-concacaf-afc-accuse-fifa-breach-trust-deception-world-cup-plan",
-      "sport": "Soccer",
-      "published": "2026-08-10T15:49:41.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 7
     }
   ]
 }
