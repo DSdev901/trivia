@@ -1234,7 +1234,7 @@ async function renderPresidentDetail() {
           <div class="detail-identity">
             <p class="detail-number">President #${president.number}</p>
             <h1>${president.name}</h1>
-            <p class="detail-served">Served ${president.served}</p>
+            <p class="detail-served">${president.served}</p>
           </div>
         </div>
         ${

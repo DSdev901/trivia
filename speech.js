@@ -591,7 +591,7 @@ export function toConversationalSpeech(president, fact, factNumber) {
   }
 
   if (factNumber === 1) {
-    return `President number ${number}. ${name}. Served ${served}. ${factLabel} ${text}`;
+    return `President number ${number}. ${name}. ${served}. ${factLabel} ${text}`;
   }
 
   if (new RegExp(`^(${name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}|He|She|His|Her|This)`, "i").test(text)) {
@@ -623,7 +623,7 @@ export function toPresidentRosterSpeech(president) {
     .trim();
   if (!name) return `President number ${number}.`;
   if (!served) return `President number ${number}. ${name}.`;
-  return `President number ${number}. ${name}. Served ${served}.`;
+  return `President number ${number}. ${name}. ${served}.`;
 }
 
 /** Read a film pub-quiz item as question, then answer. */
