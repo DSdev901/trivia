@@ -2311,6 +2311,7 @@ function confirmAnswerHtml(ok, item) {
       : "";
   const where = country ? ` · ${escapeHtml(country)}` : "";
   const cap =
+    quizKind() !== "flags" &&
     item.capital &&
     place === item.name &&
     (ok || confirmShowsRevealFlag(item))
@@ -2673,10 +2674,12 @@ function renderPlay() {
     controls = choiceButtons(buildChoices(item));
   }
 
+  const flagsPlay = quizKind() === "flags";
   const playClass = [
     "geo-shell",
     "geo-play",
     showMap ? "geo-play--map" : "",
+    flagsPlay ? "geo-play--flags" : "",
     geo.mode === "pin" ? "geo-play--pin" : "",
     geo.mode === "type" || geo.mode === "outline" ? "geo-play--type" : "",
   ]
@@ -2702,7 +2705,15 @@ function renderPlay() {
           </div>
           ${nextHtml}
         </div>`
-    : `${actionsHtml}
+    : flagsPlay
+      ? `${actionsHtml}
+        <div class="geo-answer-bar">
+          <div class="geo-answer-cluster">
+            ${feedbackHtml}
+          </div>
+          ${nextHtml}
+        </div>`
+      : `${actionsHtml}
           ${feedbackHtml}
           ${nextHtml}`;
 
@@ -2833,6 +2844,7 @@ function judge(ok, clickedMapId = null, clickedBtn = null) {
     feedback.innerHTML = confirmAnswerHtml(ok, item);
   }
   if (nextRow) nextRow.hidden = false;
+  geo.root.querySelector(".geo-play")?.classList.add("is-answered");
 
   if (playHighlightsTarget(true)) {
     paintMap(item.id, {

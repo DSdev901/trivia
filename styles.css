@@ -4323,9 +4323,105 @@ a.ce-tab {
   }
 
   .geo-play .geo-type-form .primary-btn,
-  .geo-play:not(.geo-play--map) .geo-next-row .pager-btn {
+  .geo-play:not(.geo-play--map):not(.geo-play--flags) .geo-next-row .pager-btn {
     width: 100%;
     min-height: 2.85rem;
+  }
+
+  .geo-play--flags .geo-play-layout {
+    align-items: start;
+  }
+
+  .geo-play--flags .geo-quiz-panel,
+  .geo-play--flags .geo-quiz-actions {
+    padding: 0.55rem 0.7rem;
+  }
+
+  .geo-play--flags .geo-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: start;
+    width: 100%;
+    gap: 0.45rem;
+  }
+
+  .geo-play--flags .geo-prompt {
+    margin: 0;
+    font-size: 1.08rem;
+    text-align: center;
+  }
+
+  .geo-play--flags .geo-prompt .geo-flag-xl {
+    font-size: clamp(4.75rem, 26vmin, 7.25rem);
+    margin: 0.1rem auto 0.4rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .geo-play--flags .choice-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+  }
+
+  .geo-play--flags .choice-btn {
+    min-height: 2.75rem;
+    padding: 0.55rem 0.65rem;
+    align-items: center;
+  }
+
+  .geo-play--flags .choice-text {
+    font-size: 0.92rem;
+    line-height: 1.25;
+  }
+
+  .geo-play--flags .geo-answer-bar:not(:has(.quiz-feedback:not([hidden]), .geo-next-row:not([hidden]))) {
+    display: contents;
+  }
+
+  .geo-play--flags .geo-answer-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 100%;
+  }
+
+  .geo-play--flags .geo-answer-cluster {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 0.4rem;
+  }
+
+  .geo-play--flags .geo-answer-bar:has(.quiz-feedback:not([hidden]), .geo-next-row:not([hidden])) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+  }
+
+  .geo-play--flags .geo-answer-bar .quiz-feedback {
+    margin-top: 0;
+    padding: 0.55rem 0.7rem;
+  }
+
+  .geo-play--flags .quiz-feedback-copy {
+    display: block;
+  }
+
+  .geo-play--flags .geo-next-row:not([hidden]) {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+
+  .geo-play--flags .geo-next-row .pager-btn {
+    width: 100%;
+    min-height: 2.85rem;
+  }
+
+  .geo-play--flags.is-answered .geo-quiz-actions:has(.geo-type-form) {
+    display: none;
   }
 
   .geo-play--study .geo-play-layout {
