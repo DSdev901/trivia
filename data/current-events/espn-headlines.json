@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-01T01:11:44.372Z",
+  "generatedAt": "2026-09-01T03:33:55.754Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-11T01:11:44.372Z",
-  "windowEnd": "2026-09-01T01:11:44.372Z",
+  "windowStart": "2026-08-11T03:33:55.754Z",
+  "windowEnd": "2026-09-01T03:33:55.754Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,96 @@
     "Tennis",
     "MMA"
   ],
-  "count": 3326,
+  "count": 3344,
   "items": [
+    {
+      "key": "49787690",
+      "id": "49787690",
+      "headline": "Giants WR Nabers feeling 'good' but mum on playing Week 1",
+      "summary": "Malik Nabers is feeling \"real good\" ahead of the Giants' season opener against the Cowboys but remained noncommittal about playing Week 1.",
+      "url": "https://www.espn.com/nfl/story/_/id/49787690/giants-wr-nabers-feeling-good-mum-playing-week-1",
+      "sport": "NFL",
+      "published": "2026-09-01T03:07:03.000Z",
+      "firstSeen": "2026-09-01T01:11:44.372Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49789227",
+      "id": "49789227",
+      "headline": "Rams' Aaron Donald misses practice as planned; return date TBD",
+      "summary": "Sean McVay won't put a timeline on when Aaron Donald will play in his first game after being retired for two years.",
+      "url": "https://www.espn.com/tennis/story/_/id/49789227/rams-aaron-donald-misses-practice-planned-return-date-tbd",
+      "sport": "NFL",
+      "published": "2026-09-01T03:06:14.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49787595",
+      "id": "49787595",
+      "headline": "Minter backs Loop as Ravens add kicker competition in Moody",
+      "summary": "Baltimore signed Jake Moody to the practice squad three days after Tyler Loop missed two kicks in the preseason finale.",
+      "url": "https://www.espn.com/nfl/story/_/id/49787595/minter-backs-loop-ravens-add-kicker-competition-moody",
+      "sport": "NFL",
+      "published": "2026-09-01T03:05:55.000Z",
+      "firstSeen": "2026-09-01T01:11:44.372Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49787297",
+      "id": "49787297",
+      "headline": "Boston Red Sox put Willson Contreras on 10-day injured list",
+      "summary": "The Boston Red Sox placed Willson Contreras, 34, who is batting .274 with a team-leading 26 home runs in his first season with the club, on the 10-day injured list on Monday because of a strained left hamstring that's been hampering him for over a month.",
+      "url": "https://www.espn.com/mlb/story/_/id/49787297/boston-red-sox-put-willson-contreras-10-day-injured-list",
+      "sport": "MLB",
+      "published": "2026-09-01T02:55:49.000Z",
+      "firstSeen": "2026-09-01T01:11:44.372Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49789514",
+      "id": "49789514",
+      "headline": "Alex Bregman hits 3 home runs and Cubs set team record with 9 in 17-3 rout of Brewers",
+      "summary": "— Alex Bregman hit three of Chicago's franchise-record nine home runs and the Cubs wrapped up their August power display with a 17-3 blowout of the Milwaukee Brewers on Monday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816754",
+      "sport": "MLB",
+      "published": "2026-09-01T02:54:30.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49789475",
+      "id": "49789475",
+      "headline": "Athletics vs. Texas Rangers: Game Highlights",
+      "summary": "Athletics vs. Texas Rangers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49789475/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-01T02:49:44.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49789467",
+      "id": "49789467",
+      "headline": "Milwaukee Brewers vs. Chicago Cubs: Game Highlights",
+      "summary": "Milwaukee Brewers vs. Chicago Cubs: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49789467/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-01T02:49:35.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49789469",
+      "id": "49789469",
+      "headline": "DeGrom strikes out 8, allows 1 hit in 7 shutout innings as the Rangers beat the A's 8-1",
+      "summary": "— Jacob deGrom allowed a second-inning single in seven shutout innings while bouncing back from one of his worst major league starts, and the Texas Rangers beat the Athletics 8-1 on Monday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816751",
+      "sport": "MLB",
+      "published": "2026-09-01T02:49:29.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 3
+    },
     {
       "key": "49787846",
       "id": "49787846",
@@ -30,9 +118,207 @@
       "summary": "Ketel Marte was back at the ballpark Monday and in the lineup for the Diamondbacks, two weeks after the three-time All-Star's unexpected no-show before a game in Boston left the team scrambling.",
       "url": "https://www.espn.com/mlb/story/_/id/49787846/ketel-marte-apologizes-torey-lovullo-address-d-backs",
       "sport": "MLB",
-      "published": "2026-09-01T00:51:47.000Z",
+      "published": "2026-09-01T02:48:22.000Z",
       "firstSeen": "2026-09-01T01:11:44.372Z",
       "bestRank": 3
+    },
+    {
+      "key": "49789195",
+      "id": "49789195",
+      "headline": "Trevor Story hits a bases-loaded RBI single in 10th to lift Red Sox to 9-8 win over Mariners",
+      "summary": "— Trevor Story drove in the winning run with a bases-loaded single in the 10th inning after Seattle walked the two batters before him intentionally, lifting the Boston Red Sox to a 9-8 comeback victory over the Mariners on Monday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816750",
+      "sport": "MLB",
+      "published": "2026-09-01T02:42:31.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49789357",
+      "id": "49789357",
+      "headline": "Ketel Marte apologizes for unexpected no-show",
+      "summary": "Ketel Marte apologizes for unexpected no-show",
+      "url": "https://www.espn.com/video/clip/_/id/49789357/ketel-marte-apologizes-unexpected-no-show",
+      "sport": "MLB",
+      "published": "2026-09-01T02:40:54.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49789283",
+      "id": "49789283",
+      "headline": "Ryan Jeffers hits 2 HRs, Walker Jenkins has 1st MLB HR as Twins defeat Tigers 11-1",
+      "summary": "— Ryan Jeffers had two homers, Walker Jenkins went deep for the first time in his major league career, and the Minnesota Twins beat the Detroit Tigers 11-1 on Monday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816753",
+      "sport": "MLB",
+      "published": "2026-09-01T02:23:36.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49789232",
+      "id": "49789232",
+      "headline": "Detroit Tigers vs. Minnesota Twins: Game Highlights",
+      "summary": "Detroit Tigers vs. Minnesota Twins: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49789232/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-01T02:19:25.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49772714",
+      "id": "49772714",
+      "headline": "Ex-TCU S Jacob Fields charged over alleged punch of teammate",
+      "summary": "Former TCU safety Jacob Fields is facing an assault charge stemming from his alleged punching of a teammate that led to his dismissal from the squad.",
+      "url": "https://www.espn.com/college-football/story/_/id/49772714/ex-tcu-s-jacob-fields-charged-alleged-punch-teammate",
+      "sport": "College football",
+      "published": "2026-09-01T02:13:51.000Z",
+      "firstSeen": "2026-08-30T15:23:17.640Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49789212",
+      "id": "49789212",
+      "headline": "Daylen Lile continues hot streak with 2 homers as Nationals beat Marlins 6-3",
+      "summary": "— Daylen Lile homered twice and drove in four runs, Erik Tolman pitched out of a bases-loaded jam to earn his first major league save, and the Washington Nationals beat the Miami Marlins 6-3 on Monday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816747",
+      "sport": "MLB",
+      "published": "2026-09-01T02:13:35.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49788976",
+      "id": "49788976",
+      "headline": "Robert Stock's first major league win in 7 years lifts Mets past Rays, 3-2",
+      "summary": "— Robert Stock pitched shutout ball into the sixth inning for his first major league win in seven years, Mark Vientos homered in his return from the injured list and the New York Mets beat the Tampa Bay Rays 3-2 on Monday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816748",
+      "sport": "MLB",
+      "published": "2026-09-01T02:13:30.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49788652",
+      "id": "49788652",
+      "headline": "Plate umpire leaves Padres-Reds game with heat exhaustion",
+      "summary": "Plate umpire Manny Gonzalez left Monday's game between the Padres and Reds after becoming overheated.",
+      "url": "https://www.espn.com/mlb/story/_/id/49788652/plate-umpire-leaves-padres-reds-game-heat-exhaustion",
+      "sport": "MLB",
+      "published": "2026-09-01T02:09:16.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 17
+    },
+    {
+      "key": "49789090",
+      "id": "49789090",
+      "headline": "Padres 2B Luis Rengifo suffers torn ACL, will need surgery",
+      "summary": "San Diego Padres second baseman Luis Rengifo, 29, initially diagnosed with a knee sprain, will undergo season-ending surgery for a torn ACL in his right knee, the team said, adding that imaging revealed the full extent of the injury.",
+      "url": "https://www.espn.com/mlb/story/_/id/49789090/padres-2b-luis-rengifo-suffers-torn-acl-need-surgery",
+      "sport": "MLB",
+      "published": "2026-09-01T02:07:45.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49789043",
+      "id": "49789043",
+      "headline": "Seattle Mariners vs. Boston Red Sox: Game Highlights",
+      "summary": "Seattle Mariners vs. Boston Red Sox: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49789043/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-01T02:00:47.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49786038",
+      "id": "49786038",
+      "headline": "Broncos' Cooper pleads not guilty to domestic violence charges",
+      "summary": "Broncos outside linebacker Jonathon Cooper pleaded not guilty to multiple domestic violence charges Monday in a Douglas County (Colorado) courtroom.",
+      "url": "https://www.espn.com/nfl/story/_/id/49786038/broncos-cooper-pleads-not-guilty-domestic-violence-charges",
+      "sport": "NFL",
+      "published": "2026-09-01T01:47:54.000Z",
+      "firstSeen": "2026-08-31T21:24:00.783Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49788946",
+      "id": "49788946",
+      "headline": "Machado has 4-hit game, King fans 6 in 6 innings as the Padres beat the Reds 5-0",
+      "summary": "— Manny Machado had four hits, Michael King struck out six in six innings and the San Diego Padres defeated the Cincinnati Reds 5-0 on Monday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816749",
+      "sport": "MLB",
+      "published": "2026-09-01T01:46:35.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49788913",
+      "id": "49788913",
+      "headline": "Miami Marlins vs. Washington Nationals: Game Highlights",
+      "summary": "Miami Marlins vs. Washington Nationals: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49788913/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-01T01:43:35.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 14
+    },
+    {
+      "key": "49788877",
+      "id": "49788877",
+      "headline": "San Diego Padres vs. Cincinnati Reds: Game Highlights",
+      "summary": "San Diego Padres vs. Cincinnati Reds: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49788877/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-01T01:40:17.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 15
+    },
+    {
+      "key": "49266819",
+      "id": "49266819",
+      "headline": "Argentina legend Lionel Messi announces international retirement",
+      "summary": "Lionel Messi on Monday announced his retirement from international soccer with a heartfelt Instagram post.",
+      "url": "https://www.espn.com/soccer/story/_/id/49266819/lionel-messi-argentina-international-retirement-world-cup-copa-america",
+      "sport": "Soccer",
+      "published": "2026-09-01T01:36:54.000Z",
+      "firstSeen": "2026-08-31T18:32:19.074Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49788495",
+      "id": "49788495",
+      "headline": "Giants steal win on road in Atlanta",
+      "summary": "Giants steal win on road in Atlanta",
+      "url": "https://www.espn.com/video/clip/_/id/49788495/giants-steal-win-road-atlanta",
+      "sport": "MLB",
+      "published": "2026-09-01T01:33:30.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 20
+    },
+    {
+      "key": "49788304",
+      "id": "49788304",
+      "headline": "With $6.5 million left on deal, UCLA fires AD Martin Jarmond",
+      "summary": "UCLA fired athletic director Martin Jarmond on Monday, with chancellor Julio Frenk explaining in a letter to the UCLA community that the Bruins' athletic program \"currently carries a significant financial deficit, and its current path is not sustainable.\"",
+      "url": "https://www.espn.com/college-football/story/_/id/49788304/with-65-million-left-deal-ucla-fires-ad-martin-jarmond",
+      "sport": "College basketball",
+      "published": "2026-09-01T01:32:34.000Z",
+      "firstSeen": "2026-09-01T01:11:44.372Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49788759",
+      "id": "49788759",
+      "headline": "New York Mets vs. Tampa Bay Rays Game Highlights",
+      "summary": "New York Mets vs. Tampa Bay Rays Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49788759/new-york-mets-vs-tampa-bay-rays-game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-01T01:30:25.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
+      "bestRank": 16
     },
     {
       "key": "49788521",
@@ -53,17 +339,6 @@
       "url": "http://www.espn.com/mlb/recap?gameId=401878657",
       "sport": "MLB",
       "published": "2026-09-01T00:44:29.000Z",
-      "firstSeen": "2026-09-01T01:11:44.372Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49788304",
-      "id": "49788304",
-      "headline": "With $6.5 million left on deal, UCLA fires AD Martin Jarmond",
-      "summary": "UCLA fired athletic director Martin Jarmond on Monday, with chancellor Julio Frenk explaining in a letter to the UCLA community that the Bruins' athletic program \"currently carries a significant financial deficit, and its current path is not sustainable.\"",
-      "url": "https://www.espn.com/college-football/story/_/id/49788304/with-65-million-left-deal-ucla-fires-ad-martin-jarmond",
-      "sport": "College football",
-      "published": "2026-09-01T00:31:09.000Z",
       "firstSeen": "2026-09-01T01:11:44.372Z",
       "bestRank": 1
     },
@@ -101,14 +376,14 @@
       "bestRank": 1
     },
     {
-      "key": "49787690",
-      "id": "49787690",
-      "headline": "Giants WR Nabers feeling 'good' but mum on playing Week 1",
-      "summary": "Malik Nabers is feeling \"real good\" ahead of the Giants' season opener against the Cowboys but remained noncommittal about playing Week 1.",
-      "url": "https://www.espn.com/nfl/story/_/id/49787690/giants-wr-nabers-feeling-good-mum-playing-week-1",
-      "sport": "NFL",
-      "published": "2026-08-31T23:55:03.000Z",
-      "firstSeen": "2026-09-01T01:11:44.372Z",
+      "key": "49787553",
+      "id": "49787553",
+      "headline": "How A'ja Wilson and Kelsey Plum injuries impact USA at World Cup",
+      "summary": "How will the deepest roster in the world make up for A'ja Wilson's absence? And what might be next for Kelsey Plum?",
+      "url": "https://www.espn.com/wnba/story/_/id/49787553/wnba-2026-fiba-world-cup-team-usa-basketball-aja-wilson-kelsey-plum-injury",
+      "sport": "WNBA",
+      "published": "2026-08-31T23:53:15.000Z",
+      "firstSeen": "2026-09-01T03:33:55.754Z",
       "bestRank": 1
     },
     {
@@ -176,28 +451,6 @@
       "published": "2026-08-31T22:57:51.000Z",
       "firstSeen": "2026-09-01T01:11:44.372Z",
       "bestRank": 5
-    },
-    {
-      "key": "49787595",
-      "id": "49787595",
-      "headline": "Minter backs Loop as Ravens add kicker competition in Moody",
-      "summary": "Baltimore signed Jake Moody to the practice squad three days after Tyler Loop missed two kicks in the preseason finale.",
-      "url": "https://www.espn.com/nfl/story/_/id/49787595/minter-backs-loop-ravens-add-kicker-competition-moody",
-      "sport": "NFL",
-      "published": "2026-08-31T22:57:04.000Z",
-      "firstSeen": "2026-09-01T01:11:44.372Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49786038",
-      "id": "49786038",
-      "headline": "Broncos' Cooper pleads not guilty to domestic violence charges",
-      "summary": "Broncos outside linebacker Jonathon Cooper pleaded not guilty to multiple domestic violence charges Monday in a Douglas County (Colorado) courtroom.",
-      "url": "https://www.espn.com/nfl/story/_/id/49786038/broncos-cooper-pleads-not-guilty-domestic-violence-charges",
-      "sport": "NFL",
-      "published": "2026-08-31T22:54:46.000Z",
-      "firstSeen": "2026-08-31T21:24:00.783Z",
-      "bestRank": 4
     },
     {
       "key": "49787446",
@@ -277,17 +530,6 @@
       "bestRank": 7
     },
     {
-      "key": "49266819",
-      "id": "49266819",
-      "headline": "Argentina legend Lionel Messi announces international retirement",
-      "summary": "Lionel Messi on Monday announced his retirement from international soccer with a heartfelt Instagram post.",
-      "url": "https://www.espn.com/soccer/story/_/id/49266819/lionel-messi-argentina-international-retirement-world-cup-copa-america",
-      "sport": "Soccer",
-      "published": "2026-08-31T22:17:05.000Z",
-      "firstSeen": "2026-08-31T18:32:19.074Z",
-      "bestRank": 3
-    },
-    {
       "key": "49785035",
       "id": "49785035",
       "headline": "LSU's Lane Kiffin says his players pursuing ex-NFLers",
@@ -297,17 +539,6 @@
       "published": "2026-08-31T22:01:58.000Z",
       "firstSeen": "2026-08-31T21:24:00.783Z",
       "bestRank": 2
-    },
-    {
-      "key": "49787297",
-      "id": "49787297",
-      "headline": "Boston Red Sox put Willson Contreras on 10-day injured list",
-      "summary": "The Boston Red Sox placed Willson Contreras, 34, who is batting .274 with a team-leading 26 home runs in his first season with the club, on the 10-day injured list on Monday because of a strained left hamstring that's been hampering him for over a month.",
-      "url": "https://www.espn.com/mlb/story/_/id/49787297/boston-red-sox-put-willson-contreras-10-day-injured-list",
-      "sport": "MLB",
-      "published": "2026-08-31T22:00:28.000Z",
-      "firstSeen": "2026-09-01T01:11:44.372Z",
-      "bestRank": 5
     },
     {
       "key": "49787292",
@@ -3091,17 +3322,6 @@
       "published": "2026-08-30T15:29:49.000Z",
       "firstSeen": "2026-08-30T15:23:17.640Z",
       "bestRank": 1
-    },
-    {
-      "key": "49772714",
-      "id": "49772714",
-      "headline": "Ex-TCU S Jacob Fields charged over alleged punch of teammate",
-      "summary": "Former TCU safety Jacob Fields is facing an assault charge stemming from his alleged punching of a teammate that led to his dismissal from the squad.",
-      "url": "https://www.espn.com/college-football/story/_/id/49772714/ex-tcu-s-jacob-fields-charged-alleged-punch-teammate",
-      "sport": "College football",
-      "published": "2026-08-30T15:13:37.000Z",
-      "firstSeen": "2026-08-30T15:23:17.640Z",
-      "bestRank": 2
     },
     {
       "key": "49772934",
@@ -36586,28 +36806,6 @@
       "published": "2026-08-11T04:22:25.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 9
-    },
-    {
-      "key": "49578979",
-      "id": "49578979",
-      "headline": "Rhyne Howard makes 6 of the Dream's 14 3-pointers in a 107-95 victory over the Tempo",
-      "summary": "— Rhyne Howard had six 3-pointers and 22 points, Angel Reese added 20 points and 14 rebounds for her 22nd double-double of the season, and the Atlanta Dream beat the Toronto Tempo 107-95 on Monday night.",
-      "url": "http://www.espn.com/wnba/recap?gameId=401857132",
-      "sport": "WNBA",
-      "published": "2026-08-11T02:39:31.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49578910",
-      "id": "49578910",
-      "headline": "Atlanta Dream vs. Toronto Tempo - Game Highlights",
-      "summary": "Watch the Game Highlights from Atlanta Dream vs. Toronto Tempo, 08/10/2026",
-      "url": "https://www.espn.com/video/clip/_/id/49578910/atlanta-dream-vs-toronto-tempo-game-highlights",
-      "sport": "WNBA",
-      "published": "2026-08-11T02:22:37.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 11
     }
   ]
 }
