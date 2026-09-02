@@ -4649,7 +4649,7 @@ a.ce-tab {
     z-index: 4;
     margin: 0 -0.45rem;
     width: calc(100% + 0.9rem);
-    padding: 0.4rem 0.7rem;
+    padding: 0.5rem 0.88rem;
     border: none;
     border-top: 1px solid var(--stripe);
     border-radius: 0;
@@ -4671,7 +4671,7 @@ a.ce-tab {
   }
 
   .geo-play--map .geo-chrome-main {
-    min-height: 5.75rem;
+    min-height: 7.2rem;
   }
 
   .geo-play--map .geo-chrome-end {
@@ -4702,8 +4702,8 @@ a.ce-tab {
   .geo-play--map.geo-play--choice .choice-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.4rem;
-    max-height: min(38dvh, 13.5rem);
+    gap: 0.5rem;
+    max-height: min(42dvh, 16.9rem);
     overflow-y: auto;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
@@ -4711,22 +4711,22 @@ a.ce-tab {
   }
 
   .geo-play--map.geo-play--choice .choice-btn {
-    min-height: 2.7rem;
-    padding: 0.45rem 0.55rem;
+    min-height: 3.35rem;
+    padding: 0.55rem 0.65rem;
     align-items: center;
-    gap: 0.45rem;
+    gap: 0.5rem;
   }
 
   .geo-play--map.geo-play--choice .choice-letter {
-    width: 1.35rem;
-    height: 1.35rem;
-    font-size: 0.72rem;
+    width: 1.55rem;
+    height: 1.55rem;
+    font-size: 0.82rem;
   }
 
   .geo-play--map.geo-play--choice .choice-text {
     padding-top: 0;
-    font-size: 0.9rem;
-    line-height: 1.2;
+    font-size: 1.12rem;
+    line-height: 1.22;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2;
@@ -4736,14 +4736,14 @@ a.ce-tab {
 
   .geo-play--map .geo-prompt {
     margin: 0;
-    font-size: 1.08rem;
-    line-height: 1.3;
+    font-size: 1.35rem;
+    line-height: 1.32;
   }
 
   .geo-play--map .geo-hint {
-    margin-top: 0.18rem;
-    font-size: 0.78rem;
-    line-height: 1.3;
+    margin-top: 0.22rem;
+    font-size: 0.98rem;
+    line-height: 1.35;
   }
 
   .geo-play--map .geo-map-wrap {
@@ -4831,13 +4831,15 @@ a.ce-tab {
   .geo-play--map.geo-play--markers .geo-type-form .geo-type-input {
     flex: 1 1 auto;
     min-width: 0;
+    min-height: 3.4rem;
+    font-size: 1.05rem;
   }
 
   .geo-play--map.geo-play--markers .geo-type-form .primary-btn {
     width: auto;
     flex: 0 0 auto;
     min-width: 5.25rem;
-    min-height: 2.75rem;
+    min-height: 3.4rem;
   }
 
   .geo-play--map .geo-answer-bar {
@@ -4850,7 +4852,7 @@ a.ce-tab {
     gap: 0.45rem;
     width: 100%;
     margin: 0 -0.45rem;
-    padding: 0 0.45rem 0.4rem;
+    padding: 0 0.45rem 0.5rem;
     box-sizing: border-box;
     background: var(--paper);
   }
@@ -4903,7 +4905,7 @@ a.ce-tab {
   }
 
   .geo-play--map .geo-quiz-panel .quiz-feedback .geo-flag-reveal {
-    font-size: 2.45rem;
+    font-size: 3.05rem;
     padding: 0.08rem 0.18rem;
     border-radius: 0.45rem;
     box-shadow: none;
@@ -4921,25 +4923,25 @@ a.ce-tab {
   }
 
   .geo-play--map .geo-quiz-panel .quiz-feedback-copy {
-    font-size: 0.88rem;
-    gap: 0.08rem;
+    font-size: 1.1rem;
+    gap: 0.1rem;
     min-width: 0;
   }
 
   .geo-play--map .geo-quiz-panel .geo-identity-status {
-    font-size: 0.58rem;
+    font-size: 0.72rem;
     letter-spacing: 0.08em;
   }
 
   .geo-play--map .geo-quiz-panel .geo-identity-place {
-    font-size: 1.05rem;
+    font-size: 1.3rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
   .geo-play--map .geo-quiz-panel .geo-identity-cap {
-    font-size: 0.8rem;
+    font-size: 1rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -4952,18 +4954,18 @@ a.ce-tab {
   }
 
   .geo-play--map .geo-quiz-panel .geo-city-rank-label {
-    font-size: 0.55rem;
+    font-size: 0.68rem;
     letter-spacing: 0.06em;
     line-height: 1.2;
   }
 
   .geo-play--map .geo-quiz-panel .geo-city-rank {
-    gap: 0.18rem;
+    gap: 0.22rem;
   }
 
   .geo-play--map .geo-quiz-panel .geo-city-rank li {
-    padding: 0.12rem 0.4rem 0.12rem 0.32rem;
-    font-size: 0.7rem;
+    padding: 0.16rem 0.5rem 0.16rem 0.4rem;
+    font-size: 0.88rem;
   }
 
   .geo-play--map .geo-chrome-end .geo-next-row:not([hidden]) {
@@ -4975,10 +4977,10 @@ a.ce-tab {
 
   .geo-play--map .geo-chrome-end .geo-next-row .pager-btn {
     width: auto;
-    min-width: 3.5rem;
-    min-height: 2.35rem;
-    padding: 0 0.75rem;
-    font-size: 0.88rem;
+    min-width: 4.2rem;
+    min-height: 2.95rem;
+    padding: 0 0.9rem;
+    font-size: 1.05rem;
   }
 
   .geo-play .geo-type-form .primary-btn,
