@@ -4041,6 +4041,17 @@ a.ce-tab {
   color: var(--ink-soft);
 }
 
+.geo-prompt-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.geo-prompt-copy {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
 .geo-prompt {
   margin: 0 0 1rem;
   font-family: var(--font-display);
@@ -4048,6 +4059,14 @@ a.ce-tab {
   font-size: clamp(1.15rem, 2.5svw, 1.45rem);
   font-weight: 700;
   line-height: 1.35;
+}
+
+.geo-prompt-copy .geo-prompt {
+  margin-bottom: 0;
+}
+
+.geo-prompt-copy .geo-hint {
+  margin-top: 0.2rem;
 }
 
 .geo-prompt .geo-flag {
@@ -4297,6 +4316,25 @@ a.ce-tab {
 
 .geo-play-close {
   display: none;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  margin: -0.1rem -0.05rem 0 0;
+  border-radius: 999px;
+  border: 1px solid var(--stripe);
+  background: #fff;
+  box-shadow: none;
+  color: var(--ink);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.geo-play-close svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  display: block;
 }
 
 .geo-answer-bar,
@@ -4393,24 +4431,7 @@ a.ce-tab {
   }
 
   .geo-play--map .geo-play-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: max(0.3rem, env(safe-area-inset-top));
-    right: max(0.3rem, env(safe-area-inset-right));
-    z-index: 20;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 999px;
-    border: 1px solid var(--stripe);
-    background: rgba(247, 243, 235, 0.96);
-    box-shadow: var(--shadow);
-    color: var(--ink);
-    text-decoration: none;
-    font-size: 1.45rem;
-    font-weight: 600;
-    line-height: 1;
+    display: inline-flex;
   }
 
   .geo-play .geo-toolbar .secondary-btn {
@@ -4444,7 +4465,7 @@ a.ce-tab {
     position: sticky;
     top: 0;
     z-index: 4;
-    padding: 0.5rem max(2.85rem, calc(2.6rem + env(safe-area-inset-right))) 0.5rem 0.7rem;
+    padding: 0.55rem 0.5rem 0.55rem 0.8rem;
     background: rgba(247, 243, 235, 0.96);
   }
 
@@ -4461,12 +4482,15 @@ a.ce-tab {
   }
 
   .geo-play--map .geo-prompt {
-    margin: 0 0 0.2rem;
-    font-size: 1.05rem;
+    margin: 0;
+    font-size: 1.08rem;
+    line-height: 1.3;
   }
 
   .geo-play--map .geo-hint {
-    font-size: 0.8rem;
+    margin-top: 0.18rem;
+    font-size: 0.78rem;
+    line-height: 1.3;
   }
 
   .geo-play--map .geo-map-wrap {

@@ -3052,8 +3052,15 @@ function renderPlay() {
     .join(" ");
 
   const closeHtml = showMap
-    ? `<a class="geo-play-close" href="${packHref()}" aria-label="Close">×</a>`
+    ? `<a class="geo-play-close" href="${packHref()}" aria-label="Close">
+         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+           <path fill="currentColor" d="M6.7 6.7a1 1 0 0 1 1.4 0L12 10.6l3.9-3.9a1 1 0 1 1 1.4 1.4L13.4 12l3.9 3.9a1 1 0 1 1-1.4 1.4L12 13.4l-3.9 3.9a1 1 0 1 1-1.4-1.4L10.6 12 6.7 8.1a1 1 0 0 1 0-1.4Z"/>
+         </svg>
+       </a>`
     : "";
+  const panelInner = showMap
+    ? `<div class="geo-prompt-row"><div class="geo-prompt-copy">${prompt}</div>${closeHtml}</div>`
+    : prompt;
   const actionsHtml = controls
     ? `<div class="geo-quiz-actions">${controls}</div>`
     : "";
@@ -3084,7 +3091,6 @@ function renderPlay() {
 
   geo.root.innerHTML = `
     <div class="${playClass}">
-      ${closeHtml}
       ${geoCrumbs(MODE_META[geo.mode]?.label || geo.mode)}
       <div class="geo-toolbar">
         <a class="secondary-btn" href="${packHref()}">Modes</a>
@@ -3096,7 +3102,7 @@ function renderPlay() {
       <div class="geo-play-layout ${showMap ? "" : "no-map"}">
         ${showMap ? `<div class="geo-map-wrap">${mapHtml()}</div>` : ""}
         <aside class="geo-side">
-          <div class="geo-quiz-panel" id="geo-quiz-panel">${prompt}</div>
+          <div class="geo-quiz-panel" id="geo-quiz-panel">${panelInner}</div>
           ${answerHtml}
         </aside>
       </div>
