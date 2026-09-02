@@ -3058,9 +3058,6 @@ function renderPlay() {
          </svg>
        </a>`
     : "";
-  const panelInner = showMap
-    ? `<div class="geo-prompt-row"><div class="geo-prompt-copy">${prompt}</div>${closeHtml}</div>`
-    : prompt;
   const actionsHtml = controls
     ? `<div class="geo-quiz-actions">${controls}</div>`
     : "";
@@ -3069,13 +3066,23 @@ function renderPlay() {
           <div class="geo-next-row" id="geo-next-row" hidden>
             <button type="button" class="secondary-btn pager-btn pager-btn--next" id="geo-next">Next</button>
           </div>`;
+  const panelInner = showMap
+    ? `<div class="geo-prompt-row">
+         <div class="geo-chrome-main">
+           <div class="geo-prompt-copy">${prompt}</div>
+           ${feedbackHtml}
+         </div>
+         <div class="geo-chrome-end">
+           ${nextHtml}
+           ${closeHtml}
+         </div>
+       </div>`
+    : prompt;
   const answerHtml = showMap
     ? `<div class="geo-answer-bar">
           <div class="geo-answer-cluster">
             ${actionsHtml}
-            ${feedbackHtml}
           </div>
-          ${nextHtml}
         </div>`
     : flagsPlay
       ? `${actionsHtml}
