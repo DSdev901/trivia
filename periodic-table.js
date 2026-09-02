@@ -318,7 +318,16 @@ const detailSwipe = {
   unbind: null,
 };
 
-const SWIPE_AXIS_PX = 10;
+const SWIPE_AXIS_PX = 16;
+const SWIPE_H_RATIO = 1.5;
+
+function swipeAxis(dx, dy) {
+  const adx = Math.abs(dx);
+  const ady = Math.abs(dy);
+  if (adx < SWIPE_AXIS_PX && ady < SWIPE_AXIS_PX) return null;
+  if (ady >= adx || adx < ady * SWIPE_H_RATIO) return "v";
+  return "h";
+}
 
 function unbindDetailSwipe() {
   detailSwipe.unbind?.();
@@ -334,12 +343,26 @@ function bindDetailSwipe() {
   if (!panel) return;
 
   const cardEl = () => panel.querySelector(".pt-detail-card");
+  let hMoveGuard = false;
 
   const resetCard = () => {
     const el = cardEl();
     if (!el) return;
     el.style.transform = "";
     el.style.opacity = "";
+  };
+
+  const setHMoveGuard = (on) => {
+    if (on === hMoveGuard) return;
+    hMoveGuard = on;
+    if (on) {
+      window.addEventListener("touchmove", onTouchMove, {
+        passive: false,
+        capture: true,
+      });
+      return;
+    }
+    window.removeEventListener("touchmove", onTouchMove, true);
   };
 
   const begin = (x, y, id, using) => {
@@ -353,18 +376,27 @@ function bindDetailSwipe() {
     detailSwipe.lockY = window.scrollY;
   };
 
+  const lockHorizontal = () => {
+    if (detailSwipe.axis === "h") return;
+    detailSwipe.axis = "h";
+    panel.classList.add("is-swiping");
+    detailSwipe.lockY = window.scrollY;
+    setHMoveGuard(true);
+  };
+
   const move = (x, y, e) => {
     if (detailSwipe.id == null) return;
     const dx = x - detailSwipe.startX;
     const dy = y - detailSwipe.startY;
     detailSwipe.dx = dx;
     if (!detailSwipe.axis) {
-      if (Math.abs(dx) < SWIPE_AXIS_PX && Math.abs(dy) < SWIPE_AXIS_PX) return;
-      detailSwipe.axis = Math.abs(dx) > Math.abs(dy) ? "h" : "v";
-      if (detailSwipe.axis === "h") {
-        panel.classList.add("is-swiping");
-        detailSwipe.lockY = window.scrollY;
+      const next = swipeAxis(dx, dy);
+      if (!next) return;
+      if (next === "v") {
+        detailSwipe.axis = "v";
+        return;
       }
+      lockHorizontal();
     }
     if (detailSwipe.axis !== "h") return;
     if (e.cancelable) e.preventDefault();
@@ -388,6 +420,7 @@ function bindDetailSwipe() {
     detailSwipe.using = null;
     detailSwipe.axis = null;
     detailSwipe.dx = 0;
+    setHMoveGuard(false);
     panel.classList.remove("is-swiping");
     panel.querySelector("#pt-prev")?.classList.remove("is-swipe-hint");
     panel.querySelector("#pt-next")?.classList.remove("is-swipe-hint");
@@ -425,6 +458,9 @@ function bindDetailSwipe() {
     if (e.target.closest("button")) return;
     if (!e.target.closest(".pt-detail-card")) return;
     if (detailSwipe.id != null) return;
+    // Fingers use touch events so a non-passive window touchmove is not
+    // installed until the axis actually locks horizontal.
+    if (e.pointerType === "touch") return;
     if (e.pointerType === "mouse" && !coarsePointer()) return;
     begin(e.clientX, e.clientY, e.pointerId, "pointer");
   };
@@ -445,7 +481,6 @@ function bindDetailSwipe() {
   panel.addEventListener("touchmove", onTouchMove, { passive: false, capture: true });
   panel.addEventListener("touchend", onTouchEnd);
   panel.addEventListener("touchcancel", onTouchEnd);
-  window.addEventListener("touchmove", onTouchMove, { passive: false, capture: true });
   window.addEventListener("touchend", onTouchEnd, { capture: true });
   window.addEventListener("touchcancel", onTouchEnd, { capture: true });
   panel.addEventListener("pointerdown", onPointerDown);
@@ -454,11 +489,11 @@ function bindDetailSwipe() {
   window.addEventListener("pointercancel", onPointerUp);
 
   detailSwipe.unbind = () => {
+    setHMoveGuard(false);
     panel.removeEventListener("touchstart", onTouchStart);
     panel.removeEventListener("touchmove", onTouchMove, true);
     panel.removeEventListener("touchend", onTouchEnd);
     panel.removeEventListener("touchcancel", onTouchEnd);
-    window.removeEventListener("touchmove", onTouchMove, true);
     window.removeEventListener("touchend", onTouchEnd, true);
     window.removeEventListener("touchcancel", onTouchEnd, true);
     panel.removeEventListener("pointerdown", onPointerDown);

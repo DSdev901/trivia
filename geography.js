@@ -116,6 +116,8 @@ const geo = {
   _zoomAnim: 0,
   _pinMisses: 0,
   _pinMissTimer: 0,
+  largestCities: null,
+  _citiesPromise: null,
 };
 
 function escapeHtml(s) {
@@ -189,12 +191,14 @@ const ANSWER_ALIAS_GROUPS = [
   ["marrakesh", "marrakech"],
   ["addis ababa", "addis abeba"],
   ["kyiv", "kiev"],
+  ["odessa", "odesa"],
   ["chennai madras", "chennai", "madras"],
   ["kolkata", "calcutta"],
   ["mumbai", "bombay"],
   ["ho chi minh city", "saigon", "ho chi minh"],
   ["beijing", "peking"],
   ["ulan bator", "ulaanbaatar"],
+  ["aarhus", "arhus"],
   ["turkiye", "turkey"],
   ["micronesia", "federated states of micronesia", "the federated states of micronesia"],
   ["newfoundland and labrador", "newfoundland"],
@@ -361,8 +365,24 @@ function spreadClosePins(host) {
   svg.dataset.geoPinsSpread = "1";
 }
 
+async function loadLargestCities() {
+  if (geo.largestCities) return geo.largestCities;
+  if (!geo._citiesPromise) {
+    geo._citiesPromise = fetch("data/geography/largest-cities.json")
+      .then((res) =>
+        res.ok ? res.json() : { countries: {}, countryNames: {}, us: {}, ca: {} }
+      )
+      .catch(() => ({ countries: {}, countryNames: {}, us: {}, ca: {} }));
+  }
+  geo.largestCities = await geo._citiesPromise;
+  return geo.largestCities;
+}
+
 async function loadPack(packMeta) {
-  const res = await fetch(`data/geography/${packMeta.id}.json`);
+  const [res] = await Promise.all([
+    fetch(`data/geography/${packMeta.id}.json`),
+    loadLargestCities(),
+  ]);
   if (!res.ok) throw new Error(`Failed to load ${packMeta.id}`);
   const data = await res.json();
   geo.pack = { ...packMeta, ...data };
@@ -752,6 +772,58 @@ function simpleBoundsForIds(host, ids) {
   return bboxUnion(boxes);
 }
 
+function markerSpan(pts) {
+  const xs = pts.map((p) => p.x);
+  const ys = pts.map((p) => p.y);
+  return {
+    w: Math.max(...xs) - Math.min(...xs),
+    h: Math.max(...ys) - Math.min(...ys),
+  };
+}
+
+function markerFitScale(pts) {
+  const { w, h } = markerSpan(pts);
+  return Math.min(390 / Math.max(w, 1), 500 / Math.max(h, 1));
+}
+
+/** Far island groups (Hawaii, Alaska) stay reachable by pan, not the opening camera. */
+function markerCameraIds(host, ids) {
+  const pts = [];
+  for (const id of ids) {
+    const a = regionAnchor(host, id);
+    if (a) pts.push({ id, x: a.x, y: a.y });
+  }
+  if (pts.length < 8) return ids;
+  const keep = new Set(pts.map((p) => p.id));
+  let current = pts;
+  for (let pass = 0; pass < 4; pass += 1) {
+    let best = null;
+    for (const axis of ["x", "y"]) {
+      const sorted = [...current].sort((a, b) => a[axis] - b[axis]);
+      const span = sorted[sorted.length - 1][axis] - sorted[0][axis];
+      if (span <= 0) continue;
+      for (let i = 0; i < sorted.length - 1; i += 1) {
+        const gap = sorted[i + 1][axis] - sorted[i][axis];
+        if (gap < span * 0.42) continue;
+        const left = sorted.slice(0, i + 1);
+        const right = sorted.slice(i + 1);
+        const small = left.length <= right.length ? left : right;
+        if (small.length > 2) continue;
+        const trial = current.filter((p) => !small.some((s) => s.id === p.id));
+        if (trial.length < Math.max(6, Math.floor(pts.length * 0.72))) continue;
+        const gain = markerFitScale(trial) / markerFitScale(current);
+        if (gain > 1.08 && (!best || gain > best.gain)) {
+          best = { gain, drop: small.map((p) => p.id) };
+        }
+      }
+    }
+    if (!best) break;
+    best.drop.forEach((id) => keep.delete(id));
+    current = current.filter((p) => keep.has(p.id));
+  }
+  return current.map((p) => p.id);
+}
+
 function mainlandBoundsForIds(host, ids) {
   const boxes = [];
   for (const id of ids) {
@@ -977,7 +1049,9 @@ function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false, panIds = null 
   ensureBaseViewBox(svg);
   unwrapPackRegions(host, svg);
 
-  const bounds = boundsForFitIds(host, svg, ids, { coreOnly: true });
+  const cameraIds =
+    geo.pack?.overlay === "markers" ? markerCameraIds(host, ids) : ids;
+  const bounds = boundsForFitIds(host, svg, cameraIds, { coreOnly: true });
   if (!bounds || bounds.useFullMap) {
     resetMapViewBox();
     if (storeAsPack) geo._packViewBox = geo._baseViewBox;
@@ -2262,6 +2336,181 @@ function revealFlagHtml(item) {
   return `<span class="geo-flag-reveal" aria-hidden="true">${item.flag}</span>`;
 }
 
+function largestCitiesFor(item) {
+  const data = geo.largestCities;
+  if (!data || !item?.id) return [];
+  if (geo.pack?.map === "us-states") return data.us?.[item.id] || [];
+  if (geo.pack?.map === "canada-provinces") return data.ca?.[item.id] || [];
+  const kind = quizKind();
+  if (
+    kind === "countries" ||
+    kind === "capitals" ||
+    kind === "flags" ||
+    kind === "outlines"
+  ) {
+    return data.countries?.[item.id] || [];
+  }
+  return [];
+}
+
+function cityQuizCountryCodes() {
+  const data = geo.largestCities;
+  const all = Object.keys(data?.countries || {});
+  const id = (geo.pack?.id || "").toLowerCase();
+  if (id.startsWith("us-cities")) return ["US"];
+  if (id.startsWith("canada-cities")) return ["CA"];
+  if (id.startsWith("australia-cities")) return ["AU"];
+  if (id === "anz-cities") return ["AU", "NZ", "PG"];
+  let cont = "";
+  const extra = [];
+  if (id.startsWith("europe-cities")) {
+    cont = "EU";
+    extra.push("RU", "TR", "CY", "GE", "AM", "AZ", "KZ", "XK");
+  } else if (id.startsWith("asia-cities")) {
+    cont = "AS";
+  } else if (id.startsWith("africa-cities")) {
+    cont = "AF";
+  } else if (id.startsWith("sa-cities")) {
+    cont = "SA";
+  }
+  if (!cont) return all;
+  return all.filter((cc) => ISO_CONT[cc] === cont || extra.includes(cc));
+}
+
+function foldCityName(s) {
+  return normalizeAnswer(s);
+}
+
+function cityNamesMatch(itemName, listedName) {
+  if (answersMatch(itemName, listedName)) return true;
+  const a = foldCityName(itemName);
+  const b = foldCityName(listedName);
+  if (!a || !b) return false;
+  if (a === b) return true;
+  return a.startsWith(`${b} `) || b.startsWith(`${a} `);
+}
+
+function countryInPhrase(name) {
+  const fold = foldPlaceName(name);
+  if (
+    fold.startsWith("united ") ||
+    fold.startsWith("netherlands") ||
+    fold.startsWith("philippines") ||
+    fold.startsWith("bahamas") ||
+    fold.startsWith("gambia") ||
+    fold.startsWith("maldives") ||
+    fold.startsWith("seychelles") ||
+    fold.startsWith("czech") ||
+    fold.startsWith("central african") ||
+    fold.startsWith("dominican republic") ||
+    fold.startsWith("solomon islands") ||
+    fold.startsWith("marshall islands") ||
+    fold.startsWith("comoros") ||
+    fold.startsWith("united arab") ||
+    fold === "congo" ||
+    fold.startsWith("dr congo") ||
+    fold.startsWith("democratic republic")
+  ) {
+    return `the ${name}`;
+  }
+  return name;
+}
+
+function cityCountryRank(item) {
+  const data = geo.largestCities;
+  if (!data?.countries || item?.kind !== "city" || !item.name) return null;
+  const names = data.countryNames || {};
+  const hits = [];
+  for (const cc of cityQuizCountryCodes()) {
+    const cities = data.countries[cc] || [];
+    const idx = cities.findIndex((name) => cityNamesMatch(item.name, name));
+    if (idx < 0 || idx > 2) continue;
+    const country = names[cc];
+    if (!country) continue;
+    if (foldCityName(item.name) === foldCityName(country)) continue;
+    hits.push({ rank: idx + 1, country, cc });
+  }
+  if (hits.length === 1) return hits[0];
+  if (hits.length > 1) {
+    const fact = foldPlaceName(item.fact || "");
+    const narrowed = hits.filter((h) => fact.includes(foldPlaceName(h.country)));
+    if (narrowed.length === 1) return narrowed[0];
+  }
+  return null;
+}
+
+function cityRankSentence(item) {
+  const hit = cityCountryRank(item);
+  if (!hit) return "";
+  const place = countryInPhrase(hit.country);
+  if (hit.rank === 1) return `Largest city of ${place}.`;
+  if (hit.rank === 2) return `2nd-largest city of ${place}.`;
+  return `3rd-largest city of ${place}.`;
+}
+
+function factAlreadyStatesCountryRank(fact, rank, countryName) {
+  const f = foldPlaceName(fact);
+  if (!f || !f.includes(foldPlaceName(countryName))) return false;
+  if (rank === 1) {
+    return (
+      /\blargest city of\b/.test(f) &&
+      !/\b(second|third|2nd|3rd)\b/.test(f)
+    );
+  }
+  if (rank === 2) {
+    return /\b(second largest|2nd largest) city\b/.test(f);
+  }
+  return /\b(third largest|3rd largest) city\b/.test(f);
+}
+
+function cityRankFactHtml(item) {
+  const sentence = cityRankSentence(item);
+  if (!sentence) return "";
+  return `<span class="geo-identity-cap">${escapeHtml(sentence)}</span>`;
+}
+
+function studyRankHtml(item) {
+  const hit = cityCountryRank(item);
+  if (!hit) return "";
+  if (factAlreadyStatesCountryRank(item.fact, hit.rank, hit.country)) return "";
+  const sentence = cityRankSentence(item);
+  if (!sentence) return "";
+  return `<p class="geo-meta-line">${escapeHtml(sentence)}</p>`;
+}
+
+function pinCitiesHtml(item, showingCapital) {
+  if (geo.mode !== "pin" || !showingCapital) return "";
+  const cities = largestCitiesFor(item)
+    .map((name) => String(name || "").trim())
+    .filter(Boolean)
+    .slice(0, 3);
+  if (!cities.length) return "";
+  const capitalFold = foldPlaceName(item.capital || "");
+  if (
+    cities.length === 1 &&
+    capitalFold &&
+    foldPlaceName(cities[0]) === capitalFold
+  ) {
+    return "";
+  }
+  const items = cities
+    .map(
+      (name, i) => `
+        <li>
+          <span class="geo-city-n" aria-hidden="true">${i + 1}</span>
+          <span class="geo-city-name">${escapeHtml(name)}</span>
+        </li>`
+    )
+    .join("");
+  return `
+    <div class="geo-cities">
+      <p class="geo-city-rank-label" id="geo-city-rank-label">Largest cities</p>
+      <ol class="geo-city-rank" data-count="${cities.length}" aria-labelledby="geo-city-rank-label">
+        ${items}
+      </ol>
+    </div>`;
+}
+
 function confirmAnswerHtml(ok, item) {
   const { place, country: rawCountry } = confirmParts(item);
   const country =
@@ -2271,21 +2520,28 @@ function confirmAnswerHtml(ok, item) {
       ? rawCountry
       : "";
   const where = country ? ` · ${escapeHtml(country)}` : "";
-  const cap =
+  const showingCapital = Boolean(
     quizKind() !== "flags" &&
-    item.capital &&
-    place === item.name &&
-    (ok || confirmShowsRevealFlag(item))
-      ? `<span class="geo-identity-cap">capital ${escapeHtml(item.capital)}</span>`
-      : "";
+      item.capital &&
+      place === item.name &&
+      (ok || confirmShowsRevealFlag(item))
+  );
+  const cap = showingCapital
+    ? `<span class="geo-identity-cap">capital ${escapeHtml(item.capital)}</span>`
+    : "";
+  const cities = pinCitiesHtml(item, showingCapital);
+  const rank = cityRankFactHtml(item);
   const flag = confirmShowsRevealFlag(item) ? revealFlagHtml(item) : "";
   const copy = ok
     ? `<strong>Correct.</strong> ${escapeHtml(place)}${where}`
     : `<strong>Not quite.</strong> Answer: <strong>${escapeHtml(
         place
       )}</strong>${where}`;
-  if (!flag) return `<span class="quiz-feedback-copy">${copy}${cap}</span>`;
-  return `<div class="geo-identity">${flag}<span class="quiz-feedback-copy">${copy}${cap}</span></div>`;
+  const main = `<span class="geo-identity-main">${copy}${cap}${rank}</span>`;
+  if (!flag) {
+    return `<span class="quiz-feedback-copy">${main}${cities}</span>`;
+  }
+  return `<div class="geo-identity">${flag}<span class="quiz-feedback-copy">${main}</span>${cities}</div>`;
 }
 
 function buildChoices(item) {
@@ -2517,7 +2773,9 @@ function renderStudy() {
   geo.selectedId = item?.id || null;
   scrollPageTop();
   geo.root.innerHTML = `
-    <div class="geo-shell geo-play geo-play--study">
+    <div class="geo-shell geo-play geo-play--study${
+      geo.pack?.overlay === "markers" ? " geo-play--markers" : ""
+    }">
       ${geoCrumbs("Study")}
       <div class="geo-toolbar">
         <a class="secondary-btn" href="${packHref()}">Modes</a>
@@ -2566,6 +2824,7 @@ function studyDetailHtml(item) {
     </div>
     ${item.abbr ? `<p class="geo-meta-line">Abbreviation <strong>${escapeHtml(item.abbr)}</strong></p>` : ""}
     ${item.city ? `<p class="geo-meta-line">City <strong>${escapeHtml(item.city)}</strong></p>` : ""}
+    ${studyRankHtml(item)}
     ${item.fact ? `<p class="lede">${escapeHtml(item.fact)}</p>` : ""}`;
 }
 
@@ -2640,6 +2899,7 @@ function renderPlay() {
     "geo-shell",
     "geo-play",
     showMap ? "geo-play--map" : "",
+    geo.pack?.overlay === "markers" ? "geo-play--markers" : "",
     flagsPlay ? "geo-play--flags" : "",
     geo.mode === "pin" ? "geo-play--pin" : "",
     geo.mode === "type" || geo.mode === "outline" ? "geo-play--type" : "",
