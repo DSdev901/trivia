@@ -4459,7 +4459,19 @@ a.ce-tab {
   }
 
   .geo-play--map .geo-play-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 6;
     display: inline-flex;
+    width: 2.35rem;
+    height: 2.35rem;
+    margin: 0;
+    border: 0;
+    border-left: 1px solid var(--stripe);
+    border-bottom: 1px solid var(--stripe);
+    border-radius: 0;
+    background: #fff;
   }
 
   .geo-play .geo-toolbar .secondary-btn {
@@ -4494,7 +4506,8 @@ a.ce-tab {
     position: sticky;
     top: 0;
     z-index: 4;
-    padding: 0.45rem 0.45rem 0.45rem 0.7rem;
+    padding: 0.45rem 2.55rem 0.45rem 0.7rem;
+    border-top-right-radius: 0;
     background: rgba(247, 243, 235, 0.96);
   }
 
@@ -4518,6 +4531,7 @@ a.ce-tab {
   .geo-play--map .geo-chrome-end {
     align-self: stretch;
     align-items: center;
+    justify-content: flex-end;
   }
 
   .geo-play--map .geo-quiz-actions {
