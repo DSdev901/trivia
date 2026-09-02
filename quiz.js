@@ -90,11 +90,24 @@ export function buildPresidentQuestions(presidents) {
     }
 
     p.trivia.forEach((fact, index) => {
+      if (fact.startsWith("Pub-trivia shorthand:")) return;
       const distractors = pickDistractors(names, p.name, 3);
       if (distractors.length < 3) return;
       questions.push({
         id: `fact-${p.number}-${index}`,
         prompt: `Which president does this describe?\n“${fact}”`,
+        choices: makeChoices(p.name, distractors),
+        correct: p.name,
+        batch: p._batch,
+      });
+    });
+
+    (p.quiz || []).forEach((prompt, index) => {
+      const distractors = pickDistractors(names, p.name, 3);
+      if (distractors.length < 3) return;
+      questions.push({
+        id: `direct-${p.number}-${index}`,
+        prompt,
         choices: makeChoices(p.name, distractors),
         correct: p.name,
         batch: p._batch,

@@ -4765,7 +4765,28 @@ a.ce-tab {
   }
 }
 
+@media (min-width: 861px) {
+  body:not(.is-home):has(#view-detail:not([hidden])) .top {
+    margin-bottom: 0;
+  }
 
+  .detail--president {
+    animation: none;
+  }
+
+  .detail-identity {
+    position: fixed;
+    z-index: 6;
+    width: auto;
+    max-width: none;
+    left: calc((100vw - min(53.333vw, 100%)) / 2 + var(--inner-chrome-inset));
+    right: calc((100vw - min(53.333vw, 100%)) / 2 + var(--inner-chrome-inset));
+    margin: 0;
+    padding: 0.45rem 0 0.55rem;
+    background: var(--nav-bar);
+    border-bottom: 1px solid color-mix(in srgb, var(--stripe) 70%, transparent);
+  }
+}
 
 /* ——— Trending / House of the Dragon ——— */
 

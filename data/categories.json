@@ -9,7 +9,7 @@
     {
       "id": "netflix",
       "name": "Netflix",
-      "description": "Netflix originals from the last four weeks — shows and movies, with posters and who is in them.",
+      "description": "Netflix originals from the last four weeks \u2014 shows and movies, with posters and who is in them.",
       "type": "netflix"
     },
     {
@@ -21,99 +21,263 @@
     {
       "id": "trending",
       "name": "Trending",
-      "description": "Cliff notes for what’s in the air — HotD cast and dragons, Dolly Parton pub facts, and more.",
+      "description": "Cliff notes for what\u2019s in the air \u2014 HotD cast and dragons, Dolly Parton pub facts, and more.",
       "type": "trending"
     },
     {
       "id": "themed",
       "name": "Themed Trivia",
-      "description": "Tuesday night themes you can study and quiz. Harrison Ford Movies is first, with 110 pub questions in eleven rounds.",
+      "description": "Tuesday night themes you can study and quiz. Harrison Ford Movies is first, with 150 pub questions in fifteen rounds.",
       "type": "themed",
       "packs": [
         {
           "id": "harrison-ford",
-          "blurb": "110 pub-quiz questions in eleven rounds. Han, Indy, Deckard, Kimble, and the rest of the Ford night."
+          "blurb": "150 pub-quiz questions in fifteen rounds. Han, Indy, Deckard, Kimble, and the rest of Ford\u2019s movies."
         }
       ]
     },
     {
       "id": "presidents",
       "name": "Presidential Knowledge",
-      "description": "All U.S. presidents — number, years served, ten facts, plus a shorthand connector fact each.",
+      "description": "All U.S. presidents \u2014 number, years served, ten facts, plus a shorthand connector fact each.",
       "type": "presidents",
       "batchCount": 5,
       "batchPath": "data/presidents/batch-{n}.json",
       "batches": [
-        { "n": 1, "label": "Presidents 1–10", "range": "1–10" },
-        { "n": 2, "label": "Presidents 11–20", "range": "11–20" },
-        { "n": 3, "label": "Presidents 21–30", "range": "21–30" },
-        { "n": 4, "label": "Presidents 31–40", "range": "31–40" },
-        { "n": 5, "label": "Presidents 41–47", "range": "41–47" }
+        {
+          "n": 1,
+          "label": "Presidents 1\u201310",
+          "range": "1\u201310"
+        },
+        {
+          "n": 2,
+          "label": "Presidents 11\u201320",
+          "range": "11\u201320"
+        },
+        {
+          "n": 3,
+          "label": "Presidents 21\u201330",
+          "range": "21\u201330"
+        },
+        {
+          "n": 4,
+          "label": "Presidents 31\u201340",
+          "range": "31\u201340"
+        },
+        {
+          "n": 5,
+          "label": "Presidents 41\u201347",
+          "range": "41\u201347"
+        }
       ]
     },
     {
       "id": "periodic-table",
       "name": "Periodic Table",
-      "description": "Interactive table of all 118 elements — discovery, naming, and trivia facts, with spoken tours by group.",
+      "description": "Interactive table of all 118 elements \u2014 discovery, naming, and trivia facts, with spoken tours by group.",
       "type": "periodic-table"
     },
     {
       "id": "geography",
       "name": "Geography",
-      "description": "Map quizzes — pin countries and cities, drill capitals and flags, study or type answers.",
+      "description": "Map quizzes \u2014 pin countries and cities, drill capitals and flags, study or type answers.",
       "type": "geography"
     },
     {
       "id": "movies",
       "name": "Film & Movies",
-      "description": "Two hundred pub-quiz film questions from 1990 on, in twenty rounds of ten — study the answers, listen, then quiz.",
+      "description": "Two hundred pub-quiz film questions from 1990 on, in twenty rounds of ten \u2014 study the answers, listen, then quiz.",
       "type": "movies",
       "batchCount": 20,
       "batchPath": "data/movies/batch-{n}.json",
       "batches": [
-        { "n": 1, "label": "Opening Credits", "range": "Opening Credits" },
-        { "n": 2, "label": "Line, Please", "range": "Line, Please" },
-        { "n": 3, "label": "Oscar Night", "range": "Oscar Night" },
-        { "n": 4, "label": "Who Directed?", "range": "Who Directed?" },
-        { "n": 5, "label": "Cast List", "range": "Cast List" },
-        { "n": 6, "label": "Franchises", "range": "Franchises" },
-        { "n": 7, "label": "Animation & Family", "range": "Animation & Family" },
-        { "n": 8, "label": "Page to Screen", "range": "Page to Screen" },
-        { "n": 9, "label": "Sci-Fi, Horror & Fantasy", "range": "Sci-Fi, Horror & Fantasy" },
-        { "n": 10, "label": "This Century", "range": "This Century" },
-        { "n": 11, "label": "Crime & Capers", "range": "Crime & Capers" },
-        { "n": 12, "label": "Quote Unquote", "range": "Quote Unquote" },
-        { "n": 13, "label": "Supporting Cast", "range": "Supporting Cast" },
-        { "n": 14, "label": "Sequels & Series", "range": "Sequels & Series" },
-        { "n": 15, "label": "Hits Since 2000", "range": "Hits Since 2000" },
-        { "n": 16, "label": "On the Soundtrack", "range": "On the Soundtrack" },
-        { "n": 17, "label": "The Bad Guys", "range": "The Bad Guys" },
-        { "n": 18, "label": "On Location", "range": "On Location" },
-        { "n": 19, "label": "First Time Out", "range": "First Time Out" },
-        { "n": 20, "label": "The 2010s", "range": "The 2010s" }
+        {
+          "n": 1,
+          "label": "Opening Credits",
+          "range": "Opening Credits"
+        },
+        {
+          "n": 2,
+          "label": "Line, Please",
+          "range": "Line, Please"
+        },
+        {
+          "n": 3,
+          "label": "Oscar Night",
+          "range": "Oscar Night"
+        },
+        {
+          "n": 4,
+          "label": "Who Directed?",
+          "range": "Who Directed?"
+        },
+        {
+          "n": 5,
+          "label": "Cast List",
+          "range": "Cast List"
+        },
+        {
+          "n": 6,
+          "label": "Franchises",
+          "range": "Franchises"
+        },
+        {
+          "n": 7,
+          "label": "Animation & Family",
+          "range": "Animation & Family"
+        },
+        {
+          "n": 8,
+          "label": "Page to Screen",
+          "range": "Page to Screen"
+        },
+        {
+          "n": 9,
+          "label": "Sci-Fi, Horror & Fantasy",
+          "range": "Sci-Fi, Horror & Fantasy"
+        },
+        {
+          "n": 10,
+          "label": "This Century",
+          "range": "This Century"
+        },
+        {
+          "n": 11,
+          "label": "Crime & Capers",
+          "range": "Crime & Capers"
+        },
+        {
+          "n": 12,
+          "label": "Quote Unquote",
+          "range": "Quote Unquote"
+        },
+        {
+          "n": 13,
+          "label": "Supporting Cast",
+          "range": "Supporting Cast"
+        },
+        {
+          "n": 14,
+          "label": "Sequels & Series",
+          "range": "Sequels & Series"
+        },
+        {
+          "n": 15,
+          "label": "Hits Since 2000",
+          "range": "Hits Since 2000"
+        },
+        {
+          "n": 16,
+          "label": "On the Soundtrack",
+          "range": "On the Soundtrack"
+        },
+        {
+          "n": 17,
+          "label": "The Bad Guys",
+          "range": "The Bad Guys"
+        },
+        {
+          "n": 18,
+          "label": "On Location",
+          "range": "On Location"
+        },
+        {
+          "n": 19,
+          "label": "First Time Out",
+          "range": "First Time Out"
+        },
+        {
+          "n": 20,
+          "label": "The 2010s",
+          "range": "The 2010s"
+        }
       ]
     },
     {
       "id": "harrison-ford",
       "name": "Harrison Ford Movies",
-      "description": "110 pub-quiz questions in eleven rounds. Han, Indy, Deckard, Kimble, and the rest of the Ford night.",
+      "description": "150 pub-quiz questions in fifteen rounds. Han, Indy, Deckard, Kimble, and the rest of Ford\u2019s movies.",
       "type": "movies",
       "home": false,
       "parentId": "themed",
-      "batchCount": 11,
+      "batchCount": 15,
       "batchPath": "data/themed/harrison-ford/batch-{n}.json",
       "batches": [
-        { "n": 1, "label": "Han Solo", "range": "Han Solo" },
-        { "n": 2, "label": "Raiders of the Lost Ark", "range": "Raiders of the Lost Ark" },
-        { "n": 3, "label": "Temple of Doom & Last Crusade", "range": "Temple of Doom & Last Crusade" },
-        { "n": 4, "label": "Later Indy", "range": "Later Indy" },
-        { "n": 5, "label": "Blade Runner", "range": "Blade Runner" },
-        { "n": 6, "label": "The Fugitive", "range": "The Fugitive" },
-        { "n": 7, "label": "Jack Ryan & Air Force One", "range": "Jack Ryan & Air Force One" },
-        { "n": 8, "label": "Witness & the '80s", "range": "Witness & the '80s" },
-        { "n": 9, "label": "Mosquito Coast & the '90s", "range": "Mosquito Coast & the '90s" },
-        { "n": 10, "label": "Later career", "range": "Later career" },
-        { "n": 11, "label": "Deep cuts", "range": "Deep cuts" }
+        {
+          "n": 1,
+          "label": "Han Solo & Star Wars",
+          "range": "Han Solo & Star Wars"
+        },
+        {
+          "n": 2,
+          "label": "Raiders of the Lost Ark",
+          "range": "Raiders of the Lost Ark"
+        },
+        {
+          "n": 3,
+          "label": "Temple of Doom & Last Crusade",
+          "range": "Temple of Doom & Last Crusade"
+        },
+        {
+          "n": 4,
+          "label": "Later Indy",
+          "range": "Later Indy"
+        },
+        {
+          "n": 5,
+          "label": "Blade Runner",
+          "range": "Blade Runner"
+        },
+        {
+          "n": 6,
+          "label": "The Fugitive",
+          "range": "The Fugitive"
+        },
+        {
+          "n": 7,
+          "label": "Jack Ryan & Air Force One",
+          "range": "Jack Ryan & Air Force One"
+        },
+        {
+          "n": 8,
+          "label": "Witness & \u201980s Dramas",
+          "range": "Witness & \u201980s Dramas"
+        },
+        {
+          "n": 9,
+          "label": "\u201990s Dramas",
+          "range": "\u201990s Dramas"
+        },
+        {
+          "n": 10,
+          "label": "Later Roles & Thrillers",
+          "range": "Later Roles & Thrillers"
+        },
+        {
+          "n": 11,
+          "label": "Classic Deep Cuts",
+          "range": "Classic Deep Cuts"
+        },
+        {
+          "n": 12,
+          "label": "Late \u201990s & 2000s",
+          "range": "Late \u201990s & 2000s"
+        },
+        {
+          "n": 13,
+          "label": "2010s Movies",
+          "range": "2010s Movies"
+        },
+        {
+          "n": 14,
+          "label": "Recent Movie Returns",
+          "range": "Recent Movie Returns"
+        },
+        {
+          "n": 15,
+          "label": "Early Roles & Deep Cuts",
+          "range": "Early Roles & Deep Cuts"
+        }
       ]
     }
   ]

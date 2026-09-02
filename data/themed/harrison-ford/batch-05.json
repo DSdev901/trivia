@@ -6,7 +6,7 @@
   "questions": [
     {
       "id": "ford-5-01",
-      "question": "What is Harrison Ford’s character named in Blade Runner?",
+      "question": "What is Harrison Ford\u2019s character named in Blade Runner?",
       "answer": "Rick Deckard",
       "choices": [
         "Rick Deckard",
@@ -90,39 +90,39 @@
     },
     {
       "id": "ford-5-08",
-      "question": "In Blade Runner 2049, where has Deckard been hiding for decades?",
-      "answer": "A radioactive Las Vegas",
+      "question": "Which actor plays replicant leader Roy Batty in Blade Runner?",
+      "answer": "Rutger Hauer",
       "choices": [
-        "A radioactive Las Vegas",
-        "Off-world",
-        "The Tyrell pyramid",
-        "A spinner junkyard"
+        "Rutger Hauer",
+        "M. Emmet Walsh",
+        "Edward James Olmos",
+        "Daryl Hannah"
       ],
-      "note": "Ford is older, bearded, and not glad to be found."
+      "note": "Hauer gives the film\u2019s famous \u201ctears in rain\u201d speech as Roy Batty."
     },
     {
       "id": "ford-5-09",
-      "question": "Who directed Blade Runner 2049?",
-      "answer": "Denis Villeneuve",
+      "question": "In Blade Runner, which company manufactures the replicants?",
+      "answer": "The Tyrell Corporation",
       "choices": [
-        "Denis Villeneuve",
-        "Ridley Scott",
-        "Christopher Nolan",
-        "David Fincher"
+        "The Tyrell Corporation",
+        "Weyland-Yutani",
+        "Cyberdyne Systems",
+        "Omni Consumer Products"
       ],
-      "note": "Scott produced. Villeneuve also made Arrival and Dune."
+      "note": "Eldon Tyrell\u2019s company makes the Nexus replicants Deckard is sent to retire."
     },
     {
       "id": "ford-5-10",
-      "question": "In what year was the original Blade Runner released?",
-      "answer": "1982",
+      "question": "In Blade Runner, what is the term for the artificial humans Deckard hunts?",
+      "answer": "Replicants",
       "choices": [
-        "1982",
-        "1977",
-        "1985",
-        "1989"
+        "Replicants",
+        "Synths",
+        "Cylons",
+        "Hosts"
       ],
-      "note": "It flopped, then became a cult film. Several cuts exist. Trivia nights usually mean the 1982 theatrical or the later Final Cut."
+      "note": "Blade runners are police specialists tasked with \u201cretiring\u201d illegal replicants."
     }
   ]
 }

@@ -230,7 +230,7 @@ function categoryKicker(category) {
     case "themed":
       return "Harrison Ford Movies first, more Tuesday themes later";
     case "harrison-ford":
-      return "110 pub-quiz questions in eleven rounds";
+      return "150 pub-quiz questions in fifteen rounds";
     case "prior-saucer":
       return "Questions from uploaded photos";
     case "presidents":
@@ -1182,16 +1182,16 @@ function bindPresidentPin() {
 
   const mq = window.matchMedia("(max-width: 860px)");
   const apply = () => {
-    if (!mq.matches) {
-      identity.style.position = "";
-      identity.style.top = "";
-      identity.style.left = "";
-      identity.style.right = "";
-      anchor.style.minHeight = "";
-      return;
-    }
     const navBottom = topEl ? Math.max(0, topEl.getBoundingClientRect().bottom) : 0;
     identity.style.top = `max(${navBottom}px, env(safe-area-inset-top, 0px))`;
+    if (mq.matches) {
+      identity.style.left = "";
+      identity.style.right = "";
+    } else {
+      const box = anchor.getBoundingClientRect();
+      identity.style.left = `${Math.max(0, box.left)}px`;
+      identity.style.right = `${Math.max(0, window.innerWidth - box.right)}px`;
+    }
     anchor.style.minHeight = `${identity.offsetHeight}px`;
   };
 
