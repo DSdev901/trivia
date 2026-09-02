@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-02T06:46:29.898Z",
+  "generatedAt": "2026-09-02T09:30:48.119Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-12T06:46:29.898Z",
-  "windowEnd": "2026-09-02T06:46:29.898Z",
+  "windowStart": "2026-08-12T09:30:48.119Z",
+  "windowEnd": "2026-09-02T09:30:48.119Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,316 @@
     "Tennis",
     "MMA"
   ],
-  "count": 3452,
+  "count": 3460,
   "items": [
+    {
+      "key": "49792150",
+      "id": "49792150",
+      "headline": "Chelsea fume after Monaco's Lamine Camara U-turn - sources",
+      "summary": "Chelsea have made a €45 million bid for Monaco midfielder Lamine Camara amid ongoing talks with Manchester City over the possible departure of Enzo Fernández, sources have told ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/49792150/chelsea-make-lamine-camara-offer-amid-enzo-fernandez-talks-sources",
+      "sport": "Soccer",
+      "published": "2026-09-02T08:27:09.000Z",
+      "firstSeen": "2026-09-01T11:14:29.720Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49794711",
+      "id": "49794711",
+      "headline": "Worst 2026 transfers, ranked: How Man United, Tottenham and others might have messed up",
+      "summary": "We've ranked the 11 moves of this summer transfer window that are likely to fail. Did Man United, Tottenham and Chelsea mess up?",
+      "url": "https://www.espn.com/soccer/story/_/id/49794711/worst-2026-summer-transfers-man-united-tottenham-arsenal-fernandez-rodri-guimaraes-tielemans-tonali",
+      "sport": "Soccer",
+      "published": "2026-09-02T08:13:56.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 1
+    },
+    {
+      "key": "48990955",
+      "id": "48990955",
+      "headline": "Summer transfer window: Grading big signings in men's soccer",
+      "summary": "The 2026 summer transfer window has closed. Here is how we rated the biggest deals.",
+      "url": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
+      "sport": "Soccer",
+      "published": "2026-09-02T08:12:11.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49801228",
+      "id": "49801228",
+      "headline": "Pirates survive a wild 13-12 finish as a 9th-inning throwing error seals win over Giants",
+      "summary": "— Brandon Lowe scored from third when San Francisco third baseman Oseilvis Basabe short-hopped a throw to first with two outs in the bottom of the ninth inning, and the Pittsburgh Pirates beat the Giants 13-12 on Tuesday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816762",
+      "sport": "MLB",
+      "published": "2026-09-02T08:12:03.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49801166",
+      "id": "49801166",
+      "headline": "Angels and Yankees meet in series rubber match",
+      "summary": "New York Yankees (79-60, second in the AL East) vs. Los Angeles Angels (53-86, fifth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816785",
+      "sport": "MLB",
+      "published": "2026-09-02T08:03:26.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49801165",
+      "id": "49801165",
+      "headline": "Marlins play the Royals leading series 1-0",
+      "summary": "Miami Marlins (70-69, third in the NL East) vs. Kansas City Royals (62-77, fifth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816782",
+      "sport": "MLB",
+      "published": "2026-09-02T08:03:22.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49801164",
+      "id": "49801164",
+      "headline": "Houston Astros host the Chicago White Sox Wednesday",
+      "summary": "Chicago White Sox (73-65, first in the AL Central) vs. Houston Astros (70-69, first in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816780",
+      "sport": "MLB",
+      "published": "2026-09-02T08:03:19.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49801163",
+      "id": "49801163",
+      "headline": "Guardians play the Blue Jays leading series 1-0",
+      "summary": "Toronto Blue Jays (68-71, fifth in the AL East) vs. Cleveland Guardians (70-68, second in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816778",
+      "sport": "MLB",
+      "published": "2026-09-02T08:03:15.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49801162",
+      "id": "49801162",
+      "headline": "Nationals bring 1-0 series advantage over Braves into game 2",
+      "summary": "Atlanta Braves (82-57, first in the NL East) vs. Washington Nationals (67-74, fourth in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816773",
+      "sport": "MLB",
+      "published": "2026-09-02T08:03:11.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49801161",
+      "id": "49801161",
+      "headline": "Harper leads Phillies against the Diamondbacks following 4-hit game",
+      "summary": "Philadelphia Phillies (79-60, second in the NL East) vs. Arizona Diamondbacks (73-67, third in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816786",
+      "sport": "MLB",
+      "published": "2026-09-02T08:03:08.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49801160",
+      "id": "49801160",
+      "headline": "Red Sox and Mariners square off in series rubber match",
+      "summary": "Seattle Mariners (65-74, third in the AL West) vs. Boston Red Sox (75-64, third in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816776",
+      "sport": "MLB",
+      "published": "2026-09-02T08:03:03.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49801159",
+      "id": "49801159",
+      "headline": "Rangers take on the Athletics after Nimmo's 4-hit game",
+      "summary": "Athletics (53-86, fourth in the AL West) vs. Texas Rangers (69-70, second in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816779",
+      "sport": "MLB",
+      "published": "2026-09-02T08:02:59.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49801158",
+      "id": "49801158",
+      "headline": "Rays and Mets meet in series rubber match",
+      "summary": "New York Mets (62-77, fifth in the NL East) vs. Tampa Bay Rays (83-55, first in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816774",
+      "sport": "MLB",
+      "published": "2026-09-02T08:02:56.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49801156",
+      "id": "49801156",
+      "headline": "Reds square off against the Padres with series tied 1-1",
+      "summary": "San Diego Padres (73-66, second in the NL West) vs. Cincinnati Reds (66-73, fifth in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816775",
+      "sport": "MLB",
+      "published": "2026-09-02T08:02:52.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49801155",
+      "id": "49801155",
+      "headline": "Rockies and Orioles play to decide series winner",
+      "summary": "Baltimore Orioles (69-70, fourth in the AL East) vs. Colorado Rockies (53-86, fifth in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816784",
+      "sport": "MLB",
+      "published": "2026-09-02T08:02:48.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49801153",
+      "id": "49801153",
+      "headline": "Lowe leads Pirates against the Giants after 4-hit outing",
+      "summary": "San Francisco Giants (57-82, fourth in the NL West) vs. Pittsburgh Pirates (68-71, fourth in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816777",
+      "sport": "MLB",
+      "published": "2026-09-02T08:02:44.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49801152",
+      "id": "49801152",
+      "headline": "Cardinals bring 1-0 series advantage over Dodgers into game 2",
+      "summary": "St. Louis Cardinals (69-70, third in the NL Central) vs. Los Angeles Dodgers (82-56, first in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816787",
+      "sport": "MLB",
+      "published": "2026-09-02T08:02:41.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 14
+    },
+    {
+      "key": "49801151",
+      "id": "49801151",
+      "headline": "Tigers play the Twins looking to stop road skid",
+      "summary": "Detroit Tigers (63-75, fourth in the AL Central) vs. Minnesota Twins (67-72, third in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816781",
+      "sport": "MLB",
+      "published": "2026-09-02T08:02:37.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 15
+    },
+    {
+      "key": "49746632",
+      "id": "49746632",
+      "headline": "Transfer deadline day recap: Everton fail with Balogun deal, Enzo signs for Man City",
+      "summary": "We bring you the latest news, rumors, done deals and reaction throughout Europe's transfer deadline day, up to the Premier League window closing at 6 p.m. ET.",
+      "url": "https://www.espn.com/soccer/story/_/id/49746632/live-transfer-window-rumors-news-updates-deadline-day-premier-league-laliga-bundesliga-serie-ligue-1",
+      "sport": "Soccer",
+      "published": "2026-09-02T07:54:35.000Z",
+      "firstSeen": "2026-09-01T09:31:22.142Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49800590",
+      "id": "49800590",
+      "headline": "Dodgers get Will Smith, Rushing, Wrobleski back from IL",
+      "summary": "The Dodgers welcomed back starting catcher Will Smith, backup Dalton Rushing and pitcher Justin Wrobleski from the injured list Tuesday, bolstering their bench and bullpen for the final month of the season.",
+      "url": "https://www.espn.com/mlb/story/_/id/49800590/dodgers-get-smith-rushing-wrobleski-back-il",
+      "sport": "MLB",
+      "published": "2026-09-02T07:44:22.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 16
+    },
+    {
+      "key": "49800902",
+      "id": "49800902",
+      "headline": "Man United enquired about Man City's Rayan Aït-Nouri - sources",
+      "summary": "Manchester United enquired about the availability of Manchester City left-back Rayan Aït-Nouri on deadline day, sources told ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/49800902/man-united-enquired-man-city-rayan-ait-nouri-sources",
+      "sport": "Soccer",
+      "published": "2026-09-02T07:40:44.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49800795",
+      "id": "49800795",
+      "headline": "Bouaddi to Yirenkyi - Africa's marvellous and meh signings of the transfer window",
+      "summary": "The offseason transfer window has shut for many leagues around the world, and Africa's players were part of many of the biggest deals, with the likes of Manchester City shoring up their roster with the continent's stars.",
+      "url": "https://www.espn.com/espn/story/_/id/49800795/bouaddi-yirenkyi-africa-marvellous-meh-signings-transfer-window",
+      "sport": "Soccer",
+      "published": "2026-09-02T07:25:23.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49781199",
+      "id": "49781199",
+      "headline": "Summer transfer window bargains: Karetsas, Yohanna, Mora and more",
+      "summary": "Some clubs around Europe have spent hundreds of millions to bring in new players, but what about the bargain deals?",
+      "url": "https://www.espn.com/soccer/story/_/id/49781199/summer-transfer-window-bargains-karetsas-yohanna-mora-more",
+      "sport": "Soccer",
+      "published": "2026-09-02T07:19:40.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49792242",
+      "id": "49792242",
+      "headline": "Sunderland beat Crystal Palace in race to sign Lyon's Malick Fofana",
+      "summary": "Crystal Palace have made a late move to hijack Sunderland's move for Lyon star Malick Fofana and are optimistic of securing his signature, sources have told ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/49792242/crystal-palace-swoop-malick-fofana-sunderland-talks-sources",
+      "sport": "Soccer",
+      "published": "2026-09-02T07:10:23.000Z",
+      "firstSeen": "2026-09-01T11:14:29.720Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49800564",
+      "id": "49800564",
+      "headline": "Transfers recap - Senegal's stars, and Man City, dominate deadline day",
+      "summary": "The transfer window came to a frantic conclusion on Tuesday, with African players central to some of the day's biggest storylines, deals, near misses and eye-catching gambles.",
+      "url": "https://www.espn.com/espn/story/_/id/49800564/transfers-recap-senegal-stars-man-city-dominate-deadline-day",
+      "sport": "Soccer",
+      "published": "2026-09-02T06:54:36.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49799296",
+      "id": "49799296",
+      "headline": "Pirates walk it off on an error to spoil Giants' comeback",
+      "summary": "Pirates walk it off on an error to spoil Giants' comeback",
+      "url": "https://www.espn.com/video/clip/_/id/49799296/pirates-walk-an-error-spoil-giants-comeback",
+      "sport": "MLB",
+      "published": "2026-09-02T06:34:34.000Z",
+      "firstSeen": "2026-09-02T06:46:29.898Z",
+      "bestRank": 17
+    },
+    {
+      "key": "49800120",
+      "id": "49800120",
+      "headline": "Jones and Chisholm Jr. crush back-to-back homers in top of 1st inning",
+      "summary": "Jones and Chisholm Jr. crush back-to-back homers in top of 1st inning",
+      "url": "https://www.espn.com/video/clip/_/id/49800120/jones-chisholm-jr-crush-back-back-homers-top-1st-inning",
+      "sport": "MLB",
+      "published": "2026-09-02T06:33:02.000Z",
+      "firstSeen": "2026-09-02T06:46:29.898Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49800449",
+      "id": "49800449",
+      "headline": "Folarin Balogun U-turn after deadline scuppered Everton move - sources",
+      "summary": "Folarin Balogun's £40 million ($54m) move from Monaco to Everton collapsed after the USMNT forward pulled the plug on the deal after the transfer deadline, sources told ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/49800449/folarin-balogun-uturn-deadline-scuppered-everton-move-sources",
+      "sport": "Soccer",
+      "published": "2026-09-02T06:19:22.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 7
+    },
     {
       "key": "49800271",
       "id": "49800271",
@@ -167,17 +475,6 @@
       "bestRank": 5
     },
     {
-      "key": "49800120",
-      "id": "49800120",
-      "headline": "Jones and Chisholm Jr. crush back-to-back homers in top of 1st inning",
-      "summary": "Jones and Chisholm Jr. crush back-to-back homers in top of 1st inning",
-      "url": "https://www.espn.com/video/clip/_/id/49800120/jones-chisholm-jr-crush-back-back-homers-top-1st-inning",
-      "sport": "MLB",
-      "published": "2026-09-02T05:11:43.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 4
-    },
-    {
       "key": "49797922",
       "id": "49797922",
       "headline": "Brewers add catcher Naylor, reliever Romero to active roster",
@@ -242,17 +539,6 @@
       "published": "2026-09-02T04:26:14.000Z",
       "firstSeen": "2026-08-27T15:59:13.638Z",
       "bestRank": 2
-    },
-    {
-      "key": "49799296",
-      "id": "49799296",
-      "headline": "Pirates walk it off on an error to spoil Giants' comeback",
-      "summary": "Pirates walk it off on an error to spoil Giants' comeback",
-      "url": "https://www.espn.com/video/clip/_/id/49799296/pirates-walk-an-error-spoil-giants-comeback",
-      "sport": "MLB",
-      "published": "2026-09-02T04:25:49.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 17
     },
     {
       "key": "49703019",
@@ -332,6 +618,17 @@
       "bestRank": 5
     },
     {
+      "key": "49798583",
+      "id": "49798583",
+      "headline": "Coco Gauff opens quest for 2nd US Open with straight-sets win",
+      "summary": "Coco Gauff opened her quest for a second US Open title on Tuesday by beating Zeynep Sonmez 6-3, 6-4, regaining control of midway through the second set after her opponent from Turkey picked up her play.",
+      "url": "https://www.espn.com/tennis/story/_/id/49798583/coco-gauff-beats-zeynep-sonmez-first-round-2026-us-open",
+      "sport": "Tennis",
+      "published": "2026-09-02T03:18:36.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 1
+    },
+    {
       "key": "49799466",
       "id": "49799466",
       "headline": "Christian Yelich and Joey Ortiz homer as the Brewers beat the Cubs 9-4",
@@ -343,6 +640,28 @@
       "bestRank": 1
     },
     {
+      "key": "49798949",
+      "id": "49798949",
+      "headline": "Monfils, 40, oldest man to win US Open match since Connors in '92",
+      "summary": "Gael Monfils, playing on his 40th birthday, beat Adolfo Daniel Vallejo in four sets Tuesday night to become the oldest man to win a US Open match since Jimmy Connors in 1992.",
+      "url": "https://www.espn.com/tennis/story/_/id/49798949/gael-monfils-40th-birthday-oldest-man-win-us-open-match-jimmy-connors-1992",
+      "sport": "Tennis",
+      "published": "2026-09-02T03:08:50.000Z",
+      "firstSeen": "2026-09-02T09:30:48.119Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49796839",
+      "id": "49796839",
+      "headline": "Taylor Fritz wins easily at US Open; Flavio Cobolli goes distance",
+      "summary": "Taylor Fritz, the American No. 9 seed, defeated 18-year-old countryman Darwin Blanch in straight sets Tuesday at the US Open. Meanwhile, No. 5 seed Flavio Cobolli won his first major match when trailing by two sets.",
+      "url": "https://www.espn.com/tennis/story/_/id/49796839/2026-us-open-day-3-tuesday-september-1-men-singles-results-roundup",
+      "sport": "Tennis",
+      "published": "2026-09-02T03:07:00.000Z",
+      "firstSeen": "2026-09-02T06:46:29.898Z",
+      "bestRank": 2
+    },
+    {
       "key": "49799416",
       "id": "49799416",
       "headline": "Twins hang 10 runs on the Tigers in the 6th inning of a 15-2 win as Lewis, Jeffers hit 3-run homers",
@@ -352,17 +671,6 @@
       "published": "2026-09-02T03:03:30.000Z",
       "firstSeen": "2026-09-02T03:32:30.628Z",
       "bestRank": 2
-    },
-    {
-      "key": "48990955",
-      "id": "48990955",
-      "headline": "Summer transfer window: Grading big signings in men's soccer",
-      "summary": "The 2026 summer transfer window has closed. Here is how we rated the biggest deals.",
-      "url": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
-      "sport": "Soccer",
-      "published": "2026-09-02T02:58:49.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
     },
     {
       "key": "49799294",
@@ -442,6 +750,17 @@
       "bestRank": 1
     },
     {
+      "key": "49798108",
+      "id": "49798108",
+      "headline": "Williams sisters start US Open doubles vs. team with Maya Joint",
+      "summary": "The Williams sisters were drawn Tuesday to face the team of Hao-Ching Chan and Maya Joint, who beat Serena at Wimbledon this summer, in their opening women's doubles match at the US Open.",
+      "url": "https://www.espn.com/tennis/story/_/id/49798108/williams-sisters-start-us-open-doubles-vs-team-maya-joint-hao-ching-chan",
+      "sport": "Tennis",
+      "published": "2026-09-02T01:48:46.000Z",
+      "firstSeen": "2026-09-02T06:46:29.898Z",
+      "bestRank": 2
+    },
+    {
       "key": "49798853",
       "id": "49798853",
       "headline": "Atlanta Braves vs. Washington Nationals: Game Highlights",
@@ -464,6 +783,28 @@
       "bestRank": 7
     },
     {
+      "key": "49798045",
+      "id": "49798045",
+      "headline": "Tiger Woods to change not guilty plea in DUI case, court docs show",
+      "summary": "Court documents show that Tiger Woods plans to change his not guilty plea in a DUI case stemming from a rollover crash in Florida.",
+      "url": "https://www.espn.com/golf/story/_/id/49798045/court-documents-show-tiger-woods-plans-change-not-guilty-plea-dui-case",
+      "sport": "Golf",
+      "published": "2026-09-02T01:29:25.000Z",
+      "firstSeen": "2026-09-02T06:46:29.898Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49796440",
+      "id": "49796440",
+      "headline": "Frodin, once Serena body double, loses to Rybakina at US Open",
+      "summary": "Thea Frodin, a 17-year-old from California who was the body double for the actor who played a young Serena Williams in the 2021 film \"King Richard,\" lost to No. 2 Elena Rybakina 6-3, 6-2 while playing her first WTA Tour match in a Grand Slam tournament.",
+      "url": "https://www.espn.com/tennis/story/_/id/49796440/thea-frodin-serena-williams-actor-body-double-king-richard-loses-us-open-debut-elena-rybakina",
+      "sport": "Tennis",
+      "published": "2026-09-02T01:19:19.000Z",
+      "firstSeen": "2026-09-02T03:32:30.628Z",
+      "bestRank": 1
+    },
+    {
       "key": "49798607",
       "id": "49798607",
       "headline": "Gavin Williams whiffs 13 in 7 innings and leads Guardians to 6-1 win over Blue Jays",
@@ -473,6 +814,17 @@
       "published": "2026-09-02T01:18:39.000Z",
       "firstSeen": "2026-09-02T03:32:30.628Z",
       "bestRank": 10
+    },
+    {
+      "key": "49797567",
+      "id": "49797567",
+      "headline": "Madison Keys, Mirra Andreeva among Day 3 winners at US Open",
+      "summary": "Madison Keys was the first player Tuesday to move into the second round of the US Open as rain threatened to hamper the schedule for a couple days.",
+      "url": "https://www.espn.com/tennis/story/_/id/49797567/2026-us-open-day-3-tuesday-september-1-women-singles-results-roundup",
+      "sport": "Tennis",
+      "published": "2026-09-02T01:17:51.000Z",
+      "firstSeen": "2026-09-02T06:46:29.898Z",
+      "bestRank": 3
     },
     {
       "key": "49466177",
@@ -497,17 +849,6 @@
       "bestRank": 12
     },
     {
-      "key": "49798108",
-      "id": "49798108",
-      "headline": "Williams sisters start US Open doubles vs. team with Maya Joint",
-      "summary": "The Williams sisters were drawn Tuesday to face the team of Hao-Ching Chan and Maya Joint, who beat Serena at Wimbledon this summer, in their opening women's doubles match at the US Open.",
-      "url": "https://www.espn.com/tennis/story/_/id/49798108/williams-sisters-start-us-open-doubles-vs-team-maya-joint-hao-ching-chan",
-      "sport": "Tennis",
-      "published": "2026-09-02T00:56:47.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 2
-    },
-    {
       "key": "49798415",
       "id": "49798415",
       "headline": "Zeynep Sonmez vs. Coco Gauff: Match Highlights",
@@ -528,28 +869,6 @@
       "published": "2026-09-02T00:41:04.000Z",
       "firstSeen": "2026-09-02T01:01:02.605Z",
       "bestRank": 7
-    },
-    {
-      "key": "49797567",
-      "id": "49797567",
-      "headline": "Madison Keys, Mirra Andreeva among Day 3 winners at US Open",
-      "summary": "Madison Keys was the first player Tuesday to move into the second round of the US Open as rain threatened to hamper the schedule for a couple days.",
-      "url": "https://www.espn.com/tennis/story/_/id/49797567/2026-us-open-day-3-tuesday-september-1-women-singles-results-roundup",
-      "sport": "Tennis",
-      "published": "2026-09-02T00:28:12.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49796440",
-      "id": "49796440",
-      "headline": "Frodin, once Serena body double, loses to Rybakina at US Open",
-      "summary": "Thea Frodin, a 17-year-old from California who was the body double for the actor who played a young Serena Williams in the 2021 film \"King Richard,\" lost to No. 2 Elena Rybakina 6-3, 6-2 while playing her first WTA Tour match in a Grand Slam tournament.",
-      "url": "https://www.espn.com/tennis/story/_/id/49796440/thea-frodin-serena-williams-actor-body-double-king-richard-loses-us-open-debut-elena-rybakina",
-      "sport": "Tennis",
-      "published": "2026-09-02T00:28:09.000Z",
-      "firstSeen": "2026-09-02T03:32:30.628Z",
-      "bestRank": 1
     },
     {
       "key": "40699880",
@@ -574,17 +893,6 @@
       "bestRank": 1
     },
     {
-      "key": "49798045",
-      "id": "49798045",
-      "headline": "Tiger Woods to change not guilty plea in DUI case, court docs show",
-      "summary": "Court documents show that Tiger Woods plans to change his not guilty plea in a DUI case stemming from a rollover crash in Florida.",
-      "url": "https://www.espn.com/golf/story/_/id/49798045/court-documents-show-tiger-woods-plans-change-not-guilty-plea-dui-case",
-      "sport": "Golf",
-      "published": "2026-09-02T00:11:40.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 1
-    },
-    {
       "key": "48377855",
       "id": "48377855",
       "headline": "2026 NBA buzz: Latest free agency and trade updates",
@@ -594,17 +902,6 @@
       "published": "2026-09-01T23:55:23.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
-    },
-    {
-      "key": "49796839",
-      "id": "49796839",
-      "headline": "Taylor Fritz wins easily at US Open; Flavio Cobolli goes distance",
-      "summary": "Taylor Fritz, the American No. 9 seed, defeated 18-year-old countryman Darwin Blanch in straight sets Tuesday at the US Open. Meanwhile, No. 5 seed Flavio Cobolli won his first major match when trailing by two sets.",
-      "url": "https://www.espn.com/tennis/story/_/id/49796839/2026-us-open-day-3-tuesday-september-1-men-singles-results-roundup",
-      "sport": "Tennis",
-      "published": "2026-09-01T23:51:59.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 2
     },
     {
       "key": "49797714",
@@ -695,17 +992,6 @@
       "bestRank": 4
     },
     {
-      "key": "49746632",
-      "id": "49746632",
-      "headline": "Transfer deadline day recap: Everton hopeful on Balogun deal, Enzo signs for Man City",
-      "summary": "We bring you the latest news, rumors, done deals and reaction throughout Europe's transfer deadline day, up to the Premier League window closing at 6 p.m. ET.",
-      "url": "https://www.espn.com/soccer/story/_/id/49746632/live-transfer-window-rumors-news-updates-deadline-day-premier-league-laliga-bundesliga-serie-ligue-1",
-      "sport": "Soccer",
-      "published": "2026-09-01T23:03:38.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 1
-    },
-    {
       "key": "49797481",
       "id": "49797481",
       "headline": "Why Kurkjian calls Kroenke's purchase 'a great day for the Angels'",
@@ -769,17 +1055,6 @@
       "sport": "Soccer",
       "published": "2026-09-01T22:30:48.000Z",
       "firstSeen": "2026-09-02T03:32:30.628Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49792150",
-      "id": "49792150",
-      "headline": "Chelsea fume after Monaco's Lamine Camara U-turn - sources",
-      "summary": "Chelsea have made a €45 million bid for Monaco midfielder Lamine Camara amid ongoing talks with Manchester City over the possible departure of Enzo Fernández, sources have told ESPN.",
-      "url": "https://www.espn.com/soccer/story/_/id/49792150/chelsea-make-lamine-camara-offer-amid-enzo-fernandez-talks-sources",
-      "sport": "Soccer",
-      "published": "2026-09-01T22:29:40.000Z",
-      "firstSeen": "2026-09-01T11:14:29.720Z",
       "bestRank": 2
     },
     {
@@ -880,17 +1155,6 @@
       "published": "2026-09-01T21:59:44.000Z",
       "firstSeen": "2026-09-01T21:24:45.031Z",
       "bestRank": 2
-    },
-    {
-      "key": "49792242",
-      "id": "49792242",
-      "headline": "Sunderland set to beat Crystal Palace in race to sign Lyon's Malick Fofana - sources",
-      "summary": "Crystal Palace have made a late move to hijack Sunderland's move for Lyon star Malick Fofana and are optimistic of securing his signature, sources have told ESPN.",
-      "url": "https://www.espn.com/soccer/story/_/id/49792242/crystal-palace-swoop-malick-fofana-sunderland-talks-sources",
-      "sport": "Soccer",
-      "published": "2026-09-01T21:57:06.000Z",
-      "firstSeen": "2026-09-01T11:14:29.720Z",
-      "bestRank": 3
     },
     {
       "key": "49796963",
@@ -1679,7 +1943,7 @@
       "headline": "With $6.5 million left on deal, UCLA fires AD Martin Jarmond",
       "summary": "UCLA fired athletic director Martin Jarmond on Monday, with chancellor Julio Frenk explaining in a letter to the UCLA community that the Bruins' athletic program \"currently carries a significant financial deficit, and its current path is not sustainable.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49788304/with-65-million-left-deal-ucla-fires-ad-martin-jarmond",
-      "sport": "College basketball",
+      "sport": "College football",
       "published": "2026-09-01T13:18:39.000Z",
       "firstSeen": "2026-09-01T01:11:44.372Z",
       "bestRank": 1
@@ -2218,7 +2482,7 @@
       "headline": "Naomi Osaka channels Allen Iverson in 2026 US Open debut",
       "summary": "Naomi Osaka channeled Allen Iverson as part of her 2026 US Open debut Monday night as she beat Anastasia Zakharova 7-6 (6), 7-6 (3).",
       "url": "https://www.espn.com/tennis/story/_/id/49790221/naomi-osaka-channels-allen-iverson-2026-us-open-debut",
-      "sport": "Tennis",
+      "sport": "NBA",
       "published": "2026-09-01T05:51:05.000Z",
       "firstSeen": "2026-09-01T06:43:34.663Z",
       "bestRank": 1
@@ -3219,7 +3483,7 @@
       "headline": "From Knicks to Yankees, Nick Jonas finds the perfect song",
       "summary": "The Jonas Brothers are longtime New York sports fans and have a song that can speak to their favorite teams.",
       "url": "https://www.espn.com/nfl/story/_/id/49660378/nick-jonas-brother-new-york-knicks-yankees-giants-told-songs",
-      "sport": "NFL",
+      "sport": "NBA",
       "published": "2026-08-31T19:22:20.000Z",
       "firstSeen": "2026-08-20T15:28:53.069Z",
       "bestRank": 1
@@ -3846,7 +4110,7 @@
       "headline": "Sankey, SEC 'prepared to contest' judge's order in Louisiana",
       "summary": "Though the SEC said it will comply with an order that prohibits commissioner Greg Sankey from punishing schools if they roster a player who returns from a pro contract, the league said in a statement Sunday that it will defend its rights in court.",
       "url": "https://www.espn.com/college-sports/story/_/id/49778057/sankey-sec-prepared-contest-judge-order-louisiana",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-31T12:23:32.000Z",
       "firstSeen": "2026-08-31T01:06:00.592Z",
       "bestRank": 1
@@ -7707,7 +7971,7 @@
       "headline": "ACC joins other Power 4 conferences in banning pros from returning",
       "summary": "The ACC passed a resolution Thursday banning professionals from returning to college in football, plus men's and women's basketball, joining the other Power 4 conferences in setting forth eligibility enforcement.",
       "url": "https://www.espn.com/college-football/story/_/id/49746151/acc-joins-other-power-4-conferences-bans-pros-returning",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-29T11:46:47.000Z",
       "firstSeen": "2026-08-28T03:24:34.178Z",
       "bestRank": 1
@@ -8818,7 +9082,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "College basketball is in chaos over eligibility issues. Here's how we got here, the latest updates and what's next.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-29T00:45:57.000Z",
       "firstSeen": "2026-08-22T21:27:10.267Z",
       "bestRank": 1
@@ -8884,7 +9148,7 @@
       "headline": "Ruling: SEC can't sanction teams using players with NFL ties",
       "summary": "A temporary restraining order prohibits the SEC from enforcing a new rule that threatens stiff penalties for any team that uses a player who previously signed a contract to play in the NFL, NBA or WNBA.",
       "url": "https://www.espn.com/college-football/story/_/id/49753638/ruling-sec-sanction-teams-using-players-nfl-ties",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-28T23:08:04.000Z",
       "firstSeen": "2026-08-29T00:53:26.639Z",
       "bestRank": 2
@@ -12349,7 +12613,7 @@
       "headline": "Big 12 announces ban on all professionals from returning",
       "summary": "The Big 12 has unanimously agreed to ban professionals from returning to Big 12 schools in all sports, the conference announced on Wednesday.",
       "url": "https://www.espn.com/college-football/story/_/id/49735747/big-12-announces-ban-all-professionals-returning",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-27T01:47:48.000Z",
       "firstSeen": "2026-08-27T02:01:23.994Z",
       "bestRank": 1
@@ -12492,7 +12756,7 @@
       "headline": "Sources: SEC to suspend head coaches who add pro players",
       "summary": "SEC schools that bring back NFL, NBA or WNBA players to their programs will face steep discipline under a new policy unanimously approved by the conference's 16 members, sources confirmed to ESPN.",
       "url": "https://www.espn.com/college-football/story/_/id/49734134/sources-sec-suspend-head-coaches-add-pro-players",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-27T00:12:05.000Z",
       "firstSeen": "2026-08-26T22:17:35.293Z",
       "bestRank": 2
@@ -12866,7 +13130,7 @@
       "headline": "Big Ten rewards commissioner Tony Petitti with five-year extension",
       "summary": "The Big Ten and commissioner Tony Petitti agreed to a five-year contract extension that will keep him with the conference through the summer of 2033, the league announced Wednesday.",
       "url": "https://www.espn.com/college-football/story/_/id/49734570/big-ten-rewards-commissioner-tony-petitti-five-year-extension",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-26T21:18:53.000Z",
       "firstSeen": "2026-08-26T22:17:35.293Z",
       "bestRank": 1
@@ -13614,7 +13878,7 @@
       "headline": "SEC draws rule to stop NFL, NBA, WNBA players from returning",
       "summary": "After the Big Ten passed a rule stopping players returning from the NFL from playing at its schools, the SEC followed suit, but took it further, adding basketball in announcing a policy forbidding members from rostering anyone from the NFL, NBA and WNBA.",
       "url": "https://www.espn.com/college-football/story/_/id/49726430/sec-draws-rule-stop-nfl-nba-wnba-players-returning",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-26T10:21:33.000Z",
       "firstSeen": "2026-08-26T03:37:25.782Z",
       "bestRank": 1
@@ -14923,7 +15187,7 @@
       "headline": "LeBron James, PGA Tour partner on event focused on community",
       "summary": "The LeBron James Family Foundation Invitational will be played in James' hometown of Akron, Ohio, in July 2027, James' foundation announced Tuesday.",
       "url": "https://www.espn.com/golf/story/_/id/49721608/lebron-james-pga-tour-partner-event-focused-amateurs",
-      "sport": "Golf",
+      "sport": "NBA",
       "published": "2026-08-25T20:15:43.000Z",
       "firstSeen": "2026-08-25T15:31:13.856Z",
       "bestRank": 1
@@ -16177,7 +16441,7 @@
       "headline": "RJ Luis Jr., '25 Big East POY, granted injunction to play for LSU",
       "summary": "A Louisiana judge on Monday granted RJ Luis Jr., the 2025 Big East Player of the Year, a temporary injunction to play for LSU this season despite signing multiple NBA contracts.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49717471/rj-luis-jr-granted-injunction-play-lsu-tigers-signing-nba-contracts",
-      "sport": "College basketball",
+      "sport": "NBA",
       "published": "2026-08-25T03:12:42.000Z",
       "firstSeen": "2026-08-25T03:33:46.697Z",
       "bestRank": 1
@@ -20544,7 +20808,7 @@
       "headline": "Greg Sankey, in filing, speaks out against pros returning to NCAA",
       "summary": "SEC commissioner Greg Sankey asked a judge to uphold NCAA rules that prevent athletes from returning to play in college.",
       "url": "https://www.espn.com/college-sports/story/_/id/49672789/greg-sankey-filing-speaks-pros-returning-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-22T18:27:32.000Z",
       "firstSeen": "2026-08-20T21:27:59.718Z",
       "bestRank": 1
@@ -20566,7 +20830,7 @@
       "headline": "Court halts order, denies extra year of eligibility",
       "summary": "In a legal victory for the NCAA, a federal appeals court has temporarily halted a court order that would have granted thousands of athletes who left college an extra year of eligibility.",
       "url": "https://www.espn.com/college-football/story/_/id/49682102/court-halts-order-denies-extra-year-eligibility",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-22T18:26:52.000Z",
       "firstSeen": "2026-08-21T21:27:41.439Z",
       "bestRank": 1
@@ -24185,7 +24449,7 @@
       "headline": "NCAA lands new deal to promote championship events",
       "summary": "The NCAA and Playfly Sports have agreed to a deal that will open the door to more marketing opportunities around championship events, including possible NIL deals for student-athletes.",
       "url": "https://www.espn.com/college-sports/story/_/id/49670866/ncaa-lands-new-deal-promote-championship-events",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-20T15:20:41.000Z",
       "firstSeen": "2026-08-20T18:29:37.526Z",
       "bestRank": 1
@@ -29003,7 +29267,7 @@
       "headline": "Notable Walk-Offs: Reflect on historic moments across the SEC",
       "summary": "On SEC Now, Dari Nowkhah and Matt Stinchcomb look back on some of the most legendary moments from SEC history across all sports.",
       "url": "https://www.espn.com/video/clip/_/id/49643359/reflect-historic-moments-sec",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-17T23:54:12.000Z",
       "firstSeen": "2026-08-18T06:29:33.134Z",
       "bestRank": 1
@@ -29740,7 +30004,7 @@
       "headline": "Sources: Michigan State to hire Western Michigan AD Bartholomae",
       "summary": "Michigan State is finalizing a deal to hire Western Michigan athletic director Dan Bartholomae as its new AD, sources told ESPN's Pete Thamel on Monday.",
       "url": "https://www.espn.com/college-football/story/_/id/49638615/sources-michigan-state-hire-western-michigan-ad-bartholomae",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-17T14:32:16.000Z",
       "firstSeen": "2026-08-17T21:27:47.678Z",
       "bestRank": 1
@@ -31159,7 +31423,7 @@
       "headline": "Basketball HOF class of 2026 honors women's hoops, NBA icons",
       "summary": "Candace Parker and Elena Delle Donne headlined a 2026 Hall of Fame class that honored women's hoops, as well as NBA luminaries such as Doc Rivers, Mike D'Antoni and Amar'e Stoudemire.",
       "url": "https://www.espn.com/espn/story/_/id/49623875/basketball-hof-class-2026-honors-women-hoops-nba-icons",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-16T11:21:36.000Z",
       "firstSeen": "2026-08-16T03:34:19.324Z",
       "bestRank": 1
@@ -37066,7 +37330,7 @@
       "headline": "Reports: Sankey reminds SEC schools to follow eligibility rules",
       "summary": "Commissioner Greg Sankey sent a memo to SEC members reminding them to move carefully when adding players suddenly allowed by court rulings to seek a fifth year of eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49593224/reports-sankey-reminds-sec-schools-follow-eligibility-rules",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-12T21:10:17.000Z",
       "firstSeen": "2026-08-13T03:59:55.296Z",
       "bestRank": 1
@@ -37818,182 +38082,6 @@
       "published": "2026-08-12T10:00:11.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 8
-    },
-    {
-      "key": "49588704",
-      "id": "49588704",
-      "headline": "Reds rally late, beat the White Sox 5-4 in the 10th to spoil pope hat giveaway night",
-      "summary": "— Elly De La Cruz drove in automatic runner Matt McLain with a sacrifice fly in the top of the 10th inning as the Cincinnati Reds snapped a three-game skid with a 5-4 comeback win over the Chicago White Sox on Tuesday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816486",
-      "sport": "MLB",
-      "published": "2026-08-12T08:54:20.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49588527",
-      "id": "49588527",
-      "headline": "Athletics take home losing streak into matchup with the Rays",
-      "summary": "Tampa Bay Rays (73-46, first in the AL East) vs. Athletics (47-73, fourth in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816507",
-      "sport": "MLB",
-      "published": "2026-08-12T08:03:29.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49588526",
-      "id": "49588526",
-      "headline": "Reds face the White Sox with 1-0 series lead",
-      "summary": "Cincinnati Reds (57-61, fourth in the NL Central) vs. Chicago White Sox (61-57, first in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816501",
-      "sport": "MLB",
-      "published": "2026-08-12T08:03:11.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49588525",
-      "id": "49588525",
-      "headline": "Mariners look to break 5-game losing streak, play the Yankees",
-      "summary": "Seattle Mariners (56-64, third in the AL West) vs. New York Yankees (67-52, second in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816499",
-      "sport": "MLB",
-      "published": "2026-08-12T08:03:08.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49588524",
-      "id": "49588524",
-      "headline": "Braves and Mets play, winner takes 3-game series",
-      "summary": "New York Mets (53-68, fifth in the NL East) vs. Atlanta Braves (72-48, first in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816497",
-      "sport": "MLB",
-      "published": "2026-08-12T08:03:04.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49588523",
-      "id": "49588523",
-      "headline": "Los Angeles Angels square off against the Texas Rangers Wednesday",
-      "summary": "Texas Rangers (60-60, second in the AL West) vs. Los Angeles Angels (46-74, fifth in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816508",
-      "sport": "MLB",
-      "published": "2026-08-12T08:03:01.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49588522",
-      "id": "49588522",
-      "headline": "Cardinals and Phillies meet in series rubber match",
-      "summary": "Philadelphia Phillies (64-57, second in the NL East) vs. St. Louis Cardinals (60-60, third in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816502",
-      "sport": "MLB",
-      "published": "2026-08-12T08:02:57.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49588520",
-      "id": "49588520",
-      "headline": "Brewers look to stop road losing streak, play the Padres",
-      "summary": "Milwaukee Brewers (74-46, first in the NL Central) vs. San Diego Padres (64-57, third in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816506",
-      "sport": "MLB",
-      "published": "2026-08-12T08:02:54.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49588519",
-      "id": "49588519",
-      "headline": "Guardians look to stop road slide, play the Tigers",
-      "summary": "Cleveland Guardians (58-62, fourth in the AL Central) vs. Detroit Tigers (59-60, second in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816496",
-      "sport": "MLB",
-      "published": "2026-08-12T08:02:51.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49588518",
-      "id": "49588518",
-      "headline": "Royals aim to break 3-game slide, take on the Dodgers",
-      "summary": "Kansas City Royals (49-72, fifth in the AL Central) vs. Los Angeles Dodgers (72-48, first in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816505",
-      "sport": "MLB",
-      "published": "2026-08-12T08:02:47.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49588517",
-      "id": "49588517",
-      "headline": "Red Sox take 4-game losing streak into matchup against the Blue Jays",
-      "summary": "Boston Red Sox (64-55, third in the AL East) vs. Toronto Blue Jays (58-63, fifth in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816494",
-      "sport": "MLB",
-      "published": "2026-08-12T08:02:44.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 14
-    },
-    {
-      "key": "49588516",
-      "id": "49588516",
-      "headline": "Twins and Orioles square off in series rubber match",
-      "summary": "Baltimore Orioles (58-62, fourth in the AL East) vs. Minnesota Twins (59-62, third in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816500",
-      "sport": "MLB",
-      "published": "2026-08-12T08:02:40.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 15
-    },
-    {
-      "key": "49588515",
-      "id": "49588515",
-      "headline": "Cubs meet the Nationals with 1-0 series lead",
-      "summary": "Chicago Cubs (70-50, second in the NL Central) vs. Washington Nationals (59-62, fourth in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816495",
-      "sport": "MLB",
-      "published": "2026-08-12T08:02:37.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 16
-    },
-    {
-      "key": "49588514",
-      "id": "49588514",
-      "headline": "Giants and Astros meet in series rubber match",
-      "summary": "Houston Astros (61-60, first in the AL West) vs. San Francisco Giants (50-70, fourth in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816504",
-      "sport": "MLB",
-      "published": "2026-08-12T08:02:33.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 17
-    },
-    {
-      "key": "49588513",
-      "id": "49588513",
-      "headline": "Diamondbacks square off against the Rockies in series rubber match",
-      "summary": "Colorado Rockies (47-73, fifth in the NL West) vs. Arizona Diamondbacks (64-57, second in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816503",
-      "sport": "MLB",
-      "published": "2026-08-12T08:02:29.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 18
-    },
-    {
-      "key": "49588283",
-      "id": "49588283",
-      "headline": "What brought Cole Anthony to the NBL?",
-      "summary": "Melbourne United shocked the NBL world when they announced the signing of Cole Anthony, but ESPN's Olgun Uluc asked him what go him over the line?",
-      "url": "https://www.espn.com/video/clip/_/id/49588283/what-brought-cole-anthony-nbl",
-      "sport": "College basketball",
-      "published": "2026-08-12T07:17:41.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
     }
   ]
 }
