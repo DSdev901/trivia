@@ -1333,6 +1333,8 @@ function mapTargetId(e) {
       node.classList?.contains("geo-map-hint") ||
       node.classList?.contains("geo-map-reset") ||
       node.closest?.(".geo-map-reset") ||
+      node.classList?.contains("geo-play-close") ||
+      node.closest?.(".geo-play-close") ||
       node.id === "geo-map"
     ) {
       continue;
@@ -2298,7 +2300,7 @@ function bindMapControls(host) {
   host.addEventListener(
     "click",
     (e) => {
-      if (e.target?.closest?.(".geo-map-reset")) return;
+      if (e.target?.closest?.(".geo-map-reset, .geo-play-close")) return;
       if (!moved) return;
       e.preventDefault();
       e.stopPropagation();
@@ -3144,7 +3146,6 @@ function renderPlay() {
          </div>
          <div class="geo-chrome-end">
            ${choiceOnMap ? "" : nextHtml}
-           ${closeHtml}
          </div>
        </div>`
     : prompt;
@@ -3178,7 +3179,7 @@ function renderPlay() {
         ${progressHtml()}
       </div>
       <div class="geo-play-layout ${showMap ? "" : "no-map"}">
-        ${showMap ? `<div class="geo-map-wrap">${mapHtml()}</div>` : ""}
+        ${showMap ? `<div class="geo-map-wrap">${mapHtml()}${closeHtml}</div>` : ""}
         <aside class="geo-side">
           <div class="geo-quiz-panel" id="geo-quiz-panel">${panelInner}</div>
           ${answerHtml}

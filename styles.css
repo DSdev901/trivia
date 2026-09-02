@@ -4602,19 +4602,22 @@ a.ce-tab {
   }
 
   .geo-play--map .geo-play-close {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 8;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 7;
     display: inline-flex;
-    width: 2.35rem;
-    height: 2.35rem;
+    width: 2.5rem;
+    height: 2.5rem;
     margin: 0;
-    border: 0;
-    border-left: 1px solid var(--stripe);
-    border-bottom: 1px solid var(--stripe);
-    border-radius: 0;
+    border: 1px solid var(--stripe);
+    border-radius: 999px;
     background: #fff;
+    box-shadow: var(--shadow);
+  }
+
+  .geo-play--map .geo-map-reset {
+    top: 3.25rem;
   }
 
   .geo-play .geo-toolbar .secondary-btn {
@@ -4645,15 +4648,14 @@ a.ce-tab {
   }
 
   .geo-play--map .geo-quiz-panel {
-    order: -2;
-    position: sticky;
-    top: 0;
+    order: 1;
+    position: relative;
     z-index: 4;
     margin: 0 -0.45rem;
     width: calc(100% + 0.9rem);
-    padding: 0.4rem 2.35rem 0.4rem 0.7rem;
+    padding: 0.4rem 0.7rem;
     border: none;
-    border-bottom: 1px solid var(--stripe);
+    border-top: 1px solid var(--stripe);
     border-radius: 0;
     box-shadow: none;
     background: var(--paper);
@@ -4750,6 +4752,7 @@ a.ce-tab {
 
   .geo-play--map .geo-map-wrap {
     order: 0;
+    position: relative;
     margin: 0 -0.45rem;
     width: calc(100% + 0.9rem);
   }
@@ -4842,34 +4845,27 @@ a.ce-tab {
   }
 
   .geo-play--map .geo-answer-bar {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    order: 2;
+    position: static;
     z-index: 5;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: stretch;
     gap: 0.45rem;
     width: 100%;
-    pointer-events: none;
+    margin: 0 -0.45rem;
+    padding: 0 0.45rem 0.4rem;
     box-sizing: border-box;
+    background: var(--paper);
   }
 
-  .geo-play--map.geo-play--type:not(.is-answered) .geo-answer-bar,
-  .geo-play--map:not(.is-answered) .geo-answer-bar:has(.geo-quiz-actions) {
-    padding: 0.4rem 0.45rem calc(0.4rem + env(safe-area-inset-bottom));
-    background: linear-gradient(180deg, transparent, rgba(247, 243, 235, 0.92) 38%);
+  .geo-play--map .geo-answer-bar:not(:has(.geo-quiz-actions)):not(:has(.geo-next-row:not([hidden]))) {
+    display: none;
   }
 
   .geo-play--map .geo-answer-bar .geo-quiz-actions,
   .geo-play--map .geo-answer-bar .geo-next-row {
     pointer-events: auto;
-  }
-
-  .geo-play--map.geo-play--choice.is-answered .geo-answer-bar {
-    padding: 0.4rem 0.45rem calc(0.4rem + env(safe-area-inset-bottom));
-    background: linear-gradient(180deg, transparent, rgba(247, 243, 235, 0.92) 38%);
   }
 
   .geo-play--map.geo-play--choice .geo-next-row:not([hidden]) {
