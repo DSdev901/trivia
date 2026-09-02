@@ -4367,6 +4367,77 @@ a.ce-tab {
   background: #fff;
 }
 
+.geo-item-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.geo-study-index {
+  display: grid;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.geo-study-index .speech-kicker {
+  margin: 0.15rem 0 0;
+}
+
+.geo-play--study .geo-play-layout.no-map {
+  max-width: 54rem;
+}
+
+.geo-play--study .geo-side,
+.geo-play--study .geo-study-index,
+.geo-play--study .geo-item-list {
+  width: 100%;
+}
+
+.geo-play--study .geo-map-frame {
+  touch-action: pan-y;
+  cursor: default;
+}
+
+.geo-play--study .geo-item-list {
+  grid-template-columns: repeat(auto-fill, minmax(10.25rem, 1fr));
+  gap: 0.4rem;
+  max-height: min(64vh, 560px);
+  padding-right: 0;
+}
+
+.geo-play--study .geo-play-layout.no-map .geo-item-list {
+  max-height: none;
+  overflow: visible;
+}
+
+.geo-play--study .geo-item-btn {
+  min-height: 2.45rem;
+  padding: 0.4rem 0.65rem;
+  border-color: var(--stripe);
+  background: #fff;
+}
+
+.geo-play--study .geo-item-btn.is-on {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent-soft) 72%, #fff);
+}
+
+.geo-play--study .geo-item-btn .geo-flag {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.geo-play--study .geo-detail {
+  padding: 0.85rem 1rem;
+}
+
+.geo-play--study .geo-flag-reveal {
+  font-size: clamp(2.6rem, 12vmin, 4.25rem);
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.55rem;
+}
+
 .geo-type-form {
   display: flex;
   flex-wrap: wrap;
@@ -4424,6 +4495,11 @@ a.ce-tab {
 
   .geo-item-list {
     max-height: 32vh;
+  }
+
+  .geo-play--study .geo-item-list {
+    max-height: none;
+    overflow: visible;
   }
 
   body:has(.view:not([hidden]) .geo-play),
@@ -5121,6 +5197,8 @@ a.ce-tab {
   .geo-play--study .geo-play-layout {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    gap: 0.7rem;
   }
 
   .geo-play--study .geo-map-wrap {
@@ -5138,14 +5216,15 @@ a.ce-tab {
 
   .geo-play--study .geo-side {
     order: 1;
+    gap: 0.65rem;
   }
 
   .geo-play--study .geo-map-frame svg {
-    max-height: min(48dvh, 420px);
+    max-height: min(34dvh, 300px);
   }
 
   .geo-play--study.geo-play--markers .geo-map-frame {
-    height: min(42dvh, 400px);
+    height: min(32dvh, 280px);
   }
 
   .geo-play--study.geo-play--markers .geo-map-frame svg {
@@ -5159,11 +5238,16 @@ a.ce-tab {
   }
 
   .geo-play--study .geo-flag-reveal {
-    font-size: clamp(5.25rem, 29vmin, 8rem);
+    font-size: clamp(2.8rem, 16vmin, 4rem);
   }
 
   .geo-play--study .geo-detail h3 {
     font-size: 1.2rem;
+  }
+
+  .geo-play--study .geo-item-btn {
+    min-height: 2.55rem;
+    padding: 0.42rem 0.6rem;
   }
 
   .geo-item-btn {

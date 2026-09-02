@@ -2311,19 +2311,26 @@ function bindMapControls(host) {
 
 function mapHtml() {
   if (!geo.mapSvg) return "";
+  const study = geo.mode === "study";
   const coarse = window.matchMedia("(pointer: coarse)").matches;
   const zoomHint = coarse ? "pinch to zoom" : "pinch or scroll to zoom";
   const pinHint = geo.mode === "pin" ? " · tap a place to answer" : "";
-  return `<div class="geo-map-stage">
-    <div class="geo-map-frame is-zoomable" id="geo-map">${geo.mapSvg}
-    <div class="geo-map-nav" aria-hidden="true"></div>
-    <p class="geo-map-hint">Drag to pan · ${zoomHint}${pinHint}</p>
-    </div>
-    <button type="button" class="geo-map-reset" hidden aria-label="Reset map" title="Reset map">
+  const nav = study
+    ? ""
+    : `<div class="geo-map-nav" aria-hidden="true"></div>
+    <p class="geo-map-hint">Drag to pan · ${zoomHint}${pinHint}</p>`;
+  const reset = study
+    ? ""
+    : `<button type="button" class="geo-map-reset" hidden aria-label="Reset map" title="Reset map">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <path fill="currentColor" d="M15 3h6v6h-2V6.4l-3.8 3.8-1.4-1.4L17.6 5H15V3zM3 9V3h6v2H6.4l3.8 3.8-1.4 1.4L5 6.4V9H3zm6 12H3v-6h2v2.6l3.8-3.8 1.4 1.4L6.4 19H9v2zm12-6v6h-6v-2h2.6l-3.8-3.8 1.4-1.4 3.8 3.8V15h2z"/>
       </svg>
-    </button>
+    </button>`;
+  return `<div class="geo-map-stage">
+    <div class="geo-map-frame${study ? "" : " is-zoomable"}" id="geo-map">${geo.mapSvg}
+    ${nav}
+    </div>
+    ${reset}
   </div>`;
 }
 
@@ -3000,7 +3007,11 @@ function renderStudy() {
           <div class="geo-detail" id="geo-detail">
             ${studyDetailHtml(item)}
           </div>
-          <div class="geo-item-list" role="list">
+          <div class="geo-study-index">
+            <p class="speech-kicker">${geo.items.length} ${
+              geo.items.length === 1 ? "place" : "places"
+            }</p>
+            <div class="geo-item-list" role="list">
             ${geo.items
               .map(
                 (i) => `
@@ -3008,17 +3019,17 @@ function renderStudy() {
                 i.id === geo.selectedId ? "is-on" : ""
               }" data-id="${escapeHtml(i.id)}" role="listitem">
                 ${i.flag ? `<span class="geo-flag">${i.flag}</span>` : ""}
-                <span>${escapeHtml(i.name)}</span>
+                <span class="geo-item-name">${escapeHtml(i.name)}</span>
               </button>`
               )
               .join("")}
+            </div>
           </div>
         </aside>
       </div>
     </div>`;
 
   paintMap(geo.selectedId);
-  bindMapControls(geo.root.querySelector("#geo-map"));
   bindStudy();
 }
 
