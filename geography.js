@@ -2632,24 +2632,39 @@ function largestCitiesHtml(item, showingCapital) {
     </div>`;
 }
 
+function confirmStatusHtml(ok) {
+  return ok
+    ? `<span class="geo-identity-status">Correct</span>`
+    : `<span class="geo-identity-status">Not quite</span>`;
+}
+
+function confirmCapitalHtml(capital) {
+  if (!capital) return "";
+  return `<span class="geo-identity-cap">Capital <strong>${escapeHtml(
+    capital
+  )}</strong></span>`;
+}
+
+function confirmCardHtml(ok, placeHtml, extrasHtml, cities, flag) {
+  const main = `<span class="geo-identity-main">${confirmStatusHtml(
+    ok
+  )}${placeHtml}${extrasHtml}</span>`;
+  if (!flag) {
+    return `<span class="quiz-feedback-copy">${main}${cities}</span>`;
+  }
+  return `<div class="geo-identity">${flag}<span class="quiz-feedback-copy">${main}</span>${cities}</div>`;
+}
+
 function confirmAnswerHtml(ok, item) {
   if (isCountryIdentityQuiz()) {
     const country = item.name || expectedAnswer(item);
-    const copy = ok
-      ? `<strong>Correct.</strong> ${escapeHtml(country)}`
-      : `<strong>Not quite.</strong> Answer: <strong>${escapeHtml(
-          country
-        )}</strong>`;
-    const cap = item.capital
-      ? `<span class="geo-identity-cap">capital ${escapeHtml(item.capital)}</span>`
-      : "";
-    const cities = largestCitiesHtml(item, true);
-    const flag = revealFlagHtml(item);
-    const main = `<span class="geo-identity-main">${copy}${cap}</span>`;
-    if (!flag) {
-      return `<span class="quiz-feedback-copy">${main}${cities}</span>`;
-    }
-    return `<div class="geo-identity">${flag}<span class="quiz-feedback-copy">${main}</span>${cities}</div>`;
+    return confirmCardHtml(
+      ok,
+      `<strong class="geo-identity-place">${escapeHtml(country)}</strong>`,
+      confirmCapitalHtml(item.capital),
+      largestCitiesHtml(item, true),
+      revealFlagHtml(item)
+    );
   }
   const { place, country: rawCountry } = confirmParts(item);
   const country =
@@ -2664,22 +2679,13 @@ function confirmAnswerHtml(ok, item) {
       place === item.name &&
       (ok || confirmShowsRevealFlag(item))
   );
-  const cap = showingCapital
-    ? `<span class="geo-identity-cap">capital ${escapeHtml(item.capital)}</span>`
-    : "";
-  const cities = largestCitiesHtml(item, showingCapital);
-  const rank = cityRankFactHtml(item);
-  const flag = confirmShowsRevealFlag(item) ? revealFlagHtml(item) : "";
-  const copy = ok
-    ? `<strong>Correct.</strong> ${escapeHtml(place)}${where}`
-    : `<strong>Not quite.</strong> Answer: <strong>${escapeHtml(
-        place
-      )}</strong>${where}`;
-  const main = `<span class="geo-identity-main">${copy}${cap}${rank}</span>`;
-  if (!flag) {
-    return `<span class="quiz-feedback-copy">${main}${cities}</span>`;
-  }
-  return `<div class="geo-identity">${flag}<span class="quiz-feedback-copy">${main}</span>${cities}</div>`;
+  return confirmCardHtml(
+    ok,
+    `<strong class="geo-identity-place">${escapeHtml(place)}${where}</strong>`,
+    `${confirmCapitalHtml(showingCapital ? item.capital : "")}${cityRankFactHtml(item)}`,
+    largestCitiesHtml(item, showingCapital),
+    confirmShowsRevealFlag(item) ? revealFlagHtml(item) : ""
+  );
 }
 
 function buildChoices(item) {
