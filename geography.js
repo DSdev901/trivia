@@ -2435,9 +2435,17 @@ function confirmParts(item) {
   return { place: expected, country: "" };
 }
 
+function isCountryIdentityQuiz() {
+  const kind = quizKind();
+  if (kind === "flags" || kind === "capitals") return true;
+  if (kind !== "countries") return false;
+  const map = geo.pack?.map;
+  return map !== "us-states" && map !== "canada-provinces";
+}
+
 function confirmShowsRevealFlag(item) {
   if (!item?.flag) return false;
-  if (quizKind() === "flags") return false;
+  if (isCountryIdentityQuiz()) return true;
   const mode = geo.mode;
   return mode === "pin" || mode === "type" || mode === "outline";
 }
@@ -2589,8 +2597,10 @@ function studyRankHtml(item) {
   return `<p class="geo-meta-line">${escapeHtml(sentence)}</p>`;
 }
 
-function pinCitiesHtml(item, showingCapital) {
-  if (geo.mode !== "pin" || !showingCapital) return "";
+function largestCitiesHtml(item, showingCapital) {
+  if (!isCountryIdentityQuiz() && (geo.mode !== "pin" || !showingCapital)) {
+    return "";
+  }
   const cities = largestCitiesFor(item)
     .map((name) => String(name || "").trim())
     .filter(Boolean)
@@ -2623,6 +2633,24 @@ function pinCitiesHtml(item, showingCapital) {
 }
 
 function confirmAnswerHtml(ok, item) {
+  if (isCountryIdentityQuiz()) {
+    const country = item.name || expectedAnswer(item);
+    const copy = ok
+      ? `<strong>Correct.</strong> ${escapeHtml(country)}`
+      : `<strong>Not quite.</strong> Answer: <strong>${escapeHtml(
+          country
+        )}</strong>`;
+    const cap = item.capital
+      ? `<span class="geo-identity-cap">capital ${escapeHtml(item.capital)}</span>`
+      : "";
+    const cities = largestCitiesHtml(item, true);
+    const flag = revealFlagHtml(item);
+    const main = `<span class="geo-identity-main">${copy}${cap}</span>`;
+    if (!flag) {
+      return `<span class="quiz-feedback-copy">${main}${cities}</span>`;
+    }
+    return `<div class="geo-identity">${flag}<span class="quiz-feedback-copy">${main}</span>${cities}</div>`;
+  }
   const { place, country: rawCountry } = confirmParts(item);
   const country =
     rawCountry &&
@@ -2632,15 +2660,14 @@ function confirmAnswerHtml(ok, item) {
       : "";
   const where = country ? ` · ${escapeHtml(country)}` : "";
   const showingCapital = Boolean(
-    quizKind() !== "flags" &&
-      item.capital &&
+    item.capital &&
       place === item.name &&
       (ok || confirmShowsRevealFlag(item))
   );
   const cap = showingCapital
     ? `<span class="geo-identity-cap">capital ${escapeHtml(item.capital)}</span>`
     : "";
-  const cities = pinCitiesHtml(item, showingCapital);
+  const cities = largestCitiesHtml(item, showingCapital);
   const rank = cityRankFactHtml(item);
   const flag = confirmShowsRevealFlag(item) ? revealFlagHtml(item) : "";
   const copy = ok
