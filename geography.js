@@ -118,6 +118,8 @@ const geo = {
   _pinMissTimer: 0,
   largestCities: null,
   _citiesPromise: null,
+  capitalDots: null,
+  _capitalDotsPromise: null,
 };
 
 function escapeHtml(s) {
@@ -378,10 +380,22 @@ async function loadLargestCities() {
   return geo.largestCities;
 }
 
+async function loadCapitalDots() {
+  if (geo.capitalDots) return geo.capitalDots;
+  if (!geo._capitalDotsPromise) {
+    geo._capitalDotsPromise = fetch("data/geography/capital-dots.json")
+      .then((res) => (res.ok ? res.json() : { countries: {}, us: {}, ca: {} }))
+      .catch(() => ({ countries: {}, us: {}, ca: {} }));
+  }
+  geo.capitalDots = await geo._capitalDotsPromise;
+  return geo.capitalDots;
+}
+
 async function loadPack(packMeta) {
   const [res] = await Promise.all([
     fetch(`data/geography/${packMeta.id}.json`),
     loadLargestCities(),
+    loadCapitalDots(),
   ]);
   if (!res.ok) throw new Error(`Failed to load ${packMeta.id}`);
   const data = await res.json();
@@ -424,6 +438,87 @@ function playHighlightsTarget(afterAnswer = false) {
   if (!playUsesMap()) return false;
   if (geo.mode === "pin") return afterAnswer;
   return true;
+}
+
+function capitalQuizShowsDot() {
+  if (geo.pack?.overlay === "markers") return false;
+  if (isOutlineView()) return false;
+  if (quizKind() === "flags") return false;
+  if (geo.mode === "capitals") return true;
+  if (quizKind() === "capitals") {
+    return ["type", "name", "choice", "study", "pin"].includes(geo.mode);
+  }
+  if (geo.mode === "study") return true;
+  return false;
+}
+
+function capitalDotTargetId(activeId, flash = null) {
+  if (!capitalQuizShowsDot()) return "";
+  if (geo.mode === "pin" && !geo.answered) return "";
+  if (flash?.correctId) return flash.correctId;
+  return activeId || "";
+}
+
+function capitalDotRecord(item) {
+  const data = geo.capitalDots;
+  if (!data || !item?.id) return null;
+  const map = geo.pack?.map;
+  if (map === "us-states") return data.us?.[item.id] || null;
+  if (map === "canada-provinces") return data.ca?.[item.id] || null;
+  return data.countries?.[item.id] || null;
+}
+
+function capitalDotXY(host, item) {
+  const rec = capitalDotRecord(item);
+  if (!rec) return null;
+  if (Number.isFinite(rec.x) && Number.isFinite(rec.y)) {
+    return { x: rec.x, y: rec.y };
+  }
+  if (!Number.isFinite(rec.fx) || !Number.isFinite(rec.fy)) return null;
+  const el = regionsForId(host, item.id)[0];
+  if (!el || typeof el.getBBox !== "function") return null;
+  let box;
+  try {
+    box = el.getBBox();
+  } catch {
+    return null;
+  }
+  if (!box.width || !box.height) return null;
+  return {
+    x: box.x + rec.fx * box.width,
+    y: box.y + rec.fy * box.height,
+  };
+}
+
+function syncCapitalDot(host) {
+  if (!host) return;
+  host.querySelectorAll(".geo-capital-dot").forEach((n) => n.remove());
+  const id = host.dataset.geoCapitalId || "";
+  const item = id ? byId(id) : null;
+  if (!item?.capital || !capitalQuizShowsDot()) return;
+  const svg = host.querySelector("svg");
+  const pt = svg ? capitalDotXY(host, item) : null;
+  if (!pt) return;
+  const vb = svg.viewBox.baseVal;
+  const rect = svg.getBoundingClientRect();
+  const unit = vb.width / Math.max(rect.width, 1);
+  const NS = "http://www.w3.org/2000/svg";
+  const g = document.createElementNS(NS, "g");
+  g.setAttribute("class", "geo-capital-dot");
+  g.setAttribute("pointer-events", "none");
+  g.setAttribute("aria-hidden", "true");
+  const halo = document.createElementNS(NS, "circle");
+  halo.setAttribute("class", "geo-capital-dot-halo");
+  halo.setAttribute("cx", String(pt.x));
+  halo.setAttribute("cy", String(pt.y));
+  halo.setAttribute("r", String(7.2 * unit));
+  const core = document.createElementNS(NS, "circle");
+  core.setAttribute("class", "geo-capital-dot-core");
+  core.setAttribute("cx", String(pt.x));
+  core.setAttribute("cy", String(pt.y));
+  core.setAttribute("r", String(3.8 * unit));
+  g.append(halo, core);
+  svg.appendChild(g);
 }
 
 function packItemIds() {
@@ -1138,6 +1233,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     syncTinyIslandScale(host);
     spreadClosePins(host);
   }
+  host.dataset.geoCapitalId = capitalDotTargetId(activeId, flash);
   if (outline) setMapLabel(host, null);
   else if (correctId) {
     scheduleFocusPlace(host, correctId);
@@ -1154,6 +1250,10 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     setMapLabel(host, null);
     syncTinyHitPads(host);
   }
+  syncCapitalDot(host);
+  requestAnimationFrame(() => {
+    if (host.isConnected) syncCapitalDot(host);
+  });
 }
 
 function clientToSvgPoint(svg, clientX, clientY) {
@@ -1688,10 +1788,16 @@ function drawMapLabel(host) {
   if (!host) return;
   host.querySelectorAll(".geo-marker-label, .geo-focus-mark").forEach((n) => n.remove());
   const spec = geo._mapLabel;
-  if (!spec) return;
+  if (!spec) {
+    syncCapitalDot(host);
+    return;
+  }
   const svg = host.querySelector("svg");
   const anchor = regionAnchor(host, spec.id);
-  if (!svg || !anchor) return;
+  if (!svg || !anchor) {
+    syncCapitalDot(host);
+    return;
+  }
 
   const vb = svg.viewBox.baseVal;
   const rect = svg.getBoundingClientRect();
@@ -1740,9 +1846,13 @@ function drawMapLabel(host) {
   try {
     bbox = text.getBBox();
   } catch {
+    syncCapitalDot(host);
     return;
   }
-  if (!bbox.width || !bbox.height) return;
+  if (!bbox.width || !bbox.height) {
+    syncCapitalDot(host);
+    return;
+  }
   const bg = document.createElementNS(NS, "rect");
   bg.setAttribute("class", "geo-marker-label-bg");
   bg.setAttribute("x", String(bbox.x - padX));
@@ -1751,6 +1861,7 @@ function drawMapLabel(host) {
   bg.setAttribute("height", String(bbox.height + padY * 2));
   bg.setAttribute("rx", String(3.2 * unit));
   label.insertBefore(bg, text);
+  syncCapitalDot(host);
 }
 
 function zoomViewBox(src, factor, mx, my) {

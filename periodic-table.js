@@ -89,6 +89,10 @@ function spokenScript(el) {
       `${el.name}. Symbol ${el.symbol.split("").join(" ")}. Atomic number ${el.Z}.`
     )
   );
+  const family = labelFor(el.category);
+  if (family) {
+    lines.push(prepareSpokenLine(`${el.name} is in the ${family} family.`));
+  }
   if (el.discoveredBy) {
     const when = el.discoveredYear
       ? ` in ${el.discoveredYear}`
@@ -688,8 +692,8 @@ function renderDetail(slide = 0) {
     <div class="pt-detail-card pt-cat-${escapeHtml(el.category)}${slideClass}">
       <div class="pt-detail-head">
         <div class="pt-detail-symbol" aria-hidden="true">${escapeHtml(el.symbol)}</div>
-        <div>
-          <p class="pt-detail-kicker">${escapeHtml(labelFor(el.category))} · Period ${el.period}${
+        <div class="pt-detail-titles">
+          <p class="pt-detail-kicker">Period ${el.period}${
             el.group ? ` · Group ${el.group}` : ""
           }</p>
           <h3>${escapeHtml(el.name)}</h3>
@@ -698,6 +702,7 @@ function renderDetail(slide = 0) {
         </div>
       </div>
       <dl class="pt-dl">
+        <div><dt>Family</dt><dd>${escapeHtml(labelFor(el.category))}</dd></div>
         <div><dt>Discovered</dt><dd>${escapeHtml(el.discoveredBy || "—")}${
           el.discoveredYear ? ` (${year})` : ""
         }</dd></div>
