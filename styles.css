@@ -3565,8 +3565,8 @@ a.ce-tab {
 
 .geo-map-reset {
   position: absolute;
-  top: 0.5rem;
   right: 0.5rem;
+  bottom: 0.5rem;
   z-index: 6;
   display: none;
   align-items: center;
@@ -4614,10 +4614,6 @@ a.ce-tab {
     border-radius: 999px;
     background: #fff;
     box-shadow: var(--shadow);
-  }
-
-  .geo-play--map .geo-map-reset {
-    top: 3.25rem;
   }
 
   .geo-play .geo-toolbar .secondary-btn {
