@@ -4496,6 +4496,102 @@ a.ce-tab {
     height: 1.15rem;
   }
 
+  .quiz-shell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .quiz-progress {
+    margin-bottom: 0;
+    gap: 0.35rem 0.7rem;
+    font-size: 0.68rem;
+  }
+
+  .quiz-prompt {
+    margin: 0;
+    font-size: 1.08rem;
+    line-height: 1.3;
+  }
+
+  .quiz-prompt--dossier {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .quiz-flag-row {
+    margin-top: 0;
+  }
+
+  .quiz-answer-dock {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .quiz-shell.is-answered .choice-list,
+  .quiz-shell.is-answered .quiz-flag-row {
+    display: none;
+  }
+
+  .quiz-shell .quiz-feedback {
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    background: none;
+  }
+
+  .quiz-shell .quiz-feedback .feedback-banner {
+    margin-bottom: 0.45rem;
+    padding: 0.55rem 0.7rem;
+  }
+
+  .quiz-shell .quiz-feedback .feedback-ask {
+    margin: 0 0 0.45rem;
+    font-size: 0.88rem;
+  }
+
+  .quiz-shell .choice-list,
+  .geo-play:not(.geo-play--map):not(.geo-play--flags) .choice-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+    flex: 0 0 auto;
+  }
+
+  .quiz-shell .choice-btn,
+  .geo-play:not(.geo-play--map):not(.geo-play--flags) .choice-btn {
+    min-height: 2.7rem;
+    padding: 0.45rem 0.55rem;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  .quiz-shell .choice-letter,
+  .geo-play:not(.geo-play--map):not(.geo-play--flags) .choice-letter {
+    width: 1.35rem;
+    height: 1.35rem;
+    font-size: 0.72rem;
+  }
+
+  .quiz-shell .choice-text,
+  .geo-play:not(.geo-play--map):not(.geo-play--flags) .choice-text {
+    padding-top: 0;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+
+  .geo-play:not(.geo-play--map):not(.geo-play--flags) .geo-quiz-panel,
+  .geo-play:not(.geo-play--map):not(.geo-play--flags) .geo-quiz-actions {
+    padding: 0.55rem 0.7rem;
+  }
+
+  .geo-play:not(.geo-play--map):not(.geo-play--flags) .geo-prompt {
+    margin: 0;
+    font-size: 1.08rem;
+    line-height: 1.3;
+  }
+
   .geo-play .geo-toolbar {
     gap: 0.3rem 0.5rem;
     margin-bottom: 0.3rem;
@@ -5099,7 +5195,7 @@ a.ce-tab {
   }
 
   .choice-btn {
-    min-height: 2.85rem;
+    min-height: 2.7rem;
   }
 }
 

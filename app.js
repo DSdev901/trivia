@@ -1537,6 +1537,7 @@ function renderQuizQuestion() {
       <p class="quiz-prompt${dossier ? " quiz-prompt--dossier" : ""}">${escapeHtml(
         question.prompt
       ).replace(/\n/g, "<br />")}</p>
+      <div class="quiz-answer-dock">
       <div class="choice-list" id="choice-list">
         ${question.choices
           .map(
@@ -1558,6 +1559,7 @@ function renderQuizQuestion() {
           : ""
       }
       <div id="quiz-feedback" class="quiz-feedback" hidden></div>
+      </div>
     </div>
   `;
 
@@ -1591,6 +1593,7 @@ function onAnswer(choice) {
   state.lastResult = result;
 
   const { question, isCorrect } = result;
+  els.quiz.querySelector(".quiz-shell")?.classList.add("is-answered");
   const list = document.getElementById("choice-list");
   list.querySelectorAll(".choice-btn").forEach((btn) => {
     btn.disabled = true;
