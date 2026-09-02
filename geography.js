@@ -1537,8 +1537,13 @@ function viewIsHome(svg) {
   );
 }
 
+function mapResetButton(host) {
+  const stage = host?.closest(".geo-map-stage") || host?.parentElement;
+  return stage?.querySelector(".geo-map-reset") || host?.querySelector(".geo-map-reset");
+}
+
 function syncMapReset(host = geo.root?.querySelector("#geo-map")) {
-  const btn = host?.querySelector(".geo-map-reset");
+  const btn = mapResetButton(host);
   const svg = host?.querySelector("svg");
   if (!btn || !svg) return;
   btn.hidden = viewIsHome(svg);
@@ -1934,20 +1939,6 @@ function bindMapControls(host) {
   host.dataset.navBound = "1";
   ensureBaseViewBox(svg);
   const nav = ensureNavLayer(host);
-  const resetBtn = host.querySelector(".geo-map-reset");
-  resetBtn?.addEventListener("pointerdown", (e) => {
-    e.stopPropagation();
-  });
-  resetBtn?.addEventListener("click", (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    stopFocusZoom();
-    resetMapViewBox();
-    syncTinyIslandScale(host);
-    drawMapLabel(host);
-    syncTinyHitPads(host);
-    syncMapReset(host);
-  });
 
   const PAN_SLOP = 10;
   const contacts = new Map();
@@ -1960,6 +1951,28 @@ function bindMapControls(host) {
   let navRaf = 0;
   let finishTimer = 0;
   let lastTouchAt = 0;
+
+  const applyMapReset = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (typeof e.stopImmediatePropagation === "function") e.stopImmediatePropagation();
+    moved = false;
+    stopFocusZoom();
+    resetMapViewBox();
+    syncTinyIslandScale(host);
+    drawMapLabel(host);
+    syncTinyHitPads(host);
+    syncMapReset(host);
+  };
+  const resetBtn = mapResetButton(host);
+  resetBtn?.addEventListener("pointerdown", (e) => {
+    e.stopPropagation();
+    if (typeof e.stopImmediatePropagation === "function") e.stopImmediatePropagation();
+    moved = false;
+  });
+  resetBtn?.addEventListener("pointerup", applyMapReset);
+  resetBtn?.addEventListener("touchend", applyMapReset, { passive: false });
+  resetBtn?.addEventListener("click", applyMapReset);
 
   const readVb = () => {
     const raw = (svg.getAttribute("viewBox") || geo._baseViewBox).split(/\s+/).map(Number);
@@ -2285,6 +2298,7 @@ function bindMapControls(host) {
   host.addEventListener(
     "click",
     (e) => {
+      if (e.target?.closest?.(".geo-map-reset")) return;
       if (!moved) return;
       e.preventDefault();
       e.stopPropagation();
@@ -2298,9 +2312,11 @@ function mapHtml() {
   const coarse = window.matchMedia("(pointer: coarse)").matches;
   const zoomHint = coarse ? "pinch to zoom" : "pinch or scroll to zoom";
   const pinHint = geo.mode === "pin" ? " · tap a place to answer" : "";
-  return `<div class="geo-map-frame is-zoomable" id="geo-map">${geo.mapSvg}
+  return `<div class="geo-map-stage">
+    <div class="geo-map-frame is-zoomable" id="geo-map">${geo.mapSvg}
     <div class="geo-map-nav" aria-hidden="true"></div>
     <p class="geo-map-hint">Drag to pan · ${zoomHint}${pinHint}</p>
+    </div>
     <button type="button" class="geo-map-reset" hidden aria-label="Reset map" title="Reset map">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <path fill="currentColor" d="M15 3h6v6h-2V6.4l-3.8 3.8-1.4-1.4L17.6 5H15V3zM3 9V3h6v2H6.4l3.8 3.8-1.4 1.4L5 6.4V9H3zm6 12H3v-6h2v2.6l3.8-3.8 1.4 1.4L6.4 19H9v2zm12-6v6h-6v-2h2.6l-3.8-3.8 1.4-1.4 3.8 3.8V15h2z"/>

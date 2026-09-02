@@ -3487,8 +3487,15 @@ a.ce-tab {
 }
 
 .geo-map-wrap,
-.geo-map-frame {
+.geo-map-frame,
+.geo-map-stage {
   width: 100%;
+}
+
+.geo-map-stage {
+  position: relative;
+  display: flex;
+  min-height: 0;
 }
 
 .geo-map-frame {
@@ -3560,7 +3567,7 @@ a.ce-tab {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  z-index: 4;
+  z-index: 6;
   display: none;
   align-items: center;
   justify-content: center;
@@ -3576,6 +3583,9 @@ a.ce-tab {
   cursor: pointer;
   pointer-events: auto;
   touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .geo-map-reset:not([hidden]) {
@@ -4567,11 +4577,7 @@ a.ce-tab {
   }
 
   .geo-play--map .geo-chrome-main {
-    min-height: 0;
-  }
-
-  .geo-play--map.is-answered .geo-prompt-copy {
-    display: none;
+    min-height: 5.75rem;
   }
 
   .geo-play--map .geo-chrome-end {
@@ -4696,6 +4702,12 @@ a.ce-tab {
   .geo-play--map .geo-map-wrap {
     flex: 1 1 0;
     min-height: 12rem;
+    display: flex;
+  }
+
+  .geo-play--map .geo-map-stage {
+    flex: 1 1 0;
+    min-height: 0;
     display: flex;
   }
 
