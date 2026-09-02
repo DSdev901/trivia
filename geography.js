@@ -531,6 +531,7 @@ function resetMapViewBox() {
   const vb = geo._packViewBox || geo._baseViewBox;
   if (vb) svg.setAttribute("viewBox", vb);
   geo._panLimit = vb || geo._panLimit;
+  syncMapReset();
 }
 
 function viewBoxParts(raw) {
@@ -1251,8 +1252,12 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     syncTinyHitPads(host);
   }
   syncCapitalDot(host);
+  syncMapReset(host);
   requestAnimationFrame(() => {
-    if (host.isConnected) syncCapitalDot(host);
+    if (host.isConnected) {
+      syncCapitalDot(host);
+      syncMapReset(host);
+    }
   });
 }
 
@@ -1326,6 +1331,8 @@ function mapTargetId(e) {
     if (
       node.classList?.contains("geo-map-nav") ||
       node.classList?.contains("geo-map-hint") ||
+      node.classList?.contains("geo-map-reset") ||
+      node.closest?.(".geo-map-reset") ||
       node.id === "geo-map"
     ) {
       continue;
@@ -1438,8 +1445,8 @@ function placeInViewBox(vb, anchor, edge = 0.1) {
 }
 
 const FOCUS_SEE_PX = 16;
-const FOCUS_TARGET_PX = 28;
-const FOCUS_MAX_SCALE = 7;
+const FOCUS_TARGET_PX = 28 * (2 / 3);
+const FOCUS_MAX_SCALE = 7 * (2 / 3);
 
 function maybeFocusTinyPlace(host, id) {
   const svg = host.querySelector("svg");
@@ -1516,6 +1523,27 @@ function viewBoxClose(a, b) {
   );
 }
 
+function viewIsHome(svg) {
+  const home = geo._packViewBox || geo._baseViewBox;
+  if (!home || !svg) return true;
+  const a = viewBoxParts(svg.getAttribute("viewBox"));
+  const b = viewBoxParts(home);
+  const span = Math.max(b.w, b.h, 1);
+  return (
+    Math.abs(a.w - b.w) / span < 0.03 &&
+    Math.abs(a.h - b.h) / span < 0.03 &&
+    Math.abs(a.x - b.x) / span < 0.03 &&
+    Math.abs(a.y - b.y) / span < 0.03
+  );
+}
+
+function syncMapReset(host = geo.root?.querySelector("#geo-map")) {
+  const btn = host?.querySelector(".geo-map-reset");
+  const svg = host?.querySelector("svg");
+  if (!btn || !svg) return;
+  btn.hidden = viewIsHome(svg);
+}
+
 const FOCUS_ZOOM_MS = 800;
 
 function animateFocusView(host, svg, from, to, focus = null) {
@@ -1523,6 +1551,7 @@ function animateFocusView(host, svg, from, to, focus = null) {
   if (viewBoxClose(from, to)) {
     svg.setAttribute("viewBox", `${to.x} ${to.y} ${to.w} ${to.h}`);
     syncTinyIslandScale(host);
+    syncMapReset(host);
     return;
   }
   const pt = focus || { x: to.x + to.w / 2, y: to.y + to.h / 2 };
@@ -1555,6 +1584,7 @@ function animateFocusView(host, svg, from, to, focus = null) {
     svg.setAttribute("viewBox", `${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
     syncTinyIslandScale(host);
     drawMapLabel(host);
+    syncMapReset(host);
     if (t < 1) {
       geo._zoomAnim = requestAnimationFrame(step);
       return;
@@ -1564,6 +1594,7 @@ function animateFocusView(host, svg, from, to, focus = null) {
     syncTinyIslandScale(host);
     drawMapLabel(host);
     syncTinyHitPads(host);
+    syncMapReset(host);
   };
   geo._zoomAnim = requestAnimationFrame(step);
 }
@@ -1903,6 +1934,20 @@ function bindMapControls(host) {
   host.dataset.navBound = "1";
   ensureBaseViewBox(svg);
   const nav = ensureNavLayer(host);
+  const resetBtn = host.querySelector(".geo-map-reset");
+  resetBtn?.addEventListener("pointerdown", (e) => {
+    e.stopPropagation();
+  });
+  resetBtn?.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    stopFocusZoom();
+    resetMapViewBox();
+    syncTinyIslandScale(host);
+    drawMapLabel(host);
+    syncTinyHitPads(host);
+    syncMapReset(host);
+  });
 
   const PAN_SLOP = 10;
   const contacts = new Map();
@@ -1924,6 +1969,7 @@ function bindMapControls(host) {
     stopFocusZoom();
     const next = clampViewBox(vb);
     svg.setAttribute("viewBox", `${next.x} ${next.y} ${next.w} ${next.h}`);
+    syncMapReset(host);
     if (live) return;
     syncTinyIslandScale(host);
     drawMapLabel(host);
@@ -2255,6 +2301,11 @@ function mapHtml() {
   return `<div class="geo-map-frame is-zoomable" id="geo-map">${geo.mapSvg}
     <div class="geo-map-nav" aria-hidden="true"></div>
     <p class="geo-map-hint">Drag to pan · ${zoomHint}${pinHint}</p>
+    <button type="button" class="geo-map-reset" hidden aria-label="Reset map" title="Reset map">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M15 3h6v6h-2V6.4l-3.8 3.8-1.4-1.4L17.6 5H15V3zM3 9V3h6v2H6.4l3.8 3.8-1.4 1.4L5 6.4V9H3zm6 12H3v-6h2v2.6l3.8-3.8 1.4 1.4L6.4 19H9v2zm12-6v6h-6v-2h2.6l-3.8-3.8 1.4-1.4 3.8 3.8V15h2z"/>
+      </svg>
+    </button>
   </div>`;
 }
 
@@ -3039,6 +3090,8 @@ function renderPlay() {
   }
 
   const flagsPlay = quizKind() === "flags";
+  const choiceOnMap =
+    showMap && Boolean(controls) && geo.mode !== "type" && geo.mode !== "outline";
   const playClass = [
     "geo-shell",
     "geo-play",
@@ -3047,6 +3100,7 @@ function renderPlay() {
     flagsPlay ? "geo-play--flags" : "",
     geo.mode === "pin" ? "geo-play--pin" : "",
     geo.mode === "type" || geo.mode === "outline" ? "geo-play--type" : "",
+    choiceOnMap ? "geo-play--choice" : "",
   ]
     .filter(Boolean)
     .join(" ");
@@ -3073,7 +3127,7 @@ function renderPlay() {
            ${feedbackHtml}
          </div>
          <div class="geo-chrome-end">
-           ${nextHtml}
+           ${choiceOnMap ? "" : nextHtml}
            ${closeHtml}
          </div>
        </div>`
@@ -3082,6 +3136,7 @@ function renderPlay() {
     ? `<div class="geo-answer-bar">
           <div class="geo-answer-cluster">
             ${actionsHtml}
+            ${choiceOnMap ? nextHtml : ""}
           </div>
         </div>`
     : flagsPlay
