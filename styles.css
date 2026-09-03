@@ -3702,6 +3702,10 @@ a.ce-tab {
   stroke-width: 2.5;
 }
 
+.geo-map-frame:not(.is-water-pack) .geo-river-border-g {
+  display: none;
+}
+
 .geo-border-overlay {
   pointer-events: none;
 }

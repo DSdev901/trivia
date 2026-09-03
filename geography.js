@@ -522,10 +522,7 @@ function applyWaterItemFilters() {
     geo._packViewBox = null;
     geo._panLimit = null;
     const host = geo.root?.querySelector("#geo-map");
-    if (host) {
-      delete host.dataset.geoFitted;
-      delete host.dataset.geoFittedPin;
-    }
+    if (host) delete host.dataset.geoFitted;
   }
 }
 
@@ -568,7 +565,7 @@ function playUsesMap() {
 
 function playHighlightsTarget(afterAnswer = false) {
   if (!playUsesMap()) return false;
-  if (geo.mode === "pin") return true;
+  if (geo.mode === "pin") return afterAnswer;
   return true;
 }
 
@@ -1316,6 +1313,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
   const wrongId = flash?.wrongId ?? (flash && flash.ok === false ? flash.id : null);
   host.classList.toggle("is-outline-mode", Boolean(outline));
   host.classList.toggle("is-feature-map", geo.pack?.overlay === "markers");
+  host.classList.toggle("is-water-pack", isWaterPack());
   const inPack = packItemIds();
   const scopePack = inPack.size > 0 && Boolean(geo.mapSvg) && !outline;
   host.classList.toggle("is-region-scope", scopePack);
@@ -1336,12 +1334,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     el.classList.toggle("is-hidden-outline", false);
     const out = scopePack && !inPack.has(id);
     el.classList.toggle("is-out", out);
-    // In pin mode, we still pass `activeId` so the camera can focus,
-    // but we intentionally avoid revealing the target with an "active" highlight.
-    el.classList.toggle(
-      "is-active",
-      !out && id === activeId && !correctId && !wrongId && geo.mode !== "pin"
-    );
+    el.classList.toggle("is-active", !out && id === activeId && !correctId && !wrongId);
     el.classList.toggle(
       "is-dim",
       !out && dimOthers && id !== activeId && id !== correctId && id !== wrongId
@@ -1356,22 +1349,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
       host.dataset.geoOutlineId = activeId;
     }
   } else if (scopePack) {
-    const pinPreAnswer = geo.mode === "pin" && !correctId && !wrongId;
-    if (pinPreAnswer) {
-      const pinKey = activeId || "__none__";
-      if (host.dataset.geoFittedPin !== pinKey) {
-        fitMapToIds([activeId], {
-          padRatio: packFitPadRatio(),
-          // We want the camera viewBox to update every question.
-          storeAsPack: true,
-          panIds: panIdsForPack(host, inPack),
-        });
-        if (geo._packViewBox) {
-          host.querySelector("svg")?.setAttribute("viewBox", geo._packViewBox);
-        }
-        host.dataset.geoFittedPin = pinKey;
-      }
-    } else if (geo.mode !== "pin" && host.dataset.geoFitted !== "1") {
+    if (host.dataset.geoFitted !== "1") {
       const packIds = [...inPack];
       fitMapToIds(packIds, {
         padRatio: packFitPadRatio(),
@@ -1409,9 +1387,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     syncTinyHitPads(host);
   }
   syncCapitalDot(host);
-  const borderId =
-    geo.mode === "pin" && !correctId && !wrongId ? null : activeId || correctId;
-  paintBorderRivers(host, borderId);
+  paintBorderRivers(host, activeId || correctId);
   syncMapReset(host);
   requestAnimationFrame(() => {
     if (host.isConnected) {
