@@ -2818,6 +2818,14 @@ function packHref(pack = geo.pack, group = geo.group) {
   return gid ? href(["geography", gid, pack.id]) : href(["geography", pack.id]);
 }
 
+function playCloseHtml() {
+  return `<a class="geo-play-close" href="${packHref()}" aria-label="Close">
+         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+           <path fill="currentColor" d="M6.7 6.7a1 1 0 0 1 1.4 0L12 10.6l3.9-3.9a1 1 0 1 1 1.4 1.4L13.4 12l3.9 3.9a1 1 0 1 1-1.4 1.4L12 13.4l-3.9 3.9a1 1 0 1 1-1.4-1.4L10.6 12 6.7 8.1a1 1 0 0 1 0-1.4Z"/>
+         </svg>
+       </a>`;
+}
+
 function modeHref(mode, pack = geo.pack, group = geo.group) {
   if (!pack) return groupHref();
   const gid = group?.id || groupForPack(pack.id)?.id;
@@ -2998,7 +3006,7 @@ function renderStudy() {
     }">
       ${geoCrumbs("Study")}
       <div class="geo-play-layout ${geo.mapSvg ? "" : "no-map"}">
-        ${geo.mapSvg ? `<div class="geo-map-wrap">${mapHtml()}</div>` : ""}
+        ${geo.mapSvg ? `<div class="geo-map-wrap">${mapHtml()}${playCloseHtml()}</div>` : playCloseHtml()}
         <aside class="geo-side">
           <div class="geo-detail" id="geo-detail">
             ${studyDetailHtml(item)}
@@ -3130,13 +3138,7 @@ function renderPlay() {
     .filter(Boolean)
     .join(" ");
 
-  const closeHtml = showMap
-    ? `<a class="geo-play-close" href="${packHref()}" aria-label="Close">
-         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-           <path fill="currentColor" d="M6.7 6.7a1 1 0 0 1 1.4 0L12 10.6l3.9-3.9a1 1 0 1 1 1.4 1.4L13.4 12l3.9 3.9a1 1 0 1 1-1.4 1.4L12 13.4l-3.9 3.9a1 1 0 1 1-1.4-1.4L10.6 12 6.7 8.1a1 1 0 0 1 0-1.4Z"/>
-         </svg>
-       </a>`
-    : "";
+  const closeHtml = showMap ? playCloseHtml() : "";
   const actionsHtml = controls
     ? `<div class="geo-quiz-actions">${controls}</div>`
     : "";
