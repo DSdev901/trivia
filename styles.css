@@ -4395,8 +4395,7 @@ a.ce-tab {
 }
 
 .geo-play--study .geo-map-frame {
-  touch-action: pan-y;
-  cursor: default;
+  touch-action: none;
 }
 
 body:has(.view:not([hidden]) .geo-play--study) .top {
@@ -5256,7 +5255,7 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
   }
 
   .geo-play--study .geo-map-frame {
-    height: min(44dvh, 400px);
+    height: min(58dvh, 520px);
     border-radius: 0;
     border-left: none;
     border-right: none;
@@ -5265,13 +5264,10 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
 
   .geo-play--study .geo-map-frame svg {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: auto;
+    inset: 0;
+    width: 100%;
     height: 100%;
     max-height: none;
-    min-width: 100%;
-    transform: translate(-50%, -50%);
   }
 
   .geo-play--study .geo-side {
