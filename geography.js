@@ -2311,26 +2311,23 @@ function bindMapControls(host) {
 
 function mapHtml() {
   if (!geo.mapSvg) return "";
-  const study = geo.mode === "study";
   const coarse = window.matchMedia("(pointer: coarse)").matches;
   const zoomHint = coarse ? "pinch to zoom" : "pinch or scroll to zoom";
   const pinHint = geo.mode === "pin" ? " · tap a place to answer" : "";
-  const nav = study
-    ? ""
-    : `<div class="geo-map-nav" aria-hidden="true"></div>
-    <p class="geo-map-hint">Drag to pan · ${zoomHint}${pinHint}</p>`;
-  const reset = study
-    ? ""
-    : `<button type="button" class="geo-map-reset" hidden aria-label="Reset map" title="Reset map">
+  const hint =
+    geo.mode === "study"
+      ? ""
+      : `<p class="geo-map-hint">Drag to pan · ${zoomHint}${pinHint}</p>`;
+  return `<div class="geo-map-stage">
+    <div class="geo-map-frame is-zoomable" id="geo-map">${geo.mapSvg}
+    <div class="geo-map-nav" aria-hidden="true"></div>
+    ${hint}
+    </div>
+    <button type="button" class="geo-map-reset" hidden aria-label="Reset map" title="Reset map">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <path fill="currentColor" d="M15 3h6v6h-2V6.4l-3.8 3.8-1.4-1.4L17.6 5H15V3zM3 9V3h6v2H6.4l3.8 3.8-1.4 1.4L5 6.4V9H3zm6 12H3v-6h2v2.6l3.8-3.8 1.4 1.4L6.4 19H9v2zm12-6v6h-6v-2h2.6l-3.8-3.8 1.4-1.4 3.8 3.8V15h2z"/>
       </svg>
-    </button>`;
-  return `<div class="geo-map-stage">
-    <div class="geo-map-frame${study ? "" : " is-zoomable"}" id="geo-map">${geo.mapSvg}
-    ${nav}
-    </div>
-    ${reset}
+    </button>
   </div>`;
 }
 
@@ -2818,6 +2815,14 @@ function packHref(pack = geo.pack, group = geo.group) {
   return gid ? href(["geography", gid, pack.id]) : href(["geography", pack.id]);
 }
 
+function playCloseHtml() {
+  return `<a class="geo-play-close" href="${packHref()}" aria-label="Close">
+         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+           <path fill="currentColor" d="M6.7 6.7a1 1 0 0 1 1.4 0L12 10.6l3.9-3.9a1 1 0 1 1 1.4 1.4L13.4 12l3.9 3.9a1 1 0 1 1-1.4 1.4L12 13.4l-3.9 3.9a1 1 0 1 1-1.4-1.4L10.6 12 6.7 8.1a1 1 0 0 1 0-1.4Z"/>
+         </svg>
+       </a>`;
+}
+
 function modeHref(mode, pack = geo.pack, group = geo.group) {
   if (!pack) return groupHref();
   const gid = group?.id || groupForPack(pack.id)?.id;
@@ -2998,7 +3003,7 @@ function renderStudy() {
     }">
       ${geoCrumbs("Study")}
       <div class="geo-play-layout ${geo.mapSvg ? "" : "no-map"}">
-        ${geo.mapSvg ? `<div class="geo-map-wrap">${mapHtml()}</div>` : ""}
+        ${geo.mapSvg ? `<div class="geo-map-wrap">${mapHtml()}${playCloseHtml()}</div>` : playCloseHtml()}
         <aside class="geo-side">
           <div class="geo-detail" id="geo-detail">
             ${studyDetailHtml(item)}
@@ -3026,6 +3031,9 @@ function renderStudy() {
     </div>`;
 
   paintMap(geo.selectedId);
+  const map = geo.root.querySelector("#geo-map");
+  map?.querySelector("svg")?.setAttribute("preserveAspectRatio", "xMidYMid slice");
+  bindMapControls(map);
   bindStudy();
 }
 
@@ -3130,13 +3138,7 @@ function renderPlay() {
     .filter(Boolean)
     .join(" ");
 
-  const closeHtml = showMap
-    ? `<a class="geo-play-close" href="${packHref()}" aria-label="Close">
-         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-           <path fill="currentColor" d="M6.7 6.7a1 1 0 0 1 1.4 0L12 10.6l3.9-3.9a1 1 0 1 1 1.4 1.4L13.4 12l3.9 3.9a1 1 0 1 1-1.4 1.4L12 13.4l-3.9 3.9a1 1 0 1 1-1.4-1.4L10.6 12 6.7 8.1a1 1 0 0 1 0-1.4Z"/>
-         </svg>
-       </a>`
-    : "";
+  const closeHtml = showMap ? playCloseHtml() : "";
   const actionsHtml = controls
     ? `<div class="geo-quiz-actions">${controls}</div>`
     : "";
