@@ -1,0 +1,293 @@
+{
+  "id": "eastern-europe-waterways",
+  "name": "Eastern Europe: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "volga",
+      "name": "Volga",
+      "fact": "Europe’s longest river.",
+      "kind": "water",
+      "lat": 56,
+      "lon": 47,
+      "x": 608.4,
+      "y": 79.8,
+      "facts": [
+        "Europe’s longest river.",
+        "Empties into the Caspian Sea."
+      ],
+      "waterway": "Volga",
+      "country": "Russia"
+    },
+    {
+      "id": "danube",
+      "name": "Danube",
+      "fact": "Europe’s second-longest river.",
+      "kind": "water",
+      "lat": 45.2,
+      "lon": 19.5,
+      "x": 548,
+      "y": 112.7,
+      "facts": [
+        "Europe’s second-longest river.",
+        "Passes four European capitals.",
+        "Forms stretches of several national borders, including Romania–Bulgaria."
+      ],
+      "border": true,
+      "waterway": "Danube",
+      "country": "Serbia"
+    },
+    {
+      "id": "dnipro",
+      "name": "Dnipro",
+      "fact": "Major river of Ukraine.",
+      "kind": "water",
+      "lat": 49,
+      "lon": 32.5,
+      "x": 578.3,
+      "y": 100.9,
+      "facts": [
+        "Major river of Ukraine.",
+        "The Dnieper, flowing to the Black Sea."
+      ],
+      "waterway": "Dnipro",
+      "country": "Ukraine"
+    },
+    {
+      "id": "vistula",
+      "name": "Vistula",
+      "fact": "Poland’s longest river.",
+      "kind": "water",
+      "lat": 52.2,
+      "lon": 21,
+      "x": 549.6,
+      "y": 91.1,
+      "facts": [
+        "Poland’s longest river.",
+        "Flows through Warsaw to the Baltic."
+      ],
+      "waterway": "Vistula",
+      "country": "Poland"
+    },
+    {
+      "id": "oder",
+      "name": "Oder",
+      "fact": "Border river of Poland and Germany.",
+      "kind": "water",
+      "lat": 52.5,
+      "lon": 14.6,
+      "x": 534.5,
+      "y": 90.2,
+      "facts": [
+        "Border river of Poland and Germany.",
+        "With the Neisse, a major Central European frontier."
+      ],
+      "border": true,
+      "waterway": "Oder",
+      "country": "Germany"
+    },
+    {
+      "id": "don",
+      "name": "Don",
+      "fact": "River of southern Russia.",
+      "kind": "water",
+      "lat": 47.5,
+      "lon": 40.5,
+      "x": 598.4,
+      "y": 105.5,
+      "facts": [
+        "River of southern Russia.",
+        "Empties into the Sea of Azov."
+      ],
+      "waterway": "Don",
+      "country": "Russia"
+    },
+    {
+      "id": "dniester",
+      "name": "Dniester",
+      "fact": "River of Ukraine and Moldova.",
+      "kind": "water",
+      "lat": 47.5,
+      "lon": 29,
+      "x": 570.5,
+      "y": 105.5,
+      "facts": [
+        "River of Ukraine and Moldova.",
+        "Forms stretches of the Moldova–Ukraine border."
+      ],
+      "waterway": "Dniester",
+      "country": "Moldova"
+    },
+    {
+      "id": "balaton",
+      "name": "Lake Balaton",
+      "fact": "Largest lake in Central Europe.",
+      "kind": "water",
+      "lat": 46.8,
+      "lon": 17.7,
+      "x": 543.2,
+      "y": 107.7,
+      "facts": [
+        "Largest lake in Central Europe.",
+        "Hungary’s “inland sea.”"
+      ],
+      "country": "Hungary"
+    },
+    {
+      "id": "peipus",
+      "name": "Lake Peipus",
+      "fact": "Largest transboundary lake in Europe.",
+      "kind": "water",
+      "lat": 58.7,
+      "lon": 27.5,
+      "x": 562.2,
+      "y": 71.8,
+      "facts": [
+        "Largest transboundary lake in Europe.",
+        "Shared by Estonia and Russia."
+      ],
+      "country": "Russia"
+    },
+    {
+      "id": "onega",
+      "name": "Lake Onega",
+      "fact": "Second-largest lake in Europe.",
+      "kind": "water",
+      "lat": 61.7,
+      "lon": 35.5,
+      "x": 578.5,
+      "y": 63.2,
+      "facts": [
+        "Second-largest lake in Europe.",
+        "In northwestern Russia, east of Ladoga."
+      ],
+      "country": "Russia"
+    },
+    {
+      "id": "sniardwy",
+      "name": "Śniardwy",
+      "fact": "Largest lake in Poland.",
+      "kind": "water",
+      "lat": 53.75,
+      "lon": 21.75,
+      "x": 550.9,
+      "y": 86.5,
+      "facts": [
+        "Largest lake in Poland.",
+        "In the Masurian Lake District."
+      ],
+      "country": "Poland"
+    },
+    {
+      "id": "neusiedl",
+      "name": "Lake Neusiedl",
+      "fact": "A shallow steppe lake on the Austria–Hungary border.",
+      "kind": "water",
+      "lat": 47.8,
+      "lon": 16.75,
+      "x": 540.6,
+      "y": 104.6,
+      "facts": [
+        "A shallow steppe lake on the Austria–Hungary border.",
+        "Central Europe’s westernmost steppe lake."
+      ],
+      "country": "Austria"
+    },
+    {
+      "id": "baltic",
+      "name": "Baltic Sea",
+      "fact": "Sea of Poland, the Baltics, and Russia’s northwest.",
+      "kind": "water",
+      "lat": 56,
+      "lon": 19,
+      "x": 543.8,
+      "y": 79.8,
+      "facts": [
+        "Sea of Poland, the Baltics, and Russia’s northwest."
+      ]
+    },
+    {
+      "id": "black-sea",
+      "name": "Black Sea",
+      "fact": "Sea of Ukraine, Romania, Bulgaria, and Russia’s south.",
+      "kind": "water",
+      "lat": 43.3,
+      "lon": 34,
+      "x": 584.5,
+      "y": 118.6,
+      "facts": [
+        "Sea of Ukraine, Romania, Bulgaria, and Russia’s south."
+      ]
+    },
+    {
+      "id": "bosporus",
+      "name": "Bosporus",
+      "fact": "The Black Sea’s outlet at Istanbul.",
+      "kind": "water",
+      "lat": 41.12,
+      "lon": 29.07,
+      "x": 573,
+      "y": 125.5,
+      "facts": [
+        "The Black Sea’s outlet at Istanbul."
+      ],
+      "country": "Türkiye"
+    },
+    {
+      "id": "dardanelles",
+      "name": "Dardanelles",
+      "fact": "The Aegean’s gate to the Sea of Marmara.",
+      "kind": "water",
+      "lat": 40.22,
+      "lon": 26.42,
+      "x": 566.6,
+      "y": 128.3,
+      "facts": [
+        "The Aegean’s gate to the Sea of Marmara."
+      ],
+      "country": "Türkiye"
+    },
+    {
+      "id": "gulf-finland",
+      "name": "Gulf of Finland",
+      "fact": "Toward St. Petersburg.",
+      "kind": "water",
+      "lat": 59.8,
+      "lon": 26,
+      "x": 558.3,
+      "y": 68.6,
+      "facts": [
+        "Toward St. Petersburg."
+      ]
+    },
+    {
+      "id": "white-sea",
+      "name": "White Sea",
+      "fact": "Inlet of the Arctic on Russia’s northwest.",
+      "kind": "water",
+      "lat": 65.5,
+      "lon": 37,
+      "x": 579.3,
+      "y": 52.5,
+      "facts": [
+        "Inlet of the Arctic on Russia’s northwest."
+      ]
+    },
+    {
+      "id": "sea-azov",
+      "name": "Sea of Azov",
+      "fact": "Shallow sea north of the Black Sea.",
+      "kind": "water",
+      "lat": 46,
+      "lon": 36.5,
+      "x": 589.4,
+      "y": 110.2,
+      "facts": [
+        "Shallow sea north of the Black Sea.",
+        "Entered through the Kerch Strait."
+      ]
+    }
+  ]
+}

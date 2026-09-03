@@ -1,0 +1,255 @@
+{
+  "id": "northern-africa-waterways",
+  "name": "Northern Africa: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "nile",
+      "name": "Nile",
+      "fact": "Often cited as the world’s longest river.",
+      "kind": "water",
+      "lat": 26,
+      "lon": 32.5,
+      "x": 586,
+      "y": 173.6,
+      "facts": [
+        "Often cited as the world’s longest river.",
+        "Flows north through 11 countries.",
+        "Empties into the Mediterranean."
+      ],
+      "waterway": "Nile",
+      "country": "Egypt"
+    },
+    {
+      "id": "senegal-r",
+      "name": "Senegal River",
+      "fact": "Forms most of the Senegal–Mauritania border.",
+      "kind": "water",
+      "lat": 16.5,
+      "lon": -14.5,
+      "x": 460.8,
+      "y": 203.8,
+      "facts": [
+        "Forms most of the Senegal–Mauritania border.",
+        "Empties into the Atlantic at Saint-Louis."
+      ],
+      "border": true,
+      "waterway": "Sénégal",
+      "country": "Senegal"
+    },
+    {
+      "id": "nile-blue",
+      "name": "Blue Nile",
+      "fact": "The Nile’s chief floodwater source.",
+      "kind": "water",
+      "lat": 11.6,
+      "lon": 37.4,
+      "x": 601.6,
+      "y": 219.3,
+      "facts": [
+        "The Nile’s chief floodwater source.",
+        "Rises at Lake Tana in Ethiopia."
+      ],
+      "country": "Ethiopia"
+    },
+    {
+      "id": "nile-white",
+      "name": "White Nile",
+      "fact": "The longer Nile headstream.",
+      "kind": "water",
+      "lat": 9.5,
+      "lon": 31.5,
+      "x": 585.8,
+      "y": 226,
+      "facts": [
+        "The longer Nile headstream.",
+        "Flows from the Great Lakes through South Sudan."
+      ],
+      "country": "South Sudan"
+    },
+    {
+      "id": "cheliff",
+      "name": "Chelif",
+      "fact": "Longest river in Algeria.",
+      "kind": "water",
+      "lat": 36,
+      "lon": 0.5,
+      "x": 501.3,
+      "y": 141.7,
+      "facts": [
+        "Longest river in Algeria.",
+        "Flows to the Mediterranean west of Algiers."
+      ],
+      "country": "Algeria"
+    },
+    {
+      "id": "nasser",
+      "name": "Lake Nasser",
+      "fact": "Reservoir behind Aswan High Dam.",
+      "kind": "water",
+      "lat": 22.5,
+      "lon": 32.5,
+      "x": 586.8,
+      "y": 184.7,
+      "facts": [
+        "Reservoir behind Aswan High Dam.",
+        "The Nile’s great lake in Egypt and Sudan."
+      ],
+      "country": "Egypt"
+    },
+    {
+      "id": "chad",
+      "name": "Lake Chad",
+      "fact": "Shallow African lake; size varies greatly.",
+      "kind": "water",
+      "lat": 13,
+      "lon": 14,
+      "x": 538,
+      "y": 214.9,
+      "facts": [
+        "Shallow African lake; size varies greatly.",
+        "Shared by Chad, Cameroon, Niger, and Nigeria."
+      ],
+      "country": "Chad"
+    },
+    {
+      "id": "qarun",
+      "name": "Lake Qarun",
+      "fact": "Egypt’s largest natural lake.",
+      "kind": "water",
+      "lat": 29.45,
+      "lon": 30.58,
+      "x": 580.2,
+      "y": 162.6,
+      "facts": [
+        "Egypt’s largest natural lake.",
+        "In the Faiyum Oasis, west of the Nile."
+      ],
+      "country": "Egypt"
+    },
+    {
+      "id": "djerid",
+      "name": "Chott el Djerid",
+      "fact": "Tunisia’s largest salt pan.",
+      "kind": "water",
+      "lat": 33.7,
+      "lon": 8.4,
+      "x": 521.7,
+      "y": 149,
+      "facts": [
+        "Tunisia’s largest salt pan.",
+        "A seasonal lake of the Sahara’s northern edge."
+      ],
+      "country": "Tunisia"
+    },
+    {
+      "id": "manzala",
+      "name": "Lake Manzala",
+      "fact": "Largest of the Nile Delta lakes.",
+      "kind": "water",
+      "lat": 31.3,
+      "lon": 32.05,
+      "x": 583.6,
+      "y": 156.7,
+      "facts": [
+        "Largest of the Nile Delta lakes.",
+        "A coastal lagoon on the Mediterranean."
+      ],
+      "country": "Egypt"
+    },
+    {
+      "id": "mediterranean",
+      "name": "Mediterranean Sea",
+      "fact": "Sea north of the Maghreb and Egypt.",
+      "kind": "water",
+      "lat": 34,
+      "lon": 18,
+      "x": 546.5,
+      "y": 148.1,
+      "facts": [
+        "Sea north of the Maghreb and Egypt."
+      ]
+    },
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean west of Morocco and Western Sahara.",
+      "kind": "water",
+      "lat": 28,
+      "lon": -16,
+      "x": 457.9,
+      "y": 167.2,
+      "facts": [
+        "Ocean west of Morocco and Western Sahara."
+      ]
+    },
+    {
+      "id": "red-sea",
+      "name": "Red Sea",
+      "fact": "Sea east of Egypt and Sudan.",
+      "kind": "water",
+      "lat": 22,
+      "lon": 38,
+      "x": 601.6,
+      "y": 186.3,
+      "facts": [
+        "Sea east of Egypt and Sudan."
+      ]
+    },
+    {
+      "id": "gibraltar",
+      "name": "Strait of Gibraltar",
+      "fact": "Between Morocco and Spain.",
+      "kind": "water",
+      "lat": 35.97,
+      "lon": -5.58,
+      "x": 485.7,
+      "y": 141.8,
+      "facts": [
+        "Between Morocco and Spain."
+      ]
+    },
+    {
+      "id": "suez",
+      "name": "Suez Canal",
+      "fact": "Links the Mediterranean and the Red Sea.",
+      "kind": "water",
+      "lat": 30.45,
+      "lon": 32.35,
+      "x": 584.6,
+      "y": 159.4,
+      "facts": [
+        "Links the Mediterranean and the Red Sea."
+      ]
+    },
+    {
+      "id": "gulf-sidra",
+      "name": "Gulf of Sidra",
+      "fact": "Mediterranean gulf of Libya.",
+      "kind": "water",
+      "lat": 31.5,
+      "lon": 18,
+      "x": 546.9,
+      "y": 156,
+      "facts": [
+        "Mediterranean gulf of Libya.",
+        "Also called the Gulf of Sirte."
+      ]
+    },
+    {
+      "id": "gulf-gabes",
+      "name": "Gulf of Gabès",
+      "fact": "Mediterranean gulf of Tunisia.",
+      "kind": "water",
+      "lat": 34,
+      "lon": 10.5,
+      "x": 527.1,
+      "y": 148.1,
+      "facts": [
+        "Mediterranean gulf of Tunisia."
+      ]
+    }
+  ]
+}

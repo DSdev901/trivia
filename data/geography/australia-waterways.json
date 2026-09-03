@@ -1,0 +1,313 @@
+{
+  "id": "australia-waterways",
+  "name": "Australia: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "murray",
+      "name": "Murray",
+      "fact": "Australia’s longest river.",
+      "kind": "water",
+      "lat": -34.2,
+      "lon": 142,
+      "x": 866.6,
+      "y": 364.6,
+      "facts": [
+        "Australia’s longest river.",
+        "With the Darling, Australia’s main river system."
+      ],
+      "waterway": "Murray",
+      "country": "Australia"
+    },
+    {
+      "id": "darling-river",
+      "name": "Darling",
+      "fact": "Longest tributary of the Murray.",
+      "kind": "water",
+      "lat": -31,
+      "lon": 144,
+      "x": 875.8,
+      "y": 354.4,
+      "facts": [
+        "Longest tributary of the Murray."
+      ],
+      "waterway": "Darling",
+      "country": "Australia"
+    },
+    {
+      "id": "flinders",
+      "name": "Flinders River",
+      "fact": "Longest river in Queensland.",
+      "kind": "water",
+      "lat": -18.5,
+      "lon": 140.8,
+      "x": 878.9,
+      "y": 314.6,
+      "facts": [
+        "Longest river in Queensland."
+      ],
+      "country": "Australia"
+    },
+    {
+      "id": "gascoyne",
+      "name": "Gascoyne River",
+      "fact": "Longest river in Western Australia.",
+      "kind": "water",
+      "lat": -24.8,
+      "lon": 114.6,
+      "x": 804.3,
+      "y": 334.7,
+      "facts": [
+        "Longest river in Western Australia."
+      ],
+      "country": "Australia"
+    },
+    {
+      "id": "victoria-river",
+      "name": "Victoria River",
+      "fact": "Major river of the Northern Territory.",
+      "kind": "water",
+      "lat": -16,
+      "lon": 131,
+      "x": 854,
+      "y": 306.7,
+      "facts": [
+        "Major river of the Northern Territory."
+      ],
+      "country": "Australia"
+    },
+    {
+      "id": "murrumbidgee",
+      "name": "Murrumbidgee",
+      "fact": "The Murray’s major right-bank tributary.",
+      "kind": "water",
+      "lat": -34.6,
+      "lon": 145.6,
+      "x": 875.3,
+      "y": 365.9,
+      "facts": [
+        "The Murray’s major right-bank tributary.",
+        "Flows past Canberra’s region and Wagga Wagga."
+      ],
+      "country": "Australia"
+    },
+    {
+      "id": "eyre",
+      "name": "Lake Eyre",
+      "fact": "Australia’s largest lake when it fills.",
+      "kind": "water",
+      "lat": -28.4,
+      "lon": 137.3,
+      "x": 861.1,
+      "y": 346.2,
+      "facts": [
+        "Australia’s largest lake when it fills.",
+        "The continent’s lowest point."
+      ],
+      "country": "Australia"
+    },
+    {
+      "id": "torrens",
+      "name": "Lake Torrens",
+      "fact": "A huge salt lake in South Australia.",
+      "kind": "water",
+      "lat": -31,
+      "lon": 137.8,
+      "x": 859.6,
+      "y": 354.4,
+      "facts": [
+        "A huge salt lake in South Australia."
+      ],
+      "country": "Australia"
+    },
+    {
+      "id": "gairdner",
+      "name": "Lake Gairdner",
+      "fact": "A vast salt lake used for land-speed records.",
+      "kind": "water",
+      "lat": -31.6,
+      "lon": 135.9,
+      "x": 854,
+      "y": 356.4,
+      "facts": [
+        "A vast salt lake used for land-speed records."
+      ],
+      "country": "Australia"
+    },
+    {
+      "id": "argyle",
+      "name": "Lake Argyle",
+      "fact": "Australia’s largest reservoir.",
+      "kind": "water",
+      "lat": -16.5,
+      "lon": 128.7,
+      "x": 847.5,
+      "y": 308.3,
+      "facts": [
+        "Australia’s largest reservoir."
+      ],
+      "country": "Australia"
+    },
+    {
+      "id": "taupo",
+      "name": "Lake Taupō",
+      "fact": "Largest lake in New Zealand.",
+      "kind": "water",
+      "lat": -38.8,
+      "lon": 175.9,
+      "x": 946,
+      "y": 379.2,
+      "facts": [
+        "Largest lake in New Zealand."
+      ],
+      "country": "New Zealand"
+    },
+    {
+      "id": "indian-ocean",
+      "name": "Indian Ocean",
+      "fact": "Ocean west of Australia.",
+      "kind": "water",
+      "lat": -25,
+      "lon": 108,
+      "x": 786.7,
+      "y": 335.3,
+      "facts": [
+        "Ocean west of Australia."
+      ]
+    },
+    {
+      "id": "pacific-ocean",
+      "name": "Pacific Ocean",
+      "fact": "Ocean east of Australia.",
+      "kind": "water",
+      "lat": -28,
+      "lon": 160,
+      "x": 921.3,
+      "y": 344.9,
+      "facts": [
+        "Ocean east of Australia."
+      ]
+    },
+    {
+      "id": "tasman-sea",
+      "name": "Tasman Sea",
+      "fact": "Between Australia and New Zealand.",
+      "kind": "water",
+      "lat": -38,
+      "lon": 160,
+      "x": 907.1,
+      "y": 376.7,
+      "facts": [
+        "Between Australia and New Zealand."
+      ]
+    },
+    {
+      "id": "southern-ocean",
+      "name": "Southern Ocean",
+      "fact": "Ocean south of Australia.",
+      "kind": "water",
+      "lat": -50,
+      "lon": 140,
+      "x": 835.5,
+      "y": 414.2,
+      "facts": [
+        "Ocean south of Australia."
+      ]
+    },
+    {
+      "id": "bass",
+      "name": "Bass Strait",
+      "fact": "Between Tasmania and the mainland.",
+      "kind": "water",
+      "lat": -40,
+      "lon": 146,
+      "x": 868.3,
+      "y": 383,
+      "facts": [
+        "Between Tasmania and the mainland."
+      ]
+    },
+    {
+      "id": "torres",
+      "name": "Torres Strait",
+      "fact": "Between Australia and New Guinea.",
+      "kind": "water",
+      "lat": -10,
+      "lon": 142.3,
+      "x": 887.4,
+      "y": 287.7,
+      "facts": [
+        "Between Australia and New Guinea."
+      ]
+    },
+    {
+      "id": "bight",
+      "name": "Great Australian Bight",
+      "fact": "Open bay on the southern coast.",
+      "kind": "water",
+      "lat": -35,
+      "lon": 130,
+      "x": 834.6,
+      "y": 367.2,
+      "facts": [
+        "Open bay on the southern coast."
+      ]
+    },
+    {
+      "id": "carpentaria",
+      "name": "Gulf of Carpentaria",
+      "fact": "Gulf of northern Australia.",
+      "kind": "water",
+      "lat": -14,
+      "lon": 139,
+      "x": 876.7,
+      "y": 300.4,
+      "facts": [
+        "Gulf of northern Australia."
+      ]
+    },
+    {
+      "id": "cook",
+      "name": "Cook Strait",
+      "fact": "Between New Zealand’s North and South Islands.",
+      "kind": "water",
+      "lat": -41.2,
+      "lon": 174.5,
+      "x": 937.9,
+      "y": 386.8,
+      "facts": [
+        "Between New Zealand’s North and South Islands."
+      ]
+    },
+    {
+      "id": "shark-bay",
+      "name": "Shark Bay",
+      "fact": "Indian Ocean bay of Western Australia.",
+      "kind": "water",
+      "lat": -25.5,
+      "lon": 113.5,
+      "x": 800.9,
+      "y": 336.9,
+      "facts": [
+        "Indian Ocean bay of Western Australia.",
+        "A UNESCO World Heritage site."
+      ]
+    },
+    {
+      "id": "port-phillip",
+      "name": "Port Phillip",
+      "fact": "Bay of Melbourne, on Victoria’s south coast.",
+      "kind": "water",
+      "lat": -38.15,
+      "lon": 144.9,
+      "x": 868.4,
+      "y": 377.2,
+      "facts": [
+        "Bay of Melbourne, on Victoria’s south coast."
+      ],
+      "country": "Australia"
+    }
+  ]
+}

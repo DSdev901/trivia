@@ -1,0 +1,204 @@
+{
+  "id": "mena-waterways",
+  "name": "The Middle East and North Africa: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "nile",
+      "name": "Nile",
+      "fact": "Often cited as the world’s longest river.",
+      "kind": "water",
+      "lat": 26,
+      "lon": 32.5,
+      "x": 586,
+      "y": 173.6,
+      "facts": [
+        "Often cited as the world’s longest river.",
+        "Flows north through 11 countries.",
+        "Empties into the Mediterranean."
+      ],
+      "waterway": "Nile",
+      "country": "Egypt"
+    },
+    {
+      "id": "tigris",
+      "name": "Tigris",
+      "fact": "Great river of Mesopotamia.",
+      "kind": "water",
+      "lat": 34.5,
+      "lon": 44.4,
+      "x": 614.5,
+      "y": 146.5,
+      "facts": [
+        "Great river of Mesopotamia."
+      ],
+      "country": "Iraq"
+    },
+    {
+      "id": "euphrates",
+      "name": "Euphrates",
+      "fact": "Longest river in Western Asia.",
+      "kind": "water",
+      "lat": 33,
+      "lon": 40.4,
+      "x": 604.7,
+      "y": 151.2,
+      "facts": [
+        "Longest river in Western Asia."
+      ],
+      "country": "Iraq"
+    },
+    {
+      "id": "jordan",
+      "name": "Jordan River",
+      "fact": "Forms part of the Israel–Jordan border.",
+      "kind": "water",
+      "lat": 32.1,
+      "lon": 35.55,
+      "x": 592.4,
+      "y": 154.1,
+      "facts": [
+        "Forms part of the Israel–Jordan border.",
+        "Flows to the Dead Sea."
+      ],
+      "border": true,
+      "waterway": "Jordan",
+      "country": "Jordan"
+    },
+    {
+      "id": "dead-sea",
+      "name": "Dead Sea",
+      "fact": "Earth’s lowest land elevation on its shores.",
+      "kind": "water",
+      "lat": 31.5,
+      "lon": 35.5,
+      "x": 592.5,
+      "y": 156,
+      "facts": [
+        "Earth’s lowest land elevation on its shores.",
+        "Among the saltiest large lakes."
+      ],
+      "border": true
+    },
+    {
+      "id": "mediterranean",
+      "name": "Mediterranean Sea",
+      "fact": "Sea north of Africa and west of the Levant.",
+      "kind": "water",
+      "lat": 34,
+      "lon": 22,
+      "x": 556.8,
+      "y": 148.1,
+      "facts": [
+        "Sea north of Africa and west of the Levant."
+      ]
+    },
+    {
+      "id": "red-sea",
+      "name": "Red Sea",
+      "fact": "Between Africa and Arabia.",
+      "kind": "water",
+      "lat": 20,
+      "lon": 38.5,
+      "x": 603.3,
+      "y": 192.6,
+      "facts": [
+        "Between Africa and Arabia."
+      ]
+    },
+    {
+      "id": "persian-gulf",
+      "name": "Persian Gulf",
+      "fact": "Between Iran and the Arabian Peninsula.",
+      "kind": "water",
+      "lat": 26.5,
+      "lon": 52,
+      "x": 637.5,
+      "y": 172,
+      "facts": [
+        "Between Iran and the Arabian Peninsula."
+      ]
+    },
+    {
+      "id": "arabian-sea",
+      "name": "Arabian Sea",
+      "fact": "Ocean south of Arabia.",
+      "kind": "water",
+      "lat": 15,
+      "lon": 60,
+      "x": 662.4,
+      "y": 208.5,
+      "facts": [
+        "Ocean south of Arabia."
+      ]
+    },
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean west of Morocco and Western Sahara.",
+      "kind": "water",
+      "lat": 32,
+      "lon": -12,
+      "x": 468.8,
+      "y": 154.4,
+      "facts": [
+        "Ocean west of Morocco and Western Sahara."
+      ]
+    },
+    {
+      "id": "gibraltar",
+      "name": "Strait of Gibraltar",
+      "fact": "The Atlantic’s gate to the Mediterranean.",
+      "kind": "water",
+      "lat": 35.97,
+      "lon": -5.58,
+      "x": 485.7,
+      "y": 141.8,
+      "facts": [
+        "The Atlantic’s gate to the Mediterranean."
+      ]
+    },
+    {
+      "id": "hormuz",
+      "name": "Strait of Hormuz",
+      "fact": "The only sea entrance to the Persian Gulf.",
+      "kind": "water",
+      "lat": 26.57,
+      "lon": 56.25,
+      "x": 648.7,
+      "y": 171.7,
+      "facts": [
+        "The only sea entrance to the Persian Gulf."
+      ]
+    },
+    {
+      "id": "bab-el-mandeb",
+      "name": "Bab-el-Mandeb",
+      "fact": "The Red Sea’s gate to the Indian Ocean.",
+      "kind": "water",
+      "lat": 12.58,
+      "lon": 43.33,
+      "x": 617.6,
+      "y": 216.2,
+      "facts": [
+        "The Red Sea’s gate to the Indian Ocean."
+      ],
+      "country": "Djibouti"
+    },
+    {
+      "id": "suez",
+      "name": "Suez Canal",
+      "fact": "Links the Mediterranean and the Red Sea.",
+      "kind": "water",
+      "lat": 30.45,
+      "lon": 32.35,
+      "x": 584.6,
+      "y": 159.4,
+      "facts": [
+        "Links the Mediterranean and the Red Sea."
+      ]
+    }
+  ]
+}

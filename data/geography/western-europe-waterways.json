@@ -1,0 +1,246 @@
+{
+  "id": "western-europe-waterways",
+  "name": "Western Europe: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "rhine",
+      "name": "Rhine",
+      "fact": "Major river of Western Europe.",
+      "kind": "water",
+      "lat": 50,
+      "lon": 7,
+      "x": 516.8,
+      "y": 97.8,
+      "facts": [
+        "Major river of Western Europe.",
+        "Forms much of the France–Germany border.",
+        "Empties into the North Sea in the Netherlands."
+      ],
+      "border": true,
+      "waterway": "Rhine",
+      "country": "Germany"
+    },
+    {
+      "id": "seine",
+      "name": "Seine",
+      "fact": "Flows through Paris.",
+      "kind": "water",
+      "lat": 48.9,
+      "lon": 2.3,
+      "x": 505.5,
+      "y": 101.2,
+      "facts": [
+        "Flows through Paris.",
+        "Empties into the English Channel."
+      ],
+      "waterway": "Seine",
+      "country": "France"
+    },
+    {
+      "id": "loire",
+      "name": "Loire",
+      "fact": "France’s longest river.",
+      "kind": "water",
+      "lat": 47.4,
+      "lon": 0.8,
+      "x": 501.9,
+      "y": 105.9,
+      "facts": [
+        "France’s longest river.",
+        "Flows west to the Atlantic."
+      ],
+      "waterway": "Loire",
+      "country": "France"
+    },
+    {
+      "id": "rhone",
+      "name": "Rhône",
+      "fact": "Flows from the Alps to the Mediterranean.",
+      "kind": "water",
+      "lat": 44.8,
+      "lon": 4.8,
+      "x": 511.8,
+      "y": 113.9,
+      "facts": [
+        "Flows from the Alps to the Mediterranean.",
+        "Through Lake Geneva and Lyon."
+      ],
+      "waterway": "Rhône",
+      "country": "France"
+    },
+    {
+      "id": "elbe",
+      "name": "Elbe",
+      "fact": "River of Czechia and Germany.",
+      "kind": "water",
+      "lat": 52.5,
+      "lon": 12,
+      "x": 528.3,
+      "y": 90.2,
+      "facts": [
+        "River of Czechia and Germany.",
+        "Empties into the North Sea at Hamburg."
+      ],
+      "waterway": "Elbe",
+      "country": "Germany"
+    },
+    {
+      "id": "meuse",
+      "name": "Meuse",
+      "fact": "River of France, Belgium, and the Netherlands.",
+      "kind": "water",
+      "lat": 50.9,
+      "lon": 5.7,
+      "x": 513.6,
+      "y": 95.1,
+      "facts": [
+        "River of France, Belgium, and the Netherlands.",
+        "Joins the Rhine delta."
+      ],
+      "country": "Netherlands"
+    },
+    {
+      "id": "geneva",
+      "name": "Lake Geneva",
+      "fact": "Largest Alpine lake.",
+      "kind": "water",
+      "lat": 46.4,
+      "lon": 6.5,
+      "x": 515.9,
+      "y": 109,
+      "facts": [
+        "Largest Alpine lake.",
+        "Shared by Switzerland and France."
+      ],
+      "country": "France"
+    },
+    {
+      "id": "constance",
+      "name": "Lake Constance",
+      "fact": "Shared by Germany, Switzerland, and Austria.",
+      "kind": "water",
+      "lat": 47.6,
+      "lon": 9.4,
+      "x": 522.8,
+      "y": 105.2,
+      "facts": [
+        "Shared by Germany, Switzerland, and Austria.",
+        "The Rhine flows through it."
+      ],
+      "country": "Germany"
+    },
+    {
+      "id": "ijsselmeer",
+      "name": "IJsselmeer",
+      "fact": "The Netherlands’ largest lake.",
+      "kind": "water",
+      "lat": 52.7,
+      "lon": 5.3,
+      "x": 512.5,
+      "y": 89.6,
+      "facts": [
+        "The Netherlands’ largest lake.",
+        "A former Zuiderzee bay, closed by the Afsluitdijk."
+      ],
+      "country": "Netherlands"
+    },
+    {
+      "id": "lucerne",
+      "name": "Lake Lucerne",
+      "fact": "A fjord-like Alpine lake in Switzerland.",
+      "kind": "water",
+      "lat": 47,
+      "lon": 8.4,
+      "x": 520.5,
+      "y": 107.1,
+      "facts": [
+        "A fjord-like Alpine lake in Switzerland.",
+        "At the foot of the Rigi and Pilatus."
+      ],
+      "country": "Switzerland"
+    },
+    {
+      "id": "annecy",
+      "name": "Lake Annecy",
+      "fact": "Often called Europe’s cleanest lake.",
+      "kind": "water",
+      "lat": 45.86,
+      "lon": 6.17,
+      "x": 515.1,
+      "y": 110.6,
+      "facts": [
+        "Often called Europe’s cleanest lake.",
+        "In the French Alps, south of Geneva."
+      ],
+      "country": "France"
+    },
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean west of France and the Low Countries’ approaches.",
+      "kind": "water",
+      "lat": 46,
+      "lon": -8,
+      "x": 480.4,
+      "y": 110.2,
+      "facts": [
+        "Ocean west of France and the Low Countries’ approaches."
+      ]
+    },
+    {
+      "id": "north-sea",
+      "name": "North Sea",
+      "fact": "Sea north of the Low Countries and Germany.",
+      "kind": "water",
+      "lat": 54,
+      "lon": 4,
+      "x": 509.3,
+      "y": 85.7,
+      "facts": [
+        "Sea north of the Low Countries and Germany."
+      ]
+    },
+    {
+      "id": "english-channel",
+      "name": "English Channel",
+      "fact": "Between France and Great Britain.",
+      "kind": "water",
+      "lat": 50.2,
+      "lon": -1,
+      "x": 497.6,
+      "y": 97.2,
+      "facts": [
+        "Between France and Great Britain."
+      ]
+    },
+    {
+      "id": "biscay",
+      "name": "Bay of Biscay",
+      "fact": "Atlantic bay of France and Spain.",
+      "kind": "water",
+      "lat": 45,
+      "lon": -4,
+      "x": 490.1,
+      "y": 113.3,
+      "facts": [
+        "Atlantic bay of France and Spain."
+      ]
+    },
+    {
+      "id": "dover",
+      "name": "Strait of Dover",
+      "fact": "The Channel’s narrowest point.",
+      "kind": "water",
+      "lat": 51.05,
+      "lon": 1.4,
+      "x": 503.3,
+      "y": 94.6,
+      "facts": [
+        "The Channel’s narrowest point."
+      ]
+    }
+  ]
+}

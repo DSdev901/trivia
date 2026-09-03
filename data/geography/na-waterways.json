@@ -1,0 +1,339 @@
+{
+  "id": "na-waterways",
+  "name": "North America: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "mississippi",
+      "name": "Mississippi",
+      "fact": "Principal river of the central United States.",
+      "kind": "water",
+      "lat": 35,
+      "lon": -90,
+      "x": 268.3,
+      "y": 144.9,
+      "facts": [
+        "Principal river of the central United States.",
+        "Runs from Minnesota to the Gulf of Mexico.",
+        "With the Missouri, among the world’s longest systems."
+      ],
+      "waterway": "Mississippi",
+      "country": "United States"
+    },
+    {
+      "id": "mackenzie",
+      "name": "Mackenzie",
+      "fact": "Canada’s longest river system.",
+      "kind": "water",
+      "lat": 67.5,
+      "lon": -130,
+      "x": 226.2,
+      "y": 47,
+      "facts": [
+        "Canada’s longest river system.",
+        "Flows to the Arctic Ocean."
+      ],
+      "waterway": "Mackenzie",
+      "country": "Canada"
+    },
+    {
+      "id": "st-lawrence",
+      "name": "Saint Lawrence",
+      "fact": "Drains the Great Lakes to the Atlantic.",
+      "kind": "water",
+      "lat": 47.5,
+      "lon": -69.5,
+      "x": 331.1,
+      "y": 105.5,
+      "facts": [
+        "Drains the Great Lakes to the Atlantic.",
+        "Forms part of the U.S.–Canada border."
+      ],
+      "border": true,
+      "waterway": "St. Lawrence",
+      "country": "Canada"
+    },
+    {
+      "id": "rio-grande",
+      "name": "Rio Grande",
+      "fact": "Part of the U.S.–Mexico border.",
+      "kind": "water",
+      "lat": 29,
+      "lon": -103,
+      "x": 229.6,
+      "y": 164,
+      "facts": [
+        "Part of the U.S.–Mexico border.",
+        "Called the Río Bravo in Mexico.",
+        "Runs from Colorado to the Gulf of Mexico."
+      ],
+      "border": true,
+      "waterway": "Rio Grande",
+      "country": "Mexico"
+    },
+    {
+      "id": "colorado",
+      "name": "Colorado River",
+      "fact": "Carved the Grand Canyon.",
+      "kind": "water",
+      "lat": 36.1,
+      "lon": -113.8,
+      "x": 208.3,
+      "y": 141.4,
+      "facts": [
+        "Carved the Grand Canyon.",
+        "Lower reaches form part of the U.S.–Mexico border."
+      ],
+      "border": true,
+      "waterway": "Colorado",
+      "country": "United States"
+    },
+    {
+      "id": "yukon",
+      "name": "Yukon",
+      "fact": "Major river of Alaska and Yukon.",
+      "kind": "water",
+      "lat": 65,
+      "lon": -145,
+      "x": 188,
+      "y": 53.9,
+      "facts": [
+        "Major river of Alaska and Yukon.",
+        "Flows to the Bering Sea."
+      ],
+      "waterway": "Yukon",
+      "country": "United States"
+    },
+    {
+      "id": "missouri",
+      "name": "Missouri",
+      "fact": "Longest river in the United States.",
+      "kind": "water",
+      "lat": 42,
+      "lon": -98,
+      "x": 255,
+      "y": 122.7,
+      "facts": [
+        "Longest river in the United States.",
+        "The Mississippi’s longest tributary."
+      ],
+      "waterway": "Missouri",
+      "country": "United States"
+    },
+    {
+      "id": "columbia",
+      "name": "Columbia",
+      "fact": "Great river of the Pacific Northwest.",
+      "kind": "water",
+      "lat": 45.7,
+      "lon": -120.2,
+      "x": 205,
+      "y": 111.1,
+      "facts": [
+        "Great river of the Pacific Northwest.",
+        "Rises in British Columbia."
+      ],
+      "waterway": "Columbia",
+      "country": "United States"
+    },
+    {
+      "id": "ohio",
+      "name": "Ohio River",
+      "fact": "Major eastern tributary of the Mississippi.",
+      "kind": "water",
+      "lat": 38.5,
+      "lon": -85,
+      "x": 284.2,
+      "y": 133.8,
+      "facts": [
+        "Major eastern tributary of the Mississippi.",
+        "Forms much of the Midwest–South state line."
+      ],
+      "border": true,
+      "waterway": "Ohio",
+      "country": "United States"
+    },
+    {
+      "id": "great-bear",
+      "name": "Great Bear Lake",
+      "fact": "Largest lake entirely in Canada.",
+      "kind": "water",
+      "lat": 66,
+      "lon": -121,
+      "x": 241.8,
+      "y": 51.1,
+      "facts": [
+        "Largest lake entirely in Canada.",
+        "In the Northwest Territories."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "great-salt",
+      "name": "Great Salt Lake",
+      "fact": "Largest U.S. salt lake.",
+      "kind": "water",
+      "lat": 41.15,
+      "lon": -112.55,
+      "x": 217.5,
+      "y": 125.4,
+      "facts": [
+        "Largest U.S. salt lake.",
+        "Remnant of ancient Lake Bonneville."
+      ],
+      "country": "United States"
+    },
+    {
+      "id": "great-slave",
+      "name": "Great Slave Lake",
+      "fact": "Deepest lake in North America.",
+      "kind": "water",
+      "lat": 61.4,
+      "lon": -114,
+      "x": 247.4,
+      "y": 64,
+      "facts": [
+        "Deepest lake in North America.",
+        "Source of the Mackenzie River."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "erie",
+      "name": "Lake Erie",
+      "fact": "Shallowest of the Great Lakes.",
+      "kind": "water",
+      "lat": 42.2,
+      "lon": -81.2,
+      "x": 297.2,
+      "y": 122.1,
+      "facts": [
+        "Shallowest of the Great Lakes.",
+        "Forms part of the U.S.–Canada border."
+      ],
+      "country": "United States"
+    },
+    {
+      "id": "huron",
+      "name": "Lake Huron",
+      "fact": "Second-largest Great Lake by area.",
+      "kind": "water",
+      "lat": 44.8,
+      "lon": -82.4,
+      "x": 296.8,
+      "y": 113.9,
+      "facts": [
+        "Second-largest Great Lake by area.",
+        "Includes Georgian Bay."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "michigan",
+      "name": "Lake Michigan",
+      "fact": "Only Great Lake entirely in the United States.",
+      "kind": "water",
+      "lat": 44,
+      "lon": -87,
+      "x": 284.6,
+      "y": 116.4,
+      "facts": [
+        "Only Great Lake entirely in the United States.",
+        "Third-largest Great Lake by area."
+      ],
+      "country": "United States"
+    },
+    {
+      "id": "nipigon",
+      "name": "Lake Nipigon",
+      "fact": "Largest lake entirely in Ontario.",
+      "kind": "water",
+      "lat": 49.8,
+      "lon": -88.5,
+      "x": 287.7,
+      "y": 98.5,
+      "facts": [
+        "Largest lake entirely in Ontario.",
+        "Drains toward Lake Superior."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "okeechobee",
+      "name": "Lake Okeechobee",
+      "fact": "Largest lake in Florida.",
+      "kind": "water",
+      "lat": 26.93,
+      "lon": -80.8,
+      "x": 286.6,
+      "y": 170.6,
+      "facts": [
+        "Largest lake in Florida.",
+        "The “liquid heart” of the Everglades."
+      ],
+      "country": "United States"
+    },
+    {
+      "id": "ontario",
+      "name": "Lake Ontario",
+      "fact": "Easternmost Great Lake.",
+      "kind": "water",
+      "lat": 43.7,
+      "lon": -77.9,
+      "x": 306.8,
+      "y": 117.4,
+      "facts": [
+        "Easternmost Great Lake.",
+        "Drains to the Atlantic via the St. Lawrence."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "superior",
+      "name": "Lake Superior",
+      "fact": "Largest freshwater lake by surface area.",
+      "kind": "water",
+      "lat": 47.7,
+      "lon": -87.5,
+      "x": 287.5,
+      "y": 104.9,
+      "facts": [
+        "Largest freshwater lake by surface area.",
+        "Largest of the Great Lakes."
+      ],
+      "country": "United States"
+    },
+    {
+      "id": "winnipeg",
+      "name": "Lake Winnipeg",
+      "fact": "Large prairie lake in Manitoba.",
+      "kind": "water",
+      "lat": 52.5,
+      "lon": -97.5,
+      "x": 269.9,
+      "y": 90.2,
+      "facts": [
+        "Large prairie lake in Manitoba.",
+        "Twelfth-largest freshwater lake."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "woods",
+      "name": "Lake of the Woods",
+      "fact": "Lake on the U.S.–Canada border.",
+      "kind": "water",
+      "lat": 49.1,
+      "lon": -94.8,
+      "x": 271.6,
+      "y": 100.6,
+      "facts": [
+        "Lake on the U.S.–Canada border.",
+        "Shared by Ontario, Manitoba, and Minnesota."
+      ],
+      "country": "Canada"
+    }
+  ]
+}

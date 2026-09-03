@@ -1,0 +1,253 @@
+{
+  "id": "caribbean-waterways",
+  "name": "Caribbean: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "cauto",
+      "name": "Cauto River",
+      "fact": "Longest river in Cuba.",
+      "kind": "water",
+      "lat": 20.6,
+      "lon": -76.6,
+      "x": 294.7,
+      "y": 190.7,
+      "facts": [
+        "Longest river in Cuba.",
+        "Flows to the Gulf of Guacanayabo."
+      ],
+      "country": "Cuba"
+    },
+    {
+      "id": "artibonite",
+      "name": "Artibonite",
+      "fact": "Longest river on Hispaniola.",
+      "kind": "water",
+      "lat": 19.25,
+      "lon": -72.6,
+      "x": 304.9,
+      "y": 195,
+      "facts": [
+        "Longest river on Hispaniola.",
+        "The main river of Haiti; rises in the Dominican Republic."
+      ],
+      "country": "Haiti"
+    },
+    {
+      "id": "yaque-norte",
+      "name": "Yaque del Norte",
+      "fact": "Longest river in the Dominican Republic.",
+      "kind": "water",
+      "lat": 19.6,
+      "lon": -70.7,
+      "x": 310.1,
+      "y": 193.9,
+      "facts": [
+        "Longest river in the Dominican Republic.",
+        "Flows to the Atlantic near Monte Cristi."
+      ],
+      "country": "Dominican Republic"
+    },
+    {
+      "id": "loiza",
+      "name": "Río Grande de Loíza",
+      "fact": "Principal river of Puerto Rico.",
+      "kind": "water",
+      "lat": 18.4,
+      "lon": -65.9,
+      "x": 322.6,
+      "y": 197.7,
+      "facts": [
+        "Principal river of Puerto Rico.",
+        "Flows to the Atlantic east of San Juan."
+      ],
+      "country": "Puerto Rico"
+    },
+    {
+      "id": "black-river-jm",
+      "name": "Black River",
+      "fact": "Jamaica’s longest river.",
+      "kind": "water",
+      "lat": 18,
+      "lon": -77.85,
+      "x": 290.3,
+      "y": 199,
+      "facts": [
+        "Jamaica’s longest river.",
+        "Empties on the island’s southwest coast."
+      ],
+      "country": "Jamaica"
+    },
+    {
+      "id": "enriquillo",
+      "name": "Lake Enriquillo",
+      "fact": "Largest lake in the Caribbean.",
+      "kind": "water",
+      "lat": 18.5,
+      "lon": -71.55,
+      "x": 307.5,
+      "y": 197.4,
+      "facts": [
+        "Largest lake in the Caribbean.",
+        "The lowest point in the Caribbean, in the Dominican Republic."
+      ],
+      "country": "Dominican Republic"
+    },
+    {
+      "id": "azuei",
+      "name": "Étang Saumâtre",
+      "fact": "Haiti’s largest lake.",
+      "kind": "water",
+      "lat": 18.57,
+      "lon": -71.97,
+      "x": 306.3,
+      "y": 197.2,
+      "facts": [
+        "Haiti’s largest lake.",
+        "A salt lake on the Haiti–Dominican Republic border."
+      ],
+      "border": true,
+      "country": "Dominican Republic"
+    },
+    {
+      "id": "oviedo",
+      "name": "Laguna de Oviedo",
+      "fact": "A large hypersaline lagoon in the Dominican Republic.",
+      "kind": "water",
+      "lat": 17.8,
+      "lon": -71.35,
+      "x": 307.8,
+      "y": 199.6,
+      "facts": [
+        "A large hypersaline lagoon in the Dominican Republic.",
+        "In the southwest, near the Caribbean coast."
+      ],
+      "country": "Dominican Republic"
+    },
+    {
+      "id": "zapotillo",
+      "name": "Laguna de Rincón",
+      "fact": "The Dominican Republic’s second-largest lake.",
+      "kind": "water",
+      "lat": 18.4,
+      "lon": -71.2,
+      "x": 308.4,
+      "y": 197.7,
+      "facts": [
+        "The Dominican Republic’s second-largest lake.",
+        "Also called Lake Cabral, near Barahona."
+      ],
+      "country": "Dominican Republic"
+    },
+    {
+      "id": "carraizo",
+      "name": "Loíza Reservoir",
+      "fact": "Puerto Rico’s largest reservoir.",
+      "kind": "water",
+      "lat": 18.33,
+      "lon": -66,
+      "x": 322.3,
+      "y": 198,
+      "facts": [
+        "Puerto Rico’s largest reservoir.",
+        "Also called Lake Carraízo, east of San Juan."
+      ],
+      "country": "Puerto Rico"
+    },
+    {
+      "id": "caribbean-sea",
+      "name": "Caribbean Sea",
+      "fact": "The sea the islands enclose.",
+      "kind": "water",
+      "lat": 14.5,
+      "lon": -75,
+      "x": 296.9,
+      "y": 210.1,
+      "facts": [
+        "The sea the islands enclose."
+      ]
+    },
+    {
+      "id": "gulf-mexico",
+      "name": "Gulf of Mexico",
+      "fact": "Gulf northwest of Cuba.",
+      "kind": "water",
+      "lat": 24,
+      "lon": -87,
+      "x": 268.5,
+      "y": 179.9,
+      "facts": [
+        "Gulf northwest of Cuba."
+      ]
+    },
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean north and east of the Antilles.",
+      "kind": "water",
+      "lat": 23,
+      "lon": -65,
+      "x": 326.7,
+      "y": 183.1,
+      "facts": [
+        "Ocean north and east of the Antilles."
+      ]
+    },
+    {
+      "id": "windward-passage",
+      "name": "Windward Passage",
+      "fact": "Between Cuba and Hispaniola.",
+      "kind": "water",
+      "lat": 20,
+      "lon": -73.8,
+      "x": 302,
+      "y": 192.6,
+      "facts": [
+        "Between Cuba and Hispaniola."
+      ]
+    },
+    {
+      "id": "mona-passage",
+      "name": "Mona Passage",
+      "fact": "Between Hispaniola and Puerto Rico.",
+      "kind": "water",
+      "lat": 18.3,
+      "lon": -67.8,
+      "x": 317.5,
+      "y": 198.1,
+      "facts": [
+        "Between Hispaniola and Puerto Rico."
+      ]
+    },
+    {
+      "id": "yucatan-channel",
+      "name": "Yucatán Channel",
+      "fact": "Between Cuba and Mexico’s Yucatán.",
+      "kind": "water",
+      "lat": 21.5,
+      "lon": -86,
+      "x": 269.9,
+      "y": 187.9,
+      "facts": [
+        "Between Cuba and Mexico’s Yucatán.",
+        "The Caribbean’s gate to the Gulf of Mexico."
+      ]
+    },
+    {
+      "id": "gulf-gonave",
+      "name": "Gulf of Gonâve",
+      "fact": "Haiti’s great west-coast gulf.",
+      "kind": "water",
+      "lat": 19,
+      "lon": -73.3,
+      "x": 302.9,
+      "y": 195.8,
+      "facts": [
+        "Haiti’s great west-coast gulf.",
+        "Port-au-Prince sits at its head."
+      ]
+    }
+  ]
+}

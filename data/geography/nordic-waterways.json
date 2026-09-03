@@ -1,0 +1,186 @@
+{
+  "id": "nordic-waterways",
+  "name": "The Nordic Countries: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "glomma",
+      "name": "Glomma",
+      "fact": "Longest river in Norway.",
+      "kind": "water",
+      "lat": 59.9,
+      "lon": 11.2,
+      "x": 525.1,
+      "y": 68.3,
+      "facts": [
+        "Longest river in Norway."
+      ],
+      "waterway": "Glomma",
+      "country": "Norway"
+    },
+    {
+      "id": "kemijoki",
+      "name": "Kemijoki",
+      "fact": "Longest river in Finland.",
+      "kind": "water",
+      "lat": 66.5,
+      "lon": 25.8,
+      "x": 554.8,
+      "y": 49.7,
+      "facts": [
+        "Longest river in Finland."
+      ],
+      "country": "Finland"
+    },
+    {
+      "id": "vanern",
+      "name": "Vänern",
+      "fact": "Largest lake in the European Union.",
+      "kind": "water",
+      "lat": 58.9,
+      "lon": 13.3,
+      "x": 530,
+      "y": 71.2,
+      "facts": [
+        "Largest lake in the European Union."
+      ],
+      "country": "Sweden"
+    },
+    {
+      "id": "vattern",
+      "name": "Vättern",
+      "fact": "Sweden’s second-largest lake.",
+      "kind": "water",
+      "lat": 58.3,
+      "lon": 14.5,
+      "x": 532.9,
+      "y": 73,
+      "facts": [
+        "Sweden’s second-largest lake."
+      ],
+      "country": "Sweden"
+    },
+    {
+      "id": "saimaa",
+      "name": "Saimaa",
+      "fact": "Largest lake in Finland.",
+      "kind": "water",
+      "lat": 61.3,
+      "lon": 28,
+      "x": 562.1,
+      "y": 64.3,
+      "facts": [
+        "Largest lake in Finland."
+      ],
+      "country": "Finland"
+    },
+    {
+      "id": "norwegian-sea",
+      "name": "Norwegian Sea",
+      "fact": "Sea west of Norway.",
+      "kind": "water",
+      "lat": 67,
+      "lon": 3,
+      "x": 506.3,
+      "y": 48.4,
+      "facts": [
+        "Sea west of Norway."
+      ]
+    },
+    {
+      "id": "north-sea",
+      "name": "North Sea",
+      "fact": "Sea south of Norway and west of Denmark.",
+      "kind": "water",
+      "lat": 56,
+      "lon": 5,
+      "x": 511.5,
+      "y": 79.8,
+      "facts": [
+        "Sea south of Norway and west of Denmark."
+      ]
+    },
+    {
+      "id": "baltic",
+      "name": "Baltic Sea",
+      "fact": "Sea of Sweden, Finland, and Denmark’s east.",
+      "kind": "water",
+      "lat": 58,
+      "lon": 20,
+      "x": 545.5,
+      "y": 73.9,
+      "facts": [
+        "Sea of Sweden, Finland, and Denmark’s east."
+      ]
+    },
+    {
+      "id": "arctic-ocean",
+      "name": "Arctic Ocean",
+      "fact": "Ocean north of Norway and Svalbard.",
+      "kind": "water",
+      "lat": 78,
+      "lon": 15,
+      "x": 528.4,
+      "y": 20,
+      "facts": [
+        "Ocean north of Norway and Svalbard."
+      ]
+    },
+    {
+      "id": "skagerrak",
+      "name": "Skagerrak",
+      "fact": "Between Norway, Sweden, and Jutland.",
+      "kind": "water",
+      "lat": 57.8,
+      "lon": 9,
+      "x": 520.5,
+      "y": 74.4,
+      "facts": [
+        "Between Norway, Sweden, and Jutland."
+      ],
+      "country": "Norway"
+    },
+    {
+      "id": "kattegat",
+      "name": "Kattegat",
+      "fact": "Between Denmark and Sweden.",
+      "kind": "water",
+      "lat": 56.5,
+      "lon": 11.5,
+      "x": 526.4,
+      "y": 78.3,
+      "facts": [
+        "Between Denmark and Sweden."
+      ],
+      "country": "Denmark"
+    },
+    {
+      "id": "gulf-bothnia",
+      "name": "Gulf of Bothnia",
+      "fact": "Between Sweden and Finland.",
+      "kind": "water",
+      "lat": 62,
+      "lon": 20,
+      "x": 544.1,
+      "y": 62.3,
+      "facts": [
+        "Between Sweden and Finland."
+      ]
+    },
+    {
+      "id": "denmark-strait",
+      "name": "Denmark Strait",
+      "fact": "Between Iceland and Greenland.",
+      "kind": "water",
+      "lat": 67,
+      "lon": -24,
+      "x": 449.2,
+      "y": 48.4,
+      "facts": [
+        "Between Iceland and Greenland."
+      ]
+    }
+  ]
+}

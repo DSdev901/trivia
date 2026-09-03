@@ -11,7 +11,8 @@ import { createRequire } from "node:module";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { WATER_FACTS, WATER_META, WATER_PACKS } from "./lib/water-features.mjs";
+import { WATER_FACTS, WATER_META } from "./lib/water-features.mjs";
+import { WATER_PACKS, isObsoleteWaterPackId } from "./lib/waterways.mjs";
 
 const require = createRequire(import.meta.url);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -151,7 +152,9 @@ function wantsCountry(it) {
   if (it.kind !== "water") return false;
   const n = it.name || "";
   if (/\bLake\b/i.test(n) || /^(Aral|Caspian|Tonlé Sap)/i.test(n)) return true;
-  if (/\b(Ocean|Sea|Gulf|Strait|Bay|Channel)\b/i.test(n)) return false;
+  if (/\b(Ocean|Sea|Gulf|Strait|Bay|Channel|Sound|Bight|Passage|Cove|Canal)\b/i.test(n)) {
+    return false;
+  }
   return true;
 }
 
@@ -254,29 +257,6 @@ const WORLD_PHYSICAL = [
   f("yangtze", "Yangtze (Chang Jiang)", 31.0, 112.0, "Longest river in Asia.", "water"),
 ];
 
-const WORLD_RIVERS = [
-  f("amazon", "Amazon", -3.0, -60.0, "Largest river by discharge.", "water"),
-  f("nile", "Nile", 26.0, 32.5, "Often cited as the world’s longest river.", "water"),
-  f("yangtze", "Yangtze", 31.0, 112.0, "Longest river in Asia.", "water"),
-  f("mississippi", "Mississippi", 35.0, -90.0, "Principal river of the central United States.", "water"),
-  f("yenisei", "Yenisei", 67.0, 86.5, "Great Siberian river flowing to the Arctic.", "water"),
-  f("yellow", "Yellow River", 35.0, 111.0, "China’s Huang He; “cradle of Chinese civilization.”", "water"),
-  f("ob", "Ob", 62.0, 70.0, "Major west Siberian river.", "water"),
-  f("parana", "Paraná", -27.0, -58.5, "Second-longest river in South America.", "water"),
-  f("congo", "Congo", -2.0, 18.0, "Deepest river; second-largest by discharge.", "water"),
-  f("amur", "Amur", 50.0, 137.0, "Border river of China and Russia.", "water"),
-  f("lena", "Lena", 68.0, 127.0, "Great east Siberian river.", "water"),
-  f("mekong", "Mekong", 15.0, 105.0, "Major river of Southeast Asia.", "water"),
-  f("niger", "Niger", 16.0, 4.0, "Principal river of West Africa.", "water"),
-  f("murray", "Murray", -34.2, 142.0, "Australia’s longest river.", "water"),
-  f("volga", "Volga", 56.0, 47.0, "Europe’s longest river.", "water"),
-  f("ganges", "Ganges", 25.3, 83.0, "Sacred river of the Indian subcontinent.", "water"),
-  f("danube", "Danube", 45.2, 19.5, "Flows through Central and Eastern Europe.", "water"),
-  f("indus", "Indus", 28.5, 70.0, "Principal river of Pakistan.", "water"),
-  f("rhine", "Rhine", 50.0, 7.0, "Major river of Western Europe.", "water"),
-  f("zambezi", "Zambezi", -16.0, 28.5, "Home of Victoria Falls.", "water"),
-];
-
 const WORLD_LANDMARKS = [
   f("angkor", "Angkor Wat", 13.4125, 103.867, "Temple complex in Cambodia.", "landmark"),
   f("chichen-itza", "Chichen Itza", 20.6843, -88.5678, "Maya city on the Yucatán Peninsula.", "landmark"),
@@ -327,67 +307,12 @@ const NA_PHYSICAL = [
   f("yukon", "Yukon River", 65.0, -145.0, "Major river of Alaska and Yukon.", "water"),
 ];
 
-const NA_LAKES = [
-  f("great-bear", "Great Bear Lake", 66.0, -121.0, "Largest lake entirely in Canada.", "water"),
-  f("great-salt", "Great Salt Lake", 41.15, -112.55, "Largest U.S. salt lake.", "water"),
-  f("great-slave", "Great Slave Lake", 61.4, -114.0, "Deepest lake in North America.", "water"),
-  f("erie", "Lake Erie", 42.2, -81.2, "Shallowest Great Lake.", "water"),
-  f("huron", "Lake Huron", 44.8, -82.4, "Includes Georgian Bay.", "water"),
-  f("michigan", "Lake Michigan", 44.0, -87.0, "Entirely within the United States.", "water"),
-  f("nipigon", "Lake Nipigon", 49.8, -88.5, "Largest lake entirely in Ontario.", "water"),
-  f("okeechobee", "Lake Okeechobee", 26.93, -80.8, "Largest lake in Florida.", "water"),
-  f("ontario", "Lake Ontario", 43.7, -77.9, "Easternmost Great Lake.", "water"),
-  f("superior", "Lake Superior", 47.7, -87.5, "Largest Great Lake.", "water"),
-  f("winnipeg", "Lake Winnipeg", 52.5, -97.5, "Large lake in Manitoba.", "water"),
-  f("woods", "Lake of the Woods", 49.1, -94.8, "Lake on the U.S.–Canada border.", "water"),
-];
-
 const GREAT_LAKES = [
   f("superior", "Lake Superior", 47.7, -87.5, "Largest freshwater lake by surface area in the world.", "water"),
   f("michigan", "Lake Michigan", 44.0, -87.0, "The only Great Lake entirely within the United States.", "water"),
   f("huron", "Lake Huron", 44.8, -82.4, "Includes Georgian Bay; second-largest of the Great Lakes by area.", "water"),
   f("erie", "Lake Erie", 42.2, -81.2, "Shallowest of the Great Lakes and the warmest in summer.", "water"),
   f("ontario", "Lake Ontario", 43.7, -77.9, "Smallest Great Lake by area; drains to the Atlantic via the St. Lawrence.", "water"),
-];
-
-const WORLD_LAKES = [
-  f("aral", "Aral Sea", 45.0, 60.0, "Once a great lake; now largely dried.", "water"),
-  f("caspian", "Caspian Sea", 41.8, 50.5, "Largest inland body of water on Earth.", "water"),
-  f("baikal", "Lake Baikal", 53.5, 108.0, "Deepest and oldest freshwater lake.", "water"),
-  f("balkhash", "Lake Balkhash", 46.0, 74.0, "Large endorheic lake in Kazakhstan.", "water"),
-  f("chad", "Lake Chad", 13.0, 14.0, "Shallow African lake; size varies greatly.", "water", "Chad"),
-  f("erie", "Lake Erie", 42.2, -81.2, "Shallowest of the Great Lakes.", "water"),
-  f("great-bear", "Great Bear Lake", 66.0, -121.0, "Largest lake entirely in Canada.", "water"),
-  f("great-slave", "Great Slave Lake", 61.5, -114.0, "Deepest lake in North America.", "water"),
-  f("huron", "Lake Huron", 44.8, -82.4, "Second-largest Great Lake by area.", "water"),
-  f("ladoga", "Lake Ladoga", 61.0, 31.5, "Largest lake in Europe.", "water"),
-  f("malawi", "Lake Malawi", -12.0, 34.5, "Also called Lake Nyasa; African Rift lake.", "water", "Malawi"),
-  f("michigan", "Lake Michigan", 44.0, -87.0, "Third-largest Great Lake by area.", "water"),
-  f("nicaragua", "Lake Nicaragua", 11.6, -85.4, "Largest lake in Central America.", "water"),
-  f("ontario", "Lake Ontario", 43.7, -77.9, "Easternmost Great Lake.", "water"),
-  f("superior", "Lake Superior", 47.7, -87.5, "Largest freshwater lake by area.", "water"),
-  f("tanganyika", "Lake Tanganyika", -6.5, 29.8, "Longest freshwater lake; second-deepest.", "water"),
-  f("titicaca", "Lake Titicaca", -15.8, -69.4, "Highest large navigable lake; Andes.", "water"),
-  f("tonle-sap", "Tonlé Sap", 12.9, 104.1, "Southeast Asia’s largest freshwater lake.", "water"),
-  f("victoria", "Lake Victoria", -1.0, 33.0, "Largest lake in Africa by area.", "water"),
-  f("winnipeg", "Lake Winnipeg", 52.5, -97.5, "Large prairie lake in Manitoba.", "water"),
-];
-
-const US_RIVERS = [
-  f("arkansas", "Arkansas River", 35.4, -95.0, "Major Mississippi tributary of the southern plains.", "water"),
-  f("chattahoochee", "Chattahoochee River", 32.5, -85.0, "Forms part of the Georgia–Alabama border.", "water"),
-  f("colorado", "Colorado River", 36.1, -113.8, "Carved the Grand Canyon.", "water"),
-  f("columbia", "Columbia River", 45.7, -120.2, "Great river of the Pacific Northwest.", "water"),
-  f("delaware", "Delaware River", 40.2, -74.8, "River of the Mid-Atlantic states.", "water"),
-  f("mississippi", "Mississippi River", 35.0, -90.0, "From Minnesota to the Gulf of Mexico.", "water"),
-  f("missouri", "Missouri River", 42.0, -98.0, "Longest river in the United States.", "water"),
-  f("ohio", "Ohio River", 38.5, -85.0, "Forms much of the Midwest–South boundary.", "water"),
-  f("potomac", "Potomac River", 38.9, -77.1, "Flows past Washington, D.C.", "water"),
-  f("rio-grande", "Rio Grande", 29.0, -103.0, "Part of the U.S.–Mexico border.", "water"),
-  f("sacramento", "Sacramento River", 39.1, -121.8, "Principal river of California’s Central Valley.", "water"),
-  f("st-lawrence", "Saint Lawrence River", 44.8, -75.0, "Outlet of the Great Lakes.", "water"),
-  f("snake", "Snake River", 44.5, -117.0, "Columbia’s largest tributary.", "water"),
-  f("tennessee", "Tennessee River", 35.5, -87.0, "Major river of the American South.", "water"),
 ];
 
 const US_LANDMARKS = [
@@ -403,20 +328,6 @@ const US_LANDMARKS = [
   f("independence", "Independence Hall", 39.9489, -75.15, "Where the Declaration of Independence was adopted.", "landmark"),
   f("alamo", "The Alamo", 29.4259, -98.4861, "Mission and fortress in San Antonio.", "landmark"),
   f("niagara", "Niagara Falls", 43.0799, -79.0747, "Waterfalls on the U.S.–Canada border.", "landmark", "United States"),
-];
-
-const CA_RIVERS = [
-  f("athabasca", "Athabasca River", 56.7, -111.4, "Flows from the Columbia Icefield to Lake Athabasca.", "water"),
-  f("fraser", "Fraser River", 49.2, -122.9, "The main river of British Columbia.", "water"),
-  f("mackenzie", "Mackenzie River", 67.4, -133.7, "Canada’s longest river, flowing to the Arctic Ocean.", "water"),
-  f("nelson", "Nelson River", 56.5, -94.0, "Drains Lake Winnipeg toward Hudson Bay.", "water"),
-  f("ottawa-river", "Ottawa River", 45.6, -76.2, "Forms much of the Ontario–Quebec border.", "water"),
-  f("peace", "Peace River", 56.2, -117.3, "Major river of northern Alberta and B.C.", "water"),
-  f("red-river", "Red River", 49.0, -97.2, "Flows north into Lake Winnipeg.", "water"),
-  f("saint-john-river", "Saint John River", 46.3, -67.2, "Main river of New Brunswick.", "water"),
-  f("saskatchewan", "Saskatchewan River", 53.2, -105.0, "Prairie river formed by the North and South Saskatchewan.", "water"),
-  f("st-lawrence-ca", "Saint Lawrence River", 47.5, -69.5, "Outlet of the Great Lakes to the Atlantic.", "water"),
-  f("yukon-river", "Yukon River", 64.0, -139.4, "Rises in British Columbia and Yukon, then crosses Alaska.", "water"),
 ];
 
 const CA_LANDMARKS = [
@@ -492,27 +403,6 @@ const EUROPE_PHYSICAL = [
   f("seine", "Seine", 48.9, 2.3, "River of northern France.", "water"),
   f("gibraltar", "Strait of Gibraltar", 35.97, -5.58, "Gateway between the Atlantic and Mediterranean.", "water"),
   f("ural", "Ural Mountains", 60.0, 60.0, "Traditional Europe–Asia boundary.", "range"),
-  f("volga", "Volga", 56.0, 47.0, "Europe’s longest river.", "water"),
-];
-
-const EUROPE_RIVERS = [
-  f("danube", "Danube", 45.2, 19.5, "Passes four European capitals.", "water"),
-  f("dniester", "Dniester", 47.5, 29.0, "River of Ukraine and Moldova.", "water"),
-  f("dnipro", "Dnipro", 49.0, 32.5, "Major river of Ukraine.", "water"),
-  f("don", "Don", 47.5, 40.5, "River of southern Russia.", "water"),
-  f("ebro", "Ebro", 41.4, 0.3, "Spain’s longest river entirely in-country.", "water"),
-  f("elbe", "Elbe", 52.5, 12.0, "River of Czechia and Germany.", "water"),
-  f("loire", "Loire", 47.4, 0.8, "France’s longest river.", "water"),
-  f("oder", "Oder", 52.5, 14.6, "Border river of Poland and Germany.", "water"),
-  f("po", "Po", 45.0, 11.0, "Italy’s longest river.", "water"),
-  f("rhine", "Rhine", 50.0, 7.0, "Major river of Western Europe.", "water"),
-  f("rhone", "Rhône", 44.8, 4.8, "Flows from the Alps to the Mediterranean.", "water"),
-  f("seine", "Seine", 48.9, 2.3, "Flows through Paris.", "water"),
-  f("tagus", "Tagus", 39.5, -8.0, "Longest river of the Iberian Peninsula.", "water"),
-  f("thames", "Thames", 51.5, -0.1, "River of southern England.", "water"),
-  f("ural-river", "Ural", 51.5, 53.5, "River along the Europe–Asia boundary.", "water"),
-  f("vardar", "Vardar", 41.6, 21.7, "Principal river of North Macedonia.", "water"),
-  f("vistula", "Vistula", 52.2, 21.0, "Poland’s longest river.", "water"),
   f("volga", "Volga", 56.0, 47.0, "Europe’s longest river.", "water"),
 ];
 
@@ -654,23 +544,11 @@ const metas = [
     blurb: "Rivers, ranges, deserts, and oceans — Pin and Type.",
     items: WORLD_PHYSICAL,
   }),
-  writePack("world-rivers.json", {
-    id: "world-rivers",
-    name: "World: Rivers",
-    blurb: "The world’s great rivers.",
-    items: WORLD_RIVERS,
-  }),
   writePack("world-landmarks.json", {
     id: "world-landmarks",
     name: "World: Wonders and Landmarks",
     blurb: "Famous wonders and landmarks on the world map.",
     items: WORLD_LANDMARKS,
-  }),
-  writePack("world-lakes.json", {
-    id: "world-lakes",
-    name: "World: Lakes",
-    blurb: "Major lakes — Pin them or Type their names.",
-    items: WORLD_LAKES,
   }),
   writePack("na-physical.json", {
     id: "na-physical",
@@ -678,35 +556,17 @@ const metas = [
     blurb: "Mountains, rivers, lakes, and coasts of North America.",
     items: NA_PHYSICAL,
   }),
-  writePack("na-lakes.json", {
-    id: "na-lakes",
-    name: "North America: Lakes",
-    blurb: "The Great Lakes and other major North American lakes.",
-    items: NA_LAKES,
-  }),
   writePack("great-lakes.json", {
     id: "great-lakes",
     name: "The Great Lakes",
     blurb: "Superior, Michigan, Huron, Erie, and Ontario.",
     items: GREAT_LAKES,
   }),
-  writePack("us-rivers.json", {
-    id: "us-rivers",
-    name: "The Contiguous U.S.: Rivers",
-    blurb: "Major rivers of the lower 48.",
-    items: US_RIVERS,
-  }),
   writePack("us-landmarks.json", {
     id: "us-landmarks",
     name: "The U.S.: 12 Landmarks",
     blurb: "Iconic American landmarks.",
     items: US_LANDMARKS,
-  }),
-  writePack("canada-rivers.json", {
-    id: "canada-rivers",
-    name: "Canada: Rivers",
-    blurb: "Mackenzie, Fraser, Saint Lawrence, and more.",
-    items: CA_RIVERS,
   }),
   writePack("canada-landmarks.json", {
     id: "canada-landmarks",
@@ -731,12 +591,6 @@ const metas = [
     name: "Europe: Physical Features",
     blurb: "Seas, mountains, peninsulas, and rivers.",
     items: EUROPE_PHYSICAL,
-  }),
-  writePack("europe-rivers.json", {
-    id: "europe-rivers",
-    name: "Europe: Rivers",
-    blurb: "Volga, Danube, Rhine, and the rest.",
-    items: EUROPE_RIVERS,
   }),
   writePack("europe-landmarks.json", {
     id: "europe-landmarks",
@@ -777,10 +631,10 @@ const metas = [
 ];
 
 const byGroup = {
-  world: ["world-physical", "world-rivers", "world-lakes", "world-landmarks"],
-  "north-america": ["na-physical", "na-lakes", "great-lakes", "us-rivers", "us-landmarks", "canada-rivers", "canada-landmarks"],
+  world: ["world-physical", "world-landmarks"],
+  "north-america": ["na-physical", "great-lakes", "us-landmarks", "canada-landmarks"],
   "south-america": ["sa-physical", "sa-landmarks"],
-  europe: ["europe-physical", "europe-rivers", "europe-landmarks"],
+  europe: ["europe-physical", "europe-landmarks"],
   africa: ["africa-physical", "africa-landmarks"],
   asia: ["asia-physical", "asia-landmarks"],
   oceania: ["australia-physical"],
@@ -795,6 +649,7 @@ for (const pack of WATER_PACKS) {
       items: pack.items,
     })
   );
+  if (!byGroup[pack.group]) throw new Error(`Unknown group ${pack.group} for ${pack.id}`);
   byGroup[pack.group].push(pack.id);
 }
 
@@ -814,6 +669,27 @@ for (const [groupId, ids] of Object.entries(byGroup)) {
 }
 for (const pack of metas) upsert(packsFile.packs, pack);
 
+function toWaterwaysId(id) {
+  if (!isObsoleteWaterPackId(id)) return id;
+  return id.replace(/-(rivers|lakes)$/, "-waterways");
+}
+
+for (const g of packsFile.groups) {
+  g.packs = (g.packs || []).filter((p) => !isObsoleteWaterPackId(p.id));
+  for (const sec of g.sections || []) {
+    const next = [];
+    const seen = new Set();
+    for (const id of sec.packIds || []) {
+      const mapped = toWaterwaysId(id);
+      if (seen.has(mapped)) continue;
+      seen.add(mapped);
+      next.push(mapped);
+    }
+    sec.packIds = next;
+  }
+}
+packsFile.packs = (packsFile.packs || []).filter((p) => !isObsoleteWaterPackId(p.id));
+
 for (const pack of WATER_PACKS) {
   const g = packsFile.groups.find((x) => x.id === pack.group);
   const sec = (g?.sections || []).find((s) => s.name === pack.section);
@@ -821,16 +697,7 @@ for (const pack of WATER_PACKS) {
     console.warn(`  [geo] missing section ${pack.group} / ${pack.section} for ${pack.id}`);
     continue;
   }
-  if (sec.packIds.includes(pack.id)) continue;
-  const sibling = pack.id.endsWith("-lakes")
-    ? pack.id.replace(/-lakes$/, "-rivers")
-    : pack.id.endsWith("-rivers")
-      ? pack.id.replace(/-rivers$/, "-lakes")
-      : "";
-  const at = sibling ? sec.packIds.indexOf(sibling) : -1;
-  if (pack.id.endsWith("-lakes") && at >= 0) sec.packIds.splice(at + 1, 0, pack.id);
-  else if (pack.id.endsWith("-rivers") && at >= 0) sec.packIds.splice(at, 0, pack.id);
-  else sec.packIds.push(pack.id);
+  if (!sec.packIds.includes(pack.id)) sec.packIds.push(pack.id);
 }
 
 writeFileSync(path.join(OUT, "packs.json"), `${JSON.stringify(packsFile, null, 2)}\n`);

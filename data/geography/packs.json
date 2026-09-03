@@ -84,9 +84,9 @@
           "itemCount": 23
         },
         {
-          "id": "world-rivers",
-          "name": "World: Rivers",
-          "blurb": "The world’s great rivers.",
+          "id": "world-waterways",
+          "name": "World: Waterways",
+          "blurb": "Amazon, Nile, Aral Sea, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -97,23 +97,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 20
-        },
-        {
-          "id": "world-lakes",
-          "name": "World: Lakes",
-          "blurb": "Major lakes — Pin them or Type their names.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 20
+          "itemCount": 59
         },
         {
           "id": "world-landmarks",
@@ -223,8 +207,7 @@
           "name": "Physical features",
           "packIds": [
             "world-physical",
-            "world-rivers",
-            "world-lakes",
+            "world-waterways",
             "world-landmarks"
           ]
         },
@@ -294,9 +277,9 @@
           "itemCount": 30
         },
         {
-          "id": "na-rivers",
-          "name": "North America: Rivers",
-          "blurb": "Mississippi, Mackenzie, Rio Grande, and more.",
+          "id": "na-waterways",
+          "name": "North America: Waterways",
+          "blurb": "Mississippi, Mackenzie, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -307,23 +290,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 9
-        },
-        {
-          "id": "na-lakes",
-          "name": "North America: Lakes",
-          "blurb": "The Great Lakes and other major North American lakes.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 12
+          "itemCount": 21
         },
         {
           "id": "great-lakes",
@@ -403,9 +370,9 @@
           "itemCount": 3
         },
         {
-          "id": "northern-america-rivers",
-          "name": "Northern America: Rivers",
-          "blurb": "Mississippi, Mackenzie, St. Lawrence, Rio Grande.",
+          "id": "northern-america-waterways",
+          "name": "Northern America: Waterways",
+          "blurb": "Mississippi, Mackenzie, Atlantic Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -416,23 +383,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 6
-        },
-        {
-          "id": "northern-america-lakes",
-          "name": "Northern America: Lakes",
-          "blurb": "The Great Lakes plus Great Bear and Great Slave.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 7
+          "itemCount": 22
         },
         {
           "id": "central-america-countries",
@@ -496,9 +447,9 @@
           "itemCount": 7
         },
         {
-          "id": "central-america-rivers",
-          "name": "Central America: Rivers",
-          "blurb": "Usumacinta, San Juan, Coco, and more.",
+          "id": "central-america-waterways",
+          "name": "Central America: Waterways",
+          "blurb": "Usumacinta, San Juan River, Caribbean Sea, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -509,23 +460,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 5
-        },
-        {
-          "id": "central-america-lakes",
-          "name": "Central America: Lakes",
-          "blurb": "Nicaragua, Managua, Gatún, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 16
         },
         {
           "id": "caribbean-countries",
@@ -589,9 +524,9 @@
           "itemCount": 13
         },
         {
-          "id": "caribbean-rivers",
-          "name": "Caribbean: Rivers",
-          "blurb": "Cauto, Artibonite, and other island rivers.",
+          "id": "caribbean-waterways",
+          "name": "Caribbean: Waterways",
+          "blurb": "Cauto River, Artibonite, Caribbean Sea, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -602,23 +537,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 5
-        },
-        {
-          "id": "caribbean-lakes",
-          "name": "Caribbean: Lakes",
-          "blurb": "Enriquillo, Azuei, and other island lakes.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 17
         },
         {
           "id": "canada-provinces",
@@ -687,9 +606,9 @@
           "itemCount": 12
         },
         {
-          "id": "canada-rivers",
-          "name": "Canada: Rivers",
-          "blurb": "Mackenzie, Fraser, Saint Lawrence, and more.",
+          "id": "canada-waterways",
+          "name": "Canada: Waterways",
+          "blurb": "Athabasca River, Fraser River, Hudson Bay, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -700,23 +619,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 11
-        },
-        {
-          "id": "canada-lakes",
-          "name": "Canada: Lakes",
-          "blurb": "Great Bear, Great Slave, Winnipeg, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
+          "itemCount": 25
         },
         {
           "id": "canada-atlantic",
@@ -889,9 +792,9 @@
           "itemCount": 12
         },
         {
-          "id": "us-rivers",
-          "name": "The Contiguous U.S.: Rivers",
-          "blurb": "Major rivers of the lower 48.",
+          "id": "us-waterways",
+          "name": "The U.S.: Waterways",
+          "blurb": "Arkansas River, Chattahoochee River, Atlantic Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -902,23 +805,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 14
-        },
-        {
-          "id": "us-lakes",
-          "name": "The U.S.: Lakes",
-          "blurb": "Superior, Michigan, Great Salt Lake, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 8
+          "itemCount": 32
         },
         {
           "id": "us-northeast",
@@ -1175,8 +1062,7 @@
             "na-countries",
             "na-capitals",
             "na-physical",
-            "na-rivers",
-            "na-lakes",
+            "na-waterways",
             "great-lakes"
           ]
         },
@@ -1187,8 +1073,7 @@
             "northern-america-capitals",
             "northern-america-flags",
             "northern-america-outlines",
-            "northern-america-rivers",
-            "northern-america-lakes"
+            "northern-america-waterways"
           ]
         },
         {
@@ -1198,8 +1083,7 @@
             "central-america-capitals",
             "central-america-flags",
             "central-america-outlines",
-            "central-america-rivers",
-            "central-america-lakes"
+            "central-america-waterways"
           ]
         },
         {
@@ -1209,8 +1093,7 @@
             "caribbean-capitals",
             "caribbean-flags",
             "caribbean-outlines",
-            "caribbean-rivers",
-            "caribbean-lakes"
+            "caribbean-waterways"
           ]
         },
         {
@@ -1220,8 +1103,7 @@
             "canada-cities",
             "canada-cities-difficult",
             "canada-landmarks",
-            "canada-rivers",
-            "canada-lakes",
+            "canada-waterways",
             "canada-atlantic",
             "canada-east",
             "canada-prairies",
@@ -1237,8 +1119,7 @@
             "us-cities",
             "us-cities-difficult",
             "us-landmarks",
-            "us-rivers",
-            "us-lakes",
+            "us-waterways",
             "us-northeast",
             "us-midwest",
             "us-south",
@@ -1370,9 +1251,9 @@
           "itemCount": 18
         },
         {
-          "id": "sa-rivers",
-          "name": "South America: Rivers",
-          "blurb": "Amazon, Paraná, Orinoco, and more.",
+          "id": "sa-waterways",
+          "name": "South America: Waterways",
+          "blurb": "Amazon, Paraná, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -1383,23 +1264,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 8
-        },
-        {
-          "id": "sa-lakes",
-          "name": "South America: Lakes",
-          "blurb": "Titicaca, Maracaibo, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
+          "itemCount": 14
         },
         {
           "id": "latin-america-countries",
@@ -1463,9 +1328,9 @@
           "itemCount": 20
         },
         {
-          "id": "latin-america-rivers",
-          "name": "Latin America: Rivers",
-          "blurb": "Amazon, Paraná, Rio Grande, and more.",
+          "id": "latin-america-waterways",
+          "name": "Latin America: Waterways",
+          "blurb": "Amazon, Paraná, Atlantic Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -1476,23 +1341,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 6
-        },
-        {
-          "id": "latin-america-lakes",
-          "name": "Latin America: Lakes",
-          "blurb": "Titicaca, Nicaragua, Maracaibo, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 19
         },
         {
           "id": "sa-flags",
@@ -1534,8 +1383,7 @@
             "sa-cities-difficult",
             "sa-landmarks",
             "sa-physical",
-            "sa-rivers",
-            "sa-lakes"
+            "sa-waterways"
           ]
         },
         {
@@ -1545,8 +1393,7 @@
             "latin-america-capitals",
             "latin-america-flags",
             "latin-america-outlines",
-            "latin-america-rivers",
-            "latin-america-lakes"
+            "latin-america-waterways"
           ]
         },
         {
@@ -1660,9 +1507,9 @@
           "itemCount": 22
         },
         {
-          "id": "europe-rivers",
-          "name": "Europe: Rivers",
-          "blurb": "Volga, Danube, Rhine, and the rest.",
+          "id": "europe-waterways",
+          "name": "Europe: Waterways",
+          "blurb": "Danube, Dniester, Atlantic Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -1673,23 +1520,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 18
-        },
-        {
-          "id": "europe-lakes",
-          "name": "Europe: Lakes",
-          "blurb": "Ladoga, Vänern, Balaton, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 9
+          "itemCount": 41
         },
         {
           "id": "northern-europe-countries",
@@ -1753,9 +1584,9 @@
           "itemCount": 10
         },
         {
-          "id": "northern-europe-rivers",
-          "name": "Northern Europe: Rivers",
-          "blurb": "Thames, Glomma, Neva, and more.",
+          "id": "northern-europe-waterways",
+          "name": "Northern Europe: Waterways",
+          "blurb": "Thames, Glomma, North Sea, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -1766,23 +1597,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 6
-        },
-        {
-          "id": "northern-europe-lakes",
-          "name": "Northern Europe: Lakes",
-          "blurb": "Vänern, Ladoga, Saimaa, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
+          "itemCount": 22
         },
         {
           "id": "western-europe-countries",
@@ -1846,9 +1661,9 @@
           "itemCount": 9
         },
         {
-          "id": "western-europe-rivers",
-          "name": "Western Europe: Rivers",
-          "blurb": "Rhine, Seine, Loire, Rhône, and more.",
+          "id": "western-europe-waterways",
+          "name": "Western Europe: Waterways",
+          "blurb": "Rhine, Seine, Atlantic Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -1859,23 +1674,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 6
-        },
-        {
-          "id": "western-europe-lakes",
-          "name": "Western Europe: Lakes",
-          "blurb": "Geneva, Constance, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 16
         },
         {
           "id": "eastern-europe-countries",
@@ -1939,9 +1738,9 @@
           "itemCount": 10
         },
         {
-          "id": "eastern-europe-rivers",
-          "name": "Eastern Europe: Rivers",
-          "blurb": "Volga, Danube, Dnipro, Vistula, and more.",
+          "id": "eastern-europe-waterways",
+          "name": "Eastern Europe: Waterways",
+          "blurb": "Volga, Danube, Baltic Sea, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -1952,23 +1751,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 7
-        },
-        {
-          "id": "eastern-europe-lakes",
-          "name": "Eastern Europe: Lakes",
-          "blurb": "Balaton, Peipus, Onega, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 19
         },
         {
           "id": "southern-europe-countries",
@@ -2032,9 +1815,9 @@
           "itemCount": 18
         },
         {
-          "id": "southern-europe-rivers",
-          "name": "Southern Europe: Rivers",
-          "blurb": "Po, Tagus, Ebro, and more.",
+          "id": "southern-europe-waterways",
+          "name": "Southern Europe: Waterways",
+          "blurb": "Po, Ebro, Mediterranean Sea, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -2045,23 +1828,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 6
-        },
-        {
-          "id": "southern-europe-lakes",
-          "name": "Southern Europe: Lakes",
-          "blurb": "Garda, Ohrid, Skadar, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 20
         },
         {
           "id": "nordic-countries",
@@ -2123,6 +1890,22 @@
             "study"
           ],
           "itemCount": 5
+        },
+        {
+          "id": "nordic-waterways",
+          "name": "The Nordic Countries: Waterways",
+          "blurb": "Glomma, Kemijoki, Norwegian Sea, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 13
         },
         {
           "id": "eu-countries",
@@ -2214,7 +1997,7 @@
           "itemCount": 46
         }
       ],
-      "blurb": "Countries, cities, regions, rivers, and landmarks.",
+      "blurb": "Countries, cities, regions, waterways, and landmarks.",
       "sections": [
         {
           "name": "The continent",
@@ -2225,8 +2008,7 @@
             "europe-cities-difficult",
             "europe-landmarks",
             "europe-physical",
-            "europe-rivers",
-            "europe-lakes"
+            "europe-waterways"
           ]
         },
         {
@@ -2236,8 +2018,7 @@
             "northern-europe-capitals",
             "northern-europe-flags",
             "northern-europe-outlines",
-            "northern-europe-rivers",
-            "northern-europe-lakes"
+            "northern-europe-waterways"
           ]
         },
         {
@@ -2247,8 +2028,7 @@
             "western-europe-capitals",
             "western-europe-flags",
             "western-europe-outlines",
-            "western-europe-rivers",
-            "western-europe-lakes"
+            "western-europe-waterways"
           ]
         },
         {
@@ -2258,8 +2038,7 @@
             "eastern-europe-capitals",
             "eastern-europe-flags",
             "eastern-europe-outlines",
-            "eastern-europe-rivers",
-            "eastern-europe-lakes"
+            "eastern-europe-waterways"
           ]
         },
         {
@@ -2269,8 +2048,7 @@
             "southern-europe-capitals",
             "southern-europe-flags",
             "southern-europe-outlines",
-            "southern-europe-rivers",
-            "southern-europe-lakes"
+            "southern-europe-waterways"
           ]
         },
         {
@@ -2279,7 +2057,8 @@
             "nordic-countries",
             "nordic-capitals",
             "nordic-flags",
-            "nordic-outlines"
+            "nordic-outlines",
+            "nordic-waterways"
           ]
         },
         {
@@ -2402,9 +2181,9 @@
           "itemCount": 23
         },
         {
-          "id": "africa-rivers",
-          "name": "Africa: Rivers",
-          "blurb": "Nile, Congo, Niger, Zambezi, and more.",
+          "id": "africa-waterways",
+          "name": "Africa: Waterways",
+          "blurb": "Nile, Congo, Atlantic Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -2415,23 +2194,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 9
-        },
-        {
-          "id": "africa-lakes",
-          "name": "Africa: Lakes",
-          "blurb": "Victoria, Tanganyika, Malawi, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 8
+          "itemCount": 27
         },
         {
           "id": "northern-africa-countries",
@@ -2495,9 +2258,9 @@
           "itemCount": 7
         },
         {
-          "id": "northern-africa-rivers",
-          "name": "Northern Africa: Rivers",
-          "blurb": "Nile, Senegal, and the Maghreb’s wadis.",
+          "id": "northern-africa-waterways",
+          "name": "Northern Africa: Waterways",
+          "blurb": "Nile, Senegal River, Mediterranean Sea, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -2508,23 +2271,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 5
-        },
-        {
-          "id": "northern-africa-lakes",
-          "name": "Northern Africa: Lakes",
-          "blurb": "Nasser, Chad, and the Maghreb’s great chotts.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 17
         },
         {
           "id": "western-africa-countries",
@@ -2588,9 +2335,9 @@
           "itemCount": 15
         },
         {
-          "id": "western-africa-rivers",
-          "name": "Western Africa: Rivers",
-          "blurb": "Niger, Senegal, Volta, and more.",
+          "id": "western-africa-waterways",
+          "name": "Western Africa: Waterways",
+          "blurb": "Niger, Senegal River, Atlantic Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -2601,23 +2348,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 5
-        },
-        {
-          "id": "western-africa-lakes",
-          "name": "Western Africa: Lakes",
-          "blurb": "Volta, Chad, Kainji, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 14
         },
         {
           "id": "central-africa-countries",
@@ -2681,9 +2412,9 @@
           "itemCount": 8
         },
         {
-          "id": "central-africa-rivers",
-          "name": "Central Africa: Rivers",
-          "blurb": "Congo, Ubangi, Kasai, and more.",
+          "id": "central-africa-waterways",
+          "name": "Central Africa: Waterways",
+          "blurb": "Congo, Ubangi, Atlantic Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -2694,23 +2425,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 5
-        },
-        {
-          "id": "central-africa-lakes",
-          "name": "Central Africa: Lakes",
-          "blurb": "Tanganyika, Kivu, Mai-Ndombe, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 12
         },
         {
           "id": "eastern-africa-countries",
@@ -2774,9 +2489,9 @@
           "itemCount": 15
         },
         {
-          "id": "eastern-africa-rivers",
-          "name": "Eastern Africa: Rivers",
-          "blurb": "Nile, Jubba, and the Rift rivers.",
+          "id": "eastern-africa-waterways",
+          "name": "Eastern Africa: Waterways",
+          "blurb": "Nile, Blue Nile, Indian Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -2787,23 +2502,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 5
-        },
-        {
-          "id": "eastern-africa-lakes",
-          "name": "Eastern Africa: Lakes",
-          "blurb": "Victoria, Tanganyika, Malawi, Turkana.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
+          "itemCount": 16
         },
         {
           "id": "southern-africa-countries",
@@ -2867,9 +2566,9 @@
           "itemCount": 5
         },
         {
-          "id": "southern-africa-rivers",
-          "name": "Southern Africa: Rivers",
-          "blurb": "Zambezi, Orange, Limpopo, and more.",
+          "id": "southern-africa-waterways",
+          "name": "Southern Africa: Waterways",
+          "blurb": "Zambezi, Orange River, Indian Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -2880,23 +2579,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 5
-        },
-        {
-          "id": "southern-africa-lakes",
-          "name": "Southern Africa: Lakes",
-          "blurb": "Malawi, Kariba, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 16
         },
         {
           "id": "africa-north-equator-countries",
@@ -2960,6 +2643,22 @@
           "itemCount": 30
         },
         {
+          "id": "africa-north-equator-waterways",
+          "name": "Africa North Of the Equator: Waterways",
+          "blurb": "Nile, Niger, Mediterranean Sea, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 11
+        },
+        {
           "id": "africa-south-equator-countries",
           "name": "Africa South Of the Equator: Countries",
           "blurb": "Countries of Africa south of the equator — Pin and Type.",
@@ -3021,6 +2720,22 @@
           "itemCount": 20
         },
         {
+          "id": "africa-south-equator-waterways",
+          "name": "Africa South Of the Equator: Waterways",
+          "blurb": "Congo, Zambezi, Indian Ocean, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 9
+        },
+        {
           "id": "africa-flags",
           "name": "Africa: Flags",
           "blurb": "Flags of Africa.",
@@ -3060,8 +2775,7 @@
             "africa-cities-difficult",
             "africa-landmarks",
             "africa-physical",
-            "africa-rivers",
-            "africa-lakes"
+            "africa-waterways"
           ]
         },
         {
@@ -3071,8 +2785,7 @@
             "northern-africa-capitals",
             "northern-africa-flags",
             "northern-africa-outlines",
-            "northern-africa-rivers",
-            "northern-africa-lakes"
+            "northern-africa-waterways"
           ]
         },
         {
@@ -3082,8 +2795,7 @@
             "western-africa-capitals",
             "western-africa-flags",
             "western-africa-outlines",
-            "western-africa-rivers",
-            "western-africa-lakes"
+            "western-africa-waterways"
           ]
         },
         {
@@ -3093,8 +2805,7 @@
             "central-africa-capitals",
             "central-africa-flags",
             "central-africa-outlines",
-            "central-africa-rivers",
-            "central-africa-lakes"
+            "central-africa-waterways"
           ]
         },
         {
@@ -3104,8 +2815,7 @@
             "eastern-africa-capitals",
             "eastern-africa-flags",
             "eastern-africa-outlines",
-            "eastern-africa-rivers",
-            "eastern-africa-lakes"
+            "eastern-africa-waterways"
           ]
         },
         {
@@ -3115,8 +2825,7 @@
             "southern-africa-capitals",
             "southern-africa-flags",
             "southern-africa-outlines",
-            "southern-africa-rivers",
-            "southern-africa-lakes"
+            "southern-africa-waterways"
           ]
         },
         {
@@ -3125,7 +2834,8 @@
             "africa-north-equator-countries",
             "africa-north-equator-capitals",
             "africa-north-equator-flags",
-            "africa-north-equator-outlines"
+            "africa-north-equator-outlines",
+            "africa-north-equator-waterways"
           ]
         },
         {
@@ -3134,7 +2844,8 @@
             "africa-south-equator-countries",
             "africa-south-equator-capitals",
             "africa-south-equator-flags",
-            "africa-south-equator-outlines"
+            "africa-south-equator-outlines",
+            "africa-south-equator-waterways"
           ]
         },
         {
@@ -3248,9 +2959,9 @@
           "itemCount": 28
         },
         {
-          "id": "asia-rivers",
-          "name": "Asia: Rivers",
-          "blurb": "Yangtze, Mekong, Ganges, and the rest.",
+          "id": "asia-waterways",
+          "name": "Asia: Waterways",
+          "blurb": "Yangtze, Yellow River, Caspian Sea, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -3261,23 +2972,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 12
-        },
-        {
-          "id": "asia-lakes",
-          "name": "Asia: Lakes",
-          "blurb": "Baikal, the Caspian, and other Asian lakes.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 10
+          "itemCount": 38
         },
         {
           "id": "east-asia-countries",
@@ -3341,9 +3036,9 @@
           "itemCount": 6
         },
         {
-          "id": "east-asia-rivers",
-          "name": "East Asia: Rivers",
-          "blurb": "Yangtze, Yellow River, Amur, and more.",
+          "id": "east-asia-waterways",
+          "name": "East Asia: Waterways",
+          "blurb": "Yangtze, Yellow River, Pacific Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -3354,23 +3049,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 8
-        },
-        {
-          "id": "east-asia-lakes",
-          "name": "East Asia: Lakes",
-          "blurb": "Qinghai, Poyang, Biwa, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
+          "itemCount": 24
         },
         {
           "id": "southeast-asia-countries",
@@ -3434,9 +3113,9 @@
           "itemCount": 11
         },
         {
-          "id": "southeast-asia-rivers",
-          "name": "Southeast Asia: Rivers",
-          "blurb": "Mekong, Irrawaddy, Chao Phraya, and more.",
+          "id": "southeast-asia-waterways",
+          "name": "Southeast Asia: Waterways",
+          "blurb": "Mekong, Irrawaddy, Laguna de Bay, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -3447,23 +3126,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 7
-        },
-        {
-          "id": "southeast-asia-lakes",
-          "name": "Southeast Asia: Lakes",
-          "blurb": "Tonlé Sap, Toba, and other regional lakes.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 24
         },
         {
           "id": "south-asia-countries",
@@ -3527,9 +3190,9 @@
           "itemCount": 8
         },
         {
-          "id": "south-asia-rivers",
-          "name": "South Asia: Rivers",
-          "blurb": "Ganges, Indus, Brahmaputra, and more.",
+          "id": "south-asia-waterways",
+          "name": "South Asia: Waterways",
+          "blurb": "Ganges, Indus, Bay of Bengal, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -3540,23 +3203,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 7
-        },
-        {
-          "id": "south-asia-lakes",
-          "name": "South Asia: Lakes",
-          "blurb": "Chilika, Wular, and other South Asian lakes.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 18
         },
         {
           "id": "central-asia-countries",
@@ -3620,9 +3267,9 @@
           "itemCount": 5
         },
         {
-          "id": "central-asia-rivers",
-          "name": "Central Asia: Rivers",
-          "blurb": "Amu Darya, Syr Darya, Irtysh, and more.",
+          "id": "central-asia-waterways",
+          "name": "Central Asia: Waterways",
+          "blurb": "Amu Darya, Syr Darya, Caspian Sea, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -3633,23 +3280,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 6
-        },
-        {
-          "id": "central-asia-lakes",
-          "name": "Central Asia: Lakes",
-          "blurb": "Caspian, Aral, Balkhash, and Issyk-Kul.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
+          "itemCount": 12
         },
         {
           "id": "middle-east-countries",
@@ -3713,9 +3344,9 @@
           "itemCount": 16
         },
         {
-          "id": "middle-east-rivers",
-          "name": "The Middle East: Rivers",
-          "blurb": "Tigris, Euphrates, Jordan, and more.",
+          "id": "middle-east-waterways",
+          "name": "The Middle East: Waterways",
+          "blurb": "Tigris, Euphrates, Dead Sea, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -3726,23 +3357,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 7
-        },
-        {
-          "id": "middle-east-lakes",
-          "name": "The Middle East: Lakes",
-          "blurb": "Dead Sea, Van, Urmia, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
+          "itemCount": 23
         },
         {
           "id": "mena-countries",
@@ -3806,6 +3421,22 @@
           "itemCount": 20
         },
         {
+          "id": "mena-waterways",
+          "name": "The Middle East and North Africa: Waterways",
+          "blurb": "Nile, Tigris, Dead Sea, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 14
+        },
+        {
           "id": "asia-flags",
           "name": "Asia: Flags",
           "blurb": "Flags of Asia.",
@@ -3845,8 +3476,7 @@
             "asia-cities-difficult",
             "asia-landmarks",
             "asia-physical",
-            "asia-rivers",
-            "asia-lakes"
+            "asia-waterways"
           ]
         },
         {
@@ -3856,8 +3486,7 @@
             "east-asia-capitals",
             "east-asia-flags",
             "east-asia-outlines",
-            "east-asia-rivers",
-            "east-asia-lakes"
+            "east-asia-waterways"
           ]
         },
         {
@@ -3867,8 +3496,7 @@
             "southeast-asia-capitals",
             "southeast-asia-flags",
             "southeast-asia-outlines",
-            "southeast-asia-rivers",
-            "southeast-asia-lakes"
+            "southeast-asia-waterways"
           ]
         },
         {
@@ -3878,8 +3506,7 @@
             "south-asia-capitals",
             "south-asia-flags",
             "south-asia-outlines",
-            "south-asia-rivers",
-            "south-asia-lakes"
+            "south-asia-waterways"
           ]
         },
         {
@@ -3889,8 +3516,7 @@
             "central-asia-capitals",
             "central-asia-flags",
             "central-asia-outlines",
-            "central-asia-rivers",
-            "central-asia-lakes"
+            "central-asia-waterways"
           ]
         },
         {
@@ -3900,8 +3526,7 @@
             "middle-east-capitals",
             "middle-east-flags",
             "middle-east-outlines",
-            "middle-east-rivers",
-            "middle-east-lakes"
+            "middle-east-waterways"
           ]
         },
         {
@@ -3910,7 +3535,8 @@
             "mena-countries",
             "mena-capitals",
             "mena-flags",
-            "mena-outlines"
+            "mena-outlines",
+            "mena-waterways"
           ]
         },
         {
@@ -3993,9 +3619,9 @@
           "itemCount": 22
         },
         {
-          "id": "oceania-rivers",
-          "name": "Oceania: Rivers",
-          "blurb": "Murray, Darling, Waikato, and more.",
+          "id": "oceania-waterways",
+          "name": "Oceania: Waterways",
+          "blurb": "Murray, Darling, Pacific Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -4006,23 +3632,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 8
-        },
-        {
-          "id": "oceania-lakes",
-          "name": "Oceania: Lakes",
-          "blurb": "Eyre, Taupō, Argyle, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
+          "itemCount": 25
         },
         {
           "id": "australia-cities",
@@ -4150,9 +3760,9 @@
           "itemCount": 26
         },
         {
-          "id": "australia-rivers",
-          "name": "Australia: Rivers",
-          "blurb": "Murray, Darling, and the rest.",
+          "id": "australia-waterways",
+          "name": "Australia: Waterways",
+          "blurb": "Murray, Darling, Indian Ocean, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -4163,23 +3773,7 @@
             "choice",
             "study"
           ],
-          "itemCount": 6
-        },
-        {
-          "id": "australia-lakes",
-          "name": "Australia: Lakes",
-          "blurb": "Eyre, Torrens, Argyle, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
+          "itemCount": 22
         },
         {
           "id": "melanesia-countries",
@@ -4241,6 +3835,22 @@
             "study"
           ],
           "itemCount": 4
+        },
+        {
+          "id": "melanesia-waterways",
+          "name": "Melanesia: Waterways",
+          "blurb": "Sepik, Coral Sea, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 6
         },
         {
           "id": "micronesia-countries",
@@ -4416,8 +4026,7 @@
             "oceania-capitals",
             "oceania-territories",
             "oceania-territories-capitals",
-            "oceania-rivers",
-            "oceania-lakes"
+            "oceania-waterways"
           ]
         },
         {
@@ -4431,8 +4040,7 @@
             "australia-surrounding-flags",
             "australia-surrounding-outlines",
             "australia-physical",
-            "australia-rivers",
-            "australia-lakes"
+            "australia-waterways"
           ]
         },
         {
@@ -4441,7 +4049,8 @@
             "melanesia-countries",
             "melanesia-capitals",
             "melanesia-flags",
-            "melanesia-outlines"
+            "melanesia-outlines",
+            "melanesia-waterways"
           ]
         },
         {
@@ -5044,22 +4653,6 @@
       "itemCount": 7
     },
     {
-      "id": "world-lakes",
-      "name": "World: Lakes",
-      "blurb": "Major lakes — Pin them or Type their names.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 20
-    },
-    {
       "id": "world-physical",
       "name": "World: Physical Features",
       "blurb": "Rivers, ranges, deserts, and oceans — Pin and Type.",
@@ -5280,57 +4873,9 @@
       "itemCount": 14
     },
     {
-      "id": "world-rivers",
-      "name": "World: Rivers",
-      "blurb": "The world’s great rivers.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 20
-    },
-    {
       "id": "world-landmarks",
       "name": "World: Wonders and Landmarks",
       "blurb": "Famous wonders and landmarks on the world map.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 14
-    },
-    {
-      "id": "na-lakes",
-      "name": "North America: Lakes",
-      "blurb": "The Great Lakes and other major North American lakes.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 12
-    },
-    {
-      "id": "us-rivers",
-      "name": "The Contiguous U.S.: Rivers",
-      "blurb": "Major rivers of the lower 48.",
       "map": "world-countries",
       "overlay": "markers",
       "quiz": "places",
@@ -5406,22 +4951,6 @@
         "study"
       ],
       "itemCount": 22
-    },
-    {
-      "id": "europe-rivers",
-      "name": "Europe: Rivers",
-      "blurb": "Volga, Danube, Rhine, and the rest.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 18
     },
     {
       "id": "europe-landmarks",
@@ -6620,22 +6149,6 @@
       "itemCount": 8
     },
     {
-      "id": "canada-rivers",
-      "name": "Canada: Rivers",
-      "blurb": "Mackenzie, Fraser, Saint Lawrence, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 11
-    },
-    {
       "id": "canada-landmarks",
       "name": "Canada: 12 Landmarks",
       "blurb": "CN Tower, Parliament Hill, Banff, and more.",
@@ -6804,806 +6317,6 @@
         "study"
       ],
       "itemCount": 42
-    },
-    {
-      "id": "asia-rivers",
-      "name": "Asia: Rivers",
-      "blurb": "Yangtze, Mekong, Ganges, and the rest.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 12
-    },
-    {
-      "id": "asia-lakes",
-      "name": "Asia: Lakes",
-      "blurb": "Baikal, the Caspian, and other Asian lakes.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 10
-    },
-    {
-      "id": "east-asia-rivers",
-      "name": "East Asia: Rivers",
-      "blurb": "Yangtze, Yellow River, Amur, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 8
-    },
-    {
-      "id": "east-asia-lakes",
-      "name": "East Asia: Lakes",
-      "blurb": "Qinghai, Poyang, Biwa, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "southeast-asia-rivers",
-      "name": "Southeast Asia: Rivers",
-      "blurb": "Mekong, Irrawaddy, Chao Phraya, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 7
-    },
-    {
-      "id": "southeast-asia-lakes",
-      "name": "Southeast Asia: Lakes",
-      "blurb": "Tonlé Sap, Toba, and other regional lakes.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "south-asia-rivers",
-      "name": "South Asia: Rivers",
-      "blurb": "Ganges, Indus, Brahmaputra, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 7
-    },
-    {
-      "id": "south-asia-lakes",
-      "name": "South Asia: Lakes",
-      "blurb": "Chilika, Wular, and other South Asian lakes.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "central-asia-rivers",
-      "name": "Central Asia: Rivers",
-      "blurb": "Amu Darya, Syr Darya, Irtysh, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "central-asia-lakes",
-      "name": "Central Asia: Lakes",
-      "blurb": "Caspian, Aral, Balkhash, and Issyk-Kul.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "middle-east-rivers",
-      "name": "The Middle East: Rivers",
-      "blurb": "Tigris, Euphrates, Jordan, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 7
-    },
-    {
-      "id": "middle-east-lakes",
-      "name": "The Middle East: Lakes",
-      "blurb": "Dead Sea, Van, Urmia, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "africa-rivers",
-      "name": "Africa: Rivers",
-      "blurb": "Nile, Congo, Niger, Zambezi, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 9
-    },
-    {
-      "id": "africa-lakes",
-      "name": "Africa: Lakes",
-      "blurb": "Victoria, Tanganyika, Malawi, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 8
-    },
-    {
-      "id": "northern-africa-rivers",
-      "name": "Northern Africa: Rivers",
-      "blurb": "Nile, Senegal, and the Maghreb’s wadis.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "western-africa-rivers",
-      "name": "Western Africa: Rivers",
-      "blurb": "Niger, Senegal, Volta, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "central-africa-rivers",
-      "name": "Central Africa: Rivers",
-      "blurb": "Congo, Ubangi, Kasai, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "eastern-africa-rivers",
-      "name": "Eastern Africa: Rivers",
-      "blurb": "Nile, Jubba, and the Rift rivers.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "southern-africa-rivers",
-      "name": "Southern Africa: Rivers",
-      "blurb": "Zambezi, Orange, Limpopo, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "eastern-africa-lakes",
-      "name": "Eastern Africa: Lakes",
-      "blurb": "Victoria, Tanganyika, Malawi, Turkana.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "northern-africa-lakes",
-      "name": "Northern Africa: Lakes",
-      "blurb": "Nasser, Chad, and the Maghreb’s great chotts.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "western-africa-lakes",
-      "name": "Western Africa: Lakes",
-      "blurb": "Volta, Chad, Kainji, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "central-africa-lakes",
-      "name": "Central Africa: Lakes",
-      "blurb": "Tanganyika, Kivu, Mai-Ndombe, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "southern-africa-lakes",
-      "name": "Southern Africa: Lakes",
-      "blurb": "Malawi, Kariba, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "europe-lakes",
-      "name": "Europe: Lakes",
-      "blurb": "Ladoga, Vänern, Balaton, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 9
-    },
-    {
-      "id": "northern-europe-rivers",
-      "name": "Northern Europe: Rivers",
-      "blurb": "Thames, Glomma, Neva, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "western-europe-rivers",
-      "name": "Western Europe: Rivers",
-      "blurb": "Rhine, Seine, Loire, Rhône, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "eastern-europe-rivers",
-      "name": "Eastern Europe: Rivers",
-      "blurb": "Volga, Danube, Dnipro, Vistula, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 7
-    },
-    {
-      "id": "southern-europe-rivers",
-      "name": "Southern Europe: Rivers",
-      "blurb": "Po, Tagus, Ebro, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "western-europe-lakes",
-      "name": "Western Europe: Lakes",
-      "blurb": "Geneva, Constance, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "eastern-europe-lakes",
-      "name": "Eastern Europe: Lakes",
-      "blurb": "Balaton, Peipus, Onega, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "southern-europe-lakes",
-      "name": "Southern Europe: Lakes",
-      "blurb": "Garda, Ohrid, Skadar, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "northern-europe-lakes",
-      "name": "Northern Europe: Lakes",
-      "blurb": "Vänern, Ladoga, Saimaa, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "na-rivers",
-      "name": "North America: Rivers",
-      "blurb": "Mississippi, Mackenzie, Rio Grande, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 9
-    },
-    {
-      "id": "northern-america-rivers",
-      "name": "Northern America: Rivers",
-      "blurb": "Mississippi, Mackenzie, St. Lawrence, Rio Grande.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "northern-america-lakes",
-      "name": "Northern America: Lakes",
-      "blurb": "The Great Lakes plus Great Bear and Great Slave.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 7
-    },
-    {
-      "id": "central-america-lakes",
-      "name": "Central America: Lakes",
-      "blurb": "Nicaragua, Managua, Gatún, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "central-america-rivers",
-      "name": "Central America: Rivers",
-      "blurb": "Usumacinta, San Juan, Coco, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "canada-lakes",
-      "name": "Canada: Lakes",
-      "blurb": "Great Bear, Great Slave, Winnipeg, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "us-lakes",
-      "name": "The U.S.: Lakes",
-      "blurb": "Superior, Michigan, Great Salt Lake, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 8
-    },
-    {
-      "id": "sa-rivers",
-      "name": "South America: Rivers",
-      "blurb": "Amazon, Paraná, Orinoco, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 8
-    },
-    {
-      "id": "sa-lakes",
-      "name": "South America: Lakes",
-      "blurb": "Titicaca, Maracaibo, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "latin-america-rivers",
-      "name": "Latin America: Rivers",
-      "blurb": "Amazon, Paraná, Rio Grande, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "latin-america-lakes",
-      "name": "Latin America: Lakes",
-      "blurb": "Titicaca, Nicaragua, Maracaibo, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "oceania-rivers",
-      "name": "Oceania: Rivers",
-      "blurb": "Murray, Darling, Waikato, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 8
-    },
-    {
-      "id": "oceania-lakes",
-      "name": "Oceania: Lakes",
-      "blurb": "Eyre, Taupō, Argyle, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "australia-rivers",
-      "name": "Australia: Rivers",
-      "blurb": "Murray, Darling, and the rest.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 6
-    },
-    {
-      "id": "australia-lakes",
-      "name": "Australia: Lakes",
-      "blurb": "Eyre, Torrens, Argyle, and more.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "caribbean-rivers",
-      "name": "Caribbean: Rivers",
-      "blurb": "Cauto, Artibonite, and other island rivers.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
-    },
-    {
-      "id": "caribbean-lakes",
-      "name": "Caribbean: Lakes",
-      "blurb": "Enriquillo, Azuei, and other island lakes.",
-      "map": "world-countries",
-      "overlay": "markers",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 5
     },
     {
       "id": "northern-america-flags",
@@ -8406,6 +7119,534 @@
         "study"
       ],
       "itemCount": 9
+    },
+    {
+      "id": "asia-waterways",
+      "name": "Asia: Waterways",
+      "blurb": "Yangtze, Yellow River, Caspian Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 38
+    },
+    {
+      "id": "east-asia-waterways",
+      "name": "East Asia: Waterways",
+      "blurb": "Yangtze, Yellow River, Pacific Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 24
+    },
+    {
+      "id": "southeast-asia-waterways",
+      "name": "Southeast Asia: Waterways",
+      "blurb": "Mekong, Irrawaddy, Laguna de Bay, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 24
+    },
+    {
+      "id": "south-asia-waterways",
+      "name": "South Asia: Waterways",
+      "blurb": "Ganges, Indus, Bay of Bengal, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 18
+    },
+    {
+      "id": "central-asia-waterways",
+      "name": "Central Asia: Waterways",
+      "blurb": "Amu Darya, Syr Darya, Caspian Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "middle-east-waterways",
+      "name": "The Middle East: Waterways",
+      "blurb": "Tigris, Euphrates, Dead Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 23
+    },
+    {
+      "id": "africa-waterways",
+      "name": "Africa: Waterways",
+      "blurb": "Nile, Congo, Atlantic Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 27
+    },
+    {
+      "id": "northern-africa-waterways",
+      "name": "Northern Africa: Waterways",
+      "blurb": "Nile, Senegal River, Mediterranean Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 17
+    },
+    {
+      "id": "western-africa-waterways",
+      "name": "Western Africa: Waterways",
+      "blurb": "Niger, Senegal River, Atlantic Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 14
+    },
+    {
+      "id": "central-africa-waterways",
+      "name": "Central Africa: Waterways",
+      "blurb": "Congo, Ubangi, Atlantic Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 12
+    },
+    {
+      "id": "eastern-africa-waterways",
+      "name": "Eastern Africa: Waterways",
+      "blurb": "Nile, Blue Nile, Indian Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 16
+    },
+    {
+      "id": "southern-africa-waterways",
+      "name": "Southern Africa: Waterways",
+      "blurb": "Zambezi, Orange River, Indian Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 16
+    },
+    {
+      "id": "europe-waterways",
+      "name": "Europe: Waterways",
+      "blurb": "Danube, Dniester, Atlantic Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 41
+    },
+    {
+      "id": "northern-europe-waterways",
+      "name": "Northern Europe: Waterways",
+      "blurb": "Thames, Glomma, North Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 22
+    },
+    {
+      "id": "western-europe-waterways",
+      "name": "Western Europe: Waterways",
+      "blurb": "Rhine, Seine, Atlantic Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 16
+    },
+    {
+      "id": "eastern-europe-waterways",
+      "name": "Eastern Europe: Waterways",
+      "blurb": "Volga, Danube, Baltic Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 19
+    },
+    {
+      "id": "southern-europe-waterways",
+      "name": "Southern Europe: Waterways",
+      "blurb": "Po, Ebro, Mediterranean Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 20
+    },
+    {
+      "id": "na-waterways",
+      "name": "North America: Waterways",
+      "blurb": "Mississippi, Mackenzie, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 21
+    },
+    {
+      "id": "northern-america-waterways",
+      "name": "Northern America: Waterways",
+      "blurb": "Mississippi, Mackenzie, Atlantic Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 22
+    },
+    {
+      "id": "central-america-waterways",
+      "name": "Central America: Waterways",
+      "blurb": "Usumacinta, San Juan River, Caribbean Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 16
+    },
+    {
+      "id": "caribbean-waterways",
+      "name": "Caribbean: Waterways",
+      "blurb": "Cauto River, Artibonite, Caribbean Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 17
+    },
+    {
+      "id": "canada-waterways",
+      "name": "Canada: Waterways",
+      "blurb": "Athabasca River, Fraser River, Hudson Bay, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 25
+    },
+    {
+      "id": "us-waterways",
+      "name": "The U.S.: Waterways",
+      "blurb": "Arkansas River, Chattahoochee River, Atlantic Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 32
+    },
+    {
+      "id": "sa-waterways",
+      "name": "South America: Waterways",
+      "blurb": "Amazon, Paraná, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 14
+    },
+    {
+      "id": "latin-america-waterways",
+      "name": "Latin America: Waterways",
+      "blurb": "Amazon, Paraná, Atlantic Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 19
+    },
+    {
+      "id": "oceania-waterways",
+      "name": "Oceania: Waterways",
+      "blurb": "Murray, Darling, Pacific Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 25
+    },
+    {
+      "id": "australia-waterways",
+      "name": "Australia: Waterways",
+      "blurb": "Murray, Darling, Indian Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 22
+    },
+    {
+      "id": "world-waterways",
+      "name": "World: Waterways",
+      "blurb": "Amazon, Nile, Aral Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 59
+    },
+    {
+      "id": "nordic-waterways",
+      "name": "The Nordic Countries: Waterways",
+      "blurb": "Glomma, Kemijoki, Norwegian Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 13
+    },
+    {
+      "id": "mena-waterways",
+      "name": "The Middle East and North Africa: Waterways",
+      "blurb": "Nile, Tigris, Dead Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 14
+    },
+    {
+      "id": "africa-north-equator-waterways",
+      "name": "Africa North Of the Equator: Waterways",
+      "blurb": "Nile, Niger, Mediterranean Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 11
+    },
+    {
+      "id": "africa-south-equator-waterways",
+      "name": "Africa South Of the Equator: Waterways",
+      "blurb": "Congo, Zambezi, Indian Ocean, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 9
+    },
+    {
+      "id": "melanesia-waterways",
+      "name": "Melanesia: Waterways",
+      "blurb": "Sepik, Coral Sea, and more.",
+      "map": "world-countries",
+      "overlay": "markers",
+      "quiz": "places",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "study"
+      ],
+      "itemCount": 6
     }
   ]
 }

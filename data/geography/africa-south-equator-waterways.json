@@ -1,0 +1,145 @@
+{
+  "id": "africa-south-equator-waterways",
+  "name": "Africa South Of the Equator: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "congo",
+      "name": "Congo",
+      "fact": "Deepest river; second-largest by discharge.",
+      "kind": "water",
+      "lat": -2,
+      "lon": 18,
+      "x": 549.2,
+      "y": 262.4,
+      "facts": [
+        "Deepest river; second-largest by discharge.",
+        "Africa’s second-longest river.",
+        "Forms stretches of the Republic of the Congo–DRC border."
+      ],
+      "border": true,
+      "waterway": "Congo",
+      "country": "DR Congo"
+    },
+    {
+      "id": "zambezi",
+      "name": "Zambezi",
+      "fact": "Home of Victoria Falls.",
+      "kind": "water",
+      "lat": -16,
+      "lon": 28.5,
+      "x": 577,
+      "y": 306.7,
+      "facts": [
+        "Home of Victoria Falls.",
+        "Africa’s fourth-longest river.",
+        "Forms stretches of the Zambia–Zimbabwe border."
+      ],
+      "border": true,
+      "waterway": "Zambezi",
+      "country": "Zambia"
+    },
+    {
+      "id": "orange",
+      "name": "Orange River",
+      "fact": "Longest river in South Africa.",
+      "kind": "water",
+      "lat": -28.6,
+      "lon": 17.6,
+      "x": 546.3,
+      "y": 346.8,
+      "facts": [
+        "Longest river in South Africa."
+      ],
+      "border": true,
+      "waterway": "Orange",
+      "country": "Namibia"
+    },
+    {
+      "id": "victoria",
+      "name": "Lake Victoria",
+      "fact": "Largest lake in Africa by area.",
+      "kind": "water",
+      "lat": -1,
+      "lon": 33,
+      "x": 590.2,
+      "y": 259.2,
+      "facts": [
+        "Largest lake in Africa by area.",
+        "Source of the White Nile."
+      ],
+      "country": "Uganda"
+    },
+    {
+      "id": "tanganyika",
+      "name": "Lake Tanganyika",
+      "fact": "Longest freshwater lake; second-deepest.",
+      "kind": "water",
+      "lat": -6.5,
+      "lon": 29.8,
+      "x": 581.3,
+      "y": 276.6,
+      "facts": [
+        "Longest freshwater lake; second-deepest.",
+        "An African Rift lake shared by four countries."
+      ],
+      "country": "Tanzania"
+    },
+    {
+      "id": "malawi",
+      "name": "Lake Malawi",
+      "fact": "Also called Lake Nyasa; African Rift lake.",
+      "kind": "water",
+      "lat": -12,
+      "lon": 34.5,
+      "x": 593.7,
+      "y": 294,
+      "facts": [
+        "Also called Lake Nyasa; African Rift lake.",
+        "Among the world’s deepest lakes."
+      ],
+      "country": "Malawi"
+    },
+    {
+      "id": "indian-ocean",
+      "name": "Indian Ocean",
+      "fact": "Ocean east of southern Africa.",
+      "kind": "water",
+      "lat": -15,
+      "lon": 50,
+      "x": 635.3,
+      "y": 303.5,
+      "facts": [
+        "Ocean east of southern Africa."
+      ]
+    },
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean west of Angola and Namibia.",
+      "kind": "water",
+      "lat": -10,
+      "lon": 8,
+      "x": 521.8,
+      "y": 287.7,
+      "facts": [
+        "Ocean west of Angola and Namibia."
+      ]
+    },
+    {
+      "id": "mozambique-channel",
+      "name": "Mozambique Channel",
+      "fact": "Between Mozambique and Madagascar.",
+      "kind": "water",
+      "lat": -17,
+      "lon": 42,
+      "x": 613.3,
+      "y": 309.9,
+      "facts": [
+        "Between Mozambique and Madagascar."
+      ]
+    }
+  ]
+}

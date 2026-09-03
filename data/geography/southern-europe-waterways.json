@@ -1,0 +1,293 @@
+{
+  "id": "southern-europe-waterways",
+  "name": "Southern Europe: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "po",
+      "name": "Po",
+      "fact": "Italy’s longest river.",
+      "kind": "water",
+      "lat": 45,
+      "lon": 11,
+      "x": 527.1,
+      "y": 113.3,
+      "facts": [
+        "Italy’s longest river.",
+        "Drains the North Italian Plain to the Adriatic."
+      ],
+      "waterway": "Po",
+      "country": "Italy"
+    },
+    {
+      "id": "ebro",
+      "name": "Ebro",
+      "fact": "Spain’s longest river entirely in-country.",
+      "kind": "water",
+      "lat": 41.4,
+      "lon": 0.3,
+      "x": 500.8,
+      "y": 124.6,
+      "facts": [
+        "Spain’s longest river entirely in-country.",
+        "Flows to the Mediterranean."
+      ],
+      "waterway": "Ebro",
+      "country": "Spain"
+    },
+    {
+      "id": "tagus",
+      "name": "Tagus",
+      "fact": "Longest river of the Iberian Peninsula.",
+      "kind": "water",
+      "lat": 39.5,
+      "lon": -8,
+      "x": 479.8,
+      "y": 130.6,
+      "facts": [
+        "Longest river of the Iberian Peninsula.",
+        "Flows through Toledo and Lisbon."
+      ],
+      "country": "Portugal"
+    },
+    {
+      "id": "tiber",
+      "name": "Tiber",
+      "fact": "The river of Rome.",
+      "kind": "water",
+      "lat": 41.9,
+      "lon": 12.5,
+      "x": 531.3,
+      "y": 123,
+      "facts": [
+        "The river of Rome.",
+        "Empties into the Tyrrhenian Sea."
+      ],
+      "country": "Italy"
+    },
+    {
+      "id": "vardar",
+      "name": "Vardar",
+      "fact": "Principal river of North Macedonia.",
+      "kind": "water",
+      "lat": 41.6,
+      "lon": 21.7,
+      "x": 554.3,
+      "y": 124,
+      "facts": [
+        "Principal river of North Macedonia.",
+        "Flows to the Aegean in Greece as the Axios."
+      ],
+      "country": "North Macedonia"
+    },
+    {
+      "id": "guadalquivir",
+      "name": "Guadalquivir",
+      "fact": "The great river of Andalusia.",
+      "kind": "water",
+      "lat": 37.5,
+      "lon": -6,
+      "x": 484.7,
+      "y": 136.9,
+      "facts": [
+        "The great river of Andalusia.",
+        "Navigable to Seville."
+      ],
+      "country": "Spain"
+    },
+    {
+      "id": "garda",
+      "name": "Lake Garda",
+      "fact": "Largest lake in Italy.",
+      "kind": "water",
+      "lat": 45.7,
+      "lon": 10.7,
+      "x": 526.3,
+      "y": 111.1,
+      "facts": [
+        "Largest lake in Italy.",
+        "In the north, at the foot of the Alps."
+      ],
+      "country": "Italy"
+    },
+    {
+      "id": "ohrid",
+      "name": "Lake Ohrid",
+      "fact": "One of Europe’s oldest lakes.",
+      "kind": "water",
+      "lat": 41,
+      "lon": 20.7,
+      "x": 552,
+      "y": 125.9,
+      "facts": [
+        "One of Europe’s oldest lakes.",
+        "Shared by North Macedonia and Albania."
+      ],
+      "country": "North Macedonia"
+    },
+    {
+      "id": "skadar",
+      "name": "Lake Skadar",
+      "fact": "Largest lake in the Balkans.",
+      "kind": "water",
+      "lat": 42.2,
+      "lon": 19.3,
+      "x": 548.2,
+      "y": 122.1,
+      "facts": [
+        "Largest lake in the Balkans.",
+        "Shared by Montenegro and Albania."
+      ],
+      "country": "Albania"
+    },
+    {
+      "id": "maggiore",
+      "name": "Lake Maggiore",
+      "fact": "Second-largest lake in Italy.",
+      "kind": "water",
+      "lat": 46.1,
+      "lon": 8.65,
+      "x": 521.2,
+      "y": 109.9,
+      "facts": [
+        "Second-largest lake in Italy.",
+        "Shared with Switzerland."
+      ],
+      "country": "Italy"
+    },
+    {
+      "id": "como",
+      "name": "Lake Como",
+      "fact": "A deep glacial lake in Lombardy.",
+      "kind": "water",
+      "lat": 46,
+      "lon": 9.27,
+      "x": 522.7,
+      "y": 110.2,
+      "facts": [
+        "A deep glacial lake in Lombardy.",
+        "Famous for its Y-shape and villas."
+      ],
+      "country": "Italy"
+    },
+    {
+      "id": "mediterranean",
+      "name": "Mediterranean Sea",
+      "fact": "Sea south of Europe.",
+      "kind": "water",
+      "lat": 38,
+      "lon": 15,
+      "x": 538.2,
+      "y": 135.4,
+      "facts": [
+        "Sea south of Europe."
+      ]
+    },
+    {
+      "id": "adriatic",
+      "name": "Adriatic Sea",
+      "fact": "Between Italy and the Balkans.",
+      "kind": "water",
+      "lat": 43,
+      "lon": 15.5,
+      "x": 538.6,
+      "y": 119.6,
+      "facts": [
+        "Between Italy and the Balkans."
+      ]
+    },
+    {
+      "id": "tyrrhenian",
+      "name": "Tyrrhenian Sea",
+      "fact": "Between mainland Italy, Sardinia, and Sicily.",
+      "kind": "water",
+      "lat": 40,
+      "lon": 12,
+      "x": 530.3,
+      "y": 129,
+      "facts": [
+        "Between mainland Italy, Sardinia, and Sicily."
+      ]
+    },
+    {
+      "id": "ionian",
+      "name": "Ionian Sea",
+      "fact": "Between Italy and Greece.",
+      "kind": "water",
+      "lat": 38,
+      "lon": 18,
+      "x": 545.8,
+      "y": 135.4,
+      "facts": [
+        "Between Italy and Greece."
+      ]
+    },
+    {
+      "id": "aegean",
+      "name": "Aegean Sea",
+      "fact": "Between Greece and Turkey.",
+      "kind": "water",
+      "lat": 38,
+      "lon": 25,
+      "x": 563.6,
+      "y": 135.4,
+      "facts": [
+        "Between Greece and Turkey."
+      ]
+    },
+    {
+      "id": "gibraltar",
+      "name": "Strait of Gibraltar",
+      "fact": "Between Spain and Morocco.",
+      "kind": "water",
+      "lat": 35.97,
+      "lon": -5.58,
+      "x": 485.7,
+      "y": 141.8,
+      "facts": [
+        "Between Spain and Morocco."
+      ]
+    },
+    {
+      "id": "messina",
+      "name": "Strait of Messina",
+      "fact": "Between Sicily and the Italian mainland.",
+      "kind": "water",
+      "lat": 38.2,
+      "lon": 15.6,
+      "x": 539.7,
+      "y": 134.7,
+      "facts": [
+        "Between Sicily and the Italian mainland."
+      ]
+    },
+    {
+      "id": "otranto",
+      "name": "Strait of Otranto",
+      "fact": "The Adriatic’s gate to the Ionian Sea.",
+      "kind": "water",
+      "lat": 40.15,
+      "lon": 18.9,
+      "x": 547.6,
+      "y": 128.6,
+      "facts": [
+        "The Adriatic’s gate to the Ionian Sea."
+      ]
+    },
+    {
+      "id": "gulf-lions",
+      "name": "Gulf of Lion",
+      "fact": "Mediterranean gulf of southern France.",
+      "kind": "water",
+      "lat": 43,
+      "lon": 4,
+      "x": 510,
+      "y": 119.6,
+      "facts": [
+        "Mediterranean gulf of southern France."
+      ]
+    }
+  ]
+}

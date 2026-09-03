@@ -70,7 +70,7 @@ const GREAT_LAKES = [
   },
 ];
 
-// Lake packs (world-lakes, great-lakes) are written by scripts/build-geography-features.mjs
+// Waterways and Great Lakes packs are written by scripts/build-geography-features.mjs
 // onto world-countries with the same border overlay as pin/study.
 
 // —— World lakes (markers on world canvas) ——
@@ -420,16 +420,6 @@ const extraByGroup = {
       quiz: "places",
       modes: ["pin", "type", "name", "choice", "study"],
       itemCount: CARTOON.length,
-    },
-    {
-      id: "world-lakes",
-      name: "World: Lakes",
-      blurb: "Major lakes — Pin them or Type their names.",
-      map: "world-countries",
-      overlay: "markers",
-      quiz: "places",
-      modes: ["pin", "type", "name", "choice", "study"],
-      itemCount: WORLD_LAKES.length,
     },
     outlinePacks[0],
   ],

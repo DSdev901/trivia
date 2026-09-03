@@ -1,0 +1,214 @@
+{
+  "id": "western-africa-waterways",
+  "name": "Western Africa: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "niger",
+      "name": "Niger",
+      "fact": "Principal river of West Africa.",
+      "kind": "water",
+      "lat": 16,
+      "lon": 4,
+      "x": 510.8,
+      "y": 205.4,
+      "facts": [
+        "Principal river of West Africa.",
+        "The “Boomerang” river, rising in the Guinea Highlands."
+      ],
+      "waterway": "Niger",
+      "country": "Niger"
+    },
+    {
+      "id": "senegal-r",
+      "name": "Senegal River",
+      "fact": "Forms most of the Senegal–Mauritania border.",
+      "kind": "water",
+      "lat": 16.5,
+      "lon": -14.5,
+      "x": 460.8,
+      "y": 203.8,
+      "facts": [
+        "Forms most of the Senegal–Mauritania border."
+      ],
+      "border": true,
+      "waterway": "Sénégal",
+      "country": "Senegal"
+    },
+    {
+      "id": "volta",
+      "name": "Volta",
+      "fact": "Principal river of Ghana.",
+      "kind": "water",
+      "lat": 7.2,
+      "lon": 0.3,
+      "x": 500.8,
+      "y": 233.2,
+      "facts": [
+        "Principal river of Ghana."
+      ],
+      "waterway": "Volta",
+      "country": "Ghana"
+    },
+    {
+      "id": "gambia-r",
+      "name": "Gambia River",
+      "fact": "The river that gives The Gambia its shape.",
+      "kind": "water",
+      "lat": 13.45,
+      "lon": -16.6,
+      "x": 455,
+      "y": 213.4,
+      "facts": [
+        "The river that gives The Gambia its shape.",
+        "Navigable far inland."
+      ],
+      "country": "Gambia"
+    },
+    {
+      "id": "benue",
+      "name": "Benue",
+      "fact": "The Niger’s longest tributary.",
+      "kind": "water",
+      "lat": 7.8,
+      "lon": 8.3,
+      "x": 522.6,
+      "y": 231.3,
+      "facts": [
+        "The Niger’s longest tributary.",
+        "Joins the Niger at Lokoja, Nigeria."
+      ],
+      "country": "Nigeria"
+    },
+    {
+      "id": "volta-lake",
+      "name": "Lake Volta",
+      "fact": "Among the world’s largest reservoirs by area.",
+      "kind": "water",
+      "lat": 7,
+      "lon": 0,
+      "x": 500,
+      "y": 233.9,
+      "facts": [
+        "Among the world’s largest reservoirs by area.",
+        "On the Volta in Ghana, behind Akosombo Dam."
+      ],
+      "country": "Ghana"
+    },
+    {
+      "id": "chad",
+      "name": "Lake Chad",
+      "fact": "Shallow African lake; size varies greatly.",
+      "kind": "water",
+      "lat": 13,
+      "lon": 14,
+      "x": 538,
+      "y": 214.9,
+      "facts": [
+        "Shallow African lake; size varies greatly.",
+        "Shared by Chad, Cameroon, Niger, and Nigeria."
+      ],
+      "country": "Chad"
+    },
+    {
+      "id": "kainji",
+      "name": "Kainji Lake",
+      "fact": "Nigeria’s largest lake.",
+      "kind": "water",
+      "lat": 10.4,
+      "lon": 4.5,
+      "x": 512.2,
+      "y": 223.1,
+      "facts": [
+        "Nigeria’s largest lake.",
+        "A Niger River reservoir behind Kainji Dam."
+      ],
+      "country": "Nigeria"
+    },
+    {
+      "id": "bosumtwi",
+      "name": "Lake Bosumtwi",
+      "fact": "Ghana’s only natural lake.",
+      "kind": "water",
+      "lat": 6.505,
+      "lon": -1.409,
+      "x": 496.2,
+      "y": 235.4,
+      "facts": [
+        "Ghana’s only natural lake.",
+        "In a meteorite crater near Kumasi."
+      ],
+      "country": "Ghana"
+    },
+    {
+      "id": "kossou",
+      "name": "Lake Kossou",
+      "fact": "Largest lake in Côte d’Ivoire.",
+      "kind": "water",
+      "lat": 7.2,
+      "lon": -5.5,
+      "x": 485,
+      "y": 233.2,
+      "facts": [
+        "Largest lake in Côte d’Ivoire.",
+        "A Bandama River reservoir."
+      ],
+      "country": "Ivory Coast"
+    },
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean west of West Africa.",
+      "kind": "water",
+      "lat": 10,
+      "lon": -20,
+      "x": 445.6,
+      "y": 224.4,
+      "facts": [
+        "Ocean west of West Africa."
+      ]
+    },
+    {
+      "id": "gulf-guinea",
+      "name": "Gulf of Guinea",
+      "fact": "Atlantic gulf of the West African coast.",
+      "kind": "water",
+      "lat": 3,
+      "lon": 3,
+      "x": 508.2,
+      "y": 246.5,
+      "facts": [
+        "Atlantic gulf of the West African coast."
+      ]
+    },
+    {
+      "id": "bight-benin",
+      "name": "Bight of Benin",
+      "fact": "The western curve of the Gulf of Guinea.",
+      "kind": "water",
+      "lat": 5.5,
+      "lon": 3,
+      "x": 508.2,
+      "y": 238.6,
+      "facts": [
+        "The western curve of the Gulf of Guinea."
+      ]
+    },
+    {
+      "id": "bight-biafra",
+      "name": "Bight of Biafra",
+      "fact": "The eastern curve of the Gulf of Guinea.",
+      "kind": "water",
+      "lat": 3.5,
+      "lon": 8,
+      "x": 521.9,
+      "y": 245,
+      "facts": [
+        "The eastern curve of the Gulf of Guinea.",
+        "Also called the Bight of Bonny."
+      ]
+    }
+  ]
+}

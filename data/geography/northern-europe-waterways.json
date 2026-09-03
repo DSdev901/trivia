@@ -1,0 +1,325 @@
+{
+  "id": "northern-europe-waterways",
+  "name": "Northern Europe: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "thames",
+      "name": "Thames",
+      "fact": "River of southern England.",
+      "kind": "water",
+      "lat": 51.5,
+      "lon": -0.1,
+      "x": 499.8,
+      "y": 93.3,
+      "facts": [
+        "River of southern England.",
+        "Flows through London to the North Sea."
+      ],
+      "waterway": "Thames",
+      "country": "United Kingdom"
+    },
+    {
+      "id": "glomma",
+      "name": "Glomma",
+      "fact": "Longest river in Norway.",
+      "kind": "water",
+      "lat": 59.9,
+      "lon": 11.2,
+      "x": 525.1,
+      "y": 68.3,
+      "facts": [
+        "Longest river in Norway.",
+        "Empties into the Oslofjord."
+      ],
+      "waterway": "Glomma",
+      "country": "Norway"
+    },
+    {
+      "id": "neva",
+      "name": "Neva",
+      "fact": "Short river from Ladoga through St. Petersburg.",
+      "kind": "water",
+      "lat": 59.9,
+      "lon": 30.3,
+      "x": 567.9,
+      "y": 68.3,
+      "facts": [
+        "Short river from Ladoga through St. Petersburg.",
+        "Among Europe’s greatest by discharge."
+      ],
+      "waterway": "Neva",
+      "country": "Russia"
+    },
+    {
+      "id": "daugava",
+      "name": "Daugava",
+      "fact": "Principal river of Latvia.",
+      "kind": "water",
+      "lat": 56.9,
+      "lon": 24.1,
+      "x": 555.2,
+      "y": 77.1,
+      "facts": [
+        "Principal river of Latvia.",
+        "Rises in Russia and crosses Belarus."
+      ],
+      "waterway": "Daugava",
+      "country": "Latvia"
+    },
+    {
+      "id": "shannon",
+      "name": "Shannon",
+      "fact": "Longest river in Ireland.",
+      "kind": "water",
+      "lat": 52.7,
+      "lon": -8.2,
+      "x": 480.7,
+      "y": 89.6,
+      "facts": [
+        "Longest river in Ireland.",
+        "Flows south to the Atlantic."
+      ],
+      "country": "Ireland"
+    },
+    {
+      "id": "kemijoki",
+      "name": "Kemijoki",
+      "fact": "Longest river in Finland.",
+      "kind": "water",
+      "lat": 66.5,
+      "lon": 25.8,
+      "x": 554.8,
+      "y": 49.7,
+      "facts": [
+        "Longest river in Finland.",
+        "Flows to the Gulf of Bothnia at Kemi."
+      ],
+      "country": "Finland"
+    },
+    {
+      "id": "ladoga",
+      "name": "Lake Ladoga",
+      "fact": "Largest lake in Europe.",
+      "kind": "water",
+      "lat": 61,
+      "lon": 31.5,
+      "x": 570,
+      "y": 65.2,
+      "facts": [
+        "Largest lake in Europe.",
+        "In northwestern Russia, near St. Petersburg."
+      ],
+      "country": "Russia"
+    },
+    {
+      "id": "onega",
+      "name": "Lake Onega",
+      "fact": "Second-largest lake in Europe.",
+      "kind": "water",
+      "lat": 61.7,
+      "lon": 35.5,
+      "x": 578.5,
+      "y": 63.2,
+      "facts": [
+        "Second-largest lake in Europe."
+      ],
+      "country": "Russia"
+    },
+    {
+      "id": "vanern",
+      "name": "Vänern",
+      "fact": "Largest lake in the European Union.",
+      "kind": "water",
+      "lat": 58.9,
+      "lon": 13.3,
+      "x": 530,
+      "y": 71.2,
+      "facts": [
+        "Largest lake in the European Union."
+      ],
+      "country": "Sweden"
+    },
+    {
+      "id": "vattern",
+      "name": "Vättern",
+      "fact": "Sweden’s second-largest lake.",
+      "kind": "water",
+      "lat": 58.3,
+      "lon": 14.5,
+      "x": 532.9,
+      "y": 73,
+      "facts": [
+        "Sweden’s second-largest lake."
+      ],
+      "country": "Sweden"
+    },
+    {
+      "id": "saimaa",
+      "name": "Saimaa",
+      "fact": "Largest lake in Finland.",
+      "kind": "water",
+      "lat": 61.3,
+      "lon": 28,
+      "x": 562.1,
+      "y": 64.3,
+      "facts": [
+        "Largest lake in Finland.",
+        "A labyrinth of islands and channels."
+      ],
+      "country": "Finland"
+    },
+    {
+      "id": "peipus",
+      "name": "Lake Peipus",
+      "fact": "Largest transboundary lake in Europe.",
+      "kind": "water",
+      "lat": 58.7,
+      "lon": 27.5,
+      "x": 562.2,
+      "y": 71.8,
+      "facts": [
+        "Largest transboundary lake in Europe.",
+        "Shared by Estonia and Russia."
+      ],
+      "country": "Russia"
+    },
+    {
+      "id": "north-sea",
+      "name": "North Sea",
+      "fact": "Between Britain and Scandinavia.",
+      "kind": "water",
+      "lat": 56,
+      "lon": 3,
+      "x": 506.9,
+      "y": 79.8,
+      "facts": [
+        "Between Britain and Scandinavia."
+      ]
+    },
+    {
+      "id": "baltic",
+      "name": "Baltic Sea",
+      "fact": "Sea of the Nordic and Baltic coasts.",
+      "kind": "water",
+      "lat": 58,
+      "lon": 20,
+      "x": 545.5,
+      "y": 73.9,
+      "facts": [
+        "Sea of the Nordic and Baltic coasts."
+      ]
+    },
+    {
+      "id": "norwegian-sea",
+      "name": "Norwegian Sea",
+      "fact": "Sea west of Norway.",
+      "kind": "water",
+      "lat": 67,
+      "lon": 3,
+      "x": 506.3,
+      "y": 48.4,
+      "facts": [
+        "Sea west of Norway."
+      ]
+    },
+    {
+      "id": "arctic-ocean",
+      "name": "Arctic Ocean",
+      "fact": "Ocean north of Norway and Svalbard.",
+      "kind": "water",
+      "lat": 75,
+      "lon": 10,
+      "x": 519.6,
+      "y": 27.3,
+      "facts": [
+        "Ocean north of Norway and Svalbard."
+      ]
+    },
+    {
+      "id": "english-channel",
+      "name": "English Channel",
+      "fact": "Between Great Britain and France.",
+      "kind": "water",
+      "lat": 50.2,
+      "lon": -1,
+      "x": 497.6,
+      "y": 97.2,
+      "facts": [
+        "Between Great Britain and France."
+      ]
+    },
+    {
+      "id": "irish-sea",
+      "name": "Irish Sea",
+      "fact": "Between Ireland and Great Britain.",
+      "kind": "water",
+      "lat": 53.5,
+      "lon": -5,
+      "x": 488.3,
+      "y": 87.2,
+      "facts": [
+        "Between Ireland and Great Britain."
+      ]
+    },
+    {
+      "id": "skagerrak",
+      "name": "Skagerrak",
+      "fact": "Between Norway, Sweden, and Denmark’s Jutland.",
+      "kind": "water",
+      "lat": 57.8,
+      "lon": 9,
+      "x": 520.5,
+      "y": 74.4,
+      "facts": [
+        "Between Norway, Sweden, and Denmark’s Jutland."
+      ],
+      "country": "Norway"
+    },
+    {
+      "id": "kattegat",
+      "name": "Kattegat",
+      "fact": "Between Denmark and Sweden.",
+      "kind": "water",
+      "lat": 56.5,
+      "lon": 11.5,
+      "x": 526.4,
+      "y": 78.3,
+      "facts": [
+        "Between Denmark and Sweden.",
+        "The Baltic’s gate to the Skagerrak."
+      ],
+      "country": "Denmark"
+    },
+    {
+      "id": "gulf-bothnia",
+      "name": "Gulf of Bothnia",
+      "fact": "Northern arm of the Baltic.",
+      "kind": "water",
+      "lat": 62,
+      "lon": 20,
+      "x": 544.1,
+      "y": 62.3,
+      "facts": [
+        "Northern arm of the Baltic.",
+        "Between Sweden and Finland."
+      ]
+    },
+    {
+      "id": "gulf-finland",
+      "name": "Gulf of Finland",
+      "fact": "Eastern arm of the Baltic.",
+      "kind": "water",
+      "lat": 59.8,
+      "lon": 26,
+      "x": 558.3,
+      "y": 68.6,
+      "facts": [
+        "Eastern arm of the Baltic.",
+        "Toward St. Petersburg, Tallinn, and Helsinki."
+      ]
+    }
+  ]
+}
