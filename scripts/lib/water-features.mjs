@@ -97,7 +97,7 @@ export const WATER_FACTS = {
   danube: [
     "Europe’s second-longest river.",
     "Passes four European capitals.",
-    "Forms stretches of several national borders, including Romania–Bulgaria.",
+    "Europe’s deepest river.",
   ],
   indus: ["Principal river of Pakistan.", "Cradle of the Indus Valley civilization."],
   rhine: [
