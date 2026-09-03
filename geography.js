@@ -3444,8 +3444,9 @@ function fillWaterMenu(item) {
   const menu = geo.root?.querySelector("#geo-water-menu");
   if (!menu) return;
   const html = waterMenuHtml(item);
-  menu.hidden = !html;
   menu.innerHTML = html;
+  if (geo.mode === "pin") menu.hidden = false;
+  else menu.hidden = !html;
 }
 
 function studyDetailHtml(item) {
@@ -3572,7 +3573,9 @@ function renderPlay() {
        </div>`
     : prompt;
   const waterDock = isWaterPack() && showMap
-    ? `<div class="geo-water-menu" id="geo-water-menu" hidden></div>`
+    ? `<div class="geo-water-menu" id="geo-water-menu"${
+        geo.mode === "pin" ? "" : " hidden"
+      }></div>`
     : "";
   const answerHtml = showMap
     ? `<div class="geo-answer-bar">

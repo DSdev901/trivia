@@ -3386,6 +3386,7 @@ a.ce-tab {
 
 .geo-play--map {
   --geo-map-menu-h: min(42dvh, 16.9rem);
+  --geo-map-choice-h: calc(3.35rem * 2 + 0.5rem);
 }
 
 .geo-pack-grid,
@@ -4378,6 +4379,19 @@ a.ce-tab {
   display: none;
 }
 
+.geo-play--map.geo-play--pin.geo-play--water .geo-water-menu,
+.geo-play--map.geo-play--pin.geo-play--water .geo-water-menu:empty,
+.geo-play--map.geo-play--pin.geo-play--water .geo-water-menu[hidden] {
+  display: block;
+  visibility: visible;
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--geo-map-choice-h);
+  min-height: var(--geo-map-choice-h);
+  max-height: var(--geo-map-choice-h);
+  overflow-y: auto;
+}
+
 .geo-water-menu .geo-water-facts {
   margin: 0;
   gap: 0.45rem;
@@ -4923,7 +4937,8 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     padding-bottom: 0.1rem;
   }
 
-  .geo-play--map.geo-play--water.is-answered .geo-answer-bar {
+  .geo-play--map.geo-play--water.is-answered .geo-answer-bar,
+  .geo-play--map.geo-play--pin.geo-play--water .geo-answer-bar {
     display: flex;
   }
 
@@ -4932,11 +4947,22 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     box-sizing: border-box;
     width: 100%;
     flex: 1 1 auto;
-    min-height: calc(3.35rem * 2 + 0.5rem);
+    min-height: var(--geo-map-choice-h);
     max-height: var(--geo-map-menu-h);
     overflow-y: auto;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
+    padding: 0.45rem 0.55rem 0.35rem;
+    background: transparent;
+  }
+
+  .geo-play--map.geo-play--pin.geo-play--water .geo-water-menu,
+  .geo-play--map.geo-play--pin.geo-play--water .geo-water-menu:empty,
+  .geo-play--map.geo-play--pin.geo-play--water .geo-water-menu[hidden] {
+    flex: 0 0 var(--geo-map-choice-h);
+    height: var(--geo-map-choice-h);
+    min-height: var(--geo-map-choice-h);
+    max-height: var(--geo-map-choice-h);
     padding: 0.45rem 0.55rem 0.35rem;
     background: transparent;
   }
@@ -5107,7 +5133,7 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     background: var(--paper);
   }
 
-  .geo-play--map .geo-answer-bar:not(:has(.geo-quiz-actions)):not(:has(.geo-next-row:not([hidden]))):not(:has(.geo-water-menu:not([hidden]))) {
+  .geo-play--map:not(.geo-play--pin.geo-play--water) .geo-answer-bar:not(:has(.geo-quiz-actions)):not(:has(.geo-next-row:not([hidden]))):not(:has(.geo-water-menu:not([hidden]))) {
     display: none;
   }
 
@@ -6099,11 +6125,13 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
 }
 
 /* Waterways: facts dock matches the map multiple-choice grid. */
-.geo-play--map.geo-play--water.is-answered .geo-answer-bar {
+.geo-play--map.geo-play--water.is-answered .geo-answer-bar,
+.geo-play--map.geo-play--pin.geo-play--water .geo-answer-bar {
   display: flex;
 }
 
-.geo-play--map.geo-play--water.is-answered .geo-answer-cluster {
+.geo-play--map.geo-play--water.is-answered .geo-answer-cluster,
+.geo-play--map.geo-play--pin.geo-play--water .geo-answer-cluster {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -6116,7 +6144,17 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
   box-sizing: border-box;
   width: 100%;
   flex: 1 1 auto;
-  min-height: calc(3.35rem * 2 + 0.5rem);
+  min-height: var(--geo-map-choice-h);
   max-height: var(--geo-map-menu-h);
   overflow-y: auto;
+}
+
+.geo-play--map.geo-play--pin.geo-play--water .geo-water-menu,
+.geo-play--map.geo-play--pin.geo-play--water .geo-water-menu:empty,
+.geo-play--map.geo-play--pin.geo-play--water .geo-water-menu[hidden] {
+  display: block;
+  flex: 0 0 var(--geo-map-choice-h);
+  height: var(--geo-map-choice-h);
+  min-height: var(--geo-map-choice-h);
+  max-height: var(--geo-map-choice-h);
 }
