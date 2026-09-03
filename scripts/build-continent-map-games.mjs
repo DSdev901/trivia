@@ -272,14 +272,20 @@ const SECTIONS = {
       packIds: ["na-countries", "na-capitals", "na-physical", "na-lakes", "great-lakes"],
     },
     {
-      name: "Regions",
+      name: "Northern America",
+      packIds: ["northern-america-countries", "northern-america-capitals"],
+    },
+    {
+      name: "Central America",
+      packIds: ["central-america-countries", "central-america-capitals"],
+    },
+    {
+      name: "Caribbean",
       packIds: [
-        "northern-america-countries",
-        "northern-america-capitals",
-        "central-america-countries",
-        "central-america-capitals",
         "caribbean-countries",
         "caribbean-capitals",
+        "caribbean-flags",
+        "caribbean-outlines",
       ],
     },
     {
@@ -317,7 +323,7 @@ const SECTIONS = {
         "us-outlines",
       ],
     },
-    { name: "Flags & outlines", packIds: ["na-flags", "caribbean-flags", "na-outlines", "caribbean-outlines"] },
+    { name: "Flags & outlines", packIds: ["na-flags", "na-outlines"] },
     { name: "Sports", packIds: ["nba-teams", "mlb-teams", "nhl-teams", "mls-teams"] },
   ],
   "south-america": [
@@ -325,7 +331,7 @@ const SECTIONS = {
       name: "The continent",
       packIds: ["sa-countries", "sa-capitals", "sa-cities", "sa-cities-difficult", "sa-landmarks", "sa-physical"],
     },
-    { name: "Regions", packIds: ["latin-america-countries"] },
+    { name: "Latin America", packIds: ["latin-america-countries"] },
     { name: "Flags & outlines", packIds: ["sa-flags", "sa-outlines"] },
   ],
   europe: [
@@ -342,23 +348,26 @@ const SECTIONS = {
       ],
     },
     {
-      name: "Regions",
-      packIds: [
-        "northern-europe-countries",
-        "western-europe-countries",
-        "eastern-europe-countries",
-        "southern-europe-countries",
-        "northern-europe-capitals",
-        "western-europe-capitals",
-        "eastern-europe-capitals",
-        "southern-europe-capitals",
-        "nordic-countries",
-        "eu-countries",
-      ],
+      name: "Northern Europe",
+      packIds: ["northern-europe-countries", "northern-europe-capitals"],
     },
     {
+      name: "Western Europe",
+      packIds: ["western-europe-countries", "western-europe-capitals", "western-europe-flags"],
+    },
+    {
+      name: "Eastern Europe",
+      packIds: ["eastern-europe-countries", "eastern-europe-capitals", "eastern-europe-flags"],
+    },
+    {
+      name: "Southern Europe",
+      packIds: ["southern-europe-countries", "southern-europe-capitals"],
+    },
+    { name: "The Nordic Countries", packIds: ["nordic-countries"] },
+    { name: "European Union", packIds: ["eu-countries"] },
+    {
       name: "Flags & outlines",
-      packIds: ["europe-flags", "western-europe-flags", "eastern-europe-flags", "europe-outlines"],
+      packIds: ["europe-flags", "europe-outlines"],
     },
   ],
   africa: [
@@ -374,21 +383,32 @@ const SECTIONS = {
       ],
     },
     {
-      name: "Regions",
-      packIds: [
-        "africa-north-equator-countries",
-        "africa-south-equator-countries",
-        "northern-africa-countries",
-        "western-africa-countries",
-        "central-africa-countries",
-        "eastern-africa-countries",
-        "southern-africa-countries",
-        "northern-africa-capitals",
-        "western-africa-capitals",
-        "central-africa-capitals",
-        "eastern-africa-capitals",
-        "southern-africa-capitals",
-      ],
+      name: "Northern Africa",
+      packIds: ["northern-africa-countries", "northern-africa-capitals"],
+    },
+    {
+      name: "Western Africa",
+      packIds: ["western-africa-countries", "western-africa-capitals"],
+    },
+    {
+      name: "Central Africa",
+      packIds: ["central-africa-countries", "central-africa-capitals"],
+    },
+    {
+      name: "Eastern Africa",
+      packIds: ["eastern-africa-countries", "eastern-africa-capitals"],
+    },
+    {
+      name: "Southern Africa",
+      packIds: ["southern-africa-countries", "southern-africa-capitals"],
+    },
+    {
+      name: "Africa North Of the Equator",
+      packIds: ["africa-north-equator-countries"],
+    },
+    {
+      name: "Africa South Of the Equator",
+      packIds: ["africa-south-equator-countries"],
     },
     { name: "Flags & outlines", packIds: ["africa-flags", "africa-outlines"] },
   ],
@@ -398,30 +418,36 @@ const SECTIONS = {
       packIds: ["asia-countries", "asia-capitals", "asia-cities", "asia-cities-difficult", "asia-landmarks", "asia-physical"],
     },
     {
-      name: "Regions",
+      name: "East Asia",
+      packIds: ["east-asia-countries", "east-asia-capitals"],
+    },
+    {
+      name: "Southeast Asia",
       packIds: [
         "southeast-asia-countries",
-        "south-asia-countries",
-        "east-asia-countries",
-        "central-asia-countries",
-        "middle-east-countries",
-        "mena-countries",
         "southeast-asia-capitals",
-        "south-asia-capitals",
-        "east-asia-capitals",
-        "central-asia-capitals",
-        "middle-east-capitals",
+        "southeast-asia-flags",
       ],
     },
     {
+      name: "South Asia",
+      packIds: ["south-asia-countries", "south-asia-capitals", "south-asia-flags"],
+    },
+    {
+      name: "Central Asia",
+      packIds: ["central-asia-countries", "central-asia-capitals"],
+    },
+    {
+      name: "The Middle East",
+      packIds: ["middle-east-countries", "middle-east-capitals", "middle-east-flags"],
+    },
+    {
+      name: "The Middle East and North Africa",
+      packIds: ["mena-countries"],
+    },
+    {
       name: "Flags & outlines",
-      packIds: [
-        "asia-flags",
-        "southeast-asia-flags",
-        "south-asia-flags",
-        "middle-east-flags",
-        "asia-outlines",
-      ],
+      packIds: ["asia-flags", "asia-outlines"],
     },
   ],
   oceania: [
@@ -445,10 +471,9 @@ const SECTIONS = {
         "australia-physical",
       ],
     },
-    {
-      name: "Pacific regions",
-      packIds: ["melanesia-countries", "micronesia-countries", "polynesia-countries"],
-    },
+    { name: "Melanesia", packIds: ["melanesia-countries"] },
+    { name: "Micronesia", packIds: ["micronesia-countries"] },
+    { name: "Polynesia", packIds: ["polynesia-countries"] },
     { name: "Flags & outlines", packIds: ["oceania-flags", "oceania-territories-flags", "oceania-outlines"] },
   ],
 };

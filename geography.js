@@ -2853,16 +2853,91 @@ function continentCardHtml(g) {
     </a>`;
 }
 
-function packCardHtml(p, groupId) {
+function packTitlePrefixes(sectionName) {
+  const name = String(sectionName || "").trim();
+  if (!name || name === "The continent" || name === "Flags & outlines" || name === "Sports") {
+    return [];
+  }
+  const prefixes = [`${name}:`];
+  if (name === "United States") prefixes.push("The U.S.:", "U.S.:");
+  if (name === "Caribbean") prefixes.push("The Caribbean:");
+  if (name === "Australia & New Zealand") {
+    prefixes.push("Australia:", "Australia and New Zealand:");
+  }
+  return prefixes;
+}
+
+function packTitleInSection(pack, sectionName) {
+  const name = String(pack?.name || "");
+  for (const prefix of packTitlePrefixes(sectionName)) {
+    if (name.startsWith(prefix)) return name.slice(prefix.length).trim() || name;
+  }
+  if (sectionName && name === sectionName) {
+    if (pack.quiz === "countries") return "Countries";
+    if (pack.quiz === "capitals") return "Capitals";
+    if (pack.quiz === "flags") return "Flags";
+    if (pack.quiz === "outlines") return "Outlines";
+  }
+  return name;
+}
+
+function packRegionLabel(pack) {
+  const name = String(pack?.name || "");
+  const i = name.indexOf(":");
+  if (i <= 0) return "";
+  return name.slice(0, i).trim();
+}
+
+function clusterPacksByRegion(packs) {
+  const byRegion = new Map();
+  for (const p of packs) {
+    const label = packRegionLabel(p);
+    if (!label) continue;
+    if (!byRegion.has(label)) byRegion.set(label, []);
+    byRegion.get(label).push(p);
+  }
+  const clustered = new Set();
+  const parents = [];
+  const rest = [];
+  for (const p of packs) {
+    if (clustered.has(p.id)) continue;
+    const label = packRegionLabel(p);
+    const group = label ? byRegion.get(label) : null;
+    if (group && group.length > 1) {
+      parents.push({ name: label, packs: group });
+      for (const item of group) clustered.add(item.id);
+    } else {
+      rest.push(p);
+      clustered.add(p.id);
+    }
+  }
+  return { parents, rest };
+}
+
+function packCardHtml(p, groupId, sectionName) {
   const gid = groupId || geo.group?.id || groupForPack(p.id)?.id;
+  const title = packTitleInSection(p, sectionName);
   return `
     <a class="geo-pack-card" href="${gid ? href(["geography", gid, p.id]) : href(["geography", p.id])}">
-      <h3>${escapeHtml(p.name)}</h3>
+      <h3>${escapeHtml(title)}</h3>
       <p>${escapeHtml(p.blurb)}</p>
       <span class="meta">${p.itemCount} places · ${(p.modes || [])
         .map((m) => MODE_META[m]?.label || m)
         .join(" · ")}</span>
     </a>`;
+}
+
+function regionParentHtml(region, groupId) {
+  const slug = toSlug(region.name);
+  return `
+    <article class="geo-region-parent" id="geo-region-${escapeHtml(slug)}">
+      <h3 class="geo-region-parent-title">
+        <a class="geo-section-link" href="${href(["geography", groupId, slug])}">${escapeHtml(region.name)}</a>
+      </h3>
+      <div class="geo-pack-grid">
+        ${region.packs.map((p) => packCardHtml(p, groupId, region.name)).join("")}
+      </div>
+    </article>`;
 }
 
 function scrollPageTop() {
@@ -2917,18 +2992,41 @@ function renderGroup() {
             .filter(Boolean);
           if (!packs.length) return "";
           const slug = toSlug(sec.name);
+          const lede = sec.blurb
+            ? `<p class="geo-section-lede">${escapeHtml(sec.blurb)}</p>`
+            : "";
+          if (sec.name === "Regions") {
+            const { parents, rest } = clusterPacksByRegion(packs);
+            return `
+            <section class="geo-group geo-group--regions" id="geo-sec-${escapeHtml(slug)}">
+              <h3 class="geo-group-title">
+                <a class="geo-section-link" href="${href(["geography", g.id, slug])}">${escapeHtml(sec.name)}</a>
+              </h3>
+              ${lede}
+              ${
+                parents.length
+                  ? `<div class="geo-region-grid">${parents
+                      .map((r) => regionParentHtml(r, g.id))
+                      .join("")}</div>`
+                  : ""
+              }
+              ${
+                rest.length
+                  ? `<div class="geo-pack-grid">${rest
+                      .map((p) => packCardHtml(p, g.id))
+                      .join("")}</div>`
+                  : ""
+              }
+            </section>`;
+          }
           return `
             <section class="geo-group" id="geo-sec-${escapeHtml(slug)}">
               <h3 class="geo-group-title">
                 <a class="geo-section-link" href="${href(["geography", g.id, slug])}">${escapeHtml(sec.name)}</a>
               </h3>
-              ${
-                sec.blurb
-                  ? `<p class="geo-section-lede">${escapeHtml(sec.blurb)}</p>`
-                  : ""
-              }
+              ${lede}
               <div class="geo-pack-grid">
-                ${packs.map((p) => packCardHtml(p, g.id)).join("")}
+                ${packs.map((p) => packCardHtml(p, g.id, sec.name)).join("")}
               </div>
             </section>`;
         })
@@ -3391,10 +3489,25 @@ async function ensureIndex() {
   geo.packs = data.packs || geo.groups.flatMap((g) => g.packs || []);
 }
 
+function regionSlugsForGroup(group) {
+  const slugs = new Set();
+  for (const sec of group.sections || []) {
+    if (sec.name !== "Regions") continue;
+    const packs = (sec.packIds || [])
+      .map((id) => (group.packs || []).find((p) => p.id === id) || packById(id))
+      .filter(Boolean);
+    for (const region of clusterPacksByRegion(packs).parents) {
+      slugs.add(toSlug(region.name));
+    }
+  }
+  return slugs;
+}
+
 function isSectionSlug(group, token) {
   if (!group || !token) return false;
   if ((group.packs || []).some((p) => p.id === token)) return false;
-  return (group.sections || []).some((s) => toSlug(s.name) === token);
+  if ((group.sections || []).some((s) => toSlug(s.name) === token)) return true;
+  return regionSlugsForGroup(group).has(token);
 }
 
 async function showGeographyRoute({ groupId, packId, mode } = {}) {
@@ -3424,7 +3537,9 @@ async function showGeographyRoute({ groupId, packId, mode } = {}) {
       if (section) {
         requestAnimationFrame(() => {
           geo.root
-            ?.querySelector(`#geo-sec-${CSS.escape(section)}`)
+            ?.querySelector(
+              `#geo-sec-${CSS.escape(section)}, #geo-region-${CSS.escape(section)}`
+            )
             ?.scrollIntoView({ block: "start" });
         });
       }
