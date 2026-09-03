@@ -20,6 +20,7 @@
         "Drains the Amazon rainforest."
       ],
       "waterway": "Amazonas",
+      "waterType": "river",
       "country": "Brazil"
     },
     {
@@ -35,6 +36,7 @@
         "Second-longest river in South America.",
         "Joins the Paraguay and Uruguay in the Río de la Plata."
       ],
+      "waterType": "river",
       "country": "Argentina"
     },
     {
@@ -51,6 +53,7 @@
         "Forms stretches of the Brazil–Paraguay and Paraguay–Argentina borders."
       ],
       "border": true,
+      "waterType": "river",
       "country": "Paraguay"
     },
     {
@@ -68,6 +71,7 @@
       ],
       "border": true,
       "waterway": "Uruguay",
+      "waterType": "river",
       "country": "Uruguay"
     },
     {
@@ -84,6 +88,7 @@
         "Among South America’s longest rivers."
       ],
       "waterway": "Orinoco",
+      "waterType": "river",
       "country": "Venezuela"
     },
     {
@@ -100,6 +105,7 @@
         "Flows to the Atlantic north of Salvador."
       ],
       "waterway": "São  Francisco",
+      "waterType": "river",
       "country": "Brazil"
     },
     {
@@ -116,6 +122,7 @@
         "Rises in the Bolivian Andes."
       ],
       "waterway": "Madeira",
+      "waterType": "river",
       "country": "Brazil"
     },
     {
@@ -132,6 +139,7 @@
         "Flows north to the Caribbean."
       ],
       "waterway": "Magdalena",
+      "waterType": "river",
       "country": "Colombia"
     },
     {
@@ -147,6 +155,7 @@
         "Highest large navigable lake; Andes.",
         "Shared by Peru and Bolivia."
       ],
+      "waterType": "lake",
       "country": "Peru"
     },
     {
@@ -162,6 +171,7 @@
         "Large tidal bay in Venezuela.",
         "Connected to the Gulf of Venezuela."
       ],
+      "waterType": "lake",
       "country": "Venezuela"
     },
     {
@@ -177,6 +187,7 @@
         "A high Altiplano lake in Bolivia.",
         "Fed by the Desaguadero from Titicaca; often nearly dry."
       ],
+      "waterType": "lake",
       "country": "Bolivia"
     },
     {
@@ -192,6 +203,7 @@
         "Largest lake in Chile; second in Argentina.",
         "A glacial lake of Patagonia."
       ],
+      "waterType": "lake",
       "country": "Chile"
     },
     {
@@ -207,6 +219,7 @@
         "Famous glacial lake of Argentine Patagonia.",
         "In Nahuel Huapi National Park."
       ],
+      "waterType": "lake",
       "country": "Argentina"
     },
     {
@@ -222,6 +235,7 @@
         "Second-largest lake in Venezuela.",
         "In a closed basin west of Caracas."
       ],
+      "waterType": "lake",
       "country": "Venezuela"
     }
   ]

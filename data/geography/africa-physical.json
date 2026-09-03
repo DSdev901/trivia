@@ -16,7 +16,8 @@
       "y": 240.2,
       "facts": [
         "Ocean off Africa’s west coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "atlas",
@@ -60,6 +61,7 @@
       ],
       "border": true,
       "waterway": "Congo",
+      "waterType": "river",
       "country": "DR Congo"
     },
     {
@@ -86,7 +88,8 @@
       "y": 287.7,
       "facts": [
         "Ocean off Africa’s east coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "kalahari",
@@ -128,6 +131,7 @@
         "Among the world’s deepest lakes.",
         "Also called Lake Nyasa."
       ],
+      "waterType": "lake",
       "country": "Malawi"
     },
     {
@@ -144,6 +148,7 @@
         "An African Rift lake shared by four countries.",
         "World’s longest freshwater lake."
       ],
+      "waterType": "lake",
       "country": "Tanzania"
     },
     {
@@ -160,6 +165,7 @@
         "Source of the White Nile.",
         "Africa’s largest lake by area."
       ],
+      "waterType": "lake",
       "country": "Uganda"
     },
     {
@@ -186,7 +192,8 @@
       "y": 148.1,
       "facts": [
         "Sea north of Africa."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "kenya",
@@ -212,7 +219,8 @@
       "y": 313.1,
       "facts": [
         "Between Madagascar and Mozambique."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "namib",
@@ -240,6 +248,7 @@
         "Principal river of West Africa.",
         "The “Boomerang” river, rising in the Guinea Highlands."
       ],
+      "waterType": "river",
       "country": "Niger"
     },
     {
@@ -256,6 +265,7 @@
         "Flows north through 11 countries.",
         "Empties into the Mediterranean."
       ],
+      "waterType": "river",
       "country": "Egypt"
     },
     {
@@ -269,7 +279,8 @@
       "y": 192.6,
       "facts": [
         "Between Africa and the Arabian Peninsula."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "sahara",
@@ -295,7 +306,8 @@
       "y": 141.8,
       "facts": [
         "Between Morocco and Spain."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "suez",
@@ -308,7 +320,8 @@
       "y": 159.4,
       "facts": [
         "Artificial waterway linking the Mediterranean and Red Sea."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "zambezi",
@@ -326,6 +339,7 @@
       ],
       "border": true,
       "waterway": "Zambezi",
+      "waterType": "river",
       "country": "Zambia"
     }
   ]

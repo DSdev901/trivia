@@ -20,6 +20,7 @@
         "Drains the Amazon rainforest."
       ],
       "waterway": "Amazonas",
+      "waterType": "river",
       "country": "Brazil"
     },
     {
@@ -59,7 +60,8 @@
       "y": 11.1,
       "facts": [
         "Smallest and shallowest ocean."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "atlantic-ocean",
@@ -72,7 +74,8 @@
       "y": 192.6,
       "facts": [
         "Ocean between the Americas, Europe, and Africa."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "danube",
@@ -90,6 +93,7 @@
       ],
       "border": true,
       "waterway": "Danube",
+      "waterType": "river",
       "country": "Serbia"
     },
     {
@@ -142,7 +146,8 @@
       "y": 303.5,
       "facts": [
         "Ocean between Africa, Asia, and Australia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "victoria",
@@ -158,6 +163,7 @@
         "Source of the White Nile.",
         "Africa’s largest lake by area."
       ],
+      "waterType": "lake",
       "country": "Uganda"
     },
     {
@@ -171,7 +177,8 @@
       "y": 144.9,
       "facts": [
         "Sea enclosed by Europe, Africa, and Asia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "mississippi",
@@ -187,6 +194,7 @@
         "Runs from Minnesota to the Gulf of Mexico.",
         "With the Missouri, among the world’s longest systems."
       ],
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -203,6 +211,7 @@
         "The “Boomerang” river, rising in the Guinea Highlands.",
         "Major West African river."
       ],
+      "waterType": "river",
       "country": "Niger"
     },
     {
@@ -219,6 +228,7 @@
         "Flows north through 11 countries.",
         "Empties into the Mediterranean."
       ],
+      "waterType": "river",
       "country": "Egypt"
     },
     {
@@ -232,7 +242,8 @@
       "y": 240.2,
       "facts": [
         "Earth’s largest ocean."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "persian-gulf",
@@ -245,7 +256,8 @@
       "y": 172,
       "facts": [
         "Arm of the Indian Ocean between Iran and Arabia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "rockies",
@@ -297,7 +309,8 @@
       "y": 141.8,
       "facts": [
         "Channel between Spain and Morocco."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "ural",
@@ -327,6 +340,7 @@
         "Empties into the East China Sea at Shanghai."
       ],
       "waterway": "Chang Jiang",
+      "waterType": "river",
       "country": "China"
     }
   ]

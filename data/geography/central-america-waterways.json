@@ -19,6 +19,7 @@
         "Forms part of the Mexico–Guatemala border."
       ],
       "border": true,
+      "waterType": "river",
       "country": "Mexico"
     },
     {
@@ -35,6 +36,7 @@
         "Forms much of the Nicaragua–Costa Rica border."
       ],
       "border": true,
+      "waterType": "river",
       "country": "Nicaragua"
     },
     {
@@ -51,6 +53,7 @@
         "Forms much of the Honduras–Nicaragua border."
       ],
       "border": true,
+      "waterType": "river",
       "country": "Nicaragua"
     },
     {
@@ -66,6 +69,7 @@
         "Principal river of Guatemala.",
         "Flows to the Gulf of Honduras."
       ],
+      "waterType": "river",
       "country": "Guatemala"
     },
     {
@@ -81,6 +85,7 @@
         "Principal river of El Salvador.",
         "Rises in Guatemala and crosses Honduras."
       ],
+      "waterType": "river",
       "country": "El Salvador"
     },
     {
@@ -96,6 +101,7 @@
         "Largest lake in Central America.",
         "Contains the island of Ometepe."
       ],
+      "waterType": "lake",
       "country": "Nicaragua"
     },
     {
@@ -111,6 +117,7 @@
         "Second-largest lake in Nicaragua.",
         "On the same rift as Lake Nicaragua."
       ],
+      "waterType": "lake",
       "country": "Nicaragua"
     },
     {
@@ -126,6 +133,7 @@
         "The Panama Canal’s main reservoir.",
         "One of the world’s largest artificial lakes when built."
       ],
+      "waterType": "lake",
       "country": "Panama"
     },
     {
@@ -141,6 +149,7 @@
         "A deep volcanic caldera lake in Guatemala.",
         "Ringed by volcanoes."
       ],
+      "waterType": "lake",
       "country": "Guatemala"
     },
     {
@@ -156,6 +165,7 @@
         "Largest lake in Guatemala.",
         "Drains to the Caribbean via the Río Dulce."
       ],
+      "waterType": "lake",
       "country": "Guatemala"
     },
     {
@@ -169,7 +179,8 @@
       "y": 205.4,
       "facts": [
         "Sea east of Central America."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "pacific-ocean",
@@ -182,7 +193,8 @@
       "y": 224.4,
       "facts": [
         "Ocean west of Central America."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-mexico",
@@ -195,7 +207,8 @@
       "y": 186.3,
       "facts": [
         "Gulf north of the Yucatán."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-honduras",
@@ -208,7 +221,8 @@
       "y": 205.4,
       "facts": [
         "Caribbean gulf of Belize, Guatemala, and Honduras."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-panama",
@@ -221,7 +235,8 @@
       "y": 230.7,
       "facts": [
         "Pacific gulf on Panama’s south coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "panama-canal",
@@ -234,7 +249,8 @@
       "y": 227.3,
       "facts": [
         "Artificial waterway linking the Atlantic and Pacific."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

@@ -20,6 +20,7 @@
         "Empties into the Mediterranean."
       ],
       "waterway": "Nile",
+      "waterType": "river",
       "country": "Egypt"
     },
     {
@@ -38,6 +39,7 @@
       ],
       "border": true,
       "waterway": "Congo",
+      "waterType": "river",
       "country": "DR Congo"
     },
     {
@@ -54,6 +56,7 @@
         "The “Boomerang” river, rising in the Guinea Highlands."
       ],
       "waterway": "Niger",
+      "waterType": "river",
       "country": "Niger"
     },
     {
@@ -72,6 +75,7 @@
       ],
       "border": true,
       "waterway": "Zambezi",
+      "waterType": "river",
       "country": "Zambia"
     },
     {
@@ -89,6 +93,7 @@
       ],
       "border": true,
       "waterway": "Orange",
+      "waterType": "river",
       "country": "Namibia"
     },
     {
@@ -106,6 +111,7 @@
       ],
       "border": true,
       "waterway": "Limpopo",
+      "waterType": "river",
       "country": "Mozambique"
     },
     {
@@ -123,6 +129,7 @@
       ],
       "border": true,
       "waterway": "Sénégal",
+      "waterType": "river",
       "country": "Senegal"
     },
     {
@@ -139,6 +146,7 @@
         "Lake Volta behind Akosombo Dam is among the world’s largest reservoirs."
       ],
       "waterway": "Volta",
+      "waterType": "river",
       "country": "Ghana"
     },
     {
@@ -156,6 +164,7 @@
       ],
       "border": true,
       "waterway": "Ubangi",
+      "waterType": "river",
       "country": "DR Congo"
     },
     {
@@ -171,6 +180,7 @@
         "Largest lake in Africa by area.",
         "Source of the White Nile."
       ],
+      "waterType": "lake",
       "country": "Uganda"
     },
     {
@@ -186,6 +196,7 @@
         "Longest freshwater lake; second-deepest.",
         "An African Rift lake shared by four countries."
       ],
+      "waterType": "lake",
       "country": "Tanzania"
     },
     {
@@ -201,6 +212,7 @@
         "Also called Lake Nyasa; African Rift lake.",
         "Among the world’s deepest lakes."
       ],
+      "waterType": "lake",
       "country": "Malawi"
     },
     {
@@ -216,6 +228,7 @@
         "Shallow African lake; size varies greatly.",
         "Shared by Chad, Cameroon, Niger, and Nigeria."
       ],
+      "waterType": "lake",
       "country": "Chad"
     },
     {
@@ -231,6 +244,7 @@
         "Largest desert lake.",
         "In Kenya’s Rift Valley, with a shore in Ethiopia."
       ],
+      "waterType": "lake",
       "country": "Kenya"
     },
     {
@@ -246,6 +260,7 @@
         "One of the world’s largest reservoirs by volume.",
         "On the Zambezi between Zambia and Zimbabwe."
       ],
+      "waterType": "lake",
       "country": "Zambia"
     },
     {
@@ -261,6 +276,7 @@
         "The White Nile’s outlet from Lake Victoria.",
         "At Jinja, Uganda."
       ],
+      "waterType": "lake",
       "country": "Uganda"
     },
     {
@@ -276,6 +292,7 @@
         "Largest lake in Ethiopia.",
         "Source of the Blue Nile."
       ],
+      "waterType": "lake",
       "country": "Ethiopia"
     },
     {
@@ -289,7 +306,8 @@
       "y": 240.2,
       "facts": [
         "Ocean off Africa’s west coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "indian-ocean",
@@ -302,7 +320,8 @@
       "y": 287.7,
       "facts": [
         "Ocean off Africa’s east coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "mediterranean",
@@ -315,7 +334,8 @@
       "y": 148.1,
       "facts": [
         "Sea north of Africa."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "red-sea",
@@ -328,7 +348,8 @@
       "y": 192.6,
       "facts": [
         "Between northeast Africa and Arabia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-guinea",
@@ -342,7 +363,8 @@
       "facts": [
         "Atlantic gulf of West and Central Africa.",
         "The Niger and Congo empty toward it."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "mozambique-channel",
@@ -355,7 +377,8 @@
       "y": 309.9,
       "facts": [
         "Between Mozambique and Madagascar."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gibraltar",
@@ -368,7 +391,8 @@
       "y": 141.8,
       "facts": [
         "Between Morocco and Spain."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bab-el-mandeb",
@@ -382,6 +406,7 @@
       "facts": [
         "Between the Red Sea and the Gulf of Aden."
       ],
+      "waterType": "ocean",
       "country": "Djibouti"
     },
     {
@@ -395,7 +420,8 @@
       "y": 216.5,
       "facts": [
         "Between the Horn of Africa and Yemen."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "suez",
@@ -408,7 +434,8 @@
       "y": 159.4,
       "facts": [
         "Links the Mediterranean and the Red Sea."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

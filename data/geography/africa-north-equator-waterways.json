@@ -20,6 +20,7 @@
         "Empties into the Mediterranean."
       ],
       "waterway": "Nile",
+      "waterType": "river",
       "country": "Egypt"
     },
     {
@@ -36,6 +37,7 @@
         "The “Boomerang” river, rising in the Guinea Highlands."
       ],
       "waterway": "Niger",
+      "waterType": "river",
       "country": "Niger"
     },
     {
@@ -52,6 +54,7 @@
       ],
       "border": true,
       "waterway": "Sénégal",
+      "waterType": "river",
       "country": "Senegal"
     },
     {
@@ -67,6 +70,7 @@
         "Shallow African lake; size varies greatly.",
         "Shared by Chad, Cameroon, Niger, and Nigeria."
       ],
+      "waterType": "lake",
       "country": "Chad"
     },
     {
@@ -81,6 +85,7 @@
       "facts": [
         "Reservoir behind Aswan High Dam."
       ],
+      "waterType": "lake",
       "country": "Egypt"
     },
     {
@@ -95,6 +100,7 @@
       "facts": [
         "Among the world’s largest reservoirs by area."
       ],
+      "waterType": "lake",
       "country": "Ghana"
     },
     {
@@ -108,7 +114,8 @@
       "y": 148.1,
       "facts": [
         "Sea north of Africa."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "atlantic-ocean",
@@ -121,7 +128,8 @@
       "y": 224.4,
       "facts": [
         "Ocean west of northern Africa."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "red-sea",
@@ -134,7 +142,8 @@
       "y": 192.6,
       "facts": [
         "Sea of northeast Africa."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-guinea",
@@ -147,7 +156,8 @@
       "y": 246.5,
       "facts": [
         "Atlantic gulf of the equatorial west coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gibraltar",
@@ -160,7 +170,8 @@
       "y": 141.8,
       "facts": [
         "Between Morocco and Spain."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

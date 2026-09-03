@@ -18,6 +18,7 @@
         "Sacred river of the Indian subcontinent.",
         "Joins the Brahmaputra in the world’s largest delta."
       ],
+      "waterType": "river",
       "country": "India"
     },
     {
@@ -33,6 +34,7 @@
         "Principal river of Pakistan.",
         "Cradle of the Indus Valley civilization."
       ],
+      "waterType": "river",
       "country": "Pakistan"
     },
     {
@@ -48,6 +50,7 @@
         "Great river of Tibet, India, and Bangladesh.",
         "Called the Yarlung Tsangpo in Tibet."
       ],
+      "waterType": "river",
       "country": "India"
     },
     {
@@ -63,6 +66,7 @@
         "Longest river of peninsular India.",
         "Flows east to the Bay of Bengal."
       ],
+      "waterType": "river",
       "country": "India"
     },
     {
@@ -79,6 +83,7 @@
         "Empties into the Arabian Sea."
       ],
       "waterway": "Narmada",
+      "waterType": "river",
       "country": "India"
     },
     {
@@ -95,6 +100,7 @@
         "Flows across the Deccan to the Bay of Bengal."
       ],
       "waterway": "Krishna",
+      "waterType": "river",
       "country": "India"
     },
     {
@@ -110,6 +116,7 @@
         "Longest tributary of the Ganges.",
         "Flows past Delhi and Agra."
       ],
+      "waterType": "river",
       "country": "India"
     },
     {
@@ -125,6 +132,7 @@
         "Largest coastal lagoon in India.",
         "On the Bay of Bengal in Odisha."
       ],
+      "waterType": "lake",
       "country": "India"
     },
     {
@@ -140,6 +148,7 @@
         "One of South Asia’s largest freshwater lakes.",
         "In the Kashmir Valley."
       ],
+      "waterType": "lake",
       "country": "India"
     },
     {
@@ -155,6 +164,7 @@
         "India’s largest inland salt lake.",
         "In Rajasthan, west of Jaipur."
       ],
+      "waterType": "lake",
       "country": "India"
     },
     {
@@ -170,6 +180,7 @@
         "Second-largest brackish lagoon in India.",
         "On the Andhra Pradesh–Tamil Nadu coast."
       ],
+      "waterType": "lake",
       "country": "India"
     },
     {
@@ -185,6 +196,7 @@
         "Longest lake in India.",
         "Backwaters of Kerala, near Kochi."
       ],
+      "waterType": "lake",
       "country": "India"
     },
     {
@@ -199,7 +211,8 @@
       "facts": [
         "Northeastern Indian Ocean.",
         "India’s east-coast sea."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "arabian-sea",
@@ -213,7 +226,8 @@
       "facts": [
         "Northwestern Indian Ocean.",
         "India’s west-coast sea."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "indian-ocean",
@@ -226,7 +240,8 @@
       "y": 240.2,
       "facts": [
         "Ocean south of the subcontinent."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "palk",
@@ -239,7 +254,8 @@
       "y": 224.4,
       "facts": [
         "Between India and Sri Lanka."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-mannar",
@@ -252,7 +268,8 @@
       "y": 228.2,
       "facts": [
         "Between southern India and Sri Lanka."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-khambhat",
@@ -266,7 +283,8 @@
       "facts": [
         "Arabian Sea gulf of Gujarat.",
         "Also called the Gulf of Cambay."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

@@ -19,6 +19,7 @@
         "Drains the North Italian Plain to the Adriatic."
       ],
       "waterway": "Po",
+      "waterType": "river",
       "country": "Italy"
     },
     {
@@ -35,6 +36,7 @@
         "Flows to the Mediterranean."
       ],
       "waterway": "Ebro",
+      "waterType": "river",
       "country": "Spain"
     },
     {
@@ -50,6 +52,7 @@
         "Longest river of the Iberian Peninsula.",
         "Flows through Toledo and Lisbon."
       ],
+      "waterType": "river",
       "country": "Portugal"
     },
     {
@@ -65,6 +68,7 @@
         "The river of Rome.",
         "Empties into the Tyrrhenian Sea."
       ],
+      "waterType": "river",
       "country": "Italy"
     },
     {
@@ -80,6 +84,7 @@
         "Principal river of North Macedonia.",
         "Flows to the Aegean in Greece as the Axios."
       ],
+      "waterType": "river",
       "country": "North Macedonia"
     },
     {
@@ -95,6 +100,7 @@
         "The great river of Andalusia.",
         "Navigable to Seville."
       ],
+      "waterType": "river",
       "country": "Spain"
     },
     {
@@ -110,6 +116,7 @@
         "Largest lake in Italy.",
         "In the north, at the foot of the Alps."
       ],
+      "waterType": "lake",
       "country": "Italy"
     },
     {
@@ -125,6 +132,7 @@
         "One of Europe’s oldest lakes.",
         "Shared by North Macedonia and Albania."
       ],
+      "waterType": "lake",
       "country": "North Macedonia"
     },
     {
@@ -140,6 +148,7 @@
         "Largest lake in the Balkans.",
         "Shared by Montenegro and Albania."
       ],
+      "waterType": "lake",
       "country": "Albania"
     },
     {
@@ -155,6 +164,7 @@
         "Second-largest lake in Italy.",
         "Shared with Switzerland."
       ],
+      "waterType": "lake",
       "country": "Italy"
     },
     {
@@ -170,6 +180,7 @@
         "A deep glacial lake in Lombardy.",
         "Famous for its Y-shape and villas."
       ],
+      "waterType": "lake",
       "country": "Italy"
     },
     {
@@ -183,7 +194,8 @@
       "y": 135.4,
       "facts": [
         "Sea south of Europe."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "adriatic",
@@ -196,7 +208,8 @@
       "y": 119.6,
       "facts": [
         "Between Italy and the Balkans."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "tyrrhenian",
@@ -209,7 +222,8 @@
       "y": 129,
       "facts": [
         "Between mainland Italy, Sardinia, and Sicily."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "ionian",
@@ -222,7 +236,8 @@
       "y": 135.4,
       "facts": [
         "Between Italy and Greece."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "aegean",
@@ -235,7 +250,8 @@
       "y": 135.4,
       "facts": [
         "Between Greece and Turkey."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gibraltar",
@@ -248,7 +264,8 @@
       "y": 141.8,
       "facts": [
         "Between Spain and Morocco."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "messina",
@@ -261,7 +278,8 @@
       "y": 134.7,
       "facts": [
         "Between Sicily and the Italian mainland."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "otranto",
@@ -274,7 +292,8 @@
       "y": 128.6,
       "facts": [
         "The Adriatic’s gate to the Ionian Sea."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-lions",
@@ -287,7 +306,8 @@
       "y": 119.6,
       "facts": [
         "Mediterranean gulf of southern France."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

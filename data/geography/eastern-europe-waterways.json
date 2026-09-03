@@ -19,6 +19,7 @@
         "Empties into the Caspian Sea."
       ],
       "waterway": "Volga",
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -37,6 +38,7 @@
       ],
       "border": true,
       "waterway": "Danube",
+      "waterType": "river",
       "country": "Serbia"
     },
     {
@@ -53,6 +55,7 @@
         "The Dnieper, flowing to the Black Sea."
       ],
       "waterway": "Dnipro",
+      "waterType": "river",
       "country": "Ukraine"
     },
     {
@@ -69,6 +72,7 @@
         "Flows through Warsaw to the Baltic."
       ],
       "waterway": "Vistula",
+      "waterType": "river",
       "country": "Poland"
     },
     {
@@ -86,6 +90,7 @@
       ],
       "border": true,
       "waterway": "Oder",
+      "waterType": "river",
       "country": "Germany"
     },
     {
@@ -102,6 +107,7 @@
         "Empties into the Sea of Azov."
       ],
       "waterway": "Don",
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -118,6 +124,7 @@
         "Forms stretches of the Moldova–Ukraine border."
       ],
       "waterway": "Dniester",
+      "waterType": "river",
       "country": "Moldova"
     },
     {
@@ -133,6 +140,7 @@
         "Largest lake in Central Europe.",
         "Hungary’s “inland sea.”"
       ],
+      "waterType": "lake",
       "country": "Hungary"
     },
     {
@@ -148,6 +156,7 @@
         "Largest transboundary lake in Europe.",
         "Shared by Estonia and Russia."
       ],
+      "waterType": "lake",
       "country": "Russia"
     },
     {
@@ -163,6 +172,7 @@
         "Second-largest lake in Europe.",
         "In northwestern Russia, east of Ladoga."
       ],
+      "waterType": "lake",
       "country": "Russia"
     },
     {
@@ -178,6 +188,7 @@
         "Largest lake in Poland.",
         "In the Masurian Lake District."
       ],
+      "waterType": "lake",
       "country": "Poland"
     },
     {
@@ -193,6 +204,7 @@
         "A shallow steppe lake on the Austria–Hungary border.",
         "Central Europe’s westernmost steppe lake."
       ],
+      "waterType": "lake",
       "country": "Austria"
     },
     {
@@ -206,7 +218,8 @@
       "y": 79.8,
       "facts": [
         "Sea of Poland, the Baltics, and Russia’s northwest."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "black-sea",
@@ -219,7 +232,8 @@
       "y": 118.6,
       "facts": [
         "Sea of Ukraine, Romania, Bulgaria, and Russia’s south."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bosporus",
@@ -233,6 +247,7 @@
       "facts": [
         "The Black Sea’s outlet at Istanbul."
       ],
+      "waterType": "ocean",
       "country": "Türkiye"
     },
     {
@@ -247,6 +262,7 @@
       "facts": [
         "The Aegean’s gate to the Sea of Marmara."
       ],
+      "waterType": "ocean",
       "country": "Türkiye"
     },
     {
@@ -260,7 +276,8 @@
       "y": 68.6,
       "facts": [
         "Toward St. Petersburg."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "white-sea",
@@ -273,7 +290,8 @@
       "y": 52.5,
       "facts": [
         "Inlet of the Arctic on Russia’s northwest."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "sea-azov",
@@ -287,7 +305,8 @@
       "facts": [
         "Shallow sea north of the Black Sea.",
         "Entered through the Kerch Strait."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

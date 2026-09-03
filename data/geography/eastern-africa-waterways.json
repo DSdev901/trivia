@@ -20,6 +20,7 @@
         "Empties into the Mediterranean."
       ],
       "waterway": "Nile",
+      "waterType": "river",
       "country": "Egypt"
     },
     {
@@ -35,6 +36,7 @@
         "Rises at Lake Tana in Ethiopia.",
         "Meets the White Nile at Khartoum."
       ],
+      "waterType": "river",
       "country": "Ethiopia"
     },
     {
@@ -49,6 +51,7 @@
       "facts": [
         "Flows from the Great Lakes through South Sudan."
       ],
+      "waterType": "river",
       "country": "South Sudan"
     },
     {
@@ -64,6 +67,7 @@
         "Principal river of southern Somalia.",
         "Rises as the Dawa and Genale in Ethiopia."
       ],
+      "waterType": "river",
       "country": "Somalia"
     },
     {
@@ -79,6 +83,7 @@
         "Longest river in Kenya.",
         "Flows from Mount Kenya to the Indian Ocean."
       ],
+      "waterType": "river",
       "country": "Kenya"
     },
     {
@@ -94,6 +99,7 @@
         "Largest lake in Africa by area.",
         "Source of the White Nile."
       ],
+      "waterType": "lake",
       "country": "Uganda"
     },
     {
@@ -109,6 +115,7 @@
         "Longest freshwater lake; second-deepest.",
         "An African Rift lake shared by four countries."
       ],
+      "waterType": "lake",
       "country": "Tanzania"
     },
     {
@@ -124,6 +131,7 @@
         "Also called Lake Nyasa; African Rift lake.",
         "Among the world’s deepest lakes."
       ],
+      "waterType": "lake",
       "country": "Malawi"
     },
     {
@@ -139,6 +147,7 @@
         "Largest desert lake.",
         "In Kenya’s Rift Valley."
       ],
+      "waterType": "lake",
       "country": "Kenya"
     },
     {
@@ -154,6 +163,7 @@
         "Largest lake in Ethiopia.",
         "Source of the Blue Nile."
       ],
+      "waterType": "lake",
       "country": "Ethiopia"
     },
     {
@@ -169,6 +179,7 @@
         "Rift lake between Rwanda and the DRC.",
         "Among Africa’s highest large lakes."
       ],
+      "waterType": "lake",
       "country": "Rwanda"
     },
     {
@@ -182,7 +193,8 @@
       "y": 256,
       "facts": [
         "Ocean east of the Horn and Kenya."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "red-sea",
@@ -195,7 +207,8 @@
       "y": 205.4,
       "facts": [
         "Sea west of the Horn, along Eritrea and Sudan."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-aden",
@@ -208,7 +221,8 @@
       "y": 216.5,
       "facts": [
         "Between Somalia and Yemen."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "mozambique-channel",
@@ -221,7 +235,8 @@
       "y": 300.4,
       "facts": [
         "Between Mozambique, Tanzania, and Madagascar."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bab-el-mandeb",
@@ -235,6 +250,7 @@
       "facts": [
         "The Red Sea’s southern gate."
       ],
+      "waterType": "ocean",
       "country": "Djibouti"
     }
   ]

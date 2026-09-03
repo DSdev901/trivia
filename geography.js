@@ -121,6 +121,16 @@ const geo = {
   _citiesPromise: null,
   capitalDots: null,
   _capitalDotsPromise: null,
+  allItems: [],
+  mapSvgBare: "",
+  waterFiltersByPack: {},
+};
+
+const WATER_FILTER_KEYS = ["river", "lake", "ocean"];
+const WATER_FILTER_LABELS = {
+  river: "Rivers",
+  lake: "Lakes",
+  ocean: "Ocean & coasts",
 };
 
 function escapeHtml(s) {
@@ -401,8 +411,10 @@ async function loadPack(packMeta) {
   if (!res.ok) throw new Error(`Failed to load ${packMeta.id}`);
   const data = await res.json();
   geo.pack = { ...packMeta, ...data };
-  geo.items = data.items || [];
+  geo.allItems = data.items || [];
+  applyWaterItemFilters();
   geo.mapSvg = "";
+  geo.mapSvgBare = "";
   geo._baseViewBox = null;
   geo._packViewBox = null;
   geo._panLimit = null;
@@ -413,6 +425,7 @@ async function loadPack(packMeta) {
     svg = svg.replace(/<\?xml[^>]*>/i, "").trim();
     // Let CSS own fills so quiz countries share one color
     svg = svg.replace(/\sfill="[^"]*"/gi, "");
+    geo.mapSvgBare = svg;
     if (geo.pack?.overlay === "markers") {
       svg = injectFeatureMarkers(svg, geo.items);
     }
@@ -435,6 +448,105 @@ function isWaterPack() {
   }
   const items = geo.items || [];
   return items.length > 0 && items.every((it) => it.kind === "water");
+}
+
+function inferWaterTypeClient(name) {
+  const n = String(name || "");
+  if (
+    /\b(Lake|Reservoir|Lagoon|Laguna|Étang)\b/i.test(n) ||
+    /^(Aral|Caspian|Tonlé Sap|Issyk-Kul|Balkhash)/i.test(n)
+  ) {
+    return "lake";
+  }
+  if (/\b(Ocean|Sea|Gulf|Strait|Bay|Channel|Sound|Bight|Passage|Cove|Canal|Mandeb|Port)\b/i.test(n)) {
+    return "ocean";
+  }
+  return "river";
+}
+
+function itemWaterType(item) {
+  return item?.waterType || inferWaterTypeClient(item?.name);
+}
+
+function waterFiltersForPack() {
+  const id = geo.pack?.id || "";
+  if (!geo.waterFiltersByPack[id]) {
+    geo.waterFiltersByPack[id] = { river: true, lake: true, ocean: true };
+  }
+  return geo.waterFiltersByPack[id];
+}
+
+function waterFilterCounts() {
+  const counts = { river: 0, lake: 0, ocean: 0 };
+  for (const it of geo.allItems || []) {
+    const type = itemWaterType(it);
+    if (counts[type] != null) counts[type] += 1;
+  }
+  return counts;
+}
+
+function waterFilterBarHtml() {
+  if (!isWaterPack()) return "";
+  const filters = waterFiltersForPack();
+  const counts = waterFilterCounts();
+  return `<div class="geo-water-filters ce-filter" role="group" aria-label="Waterway types">
+    <div class="ce-filter-toggles">
+      ${WATER_FILTER_KEYS.map((key) => {
+        const on = filters[key] !== false;
+        const count = counts[key] || 0;
+        return `<label class="ce-toggle">
+          <input type="checkbox" data-water-filter="${key}" ${on ? "checked" : ""} ${
+            count ? "" : "disabled"
+          } />
+          <span class="ce-toggle-switch" aria-hidden="true"></span>
+          <span>${WATER_FILTER_LABELS[key]}${
+            count ? ` <span class="ce-filter-count">(${count})</span>` : ""
+          }</span>
+        </label>`;
+      }).join("")}
+    </div>
+  </div>`;
+}
+
+function applyWaterItemFilters() {
+  const source = geo.allItems?.length ? geo.allItems : geo.items;
+  geo.allItems = source || [];
+  if (!isWaterPack()) {
+    geo.items = [...geo.allItems];
+    return;
+  }
+  const filters = waterFiltersForPack();
+  geo.items = geo.allItems.filter((it) => filters[itemWaterType(it)]);
+  if (geo.mapSvgBare && geo.pack?.overlay === "markers") {
+    geo.mapSvg = injectFeatureMarkers(geo.mapSvgBare, geo.items);
+    geo._packViewBox = null;
+    geo._panLimit = null;
+    const host = geo.root?.querySelector("#geo-map");
+    if (host) {
+      delete host.dataset.geoFitted;
+      delete host.dataset.geoFittedPin;
+    }
+  }
+}
+
+function bindWaterFilters(scope = geo.root) {
+  if (!scope || !isWaterPack()) return;
+  scope.querySelectorAll("[data-water-filter]").forEach((input) => {
+    input.addEventListener("change", () => {
+      const key = input.dataset.waterFilter;
+      if (!key) return;
+      const filters = waterFiltersForPack();
+      const next = { ...filters, [key]: input.checked };
+      if (!WATER_FILTER_KEYS.some((row) => next[row])) {
+        input.checked = true;
+        return;
+      }
+      filters[key] = input.checked;
+      applyWaterItemFilters();
+      if (geo.mode) startMode(geo.mode);
+      else renderPackModes();
+    });
+  });
 }
 
 function waterwaysAliasId(id) {
@@ -3204,6 +3316,7 @@ function renderPackModes() {
           <p class="lede">${escapeHtml(pack.blurb || "")}</p>
         </div>
       </div>
+      ${isWaterPack() ? waterFilterBarHtml() : ""}
       <div class="geo-mode-grid">
         ${(pack.modes || [])
           .map((m) => {
@@ -3231,12 +3344,27 @@ function renderPackModes() {
     paintMap(null);
     bindMapControls(geo.root.querySelector("#geo-map"));
   }
+  bindWaterFilters();
 }
 
 function startMode(mode) {
   geo.mode = mode;
+  applyWaterItemFilters();
   const pool =
     mode === "capitals" ? geo.items.filter((i) => i.capital) : geo.items;
+  if (!pool.length) {
+    geo.root.innerHTML = `
+      <div class="geo-shell">
+        ${geoCrumbs(MODE_META[mode]?.label || mode)}
+        ${isWaterPack() ? waterFilterBarHtml() : ""}
+        <p class="error">No waterways match the current filters. Turn a type back on to play.</p>
+        <div class="setup-actions">
+          <a class="secondary-btn" href="${packHref()}">Back to modes</a>
+        </div>
+      </div>`;
+    bindWaterFilters();
+    return;
+  }
   geo.queue = mode === "study" ? [...geo.items] : shuffle(pool);
   geo.index = 0;
   geo.correct = 0;
@@ -3257,6 +3385,7 @@ function renderStudy() {
       geo.pack?.overlay === "markers" ? " geo-play--markers" : ""
     }${isWaterPack() ? " geo-play--water" : ""}">
       ${geoCrumbs("Study")}
+      ${isWaterPack() ? waterFilterBarHtml() : ""}
       <div class="geo-play-layout ${geo.mapSvg ? "" : "no-map"}">
         ${geo.mapSvg ? `<div class="geo-map-wrap">${mapHtml()}${playCloseHtml()}</div>` : playCloseHtml()}
         <aside class="geo-side">
@@ -3290,6 +3419,7 @@ function renderStudy() {
   map?.querySelector("svg")?.setAttribute("preserveAspectRatio", "xMidYMid slice");
   bindMapControls(map);
   bindStudy();
+  bindWaterFilters();
 }
 
 function waterFacts(item) {
@@ -3495,6 +3625,7 @@ function renderPlay() {
   geo.root.innerHTML = `
     <div class="${playClass}">
       ${geoCrumbs(MODE_META[geo.mode]?.label || geo.mode)}
+      ${isWaterPack() ? waterFilterBarHtml() : ""}
       <div class="geo-toolbar">
         <a class="secondary-btn" href="${packHref()}">Modes</a>
         <p class="speech-kicker">${escapeHtml(geo.pack.name)} · ${escapeHtml(
@@ -3519,6 +3650,7 @@ function renderPlay() {
 
   bindMapControls(geo.root.querySelector("#geo-map"));
   bindPlay();
+  bindWaterFilters();
 }
 
 const PIN_MISS_LIMIT = 3;
@@ -3689,7 +3821,9 @@ export function cleanupGeography() {
   geo.mode = null;
   geo.queue = [];
   geo.items = [];
+  geo.allItems = [];
   geo.mapSvg = "";
+  geo.mapSvgBare = "";
   geo._baseViewBox = null;
   geo._packViewBox = null;
   geo._panLimit = null;

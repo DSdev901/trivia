@@ -3380,6 +3380,18 @@ a.ce-tab {
   margin-bottom: 0;
 }
 
+.geo-water-filters {
+  margin: 0.85rem 0 1rem;
+}
+
+.geo-play .geo-water-filters {
+  margin: 0 0 0.55rem;
+}
+
+.geo-play--map .geo-water-filters {
+  margin-bottom: 0.45rem;
+}
+
 .geo-pack-grid,
 .geo-mode-grid {
   display: grid;

@@ -20,6 +20,7 @@
         "Drains the Amazon rainforest."
       ],
       "waterway": "Amazonas",
+      "waterType": "river",
       "country": "Brazil"
     },
     {
@@ -72,7 +73,8 @@
       "y": 303.5,
       "facts": [
         "Ocean off the east coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "brazilian-highlands",
@@ -125,6 +127,7 @@
       "facts": [
         "Large tidal bay in Venezuela."
       ],
+      "waterType": "lake",
       "country": "Venezuela"
     },
     {
@@ -141,6 +144,7 @@
         "Shared by Peru and Bolivia.",
         "Highest large navigable lake."
       ],
+      "waterType": "lake",
       "country": "Peru"
     },
     {
@@ -154,7 +158,8 @@
       "y": 319.4,
       "facts": [
         "Ocean off the west coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "pampas",
@@ -181,6 +186,7 @@
       "facts": [
         "Major tributary of the Paraná."
       ],
+      "waterType": "river",
       "country": "Paraguay"
     },
     {
@@ -196,6 +202,7 @@
         "Second-longest river in South America.",
         "Joins the Paraguay and Uruguay in the Río de la Plata."
       ],
+      "waterType": "river",
       "country": "Argentina"
     },
     {
@@ -223,6 +230,7 @@
       "facts": [
         "Estuary of the Paraná and Uruguay rivers."
       ],
+      "waterType": "river",
       "country": "Uruguay"
     },
     {
@@ -236,7 +244,8 @@
       "y": 424.8,
       "facts": [
         "Passage at the tip of South America."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "tierra-del-fuego",

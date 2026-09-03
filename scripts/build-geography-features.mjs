@@ -12,6 +12,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { WATER_FACTS, WATER_META } from "./lib/water-features.mjs";
+import { inferWaterType } from "./lib/water-features.mjs";
 import { WATER_PACKS, isObsoleteWaterPackId } from "./lib/waterways.mjs";
 
 const require = createRequire(import.meta.url);
@@ -203,6 +204,8 @@ function projectItems(items) {
     if (facts.length) out.facts = facts;
     if (it.border || meta.border) out.border = true;
     if (it.waterway || meta.waterway) out.waterway = it.waterway || meta.waterway;
+    if (it.waterType) out.waterType = it.waterType;
+    else if (it.kind === "water") out.waterType = inferWaterType(it.name);
     if (country) out.country = country;
     return out;
   });

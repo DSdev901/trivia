@@ -16,7 +16,8 @@
       "y": 383,
       "facts": [
         "Between Tasmania and mainland Australia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "coral-sea",
@@ -29,7 +30,8 @@
       "y": 306.7,
       "facts": [
         "Sea of the Great Barrier Reef."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "darling-range",
@@ -56,6 +58,7 @@
       "facts": [
         "Longest tributary of the Murray."
       ],
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -70,6 +73,7 @@
       "facts": [
         "Longest river in Queensland."
       ],
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -84,6 +88,7 @@
       "facts": [
         "Longest river in Western Australia."
       ],
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -123,7 +128,8 @@
       "y": 367.2,
       "facts": [
         "Open bay on the southern coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "barrier-reef",
@@ -137,6 +143,7 @@
       "facts": [
         "World’s largest coral reef system."
       ],
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -189,7 +196,8 @@
       "y": 300.4,
       "facts": [
         "Gulf of northern Australia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "hamersley",
@@ -215,7 +223,8 @@
       "y": 335.3,
       "facts": [
         "Ocean west of Australia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "kimberley",
@@ -269,6 +278,7 @@
         "Australia’s longest river.",
         "With the Darling, Australia’s main river system."
       ],
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -308,7 +318,8 @@
       "y": 376.7,
       "facts": [
         "Between Australia and New Zealand."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "tasmania",
@@ -334,7 +345,8 @@
       "y": 287.7,
       "facts": [
         "Between Australia and New Guinea."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "victoria-river",
@@ -348,6 +360,7 @@
       "facts": [
         "Major river of the Northern Territory."
       ],
+      "waterType": "river",
       "country": "Australia"
     }
   ]

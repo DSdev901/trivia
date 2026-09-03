@@ -20,6 +20,7 @@
         "Drains the Amazon rainforest."
       ],
       "waterway": "Amazonas",
+      "waterType": "river",
       "country": "Brazil"
     },
     {
@@ -35,6 +36,7 @@
         "Second-longest river in South America.",
         "Joins the Paraguay and Uruguay in the Río de la Plata."
       ],
+      "waterType": "river",
       "country": "Argentina"
     },
     {
@@ -50,6 +52,7 @@
         "Principal river of Venezuela."
       ],
       "waterway": "Orinoco",
+      "waterType": "river",
       "country": "Venezuela"
     },
     {
@@ -68,6 +71,7 @@
       ],
       "border": true,
       "waterway": "Rio Grande",
+      "waterType": "river",
       "country": "Mexico"
     },
     {
@@ -85,6 +89,7 @@
       ],
       "border": true,
       "waterway": "Uruguay",
+      "waterType": "river",
       "country": "Uruguay"
     },
     {
@@ -100,6 +105,7 @@
         "Principal river of Colombia."
       ],
       "waterway": "Magdalena",
+      "waterType": "river",
       "country": "Colombia"
     },
     {
@@ -115,6 +121,7 @@
         "Highest large navigable lake; Andes.",
         "Shared by Peru and Bolivia."
       ],
+      "waterType": "lake",
       "country": "Peru"
     },
     {
@@ -130,6 +137,7 @@
         "Largest lake in Central America.",
         "Contains the island of Ometepe."
       ],
+      "waterType": "lake",
       "country": "Nicaragua"
     },
     {
@@ -145,6 +153,7 @@
         "Large tidal bay in Venezuela.",
         "Connected to the Gulf of Venezuela."
       ],
+      "waterType": "lake",
       "country": "Venezuela"
     },
     {
@@ -160,6 +169,7 @@
         "A high Altiplano lake in Bolivia.",
         "Fed by the Desaguadero from Titicaca."
       ],
+      "waterType": "lake",
       "country": "Bolivia"
     },
     {
@@ -175,6 +185,7 @@
         "A deep volcanic caldera lake in Guatemala.",
         "Ringed by volcanoes."
       ],
+      "waterType": "lake",
       "country": "Guatemala"
     },
     {
@@ -188,7 +199,8 @@
       "y": 287.7,
       "facts": [
         "Ocean off Brazil and the Argentine coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "pacific-ocean",
@@ -201,7 +213,8 @@
       "y": 287.7,
       "facts": [
         "Ocean off Mexico, Central America, and the Andes coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "caribbean-sea",
@@ -214,7 +227,8 @@
       "y": 211.7,
       "facts": [
         "Sea of Central America and northern South America."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-mexico",
@@ -227,7 +241,8 @@
       "y": 186.3,
       "facts": [
         "Gulf of Mexico and the Yucatán."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "rio-plata",
@@ -241,6 +256,7 @@
       "facts": [
         "Estuary of the Paraná and Uruguay."
       ],
+      "waterType": "ocean",
       "country": "Uruguay"
     },
     {
@@ -254,7 +270,8 @@
       "y": 424.8,
       "facts": [
         "Passage at the tip of South America."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "guanabara",
@@ -267,7 +284,8 @@
       "y": 328.3,
       "facts": [
         "Bay of Rio de Janeiro."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-california",
@@ -280,7 +298,8 @@
       "y": 167.2,
       "facts": [
         "Between Baja California and mainland Mexico."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

@@ -2,6 +2,24 @@
  * Combined Waterways packs (plus surrounding coasts) are built in waterways.mjs.
  */
 
+const LAKE_NAME =
+  /^(Aral|Caspian|Tonlé Sap|Issyk-Kul|Balkhash|Great Bear|Great Slave|Winnipeg|Baikal|Superior|Michigan|Huron|Erie|Ontario)\b/i;
+const OCEAN_NAME =
+  /\b(Ocean|Sea|Gulf|Strait|Bay|Channel|Sound|Bight|Passage|Cove|Canal|Mandeb|Port)\b/i;
+
+/** Classify a water feature for rivers / lakes / ocean toggles. */
+export function inferWaterType(name) {
+  const n = String(name || "");
+  if (
+    /\b(Lake|Reservoir|Lagoon|Laguna|Étang)\b/i.test(n) ||
+    LAKE_NAME.test(n)
+  ) {
+    return "lake";
+  }
+  if (OCEAN_NAME.test(n)) return "ocean";
+  return "river";
+}
+
 export function w(id, name, lat, lon, facts, opts = {}) {
   const list = (Array.isArray(facts) ? facts : [facts]).filter(Boolean).slice(0, 3);
   const row = {
@@ -16,6 +34,7 @@ export function w(id, name, lat, lon, facts, opts = {}) {
   };
   if (opts.border) row.border = true;
   if (opts.waterway) row.waterway = opts.waterway;
+  if (opts.waterType) row.waterType = opts.waterType;
   return row;
 }
 

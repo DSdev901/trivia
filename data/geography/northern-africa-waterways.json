@@ -20,6 +20,7 @@
         "Empties into the Mediterranean."
       ],
       "waterway": "Nile",
+      "waterType": "river",
       "country": "Egypt"
     },
     {
@@ -37,6 +38,7 @@
       ],
       "border": true,
       "waterway": "Sénégal",
+      "waterType": "river",
       "country": "Senegal"
     },
     {
@@ -52,6 +54,7 @@
         "The Nile’s chief floodwater source.",
         "Rises at Lake Tana in Ethiopia."
       ],
+      "waterType": "river",
       "country": "Ethiopia"
     },
     {
@@ -67,6 +70,7 @@
         "The longer Nile headstream.",
         "Flows from the Great Lakes through South Sudan."
       ],
+      "waterType": "river",
       "country": "South Sudan"
     },
     {
@@ -82,6 +86,7 @@
         "Longest river in Algeria.",
         "Flows to the Mediterranean west of Algiers."
       ],
+      "waterType": "river",
       "country": "Algeria"
     },
     {
@@ -97,6 +102,7 @@
         "Reservoir behind Aswan High Dam.",
         "The Nile’s great lake in Egypt and Sudan."
       ],
+      "waterType": "lake",
       "country": "Egypt"
     },
     {
@@ -112,6 +118,7 @@
         "Shallow African lake; size varies greatly.",
         "Shared by Chad, Cameroon, Niger, and Nigeria."
       ],
+      "waterType": "lake",
       "country": "Chad"
     },
     {
@@ -127,6 +134,7 @@
         "Egypt’s largest natural lake.",
         "In the Faiyum Oasis, west of the Nile."
       ],
+      "waterType": "lake",
       "country": "Egypt"
     },
     {
@@ -142,6 +150,7 @@
         "Tunisia’s largest salt pan.",
         "A seasonal lake of the Sahara’s northern edge."
       ],
+      "waterType": "lake",
       "country": "Tunisia"
     },
     {
@@ -157,6 +166,7 @@
         "Largest of the Nile Delta lakes.",
         "A coastal lagoon on the Mediterranean."
       ],
+      "waterType": "lake",
       "country": "Egypt"
     },
     {
@@ -170,7 +180,8 @@
       "y": 148.1,
       "facts": [
         "Sea north of the Maghreb and Egypt."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "atlantic-ocean",
@@ -183,7 +194,8 @@
       "y": 167.2,
       "facts": [
         "Ocean west of Morocco and Western Sahara."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "red-sea",
@@ -196,7 +208,8 @@
       "y": 186.3,
       "facts": [
         "Sea east of Egypt and Sudan."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gibraltar",
@@ -209,7 +222,8 @@
       "y": 141.8,
       "facts": [
         "Between Morocco and Spain."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "suez",
@@ -222,7 +236,8 @@
       "y": 159.4,
       "facts": [
         "Links the Mediterranean and the Red Sea."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-sidra",
@@ -236,7 +251,8 @@
       "facts": [
         "Mediterranean gulf of Libya.",
         "Also called the Gulf of Sirte."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-gabes",
@@ -249,7 +265,8 @@
       "y": 148.1,
       "facts": [
         "Mediterranean gulf of Tunisia."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

@@ -55,7 +55,8 @@
       "y": 144.9,
       "facts": [
         "Ocean off the east coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bering-strait",
@@ -68,7 +69,8 @@
       "y": 51.7,
       "facts": [
         "Separates Alaska from Russia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "colorado",
@@ -85,6 +87,7 @@
       ],
       "border": true,
       "waterway": "Colorado",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -126,6 +129,7 @@
         "Largest lake entirely in Canada.",
         "In the Northwest Territories."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -142,6 +146,7 @@
         "Remnant of ancient Lake Bonneville.",
         "Largest salt lake in the Western Hemisphere."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -157,6 +162,7 @@
         "Deepest lake in North America.",
         "Source of the Mackenzie River."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -170,7 +176,8 @@
       "y": 176.7,
       "facts": [
         "Atlantic gulf south of the U.S."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "hudson-bay",
@@ -183,7 +190,8 @@
       "y": 68.1,
       "facts": [
         "Large inland sea of northeastern Canada."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "athabasca",
@@ -197,6 +205,7 @@
       "facts": [
         "Large lake on the Alberta–Saskatchewan border."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -212,6 +221,7 @@
         "Shallowest of the Great Lakes.",
         "Forms part of the U.S.–Canada border."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -227,6 +237,7 @@
         "Second-largest Great Lake by area.",
         "Includes Georgian Bay."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -242,6 +253,7 @@
         "Only Great Lake entirely in the United States.",
         "Third-largest Great Lake by area."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -257,6 +269,7 @@
         "Easternmost Great Lake.",
         "Drains to the Atlantic via the St. Lawrence."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -272,6 +285,7 @@
         "Largest freshwater lake by surface area.",
         "Largest of the Great Lakes."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -287,6 +301,7 @@
         "Large prairie lake in Manitoba.",
         "Twelfth-largest freshwater lake."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -302,6 +317,7 @@
         "Canada’s longest river system.",
         "Flows to the Arctic Ocean."
       ],
+      "waterType": "river",
       "country": "Canada"
     },
     {
@@ -318,6 +334,7 @@
         "Runs from Minnesota to the Gulf of Mexico.",
         "With the Missouri, among the world’s longest systems."
       ],
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -332,6 +349,7 @@
       "facts": [
         "Longest tributary of the Mississippi."
       ],
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -349,6 +367,7 @@
       ],
       "border": true,
       "waterway": "Ohio",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -362,7 +381,8 @@
       "y": 129,
       "facts": [
         "Ocean off the west coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "rio-grande",
@@ -380,6 +400,7 @@
       ],
       "border": true,
       "waterway": "Rio Grande",
+      "waterType": "river",
       "country": "Mexico"
     },
     {
@@ -410,6 +431,7 @@
       ],
       "border": true,
       "waterway": "St. Lawrence",
+      "waterType": "river",
       "country": "Canada"
     },
     {
@@ -424,6 +446,7 @@
       "facts": [
         "Major river of the American South."
       ],
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -438,6 +461,7 @@
       "facts": [
         "Major river of Alaska and Yukon."
       ],
+      "waterType": "river",
       "country": "United States"
     }
   ]

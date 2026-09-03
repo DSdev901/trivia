@@ -19,6 +19,7 @@
         "Flows through London to the North Sea."
       ],
       "waterway": "Thames",
+      "waterType": "river",
       "country": "United Kingdom"
     },
     {
@@ -35,6 +36,7 @@
         "Empties into the Oslofjord."
       ],
       "waterway": "Glomma",
+      "waterType": "river",
       "country": "Norway"
     },
     {
@@ -51,6 +53,7 @@
         "Among Europe’s greatest by discharge."
       ],
       "waterway": "Neva",
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -67,6 +70,7 @@
         "Rises in Russia and crosses Belarus."
       ],
       "waterway": "Daugava",
+      "waterType": "river",
       "country": "Latvia"
     },
     {
@@ -82,6 +86,7 @@
         "Longest river in Ireland.",
         "Flows south to the Atlantic."
       ],
+      "waterType": "river",
       "country": "Ireland"
     },
     {
@@ -97,6 +102,7 @@
         "Longest river in Finland.",
         "Flows to the Gulf of Bothnia at Kemi."
       ],
+      "waterType": "river",
       "country": "Finland"
     },
     {
@@ -112,6 +118,7 @@
         "Largest lake in Europe.",
         "In northwestern Russia, near St. Petersburg."
       ],
+      "waterType": "lake",
       "country": "Russia"
     },
     {
@@ -126,6 +133,7 @@
       "facts": [
         "Second-largest lake in Europe."
       ],
+      "waterType": "lake",
       "country": "Russia"
     },
     {
@@ -140,6 +148,7 @@
       "facts": [
         "Largest lake in the European Union."
       ],
+      "waterType": "lake",
       "country": "Sweden"
     },
     {
@@ -154,6 +163,7 @@
       "facts": [
         "Sweden’s second-largest lake."
       ],
+      "waterType": "lake",
       "country": "Sweden"
     },
     {
@@ -169,6 +179,7 @@
         "Largest lake in Finland.",
         "A labyrinth of islands and channels."
       ],
+      "waterType": "lake",
       "country": "Finland"
     },
     {
@@ -184,6 +195,7 @@
         "Largest transboundary lake in Europe.",
         "Shared by Estonia and Russia."
       ],
+      "waterType": "lake",
       "country": "Russia"
     },
     {
@@ -197,7 +209,8 @@
       "y": 79.8,
       "facts": [
         "Between Britain and Scandinavia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "baltic",
@@ -210,7 +223,8 @@
       "y": 73.9,
       "facts": [
         "Sea of the Nordic and Baltic coasts."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "norwegian-sea",
@@ -223,7 +237,8 @@
       "y": 48.4,
       "facts": [
         "Sea west of Norway."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "arctic-ocean",
@@ -236,7 +251,8 @@
       "y": 27.3,
       "facts": [
         "Ocean north of Norway and Svalbard."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "english-channel",
@@ -249,7 +265,8 @@
       "y": 97.2,
       "facts": [
         "Between Great Britain and France."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "irish-sea",
@@ -262,7 +279,8 @@
       "y": 87.2,
       "facts": [
         "Between Ireland and Great Britain."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "skagerrak",
@@ -276,6 +294,7 @@
       "facts": [
         "Between Norway, Sweden, and Denmark’s Jutland."
       ],
+      "waterType": "ocean",
       "country": "Norway"
     },
     {
@@ -291,6 +310,7 @@
         "Between Denmark and Sweden.",
         "The Baltic’s gate to the Skagerrak."
       ],
+      "waterType": "ocean",
       "country": "Denmark"
     },
     {
@@ -305,7 +325,8 @@
       "facts": [
         "Northern arm of the Baltic.",
         "Between Sweden and Finland."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-finland",
@@ -319,7 +340,8 @@
       "facts": [
         "Eastern arm of the Baltic.",
         "Toward St. Petersburg, Tallinn, and Helsinki."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

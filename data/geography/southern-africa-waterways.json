@@ -21,6 +21,7 @@
       ],
       "border": true,
       "waterway": "Zambezi",
+      "waterType": "river",
       "country": "Zambia"
     },
     {
@@ -38,6 +39,7 @@
       ],
       "border": true,
       "waterway": "Orange",
+      "waterType": "river",
       "country": "Namibia"
     },
     {
@@ -54,6 +56,7 @@
       ],
       "border": true,
       "waterway": "Limpopo",
+      "waterType": "river",
       "country": "Mozambique"
     },
     {
@@ -71,6 +74,7 @@
       ],
       "border": true,
       "waterway": "Okavango",
+      "waterType": "river",
       "country": "Botswana"
     },
     {
@@ -87,6 +91,7 @@
         "South Africa’s most heavily used river."
       ],
       "waterway": "Vaal",
+      "waterType": "river",
       "country": "South Africa"
     },
     {
@@ -102,6 +107,7 @@
         "Also called Lake Nyasa; African Rift lake.",
         "Among the world’s deepest lakes."
       ],
+      "waterType": "lake",
       "country": "Malawi"
     },
     {
@@ -117,6 +123,7 @@
         "One of the world’s largest reservoirs by volume.",
         "On the Zambezi between Zambia and Zimbabwe."
       ],
+      "waterType": "lake",
       "country": "Zambia"
     },
     {
@@ -132,6 +139,7 @@
         "Africa’s largest estuarine lake.",
         "On the KwaZulu-Natal coast of South Africa."
       ],
+      "waterType": "lake",
       "country": "South Africa"
     },
     {
@@ -147,6 +155,7 @@
         "South Africa’s largest reservoir.",
         "On the Orange River."
       ],
+      "waterType": "lake",
       "country": "South Africa"
     },
     {
@@ -162,6 +171,7 @@
         "An endorheic lake of the Okavango’s southern edge.",
         "In Botswana; size varies with the flood."
       ],
+      "waterType": "lake",
       "country": "Botswana"
     },
     {
@@ -175,7 +185,8 @@
       "y": 351.3,
       "facts": [
         "Ocean east of South Africa and Mozambique."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "atlantic-ocean",
@@ -188,7 +199,8 @@
       "y": 344.9,
       "facts": [
         "Ocean west of Namibia and South Africa."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "mozambique-channel",
@@ -201,7 +213,8 @@
       "y": 319.4,
       "facts": [
         "Between Mozambique and Madagascar."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "false-bay",
@@ -215,7 +228,8 @@
       "facts": [
         "Large bay east of the Cape Peninsula.",
         "Separated from Table Bay by the Cape of Good Hope."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "table-bay",
@@ -229,7 +243,8 @@
       "facts": [
         "Bay under Table Mountain.",
         "Cape Town’s historic harbour."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "walvis-bay",
@@ -242,7 +257,8 @@
       "y": 328.8,
       "facts": [
         "Namibia’s principal deep-water bay."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

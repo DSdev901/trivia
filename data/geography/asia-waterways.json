@@ -20,6 +20,7 @@
         "Empties into the East China Sea at Shanghai."
       ],
       "waterway": "Chang Jiang",
+      "waterType": "river",
       "country": "China"
     },
     {
@@ -37,6 +38,7 @@
         "Named for the loess silt it carries."
       ],
       "waterway": "Huang",
+      "waterType": "river",
       "country": "China"
     },
     {
@@ -55,6 +57,7 @@
       ],
       "border": true,
       "waterway": "Amur",
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -73,6 +76,7 @@
       ],
       "border": true,
       "waterway": "Mekong",
+      "waterType": "river",
       "country": "Thailand"
     },
     {
@@ -88,6 +92,7 @@
         "Sacred river of the Indian subcontinent.",
         "Joins the Brahmaputra in the world’s largest delta."
       ],
+      "waterType": "river",
       "country": "India"
     },
     {
@@ -103,6 +108,7 @@
         "Principal river of Pakistan.",
         "Cradle of the Indus Valley civilization."
       ],
+      "waterType": "river",
       "country": "Pakistan"
     },
     {
@@ -118,6 +124,7 @@
         "Major west Siberian river.",
         "Reaches the Arctic via the Gulf of Ob."
       ],
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -133,6 +140,7 @@
         "Great Siberian river flowing to the Arctic.",
         "Among Asia’s longest rivers."
       ],
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -148,6 +156,7 @@
         "Great east Siberian river.",
         "Flows to the Laptev Sea in the Arctic."
       ],
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -163,6 +172,7 @@
         "Great river of Mesopotamia.",
         "Joins the Euphrates at the Shatt al-Arab."
       ],
+      "waterType": "river",
       "country": "Iraq"
     },
     {
@@ -178,6 +188,7 @@
         "Longest river in Western Asia.",
         "Together with the Tigris, watered ancient Mesopotamia."
       ],
+      "waterType": "river",
       "country": "Iraq"
     },
     {
@@ -193,6 +204,7 @@
         "Great river of Tibet, India, and Bangladesh.",
         "Joins the Ganges in the Bengal delta."
       ],
+      "waterType": "river",
       "country": "India"
     },
     {
@@ -209,6 +221,7 @@
         "Oldest large freshwater lake on Earth.",
         "Holds about one-fifth of the world’s unfrozen fresh water."
       ],
+      "waterType": "lake",
       "country": "Russia"
     },
     {
@@ -224,6 +237,7 @@
         "Largest inland body of water on Earth.",
         "A saline lake, not an ocean."
       ],
+      "waterType": "lake",
       "country": "Kazakhstan"
     },
     {
@@ -239,6 +253,7 @@
         "Once a great lake; now largely dried.",
         "Split between Kazakhstan and Uzbekistan."
       ],
+      "waterType": "lake",
       "country": "Kazakhstan"
     },
     {
@@ -254,6 +269,7 @@
         "Large endorheic lake in Kazakhstan.",
         "Half fresh, half saline."
       ],
+      "waterType": "lake",
       "country": "Kazakhstan"
     },
     {
@@ -269,6 +285,7 @@
         "Southeast Asia’s largest freshwater lake.",
         "Swells dramatically in the Mekong flood."
       ],
+      "waterType": "lake",
       "country": "Cambodia"
     },
     {
@@ -284,6 +301,7 @@
         "Largest lake in Kyrgyzstan.",
         "An endorheic alpine lake that never freezes."
       ],
+      "waterType": "lake",
       "country": "Kyrgyzstan"
     },
     {
@@ -299,6 +317,7 @@
         "Largest lake in China.",
         "A saline lake on the Tibetan Plateau."
       ],
+      "waterType": "lake",
       "country": "China"
     },
     {
@@ -315,7 +334,8 @@
         "Among the saltiest large lakes.",
         "Forms part of the Israel–Jordan border."
       ],
-      "border": true
+      "border": true,
+      "waterType": "lake"
     },
     {
       "id": "van",
@@ -330,6 +350,7 @@
         "Largest lake in Turkey.",
         "A saline soda lake in Eastern Anatolia."
       ],
+      "waterType": "lake",
       "country": "Türkiye"
     },
     {
@@ -345,6 +366,7 @@
         "Largest lake in Japan.",
         "In Shiga Prefecture, near Kyoto."
       ],
+      "waterType": "lake",
       "country": "Japan"
     },
     {
@@ -359,7 +381,8 @@
       "facts": [
         "Ocean east of Asia.",
         "Earth’s largest ocean."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "indian-ocean",
@@ -372,7 +395,8 @@
       "y": 240.2,
       "facts": [
         "Ocean south of Asia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "arctic-ocean",
@@ -385,7 +409,8 @@
       "y": 27.3,
       "facts": [
         "Ocean north of Siberia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "south-china-sea",
@@ -399,7 +424,8 @@
       "facts": [
         "Major sea of East and Southeast Asia.",
         "Among the world’s busiest shipping lanes."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "east-china-sea",
@@ -412,7 +438,8 @@
       "y": 167.2,
       "facts": [
         "Between China, Korea, and Japan’s Ryukyu Islands."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "sea-japan",
@@ -426,7 +453,8 @@
       "facts": [
         "Between the Japanese archipelago and the mainland.",
         "Also called the East Sea."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "arabian-sea",
@@ -440,7 +468,8 @@
       "facts": [
         "Northwestern Indian Ocean.",
         "Between Arabia and the Indian subcontinent."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bay-bengal",
@@ -454,7 +483,8 @@
       "facts": [
         "Northeastern Indian Ocean.",
         "The world’s largest bay by area."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bering-strait",
@@ -467,7 +497,8 @@
       "y": 51.7,
       "facts": [
         "Separates Asia from North America."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "malacca",
@@ -480,7 +511,8 @@
       "y": 248.1,
       "facts": [
         "Between the Malay Peninsula and Sumatra."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "hormuz",
@@ -493,7 +525,8 @@
       "y": 171.7,
       "facts": [
         "The only sea entrance to the Persian Gulf."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "taiwan-strait",
@@ -506,7 +539,8 @@
       "y": 179.9,
       "facts": [
         "Between mainland China and Taiwan."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "persian-gulf",
@@ -519,7 +553,8 @@
       "y": 172,
       "facts": [
         "Between Iran and the Arabian Peninsula."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "red-sea",
@@ -532,7 +567,8 @@
       "y": 192.6,
       "facts": [
         "Between Africa and Arabia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "yellow-sea",
@@ -546,7 +582,8 @@
       "facts": [
         "Between China and the Korean Peninsula.",
         "Named for the Huang He’s silt."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "okhotsk",
@@ -559,7 +596,8 @@
       "y": 85.7,
       "facts": [
         "Northwest Pacific sea of Russia’s Far East."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

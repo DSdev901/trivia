@@ -21,6 +21,7 @@
       ],
       "border": true,
       "waterway": "Mekong",
+      "waterType": "river",
       "country": "Thailand"
     },
     {
@@ -37,6 +38,7 @@
         "Flows to the Andaman Sea through a vast delta."
       ],
       "waterway": "Irrawaddy Delta",
+      "waterType": "river",
       "country": "Myanmar"
     },
     {
@@ -54,6 +56,7 @@
       ],
       "border": true,
       "waterway": "Salween",
+      "waterType": "river",
       "country": "Myanmar"
     },
     {
@@ -69,6 +72,7 @@
         "Principal river of Thailand.",
         "Flows through Bangkok to the Gulf of Thailand."
       ],
+      "waterType": "river",
       "country": "Thailand"
     },
     {
@@ -85,6 +89,7 @@
         "Rises in Yunnan; the Chinese call it the Yuan or Hong."
       ],
       "waterway": "Hong",
+      "waterType": "river",
       "country": "Vietnam"
     },
     {
@@ -100,6 +105,7 @@
         "Longest river in Indonesia.",
         "The main river of Borneo’s Indonesian west."
       ],
+      "waterType": "river",
       "country": "Indonesia"
     },
     {
@@ -115,6 +121,7 @@
         "Where the Mekong meets the South China Sea.",
         "Vietnam’s great rice bowl."
       ],
+      "waterType": "river",
       "country": "Vietnam"
     },
     {
@@ -130,6 +137,7 @@
         "Southeast Asia’s largest freshwater lake.",
         "Swells dramatically in the Mekong flood."
       ],
+      "waterType": "lake",
       "country": "Cambodia"
     },
     {
@@ -145,6 +153,7 @@
         "Largest volcanic lake on Earth.",
         "In the caldera of a supervolcano on Sumatra."
       ],
+      "waterType": "lake",
       "country": "Indonesia"
     },
     {
@@ -160,6 +169,7 @@
         "Famous stilt-village lake in Myanmar.",
         "In Shan State’s highlands."
       ],
+      "waterType": "lake",
       "country": "Myanmar"
     },
     {
@@ -174,7 +184,8 @@
       "facts": [
         "Largest lake in the Philippines.",
         "On Luzon, southeast of Manila."
-      ]
+      ],
+      "waterType": "lake"
     },
     {
       "id": "songkhla",
@@ -189,6 +200,7 @@
         "Largest natural lake in Thailand.",
         "A coastal lagoon on the Gulf of Thailand."
       ],
+      "waterType": "lake",
       "country": "Thailand"
     },
     {
@@ -202,7 +214,8 @@
       "y": 218,
       "facts": [
         "The principal sea of Southeast Asia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "pacific-ocean",
@@ -215,7 +228,8 @@
       "y": 230.7,
       "facts": [
         "Ocean east of the Philippines and New Guinea."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "andaman",
@@ -228,7 +242,8 @@
       "y": 224.4,
       "facts": [
         "Between Myanmar, Thailand, and the Andaman Islands."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "java-sea",
@@ -241,7 +256,8 @@
       "y": 271.8,
       "facts": [
         "Shallow sea among Java, Borneo, and Sumatra."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "philippine-sea",
@@ -254,7 +270,8 @@
       "y": 208.5,
       "facts": [
         "West Pacific sea east of the Philippines."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "malacca",
@@ -267,7 +284,8 @@
       "y": 248.1,
       "facts": [
         "Between the Malay Peninsula and Sumatra."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "sunda",
@@ -281,7 +299,8 @@
       "facts": [
         "Between Java and Sumatra.",
         "Site of the 1883 Krakatoa eruption."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "makassar",
@@ -294,7 +313,8 @@
       "y": 262.4,
       "facts": [
         "Between Borneo and Sulawesi."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-thailand",
@@ -308,7 +328,8 @@
       "facts": [
         "Arm of the South China Sea.",
         "Bangkok sits at its head."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-tonkin",
@@ -321,7 +342,8 @@
       "y": 194.2,
       "facts": [
         "Between northern Vietnam and China’s Hainan."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "manila-bay",
@@ -335,7 +357,8 @@
       "facts": [
         "The great bay of Luzon.",
         "Manila stands on its eastern shore."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "ha-long-bay",
@@ -349,7 +372,8 @@
       "facts": [
         "Bay of limestone karst islets in northern Vietnam.",
         "A UNESCO World Heritage site."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

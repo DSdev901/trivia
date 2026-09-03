@@ -20,6 +20,7 @@
         "Drains the Amazon rainforest."
       ],
       "waterway": "Amazonas",
+      "waterType": "river",
       "country": "Brazil"
     },
     {
@@ -37,6 +38,7 @@
         "Empties into the Mediterranean."
       ],
       "waterway": "Nile",
+      "waterType": "river",
       "country": "Egypt"
     },
     {
@@ -54,6 +56,7 @@
         "Empties into the East China Sea at Shanghai."
       ],
       "waterway": "Chang Jiang",
+      "waterType": "river",
       "country": "China"
     },
     {
@@ -71,6 +74,7 @@
         "With the Missouri, among the world’s longest systems."
       ],
       "waterway": "Mississippi",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -86,6 +90,7 @@
         "Great Siberian river flowing to the Arctic.",
         "Among Asia’s longest rivers."
       ],
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -103,6 +108,7 @@
         "Named for the loess silt it carries."
       ],
       "waterway": "Huang",
+      "waterType": "river",
       "country": "China"
     },
     {
@@ -118,6 +124,7 @@
         "Major west Siberian river.",
         "Reaches the Arctic via the Gulf of Ob."
       ],
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -133,6 +140,7 @@
         "Second-longest river in South America.",
         "Joins the Paraguay and Uruguay in the Río de la Plata."
       ],
+      "waterType": "river",
       "country": "Argentina"
     },
     {
@@ -151,6 +159,7 @@
       ],
       "border": true,
       "waterway": "Congo",
+      "waterType": "river",
       "country": "DR Congo"
     },
     {
@@ -169,6 +178,7 @@
       ],
       "border": true,
       "waterway": "Amur",
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -184,6 +194,7 @@
         "Great east Siberian river.",
         "Flows to the Laptev Sea in the Arctic."
       ],
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -202,6 +213,7 @@
       ],
       "border": true,
       "waterway": "Mekong",
+      "waterType": "river",
       "country": "Thailand"
     },
     {
@@ -218,6 +230,7 @@
         "The “Boomerang” river, rising in the Guinea Highlands."
       ],
       "waterway": "Niger",
+      "waterType": "river",
       "country": "Niger"
     },
     {
@@ -234,6 +247,7 @@
         "With the Darling, Australia’s main river system."
       ],
       "waterway": "Murray",
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -250,6 +264,7 @@
         "Empties into the Caspian Sea."
       ],
       "waterway": "Volga",
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -265,6 +280,7 @@
         "Sacred river of the Indian subcontinent.",
         "Joins the Brahmaputra in the world’s largest delta."
       ],
+      "waterType": "river",
       "country": "India"
     },
     {
@@ -283,6 +299,7 @@
       ],
       "border": true,
       "waterway": "Danube",
+      "waterType": "river",
       "country": "Serbia"
     },
     {
@@ -298,6 +315,7 @@
         "Principal river of Pakistan.",
         "Cradle of the Indus Valley civilization."
       ],
+      "waterType": "river",
       "country": "Pakistan"
     },
     {
@@ -316,6 +334,7 @@
       ],
       "border": true,
       "waterway": "Rhine",
+      "waterType": "river",
       "country": "Germany"
     },
     {
@@ -334,6 +353,7 @@
       ],
       "border": true,
       "waterway": "Zambezi",
+      "waterType": "river",
       "country": "Zambia"
     },
     {
@@ -349,6 +369,7 @@
         "Once a great lake; now largely dried.",
         "Split between Kazakhstan and Uzbekistan."
       ],
+      "waterType": "lake",
       "country": "Kazakhstan"
     },
     {
@@ -364,6 +385,7 @@
         "Largest inland body of water on Earth.",
         "A saline lake, not an ocean."
       ],
+      "waterType": "lake",
       "country": "Kazakhstan"
     },
     {
@@ -380,6 +402,7 @@
         "Oldest large freshwater lake on Earth.",
         "Holds about one-fifth of the world’s unfrozen fresh water."
       ],
+      "waterType": "lake",
       "country": "Russia"
     },
     {
@@ -395,6 +418,7 @@
         "Large endorheic lake in Kazakhstan.",
         "Half fresh, half saline."
       ],
+      "waterType": "lake",
       "country": "Kazakhstan"
     },
     {
@@ -410,6 +434,7 @@
         "Shallow African lake; size varies greatly.",
         "Shared by Chad, Cameroon, Niger, and Nigeria."
       ],
+      "waterType": "lake",
       "country": "Chad"
     },
     {
@@ -425,6 +450,7 @@
         "Shallowest of the Great Lakes.",
         "Forms part of the U.S.–Canada border."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -440,6 +466,7 @@
         "Largest lake entirely in Canada.",
         "In the Northwest Territories."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -455,6 +482,7 @@
         "Deepest lake in North America.",
         "Source of the Mackenzie River."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -470,6 +498,7 @@
         "Second-largest Great Lake by area.",
         "Includes Georgian Bay."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -485,6 +514,7 @@
         "Largest lake in Europe.",
         "In northwestern Russia, near St. Petersburg."
       ],
+      "waterType": "lake",
       "country": "Russia"
     },
     {
@@ -500,6 +530,7 @@
         "Also called Lake Nyasa; African Rift lake.",
         "Among the world’s deepest lakes."
       ],
+      "waterType": "lake",
       "country": "Malawi"
     },
     {
@@ -515,6 +546,7 @@
         "Only Great Lake entirely in the United States.",
         "Third-largest Great Lake by area."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -530,6 +562,7 @@
         "Largest lake in Central America.",
         "Contains the island of Ometepe."
       ],
+      "waterType": "lake",
       "country": "Nicaragua"
     },
     {
@@ -545,6 +578,7 @@
         "Easternmost Great Lake.",
         "Drains to the Atlantic via the St. Lawrence."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -560,6 +594,7 @@
         "Largest freshwater lake by surface area.",
         "Largest of the Great Lakes."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -575,6 +610,7 @@
         "Longest freshwater lake; second-deepest.",
         "An African Rift lake shared by four countries."
       ],
+      "waterType": "lake",
       "country": "Tanzania"
     },
     {
@@ -590,6 +626,7 @@
         "Highest large navigable lake; Andes.",
         "Shared by Peru and Bolivia."
       ],
+      "waterType": "lake",
       "country": "Peru"
     },
     {
@@ -605,6 +642,7 @@
         "Southeast Asia’s largest freshwater lake.",
         "Swells dramatically in the Mekong flood."
       ],
+      "waterType": "lake",
       "country": "Cambodia"
     },
     {
@@ -620,6 +658,7 @@
         "Largest lake in Africa by area.",
         "Source of the White Nile."
       ],
+      "waterType": "lake",
       "country": "Uganda"
     },
     {
@@ -635,6 +674,7 @@
         "Large prairie lake in Manitoba.",
         "Twelfth-largest freshwater lake."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -649,7 +689,8 @@
       "facts": [
         "Earth’s largest ocean.",
         "Larger than all of Earth’s land combined."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "atlantic-ocean",
@@ -663,7 +704,8 @@
       "facts": [
         "Ocean between the Americas, Europe, and Africa.",
         "Earth’s second-largest ocean."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "indian-ocean",
@@ -677,7 +719,8 @@
       "facts": [
         "Ocean between Africa, Asia, and Australia.",
         "The warmest of the five oceans."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "arctic-ocean",
@@ -691,7 +734,8 @@
       "facts": [
         "Smallest and shallowest ocean.",
         "Covered by seasonal sea ice."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "southern-ocean",
@@ -705,7 +749,8 @@
       "facts": [
         "Ocean ringing Antarctica.",
         "Defined by the Antarctic Circumpolar Current."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "mediterranean",
@@ -719,7 +764,8 @@
       "facts": [
         "Sea enclosed by Europe, Africa, and Asia.",
         "Connected to the Atlantic at Gibraltar."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "caribbean-sea",
@@ -733,7 +779,8 @@
       "facts": [
         "Sea of the American tropics.",
         "Bounded by the Antilles and the mainland coasts."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "south-china-sea",
@@ -747,7 +794,8 @@
       "facts": [
         "A major Pacific marginal sea.",
         "Among the world’s busiest shipping lanes."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "red-sea",
@@ -761,7 +809,8 @@
       "facts": [
         "Narrow sea between Africa and Arabia.",
         "Linked to the Mediterranean by the Suez Canal."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gibraltar",
@@ -775,7 +824,8 @@
       "facts": [
         "The Atlantic’s gate to the Mediterranean.",
         "Separates Spain from Morocco."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bering-strait",
@@ -789,7 +839,8 @@
       "facts": [
         "Separates Alaska from Russia.",
         "The Pacific’s link to the Arctic Ocean."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "english-channel",
@@ -803,7 +854,8 @@
       "facts": [
         "Between Great Britain and France.",
         "The busiest shipping lane in the world."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "drake-passage",
@@ -817,7 +869,8 @@
       "facts": [
         "Open water between South America and Antarctica.",
         "The stormiest of the great ocean passages."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "malacca",
@@ -831,7 +884,8 @@
       "facts": [
         "Between the Malay Peninsula and Sumatra.",
         "The main shipping choke point of the Indian–Pacific route."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-mexico",
@@ -845,7 +899,8 @@
       "facts": [
         "Atlantic gulf south of the United States.",
         "Fed by the Mississippi River."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bay-bengal",
@@ -859,7 +914,8 @@
       "facts": [
         "Northeastern arm of the Indian Ocean.",
         "The world’s largest bay by area."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "hudson-bay",
@@ -873,7 +929,8 @@
       "facts": [
         "Huge inland sea of northeastern Canada.",
         "Ice-covered for much of the year."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "persian-gulf",
@@ -887,7 +944,8 @@
       "facts": [
         "Arm of the Indian Ocean between Iran and Arabia.",
         "Entered through the Strait of Hormuz."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "hormuz",
@@ -901,7 +959,8 @@
       "facts": [
         "The only sea entrance to the Persian Gulf.",
         "A critical oil-shipping choke point."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

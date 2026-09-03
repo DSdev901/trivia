@@ -17,6 +17,7 @@
       "facts": [
         "Major Mississippi tributary of the southern plains."
       ],
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -34,6 +35,7 @@
       ],
       "border": true,
       "waterway": "Chattahoochee",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -51,6 +53,7 @@
       ],
       "border": true,
       "waterway": "Colorado",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -66,6 +69,7 @@
         "Great river of the Pacific Northwest."
       ],
       "waterway": "Columbia",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -80,6 +84,7 @@
       "facts": [
         "River of the Mid-Atlantic states."
       ],
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -97,6 +102,7 @@
         "With the Missouri, among the world’s longest systems."
       ],
       "waterway": "Mississippi",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -112,6 +118,7 @@
         "Longest river in the United States."
       ],
       "waterway": "Missouri",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -129,6 +136,7 @@
       ],
       "border": true,
       "waterway": "Ohio",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -143,6 +151,7 @@
       "facts": [
         "Flows past Washington, D.C."
       ],
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -161,6 +170,7 @@
       ],
       "border": true,
       "waterway": "Rio Grande",
+      "waterType": "river",
       "country": "Mexico"
     },
     {
@@ -175,6 +185,7 @@
       "facts": [
         "Principal river of California’s Central Valley."
       ],
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -192,6 +203,7 @@
       ],
       "border": true,
       "waterway": "St. Lawrence",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -206,6 +218,7 @@
       "facts": [
         "Columbia’s largest tributary."
       ],
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -220,6 +233,7 @@
       "facts": [
         "Major river of the American South."
       ],
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -235,6 +249,7 @@
         "Largest freshwater lake by surface area.",
         "Largest of the Great Lakes."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -250,6 +265,7 @@
         "Only Great Lake entirely in the United States.",
         "Third-largest Great Lake by area."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -265,6 +281,7 @@
         "Second-largest Great Lake by area.",
         "Includes Georgian Bay."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -280,6 +297,7 @@
         "Shallowest of the Great Lakes.",
         "Forms part of the U.S.–Canada border."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -295,6 +313,7 @@
         "Easternmost Great Lake.",
         "Drains to the Atlantic via the St. Lawrence."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -310,6 +329,7 @@
         "Largest U.S. salt lake.",
         "Remnant of ancient Lake Bonneville."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -325,6 +345,7 @@
         "Largest lake in Florida.",
         "The “liquid heart” of the Everglades."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -340,6 +361,7 @@
         "Largest alpine lake in North America.",
         "On the California–Nevada border."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -353,7 +375,8 @@
       "y": 144.9,
       "facts": [
         "Ocean off the east coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "pacific-ocean",
@@ -366,7 +389,8 @@
       "y": 141.7,
       "facts": [
         "Ocean off the west coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-mexico",
@@ -379,7 +403,8 @@
       "y": 176.7,
       "facts": [
         "Gulf south of the U.S. Gulf Coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "arctic-ocean",
@@ -392,7 +417,8 @@
       "y": 35,
       "facts": [
         "Ocean north of Alaska."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "chesapeake",
@@ -406,7 +432,8 @@
       "facts": [
         "The largest estuary in the United States.",
         "Shared by Maryland and Virginia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "san-francisco-bay",
@@ -419,7 +446,8 @@
       "y": 136,
       "facts": [
         "Pacific estuary of northern California."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "puget-sound",
@@ -433,7 +461,8 @@
       "facts": [
         "Inland sea of Washington State.",
         "Seattle and Tacoma sit on its shores."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bering-strait",
@@ -446,7 +475,8 @@
       "y": 51.7,
       "facts": [
         "Separates Alaska from Russia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "long-island-sound",
@@ -459,7 +489,8 @@
       "y": 125.6,
       "facts": [
         "Between Long Island and Connecticut."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-california",
@@ -472,7 +503,8 @@
       "y": 167.2,
       "facts": [
         "Pacific gulf along Mexico, south of California."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

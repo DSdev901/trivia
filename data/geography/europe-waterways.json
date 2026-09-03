@@ -21,6 +21,7 @@
       ],
       "border": true,
       "waterway": "Danube",
+      "waterType": "river",
       "country": "Serbia"
     },
     {
@@ -36,6 +37,7 @@
         "River of Ukraine and Moldova."
       ],
       "waterway": "Dniester",
+      "waterType": "river",
       "country": "Moldova"
     },
     {
@@ -52,6 +54,7 @@
         "The Dnieper, flowing to the Black Sea."
       ],
       "waterway": "Dnipro",
+      "waterType": "river",
       "country": "Ukraine"
     },
     {
@@ -68,6 +71,7 @@
         "Empties into the Sea of Azov."
       ],
       "waterway": "Don",
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -83,6 +87,7 @@
         "Spain’s longest river entirely in-country."
       ],
       "waterway": "Ebro",
+      "waterType": "river",
       "country": "Spain"
     },
     {
@@ -99,6 +104,7 @@
         "Empties into the North Sea at Hamburg."
       ],
       "waterway": "Elbe",
+      "waterType": "river",
       "country": "Germany"
     },
     {
@@ -114,6 +120,7 @@
         "France’s longest river."
       ],
       "waterway": "Loire",
+      "waterType": "river",
       "country": "France"
     },
     {
@@ -131,6 +138,7 @@
       ],
       "border": true,
       "waterway": "Oder",
+      "waterType": "river",
       "country": "Germany"
     },
     {
@@ -146,6 +154,7 @@
         "Italy’s longest river."
       ],
       "waterway": "Po",
+      "waterType": "river",
       "country": "Italy"
     },
     {
@@ -164,6 +173,7 @@
       ],
       "border": true,
       "waterway": "Rhine",
+      "waterType": "river",
       "country": "Germany"
     },
     {
@@ -179,6 +189,7 @@
         "Flows from the Alps to the Mediterranean."
       ],
       "waterway": "Rhône",
+      "waterType": "river",
       "country": "France"
     },
     {
@@ -194,6 +205,7 @@
         "Flows through Paris."
       ],
       "waterway": "Seine",
+      "waterType": "river",
       "country": "France"
     },
     {
@@ -208,6 +220,7 @@
       "facts": [
         "Longest river of the Iberian Peninsula."
       ],
+      "waterType": "river",
       "country": "Portugal"
     },
     {
@@ -223,6 +236,7 @@
         "River of southern England."
       ],
       "waterway": "Thames",
+      "waterType": "river",
       "country": "United Kingdom"
     },
     {
@@ -237,6 +251,7 @@
       "facts": [
         "River along the Europe–Asia boundary."
       ],
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -251,6 +266,7 @@
       "facts": [
         "Principal river of North Macedonia."
       ],
+      "waterType": "river",
       "country": "North Macedonia"
     },
     {
@@ -266,6 +282,7 @@
         "Poland’s longest river."
       ],
       "waterway": "Vistula",
+      "waterType": "river",
       "country": "Poland"
     },
     {
@@ -282,6 +299,7 @@
         "Empties into the Caspian Sea."
       ],
       "waterway": "Volga",
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -297,6 +315,7 @@
         "Largest lake in Europe.",
         "In northwestern Russia, near St. Petersburg."
       ],
+      "waterType": "lake",
       "country": "Russia"
     },
     {
@@ -312,6 +331,7 @@
         "Second-largest lake in Europe.",
         "In northwestern Russia, east of Ladoga."
       ],
+      "waterType": "lake",
       "country": "Russia"
     },
     {
@@ -327,6 +347,7 @@
         "Largest lake in the European Union.",
         "In Sweden, west of Stockholm."
       ],
+      "waterType": "lake",
       "country": "Sweden"
     },
     {
@@ -342,6 +363,7 @@
         "Sweden’s second-largest lake.",
         "A long, deep rift lake."
       ],
+      "waterType": "lake",
       "country": "Sweden"
     },
     {
@@ -357,6 +379,7 @@
         "Largest Alpine lake.",
         "Shared by Switzerland and France."
       ],
+      "waterType": "lake",
       "country": "France"
     },
     {
@@ -372,6 +395,7 @@
         "Largest lake in Central Europe.",
         "Hungary’s “inland sea.”"
       ],
+      "waterType": "lake",
       "country": "Hungary"
     },
     {
@@ -387,6 +411,7 @@
         "Largest lake in Italy.",
         "In the north, at the foot of the Alps."
       ],
+      "waterType": "lake",
       "country": "Italy"
     },
     {
@@ -402,6 +427,7 @@
         "Shared by Germany, Switzerland, and Austria.",
         "The Rhine flows through it."
       ],
+      "waterType": "lake",
       "country": "Germany"
     },
     {
@@ -417,6 +443,7 @@
         "One of Europe’s oldest lakes.",
         "Shared by North Macedonia and Albania."
       ],
+      "waterType": "lake",
       "country": "North Macedonia"
     },
     {
@@ -430,7 +457,8 @@
       "y": 104,
       "facts": [
         "Ocean west of Europe."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "arctic-ocean",
@@ -443,7 +471,8 @@
       "y": 27.3,
       "facts": [
         "Ocean north of Scandinavia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "mediterranean",
@@ -456,7 +485,8 @@
       "y": 135.4,
       "facts": [
         "Sea south of Europe."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "baltic",
@@ -469,7 +499,8 @@
       "y": 73.9,
       "facts": [
         "Nearly enclosed sea of northern Europe."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "north-sea",
@@ -482,7 +513,8 @@
       "y": 79.8,
       "facts": [
         "Between Britain and Scandinavia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "black-sea",
@@ -495,7 +527,8 @@
       "y": 118.6,
       "facts": [
         "Inland sea of southeastern Europe."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "english-channel",
@@ -508,7 +541,8 @@
       "y": 97.2,
       "facts": [
         "Between Great Britain and France."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "biscay",
@@ -521,7 +555,8 @@
       "y": 113.3,
       "facts": [
         "Atlantic bay of France and Spain."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gibraltar",
@@ -534,7 +569,8 @@
       "y": 141.8,
       "facts": [
         "Gateway between the Atlantic and Mediterranean."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "dover",
@@ -548,7 +584,8 @@
       "facts": [
         "The English Channel’s narrowest point.",
         "The shortest sea crossing to France."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bosporus",
@@ -563,6 +600,7 @@
         "Istanbul’s strait.",
         "The Black Sea’s only outlet to the Sea of Marmara."
       ],
+      "waterType": "ocean",
       "country": "Türkiye"
     },
     {
@@ -578,6 +616,7 @@
         "Strait of northwestern Turkey.",
         "Links the Sea of Marmara to the Aegean."
       ],
+      "waterType": "ocean",
       "country": "Türkiye"
     },
     {
@@ -591,7 +630,8 @@
       "y": 119.6,
       "facts": [
         "Between Italy and the Balkans."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "aegean",
@@ -604,7 +644,8 @@
       "y": 135.4,
       "facts": [
         "Between Greece and Turkey."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

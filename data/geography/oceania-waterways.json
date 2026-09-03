@@ -19,6 +19,7 @@
         "With the Darling, Australia’s main river system."
       ],
       "waterway": "Murray",
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -35,6 +36,7 @@
         "Together they form Australia’s main river system."
       ],
       "waterway": "Darling",
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -50,6 +52,7 @@
         "Longest river in Queensland.",
         "Flows to the Gulf of Carpentaria."
       ],
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -65,6 +68,7 @@
         "Longest river in Western Australia.",
         "An ephemeral river to the Indian Ocean."
       ],
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -79,6 +83,7 @@
       "facts": [
         "Major river of the Northern Territory."
       ],
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -94,6 +99,7 @@
         "Longest river in New Zealand.",
         "Flows from Lake Taupō to the Tasman Sea."
       ],
+      "waterType": "river",
       "country": "New Zealand"
     },
     {
@@ -109,6 +115,7 @@
         "Longest river in the South Island.",
         "New Zealand’s greatest by discharge."
       ],
+      "waterType": "river",
       "country": "New Zealand"
     },
     {
@@ -124,6 +131,7 @@
         "Longest river on the island of New Guinea in PNG.",
         "Flows to the Bismarck Sea."
       ],
+      "waterType": "river",
       "country": "Papua New Guinea"
     },
     {
@@ -139,6 +147,7 @@
         "Australia’s largest lake when it fills.",
         "The continent’s lowest point, in South Australia."
       ],
+      "waterType": "lake",
       "country": "Australia"
     },
     {
@@ -154,6 +163,7 @@
         "Largest lake in New Zealand.",
         "In a volcanic caldera on the North Island."
       ],
+      "waterType": "lake",
       "country": "New Zealand"
     },
     {
@@ -169,6 +179,7 @@
         "Australia’s largest reservoir.",
         "On the Ord River in the Kimberley."
       ],
+      "waterType": "lake",
       "country": "Australia"
     },
     {
@@ -184,6 +195,7 @@
         "A huge salt lake in South Australia.",
         "West of the Flinders Ranges."
       ],
+      "waterType": "lake",
       "country": "Australia"
     },
     {
@@ -199,6 +211,7 @@
         "A vast salt lake on the Eyre Peninsula’s north.",
         "Used for land-speed records."
       ],
+      "waterType": "lake",
       "country": "Australia"
     },
     {
@@ -214,6 +227,7 @@
         "Largest lake in the South Island.",
         "Gateway to Fiordland."
       ],
+      "waterType": "lake",
       "country": "New Zealand"
     },
     {
@@ -227,7 +241,8 @@
       "y": 287.7,
       "facts": [
         "The ocean that defines Oceania."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "indian-ocean",
@@ -240,7 +255,8 @@
       "y": 319.4,
       "facts": [
         "Ocean west of Australia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "tasman-sea",
@@ -253,7 +269,8 @@
       "y": 376.7,
       "facts": [
         "Between Australia and New Zealand."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "coral-sea",
@@ -267,7 +284,8 @@
       "facts": [
         "Northeast of Australia.",
         "Home of the Great Barrier Reef’s outer waters."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "southern-ocean",
@@ -280,7 +298,8 @@
       "y": 429.3,
       "facts": [
         "Ocean south of Australia and New Zealand."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "torres",
@@ -293,7 +312,8 @@
       "y": 287.7,
       "facts": [
         "Between Australia and New Guinea."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bass",
@@ -306,7 +326,8 @@
       "y": 383,
       "facts": [
         "Between Tasmania and mainland Australia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "cook",
@@ -319,7 +340,8 @@
       "y": 386.8,
       "facts": [
         "Between New Zealand’s North and South Islands."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "carpentaria",
@@ -332,7 +354,8 @@
       "y": 300.4,
       "facts": [
         "Gulf of northern Australia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bight",
@@ -345,7 +368,8 @@
       "y": 367.2,
       "facts": [
         "Open bay on Australia’s southern coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bismarck-sea",
@@ -358,7 +382,8 @@
       "y": 268.7,
       "facts": [
         "North of New Guinea, in Papua New Guinea."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

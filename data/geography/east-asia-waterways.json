@@ -20,6 +20,7 @@
         "Empties into the East China Sea at Shanghai."
       ],
       "waterway": "Chang Jiang",
+      "waterType": "river",
       "country": "China"
     },
     {
@@ -37,6 +38,7 @@
         "Named for the loess silt it carries."
       ],
       "waterway": "Huang",
+      "waterType": "river",
       "country": "China"
     },
     {
@@ -55,6 +57,7 @@
       ],
       "border": true,
       "waterway": "Amur",
+      "waterType": "river",
       "country": "Russia"
     },
     {
@@ -71,6 +74,7 @@
         "Its delta includes Guangzhou, Shenzhen, and Hong Kong."
       ],
       "waterway": "Xi",
+      "waterType": "river",
       "country": "China"
     },
     {
@@ -87,6 +91,7 @@
         "Empties into Korea Bay."
       ],
       "border": true,
+      "waterType": "river",
       "country": "North Korea"
     },
     {
@@ -102,6 +107,7 @@
         "Principal river of Seoul.",
         "Flows through the Korean Peninsula to the Yellow Sea."
       ],
+      "waterType": "river",
       "country": "South Korea"
     },
     {
@@ -118,6 +124,7 @@
         "Empties into the Bohai Sea."
       ],
       "waterway": "Liao",
+      "waterType": "river",
       "country": "China"
     },
     {
@@ -133,6 +140,7 @@
         "Largest tributary of the Amur in China.",
         "Flows through Harbin."
       ],
+      "waterType": "river",
       "country": "China"
     },
     {
@@ -148,6 +156,7 @@
         "Largest lake in China.",
         "A saline lake on the Tibetan Plateau."
       ],
+      "waterType": "lake",
       "country": "China"
     },
     {
@@ -163,6 +172,7 @@
         "China’s largest freshwater lake (when full).",
         "On the Yangtze floodplain in Jiangxi."
       ],
+      "waterType": "lake",
       "country": "China"
     },
     {
@@ -178,6 +188,7 @@
         "A major Yangtze flood-basin lake.",
         "In Hunan, south of the river."
       ],
+      "waterType": "lake",
       "country": "China"
     },
     {
@@ -194,6 +205,7 @@
         "Straddles the China–Russia border."
       ],
       "border": true,
+      "waterType": "lake",
       "country": "Russia"
     },
     {
@@ -209,6 +221,7 @@
         "Largest lake in Japan.",
         "Near Kyoto in Shiga Prefecture."
       ],
+      "waterType": "lake",
       "country": "Japan"
     },
     {
@@ -224,6 +237,7 @@
         "One of China’s largest steppe lakes.",
         "In Inner Mongolia, near the Russian border."
       ],
+      "waterType": "lake",
       "country": "China"
     },
     {
@@ -237,7 +251,8 @@
       "y": 160.8,
       "facts": [
         "Ocean east of China, Korea, and Japan."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "east-china-sea",
@@ -250,7 +265,8 @@
       "y": 167.2,
       "facts": [
         "Between China, Korea, and the Ryukyu Islands."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "yellow-sea",
@@ -263,7 +279,8 @@
       "y": 143.3,
       "facts": [
         "Between China and the Korean Peninsula."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "sea-japan",
@@ -277,7 +294,8 @@
       "facts": [
         "Between Japan and the mainland.",
         "Also called the East Sea."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "south-china-sea",
@@ -290,7 +308,8 @@
       "y": 199,
       "facts": [
         "The southern sea of East Asia’s rim."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "taiwan-strait",
@@ -303,7 +322,8 @@
       "y": 179.9,
       "facts": [
         "Between mainland China and Taiwan."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "korea-strait",
@@ -317,7 +337,8 @@
       "facts": [
         "Between Korea and Japan.",
         "Links the East China Sea to the Sea of Japan."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "tsugaru",
@@ -331,7 +352,8 @@
       "facts": [
         "Between Honshu and Hokkaido.",
         "The main strait of northern Japan."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bohai",
@@ -345,7 +367,8 @@
       "facts": [
         "Innermost gulf of the Yellow Sea.",
         "Beijing and Tianjin sit on its rim."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "tokyo-bay",
@@ -359,7 +382,8 @@
       "facts": [
         "Bay on Japan’s Pacific coast.",
         "Tokyo, Yokohama, and Chiba ring its shores."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

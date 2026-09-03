@@ -21,6 +21,7 @@
       ],
       "border": true,
       "waterway": "Rhine",
+      "waterType": "river",
       "country": "Germany"
     },
     {
@@ -37,6 +38,7 @@
         "Empties into the English Channel."
       ],
       "waterway": "Seine",
+      "waterType": "river",
       "country": "France"
     },
     {
@@ -53,6 +55,7 @@
         "Flows west to the Atlantic."
       ],
       "waterway": "Loire",
+      "waterType": "river",
       "country": "France"
     },
     {
@@ -69,6 +72,7 @@
         "Through Lake Geneva and Lyon."
       ],
       "waterway": "Rhône",
+      "waterType": "river",
       "country": "France"
     },
     {
@@ -85,6 +89,7 @@
         "Empties into the North Sea at Hamburg."
       ],
       "waterway": "Elbe",
+      "waterType": "river",
       "country": "Germany"
     },
     {
@@ -100,6 +105,7 @@
         "River of France, Belgium, and the Netherlands.",
         "Joins the Rhine delta."
       ],
+      "waterType": "river",
       "country": "Netherlands"
     },
     {
@@ -115,6 +121,7 @@
         "Largest Alpine lake.",
         "Shared by Switzerland and France."
       ],
+      "waterType": "lake",
       "country": "France"
     },
     {
@@ -130,6 +137,7 @@
         "Shared by Germany, Switzerland, and Austria.",
         "The Rhine flows through it."
       ],
+      "waterType": "lake",
       "country": "Germany"
     },
     {
@@ -145,6 +153,7 @@
         "The Netherlands’ largest lake.",
         "A former Zuiderzee bay, closed by the Afsluitdijk."
       ],
+      "waterType": "lake",
       "country": "Netherlands"
     },
     {
@@ -160,6 +169,7 @@
         "A fjord-like Alpine lake in Switzerland.",
         "At the foot of the Rigi and Pilatus."
       ],
+      "waterType": "lake",
       "country": "Switzerland"
     },
     {
@@ -175,6 +185,7 @@
         "Often called Europe’s cleanest lake.",
         "In the French Alps, south of Geneva."
       ],
+      "waterType": "lake",
       "country": "France"
     },
     {
@@ -188,7 +199,8 @@
       "y": 110.2,
       "facts": [
         "Ocean west of France and the Low Countries’ approaches."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "north-sea",
@@ -201,7 +213,8 @@
       "y": 85.7,
       "facts": [
         "Sea north of the Low Countries and Germany."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "english-channel",
@@ -214,7 +227,8 @@
       "y": 97.2,
       "facts": [
         "Between France and Great Britain."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "biscay",
@@ -227,7 +241,8 @@
       "y": 113.3,
       "facts": [
         "Atlantic bay of France and Spain."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "dover",
@@ -240,7 +255,8 @@
       "y": 94.6,
       "facts": [
         "The Channel’s narrowest point."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

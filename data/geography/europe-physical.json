@@ -29,7 +29,8 @@
       "y": 27.3,
       "facts": [
         "Ocean north of Scandinavia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "atlantic-ocean",
@@ -42,7 +43,8 @@
       "y": 104,
       "facts": [
         "Ocean west of Europe."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "baltic",
@@ -55,7 +57,8 @@
       "y": 73.9,
       "facts": [
         "Sea of northern Europe."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "biscay",
@@ -68,7 +71,8 @@
       "y": 113.3,
       "facts": [
         "Atlantic bay of France and Spain."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "black-sea",
@@ -81,7 +85,8 @@
       "y": 118.6,
       "facts": [
         "Inland sea of southeastern Europe."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "caspian",
@@ -97,6 +102,7 @@
         "A saline lake, not an ocean.",
         "World’s largest inland body of water."
       ],
+      "waterType": "lake",
       "country": "Kazakhstan"
     },
     {
@@ -128,6 +134,7 @@
       ],
       "border": true,
       "waterway": "Danube",
+      "waterType": "river",
       "country": "Serbia"
     },
     {
@@ -141,7 +148,8 @@
       "y": 97.2,
       "facts": [
         "Between Great Britain and France."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "great-britain",
@@ -193,7 +201,8 @@
       "y": 135.4,
       "facts": [
         "Sea south of Europe."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "north-sea",
@@ -206,7 +215,8 @@
       "y": 79.8,
       "facts": [
         "Sea between Britain and Scandinavia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "norwegian-sea",
@@ -219,7 +229,8 @@
       "y": 48.4,
       "facts": [
         "Sea west of Norway."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "rhine",
@@ -237,6 +248,7 @@
       ],
       "border": true,
       "waterway": "Rhine",
+      "waterType": "river",
       "country": "Germany"
     },
     {
@@ -264,6 +276,7 @@
       "facts": [
         "River of northern France."
       ],
+      "waterType": "river",
       "country": "France"
     },
     {
@@ -277,7 +290,8 @@
       "y": 141.8,
       "facts": [
         "Gateway between the Atlantic and Mediterranean."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "ural",
@@ -305,6 +319,7 @@
         "Europe’s longest river.",
         "Empties into the Caspian Sea."
       ],
+      "waterType": "river",
       "country": "Russia"
     }
   ]

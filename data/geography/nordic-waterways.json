@@ -18,6 +18,7 @@
         "Longest river in Norway."
       ],
       "waterway": "Glomma",
+      "waterType": "river",
       "country": "Norway"
     },
     {
@@ -32,6 +33,7 @@
       "facts": [
         "Longest river in Finland."
       ],
+      "waterType": "river",
       "country": "Finland"
     },
     {
@@ -46,6 +48,7 @@
       "facts": [
         "Largest lake in the European Union."
       ],
+      "waterType": "river",
       "country": "Sweden"
     },
     {
@@ -60,6 +63,7 @@
       "facts": [
         "Sweden’s second-largest lake."
       ],
+      "waterType": "river",
       "country": "Sweden"
     },
     {
@@ -74,6 +78,7 @@
       "facts": [
         "Largest lake in Finland."
       ],
+      "waterType": "river",
       "country": "Finland"
     },
     {
@@ -87,7 +92,8 @@
       "y": 48.4,
       "facts": [
         "Sea west of Norway."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "north-sea",
@@ -100,7 +106,8 @@
       "y": 79.8,
       "facts": [
         "Sea south of Norway and west of Denmark."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "baltic",
@@ -113,7 +120,8 @@
       "y": 73.9,
       "facts": [
         "Sea of Sweden, Finland, and Denmark’s east."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "arctic-ocean",
@@ -126,7 +134,8 @@
       "y": 20,
       "facts": [
         "Ocean north of Norway and Svalbard."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "skagerrak",
@@ -140,6 +149,7 @@
       "facts": [
         "Between Norway, Sweden, and Jutland."
       ],
+      "waterType": "ocean",
       "country": "Norway"
     },
     {
@@ -154,6 +164,7 @@
       "facts": [
         "Between Denmark and Sweden."
       ],
+      "waterType": "ocean",
       "country": "Denmark"
     },
     {
@@ -167,7 +178,8 @@
       "y": 62.3,
       "facts": [
         "Between Sweden and Finland."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "denmark-strait",
@@ -180,7 +192,8 @@
       "y": 48.4,
       "facts": [
         "Between Iceland and Greenland."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

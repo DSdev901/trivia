@@ -18,6 +18,7 @@
         "Longest river on the island of New Guinea in PNG.",
         "Flows to the Bismarck Sea."
       ],
+      "waterType": "river",
       "country": "Papua New Guinea"
     },
     {
@@ -31,7 +32,8 @@
       "y": 306.7,
       "facts": [
         "Sea of the Great Barrier Reef and Vanuatu’s approaches."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "solomon-sea",
@@ -44,7 +46,8 @@
       "y": 284.5,
       "facts": [
         "Between New Guinea and the Solomon Islands."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bismarck-sea",
@@ -57,7 +60,8 @@
       "y": 268.7,
       "facts": [
         "North of New Guinea."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "torres",
@@ -70,7 +74,8 @@
       "y": 287.7,
       "facts": [
         "Between New Guinea and Australia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "pacific-ocean",
@@ -83,7 +88,8 @@
       "y": 287.7,
       "facts": [
         "Ocean east of Melanesia."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

@@ -21,6 +21,7 @@
       ],
       "border": true,
       "waterway": "Congo",
+      "waterType": "river",
       "country": "DR Congo"
     },
     {
@@ -39,6 +40,7 @@
       ],
       "border": true,
       "waterway": "Zambezi",
+      "waterType": "river",
       "country": "Zambia"
     },
     {
@@ -55,6 +57,7 @@
       ],
       "border": true,
       "waterway": "Orange",
+      "waterType": "river",
       "country": "Namibia"
     },
     {
@@ -70,6 +73,7 @@
         "Largest lake in Africa by area.",
         "Source of the White Nile."
       ],
+      "waterType": "lake",
       "country": "Uganda"
     },
     {
@@ -85,6 +89,7 @@
         "Longest freshwater lake; second-deepest.",
         "An African Rift lake shared by four countries."
       ],
+      "waterType": "lake",
       "country": "Tanzania"
     },
     {
@@ -100,6 +105,7 @@
         "Also called Lake Nyasa; African Rift lake.",
         "Among the world’s deepest lakes."
       ],
+      "waterType": "lake",
       "country": "Malawi"
     },
     {
@@ -113,7 +119,8 @@
       "y": 303.5,
       "facts": [
         "Ocean east of southern Africa."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "atlantic-ocean",
@@ -126,7 +133,8 @@
       "y": 287.7,
       "facts": [
         "Ocean west of Angola and Namibia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "mozambique-channel",
@@ -139,7 +147,8 @@
       "y": 309.9,
       "facts": [
         "Between Mozambique and Madagascar."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

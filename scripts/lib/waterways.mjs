@@ -1,7 +1,7 @@
 /** Merge river + lake source packs into one Waterways quiz per region,
  * and add the oceans, seas, bays, and straits that surround it.
  */
-import { w, WATER_FACTS, WATER_SOURCE } from "./water-features.mjs";
+import { w, WATER_FACTS, WATER_SOURCE, inferWaterType } from "./water-features.mjs";
 
 export function isObsoleteWaterPackId(id) {
   return id !== "great-lakes" && /-(rivers|lakes)$/.test(id);
@@ -612,13 +612,31 @@ function waterwaysBlurb(title, items) {
   return `Rivers, lakes, and waters around ${title}.`;
 }
 
+function tagWaterType(items, type) {
+  return items.map((it) => ({
+    ...it,
+    waterType: it.waterType || type || inferWaterType(it.name),
+  }));
+}
+
 function mergeGroup(prefix, packs, extra) {
-  const rivers = packs.filter((p) => p.id.endsWith("-rivers")).flatMap((p) => p.items);
-  const lakes = packs.filter((p) => p.id.endsWith("-lakes")).flatMap((p) => p.items);
-  const other = packs
-    .filter((p) => !p.id.endsWith("-rivers") && !p.id.endsWith("-lakes"))
-    .flatMap((p) => p.items);
-  const items = dedupeItems([rivers, lakes, other, extra?.inland || [], COASTAL[prefix] || []]);
+  const rivers = tagWaterType(
+    packs.filter((p) => p.id.endsWith("-rivers")).flatMap((p) => p.items),
+    "river"
+  );
+  const lakes = tagWaterType(
+    packs.filter((p) => p.id.endsWith("-lakes")).flatMap((p) => p.items),
+    "lake"
+  );
+  const other = tagWaterType(
+    packs
+      .filter((p) => !p.id.endsWith("-rivers") && !p.id.endsWith("-lakes"))
+      .flatMap((p) => p.items),
+    ""
+  );
+  const inland = tagWaterType(extra?.inland || [], "");
+  const coastal = tagWaterType(COASTAL[prefix] || [], "ocean");
+  const items = dedupeItems([rivers, lakes, other, inland, coastal]);
   const fromPack = packs[0];
   const title = extra?.title || titleBase(fromPack?.name || prefix);
   const group = extra?.group || fromPack?.group;

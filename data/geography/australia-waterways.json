@@ -19,6 +19,7 @@
         "With the Darling, Australia’s main river system."
       ],
       "waterway": "Murray",
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -34,6 +35,7 @@
         "Longest tributary of the Murray."
       ],
       "waterway": "Darling",
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -48,6 +50,7 @@
       "facts": [
         "Longest river in Queensland."
       ],
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -62,6 +65,7 @@
       "facts": [
         "Longest river in Western Australia."
       ],
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -76,6 +80,7 @@
       "facts": [
         "Major river of the Northern Territory."
       ],
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -91,6 +96,7 @@
         "The Murray’s major right-bank tributary.",
         "Flows past Canberra’s region and Wagga Wagga."
       ],
+      "waterType": "river",
       "country": "Australia"
     },
     {
@@ -106,6 +112,7 @@
         "Australia’s largest lake when it fills.",
         "The continent’s lowest point."
       ],
+      "waterType": "lake",
       "country": "Australia"
     },
     {
@@ -120,6 +127,7 @@
       "facts": [
         "A huge salt lake in South Australia."
       ],
+      "waterType": "lake",
       "country": "Australia"
     },
     {
@@ -134,6 +142,7 @@
       "facts": [
         "A vast salt lake used for land-speed records."
       ],
+      "waterType": "lake",
       "country": "Australia"
     },
     {
@@ -148,6 +157,7 @@
       "facts": [
         "Australia’s largest reservoir."
       ],
+      "waterType": "lake",
       "country": "Australia"
     },
     {
@@ -162,6 +172,7 @@
       "facts": [
         "Largest lake in New Zealand."
       ],
+      "waterType": "lake",
       "country": "New Zealand"
     },
     {
@@ -175,7 +186,8 @@
       "y": 335.3,
       "facts": [
         "Ocean west of Australia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "pacific-ocean",
@@ -188,7 +200,8 @@
       "y": 344.9,
       "facts": [
         "Ocean east of Australia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "tasman-sea",
@@ -201,7 +214,8 @@
       "y": 376.7,
       "facts": [
         "Between Australia and New Zealand."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "southern-ocean",
@@ -214,7 +228,8 @@
       "y": 414.2,
       "facts": [
         "Ocean south of Australia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bass",
@@ -227,7 +242,8 @@
       "y": 383,
       "facts": [
         "Between Tasmania and the mainland."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "torres",
@@ -240,7 +256,8 @@
       "y": 287.7,
       "facts": [
         "Between Australia and New Guinea."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bight",
@@ -253,7 +270,8 @@
       "y": 367.2,
       "facts": [
         "Open bay on the southern coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "carpentaria",
@@ -266,7 +284,8 @@
       "y": 300.4,
       "facts": [
         "Gulf of northern Australia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "cook",
@@ -279,7 +298,8 @@
       "y": 386.8,
       "facts": [
         "Between New Zealand’s North and South Islands."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "shark-bay",
@@ -293,7 +313,8 @@
       "facts": [
         "Indian Ocean bay of Western Australia.",
         "A UNESCO World Heritage site."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "port-phillip",
@@ -307,6 +328,7 @@
       "facts": [
         "Bay of Melbourne, on Victoria’s south coast."
       ],
+      "waterType": "ocean",
       "country": "Australia"
     }
   ]

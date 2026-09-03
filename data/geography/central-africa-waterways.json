@@ -21,6 +21,7 @@
       ],
       "border": true,
       "waterway": "Congo",
+      "waterType": "river",
       "country": "DR Congo"
     },
     {
@@ -37,6 +38,7 @@
       ],
       "border": true,
       "waterway": "Ubangi",
+      "waterType": "river",
       "country": "DR Congo"
     },
     {
@@ -53,6 +55,7 @@
         "Rises in Angola."
       ],
       "waterway": "Kasai",
+      "waterType": "river",
       "country": "DR Congo"
     },
     {
@@ -67,6 +70,7 @@
       "facts": [
         "Congo tributary of Cameroon, CAR, and the Republic of the Congo."
       ],
+      "waterType": "river",
       "country": "Congo"
     },
     {
@@ -82,6 +86,7 @@
         "Principal river of Gabon.",
         "Drains most of the country to the Atlantic."
       ],
+      "waterType": "river",
       "country": "Gabon"
     },
     {
@@ -97,6 +102,7 @@
         "Longest freshwater lake; second-deepest.",
         "An African Rift lake shared by four countries."
       ],
+      "waterType": "lake",
       "country": "Tanzania"
     },
     {
@@ -111,6 +117,7 @@
       "facts": [
         "Rift lake between Rwanda and the DRC."
       ],
+      "waterType": "lake",
       "country": "Rwanda"
     },
     {
@@ -126,6 +133,7 @@
         "A large shallow lake in the western DRC.",
         "Drains to the Congo via the Fimi and Kasai."
       ],
+      "waterType": "lake",
       "country": "DR Congo"
     },
     {
@@ -141,6 +149,7 @@
         "Shared by the DRC and Zambia.",
         "Fed by the Luapula; drains via the Luvua to the Congo."
       ],
+      "waterType": "lake",
       "country": "Zambia"
     },
     {
@@ -156,6 +165,7 @@
         "A source lake of the White Nile.",
         "Shared by Uganda and the DRC."
       ],
+      "waterType": "lake",
       "country": "Uganda"
     },
     {
@@ -169,7 +179,8 @@
       "y": 256,
       "facts": [
         "Ocean west of Gabon, Congo, and Cabinda."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-guinea",
@@ -182,7 +193,8 @@
       "y": 252.9,
       "facts": [
         "Atlantic gulf off Cameroon, Equatorial Guinea, and Gabon."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }

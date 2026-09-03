@@ -20,6 +20,7 @@
         "With the Missouri, among the world’s longest systems."
       ],
       "waterway": "Mississippi",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -36,6 +37,7 @@
         "Flows to the Arctic Ocean."
       ],
       "waterway": "Mackenzie",
+      "waterType": "river",
       "country": "Canada"
     },
     {
@@ -53,6 +55,7 @@
       ],
       "border": true,
       "waterway": "St. Lawrence",
+      "waterType": "river",
       "country": "Canada"
     },
     {
@@ -71,6 +74,7 @@
       ],
       "border": true,
       "waterway": "Rio Grande",
+      "waterType": "river",
       "country": "Mexico"
     },
     {
@@ -86,6 +90,7 @@
         "Major river of Alaska and Yukon."
       ],
       "waterway": "Yukon",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -103,6 +108,7 @@
       ],
       "border": true,
       "waterway": "Colorado",
+      "waterType": "river",
       "country": "United States"
     },
     {
@@ -118,6 +124,7 @@
         "Largest freshwater lake by surface area.",
         "Largest of the Great Lakes."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -133,6 +140,7 @@
         "Second-largest Great Lake by area.",
         "Includes Georgian Bay."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -148,6 +156,7 @@
         "Only Great Lake entirely in the United States.",
         "Third-largest Great Lake by area."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -163,6 +172,7 @@
         "Shallowest of the Great Lakes.",
         "Forms part of the U.S.–Canada border."
       ],
+      "waterType": "lake",
       "country": "United States"
     },
     {
@@ -178,6 +188,7 @@
         "Easternmost Great Lake.",
         "Drains to the Atlantic via the St. Lawrence."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -193,6 +204,7 @@
         "Largest lake entirely in Canada.",
         "In the Northwest Territories."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -208,6 +220,7 @@
         "Deepest lake in North America.",
         "Source of the Mackenzie River."
       ],
+      "waterType": "lake",
       "country": "Canada"
     },
     {
@@ -221,7 +234,8 @@
       "y": 135.4,
       "facts": [
         "Ocean off the U.S. and Canadian east coasts."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "pacific-ocean",
@@ -234,7 +248,8 @@
       "y": 129,
       "facts": [
         "Ocean off the west coast."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "arctic-ocean",
@@ -247,7 +262,8 @@
       "y": 27.3,
       "facts": [
         "Ocean north of Canada and Alaska."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-mexico",
@@ -260,7 +276,8 @@
       "y": 176.7,
       "facts": [
         "Atlantic gulf south of the United States."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "hudson-bay",
@@ -273,7 +290,8 @@
       "y": 68.1,
       "facts": [
         "Huge inland sea of northeastern Canada."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "bering-strait",
@@ -286,7 +304,8 @@
       "y": 51.7,
       "facts": [
         "Separates Alaska from Russia."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "fundy",
@@ -299,7 +318,8 @@
       "y": 113.3,
       "facts": [
         "Home of the world’s greatest tidal range."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-california",
@@ -312,7 +332,8 @@
       "y": 167.2,
       "facts": [
         "Between Baja California and mainland Mexico."
-      ]
+      ],
+      "waterType": "ocean"
     },
     {
       "id": "gulf-st-lawrence",
@@ -325,7 +346,8 @@
       "y": 102.5,
       "facts": [
         "The St. Lawrence River’s Atlantic outlet."
-      ]
+      ],
+      "waterType": "ocean"
     }
   ]
 }
