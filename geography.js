@@ -424,6 +424,14 @@ function quizKind() {
   return geo.pack?.quiz || "places";
 }
 
+function isWaterPack() {
+  const id = (geo.pack?.id || "").toLowerCase();
+  const name = (geo.pack?.name || "").toLowerCase();
+  if (/(^|-)(rivers|lakes)(-|$)/.test(id) || /\b(rivers|lakes)\b/.test(name)) return true;
+  const items = geo.items || [];
+  return items.length > 0 && items.every((it) => it.kind === "water");
+}
+
 function isOutlineView() {
   return geo.mode === "outline" || quizKind() === "outlines";
 }
@@ -991,6 +999,7 @@ function pullbackPadRatio(padRatio) {
 }
 
 function packFitPadRatio() {
+  if (isWaterPack()) return 0.22;
   if (geo.pack?.overlay === "markers") return 0.12;
   return 0.03;
 }
@@ -1160,10 +1169,14 @@ function fitMapToIds(ids, { padRatio = 0.12, storeAsPack = false, panIds = null 
   const panSource = panIds?.length ? panIds : ids;
   const panBounds = boundsForFitIds(host, svg, panSource);
   const full = expandViewBox(fullMapViewBox(), 0.04);
-  let panVb = expandViewBox(packVb, 0.35);
+  const water = isWaterPack();
+  let panVb = expandViewBox(packVb, water ? 1.2 : 0.35);
   if (panBounds?.useFullMap) panVb = full;
   else if (panBounds) {
-    panVb = unionViewBox(panVb, paddedViewBox(panBounds, Math.max(padRatio, 0.45)));
+    panVb = unionViewBox(
+      panVb,
+      paddedViewBox(panBounds, Math.max(padRatio, water ? 1.05 : 0.45))
+    );
     panVb = intersectViewBox(panVb, full);
   }
   panVb = unionViewBox(packVb, panVb);
@@ -2897,6 +2910,17 @@ function continentCardHtml(g) {
     </a>`;
 }
 
+function hubGroups() {
+  const world = [];
+  const rest = [];
+  for (const g of geo.groups) {
+    if (g.id === "world") world.push(g);
+    else rest.push(g);
+  }
+  rest.sort((a, b) => a.name.localeCompare(b.name, "en"));
+  return [...world, ...rest];
+}
+
 function packTitlePrefixes(sectionName) {
   const name = String(sectionName || "").trim();
   if (!name || name === "The continent" || name === "Flags & outlines" || name === "Sports") {
@@ -3048,7 +3072,7 @@ function renderHub() {
         </div>
       </div>
       <div class="geo-continent-grid">
-        ${geo.groups.map(continentCardHtml).join("")}
+        ${hubGroups().map(continentCardHtml).join("")}
       </div>
     </div>`;
 }
@@ -3180,7 +3204,7 @@ function renderStudy() {
   geo.root.innerHTML = `
     <div class="geo-shell geo-play geo-play--study${
       geo.pack?.overlay === "markers" ? " geo-play--markers" : ""
-    }">
+    }${isWaterPack() ? " geo-play--water" : ""}">
       ${geoCrumbs("Study")}
       <div class="geo-play-layout ${geo.mapSvg ? "" : "no-map"}">
         ${geo.mapSvg ? `<div class="geo-map-wrap">${mapHtml()}${playCloseHtml()}</div>` : playCloseHtml()}
@@ -3250,9 +3274,26 @@ function waterFactsHtml(item) {
 
 function waterFactsConfirmHtml(item) {
   if (item?.kind !== "water") return "";
+  if (geo.root?.querySelector("#geo-water-menu")) return "";
   return waterFacts(item)
     .map((row) => `<span class="geo-identity-cap geo-water-fact">${escapeHtml(row)}</span>`)
     .join("");
+}
+
+function waterMenuHtml(item) {
+  const facts = waterFacts(item);
+  if (!facts.length) return "";
+  return `<ul class="geo-water-facts">${facts
+    .map((row) => `<li>${escapeHtml(row)}</li>`)
+    .join("")}</ul>`;
+}
+
+function fillWaterMenu(item) {
+  const menu = geo.root?.querySelector("#geo-water-menu");
+  if (!menu) return;
+  const html = waterMenuHtml(item);
+  menu.hidden = !html;
+  menu.innerHTML = html;
 }
 
 function studyDetailHtml(item) {
@@ -3352,6 +3393,7 @@ function renderPlay() {
     geo.mode === "pin" ? "geo-play--pin" : "",
     geo.mode === "type" || geo.mode === "outline" ? "geo-play--type" : "",
     choiceOnMap ? "geo-play--choice" : "",
+    isWaterPack() ? "geo-play--water" : "",
   ]
     .filter(Boolean)
     .join(" ");
@@ -3376,10 +3418,14 @@ function renderPlay() {
          </div>
        </div>`
     : prompt;
+  const waterDock = isWaterPack() && showMap
+    ? `<div class="geo-water-menu" id="geo-water-menu" hidden></div>`
+    : "";
   const answerHtml = showMap
     ? `<div class="geo-answer-bar">
           <div class="geo-answer-cluster">
             ${actionsHtml}
+            ${waterDock}
             ${choiceOnMap ? nextHtml : ""}
           </div>
         </div>`
@@ -3520,6 +3566,7 @@ function judge(ok, clickedMapId = null, clickedBtn = null) {
     feedback.className = `quiz-feedback ${ok ? "is-correct" : "is-wrong"}`;
     feedback.innerHTML = confirmAnswerHtml(ok, item);
   }
+  fillWaterMenu(item);
   if (nextRow) nextRow.hidden = false;
   geo.root.querySelector(".geo-play")?.classList.add("is-answered");
 
