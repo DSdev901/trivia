@@ -75,7 +75,7 @@ const ce = {
   briefingShowAll: false,
   feedFilter: "all", // "all" | "sports" | "entertainment" | "world"
   netflixFilter: "all", // "all" | "shows" | "movies"
-  netflixUsOnly: false,
+  netflixTop10: false,
   netflixBrevity: readNetflixBrevity(),
   sportFilter: "all", // "all" | sport label e.g. "NFL"
   refreshing: false,
@@ -373,7 +373,14 @@ function activeItems() {
     if (ce.netflixFilter !== "all") {
       out = out.filter((i) => netflixKind(i) === ce.netflixFilter);
     }
-    if (ce.netflixUsOnly) out = out.filter((i) => i.inUS === true);
+    if (ce.netflixTop10) {
+      out = out.filter((i) => i.top10 === true);
+      out.sort(
+        (a, b) =>
+          (a.top10Rank || 99) - (b.top10Rank || 99) ||
+          (b.date || "").localeCompare(a.date || "")
+      );
+    }
     return out;
   }
   return out;
@@ -590,10 +597,10 @@ function feedFilterBar(allItems) {
 }
 
 function netflixFilterBar(allItems) {
-  const hasUs = allItems.some((i) => i.inUS === true);
-  if (ce.netflixUsOnly && !hasUs) ce.netflixUsOnly = false;
-  const pool = ce.netflixUsOnly
-    ? allItems.filter((i) => i.inUS === true)
+  const hasTop10 = allItems.some((i) => i.top10 === true);
+  if (ce.netflixTop10 && !hasTop10) ce.netflixTop10 = false;
+  const pool = ce.netflixTop10
+    ? allItems.filter((i) => i.top10 === true)
     : allItems;
   const typeCounts = { all: pool.length, shows: 0, movies: 0 };
   for (const i of pool) typeCounts[netflixKind(i)] += 1;
@@ -601,7 +608,7 @@ function netflixFilterBar(allItems) {
     ce.netflixFilter === "all"
       ? allItems
       : allItems.filter((i) => netflixKind(i) === ce.netflixFilter);
-  const usInType = typed.filter((i) => i.inUS === true).length;
+  const top10InType = typed.filter((i) => i.top10 === true).length;
   const typeBar = NETFLIX_FILTERS.map(
     (f) => `
         <button type="button" class="ce-filter-chip ${
@@ -610,14 +617,14 @@ function netflixFilterBar(allItems) {
       typeCounts[f.id]
     }</span></button>`
   ).join("");
-  const usToggle = hasUs
+  const top10Toggle = hasTop10
     ? `
       <label class="ce-toggle">
-        <input type="checkbox" id="netflix-us-only" ${
-          ce.netflixUsOnly ? "checked" : ""
+        <input type="checkbox" id="netflix-top10" ${
+          ce.netflixTop10 ? "checked" : ""
         } />
         <span class="ce-toggle-switch" aria-hidden="true"></span>
-        <span class="ce-toggle-text">US only <span class="ce-filter-count">${usInType}</span></span>
+        <span class="ce-toggle-text">Top 10 <span class="ce-filter-count">${top10InType}</span></span>
       </label>`
     : "";
   const hasBriefs = allItems.some((i) => String(i.brief || "").trim());
@@ -632,8 +639,8 @@ function netflixFilterBar(allItems) {
       </label>`
     : "";
   const toggles =
-    usToggle || brevityToggle
-      ? `<div class="ce-filter-toggles">${usToggle}${brevityToggle}</div>`
+    top10Toggle || brevityToggle
+      ? `<div class="ce-filter-toggles">${top10Toggle}${brevityToggle}</div>`
       : "";
   return `
     <div class="ce-filter" role="group" aria-label="Filter Netflix releases">
@@ -895,9 +902,9 @@ function render() {
     });
   });
 
-  document.getElementById("netflix-us-only")?.addEventListener("change", (e) => {
+  document.getElementById("netflix-top10")?.addEventListener("change", (e) => {
     stopPlayback();
-    ce.netflixUsOnly = e.target.checked;
+    ce.netflixTop10 = e.target.checked;
     window.scrollTo(0, 0);
     render();
   });
