@@ -264,7 +264,7 @@
         {
           "id": "na-capitals",
           "name": "North & Central America: Capitals",
-          "blurb": "Capitals from Canada to Panama, plus Havana, Kingston, Port-au-Prince, and Santo Domingo.",
+          "blurb": "North & Central America: Capitals — Pin them or Type their names.",
           "map": "world-countries",
           "quiz": "capitals",
           "modes": [
@@ -292,6 +292,22 @@
             "study"
           ],
           "itemCount": 30
+        },
+        {
+          "id": "na-rivers",
+          "name": "North America: Rivers",
+          "blurb": "Mississippi, Mackenzie, Rio Grande, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 9
         },
         {
           "id": "na-lakes",
@@ -359,6 +375,66 @@
           "itemCount": 3
         },
         {
+          "id": "northern-america-flags",
+          "name": "Northern America: Flags",
+          "blurb": "Flags of Northern America.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 3
+        },
+        {
+          "id": "northern-america-outlines",
+          "name": "Northern America: Outlines",
+          "blurb": "Country silhouettes of Northern America.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 3
+        },
+        {
+          "id": "northern-america-rivers",
+          "name": "Northern America: Rivers",
+          "blurb": "Mississippi, Mackenzie, St. Lawrence, Rio Grande.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 6
+        },
+        {
+          "id": "northern-america-lakes",
+          "name": "Northern America: Lakes",
+          "blurb": "The Great Lakes plus Great Bear and Great Slave.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 7
+        },
+        {
           "id": "central-america-countries",
           "name": "Central America: Countries",
           "blurb": "Belize through Panama — Pin and Type.",
@@ -392,6 +468,66 @@
           "itemCount": 7
         },
         {
+          "id": "central-america-flags",
+          "name": "Central America: Flags",
+          "blurb": "Flags of Central America.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 7
+        },
+        {
+          "id": "central-america-outlines",
+          "name": "Central America: Outlines",
+          "blurb": "Country silhouettes of Central America.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 7
+        },
+        {
+          "id": "central-america-rivers",
+          "name": "Central America: Rivers",
+          "blurb": "Usumacinta, San Juan, Coco, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "central-america-lakes",
+          "name": "Central America: Lakes",
+          "blurb": "Nicaragua, Managua, Gatún, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
           "id": "caribbean-countries",
           "name": "The Caribbean: Countries",
           "blurb": "The 13 independent island nations. Cuba, Haiti, the Dominican Republic, and Jamaica also appear on the continent quiz.",
@@ -411,7 +547,7 @@
         {
           "id": "caribbean-capitals",
           "name": "The Caribbean: Capitals",
-          "blurb": "Capitals of the 13 independent Caribbean countries.",
+          "blurb": "The Caribbean: Capitals — Pin them or Type their names.",
           "map": "world-countries",
           "quiz": "capitals",
           "modes": [
@@ -423,6 +559,66 @@
             "study"
           ],
           "itemCount": 13
+        },
+        {
+          "id": "caribbean-flags",
+          "name": "The Caribbean: Flags",
+          "blurb": "Flags of The Caribbean.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 13
+        },
+        {
+          "id": "caribbean-outlines",
+          "name": "The Caribbean: Outlines",
+          "blurb": "Country silhouettes of The Caribbean.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 13
+        },
+        {
+          "id": "caribbean-rivers",
+          "name": "Caribbean: Rivers",
+          "blurb": "Cauto, Artibonite, and other island rivers.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "caribbean-lakes",
+          "name": "Caribbean: Lakes",
+          "blurb": "Enriquillo, Azuei, and other island lakes.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
         },
         {
           "id": "canada-provinces",
@@ -505,6 +701,22 @@
             "study"
           ],
           "itemCount": 11
+        },
+        {
+          "id": "canada-lakes",
+          "name": "Canada: Lakes",
+          "blurb": "Great Bear, Great Slave, Winnipeg, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 6
         },
         {
           "id": "canada-atlantic",
@@ -693,6 +905,22 @@
           "itemCount": 14
         },
         {
+          "id": "us-lakes",
+          "name": "The U.S.: Lakes",
+          "blurb": "Superior, Michigan, Great Salt Lake, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 8
+        },
+        {
           "id": "us-northeast",
           "name": "The U.S.: States in the Northeast",
           "blurb": "New England plus New York, New Jersey, and Pennsylvania.",
@@ -865,20 +1093,6 @@
           "itemCount": 14
         },
         {
-          "id": "caribbean-flags",
-          "name": "The Caribbean: Flags",
-          "blurb": "Flags of the 13 independent Caribbean countries.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 13
-        },
-        {
           "id": "na-outlines",
           "name": "North & Central America: Outlines",
           "blurb": "Silhouettes of the mainland plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
@@ -891,20 +1105,6 @@
             "study"
           ],
           "itemCount": 14
-        },
-        {
-          "id": "caribbean-outlines",
-          "name": "The Caribbean: Country Outlines",
-          "blurb": "Silhouettes of the 13 independent Caribbean countries.",
-          "map": "world-countries",
-          "quiz": "outlines",
-          "modes": [
-            "outline",
-            "type",
-            "choice",
-            "study"
-          ],
-          "itemCount": 13
         },
         {
           "id": "nba-teams",
@@ -965,150 +1165,6 @@
             "study"
           ],
           "itemCount": 30
-        },
-        {
-          "id": "na-rivers",
-          "name": "North America: Rivers",
-          "blurb": "Mississippi, Mackenzie, Rio Grande, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 9
-        },
-        {
-          "id": "northern-america-rivers",
-          "name": "Northern America: Rivers",
-          "blurb": "Mississippi, Mackenzie, St. Lawrence, Rio Grande.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
-        },
-        {
-          "id": "northern-america-lakes",
-          "name": "Northern America: Lakes",
-          "blurb": "The Great Lakes plus Great Bear and Great Slave.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 7
-        },
-        {
-          "id": "central-america-lakes",
-          "name": "Central America: Lakes",
-          "blurb": "Nicaragua, Managua, Gatún, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
-        },
-        {
-          "id": "central-america-rivers",
-          "name": "Central America: Rivers",
-          "blurb": "Usumacinta, San Juan, Coco, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
-        },
-        {
-          "id": "canada-lakes",
-          "name": "Canada: Lakes",
-          "blurb": "Great Bear, Great Slave, Winnipeg, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
-        },
-        {
-          "id": "us-lakes",
-          "name": "The U.S.: Lakes",
-          "blurb": "Superior, Michigan, Great Salt Lake, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 8
-        },
-        {
-          "id": "caribbean-rivers",
-          "name": "Caribbean: Rivers",
-          "blurb": "Cauto, Artibonite, and other island rivers.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
-        },
-        {
-          "id": "caribbean-lakes",
-          "name": "Caribbean: Lakes",
-          "blurb": "Enriquillo, Azuei, and other island lakes.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
         }
       ],
       "blurb": "Countries, Canada, the U.S., the Caribbean, and North American landmarks.",
@@ -1129,6 +1185,8 @@
           "packIds": [
             "northern-america-countries",
             "northern-america-capitals",
+            "northern-america-flags",
+            "northern-america-outlines",
             "northern-america-rivers",
             "northern-america-lakes"
           ]
@@ -1138,6 +1196,8 @@
           "packIds": [
             "central-america-countries",
             "central-america-capitals",
+            "central-america-flags",
+            "central-america-outlines",
             "central-america-rivers",
             "central-america-lakes"
           ]
@@ -1310,51 +1370,6 @@
           "itemCount": 18
         },
         {
-          "id": "latin-america-countries",
-          "name": "Latin America: Countries",
-          "blurb": "Mexico, Central America, and South America.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 20
-        },
-        {
-          "id": "sa-flags",
-          "name": "South America: Flags",
-          "blurb": "Flags of South America.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 13
-        },
-        {
-          "id": "sa-outlines",
-          "name": "South America: Outlines",
-          "blurb": "Silhouette drills for South America.",
-          "map": "world-countries",
-          "quiz": "outlines",
-          "modes": [
-            "outline",
-            "type",
-            "choice",
-            "study"
-          ],
-          "itemCount": 13
-        },
-        {
           "id": "sa-rivers",
           "name": "South America: Rivers",
           "blurb": "Amazon, Paraná, Orinoco, and more.",
@@ -1387,6 +1402,67 @@
           "itemCount": 6
         },
         {
+          "id": "latin-america-countries",
+          "name": "Latin America: Countries",
+          "blurb": "Mexico, Central America, and South America.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
+          "id": "latin-america-capitals",
+          "name": "Latin America: Capitals",
+          "blurb": "Capitals of Latin America.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
+          "id": "latin-america-flags",
+          "name": "Latin America: Flags",
+          "blurb": "Flags of Latin America.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
+          "id": "latin-america-outlines",
+          "name": "Latin America: Outlines",
+          "blurb": "Country silhouettes of Latin America.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
           "id": "latin-america-rivers",
           "name": "Latin America: Rivers",
           "blurb": "Amazon, Paraná, Rio Grande, and more.",
@@ -1417,6 +1493,34 @@
             "study"
           ],
           "itemCount": 5
+        },
+        {
+          "id": "sa-flags",
+          "name": "South America: Flags",
+          "blurb": "Flags of South America.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 13
+        },
+        {
+          "id": "sa-outlines",
+          "name": "South America: Outlines",
+          "blurb": "Silhouette drills for South America.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 13
         }
       ],
       "blurb": "Countries, cities, landmarks, and physical features.",
@@ -1438,6 +1542,9 @@
           "name": "Latin America",
           "packIds": [
             "latin-america-countries",
+            "latin-america-capitals",
+            "latin-america-flags",
+            "latin-america-outlines",
             "latin-america-rivers",
             "latin-america-lakes"
           ]
@@ -1569,6 +1676,22 @@
           "itemCount": 18
         },
         {
+          "id": "europe-lakes",
+          "name": "Europe: Lakes",
+          "blurb": "Ladoga, Vänern, Balaton, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 9
+        },
+        {
           "id": "northern-europe-countries",
           "name": "Northern Europe: Countries",
           "blurb": "The Nordics, Baltics, Ireland, and the UK.",
@@ -1584,6 +1707,82 @@
             "study"
           ],
           "itemCount": 10
+        },
+        {
+          "id": "northern-europe-capitals",
+          "name": "Northern Europe: Capitals",
+          "blurb": "Capitals of Northern Europe — Pin or Type.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 10
+        },
+        {
+          "id": "northern-europe-flags",
+          "name": "Northern Europe: Flags",
+          "blurb": "Flags of Northern Europe.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 10
+        },
+        {
+          "id": "northern-europe-outlines",
+          "name": "Northern Europe: Outlines",
+          "blurb": "Country silhouettes of Northern Europe.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 10
+        },
+        {
+          "id": "northern-europe-rivers",
+          "name": "Northern Europe: Rivers",
+          "blurb": "Thames, Glomma, Neva, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 6
+        },
+        {
+          "id": "northern-europe-lakes",
+          "name": "Northern Europe: Lakes",
+          "blurb": "Vänern, Ladoga, Saimaa, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 6
         },
         {
           "id": "western-europe-countries",
@@ -1603,56 +1802,6 @@
           "itemCount": 9
         },
         {
-          "id": "eastern-europe-countries",
-          "name": "Eastern Europe: Countries",
-          "blurb": "From Poland and Czechia to Ukraine and Russia.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 10
-        },
-        {
-          "id": "southern-europe-countries",
-          "name": "Southern Europe: Countries",
-          "blurb": "The Mediterranean, including Türkiye and the Balkans.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 18
-        },
-        {
-          "id": "northern-europe-capitals",
-          "name": "Northern Europe: Capitals",
-          "blurb": "Capitals of Northern Europe — Pin or Type.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 10
-        },
-        {
           "id": "western-europe-capitals",
           "name": "Western Europe: Capitals",
           "blurb": "Capitals of Western Europe — Pin or Type.",
@@ -1669,86 +1818,6 @@
           "itemCount": 9
         },
         {
-          "id": "eastern-europe-capitals",
-          "name": "Eastern Europe: Capitals",
-          "blurb": "Capitals of Eastern Europe — Pin or Type.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 10
-        },
-        {
-          "id": "southern-europe-capitals",
-          "name": "Southern Europe: Capitals",
-          "blurb": "Capitals of Southern Europe — Pin or Type.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 18
-        },
-        {
-          "id": "nordic-countries",
-          "name": "The Nordic Countries",
-          "blurb": "Denmark, Finland, Iceland, Norway, and Sweden.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 5
-        },
-        {
-          "id": "eu-countries",
-          "name": "European Union: Countries",
-          "blurb": "The 27 EU member states.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 27
-        },
-        {
-          "id": "europe-flags",
-          "name": "Europe: Flags",
-          "blurb": "Flags of Europe.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 46
-        },
-        {
           "id": "western-europe-flags",
           "name": "Western Europe: Flags",
           "blurb": "Flags of Western Europe.",
@@ -1763,23 +1832,9 @@
           "itemCount": 9
         },
         {
-          "id": "eastern-europe-flags",
-          "name": "Eastern Europe: Flags",
-          "blurb": "Flags of Eastern Europe.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 10
-        },
-        {
-          "id": "europe-outlines",
-          "name": "Europe: Outlines",
-          "blurb": "Silhouette drills for Europe.",
+          "id": "western-europe-outlines",
+          "name": "Western Europe: Outlines",
+          "blurb": "Country silhouettes of Western Europe.",
           "map": "world-countries",
           "quiz": "outlines",
           "modes": [
@@ -1788,76 +1843,12 @@
             "choice",
             "study"
           ],
-          "itemCount": 46
-        },
-        {
-          "id": "europe-lakes",
-          "name": "Europe: Lakes",
-          "blurb": "Ladoga, Vänern, Balaton, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
           "itemCount": 9
-        },
-        {
-          "id": "northern-europe-rivers",
-          "name": "Northern Europe: Rivers",
-          "blurb": "Thames, Glomma, Neva, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
         },
         {
           "id": "western-europe-rivers",
           "name": "Western Europe: Rivers",
           "blurb": "Rhine, Seine, Loire, Rhône, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
-        },
-        {
-          "id": "eastern-europe-rivers",
-          "name": "Eastern Europe: Rivers",
-          "blurb": "Volga, Danube, Dnipro, Vistula, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 7
-        },
-        {
-          "id": "southern-europe-rivers",
-          "name": "Southern Europe: Rivers",
-          "blurb": "Po, Tagus, Ebro, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -1887,6 +1878,83 @@
           "itemCount": 5
         },
         {
+          "id": "eastern-europe-countries",
+          "name": "Eastern Europe: Countries",
+          "blurb": "From Poland and Czechia to Ukraine and Russia.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 10
+        },
+        {
+          "id": "eastern-europe-capitals",
+          "name": "Eastern Europe: Capitals",
+          "blurb": "Capitals of Eastern Europe — Pin or Type.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 10
+        },
+        {
+          "id": "eastern-europe-flags",
+          "name": "Eastern Europe: Flags",
+          "blurb": "Flags of Eastern Europe.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 10
+        },
+        {
+          "id": "eastern-europe-outlines",
+          "name": "Eastern Europe: Outlines",
+          "blurb": "Country silhouettes of Eastern Europe.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 10
+        },
+        {
+          "id": "eastern-europe-rivers",
+          "name": "Eastern Europe: Rivers",
+          "blurb": "Volga, Danube, Dnipro, Vistula, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 7
+        },
+        {
           "id": "eastern-europe-lakes",
           "name": "Eastern Europe: Lakes",
           "blurb": "Balaton, Peipus, Onega, and more.",
@@ -1901,6 +1969,83 @@
             "study"
           ],
           "itemCount": 5
+        },
+        {
+          "id": "southern-europe-countries",
+          "name": "Southern Europe: Countries",
+          "blurb": "The Mediterranean, including Türkiye and the Balkans.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 18
+        },
+        {
+          "id": "southern-europe-capitals",
+          "name": "Southern Europe: Capitals",
+          "blurb": "Capitals of Southern Europe — Pin or Type.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 18
+        },
+        {
+          "id": "southern-europe-flags",
+          "name": "Southern Europe: Flags",
+          "blurb": "Flags of Southern Europe.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 18
+        },
+        {
+          "id": "southern-europe-outlines",
+          "name": "Southern Europe: Outlines",
+          "blurb": "Country silhouettes of Southern Europe.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 18
+        },
+        {
+          "id": "southern-europe-rivers",
+          "name": "Southern Europe: Rivers",
+          "blurb": "Po, Tagus, Ebro, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 6
         },
         {
           "id": "southern-europe-lakes",
@@ -1919,20 +2064,154 @@
           "itemCount": 5
         },
         {
-          "id": "northern-europe-lakes",
-          "name": "Northern Europe: Lakes",
-          "blurb": "Vänern, Ladoga, Saimaa, and more.",
+          "id": "nordic-countries",
+          "name": "The Nordic Countries",
+          "blurb": "Denmark, Finland, Iceland, Norway, and Sweden.",
           "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "nordic-capitals",
+          "name": "The Nordic Countries: Capitals",
+          "blurb": "Capitals of The Nordic Countries.",
+          "map": "world-countries",
+          "quiz": "capitals",
           "modes": [
             "pin",
             "type",
             "name",
             "choice",
+            "reverse",
             "study"
           ],
-          "itemCount": 6
+          "itemCount": 5
+        },
+        {
+          "id": "nordic-flags",
+          "name": "The Nordic Countries: Flags",
+          "blurb": "Flags of The Nordic Countries.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "nordic-outlines",
+          "name": "The Nordic Countries: Outlines",
+          "blurb": "Country silhouettes of The Nordic Countries.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "eu-countries",
+          "name": "European Union: Countries",
+          "blurb": "The 27 EU member states.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 27
+        },
+        {
+          "id": "eu-capitals",
+          "name": "European Union: Capitals",
+          "blurb": "Capitals of European Union.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 27
+        },
+        {
+          "id": "eu-flags",
+          "name": "European Union: Flags",
+          "blurb": "Flags of European Union.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 27
+        },
+        {
+          "id": "eu-outlines",
+          "name": "European Union: Outlines",
+          "blurb": "Country silhouettes of European Union.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 27
+        },
+        {
+          "id": "europe-flags",
+          "name": "Europe: Flags",
+          "blurb": "Flags of Europe.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 46
+        },
+        {
+          "id": "europe-outlines",
+          "name": "Europe: Outlines",
+          "blurb": "Silhouette drills for Europe.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 46
         }
       ],
       "blurb": "Countries, cities, regions, rivers, and landmarks.",
@@ -1955,6 +2234,8 @@
           "packIds": [
             "northern-europe-countries",
             "northern-europe-capitals",
+            "northern-europe-flags",
+            "northern-europe-outlines",
             "northern-europe-rivers",
             "northern-europe-lakes"
           ]
@@ -1965,6 +2246,7 @@
             "western-europe-countries",
             "western-europe-capitals",
             "western-europe-flags",
+            "western-europe-outlines",
             "western-europe-rivers",
             "western-europe-lakes"
           ]
@@ -1975,6 +2257,7 @@
             "eastern-europe-countries",
             "eastern-europe-capitals",
             "eastern-europe-flags",
+            "eastern-europe-outlines",
             "eastern-europe-rivers",
             "eastern-europe-lakes"
           ]
@@ -1984,6 +2267,8 @@
           "packIds": [
             "southern-europe-countries",
             "southern-europe-capitals",
+            "southern-europe-flags",
+            "southern-europe-outlines",
             "southern-europe-rivers",
             "southern-europe-lakes"
           ]
@@ -1991,13 +2276,19 @@
         {
           "name": "The Nordic Countries",
           "packIds": [
-            "nordic-countries"
+            "nordic-countries",
+            "nordic-capitals",
+            "nordic-flags",
+            "nordic-outlines"
           ]
         },
         {
           "name": "European Union",
           "packIds": [
-            "eu-countries"
+            "eu-countries",
+            "eu-capitals",
+            "eu-flags",
+            "eu-outlines"
           ]
         },
         {
@@ -2111,233 +2402,6 @@
           "itemCount": 23
         },
         {
-          "id": "africa-north-equator-countries",
-          "name": "Africa North Of the Equator: Countries",
-          "blurb": "Countries of Africa north of the equator — Pin and Type.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 30
-        },
-        {
-          "id": "africa-south-equator-countries",
-          "name": "Africa South Of the Equator: Countries",
-          "blurb": "Countries of Africa south of the equator — Pin and Type.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 20
-        },
-        {
-          "id": "northern-africa-countries",
-          "name": "Northern Africa: Countries",
-          "blurb": "Algeria through Western Sahara — Pin and Type.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 7
-        },
-        {
-          "id": "western-africa-countries",
-          "name": "Western Africa: Countries",
-          "blurb": "From Mauritania to Nigeria — Pin and Type.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 15
-        },
-        {
-          "id": "central-africa-countries",
-          "name": "Central Africa: Countries",
-          "blurb": "The Congo Basin and neighbors — Pin and Type.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 8
-        },
-        {
-          "id": "eastern-africa-countries",
-          "name": "Eastern Africa: Countries",
-          "blurb": "The Horn, the Great Lakes, and Madagascar — Pin and Type.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 15
-        },
-        {
-          "id": "southern-africa-countries",
-          "name": "Southern Africa: Countries",
-          "blurb": "South Africa and its neighbors — Pin and Type.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 5
-        },
-        {
-          "id": "northern-africa-capitals",
-          "name": "Northern Africa: Capitals",
-          "blurb": "Capitals of Northern Africa — Pin them or Type their names.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 6
-        },
-        {
-          "id": "western-africa-capitals",
-          "name": "Western Africa: Capitals",
-          "blurb": "Capitals of Western Africa — Pin them or Type their names.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 15
-        },
-        {
-          "id": "central-africa-capitals",
-          "name": "Central Africa: Capitals",
-          "blurb": "Capitals of Central Africa — Pin them or Type their names.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 8
-        },
-        {
-          "id": "eastern-africa-capitals",
-          "name": "Eastern Africa: Capitals",
-          "blurb": "Capitals of Eastern Africa — Pin them or Type their names.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 15
-        },
-        {
-          "id": "southern-africa-capitals",
-          "name": "Southern Africa: Capitals",
-          "blurb": "Capitals of Southern Africa — Pin them or Type their names.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 5
-        },
-        {
-          "id": "africa-flags",
-          "name": "Africa: Flags",
-          "blurb": "Flags of Africa.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 55
-        },
-        {
-          "id": "africa-outlines",
-          "name": "Africa: Outlines",
-          "blurb": "Silhouette drills for Africa.",
-          "map": "world-countries",
-          "quiz": "outlines",
-          "modes": [
-            "outline",
-            "type",
-            "choice",
-            "study"
-          ],
-          "itemCount": 55
-        },
-        {
           "id": "africa-rivers",
           "name": "Africa: Rivers",
           "blurb": "Nile, Congo, Niger, Zambezi, and more.",
@@ -2370,6 +2434,67 @@
           "itemCount": 8
         },
         {
+          "id": "northern-africa-countries",
+          "name": "Northern Africa: Countries",
+          "blurb": "Algeria through Western Sahara — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 7
+        },
+        {
+          "id": "northern-africa-capitals",
+          "name": "Northern Africa: Capitals",
+          "blurb": "Capitals of Northern Africa — Pin them or Type their names.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 6
+        },
+        {
+          "id": "northern-africa-flags",
+          "name": "Northern Africa: Flags",
+          "blurb": "Flags of Northern Africa.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 7
+        },
+        {
+          "id": "northern-africa-outlines",
+          "name": "Northern Africa: Outlines",
+          "blurb": "Country silhouettes of Northern Africa.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 7
+        },
+        {
           "id": "northern-africa-rivers",
           "name": "Northern Africa: Rivers",
           "blurb": "Nile, Senegal, and the Maghreb’s wadis.",
@@ -2386,89 +2511,86 @@
           "itemCount": 5
         },
         {
-          "id": "western-africa-rivers",
-          "name": "Western Africa: Rivers",
-          "blurb": "Niger, Senegal, Volta, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
-        },
-        {
-          "id": "central-africa-rivers",
-          "name": "Central Africa: Rivers",
-          "blurb": "Congo, Ubangi, Kasai, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
-        },
-        {
-          "id": "eastern-africa-rivers",
-          "name": "Eastern Africa: Rivers",
-          "blurb": "Nile, Jubba, and the Rift rivers.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
-        },
-        {
-          "id": "southern-africa-rivers",
-          "name": "Southern Africa: Rivers",
-          "blurb": "Zambezi, Orange, Limpopo, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
-        },
-        {
-          "id": "eastern-africa-lakes",
-          "name": "Eastern Africa: Lakes",
-          "blurb": "Victoria, Tanganyika, Malawi, Turkana.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
-        },
-        {
           "id": "northern-africa-lakes",
           "name": "Northern Africa: Lakes",
           "blurb": "Nasser, Chad, and the Maghreb’s great chotts.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "western-africa-countries",
+          "name": "Western Africa: Countries",
+          "blurb": "From Mauritania to Nigeria — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 15
+        },
+        {
+          "id": "western-africa-capitals",
+          "name": "Western Africa: Capitals",
+          "blurb": "Capitals of Western Africa — Pin them or Type their names.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 15
+        },
+        {
+          "id": "western-africa-flags",
+          "name": "Western Africa: Flags",
+          "blurb": "Flags of Western Africa.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 15
+        },
+        {
+          "id": "western-africa-outlines",
+          "name": "Western Africa: Outlines",
+          "blurb": "Country silhouettes of Western Africa.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 15
+        },
+        {
+          "id": "western-africa-rivers",
+          "name": "Western Africa: Rivers",
+          "blurb": "Niger, Senegal, Volta, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -2498,9 +2620,256 @@
           "itemCount": 5
         },
         {
+          "id": "central-africa-countries",
+          "name": "Central Africa: Countries",
+          "blurb": "The Congo Basin and neighbors — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 8
+        },
+        {
+          "id": "central-africa-capitals",
+          "name": "Central Africa: Capitals",
+          "blurb": "Capitals of Central Africa — Pin them or Type their names.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 8
+        },
+        {
+          "id": "central-africa-flags",
+          "name": "Central Africa: Flags",
+          "blurb": "Flags of Central Africa.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 8
+        },
+        {
+          "id": "central-africa-outlines",
+          "name": "Central Africa: Outlines",
+          "blurb": "Country silhouettes of Central Africa.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 8
+        },
+        {
+          "id": "central-africa-rivers",
+          "name": "Central Africa: Rivers",
+          "blurb": "Congo, Ubangi, Kasai, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
           "id": "central-africa-lakes",
           "name": "Central Africa: Lakes",
           "blurb": "Tanganyika, Kivu, Mai-Ndombe, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "eastern-africa-countries",
+          "name": "Eastern Africa: Countries",
+          "blurb": "The Horn, the Great Lakes, and Madagascar — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 15
+        },
+        {
+          "id": "eastern-africa-capitals",
+          "name": "Eastern Africa: Capitals",
+          "blurb": "Capitals of Eastern Africa — Pin them or Type their names.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 15
+        },
+        {
+          "id": "eastern-africa-flags",
+          "name": "Eastern Africa: Flags",
+          "blurb": "Flags of Eastern Africa.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 15
+        },
+        {
+          "id": "eastern-africa-outlines",
+          "name": "Eastern Africa: Outlines",
+          "blurb": "Country silhouettes of Eastern Africa.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 15
+        },
+        {
+          "id": "eastern-africa-rivers",
+          "name": "Eastern Africa: Rivers",
+          "blurb": "Nile, Jubba, and the Rift rivers.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "eastern-africa-lakes",
+          "name": "Eastern Africa: Lakes",
+          "blurb": "Victoria, Tanganyika, Malawi, Turkana.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 6
+        },
+        {
+          "id": "southern-africa-countries",
+          "name": "Southern Africa: Countries",
+          "blurb": "South Africa and its neighbors — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "southern-africa-capitals",
+          "name": "Southern Africa: Capitals",
+          "blurb": "Capitals of Southern Africa — Pin them or Type their names.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "southern-africa-flags",
+          "name": "Southern Africa: Flags",
+          "blurb": "Flags of Southern Africa.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "southern-africa-outlines",
+          "name": "Southern Africa: Outlines",
+          "blurb": "Country silhouettes of Southern Africa.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "southern-africa-rivers",
+          "name": "Southern Africa: Rivers",
+          "blurb": "Zambezi, Orange, Limpopo, and more.",
           "map": "world-countries",
           "overlay": "markers",
           "quiz": "places",
@@ -2528,6 +2897,156 @@
             "study"
           ],
           "itemCount": 5
+        },
+        {
+          "id": "africa-north-equator-countries",
+          "name": "Africa North Of the Equator: Countries",
+          "blurb": "Countries of Africa north of the equator — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 30
+        },
+        {
+          "id": "africa-north-equator-capitals",
+          "name": "Africa North Of the Equator: Capitals",
+          "blurb": "Capitals of Africa North Of the Equator.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 29
+        },
+        {
+          "id": "africa-north-equator-flags",
+          "name": "Africa North Of the Equator: Flags",
+          "blurb": "Flags of Africa North Of the Equator.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 30
+        },
+        {
+          "id": "africa-north-equator-outlines",
+          "name": "Africa North Of the Equator: Outlines",
+          "blurb": "Country silhouettes of Africa North Of the Equator.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 30
+        },
+        {
+          "id": "africa-south-equator-countries",
+          "name": "Africa South Of the Equator: Countries",
+          "blurb": "Countries of Africa south of the equator — Pin and Type.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
+          "id": "africa-south-equator-capitals",
+          "name": "Africa South Of the Equator: Capitals",
+          "blurb": "Capitals of Africa South Of the Equator.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
+          "id": "africa-south-equator-flags",
+          "name": "Africa South Of the Equator: Flags",
+          "blurb": "Flags of Africa South Of the Equator.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
+          "id": "africa-south-equator-outlines",
+          "name": "Africa South Of the Equator: Outlines",
+          "blurb": "Country silhouettes of Africa South Of the Equator.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
+          "id": "africa-flags",
+          "name": "Africa: Flags",
+          "blurb": "Flags of Africa.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 55
+        },
+        {
+          "id": "africa-outlines",
+          "name": "Africa: Outlines",
+          "blurb": "Silhouette drills for Africa.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 55
         }
       ],
       "blurb": "Countries, cities, regions, landmarks, and physical features.",
@@ -2550,6 +3069,8 @@
           "packIds": [
             "northern-africa-countries",
             "northern-africa-capitals",
+            "northern-africa-flags",
+            "northern-africa-outlines",
             "northern-africa-rivers",
             "northern-africa-lakes"
           ]
@@ -2559,6 +3080,8 @@
           "packIds": [
             "western-africa-countries",
             "western-africa-capitals",
+            "western-africa-flags",
+            "western-africa-outlines",
             "western-africa-rivers",
             "western-africa-lakes"
           ]
@@ -2568,6 +3091,8 @@
           "packIds": [
             "central-africa-countries",
             "central-africa-capitals",
+            "central-africa-flags",
+            "central-africa-outlines",
             "central-africa-rivers",
             "central-africa-lakes"
           ]
@@ -2577,6 +3102,8 @@
           "packIds": [
             "eastern-africa-countries",
             "eastern-africa-capitals",
+            "eastern-africa-flags",
+            "eastern-africa-outlines",
             "eastern-africa-rivers",
             "eastern-africa-lakes"
           ]
@@ -2586,6 +3113,8 @@
           "packIds": [
             "southern-africa-countries",
             "southern-africa-capitals",
+            "southern-africa-flags",
+            "southern-africa-outlines",
             "southern-africa-rivers",
             "southern-africa-lakes"
           ]
@@ -2593,13 +3122,19 @@
         {
           "name": "Africa North Of the Equator",
           "packIds": [
-            "africa-north-equator-countries"
+            "africa-north-equator-countries",
+            "africa-north-equator-capitals",
+            "africa-north-equator-flags",
+            "africa-north-equator-outlines"
           ]
         },
         {
           "name": "Africa South Of the Equator",
           "packIds": [
-            "africa-south-equator-countries"
+            "africa-south-equator-countries",
+            "africa-south-equator-capitals",
+            "africa-south-equator-flags",
+            "africa-south-equator-outlines"
           ]
         },
         {
@@ -2713,258 +3248,6 @@
           "itemCount": 28
         },
         {
-          "id": "southeast-asia-countries",
-          "name": "Southeast Asia: Countries",
-          "blurb": "Eleven countries from Myanmar to East Timor.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 11
-        },
-        {
-          "id": "south-asia-countries",
-          "name": "South Asia: Countries",
-          "blurb": "The Indian subcontinent.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 8
-        },
-        {
-          "id": "east-asia-countries",
-          "name": "East Asia: Countries",
-          "blurb": "China, Japan, Korea, Mongolia, and Taiwan.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 6
-        },
-        {
-          "id": "central-asia-countries",
-          "name": "Central Asia: Countries",
-          "blurb": "The five ‘stans’ of Central Asia.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 5
-        },
-        {
-          "id": "middle-east-countries",
-          "name": "The Middle East: Countries",
-          "blurb": "From Egypt and Türkiye to Yemen and Iran.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 16
-        },
-        {
-          "id": "mena-countries",
-          "name": "The Middle East and North Africa: Countries",
-          "blurb": "MENA countries across Asia and Africa.",
-          "map": "world-countries",
-          "quiz": "countries",
-          "modes": [
-            "pin",
-            "type",
-            "outline",
-            "name",
-            "choice",
-            "capitals",
-            "study"
-          ],
-          "itemCount": 20
-        },
-        {
-          "id": "southeast-asia-capitals",
-          "name": "Southeast Asia: Capitals",
-          "blurb": "Capitals of Southeast Asia — Pin or Type.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 11
-        },
-        {
-          "id": "south-asia-capitals",
-          "name": "South Asia: Capitals",
-          "blurb": "Capitals of South Asia — Pin or Type.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 8
-        },
-        {
-          "id": "east-asia-capitals",
-          "name": "East Asia: Capitals",
-          "blurb": "Capitals of East Asia — Pin or Type.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 6
-        },
-        {
-          "id": "central-asia-capitals",
-          "name": "Central Asia: Capitals",
-          "blurb": "Capitals of Central Asia — Pin or Type.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 5
-        },
-        {
-          "id": "middle-east-capitals",
-          "name": "The Middle East: Capitals",
-          "blurb": "Capitals of the Middle East — Pin or Type.",
-          "map": "world-countries",
-          "quiz": "capitals",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 16
-        },
-        {
-          "id": "asia-flags",
-          "name": "Asia: Flags",
-          "blurb": "Flags of Asia.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 48
-        },
-        {
-          "id": "southeast-asia-flags",
-          "name": "Southeast Asia: Flags",
-          "blurb": "Flags of Southeast Asia.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 11
-        },
-        {
-          "id": "south-asia-flags",
-          "name": "South Asia: Flags",
-          "blurb": "Flags of South Asia.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 8
-        },
-        {
-          "id": "middle-east-flags",
-          "name": "The Middle East: Flags",
-          "blurb": "Flags of the Middle East.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 16
-        },
-        {
-          "id": "asia-outlines",
-          "name": "Asia: Outlines",
-          "blurb": "Silhouette drills for Asia.",
-          "map": "world-countries",
-          "quiz": "outlines",
-          "modes": [
-            "outline",
-            "type",
-            "choice",
-            "study"
-          ],
-          "itemCount": 48
-        },
-        {
           "id": "asia-rivers",
           "name": "Asia: Rivers",
           "blurb": "Yangtze, Mekong, Ganges, and the rest.",
@@ -2995,6 +3278,67 @@
             "study"
           ],
           "itemCount": 10
+        },
+        {
+          "id": "east-asia-countries",
+          "name": "East Asia: Countries",
+          "blurb": "China, Japan, Korea, Mongolia, and Taiwan.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 6
+        },
+        {
+          "id": "east-asia-capitals",
+          "name": "East Asia: Capitals",
+          "blurb": "Capitals of East Asia — Pin or Type.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 6
+        },
+        {
+          "id": "east-asia-flags",
+          "name": "East Asia: Flags",
+          "blurb": "Flags of East Asia.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 6
+        },
+        {
+          "id": "east-asia-outlines",
+          "name": "East Asia: Outlines",
+          "blurb": "Country silhouettes of East Asia.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 6
         },
         {
           "id": "east-asia-rivers",
@@ -3029,6 +3373,67 @@
           "itemCount": 6
         },
         {
+          "id": "southeast-asia-countries",
+          "name": "Southeast Asia: Countries",
+          "blurb": "Eleven countries from Myanmar to East Timor.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 11
+        },
+        {
+          "id": "southeast-asia-capitals",
+          "name": "Southeast Asia: Capitals",
+          "blurb": "Capitals of Southeast Asia — Pin or Type.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 11
+        },
+        {
+          "id": "southeast-asia-flags",
+          "name": "Southeast Asia: Flags",
+          "blurb": "Flags of Southeast Asia.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 11
+        },
+        {
+          "id": "southeast-asia-outlines",
+          "name": "Southeast Asia: Outlines",
+          "blurb": "Country silhouettes of Southeast Asia.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 11
+        },
+        {
           "id": "southeast-asia-rivers",
           "name": "Southeast Asia: Rivers",
           "blurb": "Mekong, Irrawaddy, Chao Phraya, and more.",
@@ -3061,6 +3466,67 @@
           "itemCount": 5
         },
         {
+          "id": "south-asia-countries",
+          "name": "South Asia: Countries",
+          "blurb": "The Indian subcontinent.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 8
+        },
+        {
+          "id": "south-asia-capitals",
+          "name": "South Asia: Capitals",
+          "blurb": "Capitals of South Asia — Pin or Type.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 8
+        },
+        {
+          "id": "south-asia-flags",
+          "name": "South Asia: Flags",
+          "blurb": "Flags of South Asia.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 8
+        },
+        {
+          "id": "south-asia-outlines",
+          "name": "South Asia: Outlines",
+          "blurb": "Country silhouettes of South Asia.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 8
+        },
+        {
           "id": "south-asia-rivers",
           "name": "South Asia: Rivers",
           "blurb": "Ganges, Indus, Brahmaputra, and more.",
@@ -3087,6 +3553,67 @@
             "pin",
             "type",
             "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "central-asia-countries",
+          "name": "Central Asia: Countries",
+          "blurb": "The five ‘stans’ of Central Asia.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "central-asia-capitals",
+          "name": "Central Asia: Capitals",
+          "blurb": "Capitals of Central Asia — Pin or Type.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "central-asia-flags",
+          "name": "Central Asia: Flags",
+          "blurb": "Flags of Central Asia.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "central-asia-outlines",
+          "name": "Central Asia: Outlines",
+          "blurb": "Country silhouettes of Central Asia.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
             "choice",
             "study"
           ],
@@ -3125,6 +3652,67 @@
           "itemCount": 6
         },
         {
+          "id": "middle-east-countries",
+          "name": "The Middle East: Countries",
+          "blurb": "From Egypt and Türkiye to Yemen and Iran.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 16
+        },
+        {
+          "id": "middle-east-capitals",
+          "name": "The Middle East: Capitals",
+          "blurb": "Capitals of the Middle East — Pin or Type.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 16
+        },
+        {
+          "id": "middle-east-flags",
+          "name": "The Middle East: Flags",
+          "blurb": "Flags of The Middle East.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 16
+        },
+        {
+          "id": "middle-east-outlines",
+          "name": "The Middle East: Outlines",
+          "blurb": "Country silhouettes of The Middle East.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 16
+        },
+        {
           "id": "middle-east-rivers",
           "name": "The Middle East: Rivers",
           "blurb": "Tigris, Euphrates, Jordan, and more.",
@@ -3155,6 +3743,95 @@
             "study"
           ],
           "itemCount": 6
+        },
+        {
+          "id": "mena-countries",
+          "name": "The Middle East and North Africa: Countries",
+          "blurb": "MENA countries across Asia and Africa.",
+          "map": "world-countries",
+          "quiz": "countries",
+          "modes": [
+            "pin",
+            "type",
+            "outline",
+            "name",
+            "choice",
+            "capitals",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
+          "id": "mena-capitals",
+          "name": "The Middle East and North Africa: Capitals",
+          "blurb": "Capitals of The Middle East and North Africa.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
+          "id": "mena-flags",
+          "name": "The Middle East and North Africa: Flags",
+          "blurb": "Flags of The Middle East and North Africa.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
+          "id": "mena-outlines",
+          "name": "The Middle East and North Africa: Outlines",
+          "blurb": "Country silhouettes of The Middle East and North Africa.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 20
+        },
+        {
+          "id": "asia-flags",
+          "name": "Asia: Flags",
+          "blurb": "Flags of Asia.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 48
+        },
+        {
+          "id": "asia-outlines",
+          "name": "Asia: Outlines",
+          "blurb": "Silhouette drills for Asia.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 48
         }
       ],
       "blurb": "Countries, cities, regions, and landmarks from the Middle East to Japan.",
@@ -3177,6 +3854,8 @@
           "packIds": [
             "east-asia-countries",
             "east-asia-capitals",
+            "east-asia-flags",
+            "east-asia-outlines",
             "east-asia-rivers",
             "east-asia-lakes"
           ]
@@ -3187,6 +3866,7 @@
             "southeast-asia-countries",
             "southeast-asia-capitals",
             "southeast-asia-flags",
+            "southeast-asia-outlines",
             "southeast-asia-rivers",
             "southeast-asia-lakes"
           ]
@@ -3197,6 +3877,7 @@
             "south-asia-countries",
             "south-asia-capitals",
             "south-asia-flags",
+            "south-asia-outlines",
             "south-asia-rivers",
             "south-asia-lakes"
           ]
@@ -3206,6 +3887,8 @@
           "packIds": [
             "central-asia-countries",
             "central-asia-capitals",
+            "central-asia-flags",
+            "central-asia-outlines",
             "central-asia-rivers",
             "central-asia-lakes"
           ]
@@ -3216,6 +3899,7 @@
             "middle-east-countries",
             "middle-east-capitals",
             "middle-east-flags",
+            "middle-east-outlines",
             "middle-east-rivers",
             "middle-east-lakes"
           ]
@@ -3223,7 +3907,10 @@
         {
           "name": "The Middle East and North Africa",
           "packIds": [
-            "mena-countries"
+            "mena-countries",
+            "mena-capitals",
+            "mena-flags",
+            "mena-outlines"
           ]
         },
         {
@@ -3304,6 +3991,38 @@
             "study"
           ],
           "itemCount": 22
+        },
+        {
+          "id": "oceania-rivers",
+          "name": "Oceania: Rivers",
+          "blurb": "Murray, Darling, Waikato, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 8
+        },
+        {
+          "id": "oceania-lakes",
+          "name": "Oceania: Lakes",
+          "blurb": "Eyre, Taupō, Argyle, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 6
         },
         {
           "id": "australia-cities",
@@ -3387,6 +4106,34 @@
           "itemCount": 9
         },
         {
+          "id": "australia-surrounding-flags",
+          "name": "Australia: Surrounding Flags",
+          "blurb": "Flags of Australia’s neighboring countries.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 9
+        },
+        {
+          "id": "australia-surrounding-outlines",
+          "name": "Australia: Surrounding Outlines",
+          "blurb": "Silhouettes of Australia’s neighboring countries.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 9
+        },
+        {
           "id": "australia-physical",
           "name": "Australia: Physical Features",
           "blurb": "Deserts, the Murray, and the Great Barrier Reef.",
@@ -3403,6 +4150,38 @@
           "itemCount": 26
         },
         {
+          "id": "australia-rivers",
+          "name": "Australia: Rivers",
+          "blurb": "Murray, Darling, and the rest.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 6
+        },
+        {
+          "id": "australia-lakes",
+          "name": "Australia: Lakes",
+          "blurb": "Eyre, Torrens, Argyle, and more.",
+          "map": "world-countries",
+          "overlay": "markers",
+          "quiz": "places",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
           "id": "melanesia-countries",
           "name": "Melanesia: Countries",
           "blurb": "Fiji, Papua New Guinea, Solomon Islands, and Vanuatu.",
@@ -3415,6 +4194,50 @@
             "name",
             "choice",
             "capitals",
+            "study"
+          ],
+          "itemCount": 4
+        },
+        {
+          "id": "melanesia-capitals",
+          "name": "Melanesia: Capitals",
+          "blurb": "Capitals of Melanesia.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 4
+        },
+        {
+          "id": "melanesia-flags",
+          "name": "Melanesia: Flags",
+          "blurb": "Flags of Melanesia.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 4
+        },
+        {
+          "id": "melanesia-outlines",
+          "name": "Melanesia: Outlines",
+          "blurb": "Country silhouettes of Melanesia.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
             "study"
           ],
           "itemCount": 4
@@ -3437,6 +4260,50 @@
           "itemCount": 5
         },
         {
+          "id": "micronesia-capitals",
+          "name": "Micronesia: Capitals",
+          "blurb": "Capitals of Micronesia.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "micronesia-flags",
+          "name": "Micronesia: Flags",
+          "blurb": "Flags of Micronesia.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
+          "id": "micronesia-outlines",
+          "name": "Micronesia: Outlines",
+          "blurb": "Country silhouettes of Micronesia.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 5
+        },
+        {
           "id": "polynesia-countries",
           "name": "Polynesia: Countries",
           "blurb": "Samoa, Tonga, and Tuvalu.",
@@ -3449,6 +4316,50 @@
             "name",
             "choice",
             "capitals",
+            "study"
+          ],
+          "itemCount": 3
+        },
+        {
+          "id": "polynesia-capitals",
+          "name": "Polynesia: Capitals",
+          "blurb": "Capitals of Polynesia.",
+          "map": "world-countries",
+          "quiz": "capitals",
+          "modes": [
+            "pin",
+            "type",
+            "name",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 3
+        },
+        {
+          "id": "polynesia-flags",
+          "name": "Polynesia: Flags",
+          "blurb": "Flags of Polynesia.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 3
+        },
+        {
+          "id": "polynesia-outlines",
+          "name": "Polynesia: Outlines",
+          "blurb": "Country silhouettes of Polynesia.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
             "study"
           ],
           "itemCount": 3
@@ -3494,70 +4405,6 @@
             "study"
           ],
           "itemCount": 14
-        },
-        {
-          "id": "oceania-rivers",
-          "name": "Oceania: Rivers",
-          "blurb": "Murray, Darling, Waikato, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 8
-        },
-        {
-          "id": "oceania-lakes",
-          "name": "Oceania: Lakes",
-          "blurb": "Eyre, Taupō, Argyle, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
-        },
-        {
-          "id": "australia-rivers",
-          "name": "Australia: Rivers",
-          "blurb": "Murray, Darling, and the rest.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 6
-        },
-        {
-          "id": "australia-lakes",
-          "name": "Australia: Lakes",
-          "blurb": "Eyre, Torrens, Argyle, and more.",
-          "map": "world-countries",
-          "overlay": "markers",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 5
         }
       ],
       "blurb": "Pacific countries, Australian cities, and physical features.",
@@ -3581,6 +4428,8 @@
             "anz-cities",
             "australia-states",
             "australia-surrounding",
+            "australia-surrounding-flags",
+            "australia-surrounding-outlines",
             "australia-physical",
             "australia-rivers",
             "australia-lakes"
@@ -3589,19 +4438,28 @@
         {
           "name": "Melanesia",
           "packIds": [
-            "melanesia-countries"
+            "melanesia-countries",
+            "melanesia-capitals",
+            "melanesia-flags",
+            "melanesia-outlines"
           ]
         },
         {
           "name": "Micronesia",
           "packIds": [
-            "micronesia-countries"
+            "micronesia-countries",
+            "micronesia-capitals",
+            "micronesia-flags",
+            "micronesia-outlines"
           ]
         },
         {
           "name": "Polynesia",
           "packIds": [
-            "polynesia-countries"
+            "polynesia-countries",
+            "polynesia-capitals",
+            "polynesia-flags",
+            "polynesia-outlines"
           ]
         },
         {
@@ -3764,7 +4622,7 @@
     {
       "id": "na-capitals",
       "name": "North & Central America: Capitals",
-      "blurb": "Capitals from Canada to Panama, plus Havana, Kingston, Port-au-Prince, and Santo Domingo.",
+      "blurb": "North & Central America: Capitals — Pin them or Type their names.",
       "map": "world-countries",
       "quiz": "capitals",
       "modes": [
@@ -3844,7 +4702,7 @@
     {
       "id": "caribbean-capitals",
       "name": "The Caribbean: Capitals",
-      "blurb": "Capitals of the 13 independent Caribbean countries.",
+      "blurb": "The Caribbean: Capitals — Pin them or Type their names.",
       "map": "world-countries",
       "quiz": "capitals",
       "modes": [
@@ -3860,7 +4718,7 @@
     {
       "id": "caribbean-flags",
       "name": "The Caribbean: Flags",
-      "blurb": "Flags of the 13 independent Caribbean countries.",
+      "blurb": "Flags of The Caribbean.",
       "map": null,
       "quiz": "flags",
       "modes": [
@@ -5299,7 +6157,7 @@
     {
       "id": "middle-east-flags",
       "name": "The Middle East: Flags",
-      "blurb": "Flags of the Middle East.",
+      "blurb": "Flags of The Middle East.",
       "map": null,
       "quiz": "flags",
       "modes": [
@@ -5345,8 +6203,8 @@
     },
     {
       "id": "caribbean-outlines",
-      "name": "The Caribbean: Country Outlines",
-      "blurb": "Silhouettes of the 13 independent Caribbean countries.",
+      "name": "The Caribbean: Outlines",
+      "blurb": "Country silhouettes of The Caribbean.",
       "map": "world-countries",
       "quiz": "outlines",
       "modes": [
@@ -6746,6 +7604,808 @@
         "study"
       ],
       "itemCount": 5
+    },
+    {
+      "id": "northern-america-flags",
+      "name": "Northern America: Flags",
+      "blurb": "Flags of Northern America.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 3
+    },
+    {
+      "id": "northern-america-outlines",
+      "name": "Northern America: Outlines",
+      "blurb": "Country silhouettes of Northern America.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 3
+    },
+    {
+      "id": "central-america-flags",
+      "name": "Central America: Flags",
+      "blurb": "Flags of Central America.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 7
+    },
+    {
+      "id": "central-america-outlines",
+      "name": "Central America: Outlines",
+      "blurb": "Country silhouettes of Central America.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 7
+    },
+    {
+      "id": "latin-america-capitals",
+      "name": "Latin America: Capitals",
+      "blurb": "Capitals of Latin America.",
+      "map": "world-countries",
+      "quiz": "capitals",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 20
+    },
+    {
+      "id": "latin-america-flags",
+      "name": "Latin America: Flags",
+      "blurb": "Flags of Latin America.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 20
+    },
+    {
+      "id": "latin-america-outlines",
+      "name": "Latin America: Outlines",
+      "blurb": "Country silhouettes of Latin America.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 20
+    },
+    {
+      "id": "northern-europe-flags",
+      "name": "Northern Europe: Flags",
+      "blurb": "Flags of Northern Europe.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 10
+    },
+    {
+      "id": "northern-europe-outlines",
+      "name": "Northern Europe: Outlines",
+      "blurb": "Country silhouettes of Northern Europe.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 10
+    },
+    {
+      "id": "western-europe-outlines",
+      "name": "Western Europe: Outlines",
+      "blurb": "Country silhouettes of Western Europe.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 9
+    },
+    {
+      "id": "eastern-europe-outlines",
+      "name": "Eastern Europe: Outlines",
+      "blurb": "Country silhouettes of Eastern Europe.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 10
+    },
+    {
+      "id": "southern-europe-flags",
+      "name": "Southern Europe: Flags",
+      "blurb": "Flags of Southern Europe.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 18
+    },
+    {
+      "id": "southern-europe-outlines",
+      "name": "Southern Europe: Outlines",
+      "blurb": "Country silhouettes of Southern Europe.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 18
+    },
+    {
+      "id": "nordic-capitals",
+      "name": "The Nordic Countries: Capitals",
+      "blurb": "Capitals of The Nordic Countries.",
+      "map": "world-countries",
+      "quiz": "capitals",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 5
+    },
+    {
+      "id": "nordic-flags",
+      "name": "The Nordic Countries: Flags",
+      "blurb": "Flags of The Nordic Countries.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 5
+    },
+    {
+      "id": "nordic-outlines",
+      "name": "The Nordic Countries: Outlines",
+      "blurb": "Country silhouettes of The Nordic Countries.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 5
+    },
+    {
+      "id": "eu-capitals",
+      "name": "European Union: Capitals",
+      "blurb": "Capitals of European Union.",
+      "map": "world-countries",
+      "quiz": "capitals",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 27
+    },
+    {
+      "id": "eu-flags",
+      "name": "European Union: Flags",
+      "blurb": "Flags of European Union.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 27
+    },
+    {
+      "id": "eu-outlines",
+      "name": "European Union: Outlines",
+      "blurb": "Country silhouettes of European Union.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 27
+    },
+    {
+      "id": "northern-africa-flags",
+      "name": "Northern Africa: Flags",
+      "blurb": "Flags of Northern Africa.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 7
+    },
+    {
+      "id": "northern-africa-outlines",
+      "name": "Northern Africa: Outlines",
+      "blurb": "Country silhouettes of Northern Africa.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 7
+    },
+    {
+      "id": "western-africa-flags",
+      "name": "Western Africa: Flags",
+      "blurb": "Flags of Western Africa.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 15
+    },
+    {
+      "id": "western-africa-outlines",
+      "name": "Western Africa: Outlines",
+      "blurb": "Country silhouettes of Western Africa.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 15
+    },
+    {
+      "id": "central-africa-flags",
+      "name": "Central Africa: Flags",
+      "blurb": "Flags of Central Africa.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 8
+    },
+    {
+      "id": "central-africa-outlines",
+      "name": "Central Africa: Outlines",
+      "blurb": "Country silhouettes of Central Africa.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 8
+    },
+    {
+      "id": "eastern-africa-flags",
+      "name": "Eastern Africa: Flags",
+      "blurb": "Flags of Eastern Africa.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 15
+    },
+    {
+      "id": "eastern-africa-outlines",
+      "name": "Eastern Africa: Outlines",
+      "blurb": "Country silhouettes of Eastern Africa.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 15
+    },
+    {
+      "id": "southern-africa-flags",
+      "name": "Southern Africa: Flags",
+      "blurb": "Flags of Southern Africa.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 5
+    },
+    {
+      "id": "southern-africa-outlines",
+      "name": "Southern Africa: Outlines",
+      "blurb": "Country silhouettes of Southern Africa.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 5
+    },
+    {
+      "id": "africa-north-equator-capitals",
+      "name": "Africa North Of the Equator: Capitals",
+      "blurb": "Capitals of Africa North Of the Equator.",
+      "map": "world-countries",
+      "quiz": "capitals",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 29
+    },
+    {
+      "id": "africa-north-equator-flags",
+      "name": "Africa North Of the Equator: Flags",
+      "blurb": "Flags of Africa North Of the Equator.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 30
+    },
+    {
+      "id": "africa-north-equator-outlines",
+      "name": "Africa North Of the Equator: Outlines",
+      "blurb": "Country silhouettes of Africa North Of the Equator.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 30
+    },
+    {
+      "id": "africa-south-equator-capitals",
+      "name": "Africa South Of the Equator: Capitals",
+      "blurb": "Capitals of Africa South Of the Equator.",
+      "map": "world-countries",
+      "quiz": "capitals",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 20
+    },
+    {
+      "id": "africa-south-equator-flags",
+      "name": "Africa South Of the Equator: Flags",
+      "blurb": "Flags of Africa South Of the Equator.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 20
+    },
+    {
+      "id": "africa-south-equator-outlines",
+      "name": "Africa South Of the Equator: Outlines",
+      "blurb": "Country silhouettes of Africa South Of the Equator.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 20
+    },
+    {
+      "id": "east-asia-flags",
+      "name": "East Asia: Flags",
+      "blurb": "Flags of East Asia.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 6
+    },
+    {
+      "id": "east-asia-outlines",
+      "name": "East Asia: Outlines",
+      "blurb": "Country silhouettes of East Asia.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 6
+    },
+    {
+      "id": "southeast-asia-outlines",
+      "name": "Southeast Asia: Outlines",
+      "blurb": "Country silhouettes of Southeast Asia.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 11
+    },
+    {
+      "id": "south-asia-outlines",
+      "name": "South Asia: Outlines",
+      "blurb": "Country silhouettes of South Asia.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 8
+    },
+    {
+      "id": "central-asia-flags",
+      "name": "Central Asia: Flags",
+      "blurb": "Flags of Central Asia.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 5
+    },
+    {
+      "id": "central-asia-outlines",
+      "name": "Central Asia: Outlines",
+      "blurb": "Country silhouettes of Central Asia.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 5
+    },
+    {
+      "id": "middle-east-outlines",
+      "name": "The Middle East: Outlines",
+      "blurb": "Country silhouettes of The Middle East.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 16
+    },
+    {
+      "id": "mena-capitals",
+      "name": "The Middle East and North Africa: Capitals",
+      "blurb": "Capitals of The Middle East and North Africa.",
+      "map": "world-countries",
+      "quiz": "capitals",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 20
+    },
+    {
+      "id": "mena-flags",
+      "name": "The Middle East and North Africa: Flags",
+      "blurb": "Flags of The Middle East and North Africa.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 20
+    },
+    {
+      "id": "mena-outlines",
+      "name": "The Middle East and North Africa: Outlines",
+      "blurb": "Country silhouettes of The Middle East and North Africa.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 20
+    },
+    {
+      "id": "melanesia-capitals",
+      "name": "Melanesia: Capitals",
+      "blurb": "Capitals of Melanesia.",
+      "map": "world-countries",
+      "quiz": "capitals",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 4
+    },
+    {
+      "id": "melanesia-flags",
+      "name": "Melanesia: Flags",
+      "blurb": "Flags of Melanesia.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 4
+    },
+    {
+      "id": "melanesia-outlines",
+      "name": "Melanesia: Outlines",
+      "blurb": "Country silhouettes of Melanesia.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 4
+    },
+    {
+      "id": "micronesia-capitals",
+      "name": "Micronesia: Capitals",
+      "blurb": "Capitals of Micronesia.",
+      "map": "world-countries",
+      "quiz": "capitals",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 5
+    },
+    {
+      "id": "micronesia-flags",
+      "name": "Micronesia: Flags",
+      "blurb": "Flags of Micronesia.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 5
+    },
+    {
+      "id": "micronesia-outlines",
+      "name": "Micronesia: Outlines",
+      "blurb": "Country silhouettes of Micronesia.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 5
+    },
+    {
+      "id": "polynesia-capitals",
+      "name": "Polynesia: Capitals",
+      "blurb": "Capitals of Polynesia.",
+      "map": "world-countries",
+      "quiz": "capitals",
+      "modes": [
+        "pin",
+        "type",
+        "name",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 3
+    },
+    {
+      "id": "polynesia-flags",
+      "name": "Polynesia: Flags",
+      "blurb": "Flags of Polynesia.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 3
+    },
+    {
+      "id": "polynesia-outlines",
+      "name": "Polynesia: Outlines",
+      "blurb": "Country silhouettes of Polynesia.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 3
+    },
+    {
+      "id": "australia-surrounding-flags",
+      "name": "Australia: Surrounding Flags",
+      "blurb": "Flags of Australia’s neighboring countries.",
+      "map": null,
+      "quiz": "flags",
+      "modes": [
+        "type",
+        "choice",
+        "reverse",
+        "study"
+      ],
+      "itemCount": 9
+    },
+    {
+      "id": "australia-surrounding-outlines",
+      "name": "Australia: Surrounding Outlines",
+      "blurb": "Silhouettes of Australia’s neighboring countries.",
+      "map": "world-countries",
+      "quiz": "outlines",
+      "modes": [
+        "outline",
+        "type",
+        "choice",
+        "study"
+      ],
+      "itemCount": 9
     }
   ]
 }

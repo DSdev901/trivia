@@ -1,0 +1,56 @@
+{
+  "id": "east-asia-flags",
+  "name": "East Asia: Flags",
+  "map": null,
+  "quiz": "flags",
+  "items": [
+    {
+      "id": "CN",
+      "name": "China",
+      "capital": "Beijing",
+      "flag": "🇨🇳",
+      "region": "Asia",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "JP",
+      "name": "Japan",
+      "capital": "Tokyo",
+      "flag": "🇯🇵",
+      "region": "Asia",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "MN",
+      "name": "Mongolia",
+      "capital": "Ulan Bator",
+      "flag": "🇲🇳",
+      "region": "Asia",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "KP",
+      "name": "North Korea",
+      "capital": "Pyongyang",
+      "flag": "🇰🇵",
+      "region": "Asia",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "KR",
+      "name": "South Korea",
+      "capital": "Seoul",
+      "flag": "🇰🇷",
+      "region": "Asia",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "TW",
+      "name": "Taiwan",
+      "capital": "Taipei",
+      "flag": "🇹🇼",
+      "region": "Asia",
+      "subregion": "Eastern Asia"
+    }
+  ]
+}
