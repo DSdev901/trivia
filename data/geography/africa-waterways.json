@@ -1,0 +1,414 @@
+{
+  "id": "africa-waterways",
+  "name": "Africa: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "nile",
+      "name": "Nile",
+      "fact": "Often cited as the world’s longest river.",
+      "kind": "water",
+      "lat": 26,
+      "lon": 32.5,
+      "x": 586,
+      "y": 173.6,
+      "facts": [
+        "Often cited as the world’s longest river.",
+        "Flows north through 11 countries.",
+        "Empties into the Mediterranean."
+      ],
+      "waterway": "Nile",
+      "country": "Egypt"
+    },
+    {
+      "id": "congo",
+      "name": "Congo",
+      "fact": "Deepest river; second-largest by discharge.",
+      "kind": "water",
+      "lat": -2,
+      "lon": 18,
+      "x": 549.2,
+      "y": 262.4,
+      "facts": [
+        "Deepest river; second-largest by discharge.",
+        "Africa’s second-longest river.",
+        "Forms stretches of the Republic of the Congo–DRC border."
+      ],
+      "border": true,
+      "waterway": "Congo",
+      "country": "DR Congo"
+    },
+    {
+      "id": "niger",
+      "name": "Niger",
+      "fact": "Principal river of West Africa.",
+      "kind": "water",
+      "lat": 16,
+      "lon": 4,
+      "x": 510.8,
+      "y": 205.4,
+      "facts": [
+        "Principal river of West Africa.",
+        "The “Boomerang” river, rising in the Guinea Highlands."
+      ],
+      "waterway": "Niger",
+      "country": "Niger"
+    },
+    {
+      "id": "zambezi",
+      "name": "Zambezi",
+      "fact": "Home of Victoria Falls.",
+      "kind": "water",
+      "lat": -16,
+      "lon": 28.5,
+      "x": 577,
+      "y": 306.7,
+      "facts": [
+        "Home of Victoria Falls.",
+        "Africa’s fourth-longest river.",
+        "Forms stretches of the Zambia–Zimbabwe border."
+      ],
+      "border": true,
+      "waterway": "Zambezi",
+      "country": "Zambia"
+    },
+    {
+      "id": "orange",
+      "name": "Orange River",
+      "fact": "Longest river in South Africa.",
+      "kind": "water",
+      "lat": -28.6,
+      "lon": 17.6,
+      "x": 546.3,
+      "y": 346.8,
+      "facts": [
+        "Longest river in South Africa.",
+        "Forms much of the Namibia–South Africa border."
+      ],
+      "border": true,
+      "waterway": "Orange",
+      "country": "Namibia"
+    },
+    {
+      "id": "limpopo",
+      "name": "Limpopo",
+      "fact": "River of southern Africa.",
+      "kind": "water",
+      "lat": -23,
+      "lon": 31.5,
+      "x": 584,
+      "y": 329,
+      "facts": [
+        "River of southern Africa.",
+        "Forms stretches of the South Africa–Botswana and South Africa–Zimbabwe borders."
+      ],
+      "border": true,
+      "waterway": "Limpopo",
+      "country": "Mozambique"
+    },
+    {
+      "id": "senegal-r",
+      "name": "Senegal River",
+      "fact": "Principal river of Senegal and Mauritania.",
+      "kind": "water",
+      "lat": 16.5,
+      "lon": -14.5,
+      "x": 460.8,
+      "y": 203.8,
+      "facts": [
+        "Principal river of Senegal and Mauritania.",
+        "Forms most of the Senegal–Mauritania border."
+      ],
+      "border": true,
+      "waterway": "Sénégal",
+      "country": "Senegal"
+    },
+    {
+      "id": "volta",
+      "name": "Volta",
+      "fact": "Principal river of Ghana.",
+      "kind": "water",
+      "lat": 7.2,
+      "lon": 0.3,
+      "x": 500.8,
+      "y": 233.2,
+      "facts": [
+        "Principal river of Ghana.",
+        "Lake Volta behind Akosombo Dam is among the world’s largest reservoirs."
+      ],
+      "waterway": "Volta",
+      "country": "Ghana"
+    },
+    {
+      "id": "ubangi",
+      "name": "Ubangi",
+      "fact": "Chief northern tributary of the Congo.",
+      "kind": "water",
+      "lat": 4.3,
+      "lon": 18.6,
+      "x": 550.8,
+      "y": 242.4,
+      "facts": [
+        "Chief northern tributary of the Congo.",
+        "Forms much of the CAR–DRC border."
+      ],
+      "border": true,
+      "waterway": "Ubangi",
+      "country": "DR Congo"
+    },
+    {
+      "id": "victoria",
+      "name": "Lake Victoria",
+      "fact": "Largest lake in Africa by area.",
+      "kind": "water",
+      "lat": -1,
+      "lon": 33,
+      "x": 590.2,
+      "y": 259.2,
+      "facts": [
+        "Largest lake in Africa by area.",
+        "Source of the White Nile."
+      ],
+      "country": "Uganda"
+    },
+    {
+      "id": "tanganyika",
+      "name": "Lake Tanganyika",
+      "fact": "Longest freshwater lake; second-deepest.",
+      "kind": "water",
+      "lat": -6.5,
+      "lon": 29.8,
+      "x": 581.3,
+      "y": 276.6,
+      "facts": [
+        "Longest freshwater lake; second-deepest.",
+        "An African Rift lake shared by four countries."
+      ],
+      "country": "Tanzania"
+    },
+    {
+      "id": "malawi",
+      "name": "Lake Malawi",
+      "fact": "Also called Lake Nyasa; African Rift lake.",
+      "kind": "water",
+      "lat": -12,
+      "lon": 34.5,
+      "x": 593.7,
+      "y": 294,
+      "facts": [
+        "Also called Lake Nyasa; African Rift lake.",
+        "Among the world’s deepest lakes."
+      ],
+      "country": "Malawi"
+    },
+    {
+      "id": "chad",
+      "name": "Lake Chad",
+      "fact": "Shallow African lake; size varies greatly.",
+      "kind": "water",
+      "lat": 13,
+      "lon": 14,
+      "x": 538,
+      "y": 214.9,
+      "facts": [
+        "Shallow African lake; size varies greatly.",
+        "Shared by Chad, Cameroon, Niger, and Nigeria."
+      ],
+      "country": "Chad"
+    },
+    {
+      "id": "turkana",
+      "name": "Lake Turkana",
+      "fact": "Largest desert lake.",
+      "kind": "water",
+      "lat": 3.5,
+      "lon": 36.1,
+      "x": 598.7,
+      "y": 245,
+      "facts": [
+        "Largest desert lake.",
+        "In Kenya’s Rift Valley, with a shore in Ethiopia."
+      ],
+      "country": "Kenya"
+    },
+    {
+      "id": "kariba",
+      "name": "Lake Kariba",
+      "fact": "One of the world’s largest reservoirs by volume.",
+      "kind": "water",
+      "lat": -17,
+      "lon": 27.8,
+      "x": 575,
+      "y": 309.9,
+      "facts": [
+        "One of the world’s largest reservoirs by volume.",
+        "On the Zambezi between Zambia and Zimbabwe."
+      ],
+      "country": "Zambia"
+    },
+    {
+      "id": "nalubaale",
+      "name": "Owen Falls / Lake Victoria Nile",
+      "fact": "The White Nile’s outlet from Lake Victoria.",
+      "kind": "water",
+      "lat": 0.45,
+      "lon": 33.2,
+      "x": 590.8,
+      "y": 254.6,
+      "facts": [
+        "The White Nile’s outlet from Lake Victoria.",
+        "At Jinja, Uganda."
+      ],
+      "country": "Uganda"
+    },
+    {
+      "id": "tana",
+      "name": "Lake Tana",
+      "fact": "Largest lake in Ethiopia.",
+      "kind": "water",
+      "lat": 12,
+      "lon": 37.3,
+      "x": 601.3,
+      "y": 218,
+      "facts": [
+        "Largest lake in Ethiopia.",
+        "Source of the Blue Nile."
+      ],
+      "country": "Ethiopia"
+    },
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean off Africa’s west coast.",
+      "kind": "water",
+      "lat": 5,
+      "lon": -15,
+      "x": 459,
+      "y": 240.2,
+      "facts": [
+        "Ocean off Africa’s west coast."
+      ]
+    },
+    {
+      "id": "indian-ocean",
+      "name": "Indian Ocean",
+      "fact": "Ocean off Africa’s east coast.",
+      "kind": "water",
+      "lat": -10,
+      "lon": 55,
+      "x": 649.7,
+      "y": 287.7,
+      "facts": [
+        "Ocean off Africa’s east coast."
+      ]
+    },
+    {
+      "id": "mediterranean",
+      "name": "Mediterranean Sea",
+      "fact": "Sea north of Africa.",
+      "kind": "water",
+      "lat": 34,
+      "lon": 18,
+      "x": 546.5,
+      "y": 148.1,
+      "facts": [
+        "Sea north of Africa."
+      ]
+    },
+    {
+      "id": "red-sea",
+      "name": "Red Sea",
+      "fact": "Between northeast Africa and Arabia.",
+      "kind": "water",
+      "lat": 20,
+      "lon": 38.5,
+      "x": 603.3,
+      "y": 192.6,
+      "facts": [
+        "Between northeast Africa and Arabia."
+      ]
+    },
+    {
+      "id": "gulf-guinea",
+      "name": "Gulf of Guinea",
+      "fact": "Atlantic gulf of West and Central Africa.",
+      "kind": "water",
+      "lat": 3,
+      "lon": 3,
+      "x": 508.2,
+      "y": 246.5,
+      "facts": [
+        "Atlantic gulf of West and Central Africa.",
+        "The Niger and Congo empty toward it."
+      ]
+    },
+    {
+      "id": "mozambique-channel",
+      "name": "Mozambique Channel",
+      "fact": "Between Mozambique and Madagascar.",
+      "kind": "water",
+      "lat": -17,
+      "lon": 42,
+      "x": 613.3,
+      "y": 309.9,
+      "facts": [
+        "Between Mozambique and Madagascar."
+      ]
+    },
+    {
+      "id": "gibraltar",
+      "name": "Strait of Gibraltar",
+      "fact": "Between Morocco and Spain.",
+      "kind": "water",
+      "lat": 35.97,
+      "lon": -5.58,
+      "x": 485.7,
+      "y": 141.8,
+      "facts": [
+        "Between Morocco and Spain."
+      ]
+    },
+    {
+      "id": "bab-el-mandeb",
+      "name": "Bab-el-Mandeb",
+      "fact": "Between the Red Sea and the Gulf of Aden.",
+      "kind": "water",
+      "lat": 12.58,
+      "lon": 43.33,
+      "x": 617.6,
+      "y": 216.2,
+      "facts": [
+        "Between the Red Sea and the Gulf of Aden."
+      ],
+      "country": "Djibouti"
+    },
+    {
+      "id": "gulf-aden",
+      "name": "Gulf of Aden",
+      "fact": "Between the Horn of Africa and Yemen.",
+      "kind": "water",
+      "lat": 12.5,
+      "lon": 47,
+      "x": 627.6,
+      "y": 216.5,
+      "facts": [
+        "Between the Horn of Africa and Yemen."
+      ]
+    },
+    {
+      "id": "suez",
+      "name": "Suez Canal",
+      "fact": "Links the Mediterranean and the Red Sea.",
+      "kind": "water",
+      "lat": 30.45,
+      "lon": 32.35,
+      "x": 584.6,
+      "y": 159.4,
+      "facts": [
+        "Links the Mediterranean and the Red Sea."
+      ]
+    }
+  ]
+}

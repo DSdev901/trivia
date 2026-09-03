@@ -1,0 +1,166 @@
+{
+  "id": "africa-north-equator-waterways",
+  "name": "Africa North Of the Equator: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "nile",
+      "name": "Nile",
+      "fact": "Often cited as the world’s longest river.",
+      "kind": "water",
+      "lat": 26,
+      "lon": 32.5,
+      "x": 586,
+      "y": 173.6,
+      "facts": [
+        "Often cited as the world’s longest river.",
+        "Flows north through 11 countries.",
+        "Empties into the Mediterranean."
+      ],
+      "waterway": "Nile",
+      "country": "Egypt"
+    },
+    {
+      "id": "niger",
+      "name": "Niger",
+      "fact": "Principal river of West Africa.",
+      "kind": "water",
+      "lat": 16,
+      "lon": 4,
+      "x": 510.8,
+      "y": 205.4,
+      "facts": [
+        "Principal river of West Africa.",
+        "The “Boomerang” river, rising in the Guinea Highlands."
+      ],
+      "waterway": "Niger",
+      "country": "Niger"
+    },
+    {
+      "id": "senegal-r",
+      "name": "Senegal River",
+      "fact": "Forms most of the Senegal–Mauritania border.",
+      "kind": "water",
+      "lat": 16.5,
+      "lon": -14.5,
+      "x": 460.8,
+      "y": 203.8,
+      "facts": [
+        "Forms most of the Senegal–Mauritania border."
+      ],
+      "border": true,
+      "waterway": "Sénégal",
+      "country": "Senegal"
+    },
+    {
+      "id": "chad",
+      "name": "Lake Chad",
+      "fact": "Shallow African lake; size varies greatly.",
+      "kind": "water",
+      "lat": 13,
+      "lon": 14,
+      "x": 538,
+      "y": 214.9,
+      "facts": [
+        "Shallow African lake; size varies greatly.",
+        "Shared by Chad, Cameroon, Niger, and Nigeria."
+      ],
+      "country": "Chad"
+    },
+    {
+      "id": "nasser",
+      "name": "Lake Nasser",
+      "fact": "Reservoir behind Aswan High Dam.",
+      "kind": "water",
+      "lat": 22.5,
+      "lon": 32.5,
+      "x": 586.8,
+      "y": 184.7,
+      "facts": [
+        "Reservoir behind Aswan High Dam."
+      ],
+      "country": "Egypt"
+    },
+    {
+      "id": "volta-lake",
+      "name": "Lake Volta",
+      "fact": "Among the world’s largest reservoirs by area.",
+      "kind": "water",
+      "lat": 7,
+      "lon": 0,
+      "x": 500,
+      "y": 233.9,
+      "facts": [
+        "Among the world’s largest reservoirs by area."
+      ],
+      "country": "Ghana"
+    },
+    {
+      "id": "mediterranean",
+      "name": "Mediterranean Sea",
+      "fact": "Sea north of Africa.",
+      "kind": "water",
+      "lat": 34,
+      "lon": 18,
+      "x": 546.5,
+      "y": 148.1,
+      "facts": [
+        "Sea north of Africa."
+      ]
+    },
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean west of northern Africa.",
+      "kind": "water",
+      "lat": 10,
+      "lon": -18,
+      "x": 451,
+      "y": 224.4,
+      "facts": [
+        "Ocean west of northern Africa."
+      ]
+    },
+    {
+      "id": "red-sea",
+      "name": "Red Sea",
+      "fact": "Sea of northeast Africa.",
+      "kind": "water",
+      "lat": 20,
+      "lon": 38.5,
+      "x": 603.3,
+      "y": 192.6,
+      "facts": [
+        "Sea of northeast Africa."
+      ]
+    },
+    {
+      "id": "gulf-guinea",
+      "name": "Gulf of Guinea",
+      "fact": "Atlantic gulf of the equatorial west coast.",
+      "kind": "water",
+      "lat": 3,
+      "lon": 3,
+      "x": 508.2,
+      "y": 246.5,
+      "facts": [
+        "Atlantic gulf of the equatorial west coast."
+      ]
+    },
+    {
+      "id": "gibraltar",
+      "name": "Strait of Gibraltar",
+      "fact": "Between Morocco and Spain.",
+      "kind": "water",
+      "lat": 35.97,
+      "lon": -5.58,
+      "x": 485.7,
+      "y": 141.8,
+      "facts": [
+        "Between Morocco and Spain."
+      ]
+    }
+  ]
+}

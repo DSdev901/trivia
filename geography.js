@@ -427,9 +427,20 @@ function quizKind() {
 function isWaterPack() {
   const id = (geo.pack?.id || "").toLowerCase();
   const name = (geo.pack?.name || "").toLowerCase();
-  if (/(^|-)(rivers|lakes)(-|$)/.test(id) || /\b(rivers|lakes)\b/.test(name)) return true;
+  if (
+    /(^|-)(rivers|lakes|waterways)(-|$)/.test(id) ||
+    /\b(rivers|lakes|waterways)\b/.test(name)
+  ) {
+    return true;
+  }
   const items = geo.items || [];
   return items.length > 0 && items.every((it) => it.kind === "water");
+}
+
+function waterwaysAliasId(id) {
+  if (!id || id === "great-lakes") return "";
+  if (/-(rivers|lakes)$/.test(id)) return id.replace(/-(rivers|lakes)$/, "-waterways");
+  return "";
 }
 
 function isOutlineView() {
@@ -1411,8 +1422,9 @@ function pinTargetNoun() {
   const blob = `${id} ${name}`;
   if (blob.includes("landmark")) return "landmark";
   if (blob.includes("cities") || blob.includes("city")) return "city";
-  if (blob.includes("river")) return "river";
-  if (blob.includes("lake")) return "lake";
+  if (blob.includes("waterway") || blob.includes("river") || blob.includes("lake")) {
+    return "waterway";
+  }
   if (geo.pack?.overlay === "markers") {
     const kinds = new Set(geo.items.map((i) => i.kind).filter(Boolean));
     if (kinds.size === 1) {
@@ -2835,16 +2847,26 @@ function buildChoices(item) {
 }
 
 function packById(id) {
-  return (
+  const found =
     (geo.group?.packs || []).find((p) => p.id === id) ||
     geo.packs.find((p) => p.id === id) ||
+    null;
+  if (found) return found;
+  const alias = waterwaysAliasId(id);
+  if (!alias) return null;
+  return (
+    (geo.group?.packs || []).find((p) => p.id === alias) ||
+    geo.packs.find((p) => p.id === alias) ||
     null
   );
 }
 
 function groupForPack(packId) {
+  const alias = waterwaysAliasId(packId);
   return (
-    geo.groups.find((g) => (g.packs || []).some((p) => p.id === packId)) || null
+    geo.groups.find((g) =>
+      (g.packs || []).some((p) => p.id === packId || (alias && p.id === alias))
+    ) || null
   );
 }
 
@@ -2971,7 +2993,14 @@ function sectionPacks(group, sec) {
 
 function sectionForPack(group, packId) {
   if (!group || !packId) return null;
-  return (group.sections || []).find((s) => (s.packIds || []).includes(packId)) || null;
+  const alias = waterwaysAliasId(packId);
+  return (
+    (group.sections || []).find(
+      (s) =>
+        (s.packIds || []).includes(packId) ||
+        (alias && (s.packIds || []).includes(alias))
+    ) || null
+  );
 }
 
 function sectionBySlug(group, slug) {

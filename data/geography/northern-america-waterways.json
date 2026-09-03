@@ -1,0 +1,331 @@
+{
+  "id": "northern-america-waterways",
+  "name": "Northern America: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "mississippi",
+      "name": "Mississippi",
+      "fact": "Principal river of the central United States.",
+      "kind": "water",
+      "lat": 35,
+      "lon": -90,
+      "x": 268.3,
+      "y": 144.9,
+      "facts": [
+        "Principal river of the central United States.",
+        "Runs from Minnesota to the Gulf of Mexico.",
+        "With the Missouri, among the world’s longest systems."
+      ],
+      "waterway": "Mississippi",
+      "country": "United States"
+    },
+    {
+      "id": "mackenzie",
+      "name": "Mackenzie",
+      "fact": "Canada’s longest river system.",
+      "kind": "water",
+      "lat": 67.5,
+      "lon": -130,
+      "x": 226.2,
+      "y": 47,
+      "facts": [
+        "Canada’s longest river system.",
+        "Flows to the Arctic Ocean."
+      ],
+      "waterway": "Mackenzie",
+      "country": "Canada"
+    },
+    {
+      "id": "st-lawrence",
+      "name": "Saint Lawrence",
+      "fact": "Drains the Great Lakes to the Atlantic.",
+      "kind": "water",
+      "lat": 47.5,
+      "lon": -69.5,
+      "x": 331.1,
+      "y": 105.5,
+      "facts": [
+        "Drains the Great Lakes to the Atlantic.",
+        "Forms part of the U.S.–Canada border."
+      ],
+      "border": true,
+      "waterway": "St. Lawrence",
+      "country": "Canada"
+    },
+    {
+      "id": "rio-grande",
+      "name": "Rio Grande",
+      "fact": "Part of the U.S.–Mexico border.",
+      "kind": "water",
+      "lat": 29,
+      "lon": -103,
+      "x": 229.6,
+      "y": 164,
+      "facts": [
+        "Part of the U.S.–Mexico border.",
+        "Called the Río Bravo in Mexico.",
+        "Runs from Colorado to the Gulf of Mexico."
+      ],
+      "border": true,
+      "waterway": "Rio Grande",
+      "country": "Mexico"
+    },
+    {
+      "id": "yukon",
+      "name": "Yukon",
+      "fact": "Major river of Alaska and Yukon.",
+      "kind": "water",
+      "lat": 65,
+      "lon": -145,
+      "x": 188,
+      "y": 53.9,
+      "facts": [
+        "Major river of Alaska and Yukon."
+      ],
+      "waterway": "Yukon",
+      "country": "United States"
+    },
+    {
+      "id": "colorado",
+      "name": "Colorado River",
+      "fact": "Carved the Grand Canyon.",
+      "kind": "water",
+      "lat": 36.1,
+      "lon": -113.8,
+      "x": 208.3,
+      "y": 141.4,
+      "facts": [
+        "Carved the Grand Canyon.",
+        "Lower reaches form part of the U.S.–Mexico border."
+      ],
+      "border": true,
+      "waterway": "Colorado",
+      "country": "United States"
+    },
+    {
+      "id": "superior",
+      "name": "Lake Superior",
+      "fact": "Largest freshwater lake by surface area.",
+      "kind": "water",
+      "lat": 47.7,
+      "lon": -87.5,
+      "x": 287.5,
+      "y": 104.9,
+      "facts": [
+        "Largest freshwater lake by surface area.",
+        "Largest of the Great Lakes."
+      ],
+      "country": "United States"
+    },
+    {
+      "id": "huron",
+      "name": "Lake Huron",
+      "fact": "Second-largest Great Lake by area.",
+      "kind": "water",
+      "lat": 44.8,
+      "lon": -82.4,
+      "x": 296.8,
+      "y": 113.9,
+      "facts": [
+        "Second-largest Great Lake by area.",
+        "Includes Georgian Bay."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "michigan",
+      "name": "Lake Michigan",
+      "fact": "Only Great Lake entirely in the United States.",
+      "kind": "water",
+      "lat": 44,
+      "lon": -87,
+      "x": 284.6,
+      "y": 116.4,
+      "facts": [
+        "Only Great Lake entirely in the United States.",
+        "Third-largest Great Lake by area."
+      ],
+      "country": "United States"
+    },
+    {
+      "id": "erie",
+      "name": "Lake Erie",
+      "fact": "Shallowest of the Great Lakes.",
+      "kind": "water",
+      "lat": 42.2,
+      "lon": -81.2,
+      "x": 297.2,
+      "y": 122.1,
+      "facts": [
+        "Shallowest of the Great Lakes.",
+        "Forms part of the U.S.–Canada border."
+      ],
+      "country": "United States"
+    },
+    {
+      "id": "ontario",
+      "name": "Lake Ontario",
+      "fact": "Easternmost Great Lake.",
+      "kind": "water",
+      "lat": 43.7,
+      "lon": -77.9,
+      "x": 306.8,
+      "y": 117.4,
+      "facts": [
+        "Easternmost Great Lake.",
+        "Drains to the Atlantic via the St. Lawrence."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "great-bear",
+      "name": "Great Bear Lake",
+      "fact": "Largest lake entirely in Canada.",
+      "kind": "water",
+      "lat": 66,
+      "lon": -121,
+      "x": 241.8,
+      "y": 51.1,
+      "facts": [
+        "Largest lake entirely in Canada.",
+        "In the Northwest Territories."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "great-slave",
+      "name": "Great Slave Lake",
+      "fact": "Deepest lake in North America.",
+      "kind": "water",
+      "lat": 61.4,
+      "lon": -114,
+      "x": 247.4,
+      "y": 64,
+      "facts": [
+        "Deepest lake in North America.",
+        "Source of the Mackenzie River."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean off the U.S. and Canadian east coasts.",
+      "kind": "water",
+      "lat": 38,
+      "lon": -65,
+      "x": 334.6,
+      "y": 135.4,
+      "facts": [
+        "Ocean off the U.S. and Canadian east coasts."
+      ]
+    },
+    {
+      "id": "pacific-ocean",
+      "name": "Pacific Ocean",
+      "fact": "Ocean off the west coast.",
+      "kind": "water",
+      "lat": 40,
+      "lon": -135,
+      "x": 159.4,
+      "y": 129,
+      "facts": [
+        "Ocean off the west coast."
+      ]
+    },
+    {
+      "id": "arctic-ocean",
+      "name": "Arctic Ocean",
+      "fact": "Ocean north of Canada and Alaska.",
+      "kind": "water",
+      "lat": 75,
+      "lon": -120,
+      "x": 264.8,
+      "y": 27.3,
+      "facts": [
+        "Ocean north of Canada and Alaska."
+      ]
+    },
+    {
+      "id": "gulf-mexico",
+      "name": "Gulf of Mexico",
+      "fact": "Atlantic gulf south of the United States.",
+      "kind": "water",
+      "lat": 25,
+      "lon": -90,
+      "x": 261.1,
+      "y": 176.7,
+      "facts": [
+        "Atlantic gulf south of the United States."
+      ]
+    },
+    {
+      "id": "hudson-bay",
+      "name": "Hudson Bay",
+      "fact": "Huge inland sea of northeastern Canada.",
+      "kind": "water",
+      "lat": 60,
+      "lon": -85,
+      "x": 309.6,
+      "y": 68.1,
+      "facts": [
+        "Huge inland sea of northeastern Canada."
+      ]
+    },
+    {
+      "id": "bering-strait",
+      "name": "Bering Strait",
+      "fact": "Separates Alaska from Russia.",
+      "kind": "water",
+      "lat": 65.8,
+      "lon": -168.5,
+      "x": 139.9,
+      "y": 51.7,
+      "facts": [
+        "Separates Alaska from Russia."
+      ]
+    },
+    {
+      "id": "fundy",
+      "name": "Bay of Fundy",
+      "fact": "Home of the world’s greatest tidal range.",
+      "kind": "water",
+      "lat": 45,
+      "lon": -65.5,
+      "x": 338.6,
+      "y": 113.3,
+      "facts": [
+        "Home of the world’s greatest tidal range."
+      ]
+    },
+    {
+      "id": "gulf-california",
+      "name": "Gulf of California",
+      "fact": "Between Baja California and mainland Mexico.",
+      "kind": "water",
+      "lat": 28,
+      "lon": -112,
+      "x": 205.1,
+      "y": 167.2,
+      "facts": [
+        "Between Baja California and mainland Mexico."
+      ]
+    },
+    {
+      "id": "gulf-st-lawrence",
+      "name": "Gulf of St. Lawrence",
+      "fact": "The St. Lawrence River’s Atlantic outlet.",
+      "kind": "water",
+      "lat": 48.5,
+      "lon": -62,
+      "x": 350.1,
+      "y": 102.5,
+      "facts": [
+        "The St. Lawrence River’s Atlantic outlet."
+      ]
+    }
+  ]
+}

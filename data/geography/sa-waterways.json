@@ -1,0 +1,228 @@
+{
+  "id": "sa-waterways",
+  "name": "South America: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "fact": "Largest river by discharge.",
+      "kind": "water",
+      "lat": -3,
+      "lon": -60,
+      "x": 336,
+      "y": 265.5,
+      "facts": [
+        "Largest river by discharge.",
+        "Longest river in South America.",
+        "Drains the Amazon rainforest."
+      ],
+      "waterway": "Amazonas",
+      "country": "Brazil"
+    },
+    {
+      "id": "parana",
+      "name": "Paraná",
+      "fact": "Second-longest river in South America.",
+      "kind": "water",
+      "lat": -27,
+      "lon": -58.5,
+      "x": 345.5,
+      "y": 341.7,
+      "facts": [
+        "Second-longest river in South America.",
+        "Joins the Paraguay and Uruguay in the Río de la Plata."
+      ],
+      "country": "Argentina"
+    },
+    {
+      "id": "paraguay-river",
+      "name": "Paraguay River",
+      "fact": "Major tributary of the Paraná.",
+      "kind": "water",
+      "lat": -21,
+      "lon": -58,
+      "x": 344.7,
+      "y": 322.6,
+      "facts": [
+        "Major tributary of the Paraná.",
+        "Forms stretches of the Brazil–Paraguay and Paraguay–Argentina borders."
+      ],
+      "border": true,
+      "country": "Paraguay"
+    },
+    {
+      "id": "uruguay",
+      "name": "Uruguay River",
+      "fact": "Forms part of the Argentina–Uruguay border.",
+      "kind": "water",
+      "lat": -31.5,
+      "lon": -58,
+      "x": 348.9,
+      "y": 356,
+      "facts": [
+        "Forms part of the Argentina–Uruguay border.",
+        "Joins the Paraná in the Río de la Plata."
+      ],
+      "border": true,
+      "waterway": "Uruguay",
+      "country": "Uruguay"
+    },
+    {
+      "id": "orinoco",
+      "name": "Orinoco",
+      "fact": "Principal river of Venezuela.",
+      "kind": "water",
+      "lat": 8,
+      "lon": -66,
+      "x": 320,
+      "y": 230.7,
+      "facts": [
+        "Principal river of Venezuela.",
+        "Among South America’s longest rivers."
+      ],
+      "waterway": "Orinoco",
+      "country": "Venezuela"
+    },
+    {
+      "id": "sao-francisco",
+      "name": "São Francisco",
+      "fact": "The great river of eastern Brazil.",
+      "kind": "water",
+      "lat": -10.5,
+      "lon": -42.5,
+      "x": 384.4,
+      "y": 289.3,
+      "facts": [
+        "The great river of eastern Brazil.",
+        "Flows to the Atlantic north of Salvador."
+      ],
+      "waterway": "São  Francisco",
+      "country": "Brazil"
+    },
+    {
+      "id": "madeira",
+      "name": "Madeira",
+      "fact": "The Amazon’s longest tributary.",
+      "kind": "water",
+      "lat": -5.5,
+      "lon": -61,
+      "x": 333.4,
+      "y": 273.4,
+      "facts": [
+        "The Amazon’s longest tributary.",
+        "Rises in the Bolivian Andes."
+      ],
+      "waterway": "Madeira",
+      "country": "Brazil"
+    },
+    {
+      "id": "magdalena",
+      "name": "Magdalena",
+      "fact": "Principal river of Colombia.",
+      "kind": "water",
+      "lat": 9,
+      "lon": -74.5,
+      "x": 297,
+      "y": 227.5,
+      "facts": [
+        "Principal river of Colombia.",
+        "Flows north to the Caribbean."
+      ],
+      "waterway": "Magdalena",
+      "country": "Colombia"
+    },
+    {
+      "id": "titicaca",
+      "name": "Lake Titicaca",
+      "fact": "Highest large navigable lake; Andes.",
+      "kind": "water",
+      "lat": -15.8,
+      "lon": -69.4,
+      "x": 312.4,
+      "y": 306.1,
+      "facts": [
+        "Highest large navigable lake; Andes.",
+        "Shared by Peru and Bolivia."
+      ],
+      "country": "Peru"
+    },
+    {
+      "id": "maracaibo",
+      "name": "Lake Maracaibo",
+      "fact": "Large tidal bay in Venezuela.",
+      "kind": "water",
+      "lat": 9.8,
+      "lon": -71.55,
+      "x": 305.2,
+      "y": 225,
+      "facts": [
+        "Large tidal bay in Venezuela.",
+        "Connected to the Gulf of Venezuela."
+      ],
+      "country": "Venezuela"
+    },
+    {
+      "id": "poopo",
+      "name": "Poopó Lake",
+      "fact": "A high Altiplano lake in Bolivia.",
+      "kind": "water",
+      "lat": -18.8,
+      "lon": -67.1,
+      "x": 319.5,
+      "y": 315.6,
+      "facts": [
+        "A high Altiplano lake in Bolivia.",
+        "Fed by the Desaguadero from Titicaca; often nearly dry."
+      ],
+      "country": "Bolivia"
+    },
+    {
+      "id": "buen-aires",
+      "name": "Lake General Carrera / Buenos Aires",
+      "fact": "Largest lake in Chile; second in Argentina.",
+      "kind": "water",
+      "lat": -46.5,
+      "lon": -72,
+      "x": 324,
+      "y": 403.4,
+      "facts": [
+        "Largest lake in Chile; second in Argentina.",
+        "A glacial lake of Patagonia."
+      ],
+      "country": "Chile"
+    },
+    {
+      "id": "nahuel",
+      "name": "Nahuel Huapi",
+      "fact": "Famous glacial lake of Argentine Patagonia.",
+      "kind": "water",
+      "lat": -41.1,
+      "lon": -71.3,
+      "x": 321,
+      "y": 386.5,
+      "facts": [
+        "Famous glacial lake of Argentine Patagonia.",
+        "In Nahuel Huapi National Park."
+      ],
+      "country": "Argentina"
+    },
+    {
+      "id": "valencia-ve",
+      "name": "Lake Valencia",
+      "fact": "Second-largest lake in Venezuela.",
+      "kind": "water",
+      "lat": 10.2,
+      "lon": -67.7,
+      "x": 315.8,
+      "y": 223.7,
+      "facts": [
+        "Second-largest lake in Venezuela.",
+        "In a closed basin west of Caracas."
+      ],
+      "country": "Venezuela"
+    }
+  ]
+}

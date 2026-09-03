@@ -1,0 +1,366 @@
+{
+  "id": "canada-waterways",
+  "name": "Canada: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "athabasca-river",
+      "name": "Athabasca River",
+      "fact": "Flows from the Columbia Icefield to Lake Athabasca.",
+      "kind": "water",
+      "lat": 56.7,
+      "lon": -111.4,
+      "x": 244.4,
+      "y": 77.7,
+      "facts": [
+        "Flows from the Columbia Icefield to Lake Athabasca."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "fraser",
+      "name": "Fraser River",
+      "fact": "The main river of British Columbia.",
+      "kind": "water",
+      "lat": 49.2,
+      "lon": -122.9,
+      "x": 204.1,
+      "y": 100.3,
+      "facts": [
+        "The main river of British Columbia."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "mackenzie",
+      "name": "Mackenzie River",
+      "fact": "Canada’s longest river system.",
+      "kind": "water",
+      "lat": 67.4,
+      "lon": -133.7,
+      "x": 218.2,
+      "y": 47.3,
+      "facts": [
+        "Canada’s longest river system.",
+        "Flows to the Arctic Ocean."
+      ],
+      "waterway": "Mackenzie",
+      "country": "Canada"
+    },
+    {
+      "id": "nelson",
+      "name": "Nelson River",
+      "fact": "Drains Lake Winnipeg toward Hudson Bay.",
+      "kind": "water",
+      "lat": 56.5,
+      "lon": -94,
+      "x": 284,
+      "y": 78.3,
+      "facts": [
+        "Drains Lake Winnipeg toward Hudson Bay."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "ottawa-river",
+      "name": "Ottawa River",
+      "fact": "Forms much of the Ontario–Quebec border.",
+      "kind": "water",
+      "lat": 45.6,
+      "lon": -76.2,
+      "x": 312.9,
+      "y": 111.4,
+      "facts": [
+        "Forms much of the Ontario–Quebec border.",
+        "The Ottawa River meets the St. Lawrence."
+      ],
+      "border": true,
+      "waterway": "Ottawa",
+      "country": "Canada"
+    },
+    {
+      "id": "peace",
+      "name": "Peace River",
+      "fact": "Major river of northern Alberta and B.C.",
+      "kind": "water",
+      "lat": 56.2,
+      "lon": -117.3,
+      "x": 229.9,
+      "y": 79.2,
+      "facts": [
+        "Major river of northern Alberta and B.C."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "red-river",
+      "name": "Red River",
+      "fact": "Flows north into Lake Winnipeg.",
+      "kind": "water",
+      "lat": 49,
+      "lon": -97.2,
+      "x": 265.7,
+      "y": 100.9,
+      "facts": [
+        "Flows north into Lake Winnipeg."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "saint-john-river",
+      "name": "Saint John River",
+      "fact": "Main river of New Brunswick.",
+      "kind": "water",
+      "lat": 46.3,
+      "lon": -67.2,
+      "x": 335.6,
+      "y": 109.3,
+      "facts": [
+        "Main river of New Brunswick."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "saskatchewan",
+      "name": "Saskatchewan River",
+      "fact": "Prairie river formed by the North and South Saskatchewan.",
+      "kind": "water",
+      "lat": 53.2,
+      "lon": -105,
+      "x": 253.3,
+      "y": 88.1,
+      "facts": [
+        "Prairie river formed by the North and South Saskatchewan."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "st-lawrence-ca",
+      "name": "Saint Lawrence River",
+      "fact": "Outlet of the Great Lakes to the Atlantic.",
+      "kind": "water",
+      "lat": 47.5,
+      "lon": -69.5,
+      "x": 331.1,
+      "y": 105.5,
+      "facts": [
+        "Outlet of the Great Lakes to the Atlantic.",
+        "Forms part of the U.S.–Canada border."
+      ],
+      "border": true,
+      "waterway": "St. Lawrence",
+      "country": "Canada"
+    },
+    {
+      "id": "yukon-river",
+      "name": "Yukon River",
+      "fact": "Rises in British Columbia and Yukon, then crosses Alaska.",
+      "kind": "water",
+      "lat": 64,
+      "lon": -139.4,
+      "x": 197.5,
+      "y": 56.7,
+      "facts": [
+        "Rises in British Columbia and Yukon, then crosses Alaska."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "great-bear",
+      "name": "Great Bear Lake",
+      "fact": "Largest lake entirely in Canada.",
+      "kind": "water",
+      "lat": 66,
+      "lon": -121,
+      "x": 241.8,
+      "y": 51.1,
+      "facts": [
+        "Largest lake entirely in Canada.",
+        "In the Northwest Territories."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "great-slave",
+      "name": "Great Slave Lake",
+      "fact": "Deepest lake in North America.",
+      "kind": "water",
+      "lat": 61.4,
+      "lon": -114,
+      "x": 247.4,
+      "y": 64,
+      "facts": [
+        "Deepest lake in North America.",
+        "Source of the Mackenzie River."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "winnipeg",
+      "name": "Lake Winnipeg",
+      "fact": "Large prairie lake in Manitoba.",
+      "kind": "water",
+      "lat": 52.5,
+      "lon": -97.5,
+      "x": 269.9,
+      "y": 90.2,
+      "facts": [
+        "Large prairie lake in Manitoba.",
+        "Twelfth-largest freshwater lake."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "athabasca",
+      "name": "Lake Athabasca",
+      "fact": "Large lake on the Alberta–Saskatchewan border.",
+      "kind": "water",
+      "lat": 59.1,
+      "lon": -110,
+      "x": 252,
+      "y": 70.7,
+      "facts": [
+        "Large lake on the Alberta–Saskatchewan border.",
+        "Feeds the Slave River toward Great Slave Lake."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "woods",
+      "name": "Lake of the Woods",
+      "fact": "Lake on the U.S.–Canada border.",
+      "kind": "water",
+      "lat": 49.1,
+      "lon": -94.8,
+      "x": 271.6,
+      "y": 100.6,
+      "facts": [
+        "Lake on the U.S.–Canada border.",
+        "Shared by Ontario, Manitoba, and Minnesota."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "nipigon",
+      "name": "Lake Nipigon",
+      "fact": "Largest lake entirely in Ontario.",
+      "kind": "water",
+      "lat": 49.8,
+      "lon": -88.5,
+      "x": 287.7,
+      "y": 98.5,
+      "facts": [
+        "Largest lake entirely in Ontario.",
+        "Drains toward Lake Superior."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "hudson-bay",
+      "name": "Hudson Bay",
+      "fact": "Huge inland sea of northeastern Canada.",
+      "kind": "water",
+      "lat": 60,
+      "lon": -85,
+      "x": 309.6,
+      "y": 68.1,
+      "facts": [
+        "Huge inland sea of northeastern Canada."
+      ]
+    },
+    {
+      "id": "gulf-st-lawrence",
+      "name": "Gulf of St. Lawrence",
+      "fact": "The St. Lawrence River’s Atlantic outlet.",
+      "kind": "water",
+      "lat": 48.5,
+      "lon": -62,
+      "x": 350.1,
+      "y": 102.5,
+      "facts": [
+        "The St. Lawrence River’s Atlantic outlet."
+      ]
+    },
+    {
+      "id": "fundy",
+      "name": "Bay of Fundy",
+      "fact": "Home of the world’s greatest tidal range.",
+      "kind": "water",
+      "lat": 45,
+      "lon": -65.5,
+      "x": 338.6,
+      "y": 113.3,
+      "facts": [
+        "Home of the world’s greatest tidal range."
+      ]
+    },
+    {
+      "id": "baffin-bay",
+      "name": "Baffin Bay",
+      "fact": "Between Baffin Island and Greenland.",
+      "kind": "water",
+      "lat": 73,
+      "lon": -68,
+      "x": 364,
+      "y": 32.4,
+      "facts": [
+        "Between Baffin Island and Greenland."
+      ]
+    },
+    {
+      "id": "davis-strait",
+      "name": "Davis Strait",
+      "fact": "Between Baffin Island and Greenland.",
+      "kind": "water",
+      "lat": 65,
+      "lon": -58,
+      "x": 375.2,
+      "y": 53.9,
+      "facts": [
+        "Between Baffin Island and Greenland.",
+        "Links Baffin Bay to the Labrador Sea."
+      ]
+    },
+    {
+      "id": "beaufort",
+      "name": "Beaufort Sea",
+      "fact": "Arctic sea north of Yukon and the Northwest Territories.",
+      "kind": "water",
+      "lat": 72,
+      "lon": -140,
+      "x": 217.2,
+      "y": 35,
+      "facts": [
+        "Arctic sea north of Yukon and the Northwest Territories."
+      ]
+    },
+    {
+      "id": "georgia-strait",
+      "name": "Strait of Georgia",
+      "fact": "Between Vancouver Island and the mainland.",
+      "kind": "water",
+      "lat": 49.3,
+      "lon": -123.8,
+      "x": 202.1,
+      "y": 100,
+      "facts": [
+        "Between Vancouver Island and the mainland."
+      ]
+    },
+    {
+      "id": "arctic-ocean",
+      "name": "Arctic Ocean",
+      "fact": "Ocean north of the Canadian Arctic Archipelago.",
+      "kind": "water",
+      "lat": 75,
+      "lon": -100,
+      "x": 304,
+      "y": 27.3,
+      "facts": [
+        "Ocean north of the Canadian Arctic Archipelago."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "id": "southern-africa-waterways",
+  "name": "Southern Africa: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "zambezi",
+      "name": "Zambezi",
+      "fact": "Home of Victoria Falls.",
+      "kind": "water",
+      "lat": -16,
+      "lon": 28.5,
+      "x": 577,
+      "y": 306.7,
+      "facts": [
+        "Home of Victoria Falls.",
+        "Africa’s fourth-longest river.",
+        "Forms stretches of the Zambia–Zimbabwe border."
+      ],
+      "border": true,
+      "waterway": "Zambezi",
+      "country": "Zambia"
+    },
+    {
+      "id": "orange",
+      "name": "Orange River",
+      "fact": "Longest river in South Africa.",
+      "kind": "water",
+      "lat": -28.6,
+      "lon": 17.6,
+      "x": 546.3,
+      "y": 346.8,
+      "facts": [
+        "Longest river in South Africa.",
+        "Forms much of the Namibia–South Africa border."
+      ],
+      "border": true,
+      "waterway": "Orange",
+      "country": "Namibia"
+    },
+    {
+      "id": "limpopo",
+      "name": "Limpopo",
+      "fact": "Forms stretches of South Africa’s northern borders.",
+      "kind": "water",
+      "lat": -23,
+      "lon": 31.5,
+      "x": 584,
+      "y": 329,
+      "facts": [
+        "Forms stretches of South Africa’s northern borders."
+      ],
+      "border": true,
+      "waterway": "Limpopo",
+      "country": "Mozambique"
+    },
+    {
+      "id": "okavango",
+      "name": "Okavango",
+      "fact": "Ends in the Okavango Delta, not the sea.",
+      "kind": "water",
+      "lat": -18.3,
+      "lon": 22.5,
+      "x": 560.6,
+      "y": 314,
+      "facts": [
+        "Ends in the Okavango Delta, not the sea.",
+        "Rises in Angola; forms part of the Angola–Namibia border."
+      ],
+      "border": true,
+      "waterway": "Okavango",
+      "country": "Botswana"
+    },
+    {
+      "id": "vaal",
+      "name": "Vaal",
+      "fact": "The Orange’s chief tributary.",
+      "kind": "water",
+      "lat": -28.7,
+      "lon": 24,
+      "x": 563.1,
+      "y": 347.1,
+      "facts": [
+        "The Orange’s chief tributary.",
+        "South Africa’s most heavily used river."
+      ],
+      "waterway": "Vaal",
+      "country": "South Africa"
+    },
+    {
+      "id": "malawi",
+      "name": "Lake Malawi",
+      "fact": "Also called Lake Nyasa; African Rift lake.",
+      "kind": "water",
+      "lat": -12,
+      "lon": 34.5,
+      "x": 593.7,
+      "y": 294,
+      "facts": [
+        "Also called Lake Nyasa; African Rift lake.",
+        "Among the world’s deepest lakes."
+      ],
+      "country": "Malawi"
+    },
+    {
+      "id": "kariba",
+      "name": "Lake Kariba",
+      "fact": "One of the world’s largest reservoirs by volume.",
+      "kind": "water",
+      "lat": -17,
+      "lon": 27.8,
+      "x": 575,
+      "y": 309.9,
+      "facts": [
+        "One of the world’s largest reservoirs by volume.",
+        "On the Zambezi between Zambia and Zimbabwe."
+      ],
+      "country": "Zambia"
+    },
+    {
+      "id": "st-lucia",
+      "name": "Lake St Lucia",
+      "fact": "Africa’s largest estuarine lake.",
+      "kind": "water",
+      "lat": -28,
+      "lon": 32.45,
+      "x": 585.5,
+      "y": 344.9,
+      "facts": [
+        "Africa’s largest estuarine lake.",
+        "On the KwaZulu-Natal coast of South Africa."
+      ],
+      "country": "South Africa"
+    },
+    {
+      "id": "gariep",
+      "name": "Gariep Dam",
+      "fact": "South Africa’s largest reservoir.",
+      "kind": "water",
+      "lat": -30.62,
+      "lon": 25.5,
+      "x": 566.6,
+      "y": 353.2,
+      "facts": [
+        "South Africa’s largest reservoir.",
+        "On the Orange River."
+      ],
+      "country": "South Africa"
+    },
+    {
+      "id": "ngami",
+      "name": "Lake Ngami",
+      "fact": "An endorheic lake of the Okavango’s southern edge.",
+      "kind": "water",
+      "lat": -20.5,
+      "lon": 22.8,
+      "x": 561.1,
+      "y": 321,
+      "facts": [
+        "An endorheic lake of the Okavango’s southern edge.",
+        "In Botswana; size varies with the flood."
+      ],
+      "country": "Botswana"
+    },
+    {
+      "id": "indian-ocean",
+      "name": "Indian Ocean",
+      "fact": "Ocean east of South Africa and Mozambique.",
+      "kind": "water",
+      "lat": -30,
+      "lon": 40,
+      "x": 604.7,
+      "y": 351.3,
+      "facts": [
+        "Ocean east of South Africa and Mozambique."
+      ]
+    },
+    {
+      "id": "atlantic-ocean",
+      "name": "Atlantic Ocean",
+      "fact": "Ocean west of Namibia and South Africa.",
+      "kind": "water",
+      "lat": -28,
+      "lon": 10,
+      "x": 526.3,
+      "y": 344.9,
+      "facts": [
+        "Ocean west of Namibia and South Africa."
+      ]
+    },
+    {
+      "id": "mozambique-channel",
+      "name": "Mozambique Channel",
+      "fact": "Between Mozambique and Madagascar.",
+      "kind": "water",
+      "lat": -20,
+      "lon": 42,
+      "x": 612.7,
+      "y": 319.4,
+      "facts": [
+        "Between Mozambique and Madagascar."
+      ]
+    },
+    {
+      "id": "false-bay",
+      "name": "False Bay",
+      "fact": "Large bay east of the Cape Peninsula.",
+      "kind": "water",
+      "lat": -34.25,
+      "lon": 18.65,
+      "x": 548.1,
+      "y": 364.8,
+      "facts": [
+        "Large bay east of the Cape Peninsula.",
+        "Separated from Table Bay by the Cape of Good Hope."
+      ]
+    },
+    {
+      "id": "table-bay",
+      "name": "Table Bay",
+      "fact": "Bay under Table Mountain.",
+      "kind": "water",
+      "lat": -33.85,
+      "lon": 18.43,
+      "x": 547.6,
+      "y": 363.5,
+      "facts": [
+        "Bay under Table Mountain.",
+        "Cape Town’s historic harbour."
+      ]
+    },
+    {
+      "id": "walvis-bay",
+      "name": "Walvis Bay",
+      "fact": "Namibia’s principal deep-water bay.",
+      "kind": "water",
+      "lat": -22.95,
+      "lon": 14.5,
+      "x": 538.7,
+      "y": 328.8,
+      "facts": [
+        "Namibia’s principal deep-water bay."
+      ]
+    }
+  ]
+}

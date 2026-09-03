@@ -282,7 +282,7 @@ const GROUP_BLURBS = {
   world: "Continents, countries, and physical features of the whole planet.",
   "north-america": "Countries, Canada, the U.S., the Caribbean, and North American landmarks.",
   "south-america": "Countries, cities, landmarks, and physical features.",
-  europe: "Countries, cities, regions, rivers, and landmarks.",
+  europe: "Countries, cities, regions, waterways, and landmarks.",
   africa: "Countries, cities, regions, landmarks, and physical features.",
   asia: "Countries, cities, regions, and landmarks from the Middle East to Japan.",
   oceania: "Pacific countries, Australian cities, and physical features.",
@@ -291,13 +291,13 @@ const GROUP_BLURBS = {
 const SECTIONS = {
   world: [
     { name: "Start here", packIds: ["continents", "continents-oceans", "world-countries", "world-capitals"] },
-    { name: "Physical features", packIds: ["world-physical", "world-rivers", "world-lakes", "world-landmarks"] },
+    { name: "Physical features", packIds: ["world-physical", "world-waterways", "world-landmarks"] },
     { name: "Practice & flags", packIds: ["world-populous", "world-populous-capitals", "world-flags", "world-outlines", "continents-cartoon"] },
   ],
   "north-america": [
     {
       name: "The continent",
-      packIds: ["na-countries", "na-capitals", "na-physical", "na-rivers", "na-lakes", "great-lakes"],
+      packIds: ["na-countries", "na-capitals", "na-physical", "na-waterways", "great-lakes"],
     },
     {
       name: "Northern America",
@@ -306,8 +306,7 @@ const SECTIONS = {
         "northern-america-capitals",
         "northern-america-flags",
         "northern-america-outlines",
-        "northern-america-rivers",
-        "northern-america-lakes",
+        "northern-america-waterways",
       ],
     },
     {
@@ -317,8 +316,7 @@ const SECTIONS = {
         "central-america-capitals",
         "central-america-flags",
         "central-america-outlines",
-        "central-america-rivers",
-        "central-america-lakes",
+        "central-america-waterways",
       ],
     },
     {
@@ -328,8 +326,7 @@ const SECTIONS = {
         "caribbean-capitals",
         "caribbean-flags",
         "caribbean-outlines",
-        "caribbean-rivers",
-        "caribbean-lakes",
+        "caribbean-waterways",
       ],
     },
     {
@@ -339,8 +336,7 @@ const SECTIONS = {
         "canada-cities",
         "canada-cities-difficult",
         "canada-landmarks",
-        "canada-rivers",
-        "canada-lakes",
+        "canada-waterways",
         "canada-atlantic",
         "canada-east",
         "canada-prairies",
@@ -356,8 +352,7 @@ const SECTIONS = {
         "us-cities",
         "us-cities-difficult",
         "us-landmarks",
-        "us-rivers",
-        "us-lakes",
+        "us-waterways",
         "us-northeast",
         "us-midwest",
         "us-south",
@@ -375,7 +370,7 @@ const SECTIONS = {
   "south-america": [
     {
       name: "The continent",
-      packIds: ["sa-countries", "sa-capitals", "sa-cities", "sa-cities-difficult", "sa-landmarks", "sa-physical", "sa-rivers", "sa-lakes"],
+      packIds: ["sa-countries", "sa-capitals", "sa-cities", "sa-cities-difficult", "sa-landmarks", "sa-physical", "sa-waterways"],
     },
     {
       name: "Latin America",
@@ -384,8 +379,7 @@ const SECTIONS = {
         "latin-america-capitals",
         "latin-america-flags",
         "latin-america-outlines",
-        "latin-america-rivers",
-        "latin-america-lakes",
+        "latin-america-waterways",
       ],
     },
     { name: "Flags & outlines", packIds: ["sa-flags", "sa-outlines"] },
@@ -400,8 +394,7 @@ const SECTIONS = {
         "europe-cities-difficult",
         "europe-landmarks",
         "europe-physical",
-        "europe-rivers",
-        "europe-lakes",
+        "europe-waterways",
       ],
     },
     {
@@ -411,8 +404,7 @@ const SECTIONS = {
         "northern-europe-capitals",
         "northern-europe-flags",
         "northern-europe-outlines",
-        "northern-europe-rivers",
-        "northern-europe-lakes",
+        "northern-europe-waterways",
       ],
     },
     {
@@ -422,8 +414,7 @@ const SECTIONS = {
         "western-europe-capitals",
         "western-europe-flags",
         "western-europe-outlines",
-        "western-europe-rivers",
-        "western-europe-lakes",
+        "western-europe-waterways",
       ],
     },
     {
@@ -433,8 +424,7 @@ const SECTIONS = {
         "eastern-europe-capitals",
         "eastern-europe-flags",
         "eastern-europe-outlines",
-        "eastern-europe-rivers",
-        "eastern-europe-lakes",
+        "eastern-europe-waterways",
       ],
     },
     {
@@ -444,13 +434,12 @@ const SECTIONS = {
         "southern-europe-capitals",
         "southern-europe-flags",
         "southern-europe-outlines",
-        "southern-europe-rivers",
-        "southern-europe-lakes",
+        "southern-europe-waterways",
       ],
     },
     {
       name: "The Nordic Countries",
-      packIds: ["nordic-countries", "nordic-capitals", "nordic-flags", "nordic-outlines"],
+      packIds: ["nordic-countries", "nordic-capitals", "nordic-flags", "nordic-outlines", "nordic-waterways"],
     },
     {
       name: "European Union",
@@ -471,8 +460,7 @@ const SECTIONS = {
         "africa-cities-difficult",
         "africa-landmarks",
         "africa-physical",
-        "africa-rivers",
-        "africa-lakes",
+        "africa-waterways",
       ],
     },
     {
@@ -482,8 +470,7 @@ const SECTIONS = {
         "northern-africa-capitals",
         "northern-africa-flags",
         "northern-africa-outlines",
-        "northern-africa-rivers",
-        "northern-africa-lakes",
+        "northern-africa-waterways",
       ],
     },
     {
@@ -493,8 +480,7 @@ const SECTIONS = {
         "western-africa-capitals",
         "western-africa-flags",
         "western-africa-outlines",
-        "western-africa-rivers",
-        "western-africa-lakes",
+        "western-africa-waterways",
       ],
     },
     {
@@ -504,8 +490,7 @@ const SECTIONS = {
         "central-africa-capitals",
         "central-africa-flags",
         "central-africa-outlines",
-        "central-africa-rivers",
-        "central-africa-lakes",
+        "central-africa-waterways",
       ],
     },
     {
@@ -515,8 +500,7 @@ const SECTIONS = {
         "eastern-africa-capitals",
         "eastern-africa-flags",
         "eastern-africa-outlines",
-        "eastern-africa-rivers",
-        "eastern-africa-lakes",
+        "eastern-africa-waterways",
       ],
     },
     {
@@ -526,8 +510,7 @@ const SECTIONS = {
         "southern-africa-capitals",
         "southern-africa-flags",
         "southern-africa-outlines",
-        "southern-africa-rivers",
-        "southern-africa-lakes",
+        "southern-africa-waterways",
       ],
     },
     {
@@ -537,6 +520,7 @@ const SECTIONS = {
         "africa-north-equator-capitals",
         "africa-north-equator-flags",
         "africa-north-equator-outlines",
+        "africa-north-equator-waterways",
       ],
     },
     {
@@ -546,6 +530,7 @@ const SECTIONS = {
         "africa-south-equator-capitals",
         "africa-south-equator-flags",
         "africa-south-equator-outlines",
+        "africa-south-equator-waterways",
       ],
     },
     { name: "Flags & outlines", packIds: ["africa-flags", "africa-outlines"] },
@@ -553,7 +538,7 @@ const SECTIONS = {
   asia: [
     {
       name: "The continent",
-      packIds: ["asia-countries", "asia-capitals", "asia-cities", "asia-cities-difficult", "asia-landmarks", "asia-physical", "asia-rivers", "asia-lakes"],
+      packIds: ["asia-countries", "asia-capitals", "asia-cities", "asia-cities-difficult", "asia-landmarks", "asia-physical", "asia-waterways"],
     },
     {
       name: "East Asia",
@@ -562,8 +547,7 @@ const SECTIONS = {
         "east-asia-capitals",
         "east-asia-flags",
         "east-asia-outlines",
-        "east-asia-rivers",
-        "east-asia-lakes",
+        "east-asia-waterways",
       ],
     },
     {
@@ -573,8 +557,7 @@ const SECTIONS = {
         "southeast-asia-capitals",
         "southeast-asia-flags",
         "southeast-asia-outlines",
-        "southeast-asia-rivers",
-        "southeast-asia-lakes",
+        "southeast-asia-waterways",
       ],
     },
     {
@@ -584,8 +567,7 @@ const SECTIONS = {
         "south-asia-capitals",
         "south-asia-flags",
         "south-asia-outlines",
-        "south-asia-rivers",
-        "south-asia-lakes",
+        "south-asia-waterways",
       ],
     },
     {
@@ -595,8 +577,7 @@ const SECTIONS = {
         "central-asia-capitals",
         "central-asia-flags",
         "central-asia-outlines",
-        "central-asia-rivers",
-        "central-asia-lakes",
+        "central-asia-waterways",
       ],
     },
     {
@@ -606,13 +587,12 @@ const SECTIONS = {
         "middle-east-capitals",
         "middle-east-flags",
         "middle-east-outlines",
-        "middle-east-rivers",
-        "middle-east-lakes",
+        "middle-east-waterways",
       ],
     },
     {
       name: "The Middle East and North Africa",
-      packIds: ["mena-countries", "mena-capitals", "mena-flags", "mena-outlines"],
+      packIds: ["mena-countries", "mena-capitals", "mena-flags", "mena-outlines", "mena-waterways"],
     },
     {
       name: "Flags & outlines",
@@ -627,8 +607,7 @@ const SECTIONS = {
         "oceania-capitals",
         "oceania-territories",
         "oceania-territories-capitals",
-        "oceania-rivers",
-        "oceania-lakes",
+        "oceania-waterways",
       ],
     },
     {
@@ -642,13 +621,12 @@ const SECTIONS = {
         "australia-surrounding-flags",
         "australia-surrounding-outlines",
         "australia-physical",
-        "australia-rivers",
-        "australia-lakes",
+        "australia-waterways",
       ],
     },
     {
       name: "Melanesia",
-      packIds: ["melanesia-countries", "melanesia-capitals", "melanesia-flags", "melanesia-outlines"],
+      packIds: ["melanesia-countries", "melanesia-capitals", "melanesia-flags", "melanesia-outlines", "melanesia-waterways"],
     },
     {
       name: "Micronesia",
@@ -1140,6 +1118,7 @@ for (const pack of metas) {
 }
 
 for (const g of packsFile.groups) {
+  g.packs = (g.packs || []).filter((p) => p.id === "great-lakes" || !/-(rivers|lakes)$/.test(p.id));
   const sections = g.sections;
   if (!sections) continue;
   const byPack = new Map(g.packs.map((p) => [p.id, p]));
@@ -1160,5 +1139,8 @@ for (const g of packsFile.groups) {
   g.packs = ordered;
 }
 
+packsFile.packs = (packsFile.packs || []).filter(
+  (p) => p.id === "great-lakes" || !/-(rivers|lakes)$/.test(p.id)
+);
 writeJson("packs.json", packsFile);
 console.log(`Continent map games: wrote ${metas.length} pack updates.`);

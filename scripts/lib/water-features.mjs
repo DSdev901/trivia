@@ -1,4 +1,6 @@
-/** Rivers and lakes for continent + regional geography packs. */
+/** Rivers and lakes for continent + regional geography packs.
+ * Combined Waterways packs (plus surrounding coasts) are built in waterways.mjs.
+ */
 
 export function w(id, name, lat, lon, facts, opts = {}) {
   const list = (Array.isArray(facts) ? facts : [facts]).filter(Boolean).slice(0, 3);
@@ -160,7 +162,7 @@ export const WATER_META = {
   limpopo: { border: true, waterway: "Limpopo" },
 };
 
-export const WATER_PACKS = [
+export const WATER_SOURCE = [
   {
     id: "asia-rivers",
     name: "Asia: Rivers",

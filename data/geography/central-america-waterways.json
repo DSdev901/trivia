@@ -1,0 +1,240 @@
+{
+  "id": "central-america-waterways",
+  "name": "Central America: Waterways",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "usumacinta",
+      "name": "Usumacinta",
+      "fact": "The greatest river of Maya country.",
+      "kind": "water",
+      "lat": 17.5,
+      "lon": -91.4,
+      "x": 253.6,
+      "y": 200.6,
+      "facts": [
+        "The greatest river of Maya country.",
+        "Forms part of the Mexico–Guatemala border."
+      ],
+      "border": true,
+      "country": "Mexico"
+    },
+    {
+      "id": "san-juan-ni",
+      "name": "San Juan River",
+      "fact": "Drains Lake Nicaragua to the Caribbean.",
+      "kind": "water",
+      "lat": 10.9,
+      "lon": -83.7,
+      "x": 272.4,
+      "y": 221.5,
+      "facts": [
+        "Drains Lake Nicaragua to the Caribbean.",
+        "Forms much of the Nicaragua–Costa Rica border."
+      ],
+      "border": true,
+      "country": "Nicaragua"
+    },
+    {
+      "id": "coco",
+      "name": "Coco River",
+      "fact": "Longest river in Central America.",
+      "kind": "water",
+      "lat": 13.8,
+      "lon": -84.3,
+      "x": 271.5,
+      "y": 212.3,
+      "facts": [
+        "Longest river in Central America.",
+        "Forms much of the Honduras–Nicaragua border."
+      ],
+      "border": true,
+      "country": "Nicaragua"
+    },
+    {
+      "id": "motagua",
+      "name": "Motagua",
+      "fact": "Principal river of Guatemala.",
+      "kind": "water",
+      "lat": 15.7,
+      "lon": -88.6,
+      "x": 260.5,
+      "y": 206.3,
+      "facts": [
+        "Principal river of Guatemala.",
+        "Flows to the Gulf of Honduras."
+      ],
+      "country": "Guatemala"
+    },
+    {
+      "id": "lempa",
+      "name": "Lempa",
+      "fact": "Principal river of El Salvador.",
+      "kind": "water",
+      "lat": 13.6,
+      "lon": -88.9,
+      "x": 259,
+      "y": 213,
+      "facts": [
+        "Principal river of El Salvador.",
+        "Rises in Guatemala and crosses Honduras."
+      ],
+      "country": "El Salvador"
+    },
+    {
+      "id": "nicaragua",
+      "name": "Lake Nicaragua",
+      "fact": "Largest lake in Central America.",
+      "kind": "water",
+      "lat": 11.6,
+      "lon": -85.4,
+      "x": 267.9,
+      "y": 219.3,
+      "facts": [
+        "Largest lake in Central America.",
+        "Contains the island of Ometepe."
+      ],
+      "country": "Nicaragua"
+    },
+    {
+      "id": "managua",
+      "name": "Lake Managua",
+      "fact": "Second-largest lake in Nicaragua.",
+      "kind": "water",
+      "lat": 12.3,
+      "lon": -86.3,
+      "x": 265.6,
+      "y": 217.1,
+      "facts": [
+        "Second-largest lake in Nicaragua.",
+        "On the same rift as Lake Nicaragua."
+      ],
+      "country": "Nicaragua"
+    },
+    {
+      "id": "gatun",
+      "name": "Gatún Lake",
+      "fact": "The Panama Canal’s main reservoir.",
+      "kind": "water",
+      "lat": 9.2,
+      "lon": -79.9,
+      "x": 282.4,
+      "y": 226.9,
+      "facts": [
+        "The Panama Canal’s main reservoir.",
+        "One of the world’s largest artificial lakes when built."
+      ],
+      "country": "Panama"
+    },
+    {
+      "id": "atitlan",
+      "name": "Lake Atitlán",
+      "fact": "A deep volcanic caldera lake in Guatemala.",
+      "kind": "water",
+      "lat": 14.7,
+      "lon": -91.2,
+      "x": 253.1,
+      "y": 209.5,
+      "facts": [
+        "A deep volcanic caldera lake in Guatemala.",
+        "Ringed by volcanoes."
+      ],
+      "country": "Guatemala"
+    },
+    {
+      "id": "izabal",
+      "name": "Lake Izabal",
+      "fact": "Largest lake in Guatemala.",
+      "kind": "water",
+      "lat": 15.5,
+      "lon": -89.2,
+      "x": 258.8,
+      "y": 206.9,
+      "facts": [
+        "Largest lake in Guatemala.",
+        "Drains to the Caribbean via the Río Dulce."
+      ],
+      "country": "Guatemala"
+    },
+    {
+      "id": "caribbean-sea",
+      "name": "Caribbean Sea",
+      "fact": "Sea east of Central America.",
+      "kind": "water",
+      "lat": 16,
+      "lon": -82,
+      "x": 278.4,
+      "y": 205.4,
+      "facts": [
+        "Sea east of Central America."
+      ]
+    },
+    {
+      "id": "pacific-ocean",
+      "name": "Pacific Ocean",
+      "fact": "Ocean west of Central America.",
+      "kind": "water",
+      "lat": 10,
+      "lon": -90,
+      "x": 255,
+      "y": 224.4,
+      "facts": [
+        "Ocean west of Central America."
+      ]
+    },
+    {
+      "id": "gulf-mexico",
+      "name": "Gulf of Mexico",
+      "fact": "Gulf north of the Yucatán.",
+      "kind": "water",
+      "lat": 22,
+      "lon": -94,
+      "x": 248.8,
+      "y": 186.3,
+      "facts": [
+        "Gulf north of the Yucatán."
+      ]
+    },
+    {
+      "id": "gulf-honduras",
+      "name": "Gulf of Honduras",
+      "fact": "Caribbean gulf of Belize, Guatemala, and Honduras.",
+      "kind": "water",
+      "lat": 16,
+      "lon": -87.5,
+      "x": 263.6,
+      "y": 205.4,
+      "facts": [
+        "Caribbean gulf of Belize, Guatemala, and Honduras."
+      ]
+    },
+    {
+      "id": "gulf-panama",
+      "name": "Gulf of Panama",
+      "fact": "Pacific gulf on Panama’s south coast.",
+      "kind": "water",
+      "lat": 8,
+      "lon": -79.5,
+      "x": 283.2,
+      "y": 230.7,
+      "facts": [
+        "Pacific gulf on Panama’s south coast."
+      ]
+    },
+    {
+      "id": "panama-canal",
+      "name": "Panama Canal",
+      "fact": "Artificial waterway linking the Atlantic and Pacific.",
+      "kind": "water",
+      "lat": 9.08,
+      "lon": -79.68,
+      "x": 282.9,
+      "y": 227.3,
+      "facts": [
+        "Artificial waterway linking the Atlantic and Pacific."
+      ]
+    }
+  ]
+}
