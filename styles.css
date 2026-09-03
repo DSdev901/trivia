@@ -3950,8 +3950,12 @@ a.ce-tab {
   stroke-width: 0.4;
 }
 
-.geo-map-frame .geo-marker-water {
-  fill: #6a92ab;
+.geo-map-frame .geo-marker-water,
+.geo-map-frame.is-water-pack .geo-marker {
+  fill: #e8b423;
+  stroke: #1a2332;
+  stroke-width: 1.65;
+  vector-effect: non-scaling-stroke;
 }
 
 .geo-map-frame .geo-marker-range {
@@ -4000,6 +4004,37 @@ a.ce-tab {
   stroke-width: 0.9;
   opacity: 1;
   transform: scale(1.28);
+}
+
+.geo-map-frame.is-water-pack .geo-region.geo-marker.is-dim,
+.geo-map-frame .geo-region.geo-marker-water.is-dim {
+  fill: #c9a21f;
+  stroke: #3d4c58;
+  opacity: 1;
+}
+
+.geo-map-frame.is-water-pack .geo-pin:hover .geo-region.geo-marker:not(.is-active):not(.is-correct):not(.is-wrong),
+.geo-map-frame .geo-pin:hover .geo-region.geo-marker-water:not(.is-active):not(.is-correct):not(.is-wrong) {
+  fill: #f3c73a;
+  stroke: #0d141c;
+  stroke-width: 1.9;
+}
+
+.geo-map-frame.is-water-pack .geo-region.geo-marker.is-active,
+.geo-map-frame .geo-region.geo-marker-water.is-active {
+  fill: #f3c73a;
+  stroke: var(--accent);
+  stroke-width: 2.2;
+}
+
+.geo-map-frame.is-water-pack .geo-region.geo-marker.is-correct,
+.geo-map-frame .geo-region.geo-marker-water.is-correct,
+.geo-map-frame.is-water-pack .geo-region.geo-marker.is-wrong,
+.geo-map-frame.is-water-pack .geo-region.geo-marker.is-miss-flash,
+.geo-map-frame .geo-region.geo-marker-water.is-wrong,
+.geo-map-frame .geo-region.geo-marker-water.is-miss-flash {
+  stroke: #fff;
+  stroke-width: 1.75;
 }
 
 .geo-map-frame .geo-marker-label {

@@ -261,7 +261,14 @@ function remaining() {
 
 function injectFeatureMarkers(svgText, items) {
   let svg = svgText.replace(/\sclass="geo-region[^"]*"/g, ' class="geo-land-bg"');
-  const r = items.length > 40 ? 2 : 2.35;
+  const water = items.length > 0 && items.every((it) => it.kind === "water");
+  const r = water
+    ? items.length > 40
+      ? 2.7
+      : 3.05
+    : items.length > 40
+      ? 2
+      : 2.35;
   const markers = items
     .filter((it) => Number.isFinite(it.x) && Number.isFinite(it.y))
     .map((it) => {
