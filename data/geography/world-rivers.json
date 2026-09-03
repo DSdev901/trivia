@@ -14,6 +14,12 @@
       "lon": -60,
       "x": 336,
       "y": 265.5,
+      "facts": [
+        "Largest river by discharge.",
+        "Longest river in South America.",
+        "Drains the Amazon rainforest."
+      ],
+      "waterway": "Amazonas",
       "country": "Brazil"
     },
     {
@@ -25,6 +31,11 @@
       "lon": 32.5,
       "x": 586,
       "y": 173.6,
+      "facts": [
+        "Often cited as the world’s longest river.",
+        "Flows north through 11 countries.",
+        "Empties into the Mediterranean."
+      ],
       "country": "Egypt"
     },
     {
@@ -36,6 +47,12 @@
       "lon": 112,
       "x": 792.3,
       "y": 157.6,
+      "facts": [
+        "Longest river in Asia.",
+        "China’s principal river, the Chang Jiang.",
+        "Empties into the East China Sea at Shanghai."
+      ],
+      "waterway": "Chang Jiang",
       "country": "China"
     },
     {
@@ -47,6 +64,11 @@
       "lon": -90,
       "x": 268.3,
       "y": 144.9,
+      "facts": [
+        "Principal river of the central United States.",
+        "Runs from Minnesota to the Gulf of Mexico.",
+        "With the Missouri, among the world’s longest systems."
+      ],
       "country": "United States"
     },
     {
@@ -58,6 +80,10 @@
       "lon": 86.5,
       "x": 683,
       "y": 48.4,
+      "facts": [
+        "Great Siberian river flowing to the Arctic.",
+        "Among Asia’s longest rivers."
+      ],
       "country": "Russia"
     },
     {
@@ -69,6 +95,12 @@
       "lon": 111,
       "x": 785.7,
       "y": 144.9,
+      "facts": [
+        "China’s Huang He; “cradle of Chinese civilization.”",
+        "China’s second-longest river.",
+        "Named for the loess silt it carries."
+      ],
+      "waterway": "Huang",
       "country": "China"
     },
     {
@@ -80,6 +112,10 @@
       "lon": 70,
       "x": 654.4,
       "y": 62.3,
+      "facts": [
+        "Major west Siberian river.",
+        "Reaches the Arctic via the Gulf of Ob."
+      ],
       "country": "Russia"
     },
     {
@@ -91,6 +127,10 @@
       "lon": -58.5,
       "x": 345.5,
       "y": 341.7,
+      "facts": [
+        "Second-longest river in South America.",
+        "Joins the Paraguay and Uruguay in the Río de la Plata."
+      ],
       "country": "Argentina"
     },
     {
@@ -102,6 +142,13 @@
       "lon": 18,
       "x": 549.2,
       "y": 262.4,
+      "facts": [
+        "Deepest river; second-largest by discharge.",
+        "Africa’s second-longest river.",
+        "Forms stretches of the Republic of the Congo–DRC border."
+      ],
+      "border": true,
+      "waterway": "Congo",
       "country": "DR Congo"
     },
     {
@@ -113,6 +160,13 @@
       "lon": 137,
       "x": 828.3,
       "y": 97.8,
+      "facts": [
+        "Border river of China and Russia.",
+        "Known in China as the Heilong Jiang.",
+        "Forms much of the China–Russia land border."
+      ],
+      "border": true,
+      "waterway": "Amur",
       "country": "Russia"
     },
     {
@@ -124,6 +178,10 @@
       "lon": 127,
       "x": 766.3,
       "y": 45.6,
+      "facts": [
+        "Great east Siberian river.",
+        "Flows to the Laptev Sea in the Arctic."
+      ],
       "country": "Russia"
     },
     {
@@ -135,6 +193,13 @@
       "lon": 105,
       "x": 784.1,
       "y": 208.5,
+      "facts": [
+        "Major river of Southeast Asia.",
+        "Forms stretches of the Laos–Thailand border.",
+        "Empties through the Mekong Delta in Vietnam."
+      ],
+      "border": true,
+      "waterway": "Mekong",
       "country": "Thailand"
     },
     {
@@ -146,6 +211,10 @@
       "lon": 4,
       "x": 510.8,
       "y": 205.4,
+      "facts": [
+        "Principal river of West Africa.",
+        "The “Boomerang” river, rising in the Guinea Highlands."
+      ],
       "country": "Niger"
     },
     {
@@ -157,6 +226,10 @@
       "lon": 142,
       "x": 866.6,
       "y": 364.6,
+      "facts": [
+        "Australia’s longest river.",
+        "With the Darling, Australia’s main river system."
+      ],
       "country": "Australia"
     },
     {
@@ -168,6 +241,10 @@
       "lon": 47,
       "x": 608.4,
       "y": 79.8,
+      "facts": [
+        "Europe’s longest river.",
+        "Empties into the Caspian Sea."
+      ],
       "country": "Russia"
     },
     {
@@ -179,17 +256,28 @@
       "lon": 83,
       "x": 720.1,
       "y": 175.8,
+      "facts": [
+        "Sacred river of the Indian subcontinent.",
+        "Joins the Brahmaputra in the world’s largest delta."
+      ],
       "country": "India"
     },
     {
       "id": "danube",
       "name": "Danube",
-      "fact": "Flows through Central and Eastern Europe.",
+      "fact": "Europe’s second-longest river.",
       "kind": "water",
       "lat": 45.2,
       "lon": 19.5,
       "x": 548,
       "y": 112.7,
+      "facts": [
+        "Europe’s second-longest river.",
+        "Passes four European capitals.",
+        "Forms stretches of several national borders, including Romania–Bulgaria."
+      ],
+      "border": true,
+      "waterway": "Danube",
       "country": "Serbia"
     },
     {
@@ -201,6 +289,10 @@
       "lon": 70,
       "x": 684.1,
       "y": 165.6,
+      "facts": [
+        "Principal river of Pakistan.",
+        "Cradle of the Indus Valley civilization."
+      ],
       "country": "Pakistan"
     },
     {
@@ -212,6 +304,13 @@
       "lon": 7,
       "x": 516.8,
       "y": 97.8,
+      "facts": [
+        "Major river of Western Europe.",
+        "Forms much of the France–Germany border.",
+        "Empties into the North Sea in the Netherlands."
+      ],
+      "border": true,
+      "waterway": "Rhine",
       "country": "Germany"
     },
     {
@@ -223,6 +322,13 @@
       "lon": 28.5,
       "x": 577,
       "y": 306.7,
+      "facts": [
+        "Home of Victoria Falls.",
+        "Africa’s fourth-longest river.",
+        "Forms stretches of the Zambia–Zimbabwe border."
+      ],
+      "border": true,
+      "waterway": "Zambezi",
       "country": "Zambia"
     }
   ]

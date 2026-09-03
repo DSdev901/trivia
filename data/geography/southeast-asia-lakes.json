@@ -1,0 +1,83 @@
+{
+  "id": "southeast-asia-lakes",
+  "name": "Southeast Asia: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "tonle-sap",
+      "name": "Tonlé Sap",
+      "fact": "Southeast Asia’s largest freshwater lake.",
+      "kind": "water",
+      "lat": 12.9,
+      "lon": 104.1,
+      "x": 782.5,
+      "y": 215.2,
+      "facts": [
+        "Southeast Asia’s largest freshwater lake.",
+        "Swells dramatically in the Mekong flood."
+      ],
+      "country": "Cambodia"
+    },
+    {
+      "id": "toba",
+      "name": "Lake Toba",
+      "fact": "Largest volcanic lake on Earth.",
+      "kind": "water",
+      "lat": 2.6,
+      "lon": 98.8,
+      "x": 770.1,
+      "y": 247.8,
+      "facts": [
+        "Largest volcanic lake on Earth.",
+        "In the caldera of a supervolcano on Sumatra."
+      ],
+      "country": "Indonesia"
+    },
+    {
+      "id": "inle",
+      "name": "Inle Lake",
+      "fact": "Famous stilt-village lake in Myanmar.",
+      "kind": "water",
+      "lat": 20.55,
+      "lon": 96.91,
+      "x": 759.8,
+      "y": 190.9,
+      "facts": [
+        "Famous stilt-village lake in Myanmar.",
+        "In Shan State’s highlands."
+      ],
+      "country": "Myanmar"
+    },
+    {
+      "id": "laguna-bay",
+      "name": "Laguna de Bay",
+      "fact": "Largest lake in the Philippines.",
+      "kind": "water",
+      "lat": 14.4,
+      "lon": 121.2,
+      "x": 828.3,
+      "y": 210.4,
+      "facts": [
+        "Largest lake in the Philippines.",
+        "On Luzon, southeast of Manila."
+      ]
+    },
+    {
+      "id": "songkhla",
+      "name": "Songkhla Lake",
+      "fact": "Largest natural lake in Thailand.",
+      "kind": "water",
+      "lat": 7.2,
+      "lon": 100.4,
+      "x": 773.9,
+      "y": 233.2,
+      "facts": [
+        "Largest natural lake in Thailand.",
+        "A coastal lagoon on the Gulf of Thailand."
+      ],
+      "country": "Thailand"
+    }
+  ]
+}

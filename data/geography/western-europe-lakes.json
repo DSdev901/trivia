@@ -1,0 +1,84 @@
+{
+  "id": "western-europe-lakes",
+  "name": "Western Europe: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "geneva",
+      "name": "Lake Geneva",
+      "fact": "Largest Alpine lake.",
+      "kind": "water",
+      "lat": 46.4,
+      "lon": 6.5,
+      "x": 515.9,
+      "y": 109,
+      "facts": [
+        "Largest Alpine lake.",
+        "Shared by Switzerland and France."
+      ],
+      "country": "France"
+    },
+    {
+      "id": "constance",
+      "name": "Lake Constance",
+      "fact": "Shared by Germany, Switzerland, and Austria.",
+      "kind": "water",
+      "lat": 47.6,
+      "lon": 9.4,
+      "x": 522.8,
+      "y": 105.2,
+      "facts": [
+        "Shared by Germany, Switzerland, and Austria.",
+        "The Rhine flows through it."
+      ],
+      "country": "Germany"
+    },
+    {
+      "id": "ijsselmeer",
+      "name": "IJsselmeer",
+      "fact": "The Netherlands’ largest lake.",
+      "kind": "water",
+      "lat": 52.7,
+      "lon": 5.3,
+      "x": 512.5,
+      "y": 89.6,
+      "facts": [
+        "The Netherlands’ largest lake.",
+        "A former Zuiderzee bay, closed by the Afsluitdijk."
+      ],
+      "country": "Netherlands"
+    },
+    {
+      "id": "lucerne",
+      "name": "Lake Lucerne",
+      "fact": "A fjord-like Alpine lake in Switzerland.",
+      "kind": "water",
+      "lat": 47,
+      "lon": 8.4,
+      "x": 520.5,
+      "y": 107.1,
+      "facts": [
+        "A fjord-like Alpine lake in Switzerland.",
+        "At the foot of the Rigi and Pilatus."
+      ],
+      "country": "Switzerland"
+    },
+    {
+      "id": "annecy",
+      "name": "Lake Annecy",
+      "fact": "Often called Europe’s cleanest lake.",
+      "kind": "water",
+      "lat": 45.86,
+      "lon": 6.17,
+      "x": 515.1,
+      "y": 110.6,
+      "facts": [
+        "Often called Europe’s cleanest lake.",
+        "In the French Alps, south of Geneva."
+      ],
+      "country": "France"
+    }
+  ]
+}

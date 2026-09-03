@@ -1,0 +1,84 @@
+{
+  "id": "northern-africa-lakes",
+  "name": "Northern Africa: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "nasser",
+      "name": "Lake Nasser",
+      "fact": "Reservoir behind Aswan High Dam.",
+      "kind": "water",
+      "lat": 22.5,
+      "lon": 32.5,
+      "x": 586.8,
+      "y": 184.7,
+      "facts": [
+        "Reservoir behind Aswan High Dam.",
+        "The Nile’s great lake in Egypt and Sudan."
+      ],
+      "country": "Egypt"
+    },
+    {
+      "id": "chad",
+      "name": "Lake Chad",
+      "fact": "Shallow African lake; size varies greatly.",
+      "kind": "water",
+      "lat": 13,
+      "lon": 14,
+      "x": 538,
+      "y": 214.9,
+      "facts": [
+        "Shallow African lake; size varies greatly.",
+        "Shared by Chad, Cameroon, Niger, and Nigeria."
+      ],
+      "country": "Chad"
+    },
+    {
+      "id": "qarun",
+      "name": "Lake Qarun",
+      "fact": "Egypt’s largest natural lake.",
+      "kind": "water",
+      "lat": 29.45,
+      "lon": 30.58,
+      "x": 580.2,
+      "y": 162.6,
+      "facts": [
+        "Egypt’s largest natural lake.",
+        "In the Faiyum Oasis, west of the Nile."
+      ],
+      "country": "Egypt"
+    },
+    {
+      "id": "djerid",
+      "name": "Chott el Djerid",
+      "fact": "Tunisia’s largest salt pan.",
+      "kind": "water",
+      "lat": 33.7,
+      "lon": 8.4,
+      "x": 521.7,
+      "y": 149,
+      "facts": [
+        "Tunisia’s largest salt pan.",
+        "A seasonal lake of the Sahara’s northern edge."
+      ],
+      "country": "Tunisia"
+    },
+    {
+      "id": "manzala",
+      "name": "Lake Manzala",
+      "fact": "Largest of the Nile Delta lakes.",
+      "kind": "water",
+      "lat": 31.3,
+      "lon": 32.05,
+      "x": 583.6,
+      "y": 156.7,
+      "facts": [
+        "Largest of the Nile Delta lakes.",
+        "A coastal lagoon on the Mediterranean."
+      ],
+      "country": "Egypt"
+    }
+  ]
+}

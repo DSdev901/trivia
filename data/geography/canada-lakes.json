@@ -1,0 +1,99 @@
+{
+  "id": "canada-lakes",
+  "name": "Canada: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "great-bear",
+      "name": "Great Bear Lake",
+      "fact": "Largest lake entirely in Canada.",
+      "kind": "water",
+      "lat": 66,
+      "lon": -121,
+      "x": 241.8,
+      "y": 51.1,
+      "facts": [
+        "Largest lake entirely in Canada.",
+        "In the Northwest Territories."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "great-slave",
+      "name": "Great Slave Lake",
+      "fact": "Deepest lake in North America.",
+      "kind": "water",
+      "lat": 61.4,
+      "lon": -114,
+      "x": 247.4,
+      "y": 64,
+      "facts": [
+        "Deepest lake in North America.",
+        "Source of the Mackenzie River."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "winnipeg",
+      "name": "Lake Winnipeg",
+      "fact": "Large prairie lake in Manitoba.",
+      "kind": "water",
+      "lat": 52.5,
+      "lon": -97.5,
+      "x": 269.9,
+      "y": 90.2,
+      "facts": [
+        "Large prairie lake in Manitoba.",
+        "Twelfth-largest freshwater lake."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "athabasca",
+      "name": "Lake Athabasca",
+      "fact": "Large lake on the Alberta–Saskatchewan border.",
+      "kind": "water",
+      "lat": 59.1,
+      "lon": -110,
+      "x": 252,
+      "y": 70.7,
+      "facts": [
+        "Large lake on the Alberta–Saskatchewan border.",
+        "Feeds the Slave River toward Great Slave Lake."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "woods",
+      "name": "Lake of the Woods",
+      "fact": "Lake on the U.S.–Canada border.",
+      "kind": "water",
+      "lat": 49.1,
+      "lon": -94.8,
+      "x": 271.6,
+      "y": 100.6,
+      "facts": [
+        "Lake on the U.S.–Canada border.",
+        "Shared by Ontario, Manitoba, and Minnesota."
+      ],
+      "country": "Canada"
+    },
+    {
+      "id": "nipigon",
+      "name": "Lake Nipigon",
+      "fact": "Largest lake entirely in Ontario.",
+      "kind": "water",
+      "lat": 49.8,
+      "lon": -88.5,
+      "x": 287.7,
+      "y": 98.5,
+      "facts": [
+        "Largest lake entirely in Ontario.",
+        "Drains toward Lake Superior."
+      ],
+      "country": "Canada"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "eastern-europe-lakes",
+  "name": "Eastern Europe: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "balaton",
+      "name": "Lake Balaton",
+      "fact": "Largest lake in Central Europe.",
+      "kind": "water",
+      "lat": 46.8,
+      "lon": 17.7,
+      "x": 543.2,
+      "y": 107.7,
+      "facts": [
+        "Largest lake in Central Europe.",
+        "Hungary’s “inland sea.”"
+      ],
+      "country": "Hungary"
+    },
+    {
+      "id": "peipus",
+      "name": "Lake Peipus",
+      "fact": "Largest transboundary lake in Europe.",
+      "kind": "water",
+      "lat": 58.7,
+      "lon": 27.5,
+      "x": 562.2,
+      "y": 71.8,
+      "facts": [
+        "Largest transboundary lake in Europe.",
+        "Shared by Estonia and Russia."
+      ],
+      "country": "Russia"
+    },
+    {
+      "id": "onega",
+      "name": "Lake Onega",
+      "fact": "Second-largest lake in Europe.",
+      "kind": "water",
+      "lat": 61.7,
+      "lon": 35.5,
+      "x": 578.5,
+      "y": 63.2,
+      "facts": [
+        "Second-largest lake in Europe.",
+        "In northwestern Russia, east of Ladoga."
+      ],
+      "country": "Russia"
+    },
+    {
+      "id": "sniardwy",
+      "name": "Śniardwy",
+      "fact": "Largest lake in Poland.",
+      "kind": "water",
+      "lat": 53.75,
+      "lon": 21.75,
+      "x": 550.9,
+      "y": 86.5,
+      "facts": [
+        "Largest lake in Poland.",
+        "In the Masurian Lake District."
+      ],
+      "country": "Poland"
+    },
+    {
+      "id": "neusiedl",
+      "name": "Lake Neusiedl",
+      "fact": "A shallow steppe lake on the Austria–Hungary border.",
+      "kind": "water",
+      "lat": 47.8,
+      "lon": 16.75,
+      "x": 540.6,
+      "y": 104.6,
+      "facts": [
+        "A shallow steppe lake on the Austria–Hungary border.",
+        "Central Europe’s westernmost steppe lake."
+      ],
+      "country": "Austria"
+    }
+  ]
+}

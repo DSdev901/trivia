@@ -1,0 +1,106 @@
+{
+  "id": "latin-america-rivers",
+  "name": "Latin America: Rivers",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "fact": "Largest river by discharge.",
+      "kind": "water",
+      "lat": -3,
+      "lon": -60,
+      "x": 336,
+      "y": 265.5,
+      "facts": [
+        "Largest river by discharge.",
+        "Longest river in South America.",
+        "Drains the Amazon rainforest."
+      ],
+      "waterway": "Amazonas",
+      "country": "Brazil"
+    },
+    {
+      "id": "parana",
+      "name": "Paraná",
+      "fact": "Second-longest river in South America.",
+      "kind": "water",
+      "lat": -27,
+      "lon": -58.5,
+      "x": 345.5,
+      "y": 341.7,
+      "facts": [
+        "Second-longest river in South America.",
+        "Joins the Paraguay and Uruguay in the Río de la Plata."
+      ],
+      "country": "Argentina"
+    },
+    {
+      "id": "orinoco",
+      "name": "Orinoco",
+      "fact": "Principal river of Venezuela.",
+      "kind": "water",
+      "lat": 8,
+      "lon": -66,
+      "x": 320,
+      "y": 230.7,
+      "facts": [
+        "Principal river of Venezuela."
+      ],
+      "waterway": "Orinoco",
+      "country": "Venezuela"
+    },
+    {
+      "id": "rio-grande",
+      "name": "Rio Grande",
+      "fact": "Part of the U.S.–Mexico border.",
+      "kind": "water",
+      "lat": 29,
+      "lon": -103,
+      "x": 229.6,
+      "y": 164,
+      "facts": [
+        "Part of the U.S.–Mexico border.",
+        "Called the Río Bravo in Mexico.",
+        "Runs from Colorado to the Gulf of Mexico."
+      ],
+      "border": true,
+      "waterway": "Rio Grande",
+      "country": "Mexico"
+    },
+    {
+      "id": "uruguay",
+      "name": "Uruguay River",
+      "fact": "Forms part of the Argentina–Uruguay border.",
+      "kind": "water",
+      "lat": -31.5,
+      "lon": -58,
+      "x": 348.9,
+      "y": 356,
+      "facts": [
+        "Forms part of the Argentina–Uruguay border.",
+        "Joins the Paraná in the Río de la Plata."
+      ],
+      "border": true,
+      "waterway": "Uruguay",
+      "country": "Uruguay"
+    },
+    {
+      "id": "magdalena",
+      "name": "Magdalena",
+      "fact": "Principal river of Colombia.",
+      "kind": "water",
+      "lat": 9,
+      "lon": -74.5,
+      "x": 297,
+      "y": 227.5,
+      "facts": [
+        "Principal river of Colombia."
+      ],
+      "waterway": "Magdalena",
+      "country": "Colombia"
+    }
+  ]
+}

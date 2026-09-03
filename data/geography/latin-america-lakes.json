@@ -1,0 +1,84 @@
+{
+  "id": "latin-america-lakes",
+  "name": "Latin America: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "titicaca",
+      "name": "Lake Titicaca",
+      "fact": "Highest large navigable lake; Andes.",
+      "kind": "water",
+      "lat": -15.8,
+      "lon": -69.4,
+      "x": 312.4,
+      "y": 306.1,
+      "facts": [
+        "Highest large navigable lake; Andes.",
+        "Shared by Peru and Bolivia."
+      ],
+      "country": "Peru"
+    },
+    {
+      "id": "nicaragua",
+      "name": "Lake Nicaragua",
+      "fact": "Largest lake in Central America.",
+      "kind": "water",
+      "lat": 11.6,
+      "lon": -85.4,
+      "x": 267.9,
+      "y": 219.3,
+      "facts": [
+        "Largest lake in Central America.",
+        "Contains the island of Ometepe."
+      ],
+      "country": "Nicaragua"
+    },
+    {
+      "id": "maracaibo",
+      "name": "Lake Maracaibo",
+      "fact": "Large tidal bay in Venezuela.",
+      "kind": "water",
+      "lat": 9.8,
+      "lon": -71.55,
+      "x": 305.2,
+      "y": 225,
+      "facts": [
+        "Large tidal bay in Venezuela.",
+        "Connected to the Gulf of Venezuela."
+      ],
+      "country": "Venezuela"
+    },
+    {
+      "id": "poopo",
+      "name": "Poopó Lake",
+      "fact": "A high Altiplano lake in Bolivia.",
+      "kind": "water",
+      "lat": -18.8,
+      "lon": -67.1,
+      "x": 319.5,
+      "y": 315.6,
+      "facts": [
+        "A high Altiplano lake in Bolivia.",
+        "Fed by the Desaguadero from Titicaca."
+      ],
+      "country": "Bolivia"
+    },
+    {
+      "id": "atitlan",
+      "name": "Lake Atitlán",
+      "fact": "A deep volcanic caldera lake in Guatemala.",
+      "kind": "water",
+      "lat": 14.7,
+      "lon": -91.2,
+      "x": 253.1,
+      "y": 209.5,
+      "facts": [
+        "A deep volcanic caldera lake in Guatemala.",
+        "Ringed by volcanoes."
+      ],
+      "country": "Guatemala"
+    }
+  ]
+}

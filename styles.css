@@ -3424,6 +3424,7 @@ a.ce-tab {
   line-height: 1.45;
 }
 
+.geo-continent-card .meta,
 .geo-pack-card .meta {
   display: inline-block;
   margin-top: 0.75rem;
@@ -3654,6 +3655,40 @@ a.ce-tab {
 .geo-map-frame .geo-river-r4 { stroke-width: 1.45; }
 .geo-map-frame .geo-river-r5 { stroke-width: 1.2; }
 .geo-map-frame .geo-river-r6 { stroke-width: 1; }
+
+.geo-map-frame .geo-river-border-g {
+  pointer-events: none;
+}
+
+.geo-map-frame .geo-river-border-bed {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2.85;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.geo-map-frame .geo-river-border {
+  fill: none;
+  stroke: #2f7fb3;
+  stroke-width: 2.05;
+  stroke-dasharray: 5.5 4.2;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  pointer-events: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.geo-map-frame .geo-river-border-g.is-active .geo-river-border-bed {
+  stroke-width: 3.5;
+}
+
+.geo-map-frame .geo-river-border-g.is-active .geo-river-border {
+  stroke: #145a86;
+  stroke-width: 2.5;
+}
 
 .geo-border-overlay {
   pointer-events: none;
@@ -4082,6 +4117,10 @@ a.ce-tab {
   background: rgba(255, 255, 255, 0.35);
 }
 
+.geo-group--regions .geo-continent-grid {
+  margin-top: 0.15rem;
+}
+
 .geo-side {
   display: grid;
   gap: 0.85rem;
@@ -4304,6 +4343,21 @@ a.ce-tab {
 .geo-identity-cap strong {
   margin-left: 0.28rem;
   font-weight: 700;
+}
+
+.geo-water-facts {
+  margin: 0.35rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.2rem;
+}
+
+.geo-water-facts li,
+.geo-identity-cap.geo-water-fact {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: var(--ink-soft);
 }
 
 .geo-cities {

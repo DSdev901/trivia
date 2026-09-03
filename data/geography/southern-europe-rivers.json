@@ -1,0 +1,101 @@
+{
+  "id": "southern-europe-rivers",
+  "name": "Southern Europe: Rivers",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "po",
+      "name": "Po",
+      "fact": "Italy’s longest river.",
+      "kind": "water",
+      "lat": 45,
+      "lon": 11,
+      "x": 527.1,
+      "y": 113.3,
+      "facts": [
+        "Italy’s longest river.",
+        "Drains the North Italian Plain to the Adriatic."
+      ],
+      "waterway": "Po",
+      "country": "Italy"
+    },
+    {
+      "id": "ebro",
+      "name": "Ebro",
+      "fact": "Spain’s longest river entirely in-country.",
+      "kind": "water",
+      "lat": 41.4,
+      "lon": 0.3,
+      "x": 500.8,
+      "y": 124.6,
+      "facts": [
+        "Spain’s longest river entirely in-country.",
+        "Flows to the Mediterranean."
+      ],
+      "waterway": "Ebro",
+      "country": "Spain"
+    },
+    {
+      "id": "tagus",
+      "name": "Tagus",
+      "fact": "Longest river of the Iberian Peninsula.",
+      "kind": "water",
+      "lat": 39.5,
+      "lon": -8,
+      "x": 479.8,
+      "y": 130.6,
+      "facts": [
+        "Longest river of the Iberian Peninsula.",
+        "Flows through Toledo and Lisbon."
+      ],
+      "country": "Portugal"
+    },
+    {
+      "id": "tiber",
+      "name": "Tiber",
+      "fact": "The river of Rome.",
+      "kind": "water",
+      "lat": 41.9,
+      "lon": 12.5,
+      "x": 531.3,
+      "y": 123,
+      "facts": [
+        "The river of Rome.",
+        "Empties into the Tyrrhenian Sea."
+      ],
+      "country": "Italy"
+    },
+    {
+      "id": "vardar",
+      "name": "Vardar",
+      "fact": "Principal river of North Macedonia.",
+      "kind": "water",
+      "lat": 41.6,
+      "lon": 21.7,
+      "x": 554.3,
+      "y": 124,
+      "facts": [
+        "Principal river of North Macedonia.",
+        "Flows to the Aegean in Greece as the Axios."
+      ],
+      "country": "North Macedonia"
+    },
+    {
+      "id": "guadalquivir",
+      "name": "Guadalquivir",
+      "fact": "The great river of Andalusia.",
+      "kind": "water",
+      "lat": 37.5,
+      "lon": -6,
+      "x": 484.7,
+      "y": 136.9,
+      "facts": [
+        "The great river of Andalusia.",
+        "Navigable to Seville."
+      ],
+      "country": "Spain"
+    }
+  ]
+}

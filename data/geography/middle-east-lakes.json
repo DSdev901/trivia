@@ -1,0 +1,99 @@
+{
+  "id": "middle-east-lakes",
+  "name": "The Middle East: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "dead-sea",
+      "name": "Dead Sea",
+      "fact": "Earth’s lowest land elevation on its shores.",
+      "kind": "water",
+      "lat": 31.5,
+      "lon": 35.5,
+      "x": 592.5,
+      "y": 156,
+      "facts": [
+        "Earth’s lowest land elevation on its shores.",
+        "Among the saltiest large lakes.",
+        "Forms part of the Israel–Jordan border."
+      ],
+      "border": true
+    },
+    {
+      "id": "van",
+      "name": "Lake Van",
+      "fact": "Largest lake in Turkey.",
+      "kind": "water",
+      "lat": 38.6,
+      "lon": 42.9,
+      "x": 608.9,
+      "y": 133.5,
+      "facts": [
+        "Largest lake in Turkey.",
+        "A saline soda lake in Eastern Anatolia."
+      ],
+      "country": "Türkiye"
+    },
+    {
+      "id": "urmia",
+      "name": "Lake Urmia",
+      "fact": "Once the Middle East’s largest lake.",
+      "kind": "water",
+      "lat": 37.7,
+      "lon": 45.3,
+      "x": 615.4,
+      "y": 136.3,
+      "facts": [
+        "Once the Middle East’s largest lake.",
+        "A shrinking salt lake in northwestern Iran."
+      ],
+      "country": "Iran"
+    },
+    {
+      "id": "tiberias",
+      "name": "Sea of Galilee",
+      "fact": "Israel’s largest freshwater lake.",
+      "kind": "water",
+      "lat": 32.8,
+      "lon": 35.6,
+      "x": 592.4,
+      "y": 151.9,
+      "facts": [
+        "Israel’s largest freshwater lake.",
+        "The Jordan River flows through it."
+      ]
+    },
+    {
+      "id": "tharthar",
+      "name": "Lake Tharthar",
+      "fact": "Iraq’s largest lake.",
+      "kind": "water",
+      "lat": 34.2,
+      "lon": 43.2,
+      "x": 611.5,
+      "y": 147.4,
+      "facts": [
+        "Iraq’s largest lake.",
+        "A reservoir between the Tigris and Euphrates."
+      ],
+      "country": "Iraq"
+    },
+    {
+      "id": "qadisiyah",
+      "name": "Lake Qadisiyah",
+      "fact": "A large Euphrates reservoir in Iraq.",
+      "kind": "water",
+      "lat": 33.9,
+      "lon": 42.3,
+      "x": 609.3,
+      "y": 148.4,
+      "facts": [
+        "A large Euphrates reservoir in Iraq.",
+        "Formed by Haditha Dam."
+      ],
+      "country": "Iraq"
+    }
+  ]
+}

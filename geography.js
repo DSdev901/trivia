@@ -100,6 +100,7 @@ const geo = {
   groups: [],
   packs: [],
   group: null,
+  section: null,
   pack: null,
   items: [],
   mapSvg: "",
@@ -1252,6 +1253,7 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     syncTinyHitPads(host);
   }
   syncCapitalDot(host);
+  paintBorderRivers(host, activeId || correctId);
   syncMapReset(host);
   requestAnimationFrame(() => {
     if (host.isConnected) {
@@ -1284,6 +1286,34 @@ function clientToSvgPoint(svg, clientX, clientY) {
 
 function usesMarkerPins(host) {
   return geo.pack?.overlay === "markers" || Boolean(host?.querySelector(".geo-pin"));
+}
+
+function waterwayKey(s) {
+  return foldPlaceName(s)
+    .replace(/\b(river|rivers|lake|lakes|the)\b/g, " ")
+    .replace(/\s+/g, "");
+}
+
+function paintBorderRivers(host, activeId) {
+  const groups = host.querySelectorAll(".geo-river-border-g");
+  if (!groups.length) return;
+  const item = byId(activeId);
+  const keys = [];
+  if (item) {
+    for (const raw of [item.id, item.name, item.waterway]) {
+      const k = waterwayKey(raw);
+      if (k.length >= 3) keys.push(k);
+    }
+  }
+  groups.forEach((el) => {
+    const river = waterwayKey(el.getAttribute("data-name") || el.dataset.river || "");
+    const on =
+      Boolean(item) &&
+      keys.some(
+        (k) => k === river || (k.length >= 4 && (k.includes(river) || river.includes(k)))
+      );
+    el.classList.toggle("is-active", on);
+  });
 }
 
 function mapPxScale(svg, vbRaw) {
@@ -2755,7 +2785,7 @@ function confirmAnswerHtml(ok, item) {
   return confirmCardHtml(
     ok,
     `<strong class="geo-identity-place">${escapeHtml(place)}${where}</strong>`,
-    `${confirmCapitalHtml(showingCapital ? item.capital : "")}${cityRankFactHtml(item)}`,
+    `${confirmCapitalHtml(showingCapital ? item.capital : "")}${cityRankFactHtml(item)}${waterFactsConfirmHtml(item)}`,
     largestCitiesHtml(item, showingCapital),
     confirmShowsRevealFlag(item) ? revealFlagHtml(item) : ""
   );
@@ -2811,8 +2841,14 @@ function groupHref() {
 
 function packHref(pack = geo.pack, group = geo.group) {
   if (!pack) return groupHref();
-  const gid = group?.id || groupForPack(pack.id)?.id;
-  return gid ? href(["geography", gid, pack.id]) : href(["geography", pack.id]);
+  const g = group || groupForPack(pack.id);
+  const gid = g?.id;
+  if (!gid) return href(["geography", pack.id]);
+  const region = sectionForPack(g, pack.id);
+  if (isRegionSection(region)) {
+    return href(["geography", gid, toSlug(region.name), pack.id]);
+  }
+  return href(["geography", gid, pack.id]);
 }
 
 function playCloseHtml() {
@@ -2825,10 +2861,8 @@ function playCloseHtml() {
 
 function modeHref(mode, pack = geo.pack, group = geo.group) {
   if (!pack) return groupHref();
-  const gid = group?.id || groupForPack(pack.id)?.id;
-  return gid
-    ? href(["geography", gid, pack.id, mode])
-    : href(["geography", pack.id, mode]);
+  const base = packHref(pack, group);
+  return `${base}/${encodeURIComponent(String(mode))}`;
 }
 
 function geoCrumbs(tailLabel) {
@@ -2836,8 +2870,18 @@ function geoCrumbs(tailLabel) {
   if (geo.group) {
     items.push({ label: geo.group.name, href: href(["geography", geo.group.id]) });
   }
+  const region = activeRegionSection();
+  if (region && geo.group) {
+    items.push({
+      label: region.name,
+      href: href(["geography", geo.group.id, toSlug(region.name)]),
+    });
+  }
   if (geo.pack) {
-    items.push({ label: geo.pack.name, href: packHref() });
+    items.push({
+      label: packTitleInSection(geo.pack, region?.name),
+      href: packHref(),
+    });
   }
   if (tailLabel) items.push({ label: tailLabel, href: "" });
   return crumbsHtml(items, escapeHtml);
@@ -2881,44 +2925,58 @@ function packTitleInSection(pack, sectionName) {
   return name;
 }
 
-function packRegionLabel(pack) {
-  const name = String(pack?.name || "");
-  const i = name.indexOf(":");
-  if (i <= 0) return "";
-  return name.slice(0, i).trim();
+const FLAT_SECTION_NAMES = new Set([
+  "The continent",
+  "Flags & outlines",
+  "Sports",
+  "Start here",
+  "Physical features",
+  "Practice & flags",
+  "Quizzes",
+]);
+
+function isRegionSection(sec) {
+  return Boolean(sec?.name) && !FLAT_SECTION_NAMES.has(sec.name) && sec.name !== "Regions";
 }
 
-function clusterPacksByRegion(packs) {
-  const byRegion = new Map();
-  for (const p of packs) {
-    const label = packRegionLabel(p);
-    if (!label) continue;
-    if (!byRegion.has(label)) byRegion.set(label, []);
-    byRegion.get(label).push(p);
+function sectionPacks(group, sec) {
+  return (sec?.packIds || [])
+    .map((id) => (group?.packs || []).find((p) => p.id === id) || packById(id))
+    .filter(Boolean);
+}
+
+function sectionForPack(group, packId) {
+  if (!group || !packId) return null;
+  return (group.sections || []).find((s) => (s.packIds || []).includes(packId)) || null;
+}
+
+function sectionBySlug(group, slug) {
+  if (!group || !slug) return null;
+  return (group.sections || []).find((s) => toSlug(s.name) === slug) || null;
+}
+
+function activeRegionSection() {
+  if (isRegionSection(geo.section)) return geo.section;
+  if (geo.pack && geo.group) {
+    const sec = sectionForPack(geo.group, geo.pack.id);
+    if (isRegionSection(sec)) return sec;
   }
-  const clustered = new Set();
-  const parents = [];
-  const rest = [];
-  for (const p of packs) {
-    if (clustered.has(p.id)) continue;
-    const label = packRegionLabel(p);
-    const group = label ? byRegion.get(label) : null;
-    if (group && group.length > 1) {
-      parents.push({ name: label, packs: group });
-      for (const item of group) clustered.add(item.id);
-    } else {
-      rest.push(p);
-      clustered.add(p.id);
-    }
-  }
-  return { parents, rest };
+  return null;
+}
+
+function sectionCardBlurb(sec, packs) {
+  if (sec.blurb) return sec.blurb;
+  const titles = packs.map((p) => packTitleInSection(p, sec.name)).filter(Boolean);
+  if (!titles.length) return "Quizzes and maps for this region.";
+  return titles.join(" · ");
 }
 
 function packCardHtml(p, groupId, sectionName) {
   const gid = groupId || geo.group?.id || groupForPack(p.id)?.id;
+  const g = gid ? geo.groups.find((row) => row.id === gid) || geo.group : geo.group;
   const title = packTitleInSection(p, sectionName);
   return `
-    <a class="geo-pack-card" href="${gid ? href(["geography", gid, p.id]) : href(["geography", p.id])}">
+    <a class="geo-pack-card" href="${packHref(p, g)}">
       <h3>${escapeHtml(title)}</h3>
       <p>${escapeHtml(p.blurb)}</p>
       <span class="meta">${p.itemCount} places · ${(p.modes || [])
@@ -2927,17 +2985,47 @@ function packCardHtml(p, groupId, sectionName) {
     </a>`;
 }
 
-function regionParentHtml(region, groupId) {
-  const slug = toSlug(region.name);
+function regionCardHtml(sec, group) {
+  const packs = sectionPacks(group, sec);
+  const n = packs.length;
   return `
-    <article class="geo-region-parent" id="geo-region-${escapeHtml(slug)}">
-      <h3 class="geo-region-parent-title">
-        <a class="geo-section-link" href="${href(["geography", groupId, slug])}">${escapeHtml(region.name)}</a>
+    <a class="geo-continent-card" href="${href(["geography", group.id, toSlug(sec.name)])}">
+      <h3>${escapeHtml(sec.name)}</h3>
+      <p>${escapeHtml(sectionCardBlurb(sec, packs))}</p>
+      <span class="meta">${n} quiz${n === 1 ? "" : "zes"}</span>
+    </a>`;
+}
+
+function sectionBlockHtml(sec, group) {
+  const packs = sectionPacks(group, sec);
+  if (!packs.length) return "";
+  const slug = toSlug(sec.name);
+  const lede = sec.blurb
+    ? `<p class="geo-section-lede">${escapeHtml(sec.blurb)}</p>`
+    : "";
+  return `
+    <section class="geo-group" id="geo-sec-${escapeHtml(slug)}">
+      <h3 class="geo-group-title">
+        <a class="geo-section-link" href="${href(["geography", group.id, slug])}">${escapeHtml(sec.name)}</a>
       </h3>
+      ${lede}
       <div class="geo-pack-grid">
-        ${region.packs.map((p) => packCardHtml(p, groupId, region.name)).join("")}
+        ${packs.map((p) => packCardHtml(p, group.id, sec.name)).join("")}
       </div>
-    </article>`;
+    </section>`;
+}
+
+function regionsBlockHtml(regions, group) {
+  if (!regions.length) return "";
+  return `
+    <section class="geo-group geo-group--regions" id="geo-sec-regions">
+      <h3 class="geo-group-title">
+        <a class="geo-section-link" href="${href(["geography", group.id, "regions"])}">Regions</a>
+      </h3>
+      <div class="geo-continent-grid">
+        ${regions.map((sec) => regionCardHtml(sec, group)).join("")}
+      </div>
+    </section>`;
 }
 
 function scrollPageTop() {
@@ -2946,6 +3034,7 @@ function scrollPageTop() {
 
 function renderHub() {
   geo.group = null;
+  geo.section = null;
   geo.pack = null;
   geo.mode = null;
   scrollPageTop();
@@ -2970,11 +3059,20 @@ function renderGroup() {
     renderHub();
     return;
   }
+  geo.section = null;
   scrollPageTop();
   const sections =
     g.sections?.length > 0
       ? g.sections
       : [{ name: "Quizzes", packIds: (g.packs || []).map((p) => p.id) }];
+  const firstRegion = sections.findIndex(isRegionSection);
+  const before = sections.filter(
+    (sec, i) => !isRegionSection(sec) && (firstRegion < 0 || i < firstRegion)
+  );
+  const regions = sections.filter(isRegionSection);
+  const after = sections.filter(
+    (sec, i) => !isRegionSection(sec) && firstRegion >= 0 && i > firstRegion
+  );
   geo.root.innerHTML = `
     <div class="geo-shell">
       ${geoCrumbs()}
@@ -2985,52 +3083,36 @@ function renderGroup() {
           <p class="lede">${escapeHtml(g.blurb || "Map quizzes by region.")}</p>
         </div>
       </div>
-      ${sections
-        .map((sec) => {
-          const packs = (sec.packIds || [])
-            .map((id) => (g.packs || []).find((p) => p.id === id) || packById(id))
-            .filter(Boolean);
-          if (!packs.length) return "";
-          const slug = toSlug(sec.name);
-          const lede = sec.blurb
-            ? `<p class="geo-section-lede">${escapeHtml(sec.blurb)}</p>`
-            : "";
-          if (sec.name === "Regions") {
-            const { parents, rest } = clusterPacksByRegion(packs);
-            return `
-            <section class="geo-group geo-group--regions" id="geo-sec-${escapeHtml(slug)}">
-              <h3 class="geo-group-title">
-                <a class="geo-section-link" href="${href(["geography", g.id, slug])}">${escapeHtml(sec.name)}</a>
-              </h3>
-              ${lede}
-              ${
-                parents.length
-                  ? `<div class="geo-region-grid">${parents
-                      .map((r) => regionParentHtml(r, g.id))
-                      .join("")}</div>`
-                  : ""
-              }
-              ${
-                rest.length
-                  ? `<div class="geo-pack-grid">${rest
-                      .map((p) => packCardHtml(p, g.id))
-                      .join("")}</div>`
-                  : ""
-              }
-            </section>`;
-          }
-          return `
-            <section class="geo-group" id="geo-sec-${escapeHtml(slug)}">
-              <h3 class="geo-group-title">
-                <a class="geo-section-link" href="${href(["geography", g.id, slug])}">${escapeHtml(sec.name)}</a>
-              </h3>
-              ${lede}
-              <div class="geo-pack-grid">
-                ${packs.map((p) => packCardHtml(p, g.id, sec.name)).join("")}
-              </div>
-            </section>`;
-        })
-        .join("")}
+      ${before.map((sec) => sectionBlockHtml(sec, g)).join("")}
+      ${regionsBlockHtml(regions, g)}
+      ${after.map((sec) => sectionBlockHtml(sec, g)).join("")}
+    </div>`;
+}
+
+function renderRegion(sec) {
+  const g = geo.group;
+  if (!g || !sec) {
+    renderGroup();
+    return;
+  }
+  geo.section = sec;
+  geo.pack = null;
+  geo.mode = null;
+  scrollPageTop();
+  const packs = sectionPacks(g, sec);
+  geo.root.innerHTML = `
+    <div class="geo-shell">
+      ${geoCrumbs()}
+      <div class="geo-head">
+        <div>
+          <p class="speech-kicker">${escapeHtml(g.name)}</p>
+          <h2 class="section-title">${escapeHtml(sec.name)}</h2>
+          <p class="lede">${escapeHtml(sectionCardBlurb(sec, packs))}</p>
+        </div>
+      </div>
+      <div class="geo-pack-grid">
+        ${packs.map((p) => packCardHtml(p, g.id, sec.name)).join("")}
+      </div>
     </div>`;
 }
 
@@ -3135,6 +3217,44 @@ function renderStudy() {
   bindStudy();
 }
 
+function waterFacts(item) {
+  if (!item) return [];
+  const raw =
+    Array.isArray(item.facts) && item.facts.length
+      ? item.facts
+      : item.fact
+        ? [item.fact]
+        : [];
+  const seen = new Set();
+  const out = [];
+  for (const row of raw) {
+    const text = String(row || "").trim();
+    if (!text) continue;
+    const key = foldPlaceName(text);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(text);
+    if (out.length === 3) break;
+  }
+  return out;
+}
+
+function waterFactsHtml(item) {
+  const facts = waterFacts(item);
+  if (!facts.length) return "";
+  if (facts.length === 1) return `<p class="lede">${escapeHtml(facts[0])}</p>`;
+  return `<ul class="geo-water-facts">${facts
+    .map((row) => `<li>${escapeHtml(row)}</li>`)
+    .join("")}</ul>`;
+}
+
+function waterFactsConfirmHtml(item) {
+  if (item?.kind !== "water") return "";
+  return waterFacts(item)
+    .map((row) => `<span class="geo-identity-cap geo-water-fact">${escapeHtml(row)}</span>`)
+    .join("");
+}
+
 function studyDetailHtml(item) {
   if (!item) return `<p class="lede">Select a place.</p>`;
   const flag = item.flag
@@ -3151,7 +3271,7 @@ function studyDetailHtml(item) {
     ${item.abbr ? `<p class="geo-meta-line">Abbreviation <strong>${escapeHtml(item.abbr)}</strong></p>` : ""}
     ${item.city ? `<p class="geo-meta-line">City <strong>${escapeHtml(item.city)}</strong></p>` : ""}
     ${studyRankHtml(item)}
-    ${item.fact ? `<p class="lede">${escapeHtml(item.fact)}</p>` : ""}`;
+    ${waterFactsHtml(item)}`;
 }
 
 function selectStudyItem(id) {
@@ -3466,6 +3586,7 @@ async function openPack(packId) {
 
 export function cleanupGeography() {
   geo.group = null;
+  geo.section = null;
   geo.pack = null;
   geo.mode = null;
   geo.queue = [];
@@ -3492,35 +3613,40 @@ async function ensureIndex() {
 function regionSlugsForGroup(group) {
   const slugs = new Set();
   for (const sec of group.sections || []) {
-    if (sec.name !== "Regions") continue;
-    const packs = (sec.packIds || [])
-      .map((id) => (group.packs || []).find((p) => p.id === id) || packById(id))
-      .filter(Boolean);
-    for (const region of clusterPacksByRegion(packs).parents) {
-      slugs.add(toSlug(region.name));
-    }
+    if (isRegionSection(sec)) slugs.add(toSlug(sec.name));
   }
   return slugs;
+}
+
+function groupHasRegions(group) {
+  return (group?.sections || []).some(isRegionSection);
 }
 
 function isSectionSlug(group, token) {
   if (!group || !token) return false;
   if ((group.packs || []).some((p) => p.id === token)) return false;
+  if (token === "regions" && groupHasRegions(group)) return true;
   if ((group.sections || []).some((s) => toSlug(s.name) === token)) return true;
   return regionSlugsForGroup(group).has(token);
 }
 
-async function showGeographyRoute({ groupId, packId, mode } = {}) {
+async function showGeographyRoute({ groupId, packId, mode, nested } = {}) {
   let group = groupId ? geo.groups.find((g) => g.id === groupId) || null : null;
   let packToken = packId || "";
   let playMode = mode || "";
+  let extra = nested || "";
   let section = "";
 
   if (packToken && !group) group = groupForPack(packToken);
   if (group && packToken && isSectionSlug(group, packToken)) {
     section = packToken;
-    packToken = "";
-    playMode = "";
+    if (playMode && packById(playMode)) {
+      packToken = playMode;
+      playMode = extra;
+    } else {
+      packToken = "";
+      playMode = "";
+    }
   }
   if (packToken && !packById(packToken)) {
     packToken = "";
@@ -3528,23 +3654,35 @@ async function showGeographyRoute({ groupId, packId, mode } = {}) {
   }
 
   geo.group = group;
+  geo.section = section && group ? sectionBySlug(group, section) : null;
 
   if (!packToken) {
     geo.pack = null;
     geo.mode = null;
-    if (group) {
-      renderGroup();
-      if (section) {
-        requestAnimationFrame(() => {
-          geo.root
-            ?.querySelector(
-              `#geo-sec-${CSS.escape(section)}, #geo-region-${CSS.escape(section)}`
-            )
-            ?.scrollIntoView({ block: "start" });
-        });
-      }
-    } else {
+    if (!group) {
       renderHub();
+      return;
+    }
+    if (section === "regions") {
+      renderGroup();
+      requestAnimationFrame(() => {
+        geo.root?.querySelector("#geo-sec-regions")?.scrollIntoView({ block: "start" });
+      });
+      return;
+    }
+    if (geo.section && isRegionSection(geo.section)) {
+      renderRegion(geo.section);
+      return;
+    }
+    renderGroup();
+    if (section) {
+      requestAnimationFrame(() => {
+        geo.root
+          ?.querySelector(
+            `#geo-sec-${CSS.escape(section)}, #geo-region-${CSS.escape(section)}`
+          )
+          ?.scrollIntoView({ block: "start" });
+      });
     }
     return;
   }
@@ -3567,6 +3705,10 @@ async function showGeographyRoute({ groupId, packId, mode } = {}) {
     await loadPack(meta);
   }
   geo.group = group || groupForPack(packToken) || geo.group;
+  if (!geo.section && geo.group) {
+    const fromPack = sectionForPack(geo.group, packToken);
+    if (isRegionSection(fromPack)) geo.section = fromPack;
+  }
 
   if (playMode && (geo.pack.modes || []).includes(playMode)) {
     startMode(playMode);
@@ -3576,11 +3718,11 @@ async function showGeographyRoute({ groupId, packId, mode } = {}) {
   renderPackModes();
 }
 
-export async function renderGeography({ els, groupId, packId, mode } = {}) {
+export async function renderGeography({ els, groupId, packId, mode, nested } = {}) {
   geo.root = els.geography;
   try {
     await ensureIndex();
-    await showGeographyRoute({ groupId, packId, mode });
+    await showGeographyRoute({ groupId, packId, mode, nested });
   } catch (err) {
     geo.root.innerHTML = `<p class="error">${escapeHtml(err.message)}</p>`;
   }
@@ -3599,8 +3741,15 @@ export function geographyGoBack() {
   }
   if (geo.pack) {
     geo.pack = null;
-    if (geo.group) renderGroup();
+    const region = activeRegionSection();
+    if (region && geo.group) renderRegion(region);
+    else if (geo.group) renderGroup();
     else renderHub();
+    return true;
+  }
+  if (geo.section && geo.group) {
+    geo.section = null;
+    renderGroup();
     return true;
   }
   if (geo.group) {

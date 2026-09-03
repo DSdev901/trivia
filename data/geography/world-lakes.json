@@ -14,6 +14,10 @@
       "lon": 60,
       "x": 647.8,
       "y": 113.3,
+      "facts": [
+        "Once a great lake; now largely dried.",
+        "Split between Kazakhstan and Uzbekistan."
+      ],
       "country": "Kazakhstan"
     },
     {
@@ -25,17 +29,26 @@
       "lon": 50.5,
       "x": 626.4,
       "y": 123.3,
+      "facts": [
+        "Largest inland body of water on Earth.",
+        "A saline lake, not an ocean."
+      ],
       "country": "Kazakhstan"
     },
     {
       "id": "baikal",
       "name": "Lake Baikal",
-      "fact": "Deepest and oldest freshwater lake.",
+      "fact": "World’s deepest freshwater lake.",
       "kind": "water",
       "lat": 53.5,
       "lon": 108,
       "x": 753.2,
       "y": 87.2,
+      "facts": [
+        "World’s deepest freshwater lake.",
+        "Oldest large freshwater lake on Earth.",
+        "Holds about one-fifth of the world’s unfrozen fresh water."
+      ],
       "country": "Russia"
     },
     {
@@ -47,6 +60,10 @@
       "lon": 74,
       "x": 681.3,
       "y": 110.2,
+      "facts": [
+        "Large endorheic lake in Kazakhstan.",
+        "Half fresh, half saline."
+      ],
       "country": "Kazakhstan"
     },
     {
@@ -58,6 +75,10 @@
       "lon": 14,
       "x": 538,
       "y": 214.9,
+      "facts": [
+        "Shallow African lake; size varies greatly.",
+        "Shared by Chad, Cameroon, Niger, and Nigeria."
+      ],
       "country": "Chad"
     },
     {
@@ -69,6 +90,10 @@
       "lon": -81.2,
       "x": 297.2,
       "y": 122.1,
+      "facts": [
+        "Shallowest of the Great Lakes.",
+        "Forms part of the U.S.–Canada border."
+      ],
       "country": "United States"
     },
     {
@@ -80,6 +105,10 @@
       "lon": -121,
       "x": 241.8,
       "y": 51.1,
+      "facts": [
+        "Largest lake entirely in Canada.",
+        "In the Northwest Territories."
+      ],
       "country": "Canada"
     },
     {
@@ -91,6 +120,10 @@
       "lon": -114,
       "x": 247.6,
       "y": 63.7,
+      "facts": [
+        "Deepest lake in North America.",
+        "Source of the Mackenzie River."
+      ],
       "country": "Canada"
     },
     {
@@ -102,6 +135,10 @@
       "lon": -82.4,
       "x": 296.8,
       "y": 113.9,
+      "facts": [
+        "Second-largest Great Lake by area.",
+        "Includes Georgian Bay."
+      ],
       "country": "Canada"
     },
     {
@@ -113,6 +150,10 @@
       "lon": 31.5,
       "x": 570,
       "y": 65.2,
+      "facts": [
+        "Largest lake in Europe.",
+        "In northwestern Russia, near St. Petersburg."
+      ],
       "country": "Russia"
     },
     {
@@ -124,17 +165,25 @@
       "lon": 34.5,
       "x": 593.7,
       "y": 294,
+      "facts": [
+        "Also called Lake Nyasa; African Rift lake.",
+        "Among the world’s deepest lakes."
+      ],
       "country": "Malawi"
     },
     {
       "id": "michigan",
       "name": "Lake Michigan",
-      "fact": "Third-largest Great Lake by area.",
+      "fact": "Only Great Lake entirely in the United States.",
       "kind": "water",
       "lat": 44,
       "lon": -87,
       "x": 284.6,
       "y": 116.4,
+      "facts": [
+        "Only Great Lake entirely in the United States.",
+        "Third-largest Great Lake by area."
+      ],
       "country": "United States"
     },
     {
@@ -146,6 +195,10 @@
       "lon": -85.4,
       "x": 267.9,
       "y": 219.3,
+      "facts": [
+        "Largest lake in Central America.",
+        "Contains the island of Ometepe."
+      ],
       "country": "Nicaragua"
     },
     {
@@ -157,17 +210,26 @@
       "lon": -77.9,
       "x": 306.8,
       "y": 117.4,
+      "facts": [
+        "Easternmost Great Lake.",
+        "Drains to the Atlantic via the St. Lawrence."
+      ],
       "country": "Canada"
     },
     {
       "id": "superior",
       "name": "Lake Superior",
-      "fact": "Largest freshwater lake by area.",
+      "fact": "Largest freshwater lake by surface area.",
       "kind": "water",
       "lat": 47.7,
       "lon": -87.5,
       "x": 287.5,
       "y": 104.9,
+      "facts": [
+        "Largest freshwater lake by surface area.",
+        "Largest of the Great Lakes.",
+        "Largest freshwater lake by area."
+      ],
       "country": "United States"
     },
     {
@@ -179,6 +241,10 @@
       "lon": 29.8,
       "x": 581.3,
       "y": 276.6,
+      "facts": [
+        "Longest freshwater lake; second-deepest.",
+        "An African Rift lake shared by four countries."
+      ],
       "country": "Tanzania"
     },
     {
@@ -190,6 +256,10 @@
       "lon": -69.4,
       "x": 312.4,
       "y": 306.1,
+      "facts": [
+        "Highest large navigable lake; Andes.",
+        "Shared by Peru and Bolivia."
+      ],
       "country": "Peru"
     },
     {
@@ -201,6 +271,10 @@
       "lon": 104.1,
       "x": 782.5,
       "y": 215.2,
+      "facts": [
+        "Southeast Asia’s largest freshwater lake.",
+        "Swells dramatically in the Mekong flood."
+      ],
       "country": "Cambodia"
     },
     {
@@ -212,6 +286,10 @@
       "lon": 33,
       "x": 590.2,
       "y": 259.2,
+      "facts": [
+        "Largest lake in Africa by area.",
+        "Source of the White Nile."
+      ],
       "country": "Uganda"
     },
     {
@@ -223,6 +301,10 @@
       "lon": -97.5,
       "x": 269.9,
       "y": 90.2,
+      "facts": [
+        "Large prairie lake in Manitoba.",
+        "Twelfth-largest freshwater lake."
+      ],
       "country": "Canada"
     }
   ]

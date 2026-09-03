@@ -269,15 +269,15 @@ const SECTIONS = {
   "north-america": [
     {
       name: "The continent",
-      packIds: ["na-countries", "na-capitals", "na-physical", "na-lakes", "great-lakes"],
+      packIds: ["na-countries", "na-capitals", "na-physical", "na-rivers", "na-lakes", "great-lakes"],
     },
     {
       name: "Northern America",
-      packIds: ["northern-america-countries", "northern-america-capitals"],
+      packIds: ["northern-america-countries", "northern-america-capitals", "northern-america-rivers", "northern-america-lakes"],
     },
     {
       name: "Central America",
-      packIds: ["central-america-countries", "central-america-capitals"],
+      packIds: ["central-america-countries", "central-america-capitals", "central-america-rivers", "central-america-lakes"],
     },
     {
       name: "Caribbean",
@@ -286,6 +286,8 @@ const SECTIONS = {
         "caribbean-capitals",
         "caribbean-flags",
         "caribbean-outlines",
+        "caribbean-rivers",
+        "caribbean-lakes",
       ],
     },
     {
@@ -296,6 +298,7 @@ const SECTIONS = {
         "canada-cities-difficult",
         "canada-landmarks",
         "canada-rivers",
+        "canada-lakes",
         "canada-atlantic",
         "canada-east",
         "canada-prairies",
@@ -312,6 +315,7 @@ const SECTIONS = {
         "us-cities-difficult",
         "us-landmarks",
         "us-rivers",
+        "us-lakes",
         "us-northeast",
         "us-midwest",
         "us-south",
@@ -329,9 +333,9 @@ const SECTIONS = {
   "south-america": [
     {
       name: "The continent",
-      packIds: ["sa-countries", "sa-capitals", "sa-cities", "sa-cities-difficult", "sa-landmarks", "sa-physical"],
+      packIds: ["sa-countries", "sa-capitals", "sa-cities", "sa-cities-difficult", "sa-landmarks", "sa-physical", "sa-rivers", "sa-lakes"],
     },
-    { name: "Latin America", packIds: ["latin-america-countries"] },
+    { name: "Latin America", packIds: ["latin-america-countries", "latin-america-rivers", "latin-america-lakes"] },
     { name: "Flags & outlines", packIds: ["sa-flags", "sa-outlines"] },
   ],
   europe: [
@@ -345,23 +349,24 @@ const SECTIONS = {
         "europe-landmarks",
         "europe-physical",
         "europe-rivers",
+        "europe-lakes",
       ],
     },
     {
       name: "Northern Europe",
-      packIds: ["northern-europe-countries", "northern-europe-capitals"],
+      packIds: ["northern-europe-countries", "northern-europe-capitals", "northern-europe-rivers", "northern-europe-lakes"],
     },
     {
       name: "Western Europe",
-      packIds: ["western-europe-countries", "western-europe-capitals", "western-europe-flags"],
+      packIds: ["western-europe-countries", "western-europe-capitals", "western-europe-flags", "western-europe-rivers", "western-europe-lakes"],
     },
     {
       name: "Eastern Europe",
-      packIds: ["eastern-europe-countries", "eastern-europe-capitals", "eastern-europe-flags"],
+      packIds: ["eastern-europe-countries", "eastern-europe-capitals", "eastern-europe-flags", "eastern-europe-rivers", "eastern-europe-lakes"],
     },
     {
       name: "Southern Europe",
-      packIds: ["southern-europe-countries", "southern-europe-capitals"],
+      packIds: ["southern-europe-countries", "southern-europe-capitals", "southern-europe-rivers", "southern-europe-lakes"],
     },
     { name: "The Nordic Countries", packIds: ["nordic-countries"] },
     { name: "European Union", packIds: ["eu-countries"] },
@@ -380,27 +385,29 @@ const SECTIONS = {
         "africa-cities-difficult",
         "africa-landmarks",
         "africa-physical",
+        "africa-rivers",
+        "africa-lakes",
       ],
     },
     {
       name: "Northern Africa",
-      packIds: ["northern-africa-countries", "northern-africa-capitals"],
+      packIds: ["northern-africa-countries", "northern-africa-capitals", "northern-africa-rivers", "northern-africa-lakes"],
     },
     {
       name: "Western Africa",
-      packIds: ["western-africa-countries", "western-africa-capitals"],
+      packIds: ["western-africa-countries", "western-africa-capitals", "western-africa-rivers", "western-africa-lakes"],
     },
     {
       name: "Central Africa",
-      packIds: ["central-africa-countries", "central-africa-capitals"],
+      packIds: ["central-africa-countries", "central-africa-capitals", "central-africa-rivers", "central-africa-lakes"],
     },
     {
       name: "Eastern Africa",
-      packIds: ["eastern-africa-countries", "eastern-africa-capitals"],
+      packIds: ["eastern-africa-countries", "eastern-africa-capitals", "eastern-africa-rivers", "eastern-africa-lakes"],
     },
     {
       name: "Southern Africa",
-      packIds: ["southern-africa-countries", "southern-africa-capitals"],
+      packIds: ["southern-africa-countries", "southern-africa-capitals", "southern-africa-rivers", "southern-africa-lakes"],
     },
     {
       name: "Africa North Of the Equator",
@@ -415,11 +422,11 @@ const SECTIONS = {
   asia: [
     {
       name: "The continent",
-      packIds: ["asia-countries", "asia-capitals", "asia-cities", "asia-cities-difficult", "asia-landmarks", "asia-physical"],
+      packIds: ["asia-countries", "asia-capitals", "asia-cities", "asia-cities-difficult", "asia-landmarks", "asia-physical", "asia-rivers", "asia-lakes"],
     },
     {
       name: "East Asia",
-      packIds: ["east-asia-countries", "east-asia-capitals"],
+      packIds: ["east-asia-countries", "east-asia-capitals", "east-asia-rivers", "east-asia-lakes"],
     },
     {
       name: "Southeast Asia",
@@ -427,19 +434,21 @@ const SECTIONS = {
         "southeast-asia-countries",
         "southeast-asia-capitals",
         "southeast-asia-flags",
+        "southeast-asia-rivers",
+        "southeast-asia-lakes",
       ],
     },
     {
       name: "South Asia",
-      packIds: ["south-asia-countries", "south-asia-capitals", "south-asia-flags"],
+      packIds: ["south-asia-countries", "south-asia-capitals", "south-asia-flags", "south-asia-rivers", "south-asia-lakes"],
     },
     {
       name: "Central Asia",
-      packIds: ["central-asia-countries", "central-asia-capitals"],
+      packIds: ["central-asia-countries", "central-asia-capitals", "central-asia-rivers", "central-asia-lakes"],
     },
     {
       name: "The Middle East",
-      packIds: ["middle-east-countries", "middle-east-capitals", "middle-east-flags"],
+      packIds: ["middle-east-countries", "middle-east-capitals", "middle-east-flags", "middle-east-rivers", "middle-east-lakes"],
     },
     {
       name: "The Middle East and North Africa",
@@ -458,6 +467,8 @@ const SECTIONS = {
         "oceania-capitals",
         "oceania-territories",
         "oceania-territories-capitals",
+        "oceania-rivers",
+        "oceania-lakes",
       ],
     },
     {
@@ -469,6 +480,8 @@ const SECTIONS = {
         "australia-states",
         "australia-surrounding",
         "australia-physical",
+        "australia-rivers",
+        "australia-lakes",
       ],
     },
     { name: "Melanesia", packIds: ["melanesia-countries"] },

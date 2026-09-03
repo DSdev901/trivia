@@ -14,6 +14,12 @@
       "lon": -60,
       "x": 336,
       "y": 265.5,
+      "facts": [
+        "Largest river by discharge.",
+        "Longest river in South America.",
+        "Drains the Amazon rainforest."
+      ],
+      "waterway": "Amazonas",
       "country": "Brazil"
     },
     {
@@ -24,7 +30,10 @@
       "lat": -20,
       "lon": -68,
       "x": 317.5,
-      "y": 319.4
+      "y": 319.4,
+      "facts": [
+        "Longest continental mountain range on Earth."
+      ]
     },
     {
       "id": "antarctica",
@@ -34,7 +43,10 @@
       "lat": -80,
       "lon": 20,
       "x": 537,
-      "y": 496.6
+      "y": 496.6,
+      "facts": [
+        "Earth’s southernmost continent."
+      ]
     },
     {
       "id": "arctic-ocean",
@@ -44,7 +56,10 @@
       "lat": 82,
       "lon": 0,
       "x": 500,
-      "y": 11.1
+      "y": 11.1,
+      "facts": [
+        "Smallest and shallowest ocean."
+      ]
     },
     {
       "id": "atlantic-ocean",
@@ -54,7 +69,10 @@
       "lat": 20,
       "lon": -40,
       "x": 392.7,
-      "y": 192.6
+      "y": 192.6,
+      "facts": [
+        "Ocean between the Americas, Europe, and Africa."
+      ]
     },
     {
       "id": "danube",
@@ -65,6 +83,13 @@
       "lon": 19.5,
       "x": 548,
       "y": 112.7,
+      "facts": [
+        "Europe’s second-longest river.",
+        "Passes four European capitals.",
+        "Forms stretches of several national borders, including Romania–Bulgaria."
+      ],
+      "border": true,
+      "waterway": "Danube",
       "country": "Serbia"
     },
     {
@@ -75,7 +100,10 @@
       "lat": 42.5,
       "lon": 105,
       "x": 761.9,
-      "y": 121.1
+      "y": 121.1,
+      "facts": [
+        "Cold desert across Mongolia and northern China."
+      ]
     },
     {
       "id": "greenland",
@@ -85,7 +113,10 @@
       "lat": 72,
       "lon": -42,
       "x": 415.2,
-      "y": 35
+      "y": 35,
+      "facts": [
+        "World’s largest island."
+      ]
     },
     {
       "id": "himalayas",
@@ -95,7 +126,10 @@
       "lat": 28,
       "lon": 86.9,
       "x": 728.8,
-      "y": 167.2
+      "y": 167.2,
+      "facts": [
+        "Home to Earth’s highest peaks, including Everest."
+      ]
     },
     {
       "id": "indian-ocean",
@@ -105,17 +139,25 @@
       "lat": -15,
       "lon": 80,
       "x": 716.5,
-      "y": 303.5
+      "y": 303.5,
+      "facts": [
+        "Ocean between Africa, Asia, and Australia."
+      ]
     },
     {
       "id": "victoria",
       "name": "Lake Victoria",
-      "fact": "Africa’s largest lake by area.",
+      "fact": "Largest lake in Africa by area.",
       "kind": "water",
       "lat": -1,
       "lon": 33,
       "x": 590.2,
       "y": 259.2,
+      "facts": [
+        "Largest lake in Africa by area.",
+        "Source of the White Nile.",
+        "Africa’s largest lake by area."
+      ],
       "country": "Uganda"
     },
     {
@@ -126,7 +168,10 @@
       "lat": 35,
       "lon": 18,
       "x": 546.3,
-      "y": 144.9
+      "y": 144.9,
+      "facts": [
+        "Sea enclosed by Europe, Africa, and Asia."
+      ]
     },
     {
       "id": "mississippi",
@@ -137,17 +182,27 @@
       "lon": -90,
       "x": 268.3,
       "y": 144.9,
+      "facts": [
+        "Principal river of the central United States.",
+        "Runs from Minnesota to the Gulf of Mexico.",
+        "With the Missouri, among the world’s longest systems."
+      ],
       "country": "United States"
     },
     {
       "id": "niger",
       "name": "Niger",
-      "fact": "Major West African river.",
+      "fact": "Principal river of West Africa.",
       "kind": "water",
       "lat": 16,
       "lon": 4,
       "x": 510.8,
       "y": 205.4,
+      "facts": [
+        "Principal river of West Africa.",
+        "The “Boomerang” river, rising in the Guinea Highlands.",
+        "Major West African river."
+      ],
       "country": "Niger"
     },
     {
@@ -159,6 +214,11 @@
       "lon": 32.5,
       "x": 586,
       "y": 173.6,
+      "facts": [
+        "Often cited as the world’s longest river.",
+        "Flows north through 11 countries.",
+        "Empties into the Mediterranean."
+      ],
       "country": "Egypt"
     },
     {
@@ -169,7 +229,10 @@
       "lat": 5,
       "lon": -150,
       "x": 90.3,
-      "y": 240.2
+      "y": 240.2,
+      "facts": [
+        "Earth’s largest ocean."
+      ]
     },
     {
       "id": "persian-gulf",
@@ -179,7 +242,10 @@
       "lat": 26.5,
       "lon": 52,
       "x": 637.5,
-      "y": 172
+      "y": 172,
+      "facts": [
+        "Arm of the Indian Ocean between Iran and Arabia."
+      ]
     },
     {
       "id": "rockies",
@@ -189,7 +255,10 @@
       "lat": 45,
       "lon": -113,
       "x": 221.6,
-      "y": 113.3
+      "y": 113.3,
+      "facts": [
+        "Major mountain range of western North America."
+      ]
     },
     {
       "id": "sahara",
@@ -199,7 +268,10 @@
       "lat": 23,
       "lon": 10,
       "x": 526.7,
-      "y": 183.1
+      "y": 183.1,
+      "facts": [
+        "Largest hot desert on Earth."
+      ]
     },
     {
       "id": "siberia",
@@ -209,7 +281,10 @@
       "lat": 62,
       "lon": 90,
       "x": 698.5,
-      "y": 62.3
+      "y": 62.3,
+      "facts": [
+        "Vast region of northern Asia."
+      ]
     },
     {
       "id": "gibraltar",
@@ -219,7 +294,10 @@
       "lat": 35.97,
       "lon": -5.58,
       "x": 485.7,
-      "y": 141.8
+      "y": 141.8,
+      "facts": [
+        "Channel between Spain and Morocco."
+      ]
     },
     {
       "id": "ural",
@@ -229,7 +307,10 @@
       "lat": 60,
       "lon": 60,
       "x": 634.4,
-      "y": 68.1
+      "y": 68.1,
+      "facts": [
+        "Traditional boundary between Europe and Asia."
+      ]
     },
     {
       "id": "yangtze",
@@ -240,6 +321,12 @@
       "lon": 112,
       "x": 792.3,
       "y": 157.6,
+      "facts": [
+        "Longest river in Asia.",
+        "China’s principal river, the Chang Jiang.",
+        "Empties into the East China Sea at Shanghai."
+      ],
+      "waterway": "Chang Jiang",
       "country": "China"
     }
   ]

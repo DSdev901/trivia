@@ -1,0 +1,124 @@
+{
+  "id": "eastern-europe-rivers",
+  "name": "Eastern Europe: Rivers",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "volga",
+      "name": "Volga",
+      "fact": "Europe’s longest river.",
+      "kind": "water",
+      "lat": 56,
+      "lon": 47,
+      "x": 608.4,
+      "y": 79.8,
+      "facts": [
+        "Europe’s longest river.",
+        "Empties into the Caspian Sea."
+      ],
+      "waterway": "Volga",
+      "country": "Russia"
+    },
+    {
+      "id": "danube",
+      "name": "Danube",
+      "fact": "Europe’s second-longest river.",
+      "kind": "water",
+      "lat": 45.2,
+      "lon": 19.5,
+      "x": 548,
+      "y": 112.7,
+      "facts": [
+        "Europe’s second-longest river.",
+        "Passes four European capitals.",
+        "Forms stretches of several national borders, including Romania–Bulgaria."
+      ],
+      "border": true,
+      "waterway": "Danube",
+      "country": "Serbia"
+    },
+    {
+      "id": "dnipro",
+      "name": "Dnipro",
+      "fact": "Major river of Ukraine.",
+      "kind": "water",
+      "lat": 49,
+      "lon": 32.5,
+      "x": 578.3,
+      "y": 100.9,
+      "facts": [
+        "Major river of Ukraine.",
+        "The Dnieper, flowing to the Black Sea."
+      ],
+      "waterway": "Dnipro",
+      "country": "Ukraine"
+    },
+    {
+      "id": "vistula",
+      "name": "Vistula",
+      "fact": "Poland’s longest river.",
+      "kind": "water",
+      "lat": 52.2,
+      "lon": 21,
+      "x": 549.6,
+      "y": 91.1,
+      "facts": [
+        "Poland’s longest river.",
+        "Flows through Warsaw to the Baltic."
+      ],
+      "waterway": "Vistula",
+      "country": "Poland"
+    },
+    {
+      "id": "oder",
+      "name": "Oder",
+      "fact": "Border river of Poland and Germany.",
+      "kind": "water",
+      "lat": 52.5,
+      "lon": 14.6,
+      "x": 534.5,
+      "y": 90.2,
+      "facts": [
+        "Border river of Poland and Germany.",
+        "With the Neisse, a major Central European frontier."
+      ],
+      "border": true,
+      "waterway": "Oder",
+      "country": "Germany"
+    },
+    {
+      "id": "don",
+      "name": "Don",
+      "fact": "River of southern Russia.",
+      "kind": "water",
+      "lat": 47.5,
+      "lon": 40.5,
+      "x": 598.4,
+      "y": 105.5,
+      "facts": [
+        "River of southern Russia.",
+        "Empties into the Sea of Azov."
+      ],
+      "waterway": "Don",
+      "country": "Russia"
+    },
+    {
+      "id": "dniester",
+      "name": "Dniester",
+      "fact": "River of Ukraine and Moldova.",
+      "kind": "water",
+      "lat": 47.5,
+      "lon": 29,
+      "x": 570.5,
+      "y": 105.5,
+      "facts": [
+        "River of Ukraine and Moldova.",
+        "Forms stretches of the Moldova–Ukraine border."
+      ],
+      "waterway": "Dniester",
+      "country": "Moldova"
+    }
+  ]
+}

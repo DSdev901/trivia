@@ -1828,6 +1828,7 @@ async function applyRoute() {
       groupId: rest[0] || "",
       packId: rest[1] || "",
       mode: rest[2] || "",
+      nested: rest[3] || "",
     });
     if (seq !== routeSeq) return;
     setPageTitle([category.name, rest[0], rest[1], rest[2]].filter(Boolean));

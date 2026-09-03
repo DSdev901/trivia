@@ -1,0 +1,130 @@
+{
+  "id": "oceania-rivers",
+  "name": "Oceania: Rivers",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "murray",
+      "name": "Murray",
+      "fact": "Australia’s longest river.",
+      "kind": "water",
+      "lat": -34.2,
+      "lon": 142,
+      "x": 866.6,
+      "y": 364.6,
+      "facts": [
+        "Australia’s longest river.",
+        "With the Darling, Australia’s main river system."
+      ],
+      "waterway": "Murray",
+      "country": "Australia"
+    },
+    {
+      "id": "darling-river",
+      "name": "Darling",
+      "fact": "Longest tributary of the Murray.",
+      "kind": "water",
+      "lat": -31,
+      "lon": 144,
+      "x": 875.8,
+      "y": 354.4,
+      "facts": [
+        "Longest tributary of the Murray.",
+        "Together they form Australia’s main river system."
+      ],
+      "waterway": "Darling",
+      "country": "Australia"
+    },
+    {
+      "id": "flinders",
+      "name": "Flinders River",
+      "fact": "Longest river in Queensland.",
+      "kind": "water",
+      "lat": -18.5,
+      "lon": 140.8,
+      "x": 878.9,
+      "y": 314.6,
+      "facts": [
+        "Longest river in Queensland.",
+        "Flows to the Gulf of Carpentaria."
+      ],
+      "country": "Australia"
+    },
+    {
+      "id": "gascoyne",
+      "name": "Gascoyne River",
+      "fact": "Longest river in Western Australia.",
+      "kind": "water",
+      "lat": -24.8,
+      "lon": 114.6,
+      "x": 804.3,
+      "y": 334.7,
+      "facts": [
+        "Longest river in Western Australia.",
+        "An ephemeral river to the Indian Ocean."
+      ],
+      "country": "Australia"
+    },
+    {
+      "id": "victoria-river",
+      "name": "Victoria River",
+      "fact": "Major river of the Northern Territory.",
+      "kind": "water",
+      "lat": -16,
+      "lon": 131,
+      "x": 854,
+      "y": 306.7,
+      "facts": [
+        "Major river of the Northern Territory."
+      ],
+      "country": "Australia"
+    },
+    {
+      "id": "waikato",
+      "name": "Waikato",
+      "fact": "Longest river in New Zealand.",
+      "kind": "water",
+      "lat": -37.4,
+      "lon": 175.2,
+      "x": 946.8,
+      "y": 374.8,
+      "facts": [
+        "Longest river in New Zealand.",
+        "Flows from Lake Taupō to the Tasman Sea."
+      ],
+      "country": "New Zealand"
+    },
+    {
+      "id": "clutha",
+      "name": "Clutha / Mata-Au",
+      "fact": "Longest river in the South Island.",
+      "kind": "water",
+      "lat": -45.8,
+      "lon": 169.5,
+      "x": 915.8,
+      "y": 401.2,
+      "facts": [
+        "Longest river in the South Island.",
+        "New Zealand’s greatest by discharge."
+      ],
+      "country": "New Zealand"
+    },
+    {
+      "id": "sepic",
+      "name": "Sepik",
+      "fact": "Longest river on the island of New Guinea in PNG.",
+      "kind": "water",
+      "lat": -4.2,
+      "lon": 142.5,
+      "x": 889.4,
+      "y": 269.3,
+      "facts": [
+        "Longest river on the island of New Guinea in PNG.",
+        "Flows to the Bismarck Sea."
+      ],
+      "country": "Papua New Guinea"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "central-asia-lakes",
+  "name": "Central Asia: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "caspian",
+      "name": "Caspian Sea",
+      "fact": "Largest inland body of water on Earth.",
+      "kind": "water",
+      "lat": 41.8,
+      "lon": 50.5,
+      "x": 626.4,
+      "y": 123.3,
+      "facts": [
+        "Largest inland body of water on Earth.",
+        "A saline lake, not an ocean."
+      ],
+      "country": "Kazakhstan"
+    },
+    {
+      "id": "aral",
+      "name": "Aral Sea",
+      "fact": "Once a great lake; now largely dried.",
+      "kind": "water",
+      "lat": 45,
+      "lon": 60,
+      "x": 647.8,
+      "y": 113.3,
+      "facts": [
+        "Once a great lake; now largely dried.",
+        "Split between Kazakhstan and Uzbekistan."
+      ],
+      "country": "Kazakhstan"
+    },
+    {
+      "id": "balkhash",
+      "name": "Lake Balkhash",
+      "fact": "Large endorheic lake in Kazakhstan.",
+      "kind": "water",
+      "lat": 46,
+      "lon": 74,
+      "x": 681.3,
+      "y": 110.2,
+      "facts": [
+        "Large endorheic lake in Kazakhstan.",
+        "Half fresh, half saline."
+      ],
+      "country": "Kazakhstan"
+    },
+    {
+      "id": "issyk-kul",
+      "name": "Issyk-Kul",
+      "fact": "Largest lake in Kyrgyzstan.",
+      "kind": "water",
+      "lat": 42.4,
+      "lon": 77.2,
+      "x": 692.6,
+      "y": 121.5,
+      "facts": [
+        "Largest lake in Kyrgyzstan.",
+        "An endorheic alpine lake that never freezes."
+      ],
+      "country": "Kyrgyzstan"
+    },
+    {
+      "id": "zaysan",
+      "name": "Lake Zaysan",
+      "fact": "A large freshwater lake in eastern Kazakhstan.",
+      "kind": "water",
+      "lat": 48,
+      "lon": 83.9,
+      "x": 703.4,
+      "y": 104,
+      "facts": [
+        "A large freshwater lake in eastern Kazakhstan.",
+        "Fed and drained by the Irtysh."
+      ],
+      "country": "Kazakhstan"
+    },
+    {
+      "id": "alakol",
+      "name": "Lake Alakol",
+      "fact": "A saline lake in eastern Kazakhstan.",
+      "kind": "water",
+      "lat": 46.2,
+      "lon": 81.7,
+      "x": 700,
+      "y": 109.6,
+      "facts": [
+        "A saline lake in eastern Kazakhstan.",
+        "Near the Chinese border."
+      ],
+      "country": "Kazakhstan"
+    }
+  ]
+}

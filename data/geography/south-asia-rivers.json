@@ -1,0 +1,116 @@
+{
+  "id": "south-asia-rivers",
+  "name": "South Asia: Rivers",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "ganges",
+      "name": "Ganges",
+      "fact": "Sacred river of the Indian subcontinent.",
+      "kind": "water",
+      "lat": 25.3,
+      "lon": 83,
+      "x": 720.1,
+      "y": 175.8,
+      "facts": [
+        "Sacred river of the Indian subcontinent.",
+        "Joins the Brahmaputra in the world’s largest delta."
+      ],
+      "country": "India"
+    },
+    {
+      "id": "indus",
+      "name": "Indus",
+      "fact": "Principal river of Pakistan.",
+      "kind": "water",
+      "lat": 28.5,
+      "lon": 70,
+      "x": 684.1,
+      "y": 165.6,
+      "facts": [
+        "Principal river of Pakistan.",
+        "Cradle of the Indus Valley civilization."
+      ],
+      "country": "Pakistan"
+    },
+    {
+      "id": "brahmaputra",
+      "name": "Brahmaputra",
+      "fact": "Great river of Tibet, India, and Bangladesh.",
+      "kind": "water",
+      "lat": 26.2,
+      "lon": 92,
+      "x": 743.4,
+      "y": 172.9,
+      "facts": [
+        "Great river of Tibet, India, and Bangladesh.",
+        "Called the Yarlung Tsangpo in Tibet."
+      ],
+      "country": "India"
+    },
+    {
+      "id": "godavari",
+      "name": "Godavari",
+      "fact": "Longest river of peninsular India.",
+      "kind": "water",
+      "lat": 17,
+      "lon": 81.8,
+      "x": 720.7,
+      "y": 202.2,
+      "facts": [
+        "Longest river of peninsular India.",
+        "Flows east to the Bay of Bengal."
+      ],
+      "country": "India"
+    },
+    {
+      "id": "narmada",
+      "name": "Narmada",
+      "fact": "Major west-flowing river of central India.",
+      "kind": "water",
+      "lat": 21.8,
+      "lon": 73.5,
+      "x": 696.5,
+      "y": 186.9,
+      "facts": [
+        "Major west-flowing river of central India.",
+        "Empties into the Arabian Sea."
+      ],
+      "waterway": "Narmada",
+      "country": "India"
+    },
+    {
+      "id": "krishna",
+      "name": "Krishna",
+      "fact": "Major river of southern India.",
+      "kind": "water",
+      "lat": 16.4,
+      "lon": 81,
+      "x": 718.7,
+      "y": 204.1,
+      "facts": [
+        "Major river of southern India.",
+        "Flows across the Deccan to the Bay of Bengal."
+      ],
+      "waterway": "Krishna",
+      "country": "India"
+    },
+    {
+      "id": "yamuna",
+      "name": "Yamuna",
+      "fact": "Longest tributary of the Ganges.",
+      "kind": "water",
+      "lat": 27.2,
+      "lon": 77.8,
+      "x": 705.3,
+      "y": 169.7,
+      "facts": [
+        "Longest tributary of the Ganges.",
+        "Flows past Delhi and Agra."
+      ],
+      "country": "India"
+    }
+  ]
+}

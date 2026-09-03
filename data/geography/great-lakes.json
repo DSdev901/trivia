@@ -8,56 +8,81 @@
     {
       "id": "superior",
       "name": "Lake Superior",
-      "fact": "Largest freshwater lake by surface area in the world.",
+      "fact": "Largest freshwater lake by surface area.",
       "kind": "water",
       "lat": 47.7,
       "lon": -87.5,
       "x": 287.5,
       "y": 104.9,
+      "facts": [
+        "Largest freshwater lake by surface area.",
+        "Largest of the Great Lakes.",
+        "Largest freshwater lake by surface area in the world."
+      ],
       "country": "United States"
     },
     {
       "id": "michigan",
       "name": "Lake Michigan",
-      "fact": "The only Great Lake entirely within the United States.",
+      "fact": "Only Great Lake entirely in the United States.",
       "kind": "water",
       "lat": 44,
       "lon": -87,
       "x": 284.6,
       "y": 116.4,
+      "facts": [
+        "Only Great Lake entirely in the United States.",
+        "Third-largest Great Lake by area.",
+        "The only Great Lake entirely within the United States."
+      ],
       "country": "United States"
     },
     {
       "id": "huron",
       "name": "Lake Huron",
-      "fact": "Includes Georgian Bay; second-largest of the Great Lakes by area.",
+      "fact": "Second-largest Great Lake by area.",
       "kind": "water",
       "lat": 44.8,
       "lon": -82.4,
       "x": 296.8,
       "y": 113.9,
+      "facts": [
+        "Second-largest Great Lake by area.",
+        "Includes Georgian Bay.",
+        "Includes Georgian Bay; second-largest of the Great Lakes by area."
+      ],
       "country": "Canada"
     },
     {
       "id": "erie",
       "name": "Lake Erie",
-      "fact": "Shallowest of the Great Lakes and the warmest in summer.",
+      "fact": "Shallowest of the Great Lakes.",
       "kind": "water",
       "lat": 42.2,
       "lon": -81.2,
       "x": 297.2,
       "y": 122.1,
+      "facts": [
+        "Shallowest of the Great Lakes.",
+        "Forms part of the U.S.–Canada border.",
+        "Shallowest of the Great Lakes and the warmest in summer."
+      ],
       "country": "United States"
     },
     {
       "id": "ontario",
       "name": "Lake Ontario",
-      "fact": "Smallest Great Lake by area; drains to the Atlantic via the St. Lawrence.",
+      "fact": "Easternmost Great Lake.",
       "kind": "water",
       "lat": 43.7,
       "lon": -77.9,
       "x": 306.8,
       "y": 117.4,
+      "facts": [
+        "Easternmost Great Lake.",
+        "Drains to the Atlantic via the St. Lawrence.",
+        "Smallest Great Lake by area; drains to the Atlantic via the St. Lawrence."
+      ],
       "country": "Canada"
     }
   ]

@@ -8,12 +8,19 @@
     {
       "id": "danube",
       "name": "Danube",
-      "fact": "Passes four European capitals.",
+      "fact": "Europe’s second-longest river.",
       "kind": "water",
       "lat": 45.2,
       "lon": 19.5,
       "x": 548,
       "y": 112.7,
+      "facts": [
+        "Europe’s second-longest river.",
+        "Passes four European capitals.",
+        "Forms stretches of several national borders, including Romania–Bulgaria."
+      ],
+      "border": true,
+      "waterway": "Danube",
       "country": "Serbia"
     },
     {
@@ -25,6 +32,9 @@
       "lon": 29,
       "x": 570.5,
       "y": 105.5,
+      "facts": [
+        "River of Ukraine and Moldova."
+      ],
       "country": "Moldova"
     },
     {
@@ -36,6 +46,9 @@
       "lon": 32.5,
       "x": 578.3,
       "y": 100.9,
+      "facts": [
+        "Major river of Ukraine."
+      ],
       "country": "Ukraine"
     },
     {
@@ -47,6 +60,9 @@
       "lon": 40.5,
       "x": 598.4,
       "y": 105.5,
+      "facts": [
+        "River of southern Russia."
+      ],
       "country": "Russia"
     },
     {
@@ -58,6 +74,9 @@
       "lon": 0.3,
       "x": 500.8,
       "y": 124.6,
+      "facts": [
+        "Spain’s longest river entirely in-country."
+      ],
       "country": "Spain"
     },
     {
@@ -69,6 +88,9 @@
       "lon": 12,
       "x": 528.3,
       "y": 90.2,
+      "facts": [
+        "River of Czechia and Germany."
+      ],
       "country": "Germany"
     },
     {
@@ -80,6 +102,9 @@
       "lon": 0.8,
       "x": 501.9,
       "y": 105.9,
+      "facts": [
+        "France’s longest river."
+      ],
       "country": "France"
     },
     {
@@ -91,6 +116,12 @@
       "lon": 14.6,
       "x": 534.5,
       "y": 90.2,
+      "facts": [
+        "Border river of Poland and Germany.",
+        "With the Neisse, a major Central European frontier."
+      ],
+      "border": true,
+      "waterway": "Oder",
       "country": "Germany"
     },
     {
@@ -102,6 +133,9 @@
       "lon": 11,
       "x": 527.1,
       "y": 113.3,
+      "facts": [
+        "Italy’s longest river."
+      ],
       "country": "Italy"
     },
     {
@@ -113,6 +147,13 @@
       "lon": 7,
       "x": 516.8,
       "y": 97.8,
+      "facts": [
+        "Major river of Western Europe.",
+        "Forms much of the France–Germany border.",
+        "Empties into the North Sea in the Netherlands."
+      ],
+      "border": true,
+      "waterway": "Rhine",
       "country": "Germany"
     },
     {
@@ -124,6 +165,9 @@
       "lon": 4.8,
       "x": 511.8,
       "y": 113.9,
+      "facts": [
+        "Flows from the Alps to the Mediterranean."
+      ],
       "country": "France"
     },
     {
@@ -135,6 +179,9 @@
       "lon": 2.3,
       "x": 505.5,
       "y": 101.2,
+      "facts": [
+        "Flows through Paris."
+      ],
       "country": "France"
     },
     {
@@ -146,6 +193,9 @@
       "lon": -8,
       "x": 479.8,
       "y": 130.6,
+      "facts": [
+        "Longest river of the Iberian Peninsula."
+      ],
       "country": "Portugal"
     },
     {
@@ -157,6 +207,9 @@
       "lon": -0.1,
       "x": 499.8,
       "y": 93.3,
+      "facts": [
+        "River of southern England."
+      ],
       "country": "United Kingdom"
     },
     {
@@ -168,6 +221,9 @@
       "lon": 53.5,
       "x": 627,
       "y": 93.3,
+      "facts": [
+        "River along the Europe–Asia boundary."
+      ],
       "country": "Russia"
     },
     {
@@ -179,6 +235,9 @@
       "lon": 21.7,
       "x": 554.3,
       "y": 124,
+      "facts": [
+        "Principal river of North Macedonia."
+      ],
       "country": "North Macedonia"
     },
     {
@@ -190,6 +249,9 @@
       "lon": 21,
       "x": 549.6,
       "y": 91.1,
+      "facts": [
+        "Poland’s longest river."
+      ],
       "country": "Poland"
     },
     {
@@ -201,6 +263,10 @@
       "lon": 47,
       "x": 608.4,
       "y": 79.8,
+      "facts": [
+        "Europe’s longest river.",
+        "Empties into the Caspian Sea."
+      ],
       "country": "Russia"
     }
   ]

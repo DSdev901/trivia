@@ -14,6 +14,9 @@
       "lon": -95,
       "x": 255.8,
       "y": 143.6,
+      "facts": [
+        "Major Mississippi tributary of the southern plains."
+      ],
       "country": "United States"
     },
     {
@@ -25,6 +28,12 @@
       "lon": -85,
       "x": 279.3,
       "y": 152.8,
+      "facts": [
+        "Forms part of the Georgia–Alabama border.",
+        "Becomes the Apalachicola in Florida."
+      ],
+      "border": true,
+      "waterway": "Chattahoochee",
       "country": "United States"
     },
     {
@@ -36,6 +45,12 @@
       "lon": -113.8,
       "x": 208.3,
       "y": 141.4,
+      "facts": [
+        "Carved the Grand Canyon.",
+        "Lower reaches form part of the U.S.–Mexico border."
+      ],
+      "border": true,
+      "waterway": "Colorado",
       "country": "United States"
     },
     {
@@ -47,6 +62,9 @@
       "lon": -120.2,
       "x": 205,
       "y": 111.1,
+      "facts": [
+        "Great river of the Pacific Northwest."
+      ],
       "country": "United States"
     },
     {
@@ -58,17 +76,25 @@
       "lon": -74.8,
       "x": 311.5,
       "y": 128.4,
+      "facts": [
+        "River of the Mid-Atlantic states."
+      ],
       "country": "United States"
     },
     {
       "id": "mississippi",
       "name": "Mississippi River",
-      "fact": "From Minnesota to the Gulf of Mexico.",
+      "fact": "Principal river of the central United States.",
       "kind": "water",
       "lat": 35,
       "lon": -90,
       "x": 268.3,
       "y": 144.9,
+      "facts": [
+        "Principal river of the central United States.",
+        "Runs from Minnesota to the Gulf of Mexico.",
+        "With the Missouri, among the world’s longest systems."
+      ],
       "country": "United States"
     },
     {
@@ -80,17 +106,27 @@
       "lon": -98,
       "x": 255,
       "y": 122.7,
+      "facts": [
+        "Longest river in the United States."
+      ],
       "country": "United States"
     },
     {
       "id": "ohio",
       "name": "Ohio River",
-      "fact": "Forms much of the Midwest–South boundary.",
+      "fact": "Major eastern tributary of the Mississippi.",
       "kind": "water",
       "lat": 38.5,
       "lon": -85,
       "x": 284.2,
       "y": 133.8,
+      "facts": [
+        "Major eastern tributary of the Mississippi.",
+        "Forms much of the Midwest–South state line.",
+        "Forms much of the Midwest–South boundary."
+      ],
+      "border": true,
+      "waterway": "Ohio",
       "country": "United States"
     },
     {
@@ -102,6 +138,9 @@
       "lon": -77.1,
       "x": 304.6,
       "y": 132.5,
+      "facts": [
+        "Flows past Washington, D.C."
+      ],
       "country": "United States"
     },
     {
@@ -113,6 +152,13 @@
       "lon": -103,
       "x": 229.6,
       "y": 164,
+      "facts": [
+        "Part of the U.S.–Mexico border.",
+        "Called the Río Bravo in Mexico.",
+        "Runs from Colorado to the Gulf of Mexico."
+      ],
+      "border": true,
+      "waterway": "Rio Grande",
       "country": "Mexico"
     },
     {
@@ -124,17 +170,27 @@
       "lon": -121.8,
       "x": 191.5,
       "y": 131.9,
+      "facts": [
+        "Principal river of California’s Central Valley."
+      ],
       "country": "United States"
     },
     {
       "id": "st-lawrence",
       "name": "Saint Lawrence River",
-      "fact": "Outlet of the Great Lakes.",
+      "fact": "Drains the Great Lakes to the Atlantic.",
       "kind": "water",
       "lat": 44.8,
       "lon": -75,
       "x": 315.1,
       "y": 113.9,
+      "facts": [
+        "Drains the Great Lakes to the Atlantic.",
+        "Forms part of the U.S.–Canada border.",
+        "Outlet of the Great Lakes."
+      ],
+      "border": true,
+      "waterway": "St. Lawrence",
       "country": "United States"
     },
     {
@@ -146,6 +202,9 @@
       "lon": -117,
       "x": 211,
       "y": 114.9,
+      "facts": [
+        "Columbia’s largest tributary."
+      ],
       "country": "United States"
     },
     {
@@ -157,6 +216,9 @@
       "lon": -87,
       "x": 276.5,
       "y": 143.3,
+      "facts": [
+        "Major river of the American South."
+      ],
       "country": "United States"
     }
   ]

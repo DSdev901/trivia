@@ -1,0 +1,129 @@
+{
+  "id": "africa-lakes",
+  "name": "Africa: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "victoria",
+      "name": "Lake Victoria",
+      "fact": "Largest lake in Africa by area.",
+      "kind": "water",
+      "lat": -1,
+      "lon": 33,
+      "x": 590.2,
+      "y": 259.2,
+      "facts": [
+        "Largest lake in Africa by area.",
+        "Source of the White Nile."
+      ],
+      "country": "Uganda"
+    },
+    {
+      "id": "tanganyika",
+      "name": "Lake Tanganyika",
+      "fact": "Longest freshwater lake; second-deepest.",
+      "kind": "water",
+      "lat": -6.5,
+      "lon": 29.8,
+      "x": 581.3,
+      "y": 276.6,
+      "facts": [
+        "Longest freshwater lake; second-deepest.",
+        "An African Rift lake shared by four countries."
+      ],
+      "country": "Tanzania"
+    },
+    {
+      "id": "malawi",
+      "name": "Lake Malawi",
+      "fact": "Also called Lake Nyasa; African Rift lake.",
+      "kind": "water",
+      "lat": -12,
+      "lon": 34.5,
+      "x": 593.7,
+      "y": 294,
+      "facts": [
+        "Also called Lake Nyasa; African Rift lake.",
+        "Among the world’s deepest lakes."
+      ],
+      "country": "Malawi"
+    },
+    {
+      "id": "chad",
+      "name": "Lake Chad",
+      "fact": "Shallow African lake; size varies greatly.",
+      "kind": "water",
+      "lat": 13,
+      "lon": 14,
+      "x": 538,
+      "y": 214.9,
+      "facts": [
+        "Shallow African lake; size varies greatly.",
+        "Shared by Chad, Cameroon, Niger, and Nigeria."
+      ],
+      "country": "Chad"
+    },
+    {
+      "id": "turkana",
+      "name": "Lake Turkana",
+      "fact": "Largest desert lake.",
+      "kind": "water",
+      "lat": 3.5,
+      "lon": 36.1,
+      "x": 598.7,
+      "y": 245,
+      "facts": [
+        "Largest desert lake.",
+        "In Kenya’s Rift Valley, with a shore in Ethiopia."
+      ],
+      "country": "Kenya"
+    },
+    {
+      "id": "kariba",
+      "name": "Lake Kariba",
+      "fact": "One of the world’s largest reservoirs by volume.",
+      "kind": "water",
+      "lat": -17,
+      "lon": 27.8,
+      "x": 575,
+      "y": 309.9,
+      "facts": [
+        "One of the world’s largest reservoirs by volume.",
+        "On the Zambezi between Zambia and Zimbabwe."
+      ],
+      "country": "Zambia"
+    },
+    {
+      "id": "nalubaale",
+      "name": "Owen Falls / Lake Victoria Nile",
+      "fact": "The White Nile’s outlet from Lake Victoria.",
+      "kind": "water",
+      "lat": 0.45,
+      "lon": 33.2,
+      "x": 590.8,
+      "y": 254.6,
+      "facts": [
+        "The White Nile’s outlet from Lake Victoria.",
+        "At Jinja, Uganda."
+      ],
+      "country": "Uganda"
+    },
+    {
+      "id": "tana",
+      "name": "Lake Tana",
+      "fact": "Largest lake in Ethiopia.",
+      "kind": "water",
+      "lat": 12,
+      "lon": 37.3,
+      "x": 601.3,
+      "y": 218,
+      "facts": [
+        "Largest lake in Ethiopia.",
+        "Source of the Blue Nile."
+      ],
+      "country": "Ethiopia"
+    }
+  ]
+}

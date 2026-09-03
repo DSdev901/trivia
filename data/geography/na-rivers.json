@@ -1,0 +1,159 @@
+{
+  "id": "na-rivers",
+  "name": "North America: Rivers",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "mississippi",
+      "name": "Mississippi",
+      "fact": "Principal river of the central United States.",
+      "kind": "water",
+      "lat": 35,
+      "lon": -90,
+      "x": 268.3,
+      "y": 144.9,
+      "facts": [
+        "Principal river of the central United States.",
+        "Runs from Minnesota to the Gulf of Mexico.",
+        "With the Missouri, among the world’s longest systems."
+      ],
+      "waterway": "Mississippi",
+      "country": "United States"
+    },
+    {
+      "id": "mackenzie",
+      "name": "Mackenzie",
+      "fact": "Canada’s longest river system.",
+      "kind": "water",
+      "lat": 67.5,
+      "lon": -130,
+      "x": 226.2,
+      "y": 47,
+      "facts": [
+        "Canada’s longest river system.",
+        "Flows to the Arctic Ocean."
+      ],
+      "waterway": "Mackenzie",
+      "country": "Canada"
+    },
+    {
+      "id": "st-lawrence",
+      "name": "Saint Lawrence",
+      "fact": "Drains the Great Lakes to the Atlantic.",
+      "kind": "water",
+      "lat": 47.5,
+      "lon": -69.5,
+      "x": 331.1,
+      "y": 105.5,
+      "facts": [
+        "Drains the Great Lakes to the Atlantic.",
+        "Forms part of the U.S.–Canada border."
+      ],
+      "border": true,
+      "waterway": "St. Lawrence",
+      "country": "Canada"
+    },
+    {
+      "id": "rio-grande",
+      "name": "Rio Grande",
+      "fact": "Part of the U.S.–Mexico border.",
+      "kind": "water",
+      "lat": 29,
+      "lon": -103,
+      "x": 229.6,
+      "y": 164,
+      "facts": [
+        "Part of the U.S.–Mexico border.",
+        "Called the Río Bravo in Mexico.",
+        "Runs from Colorado to the Gulf of Mexico."
+      ],
+      "border": true,
+      "waterway": "Rio Grande",
+      "country": "Mexico"
+    },
+    {
+      "id": "colorado",
+      "name": "Colorado River",
+      "fact": "Carved the Grand Canyon.",
+      "kind": "water",
+      "lat": 36.1,
+      "lon": -113.8,
+      "x": 208.3,
+      "y": 141.4,
+      "facts": [
+        "Carved the Grand Canyon.",
+        "Lower reaches form part of the U.S.–Mexico border."
+      ],
+      "border": true,
+      "waterway": "Colorado",
+      "country": "United States"
+    },
+    {
+      "id": "yukon",
+      "name": "Yukon",
+      "fact": "Major river of Alaska and Yukon.",
+      "kind": "water",
+      "lat": 65,
+      "lon": -145,
+      "x": 188,
+      "y": 53.9,
+      "facts": [
+        "Major river of Alaska and Yukon.",
+        "Flows to the Bering Sea."
+      ],
+      "waterway": "Yukon",
+      "country": "United States"
+    },
+    {
+      "id": "missouri",
+      "name": "Missouri",
+      "fact": "Longest river in the United States.",
+      "kind": "water",
+      "lat": 42,
+      "lon": -98,
+      "x": 255,
+      "y": 122.7,
+      "facts": [
+        "Longest river in the United States.",
+        "The Mississippi’s longest tributary."
+      ],
+      "waterway": "Missouri",
+      "country": "United States"
+    },
+    {
+      "id": "columbia",
+      "name": "Columbia",
+      "fact": "Great river of the Pacific Northwest.",
+      "kind": "water",
+      "lat": 45.7,
+      "lon": -120.2,
+      "x": 205,
+      "y": 111.1,
+      "facts": [
+        "Great river of the Pacific Northwest.",
+        "Rises in British Columbia."
+      ],
+      "waterway": "Columbia",
+      "country": "United States"
+    },
+    {
+      "id": "ohio",
+      "name": "Ohio River",
+      "fact": "Major eastern tributary of the Mississippi.",
+      "kind": "water",
+      "lat": 38.5,
+      "lon": -85,
+      "x": 284.2,
+      "y": 133.8,
+      "facts": [
+        "Major eastern tributary of the Mississippi.",
+        "Forms much of the Midwest–South state line."
+      ],
+      "border": true,
+      "waterway": "Ohio",
+      "country": "United States"
+    }
+  ]
+}

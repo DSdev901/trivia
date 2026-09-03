@@ -1,0 +1,84 @@
+{
+  "id": "south-asia-lakes",
+  "name": "South Asia: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "chilika",
+      "name": "Chilika Lake",
+      "fact": "Largest coastal lagoon in India.",
+      "kind": "water",
+      "lat": 19.7,
+      "lon": 85.3,
+      "x": 729,
+      "y": 193.6,
+      "facts": [
+        "Largest coastal lagoon in India.",
+        "On the Bay of Bengal in Odisha."
+      ],
+      "country": "India"
+    },
+    {
+      "id": "wular",
+      "name": "Wular Lake",
+      "fact": "One of South Asia’s largest freshwater lakes.",
+      "kind": "water",
+      "lat": 34.35,
+      "lon": 74.65,
+      "x": 692.6,
+      "y": 147,
+      "facts": [
+        "One of South Asia’s largest freshwater lakes.",
+        "In the Kashmir Valley."
+      ],
+      "country": "India"
+    },
+    {
+      "id": "sambhar",
+      "name": "Sambhar Lake",
+      "fact": "India’s largest inland salt lake.",
+      "kind": "water",
+      "lat": 26.9,
+      "lon": 75,
+      "x": 698.1,
+      "y": 170.7,
+      "facts": [
+        "India’s largest inland salt lake.",
+        "In Rajasthan, west of Jaipur."
+      ],
+      "country": "India"
+    },
+    {
+      "id": "pulicat",
+      "name": "Pulicat Lake",
+      "fact": "Second-largest brackish lagoon in India.",
+      "kind": "water",
+      "lat": 13.6,
+      "lon": 80.2,
+      "x": 717.4,
+      "y": 213,
+      "facts": [
+        "Second-largest brackish lagoon in India.",
+        "On the Andhra Pradesh–Tamil Nadu coast."
+      ],
+      "country": "India"
+    },
+    {
+      "id": "vembanad",
+      "name": "Vembanad Lake",
+      "fact": "Longest lake in India.",
+      "kind": "water",
+      "lat": 9.6,
+      "lon": 76.4,
+      "x": 708,
+      "y": 225.6,
+      "facts": [
+        "Longest lake in India.",
+        "Backwaters of Kerala, near Kochi."
+      ],
+      "country": "India"
+    }
+  ]
+}

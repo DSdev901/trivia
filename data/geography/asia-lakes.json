@@ -1,0 +1,161 @@
+{
+  "id": "asia-lakes",
+  "name": "Asia: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "baikal",
+      "name": "Lake Baikal",
+      "fact": "World’s deepest freshwater lake.",
+      "kind": "water",
+      "lat": 53.5,
+      "lon": 108,
+      "x": 753.2,
+      "y": 87.2,
+      "facts": [
+        "World’s deepest freshwater lake.",
+        "Oldest large freshwater lake on Earth.",
+        "Holds about one-fifth of the world’s unfrozen fresh water."
+      ],
+      "country": "Russia"
+    },
+    {
+      "id": "caspian",
+      "name": "Caspian Sea",
+      "fact": "Largest inland body of water on Earth.",
+      "kind": "water",
+      "lat": 41.8,
+      "lon": 50.5,
+      "x": 626.4,
+      "y": 123.3,
+      "facts": [
+        "Largest inland body of water on Earth.",
+        "A saline lake, not an ocean."
+      ],
+      "country": "Kazakhstan"
+    },
+    {
+      "id": "aral",
+      "name": "Aral Sea",
+      "fact": "Once a great lake; now largely dried.",
+      "kind": "water",
+      "lat": 45,
+      "lon": 60,
+      "x": 647.8,
+      "y": 113.3,
+      "facts": [
+        "Once a great lake; now largely dried.",
+        "Split between Kazakhstan and Uzbekistan."
+      ],
+      "country": "Kazakhstan"
+    },
+    {
+      "id": "balkhash",
+      "name": "Lake Balkhash",
+      "fact": "Large endorheic lake in Kazakhstan.",
+      "kind": "water",
+      "lat": 46,
+      "lon": 74,
+      "x": 681.3,
+      "y": 110.2,
+      "facts": [
+        "Large endorheic lake in Kazakhstan.",
+        "Half fresh, half saline."
+      ],
+      "country": "Kazakhstan"
+    },
+    {
+      "id": "tonle-sap",
+      "name": "Tonlé Sap",
+      "fact": "Southeast Asia’s largest freshwater lake.",
+      "kind": "water",
+      "lat": 12.9,
+      "lon": 104.1,
+      "x": 782.5,
+      "y": 215.2,
+      "facts": [
+        "Southeast Asia’s largest freshwater lake.",
+        "Swells dramatically in the Mekong flood."
+      ],
+      "country": "Cambodia"
+    },
+    {
+      "id": "issyk-kul",
+      "name": "Issyk-Kul",
+      "fact": "Largest lake in Kyrgyzstan.",
+      "kind": "water",
+      "lat": 42.4,
+      "lon": 77.2,
+      "x": 692.6,
+      "y": 121.5,
+      "facts": [
+        "Largest lake in Kyrgyzstan.",
+        "An endorheic alpine lake that never freezes."
+      ],
+      "country": "Kyrgyzstan"
+    },
+    {
+      "id": "qinghai",
+      "name": "Qinghai Lake",
+      "fact": "Largest lake in China.",
+      "kind": "water",
+      "lat": 36.9,
+      "lon": 100.2,
+      "x": 756.1,
+      "y": 138.8,
+      "facts": [
+        "Largest lake in China.",
+        "A saline lake on the Tibetan Plateau."
+      ],
+      "country": "China"
+    },
+    {
+      "id": "dead-sea",
+      "name": "Dead Sea",
+      "fact": "Earth’s lowest land elevation on its shores.",
+      "kind": "water",
+      "lat": 31.5,
+      "lon": 35.5,
+      "x": 592.5,
+      "y": 156,
+      "facts": [
+        "Earth’s lowest land elevation on its shores.",
+        "Among the saltiest large lakes.",
+        "Forms part of the Israel–Jordan border."
+      ],
+      "border": true
+    },
+    {
+      "id": "van",
+      "name": "Lake Van",
+      "fact": "Largest lake in Turkey.",
+      "kind": "water",
+      "lat": 38.6,
+      "lon": 42.9,
+      "x": 608.9,
+      "y": 133.5,
+      "facts": [
+        "Largest lake in Turkey.",
+        "A saline soda lake in Eastern Anatolia."
+      ],
+      "country": "Türkiye"
+    },
+    {
+      "id": "biwa",
+      "name": "Lake Biwa",
+      "fact": "Largest lake in Japan.",
+      "kind": "water",
+      "lat": 35.3,
+      "lon": 136.1,
+      "x": 849.9,
+      "y": 143.9,
+      "facts": [
+        "Largest lake in Japan.",
+        "In Shiga Prefecture, near Kyoto."
+      ],
+      "country": "Japan"
+    }
+  ]
+}

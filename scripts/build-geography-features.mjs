@@ -11,6 +11,8 @@ import { createRequire } from "node:module";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { WATER_FACTS, WATER_META, WATER_PACKS } from "./lib/water-features.mjs";
+
 const require = createRequire(import.meta.url);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "geography");
@@ -156,7 +158,8 @@ function wantsCountry(it) {
 const MODES = ["pin", "type", "name", "choice", "study"];
 
 function f(id, name, lat, lon, fact, kind = "land", country = "") {
-  return { id, name, lat, lon, fact, kind, country };
+  const facts = (Array.isArray(fact) ? fact : fact ? [fact] : []).slice(0, 3);
+  return { id, name, lat, lon, fact: facts[0] || "", facts, kind, country };
 }
 
 function projectItems(items) {
@@ -169,16 +172,34 @@ function projectItems(items) {
     if (wantsCountry({ ...it, country: "" }) && !country) {
       console.warn(`  [geo] no country for ${it.id} (${it.name})`);
     }
+    const extra = WATER_FACTS[it.id] || [];
+    const fromItem =
+      Array.isArray(it.facts) && it.facts.length ? it.facts : it.fact ? [it.fact] : [];
+    const facts = [];
+    const seen = new Set();
+    for (const row of [...extra, ...fromItem]) {
+      const text = String(row || "").trim();
+      if (!text) continue;
+      const key = text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+      if (seen.has(key)) continue;
+      seen.add(key);
+      facts.push(text);
+      if (facts.length === 3) break;
+    }
+    const meta = WATER_META[it.id] || {};
     const out = {
       id: it.id,
       name: it.name,
-      fact: it.fact,
+      fact: facts[0] || it.fact || "",
       kind: it.kind,
       lat: it.lat,
       lon: it.lon,
       x: Math.round(xy[0] * 10) / 10,
       y: Math.round(xy[1] * 10) / 10,
     };
+    if (facts.length) out.facts = facts;
+    if (it.border || meta.border) out.border = true;
+    if (it.waterway || meta.waterway) out.waterway = it.waterway || meta.waterway;
     if (country) out.country = country;
     return out;
   });
@@ -765,6 +786,18 @@ const byGroup = {
   oceania: ["australia-physical"],
 };
 
+for (const pack of WATER_PACKS) {
+  metas.push(
+    writePack(`${pack.id}.json`, {
+      id: pack.id,
+      name: pack.name,
+      blurb: pack.blurb,
+      items: pack.items,
+    })
+  );
+  byGroup[pack.group].push(pack.id);
+}
+
 const metaById = Object.fromEntries(metas.map((m) => [m.id, m]));
 const packsFile = JSON.parse(readFileSync(path.join(OUT, "packs.json"), "utf8"));
 
@@ -780,6 +813,25 @@ for (const [groupId, ids] of Object.entries(byGroup)) {
   for (const id of ids) upsert(g.packs, metaById[id]);
 }
 for (const pack of metas) upsert(packsFile.packs, pack);
+
+for (const pack of WATER_PACKS) {
+  const g = packsFile.groups.find((x) => x.id === pack.group);
+  const sec = (g?.sections || []).find((s) => s.name === pack.section);
+  if (!sec) {
+    console.warn(`  [geo] missing section ${pack.group} / ${pack.section} for ${pack.id}`);
+    continue;
+  }
+  if (sec.packIds.includes(pack.id)) continue;
+  const sibling = pack.id.endsWith("-lakes")
+    ? pack.id.replace(/-lakes$/, "-rivers")
+    : pack.id.endsWith("-rivers")
+      ? pack.id.replace(/-rivers$/, "-lakes")
+      : "";
+  const at = sibling ? sec.packIds.indexOf(sibling) : -1;
+  if (pack.id.endsWith("-lakes") && at >= 0) sec.packIds.splice(at + 1, 0, pack.id);
+  else if (pack.id.endsWith("-rivers") && at >= 0) sec.packIds.splice(at, 0, pack.id);
+  else sec.packIds.push(pack.id);
+}
 
 writeFileSync(path.join(OUT, "packs.json"), `${JSON.stringify(packsFile, null, 2)}\n`);
 console.log(`Wrote ${metas.length} feature packs (${metas.reduce((n, p) => n + p.itemCount, 0)} places).`);

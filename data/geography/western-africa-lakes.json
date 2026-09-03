@@ -1,0 +1,84 @@
+{
+  "id": "western-africa-lakes",
+  "name": "Western Africa: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "volta-lake",
+      "name": "Lake Volta",
+      "fact": "Among the world’s largest reservoirs by area.",
+      "kind": "water",
+      "lat": 7,
+      "lon": 0,
+      "x": 500,
+      "y": 233.9,
+      "facts": [
+        "Among the world’s largest reservoirs by area.",
+        "On the Volta in Ghana, behind Akosombo Dam."
+      ],
+      "country": "Ghana"
+    },
+    {
+      "id": "chad",
+      "name": "Lake Chad",
+      "fact": "Shallow African lake; size varies greatly.",
+      "kind": "water",
+      "lat": 13,
+      "lon": 14,
+      "x": 538,
+      "y": 214.9,
+      "facts": [
+        "Shallow African lake; size varies greatly.",
+        "Shared by Chad, Cameroon, Niger, and Nigeria."
+      ],
+      "country": "Chad"
+    },
+    {
+      "id": "kainji",
+      "name": "Kainji Lake",
+      "fact": "Nigeria’s largest lake.",
+      "kind": "water",
+      "lat": 10.4,
+      "lon": 4.5,
+      "x": 512.2,
+      "y": 223.1,
+      "facts": [
+        "Nigeria’s largest lake.",
+        "A Niger River reservoir behind Kainji Dam."
+      ],
+      "country": "Nigeria"
+    },
+    {
+      "id": "bosumtwi",
+      "name": "Lake Bosumtwi",
+      "fact": "Ghana’s only natural lake.",
+      "kind": "water",
+      "lat": 6.505,
+      "lon": -1.409,
+      "x": 496.2,
+      "y": 235.4,
+      "facts": [
+        "Ghana’s only natural lake.",
+        "In a meteorite crater near Kumasi."
+      ],
+      "country": "Ghana"
+    },
+    {
+      "id": "kossou",
+      "name": "Lake Kossou",
+      "fact": "Largest lake in Côte d’Ivoire.",
+      "kind": "water",
+      "lat": 7.2,
+      "lon": -5.5,
+      "x": 485,
+      "y": 233.2,
+      "facts": [
+        "Largest lake in Côte d’Ivoire.",
+        "A Bandama River reservoir."
+      ],
+      "country": "Ivory Coast"
+    }
+  ]
+}

@@ -14,6 +14,10 @@
       "lon": -121,
       "x": 241.8,
       "y": 51.1,
+      "facts": [
+        "Largest lake entirely in Canada.",
+        "In the Northwest Territories."
+      ],
       "country": "Canada"
     },
     {
@@ -25,6 +29,10 @@
       "lon": -112.55,
       "x": 217.5,
       "y": 125.4,
+      "facts": [
+        "Largest U.S. salt lake.",
+        "Remnant of ancient Lake Bonneville."
+      ],
       "country": "United States"
     },
     {
@@ -36,39 +44,57 @@
       "lon": -114,
       "x": 247.4,
       "y": 64,
+      "facts": [
+        "Deepest lake in North America.",
+        "Source of the Mackenzie River."
+      ],
       "country": "Canada"
     },
     {
       "id": "erie",
       "name": "Lake Erie",
-      "fact": "Shallowest Great Lake.",
+      "fact": "Shallowest of the Great Lakes.",
       "kind": "water",
       "lat": 42.2,
       "lon": -81.2,
       "x": 297.2,
       "y": 122.1,
+      "facts": [
+        "Shallowest of the Great Lakes.",
+        "Forms part of the U.S.–Canada border.",
+        "Shallowest Great Lake."
+      ],
       "country": "United States"
     },
     {
       "id": "huron",
       "name": "Lake Huron",
-      "fact": "Includes Georgian Bay.",
+      "fact": "Second-largest Great Lake by area.",
       "kind": "water",
       "lat": 44.8,
       "lon": -82.4,
       "x": 296.8,
       "y": 113.9,
+      "facts": [
+        "Second-largest Great Lake by area.",
+        "Includes Georgian Bay."
+      ],
       "country": "Canada"
     },
     {
       "id": "michigan",
       "name": "Lake Michigan",
-      "fact": "Entirely within the United States.",
+      "fact": "Only Great Lake entirely in the United States.",
       "kind": "water",
       "lat": 44,
       "lon": -87,
       "x": 284.6,
       "y": 116.4,
+      "facts": [
+        "Only Great Lake entirely in the United States.",
+        "Third-largest Great Lake by area.",
+        "Entirely within the United States."
+      ],
       "country": "United States"
     },
     {
@@ -80,6 +106,9 @@
       "lon": -88.5,
       "x": 287.7,
       "y": 98.5,
+      "facts": [
+        "Largest lake entirely in Ontario."
+      ],
       "country": "Canada"
     },
     {
@@ -91,6 +120,9 @@
       "lon": -80.8,
       "x": 286.6,
       "y": 170.6,
+      "facts": [
+        "Largest lake in Florida."
+      ],
       "country": "United States"
     },
     {
@@ -102,28 +134,42 @@
       "lon": -77.9,
       "x": 306.8,
       "y": 117.4,
+      "facts": [
+        "Easternmost Great Lake.",
+        "Drains to the Atlantic via the St. Lawrence."
+      ],
       "country": "Canada"
     },
     {
       "id": "superior",
       "name": "Lake Superior",
-      "fact": "Largest Great Lake.",
+      "fact": "Largest freshwater lake by surface area.",
       "kind": "water",
       "lat": 47.7,
       "lon": -87.5,
       "x": 287.5,
       "y": 104.9,
+      "facts": [
+        "Largest freshwater lake by surface area.",
+        "Largest of the Great Lakes.",
+        "Largest Great Lake."
+      ],
       "country": "United States"
     },
     {
       "id": "winnipeg",
       "name": "Lake Winnipeg",
-      "fact": "Large lake in Manitoba.",
+      "fact": "Large prairie lake in Manitoba.",
       "kind": "water",
       "lat": 52.5,
       "lon": -97.5,
       "x": 269.9,
       "y": 90.2,
+      "facts": [
+        "Large prairie lake in Manitoba.",
+        "Twelfth-largest freshwater lake.",
+        "Large lake in Manitoba."
+      ],
       "country": "Canada"
     },
     {
@@ -135,6 +181,9 @@
       "lon": -94.8,
       "x": 271.6,
       "y": 100.6,
+      "facts": [
+        "Lake on the U.S.–Canada border."
+      ],
       "country": "Canada"
     }
   ]

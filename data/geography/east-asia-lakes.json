@@ -1,0 +1,100 @@
+{
+  "id": "east-asia-lakes",
+  "name": "East Asia: Lakes",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "qinghai",
+      "name": "Qinghai Lake",
+      "fact": "Largest lake in China.",
+      "kind": "water",
+      "lat": 36.9,
+      "lon": 100.2,
+      "x": 756.1,
+      "y": 138.8,
+      "facts": [
+        "Largest lake in China.",
+        "A saline lake on the Tibetan Plateau."
+      ],
+      "country": "China"
+    },
+    {
+      "id": "poyang",
+      "name": "Poyang Lake",
+      "fact": "China’s largest freshwater lake (when full).",
+      "kind": "water",
+      "lat": 29.1,
+      "lon": 116.3,
+      "x": 805.3,
+      "y": 163.7,
+      "facts": [
+        "China’s largest freshwater lake (when full).",
+        "On the Yangtze floodplain in Jiangxi."
+      ],
+      "country": "China"
+    },
+    {
+      "id": "dongting",
+      "name": "Dongting Lake",
+      "fact": "A major Yangtze flood-basin lake.",
+      "kind": "water",
+      "lat": 29.3,
+      "lon": 112.9,
+      "x": 796.2,
+      "y": 163,
+      "facts": [
+        "A major Yangtze flood-basin lake.",
+        "In Hunan, south of the river."
+      ],
+      "country": "China"
+    },
+    {
+      "id": "khanka",
+      "name": "Lake Khanka",
+      "fact": "Largest lake in Northeast Asia.",
+      "kind": "water",
+      "lat": 45,
+      "lon": 132.4,
+      "x": 826.2,
+      "y": 113.3,
+      "facts": [
+        "Largest lake in Northeast Asia.",
+        "Straddles the China–Russia border."
+      ],
+      "border": true,
+      "country": "Russia"
+    },
+    {
+      "id": "biwa",
+      "name": "Lake Biwa",
+      "fact": "Largest lake in Japan.",
+      "kind": "water",
+      "lat": 35.3,
+      "lon": 136.1,
+      "x": 849.9,
+      "y": 143.9,
+      "facts": [
+        "Largest lake in Japan.",
+        "Near Kyoto in Shiga Prefecture."
+      ],
+      "country": "Japan"
+    },
+    {
+      "id": "hulun",
+      "name": "Hulun Lake",
+      "fact": "One of China’s largest steppe lakes.",
+      "kind": "water",
+      "lat": 48.97,
+      "lon": 117.4,
+      "x": 783,
+      "y": 101,
+      "facts": [
+        "One of China’s largest steppe lakes.",
+        "In Inner Mongolia, near the Russian border."
+      ],
+      "country": "China"
+    }
+  ]
+}

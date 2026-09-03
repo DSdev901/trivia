@@ -1,0 +1,88 @@
+{
+  "id": "central-africa-rivers",
+  "name": "Central Africa: Rivers",
+  "map": "world-countries",
+  "overlay": "markers",
+  "quiz": "places",
+  "items": [
+    {
+      "id": "congo",
+      "name": "Congo",
+      "fact": "Deepest river; second-largest by discharge.",
+      "kind": "water",
+      "lat": -2,
+      "lon": 18,
+      "x": 549.2,
+      "y": 262.4,
+      "facts": [
+        "Deepest river; second-largest by discharge.",
+        "Africa’s second-longest river.",
+        "Forms stretches of the Republic of the Congo–DRC border."
+      ],
+      "border": true,
+      "waterway": "Congo",
+      "country": "DR Congo"
+    },
+    {
+      "id": "ubangi",
+      "name": "Ubangi",
+      "fact": "Forms much of the CAR–DRC border.",
+      "kind": "water",
+      "lat": 4.3,
+      "lon": 18.6,
+      "x": 550.8,
+      "y": 242.4,
+      "facts": [
+        "Forms much of the CAR–DRC border."
+      ],
+      "border": true,
+      "waterway": "Ubangi",
+      "country": "DR Congo"
+    },
+    {
+      "id": "kasai",
+      "name": "Kasai",
+      "fact": "Major left-bank tributary of the Congo.",
+      "kind": "water",
+      "lat": -4.3,
+      "lon": 20.2,
+      "x": 555.2,
+      "y": 269.6,
+      "facts": [
+        "Major left-bank tributary of the Congo.",
+        "Rises in Angola."
+      ],
+      "waterway": "Kasai",
+      "country": "DR Congo"
+    },
+    {
+      "id": "sangha",
+      "name": "Sangha",
+      "fact": "Congo tributary of Cameroon, CAR, and the Republic of the Congo.",
+      "kind": "water",
+      "lat": 1.6,
+      "lon": 16,
+      "x": 543.8,
+      "y": 251,
+      "facts": [
+        "Congo tributary of Cameroon, CAR, and the Republic of the Congo."
+      ],
+      "country": "Congo"
+    },
+    {
+      "id": "ogoooue",
+      "name": "Ogooué",
+      "fact": "Principal river of Gabon.",
+      "kind": "water",
+      "lat": -0.7,
+      "lon": 8.8,
+      "x": 524.1,
+      "y": 258.2,
+      "facts": [
+        "Principal river of Gabon.",
+        "Drains most of the country to the Atlantic."
+      ],
+      "country": "Gabon"
+    }
+  ]
+}
