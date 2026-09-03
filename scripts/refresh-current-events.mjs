@@ -12,11 +12,13 @@
  *                   whats-on-netflix + Wikipedia originals lists for titles
  *                   and dates only, TMDB for plot / cast / poster.
  *                   Rolling 28-day (4-week) window.
- *                   US vs outside-the-US chips match Netflix Tudum's
- *                   US "New on Netflix" calendar (unknowns stay in All).
+ *                   Top 10 matches Netflix's official weekly global chart
+ *                   (latest week in all-weeks-global.tsv).
  *
  *   node scripts/refresh-current-events.mjs --netflix-images
  *     Backfill posters on the existing Netflix JSON without a full refresh.
+ *   node scripts/refresh-current-events.mjs --netflix-top10
+ *     Retag the existing Netflix JSON from the current Top 10 chart.
  */
 
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -473,35 +475,10 @@ function parseNetflixMonthly(html, year) {
   return items;
 }
 
-const TUDUM_SKIP_TITLE =
-  /^(coming soon|popular now|popular releases|remind me|new on netflix|latest news|adventure|date|genre|tv shows|movies|view by|more on\b|shop\b)/i;
+const NETFLIX_TOP10_TSV =
+  "https://www.netflix.com/tudum/top10/data/all-weeks-global.tsv";
 
-function parseTudumTitles(html) {
-  const titles = [];
-  const months = new Set();
-  const dateHeads = [];
-  for (const m of html.matchAll(/<h2[^>]*>([\s\S]{0,160}?)<\/h2>/gi)) {
-    const text = stripTags(m[1]).replace(/\s+/g, " ").trim();
-    const dm = text.match(
-      /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})$/i
-    );
-    if (!dm) continue;
-    const parsed = parseEnglishDate(`${dm[1]} ${dm[2]}, ${now.getFullYear()}`);
-    if (parsed) {
-      dateHeads.push(parsed);
-      months.add(parsed.slice(0, 7));
-    }
-  }
-  for (const m of html.matchAll(/<h3[^>]*>([\s\S]{0,200}?)<\/h3>/gi)) {
-    const title = stripTags(m[1]).replace(/\s+/g, " ").trim();
-    if (!title || title.length < 2 || title.length > 80) continue;
-    if (TUDUM_SKIP_TITLE.test(title)) continue;
-    titles.push(title);
-  }
-  return { titles, months, dateCount: dateHeads.length };
-}
-
-function usTitleMatch(itemTitle, listTitle) {
+function titlesClose(itemTitle, listTitle) {
   const a = titleCore(itemTitle);
   const b = titleCore(listTitle);
   if (!a || !b) return false;
@@ -511,113 +488,98 @@ function usTitleMatch(itemTitle, listTitle) {
   return namesSimilar(itemTitle, listTitle);
 }
 
-function itemMatchesUsList(item, usTitles) {
+function itemTop10Hit(item, chartTitles) {
   const names = [item.title, ...(item.akas || [])].filter(Boolean);
+  let best = null;
   for (const name of names) {
-    for (const listed of usTitles) {
-      if (usTitleMatch(name, listed)) return true;
+    for (const listed of chartTitles) {
+      if (!titlesClose(name, listed.title)) continue;
+      if (!best || listed.rank < best.rank) best = listed;
     }
   }
-  return false;
+  return best;
 }
 
-async function fetchTudumHtml(url) {
-  return fetchText(url, 30000, UA);
-}
-
-async function fetchUsNetflixCatalog() {
-  const titles = [];
-  const coveredMonths = new Set();
-  const seen = new Set();
-  const addTitles = (list) => {
-    for (const raw of list || []) {
-      const t = String(raw || "").replace(/\s+/g, " ").trim();
-      const k = titleCore(t);
-      if (!k || seen.has(k)) continue;
-      seen.add(k);
-      titles.push(t);
-    }
+function parseNetflixTop10Tsv(text) {
+  const lines = String(text || "")
+    .replace(/^\uFEFF/, "")
+    .split(/\r?\n/)
+    .filter(Boolean);
+  if (lines.length < 2) throw new Error("empty Netflix Top 10 TSV");
+  const header = lines[0].split("\t");
+  const weekIdx = header.indexOf("week");
+  const rankIdx = header.indexOf("weekly_rank");
+  const showIdx = header.indexOf("show_title");
+  const seasonIdx = header.indexOf("season_title");
+  if (weekIdx < 0 || rankIdx < 0 || showIdx < 0) {
+    throw new Error("unexpected Netflix Top 10 columns");
+  }
+  let latestWeek = "";
+  const rows = [];
+  for (let i = 1; i < lines.length; i++) {
+    const cols = lines[i].split("\t");
+    const week = cols[weekIdx];
+    if (!week) continue;
+    if (!latestWeek || week > latestWeek) latestWeek = week;
+    rows.push(cols);
+  }
+  const byKey = new Map();
+  const addTitle = (raw, rank) => {
+    const title = String(raw || "").replace(/\s+/g, " ").trim();
+    if (!title || title === "N/A") return;
+    const key = titleCore(title);
+    if (!key) return;
+    const prev = byKey.get(key);
+    if (!prev || rank < prev.rank) byKey.set(key, { title, rank });
   };
-
-  try {
-    const html = await fetchTudumHtml(
-      "https://www.netflix.com/tudum/articles/new-on-netflix"
-    );
-    const parsed = parseTudumTitles(html);
-    addTitles(parsed.titles);
-    if (parsed.dateCount >= 8) {
-      for (const month of parsed.months) coveredMonths.add(month);
-    }
-    console.log(
-      `  [netflix] tudum monthly: ${parsed.titles.length} US titles` +
-        (parsed.dateCount >= 8 ? ` (covers ${[...parsed.months].join(", ")})` : "")
-    );
-  } catch (err) {
-    console.warn(`  [netflix] tudum monthly: ${err.message}`);
+  for (const cols of rows) {
+    if (cols[weekIdx] !== latestWeek) continue;
+    const rank = Number(cols[rankIdx]);
+    if (!Number.isFinite(rank)) continue;
+    addTitle(cols[showIdx], rank);
+    if (seasonIdx >= 0) addTitle(cols[seasonIdx], rank);
   }
-
-  try {
-    const topics = await fetchTudumHtml(
-      "https://www.netflix.com/tudum/topics/new-on-netflix"
-    );
-    const links = [
-      ...new Set(
-        [
-          ...topics.matchAll(
-            /href="(\/tudum\/articles\/what-to-watch-on-netflix-[^"]+)"/gi
-          ),
-        ].map((m) => m[1])
-      ),
-    ];
-    const start = new Date(`${netflixWindowStart}T12:00:00Z`).getTime() - 8 * 86400000;
-    const end = new Date(`${windowEnd}T12:00:00Z`).getTime();
-    const weekUrls = [];
-    for (const href of links) {
-      const m = href.match(
-        /what-to-watch-on-netflix-([a-z]+)-(\d{1,2})-(\d{4})/i
-      );
-      if (!m) continue;
-      const month = MONTHS.indexOf(m[1].toLowerCase());
-      if (month < 0) continue;
-      const date = `${m[3]}-${String(month + 1).padStart(2, "0")}-${String(Number(m[2])).padStart(2, "0")}`;
-      const ts = Date.parse(`${date}T12:00:00Z`);
-      if (!Number.isFinite(ts) || ts < start || ts > end) continue;
-      weekUrls.push(`https://www.netflix.com${href.split("?")[0]}`);
-    }
-    for (const url of weekUrls.slice(0, 8)) {
-      try {
-        const html = await fetchTudumHtml(url);
-        addTitles(parseTudumTitles(html).titles);
-      } catch (err) {
-        console.warn(`  [netflix] tudum weekly ${url}: ${err.message}`);
-      }
-      await sleep(400);
-    }
-  } catch (err) {
-    console.warn(`  [netflix] tudum topics: ${err.message}`);
-  }
-
-  return { titles, coveredMonths };
+  return { week: latestWeek, titles: [...byKey.values()] };
 }
 
-function tagNetflixUs(items, catalog) {
-  const usTitles = catalog.titles || [];
-  const covered = catalog.coveredMonths || new Set();
+async function fetchNetflixTop10() {
+  const text = await fetchText(NETFLIX_TOP10_TSV, 60000);
+  const chart = parseNetflixTop10Tsv(text);
+  console.log(
+    `  [netflix] top 10 week ${chart.week}: ${chart.titles.length} titles`
+  );
+  return chart;
+}
+
+function tagNetflixTop10(items, chart) {
+  const titles = chart?.titles || [];
   let yes = 0;
-  let no = 0;
   for (const item of items) {
-    if (itemMatchesUsList(item, usTitles)) {
-      item.inUS = true;
+    delete item.inUS;
+    const hit = itemTop10Hit(item, titles);
+    if (hit) {
+      item.top10 = true;
+      item.top10Rank = hit.rank;
       yes += 1;
-    } else if (covered.has(String(item.date || "").slice(0, 7))) {
-      item.inUS = false;
-      no += 1;
+    } else {
+      delete item.top10;
+      delete item.top10Rank;
     }
   }
-  console.log(
-    `  [netflix] US catalog ${usTitles.length} titles; in US ${yes}, outside ${no}, unknown ${items.length - yes - no}`
-  );
+  console.log(`  [netflix] top 10 matched ${yes}/${items.length}`);
   return items;
+}
+
+async function tagExistingNetflixTop10() {
+  const file = path.join(OUT_DIR, "netflix.json");
+  const raw = JSON.parse(await readFile(file, "utf8"));
+  tagNetflixTop10(raw.items || [], await fetchNetflixTop10());
+  raw.items = (raw.items || []).map((item) => {
+    const rest = { ...item };
+    delete rest.inUS;
+    return rest;
+  });
+  await writeFile(file, `${JSON.stringify(raw, null, 2)}\n`);
 }
 
 function seriesTypeFromGenre(genre) {
@@ -840,6 +802,14 @@ function mergeNetflixCards(keep, incoming) {
   if (incoming.image && !out.image) out.image = incoming.image;
   if (incoming.brief && !out.brief) out.brief = incoming.brief;
   if (incoming.confirmedOriginal) out.confirmedOriginal = true;
+  if (incoming.top10 === true) {
+    out.top10 = true;
+    const keepRank = Number(out.top10Rank);
+    const incRank = Number(incoming.top10Rank);
+    if (Number.isFinite(incRank) && (!Number.isFinite(keepRank) || incRank < keepRank)) {
+      out.top10Rank = incRank;
+    }
+  }
   return out;
 }
 
@@ -902,8 +872,11 @@ function publicNetflixItem(item) {
     if (compressed) out.brief = compressed;
   }
   if (item.image) out.image = item.image;
-  if (item.inUS === true) out.inUS = true;
-  else if (item.inUS === false) out.inUS = false;
+  if (item.top10 === true) {
+    out.top10 = true;
+    const rank = Number(item.top10Rank);
+    if (Number.isFinite(rank) && rank > 0) out.top10Rank = rank;
+  }
   return out;
 }
 
@@ -1633,7 +1606,10 @@ async function enrichNetflix(items) {
 
 async function buildNetflix() {
   let items = [];
-  const usCatalogPromise = fetchUsNetflixCatalog();
+  const top10Promise = fetchNetflixTop10().catch((err) => {
+    console.warn(`  [netflix] top 10: ${err.message}`);
+    return null;
+  });
   // Primary: TVMaze episode schedule — every original that actually dropped
   // new episodes in the window, with synopsis + cast.
   try {
@@ -1705,6 +1681,14 @@ async function buildNetflix() {
         ...(String(i.brief || "").trim()
           ? { brief: String(i.brief).replace(/\s+/g, " ").trim() }
           : {}),
+        ...(i.top10 === true
+          ? {
+              top10: true,
+              ...(Number.isFinite(Number(i.top10Rank))
+                ? { top10Rank: Number(i.top10Rank) }
+                : {}),
+            }
+          : {}),
       }));
     items.push(...seeded);
     if (seeded.length)
@@ -1717,7 +1701,9 @@ async function buildNetflix() {
   let merged = dedupeNetflix(items, false);
   merged = await enrichNetflix(merged);
   merged = dedupeNetflix(merged, true);
-  merged = tagNetflixUs(merged, await usCatalogPromise);
+  const chart = await top10Promise;
+  if (chart) merged = tagNetflixTop10(merged, chart);
+  else console.log("  [netflix] keeping previous top 10 tags");
   const useful = merged.filter((i) => !isThinSynopsis(i.synopsis)).length;
   const withCast = merged.filter((i) => (i.starring || []).length > 0).length;
   console.log(
@@ -1971,7 +1957,14 @@ async function syncNetflixStamp() {
 async function main() {
   const onlyNetflix = process.argv.includes("--netflix");
   const onlyImages = process.argv.includes("--netflix-images");
+  const onlyTop10 = process.argv.includes("--netflix-top10");
   const netflixWin = { start: netflixWindowStart, end: windowEnd };
+  if (onlyTop10) {
+    console.log("Tagging Netflix Top 10 from the weekly global chart…");
+    await tagExistingNetflixTop10();
+    console.log("Done — Netflix Top 10 tags updated.");
+    return;
+  }
   console.log(
     onlyNetflix || onlyImages
       ? `Refreshing Netflix (${netflixWindowStart} → ${windowEnd})…`
