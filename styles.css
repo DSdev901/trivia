@@ -4402,13 +4402,11 @@ a.ce-tab {
 .geo-play--study .geo-item-list {
   grid-template-columns: repeat(auto-fill, minmax(10.25rem, 1fr));
   gap: 0.4rem;
-  max-height: min(64vh, 560px);
-  padding-right: 0;
-}
-
-.geo-play--study .geo-play-layout.no-map .geo-item-list {
-  max-height: none;
-  overflow: visible;
+  max-height: min(46vh, 28rem);
+  overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding-right: 0.1rem;
 }
 
 .geo-play--study .geo-item-btn {
@@ -4498,8 +4496,10 @@ a.ce-tab {
   }
 
   .geo-play--study .geo-item-list {
+    flex: 1 1 auto;
+    min-height: 9rem;
     max-height: none;
-    overflow: visible;
+    overflow: auto;
   }
 
   body:has(.view:not([hidden]) .geo-play),
@@ -4836,27 +4836,33 @@ a.ce-tab {
     padding: 0;
   }
 
-  body:has(.view:not([hidden]) .geo-play--map) {
+  body:has(.view:not([hidden]) .geo-play--map),
+  body:has(.view:not([hidden]) .geo-play--study) {
     height: 100dvh;
+    overflow: hidden;
   }
 
-  body:has(.view:not([hidden]) .geo-play--map) .app {
+  body:has(.view:not([hidden]) .geo-play--map) .app,
+  body:has(.view:not([hidden]) .geo-play--study) .app {
     flex: 1;
     display: flex;
     flex-direction: column;
     min-height: 0;
     height: 100%;
+    overflow: hidden;
     padding-bottom: env(safe-area-inset-bottom);
   }
 
-  body:has(.view:not([hidden]) .geo-play--map) .app > main {
+  body:has(.view:not([hidden]) .geo-play--map) .app > main,
+  body:has(.view:not([hidden]) .geo-play--study) .app > main {
     flex: 1;
     min-height: 0;
     display: flex;
     flex-direction: column;
   }
 
-  #view-geography:has(.geo-play--map) {
+  #view-geography:has(.geo-play--map),
+  #view-geography:has(.geo-play--study) {
     flex: 1;
     min-height: 0;
     display: flex;
@@ -5194,15 +5200,27 @@ a.ce-tab {
     min-height: 2.85rem;
   }
 
+  .geo-play--study {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
   .geo-play--study .geo-play-layout {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
     gap: 0.7rem;
   }
 
   .geo-play--study .geo-map-wrap {
     order: 0;
+    flex: 0 0 auto;
     margin: 0 -0.45rem;
     width: calc(100% + 0.9rem);
   }
@@ -5216,7 +5234,25 @@ a.ce-tab {
 
   .geo-play--study .geo-side {
     order: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
     gap: 0.65rem;
+  }
+
+  .geo-play--study .geo-detail {
+    flex: 0 0 auto;
+  }
+
+  .geo-play--study .geo-study-index {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+    gap: 0.4rem;
   }
 
   .geo-play--study .geo-map-frame svg {

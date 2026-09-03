@@ -2997,10 +2997,6 @@ function renderStudy() {
       geo.pack?.overlay === "markers" ? " geo-play--markers" : ""
     }">
       ${geoCrumbs("Study")}
-      <div class="geo-toolbar">
-        <a class="secondary-btn" href="${packHref()}">Modes</a>
-        <p class="speech-kicker">${escapeHtml(geo.pack.name)} · Study</p>
-      </div>
       <div class="geo-play-layout ${geo.mapSvg ? "" : "no-map"}">
         ${geo.mapSvg ? `<div class="geo-map-wrap">${mapHtml()}</div>` : ""}
         <aside class="geo-side">
