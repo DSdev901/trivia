@@ -3384,12 +3384,8 @@ a.ce-tab {
   margin: 0.85rem 0 1rem;
 }
 
-.geo-play .geo-water-filters {
-  margin: 0 0 0.55rem;
-}
-
-.geo-play--map .geo-water-filters {
-  margin-bottom: 0.45rem;
+.geo-play--map {
+  --geo-map-menu-h: min(42dvh, 16.9rem);
 }
 
 .geo-pack-grid,
@@ -3702,6 +3698,7 @@ a.ce-tab {
   stroke-width: 2.5;
 }
 
+.geo-map-frame:not(.is-water-pack) .geo-river,
 .geo-map-frame:not(.is-water-pack) .geo-river-border-g {
   display: none;
 }
@@ -4919,7 +4916,7 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
-    max-height: min(42dvh, 16.9rem);
+    max-height: var(--geo-map-menu-h);
     overflow-y: auto;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
@@ -4930,17 +4927,13 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     display: flex;
   }
 
-  .geo-play--map.geo-play--water.is-answered .geo-answer-cluster {
-    min-height: 7.8rem;
-    max-height: min(42dvh, 16.9rem);
-  }
-
   .geo-play--map.geo-play--water .geo-water-menu:not([hidden]) {
     display: block;
     box-sizing: border-box;
     width: 100%;
     flex: 1 1 auto;
-    min-height: 0;
+    min-height: calc(3.35rem * 2 + 0.5rem);
+    max-height: var(--geo-map-menu-h);
     overflow-y: auto;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
@@ -5114,7 +5107,7 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     background: var(--paper);
   }
 
-  .geo-play--map .geo-answer-bar:not(:has(.geo-quiz-actions)):not(:has(.geo-next-row:not([hidden]))) {
+  .geo-play--map .geo-answer-bar:not(:has(.geo-quiz-actions)):not(:has(.geo-next-row:not([hidden]))):not(:has(.geo-water-menu:not([hidden]))) {
     display: none;
   }
 
@@ -5123,13 +5116,15 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     pointer-events: auto;
   }
 
-  .geo-play--map.geo-play--choice .geo-next-row:not([hidden]) {
+  .geo-play--map.geo-play--choice .geo-next-row:not([hidden]),
+  .geo-play--map.geo-play--water .geo-next-row:not([hidden]) {
     display: flex;
     justify-content: stretch;
     width: 100%;
   }
 
-  .geo-play--map.geo-play--choice .geo-next-row .pager-btn {
+  .geo-play--map.geo-play--choice .geo-next-row .pager-btn,
+  .geo-play--map.geo-play--water .geo-next-row .pager-btn {
     width: 100%;
     min-height: 2.85rem;
     justify-content: center;
@@ -6103,7 +6098,7 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
   font-style: italic;
 }
 
-/* Waterways: reserve consistent space for the facts dock (pin/type/name/choice). */
+/* Waterways: facts dock matches the map multiple-choice grid. */
 .geo-play--map.geo-play--water.is-answered .geo-answer-bar {
   display: flex;
 }
@@ -6114,6 +6109,14 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
   flex: 1;
   min-width: 0;
   gap: 0.35rem;
-  min-height: 7.8rem;
-  max-height: min(42dvh, 16.9rem);
+}
+
+.geo-play--map.geo-play--water.is-answered .geo-water-menu:not([hidden]) {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: calc(3.35rem * 2 + 0.5rem);
+  max-height: var(--geo-map-menu-h);
+  overflow-y: auto;
 }

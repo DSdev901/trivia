@@ -540,8 +540,7 @@ function bindWaterFilters(scope = geo.root) {
       }
       filters[key] = input.checked;
       applyWaterItemFilters();
-      if (geo.mode) startMode(geo.mode);
-      else renderPackModes();
+      renderPackModes();
     });
   });
 }
@@ -3332,13 +3331,11 @@ function startMode(mode) {
     geo.root.innerHTML = `
       <div class="geo-shell">
         ${geoCrumbs(MODE_META[mode]?.label || mode)}
-        ${isWaterPack() ? waterFilterBarHtml() : ""}
-        <p class="error">No waterways match the current filters. Turn a type back on to play.</p>
+        <p class="error">No waterways match the current filters. Go back to modes and turn a type back on.</p>
         <div class="setup-actions">
           <a class="secondary-btn" href="${packHref()}">Back to modes</a>
         </div>
       </div>`;
-    bindWaterFilters();
     return;
   }
   geo.queue = mode === "study" ? [...geo.items] : shuffle(pool);
@@ -3361,7 +3358,6 @@ function renderStudy() {
       geo.pack?.overlay === "markers" ? " geo-play--markers" : ""
     }${isWaterPack() ? " geo-play--water" : ""}">
       ${geoCrumbs("Study")}
-      ${isWaterPack() ? waterFilterBarHtml() : ""}
       <div class="geo-play-layout ${geo.mapSvg ? "" : "no-map"}">
         ${geo.mapSvg ? `<div class="geo-map-wrap">${mapHtml()}${playCloseHtml()}</div>` : playCloseHtml()}
         <aside class="geo-side">
@@ -3395,7 +3391,6 @@ function renderStudy() {
   map?.querySelector("svg")?.setAttribute("preserveAspectRatio", "xMidYMid slice");
   bindMapControls(map);
   bindStudy();
-  bindWaterFilters();
 }
 
 function waterFacts(item) {
@@ -3559,6 +3554,7 @@ function renderPlay() {
   const actionsHtml = controls
     ? `<div class="geo-quiz-actions">${controls}</div>`
     : "";
+  const nextInCluster = choiceOnMap || (isWaterPack() && showMap);
   const feedbackHtml = `<div id="geo-feedback" class="quiz-feedback" hidden></div>`;
   const nextHtml = `
           <div class="geo-next-row" id="geo-next-row" hidden>
@@ -3571,7 +3567,7 @@ function renderPlay() {
            ${feedbackHtml}
          </div>
          <div class="geo-chrome-end">
-           ${choiceOnMap ? "" : nextHtml}
+           ${nextInCluster ? "" : nextHtml}
          </div>
        </div>`
     : prompt;
@@ -3583,7 +3579,7 @@ function renderPlay() {
           <div class="geo-answer-cluster">
             ${actionsHtml}
             ${waterDock}
-            ${choiceOnMap ? nextHtml : ""}
+            ${nextInCluster ? nextHtml : ""}
           </div>
         </div>`
     : flagsPlay
@@ -3601,7 +3597,6 @@ function renderPlay() {
   geo.root.innerHTML = `
     <div class="${playClass}">
       ${geoCrumbs(MODE_META[geo.mode]?.label || geo.mode)}
-      ${isWaterPack() ? waterFilterBarHtml() : ""}
       <div class="geo-toolbar">
         <a class="secondary-btn" href="${packHref()}">Modes</a>
         <p class="speech-kicker">${escapeHtml(geo.pack.name)} · ${escapeHtml(
@@ -3626,7 +3621,6 @@ function renderPlay() {
 
   bindMapControls(geo.root.querySelector("#geo-map"));
   bindPlay();
-  bindWaterFilters();
 }
 
 const PIN_MISS_LIMIT = 3;

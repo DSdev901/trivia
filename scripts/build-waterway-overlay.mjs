@@ -185,23 +185,25 @@ function dilate(flags, n = 1) {
   return out;
 }
 
-function borderStretches(line, index, maxKm) {
-  if (!line || line.length < 2) return [];
+function splitStretches(line, index, maxKm) {
+  const inland = [];
+  const border = [];
+  if (!line || line.length < 2) return { inland, border };
   const flags = dilate(line.map((p) => nearBorder(p, index, maxKm)), 1);
-  const out = [];
-  let cur = null;
+  let cur = [line[0]];
+  let mode = flags[0] || flags[1];
   for (let i = 1; i < line.length; i += 1) {
     const on = flags[i - 1] || flags[i];
-    if (on) {
-      if (!cur) cur = [line[i - 1]];
+    if (on === mode) {
       cur.push(line[i]);
-    } else if (cur) {
-      if (cur.length >= 2) out.push(cur);
-      cur = null;
+      continue;
     }
+    (mode ? border : inland).push(cur);
+    cur = [line[i - 1], line[i]];
+    mode = on;
   }
-  if (cur && cur.length >= 2) out.push(cur);
-  return out;
+  (mode ? border : inland).push(cur);
+  return { inland, border };
 }
 
 function collectBorderLines() {
@@ -242,17 +244,24 @@ function riverMarkup(fc, borderIndex) {
     if (cla === "Lake Centerline" && !borderRiver) continue;
     const rank = Number(f.properties?.scalerank);
     if (Number.isFinite(rank) && rank > 99) continue;
-    const d = toPath(f);
-    if (!d) continue;
     const rankClass = Number.isFinite(rank) ? ` geo-river-r${rank}` : "";
-    lines.push(`<path class="geo-river${rankClass}" d="${d}"/>`);
-    if (!borderRiver) continue;
-    const stretches = geomLines(f.geometry).flatMap((line) =>
-      borderStretches(line, borderIndex, BORDER_KM)
+    if (!borderRiver) {
+      const d = toPath(f);
+      if (d) lines.push(`<path class="geo-river${rankClass}" d="${d}"/>`);
+      continue;
+    }
+    const parts = geomLines(f.geometry).map((line) =>
+      splitStretches(line, borderIndex, BORDER_KM)
     );
+    const inland = parts.flatMap((p) => p.inland);
+    const stretches = parts.flatMap((p) => p.border);
     const pts = geomLines(f.geometry).reduce((n, line) => n + line.length, 0);
     const borderPts = stretches.reduce((n, line) => n + line.length, 0);
     stats.push({ name, pts, borderPts, stretches: stretches.length });
+    for (const coords of inland) {
+      const d = toPath({ type: "LineString", coordinates: coords });
+      if (d) lines.push(`<path class="geo-river${rankClass}" d="${d}"/>`);
+    }
     const dashPaths = stretches
       .map((coords) => toPath({ type: "LineString", coordinates: coords }))
       .filter(Boolean);
