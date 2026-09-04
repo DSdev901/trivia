@@ -3709,44 +3709,10 @@ function flashPinMiss(id) {
   }, PIN_MISS_MS);
 }
 
-const TYPE_VIEWPORT =
-  "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, interactive-widget=overlays-content";
-const DEFAULT_VIEWPORT =
-  "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover";
-
-function setTypeViewportMeta(on) {
-  const meta = document.querySelector('meta[name="viewport"]');
-  if (!meta) return;
-  meta.setAttribute("content", on ? TYPE_VIEWPORT : DEFAULT_VIEWPORT);
-}
-
-function setVirtualKeyboardOverlay(on) {
-  try {
-    const vk = navigator.virtualKeyboard;
-    if (!vk) return;
-    vk.overlaysContent = on;
-  } catch {
-    /* VirtualKeyboard is optional. */
-  }
-}
-
-function typeViewportMetrics() {
+function typeKeyboardInset() {
   const vv = window.visualViewport;
-  const top = vv ? Math.max(0, Math.round(vv.offsetTop)) : 0;
-  let cover = vv ? Math.max(0, Math.round(window.innerHeight - vv.height)) : 0;
-  try {
-    const vkH = navigator.virtualKeyboard?.boundingRect?.height;
-    if (vkH) cover = Math.max(cover, Math.round(vkH));
-  } catch {
-    /* ignore */
-  }
-  return { top, cover };
-}
-
-function pinTypeScroll() {
-  window.scrollTo(0, 0);
-  document.documentElement.scrollTop = 0;
-  document.body.scrollTop = 0;
+  if (!vv) return 0;
+  return Math.max(0, Math.round(window.innerHeight - vv.height - vv.offsetTop));
 }
 
 function stopTypeKeyboard() {
@@ -3755,46 +3721,30 @@ function stopTypeKeyboard() {
     window.visualViewport?.removeEventListener("resize", apply);
     window.visualViewport?.removeEventListener("scroll", apply);
     window.removeEventListener("resize", apply);
-    try {
-      navigator.virtualKeyboard?.removeEventListener("geometrychange", apply);
-    } catch {
-      /* ignore */
-    }
     geo._typeKb = null;
   }
-  setVirtualKeyboardOverlay(false);
-  setTypeViewportMeta(false);
   const play = geo.root?.querySelector(".geo-play--type");
   play?.style.removeProperty("--geo-keyboard");
-  play?.style.removeProperty("--geo-vv-top");
   play?.classList.remove("is-keyboard");
 }
 
 function bindTypeKeyboard(play) {
   stopTypeKeyboard();
   if (!play || !window.matchMedia("(max-width: 860px)").matches) return;
-  setTypeViewportMeta(true);
-  setVirtualKeyboardOverlay(true);
   const apply = () => {
     if (!play.isConnected) {
       stopTypeKeyboard();
       return;
     }
-    pinTypeScroll();
-    const { top, cover } = typeViewportMetrics();
-    play.style.setProperty("--geo-vv-top", `${top}px`);
-    play.style.setProperty("--geo-keyboard", `${Math.max(0, cover - top)}px`);
-    play.classList.toggle("is-keyboard", cover > 0 || top > 0);
+    const inset = typeKeyboardInset();
+    play.style.setProperty("--geo-keyboard", `${inset}px`);
+    play.classList.toggle("is-keyboard", inset > 0);
+    if (inset > 0) window.scrollTo(0, 0);
   };
   geo._typeKb = apply;
   window.visualViewport?.addEventListener("resize", apply);
   window.visualViewport?.addEventListener("scroll", apply);
   window.addEventListener("resize", apply);
-  try {
-    navigator.virtualKeyboard?.addEventListener("geometrychange", apply);
-  } catch {
-    /* ignore */
-  }
   apply();
 }
 
@@ -3833,18 +3783,10 @@ function bindPlay() {
     const input = geo.root.querySelector("#geo-type-input");
     const compact = window.matchMedia("(max-width: 860px)").matches;
     bindTypeKeyboard(geo.root.querySelector(".geo-play--type"));
-    input?.addEventListener("touchstart", () => {
-      if (!compact) return;
-      input.focus({ preventScroll: true });
-      pinTypeScroll();
-    }, { passive: true });
     input?.addEventListener("focus", () => {
       if (compact) {
-        pinTypeScroll();
-        requestAnimationFrame(() => {
-          pinTypeScroll();
-          geo._typeKb?.();
-        });
+        window.scrollTo(0, 0);
+        requestAnimationFrame(() => window.scrollTo(0, 0));
         return;
       }
       requestAnimationFrame(() => {
