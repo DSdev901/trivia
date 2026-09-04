@@ -54,6 +54,18 @@ const LANDLOCKED = new Set([
   "UG", "UZ", "VA", "XK", "ZM", "ZW",
 ]);
 
+/** Pacific countries/territories that stay specks on a real-scale world map. */
+const PACIFIC_ISLAND_IDS = new Set([
+  "FJ", "SB", "VU", "WS", "TO", "TV", "NR", "PW", "MH", "FM", "KI",
+  "AS", "CK", "PF", "GU", "NC", "NU", "MP", "PN", "TK", "WF",
+]);
+const PACIFIC_MICRO_IDS = new Set([
+  "NR", "TV", "PW", "WS", "TO", "TK", "NU", "AS", "GU", "MP", "WF", "PN", "CK",
+]);
+const PACIFIC_CHAIN_IDS = new Set(["KI", "FM", "MH", "PF"]);
+const PACIFIC_MARK_DRAW_PX = 24;
+const PACIFIC_LAND_SEE_PX = 22;
+
 /** Pin and Type are the main map modes; the rest are practice variants. */
 const MODE_META = {
   pin: {
@@ -911,6 +923,10 @@ function regionsForId(host, id) {
   return [...host.querySelectorAll(`.geo-region[data-id="${CSS.escape(id)}"]`)];
 }
 
+function sourceRegionsForId(host, id) {
+  return regionsForId(host, id).filter((el) => !el.classList.contains("geo-island-mark"));
+}
+
 function bboxUnion(boxes) {
   if (!boxes.length) return null;
   return {
@@ -943,7 +959,7 @@ function packCorePoint(host, ids) {
   const cxs = [];
   const cys = [];
   for (const id of ids) {
-    regionsForId(host, id).forEach((el) => {
+    sourceRegionsForId(host, id).forEach((el) => {
       const m = mainlandForEl(el);
       if (!m) return;
       cxs.push(m.cx);
@@ -973,7 +989,7 @@ function isWorldCountriesMap() {
 function packFitBounds(host, ids, { mapW, mapH, core }) {
   const boxes = [];
   for (const id of ids) {
-    regionsForId(host, id).forEach((el) => {
+    sourceRegionsForId(host, id).forEach((el) => {
       const m = mainlandForEl(el);
       if (!m) return;
       let { minX, minY, maxX, maxY, cx, cy } = m;
@@ -1008,7 +1024,7 @@ function packFitBounds(host, ids, { mapW, mapH, core }) {
 function simpleBoundsForIds(host, ids) {
   const boxes = [];
   for (const id of ids) {
-    regionsForId(host, id).forEach((el) => {
+    sourceRegionsForId(host, id).forEach((el) => {
       try {
         const b = el.getBBox();
         if (!b.width && !b.height) return;
@@ -1081,7 +1097,7 @@ function markerCameraIds(host, ids) {
 function mainlandBoundsForIds(host, ids) {
   const boxes = [];
   for (const id of ids) {
-    regionsForId(host, id).forEach((el) => {
+    sourceRegionsForId(host, id).forEach((el) => {
       const m = compactMainlandForEl(el);
       if (m) boxes.push(m);
     });
@@ -1100,7 +1116,7 @@ function unwrapPackRegions(host, svg) {
   if (!preview || preview.useFullMap) return;
 
   ids.forEach((id) => {
-    regionsForId(host, id).forEach((el) => {
+    sourceRegionsForId(host, id).forEach((el) => {
       if (el.tagName.toLowerCase() === "circle") {
         const rec = circleRecord(el);
         if (!rec) return;
@@ -1150,6 +1166,7 @@ function pullbackPadRatio(padRatio) {
 function packFitPadRatio() {
   if (isWaterPack()) return 0.22;
   if (geo.pack?.overlay === "markers") return 0.12;
+  if (isOceaniaIslandPack()) return 0.08;
   return 0.03;
 }
 
@@ -1223,7 +1240,7 @@ function allRegionIds(host) {
 function quizBoundsForIds(host, ids, { mapW, mapH, core, coreOnly = false } = {}) {
   const boxes = [];
   for (const id of ids) {
-    regionsForId(host, id).forEach((el) => {
+    sourceRegionsForId(host, id).forEach((el) => {
       const m = compactMainlandForEl(el, core);
       if (!m) return;
       let { minX, minY, maxX, maxY, cx, cy, area } = m;
@@ -1248,6 +1265,7 @@ function quizBoundsForIds(host, ids, { mapW, mapH, core, coreOnly = false } = {}
 }
 
 function coreLandBoxes(boxes) {
+  if (isOceaniaIslandPack()) return boxes;
   if (boxes.length < 8) return boxes;
   const cxs = boxes.map((b) => b.cx).sort((a, b) => a - b);
   const cys = boxes.map((b) => b.cy).sort((a, b) => a - b);
@@ -1509,6 +1527,65 @@ function nearestMarkerId(host, svg, pt) {
   return best;
 }
 
+function isOceaniaIslandPack() {
+  if (geo.pack?.overlay === "markers" || isWaterPack()) return false;
+  if (!isWorldCountriesMap()) return false;
+  const blob = `${geo.pack?.id || ""} ${geo.pack?.name || ""}`.toLowerCase();
+  if (/oceania|polynesia|micronesia|melanesia/.test(blob)) return true;
+  const items = geo.items || [];
+  if (items.length < 3) return false;
+  const n = items.filter((it) => PACIFIC_ISLAND_IDS.has(it.id)).length;
+  return n >= 3 && n >= items.length * 0.4;
+}
+
+function pacificIslandPoints(host, id) {
+  const pts = [];
+  for (const el of sourceRegionsForId(host, id)) {
+    const parts = elementParts(el);
+    if (parts.length) {
+      for (const p of parts) pts.push({ x: p.cx, y: p.cy });
+    } else {
+      const a = regionAnchor(host, id);
+      if (a) pts.push({ x: a.x, y: a.y });
+    }
+  }
+  host.querySelectorAll(`.geo-island-mark[data-id="${CSS.escape(id)}"]`).forEach((el) => {
+    const x = parseFloat(el.getAttribute("cx"));
+    const y = parseFloat(el.getAttribute("cy"));
+    if (Number.isFinite(x) && Number.isFinite(y)) pts.push({ x, y });
+  });
+  return pts;
+}
+
+function isHardToHitIsland(host, id) {
+  if (!PACIFIC_ISLAND_IDS.has(id)) return false;
+  if (PACIFIC_MICRO_IDS.has(id) || PACIFIC_CHAIN_IDS.has(id)) return true;
+  const svg = host.querySelector("svg");
+  if (!svg) return true;
+  const cluster = islandClusterPx(host, id, mapPxScale(svg));
+  return cluster.long < PACIFIC_LAND_SEE_PX || cluster.short < 10;
+}
+
+function nearestPacificIslandId(host, svg, e) {
+  const pt = clientToSvgPoint(svg, e.clientX, e.clientY);
+  if (!pt) return null;
+  const maxR = markerTapRadiusSvg(svg);
+  const maxR2 = maxR * maxR;
+  let best = null;
+  let bestD = Infinity;
+  for (const id of packItemIds()) {
+    if (!PACIFIC_ISLAND_IDS.has(id)) continue;
+    for (const p of pacificIslandPoints(host, id)) {
+      const d2 = (pt.x - p.x) ** 2 + (pt.y - p.y) ** 2;
+      if (d2 <= maxR2 && d2 < bestD) {
+        bestD = d2;
+        best = id;
+      }
+    }
+  }
+  return best;
+}
+
 function mapTargetId(e) {
   const host = e.currentTarget?.closest?.("#geo-map") || geo.root?.querySelector("#geo-map");
   const svg = host?.querySelector("svg");
@@ -1522,6 +1599,7 @@ function mapTargetId(e) {
   }
   const stack = document.elementsFromPoint(e.clientX, e.clientY);
   let tinyId = null;
+  const oceania = isOceaniaIslandPack();
   for (const node of stack) {
     if (
       node.classList?.contains("geo-map-nav") ||
@@ -1534,12 +1612,22 @@ function mapTargetId(e) {
     ) {
       continue;
     }
-    if (node.classList?.contains("geo-tiny-hit")) {
+    if (node.classList?.contains("geo-tiny-hit") || node.classList?.contains("geo-island-mark")) {
       if (!tinyId && node.dataset.id) tinyId = node.dataset.id;
       continue;
     }
     const id = regionIdFromNode(node);
-    if (id) return id;
+    if (id) {
+      if (oceania && host && isHardToHitIsland(host, id)) {
+        tinyId = tinyId || id;
+        continue;
+      }
+      return id;
+    }
+  }
+  if (oceania && host && svg) {
+    const snap = nearestPacificIslandId(host, svg, e);
+    if (snap) return snap;
   }
   return tinyId;
 }
@@ -1585,7 +1673,7 @@ function pinTargetNoun() {
 }
 
 function regionAnchor(host, id) {
-  const els = regionsForId(host, id);
+  const els = sourceRegionsForId(host, id);
   if (!els.length) return null;
   const el = els[0];
   const tag = el.tagName.toLowerCase();
@@ -1945,6 +2033,131 @@ function syncMarkerPinScale(host) {
   });
 }
 
+function islandClusterPx(host, id, s) {
+  let long = 0;
+  let short = 0;
+  for (const el of sourceRegionsForId(host, id)) {
+    if (el.classList.contains("geo-island-dot") || el.tagName.toLowerCase() === "circle") {
+      const rec = circleRecord(el);
+      if (!rec) continue;
+      const px = rec.r * 2 * s;
+      if (px > long) {
+        long = px;
+        short = px;
+      }
+      continue;
+    }
+    const m = compactMainlandForEl(el) || mainlandForEl(el);
+    if (!m) continue;
+    const w = (m.maxX - m.minX) * s;
+    const h = (m.maxY - m.minY) * s;
+    const span = Math.max(w, h);
+    if (span > long) {
+      long = span;
+      short = Math.min(w, h);
+    }
+  }
+  return { long, short };
+}
+
+function islandNeedsMark(id, cluster) {
+  if (PACIFIC_MICRO_IDS.has(id)) return true;
+  if (PACIFIC_CHAIN_IDS.has(id)) return true;
+  if (!PACIFIC_ISLAND_IDS.has(id)) return false;
+  return cluster.long < PACIFIC_LAND_SEE_PX || cluster.short < 10;
+}
+
+function appendIslandMark(svg, id, x, y, r, src) {
+  const NS = "http://www.w3.org/2000/svg";
+  const mark = document.createElementNS(NS, "circle");
+  mark.setAttribute("class", "geo-region geo-island-dot geo-island-mark");
+  mark.dataset.id = id;
+  mark.setAttribute("cx", String(x));
+  mark.setAttribute("cy", String(y));
+  mark.setAttribute("r", String(r));
+  ["is-active", "is-correct", "is-wrong", "is-miss-flash", "is-dim"].forEach((cls) => {
+    if (src?.classList.contains(cls)) mark.classList.add(cls);
+  });
+  svg.appendChild(mark);
+}
+
+function syncPacificIslandMarks(host) {
+  if (!host || isOutlineView() || geo.pack?.overlay === "markers") return;
+  if (!isOceaniaIslandPack()) return;
+  const svg = host.querySelector("svg");
+  if (!svg) return;
+  svg.querySelectorAll(".geo-island-mark").forEach((n) => n.remove());
+  const s = mapPxScale(svg);
+  const drawPx = window.matchMedia("(pointer: coarse)").matches
+    ? PACIFIC_MARK_DRAW_PX + 4
+    : PACIFIC_MARK_DRAW_PX;
+  const r = drawPx / 2 / Math.max(s, 1e-9);
+  const partLimit = 12;
+
+  for (const id of packItemIds()) {
+    if (!PACIFIC_ISLAND_IDS.has(id)) continue;
+    const els = sourceRegionsForId(host, id);
+    if (!els.length) continue;
+    const a = placeAnchorCached(host, id);
+    if (!a) continue;
+    const cluster = islandClusterPx(host, id, s);
+    if (!islandNeedsMark(id, cluster)) continue;
+
+    const el = els[0];
+    if (el.classList.contains("geo-island-dot")) {
+      el.setAttribute("r", String(r));
+      continue;
+    }
+    clearIslandBoost(el);
+
+    if (PACIFIC_CHAIN_IDS.has(id)) {
+      const parts = els
+        .flatMap((node) => elementParts(node))
+        .filter((p) => Math.max(p.maxX - p.minX, p.maxY - p.minY) * s < PACIFIC_LAND_SEE_PX)
+        .sort((p, q) => q.area - p.area)
+        .slice(0, partLimit);
+      if (parts.length) {
+        parts.forEach((p) => appendIslandMark(svg, id, p.cx, p.cy, r, el));
+        continue;
+      }
+    }
+    appendIslandMark(svg, id, a.x, a.y, r, el);
+  }
+}
+
+function addPacificHitPads(svg, host, id, minR) {
+  const NS = "http://www.w3.org/2000/svg";
+  const addHit = (cx, cy, hitR) => {
+    const hit = document.createElementNS(NS, "circle");
+    hit.setAttribute("class", "geo-tiny-hit");
+    hit.dataset.id = id;
+    hit.setAttribute("cx", String(cx));
+    hit.setAttribute("cy", String(cy));
+    hit.setAttribute("r", String(hitR));
+    svg.appendChild(hit);
+  };
+  for (const el of sourceRegionsForId(host, id)) {
+    const parts = elementParts(el);
+    if (!parts.length) {
+      const a = regionAnchor(host, id);
+      if (a) addHit(a.x, a.y, Math.max(minR, Math.max(a.w, a.h) / 2));
+      continue;
+    }
+    for (const p of parts) {
+      const span = Math.max(p.maxX - p.minX, p.maxY - p.minY);
+      addHit(p.cx, p.cy, Math.max(minR, span / 2));
+    }
+  }
+  host.querySelectorAll(`.geo-island-mark[data-id="${CSS.escape(id)}"]`).forEach((mark) => {
+    const cx = parseFloat(mark.getAttribute("cx"));
+    const cy = parseFloat(mark.getAttribute("cy"));
+    const markR = parseFloat(mark.getAttribute("r") || "0") || 0;
+    if (Number.isFinite(cx) && Number.isFinite(cy)) {
+      addHit(cx, cy, Math.max(minR, markR));
+    }
+  });
+}
+
 function syncTinyIslandScale(host) {
   syncMarkerPinScale(host);
   if (!host || isOutlineView() || geo.pack?.overlay === "markers") return;
@@ -1959,8 +2172,17 @@ function syncTinyIslandScale(host) {
   const ids = tinyLandIds(host, svg);
   const NS = "http://www.w3.org/2000/svg";
   host.querySelectorAll(".geo-island-boost").forEach((n) => n.remove());
+  syncPacificIslandMarks(host);
+  const marked = new Set(
+    [...host.querySelectorAll(".geo-island-mark, .geo-island-dot")].map((el) => el.dataset.id)
+  );
 
   for (const id of ids) {
+    if (marked.has(id)) {
+      const cached = placeAnchorCached(host, id);
+      if (cached) clearIslandBoost(cached.el);
+      continue;
+    }
     const a = placeAnchorCached(host, id);
     if (!a) continue;
     const landPx = landPixelSize(a, sx, sy);
@@ -2016,7 +2238,12 @@ function syncTinyHitPads(host) {
   const minR = markerTapRadiusSvg(svg);
   const inPack = packItemIds();
   const NS = "http://www.w3.org/2000/svg";
+  const oceania = isOceaniaIslandPack();
   for (const id of inPack) {
+    if (oceania && PACIFIC_ISLAND_IDS.has(id)) {
+      addPacificHitPads(svg, host, id, minR);
+      continue;
+    }
     const anchor = regionAnchor(host, id);
     if (!anchor) continue;
     const longPx = Math.max(anchor.w, anchor.h) * s;

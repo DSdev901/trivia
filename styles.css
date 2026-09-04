@@ -4042,6 +4042,15 @@ a.ce-tab {
   stroke-width: 1.4;
 }
 
+.geo-map-frame .geo-island-mark {
+  fill: #8aa6be;
+  stroke: #f4f8fb;
+  stroke-width: 1.6;
+  vector-effect: non-scaling-stroke;
+  pointer-events: all;
+  cursor: pointer;
+}
+
 .geo-map-frame .geo-island-dot.is-out {
   fill: #c9d3dc;
   stroke: #e4ebf1;
