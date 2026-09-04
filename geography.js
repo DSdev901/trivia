@@ -275,7 +275,7 @@ function injectFeatureMarkers(svgText, items) {
       const kind = it.kind ? ` geo-marker-${it.kind}` : "";
       return `<g class="geo-pin" data-id="${it.id}">
         <circle class="geo-marker-hit" cx="${it.x}" cy="${it.y}" r="${r}"/>
-        <circle id="${it.id}" data-id="${it.id}" class="geo-region geo-marker${kind}" cx="${it.x}" cy="${it.y}" r="${r}"/>
+        <circle id="${it.id}" data-id="${it.id}" class="geo-region geo-marker${kind}" cx="${it.x}" cy="${it.y}" r="${r}" data-base-r="${r}"/>
       </g>`;
     })
     .join("\n  ");
@@ -297,6 +297,7 @@ function ensureMarkerPins(host) {
     hit.setAttribute("cx", el.getAttribute("cx") || "0");
     hit.setAttribute("cy", el.getAttribute("cy") || "0");
     hit.setAttribute("r", el.getAttribute("r") || "3");
+    if (!el.dataset.baseR) el.dataset.baseR = el.getAttribute("r") || "3";
     el.parentNode?.insertBefore(g, el);
     g.append(hit, el);
   });
@@ -1898,7 +1899,30 @@ function clearIslandBoost(el) {
   delete el.dataset.geoBoosted;
 }
 
+/** Keep waterway pins a steady screen size when the camera is tight. */
+const WATER_PIN_DRAW_PX = 4.5;
+
+function syncMarkerPinScale(host) {
+  if (!host || !isWaterPack() || !usesMarkerPins(host)) return;
+  const svg = host.querySelector("svg");
+  if (!svg) return;
+  if (!host.isConnected) return;
+  const rect = svg.getBoundingClientRect();
+  if (rect.width < 8) {
+    requestAnimationFrame(() => syncMarkerPinScale(host));
+    return;
+  }
+  const s = mapPxScale(svg);
+  const zoomed = WATER_PIN_DRAW_PX / Math.max(s, 1e-9);
+  svg.querySelectorAll(".geo-pin .geo-region.geo-marker").forEach((el) => {
+    const base = parseFloat(el.dataset.baseR || el.getAttribute("r") || "3") || 3;
+    if (!el.dataset.baseR) el.dataset.baseR = String(base);
+    el.setAttribute("r", trimNum(Math.min(base, zoomed)));
+  });
+}
+
 function syncTinyIslandScale(host) {
+  syncMarkerPinScale(host);
   if (!host || isOutlineView() || geo.pack?.overlay === "markers") return;
   const svg = host.querySelector("svg");
   if (!svg) return;
