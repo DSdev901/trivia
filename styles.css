@@ -4920,6 +4920,13 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     display: contents;
   }
 
+  .geo-play--map.geo-play--type.is-keyboard .geo-play-close {
+    position: fixed;
+    top: calc(0.5rem + env(safe-area-inset-top, 0px));
+    right: max(0.5rem, env(safe-area-inset-right, 0px));
+    z-index: 20;
+  }
+
   .geo-play--map.geo-play--type .geo-side {
     display: flex;
     flex-direction: column;

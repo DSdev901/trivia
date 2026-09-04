@@ -6,7 +6,6 @@ const PACKS_PATH = "data/geography/packs.json";
 const MAPS = {
   continents: "data/geography/maps/continents.svg",
   "continents-oceans": "data/geography/maps/continents-oceans.svg",
-  "continents-cartoon": "data/geography/maps/continents-cartoon.svg",
   "world-countries": "data/geography/maps/world-countries.svg",
   "us-states": "data/geography/maps/us-states.svg",
   "canada-provinces": "data/geography/maps/canada-provinces.svg",

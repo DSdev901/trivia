@@ -175,21 +175,6 @@
             "study"
           ],
           "itemCount": 194
-        },
-        {
-          "id": "continents-cartoon",
-          "name": "Continents (Cartoon)",
-          "blurb": "Same seven continents on a playful cartoon map.",
-          "map": "continents-cartoon",
-          "quiz": "places",
-          "modes": [
-            "pin",
-            "type",
-            "name",
-            "choice",
-            "study"
-          ],
-          "itemCount": 7
         }
       ],
       "blurb": "Continents, countries, and physical features of the whole planet.",
@@ -217,8 +202,7 @@
             "world-populous",
             "world-populous-capitals",
             "world-flags",
-            "world-outlines",
-            "continents-cartoon"
+            "world-outlines"
           ]
         }
       ]
@@ -4636,21 +4620,6 @@
         "study"
       ],
       "itemCount": 14
-    },
-    {
-      "id": "continents-cartoon",
-      "name": "Continents (Cartoon)",
-      "blurb": "Same seven continents on a playful cartoon map.",
-      "map": "continents-cartoon",
-      "quiz": "places",
-      "modes": [
-        "pin",
-        "type",
-        "name",
-        "choice",
-        "study"
-      ],
-      "itemCount": 7
     },
     {
       "id": "world-physical",
