@@ -225,13 +225,31 @@ const ANSWER_ALIAS_GROUPS = [
   ["northwest territories", "nwt"],
 ];
 
+function answerNameParts(s) {
+  return String(s || "")
+    .split(",")
+    .map((part) => normalizeAnswer(part.replace(/\([^)]*\)/g, " ")))
+    .filter(Boolean);
+}
+
+function answersAliased(a, b) {
+  if (!a || !b) return false;
+  if (a === b) return true;
+  return ANSWER_ALIAS_GROUPS.some((group) => group.includes(a) && group.includes(b));
+}
+
 function answersMatch(input, expected, { kind } = {}) {
   const a = normalizeAnswer(input);
   const b = normalizeAnswer(expected);
   if (!a || !b) return false;
-  if (a === b) return true;
-  for (const group of ANSWER_ALIAS_GROUPS) {
-    if (group.includes(a) && group.includes(b)) return true;
+  if (answersAliased(a, b)) return true;
+  const aParts = answerNameParts(input);
+  const bParts = answerNameParts(expected);
+  if (
+    (aParts.length > 1 || bParts.length > 1) &&
+    aParts.some((part) => bParts.some((other) => answersAliased(part, other)))
+  ) {
+    return true;
   }
   if (b === "washington d c" && a === "washington") return true;
   const strippedA = a.replace(

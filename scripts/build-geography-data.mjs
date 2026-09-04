@@ -200,11 +200,17 @@ function flagEmoji(cc) {
     .join("");
 }
 
+const CAPITAL_OVERRIDES = {
+  GQ: "Ciudad de la Paz",
+  SZ: "Mbabane (legislative), Lobamba (parliament)",
+};
+
 function toItem(c) {
+  const id = c.cca2;
   return {
-    id: c.cca2,
+    id,
     name: c.name.common,
-    capital: (c.capital && c.capital[0]) || "",
+    capital: CAPITAL_OVERRIDES[id] || (c.capital && c.capital[0]) || "",
     flag: flagEmoji(c.cca2),
     region: c.region,
     subregion: c.subregion || "",
