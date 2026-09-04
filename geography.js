@@ -109,6 +109,7 @@ const geo = {
   index: 0,
   correct: 0,
   wrong: 0,
+  missed: [],
   answered: false,
   selectedId: null,
   _mapLabel: null,
@@ -275,7 +276,7 @@ function injectFeatureMarkers(svgText, items) {
       const kind = it.kind ? ` geo-marker-${it.kind}` : "";
       return `<g class="geo-pin" data-id="${it.id}">
         <circle class="geo-marker-hit" cx="${it.x}" cy="${it.y}" r="${r}"/>
-        <circle id="${it.id}" data-id="${it.id}" class="geo-region geo-marker${kind}" cx="${it.x}" cy="${it.y}" r="${r}"/>
+        <circle id="${it.id}" data-id="${it.id}" class="geo-region geo-marker${kind}" cx="${it.x}" cy="${it.y}" r="${r}" data-base-r="${r}"/>
       </g>`;
     })
     .join("\n  ");
@@ -297,6 +298,7 @@ function ensureMarkerPins(host) {
     hit.setAttribute("cx", el.getAttribute("cx") || "0");
     hit.setAttribute("cy", el.getAttribute("cy") || "0");
     hit.setAttribute("r", el.getAttribute("r") || "3");
+    if (!el.dataset.baseR) el.dataset.baseR = el.getAttribute("r") || "3";
     el.parentNode?.insertBefore(g, el);
     g.append(hit, el);
   });
@@ -1898,7 +1900,30 @@ function clearIslandBoost(el) {
   delete el.dataset.geoBoosted;
 }
 
+/** Keep waterway pins a steady screen size when the camera is tight. */
+const WATER_PIN_DRAW_PX = 4.5;
+
+function syncMarkerPinScale(host) {
+  if (!host || !isWaterPack() || !usesMarkerPins(host)) return;
+  const svg = host.querySelector("svg");
+  if (!svg) return;
+  if (!host.isConnected) return;
+  const rect = svg.getBoundingClientRect();
+  if (rect.width < 8) {
+    requestAnimationFrame(() => syncMarkerPinScale(host));
+    return;
+  }
+  const s = mapPxScale(svg);
+  const zoomed = WATER_PIN_DRAW_PX / Math.max(s, 1e-9);
+  svg.querySelectorAll(".geo-pin .geo-region.geo-marker").forEach((el) => {
+    const base = parseFloat(el.dataset.baseR || el.getAttribute("r") || "3") || 3;
+    if (!el.dataset.baseR) el.dataset.baseR = String(base);
+    el.setAttribute("r", trimNum(Math.min(base, zoomed)));
+  });
+}
+
 function syncTinyIslandScale(host) {
+  syncMarkerPinScale(host);
   if (!host || isOutlineView() || geo.pack?.overlay === "markers") return;
   const svg = host.querySelector("svg");
   if (!svg) return;
@@ -3329,11 +3354,17 @@ function renderPackModes() {
   bindWaterFilters();
 }
 
-function startMode(mode) {
+function startMode(mode, retryItems = null) {
   geo.mode = mode;
   applyWaterItemFilters();
-  const pool =
-    mode === "capitals" ? geo.items.filter((i) => i.capital) : geo.items;
+  const retry = Array.isArray(retryItems) && retryItems.length
+    ? retryItems.map((item) => byId(item.id || item)).filter(Boolean)
+    : null;
+  const pool = retry
+    ? retry
+    : mode === "capitals"
+      ? geo.items.filter((i) => i.capital)
+      : geo.items;
   if (!pool.length) {
     geo.root.innerHTML = `
       <div class="geo-shell">
@@ -3349,6 +3380,7 @@ function startMode(mode) {
   geo.index = 0;
   geo.correct = 0;
   geo.wrong = 0;
+  geo.missed = [];
   geo.answered = false;
   geo.selectedId = null;
   geo._pinMisses = 0;
@@ -3719,7 +3751,11 @@ function judge(ok, clickedMapId = null, clickedBtn = null) {
   clearPinMissFlash();
   geo.answered = true;
   if (ok) geo.correct += 1;
-  else geo.wrong += 1;
+  else {
+    geo.wrong += 1;
+    const missed = currentItem();
+    if (missed) geo.missed.push(missed);
+  }
 
   const item = currentItem();
   const feedback = geo.root.querySelector("#geo-feedback");
@@ -3756,6 +3792,7 @@ function judge(ok, clickedMapId = null, clickedBtn = null) {
 
 function renderDone() {
   const total = geo.queue.length;
+  const canRetry = geo.missed.length > 0;
   scrollPageTop();
   geo.root.innerHTML = `
     <div class="geo-shell">
@@ -3767,7 +3804,14 @@ function renderDone() {
         <ul class="stats">
           <li><strong>${total}</strong> questions</li>
           <li><strong>${geo.correct}</strong> correct</li>
-          <li><strong>${geo.wrong}</strong> wrong</li>
+          <li class="quiz-stat--missed">
+            <span><strong>${geo.wrong}</strong> wrong</span>
+            ${
+              canRetry
+                ? `<button type="button" class="quiz-cta quiz-retry" id="geo-retry">Retry</button>`
+                : ""
+            }
+          </li>
           <li><strong>${
             total ? Math.round((geo.correct / total) * 100) : 0
           }%</strong> accuracy</li>
@@ -3780,6 +3824,9 @@ function renderDone() {
 
   geo.root.querySelector("#geo-again")?.addEventListener("click", () => {
     startMode(geo.mode);
+  });
+  geo.root.querySelector("#geo-retry")?.addEventListener("click", () => {
+    startMode(geo.mode, geo.missed);
   });
 }
 
@@ -3800,6 +3847,7 @@ export function cleanupGeography() {
   geo.pack = null;
   geo.mode = null;
   geo.queue = [];
+  geo.missed = [];
   geo.items = [];
   geo.allItems = [];
   geo.mapSvg = "";

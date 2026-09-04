@@ -2196,6 +2196,21 @@ a.ce-tab {
   border: 1px solid var(--stripe);
 }
 
+.quiz-done .stats li.quiz-stat--missed {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.55rem 0.85rem;
+}
+
+.quiz-done .quiz-retry {
+  margin-left: auto;
+  padding: 0.38rem 0.95rem;
+  font-size: 0.88rem;
+  line-height: 1.2;
+}
+
 @media (max-width: 560px) {
   .president-btn {
     flex-wrap: wrap;
