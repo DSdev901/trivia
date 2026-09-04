@@ -1508,6 +1508,116 @@ async function startQuiz(batchNumbers) {
   }
 }
 
+function elementQuizFlagText(question) {
+  const bits = [question.prompt];
+  if (question.tile?.symbol) bits.push(`symbol ${question.tile.symbol}`);
+  if (question.tile?.Z != null) bits.push(`Z ${question.tile.Z}`);
+  if (question.coord) bits.push(`period ${question.coord.period} group ${question.coord.group}`);
+  if (question.quote) bits.push(question.quote);
+  if (question.profile) bits.push(`Z ${question.profile.Z} ${question.profile.categoryLabel}`);
+  return `${bits.join(" — ")} → ${question.correct}`;
+}
+
+function elementQuizPromptHtml(question) {
+  const ask = `<p class="quiz-prompt quiz-el-ask">${escapeHtml(question.prompt)}</p>`;
+
+  if (question.kind === "element-tile" && question.tile) {
+    const face = question.tile.symbol
+      ? escapeHtml(question.tile.symbol)
+      : escapeHtml(String(question.tile.Z));
+    const sub = question.tile.symbol ? "Symbol" : "Atomic number";
+    return `${ask}
+      <div class="quiz-el-tile" aria-label="${sub} ${face}">
+        <span class="quiz-el-tile-face">${face}</span>
+        <span class="quiz-el-tile-sub">${sub}</span>
+      </div>`;
+  }
+
+  if (question.kind === "element-coord" && question.coord) {
+    return `${ask}
+      <div class="quiz-el-coord" aria-label="Period ${question.coord.period}, group ${question.coord.group}">
+        <div class="quiz-el-coord-cell">
+          <span class="quiz-el-coord-k">Period</span>
+          <span class="quiz-el-coord-v">${escapeHtml(String(question.coord.period))}</span>
+        </div>
+        <div class="quiz-el-coord-cell">
+          <span class="quiz-el-coord-k">Group</span>
+          <span class="quiz-el-coord-v">${escapeHtml(String(question.coord.group))}</span>
+        </div>
+      </div>`;
+  }
+
+  if (question.kind === "element-quote" && question.quote) {
+    return `${ask}
+      <blockquote class="quiz-el-quote">
+        <p>${escapeHtml(question.quote)}</p>
+      </blockquote>`;
+  }
+
+  if (question.kind === "element-profile" && question.profile) {
+    const p = question.profile;
+    const stats = [
+      ["Z", String(p.Z)],
+      p.period != null ? ["Period", String(p.period)] : null,
+      p.group != null && Number(p.group) > 0 ? ["Group", String(p.group)] : null,
+      p.atomicMass ? ["Mass", String(p.atomicMass)] : null,
+    ].filter(Boolean);
+
+    const origin = [];
+    if (p.discoveredBy) {
+      origin.push({
+        k: "Found",
+        v: p.discoveredYear ? `${p.discoveredBy} · ${p.discoveredYear}` : p.discoveredBy,
+      });
+    }
+    if (p.namedAfter) origin.push({ k: "Named for", v: p.namedAfter });
+
+    const facts = p.facts || [];
+    const catClass = `pt-cat-${p.category || "unknown"}`;
+
+    return `${ask}
+      <article class="quiz-el-card ${catClass}">
+        <header class="quiz-el-card-head">
+          <span class="quiz-el-card-fam">${escapeHtml(p.categoryLabel)}</span>
+          <span class="quiz-el-card-mark" aria-hidden="true">?</span>
+        </header>
+        <dl class="quiz-el-stats">
+          ${stats
+            .map(
+              ([k, v]) => `
+            <div>
+              <dt>${escapeHtml(k)}</dt>
+              <dd>${escapeHtml(v)}</dd>
+            </div>`
+            )
+            .join("")}
+        </dl>
+        ${
+          origin.length
+            ? `<dl class="quiz-el-meta">${origin
+                .map(
+                  (row) => `
+              <div>
+                <dt>${escapeHtml(row.k)}</dt>
+                <dd>${escapeHtml(row.v)}</dd>
+              </div>`
+                )
+                .join("")}</dl>`
+            : ""
+        }
+        ${
+          facts.length
+            ? `<ul class="quiz-el-facts">${facts
+                .map((fact) => `<li>${escapeHtml(fact)}</li>`)
+                .join("")}</ul>`
+            : ""
+        }
+      </article>`;
+  }
+
+  return `<p class="quiz-prompt">${escapeHtml(question.prompt).replace(/\n/g, "<br />")}</p>`;
+}
+
 function renderQuizQuestion() {
   const { rotation, total } = state.quiz;
   const question = currentQuestion(rotation);
@@ -1524,8 +1634,9 @@ function renderQuizQuestion() {
   const answered = rotation.answered;
   const qFlagId = quizFlagId(state.category.id, question.id);
   const flagged = isFlagged(qFlagId);
-
-  const dossier = state.quiz.difficulty === "easy" || question.id.startsWith("el-easy-");
+  const promptHtml = question.kind
+    ? elementQuizPromptHtml(question)
+    : `<p class="quiz-prompt">${escapeHtml(question.prompt).replace(/\n/g, "<br />")}</p>`;
 
   els.quiz.innerHTML = `
     <div class="quiz-shell">
@@ -1534,9 +1645,7 @@ function renderQuizQuestion() {
         <span>${progressRemoved} / ${total} cleared</span>
         <span>${answered} answered</span>
       </div>
-      <p class="quiz-prompt${dossier ? " quiz-prompt--dossier" : ""}">${escapeHtml(
-        question.prompt
-      ).replace(/\n/g, "<br />")}</p>
+      ${promptHtml}
       <div class="quiz-answer-dock">
       <div class="choice-list" id="choice-list">
         ${question.choices
@@ -1569,7 +1678,9 @@ function renderQuizQuestion() {
       type: "quiz",
       categoryId: state.category.id,
       questionId: question.id,
-      text: `${question.prompt.replace(/\n/g, " ")} → ${question.correct}`,
+      text: question.kind
+        ? elementQuizFlagText(question)
+        : `${question.prompt.replace(/\n/g, " ")} → ${question.correct}`,
       batch: question.batch,
     });
     const btn = document.getElementById("flag-quiz-q");

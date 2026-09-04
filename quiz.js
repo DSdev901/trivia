@@ -174,13 +174,17 @@ export function buildElementQuestions(focusElements, allElements, categoryLabels
     if (nameD.length === 3) {
       questions.push({
         id: `el-sym-${el.Z}`,
-        prompt: `What element has the symbol ${el.symbol}?`,
+        prompt: "What element has this symbol?",
+        kind: "element-tile",
+        tile: { symbol: el.symbol },
         choices: makeChoices(el.name, nameD),
         correct: el.name,
       });
       questions.push({
         id: `el-zname-${el.Z}`,
-        prompt: `Which element has atomic number ${el.Z}?`,
+        prompt: "Which element has this atomic number?",
+        kind: "element-tile",
+        tile: { Z: el.Z },
         choices: makeChoices(el.name, nameD),
         correct: el.name,
       });
@@ -255,7 +259,9 @@ export function buildElementQuestions(focusElements, allElements, categoryLabels
         if (posD.length === 3) {
           questions.push({
             id: `el-pos-${el.Z}`,
-            prompt: `Which element sits in period ${el.period}, group ${el.group}?`,
+            prompt: "Which element sits here on the table?",
+            kind: "element-coord",
+            coord: { period: el.period, group: el.group },
             choices: makeChoices(el.name, posD),
             correct: el.name,
           });
@@ -273,7 +279,9 @@ export function buildElementQuestions(focusElements, allElements, categoryLabels
       if (factD.length === 3) {
         questions.push({
           id: `el-fact-${el.Z}-0`,
-          prompt: `Which element does this describe?\n“${fact}”`,
+          prompt: "Which element does this describe?",
+          kind: "element-quote",
+          quote: fact,
           choices: makeChoices(el.name, factD),
           correct: el.name,
         });
@@ -306,32 +314,26 @@ export function buildEasyElementQuestions(
     if (nameD.length < 3) continue;
 
     const catLabel = categoryLabels[el.category] || el.category;
-    const lines = [
-      `Atomic number: ${el.Z}`,
-      `Family: ${catLabel}`,
-    ];
-    if (el.period != null) lines.push(`Period: ${el.period}`);
-    if (el.group != null && Number(el.group) > 0) {
-      lines.push(`Group: ${el.group}`);
-    }
-    if (el.atomicMass) lines.push(`Atomic mass: ${el.atomicMass}`);
-    if (el.discoveredBy) {
-      const when = el.discoveredYear ? ` (${el.discoveredYear})` : "";
-      lines.push(`Discovered / first noted: ${el.discoveredBy}${when}`);
-    }
-    if (el.namedAfter) lines.push(`Name origin: ${el.namedAfter}`);
-
     const facts = (el.facts || []).filter(
       (fact) => !factMentionsName(fact, el.name)
     );
-    if (facts.length) {
-      lines.push("Facts:");
-      for (const fact of facts) lines.push(`• ${fact}`);
-    }
 
     questions.push({
       id: `el-easy-${el.Z}`,
-      prompt: `Which element matches this profile?\n\n${lines.join("\n")}`,
+      prompt: "Which element matches this card?",
+      kind: "element-profile",
+      profile: {
+        category: el.category,
+        categoryLabel: catLabel,
+        Z: el.Z,
+        period: el.period,
+        group: el.group,
+        atomicMass: el.atomicMass,
+        discoveredBy: el.discoveredBy,
+        discoveredYear: el.discoveredYear,
+        namedAfter: el.namedAfter,
+        facts,
+      },
       choices: makeChoices(el.name, nameD),
       correct: el.name,
     });
