@@ -147,9 +147,10 @@ export function buildMovieQuestions(items) {
  * Element quiz mix (retrieval practice):
  * 1. Lean ID — symbol ↔ name, Z ↔ name (core)
  * 2. Property → element — one fact, no Z/group dumped in
- * 3. Position → element — family + Z, or period + group
- * 4. Name → family / period (reverse direction)
+ * 3. Position → element — family + Z
+ * 4. Name → family (reverse direction)
  * Distractors come from `allElements` so small groups still work.
+ * Period and group-number questions are omitted.
  */
 export function buildElementQuestions(focusElements, allElements, categoryLabels = {}) {
   const targets = focusElements || [];
@@ -223,20 +224,7 @@ export function buildElementQuestions(focusElements, allElements, categoryLabels
       }
     }
 
-    const periodPool = [...new Set(pool.map((e) => String(e.period)))];
-    if (periodPool.length >= 4) {
-      const periodD = pickDistractors(periodPool, String(el.period), 3);
-      if (periodD.length === 3) {
-        questions.push({
-          id: `el-period-${el.Z}`,
-          prompt: `Which period is ${el.name} in?`,
-          choices: makeChoices(String(el.period), periodD),
-          correct: String(el.period),
-        });
-      }
-    }
-
-    // --- Position → element (sparse: family+Z, or period+group — not a full dossier) ---
+    // --- Position → element (family + Z — not period/group numbers) ---
     const familyNameD =
       sameFamilyNames.length >= 4
         ? pickDistractors(sameFamilyNames, el.name, 3)
@@ -248,25 +236,6 @@ export function buildElementQuestions(focusElements, allElements, categoryLabels
         choices: makeChoices(el.name, familyNameD),
         correct: el.name,
       });
-    }
-
-    if (el.group != null && el.period != null) {
-      const posKey = `${el.period}:${el.group}`;
-      const posUnique =
-        pool.filter((e) => `${e.period}:${e.group}` === posKey).length === 1;
-      if (posUnique) {
-        const posD = pickDistractors(names, el.name, 3);
-        if (posD.length === 3) {
-          questions.push({
-            id: `el-pos-${el.Z}`,
-            prompt: "Which element sits here on the table?",
-            kind: "element-coord",
-            coord: { period: el.period, group: el.group },
-            choices: makeChoices(el.name, posD),
-            correct: el.name,
-          });
-        }
-      }
     }
 
     // --- Property → element (one fact, no Z/group in the prompt; skip name leaks) ---

@@ -1512,7 +1512,6 @@ function elementQuizFlagText(question) {
   const bits = [question.prompt];
   if (question.tile?.symbol) bits.push(`symbol ${question.tile.symbol}`);
   if (question.tile?.Z != null) bits.push(`Z ${question.tile.Z}`);
-  if (question.coord) bits.push(`period ${question.coord.period} group ${question.coord.group}`);
   if (question.quote) bits.push(question.quote);
   if (question.profile) bits.push(`Z ${question.profile.Z} ${question.profile.categoryLabel}`);
   return `${bits.join(" — ")} → ${question.correct}`;
@@ -1530,20 +1529,6 @@ function elementQuizPromptHtml(question) {
       <div class="quiz-el-tile" aria-label="${sub} ${face}">
         <span class="quiz-el-tile-face">${face}</span>
         <span class="quiz-el-tile-sub">${sub}</span>
-      </div>`;
-  }
-
-  if (question.kind === "element-coord" && question.coord) {
-    return `${ask}
-      <div class="quiz-el-coord" aria-label="Period ${question.coord.period}, group ${question.coord.group}">
-        <div class="quiz-el-coord-cell">
-          <span class="quiz-el-coord-k">Period</span>
-          <span class="quiz-el-coord-v">${escapeHtml(String(question.coord.period))}</span>
-        </div>
-        <div class="quiz-el-coord-cell">
-          <span class="quiz-el-coord-k">Group</span>
-          <span class="quiz-el-coord-v">${escapeHtml(String(question.coord.group))}</span>
-        </div>
       </div>`;
   }
 

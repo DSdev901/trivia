@@ -1389,6 +1389,8 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     stopFocusZoom();
     if (svg && geo._packViewBox) svg.setAttribute("viewBox", geo._packViewBox);
     scheduleFocusPlace(host, activeId);
+  } else if (!geo.mode && activeId) {
+    scheduleFocusPlace(host, activeId);
   } else if (wrongId) {
     geo._focusHalo = false;
     setMapLabel(host, wrongId, { miss: true });
@@ -2513,10 +2515,12 @@ function mapHtml() {
   const coarse = window.matchMedia("(pointer: coarse)").matches;
   const zoomHint = coarse ? "pinch to zoom" : "pinch or scroll to zoom";
   const pinHint = geo.mode === "pin" ? " · tap a place to answer" : "";
+  const previewHint =
+    !geo.mode && geo.pack ? ` · tap a ${pinTargetNoun()} for its name` : "";
   const hint =
     geo.mode === "study"
       ? ""
-      : `<p class="geo-map-hint">Drag to pan · ${zoomHint}${pinHint}</p>`;
+      : `<p class="geo-map-hint">Drag to pan · ${zoomHint}${pinHint}${previewHint}</p>`;
   return `<div class="geo-map-stage">
     <div class="geo-map-frame is-zoomable" id="geo-map">${geo.mapSvg}
     <div class="geo-map-nav" aria-hidden="true"></div>
@@ -3358,8 +3362,19 @@ function renderPackModes() {
   if (geo.mapSvg) {
     paintMap(null);
     bindMapControls(geo.root.querySelector("#geo-map"));
+    bindPreviewIdentify();
   }
   bindWaterFilters();
+}
+
+function bindPreviewIdentify() {
+  geo.root.querySelector("#geo-map")?.addEventListener("click", (e) => {
+    if (e.target?.closest?.(".geo-map-reset, .geo-play-close")) return;
+    const id = mapTargetId(e);
+    if (!id || !byId(id) || !packItemIds().has(id)) return;
+    geo.selectedId = id;
+    paintMap(id);
+  });
 }
 
 function startMode(mode, retryItems = null) {
