@@ -110,6 +110,7 @@ const geo = {
   correct: 0,
   wrong: 0,
   missed: [],
+  runRetry: null,
   answered: false,
   selectedId: null,
   _mapLabel: null,
@@ -3366,6 +3367,7 @@ function startMode(mode, retryItems = null) {
     : mode === "capitals"
       ? geo.items.filter((i) => i.capital)
       : geo.items;
+  geo.runRetry = retry;
   if (!pool.length) {
     geo.root.innerHTML = `
       <div class="geo-shell">
@@ -3610,6 +3612,7 @@ function renderPlay() {
     .join(" ");
 
   const closeHtml = showMap ? playCloseHtml() : "";
+  const closeInPrompt = geo.mode === "type" || geo.mode === "outline";
   const actionsHtml = controls
     ? `<div class="geo-quiz-actions">${controls}</div>`
     : "";
@@ -3626,6 +3629,7 @@ function renderPlay() {
            ${feedbackHtml}
          </div>
          <div class="geo-chrome-end">
+           ${closeInPrompt ? closeHtml : ""}
            ${nextInCluster ? "" : nextHtml}
          </div>
        </div>`
@@ -3666,7 +3670,7 @@ function renderPlay() {
         ${progressHtml()}
       </div>
       <div class="geo-play-layout ${showMap ? "" : "no-map"}">
-        ${showMap ? `<div class="geo-map-wrap">${mapHtml()}${closeHtml}</div>` : ""}
+        ${showMap ? `<div class="geo-map-wrap">${mapHtml()}${closeInPrompt ? "" : closeHtml}</div>` : ""}
         <aside class="geo-side">
           <div class="geo-quiz-panel" id="geo-quiz-panel">${panelInner}</div>
           ${answerHtml}
@@ -3738,12 +3742,14 @@ function bindPlay() {
   if (geo.mode === "type" || geo.mode === "outline") {
     const form = geo.root.querySelector("#geo-type-form");
     const input = geo.root.querySelector("#geo-type-input");
+    const compact = window.matchMedia("(max-width: 860px)").matches;
     input?.addEventListener("focus", () => {
+      if (compact) return;
       requestAnimationFrame(() => {
         input.scrollIntoView({ block: "center", behavior: "smooth" });
       });
     });
-    input?.focus();
+    if (!compact) input?.focus();
     form?.addEventListener("submit", (e) => {
       e.preventDefault();
       if (geo.answered) return;
@@ -3836,13 +3842,13 @@ function renderDone() {
           }%</strong> accuracy</li>
         </ul>
         <div class="setup-actions">
-          <button type="button" class="primary-btn quiz-cta" id="geo-again">Quiz again</button>
+          <button type="button" class="primary-btn quiz-cta" id="geo-try-again">Try again</button>
         </div>
       </div>
     </div>`;
 
-  geo.root.querySelector("#geo-again")?.addEventListener("click", () => {
-    startMode(geo.mode);
+  geo.root.querySelector("#geo-try-again")?.addEventListener("click", () => {
+    startMode(geo.mode, geo.runRetry);
   });
   geo.root.querySelector("#geo-retry")?.addEventListener("click", () => {
     startMode(geo.mode, geo.missed);
@@ -3867,6 +3873,7 @@ export function cleanupGeography() {
   geo.mode = null;
   geo.queue = [];
   geo.missed = [];
+  geo.runRetry = null;
   geo.items = [];
   geo.allItems = [];
   geo.mapSvg = "";
