@@ -4893,6 +4893,13 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     box-shadow: var(--shadow);
   }
 
+  .geo-play--map.geo-play--type .geo-play-close {
+    position: fixed;
+    top: calc(0.5rem + env(safe-area-inset-top, 0px));
+    right: max(0.5rem, env(safe-area-inset-right, 0px));
+    z-index: 20;
+  }
+
   .geo-play .geo-toolbar .secondary-btn {
     min-height: 2.2rem;
     padding: 0.3rem 0.7rem;
@@ -5095,10 +5102,6 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     overflow: hidden;
   }
 
-  body:has(.view:not([hidden]) .geo-play--map.geo-play--type) {
-    overflow-y: auto;
-  }
-
   body:has(.view:not([hidden]) .geo-play--map) .app,
   body:has(.view:not([hidden]) .geo-play--study) .app {
     flex: 1;
@@ -5108,10 +5111,6 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     height: 100%;
     overflow: hidden;
     padding-bottom: env(safe-area-inset-bottom);
-  }
-
-  body:has(.view:not([hidden]) .geo-play--map.geo-play--type) .app {
-    overflow: visible;
   }
 
   body:has(.view:not([hidden]) .geo-play--map) .app > main,
