@@ -10,10 +10,10 @@
       "name": "Athabasca River",
       "fact": "Flows from the Columbia Icefield to Lake Athabasca.",
       "kind": "water",
-      "lat": 56.7,
-      "lon": -111.4,
-      "x": 244.4,
-      "y": 77.7,
+      "lat": 56.742,
+      "lon": -111.474,
+      "x": 244.3,
+      "y": 77.6,
       "facts": [
         "Flows from the Columbia Icefield to Lake Athabasca."
       ],
@@ -25,8 +25,8 @@
       "name": "Fraser River",
       "fact": "The main river of British Columbia.",
       "kind": "water",
-      "lat": 49.2,
-      "lon": -122.9,
+      "lat": 49.194,
+      "lon": -122.894,
       "x": 204.1,
       "y": 100.3,
       "facts": [
@@ -40,10 +40,10 @@
       "name": "Mackenzie River",
       "fact": "Canada’s longest river system.",
       "kind": "water",
-      "lat": 67.4,
-      "lon": -133.7,
-      "x": 218.2,
-      "y": 47.3,
+      "lat": 67.477,
+      "lon": -133.737,
+      "x": 218.3,
+      "y": 47.1,
       "facts": [
         "Canada’s longest river system.",
         "Flows to the Arctic Ocean."
@@ -57,10 +57,10 @@
       "name": "Nelson River",
       "fact": "Drains Lake Winnipeg toward Hudson Bay.",
       "kind": "water",
-      "lat": 56.5,
-      "lon": -94,
+      "lat": 56.533,
+      "lon": -94.038,
       "x": 284,
-      "y": 78.3,
+      "y": 78.2,
       "facts": [
         "Drains Lake Winnipeg toward Hudson Bay."
       ],
@@ -72,10 +72,10 @@
       "name": "Ottawa River",
       "fact": "Forms much of the Ontario–Quebec border.",
       "kind": "water",
-      "lat": 45.6,
-      "lon": -76.2,
+      "lat": 45.502,
+      "lon": -76.14,
       "x": 312.9,
-      "y": 111.4,
+      "y": 111.7,
       "facts": [
         "Forms much of the Ontario–Quebec border.",
         "The Ottawa River meets the St. Lawrence."
@@ -90,10 +90,10 @@
       "name": "Peace River",
       "fact": "Major river of northern Alberta and B.C.",
       "kind": "water",
-      "lat": 56.2,
-      "lon": -117.3,
+      "lat": 56.233,
+      "lon": -117.351,
       "x": 229.9,
-      "y": 79.2,
+      "y": 79.1,
       "facts": [
         "Major river of northern Alberta and B.C."
       ],
@@ -120,10 +120,10 @@
       "name": "Saint John River",
       "fact": "Main river of New Brunswick.",
       "kind": "water",
-      "lat": 46.3,
-      "lon": -67.2,
-      "x": 335.6,
-      "y": 109.3,
+      "lat": 46.327,
+      "lon": -67.546,
+      "x": 334.8,
+      "y": 109.2,
       "facts": [
         "Main river of New Brunswick."
       ],
@@ -135,9 +135,9 @@
       "name": "Saskatchewan River",
       "fact": "Prairie river formed by the North and South Saskatchewan.",
       "kind": "water",
-      "lat": 53.2,
-      "lon": -105,
-      "x": 253.3,
+      "lat": 53.208,
+      "lon": -104.996,
+      "x": 253.4,
       "y": 88.1,
       "facts": [
         "Prairie river formed by the North and South Saskatchewan."
@@ -150,13 +150,13 @@
       "name": "Saint Lawrence River",
       "fact": "Outlet of the Great Lakes to the Atlantic.",
       "kind": "water",
-      "lat": 47.5,
-      "lon": -69.5,
-      "x": 331.1,
-      "y": 105.5,
+      "lat": 45.004,
+      "lon": -74.709,
+      "x": 316,
+      "y": 113.3,
       "facts": [
         "Outlet of the Great Lakes to the Atlantic.",
-        "Forms part of the U.S.–Canada border."
+        "The river of Montreal and Quebec City."
       ],
       "border": true,
       "waterway": "St. Lawrence",
@@ -168,10 +168,10 @@
       "name": "Yukon River",
       "fact": "Rises in British Columbia and Yukon, then crosses Alaska.",
       "kind": "water",
-      "lat": 64,
-      "lon": -139.4,
+      "lat": 64.051,
+      "lon": -139.491,
       "x": 197.5,
-      "y": 56.7,
+      "y": 56.5,
       "facts": [
         "Rises in British Columbia and Yukon, then crosses Alaska."
       ],
@@ -245,15 +245,15 @@
     {
       "id": "woods",
       "name": "Lake of the Woods",
-      "fact": "Lake on the U.S.–Canada border.",
+      "fact": "Shared by Ontario, Manitoba, and Minnesota.",
       "kind": "water",
       "lat": 49.1,
       "lon": -94.8,
       "x": 271.6,
       "y": 100.6,
       "facts": [
-        "Lake on the U.S.–Canada border.",
-        "Shared by Ontario, Manitoba, and Minnesota."
+        "Shared by Ontario, Manitoba, and Minnesota.",
+        "The Northwest Angle of Minnesota sits on its shore."
       ],
       "waterType": "lake",
       "country": "Canada"

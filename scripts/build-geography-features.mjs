@@ -5,6 +5,8 @@
  *   node scripts/build-geography-features.mjs
  *
  * Needs the same /tmp world-atlas + d3-geo setup as build-world-maps.mjs.
+ * Optional: /tmp/ne_10m_geography_marine_polys.geojson so seas and straits
+ * snap into the water body the coasts enclose.
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { createRequire } from "node:module";
@@ -13,6 +15,7 @@ import { fileURLToPath } from "node:url";
 
 import { WATER_FACTS, WATER_META } from "./lib/water-features.mjs";
 import { inferWaterType } from "./lib/water-features.mjs";
+import { snapWaterItem, reportWaterSnaps } from "./lib/snap-water-pins.mjs";
 import { WATER_PACKS, isObsoleteWaterPackId } from "./lib/waterways.mjs";
 
 const require = createRequire(import.meta.url);
@@ -168,11 +171,25 @@ function f(id, name, lat, lon, fact, kind = "land", country = "") {
 
 function projectItems(items) {
   return items.map((it) => {
-    const xy = projection([it.lon, it.lat]);
+    const meta = WATER_META[it.id] || {};
+    const snapped =
+      it.kind === "water"
+        ? snapWaterItem({
+            ...it,
+            waterway: it.waterway || meta.waterway,
+            waterType: it.waterType || inferWaterType(it.name),
+          })
+        : null;
+    const lat = snapped?.lat ?? it.lat;
+    const lon = snapped?.lon ?? it.lon;
+    const xy =
+      Number.isFinite(snapped?.x) && Number.isFinite(snapped?.y)
+        ? [snapped.x, snapped.y]
+        : projection([lon, lat]);
     if (!xy || !Number.isFinite(xy[0]) || !Number.isFinite(xy[1])) {
-      throw new Error(`Could not project ${it.id} (${it.lat}, ${it.lon})`);
+      throw new Error(`Could not project ${it.id} (${lat}, ${lon})`);
     }
-    const country = it.country || (wantsCountry(it) ? countryAt(it.lon, it.lat) : "");
+    const country = it.country || (wantsCountry(it) ? countryAt(lon, lat) : "");
     if (wantsCountry({ ...it, country: "" }) && !country) {
       console.warn(`  [geo] no country for ${it.id} (${it.name})`);
     }
@@ -181,23 +198,42 @@ function projectItems(items) {
       Array.isArray(it.facts) && it.facts.length ? it.facts : it.fact ? [it.fact] : [];
     const facts = [];
     const seen = new Set();
+    const tokens = (s) =>
+      new Set(
+        String(s)
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/[^a-z0-9]+/g, " ")
+          .trim()
+          .split(" ")
+          .filter((w) => w.length > 2)
+      );
+    const overlap = (a, b) => {
+      const A = tokens(a);
+      const B = tokens(b);
+      if (!A.size || !B.size) return false;
+      let n = 0;
+      for (const t of A) if (B.has(t)) n += 1;
+      return n / Math.min(A.size, B.size) >= 0.7;
+    };
     for (const row of [...extra, ...fromItem]) {
       const text = String(row || "").trim();
       if (!text) continue;
       const key = text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
       if (seen.has(key)) continue;
+      if (facts.some((kept) => overlap(kept, text))) continue;
       seen.add(key);
       facts.push(text);
       if (facts.length === 3) break;
     }
-    const meta = WATER_META[it.id] || {};
     const out = {
       id: it.id,
       name: it.name,
       fact: facts[0] || it.fact || "",
       kind: it.kind,
-      lat: it.lat,
-      lon: it.lon,
+      lat,
+      lon,
       x: Math.round(xy[0] * 10) / 10,
       y: Math.round(xy[1] * 10) / 10,
     };
@@ -704,4 +740,5 @@ for (const pack of WATER_PACKS) {
 }
 
 writeFileSync(path.join(OUT, "packs.json"), `${JSON.stringify(packsFile, null, 2)}\n`);
+reportWaterSnaps();
 console.log(`Wrote ${metas.length} feature packs (${metas.reduce((n, p) => n + p.itemCount, 0)} places).`);

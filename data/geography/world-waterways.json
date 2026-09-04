@@ -10,10 +10,10 @@
       "name": "Amazon",
       "fact": "Largest river by discharge.",
       "kind": "water",
-      "lat": -3,
-      "lon": -60,
-      "x": 336,
-      "y": 265.5,
+      "lat": -3.128,
+      "lon": -59.897,
+      "x": 336.3,
+      "y": 265.9,
       "facts": [
         "Largest river by discharge.",
         "Longest river in South America.",
@@ -28,10 +28,10 @@
       "name": "Nile",
       "fact": "Often cited as the world’s longest river.",
       "kind": "water",
-      "lat": 26,
-      "lon": 32.5,
-      "x": 586,
-      "y": 173.6,
+      "lat": 26.102,
+      "lon": 32.449,
+      "x": 585.9,
+      "y": 173.2,
       "facts": [
         "Often cited as the world’s longest river.",
         "Flows north through 11 countries.",
@@ -46,13 +46,13 @@
       "name": "Yangtze",
       "fact": "Longest river in Asia.",
       "kind": "water",
-      "lat": 31,
-      "lon": 112,
-      "x": 792.3,
-      "y": 157.6,
+      "lat": 30.661,
+      "lon": 111.315,
+      "x": 790.8,
+      "y": 158.7,
       "facts": [
         "Longest river in Asia.",
-        "China’s principal river, the Chang Jiang.",
+        "Called the Chang Jiang in China.",
         "Empties into the East China Sea at Shanghai."
       ],
       "waterway": "Chang Jiang",
@@ -64,10 +64,10 @@
       "name": "Mississippi",
       "fact": "Principal river of the central United States.",
       "kind": "water",
-      "lat": 35,
-      "lon": -90,
-      "x": 268.3,
-      "y": 144.9,
+      "lat": 35.114,
+      "lon": -90.142,
+      "x": 268.1,
+      "y": 144.5,
       "facts": [
         "Principal river of the central United States.",
         "Runs from Minnesota to the Gulf of Mexico.",
@@ -98,10 +98,10 @@
       "name": "Yellow River",
       "fact": "China’s Huang He; “cradle of Chinese civilization.”",
       "kind": "water",
-      "lat": 35,
-      "lon": 111,
-      "x": 785.7,
-      "y": 144.9,
+      "lat": 35.145,
+      "lon": 114.866,
+      "x": 795.5,
+      "y": 144.4,
       "facts": [
         "China’s Huang He; “cradle of Chinese civilization.”",
         "China’s second-longest river.",
@@ -116,10 +116,10 @@
       "name": "Ob",
       "fact": "Major west Siberian river.",
       "kind": "water",
-      "lat": 62,
-      "lon": 70,
-      "x": 654.4,
-      "y": 62.3,
+      "lat": 61.284,
+      "lon": 69.578,
+      "x": 654.3,
+      "y": 64.4,
       "facts": [
         "Major west Siberian river.",
         "Reaches the Arctic via the Gulf of Ob."
@@ -132,8 +132,8 @@
       "name": "Paraná",
       "fact": "Second-longest river in South America.",
       "kind": "water",
-      "lat": -27,
-      "lon": -58.5,
+      "lat": -27.001,
+      "lon": -58.495,
       "x": 345.5,
       "y": 341.7,
       "facts": [
@@ -148,10 +148,10 @@
       "name": "Congo",
       "fact": "Deepest river; second-largest by discharge.",
       "kind": "water",
-      "lat": -2,
-      "lon": 18,
-      "x": 549.2,
-      "y": 262.4,
+      "lat": -1,
+      "lon": 17.279,
+      "x": 547.3,
+      "y": 259.2,
       "facts": [
         "Deepest river; second-largest by discharge.",
         "Africa’s second-longest river.",
@@ -167,14 +167,14 @@
       "name": "Amur",
       "fact": "Border river of China and Russia.",
       "kind": "water",
-      "lat": 50,
-      "lon": 137,
+      "lat": 49.759,
+      "lon": 136.81,
       "x": 828.3,
-      "y": 97.8,
+      "y": 98.6,
       "facts": [
         "Border river of China and Russia.",
         "Known in China as the Heilong Jiang.",
-        "Forms much of the China–Russia land border."
+        "Reaches the Tatar Strait near the Sea of Okhotsk."
       ],
       "border": true,
       "waterway": "Amur",
@@ -186,10 +186,10 @@
       "name": "Lena",
       "fact": "Great east Siberian river.",
       "kind": "water",
-      "lat": 68,
-      "lon": 127,
-      "x": 766.3,
-      "y": 45.6,
+      "lat": 66.461,
+      "lon": 123.738,
+      "x": 763,
+      "y": 49.8,
       "facts": [
         "Great east Siberian river.",
         "Flows to the Laptev Sea in the Arctic."
@@ -202,10 +202,10 @@
       "name": "Mekong",
       "fact": "Major river of Southeast Asia.",
       "kind": "water",
-      "lat": 15,
-      "lon": 105,
-      "x": 784.1,
-      "y": 208.5,
+      "lat": 15.331,
+      "lon": 105.52,
+      "x": 785.4,
+      "y": 207.5,
       "facts": [
         "Major river of Southeast Asia.",
         "Forms stretches of the Laos–Thailand border.",
@@ -214,17 +214,17 @@
       "border": true,
       "waterway": "Mekong",
       "waterType": "river",
-      "country": "Thailand"
+      "country": "Laos"
     },
     {
       "id": "niger",
       "name": "Niger",
       "fact": "Principal river of West Africa.",
       "kind": "water",
-      "lat": 16,
-      "lon": 4,
-      "x": 510.8,
-      "y": 205.4,
+      "lat": 14.28,
+      "lon": 1.362,
+      "x": 503.7,
+      "y": 210.8,
       "facts": [
         "Principal river of West Africa.",
         "The “Boomerang” river, rising in the Guinea Highlands."
@@ -238,10 +238,10 @@
       "name": "Murray",
       "fact": "Australia’s longest river.",
       "kind": "water",
-      "lat": -34.2,
-      "lon": 142,
-      "x": 866.6,
-      "y": 364.6,
+      "lat": -34.133,
+      "lon": 141.994,
+      "x": 866.7,
+      "y": 364.4,
       "facts": [
         "Australia’s longest river.",
         "With the Darling, Australia’s main river system."
@@ -255,10 +255,10 @@
       "name": "Volga",
       "fact": "Europe’s longest river.",
       "kind": "water",
-      "lat": 56,
-      "lon": 47,
-      "x": 608.4,
-      "y": 79.8,
+      "lat": 56.163,
+      "lon": 47.097,
+      "x": 608.5,
+      "y": 79.3,
       "facts": [
         "Europe’s longest river.",
         "Empties into the Caspian Sea."
@@ -272,9 +272,9 @@
       "name": "Ganges",
       "fact": "Sacred river of the Indian subcontinent.",
       "kind": "water",
-      "lat": 25.3,
-      "lon": 83,
-      "x": 720.1,
+      "lat": 25.295,
+      "lon": 83.033,
+      "x": 720.2,
       "y": 175.8,
       "facts": [
         "Sacred river of the Indian subcontinent.",
@@ -288,10 +288,10 @@
       "name": "Danube",
       "fact": "Europe’s second-longest river.",
       "kind": "water",
-      "lat": 45.2,
-      "lon": 19.5,
+      "lat": 45.242,
+      "lon": 19.507,
       "x": 548,
-      "y": 112.7,
+      "y": 112.6,
       "facts": [
         "Europe’s second-longest river.",
         "Passes four European capitals.",
@@ -307,10 +307,10 @@
       "name": "Indus",
       "fact": "Principal river of Pakistan.",
       "kind": "water",
-      "lat": 28.5,
-      "lon": 70,
-      "x": 684.1,
-      "y": 165.6,
+      "lat": 28.576,
+      "lon": 69.962,
+      "x": 683.9,
+      "y": 165.3,
       "facts": [
         "Principal river of Pakistan.",
         "Cradle of the Indus Valley civilization."
@@ -323,10 +323,10 @@
       "name": "Rhine",
       "fact": "Major river of Western Europe.",
       "kind": "water",
-      "lat": 50,
-      "lon": 7,
-      "x": 516.8,
-      "y": 97.8,
+      "lat": 50.222,
+      "lon": 7.607,
+      "x": 518.2,
+      "y": 97.2,
       "facts": [
         "Major river of Western Europe.",
         "Forms much of the France–Germany border.",
@@ -342,10 +342,10 @@
       "name": "Zambezi",
       "fact": "Home of Victoria Falls.",
       "kind": "water",
-      "lat": -16,
-      "lon": 28.5,
-      "x": 577,
-      "y": 306.7,
+      "lat": -16.059,
+      "lon": 28.872,
+      "x": 578,
+      "y": 306.9,
       "facts": [
         "Home of Victoria Falls.",
         "Africa’s fourth-longest river.",
@@ -354,23 +354,23 @@
       "border": true,
       "waterway": "Zambezi",
       "waterType": "river",
-      "country": "Zambia"
+      "country": "Zimbabwe"
     },
     {
       "id": "aral",
       "name": "Aral Sea",
       "fact": "Once a great lake; now largely dried.",
       "kind": "water",
-      "lat": 45,
-      "lon": 60,
-      "x": 647.8,
-      "y": 113.3,
+      "lat": 45.132,
+      "lon": 58.667,
+      "x": 644.4,
+      "y": 112.9,
       "facts": [
         "Once a great lake; now largely dried.",
         "Split between Kazakhstan and Uzbekistan."
       ],
       "waterType": "lake",
-      "country": "Kazakhstan"
+      "country": "Uzbekistan"
     },
     {
       "id": "caspian",
@@ -426,9 +426,9 @@
       "name": "Lake Chad",
       "fact": "Shallow African lake; size varies greatly.",
       "kind": "water",
-      "lat": 13,
-      "lon": 14,
-      "x": 538,
+      "lat": 13.007,
+      "lon": 14.286,
+      "x": 538.8,
       "y": 214.9,
       "facts": [
         "Shallow African lake; size varies greatly.",
@@ -592,7 +592,7 @@
       "y": 104.9,
       "facts": [
         "Largest freshwater lake by surface area.",
-        "Largest of the Great Lakes."
+        "Shared by the United States and Canada."
       ],
       "waterType": "lake",
       "country": "United States"
@@ -853,7 +853,7 @@
       "y": 97.2,
       "facts": [
         "Between Great Britain and France.",
-        "The busiest shipping lane in the world."
+        "The Channel Tunnel runs beneath it."
       ],
       "waterType": "ocean"
     },

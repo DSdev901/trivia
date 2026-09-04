@@ -10,10 +10,10 @@
       "name": "Nile",
       "fact": "Often cited as the world’s longest river.",
       "kind": "water",
-      "lat": 26,
-      "lon": 32.5,
-      "x": 586,
-      "y": 173.6,
+      "lat": 26.102,
+      "lon": 32.449,
+      "x": 585.9,
+      "y": 173.2,
       "facts": [
         "Often cited as the world’s longest river.",
         "Flows north through 11 countries.",
@@ -28,10 +28,10 @@
       "name": "Congo",
       "fact": "Deepest river; second-largest by discharge.",
       "kind": "water",
-      "lat": -2,
-      "lon": 18,
-      "x": 549.2,
-      "y": 262.4,
+      "lat": -1,
+      "lon": 17.279,
+      "x": 547.3,
+      "y": 259.2,
       "facts": [
         "Deepest river; second-largest by discharge.",
         "Africa’s second-longest river.",
@@ -47,10 +47,10 @@
       "name": "Niger",
       "fact": "Principal river of West Africa.",
       "kind": "water",
-      "lat": 16,
-      "lon": 4,
-      "x": 510.8,
-      "y": 205.4,
+      "lat": 14.28,
+      "lon": 1.362,
+      "x": 503.7,
+      "y": 210.8,
       "facts": [
         "Principal river of West Africa.",
         "The “Boomerang” river, rising in the Guinea Highlands."
@@ -64,10 +64,10 @@
       "name": "Zambezi",
       "fact": "Home of Victoria Falls.",
       "kind": "water",
-      "lat": -16,
-      "lon": 28.5,
-      "x": 577,
-      "y": 306.7,
+      "lat": -16.059,
+      "lon": 28.872,
+      "x": 578,
+      "y": 306.9,
       "facts": [
         "Home of Victoria Falls.",
         "Africa’s fourth-longest river.",
@@ -76,17 +76,17 @@
       "border": true,
       "waterway": "Zambezi",
       "waterType": "river",
-      "country": "Zambia"
+      "country": "Zimbabwe"
     },
     {
       "id": "orange",
       "name": "Orange River",
       "fact": "Longest river in South Africa.",
       "kind": "water",
-      "lat": -28.6,
-      "lon": 17.6,
-      "x": 546.3,
-      "y": 346.8,
+      "lat": -28.727,
+      "lon": 17.556,
+      "x": 546.1,
+      "y": 347.2,
       "facts": [
         "Longest river in South Africa.",
         "Forms much of the Namibia–South Africa border."
@@ -94,17 +94,17 @@
       "border": true,
       "waterway": "Orange",
       "waterType": "river",
-      "country": "Namibia"
+      "country": "South Africa"
     },
     {
       "id": "limpopo",
       "name": "Limpopo",
       "fact": "River of southern Africa.",
       "kind": "water",
-      "lat": -23,
-      "lon": 31.5,
-      "x": 584,
-      "y": 329,
+      "lat": -22.794,
+      "lon": 31.918,
+      "x": 585.2,
+      "y": 328.3,
       "facts": [
         "River of southern Africa.",
         "Forms stretches of the South Africa–Botswana and South Africa–Zimbabwe borders."
@@ -119,28 +119,28 @@
       "name": "Senegal River",
       "fact": "Principal river of Senegal and Mauritania.",
       "kind": "water",
-      "lat": 16.5,
-      "lon": -14.5,
-      "x": 460.8,
-      "y": 203.8,
+      "lat": 16.627,
+      "lon": -14.445,
+      "x": 461,
+      "y": 203.4,
       "facts": [
         "Principal river of Senegal and Mauritania.",
-        "Forms most of the Senegal–Mauritania border."
+        "Empties into the Atlantic at Saint-Louis."
       ],
       "border": true,
       "waterway": "Sénégal",
       "waterType": "river",
-      "country": "Senegal"
+      "country": "Mauritania"
     },
     {
       "id": "volta",
       "name": "Volta",
       "fact": "Principal river of Ghana.",
       "kind": "water",
-      "lat": 7.2,
-      "lon": 0.3,
-      "x": 500.8,
-      "y": 233.2,
+      "lat": 6.338,
+      "lon": 0.103,
+      "x": 500.3,
+      "y": 236,
       "facts": [
         "Principal river of Ghana.",
         "Lake Volta behind Akosombo Dam is among the world’s largest reservoirs."
@@ -154,10 +154,10 @@
       "name": "Ubangi",
       "fact": "Chief northern tributary of the Congo.",
       "kind": "water",
-      "lat": 4.3,
-      "lon": 18.6,
+      "lat": 3.679,
+      "lon": 18.597,
       "x": 550.8,
-      "y": 242.4,
+      "y": 244.4,
       "facts": [
         "Chief northern tributary of the Congo.",
         "Forms much of the CAR–DRC border."
@@ -220,9 +220,9 @@
       "name": "Lake Chad",
       "fact": "Shallow African lake; size varies greatly.",
       "kind": "water",
-      "lat": 13,
-      "lon": 14,
-      "x": 538,
+      "lat": 13.007,
+      "lon": 14.286,
+      "x": 538.8,
       "y": 214.9,
       "facts": [
         "Shallow African lake; size varies greatly.",

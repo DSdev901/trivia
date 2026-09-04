@@ -8,6 +8,7 @@
  *   curl -sL -o /tmp/countries.json https://raw.githubusercontent.com/mledoze/countries/master/countries.json
  *   curl -sL -o /tmp/ne_50m_lakes.geojson https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@master/geojson/ne_50m_lakes.geojson
  *   curl -sL -o /tmp/ne_50m_rivers.geojson https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@master/geojson/ne_50m_rivers_lake_centerlines.geojson
+ *   curl -sL -o /tmp/ne_10m_geography_marine_polys.geojson https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@master/geojson/ne_10m_geography_marine_polys.geojson
  *   cd /tmp/geo-build && npm i d3-geo topojson-client
  *   node /path/to/scripts/build-world-maps.mjs
  */

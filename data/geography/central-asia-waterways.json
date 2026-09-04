@@ -10,10 +10,10 @@
       "name": "Amu Darya",
       "fact": "The Oxus of antiquity.",
       "kind": "water",
-      "lat": 41,
-      "lon": 61.5,
-      "x": 654.5,
-      "y": 125.9,
+      "lat": 41.211,
+      "lon": 61.703,
+      "x": 654.8,
+      "y": 125.2,
       "facts": [
         "The Oxus of antiquity.",
         "Once a main feeder of the Aral Sea.",
@@ -22,15 +22,15 @@
       "border": true,
       "waterway": "Amu  Darya",
       "waterType": "river",
-      "country": "Turkmenistan"
+      "country": "Uzbekistan"
     },
     {
       "id": "syr-darya",
       "name": "Syr Darya",
       "fact": "The Jaxartes of antiquity.",
       "kind": "water",
-      "lat": 44,
-      "lon": 67,
+      "lat": 43.998,
+      "lon": 66.998,
       "x": 665.9,
       "y": 116.4,
       "facts": [
@@ -46,17 +46,17 @@
       "name": "Irtysh",
       "fact": "Chief tributary of the Ob.",
       "kind": "water",
-      "lat": 51,
-      "lon": 75,
-      "x": 678.6,
-      "y": 94.8,
+      "lat": 53.986,
+      "lon": 74.994,
+      "x": 675.3,
+      "y": 85.8,
       "facts": [
         "Chief tributary of the Ob.",
         "Rises in China and crosses Kazakhstan into Russia."
       ],
       "waterway": "Irtysh",
       "waterType": "river",
-      "country": "Kazakhstan"
+      "country": "Russia"
     },
     {
       "id": "ili",
@@ -79,10 +79,10 @@
       "name": "Ural",
       "fact": "River along the Europe–Asia boundary.",
       "kind": "water",
-      "lat": 51.5,
-      "lon": 53.5,
+      "lat": 51.566,
+      "lon": 53.526,
       "x": 627,
-      "y": 93.3,
+      "y": 93.1,
       "facts": [
         "River along the Europe–Asia boundary.",
         "Empties into the Caspian Sea."
@@ -127,16 +127,16 @@
       "name": "Aral Sea",
       "fact": "Once a great lake; now largely dried.",
       "kind": "water",
-      "lat": 45,
-      "lon": 60,
-      "x": 647.8,
-      "y": 113.3,
+      "lat": 45.132,
+      "lon": 58.667,
+      "x": 644.4,
+      "y": 112.9,
       "facts": [
         "Once a great lake; now largely dried.",
         "Split between Kazakhstan and Uzbekistan."
       ],
       "waterType": "lake",
-      "country": "Kazakhstan"
+      "country": "Uzbekistan"
     },
     {
       "id": "balkhash",

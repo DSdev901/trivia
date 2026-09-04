@@ -10,10 +10,10 @@
       "name": "Congo",
       "fact": "Deepest river; second-largest by discharge.",
       "kind": "water",
-      "lat": -2,
-      "lon": 18,
-      "x": 549.2,
-      "y": 262.4,
+      "lat": -1,
+      "lon": 17.279,
+      "x": 547.3,
+      "y": 259.2,
       "facts": [
         "Deepest river; second-largest by discharge.",
         "Africa’s second-longest river.",
@@ -29,10 +29,10 @@
       "name": "Zambezi",
       "fact": "Home of Victoria Falls.",
       "kind": "water",
-      "lat": -16,
-      "lon": 28.5,
-      "x": 577,
-      "y": 306.7,
+      "lat": -16.059,
+      "lon": 28.872,
+      "x": 578,
+      "y": 306.9,
       "facts": [
         "Home of Victoria Falls.",
         "Africa’s fourth-longest river.",
@@ -41,24 +41,24 @@
       "border": true,
       "waterway": "Zambezi",
       "waterType": "river",
-      "country": "Zambia"
+      "country": "Zimbabwe"
     },
     {
       "id": "orange",
       "name": "Orange River",
       "fact": "Longest river in South Africa.",
       "kind": "water",
-      "lat": -28.6,
-      "lon": 17.6,
-      "x": 546.3,
-      "y": 346.8,
+      "lat": -28.727,
+      "lon": 17.556,
+      "x": 546.1,
+      "y": 347.2,
       "facts": [
         "Longest river in South Africa."
       ],
       "border": true,
       "waterway": "Orange",
       "waterType": "river",
-      "country": "Namibia"
+      "country": "South Africa"
     },
     {
       "id": "victoria",

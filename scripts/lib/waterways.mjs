@@ -81,7 +81,7 @@ const EXTRA_SOURCE = [
       w("ontario", "Lake Ontario", 43.7, -77.9, WATER_FACTS.ontario),
       w("superior", "Lake Superior", 47.7, -87.5, WATER_FACTS.superior),
       w("winnipeg", "Lake Winnipeg", 52.5, -97.5, WATER_FACTS.winnipeg),
-      w("woods", "Lake of the Woods", 49.1, -94.8, ["Lake on the U.S.–Canada border.", "Shared by Ontario, Manitoba, and Minnesota."]),
+      w("woods", "Lake of the Woods", 49.1, -94.8, ["Shared by Ontario, Manitoba, and Minnesota.", "The Northwest Angle of Minnesota sits on its shore."]),
     ],
   },
   {
@@ -166,7 +166,7 @@ const COASTAL = {
     w("red-sea", "Red Sea", 20, 38.5, ["Narrow sea between Africa and Arabia.", "Linked to the Mediterranean by the Suez Canal."]),
     w("gibraltar", "Strait of Gibraltar", 35.97, -5.58, ["The Atlantic’s gate to the Mediterranean.", "Separates Spain from Morocco."]),
     w("bering-strait", "Bering Strait", 65.8, -168.5, ["Separates Alaska from Russia.", "The Pacific’s link to the Arctic Ocean."]),
-    w("english-channel", "English Channel", 50.2, -1, ["Between Great Britain and France.", "The busiest shipping lane in the world."]),
+    w("english-channel", "English Channel", 50.2, -1, ["Between Great Britain and France.", "The Channel Tunnel runs beneath it."]),
     w("drake-passage", "Drake Passage", -58, -62, ["Open water between South America and Antarctica.", "The stormiest of the great ocean passages."]),
     w("malacca", "Strait of Malacca", 2.5, 101.2, ["Between the Malay Peninsula and Sumatra.", "The main shipping choke point of the Indian–Pacific route."]),
     w("gulf-mexico", "Gulf of Mexico", 25, -90, ["Atlantic gulf south of the United States.", "Fed by the Mississippi River."]),

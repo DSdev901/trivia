@@ -10,10 +10,10 @@
       "name": "Mississippi",
       "fact": "Principal river of the central United States.",
       "kind": "water",
-      "lat": 35,
-      "lon": -90,
-      "x": 268.3,
-      "y": 144.9,
+      "lat": 35.114,
+      "lon": -90.142,
+      "x": 268.1,
+      "y": 144.5,
       "facts": [
         "Principal river of the central United States.",
         "Runs from Minnesota to the Gulf of Mexico.",
@@ -28,10 +28,10 @@
       "name": "Mackenzie",
       "fact": "Canada’s longest river system.",
       "kind": "water",
-      "lat": 67.5,
-      "lon": -130,
-      "x": 226.2,
-      "y": 47,
+      "lat": 67.275,
+      "lon": -130.337,
+      "x": 225,
+      "y": 47.6,
       "facts": [
         "Canada’s longest river system.",
         "Flows to the Arctic Ocean."
@@ -45,10 +45,10 @@
       "name": "Saint Lawrence",
       "fact": "Drains the Great Lakes to the Atlantic.",
       "kind": "water",
-      "lat": 47.5,
-      "lon": -69.5,
-      "x": 331.1,
-      "y": 105.5,
+      "lat": 45.004,
+      "lon": -74.709,
+      "x": 316,
+      "y": 113.3,
       "facts": [
         "Drains the Great Lakes to the Atlantic.",
         "Forms part of the U.S.–Canada border."
@@ -63,10 +63,10 @@
       "name": "Rio Grande",
       "fact": "Part of the U.S.–Mexico border.",
       "kind": "water",
-      "lat": 29,
-      "lon": -103,
-      "x": 229.6,
-      "y": 164,
+      "lat": 29.049,
+      "lon": -103.084,
+      "x": 229.4,
+      "y": 163.8,
       "facts": [
         "Part of the U.S.–Mexico border.",
         "Called the Río Bravo in Mexico.",
@@ -75,17 +75,17 @@
       "border": true,
       "waterway": "Rio Grande",
       "waterType": "river",
-      "country": "Mexico"
+      "country": "United States"
     },
     {
       "id": "colorado",
       "name": "Colorado River",
       "fact": "Carved the Grand Canyon.",
       "kind": "water",
-      "lat": 36.1,
-      "lon": -113.8,
-      "x": 208.3,
-      "y": 141.4,
+      "lat": 35.831,
+      "lon": -113.636,
+      "x": 208.4,
+      "y": 142.2,
       "facts": [
         "Carved the Grand Canyon.",
         "Lower reaches form part of the U.S.–Mexico border."
@@ -100,10 +100,10 @@
       "name": "Yukon",
       "fact": "Major river of Alaska and Yukon.",
       "kind": "water",
-      "lat": 65,
-      "lon": -145,
-      "x": 188,
-      "y": 53.9,
+      "lat": 66.386,
+      "lon": -147.159,
+      "x": 187.1,
+      "y": 50.1,
       "facts": [
         "Major river of Alaska and Yukon.",
         "Flows to the Bering Sea."
@@ -117,10 +117,10 @@
       "name": "Missouri",
       "fact": "Longest river in the United States.",
       "kind": "water",
-      "lat": 42,
-      "lon": -98,
-      "x": 255,
-      "y": 122.7,
+      "lat": 42.814,
+      "lon": -97.994,
+      "x": 256,
+      "y": 120.2,
       "facts": [
         "Longest river in the United States.",
         "The Mississippi’s longest tributary."
@@ -134,10 +134,10 @@
       "name": "Columbia",
       "fact": "Great river of the Pacific Northwest.",
       "kind": "water",
-      "lat": 45.7,
-      "lon": -120.2,
-      "x": 205,
-      "y": 111.1,
+      "lat": 45.746,
+      "lon": -120.242,
+      "x": 204.9,
+      "y": 111,
       "facts": [
         "Great river of the Pacific Northwest.",
         "Rises in British Columbia."
@@ -151,10 +151,10 @@
       "name": "Ohio River",
       "fact": "Major eastern tributary of the Mississippi.",
       "kind": "water",
-      "lat": 38.5,
-      "lon": -85,
-      "x": 284.2,
-      "y": 133.8,
+      "lat": 38.697,
+      "lon": -85.136,
+      "x": 284,
+      "y": 133.1,
       "facts": [
         "Major eastern tributary of the Mississippi.",
         "Forms much of the Midwest–South state line."
@@ -319,7 +319,7 @@
       "y": 104.9,
       "facts": [
         "Largest freshwater lake by surface area.",
-        "Largest of the Great Lakes."
+        "Shared by the United States and Canada."
       ],
       "waterType": "lake",
       "country": "United States"
@@ -343,15 +343,15 @@
     {
       "id": "woods",
       "name": "Lake of the Woods",
-      "fact": "Lake on the U.S.–Canada border.",
+      "fact": "Shared by Ontario, Manitoba, and Minnesota.",
       "kind": "water",
       "lat": 49.1,
       "lon": -94.8,
       "x": 271.6,
       "y": 100.6,
       "facts": [
-        "Lake on the U.S.–Canada border.",
-        "Shared by Ontario, Manitoba, and Minnesota."
+        "Shared by Ontario, Manitoba, and Minnesota.",
+        "The Northwest Angle of Minnesota sits on its shore."
       ],
       "waterType": "lake",
       "country": "Canada"

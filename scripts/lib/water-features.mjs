@@ -3,7 +3,7 @@
  */
 
 const LAKE_NAME =
-  /^(Aral|Caspian|Tonlé Sap|Issyk-Kul|Balkhash|Great Bear|Great Slave|Winnipeg|Baikal|Superior|Michigan|Huron|Erie|Ontario)\b/i;
+  /^(Aral|Caspian|Tonlé Sap|Issyk-Kul|Balkhash|Great Bear|Great Slave|Winnipeg|Baikal|Superior|Michigan|Huron|Erie|Ontario|Vänern|Vanern|Vättern|Vattern|Saimaa)\b/i;
 const OCEAN_NAME =
   /\b(Ocean|Sea|Gulf|Strait|Bay|Channel|Sound|Bight|Passage|Cove|Canal|Mandeb|Port)\b/i;
 
@@ -52,7 +52,7 @@ export const WATER_FACTS = {
   ],
   yangtze: [
     "Longest river in Asia.",
-    "China’s principal river, the Chang Jiang.",
+    "Called the Chang Jiang in China.",
     "Empties into the East China Sea at Shanghai.",
   ],
   mississippi: [
@@ -79,7 +79,7 @@ export const WATER_FACTS = {
   amur: [
     "Border river of China and Russia.",
     "Known in China as the Heilong Jiang.",
-    "Forms much of the China–Russia land border.",
+    "Reaches the Tatar Strait near the Sea of Okhotsk.",
   ],
   lena: ["Great east Siberian river.", "Flows to the Laptev Sea in the Arctic."],
   mekong: [
@@ -116,7 +116,7 @@ export const WATER_FACTS = {
     "Holds about one-fifth of the world’s unfrozen fresh water.",
   ],
   caspian: ["Largest inland body of water on Earth.", "A saline lake, not an ocean."],
-  superior: ["Largest freshwater lake by surface area.", "Largest of the Great Lakes."],
+  superior: ["Largest freshwater lake by surface area.", "Shared by the United States and Canada."],
   victoria: ["Largest lake in Africa by area.", "Source of the White Nile."],
   tanganyika: [
     "Longest freshwater lake; second-deepest.",
@@ -147,9 +147,12 @@ export const WATER_FACTS = {
   ohio: ["Major eastern tributary of the Mississippi.", "Forms much of the Midwest–South state line."],
   ottawa: ["Forms much of the Ontario–Quebec border.", "The Ottawa River meets the St. Lawrence."],
   mackenzie: ["Canada’s longest river system.", "Flows to the Arctic Ocean."],
-  oder: ["Border river of Poland and Germany.", "With the Neisse, a major Central European frontier."],
+  oder: ["Border river of Poland and Germany.", "Empties into the Baltic at the Szczecin Lagoon."],
   "st-lawrence": ["Drains the Great Lakes to the Atlantic.", "Forms part of the U.S.–Canada border."],
-  "st-lawrence-ca": ["Outlet of the Great Lakes to the Atlantic.", "Forms part of the U.S.–Canada border."],
+  "st-lawrence-ca": [
+    "Outlet of the Great Lakes to the Atlantic.",
+    "The river of Montreal and Quebec City.",
+  ],
   chattahoochee: ["Forms part of the Georgia–Alabama border.", "Becomes the Apalachicola in Florida."],
   uruguay: ["Forms part of the Argentina–Uruguay border.", "Joins the Paraná in the Río de la Plata."],
   jordan: ["Forms part of the Israel–Jordan border.", "Flows to the Dead Sea."],
@@ -388,7 +391,7 @@ export const WATER_SOURCE = [
       w("zambezi", "Zambezi", -16, 28.5, WATER_FACTS.zambezi, { border: true, waterway: "Zambezi" }),
       w("orange", "Orange River", -28.6, 17.6, ["Longest river in South Africa.", "Forms much of the Namibia–South Africa border."], { border: true, waterway: "Orange" }),
       w("limpopo", "Limpopo", -23.0, 31.5, ["River of southern Africa.", "Forms stretches of the South Africa–Botswana and South Africa–Zimbabwe borders."], { border: true, waterway: "Limpopo" }),
-      w("senegal-r", "Senegal River", 16.5, -14.5, ["Principal river of Senegal and Mauritania.", "Forms most of the Senegal–Mauritania border."], { border: true, waterway: "Sénégal" }),
+      w("senegal-r", "Senegal River", 16.5, -14.5, ["Principal river of Senegal and Mauritania.", "Empties into the Atlantic at Saint-Louis."], { border: true, waterway: "Sénégal" }),
       w("volta", "Volta", 7.2, 0.3, ["Principal river of Ghana.", "Lake Volta behind Akosombo Dam is among the world’s largest reservoirs."], { waterway: "Volta" }),
       w("ubangi", "Ubangi", 4.3, 18.6, ["Chief northern tributary of the Congo.", "Forms much of the CAR–DRC border."], { border: true, waterway: "Ubangi" }),
     ],
@@ -612,7 +615,7 @@ export const WATER_SOURCE = [
       w("vistula", "Vistula", 52.2, 21.0, ["Poland’s longest river.", "Flows through Warsaw to the Baltic."], { waterway: "Vistula" }),
       w("oder", "Oder", 52.5, 14.6, WATER_FACTS.oder, { border: true, waterway: "Oder" }),
       w("don", "Don", 47.5, 40.5, ["River of southern Russia.", "Empties into the Sea of Azov."], { waterway: "Don" }),
-      w("dniester", "Dniester", 47.5, 29, ["River of Ukraine and Moldova.", "Forms stretches of the Moldova–Ukraine border."], { waterway: "Dniester" }),
+      w("dniester", "Dniester", 47.5, 29, ["River of Ukraine and Moldova.", "Empties into the Black Sea southwest of Odessa."], { waterway: "Dniester" }),
     ],
   },
   {
@@ -803,7 +806,7 @@ export const WATER_SOURCE = [
       w("great-slave", "Great Slave Lake", 61.4, -114.0, WATER_FACTS["great-slave"]),
       w("winnipeg", "Lake Winnipeg", 52.5, -97.5, WATER_FACTS.winnipeg),
       w("athabasca", "Lake Athabasca", 59.1, -110.0, ["Large lake on the Alberta–Saskatchewan border.", "Feeds the Slave River toward Great Slave Lake."]),
-      w("woods", "Lake of the Woods", 49.1, -94.8, ["Lake on the U.S.–Canada border.", "Shared by Ontario, Manitoba, and Minnesota."]),
+      w("woods", "Lake of the Woods", 49.1, -94.8, ["Shared by Ontario, Manitoba, and Minnesota.", "The Northwest Angle of Minnesota sits on its shore."]),
       w("nipigon", "Lake Nipigon", 49.8, -88.5, ["Largest lake entirely in Ontario.", "Drains toward Lake Superior."]),
     ],
   },

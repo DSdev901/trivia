@@ -324,6 +324,24 @@ function collectStateLines() {
   return [];
 }
 
+function projectedPath(coords) {
+  let d = "";
+  let started = false;
+  for (const c of coords) {
+    if (!c || c.length < 2) continue;
+    const xy = projection(c);
+    if (!xy || !Number.isFinite(xy[0]) || !Number.isFinite(xy[1])) {
+      started = false;
+      continue;
+    }
+    const x = Math.round(xy[0] * 10) / 10;
+    const y = Math.round(xy[1] * 10) / 10;
+    d += `${started ? "L" : "M"}${x},${y}`;
+    started = true;
+  }
+  return d.includes("L") ? d : "";
+}
+
 function lakeMarkup(fc) {
   if (!fc?.features) return "";
   const lines = [];
@@ -352,7 +370,7 @@ function riverMarkup(fc, intlIndex, stateIndex) {
     if (Number.isFinite(rank) && rank > 99) continue;
     const rankClass = Number.isFinite(rank) ? ` geo-river-r${rank}` : "";
     if (!borderRiver) {
-      const d = toPath(f);
+      const d = geomLines(f.geometry).map(projectedPath).filter(Boolean).join("");
       if (d) lines.push(`<path class="geo-river${rankClass}" d="${d}"/>`);
       continue;
     }
@@ -368,12 +386,10 @@ function riverMarkup(fc, intlIndex, stateIndex) {
     const borderPts = stretches.reduce((n, line) => n + line.length, 0);
     stats.push({ name, pts, borderPts, stretches: stretches.length });
     for (const coords of inland) {
-      const d = toPath({ type: "LineString", coordinates: coords });
+      const d = projectedPath(coords);
       if (d) lines.push(`<path class="geo-river${rankClass}" d="${d}"/>`);
     }
-    const dashPaths = stretches
-      .map((coords) => toPath({ type: "LineString", coordinates: coords }))
-      .filter(Boolean);
+    const dashPaths = stretches.map((coords) => projectedPath(coords)).filter(Boolean);
     if (!dashPaths.length) continue;
     lines.push(
       `<g class="geo-river-border-g" data-river="${key}"${attr("data-name", name)}>

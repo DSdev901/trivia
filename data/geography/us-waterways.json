@@ -10,10 +10,10 @@
       "name": "Arkansas River",
       "fact": "Major Mississippi tributary of the southern plains.",
       "kind": "water",
-      "lat": 35.4,
-      "lon": -95,
-      "x": 255.8,
-      "y": 143.6,
+      "lat": 35.435,
+      "lon": -94.976,
+      "x": 255.9,
+      "y": 143.5,
       "facts": [
         "Major Mississippi tributary of the southern plains."
       ],
@@ -26,8 +26,8 @@
       "fact": "Forms part of the Georgia–Alabama border.",
       "kind": "water",
       "lat": 32.5,
-      "lon": -85,
-      "x": 279.3,
+      "lon": -85.006,
+      "x": 279.2,
       "y": 152.8,
       "facts": [
         "Forms part of the Georgia–Alabama border.",
@@ -43,10 +43,10 @@
       "name": "Colorado River",
       "fact": "Carved the Grand Canyon.",
       "kind": "water",
-      "lat": 36.1,
-      "lon": -113.8,
-      "x": 208.3,
-      "y": 141.4,
+      "lat": 35.831,
+      "lon": -113.636,
+      "x": 208.4,
+      "y": 142.2,
       "facts": [
         "Carved the Grand Canyon.",
         "Lower reaches form part of the U.S.–Mexico border."
@@ -61,10 +61,10 @@
       "name": "Columbia River",
       "fact": "Great river of the Pacific Northwest.",
       "kind": "water",
-      "lat": 45.7,
-      "lon": -120.2,
-      "x": 205,
-      "y": 111.1,
+      "lat": 45.746,
+      "lon": -120.242,
+      "x": 204.9,
+      "y": 111,
       "facts": [
         "Great river of the Pacific Northwest."
       ],
@@ -92,10 +92,10 @@
       "name": "Mississippi River",
       "fact": "Principal river of the central United States.",
       "kind": "water",
-      "lat": 35,
-      "lon": -90,
-      "x": 268.3,
-      "y": 144.9,
+      "lat": 35.114,
+      "lon": -90.142,
+      "x": 268.1,
+      "y": 144.5,
       "facts": [
         "Principal river of the central United States.",
         "Runs from Minnesota to the Gulf of Mexico.",
@@ -110,10 +110,10 @@
       "name": "Missouri River",
       "fact": "Longest river in the United States.",
       "kind": "water",
-      "lat": 42,
-      "lon": -98,
-      "x": 255,
-      "y": 122.7,
+      "lat": 42.814,
+      "lon": -97.994,
+      "x": 256,
+      "y": 120.2,
       "facts": [
         "Longest river in the United States."
       ],
@@ -126,10 +126,10 @@
       "name": "Ohio River",
       "fact": "Major eastern tributary of the Mississippi.",
       "kind": "water",
-      "lat": 38.5,
-      "lon": -85,
-      "x": 284.2,
-      "y": 133.8,
+      "lat": 38.697,
+      "lon": -85.136,
+      "x": 284,
+      "y": 133.1,
       "facts": [
         "Major eastern tributary of the Mississippi.",
         "Forms much of the Midwest–South state line."
@@ -144,10 +144,10 @@
       "name": "Potomac River",
       "fact": "Flows past Washington, D.C.",
       "kind": "water",
-      "lat": 38.9,
-      "lon": -77.1,
+      "lat": 38.93,
+      "lon": -77.087,
       "x": 304.6,
-      "y": 132.5,
+      "y": 132.4,
       "facts": [
         "Flows past Washington, D.C."
       ],
@@ -159,10 +159,10 @@
       "name": "Rio Grande",
       "fact": "Part of the U.S.–Mexico border.",
       "kind": "water",
-      "lat": 29,
-      "lon": -103,
-      "x": 229.6,
-      "y": 164,
+      "lat": 29.049,
+      "lon": -103.084,
+      "x": 229.4,
+      "y": 163.8,
       "facts": [
         "Part of the U.S.–Mexico border.",
         "Called the Río Bravo in Mexico.",
@@ -171,16 +171,16 @@
       "border": true,
       "waterway": "Rio Grande",
       "waterType": "river",
-      "country": "Mexico"
+      "country": "United States"
     },
     {
       "id": "sacramento",
       "name": "Sacramento River",
       "fact": "Principal river of California’s Central Valley.",
       "kind": "water",
-      "lat": 39.1,
-      "lon": -121.8,
-      "x": 191.5,
+      "lat": 39.091,
+      "lon": -121.853,
+      "x": 191.4,
       "y": 131.9,
       "facts": [
         "Principal river of California’s Central Valley."
@@ -193,10 +193,10 @@
       "name": "Saint Lawrence River",
       "fact": "Drains the Great Lakes to the Atlantic.",
       "kind": "water",
-      "lat": 44.8,
-      "lon": -75,
-      "x": 315.1,
-      "y": 113.9,
+      "lat": 44.924,
+      "lon": -75.115,
+      "x": 314.9,
+      "y": 113.6,
       "facts": [
         "Drains the Great Lakes to the Atlantic.",
         "Forms part of the U.S.–Canada border."
@@ -204,17 +204,17 @@
       "border": true,
       "waterway": "St. Lawrence",
       "waterType": "river",
-      "country": "United States"
+      "country": "Canada"
     },
     {
       "id": "snake",
       "name": "Snake River",
       "fact": "Columbia’s largest tributary.",
       "kind": "water",
-      "lat": 44.5,
-      "lon": -117,
-      "x": 211,
-      "y": 114.9,
+      "lat": 44.565,
+      "lon": -117.127,
+      "x": 210.8,
+      "y": 114.7,
       "facts": [
         "Columbia’s largest tributary."
       ],
@@ -226,10 +226,10 @@
       "name": "Tennessee River",
       "fact": "Major river of the American South.",
       "kind": "water",
-      "lat": 35.5,
-      "lon": -87,
-      "x": 276.5,
-      "y": 143.3,
+      "lat": 35.868,
+      "lon": -87.958,
+      "x": 274.3,
+      "y": 142.1,
       "facts": [
         "Major river of the American South."
       ],
@@ -247,7 +247,7 @@
       "y": 104.9,
       "facts": [
         "Largest freshwater lake by surface area.",
-        "Largest of the Great Lakes."
+        "Shared by the United States and Canada."
       ],
       "waterType": "lake",
       "country": "United States"

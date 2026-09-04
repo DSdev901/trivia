@@ -10,10 +10,10 @@
       "name": "Volga",
       "fact": "Europe’s longest river.",
       "kind": "water",
-      "lat": 56,
-      "lon": 47,
-      "x": 608.4,
-      "y": 79.8,
+      "lat": 56.163,
+      "lon": 47.097,
+      "x": 608.5,
+      "y": 79.3,
       "facts": [
         "Europe’s longest river.",
         "Empties into the Caspian Sea."
@@ -27,10 +27,10 @@
       "name": "Danube",
       "fact": "Europe’s second-longest river.",
       "kind": "water",
-      "lat": 45.2,
-      "lon": 19.5,
+      "lat": 45.242,
+      "lon": 19.507,
       "x": 548,
-      "y": 112.7,
+      "y": 112.6,
       "facts": [
         "Europe’s second-longest river.",
         "Passes four European capitals.",
@@ -46,10 +46,10 @@
       "name": "Dnipro",
       "fact": "Major river of Ukraine.",
       "kind": "water",
-      "lat": 49,
-      "lon": 32.5,
-      "x": 578.3,
-      "y": 100.9,
+      "lat": 49.094,
+      "lon": 33.194,
+      "x": 580,
+      "y": 100.6,
       "facts": [
         "Major river of Ukraine.",
         "The Dnieper, flowing to the Black Sea."
@@ -63,10 +63,10 @@
       "name": "Vistula",
       "fact": "Poland’s longest river.",
       "kind": "water",
-      "lat": 52.2,
-      "lon": 21,
-      "x": 549.6,
-      "y": 91.1,
+      "lat": 52.236,
+      "lon": 21.05,
+      "x": 549.8,
+      "y": 91,
       "facts": [
         "Poland’s longest river.",
         "Flows through Warsaw to the Baltic."
@@ -80,28 +80,28 @@
       "name": "Oder",
       "fact": "Border river of Poland and Germany.",
       "kind": "water",
-      "lat": 52.5,
-      "lon": 14.6,
+      "lat": 52.499,
+      "lon": 14.604,
       "x": 534.5,
       "y": 90.2,
       "facts": [
         "Border river of Poland and Germany.",
-        "With the Neisse, a major Central European frontier."
+        "Empties into the Baltic at the Szczecin Lagoon."
       ],
       "border": true,
       "waterway": "Oder",
       "waterType": "river",
-      "country": "Germany"
+      "country": "Poland"
     },
     {
       "id": "don",
       "name": "Don",
       "fact": "River of southern Russia.",
       "kind": "water",
-      "lat": 47.5,
-      "lon": 40.5,
-      "x": 598.4,
-      "y": 105.5,
+      "lat": 47.461,
+      "lon": 40.528,
+      "x": 598.5,
+      "y": 105.7,
       "facts": [
         "River of southern Russia.",
         "Empties into the Sea of Azov."
@@ -115,13 +115,13 @@
       "name": "Dniester",
       "fact": "River of Ukraine and Moldova.",
       "kind": "water",
-      "lat": 47.5,
-      "lon": 29,
-      "x": 570.5,
-      "y": 105.5,
+      "lat": 47.531,
+      "lon": 29.058,
+      "x": 570.6,
+      "y": 105.4,
       "facts": [
         "River of Ukraine and Moldova.",
-        "Forms stretches of the Moldova–Ukraine border."
+        "Empties into the Black Sea southwest of Odessa."
       ],
       "waterway": "Dniester",
       "waterType": "river",
@@ -132,8 +132,8 @@
       "name": "Lake Balaton",
       "fact": "Largest lake in Central Europe.",
       "kind": "water",
-      "lat": 46.8,
-      "lon": 17.7,
+      "lat": 46.809,
+      "lon": 17.707,
       "x": 543.2,
       "y": 107.7,
       "facts": [
@@ -255,8 +255,8 @@
       "name": "Dardanelles",
       "fact": "The Aegean’s gate to the Sea of Marmara.",
       "kind": "water",
-      "lat": 40.22,
-      "lon": 26.42,
+      "lat": 40.215,
+      "lon": 26.427,
       "x": 566.6,
       "y": 128.3,
       "facts": [

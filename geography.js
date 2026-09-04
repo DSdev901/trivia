@@ -307,6 +307,7 @@ function ensureMarkerPins(host) {
 
 /** Nudge stacked pins apart so overlapping features stay separately tappable. */
 function spreadClosePins(host) {
+  if (isWaterPack()) return;
   const svg = host?.querySelector("svg");
   if (!svg || svg.dataset.geoPinsSpread === "1") return;
   if (!host.isConnected) return;
@@ -3432,6 +3433,23 @@ function renderStudy() {
   bindStudy();
 }
 
+function factTokens(text) {
+  return new Set(
+    foldPlaceName(text)
+      .split(" ")
+      .filter((w) => w.length > 2)
+  );
+}
+
+function factsOverlap(a, b) {
+  const A = factTokens(a);
+  const B = factTokens(b);
+  if (!A.size || !B.size) return false;
+  let n = 0;
+  for (const t of A) if (B.has(t)) n += 1;
+  return n / Math.min(A.size, B.size) >= 0.7;
+}
+
 function waterFacts(item) {
   if (!item) return [];
   const raw =
@@ -3447,6 +3465,7 @@ function waterFacts(item) {
     if (!text) continue;
     const key = foldPlaceName(text);
     if (seen.has(key)) continue;
+    if (out.some((kept) => factsOverlap(kept, text))) continue;
     seen.add(key);
     out.push(text);
     if (out.length === 3) break;
