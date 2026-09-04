@@ -3231,6 +3231,7 @@ function scrollPageTop() {
 }
 
 function renderHub() {
+  stopTypeViewport();
   geo.group = null;
   geo.section = null;
   geo.pack = null;
@@ -3252,6 +3253,7 @@ function renderHub() {
 }
 
 function renderGroup() {
+  stopTypeViewport();
   const g = geo.group;
   if (!g) {
     renderHub();
@@ -3288,6 +3290,7 @@ function renderGroup() {
 }
 
 function renderRegion(sec) {
+  stopTypeViewport();
   const g = geo.group;
   if (!g || !sec) {
     renderGroup();
@@ -3315,6 +3318,7 @@ function renderRegion(sec) {
 }
 
 function renderPackModes() {
+  stopTypeViewport();
   const pack = geo.pack;
   scrollPageTop();
   geo.root.innerHTML = `
@@ -3717,12 +3721,17 @@ function isCompactPlay() {
   return window.matchMedia(COMPACT_PLAY_MQ).matches;
 }
 
+function typePlayActive() {
+  return Boolean(geo.root?.querySelector(".geo-play--type"));
+}
+
 function clearTypeSettle() {
   for (const id of geo._typeSettle) clearTimeout(id);
   geo._typeSettle = [];
 }
 
 function settleTypeViewport() {
+  if (!typePlayActive()) return;
   if (document.activeElement?.id === "geo-type-input") return;
   window.scrollTo(0, 0);
   document.documentElement.scrollTop = 0;
@@ -3753,13 +3762,21 @@ function stopTypeViewport() {
     geo._typeVp = null;
   }
   clearTypeSettle();
+  document.documentElement.style.height = "";
 }
 
 function bindTypeViewport(input) {
   stopTypeViewport();
   if (!input || !isCompactPlay()) return;
-  const onBlur = () => queueTypeSettle();
+  const onBlur = () => {
+    if (!typePlayActive()) return;
+    queueTypeSettle();
+  };
   const onVv = () => {
+    if (!typePlayActive()) {
+      stopTypeViewport();
+      return;
+    }
     if (document.activeElement === input) return;
     const vv = window.visualViewport;
     if (window.scrollY > 1 || (vv?.offsetTop ?? 0) > 1) queueTypeSettle();
@@ -4057,6 +4074,7 @@ async function showGeographyRoute({ groupId, packId, mode, nested } = {}) {
     playMode &&
     geo.root?.querySelector(".geo-play, .quiz-done");
   if (already) return;
+  stopTypeViewport();
 
   if (geo.pack?.id !== packToken || !geo.items.length) {
     const meta = packById(packToken);
