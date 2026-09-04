@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-04T06:41:21.714Z",
+  "generatedAt": "2026-09-04T09:29:43.618Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-14T06:41:21.714Z",
-  "windowEnd": "2026-09-04T06:41:21.714Z",
+  "windowStart": "2026-08-14T09:29:43.618Z",
+  "windowEnd": "2026-09-04T09:29:43.618Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,18 +21,183 @@
     "Tennis",
     "MMA"
   ],
-  "count": 3534,
+  "count": 3529,
   "items": [
     {
-      "key": "49821648",
-      "id": "49821648",
-      "headline": "UMass ends its 16-game losing streak with 37-21 win at Rutgers",
-      "summary": "Pop Watson III passed for 197 yards and three touchdowns as UMass ended a 16-game losing streak with a 37-21 win over Rutgers in the season opener for both teams Thursday night.",
-      "url": "https://www.espn.com/college-football/story/_/id/49821648/umass-ends-16-game-losing-streak-37-21-win-rutgers",
-      "sport": "College football",
-      "published": "2026-09-04T06:00:40.000Z",
-      "firstSeen": "2026-09-04T06:41:21.714Z",
+      "key": "49822808",
+      "id": "49822808",
+      "headline": "Padres begin 3-game series against the Yankees",
+      "summary": "New York Yankees (80-60, second in the AL East) vs. San Diego Padres (73-67, third in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816810",
+      "sport": "MLB",
+      "published": "2026-09-04T08:03:49.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49822807",
+      "id": "49822807",
+      "headline": "Braves visit the Phillies to open 4-game series",
+      "summary": "Atlanta Braves (83-57, first in the NL East) vs. Philadelphia Phillies (79-61, second in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816798",
+      "sport": "MLB",
+      "published": "2026-09-04T08:03:46.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49822806",
+      "id": "49822806",
+      "headline": "Athletics bring 1-0 series lead over Mariners into game 2",
+      "summary": "Athletics (55-86, fourth in the AL West) vs. Seattle Mariners (66-75, third in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816809",
+      "sport": "MLB",
+      "published": "2026-09-04T08:03:42.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49822805",
+      "id": "49822805",
+      "headline": "White Sox host the Twins to open 3-game series",
+      "summary": "Minnesota Twins (67-73, third in the AL Central) vs. Chicago White Sox (73-67, first in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816805",
+      "sport": "MLB",
+      "published": "2026-09-04T08:03:39.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49822804",
+      "id": "49822804",
+      "headline": "Mets play the Giants in first of 3-game series",
+      "summary": "San Francisco Giants (58-83, fourth in the NL West) vs. New York Mets (63-77, fifth in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816803",
+      "sport": "MLB",
+      "published": "2026-09-04T08:03:35.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49822803",
+      "id": "49822803",
+      "headline": "Rockies take on the Cardinals in first of 3-game series",
+      "summary": "St. Louis Cardinals (70-71, third in the NL Central) vs. Colorado Rockies (54-86, fifth in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816808",
+      "sport": "MLB",
+      "published": "2026-09-04T08:03:32.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49822802",
+      "id": "49822802",
+      "headline": "Dodgers take on the Nationals after Edman's 4-hit game",
+      "summary": "Washington Nationals (67-75, fourth in the NL East) vs. Los Angeles Dodgers (83-57, first in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816811",
+      "sport": "MLB",
+      "published": "2026-09-04T08:03:29.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
       "bestRank": 7
+    },
+    {
+      "key": "49822801",
+      "id": "49822801",
+      "headline": "Diamondbacks visit the Astros to open 3-game series",
+      "summary": "Arizona Diamondbacks (74-67, second in the NL West) vs. Houston Astros (72-69, first in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816804",
+      "sport": "MLB",
+      "published": "2026-09-04T08:02:55.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49822800",
+      "id": "49822800",
+      "headline": "Cubs visit the Marlins to open 3-game series",
+      "summary": "Chicago Cubs (79-62, second in the NL Central) vs. Miami Marlins (71-70, third in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816800",
+      "sport": "MLB",
+      "published": "2026-09-04T08:02:51.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49822799",
+      "id": "49822799",
+      "headline": "Pirates start 3-game series at home against the Angels",
+      "summary": "Los Angeles Angels (53-87, fifth in the AL West) vs. Pittsburgh Pirates (69-72, fourth in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816797",
+      "sport": "MLB",
+      "published": "2026-09-04T08:02:48.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49822798",
+      "id": "49822798",
+      "headline": "Blue Jays visit the Royals to open 3-game series",
+      "summary": "Toronto Blue Jays (70-71, fourth in the AL East) vs. Kansas City Royals (63-78, fifth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816807",
+      "sport": "MLB",
+      "published": "2026-09-04T08:02:44.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49822797",
+      "id": "49822797",
+      "headline": "Rangers face the Rays with 1-0 series lead",
+      "summary": "Tampa Bay Rays (83-57, first in the AL East) vs. Texas Rangers (70-71, second in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816806",
+      "sport": "MLB",
+      "published": "2026-09-04T08:02:40.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49822796",
+      "id": "49822796",
+      "headline": "Brewers visit the Reds to open 3-game series",
+      "summary": "Milwaukee Brewers (87-54, first in the NL Central) vs. Cincinnati Reds (67-73, fifth in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816802",
+      "sport": "MLB",
+      "published": "2026-09-04T08:02:37.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49822322",
+      "id": "49822322",
+      "headline": "Zverev sweats out another five-set scare to advance at US Open",
+      "summary": "Alexander Zverev needed five sets and more than 4 1/2 hours to beat Quentin Halys in their second-round match, becoming the first top-seeded man to play back-to-back five-set matches to start a major in the Open Era.",
+      "url": "https://www.espn.com/tennis/story/_/id/49822322/zverev-sweats-another-five-set-scare-advance-us-open",
+      "sport": "Tennis",
+      "published": "2026-09-04T06:57:17.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49822298",
+      "id": "49822298",
+      "headline": "Alexander Zverev survives and advances in another 5-set thriller",
+      "summary": "Alexander Zverev survives and advances in another 5-set thriller",
+      "url": "https://www.espn.com/video/clip/_/id/49822298/alexander-zverev-survives-advances-another-5-set-thriller",
+      "sport": "Tennis",
+      "published": "2026-09-04T06:48:04.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49820430",
+      "id": "49820430",
+      "headline": "Gael Monfils exits US Open with 2nd-round loss to Learner Tien",
+      "summary": "Gael Monfils played his final Grand Slam match Thursday night at the US Open, a battle with Learner Tien that ended in a loss to the talented young American.",
+      "url": "https://www.espn.com/tennis/story/_/id/49820430/gael-monfils-exits-us-open-2nd-round-loss-learner-tien",
+      "sport": "Tennis",
+      "published": "2026-09-04T06:10:27.000Z",
+      "firstSeen": "2026-09-04T06:41:21.714Z",
+      "bestRank": 2
     },
     {
       "key": "49821920",
@@ -57,17 +222,6 @@
       "bestRank": 1
     },
     {
-      "key": "49821291",
-      "id": "49821291",
-      "headline": "Javon Tracy sets Minnesota record with 2 punt return TDs",
-      "summary": "Javon Tracy set Minnesota's single-game record with two punt return touchdowns in the season-opening win against Eastern Illinois.",
-      "url": "https://www.espn.com/college-football/story/_/id/49821291/javon-tracy-sets-minnesota-record-2-punt-return-tds",
-      "sport": "College football",
-      "published": "2026-09-04T05:44:52.000Z",
-      "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 18
-    },
-    {
       "key": "49821888",
       "id": "49821888",
       "headline": "Athletics vs. Seattle Mariners: Game Highlights",
@@ -77,17 +231,6 @@
       "published": "2026-09-04T05:38:02.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
       "bestRank": 4
-    },
-    {
-      "key": "49821711",
-      "id": "49821711",
-      "headline": "Katin Houser throws 3 TD passes and runs for a score as Illinois beats UAB 42-23 in season opener",
-      "summary": "— Katin Houser threw three touchdown passes and ran for a score in his Illinois debut as the Illini defeated UAB 42-23 on Thursday night in a season opener.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858424",
-      "sport": "College football",
-      "published": "2026-09-04T05:37:32.000Z",
-      "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 5
     },
     {
       "key": "49820873",
@@ -123,28 +266,6 @@
       "bestRank": 1
     },
     {
-      "key": "49821714",
-      "id": "49821714",
-      "headline": "Dampier and Parker star in No. 21 Utah's first opener without Whittingham in 21 years",
-      "summary": "— Devon Dampier threw for three touchdowns, Wayshawn Parker had the first three-touchdown game of his career and No. 21 Utah routed Idaho 66-14 coach Morgan Scalley's regular-season debut.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856768",
-      "sport": "College football",
-      "published": "2026-09-04T05:29:30.000Z",
-      "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49821504",
-      "id": "49821504",
-      "headline": "Colorado QB Julian Lewis leads touchdown drive with 42 seconds left in 14-13 win over Georgia Tech",
-      "summary": "— Colorado freshman quarterback Julian Lewis hit tight end Charlie Williams for a 20-yard touchdown with 42 seconds remaining in the fourth quarter, lifting the Buffaloes to a last-minute, 14-13 win against Georgia Tech on Thursday night in the season...",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856776",
-      "sport": "College football",
-      "published": "2026-09-04T05:27:29.000Z",
-      "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 11
-    },
-    {
       "key": "49821940",
       "id": "49821940",
       "headline": "Teoscar Hernández delivers a dramatic 9th-inning walk-off double as Dodgers top Cardinals",
@@ -156,26 +277,26 @@
       "bestRank": 2
     },
     {
+      "key": "49821648",
+      "id": "49821648",
+      "headline": "UMass ends its 16-game losing streak with 37-21 win at Rutgers",
+      "summary": "Pop Watson III passed for 197 yards and three touchdowns as UMass ended a 16-game losing streak with a 37-21 win over Rutgers in the season opener for both teams Thursday night.",
+      "url": "https://www.espn.com/college-football/story/_/id/49821648/umass-ends-16-game-losing-streak-37-21-win-rutgers",
+      "sport": "College football",
+      "published": "2026-09-04T05:12:48.000Z",
+      "firstSeen": "2026-09-04T06:41:21.714Z",
+      "bestRank": 6
+    },
+    {
       "key": "49821621",
       "id": "49821621",
       "headline": "Colorado rallies, blocks Georgia Tech's walk-off field goal try",
       "summary": "Freshman QB Julian Lewis led a clutch two-minute drill to put Colorado ahead, and the Buffaloes secured a 14-13 win by blocking Georgia Tech's 45-yard field goal attempt as time expired Thursday night.",
       "url": "https://www.espn.com/college-football/story/_/id/49821621/colorado-rallies-blocks-georgia-tech-walk-field-goal-try",
       "sport": "College football",
-      "published": "2026-09-04T05:22:05.000Z",
+      "published": "2026-09-04T05:12:26.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49821241",
-      "id": "49821241",
-      "headline": "Minnesota breezes by Eastern Illinois 59-7 in the opener behind Javon Tracy's two punt return TDs",
-      "summary": "— Javon Tracy set the program record with two punts for touchdowns and Darius Taylor rushed for three first-half scores as...",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858422",
-      "sport": "College football",
-      "published": "2026-09-04T05:19:29.000Z",
-      "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 19
+      "bestRank": 7
     },
     {
       "key": "49815660",
@@ -194,10 +315,21 @@
       "headline": "Caleb Williams, Caleb Wilson and Matas Buzelis start 'PCA!' chant at Cubs game",
       "summary": "Caleb Williams, Caleb Wilson and Matas Buzelis start 'PCA!' chant at Cubs game",
       "url": "https://www.espn.com/video/clip/_/id/49821854/caleb-williams-caleb-wilson-matas-buzelis-start-pca-chant-cubs-game",
-      "sport": "MLB",
+      "sport": "NFL",
       "published": "2026-09-04T05:10:31.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
       "bestRank": 1
+    },
+    {
+      "key": "49821241",
+      "id": "49821241",
+      "headline": "Minnesota breezes by Eastern Illinois 59-7 in the opener behind Javon Tracy's two punt return TDs",
+      "summary": "— Javon Tracy set the program record with two punts for touchdowns and Darius Taylor rushed for three first-half scores as...",
+      "url": "http://www.espn.com/ncf/recap?gameId=401858422",
+      "sport": "College football",
+      "published": "2026-09-04T04:58:29.000Z",
+      "firstSeen": "2026-09-04T06:41:21.714Z",
+      "bestRank": 18
     },
     {
       "key": "49821721",
@@ -208,7 +340,29 @@
       "sport": "College football",
       "published": "2026-09-04T04:47:10.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49821714",
+      "id": "49821714",
+      "headline": "Dampier and Parker star in No. 21 Utah's first opener without Whittingham in 21 years",
+      "summary": "— Devon Dampier threw for three touchdowns, Wayshawn Parker had the first three-touchdown game of his career and No. 21 Utah routed Idaho 66-14 coach Morgan Scalley's regular-season debut.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401856768",
+      "sport": "College football",
+      "published": "2026-09-04T04:44:43.000Z",
+      "firstSeen": "2026-09-04T06:41:21.714Z",
       "bestRank": 3
+    },
+    {
+      "key": "49821711",
+      "id": "49821711",
+      "headline": "Katin Houser throws 3 TD passes and runs for a score as Illinois beats UAB 42-23 in season opener",
+      "summary": "— Katin Houser threw three touchdown passes and ran for a score in his Illinois debut as the Illini defeated UAB 42-23 on Thursday night in a season opener.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401858424",
+      "sport": "College football",
+      "published": "2026-09-04T04:43:32.000Z",
+      "firstSeen": "2026-09-04T06:41:21.714Z",
+      "bestRank": 4
     },
     {
       "key": "49821690",
@@ -219,7 +373,18 @@
       "sport": "College football",
       "published": "2026-09-04T04:41:01.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 6
+      "bestRank": 5
+    },
+    {
+      "key": "49821028",
+      "id": "49821028",
+      "headline": "Kanter Freedom files suit against Sky, Wintrust Arena owners",
+      "summary": "Enes Kanter Freedom is suing the Chicago Sky and the owners of Wintrust Arena, alleging in a 15-page complaint filed Thursday that his First Amendment rights were violated when he was removed from a Sky home game last month.",
+      "url": "https://www.espn.com/wnba/story/_/id/49821028/kanter-freedom-files-suit-sky-wintrust-arena-owners",
+      "sport": "WNBA",
+      "published": "2026-09-04T04:40:22.000Z",
+      "firstSeen": "2026-09-04T06:41:21.714Z",
+      "bestRank": 1
     },
     {
       "key": "49820481",
@@ -241,7 +406,7 @@
       "sport": "College football",
       "published": "2026-09-04T04:30:48.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 9
+      "bestRank": 8
     },
     {
       "key": "49821533",
@@ -252,7 +417,7 @@
       "sport": "College football",
       "published": "2026-09-04T04:18:29.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 10
+      "bestRank": 9
     },
     {
       "key": "49821490",
@@ -263,7 +428,18 @@
       "sport": "College football",
       "published": "2026-09-04T04:17:59.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 12
+      "bestRank": 11
+    },
+    {
+      "key": "49821504",
+      "id": "49821504",
+      "headline": "Colorado QB Julian Lewis leads touchdown drive with 42 seconds left in 14-13 win over Georgia Tech",
+      "summary": "— Colorado freshman quarterback Julian Lewis hit tight end Charlie Williams for a 20-yard touchdown with 42 seconds remaining in the fourth quarter, lifting the Buffaloes to a last-minute, 14-13 win against Georgia Tech on Thursday night in the season...",
+      "url": "http://www.espn.com/ncf/recap?gameId=401856776",
+      "sport": "College football",
+      "published": "2026-09-04T04:14:30.000Z",
+      "firstSeen": "2026-09-04T06:41:21.714Z",
+      "bestRank": 10
     },
     {
       "key": "49821391",
@@ -274,7 +450,29 @@
       "sport": "College football",
       "published": "2026-09-04T04:10:59.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 13
+      "bestRank": 12
+    },
+    {
+      "key": "49821291",
+      "id": "49821291",
+      "headline": "Javon Tracy sets Minnesota record with 2 punt return TDs",
+      "summary": "Javon Tracy set Minnesota's single-game record with two punt return touchdowns in the season-opening win against Eastern Illinois.",
+      "url": "https://www.espn.com/college-football/story/_/id/49821291/javon-tracy-sets-minnesota-record-2-punt-return-tds",
+      "sport": "College football",
+      "published": "2026-09-04T04:04:36.000Z",
+      "firstSeen": "2026-09-04T06:41:21.714Z",
+      "bestRank": 17
+    },
+    {
+      "key": "49819163",
+      "id": "49819163",
+      "headline": "Alex Eala maintains smooth progress at US Open",
+      "summary": "Alexandra Eala powered past Oleksandra Oliynykova in their second-round match at the US Open, defeating the Ukrainian 6-1, 6-4 at Flushing Meadows, New York.",
+      "url": "https://www.espn.com/tennis/story/_/id/49819163/us-open-alex-eala-oleksandra-oliynykova-round-two",
+      "sport": "Tennis",
+      "published": "2026-09-04T03:58:38.000Z",
+      "firstSeen": "2026-09-04T06:41:21.714Z",
+      "bestRank": 2
     },
     {
       "key": "49821385",
@@ -285,7 +483,7 @@
       "sport": "College football",
       "published": "2026-09-04T03:56:51.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 14
+      "bestRank": 13
     },
     {
       "key": "49821190",
@@ -296,7 +494,7 @@
       "sport": "College football",
       "published": "2026-09-04T03:55:35.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 21
+      "bestRank": 20
     },
     {
       "key": "49821365",
@@ -307,7 +505,29 @@
       "sport": "College football",
       "published": "2026-09-04T03:55:05.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 15
+      "bestRank": 14
+    },
+    {
+      "key": "49820391",
+      "id": "49820391",
+      "headline": "Is the US Open the loudest -- and smelliest -- of the majors?",
+      "summary": "Roland Garros has its chic, Wimbledon has tradition, and the Australian Open is the \"Happy Slam.\" The US Open? Roaring crowds and distinct smells.",
+      "url": "https://www.espn.com/tennis/story/_/id/49820391/us-open-2026-smells-marijuana-loud-crowd-noise-arthur-ashe-stadium",
+      "sport": "Tennis",
+      "published": "2026-09-04T03:53:53.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49821330",
+      "id": "49821330",
+      "headline": "Alex Eala: 'I have my chances... I'm up for the challenge'",
+      "summary": "Alex Eala says the US Open women's field is \"very interesting... everyone has chances, everyone is playing well,\" but she certainly considers herself a title contender.",
+      "url": "https://www.espn.com/video/clip/_/id/49821330/my-chances-challenge",
+      "sport": "Tennis",
+      "published": "2026-09-04T03:49:32.000Z",
+      "firstSeen": "2026-09-04T09:29:43.618Z",
+      "bestRank": 4
     },
     {
       "key": "49821324",
@@ -318,7 +538,7 @@
       "sport": "College football",
       "published": "2026-09-04T03:47:30.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 16
+      "bestRank": 15
     },
     {
       "key": "49821298",
@@ -329,7 +549,7 @@
       "sport": "College football",
       "published": "2026-09-04T03:45:46.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 17
+      "bestRank": 16
     },
     {
       "key": "49821239",
@@ -340,7 +560,7 @@
       "sport": "College football",
       "published": "2026-09-04T03:39:22.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 20
+      "bestRank": 19
     },
     {
       "key": "49807088",
@@ -348,20 +568,9 @@
       "headline": "Judge grants injunction to pro players seeking LSU return",
       "summary": "Dae'Quan Wright and Zxavian Harris are currently cleared to return to college football after brief stints in the NFL, according to a judge's orders issued Thursday evening, setting up a dramatic showdown between the SEC and LSU.",
       "url": "https://www.espn.com/college-football/story/_/id/49807088/judge-grants-injunction-pro-players-seeking-lsu-return",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-04T03:26:45.000Z",
       "firstSeen": "2026-09-04T03:31:23.580Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49821028",
-      "id": "49821028",
-      "headline": "Kanter Freedom files suit against Sky, Wintrust Arena owners",
-      "summary": "Enes Kanter Freedom is suing the Chicago Sky and the owners of Wintrust Arena, alleging in a 15-page complaint filed Thursday that his First Amendment rights were violated when he was removed from a Sky home game last month.",
-      "url": "https://www.espn.com/wnba/story/_/id/49821028/kanter-freedom-files-suit-sky-wintrust-arena-owners",
-      "sport": "WNBA",
-      "published": "2026-09-04T03:22:29.000Z",
-      "firstSeen": "2026-09-04T06:41:21.714Z",
       "bestRank": 1
     },
     {
@@ -373,7 +582,7 @@
       "sport": "College football",
       "published": "2026-09-04T03:22:29.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 22
+      "bestRank": 21
     },
     {
       "key": "49818279",
@@ -395,7 +604,7 @@
       "sport": "College football",
       "published": "2026-09-04T03:19:09.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 23
+      "bestRank": 22
     },
     {
       "key": "49819227",
@@ -420,17 +629,6 @@
       "bestRank": 1
     },
     {
-      "key": "49820430",
-      "id": "49820430",
-      "headline": "Gael Monfils exits US Open with 2nd-round loss to Learner Tien",
-      "summary": "Gael Monfils played his final Grand Slam match Thursday night at the US Open, a battle with Learner Tien that ended in a loss to the talented young American.",
-      "url": "https://www.espn.com/tennis/story/_/id/49820430/gael-monfils-exits-us-open-2nd-round-loss-learner-tien",
-      "sport": "Tennis",
-      "published": "2026-09-04T03:11:39.000Z",
-      "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 2
-    },
-    {
       "key": "49821076",
       "id": "49821076",
       "headline": "Jessica Bouzas Maneiro vs. Elena Rybakina: Match Highlights",
@@ -450,7 +648,7 @@
       "sport": "College football",
       "published": "2026-09-04T02:44:41.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 24
+      "bestRank": 23
     },
     {
       "key": "49820869",
@@ -461,7 +659,7 @@
       "sport": "College football",
       "published": "2026-09-04T02:41:43.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 26
+      "bestRank": 24
     },
     {
       "key": "49820705",
@@ -766,21 +964,10 @@
       "headline": "Former Wake Forest, NFL DB Alphonso Smith dies at age 40",
       "summary": "Alphonso Smith, a two-time All-America defensive back who played four seasons in the NFL, has died.",
       "url": "https://www.espn.com/nfl/story/_/id/49818526/former-wake-forest-nfl-db-alphonso-smith-dies-age-40",
-      "sport": "College football",
+      "sport": "NFL",
       "published": "2026-09-03T23:58:23.000Z",
       "firstSeen": "2026-09-04T00:59:07.431Z",
       "bestRank": 2
-    },
-    {
-      "key": "49819163",
-      "id": "49819163",
-      "headline": "Alex Eala maintains smooth progress at US Open",
-      "summary": "Alexandra Eala powered past Oleksandra Oliynykova in their second-round match at the US Open, defeating the Ukrainian 6-1, 6-4 at Flushing Meadows, New York.",
-      "url": "https://www.espn.com/tennis/story/_/id/49819163/us-open-alex-eala-oleksandra-oliynykova-round-two",
-      "sport": "Tennis",
-      "published": "2026-09-03T23:53:02.000Z",
-      "firstSeen": "2026-09-04T06:41:21.714Z",
-      "bestRank": 3
     },
     {
       "key": "49818375",
@@ -38654,248 +38841,6 @@
       "published": "2026-08-14T10:00:06.000Z",
       "firstSeen": "2026-08-14T12:31:41.741Z",
       "bestRank": 6
-    },
-    {
-      "key": "49600669",
-      "id": "49600669",
-      "headline": "Time limits, VAR, mistaken identity: Which World Cup rules has Premier League adopted?",
-      "summary": "Which World Cup law changes will continue for the Premier League, and which ones have been rejected?",
-      "url": "https://www.espn.com/soccer/story/_/id/49600669/limits-var-mistaken-identity-2026-world-cup-rules-premier-league",
-      "sport": "Soccer",
-      "published": "2026-08-14T09:05:03.000Z",
-      "firstSeen": "2026-08-14T15:15:56.143Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49607572",
-      "id": "49607572",
-      "headline": "Carrick backs Mainoo after 'challenging' World Cup",
-      "summary": "Carrick backs Mainoo after 'challenging' World Cup",
-      "url": "https://www.espn.com/video/clip/_/id/49607572/carrick-backs-mainoo-challenging-world-cup",
-      "sport": "Soccer",
-      "published": "2026-08-14T08:53:15.000Z",
-      "firstSeen": "2026-08-14T15:15:56.143Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49607480",
-      "id": "49607480",
-      "headline": "New Zealand withdraws support for FIFA president Gianni Infantino in break with Oceania",
-      "summary": "New Zealand's football federation has withdrawn its support for under-fire FIFA president Gianni Infantino in a break with the wider Oceania Football Confederation (OFC).",
-      "url": "https://www.espn.com/soccer/story/_/id/49607480/new-zealand-withdraws-support-fifa-president-gianni-infantino-break-oceania",
-      "sport": "Soccer",
-      "published": "2026-08-14T08:49:57.000Z",
-      "firstSeen": "2026-08-14T15:15:56.143Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49607343",
-      "id": "49607343",
-      "headline": "Montero, Tigers shut out Guardians without a strikeout, a first in MLB since 2014",
-      "summary": "— Keider Montero pitched three-hit ball into the seventh inning and the Detroit Tigers blanked the Cleveland Guardians 3-0 on Thursday despite failing to record a strikeout.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816511",
-      "sport": "MLB",
-      "published": "2026-08-14T08:11:56.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49607334",
-      "id": "49607334",
-      "headline": "Royals look to stop 4-game slide, take on the Angels",
-      "summary": "Kansas City Royals (49-73, fifth in the AL Central) vs. Los Angeles Angels (48-74, fourth in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816529",
-      "sport": "MLB",
-      "published": "2026-08-14T08:03:18.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49607333",
-      "id": "49607333",
-      "headline": "Astros start 3-game series at home against the Mariners",
-      "summary": "Seattle Mariners (57-65, third in the AL West) vs. Houston Astros (62-60, first in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816526",
-      "sport": "MLB",
-      "published": "2026-08-14T08:03:14.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49607329",
-      "id": "49607329",
-      "headline": "Guardians bring home losing streak into matchup against the Padres",
-      "summary": "San Diego Padres (65-57, second in the NL West) vs. Cleveland Guardians (59-63, fourth in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816523",
-      "sport": "MLB",
-      "published": "2026-08-14T08:03:10.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49607326",
-      "id": "49607326",
-      "headline": "Brewers face the Dodgers with 1-0 series lead",
-      "summary": "Milwaukee Brewers (75-47, first in the NL Central) vs. Los Angeles Dodgers (73-49, first in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816530",
-      "sport": "MLB",
-      "published": "2026-08-14T08:03:06.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49607325",
-      "id": "49607325",
-      "headline": "Cubs host the Cardinals in first of 3-game series",
-      "summary": "St. Louis Cardinals (61-60, third in the NL Central) vs. Chicago Cubs (71-51, second in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816527",
-      "sport": "MLB",
-      "published": "2026-08-14T08:03:02.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49607324",
-      "id": "49607324",
-      "headline": "Marlins take road skid into matchup against the Reds",
-      "summary": "Miami Marlins (62-60, third in the NL East) vs. Cincinnati Reds (58-62, fourth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816521",
-      "sport": "MLB",
-      "published": "2026-08-14T08:02:59.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49607323",
-      "id": "49607323",
-      "headline": "Athletics look to stop 3-game skid, play the Rangers",
-      "summary": "Texas Rangers (60-62, second in the AL West) vs. Athletics (47-74, fifth in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816531",
-      "sport": "MLB",
-      "published": "2026-08-14T08:02:55.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49607322",
-      "id": "49607322",
-      "headline": "Mets host the Nationals on 3-game home skid",
-      "summary": "Washington Nationals (60-63, fourth in the NL East) vs. New York Mets (53-69, fifth in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816524",
-      "sport": "MLB",
-      "published": "2026-08-14T08:02:51.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49607321",
-      "id": "49607321",
-      "headline": "Blue Jays host the Yankees to start 3-game series",
-      "summary": "New York Yankees (68-53, second in the AL East) vs. Toronto Blue Jays (59-64, fourth in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816522",
-      "sport": "MLB",
-      "published": "2026-08-14T08:02:48.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49607320",
-      "id": "49607320",
-      "headline": "Giants host the Rockies in first of 3-game series",
-      "summary": "Colorado Rockies (48-73, fifth in the NL West) vs. San Francisco Giants (50-71, fourth in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816528",
-      "sport": "MLB",
-      "published": "2026-08-14T08:02:44.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49607319",
-      "id": "49607319",
-      "headline": "Rays take on the Orioles in first of 4-game series",
-      "summary": "Baltimore Orioles (58-63, fifth in the AL East) vs. Tampa Bay Rays (74-46, first in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816518",
-      "sport": "MLB",
-      "published": "2026-08-14T08:02:40.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49607318",
-      "id": "49607318",
-      "headline": "Braves take on the Diamondbacks in first of 3-game series",
-      "summary": "Arizona Diamondbacks (64-58, third in the NL West) vs. Atlanta Braves (73-48, first in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816517",
-      "sport": "MLB",
-      "published": "2026-08-14T08:02:37.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49607317",
-      "id": "49607317",
-      "headline": "Pirates host the Red Sox in first of 3-game series",
-      "summary": "Boston Red Sox (65-56, third in the AL East) vs. Pittsburgh Pirates (59-64, fifth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816519",
-      "sport": "MLB",
-      "published": "2026-08-14T08:02:33.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 14
-    },
-    {
-      "key": "49607316",
-      "id": "49607316",
-      "headline": "White Sox try to break road slide, play the Tigers",
-      "summary": "Chicago White Sox (62-58, first in the AL Central) vs. Detroit Tigers (60-61, second in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816520",
-      "sport": "MLB",
-      "published": "2026-08-14T08:02:29.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 15
-    },
-    {
-      "key": "46646328",
-      "id": "46646328",
-      "headline": "Ruben Amorim at Man United: His worst moments as boss, from Marcus Rashford to Grimsby",
-      "summary": "From dramatic quotes to rollercoaster performances, here's the best (and worst) of Ruben Amorim's time at Manchester United.",
-      "url": "https://www.espn.com/soccer/story/_/id/46646328/ruben-amorim-sacked-manchester-united-worst-moments-marcus-rashford-grimsby",
-      "sport": "Soccer",
-      "published": "2026-08-14T07:48:04.000Z",
-      "firstSeen": "2026-08-14T15:15:56.143Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49604057",
-      "id": "49604057",
-      "headline": "Sources: Facing charges, Terrion Arnold set to join Seahawks",
-      "summary": "Terrion Arnold, who sources told NFL Network plans to sign a one-year deal with the Seahawks, also had visited the Texans, Saints and Giants before choosing the Seahawks.",
-      "url": "https://www.espn.com/nfl/story/_/id/49604057/sources-terrion-arnold-plans-sign-seahawks",
-      "sport": "NFL",
-      "published": "2026-08-14T07:37:15.000Z",
-      "firstSeen": "2026-08-14T00:40:08.353Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49607082",
-      "id": "49607082",
-      "headline": "Roberts to stick with Diaz as Dodgers' closer after latest meltdown",
-      "summary": "Dodgers closer Edwin Diaz blew his third save in his past four chances Thursday night, but manager Dave Roberts said he'd stick with him as closer, lamenting that the team lacks better options.",
-      "url": "https://www.espn.com/mlb/story/_/id/49607082/roberts-stick-diaz-dodgers-closer-latest-meltdown",
-      "sport": "MLB",
-      "published": "2026-08-14T07:23:57.000Z",
-      "firstSeen": "2026-08-14T09:39:35.868Z",
-      "bestRank": 16
-    },
-    {
-      "key": "49607042",
-      "id": "49607042",
-      "headline": "Eva Carneiro: Ex-Chelsea doctor hits back at José Mourinho, John Terry over documentary as row revisited",
-      "summary": "Former Chelsea team doctor Eva Carneiro has hit back at José Mourinho and John Terry after the pair revisited the controversy that led to her departure from the club 11 years ago.",
-      "url": "https://www.espn.com/soccer/story/_/id/49607042/eva-carneiro-chelsea-doctor-hits-back-jose-mourinho-john-terry-documentary-row-revisited",
-      "sport": "Soccer",
-      "published": "2026-08-14T06:47:17.000Z",
-      "firstSeen": "2026-08-14T15:15:56.143Z",
-      "bestRank": 14
     }
   ]
 }
