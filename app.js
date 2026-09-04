@@ -2131,9 +2131,10 @@ async function init() {
 init();
 
 const VIEWPORT_CONTENT =
-  "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover";
+  "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, interactive-widget=resizes-content";
 
 function forceLayoutReset() {
+  if (allowsCaretFocus(document.activeElement)) return;
   const root = document.documentElement;
   root.style.height = `${Math.max(window.innerHeight, 1) + 1}px`;
   void root.offsetHeight;
@@ -2142,11 +2143,12 @@ function forceLayoutReset() {
 }
 
 function snapPageScale() {
+  if (allowsCaretFocus(document.activeElement)) return;
   const meta = document.querySelector('meta[name="viewport"]');
   if (meta) {
     meta.setAttribute(
       "content",
-      "width=device-width, initial-scale=1, maximum-scale=1.0001, viewport-fit=cover"
+      "width=device-width, initial-scale=1, maximum-scale=1.0001, viewport-fit=cover, interactive-widget=resizes-content"
     );
     requestAnimationFrame(() => {
       meta.setAttribute("content", VIEWPORT_CONTENT);
@@ -2164,8 +2166,10 @@ function scaledAwayFrom1() {
 
 let snapTimer = 0;
 function scheduleSnapIfScaled() {
+  if (allowsCaretFocus(document.activeElement)) return;
   clearTimeout(snapTimer);
   snapTimer = window.setTimeout(() => {
+    if (allowsCaretFocus(document.activeElement)) return;
     if (scaledAwayFrom1()) snapPageScale();
   }, 450);
 }

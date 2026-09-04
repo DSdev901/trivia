@@ -245,6 +245,34 @@
           "itemCount": 14
         },
         {
+          "id": "na-flags",
+          "name": "North & Central America: Flags",
+          "blurb": "Flags for the mainland plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 14
+        },
+        {
+          "id": "na-outlines",
+          "name": "North & Central America: Outlines",
+          "blurb": "Silhouettes of the mainland plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 14
+        },
+        {
           "id": "na-physical",
           "name": "North America: Physical Features",
           "blurb": "Mountains, rivers, lakes, and coasts of North America.",
@@ -950,34 +978,6 @@
           "itemCount": 50
         },
         {
-          "id": "na-flags",
-          "name": "North & Central America: Flags",
-          "blurb": "Flags for the mainland plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 14
-        },
-        {
-          "id": "na-outlines",
-          "name": "North & Central America: Outlines",
-          "blurb": "Silhouettes of the mainland plus Cuba, Haiti, the Dominican Republic, and Jamaica.",
-          "map": "world-countries",
-          "quiz": "outlines",
-          "modes": [
-            "outline",
-            "type",
-            "choice",
-            "study"
-          ],
-          "itemCount": 14
-        },
-        {
           "id": "nba-teams",
           "name": "NBA Teams",
           "blurb": "Pin or Type each NBA franchise’s home city.",
@@ -1045,6 +1045,8 @@
           "packIds": [
             "na-countries",
             "na-capitals",
+            "na-flags",
+            "na-outlines",
             "na-physical",
             "na-waterways",
             "great-lakes"
@@ -1116,13 +1118,6 @@
           ]
         },
         {
-          "name": "Flags & outlines",
-          "packIds": [
-            "na-flags",
-            "na-outlines"
-          ]
-        },
-        {
           "name": "Sports",
           "packIds": [
             "nba-teams",
@@ -1166,6 +1161,34 @@
             "name",
             "choice",
             "reverse",
+            "study"
+          ],
+          "itemCount": 13
+        },
+        {
+          "id": "sa-flags",
+          "name": "South America: Flags",
+          "blurb": "Flags of South America.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 13
+        },
+        {
+          "id": "sa-outlines",
+          "name": "South America: Outlines",
+          "blurb": "Silhouette drills for South America.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
             "study"
           ],
           "itemCount": 13
@@ -1326,34 +1349,6 @@
             "study"
           ],
           "itemCount": 19
-        },
-        {
-          "id": "sa-flags",
-          "name": "South America: Flags",
-          "blurb": "Flags of South America.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 13
-        },
-        {
-          "id": "sa-outlines",
-          "name": "South America: Outlines",
-          "blurb": "Silhouette drills for South America.",
-          "map": "world-countries",
-          "quiz": "outlines",
-          "modes": [
-            "outline",
-            "type",
-            "choice",
-            "study"
-          ],
-          "itemCount": 13
         }
       ],
       "blurb": "Countries, cities, landmarks, and physical features.",
@@ -1363,6 +1358,8 @@
           "packIds": [
             "sa-countries",
             "sa-capitals",
+            "sa-flags",
+            "sa-outlines",
             "sa-cities",
             "sa-cities-difficult",
             "sa-landmarks",
@@ -1378,13 +1375,6 @@
             "latin-america-flags",
             "latin-america-outlines",
             "latin-america-waterways"
-          ]
-        },
-        {
-          "name": "Flags & outlines",
-          "packIds": [
-            "sa-flags",
-            "sa-outlines"
           ]
         }
       ]
@@ -1422,6 +1412,34 @@
             "name",
             "choice",
             "reverse",
+            "study"
+          ],
+          "itemCount": 46
+        },
+        {
+          "id": "europe-flags",
+          "name": "Europe: Flags",
+          "blurb": "Flags of Europe.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 46
+        },
+        {
+          "id": "europe-outlines",
+          "name": "Europe: Outlines",
+          "blurb": "Silhouette drills for Europe.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
             "study"
           ],
           "itemCount": 46
@@ -1951,34 +1969,6 @@
             "study"
           ],
           "itemCount": 27
-        },
-        {
-          "id": "europe-flags",
-          "name": "Europe: Flags",
-          "blurb": "Flags of Europe.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 46
-        },
-        {
-          "id": "europe-outlines",
-          "name": "Europe: Outlines",
-          "blurb": "Silhouette drills for Europe.",
-          "map": "world-countries",
-          "quiz": "outlines",
-          "modes": [
-            "outline",
-            "type",
-            "choice",
-            "study"
-          ],
-          "itemCount": 46
         }
       ],
       "blurb": "Countries, cities, regions, waterways, and landmarks.",
@@ -1988,6 +1978,8 @@
           "packIds": [
             "europe-countries",
             "europe-capitals",
+            "europe-flags",
+            "europe-outlines",
             "europe-cities",
             "europe-cities-difficult",
             "europe-landmarks",
@@ -2053,13 +2045,6 @@
             "eu-flags",
             "eu-outlines"
           ]
-        },
-        {
-          "name": "Flags & outlines",
-          "packIds": [
-            "europe-flags",
-            "europe-outlines"
-          ]
         }
       ]
     },
@@ -2099,6 +2084,34 @@
             "study"
           ],
           "itemCount": 54
+        },
+        {
+          "id": "africa-flags",
+          "name": "Africa: Flags",
+          "blurb": "Flags of Africa.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 55
+        },
+        {
+          "id": "africa-outlines",
+          "name": "Africa: Outlines",
+          "blurb": "Silhouette drills for Africa.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 55
         },
         {
           "id": "africa-cities",
@@ -2718,34 +2731,6 @@
             "study"
           ],
           "itemCount": 9
-        },
-        {
-          "id": "africa-flags",
-          "name": "Africa: Flags",
-          "blurb": "Flags of Africa.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 55
-        },
-        {
-          "id": "africa-outlines",
-          "name": "Africa: Outlines",
-          "blurb": "Silhouette drills for Africa.",
-          "map": "world-countries",
-          "quiz": "outlines",
-          "modes": [
-            "outline",
-            "type",
-            "choice",
-            "study"
-          ],
-          "itemCount": 55
         }
       ],
       "blurb": "Countries, cities, regions, landmarks, and physical features.",
@@ -2755,6 +2740,8 @@
           "packIds": [
             "africa-countries",
             "africa-capitals",
+            "africa-flags",
+            "africa-outlines",
             "africa-cities",
             "africa-cities-difficult",
             "africa-landmarks",
@@ -2831,13 +2818,6 @@
             "africa-south-equator-outlines",
             "africa-south-equator-waterways"
           ]
-        },
-        {
-          "name": "Flags & outlines",
-          "packIds": [
-            "africa-flags",
-            "africa-outlines"
-          ]
         }
       ]
     },
@@ -2874,6 +2854,34 @@
             "name",
             "choice",
             "reverse",
+            "study"
+          ],
+          "itemCount": 48
+        },
+        {
+          "id": "asia-flags",
+          "name": "Asia: Flags",
+          "blurb": "Flags of Asia.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 48
+        },
+        {
+          "id": "asia-outlines",
+          "name": "Asia: Outlines",
+          "blurb": "Silhouette drills for Asia.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
             "study"
           ],
           "itemCount": 48
@@ -3419,34 +3427,6 @@
             "study"
           ],
           "itemCount": 14
-        },
-        {
-          "id": "asia-flags",
-          "name": "Asia: Flags",
-          "blurb": "Flags of Asia.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 48
-        },
-        {
-          "id": "asia-outlines",
-          "name": "Asia: Outlines",
-          "blurb": "Silhouette drills for Asia.",
-          "map": "world-countries",
-          "quiz": "outlines",
-          "modes": [
-            "outline",
-            "type",
-            "choice",
-            "study"
-          ],
-          "itemCount": 48
         }
       ],
       "blurb": "Countries, cities, regions, and landmarks from the Middle East to Japan.",
@@ -3456,6 +3436,8 @@
           "packIds": [
             "asia-countries",
             "asia-capitals",
+            "asia-flags",
+            "asia-outlines",
             "asia-cities",
             "asia-cities-difficult",
             "asia-landmarks",
@@ -3522,13 +3504,6 @@
             "mena-outlines",
             "mena-waterways"
           ]
-        },
-        {
-          "name": "Flags & outlines",
-          "packIds": [
-            "asia-flags",
-            "asia-outlines"
-          ]
         }
       ]
     },
@@ -3568,6 +3543,48 @@
             "study"
           ],
           "itemCount": 14
+        },
+        {
+          "id": "oceania-flags",
+          "name": "Oceania: Flags",
+          "blurb": "Flags of Oceania.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 14
+        },
+        {
+          "id": "oceania-outlines",
+          "name": "Oceania: Outlines",
+          "blurb": "Silhouette drills for Oceania.",
+          "map": "world-countries",
+          "quiz": "outlines",
+          "modes": [
+            "outline",
+            "type",
+            "choice",
+            "study"
+          ],
+          "itemCount": 14
+        },
+        {
+          "id": "oceania-territories-flags",
+          "name": "Oceania: Flags of Countries and Territories",
+          "blurb": "Flags of those Pacific countries and territories.",
+          "map": null,
+          "quiz": "flags",
+          "modes": [
+            "type",
+            "choice",
+            "reverse",
+            "study"
+          ],
+          "itemCount": 22
         },
         {
           "id": "oceania-territories",
@@ -3957,48 +3974,6 @@
             "study"
           ],
           "itemCount": 3
-        },
-        {
-          "id": "oceania-flags",
-          "name": "Oceania: Flags",
-          "blurb": "Flags of Oceania.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 14
-        },
-        {
-          "id": "oceania-territories-flags",
-          "name": "Oceania: Flags of Countries and Territories",
-          "blurb": "Flags of those Pacific countries and territories.",
-          "map": null,
-          "quiz": "flags",
-          "modes": [
-            "type",
-            "choice",
-            "reverse",
-            "study"
-          ],
-          "itemCount": 22
-        },
-        {
-          "id": "oceania-outlines",
-          "name": "Oceania: Outlines",
-          "blurb": "Silhouette drills for Oceania.",
-          "map": "world-countries",
-          "quiz": "outlines",
-          "modes": [
-            "outline",
-            "type",
-            "choice",
-            "study"
-          ],
-          "itemCount": 14
         }
       ],
       "blurb": "Pacific countries, Australian cities, and physical features.",
@@ -4008,8 +3983,11 @@
           "packIds": [
             "oceania-countries",
             "oceania-capitals",
+            "oceania-flags",
+            "oceania-outlines",
             "oceania-territories",
             "oceania-territories-capitals",
+            "oceania-territories-flags",
             "oceania-waterways"
           ]
         },
@@ -4053,14 +4031,6 @@
             "polynesia-capitals",
             "polynesia-flags",
             "polynesia-outlines"
-          ]
-        },
-        {
-          "name": "Flags & outlines",
-          "packIds": [
-            "oceania-flags",
-            "oceania-territories-flags",
-            "oceania-outlines"
           ]
         }
       ]

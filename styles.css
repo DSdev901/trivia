@@ -4685,7 +4685,7 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
   display: contents;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 860px), (hover: none) and (max-height: 640px) {
   .geo-play-layout {
     grid-template-columns: 1fr;
   }
@@ -4920,24 +4920,9 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     display: contents;
   }
 
-  .geo-play--map.geo-play--type.is-keyboard .geo-play-close {
-    position: fixed;
-    top: calc(0.5rem + env(safe-area-inset-top, 0px));
-    right: max(0.5rem, env(safe-area-inset-right, 0px));
-    z-index: 20;
-  }
-
-  .geo-play--map.geo-play--type .geo-side {
-    display: flex;
-    flex-direction: column;
-    order: 1;
-    z-index: 5;
-    flex: 0 0 auto;
-    width: calc(100% + 0.9rem);
-    margin: 0 -0.45rem;
-    background: var(--paper);
-    transform: translate3d(0, calc(-1 * var(--geo-keyboard, 0px)), 0);
-    will-change: transform;
+  .geo-play--map.geo-play--type .geo-type-input {
+    font-size: 16px;
+    touch-action: manipulation;
   }
 
   .geo-play--map .geo-quiz-panel {
@@ -5111,7 +5096,7 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
   }
 
   body:has(.view:not([hidden]) .geo-play--map.geo-play--type) {
-    height: 100lvh;
+    overflow-y: auto;
   }
 
   body:has(.view:not([hidden]) .geo-play--map) .app,
@@ -5123,6 +5108,10 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     height: 100%;
     overflow: hidden;
     padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  body:has(.view:not([hidden]) .geo-play--map.geo-play--type) .app {
+    overflow: visible;
   }
 
   body:has(.view:not([hidden]) .geo-play--map) .app > main,
@@ -5152,6 +5141,10 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     flex: 1 1 0;
     min-height: 12rem;
     display: flex;
+  }
+
+  .geo-play--map.geo-play--type .geo-map-wrap {
+    min-height: 5rem;
   }
 
   .geo-play--map .geo-map-stage {
@@ -5186,7 +5179,7 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     flex: 1 1 auto;
     min-width: 0;
     min-height: 3.4rem;
-    font-size: 1.05rem;
+    font-size: 16px;
   }
 
   .geo-play--map.geo-play--markers .geo-type-form .primary-btn {

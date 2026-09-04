@@ -125,7 +125,6 @@ const geo = {
   allItems: [],
   mapSvgBare: "",
   waterFiltersByPack: {},
-  _typeKb: null,
 };
 
 const WATER_FILTER_KEYS = ["river", "lake", "ocean"];
@@ -3225,6 +3224,7 @@ function regionsBlockHtml(regions, group) {
 }
 
 function scrollPageTop() {
+  if (document.activeElement?.id === "geo-type-input") return;
   window.scrollTo(0, 0);
 }
 
@@ -3565,7 +3565,6 @@ function renderPlay() {
   }
   const item = currentItem();
   if (!item) {
-    stopTypeKeyboard();
     renderDone();
     return;
   }
@@ -3575,7 +3574,6 @@ function renderPlay() {
   }
 
   const showMap = playUsesMap();
-  stopTypeKeyboard();
   scrollPageTop();
 
   let prompt = "";
@@ -3709,43 +3707,19 @@ function flashPinMiss(id) {
   }, PIN_MISS_MS);
 }
 
-function typeKeyboardInset() {
-  const vv = window.visualViewport;
-  if (!vv) return 0;
-  return Math.max(0, Math.round(window.innerHeight - vv.height - vv.offsetTop));
+const COMPACT_PLAY_MQ =
+  "(max-width: 860px), (hover: none) and (max-height: 640px)";
+
+function isCompactPlay() {
+  return window.matchMedia(COMPACT_PLAY_MQ).matches;
 }
 
-function stopTypeKeyboard() {
-  const apply = geo._typeKb;
-  if (apply) {
-    window.visualViewport?.removeEventListener("resize", apply);
-    window.visualViewport?.removeEventListener("scroll", apply);
-    window.removeEventListener("resize", apply);
-    geo._typeKb = null;
-  }
-  const play = geo.root?.querySelector(".geo-play--type");
-  play?.style.removeProperty("--geo-keyboard");
-  play?.classList.remove("is-keyboard");
-}
-
-function bindTypeKeyboard(play) {
-  stopTypeKeyboard();
-  if (!play || !window.matchMedia("(max-width: 860px)").matches) return;
-  const apply = () => {
-    if (!play.isConnected) {
-      stopTypeKeyboard();
-      return;
-    }
-    const inset = typeKeyboardInset();
-    play.style.setProperty("--geo-keyboard", `${inset}px`);
-    play.classList.toggle("is-keyboard", inset > 0);
-    if (inset > 0) window.scrollTo(0, 0);
-  };
-  geo._typeKb = apply;
-  window.visualViewport?.addEventListener("resize", apply);
-  window.visualViewport?.addEventListener("scroll", apply);
-  window.addEventListener("resize", apply);
-  apply();
+function shieldMapFromFocusClick(mapWrap) {
+  if (!mapWrap) return;
+  mapWrap.style.pointerEvents = "none";
+  window.setTimeout(() => {
+    if (mapWrap.isConnected) mapWrap.style.pointerEvents = "";
+  }, 700);
 }
 
 function bindPlay() {
@@ -3781,19 +3755,18 @@ function bindPlay() {
   if (geo.mode === "type" || geo.mode === "outline") {
     const form = geo.root.querySelector("#geo-type-form");
     const input = geo.root.querySelector("#geo-type-input");
-    const compact = window.matchMedia("(max-width: 860px)").matches;
-    bindTypeKeyboard(geo.root.querySelector(".geo-play--type"));
+    const compact = isCompactPlay();
+    const mapWrap = geo.root.querySelector(".geo-map-wrap");
     input?.addEventListener("focus", () => {
       if (compact) {
-        window.scrollTo(0, 0);
-        requestAnimationFrame(() => window.scrollTo(0, 0));
+        shieldMapFromFocusClick(mapWrap);
         return;
       }
       requestAnimationFrame(() => {
         input.scrollIntoView({ block: "center", behavior: "smooth" });
       });
     });
-    if (!compact) input?.focus();
+    if (!compact) input?.focus({ preventScroll: true });
     form?.addEventListener("submit", (e) => {
       e.preventDefault();
       if (geo.answered) return;
@@ -3929,7 +3902,6 @@ export function cleanupGeography() {
   geo._pinMisses = 0;
   clearPinMissFlash();
   stopFocusZoom();
-  stopTypeKeyboard();
 }
 
 async function ensureIndex() {

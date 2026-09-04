@@ -297,7 +297,7 @@ const SECTIONS = {
   "north-america": [
     {
       name: "The continent",
-      packIds: ["na-countries", "na-capitals", "na-physical", "na-waterways", "great-lakes"],
+      packIds: ["na-countries", "na-capitals", "na-flags", "na-outlines", "na-physical", "na-waterways", "great-lakes"],
     },
     {
       name: "Northern America",
@@ -364,13 +364,12 @@ const SECTIONS = {
         "us-outlines",
       ],
     },
-    { name: "Flags & outlines", packIds: ["na-flags", "na-outlines"] },
     { name: "Sports", packIds: ["nba-teams", "mlb-teams", "nhl-teams", "mls-teams"] },
   ],
   "south-america": [
     {
       name: "The continent",
-      packIds: ["sa-countries", "sa-capitals", "sa-cities", "sa-cities-difficult", "sa-landmarks", "sa-physical", "sa-waterways"],
+      packIds: ["sa-countries", "sa-capitals", "sa-flags", "sa-outlines", "sa-cities", "sa-cities-difficult", "sa-landmarks", "sa-physical", "sa-waterways"],
     },
     {
       name: "Latin America",
@@ -382,7 +381,6 @@ const SECTIONS = {
         "latin-america-waterways",
       ],
     },
-    { name: "Flags & outlines", packIds: ["sa-flags", "sa-outlines"] },
   ],
   europe: [
     {
@@ -390,6 +388,8 @@ const SECTIONS = {
       packIds: [
         "europe-countries",
         "europe-capitals",
+        "europe-flags",
+        "europe-outlines",
         "europe-cities",
         "europe-cities-difficult",
         "europe-landmarks",
@@ -445,10 +445,6 @@ const SECTIONS = {
       name: "European Union",
       packIds: ["eu-countries", "eu-capitals", "eu-flags", "eu-outlines"],
     },
-    {
-      name: "Flags & outlines",
-      packIds: ["europe-flags", "europe-outlines"],
-    },
   ],
   africa: [
     {
@@ -456,6 +452,8 @@ const SECTIONS = {
       packIds: [
         "africa-countries",
         "africa-capitals",
+        "africa-flags",
+        "africa-outlines",
         "africa-cities",
         "africa-cities-difficult",
         "africa-landmarks",
@@ -533,12 +531,11 @@ const SECTIONS = {
         "africa-south-equator-waterways",
       ],
     },
-    { name: "Flags & outlines", packIds: ["africa-flags", "africa-outlines"] },
   ],
   asia: [
     {
       name: "The continent",
-      packIds: ["asia-countries", "asia-capitals", "asia-cities", "asia-cities-difficult", "asia-landmarks", "asia-physical", "asia-waterways"],
+      packIds: ["asia-countries", "asia-capitals", "asia-flags", "asia-outlines", "asia-cities", "asia-cities-difficult", "asia-landmarks", "asia-physical", "asia-waterways"],
     },
     {
       name: "East Asia",
@@ -594,10 +591,6 @@ const SECTIONS = {
       name: "The Middle East and North Africa",
       packIds: ["mena-countries", "mena-capitals", "mena-flags", "mena-outlines", "mena-waterways"],
     },
-    {
-      name: "Flags & outlines",
-      packIds: ["asia-flags", "asia-outlines"],
-    },
   ],
   oceania: [
     {
@@ -605,8 +598,11 @@ const SECTIONS = {
       packIds: [
         "oceania-countries",
         "oceania-capitals",
+        "oceania-flags",
+        "oceania-outlines",
         "oceania-territories",
         "oceania-territories-capitals",
+        "oceania-territories-flags",
         "oceania-waterways",
       ],
     },
@@ -636,7 +632,6 @@ const SECTIONS = {
       name: "Polynesia",
       packIds: ["polynesia-countries", "polynesia-capitals", "polynesia-flags", "polynesia-outlines"],
     },
-    { name: "Flags & outlines", packIds: ["oceania-flags", "oceania-territories-flags", "oceania-outlines"] },
   ],
 };
 
