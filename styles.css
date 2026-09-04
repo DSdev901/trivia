@@ -3743,12 +3743,24 @@ a.ce-tab {
   touch-action: none;
 }
 
-.geo-map-frame.is-panning {
+.geo-map-frame.is-panning,
+.geo-map-frame.is-panning .geo-map-nav {
   cursor: grabbing;
 }
 
 .geo-map-frame.is-panning svg {
   pointer-events: none;
+}
+
+@media (pointer: fine) {
+  .geo-play--pin .geo-map-frame,
+  .geo-play--pin .geo-map-nav,
+  .geo-play--study .geo-map-frame,
+  .geo-play--study .geo-map-nav,
+  .geo-preview .geo-map-frame,
+  .geo-preview .geo-map-nav {
+    cursor: pointer;
+  }
 }
 
 .geo-map-frame svg {
@@ -4045,10 +4057,42 @@ a.ce-tab {
 .geo-map-frame .geo-island-mark {
   fill: #8aa6be;
   stroke: #f4f8fb;
-  stroke-width: 1.6;
+  stroke-width: 1.15;
   vector-effect: non-scaling-stroke;
   pointer-events: all;
   cursor: pointer;
+}
+
+.geo-map-frame .geo-island-link {
+  fill: none;
+  stroke: #6f879c;
+  stroke-width: 1.35;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+  vector-effect: non-scaling-stroke;
+  opacity: 0.9;
+}
+
+.geo-map-frame .geo-island-link.is-active {
+  stroke: var(--accent);
+  opacity: 1;
+}
+
+.geo-map-frame .geo-island-link.is-correct {
+  stroke: #2f9e6b;
+  opacity: 1;
+}
+
+.geo-map-frame .geo-island-link.is-wrong,
+.geo-map-frame .geo-island-link.is-miss-flash {
+  stroke: #c45c5c;
+  opacity: 1;
+}
+
+.geo-map-frame .geo-island-link.is-dim {
+  stroke: #b4c2ce;
+  opacity: 0.7;
 }
 
 .geo-map-frame .geo-island-dot.is-out {

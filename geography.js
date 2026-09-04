@@ -63,7 +63,7 @@ const PACIFIC_MICRO_IDS = new Set([
   "NR", "TV", "PW", "WS", "TO", "TK", "NU", "AS", "GU", "MP", "WF", "PN", "CK",
 ]);
 const PACIFIC_CHAIN_IDS = new Set(["KI", "FM", "MH", "PF"]);
-const PACIFIC_MARK_DRAW_PX = 24;
+const PACIFIC_MARK_DRAW_PX = 5.5;
 const PACIFIC_LAND_SEE_PX = 22;
 
 /** Pin and Type are the main map modes; the rest are practice variants. */
@@ -1390,6 +1390,18 @@ function paintMap(activeId = null, { dimOthers = false, flash = null } = {}) {
     el.classList.toggle("is-wrong", !out && wrongId === id && Boolean(correctId));
     el.classList.toggle("is-miss-flash", !out && wrongId === id && !correctId);
   });
+  host.querySelectorAll(".geo-island-link").forEach((el) => {
+    const id = el.dataset.id;
+    const out = scopePack && !inPack.has(id);
+    el.classList.toggle("is-active", !out && id === activeId && !correctId && !wrongId);
+    el.classList.toggle(
+      "is-dim",
+      !out && dimOthers && id !== activeId && id !== correctId && id !== wrongId
+    );
+    el.classList.toggle("is-correct", !out && correctId === id);
+    el.classList.toggle("is-wrong", !out && wrongId === id && Boolean(correctId));
+    el.classList.toggle("is-miss-flash", !out && wrongId === id && !correctId);
+  });
   if (outline) {
     if (host.dataset.geoOutlineId !== activeId) {
       fitMapToIds([activeId], { padRatio: pullbackPadRatio(0.05) });
@@ -2081,17 +2093,64 @@ function appendIslandMark(svg, id, x, y, r, src) {
   svg.appendChild(mark);
 }
 
+function orderChainPoints(pts) {
+  if (pts.length <= 2) return [...pts].sort((a, b) => a.x - b.x);
+  const leftover = [...pts].sort((a, b) => a.x - b.x);
+  const ordered = [leftover.shift()];
+  while (leftover.length) {
+    const cur = ordered[ordered.length - 1];
+    let bestI = 0;
+    let bestD = Infinity;
+    leftover.forEach((p, i) => {
+      const d = (p.x - cur.x) ** 2 + (p.y - cur.y) ** 2;
+      if (d < bestD) {
+        bestD = d;
+        bestI = i;
+      }
+    });
+    ordered.push(leftover.splice(bestI, 1)[0]);
+  }
+  return ordered;
+}
+
+function thinChainParts(parts, minPx, s) {
+  const minD = minPx / Math.max(s, 1e-9);
+  const kept = [];
+  for (const p of [...parts].sort((a, b) => b.area - a.area)) {
+    if (kept.some((k) => Math.hypot(k.cx - p.cx, k.cy - p.cy) < minD)) continue;
+    kept.push(p);
+  }
+  return kept;
+}
+
+function appendIslandLink(svg, id, pts, src) {
+  if (pts.length < 2) return;
+  const NS = "http://www.w3.org/2000/svg";
+  const ordered = orderChainPoints(pts);
+  const d = ordered
+    .map((p, i) => `${i ? "L" : "M"} ${trimNum(p.x)} ${trimNum(p.y)}`)
+    .join(" ");
+  const line = document.createElementNS(NS, "path");
+  line.setAttribute("class", "geo-island-link");
+  line.dataset.id = id;
+  line.setAttribute("d", d);
+  ["is-active", "is-correct", "is-wrong", "is-miss-flash", "is-dim"].forEach((cls) => {
+    if (src?.classList.contains(cls)) line.classList.add(cls);
+  });
+  svg.appendChild(line);
+}
+
 function syncPacificIslandMarks(host) {
   if (!host || isOutlineView() || geo.pack?.overlay === "markers") return;
   if (!isOceaniaIslandPack()) return;
   const svg = host.querySelector("svg");
   if (!svg) return;
-  svg.querySelectorAll(".geo-island-mark").forEach((n) => n.remove());
+  svg.querySelectorAll(".geo-island-mark, .geo-island-link").forEach((n) => n.remove());
   const s = mapPxScale(svg);
   const drawPx = window.matchMedia("(pointer: coarse)").matches
-    ? PACIFIC_MARK_DRAW_PX + 4
+    ? PACIFIC_MARK_DRAW_PX + 1
     : PACIFIC_MARK_DRAW_PX;
-  const r = drawPx / 2 / Math.max(s, 1e-9);
+  const zoomed = drawPx / Math.max(s, 1e-9);
   const partLimit = 12;
 
   for (const id of packItemIds()) {
@@ -2105,7 +2164,9 @@ function syncPacificIslandMarks(host) {
 
     const el = els[0];
     if (el.classList.contains("geo-island-dot")) {
-      el.setAttribute("r", String(r));
+      const base = parseFloat(el.dataset.baseR || el.getAttribute("r") || "5.5") || 5.5;
+      if (!el.dataset.baseR) el.dataset.baseR = String(base);
+      el.setAttribute("r", trimNum(Math.min(base, zoomed)));
       continue;
     }
     clearIslandBoost(el);
@@ -2113,15 +2174,16 @@ function syncPacificIslandMarks(host) {
     if (PACIFIC_CHAIN_IDS.has(id)) {
       const parts = els
         .flatMap((node) => elementParts(node))
-        .filter((p) => Math.max(p.maxX - p.minX, p.maxY - p.minY) * s < PACIFIC_LAND_SEE_PX)
-        .sort((p, q) => q.area - p.area)
-        .slice(0, partLimit);
-      if (parts.length) {
-        parts.forEach((p) => appendIslandMark(svg, id, p.cx, p.cy, r, el));
+        .filter((p) => Math.max(p.maxX - p.minX, p.maxY - p.minY) * s < PACIFIC_LAND_SEE_PX);
+      const groups = thinChainParts(clusterParts(parts, 24), 16, s).slice(0, partLimit);
+      if (groups.length) {
+        const pts = groups.map((g) => ({ x: g.cx, y: g.cy }));
+        appendIslandLink(svg, id, pts, el);
+        pts.forEach((p) => appendIslandMark(svg, id, p.x, p.y, zoomed, el));
         continue;
       }
     }
-    appendIslandMark(svg, id, a.x, a.y, r, el);
+    appendIslandMark(svg, id, a.x, a.y, zoomed, el);
   }
 }
 
