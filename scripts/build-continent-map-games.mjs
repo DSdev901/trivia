@@ -292,7 +292,7 @@ const SECTIONS = {
   world: [
     { name: "Start here", packIds: ["continents", "continents-oceans", "world-countries", "world-capitals"] },
     { name: "Physical features", packIds: ["world-physical", "world-waterways", "world-landmarks"] },
-    { name: "Practice & flags", packIds: ["world-populous", "world-populous-capitals", "world-flags", "world-outlines", "continents-cartoon"] },
+    { name: "Practice & flags", packIds: ["world-populous", "world-populous-capitals", "world-flags", "world-outlines"] },
   ],
   "north-america": [
     {

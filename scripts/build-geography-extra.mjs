@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Extra packs: lakes, physical features, sports teams, cartoon continents.
+ * Extra packs: lakes, physical features, sports teams.
  * Run after build-geography-data.mjs (merges into packs.json).
  */
 import { readFile, writeFile, mkdir } from "node:fs/promises";
@@ -326,44 +326,6 @@ const sportsPacks = [
   await writeSportsPack("mls-teams", "MLS Teams", "Major League Soccer clubs.", MLS),
 ];
 
-// —— Cartoon continents ——
-const CARTOON = [
-  { id: "NA", name: "North America", fact: "Cartoon outline of North America." },
-  { id: "SA", name: "South America", fact: "Cartoon outline of South America." },
-  { id: "EU", name: "Europe", fact: "Cartoon outline of Europe." },
-  { id: "AF", name: "Africa", fact: "Cartoon outline of Africa." },
-  { id: "AS", name: "Asia", fact: "Cartoon outline of Asia." },
-  { id: "OC", name: "Oceania", fact: "Cartoon outline of Oceania / Australia." },
-  { id: "AN", name: "Antarctica", fact: "Cartoon outline of Antarctica." },
-];
-
-const cartoonSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="100%" height="100%" role="img" aria-label="Cartoon continents">
-  <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#b9e0ff"/>
-      <stop offset="100%" stop-color="#7ec8f0"/>
-    </linearGradient>
-  </defs>
-  <rect width="1000" height="520" fill="url(#sky)"/>
-  <path id="NA" data-id="NA" class="geo-region" fill="#7bc96f" stroke="#fff" stroke-width="3" d="M90,90 C140,40 240,45 300,90 C350,130 340,200 300,240 C250,280 180,260 140,210 C100,160 70,120 90,90 Z"/>
-  <path id="SA" data-id="SA" class="geo-region" fill="#8fd18a" stroke="#fff" stroke-width="3" d="M250,270 C300,250 340,290 345,350 C350,420 310,480 270,470 C230,460 220,390 230,340 C235,300 230,280 250,270 Z"/>
-  <path id="EU" data-id="EU" class="geo-region" fill="#f0c86a" stroke="#fff" stroke-width="3" d="M470,80 C520,55 570,70 585,110 C595,145 570,175 535,170 C500,165 460,130 470,80 Z"/>
-  <path id="AF" data-id="AF" class="geo-region" fill="#e8a45a" stroke="#fff" stroke-width="3" d="M480,185 C540,165 600,200 610,270 C620,350 580,420 520,430 C460,440 440,360 450,290 C455,230 450,195 480,185 Z"/>
-  <path id="AS" data-id="AS" class="geo-region" fill="#e07a6a" stroke="#fff" stroke-width="3" d="M590,60 C700,30 820,55 880,120 C920,170 900,230 820,245 C740,260 660,220 620,170 C595,135 570,90 590,60 Z"/>
-  <path id="OC" data-id="OC" class="geo-region" fill="#6ec4b8" stroke="#fff" stroke-width="3" d="M780,300 C840,275 900,310 905,360 C910,405 860,430 810,415 C770,400 755,340 780,300 Z"/>
-  <path id="AN" data-id="AN" class="geo-region" fill="#dfe9f5" stroke="#fff" stroke-width="3" d="M150,470 C300,450 550,455 820,470 L900,505 L80,505 Z"/>
-</svg>
-`;
-
-await writeFile(path.join(MAPS, "continents-cartoon.svg"), cartoonSvg);
-await writeJson("continents-cartoon.json", {
-  id: "continents-cartoon",
-  name: "Continents (Cartoon)",
-  map: "continents-cartoon",
-  quiz: "places",
-  items: CARTOON,
-});
-
 // —— Outline-only packs (reuse country item lists) ——
 async function outlinePack(srcId, id, name, blurb, map = "world-countries") {
   const src = JSON.parse(await readFile(path.join(OUT, `${srcId}.json`), "utf8"));
@@ -412,15 +374,6 @@ const packsFile = JSON.parse(await readFile(path.join(OUT, "packs.json"), "utf8"
 
 const extraByGroup = {
   world: [
-    {
-      id: "continents-cartoon",
-      name: "Continents (Cartoon)",
-      blurb: "Same seven continents on a playful cartoon map.",
-      map: "continents-cartoon",
-      quiz: "places",
-      modes: ["pin", "type", "name", "choice", "study"],
-      itemCount: CARTOON.length,
-    },
     outlinePacks[0],
   ],
   "north-america": [

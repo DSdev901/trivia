@@ -4920,6 +4920,15 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     display: contents;
   }
 
+  .geo-play--map.geo-play--type .geo-map-wrap,
+  .geo-play--map.geo-play--type .geo-play-close {
+    transform: translate3d(0, var(--geo-vv-top, 0px), 0);
+  }
+
+  .geo-play--map.geo-play--type .geo-play-close {
+    z-index: 20;
+  }
+
   .geo-play--map.geo-play--type .geo-side {
     display: flex;
     flex-direction: column;
@@ -5103,8 +5112,10 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     overflow: hidden;
   }
 
+  html:has(.view:not([hidden]) .geo-play--map.geo-play--type),
   body:has(.view:not([hidden]) .geo-play--map.geo-play--type) {
     height: 100lvh;
+    overflow: hidden;
   }
 
   body:has(.view:not([hidden]) .geo-play--map) .app,
