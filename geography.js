@@ -126,6 +126,7 @@ const geo = {
   allItems: [],
   mapSvgBare: "",
   waterFiltersByPack: {},
+  _typeKb: null,
 };
 
 const WATER_FILTER_KEYS = ["river", "lake", "ocean"];
@@ -3565,6 +3566,7 @@ function renderPlay() {
   }
   const item = currentItem();
   if (!item) {
+    stopTypeKeyboard();
     renderDone();
     return;
   }
@@ -3574,6 +3576,7 @@ function renderPlay() {
   }
 
   const showMap = playUsesMap();
+  stopTypeKeyboard();
   scrollPageTop();
 
   let prompt = "";
@@ -3612,7 +3615,6 @@ function renderPlay() {
     .join(" ");
 
   const closeHtml = showMap ? playCloseHtml() : "";
-  const closeInPrompt = geo.mode === "type" || geo.mode === "outline";
   const actionsHtml = controls
     ? `<div class="geo-quiz-actions">${controls}</div>`
     : "";
@@ -3629,7 +3631,6 @@ function renderPlay() {
            ${feedbackHtml}
          </div>
          <div class="geo-chrome-end">
-           ${closeInPrompt ? closeHtml : ""}
            ${nextInCluster ? "" : nextHtml}
          </div>
        </div>`
@@ -3670,7 +3671,7 @@ function renderPlay() {
         ${progressHtml()}
       </div>
       <div class="geo-play-layout ${showMap ? "" : "no-map"}">
-        ${showMap ? `<div class="geo-map-wrap">${mapHtml()}${closeInPrompt ? "" : closeHtml}</div>` : ""}
+        ${showMap ? `<div class="geo-map-wrap">${mapHtml()}</div>${closeHtml}` : ""}
         <aside class="geo-side">
           <div class="geo-quiz-panel" id="geo-quiz-panel">${panelInner}</div>
           ${answerHtml}
@@ -3709,6 +3710,45 @@ function flashPinMiss(id) {
   }, PIN_MISS_MS);
 }
 
+function typeKeyboardInset() {
+  const vv = window.visualViewport;
+  if (!vv) return 0;
+  return Math.max(0, Math.round(window.innerHeight - vv.height - vv.offsetTop));
+}
+
+function stopTypeKeyboard() {
+  const apply = geo._typeKb;
+  if (apply) {
+    window.visualViewport?.removeEventListener("resize", apply);
+    window.visualViewport?.removeEventListener("scroll", apply);
+    window.removeEventListener("resize", apply);
+    geo._typeKb = null;
+  }
+  const play = geo.root?.querySelector(".geo-play--type");
+  play?.style.removeProperty("--geo-keyboard");
+  play?.classList.remove("is-keyboard");
+}
+
+function bindTypeKeyboard(play) {
+  stopTypeKeyboard();
+  if (!play || !window.matchMedia("(max-width: 860px)").matches) return;
+  const apply = () => {
+    if (!play.isConnected) {
+      stopTypeKeyboard();
+      return;
+    }
+    const inset = typeKeyboardInset();
+    play.style.setProperty("--geo-keyboard", `${inset}px`);
+    play.classList.toggle("is-keyboard", inset > 0);
+    if (inset > 0) window.scrollTo(0, 0);
+  };
+  geo._typeKb = apply;
+  window.visualViewport?.addEventListener("resize", apply);
+  window.visualViewport?.addEventListener("scroll", apply);
+  window.addEventListener("resize", apply);
+  apply();
+}
+
 function bindPlay() {
   geo.root.querySelector("#geo-next")?.addEventListener("click", () => {
     geo.index += 1;
@@ -3743,8 +3783,13 @@ function bindPlay() {
     const form = geo.root.querySelector("#geo-type-form");
     const input = geo.root.querySelector("#geo-type-input");
     const compact = window.matchMedia("(max-width: 860px)").matches;
+    bindTypeKeyboard(geo.root.querySelector(".geo-play--type"));
     input?.addEventListener("focus", () => {
-      if (compact) return;
+      if (compact) {
+        window.scrollTo(0, 0);
+        requestAnimationFrame(() => window.scrollTo(0, 0));
+        return;
+      }
       requestAnimationFrame(() => {
         input.scrollIntoView({ block: "center", behavior: "smooth" });
       });
@@ -3885,6 +3930,7 @@ export function cleanupGeography() {
   geo._pinMisses = 0;
   clearPinMissFlash();
   stopFocusZoom();
+  stopTypeKeyboard();
 }
 
 async function ensureIndex() {

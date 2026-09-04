@@ -4674,18 +4674,6 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
   line-height: 1;
 }
 
-.geo-play--type .geo-play-close {
-  display: inline-flex;
-  position: static;
-  width: 2.5rem;
-  height: 2.5rem;
-  margin: 0;
-  border: 1px solid var(--stripe);
-  border-radius: 999px;
-  background: #fff;
-  box-shadow: var(--shadow);
-}
-
 .geo-play-close svg {
   width: 1.1rem;
   height: 1.1rem;
@@ -4894,7 +4882,7 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
-    z-index: 7;
+    z-index: 8;
     display: inline-flex;
     width: 2.5rem;
     height: 2.5rem;
@@ -4903,14 +4891,6 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     border-radius: 999px;
     background: #fff;
     box-shadow: var(--shadow);
-  }
-
-  .geo-play--map.geo-play--type .geo-play-close {
-    position: static;
-    top: auto;
-    right: auto;
-    z-index: auto;
-    margin: 0;
   }
 
   .geo-play .geo-toolbar .secondary-btn {
@@ -4938,6 +4918,19 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
 
   .geo-play--map .geo-side {
     display: contents;
+  }
+
+  .geo-play--map.geo-play--type .geo-side {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    z-index: 5;
+    flex: 0 0 auto;
+    width: calc(100% + 0.9rem);
+    margin: 0 -0.45rem;
+    background: var(--paper);
+    transform: translate3d(0, calc(-1 * var(--geo-keyboard, 0px)), 0);
+    will-change: transform;
   }
 
   .geo-play--map .geo-quiz-panel {
@@ -4969,6 +4962,10 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
 
   .geo-play--map .geo-chrome-main {
     min-height: 7.2rem;
+  }
+
+  .geo-play--map.geo-play--type:not(.is-answered) .geo-chrome-main {
+    min-height: 0;
   }
 
   .geo-play--map .geo-chrome-end {
@@ -5106,6 +5103,10 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     overflow: hidden;
   }
 
+  body:has(.view:not([hidden]) .geo-play--map.geo-play--type) {
+    height: 100lvh;
+  }
+
   body:has(.view:not([hidden]) .geo-play--map) .app,
   body:has(.view:not([hidden]) .geo-play--study) .app {
     flex: 1;
@@ -5201,6 +5202,18 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
     padding: 0 0.45rem 0.5rem;
     box-sizing: border-box;
     background: var(--paper);
+  }
+
+  .geo-play--map.geo-play--type .geo-quiz-panel {
+    order: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .geo-play--map.geo-play--type .geo-answer-bar {
+    order: 1;
+    margin: 0;
+    width: 100%;
   }
 
   .geo-play--map:not(.geo-play--pin.geo-play--water) .geo-answer-bar:not(:has(.geo-quiz-actions)):not(:has(.geo-next-row:not([hidden]))):not(:has(.geo-water-menu:not([hidden]))) {
