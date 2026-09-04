@@ -109,6 +109,7 @@ const geo = {
   index: 0,
   correct: 0,
   wrong: 0,
+  missed: [],
   answered: false,
   selectedId: null,
   _mapLabel: null,
@@ -3353,11 +3354,17 @@ function renderPackModes() {
   bindWaterFilters();
 }
 
-function startMode(mode) {
+function startMode(mode, retryItems = null) {
   geo.mode = mode;
   applyWaterItemFilters();
-  const pool =
-    mode === "capitals" ? geo.items.filter((i) => i.capital) : geo.items;
+  const retry = Array.isArray(retryItems) && retryItems.length
+    ? retryItems.map((item) => byId(item.id || item)).filter(Boolean)
+    : null;
+  const pool = retry
+    ? retry
+    : mode === "capitals"
+      ? geo.items.filter((i) => i.capital)
+      : geo.items;
   if (!pool.length) {
     geo.root.innerHTML = `
       <div class="geo-shell">
@@ -3373,6 +3380,7 @@ function startMode(mode) {
   geo.index = 0;
   geo.correct = 0;
   geo.wrong = 0;
+  geo.missed = [];
   geo.answered = false;
   geo.selectedId = null;
   geo._pinMisses = 0;
@@ -3743,7 +3751,11 @@ function judge(ok, clickedMapId = null, clickedBtn = null) {
   clearPinMissFlash();
   geo.answered = true;
   if (ok) geo.correct += 1;
-  else geo.wrong += 1;
+  else {
+    geo.wrong += 1;
+    const missed = currentItem();
+    if (missed) geo.missed.push(missed);
+  }
 
   const item = currentItem();
   const feedback = geo.root.querySelector("#geo-feedback");
@@ -3780,6 +3792,7 @@ function judge(ok, clickedMapId = null, clickedBtn = null) {
 
 function renderDone() {
   const total = geo.queue.length;
+  const canRetry = geo.missed.length > 0;
   scrollPageTop();
   geo.root.innerHTML = `
     <div class="geo-shell">
@@ -3791,7 +3804,14 @@ function renderDone() {
         <ul class="stats">
           <li><strong>${total}</strong> questions</li>
           <li><strong>${geo.correct}</strong> correct</li>
-          <li><strong>${geo.wrong}</strong> wrong</li>
+          <li class="quiz-stat--missed">
+            <span><strong>${geo.wrong}</strong> wrong</span>
+            ${
+              canRetry
+                ? `<button type="button" class="quiz-cta quiz-retry" id="geo-retry">Retry</button>`
+                : ""
+            }
+          </li>
           <li><strong>${
             total ? Math.round((geo.correct / total) * 100) : 0
           }%</strong> accuracy</li>
@@ -3804,6 +3824,9 @@ function renderDone() {
 
   geo.root.querySelector("#geo-again")?.addEventListener("click", () => {
     startMode(geo.mode);
+  });
+  geo.root.querySelector("#geo-retry")?.addEventListener("click", () => {
+    startMode(geo.mode, geo.missed);
   });
 }
 
@@ -3824,6 +3847,7 @@ export function cleanupGeography() {
   geo.pack = null;
   geo.mode = null;
   geo.queue = [];
+  geo.missed = [];
   geo.items = [];
   geo.allItems = [];
   geo.mapSvg = "";
