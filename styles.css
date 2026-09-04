@@ -5544,9 +5544,9 @@ body:has(.view:not([hidden]) .geo-play--study) .top {
 
   .geo-play--map .geo-quiz-panel .geo-identity-cap {
     font-size: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
   }
 
   .geo-play--map .geo-quiz-panel .geo-cities {

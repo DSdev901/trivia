@@ -29,7 +29,7 @@ const NAME_OVERRIDES = {
 
 const CAPITAL_OVERRIDES = {
   GQ: "Ciudad de la Paz",
-  SZ: "Mbabane",
+  SZ: "Mbabane (legislative), Lobamba (parliament)",
 };
 
 const WESTERN_SAHARA = {

@@ -49,7 +49,7 @@ const NAME_OVERRIDES = {
 
 const CAPITAL_OVERRIDES = {
   GQ: "Ciudad de la Paz",
-  SZ: "Mbabane",
+  SZ: "Mbabane (legislative), Lobamba (parliament)",
 };
 
 const EXTRA = {
@@ -1076,6 +1076,9 @@ for (const id of [
 ]) {
   const data = loadJson(`${id}.json`);
   data.map = "world-countries";
+  for (const it of data.items || []) {
+    if (CAPITAL_OVERRIDES[it.id]) it.capital = CAPITAL_OVERRIDES[it.id];
+  }
   writeJson(`${id}.json`, data);
   addMeta({
     id: data.id,
