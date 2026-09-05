@@ -224,7 +224,7 @@ function categoryKicker(category) {
     case "current-events":
       return "Sports, entertainment, and world stories";
     case "netflix":
-      return "New originals from the last four weeks";
+      return "Last four weeks, plus originals in the Top 10";
     case "trending":
       return "Dolly Parton, House of the Dragon, and more in the air";
     case "themed":
