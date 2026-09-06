@@ -11,16 +11,14 @@
  *   Netflix       — TVMaze web schedule (series that actually aired),
  *                   whats-on-netflix + Wikipedia originals lists for titles
  *                   and dates only, TMDB for plot / cast / poster.
- *                   Rolling 28-day (4-week) window, plus any Netflix original
- *                   still on the current weekly global Top 10 (even if older).
+ *                   Rolling 28-day (4-week) window.
  *                   Top 10 matches Netflix's official weekly global chart
  *                   (latest week in all-weeks-global.tsv).
  *
  *   node scripts/refresh-current-events.mjs --netflix-images
  *     Backfill posters on the existing Netflix JSON without a full refresh.
  *   node scripts/refresh-current-events.mjs --netflix-top10
- *     Retag the existing Netflix JSON from the current Top 10 chart, and add
- *     older charting originals that the 4-week window dropped.
+ *     Retag the existing Netflix JSON from the current Top 10 chart.
  */
 
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -487,17 +485,7 @@ function titlesClose(itemTitle, listTitle) {
   if (a === b) return true;
   if (a.length >= 10 && b.length >= 10 && (a.startsWith(b) || b.startsWith(a)))
     return true;
-  const ta = significantTokens(itemTitle);
-  const tb = significantTokens(listTitle);
-  if (ta.length < 2 || tb.length < 2) return false;
-  const setB = new Set(tb);
-  const overlap = ta.filter((t) => setB.has(t)).length;
-  const min = Math.min(ta.length, tb.length);
-  return overlap >= min && overlap >= 2;
-}
-
-function isReleasedOriginalDate(dateStr) {
-  return Boolean(dateStr) && dateStr >= "2013-01-01" && dateStr <= windowEnd;
+  return namesSimilar(itemTitle, listTitle);
 }
 
 function itemTop10Hit(item, chartTitles) {
@@ -523,7 +511,6 @@ function parseNetflixTop10Tsv(text) {
   const rankIdx = header.indexOf("weekly_rank");
   const showIdx = header.indexOf("show_title");
   const seasonIdx = header.indexOf("season_title");
-  const catIdx = header.indexOf("category");
   if (weekIdx < 0 || rankIdx < 0 || showIdx < 0) {
     throw new Error("unexpected Netflix Top 10 columns");
   }
@@ -537,23 +524,20 @@ function parseNetflixTop10Tsv(text) {
     rows.push(cols);
   }
   const byKey = new Map();
-  const addTitle = (raw, rank, category) => {
+  const addTitle = (raw, rank) => {
     const title = String(raw || "").replace(/\s+/g, " ").trim();
     if (!title || title === "N/A") return;
     const key = titleCore(title);
     if (!key) return;
     const prev = byKey.get(key);
-    if (!prev || rank < prev.rank) {
-      byKey.set(key, { title, rank, category: String(category || "") });
-    }
+    if (!prev || rank < prev.rank) byKey.set(key, { title, rank });
   };
   for (const cols of rows) {
     if (cols[weekIdx] !== latestWeek) continue;
     const rank = Number(cols[rankIdx]);
     if (!Number.isFinite(rank)) continue;
-    const category = catIdx >= 0 ? cols[catIdx] : "";
-    addTitle(cols[showIdx], rank, category);
-    if (seasonIdx >= 0) addTitle(cols[seasonIdx], rank, category);
+    addTitle(cols[showIdx], rank);
+    if (seasonIdx >= 0) addTitle(cols[seasonIdx], rank);
   }
   return { week: latestWeek, titles: [...byKey.values()] };
 }
@@ -586,131 +570,16 @@ function tagNetflixTop10(items, chart) {
   return items;
 }
 
-function keepNetflixCards(items) {
-  return items.filter(
-    (item) =>
-      inNetflixWindow(item.date) ||
-      (item.top10 === true && isReleasedOriginalDate(item.date))
-  );
-}
-
-function typeFromChart(listed) {
-  return /TV/i.test(listed?.category || "") ? "Series" : "Film";
-}
-
-async function fetchWikipediaOriginalCatalog() {
-  const [films, programming] = await Promise.all([
-    fetchWikipediaFilms({ windowOnly: false }),
-    fetchWikipediaProgramming({ windowOnly: false }),
-  ]);
-  const catalog = [...films, ...programming];
-  console.log(`  [netflix] original catalog: ${catalog.length} titles`);
-  return catalog;
-}
-
-function cardFromOriginalCatalog(listed, catalog) {
-  const hit = catalog.find((row) => titlesClose(listed.title, row.title));
-  if (!hit || !isReleasedOriginalDate(hit.date)) return null;
-  return {
-    title: hit.title,
-    type: hit.type || typeFromChart(listed),
-    date: hit.date,
-    synopsis: "",
-    starring: [],
-    confirmedOriginal: true,
-    top10: true,
-    top10Rank: listed.rank,
-  };
-}
-
-async function tvmazeOriginalCard(listed) {
-  const q = titleCore(listed.title);
-  if (!q) return null;
-  const results = JSON.parse(
-    await fetchText(
-      `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(q)}`,
-      15000,
-      TVMAZE_UA
-    )
-  );
-  const named = (results || []).find(
-    (r) => isNetflixShow(r.show) && namesSimilar(r.show.name, listed.title)
-  );
-  if (!named) return null;
-  const details = await tvmazeShowDetails(named.show);
-  const date = details.date || isoFrom(named.show.premiered);
-  if (!date) return null;
-  return {
-    title: details.title,
-    type: details.type || typeFromChart(listed),
-    date,
-    synopsis: details.synopsis || "",
-    starring: details.starring || [],
-    akas: details.akas || [],
-    image: details.image || "",
-    tvmazeId: details.tvmazeId,
-    confirmedOriginal: true,
-    top10: true,
-    top10Rank: listed.rank,
-  };
-}
-
-/** Older Netflix originals still on the current Top 10, outside the 4-week window. */
-async function addOutsideWindowTop10Originals(items, chart) {
-  const titles = chart?.titles || [];
-  const missing = titles.filter(
-    (listed) => !items.some((item) => itemTop10Hit(item, [listed]))
-  );
-  if (!missing.length) return items;
-  let catalog = [];
-  try {
-    catalog = await fetchWikipediaOriginalCatalog();
-  } catch (err) {
-    console.warn(`  [netflix] original catalog: ${err.message}`);
-  }
-  const extras = [];
-  for (const listed of missing) {
-    let card = cardFromOriginalCatalog(listed, catalog);
-    if (!card && /TV/i.test(listed.category || "")) {
-      try {
-        card = await tvmazeOriginalCard(listed);
-        if (card && !isReleasedOriginalDate(card.date)) card = null;
-      } catch (err) {
-        console.warn(
-          `  [netflix] top 10 original "${listed.title}": ${err.message}`
-        );
-      }
-      await sleep(250);
-    }
-    if (card) extras.push(card);
-  }
-  console.log(
-    `  [netflix] added ${extras.length} older Top 10 originals (${missing.length} unmatched chart titles)`
-  );
-  if (!extras.length) return items;
-  const filled = await enrichNetflix(extras);
-  return dedupeNetflix([...items, ...filled], true);
-}
-
 async function tagExistingNetflixTop10() {
   const file = path.join(OUT_DIR, "netflix.json");
   const raw = JSON.parse(await readFile(file, "utf8"));
-  let items = raw.items || [];
-  const chart = await fetchNetflixTop10();
-  items = await addOutsideWindowTop10Originals(items, chart);
-  items = tagNetflixTop10(items, chart);
-  items = keepNetflixCards(items);
-  items.sort((a, b) => b.date.localeCompare(a.date));
-  items = await fillMissingNetflixImages(items);
-  items = await cacheNetflixPosters(items);
-  raw.generatedAt = now.toISOString();
-  raw.items = items.map((item) => {
-    const rest = publicNetflixItem(item);
+  tagNetflixTop10(raw.items || [], await fetchNetflixTop10());
+  raw.items = (raw.items || []).map((item) => {
+    const rest = { ...item };
     delete rest.inUS;
     return rest;
   });
   await writeFile(file, `${JSON.stringify(raw, null, 2)}\n`);
-  await writeNetflixStamp(raw.generatedAt);
 }
 
 function seriesTypeFromGenre(genre) {
@@ -724,7 +593,7 @@ function seriesTypeFromGenre(genre) {
  * dates only. Plot/cast/poster come from TMDB. New seasons of returning
  * shows still come from TVMaze (and whats-on-netflix when it isn't blocked).
  */
-async function fetchWikipediaProgramming({ windowOnly = true } = {}) {
+async function fetchWikipediaProgramming() {
   const sources = [
     ["List of Netflix original programming", null],
     ["List of Netflix original stand-up comedy specials", "Stand-up special"],
@@ -749,8 +618,7 @@ async function fetchWikipediaProgramming({ windowOnly = true } = {}) {
           }
         }
         const title = cells[0];
-        if (!date || !title || title === "Title") continue;
-        if (windowOnly && !inNetflixWindow(date)) continue;
+        if (!date || !inNetflixWindow(date) || !title || title === "Title") continue;
         const genre = dateIdx > 1 ? cells[1] : "";
         items.push({
           title,
@@ -767,7 +635,13 @@ async function fetchWikipediaProgramming({ windowOnly = true } = {}) {
   return items;
 }
 
-function parseWikipediaFilmRows(html, { windowOnly = true } = {}) {
+/** Wikipedia's Netflix original films list — titles and dates only. */
+async function fetchWikipediaFilms() {
+  const url =
+    "https://en.wikipedia.org/w/api.php?action=parse" +
+    "&page=List_of_Netflix_original_films_(since_2026)&format=json&prop=text";
+  const data = JSON.parse(await fetchText(url));
+  const html = data?.parse?.text?.["*"] || "";
   const items = [];
   for (const row of html.matchAll(/<tr>([\s\S]*?)<\/tr>/g)) {
     const cells = [...row[1].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/g)].map(
@@ -776,8 +650,7 @@ function parseWikipediaFilmRows(html, { windowOnly = true } = {}) {
     if (cells.length < 3) continue;
     const [title, dateRaw, genre] = cells;
     const date = isoFrom(dateRaw);
-    if (!date || !title || title === "Title") continue;
-    if (windowOnly && !inNetflixWindow(date)) continue;
+    if (!date || !inNetflixWindow(date) || !title || title === "Title") continue;
     items.push({
       title,
       type: /documentary/i.test(genre) ? "Documentary" : "Film",
@@ -785,28 +658,6 @@ function parseWikipediaFilmRows(html, { windowOnly = true } = {}) {
       synopsis: "",
       starring: [],
     });
-  }
-  return items;
-}
-
-/** Wikipedia's Netflix original films lists — titles and dates only. */
-async function fetchWikipediaFilms({ windowOnly = true } = {}) {
-  const year = now.getFullYear();
-  const pages = [`List of Netflix original films (since ${year})`];
-  if (!windowOnly) {
-    for (let y = year - 1; y >= year - 5; y -= 1) {
-      pages.push(`List of Netflix original films (${y})`);
-    }
-  }
-  const items = [];
-  for (const page of pages) {
-    try {
-      const data = await wikiJson({ action: "parse", page, prop: "text" });
-      const html = data?.parse?.text?.["*"] || "";
-      items.push(...parseWikipediaFilmRows(html, { windowOnly }));
-    } catch (err) {
-      console.warn(`  [netflix] wikipedia films "${page}": ${err.message}`);
-    }
   }
   return items;
 }
@@ -1585,7 +1436,6 @@ async function tvmazeShowDetails(show) {
     tvmazeId: show.id,
     title: full.name || show.name,
     type: tvmazeType(full),
-    date: isoFrom(full.premiered || show.premiered) || "",
     synopsis: stripHtmlBrief(full.summary) || stripHtmlBrief(show.summary),
     starring: (full._embedded?.cast || [])
       .map((c) => c.person?.name)
@@ -1814,12 +1664,7 @@ async function buildNetflix() {
       await readFile(path.join(OUT_DIR, "netflix.json"), "utf8")
     );
     const seeded = (prev.items || [])
-      .filter(
-        (i) =>
-          i?.title &&
-          i.date &&
-          (inNetflixWindow(i.date) || i.top10 === true)
-      )
+      .filter((i) => i?.title && i.date && inNetflixWindow(i.date))
       .map((i) => ({
         title: i.title,
         type: i.type || "Film",
@@ -1847,9 +1692,7 @@ async function buildNetflix() {
       }));
     items.push(...seeded);
     if (seeded.length)
-      console.log(
-        `  [netflix] kept ${seeded.length} titles from last run (in-window or Top 10)`
-      );
+      console.log(`  [netflix] kept ${seeded.length} in-window titles from last run`);
   } catch {
     /* first run or unreadable cache */
   }
@@ -1859,11 +1702,8 @@ async function buildNetflix() {
   merged = await enrichNetflix(merged);
   merged = dedupeNetflix(merged, true);
   const chart = await top10Promise;
-  if (chart) {
-    merged = await addOutsideWindowTop10Originals(merged, chart);
-    merged = tagNetflixTop10(merged, chart);
-    merged = keepNetflixCards(merged);
-  } else console.log("  [netflix] keeping previous top 10 tags");
+  if (chart) merged = tagNetflixTop10(merged, chart);
+  else console.log("  [netflix] keeping previous top 10 tags");
   const useful = merged.filter((i) => !isThinSynopsis(i.synopsis)).length;
   const withCast = merged.filter((i) => (i.starring || []).length > 0).length;
   console.log(

@@ -1,6 +1,6 @@
 # Netflix
 
-Netflix is a hash-routed category of originals from the last four weeks, plus older Netflix originals still on the current weekly Top 10. Cards come from `data/current-events/netflix.json`.
+Netflix is a hash-routed category of originals from the last four weeks. Cards come from `data/current-events/netflix.json`.
 
 ## Sub-features
 
@@ -21,7 +21,7 @@ Preconditions:
 - `data/current-events/netflix.json` includes at least one item with `brief`, or the Brevity toggle will not render.
 
 - **Open Netflix.** From home, click the link whose name includes `Netflix`. Heading is `Netflix`.
-- **Top 10.** Snapshot until a checkbox named `Top 10` exists (it is hidden when no item has `top10`). Click it. The list shrinks to charting titles and All / Shows / Movies counts follow that pool. Click again to restore the four-week list plus any older charting originals.
+- **Top 10.** Snapshot until a checkbox named `Top 10` exists (it is hidden when no item has `top10`). Click it. The list shrinks to charting titles and All / Shows / Movies counts follow that pool. Click again to restore the four-week list.
 - **Brevity.** Snapshot until a checkbox named `Brevity` exists. Click it. Card copy switches from `synopsis` to `brief` on every card that has copy, not only the first few (CDP on `.ce-netflix-copy p`). Click again to restore.
 
 ## Gotchas

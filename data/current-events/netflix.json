@@ -1,6 +1,6 @@
 {
   "section": "netflix",
-  "generatedAt": "2026-09-05T23:17:40.743Z",
+  "generatedAt": "2026-09-01T18:43:38.315Z",
   "windowStart": "2026-08-04",
   "windowEnd": "2026-09-01",
   "items": [
@@ -284,9 +284,7 @@
         "Peter Andersson"
       ],
       "brief": "Detective Berg reunites with his estranged ex-cop father after a police murder.",
-      "image": "data/current-events/posters/blodsoffer-62450b36.jpg",
-      "top10": true,
-      "top10Rank": 1
+      "image": "data/current-events/posters/blodsoffer-62450b36.jpg"
     },
     {
       "title": "S&X",
@@ -683,6 +681,38 @@
       "top10Rank": 2
     },
     {
+      "title": "Ricky Gervais Alley Cats",
+      "type": "Series",
+      "date": "2026-08-07",
+      "synopsis": "Curl up with a clutter of useless cats as they swear at the telly, debate life's most outrageous questions and cause chaos in the local community.",
+      "starring": [
+        "Ricky Gervais",
+        "Diane Morgan",
+        "David Earl",
+        "Jo Hartley",
+        "Tom Basden",
+        "Andrew Brooke"
+      ],
+      "brief": "Ricky Gervais and others as cats debate life's questions while causing chaos.",
+      "image": "data/current-events/posters/ricky-gervais-alley-cats-9b0405f7.jpg"
+    },
+    {
+      "title": "The Adam Ray Show",
+      "type": "Series",
+      "date": "2026-08-07",
+      "synopsis": "Same host. Different characters. All chaos. Each week, Adam Ray taps into his roster of alter egos to interview famous guests — and no one is safe.",
+      "starring": [
+        "Adam Ray",
+        "Andrew Santino",
+        "Nikki Glaser",
+        "Dave Matthews",
+        "Michael Bublé",
+        "Sal Vulcano"
+      ],
+      "brief": "Adam Ray interviews famous guests using different character personas each week.",
+      "image": "data/current-events/posters/the-adam-ray-show-ceaa0299.jpg"
+    },
+    {
       "title": "Operation Safed Sagar: The Untold Story of the Kargil War",
       "type": "Series",
       "date": "2026-08-07",
@@ -719,6 +749,22 @@
       "top10Rank": 2
     },
     {
+      "title": "Death Inc. (Season 4)",
+      "type": "Series",
+      "date": "2026-08-07",
+      "synopsis": "Staff at a Spanish funeral home wage a black-comedy fight for the director’s chair. In the final season, Chemi takes the job “just for a little while” — and Dámaso cannot decide whether to undermine him or curry favor.",
+      "starring": [
+        "Carlos Areces",
+        "Diego Martín",
+        "Amaia Salamanca",
+        "Salva Reina",
+        "Adriana Torrebejano",
+        "Gerald B. Fillmore"
+      ],
+      "brief": "Spanish funeral home staff battle for control in this darkly comic final season.",
+      "image": "data/current-events/posters/death-inc-1a3db9da.jpg"
+    },
+    {
       "title": "My Life With the Walter Boys (Season 3)",
       "type": "Series",
       "date": "2026-08-06",
@@ -737,137 +783,117 @@
       "top10Rank": 3
     },
     {
-      "title": "The Idaho Murders: College Nightmare",
+      "title": "K-foodie meets J-foodie (Season 6)",
       "type": "Documentary",
-      "date": "2026-07-29",
-      "synopsis": "From the crime scene to the courtroom, this true-crime series unpacks the University of Idaho murders and the hunt for Bryan Kohberger in forensic detail.",
-      "starring": [],
-      "brief": "From the crime scene to the courtroom, this true-crime series unpacks the University of Idaho murders.",
-      "image": "data/current-events/posters/the-idaho-murders-college-nightmare-5e575de2.jpg",
-      "top10": true,
-      "top10Rank": 10
+      "date": "2026-08-06",
+      "synopsis": "Korea's top foodie Sung Si-kyung joins Japan's beloved Yutaka Matsushige on a tasty adventure as they explore culinary gems across Korea and Japan.",
+      "starring": [
+        "Sung Si-kyung",
+        "Yutaka Matsushige"
+      ],
+      "brief": "Korea's and Japan's top foodies explore culinary gems across both countries.",
+      "image": "data/current-events/posters/k-foodie-meets-j-foodie-e019f5bb.jpg"
     },
     {
-      "title": "72 Hours",
+      "title": "Cien años de soledad (Season 2)",
+      "type": "Series",
+      "date": "2026-08-05",
+      "synopsis": "The story of the Buendia family, who lived for a century in the town of Macondo. It will be the first time that Gabriel García Márquez's seminal novel One Hundred Years of Solitude is adapted for the screen, more than 50 years after it was originally published, in 1967.",
+      "starring": [
+        "Viña Machado",
+        "Jesus Reyes",
+        "Claudio Cataño",
+        "Diego Vásquez",
+        "Marleyda Soto",
+        "Loren Sofía"
+      ],
+      "brief": "The Buendia family's century in magical Macondo in this García Márquez adaptation.",
+      "image": "data/current-events/posters/cien-a-os-de-soledad-d7298494.jpg"
+    },
+    {
+      "title": "1670 (Season 3)",
+      "type": "Series",
+      "date": "2026-08-05",
+      "synopsis": "In this satirical comedy, a zany nobleman navigates through family feuds and clashes with peasants in his quest to become Poland's most famous figure.",
+      "starring": [
+        "Bartłomiej Topa",
+        "Katarzyna Herman",
+        "Martyna Byczkowska",
+        "Michal Sikorski",
+        "Kirył Pietruczuk",
+        "Dobromir Dymecki"
+      ],
+      "brief": "A zany Polish nobleman navigates family feuds and peasant clashes in satire.",
+      "image": "data/current-events/posters/1670-395c707e.jpg"
+    },
+    {
+      "title": "The Love Lab",
+      "type": "Reality",
+      "date": "2026-08-05",
+      "synopsis": "An innovative dating experiment reality show that breaks away from the conventions of traditional dating programs. Unfamiliar men and women are placed in extreme and controlled environments, facing unexpected experiments such as blind dates in bed and romances in isolation. Through unpredictable situations, the show dynamically captures the participants' raw, instinctive emotions and the realistic changes in their relationships.",
+      "starring": [
+        "JOOHONEY",
+        "CharlesEnter",
+        "Junbbang Jogyo"
+      ],
+      "brief": "Unfamiliar men and women undergo extreme dating experiments to explore real relationships.",
+      "image": "data/current-events/posters/the-love-lab-dfd3e1a9.jpg"
+    },
+    {
+      "title": "Lock Upp (Season 2)",
+      "type": "Reality",
+      "date": "2026-08-05",
+      "synopsis": "Fifteen newsworthy celebrities must own their truth in the court of public opinion. Can they control the narrative, or will they be locked out?",
+      "starring": [
+        "Kangana Ranaut",
+        "Riteish Deshmukh",
+        "Farah Khan"
+      ],
+      "brief": "Fifteen celebrities must defend their truth in front of the public in a confined space.",
+      "image": "data/current-events/posters/lock-upp-3af6a4be.jpg"
+    },
+    {
+      "title": "Let's Marry Harry",
+      "type": "Reality",
+      "date": "2026-08-05",
+      "synopsis": "Harry Jowsey is done playing the field. Now, his inner circle is stepping in to help steer his love life, weighing in on every date, every match, and every tough call as he navigates a handpicked pool of potential partners. Is Harry finally ready to find a wife and settle down for good?",
+      "starring": [
+        "Harry Jowsey"
+      ],
+      "brief": "Harry Jowsey's inner circle helps him navigate dates as he searches for a wife.",
+      "image": "data/current-events/posters/let-s-marry-harry-4bf84089.jpg"
+    },
+    {
+      "title": "Big Chicken: A Fast Food Conspiracy",
       "type": "Film",
-      "date": "2026-07-24",
-      "synopsis": "Each week, this action-packed, white-knuckle competition series hosted by Brandon Johnson drops three new competing teams of strangers into the wilderness with only a single bottle of water and a GPS tracking device. The competitors have just three days to find a hidden briefcase full of cash. Along the way, they must survive treacherous terrain and battle the elements to be the first to locate $100,000.",
+      "date": "2026-08-05",
+      "synopsis": "In a bold 28-day experiment, comedian Mo Gilligan tours the UK and US on a fried chicken diet to uncover the impact of the craving — and industry behind it.",
       "starring": [
-        "R. Brandon Johnson",
-        "Kevin Hart",
-        "Marcello Hernández",
-        "Mason Gooding",
-        "Kam Patterson",
-        "Ben Marshall"
+        "Mo Gilligan",
+        "Marcus Collins",
+        "Enam Abood",
+        "Alice Driver",
+        "David Ajao",
+        "Laura Schmidt"
       ],
-      "brief": "Each week, this action-packed, white-knuckle competition series hosted by Brandon Johnson drops three new.",
-      "image": "data/current-events/posters/72-hours-13701ad1.jpg",
-      "top10": true,
-      "top10Rank": 4
+      "brief": "Comedian Mo Gilligan explores fried chicken's health impact and industry over 28 days.",
+      "image": "data/current-events/posters/big-chicken-a-fast-food-conspiracy-f924f706.jpg"
     },
     {
-      "title": "My Daughter's Father",
-      "type": "Series",
-      "date": "2026-07-22",
-      "synopsis": "Follows Julieta who, during her graduation party suffers a life-threatening health crisis that forces her mother, Maca, to face secrets from the past.",
-      "starring": [
-        "Manolo Cardona",
-        "Erik Hayser",
-        "Paola Nuñez",
-        "Azul Guaita",
-        "Sebastián Dante",
-        "Emilio Osorio"
-      ],
-      "brief": "Follows Julieta who, during her graduation party suffers a life-threatening health crisis that forces her mother.",
-      "image": "data/current-events/posters/my-daughter-s-father-621a4aaf.jpg",
-      "top10": true,
-      "top10Rank": 8
-    },
-    {
-      "title": "Harlan Coben's I Will Find You",
-      "type": "Series",
-      "date": "2026-06-18",
-      "synopsis": "Harlan Coben's I Will Find You follows an innocent father serving life in prison for murdering his own son, who receives evidence that his child may actually still be alive — and must break out of prison to find the truth.",
-      "starring": [
-        "Sam Worthington",
-        "Britt Lower",
-        "Erin Richards",
-        "Milo Ventimiglia",
-        "Logan Browning",
-        "Chi McBride"
-      ],
-      "brief": "Harlan Coben's I Will Find You follows an innocent father serving life in prison for murdering his own son.",
-      "image": "data/current-events/posters/harlan-coben-s-i-will-find-you-048c09ca.jpg",
-      "top10": true,
-      "top10Rank": 7
-    },
-    {
-      "title": "Teach You a Lesson",
-      "type": "Series",
-      "date": "2026-06-05",
-      "synopsis": "When respect collapses in schools, a special unit arrives to set things right — with sharp, no-nonsense lessons you won't find in textbooks.",
-      "starring": [
-        "Kim Moo Yul",
-        "Lee Sung Min",
-        "Pyo Ji Hoon",
-        "Jin Ki Joo"
-      ],
-      "brief": "When respect collapses in schools, a special unit arrives to set things right.",
-      "image": "data/current-events/posters/teach-you-a-lesson-c4927591.jpg",
-      "top10": true,
-      "top10Rank": 10
-    },
-    {
-      "title": "Swapped",
+      "title": "Inside the Trustor Scandal",
       "type": "Film",
-      "date": "2026-05-01",
-      "synopsis": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
+      "date": "2026-08-05",
+      "synopsis": "For the first time since 1997, Joachim Posener finally emerges from hiding and allows himself to be interviewed about his life and the Trustor affair. Twenty-seven years ago, he disappeared without a trace, and ever since, he has been on the international most wanted list. Now, Karin af Klintberg searches for him…",
       "starring": [
-        "Michael B. Jordan",
-        "Juno Temple",
-        "Tracy Morgan",
-        "Cedric the Entertainer",
-        "Justina Machado",
-        "Nate Torrence"
+        "Joachim Posener",
+        "Thomas Johansson",
+        "Richard Djursén",
+        "Gunnar Lindstedt",
+        "Jochum Söderström",
+        "Michael Wynne-Parker"
       ],
-      "brief": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places.",
-      "image": "data/current-events/posters/swapped-2f32e379.jpg",
-      "top10": true,
-      "top10Rank": 9
-    },
-    {
-      "title": "Badly in Love",
-      "type": "Series",
-      "date": "2025-12-09",
-      "synopsis": "In Japan's first dating show for rebellious yankiis, 11 singles butt heads, forge bonds and live together for 14 days as they go all out to find the one.",
-      "starring": [
-        "MEGUMI",
-        "Nagano",
-        "Awich",
-        "AK-69"
-      ],
-      "brief": "In Japan's first dating show for rebellious yankiis, 11 singles butt heads.",
-      "image": "data/current-events/posters/badly-in-love-6c1d6a9c.jpg",
-      "top10": true,
-      "top10Rank": 7
-    },
-    {
-      "title": "KPop Demon Hunters",
-      "type": "Film",
-      "date": "2025-06-20",
-      "synopsis": "When K-pop superstars Rumi, Mira and Zoey aren't selling out stadiums, they're using their secret powers to protect their fans from supernatural threats.",
-      "starring": [
-        "Arden Cho",
-        "May Hong",
-        "Ji-young Yoo",
-        "Ahn Hyo-seop",
-        "Yunjin Kim",
-        "Ken Jeong"
-      ],
-      "brief": "When K-pop superstars Rumi, Mira and Zoey aren't selling out stadiums, they're using their secret powers.",
-      "image": "data/current-events/posters/kpop-demon-hunters-c8d2889f.jpg",
-      "top10": true,
-      "top10Rank": 6
+      "brief": "Joachim Posener emerges after 27 years in hiding to discuss the Trustor scandal.",
+      "image": "data/current-events/posters/inside-the-trustor-scandal-f11fc295.jpg"
     }
   ]
 }
