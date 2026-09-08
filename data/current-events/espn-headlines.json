@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-07T21:24:19.935Z",
+  "generatedAt": "2026-09-08T01:01:37.175Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-17T21:24:19.935Z",
-  "windowEnd": "2026-09-07T21:24:19.935Z",
+  "windowStart": "2026-08-18T01:01:37.175Z",
+  "windowEnd": "2026-09-08T01:01:37.175Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,17 +21,94 @@
     "Tennis",
     "MMA"
   ],
-  "count": 3812,
+  "count": 3813,
   "items": [
     {
-      "key": "49862543",
-      "id": "49862543",
-      "headline": "Giants release WR Darius Slayton, team's longest-tenured player",
-      "summary": "The Giants have released wide receiver Darius Slayton, moving on from their longest-tenured player.",
-      "url": "https://www.espn.com/nfl/story/_/id/49862543/giants-release-wr-darius-slayton-team-longest-tenured-player",
+      "key": "49863634",
+      "id": "49863634",
+      "headline": "Shohei Ohtani returns to Dodgers' lineup after missing 4 games",
+      "summary": "Shohei Ohtani returned to the Dodgers' lineup Monday as expected, marking the end of a four-day absence.",
+      "url": "https://www.espn.com/mlb/story/_/id/49863634/shohei-ohtani-returns-dodgers-lineup-missing-4-games",
+      "sport": "MLB",
+      "published": "2026-09-08T00:02:12.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49863374",
+      "id": "49863374",
+      "headline": "Rookie Luis Lara's latest web gem helps Brewers hold off Cubs",
+      "summary": "Brewers rookie outfielder Luis Lara added to what's already a season's worth of highlights in just two months with a leaping grab at the wall in right-center.",
+      "url": "https://www.espn.com/mlb/story/_/id/49863374/rookie-luis-lara-latest-web-gem-helps-brewers-hold-cubs",
+      "sport": "MLB",
+      "published": "2026-09-08T00:01:05.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49863557",
+      "id": "49863557",
+      "headline": "Washington Nationals vs. San Diego Padres: Game Highlights",
+      "summary": "Washington Nationals vs. San Diego Padres: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49863557/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-07T23:54:26.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 2
+    },
+    {
+      "key": "40699880",
+      "id": "40699880",
+      "headline": "Fantasy football buzz: What Tua Tagovailoa being named starter means for Falcons",
+      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
       "sport": "NFL",
-      "published": "2026-09-07T21:16:20.000Z",
-      "firstSeen": "2026-09-07T21:24:19.935Z",
+      "published": "2026-09-07T23:18:39.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49860294",
+      "id": "49860294",
+      "headline": "Joe Ryan lasts 4 innings in return in Twins' loss to Tigers",
+      "summary": "The Minnesota Twins reinstated All-Star right-hander Joe Ryan from the injured list and reinserted him in their rotation to start their game on Monday afternoon to open a three-game series against the Detroit Tigers.",
+      "url": "https://www.espn.com/mlb/story/_/id/49860294/twins-joe-ryan-comes-il-start-tigers",
+      "sport": "MLB",
+      "published": "2026-09-07T23:07:10.000Z",
+      "firstSeen": "2026-09-07T18:30:51.734Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49863053",
+      "id": "49863053",
+      "headline": "Riley Greene and Kevin McGonigle belt home runs for Tigers in 5-4 win over Twins",
+      "summary": "— Riley Greene had three hits, including a two-run homer, and Kevin McGonigle added a solo shot Monday to lead the Detroit Tigers to a 5-4 victory over the Minnesota Twins.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816845",
+      "sport": "MLB",
+      "published": "2026-09-07T22:46:28.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49862680",
+      "id": "49862680",
+      "headline": "Orioles offer free tix, say Ravens WR not at fault for promo",
+      "summary": "The Orioles are offering complimentary tickets to fans in their \"Bird Bath\" section after the team promoted Ravens wide receiver Zay Flowers as a guest splasher, then changed plans.",
+      "url": "https://www.espn.com/mlb/story/_/id/49862680/orioles-offer-free-tix-say-ravens-wr-not-fault-promo",
+      "sport": "MLB",
+      "published": "2026-09-07T22:37:09.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49863104",
+      "id": "49863104",
+      "headline": "Why did Auburn QB Byrum Brown struggle against Baylor?",
+      "summary": "Read & React's Roman Harper hits the film room to show how Brown read Baylor's defense well but struggled to manipulate defenders with his eyes.",
+      "url": "https://www.espn.com/video/clip/_/id/49863104/why-did-auburn-qb-byrum-brown-struggle-baylor",
+      "sport": "College football",
+      "published": "2026-09-07T22:36:29.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
       "bestRank": 1
     },
     {
@@ -41,9 +118,163 @@
       "summary": "Bill Belichick said Monday he believes UNC \"totally\" had an atmosphere of following rules amid a school investigation into conduct within his football program.",
       "url": "https://www.espn.com/college-football/story/_/id/49862044/belichick-north-carolina-focused-doing-things-properly",
       "sport": "College football",
-      "published": "2026-09-07T21:08:02.000Z",
+      "published": "2026-09-07T22:32:28.000Z",
       "firstSeen": "2026-09-07T21:24:19.935Z",
       "bestRank": 3
+    },
+    {
+      "key": "49862995",
+      "id": "49862995",
+      "headline": "Belichick: North Carolina focused on 'doing things properly'",
+      "summary": "Belichick: North Carolina focused on 'doing things properly'",
+      "url": "https://www.espn.com/video/clip/_/id/49862995/north-carolina-focused-doing-things-properly",
+      "sport": "College football",
+      "published": "2026-09-07T22:29:56.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49862818",
+      "id": "49862818",
+      "headline": "Titans' Cedric Gray in concussion protocol after UTV accident",
+      "summary": "Titans placed LB Cedric Gray under the NFL's concussion protocol after he was involved in a UTV accident in Tennessee over the weekend.",
+      "url": "https://www.espn.com/nfl/story/_/id/49862818/titans-cedric-gray-concussion-protocol-utv-accident",
+      "sport": "NFL",
+      "published": "2026-09-07T22:25:09.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49862543",
+      "id": "49862543",
+      "headline": "Giants release WR Darius Slayton, team's longest-tenured player",
+      "summary": "The Giants have released wide receiver Darius Slayton, moving on from their longest-tenured player.",
+      "url": "https://www.espn.com/nfl/story/_/id/49862543/giants-release-wr-darius-slayton-team-longest-tenured-player",
+      "sport": "NFL",
+      "published": "2026-09-07T22:15:44.000Z",
+      "firstSeen": "2026-09-07T21:24:19.935Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49862753",
+      "id": "49862753",
+      "headline": "Washington loses running backs Carr, Limar for extended time",
+      "summary": "Washington's running back depth has taken a significant hit as starter Quaid Carr and backup Jayden Limar both will miss extended time with injuries sustained in Sunday's win against Washington State.",
+      "url": "https://www.espn.com/college-football/story/_/id/49862753/washington-loses-running-backs-carr-limar-extended",
+      "sport": "College football",
+      "published": "2026-09-07T22:15:14.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49862787",
+      "id": "49862787",
+      "headline": "Are Arsenal building a Premier League dynasty?",
+      "summary": "Are Arsenal building a Premier League dynasty?",
+      "url": "https://www.espn.com/video/clip/_/id/49862787/are-arsenal-building-premier-league-dynasty",
+      "sport": "Soccer",
+      "published": "2026-09-07T22:00:58.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49862561",
+      "id": "49862561",
+      "headline": "Cards' Mike LaFleur optimistic Jeremiyah Love plays in Week 1",
+      "summary": "Cardinals coach Mike LaFleur is optimistic that rookie running back Jeremiyah Love will be able to play Sunday at the Chargers, about four weeks after suffering a high ankle sprain in a preseason game.",
+      "url": "https://www.espn.com/nfl/story/_/id/49862561/cardinals-optimistic-rookie-rb-love-ready-opener",
+      "sport": "NFL",
+      "published": "2026-09-07T21:57:05.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49862331",
+      "id": "49862331",
+      "headline": "Ravens name Gwyn to start at center to begin post-Linderbaum era",
+      "summary": "Ravens coach Jesse Minter announced Jovaughn Gwyn will be Baltimore's starting center for the season opener at the Colts.",
+      "url": "https://www.espn.com/nfl/story/_/id/49862331/ravens-name-gwyn-start-center-begin-post-linderbaum-era",
+      "sport": "NFL",
+      "published": "2026-09-07T21:51:03.000Z",
+      "firstSeen": "2026-09-07T21:24:19.935Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49861582",
+      "id": "49861582",
+      "headline": "Luzardo strikes out 12 in 1st career shutout, Schwarber homers as Phillies beat Braves 1-0",
+      "summary": "— Jesús Luzardo struck out 12 and tossed two-hit ball in his first career shutout in 150 starts and Kyle Schwarber hit a solo homer in the eighth inning to lead the Philadelphia Phillies to a 1-0 victory over the Atlanta Braves on Monday.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816843",
+      "sport": "MLB",
+      "published": "2026-09-07T21:47:29.000Z",
+      "firstSeen": "2026-09-07T21:24:19.935Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49862725",
+      "id": "49862725",
+      "headline": "Scoreless through 9 innings, Arizona plates 5 in the 10th, holds on to beat Kansas City 5-4",
+      "summary": "— Arizona's Lars Nootbaar had a pinch-hit sacrifice fly in the top of the 10th inning then the Diamondbacks followed with four more runs and held on for a 5-4 victory over the Kansas City Royals Monday.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816847",
+      "sport": "MLB",
+      "published": "2026-09-07T21:40:30.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49862666",
+      "id": "49862666",
+      "headline": "Arizona Diamondbacks vs. Kansas City Royals: Game Highlights",
+      "summary": "Arizona Diamondbacks vs. Kansas City Royals: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49862666/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-07T21:37:19.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49862185",
+      "id": "49862185",
+      "headline": "New York Mets vs. Miami Marlins: Game Highlights",
+      "summary": "New York Mets vs. Miami Marlins: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49862185/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-07T21:36:25.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49862201",
+      "id": "49862201",
+      "headline": "U.S. closes pool play with 105-64 rout of Czechia",
+      "summary": "The United States routed Czechia 105-64 to close out pool play at the FIBA World Cup and rebound from a tough performance against Italy.",
+      "url": "https://www.espn.com/olympics/basketball/story/_/id/49862201/us-closes-pool-play-105-64-rout-czechia",
+      "sport": "WNBA",
+      "published": "2026-09-07T21:32:47.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49861707",
+      "id": "49861707",
+      "headline": "Jesus Luzardo pitches 1st career shutout as Phillies beat Braves",
+      "summary": "Jesus Luzardo struck out 12 and tossed two-hit ball in his first career shutout in 150 starts to lead the Phillies to a 1-0 victory over the Braves.",
+      "url": "https://www.espn.com/mlb/story/_/id/49861707/jesus-luzardo-pitches-1st-career-shutout-phillies-beat-braves",
+      "sport": "MLB",
+      "published": "2026-09-07T21:28:58.000Z",
+      "firstSeen": "2026-09-07T21:24:19.935Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49862596",
+      "id": "49862596",
+      "headline": "Kiffin calls on LSU fans to bring Week 1 energy vs. Louisiana Tech",
+      "summary": "With Louisiana Tech coming to town after an 80-point performance, Kiffin praises the Bulldogs' offense and urges No. 11 LSU fans to recreate the atmosphere they brought against Clemson.",
+      "url": "https://www.espn.com/video/clip/_/id/49862596/kiffin-calls-lsu-fans-bring-week-1-energy-vs-louisiana-tech",
+      "sport": "College football",
+      "published": "2026-09-07T21:21:20.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 4
     },
     {
       "key": "49862372",
@@ -57,15 +288,26 @@
       "bestRank": 1
     },
     {
-      "key": "49862331",
-      "id": "49862331",
-      "headline": "Ravens name Gwyn to start at center to begin post-Linderbaum era",
-      "summary": "Ravens coach Jesse Minter announced Jovaughn Gwyn will be Baltimore's starting center for the season opener at the Colts",
-      "url": "https://www.espn.com/nfl/story/_/id/49862331/ravens-name-gwyn-start-center-begin-post-linderbaum-era",
-      "sport": "NFL",
-      "published": "2026-09-07T20:53:23.000Z",
-      "firstSeen": "2026-09-07T21:24:19.935Z",
-      "bestRank": 2
+      "key": "49862430",
+      "id": "49862430",
+      "headline": "Brewers rally in 8th and hold off comeback attempt in 9th for 4-3 win over Cubs",
+      "summary": "— Jackson Chourio singled home two runs to spark a three-run rally in the eighth inning and made a diving catch for the final out in the ninth as the Milwaukee Brewers came from behind to...",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816848",
+      "sport": "MLB",
+      "published": "2026-09-07T21:01:35.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49862328",
+      "id": "49862328",
+      "headline": "Chicago Cubs vs. Milwaukee Brewers: Game Highlights",
+      "summary": "Chicago Cubs vs. Milwaukee Brewers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49862328/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-07T20:53:48.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 9
     },
     {
       "key": "49862231",
@@ -90,6 +332,17 @@
       "bestRank": 3
     },
     {
+      "key": "49862222",
+      "id": "49862222",
+      "headline": "Rogers and Mayo help the Orioles snap their 6-game skid with a 6-4 win over Cleveland",
+      "summary": "— Trevor Rogers pitched into the eighth inning, Coby Mayo homered twice and the Baltimore Orioles took advantage of Cleveland's wildness on the mound, beating the Guardians 6-4 on Monday to snap a six-game losing streak.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816844",
+      "sport": "MLB",
+      "published": "2026-09-07T20:43:30.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 10
+    },
+    {
       "key": "49862136",
       "id": "49862136",
       "headline": "C.J. Stroud hoping to have a big year ahead of future contract talks",
@@ -112,6 +365,28 @@
       "bestRank": 5
     },
     {
+      "key": "49862137",
+      "id": "49862137",
+      "headline": "Rookie A.J. Ewing's 3 hits, 3 RBI lifts Mets to 9-4 win over Marlins",
+      "summary": "— Rookie A.J. Ewing had three hits and drove in three runs as the New York Mets beat the Miami Marlins 9-4 on Monday.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816846",
+      "sport": "MLB",
+      "published": "2026-09-07T20:36:30.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49862120",
+      "id": "49862120",
+      "headline": "Cleveland Guardians vs. Baltimore Orioles: Game Highlights",
+      "summary": "Cleveland Guardians vs. Baltimore Orioles: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49862120/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-07T20:36:09.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 13
+    },
+    {
       "key": "49861938",
       "id": "49861938",
       "headline": "Arch Manning eyes 2nd shot at Ohio State after 'rough' debut",
@@ -121,6 +396,17 @@
       "published": "2026-09-07T20:34:12.000Z",
       "firstSeen": "2026-09-07T21:24:19.935Z",
       "bestRank": 4
+    },
+    {
+      "key": "49862117",
+      "id": "49862117",
+      "headline": "Adley Rutschman's three-run HR off Pesky Pole carries Red Sox past Angels, 5-2",
+      "summary": "— Adley Rutschman hit a three-run homer off the Pesky Pole in right field, Brayan Bello pitched five scoreless innings in his first start since early June and the Boston Red Sox beat the Los Angeles Angels 5-2 on Monday for their fifth straight victory.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816842",
+      "sport": "MLB",
+      "published": "2026-09-07T20:33:32.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 14
     },
     {
       "key": "49860580",
@@ -134,6 +420,28 @@
       "bestRank": 4
     },
     {
+      "key": "49862067",
+      "id": "49862067",
+      "headline": "Los Angeles Angels vs. Boston Red Sox: Game Highlights",
+      "summary": "Los Angeles Angels vs. Boston Red Sox: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49862067/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-07T20:30:02.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 15
+    },
+    {
+      "key": "49807099",
+      "id": "49807099",
+      "headline": "Fantasy baseball lineup advice for Tuesday: Cards rookie Mathews lines up well vs. Giants",
+      "summary": "Everything you need to know to set your fantasy baseball lineups for Tuesday's MLB action.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/49807099/fantasy-baseball-pitcher-rankings-lineup-advice-tips-mlb-daily-notes-september-8-games",
+      "sport": "MLB",
+      "published": "2026-09-07T20:21:07.000Z",
+      "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 16
+    },
+    {
       "key": "49861767",
       "id": "49861767",
       "headline": "Cowboys guard Tyler Smith to have thumb surgery, headed for IR",
@@ -143,17 +451,6 @@
       "published": "2026-09-07T20:17:05.000Z",
       "firstSeen": "2026-09-07T21:24:19.935Z",
       "bestRank": 6
-    },
-    {
-      "key": "49861707",
-      "id": "49861707",
-      "headline": "Jesus Luzardo pitches 1st career shutout as Phillies beat Braves",
-      "summary": "Jesus Luzardo struck out 12 and tossed two-hit ball in his first career shutout in 150 starts to lead the Phillies to a 1-0 victory over the Braves.",
-      "url": "https://www.espn.com/mlb/story/_/id/49861707/jesus-luzardo-pitches-1st-career-shutout-phillies-beat-braves",
-      "sport": "MLB",
-      "published": "2026-09-07T20:01:16.000Z",
-      "firstSeen": "2026-09-07T21:24:19.935Z",
-      "bestRank": 2
     },
     {
       "key": "49861792",
@@ -187,17 +484,6 @@
       "published": "2026-09-07T19:23:07.000Z",
       "firstSeen": "2026-09-07T18:30:51.734Z",
       "bestRank": 1
-    },
-    {
-      "key": "49861582",
-      "id": "49861582",
-      "headline": "Luzardo strikes out 12 in 1st career shutout; Schwarber homers in Phillies' 1-0 win over Braves",
-      "summary": "— Jesús Luzardo struck out 12 and tossed two-hit ball in his first career shutout in 150 starts and Kyle Schwarber hit a solo homer in the eighth inning to lead the Philadelphia Phillies to a 1-0 victory over the Atlanta Braves on Monday.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816843",
-      "sport": "MLB",
-      "published": "2026-09-07T19:17:30.000Z",
-      "firstSeen": "2026-09-07T21:24:19.935Z",
-      "bestRank": 3
     },
     {
       "key": "49843474",
@@ -506,17 +792,6 @@
       "published": "2026-09-07T16:33:41.000Z",
       "firstSeen": "2026-09-07T06:52:07.374Z",
       "bestRank": 9
-    },
-    {
-      "key": "49860294",
-      "id": "49860294",
-      "headline": "Twins' Joe Ryan comes off IL to start against Tigers",
-      "summary": "The Minnesota Twins reinstated All-Star right-hander Joe Ryan from the injured list and reinserted him in their rotation to start their game on Monday afternoon to open a three-game series against the Detroit Tigers.",
-      "url": "https://www.espn.com/mlb/story/_/id/49860294/twins-joe-ryan-comes-il-start-tigers",
-      "sport": "MLB",
-      "published": "2026-09-07T16:30:31.000Z",
-      "firstSeen": "2026-09-07T18:30:51.734Z",
-      "bestRank": 1
     },
     {
       "key": "49466417",
@@ -8054,17 +8329,6 @@
       "bestRank": 1
     },
     {
-      "key": "40699880",
-      "id": "40699880",
-      "headline": "Fantasy football buzz: Drafting in a deep/keeper league? Read up on the names to know",
-      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "sport": "NFL",
-      "published": "2026-09-04T16:09:58.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
-    },
-    {
       "key": "49825992",
       "id": "49825992",
       "headline": "Stephen A.: Bill Belichick, UNC should regret partnership",
@@ -12415,7 +12679,7 @@
       "headline": "Russell Westbrook joins board of basketball league Project B",
       "summary": "Recently retired Russell Westbrook has joined new men's and women's basketball league Project B as a co-founder and chief strategy officer.",
       "url": "https://www.espn.com/wnba/story/_/id/49805676/russell-westbrook-joins-board-basketball-league-project-b",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-09-02T19:00:55.000Z",
       "firstSeen": "2026-09-02T21:24:06.000Z",
       "bestRank": 1
@@ -41701,259 +41965,6 @@
       "published": "2026-08-18T01:05:25.000Z",
       "firstSeen": "2026-08-18T03:32:23.339Z",
       "bestRank": 1
-    },
-    {
-      "key": "49643737",
-      "id": "49643737",
-      "headline": "A.J. Brown blows by his defender to connect on a big grab from Drake Maye",
-      "summary": "A.J. Brown blows by his defender to connect on a big grab from Drake Maye",
-      "url": "https://www.espn.com/video/clip/_/id/49643737/aj-brown-blows-defender-connect-big-grab-drake-maye",
-      "sport": "NFL",
-      "published": "2026-08-18T00:54:16.000Z",
-      "firstSeen": "2026-08-18T03:32:23.339Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49643190",
-      "id": "49643190",
-      "headline": "O.J. Brigance, Ravens' 'beloved legend,' dies at 56 after ALS fight",
-      "summary": "O.J. Brigance, a former Ravens linebacker and the team's longtime adviser in player engagement, has died 19 years after being diagnosed with ALS. He was 56.",
-      "url": "https://www.espn.com/nfl/story/_/id/49643190/oj-brigance-won-super-bowl-ravens-battling-als-dies-56",
-      "sport": "NFL",
-      "published": "2026-08-18T00:34:24.000Z",
-      "firstSeen": "2026-08-18T00:30:53.864Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49642899",
-      "id": "49642899",
-      "headline": "Sources: Saints rookie WR Jordyn Tyson could miss two months",
-      "summary": "New Orleans Saints rookie wide receiver Jordyn Tyson, 22, the No. 8 pick out of Arizona State who injured his hamstring in a practice last week, could miss the next two months, sources told Ian Rapoport and Mike Garofolo of the NFL Network on Monday.",
-      "url": "https://www.espn.com/nfl/story/_/id/49642899/saints-rookie-wr-jordyn-tyson-miss-two-months",
-      "sport": "NFL",
-      "published": "2026-08-18T00:13:24.000Z",
-      "firstSeen": "2026-08-18T00:30:53.864Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49643423",
-      "id": "49643423",
-      "headline": "New grass field held up well in opener, Bills president says",
-      "summary": "When the Bills opened Highmark Stadium last week, the field showed signs of wear in a preseason win over the Panthers, but president Pete Guelli told The Associated Press on Monday that \"from a playability and safety perspective, everybody's very happy.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/49643423/new-grass-field-held-well-opener-bills-president-says",
-      "sport": "NFL",
-      "published": "2026-08-18T00:10:25.000Z",
-      "firstSeen": "2026-08-18T00:30:53.864Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49643406",
-      "id": "49643406",
-      "headline": "Mets call up  infielder Christopher Morel, cut Gabriel Arias",
-      "summary": "The New York Mets called up infielder Christopher Morel from Triple-A Syracuse on Monday.",
-      "url": "https://www.espn.com/mlb/story/_/id/49643406/mets-call-christopher-morel-minors-cut-infielder-gabriel-arias",
-      "sport": "MLB",
-      "published": "2026-08-18T00:07:13.000Z",
-      "firstSeen": "2026-08-18T03:32:23.339Z",
-      "bestRank": 15
-    },
-    {
-      "key": "49642660",
-      "id": "49642660",
-      "headline": "FIFA executive Kevin Lamour departs amid backlash over Infantino's World Cup sale plan",
-      "summary": "FIFA chief operating officer Kevin Lamour has departed the soccer governing body in the wake of Gianni Infantino's collapsed World Cup sell-off plan.",
-      "url": "https://www.espn.com/soccer/story/_/id/49642660/fifa-executive-kevin-lamour-departs-amid-backlash-infantino-world-cup-sale-plan",
-      "sport": "Soccer",
-      "published": "2026-08-18T00:05:13.000Z",
-      "firstSeen": "2026-08-18T00:30:53.864Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49643365",
-      "id": "49643365",
-      "headline": "Which teams are ranked too high or too low on the first AP poll?",
-      "summary": "SEC Network's Matt Stinchcomb pinpoints which teams got favorable rankings from the AP voters, which teams might have been disrespected and teams that got straight up snubbed.",
-      "url": "https://www.espn.com/video/clip/_/id/49643365/which-teams-ranked-too-high-too-low-first-ap-poll",
-      "sport": "College football",
-      "published": "2026-08-17T23:57:28.000Z",
-      "firstSeen": "2026-08-18T06:29:33.134Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49643359",
-      "id": "49643359",
-      "headline": "Notable Walk-Offs: Reflect on historic moments across the SEC",
-      "summary": "On SEC Now, Dari Nowkhah and Matt Stinchcomb look back on some of the most legendary moments from SEC history across all sports.",
-      "url": "https://www.espn.com/video/clip/_/id/49643359/reflect-historic-moments-sec",
-      "sport": "Women's college basketball",
-      "published": "2026-08-17T23:54:12.000Z",
-      "firstSeen": "2026-08-18T06:29:33.134Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49643339",
-      "id": "49643339",
-      "headline": "Matt Stinchcomb ranks his top offensive lines in the SEC",
-      "summary": "SEC Network's Stinchcomb names his top four offensive lines in the conference and gives insight on how experience comes into play for the selections.",
-      "url": "https://www.espn.com/video/clip/_/id/49643339/matt-stinchcomb-ranks-top-offensive-lines-sec",
-      "sport": "College football",
-      "published": "2026-08-17T23:49:47.000Z",
-      "firstSeen": "2026-08-18T06:29:33.134Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49643337",
-      "id": "49643337",
-      "headline": "SEC Now's immediate reaction to the first AP college football poll",
-      "summary": "SEC Network's Matt Stinchcomb highlights which teams have the potential to break into the national title conversation even though the SEC did not have one team get a first-place vote.",
-      "url": "https://www.espn.com/video/clip/_/id/49643337/sec-now-immediate-reaction-first-ap-college-football-poll",
-      "sport": "College football",
-      "published": "2026-08-17T23:49:21.000Z",
-      "firstSeen": "2026-08-18T06:29:33.134Z",
-      "bestRank": 4
-    },
-    {
-      "key": "40589052",
-      "id": "40589052",
-      "headline": "Most assists in a WNBA game: Clark, Vandersloot and more",
-      "summary": "Caitlin Clark holds the record for most assists in a single WNBA game.",
-      "url": "https://www.espn.com/wnba/story/_/id/40589052/most-assists-wnba-game-caitlin-clark-sabrina-ionescu",
-      "sport": "WNBA",
-      "published": "2026-08-17T23:49:11.000Z",
-      "firstSeen": "2026-08-18T06:29:33.134Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49643316",
-      "id": "49643316",
-      "headline": "How will Tennessee, South Carolina overcome season-ending injuries?",
-      "summary": "The SEC Now crew discusses the impact on the programs as Vols safety Edrees Farooq and Gamecocks WR duo Jayden Seller and Jayden Gibson suffer season-ending injuries.",
-      "url": "https://www.espn.com/video/clip/_/id/49643316/how-tennessee-south-carolina-overcome-season-ending-injuries",
-      "sport": "College football",
-      "published": "2026-08-17T23:43:45.000Z",
-      "firstSeen": "2026-08-18T06:29:33.134Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49642341",
-      "id": "49642341",
-      "headline": "Rockies designate Lorenzen for assignment, recall Shook from Triple-A",
-      "summary": "The Colorado Rockies designated starter Michael Lorenzen for assignment Monday in a season in which the right-hander has gone 3-11 with a 7.08 ERA.",
-      "url": "https://www.espn.com/mlb/story/_/id/49642341/rockies-designate-lorenzen-assignment-recall-shook",
-      "sport": "MLB",
-      "published": "2026-08-17T23:40:59.000Z",
-      "firstSeen": "2026-08-18T00:30:53.864Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49643289",
-      "id": "49643289",
-      "headline": "Analyzing the key transfers on offensive line in the SEC",
-      "summary": "SEC Now's Matt Stinchcomb highlights some transfers in the conference that can make a big impact in the trenches and boost the offense.",
-      "url": "https://www.espn.com/video/clip/_/id/49643289/analyzing-key-transfers-offensive-line-sec",
-      "sport": "College football",
-      "published": "2026-08-17T23:36:33.000Z",
-      "firstSeen": "2026-08-18T06:29:33.134Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49643001",
-      "id": "49643001",
-      "headline": "Shelburne: Jeanie Buss to contest siblings' sale of family share in Lakers",
-      "summary": "Shelburne: Jeanie Buss to contest siblings' sale of family share in Lakers",
-      "url": "https://www.espn.com/video/clip/_/id/49643001/jeanie-buss-contest-siblings-sale-family-share-lakers",
-      "sport": "NBA",
-      "published": "2026-08-17T23:09:10.000Z",
-      "firstSeen": "2026-08-18T00:30:53.864Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49642816",
-      "id": "49642816",
-      "headline": "Giants' Malik Nabers 'felt good' in 1st full-speed live drills",
-      "summary": "Giants wide receiver Malik Nabers participated Monday in full-speed live drills for the first time since tearing the ACL and meniscus in his right knee Week 4 of last season.",
-      "url": "https://www.espn.com/nfl/story/_/id/49642816/new-york-giants-receiver-malik-nabers-felt-good-first-full-speed-live-drills",
-      "sport": "NFL",
-      "published": "2026-08-17T23:07:23.000Z",
-      "firstSeen": "2026-08-18T00:30:53.864Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49640765",
-      "id": "49640765",
-      "headline": "MLB unanimously approves sale of San Diego Padres",
-      "summary": "MLB team owners unanimously approved the sale of the Padres to an investor group led by private equity billionaire José E. Feliciano and his wife and business partner, Kwanza Jones.",
-      "url": "https://www.espn.com/mlb/story/_/id/49640765/mlb-unanimously-approves-sale-san-diego-padres",
-      "sport": "MLB",
-      "published": "2026-08-17T22:59:41.000Z",
-      "firstSeen": "2026-08-17T21:27:47.678Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49642143",
-      "id": "49642143",
-      "headline": "DB Wright leaves Bengals preseason to pursue acting",
-      "summary": "Rookie Ceyair Wright -- who starred alongside LeBron James in 'Space Jam: A New Legacy' -- is giving new meaning to dual threat.",
-      "url": "https://www.espn.com/nfl/story/_/id/49642143/ceyair-wright-cincinnati-bengals-space-jam-2-actor-opportunity",
-      "sport": "NFL",
-      "published": "2026-08-17T22:59:13.000Z",
-      "firstSeen": "2026-08-18T00:30:53.864Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49641600",
-      "id": "49641600",
-      "headline": "2028 four-star quarterback Kaden Craft commits to Tennessee",
-      "summary": "The Tennessee Volunteers landed a quarterback for the future Monday, securing a commitment from four-star prospect Kaden Craft, ESPN's No. 3 dual-threat passer in the 2028 cycle who is a 20-game starter at North Carolina's Lake Norman High School.",
-      "url": "https://www.espn.com/college-football/story/_/id/49641600/2028-four-star-quarterback-kaden-craft-commits-tennessee",
-      "sport": "College football",
-      "published": "2026-08-17T22:56:06.000Z",
-      "firstSeen": "2026-08-17T21:27:47.678Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49642766",
-      "id": "49642766",
-      "headline": "UConn hiring Charlie Stevens from Spurs as GM, source says",
-      "summary": "UConn has found its replacement for general manager Tom Moore with the hiring of Spurs director of grassroots scouting Charlie Stevens, a source said.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/49642766/uconn-hiring-charlie-stevens-spurs-gm-source-says",
-      "sport": "College basketball",
-      "published": "2026-08-17T22:55:40.000Z",
-      "firstSeen": "2026-08-18T00:30:53.864Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49642371",
-      "id": "49642371",
-      "headline": "Chargers' McDaniel lauds Herbert's progression in offense",
-      "summary": "New offensive coordinator Mike McDaniel, during a media availability Monday, spoke glowingly of Los Angeles Chargers quarterback Justin Herbert's work this summer in training camp, saying, \"He's been everything that I'd hoped and more.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/49642371/chargers-mcdaniel-lauds-herbert-progression-offense",
-      "sport": "NFL",
-      "published": "2026-08-17T22:32:45.000Z",
-      "firstSeen": "2026-08-18T00:30:53.864Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49642423",
-      "id": "49642423",
-      "headline": "Leboeuf: Nobody will compete with Arsenal in the Premier League",
-      "summary": "Leboeuf: Nobody will compete with Arsenal in the Premier League",
-      "url": "https://www.espn.com/video/clip/_/id/49642423/compete-arsenal-premier-league",
-      "sport": "Soccer",
-      "published": "2026-08-17T21:46:38.000Z",
-      "firstSeen": "2026-08-18T00:30:53.864Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49642350",
-      "id": "49642350",
-      "headline": "Country music star Russell Dickerson reflects on Neyland Stadium performance",
-      "summary": "Dickerson chats with Paul Finebaum about the energy and emotions of singing live at Tennessee last year and how he expects the Vols to do this season.",
-      "url": "https://www.espn.com/video/clip/_/id/49642350/country-music-star-russell-dickerson-reflects-neyland-stadium-performance",
-      "sport": "College football",
-      "published": "2026-08-17T21:34:38.000Z",
-      "firstSeen": "2026-08-18T06:29:33.134Z",
-      "bestRank": 7
     }
   ]
 }
