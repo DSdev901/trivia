@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-08T06:41:36.610Z",
+  "generatedAt": "2026-09-08T09:29:54.118Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-18T06:41:36.610Z",
-  "windowEnd": "2026-09-08T06:41:36.610Z",
+  "windowStart": "2026-08-18T09:29:54.118Z",
+  "windowEnd": "2026-09-08T09:29:54.118Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,217 @@
     "Tennis",
     "MMA"
   ],
-  "count": 3805,
+  "count": 3812,
   "items": [
+    {
+      "key": "49866722",
+      "id": "49866722",
+      "headline": "Jeff McNeil legs out winning single, lifts A's to 6-5 victory over Blue Jays",
+      "summary": "— Jeff McNeil legged out an infield single to drive in the winning run in the bottom of the ninth inning and the Athletics beat the Toronto Blue Jays 6-5 on Monday night after blowing a four-run lead.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816851",
+      "sport": "MLB",
+      "published": "2026-09-08T08:08:05.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49866720",
+      "id": "49866720",
+      "headline": "Giants face the Cardinals leading series 1-0",
+      "summary": "St. Louis Cardinals (72-73, third in the NL Central) vs. San Francisco Giants (60-85, fourth in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816864",
+      "sport": "MLB",
+      "published": "2026-09-08T08:07:34.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49866719",
+      "id": "49866719",
+      "headline": "Mets play the Marlins leading series 1-0",
+      "summary": "New York Mets (66-78, fifth in the NL East) vs. Miami Marlins (72-73, third in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816858",
+      "sport": "MLB",
+      "published": "2026-09-08T08:03:50.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49866718",
+      "id": "49866718",
+      "headline": "Rockies aim to break 4-game road slide, play the Yankees",
+      "summary": "Colorado Rockies (55-88, fifth in the NL West) vs. New York Yankees (81-62, second in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816855",
+      "sport": "MLB",
+      "published": "2026-09-08T08:03:47.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49866717",
+      "id": "49866717",
+      "headline": "Athletics meet the Blue Jays with 1-0 series lead",
+      "summary": "Toronto Blue Jays (72-73, fourth in the AL East) vs. Athletics (58-87, fourth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816866",
+      "sport": "MLB",
+      "published": "2026-09-08T08:03:43.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49866716",
+      "id": "49866716",
+      "headline": "Dodgers play the Reds on home winning streak",
+      "summary": "Cincinnati Reds (69-75, fifth in the NL Central) vs. Los Angeles Dodgers (87-57, first in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816863",
+      "sport": "MLB",
+      "published": "2026-09-08T08:03:40.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49866715",
+      "id": "49866715",
+      "headline": "Diamondbacks visit the Royals on 3-game road win streak",
+      "summary": "Arizona Diamondbacks (77-68, second in the NL West) vs. Kansas City Royals (64-81, fifth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816860",
+      "sport": "MLB",
+      "published": "2026-09-08T08:03:36.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49866711",
+      "id": "49866711",
+      "headline": "Brewers bring 1-0 series lead over Cubs into game 2",
+      "summary": "Chicago Cubs (81-64, second in the NL Central) vs. Milwaukee Brewers (89-56, first in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816861",
+      "sport": "MLB",
+      "published": "2026-09-08T08:03:33.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49866703",
+      "id": "49866703",
+      "headline": "Phillies host the Astros to begin 3-game series",
+      "summary": "Houston Astros (73-71, first in the AL West) vs. Philadelphia Phillies (81-63, second in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816856",
+      "sport": "MLB",
+      "published": "2026-09-08T08:03:29.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49866700",
+      "id": "49866700",
+      "headline": "Orioles bring 1-0 series lead over Guardians into game 2",
+      "summary": "Cleveland Guardians (73-72, second in the AL Central) vs. Baltimore Orioles (70-75, fifth in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816854",
+      "sport": "MLB",
+      "published": "2026-09-08T08:02:51.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49866699",
+      "id": "49866699",
+      "headline": "Pirates visit the White Sox to open 3-game series",
+      "summary": "Pittsburgh Pirates (71-73, fourth in the NL Central) vs. Chicago White Sox (75-68, first in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816862",
+      "sport": "MLB",
+      "published": "2026-09-08T08:02:47.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49866698",
+      "id": "49866698",
+      "headline": "Red Sox play the Angels with 1-0 series lead",
+      "summary": "Los Angeles Angels (54-90, fifth in the AL West) vs. Boston Red Sox (80-65, third in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816853",
+      "sport": "MLB",
+      "published": "2026-09-08T08:02:44.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49866694",
+      "id": "49866694",
+      "headline": "Rays visit the Braves to begin 3-game series",
+      "summary": "Tampa Bay Rays (85-58, first in the AL East) vs. Atlanta Braves (85-59, first in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816859",
+      "sport": "MLB",
+      "published": "2026-09-08T08:02:40.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49866692",
+      "id": "49866692",
+      "headline": "Detroit Tigers and Minnesota Twins meet in game 2 of series",
+      "summary": "Minnesota Twins (68-76, third in the AL Central) vs. Detroit Tigers (66-78, fourth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816857",
+      "sport": "MLB",
+      "published": "2026-09-08T08:02:36.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 14
+    },
+    {
+      "key": "49866691",
+      "id": "49866691",
+      "headline": "Mariners host the Rangers to open 3-game series",
+      "summary": "Texas Rangers (71-73, second in the AL West) vs. Seattle Mariners (67-77, third in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816865",
+      "sport": "MLB",
+      "published": "2026-09-08T08:02:33.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 15
+    },
+    {
+      "key": "49866690",
+      "id": "49866690",
+      "headline": "Nationals play the Padres looking to stop road slide",
+      "summary": "Washington Nationals (67-79, fourth in the NL East) vs. San Diego Padres (76-68, third in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816867",
+      "sport": "MLB",
+      "published": "2026-09-08T08:02:29.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 16
+    },
+    {
+      "key": "49860446",
+      "id": "49860446",
+      "headline": "Premier League clubs are overspending on wingers who can't score goals",
+      "summary": "After Messi and Ronaldo proved wingers can do more than cross the ball, why are Premier League clubs paying so much for so little production?",
+      "url": "https://www.espn.com/soccer/story/_/id/49860446/premier-league-clubs-overspending-wingers-cannot-score-goals-transfers",
+      "sport": "Soccer",
+      "published": "2026-09-08T07:57:51.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49866585",
+      "id": "49866585",
+      "headline": "Can versatile Iliman Ndiaye avoid Manchester City's expensive talent graveyard?",
+      "summary": "\"When Manchester City comes though, you don't say no,\" Iliman Ndiaye said after making his debut for his new club against Coventry City this weekend.",
+      "url": "https://www.espn.com/espn/story/_/id/49866585/can-versatile-iliman-ndiaye-avoid-manchester-city-expensive-talent-graveyard",
+      "sport": "Soccer",
+      "published": "2026-09-08T07:43:53.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49866443",
+      "id": "49866443",
+      "headline": "Transfer rumors, news: Arsenal set for Rice talks to ward off Real Madrid interest",
+      "summary": "Real Madrid are eyeing up Declan Rice, but Arsenal are making moves to keep him. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/49866443/transfer-rumors-news-arsenal-set-declan-rice-talks-real-madrid-interest",
+      "sport": "Soccer",
+      "published": "2026-09-08T07:35:04.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 2
+    },
     {
       "key": "49865736",
       "id": "49865736",
@@ -30,9 +239,42 @@
       "summary": "The Patriots and Christian Gonzalez agreed to terms on a four-year, $135 million extension that makes him the highest-paid CB in NFL history.",
       "url": "https://www.espn.com/nfl/story/_/id/49865736/sources-christian-gonzalez-patriots-reach-4-year-135m-deal",
       "sport": "NFL",
-      "published": "2026-09-08T06:20:56.000Z",
+      "published": "2026-09-08T07:18:04.000Z",
       "firstSeen": "2026-09-08T06:41:36.610Z",
       "bestRank": 1
+    },
+    {
+      "key": "49866292",
+      "id": "49866292",
+      "headline": "Newcastle sporting director Ross Wilson: Need to trade players to be successful in Premier League",
+      "summary": "Sporting director Ross Wilson believes success for Newcastle rests on them being a trading club going forwards after a summer of fluctuating fortunes in the transfer window.",
+      "url": "https://www.espn.com/soccer/story/_/id/49866292/newcastle-sporting-director-ross-wilson-need-trade-players-successful-premier-league",
+      "sport": "Soccer",
+      "published": "2026-09-08T06:57:51.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49866342",
+      "id": "49866342",
+      "headline": "'Centre-half' Declan Rice wouldn't start for Man City, Real Madrid - Graeme Souness",
+      "summary": "Graeme Souness has doubled down on his criticism of Declan Rice, reiterating the Arsenal midfielder is more of a defender and claiming he wouldn't start for any of his club's top European rivals.",
+      "url": "https://www.espn.com/soccer/story/_/id/49866342/centre-half-declan-rice-man-city-real-madrid-graeme-souness",
+      "sport": "Soccer",
+      "published": "2026-09-08T06:55:15.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49866212",
+      "id": "49866212",
+      "headline": "Erling Haaland fears lack of break could take toll as Man City star reveals unusual escape",
+      "summary": "Erling Haaland has revealed chopping wood and sitting by the fire has become his favourite way to switch off from football as the Manchester City striker admitted his fears over a lack of a summer break.",
+      "url": "https://www.espn.com/soccer/story/_/id/49866212/erling-haaland-lack-break-take-toll-world-cup-man-city-star-unusual-escape-wood",
+      "sport": "Soccer",
+      "published": "2026-09-08T06:40:17.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 6
     },
     {
       "key": "49863634",
@@ -41,8 +283,19 @@
       "summary": "Shohei Ohtani, who returned to the Dodgers' lineup Monday, said he is \"focusing on hitting moving forward.\"",
       "url": "https://www.espn.com/mlb/story/_/id/49863634/shohei-ohtani-returns-dodgers-lineup-missing-4-games",
       "sport": "MLB",
-      "published": "2026-09-08T06:06:04.000Z",
+      "published": "2026-09-08T06:14:23.000Z",
       "firstSeen": "2026-09-08T01:01:37.175Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49864647",
+      "id": "49864647",
+      "headline": "Gauff beats Jovic for 1st US Open quarters since title in '23",
+      "summary": "Coco Gauff beat Iva Jovic to return to the US Open quarterfinals for the first time since winning the tournament three years ago.",
+      "url": "https://www.espn.com/tennis/story/_/id/49864647/gauff-beats-jovic-1st-us-open-quarters-title-23",
+      "sport": "Tennis",
+      "published": "2026-09-08T05:27:10.000Z",
+      "firstSeen": "2026-09-08T03:31:26.476Z",
       "bestRank": 1
     },
     {
@@ -90,6 +343,17 @@
       "bestRank": 1
     },
     {
+      "key": "49865538",
+      "id": "49865538",
+      "headline": "Top-seeded Zverev rolls into US Open quarters; Tien ousted",
+      "summary": "Top-seeded Alexander Zverev beat Luciano Darderi in straight sets Monday night to reach the quarterfinals of the US Open, while American Learner Tien fell to Karen Khachanov.",
+      "url": "https://www.espn.com/tennis/story/_/id/49865538/top-seeded-zverev-rolls-us-open-quarters-tien-ousted",
+      "sport": "Tennis",
+      "published": "2026-09-08T05:08:24.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 1
+    },
+    {
       "key": "49865643",
       "id": "49865643",
       "headline": "SMU survives 4 turnovers and takes down FSU on the road",
@@ -112,17 +376,6 @@
       "bestRank": 3
     },
     {
-      "key": "49863701",
-      "id": "49863701",
-      "headline": "SMU-FSU played with limited power after lengthy outage delay",
-      "summary": "The game between No. 19 SMU and Florida State has kicked off after a nearly two-hour delay and will be played with limited power at Doak Campbell Stadium.",
-      "url": "https://www.espn.com/college-football/story/_/id/49863701/start-smu-florida-state-game-delayed-power-outage",
-      "sport": "College football",
-      "published": "2026-09-08T04:44:56.000Z",
-      "firstSeen": "2026-09-08T03:31:26.476Z",
-      "bestRank": 3
-    },
-    {
       "key": "49865385",
       "id": "49865385",
       "headline": "Hernández’s 3-run homer and Sheehan’s 10 Ks power Dodgers past Reds 6-3 for 5th straight win",
@@ -132,6 +385,17 @@
       "published": "2026-09-08T04:27:29.000Z",
       "firstSeen": "2026-09-08T06:41:36.610Z",
       "bestRank": 3
+    },
+    {
+      "key": "49865363",
+      "id": "49865363",
+      "headline": "Alexander Zverev reaches US Open quarters for 5th time with straight-sets win",
+      "summary": "Alexander Zverev reaches US Open quarters for 5th time with straight-sets win",
+      "url": "https://www.espn.com/video/clip/_/id/49865363/alexander-zverev-reaches-us-open-quarters-5th-straight-sets-win",
+      "sport": "Tennis",
+      "published": "2026-09-08T04:16:33.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
+      "bestRank": 2
     },
     {
       "key": "49865098",
@@ -153,6 +417,17 @@
       "sport": "NFL",
       "published": "2026-09-08T04:10:19.000Z",
       "firstSeen": "2026-09-06T21:22:13.497Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49865353",
+      "id": "49865353",
+      "headline": "Alexander Zverev vs. Luciano Darderi: Match Highlights",
+      "summary": "Alexander Zverev vs. Luciano Darderi: Match Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49865353/match-highlights",
+      "sport": "Tennis",
+      "published": "2026-09-08T04:08:53.000Z",
+      "firstSeen": "2026-09-08T09:29:54.118Z",
       "bestRank": 3
     },
     {
@@ -200,17 +475,6 @@
       "bestRank": 2
     },
     {
-      "key": "49864647",
-      "id": "49864647",
-      "headline": "Gauff beats Jovic for 1st US Open quarters since title in '23",
-      "summary": "Coco Gauff beat Iva Jovic to return to the US Open quarterfinals for the first time since winning the tournament three years ago.",
-      "url": "https://www.espn.com/tennis/story/_/id/49864647/gauff-beats-jovic-1st-us-open-quarters-title-23",
-      "sport": "Tennis",
-      "published": "2026-09-08T02:30:32.000Z",
-      "firstSeen": "2026-09-08T03:31:26.476Z",
-      "bestRank": 1
-    },
-    {
       "key": "49864762",
       "id": "49864762",
       "headline": "Minnesota Twins vs Detroit Tigers: Game Highlights",
@@ -231,6 +495,17 @@
       "published": "2026-09-08T02:08:11.000Z",
       "firstSeen": "2026-09-07T21:24:19.935Z",
       "bestRank": 1
+    },
+    {
+      "key": "49863701",
+      "id": "49863701",
+      "headline": "SMU-FSU game starts with limited power after outage delay",
+      "summary": "The game between No. 19 SMU and Florida State has kicked off after a nearly two-hour delay and will be played with limited power at Doak Campbell Stadium.",
+      "url": "https://www.espn.com/college-football/story/_/id/49863701/start-smu-florida-state-game-delayed-power-outage",
+      "sport": "College football",
+      "published": "2026-09-08T02:01:07.000Z",
+      "firstSeen": "2026-09-08T03:31:26.476Z",
+      "bestRank": 3
     },
     {
       "key": "49864613",
@@ -13042,7 +13317,7 @@
       "headline": "Russell Westbrook joins board of basketball league Project B",
       "summary": "Recently retired Russell Westbrook has joined new men's and women's basketball league Project B as a co-founder and chief strategy officer.",
       "url": "https://www.espn.com/wnba/story/_/id/49805676/russell-westbrook-joins-board-basketball-league-project-b",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-09-02T19:00:55.000Z",
       "firstSeen": "2026-09-02T21:24:06.000Z",
       "bestRank": 1
@@ -41679,204 +41954,6 @@
       "published": "2026-08-18T09:57:32.000Z",
       "firstSeen": "2026-08-18T12:29:37.930Z",
       "bestRank": 2
-    },
-    {
-      "key": "49646321",
-      "id": "49646321",
-      "headline": "Orioles begin 3-game series with the Yankees",
-      "summary": "New York Yankees (69-55, second in the AL East) vs. Baltimore Orioles (61-64, fourth in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816574",
-      "sport": "MLB",
-      "published": "2026-08-18T08:03:16.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49646320",
-      "id": "49646320",
-      "headline": "Twins face the Braves leading series 1-0",
-      "summary": "Atlanta Braves (74-51, first in the NL East) vs. Minnesota Twins (61-65, third in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816596",
-      "sport": "MLB",
-      "published": "2026-08-18T08:03:12.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49646319",
-      "id": "49646319",
-      "headline": "Nationals look to end 4-game road losing streak, play the Rangers",
-      "summary": "Washington Nationals (60-66, fourth in the NL East) vs. Texas Rangers (61-64, second in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816584",
-      "sport": "MLB",
-      "published": "2026-08-18T08:03:09.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49646318",
-      "id": "49646318",
-      "headline": "Cubs take on the White Sox after Crow-Armstrong's 4-hit game",
-      "summary": "Chicago White Sox (65-59, first in the AL Central) vs. Chicago Cubs (73-53, second in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816582",
-      "sport": "MLB",
-      "published": "2026-08-18T08:03:05.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49646316",
-      "id": "49646316",
-      "headline": "Cincinnati Reds host the St. Louis Cardinals Tuesday",
-      "summary": "St. Louis Cardinals (64-62, third in the NL Central) vs. Cincinnati Reds (60-65, fifth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816577",
-      "sport": "MLB",
-      "published": "2026-08-18T08:03:02.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49646315",
-      "id": "49646315",
-      "headline": "Bauers leads Brewers against the Mariners after 4-hit performance",
-      "summary": "Seattle Mariners (59-66, third in the AL West) vs. Milwaukee Brewers (77-48, first in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816583",
-      "sport": "MLB",
-      "published": "2026-08-18T08:02:58.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49646314",
-      "id": "49646314",
-      "headline": "Mets host the Padres on 4-game home win streak",
-      "summary": "San Diego Padres (67-59, second in the NL West) vs. New York Mets (57-69, fifth in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816575",
-      "sport": "MLB",
-      "published": "2026-08-18T08:02:54.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49646313",
-      "id": "49646313",
-      "headline": "Dodgers play the Rockies after Ohtani's 4-hit game",
-      "summary": "Los Angeles Dodgers (75-51, first in the NL West) vs. Colorado Rockies (50-75, fifth in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816585",
-      "sport": "MLB",
-      "published": "2026-08-18T08:02:51.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49646312",
-      "id": "49646312",
-      "headline": "Rays host the Blue Jays to open 3-game series",
-      "summary": "Toronto Blue Jays (61-65, fifth in the AL East) vs. Tampa Bay Rays (75-49, first in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816578",
-      "sport": "MLB",
-      "published": "2026-08-18T08:02:47.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49646311",
-      "id": "49646311",
-      "headline": "Tigers take road win streak into game against the Pirates",
-      "summary": "Detroit Tigers (61-64, second in the AL Central) vs. Pittsburgh Pirates (61-66, fourth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816572",
-      "sport": "MLB",
-      "published": "2026-08-18T08:02:43.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49646310",
-      "id": "49646310",
-      "headline": "Red Sox face the Diamondbacks with 1-0 series lead",
-      "summary": "Arizona Diamondbacks (66-60, third in the NL West) vs. Boston Red Sox (67-58, third in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816571",
-      "sport": "MLB",
-      "published": "2026-08-18T08:02:40.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49646309",
-      "id": "49646309",
-      "headline": "Guardians play the Giants in first of 3-game series",
-      "summary": "San Francisco Giants (51-73, fourth in the NL West) vs. Cleveland Guardians (60-65, fourth in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816576",
-      "sport": "MLB",
-      "published": "2026-08-18T08:02:36.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49646308",
-      "id": "49646308",
-      "headline": "Astros start 3-game series at home against the Angels",
-      "summary": "Los Angeles Angels (49-76, fifth in the AL West) vs. Houston Astros (63-62, first in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816579",
-      "sport": "MLB",
-      "published": "2026-08-18T08:02:33.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49646307",
-      "id": "49646307",
-      "headline": "Royals meet the Athletics with 1-0 series lead",
-      "summary": "Athletics (49-76, fourth in the AL West) vs. Kansas City Royals (52-74, fifth in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816580",
-      "sport": "MLB",
-      "published": "2026-08-18T08:02:29.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 14
-    },
-    {
-      "key": "49626572",
-      "id": "49626572",
-      "headline": "Premier League Week 1 predictions: Big club starting lineups",
-      "summary": "The 2026-27 Premier League is here! After a busy summer of World Cup, transfers and preseason prep, here's how we expect all the top clubs to line up for opening weekend.",
-      "url": "https://www.espn.com/soccer/story/_/id/49626572/premier-league-week-1-starting-lineups-man-united-man-city-liverpool-arsenal",
-      "sport": "Soccer",
-      "published": "2026-08-18T07:45:02.000Z",
-      "firstSeen": "2026-08-18T11:09:09.525Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49643207",
-      "id": "49643207",
-      "headline": "Pep Guardiola-Kyle Walker row detailed in new Man City documentary",
-      "summary": "Pep Guardiola clashed with his captain and almost broke down in tears as he railed at players during his worst run as Manchester City manager.",
-      "url": "https://www.espn.com/soccer/story/_/id/49643207/doc-details-turmoil-pep-players-manchester-city-swoons",
-      "sport": "Soccer",
-      "published": "2026-08-18T07:28:45.000Z",
-      "firstSeen": "2026-08-18T00:30:53.864Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49645611",
-      "id": "49645611",
-      "headline": "Dodgers' offense breaks out behind Shohei Ohtani's 2-HR game",
-      "summary": "Maybe just as encouraging for the Dodgers as their bats finally waking up Monday night was the status report on Shohei Ohtani's knee after his most recent bullpen session.",
-      "url": "https://www.espn.com/mlb/story/_/id/49645611/shohei-ohtani-powers-dodgers-2-home-runs-win-vs-rockies-gives-positive-status-update-knee",
-      "sport": "MLB",
-      "published": "2026-08-18T07:09:55.000Z",
-      "firstSeen": "2026-08-18T09:29:00.803Z",
-      "bestRank": 15
-    },
-    {
-      "key": "49582850",
-      "id": "49582850",
-      "headline": "Who is the youngest F1 world champion? The records Kimi Antonelli could break",
-      "summary": "Kimi Antonelli has already broken several records in his second season in Formula 1, but which others could he still break?",
-      "url": "https://www.espn.com/f1/story/_/id/49582850/kimi-antonelli-formula-1-youngest-f1-world-champion-records-antonelli-break",
-      "sport": "F1",
-      "published": "2026-08-18T07:05:38.000Z",
-      "firstSeen": "2026-08-18T12:29:37.930Z",
-      "bestRank": 3
     }
   ]
 }
