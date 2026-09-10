@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-10T06:41:51.216Z",
+  "generatedAt": "2026-09-10T09:29:50.422Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-20T06:41:51.216Z",
-  "windowEnd": "2026-09-10T06:41:51.216Z",
+  "windowStart": "2026-08-20T09:29:50.422Z",
+  "windowEnd": "2026-09-10T09:29:50.422Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,74 @@
     "Tennis",
     "MMA"
   ],
-  "count": 3877,
+  "count": 3883,
   "items": [
+    {
+      "key": "49890032",
+      "id": "49890032",
+      "headline": "Davante Adams: \"Some things are out of our hands\"",
+      "summary": "LA Rams head coach Sean McVay and WR Davante Adams speak to the press ahead of their clash with the San Francisco 49ers, with Adams showing mixed feelings with the late arrival and connecting with fans.",
+      "url": "https://www.espn.com/video/clip/_/id/49890032/some-things-our-hands",
+      "sport": "NFL",
+      "published": "2026-09-10T09:22:31.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49889670",
+      "id": "49889670",
+      "headline": "Mariners and Rangers meet with series tied 1-1",
+      "summary": "Texas Rangers (72-74, second in the AL West) vs. Seattle Mariners (68-78, third in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816887",
+      "sport": "MLB",
+      "published": "2026-09-10T08:02:40.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49889669",
+      "id": "49889669",
+      "headline": "Pirates take road win streak into game against the White Sox",
+      "summary": "Pittsburgh Pirates (73-73, third in the NL Central) vs. Chicago White Sox (75-70, first in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816886",
+      "sport": "MLB",
+      "published": "2026-09-10T08:02:36.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49889668",
+      "id": "49889668",
+      "headline": "Phillies and Astros play to determine series winner",
+      "summary": "Houston Astros (74-72, first in the AL West) vs. Philadelphia Phillies (82-64, second in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816884",
+      "sport": "MLB",
+      "published": "2026-09-10T08:02:33.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49889666",
+      "id": "49889666",
+      "headline": "Yankees host the Rockies, aim to continue home win streak",
+      "summary": "Colorado Rockies (55-90, fifth in the NL West) vs. New York Yankees (83-62, second in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816883",
+      "sport": "MLB",
+      "published": "2026-09-10T08:02:29.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49886582",
+      "id": "49886582",
+      "headline": "Seahawks QB Darnold injures hip vs. Patriots, set for MRI",
+      "summary": "Seahawks quarterback Sam Darnold has been ruled out of the season opener against the Patriots after suffering a hip injury on the opening drive.",
+      "url": "https://www.espn.com/nfl/story/_/id/49886582/seahawks-qb-darnold-injures-hip-opening-drive-vs-patriots",
+      "sport": "NFL",
+      "published": "2026-09-10T07:52:24.000Z",
+      "firstSeen": "2026-09-10T03:31:41.763Z",
+      "bestRank": 4
+    },
     {
       "key": "49889214",
       "id": "49889214",
@@ -30,9 +96,20 @@
       "summary": "The 49ers will welcome back two of their biggest stars from significant injuries for their Week 1 matchup against the Rams in Melbourne.",
       "url": "https://www.espn.com/nfl/story/_/id/49889214/49ers-kittle-bosa-injury-report-set-play-vs-rams",
       "sport": "NFL",
-      "published": "2026-09-10T06:37:37.000Z",
+      "published": "2026-09-10T07:01:06.000Z",
       "firstSeen": "2026-09-10T06:41:51.216Z",
       "bestRank": 1
+    },
+    {
+      "key": "49888435",
+      "id": "49888435",
+      "headline": "Ohtani heads to IL; Dodgers calling up top prospect De Paula to play DH",
+      "summary": "The Dodgers are putting Shohei Ohtani on the 15-day injured list and will call up top prospect Josue De Paula from Double-A to temporarily take his place at designated hitter, manager Dave Roberts said.",
+      "url": "https://www.espn.com/mlb/story/_/id/49888435/ohtani-heads-il-dodgers-calling-top-prospect-de-paula-play-dh",
+      "sport": "MLB",
+      "published": "2026-09-10T06:37:23.000Z",
+      "firstSeen": "2026-09-10T06:41:51.216Z",
+      "bestRank": 4
     },
     {
       "key": "49888969",
@@ -55,17 +132,6 @@
       "published": "2026-09-10T05:59:20.000Z",
       "firstSeen": "2026-09-09T21:23:12.453Z",
       "bestRank": 6
-    },
-    {
-      "key": "49888435",
-      "id": "49888435",
-      "headline": "Ohtani heads to IL; Dodgers calling up top prospect De Paula, sources say",
-      "summary": "The Dodgers are placing Shohei Ohtani on the 15-day injured list, and sources told ESPN that top prospect Josue De Paula is expected to join the team on Friday.",
-      "url": "https://www.espn.com/mlb/story/_/id/49888435/ohtani-heads-il-dodgers-calling-top-prospect-de-paula",
-      "sport": "MLB",
-      "published": "2026-09-10T05:50:55.000Z",
-      "firstSeen": "2026-09-10T06:41:51.216Z",
-      "bestRank": 4
     },
     {
       "key": "48305211",
@@ -101,6 +167,17 @@
       "bestRank": 5
     },
     {
+      "key": "49887449",
+      "id": "49887449",
+      "headline": "Alexander Zverev beats Botic van de Zandschulp to reach US Open semis",
+      "summary": "Alexander Zverev's rocky road to start the US Open turned into smooth sailing to the semifinals.",
+      "url": "https://www.espn.com/tennis/story/_/id/49887449/alexander-zverev-beats-botic-van-de-zandschulp-reach-2026-us-open-semifinals",
+      "sport": "Tennis",
+      "published": "2026-09-10T05:09:35.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 1
+    },
+    {
       "key": "49886334",
       "id": "49886334",
       "headline": "Barry Melrose, former player, coach and ESPN analyst, dies",
@@ -112,15 +189,15 @@
       "bestRank": 3
     },
     {
-      "key": "49886582",
-      "id": "49886582",
-      "headline": "Seahawks QB Darnold (hip) exits after opening drive vs. Patriots",
-      "summary": "Seahawks quarterback Sam Darnold has been ruled out of the season opener against the Patriots after suffering a hip injury on the opening drive.",
-      "url": "https://www.espn.com/nfl/story/_/id/49886582/seahawks-qb-darnold-injures-hip-opening-drive-vs-patriots",
-      "sport": "NFL",
-      "published": "2026-09-10T05:04:33.000Z",
-      "firstSeen": "2026-09-10T03:31:41.763Z",
-      "bestRank": 4
+      "key": "49888506",
+      "id": "49888506",
+      "headline": "LAFC vs. New York Red Bulls - Game Highlights",
+      "summary": "Watch the Game Highlights from LAFC vs. New York Red Bulls, 09/09/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49888506/lafc-vs-new-york-red-bulls-game-highlights",
+      "sport": "Soccer",
+      "published": "2026-09-10T05:06:06.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 1
     },
     {
       "key": "49888508",
@@ -167,6 +244,17 @@
       "bestRank": 10
     },
     {
+      "key": "49888222",
+      "id": "49888222",
+      "headline": "Angel Reese, Caitlin Clark having 'fun' playing together for U.S.",
+      "summary": "Angel Reese and Caitlin Clark's interactions are a subplot of the women's FIBA World Cup and the WNBA season, but Clark says many of the stories about their relationship are \"false takes,\" saying she loves the fiery competitiveness that they share.",
+      "url": "https://www.espn.com/wnba/story/_/id/49888222/angel-reese-caitlin-clark-having-fun-playing-together-us",
+      "sport": "WNBA",
+      "published": "2026-09-10T04:22:22.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 1
+    },
+    {
       "key": "49888262",
       "id": "49888262",
       "headline": "Analyzing the offenses that made strong first impressions in Week 1",
@@ -175,6 +263,17 @@
       "sport": "College football",
       "published": "2026-09-10T04:20:21.000Z",
       "firstSeen": "2026-09-10T06:41:51.216Z",
+      "bestRank": 1
+    },
+    {
+      "key": "47978642",
+      "id": "47978642",
+      "headline": "Messi tracker: Goals, assists, key moments in 2026",
+      "summary": "ESPN provides game-by-game analysis of Lionel Messi's performances for Inter Miami and Argentina.",
+      "url": "https://www.espn.com/soccer/story/_/id/47978642/lionel-messi-2026-tracker-inter-miami-argentina-games-goals-assists-stats",
+      "sport": "Soccer",
+      "published": "2026-09-10T04:14:58.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
     },
     {
@@ -255,6 +354,17 @@
       "bestRank": 7
     },
     {
+      "key": "49887607",
+      "id": "49887607",
+      "headline": "Miami rallies for draw after Lewandowski goal in front of record Fire crowd",
+      "summary": "Inter Miami and Lionel Messi rallied from a goal down at Soldier Field in Chicago for a 1-1 draw against Robert Lewandowski and the Fire in front of 63,094 fans, besting the club's home attendance record set last season in the same matchup.",
+      "url": "https://www.espn.com/soccer/story/_/id/49887607/miami-rallies-draw-lewandowski-goal-record-fire-crowd",
+      "sport": "Soccer",
+      "published": "2026-09-10T03:41:59.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 3
+    },
+    {
       "key": "49887831",
       "id": "49887831",
       "headline": "Arizona Diamondbacks vs. Kansas City Royals: Game Highlights",
@@ -321,6 +431,50 @@
       "bestRank": 9
     },
     {
+      "key": "49884369",
+      "id": "49884369",
+      "headline": "Coco Gauff rallies past Mirra Andreeva to make US Open semis",
+      "summary": "American Coco Gauff fought off a couple match points in a tiebreaker and beat Mirra Andreeva 2-6, 7-6 (7), 6-2 on Wednesday to set up a US Open semifinal matchup against new No. 1 Elena Rybakina.",
+      "url": "https://www.espn.com/tennis/story/_/id/49884369/coco-gauff-saves-match-points-rallies-mirra-andreeva-reach-2026-us-open-semifinals",
+      "sport": "Tennis",
+      "published": "2026-09-10T02:57:56.000Z",
+      "firstSeen": "2026-09-10T00:59:18.530Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49887393",
+      "id": "49887393",
+      "headline": "Alexander Zverev reaches 4th grand slam semifinal of year in straight sets",
+      "summary": "Alexander Zverev reaches 4th grand slam semifinal of year in straight sets",
+      "url": "https://www.espn.com/video/clip/_/id/49887393/alexander-zverev-reaches-4th-grand-slam-semifinal-year-straight-sets",
+      "sport": "Tennis",
+      "published": "2026-09-10T02:57:21.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49885674",
+      "id": "49885674",
+      "headline": "Karen Khachanov advances to US Open semis after Alexander Blockx retires",
+      "summary": "Karen Khachanov advances to US Open semis after Alexander Blockx retires",
+      "url": "https://www.espn.com/video/clip/_/id/49885674/karen-khachanov-advances-us-open-semis-alexander-blockx-retires",
+      "sport": "Tennis",
+      "published": "2026-09-10T02:50:32.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49887504",
+      "id": "49887504",
+      "headline": "Chicago Fire FC vs. Inter Miami CF - Game Highlights",
+      "summary": "Watch the Game Highlights from Chicago Fire FC vs. Inter Miami CF, 09/09/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49887504/chicago-fire-fc-vs-inter-miami-cf-game-highlights",
+      "sport": "Soccer",
+      "published": "2026-09-10T02:50:16.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 4
+    },
+    {
       "key": "49887466",
       "id": "49887466",
       "headline": "Henderson, Yelich lead Brewers past Cubs for series sweep",
@@ -332,6 +486,17 @@
       "bestRank": 10
     },
     {
+      "key": "49885774",
+      "id": "49885774",
+      "headline": "Karen Khachanov into US Open semis after Alexander Blockx retires",
+      "summary": "Unseeded Karen Khachanov reached his third Grand Slam semifinal when No. 28 Alexander Blockx stopped playing midway through the third set of their US Open quarterfinal match Wednesday due to injuries.",
+      "url": "https://www.espn.com/tennis/story/_/id/49885774/karen-khachanov-advances-2026-us-open-semifinals-alexander-blockx-retires",
+      "sport": "Tennis",
+      "published": "2026-09-10T02:45:24.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 4
+    },
+    {
       "key": "49887440",
       "id": "49887440",
       "headline": "Brewers sweep the Cubs with an 8-6 win",
@@ -341,6 +506,28 @@
       "published": "2026-09-10T02:43:08.000Z",
       "firstSeen": "2026-09-10T06:41:51.216Z",
       "bestRank": 12
+    },
+    {
+      "key": "49887296",
+      "id": "49887296",
+      "headline": "Toronto beats MLS leaders Nashville to extend unbeaten run",
+      "summary": "Dániel Sallói had a tying goal in the 72nd minute and Emilio Aristizábal scored in second-half stoppage time to give Toronto FC a 2-1 victory over MLS frontrunner Nashville SC on Wednesday night.",
+      "url": "http://www.espn.com/soccer/report/_/gameId/761790",
+      "sport": "Soccer",
+      "published": "2026-09-10T02:42:14.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49886402",
+      "id": "49886402",
+      "headline": "Niklas Dorsch's mix-up at the back results in a Toronto FC own goal",
+      "summary": "Niklas Dorsch's mix-up at the back results in a Toronto FC own goal",
+      "url": "https://www.espn.com/video/clip/_/id/49886402/niklas-dorsch-mix-back-results-toronto-fc-own-goal",
+      "sport": "Soccer",
+      "published": "2026-09-10T02:29:46.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 7
     },
     {
       "key": "49886471",
@@ -374,6 +561,17 @@
       "published": "2026-09-10T02:19:28.000Z",
       "firstSeen": "2026-09-10T06:41:51.216Z",
       "bestRank": 14
+    },
+    {
+      "key": "49887088",
+      "id": "49887088",
+      "headline": "Atlanta United FC vs. Orlando City SC - Game Highlights",
+      "summary": "Watch the Game Highlights from Atlanta United FC vs. Orlando City SC, 09/09/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49887088/atlanta-united-fc-vs-orlando-city-sc-game-highlights",
+      "sport": "Soccer",
+      "published": "2026-09-10T02:03:36.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
+      "bestRank": 6
     },
     {
       "key": "49887009",
@@ -428,6 +626,17 @@
       "sport": "MLB",
       "published": "2026-09-10T01:51:42.000Z",
       "firstSeen": "2026-09-10T03:31:41.763Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49887016",
+      "id": "49887016",
+      "headline": "Conor Benn on cutting weight: 'It's hell'",
+      "summary": "Conor Benn on cutting weight: 'It's hell'",
+      "url": "https://www.espn.com/video/clip/_/id/49887016/hell",
+      "sport": "MMA",
+      "published": "2026-09-10T01:50:14.000Z",
+      "firstSeen": "2026-09-10T09:29:50.422Z",
       "bestRank": 1
     },
     {
@@ -528,6 +737,17 @@
       "published": "2026-09-10T00:51:08.000Z",
       "firstSeen": "2026-09-10T00:59:18.530Z",
       "bestRank": 1
+    },
+    {
+      "key": "49882460",
+      "id": "49882460",
+      "headline": "Elena Rybakina reaches US Open semis, claims No. 1 ranking",
+      "summary": "Elena Rybakina is headed to the US Open semifinals and to the top of the women's tennis rankings after a comeback 3-6, 6-1, 6-4 victory over Zheng Qinwen.",
+      "url": "https://www.espn.com/tennis/story/_/id/49882460/elena-rybakina-reaches-us-open-semis-claims-no-1-ranking",
+      "sport": "Tennis",
+      "published": "2026-09-10T00:44:14.000Z",
+      "firstSeen": "2026-09-10T00:59:18.530Z",
+      "bestRank": 4
     },
     {
       "key": "49885471",
@@ -638,28 +858,6 @@
       "published": "2026-09-09T23:39:36.000Z",
       "firstSeen": "2026-09-10T03:31:41.763Z",
       "bestRank": 3
-    },
-    {
-      "key": "49882460",
-      "id": "49882460",
-      "headline": "Elena Rybakina reaches US Open semis, claims No. 1 ranking",
-      "summary": "Elena Rybakina is headed to the US Open semifinals and to the top of the women's tennis rankings after a comeback 3-6, 6-1, 6-4 victory over Zheng Qinwen.",
-      "url": "https://www.espn.com/tennis/story/_/id/49882460/elena-rybakina-reaches-us-open-semis-claims-no-1-ranking",
-      "sport": "Tennis",
-      "published": "2026-09-09T23:26:14.000Z",
-      "firstSeen": "2026-09-10T00:59:18.530Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49884369",
-      "id": "49884369",
-      "headline": "Coco Gauff rallies past Mirra Andreeva to make US Open semis",
-      "summary": "American Coco Gauff fought off a couple match points in a tiebreaker and beat Mirra Andreeva 2-6, 7-6 (7), 6-2 on Wednesday to set up a US Open semifinal matchup against new No. 1 Elena Rybakina.",
-      "url": "https://www.espn.com/tennis/story/_/id/49884369/coco-gauff-saves-match-points-rallies-mirra-andreeva-reach-2026-us-open-semifinals",
-      "sport": "Tennis",
-      "published": "2026-09-09T23:25:46.000Z",
-      "firstSeen": "2026-09-10T00:59:18.530Z",
-      "bestRank": 2
     },
     {
       "key": "49885723",
@@ -869,17 +1067,6 @@
       "published": "2026-09-09T21:24:01.000Z",
       "firstSeen": "2026-09-10T00:59:18.530Z",
       "bestRank": 14
-    },
-    {
-      "key": "47978642",
-      "id": "47978642",
-      "headline": "Messi tracker: Goals, assists, key moments in 2026",
-      "summary": "ESPN provides game-by-game analysis of Lionel Messi's performances for Inter Miami and Argentina.",
-      "url": "https://www.espn.com/soccer/story/_/id/47978642/lionel-messi-2026-tracker-inter-miami-argentina-games-goals-assists-stats",
-      "sport": "Soccer",
-      "published": "2026-09-09T21:13:11.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
     },
     {
       "key": "49884041",
@@ -1272,7 +1459,7 @@
       "headline": "Jalen Brunson becomes the latest notable athlete to host 'Saturday Night Live'",
       "summary": "There have been 35 athletes to host the sketch comedy staple, including greats such as Peyton Manning, Derek Jeter and LeBron James.",
       "url": "https://www.espn.com/nfl/story/_/id/35761216/best-saturday-night-live-athlete-moments",
-      "sport": "MLB",
+      "sport": "NBA",
       "published": "2026-09-09T18:20:42.000Z",
       "firstSeen": "2026-09-09T18:32:12.007Z",
       "bestRank": 1
@@ -2031,7 +2218,7 @@
       "headline": "Arena for 76ers, Flyers to open in 2030, marks 'new era'",
       "summary": "The 76ers and Flyers have unveiled renderings of their new fully privately funded arena in South Philadelphia, which is targeted to open before the WNBA season in 2030.",
       "url": "https://www.espn.com/nba/story/_/id/49867971/arena-76ers-flyers-marks-new-era-philadelphia-sports",
-      "sport": "NHL",
+      "sport": "NBA",
       "published": "2026-09-09T10:54:09.000Z",
       "firstSeen": "2026-09-08T12:38:17.395Z",
       "bestRank": 1
@@ -42548,127 +42735,6 @@
       "published": "2026-08-20T10:06:29.000Z",
       "firstSeen": "2026-08-20T12:30:09.711Z",
       "bestRank": 7
-    },
-    {
-      "key": "49658786",
-      "id": "49658786",
-      "headline": "Liverpool's Curtis Jones close to deal to join Inter Milan - sources",
-      "summary": "Inter Milan are closing in on a deal to sign Liverpool midfielder Curtis Jones, sources told ESPN.",
-      "url": "https://www.espn.com/soccer/story/_/id/49658786/liverpool-curtis-jones-close-deal-join-inter-milan-sources",
-      "sport": "Soccer",
-      "published": "2026-08-20T09:03:13.000Z",
-      "firstSeen": "2026-08-19T15:28:37.430Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49663356",
-      "id": "49663356",
-      "headline": "Hutchison: Konsa would be a 'smart signing' for Arsenal",
-      "summary": "Hutchison: Konsa would be a 'smart signing' for Arsenal.",
-      "url": "https://www.espn.com/video/clip/_/id/49663356/konsa-smart-signing-arsenal",
-      "sport": "Soccer",
-      "published": "2026-08-20T08:37:26.000Z",
-      "firstSeen": "2026-08-20T00:30:25.172Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49658716",
-      "id": "49658716",
-      "headline": "Arsenal agree deal for Aston Villa's Ezri Konsa - sources",
-      "summary": "Arsenal have agreed a deal worth in the region of £51 million for Aston Villa defender Ezri Konsa, sources have told ESPN.",
-      "url": "https://www.espn.com/soccer/story/_/id/49658716/arsenal-ezri-konsa-deal-agreed-sources-premier-league-transfers",
-      "sport": "Soccer",
-      "published": "2026-08-20T08:31:57.000Z",
-      "firstSeen": "2026-08-19T18:29:08.969Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49667838",
-      "id": "49667838",
-      "headline": "Athletics aim to end slide in matchup with the Royals",
-      "summary": "Athletics (49-78, fifth in the AL West) vs. Kansas City Royals (54-74, fifth in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816606",
-      "sport": "MLB",
-      "published": "2026-08-20T08:02:32.000Z",
-      "firstSeen": "2026-08-20T09:28:55.127Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49667837",
-      "id": "49667837",
-      "headline": "Rays and Blue Jays square off with series tied 1-1",
-      "summary": "Toronto Blue Jays (62-66, fourth in the AL East) vs. Tampa Bay Rays (76-50, first in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816604",
-      "sport": "MLB",
-      "published": "2026-08-20T08:02:29.000Z",
-      "firstSeen": "2026-08-20T09:28:55.127Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49667835",
-      "id": "49667835",
-      "headline": "Astros and Angels play to determine series winner",
-      "summary": "Los Angeles Angels (50-77, fourth in the AL West) vs. Houston Astros (64-63, first in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816605",
-      "sport": "MLB",
-      "published": "2026-08-20T08:01:49.000Z",
-      "firstSeen": "2026-08-20T09:28:55.127Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49667834",
-      "id": "49667834",
-      "headline": "Rangers and Nationals meet in series rubber match",
-      "summary": "Washington Nationals (61-67, fourth in the NL East) vs. Texas Rangers (62-65, second in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816609",
-      "sport": "MLB",
-      "published": "2026-08-20T08:01:46.000Z",
-      "firstSeen": "2026-08-20T09:28:55.127Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49667833",
-      "id": "49667833",
-      "headline": "Cincinnati Reds face the St. Louis Cardinals Thursday",
-      "summary": "St. Louis Cardinals (65-63, third in the NL Central) vs. Cincinnati Reds (61-66, fifth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816603",
-      "sport": "MLB",
-      "published": "2026-08-20T08:01:42.000Z",
-      "firstSeen": "2026-08-20T09:28:55.127Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49667832",
-      "id": "49667832",
-      "headline": "Brewers and Mariners meet to determine series winner",
-      "summary": "Seattle Mariners (60-67, third in the AL West) vs. Milwaukee Brewers (78-49, first in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816608",
-      "sport": "MLB",
-      "published": "2026-08-20T08:01:38.000Z",
-      "firstSeen": "2026-08-20T09:28:55.127Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49667573",
-      "id": "49667573",
-      "headline": "Utah Jazz guard Josh Okogie leads strengthened D'Tigers roster for World Cup qualifiers",
-      "summary": "Utah Jazz guard Josh Okogie will lead a strengthened Nigeria roster, lined with NBA and NBA G League experience, into the fourth window of the FIBA Basketball World Cup African Qualifiers in Tunisia this month.",
-      "url": "https://www.espn.com/espn/story/_/id/49667573/utah-jazz-guard-josh-okogie-leads-strengthened-dtigers-roster-world-cup-qualifiers",
-      "sport": "NBA",
-      "published": "2026-08-20T07:23:51.000Z",
-      "firstSeen": "2026-08-20T09:28:55.127Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49657298",
-      "id": "49657298",
-      "headline": "Meet the Premier League new boys: What you need to know about Coventry, Ipswich and Hull",
-      "summary": "Thew new Premier League season is here and there are some fresh faces to get to know. ESPN takes a look a new boys Coventry, Ipswich and Hull",
-      "url": "https://www.espn.com/espn/story/_/id/49657298/meet-premier-league-new-boys-need-know-coventry-city-ipswich-town-hull-city",
-      "sport": "Soccer",
-      "published": "2026-08-20T07:13:17.000Z",
-      "firstSeen": "2026-08-20T09:28:55.127Z",
-      "bestRank": 3
     }
   ]
 }
