@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-10T18:29:59.245Z",
+  "generatedAt": "2026-09-10T21:22:25.369Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-20T18:29:59.245Z",
-  "windowEnd": "2026-09-10T18:29:59.245Z",
+  "windowStart": "2026-08-20T21:22:25.369Z",
+  "windowEnd": "2026-09-10T21:22:25.369Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,349 @@
     "Tennis",
     "MMA"
   ],
-  "count": 3860,
+  "count": 3858,
   "items": [
+    {
+      "key": "49896220",
+      "id": "49896220",
+      "headline": "Lions looking forward to fresh start against Saints after falling short of expectations last year",
+      "summary": "— A long wait is almost over for the Detroit Lions.",
+      "url": "http://www.espn.com/nfl/preview?gameId=401872923",
+      "sport": "NFL",
+      "published": "2026-09-10T21:17:33.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49895670",
+      "id": "49895670",
+      "headline": "Commanders punter Tress Way says he'll retire after season",
+      "summary": "Commanders punter Tress Way, coming off his third Pro Bowl season, said he's going to retire at the end of the season -- barring an unexpected change of heart.",
+      "url": "https://www.espn.com/nfl/story/_/id/49895670/commanders-punter-tress-way-says-retire-season",
+      "sport": "NFL",
+      "published": "2026-09-10T21:11:55.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49895995",
+      "id": "49895995",
+      "headline": "Baker Mayfield’s Week 1 success meets Joe Burrow’s September urgency in Cincinnati",
+      "summary": "Baker Mayfield and Tampa Bay have gotten off to fast starts over the past three seasons.",
+      "url": "http://www.espn.com/nfl/preview?gameId=401872925",
+      "sport": "NFL",
+      "published": "2026-09-10T21:02:32.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49895714",
+      "id": "49895714",
+      "headline": "Jets' Breece Hall says he's ready to face Titans in opener",
+      "summary": "Jets RB Breece Hall, who strained his groin Aug. 17, proclaimed himself ready to face the Titans on Sunday at Nissan Stadium.",
+      "url": "https://www.espn.com/nfl/story/_/id/49895714/jets-breece-hall-says-ready-face-titans-opener",
+      "sport": "NFL",
+      "published": "2026-09-10T21:01:21.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49895564",
+      "id": "49895564",
+      "headline": "Falcons QB Tua Tagovailoa suffers oblique injury in practice",
+      "summary": "Falcons quarterback Tua Tagovailoa sustained an oblique injury in practice Thursday and was listed as a limited participant.",
+      "url": "https://www.espn.com/nfl/story/_/id/49895564/falcons-qb-tua-tagovailoa-suffers-oblique-injury-practice",
+      "sport": "NFL",
+      "published": "2026-09-10T20:37:08.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49895761",
+      "id": "49895761",
+      "headline": "Schefter: We're staring at the possibility that Cooper Rush starts Week 1 for Atlanta",
+      "summary": "Schefter: We're staring at the possibility that Cooper Rush starts Week 1 for Atlanta",
+      "url": "https://www.espn.com/video/clip/_/id/49895761/staring-possibility-cooper-rush-starts-week-1-atlanta",
+      "sport": "NFL",
+      "published": "2026-09-10T20:36:40.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49895082",
+      "id": "49895082",
+      "headline": "Chiefs' Mahomes expects to play with no limitations in opener",
+      "summary": "Patrick Mahomes said he expects to play with no limitations when he returns from torn knee ligaments in the Chiefs' Monday night game against the Broncos.",
+      "url": "https://www.espn.com/nfl/story/_/id/49895082/chiefs-mahomes-expects-play-no-limitations-opener",
+      "sport": "NFL",
+      "published": "2026-09-10T20:26:20.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49804164",
+      "id": "49804164",
+      "headline": "Fantasy football rankings for Week 1: Tight end",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804164/nfl-fantasy-football-rankings-2026-te-tight-end",
+      "sport": "NFL",
+      "published": "2026-09-10T20:15:47.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49804068",
+      "id": "49804068",
+      "headline": "Fantasy football rankings for Week 1: Running back",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804068/nfl-fantasy-football-rankings-2026-rb-running-back",
+      "sport": "NFL",
+      "published": "2026-09-10T20:14:53.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49895392",
+      "id": "49895392",
+      "headline": "Raiders' Jeanty (ankle) feels 'really good,' excited for Dolphins",
+      "summary": "Raiders running back Ashton Jeanty (ankle) said he feels \"really good\" and is \"super excited\" to play in the season opener against the Dolphins on Sunday at Allegiant Stadium.",
+      "url": "https://www.espn.com/nfl/story/_/id/49895392/raiders-jeanty-ankle-feels-really-good-excited-dolphins",
+      "sport": "NFL",
+      "published": "2026-09-10T20:12:18.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49892945",
+      "id": "49892945",
+      "headline": "Fantasy baseball lineup Friday advice: Strong matchup for Merrill Kelly at home",
+      "summary": "Everything you need to know to set your fantasy baseball lineups for Friday's MLB action.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/49892945/fantasy-baseball-pitcher-rankings-lineup-advice-tips-mlb-daily-notes-september-11-games",
+      "sport": "MLB",
+      "published": "2026-09-10T20:11:37.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49804022",
+      "id": "49804022",
+      "headline": "Fantasy football rankings for Week 1: Quarterback",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804022/nfl-fantasy-football-rankings-2026-qb-quarterback",
+      "sport": "NFL",
+      "published": "2026-09-10T20:07:10.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49885469",
+      "id": "49885469",
+      "headline": "NBA, Nike announces new 'Specter' uniforms for league's oldest teams",
+      "summary": "Each of the uniforms include details inspired by the franchises' history, city heritage and fan culture.",
+      "url": "https://www.espn.com/nba/story/_/id/49885469/nba-nike-specter-uniforms-2026-knicks-lakers-celtics-warriors-pistons-76ers-hawks-kings",
+      "sport": "NBA",
+      "published": "2026-09-10T20:06:12.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49895351",
+      "id": "49895351",
+      "headline": "Why Cam Skattebo needs to be in fantasy lineups in Week 1",
+      "summary": "Adam Rank says Cam Skattebo needs to be in fantasy lineups in Week 1",
+      "url": "https://www.espn.com/video/clip/_/id/49895351/why-cam-skattebo-needs-fantasy-lineups-week-1",
+      "sport": "NFL",
+      "published": "2026-09-10T20:04:41.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49895440",
+      "id": "49895440",
+      "headline": "Cam Smith hit solo homer in 9th off All-Star closer Duran in Houston's 2-1 win over Phillies",
+      "summary": "— Cam Smith hit a tiebreaking home run in the ninth inning off Jhoan Duran and Cristian Javier combined on a three-hitter to lead the Houston Astros over the Philadelphia Phillies 2-1 Thursday.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816884",
+      "sport": "MLB",
+      "published": "2026-09-10T20:04:31.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49895431",
+      "id": "49895431",
+      "headline": "Tampa Bay Rays vs. Atlanta Braves: Game Highlights",
+      "summary": "Tampa Bay Rays vs. Atlanta Braves: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49895431/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-10T20:03:58.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49894666",
+      "id": "49894666",
+      "headline": "Why fantasy managers should be starting Baker Mayfield in Week 1",
+      "summary": "Why Michael F. Florio is bullish on Baker Mayfield in Week 1",
+      "url": "https://www.espn.com/video/clip/_/id/49894666/why-fantasy-managers-starting-baker-mayfield-week-1",
+      "sport": "NFL",
+      "published": "2026-09-10T20:02:48.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 15
+    },
+    {
+      "key": "49895403",
+      "id": "49895403",
+      "headline": "How can the Horns stop Jeremiah Smith?",
+      "summary": "Dave Wilson breaks down Texas' strategy for OSU's star receiver Jeremiah Smith.",
+      "url": "https://www.espn.com/video/clip/_/id/49895403/how-horns-stop-jeremiah-smith",
+      "sport": "College football",
+      "published": "2026-09-10T20:01:51.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49895402",
+      "id": "49895402",
+      "headline": "Patrick Mahomes: 'I just love competing'",
+      "summary": "Patrick Mahomes: 'I just love competing'",
+      "url": "https://www.espn.com/video/clip/_/id/49895402/just-love-competing",
+      "sport": "NFL",
+      "published": "2026-09-10T20:01:23.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49889462",
+      "id": "49889462",
+      "headline": "Transfer rumors, news: Zubimendi to leave Arsenal in January?",
+      "summary": "Club Brugge striker Nicolo Tresoldi has emerged as a potential target for both Manchester United and Tottenham. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/49889462/transfer-rumors-news-man-united-tottenham-eye-club-brugge-striker",
+      "sport": "Soccer",
+      "published": "2026-09-10T19:59:32.000Z",
+      "firstSeen": "2026-09-10T12:38:24.815Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49895401",
+      "id": "49895401",
+      "headline": "Bills QB Josh Allen seeks to end 0-4 skid in Houston as Joe Brady debuts as Buffalo head coach",
+      "summary": "— Josh Allen and the Buffalo Bills travel to Houston to Sunday to open their season against the Texans with the quarterback looking to finally break through in a place that has never been good to him.",
+      "url": "http://www.espn.com/nfl/preview?gameId=401872660",
+      "sport": "NFL",
+      "published": "2026-09-10T19:58:30.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49894607",
+      "id": "49894607",
+      "headline": "Why Florio thinks fantasy managers should start Tony Pollard in Week 1",
+      "summary": "Why Florio thinks fantasy managers should start Tony Pollard in Week 1",
+      "url": "https://www.espn.com/video/clip/_/id/49894607/why-florio-thinks-fantasy-managers-start-tony-pollard-week-1",
+      "sport": "NFL",
+      "published": "2026-09-10T19:57:41.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 16
+    },
+    {
+      "key": "49895321",
+      "id": "49895321",
+      "headline": "Astros take rubber game with a tight 2-1 win",
+      "summary": "The Astros get the job done on the road, beating the Phillies 2-1.",
+      "url": "https://www.espn.com/video/clip/_/id/49895321/astros-take-rubber-game-tight-2-1-win",
+      "sport": "MLB",
+      "published": "2026-09-10T19:55:00.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49891979",
+      "id": "49891979",
+      "headline": "How Darnold's potential absence might impact Smith-Njigba in fantasy",
+      "summary": "How Darnold's potential absence might impact Smith-Njigba in fantasy",
+      "url": "https://www.espn.com/video/clip/_/id/49891979/how-darnold-potential-absence-impact-smith-njigba-fantasy",
+      "sport": "NFL",
+      "published": "2026-09-10T19:53:32.000Z",
+      "firstSeen": "2026-09-10T15:27:19.888Z",
+      "bestRank": 15
+    },
+    {
+      "key": "49752366",
+      "id": "49752366",
+      "headline": "MLB playoff tracker 2026: Clinching scenarios, bracket, schedule",
+      "summary": "From current playoff matchups to league races to the postseason schedule, we have everything you need to know.",
+      "url": "https://www.espn.com/mlb/story/_/id/49752366/mlb-2026-playoff-tracker-clinch-scenarios-postseason-bracket-schedule",
+      "sport": "MLB",
+      "published": "2026-09-10T19:52:03.000Z",
+      "firstSeen": "2026-09-01T12:38:04.191Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49895313",
+      "id": "49895313",
+      "headline": "Braves' Lane Thomas headed to IL after batting cage injury",
+      "summary": "Braves outfielder Lane Thomas is headed to the 15-day IL with an intercostal injury after hurting himself in the batting cage before Thursday's game vs. the Rays.",
+      "url": "https://www.espn.com/mlb/story/_/id/49895313/braves-lane-thomas-headed-il-batting-cage-injury",
+      "sport": "MLB",
+      "published": "2026-09-10T19:51:27.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49894992",
+      "id": "49894992",
+      "headline": "Payton to Schrager: I have the same excitement now as my early coaching days",
+      "summary": "Payton to Schrager: I have the same excitement now as my early coaching days",
+      "url": "https://www.espn.com/video/clip/_/id/49894992/same-excitement-now-my-early-coaching-days",
+      "sport": "NFL",
+      "published": "2026-09-10T19:39:13.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49895078",
+      "id": "49895078",
+      "headline": "Storm's Ezi Magbegor suffers torn ACL at women's FIBA World Cup",
+      "summary": "Seattle Storm forward Ezi Magbegor will miss the remainder of the WNBA season after suffering a torn ACL while playing for Australia at the women's FIBA World Cup in Germany.",
+      "url": "https://www.espn.com/wnba/story/_/id/49895078/storm-ezi-magbegor-suffers-torn-acl-women-fiba-world-cup",
+      "sport": "WNBA",
+      "published": "2026-09-10T19:33:06.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49893507",
+      "id": "49893507",
+      "headline": "Sources: Seahawks' Sam Darnold expected to miss Week 2",
+      "summary": "Sam Darnold has received \"really good news\" regarding his hip injury, coach Mike Macdonald said, but the Seahawks QB is expected to miss next week's game, sources said.",
+      "url": "https://www.espn.com/nfl/story/_/id/49893507/sources-seahawks-sam-darnold-expected-miss-week-2",
+      "sport": "NFL",
+      "published": "2026-09-10T19:03:33.000Z",
+      "firstSeen": "2026-09-10T18:29:59.245Z",
+      "bestRank": 4
+    },
+    {
+      "key": "39395382",
+      "id": "39395382",
+      "headline": "What is the oldest NFL stadium?",
+      "summary": "Many different characteristics make NFL stadiums unique. Age is a hot topic among fans. Here's how stadiums stack up from oldest to newest.",
+      "url": "https://www.espn.com/nfl/story/_/id/39395382/what-oldest-nfl-stadium-soldier-sofi-age",
+      "sport": "NFL",
+      "published": "2026-09-10T19:03:33.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 17
+    },
+    {
+      "key": "40909583",
+      "id": "40909583",
+      "headline": "What are Guardian Caps? How do they address head injuries in the NFL?",
+      "summary": "The NFL introduced Guardian Caps to take a proactive approach in preventing head injuries.",
+      "url": "https://www.espn.com/nfl/story/_/id/40909583/what-guardian-caps-how-do-address-head-injuries-nfl",
+      "sport": "NFL",
+      "published": "2026-09-10T19:01:28.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 13
+    },
     {
       "key": "49894105",
       "id": "49894105",
@@ -30,8 +371,63 @@
       "summary": "Clippers guard Bradley Beal is take over the No. 3 jersey long associated with franchise legend Chris Paul, who has been recently outspoken about his treatment by the team.",
       "url": "https://www.espn.com/nba/story/_/id/49894105/clippers-indicate-chris-paul-old-no-3-going-bradley-beal",
       "sport": "NBA",
-      "published": "2026-09-10T18:25:17.000Z",
+      "published": "2026-09-10T19:00:35.000Z",
       "firstSeen": "2026-09-10T18:29:59.245Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49894724",
+      "id": "49894724",
+      "headline": "Saleh faces the Jets as Titans and New York chase a season-opening spark",
+      "summary": "— Robert Saleh’s regular-season debut with the Tennessee Titans comes against a familiar foe.",
+      "url": "http://www.espn.com/nfl/preview?gameId=401872924",
+      "sport": "NFL",
+      "published": "2026-09-10T18:59:30.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 14
+    },
+    {
+      "key": "49894595",
+      "id": "49894595",
+      "headline": "Rays denied potential playoff clinch as Braves win 3-1 behind Martín Pérez and Austin Riley",
+      "summary": "— The Tampa Bay Rays were prevented from possibly becoming the first team to clinch a playoff berth when Martín Pérez threw seven scoreless innings and Austin Riley's run-scoring single in the eighth inning gave Atlanta its first lead of the series in...",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816885",
+      "sport": "MLB",
+      "published": "2026-09-10T18:45:30.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49891922",
+      "id": "49891922",
+      "headline": "Weekend predictions: Can Wrexham get a win? Who wins Manchester derby? Elversberg over Bayern?",
+      "summary": "Arsenal host Chelsea in a heavyweight clash this early in the Premier League, while teams such as PSG and Napoli are on the ropes in their respective title races.",
+      "url": "https://www.espn.com/soccer/story/_/id/49891922/weekend-predictions-wins-manchester-derby-elversberg-stun-bayern",
+      "sport": "Soccer",
+      "published": "2026-09-10T18:43:23.000Z",
+      "firstSeen": "2026-09-10T18:29:59.245Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49881489",
+      "id": "49881489",
+      "headline": "Sources: Ducks waiving Chris Kreider with East move on deck",
+      "summary": "The Ducks are placing Chris Kreider on waivers after the veteran forward expressed a desire to play closer to the East Coast, a source confirmed to ESPN.",
+      "url": "https://www.espn.com/nhl/story/_/id/49881489/source-ducks-waiving-chris-kreider-east-move-deck",
+      "sport": "NHL",
+      "published": "2026-09-10T18:38:16.000Z",
+      "firstSeen": "2026-09-09T18:32:12.007Z",
+      "bestRank": 1
+    },
+    {
+      "key": "31165089",
+      "id": "31165089",
+      "headline": "Fantasy baseball forecaster: Team hitting ratings",
+      "summary": "Stay ahead of the game and optimize your fantasy baseball hitters with our forecaster, which provides a rolling 10-day outlook of every team's hitting matchups as well as the potential for stolen bases.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/31165089/fantasy-baseball-forecaster-team-hitting-stolen-base-ratings-platoon-matchups-daily-weekly-leagues",
+      "sport": "MLB",
+      "published": "2026-09-10T18:20:07.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
       "bestRank": 1
     },
     {
@@ -55,17 +451,6 @@
       "published": "2026-09-10T18:19:17.000Z",
       "firstSeen": "2026-09-10T12:38:24.815Z",
       "bestRank": 2
-    },
-    {
-      "key": "49893507",
-      "id": "49893507",
-      "headline": "Sources: Seahawks' Sam Darnold expected to miss Week 2",
-      "summary": "Sam Darnold has received \"really good news\" regarding his hip injury, coach Mike Macdonald said, but the Seahawks QB is expected to miss next week's game, sources said.",
-      "url": "https://www.espn.com/nfl/story/_/id/49893507/sources-seahawks-sam-darnold-expected-miss-week-2",
-      "sport": "NFL",
-      "published": "2026-09-10T17:56:41.000Z",
-      "firstSeen": "2026-09-10T18:29:59.245Z",
-      "bestRank": 4
     },
     {
       "key": "49893018",
@@ -110,17 +495,6 @@
       "published": "2026-09-10T17:20:51.000Z",
       "firstSeen": "2026-09-10T18:29:59.245Z",
       "bestRank": 2
-    },
-    {
-      "key": "49891922",
-      "id": "49891922",
-      "headline": "Weekend predictions: Can Wrexham get a win? Who wins Manchester derby? Elversberg over Bayern?",
-      "summary": "Arsenal host Chelsea in a heavyweight clash this early in the Premier League, while teams such as PSG and Napoli are on the ropes in their respective title races.",
-      "url": "https://www.espn.com/soccer/story/_/id/49891922/weekend-predictions-wins-manchester-derby-elversberg-stun-bayern",
-      "sport": "Soccer",
-      "published": "2026-09-10T17:20:20.000Z",
-      "firstSeen": "2026-09-10T18:29:59.245Z",
-      "bestRank": 1
     },
     {
       "key": "49891924",
@@ -189,6 +563,17 @@
       "bestRank": 1
     },
     {
+      "key": "49884834",
+      "id": "49884834",
+      "headline": "Ranking the 25 best players in college basketball eligibility limbo",
+      "summary": "Dozens of college basketball rosters are in wait-and-see mode. Here are some of the players with the most at stake.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/49884834/men-college-basketball-eligibility-ncaa-limbo-ranking-top-25",
+      "sport": "College basketball",
+      "published": "2026-09-10T16:32:42.000Z",
+      "firstSeen": "2026-09-10T15:27:19.888Z",
+      "bestRank": 1
+    },
+    {
       "key": "49889093",
       "id": "49889093",
       "headline": "Mauricio Pochettino: Strip Chelsea of 2016-17 Premier League title and award it to Tottenham",
@@ -198,6 +583,17 @@
       "published": "2026-09-10T16:32:20.000Z",
       "firstSeen": "2026-09-10T12:38:24.815Z",
       "bestRank": 5
+    },
+    {
+      "key": "49892754",
+      "id": "49892754",
+      "headline": "FIFA: 2030 World Cup final host country decision to be made 'in due course'",
+      "summary": "FIFA said on Thursday that the decision over whether Morocco or Spain would host the 2030 World Cup final would be made \"in due course.\"",
+      "url": "https://www.espn.com/soccer/story/_/id/49892754/fifa-decision-morocco-vs-spain-host-2030-world-cup-final-made-due-course",
+      "sport": "Soccer",
+      "published": "2026-09-10T16:30:23.000Z",
+      "firstSeen": "2026-09-10T21:22:25.369Z",
+      "bestRank": 1
     },
     {
       "key": "49892988",
@@ -255,15 +651,15 @@
       "bestRank": 6
     },
     {
-      "key": "49804164",
-      "id": "49804164",
-      "headline": "Fantasy football rankings for Week 1: Tight end",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804164/nfl-fantasy-football-rankings-2026-te-tight-end",
-      "sport": "NFL",
-      "published": "2026-09-10T16:05:25.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 8
+      "key": "49892351",
+      "id": "49892351",
+      "headline": "Ex-Purdue star Trey Kaufman-Renn enters portal, sources say",
+      "summary": "Former Purdue star Trey Kaufman-Renn, who was granted a TRO on Wednesday for a sixth season of eligibility, has entered the transfer portal, sources told ESPN.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/49892351/ex-purdue-star-trey-kaufman-renn-enters-portal-sources-say",
+      "sport": "College basketball",
+      "published": "2026-09-10T16:05:10.000Z",
+      "firstSeen": "2026-09-10T18:29:59.245Z",
+      "bestRank": 1
     },
     {
       "key": "49804149",
@@ -275,28 +671,6 @@
       "published": "2026-09-10T16:05:05.000Z",
       "firstSeen": "2026-09-04T15:27:01.167Z",
       "bestRank": 9
-    },
-    {
-      "key": "49804068",
-      "id": "49804068",
-      "headline": "Fantasy football rankings for Week 1: Running back",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804068/nfl-fantasy-football-rankings-2026-rb-running-back",
-      "sport": "NFL",
-      "published": "2026-09-10T16:04:45.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49804022",
-      "id": "49804022",
-      "headline": "Fantasy football rankings for Week 1: Quarterback",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804022/nfl-fantasy-football-rankings-2026-qb-quarterback",
-      "sport": "NFL",
-      "published": "2026-09-10T16:03:44.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 10
     },
     {
       "key": "49880797",
@@ -407,17 +781,6 @@
       "published": "2026-09-10T15:22:45.000Z",
       "firstSeen": "2026-09-07T15:26:30.553Z",
       "bestRank": 2
-    },
-    {
-      "key": "49892351",
-      "id": "49892351",
-      "headline": "Ex-Purdue star Trey Kaufman-Renn enters portal, sources say",
-      "summary": "Former Purdue star Trey Kaufman-Renn, who was granted a TRO on Wednesday for a sixth season of eligibility, has entered the transfer portal, sources told ESPN.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/49892351/ex-purdue-star-trey-kaufman-renn-enters-portal-sources-say",
-      "sport": "College basketball",
-      "published": "2026-09-10T15:20:40.000Z",
-      "firstSeen": "2026-09-10T18:29:59.245Z",
-      "bestRank": 1
     },
     {
       "key": "49826930",
@@ -651,17 +1014,6 @@
       "bestRank": 2
     },
     {
-      "key": "49891979",
-      "id": "49891979",
-      "headline": "How Darnold's potential absence might impact JSN in fantasy",
-      "summary": "How Darnold's potential absence might impact JSN in fantasy",
-      "url": "https://www.espn.com/video/clip/_/id/49891979/how-darnold-potential-absence-impact-jsn-fantasy",
-      "sport": "NFL",
-      "published": "2026-09-10T14:18:14.000Z",
-      "firstSeen": "2026-09-10T15:27:19.888Z",
-      "bestRank": 15
-    },
-    {
       "key": "49891704",
       "id": "49891704",
       "headline": "Why J.J. McCarthy should 'want out' at Minnesota",
@@ -770,17 +1122,6 @@
       "published": "2026-09-10T12:40:40.000Z",
       "firstSeen": "2026-09-10T15:27:19.888Z",
       "bestRank": 22
-    },
-    {
-      "key": "31165089",
-      "id": "31165089",
-      "headline": "Fantasy baseball forecaster: Team hitting ratings",
-      "summary": "Stay ahead of the game and optimize your fantasy baseball hitters with our forecaster, which provides a rolling 10-day outlook of every team's hitting matchups as well as the potential for stolen bases.",
-      "url": "https://www.espn.com/fantasy/baseball/story/_/id/31165089/fantasy-baseball-forecaster-team-hitting-stolen-base-ratings-platoon-matchups-daily-weekly-leagues",
-      "sport": "MLB",
-      "published": "2026-09-10T12:36:17.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
     },
     {
       "key": "4053281",
@@ -893,17 +1234,6 @@
       "bestRank": 1
     },
     {
-      "key": "49881489",
-      "id": "49881489",
-      "headline": "Sources: Ducks waiving Chris Kreider with East move on deck",
-      "summary": "The Ducks are placing Chris Kreider on waivers after the veteran forward expressed a desire to play closer to the East Coast, a source confirmed to ESPN.",
-      "url": "https://www.espn.com/nhl/story/_/id/49881489/source-ducks-waiving-chris-kreider-east-move-deck",
-      "sport": "NHL",
-      "published": "2026-09-10T11:05:33.000Z",
-      "firstSeen": "2026-09-09T18:32:12.007Z",
-      "bestRank": 1
-    },
-    {
       "key": "49882578",
       "id": "49882578",
       "headline": "Alex DeBrincat cool with Dylan Larkin staying with Wings",
@@ -981,17 +1311,6 @@
       "bestRank": 4
     },
     {
-      "key": "49889462",
-      "id": "49889462",
-      "headline": "Transfer rumors, news: Man United, Tottenham eye Club Brugge striker",
-      "summary": "Club Brugge striker Nicolo Tresoldi has emerged as a potential target for both Manchester United and Tottenham. Transfer Talk has the latest.",
-      "url": "https://www.espn.com/soccer/story/_/id/49889462/transfer-rumors-news-man-united-tottenham-eye-club-brugge-striker",
-      "sport": "Soccer",
-      "published": "2026-09-10T10:49:10.000Z",
-      "firstSeen": "2026-09-10T12:38:24.815Z",
-      "bestRank": 1
-    },
-    {
       "key": "49875083",
       "id": "49875083",
       "headline": "Cade Tyson rejoins Minnesota in aim for fifth year",
@@ -1011,17 +1330,6 @@
       "sport": "Soccer",
       "published": "2026-09-10T10:47:16.000Z",
       "firstSeen": "2026-09-08T18:19:53.205Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49884834",
-      "id": "49884834",
-      "headline": "Ranking the 25 best players in college basketball eligibility limbo",
-      "summary": "Dozens of college basketball rosters are in wait-and-see mode. Here are some of the players with the most at stake.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/49884834/men-college-basketball-eligibility-ncaa-limbo-ranking-top-25",
-      "sport": "College basketball",
-      "published": "2026-09-10T10:44:28.000Z",
-      "firstSeen": "2026-09-10T15:27:19.888Z",
       "bestRank": 1
     },
     {
@@ -2251,7 +2559,7 @@
       "headline": "CSC clears $227M+ in NIL deals in July, August in major increase",
       "summary": "The College Sports Commission cleared more than $227 million in NIL deals in July and August, nearly doubling the value of all the deals cleared in its first year of existence.",
       "url": "https://www.espn.com/espn/story/_/id/49882283/csc-clears-227m-nil-deals-july-august-major-increase",
-      "sport": "College football",
+      "sport": "Women's college basketball",
       "published": "2026-09-09T19:03:51.000Z",
       "firstSeen": "2026-09-09T21:23:12.453Z",
       "bestRank": 1
@@ -2386,17 +2694,6 @@
       "sport": "MLB",
       "published": "2026-09-09T17:43:31.000Z",
       "firstSeen": "2026-09-09T18:32:12.007Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49752366",
-      "id": "49752366",
-      "headline": "MLB playoff tracker 2026: Clinching scenarios, bracket, schedule",
-      "summary": "From current playoff matchups to league races to the postseason schedule, we have everything you need to know.",
-      "url": "https://www.espn.com/mlb/story/_/id/49752366/mlb-2026-playoff-tracker-clinch-scenarios-postseason-bracket-schedule",
-      "sport": "MLB",
-      "published": "2026-09-09T17:19:55.000Z",
-      "firstSeen": "2026-09-01T12:38:04.191Z",
       "bestRank": 2
     },
     {
@@ -2966,7 +3263,7 @@
       "headline": "Arena for 76ers, Flyers to open in 2030, marks 'new era'",
       "summary": "The 76ers and Flyers have unveiled renderings of their new fully privately funded arena in South Philadelphia, which is targeted to open before the WNBA season in 2030.",
       "url": "https://www.espn.com/nba/story/_/id/49867971/arena-76ers-flyers-marks-new-era-philadelphia-sports",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-09-09T10:54:09.000Z",
       "firstSeen": "2026-09-08T12:38:17.395Z",
       "bestRank": 1
@@ -14560,7 +14857,7 @@
       "headline": "Judge grants injunction to pro players seeking LSU return",
       "summary": "Dae'Quan Wright and Zxavian Harris are currently cleared to return to college football after brief stints in the NFL, according to a judge's orders issued Thursday evening, setting up a dramatic showdown between the SEC and LSU.",
       "url": "https://www.espn.com/college-football/story/_/id/49807088/judge-grants-injunction-pro-players-seeking-lsu-return",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-04T12:40:04.000Z",
       "firstSeen": "2026-09-04T03:31:23.580Z",
       "bestRank": 1
@@ -15066,7 +15363,7 @@
       "headline": "Caleb Williams, Caleb Wilson and Matas Buzelis start 'PCA!' chant at Cubs game",
       "summary": "Caleb Williams, Caleb Wilson and Matas Buzelis start 'PCA!' chant at Cubs game",
       "url": "https://www.espn.com/video/clip/_/id/49821854/caleb-williams-caleb-wilson-matas-buzelis-start-pca-chant-cubs-game",
-      "sport": "College basketball",
+      "sport": "NBA",
       "published": "2026-09-04T05:10:31.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
       "bestRank": 1
@@ -18179,7 +18476,7 @@
       "headline": "With $6.5 million left on deal, UCLA fires AD Martin Jarmond",
       "summary": "UCLA fired athletic director Martin Jarmond on Monday, with chancellor Julio Frenk explaining in a letter to the UCLA community that the Bruins' athletic program \"currently carries a significant financial deficit, and its current path is not sustainable.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49788304/with-65-million-left-deal-ucla-fires-ad-martin-jarmond",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-02T21:48:43.000Z",
       "firstSeen": "2026-09-01T01:11:44.372Z",
       "bestRank": 1
@@ -18355,7 +18652,7 @@
       "headline": "Russell Westbrook joins board of basketball league Project B",
       "summary": "Recently retired Russell Westbrook has joined new men's and women's basketball league Project B as a co-founder and chief strategy officer.",
       "url": "https://www.espn.com/wnba/story/_/id/49805676/russell-westbrook-joins-board-basketball-league-project-b",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-09-02T19:00:55.000Z",
       "firstSeen": "2026-09-02T21:24:06.000Z",
       "bestRank": 1
@@ -22799,7 +23096,7 @@
       "headline": "Sankey, SEC 'prepared to contest' judge's order in Louisiana",
       "summary": "Though the SEC said it will comply with an order that prohibits commissioner Greg Sankey from punishing schools if they roster a player who returns from a pro contract, the league said in a statement Sunday that it will defend its rights in court.",
       "url": "https://www.espn.com/college-sports/story/_/id/49778057/sankey-sec-prepared-contest-judge-order-louisiana",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-31T12:23:32.000Z",
       "firstSeen": "2026-08-31T01:06:00.592Z",
       "bestRank": 1
@@ -26484,7 +26781,7 @@
       "headline": "ACC joins other Power 4 conferences in banning pros from returning",
       "summary": "The ACC passed a resolution Thursday banning professionals from returning to college in football, plus men's and women's basketball, joining the other Power 4 conferences in setting forth eligibility enforcement.",
       "url": "https://www.espn.com/college-football/story/_/id/49746151/acc-joins-other-power-4-conferences-bans-pros-returning",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-29T11:46:47.000Z",
       "firstSeen": "2026-08-28T03:24:34.178Z",
       "bestRank": 1
@@ -27584,7 +27881,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "College basketball is in chaos over eligibility issues. Here's how we got here, the latest updates and what's next.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-29T00:45:57.000Z",
       "firstSeen": "2026-08-22T21:27:10.267Z",
       "bestRank": 1
@@ -27650,7 +27947,7 @@
       "headline": "Ruling: SEC can't sanction teams using players with NFL ties",
       "summary": "A temporary restraining order prohibits the SEC from enforcing a new rule that threatens stiff penalties for any team that uses a player who previously signed a contract to play in the NFL, NBA or WNBA.",
       "url": "https://www.espn.com/college-football/story/_/id/49753638/ruling-sec-sanction-teams-using-players-nfl-ties",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-28T23:08:04.000Z",
       "firstSeen": "2026-08-29T00:53:26.639Z",
       "bestRank": 2
@@ -31005,7 +31302,7 @@
       "headline": "Big 12 announces ban on all professionals from returning",
       "summary": "The Big 12 has unanimously agreed to ban professionals from returning to Big 12 schools in all sports, the conference announced on Wednesday.",
       "url": "https://www.espn.com/college-football/story/_/id/49735747/big-12-announces-ban-all-professionals-returning",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-27T01:47:48.000Z",
       "firstSeen": "2026-08-27T02:01:23.994Z",
       "bestRank": 1
@@ -31137,7 +31434,7 @@
       "headline": "Sources: SEC to suspend head coaches who add pro players",
       "summary": "SEC schools that bring back NFL, NBA or WNBA players to their programs will face steep discipline under a new policy unanimously approved by the conference's 16 members, sources confirmed to ESPN.",
       "url": "https://www.espn.com/college-football/story/_/id/49734134/sources-sec-suspend-head-coaches-add-pro-players",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-27T00:12:05.000Z",
       "firstSeen": "2026-08-26T22:17:35.293Z",
       "bestRank": 2
@@ -31511,7 +31808,7 @@
       "headline": "Big Ten rewards commissioner Tony Petitti with five-year extension",
       "summary": "The Big Ten and commissioner Tony Petitti agreed to a five-year contract extension that will keep him with the conference through the summer of 2033, the league announced Wednesday.",
       "url": "https://www.espn.com/college-football/story/_/id/49734570/big-ten-rewards-commissioner-tony-petitti-five-year-extension",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-26T21:18:53.000Z",
       "firstSeen": "2026-08-26T22:17:35.293Z",
       "bestRank": 1
@@ -32248,7 +32545,7 @@
       "headline": "SEC draws rule to stop NFL, NBA, WNBA players from returning",
       "summary": "After the Big Ten passed a rule stopping players returning from the NFL from playing at its schools, the SEC followed suit, but took it further, adding basketball in announcing a policy forbidding members from rostering anyone from the NFL, NBA and WNBA.",
       "url": "https://www.espn.com/college-football/story/_/id/49726430/sec-draws-rule-stop-nfl-nba-wnba-players-returning",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-26T10:21:33.000Z",
       "firstSeen": "2026-08-26T03:37:25.782Z",
       "bestRank": 1
@@ -39156,7 +39453,7 @@
       "headline": "Greg Sankey, in filing, speaks out against pros returning to NCAA",
       "summary": "SEC commissioner Greg Sankey asked a judge to uphold NCAA rules that prevent athletes from returning to play in college.",
       "url": "https://www.espn.com/college-sports/story/_/id/49672789/greg-sankey-filing-speaks-pros-returning-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-22T18:27:32.000Z",
       "firstSeen": "2026-08-20T21:27:59.718Z",
       "bestRank": 1
@@ -39178,7 +39475,7 @@
       "headline": "Court halts order, denies extra year of eligibility",
       "summary": "In a legal victory for the NCAA, a federal appeals court has temporarily halted a court order that would have granted thousands of athletes who left college an extra year of eligibility.",
       "url": "https://www.espn.com/college-football/story/_/id/49682102/court-halts-order-denies-extra-year-eligibility",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-22T18:26:52.000Z",
       "firstSeen": "2026-08-21T21:27:41.439Z",
       "bestRank": 1
@@ -42163,325 +42460,6 @@
       "published": "2026-08-20T21:22:30.000Z",
       "firstSeen": "2026-08-20T21:27:59.718Z",
       "bestRank": 3
-    },
-    {
-      "key": "49673878",
-      "id": "49673878",
-      "headline": "Aaron Donald to continue workouts with Rams as decision looms",
-      "summary": "Rams head coach Sean McVay said he anticipates more workouts from Aaron Donald before the defensive tackle decides whether to come out of retirement.",
-      "url": "https://www.espn.com/nfl/story/_/id/49673878/aaron-donald-continue-workouts-rams-decision-looms",
-      "sport": "NFL",
-      "published": "2026-08-20T21:13:05.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49674053",
-      "id": "49674053",
-      "headline": "Is Blake Corum or Kyren Williams a better fantasy draft option?",
-      "summary": "Is Blake Corum or Kyren Williams a better fantasy draft option?",
-      "url": "https://www.espn.com/video/clip/_/id/49674053/is-blake-corum-kyren-williams-better-fantasy-draft-option",
-      "sport": "NFL",
-      "published": "2026-08-20T21:08:01.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49673980",
-      "id": "49673980",
-      "headline": "Why Liza Loza is 'very out' on Bucky Irving in fantasy",
-      "summary": "Why Liza Loza is 'very out' on Bucky Irving in fantasy",
-      "url": "https://www.espn.com/video/clip/_/id/49673980/why-liza-loza-very-bucky-irving-fantasy",
-      "sport": "NFL",
-      "published": "2026-08-20T21:07:41.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49673905",
-      "id": "49673905",
-      "headline": "Atlanta Braves vs. Chicago White Sox: Game Highlights",
-      "summary": "Atlanta Braves vs. Chicago White Sox: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49673905/game-highlights",
-      "sport": "MLB",
-      "published": "2026-08-20T20:57:13.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49673896",
-      "id": "49673896",
-      "headline": "Grant Holmes takes no-hitter into 7th and Riley has 2 RBIs as the Braves top the White Sox 2-0",
-      "summary": "— Grant Holmes took a no-hitter into the seventh inning, Austin Riley doubled and singled to drive in Atlanta's runs, and the Braves topped the Chicago White Sox 2-0 on Thursday to end a three-game slide.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401877087",
-      "sport": "MLB",
-      "published": "2026-08-20T20:50:29.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49673805",
-      "id": "49673805",
-      "headline": "Carrick: Rashford is enjoying his football at Man United",
-      "summary": "Carrick: Rashford is enjoying his football at Man United",
-      "url": "https://www.espn.com/video/clip/_/id/49673805/rashford-enjoying-football-man-united",
-      "sport": "Soccer",
-      "published": "2026-08-20T20:39:57.000Z",
-      "firstSeen": "2026-08-21T00:30:31.138Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49673795",
-      "id": "49673795",
-      "headline": "Blue Jays hit 3 homers to power past Rays 5-1",
-      "summary": "— Kazuma Okamoto, Nathan Lukes and Daz Cameron homered, George Springer drove in two runs and Shane Bieber pitched seven strong innings and the Toronto Blue Jays beat the Tampa Bay Rays 5-1 Thursday.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816604",
-      "sport": "MLB",
-      "published": "2026-08-20T20:36:30.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49673737",
-      "id": "49673737",
-      "headline": "USMNT's Aaronson inks new 3-year deal with Leeds United",
-      "summary": "United States attacker Brenden Aaronson has signed a new three-year contract to stay at Leeds United, the club announced Thursday.",
-      "url": "https://www.espn.com/soccer/story/_/id/49673737/usmnt-aaronson-new-3-year-deal-leeds-united",
-      "sport": "Soccer",
-      "published": "2026-08-20T20:32:55.000Z",
-      "firstSeen": "2026-08-21T00:30:31.138Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49673480",
-      "id": "49673480",
-      "headline": "Ravens center Pinter to miss 'extended time' with leg injury",
-      "summary": "Ravens starting center Danny Pinter is expected to miss \"an extended amount of time\" after injuring his right leg during joint practices with the Vikings, coach Jesse Minter said Thursday.",
-      "url": "https://www.espn.com/nfl/story/_/id/49673480/ravens-center-pinter-miss-extended-leg-injury",
-      "sport": "NFL",
-      "published": "2026-08-20T20:29:59.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49673692",
-      "id": "49673692",
-      "headline": "San Francisco Giants vs. Cleveland Guardians",
-      "summary": "San Francisco Giants vs. Cleveland Guardians",
-      "url": "https://www.espn.com/video/clip/_/id/49673692/san-francisco-giants-vs-cleveland-guardians",
-      "sport": "MLB",
-      "published": "2026-08-20T20:27:05.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49673680",
-      "id": "49673680",
-      "headline": "Cardinals win in dramatic fashion vs. Reds",
-      "summary": "Cardinals win in dramatic fashion vs. Reds",
-      "url": "https://www.espn.com/video/clip/_/id/49673680/cardinals-win-dramatic-fashion-vs-reds",
-      "sport": "MLB",
-      "published": "2026-08-20T20:23:32.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49434399",
-      "id": "49434399",
-      "headline": "2026 Philadelphia Eagles training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Eagles training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49434399/philadelphia-eagles-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-20T20:16:31.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49673504",
-      "id": "49673504",
-      "headline": "Jets owner Woody Johnson buys stake in Aston Martin F1 team",
-      "summary": "New York Jets chairman Woody Johnson has acquired a minority stake in the Aston Martin Aramco Formula 1 racing team and will join the company's board of directors as vice chairman, it was announced Thursday.",
-      "url": "https://www.espn.com/nfl/story/_/id/49673504/jets-owner-woody-johnson-buys-stake-aston-martin-f1-team",
-      "sport": "F1",
-      "published": "2026-08-20T20:16:03.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49673605",
-      "id": "49673605",
-      "headline": "Toronto Blue Jays vs. Tampa Bay Rays: Game Highlight",
-      "summary": "Toronto Blue Jays vs. Tampa Bay Rays: Game Highlight",
-      "url": "https://www.espn.com/video/clip/_/id/49673605/game-highlight",
-      "sport": "MLB",
-      "published": "2026-08-20T20:15:06.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49673629",
-      "id": "49673629",
-      "headline": "Gavin Williams strikes out 11 as Guardians beat Giants 5-2",
-      "summary": "— Gavin Williams struck out 11 over 5 2/3 innings, José Ramírez had an RBI single in the three-run first and the Cleveland Guardians beat the San Francisco Giants 5-2 for their first home series victory in seven weeks on Thursday.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816602",
-      "sport": "MLB",
-      "published": "2026-08-20T20:13:30.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49673611",
-      "id": "49673611",
-      "headline": "Texas' Steve Sarkisian mic'd up: 'You've gotta give all that you have'",
-      "summary": "While mic'd up at the Longhorns' practice, Steve Sarkisian brings the energy while challenging Texas to give everything it has.",
-      "url": "https://www.espn.com/video/clip/_/id/49673611/gotta-give-all-have",
-      "sport": "College football",
-      "published": "2026-08-20T20:07:05.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49670301",
-      "id": "49670301",
-      "headline": "Fantasy baseball lineup advice for Friday: Noah Cameron, Hayden Wesneski among top streamers",
-      "summary": "Everything you need to know to set your fantasy baseball lineups for Friday's MLB action.",
-      "url": "https://www.espn.com/fantasy/baseball/story/_/id/49670301/fantasy-baseball-pitcher-rankings-lineup-advice-tips-mlb-daily-notes-august-21-games",
-      "sport": "MLB",
-      "published": "2026-08-20T19:56:11.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49673062",
-      "id": "49673062",
-      "headline": "Rapoport tells McAfee about the 'renewed focus' he has noticed with the Lions",
-      "summary": "Rapoport tells McAfee about the 'renewed focus' he has noticed with the Lions",
-      "url": "https://www.espn.com/video/clip/_/id/49673062/rapoport-tells-mcafee-renewed-focus-noticed-lions",
-      "sport": "NFL",
-      "published": "2026-08-20T19:44:13.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 14
-    },
-    {
-      "key": "49673017",
-      "id": "49673017",
-      "headline": "'I hate joint practices,' Eagles star Saquon Barkley says",
-      "summary": "Eagles running back Saquon Barkley said he hates back-to-back days of joint practices, adding \"one day is good\" to avoid skirmishes that regularly occur during the sessions.",
-      "url": "https://www.espn.com/nfl/story/_/id/49673017/i-hate-joint-practices-says-eagles-star-saquon-barkley",
-      "sport": "NFL",
-      "published": "2026-08-20T19:40:06.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 15
-    },
-    {
-      "key": "49673211",
-      "id": "49673211",
-      "headline": "Saquon Barkley: 'I hate joint practices'",
-      "summary": "Saquon Barkley: 'I hate joint practices'",
-      "url": "https://www.espn.com/video/clip/_/id/49673211/hate-joint-practices",
-      "sport": "NFL",
-      "published": "2026-08-20T19:39:23.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49672634",
-      "id": "49672634",
-      "headline": "Leon Draisaitl's top moments of the 2025-26 season",
-      "summary": "Leon Draisaitl's top moments of the 2025-26 season",
-      "url": "https://www.espn.com/video/clip/_/id/49672634/leon-draisaitl-top-moments-2025-26-season",
-      "sport": "NHL",
-      "published": "2026-08-20T19:35:43.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49672947",
-      "id": "49672947",
-      "headline": "Ex-Kings trainer files suit alleging pregnancy discrimination",
-      "summary": "A former assistant athletic trainer for the Sacramento Kings has filed a civil lawsuit against the organization and its senior director of athlete health, alleging pregnancy discrimination, sexual harassment, retaliation and wrongful termination.",
-      "url": "https://www.espn.com/nba/story/_/id/49672947/ex-kings-trainer-files-suit-alleging-pregnancy-discrimination",
-      "sport": "NBA",
-      "published": "2026-08-20T19:28:47.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49672143",
-      "id": "49672143",
-      "headline": "Sam LaPorta's status uncertain for Lions' season opener",
-      "summary": "Sam LaPorta's status for the Lions' regular-season opener is unclear after the star tight end suffered a hip injury.",
-      "url": "https://www.espn.com/nfl/story/_/id/49672143/sam-laporta-status-uncertain-lions-season-opener",
-      "sport": "NFL",
-      "published": "2026-08-20T19:19:55.000Z",
-      "firstSeen": "2026-08-20T18:29:37.526Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49659961",
-      "id": "49659961",
-      "headline": "Updated 2026 MLB top 100 prospect rankings: Made, Arias, more",
-      "summary": "Here's who has surged up our list now that the MLB draft and trade season have passed.",
-      "url": "https://www.espn.com/mlb/story/_/id/49659961/2026-mlb-prospect-rankings-update-top-100-jesus-made-franklin-arias-kade-anderson",
-      "sport": "MLB",
-      "published": "2026-08-20T19:07:00.000Z",
-      "firstSeen": "2026-08-20T12:30:09.711Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49672571",
-      "id": "49672571",
-      "headline": "Carlos Alcaraz to return from wrist injury, defend US Open title",
-      "summary": "Carlos Alcaraz, who has been sidelined since April because of a right wrist injury, is ready to return at the US Open to defend his title.",
-      "url": "https://www.espn.com/tennis/story/_/id/49672571/carlos-alcaraz-return-wrist-injury-defend-us-open-title",
-      "sport": "Tennis",
-      "published": "2026-08-20T19:05:13.000Z",
-      "firstSeen": "2026-08-21T00:30:31.138Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49672812",
-      "id": "49672812",
-      "headline": "A.J. Brown, Jalen Hurts reunite briefly amid post-trade rift",
-      "summary": "A.J. Brown and Jalen Hurts caught up for a few minutes after practice Thursday -- a notable development after the Patriots receiver revealed Wednesday that the former teammates had not spoken since he was traded to New England by the Eagles.",
-      "url": "https://www.espn.com/nfl/story/_/id/49672812/aj-brown-jalen-hurts-reunite-briefly-amid-post-trade-rift",
-      "sport": "NFL",
-      "published": "2026-08-20T18:51:23.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 16
-    },
-    {
-      "key": "49649244",
-      "id": "49649244",
-      "headline": "Oklahoma City Thunder offseason recap, early 2026-27 season preview",
-      "summary": "Will weakened depth cost the Thunder in the upcoming season? We're looking at the offseason and previewing the 2026-27 season.",
-      "url": "https://www.espn.com/nba/story/_/id/49649244/oklahoma-city-thunder-offseason-recap-2026-27-season-preview-stats-roster-depth-chart",
-      "sport": "NBA",
-      "published": "2026-08-20T18:43:24.000Z",
-      "firstSeen": "2026-08-20T12:30:09.711Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49671926",
-      "id": "49671926",
-      "headline": "Lakers minority owner Dr. Patrick Soon-Shiong not selling 4% stake",
-      "summary": "One of the Lakers' minority owners, Dr. Patrick Soon-Shiong, has no plans to sell his 4% stake in the team, his attorney told ESPN.",
-      "url": "https://www.espn.com/nba/story/_/id/49671926/lakers-minority-owner-dr-patrick-soon-shiong-not-selling-4-stake",
-      "sport": "NBA",
-      "published": "2026-08-20T18:39:38.000Z",
-      "firstSeen": "2026-08-20T18:29:37.526Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49670621",
-      "id": "49670621",
-      "headline": "Field Yates expecting a big year from Chase Brown in fantasy",
-      "summary": "Field Yates expecting a big year from Chase Brown in fantasy",
-      "url": "https://www.espn.com/video/clip/_/id/49670621/field-yates-expecting-big-year-chase-brown-fantasy",
-      "sport": "NFL",
-      "published": "2026-08-20T18:38:09.000Z",
-      "firstSeen": "2026-08-20T21:27:59.718Z",
-      "bestRank": 37
     }
   ]
 }
