@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-09-12T03:43:37.044Z",
+  "generatedAt": "2026-09-12T06:48:10.344Z",
   "retentionDays": 21,
   "windowStart": "2026-08-22",
   "windowEnd": "2026-09-12",
   "snapshotIntervalHours": 3,
-  "count": 2133,
+  "count": 2139,
   "items": [
     {
       "headline": "Saudi Arabia shuts down a pipeline as Houthis seize an island, opening a new front in the Iran war",
@@ -25,7 +25,37 @@
       "url": "https://www.bbc.co.uk/news/articles/cwyz755yeg9o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-09-11T15:37:59.395Z",
       "top": true,
-      "bestRank": 3
+      "bestRank": 1
+    },
+    {
+      "headline": "Yemen's Houthis capture a Red Sea island in threat to shipping",
+      "date": "2026-09-12",
+      "bucket": "World",
+      "summary": "Iranian-backed Houthi rebels in Yemen have captured a strategic island in the Bab el-Mandeb Strait. The move threatens Saudi oil exports through a key commercial lane. And Saudi Arabia said it shut down a major oil pipeline as a precaution after it came under attack.",
+      "url": "https://www.npr.org/2026/09/12/g-s1-143044/yemens-houthis-capture-red-sea-island",
+      "firstSeen": "2026-09-11T18:41:45.063Z",
+      "top": true,
+      "bestRank": 1
+    },
+    {
+      "headline": "Oil routes in peril as attacks shut Saudi pipeline and Houthis threaten key waterway",
+      "date": "2026-09-12",
+      "bucket": "World",
+      "summary": "Reported by The Washington Post.",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNVpxYjZ0d1VwNVJKVHFhUFVFRXJGNDRobUxmNjJOUFBWQ1R1THRRdlRFbE9oRVRxaHdRTkw4b3hxV2tIcTZSX1ZCUUZ2SGQtQWJ4akhpSGE5S3p6a1RxSXdwNjlVemJFRWlvMzVzZm10RGJWTVNVM2VhVVZkcU1kRDl2UjJBR191WlppV2p1LTlPdk1Ba2lHV0Y4Ykp6YzU1RmRHdEpOQmxIREU?oc=5",
+      "top": true,
+      "bestRank": 1,
+      "firstSeen": "2026-09-11T21:34:25.482Z"
+    },
+    {
+      "headline": "Saudi Arabia shuts key oil pipeline after drone attack launched from Iraq",
+      "date": "2026-09-12",
+      "bucket": "World",
+      "summary": "Iraq removes a military commander and opens investigations into the attack that came from an area bordering Iran.",
+      "url": "https://www.bbc.co.uk/news/articles/c62m933465eo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-11T21:34:25.482Z",
+      "top": true,
+      "bestRank": 1
     },
     {
       "headline": "Iran, Houthis block 2 key global shipping routes, straining the global economy",
@@ -36,6 +66,26 @@
       "top": true,
       "bestRank": 3,
       "firstSeen": "2026-09-10T03:41:58.953Z"
+    },
+    {
+      "headline": "Russia, Trump and a battle over welfare loom over Sweden’s election",
+      "date": "2026-09-12",
+      "bucket": "Politics",
+      "summary": "Reported by BBC.",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14emhTcGlBZkQ1V2tVSWd0T2Jma2xPODQycEV4NVNxYmhuV3BZSU5NVEhiaktfVTJEUURhZk1ObWJmN09kWkRqMkE1LWpLcnFpaFRpODQ5MC1Vdw?oc=5",
+      "top": true,
+      "bestRank": 6,
+      "firstSeen": "2026-09-12T06:48:10.344Z"
+    },
+    {
+      "headline": "Ukraine faces 'toughest winter' since Russia's full-scale invasion, UN official tells BBC",
+      "date": "2026-09-12",
+      "bucket": "Conflict",
+      "summary": "A senior UN official tells the BBC there is a race against the clock to ensure access to power and water through winter.",
+      "url": "https://www.bbc.co.uk/news/articles/cwyz59yyqk4o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-11T18:41:45.063Z",
+      "top": true,
+      "bestRank": 28
     },
     {
       "headline": "Iran-backed Houthi rebels seize strategic Red Sea port in Yemen",
@@ -66,36 +116,6 @@
       "top": true,
       "bestRank": 1,
       "firstSeen": "2026-09-10T09:40:00.422Z"
-    },
-    {
-      "headline": "Houthis claim major advance in Yemen and tighten grip on Red Sea shipping lane",
-      "date": "2026-09-11",
-      "bucket": "World",
-      "summary": "The Iran-backed Houthis are also reported to have seized Perim - a strategic island on the major shipping route.",
-      "url": "https://www.bbc.co.uk/news/articles/c23x72yx2rvo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-11T18:41:45.063Z",
-      "top": true,
-      "bestRank": 1
-    },
-    {
-      "headline": "Gulf oil threatened anew as Houthis reach key island and pipeline is shut down",
-      "date": "2026-09-11",
-      "bucket": "World",
-      "summary": "Reported by Reuters.",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUk9oUjNYejhGeW1YblJUVWdfQ0JaZU52dHNPZUZVdnpMSkxYS3pKTWhLdjU0REdNUGdubUhnRl9KUXZabHRfbEQyOUJZeXUxQzZfcGFlbFV5V1BlSTVmRkhzdGJaNkpQa3p3OG9LZUt3Q3VXYkdrc2ZRWW9fcWQ4TkYxNFgxNFI0dlhIV0UyUU5Dbk44blJMempZVFVqVm5XbUlfV2dqSlN3YXBNUDlUQmVxS3JQMUxQ?oc=5",
-      "top": true,
-      "bestRank": 1,
-      "firstSeen": "2026-09-11T21:34:25.482Z"
-    },
-    {
-      "headline": "Saudi Arabia shuts East-West pipeline that bypasses Hormuz after attacks",
-      "date": "2026-09-11",
-      "bucket": "World",
-      "summary": "Reported by Financial Times.",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNM0Q2VE5CaE1VUFBTRnZ3Z0txSW1GTU9FRDBHSHlkTWZSbmZ3VS01cHRSUjNmQjA2a3ZLSk5pbnhnTE9ENllxQXNiOVBHOGJqVkJ1aDNUS3JoeXpyQTFGZHpmYVJ1Z3AzdkZzU0FsYUJjSHMxdlNuc3hEdjBDcWRJa0F6T0w?oc=5",
-      "top": true,
-      "bestRank": 1,
-      "firstSeen": "2026-09-11T21:34:25.482Z"
     },
     {
       "headline": "Film Screening Fuels East Asian Historical Tensions",
@@ -268,6 +288,16 @@
       "firstSeen": "2026-09-12T01:18:37.140Z"
     },
     {
+      "headline": "Anthropic blocks possible attempt to use AI to make biological weapons",
+      "date": "2026-09-11",
+      "bucket": "World",
+      "summary": "The revelations in Anthropic's threat intelligence report come after a former top researcher at the company warned of the risks of AI to humanity.",
+      "url": "https://www.bbc.co.uk/news/articles/cx2zrrpkx20o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-10T18:40:42.006Z",
+      "top": true,
+      "bestRank": 7
+    },
+    {
       "headline": "Russian Aerial Bomb Hits Izium Wounding Two Residents",
       "date": "2026-09-11",
       "bucket": "World",
@@ -278,14 +308,14 @@
       "firstSeen": "2026-09-11T18:41:45.063Z"
     },
     {
-      "headline": "Anthropic blocks possible attempt to use AI to make biological weapons",
+      "headline": "As Oil Prices Rise, BRICS Leaders Have What U.S. Doesn’t: Iran at the Table",
       "date": "2026-09-11",
       "bucket": "World",
-      "summary": "The revelations in Anthropic's threat intelligence report come after a former top researcher at the company warned of the risks of AI to humanity.",
-      "url": "https://www.bbc.co.uk/news/articles/cx2zrrpkx20o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-10T18:40:42.006Z",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcDNLY0xrWFpCRnVZeEpTWG1PSVJ1elp6Y2dnNDNvSDVBX1VSYWM3ajQ5elRROVFrRHc3Y0czQWlvTVM5alFlN0p5SUp4ZkxXQ3RpMHlvV3BGRjkxZXotZDNKQ0dTQ0l2YzhHWnpadjI3N1RDVHdjZjQ5NHU3VHpfY3JLRms1YXZTRjZTd205Qk1RX055SjJqWWlzYzVXMGFFVDhNZ9IBqgFBVV95cUxPV0pKbVVZQU9WRm1BZ0ZuYllnZXZ5RXdvWmlrY0JxMmtaeEFjV2lERVRsdWNqQ3BUcWdxQ040MDhQRkRUZVF0OGJYTEgxRWZtQXc3dmM5djBuMTkxcUdna2ZtZUlMNzBXaDdTYnlFVjdrSGw2UFh3MWRnRXg3RXlUWlJnbG5oYmd1OThqMHUxdGRYUzJvQVgtbFVYMDAyNHNpOVZnYVZGTk9UQQ?oc=5",
       "top": true,
-      "bestRank": 9
+      "bestRank": 8,
+      "firstSeen": "2026-09-12T06:48:10.344Z"
     },
     {
       "headline": "25 years after 9/11: The al-Qaeda terrorists behind the attacks and where they are now | World News",
@@ -296,6 +326,16 @@
       "top": true,
       "bestRank": 9,
       "firstSeen": "2026-09-12T01:18:37.140Z"
+    },
+    {
+      "headline": "Who Were the 9/11 Hijackers? Full List of the 19 Al-Qaeda Attackers",
+      "date": "2026-09-11",
+      "bucket": "World",
+      "summary": "Reported by Hindustan Times.",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQbzBzVUFZRUQ4dkJEdGl2Nk80WlNlYjdKeERtNjllLTJZU1RmckNIU0d4UDBPTWk0bUdJUFJ2U1dXRFp0MzgyWkd0cGtVUndrak1OcUFSN0ZVSmJXM2NTZFY5eW9FT294VWE2Q250MUlmNkwzNjFWcjcya2ZpWUNfUWFTUFpvMWtuV2ZsV1FxQlNYbFJJYlU3NkV4NEZPWG1YNlNmY0x2cEdYZXdBcm5UZ2lmVnB4UDZySVVUSTNrd0dvVXpKcWhjTnhJd3RxdnB1Nm0xUUZSd1cwUV9KWGJMTlZtZWZSci00cU5peldlMGhpV04xeV8ydkhhZmp3Rzlrc3h5cVVIWHRwZjDSAZACQVVfeXFMUDZ1djFJVngtZVljQnlpUk5SQkVtSW1OMzFLYlhXMThlRGVsRU1Da1lvRzk1cjJheGJnYjViV2l1ZkVqNGdoWTFHVGp1R0hJVzBRVW4wZkVzWnh6enQwcDZ4ZWhrX3o1UXliODBYWGNnOXFiVG9ibk5TUE1SNFU2Nnh2Mnk4NzFaTVJGcmQ3bHQzY2tHZ2RLQVlwSFpNN0owR2VuTWF3NC1XTWhXdTd5Umk0MVhLMEtfd1BZZ2p4azd6T3pFODY5QzRfajVwN21qdlhxTlhZX0lQQ3dGUnJjR1o2RE9Ed0Y1RW42UWFyZ0hycnBQUFRtMmpiTng2aDVMenlqSWpIV1dQQV9rNUR3bnY?oc=5",
+      "top": true,
+      "bestRank": 10,
+      "firstSeen": "2026-09-12T06:48:10.344Z"
     },
     {
       "headline": "Osama Bin Laden Won",
@@ -388,6 +428,16 @@
       "firstSeen": "2026-09-12T03:43:37.044Z"
     },
     {
+      "headline": "4 Contemporary Artists Inspired by the Bayeux Tapestry",
+      "date": "2026-09-11",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQRXpjZHdqTm54SjRjMzRobVNWcXNSTENQcEFCVHlYb05Pb0FzZzN6Skl4eXAxc0FlMHNaN2xnNmsyQ2pJS2RncmxfaUFvNW5RSFlqTFRTWXRBelllMkVFbDJobXJ0dTE3aXVoU0V0V1lFYkZEU1dTbDlGb3BsTGFPVGlpYkRjVVFmTXc?oc=5",
+      "top": true,
+      "bestRank": 17,
+      "firstSeen": "2026-09-12T01:18:37.140Z"
+    },
+    {
       "headline": "Five dead and dozens injured in coach crash in Swiss Alps",
       "date": "2026-09-11",
       "bucket": "World",
@@ -406,6 +456,16 @@
       "top": true,
       "bestRank": 18,
       "firstSeen": "2026-09-11T18:41:45.063Z"
+    },
+    {
+      "headline": "Kids’ Test Scores Hit Record Lows—One Change at Home Stood Out",
+      "date": "2026-09-11",
+      "bucket": "World",
+      "summary": "Reported by Newsweek.",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQ2tZMlo5cUZ0R1FrdEtmUno1MmFYdWJiOW5oOUFHTGNxMEpGNlY1LVdUVGhHaHh0alRuUmVpTkRoNGdoTW5UdHRmS2FGVUJMRW51MXk5Z185ZUZydE1jY3BIUV9fSnBTVXFZdlVCTjdCaGRHdVhOWjdrczNXY2xScFhVTVFqZFR4QTlOOUlGZGdRQQ?oc=5",
+      "top": true,
+      "bestRank": 18,
+      "firstSeen": "2026-09-12T03:43:37.044Z"
     },
     {
       "headline": "Trump administration offers rare muted response on new sanctions against Israel",
@@ -428,23 +488,13 @@
       "firstSeen": "2026-09-11T21:34:25.482Z"
     },
     {
-      "headline": "4 Contemporary Artists Inspired by the Bayeux Tapestry",
-      "date": "2026-09-11",
-      "bucket": "World",
-      "summary": "Reported by The New York Times.",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQRXpjZHdqTm54SjRjMzRobVNWcXNSTENQcEFCVHlYb05Pb0FzZzN6Skl4eXAxc0FlMHNaN2xnNmsyQ2pJS2RncmxfaUFvNW5RSFlqTFRTWXRBelllMkVFbDJobXJ0dTE3aXVoU0V0V1lFYkZEU1dTbDlGb3BsTGFPVGlpYkRjVVFmTXc?oc=5",
-      "top": true,
-      "bestRank": 21,
-      "firstSeen": "2026-09-12T01:18:37.140Z"
-    },
-    {
       "headline": "Brazil election challenger Bolsonaro under investigation over alleged corruption in Banco Master case",
       "date": "2026-09-11",
       "bucket": "Politics",
       "summary": "Reported by Reuters.",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOaFFPLU1nTmZ4YVltTnMwSmhpNE1fVHFGZ0puQlY0XzJkUWNER252RjhzNkFMczFoNFk5M3gtalBkRGcwTklDVUN0alZMWngzZVZVX2wtYTl5Rl80eDlKaDlncHhnM1p0Y251RFJnbm1MOHlteHpTRy1pd2ZaSnVaMVd1T3JPYjdRVFp4S0xldG9DYTRpcGNVVkJ5TVhSR2RBR3BneXNqZVdOdy01ZGxtWU9VbnN6TEhLTUxwdEJGYw?oc=5",
       "top": true,
-      "bestRank": 21,
+      "bestRank": 20,
       "firstSeen": "2026-09-11T21:34:25.482Z"
     },
     {
@@ -456,16 +506,6 @@
       "top": true,
       "bestRank": 23,
       "firstSeen": "2026-09-11T15:37:59.395Z"
-    },
-    {
-      "headline": "Kids’ Test Scores Hit Record Lows—One Change at Home Stood Out",
-      "date": "2026-09-11",
-      "bucket": "World",
-      "summary": "Reported by Newsweek.",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQ2tZMlo5cUZ0R1FrdEtmUno1MmFYdWJiOW5oOUFHTGNxMEpGNlY1LVdUVGhHaHh0alRuUmVpTkRoNGdoTW5UdHRmS2FGVUJMRW51MXk5Z185ZUZydE1jY3BIUV9fSnBTVXFZdlVCTjdCaGRHdVhOWjdrczNXY2xScFhVTVFqZFR4QTlOOUlGZGdRQQ?oc=5",
-      "top": true,
-      "bestRank": 24,
-      "firstSeen": "2026-09-12T03:43:37.044Z"
     },
     {
       "headline": "Trump's Iran campaign echoes the post-9/11 'forever wars'",
@@ -518,14 +558,14 @@
       "firstSeen": "2026-09-10T01:09:20.885Z"
     },
     {
-      "headline": "Ukraine’s Drone Revolution Faces Its Toughest Test—And It Isn’t Russia",
+      "headline": "Modi, Putin seek stronger ties as Russia calls for BRICS to counter West",
       "date": "2026-09-11",
       "bucket": "World",
-      "summary": "Reported by Reuters.",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaW1nSnhZc3pjdUh3XzE1QkZvVU11YTZPa3hhbndTNkExa2Z1cnhKbXBNZlR0VlVFdGplNks4a1dILWswa2QyNUNfQjJVUFV1UmdSbmwyR1pzVFlOSmxQdV9ZczROOTA4aWhRQUFzc2tocS15czZ6RmpZbF9UbG9kbUMtYlFDVHBlY1dzUzBLWTc2UGt1eGZjRXp1NFFIck83Yk01RmRSTjQ5cGs2NFdYdC1mQ256QQ?oc=5",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONVhhbmM4LVZQN3NtYWZ2a2J5TWpJcmNvUFpQWWp6cG8tbG9Nem5DTWtQdWs0RjFldEhmX0NUYjI0bXVia2lyY2RzYkdCUWdKMVE0YnZSOUJsZml5Z2RiQW5IR1gweE9HczZkc3diQXhqQTRpeDdfNEUxRThTWmtqVWN3ampxX1JOanBrNzFONG5CNEdYRHlHNldIcE01ODVPdjNhVw?oc=5",
       "top": true,
       "bestRank": 28,
-      "firstSeen": "2026-09-11T18:41:45.063Z"
+      "firstSeen": "2026-09-12T06:48:10.344Z"
     },
     {
       "headline": "Trump should remove the Iran War’s most dangerous tripwire",
@@ -546,6 +586,16 @@
       "top": true,
       "bestRank": 33,
       "firstSeen": "2026-09-12T01:18:37.140Z"
+    },
+    {
+      "headline": "Passenger train derails in France leaving at least 44 injured",
+      "date": "2026-09-11",
+      "bucket": "World",
+      "summary": "France's transport minister says 180 passengers were on board the train operating the Rouen-Caen route in Normandy.",
+      "url": "https://www.bbc.co.uk/news/articles/c8d37dm8d8mo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-12T01:18:37.140Z",
+      "top": true,
+      "bestRank": 34
     },
     {
       "headline": "Archaeologist claims secret ‘code’ hidden in Great Pyramid may reveal ancient wonder’s true purpose",
@@ -608,14 +658,14 @@
       "firstSeen": "2026-09-12T01:18:37.140Z"
     },
     {
-      "headline": "Passenger train derails in France leaving at least 44 injured",
+      "headline": "Denise, daughter of mafia witness Lea Garofalo, takes her own life",
       "date": "2026-09-11",
       "bucket": "World",
-      "summary": "France's transport minister says 180 passengers were on board the train operating the Rouen-Caen route in Normandy.",
-      "url": "https://www.bbc.co.uk/news/articles/c8d37dm8d8mo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-12T01:18:37.140Z",
+      "summary": "Reported by BBC.",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB4TnZON3BTOEdZd2Q5aVYtX3E3dEhWV01jMVZRMnhoRDJKRjFDLTFrM3RBSy1QdVNmekFlaGtJODFwQkl4a18tSXVodG5PaE41RXY1SWtac1NBZw?oc=5",
       "top": true,
-      "bestRank": 40
+      "bestRank": 41,
+      "firstSeen": "2026-09-12T06:48:10.344Z"
     },
     {
       "headline": "'Islam is being hijacked': Brother of Muslim first responder killed in 9/11",
@@ -814,16 +864,6 @@
       "top": true,
       "bestRank": 1,
       "firstSeen": "2026-09-10T03:41:58.953Z"
-    },
-    {
-      "headline": "Five dead and 86 missing as 'heartbreaking' fire breaks out on Philippines ferry",
-      "date": "2026-09-10",
-      "bucket": "World",
-      "summary": "The fire broke out as the vessel nearing its destination at the tourist hotspot of Coron in Palawan.",
-      "url": "https://www.bbc.co.uk/news/articles/cy4zd4dn9n9o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-10T03:41:58.953Z",
-      "top": true,
-      "bestRank": 1
     },
     {
       "headline": "Iran war live: Houthis advance near Red Sea coast threatening Bab al-Mandeb",
@@ -1152,7 +1192,7 @@
       "summary": "Reported by Reuters.",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQ203a2pwbUU5aVVPVUtBUHB4dWRXa2YtM2pYZzMtVWU3SXJqZUNZTmtrTWt6dmFsMm82YzJzUERqeExQYzVhXzl4REJpRk54SEZIblVEckJ5M0pVWHhUdDNUUTZiNzdyUlc3b0h2SjBhZFFQRk5pOTlCZlYzeTJkeXhkQURpbnB6Z1JfcFB5bl9walRKZUdfekNPaGVETHc0aTFfb3pZdlBZaXB1SkRSSjFLaUp3aTBXeXgybWFR?oc=5",
       "top": true,
-      "bestRank": 16,
+      "bestRank": 15,
       "firstSeen": "2026-09-11T15:37:59.395Z"
     },
     {
@@ -1266,6 +1306,16 @@
       "firstSeen": "2026-09-11T12:47:52.033Z"
     },
     {
+      "headline": "China’s drone supremacy shows in airlifting bodies and food after Nepal flood disaster",
+      "date": "2026-09-10",
+      "bucket": "Disaster",
+      "summary": "Reported by arstechnica.com.",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUDM5UzhiTHNuNTBGSDJUenVlOXBPMG5EVThNVjZZTTBQQW1ka1Z2NmlncE0wUWxTaWptSEpmUzJNSGdVUjVNbFBsem82UnZ6c2VwT2dMN3F4Vk44VUROM3FKeU15dkx3bDlOYWRnVnllZDhPSlY2NWRLWlplcEROS1dvQndITTNucEFLQ05zMVRWODFtLXA4U2x6NXh1RmtxeEhtLVZVaXRoQQ?oc=5",
+      "top": true,
+      "bestRank": 22,
+      "firstSeen": "2026-09-12T03:43:37.044Z"
+    },
+    {
       "headline": "What's happened to al Qaeda in the 25 years since 9/11?",
       "date": "2026-09-10",
       "bucket": "World",
@@ -1346,14 +1396,14 @@
       "firstSeen": "2026-09-11T18:41:45.063Z"
     },
     {
-      "headline": "China’s drone supremacy shows in airlifting bodies and food after Nepal flood disaster",
+      "headline": "The Orwellian machinery critics are desperate to protect is the algorithms, not laws that seek to reduce harm | Ed Coper",
       "date": "2026-09-10",
-      "bucket": "Disaster",
-      "summary": "Reported by arstechnica.com.",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUDM5UzhiTHNuNTBGSDJUenVlOXBPMG5EVThNVjZZTTBQQW1ka1Z2NmlncE0wUWxTaWptSEpmUzJNSGdVUjVNbFBsem82UnZ6c2VwT2dMN3F4Vk44VUROM3FKeU15dkx3bDlOYWRnVnllZDhPSlY2NWRLWlplcEROS1dvQndITTNucEFLQ05zMVRWODFtLXA4U2x6NXh1RmtxeEhtLVZVaXRoQQ?oc=5",
+      "bucket": "World",
+      "summary": "Reported by The Next Web.",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRU5SOEV2aTEwc0M1MWM3Vm1XNjNxODlpZl8zek40d2ZkeTB0eTJJZWswUy1hNk5RU0E1WDVjV2pBbXZ6YjJycEdPNnJseWVpRVBiSlh5VlkyYTh4MGh2eENLYWJhcVJMMnlWR0xtajYzYVZma2FBb1RBLS1qNkJpZGtpcDdzNW1Ua0k5Vw?oc=5",
       "top": true,
       "bestRank": 25,
-      "firstSeen": "2026-09-12T03:43:37.044Z"
+      "firstSeen": "2026-09-12T06:48:10.344Z"
     },
     {
       "headline": "Osama bin Laden Called His Mother to Say He Wouldn’t Be Able to Get in Touch",
@@ -1466,6 +1516,16 @@
       "firstSeen": "2026-09-11T18:41:45.063Z"
     },
     {
+      "headline": "Russian troops gifted dead prince’s hand in bizarre bid to boost morale as Kremlin suffers mass casualties",
+      "date": "2026-09-10",
+      "bucket": "Conflict",
+      "summary": "Reported by New York Post.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPOEU3cGs1Q1FweUtBSlNIWmE5cldiOEg0X0ZSbFVVOXBidUVpWFktVFM3eEQ2d1VtZWVfc1paT0xSaDRJSW00TXJXRFF1aWRNaDJyWWxWTWdVblJjT1lBRjZYZ1hPLURmaHo1UkZsbFlPUXVIOTdHR2ZJeGpDWW1tcEZOYUFYdjIwMWpqeGJIcWRxV1FxVDdXYzdianhzUQ?oc=5",
+      "top": true,
+      "bestRank": 36,
+      "firstSeen": "2026-09-12T06:48:10.344Z"
+    },
+    {
       "headline": "Trump accuses Iran of meddling in midterms as wave of missiles targets U.S. base in Jordan",
       "date": "2026-09-10",
       "bucket": "World",
@@ -1484,6 +1544,16 @@
       "top": true,
       "bestRank": 37,
       "firstSeen": "2026-09-11T01:08:37.927Z"
+    },
+    {
+      "headline": "Hillary Clinton: U.S. should take a ‘very tough position’ with Israel if Netanyahu reelected",
+      "date": "2026-09-10",
+      "bucket": "World",
+      "summary": "Reported by The Times of Israel.",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaU5tYzdXaGRjcVREVlV5cEJXRXEycHNqdzh4WmprdmZ3SmxZeE9NRXZQaExzMGtSNWZHQnFDdFVvMHR2OXpuZ0tJcnJGb3ZTbkZ1NEdTT3JCdEVHZW9FSi1CX2NBcGVUVlVBRUdHMWVfN3lhQ0xNODFYMllqMHZKQWxaU0dJamd3VkFmYkRUSmNCRG1aUGhFV3FTWmV5b3FqODBTRnM3b29yUkdCSzJYY3h5ai1XbXPSAbwBQVVfeXFMTzVLa0pFUnY4NVBMRmNaSnJMUWZBRERUOXpJVnJqOHBDcDRNUmpMNkhNeDlfcXRxZUI0aVFwbkNfQ0hob01Nak9MaFRLazZUNlRqNHJvTkZ0dWZMd0xBX3J2aXctY1VNZ3FubmpkNFZsMy1tTkFiWl9LV3d4ZTZpbmZjVlNBRHBkcGNYUmRMeGpaZERkVk9lSThLZExhOUIwbHZlcTZxRVB4UDhPaHktMm1rZmVBLTdKYWVNelM?oc=5",
+      "top": true,
+      "bestRank": 37,
+      "firstSeen": "2026-09-12T03:43:37.044Z"
     },
     {
       "headline": "E-bike crime crackdown leads to 187 arrests in Westminister",
@@ -1524,16 +1594,6 @@
       "top": true,
       "bestRank": 40,
       "firstSeen": "2026-09-10T12:48:30.754Z"
-    },
-    {
-      "headline": "Hillary Clinton: U.S. should take a ‘very tough position’ with Israel if Netanyahu reelected",
-      "date": "2026-09-10",
-      "bucket": "World",
-      "summary": "Reported by The Times of Israel.",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaU5tYzdXaGRjcVREVlV5cEJXRXEycHNqdzh4WmprdmZ3SmxZeE9NRXZQaExzMGtSNWZHQnFDdFVvMHR2OXpuZ0tJcnJGb3ZTbkZ1NEdTT3JCdEVHZW9FSi1CX2NBcGVUVlVBRUdHMWVfN3lhQ0xNODFYMllqMHZKQWxaU0dJamd3VkFmYkRUSmNCRG1aUGhFV3FTWmV5b3FqODBTRnM3b29yUkdCSzJYY3h5ai1XbXPSAbwBQVVfeXFMTzVLa0pFUnY4NVBMRmNaSnJMUWZBRERUOXpJVnJqOHBDcDRNUmpMNkhNeDlfcXRxZUI0aVFwbkNfQ0hob01Nak9MaFRLazZUNlRqNHJvTkZ0dWZMd0xBX3J2aXctY1VNZ3FubmpkNFZsMy1tTkFiWl9LV3d4ZTZpbmZjVlNBRHBkcGNYUmRMeGpaZERkVk9lSThLZExhOUIwbHZlcTZxRVB4UDhPaHktMm1rZmVBLTdKYWVNelM?oc=5",
-      "top": true,
-      "bestRank": 41,
-      "firstSeen": "2026-09-12T03:43:37.044Z"
     },
     {
       "headline": "'People were trampling me': Philippine ferry fire survivor recalls narrow escape",
@@ -1606,6 +1666,16 @@
       "bestRank": null
     },
     {
+      "headline": "'I'll never trust them again': Some Afghans who helped the U.S. post-9/11 regret it",
+      "date": "2026-09-10",
+      "bucket": "Conflict",
+      "summary": "Soon after the Sept. 11 attacks, the U.S. launched what would become a 20-year war in Afghanistan. Some Afghans who helped the U.S. prosecute that war regret it.",
+      "url": "https://www.npr.org/2026/09/10/nx-s1-5958661/ill-never-trust-them-again-some-afghans-who-helped-the-u-s-post-9-11-regret-it",
+      "firstSeen": "2026-09-10T09:40:00.422Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
       "headline": "Amid war and sanctions, unemployment worsens in Iran",
       "date": "2026-09-10",
       "bucket": "Conflict",
@@ -1661,16 +1731,6 @@
       "bucket": "Conflict",
       "summary": "NPR accompanies UN peacekeepers behind Israeli lines as Israel expands its occupation of South Lebanon following a U.S.-brokered ceasefire.",
       "url": "https://www.npr.org/2026/09/10/nx-s1-5962860/un-peacekeepers-give-npr-a-rare-look-behind-israeli-lines",
-      "firstSeen": "2026-09-10T09:40:00.422Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "'I'll never trust them again': Some Afghans who helped the U.S. post-9/11 regret it",
-      "date": "2026-09-10",
-      "bucket": "Conflict",
-      "summary": "Soon after the Sept. 11 attacks, the U.S. launched what would become a 20-year war in Afghanistan. Some Afghans who helped the U.S. prosecute that war regret it.",
-      "url": "https://www.npr.org/2026/09/10/nx-s1-5958661/ill-never-trust-them-again-some-afghans-who-helped-the-u-s-post-9-11-regret-it",
       "firstSeen": "2026-09-10T09:40:00.422Z",
       "top": false,
       "bestRank": null
