@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-13T06:42:32.364Z",
+  "generatedAt": "2026-09-13T09:55:02.282Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-23T06:42:32.364Z",
-  "windowEnd": "2026-09-13T06:42:32.364Z",
+  "windowStart": "2026-08-23T09:55:02.282Z",
+  "windowEnd": "2026-09-13T09:55:02.282Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,18 +21,172 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4026,
+  "count": 4042,
   "items": [
     {
-      "key": "49897578",
-      "id": "49897578",
-      "headline": "Projecting the College Football Playoff top 12 after Week 2",
-      "summary": "We assess how the selection committee could stack the top teams in the country after Week 2.",
-      "url": "https://www.espn.com/college-football/story/_/id/49897578/projecting-2026-college-football-playoff-top-12-week-2",
-      "sport": "College football",
-      "published": "2026-09-13T05:54:32.000Z",
-      "firstSeen": "2026-09-13T06:42:32.364Z",
+      "key": "49894830",
+      "id": "49894830",
+      "headline": "Premier League live updates: Coventry host Brighton ahead of Manchester derby",
+      "summary": "Coventry City will look for their first win of the season as they take on Brighton & Hove Albion on a Sunday full of matches across Europe.",
+      "url": "https://www.espn.com/soccer/story/_/id/49894830/premier-league-europe-soccer-live-updates-coventry-city-brighton-manchester-united-manchester-city-barcelona-bayern-munich",
+      "sport": "Soccer",
+      "published": "2026-09-13T08:39:55.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
       "bestRank": 1
+    },
+    {
+      "key": "49925331",
+      "id": "49925331",
+      "headline": "Transfer rumors, news: Chelsea to return for Roma star Koné",
+      "summary": "Chelsea are ready to reignite their interest in AS Roma midfielder Manu Koné. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/49925331/transfer-rumors-news-chelsea-return-roma-star-manu-kone",
+      "sport": "Soccer",
+      "published": "2026-09-13T08:23:12.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49920927",
+      "id": "49920927",
+      "headline": "Source: Jaguars, Parker Washington unlikely to agree to deal",
+      "summary": "The Jaguars and Parker Washington are unlikely to agree to a contract extension before the start of the season, a source told NFL Network.",
+      "url": "https://www.espn.com/nfl/story/_/id/49920927/source-jaguars-parker-washington-unlikely-agree-deal",
+      "sport": "NFL",
+      "published": "2026-09-13T08:11:42.000Z",
+      "firstSeen": "2026-09-13T01:06:12.777Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49925313",
+      "id": "49925313",
+      "headline": "Red Sox play the Royals with series tied 1-1",
+      "summary": "Kansas City Royals (66-83, fifth in the AL Central) vs. Boston Red Sox (81-68, third in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816922",
+      "sport": "MLB",
+      "published": "2026-09-13T08:03:01.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49925312",
+      "id": "49925312",
+      "headline": "Blue Jays and Orioles meet to determine series winner",
+      "summary": "Baltimore Orioles (72-77, fifth in the AL East) vs. Toronto Blue Jays (74-75, fourth in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816919",
+      "sport": "MLB",
+      "published": "2026-09-13T08:02:58.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49925311",
+      "id": "49925311",
+      "headline": "Wilson leads Mariners against the Athletics after 5-hit outing",
+      "summary": "Seattle Mariners (70-79, third in the AL West) vs. Athletics (60-89, fourth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816931",
+      "sport": "MLB",
+      "published": "2026-09-13T08:02:54.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49925310",
+      "id": "49925310",
+      "headline": "Bogaerts leads Padres against the Giants following 4-hit game",
+      "summary": "San Diego Padres (80-68, second in the NL West) vs. San Francisco Giants (62-87, fourth in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816930",
+      "sport": "MLB",
+      "published": "2026-09-13T08:02:50.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49925309",
+      "id": "49925309",
+      "headline": "Nationals look to sweep 3-game series against the Angels",
+      "summary": "Los Angeles Angels (56-92, fifth in the AL West) vs. Washington Nationals (69-81, fifth in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816918",
+      "sport": "MLB",
+      "published": "2026-09-13T08:02:47.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49925308",
+      "id": "49925308",
+      "headline": "Twins and Guardians play to determine series winner",
+      "summary": "Cleveland Guardians (75-74, second in the AL Central) vs. Minnesota Twins (70-78, third in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816928",
+      "sport": "MLB",
+      "published": "2026-09-13T08:02:43.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49925307",
+      "id": "49925307",
+      "headline": "Mitchell leads Brewers against the Reds after 4-hit game",
+      "summary": "Cincinnati Reds (69-79, fifth in the NL Central) vs. Milwaukee Brewers (93-56, first in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816927",
+      "sport": "MLB",
+      "published": "2026-09-13T08:02:40.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49925306",
+      "id": "49925306",
+      "headline": "Yankees and Mets play, winner claims 3-game series",
+      "summary": "New York Mets (69-79, fourth in the NL East) vs. New York Yankees (85-63, second in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816924",
+      "sport": "MLB",
+      "published": "2026-09-13T08:02:36.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49925305",
+      "id": "49925305",
+      "headline": "Rockies bring road skid into matchup with the Tigers",
+      "summary": "Colorado Rockies (55-93, fifth in the NL West) vs. Detroit Tigers (69-79, fourth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816920",
+      "sport": "MLB",
+      "published": "2026-09-13T08:02:33.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49925304",
+      "id": "49925304",
+      "headline": "Cubs look to keep home win streak alive, host the Pirates",
+      "summary": "Pittsburgh Pirates (74-75, third in the NL Central) vs. Chicago Cubs (83-66, second in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816929",
+      "sport": "MLB",
+      "published": "2026-09-13T08:02:29.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49925264",
+      "id": "49925264",
+      "headline": "'Has the talent to be All-Star this year': Jefferson on Ben Simmons return to NBA",
+      "summary": "Richard Jefferson gives his perspective on Ben Simmons return to the NBA with the Sacramento Kings",
+      "url": "https://www.espn.com/video/clip/_/id/49925264/jefferson-ben-simmons-return-nba",
+      "sport": "NBA",
+      "published": "2026-09-13T07:48:54.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49925238",
+      "id": "49925238",
+      "headline": "Jefferson believes Bogut is going to be 'outstanding' coach",
+      "summary": "Richard Jefferson reflects on being teammates with Aussie great Andrew Bogut, his future as a coach, and his infamous injury in Cleveland",
+      "url": "https://www.espn.com/video/clip/_/id/49925238/jefferson-believes-bogut-going-outstanding-coach",
+      "sport": "NBA",
+      "published": "2026-09-13T07:45:15.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 2
     },
     {
       "key": "49918219",
@@ -41,9 +195,174 @@
       "summary": "Bounce-back performances from Texas, Michigan and Oklahoma State lead the way in Week 2.",
       "url": "https://www.espn.com/college-football/story/_/page/gamedayfinal091226/2026-college-football-week-2-highlights-top-plays-games-takeaways",
       "sport": "College football",
-      "published": "2026-09-13T05:53:58.000Z",
+      "published": "2026-09-13T07:43:53.000Z",
       "firstSeen": "2026-09-13T06:42:32.364Z",
       "bestRank": 18
+    },
+    {
+      "key": "49897578",
+      "id": "49897578",
+      "headline": "Projecting the College Football Playoff top 12 after Week 2",
+      "summary": "We assess how the selection committee could stack the top teams in the country after Week 2.",
+      "url": "https://www.espn.com/college-football/story/_/id/49897578/projecting-2026-college-football-playoff-top-12-week-2",
+      "sport": "College football",
+      "published": "2026-09-13T07:41:21.000Z",
+      "firstSeen": "2026-09-13T06:42:32.364Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49925234",
+      "id": "49925234",
+      "headline": "Rice's 2 rushing TDs help Hawaii beat New Mexico State 29-19",
+      "summary": "— DeVon Rice had two rushing touchdowns, Tama Uiliata had 10 receptions for 107 yards and threw a 7-yard touchdown pass to cap the scoring, and Hawaii beat New Mexico State 29-19 on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401864578",
+      "sport": "College football",
+      "published": "2026-09-13T07:40:38.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49703019",
+      "id": "49703019",
+      "headline": "Premier League VAR review: Was Sunderland's penalty legit vs. Arsenal?",
+      "summary": "VAR often causes Premier League controversy, but how are decisions made and are they correct? Our resident ref, Andy Davies, explains all.",
+      "url": "https://www.espn.com/soccer/story/_/id/49703019/premier-league-var-review-red-card-penalty-handball-goal-line-technology",
+      "sport": "Soccer",
+      "published": "2026-09-13T07:32:42.000Z",
+      "firstSeen": "2026-08-23T21:27:03.617Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49924644",
+      "id": "49924644",
+      "headline": "Dampier accounts for 4 touchdowns as No. 20 Utah dominates Arkansas",
+      "summary": "— Devon Dampier threw for two touchdowns and ran for two more, Wayshawn Parker added three scores and No. 20 Utah overpowered Arkansas 43-10 on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401856670",
+      "sport": "College football",
+      "published": "2026-09-13T07:09:29.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49924888",
+      "id": "49924888",
+      "headline": "Arkansas Razorbacks vs. Utah Utes: Full Highlights",
+      "summary": "Arkansas Razorbacks vs. Utah Utes: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49924888/full-highlights",
+      "sport": "College football",
+      "published": "2026-09-13T06:45:45.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49924869",
+      "id": "49924869",
+      "headline": "Montana State Bobcats vs. Nevada Wolf Pack: Full Highlights",
+      "summary": "Montana State Bobcats vs. Nevada Wolf Pack: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49924869/full-highlights",
+      "sport": "College football",
+      "published": "2026-09-13T06:42:17.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49924863",
+      "id": "49924863",
+      "headline": "Louisiana Ragin' Cajuns vs. USC Trojans: Full Highlights",
+      "summary": "Louisiana Ragin' Cajuns vs. USC Trojans: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49924863/full-highlights",
+      "sport": "College football",
+      "published": "2026-09-13T06:39:36.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49924802",
+      "id": "49924802",
+      "headline": "FCS champion Montana State wins 17th straight game, knocking off Nevada 20-7",
+      "summary": "— Justin Lamson threw a touchdown pass and Adam Jones ran for another in the first half for Montana State, and the Bobcats beat Nevada 20-7 on Saturday night to extend their program-best winning streak to 17 games.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401864500",
+      "sport": "College football",
+      "published": "2026-09-13T06:34:29.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49924763",
+      "id": "49924763",
+      "headline": "Louisiana Ragin' Cajuns vs. USC Trojans: Full Highlights",
+      "summary": "Louisiana Ragin' Cajuns vs. USC Trojans: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49924763/full-highlights",
+      "sport": "College football",
+      "published": "2026-09-13T06:31:39.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49924752",
+      "id": "49924752",
+      "headline": "Mandal helps Fresno State unload on Sacramento State in 49-3 win",
+      "summary": "— Jayden Mandal threw for two touchdowns and Bryson Donelson ran for three scores and Fresno State scored 32-second quarter points en route to a 49-3 win over Sacramento State on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401860883",
+      "sport": "College football",
+      "published": "2026-09-13T06:29:34.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49924736",
+      "id": "49924736",
+      "headline": "North Dakota St. beats Air Force 38-32, win first Mountain West Conference game",
+      "summary": "— Nathan Hayes threw two touchdown passes and scored on a 17-yard run, and North Dakota State beat Air Force 38-32 on Saturday night in the Bison's first Mountain West Conference game.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401864502",
+      "sport": "College football",
+      "published": "2026-09-13T06:25:30.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49924723",
+      "id": "49924723",
+      "headline": "North Dakota Fighting Hawks vs. Portland State Vikings: Full Highlights",
+      "summary": "North Dakota Fighting Hawks vs. Portland State Vikings: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49924723/full-highlights",
+      "sport": "College football",
+      "published": "2026-09-13T06:20:38.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49924594",
+      "id": "49924594",
+      "headline": "Fresno State's rushing TD pads their lead",
+      "summary": "Fresno State's rushing TD pads their lead",
+      "url": "https://www.espn.com/video/clip/_/id/49924594/fresno-state-rushing-td-pads-their-lead",
+      "sport": "College football",
+      "published": "2026-09-13T06:16:23.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49924658",
+      "id": "49924658",
+      "headline": "Arkansas Razorbacks vs. Utah Utes: Full Highlights",
+      "summary": "Arkansas Razorbacks vs. Utah Utes: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49924658/full-highlights",
+      "sport": "College football",
+      "published": "2026-09-13T06:12:31.000Z",
+      "firstSeen": "2026-09-13T09:55:02.282Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49924381",
+      "id": "49924381",
+      "headline": "Backup QB Tait Reynolds leads 5 scoring drives as Clemson defeats Georgia Southern 22-7",
+      "summary": "— Freshman Tait Reynolds replaced an injured Christopher Vizzina at quarterback and threw for 178 yards and led five scoring drives as Clemson defeated Georgia Southern 22-7 on Saturday night following a two-hour lightning delay.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401858219",
+      "sport": "College football",
+      "published": "2026-09-13T06:11:29.000Z",
+      "firstSeen": "2026-09-13T06:42:32.364Z",
+      "bestRank": 5
     },
     {
       "key": "49924284",
@@ -112,17 +431,6 @@
       "bestRank": 4
     },
     {
-      "key": "49924381",
-      "id": "49924381",
-      "headline": "Backup QB Tait Reynolds leads 5 scoring drives as Clemson defeats Georgia Southern 22-7",
-      "summary": "— Freshman Tait Reynolds replaced an injured Christopher Vizzina at quarterback and threw for 178 yards and led five scoring drives as Clemson defeated Georgia Southern 22-7 on Saturday night following a two-hour lightning delay.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858219",
-      "sport": "College football",
-      "published": "2026-09-13T05:27:29.000Z",
-      "firstSeen": "2026-09-13T06:42:32.364Z",
-      "bestRank": 5
-    },
-    {
       "key": "49923885",
       "id": "49923885",
       "headline": "Cincinnati Reds vs. Milwaukee Brewers: Game Highlights",
@@ -143,17 +451,6 @@
       "published": "2026-09-13T05:24:34.000Z",
       "firstSeen": "2026-09-13T06:42:32.364Z",
       "bestRank": 6
-    },
-    {
-      "key": "49920927",
-      "id": "49920927",
-      "headline": "Source: Jaguars, Parker Washington unlikely to agree to deal",
-      "summary": "The Jaguars and Parker Washington are unlikely to agree to a contract extension before the start of the season, a source told NFL Network.",
-      "url": "https://www.espn.com/nfl/story/_/id/49920927/source-jaguars-parker-washington-unlikely-agree-deal",
-      "sport": "NFL",
-      "published": "2026-09-13T05:24:25.000Z",
-      "firstSeen": "2026-09-13T01:06:12.777Z",
-      "bestRank": 2
     },
     {
       "key": "48305211",
@@ -1826,17 +2123,6 @@
       "published": "2026-09-12T22:28:02.000Z",
       "firstSeen": "2026-09-13T01:06:12.777Z",
       "bestRank": 33
-    },
-    {
-      "key": "49703019",
-      "id": "49703019",
-      "headline": "Premier League VAR review: Was Sunderland's penalty legit vs. Arsenal?",
-      "summary": "VAR often causes Premier League controversy, but how are decisions made and are they correct? Our resident ref, Andy Davies, explains all.",
-      "url": "https://www.espn.com/soccer/story/_/id/49703019/premier-league-var-review-red-card-penalty-handball-goal-line-technology",
-      "sport": "Soccer",
-      "published": "2026-09-12T22:19:05.000Z",
-      "firstSeen": "2026-08-23T21:27:03.617Z",
-      "bestRank": 1
     },
     {
       "key": "49919491",
@@ -8697,7 +8983,7 @@
       "headline": "CSC clears $227M+ in NIL deals in July, August in major increase",
       "summary": "The College Sports Commission cleared more than $227 million in NIL deals in July and August, nearly doubling the value of all the deals cleared in its first year of existence.",
       "url": "https://www.espn.com/espn/story/_/id/49882283/csc-clears-227m-nil-deals-july-august-major-increase",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-09T19:03:51.000Z",
       "firstSeen": "2026-09-09T21:23:12.453Z",
       "bestRank": 1
@@ -9379,7 +9665,7 @@
       "headline": "Arena for 76ers, Flyers to open in 2030, marks 'new era'",
       "summary": "The 76ers and Flyers have unveiled renderings of their new fully privately funded arena in South Philadelphia, which is targeted to open before the WNBA season in 2030.",
       "url": "https://www.espn.com/nba/story/_/id/49867971/arena-76ers-flyers-marks-new-era-philadelphia-sports",
-      "sport": "NHL",
+      "sport": "WNBA",
       "published": "2026-09-09T10:54:09.000Z",
       "firstSeen": "2026-09-08T12:38:17.395Z",
       "bestRank": 1
@@ -20885,7 +21171,7 @@
       "headline": "Judge grants injunction to pro players seeking LSU return",
       "summary": "Dae'Quan Wright and Zxavian Harris are currently cleared to return to college football after brief stints in the NFL, according to a judge's orders issued Thursday evening, setting up a dramatic showdown between the SEC and LSU.",
       "url": "https://www.espn.com/college-football/story/_/id/49807088/judge-grants-injunction-pro-players-seeking-lsu-return",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-04T12:40:04.000Z",
       "firstSeen": "2026-09-04T03:31:23.580Z",
       "bestRank": 1
@@ -21391,7 +21677,7 @@
       "headline": "Caleb Williams, Caleb Wilson and Matas Buzelis start 'PCA!' chant at Cubs game",
       "summary": "Caleb Williams, Caleb Wilson and Matas Buzelis start 'PCA!' chant at Cubs game",
       "url": "https://www.espn.com/video/clip/_/id/49821854/caleb-williams-caleb-wilson-matas-buzelis-start-pca-chant-cubs-game",
-      "sport": "NBA",
+      "sport": "College basketball",
       "published": "2026-09-04T05:10:31.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
       "bestRank": 1
@@ -24493,7 +24779,7 @@
       "headline": "With $6.5 million left on deal, UCLA fires AD Martin Jarmond",
       "summary": "UCLA fired athletic director Martin Jarmond on Monday, with chancellor Julio Frenk explaining in a letter to the UCLA community that the Bruins' athletic program \"currently carries a significant financial deficit, and its current path is not sustainable.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49788304/with-65-million-left-deal-ucla-fires-ad-martin-jarmond",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-02T21:48:43.000Z",
       "firstSeen": "2026-09-01T01:11:44.372Z",
       "bestRank": 1
@@ -24669,7 +24955,7 @@
       "headline": "Russell Westbrook joins board of basketball league Project B",
       "summary": "Recently retired Russell Westbrook has joined new men's and women's basketball league Project B as a co-founder and chief strategy officer.",
       "url": "https://www.espn.com/wnba/story/_/id/49805676/russell-westbrook-joins-board-basketball-league-project-b",
-      "sport": "NBA",
+      "sport": "WNBA",
       "published": "2026-09-02T19:00:55.000Z",
       "firstSeen": "2026-09-02T21:24:06.000Z",
       "bestRank": 1
@@ -29091,7 +29377,7 @@
       "headline": "Sankey, SEC 'prepared to contest' judge's order in Louisiana",
       "summary": "Though the SEC said it will comply with an order that prohibits commissioner Greg Sankey from punishing schools if they roster a player who returns from a pro contract, the league said in a statement Sunday that it will defend its rights in court.",
       "url": "https://www.espn.com/college-sports/story/_/id/49778057/sankey-sec-prepared-contest-judge-order-louisiana",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-31T12:23:32.000Z",
       "firstSeen": "2026-08-31T01:06:00.592Z",
       "bestRank": 1
@@ -32776,7 +33062,7 @@
       "headline": "ACC joins other Power 4 conferences in banning pros from returning",
       "summary": "The ACC passed a resolution Thursday banning professionals from returning to college in football, plus men's and women's basketball, joining the other Power 4 conferences in setting forth eligibility enforcement.",
       "url": "https://www.espn.com/college-football/story/_/id/49746151/acc-joins-other-power-4-conferences-bans-pros-returning",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-29T11:46:47.000Z",
       "firstSeen": "2026-08-28T03:24:34.178Z",
       "bestRank": 1
@@ -33876,7 +34162,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "College basketball is in chaos over eligibility issues. Here's how we got here, the latest updates and what's next.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-29T00:45:57.000Z",
       "firstSeen": "2026-08-22T21:27:10.267Z",
       "bestRank": 1
@@ -33942,7 +34228,7 @@
       "headline": "Ruling: SEC can't sanction teams using players with NFL ties",
       "summary": "A temporary restraining order prohibits the SEC from enforcing a new rule that threatens stiff penalties for any team that uses a player who previously signed a contract to play in the NFL, NBA or WNBA.",
       "url": "https://www.espn.com/college-football/story/_/id/49753638/ruling-sec-sanction-teams-using-players-nfl-ties",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-28T23:08:04.000Z",
       "firstSeen": "2026-08-29T00:53:26.639Z",
       "bestRank": 2
@@ -37297,7 +37583,7 @@
       "headline": "Big 12 announces ban on all professionals from returning",
       "summary": "The Big 12 has unanimously agreed to ban professionals from returning to Big 12 schools in all sports, the conference announced on Wednesday.",
       "url": "https://www.espn.com/college-football/story/_/id/49735747/big-12-announces-ban-all-professionals-returning",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-27T01:47:48.000Z",
       "firstSeen": "2026-08-27T02:01:23.994Z",
       "bestRank": 1
@@ -37429,7 +37715,7 @@
       "headline": "Sources: SEC to suspend head coaches who add pro players",
       "summary": "SEC schools that bring back NFL, NBA or WNBA players to their programs will face steep discipline under a new policy unanimously approved by the conference's 16 members, sources confirmed to ESPN.",
       "url": "https://www.espn.com/college-football/story/_/id/49734134/sources-sec-suspend-head-coaches-add-pro-players",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-27T00:12:05.000Z",
       "firstSeen": "2026-08-26T22:17:35.293Z",
       "bestRank": 2
@@ -37803,7 +38089,7 @@
       "headline": "Big Ten rewards commissioner Tony Petitti with five-year extension",
       "summary": "The Big Ten and commissioner Tony Petitti agreed to a five-year contract extension that will keep him with the conference through the summer of 2033, the league announced Wednesday.",
       "url": "https://www.espn.com/college-football/story/_/id/49734570/big-ten-rewards-commissioner-tony-petitti-five-year-extension",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-26T21:18:53.000Z",
       "firstSeen": "2026-08-26T22:17:35.293Z",
       "bestRank": 1
@@ -38540,7 +38826,7 @@
       "headline": "SEC draws rule to stop NFL, NBA, WNBA players from returning",
       "summary": "After the Big Ten passed a rule stopping players returning from the NFL from playing at its schools, the SEC followed suit, but took it further, adding basketball in announcing a policy forbidding members from rostering anyone from the NFL, NBA and WNBA.",
       "url": "https://www.espn.com/college-football/story/_/id/49726430/sec-draws-rule-stop-nfl-nba-wnba-players-returning",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-26T10:21:33.000Z",
       "firstSeen": "2026-08-26T03:37:25.782Z",
       "bestRank": 1
@@ -44198,116 +44484,6 @@
       "published": "2026-08-23T10:00:11.000Z",
       "firstSeen": "2026-08-23T12:29:02.879Z",
       "bestRank": 1
-    },
-    {
-      "key": "49699496",
-      "id": "49699496",
-      "headline": "White Sox and Mets play to decide series winner",
-      "summary": "New York Mets (59-71, fifth in the NL East) vs. Chicago White Sox (67-62, first in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816649",
-      "sport": "MLB",
-      "published": "2026-08-23T08:03:02.000Z",
-      "firstSeen": "2026-08-23T09:28:06.935Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49699493",
-      "id": "49699493",
-      "headline": "Padres take on the Twins on home winning streak",
-      "summary": "Minnesota Twins (63-67, third in the AL Central) vs. San Diego Padres (70-60, second in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816653",
-      "sport": "MLB",
-      "published": "2026-08-23T08:02:58.000Z",
-      "firstSeen": "2026-08-23T09:28:06.935Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49699492",
-      "id": "49699492",
-      "headline": "Guardians try to keep win streak alive against the Rockies",
-      "summary": "Cleveland Guardians (64-66, second in the AL Central) vs. Colorado Rockies (50-79, fifth in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816650",
-      "sport": "MLB",
-      "published": "2026-08-23T08:02:54.000Z",
-      "firstSeen": "2026-08-23T09:28:06.935Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49699491",
-      "id": "49699491",
-      "headline": "Rangers and Angels play in series rubber match",
-      "summary": "Los Angeles Angels (52-78, fourth in the AL West) vs. Texas Rangers (64-66, second in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816645",
-      "sport": "MLB",
-      "published": "2026-08-23T08:02:51.000Z",
-      "firstSeen": "2026-08-23T09:28:06.935Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49699490",
-      "id": "49699490",
-      "headline": "Reds play the Diamondbacks after Bleday hit for the cycle",
-      "summary": "Cincinnati Reds (62-68, fifth in the NL Central) vs. Arizona Diamondbacks (68-62, third in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816652",
-      "sport": "MLB",
-      "published": "2026-08-23T08:02:47.000Z",
-      "firstSeen": "2026-08-23T09:28:06.935Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49699489",
-      "id": "49699489",
-      "headline": "Rays look to break skid in matchup with the Orioles",
-      "summary": "Tampa Bay Rays (76-53, first in the AL East) vs. Baltimore Orioles (63-67, fifth in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816642",
-      "sport": "MLB",
-      "published": "2026-08-23T08:02:44.000Z",
-      "firstSeen": "2026-08-23T09:28:06.935Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49699488",
-      "id": "49699488",
-      "headline": "Phillies look to keep home win streak alive, host the Cardinals",
-      "summary": "St. Louis Cardinals (66-65, third in the NL Central) vs. Philadelphia Phillies (72-58, second in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816641",
-      "sport": "MLB",
-      "published": "2026-08-23T08:02:40.000Z",
-      "firstSeen": "2026-08-23T09:28:06.935Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49699487",
-      "id": "49699487",
-      "headline": "Tigers aim to stop 4-game slide, take on the Royals",
-      "summary": "Detroit Tigers (61-68, fourth in the AL Central) vs. Kansas City Royals (57-74, fifth in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816648",
-      "sport": "MLB",
-      "published": "2026-08-23T08:02:36.000Z",
-      "firstSeen": "2026-08-23T09:28:06.935Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49699486",
-      "id": "49699486",
-      "headline": "Giants bring 3-game losing streak into matchup with the Red Sox",
-      "summary": "San Francisco Giants (52-77, fourth in the NL West) vs. Boston Red Sox (70-59, third in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816640",
-      "sport": "MLB",
-      "published": "2026-08-23T08:02:32.000Z",
-      "firstSeen": "2026-08-23T09:28:06.935Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49699485",
-      "id": "49699485",
-      "headline": "Brewers try to keep home win streak going, host the Braves",
-      "summary": "Atlanta Braves (75-55, first in the NL East) vs. Milwaukee Brewers (81-49, first in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816647",
-      "sport": "MLB",
-      "published": "2026-08-23T08:02:29.000Z",
-      "firstSeen": "2026-08-23T09:28:06.935Z",
-      "bestRank": 10
     }
   ]
 }
