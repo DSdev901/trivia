@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-15T11:14:52.371Z",
+  "generatedAt": "2026-09-15T12:38:03.612Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-25T11:14:52.371Z",
-  "windowEnd": "2026-09-15T11:14:52.371Z",
+  "windowStart": "2026-08-25T12:38:03.612Z",
+  "windowEnd": "2026-09-15T12:38:03.612Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,7 +21,7 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4145,
+  "count": 4140,
   "items": [
     {
       "key": "49940280",
@@ -30,9 +30,42 @@
       "summary": "Will the Titans score any points against the Eagles? Can Ben Johnson solve Brian Flores' Vikings defense? Get ready for Week 2 with seven takes.",
       "url": "https://www.espn.com/nfl/story/_/id/49940280/week-2-seven-things-solak-thinks-bears-vikings-bills-lions",
       "sport": "NFL",
-      "published": "2026-09-15T10:49:46.000Z",
+      "published": "2026-09-15T12:30:55.000Z",
       "firstSeen": "2026-09-15T11:14:52.371Z",
       "bestRank": 3
+    },
+    {
+      "key": "49942333",
+      "id": "49942333",
+      "headline": "Dave Canales: Panthers need to 'play way better football'",
+      "summary": "After watching film, the coach said Carolina needed to play smarter and Derrick Brown reminded everyone that it's just one game.",
+      "url": "https://www.espn.com/nfl/story/_/id/49942333/dave-canales-carolina-panthers-defense-need-play-way-better-football-week-1-loss-bears",
+      "sport": "NFL",
+      "published": "2026-09-15T12:30:32.000Z",
+      "firstSeen": "2026-09-14T21:24:28.132Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49947028",
+      "id": "49947028",
+      "headline": "Kenneth Walker III, Patrick Mahomes lead Chiefs' win vs. Broncos",
+      "summary": "Together, quarterback Patrick Mahomes, making his return from a torn ACL, and running back Kenneth Walker III, making his Chiefs debut, powered Kansas City to a season-opening blowout win over Denver.",
+      "url": "https://www.espn.com/nfl/story/_/id/49947028/kenneth-walker-iii-patrick-mahomes-power-chiefs-win-vs-broncos",
+      "sport": "NFL",
+      "published": "2026-09-15T12:09:04.000Z",
+      "firstSeen": "2026-09-15T06:43:28.006Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49941730",
+      "id": "49941730",
+      "headline": "Best and worst NFL teams' travel: 49ers, Seahawks, Steelers divulge it all",
+      "summary": "ESPN spoke with several players and team executives about team travel and the feedback that serves as the basis for the latest NFLPA survey grades.",
+      "url": "https://www.espn.com/nfl/story/_/id/49941730/best-worst-nfl-team-travel-nflpa-survey-49ers-seahawks-steelers-rams-patriots-saints",
+      "sport": "NFL",
+      "published": "2026-09-15T11:35:50.000Z",
+      "firstSeen": "2026-09-15T11:14:52.371Z",
+      "bestRank": 6
     },
     {
       "key": "49895149",
@@ -87,7 +120,7 @@
       "sport": "MLB",
       "published": "2026-09-15T10:46:55.000Z",
       "firstSeen": "2026-09-15T11:14:52.371Z",
-      "bestRank": 3
+      "bestRank": 1
     },
     {
       "key": "49590770",
@@ -156,17 +189,6 @@
       "bestRank": 5
     },
     {
-      "key": "49941730",
-      "id": "49941730",
-      "headline": "Best and worst NFL teams' travel: 49ers, Seahawks, Steelers divulge it all",
-      "summary": "ESPN spoke with several players and team executives about team travel and the feedback that serves as the basis for the latest NFLPA survey grades.",
-      "url": "https://www.espn.com/nfl/story/_/id/49941730/best-worst-nfl-team-travel-nflpa-survey-49ers-seahawks-steelers-rams-patriots-saints",
-      "sport": "NFL",
-      "published": "2026-09-15T10:00:02.000Z",
-      "firstSeen": "2026-09-15T11:14:52.371Z",
-      "bestRank": 6
-    },
-    {
       "key": "49943160",
       "id": "49943160",
       "headline": "NHL superstar poll: Rule changes, Texas expansion, fan culture",
@@ -175,6 +197,28 @@
       "sport": "NHL",
       "published": "2026-09-15T09:36:10.000Z",
       "firstSeen": "2026-09-15T11:14:52.371Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49947673",
+      "id": "49947673",
+      "headline": "Grading Bafana Bafana players' overseas moves since the FIFA World Cup",
+      "summary": "South Africa returned to the FIFA World Cup in 2026 after a 16-year absence, and since their round of 32 exit at the hands of Canada, Bafana Bafana players have secured several noteworthy moves abroad.",
+      "url": "https://www.espn.com/espn/story/_/id/49947673/grading-bafana-bafana-players-overseas-moves-fifa-world-cup",
+      "sport": "Soccer",
+      "published": "2026-09-15T08:36:31.000Z",
+      "firstSeen": "2026-09-15T12:38:03.612Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49947635",
+      "id": "49947635",
+      "headline": "Gomez: Raphinha is not the No. 9 Barcelona wanted, but the one they needed",
+      "summary": "Gomez: Raphinha is not the No. 9 Barcelona wanted, but the one they needed",
+      "url": "https://www.espn.com/video/clip/_/id/49947635/raphinha-not-no-9-barcelona-wanted-one-needed",
+      "sport": "Soccer",
+      "published": "2026-09-15T08:28:26.000Z",
+      "firstSeen": "2026-09-15T12:38:03.612Z",
       "bestRank": 1
     },
     {
@@ -398,17 +442,6 @@
       "bestRank": 7
     },
     {
-      "key": "49947028",
-      "id": "49947028",
-      "headline": "Kenneth Walker III, Patrick Mahomes lead Chiefs' win vs. Broncos",
-      "summary": "Together, quarterback Patrick Mahomes, making his return from a torn ACL, and running back Kenneth Walker III, making his Chiefs debut, powered Kansas City to a season-opening blowout win over Denver.",
-      "url": "https://www.espn.com/nfl/story/_/id/49947028/kenneth-walker-iii-patrick-mahomes-power-chiefs-win-vs-broncos",
-      "sport": "NFL",
-      "published": "2026-09-15T06:50:08.000Z",
-      "firstSeen": "2026-09-15T06:43:28.006Z",
-      "bestRank": 1
-    },
-    {
       "key": "49947012",
       "id": "49947012",
       "headline": "Bo Nix, Broncos drop opener after 'pretty pitiful' effort",
@@ -420,6 +453,17 @@
       "bestRank": 2
     },
     {
+      "key": "49925725",
+      "id": "49925725",
+      "headline": "Max vs 100: How Verstappen's karting years made an F1 champion - and prepared him for an all-new test",
+      "summary": "Max Verstappen tells ESPN's Laurence Edmondson how his karting roots shaped his F1 career and prepared him for the Max vs 100 challenge.",
+      "url": "https://www.espn.com/f1/story/_/id/49925725/max-verstappen-100-disney-karting-f1-champion-exclusive-interview",
+      "sport": "F1",
+      "published": "2026-09-15T06:20:28.000Z",
+      "firstSeen": "2026-09-15T06:43:28.006Z",
+      "bestRank": 1
+    },
+    {
       "key": "49946051",
       "id": "49946051",
       "headline": "Chiefs' Travis Kelce now No. 2 among TEs in receiving yards",
@@ -429,17 +473,6 @@
       "published": "2026-09-15T06:11:56.000Z",
       "firstSeen": "2026-09-15T03:32:44.051Z",
       "bestRank": 4
-    },
-    {
-      "key": "49925725",
-      "id": "49925725",
-      "headline": "Max vs 100: How Verstappen's karting years made an F1 champion - and prepared him for an all-new test",
-      "summary": "Max Verstappen tells ESPN's Laurence Edmondson how his karting roots shaped his F1 career and prepared him for the Max vs 100 challenge.",
-      "url": "https://www.espn.com/f1/story/_/id/49925725/max-verstappen-100-disney-karting-f1-champion-exclusive-interview",
-      "sport": "F1",
-      "published": "2026-09-15T05:57:02.000Z",
-      "firstSeen": "2026-09-15T06:43:28.006Z",
-      "bestRank": 1
     },
     {
       "key": "49927602",
@@ -814,17 +847,6 @@
       "published": "2026-09-15T02:34:26.000Z",
       "firstSeen": "2026-09-15T03:32:44.051Z",
       "bestRank": 9
-    },
-    {
-      "key": "49942333",
-      "id": "49942333",
-      "headline": "Dave Canales: Panthers need to 'play way better football'",
-      "summary": "After watching film, the coach said Carolina needed to play smarter and Derrick Brown reminded everyone that it's just one game.",
-      "url": "https://www.espn.com/nfl/story/_/id/49942333/dave-canales-carolina-panthers-defense-need-play-way-better-football-week-1-loss-bears",
-      "sport": "NFL",
-      "published": "2026-09-15T02:30:46.000Z",
-      "firstSeen": "2026-09-14T21:24:28.132Z",
-      "bestRank": 6
     },
     {
       "key": "49945851",
@@ -1756,7 +1778,7 @@
       "headline": "FSU fires AD Michael Alford amid looming football questions",
       "summary": "Florida State fired athletic director Michael Alford on Monday as the Seminoles grapple with looming decisions about their football program.",
       "url": "https://www.espn.com/college-football/story/_/id/49939737/fsu-fires-ad-michael-alford-amid-looming-football-questions",
-      "sport": "College football",
+      "sport": "Women's college basketball",
       "published": "2026-09-14T18:30:25.000Z",
       "firstSeen": "2026-09-14T15:28:36.074Z",
       "bestRank": 1
@@ -14604,7 +14626,7 @@
       "headline": "Arena for 76ers, Flyers to open in 2030, marks 'new era'",
       "summary": "The 76ers and Flyers have unveiled renderings of their new fully privately funded arena in South Philadelphia, which is targeted to open before the WNBA season in 2030.",
       "url": "https://www.espn.com/nba/story/_/id/49867971/arena-76ers-flyers-marks-new-era-philadelphia-sports",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-09-09T10:54:09.000Z",
       "firstSeen": "2026-09-08T12:38:17.395Z",
       "bestRank": 1
@@ -26561,7 +26583,7 @@
       "headline": "Caleb Williams, Caleb Wilson and Matas Buzelis start 'PCA!' chant at Cubs game",
       "summary": "Caleb Williams, Caleb Wilson and Matas Buzelis start 'PCA!' chant at Cubs game",
       "url": "https://www.espn.com/video/clip/_/id/49821854/caleb-williams-caleb-wilson-matas-buzelis-start-pca-chant-cubs-game",
-      "sport": "College basketball",
+      "sport": "NBA",
       "published": "2026-09-04T05:10:31.000Z",
       "firstSeen": "2026-09-04T06:41:21.714Z",
       "bestRank": 1
@@ -45540,83 +45562,6 @@
       "published": "2026-08-25T12:53:32.000Z",
       "firstSeen": "2026-08-25T15:31:13.856Z",
       "bestRank": 5
-    },
-    {
-      "key": "49719909",
-      "id": "49719909",
-      "headline": "Tottenham complete the signing of Sávio from Man City",
-      "summary": "Savinho has joined Tottenham from Manchester City in a deal worth up to £85 million ($116m).",
-      "url": "https://www.espn.com/soccer/story/_/id/49719909/tottenham-savio-premier-league-transfers-man-city",
-      "sport": "Soccer",
-      "published": "2026-08-25T12:27:55.000Z",
-      "firstSeen": "2026-08-25T09:29:32.844Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49719699",
-      "id": "49719699",
-      "headline": "Julián Álvarez transfer saga: Join Barcelona, Arsenal? Stay at Atlético?",
-      "summary": "Julián Álvarez, wanted by the champions of Spain and England, has faced a backlash from Atlético Madrid fans over his desire to leave. Will he get his summer move?",
-      "url": "https://www.espn.com/soccer/story/_/id/49719699/julian-alvarez-transfer-saga-barcelona-arsenal-atletico-madrid",
-      "sport": "Soccer",
-      "published": "2026-08-25T12:26:22.000Z",
-      "firstSeen": "2026-08-25T12:29:49.679Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49713630",
-      "id": "49713630",
-      "headline": "WNBA Power Rankings: Valkyries make statement with win over Lynx",
-      "summary": "Golden State got its first win over Minnesota in franchise history as it moves closer to hosting playoff games.",
-      "url": "https://www.espn.com/wnba/story/_/id/49713630/wnba-power-rankings-2026-valkyries-lynx-dream-aces",
-      "sport": "WNBA",
-      "published": "2026-08-25T12:24:41.000Z",
-      "firstSeen": "2026-08-25T15:31:13.856Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49720801",
-      "id": "49720801",
-      "headline": "MLB betting tips for Tuesday: Streaking Royals head to Toronto",
-      "summary": "All of the odds, recommended prop bets and trends in baseball for Tuesday, August 25.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/49720801/mlb-betting-tips-odds-lines-2026-tuesday-august-25",
-      "sport": "MLB",
-      "published": "2026-08-25T11:48:52.000Z",
-      "firstSeen": "2026-08-25T12:29:49.679Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49674001",
-      "id": "49674001",
-      "headline": "LA Clippers offseason recap, early 2026-27 season preview",
-      "summary": "The Kawhi Leonard-Aspiration saga continues to roll on, leaving the Clippers' 2026-27 season in turmoil. What's next in LA?",
-      "url": "https://www.espn.com/nba/story/_/id/49674001/la-clippers-offseason-recap-2026-27-season-preview-stats-roster-depth-chart",
-      "sport": "NBA",
-      "published": "2026-08-25T11:36:16.000Z",
-      "firstSeen": "2026-08-25T12:29:49.679Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49713195",
-      "id": "49713195",
-      "headline": "Fantasy baseball lineup advice for Tuesday: Nola, Kay among top streamers",
-      "summary": "Everything you need to know to set your fantasy baseball lineups for Tuesday's MLB action.",
-      "url": "https://www.espn.com/fantasy/baseball/story/_/id/49713195/fantasy-baseball-pitcher-rankings-lineup-advice-tips-mlb-daily-notes-august-25-games",
-      "sport": "MLB",
-      "published": "2026-08-25T11:29:32.000Z",
-      "firstSeen": "2026-08-24T21:28:13.200Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49650138",
-      "id": "49650138",
-      "headline": "NBA Summer Forecast 2026-27: Conference champions and Finals predictions",
-      "summary": "Our Summer Forecast panel reveals its championship predictions for the East and West conferences and the 2027 NBA Finals.",
-      "url": "https://www.espn.com/nba/story/_/id/49650138/nba-predictions-2026-27expert-picks-predictions-western-eastern-conference-finals-champions",
-      "sport": "NBA",
-      "published": "2026-08-25T11:19:59.000Z",
-      "firstSeen": "2026-08-25T12:29:49.679Z",
-      "bestRank": 2
     }
   ]
 }
