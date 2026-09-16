@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-16T01:01:12.772Z",
+  "generatedAt": "2026-09-16T03:32:36.563Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-26T01:01:12.772Z",
-  "windowEnd": "2026-09-16T01:01:12.772Z",
+  "windowStart": "2026-08-26T03:32:36.563Z",
+  "windowEnd": "2026-09-16T03:32:36.563Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,17 +21,358 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4143,
+  "count": 4147,
   "items": [
+    {
+      "key": "49954115",
+      "id": "49954115",
+      "headline": "Brewers clinch 4th NL Central title in row with win, Cubs loss",
+      "summary": "The Brewers won their fourth straight National League Central title after the second-place Cubs lost to Atlanta on Tuesday night.",
+      "url": "https://www.espn.com/mlb/story/_/id/49954115/brewers-clinch-4th-nl-central-title-row-win-cubs-loss",
+      "sport": "MLB",
+      "published": "2026-09-16T03:15:39.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49954310",
+      "id": "49954310",
+      "headline": "Alonso ties it in 9th with 300th homer and Orioles beat Mets 7-5 in 11 on Mayo's inside-the-parker",
+      "summary": "— Pete Alonso launched his 300th career home run Tuesday night, a tying shot in the ninth inning against his former team, and Coby Mayo’s inside-the-park homer in the 11th sent the Baltimore Orioles to a 7-5 victory over the New York Mets.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816944",
+      "sport": "MLB",
+      "published": "2026-09-16T03:13:30.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49954257",
+      "id": "49954257",
+      "headline": "Kansas City Royals vs. Houston Astros: Game Highlights",
+      "summary": "Kansas City Royals vs. Houston Astros: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49954257/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-16T03:00:16.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49953742",
+      "id": "49953742",
+      "headline": "Rocchio delivers 2-run double in 9th, Guardians rally to stun White Sox 7-6 and tighten AL Central",
+      "summary": "— Brayan Rocchio came through again, hitting a two-run double with two outs in the ninth inning to give the Cleveland Guardians a comeback 7-6 win over the Chicago White Sox that tightened the AL Central race on Tuesday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816945",
+      "sport": "MLB",
+      "published": "2026-09-16T02:55:29.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 14
+    },
+    {
+      "key": "49954227",
+      "id": "49954227",
+      "headline": "Giants down the Cardinals 10-3",
+      "summary": "Giants down the Cardinals 10-3",
+      "url": "https://www.espn.com/video/clip/_/id/49954227/giants-cardinals-10-3",
+      "sport": "MLB",
+      "published": "2026-09-16T02:54:24.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49954232",
+      "id": "49954232",
+      "headline": "Bryce Eldridge drives in 3 runs as the Giants cruise to a 10-3 win over Cardinals",
+      "summary": "— Bryce Eldridge hit a two-run homer and drove in three runs, lifting the San Franciso Giants to a 10-3 victory over the St. Louis Cardinals on Tuesday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816954",
+      "sport": "MLB",
+      "published": "2026-09-16T02:53:33.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49954143",
+      "id": "49954143",
+      "headline": "Atlanta Braves vs. Chicago Cubs: Game Highlights",
+      "summary": "Atlanta Braves vs. Chicago Cubs: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49954143/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-16T02:48:07.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49954144",
+      "id": "49954144",
+      "headline": "Jeremy Peña hits 2 early homers, Yordan Alvarez hits 39th as Astros beat Royals 4-2",
+      "summary": "— Jeremy Peña homered in his first two at-bats and Yordan Alvarez slugged his 39th home run to lead the Houston Astros to a 4-2 win over the Kansas City Royals on Tuesday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816952",
+      "sport": "MLB",
+      "published": "2026-09-16T02:45:32.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49954120",
+      "id": "49954120",
+      "headline": "Fried gets first win since April, Yankees overpower Twins 8-1 with homers by Bellinger, Jones",
+      "summary": "— Max Fried earned his first victory since April 27, backed by home runs from Cody Bellinger and Spencer Jones that helped the New York Yankees keep pace in the AL East race with an 8-1 win over...",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816953",
+      "sport": "MLB",
+      "published": "2026-09-16T02:39:30.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49954010",
+      "id": "49954010",
+      "headline": "Anaheim Ducks sign Cutter Gauthier, 22, to six-year contract",
+      "summary": "After creating salary-cap space with the release of Chris Kreider, the Anaheim Ducks on Tuesday signed Cutter Gauthier to a six-year contract, with GM Pat Verbeek saying in a statement that the 22-year-old left wing is \"a major part of our young core.\"",
+      "url": "https://www.espn.com/nhl/story/_/id/49954010/anaheim-ducks-sign-cutter-gauthier-22-six-year-contract",
+      "sport": "NHL",
+      "published": "2026-09-16T02:39:04.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49954105",
+      "id": "49954105",
+      "headline": "Baltimore Orioles vs. New York Mets: Game Highlights",
+      "summary": "Baltimore Orioles vs. New York Mets: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49954105/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-16T02:38:09.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49954107",
+      "id": "49954107",
+      "headline": "New York Yankees vs. Minnesota Twins: Game Highlights",
+      "summary": "New York Yankees vs. Minnesota Twins: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49954107/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-16T02:37:03.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49953448",
+      "id": "49953448",
+      "headline": "Source: Chargers signing Valdes-Scantling to practice squad",
+      "summary": "The Los Angeles Chargers, depleted at receiver after a loss to the Arizona Cardinals, are signing Marquez Valdes-Scantling, 31, to its practice squad, a source told ESPN's Jeremy Fowler, adding a veteran who was a 2018 fifth-round choice from USF.",
+      "url": "https://www.espn.com/nfl/story/_/id/49953448/chargers-signing-valdes-scantling-practice-squad",
+      "sport": "NFL",
+      "published": "2026-09-16T02:33:45.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49951961",
+      "id": "49951961",
+      "headline": "Phillies place Jesús Luzardo on IL with shoulder inflammation",
+      "summary": "The Phillies placed All-Star pitcher Jesús Luzardo on the 15-day injured list Tuesday.",
+      "url": "https://www.espn.com/mlb/story/_/id/49951961/phillies-placing-pitcher-luzardo-il-shoulder-injury",
+      "sport": "MLB",
+      "published": "2026-09-16T02:29:40.000Z",
+      "firstSeen": "2026-09-16T01:01:12.772Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49752366",
+      "id": "49752366",
+      "headline": "MLB playoff picture 2026: Clinching scenarios, bracket, schedule",
+      "summary": "From current playoff matchups to league races to the postseason schedule, we have everything you need to know.",
+      "url": "https://www.espn.com/mlb/story/_/id/49752366/mlb-2026-playoff-tracker-clinch-scenarios-postseason-bracket-schedule",
+      "sport": "MLB",
+      "published": "2026-09-16T02:28:58.000Z",
+      "firstSeen": "2026-09-01T12:38:04.191Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49953557",
+      "id": "49953557",
+      "headline": "Misiorowski tosses 5 shutout innings, Brewers top Pirates 5-1 to win 4th straight NL Central title",
+      "summary": "— Jacob Misiorowski struck out seven in five shutout innings and the Milwaukee Brewers won their their fourth straight National League Central title with a 5-1 win over the Pittsburgh Pirates on Tuesday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816948",
+      "sport": "MLB",
+      "published": "2026-09-16T02:27:29.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 17
+    },
+    {
+      "key": "49953968",
+      "id": "49953968",
+      "headline": "Spencer Torkelson hits 3-run homer as Tigers thump Blue Jays 10-1 to win 6th straight",
+      "summary": "— Spencer Torkelson hit a three-run homer, Drew Anderson pitched five shutout innings and the Detroit Tigers won their sixth straight game by thumping the Toronto Blue Jays 10-1 on Tuesday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816946",
+      "sport": "MLB",
+      "published": "2026-09-16T02:23:30.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49953476",
+      "id": "49953476",
+      "headline": "Daylen Lile's pinch 3-run homer lifts the Nationals to a 6-3 victory over the Phillies",
+      "summary": "— Pinch-hitter Daylen Lile hit a tiebreaking three-run homer in the seventh inning, and the Washington Nationals defeated the Philadelphia Phillies 6-3 on Tuesday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816949",
+      "sport": "MLB",
+      "published": "2026-09-16T02:17:28.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 20
+    },
+    {
+      "key": "49953904",
+      "id": "49953904",
+      "headline": "Detroit Tigers vs. Toronto Blue Jays: Game Highlights",
+      "summary": "Detroit Tigers vs. Toronto Blue Jays: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49953904/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-16T02:16:56.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49953603",
+      "id": "49953603",
+      "headline": "Texans sign LB Kenneth Murray to practice squad",
+      "summary": "The Texans signed former first-round pick Kenneth Murray to their practice squad Tuesday in the wake of starting linebacker Henry To'oTo'o landing on injured reserve.",
+      "url": "https://www.espn.com/nfl/story/_/id/49953603/texans-sign-kenneth-murray-practice-squad-henry-tootoo-injured-reserve",
+      "sport": "NFL",
+      "published": "2026-09-16T02:08:14.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49953740",
+      "id": "49953740",
+      "headline": "Brent Venables ready for No. 24 Oklahoma's chance to respond",
+      "summary": "Venables explains his belief in the Sooners' players and process and says he is ready to line up and get another chance to play.",
+      "url": "https://www.espn.com/video/clip/_/id/49953740/brent-venables-ready-no-24-oklahoma-chance-respond",
+      "sport": "College football",
+      "published": "2026-09-16T02:04:03.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49953697",
+      "id": "49953697",
+      "headline": "Chicago White Sox vs. Cleveland Guardians: Game Highlights",
+      "summary": "Chicago White Sox vs. Cleveland Guardians: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49953697/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-16T02:01:20.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 15
+    },
     {
       "key": "49953279",
       "id": "49953279",
-      "headline": "Knicks add free agent John Konchar on one-year deal",
+      "headline": "Knicks agree to deal with veteran free agent John Konchar",
       "summary": "John Konchar has agreed to a one-year deal with the New York Knicks, agent George S. Langberg of GSL Sports Group told ESPN on Tuesday night.",
       "url": "https://www.espn.com/nba/story/_/id/49953279/knicks-add-free-agent-john-konchar-one-year-deal",
       "sport": "NBA",
-      "published": "2026-09-16T00:48:56.000Z",
+      "published": "2026-09-16T02:00:08.000Z",
       "firstSeen": "2026-09-16T01:01:12.772Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49953610",
+      "id": "49953610",
+      "headline": "Brewers beat the Pirates 5-1 on the road",
+      "summary": "Brewers beat the Pirates 5-1 on the road",
+      "url": "https://www.espn.com/video/clip/_/id/49953610/brewers-beat-pirates-5-1-road",
+      "sport": "MLB",
+      "published": "2026-09-16T01:46:47.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 16
+    },
+    {
+      "key": "49953546",
+      "id": "49953546",
+      "headline": "Junior Caminero's 2nd walk-off homer in 4 games gives the Rays a 2-1 win over the Athletics",
+      "summary": "— Junior Caminero hit his second game-ending homer in four games, an opposite-field liner leading off the ninth inning that gave the Tampa Bay Rays a 2-1 victory over the Athletics on Tuesday...",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816943",
+      "sport": "MLB",
+      "published": "2026-09-16T01:41:30.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 18
+    },
+    {
+      "key": "49953500",
+      "id": "49953500",
+      "headline": "Yamamoto dominant as Dodgers beat Reds 4-0, edge closer to NL West title",
+      "summary": "— Yoshinobu Yamamoto allowed one hit through seven innings as the Los Angeles Dodgers beat the Cincinnati Reds 4-0 on Tuesday night to edge closer to an NL West division title.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816947",
+      "sport": "MLB",
+      "published": "2026-09-16T01:31:30.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 19
+    },
+    {
+      "key": "49953429",
+      "id": "49953429",
+      "headline": "Red Sox shut down Justin Slaten; Garrett Crochet progresses",
+      "summary": "Justin Slaten likely will miss the rest of the season after being on the injured list the past month because of right elbow inflammation. Garrett Crochet threw about 30 pitches as he continues to progress.",
+      "url": "https://www.espn.com/mlb/story/_/id/49953429/red-sox-shut-justin-slaten-garrett-crochet-progresses",
+      "sport": "MLB",
+      "published": "2026-09-16T01:30:20.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 23
+    },
+    {
+      "key": "49953446",
+      "id": "49953446",
+      "headline": "Orioles' Shane Baz exits after being hit in arm by line drive",
+      "summary": "Orioles right-hander Shane Baz left Tuesday's start against the Mets after he was hit on the right arm by Bo Bichette's 105.1 mph liner.",
+      "url": "https://www.espn.com/mlb/story/_/id/49953446/orioles-shane-baz-exits-being-hit-arm-line-drive",
+      "sport": "MLB",
+      "published": "2026-09-16T01:29:30.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 22
+    },
+    {
+      "key": "49953451",
+      "id": "49953451",
+      "headline": "Philadelphia Phillies vs. Washington Nationals: Game Highlights",
+      "summary": "Philadelphia Phillies vs. Washington Nationals: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49953451/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-16T01:27:04.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 21
+    },
+    {
+      "key": "49953320",
+      "id": "49953320",
+      "headline": "Athletics vs. Tampa Bay Rays: Game Highlights",
+      "summary": "Athletics vs. Tampa Bay Rays: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49953320/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-16T01:12:49.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 25
+    },
+    {
+      "key": "49953337",
+      "id": "49953337",
+      "headline": "Los Angeles Dodgers vs. Cincinnati Reds: Game Highlights",
+      "summary": "Los Angeles Dodgers vs. Cincinnati Reds: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49953337/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-16T01:11:42.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 24
+    },
+    {
+      "key": "49953121",
+      "id": "49953121",
+      "headline": "Azzi Fudd ready to hype playoff-bound Wings amid recovery",
+      "summary": "Azzi Fudd is ready to do what she can for the playoff-bound Wings while rehabbing from arthroscopic knee surgery that ended the rookie season for the WNBA's No. 1 draft pick.",
+      "url": "https://www.espn.com/wnba/story/_/id/49953121/azzi-fudd-ready-hype-playoff-bound-wings-season-ending-knee-surgery",
+      "sport": "WNBA",
+      "published": "2026-09-16T00:55:45.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
       "bestRank": 1
     },
     {
@@ -40,8 +381,8 @@
       "headline": "Protect College Sports Act moves closer to final Senate vote",
       "summary": "Legislation to broadly regulate college sports has cleared a first major hurdle in the Senate after the chamber voted 74-24 Tuesday to begin consideration of the Protect College Sports Act.",
       "url": "https://www.espn.com/college-sports/story/_/id/49952533/senate-votes-begin-consideration-protect-college-sports-act",
-      "sport": "College football",
-      "published": "2026-09-16T00:42:08.000Z",
+      "sport": "College basketball",
+      "published": "2026-09-16T00:50:26.000Z",
       "firstSeen": "2026-09-16T01:01:12.772Z",
       "bestRank": 1
     },
@@ -66,6 +407,17 @@
       "published": "2026-09-16T00:32:45.000Z",
       "firstSeen": "2026-09-16T01:01:12.772Z",
       "bestRank": 2
+    },
+    {
+      "key": "49950744",
+      "id": "49950744",
+      "headline": "Cristian 'Kily' González arrives to take charge of Messi, Miami",
+      "summary": "New Inter Miami head coach Cristian \"Kily\" González said he feels blessed at being given the opportunity to lead the club and coach Lionel Messi, after formerly taking up the role on Tuesday.",
+      "url": "https://www.espn.com/soccer/story/_/id/49950744/cristian-kily-gonzalez-inter-miami-lionel-messi-coach",
+      "sport": "Soccer",
+      "published": "2026-09-16T00:30:57.000Z",
+      "firstSeen": "2026-09-16T01:01:12.772Z",
+      "bestRank": 1
     },
     {
       "key": "49953194",
@@ -321,17 +673,6 @@
       "bestRank": 2
     },
     {
-      "key": "49951961",
-      "id": "49951961",
-      "headline": "Phillies place Jesús Luzardo on IL with shoulder inflammation",
-      "summary": "The Phillies placed All-Star pitcher Jesús Luzardo on the 15-day injured list Tuesday.",
-      "url": "https://www.espn.com/mlb/story/_/id/49951961/phillies-placing-pitcher-luzardo-il-shoulder-injury",
-      "sport": "MLB",
-      "published": "2026-09-15T22:45:30.000Z",
-      "firstSeen": "2026-09-16T01:01:12.772Z",
-      "bestRank": 5
-    },
-    {
       "key": "49952502",
       "id": "49952502",
       "headline": "Ohtani takes first swings off tee since going on IL",
@@ -453,6 +794,17 @@
       "bestRank": 3
     },
     {
+      "key": "49952015",
+      "id": "49952015",
+      "headline": "Lionel Messi called up for Oct. 6 Argentina friendly as 'last tango' farewell",
+      "summary": "Despite announcing his international retirement, Lionel Messi was included Tuesday in Argentina's squad for a farewell friendly against Benin on October 6.",
+      "url": "https://www.espn.com/soccer/story/_/id/49952015/lionel-messi-called-argentina-friendly-last-tango-farewell",
+      "sport": "Soccer",
+      "published": "2026-09-15T21:20:17.000Z",
+      "firstSeen": "2026-09-16T03:32:36.563Z",
+      "bestRank": 1
+    },
+    {
       "key": "49949144",
       "id": "49949144",
       "headline": "Capitals re-sign Ryan Leonard to 8-year, $84 million extension",
@@ -480,7 +832,7 @@
       "headline": "NFL, NBA, MLB, NHL, MLS urge action against threats from bettors",
       "summary": "The NFL, NBA, MLB, NHL, MLS and their players' unions are urging state gambling regulators to combat escalating harassment and violent threats from sports bettors.",
       "url": "https://www.espn.com/betting/sports/story/_/id/49949715/nfl-nba-mlb-nhl-mls-urge-action-threats-bettors",
-      "sport": "Soccer",
+      "sport": "NHL",
       "published": "2026-09-15T20:40:15.000Z",
       "firstSeen": "2026-09-15T18:17:37.554Z",
       "bestRank": 2
@@ -695,17 +1047,6 @@
       "bestRank": 3
     },
     {
-      "key": "49950744",
-      "id": "49950744",
-      "headline": "Cristian 'Kily' González arrives to take charge of Messi, Miami",
-      "summary": "New Inter Miami head coach Cristian \"Kily\" González said he feels blessed at being given the opportunity to lead the club and coach Lionel Messi, after formerly taking up the role on Tuesday.",
-      "url": "https://www.espn.com/soccer/story/_/id/49950744/cristian-kily-gonzalez-inter-miami-lionel-messi-coach",
-      "sport": "Soccer",
-      "published": "2026-09-15T18:34:18.000Z",
-      "firstSeen": "2026-09-16T01:01:12.772Z",
-      "bestRank": 1
-    },
-    {
       "key": "49950483",
       "id": "49950483",
       "headline": "Day: Ohio State 'to make some hard decisions' after Texas collapse",
@@ -766,7 +1107,7 @@
       "headline": "Sophie Cunningham: I talked with Adam Silver about next WNBA commissioner",
       "summary": "Sophie Cunningham has discussed the soon-to-be-vacant WNBA commissioner's job with Adam Silver after the NBA commissioner reached out to her.",
       "url": "https://www.espn.com/wnba/story/_/id/49949851/sophie-cunningham-talked-adam-silver-next-wnba-commissioner",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-09-15T17:35:29.000Z",
       "firstSeen": "2026-09-15T18:17:37.554Z",
       "bestRank": 1
@@ -1155,17 +1496,6 @@
       "published": "2026-09-15T14:56:01.000Z",
       "firstSeen": "2026-09-15T15:26:48.219Z",
       "bestRank": 2
-    },
-    {
-      "key": "49752366",
-      "id": "49752366",
-      "headline": "MLB playoff picture 2026: Clinching scenarios, bracket, schedule",
-      "summary": "From current playoff matchups to league races to the postseason schedule, we have everything you need to know.",
-      "url": "https://www.espn.com/mlb/story/_/id/49752366/mlb-2026-playoff-tracker-clinch-scenarios-postseason-bracket-schedule",
-      "sport": "MLB",
-      "published": "2026-09-15T14:50:27.000Z",
-      "firstSeen": "2026-09-01T12:38:04.191Z",
-      "bestRank": 1
     },
     {
       "key": "49949417",
@@ -2383,7 +2713,7 @@
       "headline": "Ted Cruz expects Senate vote on Protect College Sports Act soon",
       "summary": "With college football in full swing, proponents of the Protect College Sports Act have launched an all-out blitz to push the legislation through the Senate before the chamber breaks in the coming weeks.",
       "url": "https://www.espn.com/college-sports/story/_/id/49943619/ted-cruz-expects-senate-vote-protect-college-sports-act-week-next",
-      "sport": "College football",
+      "sport": "College basketball",
       "published": "2026-09-15T00:41:51.000Z",
       "firstSeen": "2026-09-15T01:02:04.139Z",
       "bestRank": 1
@@ -45309,292 +45639,6 @@
       "published": "2026-08-26T03:35:29.000Z",
       "firstSeen": "2026-08-26T03:37:25.782Z",
       "bestRank": 2
-    },
-    {
-      "key": "49728028",
-      "id": "49728028",
-      "headline": "Texas Rangers vs. Chicago White Sox: Game Highlights",
-      "summary": "Texas Rangers vs. Chicago White Sox: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49728028/game-highlights",
-      "sport": "MLB",
-      "published": "2026-08-26T03:29:31.000Z",
-      "firstSeen": "2026-08-26T06:30:08.106Z",
-      "bestRank": 16
-    },
-    {
-      "key": "49725856",
-      "id": "49725856",
-      "headline": "Sky ban Kanter Freedom from arena after clash with Cloud",
-      "summary": "Chicago Sky owner Michael Alter said Enes Kanter Freedom has been banned from Wintrust Arena after showing he has the potential to be a threat when he was tossed from a game Sunday for a verbal altercation with a Sky player.",
-      "url": "https://www.espn.com/wnba/story/_/id/49725856/sky-ban-kanter-freedom-arena-clash-cloud",
-      "sport": "WNBA",
-      "published": "2026-08-26T03:20:40.000Z",
-      "firstSeen": "2026-08-26T00:30:34.769Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49727935",
-      "id": "49727935",
-      "headline": "Tristan Peters stars as the White Sox beat Jacob deGrom and the Rangers 11-7",
-      "summary": "— Tristan Peters hit a two-run double off Jacob deGrom during Chicago's six-run first inning, and the White Sox held off the Texas Rangers 11-7 on Tuesday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816673",
-      "sport": "MLB",
-      "published": "2026-08-26T03:09:34.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49727862",
-      "id": "49727862",
-      "headline": "Tampa Bay Rays vs. Detroit Tigers: Game Highlights",
-      "summary": "Tampa Bay Rays vs. Detroit Tigers: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49727862/game-highlights",
-      "sport": "MLB",
-      "published": "2026-08-26T02:59:38.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49427703",
-      "id": "49427703",
-      "headline": "2026 New England Patriots training camp: Latest intel, updates",
-      "summary": "Catch up on our daily updates from Patriots training camp, including intel on QBs, position battles and potential breakouts.",
-      "url": "https://www.espn.com/nfl/story/_/id/49427703/new-england-patriots-training-camp-2026-intel-updates",
-      "sport": "NFL",
-      "published": "2026-08-26T02:59:31.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49727859",
-      "id": "49727859",
-      "headline": "Pete Alonso homers and drives in 4 before leaving game as Orioles rout Cardinals 13-1",
-      "summary": "— Pete Alonso had four hits, including a three-run homer, and drove in four runs before leaving the game in the fifth inning, and the Baltimore Orioles routed the swooning St. Louis Cardinals 13-1 on Tuesday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816672",
-      "sport": "MLB",
-      "published": "2026-08-26T02:53:29.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49727766",
-      "id": "49727766",
-      "headline": "Baltimore Orioles vs. St. Louis Cardinals: Game Highlights",
-      "summary": "Baltimore Orioles vs. St. Louis Cardinals: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49727766/game-highlights",
-      "sport": "MLB",
-      "published": "2026-08-26T02:44:45.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49727809",
-      "id": "49727809",
-      "headline": "Yordan Alvarez hits go-ahead triple in 8th inning as Astros outlast Yankees 9-7",
-      "summary": "— Yordan Alvarez went 3 for 5 and lined a go-ahead triple in the eighth inning off Brent Headrick as the Houston Astros beat the New York Yankees 9-7 on Tuesday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816667",
-      "sport": "MLB",
-      "published": "2026-08-26T02:44:30.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49726642",
-      "id": "49726642",
-      "headline": "'Big Break' reboot delayed one week after Good Good backlash",
-      "summary": "Golf Channel on Tuesday said it was postponing the debut of its \"Big Break\" reboot because of the ongoing controversy surrounding Good Good Golf, its new partner for the reality series.",
-      "url": "https://www.espn.com/golf/story/_/id/49726642/big-break-reboot-delayed-one-week-good-good-backlash",
-      "sport": "Golf",
-      "published": "2026-08-26T02:36:32.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49727521",
-      "id": "49727521",
-      "headline": "Albies drives in winning run in the 8th, Braves win 4-3 to snap Dodgers' 6-game winning streak",
-      "summary": "— Ozzie Albies singled in the go-ahead run with two outs in the eighth inning and the Atlanta Braves defeated Los Angles 4-3 on Tuesday night, snapping the Dodgers' six-game winning streak in a matchup of first-place clubs.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816669",
-      "sport": "MLB",
-      "published": "2026-08-26T02:36:30.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49727698",
-      "id": "49727698",
-      "headline": "Jarren Duran hits grand slam in 11th inning and Red Sox sink Marlins 7-3",
-      "summary": "— Jarren Duran hit a grand slam in the 11th inning, Mickey Gasper had his first career two-homer game and the Boston Red Sox beat the Miami Marlins 7-3 on Tuesday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816665",
-      "sport": "MLB",
-      "published": "2026-08-26T02:34:31.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49727653",
-      "id": "49727653",
-      "headline": "Kansas City Royals vs. Toronto Blue Jays: Game Highlights",
-      "summary": "Kansas City Royals vs. Toronto Blue Jays: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49727653/game-highlights",
-      "sport": "MLB",
-      "published": "2026-08-26T02:28:33.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49721908",
-      "id": "49721908",
-      "headline": "Big Ten won't allow football players to return from NFL",
-      "summary": "The Big Ten is set to pass a rule Tuesday that doesn't allow players to return from the NFL and play for one of its schools, sources told ESPN's Pete Thamel.",
-      "url": "https://www.espn.com/college-football/story/_/id/49721908/sources-big-ten-allow-players-return-nfl",
-      "sport": "College football",
-      "published": "2026-08-26T02:25:24.000Z",
-      "firstSeen": "2026-08-25T15:31:13.856Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49727617",
-      "id": "49727617",
-      "headline": "Lugo works 5 innings, Royals beat Blue Jays 5-3 to extend winning streak to 9 games",
-      "summary": "— Salvador Perez drove in two runs, Seth Lugo gave up one run in five effective innings, and the Kansas City Royals beat the Toronto Blue Jays 5-3 on Tuesday night to extend their winning streak to nine games.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816668",
-      "sport": "MLB",
-      "published": "2026-08-26T02:23:31.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49727575",
-      "id": "49727575",
-      "headline": "Houston Astros vs. New York Yankees: Game Highlights",
-      "summary": "Houston Astros vs. New York Yankees: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49727575/game-highlights",
-      "sport": "MLB",
-      "published": "2026-08-26T02:18:51.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49727267",
-      "id": "49727267",
-      "headline": "Goodman hits 35th homer in his return to the lineup as Rockies snap skid with 3-1 win over Nationals",
-      "summary": "— Hunter Goodman homered in his return from a shoulder injury, Mason Adams worked into the fifth inning in his big league debut, and the Colorado Rockies snapped a seven-game losing streak with a 3-1 victory over the Washington Nationals on Tuesday...",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816666",
-      "sport": "MLB",
-      "published": "2026-08-26T02:11:29.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 16
-    },
-    {
-      "key": "49727494",
-      "id": "49727494",
-      "headline": "Boston Red Sox vs. Miami Marlins: Game Highlights",
-      "summary": "Boston Red Sox vs. Miami Marlins: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49727494/game-highlights",
-      "sport": "MLB",
-      "published": "2026-08-26T02:10:00.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49727487",
-      "id": "49727487",
-      "headline": "Wings beat the Fire 96-78 to clinch the final WNBA playoff spot",
-      "summary": "— Paige Bueckers had 22 points and 11 assists, Jessica Shepard added 21 points, nine rebounds and six assists, and the Dallas Wings beat the Portland Fire 96-78 on Tuesday night to clinch the final WNBA playoff spot.",
-      "url": "http://www.espn.com/wnba/recap?gameId=401857174",
-      "sport": "WNBA",
-      "published": "2026-08-26T02:07:30.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49727456",
-      "id": "49727456",
-      "headline": "Los Angeles Dodgers vs. Atlanta Braves: Game Highlights",
-      "summary": "Los Angeles Dodgers vs. Atlanta Braves: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49727456/game-highlights",
-      "sport": "MLB",
-      "published": "2026-08-26T02:06:26.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 14
-    },
-    {
-      "key": "49727436",
-      "id": "49727436",
-      "headline": "Dallas Wings vs. Fire - Game Highlights",
-      "summary": "Watch the Game Highlights from Dallas Wings vs. Fire, 08/25/2026",
-      "url": "https://www.espn.com/video/clip/_/id/49727436/dallas-wings-vs-fire-game-highlights",
-      "sport": "WNBA",
-      "published": "2026-08-26T02:00:54.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49726417",
-      "id": "49726417",
-      "headline": "Padres minor league coordinator released from ICE detainment",
-      "summary": "A San Diego Padres minor league coaching coordinator who was detained by federal immigration officers in Texas has been released on bond.",
-      "url": "https://www.espn.com/mlb/story/_/id/49726417/padres-minor-league-coordinator-released-ice-detainment",
-      "sport": "MLB",
-      "published": "2026-08-26T01:59:00.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 19
-    },
-    {
-      "key": "49727298",
-      "id": "49727298",
-      "headline": "Colorado Rockies vs. Washington Nationals: Game Highlights",
-      "summary": "Colorado Rockies vs. Washington Nationals: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49727298/game-highlights",
-      "sport": "MLB",
-      "published": "2026-08-26T01:48:41.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 15
-    },
-    {
-      "key": "49727199",
-      "id": "49727199",
-      "headline": "Aaliyah Edwards scores a career-high 26 points as the Sun beat the Sky 87-81",
-      "summary": "— Aaliyah Edwards scored a career-high 26 points to go with 10 rebounds, and Diamond Miller added 21 points as the Connecticut Sun beat the Chicago Sky 87-81 on Tuesday night.",
-      "url": "http://www.espn.com/wnba/recap?gameId=401857173",
-      "sport": "WNBA",
-      "published": "2026-08-26T01:29:35.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49727192",
-      "id": "49727192",
-      "headline": "Max Clark, pitching staff help Tigers end six-game losing streak with 4-1 win over Rays",
-      "summary": "— Max Clark hit his first home run at Comerica Park and five Tigers pitchers combined to allow one run as Detroit ended a six-game losing streak with a 4-1 win over the Tampa Bay Rays on Tuesday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816671",
-      "sport": "MLB",
-      "published": "2026-08-26T01:27:29.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 17
-    },
-    {
-      "key": "49727091",
-      "id": "49727091",
-      "headline": "Connecticut Sun vs. Chicago Sky - Game Highlights",
-      "summary": "Watch the Game Highlights from Connecticut Sun vs. Chicago Sky, 08/25/2026",
-      "url": "https://www.espn.com/video/clip/_/id/49727091/connecticut-sun-vs-chicago-sky-game-highlights",
-      "sport": "WNBA",
-      "published": "2026-08-26T01:13:51.000Z",
-      "firstSeen": "2026-08-26T03:37:25.782Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49724848",
-      "id": "49724848",
-      "headline": "Bengals' Ja'Marr Chase says he is 'fine' after injury scare",
-      "summary": "Bengals star Ja'Marr Chase says he is \"fine\" after an injury scare at practice in which the WR appeared to injure his left knee.",
-      "url": "https://www.espn.com/nfl/story/_/id/49724848/bengals-jamarr-chase-says-fine-injury-scare",
-      "sport": "NFL",
-      "published": "2026-08-26T01:06:28.000Z",
-      "firstSeen": "2026-08-25T21:28:21.180Z",
-      "bestRank": 5
     }
   ]
 }
