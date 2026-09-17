@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-17T06:44:05.827Z",
+  "generatedAt": "2026-09-17T09:31:04.470Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-27T06:44:05.827Z",
-  "windowEnd": "2026-09-17T06:44:05.827Z",
+  "windowStart": "2026-08-27T09:31:04.470Z",
+  "windowEnd": "2026-09-17T09:31:04.470Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,118 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4162,
+  "count": 4160,
   "items": [
+    {
+      "key": "49962905",
+      "id": "49962905",
+      "headline": "Brewers try to sweep series against the Pirates",
+      "summary": "Milwaukee Brewers (95-57, first in the NL Central) vs. Pittsburgh Pirates (75-77, third in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816975",
+      "sport": "MLB",
+      "published": "2026-09-17T08:02:46.000Z",
+      "firstSeen": "2026-09-17T09:31:04.470Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49962904",
+      "id": "49962904",
+      "headline": "White Sox host the Tigers in first of 4-game series",
+      "summary": "Detroit Tigers (72-80, third in the AL Central) vs. Chicago White Sox (77-75, second in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816978",
+      "sport": "MLB",
+      "published": "2026-09-17T08:02:43.000Z",
+      "firstSeen": "2026-09-17T09:31:04.470Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49962903",
+      "id": "49962903",
+      "headline": "Guzman leads Angels against the Twins after 4-hit outing",
+      "summary": "Minnesota Twins (71-81, fourth in the AL Central) vs. Los Angeles Angels (58-94, fifth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816981",
+      "sport": "MLB",
+      "published": "2026-09-17T08:02:39.000Z",
+      "firstSeen": "2026-09-17T09:31:04.470Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49962902",
+      "id": "49962902",
+      "headline": "San Diego Padres and Colorado Rockies play in game 4 of series",
+      "summary": "San Diego Padres (83-69, second in the NL West) vs. Colorado Rockies (56-96, fifth in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816980",
+      "sport": "MLB",
+      "published": "2026-09-17T08:02:35.000Z",
+      "firstSeen": "2026-09-17T09:31:04.470Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49962901",
+      "id": "49962901",
+      "headline": "Rays host the Athletics, aim to continue home win streak",
+      "summary": "Athletics (61-91, fourth in the AL West) vs. Tampa Bay Rays (92-59, first in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816973",
+      "sport": "MLB",
+      "published": "2026-09-17T08:02:32.000Z",
+      "firstSeen": "2026-09-17T09:31:04.470Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49962900",
+      "id": "49962900",
+      "headline": "Los Angeles Dodgers and Cincinnati Reds play in game 4 of series",
+      "summary": "Los Angeles Dodgers (92-60, first in the NL West) vs. Cincinnati Reds (71-81, fifth in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401816974",
+      "sport": "MLB",
+      "published": "2026-09-17T08:02:29.000Z",
+      "firstSeen": "2026-09-17T09:31:04.470Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49962782",
+      "id": "49962782",
+      "headline": "Macdonald: Seahawks start was 'most difficult stretch of my life'",
+      "summary": "Mike Macdonald detailed the personal struggles he went through after Seattle hired him in a recent appearance on \"In Depth With Graham Bensinger.\"",
+      "url": "https://www.espn.com/nfl/story/_/id/49962782/macdonald-seahawks-start-was-most-difficult-stretch-my-life",
+      "sport": "NFL",
+      "published": "2026-09-17T07:47:05.000Z",
+      "firstSeen": "2026-09-17T09:31:04.470Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49960828",
+      "id": "49960828",
+      "headline": "Man United will be 'careful' with Gabriel future, Carrick says",
+      "summary": "Michael Carrick confirmed he is involved in conversations about JJ Gabriel's future after the 15-year-old's request to leave Manchester United made major ripples and that the team is being \"careful\" with the situation.",
+      "url": "https://www.espn.com/soccer/story/_/id/49960828/man-united-careful-gabriel-future",
+      "sport": "Soccer",
+      "published": "2026-09-17T07:35:28.000Z",
+      "firstSeen": "2026-09-17T01:01:24.478Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49867259",
+      "id": "49867259",
+      "headline": "Max Verstappen wins Max vs 100 in style after overtaking 100 go-karters in 35 minutes",
+      "summary": "Max Verstappen stormed through a field of 100 karters to win Max vs 100 in remarkable fashion as the four-time Formula 1 world champion made light work of the unique challenge at Silverstone.",
+      "url": "https://www.espn.com/f1/story/_/id/49867259/max-vs-100-report-verstappen-disney-silverstone-wins",
+      "sport": "F1",
+      "published": "2026-09-17T07:32:07.000Z",
+      "firstSeen": "2026-09-17T01:01:24.478Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49960829",
+      "id": "49960829",
+      "headline": "Man United's collapse puts Carrick under pressure for first time",
+      "summary": "After being eliminated by Brighton & Hove Albion in the Carabao Cup, Manchester United boss Michael Carrick is now facing the first real pressure of his reign.",
+      "url": "https://www.espn.com/soccer/story/_/id/49960829/manchester-united-collapse-puts-michael-carrick-pressure-first",
+      "sport": "Soccer",
+      "published": "2026-09-17T07:15:28.000Z",
+      "firstSeen": "2026-09-17T01:01:24.478Z",
+      "bestRank": 2
+    },
     {
       "key": "49962477",
       "id": "49962477",
@@ -30,9 +140,75 @@
       "summary": "Marlins ace Sandy Alcantara earned his first career save Wednesday night at Arizona, two days after throwing 101 pitches in a no-decision.",
       "url": "https://www.espn.com/mlb/story/_/id/49962477/sandy-alcantara-earns-first-career-save-marlins-win-vs-diamondbacks",
       "sport": "MLB",
-      "published": "2026-09-17T05:52:50.000Z",
+      "published": "2026-09-17T06:59:05.000Z",
       "firstSeen": "2026-09-17T06:44:05.827Z",
       "bestRank": 1
+    },
+    {
+      "key": "49962718",
+      "id": "49962718",
+      "headline": "Transfer rumors, news: Arsenal still keen on Real Madrid winger Rodrygo",
+      "summary": "Arsenal remain in contact with the camp of Real Madrid winger Rodrygo as a potential long-term target Transfer talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/49962718/transfer-rumors-news-arsenal-keen-real-madrid-winger-rodrygo",
+      "sport": "Soccer",
+      "published": "2026-09-17T06:56:14.000Z",
+      "firstSeen": "2026-09-17T09:31:04.470Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49955429",
+      "id": "49955429",
+      "headline": "Njoku, Nwosu, Emmanwori, and more - 10 NFL players of Nigerian origin to watch this season",
+      "summary": "The NFL has long had a significant African presence, but no country is represented quite like Nigeria.",
+      "url": "https://www.espn.com/espn/story/_/id/49955429/njoku-nwosu-emmanwori-more-10-nfl-players-nigerian-origin-watch-season",
+      "sport": "NFL",
+      "published": "2026-09-17T06:55:34.000Z",
+      "firstSeen": "2026-09-16T12:38:51.317Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49962377",
+      "id": "49962377",
+      "headline": "Marlins hold off Diamondbacks 4-3 with Sandy Alcantara getting 1st career save",
+      "summary": "— Jakob Marsee hit a two-run homer and Sandy Alcantara earned his first career save as the Miami Marlins held off the Arizona Diamondbacks 4-3 on Wednesday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401816971",
+      "sport": "MLB",
+      "published": "2026-09-17T06:30:29.000Z",
+      "firstSeen": "2026-09-17T06:44:05.827Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49962370",
+      "id": "49962370",
+      "headline": "Padres' Salas becomes youngest catcher with multi-homer game",
+      "summary": "With his first two major league home runs, Ethan Salas bettered a mark set in 1976.",
+      "url": "https://www.espn.com/mlb/story/_/id/49962370/padres-salas-becomes-youngest-catcher-multi-homer-game",
+      "sport": "MLB",
+      "published": "2026-09-17T06:16:12.000Z",
+      "firstSeen": "2026-09-17T06:44:05.827Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49962631",
+      "id": "49962631",
+      "headline": "New York looks for 25th win this season in matchup against Minnesota",
+      "summary": "New York Liberty (24-16, 12-5 Eastern Conference) at Minnesota Lynx (31-9, 20-3 Western Conference)",
+      "url": "http://www.espn.com/wnba/preview?gameId=401857196",
+      "sport": "WNBA",
+      "published": "2026-09-17T06:10:37.000Z",
+      "firstSeen": "2026-09-17T09:31:04.470Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49941358",
+      "id": "49941358",
+      "headline": "Max vs 100: Verstappen jokes taking on '200' drivers next time after winning crazy challenge",
+      "summary": "Max Verstappen has joked that he's ready to race 200 drivers next after storming from the back of a 101-grid to take victory in his half his allotted time in Max vs 100 on Wednesday.",
+      "url": "https://www.espn.com/f1/story/_/id/49941358/max-vs-100-verstappen-200-go-karts-silverstone-disney-red-bull-f1",
+      "sport": "F1",
+      "published": "2026-09-17T06:07:44.000Z",
+      "firstSeen": "2026-09-17T09:31:04.470Z",
+      "bestRank": 2
     },
     {
       "key": "49961719",
@@ -44,28 +220,6 @@
       "published": "2026-09-17T05:29:37.000Z",
       "firstSeen": "2026-09-17T03:32:29.411Z",
       "bestRank": 8
-    },
-    {
-      "key": "49962370",
-      "id": "49962370",
-      "headline": "Padres' Salas becomes youngest catcher with multi-homer game",
-      "summary": "With his first two major league home runs, Ethan Salas bettered a mark set in 1976.",
-      "url": "https://www.espn.com/mlb/story/_/id/49962370/padres-salas-becomes-youngest-catcher-multi-homer-game",
-      "sport": "MLB",
-      "published": "2026-09-17T05:25:32.000Z",
-      "firstSeen": "2026-09-17T06:44:05.827Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49962377",
-      "id": "49962377",
-      "headline": "Marlins hold off Diamondbacks 4-3 with Sandy Alcantara getting 1st career save",
-      "summary": "— Jakob Marsee hit a two-run homer and Sandy Alcantara earned his first career save as the Miami Marlins held off the Arizona Diamondbacks 4-3 on Wednesday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816971",
-      "sport": "MLB",
-      "published": "2026-09-17T05:24:29.000Z",
-      "firstSeen": "2026-09-17T06:44:05.827Z",
-      "bestRank": 3
     },
     {
       "key": "49962195",
@@ -618,17 +772,6 @@
       "bestRank": 5
     },
     {
-      "key": "49960828",
-      "id": "49960828",
-      "headline": "Man United will be 'careful' with Gabriel future, Carrick says",
-      "summary": "Michael Carrick confirmed he is involved in conversations about JJ Gabriel's future after the 15-year-old's request to leave Manchester United made major ripples and that the team is being \"careful\" with the situation.",
-      "url": "https://www.espn.com/soccer/story/_/id/49960828/man-united-careful-gabriel-future",
-      "sport": "Soccer",
-      "published": "2026-09-16T23:43:16.000Z",
-      "firstSeen": "2026-09-17T01:01:24.478Z",
-      "bestRank": 1
-    },
-    {
       "key": "49959207",
       "id": "49959207",
       "headline": "Bucs' Baker Mayfield dons Michigan gear in bet made with Todd Bowles",
@@ -638,17 +781,6 @@
       "published": "2026-09-16T23:35:07.000Z",
       "firstSeen": "2026-09-17T01:01:24.478Z",
       "bestRank": 1
-    },
-    {
-      "key": "49960829",
-      "id": "49960829",
-      "headline": "Man United's collapse puts Carrick under pressure for first time",
-      "summary": "After being eliminated to Brighton & Hove Albion in the Carabao Cup, Manchester United boss Michael Carrick is now facing the first real pressure of his reign.",
-      "url": "https://www.espn.com/soccer/story/_/id/49960829/manchester-united-collapse-puts-michael-carrick-pressure-first",
-      "sport": "Soccer",
-      "published": "2026-09-16T23:34:02.000Z",
-      "firstSeen": "2026-09-17T01:01:24.478Z",
-      "bestRank": 2
     },
     {
       "key": "49960640",
@@ -1140,7 +1272,7 @@
       "headline": "Reports: Miami Hurricanes returning to Nike in '27 on $200M+ deal",
       "summary": "University of Miami athletic teams will be wearing Nike apparel again starting in July 2027, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/49958590/report-miami-hurricanes-going-back-nike-200m+-deal",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-16T19:04:20.000Z",
       "firstSeen": "2026-09-16T21:25:45.412Z",
       "bestRank": 1
@@ -1176,17 +1308,6 @@
       "sport": "NFL",
       "published": "2026-09-16T18:47:28.000Z",
       "firstSeen": "2026-09-16T18:31:44.470Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49867259",
-      "id": "49867259",
-      "headline": "Max Verstappen wins Max vs 100 in style after overtaking 100 go-karters in 35 minutes",
-      "summary": "Max Verstappen stormed through a field of 100 karters to win Max vs 100 in remarkable fashion as the four-time Formula 1 world champion made light work of the unique challenge at Silverstone.",
-      "url": "https://www.espn.com/f1/story/_/id/49867259/max-vs-100-report-verstappen-disney-silverstone-wins",
-      "sport": "F1",
-      "published": "2026-09-16T18:24:44.000Z",
-      "firstSeen": "2026-09-17T01:01:24.478Z",
       "bestRank": 1
     },
     {
@@ -2079,17 +2200,6 @@
       "published": "2026-09-16T10:57:29.000Z",
       "firstSeen": "2026-09-16T12:38:51.317Z",
       "bestRank": 1
-    },
-    {
-      "key": "49955429",
-      "id": "49955429",
-      "headline": "Njoku, Nwosu, Emmanwori, and more - 10 NFL players of Nigerian origin to watch this season",
-      "summary": "The NFL has long had a significant African presence, but no country is represented quite like Nigeria.",
-      "url": "https://www.espn.com/espn/story/_/id/49955429/njoku-nwosu-emmanwori-more-10-nfl-players-nigerian-origin-watch-season",
-      "sport": "NFL",
-      "published": "2026-09-16T10:56:15.000Z",
-      "firstSeen": "2026-09-16T12:38:51.317Z",
-      "bestRank": 3
     },
     {
       "key": "49950236",
@@ -3593,7 +3703,7 @@
       "headline": "Sophie Cunningham: I talked with Adam Silver about next WNBA commissioner",
       "summary": "Sophie Cunningham has discussed the soon-to-be-vacant WNBA commissioner's job with Adam Silver after the NBA commissioner reached out to her.",
       "url": "https://www.espn.com/wnba/story/_/id/49949851/sophie-cunningham-talked-adam-silver-next-wnba-commissioner",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-09-15T17:35:29.000Z",
       "firstSeen": "2026-09-15T18:17:37.554Z",
       "bestRank": 1
@@ -5804,7 +5914,7 @@
       "headline": "FSU fires AD Michael Alford amid looming football questions",
       "summary": "Florida State fired athletic director Michael Alford on Monday as the Seminoles grapple with looming decisions about their football program.",
       "url": "https://www.espn.com/college-football/story/_/id/49939737/fsu-fires-ad-michael-alford-amid-looming-football-questions",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-14T18:30:25.000Z",
       "firstSeen": "2026-09-14T15:28:36.074Z",
       "bestRank": 1
@@ -17673,7 +17783,7 @@
       "headline": "CSC clears $227M+ in NIL deals in July, August in major increase",
       "summary": "The College Sports Commission cleared more than $227 million in NIL deals in July and August, nearly doubling the value of all the deals cleared in its first year of existence.",
       "url": "https://www.espn.com/espn/story/_/id/49882283/csc-clears-227m-nil-deals-july-august-major-increase",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-09T19:03:51.000Z",
       "firstSeen": "2026-09-09T21:23:12.453Z",
       "bestRank": 1
@@ -18355,7 +18465,7 @@
       "headline": "Arena for 76ers, Flyers to open in 2030, marks 'new era'",
       "summary": "The 76ers and Flyers have unveiled renderings of their new fully privately funded arena in South Philadelphia, which is targeted to open before the WNBA season in 2030.",
       "url": "https://www.espn.com/nba/story/_/id/49867971/arena-76ers-flyers-marks-new-era-philadelphia-sports",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-09-09T10:54:09.000Z",
       "firstSeen": "2026-09-08T12:38:17.395Z",
       "bestRank": 1
@@ -29806,7 +29916,7 @@
       "headline": "Judge grants injunction to pro players seeking LSU return",
       "summary": "Dae'Quan Wright and Zxavian Harris are currently cleared to return to college football after brief stints in the NFL, according to a judge's orders issued Thursday evening, setting up a dramatic showdown between the SEC and LSU.",
       "url": "https://www.espn.com/college-football/story/_/id/49807088/judge-grants-injunction-pro-players-seeking-lsu-return",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-04T12:40:04.000Z",
       "firstSeen": "2026-09-04T03:31:23.580Z",
       "bestRank": 1
@@ -33392,7 +33502,7 @@
       "headline": "With $6.5 million left on deal, UCLA fires AD Martin Jarmond",
       "summary": "UCLA fired athletic director Martin Jarmond on Monday, with chancellor Julio Frenk explaining in a letter to the UCLA community that the Bruins' athletic program \"currently carries a significant financial deficit, and its current path is not sustainable.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49788304/with-65-million-left-deal-ucla-fires-ad-martin-jarmond",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-02T21:48:43.000Z",
       "firstSeen": "2026-09-01T01:11:44.372Z",
       "bestRank": 1
@@ -37946,7 +38056,7 @@
       "headline": "Sankey, SEC 'prepared to contest' judge's order in Louisiana",
       "summary": "Though the SEC said it will comply with an order that prohibits commissioner Greg Sankey from punishing schools if they roster a player who returns from a pro contract, the league said in a statement Sunday that it will defend its rights in court.",
       "url": "https://www.espn.com/college-sports/story/_/id/49778057/sankey-sec-prepared-contest-judge-order-louisiana",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-31T12:23:32.000Z",
       "firstSeen": "2026-08-31T01:06:00.592Z",
       "bestRank": 1
@@ -41620,7 +41730,7 @@
       "headline": "ACC joins other Power 4 conferences in banning pros from returning",
       "summary": "The ACC passed a resolution Thursday banning professionals from returning to college in football, plus men's and women's basketball, joining the other Power 4 conferences in setting forth eligibility enforcement.",
       "url": "https://www.espn.com/college-football/story/_/id/49746151/acc-joins-other-power-4-conferences-bans-pros-returning",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-29T11:46:47.000Z",
       "firstSeen": "2026-08-28T03:24:34.178Z",
       "bestRank": 1
@@ -42720,7 +42830,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "College basketball is in chaos over eligibility issues. Here's how we got here, the latest updates and what's next.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-29T00:45:57.000Z",
       "firstSeen": "2026-08-22T21:27:10.267Z",
       "bestRank": 1
@@ -42786,7 +42896,7 @@
       "headline": "Ruling: SEC can't sanction teams using players with NFL ties",
       "summary": "A temporary restraining order prohibits the SEC from enforcing a new rule that threatens stiff penalties for any team that uses a player who previously signed a contract to play in the NFL, NBA or WNBA.",
       "url": "https://www.espn.com/college-football/story/_/id/49753638/ruling-sec-sanction-teams-using-players-nfl-ties",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-28T23:08:04.000Z",
       "firstSeen": "2026-08-29T00:53:26.639Z",
       "bestRank": 2
@@ -45672,138 +45782,6 @@
       "published": "2026-08-27T09:35:36.000Z",
       "firstSeen": "2026-08-27T15:59:13.638Z",
       "bestRank": 16
-    },
-    {
-      "key": "49740051",
-      "id": "49740051",
-      "headline": "Another North Carolina vs. TCU opener, this one in Ireland to open Belichick's 2nd Heels season",
-      "summary": "North Carolina vs. TCU, at Dublin, Ireland, Saturday, noon EDT\r\n              How to watch: ESPN",
-      "url": "http://www.espn.com/ncf/preview?gameId=401856766",
-      "sport": "College football",
-      "published": "2026-08-27T09:10:40.000Z",
-      "firstSeen": "2026-08-27T15:59:13.638Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49740050",
-      "id": "49740050",
-      "headline": "NC State visits Virginia in Week Zero to open season with ACC matchup",
-      "summary": "N.C. State at Virginia, Saturday, 3:30 p.m. EDT\r\n              How to watch: ESPN.",
-      "url": "http://www.espn.com/ncf/preview?gameId=401858202",
-      "sport": "College football",
-      "published": "2026-08-27T09:10:37.000Z",
-      "firstSeen": "2026-08-27T15:59:13.638Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49740049",
-      "id": "49740049",
-      "headline": "Stanford hosts Hawaii in season opener for both teams",
-      "summary": "Hawaii at Stanford, Saturday 7 p.m. EDT\r\n              How to watch: ACC Network",
-      "url": "http://www.espn.com/ncf/preview?gameId=401858201",
-      "sport": "College football",
-      "published": "2026-08-27T09:10:33.000Z",
-      "firstSeen": "2026-08-27T15:59:13.638Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49740048",
-      "id": "49740048",
-      "headline": "Maiava, No. 14 Trojans begin quest for first College Football Playoff bid against Spartans",
-      "summary": "San Jose State vs. No. 14 Southern California, Saturday, 3 p.m. EDT\r\n              How to watch: NBC",
-      "url": "http://www.espn.com/ncf/preview?gameId=401864494",
-      "sport": "College football",
-      "published": "2026-08-27T09:10:29.000Z",
-      "firstSeen": "2026-08-27T15:59:13.638Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49739603",
-      "id": "49739603",
-      "headline": "Liverpool's new third kit designed to shine on European nights",
-      "summary": "Liverpool have released of their new third kit, specifically designed to glimmer and dazzle beneath the floodlights when they play Europe's elite.",
-      "url": "https://www.espn.com/soccer/story/_/id/49739603/liverpool-new-2026-27-third-kit-designed-shine-uefa-champions-league-nights",
-      "sport": "Soccer",
-      "published": "2026-08-27T08:08:37.000Z",
-      "firstSeen": "2026-08-27T09:25:22.133Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49739666",
-      "id": "49739666",
-      "headline": "Braves look to keep home win streak alive, host the Dodgers",
-      "summary": "Los Angeles Dodgers (80-53, first in the NL West) vs. Atlanta Braves (78-55, first in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816698",
-      "sport": "MLB",
-      "published": "2026-08-27T08:02:43.000Z",
-      "firstSeen": "2026-08-27T09:25:22.133Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49739665",
-      "id": "49739665",
-      "headline": "Rockies bring 2-1 series advantage over Nationals into game 4",
-      "summary": "Colorado Rockies (52-81, fifth in the NL West) vs. Washington Nationals (62-73, fourth in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816695",
-      "sport": "MLB",
-      "published": "2026-08-27T08:02:40.000Z",
-      "firstSeen": "2026-08-27T09:25:22.133Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49739664",
-      "id": "49739664",
-      "headline": "Orioles take on the Cardinals after Encarnacion-Strand's 4-hit game",
-      "summary": "Baltimore Orioles (65-68, fourth in the AL East) vs. St. Louis Cardinals (66-68, third in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816700",
-      "sport": "MLB",
-      "published": "2026-08-27T08:02:36.000Z",
-      "firstSeen": "2026-08-27T09:25:22.133Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49739663",
-      "id": "49739663",
-      "headline": "Blue Jays play the Royals with series tied 1-1",
-      "summary": "Kansas City Royals (59-75, fifth in the AL Central) vs. Toronto Blue Jays (65-69, fifth in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816697",
-      "sport": "MLB",
-      "published": "2026-08-27T08:02:32.000Z",
-      "firstSeen": "2026-08-27T09:25:22.133Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49739662",
-      "id": "49739662",
-      "headline": "Yankees and Astros play to determine series winner",
-      "summary": "Houston Astros (66-67, first in the AL West) vs. New York Yankees (75-57, second in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816696",
-      "sport": "MLB",
-      "published": "2026-08-27T08:02:29.000Z",
-      "firstSeen": "2026-08-27T09:25:22.133Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49739574",
-      "id": "49739574",
-      "headline": "Washington Mystics star Kiki Iriafen credits Nigerian mindset for rapid WNBA rise",
-      "summary": "Washington Mystics star Kiki Iriafen says her Nigerian roots have helped make her the player she is, crediting the mentality she inherited from her parents with pushing her through a rapid rise in the WNBA.",
-      "url": "https://www.espn.com/espn/story/_/id/49739574/washington-mystics-star-kiki-iriafen-credits-nigerian-mindset-rapid-wnba-rise",
-      "sport": "WNBA",
-      "published": "2026-08-27T07:54:31.000Z",
-      "firstSeen": "2026-08-27T09:25:22.133Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49739530",
-      "id": "49739530",
-      "headline": "Ipswich Town near deal for Argentina World Cup winner Exequiel Palacios - sources",
-      "summary": "Ipswich Town are closing in on the signing of Bayer Leverkusen midfielder and World Cup-winner Exequiel Palacios, sources have told ESPN.",
-      "url": "https://www.espn.com/soccer/story/_/id/49739530/ipswich-town-deal-argentina-world-cup-winner-exequiel-palacios-sources",
-      "sport": "Soccer",
-      "published": "2026-08-27T07:51:04.000Z",
-      "firstSeen": "2026-08-27T09:25:22.133Z",
-      "bestRank": 5
     }
   ]
 }
