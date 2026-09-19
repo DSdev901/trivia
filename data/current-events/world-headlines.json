@@ -1,12 +1,52 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-09-19T06:49:14.393Z",
+  "generatedAt": "2026-09-19T09:38:11.911Z",
   "retentionDays": 21,
   "windowStart": "2026-08-29",
   "windowEnd": "2026-09-19",
   "snapshotIntervalHours": 3,
-  "count": 2161,
+  "count": 2165,
   "items": [
+    {
+      "headline": "Russia holds parliamentary vote in areas it seized from Ukraine in the war",
+      "date": "2026-09-19",
+      "bucket": "Conflict",
+      "summary": "Russia's parliamentary election for the first time is being held in Ukraine's regions that Moscow illegally annexed after the start of its full-scale invasion more than 4 1/2 years ago.",
+      "url": "https://www.npr.org/2026/09/19/g-s1-144169/russia-holds-parliamentary-vote-in-areas-it-seized-from-ukraine",
+      "firstSeen": "2026-09-19T06:49:14.393Z",
+      "top": true,
+      "bestRank": 1
+    },
+    {
+      "headline": "Deadly shark attack prompts rare kill order in Western Australia",
+      "date": "2026-09-19",
+      "bucket": "World",
+      "summary": "Police boats and helicopters are patrolling Perth's beaches as authorities continue their search for the swimmer's body, and the shark that attacked him.",
+      "url": "https://www.bbc.co.uk/news/articles/cqwyzdnk442lo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-14T18:42:15.638Z",
+      "top": true,
+      "bestRank": 2
+    },
+    {
+      "headline": "Trump says son has paid back Russian for wedding party",
+      "date": "2026-09-19",
+      "bucket": "World",
+      "summary": "Reported by The Washington Post.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZlJxQ0gxb0hBYWRQV3ZwZjVTalRuYTR1MmdiY1E2TG9EdEdOdkZWdDFnU0V4VEluUWZVV0tBUHdSNVpMM1FJRG83SzhJMm1Ec0x1M1JmSEZrNl9KSHNNbmVKOUZWU1cwQTB2ZDZfRGIxQ3dYemdCU1hiaHBBOHljcjVWMXFVMUl4VTBDNWc0THlXQVVBdmYxeU1qYllnOENidTJqLQ?oc=5",
+      "top": true,
+      "bestRank": 2,
+      "firstSeen": "2026-09-19T09:38:11.911Z"
+    },
+    {
+      "headline": "Saudi Arabia issues first air raid alerts for Riyadh since Houthis escalated attacks",
+      "date": "2026-09-19",
+      "bucket": "World",
+      "summary": "Residents later received the all-clear after explosions were reported in the capital.",
+      "url": "https://www.bbc.co.uk/news/articles/cmed7el18dxpo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-19T06:49:14.393Z",
+      "top": true,
+      "bestRank": 7
+    },
     {
       "headline": "Trump says ‘anything could happen’ in US-Iran war ahead of meeting with Gulf leaders",
       "date": "2026-09-19",
@@ -18,28 +58,24 @@
       "firstSeen": "2026-09-19T06:49:14.393Z"
     },
     {
+      "headline": "Bolivia approves $1.9 billion IMF deal, eliminates diesel subsidies",
+      "date": "2026-09-19",
+      "bucket": "Economy",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZzFqV0RWS1Zpc0I1QTc3YVZMSGJjVmRIX0wxTjd3UENCWFVfU19DVk1sSDVYenNZUnJfUWhhNzMxRUl1eDZ5MUJ2NHRLck9ILTF0NU5LMGNNUU1jTTBFRnhEX0FKSVdqelFNeDVTWkpoUi1sVnNBZVo5T016cHVTckl2NnpwYlJGd2w3NGkwSUxJNHdadzF3RlltcjBhYjdNSnNXb0ZuV3l2enVpWnc0UjdRV3BoODla?oc=5",
+      "top": true,
+      "bestRank": 27,
+      "firstSeen": "2026-09-19T09:38:11.911Z"
+    },
+    {
       "headline": "Google's Gemini AI hacked three companies in security test",
       "date": "2026-09-19",
       "bucket": "World",
       "summary": "The AI model accessed the internet and guessed credentials to three websites, a Google official told the BBC.",
       "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-19T06:49:14.393Z"
-    },
-    {
-      "headline": "Saudi Arabia issues first air raid alerts for Riyadh since Houthis escalated attacks",
-      "date": "2026-09-19",
-      "bucket": "World",
-      "summary": "Residents later received the all-clear after explosions were reported in the capital.",
-      "url": "https://www.bbc.co.uk/news/articles/cmed7el18dxpo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-19T06:49:14.393Z"
-    },
-    {
-      "headline": "Russia holds parliamentary vote in areas it seized from Ukraine in the war",
-      "date": "2026-09-19",
-      "bucket": "Conflict",
-      "summary": "Russia's parliamentary election for the first time is being held in Ukraine's regions that Moscow illegally annexed after the start of its full-scale invasion more than 4 1/2 years ago.",
-      "url": "https://www.npr.org/2026/09/19/g-s1-144169/russia-holds-parliamentary-vote-in-areas-it-seized-from-ukraine",
-      "firstSeen": "2026-09-19T06:49:14.393Z"
+      "firstSeen": "2026-09-19T06:49:14.393Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "As Europe warms, Italy sees West Nile virus spread",
@@ -47,7 +83,9 @@
       "bucket": "World",
       "summary": "Italian health authorities see evidence that rising temperatures and longer warm seasons are helping mosquitoes spread West Nile virus across a wider area, during more months of the year.",
       "url": "https://www.npr.org/2026/09/19/g-s1-144162/as-europe-warms-italy-sees-west-nile-virus-spread",
-      "firstSeen": "2026-09-19T06:49:14.393Z"
+      "firstSeen": "2026-09-19T06:49:14.393Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Kerry Kennedy: 'It would be a tragedy' if Kennedy Center is demolished",
@@ -148,16 +186,6 @@
       "firstSeen": "2026-09-18T09:39:46.484Z",
       "top": true,
       "bestRank": 2
-    },
-    {
-      "headline": "Swimmer killed in shark attack off popular Western Australia beach",
-      "date": "2026-09-18",
-      "bucket": "World",
-      "summary": "Reported by FOX Weather.",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSEhzbzBXMTZhODhBYzc4bm9tYmptZmN0UUYxY1RxQVJSSy1oMDBuOFhyc3g3TUFMQzR6RXVoMnpEb1F5cm1LX0I0QW0ycVA0ckFLTjZhS2FwNFFTU2J5aGxQWXRua05sRC1La2l6aV9IOHMyQW5LY1p5ZW5PTkwyUXk1dkY5VmkwWWs1XzVwcndGTUxEVEYtQ1h4V0hFQjFLYmRNa0N1ZjJkMUN4UTRWQlRnejhUV0JL0gG-AUFVX3lxTFA1SHl2RW91SE8xc2RmQ1hMZmpLQ1dyS203N3o1Z1dnRUFZTVJYV2hGWUZoeTh6VlZBWXlybGRSeGdUNVVmTFV0U3d0OEFhWnBYWjhyVnkyNTd0WEFVT1JXLXNDQjlrTFpsMS1va3JFMldfdDRNQ1J6V3hSSU83WmJwS25QSmVoNTNCQnN3V0ZTOXJEVUxWMmtIWXQ5S3pKUkljNHpmejZsdnIyWkU2MnhtRzRYT2pnb3lhWDJjYmc?oc=5",
-      "top": true,
-      "bestRank": 2,
-      "firstSeen": "2026-09-14T18:42:15.638Z"
     },
     {
       "headline": "Popular Candy Recalled for Choking Hazard",
@@ -370,6 +398,16 @@
       "firstSeen": "2026-09-18T15:39:11.991Z"
     },
     {
+      "headline": "Explosive ‘NAZA’ Documentary, Attacked By Israeli Government, To Be Released In U.S. Theaters",
+      "date": "2026-09-18",
+      "bucket": "World",
+      "summary": "Reported by Deadline.",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5XdjUwV1NqQnJWaXhIM1ppbVRWMnBmVmxaaFkyNlhaNC01OXBqSUplTHFMWS15Mndsc2g1TE5ObUZhVkhTM0tZTHZkTG5lOUlmZlc5MnE3VXRCbkxYalRvLWI1NnNhTkFpbU5FWjl6RURQakp4ZDhF?oc=5",
+      "top": true,
+      "bestRank": 8,
+      "firstSeen": "2026-09-19T06:49:14.393Z"
+    },
+    {
       "headline": "Brazilian police arrest a suspect in dozens of killings",
       "date": "2026-09-18",
       "bucket": "World",
@@ -420,14 +458,14 @@
       "bestRank": 12
     },
     {
-      "headline": "Explosive ‘NAZA’ Documentary, Attacked By Israeli Government, To Be Released In U.S. Theaters",
+      "headline": "Bomb attack at Pakistan mosque kills at least 15, injures 50",
       "date": "2026-09-18",
       "bucket": "World",
-      "summary": "Reported by Deadline.",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5XdjUwV1NqQnJWaXhIM1ppbVRWMnBmVmxaaFkyNlhaNC01OXBqSUplTHFMWS15Mndsc2g1TE5ObUZhVkhTM0tZTHZkTG5lOUlmZlc5MnE3VXRCbkxYalRvLWI1NnNhTkFpbU5FWjl6RURQakp4ZDhF?oc=5",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZFVhV0E5M0lnWk1JWElfb0xWUzBUbVdmd1MwNFN4VmdaZEEwQUtTN2ZqcGdBOTBJa2hCZjFXYWpuZnYwbWl6ZXZrYk16ZFVPT2ZmVDk3MHNjMzV5NTdtZ19hY2ZvemV4YWxMTGlJTjh4WVpFZnZLNUFkTGg5d21US1NLQ2VFUXBkWktkYWtpYTBhRzJzTDNDdHhyeGkzUkM0MmfSAacBQVVfeXFMTm1OeHVkanI4bXhTVVZCTjdlUldpWEhwVEJHR0V3NDVOVnVUamF1Szg3UG1ua1UyOFQwUGpPY0pMUFZWNEpQRlRRQmVSVDZQWGNiMVhDX3VicHpvVVQ2d1ZUb3kxN25lUk5qN3hFYWxOQlJwdmVUTm5yWTdCNGVUUnhKVnRPTWpQcUk5YWdiQzhrN2g4eFJUd0gtRW1FM05aRVpUNkZnTEU?oc=5",
       "top": true,
       "bestRank": 13,
-      "firstSeen": "2026-09-19T06:49:14.393Z"
+      "firstSeen": "2026-09-18T12:49:34.359Z"
     },
     {
       "headline": "Russia’s drones threaten Kyiv-bound Western officials as war effort stalls",
@@ -440,16 +478,6 @@
       "firstSeen": "2026-09-18T18:41:27.635Z"
     },
     {
-      "headline": "Bomb attack at Pakistan mosque kills at least 15, injures 50",
-      "date": "2026-09-18",
-      "bucket": "World",
-      "summary": "Reported by Al Jazeera.",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZFVhV0E5M0lnWk1JWElfb0xWUzBUbVdmd1MwNFN4VmdaZEEwQUtTN2ZqcGdBOTBJa2hCZjFXYWpuZnYwbWl6ZXZrYk16ZFVPT2ZmVDk3MHNjMzV5NTdtZ19hY2ZvemV4YWxMTGlJTjh4WVpFZnZLNUFkTGg5d21US1NLQ2VFUXBkWktkYWtpYTBhRzJzTDNDdHhyeGkzUkM0MmfSAacBQVVfeXFMTm1OeHVkanI4bXhTVVZCTjdlUldpWEhwVEJHR0V3NDVOVnVUamF1Szg3UG1ua1UyOFQwUGpPY0pMUFZWNEpQRlRRQmVSVDZQWGNiMVhDX3VicHpvVVQ2d1ZUb3kxN25lUk5qN3hFYWxOQlJwdmVUTm5yWTdCNGVUUnhKVnRPTWpQcUk5YWdiQzhrN2g4eFJUd0gtRW1FM05aRVpUNkZnTEU?oc=5",
-      "top": true,
-      "bestRank": 14,
-      "firstSeen": "2026-09-18T12:49:34.359Z"
-    },
-    {
       "headline": "Nine women in South Africa have been murdered since July. We are being told to be vigilant – but where are the warnings to men? | Nolethu Ndude",
       "date": "2026-09-18",
       "bucket": "World",
@@ -460,6 +488,16 @@
       "firstSeen": "2026-09-19T06:49:14.393Z"
     },
     {
+      "headline": "'Like a scene off Jaws.' Shark kills swimmer at busy beach",
+      "date": "2026-09-18",
+      "bucket": "World",
+      "summary": "Reported by Yahoo.",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcHBvZjl1NU1YcVRrVFg3QnNWa3ZHQUxlT3N1Qk9FNVdNSGhxemUzUWQ4bU41QmlkWEpRYWRwZjhrVUlkb0FLNVAxVXhpTlR6OTZ2WWhRM3VLempZbFV0MWg5d0JuajZJck1qOGFSN3poNDNjTHFLYUdyWnZRTzc2Vk4zbEFzQm56V0hV?oc=5",
+      "top": true,
+      "bestRank": 17,
+      "firstSeen": "2026-09-19T09:38:11.911Z"
+    },
+    {
       "headline": "Iran’s Attempts to Get Around the Hormuz Blockade Are Hitting a Wall",
       "date": "2026-09-18",
       "bucket": "World",
@@ -468,6 +506,16 @@
       "top": true,
       "bestRank": 18,
       "firstSeen": "2026-09-18T09:39:46.484Z"
+    },
+    {
+      "headline": "Yemen conflict displaces 112,000 people inside country, thousands flee to Djibouti, UN migration agency says",
+      "date": "2026-09-18",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRUExZWpSNWc5WFNGWkZ0Wkt1V3FHN0ZSWmc2eTlnVTJkMjkwTGpKT2ZON3AtNFppRm9EUWtaVGY1MHNOaTJPd2dQSFk5STdTN0pMUU5kWF94ZE1PdWRmOXJ2Z1dfZmF2N3VxekRoTXJkVjMtVXd3N3AzTlNZVkdwdzFvOFRyMldtZkVDRGgyb1ZiWk5LVXNlMUlncXZIT1J5djBEd3VpcG1URlVnaWQxaW40VTRabktxQVhiQmUzRDdFcUNmT1c3RTJtZFVnYkU?oc=5",
+      "top": true,
+      "bestRank": 18,
+      "firstSeen": "2026-09-19T09:38:11.911Z"
     },
     {
       "headline": "Three students killed in Philippine school shooting, including gunman, officials say",
@@ -618,16 +666,6 @@
       "top": true,
       "bestRank": 35,
       "firstSeen": "2026-09-18T18:41:27.635Z"
-    },
-    {
-      "headline": "Scoop: Trump expected to meet with Venezuela's new leader",
-      "date": "2026-09-18",
-      "bucket": "World",
-      "summary": "Reported by Axios.",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYU5GOUVhYjREbTJJUTFTNTdkMnlEUU1IVVUyeXlQblBid2VnZ2FMUkJCZkZiVm1tbXlHM1NvLXZrajhUX2Q1QjdBNUxrdUEyejkwVHdvX1lqaUVxd3Zndl9tWlY4OUlTLWtMMkp6YjZiVHJ5LUtaVFhWekFKS1dWZUNDZmNQNGp2TXNqMA?oc=5",
-      "top": true,
-      "bestRank": 35,
-      "firstSeen": "2026-09-19T01:10:11.404Z"
     },
     {
       "headline": "Chinese ship rams Philippines gov’t vessel in South China Sea: Coastguard",
@@ -1588,6 +1626,16 @@
       "top": true,
       "bestRank": 34,
       "firstSeen": "2026-09-17T21:36:54.903Z"
+    },
+    {
+      "headline": "Scoop: Trump expected to meet with Venezuela's new leader",
+      "date": "2026-09-17",
+      "bucket": "World",
+      "summary": "Reported by axios.com.",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYU5GOUVhYjREbTJJUTFTNTdkMnlEUU1IVVUyeXlQblBid2VnZ2FMUkJCZkZiVm1tbXlHM1NvLXZrajhUX2Q1QjdBNUxrdUEyejkwVHdvX1lqaUVxd3Zndl9tWlY4OUlTLWtMMkp6YjZiVHJ5LUtaVFhWekFKS1dWZUNDZmNQNGp2TXNqMA?oc=5",
+      "top": true,
+      "bestRank": 35,
+      "firstSeen": "2026-09-19T01:10:11.404Z"
     },
     {
       "headline": "What Policymakers and the Public Need to Know About the Cult of AI",
