@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-20T12:34:37.551Z",
+  "generatedAt": "2026-09-20T15:24:20.397Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-30T12:34:37.551Z",
-  "windowEnd": "2026-09-20T12:34:37.551Z",
+  "windowStart": "2026-08-30T15:24:20.397Z",
+  "windowEnd": "2026-09-20T15:24:20.397Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,16 +21,236 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4266,
+  "count": 4264,
   "items": [
+    {
+      "key": "49989547",
+      "id": "49989547",
+      "headline": "Sources: 49ers owner Jed York won't attend home opener",
+      "summary": "49ers owner Jed York, who was in Australia but did not attend his team's regular-season opener, also will miss Sunday's home opener in San Francisco against the Dolphins, sources told ESPN.",
+      "url": "https://www.espn.com/nfl/story/_/id/49989547/sources-49ers-owner-jed-york-attend-home-opener",
+      "sport": "NFL",
+      "published": "2026-09-20T15:15:21.000Z",
+      "firstSeen": "2026-09-20T15:24:20.397Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49965274",
+      "id": "49965274",
+      "headline": "Fantasy football Week 2 inactives: Collins and Flowers ruled out, Burrow and Nacua questionable",
+      "summary": "Updated inactives and analysis based on the latest reports and official announcements leading up to kickoff.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-49965274/fantasy-football-injuries-nfl-week-2-inactive-active",
+      "sport": "NFL",
+      "published": "2026-09-20T15:14:57.000Z",
+      "firstSeen": "2026-09-19T00:59:10.760Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49951327",
+      "id": "49951327",
+      "headline": "NFL Week 2 predictions: Upsets, fantasy sleepers, stat lines",
+      "summary": "Will Ashton Jeanty pile up the scrimmage yards? Could the Bengals upset the Texans? And can George Pickens find the end zone?",
+      "url": "https://www.espn.com/nfl/story/_/id/49951327/week-2-predictions-upsets-fantasy-sleepers-stats-2026",
+      "sport": "NFL",
+      "published": "2026-09-20T14:51:31.000Z",
+      "firstSeen": "2026-09-19T12:34:01.575Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49982020",
+      "id": "49982020",
+      "headline": "Sources: Steelers eye Week 3 return for CB Joey Porter Jr.",
+      "summary": "The Steelers are planning for Joey Porter Jr. to potentially return for their Week 3 game against the Bengals, sources told ESPN.",
+      "url": "https://www.espn.com/nfl/story/_/id/49982020/sources-steelers-eye-potential-week-3-joey-porter-jr",
+      "sport": "NFL",
+      "published": "2026-09-20T14:50:56.000Z",
+      "firstSeen": "2026-09-20T12:34:37.551Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49984903",
+      "id": "49984903",
+      "headline": "Week 2 NFL highlights: Best plays, moments, touchdowns, more",
+      "summary": "Check out the best of the best from Week 2 around the NFL, including highlight-reel touchdowns and must-see plays.",
+      "url": "https://www.espn.com/nfl/story/_/id/49984903/week-2-highlights-best-plays-touchdowns-2026",
+      "sport": "NFL",
+      "published": "2026-09-20T14:48:04.000Z",
+      "firstSeen": "2026-09-20T15:24:20.397Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49988514",
+      "id": "49988514",
+      "headline": "D-backs honor their 2001 World Series-winning team",
+      "summary": "D-backs honor their 2001 World Series-winning team",
+      "url": "https://www.espn.com/video/clip/_/id/49988514/d-backs-honor-their-2001-world-series-winning-team",
+      "sport": "MLB",
+      "published": "2026-09-20T14:40:18.000Z",
+      "firstSeen": "2026-09-20T15:24:20.397Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49988282",
+      "id": "49988282",
+      "headline": "Alex Eala aims for second WTA 500 title at Singapore Tennis Open",
+      "summary": "Alex Eala has gotten a first-round bye at the Singapore Tennis Open as she eyes a second WTA 500 title this week.",
+      "url": "https://www.espn.com/tennis/story/_/id/49988282/alex-eala-aims-second-wta-500-title-singapore-tennis-open",
+      "sport": "Tennis",
+      "published": "2026-09-20T14:08:00.000Z",
+      "firstSeen": "2026-09-20T15:24:20.397Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49985471",
+      "id": "49985471",
+      "headline": "Broncos remain confident in OC Davis Webb as playcaller",
+      "summary": "The Broncos maintain a \"high level of confidence and comfort\" in Davis Webb as their offensive playcaller, a team source told ESPN.",
+      "url": "https://www.espn.com/nfl/story/_/id/49985471/source-broncos-confident-davis-webb-playcaller",
+      "sport": "NFL",
+      "published": "2026-09-20T13:42:32.000Z",
+      "firstSeen": "2026-09-20T12:34:37.551Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49976142",
+      "id": "49976142",
+      "headline": "What to expect from Patriots QB Drake Maye vs. the Steelers",
+      "summary": "New England wants Maye to be patient but aggressive. Can he have success against the daunting Pittsburgh defense?",
+      "url": "https://www.espn.com/nfl/story/_/id/49976142/new-england-patriots-drake-maye-week-2",
+      "sport": "NFL",
+      "published": "2026-09-20T13:26:15.000Z",
+      "firstSeen": "2026-09-20T12:34:37.551Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49803708",
+      "id": "49803708",
+      "headline": "Fantasy football flex and superflex rankings for Week 2",
+      "summary": "Trying to decide between a couple of closely ranked players this week? Eric Karabell's rankings are here to help.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49803708/fantasy-football-superflex-rankings-2026-qb-rb-wr-te",
+      "sport": "NFL",
+      "published": "2026-09-20T13:24:33.000Z",
+      "firstSeen": "2026-09-05T00:58:39.682Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49988672",
+      "id": "49988672",
+      "headline": "Bruno Guimarães: Arsenal performance in Brighton defeat not fit for champions",
+      "summary": "Bruno Guimarães said Arsenal's \"unacceptable\" performance in their defeat at Brighton was not fit for a Premier League champions' shirt.",
+      "url": "https://www.espn.com/soccer/story/_/id/49988672/bruno-guimaraes-arsenal-performance-brighton-defeat-not-fit-champions",
+      "sport": "Soccer",
+      "published": "2026-09-20T13:19:07.000Z",
+      "firstSeen": "2026-09-20T15:24:20.397Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804332",
+      "id": "49804332",
+      "headline": "Fantasy football rankings for Week 2: IDP",
+      "summary": "Weekly fantasy football draft rankings for IDP leagues from Mike Clay, Tristan H. Cockcroft and Eric Moody.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804332/nfl-fantasy-football-rankings-2026-idp",
+      "sport": "NFL",
+      "published": "2026-09-20T13:04:23.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49804273",
+      "id": "49804273",
+      "headline": "Fantasy football rankings for Week 2: D/ST",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804273/nfl-fantasy-football-rankings-2026-dst-defense",
+      "sport": "NFL",
+      "published": "2026-09-20T13:03:55.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49804233",
+      "id": "49804233",
+      "headline": "Fantasy football rankings for Week 2: Kicker",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804233/nfl-fantasy-football-rankings-2026-k-kicker",
+      "sport": "NFL",
+      "published": "2026-09-20T13:03:33.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804164",
+      "id": "49804164",
+      "headline": "Fantasy football rankings for Week 2: Tight end",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804164/nfl-fantasy-football-rankings-2026-te-tight-end",
+      "sport": "NFL",
+      "published": "2026-09-20T13:03:06.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49804149",
+      "id": "49804149",
+      "headline": "Fantasy football rankings for Week 2: Wide receiver",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804149/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
+      "sport": "NFL",
+      "published": "2026-09-20T13:02:44.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49804068",
+      "id": "49804068",
+      "headline": "Fantasy football rankings for Week 2: Running back",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804068/nfl-fantasy-football-rankings-2026-rb-running-back",
+      "sport": "NFL",
+      "published": "2026-09-20T13:02:23.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49804022",
+      "id": "49804022",
+      "headline": "Fantasy football rankings for Week 2: Quarterback",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804022/nfl-fantasy-football-rankings-2026-qb-quarterback",
+      "sport": "NFL",
+      "published": "2026-09-20T13:02:04.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49797082",
+      "id": "49797082",
+      "headline": "Fantasy football rankings Week 2: PPR and superflex",
+      "summary": "Weekly composite ranks for each position in PPR and IDP formats, as well as Eric Karabell's superflex ranks.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26main-49797082/fantasy-football-rankings-2026-qb-rb-wr-te-dst",
+      "sport": "NFL",
+      "published": "2026-09-20T13:01:41.000Z",
+      "firstSeen": "2026-09-04T18:29:30.987Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49979910",
+      "id": "49979910",
+      "headline": "Projecting the College Football Playoff top 12 after Week 3",
+      "summary": "We assess how the selection committee could stack the top teams in the country after Week 3.",
+      "url": "https://www.espn.com/college-football/story/_/id/49979910/projecting-2026-college-football-playoff-top-12-week-3",
+      "sport": "College football",
+      "published": "2026-09-20T13:00:40.000Z",
+      "firstSeen": "2026-09-20T06:39:17.347Z",
+      "bestRank": 10
+    },
     {
       "key": "49985301",
       "id": "49985301",
       "headline": "Browns expected to evaluate QB situation ahead of Week 3",
-      "summary": "The Browns are expected to evaluate their QB situation after their Week 2 game against the Buccaneers.",
+      "summary": "The Browns are expected to evaluate their quarterback situation after their Week 2 game against the Buccaneers.",
       "url": "https://www.espn.com/nfl/story/_/id/49985301/browns-expected-evaluate-qb-situation-ahead-week-3",
       "sport": "NFL",
-      "published": "2026-09-20T12:27:34.000Z",
+      "published": "2026-09-20T12:39:49.000Z",
       "firstSeen": "2026-09-20T12:34:37.551Z",
       "bestRank": 5
     },
@@ -41,31 +261,9 @@
       "summary": "Colts wide receiver Keenan Allen, who was formally charged last week with two misdemeanor offenses stemming from his drunken driving arrest in downtown Indianapolis last month, is facing a minimum three-game suspension, sources told ESPN.",
       "url": "https://www.espn.com/nfl/story/_/id/49983528/sources-colts-keenan-allen-faces-minimum-3-game-suspension",
       "sport": "NFL",
-      "published": "2026-09-20T12:25:44.000Z",
+      "published": "2026-09-20T12:33:56.000Z",
       "firstSeen": "2026-09-20T12:34:37.551Z",
       "bestRank": 4
-    },
-    {
-      "key": "49982020",
-      "id": "49982020",
-      "headline": "Sources: Steelers eye Week 3 return for CB Joey Porter Jr.",
-      "summary": "The Steelers are planning for Joey Porter Jr. to potentially return for their Week 3 game against the Bengals, sources told ESPN.",
-      "url": "https://www.espn.com/nfl/story/_/id/49982020/sources-steelers-eye-potential-week-3-joey-porter-jr",
-      "sport": "NFL",
-      "published": "2026-09-20T12:23:05.000Z",
-      "firstSeen": "2026-09-20T12:34:37.551Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49985471",
-      "id": "49985471",
-      "headline": "Broncos remain confident in OC Davis Webb as playcaller",
-      "summary": "The Broncos maintain a \"high level of confidence and comfort\" in Davis Webb as their offensive playcaller, a team source told ESPN.",
-      "url": "https://www.espn.com/nfl/story/_/id/49985471/source-broncos-confident-davis-webb-playcaller",
-      "sport": "NFL",
-      "published": "2026-09-20T12:22:06.000Z",
-      "firstSeen": "2026-09-20T12:34:37.551Z",
-      "bestRank": 1
     },
     {
       "key": "49985117",
@@ -79,15 +277,26 @@
       "bestRank": 10
     },
     {
-      "key": "49965274",
-      "id": "49965274",
-      "headline": "Fantasy football Week 2 inactives: Collins and Flowers ruled out, Burrow and Nacua questionable",
-      "summary": "Updated inactives and analysis based on the latest reports and official announcements leading up to kickoff.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-49965274/fantasy-football-injuries-nfl-week-2-inactive-active",
-      "sport": "NFL",
-      "published": "2026-09-20T12:12:49.000Z",
-      "firstSeen": "2026-09-19T00:59:10.760Z",
-      "bestRank": 1
+      "key": "49986903",
+      "id": "49986903",
+      "headline": "Golding: Beating LSU 'sweet' but not Ole Miss' 'Super Bowl'",
+      "summary": "While Ole Miss is basking in its victory over former coach Lane Kiffin and his LSU Tigers, Pete Golding cautioned that his team is aiming for higher goals this season.",
+      "url": "https://www.espn.com/college-football/story/_/id/49986903/golding-beating-lsu-sweet-not-ole-miss-super-bowl",
+      "sport": "College football",
+      "published": "2026-09-20T12:11:16.000Z",
+      "firstSeen": "2026-09-20T09:26:34.910Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49987109",
+      "id": "49987109",
+      "headline": "Lane Kiffin reflective as LSU falls in coach's Ole Miss return",
+      "summary": "After his LSU Tigers fell to the Ole Miss Rebels 32-24 on Saturday night, coach Lane Kiffin spoke of the \"emotions of gratefulness\" he has for Oxford, Mississippi, and the six years he and his family spent there, a tenure that \"went well beyond football.\"",
+      "url": "https://www.espn.com/college-football/story/_/id/49987109/lane-kiffin-reflective-defeat-lsu-falls-ole-miss",
+      "sport": "College football",
+      "published": "2026-09-20T11:52:40.000Z",
+      "firstSeen": "2026-09-20T09:26:34.910Z",
+      "bestRank": 5
     },
     {
       "key": "48297021",
@@ -98,6 +307,17 @@
       "sport": "MLB",
       "published": "2026-09-20T11:41:33.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49981095",
+      "id": "49981095",
+      "headline": "Micah Gordon becomes Creighton's highest-ranked recruit ever",
+      "summary": "Point guard Micah Gordon, No. 30 in the SC Next 100, becomes the highest-ranked recruit to ever commit to Creighton.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/49981095/micah-gordon-becomes-creighton-highest-ranked-recruit-ever",
+      "sport": "College basketball",
+      "published": "2026-09-20T11:40:33.000Z",
+      "firstSeen": "2026-09-19T21:23:14.161Z",
       "bestRank": 1
     },
     {
@@ -211,17 +431,6 @@
       "bestRank": 9
     },
     {
-      "key": "49976142",
-      "id": "49976142",
-      "headline": "What to expect from Patriots QB Drake Maye vs. the Steelers",
-      "summary": "New England wants Maye to be patient but aggressive. Can he have success against the daunting Pittsburgh defense?",
-      "url": "https://www.espn.com/nfl/story/_/id/49976142/new-england-patriots-drake-maye-week-2",
-      "sport": "NFL",
-      "published": "2026-09-20T10:00:02.000Z",
-      "firstSeen": "2026-09-20T12:34:37.551Z",
-      "bestRank": 7
-    },
-    {
       "key": "49987712",
       "id": "49987712",
       "headline": "Tottenham boss Roberto De Zerbi wants more from Dominic Solanke: 'Not good enough'",
@@ -242,6 +451,17 @@
       "published": "2026-09-20T09:10:10.000Z",
       "firstSeen": "2026-09-19T21:23:14.161Z",
       "bestRank": 5
+    },
+    {
+      "key": "49977765",
+      "id": "49977765",
+      "headline": "Asian Games: Alex Eala carries Philippine flag regardless of cost",
+      "summary": "Alex Eala found herself at a crossroads with a choice between playing for herself and playing for the Philippines. The choice was easy. She chose her country.",
+      "url": "https://www.espn.com/espn/story/_/id/49977765/asian-games-2026-aichi-nagoya-alex-eala-carries-philippine-flag-regardless-cost",
+      "sport": "Tennis",
+      "published": "2026-09-20T09:02:56.000Z",
+      "firstSeen": "2026-09-20T15:24:20.397Z",
+      "bestRank": 2
     },
     {
       "key": "49703019",
@@ -418,17 +638,6 @@
       "published": "2026-09-20T07:51:26.000Z",
       "firstSeen": "2026-09-20T09:26:34.910Z",
       "bestRank": 9
-    },
-    {
-      "key": "49987109",
-      "id": "49987109",
-      "headline": "Lane Kiffin reflective in defeat, as LSU falls to Ole Miss",
-      "summary": "After his LSU Tigers fell to the Ole Miss Rebels 32-24 on Saturday night, coach Lane Kiffin spoke of the \"emotions of gratefulness\" he has for Oxford, Mississippi, and the six years he and his family spent there, a tenure that \"went well beyond football.\"",
-      "url": "https://www.espn.com/college-football/story/_/id/49987109/lane-kiffin-reflective-defeat-lsu-falls-ole-miss",
-      "sport": "College football",
-      "published": "2026-09-20T07:19:17.000Z",
-      "firstSeen": "2026-09-20T09:26:34.910Z",
-      "bestRank": 5
     },
     {
       "key": "49987321",
@@ -618,17 +827,6 @@
       "bestRank": 10
     },
     {
-      "key": "49986903",
-      "id": "49986903",
-      "headline": "Golding: Beating LSU 'sweet' but not Ole Miss' 'Super Bowl'",
-      "summary": "While Ole Miss is basking in its victory over former coach Lane Kiffin and his LSU Tigers, Pete Golding cautioned that his team is aiming for higher goals this season.",
-      "url": "https://www.espn.com/college-football/story/_/id/49986903/golding-beating-lsu-sweet-not-ole-miss-super-bowl",
-      "sport": "College football",
-      "published": "2026-09-20T06:22:58.000Z",
-      "firstSeen": "2026-09-20T09:26:34.910Z",
-      "bestRank": 12
-    },
-    {
       "key": "49890910",
       "id": "49890910",
       "headline": "Why is college football coming to Wembley? The plan to make London a new home for U.S. juggernaut",
@@ -792,17 +990,6 @@
       "published": "2026-09-20T05:37:52.000Z",
       "firstSeen": "2026-09-20T09:26:34.910Z",
       "bestRank": 11
-    },
-    {
-      "key": "49979910",
-      "id": "49979910",
-      "headline": "Projecting the College Football Playoff top 12 after Week 3",
-      "summary": "We assess how the selection committee could stack the top teams in the country after Week 3.",
-      "url": "https://www.espn.com/college-football/story/_/id/49979910/projecting-2026-college-football-playoff-top-12-week-3",
-      "sport": "College football",
-      "published": "2026-09-20T05:36:35.000Z",
-      "firstSeen": "2026-09-20T06:39:17.347Z",
-      "bestRank": 10
     },
     {
       "key": "49986901",
@@ -2686,17 +2873,6 @@
       "bestRank": 4
     },
     {
-      "key": "49981095",
-      "id": "49981095",
-      "headline": "Micah Gordon becomes Creighton's highest-ranked recruit ever",
-      "summary": "Point guard Micah Gordon, No. 30 in the SC Next 100, becomes the highest-ranked recruit to ever commit to Creighton.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/49981095/micah-gordon-becomes-creighton-highest-ranked-recruit-ever",
-      "sport": "College basketball",
-      "published": "2026-09-19T18:20:44.000Z",
-      "firstSeen": "2026-09-19T21:23:14.161Z",
-      "bestRank": 1
-    },
-    {
       "key": "49980158",
       "id": "49980158",
       "headline": "Brighton rout Arsenal to end Premier League champions' 100% record",
@@ -2805,17 +2981,6 @@
       "published": "2026-09-19T16:21:57.000Z",
       "firstSeen": "2026-09-19T18:28:15.854Z",
       "bestRank": 2
-    },
-    {
-      "key": "49951327",
-      "id": "49951327",
-      "headline": "NFL Week 2 predictions: Upsets, fantasy sleepers, stat lines",
-      "summary": "Will Ashton Jeanty pile up the scrimmage yards? Could the Bengals upset the Texans? And can George Pickens find the end zone?",
-      "url": "https://www.espn.com/nfl/story/_/id/49951327/week-2-predictions-upsets-fantasy-sleepers-stats-2026",
-      "sport": "NFL",
-      "published": "2026-09-19T16:16:31.000Z",
-      "firstSeen": "2026-09-19T12:34:01.575Z",
-      "bestRank": 1
     },
     {
       "key": "49979219",
@@ -3564,94 +3729,6 @@
       "published": "2026-09-19T04:15:50.000Z",
       "firstSeen": "2026-09-19T09:26:29.197Z",
       "bestRank": 1
-    },
-    {
-      "key": "49797082",
-      "id": "49797082",
-      "headline": "Fantasy football rankings Week 2: PPR and superflex",
-      "summary": "Weekly composite ranks for each position in PPR and IDP formats, as well as Eric Karabell's superflex ranks.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26main-49797082/fantasy-football-rankings-2026-qb-rb-wr-te-dst",
-      "sport": "NFL",
-      "published": "2026-09-19T04:15:13.000Z",
-      "firstSeen": "2026-09-04T18:29:30.987Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804233",
-      "id": "49804233",
-      "headline": "Fantasy football rankings for Week 2: Kicker",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804233/nfl-fantasy-football-rankings-2026-k-kicker",
-      "sport": "NFL",
-      "published": "2026-09-19T04:14:53.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804273",
-      "id": "49804273",
-      "headline": "Fantasy football rankings for Week 2: D/ST",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804273/nfl-fantasy-football-rankings-2026-dst-defense",
-      "sport": "NFL",
-      "published": "2026-09-19T04:14:37.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49804149",
-      "id": "49804149",
-      "headline": "Fantasy football rankings for Week 2: Wide receiver",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804149/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
-      "sport": "NFL",
-      "published": "2026-09-19T04:14:18.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49804068",
-      "id": "49804068",
-      "headline": "Fantasy football rankings for Week 2: Running back",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804068/nfl-fantasy-football-rankings-2026-rb-running-back",
-      "sport": "NFL",
-      "published": "2026-09-19T04:13:57.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49804022",
-      "id": "49804022",
-      "headline": "Fantasy football rankings for Week 2: Quarterback",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804022/nfl-fantasy-football-rankings-2026-qb-quarterback",
-      "sport": "NFL",
-      "published": "2026-09-19T04:13:32.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49804164",
-      "id": "49804164",
-      "headline": "Fantasy football rankings for Week 2: Tight end",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804164/nfl-fantasy-football-rankings-2026-te-tight-end",
-      "sport": "NFL",
-      "published": "2026-09-19T04:13:11.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49804332",
-      "id": "49804332",
-      "headline": "Fantasy football rankings for Week 2: IDP",
-      "summary": "Weekly fantasy football draft rankings for IDP leagues from Mike Clay, Tristan H. Cockcroft and Eric Moody.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804332/nfl-fantasy-football-rankings-2026-idp",
-      "sport": "NFL",
-      "published": "2026-09-19T04:12:50.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 4
     },
     {
       "key": "49976900",
@@ -4411,17 +4488,6 @@
       "published": "2026-09-18T20:51:42.000Z",
       "firstSeen": "2026-09-18T21:24:18.650Z",
       "bestRank": 7
-    },
-    {
-      "key": "49803708",
-      "id": "49803708",
-      "headline": "Fantasy football flex and superflex rankings for Week 2",
-      "summary": "Trying to decide between a couple of closely ranked players this week? Eric Karabell's rankings are here to help.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49803708/fantasy-football-superflex-rankings-2026-qb-rb-wr-te",
-      "sport": "NFL",
-      "published": "2026-09-18T20:42:06.000Z",
-      "firstSeen": "2026-09-05T00:58:39.682Z",
-      "bestRank": 2
     },
     {
       "key": "49965480",
@@ -8807,7 +8873,7 @@
       "headline": "Reports: Miami Hurricanes returning to Nike in '27 on $200M+ deal",
       "summary": "University of Miami athletic teams will be wearing Nike apparel again starting in July 2027, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/49958590/report-miami-hurricanes-going-back-nike-200m+-deal",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-16T19:04:20.000Z",
       "firstSeen": "2026-09-16T21:25:45.412Z",
       "bestRank": 1
@@ -13196,7 +13262,7 @@
       "headline": "FSU fires AD Michael Alford amid looming football questions",
       "summary": "Florida State fired athletic director Michael Alford on Monday as the Seminoles grapple with looming decisions about their football program.",
       "url": "https://www.espn.com/college-football/story/_/id/49939737/fsu-fires-ad-michael-alford-amid-looming-football-questions",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-14T18:30:25.000Z",
       "firstSeen": "2026-09-14T15:28:36.074Z",
       "bestRank": 1
@@ -24977,7 +25043,7 @@
       "headline": "CSC clears $227M+ in NIL deals in July, August in major increase",
       "summary": "The College Sports Commission cleared more than $227 million in NIL deals in July and August, nearly doubling the value of all the deals cleared in its first year of existence.",
       "url": "https://www.espn.com/espn/story/_/id/49882283/csc-clears-227m-nil-deals-july-august-major-increase",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-09T19:03:51.000Z",
       "firstSeen": "2026-09-09T21:23:12.453Z",
       "bestRank": 1
@@ -37099,7 +37165,7 @@
       "headline": "Judge grants injunction to pro players seeking LSU return",
       "summary": "Dae'Quan Wright and Zxavian Harris are currently cleared to return to college football after brief stints in the NFL, according to a judge's orders issued Thursday evening, setting up a dramatic showdown between the SEC and LSU.",
       "url": "https://www.espn.com/college-football/story/_/id/49807088/judge-grants-injunction-pro-players-seeking-lsu-return",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-04T12:40:04.000Z",
       "firstSeen": "2026-09-04T03:31:23.580Z",
       "bestRank": 1
@@ -40674,7 +40740,7 @@
       "headline": "With $6.5 million left on deal, UCLA fires AD Martin Jarmond",
       "summary": "UCLA fired athletic director Martin Jarmond on Monday, with chancellor Julio Frenk explaining in a letter to the UCLA community that the Bruins' athletic program \"currently carries a significant financial deficit, and its current path is not sustainable.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49788304/with-65-million-left-deal-ucla-fires-ad-martin-jarmond",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-02T21:48:43.000Z",
       "firstSeen": "2026-09-01T01:11:44.372Z",
       "bestRank": 1
@@ -45228,7 +45294,7 @@
       "headline": "Sankey, SEC 'prepared to contest' judge's order in Louisiana",
       "summary": "Though the SEC said it will comply with an order that prohibits commissioner Greg Sankey from punishing schools if they roster a player who returns from a pro contract, the league said in a statement Sunday that it will defend its rights in court.",
       "url": "https://www.espn.com/college-sports/story/_/id/49778057/sankey-sec-prepared-contest-judge-order-louisiana",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-08-31T12:23:32.000Z",
       "firstSeen": "2026-08-31T01:06:00.592Z",
       "bestRank": 1
@@ -46859,94 +46925,6 @@
       "sport": "MLB",
       "published": "2026-08-30T15:29:49.000Z",
       "firstSeen": "2026-08-30T15:23:17.640Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49772934",
-      "id": "49772934",
-      "headline": "New Mexico State Aggies vs. Florida State Seminoles: Full Highlights",
-      "summary": "New Mexico State Aggies vs. Florida State Seminoles: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49772934/full-highlights",
-      "sport": "College football",
-      "published": "2026-08-30T15:13:30.000Z",
-      "firstSeen": "2026-08-30T15:23:17.640Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49754391",
-      "id": "49754391",
-      "headline": "Coco Gauff backs mother for squashing US Open ticket requests",
-      "summary": "Coco Gauff was caught by surprise when she saw her mom take to social media about excessive US Open ticket requests from family and friends. That doesn't mean she has any issue with it.",
-      "url": "https://www.espn.com/tennis/story/_/id/49754391/coco-gauff-backs-mother-squashing-us-open-ticket-requests",
-      "sport": "Tennis",
-      "published": "2026-08-30T14:37:39.000Z",
-      "firstSeen": "2026-08-28T21:31:53.473Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49768621",
-      "id": "49768621",
-      "headline": "East Texas A&M Lions vs. Mercer Bears: Full Highlights",
-      "summary": "Texas A&M-Commerce Lions vs. Mercer Bears: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49768621/full-highlights",
-      "sport": "College football",
-      "published": "2026-08-30T14:30:31.000Z",
-      "firstSeen": "2026-08-30T06:37:27.531Z",
-      "bestRank": 17
-    },
-    {
-      "key": "49766398",
-      "id": "49766398",
-      "headline": "Sources: Cowboys acquire OT Jones in exchange for draft picks",
-      "summary": "The Steelers are sending 2023 first-round pick Broderick Jones and a fourth-round pick in 2027 to the Cowboys in exchange for a 2027 third- and sixth-round pick, sources told ESPN.",
-      "url": "https://www.espn.com/nfl/story/_/id/49766398/sources-cowboys-acquire-ot-jones-exchange-two-draft-picks",
-      "sport": "NFL",
-      "published": "2026-08-30T14:19:45.000Z",
-      "firstSeen": "2026-08-30T01:04:32.881Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49766615",
-      "id": "49766615",
-      "headline": "Beau Pribula dazzles in Virginia debut as Cavaliers overwhelm NC State 34-8 in season, ACC opener",
-      "summary": "— Transfer quarterback Beau Pribula dazzled in his Virginia debut as the Cavaliers drilled visiting North Carolina State 34-8 in the season and ACC opener for both squads on Saturday at Scott Stadium.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858202",
-      "sport": "College football",
-      "published": "2026-08-30T14:12:29.000Z",
-      "firstSeen": "2026-08-30T01:04:32.881Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49766584",
-      "id": "49766584",
-      "headline": "William Jewell College RB dies after medical emergency during game",
-      "summary": "William Jewell College junior running back Micah Jo Barnett died after experiencing a medical emergency on the sideline during the Missouri-based Division II school's season opener.",
-      "url": "https://www.espn.com/college-football/story/_/id/49766584/william-jewell-college-rb-dies-medical-emergency-game",
-      "sport": "College football",
-      "published": "2026-08-30T13:17:45.000Z",
-      "firstSeen": "2026-08-30T01:04:32.881Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49771881",
-      "id": "49771881",
-      "headline": "Paul Finebaum eats some crow after Belichick, UNC top TCU",
-      "summary": "Paul Finebaum eats some crow after Belichick, UNC top TCU",
-      "url": "https://www.espn.com/video/clip/_/id/49771881/paul-finebaum-eats-some-crow-belichick-unc-top-tcu",
-      "sport": "College football",
-      "published": "2026-08-30T13:05:03.000Z",
-      "firstSeen": "2026-08-30T15:23:17.640Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49770739",
-      "id": "49770739",
-      "headline": "Every time Messi scored 4 goals for Barcelona, Inter Miami, Argentina",
-      "summary": "Lionel Messi grabbed the headlines on Saturday by scoring four goals in Inter Miami's 7-1 win over Montréal. But the feat is nothing new for the GOAT.",
-      "url": "https://www.espn.com/soccer/story/_/id/49770739/every-lionel-messi-scored-4-goals-more-barcelona-inter-miami-argentina",
-      "sport": "Soccer",
-      "published": "2026-08-30T12:48:39.000Z",
-      "firstSeen": "2026-08-30T12:33:16.358Z",
       "bestRank": 1
     }
   ]
