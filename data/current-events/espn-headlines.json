@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-21T01:05:55.901Z",
+  "generatedAt": "2026-09-21T03:35:19.877Z",
   "retentionDays": 21,
-  "windowStart": "2026-08-31T01:05:55.901Z",
-  "windowEnd": "2026-09-21T01:05:55.901Z",
+  "windowStart": "2026-08-31T03:35:19.877Z",
+  "windowEnd": "2026-09-21T03:35:19.877Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,536 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4349,
+  "count": 4365,
   "items": [
+    {
+      "key": "49995389",
+      "id": "49995389",
+      "headline": "Nashville turf temp of 157 F melts cleats, sends Sirianni for IV",
+      "summary": "Players' cleats were melting and Eagles coach Nick Sirianni needed an IV as a result of extreme heat conditions at Nissan Stadium during Sunday's game between Philadelphia and the Tennessee Titans, a 24-20 win for the Eagles.",
+      "url": "https://www.espn.com/nfl/story/_/id/49995389/turf-temps-157-f-nashville-melts-cleats",
+      "sport": "NFL",
+      "published": "2026-09-21T03:31:11.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49995944",
+      "id": "49995944",
+      "headline": "Lock, Smith-Njigba have Seahawks 2-0 with Darnold ahead of schedule",
+      "summary": "Seahawks coach Mike Macdonald said QB Sam Darnold could return to practice this week and did not rule out the possibility that he plays next Sunday. In the meantime, backup Drew Lock has Seattle 2-0 with plenty of help from receiver Jaxon Smith-Njigba.",
+      "url": "https://www.espn.com/nfl/story/_/id/49995944/drew-lock-jaxon-smith-njigba-seahawks-2-0-sam-darnold-ahead-schedule",
+      "sport": "NFL",
+      "published": "2026-09-21T03:25:11.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49993422",
+      "id": "49993422",
+      "headline": "Commanders QB Jayden Daniels suffers dislocated elbow vs. Cowboys",
+      "summary": "Commanders quarterback Jayden Daniels was carted off the field in Sunday's game against the Cowboys after dislocating his left elbow on the final play of the first half.",
+      "url": "https://www.espn.com/nfl/story/_/id/49993422/commanders-qb-jayden-daniels-suffers-elbow-injury-cowboys",
+      "sport": "NFL",
+      "published": "2026-09-21T03:16:28.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 35
+    },
+    {
+      "key": "49995676",
+      "id": "49995676",
+      "headline": "Kirk Cousins' 'phenomenal' play has new-look Raiders at 2-0",
+      "summary": "Kirk Cousins has done more than just help the Raiders transition through a rebuilding process after two games, leading Las Vegas to its first 2-0 record since 2021.",
+      "url": "https://www.espn.com/nfl/story/_/id/49995676/kirk-cousins-phenomenal-play-new-look-raiders-2-0",
+      "sport": "NFL",
+      "published": "2026-09-21T03:12:03.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49995560",
+      "id": "49995560",
+      "headline": "QB Baker Mayfield says Bucs need to 'fight our way out' of 0-2 start",
+      "summary": "Buccaneers quarterback Baker Mayfield admitted to being \"pretty shocked\" the Bucs are 0-2 for the first time since he has been their quarterback and the first time since 2014 after losing to his former team, the Browns, 23-19.",
+      "url": "https://www.espn.com/nfl/story/_/id/49995560/qb-baker-mayfield-says-bucs-need-fight-our-way-0-2-start",
+      "sport": "NFL",
+      "published": "2026-09-21T03:05:25.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49984903",
+      "id": "49984903",
+      "headline": "Week 2 NFL highlights: Best plays, moments, touchdowns, more",
+      "summary": "Check out the best of the best from Week 2 around the NFL, including highlight-reel touchdowns and must-see plays.",
+      "url": "https://www.espn.com/nfl/story/_/id/49984903/week-2-highlights-best-plays-touchdowns-2026",
+      "sport": "NFL",
+      "published": "2026-09-21T03:04:23.000Z",
+      "firstSeen": "2026-09-20T15:24:20.397Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49995377",
+      "id": "49995377",
+      "headline": "Colts' Alec Pierce hurts heel; X-rays negative, source says",
+      "summary": "Colts wide receiver Alec Pierce was ruled out of Sunday night's game against the Kansas City Chiefs after suffering a left heel injury with 1:45 left in the first quarter.",
+      "url": "https://www.espn.com/nfl/story/_/id/49995377/colts-rule-alec-pierce-left-heel-injury-vs-chiefs",
+      "sport": "NFL",
+      "published": "2026-09-21T03:01:17.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49995729",
+      "id": "49995729",
+      "headline": "Sirianni proud of Eagles for battling through Nashville heat",
+      "summary": "Sirianni proud of Eagles for battling through Nashville heat",
+      "url": "https://www.espn.com/video/clip/_/id/49995729/sirianni-proud-eagles-battling-nashville-heat",
+      "sport": "NFL",
+      "published": "2026-09-21T02:50:49.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49995725",
+      "id": "49995725",
+      "headline": "Seattle Kraken vs. Calgary Flames: Game Highlights",
+      "summary": "Seattle Kraken vs. Calgary Flames: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49995725/game-highlights",
+      "sport": "NHL",
+      "published": "2026-09-21T02:47:25.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49995719",
+      "id": "49995719",
+      "headline": "Carolina Panthers vs. Atlanta Falcons: Game Highlights",
+      "summary": "Carolina Panthers vs. Atlanta Falcons: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49995719/game-highlights",
+      "sport": "NFL",
+      "published": "2026-09-21T02:45:37.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49994493",
+      "id": "49994493",
+      "headline": "Dak Prescott breaks Tony Romo's Cowboys passing TDs record",
+      "summary": "Dak Prescott became the Cowboys' all-time leader in touchdown passes in Sunday's win over the Commanders, surpassing Tony Romo with 249 in his career.",
+      "url": "https://www.espn.com/nfl/story/_/id/49994493/dak-prescott-breaks-tony-romo-cowboys-passing-tds-record",
+      "sport": "NFL",
+      "published": "2026-09-21T02:34:49.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 12
+    },
+    {
+      "key": "49995684",
+      "id": "49995684",
+      "headline": "Mateer throws 2 touchdown passes, No. 24 Oklahoma looks shaky again in 14-6 win over New Mexico",
+      "summary": "— John Mateer overcame a shaky start with two touchdown passes, and No. 24 Oklahoma leaned on its defense to hold off New Mexico 14-6 on Saturday night and avoid consecutive non-conference losses.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401856690",
+      "sport": "College football",
+      "published": "2026-09-21T02:34:03.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49995421",
+      "id": "49995421",
+      "headline": "Brock Purdy keeps 49ers rolling with 'MVP' game vs. Dolphins",
+      "summary": "Brock Purdy authored a near-perfect game at quarterback in the 49ers' 35-13 win over the rebuilding Dolphins, ending the day with a 99.7 QBR.",
+      "url": "https://www.espn.com/nfl/story/_/id/49995421/brock-purdy-keeps-49ers-rolling-mvp-game-vs-dolphins",
+      "sport": "NFL",
+      "published": "2026-09-21T02:29:36.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 8
+    },
+    {
+      "key": "48305211",
+      "id": "48305211",
+      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
+      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
+      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
+      "sport": "MLB",
+      "published": "2026-09-21T02:26:33.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49995625",
+      "id": "49995625",
+      "headline": "Brewers set franchise record with 98th victory, beat Orioles 3-0 to complete sweep",
+      "summary": "— William Contreras homered, and the Milwaukee Brewers earned their franchise-record 98th victory by beating the Baltimore Orioles 3-0 on Sunday night to complete a three-game sweep.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817016",
+      "sport": "MLB",
+      "published": "2026-09-21T02:23:30.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49466506",
+      "id": "49466506",
+      "headline": "NFL betting buzz: Most popular survivor pick loses for second week in a row with Bucs' defeat",
+      "summary": "The Los Angeles Rams' defeat in Week 1 in Melbourne, Australia was a historic low for a preseason Super Bowl champion.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/49466506/nfl-betting-buzz-odds-updates-line-moves-spreads",
+      "sport": "NFL",
+      "published": "2026-09-21T02:21:49.000Z",
+      "firstSeen": "2026-09-11T15:26:34.681Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49990404",
+      "id": "49990404",
+      "headline": "NFL Week 2 eye-popping stats from Eagles, Pats, Jets, Bears",
+      "summary": "We found six of the coolest advanced stats to come out of Sunday's games -- from third-down completions to matchup route stats.",
+      "url": "https://www.espn.com/nfl/story/_/id/49990404/week-2-five-key-stats-numbers-solak",
+      "sport": "NFL",
+      "published": "2026-09-21T02:20:50.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49995487",
+      "id": "49995487",
+      "headline": "Lisa Leslie statue unveiled on Star Plaza outside Crypto.com Arena",
+      "summary": "WNBA trailblazer Lisa Leslie became the 16th person -- and first Sparks player -- honored with a statue in what's become known as Star Plaza outside Crypto.com Arena.",
+      "url": "https://www.espn.com/wnba/story/_/id/49995487/sparks-legend-lisa-leslie-statue-unveiled-star-plaza-cryptocom-arena",
+      "sport": "WNBA",
+      "published": "2026-09-21T02:19:54.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49951393",
+      "id": "49951393",
+      "headline": "NFL Week 2: Takeaways, questions, fantasy spin for Sunday games",
+      "summary": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 2.",
+      "url": "https://www.espn.com/nfl/story/_/id/49951393/week-2-sunday-games-takeaways-questions-2026",
+      "sport": "NFL",
+      "published": "2026-09-21T02:17:11.000Z",
+      "firstSeen": "2026-09-20T21:24:19.091Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49992824",
+      "id": "49992824",
+      "headline": "Atlanta Braves clinch 7th NL East title in 9 years",
+      "summary": "Under first-year manager Walt Weiss, Atlanta has rebounded after missing the playoffs last season.",
+      "url": "https://www.espn.com/mlb/story/_/id/49992824/atlanta-braves-clinch-7th-nl-east-title-9-years",
+      "sport": "MLB",
+      "published": "2026-09-21T02:09:13.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 16
+    },
+    {
+      "key": "47978642",
+      "id": "47978642",
+      "headline": "Messi tracker: Goals, assists, key moments in 2026",
+      "summary": "ESPN provides game-by-game analysis of Lionel Messi's performances for Inter Miami and Argentina.",
+      "url": "https://www.espn.com/soccer/story/_/id/47978642/lionel-messi-2026-tracker-inter-miami-argentina-games-goals-assists-stats",
+      "sport": "Soccer",
+      "published": "2026-09-21T02:08:16.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49993300",
+      "id": "49993300",
+      "headline": "QB Kyler Murray (concussion) expected to return for Week 3",
+      "summary": "The Vikings should have QB Kyler Murray available to them next week. Murray is expected to clear concussion protocol \"pretty early in the week,\" coach Kevin O'Connell said.",
+      "url": "https://www.espn.com/nfl/story/_/id/49993300/qb-kyler-murray-concussion-expected-return-week-3",
+      "sport": "NFL",
+      "published": "2026-09-21T02:06:02.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 38
+    },
+    {
+      "key": "49993456",
+      "id": "49993456",
+      "headline": "McCarthy takes blame for Steelers' offensive struggles in loss",
+      "summary": "Steelers coach Mike McCarthy shouldered the blame Sunday in the wake of his offense's clunky, uninspired performance in a loss to the Patriots.",
+      "url": "https://www.espn.com/nfl/story/_/id/49993456/mccarthy-takes-blame-steelers-offensive-struggles-loss",
+      "sport": "NFL",
+      "published": "2026-09-21T02:05:33.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 34
+    },
+    {
+      "key": "49993545",
+      "id": "49993545",
+      "headline": "Tyler Shough, dubbed 'poor man' by Saints, leads win vs. Ravens",
+      "summary": "After Ravens DC Anthony Weaver attempted to pay Saints QB Tyler Shough a compliment by referring to him as a \"poor man's Josh Allen,\" the New Orleans coaches turned it into a joke, dubbing Shough \"poor man\" for the rest of the week.",
+      "url": "https://www.espn.com/nfl/story/_/id/49993545/saints-tyler-shough-turns-tables-ravens-being-called-poor-man-josh-allen-dc",
+      "sport": "NFL",
+      "published": "2026-09-21T02:05:02.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 31
+    },
+    {
+      "key": "49993627",
+      "id": "49993627",
+      "headline": "'Stayin Alive' Red Sox cap turnaround, clinch playoff spot",
+      "summary": "The Red Sox are the fourth team to make the playoffs after being 14-or-more games under .500 in a season in the World Series era (since 1903).",
+      "url": "https://www.espn.com/mlb/story/_/id/49993627/stayin-alive-red-sox-cap-turnaround-clinch-playoff-spot",
+      "sport": "MLB",
+      "published": "2026-09-21T02:03:34.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 9
+    },
+    {
+      "key": "49993771",
+      "id": "49993771",
+      "headline": "Hurts taunts Titans after Eagles win: Finished what you started",
+      "summary": "Tennessee Titans defensive tackle Jeffery Simmons approached Jalen Hurts for a postgame dap-up following Philadelphia's 24-20 come-from-behind win Sunday and the Eagles' quarterback was ready for him.",
+      "url": "https://www.espn.com/nfl/story/_/id/49993771/hurts-taunts-titans-eagles-win",
+      "sport": "NFL",
+      "published": "2026-09-21T02:03:02.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 29
+    },
+    {
+      "key": "49993937",
+      "id": "49993937",
+      "headline": "Ravens preach team's resolve despite another collapse in 4th",
+      "summary": "The Ravens did not want to draw parallels to past teams after Sunday's loss to the Saints, despite losing in a similar manner with a fourth-quarter lead.",
+      "url": "https://www.espn.com/nfl/story/_/id/49993937/ravens-preach-team-resolve-another-collapse-4th",
+      "sport": "NFL",
+      "published": "2026-09-21T02:02:25.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 28
+    },
+    {
+      "key": "49994418",
+      "id": "49994418",
+      "headline": "Aaron Glenn defends clock management after Jets' collapse",
+      "summary": "The Jets blew their biggest fourth-quarter lead in six years in a 20-17 overtime loss to the Packers, with coach Aaron Glenn facing scrutiny for his clock management.",
+      "url": "https://www.espn.com/nfl/story/_/id/49994418/aaron-glenn-defends-clock-management-decisions-jets-collapse-vs-packers",
+      "sport": "NFL",
+      "published": "2026-09-21T02:01:43.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 17
+    },
+    {
+      "key": "49994608",
+      "id": "49994608",
+      "headline": "DeMeco Ryans urges Texans to 'dig deep' after 0-2 start",
+      "summary": "Coach DeMeco Ryans challenged his Texans after they fell to 0-2 on Sunday, asking them: If you call yourselves playmakers, where are the plays?",
+      "url": "https://www.espn.com/nfl/story/_/id/49994608/demeco-ryans-urges-texans-dig-deep-0-2-start",
+      "sport": "NFL",
+      "published": "2026-09-21T02:01:17.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49994695",
+      "id": "49994695",
+      "headline": "Fever go cold vs. Mystics, lose ground in playoff-seeding race",
+      "summary": "The Fever turned in one of their worst performances of the year Sunday against the Mystics, hurting their chances of moving up in the postseason standings.",
+      "url": "https://www.espn.com/wnba/story/_/id/49994695/fever-go-cold-vs-mystics-lose-ground-playoff-seeding-race",
+      "sport": "WNBA",
+      "published": "2026-09-21T02:00:45.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49995072",
+      "id": "49995072",
+      "headline": "RB Kewan Lacy (shoulder) not expected to be out long term, sources say",
+      "summary": "The left shoulder injury that sidelined Ole Miss star running back Kewan Lacy during Saturday night's win over LSU is not expected to keep him out long term, sources told ESPN's Pete Thamel.",
+      "url": "https://www.espn.com/college-football/story/_/id/49995072/rb-kewan-lacy-shoulder-not-expected-long-term-sources-say",
+      "sport": "College football",
+      "published": "2026-09-21T01:58:26.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49995474",
+      "id": "49995474",
+      "headline": "Carolina Hurricanes vs. Florida Panthers: Game Highlights",
+      "summary": "Carolina Hurricanes vs. Florida Panthers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49995474/game-highlights",
+      "sport": "NHL",
+      "published": "2026-09-21T01:50:02.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49995381",
+      "id": "49995381",
+      "headline": "Utah Mammoth vs. Colorado Avalanche: Game Highlights",
+      "summary": "Utah Mammoth vs. Colorado Avalanche: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49995381/game-highlights",
+      "sport": "NHL",
+      "published": "2026-09-21T01:44:10.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49995378",
+      "id": "49995378",
+      "headline": "Ogwumike becomes 4th player in WNBA history with 8,000 points as the Sparks beat the Fire 105-84",
+      "summary": "— Nneka Ogwumike had 20 points, 12 rebounds and five assists to help the Los Angeles Sparks beat the Portland Fire 105-84 on Sunday night.",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857204",
+      "sport": "WNBA",
+      "published": "2026-09-21T01:43:35.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49995335",
+      "id": "49995335",
+      "headline": "Todd Monken gives fiery response to Mike Tomlin's Browns diss",
+      "summary": "Todd Monken gives fiery response to Mike Tomlin's Browns diss",
+      "url": "https://www.espn.com/video/clip/_/id/49995335/todd-monken-gives-fiery-response-mike-tomlin-browns-diss",
+      "sport": "NFL",
+      "published": "2026-09-21T01:42:51.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 10
+    },
+    {
+      "key": "49995358",
+      "id": "49995358",
+      "headline": "Los Angeles Sparks vs. Fire - Game Highlights",
+      "summary": "Watch the Game Highlights from Los Angeles Sparks vs. Fire, 09/20/2026",
+      "url": "https://www.espn.com/video/clip/_/id/49995358/los-angeles-sparks-vs-fire-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-09-21T01:42:50.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49995264",
+      "id": "49995264",
+      "headline": "Lionel Messi curls in a free kick for Inter Miami",
+      "summary": "Lionel Messi curls in a free kick for Inter Miami",
+      "url": "https://www.espn.com/video/clip/_/id/49995264/lionel-messi-curls-free-kick-inter-miami",
+      "sport": "Soccer",
+      "published": "2026-09-21T01:30:27.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49994580",
+      "id": "49994580",
+      "headline": "Deshaun Watson makes case in Browns win with job on line",
+      "summary": "With rumblings about his starting job being on the line, quarterback Deshaun Watson responded with maybe his best game as a Cleveland Brown.",
+      "url": "https://www.espn.com/nfl/story/_/id/49994580/deshaun-watson-browns-win-job",
+      "sport": "NFL",
+      "published": "2026-09-21T01:30:08.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49994474",
+      "id": "49994474",
+      "headline": "Prescott throws 4 TD passes as Cowboys beat Commanders, who again lose Daniels to dislocated elbow",
+      "summary": "— Dak Prescott celebrated breaking Tony Romo's career franchise record for touchdown passes in a victorious locker room for the Dallas Cowboys.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401872944",
+      "sport": "NFL",
+      "published": "2026-09-21T01:29:47.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 16
+    },
+    {
+      "key": "49991048",
+      "id": "49991048",
+      "headline": "Michael Carrick keen to find Man United positives, but there aren't many right now",
+      "summary": "This is Man United's worst start in a Premier League season in 12 years. Is there any reason to believe a turnaround is ahead?",
+      "url": "https://www.espn.com/soccer/story/_/id/49991048/michael-carrick-keen-find-man-united-positives-there-many-right-now",
+      "sport": "Soccer",
+      "published": "2026-09-21T01:28:50.000Z",
+      "firstSeen": "2026-09-20T21:24:19.091Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49993163",
+      "id": "49993163",
+      "headline": "Eagles' Broadway jab at Titans leads NFL Week 2 trolls",
+      "summary": "Teams across the NFL came with petty postgame energy after wins in Week 2, led by the Philadelphia Eagles.",
+      "url": "https://www.espn.com/nfl/story/_/id/49993163/nfl-week-2-2026-trolls",
+      "sport": "NFL",
+      "published": "2026-09-21T01:21:54.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 11
+    },
+    {
+      "key": "49961538",
+      "id": "49961538",
+      "headline": "NFL Week 2's best arrivals, led by Travis Kelce and Patrick Mahomes",
+      "summary": "Rounding up the top pregame and tunnel arrivals from around the league.",
+      "url": "https://www.espn.com/nfl/story/_/id/49961538/nfl-week-2-fashionable-arrivals",
+      "sport": "NFL",
+      "published": "2026-09-21T01:17:18.000Z",
+      "firstSeen": "2026-09-20T18:29:24.763Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49990224",
+      "id": "49990224",
+      "headline": "Judging the biggest overreactions to NFL Week 2 games",
+      "summary": "Will Aaron Rodgers stay QB1 all season? Is anything different for the Eagles' offense? And could the Lions miss the postseason again? We're judging Week 2 overreactions.",
+      "url": "https://www.espn.com/nfl/story/_/id/49990224/week-2-overreactions-2026-graziano-rodgers-eagles",
+      "sport": "NFL",
+      "published": "2026-09-21T01:13:48.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 30
+    },
+    {
+      "key": "49994266",
+      "id": "49994266",
+      "headline": "Drew Lock connects for 3 TDs with Jaxon Smith-Njigba; Seahawks roll past Cardinals 31-7",
+      "summary": "— Drew Lock threw for 235 yards and three touchdowns to Jaxon Smith-Njigba in a stellar first start subbing for the injured Sam Darnold and the Seattle Seahawks continued their dominance over the Arizona Cardinals with a 31-7 win on Sunday.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401872943",
+      "sport": "NFL",
+      "published": "2026-09-21T01:13:29.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 22
+    },
+    {
+      "key": "49991137",
+      "id": "49991137",
+      "headline": "Week 2 winners and losers: Jaxon Smith-Njigba, CeeDee Lamb shine; Bijan Robinson struggles",
+      "summary": "Jaxon Smith-Njigba and CeeDee Lamb came up big in Week 2, while Bijan Robinson and Justin Jefferson had very quiet days.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-49991137/nfl-week-2-fantasy-football-winners-losers-injuries-rankings-more",
+      "sport": "NFL",
+      "published": "2026-09-21T01:13:23.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49995195",
+      "id": "49995195",
+      "headline": "White Sox keep pace in AL Central with 8-1 win over Tigers",
+      "summary": "White Sox keep pace in AL Central with 8-1 win over Tigers",
+      "url": "https://www.espn.com/video/clip/_/id/49995195/white-sox-keep-pace-al-central-8-1-win-tigers",
+      "sport": "MLB",
+      "published": "2026-09-21T01:12:45.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49907062",
+      "id": "49907062",
+      "headline": "Aaron Rodgers' 2026 NFL season: Tracking records, milestones",
+      "summary": "The Steelers QB, who is entering his 22nd season in the league, is chasing records, and ESPN will be chronicling his \"last rodeo.\"",
+      "url": "https://www.espn.com/nfl/story/_/id/49907062/aaron-rodgers-2026-nfl-season-steelers-packers-jets-tracking-records-milestones",
+      "sport": "NFL",
+      "published": "2026-09-21T01:11:23.000Z",
+      "firstSeen": "2026-09-12T12:32:59.419Z",
+      "bestRank": 5
+    },
+    {
+      "key": "49995197",
+      "id": "49995197",
+      "headline": "United stumble again at Fulham",
+      "summary": "A comical own goal by Lisandro Martínez saw Manchester United fail to win for a third Premier League game in a row as they drew 1-1 with Fulham.",
+      "url": "https://www.espn.com/video/clip/_/id/49995197/united-stumble-again-fulham",
+      "sport": "Soccer",
+      "published": "2026-09-21T01:09:42.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 1
+    },
     {
       "key": "49992893",
       "id": "49992893",
@@ -33,17 +561,6 @@
       "published": "2026-09-21T01:03:37.000Z",
       "firstSeen": "2026-09-21T01:05:55.901Z",
       "bestRank": 48
-    },
-    {
-      "key": "49984903",
-      "id": "49984903",
-      "headline": "Week 2 NFL highlights: Best plays, moments, touchdowns, more",
-      "summary": "Check out the best of the best from Week 2 around the NFL, including highlight-reel touchdowns and must-see plays.",
-      "url": "https://www.espn.com/nfl/story/_/id/49984903/week-2-highlights-best-plays-touchdowns-2026",
-      "sport": "NFL",
-      "published": "2026-09-21T01:03:29.000Z",
-      "firstSeen": "2026-09-20T15:24:20.397Z",
-      "bestRank": 1
     },
     {
       "key": "49994063",
@@ -57,26 +574,15 @@
       "bestRank": 25
     },
     {
-      "key": "49466506",
-      "id": "49466506",
-      "headline": "NFL betting buzz: Most popular survivor pick loses for second week in a row with Bucs' defeat",
-      "summary": "The Los Angeles Rams' defeat in Week 1 in Melbourne, Australia was a historic low for a preseason Super Bowl champion.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/49466506/nfl-betting-buzz-odds-updates-line-moves-spreads",
-      "sport": "NFL",
-      "published": "2026-09-21T01:02:17.000Z",
-      "firstSeen": "2026-09-11T15:26:34.681Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49990404",
-      "id": "49990404",
-      "headline": "NFL Week 2 eye-popping stats from Eagles, Pats, Jets, Bears",
-      "summary": "We found six of the coolest advanced stats to come out of Sunday's games -- from third-down completions to matchup route stats.",
-      "url": "https://www.espn.com/nfl/story/_/id/49990404/week-2-five-key-stats-numbers-solak",
-      "sport": "NFL",
-      "published": "2026-09-21T01:01:54.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 11
+      "key": "49995151",
+      "id": "49995151",
+      "headline": "White Sox keep pace in the AL Central with a rain-soaked 8-1 win over the Tigers",
+      "summary": "— Sam Antonacci had a two-run double in a three-run fourth inning and the Chicago White Sox kept pace in the AL Central and eliminated the Detroit Tigers from playoff contention with a rain-soaked 8-1 victory Sunday.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817019",
+      "sport": "MLB",
+      "published": "2026-09-21T01:01:30.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 4
     },
     {
       "key": "49994998",
@@ -101,70 +607,15 @@
       "bestRank": 24
     },
     {
-      "key": "49994608",
-      "id": "49994608",
-      "headline": "DeMeco Ryans urges Texans to 'dig deep' after 0-2 start",
-      "summary": "Coach DeMeco Ryans challenged his Texans after they fell to 0-2 on Sunday, asking them: If you call yourselves playmakers, where are the plays?",
-      "url": "https://www.espn.com/nfl/story/_/id/49994608/demeco-ryans-urges-texans-dig-deep-0-2-start",
-      "sport": "NFL",
-      "published": "2026-09-21T00:56:51.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49994418",
-      "id": "49994418",
-      "headline": "Aaron Glenn defends clock management after Jets' collapse",
-      "summary": "The Jets blew their biggest fourth-quarter lead in six years in a 20-17 overtime loss to the Packers, with coach Aaron Glenn facing scrutiny for his clock management.",
-      "url": "https://www.espn.com/nfl/story/_/id/49994418/aaron-glenn-defends-clock-management-decisions-jets-collapse-vs-packers",
-      "sport": "NFL",
-      "published": "2026-09-21T00:48:39.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 17
-    },
-    {
-      "key": "49993422",
-      "id": "49993422",
-      "headline": "Commanders QB Jayden Daniels suffers dislocated elbow vs. Cowboys",
-      "summary": "Commanders quarterback Jayden Daniels was carted off the field in Sunday's game against the Cowboys after dislocating his left elbow on the final play of the first half.",
-      "url": "https://www.espn.com/nfl/story/_/id/49993422/commanders-qb-jayden-daniels-suffers-elbow-injury-cowboys",
-      "sport": "NFL",
-      "published": "2026-09-21T00:48:15.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 35
-    },
-    {
-      "key": "49994493",
-      "id": "49994493",
-      "headline": "Dak Prescott breaks Tony Romo's Cowboys passing TDs record",
-      "summary": "Dak Prescott became the Cowboys' all-time leader in touchdown passes in Sunday's win over the Commanders, surpassing Tony Romo with 249 in his career.",
-      "url": "https://www.espn.com/nfl/story/_/id/49994493/dak-prescott-breaks-tony-romo-cowboys-passing-tds-record",
-      "sport": "NFL",
-      "published": "2026-09-21T00:46:43.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49991137",
-      "id": "49991137",
-      "headline": "Week 2 winners and losers: Jaxon Smith-Njigba, CeeDee Lamb shine; Bijan Robinson struggles",
-      "summary": "Jaxon Smith-Njigba and CeeDee Lamb came up big in Week 2, while Bijan Robinson and Justin Jefferson had very quiet days.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-49991137/nfl-week-2-fantasy-football-winners-losers-injuries-rankings-more",
-      "sport": "NFL",
-      "published": "2026-09-21T00:46:19.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49951393",
-      "id": "49951393",
-      "headline": "NFL Week 2: Takeaways, questions, fantasy spin for Sunday games",
-      "summary": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 2.",
-      "url": "https://www.espn.com/nfl/story/_/id/49951393/week-2-sunday-games-takeaways-questions-2026",
-      "sport": "NFL",
-      "published": "2026-09-21T00:41:42.000Z",
-      "firstSeen": "2026-09-20T21:24:19.091Z",
-      "bestRank": 1
+      "key": "49991564",
+      "id": "49991564",
+      "headline": "Sources: Higuain at center of refs' union beef with MLS NEXT Pro",
+      "summary": "The union that represents MLS and USL referees launched a scathing critique of MLS NEXT Pro over its handling of an incident in which a coach committed what it described as \"two deliberate acts of physical abuse and sexism towards a female official.\"",
+      "url": "https://www.espn.com/soccer/story/_/id/49991564/refs-union-ban-crew-2-coach-higuain",
+      "sport": "Soccer",
+      "published": "2026-09-21T00:43:43.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 2
     },
     {
       "key": "49994665",
@@ -200,17 +651,6 @@
       "bestRank": 9
     },
     {
-      "key": "49994580",
-      "id": "49994580",
-      "headline": "Deshaun Watson balls out in Browns win with job on line",
-      "summary": "With rumblings about his starting job being on the line, quarterback Deshaun Watson responded with maybe his best game as a Cleveland Brown.",
-      "url": "https://www.espn.com/soccer/story/_/id/49994580/deshaun-watson-balls-browns-win-job-line",
-      "sport": "NFL",
-      "published": "2026-09-21T00:35:14.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 4
-    },
-    {
       "key": "49994807",
       "id": "49994807",
       "headline": "Washington Commanders vs Dallas Cowboys: Game Highlights",
@@ -244,48 +684,15 @@
       "bestRank": 7
     },
     {
-      "key": "49990224",
-      "id": "49990224",
-      "headline": "Judging the biggest overreactions to NFL Week 2 games",
-      "summary": "Will Aaron Rodgers stay QB1 all season? Is anything different for the Eagles' offense? And could the Lions miss the postseason again? We're judging Week 2 overreactions.",
-      "url": "https://www.espn.com/nfl/story/_/id/49990224/week-2-overreactions-2026-graziano-rodgers-eagles",
-      "sport": "NFL",
-      "published": "2026-09-21T00:20:14.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 30
-    },
-    {
-      "key": "49994474",
-      "id": "49994474",
-      "headline": "Prescott throws 4 TDs as Cowboys beat Commanders, who again lose Jayden Daniels to dislocated elbow",
-      "summary": "— Dak Prescott threw four touchdown passes to break Tony Romo's career franchise record, and the Dallas Cowboys beat...",
-      "url": "http://www.espn.com/nfl/recap?gameId=401872944",
-      "sport": "NFL",
-      "published": "2026-09-21T00:17:42.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 16
-    },
-    {
-      "key": "49993545",
-      "id": "49993545",
-      "headline": "Tyler Shough, dubbed 'poor man' by Saints, leads win vs. Ravens",
-      "summary": "After Ravens DC Anthony Weaver attempted to pay Saints QB Tyler Shough a compliment by referring to him as a \"poor man's Josh Allen,\" the New Orleans coaches turned it into a joke, dubbing Shough \"poor man\" for the rest of the week.",
-      "url": "https://www.espn.com/nfl/story/_/id/49993545/saints-tyler-shough-turns-tables-ravens-being-called-poor-man-josh-allen-dc",
-      "sport": "NFL",
-      "published": "2026-09-21T00:17:05.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 31
-    },
-    {
-      "key": "49993163",
-      "id": "49993163",
-      "headline": "Eagles' Broadway jab at Titans leads NFL Week 2 trolls",
-      "summary": "Teams across the NFL came with petty postgame energy after wins in Week 2, led by the Philadelphia Eagles.",
-      "url": "https://www.espn.com/nfl/story/_/id/49993163/nfl-week-2-2026-trolls",
-      "sport": "NFL",
-      "published": "2026-09-21T00:16:36.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 15
+      "key": "49994610",
+      "id": "49994610",
+      "headline": "Washington Capitals vs. Boston Bruins: Game Highlights",
+      "summary": "Washington Capitals vs. Boston Bruins: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49994610/game-highlights",
+      "sport": "NHL",
+      "published": "2026-09-21T00:15:24.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 4
     },
     {
       "key": "49994606",
@@ -310,37 +717,15 @@
       "bestRank": 21
     },
     {
-      "key": "49907062",
-      "id": "49907062",
-      "headline": "Aaron Rodgers' 2026 NFL season: Tracking records, milestones",
-      "summary": "The Steelers QB, who is entering his 22nd season in the league, is chasing records, and ESPN will be chronicling his \"last rodeo.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/49907062/aaron-rodgers-2026-nfl-season-steelers-packers-jets-tracking-records-milestones",
-      "sport": "NFL",
-      "published": "2026-09-21T00:08:46.000Z",
-      "firstSeen": "2026-09-12T12:32:59.419Z",
+      "key": "49994464",
+      "id": "49994464",
+      "headline": "Nashville Predators vs. Tampa Bay Lightning: Game Highlights",
+      "summary": "Nashville Predators vs. Tampa Bay Lightning: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/49994464/game-highlights",
+      "sport": "NHL",
+      "published": "2026-09-20T23:48:08.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
       "bestRank": 5
-    },
-    {
-      "key": "49961538",
-      "id": "49961538",
-      "headline": "NFL Week 2's best arrivals, led by Travis Kelce and Patrick Mahomes",
-      "summary": "Rounding up the top pregame and tunnel arrivals from around the league.",
-      "url": "https://www.espn.com/nfl/story/_/id/49961538/nfl-week-2-fashionable-arrivals",
-      "sport": "NFL",
-      "published": "2026-09-21T00:00:22.000Z",
-      "firstSeen": "2026-09-20T18:29:24.763Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49993937",
-      "id": "49993937",
-      "headline": "Ravens preach team's resolve despite another collapse in 4th",
-      "summary": "The Ravens did not want to draw parallels to past teams after Sunday's loss to the Saints, despite losing in a similar manner with a fourth-quarter lead.",
-      "url": "https://www.espn.com/nfl/story/_/id/49993937/ravens-preach-team-resolve-another-collapse-4th",
-      "sport": "NFL",
-      "published": "2026-09-20T23:57:33.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 28
     },
     {
       "key": "49994283",
@@ -398,17 +783,6 @@
       "bestRank": 3
     },
     {
-      "key": "49994266",
-      "id": "49994266",
-      "headline": "Drew Lock connects for 3 TDs with Jaxon Smith-Njigba, Seahawks roll past Cardinals 31-7",
-      "summary": "— Drew Lock threw for 235 yards and three touchdowns to Jaxon Smith-Njigba in a stellar first start subbing for the injured Sam Darnold and the Seattle Seahawks continued their dominance over the Arizona Cardinals with a 31-7 win on Sunday.",
-      "url": "http://www.espn.com/nfl/recap?gameId=401872943",
-      "sport": "NFL",
-      "published": "2026-09-20T23:38:30.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 22
-    },
-    {
       "key": "49994242",
       "id": "49994242",
       "headline": "Minnesota Twins vs Los Angeles Angels: Game Highlights",
@@ -418,17 +792,6 @@
       "published": "2026-09-20T23:37:44.000Z",
       "firstSeen": "2026-09-21T01:05:55.901Z",
       "bestRank": 2
-    },
-    {
-      "key": "49993771",
-      "id": "49993771",
-      "headline": "Hurts taunts Titans after Eagles win: Finished what you started",
-      "summary": "Tennessee Titans defensive tackle Jeffery Simmons approached Jalen Hurts for a postgame dap-up following Philadelphia's 24-20 come-from-behind win Sunday and the Eagles' quarterback was ready for him.",
-      "url": "https://www.espn.com/nfl/story/_/id/49993771/hurts-taunts-titans-eagles-win",
-      "sport": "NFL",
-      "published": "2026-09-20T23:37:36.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 29
     },
     {
       "key": "49993492",
@@ -541,17 +904,6 @@
       "bestRank": 40
     },
     {
-      "key": "49993456",
-      "id": "49993456",
-      "headline": "McCarthy takes blame for Steelers' offensive struggles in loss",
-      "summary": "Steelers coach Mike McCarthy shouldered the blame Sunday in the wake of his offense's clunky, uninspired performance in a loss to the Patriots.",
-      "url": "https://www.espn.com/nfl/story/_/id/49993456/mccarthy-takes-blame-steelers-offensive-struggles-loss",
-      "sport": "NFL",
-      "published": "2026-09-20T23:12:23.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 34
-    },
-    {
       "key": "49993826",
       "id": "49993826",
       "headline": "New York Yankees vs. Arizona Diamondbacks: Game Highlights",
@@ -596,17 +948,6 @@
       "bestRank": 6
     },
     {
-      "key": "49993627",
-      "id": "49993627",
-      "headline": "'Stayin Alive' Red Sox cap turnaround, clinch playoff spot",
-      "summary": "The Red Sox are the fourth team to make the playoffs after being 14-or-more games under .500 in a season in the World Series era (since 1903).",
-      "url": "https://www.espn.com/mlb/story/_/id/49993627/stayin-alive-red-sox-cap-turnaround-clinch-playoff-spot",
-      "sport": "MLB",
-      "published": "2026-09-20T22:55:29.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 9
-    },
-    {
       "key": "49993184",
       "id": "49993184",
       "headline": "Why \"the arrow is trending down\" on Travis Etienne Jr. in fantasy",
@@ -616,17 +957,6 @@
       "published": "2026-09-20T22:54:19.000Z",
       "firstSeen": "2026-09-21T01:05:55.901Z",
       "bestRank": 42
-    },
-    {
-      "key": "49992824",
-      "id": "49992824",
-      "headline": "Atlanta Braves clinch 7th NL East title in 9 years",
-      "summary": "Under first-year manager Walt Weiss, Atlanta has rebounded after missing the playoffs last season.",
-      "url": "https://www.espn.com/mlb/story/_/id/49992824/atlanta-braves-clinch-7th-nl-east-title-9-years",
-      "sport": "MLB",
-      "published": "2026-09-20T22:50:10.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 16
     },
     {
       "key": "49993151",
@@ -706,6 +1036,17 @@
       "bestRank": 47
     },
     {
+      "key": "49992480",
+      "id": "49992480",
+      "headline": "Jacob Bridgeman wins inaugural Biltmore Championship Asheville",
+      "summary": "Jacob Bridgeman rallied from a five-shot deficit with the lowest round of his young PGA Tour career, a 10-under 61 that carried him to a two-shot victory Sunday in the Biltmore Championship Asheville.",
+      "url": "https://www.espn.com/golf/story/_/id/49992480/jacob-bridgeman-win-inaugural-biltmore-championship-asheville",
+      "sport": "Golf",
+      "published": "2026-09-20T22:21:54.000Z",
+      "firstSeen": "2026-09-21T01:05:55.901Z",
+      "bestRank": 1
+    },
+    {
       "key": "49993373",
       "id": "49993373",
       "headline": "Anderson tosses 7 shutout innings, Mariners beat Rockies 2-1 to avoid elimination",
@@ -748,17 +1089,6 @@
       "published": "2026-09-20T22:10:23.000Z",
       "firstSeen": "2026-09-21T01:05:55.901Z",
       "bestRank": 2
-    },
-    {
-      "key": "49993300",
-      "id": "49993300",
-      "headline": "QB Kyler Murray (concussion) expected to return for Week 3",
-      "summary": "The Vikings should have QB Kyler Murray available to them next week. Murray is expected to clear concussion protocol \"pretty early in the week,\" coach Kevin O'Connell said.",
-      "url": "https://www.espn.com/nfl/story/_/id/49993300/qb-kyler-murray-concussion-expected-return-week-3",
-      "sport": "NFL",
-      "published": "2026-09-20T22:09:52.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 38
     },
     {
       "key": "49993274",
@@ -913,17 +1243,6 @@
       "published": "2026-09-20T21:14:31.000Z",
       "firstSeen": "2026-09-20T21:24:19.091Z",
       "bestRank": 15
-    },
-    {
-      "key": "49992480",
-      "id": "49992480",
-      "headline": "Jacob Bridgeman win inaugural Biltmore Championship Asheville",
-      "summary": "Jacob Bridgeman rallied from a five-shot deficit with the lowest round of his young PGA Tour career, a 10-under 61 that carried him to a two-shot victory Sunday in the Biltmore Championship Asheville.",
-      "url": "https://www.espn.com/golf/story/_/id/49992480/jacob-bridgeman-win-inaugural-biltmore-championship-asheville",
-      "sport": "Golf",
-      "published": "2026-09-20T21:07:26.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 1
     },
     {
       "key": "49992414",
@@ -1773,17 +2092,6 @@
       "bestRank": 50
     },
     {
-      "key": "49991048",
-      "id": "49991048",
-      "headline": "Michael Carrick keen to find Man United positives, but there aren't many right now",
-      "summary": "This is Man United's worst start in a Premier League season in 12 years. Is there any reason to believe a turnaround is ahead?",
-      "url": "https://www.espn.com/soccer/story/_/id/49991048/michael-carrick-keen-find-man-united-positives-there-many-right-now",
-      "sport": "Soccer",
-      "published": "2026-09-20T19:42:42.000Z",
-      "firstSeen": "2026-09-20T21:24:19.091Z",
-      "bestRank": 5
-    },
-    {
       "key": "49989024",
       "id": "49989024",
       "headline": "Has Isak finally found form at Liverpool? Winner at Bournemouth gives Iraola hope",
@@ -1892,6 +2200,17 @@
       "published": "2026-09-20T19:01:27.000Z",
       "firstSeen": "2026-09-20T21:24:19.091Z",
       "bestRank": 4
+    },
+    {
+      "key": "49965680",
+      "id": "49965680",
+      "headline": "Who's in line to fight Van, Tsarukyan and other UFC 331 stars?",
+      "summary": "The most likely opponent and a wild card for the winners and losers on the UFC 331 main card.",
+      "url": "https://www.espn.com/mma/story/_/id/49965680/next-fights-ufc-331-stars-joshua-van-arman-tsarukyan",
+      "sport": "MMA",
+      "published": "2026-09-20T18:59:56.000Z",
+      "firstSeen": "2026-09-21T03:35:19.877Z",
+      "bestRank": 12
     },
     {
       "key": "49990636",
@@ -2200,6 +2519,17 @@
       "published": "2026-09-20T15:54:54.000Z",
       "firstSeen": "2026-09-20T09:26:34.910Z",
       "bestRank": 9
+    },
+    {
+      "key": "49986556",
+      "id": "49986556",
+      "headline": "Joshua Van dominates Alexandre Pantoja to retain UFC title",
+      "summary": "UFC flyweight champion Joshua Van defeated Alexandre Pantoja in their first fight 10 months ago. Van beat Pantoja in the rematch too.",
+      "url": "https://www.espn.com/mma/story/_/id/49986556/joshua-van-dominates-alexandre-pantoja-rematch-retain-ufc-title",
+      "sport": "MMA",
+      "published": "2026-09-20T15:51:38.000Z",
+      "firstSeen": "2026-09-20T12:34:37.551Z",
+      "bestRank": 4
     },
     {
       "key": "49968497",
@@ -3060,17 +3390,6 @@
       "bestRank": 8
     },
     {
-      "key": "48305211",
-      "id": "48305211",
-      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
-      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
-      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
-      "sport": "MLB",
-      "published": "2026-09-20T05:48:15.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
-    },
-    {
       "key": "49979831",
       "id": "49979831",
       "headline": "NFL changes rules governing videoboard displays during kicks",
@@ -3091,17 +3410,6 @@
       "published": "2026-09-20T05:44:30.000Z",
       "firstSeen": "2026-09-20T06:39:17.347Z",
       "bestRank": 2
-    },
-    {
-      "key": "49986556",
-      "id": "49986556",
-      "headline": "Joshua Van dominates Alexandre Pantoja in rematch to retain UFC title",
-      "summary": "UFC flyweight champion Joshua Van defeated Alexandre Pantoja in their first fight 10 months ago. Van beat Pantoja in the rematch too.",
-      "url": "https://www.espn.com/mma/story/_/id/49986556/joshua-van-dominates-alexandre-pantoja-rematch-retain-ufc-title",
-      "sport": "MMA",
-      "published": "2026-09-20T05:42:16.000Z",
-      "firstSeen": "2026-09-20T12:34:37.551Z",
-      "bestRank": 4
     },
     {
       "key": "49985998",
@@ -5353,7 +5661,7 @@
       "headline": "Michael Sweetney, who played for Hoyas, Knicks, Bulls, dies at 43",
       "summary": "Michael Sweetney, who played four seasons in the NBA with the Knicks and Bulls after a standout college career at Georgetown, has died. He was 43.",
       "url": "https://www.espn.com/nba/story/_/id/49967767/sweetney-played-hoyas-knicks-bulls-dies-43",
-      "sport": "College basketball",
+      "sport": "NBA",
       "published": "2026-09-19T11:44:31.000Z",
       "firstSeen": "2026-09-18T01:00:48.323Z",
       "bestRank": 1
@@ -10265,17 +10573,6 @@
       "bestRank": 6
     },
     {
-      "key": "47978642",
-      "id": "47978642",
-      "headline": "Messi tracker: Goals, assists, key moments in 2026",
-      "summary": "ESPN provides game-by-game analysis of Lionel Messi's performances for Inter Miami and Argentina.",
-      "url": "https://www.espn.com/soccer/story/_/id/47978642/lionel-messi-2026-tracker-inter-miami-argentina-games-goals-assists-stats",
-      "sport": "Soccer",
-      "published": "2026-09-17T02:51:38.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
-    },
-    {
       "key": "49961492",
       "id": "49961492",
       "headline": "Athletics vs. Tampa Bay Rays: Game Highlights",
@@ -10952,7 +11249,7 @@
       "headline": "Reports: Miami Hurricanes returning to Nike in '27 on $200M+ deal",
       "summary": "University of Miami athletic teams will be wearing Nike apparel again starting in July 2027, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/49958590/report-miami-hurricanes-going-back-nike-200m+-deal",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-16T19:04:20.000Z",
       "firstSeen": "2026-09-16T21:25:45.412Z",
       "bestRank": 1
@@ -13020,7 +13317,7 @@
       "headline": "NFL, NBA, MLB, NHL, MLS urge action against threats from bettors",
       "summary": "The NFL, NBA, MLB, NHL, MLS and their players' unions are urging state gambling regulators to combat escalating harassment and violent threats from sports bettors.",
       "url": "https://www.espn.com/betting/sports/story/_/id/49949715/nfl-nba-mlb-nhl-mls-urge-action-threats-bettors",
-      "sport": "Soccer",
+      "sport": "NHL",
       "published": "2026-09-15T20:40:15.000Z",
       "firstSeen": "2026-09-15T18:17:37.554Z",
       "bestRank": 2
@@ -15330,7 +15627,7 @@
       "headline": "FSU fires AD Michael Alford amid looming football questions",
       "summary": "Florida State fired athletic director Michael Alford on Monday as the Seminoles grapple with looming decisions about their football program.",
       "url": "https://www.espn.com/college-football/story/_/id/49939737/fsu-fires-ad-michael-alford-amid-looming-football-questions",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-14T18:30:25.000Z",
       "firstSeen": "2026-09-14T15:28:36.074Z",
       "bestRank": 1
@@ -27056,7 +27353,7 @@
       "headline": "CSC clears $227M+ in NIL deals in July, August in major increase",
       "summary": "The College Sports Commission cleared more than $227 million in NIL deals in July and August, nearly doubling the value of all the deals cleared in its first year of existence.",
       "url": "https://www.espn.com/espn/story/_/id/49882283/csc-clears-227m-nil-deals-july-august-major-increase",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-09T19:03:51.000Z",
       "firstSeen": "2026-09-09T21:23:12.453Z",
       "bestRank": 1
@@ -39178,7 +39475,7 @@
       "headline": "Judge grants injunction to pro players seeking LSU return",
       "summary": "Dae'Quan Wright and Zxavian Harris are currently cleared to return to college football after brief stints in the NFL, according to a judge's orders issued Thursday evening, setting up a dramatic showdown between the SEC and LSU.",
       "url": "https://www.espn.com/college-football/story/_/id/49807088/judge-grants-injunction-pro-players-seeking-lsu-return",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-04T12:40:04.000Z",
       "firstSeen": "2026-09-04T03:31:23.580Z",
       "bestRank": 1
@@ -42753,7 +43050,7 @@
       "headline": "With $6.5 million left on deal, UCLA fires AD Martin Jarmond",
       "summary": "UCLA fired athletic director Martin Jarmond on Monday, with chancellor Julio Frenk explaining in a letter to the UCLA community that the Bruins' athletic program \"currently carries a significant financial deficit, and its current path is not sustainable.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49788304/with-65-million-left-deal-ucla-fires-ad-martin-jarmond",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-02T21:48:43.000Z",
       "firstSeen": "2026-09-01T01:11:44.372Z",
       "bestRank": 1
@@ -47307,7 +47604,7 @@
       "headline": "Sankey, SEC 'prepared to contest' judge's order in Louisiana",
       "summary": "Though the SEC said it will comply with an order that prohibits commissioner Greg Sankey from punishing schools if they roster a player who returns from a pro contract, the league said in a statement Sunday that it will defend its rights in court.",
       "url": "https://www.espn.com/college-sports/story/_/id/49778057/sankey-sec-prepared-contest-judge-order-louisiana",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-08-31T12:23:32.000Z",
       "firstSeen": "2026-08-31T01:06:00.592Z",
       "bestRank": 1
@@ -47740,127 +48037,6 @@
       "published": "2026-08-31T04:09:46.000Z",
       "firstSeen": "2026-08-31T01:06:00.592Z",
       "bestRank": 14
-    },
-    {
-      "key": "49779185",
-      "id": "49779185",
-      "headline": "Shepard has 22nd double-double this season, Wings beat Sun 97-71",
-      "summary": "— Arike Ogunbowale scored 18 points, Jessica Shepard had 17 points and 10 rebounds, and the Dallas Wings beat the Connecticut Sun 97-71 on Sunday night in the final game before the FIBA World Cup break.",
-      "url": "http://www.espn.com/wnba/recap?gameId=401857189",
-      "sport": "WNBA",
-      "published": "2026-08-31T03:15:29.000Z",
-      "firstSeen": "2026-08-31T03:33:41.362Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49779233",
-      "id": "49779233",
-      "headline": "Rookie Sal Stewart homers for the 3rd straight game, helping the Reds beat the Cubs 7-5",
-      "summary": "— Rookie Sal Stewart homered for the third straight game to help offset two more home runs by Pete Crow-Armstrong, and the Cincinnati Reds beat the Chicago Cubs 7-5 on Sunday night after rain delayed the start 25 minutes.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816741",
-      "sport": "MLB",
-      "published": "2026-08-31T03:14:30.000Z",
-      "firstSeen": "2026-08-31T06:51:15.716Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49775423",
-      "id": "49775423",
-      "headline": "With deal done, Donald '100% committed' to Rams' title chase",
-      "summary": "Aaron Donald, 35, a three-time Defensive Player of the Year and an eight-time first-team All-Pro, formally returned from retirement on Sunday, signing a one-year, $20 million contract with the Los Angeles Rams, a squad that he labeled \"a complete team.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/49775423/sources-aaron-donald-unretires-reaches-20m-deal-rams",
-      "sport": "NFL",
-      "published": "2026-08-31T02:49:51.000Z",
-      "firstSeen": "2026-08-30T21:22:27.267Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49778671",
-      "id": "49778671",
-      "headline": "Jaylen Brown receives key to city in farewell party to Boston",
-      "summary": "The former Boston Celtics forward hosted a block party at Boston Common to say farewell to the city.",
-      "url": "https://www.espn.com/nba/story/_/id/49778671/jaylen-brown-boston-celtics-farewell-block-party-key-city-nba",
-      "sport": "NBA",
-      "published": "2026-08-31T02:47:10.000Z",
-      "firstSeen": "2026-08-31T03:33:41.362Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49778912",
-      "id": "49778912",
-      "headline": "Cincinnati Reds vs. Chicago Cubs: Game Highlights",
-      "summary": "Cincinnati Reds vs. Chicago Cubs: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49778912/game-highlights",
-      "sport": "MLB",
-      "published": "2026-08-31T02:40:19.000Z",
-      "firstSeen": "2026-08-31T03:33:41.362Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49778941",
-      "id": "49778941",
-      "headline": "Dallas Wings vs. Connecticut Sun - Game Highlights",
-      "summary": "Watch the Game Highlights from Dallas Wings vs. Connecticut Sun, 08/30/2026",
-      "url": "https://www.espn.com/video/clip/_/id/49778941/dallas-wings-vs-connecticut-sun-game-highlights",
-      "sport": "WNBA",
-      "published": "2026-08-31T02:39:00.000Z",
-      "firstSeen": "2026-08-31T03:33:41.362Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49777755",
-      "id": "49777755",
-      "headline": "Rays prevail vs. Padres after DeLuca HR off Miller ties it in 9th",
-      "summary": "Jonny DeLuca homered off Mason Miller to tie it in the ninth, and Jorge Mateo singled in the winning run in the 11th as Tampa Bay finished a sweep.",
-      "url": "https://www.espn.com/mlb/story/_/id/49777755/rays-prevail-vs-padres-deluca-hr-miller-ties-9th",
-      "sport": "MLB",
-      "published": "2026-08-31T02:24:16.000Z",
-      "firstSeen": "2026-08-31T01:06:00.592Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49778534",
-      "id": "49778534",
-      "headline": "Seahawks' Zach Charbonnet still on PUP list, out 1st 4 games",
-      "summary": "Seahawks running back Zach Charbonnet remains on the physically unable to perform list, meaning he will miss at least Seattle's first four games. Meanwhile, the team released cornerback Trevon Diggs but expects to sign him to the practice squad.",
-      "url": "https://www.espn.com/nfl/story/_/id/49778534/seahawks-zach-charbonnet-remains-pup-list-miss-least-first-four-games",
-      "sport": "NFL",
-      "published": "2026-08-31T02:02:39.000Z",
-      "firstSeen": "2026-08-31T03:33:41.362Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49778514",
-      "id": "49778514",
-      "headline": "Raiders place DE Keyron Crawford (ankle) on season-ending IR",
-      "summary": "Las Vegas Raiders rookie defensive end Keyron Crawford was placed on the season-ending injured reserve list because of an ankle injury.",
-      "url": "https://www.espn.com/nfl/story/_/id/49778514/raiders-place-de-keyron-crawford-ankle-season-ending-ir",
-      "sport": "NFL",
-      "published": "2026-08-31T01:33:13.000Z",
-      "firstSeen": "2026-08-31T03:33:41.362Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49778459",
-      "id": "49778459",
-      "headline": "St. Louis CITY SC vs. FC Dallas - Game Highlights",
-      "summary": "Watch the Game Highlights from St. Louis CITY SC vs. FC Dallas, 08/30/2026",
-      "url": "https://www.espn.com/video/clip/_/id/49778459/st-louis-city-sc-vs-fc-dallas-game-highlights",
-      "sport": "Soccer",
-      "published": "2026-08-31T01:26:16.000Z",
-      "firstSeen": "2026-08-31T03:33:41.362Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49778345",
-      "id": "49778345",
-      "headline": "Valkyries cruise on the road vs. the Fire",
-      "summary": "Valkyries cruise on the road vs. the Fire",
-      "url": "https://www.espn.com/video/clip/_/id/49778345/valkyries-cruise-road-vs-fire",
-      "sport": "WNBA",
-      "published": "2026-08-31T01:24:11.000Z",
-      "firstSeen": "2026-08-31T03:33:41.362Z",
-      "bestRank": 3
     }
   ]
 }
