@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-22T06:43:34.361Z",
+  "generatedAt": "2026-09-22T09:28:54.752Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-01T06:43:34.361Z",
-  "windowEnd": "2026-09-22T06:43:34.361Z",
+  "windowStart": "2026-09-01T09:28:54.752Z",
+  "windowEnd": "2026-09-22T09:28:54.752Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,228 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4344,
+  "count": 4346,
   "items": [
+    {
+      "key": "50003915",
+      "id": "50003915",
+      "headline": "Ugo Ugochukwu celebrates Nigerian roots after winning FIA Formula 3 championship",
+      "summary": "Newly crowned FIA Formula 3 champion Ugo Ugochukwu says he is proud to represent his Nigerian heritage on the international stage, even though he races under the United States flag.",
+      "url": "https://www.espn.com/espn/story/_/id/50003915/ugo-ugochukwu-celebrates-nigerian-roots-winning-fia-formula-3-championship",
+      "sport": "F1",
+      "published": "2026-09-22T09:16:00.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50003845",
+      "id": "50003845",
+      "headline": "Isack Hadjar returns to Red Bull for Azerbaijan GP after injury layoff",
+      "summary": "Red Bull driver Isack Hadjar will return to action at this weekend's Azerbaijan Grand Prix after missing the last three races with a wrist injury.",
+      "url": "https://www.espn.com/f1/story/_/id/50003845/isack-hadjar-returns-red-bull-azerbaijan-gp-injury-layoff",
+      "sport": "F1",
+      "published": "2026-09-22T08:49:24.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50003690",
+      "id": "50003690",
+      "headline": "Angels aim to end 3-game road skid, play the Athletics",
+      "summary": "Los Angeles Angels (60-96, fifth in the AL West) vs. Athletics (61-95, fourth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817041",
+      "sport": "MLB",
+      "published": "2026-09-22T08:03:12.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50003689",
+      "id": "50003689",
+      "headline": "Diamondbacks visit the Rockies to begin 3-game series",
+      "summary": "Arizona Diamondbacks (82-74, third in the NL West) vs. Colorado Rockies (57-99, fifth in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817040",
+      "sport": "MLB",
+      "published": "2026-09-22T08:03:09.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50003688",
+      "id": "50003688",
+      "headline": "Royals bring 4-game losing streak into matchup against the White Sox",
+      "summary": "Chicago White Sox (80-76, second in the AL Central) vs. Kansas City Royals (67-89, fifth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817037",
+      "sport": "MLB",
+      "published": "2026-09-22T08:03:05.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50003687",
+      "id": "50003687",
+      "headline": "Phillies take on the Brewers in first of 3-game series",
+      "summary": "Milwaukee Brewers (98-58, first in the NL Central) vs. Philadelphia Phillies (86-70, second in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817032",
+      "sport": "MLB",
+      "published": "2026-09-22T08:03:01.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50003686",
+      "id": "50003686",
+      "headline": "Giants face the Twins with 1-0 series lead",
+      "summary": "Minnesota Twins (73-84, fourth in the AL Central) vs. San Francisco Giants (65-92, fourth in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817043",
+      "sport": "MLB",
+      "published": "2026-09-22T08:02:58.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50003685",
+      "id": "50003685",
+      "headline": "Padres seek to continue win streak, take on the Dodgers",
+      "summary": "San Diego Padres (87-69, second in the NL West) vs. Los Angeles Dodgers (96-60, first in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817044",
+      "sport": "MLB",
+      "published": "2026-09-22T08:02:54.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50003684",
+      "id": "50003684",
+      "headline": "Pirates host the Cardinals, aim to extend home win streak",
+      "summary": "St. Louis Cardinals (76-80, fourth in the NL Central) vs. Pittsburgh Pirates (79-77, third in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817033",
+      "sport": "MLB",
+      "published": "2026-09-22T08:02:51.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50003683",
+      "id": "50003683",
+      "headline": "Braves take on the Reds in first of 3-game series",
+      "summary": "Cincinnati Reds (72-84, fifth in the NL Central) vs. Atlanta Braves (92-64, first in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817030",
+      "sport": "MLB",
+      "published": "2026-09-22T08:02:47.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50003682",
+      "id": "50003682",
+      "headline": "Tigers try to keep home win streak going, host the Nationals",
+      "summary": "Washington Nationals (73-84, fourth in the NL East) vs. Detroit Tigers (74-83, third in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817036",
+      "sport": "MLB",
+      "published": "2026-09-22T08:02:44.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50003681",
+      "id": "50003681",
+      "headline": "Guardians visit the Red Sox to start 3-game series",
+      "summary": "Cleveland Guardians (81-75, first in the AL Central) vs. Boston Red Sox (84-72, third in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817031",
+      "sport": "MLB",
+      "published": "2026-09-22T08:02:41.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50003680",
+      "id": "50003680",
+      "headline": "Marlins visit the Cubs to open 3-game series",
+      "summary": "Miami Marlins (76-80, third in the NL East) vs. Chicago Cubs (87-69, second in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817038",
+      "sport": "MLB",
+      "published": "2026-09-22T08:02:37.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50003679",
+      "id": "50003679",
+      "headline": "Mets visit the Rangers to start 3-game series",
+      "summary": "New York Mets (71-85, fifth in the NL East) vs. Texas Rangers (78-78, first in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817039",
+      "sport": "MLB",
+      "published": "2026-09-22T08:02:34.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50003145",
+      "id": "50003145",
+      "headline": "Why is the Azerbaijan Grand Prix on a Saturday, not a Sunday? Baku schedule shift explained",
+      "summary": "Why is the Azerbaijan Grand Prix taking place on a Saturday? Here's why F1 has moved the entire Baku race weekend forward by a day.",
+      "url": "https://www.espn.com/f1/story/_/id/50003145/explained-2026-azerbaijan-grand-prix-saturday-sunday-schedule-baku",
+      "sport": "F1",
+      "published": "2026-09-22T08:02:32.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50003678",
+      "id": "50003678",
+      "headline": "Astros take road losing streak into matchup with the Mariners",
+      "summary": "Houston Astros (77-79, second in the AL West) vs. Seattle Mariners (73-83, third in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817042",
+      "sport": "MLB",
+      "published": "2026-09-22T08:02:30.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49963170",
+      "id": "49963170",
+      "headline": "Azerbaijan Grand Prix 2026: Race start time in Baku, how to watch, full schedule, predictions",
+      "summary": "Formula 1 is heading to the streets of Baku for this year's Azerbaijan Grand Prix as we roll into the business end of the season.",
+      "url": "https://www.espn.com/f1/story/_/id/49963170/azerbaijan-grand-prix-2026-circuit-baku-race-f1-start-s-how-watch-schedule-usa-tv-channel-live-stream-predictions-results",
+      "sport": "F1",
+      "published": "2026-09-22T07:55:08.000Z",
+      "firstSeen": "2026-09-18T18:31:07.745Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50000502",
+      "id": "50000502",
+      "headline": "Time for Liverpool to give up on Florian Wirtz already after record fee?",
+      "summary": "Liverpool spent a record fee to sign Florian Wirtz, but his low stats have many writing him off. Is it too soon, or should Liverpool move on?",
+      "url": "https://www.espn.com/soccer/story/_/id/50000502/liverpool-give-florian-wirtz-already-record-fee",
+      "sport": "Soccer",
+      "published": "2026-09-22T07:19:40.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49953407",
+      "id": "49953407",
+      "headline": "Soccer's wildest warmup kits of 2026-27: The good, the bad and the ugly",
+      "summary": "Forget home, away and third alternate jerseys -- the prematch warmup kit is where the real fun is to be had. Get a load of this season's best and worst.",
+      "url": "https://www.espn.com/soccer/story/_/id/49953407/soccer-wildest-warmup-kits-2026-27-good-bad-ugly",
+      "sport": "Soccer",
+      "published": "2026-09-22T07:16:27.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50003301",
+      "id": "50003301",
+      "headline": "Transfer rumors, news: Liverpool, Arsenal, Man City in race for Feyenoord defender",
+      "summary": "Liverpool are monitoring Feyenoord right back Givairo Read, but face competition from Arsenal and Manchester City. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/50003301/transfer-rumors-news-liverpool-arsenal-man-city-race-feyenoord-defender",
+      "sport": "Soccer",
+      "published": "2026-09-22T07:13:45.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 3
+    },
     {
       "key": "50001578",
       "id": "50001578",
@@ -244,6 +464,17 @@
       "bestRank": 3
     },
     {
+      "key": "50001314",
+      "id": "50001314",
+      "headline": "William Eklund scores goal vs. Canadiens",
+      "summary": "William Eklund scores goal vs. Canadiens",
+      "url": "https://www.espn.com/video/clip/_/id/50001314/william-eklund-scores-goal-vs-canadiens",
+      "sport": "NHL",
+      "published": "2026-09-22T03:11:33.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 3
+    },
+    {
       "key": "50001495",
       "id": "50001495",
       "headline": "Jays' Dylan Cease avoids serious injury, won't need surgery",
@@ -253,6 +484,17 @@
       "published": "2026-09-22T03:02:46.000Z",
       "firstSeen": "2026-09-22T01:01:00.993Z",
       "bestRank": 2
+    },
+    {
+      "key": "50002247",
+      "id": "50002247",
+      "headline": "Minnesota Wild vs. Chicago Blackhawks: Game Highlights",
+      "summary": "Minnesota Wild vs. Chicago Blackhawks: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50002247/game-highlights",
+      "sport": "NHL",
+      "published": "2026-09-22T02:50:18.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 1
     },
     {
       "key": "50001868",
@@ -431,6 +673,17 @@
       "bestRank": 6
     },
     {
+      "key": "50001249",
+      "id": "50001249",
+      "headline": "Jones takes responsibility for Steveson leaving Octagon early",
+      "summary": "Jon Jones took responsibility for Gable Steveson's quick exit after a historic upset on Saturday, saying his instant reaction was to \"get my friend to the back to make sure he was OK.\"",
+      "url": "https://www.espn.com/mma/ufc/story/_/id/50001249/jones-takes-responsibility-steveson-leaving-octagon-early",
+      "sport": "MMA",
+      "published": "2026-09-22T00:16:41.000Z",
+      "firstSeen": "2026-09-22T01:01:00.993Z",
+      "bestRank": 1
+    },
+    {
       "key": "49961538",
       "id": "49961538",
       "headline": "NFL Week 2's best arrivals, led by Aaron Donald and Jaxson Dart",
@@ -495,17 +748,6 @@
       "published": "2026-09-21T23:33:26.000Z",
       "firstSeen": "2026-09-21T21:25:44.382Z",
       "bestRank": 11
-    },
-    {
-      "key": "50001249",
-      "id": "50001249",
-      "headline": "Jones takes responsibility for Steveson leaving octagon early",
-      "summary": "Jon Jones took responsibility for Gable Steveson's quick exit after a historic upset on Saturday, saying his instant reaction was to \"get my friend to the back to make sure he was OK.\"",
-      "url": "https://www.espn.com/mma/ufc/story/_/id/50001249/jones-takes-responsibility-steveson-leaving-octagon-early",
-      "sport": "MMA",
-      "published": "2026-09-21T23:29:20.000Z",
-      "firstSeen": "2026-09-22T01:01:00.993Z",
-      "bestRank": 1
     },
     {
       "key": "50001072",
@@ -660,6 +902,17 @@
       "published": "2026-09-21T22:27:54.000Z",
       "firstSeen": "2026-09-22T01:01:00.993Z",
       "bestRank": 2
+    },
+    {
+      "key": "50000935",
+      "id": "50000935",
+      "headline": "Brandt Snedeker wary of U.S. dominance ahead of Presidents Cup",
+      "summary": "U.S. captain Brandt Snedeker says his country's dominance of the Presidents Cup is \"the elephant in the room\" and will be addressed with his team ahead of this week's competition.",
+      "url": "https://www.espn.com/golf/story/_/id/50000935/brandt-snedeker-wary-us-dominance-ahead-presidents-cup",
+      "sport": "Golf",
+      "published": "2026-09-21T22:27:35.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 1
     },
     {
       "key": "50000561",
@@ -9132,17 +9385,6 @@
       "bestRank": 6
     },
     {
-      "key": "49963170",
-      "id": "49963170",
-      "headline": "Azerbaijan Grand Prix 2026: Race start time in Baku, how to watch, full schedule, predictions",
-      "summary": "Formula 1 is heading to the streets of Baku for this year's Azerbaijan Grand Prix as we roll into the business end of the season.",
-      "url": "https://www.espn.com/f1/story/_/id/49963170/azerbaijan-grand-prix-2026-circuit-baku-race-f1-start-s-how-watch-schedule-usa-tv-channel-live-stream-predictions-results",
-      "sport": "F1",
-      "published": "2026-09-18T16:41:05.000Z",
-      "firstSeen": "2026-09-18T18:31:07.745Z",
-      "bestRank": 1
-    },
-    {
       "key": "49973983",
       "id": "49973983",
       "headline": "Patrick Reed exits BMW PGA Championship with hand injury",
@@ -13108,7 +13350,7 @@
       "headline": "Reports: Miami Hurricanes returning to Nike in '27 on $200M+ deal",
       "summary": "University of Miami athletic teams will be wearing Nike apparel again starting in July 2027, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/49958590/report-miami-hurricanes-going-back-nike-200m+-deal",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-16T19:04:20.000Z",
       "firstSeen": "2026-09-16T21:25:45.412Z",
       "bestRank": 1
@@ -15176,7 +15418,7 @@
       "headline": "NFL, NBA, MLB, NHL, MLS urge action against threats from bettors",
       "summary": "The NFL, NBA, MLB, NHL, MLS and their players' unions are urging state gambling regulators to combat escalating harassment and violent threats from sports bettors.",
       "url": "https://www.espn.com/betting/sports/story/_/id/49949715/nfl-nba-mlb-nhl-mls-urge-action-threats-bettors",
-      "sport": "Soccer",
+      "sport": "NHL",
       "published": "2026-09-15T20:40:15.000Z",
       "firstSeen": "2026-09-15T18:17:37.554Z",
       "bestRank": 2
@@ -17442,7 +17684,7 @@
       "headline": "FSU fires AD Michael Alford amid looming football questions",
       "summary": "Florida State fired athletic director Michael Alford on Monday as the Seminoles grapple with looming decisions about their football program.",
       "url": "https://www.espn.com/college-football/story/_/id/49939737/fsu-fires-ad-michael-alford-amid-looming-football-questions",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-14T18:30:25.000Z",
       "firstSeen": "2026-09-14T15:28:36.074Z",
       "bestRank": 1
@@ -29135,7 +29377,7 @@
       "headline": "CSC clears $227M+ in NIL deals in July, August in major increase",
       "summary": "The College Sports Commission cleared more than $227 million in NIL deals in July and August, nearly doubling the value of all the deals cleared in its first year of existence.",
       "url": "https://www.espn.com/espn/story/_/id/49882283/csc-clears-227m-nil-deals-july-august-major-increase",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-09T19:03:51.000Z",
       "firstSeen": "2026-09-09T21:23:12.453Z",
       "bestRank": 1
@@ -41257,7 +41499,7 @@
       "headline": "Judge grants injunction to pro players seeking LSU return",
       "summary": "Dae'Quan Wright and Zxavian Harris are currently cleared to return to college football after brief stints in the NFL, according to a judge's orders issued Thursday evening, setting up a dramatic showdown between the SEC and LSU.",
       "url": "https://www.espn.com/college-football/story/_/id/49807088/judge-grants-injunction-pro-players-seeking-lsu-return",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-04T12:40:04.000Z",
       "firstSeen": "2026-09-04T03:31:23.580Z",
       "bestRank": 1
@@ -44832,7 +45074,7 @@
       "headline": "With $6.5 million left on deal, UCLA fires AD Martin Jarmond",
       "summary": "UCLA fired athletic director Martin Jarmond on Monday, with chancellor Julio Frenk explaining in a letter to the UCLA community that the Bruins' athletic program \"currently carries a significant financial deficit, and its current path is not sustainable.\"",
       "url": "https://www.espn.com/college-football/story/_/id/49788304/with-65-million-left-deal-ucla-fires-ad-martin-jarmond",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-02T21:48:43.000Z",
       "firstSeen": "2026-09-01T01:11:44.372Z",
       "bestRank": 1
@@ -47586,226 +47828,6 @@
       "published": "2026-09-01T09:42:22.000Z",
       "firstSeen": "2026-09-01T11:14:29.720Z",
       "bestRank": 5
-    },
-    {
-      "key": "49791864",
-      "id": "49791864",
-      "headline": "Ferrari to run Michael Schumacher tribute livery at Italian Grand Prix",
-      "summary": "Ferrari will mark the 30-year anniversary of Michael Schumacher's arrival at Maranello by running a special livery at this weekend's Italian Grand Prix.",
-      "url": "https://www.espn.com/f1/story/_/id/49791864/ferrari-run-michael-schumacher-tribute-livery-italian-grand-prix",
-      "sport": "F1",
-      "published": "2026-09-01T09:25:08.000Z",
-      "firstSeen": "2026-09-01T12:38:04.191Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49791930",
-      "id": "49791930",
-      "headline": "Tottenham agree deal for Chelsea duo Mykhailo Mudryk, Tosin Adarabioyo - sources",
-      "summary": "Tottenham have agreed a double deal to sign Mykhailo Mudryk and Tosin Adarabioyo from Chelsea, sources have told ESPN.",
-      "url": "https://www.espn.com/soccer/story/_/id/49791930/tottenham-agree-deal-chelsea-duo-mykhailo-mudryk-tosin-adarabioyo-sources",
-      "sport": "Soccer",
-      "published": "2026-09-01T09:25:00.000Z",
-      "firstSeen": "2026-09-01T11:14:29.720Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49791654",
-      "id": "49791654",
-      "headline": "Arsenal's Mikel Arteta downplays Cristhian Mosquera injury concerns",
-      "summary": "Arsenal boss Mikel Arteta says Cristhian Mosquera is \"fine\" and was taken off as a precaution during Monday night's 1-0 win at Aston Villa after the Spanish defender reported feeling pain.",
-      "url": "https://www.espn.com/soccer/story/_/id/49791654/arsenal-mikel-arteta-downplays-christhian-mosquera-injury-concerns",
-      "sport": "Soccer",
-      "published": "2026-09-01T08:47:11.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49790853",
-      "id": "49790853",
-      "headline": "Africa's transfer deadline day - Ndiaye to Man City, Mbaye incoming, Osimhen to Man United?",
-      "summary": "Tuesday is the final day of the window, but which African players could get their move over the line before business concludes on Sept. 1?",
-      "url": "https://www.espn.com/espn/story/_/id/49790853/africa-transfer-deadline-day-ndiaye-man-city-mbaye-incoming-osimhen-man-united",
-      "sport": "Soccer",
-      "published": "2026-09-01T08:43:38.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49791210",
-      "id": "49791210",
-      "headline": "Yoane Wissa's Newcastle sequel is already looking better than the original",
-      "summary": "Two matches into the 26-27 season, and Newcastle United's Yoane Wissa has already matched his Premier League goal tally for the entirety of last term.",
-      "url": "https://www.espn.com/espn/story/_/id/49791210/yoane-wissa-newcastle-sequel-already-looking-better-original",
-      "sport": "Soccer",
-      "published": "2026-09-01T08:30:42.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49791430",
-      "id": "49791430",
-      "headline": "Cubs meet the Brewers following Bregman's 3-home run game",
-      "summary": "Milwaukee Brewers (85-53, first in the NL Central) vs. Chicago Cubs (78-60, second in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816768",
-      "sport": "MLB",
-      "published": "2026-09-01T08:03:06.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49791429",
-      "id": "49791429",
-      "headline": "DeLauter leads Guardians against the Blue Jays following 4-hit game",
-      "summary": "Toronto Blue Jays (68-70, fifth in the AL East) vs. Cleveland Guardians (69-68, second in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816763",
-      "sport": "MLB",
-      "published": "2026-09-01T08:03:02.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49791428",
-      "id": "49791428",
-      "headline": "Nationals take on the Braves in first of 2-game series",
-      "summary": "Atlanta Braves (82-56, first in the NL East) vs. Washington Nationals (66-74, fourth in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816758",
-      "sport": "MLB",
-      "published": "2026-09-01T08:02:59.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49791426",
-      "id": "49791426",
-      "headline": "Angels face the Yankees leading series 1-0",
-      "summary": "New York Yankees (78-60, second in the AL East) vs. Los Angeles Angels (53-85, fifth in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816770",
-      "sport": "MLB",
-      "published": "2026-09-01T08:02:55.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49791425",
-      "id": "49791425",
-      "headline": "Machado leads Padres against the Reds after 4-hit performance",
-      "summary": "San Diego Padres (73-65, second in the NL West) vs. Cincinnati Reds (65-73, fifth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816760",
-      "sport": "MLB",
-      "published": "2026-09-01T08:02:51.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49791424",
-      "id": "49791424",
-      "headline": "Mets bring 1-0 series lead over Rays into game 2",
-      "summary": "New York Mets (62-76, fifth in the NL East) vs. Tampa Bay Rays (82-55, first in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816759",
-      "sport": "MLB",
-      "published": "2026-09-01T08:02:48.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49791423",
-      "id": "49791423",
-      "headline": "Pirates begin 3-game series against the Giants",
-      "summary": "San Francisco Giants (57-81, fourth in the NL West) vs. Pittsburgh Pirates (67-71, fourth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816762",
-      "sport": "MLB",
-      "published": "2026-09-01T08:02:44.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49791422",
-      "id": "49791422",
-      "headline": "Athletics enter matchup against the Rangers on losing streak",
-      "summary": "Athletics (53-85, fourth in the AL West) vs. Texas Rangers (68-70, second in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816764",
-      "sport": "MLB",
-      "published": "2026-09-01T08:02:40.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49791416",
-      "id": "49791416",
-      "headline": "Dodgers host the Cardinals on 3-game home win streak",
-      "summary": "St. Louis Cardinals (68-70, third in the NL Central) vs. Los Angeles Dodgers (82-55, first in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816772",
-      "sport": "MLB",
-      "published": "2026-09-01T08:02:36.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49791403",
-      "id": "49791403",
-      "headline": "Royals host the Marlins on home winning streak",
-      "summary": "Miami Marlins (69-69, third in the NL East) vs. Kansas City Royals (62-76, fifth in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816767",
-      "sport": "MLB",
-      "published": "2026-09-01T08:02:33.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49791398",
-      "id": "49791398",
-      "headline": "Astros bring 1-0 series lead over White Sox into game 2",
-      "summary": "Chicago White Sox (72-65, first in the AL Central) vs. Houston Astros (70-68, first in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816765",
-      "sport": "MLB",
-      "published": "2026-09-01T08:02:29.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49791396",
-      "id": "49791396",
-      "headline": "Phillies bring 5-game road win streak into game against the Diamondbacks",
-      "summary": "Philadelphia Phillies (78-60, second in the NL East) vs. Arizona Diamondbacks (73-66, third in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816771",
-      "sport": "MLB",
-      "published": "2026-09-01T08:01:42.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49791395",
-      "id": "49791395",
-      "headline": "Tigers bring road losing streak into matchup against the Twins",
-      "summary": "Detroit Tigers (63-74, fourth in the AL Central) vs. Minnesota Twins (66-72, third in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816766",
-      "sport": "MLB",
-      "published": "2026-09-01T08:01:39.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49791394",
-      "id": "49791394",
-      "headline": "Arozarena leads Mariners against the Red Sox after 4-hit game",
-      "summary": "Seattle Mariners (64-74, third in the AL West) vs. Boston Red Sox (75-63, third in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816761",
-      "sport": "MLB",
-      "published": "2026-09-01T08:01:35.000Z",
-      "firstSeen": "2026-09-01T09:31:22.142Z",
-      "bestRank": 14
-    },
-    {
-      "key": "49787846",
-      "id": "49787846",
-      "headline": "Ketel Marte apologizes to Torey Lovullo, hears boos in return",
-      "summary": "Ketel Marte was back at the ballpark Monday and in the lineup for the Diamondbacks, two weeks after the three-time All-Star's unexpected no-show before a game in Boston left the team scrambling.",
-      "url": "https://www.espn.com/mlb/story/_/id/49787846/ketel-marte-apologizes-torey-lovullo-address-d-backs",
-      "sport": "MLB",
-      "published": "2026-09-01T07:44:16.000Z",
-      "firstSeen": "2026-09-01T01:11:44.372Z",
-      "bestRank": 3
     }
   ]
 }
