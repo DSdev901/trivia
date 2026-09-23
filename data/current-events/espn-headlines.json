@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-23T03:34:04.861Z",
+  "generatedAt": "2026-09-23T06:44:00.710Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-02T03:34:04.861Z",
-  "windowEnd": "2026-09-23T03:34:04.861Z",
+  "windowStart": "2026-09-02T06:44:00.710Z",
+  "windowEnd": "2026-09-23T06:44:00.710Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,41 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4374,
+  "count": 4368,
   "items": [
+    {
+      "key": "50011290",
+      "id": "50011290",
+      "headline": "Dodgers score 5 two-out runs off Padres starter Michael King in 7-0 victory",
+      "summary": "— Tommy Edman and Will Smith homered as the Los Angeles Dodgers scored six runs with two outs to beat the San Diego Padres 7-0 on Tuesday night in a series opener between rivals with the two best records in the majors this month.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817044",
+      "sport": "MLB",
+      "published": "2026-09-23T06:01:28.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50010114",
+      "id": "50010114",
+      "headline": "Ohtani 'considerably' healthier, will return to Dodgers' lineup Wednesday",
+      "summary": "Dodgers star Shohei Ohtani's health is \"probably an eight or a nine\" on a scale from 1 to 10, according to manager Dave Roberts, and the two-way star will be back in the lineup Wednesday against the Padres.",
+      "url": "https://www.espn.com/mlb/story/_/id/50010114/ohtani-considerably-healthier-return-dodgers-lineup-wednesday",
+      "sport": "MLB",
+      "published": "2026-09-23T05:47:09.000Z",
+      "firstSeen": "2026-09-23T03:34:04.861Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50011211",
+      "id": "50011211",
+      "headline": "Alvarez hits 41st homer and drives in 3 as Astros blank Mariners 7-0 to tie Rangers atop AL West",
+      "summary": "— Yordan Alvarez resumed his Triple Crown push with a home run and three RBI as the Houston Astros beat the Seattle Mariners 7-0 on Tuesday night to pull even with Texas atop the AL West.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817042",
+      "sport": "MLB",
+      "published": "2026-09-23T05:44:37.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 3
+    },
     {
       "key": "50010466",
       "id": "50010466",
@@ -30,20 +63,196 @@
       "summary": "Drew Rasmussen took a no-hit bid into the seventh inning as the Rays beat the Yankees 6-1 on Tuesday to clinch their fifth AL East title.",
       "url": "https://www.espn.com/mlb/story/_/id/50010466/drew-rasmussen-shuts-yankees-help-rays-clinch-al-east",
       "sport": "MLB",
-      "published": "2026-09-23T03:14:57.000Z",
+      "published": "2026-09-23T05:27:18.000Z",
       "firstSeen": "2026-09-23T03:34:04.861Z",
       "bestRank": 1
     },
     {
-      "key": "50010114",
-      "id": "50010114",
-      "headline": "Ohtani 'considerably' healthier, expected back in Dodgers' lineup Wednesday",
-      "summary": "Dodgers star Shohei Ohtani's health is \"probably an eight or a nine\" on a scale from 1 to 10, according to manager Dave Roberts, and is expected to return to the lineup Wednesday against the Padres.",
-      "url": "https://www.espn.com/mlb/story/_/id/50010114/ohtani-considerably-healthier-expected-back-dodgers-lineup-wednesday",
+      "key": "48305211",
+      "id": "48305211",
+      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
+      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
+      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
       "sport": "MLB",
-      "published": "2026-09-23T03:01:38.000Z",
-      "firstSeen": "2026-09-23T03:34:04.861Z",
+      "published": "2026-09-23T05:12:37.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50010943",
+      "id": "50010943",
+      "headline": "Miami Marlins stymie Chicago's push for NL wild card with 8-2 victory over the Cubs",
+      "summary": "— Griffin Conine drove in Esteury Ruiz with a tiebreaking single in Miami's six-run 12th inning, and the Marlins stymied Chicago's push for an NL wild card with an 8-2 victory over the Cubs on Tuesday night.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817038",
+      "sport": "MLB",
+      "published": "2026-09-23T05:11:30.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50011199",
+      "id": "50011199",
+      "headline": "Los Angeles Angels vs. Oakland Athletics: Game Highlights",
+      "summary": "Los Angeles Angels vs. Oakland Athletics: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50011199/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-23T05:03:57.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50011187",
+      "id": "50011187",
+      "headline": "Houston Astros vs. Seattle Mariners: Game Highlights",
+      "summary": "Houston Astros vs. Seattle Mariners: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50011187/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-23T04:55:19.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50010704",
+      "id": "50010704",
+      "headline": "Mets win 1st game after Andy Green named full-time manager, beating AL West-leading Rangers 6-3",
+      "summary": "— Sean Manaea struck out nine in six innings, Francisco Alvarez doubled and scored twice while driving in two runs, and the New York Mets beat the AL West-leading Texas Rangers 6-3 on Tuesday night in their first game with",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817039",
+      "sport": "MLB",
+      "published": "2026-09-23T04:53:29.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50011184",
+      "id": "50011184",
+      "headline": "San Diego Padres vs. Los Angeles Dodgers: Game Highlights",
+      "summary": "San Diego Padres vs. Los Angeles Dodgers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50011184/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-23T04:52:21.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50011139",
+      "id": "50011139",
+      "headline": "Bradley passes 200 strikeouts, pitches Twins to 3-2 win over Giants",
+      "summary": "—",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817043",
+      "sport": "MLB",
+      "published": "2026-09-23T04:40:32.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50011072",
+      "id": "50011072",
+      "headline": "Twins hold off Giants for 3-2 win",
+      "summary": "Twins hold off Giants for 3-2 win",
+      "url": "https://www.espn.com/video/clip/_/id/50011072/twins-hold-giants-3-2-win",
+      "sport": "MLB",
+      "published": "2026-09-23T04:35:16.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50010883",
+      "id": "50010883",
+      "headline": "Miami Marlins vs. Chicago Cubs: Game Highlights",
+      "summary": "Miami Marlins vs. Chicago Cubs: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50010883/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-23T04:28:43.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
       "bestRank": 10
+    },
+    {
+      "key": "50010861",
+      "id": "50010861",
+      "headline": "Rockies hit latest low, become fifth team with 4 straight 100-loss seasons",
+      "summary": "The Rockies became just the fifth club in MLB history to lose at least 100 games in four straight seasons and the first to do so since th Mets from 1962 through 1965.",
+      "url": "https://www.espn.com/mlb/story/_/id/50010861/rockies-hit-latest-low-become-fifth-team-4-straight-100-loss-seasons",
+      "sport": "MLB",
+      "published": "2026-09-23T04:26:26.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50009398",
+      "id": "50009398",
+      "headline": "Cubs expect Alex Bregman back for playoffs after foul ball to face",
+      "summary": "The Cubs are confident third baseman Alex Bregman will be ready for the postseason after getting hit in the face by a foul ball Sunday -- and are not ruling him out for this weekend's series in Boston.",
+      "url": "https://www.espn.com/mlb/story/_/id/50009398/cubs-expect-alex-bregman-ready-postseason-facial-fractures-foul-ball",
+      "sport": "MLB",
+      "published": "2026-09-23T04:05:41.000Z",
+      "firstSeen": "2026-09-23T00:59:43.095Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50010821",
+      "id": "50010821",
+      "headline": "Clippers name Trent Redden interim president of basketball ops",
+      "summary": "The LA Clippers named general manager Trent Redden as the team's interim president of basketball operations while Lawrence Frank serves his six-month suspension.",
+      "url": "https://www.espn.com/nba/story/_/id/50010821/clippers-name-trent-redden-interim-president-basketball-ops",
+      "sport": "NBA",
+      "published": "2026-09-23T03:36:40.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50010814",
+      "id": "50010814",
+      "headline": "Diamondbacks beat Rockies 7-2, send Colorado to its 4th straight season of 100 or more losses",
+      "summary": "— Nolan Arenado had his team-leading 28th homer of the season among his three hits, Michael Soroka struck out nine in seven innings of one-run ball and the Arizona Diamondbacks beat Colorado 7-2 Tuesday night, sending the Rockies to their 100th loss...",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817040",
+      "sport": "MLB",
+      "published": "2026-09-23T03:31:31.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50010680",
+      "id": "50010680",
+      "headline": "New York Mets vs. Texas Rangers: Game Highlights",
+      "summary": "New York Mets vs. Texas Rangers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50010680/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-23T03:25:44.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50006335",
+      "id": "50006335",
+      "headline": "Yankees don't expect Aaron Judge (calf) back for wild card",
+      "summary": "Aaron Judge is not expected to be available for the Yankees' wild-card series as he continues to recover from a calf strain.",
+      "url": "https://www.espn.com/mlb/story/_/id/50006335/yankees-expect-aaron-judge-calf-back-wild-card",
+      "sport": "MLB",
+      "published": "2026-09-23T03:22:56.000Z",
+      "firstSeen": "2026-09-22T18:20:52.433Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50010707",
+      "id": "50010707",
+      "headline": "Arizona Diamondbacks vs. Colorado Rockies: Game Highlights",
+      "summary": "Arizona Diamondbacks vs. Colorado Rockies: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50010707/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-23T03:19:51.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50009840",
+      "id": "50009840",
+      "headline": "Chris Spatola, ESPN college basketball analyst, dies at age 47",
+      "summary": "Chris Spatola, an ESPN college basketball analyst and former Army starting guard, has died at age 47, the network announced on Tuesday.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50009840/chris-spatola-espn-college-basketball-analyst-dies-age-47",
+      "sport": "College basketball",
+      "published": "2026-09-23T03:08:35.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 1
     },
     {
       "key": "49752366",
@@ -167,6 +376,39 @@
       "bestRank": 11
     },
     {
+      "key": "50010072",
+      "id": "50010072",
+      "headline": "Austin has 25 points and 13 rebounds as the Mystics beat the Sun 79-69 for franchise-record 27th win",
+      "summary": "— Shakira Austin had 25 points and 13 rebounds to help the Washington Mystics beat the Connecticut Sun 79-69 on Tuesday night for their franchise-record 27th win of the season.",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857208",
+      "sport": "WNBA",
+      "published": "2026-09-23T01:45:29.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50010052",
+      "id": "50010052",
+      "headline": "Washington Mystics vs. Connecticut Sun - Game Highlights",
+      "summary": "Watch the Game Highlights from Washington Mystics vs. Connecticut Sun, 09/22/2026",
+      "url": "https://www.espn.com/video/clip/_/id/50010052/washington-mystics-vs-connecticut-sun-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-09-23T01:43:38.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50010041",
+      "id": "50010041",
+      "headline": "Philadelphia Flyers vs. Boston Bruins: Game Highlights",
+      "summary": "Philadelphia Flyers vs. Boston Bruins: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50010041/game-highlights",
+      "sport": "NHL",
+      "published": "2026-09-23T01:41:17.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 1
+    },
+    {
       "key": "50009931",
       "id": "50009931",
       "headline": "CJ Abrams homers twice, drives in three runs as Nationals beat Tigers 3-1",
@@ -244,17 +486,6 @@
       "bestRank": 18
     },
     {
-      "key": "50009398",
-      "id": "50009398",
-      "headline": "Cubs expect Alex Bregman back for playoffs after foul ball to face",
-      "summary": "The Cubs are confident third baseman Alex Bregman will be ready for the postseason after getting hit in the face by a foul ball Sunday -- and are not ruling him out for this weekend's series in Boston.",
-      "url": "https://www.espn.com/mlb/story/_/id/50009398/cubs-expect-alex-bregman-ready-postseason-facial-fractures-foul-ball",
-      "sport": "MLB",
-      "published": "2026-09-23T01:08:41.000Z",
-      "firstSeen": "2026-09-23T00:59:43.095Z",
-      "bestRank": 1
-    },
-    {
       "key": "49949224",
       "id": "49949224",
       "headline": "Rest-of-season rankings: Walker, Shough on the rise while Maye, McConkey fall",
@@ -330,6 +561,17 @@
       "published": "2026-09-23T00:03:53.000Z",
       "firstSeen": "2026-09-22T21:24:10.847Z",
       "bestRank": 4
+    },
+    {
+      "key": "50009216",
+      "id": "50009216",
+      "headline": "Lynx star Olivia Miles (calf) late scratch for game vs. Fever",
+      "summary": "Olivia Miles was a late scratch for the Lynx ahead of their game against the Fever on Tuesday because of a left calf injury.",
+      "url": "https://www.espn.com/wnba/story/_/id/50009216/lynx-star-olivia-miles-calf-late-scratch-game-vs-fever",
+      "sport": "WNBA",
+      "published": "2026-09-23T00:00:23.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 3
     },
     {
       "key": "50009416",
@@ -453,6 +695,17 @@
       "bestRank": 3
     },
     {
+      "key": "50008837",
+      "id": "50008837",
+      "headline": "Scheffler's record in team play of little concern to him, Snedeker",
+      "summary": "Scottie Scheffler is the No. 1 player in the world and a winner of three legs of the career Grand Slam -- it just doesn't look that way when it comes to team competition. But this is of little concern to Scheffler, or to U.S. captain Brandt Snedeker.",
+      "url": "https://www.espn.com/golf/story/_/id/50008837/scottie-scheffler-performance-team-competition-little-concern-brandt-snedeker-ahead-presidents-cup",
+      "sport": "Golf",
+      "published": "2026-09-22T22:30:08.000Z",
+      "firstSeen": "2026-09-23T06:44:00.710Z",
+      "bestRank": 1
+    },
+    {
       "key": "50008911",
       "id": "50008911",
       "headline": "Kentucky's Jordan Castell explains why his family means so much to him",
@@ -539,17 +792,6 @@
       "published": "2026-09-22T22:10:27.000Z",
       "firstSeen": "2026-09-23T00:59:43.095Z",
       "bestRank": 6
-    },
-    {
-      "key": "50006335",
-      "id": "50006335",
-      "headline": "Yankees don't expect Aaron Judge (calf) back for wild card",
-      "summary": "Aaron Judge is not expected to be available for the Yankees' wild-card series as he continues to recover from a calf strain.",
-      "url": "https://www.espn.com/mlb/story/_/id/50006335/yankees-expect-aaron-judge-calf-back-wild-card",
-      "sport": "MLB",
-      "published": "2026-09-22T22:05:00.000Z",
-      "firstSeen": "2026-09-22T18:20:52.433Z",
-      "bestRank": 2
     },
     {
       "key": "50008767",
@@ -2353,17 +2595,6 @@
       "sport": "WNBA",
       "published": "2026-09-22T04:43:29.000Z",
       "firstSeen": "2026-09-22T06:43:34.361Z",
-      "bestRank": 1
-    },
-    {
-      "key": "48305211",
-      "id": "48305211",
-      "headline": "2026 MLB ABS challenge system tracker: Team, player rankings",
-      "summary": "The ABS challenge system leaderboard ranks batters, catchers, teams and umpires throughout the MLB season.",
-      "url": "https://www.espn.com/mlb/story/_/id/48305211/2026-mlb-abs-challenge-system-tracker-team-player-rankings",
-      "sport": "MLB",
-      "published": "2026-09-22T04:42:47.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
     },
     {
@@ -47839,303 +48070,6 @@
       "published": "2026-09-02T06:54:36.000Z",
       "firstSeen": "2026-09-02T09:30:48.119Z",
       "bestRank": 6
-    },
-    {
-      "key": "49799296",
-      "id": "49799296",
-      "headline": "Pirates walk it off on an error to spoil Giants' comeback",
-      "summary": "Pirates walk it off on an error to spoil Giants' comeback",
-      "url": "https://www.espn.com/video/clip/_/id/49799296/pirates-walk-an-error-spoil-giants-comeback",
-      "sport": "MLB",
-      "published": "2026-09-02T06:34:34.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 17
-    },
-    {
-      "key": "49800120",
-      "id": "49800120",
-      "headline": "Jones and Chisholm Jr. crush back-to-back homers in top of 1st inning",
-      "summary": "Jones and Chisholm Jr. crush back-to-back homers in top of 1st inning",
-      "url": "https://www.espn.com/video/clip/_/id/49800120/jones-chisholm-jr-crush-back-back-homers-top-1st-inning",
-      "sport": "MLB",
-      "published": "2026-09-02T06:33:02.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49800403",
-      "id": "49800403",
-      "headline": "Top-seeded Alexander Zverev prevails in five-set thriller at US Open",
-      "summary": "Top-seeded Alexander Zverev prevails in five-set thriller at US Open",
-      "url": "https://www.espn.com/video/clip/_/id/49800403/top-seeded-alexander-zverev-prevails-five-set-thriller-us-open",
-      "sport": "Tennis",
-      "published": "2026-09-02T06:11:04.000Z",
-      "firstSeen": "2026-09-02T12:39:13.521Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49798540",
-      "id": "49798540",
-      "headline": "Brandon Nimmo's RBI gives Rangers a lead",
-      "summary": "Brandon Nimmo's RBI gives Rangers a lead",
-      "url": "https://www.espn.com/video/clip/_/id/49798540/brandon-nimmo-rbi-gives-rangers-lead",
-      "sport": "MLB",
-      "published": "2026-09-02T05:45:12.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 30
-    },
-    {
-      "key": "49798898",
-      "id": "49798898",
-      "headline": "Christian Yelich's 2-run HR pads Brewers' lead",
-      "summary": "Christian Yelich's 2-run HR pads Brewers' lead",
-      "url": "https://www.espn.com/video/clip/_/id/49798898/christian-yelich-2-run-hr-pads-brewers-lead",
-      "sport": "MLB",
-      "published": "2026-09-02T05:44:03.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 22
-    },
-    {
-      "key": "49798495",
-      "id": "49798495",
-      "headline": "Guardians go up 6-1 on Angel Martinez's 2-run HR",
-      "summary": "Guardians go up 6-1 on Angel Martinez's 2-run HR",
-      "url": "https://www.espn.com/video/clip/_/id/49798495/guardians-go-6-1-angel-martinez-2-run-hr",
-      "sport": "MLB",
-      "published": "2026-09-02T05:43:09.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 31
-    },
-    {
-      "key": "49800224",
-      "id": "49800224",
-      "headline": "Cardinals crank 5 homers in big win over Dodgers",
-      "summary": "Cardinals crank 5 homers in big win over Dodgers",
-      "url": "https://www.espn.com/video/clip/_/id/49800224/cardinals-crank-5-homers-big-win-dodgers",
-      "sport": "MLB",
-      "published": "2026-09-02T05:35:09.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49798739",
-      "id": "49798739",
-      "headline": "Fernando Tatis Jr. smashes a home run",
-      "summary": "Fernando Tatis Jr. smashes a home run",
-      "url": "https://www.espn.com/video/clip/_/id/49798739/fernando-tatis-jr-smashes-home-run",
-      "sport": "MLB",
-      "published": "2026-09-02T05:32:40.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 26
-    },
-    {
-      "key": "49800226",
-      "id": "49800226",
-      "headline": "Thomas Saggese leads 5-homer outburst in Cardinals' 13-8 win over Dodgers",
-      "summary": "— The St. Louis Cardinals hit five home runs, including a pair by Thomas Saggese and a two-run shot from Home Run Derby champion Jordan Walker, in a 13-8 win over the Los Angeles Dodgers on Tuesday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816772",
-      "sport": "MLB",
-      "published": "2026-09-02T05:32:29.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49797752",
-      "id": "49797752",
-      "headline": "Randy Arozarena smashes a 3-run HR for Mariners",
-      "summary": "Randy Arozarena smashes a 3-run HR for Mariners",
-      "url": "https://www.espn.com/video/clip/_/id/49797752/randy-arozarena-smashes-3-run-hr-mariners",
-      "sport": "MLB",
-      "published": "2026-09-02T05:30:46.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 34
-    },
-    {
-      "key": "49798372",
-      "id": "49798372",
-      "headline": "Kyle Stowers smashes a home run",
-      "summary": "Kyle Stowers crushes a home run",
-      "url": "https://www.espn.com/video/clip/_/id/49798372/kyle-stowers-smashes-home-run",
-      "sport": "MLB",
-      "published": "2026-09-02T05:28:40.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 32
-    },
-    {
-      "key": "49799652",
-      "id": "49799652",
-      "headline": "Randal Grichuk's 2-run double gives White Sox 5-1 lead",
-      "summary": "Randal Grichuk's 2-run double gives White Sox 5-1 lead",
-      "url": "https://www.espn.com/video/clip/_/id/49799652/randal-grichuk-2-run-double-gives-white-sox-5-1-lead",
-      "sport": "MLB",
-      "published": "2026-09-02T05:27:23.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49800097",
-      "id": "49800097",
-      "headline": "Spencer Jones and Jazz Chisholm Jr. homer early to back Gerrit Cole in Yankees' 7-3 win over Angels",
-      "summary": "— Spencer Jones homered and drove in three runs, Jazz Chisholm Jr. also went deep and finished with three hits, and the New York Yankees pulled away Tuesday night for a 7-3 victory over the Los Angeles Angels.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816770",
-      "sport": "MLB",
-      "published": "2026-09-02T05:19:28.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49800117",
-      "id": "49800117",
-      "headline": "Twins hang 10 runs on Tigers to blow it open in sixth inning",
-      "summary": "Twins hang 10 runs on Tigers to blow it open in sixth inning",
-      "url": "https://www.espn.com/video/clip/_/id/49800117/twins-hang-10-runs-tigers-blow-open-sixth-inning",
-      "sport": "MLB",
-      "published": "2026-09-02T05:14:35.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49797922",
-      "id": "49797922",
-      "headline": "Brewers add catcher Naylor, reliever Romero to active roster",
-      "summary": "The Brewers added catcher Bo Naylor and reliever JoJo Romero, acquired in a pair of trade-deadline deals, to their active roster Tuesday.",
-      "url": "https://www.espn.com/mlb/story/_/id/49797922/brewers-add-catcher-naylor-reliever-romero-active-roster",
-      "sport": "MLB",
-      "published": "2026-09-02T04:49:31.000Z",
-      "firstSeen": "2026-09-02T01:01:02.605Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49799706",
-      "id": "49799706",
-      "headline": "T.J. Rumfield's 2-run shot gives Rockies a lead",
-      "summary": "T.J. Rumfield's 2-run shot gives Rockies a lead",
-      "url": "https://www.espn.com/video/clip/_/id/49799706/tj-rumfield-2-run-shot-gives-rockies-lead",
-      "sport": "MLB",
-      "published": "2026-09-02T04:47:40.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49798583",
-      "id": "49798583",
-      "headline": "Coco Gauff, Alex Eala breeze into US Open 2nd round",
-      "summary": "Coco Gauff opened her quest for a second US Open title on Tuesday by beating Zeynep Sonmez 6-3, 6-4, regaining control of midway through the second set after her opponent from Turkey picked up her play.",
-      "url": "https://www.espn.com/tennis/story/_/id/49798583/coco-gauff-beats-zeynep-sonmez-first-round-2026-us-open",
-      "sport": "Tennis",
-      "published": "2026-09-02T04:35:45.000Z",
-      "firstSeen": "2026-09-02T09:30:48.119Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49799888",
-      "id": "49799888",
-      "headline": "Jordan Lawlar crushes a home run",
-      "summary": "Jordan Lawlar crushes a home run",
-      "url": "https://www.espn.com/video/clip/_/id/49799888/jordan-lawlar-crushes-home-run",
-      "sport": "MLB",
-      "published": "2026-09-02T04:33:41.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49799881",
-      "id": "49799881",
-      "headline": "Bryce Harper reaches base 5 times, Phillies beat the Diamondbacks 7-1 for 6th straight win",
-      "summary": "— Bryce Harper reached base five times, Jesús Luzardo threw 6 2/3 quality innings and the Philadelphia Phillies won their sixth straight game by beating the Arizona Diamondbacks 7-1 on Tuesday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816771",
-      "sport": "MLB",
-      "published": "2026-09-02T04:29:34.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49726036",
-      "id": "49726036",
-      "headline": "Fantasy football: Best picks from each draft slot in 12-team leagues in Rounds 1 and 2",
-      "summary": "Plan for which players might be available when your picks come around in a 12-team fantasy football draft.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49726036/fantasy-football-best-pick-draft-slot-12-team-leagues-espn",
-      "sport": "NFL",
-      "published": "2026-09-02T04:27:02.000Z",
-      "firstSeen": "2026-08-27T15:59:13.638Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49723044",
-      "id": "49723044",
-      "headline": "Fantasy football: Best picks from each draft slot in 10-team leagues in Rounds 1 and 2",
-      "summary": "Once you know your draft slot, it's great to plan for which players might be available when your picks come around as you lay the foundation for your team.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49723044/2026-fantasy-football-draft-best-picks-draft-slot-10-team",
-      "sport": "NFL",
-      "published": "2026-09-02T04:26:14.000Z",
-      "firstSeen": "2026-08-27T15:59:13.638Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49799726",
-      "id": "49799726",
-      "headline": "Rumfield and Amador homer as Rockies stop 10-game home skid with 4-2 win over Orioles",
-      "summary": "— TJ Rumfield broke a seventh-inning tie with a two-run homer and the Colorado Rockies beat the Baltimore Orioles 4-2 on Tuesday night to snap their franchise-record home losing streak at 10 games.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816769",
-      "sport": "MLB",
-      "published": "2026-09-02T04:05:30.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49797141",
-      "id": "49797141",
-      "headline": "Anaheim Ducks to retire former captain Ryan Getzlaf's No. 15",
-      "summary": "The Anaheim Ducks will retire the number of longtime captain Ryan Getzlaf, who retired in April 2022 after a 17-year NHL career spent entirely with the same organization, during a ceremony Jan. 30.",
-      "url": "https://www.espn.com/nhl/story/_/id/49797141/anaheim-ducks-retire-former-captain-ryan-getzlaf-no-15",
-      "sport": "NHL",
-      "published": "2026-09-02T04:00:30.000Z",
-      "firstSeen": "2026-09-02T01:01:02.605Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49799110",
-      "id": "49799110",
-      "headline": "Alex Eala opens US Open campaign in style, powers past Mary Stoiana",
-      "summary": "Alexandra Eala cruised into the second round of the US Open with a 6-1, 6-2 triumph over qualifier Mary Stoiana.",
-      "url": "https://www.espn.com/tennis/story/_/id/49799110/us-open-alex-eala-powers-mary-stoiana-round-one",
-      "sport": "Tennis",
-      "published": "2026-09-02T03:59:52.000Z",
-      "firstSeen": "2026-09-02T12:39:13.521Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49799673",
-      "id": "49799673",
-      "headline": "Memorable debuts for Morales, Simpson key Nationals' win",
-      "summary": "Yohandy Morales had three hits, including a home run, and Jared Simpson threw three perfect innings to pick up the victory, and Washington Nationals, with their expanded roster of minor league call-ups, defeated the Atlanta Braves 9-5 on Tuesday night.",
-      "url": "https://www.espn.com/mlb/story/_/id/49799673/memorable-debuts-morales-simpson-key-nationals-win",
-      "sport": "MLB",
-      "published": "2026-09-02T03:52:16.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49799561",
-      "id": "49799561",
-      "headline": "The White Sox beat the Astros 5-1 behind Colson Montgomery’s 2 RBIs",
-      "summary": "— Colson Montgomery had two hits and two RBI and Randal Grichuk added a two-run double to lead the Chicago White Sox to a 5-1 win over the Houston Astros on Tuesday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816765",
-      "sport": "MLB",
-      "published": "2026-09-02T03:49:28.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 14
-    },
-    {
-      "key": "49799590",
-      "id": "49799590",
-      "headline": "Brandon Nimmo has 4 hits and 5 RBIs as Rangers beat A's 8-5 to close gap on Astros in AL West",
-      "summary": "— Brandon Nimmo set season highs with four hits and five RBI, Corey Seager scored three times and the Texas Rangers beat the Athletics 8-5 on Tuesday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816764",
-      "sport": "MLB",
-      "published": "2026-09-02T03:36:30.000Z",
-      "firstSeen": "2026-09-02T06:46:29.898Z",
-      "bestRank": 13
     }
   ]
 }
