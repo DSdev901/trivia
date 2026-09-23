@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-09-23T03:44:04.944Z",
+  "generatedAt": "2026-09-23T06:55:00.865Z",
   "retentionDays": 21,
   "windowStart": "2026-09-02",
   "windowEnd": "2026-09-23",
   "snapshotIntervalHours": 3,
-  "count": 2100,
+  "count": 2110,
   "items": [
     {
       "headline": "Trump threatens to 'annihilate' Iran in UN speech as officials from both countries meet on sidelines",
@@ -14,8 +14,64 @@
       "summary": "In his address, the US president pondered whether a peace deal would be agreed or whether he would have to take extreme action against Iran.",
       "url": "https://www.bbc.co.uk/news/articles/c52e0ywl9pr7o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-09-23T01:10:13.414Z",
-      "top": false,
-      "bestRank": null
+      "top": true,
+      "bestRank": 1
+    },
+    {
+      "headline": "Trump says he can do business with Burnham but criticises 'terrible' Chagos deal",
+      "date": "2026-09-23",
+      "bucket": "World",
+      "summary": "Reported by politico.eu.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUmdodmV1UTJEeldpX0lQN3NEbTI5dGhVN3dUOVRGODhjRk0zeEpjOHVPVWJwMHNFd2t0ZzBNOF9WeFNwczhZNXFMUWl1S1dPNC1SRlp5Y0QwT1FhSU8zZ1NGMlBNLW5jaExmOUJiZExFOEZxRUlObEJoTmtNOHBKRzRvZng4OUpSSFBiaFgwZ3N1UEZxMEtMekxPMmpuTG9nYzZrdA?oc=5",
+      "top": true,
+      "bestRank": 2,
+      "firstSeen": "2026-09-22T19:22:55.252Z"
+    },
+    {
+      "headline": "Japan’s Leader Calls on U.N. to Drop ‘Enemy State’ Label",
+      "date": "2026-09-23",
+      "bucket": "World",
+      "summary": "Reported by wsj.com.",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObDktdVBhUkcycVVPdGpnU1ZtV0ViUWNaMHZOSk03MDFuN2FiT3VqdHQ3SlJVanJIdUlkQUFPZGx0VGNIREVDMHVkblg0RW5wb0Z4Zk12ZGZEdzBZbXNza244OV9uZTRrOW82VUxxVWlmVEp3VFUwaktkVVN1TldUZkNST1FzYVdmel9wbW9DLS1xQy1mUGdV?oc=5",
+      "top": true,
+      "bestRank": 5,
+      "firstSeen": "2026-09-23T06:55:00.865Z"
+    },
+    {
+      "headline": "In UN farewell, Macron denounces Trump's Gaza diplomacy as spectacle of shame",
+      "date": "2026-09-23",
+      "bucket": "World",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTlV6bmg3WGlwandXbTYxdWE5dl9SSHd5WDAxc2pwbXZnbnFCaE40dnN5ZGV0dkR2WU9Yd3lEVkYzRE5CMGh6SnBuMmFGNXZScHlZZ0oxVk9hZFFjcWJhdjBCSlJueElLbERZY0pZS2gtUEtNWGxQSDRlNnJkN1ZmLUdRZTF1cWE2d21tU3F3LVlUMHYxZXNxeHFfNUNNV1h5eEhORENkdDQ4T2c0dUI1Zl9B0gG3AUFVX3lxTE9jNGc0eVY5d3VmcWxmSFZ0TFZFZ1I2MVktcFVUdEhBZEJmQ0ZuYWdyN24yU1Iwb20ydDkyNmdlU0VyRENBT2x6ZnRkY0VMSzdSZGlMZUtfdjc0Q21jTjVMOFhScWVmTENVV2FoQ0pqanZzYzA0RTdSWmdNS0hyd0hFTzl4NG1SOGtfMFJhZ0VCYVhuclBheWRKVEs4NkhxUXdGdXRvTHNsbFJ1TXJJWnhzQ0JvQXhiMA?oc=5",
+      "top": true,
+      "bestRank": 15,
+      "firstSeen": "2026-09-23T03:44:04.944Z"
+    },
+    {
+      "headline": "World shows hints of bucking Trump at the UN",
+      "date": "2026-09-23",
+      "bucket": "World",
+      "summary": "Reported by Politico.",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTU1lSUZNRUh1cmJ2VklhNXZ3WF9LeXdOWkM1TFhESHN5YlNvYkMxSnZtam5lR2lwdXdONWdKdENqQWZEcDNEeXdpMG03MmZxS0FmVElObmpDd015bURqbHprUnhnTlZVbE1JemNzMEtodER6aGluVmIxZ1VabUtLTHRGTUNhSng3VHBTdTk3a09CamZ6S3otQTVB?oc=5",
+      "top": true,
+      "bestRank": 40,
+      "firstSeen": "2026-09-23T06:55:00.865Z"
+    },
+    {
+      "headline": "US and Iran hold first talks since June after Trump's 'annihilation' threat",
+      "date": "2026-09-23",
+      "bucket": "Conflict",
+      "summary": "The talks are the first since a ceasefire collapsed in June, with the sides exchanging fire intermittently.",
+      "url": "https://www.bbc.co.uk/news/articles/ck62m1631d7po?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-23T06:55:00.865Z"
+    },
+    {
+      "headline": "Watch: Key moments from Andy Burnham's first UN speech",
+      "date": "2026-09-23",
+      "bucket": "Politics",
+      "summary": "In his first speech to the UN as UK prime minister, Burnham highlighted the risks posed by Russian disinformation.",
+      "url": "https://www.bbc.co.uk/news/videos/cq5y4zpn655ko?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-23T06:55:00.865Z"
     },
     {
       "headline": "Friedrich Merz rues “disaster” as populists win state elections",
@@ -156,16 +212,6 @@
       "firstSeen": "2026-09-22T09:39:26.969Z",
       "top": true,
       "bestRank": 2
-    },
-    {
-      "headline": "Trump says he can do business with Burnham but criticises 'terrible' Chagos deal",
-      "date": "2026-09-22",
-      "bucket": "World",
-      "summary": "Reported by BBC.",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBZanVZQmlnWk54T01QdjgxNjR6OEVYci11WkdPSG0zSTFQcmNjdmRxbjdfYXlkOExwREZvX1RaaHk4cVdSQkdCYS0wWmUtM2d3WXZkNlpB?oc=5",
-      "top": true,
-      "bestRank": 2,
-      "firstSeen": "2026-09-22T19:22:55.252Z"
     },
     {
       "headline": "'Cherry-picking sanctions' normalises Russia, Latvian PM warns",
@@ -358,6 +404,16 @@
       "firstSeen": "2026-09-22T19:22:55.252Z"
     },
     {
+      "headline": "Former soldier who blamed Jews for COVID: Ontario Yom Kippur synagogue shooting suspect dies",
+      "date": "2026-09-22",
+      "bucket": "World",
+      "summary": "Reported by nypost.com.",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOd2ttN3ZFcHRyQjl3QmxPVEtZSmhId1ZnQi1EaGhOOXQwVWdJanA5QWp5NERLVDJHS3Z1bE9paF9iTm1meFN5bDNSOEJPNDhZUnlHNjZVclZxaURMUjd6UkJTRGxTeF9UcjhCckRMNjVGMlFUd1dLaVNZOVItVGRYc09DNVF1RTRxMGFzLVNzelhZNWNPSjVCdkxNZHM1a0dTdEQ2NjB6bkJZRjdfQ09UV2N5YklDU0tnT3ZxSGh2QVo4Zy1qSXlmbjF6anN2QmVLT1RJeFpUckdDWk5GWjBhZVM2MXNNQQ?oc=5",
+      "top": true,
+      "bestRank": 6,
+      "firstSeen": "2026-09-23T06:55:00.865Z"
+    },
+    {
       "headline": "UNGA Brings Traffic and a Little Chaos to New York City",
       "date": "2026-09-22",
       "bucket": "World",
@@ -366,6 +422,16 @@
       "top": true,
       "bestRank": 7,
       "firstSeen": "2026-09-22T21:37:44.891Z"
+    },
+    {
+      "headline": "Middle East wars loom over UN General Assembly, and other Mideast developments",
+      "date": "2026-09-22",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUnRlUGtzRlY5bGM5MnUzX1B0cFJqWXlNQTJ3VGwwTVFlNFd0MERWdlE0VG1vRjQ3eFVscVNFWF93bUthdi1lM0t2OWt0U1hhdnUxR29zSlQwd3NHZXkxaERJSUV4ZEM2Ny13Ump3Wl9qM1k2SHpzNjJxVy1tSlZOZXUyeHlDMVY2NE5kckhDR3dPNm0xdGdadmoxXzlQcXM?oc=5",
+      "top": true,
+      "bestRank": 7,
+      "firstSeen": "2026-09-23T06:55:00.865Z"
     },
     {
       "headline": "Tech Founders Target Uruguay to Build AI-Powered Network States",
@@ -408,6 +474,16 @@
       "firstSeen": "2026-09-14T18:42:15.638Z"
     },
     {
+      "headline": "Can This Week's U.N. Gathering Cool Rising Tensions Between the U.S. and Iran?",
+      "date": "2026-09-22",
+      "bucket": "World",
+      "summary": "Reported by Institute for the Study of War.",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQclpjSUpKX0hzeDl6dUNtc2l1WXdWc2FHTF94VHQzQVpQNHE1OUlWRkFlbEhWSldGMUdtNmM1RWpwdjJjd2JjZ0lseXF0UXNfcFF0VzctZGRnaHpfdXdxM1poTnllMFhZS1dXMEZOdFZ5OG9aeXd0SUk5ZW52by14c251OGZMRjQ?oc=5",
+      "top": true,
+      "bestRank": 9,
+      "firstSeen": "2026-09-23T01:10:13.414Z"
+    },
+    {
       "headline": "EU, Philippines Strike Free-Trade Deal as US Tariffs Spur Diversification",
       "date": "2026-09-22",
       "bucket": "World",
@@ -426,6 +502,16 @@
       "top": true,
       "bestRank": 10,
       "firstSeen": "2026-09-09T18:42:41.857Z"
+    },
+    {
+      "headline": "Trump meets Venezuela's Rodriguez for first time since Maduro's capture",
+      "date": "2026-09-22",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNC16N2FEN1QtSGNHWGFtbDRiVGx6Ymp4RWtNSG05bG9relBsN0dXV0V1czZ6UzM4cXNVVVVNZWh4b1lqQkN0ZnEyVk15dVloMl9WaDVPRkJRTnBudHprOUJ3Yk10azlJcHlremJFLWxTOXp4ZjlfaUtrU0xNamVZZlozQ3M1dDJGZGE0QUxxSW5Pd3VjUXRJWGs0cEI1aF9YQmhNZzQ2V1RlWldGSDNkRVN5azlzQQ?oc=5",
+      "top": true,
+      "bestRank": 10,
+      "firstSeen": "2026-09-23T06:55:00.865Z"
     },
     {
       "headline": "30-Foot Waves Hammer Japan as Typhoon Dujuan Unleashes Chaos (Video)",
@@ -478,6 +564,16 @@
       "firstSeen": "2026-09-22T12:49:24.023Z"
     },
     {
+      "headline": "Houthis try to push deeper into western Yemen, upending life, witnesses tell NPR",
+      "date": "2026-09-22",
+      "bucket": "World",
+      "summary": "As the U.S. conflict with Iran drags, the Iranian-backed Houthis in Yemen have opened a new front, taking new territory and displacing more than 100,000 people.",
+      "url": "https://www.npr.org/2026/09/22/g-s1-144261/yemen-houthis-saudi-iran-humanitarian-crisis",
+      "firstSeen": "2026-09-22T11:24:05.390Z",
+      "top": true,
+      "bestRank": 12
+    },
+    {
       "headline": "Attacker opens fire near high school in western Turkiye, wounding 11",
       "date": "2026-09-22",
       "bucket": "World",
@@ -518,16 +614,6 @@
       "bestRank": 14
     },
     {
-      "headline": "In UN farewell, Macron denounces Trump's Gaza diplomacy as spectacle of shame",
-      "date": "2026-09-22",
-      "bucket": "World",
-      "summary": "Reported by France 24.",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOb3hGck8xeVpPQ1BNakRTcXNJNGI3LXFlRVlVYWY4ajMwSTV0a0x3ZktNek1wUjdQOHRXMTFIUTRKTU05eW5lUXNDNEhTZTIteFZIUkw5YU5KR3V3UldrbUlnNlI3QWoxMEs5MzdjNkNYSk1qNjhvYUZTZnQ0d0Y2OHJXWnB5VmIwQ3FZVzRXQ2F4QmlBY2lrWjFBNWd0T0lfX1Juejg5M040c05sM2ZDYnZTY3p1QWhrZnFuYUdvc3k?oc=5",
-      "top": true,
-      "bestRank": 15,
-      "firstSeen": "2026-09-23T03:44:04.944Z"
-    },
-    {
       "headline": "Houthis pound Yemen’s Mokha port for 4th day, officials say Iran behind escalation",
       "date": "2026-09-22",
       "bucket": "World",
@@ -548,16 +634,6 @@
       "firstSeen": "2026-09-22T01:10:54.232Z"
     },
     {
-      "headline": "Can This Week's U.N. Gathering Cool Rising Tensions Between the U.S. and Iran?",
-      "date": "2026-09-22",
-      "bucket": "World",
-      "summary": "Reported by Institute for the Study of War.",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQclpjSUpKX0hzeDl6dUNtc2l1WXdWc2FHTF94VHQzQVpQNHE1OUlWRkFlbEhWSldGMUdtNmM1RWpwdjJjd2JjZ0lseXF0UXNfcFF0VzctZGRnaHpfdXdxM1poTnllMFhZS1dXMEZOdFZ5OG9aeXd0SUk5ZW52by14c251OGZMRjQ?oc=5",
-      "top": true,
-      "bestRank": 21,
-      "firstSeen": "2026-09-23T01:10:13.414Z"
-    },
-    {
       "headline": "Australia to Rely on AI to Spur Growth as Global Tensions Deepen",
       "date": "2026-09-22",
       "bucket": "World",
@@ -576,6 +652,16 @@
       "top": true,
       "bestRank": 22,
       "firstSeen": "2026-09-22T19:22:55.252Z"
+    },
+    {
+      "headline": "Mark Carney and the limits of defying Donald Trump",
+      "date": "2026-09-22",
+      "bucket": "World",
+      "summary": "Reported by politico.eu.",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQ2p5ZTFLMUotTmF0YVctdTI0QTR1Z3E3ZVZFWFhJdmV6clZ1WjFRQTNQaDZaSkV4eGRjWHEyeDBqT3FiMjExUVhhMkJYcEhKV0tkSS0xOUlfSW42dkxVNktsRGFNT1RObVdwS2VCWVFldFA2OFJOd2dTanRPeGxlejJPUmFHS0EyTXpzYjBzUXNxZw?oc=5",
+      "top": true,
+      "bestRank": 22,
+      "firstSeen": "2026-09-23T06:55:00.865Z"
     },
     {
       "headline": "Despite wealth and advanced weapons, Saudis fumbling in fight against Houthis",
@@ -704,7 +790,7 @@
       "summary": "Reported by The Times of Israel.",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVm03S3Bia2FEelg2UWs5WE9wNWs4MjRISkI5TU5SVjdIWTR6QlIzZm1Uc2p0NVlaMnJ0YzJzVHljSTQ3bGNoTG1LS3l0ajJVb24tZnN2NHVKSW41T1hyRkVfcXptVE9rVGVPZlY2UWt3SHY0SkVJZjZkR0FLZi11X1hxSVR5ek5hWmJUTndQZ0hLeDBCX2YzZ3pCUjdvNk5rWVZsTXh3T1JJVmfSAbABQVVfeXFMT1FpNlprYnBIVEdfaXFHRExLbG5lYmhuZkdkQjdjMlAydUQwcUp2VVlhYXRUWENKVWtLdWwwSHJZLTFpZVZqcHhZR0VDaWJCc0NyU01ZZ3AtVUwyUS12akx4ckIzSC1XZmpWcEtld3JZLVBHWDdjUmI2UkdZc3dWLU9zZkI0VXhtMDZ0WVJBc0dpOWdKbmVQOHJvamRlYjhXLWdad0Z4emxYb3Q0NDNLUGc?oc=5",
       "top": true,
-      "bestRank": 30,
+      "bestRank": 28,
       "firstSeen": "2026-09-22T21:37:44.891Z"
     },
     {
@@ -766,6 +852,16 @@
       "top": true,
       "bestRank": 37,
       "firstSeen": "2026-09-22T19:22:55.252Z"
+    },
+    {
+      "headline": "'NAZA' film controversy: Israel, Gaza, and the debate over collateral damage",
+      "date": "2026-09-22",
+      "bucket": "World",
+      "summary": "Reported by Commentary Magazine.",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUnpJN3JXSFNaRmlzYUFjMDVwS01HRGpxV1lKN1VjckxWR2FXY1hlZ215eWx3OTZlMlhZQUxzSjhVY3ZaTEdlSi1JY2pfV1dkNnN5UFNSRDVvNnd5WENUclBQQ0xxUWcwcXlhQk5vY0xDTUhkckg3N3JEYlBESmFmd3ZJdFlyZ0dwdDdfakRvREJGdFJaWEE?oc=5",
+      "top": true,
+      "bestRank": 37,
+      "firstSeen": "2026-09-23T06:55:00.865Z"
     },
     {
       "headline": "NATO Nation Reveals Invasion Evacuation Plan Details",
@@ -880,6 +976,24 @@
       "firstSeen": "2026-09-22T09:39:26.969Z",
       "top": false,
       "bestRank": null
+    },
+    {
+      "headline": "Watch: What to expect as world leaders descend on New York - and who won't be there",
+      "date": "2026-09-22",
+      "bucket": "World",
+      "summary": "The BBC’s Sarah Smith outlines which world leaders Trump is set to meet and the key topics expected on the agenda.",
+      "url": "https://www.bbc.co.uk/news/videos/cxe87p9d4198o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-22T11:24:05.390Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Rare look at the remote engine rooms powering China's AI ambitions",
+      "date": "2026-09-22",
+      "bucket": "World",
+      "summary": "The BBC is in Inner Mongolia where dozen of Chinese data centres are being constructed, as the country aims to lead the world in artificial intelligence.",
+      "url": "https://www.bbc.co.uk/news/videos/cwe8ejvv0leno?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-23T06:55:00.865Z"
     },
     {
       "headline": "Lindsay Clancy's lawyer asks judge to investigate juror and check his phone",
@@ -1057,26 +1171,6 @@
       "bucket": "World",
       "summary": "Footage appears to show a male in the area carrying a firearm, while officials say the attacker has been captured.",
       "url": "https://www.bbc.co.uk/news/articles/c6y0z4gv0le4o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-22T11:24:05.390Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Watch: What to expect as world leaders descend on New York - and who won't be there",
-      "date": "2026-09-22",
-      "bucket": "World",
-      "summary": "The BBC’s Sarah Smith outlines which world leaders Trump is set to meet and the key topics expected on the agenda.",
-      "url": "https://www.bbc.co.uk/news/videos/cxe87p9d4198o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-22T11:24:05.390Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Houthis try to push deeper into western Yemen, upending life, witnesses tell NPR",
-      "date": "2026-09-22",
-      "bucket": "World",
-      "summary": "As the U.S. conflict with Iran drags, the Iranian-backed Houthis in Yemen have opened a new front, taking new territory and displacing more than 100,000 people.",
-      "url": "https://www.npr.org/2026/09/22/g-s1-144261/yemen-houthis-saudi-iran-humanitarian-crisis",
       "firstSeen": "2026-09-22T11:24:05.390Z",
       "top": false,
       "bestRank": null
@@ -1982,6 +2076,16 @@
       "firstSeen": "2026-09-22T01:10:54.232Z"
     },
     {
+      "headline": "EXCLUSIVE: Russia adapts fertilizer, coal terminals in Baltic, Arctic ports to export Black Sea grain",
+      "date": "2026-09-21",
+      "bucket": "World",
+      "summary": "Reported by reuters.com.",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNE5HNmRLSkhKLVZHSUdKNGNsOWh6RmUwb3VkRXdmLXN6c0FfSUV5ZTY3T2dpcVFTQWVLMjAzeHZnemlPWnprVC1SOFJxdHNhWXVXcHJTSDFsUFFDQWd5MFduSk43Ul9YaWtpeDZCeC1PeWFvTTIyQjFFWXd6ajNkeldBMy1ZWmJSU3ZwQjZqZVVicXNrOEd5WWFhX2xOWWF5djFsbEhIU01uNFBaR0ZkZTFfVmxabDk4VmpYOVFB?oc=5",
+      "top": true,
+      "bestRank": 26,
+      "firstSeen": "2026-09-22T19:22:55.252Z"
+    },
+    {
       "headline": "Pope Leo's Adopted Peruvian City To Take Center Stage During Upcoming Tour",
       "date": "2026-09-21",
       "bucket": "World",
@@ -2030,16 +2134,6 @@
       "top": true,
       "bestRank": 28,
       "firstSeen": "2026-09-22T06:54:38.337Z"
-    },
-    {
-      "headline": "EXCLUSIVE: Russia adapts fertilizer, coal terminals in Baltic, Arctic ports to export Black Sea grain",
-      "date": "2026-09-21",
-      "bucket": "World",
-      "summary": "Reported by reuters.com.",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNE5HNmRLSkhKLVZHSUdKNGNsOWh6RmUwb3VkRXdmLXN6c0FfSUV5ZTY3T2dpcVFTQWVLMjAzeHZnemlPWnprVC1SOFJxdHNhWXVXcHJTSDFsUFFDQWd5MFduSk43Ul9YaWtpeDZCeC1PeWFvTTIyQjFFWXd6ajNkeldBMy1ZWmJSU3ZwQjZqZVVicXNrOEd5WWFhX2xOWWF5djFsbEhIU01uNFBaR0ZkZTFfVmxabDk4VmpYOVFB?oc=5",
-      "top": true,
-      "bestRank": 28,
-      "firstSeen": "2026-09-22T19:22:55.252Z"
     },
     {
       "headline": "Russian Mobilization as a Litmus Test for Nordic-Baltic Intelligence Services",
