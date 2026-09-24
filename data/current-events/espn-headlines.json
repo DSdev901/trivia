@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-24T09:31:00.620Z",
+  "generatedAt": "2026-09-24T12:39:47.793Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-03T09:31:00.620Z",
-  "windowEnd": "2026-09-24T09:31:00.620Z",
+  "windowStart": "2026-09-03T12:39:47.793Z",
+  "windowEnd": "2026-09-24T12:39:47.793Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,514 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4396,
+  "count": 4391,
   "items": [
+    {
+      "key": "50015167",
+      "id": "50015167",
+      "headline": "NBA Rank 2026: The new top 10 features a razor-thin race for No. 1",
+      "summary": "Our countdown of the NBA's top 100 players hits its grand finale.",
+      "url": "https://www.espn.com/nba/story/_/id/50015167/nba-rank-2026-players-10-1-featuring-wembanyama-sga-jokic-brunson-luka-more",
+      "sport": "NBA",
+      "published": "2026-09-24T12:29:07.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50015655",
+      "id": "50015655",
+      "headline": "Mark Messier 'horrified' by Oilers' hire of coach Mike Babcock",
+      "summary": "Former NHL star Mark Messier, who had a Hall of Fame career with the Edmonton Oilers, said he was \"horrified\" by the team's hiring of controversial coach Mike Babcock.",
+      "url": "https://www.espn.com/nhl/story/_/id/50015655/mark-messier-horrified-oilers-hire-coach-mike-babcock",
+      "sport": "NHL",
+      "published": "2026-09-24T12:18:15.000Z",
+      "firstSeen": "2026-09-24T03:32:48.060Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50017566",
+      "id": "50017566",
+      "headline": "Ex-NC State sports medicine director arrested after indictment",
+      "summary": "Former NC State sports medicine director Robert Michael Murphy was arrested Wednesday evening after a grand jury indicted him last week on multiple felony and misdemeanor counts involving the sexual abuse of male student-athletes he had treated.",
+      "url": "https://www.espn.com/college-sports/story/_/id/50017566/ex-nc-state-sports-medicine-director-arrested-indictment",
+      "sport": "College football",
+      "published": "2026-09-24T12:03:42.000Z",
+      "firstSeen": "2026-09-24T06:44:00.244Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50018839",
+      "id": "50018839",
+      "headline": "Ben Rice tops Aaron Boone's preseason prediction, passes 40 HRs",
+      "summary": "Yankees manager Aaron Boone predicted during spring training that Ben Rice would finish with 39 home runs this season. Rice is two-up after hitting Nos. 40 and 41 in a 9-2 victory over the Rays, tying for the AL home run lead.",
+      "url": "https://www.espn.com/mlb/story/_/id/50018839/ben-rice-tops-aaron-boone-preseason-prediction-passes-40-hrs",
+      "sport": "MLB",
+      "published": "2026-09-24T11:59:42.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50019183",
+      "id": "50019183",
+      "headline": "MLB betting tips for Thursday: Will Padres and Pivetta punch playoff ticket?",
+      "summary": "All of the odds, recommended prop bets and trends in baseball for Thursday, September 24.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50019183/mlb-betting-tips-odds-lines-2026-thursday-september-24",
+      "sport": "MLB",
+      "published": "2026-09-24T11:51:52.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 1
+    },
+    {
+      "key": "48297021",
+      "id": "48297021",
+      "headline": "Fantasy baseball news: AL's final playoff spots still in limbo and more for Thursday",
+      "summary": "All of the important fantasy spin and actionable takeaways resulting from the latest baseball news.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/48297021/espn-fantasy-baseball-buzz-injuries-promotions-demotions-trades-prospects-lineup-changes-mlb-news-analysis-2026",
+      "sport": "MLB",
+      "published": "2026-09-24T11:43:30.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50008021",
+      "id": "50008021",
+      "headline": "Hawks trade Hield, Nembhard to Hornets for Finney-Smith",
+      "summary": "The Hawks are sending Buddy Hield, Ryan Nembhard and cash considerations to the Charlotte Hornets for Dorian Finney-Smith, sources told ESPN.",
+      "url": "https://www.espn.com/nba/story/_/id/50008021/sources-hawks-trade-hield-nembhard-hornets-finney-smith",
+      "sport": "NBA",
+      "published": "2026-09-24T11:40:04.000Z",
+      "firstSeen": "2026-09-22T21:24:10.847Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50010262",
+      "id": "50010262",
+      "headline": "Mystics beat Sun, set franchise record with 27th win",
+      "summary": "The Mystics won their franchise-record 27th game of the season Tuesday night in a 79-69 defeat of the Sun.",
+      "url": "https://www.espn.com/wnba/story/_/id/50010262/mystics-beat-sun-set-franchise-record-27th-win",
+      "sport": "WNBA",
+      "published": "2026-09-24T11:38:59.000Z",
+      "firstSeen": "2026-09-23T09:30:20.554Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50010938",
+      "id": "50010938",
+      "headline": "Lynx pull starters vs. Fever but clinch 1-seed with Valkyries' loss",
+      "summary": "The Lynx went into the second-to-last game of the season against the Fever with a chance to wrap up the No. 1 seed -- which they eventually did thanks to a Valkyries loss -- but coach Cheryl Reeve didn't play her normal starters in the second half.",
+      "url": "https://www.espn.com/wnba/story/_/id/50010938/stumbling-lynx-pull-starters-vs-fever-top-seed-line",
+      "sport": "WNBA",
+      "published": "2026-09-24T11:38:43.000Z",
+      "firstSeen": "2026-09-23T12:38:58.714Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50013859",
+      "id": "50013859",
+      "headline": "MLB Power Rankings Week 26: Where teams stand entering playoffs",
+      "summary": "The final days of the 2026 regular season are upon us -- and a number of races are coming down to the wire.",
+      "url": "https://www.espn.com/mlb/story/_/id/50013859/mlb-2026-power-rankings-week-26-brewers-dodgers-rays-yankees-padres-guardians",
+      "sport": "MLB",
+      "published": "2026-09-24T11:38:30.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50017078",
+      "id": "50017078",
+      "headline": "Dream's Reese OK after being struck in face; Liberty C Jones tweaks ankle",
+      "summary": "Dream star Angel Reese was fine after leaving Wednesday's game against the Liberty after being struck in the face just before halftime. The Liberty's Jonquel Jones also left the game after suffering a second-half ankle injury.",
+      "url": "https://www.espn.com/wnba/story/_/id/50017078/dream-reese-ok-being-struck-face-liberty-c-jones-tweaks-ankle",
+      "sport": "WNBA",
+      "published": "2026-09-24T11:38:23.000Z",
+      "firstSeen": "2026-09-24T03:32:48.060Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50017529",
+      "id": "50017529",
+      "headline": "Biggest surprises in MLB season based off of power rankings",
+      "summary": "Biggest surprises in MLB season based off of power rankings",
+      "url": "https://www.espn.com/video/clip/_/id/50017529/biggest-surprises-mlb-season-based-power-rankings",
+      "sport": "MLB",
+      "published": "2026-09-24T11:38:08.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 32
+    },
+    {
+      "key": "50016270",
+      "id": "50016270",
+      "headline": "Stewart scratch for Liberty regular-season finale 'precautionary'",
+      "summary": "New York Liberty star Breanna Stewart will miss the team's regular-season finale Wednesday with left knee soreness, coach Chris DeMarco said pregame.",
+      "url": "https://www.espn.com/wnba/story/_/id/50016270/stewart-scratch-liberty-regular-season-finale-precautionary",
+      "sport": "WNBA",
+      "published": "2026-09-24T11:37:59.000Z",
+      "firstSeen": "2026-09-24T03:32:48.060Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50015657",
+      "id": "50015657",
+      "headline": "Reranking the men's basketball recruiting class of 2024",
+      "summary": "Cooper Flagg remains No. 1 in this high school class -- but we admit to some mistakes for the rest of the list.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50015657/mens-college-basketball-recruiting-reranking-scnext-100-class-2024-cooper-flagg-dylan-harper",
+      "sport": "College basketball",
+      "published": "2026-09-24T11:35:40.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50017792",
+      "id": "50017792",
+      "headline": "WNBA playoff picture 2026: How will final seeds be set Thursday?",
+      "summary": "Before the playoffs open Sunday, the final four seeds will be set in Thursday's regular-season finales.",
+      "url": "https://www.espn.com/wnba/story/_/id/50017792/wnba-playoffs-2026-picture-postseason-race-berth-seeds-regular-season-finale-thursday",
+      "sport": "WNBA",
+      "published": "2026-09-24T11:33:41.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 1
+    },
+    {
+      "key": "31165100",
+      "id": "31165100",
+      "headline": "Fantasy baseball forecaster: Pitcher projections for the next 10 days",
+      "summary": "Keep up to date on who is pitching -- and how well they're expected to do -- with our forecaster, which provides a rolling 10-day outlook of every team's probable starting pitchers with game score projections.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/31165100/fantasy-baseball-forecaster-probable-starting-pitcher-projections-matchups-daily-weekly-leagues",
+      "sport": "MLB",
+      "published": "2026-09-24T11:26:18.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "31165089",
+      "id": "31165089",
+      "headline": "Fantasy baseball forecaster: Team hitting ratings",
+      "summary": "Stay ahead of the game and optimize your fantasy baseball hitters with our forecaster, which provides a rolling 10-day outlook of every team's hitting matchups as well as the potential for stolen bases.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/31165089/fantasy-baseball-forecaster-team-hitting-stolen-base-ratings-platoon-matchups-daily-weekly-leagues",
+      "sport": "MLB",
+      "published": "2026-09-24T11:25:57.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "4053281",
+      "id": "4053281",
+      "headline": "Fantasy Baseball Reliever Depth Chart",
+      "summary": "Our updated reliever depth chart displays the closer hierarchy for each team, as well as the fatigue factor in each MLB bullpen.",
+      "url": "https://www.espn.com/fantasy/baseball/flb/story?page=REcloserorgchart",
+      "sport": "MLB",
+      "published": "2026-09-24T11:23:52.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49996413",
+      "id": "49996413",
+      "headline": "Fantasy baseball lineup advice: Mahle has proven to be a reliable streamer",
+      "summary": "Everything you need to know to set your fantasy baseball lineups for Thursday's MLB action.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/49996413/fantasy-baseball-pitcher-rankings-lineup-advice-tips-mlb-daily-notes-september-24-games",
+      "sport": "MLB",
+      "published": "2026-09-24T11:22:18.000Z",
+      "firstSeen": "2026-09-23T21:26:07.769Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50013861",
+      "id": "50013861",
+      "headline": "Giants' Dart to have knee surgery, out rest of regular season",
+      "summary": "Giants quarterback Jaxson Dart will undergo surgery on his left knee and sit out the rest of the regular season, though head coach John Harbaugh didn't rule out the possibility Dart could return if the Giants were to make the playoffs.",
+      "url": "https://www.espn.com/nfl/story/_/id/50013861/giants-qb-dart-knee-surgery-miss-rest-regular-season",
+      "sport": "NFL",
+      "published": "2026-09-24T11:11:30.000Z",
+      "firstSeen": "2026-09-23T18:33:15.052Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50014296",
+      "id": "50014296",
+      "headline": "Penn State's Koby Howard to miss time with undisclosed injury",
+      "summary": "Koby Howard, Penn State's leading WR, is likely sidelined for a while though his undisclosed injury is \"not season-ending,\" coach Matt Campbell said.",
+      "url": "https://www.espn.com/college-football/story/_/id/50014296/penn-state-koby-howard-miss-undisclosed-injury",
+      "sport": "College football",
+      "published": "2026-09-24T11:00:26.000Z",
+      "firstSeen": "2026-09-23T21:26:07.769Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50013349",
+      "id": "50013349",
+      "headline": "'Ugh,' a lefty QB: How the Falcons are defying NFL history",
+      "summary": "With Michael Penix Jr. starting Thursday and Tua Tagovailoa on the roster, the Falcons enter a rare NFL realm.",
+      "url": "https://www.espn.com/nfl/story/_/id/50013349/nfl-falcons-michael-penix-jr-tua-tagovailoa-left-handed-qbs-steve-young",
+      "sport": "NFL",
+      "published": "2026-09-24T10:57:10.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 44
+    },
+    {
+      "key": "50017967",
+      "id": "50017967",
+      "headline": "Longtime Lakers public-address announcer Lawrence Tanter dies",
+      "summary": "Lawrence Tanter had manned the microphone in L.A. since the \"Showtime\" days until his retirement in June following a stroke.",
+      "url": "https://www.espn.com/nba/story/_/id/50017967/long-lakers-public-address-announcer-lawrence-tanter-dies",
+      "sport": "NBA",
+      "published": "2026-09-24T10:55:55.000Z",
+      "firstSeen": "2026-09-24T06:44:00.244Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50009163",
+      "id": "50009163",
+      "headline": "September surprises: Our unexpected all-portal team",
+      "summary": "Unlikely stars a month ago, here are the biggest portal surprises at every position.",
+      "url": "https://www.espn.com/college-football/story/_/id/50009163/college-football-transfer-portal-september-surprises-team",
+      "sport": "College football",
+      "published": "2026-09-24T10:54:52.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49713288",
+      "id": "49713288",
+      "headline": "'I'm not asking for anybody's sympathy': It's a pivotal season for Lincoln Riley and USC",
+      "summary": "With a 4-0 record, Lincoln Riley isn't shying away from expectations as USC hosts Oregon this weekend.",
+      "url": "https://www.espn.com/college-football/story/_/id/49713288/usc-lincoln-riley-hot-seat-job-security-2026",
+      "sport": "College football",
+      "published": "2026-09-24T10:53:12.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50017653",
+      "id": "50017653",
+      "headline": "NBA Rank 2026 audit: What we got right -- and wrong -- in our top 100",
+      "summary": "Using an analytical lens, Dean Oliver examines what the NBA Rank panel got right -- and what it got very wrong.",
+      "url": "https://www.espn.com/nba/story/_/id/50017653/nba-rank-2026-top-100-audit-jokic-wemby-sga-jaylen-brown-jalen-brunson-four-right-four-wrong",
+      "sport": "NBA",
+      "published": "2026-09-24T10:52:35.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50005271",
+      "id": "50005271",
+      "headline": "Week 4 Game Day kickoff: Can Oregon turn a corner? Is USC for real?",
+      "summary": "Week 4 will tell us if our knee-jerk reactions to the first few weeks of the season actually mean anything.",
+      "url": "https://www.espn.com/college-football/story/_/page/gamedaykickoff092426/2026-gameday-kickoff-week-4-preview-top-games-usc-oregon-alabama",
+      "sport": "College football",
+      "published": "2026-09-24T10:51:05.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50016115",
+      "id": "50016115",
+      "headline": "Broncos RB Coleman doesn't practice; Dobbins, Harvey limited",
+      "summary": "Broncos running backs J.K. Dobbins and RJ Harvey were limited in practice Wednesday, and Jonah Coleman did not practice. Nevertheless, coach Sean Payton said he thinks \"we're going to be all right\" at the position Sunday against the Rams.",
+      "url": "https://www.espn.com/nfl/story/_/id/50016115/broncos-running-backs-jk-dobbins-rj-harvey-limited-practice-jonah-coleman-does-not-practice",
+      "sport": "NFL",
+      "published": "2026-09-24T10:49:56.000Z",
+      "firstSeen": "2026-09-24T01:00:53.569Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50016014",
+      "id": "50016014",
+      "headline": "McVay says Nacua's injury not 'long-term' concern, but Rams being cautious",
+      "summary": "Rams coach Sean McVay said receiver Puka Nacua does not have a hernia, but the team will \"err on the side of caution\" with the injury.",
+      "url": "https://www.espn.com/nfl/story/_/id/50016014/mcvay-says-nacua-injury-not-long-term-concern-rams-being-cautious",
+      "sport": "NFL",
+      "published": "2026-09-24T10:49:38.000Z",
+      "firstSeen": "2026-09-24T01:00:53.569Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50015234",
+      "id": "50015234",
+      "headline": "Seahawks' Macdonald apologizes to Broncos' Payton for comments",
+      "summary": "Seahawks coach Mike Macdonald said Wednesday he called Broncos coach Sean Payton and apologized for comments he made in a published video that went viral Tuesday.",
+      "url": "https://www.espn.com/nfl/story/_/id/50015234/seahawks-macdonald-apologizes-broncos-payton-comments",
+      "sport": "NFL",
+      "published": "2026-09-24T10:49:06.000Z",
+      "firstSeen": "2026-09-23T21:26:07.769Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50016813",
+      "id": "50016813",
+      "headline": "Red Sox's Ceddanne Rafaela injures hamstring in IL return",
+      "summary": "Ceddanne Rafaela, who returned Wednesday after being sidelined since Sept. 3 because of a right quad strain, left in the third inning because of tightness in his right hamstring.",
+      "url": "https://www.espn.com/mlb/story/_/id/50016813/boston-rafaela-back-il-injures-hamstring-running-single",
+      "sport": "MLB",
+      "published": "2026-09-24T10:46:23.000Z",
+      "firstSeen": "2026-09-24T03:32:48.060Z",
+      "bestRank": 17
+    },
+    {
+      "key": "50015356",
+      "id": "50015356",
+      "headline": "College football Week 4 best bets: Plays to make on Missouri, Indiana, Ole Miss and more",
+      "summary": "Pamela Maldonado and Mark Zinno break down the best bets they see around college football for Week 4.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50015356/college-football-odds-best-bets-week-4-spreads-lines-2026",
+      "sport": "College football",
+      "published": "2026-09-24T10:44:14.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49996524",
+      "id": "49996524",
+      "headline": "How to bet Falcons-Packers on TNF: Analysis, tips and top plays",
+      "summary": "Odds, bets and analysis to help you bet Falcons-Packers on \"Thursday Night Football.\"",
+      "url": "https://www.espn.com/espn/betting/story/_/id/49996524/nfl-week-3-odds-betting-tips-picks-atlanta-falcons-green-bay-packers",
+      "sport": "NFL",
+      "published": "2026-09-24T10:43:12.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50016633",
+      "id": "50016633",
+      "headline": "Herbert shuts down leadership questions amid Chargers' 0-2 start",
+      "summary": "Justin Herbert was uncharacteristically fiery when asked Wednesday about increased vocal leadership on the Chargers amid the team's 0-2 start.",
+      "url": "https://www.espn.com/nfl/story/_/id/50016633/herbert-shuts-leadership-questions-amid-chargers-0-2-start",
+      "sport": "NFL",
+      "published": "2026-09-24T10:43:00.000Z",
+      "firstSeen": "2026-09-24T01:00:53.569Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50015858",
+      "id": "50015858",
+      "headline": "Commanders say clip didn't reflect team response to Daniels injury",
+      "summary": "After a short video clip showed a number of Commanders walking past Jayden Daniels as he was being helped by medical personnel Sunday, many players fired back at the takes being spouted on social media, emphasizing, \"It's bulls--- what people are saying.\"",
+      "url": "https://www.espn.com/nfl/story/_/id/50015858/commanders-respond-viral-video-clip-reject-notion-abandoned-injured-jayden-daniels",
+      "sport": "NFL",
+      "published": "2026-09-24T10:42:46.000Z",
+      "firstSeen": "2026-09-24T01:00:53.569Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49997138",
+      "id": "49997138",
+      "headline": "Who will find the end zone? Top predicted TD scorers for Week 3",
+      "summary": "Mike Clay reveals his top predicted Week 3 TD scorers, including  Jahmyr Gibbs, Kenneth Walker III and more.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/49997138/nfl-week-3-touchdown-betting-odds-end-zone-scoring-predictions",
+      "sport": "NFL",
+      "published": "2026-09-24T10:42:13.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50016408",
+      "id": "50016408",
+      "headline": "Why Patriots must be better at managing the clock before halftime",
+      "summary": "After two straight games with questionable decisions before halftime, the Patriots admit they need to improve on possessions late in the second quarter.",
+      "url": "https://www.espn.com/nfl/story/_/id/50016408/new-england-patriots-clock-management-mike-vrabel",
+      "sport": "NFL",
+      "published": "2026-09-24T10:41:46.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50014025",
+      "id": "50014025",
+      "headline": "Fantasy basketball mock draft: 10-team H2H points league",
+      "summary": "Our 10-team, H2H points fantasy basketball mock draft was highlighted by some new faces entering the top two rounds.",
+      "url": "https://www.espn.com/fantasy/basketball/story/_/id/50014025/fantasy-basketball-mock-draft-10-team-h2h-points-league-nba-2026-27",
+      "sport": "NBA",
+      "published": "2026-09-24T10:40:53.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50013110",
+      "id": "50013110",
+      "headline": "MLB 2026 playoff intel: Bold predictions, dangerous teams, more",
+      "summary": "Which wild cards could win it all? Are the Yankees cooked without Judge? Here's what those in the sport think could decide October.",
+      "url": "https://www.espn.com/mlb/story/_/id/50013110/mlb-playoffs-2026-insiders-postseason-predictions-dodgers-yankees-red-sox-brewers",
+      "sport": "MLB",
+      "published": "2026-09-24T10:39:54.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50013950",
+      "id": "50013950",
+      "headline": "Projecting the NHL's leap-forward, regression candidates",
+      "summary": "Here are a dozen players who are in for a heightened -- or lowered -- level of production this season.",
+      "url": "https://www.espn.com/nhl/story/_/id/50013950/nhl-2026-27-top-players-stats-goals-scoring-regression",
+      "sport": "NHL",
+      "published": "2026-09-24T10:35:16.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50006560",
+      "id": "50006560",
+      "headline": "Ranking eight winless NFL teams: Texans, Bucs, others at 0-2",
+      "summary": "Can the Texans turn it around (again)? Do the Buccaneers, Colts or Chargers have a chance to get right? Is the season already over for the Falcons and Dolphins?",
+      "url": "https://www.espn.com/nfl/story/_/id/50006560/ranking-winless-two-loss-teams-playoffs-barnwell-2026",
+      "sport": "NFL",
+      "published": "2026-09-24T10:35:02.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50012795",
+      "id": "50012795",
+      "headline": "With Kyler Murray back, will Vikings open up passing attack?",
+      "summary": "Coach Kevin O'Connell said he is \"still a believer in explosives\" despite a long stretch of tepid air production for Minnesota.",
+      "url": "https://www.espn.com/nfl/story/_/id/50012795/nfl-minnesota-vikings-kyler-murray-justin-jefferson",
+      "sport": "NFL",
+      "published": "2026-09-24T10:00:21.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50014884",
+      "id": "50014884",
+      "headline": "Denver Broncos to face another MVP QB in Matthew Stafford",
+      "summary": "Sunday marks the 10th time the Broncos have faced an MVP quarterback since Vance Joseph became defensive coordinator in 2023. Can Denver get the best of Stafford?",
+      "url": "https://www.espn.com/nfl/story/_/id/50014884/denver-broncos-defensive-coordinator-vance-joseph-plays-nfl-mvp-matthew-stafford",
+      "sport": "NFL",
+      "published": "2026-09-24T10:00:21.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50009540",
+      "id": "50009540",
+      "headline": "Panthers' Bryce Young to Darren Waller has been money in red zone",
+      "summary": "The veteran tight end's height, catch radius and history of red zone success make him a tough cover in big moments.",
+      "url": "https://www.espn.com/nfl/story/_/id/50009540/carolina-panthers-darren-waller-2026-fantasy-outlook",
+      "sport": "NFL",
+      "published": "2026-09-24T10:00:12.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50013943",
+      "id": "50013943",
+      "headline": "Meet Cam Achord: The Packers' secret special teams weapon",
+      "summary": "Part old-school coach, part Gen Z analytics savant, Achord is \"just a ball of energy\" as he aims to fix Green Bay's special teams unit.",
+      "url": "https://www.espn.com/nfl/story/_/id/50013943/nfl-green-bay-packers-cam-achord-matt-lafleur-special-teams",
+      "sport": "NFL",
+      "published": "2026-09-24T10:00:05.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50015971",
+      "id": "50015971",
+      "headline": "Baltimore Ravens feel prepared for Rio 'business trip'",
+      "summary": "This is the Ravens' first game in Brazil, but coach Jesse Minter was there last season.",
+      "url": "https://www.espn.com/nfl/story/_/id/50015971/baltimore-ravens-prepared-rio-business-trip",
+      "sport": "NFL",
+      "published": "2026-09-24T10:00:01.000Z",
+      "firstSeen": "2026-09-24T12:39:47.793Z",
+      "bestRank": 9
+    },
     {
       "key": "50018301",
       "id": "50018301",
@@ -200,14 +706,25 @@
       "bestRank": 1
     },
     {
-      "key": "50017967",
-      "id": "50017967",
-      "headline": "Longtime Lakers public-address announcer Lawrence Tanter dies",
-      "summary": "Lawrence Tanter had manned the microphone in L.A. since the \"Showtime\" days until his retirement in June following a stroke.",
-      "url": "https://www.espn.com/nba/story/_/id/50017967/long-lakers-public-address-announcer-lawrence-tanter-dies",
-      "sport": "NBA",
-      "published": "2026-09-24T06:23:33.000Z",
-      "firstSeen": "2026-09-24T06:44:00.244Z",
+      "key": "50003145",
+      "id": "50003145",
+      "headline": "Why is the Azerbaijan Grand Prix on a Saturday, not a Sunday? Baku schedule shift explained",
+      "summary": "Why is the Azerbaijan Grand Prix taking place on a Saturday? Here's why F1 has moved the entire Baku race weekend forward by a day.",
+      "url": "https://www.espn.com/f1/story/_/id/50003145/explained-2026-azerbaijan-grand-prix-saturday-sunday-schedule-baku",
+      "sport": "F1",
+      "published": "2026-09-24T06:12:19.000Z",
+      "firstSeen": "2026-09-22T09:28:54.752Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49963170",
+      "id": "49963170",
+      "headline": "Azerbaijan Grand Prix 2026: Race start time in Baku, how to watch, full schedule, predictions",
+      "summary": "Formula 1 is heading to the streets of Baku for this year's Azerbaijan Grand Prix as we roll into the business end of the season.",
+      "url": "https://www.espn.com/f1/story/_/id/49963170/azerbaijan-grand-prix-2026-circuit-baku-race-f1-start-s-how-watch-schedule-usa-tv-channel-live-stream-predictions-results",
+      "sport": "F1",
+      "published": "2026-09-24T06:12:14.000Z",
+      "firstSeen": "2026-09-18T18:31:07.745Z",
       "bestRank": 1
     },
     {
@@ -365,17 +882,6 @@
       "bestRank": 3
     },
     {
-      "key": "50017078",
-      "id": "50017078",
-      "headline": "Dream's Reese OK after being struck in face; Liberty C Jones tweaks ankle",
-      "summary": "Dream star Angel Reese was fine after leaving Wednesday's game against the Liberty after being struck in the face just before halftime. The Liberty's Jonquel Jones also left the game after suffering a second-half ankle injury.",
-      "url": "https://www.espn.com/wnba/story/_/id/50017078/dream-reese-ok-being-struck-face-liberty-c-jones-tweaks-ankle",
-      "sport": "WNBA",
-      "published": "2026-09-24T04:12:51.000Z",
-      "firstSeen": "2026-09-24T03:32:48.060Z",
-      "bestRank": 4
-    },
-    {
       "key": "50015707",
       "id": "50015707",
       "headline": "Blue Jays' Max Scherzer: Announcement on future coming",
@@ -420,17 +926,6 @@
       "bestRank": 1
     },
     {
-      "key": "50017566",
-      "id": "50017566",
-      "headline": "Ex-NC State sports medicine director arrested after indictment",
-      "summary": "Former NC State sports medicine director Robert Michael Murphy was arrested Wednesday evening after a grand jury indicted him last week on multiple felony and misdemeanor counts involving the sexual abuse of male student-athletes he had treated.",
-      "url": "https://www.espn.com/college-sports/story/_/id/50017566/ex-nc-state-sports-medicine-director-arrested-indictment",
-      "sport": "College basketball",
-      "published": "2026-09-24T03:51:44.000Z",
-      "firstSeen": "2026-09-24T06:44:00.244Z",
-      "bestRank": 1
-    },
-    {
       "key": "50017640",
       "id": "50017640",
       "headline": "Diamondbacks beat the Rockies 5-3 to keep NL wild-card hopes alive",
@@ -440,17 +935,6 @@
       "published": "2026-09-24T03:36:30.000Z",
       "firstSeen": "2026-09-24T06:44:00.244Z",
       "bestRank": 10
-    },
-    {
-      "key": "50016813",
-      "id": "50016813",
-      "headline": "Red Sox's Ceddanne Rafaela injures hamstring in IL return",
-      "summary": "Ceddanne Rafaela, who returned Wednesday after being sidelined since Sept. 3 because of a right quad strain, left in the third inning because of tightness in his right hamstring.",
-      "url": "https://www.espn.com/mlb/story/_/id/50016813/boston-rafaela-back-il-injures-hamstring-running-single",
-      "sport": "MLB",
-      "published": "2026-09-24T03:26:45.000Z",
-      "firstSeen": "2026-09-24T03:32:48.060Z",
-      "bestRank": 17
     },
     {
       "key": "50017381",
@@ -583,17 +1067,6 @@
       "published": "2026-09-24T02:34:27.000Z",
       "firstSeen": "2026-09-24T03:32:48.060Z",
       "bestRank": 7
-    },
-    {
-      "key": "50015234",
-      "id": "50015234",
-      "headline": "Seahawks' Macdonald apologizes to Broncos' Payton for comments",
-      "summary": "Seahawks coach Mike Macdonald said Wednesday he called Broncos coach Sean Payton and apologized for comments he made in a published video that went viral Tuesday.",
-      "url": "https://www.espn.com/nfl/story/_/id/50015234/seahawks-macdonald-apologizes-broncos-payton-comments",
-      "sport": "NFL",
-      "published": "2026-09-24T02:33:01.000Z",
-      "firstSeen": "2026-09-23T21:26:07.769Z",
-      "bestRank": 3
     },
     {
       "key": "50017322",
@@ -761,17 +1234,6 @@
       "bestRank": 1
     },
     {
-      "key": "50013861",
-      "id": "50013861",
-      "headline": "Giants' Dart to have knee surgery, out rest of regular season",
-      "summary": "Giants quarterback Jaxson Dart will undergo surgery on his left knee and sit out the rest of the regular season, though head coach John Harbaugh didn't rule out the possibility Dart could return if the Giants were to make the playoffs.",
-      "url": "https://www.espn.com/nfl/story/_/id/50013861/giants-qb-dart-knee-surgery-miss-rest-regular-season",
-      "sport": "NFL",
-      "published": "2026-09-24T01:17:59.000Z",
-      "firstSeen": "2026-09-23T18:33:15.052Z",
-      "bestRank": 13
-    },
-    {
       "key": "48377855",
       "id": "48377855",
       "headline": "2026 NBA buzz: Latest free agency and trade updates",
@@ -780,17 +1242,6 @@
       "sport": "NBA",
       "published": "2026-09-24T01:13:24.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50016633",
-      "id": "50016633",
-      "headline": "Herbert shuts down leadership questions amid Chargers' 0-2 start",
-      "summary": "Justin Herbert was uncharacteristically fiery when asked Wednesday about increased vocal leadership on the Chargers amid the team's 0-2 start.",
-      "url": "https://www.espn.com/nfl/story/_/id/50016633/herbert-shuts-leadership-questions-amid-chargers-0-2-start",
-      "sport": "NFL",
-      "published": "2026-09-24T01:08:05.000Z",
-      "firstSeen": "2026-09-24T01:00:53.569Z",
       "bestRank": 1
     },
     {
@@ -836,28 +1287,6 @@
       "published": "2026-09-23T23:55:53.000Z",
       "firstSeen": "2026-09-24T01:00:53.569Z",
       "bestRank": 2
-    },
-    {
-      "key": "50016270",
-      "id": "50016270",
-      "headline": "Stewart scratch for Liberty regular-season finale 'precautionary'",
-      "summary": "New York Liberty star Breanna Stewart will miss the team's regular-season finale Wednesday with left knee soreness, coach Chris DeMarco said pregame.",
-      "url": "https://www.espn.com/wnba/story/_/id/50016270/stewart-scratch-liberty-regular-season-finale-precautionary",
-      "sport": "WNBA",
-      "published": "2026-09-23T23:42:02.000Z",
-      "firstSeen": "2026-09-24T03:32:48.060Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50015655",
-      "id": "50015655",
-      "headline": "Mark Messier 'horrified' by Oilers' hire of coach Mike Babcock",
-      "summary": "Former NHL star Mark Messier, who had a Hall of Fame career with the Edmonton Oilers, said he was \"horrified\" by the team's hiring of controversial coach Mike Babcock.",
-      "url": "https://www.espn.com/nhl/story/_/id/50015655/mark-messier-horrified-oilers-hire-coach-mike-babcock",
-      "sport": "NHL",
-      "published": "2026-09-23T23:26:46.000Z",
-      "firstSeen": "2026-09-24T03:32:48.060Z",
-      "bestRank": 4
     },
     {
       "key": "50016371",
@@ -915,17 +1344,6 @@
       "bestRank": 9
     },
     {
-      "key": "50016115",
-      "id": "50016115",
-      "headline": "Broncos RB Coleman doesn't practice; Dobbins, Harvey limited",
-      "summary": "Broncos running backs J.K. Dobbins and RJ Harvey were limited in practice Wednesday, and Jonah Coleman did not practice. Nevertheless, coach Sean Payton said he thinks \"we're going to be all right\" at the position Sunday against the Rams.",
-      "url": "https://www.espn.com/nfl/story/_/id/50016115/broncos-running-backs-jk-dobbins-rj-harvey-limited-practice-jonah-coleman-does-not-practice",
-      "sport": "NFL",
-      "published": "2026-09-23T23:14:22.000Z",
-      "firstSeen": "2026-09-24T01:00:53.569Z",
-      "bestRank": 3
-    },
-    {
       "key": "50015792",
       "id": "50015792",
       "headline": "UK PM Burnham wants 'outdated' football drinking ban scrapped",
@@ -970,17 +1388,6 @@
       "bestRank": 5
     },
     {
-      "key": "50016014",
-      "id": "50016014",
-      "headline": "McVay says Nacua's injury not 'long-term' concern, but Rams being cautious",
-      "summary": "Rams coach Sean McVay said receiver Puka Nacua does not have a hernia, but the team will \"err on the side of caution\" with the injury.",
-      "url": "https://www.espn.com/nfl/story/_/id/50016014/mcvay-says-nacua-injury-not-long-term-concern-rams-being-cautious",
-      "sport": "NFL",
-      "published": "2026-09-23T22:50:11.000Z",
-      "firstSeen": "2026-09-24T01:00:53.569Z",
-      "bestRank": 4
-    },
-    {
       "key": "50016201",
       "id": "50016201",
       "headline": "No. 21 Florida's Jadan Baugh says Heisman talk lights a fire under him",
@@ -1012,17 +1419,6 @@
       "published": "2026-09-23T22:37:00.000Z",
       "firstSeen": "2026-09-24T01:00:53.569Z",
       "bestRank": 1
-    },
-    {
-      "key": "50015858",
-      "id": "50015858",
-      "headline": "Commanders say clip didn't reflect team response to Daniels injury",
-      "summary": "After a short video clip showed a number of Commanders walking past Jayden Daniels as he was being helped by medical personnel Sunday, many players fired back at the takes being spouted on social media, emphasizing, \"It's bulls--- what people are saying.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/50015858/commanders-respond-viral-video-clip-reject-notion-abandoned-injured-jayden-daniels",
-      "sport": "NFL",
-      "published": "2026-09-23T22:21:30.000Z",
-      "firstSeen": "2026-09-24T01:00:53.569Z",
-      "bestRank": 6
     },
     {
       "key": "50016000",
@@ -1201,17 +1597,6 @@
       "bestRank": 9
     },
     {
-      "key": "49996413",
-      "id": "49996413",
-      "headline": "Fantasy baseball lineup advice: Mahle has proven to be a reliable streamer",
-      "summary": "Everything you need to know to set your fantasy baseball lineups for Thursday's MLB action.",
-      "url": "https://www.espn.com/fantasy/baseball/story/_/id/49996413/fantasy-baseball-pitcher-rankings-lineup-advice-tips-mlb-daily-notes-september-24-games",
-      "sport": "MLB",
-      "published": "2026-09-23T20:20:18.000Z",
-      "firstSeen": "2026-09-23T21:26:07.769Z",
-      "bestRank": 3
-    },
-    {
       "key": "50014807",
       "id": "50014807",
       "headline": "Vikings RB Aaron Jones working through knee injury",
@@ -1349,7 +1734,7 @@
       "headline": "What is the Protect College Sports Act? What would the bill do?",
       "summary": "As the Senate looks to pass the landmark bill, we sort the truths from the myths about the Protect College Sports Act.",
       "url": "https://www.espn.com/college-football/story/_/id/50001346/protect-college-sports-act-truths-myths-congress",
-      "sport": "College basketball",
+      "sport": "College football",
       "published": "2026-09-23T18:18:33.000Z",
       "firstSeen": "2026-09-23T21:26:07.769Z",
       "bestRank": 2
@@ -1386,17 +1771,6 @@
       "published": "2026-09-23T18:13:07.000Z",
       "firstSeen": "2026-09-23T18:33:15.052Z",
       "bestRank": 4
-    },
-    {
-      "key": "50014296",
-      "id": "50014296",
-      "headline": "Penn State's Koby Howard to miss time with undisclosed injury",
-      "summary": "Koby Howard, Penn State's leading WR, is likely sidelined for a while though his undisclosed injury is \"not season-ending,\" coach Matt Campbell said.",
-      "url": "https://www.espn.com/college-football/story/_/id/50014296/penn-state-koby-howard-miss-undisclosed-injury",
-      "sport": "College football",
-      "published": "2026-09-23T18:04:23.000Z",
-      "firstSeen": "2026-09-23T21:26:07.769Z",
-      "bestRank": 2
     },
     {
       "key": "40699880",
@@ -1836,17 +2210,6 @@
       "sport": "Soccer",
       "published": "2026-09-23T14:52:45.000Z",
       "firstSeen": "2026-09-23T18:33:15.052Z",
-      "bestRank": 1
-    },
-    {
-      "key": "48297021",
-      "id": "48297021",
-      "headline": "Fantasy baseball news: Dodgers expect Ohtani to DH on Wednesday",
-      "summary": "All of the important fantasy spin and actionable takeaways resulting from the latest baseball news.",
-      "url": "https://www.espn.com/fantasy/baseball/story/_/id/48297021/espn-fantasy-baseball-buzz-injuries-promotions-demotions-trades-prospects-lineup-changes-mlb-news-analysis-2026",
-      "sport": "MLB",
-      "published": "2026-09-23T14:48:05.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
     },
     {
@@ -2565,28 +2928,6 @@
       "bestRank": 11
     },
     {
-      "key": "50003145",
-      "id": "50003145",
-      "headline": "Why is the Azerbaijan Grand Prix on a Saturday, not a Sunday? Baku schedule shift explained",
-      "summary": "Why is the Azerbaijan Grand Prix taking place on a Saturday? Here's why F1 has moved the entire Baku race weekend forward by a day.",
-      "url": "https://www.espn.com/f1/story/_/id/50003145/explained-2026-azerbaijan-grand-prix-saturday-sunday-schedule-baku",
-      "sport": "F1",
-      "published": "2026-09-23T07:41:08.000Z",
-      "firstSeen": "2026-09-22T09:28:54.752Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49963170",
-      "id": "49963170",
-      "headline": "Azerbaijan Grand Prix 2026: Race start time in Baku, how to watch, full schedule, predictions",
-      "summary": "Formula 1 is heading to the streets of Baku for this year's Azerbaijan Grand Prix as we roll into the business end of the season.",
-      "url": "https://www.espn.com/f1/story/_/id/49963170/azerbaijan-grand-prix-2026-circuit-baku-race-f1-start-s-how-watch-schedule-usa-tv-channel-live-stream-predictions-results",
-      "sport": "F1",
-      "published": "2026-09-23T07:40:32.000Z",
-      "firstSeen": "2026-09-18T18:31:07.745Z",
-      "bestRank": 1
-    },
-    {
       "key": "50009936",
       "id": "50009936",
       "headline": "Wheeler fans 7 straight to open game, Stott hits tiebreaking single as Phillies beat Brewers 6-4",
@@ -2629,28 +2970,6 @@
       "published": "2026-09-23T06:41:41.000Z",
       "firstSeen": "2026-09-23T09:30:20.554Z",
       "bestRank": 12
-    },
-    {
-      "key": "50010262",
-      "id": "50010262",
-      "headline": "Mystics beat Sun, set franchise record with 27th win",
-      "summary": "The Mystics won their franchise-record 27th game of the season Tuesday night in a 79-69 defeat of the Sun.",
-      "url": "https://www.espn.com/wnba/story/_/id/50010262/mystics-beat-sun-set-franchise-record-27th-win",
-      "sport": "WNBA",
-      "published": "2026-09-23T06:38:05.000Z",
-      "firstSeen": "2026-09-23T09:30:20.554Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50010938",
-      "id": "50010938",
-      "headline": "Lynx pull starters vs. Fever but clinch 1-seed with Valkyries' loss",
-      "summary": "The Lynx went into the second-to-last game of the season against the Fever with a chance to wrap up the No. 1 seed -- which they eventually did thanks to a Valkyries loss -- but coach Cheryl Reeve didn't play her normal starters in the second half.",
-      "url": "https://www.espn.com/wnba/story/_/id/50010938/stumbling-lynx-pull-starters-vs-fever-top-seed-line",
-      "sport": "WNBA",
-      "published": "2026-09-23T06:37:16.000Z",
-      "firstSeen": "2026-09-23T12:38:58.714Z",
-      "bestRank": 10
     },
     {
       "key": "50006711",
@@ -3344,17 +3663,6 @@
       "published": "2026-09-23T00:05:19.000Z",
       "firstSeen": "2026-09-23T00:59:43.095Z",
       "bestRank": 1
-    },
-    {
-      "key": "50008021",
-      "id": "50008021",
-      "headline": "Hawks trade Hield, Nembhard to Hornets for Finney-Smith",
-      "summary": "The Hawks are sending Buddy Hield, Ryan Nembhard and cash considerations to the Charlotte Hornets for Dorian Finney-Smith, sources told ESPN.",
-      "url": "https://www.espn.com/nba/story/_/id/50008021/sources-hawks-trade-hield-nembhard-hornets-finney-smith",
-      "sport": "NBA",
-      "published": "2026-09-23T00:03:53.000Z",
-      "firstSeen": "2026-09-22T21:24:10.847Z",
-      "bestRank": 4
     },
     {
       "key": "50009416",
@@ -4710,17 +5018,6 @@
       "bestRank": 1
     },
     {
-      "key": "31165100",
-      "id": "31165100",
-      "headline": "Fantasy baseball forecaster: Pitcher projections for the next 10 days",
-      "summary": "Keep up to date on who is pitching -- and how well they're expected to do -- with our forecaster, which provides a rolling 10-day outlook of every team's probable starting pitchers with game score projections.",
-      "url": "https://www.espn.com/fantasy/baseball/story/_/id/31165100/fantasy-baseball-forecaster-probable-starting-pitcher-projections-matchups-daily-weekly-leagues",
-      "sport": "MLB",
-      "published": "2026-09-22T10:49:14.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
-    },
-    {
       "key": "50004227",
       "id": "50004227",
       "headline": "Man United-linked Lewis Hall: 'No-brainer' to stay at Newcastle",
@@ -4730,28 +5027,6 @@
       "published": "2026-09-22T10:48:58.000Z",
       "firstSeen": "2026-09-22T15:27:26.886Z",
       "bestRank": 3
-    },
-    {
-      "key": "31165089",
-      "id": "31165089",
-      "headline": "Fantasy baseball forecaster: Team hitting ratings",
-      "summary": "Stay ahead of the game and optimize your fantasy baseball hitters with our forecaster, which provides a rolling 10-day outlook of every team's hitting matchups as well as the potential for stolen bases.",
-      "url": "https://www.espn.com/fantasy/baseball/story/_/id/31165089/fantasy-baseball-forecaster-team-hitting-stolen-base-ratings-platoon-matchups-daily-weekly-leagues",
-      "sport": "MLB",
-      "published": "2026-09-22T10:48:51.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
-    },
-    {
-      "key": "4053281",
-      "id": "4053281",
-      "headline": "Fantasy Baseball Reliever Depth Chart",
-      "summary": "Our updated reliever depth chart displays the closer hierarchy for each team, as well as the fatigue factor in each MLB bullpen.",
-      "url": "https://www.espn.com/fantasy/baseball/flb/story?page=REcloserorgchart",
-      "sport": "MLB",
-      "published": "2026-09-22T10:46:56.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
     },
     {
       "key": "49966370",
@@ -48048,336 +48323,6 @@
       "published": "2026-09-03T12:44:14.000Z",
       "firstSeen": "2026-09-03T15:29:45.827Z",
       "bestRank": 2
-    },
-    {
-      "key": "49797721",
-      "id": "49797721",
-      "headline": "Can Geno Smith rewrite his narrative in return to Jets?",
-      "summary": "New York drafted the quarterback in 2013, and now he returns after an eight-year hiatus.",
-      "url": "https://www.espn.com/nfl/story/_/id/49797721/new-york-jets-geno-smith-comeback-narrative",
-      "sport": "NFL",
-      "published": "2026-09-03T12:35:37.000Z",
-      "firstSeen": "2026-09-03T12:39:09.176Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49808626",
-      "id": "49808626",
-      "headline": "Dodgers' Eric Lauer out with elbow inflammation after rough outing",
-      "summary": "Los Angeles Dodgers pitcher Eric Lauer is on the injured list with left elbow inflammation.",
-      "url": "https://www.espn.com/mlb/story/_/id/49808626/dodgers-eric-lauer-sidelined-left-elbow-inflammation-rough-outing",
-      "sport": "MLB",
-      "published": "2026-09-03T12:26:36.000Z",
-      "firstSeen": "2026-09-03T04:44:54.333Z",
-      "bestRank": 20
-    },
-    {
-      "key": "49809482",
-      "id": "49809482",
-      "headline": "Brewers beat Cubs despite off night from Jacob Misiorowski",
-      "summary": "Brewers ace Jacob Misiorowski had a rare off night Wednesday against the Cubs, but Milwaukee overcame an early deficit to win a second straight game against its NL Central rival.",
-      "url": "https://www.espn.com/mlb/story/_/id/49809482/brewers-jacob-misiorowski-matches-career-worsts-runs-allowed-walks-rough-start-vs-cubs",
-      "sport": "MLB",
-      "published": "2026-09-03T12:26:23.000Z",
-      "firstSeen": "2026-09-03T04:44:54.333Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49809672",
-      "id": "49809672",
-      "headline": "Padres' Salas, 20, youngest to catch game since Ivan Rodriguez",
-      "summary": "Padres top prospect Ethan Salas became the youngest player to catch in an MLB game since Ivan Rodriguez, making his debut Wednesday night at 20 years, 93 days old.",
-      "url": "https://www.espn.com/mlb/story/_/id/49809672/padres-salas-20-youngest-catch-game-ivan-rodriguez",
-      "sport": "MLB",
-      "published": "2026-09-03T12:26:07.000Z",
-      "firstSeen": "2026-09-03T04:44:54.333Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49810930",
-      "id": "49810930",
-      "headline": "Dodgers' Roberts says Ohtani 'visibly' ailing after 0-for-4 night",
-      "summary": "Dodgers manager Dave Roberts said Shohei Ohtani is \"not close to optimal\" after going 0-for-4 with four strikeouts in Wednesday night's 8-6 loss to the Cardinals.",
-      "url": "https://www.espn.com/mlb/story/_/id/49810930/dodgers-roberts-says-ohtani-visibly-ailing-0-4-night",
-      "sport": "MLB",
-      "published": "2026-09-03T12:25:54.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49804377",
-      "id": "49804377",
-      "headline": "MLB Power Rankings Week 23: Top teams in first September edition",
-      "summary": "As the season enters the stretch run, our top 10 remains mostly the same while teams on the fringe of the playoffs continue to try and make a push.",
-      "url": "https://www.espn.com/mlb/story/_/id/49804377/mlb-2026-power-rankings-week-23-brewers-dodgers-braves-rays-cubs-orioles",
-      "sport": "MLB",
-      "published": "2026-09-03T12:25:45.000Z",
-      "firstSeen": "2026-09-03T15:29:45.827Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49797027",
-      "id": "49797027",
-      "headline": "Projecting every Big East team's floor and ceiling for 2026-27",
-      "summary": "Will UConn reign supreme in the Big East? Who's the weakest in the league? Projections for all 11 teams.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/49797027/mens-college-basketball-projecting-floors-ceilings-every-team-2026-27-big-east",
-      "sport": "College basketball",
-      "published": "2026-09-03T12:24:13.000Z",
-      "firstSeen": "2026-09-03T15:29:45.827Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49813425",
-      "id": "49813425",
-      "headline": "Iraola 'very happy' with Barcola ahead of potential Liverpool debut",
-      "summary": "Iraola 'very happy' with Barcola ahead of potential Liverpool debut",
-      "url": "https://www.espn.com/video/clip/_/id/49813425/iraola-very-happy-barcola-ahead-potential-liverpool-debut",
-      "sport": "Soccer",
-      "published": "2026-09-03T12:20:55.000Z",
-      "firstSeen": "2026-09-03T18:32:58.450Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49813431",
-      "id": "49813431",
-      "headline": "'What kind of question is that?' Sabalenka unhappy with reporters after win",
-      "summary": "'What kind of question is that?' Sabalenka unhappy with reporters after win",
-      "url": "https://www.espn.com/video/clip/_/id/49813431/what-kind-question-sabalenka-unhappy-reporters-win",
-      "sport": "Tennis",
-      "published": "2026-09-03T12:20:18.000Z",
-      "firstSeen": "2026-09-03T18:32:58.450Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49812775",
-      "id": "49812775",
-      "headline": "Mike Dean admits to playing secret 'game' to not blow whistle while refereeing Premier League matches",
-      "summary": "Former Premier League referee Mike Dean has revealed he used to play secret \"games\" while refereeing top-flight matches, including one where he tried to avoid giving a foul for as long as possible.",
-      "url": "https://www.espn.com/soccer/story/_/id/49812775/mike-dean-admits-playing-secret-game-not-blow-whistle-refereeing-premier-league-matches",
-      "sport": "Soccer",
-      "published": "2026-09-03T11:53:27.000Z",
-      "firstSeen": "2026-09-03T12:39:09.176Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49813003",
-      "id": "49813003",
-      "headline": "Hull condemn 'abhorrent' racist abuse directed towards deadline-day signing Robinio Vaz",
-      "summary": "Hull City have condemned the racist abuse directed towards new signing Robinio Vaz on social media.",
-      "url": "https://www.espn.com/soccer/story/_/id/49813003/hull-condemn-abhorrent-racist-abuse-directed-towards-deadline-day-signing-robinio-vaz",
-      "sport": "Soccer",
-      "published": "2026-09-03T11:51:35.000Z",
-      "firstSeen": "2026-09-03T12:39:09.176Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49782113",
-      "id": "49782113",
-      "headline": "A'ja Wilson, Kelsey Plum to miss the FIBA Women's World Cup",
-      "summary": "Kelsey Plum and A'ja Wilson will miss the FIBA Women's World Cup for health reasons, with the Mercury announcing that Plum will miss the rest of the 2026 season. Kiki Iriafen and Sonia Citron will replace Plum and Wilson, USA Basketball announced Monday.",
-      "url": "https://www.espn.com/wnba/story/_/id/49782113/aja-wilson-kelsey-plum-miss-fiba-women-world-cup",
-      "sport": "WNBA",
-      "published": "2026-09-03T11:41:19.000Z",
-      "firstSeen": "2026-08-31T15:27:20.821Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49794975",
-      "id": "49794975",
-      "headline": "U.S. coach Kara Lawson calls World Cup most challenging",
-      "summary": "U.S. coach Kara Lawson says this version of the FIBA World Cup is the most challenging she's seen.",
-      "url": "https://www.espn.com/wnba/story/_/id/49794975/us-coach-kara-lawson-calls-world-cup-most-challenging",
-      "sport": "WNBA",
-      "published": "2026-09-03T11:40:39.000Z",
-      "firstSeen": "2026-09-01T21:24:45.031Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49812852",
-      "id": "49812852",
-      "headline": "MLB betting tips for Thursday: Rays and the road don't seem to be getting along",
-      "summary": "All of the odds, recommended prop bets and trends in baseball for Thursday, September 3.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/49812852/mlb-betting-tips-odds-lines-2026-thursday-september-3",
-      "sport": "MLB",
-      "published": "2026-09-03T11:36:47.000Z",
-      "firstSeen": "2026-09-03T12:39:09.176Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49652199",
-      "id": "49652199",
-      "headline": "Atlanta Hawks offseason recap, early 2026-27 season preview",
-      "summary": "With the Trae Young era in the past, how do the Hawks move forward? We're looking back at the offseason and taking an early look at the 2026-27 season.",
-      "url": "https://www.espn.com/nba/story/_/id/49652199/atlanta-hawks-offseason-recap-2026-27-season-preview-stats-roster-depth-chart",
-      "sport": "NBA",
-      "published": "2026-09-03T11:13:03.000Z",
-      "firstSeen": "2026-09-03T12:39:09.176Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49804905",
-      "id": "49804905",
-      "headline": "CJ Carr, Arch Manning top congested Heisman Trophy odds boards",
-      "summary": "Notre Dame quarterback CJ Carr and Texas quarterback Arch Manning are the favorites to win the Heisman Trophy, but the odds at sportsbooks suggest it's a wide-open race.",
-      "url": "https://www.espn.com/college-football/story/_/id/49804905/cj-carr-arch-manning-lead-congested-heisman-oddsboards",
-      "sport": "College football",
-      "published": "2026-09-03T10:59:53.000Z",
-      "firstSeen": "2026-09-02T18:32:29.761Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49793727",
-      "id": "49793727",
-      "headline": "Fantasy baseball lineup advice for Thursday: Breakout coming for Kade Anderson?",
-      "summary": "Everything you need to know to set your fantasy baseball lineups for Thursday's MLB action.",
-      "url": "https://www.espn.com/fantasy/baseball/story/_/id/49793727/fantasy-baseball-pitcher-rankings-lineup-advice-tips-mlb-daily-notes-september-3-games",
-      "sport": "MLB",
-      "published": "2026-09-03T10:55:19.000Z",
-      "firstSeen": "2026-09-02T21:24:06.000Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49804039",
-      "id": "49804039",
-      "headline": "Eagles' Hurts agrees that he, Brown grew apart last season",
-      "summary": "Eagles quarterback Jalen Hurts confirmed former teammate A.J. Brown's comments that the two had grown apart last season in QB's interview with GQ magazine.",
-      "url": "https://www.espn.com/nfl/story/_/id/49804039/eagles-hurts-agrees-brown-grew-apart-last-season",
-      "sport": "NFL",
-      "published": "2026-09-03T10:41:36.000Z",
-      "firstSeen": "2026-09-02T15:30:52.676Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49805381",
-      "id": "49805381",
-      "headline": "Vikings GM expects McCarthy to be on Week 1 roster, 'to develop'",
-      "summary": "Vikings general manager Nolan Teasley said Wednesday he expects quarterback J.J. McCarthy to be a part of the team when the regular season begins.",
-      "url": "https://www.espn.com/nfl/story/_/id/49805381/vikings-gm-expects-mccarthy-week-1-roster-develop",
-      "sport": "NFL",
-      "published": "2026-09-03T10:40:43.000Z",
-      "firstSeen": "2026-09-02T18:32:29.761Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49807799",
-      "id": "49807799",
-      "headline": "Eric DeCosta 'optimistic' Ravens, Lamar Jackson can reach deal",
-      "summary": "Ravens general manager Eric DeCosta expressed confidence Wednesday that the team can reach a contract extension with quarterback Lamar Jackson before March.",
-      "url": "https://www.espn.com/nfl/story/_/id/49807799/eric-decosta-optimistic-ravens-lamar-jackson-reach-deal-march",
-      "sport": "NFL",
-      "published": "2026-09-03T10:40:29.000Z",
-      "firstSeen": "2026-09-03T01:02:26.841Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49804802",
-      "id": "49804802",
-      "headline": "Raiders name Kirk Cousins starting QB for Week 1 over Fernando Mendoza",
-      "summary": "Kirk Cousins will begin the season as the Raiders' starting quarterback over rookie Fernando Mendoza.",
-      "url": "https://www.espn.com/nfl/story/_/id/49804802/raiders-name-kirk-cousins-starting-qb-week-1-fernando-mendoza",
-      "sport": "NFL",
-      "published": "2026-09-03T10:40:09.000Z",
-      "firstSeen": "2026-09-02T18:32:29.761Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49811531",
-      "id": "49811531",
-      "headline": "Alternative transfer awards: Left on the shelf, best bargain hunters, top data pick, more",
-      "summary": "Welcome to our transfer alternative awards, where we hand out eight off-beat trophies to those who didn't quite make the spotlight.",
-      "url": "https://www.espn.com/soccer/story/_/id/49811531/alternative-summer-transfer-awards-left-shelf-best-bargain-hunters-top-data-pick-more",
-      "sport": "Soccer",
-      "published": "2026-09-03T10:38:56.000Z",
-      "firstSeen": "2026-09-03T12:39:09.176Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49795196",
-      "id": "49795196",
-      "headline": "Lane vs. Dabo, Mike Norvell vs. the hot seat and everything to watch in Week 1",
-      "summary": "College football is back! Previewing Week 1's top games and which teams are on upset watch.",
-      "url": "https://www.espn.com/college-football/story/_/page/gamedaykickoff090326/2026-gameday-kickoff-week-1-preview-top-games-players-lsu-clemson",
-      "sport": "College football",
-      "published": "2026-09-03T10:38:39.000Z",
-      "firstSeen": "2026-09-03T12:39:09.176Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49741684",
-      "id": "49741684",
-      "headline": "Mike Clay's Playbook, Part 3: How to manage your team postdraft",
-      "summary": "No matter which type of league you play in, Mike Clay gives you keys to being a savvy, title-winning manager.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49741684/fantasy-football-how-manage-team-pickups-trades",
-      "sport": "NFL",
-      "published": "2026-09-03T10:34:29.000Z",
-      "firstSeen": "2026-09-03T12:39:09.176Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49805268",
-      "id": "49805268",
-      "headline": "Wings' Li to miss FIBA World Cup due to lost passport",
-      "summary": "China will have to play without Li Yueru at the women's FIBA World Cup after her replacement passport was lost in the mail ahead of the tournament that starts in Germany this week.",
-      "url": "https://www.espn.com/wnba/story/_/id/49805268/wings-li-miss-fiba-world-cup-due-lost-passport",
-      "sport": "WNBA",
-      "published": "2026-09-03T10:31:13.000Z",
-      "firstSeen": "2026-09-02T21:24:06.000Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49804989",
-      "id": "49804989",
-      "headline": "Judge upholds eligibility for Missouri DT Sterling Webb",
-      "summary": "A judge has upheld a temporary restraining order allowing Missouri defensive tackle Sterling Webb a fifth year of eligibility.",
-      "url": "https://www.espn.com/college-football/story/_/id/49804989/judge-upholds-eligibility-missouri-sterling-webb",
-      "sport": "College football",
-      "published": "2026-09-03T10:28:06.000Z",
-      "firstSeen": "2026-09-02T18:32:29.761Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49808734",
-      "id": "49808734",
-      "headline": "Aryna Sabalenka powers into US Open 3rd round in 53 minutes",
-      "summary": "No. 1 Aryna Sabalenka overwhelmed Polina Iatcenko 6-1, 6-1 in 53 minutes Wednesday night at the US Open, putting on a power-hitting display that made it seem her recent problems are in the past.",
-      "url": "https://www.espn.com/tennis/story/_/id/49808734/aryna-sabalenka-powers-us-open-third-round-53-minutes",
-      "sport": "Tennis",
-      "published": "2026-09-03T10:27:26.000Z",
-      "firstSeen": "2026-09-03T06:42:39.174Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49811733",
-      "id": "49811733",
-      "headline": "No. 4 Notre Dame seeking faster start to season as it opens against Wisconsin at Lambeau Field",
-      "summary": "Wisconsin vs. No. 4 Notre Dame at Lambeau Field, Sunday, 7:30 p.m. ET\r\n              How to watch: NBC",
-      "url": "http://www.espn.com/ncf/preview?gameId=401858438",
-      "sport": "College football",
-      "published": "2026-09-03T10:10:43.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49793914",
-      "id": "49793914",
-      "headline": "How Panthers QB Bryce Young, playcaller Brad Idzik will mesh in 2026",
-      "summary": "Carolina believes a more aggressive approach under first-time playcaller Brad Idzik can help franchise QB Bryce Young reach another level.",
-      "url": "https://www.espn.com/nfl/story/_/id/49793914/bryce-young-brad-idzik-how-carolina-panthers-quarterback-new-playcaller-mesh-2026",
-      "sport": "NFL",
-      "published": "2026-09-03T10:00:11.000Z",
-      "firstSeen": "2026-09-03T12:39:09.176Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49812257",
-      "id": "49812257",
-      "headline": "Michael Carrick explains why he doesn't like to play in Man United training",
-      "summary": "Manchester United head coach Michael Carrick has said that he doesn't like to take to the pitch in training, preferring to oversee his sessions from the sidelines.",
-      "url": "https://www.espn.com/soccer/story/_/id/49812257/michael-carrick-explains-why-doesnt-play-man-united-training",
-      "sport": "Soccer",
-      "published": "2026-09-03T09:52:31.000Z",
-      "firstSeen": "2026-09-03T12:39:09.176Z",
-      "bestRank": 3
     }
   ]
 }
