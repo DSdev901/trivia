@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-24T06:44:00.244Z",
+  "generatedAt": "2026-09-24T09:31:00.620Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-03T06:44:00.244Z",
-  "windowEnd": "2026-09-24T06:44:00.244Z",
+  "windowStart": "2026-09-03T09:31:00.620Z",
+  "windowEnd": "2026-09-24T09:31:00.620Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,29 +21,139 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4406,
+  "count": 4396,
   "items": [
     {
-      "key": "50017967",
-      "id": "50017967",
-      "headline": "Longtime Lakers public-address announcer Lawrence Tanter dies",
-      "summary": "Lawrence Tanter had manned the microphone in L.A. since the \"Showtime\" days until his retirement in June following a stroke.",
-      "url": "https://www.espn.com/nba/story/_/id/50017967/long-lakers-public-address-announcer-lawrence-tanter-dies",
-      "sport": "NBA",
-      "published": "2026-09-24T06:23:33.000Z",
-      "firstSeen": "2026-09-24T06:44:00.244Z",
+      "key": "50018301",
+      "id": "50018301",
+      "headline": "Orioles sweep doubleheader against Blue Jays to stave off elimination -- for now",
+      "summary": "— Trey Gibson pitched brilliantly into the seventh inning and the Baltimore Orioles beat the Toronto Blue Jays 4-2 on Wednesday night to sweep a doubleheader and at least temporarily stay alive in the American League playoff race.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817050",
+      "sport": "MLB",
+      "published": "2026-09-24T08:14:24.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
       "bestRank": 1
     },
     {
-      "key": "50016112",
-      "id": "50016112",
-      "headline": "Shohei Ohtani returns from IL stint; Josue De Paula sent down",
-      "summary": "Dodgers star Shohei Ohtani, who was on the injured list since Sept. 8, was activated and in the starting lineup for Wednesday's game against the Padres.",
-      "url": "https://www.espn.com/mlb/story/_/id/50016112/dodgers-shohei-ohtani-returns-il-stint-starts-vs-padres",
+      "key": "50018261",
+      "id": "50018261",
+      "headline": "Alonso hits 41st homer as Orioles beat Blue Jays 4-2 to eliminate Toronto from the playoff race",
+      "summary": "— Pete Alonso hit his 41st home run of the season, Chris Bassitt took a shutout into the sixth inning and the Baltimore Orioles beat the Toronto Blue Jays 4-2 in the first game of a doubleheader Wednesday, eliminating the defending American League...",
+      "url": "http://www.espn.com/mlb/recap?gameId=401923610",
       "sport": "MLB",
-      "published": "2026-09-24T06:22:45.000Z",
-      "firstSeen": "2026-09-24T01:00:53.569Z",
+      "published": "2026-09-24T08:11:16.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50018259",
+      "id": "50018259",
+      "headline": "Brewers aim for 100th win this season, take on the Phillies",
+      "summary": "Milwaukee Brewers (99-59, first in the NL Central) vs. Philadelphia Phillies (87-71, second in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817062",
+      "sport": "MLB",
+      "published": "2026-09-24T08:04:32.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50018258",
+      "id": "50018258",
+      "headline": "Bolte leads Athletics against the Astros after 4-hit game",
+      "summary": "Houston Astros (78-80, first in the AL West) vs. Athletics (63-95, fourth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817070",
+      "sport": "MLB",
+      "published": "2026-09-24T08:04:29.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50018257",
+      "id": "50018257",
+      "headline": "Red Sox and Guardians play to determine series winner",
+      "summary": "Cleveland Guardians (82-76, first in the AL Central) vs. Boston Red Sox (85-73, third in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817061",
+      "sport": "MLB",
+      "published": "2026-09-24T08:03:57.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
       "bestRank": 5
+    },
+    {
+      "key": "50018256",
+      "id": "50018256",
+      "headline": "Cubs look to avoid series sweep against the Marlins",
+      "summary": "Miami Marlins (78-80, third in the NL East) vs. Chicago Cubs (87-71, second in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817066",
+      "sport": "MLB",
+      "published": "2026-09-24T08:03:53.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50018255",
+      "id": "50018255",
+      "headline": "Royals play the White Sox in series rubber match",
+      "summary": "Chicago White Sox (81-77, second in the AL Central) vs. Kansas City Royals (68-90, fifth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817065",
+      "sport": "MLB",
+      "published": "2026-09-24T08:03:50.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50018254",
+      "id": "50018254",
+      "headline": "Dodgers and Padres meet with series tied 1-1",
+      "summary": "San Diego Padres (88-70, second in the NL West) vs. Los Angeles Dodgers (97-61, first in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817071",
+      "sport": "MLB",
+      "published": "2026-09-24T08:03:46.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50018253",
+      "id": "50018253",
+      "headline": "Mariners host the Angels to begin 4-game series",
+      "summary": "Los Angeles Angels (60-98, fifth in the AL West) vs. Seattle Mariners (74-84, third in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817069",
+      "sport": "MLB",
+      "published": "2026-09-24T08:03:43.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50018252",
+      "id": "50018252",
+      "headline": "Pirates and Cardinals play with series tied 1-1",
+      "summary": "St. Louis Cardinals (77-81, fourth in the NL Central) vs. Pittsburgh Pirates (80-78, third in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817063",
+      "sport": "MLB",
+      "published": "2026-09-24T08:03:39.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50018251",
+      "id": "50018251",
+      "headline": "Rangers take 3-game losing streak into matchup with the Mets",
+      "summary": "New York Mets (73-85, fifth in the NL East) vs. Texas Rangers (78-80, second in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817067",
+      "sport": "MLB",
+      "published": "2026-09-24T08:03:36.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50015083",
+      "id": "50015083",
+      "headline": "Is Sullivan the next Olise? Comparisons for USMNT's top young stars",
+      "summary": "With the USMNT welcoming a new class of debutantes during this international break, ESPN dives into the numbers of the United States' next prodigies.",
+      "url": "https://www.espn.com/soccer/story/_/id/50015083/is-cavan-sullivan-next-michael-olise-comparisons-united-states-top-young-stars",
+      "sport": "Soccer",
+      "published": "2026-09-24T07:32:36.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 1
     },
     {
       "key": "50018036",
@@ -52,7 +162,51 @@
       "summary": "— Josh Naylor singled home Randy Arozarena with the winning run in the 10th inning and the Seattle Mariners kept their slim playoff hopes alive by rallying past the Houston Astros 6-5 on Wednesday night.",
       "url": "http://www.espn.com/mlb/recap?gameId=401817057",
       "sport": "MLB",
-      "published": "2026-09-24T06:22:31.000Z",
+      "published": "2026-09-24T06:44:28.000Z",
+      "firstSeen": "2026-09-24T06:44:00.244Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50017959",
+      "id": "50017959",
+      "headline": "Machado powers the Padres past the Dodgers 5-1, snapping Los Angeles' 11-game home winning streak",
+      "summary": "— Manny Machado homered and drove in three runs as the San Diego Padres beat the Los Angeles Dodgers 5-1 on Wednesday night to take sole possession of the top spot in the National League wild-card standings.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817059",
+      "sport": "MLB",
+      "published": "2026-09-24T06:40:28.000Z",
+      "firstSeen": "2026-09-24T06:44:00.244Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50016112",
+      "id": "50016112",
+      "headline": "Shohei Ohtani returns from IL stint; Josue De Paula sent down",
+      "summary": "Dodgers star Shohei Ohtani, who was on the injured list since Sept. 8, was activated and in the starting lineup for Wednesday's game against the Padres.",
+      "url": "https://www.espn.com/mlb/story/_/id/50016112/dodgers-shohei-ohtani-returns-il-stint-starts-vs-padres",
+      "sport": "MLB",
+      "published": "2026-09-24T06:39:45.000Z",
+      "firstSeen": "2026-09-24T01:00:53.569Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50017508",
+      "id": "50017508",
+      "headline": "Marlins prevent Cubs from clinching a playoff spot again with a 3-2 victory",
+      "summary": "— Kyle Stowers homered and the Miami Marlins denied the Chicago Cubs a chance to clinch a playoff berth for the second straight night with a 3-2 victory Wednesday.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817053",
+      "sport": "MLB",
+      "published": "2026-09-24T06:35:35.000Z",
+      "firstSeen": "2026-09-24T03:32:48.060Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50017967",
+      "id": "50017967",
+      "headline": "Longtime Lakers public-address announcer Lawrence Tanter dies",
+      "summary": "Lawrence Tanter had manned the microphone in L.A. since the \"Showtime\" days until his retirement in June following a stroke.",
+      "url": "https://www.espn.com/nba/story/_/id/50017967/long-lakers-public-address-announcer-lawrence-tanter-dies",
+      "sport": "NBA",
+      "published": "2026-09-24T06:23:33.000Z",
       "firstSeen": "2026-09-24T06:44:00.244Z",
       "bestRank": 1
     },
@@ -101,17 +255,6 @@
       "bestRank": 11
     },
     {
-      "key": "50017959",
-      "id": "50017959",
-      "headline": "Machado powers the Padres past the Dodgers 5-1, snapping Los Angeles' 11-game home winning streak",
-      "summary": "— Manny Machado homered and drove in three runs as the San Diego Padres beat the Los Angeles Dodgers 5-1 on Wednesday night to take sole possession of the top spot in the National League wild-card standings.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817059",
-      "sport": "MLB",
-      "published": "2026-09-24T05:34:30.000Z",
-      "firstSeen": "2026-09-24T06:44:00.244Z",
-      "bestRank": 4
-    },
-    {
       "key": "50017912",
       "id": "50017912",
       "headline": "San Diego Padres vs. Los Angeles Dodgers: Game Highlights",
@@ -121,6 +264,17 @@
       "published": "2026-09-24T05:15:37.000Z",
       "firstSeen": "2026-09-24T06:44:00.244Z",
       "bestRank": 6
+    },
+    {
+      "key": "50017797",
+      "id": "50017797",
+      "headline": "Chloe Bibby's rollercoaster year has her ready for WNBA playoffs",
+      "summary": "A rollercoaster season will reach another peak for Chloe Bibby when the WNBA playoffs begin this weekend.",
+      "url": "https://www.espn.com/wnba/story/_/page/TAB50FY26/chloe-bibby-rollercoaster-year-ready-wnba-playoffs",
+      "sport": "WNBA",
+      "published": "2026-09-24T05:07:58.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 1
     },
     {
       "key": "48873964",
@@ -167,6 +321,28 @@
       "bestRank": 8
     },
     {
+      "key": "50017840",
+      "id": "50017840",
+      "headline": "Paige Bueckers scores 25, Jessica Shepard secures another triple-double and Wings beat Storm 103-91",
+      "summary": "— Paige Bueckers scored 25 points, Jessica Shepard had 20 points, 11 rebounds and 12 assists for her WNBA-leading sixth triple-double of the season, and the Dallas Wings beat the Seattle Storm 103-91 on Wednesday night in the regular-season finale for...",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857214",
+      "sport": "WNBA",
+      "published": "2026-09-24T04:44:38.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50017788",
+      "id": "50017788",
+      "headline": "Seattle Storm vs. Dallas Wings - Game Highlights",
+      "summary": "Watch the Game Highlights from Seattle Storm vs. Dallas Wings, 09/23/2026",
+      "url": "https://www.espn.com/video/clip/_/id/50017788/seattle-storm-vs-dallas-wings-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-09-24T04:29:49.000Z",
+      "firstSeen": "2026-09-24T09:31:00.620Z",
+      "bestRank": 3
+    },
+    {
       "key": "50016225",
       "id": "50016225",
       "headline": "Counsell says Cubs at disadvantage after schedule change",
@@ -176,6 +352,28 @@
       "published": "2026-09-24T04:27:48.000Z",
       "firstSeen": "2026-09-24T01:00:53.569Z",
       "bestRank": 3
+    },
+    {
+      "key": "41247761",
+      "id": "41247761",
+      "headline": "Who has the most triple-doubles in WNBA history?",
+      "summary": "A triple-double is an impressive feat. Which WNBA players have achieved it? Check out a historical rundown of stat leaders.",
+      "url": "https://www.espn.com/wnba/story/_/id/41247761/who-most-triple-doubles-wnba-history-key-stats",
+      "sport": "WNBA",
+      "published": "2026-09-24T04:21:00.000Z",
+      "firstSeen": "2026-09-18T09:29:27.057Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50017078",
+      "id": "50017078",
+      "headline": "Dream's Reese OK after being struck in face; Liberty C Jones tweaks ankle",
+      "summary": "Dream star Angel Reese was fine after leaving Wednesday's game against the Liberty after being struck in the face just before halftime. The Liberty's Jonquel Jones also left the game after suffering a second-half ankle injury.",
+      "url": "https://www.espn.com/wnba/story/_/id/50017078/dream-reese-ok-being-struck-face-liberty-c-jones-tweaks-ankle",
+      "sport": "WNBA",
+      "published": "2026-09-24T04:12:51.000Z",
+      "firstSeen": "2026-09-24T03:32:48.060Z",
+      "bestRank": 4
     },
     {
       "key": "50015707",
@@ -233,17 +431,6 @@
       "bestRank": 1
     },
     {
-      "key": "50017508",
-      "id": "50017508",
-      "headline": "Marlins prevent Cubs from clinching a playoff spot again with a 3-2 victory",
-      "summary": "— Kyle Stowers homered and the Miami Marlins denied the Chicago Cubs a chance to clinch a playoff berth for the second straight night with a 3-2 victory Wednesday.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817053",
-      "sport": "MLB",
-      "published": "2026-09-24T03:42:29.000Z",
-      "firstSeen": "2026-09-24T03:32:48.060Z",
-      "bestRank": 1
-    },
-    {
       "key": "50017640",
       "id": "50017640",
       "headline": "Diamondbacks beat the Rockies 5-3 to keep NL wild-card hopes alive",
@@ -286,6 +473,17 @@
       "published": "2026-09-24T03:18:28.000Z",
       "firstSeen": "2026-09-24T03:32:48.060Z",
       "bestRank": 9
+    },
+    {
+      "key": "49640698",
+      "id": "49640698",
+      "headline": "WNBA playoffs 2026: Dream lock in 4-seed; Liberty are No. 8",
+      "summary": "Minnesota, Las Vegas, Golden State, Indiana, Atlanta, New York, Washington and Dallas are headed to the playoffs.",
+      "url": "https://www.espn.com/wnba/story/_/id/49640698/wnba-playoffs-2026-which-teams-clinched-postseason-berth",
+      "sport": "WNBA",
+      "published": "2026-09-24T03:16:54.000Z",
+      "firstSeen": "2026-09-23T12:38:58.714Z",
+      "bestRank": 3
     },
     {
       "key": "50016849",
@@ -374,28 +572,6 @@
       "published": "2026-09-24T02:40:33.000Z",
       "firstSeen": "2026-09-24T03:32:48.060Z",
       "bestRank": 2
-    },
-    {
-      "key": "50017078",
-      "id": "50017078",
-      "headline": "Dream's Reese exits after being struck in face; Liberty C Jones tweaks ankle",
-      "summary": "Dream star Angel Reese left Wednesday night's game against the Liberty after being struck in the face just before halftime. The Liberty's Jonquel Jones also left the game after suffering a second-half ankle injury.",
-      "url": "https://www.espn.com/wnba/story/_/id/50017078/dream-reese-exits-being-struck-face-liberty-c-jones-tweaks-ankle",
-      "sport": "WNBA",
-      "published": "2026-09-24T02:37:15.000Z",
-      "firstSeen": "2026-09-24T03:32:48.060Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49640698",
-      "id": "49640698",
-      "headline": "WNBA playoffs 2026: Dream lock in 4-seed; Liberty are No. 8",
-      "summary": "Minnesota, Las Vegas, Golden State, Indiana, Atlanta, New York, Washington and Dallas are headed to the playoffs.",
-      "url": "https://www.espn.com/wnba/story/_/id/49640698/wnba-playoffs-2026-which-teams-clinched-postseason-berth",
-      "sport": "WNBA",
-      "published": "2026-09-24T02:35:08.000Z",
-      "firstSeen": "2026-09-23T12:38:58.714Z",
-      "bestRank": 3
     },
     {
       "key": "50017273",
@@ -5038,17 +5214,6 @@
       "published": "2026-09-22T04:29:29.000Z",
       "firstSeen": "2026-09-22T06:43:34.361Z",
       "bestRank": 2
-    },
-    {
-      "key": "41247761",
-      "id": "41247761",
-      "headline": "Who has the most triple-doubles in WNBA history?",
-      "summary": "A triple-double is an impressive feat. Which WNBA players have achieved it? Check out a historical rundown of stat leaders.",
-      "url": "https://www.espn.com/wnba/story/_/id/41247761/who-most-triple-doubles-wnba-history-key-stats",
-      "sport": "WNBA",
-      "published": "2026-09-22T04:26:33.000Z",
-      "firstSeen": "2026-09-18T09:29:27.057Z",
-      "bestRank": 3
     },
     {
       "key": "49993163",
@@ -48213,281 +48378,6 @@
       "published": "2026-09-03T09:52:31.000Z",
       "firstSeen": "2026-09-03T12:39:09.176Z",
       "bestRank": 3
-    },
-    {
-      "key": "49811742",
-      "id": "49811742",
-      "headline": "No. 18 Penn State begins the Matt Campbell era when it hosts Marshall in the season opener",
-      "summary": "Marshall at No. 18 Penn State, Saturday, 3:30 p.m. ET\r\n              How to watch: FS1",
-      "url": "http://www.espn.com/ncf/preview?gameId=401858434",
-      "sport": "College football",
-      "published": "2026-09-03T09:11:53.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49811741",
-      "id": "49811741",
-      "headline": "Michigan State and Toledo meet in opener, marking debut of coaches Pat Fitzgerald and Mike Jacobs",
-      "summary": "Toledo at Michigan State, Friday, 8 p.m. ET\r\n              How to watch: FS1.",
-      "url": "http://www.espn.com/ncf/preview?gameId=401858429",
-      "sport": "College football",
-      "published": "2026-09-03T09:11:49.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49811739",
-      "id": "49811739",
-      "headline": "DJ Lagway to make Baylor debut vs Auburn in Week 1 neutral-site showdown in Atlanta",
-      "summary": "Baylor vs. Auburn at Atlanta, Saturday, 3:30 p.m. ET\r\n              How to watch: ABC",
-      "url": "http://www.espn.com/ncf/preview?gameId=401856636",
-      "sport": "College football",
-      "published": "2026-09-03T09:11:40.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49811738",
-      "id": "49811738",
-      "headline": "No. 12 Texas Tech opens against Abilene Christian after winning 1st Big 12 title last season",
-      "summary": "Abilene Christian (0-1) at No. 12 Texas Tech, Saturday, 7 p.m. ET\r\n              How to watch: FS1",
-      "url": "http://www.espn.com/ncf/preview?gameId=401856770",
-      "sport": "College football",
-      "published": "2026-09-03T09:11:36.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49811737",
-      "id": "49811737",
-      "headline": "Arizona State kicks off coach Kenny Dillingham's fourth season at home against Morgan State",
-      "summary": "Morgan State at Arizona State, Saturday, 10 p.m. ET\r\n              How to watch: ESPN+",
-      "url": "http://www.espn.com/ncf/preview?gameId=401856774",
-      "sport": "College football",
-      "published": "2026-09-03T09:11:33.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49811736",
-      "id": "49811736",
-      "headline": "Florida opens the Jon Sumrall era in the Swamp against Florida Atlantic",
-      "summary": "Florida Atlantic at Florida, Saturday, 7:45 p.m. ET\r\n              How to watch: SEC Network",
-      "url": "http://www.espn.com/ncf/preview?gameId=401856637",
-      "sport": "College football",
-      "published": "2026-09-03T09:11:29.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49811735",
-      "id": "49811735",
-      "headline": "No. 11 LSU hosts Clemson on Saturday night in coach Lane Kiffin's LSU debut",
-      "summary": "Clemson at No. 11 LSU, Saturday, 7:45 p.m. ET\r\n              How to watch: ABC",
-      "url": "http://www.espn.com/ncf/preview?gameId=401856660",
-      "sport": "College football",
-      "published": "2026-09-03T09:10:58.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49811734",
-      "id": "49811734",
-      "headline": "Arizona kicks off third season under Brent Brennan against Northern Arizona",
-      "summary": "Northern Arizona at Arizona, Saturday, 9:30 p.m. ET\r\n              How to watch: ESPN+",
-      "url": "http://www.espn.com/ncf/preview?gameId=401856773",
-      "sport": "College football",
-      "published": "2026-09-03T09:10:53.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49811732",
-      "id": "49811732",
-      "headline": "Pitt hosts Miami (Ohio) in the season opener for both schools",
-      "summary": "Miami (Ohio) at Pittsburgh, Saturday, 12:30 p.m. ET\r\n              How to watch: The CW",
-      "url": "http://www.espn.com/ncf/preview?gameId=401858207",
-      "sport": "College football",
-      "published": "2026-09-03T09:10:44.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49811731",
-      "id": "49811731",
-      "headline": "Mississippi State opens its 2026 season at home against Louisiana-Monroe",
-      "summary": "Louisiana-Monroe at Mississippi State, Saturday, 7:30 p.m. ET\r\n              How to watch: ESPNU",
-      "url": "http://www.espn.com/ncf/preview?gameId=401856662",
-      "sport": "College football",
-      "published": "2026-09-03T09:10:40.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49811730",
-      "id": "49811730",
-      "headline": "Second-ranked Ducks kick off the season at home against Boise State",
-      "summary": "Boise State at No. 2 Oregon, Saturday, 3:30 p.m. ET\r\n              How to watch: CBS",
-      "url": "http://www.espn.com/ncf/preview?gameId=401858433",
-      "sport": "College football",
-      "published": "2026-09-03T09:10:36.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49811729",
-      "id": "49811729",
-      "headline": "No. 16 Michigan hosts Western Michigan on Saturday night in coach Kyle Whittingham's debut with team",
-      "summary": "Western Michigan at No. 16 Michigan, Saturday, 7:30 p.m. ET\r\n              How to watch: NBC",
-      "url": "http://www.espn.com/ncf/preview?gameId=401858428",
-      "sport": "College football",
-      "published": "2026-09-03T09:10:33.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49811728",
-      "id": "49811728",
-      "headline": "Washington State visits Washington in a season-opening Apple Cup",
-      "summary": "Washington State at Washington, Sunday, 4 p.m. ET\r\n              \r\n              How to watch: NBC",
-      "url": "http://www.espn.com/ncf/preview?gameId=401858437",
-      "sport": "College football",
-      "published": "2026-09-03T09:10:29.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 14
-    },
-    {
-      "key": "49810859",
-      "id": "49810859",
-      "headline": "Sancho, Pogba, Wijnaldum among top free agents in 2026",
-      "summary": "These players have contracts that expired this summer, and there are some big names involved.",
-      "url": "https://www.espn.com/soccer/story/_/id/49810859/sancho-pogba-wijnaldum-top-free-agents-2026",
-      "sport": "Soccer",
-      "published": "2026-09-03T08:28:48.000Z",
-      "firstSeen": "2026-09-03T12:39:09.176Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49811301",
-      "id": "49811301",
-      "headline": "Rangers begin 4-game series against the Rays",
-      "summary": "Tampa Bay Rays (83-56, first in the AL East) vs. Texas Rangers (69-71, second in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816794",
-      "sport": "MLB",
-      "published": "2026-09-03T08:02:53.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49811300",
-      "id": "49811300",
-      "headline": "Astros face the White Sox leading series 2-1",
-      "summary": "Chicago White Sox (73-66, first in the AL Central) vs. Houston Astros (71-69, first in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816791",
-      "sport": "MLB",
-      "published": "2026-09-03T08:02:50.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49811299",
-      "id": "49811299",
-      "headline": "Orioles begin 4-game series with the Red Sox",
-      "summary": "Boston Red Sox (75-65, third in the AL East) vs. Baltimore Orioles (69-71, fifth in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816788",
-      "sport": "MLB",
-      "published": "2026-09-03T08:02:46.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49811298",
-      "id": "49811298",
-      "headline": "Guardians and Blue Jays play with series tied 1-1",
-      "summary": "Toronto Blue Jays (69-71, fourth in the AL East) vs. Cleveland Guardians (70-69, second in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816790",
-      "sport": "MLB",
-      "published": "2026-09-03T08:02:43.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49811297",
-      "id": "49811297",
-      "headline": "Chourio leads Brewers against the Cubs after 4-hit game",
-      "summary": "Milwaukee Brewers (87-53, first in the NL Central) vs. Chicago Cubs (78-62, second in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816793",
-      "sport": "MLB",
-      "published": "2026-09-03T08:02:40.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49811296",
-      "id": "49811296",
-      "headline": "Pirates and Giants meet with series tied 1-1",
-      "summary": "San Francisco Giants (58-82, fourth in the NL West) vs. Pittsburgh Pirates (68-72, fourth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816789",
-      "sport": "MLB",
-      "published": "2026-09-03T08:02:36.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49811295",
-      "id": "49811295",
-      "headline": "Cardinals try to sweep series against the Dodgers",
-      "summary": "St. Louis Cardinals (70-70, third in the NL Central) vs. Los Angeles Dodgers (82-57, first in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816796",
-      "sport": "MLB",
-      "published": "2026-09-03T08:02:33.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49811294",
-      "id": "49811294",
-      "headline": "Mariners host the Athletics to open 4-game series",
-      "summary": "Athletics (54-86, fourth in the AL West) vs. Seattle Mariners (66-74, third in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816795",
-      "sport": "MLB",
-      "published": "2026-09-03T08:02:29.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49800369",
-      "id": "49800369",
-      "headline": "Inside Manchester United's 'building blocks' transfer strategy",
-      "summary": "Why did Manchester United miss out on signing a left back in the transfer window? Rob Dawson takes a look at the approach Omar Berrada and Jason Wilcox are taking to signings.",
-      "url": "https://www.espn.com/soccer/story/_/id/49800369/inside-manchester-uniteds-building-blocks-transfer-strategy",
-      "sport": "Soccer",
-      "published": "2026-09-03T07:52:57.000Z",
-      "firstSeen": "2026-09-03T12:39:09.176Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49802586",
-      "id": "49802586",
-      "headline": "Liverpool needed to add depth in the transfer window. They didn't get it",
-      "summary": "In terms of pure numbers, Liverpool's squad is actually weaker than it was last season, and the failure to sign a central midfielder and right back could hurt them.",
-      "url": "https://www.espn.com/soccer/story/_/id/49802586/liverpool-needed-depth-transfer-window-get-it",
-      "sport": "Soccer",
-      "published": "2026-09-03T07:32:06.000Z",
-      "firstSeen": "2026-09-03T09:30:20.303Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49810864",
-      "id": "49810864",
-      "headline": "Why does the Italian GP trophy look like a pile of washing up?",
-      "summary": "The winner of this weekend's Italian Grand Prix will receive a trophy that looks like a pile of washing up after Pirelli commissioned two artists to come up with the design.",
-      "url": "https://www.espn.com/racing/story/_/id/49810864/italian-grand-prix-2026-f1-trophy-washing-dishes",
-      "sport": "F1",
-      "published": "2026-09-03T06:52:01.000Z",
-      "firstSeen": "2026-09-03T15:29:45.827Z",
-      "bestRank": 2
     }
   ]
 }
