@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-09-24T01:11:20.195Z",
+  "generatedAt": "2026-09-24T03:43:27.026Z",
   "retentionDays": 21,
   "windowStart": "2026-09-03",
   "windowEnd": "2026-09-24",
   "snapshotIntervalHours": 3,
-  "count": 2083,
+  "count": 2086,
   "items": [
     {
       "headline": "OpenAI agent 'infiltrated' Australian government website, PM says",
@@ -13,7 +13,9 @@
       "bucket": "World",
       "summary": "Albanese said he expressed \"concern\" to OpenAI founder Sam Altman, after authorities were informed three months after the breach in June.",
       "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "In Amish country, nurses go door to door to stop deadly spread of measles",
@@ -21,7 +23,9 @@
       "bucket": "World",
       "summary": "With four measles-related deaths in Pennsylvania, health officials are hoping to get people on board with vaccines in private.",
       "url": "https://www.bbc.co.uk/news/articles/ck3wjyjgj37po?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "They were labelled 'pervert glasses'. Will a camera-free version transform their image?",
@@ -29,7 +33,9 @@
       "bucket": "World",
       "summary": "Meta has unveiled audio-only smart glasses, with some questioning whether it is a response to the backlash over privacy.",
       "url": "https://www.bbc.co.uk/news/articles/cwp80l0my1x2o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Trump threatens to 'annihilate' Iran in UN speech as officials from both countries meet on sidelines",
@@ -92,6 +98,16 @@
       "bestRank": 1
     },
     {
+      "headline": "White House rolling out red carpet for historic Xi Jinping visit",
+      "date": "2026-09-23",
+      "bucket": "World",
+      "summary": "Trump and Xi are expected to discuss a range of issues from trade to AI during the latter's multi-day visit to Washington.",
+      "url": "https://www.bbc.co.uk/news/articles/c6n9w410v3vzo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-23T18:45:16.848Z",
+      "top": true,
+      "bestRank": 1
+    },
+    {
       "headline": "Trump says he can do business with Burnham but criticises 'terrible' Chagos deal",
       "date": "2026-09-23",
       "bucket": "World",
@@ -120,16 +136,6 @@
       "top": true,
       "bestRank": 2,
       "firstSeen": "2026-09-23T21:37:38.155Z"
-    },
-    {
-      "headline": "White House rolling out red carpet for historic Xi Jinping visit",
-      "date": "2026-09-23",
-      "bucket": "World",
-      "summary": "Trump and Xi are expected to discuss a range of issues from trade to AI during the latter's multi-day visit to Washington.",
-      "url": "https://www.bbc.co.uk/news/articles/c6n9w410v3vzo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-23T18:45:16.848Z",
-      "top": true,
-      "bestRank": 2
     },
     {
       "headline": "El Niño goes wild: Pacific Ocean under siege from tropical cyclones",
@@ -272,6 +278,16 @@
       "firstSeen": "2026-09-23T12:49:46.659Z"
     },
     {
+      "headline": "Russia launches all-day bombing attack on Kyiv",
+      "date": "2026-09-23",
+      "bucket": "Conflict",
+      "summary": "Reported by Politico.",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaUZfOVJXTFlGQlIyeE1rTlVyREdfLUMtTGpBNXN5VjQxbms3Q2hiVHNxbHR2TFotLWlBckhTN3V2anNsQ2ZyeG4xVmFpQlRoM3VKZy1DZk4wVmhnbjFmdVVTc0ZvV1RZNTZPRHNSUUxOYktSWk9DbF9kY3VuQ19saXVDWTV1NFJ2VVNWUmhSVlA?oc=5",
+      "top": true,
+      "bestRank": 6,
+      "firstSeen": "2026-09-24T01:11:20.195Z"
+    },
+    {
       "headline": "Eleven killed in mass shooting at house in South Africa",
       "date": "2026-09-23",
       "bucket": "World",
@@ -282,14 +298,14 @@
       "bestRank": 7
     },
     {
-      "headline": "Russia launches all-day bombing attack on Kyiv",
+      "headline": "Tigrayan Forces Mobilize Against the Central Government in Ethiopia",
       "date": "2026-09-23",
-      "bucket": "Conflict",
-      "summary": "Reported by Politico.",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaUZfOVJXTFlGQlIyeE1rTlVyREdfLUMtTGpBNXN5VjQxbms3Q2hiVHNxbHR2TFotLWlBckhTN3V2anNsQ2ZyeG4xVmFpQlRoM3VKZy1DZk4wVmhnbjFmdVVTc0ZvV1RZNTZPRHNSUUxOYktSWk9DbF9kY3VuQ19saXVDWTV1NFJ2VVNWUmhSVlA?oc=5",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQQ0JZV1FONC1ZRHJDQWV0SVFWT1RlTmczam1QeHlPYkpGMmpIUmppOXJ2ZFRhLU00OVhibFlrMDJNMmxWVjQxeEdCVWtWb3RzUHZJb1FGTWxGejRWeWN4V0dBUmo2ekNJTWVTX1ZJdGpVQm84QkktQ3R3SVZxdWZvbjNn?oc=5",
       "top": true,
       "bestRank": 7,
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T03:43:27.026Z"
     },
     {
       "headline": "Lost in translation: Israel, Huckabee blast Macron over Hamas comments as France clarifies wording",
@@ -382,6 +398,16 @@
       "bestRank": 14
     },
     {
+      "headline": "Wheat buyers brace for higher costs as Russia-Ukraine war drags on",
+      "date": "2026-09-23",
+      "bucket": "Conflict",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaUswVEozejNqc18tLUlqcnBVXzNDVDNkZHQyN25BdDhqYTVBN2NTNnVoODNxLTI0bXg3d00wWXY1NW1yUVpuM1FDLWFsZVYzVFVwbkNqbzdBd0JHaDk1UGg5NXVFQ2g2MFZwalBpYW9GRURiMVB4cnd5RWd3cXpmcktIalFsNFBxTU1YNTRBakx1NXRBaEJJWlo0Q280X1FIcFR3cWxfTTVsV2ZIUlBmX25na0E2U0JhdTF6M2dQMA?oc=5",
+      "top": true,
+      "bestRank": 14,
+      "firstSeen": "2026-09-24T01:11:20.195Z"
+    },
+    {
       "headline": "In UN farewell, Macron denounces Trump's Gaza diplomacy as spectacle of shame",
       "date": "2026-09-23",
       "bucket": "World",
@@ -462,14 +488,14 @@
       "firstSeen": "2026-09-23T15:40:24.272Z"
     },
     {
-      "headline": "Wheat buyers brace for higher costs as Russia-Ukraine war drags on",
+      "headline": "Azerbaijan pardons French national Martin Ryan jailed on spy charges",
       "date": "2026-09-23",
-      "bucket": "Conflict",
-      "summary": "Reported by Reuters.",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaUswVEozejNqc18tLUlqcnBVXzNDVDNkZHQyN25BdDhqYTVBN2NTNnVoODNxLTI0bXg3d00wWXY1NW1yUVpuM1FDLWFsZVYzVFVwbkNqbzdBd0JHaDk1UGg5NXVFQ2g2MFZwalBpYW9GRURiMVB4cnd5RWd3cXpmcktIalFsNFBxTU1YNTRBakx1NXRBaEJJWlo0Q280X1FIcFR3cWxfTTVsV2ZIUlBmX25na0E2U0JhdTF6M2dQMA?oc=5",
+      "bucket": "World",
+      "summary": "Reported by bbc.com.",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBLc21BQndOZS1qV0dfZmlWem03LS0zNFFDMDdLM1hMYkpXZzFJLTdTOHNqUkRWOUtRVVl6ZmpzaHdWVkxDZ0ZUSjhPcy1La010RHdFYVI0Unk5WkU?oc=5",
       "top": true,
       "bestRank": 19,
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-23T18:45:16.848Z"
     },
     {
       "headline": "Netanyahu: We're ‘praying for a miracle’ for Amb. Leiter's son, seriously hurt in West Bank attack",
@@ -502,16 +528,6 @@
       "firstSeen": "2026-09-04T03:41:31.577Z"
     },
     {
-      "headline": "Azerbaijan pardons French national Martin Ryan jailed on spy charges",
-      "date": "2026-09-23",
-      "bucket": "World",
-      "summary": "Reported by bbc.com.",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBLc21BQndOZS1qV0dfZmlWem03LS0zNFFDMDdLM1hMYkpXZzFJLTdTOHNqUkRWOUtRVVl6ZmpzaHdWVkxDZ0ZUSjhPcy1La010RHdFYVI0Unk5WkU?oc=5",
-      "top": true,
-      "bestRank": 21,
-      "firstSeen": "2026-09-23T18:45:16.848Z"
-    },
-    {
       "headline": "Pentagon Investigating How F-35 Fighter Jet Parts Bound for US Were Diverted to Hong Kong",
       "date": "2026-09-23",
       "bucket": "World",
@@ -520,6 +536,16 @@
       "top": true,
       "bestRank": 22,
       "firstSeen": "2026-09-24T01:11:20.195Z"
+    },
+    {
+      "headline": "Ancient Wall Found in Paris Provides Clues to City’s Origins",
+      "date": "2026-09-23",
+      "bucket": "World",
+      "summary": "Reported by cbsnews.com.",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5wNGxsZnppVkZGYXlnZHo4Zmd3dHkyeG0xMGw1QjJFT1ctOTlicFNFcEptRzBfa3pTLXVZbFI1ZGtPUnl3OV83eGZLYU0xaGJLcWF5NGxtUEs5YldyN1I5MGd4VGhpaFlqb3EzNXFxV3BBd3VYMnBhQg?oc=5",
+      "top": true,
+      "bestRank": 22,
+      "firstSeen": "2026-09-23T21:37:38.155Z"
     },
     {
       "headline": "France rebukes world over Gaza as Canada, UK back Palestinian state at UNGA",
@@ -542,14 +568,14 @@
       "firstSeen": "2026-09-23T15:40:24.272Z"
     },
     {
-      "headline": "Ancient Wall Found in Paris Provides Clues to City’s Origins",
+      "headline": "What video footage tells us about RAF training jet crash",
       "date": "2026-09-23",
       "bucket": "World",
-      "summary": "Reported by cbsnews.com.",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5wNGxsZnppVkZGYXlnZHo4Zmd3dHkyeG0xMGw1QjJFT1ctOTlicFNFcEptRzBfa3pTLXVZbFI1ZGtPUnl3OV83eGZLYU0xaGJLcWF5NGxtUEs5YldyN1I5MGd4VGhpaFlqb3EzNXFxV3BBd3VYMnBhQg?oc=5",
+      "summary": "Reported by BBC.",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1FMVMzQS1qcUFxNkZJTHdoRFJFenNFTlY2YV95aGxiRzQ0UDMtZ0hvZmRMMkZvLVBsUG1ua1FESVF5NGZLaUt1RHhqTUx4dWRabEM4TV9STENPSWM?oc=5",
       "top": true,
       "bestRank": 25,
-      "firstSeen": "2026-09-23T21:37:38.155Z"
+      "firstSeen": "2026-09-24T03:43:27.026Z"
     },
     {
       "headline": "Russia’s Arctic Port Murmansk to Use Fertilizer Equipment to Start Shipping Grain",
@@ -650,6 +676,16 @@
       "firstSeen": "2026-09-23T12:49:46.659Z",
       "top": true,
       "bestRank": 38
+    },
+    {
+      "headline": "Von der Leyen says Hungary 'strengthened rule of law', unlocks €4.2bn in EU funding",
+      "date": "2026-09-23",
+      "bucket": "World",
+      "summary": "Reported by Euronews.com.",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZEx6OGpwejVSUmtMeUpvZkhtSUNKVVl1V3VVQ0x4bjJiZEZMN1RzdExaWFdxX3QwN1hZdjF2SzBoZ2FxSkRSc2ZJZHBiLVN2c3NobGh1cUsyVThWT2ItNTRkbGozcWxYc2dRUWl0SmRDbWU0ZFQ1eU9ZTGNIYzVFMjdsOC16X1dPY2ZBTDRnRHVoOFdYSVdoTnlOUWxOVDhkN3FyOVl1dkhqek53OWhJVUhZdk0?oc=5",
+      "top": true,
+      "bestRank": 39,
+      "firstSeen": "2026-09-24T03:43:27.026Z"
     },
     {
       "headline": "Tigray forces seize main airport in northern Ethiopia from police, residents tell the BBC",
@@ -789,7 +825,9 @@
       "bucket": "World",
       "summary": "The US and China are vying for AI supremacy while seeking to keep it under human control.",
       "url": "https://www.bbc.co.uk/news/articles/c6gqdgg8w59xo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Residents eating garden weeds in Russian-occupied city cut off from food and water",
@@ -797,7 +835,9 @@
       "bucket": "World",
       "summary": "The BBC has spoken to residents in the Russian-occupied Ukrainian town of Oleshky who say they are being \"constantly shelled\".",
       "url": "https://www.bbc.co.uk/news/articles/c60qxywdx4vvo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "'Make women feel seen': Why the Dutch have a new word for labia",
@@ -805,7 +845,9 @@
       "bucket": "World",
       "summary": "Campaigners hope the new words will lead to less body shaming and more sex positivity.",
       "url": "https://www.bbc.co.uk/news/articles/cn4klprmr0go?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Indians are discovering the thrill of shopping without paying",
@@ -813,7 +855,9 @@
       "bucket": "World",
       "summary": "Dopamine sites mimic shopping’s thrill without the spending, turning the ritual of consumption into a digital game.",
       "url": "https://www.bbc.co.uk/news/articles/cwn741v5rdpxo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "A red carpet and military flyover - How Trump welcomed Xi",
@@ -821,7 +865,9 @@
       "bucket": "World",
       "summary": "The two B-1 bombers that flew overhead are a key part of the US's combat arsenal, and produce a notoriously loud roar when they pass by.",
       "url": "https://www.bbc.co.uk/news/videos/c6804ne8knklo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Watch: The arms race in space and how the UK is defending itself",
@@ -829,7 +875,9 @@
       "bucket": "World",
       "summary": "The UK has jammed satellites to defend itself from hostile threats, the BBC has been told.",
       "url": "https://www.bbc.co.uk/news/videos/c34gdygn5lqpo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Here's what happened on day 2 of the UN General Assembly",
@@ -837,7 +885,9 @@
       "bucket": "World",
       "summary": "Iran and Ukraine take center stage at the UN as diplomats push to contain two wars threatening global stability.",
       "url": "https://www.npr.org/2026/09/23/nx-s1-5978852/heres-what-happened-on-day-2-of-the-un-general-assembly",
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Does the UN have a future?",
@@ -845,7 +895,9 @@
       "bucket": "World",
       "summary": "NPR's Mary Louise Kelly speaks with former U.S. Ambassador to the United Nations Susan Rice about the relevance of the United Nations in 2026.",
       "url": "https://www.npr.org/2026/09/23/nx-s1-5976846/does-the-un-have-a-future",
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Trump and Xi meet at moment of global consequence",
@@ -853,7 +905,9 @@
       "bucket": "World",
       "summary": "It is the second time the leaders are meeting this year after the Beijing summit in May.",
       "url": "https://www.npr.org/2026/09/23/nx-s1-5978733/trump-xi-meeting-china",
-      "firstSeen": "2026-09-24T01:11:20.195Z"
+      "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Trump's Board of Peace unveils $2.45bn plan to begin Gaza's reconstruction",
@@ -1546,6 +1600,16 @@
       "firstSeen": "2026-09-22T21:37:44.891Z"
     },
     {
+      "headline": "Canadian Catholics stand with Jewish brethren following synagogue attack in Ontario",
+      "date": "2026-09-22",
+      "bucket": "World",
+      "summary": "Reported by New York Post.",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOd2ttN3ZFcHRyQjl3QmxPVEtZSmhId1ZnQi1EaGhOOXQwVWdJanA5QWp5NERLVDJHS3Z1bE9paF9iTm1meFN5bDNSOEJPNDhZUnlHNjZVclZxaURMUjd6UkJTRGxTeF9UcjhCckRMNjVGMlFUd1dLaVNZOVItVGRYc09DNVF1RTRxMGFzLVNzelhZNWNPSjVCdkxNZHM1a0dTdEQ2NjB6bkJZRjdfQ09UV2N5YklDU0tnT3ZxSGh2QVo4Zy1qSXlmbjF6anN2QmVLT1RJeFpUckdDWk5GWjBhZVM2MXNNQQ?oc=5",
+      "top": true,
+      "bestRank": 13,
+      "firstSeen": "2026-09-24T01:11:20.195Z"
+    },
+    {
       "headline": "Australia news as it happened: Joyce says One Nation has discussed supply deal with Coalition; US TV networks refuse to cover Trump events after ban; Terry Denton dies",
       "date": "2026-09-22",
       "bucket": "World",
@@ -1566,6 +1630,16 @@
       "bestRank": 14
     },
     {
+      "headline": "6-year-old Chinese girl reportedly sets Rubik's Cube world record, completing puzzle in just over 4 seconds",
+      "date": "2026-09-22",
+      "bucket": "World",
+      "summary": "Reported by cbsnews.com.",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMG9KR0YyN01xMUstM2hMbGxVYzR4N190aU1mSGNRcWRyTUNiU2ZmOGxnd1doUGhCdkZKXzh4TThrMVFHMzRqLS1DcEZiWlpNM2lkckhkQlpKdUpOazhEWnN5VlhIM0xuT2V4ODdfaXBpMXNINVkxUnhvMmxKMGtqdVJqRHc?oc=5",
+      "top": true,
+      "bestRank": 15,
+      "firstSeen": "2026-09-22T19:22:55.252Z"
+    },
+    {
       "headline": "Houthis pound Yemen’s Mokha port for 4th day, officials say Iran behind escalation",
       "date": "2026-09-22",
       "bucket": "World",
@@ -1584,26 +1658,6 @@
       "top": true,
       "bestRank": 17,
       "firstSeen": "2026-09-22T01:10:54.232Z"
-    },
-    {
-      "headline": "Canadian Catholics stand with Jewish brethren following synagogue attack in Ontario",
-      "date": "2026-09-22",
-      "bucket": "World",
-      "summary": "Reported by New York Post.",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOd2ttN3ZFcHRyQjl3QmxPVEtZSmhId1ZnQi1EaGhOOXQwVWdJanA5QWp5NERLVDJHS3Z1bE9paF9iTm1meFN5bDNSOEJPNDhZUnlHNjZVclZxaURMUjd6UkJTRGxTeF9UcjhCckRMNjVGMlFUd1dLaVNZOVItVGRYc09DNVF1RTRxMGFzLVNzelhZNWNPSjVCdkxNZHM1a0dTdEQ2NjB6bkJZRjdfQ09UV2N5YklDU0tnT3ZxSGh2QVo4Zy1qSXlmbjF6anN2QmVLT1RJeFpUckdDWk5GWjBhZVM2MXNNQQ?oc=5",
-      "top": true,
-      "bestRank": 17,
-      "firstSeen": "2026-09-24T01:11:20.195Z"
-    },
-    {
-      "headline": "6-year-old Chinese girl reportedly sets Rubik's Cube world record, completing puzzle in just over 4 seconds",
-      "date": "2026-09-22",
-      "bucket": "World",
-      "summary": "Reported by cbsnews.com.",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMG9KR0YyN01xMUstM2hMbGxVYzR4N190aU1mSGNRcWRyTUNiU2ZmOGxnd1doUGhCdkZKXzh4TThrMVFHMzRqLS1DcEZiWlpNM2lkckhkQlpKdUpOazhEWnN5VlhIM0xuT2V4ODdfaXBpMXNINVkxUnhvMmxKMGtqdVJqRHc?oc=5",
-      "top": true,
-      "bestRank": 18,
-      "firstSeen": "2026-09-22T19:22:55.252Z"
     },
     {
       "headline": "Why young Berliners vote overwhelmingly for the socialist Left Party",
@@ -1654,6 +1708,16 @@
       "top": true,
       "bestRank": 23,
       "firstSeen": "2026-09-23T01:10:13.414Z"
+    },
+    {
+      "headline": "PM Carney confirms India’s Modi will visit Canada; Trump says U.S. will keep buying Canadian potash",
+      "date": "2026-09-22",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTExGWHJMSXNkWEFjRm1BU2xnSk91cW5GZ3FRbndRWXpTdS1LQVBxVVJFa0tHYlZwY1pUTG9LZDFhM0dLNUVUeEc3TEQxdU5Nc1B3U3ZyLVpjTEs4d2g3aDdmdUdXSHRkam9wS2lOcm04aHRwVU9pN3pwYmRWdzc1Y1pZLWxjdnMyTVE2b3YxZU5JZw?oc=5",
+      "top": true,
+      "bestRank": 23,
+      "firstSeen": "2026-09-23T18:45:16.848Z"
     },
     {
       "headline": "North Korean defector issues stark warning about America ahead of Christian university's anti-communism event",
@@ -1784,16 +1848,6 @@
       "top": true,
       "bestRank": 29,
       "firstSeen": "2026-09-23T15:40:24.272Z"
-    },
-    {
-      "headline": "PM Carney confirms India’s Modi will visit Canada; Trump says U.S. will keep buying Canadian potash",
-      "date": "2026-09-22",
-      "bucket": "World",
-      "summary": "Reported by AP News.",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTExGWHJMSXNkWEFjRm1BU2xnSk91cW5GZ3FRbndRWXpTdS1LQVBxVVJFa0tHYlZwY1pUTG9LZDFhM0dLNUVUeEc3TEQxdU5Nc1B3U3ZyLVpjTEs4d2g3aDdmdUdXSHRkam9wS2lOcm04aHRwVU9pN3pwYmRWdzc1Y1pZLWxjdnMyTVE2b3YxZU5JZw?oc=5",
-      "top": true,
-      "bestRank": 29,
-      "firstSeen": "2026-09-23T18:45:16.848Z"
     },
     {
       "headline": "Modi Plans Canada Trip for Trade Deal, Speeds Up Mexico Talks",
@@ -5364,6 +5418,16 @@
       "firstSeen": "2026-09-17T21:36:54.903Z"
     },
     {
+      "headline": "North Korean anthem played for South Korea at Asian Games",
+      "date": "2026-09-18",
+      "bucket": "World",
+      "summary": "Organisers have apologised for playing the North Korean national anthem for the South Korean men's hockey team at the Asian Games in Japan.",
+      "url": "https://www.bbc.co.uk/sport/hockey/articles/cmx2zg85gq03o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-18T21:36:27.952Z",
+      "top": true,
+      "bestRank": 3
+    },
+    {
       "headline": "New cat species discovered in Bolivia for first time in over 100 years",
       "date": "2026-09-18",
       "bucket": "World",
@@ -5939,16 +6003,6 @@
       "bucket": "Conflict",
       "summary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
       "url": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-18T21:36:27.952Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "North Korean anthem played for South Korea at Asian Games",
-      "date": "2026-09-18",
-      "bucket": "World",
-      "summary": "Organisers have apologised for playing the North Korean national anthem for the South Korean men's hockey team at the Asian Games in Japan.",
-      "url": "https://www.bbc.co.uk/sport/hockey/articles/cmx2zg85gq03o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-09-18T21:36:27.952Z",
       "top": false,
       "bestRank": null
