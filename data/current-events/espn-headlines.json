@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-25T06:44:53.175Z",
+  "generatedAt": "2026-09-25T09:31:24.474Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-04T06:44:53.175Z",
-  "windowEnd": "2026-09-25T06:44:53.175Z",
+  "windowStart": "2026-09-04T09:31:24.474Z",
+  "windowEnd": "2026-09-25T09:31:24.474Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,151 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4374,
+  "count": 4368,
   "items": [
+    {
+      "key": "50025741",
+      "id": "50025741",
+      "headline": "Can Patrick Vieira rescue Senegal from their post-AFCON final hellscape?",
+      "summary": "Senegal, surely, must be asking what on earth they have done to receive the misfortune and wretched experiences they've endured since January, when they won, and then lost, the AFCON final.",
+      "url": "https://www.espn.com/espn/story/_/id/50025741/can-patrick-vieira-rescue-senegal-their-post-afcon-final-hellscape",
+      "sport": "Soccer",
+      "published": "2026-09-25T09:04:04.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50025765",
+      "id": "50025765",
+      "headline": "Cubs clinch 2nd straight playoffs trip by beating Marlins 2-1 as Crow-Armstrong joins 40-40 club",
+      "summary": "— Pete Crow-Armstrong joined the 40-40 club by stealing his 40th base to go along with his major league-leading 45 home runs, and the Chicago Cubs...",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817066",
+      "sport": "MLB",
+      "published": "2026-09-25T08:30:11.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50025742",
+      "id": "50025742",
+      "headline": "White Sox clinch a playoff spot with a 9-1 rout of the Royals after back-to-back 100-loss seasons",
+      "summary": "— The Chicago White Sox became the first team to follow consecutive 100-loss seasons by reaching the playoffs on Thursday, throttling the Kansas City Royals 9-1 to ensure no worse than one of the three AL wild-card spots for the postseason.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401817065",
+      "sport": "MLB",
+      "published": "2026-09-25T08:27:44.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50025715",
+      "id": "50025715",
+      "headline": "Dodgers visit the Giants to start 3-game series",
+      "summary": "Los Angeles Dodgers (97-62, first in the NL West) vs. San Francisco Giants (65-94, fourth in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817086",
+      "sport": "MLB",
+      "published": "2026-09-25T08:02:57.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50025714",
+      "id": "50025714",
+      "headline": "Rangers look to break 3-game skid, take on the Twins",
+      "summary": "Texas Rangers (79-80, second in the AL West) vs. Minnesota Twins (75-84, third in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817082",
+      "sport": "MLB",
+      "published": "2026-09-25T08:02:54.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50025713",
+      "id": "50025713",
+      "headline": "Astros take on the Athletics after Spence's 3-home run game",
+      "summary": "Houston Astros (79-80, first in the AL West) vs. Athletics (63-96, fourth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817085",
+      "sport": "MLB",
+      "published": "2026-09-25T08:02:50.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50025712",
+      "id": "50025712",
+      "headline": "Brewers host the Cardinals to start 3-game series",
+      "summary": "St. Louis Cardinals (77-82, fourth in the NL Central) vs. Milwaukee Brewers (100-59, first in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817081",
+      "sport": "MLB",
+      "published": "2026-09-25T08:02:47.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50025711",
+      "id": "50025711",
+      "headline": "Tigers open 3-game series with the Pirates",
+      "summary": "Pittsburgh Pirates (81-78, third in the NL Central) vs. Detroit Tigers (74-85, fourth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817077",
+      "sport": "MLB",
+      "published": "2026-09-25T08:02:43.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50025710",
+      "id": "50025710",
+      "headline": "Rockies take on the White Sox after Carrigg's 4-hit game",
+      "summary": "Colorado Rockies (57-102, fifth in the NL West) vs. Chicago White Sox (82-77, second in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817080",
+      "sport": "MLB",
+      "published": "2026-09-25T08:02:40.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50025709",
+      "id": "50025709",
+      "headline": "Royals open 3-game series with the Guardians",
+      "summary": "Cleveland Guardians (83-76, first in the AL Central) vs. Kansas City Royals (68-91, fifth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817079",
+      "sport": "MLB",
+      "published": "2026-09-25T08:02:36.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50025708",
+      "id": "50025708",
+      "headline": "Los Angeles Angels and Seattle Mariners meet in game 2 of series",
+      "summary": "Los Angeles Angels (61-98, fifth in the AL West) vs. Seattle Mariners (74-85, third in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817083",
+      "sport": "MLB",
+      "published": "2026-09-25T08:02:33.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50025707",
+      "id": "50025707",
+      "headline": "Diamondbacks aim to keep win streak alive against the Padres",
+      "summary": "Arizona Diamondbacks (85-74, third in the NL West) vs. San Diego Padres (89-70, second in the NL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817084",
+      "sport": "MLB",
+      "published": "2026-09-25T08:02:29.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50025576",
+      "id": "50025576",
+      "headline": "Oscar winner Lupita Nyong'o invests in BAL team Nairobi City Thunder",
+      "summary": "Oscar-winning actress Lupita Nyong'o announced her investment in the Nairobi City Thunder, the first Kenyan team to play at the NBA-backed Basketball Africa League (BAL), on Thursday.",
+      "url": "https://www.espn.com/espn/story/_/id/50025576/oscar-winner-lupita-nyongo-invests-bal-team-nairobi-city-thunder",
+      "sport": "NBA",
+      "published": "2026-09-25T07:13:45.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 1
+    },
     {
       "key": "50025463",
       "id": "50025463",
@@ -255,39 +398,6 @@
       "bestRank": 12
     },
     {
-      "key": "49640698",
-      "id": "49640698",
-      "headline": "WNBA playoffs 2026: The bracket is set!",
-      "summary": "Minnesota, Las Vegas, Golden State, Indiana, Atlanta, New York, Washington and Dallas are headed to the playoffs.",
-      "url": "https://www.espn.com/wnba/story/_/id/49640698/wnba-playoffs-2026-which-teams-clinched-postseason-berth",
-      "sport": "WNBA",
-      "published": "2026-09-25T04:30:44.000Z",
-      "firstSeen": "2026-09-23T12:38:58.714Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50024596",
-      "id": "50024596",
-      "headline": "Lynx flex their top-seed muscle without Miles, push Clark and the Fever to 6th for the WNBA playoffs",
-      "summary": "— Kayla McBride scored 22 points on 6-for-10 shooting from 3-point range as the top-seeded Minnesota Lynx closed the regular season by cruising to an 86-66 victory Thursday night that pushed the Indiana Fever into sixth place entering the",
-      "url": "http://www.espn.com/wnba/recap?gameId=401857217",
-      "sport": "WNBA",
-      "published": "2026-09-25T04:30:29.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50024507",
-      "id": "50024507",
-      "headline": "Citron has 22, Iriafen 16 points, 15 boards as playoff-bound Mystics beat Sky 101-93",
-      "summary": "— Sonia Citron scored 21 points, Kiki Iriafen had 16 points and 15 rebounds, and the playoff-bound Washington Mystics beat the Chicago Sky 101-93 in their regular-season finale on Thursday night.",
-      "url": "http://www.espn.com/wnba/recap?gameId=401857216",
-      "sport": "WNBA",
-      "published": "2026-09-25T04:29:31.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 3
-    },
-    {
       "key": "50023811",
       "id": "50023811",
       "headline": "Arizona Diamondbacks vs Colorado Rockies: Game Highlights",
@@ -420,6 +530,17 @@
       "bestRank": 2
     },
     {
+      "key": "50024814",
+      "id": "50024814",
+      "headline": "Wyndham Clark: Presidents Cup atmosphere felt 'kind of dead'",
+      "summary": "Wyndham Clark challenged fans to be more vocal at the Presidents Cup after he said it felt \"kind of dead\" at Medinah Country Club outside Chicago on Thursday.",
+      "url": "https://www.espn.com/golf/story/_/id/50024814/wyndham-clark-presidents-cup-atmosphere-felt-kind-dead",
+      "sport": "Golf",
+      "published": "2026-09-25T03:08:16.000Z",
+      "firstSeen": "2026-09-25T09:31:24.474Z",
+      "bestRank": 1
+    },
+    {
       "key": "50024459",
       "id": "50024459",
       "headline": "Guardians clinch a playoff spot again, edging the Red Sox 1-0 on Martínez homer",
@@ -429,6 +550,17 @@
       "published": "2026-09-25T03:02:29.000Z",
       "firstSeen": "2026-09-25T03:31:54.423Z",
       "bestRank": 6
+    },
+    {
+      "key": "50024022",
+      "id": "50024022",
+      "headline": "U.S. leads International team after Day 1 of Presidents Cup",
+      "summary": "Scottie Scheffler and Sam Burns finally won a match together on their fifth try, and it came at just the right time for an American team that hung on to win the opening session of fourballs Thursday in the Presidents Cup.",
+      "url": "https://www.espn.com/golf/story/_/id/50024022/us-leads-1-point-day-1-presidents-cup",
+      "sport": "Golf",
+      "published": "2026-09-25T02:57:14.000Z",
+      "firstSeen": "2026-09-25T06:44:53.175Z",
+      "bestRank": 1
     },
     {
       "key": "50024812",
@@ -450,7 +582,7 @@
       "sport": "WNBA",
       "published": "2026-09-25T02:53:34.000Z",
       "firstSeen": "2026-09-25T06:44:53.175Z",
-      "bestRank": 10
+      "bestRank": 1
     },
     {
       "key": "50024788",
@@ -508,6 +640,17 @@
       "bestRank": 1
     },
     {
+      "key": "50024507",
+      "id": "50024507",
+      "headline": "Citron has 22, Iriafen 16 points, 15 boards as playoff-bound Mystics beat Sky 101-93",
+      "summary": "— Sonia Citron scored 21 points, Kiki Iriafen had 16 points and 15 rebounds, and the playoff-bound Washington Mystics beat the Chicago Sky 101-93 in their regular-season finale on Thursday night.",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857216",
+      "sport": "WNBA",
+      "published": "2026-09-25T02:27:29.000Z",
+      "firstSeen": "2026-09-25T03:31:54.423Z",
+      "bestRank": 3
+    },
+    {
       "key": "50024621",
       "id": "50024621",
       "headline": "Buffalo Sabres vs. Detroit Red Wings: Game Highlights",
@@ -519,6 +662,17 @@
       "bestRank": 4
     },
     {
+      "key": "49640698",
+      "id": "49640698",
+      "headline": "WNBA playoffs 2026: Mystics lock in 5-seed, Fever are No. 6",
+      "summary": "Minnesota, Las Vegas, Golden State, Indiana, Atlanta, New York, Washington and Dallas are headed to the playoffs.",
+      "url": "https://www.espn.com/wnba/story/_/id/49640698/wnba-playoffs-2026-which-teams-clinched-postseason-berth",
+      "sport": "WNBA",
+      "published": "2026-09-25T02:22:59.000Z",
+      "firstSeen": "2026-09-23T12:38:58.714Z",
+      "bestRank": 2
+    },
+    {
       "key": "50008808",
       "id": "50008808",
       "headline": "NFL Week 3 uniforms: Colts to wear 'Anvil Strike,' Bills debut 'Nickel City'",
@@ -528,6 +682,17 @@
       "published": "2026-09-25T02:20:30.000Z",
       "firstSeen": "2026-09-24T15:28:54.179Z",
       "bestRank": 8
+    },
+    {
+      "key": "50024596",
+      "id": "50024596",
+      "headline": "Lynx flex their top-seed muscle without Miles, push Clark and the Fever to 6th for the WNBA playoffs",
+      "summary": "— Kayla McBride scored 22 points on 6-for-10 shooting from 3-point range as the top-seeded Minnesota Lynx closed the regular season by cruising to an 86-66 victory Thursday night that pushed the Indiana Fever into sixth place entering the",
+      "url": "http://www.espn.com/wnba/recap?gameId=401857217",
+      "sport": "WNBA",
+      "published": "2026-09-25T02:17:31.000Z",
+      "firstSeen": "2026-09-25T03:31:54.423Z",
+      "bestRank": 1
     },
     {
       "key": "50024592",
@@ -836,17 +1001,6 @@
       "published": "2026-09-25T00:26:20.000Z",
       "firstSeen": "2026-09-25T01:01:17.091Z",
       "bestRank": 2
-    },
-    {
-      "key": "50024022",
-      "id": "50024022",
-      "headline": "U.S. leads International team after Day 1 of Presidents Cup",
-      "summary": "Scottie Scheffler and Sam Burns finally won a match together on their fifth try, and it came at just the right time for an American team that hung on to win the opening session of fourballs Thursday in the Presidents Cup.",
-      "url": "https://www.espn.com/golf/story/_/id/50024022/us-leads-1-point-day-1-presidents-cup",
-      "sport": "Golf",
-      "published": "2026-09-25T00:10:37.000Z",
-      "firstSeen": "2026-09-25T06:44:53.175Z",
-      "bestRank": 1
     },
     {
       "key": "50023000",
@@ -19741,7 +19895,7 @@
       "headline": "Reports: Miami Hurricanes returning to Nike in '27 on $200M+ deal",
       "summary": "University of Miami athletic teams will be wearing Nike apparel again starting in July 2027, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/49958590/report-miami-hurricanes-going-back-nike-200m+-deal",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-16T19:04:20.000Z",
       "firstSeen": "2026-09-16T21:25:45.412Z",
       "bestRank": 1
@@ -23943,7 +24097,7 @@
       "headline": "FSU fires AD Michael Alford amid looming football questions",
       "summary": "Florida State fired athletic director Michael Alford on Monday as the Seminoles grapple with looming decisions about their football program.",
       "url": "https://www.espn.com/college-football/story/_/id/49939737/fsu-fires-ad-michael-alford-amid-looming-football-questions",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-14T18:30:25.000Z",
       "firstSeen": "2026-09-14T15:28:36.074Z",
       "bestRank": 1
@@ -35636,7 +35790,7 @@
       "headline": "CSC clears $227M+ in NIL deals in July, August in major increase",
       "summary": "The College Sports Commission cleared more than $227 million in NIL deals in July and August, nearly doubling the value of all the deals cleared in its first year of existence.",
       "url": "https://www.espn.com/espn/story/_/id/49882283/csc-clears-227m-nil-deals-july-august-major-increase",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-09T19:03:51.000Z",
       "firstSeen": "2026-09-09T21:23:12.453Z",
       "bestRank": 1
@@ -47747,7 +47901,7 @@
       "headline": "Judge grants injunction to pro players seeking LSU return",
       "summary": "Dae'Quan Wright and Zxavian Harris are currently cleared to return to college football after brief stints in the NFL, according to a judge's orders issued Thursday evening, setting up a dramatic showdown between the SEC and LSU.",
       "url": "https://www.espn.com/college-football/story/_/id/49807088/judge-grants-injunction-pro-players-seeking-lsu-return",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-04T12:40:04.000Z",
       "firstSeen": "2026-09-04T03:31:23.580Z",
       "bestRank": 1
@@ -47916,226 +48070,6 @@
       "published": "2026-09-04T09:34:38.000Z",
       "firstSeen": "2026-09-04T12:38:05.270Z",
       "bestRank": 1
-    },
-    {
-      "key": "49822982",
-      "id": "49822982",
-      "headline": "Liverpool sign Djylian N'Guessan, 18, for next season",
-      "summary": "Liverpool have signed teenage forward Djylian N'Guessan although he won't play for the club until at least next season.",
-      "url": "https://www.espn.com/soccer/story/_/id/49822982/liverpool-sign-djylian-nguessan-18-join-next-season",
-      "sport": "Soccer",
-      "published": "2026-09-04T09:08:41.000Z",
-      "firstSeen": "2026-09-04T12:38:05.270Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49817568",
-      "id": "49817568",
-      "headline": "Igor Jesus targeting Champions League football, unsure if future is at Nottingham Forest",
-      "summary": "Nottingham Forest forward Igor Jesus has set his sights on playing Champions League football in the future, and said he does not know whether he will fulfil that ambition at the City Ground or elsewhere.",
-      "url": "https://www.espn.com/soccer/story/_/id/49817568/nottingham-forest-targeting-uefa-champions-league-football",
-      "sport": "Soccer",
-      "published": "2026-09-04T08:51:35.000Z",
-      "firstSeen": "2026-09-04T12:38:05.270Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49822938",
-      "id": "49822938",
-      "headline": "How the US basketball system has shaped Nigeria's D'Tigress",
-      "summary": "The United States basketball system has played a major role in the development of Nigeria's national women's basketball team, known as D'Tigress.",
-      "url": "https://www.espn.com/espn/story/_/id/49822938/how-us-basketball-system-shaped-nigeria-dtigress",
-      "sport": "WNBA",
-      "published": "2026-09-04T08:46:26.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49822914",
-      "id": "49822914",
-      "headline": "Hislop has 'no sympathy' for Everton over Balogun transfer saga",
-      "summary": "Hislop has 'no sympathy' for Everton over Balogun transfer saga",
-      "url": "https://www.espn.com/video/clip/_/id/49822914/hislop-no-sympathy-everton-balogun-transfer-saga",
-      "sport": "Soccer",
-      "published": "2026-09-04T08:24:57.000Z",
-      "firstSeen": "2026-09-04T12:38:05.270Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49822694",
-      "id": "49822694",
-      "headline": "Nigeria's D'Tigress at the 2026 FIBA Women's World Cup - Everything You Need to Know",
-      "summary": "Nigeria's D'Tigress head to the 2026 FIBA Women's Basketball World Cup in Berlin as a team with an unusual combination of tournament experience and World Cup unfamiliarity.",
-      "url": "https://www.espn.com/espn/story/_/id/49822694/nigeria-dtigress-2026-fiba-women-world-cup-everything-need-know",
-      "sport": "WNBA",
-      "published": "2026-09-04T08:15:48.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49822808",
-      "id": "49822808",
-      "headline": "Padres begin 3-game series against the Yankees",
-      "summary": "New York Yankees (80-60, second in the AL East) vs. San Diego Padres (73-67, third in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816810",
-      "sport": "MLB",
-      "published": "2026-09-04T08:03:49.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49822807",
-      "id": "49822807",
-      "headline": "Braves visit the Phillies to open 4-game series",
-      "summary": "Atlanta Braves (83-57, first in the NL East) vs. Philadelphia Phillies (79-61, second in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816798",
-      "sport": "MLB",
-      "published": "2026-09-04T08:03:46.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49822806",
-      "id": "49822806",
-      "headline": "Athletics bring 1-0 series lead over Mariners into game 2",
-      "summary": "Athletics (55-86, fourth in the AL West) vs. Seattle Mariners (66-75, third in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816809",
-      "sport": "MLB",
-      "published": "2026-09-04T08:03:42.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49822805",
-      "id": "49822805",
-      "headline": "White Sox host the Twins to open 3-game series",
-      "summary": "Minnesota Twins (67-73, third in the AL Central) vs. Chicago White Sox (73-67, first in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816805",
-      "sport": "MLB",
-      "published": "2026-09-04T08:03:39.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49822804",
-      "id": "49822804",
-      "headline": "Mets play the Giants in first of 3-game series",
-      "summary": "San Francisco Giants (58-83, fourth in the NL West) vs. New York Mets (63-77, fifth in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816803",
-      "sport": "MLB",
-      "published": "2026-09-04T08:03:35.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49822803",
-      "id": "49822803",
-      "headline": "Rockies take on the Cardinals in first of 3-game series",
-      "summary": "St. Louis Cardinals (70-71, third in the NL Central) vs. Colorado Rockies (54-86, fifth in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816808",
-      "sport": "MLB",
-      "published": "2026-09-04T08:03:32.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49822802",
-      "id": "49822802",
-      "headline": "Dodgers take on the Nationals after Edman's 4-hit game",
-      "summary": "Washington Nationals (67-75, fourth in the NL East) vs. Los Angeles Dodgers (83-57, first in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816811",
-      "sport": "MLB",
-      "published": "2026-09-04T08:03:29.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49822801",
-      "id": "49822801",
-      "headline": "Diamondbacks visit the Astros to open 3-game series",
-      "summary": "Arizona Diamondbacks (74-67, second in the NL West) vs. Houston Astros (72-69, first in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816804",
-      "sport": "MLB",
-      "published": "2026-09-04T08:02:55.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49822800",
-      "id": "49822800",
-      "headline": "Cubs visit the Marlins to open 3-game series",
-      "summary": "Chicago Cubs (79-62, second in the NL Central) vs. Miami Marlins (71-70, third in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816800",
-      "sport": "MLB",
-      "published": "2026-09-04T08:02:51.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49822799",
-      "id": "49822799",
-      "headline": "Pirates start 3-game series at home against the Angels",
-      "summary": "Los Angeles Angels (53-87, fifth in the AL West) vs. Pittsburgh Pirates (69-72, fourth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816797",
-      "sport": "MLB",
-      "published": "2026-09-04T08:02:48.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49822798",
-      "id": "49822798",
-      "headline": "Blue Jays visit the Royals to open 3-game series",
-      "summary": "Toronto Blue Jays (70-71, fourth in the AL East) vs. Kansas City Royals (63-78, fifth in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816807",
-      "sport": "MLB",
-      "published": "2026-09-04T08:02:44.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49822797",
-      "id": "49822797",
-      "headline": "Rangers face the Rays with 1-0 series lead",
-      "summary": "Tampa Bay Rays (83-57, first in the AL East) vs. Texas Rangers (70-71, second in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816806",
-      "sport": "MLB",
-      "published": "2026-09-04T08:02:40.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49822796",
-      "id": "49822796",
-      "headline": "Brewers visit the Reds to open 3-game series",
-      "summary": "Milwaukee Brewers (87-54, first in the NL Central) vs. Cincinnati Reds (67-73, fifth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816802",
-      "sport": "MLB",
-      "published": "2026-09-04T08:02:37.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49822532",
-      "id": "49822532",
-      "headline": "Portland Fire's Amy Okonkwo targets medal with Nigeria at FIBA Women's World Cup",
-      "summary": "Portland Fire's Amy Okonkwo says Nigeria have set their sights on winning a medal at the FIBA Women's Basketball World Cup, as the African champions named their 12-player roster for the tournament in Berlin.",
-      "url": "https://www.espn.com/espn/story/_/id/49822532/portland-fire-amy-okonkwo-targets-medal-nigeria-fiba-women-world-cup",
-      "sport": "WNBA",
-      "published": "2026-09-04T07:57:23.000Z",
-      "firstSeen": "2026-09-04T12:38:05.270Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49822298",
-      "id": "49822298",
-      "headline": "Alexander Zverev survives and advances in another 5-set thriller",
-      "summary": "Alexander Zverev survives and advances in another 5-set thriller",
-      "url": "https://www.espn.com/video/clip/_/id/49822298/alexander-zverev-survives-advances-another-5-set-thriller",
-      "sport": "Tennis",
-      "published": "2026-09-04T06:48:04.000Z",
-      "firstSeen": "2026-09-04T09:29:43.618Z",
-      "bestRank": 2
     }
   ]
 }
