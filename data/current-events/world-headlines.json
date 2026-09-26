@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-09-26T03:43:04.798Z",
+  "generatedAt": "2026-09-26T06:51:38.264Z",
   "retentionDays": 21,
   "windowStart": "2026-09-05",
   "windowEnd": "2026-09-26",
   "snapshotIntervalHours": 3,
-  "count": 2088,
+  "count": 2095,
   "items": [
     {
       "headline": "Exclusive | Trump Rejects Iran Ceasefire, Expects Renewed Bombing After Midterms",
@@ -24,7 +24,7 @@
       "summary": "Reported by WSJ.",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNDRLMDFWM000dm01WHlBWWRoQWMxaC1QU25sU05KTTJIaUV6bm5MM0FScWN2SU1mNndkVF8xMjF6eFJjcU93X2c3YjR1dWhXZmtieVByR0IxaG04ZWhKMWdJRXFTUlJDWHRDcnlQVVktaC1XWnpWWjJ5dG11YjRyeEtsd0JHLXdEeDVZa0FkdjlVU3M4eE5jNUpUekRZSXNQdHdEYU9zV1lKQkRUSkJpbkpiWnN1cEh0?oc=5",
       "top": true,
-      "bestRank": 2,
+      "bestRank": 1,
       "firstSeen": "2026-09-26T03:43:04.798Z"
     },
     {
@@ -46,12 +46,40 @@
       "firstSeen": "2026-09-26T01:10:39.839Z"
     },
     {
+      "headline": "White House bars CNN from travelling with Trump on Air Force One",
+      "date": "2026-09-26",
+      "bucket": "World",
+      "summary": "CNN was scheduled to fly with US President Donald Trump for his trip to Tennessee on Saturday.",
+      "url": "https://www.bbc.co.uk/news/articles/cxq633770y16o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-26T06:51:38.264Z"
+    },
+    {
+      "headline": "Disaster declared as heavy rains spark Bangkok flooding",
+      "date": "2026-09-26",
+      "bucket": "World",
+      "summary": "Days of near continuous downpours have caused widespread flooding in the Thai capital.",
+      "url": "https://www.bbc.co.uk/news/videos/ck9800jdj1q0o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-26T06:51:38.264Z"
+    },
+    {
       "headline": "OpenAI bots meddled with multiple US government agency sites",
       "date": "2026-09-26",
       "bucket": "World",
       "summary": "OpenAI said its bots accessed public data from the US Census and the Securities and Exchange Commission, which regulates US stock markets.",
       "url": "https://www.bbc.co.uk/news/articles/cw62jje658dlo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-26T03:43:04.798Z"
+      "firstSeen": "2026-09-26T03:43:04.798Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Iran offers US deal to reopen Strait of Hormuz in seven days",
+      "date": "2026-09-26",
+      "bucket": "World",
+      "summary": "Asked about the Iranian proposal, a US official told the BBC \"constructive discussions\" were taking place through mediators.",
+      "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-26T01:10:39.839Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Nepal PM Urges Climate Pact With India, China After Deadly Flood",
@@ -114,6 +142,16 @@
       "firstSeen": "2026-09-26T01:10:39.839Z"
     },
     {
+      "headline": "UN expands list of firms involved in illegal Israeli settlement activities",
+      "date": "2026-09-25",
+      "bucket": "World",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNHgzbGwyeEJLS01QR21tZ0h2N2dzTFp6NWRyeHVISDlWeW5ETkdsaTNLQlNrYjBlbXppdkxGWlFsRHdINXlBaEJXX2hqeUtkWHdOQlVKWVBWMzk2ZkdqcUF4MUZNQy1mX01CcmtIdFF6Z1d5R1k5QUFwdEpfcmZrMWhXZlBpR1NneVhFdUsySERWWThQUlJhQUFWS1hPeFdvcnhTQTFYMGRHZUdYYWVtZnliTlRQUdIBuwFBVV95cUxNem9Malp3X3BnYlc5SmRRTHd2Qm9vcFNrYUg1THY3QnZpcWlrYTlFZlpyQnNvbG5wcmtFclJ6a3Njd19vb0RVWGNXdU41anI3Rm1aY1p3OWJIODV1d0JjX2NnTC1kWmVuVzhyRlZVZS1GMXZSaFhMc1dGanNqV01nWGVxNDQtOEVGSWt6Q0ZwdmlIU1NKSTBzTkFhYjZUVlNpd200RjVhMFY4ZUhXOU1RNTVzb3RqM01rdmc0?oc=5",
+      "top": true,
+      "bestRank": 2,
+      "firstSeen": "2026-09-26T01:10:39.839Z"
+    },
+    {
       "headline": "Cambridge Abandons Plans to Fully Investigate Its Hiring of Jason Arday",
       "date": "2026-09-25",
       "bucket": "World",
@@ -152,6 +190,16 @@
       "top": true,
       "bestRank": 3,
       "firstSeen": "2026-09-25T18:43:13.541Z"
+    },
+    {
+      "headline": "Ethiopia fighting: Are Tigray's TPLF forces and the army heading back to war?",
+      "date": "2026-09-25",
+      "bucket": "Conflict",
+      "summary": "Reported by BBC.",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1USzh1RnFDelo5LWlueXl4TlBZT20teXBVakxGWnI5cVdOWGdoV1BZTnJUNzBWZHRfTFB1X20wMkM5ZF9jLUZnUHlsYjd4amJkTGFOdFNjV0pYQ2c?oc=5",
+      "top": true,
+      "bestRank": 3,
+      "firstSeen": "2026-09-26T06:51:38.264Z"
     },
     {
       "headline": "Meloni government bans burqas, caps foreign students in Italian schools",
@@ -202,16 +250,6 @@
       "top": true,
       "bestRank": 5,
       "firstSeen": "2026-09-25T12:50:54.196Z"
-    },
-    {
-      "headline": "UN expands list of firms involved in illegal Israeli settlement activities",
-      "date": "2026-09-25",
-      "bucket": "World",
-      "summary": "Reported by Al Jazeera.",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNHgzbGwyeEJLS01QR21tZ0h2N2dzTFp6NWRyeHVISDlWeW5ETkdsaTNLQlNrYjBlbXppdkxGWlFsRHdINXlBaEJXX2hqeUtkWHdOQlVKWVBWMzk2ZkdqcUF4MUZNQy1mX01CcmtIdFF6Z1d5R1k5QUFwdEpfcmZrMWhXZlBpR1NneVhFdUsySERWWThQUlJhQUFWS1hPeFdvcnhTQTFYMGRHZUdYYWVtZnliTlRQUdIBuwFBVV95cUxNem9Malp3X3BnYlc5SmRRTHd2Qm9vcFNrYUg1THY3QnZpcWlrYTlFZlpyQnNvbG5wcmtFclJ6a3Njd19vb0RVWGNXdU41anI3Rm1aY1p3OWJIODV1d0JjX2NnTC1kWmVuVzhyRlZVZS1GMXZSaFhMc1dGanNqV01nWGVxNDQtOEVGSWt6Q0ZwdmlIU1NKSTBzTkFhYjZUVlNpd200RjVhMFY4ZUhXOU1RNTVzb3RqM01rdmc0?oc=5",
-      "top": true,
-      "bestRank": 5,
-      "firstSeen": "2026-09-26T01:10:39.839Z"
     },
     {
       "headline": "Pakistani forces kill Afghan Taliban fighters in border escalation",
@@ -294,6 +332,16 @@
       "firstSeen": "2026-09-26T01:10:39.839Z"
     },
     {
+      "headline": "\"Ask India, Ask Pakistan\": Balen Shah's Attack On \"Broken\" Global Order At UN",
+      "date": "2026-09-25",
+      "bucket": "World",
+      "summary": "Reported by The Guardian.",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbVhGM3lsRktVSXFtWEFJb0o4cDlUN3dhbGZTbHNoSzNrVkFkUVFNbnBhVmllbzdqT1VPSW1pY2VOelRDUVU2bm0wR2t3amVFY2VSbEVuYWJDSmFWdlNCWWp5eDM4WFpNV01PZHR3VmstNFBZVFJjd0tLM1IzdkZiZmZjQnMtSDB5VkdZSmFUc1VJVGw0WDBjTDBTV2lEOEZH?oc=5",
+      "top": true,
+      "bestRank": 7,
+      "firstSeen": "2026-09-26T03:43:04.798Z"
+    },
+    {
       "headline": "Russian Attacks Destroy Millions of Books, the Heart of Ukrainian Culture",
       "date": "2026-09-25",
       "bucket": "World",
@@ -322,16 +370,6 @@
       "top": true,
       "bestRank": 8,
       "firstSeen": "2026-09-11T12:47:52.033Z"
-    },
-    {
-      "headline": "\"Ask India, Ask Pakistan\": Balen Shah's Attack On \"Broken\" Global Order At UN",
-      "date": "2026-09-25",
-      "bucket": "World",
-      "summary": "Reported by The Guardian.",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbVhGM3lsRktVSXFtWEFJb0o4cDlUN3dhbGZTbHNoSzNrVkFkUVFNbnBhVmllbzdqT1VPSW1pY2VOelRDUVU2bm0wR2t3amVFY2VSbEVuYWJDSmFWdlNCWWp5eDM4WFpNV01PZHR3VmstNFBZVFJjd0tLM1IzdkZiZmZjQnMtSDB5VkdZSmFUc1VJVGw0WDBjTDBTV2lEOEZH?oc=5",
-      "top": true,
-      "bestRank": 9,
-      "firstSeen": "2026-09-26T03:43:04.798Z"
     },
     {
       "headline": "Senior Kazakh officials detained after 14 service members swept out to sea",
@@ -394,6 +432,16 @@
       "firstSeen": "2026-09-25T21:37:56.321Z"
     },
     {
+      "headline": "President Lula bans betting companies from operating in Brazil from 6 October",
+      "date": "2026-09-25",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYnNWTkRFTmhMWF9BQTl3aTFRaDRuR2hqZF9YcHdRSlpHdUFoanQ1NmJTV0RHa1g0SUxtdHJpSV9ubTdLSk1MLVl2cXNHaHJGRGtKOVJGcXJFUGZxU3J0WFhEOVFkanU4dVdKNWhZS0o4OTFINjlrMHd5UnNnWHlTcm5vTkU1NGxkbzZ5bUtTMmxTSGxRTmlpaXRfdi15X0JSclZqeGdRZENTSnh0YTc3dXVZRVVjclhUbm9r?oc=5",
+      "top": true,
+      "bestRank": 15,
+      "firstSeen": "2026-09-26T06:51:38.264Z"
+    },
+    {
       "headline": "Pakistan, Turkiye edge closer towards joining Saudi war against Houthis",
       "date": "2026-09-25",
       "bucket": "Conflict",
@@ -422,6 +470,16 @@
       "top": true,
       "bestRank": 17,
       "firstSeen": "2026-09-26T01:10:39.839Z"
+    },
+    {
+      "headline": "Russia's Attacks Disrupt Internet Services to 100,000 Households in Kyiv, Ukrainian Ministry Says",
+      "date": "2026-09-25",
+      "bucket": "World",
+      "summary": "Reported by Financial Times.",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTkVmV2E3a2lyNlJnaVBxVlZXbkJqZnVHX1pLR3kybE5FdHR2S0FGRWtPQVM5WFd5ekEzWnRjRU00Q1k2RUNnS0NjY19HLUZTdzd5Nm5NTERBWnRvSnc3dlNsbzdqYkhyUmk2Y3dEMHlIYlBSVmRTMjhkX2NpdVpQUnY3ZmE?oc=5",
+      "top": true,
+      "bestRank": 17,
+      "firstSeen": "2026-09-25T12:50:54.196Z"
     },
     {
       "headline": "Trump rolls out red carpets for Xi Jinping, though he has portrayed China as a global menace",
@@ -474,16 +532,6 @@
       "firstSeen": "2026-09-25T18:43:13.541Z"
     },
     {
-      "headline": "Russia's Attacks Disrupt Internet Services to 100,000 Households in Kyiv, Ukrainian Ministry Says",
-      "date": "2026-09-25",
-      "bucket": "World",
-      "summary": "Reported by Financial Times.",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTkVmV2E3a2lyNlJnaVBxVlZXbkJqZnVHX1pLR3kybE5FdHR2S0FGRWtPQVM5WFd5ekEzWnRjRU00Q1k2RUNnS0NjY19HLUZTdzd5Nm5NTERBWnRvSnc3dlNsbzdqYkhyUmk2Y3dEMHlIYlBSVmRTMjhkX2NpdVpQUnY3ZmE?oc=5",
-      "top": true,
-      "bestRank": 20,
-      "firstSeen": "2026-09-25T12:50:54.196Z"
-    },
-    {
       "headline": "Vice President of Yemen Addresses 81st Session of General Assembly Debate",
       "date": "2026-09-25",
       "bucket": "World",
@@ -512,6 +560,16 @@
       "top": true,
       "bestRank": 23,
       "firstSeen": "2026-09-25T15:39:40.069Z"
+    },
+    {
+      "headline": "Video: Greek Cargo RoRo Abandoned After Fire Breaks Out Off Mykonos",
+      "date": "2026-09-25",
+      "bucket": "World",
+      "summary": "Reported by BBC.",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE55TzR0RFRueS10Uk42bUk4M3B0d3ZPMW40Qnh3QkR5Y0MtM29RUFpNUXFYdjg4R21oSGJXVUVqQ3d1UXhueV9XVWVsNmFmUy0zMnlwRFhyM0Q?oc=5",
+      "top": true,
+      "bestRank": 23,
+      "firstSeen": "2026-09-26T06:51:38.264Z"
     },
     {
       "headline": "I was arrested protesting Netanyahu’s New York visit. Here’s why we took a stand | Darializa Avila Chevalier",
@@ -684,6 +742,16 @@
       "firstSeen": "2026-09-25T15:39:40.069Z"
     },
     {
+      "headline": "Lula da Silva or Flavio Bolsonaro as president? Brazil gears up to vote",
+      "date": "2026-09-25",
+      "bucket": "Politics",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPOS1HUXBXLWp1TEVKTTNqeVNIck1rdE15ODdjQnZxZG1sdTNsaC1VMjJKeHczZnM0dW1uQmkxVmtDYWtCQ1NoMGhQLWpGS2RKYXhHZ3JSM1Rwc1dZWEZ4NFQ3MFNicHBpY0FucXZ4T0M0YmViM0RDUnZwbE16Z2EwR0Y3TFpCRndrM3lvcXdqb0xjU0tpanV1RDk1c1hLQXVwNl8xNk5HTWczdDJ3QnfSAbMBQVVfeXFMT0RTa2R2dHhhS1RKa1NqQnJEcVlHaFUzYXlIVnNuNEY4M3lIcV8zaXFGQmRpcVRfQzJqeHZxTEZoNE9Hal9OaG5taDZwU0lsR1p5ZGctal9MX2FoaWlkTTFYcmN5MHhTZFF1TEg5SDBjYWVaTUJ2VXhqSTZZVkpFaTNfWEJtVDIwUVZYdGNKMmZEQ0NlQTdJY0JQdFhwSzRpSWIwMHE3RkJYcTVHc2ZqazRySjQ?oc=5",
+      "top": true,
+      "bestRank": 38,
+      "firstSeen": "2026-09-26T06:51:38.264Z"
+    },
+    {
       "headline": "Ukraine weighs legalizing pornography to raise tax revenue and buy drones",
       "date": "2026-09-25",
       "bucket": "World",
@@ -738,16 +806,6 @@
       "summary": "CNN and MS NOW said reporters were denied access to covering White House arrivals for a state dinner, despite a judge ruling their passes must be restored.",
       "url": "https://www.bbc.co.uk/news/articles/cqe8ek7608mlo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-09-25T01:11:17.947Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Iran offers US deal to reopen Strait of Hormuz in seven days",
-      "date": "2026-09-25",
-      "bucket": "World",
-      "summary": "Asked about the Iranian offer, a US official told the BBC \"constructive discussions\" were taking place through mediators.",
-      "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-26T01:10:39.839Z",
       "top": false,
       "bestRank": null
     },
@@ -1282,6 +1340,16 @@
       "firstSeen": "2026-09-24T21:36:55.357Z"
     },
     {
+      "headline": "Friedrich Merz, the zombie chancellor",
+      "date": "2026-09-24",
+      "bucket": "World",
+      "summary": "Reported by The Economist.",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSFdPRHlkUGFOWEUySjVuX1U1OWFSTGRqMllHWC1ubHhENDg1VEs4a09BUVNGMHpRZmE1QXZ6cW8zazRSWkxYSTBKMlNSaDVvNUw0Mzc1VmtFZ2c5Wnd4aFVzcnF3UC01Q0JKYUp0d2VlTkFlWVZkMHctQUNNbl8tbUp6TDJfN3c?oc=5",
+      "top": true,
+      "bestRank": 5,
+      "firstSeen": "2026-09-25T09:41:54.026Z"
+    },
+    {
       "headline": "Ethiopia's army says it has repelled attacks in first comment on fresh fighting",
       "date": "2026-09-24",
       "bucket": "Conflict",
@@ -1322,16 +1390,6 @@
       "firstSeen": "2026-09-24T18:45:55.232Z"
     },
     {
-      "headline": "Friedrich Merz, the zombie chancellor",
-      "date": "2026-09-24",
-      "bucket": "World",
-      "summary": "Reported by The Economist.",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSFdPRHlkUGFOWEUySjVuX1U1OWFSTGRqMllHWC1ubHhENDg1VEs4a09BUVNGMHpRZmE1QXZ6cW8zazRSWkxYSTBKMlNSaDVvNUw0Mzc1VmtFZ2c5Wnd4aFVzcnF3UC01Q0JKYUp0d2VlTkFlWVZkMHctQUNNbl8tbUp6TDJfN3c?oc=5",
-      "top": true,
-      "bestRank": 7,
-      "firstSeen": "2026-09-25T09:41:54.026Z"
-    },
-    {
       "headline": "Pope Leo heads to Lourdes: What to know about one of Catholicism’s most famous pilgrimage sites",
       "date": "2026-09-24",
       "bucket": "World",
@@ -1360,6 +1418,16 @@
       "top": true,
       "bestRank": 9,
       "firstSeen": "2026-09-25T06:56:05.958Z"
+    },
+    {
+      "headline": "Squeezed at Sea, Iran Faces New Restrictions on Its Flights",
+      "date": "2026-09-24",
+      "bucket": "World",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMmtOLWlKenZTOUFaTXh5eFNRSkM1djMxU3J0Nm94UklBSWZET0tXSWt0V3ozejd4d0V6WV9wMndvazhPbm9pUnEwWkk2Z204Z294dUVzcWExcE93SXA4X1djdTZKclF4cm1kU0lhRjFQcDlxand2NXdUUWNsaTA3SEV6UEp6SE9mN3lQNFJZdndJMHRKZ2lNYnhtVXZaRDhFelpKYmoydVI2YWdTUkxEVNIBtgFBVV95cUxNaElvbVJXb2l0UGgtanM1WllLNzJCR05RdzhadzBfZktCcTc4SDFBcGdrNGhET0EzM1FCdWlfTTVDQXJKNG1kQWM5QThRM2FGM1E0V1pRa0NydTRER0N5UDhSc0pFa05DOUlBQV9YVDBDdEUtQ1pjR29LZmNVelVuaS04emNaM1pHNFVNT3diZU1IcldORlA0LUViaFZYWFpSdWFZME90TGNOUC15WVkwMHZLaFdoZw?oc=5",
+      "top": true,
+      "bestRank": 9,
+      "firstSeen": "2026-09-25T03:42:52.656Z"
     },
     {
       "headline": "Fears of return to war grow in Ethiopia's Tigray region",
@@ -1442,6 +1510,16 @@
       "firstSeen": "2026-09-22T19:22:55.252Z"
     },
     {
+      "headline": "Finance Ministry Unveils 2027 Budget Draft With Fresh Tax Hikes to Fund War Deficit",
+      "date": "2026-09-24",
+      "bucket": "Conflict",
+      "summary": "Reported by The Moscow Times.",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQemhRaVJwMDI5YTZ2UUZhdk5DTjRsdG9qYWREMXRVaFdxZEZ5M0k5Wi1aRWEtRG85WVJ2OTVNWURrWThhZUxOM1NGTXJBaFBHWTlsQTI2LXRDMFRxTURYbkZNZUtNSnQtTS1wcmVrTEVtaVE1MnR3MUtPdmJiV0ZwTVZrOGVWV1JJNkhzTW5xSUIxOVZjc3pYc0NPdVlaSE02MUVuS1RhNjFLQjhXcWlZTS1UeHpPOWp2cEtLMTd2NW1BS3MzYWprWjRhd3c?oc=5",
+      "top": true,
+      "bestRank": 14,
+      "firstSeen": "2026-09-24T21:36:55.357Z"
+    },
+    {
       "headline": "'Only the starting line': Germany plans to quit fossil fuels by 2045",
       "date": "2026-09-24",
       "bucket": "World",
@@ -1482,16 +1560,6 @@
       "firstSeen": "2026-09-25T06:56:05.958Z"
     },
     {
-      "headline": "Finance Ministry Unveils 2027 Budget Draft With Fresh Tax Hikes to Fund War Deficit",
-      "date": "2026-09-24",
-      "bucket": "Conflict",
-      "summary": "Reported by Financial Times.",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUzIzdzhDNWw2UmVrQm55Q0NZaV90X1gyY3FvY3JtUHpKOFhTaktSRnAzZ0tlMWpDbS1CeEtPbGU5Q1FBeGRKZzBRRHBJcEpURnhPNWhTMTVRQXNSZkRGNWxiWHdwV1dCa0R2SGxLU3NPdzYtRjhXYy0xTm1NZE5xV2lodnM?oc=5",
-      "top": true,
-      "bestRank": 17,
-      "firstSeen": "2026-09-24T21:36:55.357Z"
-    },
-    {
       "headline": "Euronews reveals EU mood after Russian oligarch Usmanov sanctions lifted",
       "date": "2026-09-24",
       "bucket": "World",
@@ -1527,16 +1595,6 @@
       "bucket": "World",
       "summary": "Reported by AP News.",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOaUhmZmFncTZjVkJPdUtDaG9oWVRkMklnb252bWNRSDBBWmpPWFZtYW0yVXduem85NzFhZUpJNXRVTklGdC1jaWdTS0tRTzdKYXgxd1ZCNDJ4TVdwSTZDYzEwT0l5NnJiUzVjS05xSkI2ejV2UU5teV9KZFZKMk95NE5nTmV2Y0ZtU0p5SnhEYXo1NnlYcUZn?oc=5",
-      "top": true,
-      "bestRank": 19,
-      "firstSeen": "2026-09-25T03:42:52.656Z"
-    },
-    {
-      "headline": "Squeezed at Sea, Iran Faces New Restrictions on Its Flights",
-      "date": "2026-09-24",
-      "bucket": "World",
-      "summary": "Reported by Al Jazeera.",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMmtOLWlKenZTOUFaTXh5eFNRSkM1djMxU3J0Nm94UklBSWZET0tXSWt0V3ozejd4d0V6WV9wMndvazhPbm9pUnEwWkk2Z204Z294dUVzcWExcE93SXA4X1djdTZKclF4cm1kU0lhRjFQcDlxand2NXdUUWNsaTA3SEV6UEp6SE9mN3lQNFJZdndJMHRKZ2lNYnhtVXZaRDhFelpKYmoydVI2YWdTUkxEVNIBtgFBVV95cUxNaElvbVJXb2l0UGgtanM1WllLNzJCR05RdzhadzBfZktCcTc4SDFBcGdrNGhET0EzM1FCdWlfTTVDQXJKNG1kQWM5QThRM2FGM1E0V1pRa0NydTRER0N5UDhSc0pFa05DOUlBQV9YVDBDdEUtQ1pjR29LZmNVelVuaS04emNaM1pHNFVNT3diZU1IcldORlA0LUViaFZYWFpSdWFZME90TGNOUC15WVkwMHZLaFdoZw?oc=5",
       "top": true,
       "bestRank": 19,
       "firstSeen": "2026-09-25T03:42:52.656Z"
@@ -1620,6 +1678,16 @@
       "top": true,
       "bestRank": 25,
       "firstSeen": "2026-09-24T18:45:55.232Z"
+    },
+    {
+      "headline": "Tucker Carlson says Trump should have been ousted over Iran threat",
+      "date": "2026-09-24",
+      "bucket": "World",
+      "summary": "Reported by Axios.",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOa09ydktTNTMwWnNiTHhyWXdzbldCSzF5UTF4RTZFYlBFb3RTQXBzb0NMbWN2c0dFVkt5OGlJX2tmRnF5LWdrcE1RNXZiVVZGUHlUa0JjNWFTTWJGYjVEODhDRERlQnVkZ3p5bFFOcElTQ2FlRjRIQWtBVkxFakdaOXFSbw?oc=5",
+      "top": true,
+      "bestRank": 25,
+      "firstSeen": "2026-09-26T06:51:38.264Z"
     },
     {
       "headline": "'It has broken us as a family,' mother of poison seller victim tells hearing",
@@ -1960,6 +2028,16 @@
       "bestRank": null
     },
     {
+      "headline": "Watch: UN delegates walk out of Netanyahu speech",
+      "date": "2026-09-24",
+      "bucket": "World",
+      "summary": "The Israeli delegation cheered in support during Netanyahu's speech. Nada Tawfik in New York explains what happened.",
+      "url": "https://www.bbc.co.uk/news/videos/cqwyzmpm3pgdo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-24T21:36:55.357Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
       "headline": "From Nagaland to a path to the Oscars: Indian film brings a rarely seen world to global cinema",
       "date": "2026-09-24",
       "bucket": "World",
@@ -1975,16 +2053,6 @@
       "bucket": "World",
       "summary": "Dozens of delegates walked out in protest as he took the podium, with the Israeli leader labelling them \"moral cowards\".",
       "url": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-24T21:36:55.357Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Watch: UN delegates walk out of Netanyahu speech",
-      "date": "2026-09-24",
-      "bucket": "World",
-      "summary": "The Israeli delegation cheered in support during Netanyahu's speech. Nada Tawfik in New York explains what happened.",
-      "url": "https://www.bbc.co.uk/news/videos/cqwyzmpm3pgdo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-09-24T21:36:55.357Z",
       "top": false,
       "bestRank": null
@@ -3172,22 +3240,22 @@
       "bestRank": null
     },
     {
-      "headline": "Trump and Xi come face-to-face as US and China jostle for dominance over AI",
-      "date": "2026-09-23",
-      "bucket": "World",
-      "summary": "The US and China are vying for AI supremacy while seeking to keep it under human control.",
-      "url": "https://www.bbc.co.uk/news/articles/c6gqdgg8w59xo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-24T09:42:09.863Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "A red carpet and military flyover - How Trump welcomed Xi",
       "date": "2026-09-23",
       "bucket": "World",
       "summary": "The two B-1 bombers that flew overhead are a key part of the US's combat arsenal, and produce a notoriously loud roar when they pass by.",
       "url": "https://www.bbc.co.uk/news/videos/c6804ne8knklo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-09-24T01:11:20.195Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Trump and Xi come face-to-face as US and China jostle for dominance over AI",
+      "date": "2026-09-23",
+      "bucket": "World",
+      "summary": "The US and China are vying for AI supremacy while seeking to keep it under human control.",
+      "url": "https://www.bbc.co.uk/news/articles/c6gqdgg8w59xo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-24T09:42:09.863Z",
       "top": false,
       "bestRank": null
     },
@@ -4894,6 +4962,16 @@
       "firstSeen": "2026-09-22T01:10:54.232Z"
     },
     {
+      "headline": "Pakistan says it killed 28 militants, Afghan Taliban and UN report three civilian deaths",
+      "date": "2026-09-21",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWVh3aU1udV9wY1RJQzlCTGhUSjE0NmplSjdvTDhmN3phXzZ4ZUdDcFpIQVNKQlVhSm04eE1aWVBHeXp2RExjWDNiaDRfcDM3dDkzcGZpSWxJblF0LTNQeGJWVFR0dFFHTUtyVEdUQmtFYTN4MVRUMU1UOWljNzNQVFNXNldQVmhMYlFBc2ZIOHQ3QlZSU0hyTndRRk84bzgtZFJUYTNNNEIwR3M?oc=5",
+      "top": true,
+      "bestRank": 13,
+      "firstSeen": "2026-09-21T18:43:54.013Z"
+    },
+    {
       "headline": "Belleville Police involved in Old East Hill shootout",
       "date": "2026-09-21",
       "bucket": "World",
@@ -5112,16 +5190,6 @@
       "top": true,
       "bestRank": 20,
       "firstSeen": "2026-09-21T15:37:20.634Z"
-    },
-    {
-      "headline": "Pakistan says it killed 28 militants, Afghan Taliban and UN report three civilian deaths",
-      "date": "2026-09-21",
-      "bucket": "World",
-      "summary": "Reported by AP News.",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWVh3aU1udV9wY1RJQzlCTGhUSjE0NmplSjdvTDhmN3phXzZ4ZUdDcFpIQVNKQlVhSm04eE1aWVBHeXp2RExjWDNiaDRfcDM3dDkzcGZpSWxJblF0LTNQeGJWVFR0dFFHTUtyVEdUQmtFYTN4MVRUMU1UOWljNzNQVFNXNldQVmhMYlFBc2ZIOHQ3QlZSU0hyTndRRk84bzgtZFJUYTNNNEIwR3M?oc=5",
-      "top": true,
-      "bestRank": 20,
-      "firstSeen": "2026-09-21T18:43:54.013Z"
     },
     {
       "headline": "Latvia Opposes French Bid to Lift EU Sanctions on Russian Tycoon",
@@ -10728,6 +10796,16 @@
       "firstSeen": "2026-09-16T03:42:43.278Z"
     },
     {
+      "headline": "Saudi crown prince goes to Egypt for support amid Houthi strikes, and other Mideast developments",
+      "date": "2026-09-15",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNmhBTVJCOWN1MkF2Z1pLRDEybEtVcm5fbnRWVl9ERF9NQ1VqZnltZmp5dVU5RnFvbjV6TmxuMkFEb3FMTXBsay15VlRjVGxBVnpheHJjbE1qSnFqa1FNU2NRcnlNMHpkaDVxNTZwZGtqTVZFQXhOS0E4bnJyYW9tMVdLWFVNb09FdHgyRGNrMjNlRl9iSDEzVHNhTWZxN3JzVjVDOVQ3Znl2X1VWalE?oc=5",
+      "top": true,
+      "bestRank": 8,
+      "firstSeen": "2026-09-15T19:11:54.251Z"
+    },
+    {
       "headline": "Iranian strikes have damaged hundreds of structures at U.S. bases, watchdog says",
       "date": "2026-09-15",
       "bucket": "World",
@@ -11006,16 +11084,6 @@
       "top": true,
       "bestRank": 23,
       "firstSeen": "2026-09-15T12:48:23.371Z"
-    },
-    {
-      "headline": "Saudi crown prince goes to Egypt for support amid Houthi strikes, and other Mideast developments",
-      "date": "2026-09-15",
-      "bucket": "World",
-      "summary": "Reported by AP News.",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNmhBTVJCOWN1MkF2Z1pLRDEybEtVcm5fbnRWVl9ERF9NQ1VqZnltZmp5dVU5RnFvbjV6TmxuMkFEb3FMTXBsay15VlRjVGxBVnpheHJjbE1qSnFqa1FNU2NRcnlNMHpkaDVxNTZwZGtqTVZFQXhOS0E4bnJyYW9tMVdLWFVNb09FdHgyRGNrMjNlRl9iSDEzVHNhTWZxN3JzVjVDOVQ3Znl2X1VWalE?oc=5",
-      "top": true,
-      "bestRank": 23,
-      "firstSeen": "2026-09-15T19:11:54.251Z"
     },
     {
       "headline": "FILE PHOTO: Mass funeral of members of multiple families, who were killed in an Israeli strike in 2023, in Gaza City",
