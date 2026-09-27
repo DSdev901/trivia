@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-27T06:42:32.864Z",
+  "generatedAt": "2026-09-27T09:28:36.065Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-06T06:42:32.864Z",
-  "windowEnd": "2026-09-27T06:42:32.864Z",
+  "windowStart": "2026-09-06T09:28:36.065Z",
+  "windowEnd": "2026-09-27T09:28:36.065Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,239 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4345,
+  "count": 4341,
   "items": [
+    {
+      "key": "50040545",
+      "id": "50040545",
+      "headline": "Tigers try to sweep series against the Pirates",
+      "summary": "Pittsburgh Pirates (81-80, third in the NL Central) vs. Detroit Tigers (76-85, fourth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817107",
+      "sport": "MLB",
+      "published": "2026-09-27T08:03:01.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50040544",
+      "id": "50040544",
+      "headline": "Harris leads Braves against the Marlins after 4-hit outing",
+      "summary": "Atlanta Braves (94-67, first in the NL East) vs. Miami Marlins (79-82, third in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817102",
+      "sport": "MLB",
+      "published": "2026-09-27T08:02:57.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50040543",
+      "id": "50040543",
+      "headline": "Los Angeles Angels and Seattle Mariners meet in game 4 of series",
+      "summary": "Los Angeles Angels (62-99, fifth in the AL West) vs. Seattle Mariners (75-86, third in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817113",
+      "sport": "MLB",
+      "published": "2026-09-27T08:02:53.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50040542",
+      "id": "50040542",
+      "headline": "Red Sox try to sweep 3-game series against the Cubs",
+      "summary": "Chicago Cubs (88-73, second in the NL Central) vs. Boston Red Sox (87-74, third in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817089",
+      "sport": "MLB",
+      "published": "2026-09-27T08:02:50.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50040541",
+      "id": "50040541",
+      "headline": "Cardinals look to break skid in game against the Brewers",
+      "summary": "St. Louis Cardinals (77-84, fourth in the NL Central) vs. Milwaukee Brewers (102-59, first in the NL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817111",
+      "sport": "MLB",
+      "published": "2026-09-27T08:02:46.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50040540",
+      "id": "50040540",
+      "headline": "Nationals and Mets meet, winner claims 3-game series",
+      "summary": "New York Mets (74-87, fifth in the NL East) vs. Washington Nationals (76-85, fourth in the NL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817106",
+      "sport": "MLB",
+      "published": "2026-09-27T08:02:43.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50040539",
+      "id": "50040539",
+      "headline": "Yankees and Orioles play, winner takes 3-game series",
+      "summary": "Baltimore Orioles (79-82, fourth in the AL East) vs. New York Yankees (93-68, second in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817103",
+      "sport": "MLB",
+      "published": "2026-09-27T08:02:39.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50040538",
+      "id": "50040538",
+      "headline": "Royals host the Guardians on home losing streak",
+      "summary": "Cleveland Guardians (85-76, first in the AL Central) vs. Kansas City Royals (68-93, fifth in the AL Central)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817109",
+      "sport": "MLB",
+      "published": "2026-09-27T08:02:36.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50040537",
+      "id": "50040537",
+      "headline": "Blue Jays and Reds meet in series rubber match",
+      "summary": "Cincinnati Reds (75-86, fifth in the NL Central) vs. Toronto Blue Jays (78-83, fifth in the AL East)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817105",
+      "sport": "MLB",
+      "published": "2026-09-27T08:02:32.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50040536",
+      "id": "50040536",
+      "headline": "Pena leads Astros against the Athletics after 4-hit game",
+      "summary": "Houston Astros (80-81, first in the AL West) vs. Athletics (64-97, fourth in the AL West)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401817115",
+      "sport": "MLB",
+      "published": "2026-09-27T08:02:29.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50040447",
+      "id": "50040447",
+      "headline": "Drake Lindsey throws 3 touchdowns in the first half as Minnesota holds off Washington 27-24",
+      "summary": "— Drake Lindsey tossed three touchdowns in the first half to three different receivers and Minnesota defeated Washington 27-24 on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401858470",
+      "sport": "College football",
+      "published": "2026-09-27T07:58:41.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50029047",
+      "id": "50029047",
+      "headline": "Rio Ferdinand leads reaction to Man City's 115 breaches case: 'Another Premier League medal'",
+      "summary": "The football world has been reacting to reports that Manchester City are expected to be found guilty of most charges in their legal battle with the Premier League.",
+      "url": "https://www.espn.com/soccer/story/_/id/50029047/rio-ferdinand-david-de-gea-football-world-reaction-man-city-115-premier-league-breaches-case",
+      "sport": "Soccer",
+      "published": "2026-09-27T07:43:05.000Z",
+      "firstSeen": "2026-09-26T01:00:10.067Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50040457",
+      "id": "50040457",
+      "headline": "Raúl Rosas Jr. defeats Raoni Barcelos by TKO in round five",
+      "summary": "Raúl Rosas Jr. scores a strange TKO victory against Raoni Barcelos in round 5, after the Brazilian appears to be knocked out by the cage.",
+      "url": "https://www.espn.com/video/clip/_/id/50040457/raul-rosas-jr-defeats-raoni-barcelos-tko-round-five",
+      "sport": "MMA",
+      "published": "2026-09-27T07:30:55.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50040382",
+      "id": "50040382",
+      "headline": "Davis Warren sets career high in Stanford's comeback win over Georgia Tech, 34-27",
+      "summary": "— Davis Warren passed for a career-high 396 yards and three touchdowns to lead Stanford in a 34-27 comeback win over Georgia Tech on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401858240",
+      "sport": "College football",
+      "published": "2026-09-27T07:00:31.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50039935",
+      "id": "50039935",
+      "headline": "Kamario Taylor leads 4th-quarter rally and No. 24 Mississippi State beats No. 19 Missouri 31-24",
+      "summary": "— Kamario Taylor threw for 360 yards and three touchdowns, including a tiebreaking, 24-yard pass to Sanfrisco Magee with 3:57 remaining, and No. 24 Mississippi State rallied past No. 19 Missouri 31-24 on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401856703",
+      "sport": "College football",
+      "published": "2026-09-27T06:57:29.000Z",
+      "firstSeen": "2026-09-27T06:42:32.864Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50040141",
+      "id": "50040141",
+      "headline": "Padres secure home-field advantage in wild-card rematch with Cubs",
+      "summary": "The Padres beat the Diamondbacks 10-7 on Saturday to wrap up the No. 4 seed in the NL playoffs and will host every game in a best-of-three Wild Card Series against the fifth-seeded Cubs.",
+      "url": "https://www.espn.com/mlb/story/_/id/50040141/padres-secure-home-field-advantage-wild-card-rematch-cubs",
+      "sport": "MLB",
+      "published": "2026-09-27T06:51:37.000Z",
+      "firstSeen": "2026-09-27T06:42:32.864Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50040334",
+      "id": "50040334",
+      "headline": "Georgia Tech Yellow Jackets vs. Stanford Cardinal: Full Highlights",
+      "summary": "Georgia Tech Yellow Jackets vs. Stanford Cardinal: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50040334/full-highlights",
+      "sport": "College football",
+      "published": "2026-09-27T06:29:58.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50040308",
+      "id": "50040308",
+      "headline": "Lane Kiffin throws shade at Ole Miss after LSU's bounce-back win",
+      "summary": "Lane Kiffin throws shade at Ole Miss after LSU's bounce-back win",
+      "url": "https://www.espn.com/video/clip/_/id/50040308/lane-kiffin-throws-shade-ole-miss-lsu-bounce-back-win",
+      "sport": "College football",
+      "published": "2026-09-27T06:29:30.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50039772",
+      "id": "50039772",
+      "headline": "UFC fighter Barcelos 'stable, alert' after TKO loss in main event",
+      "summary": "Saturday night's UFC main event bout between Raul Rosas Jr. and Raoni Barcelos took a scary turn when Barcelos appeared to lose consciousness in the final round and had to be carried from the cage on a stretcher.",
+      "url": "https://www.espn.com/mma/story/_/id/50039772/barcelos-stretchered-hospitalized-tko-loss-ufc-main-event",
+      "sport": "MMA",
+      "published": "2026-09-27T06:28:19.000Z",
+      "firstSeen": "2026-09-27T06:42:32.864Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50040331",
+      "id": "50040331",
+      "headline": "Rocco Conti's TD run lifts Air Force to 36-33 victory over Nevada in 2OT",
+      "summary": "— Rocco Conti scored on a 7-yard run in the second overtime and Air Force rallied last in a 36-33 victory over Nevada on Saturday night in the Wolf Pack's Mountain West Conference opener.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401864509",
+      "sport": "College football",
+      "published": "2026-09-27T06:27:29.000Z",
+      "firstSeen": "2026-09-27T09:28:36.065Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50036310",
+      "id": "50036310",
+      "headline": "What we know through CFB's Week 4, plus Kamario Taylor's rise and Michigan's karma",
+      "summary": "The best seasons are the ones that force us to keep questioning our assumptions.",
+      "url": "https://www.espn.com/college-football/story/_/page/gamedayfinal092626/2026-college-football-week-4-highlights-top-plays-games-takeaways",
+      "sport": "College football",
+      "published": "2026-09-27T06:26:49.000Z",
+      "firstSeen": "2026-09-27T06:42:32.864Z",
+      "bestRank": 14
+    },
     {
       "key": "50039189",
       "id": "50039189",
@@ -33,6 +264,17 @@
       "published": "2026-09-27T06:10:37.000Z",
       "firstSeen": "2026-09-27T03:34:44.544Z",
       "bestRank": 3
+    },
+    {
+      "key": "50026166",
+      "id": "50026166",
+      "headline": "Which Premier League players got injured in the international break?",
+      "summary": "All the latest news and updates on Premier League stars injuries during the first international break of the 2026-2027 club season",
+      "url": "https://www.espn.com/football/story/_/id/50026166/premier-league-international-break-arsenal-chelsea-manchester-united",
+      "sport": "Soccer",
+      "published": "2026-09-27T06:03:32.000Z",
+      "firstSeen": "2026-09-25T12:39:34.492Z",
+      "bestRank": 1
     },
     {
       "key": "50040266",
@@ -101,17 +343,6 @@
       "bestRank": 7
     },
     {
-      "key": "50040141",
-      "id": "50040141",
-      "headline": "Padres secure home-field advantage in wild-card rematch with Cubs",
-      "summary": "The Padres beat the Diamondbacks 10-7 on Saturday to wrap up the No. 4 seed in the NL playoffs and will host every game in a best-of-three Wild Card Series against the fifth-seeded Cubs.",
-      "url": "https://www.espn.com/mlb/story/_/id/50040141/padres-secure-home-field-advantage-wild-card-rematch-cubs",
-      "sport": "MLB",
-      "published": "2026-09-27T05:41:26.000Z",
-      "firstSeen": "2026-09-27T06:42:32.864Z",
-      "bestRank": 2
-    },
-    {
       "key": "50039257",
       "id": "50039257",
       "headline": "Mestemaker throws for 389 yards and 3 TDs as Oklahoma State beats West Virginia 41-24",
@@ -167,17 +398,6 @@
       "bestRank": 1
     },
     {
-      "key": "50036310",
-      "id": "50036310",
-      "headline": "What we know through CFB's Week 4, plus Kamario Taylor's rise and Michigan's karma",
-      "summary": "The best seasons are the ones that force us to keep questioning our assumptions.",
-      "url": "https://www.espn.com/college-football/story/_/page/gamedayfinal092626/2026-college-football-week-4-highlights-top-plays-games-takeaways",
-      "sport": "College football",
-      "published": "2026-09-27T05:10:14.000Z",
-      "firstSeen": "2026-09-27T06:42:32.864Z",
-      "bestRank": 14
-    },
-    {
       "key": "50039929",
       "id": "50039929",
       "headline": "Host Jalen Brunson gets assist from Knicks on 'SNL' premiere",
@@ -198,17 +418,6 @@
       "published": "2026-09-27T05:05:11.000Z",
       "firstSeen": "2026-09-27T06:42:32.864Z",
       "bestRank": 20
-    },
-    {
-      "key": "50039772",
-      "id": "50039772",
-      "headline": "Barcelos hospitalized after TKO loss to Rosas in UFC main event",
-      "summary": "Saturday night's UFC main event bout between Raul Rosas Jr. and Raoni Barcelos took a scary turn when Barcelos was knocked unconscious in the final round and had to be carried from the cage on a stretcher.",
-      "url": "https://www.espn.com/mma/story/_/id/50039772/barcelos-stretchered-hospitalized-tko-loss-ufc-main-event",
-      "sport": "MMA",
-      "published": "2026-09-27T05:03:58.000Z",
-      "firstSeen": "2026-09-27T06:42:32.864Z",
-      "bestRank": 1
     },
     {
       "key": "50038621",
@@ -387,17 +596,6 @@
       "bestRank": 6
     },
     {
-      "key": "50039935",
-      "id": "50039935",
-      "headline": "Kamario Taylor leads 4th-quarter rally and No. 24 Mississippi State beats No. 19 Missouri 31-24",
-      "summary": "— Kamario Taylor threw for 360 yards and three touchdowns, including a tiebreaking, 24-yard pass to Sanfrisco Magee with 3:57 remaining, and No. 24 Mississippi State rallied past No. 19 Missouri 31-24 on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856703",
-      "sport": "College football",
-      "published": "2026-09-27T04:35:29.000Z",
-      "firstSeen": "2026-09-27T06:42:32.864Z",
-      "bestRank": 15
-    },
-    {
       "key": "50039951",
       "id": "50039951",
       "headline": "JP Pickles helps Mercer edge Abilene Christian 34-17",
@@ -506,6 +704,17 @@
       "published": "2026-09-27T03:49:30.000Z",
       "firstSeen": "2026-09-27T06:42:32.864Z",
       "bestRank": 16
+    },
+    {
+      "key": "50037429",
+      "id": "50037429",
+      "headline": "U.S. down 3 at Presidents Cup as International team rallies",
+      "summary": "The Americans twice filled the leaderboard with their red numbers and the Internationals never flinched Saturday, fighting back in the morning and afternoon to take a three-point lead in the Presidents Cup.",
+      "url": "https://www.espn.com/golf/story/_/id/50037429/us-minus-scheffler-foursomes-3-presidents-cup",
+      "sport": "Golf",
+      "published": "2026-09-27T03:46:09.000Z",
+      "firstSeen": "2026-09-27T03:34:44.544Z",
+      "bestRank": 1
     },
     {
       "key": "50024309",
@@ -1036,17 +1245,6 @@
       "bestRank": 1
     },
     {
-      "key": "50037429",
-      "id": "50037429",
-      "headline": "U.S., minus Scheffler in foursomes, down 3 at Presidents Cup",
-      "summary": "The Americans twice filled the leaderboard with their red numbers and the Internationals never flinched Saturday, fighting back in the morning and afternoon to take a three-point lead in the Presidents Cup.",
-      "url": "https://www.espn.com/golf/story/_/id/50037429/us-minus-scheffler-foursomes-3-presidents-cup",
-      "sport": "Golf",
-      "published": "2026-09-27T02:17:00.000Z",
-      "firstSeen": "2026-09-27T03:34:44.544Z",
-      "bestRank": 1
-    },
-    {
       "key": "50039030",
       "id": "50039030",
       "headline": "Mercyhurst Lakers vs. Western Kentucky Hilltoppers: Full Highlights",
@@ -1333,6 +1531,17 @@
       "bestRank": 47
     },
     {
+      "key": "50038230",
+      "id": "50038230",
+      "headline": "Herc Gomez: USMNT debutants made their mark in 4-1 win vs. Peru",
+      "summary": "Herc Gomez: USMNT debutants made their mark in 4-1 win vs. Peru",
+      "url": "https://www.espn.com/video/clip/_/id/50038230/usmnt-debutants-made-their-mark-4-1-win-vs-peru",
+      "sport": "Soccer",
+      "published": "2026-09-27T01:25:28.000Z",
+      "firstSeen": "2026-09-27T06:42:32.864Z",
+      "bestRank": 1
+    },
+    {
       "key": "50038541",
       "id": "50038541",
       "headline": "Fort Valley State Wildcats vs. West Georgia Wolves: Full Highlights",
@@ -1396,17 +1605,6 @@
       "sport": "College football",
       "published": "2026-09-27T01:01:08.000Z",
       "firstSeen": "2026-09-27T01:10:13.743Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50038230",
-      "id": "50038230",
-      "headline": "Herc Gomez: USMNT debutants made their mark in 4-1 win vs. Peru",
-      "summary": "Herc Gomez: USMNT debutants made their mark in 4-1 win vs. Peru",
-      "url": "https://www.espn.com/video/clip/_/id/50038230/usmnt-debutants-made-their-mark-4-1-win-vs-peru",
-      "sport": "Soccer",
-      "published": "2026-09-27T01:00:10.000Z",
-      "firstSeen": "2026-09-27T06:42:32.864Z",
       "bestRank": 1
     },
     {
@@ -3167,28 +3365,6 @@
       "sport": "Soccer",
       "published": "2026-09-26T12:03:43.000Z",
       "firstSeen": "2026-09-25T15:28:35.624Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50026166",
-      "id": "50026166",
-      "headline": "Which Premier League players got injured in the international break?",
-      "summary": "All the latest news and updates on Premier League stars injuries during the first international break of the 2026-2027 club season",
-      "url": "https://www.espn.com/football/story/_/id/50026166/premier-league-international-break-arsenal-chelsea-manchester-united",
-      "sport": "Soccer",
-      "published": "2026-09-26T11:31:41.000Z",
-      "firstSeen": "2026-09-25T12:39:34.492Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50029047",
-      "id": "50029047",
-      "headline": "Rio Ferdinand leads reaction to Man City's 115 breaches case: 'Another Premier League medal'",
-      "summary": "The football world has been reacting to reports that Manchester City are expected to be found guilty of most charges in their legal battle with the Premier League.",
-      "url": "https://www.espn.com/soccer/story/_/id/50029047/rio-ferdinand-david-de-gea-football-world-reaction-man-city-115-premier-league-breaches-case",
-      "sport": "Soccer",
-      "published": "2026-09-26T11:18:49.000Z",
-      "firstSeen": "2026-09-26T01:00:10.067Z",
       "bestRank": 1
     },
     {
@@ -6431,7 +6607,7 @@
       "headline": "Inside the basketball of 'One Tree Hill' 23 years later",
       "summary": "In honor of 23 years since \"One Tree Hill\" premiered, James Lafferty & Co. take us inside the basketball heart of the cult classic TV show.",
       "url": "https://www.espn.com/nba/story/_/id/50009423/one-tree-hill-23-anniversary-basketball-michael-jordan-wilmington-north-carolina-james-lafferty",
-      "sport": "College basketball",
+      "sport": "NBA",
       "published": "2026-09-25T02:37:40.000Z",
       "firstSeen": "2026-09-23T15:28:31.782Z",
       "bestRank": 1
@@ -8015,7 +8191,7 @@
       "headline": "Reranking the men's basketball recruiting class of 2024",
       "summary": "Cooper Flagg remains No. 1 in this high school class -- but we admit to some mistakes for the rest of the list.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50015657/mens-college-basketball-recruiting-reranking-scnext-100-class-2024-cooper-flagg-dylan-harper",
-      "sport": "College basketball",
+      "sport": "NBA",
       "published": "2026-09-24T11:35:40.000Z",
       "firstSeen": "2026-09-24T12:39:47.793Z",
       "bestRank": 1
@@ -47597,226 +47773,6 @@
       "published": "2026-09-06T10:00:01.000Z",
       "firstSeen": "2026-09-06T12:33:06.293Z",
       "bestRank": 4
-    },
-    {
-      "key": "49846491",
-      "id": "49846491",
-      "headline": "Tottenham boss Roberto De Zerbi says Mykhailo Mudryk will need time to find his best form",
-      "summary": "Tottenham boss Roberto De Zerbi has said Mykhailo Mudryk will need time to show his best after making his first appearance in almost two years.",
-      "url": "https://www.espn.com/soccer/story/_/id/49846491/tottenham-boss-roberto-de-zerbi-says-mykhailo-mudryk-need-find-best-form",
-      "sport": "Soccer",
-      "published": "2026-09-06T09:12:19.000Z",
-      "firstSeen": "2026-09-06T12:33:06.293Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49846251",
-      "id": "49846251",
-      "headline": "Padres and Yankees play with series tied 1-1",
-      "summary": "New York Yankees (81-61, second in the AL East) vs. San Diego Padres (74-68, third in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816840",
-      "sport": "MLB",
-      "published": "2026-09-06T08:03:17.000Z",
-      "firstSeen": "2026-09-06T12:33:06.293Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49846250",
-      "id": "49846250",
-      "headline": "Rockies and Cardinals play, winner takes 3-game series",
-      "summary": "St. Louis Cardinals (71-72, third in the NL Central) vs. Colorado Rockies (55-87, fifth in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816838",
-      "sport": "MLB",
-      "published": "2026-09-06T08:03:13.000Z",
-      "firstSeen": "2026-09-06T12:33:06.293Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49846249",
-      "id": "49846249",
-      "headline": "Pirates and Angels square off with series tied 1-1",
-      "summary": "Los Angeles Angels (54-88, fifth in the AL West) vs. Pittsburgh Pirates (70-73, fourth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816827",
-      "sport": "MLB",
-      "published": "2026-09-06T08:03:09.000Z",
-      "firstSeen": "2026-09-06T12:33:06.293Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49846248",
-      "id": "49846248",
-      "headline": "Astros and Diamondbacks meet to determine series winner",
-      "summary": "Arizona Diamondbacks (75-68, second in the NL West) vs. Houston Astros (73-70, first in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816834",
-      "sport": "MLB",
-      "published": "2026-09-06T08:03:05.000Z",
-      "firstSeen": "2026-09-06T12:33:06.293Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49846247",
-      "id": "49846247",
-      "headline": "Orioles host the Red Sox on 4-game home slide",
-      "summary": "Boston Red Sox (78-65, third in the AL East) vs. Baltimore Orioles (69-74, fifth in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816829",
-      "sport": "MLB",
-      "published": "2026-09-06T08:03:02.000Z",
-      "firstSeen": "2026-09-06T09:25:27.088Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49846246",
-      "id": "49846246",
-      "headline": "Philadelphia Phillies host the Atlanta Braves Sunday",
-      "summary": "Atlanta Braves (84-58, first in the NL East) vs. Philadelphia Phillies (80-62, second in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816828",
-      "sport": "MLB",
-      "published": "2026-09-06T08:02:58.000Z",
-      "firstSeen": "2026-09-06T09:25:27.088Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49846245",
-      "id": "49846245",
-      "headline": "Cubs take win streak into game against the Marlins",
-      "summary": "Chicago Cubs (81-62, second in the NL Central) vs. Miami Marlins (71-72, third in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816830",
-      "sport": "MLB",
-      "published": "2026-09-06T08:02:55.000Z",
-      "firstSeen": "2026-09-06T09:25:27.088Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49846244",
-      "id": "49846244",
-      "headline": "Greene leads Tigers against the Guardians following 4-hit performance",
-      "summary": "Detroit Tigers (65-77, fourth in the AL Central) vs. Cleveland Guardians (72-71, second in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816831",
-      "sport": "MLB",
-      "published": "2026-09-06T08:02:51.000Z",
-      "firstSeen": "2026-09-06T09:25:27.088Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49846243",
-      "id": "49846243",
-      "headline": "Mets and Giants meet with series tied 1-1",
-      "summary": "San Francisco Giants (59-84, fourth in the NL West) vs. New York Mets (64-78, fifth in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816833",
-      "sport": "MLB",
-      "published": "2026-09-06T08:02:48.000Z",
-      "firstSeen": "2026-09-06T09:25:27.088Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49846241",
-      "id": "49846241",
-      "headline": "Okamoto leads Blue Jays against the Royals following 4-hit performance",
-      "summary": "Toronto Blue Jays (72-71, fourth in the AL East) vs. Kansas City Royals (63-80, fifth in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816837",
-      "sport": "MLB",
-      "published": "2026-09-06T08:02:44.000Z",
-      "firstSeen": "2026-09-06T09:25:27.088Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49846240",
-      "id": "49846240",
-      "headline": "Nationals try to end road slide, play the Dodgers",
-      "summary": "Washington Nationals (67-77, fourth in the NL East) vs. Los Angeles Dodgers (85-57, first in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816841",
-      "sport": "MLB",
-      "published": "2026-09-06T08:02:41.000Z",
-      "firstSeen": "2026-09-06T09:25:27.088Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49846239",
-      "id": "49846239",
-      "headline": "Mariners look to break 3-game skid, play the Athletics",
-      "summary": "Athletics (57-86, fourth in the AL West) vs. Seattle Mariners (66-77, third in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816839",
-      "sport": "MLB",
-      "published": "2026-09-06T08:02:37.000Z",
-      "firstSeen": "2026-09-06T09:25:27.088Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49843492",
-      "id": "49843492",
-      "headline": "The Americans still playing at the US Open",
-      "summary": "After another wildly unpredictable start to a major, the second week of the US Open is upon us. And there are 10 Americans left in the draw.",
-      "url": "https://www.espn.com/tennis/story/_/id/49843492/us-open-2026-americans-coco-gauff-ben-shelton-frances-tiafoe-jessica-pegula",
-      "sport": "Tennis",
-      "published": "2026-09-06T07:52:44.000Z",
-      "firstSeen": "2026-09-06T12:33:06.293Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49845886",
-      "id": "49845886",
-      "headline": "UCLA opens Bob Chesney era with a 45-24 win over former Pac-12 rival California",
-      "summary": "— Wayne Knight ran for two touchdowns in the fourth quarter following interceptions by Ta'Shawn James and UCLA opened the Bob Chesney era with a 45-24 victory over California on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858210",
-      "sport": "College football",
-      "published": "2026-09-06T07:24:29.000Z",
-      "firstSeen": "2026-09-06T12:33:06.293Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49845870",
-      "id": "49845870",
-      "headline": "Swinney says Clemson has 'long way to go' after loss to LSU",
-      "summary": "Clemson coach Dabo Swinney made no excuses after his team's 51-10 loss to LSU on Saturday, saying simply, \"We didn't do football stuff well enough.\"",
-      "url": "https://www.espn.com/college-football/story/_/id/49845870/swinney-says-clemson-long-way-go-loss-lsu",
-      "sport": "College football",
-      "published": "2026-09-06T07:08:25.000Z",
-      "firstSeen": "2026-09-06T12:33:06.293Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49839555",
-      "id": "49839555",
-      "headline": "Taylor Fritz blows 2-set lead, falls to Francisco Cerundolo in US Open",
-      "summary": "No. 9 seed Taylor Fritz blew a two-set lead at the US Open and went out in a shocker with a 3-6, 4-6, 6-3, 6-4, 6-4 loss at the hands of No. 24 Francisco Cerundolo on Saturday.",
-      "url": "https://www.espn.com/tennis/story/_/id/49839555/taylor-fritz-blows-2-set-lead-falls-francisco-cerundolo-us-open",
-      "sport": "Tennis",
-      "published": "2026-09-06T07:02:05.000Z",
-      "firstSeen": "2026-09-06T01:06:28.408Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49845909",
-      "id": "49845909",
-      "headline": "UCLA Bruins vs. California Golden Bears: Full Highlights",
-      "summary": "UCLA Bruins vs. California Golden Bears: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49845909/full-highlights",
-      "sport": "College football",
-      "published": "2026-09-06T06:49:30.000Z",
-      "firstSeen": "2026-09-06T12:33:06.293Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49842102",
-      "id": "49842102",
-      "headline": "Welcome to the Lane Kiffin Show: Sights and sounds from LSU",
-      "summary": "Amid controversy and surrounded by celebrities, Kiffin's debut a smashing success.",
-      "url": "https://www.espn.com/college-football/story/_/id/49842102/lane-kiffin-show-lsu-college-football-2026-opener-sights-sounds",
-      "sport": "College football",
-      "published": "2026-09-06T06:45:57.000Z",
-      "firstSeen": "2026-09-06T06:37:40.771Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49845348",
-      "id": "49845348",
-      "headline": "Lane Kiffin's debut with No. 11 LSU matches the hype in a 51-10 victory over outmatched Clemson",
-      "summary": "— Lane Kiffin's LSU debut was delayed, but by no means derailed.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856660",
-      "sport": "College football",
-      "published": "2026-09-06T06:42:41.000Z",
-      "firstSeen": "2026-09-06T06:37:40.771Z",
-      "bestRank": 2
     }
   ]
 }
