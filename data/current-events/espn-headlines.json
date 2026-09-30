@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-09-30T18:35:10.675Z",
+  "generatedAt": "2026-09-30T21:29:29.506Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-09T18:35:10.675Z",
-  "windowEnd": "2026-09-30T18:35:10.675Z",
+  "windowStart": "2026-09-09T21:29:29.506Z",
+  "windowEnd": "2026-09-30T21:29:29.506Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,18 +21,29 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4423,
+  "count": 4417,
   "items": [
     {
-      "key": "50069756",
-      "id": "50069756",
-      "headline": "Chiefs LT Simmons recovering from bulging disk, Reid says",
-      "summary": "Chiefs coach Andy Reid said on Wednesday that left tackle Josh Simmons, who has not practiced with his teammates since Aug. 17, is recovering from a bulging disc.",
-      "url": "https://www.espn.com/nfl/story/_/id/50069756/chiefs-lt-simmons-recovering-bulging-disk-reid-says",
+      "key": "50071302",
+      "id": "50071302",
+      "headline": "Giants' Harbaugh explains reasoning for releasing Beckham",
+      "summary": "Giants coach John Harbaugh on Wednesday explained the team's decision for releasing wide receiver Odell Beckham Jr.",
+      "url": "https://www.espn.com/nfl/story/_/id/50071302/giants-harbaugh-explains-reasoning-releasing-beckham",
       "sport": "NFL",
-      "published": "2026-09-30T18:26:11.000Z",
-      "firstSeen": "2026-09-30T18:35:10.675Z",
+      "published": "2026-09-30T21:24:55.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
       "bestRank": 1
+    },
+    {
+      "key": "50067397",
+      "id": "50067397",
+      "headline": "What's level of concern for Panthers' notable injuries before Week 4 vs. Lions?",
+      "summary": "Ahead of its first primetime game of the season Sunday, Carolina has seven noteworthy injuries to monitor.",
+      "url": "https://www.espn.com/nfl/story/_/id/50067397/carolina-panthers-concern-injuries-week-4-game-lions",
+      "sport": "NFL",
+      "published": "2026-09-30T21:24:50.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 4
     },
     {
       "key": "50045993",
@@ -41,9 +52,317 @@
       "summary": "Which teams will sweep and which will force a Game 3? We've got it all covered for you.",
       "url": "https://www.espn.com/mlb/story/_/id/50045993/mlb-playoffs-2026-wild-card-game-2-live-updates-analysis-takeaways",
       "sport": "MLB",
-      "published": "2026-09-30T18:25:47.000Z",
+      "published": "2026-09-30T21:21:01.000Z",
       "firstSeen": "2026-09-30T12:45:55.090Z",
       "bestRank": 1
+    },
+    {
+      "key": "50022544",
+      "id": "50022544",
+      "headline": "2026 MLB playoffs: Schedule, postseason bracket, standings",
+      "summary": "We have your one-stop shop for everything you need to keep up with all the action this October.",
+      "url": "https://www.espn.com/mlb/story/_/id/50022544/2026-mlb-playoffs-schedule-how-watch-postseason-world-series-bracket-standings",
+      "sport": "MLB",
+      "published": "2026-09-30T21:20:41.000Z",
+      "firstSeen": "2026-09-28T01:09:56.325Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50071291",
+      "id": "50071291",
+      "headline": "Philadelphia Phillies vs. Atlanta Braves: Game Highlights",
+      "summary": "Philadelphia Phillies vs. Atlanta Braves: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50071291/game-highlights",
+      "sport": "MLB",
+      "published": "2026-09-30T21:20:27.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50070582",
+      "id": "50070582",
+      "headline": "Red Sox's Roman Anthony ruled out of ALWCS with hand, wrist injuries",
+      "summary": "Red Sox outfielder Roman Anthony has been ruled out of the AL Wild Card Series and the foreseeable future after damaging muscles in his wrist during Game 1, Red Sox manager Chad Tracy said Wednesday.",
+      "url": "https://www.espn.com/mlb/story/_/id/50070582/roman-anthony-hand-red-sox-lineup-game-2-alwcs",
+      "sport": "MLB",
+      "published": "2026-09-30T21:05:16.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50070841",
+      "id": "50070841",
+      "headline": "Stars sign backup goalie DeSmith to 2-year, $5M extension",
+      "summary": "The Stars signed backup goaltender Casey DeSmith to a two-year, $5 million contract extension that runs through the 2028-29 season.",
+      "url": "https://www.espn.com/nhl/story/_/id/50070841/stars-sign-backup-goalie-desmith-2-year-5m-extension",
+      "sport": "NHL",
+      "published": "2026-09-30T20:58:15.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50028196",
+      "id": "50028196",
+      "headline": "NBA preseason buzz: Latest on trades, news and intel",
+      "summary": "The NBA regular season is less than a month away, and we're tracking all the news, deals, and trades across the league.",
+      "url": "https://www.espn.com/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals",
+      "sport": "NBA",
+      "published": "2026-09-30T20:48:08.000Z",
+      "firstSeen": "2026-09-28T12:44:52.879Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50070621",
+      "id": "50070621",
+      "headline": "Joe Espada to 'move on' from Astros' reaction to fans' boos",
+      "summary": "Astros manager Joe Espada spoke to his players, attempting to tamp down the emotions after his team was booed by the home crowd in Game 1.",
+      "url": "https://www.espn.com/mlb/story/_/id/50070621/joe-espada-move-astros-reaction-fans-boos",
+      "sport": "MLB",
+      "published": "2026-09-30T20:44:35.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 5
+    },
+    {
+      "key": "48476156",
+      "id": "48476156",
+      "headline": "2026 NFL awards tracker: Odds for MVP, Rookie of the Year and more",
+      "summary": "Who are the favorites to win seasonlong honors? Here are the odds for MVP, Rookie of the Year and more.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/48476156/2026-nfl-awards-betting-odds-mvp-rookie-year-offensive-defensive-player-coach",
+      "sport": "NFL",
+      "published": "2026-09-30T20:40:10.000Z",
+      "firstSeen": "2026-09-09T18:32:12.007Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50068364",
+      "id": "50068364",
+      "headline": "Panthers CBs Jaycee Horn, Mike Jackson placed on IR",
+      "summary": "The Panthers have placed starting cornerbacks Jaycee Horn (quad) and Mike Jackson (groin) on injured reserve after both were injured in the Week 3 loss to the Browns.",
+      "url": "https://www.espn.com/nfl/story/_/id/50068364/panthers-cbs-jaycee-horn-mike-jackson-placed-ir",
+      "sport": "NFL",
+      "published": "2026-09-30T20:39:03.000Z",
+      "firstSeen": "2026-09-30T18:35:10.675Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50067128",
+      "id": "50067128",
+      "headline": "Packers, guard Kevin Zeitler agree to one-year deal",
+      "summary": "Veteran guard Kevin Zeitler is signing a one-year deal with the Packers, sources told ESPN's Adam Schefter.",
+      "url": "https://www.espn.com/nfl/story/_/id/50067128/packers-guard-kevin-zeitler-agree-one-year-deal",
+      "sport": "NFL",
+      "published": "2026-09-30T20:34:57.000Z",
+      "firstSeen": "2026-09-30T15:32:20.020Z",
+      "bestRank": 12
+    },
+    {
+      "key": "40699880",
+      "id": "40699880",
+      "headline": "Fantasy football buzz: Jaylen Warren in for heavy workload, 10 trends to know before you set your lineup",
+      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "sport": "NFL",
+      "published": "2026-09-30T20:33:19.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50070779",
+      "id": "50070779",
+      "headline": "76ers guard Tyrese Maxey: 'I want to be judged by winning'",
+      "summary": "Coming off a career year, Tyrese Maxey said he doesn't want to be judged by how he does individually but by how the 76ers do as a team this year.",
+      "url": "https://www.espn.com/nba/story/_/id/50070779/76ers-guard-tyrese-maxey-want-judged-winning",
+      "sport": "NBA",
+      "published": "2026-09-30T20:29:50.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50070968",
+      "id": "50070968",
+      "headline": "Astros' Daulton Varsho has wrist surgery, done for season",
+      "summary": "Astros center fielder Daulton Varsho underwent left arthroscopic wrist surgery on Tuesday, a procedure that will sideline him for the entire postseason.",
+      "url": "https://www.espn.com/mlb/story/_/id/50070968/astros-daulton-varsho-wrist-surgery-done-season",
+      "sport": "MLB",
+      "published": "2026-09-30T20:29:20.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50060732",
+      "id": "50060732",
+      "headline": "Sources: NBA reviewing bids from three finalists for Vegas team",
+      "summary": "The NBA is expected to select the winning bid for owner of the Las Vegas expansion team from among three finalist groups: Nancy Walton Laurie and Bill Laurie; Steve Apostolopoulos and Marc Lasry; and Bill Foley and Jerry Colangelo.",
+      "url": "https://www.espn.com/nba/story/_/id/50060732/nba-reviewing-finalists-bids-vegas-team-12-13b",
+      "sport": "NBA",
+      "published": "2026-09-30T20:28:13.000Z",
+      "firstSeen": "2026-09-29T21:28:15.207Z",
+      "bestRank": 2
+    },
+    {
+      "key": "41589293",
+      "id": "41589293",
+      "headline": "Who has scored the most goals in NHL history?",
+      "summary": "Alex Ovechkin holds the record for the most individual career goals in NHL history. Which other players are at the top of the list?",
+      "url": "https://www.espn.com/nhl/story/_/id/41589293/who-scored-most-goals-nhl-history",
+      "sport": "NHL",
+      "published": "2026-09-30T20:21:43.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50070581",
+      "id": "50070581",
+      "headline": "Steelers rule Joey Porter out again; Jalen Ramsey questionable",
+      "summary": "Steelers cornerback Joey Porter will miss his fourth straight game as he has officially been declared out for Thursday night's game against the Browns.",
+      "url": "https://www.espn.com/nfl/story/_/id/50070581/steelers-rule-joey-porter-again-jalen-ramsey-questionable",
+      "sport": "NFL",
+      "published": "2026-09-30T20:12:28.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50070652",
+      "id": "50070652",
+      "headline": "Shams: Bids for Las Vegas NBA expansion team down to 3 finalists",
+      "summary": "Shams: Bids for Las Vegas NBA expansion team down to 3 finalists",
+      "url": "https://www.espn.com/video/clip/_/id/50070652/bids-las-vegas-nba-expansion-team-3-finalists",
+      "sport": "NBA",
+      "published": "2026-09-30T20:09:08.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50070647",
+      "id": "50070647",
+      "headline": "Steelers head to Cleveland for matchup of 2-1 teams in Aaron Rodgers' final Thursday night game",
+      "summary": "— Aaron Rodgers' NFL farewell tour continues with his final scheduled Thursday night game when the Pittsburgh Steelers face the Cleveland Browns.",
+      "url": "http://www.espn.com/nfl/preview?gameId=401872964",
+      "sport": "NFL",
+      "published": "2026-09-30T19:59:33.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50069509",
+      "id": "50069509",
+      "headline": "Titans' Cam Ward on fans' threats to family: 'People are weird'",
+      "summary": "Titans quarterback Cam Ward on Wednesday addressed fans' threats to his family on social media.",
+      "url": "https://www.espn.com/nfl/story/_/id/50069509/titans-cam-ward-fans-threats-family-people-weird",
+      "sport": "NFL",
+      "published": "2026-09-30T19:48:09.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50070532",
+      "id": "50070532",
+      "headline": "Cam Ward reacts to threats made against his family",
+      "summary": "Cam Ward reacts to threats made against his family",
+      "url": "https://www.espn.com/video/clip/_/id/50070532/cam-ward-reacts-threats-made-family",
+      "sport": "NFL",
+      "published": "2026-09-30T19:47:18.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50053052",
+      "id": "50053052",
+      "headline": "QB rankings for all 68 Power 4 college football teams",
+      "summary": "We've seen four weeks of football. How has that changed our opinions about the top signal-callers.",
+      "url": "https://www.espn.com/college-football/story/_/id/50053052/ranking-quarterbacks-college-football-power-4-teams-2026",
+      "sport": "College football",
+      "published": "2026-09-30T19:39:32.000Z",
+      "firstSeen": "2026-09-30T12:45:55.090Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50070155",
+      "id": "50070155",
+      "headline": "Clippers' Brandon Ingram gets in light work before practice",
+      "summary": "Brandon Ingram, recovering from heel surgery, got in some light shooting and court work ahead of Clippers practice Tuesday in Hawai'i.",
+      "url": "https://www.espn.com/nba/story/_/id/50070155/clippers-brandom-ingram-gets-light-work-practice",
+      "sport": "NBA",
+      "published": "2026-09-30T19:26:10.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50069755",
+      "id": "50069755",
+      "headline": "Fantasy basketball: Ajay Mitchell, Ayo Dosunmu and other top sleepers to target",
+      "summary": "Jim McCormick highlights the lesser known players who could be worth taking a flyer on in the final rounds of your fantasy draft.",
+      "url": "https://www.espn.com/fantasy/basketball/story/_/id/50069755/fantasy-basketball-top-sleepers-target-nba-2026-27",
+      "sport": "NBA",
+      "published": "2026-09-30T19:19:03.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50070178",
+      "id": "50070178",
+      "headline": "College Football Playoff leaders continue to discuss 24-team model",
+      "summary": "CFP leaders continued to discuss a 24-team model but didn't vote on any calendar or scheduling changes for the 2027 season as negotiations with ESPN continue.",
+      "url": "https://www.espn.com/college-football/story/_/id/50070178/college-football-playoff-leaders-continue-discuss-24-team-model",
+      "sport": "College football",
+      "published": "2026-09-30T19:18:48.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50053313",
+      "id": "50053313",
+      "headline": "Who will find the end zone? Top predicted TD scorers for Week 4",
+      "summary": "Mike Clay reveals his top predicted Week 4 TD scorers, including Derrick Henry, Kenneth Walker III and more.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50053313/nfl-week-4-touchdown-betting-odds-end-zone-scoring-predictions",
+      "sport": "NFL",
+      "published": "2026-09-30T19:15:37.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50069425",
+      "id": "50069425",
+      "headline": "NFL survivor power rankings: Why you should use Vikings, Seahawks",
+      "summary": "ESPN NFL survivor pool strategy, predictions and picks for Week 4 including the Vikings and Seahawks.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50069425/espn-nfl-survivor-week-4-survivor-pool-strategy-advice-picks-predictions",
+      "sport": "NFL",
+      "published": "2026-09-30T19:13:01.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50067224",
+      "id": "50067224",
+      "headline": "Avalanche signing coach Jared Bednar to four-year extension",
+      "summary": "After he was set to coach on the final season of his contract, the Avalanche's Jared Bednar is getting a four-year extension.",
+      "url": "https://www.espn.com/nhl/story/_/id/50067224/avalanche-sign-coach-jared-bednar-four-year-extension",
+      "sport": "NHL",
+      "published": "2026-09-30T18:47:36.000Z",
+      "firstSeen": "2026-09-30T15:32:20.020Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50069756",
+      "id": "50069756",
+      "headline": "Chiefs LT Simmons recovering from bulging disk, Reid says",
+      "summary": "Chiefs coach Andy Reid said on Wednesday that left tackle Josh Simmons, who has not practiced with his teammates since Aug. 17, is recovering from a bulging disc.",
+      "url": "https://www.espn.com/nfl/story/_/id/50069756/chiefs-lt-simmons-recovering-bulging-disk-reid-says",
+      "sport": "NFL",
+      "published": "2026-09-30T18:36:07.000Z",
+      "firstSeen": "2026-09-30T18:35:10.675Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50069241",
+      "id": "50069241",
+      "headline": "Michael Jordan's Game 3 'Last Dance' jersey sold for record amount",
+      "summary": "Jordan wore the jersey in Game 3 of the 1998 NBA Finals.",
+      "url": "https://www.espn.com/nba/story/_/id/50069241/michael-jordan-last-dance-game-3-1998-nba-finals-game-worn-jersey-auction-record",
+      "sport": "NBA",
+      "published": "2026-09-30T18:34:36.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 6
     },
     {
       "key": "50069438",
@@ -79,6 +398,39 @@
       "bestRank": 2
     },
     {
+      "key": "50069596",
+      "id": "50069596",
+      "headline": "What Wayne Gretzky admires in 'leader' Matthew Tkachuk",
+      "summary": "What Wayne Gretzky admires in 'leader' Matthew Tkachuk",
+      "url": "https://www.espn.com/video/clip/_/id/50069596/what-wayne-gretzky-admires-leader-matthew-tkachuk",
+      "sport": "NHL",
+      "published": "2026-09-30T18:09:55.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50068724",
+      "id": "50068724",
+      "headline": "Texas AD calls Longhorns' vulgar celebrations 'embarrassing'",
+      "summary": "Texas athletic director Chris Del Conte apologized for the top-ranked Longhorns' vulgar on-field celebrations during their win over Tennessee and called them \"embarrassing\" for the school.",
+      "url": "https://www.espn.com/college-football/story/_/id/50068724/texas-ad-calls-longhorns-vulgar-celebrations-embarrassing",
+      "sport": "College football",
+      "published": "2026-09-30T17:45:24.000Z",
+      "firstSeen": "2026-09-30T18:35:10.675Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50069082",
+      "id": "50069082",
+      "headline": "No. 3 Notre Dame to challenge its top-ranked defense vs. UNC",
+      "summary": "Notre Dame coach Marcus Freeman said the defense was \"executing better\" as it faces its biggest test yet against North Carolina on Saturday.",
+      "url": "https://www.espn.com/college-football/story/_/id/50069082/no-3-notre-dame-challenge-top-ranked-defense-vs-unc",
+      "sport": "College football",
+      "published": "2026-09-30T17:42:01.000Z",
+      "firstSeen": "2026-09-30T18:35:10.675Z",
+      "bestRank": 1
+    },
+    {
       "key": "50064023",
       "id": "50064023",
       "headline": "Dodgers expect healthier Shohei Ohtani for NLDS opener",
@@ -112,17 +464,6 @@
       "bestRank": 1
     },
     {
-      "key": "50069082",
-      "id": "50069082",
-      "headline": "No. 3 Notre Dame to challenge its top-ranked defense vs. UNC",
-      "summary": "Notre Dame coach Marcus Freeman said the defense was \"executing better\" as it faces its biggest test yet against North Carolina on Saturday.",
-      "url": "https://www.espn.com/college-football/story/_/id/50069082/no-3-notre-dame-challenge-top-ranked-defense-vs-unc",
-      "sport": "College football",
-      "published": "2026-09-30T17:23:45.000Z",
-      "firstSeen": "2026-09-30T18:35:10.675Z",
-      "bestRank": 1
-    },
-    {
       "key": "50068583",
       "id": "50068583",
       "headline": "Packers WR Jayden Reed to undergo season-ending neck surgery",
@@ -143,17 +484,6 @@
       "published": "2026-09-30T17:11:32.000Z",
       "firstSeen": "2026-09-30T15:32:20.020Z",
       "bestRank": 3
-    },
-    {
-      "key": "50068724",
-      "id": "50068724",
-      "headline": "Texas AD calls Longhorns' vulgar celebrations 'embarrassing'",
-      "summary": "Texas athletic director Chris Del Conte apologized for the top-ranked Longhorns' vulgar on-field celebrations during their win over Tennessee and called them \"embarrassing\" for the school.",
-      "url": "https://www.espn.com/college-football/story/_/id/50068724/texas-ad-calls-longhorns-vulgar-celebrations-embarrassing",
-      "sport": "College football",
-      "published": "2026-09-30T16:55:33.000Z",
-      "firstSeen": "2026-09-30T18:35:10.675Z",
-      "bestRank": 2
     },
     {
       "key": "40245876",
@@ -187,17 +517,6 @@
       "published": "2026-09-30T16:33:52.000Z",
       "firstSeen": "2026-09-30T18:35:10.675Z",
       "bestRank": 1
-    },
-    {
-      "key": "50067128",
-      "id": "50067128",
-      "headline": "Packers, guard Kevin Zeitler agree to one-year deal",
-      "summary": "Veteran guard Kevin Zeitler is signing a one-year deal with the Packers, sources told ESPN's Adam Schefter.",
-      "url": "https://www.espn.com/nfl/story/_/id/50067128/packers-guard-kevin-zeitler-agree-one-year-deal",
-      "sport": "NFL",
-      "published": "2026-09-30T16:28:23.000Z",
-      "firstSeen": "2026-09-30T15:32:20.020Z",
-      "bestRank": 12
     },
     {
       "key": "50068588",
@@ -275,28 +594,6 @@
       "published": "2026-09-30T16:00:07.000Z",
       "firstSeen": "2026-09-30T18:35:10.675Z",
       "bestRank": 7
-    },
-    {
-      "key": "50068364",
-      "id": "50068364",
-      "headline": "Panthers CBs Jaycee Horn, Mike Jackson placed on IR",
-      "summary": "The Panthers have placed starting cornerbacks Jaycee Horn (quad) and Mike Jackson (groin) on injured reserve after both were injured in the Week 3 loss to the Browns.",
-      "url": "https://www.espn.com/nfl/story/_/id/50068364/panthers-cbs-jaycee-horn-mike-jackson-placed-ir",
-      "sport": "NFL",
-      "published": "2026-09-30T15:59:15.000Z",
-      "firstSeen": "2026-09-30T18:35:10.675Z",
-      "bestRank": 11
-    },
-    {
-      "key": "40699880",
-      "id": "40699880",
-      "headline": "Fantasy football buzz: Braelon Allen a worthy add; don't forget about Zach Charbonnet",
-      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "sport": "NFL",
-      "published": "2026-09-30T15:56:16.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
     },
     {
       "key": "50068301",
@@ -409,17 +706,6 @@
       "bestRank": 6
     },
     {
-      "key": "50053052",
-      "id": "50053052",
-      "headline": "QB rankings for all 68 Power 4 college football teams",
-      "summary": "We've seen four weeks of football. How has that changed our opinions about the top signal-callers.",
-      "url": "https://www.espn.com/college-football/story/_/id/50053052/ranking-quarterbacks-college-football-power-4-teams-2026",
-      "sport": "College football",
-      "published": "2026-09-30T15:10:08.000Z",
-      "firstSeen": "2026-09-30T12:45:55.090Z",
-      "bestRank": 2
-    },
-    {
       "key": "50067928",
       "id": "50067928",
       "headline": "Why Darren Waller is a top-10 TE for Daniel Dopp in Week 4",
@@ -464,6 +750,17 @@
       "bestRank": 1
     },
     {
+      "key": "50026166",
+      "id": "50026166",
+      "headline": "Which Premier League players got injured in the international break?",
+      "summary": "All the latest news and updates on Premier League stars injuries during the first international break of the 2026-2027 club season",
+      "url": "https://www.espn.com/football/story/_/id/50026166/premier-league-international-break-arsenal-chelsea-manchester-united",
+      "sport": "Soccer",
+      "published": "2026-09-30T14:52:42.000Z",
+      "firstSeen": "2026-09-25T12:39:34.492Z",
+      "bestRank": 1
+    },
+    {
       "key": "50067766",
       "id": "50067766",
       "headline": "Stephen A. putting Cowboys' loss to Ravens more on Dak than Schottenheimer",
@@ -473,6 +770,28 @@
       "published": "2026-09-30T14:51:10.000Z",
       "firstSeen": "2026-09-30T15:32:20.020Z",
       "bestRank": 9
+    },
+    {
+      "key": "50067776",
+      "id": "50067776",
+      "headline": "Independent Football Regulator chief: Man City guilty verdict 'raises serious issues'",
+      "summary": "Manchester City's guilty verdict for breaching Premier League financial rules \"raises serious issues\", according to the chair of English football's independent regulator.",
+      "url": "https://www.espn.com/soccer/story/_/id/50067776/independent-football-regulator-man-city-premier-league-financial-breaches-guilty-verdict",
+      "sport": "Soccer",
+      "published": "2026-09-30T14:50:25.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50065977",
+      "id": "50065977",
+      "headline": "Does Man City's guilty verdict impact Pep Guardiola's legacy as an all-time coaching great?",
+      "summary": "Pep Guardiola won 16 major honors as Man City manager. They all now count for nothing after the Premier League found the club guilty of systematically breaking financial rules.",
+      "url": "https://www.espn.com/soccer/story/_/id/50065977/man-city-premier-league-guilty-verdict-impact-pep-guardiola-legacy-all-great-coach-manager",
+      "sport": "Soccer",
+      "published": "2026-09-30T14:47:50.000Z",
+      "firstSeen": "2026-09-30T15:32:20.020Z",
+      "bestRank": 3
     },
     {
       "key": "50059977",
@@ -504,17 +823,6 @@
       "url": "https://www.espn.com/video/clip/_/id/50067777/get-ready-exciting-college-football-tripleheader-abc",
       "sport": "College football",
       "published": "2026-09-30T14:34:56.000Z",
-      "firstSeen": "2026-09-30T15:32:20.020Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50067224",
-      "id": "50067224",
-      "headline": "Avalanche signing coach Jared Bednar to four-year extension",
-      "summary": "After he was set to coach on the final season of his contract, the Avalanche's Jared Bednar is getting a four-year extension.",
-      "url": "https://www.espn.com/nhl/story/_/id/50067224/avalanche-sign-coach-jared-bednar-four-year-extension",
-      "sport": "NHL",
-      "published": "2026-09-30T14:33:34.000Z",
       "firstSeen": "2026-09-30T15:32:20.020Z",
       "bestRank": 1
     },
@@ -684,17 +992,6 @@
       "bestRank": 4
     },
     {
-      "key": "50065977",
-      "id": "50065977",
-      "headline": "Does Man City's guilty verdict impact Pep Guardiola's legacy as an all-time coaching great?",
-      "summary": "Pep Guardiola won 16 major honors as Man City manager. They all now count for nothing after the Premier League found the club guilty of systematically breaking financial rules.",
-      "url": "https://www.espn.com/soccer/story/_/id/50065977/man-city-premier-league-guilty-verdict-impact-pep-guardiola-legacy-all-great-coach-manager",
-      "sport": "Soccer",
-      "published": "2026-09-30T13:06:32.000Z",
-      "firstSeen": "2026-09-30T15:32:20.020Z",
-      "bestRank": 3
-    },
-    {
       "key": "49954186",
       "id": "49954186",
       "headline": "Fantasy football consistency ratings: 2024 to 2026",
@@ -810,7 +1107,7 @@
       "headline": "What is the Protect College Sports Act? What would the bill do?",
       "summary": "As the Senate looks to pass the landmark bill, we sort the truths from the myths about the Protect College Sports Act.",
       "url": "https://www.espn.com/college-football/story/_/id/50001346/protect-college-sports-act-truths-myths-congress",
-      "sport": "College basketball",
+      "sport": "College football",
       "published": "2026-09-30T12:22:18.000Z",
       "firstSeen": "2026-09-23T21:26:07.769Z",
       "bestRank": 2
@@ -1234,17 +1531,6 @@
       "bestRank": 1
     },
     {
-      "key": "50026166",
-      "id": "50026166",
-      "headline": "Which Premier League players got injured in the international break?",
-      "summary": "All the latest news and updates on Premier League stars injuries during the first international break of the 2026-2027 club season",
-      "url": "https://www.espn.com/football/story/_/id/50026166/premier-league-international-break-arsenal-chelsea-manchester-united",
-      "sport": "Soccer",
-      "published": "2026-09-30T07:26:51.000Z",
-      "firstSeen": "2026-09-25T12:39:34.492Z",
-      "bestRank": 1
-    },
-    {
       "key": "50058399",
       "id": "50058399",
       "headline": "Liverpool can't afford to be without Isak, Gakpo ahead of daunting October fixture list",
@@ -1407,17 +1693,6 @@
       "sport": "WNBA",
       "published": "2026-09-30T04:56:40.000Z",
       "firstSeen": "2026-09-30T01:08:37.426Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50022544",
-      "id": "50022544",
-      "headline": "2026 MLB playoffs: Schedule, postseason bracket, standings",
-      "summary": "We have your one-stop shop for everything you need to keep up with all the action this October.",
-      "url": "https://www.espn.com/mlb/story/_/id/50022544/2026-mlb-playoffs-schedule-how-watch-postseason-world-series-bracket-standings",
-      "sport": "MLB",
-      "published": "2026-09-30T04:56:07.000Z",
-      "firstSeen": "2026-09-28T01:09:56.325Z",
       "bestRank": 2
     },
     {
@@ -1683,17 +1958,6 @@
       "published": "2026-09-30T00:20:30.000Z",
       "firstSeen": "2026-09-30T01:08:37.426Z",
       "bestRank": 4
-    },
-    {
-      "key": "50060732",
-      "id": "50060732",
-      "headline": "Sources: NBA reviewing bids from three finalists for Vegas team",
-      "summary": "The NBA is expected to select the winning bid for owner of the Las Vegas expansion team from among three finalist groups: Nancy Walton Laurie and Bill Laurie; Steve Apostolopoulos and Marc Lasry; and Bill Foley and Jerry Colangelo.",
-      "url": "https://www.espn.com/nba/story/_/id/50060732/nba-reviewing-finalists-bids-vegas-team-12-13b",
-      "sport": "NBA",
-      "published": "2026-09-30T00:13:39.000Z",
-      "firstSeen": "2026-09-29T21:28:15.207Z",
-      "bestRank": 2
     },
     {
       "key": "50061256",
@@ -1980,17 +2244,6 @@
       "published": "2026-09-29T20:47:30.000Z",
       "firstSeen": "2026-09-29T21:28:15.207Z",
       "bestRank": 2
-    },
-    {
-      "key": "50028196",
-      "id": "50028196",
-      "headline": "NBA preseason buzz: Latest on trades, news and intel",
-      "summary": "The NBA regular season is less than a month away, and we're tracking all the news, deals, and trades across the league.",
-      "url": "https://www.espn.com/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals",
-      "sport": "NBA",
-      "published": "2026-09-29T20:45:27.000Z",
-      "firstSeen": "2026-09-28T12:44:52.879Z",
-      "bestRank": 1
     },
     {
       "key": "50061101",
@@ -2790,7 +3043,7 @@
       "headline": "U.S. Senate votes 77-22 to pass Protect College Sports Act",
       "summary": "The Protect College Sports Act, a federal bill aimed at reshaping the industry, took a step toward to becoming law Monday when the U.S. Senate voted 77-22 to pass it, with Ted Cruz saying, \"This bill puts an end to the chaos plaguing college athletics.\"",
       "url": "https://www.espn.com/college-sports/story/_/id/50056206/us-senate-votes-77-22-pass-protect-college-sports-act",
-      "sport": "Women's college basketball",
+      "sport": "College football",
       "published": "2026-09-29T13:37:08.000Z",
       "firstSeen": "2026-09-29T03:35:26.425Z",
       "bestRank": 1
@@ -4209,7 +4462,7 @@
       "headline": "Alabama agrees to 2-year extension, raise with AD Greg Byrne",
       "summary": "Alabama and athletic director Greg Byrne have agreed to a revised two-year contract extension that will pay him an average annual base salary of $2.67 million through June 30, 2033.",
       "url": "https://www.espn.com/college-sports/story/_/id/50053965/alabama-agrees-two-year-extension-raise-ad-greg-byrne",
-      "sport": "Women's college basketball",
+      "sport": "College football",
       "published": "2026-09-28T19:49:27.000Z",
       "firstSeen": "2026-09-28T21:26:45.780Z",
       "bestRank": 1
@@ -4561,7 +4814,7 @@
       "headline": "Big Ten basketball adopts rule preventing pros from returning",
       "summary": "The Big Ten Conference has adopted a rule to prohibit men's and women's basketball players who left school to play professionally from maintaining their eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50053258/big-ten-basketball-adopts-rule-preventing-pros-returning",
-      "sport": "NBA",
+      "sport": "College basketball",
       "published": "2026-09-28T17:28:04.000Z",
       "firstSeen": "2026-09-28T18:35:51.463Z",
       "bestRank": 1
@@ -12936,17 +13189,6 @@
       "published": "2026-09-25T16:05:29.000Z",
       "firstSeen": "2026-09-21T18:32:50.911Z",
       "bestRank": 6
-    },
-    {
-      "key": "48476156",
-      "id": "48476156",
-      "headline": "2026 NFL awards tracker: Odds for MVP, Rookie of the Year and more",
-      "summary": "Who are the favorites to win seasonlong honors? Here are the odds for MVP, Rookie of the Year and more.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/48476156/2026-nfl-awards-betting-odds-mvp-rookie-year-offensive-defensive-player-coach",
-      "sport": "NFL",
-      "published": "2026-09-25T16:02:12.000Z",
-      "firstSeen": "2026-09-09T18:32:12.007Z",
-      "bestRank": 1
     },
     {
       "key": "50027443",
@@ -32743,7 +32985,7 @@
       "headline": "Reports: Miami Hurricanes returning to Nike in '27 on $200M+ deal",
       "summary": "University of Miami athletic teams will be wearing Nike apparel again starting in July 2027, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/49958590/report-miami-hurricanes-going-back-nike-200m+-deal",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-16T19:04:20.000Z",
       "firstSeen": "2026-09-16T21:25:45.412Z",
       "bestRank": 1
@@ -36934,7 +37176,7 @@
       "headline": "FSU fires AD Michael Alford amid looming football questions",
       "summary": "Florida State fired athletic director Michael Alford on Monday as the Seminoles grapple with looming decisions about their football program.",
       "url": "https://www.espn.com/college-football/story/_/id/49939737/fsu-fires-ad-michael-alford-amid-looming-football-questions",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-14T18:30:25.000Z",
       "firstSeen": "2026-09-14T15:28:36.074Z",
       "bestRank": 1
@@ -48367,314 +48609,6 @@
       "published": "2026-09-09T21:35:11.000Z",
       "firstSeen": "2026-09-09T21:23:12.453Z",
       "bestRank": 1
-    },
-    {
-      "key": "49884469",
-      "id": "49884469",
-      "headline": "Vampire Diaries: What a niche fantasy football format can teach you about streaming",
-      "summary": "Vampire Leagues force one player to stream all season. Here's how to do it and how you can apply it to your other leagues.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49884469/vampire-leagues-strategy-lineups",
-      "sport": "NFL",
-      "published": "2026-09-09T21:24:01.000Z",
-      "firstSeen": "2026-09-10T00:59:18.530Z",
-      "bestRank": 14
-    },
-    {
-      "key": "49884041",
-      "id": "49884041",
-      "headline": "Chase Lumpkin, No. 28 recruit in 2027 class, commits to Alabama",
-      "summary": "Top-30 senior Chase Lumpkin has committed to Alabama, he told ESPN on Wednesday, jump-starting Nate Oats' recruiting class with one of the top-ranked guards in the country.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/49884041/chase-lumpkin-commits-alabama-men-basketball",
-      "sport": "College basketball",
-      "published": "2026-09-09T21:08:50.000Z",
-      "firstSeen": "2026-09-10T03:31:41.763Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49884396",
-      "id": "49884396",
-      "headline": "North Carolina reports violation, won't host recruits at ETSU game",
-      "summary": "Bill Belichick's North Carolina Tar Heels won't host recruits for Saturday's home opener against ETSU after self-reporting a recruiting violation.",
-      "url": "https://www.espn.com/college-football/story/_/id/49884396/north-carolina-reports-violation-host-recruits-etsu-game",
-      "sport": "College football",
-      "published": "2026-09-09T21:05:08.000Z",
-      "firstSeen": "2026-09-10T00:59:18.530Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49870674",
-      "id": "49870674",
-      "headline": "2026 FIBA Women's World Cup: Team USA and quarterfinal preview",
-      "summary": "The U.S. women and France remain front-runners as the knockout stage arrives in Berlin, but who else has impressed?",
-      "url": "https://www.espn.com/wnba/story/_/id/49870674/wnba-2026-fiba-world-cup-quarterfinals-team-usa-basketball-preview-rankings",
-      "sport": "WNBA",
-      "published": "2026-09-09T20:59:55.000Z",
-      "firstSeen": "2026-09-09T15:27:13.048Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49860990",
-      "id": "49860990",
-      "headline": "Iga Swiatek vs. Qinwen Zheng: Match Highlights",
-      "summary": "Watch the Match Highlights from Iga Swiatek vs. Qinwen Zheng",
-      "url": "https://www.espn.com/video/clip/_/id/49860990/match-highlights",
-      "sport": "Tennis",
-      "published": "2026-09-09T20:57:05.000Z",
-      "firstSeen": "2026-09-08T03:31:26.476Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49860947",
-      "id": "49860947",
-      "headline": "Mirra Andreeva vs. Anastasia Potapova: Match Highlights",
-      "summary": "Watch the Match Highlights from Mirra Andreeva vs. Anastasia Potapova,",
-      "url": "https://www.espn.com/video/clip/_/id/49860947/match-highlights",
-      "sport": "Tennis",
-      "published": "2026-09-09T20:56:53.000Z",
-      "firstSeen": "2026-09-08T03:31:26.476Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49884393",
-      "id": "49884393",
-      "headline": "Mirra Andreeva vs. Coco Gauff: Match Highlights",
-      "summary": "Mirra Andreeva vs. Coco Gauff: Match Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49884393/match-highlights",
-      "sport": "Tennis",
-      "published": "2026-09-09T20:51:30.000Z",
-      "firstSeen": "2026-09-10T00:59:18.530Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49884367",
-      "id": "49884367",
-      "headline": "Mirra Andreeva vs. Coco Gauff: Match Highlights",
-      "summary": "Mirra Andreeva vs. Coco Gauff: Match Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49884367/match-highlights",
-      "sport": "Tennis",
-      "published": "2026-09-09T20:49:03.000Z",
-      "firstSeen": "2026-09-10T00:59:18.530Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49883607",
-      "id": "49883607",
-      "headline": "LSU tells SEC that Tigers have complied, won't disrupt meeting",
-      "summary": "In what appears to be a deescalation, LSU president Wade Rousse told Greg Sankey that the Tigers have \"complied\" with SEC rules and that the \"issue is moot.\"",
-      "url": "https://www.espn.com/college-football/story/_/id/49883607/lsu-tells-sec-tigers-complied-disrupt-meeting",
-      "sport": "College football",
-      "published": "2026-09-09T20:47:21.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49884214",
-      "id": "49884214",
-      "headline": "Jonathan Greenard back at practice as Eagles prepare for Week 1",
-      "summary": "Eagles edge rusher Jonathan Greenard suited up for practice Wednesday as his new team began preparations for their season opener against the Commanders.",
-      "url": "https://www.espn.com/nfl/story/_/id/49884214/jonathan-greenard-back-practice-eagles-prepare-week-1",
-      "sport": "NFL",
-      "published": "2026-09-09T20:46:09.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49883386",
-      "id": "49883386",
-      "headline": "Panthers owner David Tepper a 'believer' in QB Bryce Young",
-      "summary": "Carolina Panthers owner David Tepper said Wednesday that he is a \"believer\" in starting quarterback Bryce Young.",
-      "url": "https://www.espn.com/nfl/story/_/id/49883386/panthers-owner-david-tepper-believer-qb-bryce-young",
-      "sport": "NFL",
-      "published": "2026-09-09T20:33:47.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49883729",
-      "id": "49883729",
-      "headline": "Bills to include Canadian national anthem at home opener vs. Lions",
-      "summary": "The Buffalo Bills will honor their Canadian fans by having Toronto's Barenaked Ladies perform the country's national anthem at their home opener on Sept. 17.",
-      "url": "https://www.espn.com/nfl/story/_/id/49883729/bills-include-canadian-national-anthem-home-opener-vs-lions",
-      "sport": "NFL",
-      "published": "2026-09-09T20:28:10.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49883284",
-      "id": "49883284",
-      "headline": "Steelers' Cam Heyward not a fan of NFL's 'stupid' franchise tag",
-      "summary": "Steelers veteran defensive lineman and NFLPA executive committee member Cameron Heyward blasted the franchise tag Wednesday, calling the contractual measure \"stupid.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/49883284/steelers-veteran-cam-heyward-calls-nfl-franchise-tag-stupid",
-      "sport": "NFL",
-      "published": "2026-09-09T20:27:30.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49876963",
-      "id": "49876963",
-      "headline": "Transfer rumors, news: Liverpool prepare bid for Crystal Palace's Wharton",
-      "summary": "Manchester United target Lewis Hall has reportedly agreed a new contract with Newcastle United. Transfer Talk has the latest.",
-      "url": "https://www.espn.com/soccer/story/_/id/49876963/transfer-rumors-news-liverpool-prepare-bid-crystal-palace-wharton",
-      "sport": "Soccer",
-      "published": "2026-09-09T19:57:41.000Z",
-      "firstSeen": "2026-09-09T12:38:21.519Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49882933",
-      "id": "49882933",
-      "headline": "USA eyes more consistency vs. Hungary at FIBA World Cup",
-      "summary": "USA coach Kara Lawson is hoping her team can improve with each round of the FIBA World Cup, beginning with Thursday's quarterfinal game vs. Hungary.",
-      "url": "https://www.espn.com/wnba/story/_/id/49882933/usa-eyes-more-consistency-vs-hungary-fiba-world-cup",
-      "sport": "WNBA",
-      "published": "2026-09-09T19:57:07.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49883304",
-      "id": "49883304",
-      "headline": "Vikings say McCarthy to be No. 3 QB, Wentz No. 2 for Week 1",
-      "summary": "J.J. McCarthy will open the season as the Vikings' No. 3 quarterback, with veteran Carson Wentz named the initial backup to new starter Kyler Murray.",
-      "url": "https://www.espn.com/nfl/story/_/id/49883304/vikings-say-mccarthy-no-3-qb-wentz-no-2-week-1",
-      "sport": "NFL",
-      "published": "2026-09-09T19:50:05.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49883388",
-      "id": "49883388",
-      "headline": "Kevin O'Connell reveals J.J. McCarthy will be Vikings' 3rd-string QB",
-      "summary": "Kevin O'Connell reveals J.J. McCarthy will be Vikings' 3rd-string QB",
-      "url": "https://www.espn.com/video/clip/_/id/49883388/kevin-oconnell-reveals-jj-mccarthy-vikings-3rd-string-qb",
-      "sport": "NFL",
-      "published": "2026-09-09T19:49:39.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49883289",
-      "id": "49883289",
-      "headline": "Athletics prospects Leo De Vries, Jamie Arnold injured, out",
-      "summary": "The Athletics are losing two top prospects to injury, INF Leo De Vries (shoulder) and pitcher Jamie Arnold, who was hit in the face by a line drive.",
-      "url": "https://www.espn.com/mlb/story/_/id/49883289/athletics-prospects-leo-de-vries-jamie-arnold-injured-out",
-      "sport": "MLB",
-      "published": "2026-09-09T19:47:16.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49883172",
-      "id": "49883172",
-      "headline": "Tottenham's Mykhailo Mudryk out until at least October with ankle injury - sources\"",
-      "summary": "Mykhailo Mudryk is set to be sidelined until October at the earliest after suffering an ankle injury in training, sources have told ESPN.",
-      "url": "https://www.espn.com/soccer/story/_/id/49883172/mykhailo-mudryk-tottenham-premier-league-spurs-injuries",
-      "sport": "Soccer",
-      "published": "2026-09-09T19:36:55.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49882154",
-      "id": "49882154",
-      "headline": "LSU and SEC stand down but this has shown a growing rift in the league",
-      "summary": "Late night news has lowered the temperature in the SEC. However, with questions about LSU's leadership, that doesn't mean anything is over.",
-      "url": "https://www.espn.com/college-football/story/_/id/49882154/lawsuit-lsu-sec-former-nfl-players-now",
-      "sport": "College football",
-      "published": "2026-09-09T19:33:34.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49882328",
-      "id": "49882328",
-      "headline": "EuroLeague sets Oct. 5 to vote on role in NBA Europe project",
-      "summary": "EuroLeague owners are set to meet on Oct. 5 in Milan, Italy to discuss whether to accept the NBA proposal and allow the league to be absorbed into NBA Europe or continue to operate as a separate league.",
-      "url": "https://www.espn.com/nba/story/_/id/49882328/euroleague-oct-5-vote-role-nba-europe-project",
-      "sport": "NBA",
-      "published": "2026-09-09T19:08:44.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49880780",
-      "id": "49880780",
-      "headline": "U.S. senator slams SEC over 'stupid' threat to expel LSU",
-      "summary": "U.S. Senator John Kennedy blasted the SEC's threat to expel LSU, saying he and other members of Congress \"will be on them like a hobo on a ham sandwich.\"",
-      "url": "https://www.espn.com/college-football/story/_/id/49880780/us-senator-slams-sec-stupid-threat-expel-lsu",
-      "sport": "College football",
-      "published": "2026-09-09T19:07:37.000Z",
-      "firstSeen": "2026-09-09T18:32:12.007Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49882283",
-      "id": "49882283",
-      "headline": "CSC clears $227M+ in NIL deals in July, August in major increase",
-      "summary": "The College Sports Commission cleared more than $227 million in NIL deals in July and August, nearly doubling the value of all the deals cleared in its first year of existence.",
-      "url": "https://www.espn.com/espn/story/_/id/49882283/csc-clears-227m-nil-deals-july-august-major-increase",
-      "sport": "Women's college basketball",
-      "published": "2026-09-09T19:03:51.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49882716",
-      "id": "49882716",
-      "headline": "MLS: League sets record for incoming and outgoing transfers in 2026",
-      "summary": "Major League Soccer announced that transfer activity in 2026 set league records for revenues involving both incoming and outgoing transfers.",
-      "url": "https://www.espn.com/soccer/story/_/id/49882716/mls-league-sets-record-incoming-outgoing-transfers-2026",
-      "sport": "Soccer",
-      "published": "2026-09-09T19:03:18.000Z",
-      "firstSeen": "2026-09-10T00:59:18.530Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49880798",
-      "id": "49880798",
-      "headline": "NFL Survivor power rankings: Why you should use Jaguars, Chargers in Week 1",
-      "summary": "ESPN NFL Survivor pool strategy, predictions and picks including the Jaguars, Chargers and one big surprise.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49880798/espn-nfl-survivor-week-1-survivor-pool-strategy-advice-picks-predictions",
-      "sport": "NFL",
-      "published": "2026-09-09T18:55:06.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49882661",
-      "id": "49882661",
-      "headline": "'It would mean everything': Henry shares what a Ravens Super Bowl would mean",
-      "summary": "'It would mean everything': Henry shares what a Ravens Super Bowl would mean",
-      "url": "https://www.espn.com/video/clip/_/id/49882661/henry-shares-ravens-super-bowl-mean",
-      "sport": "NFL",
-      "published": "2026-09-09T18:54:04.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49861645",
-      "id": "49861645",
-      "headline": "In Mike Trout, MLB's past is prologue",
-      "summary": "From Mickey Mantle to Konnor Griffin, the burden of big expectations is passed down through the generations.",
-      "url": "https://www.espn.com/mlb/story/_/id/49861645/mike-trout-konnor-griffin-mlb-search-next-mickey-mantle",
-      "sport": "MLB",
-      "published": "2026-09-09T18:53:09.000Z",
-      "firstSeen": "2026-09-09T15:27:13.048Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49882355",
-      "id": "49882355",
-      "headline": "Patrick Mahomes' Week 1 outlook",
-      "summary": "Patrick Mahomes' Week 1 outlook",
-      "url": "https://www.espn.com/video/clip/_/id/49882355/patrick-mahomes-week-1-outlook",
-      "sport": "NFL",
-      "published": "2026-09-09T18:36:23.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 14
     }
   ]
 }
