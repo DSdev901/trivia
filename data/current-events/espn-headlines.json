@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-01T06:48:13.418Z",
+  "generatedAt": "2026-10-01T09:34:53.963Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-10T06:48:13.418Z",
-  "windowEnd": "2026-10-01T06:48:13.418Z",
+  "windowStart": "2026-09-10T09:34:53.963Z",
+  "windowEnd": "2026-10-01T09:34:53.963Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,107 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4396,
+  "count": 4398,
   "items": [
+    {
+      "key": "50075398",
+      "id": "50075398",
+      "headline": "White Sox pounce early, finish sweep of Astros for first playoff series win since 2005",
+      "summary": "— From 100 losses to their first playoff series win in two decades, these scrappy Chicago White Sox just keep outdoing themselves.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401907897",
+      "sport": "MLB",
+      "published": "2026-10-01T08:22:43.000Z",
+      "firstSeen": "2026-10-01T09:34:53.963Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50075395",
+      "id": "50075395",
+      "headline": "Fried, Bellinger and García lead Yankees over Red Sox 9-2 for 2-game Wild Card Series sweep",
+      "summary": "— One year after rallying past the Red Sox to win an AL Wild Card Series, the New York Yankees battered Boston.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401907963",
+      "sport": "MLB",
+      "published": "2026-10-01T08:20:22.000Z",
+      "firstSeen": "2026-10-01T09:34:53.963Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50075373",
+      "id": "50075373",
+      "headline": "Devils take on the Flyers in Metropolitan Division matchup",
+      "summary": "Philadelphia Flyers vs. New Jersey Devils",
+      "url": "http://www.espn.com/nhl/preview?gameId=401891817",
+      "sport": "NHL",
+      "published": "2026-10-01T08:11:40.000Z",
+      "firstSeen": "2026-10-01T09:34:53.963Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50075372",
+      "id": "50075372",
+      "headline": "Ducks take on the Golden Knights in Pacific Division play",
+      "summary": "Anaheim Ducks vs. Vegas Golden Knights",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892433",
+      "sport": "NHL",
+      "published": "2026-10-01T08:11:36.000Z",
+      "firstSeen": "2026-10-01T09:34:53.963Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50075371",
+      "id": "50075371",
+      "headline": "Winnipeg and Boston meet for out-of-conference matchup",
+      "summary": "Boston Bruins vs. Winnipeg Jets",
+      "url": "http://www.espn.com/nhl/preview?gameId=401891831",
+      "sport": "NHL",
+      "published": "2026-10-01T08:11:33.000Z",
+      "firstSeen": "2026-10-01T09:34:53.963Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50075370",
+      "id": "50075370",
+      "headline": "Metropolitan Division opponents meet when Carolina hosts Washington",
+      "summary": "Washington Capitals vs. Carolina Hurricanes",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892432",
+      "sport": "NHL",
+      "published": "2026-10-01T08:11:29.000Z",
+      "firstSeen": "2026-10-01T09:34:53.963Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50075369",
+      "id": "50075369",
+      "headline": "Stars host the Blues to start 2026 season",
+      "summary": "St. Louis Blues vs. Dallas Stars",
+      "url": "http://www.espn.com/nhl/preview?gameId=401891782",
+      "sport": "NHL",
+      "published": "2026-10-01T08:10:44.000Z",
+      "firstSeen": "2026-10-01T09:34:53.963Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50026166",
+      "id": "50026166",
+      "headline": "Which Premier League players got injured in the international break?",
+      "summary": "All the latest news and updates on Premier League stars injuries during the first international break of the 2026-2027 club season",
+      "url": "https://www.espn.com/football/story/_/id/50026166/premier-league-international-break-arsenal-chelsea-manchester-united",
+      "sport": "Soccer",
+      "published": "2026-10-01T07:21:05.000Z",
+      "firstSeen": "2026-09-25T12:39:34.492Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50012221",
+      "id": "50012221",
+      "headline": "Premier League depth charts for most popular teams: Who is key?",
+      "summary": "The Premier League is well underway, but with the transfer window closed, where do players stand in their teams? How deep do the squads go?",
+      "url": "https://www.espn.com/soccer/story/_/id/50012221/premier-league-depth-chart-arsenal-man-united-man-city-liverpool-chelsea-tottenham",
+      "sport": "Soccer",
+      "published": "2026-10-01T07:05:03.000Z",
+      "firstSeen": "2026-10-01T09:34:53.963Z",
+      "bestRank": 2
+    },
     {
       "key": "50070369",
       "id": "50070369",
@@ -30,20 +129,20 @@
       "summary": "The ALDS and NLDS are starting to take shape. Here's who has the edge -- and who should be on upset watch.",
       "url": "https://www.espn.com/mlb/story/_/id/50070369/mlb-playoffs-2026-first-look-preview-division-series-matchups-brewers-dodgers-rays-guardians",
       "sport": "MLB",
-      "published": "2026-10-01T06:27:22.000Z",
+      "published": "2026-10-01T07:01:55.000Z",
       "firstSeen": "2026-10-01T01:15:59.870Z",
       "bestRank": 3
     },
     {
-      "key": "50074695",
-      "id": "50074695",
-      "headline": "Red Sox's Sonny Gray not happy for being lifted after 70 pitches",
-      "summary": "Red Sox ace Sonny Gray said after Wednesday's loss to the Yankees that he was frustrated for being lifted after throwing only 70 pitches.",
-      "url": "https://www.espn.com/mlb/story/_/id/50074695/red-sox-sonny-gray-not-happy-being-lifted-70-pitches",
-      "sport": "MLB",
-      "published": "2026-10-01T06:22:04.000Z",
-      "firstSeen": "2026-10-01T06:48:13.418Z",
-      "bestRank": 1
+      "key": "50075140",
+      "id": "50075140",
+      "headline": "Transfer rumors, news: Real Madrid eye former Liverpool defender Quansah",
+      "summary": "Real Madrid are tracking Bayer Leverkusen defender Jarell Quansah ahead of next summer. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/50075140/transfer-rumors-news-real-madrid-eye-former-liverpool-defender-quansah",
+      "sport": "Soccer",
+      "published": "2026-10-01T06:58:42.000Z",
+      "firstSeen": "2026-10-01T09:34:53.963Z",
+      "bestRank": 3
     },
     {
       "key": "50074123",
@@ -52,9 +151,42 @@
       "summary": "The Yankees' homegrown talent such as Ben Rice and Cam Schlittler led the way to help deliver a thorough two-game beatdown of the Red Sox in their AL Wild Card Series, ending with Wednesday's 9-2 win.",
       "url": "https://www.espn.com/mlb/story/_/id/50074123/yankees-send-red-sox-home-again-move-face-rays-alds",
       "sport": "MLB",
-      "published": "2026-10-01T06:16:15.000Z",
+      "published": "2026-10-01T06:42:18.000Z",
       "firstSeen": "2026-10-01T06:48:13.418Z",
       "bestRank": 9
+    },
+    {
+      "key": "50074695",
+      "id": "50074695",
+      "headline": "Red Sox's Sonny Gray not happy for being lifted after 70 pitches",
+      "summary": "Red Sox ace Sonny Gray said after Wednesday's loss to the Yankees that he was frustrated for being lifted after throwing only 70 pitches.",
+      "url": "https://www.espn.com/mlb/story/_/id/50074695/red-sox-sonny-gray-not-happy-being-lifted-70-pitches",
+      "sport": "MLB",
+      "published": "2026-10-01T06:38:31.000Z",
+      "firstSeen": "2026-10-01T06:48:13.418Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50074597",
+      "id": "50074597",
+      "headline": "Padres silence Cubs' bats again, finish off 2-game wild-card sweep",
+      "summary": "Five Padres pitchers combined on a five-hitter and Gavin Sheets hit a pinch-hit two-run homer, as San Diego swept the Cubs out of the NL Wild Card Series with a 4-1 win.",
+      "url": "https://www.espn.com/mlb/story/_/id/50074597/padres-silence-cubs-bats-again-finish-2-game-wild-card-sweep",
+      "sport": "MLB",
+      "published": "2026-10-01T06:33:26.000Z",
+      "firstSeen": "2026-10-01T06:48:13.418Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50074355",
+      "id": "50074355",
+      "headline": "Wings' Ogunbowale scores record 45 to force Game 3 vs. Valkyries",
+      "summary": "Arike Ogunbowale delivered a record-breaking performance with the Wings' season on the line, scoring 45 points, including a tying 3-pointer to force overtime, to help Dallas force a deciding Game 3 against the Valkyries.",
+      "url": "https://www.espn.com/wnba/story/_/id/50074355/wings-ogunbowale-scores-record-45-force-game-3-vs-valkyries",
+      "sport": "WNBA",
+      "published": "2026-10-01T06:29:43.000Z",
+      "firstSeen": "2026-10-01T06:48:13.418Z",
+      "bestRank": 1
     },
     {
       "key": "50074582",
@@ -66,6 +198,17 @@
       "published": "2026-10-01T06:10:38.000Z",
       "firstSeen": "2026-10-01T06:48:13.418Z",
       "bestRank": 4
+    },
+    {
+      "key": "50074937",
+      "id": "50074937",
+      "headline": "Golden State, Dallas set for game 3 matchup",
+      "summary": "Dallas Wings (27-17, 13-10 Western Conference) at Golden State Valkyries (32-12, 15-8 Western Conference)",
+      "url": "http://www.espn.com/wnba/preview?gameId=401918294",
+      "sport": "WNBA",
+      "published": "2026-10-01T06:09:29.000Z",
+      "firstSeen": "2026-10-01T09:34:53.963Z",
+      "bestRank": 1
     },
     {
       "key": "50045993",
@@ -99,17 +242,6 @@
       "published": "2026-10-01T05:35:26.000Z",
       "firstSeen": "2026-10-01T01:15:59.870Z",
       "bestRank": 1
-    },
-    {
-      "key": "50074597",
-      "id": "50074597",
-      "headline": "Padres silence Cubs' bats again, finish off 2-game wild-card sweep",
-      "summary": "Five Padres pitchers combined on a five-hitter and Gavin Sheets hit a pinch-hit two-run homer, as San Diego swept the Cubs out of the NL Wild Card Series with a 4-1 win.",
-      "url": "https://www.espn.com/mlb/story/_/id/50074597/padres-silence-cubs-bats-again-finish-2-game-wild-card-sweep",
-      "sport": "MLB",
-      "published": "2026-10-01T05:28:07.000Z",
-      "firstSeen": "2026-10-01T06:48:13.418Z",
-      "bestRank": 3
     },
     {
       "key": "50074577",
@@ -175,17 +307,6 @@
       "sport": "MLB",
       "published": "2026-10-01T05:01:14.000Z",
       "firstSeen": "2026-09-28T01:09:56.325Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50074355",
-      "id": "50074355",
-      "headline": "Wings' Ogunbowale scores record 45 to force Game 3 vs. Valkyries",
-      "summary": "Arike Ogunbowale delivered a record-breaking performance with the Wings' season on the line, scoring 45 points, including a tying 3-pointer to force overtime, to help Dallas force a deciding Game 3 against the Valkyries.",
-      "url": "https://www.espn.com/wnba/story/_/id/50074355/wings-ogunbowale-scores-record-45-force-game-3-vs-valkyries",
-      "sport": "WNBA",
-      "published": "2026-10-01T04:59:52.000Z",
-      "firstSeen": "2026-10-01T06:48:13.418Z",
       "bestRank": 1
     },
     {
@@ -1349,7 +1470,7 @@
       "headline": "College basketball realignment: Conference changes for 2026-27",
       "summary": "A complete list of college basketball conference membership for the 2026-27 season.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49973549/college-basketball-conference-changes-realignment",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-30T15:22:10.000Z",
       "firstSeen": "2026-09-30T15:32:20.020Z",
       "bestRank": 1
@@ -1418,17 +1539,6 @@
       "sport": "WNBA",
       "published": "2026-09-30T14:53:37.000Z",
       "firstSeen": "2026-08-17T21:27:47.678Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50026166",
-      "id": "50026166",
-      "headline": "Which Premier League players got injured in the international break?",
-      "summary": "All the latest news and updates on Premier League stars injuries during the first international break of the 2026-2027 club season",
-      "url": "https://www.espn.com/football/story/_/id/50026166/premier-league-international-break-arsenal-chelsea-manchester-united",
-      "sport": "Soccer",
-      "published": "2026-09-30T14:52:42.000Z",
-      "firstSeen": "2026-09-25T12:39:34.492Z",
       "bestRank": 1
     },
     {
@@ -3626,7 +3736,7 @@
       "headline": "U.S. Senate votes 77-22 to pass Protect College Sports Act",
       "summary": "The Protect College Sports Act, a federal bill aimed at reshaping the industry, took a step toward to becoming law Monday when the U.S. Senate voted 77-22 to pass it, with Ted Cruz saying, \"This bill puts an end to the chaos plaguing college athletics.\"",
       "url": "https://www.espn.com/college-sports/story/_/id/50056206/us-senate-votes-77-22-pass-protect-college-sports-act",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-29T13:37:08.000Z",
       "firstSeen": "2026-09-29T03:35:26.425Z",
       "bestRank": 1
@@ -5045,7 +5155,7 @@
       "headline": "Alabama agrees to 2-year extension, raise with AD Greg Byrne",
       "summary": "Alabama and athletic director Greg Byrne have agreed to a revised two-year contract extension that will pay him an average annual base salary of $2.67 million through June 30, 2033.",
       "url": "https://www.espn.com/college-sports/story/_/id/50053965/alabama-agrees-two-year-extension-raise-ad-greg-byrne",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-28T19:49:27.000Z",
       "firstSeen": "2026-09-28T21:26:45.780Z",
       "bestRank": 1
@@ -5386,7 +5496,7 @@
       "headline": "Big Ten basketball adopts rule preventing pros from returning",
       "summary": "The Big Ten Conference has adopted a rule to prohibit men's and women's basketball players who left school to play professionally from maintaining their eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50053258/big-ten-basketball-adopts-rule-preventing-pros-returning",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-28T17:28:04.000Z",
       "firstSeen": "2026-09-28T18:35:51.463Z",
       "bestRank": 1
@@ -33535,7 +33645,7 @@
       "headline": "Reports: Miami Hurricanes returning to Nike in '27 on $200M+ deal",
       "summary": "University of Miami athletic teams will be wearing Nike apparel again starting in July 2027, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/49958590/report-miami-hurricanes-going-back-nike-200m+-deal",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-16T19:04:20.000Z",
       "firstSeen": "2026-09-16T21:25:45.412Z",
       "bestRank": 1
@@ -37726,7 +37836,7 @@
       "headline": "FSU fires AD Michael Alford amid looming football questions",
       "summary": "Florida State fired athletic director Michael Alford on Monday as the Seminoles grapple with looming decisions about their football program.",
       "url": "https://www.espn.com/college-football/story/_/id/49939737/fsu-fires-ad-michael-alford-amid-looming-football-questions",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-14T18:30:25.000Z",
       "firstSeen": "2026-09-14T15:28:36.074Z",
       "bestRank": 1
@@ -48290,94 +48400,6 @@
       "published": "2026-09-10T10:04:21.000Z",
       "firstSeen": "2026-09-09T18:32:12.007Z",
       "bestRank": 2
-    },
-    {
-      "key": "49890060",
-      "id": "49890060",
-      "headline": "Rams 'excited' despite late arrival into Melbourne",
-      "summary": "Los Angeles Rams head coach Sean McVay and QB Matthew Stafford both feel \"well rested\" after flying in less than 36 hours before the game, with Stafford saying it was \"really well thought out\".",
-      "url": "https://www.espn.com/video/clip/_/id/49890060/rams-excited-late-arrival-melbourne",
-      "sport": "NFL",
-      "published": "2026-09-10T09:27:10.000Z",
-      "firstSeen": "2026-09-10T12:38:24.815Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49890032",
-      "id": "49890032",
-      "headline": "Davante Adams: \"Some things are out of our hands\"",
-      "summary": "LA Rams head coach Sean McVay and WR Davante Adams speak to the press ahead of their clash with the San Francisco 49ers, with Adams showing mixed feelings with the late arrival and connecting with fans.",
-      "url": "https://www.espn.com/video/clip/_/id/49890032/some-things-our-hands",
-      "sport": "NFL",
-      "published": "2026-09-10T09:22:31.000Z",
-      "firstSeen": "2026-09-10T09:29:50.422Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49889522",
-      "id": "49889522",
-      "headline": "Ødegaard: Arsenal on 'another level' after Champions League win continues unbeaten start",
-      "summary": "Martin Ødegaard has said Arsenal are \"on another level\" this season after winning the Premier League title gave Mikel Arteta's side a new level of confidence.",
-      "url": "https://www.espn.com/soccer/story/_/id/49889522/martin-odegaard-arsenal-another-level-champions-league-napoli-win",
-      "sport": "Soccer",
-      "published": "2026-09-10T08:14:27.000Z",
-      "firstSeen": "2026-09-10T12:38:24.815Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49889670",
-      "id": "49889670",
-      "headline": "Mariners and Rangers meet with series tied 1-1",
-      "summary": "Texas Rangers (72-74, second in the AL West) vs. Seattle Mariners (68-78, third in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816887",
-      "sport": "MLB",
-      "published": "2026-09-10T08:02:40.000Z",
-      "firstSeen": "2026-09-10T09:29:50.422Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49889669",
-      "id": "49889669",
-      "headline": "Pirates take road win streak into game against the White Sox",
-      "summary": "Pittsburgh Pirates (73-73, third in the NL Central) vs. Chicago White Sox (75-70, first in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816886",
-      "sport": "MLB",
-      "published": "2026-09-10T08:02:36.000Z",
-      "firstSeen": "2026-09-10T09:29:50.422Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49889668",
-      "id": "49889668",
-      "headline": "Phillies and Astros play to determine series winner",
-      "summary": "Houston Astros (74-72, first in the AL West) vs. Philadelphia Phillies (82-64, second in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816884",
-      "sport": "MLB",
-      "published": "2026-09-10T08:02:33.000Z",
-      "firstSeen": "2026-09-10T09:29:50.422Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49889666",
-      "id": "49889666",
-      "headline": "Yankees host the Rockies, aim to continue home win streak",
-      "summary": "Colorado Rockies (55-90, fifth in the NL West) vs. New York Yankees (83-62, second in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816883",
-      "sport": "MLB",
-      "published": "2026-09-10T08:02:29.000Z",
-      "firstSeen": "2026-09-10T09:29:50.422Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49886582",
-      "id": "49886582",
-      "headline": "Seahawks QB Darnold injures hip vs. Patriots, set for MRI",
-      "summary": "Seahawks quarterback Sam Darnold has been ruled out of the season opener against the Patriots after suffering a hip injury on the opening drive.",
-      "url": "https://www.espn.com/nfl/story/_/id/49886582/seahawks-qb-darnold-injures-hip-opening-drive-vs-patriots",
-      "sport": "NFL",
-      "published": "2026-09-10T07:52:24.000Z",
-      "firstSeen": "2026-09-10T03:31:41.763Z",
-      "bestRank": 4
     }
   ]
 }
