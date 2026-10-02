@@ -1,12 +1,22 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-10-02T03:45:53.921Z",
+  "generatedAt": "2026-10-02T06:58:15.263Z",
   "retentionDays": 21,
   "windowStart": "2026-09-11",
   "windowEnd": "2026-10-02",
   "snapshotIntervalHours": 3,
-  "count": 2112,
+  "count": 2124,
   "items": [
+    {
+      "headline": "A Front Line at the Border: How Russia Uses Migrants as Weapons Against Europe",
+      "date": "2026-10-02",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMm5GOWR0bW9URGFwemw5VElRaXdBSi1nUW1BVEc4RmVCdWROdHI5REZncTF6YWdVNGcxQU1PcUNYZW40d1ZOSmR6RURRcVJENTZtTnlxNTZPY25nOHhmYnpxSDMwWkIxbXI3clhiTnVySTNHeU1Nd1B2aXhTUUM3VHRGUTE?oc=5",
+      "top": true,
+      "bestRank": 2,
+      "firstSeen": "2026-10-02T06:58:15.263Z"
+    },
     {
       "headline": "Drones Strike Ethiopia’s Capital as Country Severs Ties with Eritrea",
       "date": "2026-10-02",
@@ -16,6 +26,26 @@
       "top": true,
       "bestRank": 8,
       "firstSeen": "2026-10-01T21:42:31.765Z"
+    },
+    {
+      "headline": "Trump defies Democrats, diverts aid for Europe to Latin America instead",
+      "date": "2026-10-02",
+      "bucket": "World",
+      "summary": "Reported by The Washington Post.",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWWxwX0J2S2c5QVBfTTZjOVdoVXEwYW83YjlIOW96MV81YTQ1NV9aRHBSaGlSVzV6OGtaNTc4OC1ZN0pzbmFodWtXUGFwWEVwT3luZ3czMng4Z0dYTGN5UkdYQ1Bha1pjR201Q3ptUER5bUJrRm8tM3dvaGJLNXlpRUNwSnQxX3JzVmlCOHFhOV9tSEJmcy0zclB6NExNVFVVNVd3QVJSOXBURkxORWlaQmZUWTBrZ0xmajY0QUQ4aXNUUQ?oc=5",
+      "top": true,
+      "bestRank": 19,
+      "firstSeen": "2026-10-02T06:58:15.263Z"
+    },
+    {
+      "headline": "South Korean President Lee warns of 'measures' against Ukraine over prisoner row, demands apology",
+      "date": "2026-10-02",
+      "bucket": "World",
+      "summary": "Reported by CNBC.",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbGl0a09BazIteWQwRU5YcXZWMlY3U0VUV294bjBwRDRMSmxhMWg1eWZpb0pvenY3RlNQSWZKRzlwSkdrX0pOazY3eVVBcXJLQU1laG15b3hIcXlCYldrbDNUM3A1QmVZUDhFTDZNcjhsZWxUeWF1cnNzQ1VGVGs2aEFZOUHSAYoBQVVfeXFMTmJaa0RRb212aHVBam55Nktjd2t5X1gzU0MtRVF0WVFxM2xOMmdDcmtQWm4wY1U5RDhvQnUtMEFWbDJoSDFsQlRFS2RZZ3hpbGlrUXR5TGVvOHFjSFBjaElDLWotaTl0N1hNOEVianVGWlp2MmZXQkEzNlRCWExVNVR3dF9xMFh0eHJn?oc=5",
+      "top": true,
+      "bestRank": 22,
+      "firstSeen": "2026-10-02T06:58:15.263Z"
     },
     {
       "headline": "Congresswoman Yassamin Ansari, 34, Dating YouTuber Jack Cocchiarella, 24",
@@ -28,12 +58,30 @@
       "firstSeen": "2026-10-02T01:17:04.411Z"
     },
     {
+      "headline": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
+      "date": "2026-10-02",
+      "bucket": "World",
+      "summary": "The diplomatic fallout comes as Ethiopian forces battle rebel fighters across its northern region.",
+      "url": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-02T06:58:15.263Z"
+    },
+    {
+      "headline": "Cornell students voice frustration at public hearing over rape case",
+      "date": "2026-10-02",
+      "bucket": "World",
+      "summary": "The BBC's Nada Tawfik was at the hearing, where the university's Student Assembly led a discussion around safety concerns and sexual violence on campus.",
+      "url": "https://www.bbc.co.uk/news/videos/cwe8e8jpnpy5o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-02T06:58:15.263Z"
+    },
+    {
       "headline": "NY's governor appoints special prosecutor in Cornell frat rape investigation",
       "date": "2026-10-02",
       "bucket": "World",
       "summary": "The governor said she'd lost faith in prosecutors overseeing the case and handed it over to New York Attorney General Letitia James.",
       "url": "https://www.bbc.co.uk/news/articles/cr1585y0y90go?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-02T03:45:53.921Z"
+      "firstSeen": "2026-10-02T03:45:53.921Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "OpenAI fires workers for mishandling 'sensitive information'",
@@ -41,7 +89,9 @@
       "bucket": "World",
       "summary": "The former employees were investigated for sharing data with an outside AI evaluation group.",
       "url": "https://www.bbc.co.uk/news/articles/c6y9z9r4ejzwo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-02T03:45:53.921Z"
+      "firstSeen": "2026-10-02T03:45:53.921Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Australia says platforms like Steam and Roblox have 'significant' child safety gaps",
@@ -49,7 +99,9 @@
       "bucket": "World",
       "summary": "Fortnite and Minecraft also told to 'lift their game' by online safety regulator.",
       "url": "https://www.bbc.co.uk/news/articles/cjvgygzzy6lro?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-02T03:45:53.921Z"
+      "firstSeen": "2026-10-02T03:45:53.921Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "FlyDubai Flight Live Updates: Investigators Seek Motive for Stabbing Attack",
@@ -182,14 +234,24 @@
       "firstSeen": "2026-10-01T18:48:11.391Z"
     },
     {
-      "headline": "Ukraine Fires Hard-to-Stop Ballistic Missile for First Time",
+      "headline": "Ukraine deploys FP-7 tactical ballistic missile in combat for first time, Zelenskyy says",
       "date": "2026-10-01",
       "bucket": "Conflict",
-      "summary": "Reported by Reuters.",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxObkJyb2N6RXY0YjRPVTVPTDd4OFVicGhMdWRkN3dGWFZRNEF5UHZCb25YY2hMQnJWdkYtYVFsSHRKU0MyUXpQaXVxS3dwdXdCMUpFdVVlaVhYbzV4NjRZbGF6RjVnM3Fwb2dJSVVIQTBmMGl4bjZRYUpLdEZDRzBaZElaSEZ4OGZQenZEQy1xbmN2aEhXVFRoRVJqNGNRd3oyRlg2QnFwT2IybE9CT0dIa3YwN1Y0bVlDdUVpdUFrSllCWDlFeFY0YWNJbDNxdG8yajM2UHJRRHFUdTA?oc=5",
+      "summary": "Reported by Defense News.",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPNnA1Z0s3cnVZcFhKZmtaQXNiTklvZGg5Mjg3aFRwNG1GUjdwVWlJOVBMMUFsckhXZVVSbVV1THMyWTMtcVNwM2Nac2ktbXZlZG0yZi0tMW9BdGpnVEwzVTJBbXNWY3RvNGNFaEhiR09XWkNnOE96bnNxcm9DcS1YQUFHdUpKM1dxenpRX0VCVXVGTktqTzh1SGNqMXNzcmMwbXZEaHVIdERHWWY5Sll5akFUVHJDS2hJZ1pqWTBDVzVrTGZsOVkwWVZ2ODdJQ0dHMFZ0YThWWGFZclZrajZF?oc=5",
       "top": true,
       "bestRank": 3,
       "firstSeen": "2026-10-01T18:48:11.391Z"
+    },
+    {
+      "headline": "Putin warns West that Russia is ready to use every weapon to protect Kaliningrad",
+      "date": "2026-10-01",
+      "bucket": "World",
+      "summary": "The Russian leader insists Moscow is \"not threatening anyone\" and is merely responding to statements by Western leaders.",
+      "url": "https://www.bbc.co.uk/news/articles/cqg7k7v499jjo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-01T18:48:11.391Z",
+      "top": true,
+      "bestRank": 3
     },
     {
       "headline": "BBC paying to air shows like Suits and Schitt's Creek is illogical, MPs say",
@@ -222,16 +284,6 @@
       "firstSeen": "2026-10-01T15:44:58.093Z"
     },
     {
-      "headline": "Putin warns West that Russia is ready to use every weapon to protect Kaliningrad",
-      "date": "2026-10-01",
-      "bucket": "World",
-      "summary": "The Russian leader insists Moscow is \"not threatening anyone\" and is merely responding to statements by Western leaders.",
-      "url": "https://www.bbc.co.uk/news/articles/cqg7k7v499jjo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-01T18:48:11.391Z",
-      "top": true,
-      "bestRank": 4
-    },
-    {
       "headline": "Watch: Sperm Whale Slams 52-Foot Yacht in Terrifying South Pacific Attack (Video)",
       "date": "2026-10-01",
       "bucket": "World",
@@ -240,6 +292,16 @@
       "top": true,
       "bestRank": 4,
       "firstSeen": "2026-10-02T01:17:04.411Z"
+    },
+    {
+      "headline": "What a Pearly King taught me about Cockney rhyming slang and East London history",
+      "date": "2026-10-01",
+      "bucket": "World",
+      "summary": "In mother-of-pearl suits, the Pearly Kings used to canvass East London for charity. The most famous one, George Major, died in August. A look back on this larger-than-life figure and the Pearly King tradition.",
+      "url": "https://www.npr.org/2026/10/01/nx-s1-5928148/pearly-king-peckham-george-major-london-cockney",
+      "firstSeen": "2026-10-01T15:44:58.093Z",
+      "top": true,
+      "bestRank": 4
     },
     {
       "headline": "Trump Administration Finalizes Plan to Lower Drug Prices in Medicare",
@@ -282,16 +344,6 @@
       "firstSeen": "2026-10-01T18:48:11.391Z"
     },
     {
-      "headline": "What a Pearly King taught me about Cockney rhyming slang and East London history",
-      "date": "2026-10-01",
-      "bucket": "World",
-      "summary": "In mother-of-pearl suits, the Pearly Kings used to canvass East London for charity. The most famous one, George Major, died in August. A look back on this larger-than-life figure and the Pearly King tradition.",
-      "url": "https://www.npr.org/2026/10/01/nx-s1-5928148/pearly-king-peckham-george-major-london-cockney",
-      "firstSeen": "2026-10-01T15:44:58.093Z",
-      "top": true,
-      "bestRank": 5
-    },
-    {
       "headline": "There's something 'highly unusual' about this photo of the Matterhorn",
       "date": "2026-10-01",
       "bucket": "World",
@@ -320,6 +372,16 @@
       "firstSeen": "2026-10-01T12:54:35.828Z",
       "top": true,
       "bestRank": 8
+    },
+    {
+      "headline": "Operation Outcast Takes a Surgical Approach to Iran Sanctions, Export Compliance Manager",
+      "date": "2026-10-01",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE14S0RDUE9kTFRlNzcyMzVmSDQya1pjV0FUZE53NFd1eVB0QWdXY1M1blE4M1RTbWhnRlZXWDJwR09ySnZISmRNWS11TXQ4OFpweG1oWDg4XzloWmRJMFJWNXVoeUN4TlkzU1B6X3czYWxFajl0bWFTdjlFaw?oc=5",
+      "top": true,
+      "bestRank": 8,
+      "firstSeen": "2026-10-02T06:58:15.263Z"
     },
     {
       "headline": "AI liability fight reaches Senate as Google releases powerful new model",
@@ -442,6 +504,16 @@
       "firstSeen": "2026-10-02T01:17:04.411Z"
     },
     {
+      "headline": "The Lancet HIV | Turkish Government crackdown on HIV and LGBTQ+ groups",
+      "date": "2026-10-01",
+      "bucket": "World",
+      "summary": "Reported by Yahoo.",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaUE1d0lvUXJRMUd0QkFzUjBaTHRZNTBvbXFUNk1xX1NTMXk1U3lCekE1cGZlTG5EVmRSdjV4dGdZX3BXVG84bjhvTDI0bld4Wk9XMHQ4ZkVjTUhWZ0tvdXd3UmRSSnhBY25ZQVBxRzREanU2bnM4R3hiVVp2c2hUekJrRXlXOE1ibXJnREdxa29WZVdaZU1ZenJpRjI2S2c?oc=5",
+      "top": true,
+      "bestRank": 16,
+      "firstSeen": "2026-10-02T06:58:15.263Z"
+    },
+    {
       "headline": "Advocacy Group Stop Killing Games Sounds Alarm On EU Kids Act: ‘This Is Such A Horrible Law Proposal’",
       "date": "2026-10-01",
       "bucket": "World",
@@ -510,6 +582,16 @@
       "top": true,
       "bestRank": 24,
       "firstSeen": "2026-10-02T01:17:04.411Z"
+    },
+    {
+      "headline": "‘Thank you, Andy’: Farage gloats as Burnham reopens Brexit fight",
+      "date": "2026-10-01",
+      "bucket": "World",
+      "summary": "Reported by politico.eu.",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQS1BFdS0xQ0tqV3l2TVUxMFZnMEpSUUZhOGlvUFoyRk9RajE3eFdFYUNqR25oNWtWZVNUQlBncXAxdEhxOG5ndXZFdWNFaDN0cmh4eFJpQlgxSVVfVjZUWFBVYzNiT2FIMndYeHdtYkRDeVJzOVZvc2prV3VBTVNwX0k0M0tOUm5zOVQzOUkwcmFYUUdUbzgxMFZqdw?oc=5",
+      "top": true,
+      "bestRank": 24,
+      "firstSeen": "2026-10-02T06:58:15.263Z"
     },
     {
       "headline": "Operation Enduring Failure: 25 years after the US invasion of Afghanistan",
@@ -672,6 +754,16 @@
       "firstSeen": "2026-10-02T03:45:53.921Z"
     },
     {
+      "headline": "Analysts Worry for Ukraine Over New Russian Drones",
+      "date": "2026-10-01",
+      "bucket": "World",
+      "summary": "Reported by Newser.",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOblpZZl9OcTl0VUtnYmZ6U1VrSkNhVkUtY3lkVS1YOTZsbW9SUXNwTGZNeS1sZ1UwX1l5YlIzWXU5U2drOGNiT29jN2F3YUJoUXhnUmZMRGlCdm5raUVIdUlvUFhhNmV2aV9tbWZUamdaWUJmSzJjRVRIcmNrZjlyaU1YUmtHQl9xdjZJV3M1bVZBbGNYN1lJNFNiZw?oc=5",
+      "top": true,
+      "bestRank": 37,
+      "firstSeen": "2026-10-02T06:58:15.263Z"
+    },
+    {
       "headline": "Inside Binance Founder Changpeng Zhao’s Life After Prison",
       "date": "2026-10-01",
       "bucket": "World",
@@ -760,12 +852,42 @@
       "bestRank": null
     },
     {
+      "headline": "Flydubai passenger describes hugging his children as plane nosedived during attack",
+      "date": "2026-10-01",
+      "bucket": "World",
+      "summary": "Adam Polovincik tells the BBC he told his young children \"everything is going to be all right\" as flight plunged more than 17,000ft (5,200m).",
+      "url": "https://www.bbc.co.uk/news/articles/c6d949ydnw3po?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-01T15:44:58.093Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Watch: Why are students protesting at schools in France?",
+      "date": "2026-10-01",
+      "bucket": "World",
+      "summary": "The BBC's Hugh Schofield is in Paris as a wave of school protests over overcrowded classes and teacher shortages spreads across France.",
+      "url": "https://www.bbc.co.uk/news/videos/cwy8z8rney97o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-01T12:54:35.828Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Making politics 'fun, trendy, sexy': How Gen Z could shape Kenya's next election",
+      "date": "2026-10-01",
+      "bucket": "Politics",
+      "summary": "A voter mobilisation campaign has registered huge numbers of young people but it is not clear who they are backing.",
+      "url": "https://www.bbc.co.uk/news/articles/cwly7v7kk17mo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-02T06:58:15.263Z"
+    },
+    {
       "headline": "Spain and China are cosying up - to the anger of many in the EU",
       "date": "2026-10-01",
       "bucket": "World",
       "summary": "Amid global tumult, the two countries alliance is not the only unlikely pairing.",
       "url": "https://www.bbc.co.uk/news/articles/c6vgyg824m02o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-02T03:45:53.921Z"
+      "firstSeen": "2026-10-02T03:45:53.921Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "The wealthy Cuban Americans ready and waiting for Havana to fall",
@@ -773,7 +895,9 @@
       "bucket": "World",
       "summary": "Cuban exiles in Florida are increasingly hopeful that regime change in Cuba is now on the horizon.",
       "url": "https://www.bbc.co.uk/news/articles/ckrerylrlg9vo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-02T03:45:53.921Z"
+      "firstSeen": "2026-10-02T03:45:53.921Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "What's gone wrong at Nike? How the world's sportswear giant lost its mojo",
@@ -781,7 +905,9 @@
       "bucket": "World",
       "summary": "Several self-inflicted mistakes have cost the biggest sportswear brand on the planet in recent years.",
       "url": "https://www.bbc.co.uk/news/articles/c6je85jzk9y7o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-02T03:45:53.921Z"
+      "firstSeen": "2026-10-02T03:45:53.921Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Why are these endangered moths swarming Australia's east coast?",
@@ -789,7 +915,9 @@
       "bucket": "World",
       "summary": "The sudden influx of Bogong moths has caused a stir in cities like Sydney and Canberra, with people filming them infiltrating their homes and cars.",
       "url": "https://www.bbc.co.uk/news/videos/c6rr4r704en4o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-02T03:45:53.921Z"
+      "firstSeen": "2026-10-02T03:45:53.921Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "SpaceX launches crew to ISS",
@@ -797,7 +925,9 @@
       "bucket": "World",
       "summary": "The Falcon 9 rocket blasted off from Cape Canaveral with two Americans, a Russian and a Canadian who will spend up to six months aboard the International Space Station.",
       "url": "https://www.bbc.co.uk/news/videos/c5rm9mdperemo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-02T03:45:53.921Z"
+      "firstSeen": "2026-10-02T03:45:53.921Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "What life under U.S. sanctions looks like for one ICC judge",
@@ -850,11 +980,11 @@
       "bestRank": null
     },
     {
-      "headline": "What happened in failed execution of Christa Pike - and what next?",
+      "headline": "What we know about Christa Pike’s condition after failed execution",
       "date": "2026-10-01",
       "bucket": "World",
-      "summary": "The convicted killer is in hospital in Tennessee after surviving two lethal injections, in a case that has raised many questions.",
-      "url": "https://www.bbc.co.uk/news/articles/ckge4eql4q7eo?at_medium=RSS&at_campaign=rss",
+      "summary": "The BBC’s Ione Wells reports from outside the Tennessee hospital where Pike is said to have arrived Wednesday night after surviving two lethal injection attempts.",
+      "url": "https://www.bbc.co.uk/news/videos/cwe8e82jgm8po?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-01T15:44:58.093Z",
       "top": false,
       "bestRank": null
@@ -886,26 +1016,6 @@
       "summary": "Chaos has surrounded the St Petersburg shows since the stadium said it had not agreed to host the rapper.",
       "url": "https://www.bbc.co.uk/news/articles/cm74k417wpjxo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-01T15:44:58.093Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Flydubai passenger describes hugging his children as plane nosedived during attack",
-      "date": "2026-10-01",
-      "bucket": "World",
-      "summary": "Adam Polovincik tells the BBC he told his young children \"everything is going to be all right\" as flight plunged more than 17,000ft (5,200m).",
-      "url": "https://www.bbc.co.uk/news/articles/c6d949ydnw3po?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-01T15:44:58.093Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Watch: Why are students protesting at schools in France?",
-      "date": "2026-10-01",
-      "bucket": "World",
-      "summary": "The BBC's Hugh Schofield is in Paris as a wave of school protests over overcrowded classes and teacher shortages spreads across France.",
-      "url": "https://www.bbc.co.uk/news/videos/cwy8z8rney97o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-01T12:54:35.828Z",
       "top": false,
       "bestRank": null
     },
@@ -1188,6 +1298,16 @@
       "top": true,
       "bestRank": 7,
       "firstSeen": "2026-10-01T15:44:58.093Z"
+    },
+    {
+      "headline": "Ukrainian Science Academy, Struck by Drone, Played Key Role in Research",
+      "date": "2026-09-30",
+      "bucket": "World",
+      "summary": "Reported by The Kyiv Independent.",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSmVlYl91UE8tdnVQNGxIZzJkQVZtd0dENTlWSDlheEpuM1NmSGhiOWh3dEtEdnRFcVNPdUdaRGJZOF84aU01TWY2Q1ZtRnR3RnZ3bzhKWlFBNFkzWnE0TjZzNFFjVnBZdWx6NHFBWGhEbHBXb3JnX3R5MVBOT1lxWVpabTlrMl9Ianhv?oc=5",
+      "top": true,
+      "bestRank": 7,
+      "firstSeen": "2026-09-29T21:41:21.834Z"
     },
     {
       "headline": "Israeli Settlers Killed His Constituent. Fetterman Is Sole Democrat Against Investigating Them.",
@@ -1620,6 +1740,16 @@
       "firstSeen": "2026-10-02T01:17:04.411Z"
     },
     {
+      "headline": "NATO Secretary General: Europe is not at peace today",
+      "date": "2026-09-30",
+      "bucket": "World",
+      "summary": "Reported by Axios.",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA0U3hueUUyVWt4LTNuMjVMTlpzWTh1LTdCWC1DTV9lZU5rWG9LdVl5Y2NrTGFkc0lvZVpORGVCaVBYRDl2eEh5bUZGUlNpNWV3U184YUlmQm5ObXRyNDRUZ3pGTEE3ZzdJb3RPOVZfS2xadEZwa1pqU3dR?oc=5",
+      "top": true,
+      "bestRank": 29,
+      "firstSeen": "2026-10-02T06:58:15.263Z"
+    },
+    {
       "headline": "Indonesia Tears Down Luxury Compound Inside Prison",
       "date": "2026-09-30",
       "bucket": "World",
@@ -1840,6 +1970,16 @@
       "firstSeen": "2026-10-01T03:51:53.572Z"
     },
     {
+      "headline": "Government Submits 3-Year Budget to State Duma as 2026 Deficit Set to Reach $88Bln",
+      "date": "2026-09-30",
+      "bucket": "World",
+      "summary": "Reported by Yahoo.",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdHZ2VGR3UHpqRWFaczFNZS1lU3VQWnZDQjhsdVcwczZ4a0x3ZUhsal9RLXZoSzE2UUI4WEV3NXFVVnRyUHAxX2piMjAzLWJXMEZoU1pFSXFYMjVQaDJmUHY1Tld0a3dEcnZuOTVvZ1J0ekVBWnNveWxURGhld0RmRmVmSVZKVjM5Z0dkaFYxbk1UNmVscGQxUVltQVg?oc=5",
+      "top": true,
+      "bestRank": 38,
+      "firstSeen": "2026-10-02T06:58:15.263Z"
+    },
+    {
       "headline": "Evangelical leader slams Palestinian official’s Bible claims as ‘contemptible’",
       "date": "2026-09-30",
       "bucket": "World",
@@ -2050,16 +2190,6 @@
       "bestRank": null
     },
     {
-      "headline": "A midair stabbing on a flight to Israel is being investigated as a possible terrorist attack",
-      "date": "2026-09-30",
-      "bucket": "Politics",
-      "summary": "flydubai airline said the motives behind the incident were unknown and remain subject to a formal investigation. Israel's Prime Minister Netanyahu described it as \"a serious security incident.\"",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5985806/flydubai-flight-dubai-tel-aviv-israel",
-      "firstSeen": "2026-10-01T12:54:35.828Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "Cornell case spotlights 'confusing' web of systems for reporting campus assaults",
       "date": "2026-09-30",
       "bucket": "World",
@@ -2110,21 +2240,41 @@
       "bestRank": null
     },
     {
-      "headline": "Greetings from Syria, where time seems to melt as a glassmaker braves scorching temps",
-      "date": "2026-09-30",
-      "bucket": "World",
-      "summary": "As a Syrian glassmaker created his wares in Damascus, watching his craft reminded this reporter to slow down and enjoy the moment.",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5983516/damascus-syria-glass",
-      "firstSeen": "2026-09-30T18:47:34.837Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "Passengers describe stabbing on Israel-bound plane",
       "date": "2026-09-30",
       "bucket": "World",
       "summary": "Passengers on the Flydubai flight bound for Israel filmed the moments following the stabbing.",
       "url": "https://www.bbc.co.uk/news/videos/cv70d22kd34do?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-30T18:47:34.837Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Three takeaways from Trump's 'Super Intelligence' summit",
+      "date": "2026-09-30",
+      "bucket": "World",
+      "summary": "The meeting at the White House came as some tech bosses and experts have called for tighter rules around AI.",
+      "url": "https://www.bbc.co.uk/news/articles/cme30dz5vkzko?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-30T03:47:47.519Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "A midair stabbing on a flight to Israel is being investigated as a possible terrorist attack",
+      "date": "2026-09-30",
+      "bucket": "Politics",
+      "summary": "flydubai airline said the motives behind the incident were unknown and remain subject to a formal investigation. Israel's Prime Minister Netanyahu described it as \"a serious security incident.\"",
+      "url": "https://www.npr.org/2026/09/30/nx-s1-5985806/flydubai-flight-dubai-tel-aviv-israel",
+      "firstSeen": "2026-10-01T12:54:35.828Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Greetings from Syria, where time seems to melt as a glassmaker braves scorching temps",
+      "date": "2026-09-30",
+      "bucket": "World",
+      "summary": "As a Syrian glassmaker created his wares in Damascus, watching his craft reminded this reporter to slow down and enjoy the moment.",
+      "url": "https://www.npr.org/2026/09/30/nx-s1-5983516/damascus-syria-glass",
       "firstSeen": "2026-09-30T18:47:34.837Z",
       "top": false,
       "bestRank": null
@@ -2156,16 +2306,6 @@
       "summary": "23 years after the United States military invaded Iraq, sparking an insurgency and a civil war, the U.S. has withdrawn its forces, as the country still tries to combat Iranian influence.",
       "url": "https://www.npr.org/2026/09/30/nx-s1-5983426/u-s-withdraws-final-troops-from-iraq",
       "firstSeen": "2026-09-30T12:57:59.909Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Three takeaways from Trump's 'Super Intelligence' summit",
-      "date": "2026-09-30",
-      "bucket": "World",
-      "summary": "The meeting at the White House came as some tech bosses and experts have called for tighter rules around AI.",
-      "url": "https://www.bbc.co.uk/news/articles/cme30dz5vkzko?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-30T03:47:47.519Z",
       "top": false,
       "bestRank": null
     },
@@ -2398,16 +2538,6 @@
       "top": true,
       "bestRank": 7,
       "firstSeen": "2026-09-29T09:45:08.013Z"
-    },
-    {
-      "headline": "Ukrainian Science Academy, Struck by Drone, Played Key Role in Research",
-      "date": "2026-09-29",
-      "bucket": "World",
-      "summary": "Reported by apnews.com.",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNlJtSFNPdktHSGhSU1FFZ1kxc0o5OHZXZ0hKM1hpa2p2QWhpMXNDV3JFMmtYODBDNFM4MC01ZVEtQVgyYXIwQzgzUkhQUUdoOWdpS3cxMHh4YS1TZFVDMTM0Ym9lTWN1aHpDaTZVcWZIRGhNR2VDUHl2ZEI3QU5KeVZrdVRQM2t2djc5cGphblpuOWd5WFhPV0dJOTZXQWdjSXhraHFUUVlUYUZz?oc=5",
-      "top": true,
-      "bestRank": 7,
-      "firstSeen": "2026-09-29T21:41:21.834Z"
     },
     {
       "headline": "Students protest and public sector workers strike ahead of French budget",
