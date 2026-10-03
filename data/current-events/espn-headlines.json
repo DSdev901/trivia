@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-03T06:50:18.628Z",
+  "generatedAt": "2026-10-03T09:29:01.402Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-12T06:50:18.628Z",
-  "windowEnd": "2026-10-03T06:50:18.628Z",
+  "windowStart": "2026-09-12T09:29:01.402Z",
+  "windowEnd": "2026-10-03T09:29:01.402Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,17 +21,226 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4368,
+  "count": 4366,
   "items": [
+    {
+      "key": "50089209",
+      "id": "50089209",
+      "headline": "Capitals take on the Lightning following Tuch's 2-goal game",
+      "summary": "Washington Capitals (1-0, in the Metropolitan Division) vs. Tampa Bay Lightning (0-1, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401891826",
+      "sport": "NHL",
+      "published": "2026-10-03T08:11:50.000Z",
+      "firstSeen": "2026-10-03T09:29:01.402Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50089208",
+      "id": "50089208",
+      "headline": "Metropolitan Division foes meet when Philadelphia hosts Carolina",
+      "summary": "Carolina Hurricanes (0-1-1, in the Metropolitan Division) vs. Philadelphia Flyers (0-1-1, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892435",
+      "sport": "NHL",
+      "published": "2026-10-03T08:11:47.000Z",
+      "firstSeen": "2026-10-03T09:29:01.402Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50089207",
+      "id": "50089207",
+      "headline": "Avalanche take on the Blues following MacKinnon's 2-goal performance",
+      "summary": "St. Louis Blues (1-0, in the Central Division) vs. Colorado Avalanche (1-0, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892439",
+      "sport": "NHL",
+      "published": "2026-10-03T08:11:43.000Z",
+      "firstSeen": "2026-10-03T09:29:01.402Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50089206",
+      "id": "50089206",
+      "headline": "Nashville plays Dallas in Central Division action",
+      "summary": "Dallas Stars (0-1, in the Central Division) vs. Nashville Predators (0-1, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892438",
+      "sport": "NHL",
+      "published": "2026-10-03T08:11:40.000Z",
+      "firstSeen": "2026-10-03T09:29:01.402Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50089205",
+      "id": "50089205",
+      "headline": "Detroit and Winnipeg take the ice for out-of-conference matchup",
+      "summary": "Winnipeg Jets (0-0-1, in the Central Division) vs. Detroit Red Wings (0-1, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892442",
+      "sport": "NHL",
+      "published": "2026-10-03T08:11:36.000Z",
+      "firstSeen": "2026-10-03T09:29:01.402Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50089204",
+      "id": "50089204",
+      "headline": "Panthers visit the Ducks after Luostarinen's 2-goal game",
+      "summary": "Florida Panthers (1-0-1, in the Atlantic Division) vs. Anaheim Ducks (1-0, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401891778",
+      "sport": "NHL",
+      "published": "2026-10-03T08:11:33.000Z",
+      "firstSeen": "2026-10-03T09:29:01.402Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50089203",
+      "id": "50089203",
+      "headline": "Boston visits Minnesota after shootout victory",
+      "summary": "Boston Bruins (2-0, in the Atlantic Division) vs. Minnesota Wild (1-0, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401891814",
+      "sport": "NHL",
+      "published": "2026-10-03T08:11:29.000Z",
+      "firstSeen": "2026-10-03T09:29:01.402Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50087283",
+      "id": "50087283",
+      "headline": "Guardians and White Sox meet to begin ALDS",
+      "summary": "— Stephen Vogt and Will Venable don't need to pore over extra scouting reports as the Cleveland Guardians get set to host the Chicago White Sox in Saturday's Game 1 of the AL Division Series.",
+      "url": "http://www.espn.com/mlb/preview?gameId=401907990",
+      "sport": "MLB",
+      "published": "2026-10-03T08:01:39.000Z",
+      "firstSeen": "2026-10-03T01:03:07.029Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50089186",
+      "id": "50089186",
+      "headline": "Brewers and Padres square off to begin NLDS",
+      "summary": "San Diego Padres (91-71, second in the NL West during the regular season) vs. Milwaukee Brewers (103-59, first in the NL Central during the regular season)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401908002",
+      "sport": "MLB",
+      "published": "2026-10-03T08:01:36.000Z",
+      "firstSeen": "2026-10-03T09:29:01.402Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50084930",
+      "id": "50084930",
+      "headline": "Rays and Yankees meet to start ALDS",
+      "summary": "New York Yankees (93-68, second in the AL East during the regular season) vs. Tampa Bay Rays (98-64, first in the AL East during the regular season)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401907985",
+      "sport": "MLB",
+      "published": "2026-10-03T08:01:32.000Z",
+      "firstSeen": "2026-10-02T15:30:44.172Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50089185",
+      "id": "50089185",
+      "headline": "Dodgers and Braves meet to begin NLDS",
+      "summary": "Atlanta Braves (94-68, first in the NL East during the regular season) vs. Los Angeles Dodgers (100-62, first in the NL West during the regular season)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401908007",
+      "sport": "MLB",
+      "published": "2026-10-03T08:01:29.000Z",
+      "firstSeen": "2026-10-03T09:29:01.402Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50088302",
+      "id": "50088302",
+      "headline": "Williams' leads charge from 16 down, puts Valkyries in WNBA semis",
+      "summary": "Gabby Williams scored 11 of her 19 points in the fourth quarter to help the Valkyries erase a 16-point second-half deficit and secure a spot in the WNBA semifinals with a 77-73 win over the Wings.",
+      "url": "https://www.espn.com/wnba/story/_/id/50088302/valkyries-rally-16-stun-wings-1st-playoff-series-win",
+      "sport": "WNBA",
+      "published": "2026-10-03T07:17:31.000Z",
+      "firstSeen": "2026-10-03T06:50:18.628Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50088928",
+      "id": "50088928",
+      "headline": "Idaho ends Montana State's 19-game win streak on 2-point conversion",
+      "summary": "Defending FCS champion Montana State's 19-game win streak is over after Idaho scored a touchdown on the final play of Friday night's game and then scored on a 2-point conversion to win 35-34.",
+      "url": "https://www.espn.com/college-football/story/_/id/50088928/idaho-ends-montana-state-19-game-win-streak-2-point-conversion",
+      "sport": "College football",
+      "published": "2026-10-03T07:14:17.000Z",
+      "firstSeen": "2026-10-03T09:29:01.402Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50088510",
+      "id": "50088510",
+      "headline": "Penn State no match for Northwestern in Ryan Field opener",
+      "summary": "Northwestern fans, who eagerly awaited Ryan Field's opening, were rewarded with not only an easy win over a preseason Top 25 team, but a light show in the stands and waves of fireworks and flames before kickoff of the Wildcats' 34-13 win over Penn State.",
+      "url": "https://www.espn.com/college-football/story/_/id/50088510/penn-state-no-match-northwestern-ryan-field-opener",
+      "sport": "College football",
+      "published": "2026-10-03T07:06:48.000Z",
+      "firstSeen": "2026-10-03T06:50:18.628Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50088845",
+      "id": "50088845",
+      "headline": "Gauff wins first match since US Open, makes 3rd round in Beijing",
+      "summary": "US Open semifinalist Coco Gauff beat Camila Osorio 7-6 (4), 4-6, 6-2 in a second-round match at the China Open on Saturday.",
+      "url": "https://www.espn.com/tennis/story/_/id/50088845/gauff-outlasts-osorio-3-sets-advances-third-round-china-open",
+      "sport": "Tennis",
+      "published": "2026-10-03T06:56:18.000Z",
+      "firstSeen": "2026-10-03T09:29:01.402Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50088772",
+      "id": "50088772",
+      "headline": "Valkyries say Nakase OK after collapsing late in Game 3 win",
+      "summary": "The Valkyries said head coach Natalie Nakase was feeling lightheaded and exhausted when she collapsed on the court late in Friday's Game 3 win, but said she was fine after the game and is expected to coach Sunday's Game 1 of the semifinals.",
+      "url": "https://www.espn.com/wnba/story/_/id/50088772/valkyries-say-nakase-ok-collapsing-late-game-3-win",
+      "sport": "WNBA",
+      "published": "2026-10-03T06:49:48.000Z",
+      "firstSeen": "2026-10-03T09:29:01.402Z",
+      "bestRank": 3
+    },
     {
       "key": "50088925",
       "id": "50088925",
-      "headline": "Joshua Wood and Idaho end Montana State's 19-game win streak with stunning 35-34 victory",
-      "summary": "— Joshua Wood threw a 25-yard touchdown pass to Ryan Jezioro on the final play of the game, then ran it in for the two-point conversion to help Idaho end defending champion...",
+      "headline": "Joshua Wood and Idaho end Montana State's 19-game winning streak with a stunning 35-34 victory",
+      "summary": "— Joshua Wood threw a 25-yard touchdown pass to Ryan Jezioro with no time left, then ran for a 2-point conversion as Idaho stunned Montana State 35-34 on Friday night to end the defending FCS champion Bobcats’ 19-game winning streak.",
       "url": "http://www.espn.com/ncf/recap?gameId=401868094",
       "sport": "College football",
-      "published": "2026-10-03T06:41:32.000Z",
+      "published": "2026-10-03T06:45:31.000Z",
       "firstSeen": "2026-10-03T06:50:18.628Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49882118",
+      "id": "49882118",
+      "headline": "WNBA playoffs 2026: Schedule, scores for every game",
+      "summary": "The first round of the 2026 WNBA playoffs opens on Sept. 27. The semifinals tip Oct. 4 and the Finals open Oct. 17.",
+      "url": "https://www.espn.com/wnba/story/_/id/49882118/wnba-playoffs-2026-schedule-games-first-round-semifinals-finals-scores-results-news-highlights",
+      "sport": "WNBA",
+      "published": "2026-10-03T06:45:12.000Z",
+      "firstSeen": "2026-09-09T21:23:12.453Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50079044",
+      "id": "50079044",
+      "headline": "WNBA playoffs 2026: How the Valkyries advanced to their first semifinals",
+      "summary": "To upend Golden State and keep its season alive, Dallas must win at Chase Center for the first time this season.",
+      "url": "https://www.espn.com/wnba/story/_/id/50079044/2026-wnba-playoffs-scores-results-takeaways-analysis-valkyries-wings",
+      "sport": "WNBA",
+      "published": "2026-10-03T06:27:45.000Z",
+      "firstSeen": "2026-10-02T12:41:58.213Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50026166",
+      "id": "50026166",
+      "headline": "Which Premier League players got injured in the international break?",
+      "summary": "All the latest news and updates on Premier League stars injuries during the first international break of the 2026-2027 club season",
+      "url": "https://www.espn.com/football/story/_/id/50026166/premier-league-international-break-arsenal-chelsea-manchester-united",
+      "sport": "Soccer",
+      "published": "2026-10-03T06:21:45.000Z",
+      "firstSeen": "2026-09-25T12:39:34.492Z",
       "bestRank": 1
     },
     {
@@ -66,28 +275,6 @@
       "published": "2026-10-03T06:10:29.000Z",
       "firstSeen": "2026-10-03T06:50:18.628Z",
       "bestRank": 2
-    },
-    {
-      "key": "50088302",
-      "id": "50088302",
-      "headline": "Williams' leads charge from 16 down, puts Valkyries in WNBA semis",
-      "summary": "Gabby Williams scored 11 of her 19 points in the fourth quarter to help the Valkyries erase a 16-point second-half deficit and secure a spot in the WNBA semifinals with a 77-73 win over the Wings.",
-      "url": "https://www.espn.com/wnba/story/_/id/50088302/valkyries-rally-16-stun-wings-1st-playoff-series-win",
-      "sport": "WNBA",
-      "published": "2026-10-03T05:44:19.000Z",
-      "firstSeen": "2026-10-03T06:50:18.628Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50088510",
-      "id": "50088510",
-      "headline": "Penn State no match for Northwestern in Ryan Field opener",
-      "summary": "Northwestern fans, who eagerly awaited Ryan Field's opening, were rewarded with not only an easy win over a preseason Top 25 team, but a light show in the stands and waves of fireworks and flames before kickoff of the Wildcats' 34-13 win over Penn State.",
-      "url": "https://www.espn.com/college-football/story/_/id/50088510/penn-state-no-match-northwestern-ryan-field-opener",
-      "sport": "College football",
-      "published": "2026-10-03T05:32:50.000Z",
-      "firstSeen": "2026-10-03T06:50:18.628Z",
-      "bestRank": 3
     },
     {
       "key": "50088277",
@@ -156,17 +343,6 @@
       "bestRank": 2
     },
     {
-      "key": "50079044",
-      "id": "50079044",
-      "headline": "WNBA playoffs 2026: How the Valkyries advanced to their first semifinals",
-      "summary": "To upend Golden State and keep its season alive, Dallas must win at Chase Center for the first time this season.",
-      "url": "https://www.espn.com/wnba/story/_/id/50079044/2026-wnba-playoffs-scores-results-takeaways-analysis-valkyries-wings",
-      "sport": "WNBA",
-      "published": "2026-10-03T04:36:38.000Z",
-      "firstSeen": "2026-10-02T12:41:58.213Z",
-      "bestRank": 2
-    },
-    {
       "key": "50088125",
       "id": "50088125",
       "headline": "Pittsburgh rallies from 14-point deficit, remains unbeaten with 35-33 victory over Virginia Tech",
@@ -209,17 +385,6 @@
       "published": "2026-10-03T04:12:58.000Z",
       "firstSeen": "2026-09-10T15:27:19.888Z",
       "bestRank": 6
-    },
-    {
-      "key": "49882118",
-      "id": "49882118",
-      "headline": "WNBA playoffs 2026: Schedule, scores for every game",
-      "summary": "The first round of the 2026 WNBA playoffs opens on Sept. 27. The semifinals tip Oct. 4 and the Finals open Oct. 17.",
-      "url": "https://www.espn.com/wnba/story/_/id/49882118/wnba-playoffs-2026-schedule-games-first-round-semifinals-finals-scores-results-news-highlights",
-      "sport": "WNBA",
-      "published": "2026-10-03T04:02:26.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 1
     },
     {
       "key": "50088315",
@@ -508,17 +673,6 @@
       "bestRank": 1
     },
     {
-      "key": "50087283",
-      "id": "50087283",
-      "headline": "Guardians, White Sox renew AL Central rivalry as Division Series opens in Cleveland",
-      "summary": "— Stephen Vogt and Will Venable don't need to pore over extra scouting reports as the Cleveland Guardians get set to host the Chicago White Sox in Saturday's Game 1 of the AL Division Series.",
-      "url": "http://www.espn.com/mlb/preview?gameId=401907990",
-      "sport": "MLB",
-      "published": "2026-10-02T23:58:30.000Z",
-      "firstSeen": "2026-10-03T01:03:07.029Z",
-      "bestRank": 1
-    },
-    {
       "key": "50084279",
       "id": "50084279",
       "headline": "Trail Blazers fire new announcer over past inappropriate posts",
@@ -659,17 +813,6 @@
       "sport": "Women's college basketball",
       "published": "2026-10-02T21:34:52.000Z",
       "firstSeen": "2026-10-03T03:43:23.343Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50084930",
-      "id": "50084930",
-      "headline": "Yankees sending Gerrit Cole to the mound vs. Rays' Drew Rasmussen in Game 1 of AL Division Series",
-      "summary": "Gerrit Cole will start for the New York Yankees against Drew Rasmussen and the Tampa Bay Rays in Saturday night's AL Division Series opener.",
-      "url": "http://www.espn.com/mlb/preview?gameId=401907985",
-      "sport": "MLB",
-      "published": "2026-10-02T21:19:41.000Z",
-      "firstSeen": "2026-10-02T15:30:44.172Z",
       "bestRank": 1
     },
     {
@@ -1408,17 +1551,6 @@
       "published": "2026-10-02T15:25:46.000Z",
       "firstSeen": "2026-10-02T18:35:28.710Z",
       "bestRank": 4
-    },
-    {
-      "key": "50026166",
-      "id": "50026166",
-      "headline": "Which Premier League players got injured in the international break?",
-      "summary": "All the latest news and updates on Premier League stars injuries during the first international break of the 2026-2027 club season",
-      "url": "https://www.espn.com/football/story/_/id/50026166/premier-league-international-break-arsenal-chelsea-manchester-united",
-      "sport": "Soccer",
-      "published": "2026-10-02T15:24:58.000Z",
-      "firstSeen": "2026-09-25T12:39:34.492Z",
-      "bestRank": 1
     },
     {
       "key": "50084977",
@@ -47916,160 +48048,6 @@
       "published": "2026-09-12T10:00:12.000Z",
       "firstSeen": "2026-09-12T12:32:59.419Z",
       "bestRank": 3
-    },
-    {
-      "key": "49911635",
-      "id": "49911635",
-      "headline": "Chourio leads Brewers against the Reds after 4-hit outing",
-      "summary": "Cincinnati Reds (69-78, fifth in the NL Central) vs. Milwaukee Brewers (92-56, first in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816912",
-      "sport": "MLB",
-      "published": "2026-09-12T08:03:13.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49911634",
-      "id": "49911634",
-      "headline": "Orioles face the Blue Jays with 1-0 series lead",
-      "summary": "Baltimore Orioles (72-76, fifth in the AL East) vs. Toronto Blue Jays (73-75, fourth in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816904",
-      "sport": "MLB",
-      "published": "2026-09-12T08:03:09.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49911633",
-      "id": "49911633",
-      "headline": "Braves bring 1-0 series lead over Phillies into game 2",
-      "summary": "Philadelphia Phillies (82-66, second in the NL East) vs. Atlanta Braves (87-61, first in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816910",
-      "sport": "MLB",
-      "published": "2026-09-12T08:03:06.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49911632",
-      "id": "49911632",
-      "headline": "Cubs face the Pirates leading series 1-0",
-      "summary": "Pittsburgh Pirates (74-74, third in the NL Central) vs. Chicago Cubs (82-66, second in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816914",
-      "sport": "MLB",
-      "published": "2026-09-12T08:03:02.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49911631",
-      "id": "49911631",
-      "headline": "Rangers play the Diamondbacks looking to stop road slide",
-      "summary": "Texas Rangers (72-76, second in the AL West) vs. Arizona Diamondbacks (79-69, third in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816917",
-      "sport": "MLB",
-      "published": "2026-09-12T08:02:58.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49911629",
-      "id": "49911629",
-      "headline": "Nationals bring 1-0 series advantage over Angels into game 2",
-      "summary": "Los Angeles Angels (56-91, fifth in the AL West) vs. Washington Nationals (68-81, fifth in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816903",
-      "sport": "MLB",
-      "published": "2026-09-12T08:02:55.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49911628",
-      "id": "49911628",
-      "headline": "Yankees host the Mets, try to continue home win streak",
-      "summary": "New York Mets (68-79, fourth in the NL East) vs. New York Yankees (85-62, second in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816909",
-      "sport": "MLB",
-      "published": "2026-09-12T08:02:51.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49911627",
-      "id": "49911627",
-      "headline": "Padres bring 5-game win streak into matchup with the Giants",
-      "summary": "San Diego Padres (79-68, second in the NL West) vs. San Francisco Giants (62-86, fourth in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816915",
-      "sport": "MLB",
-      "published": "2026-09-12T08:02:48.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49911626",
-      "id": "49911626",
-      "headline": "Marlins play the Dodgers after Lopez's 4-hit game",
-      "summary": "Los Angeles Dodgers (90-57, first in the NL West) vs. Miami Marlins (72-76, third in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816908",
-      "sport": "MLB",
-      "published": "2026-09-12T08:02:44.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 9
-    },
-    {
-      "key": "49911625",
-      "id": "49911625",
-      "headline": "Cleveland Guardians and Minnesota Twins play in game 2 of series",
-      "summary": "Cleveland Guardians (75-73, second in the AL Central) vs. Minnesota Twins (69-78, third in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816913",
-      "sport": "MLB",
-      "published": "2026-09-12T08:02:40.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49911624",
-      "id": "49911624",
-      "headline": "White Sox take 4-game losing streak into matchup with the Cardinals",
-      "summary": "Chicago White Sox (75-72, first in the AL Central) vs. St. Louis Cardinals (73-75, fourth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816911",
-      "sport": "MLB",
-      "published": "2026-09-12T08:02:37.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49911623",
-      "id": "49911623",
-      "headline": "Rockies head into matchup against the Tigers on losing streak",
-      "summary": "Colorado Rockies (55-92, fifth in the NL West) vs. Detroit Tigers (68-79, fourth in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816905",
-      "sport": "MLB",
-      "published": "2026-09-12T08:02:34.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49911622",
-      "id": "49911622",
-      "headline": "Rays face the Astros with 1-0 series lead",
-      "summary": "Houston Astros (75-73, first in the AL West) vs. Tampa Bay Rays (88-59, first in the AL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816906",
-      "sport": "MLB",
-      "published": "2026-09-12T08:02:29.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 13
-    },
-    {
-      "key": "49906828",
-      "id": "49906828",
-      "headline": "Dalot still dreams of putting Manchester United back on top",
-      "summary": "After eight years at Old Trafford, Diogo Dalot still has the desire to win the biggest trophies with Manchester United as another crucial derby looms.",
-      "url": "https://www.espn.com/soccer/story/_/id/49906828/diogo-dalot-dreams-putting-manchester-united-back-top",
-      "sport": "Soccer",
-      "published": "2026-09-12T07:22:47.000Z",
-      "firstSeen": "2026-09-12T09:26:05.987Z",
-      "bestRank": 2
     }
   ]
 }
