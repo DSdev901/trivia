@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-05T07:04:36.494Z",
+  "generatedAt": "2026-10-05T09:45:28.082Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-14T07:04:36.494Z",
-  "windowEnd": "2026-10-05T07:04:36.494Z",
+  "windowStart": "2026-09-14T09:45:28.082Z",
+  "windowEnd": "2026-10-05T09:45:28.082Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,140 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4273,
+  "count": 4272,
   "items": [
+    {
+      "key": "50108109",
+      "id": "50108109",
+      "headline": "Jets visit the Penguins after Connor's 2-goal game",
+      "summary": "Winnipeg Jets (1-0-1, in the Central Division) vs. Pittsburgh Penguins (2-0, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892447",
+      "sport": "NHL",
+      "published": "2026-10-05T08:11:53.000Z",
+      "firstSeen": "2026-10-05T09:45:28.082Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50108108",
+      "id": "50108108",
+      "headline": "Carolina visits Montreal after Aho's 2-goal game",
+      "summary": "Carolina Hurricanes (1-1-1, in the Metropolitan Division) vs. Montreal Canadiens (1-0-1, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401891815",
+      "sport": "NHL",
+      "published": "2026-10-05T08:11:50.000Z",
+      "firstSeen": "2026-10-05T09:45:28.082Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50108107",
+      "id": "50108107",
+      "headline": "Blackhawks bring losing streak into game against the Blues",
+      "summary": "St. Louis Blues (1-1, in the Central Division) vs. Chicago Blackhawks (0-3, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401891779",
+      "sport": "NHL",
+      "published": "2026-10-05T08:11:47.000Z",
+      "firstSeen": "2026-10-05T09:45:28.082Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50108106",
+      "id": "50108106",
+      "headline": "Toronto takes on Nashville in a non-conference matchup",
+      "summary": "Nashville Predators (1-1, in the Central Division) vs. Toronto Maple Leafs (1-2, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892449",
+      "sport": "NHL",
+      "published": "2026-10-05T08:11:43.000Z",
+      "firstSeen": "2026-10-05T09:45:28.082Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50108105",
+      "id": "50108105",
+      "headline": "Rangers look to keep win streak alive, host the Islanders",
+      "summary": "New York Islanders (1-1, in the Metropolitan Division) vs. New York Rangers (3-1, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892452",
+      "sport": "NHL",
+      "published": "2026-10-05T08:11:40.000Z",
+      "firstSeen": "2026-10-05T09:45:28.082Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50108104",
+      "id": "50108104",
+      "headline": "Wild visit the Sabres after Kaprizov's 2-goal game",
+      "summary": "Minnesota Wild (2-0, in the Central Division) vs. Buffalo Sabres (1-1, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892453",
+      "sport": "NHL",
+      "published": "2026-10-05T08:11:36.000Z",
+      "firstSeen": "2026-10-05T09:45:28.082Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50108102",
+      "id": "50108102",
+      "headline": "Devils face the Mammoth in a non-conference matchup",
+      "summary": "Utah Mammoth (2-1, in the Central Division) vs. New Jersey Devils (1-1, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892451",
+      "sport": "NHL",
+      "published": "2026-10-05T08:11:32.000Z",
+      "firstSeen": "2026-10-05T09:45:28.082Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50108101",
+      "id": "50108101",
+      "headline": "Los Angeles hosts Florida in a non-conference matchup",
+      "summary": "Florida Panthers (1-0-2, in the Atlantic Division) vs. Los Angeles Kings (0-1-1, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401891806",
+      "sport": "NHL",
+      "published": "2026-10-05T08:11:29.000Z",
+      "firstSeen": "2026-10-05T09:45:28.082Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50108045",
+      "id": "50108045",
+      "headline": "White Sox bring 1-0 lead into ALDS Game 2 against Guardians",
+      "summary": "Chicago White Sox (84-78, second in the AL Central during the regular season) vs. Cleveland Guardians (85-77, first in the AL Central during the regular season)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401907991",
+      "sport": "MLB",
+      "published": "2026-10-05T08:02:32.000Z",
+      "firstSeen": "2026-10-05T09:45:28.082Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50108044",
+      "id": "50108044",
+      "headline": "Rays lead Yankees 1-0 ahead of ALDS Game 2",
+      "summary": "New York Yankees (93-68, second in the AL East during the regular season) vs. Tampa Bay Rays (98-64, first in the AL East during the regular season)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401907986",
+      "sport": "MLB",
+      "published": "2026-10-05T08:02:29.000Z",
+      "firstSeen": "2026-10-05T09:45:28.082Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50108019",
+      "id": "50108019",
+      "headline": "Chourio's 2-run single with 2 outs in 9th off Miller lifts Brewers over Padres for 2-0 NLDS lead",
+      "summary": "— Jackson Chourio hit a two-run single off hard-throwing Mason Miller with two outs in the ninth inning and the Milwaukee Brewers rallied past the San Diego Padres for the straight day, a 4-3 victory Sunday for a 2-0 NL Division Series lead.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401908003",
+      "sport": "MLB",
+      "published": "2026-10-05T07:51:49.000Z",
+      "firstSeen": "2026-10-05T09:45:28.082Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50107968",
+      "id": "50107968",
+      "headline": "Nigerian connection runs through Mystics rise as Kiki Iriafen breaks out in playoff run",
+      "summary": "Fresh from helping team USA win the World Cup last month, Kiki Iriafen's second WNBA season ended with a first round elimination to the Atlanta Dream.",
+      "url": "https://www.espn.com/espn/story/_/id/50107968/nigerian-connection-runs-mystics-rise-kiki-iriafen-breaks-playoff-run",
+      "sport": "WNBA",
+      "published": "2026-10-05T07:39:47.000Z",
+      "firstSeen": "2026-10-05T09:45:28.082Z",
+      "bestRank": 1
+    },
     {
       "key": "50107855",
       "id": "50107855",
@@ -30,7 +162,7 @@
       "summary": "Despite the Lions' defense's continued slide, Dan Campbell and his players refused to blame second-year defensive coordinator Kelvin Sheppard after their loss Sunday night to the Panthers.",
       "url": "https://www.espn.com/nfl/story/_/id/50107855/lions-campbell-discuss-dismissing-dc-sheppard-loss",
       "sport": "NFL",
-      "published": "2026-10-05T07:00:53.000Z",
+      "published": "2026-10-05T07:07:26.000Z",
       "firstSeen": "2026-10-05T07:04:36.494Z",
       "bestRank": 1
     },
@@ -65,6 +197,17 @@
       "sport": "MLB",
       "published": "2026-10-05T06:06:54.000Z",
       "firstSeen": "2026-10-05T07:04:36.494Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50074960",
+      "id": "50074960",
+      "headline": "Bahrain Grand Prix in Malaysia descends into chaos after delayed start due to huge downpour",
+      "summary": "Max Verstappen said \"lol look at this\" during a farcical aborted start at the Bahrain Grand Prix in Malaysia, where F1's new hybrid engines appeared to shut down on masse at reduced speeds.",
+      "url": "https://www.espn.com/f1/story/_/id/50074960/bahrain-grand-prix-malaysia-descends-chaos-delayed-start-due-huge-downpour-formula-1",
+      "sport": "F1",
+      "published": "2026-10-05T05:43:06.000Z",
+      "firstSeen": "2026-10-04T14:13:49.532Z",
       "bestRank": 1
     },
     {
@@ -132,6 +275,17 @@
       "published": "2026-10-05T04:56:29.000Z",
       "firstSeen": "2026-10-05T07:04:36.494Z",
       "bestRank": 6
+    },
+    {
+      "key": "50105931",
+      "id": "50105931",
+      "headline": "Austin Smotherman wins PGA Tour's Bank of Utah Championship",
+      "summary": "- Austin Smotherman recovered from his lone blunder with two great shots and was able to cruise home to a 3-under 68 on Sunday to win the Bank of Utah Championship, his first PGA Tour victory in his 100th career start.",
+      "url": "https://www.espn.com/golf/story/_/id/50105931/austin-smotherman-wins-pga-tour-bank-utah-championship",
+      "sport": "Golf",
+      "published": "2026-10-05T04:51:57.000Z",
+      "firstSeen": "2026-10-05T07:04:36.494Z",
+      "bestRank": 1
     },
     {
       "key": "50085799",
@@ -571,17 +725,6 @@
       "sport": "NHL",
       "published": "2026-10-05T00:50:38.000Z",
       "firstSeen": "2026-10-05T01:11:42.931Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50105931",
-      "id": "50105931",
-      "headline": "Austin Smotherman wins PGA Tour's Bank of Utah Championship",
-      "summary": "- Austin Smotherman recovered from his lone blunder with two great shots and was able to cruise home to a 3-under 68 on Sunday to win the Bank of Utah Championship, his first PGA Tour victory in his 100th career start.",
-      "url": "https://www.espn.com/golf/story/_/id/50105931/austin-smotherman-wins-pga-tour-bank-utah-championship",
-      "sport": "Golf",
-      "published": "2026-10-05T00:50:31.000Z",
-      "firstSeen": "2026-10-05T07:04:36.494Z",
       "bestRank": 1
     },
     {
@@ -2112,17 +2255,6 @@
       "published": "2026-10-04T15:09:21.000Z",
       "firstSeen": "2026-09-08T15:28:45.140Z",
       "bestRank": 1
-    },
-    {
-      "key": "50074960",
-      "id": "50074960",
-      "headline": "Bahrain Grand Prix in Malaysia descends into chaos after delayed start due to huge downpour",
-      "summary": "Max Verstappen said \"lol look at this\" during a farcical aborted start at the Bahrain Grand Prix in Malaysia, where F1's new hybrid engines appeared to shut down on masse at reduced speeds.",
-      "url": "https://www.espn.com/f1/story/_/id/50074960/bahrain-grand-prix-malaysia-descends-chaos-delayed-start-due-huge-downpour-formula-1",
-      "sport": "F1",
-      "published": "2026-10-04T15:01:11.000Z",
-      "firstSeen": "2026-10-04T14:13:49.532Z",
-      "bestRank": 2
     },
     {
       "key": "50099497",
@@ -5551,7 +5683,7 @@
       "headline": "Windy: Simmons could guard Wembanyama",
       "summary": "Brian Windhorst believes a healthy Ben Simmons could defend anyone 1 through 5 on the court, including Victor Wembanyama",
       "url": "https://www.espn.com/video/clip/_/id/50088523/simmons-guard-wembanyama",
-      "sport": "NBA",
+      "sport": "College basketball",
       "published": "2026-10-03T04:46:35.000Z",
       "firstSeen": "2026-10-03T06:50:18.628Z",
       "bestRank": 1
@@ -7014,7 +7146,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "With a month to go until the 2026-27 season begins, we check in on the NCAA's player eligibility cases -- and LSU.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-02T11:13:23.000Z",
       "firstSeen": "2026-10-02T12:41:58.213Z",
       "bestRank": 1
@@ -7795,7 +7927,7 @@
       "headline": "Student-athletes received $1.77B in revenue-sharing pay in '25-26",
       "summary": "Sixty-eight schools reached or came within 5% of reaching the $20.5 million revenue-sharing cap over the first season of NIL payments.",
       "url": "https://www.espn.com/college-sports/story/_/id/50080194/student-athletes-received-177b-revenue-sharing-pay-25-26",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-02T00:21:41.000Z",
       "firstSeen": "2026-10-02T03:34:46.329Z",
       "bestRank": 1
@@ -8477,7 +8609,7 @@
       "headline": "NCAA reducing fields for NIT, WBIT to 24 teams starting in 2027",
       "summary": "In the aftermath of the NCAA tournaments expanding to 76 teams starting this season, the NIT and Women's Basketball Invitation Tournament will drop from 32 teams to 24 beginning in 2027, the NCAA announced.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50077597/ncaa-reducing-fields-nit-wbit-24-teams-starting-2027",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-01T17:19:11.000Z",
       "firstSeen": "2026-10-01T18:36:52.245Z",
       "bestRank": 1
@@ -10281,7 +10413,7 @@
       "headline": "College basketball realignment: Conference changes for 2026-27",
       "summary": "A complete list of college basketball conference membership for the 2026-27 season.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49973549/college-basketball-conference-changes-realignment",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-30T15:22:10.000Z",
       "firstSeen": "2026-09-30T15:32:20.020Z",
       "bestRank": 1
@@ -12349,7 +12481,7 @@
       "headline": "U.S. Senate votes 77-22 to pass Protect College Sports Act",
       "summary": "The Protect College Sports Act, a federal bill aimed at reshaping the industry, took a step toward to becoming law Monday when the U.S. Senate voted 77-22 to pass it, with Ted Cruz saying, \"This bill puts an end to the chaos plaguing college athletics.\"",
       "url": "https://www.espn.com/college-sports/story/_/id/50056206/us-senate-votes-77-22-pass-protect-college-sports-act",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-29T13:37:08.000Z",
       "firstSeen": "2026-09-29T03:35:26.425Z",
       "bestRank": 1
@@ -13746,7 +13878,7 @@
       "headline": "Alabama agrees to 2-year extension, raise with AD Greg Byrne",
       "summary": "Alabama and athletic director Greg Byrne have agreed to a revised two-year contract extension that will pay him an average annual base salary of $2.67 million through June 30, 2033.",
       "url": "https://www.espn.com/college-sports/story/_/id/50053965/alabama-agrees-two-year-extension-raise-ad-greg-byrne",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-28T19:49:27.000Z",
       "firstSeen": "2026-09-28T21:26:45.780Z",
       "bestRank": 1
@@ -14076,7 +14208,7 @@
       "headline": "Big Ten basketball adopts rule preventing pros from returning",
       "summary": "The Big Ten Conference has adopted a rule to prohibit men's and women's basketball players who left school to play professionally from maintaining their eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50053258/big-ten-basketball-adopts-rule-preventing-pros-returning",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-28T17:28:04.000Z",
       "firstSeen": "2026-09-28T18:35:51.463Z",
       "bestRank": 1
@@ -41994,7 +42126,7 @@
       "headline": "Reports: Miami Hurricanes returning to Nike in '27 on $200M+ deal",
       "summary": "University of Miami athletic teams will be wearing Nike apparel again starting in July 2027, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/49958590/report-miami-hurricanes-going-back-nike-200m+-deal",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-16T19:04:20.000Z",
       "firstSeen": "2026-09-16T21:25:45.412Z",
       "bestRank": 1
@@ -46185,7 +46317,7 @@
       "headline": "FSU fires AD Michael Alford amid looming football questions",
       "summary": "Florida State fired athletic director Michael Alford on Monday as the Seminoles grapple with looming decisions about their football program.",
       "url": "https://www.espn.com/college-football/story/_/id/49939737/fsu-fires-ad-michael-alford-amid-looming-football-questions",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-14T18:30:25.000Z",
       "firstSeen": "2026-09-14T15:28:36.074Z",
       "bestRank": 1
@@ -46882,149 +47014,6 @@
       "published": "2026-09-14T09:52:13.000Z",
       "firstSeen": "2026-09-14T12:39:21.982Z",
       "bestRank": 1
-    },
-    {
-      "key": "49938458",
-      "id": "49938458",
-      "headline": "Antonelli admits Norris deserved to win the Spanish Grand Prix",
-      "summary": "Antonelli admits Norris deserved to win the Spanish Grand Prix",
-      "url": "https://www.espn.com/video/clip/_/id/49938458/antonelli-admits-norris-deserved-win-spanish-grand-prix",
-      "sport": "F1",
-      "published": "2026-09-14T09:28:10.000Z",
-      "firstSeen": "2026-09-14T12:39:21.982Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49938225",
-      "id": "49938225",
-      "headline": "Former West Ham goalkeeper Luděk Mikloško dies at 64 after cancer diagnosis",
-      "summary": "Former West Ham goalkeeper Luděk Mikloško has died aged 64 following a battle with cancer.",
-      "url": "https://www.espn.com/soccer/story/_/id/49938225/former-west-ham-goalkeeper-luděk-mikloško-dies-64-cancer-diagnosis",
-      "sport": "Soccer",
-      "published": "2026-09-14T08:59:05.000Z",
-      "firstSeen": "2026-09-14T12:39:21.982Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49938293",
-      "id": "49938293",
-      "headline": "Verstappen: There will be no excuses after Max vs 100",
-      "summary": "Verstappen: There will be no excuses after Max vs 100",
-      "url": "https://www.espn.com/video/clip/_/id/49938293/there-no-excuses-max-vs-100",
-      "sport": "F1",
-      "published": "2026-09-14T08:48:28.000Z",
-      "firstSeen": "2026-09-14T12:39:21.982Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49938096",
-      "id": "49938096",
-      "headline": "Guardians begin 3-game series with the White Sox",
-      "summary": "Chicago White Sox (76-73, first in the AL Central) vs. Cleveland Guardians (76-74, second in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816934",
-      "sport": "MLB",
-      "published": "2026-09-14T08:02:48.000Z",
-      "firstSeen": "2026-09-14T09:35:49.842Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49938095",
-      "id": "49938095",
-      "headline": "Dodgers visit the Reds to open 4-game series",
-      "summary": "Los Angeles Dodgers (90-59, first in the NL West) vs. Cincinnati Reds (70-79, fifth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816936",
-      "sport": "MLB",
-      "published": "2026-09-14T08:02:44.000Z",
-      "firstSeen": "2026-09-14T09:35:49.842Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49938094",
-      "id": "49938094",
-      "headline": "Mets host the Orioles to open 3-game series",
-      "summary": "Baltimore Orioles (72-78, fifth in the AL East) vs. New York Mets (69-80, fifth in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816933",
-      "sport": "MLB",
-      "published": "2026-09-14T08:02:40.000Z",
-      "firstSeen": "2026-09-14T09:35:49.842Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49938093",
-      "id": "49938093",
-      "headline": "Braves visit the Cubs to begin 3-game series",
-      "summary": "Atlanta Braves (88-62, first in the NL East) vs. Chicago Cubs (83-67, second in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816937",
-      "sport": "MLB",
-      "published": "2026-09-14T08:02:37.000Z",
-      "firstSeen": "2026-09-14T09:35:49.842Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49938092",
-      "id": "49938092",
-      "headline": "Angels aim to end losing streak in matchup with the Mariners",
-      "summary": "Seattle Mariners (70-80, third in the AL West) vs. Los Angeles Angels (56-93, fifth in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816942",
-      "sport": "MLB",
-      "published": "2026-09-14T08:02:33.000Z",
-      "firstSeen": "2026-09-14T09:35:49.842Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49938091",
-      "id": "49938091",
-      "headline": "Giants visit the Cardinals to start 3-game series",
-      "summary": "San Francisco Giants (62-88, fourth in the NL West) vs. St. Louis Cardinals (74-76, fourth in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401816939",
-      "sport": "MLB",
-      "published": "2026-09-14T08:02:29.000Z",
-      "firstSeen": "2026-09-14T09:35:49.842Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49938044",
-      "id": "49938044",
-      "headline": "Maresca: Fernandes should have been sent off with Foden",
-      "summary": "Maresca: Fernandes should have been sent off with Foden",
-      "url": "https://www.espn.com/video/clip/_/id/49938044/fernandes-sent-foden",
-      "sport": "Soccer",
-      "published": "2026-09-14T07:47:21.000Z",
-      "firstSeen": "2026-09-14T09:35:49.842Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49934374",
-      "id": "49934374",
-      "headline": "Giants WR Malik Nabers makes return in opener vs. Cowboys",
-      "summary": "Giants standout wide receiver Malik Nabers caught six passes on nine targets for 69 yards in Sunday night's win over the Cowboys, his first game action since last September.",
-      "url": "https://www.espn.com/nfl/story/_/id/49934374/giants-wr-malik-nabers-knee-active-opener-vs-cowboys",
-      "sport": "NFL",
-      "published": "2026-09-14T07:41:35.000Z",
-      "firstSeen": "2026-09-14T01:06:15.990Z",
-      "bestRank": 21
-    },
-    {
-      "key": "49938008",
-      "id": "49938008",
-      "headline": "Carrick fumes over 'worrying' officiating standards after VAR mistake",
-      "summary": "Carrick fumes over 'worrying' officiating standards after VAR mistake",
-      "url": "https://www.espn.com/video/clip/_/id/49938008/carrick-fumes-worrying-officiating-standards-var-mistake",
-      "sport": "Soccer",
-      "published": "2026-09-14T07:33:57.000Z",
-      "firstSeen": "2026-09-14T09:35:49.842Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49937740",
-      "id": "49937740",
-      "headline": "'Scrap VAR' - Peter Schmeichel calls for end of football 'annoyance' after Man United vs. Man City",
-      "summary": "Former Manchester United goalkeeper Peter Schmeichel has called for VAR to be scrapped following Erling Haaland's controversial goal in the Manchester derby.",
-      "url": "https://www.espn.com/soccer/story/_/id/49937740/scrap-var-man-united-man-city-peter-schmeichel-annoyance",
-      "sport": "Soccer",
-      "published": "2026-09-14T07:05:01.000Z",
-      "firstSeen": "2026-09-14T09:35:49.842Z",
-      "bestRank": 5
     }
   ]
 }
