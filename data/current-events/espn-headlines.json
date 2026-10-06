@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-06T11:15:09.369Z",
+  "generatedAt": "2026-10-06T12:41:30.006Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-15T11:15:09.369Z",
-  "windowEnd": "2026-10-06T11:15:09.369Z",
+  "windowStart": "2026-09-15T12:41:30.006Z",
+  "windowEnd": "2026-10-06T12:41:30.006Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,18 +21,84 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4261,
+  "count": 4252,
   "items": [
+    {
+      "key": "50110488",
+      "id": "50110488",
+      "headline": "Seven things Solak thinks entering NFL Week 5: Jaguars are the AFC's best, more",
+      "summary": "Has Jacksonville climbed to the top of its conference? Get ready for Week 5 with takes on the Jaguars, Bengals, Rams, Bears, Texans, Eagles and Lions.",
+      "url": "https://www.espn.com/nfl/story/_/id/50110488/week-5-seven-things-solak-thinks-afc-nfc",
+      "sport": "NFL",
+      "published": "2026-10-06T12:25:08.000Z",
+      "firstSeen": "2026-10-06T11:15:09.369Z",
+      "bestRank": 4
+    },
     {
       "key": "50112265",
       "id": "50112265",
       "headline": "Both sides of the contract divide between Karl-Anthony Towns and the Knicks",
-      "summary": "KAT and the Knicks are far apart on extension talks. ESPN insiders break down each side, plus project where this saga is headed.",
+      "summary": "Karl-Anthony Towns and the Knicks are far apart on extension talks. ESPN insiders break down each side, plus project where this saga is headed.",
       "url": "https://www.espn.com/nba/story/_/id/50112265/karl-anthony-towns-new-york-knicks-extension-talks-next",
       "sport": "NBA",
-      "published": "2026-10-06T11:11:24.000Z",
+      "published": "2026-10-06T12:21:24.000Z",
       "firstSeen": "2026-10-06T11:15:09.369Z",
       "bestRank": 2
+    },
+    {
+      "key": "50114987",
+      "id": "50114987",
+      "headline": "Resurgent Falcons score 80 points in two-game winning streak",
+      "summary": "The 2-2 Falcons had a combined 16 points, the lowest total in the NFL, through two weeks, but after a 45-24 victory over the rival New Orleans Saints on \"Monday Night Football,\" Atlanta now has a league-high 80 combined points in a two-game winning surge.",
+      "url": "https://www.espn.com/nfl/story/_/id/50114987/resurgent-falcons-score-80-points-two-game-winning-streak",
+      "sport": "NFL",
+      "published": "2026-10-06T12:12:58.000Z",
+      "firstSeen": "2026-10-06T06:47:30.963Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50115760",
+      "id": "50115760",
+      "headline": "Coco Gauff: 'Insane' amount of racist comments after match",
+      "summary": "After a disputed point in her win over Sun Xinran at the China Open on Monday, Coco Gauff said she received an \"insane\" amount of racist comments.",
+      "url": "https://www.espn.com/tennis/story/_/id/50115760/insane-amount-racist-comments-match",
+      "sport": "Tennis",
+      "published": "2026-10-06T11:47:19.000Z",
+      "firstSeen": "2026-10-06T12:41:30.006Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50115731",
+      "id": "50115731",
+      "headline": "Jannik Sinner to miss rest of year due to knee inflammation",
+      "summary": "Jannik Sinner, who already announced he'd miss the Shanghai Masters, announced Tuesday he would miss the rest of the year due to knee inflammation.",
+      "url": "https://www.espn.com/tennis/story/_/id/50115731/jannik-sinner-miss-rest-year-due-knee-inflammation",
+      "sport": "Tennis",
+      "published": "2026-10-06T11:31:18.000Z",
+      "firstSeen": "2026-10-06T11:15:09.369Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50115875",
+      "id": "50115875",
+      "headline": "Carlos Alcaraz retains Japan Open title in big step following injury layoff",
+      "summary": "Third-ranked Carlos Alcaraz beat Jiri Lehecka on Tuesday to defend his Japan Open title, in his second tournament back from an injury layoff.",
+      "url": "https://www.espn.com/tennis/story/_/id/50115875/carlos-alcaraz-retains-japan-open-title-big-step-following-injury-layoff",
+      "sport": "Tennis",
+      "published": "2026-10-06T11:27:59.000Z",
+      "firstSeen": "2026-10-06T12:41:30.006Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50109845",
+      "id": "50109845",
+      "headline": "2026 NFL Power Rankings: How all 32 teams stack up for Week 5",
+      "summary": "How does every NFL team stack up heading into Week 5? We made our 1-32 list and sized up each franchise's performance so far.",
+      "url": "https://www.espn.com/nfl/story/_/id/50109845/nfl-power-rankings-week-5-teams-first-month-recap",
+      "sport": "NFL",
+      "published": "2026-10-06T11:18:32.000Z",
+      "firstSeen": "2026-10-06T11:15:09.369Z",
+      "bestRank": 5
     },
     {
       "key": "49998196",
@@ -123,39 +189,6 @@
       "bestRank": 1
     },
     {
-      "key": "50110488",
-      "id": "50110488",
-      "headline": "Seven things Solak thinks entering NFL Week 5: Jaguars are the AFC's best, more",
-      "summary": "Has Jacksonville climbed to the top of its conference? Get ready for Week 5 with takes on the Jaguars, Bengals, Rams, Bears, Texans, Eagles and Lions.",
-      "url": "https://www.espn.com/nfl/story/_/id/50110488/week-5-seven-things-solak-thinks-afc-nfc",
-      "sport": "NFL",
-      "published": "2026-10-06T10:41:51.000Z",
-      "firstSeen": "2026-10-06T11:15:09.369Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50115731",
-      "id": "50115731",
-      "headline": "Jannik Sinner to miss rest of year due to knee inflammation",
-      "summary": "Jannik Sinner, who already announced he'd miss the Shanghai Masters, announced Tuesday he would miss the rest of the year due to knee inflammation.",
-      "url": "https://www.espn.com/tennis/story/_/id/50115731/jannik-sinner-miss-rest-year-due-knee-inflammation",
-      "sport": "Tennis",
-      "published": "2026-10-06T10:33:52.000Z",
-      "firstSeen": "2026-10-06T11:15:09.369Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50109845",
-      "id": "50109845",
-      "headline": "2026 NFL Power Rankings: How all 32 teams stack up for Week 5",
-      "summary": "How does every NFL team stack up heading into Week 5? We made our 1-32 list and sized up each franchise's performance so far.",
-      "url": "https://www.espn.com/nfl/story/_/id/50109845/nfl-power-rankings-week-5-teams-first-month-recap",
-      "sport": "NFL",
-      "published": "2026-10-06T10:22:12.000Z",
-      "firstSeen": "2026-10-06T11:15:09.369Z",
-      "bestRank": 5
-    },
-    {
       "key": "50100361",
       "id": "50100361",
       "headline": "Predicting the College Football Playoff: Who's most likely to make the field?",
@@ -165,6 +198,17 @@
       "published": "2026-10-06T10:13:39.000Z",
       "firstSeen": "2026-10-06T11:15:09.369Z",
       "bestRank": 4
+    },
+    {
+      "key": "50111171",
+      "id": "50111171",
+      "headline": "NHL Tonight: Get ready for Round 1 of the Battle of New York",
+      "summary": "Rangers-Islanders is the marquee matchup on the NHL's nine-game slate. Here's what to watch in each contest.",
+      "url": "https://www.espn.com/nhl/story/_/id/50111171/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+      "sport": "NHL",
+      "published": "2026-10-06T10:12:44.000Z",
+      "firstSeen": "2026-10-06T12:41:30.006Z",
+      "bestRank": 1
     },
     {
       "key": "50110125",
@@ -363,17 +407,6 @@
       "published": "2026-10-06T06:39:36.000Z",
       "firstSeen": "2026-10-06T06:47:30.963Z",
       "bestRank": 1
-    },
-    {
-      "key": "50114987",
-      "id": "50114987",
-      "headline": "Resurgent Falcons score 80 points in two-game winning streak",
-      "summary": "The 2-2 Falcons had a combined 16 points, the lowest total in the NFL, through two weeks, but after a 45-24 victory over the rival New Orleans Saints on \"Monday Night Football,\" Atlanta now has a league-high 80 combined points in a two-game winning surge.",
-      "url": "https://www.espn.com/nfl/story/_/id/50114987/resurgent-falcons-score-80-points-two-game-winning-streak",
-      "sport": "NFL",
-      "published": "2026-10-06T06:26:40.000Z",
-      "firstSeen": "2026-10-06T06:47:30.963Z",
-      "bestRank": 2
     },
     {
       "key": "50026166",
@@ -1635,7 +1668,7 @@
       "headline": "College basketball realignment: Conference changes for 2026-27",
       "summary": "A complete list of college basketball conference membership for the 2026-27 season.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49973549/college-basketball-conference-changes-realignment",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-05T17:29:52.000Z",
       "firstSeen": "2026-09-30T15:32:20.020Z",
       "bestRank": 1
@@ -9214,7 +9247,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "With a month to go until the 2026-27 season begins, we check in on the NCAA's player eligibility cases -- and LSU.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-02T11:13:23.000Z",
       "firstSeen": "2026-10-02T12:41:58.213Z",
       "bestRank": 1
@@ -9973,7 +10006,7 @@
       "headline": "Student-athletes received $1.77B in revenue-sharing pay in '25-26",
       "summary": "Sixty-eight schools reached or came within 5% of reaching the $20.5 million revenue-sharing cap over the first season of NIL payments.",
       "url": "https://www.espn.com/college-sports/story/_/id/50080194/student-athletes-received-177b-revenue-sharing-pay-25-26",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-02T00:21:41.000Z",
       "firstSeen": "2026-10-02T03:34:46.329Z",
       "bestRank": 1
@@ -10655,7 +10688,7 @@
       "headline": "NCAA reducing fields for NIT, WBIT to 24 teams starting in 2027",
       "summary": "In the aftermath of the NCAA tournaments expanding to 76 teams starting this season, the NIT and Women's Basketball Invitation Tournament will drop from 32 teams to 24 beginning in 2027, the NCAA announced.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50077597/ncaa-reducing-fields-nit-wbit-24-teams-starting-2027",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-01T17:19:11.000Z",
       "firstSeen": "2026-10-01T18:36:52.245Z",
       "bestRank": 1
@@ -14483,7 +14516,7 @@
       "headline": "U.S. Senate votes 77-22 to pass Protect College Sports Act",
       "summary": "The Protect College Sports Act, a federal bill aimed at reshaping the industry, took a step toward to becoming law Monday when the U.S. Senate voted 77-22 to pass it, with Ted Cruz saying, \"This bill puts an end to the chaos plaguing college athletics.\"",
       "url": "https://www.espn.com/college-sports/story/_/id/50056206/us-senate-votes-77-22-pass-protect-college-sports-act",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-29T13:37:08.000Z",
       "firstSeen": "2026-09-29T03:35:26.425Z",
       "bestRank": 1
@@ -15858,7 +15891,7 @@
       "headline": "Alabama agrees to 2-year extension, raise with AD Greg Byrne",
       "summary": "Alabama and athletic director Greg Byrne have agreed to a revised two-year contract extension that will pay him an average annual base salary of $2.67 million through June 30, 2033.",
       "url": "https://www.espn.com/college-sports/story/_/id/50053965/alabama-agrees-two-year-extension-raise-ad-greg-byrne",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-28T19:49:27.000Z",
       "firstSeen": "2026-09-28T21:26:45.780Z",
       "bestRank": 1
@@ -16188,7 +16221,7 @@
       "headline": "Big Ten basketball adopts rule preventing pros from returning",
       "summary": "The Big Ten Conference has adopted a rule to prohibit men's and women's basketball players who left school to play professionally from maintaining their eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50053258/big-ten-basketball-adopts-rule-preventing-pros-returning",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-28T17:28:04.000Z",
       "firstSeen": "2026-09-28T18:35:51.463Z",
       "bestRank": 1
@@ -44106,7 +44139,7 @@
       "headline": "Reports: Miami Hurricanes returning to Nike in '27 on $200M+ deal",
       "summary": "University of Miami athletic teams will be wearing Nike apparel again starting in July 2027, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/49958590/report-miami-hurricanes-going-back-nike-200m+-deal",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-09-16T19:04:20.000Z",
       "firstSeen": "2026-09-16T21:25:45.412Z",
       "bestRank": 1
@@ -46761,138 +46794,6 @@
       "published": "2026-09-15T12:43:23.000Z",
       "firstSeen": "2026-09-15T09:33:37.732Z",
       "bestRank": 3
-    },
-    {
-      "key": "49947329",
-      "id": "49947329",
-      "headline": "Transfer rumors, news: Man United, Bruno Fernandes contract talks stall",
-      "summary": "Manchester United want to retain Bruno Fernandes and have begun talks over a new contract. Transfer Talk has the latest.",
-      "url": "https://www.espn.com/soccer/story/_/id/49947329/transfer-rumors-news-man-united-bruno-fernandes-contract-talks-stall",
-      "sport": "Soccer",
-      "published": "2026-09-15T12:37:41.000Z",
-      "firstSeen": "2026-09-15T09:33:37.732Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49942333",
-      "id": "49942333",
-      "headline": "Dave Canales: Panthers need to 'play way better football'",
-      "summary": "After watching film, the coach said Carolina needed to play smarter and Derrick Brown reminded everyone that it's just one game.",
-      "url": "https://www.espn.com/nfl/story/_/id/49942333/dave-canales-carolina-panthers-defense-need-play-way-better-football-week-1-loss-bears",
-      "sport": "NFL",
-      "published": "2026-09-15T12:30:32.000Z",
-      "firstSeen": "2026-09-14T21:24:28.132Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49948615",
-      "id": "49948615",
-      "headline": "Carlos Baleba returns to training, nears Man United debut",
-      "summary": "Carlos Baleba is nearing his Manchester United debut after returning to training.",
-      "url": "https://www.espn.com/soccer/story/_/id/49948615/carlos-baleba-returns-man-united-training-nears-debut",
-      "sport": "Soccer",
-      "published": "2026-09-15T12:30:22.000Z",
-      "firstSeen": "2026-09-15T15:26:48.219Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49946221",
-      "id": "49946221",
-      "headline": "Lanning points to 'lack of leadership' for Oregon's start",
-      "summary": "Ducks coach Dan Lanning said Monday that the loss to the unranked Cowboys was \"by far the worst performance that we've had since I've been here.\"",
-      "url": "https://www.espn.com/college-football/story/_/id/49946221/lanning-points-lack-leadership-oregon-start",
-      "sport": "College football",
-      "published": "2026-09-15T12:30:21.000Z",
-      "firstSeen": "2026-09-15T09:33:37.732Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49948628",
-      "id": "49948628",
-      "headline": "Dan Lanning hopes Oregon learns hard lessons after Oklahoma State loss",
-      "summary": "Dan Lanning hopes Oregon learns hard lessons after Oklahoma State loss",
-      "url": "https://www.espn.com/video/clip/_/id/49948628/dan-lanning-hopes-oregon-learns-hard-lessons-oklahoma-state-loss",
-      "sport": "College football",
-      "published": "2026-09-15T12:27:24.000Z",
-      "firstSeen": "2026-09-15T15:26:48.219Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49895149",
-      "id": "49895149",
-      "headline": "On Roberto Clemente Day, MLB has a Puerto Rico problem",
-      "summary": "The pipeline from the Hall of Famer's homeland to the major leagues is disintegrating.",
-      "url": "https://www.espn.com/mlb/story/_/id/49895149/mlb-2026-roberto-clemente-day-puerto-rico-puerto-rican-players-international-draft-cba",
-      "sport": "MLB",
-      "published": "2026-09-15T12:16:04.000Z",
-      "firstSeen": "2026-09-15T11:14:52.371Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49946398",
-      "id": "49946398",
-      "headline": "Peters' 18-pitch walk keys White Sox's win vs. Guardians",
-      "summary": "White Sox center fielder Tristan Peters' 18-pitch walk proved the turning point in a 7-3 win over the Guardians on Monday that put Chicago in the driver's seat for the AL Central title.",
-      "url": "https://www.espn.com/mlb/story/_/id/49946398/tristan-peters-18-pitch-walk-keys-white-sox-win-vs-guards",
-      "sport": "MLB",
-      "published": "2026-09-15T12:13:25.000Z",
-      "firstSeen": "2026-09-15T06:43:28.006Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49947028",
-      "id": "49947028",
-      "headline": "Kenneth Walker III, Patrick Mahomes lead Chiefs' win vs. Broncos",
-      "summary": "Together, quarterback Patrick Mahomes, making his return from a torn ACL, and running back Kenneth Walker III, making his Chiefs debut, powered Kansas City to a season-opening blowout win over Denver.",
-      "url": "https://www.espn.com/nfl/story/_/id/49947028/kenneth-walker-iii-patrick-mahomes-power-chiefs-win-vs-broncos",
-      "sport": "NFL",
-      "published": "2026-09-15T12:09:04.000Z",
-      "firstSeen": "2026-09-15T06:43:28.006Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49947983",
-      "id": "49947983",
-      "headline": "Terry Francona encouraged by reports of Reds leaders' return",
-      "summary": "Reds manager Terry Francona said of reports the president and GM were expected to return that \"you want to be with people that you're aligned with.\"",
-      "url": "https://www.espn.com/mlb/story/_/id/49947983/terry-francona-encouraged-reports-reds-leaders-return",
-      "sport": "MLB",
-      "published": "2026-09-15T11:42:48.000Z",
-      "firstSeen": "2026-09-15T11:14:52.371Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49941730",
-      "id": "49941730",
-      "headline": "Best and worst NFL teams' travel: 49ers, Seahawks, Steelers divulge it all",
-      "summary": "ESPN spoke with several players and team executives about team travel and the feedback that serves as the basis for the latest NFLPA survey grades.",
-      "url": "https://www.espn.com/nfl/story/_/id/49941730/best-worst-nfl-team-travel-nflpa-survey-49ers-seahawks-steelers-rams-patriots-saints",
-      "sport": "NFL",
-      "published": "2026-09-15T11:35:50.000Z",
-      "firstSeen": "2026-09-15T11:14:52.371Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49948049",
-      "id": "49948049",
-      "headline": "MLB betting tips for Tuesday: Pirates prepare to battle The Miz",
-      "summary": "All of the odds, recommended prop bets and trends in baseball for Tuesday, September 15.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/49948049/mlb-betting-tips-odds-lines-2026-tuesday-september-15",
-      "sport": "MLB",
-      "published": "2026-09-15T11:27:14.000Z",
-      "firstSeen": "2026-09-15T15:26:48.219Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49943160",
-      "id": "49943160",
-      "headline": "NHL superstar poll: Rule changes, Texas expansion, fan culture",
-      "summary": "We asked a panel of stars at the NHL/NHLPA player media tour for their takes on a variety of hot topics.",
-      "url": "https://www.espn.com/nhl/story/_/id/49943160/nhl-2026-27-superstar-players-poll-quotes-rule-changes-texas-expansion-team-fans-culture",
-      "sport": "NHL",
-      "published": "2026-09-15T11:24:30.000Z",
-      "firstSeen": "2026-09-15T11:14:52.371Z",
-      "bestRank": 1
     }
   ]
 }
