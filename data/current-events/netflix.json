@@ -1,6 +1,6 @@
 {
   "section": "netflix",
-  "generatedAt": "2026-10-06T11:47:46.272Z",
+  "generatedAt": "2026-10-06T18:58:26.549Z",
   "windowStart": "2026-09-08",
   "windowEnd": "2026-10-06",
   "items": [
@@ -13,7 +13,7 @@
         "Atsushi Tamura",
         "Becky"
       ],
-      "brief": "Singles 35+ relocate to countryside to find love.",
+      "brief": "Singles over 35 relocate to a countryside house seeking romantic connections.",
       "image": "data/current-events/posters/love-village-2e70c8de.jpg"
     },
     {
@@ -24,7 +24,8 @@
       "starring": [
         "Mojo Brookzz"
       ],
-      "brief": "Mojo Brookzz performs comedy about dating and relationships."
+      "brief": "Comedian Mojo Brookzz performs his debut special about relationships and culture.",
+      "image": "data/current-events/posters/mojo-brookzz-i-know-you-lying-1f7221df.jpg"
     },
     {
       "title": "Ranma 1/2 (Season 3)",
@@ -48,7 +49,7 @@
         "Nanditha Sreekumar",
         "Arjun Chidambaram"
       ],
-      "brief": "Rival dating app founders test love theories in 60 days.",
+      "brief": "Rival dating app founders put their love theories to the test over 60 days.",
       "image": "data/current-events/posters/love-3baecc22.jpg"
     },
     {
@@ -64,8 +65,10 @@
         "Jasmine Sargent",
         "Danielle Moné Truitt"
       ],
-      "brief": "A single mother and incarcerated man forge a bond through letters.",
-      "image": "data/current-events/posters/doing-life-faf5f835.jpg"
+      "brief": "A single mother and incarcerated man find connection and hope through letters.",
+      "image": "data/current-events/posters/doing-life-faf5f835.jpg",
+      "top10": true,
+      "top10Rank": 3
     },
     {
       "title": "Schumacher ’94",
@@ -81,7 +84,9 @@
         "Willi Weber"
       ],
       "brief": "Michael Schumacher's first World Championship win roars to life through personal interviews.",
-      "image": "data/current-events/posters/schumacher-94-c06d67a8.jpg"
+      "image": "data/current-events/posters/schumacher-94-c06d67a8.jpg",
+      "top10": true,
+      "top10Rank": 8
     },
     {
       "title": "East of Eden",
@@ -96,8 +101,10 @@
         "Martha Plimpton",
         "Ciarán Hinds"
       ],
-      "brief": "Drama adapting a novel about the Trask family and their traumas.",
-      "image": "data/current-events/posters/east-of-eden-3377fa95.jpg"
+      "brief": "The Trask family's story of trauma, love and free will amid historical upheaval.",
+      "image": "data/current-events/posters/east-of-eden-3377fa95.jpg",
+      "top10": true,
+      "top10Rank": 1
     },
     {
       "title": "Your Personal Taxi",
@@ -112,7 +119,7 @@
         "Lee Da-eun",
         "Lee Kyoo-hyung"
       ],
-      "brief": "Passengers share personal stories and songs in a mysterious taxi.",
+      "brief": "Passengers share personal stories and songs that shape their lives in a taxi.",
       "image": "data/current-events/posters/your-personal-taxi-c8bda611.jpg"
     },
     {
@@ -128,8 +135,10 @@
         "Fayez Bin Jurays",
         "Fahad Albutairi"
       ],
-      "brief": "A wealthy family fakes affluence after discovering they're not rich.",
-      "image": "data/current-events/posters/crazy-rich-incredibly-broke-80972450.jpg"
+      "brief": "A wealthy family must fake affluence after discovering they aren't actually rich.",
+      "image": "data/current-events/posters/crazy-rich-incredibly-broke-80972450.jpg",
+      "top10": true,
+      "top10Rank": 3
     },
     {
       "title": "Happy Halloween Playlist (Season 1)",
@@ -137,7 +146,7 @@
       "date": "2026-10-01",
       "synopsis": "Adam Richard Sandler (born September 9, 1966) is an American comedian, actor, producer and writer. Primarily a comedic leading actor in films, his accolades include an Independent Spirit Award, alongside nominations for an Actor Award, three Golden Globes, three Grammy Awards, and seven Primetime Emmy Awards.…",
       "starring": [],
-      "brief": "Halloween-themed playlist.",
+      "brief": "A collection of Halloween-themed entertainment and music.",
       "image": "data/current-events/posters/happy-halloween-playlist-b4e70080.jpg"
     },
     {
@@ -153,7 +162,7 @@
         "Sakura Shinfuku",
         "Chiaki Kobayashi"
       ],
-      "brief": "A reserved high schooler is drawn from her shell by three schoolmates.",
+      "brief": "A reserved high schooler opens up when three classmates reach out to her.",
       "image": "data/current-events/posters/the-ramparts-of-ice-b07ba6f6.jpg"
     },
     {
@@ -169,7 +178,7 @@
         "Carlos Torres",
         "Mabel Moreno"
       ],
-      "brief": "CEO Bárbara Hidalgo hunts her would-be killer as family schemes for power.",
+      "brief": "A Colombian CEO hunts her would-be killer amid family scheming for power.",
       "image": "data/current-events/posters/medusa-1d71cbc0.jpg"
     },
     {
@@ -180,7 +189,7 @@
       "starring": [
         "L'Arène"
       ],
-      "brief": "Amateur fighters compete in cage bouts for an MMA contract.",
+      "brief": "Forty amateur fighters compete for a €100,000 prize and pro MMA contract.",
       "image": "data/current-events/posters/l-ar-ne-209e4b7f.jpg"
     },
     {
@@ -192,7 +201,7 @@
         "Nicolette van Dam",
         "Bas Smit"
       ],
-      "brief": "Dutch singles date and get engaged without seeing each other.",
+      "brief": "Dutch singles date and get engaged without seeing each other to test love.",
       "image": "data/current-events/posters/love-is-blind-nederland-265b1f8d.jpg"
     },
     {
@@ -202,7 +211,17 @@
       "synopsis": "A journalist and a detective uncover the truth about a killer whose charm masked a trail of failed marriages and suspicious deaths.",
       "starring": [],
       "brief": "A journalist and a detective uncover the truth about a killer whose charm masked a trail of failed marriages.",
-      "image": "data/current-events/posters/the-widower-til-death-do-us-part-636e0807.jpg"
+      "image": "data/current-events/posters/the-widower-til-death-do-us-part-636e0807.jpg",
+      "top10": true,
+      "top10Rank": 2
+    },
+    {
+      "title": "Leaving Soon from Netflix 9 Major s That Could Leave in 2027",
+      "type": "Film",
+      "date": "2026-09-30",
+      "synopsis": "Netflix is an American subscription video on-demand over-the-top streaming television service. The service primarily distributes original and acquired films and television shows from various genres. It is available internationally in multiple languages. Launched in 2007, nearly a decade after Netflix, Inc.…",
+      "starring": [],
+      "brief": "Netflix content analysis and information."
     },
     {
       "title": "LEGO ONE PIECE",
@@ -217,8 +236,10 @@
         "Taz Skylar",
         "Mikaela Hoover"
       ],
-      "brief": "LEGO-animated retelling of ONE PIECE's Straw Hat Pirates' early adventures.",
-      "image": "data/current-events/posters/lego-one-piece-31751789.jpg"
+      "brief": "A LEGO-animated retelling of One Piece follows the Straw Hat Pirates' early journey.",
+      "image": "data/current-events/posters/lego-one-piece-31751789.jpg",
+      "top10": true,
+      "top10Rank": 5
     },
     {
       "title": "Mononoke The Movie: Chapter Ⅲ",
@@ -233,7 +254,7 @@
         "Yoshiko Sakakibara",
         "Tomoyo Kurosawa"
       ],
-      "brief": "The Medicine Seller faces his most fearsome opponent in the palace.",
+      "brief": "When tragedy strikes the Ōoku, the Medicine Seller faces his most fearsome opponent.",
       "image": "data/current-events/posters/mononoke-the-movie-chapter-b9f05011.jpg"
     },
     {
@@ -245,7 +266,7 @@
         "Incorrect",
         "Sam Morril"
       ],
-      "brief": "Sam Morril performs comedy about bad dates, assassinations and pest control.",
+      "brief": "Comedian Sam Morril discusses his worst hookup, assassinations and pest control.",
       "image": "data/current-events/posters/sam-morril-incorrect-58f5af1b.jpg"
     },
     {
@@ -256,7 +277,7 @@
       "starring": [
         "Stephen Tries"
       ],
-      "brief": "Influencers rough it outdoors competing for £1 million without comforts.",
+      "brief": "Influencers compete for £1 million while roughing it with minimal comforts.",
       "image": "data/current-events/posters/outside-05ce9945.jpg"
     },
     {
@@ -272,8 +293,10 @@
         "Archana Puran Singh",
         "Navjot Singh Sidhu"
       ],
-      "brief": "Comedian Kapil Sharma hosts a variety talk show with celebrity guests.",
-      "image": "data/current-events/posters/the-great-indian-kapil-show-b8b2ee7c.jpg"
+      "brief": "Comedian Kapil Sharma hosts a laugh-out-loud variety talk show with celebrities.",
+      "image": "data/current-events/posters/the-great-indian-kapil-show-b8b2ee7c.jpg",
+      "top10": true,
+      "top10Rank": 9
     },
     {
       "title": "Blood Legacy (Season 2)",
@@ -288,7 +311,7 @@
         "Enhle Mbali Mlotshwa",
         "Bonga Dlamini"
       ],
-      "brief": "Khanyi returns home to fight for her family's collapsing business.",
+      "brief": "Khanyi Adesina returns home to fight for her family's crumbling business empire.",
       "image": "data/current-events/posters/blood-legacy-73b93ff4.jpg"
     },
     {
@@ -297,8 +320,10 @@
       "date": "2026-09-25",
       "synopsis": "America, 1890. Johnny Joestar, a genius jockey now paralyzed from the waist down, chases after outlaw Gyro Zeppeli in a tough cross-continent horse race.",
       "starring": [],
-      "brief": "A paralyzed jockey and outlaw race across America in 1890.",
-      "image": "data/current-events/posters/steel-ball-run-jojo-s-bizarre-adventure-04153915.jpg"
+      "brief": "A paralyzed jockey chases an outlaw across 1890s America in a brutal horse race.",
+      "image": "data/current-events/posters/steel-ball-run-jojo-s-bizarre-adventure-04153915.jpg",
+      "top10": true,
+      "top10Rank": 8
     },
     {
       "title": "El problema final",
@@ -313,10 +338,10 @@
         "Cristina Kovani",
         "José Condessa"
       ],
-      "brief": "When a tourist dies on an island, a retired actor investigates.",
+      "brief": "Thirteen people trapped on an island become suspects when a guest dies and a retired Sherlock Holmes actor investigates.",
       "image": "data/current-events/posters/el-problema-final-c8bfb685.jpg",
       "top10": true,
-      "top10Rank": 5
+      "top10Rank": 3
     },
     {
       "title": "The Great British Baking Show (Season 14)",
@@ -324,10 +349,8 @@
       "date": "2026-09-25",
       "synopsis": "The sixth series (Season 3 on PBS, or Collection 3 on Netflix in the US) of The Great British Bake Off first aired on 5 August 2015, with twelve contestants competing to be the series 6 winner. Mel Giedroyc and Sue Perkins presented the show, and Mary Berry and Paul Hollywood returned as judges.…",
       "starring": [],
-      "brief": "Amateur bakers compete in timed challenges.",
-      "image": "data/current-events/posters/the-great-british-baking-show-4fcc5f75.jpg",
-      "top10": true,
-      "top10Rank": 9
+      "brief": "Contestants face baking challenges competing to win the title of champion baker.",
+      "image": "data/current-events/posters/the-great-british-baking-show-4fcc5f75.jpg"
     },
     {
       "title": "Unabomber",
@@ -342,7 +365,7 @@
         "Alexander Ludwig",
         "Marc Menchaca"
       ],
-      "brief": "The CIA attempts to turn Ted Kaczynski into a super agent.",
+      "brief": "The CIA attempts to turn Ted Kaczynski into a super agent, but the plan backfires.",
       "image": "data/current-events/posters/unabomber-a21be71d.jpg",
       "top10": true,
       "top10Rank": 1
@@ -360,7 +383,7 @@
         "Carlos Portaluppi",
         "Germán de Silva"
       ],
-      "brief": "A doctor who sees the dead helps her niece communicate with spirits.",
+      "brief": "A doctor who sees the dead must confront her gift when her niece with the same ability arrives.",
       "image": "data/current-events/posters/mis-muertos-tristes-6d23e315.jpg"
     },
     {
@@ -376,10 +399,10 @@
         "Kennedi Reece",
         "Chibuikem Uche"
       ],
-      "brief": "Young, gifted Black students navigate their freshman year at an HBCU.",
+      "brief": "Young Black students start their freshman year at the country's top HBCU.",
       "image": "data/current-events/posters/a-different-world-7d7b17d8.jpg",
       "top10": true,
-      "top10Rank": 4
+      "top10Rank": 3
     },
     {
       "title": "Delusion",
@@ -394,7 +417,7 @@
         "Sirani Yankittikan",
         "Suttawat Settakorn"
       ],
-      "brief": "A cop investigates a missing boy while locals blame a ghost.",
+      "brief": "A cynical cop investigates a missing boy while locals blame a ghost in this thriller.",
       "image": "data/current-events/posters/delusion-03d6c242.jpg"
     },
     {
@@ -410,10 +433,10 @@
         "Sumeet Vyas",
         "Soni Razdan"
       ],
-      "brief": "A mother searches her hometown for her missing child.",
+      "brief": "A mother searching for her missing child uncovers dark secrets in her hometown.",
       "image": "data/current-events/posters/shaque-trust-no-one-972f31c1.jpg",
       "top10": true,
-      "top10Rank": 4
+      "top10Rank": 2
     },
     {
       "title": "Balaraw: Blood Island (Season 1)",
@@ -426,7 +449,7 @@
         "Agot Isidro",
         "Ronnie Lazaro"
       ],
-      "brief": "Sabina travels to an island to uncover dark family secrets.",
+      "brief": "Sabina follows a mysterious clue to an island where she confronts her family's dark secrets.",
       "image": "data/current-events/posters/balaraw-blood-island-088c28db.jpg"
     },
     {
@@ -442,10 +465,10 @@
         "Beccy Benjamin",
         "Daniel Stone"
       ],
-      "brief": "Contestants face games and temptations in Wonka's Chocolate Factory.",
+      "brief": "Players compete in unpredictable games and temptations inside Wonka's Chocolate Factory.",
       "image": "data/current-events/posters/wonka-s-the-golden-ticket-c248ec8a.jpg",
       "top10": true,
-      "top10Rank": 2
+      "top10Rank": 4
     },
     {
       "title": "Habeas Corpus",
@@ -460,10 +483,10 @@
         "Natália Lage",
         "Tato Gabus Mendes"
       ],
-      "brief": "A law professor leads students to prove a convicted man's innocence.",
+      "brief": "A law professor leads students to prove innocence while uncovering her own hidden past.",
       "image": "data/current-events/posters/habeas-corpus-d94e89c3.jpg",
       "top10": true,
-      "top10Rank": 10
+      "top10Rank": 6
     },
     {
       "title": "Kian's Bizarre B&B (Season 2)",
@@ -478,7 +501,7 @@
         "Jin",
         "Ji Ye-eun"
       ],
-      "brief": "Kian84 hosts a quirky B&B where guests experience playful adventures.",
+      "brief": "On a remote island, Kian84 hosts an eccentric B&B where guests experience playful chaos.",
       "image": "data/current-events/posters/kian-s-bizarre-b-b-0b626be0.jpg"
     },
     {
@@ -494,10 +517,10 @@
         "Cristiana Capotondi",
         "Irene Maiorino"
       ],
-      "brief": "Teens attend a strict military high school where romance is forbidden.",
+      "brief": "Students at a strict military high school in Naples navigate forbidden love and discipline.",
       "image": "data/current-events/posters/minerva-la-scuola-5988b8c0.jpg",
       "top10": true,
-      "top10Rank": 8
+      "top10Rank": 4
     },
     {
       "title": "Nimesh Patel : Buy the Dip",
@@ -507,7 +530,7 @@
       "starring": [
         "Nimesh Patel"
       ],
-      "brief": "Nimesh Patel performs comedy about his traditional parents.",
+      "brief": "Nimesh Patel discusses defying his traditional parents in his Netflix stand-up debut.",
       "image": "data/current-events/posters/nimesh-patel-buy-the-dip-f9d04dd2.jpg"
     },
     {
@@ -516,7 +539,7 @@
       "date": "2026-09-20",
       "synopsis": "Squid Game: The Challenge is a British reality competition television series based on the South Korean dystopian survival thriller drama television series Squid Game. Both the first and second seasons featured 456 players competing for US$4.56 million (at the time, this was largest cast & single cash prize in reality TV history).…",
       "starring": [],
-      "brief": "Celebrities answer questions while submerged in ice water.",
+      "brief": "A reality competition featuring extreme physical challenges and athlete endurance.",
       "image": "data/current-events/posters/cold-as-balls-1c77ee69.jpg"
     },
     {
@@ -529,10 +552,8 @@
         "Ji Chang Wook",
         "Nana"
       ],
-      "brief": "An aristocratic wife and libertine pull a reserved lady into a love scheme.",
-      "image": "data/current-events/posters/the-scandal-b3c97b69.jpg",
-      "top10": true,
-      "top10Rank": 3
+      "brief": "An aristocratic wife and libertine draw a reserved lady into a dangerous love scheme.",
+      "image": "data/current-events/posters/the-scandal-b3c97b69.jpg"
     },
     {
       "title": "Best of the Best",
@@ -547,10 +568,8 @@
         "Hasan Minhaj",
         "Shreya Navile"
       ],
-      "brief": "Two friends compete on UCLA's Bollywood-fusion dance team.",
-      "image": "data/current-events/posters/best-of-the-best-7192da68.jpg",
-      "top10": true,
-      "top10Rank": 2
+      "brief": "Two childhood friends compete on UCLA's Bollywood-fusion dance team heading to nationals.",
+      "image": "data/current-events/posters/best-of-the-best-7192da68.jpg"
     },
     {
       "title": "Pokémon Horizons (Season 3—Rising Hope Part 4)",
@@ -558,7 +577,7 @@
       "date": "2026-09-18",
       "synopsis": "Pokémon, abbreviated from the Japanese title of Pocket Monsters, and branded in English as Pokémon the Series and Pokémon Horizons: The Series, is a Japanese anime television series, part of The Pokémon Company's Pokémon media franchise, which premiered on TV Tokyo in April 1997.…",
       "starring": [],
-      "brief": "New trainers journey through Pokémon regions.",
+      "brief": "New trainers embark on adventures in the Pokémon world.",
       "image": "data/current-events/posters/pok-mon-horizons-b2ac6b15.png"
     },
     {
@@ -570,7 +589,7 @@
         "Papa Yaar",
         "Zakir Khan"
       ],
-      "brief": "Zakir Khan performs comedy about his relationship with his father.",
+      "brief": "Comedian Zakir Khan explores his relationship with his father through personal stories.",
       "image": "data/current-events/posters/zakir-khan-papa-yaar-815b8bb9.jpg"
     },
     {
@@ -586,10 +605,8 @@
         "Ali Fazal",
         "Radhikka Madan"
       ],
-      "brief": "Anthology of four short films exploring lust, love and connection.",
-      "image": "data/current-events/posters/lust-stories-3-ef44cfdf.jpg",
-      "top10": true,
-      "top10Rank": 6
+      "brief": "An anthology of four films exploring lust, love and human connection.",
+      "image": "data/current-events/posters/lust-stories-3-ef44cfdf.jpg"
     },
     {
       "title": "Stranger Things: Tales from '85 (Season 2)",
@@ -604,7 +621,7 @@
         "Braxton Quinney",
         "Benjamin Plessala"
       ],
-      "brief": "In 1985, Stranger Things heroes face new terrors beneath Hawkins.",
+      "brief": "In 1985, the Stranger Things heroes face a new mystery as something terrifying awakens.",
       "image": "data/current-events/posters/stranger-things-tales-from-85-a20a7c76.jpg"
     },
     {
@@ -618,10 +635,10 @@
         "Charlie Hunnam",
         "Rebecca Hall"
       ],
-      "brief": "Young woman's escape from family cruelty leads to murders that shock 1890s New England.",
+      "brief": "A young woman and her maid escape cruelty through fantasy and plan shocking revenge.",
       "image": "data/current-events/posters/monster-the-lizzie-borden-story-5f37ae16.jpg",
       "top10": true,
-      "top10Rank": 1
+      "top10Rank": 2
     },
     {
       "title": "Plastic Beauty",
@@ -632,10 +649,10 @@
         "Matsuoka Mayu",
         "Riisa Naka"
       ],
-      "brief": "A new surgeon questions practices at an exclusive cosmetic surgery clinic.",
+      "brief": "A new surgeon arrives at a cosmetic clinic and refuses to stay silent about its secrets.",
       "image": "data/current-events/posters/plastic-beauty-9a79deb6.jpg",
       "top10": true,
-      "top10Rank": 2
+      "top10Rank": 5
     },
     {
       "title": "Seni Tanıyorum",
@@ -647,7 +664,7 @@
         "Melis Sezen",
         "Ozan Dolunay"
       ],
-      "brief": "A painter's life changes when she hires a mysterious nanny.",
+      "brief": "A mother's life unravels after hiring a mysterious nanny with an unsettling nature.",
       "image": "data/current-events/posters/seni-tan-yorum-503e1f53.jpg",
       "top10": true,
       "top10Rank": 1
@@ -665,7 +682,7 @@
         "Fu Meng-po",
         "Chang Yung-cheng"
       ],
-      "brief": "Two mismatched fixers for the wealthy face a mysterious rival.",
+      "brief": "Two mismatched fixers for the rich and powerful face a mysterious rival.",
       "image": "data/current-events/posters/the-fixers-199a4dd7.jpg"
     },
     {
@@ -681,10 +698,8 @@
         "Julia Wyszyńska",
         "Magdalena Cielecka"
       ],
-      "brief": "An ambitious merchant pursues a nobleman's daughter in this Polish classic.",
-      "image": "data/current-events/posters/lalka-a953aeb7.jpg",
-      "top10": true,
-      "top10Rank": 7
+      "brief": "An ambitious merchant pursues a nobleman's daughter in this Polish novel adaptation.",
+      "image": "data/current-events/posters/lalka-a953aeb7.jpg"
     },
     {
       "title": "Jo Koy: Blue in the Face",
@@ -694,7 +709,7 @@
       "starring": [
         "Jo Koy"
       ],
-      "brief": "Jo Koy performs stand-up comedy.",
+      "brief": "Comedian Jo Koy performs his sixth Netflix stand-up special.",
       "image": "data/current-events/posters/jo-koy-blue-in-the-face-8c1f2063.jpg"
     },
     {
@@ -710,10 +725,10 @@
         "Jackie Redmond",
         "Roman Reigns"
       ],
-      "brief": "Professional wrestling featuring WWE's top performers.",
+      "brief": "Professional wrestlers compete in live matches on WWE's flagship wrestling program.",
       "image": "data/current-events/posters/wwe-monday-night-raw-5fb0ff9d.jpg",
       "top10": true,
-      "top10Rank": 7
+      "top10Rank": 8
     },
     {
       "title": "Gabby's Dollhouse (Season 14)",
@@ -728,10 +743,10 @@
         "Eduardo Franco",
         "Juliet Donenfeld"
       ],
-      "brief": "Kitty Gabby and her cat sidekick embark on animated adventures.",
+      "brief": "Kitty enthusiast Gabby and her cat sidekick explore magical adventures and crafts.",
       "image": "data/current-events/posters/gabby-s-dollhouse-5a987e81.jpg",
       "top10": true,
-      "top10Rank": 6
+      "top10Rank": 10
     },
     {
       "title": "Hot Ones: Extra Heat",
@@ -745,7 +760,7 @@
         "Jimmy Tatro",
         "Phil Brooks"
       ],
-      "brief": "Celebrities answer spicy questions while eating increasingly hot wings.",
+      "brief": "Celebrity guests answer challenging questions while eating increasingly spicy wings.",
       "image": "data/current-events/posters/hot-ones-extra-heat-8291ec84.jpg"
     },
     {
@@ -754,10 +769,8 @@
       "date": "2026-09-11",
       "synopsis": "One hundred Italian athletes face brutal physical challenges, each battling to outlast the rest and claim the glory of becoming the one true champion.",
       "starring": [],
-      "brief": "One hundred Italian athletes compete in brutal physical challenges.",
-      "image": "data/current-events/posters/physical-italia-da-100-a-1-92aa4574.jpg",
-      "top10": true,
-      "top10Rank": 9
+      "brief": "One hundred Italian athletes face brutal challenges to determine the ultimate champion.",
+      "image": "data/current-events/posters/physical-italia-da-100-a-1-92aa4574.jpg"
     },
     {
       "title": "The Adam Ray Show",
@@ -772,7 +785,7 @@
         "Michael Bublé",
         "Sal Vulcano"
       ],
-      "brief": "Adam Ray interviews celebrities while playing different characters.",
+      "brief": "Host Adam Ray uses different characters to interview celebrity guests each week.",
       "image": "data/current-events/posters/the-adam-ray-show-ceaa0299.jpg"
     },
     {
@@ -787,7 +800,7 @@
         "Julián Trujillo",
         "Marcela Carvajal"
       ],
-      "brief": "A nurse with supernatural abilities helps a woman in a coma survive.",
+      "brief": "A male nurse with supernatural abilities helps a woman in a coma escape organ harvesters.",
       "image": "data/current-events/posters/en-coma-4644fa55.jpg"
     },
     {
@@ -803,7 +816,7 @@
         "Blanca Martínez",
         "Victor Rebull"
       ],
-      "brief": "A group of kids secretly help others solve problems in their town.",
+      "brief": "Four kids go undercover to secretly help others and solve their town's problems.",
       "image": "data/current-events/posters/go-team-aca98c1e.jpg"
     },
     {
@@ -827,10 +840,10 @@
         "Thomas Cadrot",
         "Connor Paton"
       ],
-      "brief": "A newcomer joins an all-male rowing team at a prep school.",
+      "brief": "Teagan joins an all-boys rowing team at Easton Prep and fights to earn their trust.",
       "image": "data/current-events/posters/crew-girl-9b8c15b3.jpg",
       "top10": true,
-      "top10Rank": 3
+      "top10Rank": 7
     },
     {
       "title": "De Eetclub",
@@ -845,10 +858,10 @@
         "Charlie Chan Dagelet",
         "Matthijs van de Sande Bakhuyzen"
       ],
-      "brief": "When one member dies, Karen discovers her dinner club's hidden secrets.",
+      "brief": "Karen discovers the luxury dinner club she joined is built on secrets and lies.",
       "image": "data/current-events/posters/de-eetclub-00da8ad4.jpg",
       "top10": true,
-      "top10Rank": 6
+      "top10Rank": 10
     },
     {
       "title": "Chumbak",
@@ -863,7 +876,7 @@
         "Anant Joshi",
         "Manasi Parekh"
       ],
-      "brief": "Five quirky families navigate chaos as neighbors in Chumbak Colony.",
+      "brief": "Five quirky families navigate chaotic conflicts as neighbors in Chumbak Colony.",
       "image": "data/current-events/posters/chumbak-8bfaf6c2.jpg"
     },
     {
@@ -879,7 +892,7 @@
         "Fanny Sidney",
         "Laure Calamy"
       ],
-      "brief": "A director reunites her old team when her lead actor quits before filming.",
+      "brief": "A director reunites with her former team after losing her lead actor before filming.",
       "image": "data/current-events/posters/call-my-agent-the-movie-ef50b6b4.jpg"
     },
     {
@@ -891,7 +904,7 @@
         "Bartosz Walaszek",
         "Katarzyna Kralewska-Walaszek"
       ],
-      "brief": "An alcohol-loving self-taught exorcist takes on more demons.",
+      "brief": "Self-taught exorcist Bogdan Boner returns with inventive supernatural encounters.",
       "image": "data/current-events/posters/bogdan-boner-egzorcysta-d82a743e.jpg"
     },
     {
@@ -907,7 +920,7 @@
         "Aya Nakamura",
         "Olivio Ordonez"
       ],
-      "brief": "French rappers compete in freestyle battles for a 100,000 euro prize.",
+      "brief": "French rappers battle and freestyle for a 100,000 euro prize in this music competition.",
       "image": "data/current-events/posters/nouvelle-cole-b7507d15.jpg"
     },
     {
@@ -918,7 +931,7 @@
       "starring": [
         "Cláudia Raia"
       ],
-      "brief": "Nine mothers secretly bet on their adult children's choices.",
+      "brief": "Mothers secretly bet on the choices their adult children will make in this reality show.",
       "image": "data/current-events/posters/sua-m-e-te-conhece-4e1c4521.jpg"
     },
     {
@@ -934,7 +947,7 @@
         "Kristen Gibbons Feden",
         "Tracy Walder"
       ],
-      "brief": "Journalist Ellison Barber hosts a weekly podcast exploring true crime.",
+      "brief": "Journalist Ellison Barber hosts a weekly podcast exploring captivating true crime cases.",
       "image": "data/current-events/posters/allegedly-with-ellison-barber-bf4e7d39.jpg"
     },
     {
@@ -950,10 +963,8 @@
         "Tasha Smith",
         "Michael Jai White"
       ],
-      "brief": "Couples reunite for a destination wedding revisiting old and new drama.",
-      "image": "data/current-events/posters/why-did-i-get-married-again-471598ba.jpg",
-      "top10": true,
-      "top10Rank": 8
+      "brief": "Couples reunite for a destination wedding and confront old and new drama.",
+      "image": "data/current-events/posters/why-did-i-get-married-again-471598ba.jpg"
     },
     {
       "title": "All Star Preschool Playlist (Season 1)",
@@ -961,7 +972,7 @@
       "date": "2026-09-08",
       "synopsis": "Zazie Olivia Beetz ( zə-SEE BAYTS; German: [zaˈsiː ˈbeːts]; born June 1, 1991) is a German-American actress. She is known for her role as Van in the FX comedy-drama series Atlanta (2016–2022), for which she received a nomination for the Primetime Emmy Award for Outstanding Supporting Actress in a Comedy Series.…",
       "starring": [],
-      "brief": "Playlist for preschoolers.",
+      "brief": "A collection of fun music and entertainment for preschoolers.",
       "image": "data/current-events/posters/all-star-preschool-playlist-9d8748da.jpg"
     },
     {
@@ -977,7 +988,7 @@
         "Rona-Lee Shim'on",
         "Boaz Konforty"
       ],
-      "brief": "Drama depicting both sides of the Israeli-Palestinian conflict through spies.",
+      "brief": "A commander of undercover Israeli forces hunts a Hamas activist in this conflict drama.",
       "image": "data/current-events/posters/fauda-059863ec.jpg"
     },
     {
@@ -989,7 +1000,7 @@
         "Uncle Stav",
         "Stavros Halkias"
       ],
-      "brief": "Stavros Halkias performs comedy about becoming an uncle.",
+      "brief": "Comedian Stavros Halkias discusses being an uncle, healthcare and living dangerously.",
       "image": "data/current-events/posters/stavros-halkias-uncle-stav-54a87abf.jpg"
     },
     {
@@ -998,7 +1009,7 @@
       "date": "2026-09-08",
       "synopsis": "Michael Austin Cera ( SERR-ə; Italian: [ˈtʃeːra]; born June 7, 1988) is a Canadian actor and musician. Over his career, he has received nominations for a British Academy Film Award, three Critics' Choice Movie Awards, four Screen Actors Guild Awards, and a Tony Award.…",
       "starring": [],
-      "brief": "Playlist for kids.",
+      "brief": "A collection of music and entertainment for kids.",
       "image": "data/current-events/posters/ultimate-kids-playlist-76151d77.jpg"
     },
     {
@@ -1014,7 +1025,7 @@
         "Dirk Benedict",
         "Scoop Jackson"
       ],
-      "brief": "Sports docuseries exploring untold stories from various sports.",
+      "brief": "A docuseries exploring untold stories from sports history beyond the headlines.",
       "image": "data/current-events/posters/untold-45835d83.jpg"
     },
     {
@@ -1027,7 +1038,7 @@
         "Poppy Liu",
         "Andrew Law"
       ],
-      "brief": "A brother and sister's chaotic NYC life is disrupted when their older sister visits.",
+      "brief": "A brother and sister's messy New York lives are disrupted by their high-achieving sister.",
       "image": "data/current-events/posters/dang-977c45f8.jpg"
     },
     {
@@ -1036,7 +1047,7 @@
       "date": "2026-09-08",
       "synopsis": "In Japan's first dating show for rebellious yankiis, 11 singles butt heads, forge bonds and live together for 14 days as they go all out to find the one.",
       "starring": [],
-      "brief": "11 rebellious singles live together for 14 days to find romance in Japan's first yankii dating show.",
+      "brief": "Eleven rebellious single Japanese people live together for 14 days seeking romance.",
       "image": "data/current-events/posters/ravu-j-t-6c1d6a9c.jpg"
     }
   ]
