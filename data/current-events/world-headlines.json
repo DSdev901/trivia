@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-10-09T15:40:57.477Z",
+  "generatedAt": "2026-10-09T18:47:35.054Z",
   "retentionDays": 21,
   "windowStart": "2026-09-18",
   "windowEnd": "2026-10-09",
   "snapshotIntervalHours": 3,
-  "count": 2216,
+  "count": 2233,
   "items": [
     {
       "headline": "South African Human Rights lawyer Navi Pillay wins Nobel Peace Prize",
@@ -14,6 +14,16 @@
       "summary": "South African human rights lawyer Navi Pillay wins the 2026 Nobel Peace Prize for advancing human rights and international law.",
       "url": "https://www.npr.org/2026/10/08/nx-s1-5994952/nobel-peace-prize",
       "firstSeen": "2026-10-09T09:47:41.283Z",
+      "top": true,
+      "bestRank": 1
+    },
+    {
+      "headline": "Did Russia play by the rules in reporting lab worker's death?",
+      "date": "2026-10-09",
+      "bucket": "Disaster",
+      "summary": "A global treaty signed by 197 countries — including Russia — requires reporting any death that could be a sign of an outbreak to come.",
+      "url": "https://www.npr.org/2026/10/09/g-s1-147295/russia-lab-death-pneumonia-plague",
+      "firstSeen": "2026-10-05T21:40:34.655Z",
       "top": true,
       "bestRank": 1
     },
@@ -38,6 +48,16 @@
       "bestRank": 2
     },
     {
+      "headline": "EXCLUSIVE: US imposes sanctions on ICC hours after former judge wins Nobel Peace Prize",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOLXU4YU9BUnl0d1dlTGlaSmdhcFBDcS1lRDFaeGRhbjNPaVFXU0NCQVlabFRhMXRFVVJER2gtclFYWE5hdHR4bXM1N245MWNKeS0yVkNkWFE0S0d5aDFaNmptQUlGWEtCZk4ySXJfWjU1ODczRTUxd2VwS19lTHc5ZTlMQ0hyZ09kOFRPUkVfcUdja3pjY0hGUXZvdWNiS1NEYms3c0I5UlpRX3Q4LUV2Z3d5QkkydkZiRmxXMUZB?oc=5",
+      "top": true,
+      "bestRank": 2,
+      "firstSeen": "2026-10-09T18:47:35.054Z"
+    },
+    {
       "headline": "Former German Chancellor Schroeder Celebrates Putin's Birthday at President's Home",
       "date": "2026-10-09",
       "bucket": "World",
@@ -46,6 +66,16 @@
       "top": true,
       "bestRank": 3,
       "firstSeen": "2026-10-09T07:00:49.278Z"
+    },
+    {
+      "headline": "Live Updates: Iran's Houthi allies kill 3 in strike on Saudi airport as Trump rules out pre-midterms strikes",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Reported by CBS News.",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQkRLWlFxeDRfeGxUcGJ6dTM2X3l2cldSWlB4MDJIN3lpWXlRUE1sdE8tbHhtQzY5Ul9WRzJ0bk4taEVCOF9JVGkwN2d4S0xIQmJHbmlFZFlDZ3VDdXk1U3B6bHE4SExtTWZIcURVWkFmaXdNZ1QtdWdoNVR3Z2FBOHNxVmFwQTY2TXpUOWlja3hvdXdLekhv?oc=5",
+      "top": true,
+      "bestRank": 3,
+      "firstSeen": "2026-10-09T18:47:35.054Z"
     },
     {
       "headline": "Ethiopia launches drone attack against Eritrean troops who crossed into Tigray",
@@ -68,14 +98,24 @@
       "firstSeen": "2026-10-09T07:00:49.278Z"
     },
     {
-      "headline": "Ethiopia warns Eritrea it will defend itself after troops enter Tigray",
+      "headline": "Ethiopia warns Eritrea it will defend itself after troops cross border",
       "date": "2026-10-09",
       "bucket": "Conflict",
-      "summary": "Reported by BBC.",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sc1g0anZIc3h4MmpDV1BLcXFaS0FKR3NoQzZlVVpKQ0tvSnVsT0FhTFBuYS1yUmRveE5ZQUFLRW5VaUJwSmo3U1lUQlVZY3VxNy1lNkZmUnY3ZXc?oc=5",
+      "summary": "Truckloads of Eritrean soldiers have been seen driving into Ethiopia, which has reportedly responded with drone strikes.",
+      "url": "https://www.bbc.co.uk/news/articles/c65ynvw250y1o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-09T15:40:57.477Z",
+      "top": true,
+      "bestRank": 4
+    },
+    {
+      "headline": "Alleged Flydubai hijacker said 9/11 attacks spurred him to become a pilot, early investigation finds",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Reported by CNN.",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNanhPRXVxbldTeVlJZWxrb1FVR3lYZTIwWTFjajFDN0RrbFNHUXNNMWFJcDhLM0hqelQ0d3RvRHJ1OHhGVlc2LU5TN2tkR25PMG9yZmxrVVNDdTBoNkJ1UmdkSzhHa2treVpWbmZLRzlwRVJ6YjUtcEdmcWJMWmZIT2hKWEROaGdPMnBaazg4cG45WWxGVFVaMktYT212TWxLWWxLZXR4YVlMUQ?oc=5",
       "top": true,
       "bestRank": 4,
-      "firstSeen": "2026-10-09T15:40:57.477Z"
+      "firstSeen": "2026-10-09T18:47:35.054Z"
     },
     {
       "headline": "Disrupting AI-enabled “false front” operations",
@@ -108,6 +148,16 @@
       "firstSeen": "2026-10-09T15:40:57.477Z"
     },
     {
+      "headline": "Map: Large Earthquake Shakes Panama",
+      "date": "2026-10-09",
+      "bucket": "Disaster",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOY2dqa3hDUGJObnZUWGtlc1dKaUpFazdkSW9HYko3eGU2SmZJS2pRR1luT2RlWFBEZkpqWmJ1V1lzdFB0RUNHTHpmRFQ2cEphSDdnR2owdmI2U1dYZXJmTm16MVhFNXpqLXU0OXdvT29KcDkxeVRLb1lWSEJtSjZUQ08xcGhEZmw0eXBqOHoxZE9WRVVZcG82Vk5aaHlOc2lvNjVhQ1pSbw?oc=5",
+      "top": true,
+      "bestRank": 5,
+      "firstSeen": "2026-10-09T18:47:35.054Z"
+    },
+    {
       "headline": "Nobel Peace Prize 2026 winner will soon be announced",
       "date": "2026-10-09",
       "bucket": "World",
@@ -121,8 +171,18 @@
       "headline": "Labour Holds Off Green Party in Election for Starmer’s Former London Seat",
       "date": "2026-10-09",
       "bucket": "Politics",
-      "summary": "Reported by Al Jazeera.",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRkEtZVhNMkYyQnRxOTVDaHlnMWQtWmF4UndHZHdlSXlzNUVTT0FudnhHU2xDMkNkOC1UVlBzZ21rd2tiTWp3eFJudDVsOXZDWEw1bFNTNk4zQWgyUmhwMjJVVzFhOGdzaG50TGFJaDU5Y3RPMl9TMTJ6UEJXR29Wa2I2emtHLTVKSFdSTWpUOEl2QktYTGRJWFBWY25UTHpManRMaVhTWmNTTjg?oc=5",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTTNtcTdFMnNDenJDQm1mRWZ1V0l0TjdZWFE2N3RKSzJsX0xYZG5PczFLa1pxRDJYcVFxWGpYeXJlZXdfdlotNVR2Sk5wNzN0S2ZLZGZaTDYxekp0X09XWlFTTmtKdlJCYkpkSXZZZnlHeEhaMkxwZXhrYU92RS1MZ2pqRlhxMEpsTHZMTW1xaU9MUFZzSV9n?oc=5",
+      "top": true,
+      "bestRank": 6,
+      "firstSeen": "2026-10-09T15:40:57.477Z"
+    },
+    {
+      "headline": "Palestinian Authority Says Elections Are to Be Postponed",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ0FpQjRRbEJnR0VoMHZkSUJOdlh3TUhvVnl2MWk3MGRKUUllQVJreUVBV1AxMU5QUXluY3BWX2Qya3UtZjR1N2dtRnVNcTdXOWo0V0hZV0llcnlvVkZPUjdFX0JpbVA1RzZzWm9CR3F0Z2M3WGxUc2hVa1hWZG1ZVUFFZG5MTU9GZEJaRkdlNlZMams3QnB3SkFQdTIxZ0hMVDhjRTQxMXl3eW51?oc=5",
       "top": true,
       "bestRank": 6,
       "firstSeen": "2026-10-09T15:40:57.477Z"
@@ -208,6 +268,26 @@
       "firstSeen": "2026-10-09T15:40:57.477Z"
     },
     {
+      "headline": "View / Saudi Arabia faces its toughest moment of war",
+      "date": "2026-10-09",
+      "bucket": "Conflict",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPb0MtOFlNWi1mcnROSTYxUl9MbmNkbVJ1cGJMMGlVclp6WlpMMHRDYzhScHlKSXQzSHdINm5BQ3FkVFctVzhnVDBGbndLQ0xEajh1RmYwSVEzZ1FENndkYnAzVVJGSlZVeDJ1YzJNMVprRE91VmZKbU40TjVzUFNFOUJPMERFRVVVTHB4YUp6czNGRjdLRDJQSXBab1pmc0RRbkd0dzNnTQ?oc=5",
+      "top": true,
+      "bestRank": 15,
+      "firstSeen": "2026-10-09T18:47:35.054Z"
+    },
+    {
+      "headline": "Review Urges Support for ADHD and Autism Before Diagnosis",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Reported by BBC.",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAzaWhaMU5wOURsX3cwdUJfWFBkZkhqRUpqcDNCbGhselZoWk9xVDRULTlEZW9RLTRzZGJ6MDFfd1RoSjR0NXBrQWdBNmJudmVoeGhPbUtWZWtWR3M?oc=5",
+      "top": true,
+      "bestRank": 16,
+      "firstSeen": "2026-10-09T18:47:35.054Z"
+    },
+    {
       "headline": "Sick Putin wants Kyiv ‘to drown in SEWAGE’ as tyrant blitzes power plants",
       "date": "2026-10-09",
       "bucket": "World",
@@ -215,6 +295,26 @@
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1IMkVYaDZVU3kxN255Qm9MQXFZMEJRUm1jRENJbTQxN1Rrb2NsbUdnYV94dmowNVpLYzVUMEU4dHBpV2NkcUZPX2l4UnN0aU1GMW9leDhZZ1NRYjI2SW04d2tuTTRtMzZzS0dWQ3JpNA?oc=5",
       "top": true,
       "bestRank": 17,
+      "firstSeen": "2026-10-09T15:40:57.477Z"
+    },
+    {
+      "headline": "Heavy rain batters Chile’s capital, sweeping away cars and flooding homes",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT1YzSWkyWm9ZSjhfOC05Qy0wNHp0eXZ5T2Z3b2Z6U3RCS3ZrUkR3ZFdJZ3l0akN0Ymg0SFc4T3RUdVpyWHRscnpvZDlaTzhtbi1fSjl4d0V2aTFHWlUxM3ZmOGVrRTF3VzJRa0Y0VVNfLVRIWWNZNWEwaC1MWm9LNUtURk5ZbHZFbXdia0NwLUxTeHdZYmV6cjBVaERab2lkRVE?oc=5",
+      "top": true,
+      "bestRank": 19,
+      "firstSeen": "2026-10-09T18:47:35.054Z"
+    },
+    {
+      "headline": "Maps: Tracking Hurricane Simon",
+      "date": "2026-10-09",
+      "bucket": "Disaster",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNU1d6QVAwTzhtSWVhR1JUeWY3ZnQySXdSS2wtNmRBSDBtWkhqMXZqcFQyT3pTWHFrcHN0d09qbzh4b2tBWmhidGcwdWNXSTFiLVpRZVFjbUdzWVNhU3lpSU03RUtvVkwwMW5ROXRoVTUwYi00bER2ZnBFUWhIVUFlRGdZM2dyNmh5M1E?oc=5",
+      "top": true,
+      "bestRank": 21,
       "firstSeen": "2026-10-09T15:40:57.477Z"
     },
     {
@@ -228,14 +328,14 @@
       "firstSeen": "2026-10-09T15:40:57.477Z"
     },
     {
-      "headline": "Maps: Tracking Hurricane Simon",
+      "headline": "Cars torched and shops looted as anti-migrant violence erupts in South Africa",
       "date": "2026-10-09",
-      "bucket": "Disaster",
-      "summary": "Reported by The New York Times.",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNU1d6QVAwTzhtSWVhR1JUeWY3ZnQySXdSS2wtNmRBSDBtWkhqMXZqcFQyT3pTWHFrcHN0d09qbzh4b2tBWmhidGcwdWNXSTFiLVpRZVFjbUdzWVNhU3lpSU03RUtvVkwwMW5ROXRoVTUwYi00bER2ZnBFUWhIVUFlRGdZM2dyNmh5M1E?oc=5",
+      "bucket": "World",
+      "summary": "South Africa has experienced recurrent outbreaks of violence, often targeting migrants from neighbouring countries.",
+      "url": "https://www.bbc.co.uk/news/articles/cwm24v45p4jgo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-09T07:00:49.278Z",
       "top": true,
-      "bestRank": 23,
-      "firstSeen": "2026-10-09T15:40:57.477Z"
+      "bestRank": 24
     },
     {
       "headline": "Andrew Mountbatten-Windsor faced £1.8m repair bill after leaving Royal Lodge",
@@ -248,14 +348,24 @@
       "firstSeen": "2026-10-09T15:40:57.477Z"
     },
     {
-      "headline": "Cars torched and shops looted as anti-migrant violence erupts in South Africa",
+      "headline": "UP investigative journalist Mykhailo Tkach detained in Vienna while on editorial assignment",
       "date": "2026-10-09",
       "bucket": "World",
-      "summary": "South Africa has experienced recurrent outbreaks of violence, often targeting migrants from neighbouring countries.",
-      "url": "https://www.bbc.co.uk/news/articles/cwm24v45p4jgo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-09T07:00:49.278Z",
+      "summary": "Reported by The Kyiv Independent.",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbzE3LW5Ea0x3Y0hnd0x3YUNrN1I0YkRLZUhJVnRPMHVOMzRPN1RrTWVoVHFUQUU3dGYtWDB5N1Y5X1FsZWhtaWJ1ZEFrRmtMXzlzTkEybk51Q1dPeERsYjdZLThXQVBtbTlLck5oVGxlUGRUbE9JV3ZCWkFldFRYdnJnamItSzFOMGc4cVZYaUdaUkZ2RDBid0pkVjh1c2xKMGJVSjExT2FzOWVzQjFiOVozOEppTnQza2c?oc=5",
       "top": true,
-      "bestRank": 28
+      "bestRank": 27,
+      "firstSeen": "2026-10-09T18:47:35.054Z"
+    },
+    {
+      "headline": "Ukraine’s Battlefield Robots Traversed 4,200 km in Total to Save 45 Troops, Commander Says",
+      "date": "2026-10-09",
+      "bucket": "Conflict",
+      "summary": "Reported by Kyiv Post.",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE42NTA5U01PQ2czTHJNMjVVVnVFQXg4SjFSVG9yOWJRVlhzUmhRSWJEb1NfSFltVEc3ZEFDSmtwSkU3Y2t3VzFGVUYybw?oc=5",
+      "top": true,
+      "bestRank": 30,
+      "firstSeen": "2026-10-09T18:47:35.054Z"
     },
     {
       "headline": "Japan protests Russia’s extradition requests for ICC president Tomoko Akane and 8 other court staff",
@@ -266,6 +376,16 @@
       "top": true,
       "bestRank": 31,
       "firstSeen": "2026-10-09T15:40:57.477Z"
+    },
+    {
+      "headline": "Wealthy French quit failing state schools squeezed by pensions and austerity",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQ3hSM1pvQkJXcDQ3MEtnLXVOejBYSUVHVXFwbWRMV0ZwRGdkd1JST0VGclVTc01uUS1JcmVJczhlU1Nabms2a3k5anNQaG5aSW5NRDNGSmFOeXRYVHlnNjFtUzF4a3R6Wk1pYlhzREZ5NDQwSVRmb0Z6TVRqMVhQR2JaYUd1Q0RibE1lQkw1b29LbWh0elB3U0VvbWNyMVMtTHI1cHpQNFBIN3RuVFJqRFRySXcyME1NYjdXQzd3?oc=5",
+      "top": true,
+      "bestRank": 32,
+      "firstSeen": "2026-10-09T18:47:35.054Z"
     },
     {
       "headline": "Nobel Peace Prize to be awarded in Norway",
@@ -288,6 +408,26 @@
       "firstSeen": "2026-10-09T09:47:41.283Z"
     },
     {
+      "headline": "Left-wing candidate Hitler Mussolini wins local vote in Peru",
+      "date": "2026-10-09",
+      "bucket": "Politics",
+      "summary": "Reported by Euronews.com.",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZUxMSFZycG0yWE1DZnBOSVAzX21qNTZBeFhkcFBkX1RuV3dPWUZYREowUE9TWC11aHp3N0tPWFlQSkdaNlJ4Q3V1MzQ1bVc4aUYtemQyYm5fSXEyWWFKdElfTHE5OTlxQXlYaHRzWFNCX1RsSkwwQkdDT2w0YW9GalJvX3N3SHpMN3BDM0NUUUdnTno1Z0pOUzZBT0w?oc=5",
+      "top": true,
+      "bestRank": 34,
+      "firstSeen": "2026-10-09T15:40:57.477Z"
+    },
+    {
+      "headline": "Antarctica’s penguins are sending us a distress signal",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Reported by Vox.",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNd3NRMVdBVzZPalpWTEc4SnExUW1pWjc3S01uM2dxTE9fbnZMbzFDby1OWWxCQWd6RTJtcnQyMEx5cmJmMkl3ZDhFbTJmalpnY1RZWG9zRmpDN3VWVm83amJvcTJGTHJKdWV0X01LZ29wVmxBV1lnSlhDeU5jeHVFZG1haXd2T2FGNV9jYlh2aWhHX0VIRzEtdGtn?oc=5",
+      "top": true,
+      "bestRank": 36,
+      "firstSeen": "2026-10-09T18:47:35.054Z"
+    },
+    {
       "headline": "Toxic smog from Indonesia shuts schools in Malaysia as pollution hits record levels in Singapore",
       "date": "2026-10-09",
       "bucket": "World",
@@ -296,16 +436,6 @@
       "top": true,
       "bestRank": 37,
       "firstSeen": "2026-10-09T03:51:51.273Z"
-    },
-    {
-      "headline": "Hitler Mussolini wins local election",
-      "date": "2026-10-09",
-      "bucket": "Politics",
-      "summary": "Reported by POLITICO.eu.",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5WenJxbDVOaEdGaXpLby1ybGFQR1JBcC13blNJcTBWZFc0aGstNkxxWUNEWDJGZFVzWUlXZ0ItZzBsZjdEeVh6R2Mwbmo0VWZ1TFVPZE5CX3VQTDRTS1F6Z25ITm9HbFQ5UmtNal90NlV5c0VMVk5tTGQ5b29EaHc?oc=5",
-      "top": true,
-      "bestRank": 38,
-      "firstSeen": "2026-10-09T15:40:57.477Z"
     },
     {
       "headline": "Iran’s Theory of Victory",
@@ -332,6 +462,46 @@
       "summary": "Truckloads of Eritrean soldiers have been seen driving into Ethiopia, which has reportedly responded with drone strikes.",
       "url": "https://www.bbc.co.uk/news/articles/c65ynvw250y1o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-09T15:40:57.477Z"
+    },
+    {
+      "headline": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Several member states of the international tribunal, including the UK, say they \"strongly disagree\" with the sanctions.",
+      "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-09T18:47:35.054Z"
+    },
+    {
+      "headline": "Russian search engine Yandex struggles after Ukrainian strikes on data centres",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Often dubbed \"Russia's Google\", the tech firm admits customers may experience disruption to digital services due to the attacks.",
+      "url": "https://www.bbc.co.uk/news/articles/c68xzqqn4ekro?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-09T18:47:35.054Z"
+    },
+    {
+      "headline": "Man named Hitler Mussolini elected mayor in Peru",
+      "date": "2026-10-09",
+      "bucket": "Politics",
+      "summary": "The left-wing candidate won a narrow victory in a remote district in the Peruvian Andes, exit polls show.",
+      "url": "https://www.bbc.co.uk/news/articles/cmdxwn9dr42yo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-09T18:47:35.054Z"
+    },
+    {
+      "headline": "US immigration officials defend ICE agents who shot man in same car as child",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Oscar Belgal, the 28-year-old man, survived the shooting and is now being held at a detention facility outside of New York, officials said.",
+      "url": "https://www.bbc.co.uk/news/articles/cq78px5y1zmzo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-09T18:47:35.054Z"
+    },
+    {
+      "headline": "Watch: 'I am Jane Doe' protests across US call for end to sexual violence",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Protests against sexual violence took place across more than 40 US states on 8 October.",
+      "url": "https://www.bbc.co.uk/news/videos/cmy83pp3904vo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-09T18:47:35.054Z"
     },
     {
       "headline": "France promises 3,000 extra teachers in first step to calm student protests",
@@ -1204,16 +1374,6 @@
       "firstSeen": "2026-10-09T03:51:51.273Z"
     },
     {
-      "headline": "Palestinian Authority Says Elections Are to Be Postponed",
-      "date": "2026-10-08",
-      "bucket": "World",
-      "summary": "Reported by AP News.",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZzlxc3YwRFZ1V3ZLYUR4MzBNSGlMbFg4MUhtR2JUT09yeU5tTmQ1T1J5Sm54SkpBRWl4ODBRV2VhYkZmdjh2WVBFcGxXbUFkQnR0ZW1lZ2VvVGVsZlVrV0xtV0lSUmc1V2pFRlJuRWhGU25WM1RuQkNKN1ZwNWtWaUNRWU0weFdkLXAwQXp5dlM1OXhqbFBkTkpQLS10TWxlS25nbG1CcjU4dWJj?oc=5",
-      "top": true,
-      "bestRank": 32,
-      "firstSeen": "2026-10-09T15:40:57.477Z"
-    },
-    {
       "headline": "OpenAI says Iran, Russia used AI journalists, think tanks to influence Western media",
       "date": "2026-10-08",
       "bucket": "World",
@@ -1312,6 +1472,16 @@
       "top": true,
       "bestRank": 39,
       "firstSeen": "2026-10-08T09:46:52.435Z"
+    },
+    {
+      "headline": "Alberta, Saskatchewan premiers shut down Elon Musk’s call for separation",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWWY5TXBndXpXREtRcGJjWjd1eUdKNnZBTDM2UklhaV8wVEdsZkRxNTFlbUxwNlc1Y1VjVksyaFJkb1VqelJnSUpxb3ZyWnFPSXBDdmlNVXgyQVJkelBXajNveHZWd0ZUOG9uT09KRFJoWktxSGQwMVViakRNalR3Zk1JNERKOVJqazl0WExmNjR3YUF5eGdHNnE3eHlmV3M2VWVHQzBacw?oc=5",
+      "top": true,
+      "bestRank": 39,
+      "firstSeen": "2026-10-09T18:47:35.054Z"
     },
     {
       "headline": "Ethiopia Accuses Eritrea of Incursion, Demands Troop Withdrawal",
@@ -1432,26 +1602,6 @@
       "bestRank": null
     },
     {
-      "headline": "Suspect linked to Monaco bomb attack on millionaire breaks silence to BBC",
-      "date": "2026-10-08",
-      "bucket": "World",
-      "summary": "Vitalii Zhykovych gives his own account of the attempted assassination of Ukrainian-born businessman Vadym Yermolayev.",
-      "url": "https://www.bbc.co.uk/news/articles/ckgel9044vqeo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-09T01:22:09.121Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Mark Zuckerberg has an image problem - so why is Meta's business booming?",
-      "date": "2026-10-08",
-      "bucket": "World",
-      "summary": "A new film paints the Meta founder as a villain. But the tech firm seems immune to bad publicity, writes our North America tech correspondent.",
-      "url": "https://www.bbc.co.uk/news/articles/cq8rzjv8g7ejo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-09T01:22:09.121Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "Watch: Why was the sign at the British consulate in East Jerusalem removed?",
       "date": "2026-10-08",
       "bucket": "World",
@@ -1467,16 +1617,6 @@
       "bucket": "World",
       "summary": "More than 500 migrants have been expelled from the US to African countries, HRW says, citing US data.",
       "url": "https://www.bbc.co.uk/news/articles/c9p8gn55433jo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-08T18:49:27.989Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Adidas sues Australian label White Fox over four stripes design",
-      "date": "2026-10-08",
-      "bucket": "World",
-      "summary": "The German sportswear brand wants the Sydney-based label to stop selling the clothes and pay damages.",
-      "url": "https://www.bbc.co.uk/news/articles/c9e8ld448km8o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-08T18:49:27.989Z",
       "top": false,
       "bestRank": null
@@ -1512,6 +1652,56 @@
       "bestRank": null
     },
     {
+      "headline": "Former ambassador on NATO's meeting in Ukraine and the ongoing war",
+      "date": "2026-10-08",
+      "bucket": "Conflict",
+      "summary": "Military representatives from all 32 NATO member states met in Kyiv. NPR's Steve Inskeep speaks with Kurt Volker, former U.S. ambassador to NATO, about the meeting and the ongoing war.",
+      "url": "https://www.npr.org/2026/10/08/nx-s1-5993774/former-ambassador-on-natos-meeting-in-ukraine-and-the-ongoing-war",
+      "firstSeen": "2026-10-08T09:46:52.435Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Veteran Indian actor Nana Patekar dies at 75",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "Known for his intense performances, Patekar carved out a distinctive place in Indian cinema.",
+      "url": "https://www.bbc.co.uk/news/articles/cj3vqr5rknpeo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-08T07:01:39.449Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Suspect linked to Monaco bomb attack on millionaire breaks silence to BBC",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "Vitalii Zhykovych gives his own account of the attempted assassination of Ukrainian-born businessman Vadym Yermolayev.",
+      "url": "https://www.bbc.co.uk/news/articles/ckgel9044vqeo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-09T01:22:09.121Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Mark Zuckerberg has an image problem - so why is Meta's business booming?",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "A new film paints the Meta founder as a villain. But the tech firm seems immune to bad publicity, writes our North America tech correspondent.",
+      "url": "https://www.bbc.co.uk/news/articles/cq8rzjv8g7ejo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-09T01:22:09.121Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Adidas sues Australian label White Fox over four stripes design",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "The German sportswear brand wants the Sydney-based label to stop selling the clothes and pay damages.",
+      "url": "https://www.bbc.co.uk/news/articles/c9e8ld448km8o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-08T18:49:27.989Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
       "headline": "South Korea test-flies its first domestically developed hypersonic weapon",
       "date": "2026-10-08",
       "bucket": "Conflict",
@@ -1532,31 +1722,11 @@
       "bestRank": null
     },
     {
-      "headline": "Former ambassador on NATO's meeting in Ukraine and the ongoing war",
-      "date": "2026-10-08",
-      "bucket": "Conflict",
-      "summary": "Military representatives from all 32 NATO member states met in Kyiv. NPR's Steve Inskeep speaks with Kurt Volker, former U.S. ambassador to NATO, about the meeting and the ongoing war.",
-      "url": "https://www.npr.org/2026/10/08/nx-s1-5993774/former-ambassador-on-natos-meeting-in-ukraine-and-the-ongoing-war",
-      "firstSeen": "2026-10-08T09:46:52.435Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "Syrian general accused of atrocities is protected by U.S. and Lebanon, NPR and BBC find",
       "date": "2026-10-08",
       "bucket": "World",
       "summary": "A former Syrian general wanted for crimes against humanity is living quietly in Lebanon, bankrolled and protected by American and Lebanese authorities, a BBC/NPR investigation has found.",
       "url": "https://www.npr.org/2026/10/08/nx-s1-5993637/syrian-general-lebanon-fbi-austin-tice",
-      "firstSeen": "2026-10-08T07:01:39.449Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Veteran Indian actor Nana Patekar dies at 75",
-      "date": "2026-10-08",
-      "bucket": "World",
-      "summary": "Known for his intense performances, Patekar carved out a distinctive place in Indian cinema.",
-      "url": "https://www.bbc.co.uk/news/articles/cj3vqr5rknpeo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-08T07:01:39.449Z",
       "top": false,
       "bestRank": null
@@ -1578,16 +1748,6 @@
       "summary": "Israelis are gathering Wednesday to commemorate the Oct. 7, 2023, attack that killed 1,200 people, and sparked a devastating war in Gaza that Palestinians still grapple with.",
       "url": "https://www.npr.org/2026/10/07/nx-s1-5993459/israelis-oct-7-palestinians-war",
       "firstSeen": "2026-10-07T06:58:49.955Z",
-      "top": true,
-      "bestRank": 1
-    },
-    {
-      "headline": "Trump to speak to Putin about plague lab worker's death in Russia",
-      "date": "2026-10-07",
-      "bucket": "World",
-      "summary": "Fears that the death may have been caused by pneumonic plague has prompted calls for more transparency from Russia.",
-      "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-05T21:40:34.655Z",
       "top": true,
       "bestRank": 1
     },
@@ -1842,6 +2002,16 @@
       "firstSeen": "2026-10-08T01:20:57.176Z"
     },
     {
+      "headline": "‘No more dumping, no more spying’: European Parliament hardens line on China",
+      "date": "2026-10-07",
+      "bucket": "Politics",
+      "summary": "Reported by South China Morning Post.",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQkZlMVN6U1RjSWh0bllJNEhDazFTYTVfa0hRb21rLVE2LS1iOG1HREJOelJuQl9yM21DSV9id0x1M2FUTUVtckxvSTZCZFFXVFN1Mmo0VXR5UnBNSkpUNF9yQ1R0bV95RDR3dE5UdTRQelZ0Skh2WmtFRDk3N01ZaGZQUkYyOS05Q09IYVNKUHlPcTB4TUNKLW5xYXhCdEpqQlZNbDVDSm5kT3ZfYmZkOEdZM1NJekM2bzRyZ1RjWFJ6WlHSAcMBQVVfeXFMUGZqd3UxSzdqenVNNDZieEo5dmVPY3FHdTh1dWZBME9vZHJGdXdjMWQxU1luTmlKSHhaZ1YzLUctcXRob2tabEZkMk9EeU5hdFAwOThFSmhGd3RjdTF6YzV6NDdZclJldEdIdi1NNUdkejkwaHBjTmtYRm9waEF5VXFWVV9nd0lvVnFqLUZ4NDFjWWZaNXZONHRVZTdZNWNXbDM4cmRmQk4xdENzOW1aU2FreUZ2N1VuYlNjSEo4cGpNdDk0?oc=5",
+      "top": true,
+      "bestRank": 9,
+      "firstSeen": "2026-10-08T01:20:57.176Z"
+    },
+    {
       "headline": "Russian strikes on Ukrainian cities kill at least 25 in a major attack that Kyiv saw coming",
       "date": "2026-10-07",
       "bucket": "World",
@@ -1860,16 +2030,6 @@
       "top": true,
       "bestRank": 10,
       "firstSeen": "2026-10-08T12:56:34.826Z"
-    },
-    {
-      "headline": "‘No more dumping, no more spying’: European Parliament hardens line on China",
-      "date": "2026-10-07",
-      "bucket": "Politics",
-      "summary": "Reported by South China Morning Post.",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQkZlMVN6U1RjSWh0bllJNEhDazFTYTVfa0hRb21rLVE2LS1iOG1HREJOelJuQl9yM21DSV9id0x1M2FUTUVtckxvSTZCZFFXVFN1Mmo0VXR5UnBNSkpUNF9yQ1R0bV95RDR3dE5UdTRQelZ0Skh2WmtFRDk3N01ZaGZQUkYyOS05Q09IYVNKUHlPcTB4TUNKLW5xYXhCdEpqQlZNbDVDSm5kT3ZfYmZkOEdZM1NJekM2bzRyZ1RjWFJ6WlHSAcMBQVVfeXFMUGZqd3UxSzdqenVNNDZieEo5dmVPY3FHdTh1dWZBME9vZHJGdXdjMWQxU1luTmlKSHhaZ1YzLUctcXRob2tabEZkMk9EeU5hdFAwOThFSmhGd3RjdTF6YzV6NDdZclJldEdIdi1NNUdkejkwaHBjTmtYRm9waEF5VXFWVV9nd0lvVnFqLUZ4NDFjWWZaNXZONHRVZTdZNWNXbDM4cmRmQk4xdENzOW1aU2FreUZ2N1VuYlNjSEo4cGpNdDk0?oc=5",
-      "top": true,
-      "bestRank": 11,
-      "firstSeen": "2026-10-08T01:20:57.176Z"
     },
     {
       "headline": "Escalating Assaults on Ukrainian Cities Are Taking an Enormous Toll",
