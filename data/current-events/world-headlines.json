@@ -1,19 +1,51 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-10-09T01:22:09.121Z",
+  "generatedAt": "2026-10-09T03:51:51.273Z",
   "retentionDays": 21,
   "windowStart": "2026-09-18",
   "windowEnd": "2026-10-09",
   "snapshotIntervalHours": 3,
-  "count": 2153,
+  "count": 2163,
   "items": [
+    {
+      "headline": "Putin offers to help end Iran war as Trump touts ‘productive discussions’ with Tehran",
+      "date": "2026-10-09",
+      "bucket": "Conflict",
+      "summary": "Reported by Fox News.",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQVhtWUVZMm9tcjNrQVgtNlYxanhzTDhoT1hlT0NlUGV6SW1EMzZHYUxJSWVET25sOHFoSVpCaDVEeThsXzJSVUpZZXI2VldDc1RaOFdMcEEwRm9yX2M2dGk3NW5yc1V4WnprZXYtYnJLWjBDZ25wd21NUm0tekx0REtsQ1dFWGJEckUyMA?oc=5",
+      "top": true,
+      "bestRank": 15,
+      "firstSeen": "2026-10-09T03:51:51.273Z"
+    },
+    {
+      "headline": "Toxic smog from Indonesia shuts schools in Malaysia as pollution hits record levels in Singapore",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "Reported by BBC.",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBVeFplcDBzMGstZHoxdThRNXJKdkdwbkk3ZU9zZ2dOSXM5X25GVnc0NTU4cnNsTXVlRDJNWUREaGZxS0kzd1Zob0hYYVFCUzJnSUpVelhB?oc=5",
+      "top": true,
+      "bestRank": 37,
+      "firstSeen": "2026-10-09T03:51:51.273Z"
+    },
     {
       "headline": "The long-deployed USS Lincoln returns home to San Diego Bay",
       "date": "2026-10-09",
       "bucket": "Conflict",
       "summary": "The USS Abraham Lincoln aircraft carrier has returned home after a record-setting uninterrupted time at sea supporting the Iran war. The extended deployment drew attention following reports of crew stress and supply shortages.",
       "url": "https://www.npr.org/2026/10/08/nx-s1-5995911/the-long-deployed-uss-lincoln-returns-home-to-san-diego-bay",
-      "firstSeen": "2026-10-09T01:22:09.121Z"
+      "firstSeen": "2026-10-09T01:22:09.121Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Fort Hood attacker's execution by firing squad will be livestreamed, Pentagon says",
+      "date": "2026-10-09",
+      "bucket": "World",
+      "summary": "The US Defence Secretary says the execution will be public, but a legal expert says the \"unprecedented\" decision is on \"uncertain legal terrain\".",
+      "url": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-09-18T15:39:11.991Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Maricarmen, the 87-year-old woman whose eviction shook Spain, has died",
@@ -56,6 +88,16 @@
       "bestRank": 1
     },
     {
+      "headline": "At least 30 dead in Russian bus strike as Moscow closes in on Ukraine’s ‘fortress belt’",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "Reported by The Washington Post.",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNazh5VndTZFZtUmdJejlzMFI4NmlaRl84dENCeDRqaXFxcWswYVhYRzJSaUhLc3M0a09aNUJ6eURnN05qbGRPSEJYc25RSXJYOEQzYjlac20yNFQzZ2dWNjZVdEp4RXNNOUhBaGpzZS15YlFyNVdUNkZxdUNzSXRPTG5WNWtCQTRYRjdpNVgzandVRjVmVGpPanJzZVo5VE5pd2dib0JXMEhESk5DZXV4Y0JmSVk4eXNjX2c?oc=5",
+      "top": true,
+      "bestRank": 1,
+      "firstSeen": "2026-10-08T21:41:10.408Z"
+    },
+    {
       "headline": "Three people killed in Houthi attacks on Saudi Arabia airports, officials say",
       "date": "2026-10-08",
       "bucket": "World",
@@ -76,11 +118,11 @@
       "bestRank": 2
     },
     {
-      "headline": "At least 30 dead in Russian bus strike as Moscow closes in on Ukraine’s ‘fortress belt’",
+      "headline": "Iran strikes tankers outside Hormuz in signs of expanding campaign",
       "date": "2026-10-08",
       "bucket": "World",
-      "summary": "Reported by The Washington Post.",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNazh5VndTZFZtUmdJejlzMFI4NmlaRl84dENCeDRqaXFxcWswYVhYRzJSaUhLc3M0a09aNUJ6eURnN05qbGRPSEJYc25RSXJYOEQzYjlac20yNFQzZ2dWNjZVdEp4RXNNOUhBaGpzZS15YlFyNVdUNkZxdUNzSXRPTG5WNWtCQTRYRjdpNVgzandVRjVmVGpPanJzZVo5VE5pd2dib0JXMEhESk5DZXV4Y0JmSVk4eXNjX2c?oc=5",
+      "summary": "Reported by Euronews.com.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQlNCMDZhV0xRNzlGMDMzdVR3Y2JvQXNvUkVBd2tUcFZVSy1fNk1LOTF6NVlwbUVXLTNwYm9CWU5HMWc1Y2FuZFVXcW5hRDdyZzd6d1lIdzRCc2oxbmI1NUJfR1lIcllMSDZOS0xQNWkzODhLa2x1dllLeHFhS0ZSSDkzX3l1TVZwZHRZZERIemlnOUFoNi1WV2dHWWVxbFg3RlFwcA?oc=5",
       "top": true,
       "bestRank": 2,
       "firstSeen": "2026-10-08T21:41:10.408Z"
@@ -126,6 +168,16 @@
       "firstSeen": "2026-10-08T21:41:10.408Z"
     },
     {
+      "headline": "Two Latvians Arrested After Break-In at U.K. Military Base",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT29obFFfbmdtbjduSC1qSVFJcnMzbnpteDM1SHdzVTh0WWtvQktyM19BMS1nbnotRU9xT0k4T29FRDBUWGd2WjlIX21rOWR6SXBCalJsOWlyZEVPOHNPZnlEczBGVjZMWVRjLTdJTmRxWmVqc0QwQVA5LUJNTWllZnEyaWtyNnVfUldrWTRSUlpKV3dLb05BNlVLX3I1ZkdWMW80eUJZMG1RNFI3dDQxek84bG40TG9wY051OQ?oc=5",
+      "top": true,
+      "bestRank": 3,
+      "firstSeen": "2026-10-08T21:41:10.408Z"
+    },
+    {
       "headline": "Italy Weighs Controversial Law Giving Bonus Seats to Election Winners",
       "date": "2026-10-08",
       "bucket": "Politics",
@@ -146,6 +198,16 @@
       "bestRank": 4
     },
     {
+      "headline": "How a U.S. Diplomat Suppressed and Altered Reports Critical of Israel",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQcUQwM1lIUWJUcVBmUTdoTl9XbERIYXc5a3ZqU1VNSzN1c3Z4N2tQN3ZDU1RkRkI0TmoyZURfYjhqdjZfalhoLW9zeUx5eUtFcV9CYlZCUWwwSVFuZ3c0SktDY1o3cVh2LU5hcHdoUDNVYjBBRl81OG5QYnkwUmw4aldycEFRT0lVM3JaRF9hMFgyWUk?oc=5",
+      "top": true,
+      "bestRank": 4,
+      "firstSeen": "2026-10-08T21:41:10.408Z"
+    },
+    {
       "headline": "Giorgia Meloni wins vote on controversial ‘bonus seat’ changes to electoral system",
       "date": "2026-10-08",
       "bucket": "Politics",
@@ -156,24 +218,24 @@
       "firstSeen": "2026-10-08T18:49:27.989Z"
     },
     {
-      "headline": "How a U.S. Diplomat Suppressed and Altered Reports Critical of Israel",
-      "date": "2026-10-08",
-      "bucket": "World",
-      "summary": "Reported by The New York Times.",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQcUQwM1lIUWJUcVBmUTdoTl9XbERIYXc5a3ZqU1VNSzN1c3Z4N2tQN3ZDU1RkRkI0TmoyZURfYjhqdjZfalhoLW9zeUx5eUtFcV9CYlZCUWwwSVFuZ3c0SktDY1o3cVh2LU5hcHdoUDNVYjBBRl81OG5QYnkwUmw4aldycEFRT0lVM3JaRF9hMFgyWUk?oc=5",
-      "top": true,
-      "bestRank": 5,
-      "firstSeen": "2026-10-08T21:41:10.408Z"
-    },
-    {
-      "headline": "Two Latvians Arrested After Break-In at U.K. Military Base",
+      "headline": "Explosions Rattle Saudi Capital",
       "date": "2026-10-08",
       "bucket": "World",
       "summary": "Reported by Reuters.",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT29obFFfbmdtbjduSC1qSVFJcnMzbnpteDM1SHdzVTh0WWtvQktyM19BMS1nbnotRU9xT0k4T29FRDBUWGd2WjlIX21rOWR6SXBCalJsOWlyZEVPOHNPZnlEczBGVjZMWVRjLTdJTmRxWmVqc0QwQVA5LUJNTWllZnEyaWtyNnVfUldrWTRSUlpKV3dLb05BNlVLX3I1ZkdWMW80eUJZMG1RNFI3dDQxek84bG40TG9wY051OQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQS3RjWlUtbVhIS3V2UlRkMFZOT3pESFlCZGVKcVp5N1lwX1JCTGRrXzI3dXdHT3diVGZUWENHREJ3MW5zQUpRamZpbkV0dTdoNDhRUzl6OW5FT2JZSjZHaHY2T2ltMm1fNTZVNHhuQzdZTmJVRHhSbE1vYnNpZTR4SGJONWhxVWxoYmxBLW1SRkpBNlROdHBxN3VjMUtpcHFaVzgzQ1ZvcmIyVllXcjBhSTY3TlhuLXpQRExkZmYtd29TOEppUkYwOA?oc=5",
+      "top": true,
+      "bestRank": 5,
+      "firstSeen": "2026-10-09T01:22:09.121Z"
+    },
+    {
+      "headline": "Student Protesters in France are Holding Signs Referencing May 1968. Here’s Why It’s Significant",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "Reported by NBC News.",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZkpVaWRpOWszRGJqZHNWcm9sR3V2bk90ZWlIRG5UZ29lZ2g5RGhEWXBtOHNEN1ROdzMxUW5BaWpCYVRGbHB0c056bDEybk10cWZRbndJMXFYVDFwY3FxR3lULUdmSUF2TndhX0g4NFdzb0diN2M4TjBPTllsalZWWHlzQXdDOFlhWjdlY0xyc2g1TUZUTzlKVnJBSWpVZ1B3Y3RlSWxB?oc=5",
       "top": true,
       "bestRank": 6,
-      "firstSeen": "2026-10-08T21:41:10.408Z"
+      "firstSeen": "2026-10-09T03:51:51.273Z"
     },
     {
       "headline": "Neil Gorsuch corrects Trump DOJ lawyer during Supreme Court arguments",
@@ -216,14 +278,14 @@
       "firstSeen": "2026-10-08T18:49:27.989Z"
     },
     {
-      "headline": "Iran strikes tankers outside Hormuz in signs of expanding campaign",
+      "headline": "A year into Trump’s peace plan, Netanyahu stands in the way of rebuilding",
       "date": "2026-10-08",
       "bucket": "World",
-      "summary": "Reported by Euronews.com.",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQlNCMDZhV0xRNzlGMDMzdVR3Y2JvQXNvUkVBd2tUcFZVSy1fNk1LOTF6NVlwbUVXLTNwYm9CWU5HMWc1Y2FuZFVXcW5hRDdyZzd6d1lIdzRCc2oxbmI1NUJfR1lIcllMSDZOS0xQNWkzODhLa2x1dllLeHFhS0ZSSDkzX3l1TVZwZHRZZERIemlnOUFoNi1WV2dHWWVxbFg3RlFwcA?oc=5",
+      "summary": "Reported by The Washington Post.",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSFR0RmNLbFpONHRmX3BXaHdyaDRfaUtRVWJVa05JTkJURjdPbUt1SS1fdkE0amRsaWNCdm1FZlVVNUZNSXFyOTNmamgwZnV3QmtvNnJKMzBJRFl4QTVZOHo0ZE9xN0pBbHdxc2JHS2JQZlp4MTVYVHg1ci1PVThYa2lMMEozSzRMNXdkLTY2OHVmTWFnR01vNFhIdnc1LXltQjlNM2xZcE9tU0NjbnJ3?oc=5",
       "top": true,
       "bestRank": 7,
-      "firstSeen": "2026-10-08T21:41:10.408Z"
+      "firstSeen": "2026-10-08T15:47:01.439Z"
     },
     {
       "headline": "Iran war live: Trump says no attack before vote; ‘productive’ talks ongoing",
@@ -246,16 +308,6 @@
       "firstSeen": "2026-10-08T21:41:10.408Z"
     },
     {
-      "headline": "Explosions Rattle Saudi Capital",
-      "date": "2026-10-08",
-      "bucket": "World",
-      "summary": "Reported by Reuters.",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQS3RjWlUtbVhIS3V2UlRkMFZOT3pESFlCZGVKcVp5N1lwX1JCTGRrXzI3dXdHT3diVGZUWENHREJ3MW5zQUpRamZpbkV0dTdoNDhRUzl6OW5FT2JZSjZHaHY2T2ltMm1fNTZVNHhuQzdZTmJVRHhSbE1vYnNpZTR4SGJONWhxVWxoYmxBLW1SRkpBNlROdHBxN3VjMUtpcHFaVzgzQ1ZvcmIyVllXcjBhSTY3TlhuLXpQRExkZmYtd29TOEppUkYwOA?oc=5",
-      "top": true,
-      "bestRank": 8,
-      "firstSeen": "2026-10-09T01:22:09.121Z"
-    },
-    {
       "headline": "Hormuz Tanker Traffic Hits Two-Month Low as Attacks Surge",
       "date": "2026-10-08",
       "bucket": "World",
@@ -266,14 +318,14 @@
       "firstSeen": "2026-10-08T09:46:52.435Z"
     },
     {
-      "headline": "A year into Trump’s peace plan, Netanyahu stands in the way of rebuilding",
+      "headline": "Disrupting AI-enabled “false front” operations",
       "date": "2026-10-08",
       "bucket": "World",
-      "summary": "Reported by The Washington Post.",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSFR0RmNLbFpONHRmX3BXaHdyaDRfaUtRVWJVa05JTkJURjdPbUt1SS1fdkE0amRsaWNCdm1FZlVVNUZNSXFyOTNmamgwZnV3QmtvNnJKMzBJRFl4QTVZOHo0ZE9xN0pBbHdxc2JHS2JQZlp4MTVYVHg1ci1PVThYa2lMMEozSzRMNXdkLTY2OHVmTWFnR01vNFhIdnc1LXltQjlNM2xZcE9tU0NjbnJ3?oc=5",
+      "summary": "Reported by CNN.",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTE9GdEoxcDloN0ZWQ3F0dXZ3alNhNUc3MjYxTXMzSWdaY3J1ck5iQXNiZ1piWm01VVU4RVJzU0hVb0ZpXzRzNXFfWXJkVlJOelFvTEhzQ1R2enYwVVI2eExFVlF6anRqNjdLcFRFODAwM0VpWGpiVm1FU290dXhmREVZd3lPRXRuMmFYQUZldU04NzBXUmNvSi0tby01ZkpDaXc?oc=5",
       "top": true,
       "bestRank": 9,
-      "firstSeen": "2026-10-08T15:47:01.439Z"
+      "firstSeen": "2026-10-09T03:51:51.273Z"
     },
     {
       "headline": "Student protest unrest spreads across Europe",
@@ -284,6 +336,16 @@
       "top": true,
       "bestRank": 10,
       "firstSeen": "2026-10-08T18:49:27.989Z"
+    },
+    {
+      "headline": "Judge says search warrants used to seize property from former Prince Andrew were unlawful",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWUpnTlNYUmV1UmFpQm9sMjQ0R0xxTmxSWjJHeERMRjVGUHRwNUFvb21KNjRPVkVRSndwZ19lcFp1ckJXcUVta201bHNEaHlCZFBPc0dHRHFKMDJuYl95dWRxRU9KVV9wcHVrX2RJYWJfX05oWWRtenBqQlM0RGstMGFmLWVUdWdIU1FVUHUzZjVZOWpTcXdiU1BhM3hfaVNSV0VJ?oc=5",
+      "top": true,
+      "bestRank": 10,
+      "firstSeen": "2026-10-09T03:51:51.273Z"
     },
     {
       "headline": "Supreme Court wrestles with fight over Air Force munitions-disposal site on Guam",
@@ -304,6 +366,16 @@
       "top": true,
       "bestRank": 11,
       "firstSeen": "2026-10-08T09:46:52.435Z"
+    },
+    {
+      "headline": "Pedro Sánchez gambles on a snap election—and populist policies",
+      "date": "2026-10-08",
+      "bucket": "Politics",
+      "summary": "Reported by BBC.",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ZRFF1RzRoSnpJZVFrak44ZmNQMXBJTHJVWHV6LU5QU3pZWVBLU0l2enIyRmRlSUwza2RyUTVBcXFrWGhqMWFTZWNJNG5jdkNrbl9lX01FZTlNdlU?oc=5",
+      "top": true,
+      "bestRank": 11,
+      "firstSeen": "2026-10-09T03:51:51.273Z"
     },
     {
       "headline": "Israel Downgrades U.K. Consulate in Jerusalem Over West Bank Trade Ban",
@@ -396,6 +468,16 @@
       "firstSeen": "2026-10-09T01:22:09.121Z"
     },
     {
+      "headline": "Secret Order to ICE Agents Revealed as Republicans Panic",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "Reported by CNN.",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9yd1Y3ZFo5TF9yQ3diTHB2Q000Wk05OHJVeUswLXpLaGtiWWZqaDE2OTMwb29NUlJFM3Fhbms1LWM4enVVY0tMck5Zdk94RzJCNXhqOFpUY1J5OEhfQzdEQzhaN0cwOHdrQk5DT1ZQdC0?oc=5",
+      "top": true,
+      "bestRank": 16,
+      "firstSeen": "2026-10-08T18:49:27.989Z"
+    },
+    {
       "headline": "Hormuz transits at lowest in over two months after attacks, data shows",
       "date": "2026-10-08",
       "bucket": "World",
@@ -454,16 +536,6 @@
       "top": true,
       "bestRank": 21,
       "firstSeen": "2026-10-08T15:47:01.439Z"
-    },
-    {
-      "headline": "Secret Order to ICE Agents Revealed as Republicans Panic",
-      "date": "2026-10-08",
-      "bucket": "World",
-      "summary": "Reported by CNN.",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9yd1Y3ZFo5TF9yQ3diTHB2Q000Wk05OHJVeUswLXpLaGtiWWZqaDE2OTMwb29NUlJFM3Fhbms1LWM4enVVY0tMck5Zdk94RzJCNXhqOFpUY1J5OEhfQzdEQzhaN0cwOHdrQk5DT1ZQdC0?oc=5",
-      "top": true,
-      "bestRank": 21,
-      "firstSeen": "2026-10-08T18:49:27.989Z"
     },
     {
       "headline": "Mia Schem slams ‘pro-Palestinian sheep,’ Drake as she recounts Hamas captivity",
@@ -526,6 +598,16 @@
       "firstSeen": "2026-10-09T01:22:09.121Z"
     },
     {
+      "headline": "Myanmar’s Strongman President Is on a Global Quest for Legitimacy. Next Stop, Malaysia.",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOR3pqQTEtNkFCU0lvWW9kV3I1bG13S0FmUW81bWt4WnltdDA3Y0FTM0pLdC1zVFJHTm1SNDVwUlhRTWJFU0pKNkJFd3ZQVm03V0U3d0l1TDhkbjljY0Z0Vm9aclpUOVZEZVFzNnhQLTNPTXRLNGw3WV9RN212czZyVFNYSQ?oc=5",
+      "top": true,
+      "bestRank": 24,
+      "firstSeen": "2026-10-09T03:51:51.273Z"
+    },
+    {
       "headline": "Marco Rubio Melts Down at Reporter’s ‘Stupid’ Question",
       "date": "2026-10-08",
       "bucket": "World",
@@ -541,6 +623,16 @@
       "bucket": "World",
       "summary": "Reported by TWZ.",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUVhYVHFmSUl2TURHMUdkZ05rV25SYThWZ29pVFFXbnJueVhuWmRSeEx5d0JwSk40TDYzeVVYaTRscElVZTlNMG1rMEFIUUdVanJrNmJEeDcycThkYm5FaWlKMlZmMFNFNkx3amdBeFRMTE1rU0xkNm82UG9xOU9SRVVJLVJxdw?oc=5",
+      "top": true,
+      "bestRank": 26,
+      "firstSeen": "2026-10-09T01:22:09.121Z"
+    },
+    {
+      "headline": "Spared, married, hanged: the last weeks of Iranian protester Alireza Sepahi",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "Reported by New York Post.",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNb2E3bnQ5V2RIMU5EZ0p0cXkyNjlWNHJSWjhFeHlJdVd2N3p2Uk1wYi1TSEJpaTIxS1hUUHVPYnIxaC1CaGtVSzRWR005b2JqazZGWFN2UXM4cnFCTlBoWm50ek5QSUdZaFhIc3l1YVVYVnN1YnhibnVpYkFfemVBQjV1WGtTcmFjaGE1THRVeGU0dndIVHBBVHlQYkQzNDE5YzJyM1FpTy1BYWR0SDIzUUUtOWs5QmViYTNFYXZiYVFPaS01dEg4?oc=5",
       "top": true,
       "bestRank": 26,
       "firstSeen": "2026-10-09T01:22:09.121Z"
@@ -572,8 +664,18 @@
       "summary": "Reported by CHS Capitol Hill Seattle News.",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQWlfYVRBTlZYRzc1UDR0QUZIVWNrSjhhSC1QQUR2QWZBNlR6cFJMTllBcE5yNE05LXlSMEs2X2NjQlpUbGxnbW9qQjNINVQtblZWOHZXb1VlclZkZ3cyUGt3RDFHQXN6blJZNmNJX0F2bUJmZTJjclVta2lSeWtMLUZlV2RUdENmZzNtSnc0Rm9BX3lORWxaMXdkbmZ4Z1RpWEVjdlBxQVpvRkJhWUgzNHFMLTA0cjg?oc=5",
       "top": true,
-      "bestRank": 29,
+      "bestRank": 27,
       "firstSeen": "2026-10-08T18:49:27.989Z"
+    },
+    {
+      "headline": "Taliban Arrest Women for Dress Code Violations",
+      "date": "2026-10-08",
+      "bucket": "World",
+      "summary": "Reported by Newser.",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRUFZYzJCbjU0VG5PSG1YQmRjaTBnYlZvSlNfcS1mbHVmNWdvWHppSDdnYXp5d19HRXA5b19yb2ZLYWM3UVhzTldvUjNaSlVuWF92OFB1SC1FTGx4OWFXcU1lS0ZrVzE1TkJmNWN2ZnoyOVdJemdBQ0gwRWlpVmpUdVVlaUEyV1V4R1R3bEIzRDRWcEE?oc=5",
+      "top": true,
+      "bestRank": 29,
+      "firstSeen": "2026-10-09T03:51:51.273Z"
     },
     {
       "headline": "Trump makes late Nobel Prize pitch: ‘Not bragging ... but I settled eight wars’",
@@ -606,14 +708,14 @@
       "firstSeen": "2026-10-08T18:49:27.989Z"
     },
     {
-      "headline": "Spared, married, hanged: the last weeks of Iranian protester Alireza Sepahi",
+      "headline": "Jared Kushner, 45, Drops Stunning Admission About His Elite Education",
       "date": "2026-10-08",
       "bucket": "World",
-      "summary": "Reported by New York Post.",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNb2E3bnQ5V2RIMU5EZ0p0cXkyNjlWNHJSWjhFeHlJdVd2N3p2Uk1wYi1TSEJpaTIxS1hUUHVPYnIxaC1CaGtVSzRWR005b2JqazZGWFN2UXM4cnFCTlBoWm50ek5QSUdZaFhIc3l1YVVYVnN1YnhibnVpYkFfemVBQjV1WGtTcmFjaGE1THRVeGU0dndIVHBBVHlQYkQzNDE5YzJyM1FpTy1BYWR0SDIzUUUtOWs5QmViYTNFYXZiYVFPaS01dEg4?oc=5",
+      "summary": "Reported by The Daily Beast.",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUDViZTNjdDdGajdLcjRTWHRMV3hwNnZJRlNIUzl3bk9xbXZmb1haNWlqQWxLcTkzNWZSQkZwekZSOUpucHBiRHlwUnBGN3FVQnR1NFNCMk1QYnV3bzZWa2JaQXllS05xWk9UYllnWEVzamxBRGdhMFFLbVZJbkRwSU5HRTV4QTI2U2VXcHFFSjE5bDlWS1E?oc=5",
       "top": true,
       "bestRank": 33,
-      "firstSeen": "2026-10-09T01:22:09.121Z"
+      "firstSeen": "2026-10-09T03:51:51.273Z"
     },
     {
       "headline": "Video: Taiwan Coast Guard Uses Water Cannon on Chinese Fishing Boat",
@@ -719,7 +821,9 @@
       "bucket": "World",
       "summary": "Vitalii Zhykovych gives his own account of the attempted assassination of Ukrainian-born businessman Vadym Yermolayev.",
       "url": "https://www.bbc.co.uk/news/articles/ckgel9044vqeo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-09T01:22:09.121Z"
+      "firstSeen": "2026-10-09T01:22:09.121Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Mark Zuckerberg has an image problem - so why is Meta's business booming?",
@@ -727,7 +831,9 @@
       "bucket": "World",
       "summary": "A new film paints the Meta founder as a villain. But the tech firm seems immune to bad publicity, writes our North America tech correspondent.",
       "url": "https://www.bbc.co.uk/news/articles/cq8rzjv8g7ejo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-09T01:22:09.121Z"
+      "firstSeen": "2026-10-09T01:22:09.121Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Watch: Why was the sign at the British consulate in East Jerusalem removed?",
@@ -735,7 +841,9 @@
       "bucket": "World",
       "summary": "The consulate, first established in 1838, was set to be closed by the Israeli government in retaliation for UK sanctions.",
       "url": "https://www.bbc.co.uk/news/videos/c962yz01l7mmo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-09T01:22:09.121Z"
+      "firstSeen": "2026-10-09T01:22:09.121Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "What Americans think about the death penalty",
@@ -743,7 +851,9 @@
       "bucket": "World",
       "summary": "The BBC spoke to Americans and international tourists in Washington DC about their views on the death penalty following the botched execution of Christa Pike in Tennessee.",
       "url": "https://www.bbc.co.uk/news/videos/cjx236wl9416o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-09T01:22:09.121Z"
+      "firstSeen": "2026-10-09T01:22:09.121Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "BBC on Hurricane Isaias and its expected Gulf Coast landfall",
@@ -751,7 +861,9 @@
       "bucket": "Disaster",
       "summary": "BBC Weather's Chris Fawkes says the first hurricane of the 2026 Atlantic season could bring dangerous winds, storm surge and heavy rains to the Gulf Coast Friday.",
       "url": "https://www.bbc.co.uk/news/videos/ckz65l2gne1po?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-09T01:22:09.121Z"
+      "firstSeen": "2026-10-09T01:22:09.121Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "US deportations to African countries unlawful and exploit suffering, rights group says",
@@ -1642,6 +1754,16 @@
       "top": true,
       "bestRank": 36,
       "firstSeen": "2026-10-08T09:46:52.435Z"
+    },
+    {
+      "headline": "At October 7 Anniversary, Israelis Face an Election and an Unfinished Reckoning",
+      "date": "2026-10-07",
+      "bucket": "Politics",
+      "summary": "Reported by The Washington Post.",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZ3FaLU84TlVGVVllSFZzWmJGelUzT0NFSXRRLUdTU29wdkRQWDJZbmlRNXYycnk4NGkwLWhwaGlSdkFYZ0d1YmtxSDMxeEI3WTJPRDA0Rl9jbWRpeUNBeGY4czFyZVVNNFUtb2tuUlJrbjlrajVBdTE1VnpPcG9NTFN2elI1RklhcnhIcG1rUngtRncxZEM0S3M3YUpLSXVIS29hRV84UU93WFRGRTk5SzcySGI?oc=5",
+      "top": true,
+      "bestRank": 36,
+      "firstSeen": "2026-10-09T03:51:51.273Z"
     },
     {
       "headline": "Israel Unveils One of Hamas' Largest Tunnels in Gaza Strip",
@@ -3244,16 +3366,6 @@
       "summary": "British police said they had made a seventh arrest in a murky plot that may have targeted a U.K. airbase.",
       "url": "https://www.npr.org/2026/10/06/nx-s1-5992853/the-questions-swirling-around-a-u-k-base-and-possible-iranian-backed-attacks",
       "firstSeen": "2026-10-06T21:41:00.197Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Fort Hood shooter to be executed by firing squad, in first since World War Two",
-      "date": "2026-10-06",
-      "bucket": "Conflict",
-      "summary": "The execution of Nidal Malik Hasan will be the first military execution since 1961 and the first by firing squad since the end of World War Two.",
-      "url": "https://www.bbc.co.uk/news/articles/cq8ezkkkrpy1o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-09-18T15:39:11.991Z",
       "top": false,
       "bestRank": null
     },
