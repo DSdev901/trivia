@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-10-10T15:40:20.762Z",
+  "generatedAt": "2026-10-10T18:46:10.210Z",
   "retentionDays": 21,
   "windowStart": "2026-09-19",
   "windowEnd": "2026-10-10",
   "snapshotIntervalHours": 3,
-  "count": 2227,
+  "count": 2228,
   "items": [
     {
       "headline": "Panama struck by 2 powerful earthquakes, U.S. Geological Survey says",
@@ -148,6 +148,16 @@
       "firstSeen": "2026-10-10T15:40:20.762Z"
     },
     {
+      "headline": "Hurricane Simon and Tropical Storm Rachel will both slam into Mexico Saturday night",
+      "date": "2026-10-10",
+      "bucket": "Disaster",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcWJablM4MlJ5LUFJLXRPLThtTmhTTTRqdFJ3SDdtUFVDeUhTOU9WNnhUa2NoMXNPeUQzTnJJUnpoSkRsSkxmUFZaYkwzaGtHTi1lWGotdmRPdDFvelNXWDBxUGREM3daa0hpbVNXcDllQzJBUTRmNURJMVlVSXFGUmtBMUctRkpmeldocnByV2MzSW9vaW9MRVBvaTV2TXQ5MWJSLVZzejhHZw?oc=5",
+      "top": true,
+      "bestRank": 11,
+      "firstSeen": "2026-10-10T15:40:20.762Z"
+    },
+    {
       "headline": "Questions remain over Ebola patient who travelled across three nations undetected",
       "date": "2026-10-10",
       "bucket": "World",
@@ -165,16 +175,6 @@
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbTc2anRyaUVLUU5xSFlJT3RyWE84ZENwbHhRcFVWUW5OMW53c2NVSlJtendUTlREMk5sVjV6bWRrOE52ZU5UQXJQRFZuek93UzFtcnNwbEdvcjF4N2F2Q3J5Sm9rU01OWks3emItTndwVnhMa3NIUnIzMi1zdGN1c0N3Uk8wTFE5VGkwaVVSY3lQTlRLbVlBendaRnAwbE1TMUF6Y2R3?oc=5",
       "top": true,
       "bestRank": 13,
-      "firstSeen": "2026-10-10T15:40:20.762Z"
-    },
-    {
-      "headline": "Hurricane Simon and Tropical Storm Rachel will both slam into Mexico Saturday night",
-      "date": "2026-10-10",
-      "bucket": "Disaster",
-      "summary": "Reported by AP News.",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcWJablM4MlJ5LUFJLXRPLThtTmhTTTRqdFJ3SDdtUFVDeUhTOU9WNnhUa2NoMXNPeUQzTnJJUnpoSkRsSkxmUFZaYkwzaGtHTi1lWGotdmRPdDFvelNXWDBxUGREM3daa0hpbVNXcDllQzJBUTRmNURJMVlVSXFGUmtBMUctRkpmeldocnByV2MzSW9vaW9MRVBvaTV2TXQ5MWJSLVZzejhHZw?oc=5",
-      "top": true,
-      "bestRank": 15,
       "firstSeen": "2026-10-10T15:40:20.762Z"
     },
     {
@@ -278,14 +278,6 @@
       "bestRank": null
     },
     {
-      "headline": "Woman injures three people in third Poland school knife attack in a week",
-      "date": "2026-10-10",
-      "bucket": "World",
-      "summary": "Polish police had already deployed to schools after a female caretaker was killed and several others injured in two earlier attacks in two days.",
-      "url": "https://www.bbc.co.uk/news/articles/cv8ezd246z1wo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-10T15:40:20.762Z"
-    },
-    {
       "headline": "Saudi capital airport hit again, sparking evacuations, reports say",
       "date": "2026-10-10",
       "bucket": "World",
@@ -294,12 +286,40 @@
       "firstSeen": "2026-10-10T15:40:20.762Z"
     },
     {
+      "headline": "Several injured in attack on airport in Saudi capital Riyadh",
+      "date": "2026-10-10",
+      "bucket": "World",
+      "summary": "The US embassy says it is \"aware of attacks on King Khalid International Airport\", which come days after Yemen's Houthis said they had struck it.",
+      "url": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-10T18:46:10.210Z"
+    },
+    {
+      "headline": "Expedition hopes to find aviator Amelia Earhart's plane on remote island",
+      "date": "2026-10-10",
+      "bucket": "World",
+      "summary": "The team en route to the suspected crash site aim finally to solve the mystery of her 1937 disappearance.",
+      "url": "https://www.bbc.co.uk/news/articles/c3y0e871rk4vo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-10T18:46:10.210Z"
+    },
+    {
+      "headline": "Woman injures three people in third Poland school knife attack in a week",
+      "date": "2026-10-10",
+      "bucket": "World",
+      "summary": "Polish police had already deployed to schools after a female caretaker was killed and several others injured in two earlier attacks in two days.",
+      "url": "https://www.bbc.co.uk/news/articles/cv8ezd246z1wo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-10T15:40:20.762Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
       "headline": "Headmaster detained after BBC investigation into alleged sexual abuse of students",
       "date": "2026-10-10",
       "bucket": "World",
       "summary": "Former students launched their own investigation, spending years collecting evidence and testimonies from others who say they were abused by the headteacher.",
       "url": "https://www.bbc.co.uk/news/articles/cwy8lx1r2vrro?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-10T15:40:20.762Z"
+      "firstSeen": "2026-10-10T15:40:20.762Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Drone strike by Sudan paramilitary kills 41 near Ethiopian border, rights group says",
@@ -307,7 +327,9 @@
       "bucket": "World",
       "summary": "Eight children are said to be among those killed by the strike, which hit a gathering of displaced people.",
       "url": "https://www.bbc.co.uk/news/articles/c8vgx9ew571wo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-10T15:40:20.762Z"
+      "firstSeen": "2026-10-10T15:40:20.762Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Photos: What a year of ceasefire in Gaza looks like",
@@ -315,7 +337,9 @@
       "bucket": "Conflict",
       "summary": "It has been one year since Hamas released the remaining Israeli hostages and President Trump promised an end to the war, but Palestinians say the past 12 months have been a ceasefire in name only.",
       "url": "https://www.npr.org/sections/the-picture-show/2026/10/10/nx-s1-5991619/gaza-ceasefire-israel-life",
-      "firstSeen": "2026-10-10T15:40:20.762Z"
+      "firstSeen": "2026-10-10T15:40:20.762Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "'Cockroach' group leaders among hundreds detained in Delhi protest",
@@ -726,16 +750,6 @@
       "top": true,
       "bestRank": 10,
       "firstSeen": "2026-10-09T21:40:57.244Z"
-    },
-    {
-      "headline": "Hurricane Simon strengthens to a Category 2 storm, the National Hurricane Center says",
-      "date": "2026-10-09",
-      "bucket": "Disaster",
-      "summary": "Reported by AP News.",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT3k2RFFoX2ExOTE0Y0VNQ3hlRUVYaDRZOFNzT19YX3hmMzBYak9YUTdjdmVRUWlFSmVGMFB6clY4SkNSbXZUQ3BSZkhkcFdUdUdtRDJxX0RDM3ZpNFF3cXdsRmxScE15b2hqTTRUUjN0VUVMV09xczYzZmNnVExKTE5IQmlvU1FUZ0hEVW9iNmxNYmE2?oc=5",
-      "top": true,
-      "bestRank": 11,
-      "firstSeen": "2026-10-10T03:49:18.607Z"
     },
     {
       "headline": "Andy Burnham is lucky – Polanski, Farage and Badenoch all seem determined to help him | Jonathan Freedland",
