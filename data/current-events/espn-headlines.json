@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-10T01:08:34.824Z",
+  "generatedAt": "2026-10-10T03:38:17.386Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-19T01:08:34.824Z",
-  "windowEnd": "2026-10-10T01:08:34.824Z",
+  "windowStart": "2026-09-19T03:38:17.386Z",
+  "windowEnd": "2026-10-10T03:38:17.386Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,30 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4248,
+  "count": 4233,
   "items": [
+    {
+      "key": "50143665",
+      "id": "50143665",
+      "headline": "Igor Shesterkin helped off ice after fall in Rangers' loss",
+      "summary": "New York Rangers goaltender Igor Shesterkin, the 30-year-old Russian who won the 2022 Vezina Trophy as the league's top netminder, had to be helped off the ice after an awkward fall into his own net in a 3-1 loss to the Washington Capitals Friday night.",
+      "url": "https://www.espn.com/nhl/story/_/id/50143665/rangers-goaltender-igor-shesterkin-helped-ice-fall",
+      "sport": "NHL",
+      "published": "2026-10-10T03:20:30.000Z",
+      "firstSeen": "2026-10-10T01:08:34.824Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50143925",
+      "id": "50143925",
+      "headline": "Capitals beat Rangers 3-1 after New York goalie Igor Shesterkin is helped off the ice with an injury",
+      "summary": "— Boone Jenner scored the tiebreaking goal late in the second period and the Washington Capitals beat the Rangers 3-1 on Friday night after New York goaltender Igor Shesterkin was",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892466",
+      "sport": "NHL",
+      "published": "2026-10-10T03:13:27.000Z",
+      "firstSeen": "2026-10-10T03:38:17.386Z",
+      "bestRank": 6
+    },
     {
       "key": "50143689",
       "id": "50143689",
@@ -30,20 +52,284 @@
       "summary": "Tarik Skubal will start Game 1 of the NLCS for the Dodgers, followed by Yoshinobu Yamamoto in Game 2.",
       "url": "https://www.espn.com/mlb/story/_/id/50143689/dodgers-tarik-skubal-start-game-1-nlcs-vs-brewers-yoshinobu-yamamoto-game-2",
       "sport": "MLB",
-      "published": "2026-10-10T01:05:25.000Z",
+      "published": "2026-10-10T03:10:48.000Z",
       "firstSeen": "2026-10-10T01:08:34.824Z",
       "bestRank": 1
     },
     {
-      "key": "50143665",
-      "id": "50143665",
-      "headline": "Rangers goaltender Igor Shesterkin helped off ice after fall",
-      "summary": "New York Rangers goaltender Igor Shesterkin, the 30-year-old Russian who won the 2022 Vezina Trophy, had to be helped off the ice after an awkward fall into his own net against the Washington Capitals on Friday night at Capital One Arena.",
-      "url": "https://www.espn.com/nhl/story/_/id/50143665/rangers-goaltender-igor-shesterkin-helped-ice-fall",
-      "sport": "NHL",
-      "published": "2026-10-10T01:02:44.000Z",
-      "firstSeen": "2026-10-10T01:08:34.824Z",
+      "key": "49804332",
+      "id": "49804332",
+      "headline": "Fantasy football rankings for Week 5: IDP",
+      "summary": "Weekly fantasy football draft rankings for IDP leagues from Mike Clay, Tristan H. Cockcroft and Eric Moody.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804332/nfl-fantasy-football-rankings-2026-idp",
+      "sport": "NFL",
+      "published": "2026-10-10T03:03:12.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
       "bestRank": 1
+    },
+    {
+      "key": "49804233",
+      "id": "49804233",
+      "headline": "Fantasy football rankings for Week 5: Kicker",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804233/nfl-fantasy-football-rankings-2026-k-kicker",
+      "sport": "NFL",
+      "published": "2026-10-10T03:02:53.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804273",
+      "id": "49804273",
+      "headline": "Fantasy football rankings for Week 5: D/ST",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804273/nfl-fantasy-football-rankings-2026-dst-defense",
+      "sport": "NFL",
+      "published": "2026-10-10T03:02:34.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49804164",
+      "id": "49804164",
+      "headline": "Fantasy football rankings for Week 5: Tight end",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804164/nfl-fantasy-football-rankings-2026-te-tight-end",
+      "sport": "NFL",
+      "published": "2026-10-10T03:02:18.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49804068",
+      "id": "49804068",
+      "headline": "Fantasy football rankings for Week 5: Running back",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804068/nfl-fantasy-football-rankings-2026-rb-running-back",
+      "sport": "NFL",
+      "published": "2026-10-10T03:01:57.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49804022",
+      "id": "49804022",
+      "headline": "Fantasy football rankings for Week 5: Quarterback",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804022/nfl-fantasy-football-rankings-2026-qb-quarterback",
+      "sport": "NFL",
+      "published": "2026-10-10T03:01:40.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49803708",
+      "id": "49803708",
+      "headline": "Fantasy football flex and superflex rankings for Week 5",
+      "summary": "Trying to decide between a couple of closely ranked players this week? Eric Karabell's rankings are here to help.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49803708/fantasy-football-superflex-rankings-2026-qb-rb-wr-te",
+      "sport": "NFL",
+      "published": "2026-10-10T03:01:14.000Z",
+      "firstSeen": "2026-09-05T00:58:39.682Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49797082",
+      "id": "49797082",
+      "headline": "Fantasy football rankings Week 5: PPR and superflex",
+      "summary": "Weekly composite ranks for each position in PPR and IDP formats, as well as Eric Karabell's superflex ranks.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26main-49797082/fantasy-football-rankings-2026-qb-rb-wr-te-dst",
+      "sport": "NFL",
+      "published": "2026-10-10T02:59:32.000Z",
+      "firstSeen": "2026-09-04T18:29:30.987Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50144300",
+      "id": "50144300",
+      "headline": "Judd Caulfield scores first NHL goal to help the Ducks beat the Jets 5-1",
+      "summary": "— Rookie Judd Caulfield scored his first NHL goal and added an assist to help the Anaheim Ducks beat Winnipeg 5-1 on Friday night for the Jets' first regulation loss of the season.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892468",
+      "sport": "NHL",
+      "published": "2026-10-10T02:58:43.000Z",
+      "firstSeen": "2026-10-10T03:38:17.386Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50144244",
+      "id": "50144244",
+      "headline": "Memphis Grizzlies vs. Chicago Bulls: Game Highlights",
+      "summary": "Memphis Grizzlies vs. Chicago Bulls: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50144244/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-10T02:55:08.000Z",
+      "firstSeen": "2026-10-10T03:38:17.386Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50144241",
+      "id": "50144241",
+      "headline": "Anaheim Ducks vs. Winnipeg Jets: Game Highlights",
+      "summary": "Anaheim Ducks vs. Winnipeg Jets: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50144241/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-10T02:48:41.000Z",
+      "firstSeen": "2026-10-10T03:38:17.386Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50144146",
+      "id": "50144146",
+      "headline": "Blackhawks' Frank Nazar suspended 2 games for check to the head",
+      "summary": "Chicago Blackhawks forward Frank Nazar was suspended for two games without pay by the NHL on Friday night for an illegal check to the head of New York Islanders forward Bo Horvat on Thursday night.",
+      "url": "https://www.espn.com/nhl/story/_/id/50144146/blackhawks-frank-nazar-suspended-2-games-check-head",
+      "sport": "NHL",
+      "published": "2026-10-10T02:44:54.000Z",
+      "firstSeen": "2026-10-10T03:38:17.386Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49804149",
+      "id": "49804149",
+      "headline": "Fantasy football rankings for Week 5: Wide receiver",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804149/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
+      "sport": "NFL",
+      "published": "2026-10-10T02:41:55.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50142553",
+      "id": "50142553",
+      "headline": "Saquon Barkley, DeVonta Smith among Eagles ruled out vs. Jaguars",
+      "summary": "Eagles running back Saquon Barkley, receiver DeVonta Smith, new starting center Drew Kendall, safety Marcus Epps and receiver Hollywood Brown were all ruled out for Sunday's game in London against the Jaguars.",
+      "url": "https://www.espn.com/nfl/story/_/id/50142553/saquon-barkley-devonta-smith-eagles-players-ruled-london-game-vs-jaguars",
+      "sport": "NFL",
+      "published": "2026-10-10T02:31:08.000Z",
+      "firstSeen": "2026-10-09T21:28:17.260Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50144041",
+      "id": "50144041",
+      "headline": "Kent Johnson scores lone goal in shootout to give Blue Jackets 3-2 win over Penguins",
+      "summary": "— Kent Johnson scored the only goal in a shootout to lift the Columbus Blue Jackets over the Pittsburgh Penguins 3-2 on Friday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892467",
+      "sport": "NHL",
+      "published": "2026-10-10T02:20:28.000Z",
+      "firstSeen": "2026-10-10T03:38:17.386Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50143929",
+      "id": "50143929",
+      "headline": "New York Rangers vs. Washington Capitals: Game Highlights",
+      "summary": "New York Rangers vs. Washington Capitals: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50143929/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-10T02:07:00.000Z",
+      "firstSeen": "2026-10-10T03:38:17.386Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50143918",
+      "id": "50143918",
+      "headline": "Pittsburgh Penguins vs. Columbus Blue Jackets: Game Highlights",
+      "summary": "Pittsburgh Penguins vs. Columbus Blue Jackets: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50143918/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-10T02:04:06.000Z",
+      "firstSeen": "2026-10-10T03:38:17.386Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49860363",
+      "id": "49860363",
+      "headline": "WNBA offseason 2026: Guides for every eliminated team",
+      "summary": "We're breaking down the biggest questions and offseason needs for every team eliminated in the 2026 WNBA playoffs.",
+      "url": "https://www.espn.com/wnba/story/_/id/49860363/wnba-offseason-2026-playoffs-eliminated-teams-draft-trade-free-agency-guides",
+      "sport": "WNBA",
+      "published": "2026-10-10T01:57:38.000Z",
+      "firstSeen": "2026-09-10T15:27:19.888Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50143882",
+      "id": "50143882",
+      "headline": "Reese, Howard help the Dream sweep Liberty and advance to WNBA Finals for first time since 2013",
+      "summary": "— Angel Reese scored 22 points, Rhyne Howard added 21 and the Atlanta Dream beat the New York Liberty 85-83 on Friday night to advance to the WNBA Finals for the first time since 2013.",
+      "url": "http://www.espn.com/wnba/recap?gameId=401918299",
+      "sport": "WNBA",
+      "published": "2026-10-10T01:54:28.000Z",
+      "firstSeen": "2026-10-10T03:38:17.386Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49882118",
+      "id": "49882118",
+      "headline": "WNBA playoffs 2026: Schedule, scores for every game",
+      "summary": "The first round of the 2026 WNBA playoffs opens on Sept. 27. The semifinals tip Oct. 4 and the Finals open Oct. 17.",
+      "url": "https://www.espn.com/wnba/story/_/id/49882118/wnba-playoffs-2026-schedule-games-first-round-semifinals-finals-scores-results-news-highlights",
+      "sport": "WNBA",
+      "published": "2026-10-10T01:52:44.000Z",
+      "firstSeen": "2026-09-09T21:23:12.453Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50143850",
+      "id": "50143850",
+      "headline": "Gaudreau scores twice in 4-goal 2nd period as Kraken beat Red Wings 6-3",
+      "summary": "— Frederick Gaudreau scored twice, Ben Myers had a goal and two assists and the Seattle Kraken had a four-goal second period in a 6-3 victory over the Detroit Red Wings on Friday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892465",
+      "sport": "NHL",
+      "published": "2026-10-10T01:47:28.000Z",
+      "firstSeen": "2026-10-10T03:38:17.386Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50143842",
+      "id": "50143842",
+      "headline": "Seattle Kraken vs. Detroit Red Wings: Game Highlights",
+      "summary": "Seattle Kraken vs. Detroit Red Wings: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50143842/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-10T01:43:52.000Z",
+      "firstSeen": "2026-10-10T03:38:17.386Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50143313",
+      "id": "50143313",
+      "headline": "Defenseman Matt Dumba, 32, retires after 13 NHL seasons",
+      "summary": "Matt Dumba, the 32-year-old defenseman who won the 2020 King Clancy Memorial Trophy, given to the player who best exemplified leadership qualities on and off the ice, is retiring after 13 NHL seasons with five different teams.",
+      "url": "https://www.espn.com/nhl/story/_/id/50143313/defenseman-matt-dumba-32-retires-13-nhl-seasons",
+      "sport": "NHL",
+      "published": "2026-10-10T01:34:36.000Z",
+      "firstSeen": "2026-10-10T01:08:34.824Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50131268",
+      "id": "50131268",
+      "headline": "Jo Adell and Jose Ramirez star as the Guardians beat the White Sox 9-3 to avoid elimination",
+      "summary": "- Jo Adell and Jose Ramirez powered Cleveland with a pair of two-out triples, and the Guardians avoided an AL Division Series sweep by cooling off the Chicago White Sox with a 9-3 victory in Game 3 on Wednesday.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401907992",
+      "sport": "MLB",
+      "published": "2026-10-10T01:30:50.000Z",
+      "firstSeen": "2026-10-08T09:35:54.034Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50116111",
+      "id": "50116111",
+      "headline": "Fantasy football Week 5 inactives: Kyle Monangai, Lamar Jackson out",
+      "summary": "Updated inactives and analysis based on the latest reports and official announcements leading up to kickoff.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50116111/fantasy-football-injuries-nfl-week-5-inactive-active",
+      "sport": "NFL",
+      "published": "2026-10-10T01:25:41.000Z",
+      "firstSeen": "2026-10-10T01:08:34.824Z",
+      "bestRank": 2
     },
     {
       "key": "50143662",
@@ -68,17 +354,6 @@
       "bestRank": 2
     },
     {
-      "key": "50116111",
-      "id": "50116111",
-      "headline": "Fantasy football Week 5 inactives: Kyle Monangai, Lamar Jackson out",
-      "summary": "Updated inactives and analysis based on the latest reports and official announcements leading up to kickoff.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50116111/fantasy-football-injuries-nfl-week-5-inactive-active",
-      "sport": "NFL",
-      "published": "2026-10-10T00:54:30.000Z",
-      "firstSeen": "2026-10-10T01:08:34.824Z",
-      "bestRank": 2
-    },
-    {
       "key": "50142757",
       "id": "50142757",
       "headline": "Broncos OC Davis Webb says 'not ideal' to lose playcalling duties",
@@ -86,28 +361,6 @@
       "url": "https://www.espn.com/nfl/story/_/id/50142757/broncos-oc-davis-webb-says-not-ideal-lose-play-calling-duties",
       "sport": "NFL",
       "published": "2026-10-10T00:50:57.000Z",
-      "firstSeen": "2026-10-09T21:28:17.260Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50143313",
-      "id": "50143313",
-      "headline": "Defenseman Matt Dumba, 32, retires after 13 NHL seasons",
-      "summary": "Matt Dumba, the 32-year-old defenseman who won the 2020 King Clancy Memorial Trophy, given to the player who best exemplified leadership qualities on and off the ice, is retiring after 13 NHL seasons with five different teams.",
-      "url": "https://www.espn.com/nhl/story/_/id/50143313/defenseman-matt-dumba-32-retires-13-nhl-seasons",
-      "sport": "NHL",
-      "published": "2026-10-10T00:26:55.000Z",
-      "firstSeen": "2026-10-10T01:08:34.824Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50142513",
-      "id": "50142513",
-      "headline": "Trump will not attend Georgia-Alabama game due to Hurricane Isaias",
-      "summary": "President Trump will no longer attend Saturday's SEC clash between Georgia and Alabama, which remains on schedule despite approaching Hurricane Isaias.",
-      "url": "https://www.espn.com/college-football/story/_/id/50142513/trump-not-attend-georgia-alabama-game-due-hurricane-isaias",
-      "sport": "College football",
-      "published": "2026-10-10T00:25:03.000Z",
       "firstSeen": "2026-10-09T21:28:17.260Z",
       "bestRank": 1
     },
@@ -197,7 +450,7 @@
       "sport": "College football",
       "published": "2026-10-09T22:55:02.000Z",
       "firstSeen": "2026-10-10T01:08:34.824Z",
-      "bestRank": 2
+      "bestRank": 1
     },
     {
       "key": "50143206",
@@ -208,7 +461,7 @@
       "sport": "College football",
       "published": "2026-10-09T22:49:54.000Z",
       "firstSeen": "2026-10-10T01:08:34.824Z",
-      "bestRank": 3
+      "bestRank": 2
     },
     {
       "key": "50142371",
@@ -216,7 +469,7 @@
       "headline": "Reports - Watchdog eyes NIL violations at 5-10 Power 4 schools",
       "summary": "The College Sports Commission is looking into possible rules violations at between five and 10 Power 4 schools regarding payments to players, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/50142371/reports-watchdog-eyes-nil-violations-5-10-power-4-schools",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-09T22:48:19.000Z",
       "firstSeen": "2026-10-09T21:28:17.260Z",
       "bestRank": 1
@@ -252,7 +505,7 @@
       "sport": "College football",
       "published": "2026-10-09T22:25:22.000Z",
       "firstSeen": "2026-10-10T01:08:34.824Z",
-      "bestRank": 4
+      "bestRank": 3
     },
     {
       "key": "50134847",
@@ -329,7 +582,7 @@
       "sport": "College football",
       "published": "2026-10-09T21:54:19.000Z",
       "firstSeen": "2026-10-10T01:08:34.824Z",
-      "bestRank": 5
+      "bestRank": 4
     },
     {
       "key": "40699880",
@@ -384,7 +637,7 @@
       "sport": "College football",
       "published": "2026-10-09T21:49:10.000Z",
       "firstSeen": "2026-10-10T01:08:34.824Z",
-      "bestRank": 7
+      "bestRank": 6
     },
     {
       "key": "50142972",
@@ -395,7 +648,7 @@
       "sport": "College football",
       "published": "2026-10-09T21:47:18.000Z",
       "firstSeen": "2026-10-10T01:08:34.824Z",
-      "bestRank": 6
+      "bestRank": 5
     },
     {
       "key": "50142927",
@@ -417,7 +670,7 @@
       "sport": "College football",
       "published": "2026-10-09T21:35:40.000Z",
       "firstSeen": "2026-10-10T01:08:34.824Z",
-      "bestRank": 8
+      "bestRank": 7
     },
     {
       "key": "50142912",
@@ -428,7 +681,7 @@
       "sport": "College football",
       "published": "2026-10-09T21:34:43.000Z",
       "firstSeen": "2026-10-10T01:08:34.824Z",
-      "bestRank": 9
+      "bestRank": 8
     },
     {
       "key": "50138310",
@@ -462,6 +715,17 @@
       "published": "2026-10-09T21:30:09.000Z",
       "firstSeen": "2026-10-10T01:08:34.824Z",
       "bestRank": 7
+    },
+    {
+      "key": "50142513",
+      "id": "50142513",
+      "headline": "Trump will not attend Georgia-Alabama game due to Hurricane Isaias",
+      "summary": "President Trump will no longer attend Saturday's SEC clash between Georgia and Alabama, which remains on schedule despite approaching Hurricane Isaias.",
+      "url": "https://www.espn.com/college-football/story/_/id/50142513/trump-not-attend-georgia-alabama-game-due-hurricane-isaias",
+      "sport": "College football",
+      "published": "2026-10-09T21:21:28.000Z",
+      "firstSeen": "2026-10-09T21:28:17.260Z",
+      "bestRank": 1
     },
     {
       "key": "50142587",
@@ -517,17 +781,6 @@
       "published": "2026-10-09T20:56:57.000Z",
       "firstSeen": "2026-10-09T15:29:39.177Z",
       "bestRank": 2
-    },
-    {
-      "key": "50142553",
-      "id": "50142553",
-      "headline": "Saquon Barkley, DeVonta Smith among Eagles ruled out vs. Jaguars",
-      "summary": "Eagles running back Saquon Barkley, receiver DeVonta Smith, new starting center Drew Kendall, safety Marcus Epps and receiver Hollywood Brown were all ruled out for Sunday's game in London against the Jaguars.",
-      "url": "https://www.espn.com/nfl/story/_/id/50142553/saquon-barkley-devonta-smith-eagles-players-ruled-london-game-vs-jaguars",
-      "sport": "NFL",
-      "published": "2026-10-09T20:56:39.000Z",
-      "firstSeen": "2026-10-09T21:28:17.260Z",
-      "bestRank": 4
     },
     {
       "key": "50142595",
@@ -1003,17 +1256,6 @@
       "bestRank": 1
     },
     {
-      "key": "49882118",
-      "id": "49882118",
-      "headline": "WNBA playoffs 2026: Schedule, scores for every game",
-      "summary": "The first round of the 2026 WNBA playoffs opens on Sept. 27. The semifinals tip Oct. 4 and the Finals open Oct. 17.",
-      "url": "https://www.espn.com/wnba/story/_/id/49882118/wnba-playoffs-2026-schedule-games-first-round-semifinals-finals-scores-results-news-highlights",
-      "sport": "WNBA",
-      "published": "2026-10-09T16:06:09.000Z",
-      "firstSeen": "2026-09-09T21:23:12.453Z",
-      "bestRank": 1
-    },
-    {
       "key": "50133135",
       "id": "50133135",
       "headline": "Connelly Week 6 preview: Things get real with SEC, Big Ten showdowns",
@@ -1300,94 +1542,6 @@
       "bestRank": 6
     },
     {
-      "key": "49803708",
-      "id": "49803708",
-      "headline": "Fantasy football flex and superflex rankings for Week 5",
-      "summary": "Trying to decide between a couple of closely ranked players this week? Eric Karabell's rankings are here to help.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49803708/fantasy-football-superflex-rankings-2026-qb-rb-wr-te",
-      "sport": "NFL",
-      "published": "2026-10-09T14:05:56.000Z",
-      "firstSeen": "2026-09-05T00:58:39.682Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804332",
-      "id": "49804332",
-      "headline": "Fantasy football rankings for Week 5: IDP",
-      "summary": "Weekly fantasy football draft rankings for IDP leagues from Mike Clay, Tristan H. Cockcroft and Eric Moody.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804332/nfl-fantasy-football-rankings-2026-idp",
-      "sport": "NFL",
-      "published": "2026-10-09T14:03:09.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49804233",
-      "id": "49804233",
-      "headline": "Fantasy football rankings for Week 5: Kicker",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804233/nfl-fantasy-football-rankings-2026-k-kicker",
-      "sport": "NFL",
-      "published": "2026-10-09T14:02:52.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804273",
-      "id": "49804273",
-      "headline": "Fantasy football rankings for Week 5: D/ST",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804273/nfl-fantasy-football-rankings-2026-dst-defense",
-      "sport": "NFL",
-      "published": "2026-10-09T14:02:33.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49804164",
-      "id": "49804164",
-      "headline": "Fantasy football rankings for Week 5: Tight end",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804164/nfl-fantasy-football-rankings-2026-te-tight-end",
-      "sport": "NFL",
-      "published": "2026-10-09T14:02:10.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49804149",
-      "id": "49804149",
-      "headline": "Fantasy football rankings for Week 5: Wide receiver",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804149/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
-      "sport": "NFL",
-      "published": "2026-10-09T14:01:37.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804022",
-      "id": "49804022",
-      "headline": "Fantasy football rankings for Week 5: Quarterback",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804022/nfl-fantasy-football-rankings-2026-qb-quarterback",
-      "sport": "NFL",
-      "published": "2026-10-09T14:01:07.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49797082",
-      "id": "49797082",
-      "headline": "Fantasy football rankings Week 5: PPR and superflex",
-      "summary": "Weekly composite ranks for each position in PPR and IDP formats, as well as Eric Karabell's superflex ranks.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26main-49797082/fantasy-football-rankings-2026-qb-rb-wr-te-dst",
-      "sport": "NFL",
-      "published": "2026-10-09T14:00:42.000Z",
-      "firstSeen": "2026-09-04T18:29:30.987Z",
-      "bestRank": 1
-    },
-    {
       "key": "50135296",
       "id": "50135296",
       "headline": "The game that put Peyton Hillis in the ESPN Fantasy Football Hall of Fame",
@@ -1397,17 +1551,6 @@
       "published": "2026-10-09T14:00:00.000Z",
       "firstSeen": "2026-10-09T15:29:39.177Z",
       "bestRank": 15
-    },
-    {
-      "key": "49804068",
-      "id": "49804068",
-      "headline": "Fantasy football rankings for Week 5: Running back",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804068/nfl-fantasy-football-rankings-2026-rb-running-back",
-      "sport": "NFL",
-      "published": "2026-10-09T13:59:27.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 4
     },
     {
       "key": "50138557",
@@ -3406,7 +3549,7 @@
       "headline": "Big Ten has '18 strong members,' no expansion talks, commish says",
       "summary": "Big Ten commissioner Tony Petitti said the conference has had \"absolutely no discussions taking place around expansion, and there haven't been for quite some time.\"",
       "url": "https://www.espn.com/college-sports/story/_/id/50133579/big-ten-18-strong-members-no-expansion-talks-commish-says",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-08T17:09:12.000Z",
       "firstSeen": "2026-10-08T18:37:03.521Z",
       "bestRank": 1
@@ -4389,17 +4532,6 @@
       "published": "2026-10-08T07:59:23.000Z",
       "firstSeen": "2026-10-08T09:35:54.034Z",
       "bestRank": 4
-    },
-    {
-      "key": "50131268",
-      "id": "50131268",
-      "headline": "Jo Adell and Jos  Ram rez star as the Guardians beat the White Sox 9-3 to avoid elimination",
-      "summary": "— Jo Adell and Jos  Ram rez powered Cleveland with a pair of two-out triples, and the Guardians avoided an AL Division Series sweep by cooling off the Chicago White Sox with a 9-3 victory in Game 3 on Wednesday.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401907992",
-      "sport": "MLB",
-      "published": "2026-10-08T07:58:43.000Z",
-      "firstSeen": "2026-10-08T09:35:54.034Z",
-      "bestRank": 5
     },
     {
       "key": "50131187",
@@ -5771,7 +5903,7 @@
       "headline": "NCAA proposes summer competition for college basketball teams",
       "summary": "The NCAA is proposing allowing summer competition between college basketball teams as a potential new revenue source.",
       "url": "https://www.espn.com/college-sports/story/_/id/50119590/ncaa-proposes-summer-competition-college-basketball-teams",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-07T13:45:31.000Z",
       "firstSeen": "2026-10-06T21:27:55.074Z",
       "bestRank": 1
@@ -7135,7 +7267,7 @@
       "headline": "Commissioner touts ACC's health amid questions of departures",
       "summary": "ACC boss Jim Phillips isn't fretting about Clemson, FSU, Miami and UNC wanting to tweak the Protect College Sports Act to make it easier for schools to change leagues.",
       "url": "https://www.espn.com/college-sports/story/_/id/50118608/commissioner-touts-acc-health-amid-questions-departures",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-06T20:07:46.000Z",
       "firstSeen": "2026-10-06T21:27:55.074Z",
       "bestRank": 1
@@ -9390,7 +9522,7 @@
       "headline": "College basketball realignment: Conference changes for 2026-27",
       "summary": "A complete list of college basketball conference membership for the 2026-27 season.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49973549/college-basketball-conference-changes-realignment",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-05T17:29:52.000Z",
       "firstSeen": "2026-09-30T15:32:20.020Z",
       "bestRank": 1
@@ -15281,17 +15413,6 @@
       "bestRank": 4
     },
     {
-      "key": "49860363",
-      "id": "49860363",
-      "headline": "WNBA offseason 2026: Guides for every eliminated team",
-      "summary": "We're breaking down the biggest questions and offseason needs for every team eliminated in the 2026 WNBA playoffs.",
-      "url": "https://www.espn.com/wnba/story/_/id/49860363/wnba-offseason-2026-playoffs-eliminated-teams-draft-trade-free-agency-guides",
-      "sport": "WNBA",
-      "published": "2026-10-03T04:12:58.000Z",
-      "firstSeen": "2026-09-10T15:27:19.888Z",
-      "bestRank": 6
-    },
-    {
       "key": "50088315",
       "id": "50088315",
       "headline": "Caleb Komolafe stars as Northwestern rushes past Penn State 34-13 in 1st game at Ryan Field",
@@ -16661,7 +16782,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "With a month to go until the 2026-27 season begins, we check in on the NCAA's player eligibility cases -- and LSU.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-02T11:13:23.000Z",
       "firstSeen": "2026-10-02T12:41:58.213Z",
       "bestRank": 1
@@ -17387,7 +17508,7 @@
       "headline": "Student-athletes received $1.77B in revenue-sharing pay in '25-26",
       "summary": "Sixty-eight schools reached or came within 5% of reaching the $20.5 million revenue-sharing cap over the first season of NIL payments.",
       "url": "https://www.espn.com/college-sports/story/_/id/50080194/student-athletes-received-177b-revenue-sharing-pay-25-26",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-02T00:21:41.000Z",
       "firstSeen": "2026-10-02T03:34:46.329Z",
       "bestRank": 1
@@ -18069,7 +18190,7 @@
       "headline": "NCAA reducing fields for NIT, WBIT to 24 teams starting in 2027",
       "summary": "In the aftermath of the NCAA tournaments expanding to 76 teams starting this season, the NIT and Women's Basketball Invitation Tournament will drop from 32 teams to 24 beginning in 2027, the NCAA announced.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50077597/ncaa-reducing-fields-nit-wbit-24-teams-starting-2027",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-01T17:19:11.000Z",
       "firstSeen": "2026-10-01T18:36:52.245Z",
       "bestRank": 1
@@ -21732,7 +21853,7 @@
       "headline": "U.S. Senate votes 77-22 to pass Protect College Sports Act",
       "summary": "The Protect College Sports Act, a federal bill aimed at reshaping the industry, took a step toward to becoming law Monday when the U.S. Senate voted 77-22 to pass it, with Ted Cruz saying, \"This bill puts an end to the chaos plaguing college athletics.\"",
       "url": "https://www.espn.com/college-sports/story/_/id/50056206/us-senate-votes-77-22-pass-protect-college-sports-act",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-29T13:37:08.000Z",
       "firstSeen": "2026-09-29T03:35:26.425Z",
       "bestRank": 1
@@ -23107,7 +23228,7 @@
       "headline": "Alabama agrees to 2-year extension, raise with AD Greg Byrne",
       "summary": "Alabama and athletic director Greg Byrne have agreed to a revised two-year contract extension that will pay him an average annual base salary of $2.67 million through June 30, 2033.",
       "url": "https://www.espn.com/college-sports/story/_/id/50053965/alabama-agrees-two-year-extension-raise-ad-greg-byrne",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-28T19:49:27.000Z",
       "firstSeen": "2026-09-28T21:26:45.780Z",
       "bestRank": 1
@@ -23437,7 +23558,7 @@
       "headline": "Big Ten basketball adopts rule preventing pros from returning",
       "summary": "The Big Ten Conference has adopted a rule to prohibit men's and women's basketball players who left school to play professionally from maintaining their eligibility.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50053258/big-ten-basketball-adopts-rule-preventing-pros-returning",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-09-28T17:28:04.000Z",
       "firstSeen": "2026-09-28T18:35:51.463Z",
       "bestRank": 1
@@ -46464,292 +46585,6 @@
       "published": "2026-09-19T03:50:29.000Z",
       "firstSeen": "2026-09-19T06:38:59.445Z",
       "bestRank": 18
-    },
-    {
-      "key": "49976704",
-      "id": "49976704",
-      "headline": "Seattle Mariners vs. Colorado Rockies: Game Highlights",
-      "summary": "Seattle Mariners vs. Colorado Rockies: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49976704/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-19T03:38:14.000Z",
-      "firstSeen": "2026-09-19T06:38:59.445Z",
-      "bestRank": 15
-    },
-    {
-      "key": "49976630",
-      "id": "49976630",
-      "headline": "Braves punch playoff ticket as Harris, Acuña and Olson launch 2-run homers in 6-2 win over Astros",
-      "summary": "— Michael Harris II, Ronald Acuña Jr. and Matt Olson each hit a two-run homer as the Atlanta Braves clinched a playoff berth with a 6-2 victory over the Houston Astros on Friday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816988",
-      "sport": "MLB",
-      "published": "2026-09-19T03:37:29.000Z",
-      "firstSeen": "2026-09-19T06:38:59.445Z",
-      "bestRank": 20
-    },
-    {
-      "key": "49976724",
-      "id": "49976724",
-      "headline": "Darian Mensah, Miami take down Wake Forest 33-20",
-      "summary": "Darian Mensah, Miami take down Wake Forest 33-20",
-      "url": "https://www.espn.com/video/clip/_/id/49976724/darian-mensah-miami-take-wake-forest-33-20",
-      "sport": "College football",
-      "published": "2026-09-19T03:29:52.000Z",
-      "firstSeen": "2026-09-19T06:38:59.445Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49976529",
-      "id": "49976529",
-      "headline": "Milwaukee Brewers vs. Baltimore Orioles: Game Highlights",
-      "summary": "Milwaukee Brewers vs. Baltimore Orioles: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49976529/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-19T03:28:42.000Z",
-      "firstSeen": "2026-09-19T06:38:59.445Z",
-      "bestRank": 23
-    },
-    {
-      "key": "49976656",
-      "id": "49976656",
-      "headline": "Washington Nationals vs. St. Louis Cardinals: Game Highlights",
-      "summary": "Washington Nationals vs. St. Louis Cardinals: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49976656/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-19T03:22:19.000Z",
-      "firstSeen": "2026-09-19T06:38:59.445Z",
-      "bestRank": 17
-    },
-    {
-      "key": "49976625",
-      "id": "49976625",
-      "headline": "Detroit Tigers vs. Chicago White Sox: Game Highlights",
-      "summary": "Detroit Tigers vs. Chicago White Sox: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49976625/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-19T03:18:10.000Z",
-      "firstSeen": "2026-09-19T06:38:59.445Z",
-      "bestRank": 21
-    },
-    {
-      "key": "49976641",
-      "id": "49976641",
-      "headline": "CJ Abrams joins 30-30 club as Nationals rout Cardinals 9-1",
-      "summary": "— CJ Abrams became the 52nd player to join the 30-30 club, Cade Cavalli threw his 200th strikeout of the year, and the Washington Nationals took down the St. Louis Cardinals 9-1 on Friday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816991",
-      "sport": "MLB",
-      "published": "2026-09-19T03:11:30.000Z",
-      "firstSeen": "2026-09-19T06:38:59.445Z",
-      "bestRank": 19
-    },
-    {
-      "key": "49976218",
-      "id": "49976218",
-      "headline": "José Ramírez homers, reaches 1,000 RBIs as Guardians down A's 5-3, move into first alone in Central",
-      "summary": "— José Ramírez and rookie Travis Bazzana homered and Joey Cantillo pitched six scoreless innings as the Cleveland Guardians rallied to beat the Athletics 5-3 on Friday night and moved one game ahead of Chicago in the AL Central.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816982",
-      "sport": "MLB",
-      "published": "2026-09-19T03:03:35.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 10
-    },
-    {
-      "key": "49976537",
-      "id": "49976537",
-      "headline": "Chourio's homer and Frelick's RBI single in 10th carry Brewers past Orioles 6-5",
-      "summary": "— Jackson Chourio hit a three-run homer, Sal Frelick singled in the go-ahead run in the 10th inning and the surging Milwaukee Brewers beat the Baltimore Orioles 6-5 on Friday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816986",
-      "sport": "MLB",
-      "published": "2026-09-19T02:58:33.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49976527",
-      "id": "49976527",
-      "headline": "Atlanta Braves vs. Houston Astros: Game Highlights",
-      "summary": "Atlanta Braves vs. Houston Astros: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49976527/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-19T02:58:08.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49976254",
-      "id": "49976254",
-      "headline": "Athletics vs. Cleveland Guardians: Game Highlights",
-      "summary": "Athletics vs. Cleveland Guardians: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49976254/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-19T02:57:23.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 8
-    },
-    {
-      "key": "49975015",
-      "id": "49975015",
-      "headline": "FBI case against fake 49ers player adds more alleged victims",
-      "summary": "The FBI has identified 35 additional women who say they were defrauded by Daejon Love and Taylor Chan, bringing the total number of alleged victims in a case that included Love impersonating as a 49ers player to more than 60.",
-      "url": "https://www.espn.com/nfl/story/_/id/49975015/fbi-case-fake-49ers-player-adds-more-alleged-victims",
-      "sport": "NFL",
-      "published": "2026-09-19T02:51:33.000Z",
-      "firstSeen": "2026-09-18T21:24:18.650Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49976245",
-      "id": "49976245",
-      "headline": "Teenager Julian Hall scores lone goal in Red Bulls' victory over NYCFC",
-      "summary": "Julian Hall scored early in the second half and keeper Ethan Horvath was never tested for the New York Red Bulls in a 1-0 victory over New York City FC on Friday night at Yankee Stadium.",
-      "url": "http://www.espn.com/soccer/report/_/gameId/761815",
-      "sport": "Soccer",
-      "published": "2026-09-19T02:41:23.000Z",
-      "firstSeen": "2026-09-19T06:38:59.445Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49976325",
-      "id": "49976325",
-      "headline": "Boston Red Sox vs. Tampa Bay Rays: Game Highlights",
-      "summary": "Boston Red Sox vs. Tampa Bay Rays: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49976325/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-19T02:36:26.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49976344",
-      "id": "49976344",
-      "headline": "Boston Red Sox vs. Tampa Bay Rays: Game Highlights",
-      "summary": "Boston Red Sox vs. Tampa Bay Rays: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49976344/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-19T02:27:30.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49976392",
-      "id": "49976392",
-      "headline": "Red Sox beat Rays 4-2 to close in on playoff spot",
-      "summary": "— Roman Anthony homered and drove in three runs and the Boston Red Sox took a big step toward clinching an American League playoff spot with a 4-2 victory over the Tampa Bay Rays on Friday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816983",
-      "sport": "MLB",
-      "published": "2026-09-19T02:22:30.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49976386",
-      "id": "49976386",
-      "headline": "The Liberty beat the Lynx 93-81 as Breanna Stewart posts 24 points and 10 rebounds",
-      "summary": "— Breanna Stewart scored 24 points and grabbed 10 rebounds, Jonquel Jones had 18 points and 10 rebounds, and the New York Liberty beat the slumping Minnesota Lynx 93-81 on Friday night in a possible first-round playoff matchup.",
-      "url": "http://www.espn.com/wnba/recap?gameId=401857196",
-      "sport": "WNBA",
-      "published": "2026-09-19T02:18:31.000Z",
-      "firstSeen": "2026-09-19T06:38:59.445Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49976287",
-      "id": "49976287",
-      "headline": "Philadelphia Phillies vs. New York Mets: Game Highlights",
-      "summary": "Philadelphia Phillies vs. New York Mets: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49976287/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-19T02:04:44.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49976232",
-      "id": "49976232",
-      "headline": "Toronto Tempo vs. Indiana Fever - Game Highlights",
-      "summary": "Watch the Game Highlights from Toronto Tempo vs. Indiana Fever, 09/18/2026",
-      "url": "https://www.espn.com/video/clip/_/id/49976232/toronto-tempo-vs-indiana-fever-game-highlights",
-      "sport": "WNBA",
-      "published": "2026-09-19T01:52:47.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49976215",
-      "id": "49976215",
-      "headline": "Marty Smith previews boiling emotions in No. 7 LSU at No. 8 Ole Miss",
-      "summary": "ESPN's Smith joins The Paul Finebaum Show to discuss the buzz around Oxford ahead of Lane Kiffin's return.",
-      "url": "https://www.espn.com/video/clip/_/id/49976215/marty-smith-previews-boiling-emotions-no-7-lsu-no-8-ole-miss",
-      "sport": "College football",
-      "published": "2026-09-19T01:49:27.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49975999",
-      "id": "49975999",
-      "headline": "Ohtani makes 'productive' swing progression, but no live pitching yet",
-      "summary": "Shohei Ohtani is progressing with his swing while on the injured list, but he hasn't faced pitching yet.",
-      "url": "https://www.espn.com/mlb/story/_/id/49975999/ohtani-makes-productive-swing-progress-il-no-live-pitching-yet",
-      "sport": "MLB",
-      "published": "2026-09-19T01:49:04.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 14
-    },
-    {
-      "key": "49976187",
-      "id": "49976187",
-      "headline": "New York City FC vs. New York Red Bulls - Game Highlights",
-      "summary": "Watch the Game Highlights from New York City FC vs. New York Red Bulls, 09/18/2026",
-      "url": "https://www.espn.com/video/clip/_/id/49976187/new-york-city-fc-vs-new-york-red-bulls-game-highlights",
-      "sport": "Soccer",
-      "published": "2026-09-19T01:48:18.000Z",
-      "firstSeen": "2026-09-19T06:38:59.445Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49976216",
-      "id": "49976216",
-      "headline": "Minnesota Lynx vs. New York Liberty - Game Highlights",
-      "summary": "Watch the Game Highlights from Minnesota Lynx vs. New York Liberty, 09/18/2026",
-      "url": "https://www.espn.com/video/clip/_/id/49976216/minnesota-lynx-vs-new-york-liberty-game-highlights",
-      "sport": "WNBA",
-      "published": "2026-09-19T01:48:16.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49976156",
-      "id": "49976156",
-      "headline": "Kansas City Royals vs. Pittsburgh Pirates: Game Highlights",
-      "summary": "Kansas City Royals vs. Pittsburgh Pirates: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49976156/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-19T01:35:51.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49976157",
-      "id": "49976157",
-      "headline": "Konnor Griffin has 4 hits as the Pirates rally past the Royals to reach .500",
-      "summary": "— Rookie shortstop Konnor Griffin had four hits, Brandon Lowe hit his 32nd homer and the Pittsburgh Pirates surged past the Kansas City Royals 8-5 on Friday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401816985",
-      "sport": "MLB",
-      "published": "2026-09-19T01:31:31.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 11
-    },
-    {
-      "key": "49976143",
-      "id": "49976143",
-      "headline": "Chicago Cubs vs. Cincinnati Reds: Game Highlights",
-      "summary": "Chicago Cubs vs. Cincinnati Reds: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/49976143/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-19T01:26:27.000Z",
-      "firstSeen": "2026-09-19T03:30:40.057Z",
-      "bestRank": 13
     }
   ]
 }
