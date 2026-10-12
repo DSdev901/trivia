@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-12T03:48:14.761Z",
+  "generatedAt": "2026-10-12T07:06:32.684Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-21T03:48:14.761Z",
-  "windowEnd": "2026-10-12T03:48:14.761Z",
+  "windowStart": "2026-09-21T07:06:32.684Z",
+  "windowEnd": "2026-10-12T07:06:32.684Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,17 +21,83 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4222,
+  "count": 4214,
   "items": [
     {
-      "key": "50163672",
-      "id": "50163672",
-      "headline": "Mike Evans stars in 49ers' win: 'Exactly why he's here'",
-      "summary": "Mike Evans had seven catches, 113 yards and a touchdown to push the unbeaten Niners (5-0, 3-0 NFC West) to a rousing 32-29 victory over the Seahawks.",
-      "url": "https://www.espn.com/nfl/story/_/id/50163672/mike-evans-stars-49ers-win-exactly-why-here",
+      "key": "50164378",
+      "id": "50164378",
+      "headline": "QB Tyler Huntley leads Ravens to comeback OT win vs. Falcons",
+      "summary": "With Lamar Jackson still out, Tyler Huntley backed up the Ravens' faith in him by leading them to a 30-23 overtime win against the Falcons, during which Huntley was 11-for-11 passing for 80 yards on the final two drives.",
+      "url": "https://www.espn.com/nfl/story/_/id/50164378/backup-qb-tyler-huntley-leads-ravens-comeback-ot-win-vs-falcons",
       "sport": "NFL",
-      "published": "2026-10-12T03:47:03.000Z",
-      "firstSeen": "2026-10-12T03:48:14.761Z",
+      "published": "2026-10-12T06:35:30.000Z",
+      "firstSeen": "2026-10-12T07:06:32.684Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50163577",
+      "id": "50163577",
+      "headline": "Flyers winless in 7 games, their worst start in franchise history",
+      "summary": "The winless Flyers lost 4-1 to the Hurricanes on Sunday and have been outscored 28-8 this season en route to the worst start in franchise history.",
+      "url": "https://www.espn.com/nhl/story/_/id/50163577/flyers-winless-first-7-games-worst-start-franchise-history",
+      "sport": "NHL",
+      "published": "2026-10-12T06:30:39.000Z",
+      "firstSeen": "2026-10-12T07:06:32.684Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50163856",
+      "id": "50163856",
+      "headline": "Huntley leads late TD drive to force OT and then scores on 1-yard run as Ravens beat Falcons 30-23",
+      "summary": "— With Tyler Huntley filling in at quarterback, the Baltimore Ravens were on Snoop patrol.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401872993",
+      "sport": "NFL",
+      "published": "2026-10-12T06:15:27.000Z",
+      "firstSeen": "2026-10-12T07:06:32.684Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50164195",
+      "id": "50164195",
+      "headline": "Falcons' Michael Penix Jr. injures rib late in loss to Ravens",
+      "summary": "Falcons quarterback Michael Penix Jr. left Sunday night's overtime loss to the Ravens late because of a rib injury, but does not believe it will be a long-term issue.",
+      "url": "https://www.espn.com/nfl/story/_/id/50164195/falcons-michael-penix-jr-injures-rib-late-loss-ravens",
+      "sport": "NFL",
+      "published": "2026-10-12T06:05:59.000Z",
+      "firstSeen": "2026-10-12T07:06:32.684Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50163790",
+      "id": "50163790",
+      "headline": "Brice Turang, bullpen lift Brewers past Dodgers in Game 1",
+      "summary": "After failing to score more than one run in any contest of a four-game sweep against the Los Angeles Dodgers last year in the NLCS, the Milwaukee Brewers did just enough in Game 1 this year to extract a 2-1 win Sunday at American Family Field.",
+      "url": "https://www.espn.com/mlb/story/_/id/50163790/brice-turang-bullpen-lift-brewers-dodgers-game-1",
+      "sport": "MLB",
+      "published": "2026-10-12T06:03:57.000Z",
+      "firstSeen": "2026-10-12T07:06:32.684Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50127290",
+      "id": "50127290",
+      "headline": "NFL Week 5: Big takeaways, questions and fantasy spin from Sunday's games",
+      "summary": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 5.",
+      "url": "https://www.espn.com/nfl/story/_/id/50127290/week-5-sunday-games-takeaways-questions-2026",
+      "sport": "NFL",
+      "published": "2026-10-12T04:30:53.000Z",
+      "firstSeen": "2026-10-11T18:34:52.801Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50163882",
+      "id": "50163882",
+      "headline": "Zheng Qinwen withdraws from Wuhan Open with shoulder injury",
+      "summary": "Zheng Qinwen withdrew from the Wuhan Open citing a shoulder injury on Monday, a day after winning her first WTA title in two years at the China Open.",
+      "url": "https://www.espn.com/tennis/story/_/id/50163882/zheng-qinwen-withdraws-wuhan-open-shoulder-injury",
+      "sport": "Tennis",
+      "published": "2026-10-12T04:17:14.000Z",
+      "firstSeen": "2026-10-12T07:06:32.684Z",
       "bestRank": 1
     },
     {
@@ -41,8 +107,74 @@
       "summary": "The showdown between the NL's top two seeds started with a hard-fought win for the Brew Crew.",
       "url": "https://www.espn.com/mlb/story/_/id/50158797/mlb-2026-nlcs-game-1-dodgers-brewers-lineups-updates-analysis-takeaways",
       "sport": "MLB",
-      "published": "2026-10-12T03:36:56.000Z",
+      "published": "2026-10-12T04:05:03.000Z",
       "firstSeen": "2026-10-11T21:27:41.344Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50163672",
+      "id": "50163672",
+      "headline": "Mike Evans stars in 49ers' win: 'Exactly why he's here'",
+      "summary": "Mike Evans had seven catches, 113 yards and a touchdown to push the unbeaten Niners (5-0, 3-0 NFC West) to a rousing 32-29 victory over the Seahawks.",
+      "url": "https://www.espn.com/nfl/story/_/id/50163672/mike-evans-stars-49ers-win-exactly-why-here",
+      "sport": "NFL",
+      "published": "2026-10-12T04:00:23.000Z",
+      "firstSeen": "2026-10-12T03:48:14.761Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50163825",
+      "id": "50163825",
+      "headline": "Ravens storm back, defeat Falcons 30-23 in OT",
+      "summary": "Ravens storm back, defeat Falcons 30-23 in OT",
+      "url": "https://www.espn.com/video/clip/_/id/50163825/ravens-storm-back-defeat-falcons-30-23-ot",
+      "sport": "NFL",
+      "published": "2026-10-12T03:58:07.000Z",
+      "firstSeen": "2026-10-12T07:06:32.684Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50163814",
+      "id": "50163814",
+      "headline": "Chicago Bulls vs. Denver Nuggets: Game Highlights",
+      "summary": "Chicago Bulls vs. Denver Nuggets: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50163814/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-12T03:56:27.000Z",
+      "firstSeen": "2026-10-12T07:06:32.684Z",
+      "bestRank": 1
+    },
+    {
+      "key": "40699880",
+      "id": "40699880",
+      "headline": "Fantasy football buzz: What's the impact of MHJ trade on Texans and Cardinals?",
+      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "sport": "NFL",
+      "published": "2026-10-12T03:49:15.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "41589293",
+      "id": "41589293",
+      "headline": "Who has scored the most goals in NHL history?",
+      "summary": "Alex Ovechkin holds the record for the most individual career goals in NHL history. Which other players are at the top of the list?",
+      "url": "https://www.espn.com/nhl/story/_/id/41589293/who-scored-most-goals-nhl-history",
+      "sport": "NHL",
+      "published": "2026-10-12T03:35:16.000Z",
+      "firstSeen": "2026-09-30T21:29:29.506Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50163655",
+      "id": "50163655",
+      "headline": "'Disjointed' WNBA causing WNBL scheduling issues",
+      "summary": "One of the WNBL's star players has labelled an overlap between the WNBA and Australia's domestic season \"hard\" ahead of the league's tip-off on Thursday.",
+      "url": "https://www.espn.com/wnba/story/_/id/50163655/disjointed-wnba-causing-wnbl-scheduling-issues",
+      "sport": "WNBA",
+      "published": "2026-10-12T03:29:22.000Z",
+      "firstSeen": "2026-10-12T07:06:32.684Z",
       "bestRank": 1
     },
     {
@@ -101,6 +233,17 @@
       "bestRank": 3
     },
     {
+      "key": "50163363",
+      "id": "50163363",
+      "headline": "Location of Dream home games for WNBA Finals still uncertain",
+      "summary": "The Dream, dealing with conflicting events at State Farm Arena, are still determining where they will play their home games during the upcoming WNBA Finals.",
+      "url": "https://www.espn.com/wnba/story/_/id/50163363/location-dream-home-games-wnba-finals-uncertain",
+      "sport": "WNBA",
+      "published": "2026-10-12T02:47:22.000Z",
+      "firstSeen": "2026-10-12T07:06:32.684Z",
+      "bestRank": 2
+    },
+    {
       "key": "50163287",
       "id": "50163287",
       "headline": "Broncos beat Chargers in Sean Payton's return to playcalling",
@@ -110,28 +253,6 @@
       "published": "2026-10-12T02:36:12.000Z",
       "firstSeen": "2026-10-12T03:48:14.761Z",
       "bestRank": 6
-    },
-    {
-      "key": "40699880",
-      "id": "40699880",
-      "headline": "Fantasy football buzz: What's the impact of MHJ trade on Texans and Cardinals?",
-      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "sport": "NFL",
-      "published": "2026-10-12T02:28:24.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50127290",
-      "id": "50127290",
-      "headline": "NFL Week 5: Big takeaways, questions and fantasy spin from Sunday's games",
-      "summary": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 5.",
-      "url": "https://www.espn.com/nfl/story/_/id/50127290/week-5-sunday-games-takeaways-questions-2026",
-      "sport": "NFL",
-      "published": "2026-10-12T02:06:05.000Z",
-      "firstSeen": "2026-10-11T18:34:52.801Z",
-      "bestRank": 1
     },
     {
       "key": "50158281",
@@ -8829,7 +8950,7 @@
       "headline": "Shai Gilgeous-Alexander joins athletes who became owners",
       "summary": "The Oklahoma City Thunder star joins a list of athletes that includes LeBron James, Serena Williams, Wayne Gretzky and Tom Brady.",
       "url": "https://www.espn.com/nfl/story/_/id/29553205/dwyane-wade-tom-brady-lebron-james-athletes-team-owners",
-      "sport": "F1",
+      "sport": "WNBA",
       "published": "2026-10-08T21:14:28.000Z",
       "firstSeen": "2026-10-08T21:29:11.781Z",
       "bestRank": 1
@@ -18887,17 +19008,6 @@
       "published": "2026-10-04T02:52:21.000Z",
       "firstSeen": "2026-10-04T04:36:21.074Z",
       "bestRank": 32
-    },
-    {
-      "key": "41589293",
-      "id": "41589293",
-      "headline": "Who has scored the most goals in NHL history?",
-      "summary": "Alex Ovechkin holds the record for the most individual career goals in NHL history. Which other players are at the top of the list?",
-      "url": "https://www.espn.com/nhl/story/_/id/41589293/who-scored-most-goals-nhl-history",
-      "sport": "NHL",
-      "published": "2026-10-04T02:52:18.000Z",
-      "firstSeen": "2026-09-30T21:29:29.506Z",
-      "bestRank": 2
     },
     {
       "key": "50094243",
@@ -46265,204 +46375,6 @@
       "sport": "NFL",
       "published": "2026-09-21T07:39:39.000Z",
       "firstSeen": "2026-09-21T09:36:09.260Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49996583",
-      "id": "49996583",
-      "headline": "Colts' Shane Steichen defends OT playcalling in loss to Chiefs",
-      "summary": "Colts coach Shane Steichen defended his late-game strategy and playcalling in Sunday night's 33-30 overtime loss to the Chiefs, saying he would have gone for the win on fourth-and-8 had Kansas City showed a favorable defensive coverage.",
-      "url": "https://www.espn.com/nfl/story/_/id/49996583/colts-coach-shane-steichen-defends-playcalling-loss-chiefs",
-      "sport": "NFL",
-      "published": "2026-09-21T07:00:51.000Z",
-      "firstSeen": "2026-09-21T06:54:35.236Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49991106",
-      "id": "49991106",
-      "headline": "Carrick quashes notion Manchester United are out of shape",
-      "summary": "Michael Carrick played down concerns that Manchester United's poor start to the season has been caused by a lack of fitness within the squad.",
-      "url": "https://www.espn.com/soccer/story/_/id/49991106/carrick-squashes-notion-manchester-united-shape",
-      "sport": "Soccer",
-      "published": "2026-09-21T06:55:17.000Z",
-      "firstSeen": "2026-09-20T21:24:19.091Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49996102",
-      "id": "49996102",
-      "headline": "Brewers savor franchise-record 98th victory as playoffs loom",
-      "summary": "Milwaukee broke the single-season wins mark it set last season Sunday night, smothering Baltimore 3-0 to improve to 98-58.",
-      "url": "https://www.espn.com/mlb/story/_/id/49996102/brewers-savor-franchise-record-98th-victory-playoffs-loom",
-      "sport": "MLB",
-      "published": "2026-09-21T06:40:01.000Z",
-      "firstSeen": "2026-09-21T06:54:35.236Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49995944",
-      "id": "49995944",
-      "headline": "Lock, Smith-Njigba have Seahawks 2-0 with Darnold ahead of schedule",
-      "summary": "Seahawks coach Mike Macdonald said QB Sam Darnold could return to practice this week and did not rule out the possibility of him playing next Sunday. In the meantime, backup Drew Lock has Seattle 2-0, with plenty of help from receiver Jaxon Smith-Njigba.",
-      "url": "https://www.espn.com/nfl/story/_/id/49995944/drew-lock-jaxon-smith-njigba-seahawks-2-0-sam-darnold-ahead-schedule",
-      "sport": "NFL",
-      "published": "2026-09-21T06:39:17.000Z",
-      "firstSeen": "2026-09-21T03:35:19.877Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49996543",
-      "id": "49996543",
-      "headline": "Las Vegas takes on Los Angeles, seeks 30th win this season",
-      "summary": "Los Angeles Sparks (16-26, 9-12 Western Conference) at Las Vegas Aces (29-13, 15-6 Western Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401857211",
-      "sport": "WNBA",
-      "published": "2026-09-21T06:10:46.000Z",
-      "firstSeen": "2026-09-21T09:36:09.260Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49996542",
-      "id": "49996542",
-      "headline": "Collier leads Minnesota against Indiana after 23-point outing",
-      "summary": "Minnesota Lynx (32-10, 20-3 Western Conference) at Indiana Fever (27-15, 14-6 Eastern Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401857209",
-      "sport": "WNBA",
-      "published": "2026-09-21T06:10:43.000Z",
-      "firstSeen": "2026-09-21T09:36:09.260Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49996541",
-      "id": "49996541",
-      "headline": "Toronto faces Chicago on 11-game road slide",
-      "summary": "Toronto Tempo (11-31, 5-13 Eastern Conference) at Chicago Sky (15-27, 3-15 Eastern Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401857210",
-      "sport": "WNBA",
-      "published": "2026-09-21T06:10:40.000Z",
-      "firstSeen": "2026-09-21T09:36:09.260Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49996540",
-      "id": "49996540",
-      "headline": "Portland faces Golden State, looks to stop 4-game skid",
-      "summary": "Golden State Valkyries (31-11, 14-7 Western Conference) at Portland Fire (16-27, 6-16 Western Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401857212",
-      "sport": "WNBA",
-      "published": "2026-09-21T06:10:36.000Z",
-      "firstSeen": "2026-09-21T09:36:09.260Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49996539",
-      "id": "49996539",
-      "headline": "Connecticut takes on Washington, looks to stop 5-game slide",
-      "summary": "Connecticut Sun (10-32, 3-15 Eastern Conference) at Washington Mystics (26-16, 13-5 Eastern Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401857208",
-      "sport": "WNBA",
-      "published": "2026-09-21T06:10:33.000Z",
-      "firstSeen": "2026-09-21T09:36:09.260Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49996538",
-      "id": "49996538",
-      "headline": "Atlanta takes on New York following Reese's 23-point showing",
-      "summary": "Atlanta Dream (28-14, 13-5 Eastern Conference) at New York Liberty (26-16, 13-5 Eastern Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401857206",
-      "sport": "WNBA",
-      "published": "2026-09-21T06:10:29.000Z",
-      "firstSeen": "2026-09-21T09:36:09.260Z",
-      "bestRank": 6
-    },
-    {
-      "key": "49996523",
-      "id": "49996523",
-      "headline": "Isak's winner lifts Liverpool to victory",
-      "summary": "Alexander Isak's second-half strike secures Liverpool boss Andoni Iraola a 1-0 victory over his former club Bournemouth.",
-      "url": "https://www.espn.com/video/clip/_/id/49996523/isak-winner-lifts-liverpool-victory",
-      "sport": "Soccer",
-      "published": "2026-09-21T05:55:49.000Z",
-      "firstSeen": "2026-09-21T09:36:09.260Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49996431",
-      "id": "49996431",
-      "headline": "Travis Kelce tells SVP how the Chiefs prevailed in OT",
-      "summary": "Travis Kelce tells SVP how the Chiefs prevailed in OT",
-      "url": "https://www.espn.com/video/clip/_/id/49996431/travis-kelce-tells-svp-how-chiefs-prevailed-ot",
-      "sport": "NFL",
-      "published": "2026-09-21T05:39:15.000Z",
-      "firstSeen": "2026-09-21T06:54:35.236Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49991137",
-      "id": "49991137",
-      "headline": "Week 2 winners and losers: Jaxon Smith-Njigba, CeeDee Lamb shine; Bijan Robinson struggles",
-      "summary": "Jaxon Smith-Njigba and CeeDee Lamb came up big in Week 2, while Bijan Robinson and Justin Jefferson had very quiet days.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-49991137/nfl-week-2-fantasy-football-winners-losers-injuries-rankings-more",
-      "sport": "NFL",
-      "published": "2026-09-21T05:09:55.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49996165",
-      "id": "49996165",
-      "headline": "Mahomes and Walker shine, Butker hits winning 40-yarder as Chiefs beat Colts 33-30 in OT",
-      "summary": "— The Kansas City Chiefs thought they had beaten the Indianapolis Colts on a bizarre fumble in overtime Sunday night.",
-      "url": "http://www.espn.com/nfl/recap?gameId=401872945",
-      "sport": "NFL",
-      "published": "2026-09-21T05:03:29.000Z",
-      "firstSeen": "2026-09-21T06:54:35.236Z",
-      "bestRank": 5
-    },
-    {
-      "key": "49996271",
-      "id": "49996271",
-      "headline": "Chiefs down Colts in OT thriller",
-      "summary": "Chiefs down Colts in OT thriller",
-      "url": "https://www.espn.com/video/clip/_/id/49996271/chiefs-colts-ot-thriller",
-      "sport": "NFL",
-      "published": "2026-09-21T04:46:17.000Z",
-      "firstSeen": "2026-09-21T06:54:35.236Z",
-      "bestRank": 4
-    },
-    {
-      "key": "49993274",
-      "id": "49993274",
-      "headline": "Gavin Williams dominates with 7 shutout frames as Guardians edge Athletics to stay atop AL Central",
-      "summary": "— Gavin Williams threw seven shutout innings, Jo Adell had an RBI infield single and the Cleveland Guardians beat the Athletics 1-0 Sunday to remain atop the AL Central.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817012",
-      "sport": "MLB",
-      "published": "2026-09-21T04:26:29.000Z",
-      "firstSeen": "2026-09-21T01:05:55.901Z",
-      "bestRank": 12
-    },
-    {
-      "key": "49996182",
-      "id": "49996182",
-      "headline": "MLB Recap: Red Sox and Braves head to playoffs",
-      "summary": "Check out everything you missed across the diamond Sunday night.",
-      "url": "https://www.espn.com/video/clip/_/id/49996182/red-sox-braves-head-playoffs",
-      "sport": "MLB",
-      "published": "2026-09-21T04:21:43.000Z",
-      "firstSeen": "2026-09-21T06:54:35.236Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49984903",
-      "id": "49984903",
-      "headline": "Week 2 NFL highlights: Best plays, moments, touchdowns, more",
-      "summary": "Check out the best of the best from Week 2 around the NFL, including highlight-reel touchdowns and must-see plays.",
-      "url": "https://www.espn.com/nfl/story/_/id/49984903/week-2-highlights-best-plays-touchdowns-2026",
-      "sport": "NFL",
-      "published": "2026-09-21T04:04:09.000Z",
-      "firstSeen": "2026-09-20T15:24:20.397Z",
       "bestRank": 1
     }
   ]
