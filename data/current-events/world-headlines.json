@@ -1,12 +1,22 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-10-15T06:55:48.389Z",
+  "generatedAt": "2026-10-15T09:42:56.188Z",
   "retentionDays": 21,
   "windowStart": "2026-09-24",
   "windowEnd": "2026-10-15",
   "snapshotIntervalHours": 3,
-  "count": 2153,
+  "count": 2161,
   "items": [
+    {
+      "headline": "School roof collapse kills at least 29, injures more than 3 dozen in Pakistan",
+      "date": "2026-10-15",
+      "bucket": "World",
+      "summary": "The roof of a private school collapsed in northwestern Pakistan on Thursday, killing at least 28 children and a female teacher and injuring more than 50 other people.",
+      "url": "https://www.npr.org/2026/10/15/nx-s1-6003437/school-roof-collapse-pakistan",
+      "firstSeen": "2026-10-15T09:42:56.188Z",
+      "top": true,
+      "bestRank": 1
+    },
     {
       "headline": "Iranian attacks sink two ships in Strait of Hormuz",
       "date": "2026-10-15",
@@ -38,20 +48,30 @@
       "firstSeen": "2026-10-15T06:55:48.389Z"
     },
     {
+      "headline": "Ukraine says its Starshield access is back",
+      "date": "2026-10-15",
+      "bucket": "World",
+      "summary": "Ukraine says its access to SpaceX's Starshield has been restored. It's the system the country uses for its offensive drone attacks on Russia.",
+      "url": "https://www.npr.org/2026/10/15/nx-s1-6002949/ukraine-says-its-starshield-access-is-back",
+      "firstSeen": "2026-10-15T09:42:56.188Z"
+    },
+    {
+      "headline": "Rep. Mike Quigley, D-Ill., on reports Ukraine's Starshield access was restricted",
+      "date": "2026-10-15",
+      "bucket": "Conflict",
+      "summary": "NPR's Michel Martin speaks with Democratic Rep. Mike Quigley of Illinois about reports that SpaceX temporarily restricted access to its Starshield in Ukraine, affecting the country's war efforts.",
+      "url": "https://www.npr.org/2026/10/15/nx-s1-6001653/rep-mike-quigley-d-ill-on-reports-ukraines-starshield-access-was-restricted",
+      "firstSeen": "2026-10-15T09:42:56.188Z"
+    },
+    {
       "headline": "Retired US generals call on Pentagon to cancel 'barbaric' execution livestream",
       "date": "2026-10-15",
       "bucket": "World",
       "summary": "Livestreaming the execution of Nidal Hasan \"will taint the honor of the military that employs it, and a nation that allows it,\" 72 former officers said in a letter.",
       "url": "https://www.bbc.co.uk/news/articles/cmp3gnngv3e9o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-15T06:55:48.389Z"
-    },
-    {
-      "headline": "White House defends new press secretary amid questions about her legal credentials",
-      "date": "2026-10-15",
-      "bucket": "World",
-      "summary": "Katie Zacharia does not appear to be registered to the legal bar in any state where she has lived.",
-      "url": "https://www.bbc.co.uk/news/articles/ckqxne2evqreo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-15T06:55:48.389Z"
+      "firstSeen": "2026-10-15T06:55:48.389Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Anthropic flags revenue surge to investors ahead of stock market debut",
@@ -59,7 +79,9 @@
       "bucket": "World",
       "summary": "It comes as some investors have become concerned about the amount of money being spent on AI infrastructure.",
       "url": "https://www.bbc.co.uk/news/articles/cqzjx448vxkgo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-15T06:55:48.389Z"
+      "firstSeen": "2026-10-15T06:55:48.389Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "'Nowhere to escape' - Indonesians share footage of orange haze blanketing towns",
@@ -182,6 +204,16 @@
       "bestRank": 2
     },
     {
+      "headline": "What we know about the Pope's lung cancer diagnosis",
+      "date": "2026-10-14",
+      "bucket": "World",
+      "summary": "The Pope is recovering in hospital after a successful surgery to remove part of his right lung.",
+      "url": "https://www.bbc.co.uk/news/videos/cwyvrmp9qgrgo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-14T15:42:32.699Z",
+      "top": true,
+      "bestRank": 2
+    },
+    {
       "headline": "Aramco Headquarters Hit as Houthis Widen Attacks on Saudi Arabia",
       "date": "2026-10-14",
       "bucket": "World",
@@ -240,6 +272,16 @@
       "top": true,
       "bestRank": 4,
       "firstSeen": "2026-10-14T21:41:09.351Z"
+    },
+    {
+      "headline": "Russian strikes leave 600,000 without power in Ukraine, Zelensky says",
+      "date": "2026-10-14",
+      "bucket": "World",
+      "summary": "Ukraine's president says \"critical\" infrastructure was hit overnight, while emergency services say at least three were killed.",
+      "url": "https://www.bbc.co.uk/news/articles/cm2d6e62p49do?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-14T01:08:50.820Z",
+      "top": true,
+      "bestRank": 4
     },
     {
       "headline": "Ukraine Says It Received No Intelligence About Strikes 2 Nights in a Row",
@@ -320,6 +362,16 @@
       "top": true,
       "bestRank": 6,
       "firstSeen": "2026-10-14T21:41:09.351Z"
+    },
+    {
+      "headline": "UK rolls out King Charles to welcome Zelenskyy after Trump rift",
+      "date": "2026-10-14",
+      "bucket": "World",
+      "summary": "Reported by BBC.",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5RUWQ4bkN6ZUlVUVpkN2JNV3QxYzZOU1dOamlxZTRTbmdpQVBHY3QzZ3J5dTBXUkw3NXNwT0FhNXAtX3FMQ2xtNEJPUlJ1WG5INlVSZnJDUUVhdnM?oc=5",
+      "top": true,
+      "bestRank": 6,
+      "firstSeen": "2026-10-15T06:55:48.389Z"
     },
     {
       "headline": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines",
@@ -432,6 +484,16 @@
       "firstSeen": "2026-10-14T09:42:11.877Z"
     },
     {
+      "headline": "Albania’s capital burns as protests escalate",
+      "date": "2026-10-14",
+      "bucket": "World",
+      "summary": "Reported by POLITICO.eu.",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNWR0WXdtT2wxV1pLY2tpbVRkQVkteXlsdnU2am1abFN1N0xTbEkxdl9SU0xJdE1hZktSU09SNHVBZDluSWZfTFFqZjl5UkZnd0tZQmdLWGJlWVFWY3NPYnVHWUkwOGlZMWEyQ1NhNUVkMGU3S0ZKWEQ1eElHZ0E2R3FXODNqUVhKY3F3N3pMZVJfbEI3Y3VUNV9uTmNhVFhCcnB1QmpNUnA?oc=5",
+      "top": true,
+      "bestRank": 11,
+      "firstSeen": "2026-10-15T09:42:56.188Z"
+    },
+    {
       "headline": "Houthi missile hits Aramco building after Saudi-led coalition strike on Yemen fuel depot",
       "date": "2026-10-14",
       "bucket": "Conflict",
@@ -480,16 +542,6 @@
       "top": true,
       "bestRank": 14,
       "firstSeen": "2026-10-14T15:42:32.699Z"
-    },
-    {
-      "headline": "Russian strikes leave 600,000 without power in Ukraine, Zelensky says",
-      "date": "2026-10-14",
-      "bucket": "World",
-      "summary": "Ukraine's president says \"critical\" infrastructure was hit overnight, while emergency services say at least three were killed.",
-      "url": "https://www.bbc.co.uk/news/articles/cm2d6e62p49do?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-14T01:08:50.820Z",
-      "top": true,
-      "bestRank": 15
     },
     {
       "headline": "Piers Morgan Calls Out Donald Trump Over ‘Appallingly Tasteless’ Post",
@@ -712,13 +764,13 @@
       "firstSeen": "2026-10-15T06:55:48.389Z"
     },
     {
-      "headline": "UK rolls out King Charles to welcome Zelenskyy after Trump rift",
+      "headline": "High on wins in Tigray, Ethiopia now has Eritrea in its crosshairs",
       "date": "2026-10-14",
       "bucket": "World",
-      "summary": "Reported by BBC.",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5RUWQ4bkN6ZUlVUVpkN2JNV3QxYzZOU1dOamlxZTRTbmdpQVBHY3QzZ3J5dTBXUkw3NXNwT0FhNXAtX3FMQ2xtNEJPUlJ1WG5INlVSZnJDUUVhdnM?oc=5",
+      "summary": "Reported by Responsible Statecraft.",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBKSGFKSmhEdVAzSFpMd0xsMTc5aXpIWmRhOUdOTVNtR0VXWUtwNXgtX2o0WDVpVndKdHN4Tm1mc2lNRWtwMXMwbDJ6b2IxaHhFMjVsRGNOWmVYc2ZzV1p4cFY2T3FNVWs?oc=5",
       "top": true,
-      "bestRank": 28,
+      "bestRank": 27,
       "firstSeen": "2026-10-15T06:55:48.389Z"
     },
     {
@@ -782,14 +834,14 @@
       "firstSeen": "2026-10-14T18:49:10.932Z"
     },
     {
-      "headline": "High on wins in Tigray, Ethiopia now has Eritrea in its crosshairs",
+      "headline": "Alice Weidel would pull the plug on German support for Ukraine",
       "date": "2026-10-14",
       "bucket": "World",
-      "summary": "Reported by Responsible Statecraft.",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBKSGFKSmhEdVAzSFpMd0xsMTc5aXpIWmRhOUdOTVNtR0VXWUtwNXgtX2o0WDVpVndKdHN4Tm1mc2lNRWtwMXMwbDJ6b2IxaHhFMjVsRGNOWmVYc2ZzV1p4cFY2T3FNVWs?oc=5",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdkNsRTQ1VkVKSWlkOWQ5U2pFQnNrbnZFLS02YmxfUzFzRF90S09UX3Nkay1UeGNzU2lvY2NFcHpKTDNfckZFM3pUOUtRdWhLQ2NTOWl3UERRTFJPR0JiLUJoYnVlQUhhNEF0ZDA1VENkVEhmWl9ibV9ESTJxTGdONlRzeVFzNDhtdEMtLTlvV0d0Zw?oc=5",
       "top": true,
       "bestRank": 33,
-      "firstSeen": "2026-10-15T06:55:48.389Z"
+      "firstSeen": "2026-10-15T09:42:56.188Z"
     },
     {
       "headline": "Wildlife influencer comes close to losing a wrestling match to a 19-foot reticulated python",
@@ -842,6 +894,16 @@
       "firstSeen": "2026-10-14T15:42:32.699Z"
     },
     {
+      "headline": "Police: Investigation underway after robot controlled by two men inappropriately touched teen girl",
+      "date": "2026-10-14",
+      "bucket": "World",
+      "summary": "Reported by CBS News.",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMVhkdUxCdHpUV2NpMm00eFNwUEdUR0Q5eUdGQ0pTa21vaGYwS2RYamNhaVBNTkNIS3RkLXJnTTViOGpZWVpLTzMtT2gyVzRhSkZXUHR6aXVXRHNqVnh0bkI2c2NXclB6dUpRX0F1dWxQZVRJUy1QakRGdGVJYXpFejExYmRFSnU3ZmdJcFQ5d3A?oc=5",
+      "top": true,
+      "bestRank": 37,
+      "firstSeen": "2026-10-15T09:42:56.188Z"
+    },
+    {
       "headline": "Justice Department arrests 28 alleged scammers in Africa",
       "date": "2026-10-14",
       "bucket": "World",
@@ -852,6 +914,16 @@
       "firstSeen": "2026-10-14T15:42:32.699Z"
     },
     {
+      "headline": "Chinese Carrier Strike Group Drills in the Philippine Sea",
+      "date": "2026-10-14",
+      "bucket": "World",
+      "summary": "Reported by USNI News.",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOU1lkZVk0bGZQNTFoOGozaXg1bGg0b3RaOHU5Y3gyT1kzc2d4eVZDTktrcDF1SnVoTHlyRDV2a0t1VUFyVkNjX1ZXREo0b0wxbkFENE1KQXY4TWJYOHZwWnVrbU5zTENaNWh3MUlNTjdjMFNrWmFWUjh2MlYzak5taUh6SmYzMmtXREdWR2hFOC12czZ0?oc=5",
+      "top": true,
+      "bestRank": 38,
+      "firstSeen": "2026-10-15T09:42:56.188Z"
+    },
+    {
       "headline": "Tropical Storm Trudy forms, forecast to become major hurricane",
       "date": "2026-10-14",
       "bucket": "Disaster",
@@ -860,6 +932,16 @@
       "top": true,
       "bestRank": 39,
       "firstSeen": "2026-10-14T15:42:32.699Z"
+    },
+    {
+      "headline": "Senator John Hoeven warns of tight moon race with China, points to Grand Forks tech ecosystem",
+      "date": "2026-10-14",
+      "bucket": "World",
+      "summary": "Reported by Foreign Affairs.",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBjRWxUcjVzV2VULThyZnU5MnFGUVRnbHlVYmhtNDR5dVNSNHUtdUVBUUhNVFpJdGczWnlMYmJqWVpKeHZUYk5oU1ZCckZpelhKX3liVTZVVVdkNmRyNjd3UnpFazM4ZlVO?oc=5",
+      "top": true,
+      "bestRank": 39,
+      "firstSeen": "2026-10-15T09:42:56.188Z"
     },
     {
       "headline": "Palantir drops City Hall legal fight over Met deal",
@@ -964,12 +1046,24 @@
       "bestRank": null
     },
     {
+      "headline": "Why Zelensky's meeting with Burnham matters",
+      "date": "2026-10-14",
+      "bucket": "Conflict",
+      "summary": "Prime Minister Andy Burnham welcomed President Zelensky to Downing Street on Wednesday, as Ukraine's leader looks to shore up his European allies five years into Russia's war on Ukraine.",
+      "url": "https://www.bbc.co.uk/news/videos/c65yngxdzdd5o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-14T21:41:09.351Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
       "headline": "Inside Brooklyn novelty shop at centre of 'surreal' row with Kelly Clarkson over mechanical bird",
       "date": "2026-10-14",
       "bucket": "World",
       "summary": "Art of Play says its staff have been threatened after the singer complained online about how she was treated.",
       "url": "https://www.bbc.co.uk/news/articles/cxvgdneplgzeo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-15T06:55:48.389Z"
+      "firstSeen": "2026-10-15T06:55:48.389Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Musk says US government may be behind slowdown of Ukraine drone speeds",
@@ -987,16 +1081,6 @@
       "bucket": "Conflict",
       "summary": "It is the \"backbone of military communications in Ukraine\" that provides vital high-speed internet to forces across the country.",
       "url": "https://www.bbc.co.uk/news/articles/cqkgk4zg54reo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-14T21:41:09.351Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Why Zelensky's meeting with Burnham matters",
-      "date": "2026-10-14",
-      "bucket": "Conflict",
-      "summary": "Prime Minister Andy Burnham welcomed President Zelensky to Downing Street on Wednesday, as Ukraine's leader looks to shore up his European allies five years into Russia's war on Ukraine.",
-      "url": "https://www.bbc.co.uk/news/videos/c65yngxdzdd5o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-14T21:41:09.351Z",
       "top": false,
       "bestRank": null
@@ -1107,16 +1191,6 @@
       "bucket": "World",
       "summary": "Châtaigniers en fleurs, also known as Chestnut Trees in Blossom, is expected to receive record bids at auction this weekend.",
       "url": "https://www.bbc.co.uk/news/videos/ck0e0l3le555o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-14T15:42:32.699Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "What we know about the Pope's lung cancer diagnosis",
-      "date": "2026-10-14",
-      "bucket": "World",
-      "summary": "The Pope is recovering in hospital after a successful surgery to remove part of his right lung.",
-      "url": "https://www.bbc.co.uk/news/videos/cwyvrmp9qgrgo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-14T15:42:32.699Z",
       "top": false,
       "bestRank": null
@@ -1912,6 +1986,16 @@
       "firstSeen": "2026-10-13T12:58:51.777Z"
     },
     {
+      "headline": "FBI operation targets scam compounds in Africa with arrests, account takedowns",
+      "date": "2026-10-13",
+      "bucket": "World",
+      "summary": "Reported by Fox News.",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSmRzR0REVHExMVR4Yk9rTU9kX2FUdGRfaGhONGZrRUlVQ00xdm0xQ01fWWswUi1rcEpfQmJnTnlEcThWczFmVC1JMW1mWWJCcFFWTFRZNEVWVXpBVEF1TDh2WlpsSG1MYVFIRXBleGZXQktPOEh4YXlSSWxTa281Q1F3b2cyYkJ4SnN4eTRNYUVCNmJtX2oyQUVqUWJmVlBiZWdJ0gGoAUFVX3lxTE1qckxaLUN5eVhVT1VEcEt3RmRvMHYzQzRZbV96WHhTcXcxOFNwTEk3UDMyWFlJb3RadkhHSkRBcTVZU1NOLWNkTkJnZDdJZGJnUTZtdUx5MWdrUXJuUk5tUFNWcWhBRmVVeUtqa2RZTFVmS2dDR1cteWRwb010eTN2UlZHNGJxNy15c0M2VkQwcHhjNERGcWRuMlZxNEpEQnRvVkpMZS04Qw?oc=5",
+      "top": true,
+      "bestRank": 40,
+      "firstSeen": "2026-10-15T09:42:56.188Z"
+    },
+    {
       "headline": "Bumble shares soar after report dating firm in $1bn takeover talks",
       "date": "2026-10-13",
       "bucket": "World",
@@ -2160,6 +2244,26 @@
       "bestRank": null
     },
     {
+      "headline": "Pakistan imposes emergency rule in former prime minister's stronghold",
+      "date": "2026-10-13",
+      "bucket": "Politics",
+      "summary": "Pakistan has imposed emergency rule in the province governed by the political party of imprisoned former prime minister Imran Khan.",
+      "url": "https://www.npr.org/2026/10/13/nx-s1-5998798/pakistan-imposes-emergency-rule-in-former-prime-ministers-stronghold",
+      "firstSeen": "2026-10-13T11:25:34.039Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Government spent millions on Trump ads. And, federal agents raid Ilhan Omar's home",
+      "date": "2026-10-13",
+      "bucket": "World",
+      "summary": "The government is using millions of taxpayers' dollars on pro-Trump ads, even after the president said this would not happen. And, federal agents search Rep. Ilhan Omar's D.C. home.",
+      "url": "https://www.npr.org/2026/10/13/g-s1-147822/up-first-newsletter-trump-ads-funding-campaign-rallies-ilhan-omar",
+      "firstSeen": "2026-10-12T15:44:28.145Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
       "headline": "Pictured: Winning entries for Wildlife Photographer of the Year 2026",
       "date": "2026-10-13",
       "bucket": "World",
@@ -2196,26 +2300,6 @@
       "summary": "The price of diesel hit an all-time high in the U.S. in September. Can President Trump's deal for Russia to release more diesel onto the market bring the price down?",
       "url": "https://www.npr.org/2026/10/13/nx-s1-6000118/how-will-a-diesel-deal-with-russia-impact-the-u-s-market",
       "firstSeen": "2026-10-13T21:37:43.035Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Pakistan imposes emergency rule in former prime minister's stronghold",
-      "date": "2026-10-13",
-      "bucket": "Politics",
-      "summary": "Pakistan has imposed emergency rule in the province governed by the political party of imprisoned former prime minister Imran Khan.",
-      "url": "https://www.npr.org/2026/10/13/nx-s1-5998798/pakistan-imposes-emergency-rule-in-former-prime-ministers-stronghold",
-      "firstSeen": "2026-10-13T11:25:34.039Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Government spent millions on Trump ads. And, federal agents raid Ilhan Omar's home",
-      "date": "2026-10-13",
-      "bucket": "World",
-      "summary": "The government is using millions of taxpayers' dollars on pro-Trump ads, even after the president said this would not happen. And, federal agents search Rep. Ilhan Omar's D.C. home.",
-      "url": "https://www.npr.org/2026/10/13/g-s1-147822/up-first-newsletter-trump-ads-funding-campaign-rallies-ilhan-omar",
-      "firstSeen": "2026-10-12T15:44:28.145Z",
       "top": false,
       "bestRank": null
     },
@@ -21487,7 +21571,7 @@
       "bucket": "World",
       "summary": "A federal judge's ruling restored CNN, MS Now and Politico's access to the White House. Gabe Rottman says better procedure alone may not resolve the broader First Amendment fight.",
       "url": "https://www.npr.org/2026/09/24/nx-s1-5978805/whats-next-white-house-press-access-fight",
-      "firstSeen": "2026-10-10T09:46:42.460Z",
+      "firstSeen": "2026-10-15T06:55:48.389Z",
       "top": false,
       "bestRank": null
     }
