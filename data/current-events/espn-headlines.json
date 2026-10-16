@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-16T00:56:32.490Z",
+  "generatedAt": "2026-10-16T03:33:02.302Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-25T00:56:32.490Z",
-  "windowEnd": "2026-10-16T00:56:32.490Z",
+  "windowStart": "2026-09-25T03:33:02.302Z",
+  "windowEnd": "2026-10-16T03:33:02.302Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,29 +21,40 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4127,
+  "count": 4118,
   "items": [
     {
-      "key": "50192833",
-      "id": "50192833",
-      "headline": "Browns coach Todd Monken faces his old team as Ravens visit Cleveland, likely with Huntley at QB",
-      "summary": "Browns coach Todd Monken and Ravens quarterback Tyler Huntley won't be in a sentimental mood when Cleveland hosts Baltimore in an AFC North matchup on Sunday.",
-      "url": "http://www.espn.com/nfl/preview?gameId=401872997",
-      "sport": "NFL",
-      "published": "2026-10-16T00:52:35.000Z",
-      "firstSeen": "2026-10-16T00:56:32.490Z",
+      "key": "50193819",
+      "id": "50193819",
+      "headline": "Brewers sweep Dodgers in NLCS, advance to 1st World Series in 44 years",
+      "summary": "The Brewers completed a four-game sweep of the Dodgers to win NL pennant and reach the World Series for the first time since 1982.",
+      "url": "https://www.espn.com/mlb/story/_/id/50193819/brewers-sweep-dodgers-nlcs-advance-world-series",
+      "sport": "MLB",
+      "published": "2026-10-16T03:26:05.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50193923",
+      "id": "50193923",
+      "headline": "Winnipeg Jets vs. Chicago Blackhawks: Game Highlights",
+      "summary": "Winnipeg Jets vs. Chicago Blackhawks: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50193923/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-16T03:25:09.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
       "bestRank": 1
     },
     {
-      "key": "50186625",
-      "id": "50186625",
-      "headline": "MLB playoffs: Takeaways from ALCS Game 3, lineups for NLCS Game 4",
-      "summary": "Cleveland took a 2-1 ALCS lead on Tampa Bay, while Milwaukee looks to sweep L.A. in Game 4 of the NLCS.",
-      "url": "https://www.espn.com/mlb/story/_/id/50186625/playoffs-nlcs-game-4-dodgers-brewers-alcs-game-3-guardians-rays",
+      "key": "50192041",
+      "id": "50192041",
+      "headline": "Dodgers' Shohei Ohtani ends HR drought with 3-run shot in NLCS Game 4",
+      "summary": "With the Dodgers trailing 3-0 in their best-of-seven series, manager Dave Roberts has returned Shohei Ohtani to the top of the lineup for Game 4 vs. the Brewers.",
+      "url": "https://www.espn.com/mlb/story/_/id/50192041/dodgers-move-shohei-ohtani-leadoff-spot-nlcs-game-4",
       "sport": "MLB",
-      "published": "2026-10-16T00:50:43.000Z",
-      "firstSeen": "2026-10-15T15:30:45.007Z",
-      "bestRank": 1
+      "published": "2026-10-16T03:24:34.000Z",
+      "firstSeen": "2026-10-16T00:56:32.490Z",
+      "bestRank": 3
     },
     {
       "key": "50191945",
@@ -52,9 +63,119 @@
       "summary": "Follow all the biggest plays and highlights from Thursday night's game between Seattle and Denver.",
       "url": "https://www.espn.com/nfl/story/_/id/50191945/nfl-week-6-seahawks-broncos-top-plays-tnf",
       "sport": "NFL",
-      "published": "2026-10-16T00:40:38.000Z",
+      "published": "2026-10-16T03:22:36.000Z",
       "firstSeen": "2026-10-16T00:56:32.490Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50193826",
+      "id": "50193826",
+      "headline": "Brewers sweep Dodgers, advance to first World Series in 44 years",
+      "summary": "Brewers sweep Dodgers, advance to first World Series in 44 years",
+      "url": "https://www.espn.com/video/clip/_/id/50193826/brewers-sweep-dodgers-advance-first-world-series-44-years",
+      "sport": "MLB",
+      "published": "2026-10-16T03:19:35.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50186625",
+      "id": "50186625",
+      "headline": "MLB playoffs: Takeaways from NLCS Game 4, ALCS Game 3",
+      "summary": "Milwaukee swept L.A. to advance to the World Series, while Cleveland took a 2-1 ALCS lead over Tampa Bay.",
+      "url": "https://www.espn.com/mlb/story/_/id/50186625/playoffs-nlcs-game-4-dodgers-brewers-alcs-game-3-guardians-rays",
+      "sport": "MLB",
+      "published": "2026-10-16T03:18:29.000Z",
+      "firstSeen": "2026-10-15T15:30:45.007Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50052092",
+      "id": "50052092",
+      "headline": "Biggest offseason questions for teams eliminated from MLB playoffs",
+      "summary": "Here's how the winter looks in Los Angeles after the two-time defending champs were blown away by the Brewers.",
+      "url": "https://www.espn.com/mlb/story/_/id/50052092/mlb-playoffs-2026-offseason-eliminated-teams-questions",
+      "sport": "MLB",
+      "published": "2026-10-16T03:17:48.000Z",
+      "firstSeen": "2026-10-01T01:15:59.870Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50193857",
+      "id": "50193857",
+      "headline": "Turner Helton, Tripp Bryant lead Georgia Southern to 23-15 victory over Old Dominion",
+      "summary": "— Turner Helton threw a touchdown pass and Tripp Bryant kicked three field goals to guide Georgia Southern to a 23-15 victory over Old Dominion on Thursday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401869950",
+      "sport": "College football",
+      "published": "2026-10-16T03:17:27.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50193848",
+      "id": "50193848",
+      "headline": "Georgia Southern Eagles vs. Old Dominion Monarchs: Full Highlights",
+      "summary": "Georgia Southern Eagles vs. Old Dominion Monarchs: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50193848/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-16T03:15:25.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
       "bestRank": 2
+    },
+    {
+      "key": "50193746",
+      "id": "50193746",
+      "headline": "Levshunov scores in OT as the Blackhawks beat the Jets 4-3; Kane sets assists mark",
+      "summary": "— Artyom Levshunov scored 1:37 into overtime and Patrick Kane set the NHL record for most assists by a U.S.-born player in a 4-3 win over the...",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892512",
+      "sport": "NHL",
+      "published": "2026-10-16T03:14:27.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50193214",
+      "id": "50193214",
+      "headline": "Blackhawks' Kane sets record for assists by U.S.-born player",
+      "summary": "Patrick Kane later added another assist on Artyom Levshunov's goal that gave the Blackhawks a 4-3 win in overtime, bringing his total to 896.",
+      "url": "https://www.espn.com/nhl/story/_/id/50193214/blackhawks-patrick-kane-record-assists-us-born-player",
+      "sport": "NHL",
+      "published": "2026-10-16T03:13:30.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 16
+    },
+    {
+      "key": "50193817",
+      "id": "50193817",
+      "headline": "Celebrini scores lone shootout goal to lift the Sharks past the Predators 3-2",
+      "summary": "— Macklin Celebrini scored the only goal of a shootout to give the San Jose Sharks a 3-2 victory over the Nashville Predators on Thursday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892513",
+      "sport": "NHL",
+      "published": "2026-10-16T03:13:28.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50193708",
+      "id": "50193708",
+      "headline": "Oklahoma City Thunder vs. Houston Rockets: Game Highlights",
+      "summary": "Oklahoma City Thunder vs. Houston Rockets: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50193708/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-16T03:12:00.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50022544",
+      "id": "50022544",
+      "headline": "2026 MLB playoffs: Schedule, postseason bracket, standings",
+      "summary": "We have your one-stop shop for everything you need to keep up with all the action this October.",
+      "url": "https://www.espn.com/mlb/story/_/id/50022544/2026-mlb-playoffs-schedule-how-watch-postseason-world-series-bracket-standings",
+      "sport": "MLB",
+      "published": "2026-10-16T03:09:09.000Z",
+      "firstSeen": "2026-09-28T01:09:56.325Z",
+      "bestRank": 1
     },
     {
       "key": "50192570",
@@ -63,7 +184,205 @@
       "summary": "Southern Nazarene University in Oklahoma announced Thursday that sophomore safety Tyler Ulrich has died five days after sustaining what the school called a \"traumatic injury\" during a game against Ouachita Baptist. Ulrich was 21.",
       "url": "https://www.espn.com/college-football/story/_/id/50192570/southern-nazarene-safety-tyler-ulrich-dies-injury",
       "sport": "College football",
-      "published": "2026-10-16T00:25:46.000Z",
+      "published": "2026-10-16T03:08:10.000Z",
+      "firstSeen": "2026-10-16T00:56:32.490Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50193492",
+      "id": "50193492",
+      "headline": "Red Wings send Flyers to franchise record-extending 9th straight loss to start season",
+      "summary": "— Andrew Copp broke a tie with 4:38 left and the Detroit Red Wings sent the Philadelphia Flyers to their franchise record-extending ninth straight loss to start the season, winning 2-1 on Thursday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892508",
+      "sport": "NHL",
+      "published": "2026-10-16T03:05:27.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50193719",
+      "id": "50193719",
+      "headline": "Matt Boldy has 5th career hat trick and Wild beat Blues 5-4",
+      "summary": "— Matt Boldy had his fifth career hat trick as part of a four-point night, Kirill Kaprizov added his league-high ninth goal and two assists, and the Minnesota Wild held off the St. Louis Blues...",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892514",
+      "sport": "NHL",
+      "published": "2026-10-16T03:04:28.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50193529",
+      "id": "50193529",
+      "headline": "Toronto Raptors vs. New York Knicks: Game Highlights",
+      "summary": "Toronto Raptors vs. New York Knicks: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50193529/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-16T03:02:10.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50191830",
+      "id": "50191830",
+      "headline": "Jayden Daniels addresses teammates on gaffe, vows 'it'll never happen again'",
+      "summary": "Jayden Daniels addressed his Commanders teammates, once more blaming himself for the end-of-overtime debacle against the Giants and vowing it won't happen again.",
+      "url": "https://www.espn.com/nfl/story/_/id/50191830/jayden-daniels-addresses-commanders-teammates-ot-gaffe",
+      "sport": "NFL",
+      "published": "2026-10-16T02:41:22.000Z",
+      "firstSeen": "2026-10-16T00:56:32.490Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50193544",
+      "id": "50193544",
+      "headline": "Philadelphia Flyers vs. Detroit Red Wings: Game Highlights",
+      "summary": "Philadelphia Flyers vs. Detroit Red Wings: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50193544/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-16T02:41:02.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50193517",
+      "id": "50193517",
+      "headline": "Pinto scores the shootout winner to send the Senators to a 2-1 victory over the Islanders",
+      "summary": "— Shane Pinto scored the shootout winner to lead the Ottawa Senators to a 2-1 win over the New York Islanders on Thursday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892507",
+      "sport": "NHL",
+      "published": "2026-10-16T02:32:28.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50193466",
+      "id": "50193466",
+      "headline": "Owen Power scores in OT to complete Sabres' rally for 5-4 win over Maple Leafs",
+      "summary": "— Owen Power scored in overtime and the Buffalo Sabres rallied from two goals down in the third period to overcome Kirill Marchenko's hat trick and beat the Toronto Maple Leafs 5-4 on Thursday.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892506",
+      "sport": "NHL",
+      "published": "2026-10-16T02:26:28.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50193446",
+      "id": "50193446",
+      "headline": "New York Islanders vs. Ottawa Senators: Game Highlights",
+      "summary": "New York Islanders vs. Ottawa Senators: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50193446/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-16T02:22:15.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50193440",
+      "id": "50193440",
+      "headline": "Buffalo Sabres vs. Toronto Maple Leafs: Game Highlights",
+      "summary": "Buffalo Sabres vs. Toronto Maple Leafs: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50193440/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-16T02:22:07.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50193421",
+      "id": "50193421",
+      "headline": "Seattle Kraken vs. Tampa Bay Lightning: Game Highlights",
+      "summary": "Seattle Kraken vs. Tampa Bay Lightning: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50193421/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-16T02:18:26.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50193417",
+      "id": "50193417",
+      "headline": "Victor Hedman's goal 2:07 into overtime lifts Lightning past Kraken 4-3",
+      "summary": "— Captain Victor Hedman scored just over two minutes into overtime to give the Tampa Bay Lightning a 4-3 victory over the Seattle Kraken on Thursday...",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892509",
+      "sport": "NHL",
+      "published": "2026-10-16T02:17:28.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50193335",
+      "id": "50193335",
+      "headline": "Vancouver Canucks vs. Florida Panthers: Game Highlights",
+      "summary": "Vancouver Canucks vs. Florida Panthers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50193335/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-16T02:04:26.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50193296",
+      "id": "50193296",
+      "headline": "Brady Tkachuk completes his 2nd straight natural hat trick in OT as Panthers stun Canucks",
+      "summary": "— Brady Tkachuk completed his second straight natural hat trick with a nifty move up the middle in overtime to give the Florida Panthers a 3-2 victory over the Vancouver Canucks on Thursday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892510",
+      "sport": "NHL",
+      "published": "2026-10-16T02:01:28.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50193246",
+      "id": "50193246",
+      "headline": "New York Rangers vs. New Jersey Devils: Game Highlights",
+      "summary": "New York Rangers vs. New Jersey Devils: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50193246/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-16T01:50:48.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50193204",
+      "id": "50193204",
+      "headline": "Devils score four goals in just over five minutes on the way to routing the Rangers 7-1",
+      "summary": "— Evan Rodrigues scored with 29.6 seconds left in the first period to begin a barrage of four goals in just over five minutes, and the New Jersey Devils rolled over the New York Rangers 7-1 on Thursday night in the first matchup this season between...",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892511",
+      "sport": "NHL",
+      "published": "2026-10-16T01:43:28.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 17
+    },
+    {
+      "key": "50176202",
+      "id": "50176202",
+      "headline": "WNBA Finals 2026: Valkyries vs. Dream schedule, scores, more",
+      "summary": "A new champion is guaranteed to be crowned this season as Golden State and Atlanta meet in the WNBA Finals.",
+      "url": "https://www.espn.com/wnba/story/_/id/50176202/2026-wnba-finals-valkyries-dream-schedule-scores-news",
+      "sport": "WNBA",
+      "published": "2026-10-16T01:26:51.000Z",
+      "firstSeen": "2026-10-13T21:24:40.321Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50192787",
+      "id": "50192787",
+      "headline": "Dream, Allisha Gray hopeful she'll be available for Game 1",
+      "summary": "Allisha Gray, who has been out after injuring her left ring finger, said the final decision would be made by the medical staff.",
+      "url": "https://www.espn.com/wnba/story/_/id/50192787/wnba-finals-game-1-dream-valkyries-allisha-gray-finger",
+      "sport": "WNBA",
+      "published": "2026-10-16T01:12:45.000Z",
+      "firstSeen": "2026-10-16T03:33:02.302Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50192833",
+      "id": "50192833",
+      "headline": "Browns coach Todd Monken faces his old team as Ravens visit Cleveland, likely with Huntley at QB",
+      "summary": "Browns coach Todd Monken and Ravens quarterback Tyler Huntley won't be in a sentimental mood when Cleveland hosts Baltimore in an AFC North matchup on Sunday.",
+      "url": "http://www.espn.com/nfl/preview?gameId=401872997",
+      "sport": "NFL",
+      "published": "2026-10-16T00:52:35.000Z",
       "firstSeen": "2026-10-16T00:56:32.490Z",
       "bestRank": 1
     },
@@ -143,17 +462,6 @@
       "published": "2026-10-15T23:23:28.000Z",
       "firstSeen": "2026-10-16T00:56:32.490Z",
       "bestRank": 4
-    },
-    {
-      "key": "50191830",
-      "id": "50191830",
-      "headline": "Jayden Daniels addresses teammates on gaffe, vows 'it'll never happen again'",
-      "summary": "Jayden Daniels addressed his Commanders teammates, once more blaming himself for the end-of-overtime debacle against the Giants and vowing it won't happen again.",
-      "url": "https://www.espn.com/nfl/story/_/id/50191830/jayden-daniels-addresses-commanders-teammates-ot-gaffe",
-      "sport": "NFL",
-      "published": "2026-10-15T23:21:49.000Z",
-      "firstSeen": "2026-10-16T00:56:32.490Z",
-      "bestRank": 13
     },
     {
       "key": "50191465",
@@ -264,17 +572,6 @@
       "published": "2026-10-15T22:39:57.000Z",
       "firstSeen": "2026-10-16T00:56:32.490Z",
       "bestRank": 5
-    },
-    {
-      "key": "50192041",
-      "id": "50192041",
-      "headline": "Dodgers move Shohei Ohtani to leadoff spot for NLCS Game 4",
-      "summary": "With the Dodgers trailing 3-0 in their best-of-seven series, manager Dave Roberts has returned Shohei Ohtani to the top of the lineup for Game 4 vs. the Brewers.",
-      "url": "https://www.espn.com/mlb/story/_/id/50192041/dodgers-move-shohei-ohtani-leadoff-spot-nlcs-game-4",
-      "sport": "MLB",
-      "published": "2026-10-15T22:31:20.000Z",
-      "firstSeen": "2026-10-16T00:56:32.490Z",
-      "bestRank": 3
     },
     {
       "key": "50192054",
@@ -517,17 +814,6 @@
       "published": "2026-10-15T19:45:45.000Z",
       "firstSeen": "2026-10-15T21:27:52.654Z",
       "bestRank": 2
-    },
-    {
-      "key": "50022544",
-      "id": "50022544",
-      "headline": "2026 MLB playoffs: Schedule, postseason bracket, standings",
-      "summary": "We have your one-stop shop for everything you need to keep up with all the action this October.",
-      "url": "https://www.espn.com/mlb/story/_/id/50022544/2026-mlb-playoffs-schedule-how-watch-postseason-world-series-bracket-standings",
-      "sport": "MLB",
-      "published": "2026-10-15T19:44:23.000Z",
-      "firstSeen": "2026-09-28T01:09:56.325Z",
-      "bestRank": 1
     },
     {
       "key": "50191247",
@@ -934,17 +1220,6 @@
       "sport": "NHL",
       "published": "2026-10-15T17:16:20.000Z",
       "firstSeen": "2026-10-15T18:33:52.057Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50176202",
-      "id": "50176202",
-      "headline": "WNBA Finals 2026: Valkyries vs. Dream schedule, scores, more",
-      "summary": "A new champion is guaranteed to be crowned this season as Golden State and Atlanta meet in the WNBA Finals.",
-      "url": "https://www.espn.com/wnba/story/_/id/50176202/2026-wnba-finals-valkyries-dream-schedule-scores-news",
-      "sport": "WNBA",
-      "published": "2026-10-15T17:13:00.000Z",
-      "firstSeen": "2026-10-13T21:24:40.321Z",
       "bestRank": 1
     },
     {
@@ -4873,17 +5148,6 @@
       "published": "2026-10-13T15:45:59.000Z",
       "firstSeen": "2026-10-13T18:22:43.144Z",
       "bestRank": 30
-    },
-    {
-      "key": "50052092",
-      "id": "50052092",
-      "headline": "Biggest offseason questions for teams eliminated from MLB playoffs",
-      "summary": "Here's how the winter looks in Chicago, Boston and Houston after those teams were swept out of the playoffs.",
-      "url": "https://www.espn.com/mlb/story/_/id/50052092/mlb-playoffs-2026-offseason-eliminated-teams-questions",
-      "sport": "MLB",
-      "published": "2026-10-13T15:35:15.000Z",
-      "firstSeen": "2026-10-01T01:15:59.870Z",
-      "bestRank": 1
     },
     {
       "key": "50166535",
@@ -45056,369 +45320,6 @@
       "published": "2026-09-25T03:38:45.000Z",
       "firstSeen": "2026-09-25T03:31:54.423Z",
       "bestRank": 5
-    },
-    {
-      "key": "50024935",
-      "id": "50024935",
-      "headline": "Falcons handle Packers at Lambeau for first win of season",
-      "summary": "Falcons handle Packers at Lambeau for first win of season",
-      "url": "https://www.espn.com/video/clip/_/id/50024935/falcons-handle-packers-lambeau-first-win-season",
-      "sport": "NFL",
-      "published": "2026-09-25T03:24:50.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50024814",
-      "id": "50024814",
-      "headline": "Wyndham Clark: Presidents Cup atmosphere felt 'kind of dead'",
-      "summary": "Wyndham Clark challenged fans to be more vocal at the Presidents Cup after he said it felt \"kind of dead\" at Medinah Country Club outside Chicago on Thursday.",
-      "url": "https://www.espn.com/golf/story/_/id/50024814/wyndham-clark-presidents-cup-atmosphere-felt-kind-dead",
-      "sport": "Golf",
-      "published": "2026-09-25T03:08:16.000Z",
-      "firstSeen": "2026-09-25T09:31:24.474Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50024459",
-      "id": "50024459",
-      "headline": "Guardians clinch a playoff spot again, edging the Red Sox 1-0 on Martínez homer",
-      "summary": "— Angel Martínez homered and Joey Cantillo threw five one-hit innings in a bulk relief role as the Cleveland Guardians clinched a playoff spot for the third straight year with a 1-0 win over the Boston Red Sox on Thursday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817061",
-      "sport": "MLB",
-      "published": "2026-09-25T03:02:29.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50024022",
-      "id": "50024022",
-      "headline": "U.S. leads International team after Day 1 of Presidents Cup",
-      "summary": "Scottie Scheffler and Sam Burns finally won a match together on their fifth try, and it came at just the right time for an American team that hung on to win the opening session of fourballs Thursday in the Presidents Cup.",
-      "url": "https://www.espn.com/golf/story/_/id/50024022/us-leads-1-point-day-1-presidents-cup",
-      "sport": "Golf",
-      "published": "2026-09-25T02:57:14.000Z",
-      "firstSeen": "2026-09-25T06:44:53.175Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50024812",
-      "id": "50024812",
-      "headline": "Is Emmett Johnson closing in on becoming a fantasy starter?",
-      "summary": "Is Emmett Johnson closing in on becoming a fantasy starter?",
-      "url": "https://www.espn.com/video/clip/_/id/50024812/is-emmett-johnson-closing-becoming-fantasy-starter",
-      "sport": "NFL",
-      "published": "2026-09-25T02:54:39.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50024811",
-      "id": "50024811",
-      "headline": "Minnesota Lynx vs. Indiana Fever - Game Highlights",
-      "summary": "Watch the Game Highlights from Minnesota Lynx vs. Indiana Fever, 09/24/2026",
-      "url": "https://www.espn.com/video/clip/_/id/50024811/minnesota-lynx-vs-indiana-fever-game-highlights",
-      "sport": "WNBA",
-      "published": "2026-09-25T02:53:34.000Z",
-      "firstSeen": "2026-09-25T06:44:53.175Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50024788",
-      "id": "50024788",
-      "headline": "Chicago Blackhawks vs. St. Louis Blues: Game Highlights",
-      "summary": "Chicago Blackhawks vs. St. Louis Blues: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50024788/game-highlights",
-      "sport": "NHL",
-      "published": "2026-09-25T02:53:03.000Z",
-      "firstSeen": "2026-09-25T06:44:53.175Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50024069",
-      "id": "50024069",
-      "headline": "Phillies' Arraez, chasing batting title, exits with sprained ankle",
-      "summary": "Phillies second baseman Luis Arraez left Thursday's loss against Milwaukee with a sprained left ankle after he tried to avoid a tag at first base.",
-      "url": "https://www.espn.com/mlb/story/_/id/50024069/phillies-arraez-chasing-batting-title-exits-sprained-ankle",
-      "sport": "MLB",
-      "published": "2026-09-25T02:51:15.000Z",
-      "firstSeen": "2026-09-25T01:01:17.091Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50024509",
-      "id": "50024509",
-      "headline": "Touted 7-foot prospect Muurinen cleared to play for Arkansas",
-      "summary": "Arkansas freshman Miikka Muurinen, a 7-foot former European pro from Finland, has been cleared to play this season.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50024509/touted-7-foot-prospect-muurinen-cleared-play-arkansas",
-      "sport": "College basketball",
-      "published": "2026-09-25T02:42:08.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50024669",
-      "id": "50024669",
-      "headline": "Is Dak Prescott a top-10 fantasy QB for Week 3?",
-      "summary": "Is Dak Prescott a top-10 fantasy QB for Week 3?",
-      "url": "https://www.espn.com/video/clip/_/id/50024669/is-dak-prescott-top-10-fantasy-qb-week-3",
-      "sport": "NFL",
-      "published": "2026-09-25T02:41:49.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50009423",
-      "id": "50009423",
-      "headline": "Inside the basketball of 'One Tree Hill' 23 years later",
-      "summary": "In honor of 23 years since \"One Tree Hill\" premiered, James Lafferty & Co. take us inside the basketball heart of the cult classic TV show.",
-      "url": "https://www.espn.com/nba/story/_/id/50009423/one-tree-hill-23-anniversary-basketball-michael-jordan-wilmington-north-carolina-james-lafferty",
-      "sport": "College basketball",
-      "published": "2026-09-25T02:37:40.000Z",
-      "firstSeen": "2026-09-23T15:28:31.782Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50024621",
-      "id": "50024621",
-      "headline": "Buffalo Sabres vs. Detroit Red Wings: Game Highlights",
-      "summary": "Buffalo Sabres vs. Detroit Red Wings: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50024621/game-highlights",
-      "sport": "NHL",
-      "published": "2026-09-25T02:23:40.000Z",
-      "firstSeen": "2026-09-25T06:44:53.175Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50008808",
-      "id": "50008808",
-      "headline": "NFL Week 3 uniforms: Colts to wear 'Anvil Strike,' Bills debut 'Nickel City'",
-      "summary": "Here's a look at what each NFL team is wearing in Week 3, led by the new NFL Rivalries look from the Indianapolis Colts.",
-      "url": "https://www.espn.com/nfl/story/_/id/50008808/nfl-week-3-uniforms",
-      "sport": "NFL",
-      "published": "2026-09-25T02:20:30.000Z",
-      "firstSeen": "2026-09-24T15:28:54.179Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50024592",
-      "id": "50024592",
-      "headline": "Elly De La Cruz hits 30th homer and Reds rally for 7-6 win over Braves, who lock up NL's No. 3 seed",
-      "summary": "— Elly De La Cruz hit his 30th homer, Héctor Rodríguez and rookie Carlos Jorge also went deep, and the Cincinnati Reds rallied from an early deficit to beat the NL East champion Atlanta Braves 7-6 on Thursday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817060",
-      "sport": "MLB",
-      "published": "2026-09-25T02:16:30.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50023520",
-      "id": "50023520",
-      "headline": "How the Lakers are preparing for life after LeBron James",
-      "summary": "How the Lakers are preparing for life after LeBron James",
-      "url": "https://www.espn.com/video/clip/_/id/50023520/how-lakers-preparing-life-lebron-james",
-      "sport": "NBA",
-      "published": "2026-09-25T02:14:00.000Z",
-      "firstSeen": "2026-09-25T01:01:17.091Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50024570",
-      "id": "50024570",
-      "headline": "Tampa Bay Rays vs. New York Yankees: Game Highlights",
-      "summary": "Tampa Bay Rays vs. New York Yankees: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50024570/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-25T02:13:04.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50024575",
-      "id": "50024575",
-      "headline": "New Jersey Devils vs. New York Rangers: Game Highlights",
-      "summary": "New Jersey Devils vs. New York Rangers: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50024575/game-highlights",
-      "sport": "NHL",
-      "published": "2026-09-25T02:13:00.000Z",
-      "firstSeen": "2026-09-25T06:44:53.175Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50023928",
-      "id": "50023928",
-      "headline": "Pelinka: Lakers grateful for run with LeBron, exit 'done amicably'",
-      "summary": "Rob Pelinka said Thursday that the Lakers remain thankful for their time with LeBron James.",
-      "url": "https://www.espn.com/nba/story/_/id/50023928/pelinka-lakers-grateful-run-lebron-exit-done-amicably",
-      "sport": "NBA",
-      "published": "2026-09-25T02:09:32.000Z",
-      "firstSeen": "2026-09-25T01:01:17.091Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50022885",
-      "id": "50022885",
-      "headline": "White Sox clinch playoff berth after three straight 100-loss seasons",
-      "summary": "The White Sox became the first team to follow consecutive 100-loss seasons by reaching the playoffs, clinching at least an AL Wild Card berth with win No. 82 this year.",
-      "url": "https://www.espn.com/mlb/story/_/id/50022885/white-sox-clinch-playoff-berth-back-back-100-loss-seasons",
-      "sport": "MLB",
-      "published": "2026-09-25T02:07:42.000Z",
-      "firstSeen": "2026-09-24T21:25:46.252Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50024528",
-      "id": "50024528",
-      "headline": "Cincinnati Reds vs. Atlanta Braves: Game Highlights",
-      "summary": "Cincinnati Reds vs. Atlanta Braves: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50024528/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-25T02:07:37.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50024280",
-      "id": "50024280",
-      "headline": "Sun execs Rizzotti, Tuck to make move with team to Houston",
-      "summary": "Jen Rizzotti and Morgan Tuck will relocate with the Sun when the team moves to Houston this offseason, with Rizzotti becoming the president of basketball operations and Tuck continuing to serve as GM.",
-      "url": "https://www.espn.com/wnba/story/_/id/50024280/sun-execs-rizzotti-tuck-make-move-team-houston",
-      "sport": "WNBA",
-      "published": "2026-09-25T01:57:57.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50024477",
-      "id": "50024477",
-      "headline": "Boston Bruins vs. Philadelphia Flyers: Game Highlights",
-      "summary": "Boston Bruins vs. Philadelphia Flyers: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50024477/game-highlights",
-      "sport": "NHL",
-      "published": "2026-09-25T01:51:10.000Z",
-      "firstSeen": "2026-09-25T06:44:53.175Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50024466",
-      "id": "50024466",
-      "headline": "Washington Mystics vs. Chicago Sky - Game Highlights",
-      "summary": "Watch the Game Highlights from Washington Mystics vs. Chicago Sky, 09/24/2026",
-      "url": "https://www.espn.com/video/clip/_/id/50024466/washington-mystics-vs-chicago-sky-game-highlights",
-      "sport": "WNBA",
-      "published": "2026-09-25T01:47:09.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50024461",
-      "id": "50024461",
-      "headline": "Nashville Predators vs. Carolina Hurricanes: Game Highlights",
-      "summary": "Nashville Predators vs. Carolina Hurricanes: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50024461/game-highlights",
-      "sport": "NHL",
-      "published": "2026-09-25T01:44:06.000Z",
-      "firstSeen": "2026-09-25T06:44:53.175Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50024420",
-      "id": "50024420",
-      "headline": "Cleveland Guardians vs. Boston Red Sox: Game Highlights",
-      "summary": "Cleveland Guardians vs. Boston Red Sox: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50024420/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-25T01:39:01.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50024408",
-      "id": "50024408",
-      "headline": "Milwaukee Brewers vs. Philadelphia Phillies: Game Highlights",
-      "summary": "Milwaukee Brewers vs. Philadelphia Phillies: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50024408/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-25T01:37:09.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50021366",
-      "id": "50021366",
-      "headline": "NFL fines 49ers' Kyle Juszczyk for imitating 'chugging a beer'",
-      "summary": "The NFL fined San Francisco 49ers fullback Kyle Juszczyk $14,926 on Thursday for \"engaging in offensive demonstrations.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/50021366/nfl-fines-49ers-kyle-juszczyk-imitating-chugging-beer",
-      "sport": "NFL",
-      "published": "2026-09-25T01:28:00.000Z",
-      "firstSeen": "2026-09-24T18:33:22.460Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50023459",
-      "id": "50023459",
-      "headline": "Nevada coach Steve Alford to retire at end of upcoming season",
-      "summary": "Steve Alford is ending a 36-year coaching career that also included stops at Iowa, New Mexico and UCLA.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50023459/nevada-coach-steve-alford-retire-end-upcoming-season",
-      "sport": "College basketball",
-      "published": "2026-09-25T01:22:05.000Z",
-      "firstSeen": "2026-09-25T01:01:17.091Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50024354",
-      "id": "50024354",
-      "headline": "Connecticut Sun vs. Toronto Tempo - Game Highlights",
-      "summary": "Watch the Game Highlights from Connecticut Sun vs. Toronto Tempo, 09/24/2026",
-      "url": "https://www.espn.com/video/clip/_/id/50024354/connecticut-sun-vs-toronto-tempo-game-highlights",
-      "sport": "WNBA",
-      "published": "2026-09-25T01:15:45.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50024313",
-      "id": "50024313",
-      "headline": "Brewers reach 100 wins for first time, slow Phillies' playoff push with 5-1 victory",
-      "summary": "— The Milwaukee Brewers reached 100 wins for the first time, and Jackson Chourio hit his 25th homer to lift them to a 5-1 victory over Philadelphia on Thursday night that slowed the Phillies’ playoff push.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817062",
-      "sport": "MLB",
-      "published": "2026-09-25T01:09:42.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50022597",
-      "id": "50022597",
-      "headline": "Blue Jackets re-sign Adam Fantilli to 6-year, $82.5M deal",
-      "summary": "The Blue Jackets re-signed center Adam Fantilli to a six-year, $82.5 million contract.",
-      "url": "https://www.espn.com/nhl/story/_/id/50022597/blue-jackets-re-sign-adam-fantilli-6-year-825m-deal",
-      "sport": "NHL",
-      "published": "2026-09-25T01:09:03.000Z",
-      "firstSeen": "2026-09-25T01:01:17.091Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50023100",
-      "id": "50023100",
-      "headline": "Bob Pettit, who starred at LSU and then in NBA, dies at 93",
-      "summary": "Bob Pettit, who was named an All-Star in each of his 11 NBA seasons and was one of the greatest scorers and rebounders in league history, died, the Naismith Basketball Hall of Fame said Thursday.",
-      "url": "https://www.espn.com/nba/story/_/id/50023100/bob-pettit-starred-lsu-nba-dies-93",
-      "sport": "NBA",
-      "published": "2026-09-25T01:04:28.000Z",
-      "firstSeen": "2026-09-25T01:01:17.091Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50024112",
-      "id": "50024112",
-      "headline": "No. 16 Louisville loses Antonio Watts for season with knee injury",
-      "summary": "Linebacker and safety Antonio Watts will miss the rest of the season for the 16th-ranked Louisville Cardinals with an injured knee.",
-      "url": "https://www.espn.com/college-football/story/_/id/50024112/louisville-loses-antonio-watts-season-knee-injury",
-      "sport": "College football",
-      "published": "2026-09-25T00:59:13.000Z",
-      "firstSeen": "2026-09-25T03:31:54.423Z",
-      "bestRank": 1
     }
   ]
 }
