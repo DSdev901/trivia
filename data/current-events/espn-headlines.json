@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-17T06:39:28.552Z",
+  "generatedAt": "2026-10-17T09:27:02.419Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-26T06:39:28.552Z",
-  "windowEnd": "2026-10-17T06:39:28.552Z",
+  "windowStart": "2026-09-26T09:27:02.419Z",
+  "windowEnd": "2026-10-17T09:27:02.419Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,30 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4076,
+  "count": 4063,
   "items": [
+    {
+      "key": "50200246",
+      "id": "50200246",
+      "headline": "Kings bring 5-game losing streak into matchup with the Bruins",
+      "summary": "Boston Bruins (6-2, in the Atlantic Division) vs. Los Angeles Kings (0-3-2, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892530",
+      "sport": "NHL",
+      "published": "2026-10-17T08:11:33.000Z",
+      "firstSeen": "2026-10-17T09:27:02.419Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50200221",
+      "id": "50200221",
+      "headline": "Guardians bring 2-1 ALCS lead into Game 4 against Rays",
+      "summary": "Tampa Bay Rays (98-64, first in the AL East during the regular season) vs. Cleveland Guardians (85-77, first in the AL Central during the regular season)",
+      "url": "http://www.espn.com/mlb/preview?gameId=401908027",
+      "sport": "MLB",
+      "published": "2026-10-17T08:02:27.000Z",
+      "firstSeen": "2026-10-17T09:27:02.419Z",
+      "bestRank": 1
+    },
     {
       "key": "50199797",
       "id": "50199797",
@@ -1866,7 +1888,7 @@
       "headline": "Harry Kane has talent for NFL - Jags kicker Cam Little",
       "summary": "Cam Little is confident Harry Kane has the skill to become an NFL kicker.",
       "url": "https://www.espn.com/nfl/story/_/id/50195310/harry-kane-talent-nfl-jacksonville-jaguars-kicker-cam-little",
-      "sport": "Soccer",
+      "sport": "NFL",
       "published": "2026-10-16T11:58:04.000Z",
       "firstSeen": "2026-10-16T12:39:40.472Z",
       "bestRank": 1
@@ -44693,171 +44715,6 @@
       "published": "2026-09-26T10:00:01.000Z",
       "firstSeen": "2026-09-26T12:35:25.349Z",
       "bestRank": 2
-    },
-    {
-      "key": "50031807",
-      "id": "50031807",
-      "headline": "Max Verstappen says he prefers F1 not to race in Middle East due to ongoing conflict",
-      "summary": "Max Verstappen said if it was up to him Formula 1 would not finish the season in Qatar and Abu Dhabi due to the ongoing United States-Iran conflict.",
-      "url": "https://www.espn.com/espn/story/_/id/50031807/max-verstappen-lewis-hamilton-f1-middle-east-iran",
-      "sport": "F1",
-      "published": "2026-09-26T09:22:00.000Z",
-      "firstSeen": "2026-09-26T15:25:43.645Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50031797",
-      "id": "50031797",
-      "headline": "Munetaka Murakami homers twice as playoff-bound White Sox top Rockies 6-1",
-      "summary": "— Munetaka Murakami homered twice to increase his season total to 35, and the playoff-bound Chicago White Sox beat the Colorado Rockies 6-1 on Friday night as they tried to gain ground in the AL Central.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817080",
-      "sport": "MLB",
-      "published": "2026-09-26T08:55:15.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50031795",
-      "id": "50031795",
-      "headline": "Pete Alonso homers twice to take over AL lead as Orioles rout Yanks 10-2 in doubleheader opener",
-      "summary": "— Pete Alonso homered twice to take over the American League lead with 43, including a 471-foot drive deep into the left field bleachers, and the Baltimore Orioles routed the New York Yankees 10-2 in a doubleheader opener on Friday.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817088",
-      "sport": "MLB",
-      "published": "2026-09-26T08:52:36.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50031793",
-      "id": "50031793",
-      "headline": "Cubs-Red Sox series finale moved to Florida amid storm threat in Boston",
-      "summary": "— Major League Baseball moved a regular-season series finale between the Red Sox and Chicago Cubs from Fenway Park to Tropicana Field in St. Petersburg, Florida, because of a weekend storm threat in the Boston area.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817104",
-      "sport": "MLB",
-      "published": "2026-09-26T08:50:32.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50031791",
-      "id": "50031791",
-      "headline": "Red Sox beat Cubs 2-0 to sweep doubleheader after setting Wild Card Series matchup with Yankees",
-      "summary": "— Wilyer Abreu hit a two-run double in the eighth inning, and the Boston Red Sox beat the Chicago White Sox 2-0 Friday night to sweep a doubleheader.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817074",
-      "sport": "MLB",
-      "published": "2026-09-26T08:46:43.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50012731",
-      "id": "50012731",
-      "headline": "Who is Liverpool's new sporting director Julian Ward and what does he need to do?",
-      "summary": "Julian Ward has been appointed as Liverpool's sporting director and he'll need to decide the futures of Virgil van Dijk and Alisson Becker, as well as targeting new faces.",
-      "url": "https://www.espn.com/soccer/story/_/id/50012731/who-liverpool-new-sporting-director-julian-ward-does-need-do",
-      "sport": "Soccer",
-      "published": "2026-09-26T08:28:14.000Z",
-      "firstSeen": "2026-09-26T12:35:25.349Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50031702",
-      "id": "50031702",
-      "headline": "Marlins host the Braves on 3-game home win streak",
-      "summary": "Atlanta Braves (93-67, first in the NL East) vs. Miami Marlins (79-81, third in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401817087",
-      "sport": "MLB",
-      "published": "2026-09-26T08:02:55.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50031700",
-      "id": "50031700",
-      "headline": "Diamondbacks aim to keep win streak alive against the Padres",
-      "summary": "Arizona Diamondbacks (86-74, third in the NL West) vs. San Diego Padres (89-71, second in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401817099",
-      "sport": "MLB",
-      "published": "2026-09-26T08:02:51.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50031699",
-      "id": "50031699",
-      "headline": "Giants to end skid in matchup with the Dodgers",
-      "summary": "Los Angeles Dodgers (98-62, first in the NL West) vs. San Francisco Giants (65-95, fourth in the NL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401817101",
-      "sport": "MLB",
-      "published": "2026-09-26T08:02:47.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50031698",
-      "id": "50031698",
-      "headline": "Phillies bring home losing streak into matchup with the Rays",
-      "summary": "Tampa Bay Rays (97-63, first in the AL East) vs. Philadelphia Phillies (87-73, second in the NL East)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401817093",
-      "sport": "MLB",
-      "published": "2026-09-26T08:02:44.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50031697",
-      "id": "50031697",
-      "headline": "Guardians bring 1-0 series lead over Royals into game 2",
-      "summary": "Cleveland Guardians (84-76, first in the AL Central) vs. Kansas City Royals (68-92, fifth in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401817094",
-      "sport": "MLB",
-      "published": "2026-09-26T08:02:40.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50031696",
-      "id": "50031696",
-      "headline": "Brewers bring 1-0 series advantage over Cardinals into game 2",
-      "summary": "St. Louis Cardinals (77-83, fourth in the NL Central) vs. Milwaukee Brewers (101-59, first in the NL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401817096",
-      "sport": "MLB",
-      "published": "2026-09-26T08:02:36.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50031695",
-      "id": "50031695",
-      "headline": "Athletics host the Houston Astros Saturday",
-      "summary": "Houston Astros (79-81, first in the AL West) vs. Athletics (64-96, fourth in the AL West)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401817100",
-      "sport": "MLB",
-      "published": "2026-09-26T08:02:33.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 11
-    },
-    {
-      "key": "50031694",
-      "id": "50031694",
-      "headline": "Rockies aim to break 5-game losing streak, play the White Sox",
-      "summary": "Colorado Rockies (57-103, fifth in the NL West) vs. Chicago White Sox (83-77, second in the AL Central)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401817095",
-      "sport": "MLB",
-      "published": "2026-09-26T08:02:30.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50031334",
-      "id": "50031334",
-      "headline": "Bryant Wesco's punt return TD leads Clemson to a 24-10 win over Cal",
-      "summary": "— Bryant Wesco Jr. had Clemson's first punt return touchdown in eight years to break a tie late in the third quarter and the Tigers went on to beat California 24-10 Friday night in a game where both offenses struggled.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858234",
-      "sport": "College football",
-      "published": "2026-09-26T07:21:28.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 3
     }
   ]
 }
