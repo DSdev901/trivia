@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-17T03:30:48.683Z",
+  "generatedAt": "2026-10-17T06:39:28.552Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-26T03:30:48.683Z",
-  "windowEnd": "2026-10-17T03:30:48.683Z",
+  "windowStart": "2026-09-26T06:39:28.552Z",
+  "windowEnd": "2026-10-17T06:39:28.552Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,63 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4090,
+  "count": 4076,
   "items": [
+    {
+      "key": "50199797",
+      "id": "50199797",
+      "headline": "James, Embiid play 76ers' preseason finale, but 'still working on our rhythm'",
+      "summary": "Without VJ Edgecombe, who was held out of Friday night's 125-120 loss to the Celtics, 76ers coach Nick Nurse gave the closest glimpse of what this team may look like this season, including LeBron James and Joel Embiid playing preseason highs in minutes.",
+      "url": "https://www.espn.com/nba/story/_/id/50199797/lebron-james-76ers-working-our-rhythm-opener-nears",
+      "sport": "NBA",
+      "published": "2026-10-17T05:50:42.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50199875",
+      "id": "50199875",
+      "headline": "Denver Nuggets vs. Los Angeles Lakers: Game Highlights",
+      "summary": "Denver Nuggets vs. Los Angeles Lakers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50199875/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-17T05:13:18.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50199825",
+      "id": "50199825",
+      "headline": "Boston Bruins vs. Anaheim Ducks: Game Highlights",
+      "summary": "Boston Bruins vs. Anaheim Ducks: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50199825/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-17T04:54:50.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50199656",
+      "id": "50199656",
+      "headline": "Elijah Brown's 3 TD passes help Washington end 3-game skid with 38-26 victory over Purdue",
+      "summary": "— Elijah Brown threw for 302 yards and three touchdowns Friday night to help Washington break a three-game losing streak with a 38-26 victory over Purdue.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401858493",
+      "sport": "College football",
+      "published": "2026-10-17T04:53:36.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50199812",
+      "id": "50199812",
+      "headline": "Elias Lindholm's big 3rd period sparks streaking Bruins' comeback for 4-2 win over Ducks",
+      "summary": "— Elias Lindholm assisted on the tying goal and scored the go-ahead goal in the third period, leading the Boston Bruins past the Anaheim Ducks 4-2 on Friday night for their fourth straight victory.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892518",
+      "sport": "NHL",
+      "published": "2026-10-17T04:51:28.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 2
+    },
     {
       "key": "50199345",
       "id": "50199345",
@@ -30,9 +85,130 @@
       "summary": "LeBron James gave a sellout crowd a glimpse of his \"connection\" with new teammate Tyrese Maxey when James threw down an alley-oop jam in his Sixers home debut.",
       "url": "https://www.espn.com/nba/story/_/id/50199345/lebron-fires-crowd-monster-slam-sixers-home-debut",
       "sport": "NBA",
-      "published": "2026-10-17T03:28:04.000Z",
+      "published": "2026-10-17T04:47:54.000Z",
       "firstSeen": "2026-10-17T03:30:48.683Z",
       "bestRank": 4
+    },
+    {
+      "key": "50199801",
+      "id": "50199801",
+      "headline": "Portland Trail Blazers vs. Golden State Warriors: Game Highlights",
+      "summary": "Portland Trail Blazers vs. Golden State Warriors: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50199801/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-17T04:44:32.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50199695",
+      "id": "50199695",
+      "headline": "Columbia Lions vs. Pennsylvania Quakers: Full Highlights",
+      "summary": "Columbia Lions vs. Pennsylvania Quakers: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50199695/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-17T04:23:26.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50199660",
+      "id": "50199660",
+      "headline": "Pittsburgh Penguins vs. Colorado Avalanche: Game Highlights",
+      "summary": "Pittsburgh Penguins vs. Colorado Avalanche: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50199660/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-17T04:08:21.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 3
+    },
+    {
+      "key": "41679163",
+      "id": "41679163",
+      "headline": "Which player has the most career points in NHL history?",
+      "summary": "Wayne Gretzky leads the list of NHL players with the most career points. Check out other top performers now.",
+      "url": "https://www.espn.com/nhl/story/_/id/41679163/which-player-most-career-points-nhl-history",
+      "sport": "NHL",
+      "published": "2026-10-17T03:53:23.000Z",
+      "firstSeen": "2026-10-14T06:44:01.001Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50189765",
+      "id": "50189765",
+      "headline": "Commanders vs. 49ers: Where to watch 'Monday Night Football'",
+      "summary": "Here's what to know about the Week 6 matchup.",
+      "url": "https://www.espn.com/nfl/story/_/id/50189765/commanders-vs-49ers-watch-monday-night-football-week-6",
+      "sport": "NFL",
+      "published": "2026-10-17T03:53:00.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50199580",
+      "id": "50199580",
+      "headline": "Nathan MacKinnon has goal and 3 assists, Artturi Lehkonen scores twice as Avs beat Penguins 5-2",
+      "summary": "— Nathan MacKinnon had three assists and a power-play goal, Artturi Lehkonen scored twice and the Colorado Avalanche rallied to beat the Pittsburgh Penguins 5-2 on Friday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892517",
+      "sport": "NHL",
+      "published": "2026-10-17T03:52:40.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50199575",
+      "id": "50199575",
+      "headline": "Jaquari Lewis' 4 TD runs lead Appalachian State to 35-32 victory over Coastal Carolina",
+      "summary": "— Jaquari Lewis had four touchdown runs and Appalachian State rallied to beat Coastal Carolina 35-32 on Friday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401869844",
+      "sport": "College football",
+      "published": "2026-10-17T03:50:27.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50190583",
+      "id": "50190583",
+      "headline": "Where to watch Ben Simmons 'E60' documentary",
+      "summary": "'Being Ben' premieres on Sunday,",
+      "url": "https://www.espn.com/nba/story/_/id/50190583/watch-e60-ben-simmons-documentary",
+      "sport": "NBA",
+      "published": "2026-10-17T03:50:26.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50199512",
+      "id": "50199512",
+      "headline": "Appalachian State Mountaineers vs. Coastal Carolina Chanticleers: Full Highlights",
+      "summary": "Appalachian State Mountaineers vs. Coastal Carolina Chanticleers: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50199512/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-17T03:31:18.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50199506",
+      "id": "50199506",
+      "headline": "TJ Smith has pick-6 as Tulane forces 6 turnovers in 31-17 victory over Memphis",
+      "summary": "— TJ Smith returned an interception 76 yards for a touchdown on the final play of the first half, and Johnnie Daniels raced 48 yards for a score on a fourth-and-1 run with 1:34 remaining as Tulane forced six turnovers in a 31-17 victory over Memphis...",
+      "url": "http://www.espn.com/ncf/recap?gameId=401862801",
+      "sport": "College football",
+      "published": "2026-10-17T03:28:29.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50199496",
+      "id": "50199496",
+      "headline": "Memphis Tigers vs. Tulane Green Wave: Full Highlights",
+      "summary": "Memphis Tigers vs. Tulane Green Wave: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50199496/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-17T03:24:16.000Z",
+      "firstSeen": "2026-10-17T06:39:28.552Z",
+      "bestRank": 6
     },
     {
       "key": "50199430",
@@ -722,7 +898,7 @@
       "headline": "NCAA sues Ohio gov. over order allowing schools to ignore new eligibility rule",
       "summary": "The NCAA has filed a federal lawsuit against Ohio Gov. Mike DeWine three days after he signed an executive order giving the state's colleges and universities the option of allowing athletes who graduated from high school in 2022 to play a fifth year.",
       "url": "https://www.espn.com/college-sports/story/_/id/50196596/ncaa-sues-ohio-gov-eligibility-order-5th-year-athletes",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-16T20:07:31.000Z",
       "firstSeen": "2026-10-16T18:32:34.965Z",
       "bestRank": 1
@@ -4325,17 +4501,6 @@
       "bestRank": 1
     },
     {
-      "key": "41679163",
-      "id": "41679163",
-      "headline": "Which player has the most career points in NHL history?",
-      "summary": "Wayne Gretzky leads the list of NHL players with the most career points. Check out other top performers now.",
-      "url": "https://www.espn.com/nhl/story/_/id/41679163/which-player-most-career-points-nhl-history",
-      "sport": "NHL",
-      "published": "2026-10-15T03:11:19.000Z",
-      "firstSeen": "2026-10-14T06:44:01.001Z",
-      "bestRank": 1
-    },
-    {
       "key": "50184544",
       "id": "50184544",
       "headline": "Marvin Harrison Jr. will play for Texans on Sunday in London, coach says",
@@ -6057,7 +6222,7 @@
       "headline": "Ohio Gov. Mike DeWine signs order letting state's 2022 athletes play in 2026-27",
       "summary": "Ohio Gov. Mike DeWine signed an executive order allowing 2022 athletes to play even though the NCAA's new guidance excludes those who have already played four seasons.",
       "url": "https://www.espn.com/college-sports/story/_/id/50177542/ohio-gov-dewine-signs-order-2022-athletes-play-2026-27",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-14T02:41:34.000Z",
       "firstSeen": "2026-10-14T00:58:06.882Z",
       "bestRank": 1
@@ -8917,7 +9082,7 @@
       "headline": "James Madison to exit Sun Belt, join American Conference",
       "summary": "James Madison has accepted membership into the American Athletic Association, the university announced Monday.",
       "url": "https://www.espn.com/college-sports/story/_/id/50166450/james-madison-exit-sun-belt-join-american-conference",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-12T15:30:06.000Z",
       "firstSeen": "2026-10-12T15:32:56.568Z",
       "bestRank": 1
@@ -15682,7 +15847,7 @@
       "headline": "Reports - Watchdog eyes NIL violations at 5-10 Power 4 schools",
       "summary": "The College Sports Commission is looking into possible rules violations at between five and 10 Power 4 schools regarding payments to players, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/50142371/reports-watchdog-eyes-nil-violations-5-10-power-4-schools",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-09T22:48:19.000Z",
       "firstSeen": "2026-10-09T21:28:17.260Z",
       "bestRank": 1
@@ -18465,7 +18630,7 @@
       "headline": "Big Ten has '18 strong members,' no expansion talks, commish says",
       "summary": "Big Ten commissioner Tony Petitti said the conference has had \"absolutely no discussions taking place around expansion, and there haven't been for quite some time.\"",
       "url": "https://www.espn.com/college-sports/story/_/id/50133579/big-ten-18-strong-members-no-expansion-talks-commish-says",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-08T17:09:12.000Z",
       "firstSeen": "2026-10-08T18:37:03.521Z",
       "bestRank": 1
@@ -20753,7 +20918,7 @@
       "headline": "NCAA proposes summer competition for college basketball teams",
       "summary": "The NCAA is proposing allowing summer competition between college basketball teams as a potential new revenue source.",
       "url": "https://www.espn.com/college-sports/story/_/id/50119590/ncaa-proposes-summer-competition-college-basketball-teams",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-07T13:45:31.000Z",
       "firstSeen": "2026-10-06T21:27:55.074Z",
       "bestRank": 1
@@ -22084,7 +22249,7 @@
       "headline": "Commissioner touts ACC's health amid questions of departures",
       "summary": "ACC boss Jim Phillips isn't fretting about Clemson, FSU, Miami and UNC wanting to tweak the Protect College Sports Act to make it easier for schools to change leagues.",
       "url": "https://www.espn.com/college-sports/story/_/id/50118608/commissioner-touts-acc-health-amid-questions-departures",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-06T20:07:46.000Z",
       "firstSeen": "2026-10-06T21:27:55.074Z",
       "bestRank": 1
@@ -31269,7 +31434,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "With a month to go until the 2026-27 season begins, we check in on the NCAA's player eligibility cases -- and LSU.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-02T11:13:23.000Z",
       "firstSeen": "2026-10-02T12:41:58.213Z",
       "bestRank": 1
@@ -31973,7 +32138,7 @@
       "headline": "Student-athletes received $1.77B in revenue-sharing pay in '25-26",
       "summary": "Sixty-eight schools reached or came within 5% of reaching the $20.5 million revenue-sharing cap over the first season of NIL payments.",
       "url": "https://www.espn.com/college-sports/story/_/id/50080194/student-athletes-received-177b-revenue-sharing-pay-25-26",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-02T00:21:41.000Z",
       "firstSeen": "2026-10-02T03:34:46.329Z",
       "bestRank": 1
@@ -32644,7 +32809,7 @@
       "headline": "NCAA reducing fields for NIT, WBIT to 24 teams starting in 2027",
       "summary": "In the aftermath of the NCAA tournaments expanding to 76 teams starting this season, the NIT and Women's Basketball Invitation Tournament will drop from 32 teams to 24 beginning in 2027, the NCAA announced.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50077597/ncaa-reducing-fields-nit-wbit-24-teams-starting-2027",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-01T17:19:11.000Z",
       "firstSeen": "2026-10-01T18:36:52.245Z",
       "bestRank": 1
@@ -44693,325 +44858,6 @@
       "published": "2026-09-26T07:21:28.000Z",
       "firstSeen": "2026-09-26T06:40:49.413Z",
       "bestRank": 3
-    },
-    {
-      "key": "50031430",
-      "id": "50031430",
-      "headline": "SVP reflects on Steph Curry's longevity with the Warriors after contract extension",
-      "summary": "SVP reflects on Steph Curry's longevity with the Warriors after contract extension",
-      "url": "https://www.espn.com/video/clip/_/id/50031430/svp-reflects-steph-curry-longevity-warriors-contract-extension",
-      "sport": "NBA",
-      "published": "2026-09-26T06:34:09.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50031067",
-      "id": "50031067",
-      "headline": "No. 5 Indiana loses RB Turbo Richard to right leg injury",
-      "summary": "Indiana starting running back Turbo Richard left Friday's 29-23 win over Northwestern with a right lower-leg injury in the first half and did not return.",
-      "url": "https://www.espn.com/college-football/story/_/id/50031067/no-5-indiana-loses-rb-turbo-richard-right-leg-injury",
-      "sport": "College football",
-      "published": "2026-09-26T06:32:34.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50031379",
-      "id": "50031379",
-      "headline": "Indiana WR Charlie Becker 'grateful' after Indiana's 20th straight win",
-      "summary": "Indiana WR Charlie Becker 'grateful' after Indiana's 20th straight win",
-      "url": "https://www.espn.com/video/clip/_/id/50031379/indiana-wr-charlie-becker-grateful-indiana-20th-straight-win",
-      "sport": "College football",
-      "published": "2026-09-26T06:20:10.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50031352",
-      "id": "50031352",
-      "headline": "Clemson Tigers vs. California Golden Bears: Full Highlights",
-      "summary": "Clemson Tigers vs. California Golden Bears: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50031352/full-highlights",
-      "sport": "College football",
-      "published": "2026-09-26T06:16:41.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50031344",
-      "id": "50031344",
-      "headline": "Lynx open playoffs against the Liberty",
-      "summary": "New York Liberty (26-18, 13-7 Eastern Conference) at Minnesota Lynx (33-11, 20-3 Western Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401918014",
-      "sport": "WNBA",
-      "published": "2026-09-26T06:10:39.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50031343",
-      "id": "50031343",
-      "headline": "Las Vegas opens playoffs against Indiana",
-      "summary": "Indiana Fever (28-16, 14-6 Eastern Conference) at Las Vegas Aces (31-13, 17-6 Western Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401918015",
-      "sport": "WNBA",
-      "published": "2026-09-26T06:10:36.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50031342",
-      "id": "50031342",
-      "headline": "Atlanta hosts Washington to begin playoffs",
-      "summary": "Washington Mystics (28-16, 15-5 Eastern Conference) at Atlanta Dream (30-14, 15-5 Eastern Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401918013",
-      "sport": "WNBA",
-      "published": "2026-09-26T06:10:32.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50031341",
-      "id": "50031341",
-      "headline": "Valkyries begin playoffs against the Wings",
-      "summary": "Dallas Wings (27-17, 13-10 Western Conference) at Golden State Valkyries (32-12, 15-8 Western Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401918016",
-      "sport": "WNBA",
-      "published": "2026-09-26T06:10:29.000Z",
-      "firstSeen": "2026-09-26T09:27:19.936Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50030789",
-      "id": "50030789",
-      "headline": "Rangers falter in AL West chase, lose to Twins 10-2 as deGrom matches high by allowing 8 earned runs",
-      "summary": "— Jacob deGrom matched a career high by allowing eight earned runs on Friday and the Texas Rangers stumbled again in the AL West race with a 10-2 loss to the Minnesota Twins.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817082",
-      "sport": "MLB",
-      "published": "2026-09-26T05:23:29.000Z",
-      "firstSeen": "2026-09-26T03:31:43.875Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50031183",
-      "id": "50031183",
-      "headline": "Bolte and Stefanic each hit 2 RBIs in sixth to lift Athletics past Astros 6-5",
-      "summary": "— Henry Bolte and Michael Stefanic both drove in two runs in the sixth inning, and Jacob Lopez tossed four strikeouts in the Athletics’ 6-5 win over the Houston Astros on Friday, assuring the AL West champion will be baseball’s first postseason team...",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817085",
-      "sport": "MLB",
-      "published": "2026-09-26T05:17:30.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50031025",
-      "id": "50031025",
-      "headline": "Teoscar Hernández, Andy Pages hit home runs, Skubal strikes out 10 as Dodgers beat Giants 2-0",
-      "summary": "— Teoscar Hernández and Andy Pages hit home runs in the second inning to back Tarik Skubal's three-hit, seven-inning performance, and the Los Angeles Dodgers beat the San Francisco Giants 2-0 on Friday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817086",
-      "sport": "MLB",
-      "published": "2026-09-26T05:13:29.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50031167",
-      "id": "50031167",
-      "headline": "Detmers throws 6 shutout innings as the Angels beat the Mariners 7-5",
-      "summary": "— Reid Detmers pitched six shutout innings, Wade Meckler finished a home run short of the cycle, and the Los Angeles Angels beat the Seattle Mariners 7-5 on Friday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817083",
-      "sport": "MLB",
-      "published": "2026-09-26T05:10:32.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50031157",
-      "id": "50031157",
-      "headline": "Los Angeles Angels vs. Seattle Mariners: Game Highlights",
-      "summary": "Los Angeles Angels vs. Seattle Mariners: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50031157/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-26T05:01:47.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50031072",
-      "id": "50031072",
-      "headline": "Arizona Diamondbacks vs. San Diego Padres: Game Highlights",
-      "summary": "Arizona Diamondbacks vs. San Diego Padres: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50031072/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-26T04:58:56.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50021477",
-      "id": "50021477",
-      "headline": "Tennessee and Texas battle for UT rights, SEC orange, Manning loyalty",
-      "summary": "The Vols and Horns haven't met since 1969, but there's still plenty of history in this matchup.",
-      "url": "https://www.espn.com/college-football/story/_/id/50021477/tennessee-texas-battle-ut-rights-sec-orange-manning-loyalty",
-      "sport": "College football",
-      "published": "2026-09-26T04:57:35.000Z",
-      "firstSeen": "2026-09-25T15:28:35.624Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50031116",
-      "id": "50031116",
-      "headline": "Houston Astros vs. Athletics: Game Highlights",
-      "summary": "Houston Astros vs. Athletics: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50031116/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-26T04:55:50.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50030975",
-      "id": "50030975",
-      "headline": "Lee Beebe Jr. rushes for 203 yards and No. 4 Indiana holds off surprising Northwestern 29-23",
-      "summary": "— Indiana running back Lee Beebe Jr. waited a whole year for an opportunity like the one he got Friday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858461",
-      "sport": "College football",
-      "published": "2026-09-26T04:47:29.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50029615",
-      "id": "50029615",
-      "headline": "Red Sox-Cubs finale set to be played Sunday at Tropicana Field",
-      "summary": "The Red Sox and Cubs will play their regular-season finale Sunday afternoon at Tropicana Field after the league relocated their series from Boston because of the forecast for inclement weather.",
-      "url": "https://www.espn.com/mlb/story/_/id/50029615/red-sox-cubs-finale-set-played-sunday-tropicana-field",
-      "sport": "MLB",
-      "published": "2026-09-26T04:47:20.000Z",
-      "firstSeen": "2026-09-26T01:00:10.067Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50031073",
-      "id": "50031073",
-      "headline": "Arenado, Perdomo lead Diamondbacks over Padres 11-4 to stay alive in wild-card hunt",
-      "summary": "— Nolan Arenado hit one of Arizona's three home runs and Geraldo Perdomo drove in four runs for the Diamondbacks, who beat San Diego 11-4 on Friday night to remain alive for the National League's final wild-card spot.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817084",
-      "sport": "MLB",
-      "published": "2026-09-26T04:38:29.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50031027",
-      "id": "50031027",
-      "headline": "Los Angeles Dodgers vs San Francisco Giants: Game Highlights",
-      "summary": "Los Angeles Dodgers vs San Francisco Giants: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50031027/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-26T04:25:08.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50030195",
-      "id": "50030195",
-      "headline": "Yankees to meet Red Sox in playoffs for seventh time",
-      "summary": "The Yankees and Red Sox both talked up the clubs' long-standing rivalry with mutual respect ahead of their best-of-three wild-card series.",
-      "url": "https://www.espn.com/mlb/story/_/id/50030195/yankees-meet-red-sox-playoffs-seventh",
-      "sport": "MLB",
-      "published": "2026-09-26T04:18:51.000Z",
-      "firstSeen": "2026-09-26T03:31:43.875Z",
-      "bestRank": 20
-    },
-    {
-      "key": "50030932",
-      "id": "50030932",
-      "headline": "Cincinnati Reds vs. Toronto Blue Jays: Game Highlights",
-      "summary": "Cincinnati Reds vs. Toronto Blue Jays: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50030932/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-26T04:17:31.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 13
-    },
-    {
-      "key": "50031004",
-      "id": "50031004",
-      "headline": "Guardians maintain 1-game AL Central lead, beat Royals 12-9 with help from 6 walks in 5-run 9th",
-      "summary": "— José Ramírez, Chase DeLauter and Petey Halpin drew consecutive bases-loaded walks in a five-run ninth inning capped by Angel Martínez's two-run double, and the Cleveland Guardians beat the Kansas City Royals 12-9 Friday night to maintain a one-game...",
-      "url": "http://www.espn.com/mlb/recap?gameId=401817079",
-      "sport": "MLB",
-      "published": "2026-09-26T04:06:33.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50030455",
-      "id": "50030455",
-      "headline": "White Sox's Montgomery sets single-season strikeout record",
-      "summary": "White Sox infielder Colson Montgomery set the record for most strikeouts in a season with his 224th on Friday.",
-      "url": "https://www.espn.com/mlb/story/_/id/50030455/white-sox-montgomery-sets-single-season-strikeout-record",
-      "sport": "MLB",
-      "published": "2026-09-26T04:05:50.000Z",
-      "firstSeen": "2026-09-26T03:31:43.875Z",
-      "bestRank": 15
-    },
-    {
-      "key": "50030966",
-      "id": "50030966",
-      "headline": "Colorado Rockies vs Chicago White Sox: Game Highlights",
-      "summary": "Colorado Rockies vs Chicago White Sox: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50030966/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-26T03:57:44.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 11
-    },
-    {
-      "key": "50030690",
-      "id": "50030690",
-      "headline": "Munetaka Murakami homers twice as playoff-bound White Sox top Rockies 6-1",
-      "summary": "— Munetaka Murakami homered twice to increase his season total to 35, and the playoff-bound Chicago White Sox beat the Colorado Rockies 6-1 on Friday night to remain one game behind first-place Cleveland in the AL Central.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401832928",
-      "sport": "MLB",
-      "published": "2026-09-26T03:57:28.000Z",
-      "firstSeen": "2026-09-26T03:31:43.875Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50030719",
-      "id": "50030719",
-      "headline": "Antwan Raymond runs for 140 yards and 3 TDs in Rutgers' 58-7 romp over Howard",
-      "summary": "— Antwan Raymond ran for 140 yards and three touchdowns to lead Rutgers to a 58-7 victory over Howard on Friday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858468",
-      "sport": "College football",
-      "published": "2026-09-26T03:56:29.000Z",
-      "firstSeen": "2026-09-26T03:31:43.875Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50030945",
-      "id": "50030945",
-      "headline": "Cleveland Guardians vs. Kansas City Royals: Game Highlights",
-      "summary": "Cleveland Guardians vs. Kansas City Royals: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50030945/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-26T03:49:43.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50030529",
-      "id": "50030529",
-      "headline": "Pittsburgh Pirates vs. Detroit Tigers: Game Highlights",
-      "summary": "Pittsburgh Pirates vs. Detroit Tigers: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50030529/game-highlights",
-      "sport": "MLB",
-      "published": "2026-09-26T03:32:06.000Z",
-      "firstSeen": "2026-09-26T06:40:49.413Z",
-      "bestRank": 27
     }
   ]
 }
