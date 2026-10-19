@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-19T03:36:19.912Z",
+  "generatedAt": "2026-10-19T06:56:46.343Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-28T03:36:19.912Z",
-  "windowEnd": "2026-10-19T03:36:19.912Z",
+  "windowStart": "2026-09-28T06:56:46.343Z",
+  "windowEnd": "2026-10-19T06:56:46.343Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,305 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4003,
+  "count": 4009,
   "items": [
+    {
+      "key": "50216409",
+      "id": "50216409",
+      "headline": "Brian Schottenheimer: Cowboys offense 'a little bit one-sided,' needs balance",
+      "summary": "A talent-rich offense that is completely healthy has scored only 29 points in the past two games, leaving the Cowboys searching for answers everywhere.",
+      "url": "https://www.espn.com/nfl/story/_/id/50216409/cowboys-left-searching-answers-offense-woeful-showing-vs-packers",
+      "sport": "NFL",
+      "published": "2026-10-19T06:36:17.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50215480",
+      "id": "50215480",
+      "headline": "Cowboys returner KaVontae Turpin injures rib on opening kickoff; X-rays clean",
+      "summary": "Cowboys Pro Bowl returner Turpin sustained a rib injury on his opening kickoff return after he was tackled awkwardly. X-rays were clean, according to coach Brian Schottenheimer.",
+      "url": "https://www.espn.com/nfl/story/_/id/50215480/cowboys-returner-kavontae-turpin-injures-rib-opening-kickoff-vs-packers",
+      "sport": "NFL",
+      "published": "2026-10-19T06:21:02.000Z",
+      "firstSeen": "2026-10-19T03:36:19.912Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50216405",
+      "id": "50216405",
+      "headline": "Knicks host the 76ers to start season",
+      "summary": "Philadelphia 76ers vs. New York Knicks",
+      "url": "http://www.espn.com/nba/preview?gameId=401909089",
+      "sport": "NBA",
+      "published": "2026-10-19T06:04:30.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50216404",
+      "id": "50216404",
+      "headline": "Pistons begin 2026-27 season at home against the Celtics",
+      "summary": "Boston Celtics vs. Detroit Pistons",
+      "url": "http://www.espn.com/nba/preview?gameId=401909088",
+      "sport": "NBA",
+      "published": "2026-10-19T06:04:28.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50216403",
+      "id": "50216403",
+      "headline": "San Antonio hosts Oklahoma City for season opener",
+      "summary": "Oklahoma City Thunder vs. San Antonio Spurs",
+      "url": "http://www.espn.com/nba/preview?gameId=401909090",
+      "sport": "NBA",
+      "published": "2026-10-19T06:04:27.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50216195",
+      "id": "50216195",
+      "headline": "Jordan Love, Green Bay's defense lead the way in Packers' 23-13 victory over Cowboys",
+      "summary": "— Green Bay Packers quarterback Jordan Love didn’t bother wondering what might have been.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873007",
+      "sport": "NFL",
+      "published": "2026-10-19T05:28:28.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50213660",
+      "id": "50213660",
+      "headline": "How should fantasy managers view Bhayshul Tuten moving forward?",
+      "summary": "How should fantasy managers view Bhayshul Tuten moving forward?",
+      "url": "https://www.espn.com/video/clip/_/id/50213660/how-fantasy-managers-view-bhayshul-tuten-moving-forward",
+      "sport": "NFL",
+      "published": "2026-10-19T05:25:54.000Z",
+      "firstSeen": "2026-10-19T01:03:19.093Z",
+      "bestRank": 27
+    },
+    {
+      "key": "50213664",
+      "id": "50213664",
+      "headline": "DB Gardner-Johnson expects fine after spitting incident in Bills' win",
+      "summary": "With his team leading 13-10 at the time, Buffalo Bills safety C.J. Gardner-Johnson was ejected from Sunday's 33-30 victory over Las Vegas following an altercation during the final minute of the second quarter when he spit in the direction of the Raiders.",
+      "url": "https://www.espn.com/nfl/story/_/id/50213664/bills-cb-gardner-johnson-tossed-apparent-spit-incident",
+      "sport": "NFL",
+      "published": "2026-10-19T05:23:30.000Z",
+      "firstSeen": "2026-10-19T01:03:19.093Z",
+      "bestRank": 26
+    },
+    {
+      "key": "50214985",
+      "id": "50214985",
+      "headline": "Game 5 win has Rays on World Series cusp after wild weekend",
+      "summary": "Drew Rasmussen allowed one run over seven innings for his second postseason win, Tampa Bay's offense kept on constant pressure and the Rays beat the Guardians 3-1 on Sunday night to take a 3-2 lead in the ALCS.",
+      "url": "https://www.espn.com/mlb/story/_/id/50214985/rays-beat-guardians-game-5-take-3-2-alcs-lead",
+      "sport": "MLB",
+      "published": "2026-10-19T05:06:53.000Z",
+      "firstSeen": "2026-10-19T01:03:19.093Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50216261",
+      "id": "50216261",
+      "headline": "Duke's Kimari Robinson apologizes for swatting away trainer's arm during UNC game",
+      "summary": "Kimari Robinson, the Duke cornerback who swatted the arm of a training staff member as she checked on an injured player during the team's game against North Carolina over the weekend, apologized for his actions Sunday night.",
+      "url": "https://www.espn.com/college-football/story/_/id/50216261/duke-kimari-robinson-apologizes-swatting-away-arm-female-staffer-checking-injured-player",
+      "sport": "College football",
+      "published": "2026-10-19T05:04:31.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50181469",
+      "id": "50181469",
+      "headline": "NFL Week 6: Big takeaways, questions and fantasy spin from Sunday's games",
+      "summary": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 6.",
+      "url": "https://www.espn.com/nfl/story/_/id/50181469/week-6-sunday-games-takeaways-questions-2026",
+      "sport": "NFL",
+      "published": "2026-10-19T04:46:54.000Z",
+      "firstSeen": "2026-10-18T18:29:52.308Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50176202",
+      "id": "50176202",
+      "headline": "WNBA Finals 2026: Valkyries vs. Dream schedule, scores, more",
+      "summary": "A new champion is guaranteed to be crowned this season as Golden State and Atlanta meet in the WNBA Finals.",
+      "url": "https://www.espn.com/wnba/story/_/id/50176202/2026-wnba-finals-valkyries-dream-schedule-scores-news",
+      "sport": "WNBA",
+      "published": "2026-10-19T04:44:30.000Z",
+      "firstSeen": "2026-10-13T21:24:40.321Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50216270",
+      "id": "50216270",
+      "headline": "No. 10 Utah hosts No. 14 Houston",
+      "summary": "No. 14 Houston (6-1) at No. 10 Utah (6-0), Oct. 24 at 10:15 p.m. EDT.",
+      "url": "http://www.espn.com/ncf/preview?gameId=401856837",
+      "sport": "College football",
+      "published": "2026-10-19T04:43:30.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50216269",
+      "id": "50216269",
+      "headline": "Baylor visits Kansas in Big 12 action",
+      "summary": "Baylor (4-2) at Kansas (2-4), Oct. 24 at 1 p.m. EDT.",
+      "url": "http://www.espn.com/ncf/preview?gameId=401856834",
+      "sport": "College football",
+      "published": "2026-10-19T04:43:28.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50216268",
+      "id": "50216268",
+      "headline": "No. 8 Texas Tech and Cincinnati meet in Big 12 action",
+      "summary": "No. 8 Texas Tech (6-0) at Cincinnati (4-2), Oct. 24 at 12 p.m. EDT.",
+      "url": "http://www.espn.com/ncf/preview?gameId=401856840",
+      "sport": "College football",
+      "published": "2026-10-19T04:43:27.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50190741",
+      "id": "50190741",
+      "headline": "Packers use timely turnovers, third-down conversions to beat struggling Cowboys",
+      "summary": "The Packers used timely third-down conversions and a few big defensive plays to topple a scuffling Cowboys squad.",
+      "url": "https://www.espn.com/nfl/story/_/id/50190741/packers-beat-cowboys-sunday-night-football-jordan-love",
+      "sport": "NFL",
+      "published": "2026-10-19T04:22:04.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50209856",
+      "id": "50209856",
+      "headline": "Week 6 NFL highlights: Best plays, moments, touchdowns, more",
+      "summary": "Here's a look at the best plays from Sunday's NFL action in Week 6.",
+      "url": "https://www.espn.com/nfl/story/_/id/50209856/week-6-nfl-highlights-best-plays-moments-touchdowns",
+      "sport": "NFL",
+      "published": "2026-10-19T04:17:26.000Z",
+      "firstSeen": "2026-10-18T15:25:19.387Z",
+      "bestRank": 1
+    },
+    {
+      "key": "40699880",
+      "id": "40699880",
+      "headline": "Fantasy football buzz: Week 6 scoring leaders through Sunday Night Football",
+      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "sport": "NFL",
+      "published": "2026-10-19T04:07:08.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50216194",
+      "id": "50216194",
+      "headline": "Iowa State visits No. 25 Arizona in Big 12 matchup",
+      "summary": "Iowa State (3-3) at No. 25 Arizona (5-1), Oct. 24 at 7:30 p.m. EDT.",
+      "url": "http://www.espn.com/ncf/preview?gameId=401856838",
+      "sport": "College football",
+      "published": "2026-10-19T04:03:31.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50216193",
+      "id": "50216193",
+      "headline": "Arizona State hosts Kansas State in Big 12 matchup",
+      "summary": "Kansas State (4-2) at Arizona State (3-3), Oct. 24 at 3:45 p.m. EDT.",
+      "url": "http://www.espn.com/ncf/preview?gameId=401856839",
+      "sport": "College football",
+      "published": "2026-10-19T04:03:30.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50216192",
+      "id": "50216192",
+      "headline": "Oklahoma State hosts Colorado in Big 12 play",
+      "summary": "Colorado (2-4) at Oklahoma State (4-2), Oct. 24 at 7 p.m. EDT.",
+      "url": "http://www.espn.com/ncf/preview?gameId=401856836",
+      "sport": "College football",
+      "published": "2026-10-19T04:03:29.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50216191",
+      "id": "50216191",
+      "headline": "No. 2 BYU meets UCF in Big 12 play",
+      "summary": "No. 2 BYU (6-0) at UCF (3-3), Oct. 24 at 3:30 p.m. EDT.",
+      "url": "http://www.espn.com/ncf/preview?gameId=401856835",
+      "sport": "College football",
+      "published": "2026-10-19T04:03:27.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50216130",
+      "id": "50216130",
+      "headline": "Facing elimination on road, Cleveland Guardians back on familiar ground",
+      "summary": "With no travel day due to a Game 3 rainout, the weary Cleveland Guardians, who lost Game 5 of the ALCS Sunday at home to the Tampa Bay Rays, will face elimination Monday at Tropicana Field, but they have hope, given their 3-1 road record this postseason.",
+      "url": "https://www.espn.com/mlb/story/_/id/50216130/facing-elimination-road-again-guardians-keep-spirits-up",
+      "sport": "MLB",
+      "published": "2026-10-19T03:51:31.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50215829",
+      "id": "50215829",
+      "headline": "Harbaugh mum on McDaniel, says Chargers need 'to address everything'",
+      "summary": "Jim Harbaugh said his Chargers will \"have to address everything, and especially offensively\" after another dismal performance in a 22-6 loss to the Chiefs.",
+      "url": "https://www.espn.com/nfl/story/_/id/50215829/harbaugh-mum-mcdaniel-chargers-need-address-everything",
+      "sport": "NFL",
+      "published": "2026-10-19T03:47:51.000Z",
+      "firstSeen": "2026-10-19T03:36:19.912Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50216129",
+      "id": "50216129",
+      "headline": "Packers dismantle Cowboys on SNF",
+      "summary": "Packers dismantle Cowboys on SNF",
+      "url": "https://www.espn.com/video/clip/_/id/50216129/packers-dismantle-cowboys-snf",
+      "sport": "NFL",
+      "published": "2026-10-19T03:47:01.000Z",
+      "firstSeen": "2026-10-19T06:56:46.343Z",
+      "bestRank": 7
+    },
+    {
+      "key": "49907062",
+      "id": "49907062",
+      "headline": "Aaron Rodgers' 2026 NFL season: Tracking records, milestones",
+      "summary": "The Steelers QB, who is entering his 22nd season in the league, is chasing records, and ESPN will be chronicling his \"last rodeo.\"",
+      "url": "https://www.espn.com/nfl/story/_/id/49907062/aaron-rodgers-2026-nfl-season-steelers-packers-jets-tracking-records-milestones",
+      "sport": "NFL",
+      "published": "2026-10-19T03:43:06.000Z",
+      "firstSeen": "2026-09-12T12:32:59.419Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50215969",
+      "id": "50215969",
+      "headline": "Chiefs' Patrick Mahomes earns 100th win in 131st start, tying Tom Brady",
+      "summary": "Quarterback Patrick Mahomes earned his 100th win with the Chiefs in his 131st regular-season start Sunday, tying Tom Brady for the fewest games needed to reach 100 career wins.",
+      "url": "https://www.espn.com/nfl/story/_/id/50215969/chiefs-patrick-mahomes-ties-tom-brady-fastest-100-career-wins",
+      "sport": "NFL",
+      "published": "2026-10-19T03:38:02.000Z",
+      "firstSeen": "2026-10-19T03:36:19.912Z",
+      "bestRank": 4
+    },
     {
       "key": "50214763",
       "id": "50214763",
@@ -35,17 +332,6 @@
       "bestRank": 8
     },
     {
-      "key": "50215969",
-      "id": "50215969",
-      "headline": "Chiefs' Patrick Mahomes earns 100th win in 131st start, tying Tom Brady",
-      "summary": "Quarterback Patrick Mahomes earned his 100th win with the Chiefs in his 131st regular-season start Sunday, tying Tom Brady for the fewest games needed to reach 100 career wins.",
-      "url": "https://www.espn.com/nfl/story/_/id/50215969/chiefs-patrick-mahomes-ties-tom-brady-fastest-100-career-wins",
-      "sport": "NFL",
-      "published": "2026-10-19T03:28:21.000Z",
-      "firstSeen": "2026-10-19T03:36:19.912Z",
-      "bestRank": 4
-    },
-    {
       "key": "50215919",
       "id": "50215919",
       "headline": "Kicker Chad Ryland accounts for all of Cardinals' points in upset of Rams",
@@ -55,28 +341,6 @@
       "published": "2026-10-19T03:24:40.000Z",
       "firstSeen": "2026-10-19T03:36:19.912Z",
       "bestRank": 5
-    },
-    {
-      "key": "50215829",
-      "id": "50215829",
-      "headline": "Harbaugh mum on McDaniel, says Chargers need 'to address everything'",
-      "summary": "Jim Harbaugh said his Chargers will \"have to address everything, and especially offensively\" after another dismal performance in a 22-6 loss to the Chiefs.",
-      "url": "https://www.espn.com/nfl/story/_/id/50215829/harbaugh-mum-mcdaniel-chargers-need-address-everything",
-      "sport": "NFL",
-      "published": "2026-10-19T03:24:15.000Z",
-      "firstSeen": "2026-10-19T03:36:19.912Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50214985",
-      "id": "50214985",
-      "headline": "Game 5 win has Rays on World Series cusp after wild weekend",
-      "summary": "Drew Rasmussen allowed one run over seven innings for his second postseason win, Tampa Bay's offense kept on constant pressure and the Rays beat the Guardians 3-1 on Sunday night to take a 3-2 lead in the ALCS.",
-      "url": "https://www.espn.com/mlb/story/_/id/50214985/rays-beat-guardians-game-5-take-3-2-alcs-lead",
-      "sport": "MLB",
-      "published": "2026-10-19T03:20:16.000Z",
-      "firstSeen": "2026-10-19T01:03:19.093Z",
-      "bestRank": 1
     },
     {
       "key": "50216041",
@@ -145,17 +409,6 @@
       "bestRank": 3
     },
     {
-      "key": "50181469",
-      "id": "50181469",
-      "headline": "NFL Week 6: Big takeaways, questions and fantasy spin from Sunday's games",
-      "summary": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 6.",
-      "url": "https://www.espn.com/nfl/story/_/id/50181469/week-6-sunday-games-takeaways-questions-2026",
-      "sport": "NFL",
-      "published": "2026-10-19T02:51:57.000Z",
-      "firstSeen": "2026-10-18T18:29:52.308Z",
-      "bestRank": 3
-    },
-    {
       "key": "50215967",
       "id": "50215967",
       "headline": "Carolina Hurricanes vs. Calgary Flames: Game Highlights",
@@ -178,17 +431,6 @@
       "bestRank": 12
     },
     {
-      "key": "50213664",
-      "id": "50213664",
-      "headline": "DB Gardner-Johnson expects fine after spitting incident in Bills' win",
-      "summary": "With his team leading 13-10 at the time, Buffalo Bills safety C.J. Gardner-Johnson was ejected from Sunday's 33-30 victory over Las Vegas following an altercation during the final minute of the second quarter when he spit in the direction of the Raiders.",
-      "url": "https://www.espn.com/nfl/story/_/id/50213664/bills-cb-gardner-johnson-tossed-apparent-spit-incident",
-      "sport": "NFL",
-      "published": "2026-10-19T02:31:24.000Z",
-      "firstSeen": "2026-10-19T01:03:19.093Z",
-      "bestRank": 26
-    },
-    {
       "key": "49466506",
       "id": "49466506",
       "headline": "Betting buzz: Rams' loss to Cardinals sends shockwaves through survivor pools",
@@ -198,17 +440,6 @@
       "published": "2026-10-19T02:24:32.000Z",
       "firstSeen": "2026-10-12T03:48:14.761Z",
       "bestRank": 6
-    },
-    {
-      "key": "49907062",
-      "id": "49907062",
-      "headline": "Aaron Rodgers' 2026 NFL season: Tracking records, milestones",
-      "summary": "The Steelers QB, who is entering his 22nd season in the league, is chasing records, and ESPN will be chronicling his \"last rodeo.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/49907062/aaron-rodgers-2026-nfl-season-steelers-packers-jets-tracking-records-milestones",
-      "sport": "NFL",
-      "published": "2026-10-19T02:19:14.000Z",
-      "firstSeen": "2026-09-12T12:32:59.419Z",
-      "bestRank": 2
     },
     {
       "key": "50213864",
@@ -308,17 +539,6 @@
       "published": "2026-10-19T01:51:47.000Z",
       "firstSeen": "2026-10-19T03:36:19.912Z",
       "bestRank": 15
-    },
-    {
-      "key": "50215480",
-      "id": "50215480",
-      "headline": "Cowboys returner KaVontae Turpin injures rib on opening kickoff vs. Packers",
-      "summary": "Cowboys Pro Bowl returner Turpin sustained a rib injury on his opening kickoff return after he was tackled awkwardly.",
-      "url": "https://www.espn.com/nfl/story/_/id/50215480/cowboys-returner-kavontae-turpin-injures-rib-opening-kickoff-vs-packers",
-      "sport": "NFL",
-      "published": "2026-10-19T01:45:53.000Z",
-      "firstSeen": "2026-10-19T03:36:19.912Z",
-      "bestRank": 14
     },
     {
       "key": "50215639",
@@ -440,17 +660,6 @@
       "published": "2026-10-19T01:01:17.000Z",
       "firstSeen": "2026-10-19T01:03:19.093Z",
       "bestRank": 10
-    },
-    {
-      "key": "50209856",
-      "id": "50209856",
-      "headline": "Week 6 NFL highlights: Best plays, moments, touchdowns, more",
-      "summary": "Here's a look at the best plays from Sunday's NFL action in Week 6.",
-      "url": "https://www.espn.com/nfl/story/_/id/50209856/week-6-nfl-highlights-best-plays-moments-touchdowns",
-      "sport": "NFL",
-      "published": "2026-10-19T00:56:05.000Z",
-      "firstSeen": "2026-10-18T15:25:19.387Z",
-      "bestRank": 1
     },
     {
       "key": "50213364",
@@ -629,17 +838,6 @@
       "bestRank": 25
     },
     {
-      "key": "40699880",
-      "id": "40699880",
-      "headline": "Fantasy football buzz: Week 6 scoring leaders through Sunday's 4 p.m. ET games",
-      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "sport": "NFL",
-      "published": "2026-10-18T23:36:36.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
-    },
-    {
       "key": "50214407",
       "id": "50214407",
       "headline": "Los Angeles Chargers vs. Kansas City Chiefs: Game Highlights",
@@ -715,17 +913,6 @@
       "published": "2026-10-18T22:18:27.000Z",
       "firstSeen": "2026-10-18T21:24:18.666Z",
       "bestRank": 16
-    },
-    {
-      "key": "50213660",
-      "id": "50213660",
-      "headline": "How should fantasy managers view Bhayshul Tuen moving forward?",
-      "summary": "How should fantasy managers view Bhayshul Tuen moving forward?",
-      "url": "https://www.espn.com/video/clip/_/id/50213660/how-fantasy-managers-view-bhayshul-tuen-moving-forward",
-      "sport": "NFL",
-      "published": "2026-10-18T22:06:32.000Z",
-      "firstSeen": "2026-10-19T01:03:19.093Z",
-      "bestRank": 27
     },
     {
       "key": "50213358",
@@ -3918,17 +4105,6 @@
       "bestRank": 36
     },
     {
-      "key": "50176202",
-      "id": "50176202",
-      "headline": "WNBA Finals 2026: Valkyries vs. Dream schedule, scores, more",
-      "summary": "A new champion is guaranteed to be crowned this season as Golden State and Atlanta meet in the WNBA Finals.",
-      "url": "https://www.espn.com/wnba/story/_/id/50176202/2026-wnba-finals-valkyries-dream-schedule-scores-news",
-      "sport": "WNBA",
-      "published": "2026-10-17T23:05:06.000Z",
-      "firstSeen": "2026-10-13T21:24:40.321Z",
-      "bestRank": 1
-    },
-    {
       "key": "50205152",
       "id": "50205152",
       "headline": "Georgia Tech Yellow Jackets vs. Virginia Tech Hokies: Full Highlights",
@@ -5991,7 +6167,7 @@
       "headline": "NCAA sues Ohio gov. over order allowing schools to ignore new eligibility rule",
       "summary": "The NCAA has filed a federal lawsuit against Ohio Gov. Mike DeWine three days after he signed an executive order giving the state's colleges and universities the option of allowing athletes who graduated from high school in 2022 to play a fifth year.",
       "url": "https://www.espn.com/college-sports/story/_/id/50196596/ncaa-sues-ohio-gov-eligibility-order-5th-year-athletes",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-16T20:07:31.000Z",
       "firstSeen": "2026-10-16T18:32:34.965Z",
       "bestRank": 1
@@ -11205,7 +11381,7 @@
       "headline": "Ohio Gov. Mike DeWine signs order letting state's 2022 athletes play in 2026-27",
       "summary": "Ohio Gov. Mike DeWine signed an executive order allowing 2022 athletes to play even though the NCAA's new guidance excludes those who have already played four seasons.",
       "url": "https://www.espn.com/college-sports/story/_/id/50177542/ohio-gov-dewine-signs-order-2022-athletes-play-2026-27",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-14T02:41:34.000Z",
       "firstSeen": "2026-10-14T00:58:06.882Z",
       "bestRank": 1
@@ -14054,7 +14230,7 @@
       "headline": "James Madison to exit Sun Belt, join American Conference",
       "summary": "James Madison has accepted membership into the American Athletic Association, the university announced Monday.",
       "url": "https://www.espn.com/college-sports/story/_/id/50166450/james-madison-exit-sun-belt-join-american-conference",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-12T15:30:06.000Z",
       "firstSeen": "2026-10-12T15:32:56.568Z",
       "bestRank": 1
@@ -20731,7 +20907,7 @@
       "headline": "Reports - Watchdog eyes NIL violations at 5-10 Power 4 schools",
       "summary": "The College Sports Commission is looking into possible rules violations at between five and 10 Power 4 schools regarding payments to players, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/50142371/reports-watchdog-eyes-nil-violations-5-10-power-4-schools",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-09T22:48:19.000Z",
       "firstSeen": "2026-10-09T21:28:17.260Z",
       "bestRank": 1
@@ -23008,7 +23184,7 @@
       "headline": "Shai Gilgeous-Alexander joins athletes who became owners",
       "summary": "The Oklahoma City Thunder star joins a list of athletes that includes LeBron James, Serena Williams, Wayne Gretzky and Tom Brady.",
       "url": "https://www.espn.com/nfl/story/_/id/29553205/dwyane-wade-tom-brady-lebron-james-athletes-team-owners",
-      "sport": "WNBA",
+      "sport": "F1",
       "published": "2026-10-08T21:14:28.000Z",
       "firstSeen": "2026-10-08T21:29:11.781Z",
       "bestRank": 1
@@ -23514,7 +23690,7 @@
       "headline": "Big Ten has '18 strong members,' no expansion talks, commish says",
       "summary": "Big Ten commissioner Tony Petitti said the conference has had \"absolutely no discussions taking place around expansion, and there haven't been for quite some time.\"",
       "url": "https://www.espn.com/college-sports/story/_/id/50133579/big-ten-18-strong-members-no-expansion-talks-commish-says",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-08T17:09:12.000Z",
       "firstSeen": "2026-10-08T18:37:03.521Z",
       "bestRank": 1
@@ -25791,7 +25967,7 @@
       "headline": "NCAA proposes summer competition for college basketball teams",
       "summary": "The NCAA is proposing allowing summer competition between college basketball teams as a potential new revenue source.",
       "url": "https://www.espn.com/college-sports/story/_/id/50119590/ncaa-proposes-summer-competition-college-basketball-teams",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-07T13:45:31.000Z",
       "firstSeen": "2026-10-06T21:27:55.074Z",
       "bestRank": 1
@@ -27111,7 +27287,7 @@
       "headline": "Commissioner touts ACC's health amid questions of departures",
       "summary": "ACC boss Jim Phillips isn't fretting about Clemson, FSU, Miami and UNC wanting to tweak the Protect College Sports Act to make it easier for schools to change leagues.",
       "url": "https://www.espn.com/college-sports/story/_/id/50118608/commissioner-touts-acc-health-amid-questions-departures",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-06T20:07:46.000Z",
       "firstSeen": "2026-10-06T21:27:55.074Z",
       "bestRank": 1
@@ -36274,7 +36450,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "With a month to go until the 2026-27 season begins, we check in on the NCAA's player eligibility cases -- and LSU.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-02T11:13:23.000Z",
       "firstSeen": "2026-10-02T12:41:58.213Z",
       "bestRank": 1
@@ -36978,7 +37154,7 @@
       "headline": "Student-athletes received $1.77B in revenue-sharing pay in '25-26",
       "summary": "Sixty-eight schools reached or came within 5% of reaching the $20.5 million revenue-sharing cap over the first season of NIL payments.",
       "url": "https://www.espn.com/college-sports/story/_/id/50080194/student-athletes-received-177b-revenue-sharing-pay-25-26",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-02T00:21:41.000Z",
       "firstSeen": "2026-10-02T03:34:46.329Z",
       "bestRank": 1
@@ -37649,7 +37825,7 @@
       "headline": "NCAA reducing fields for NIT, WBIT to 24 teams starting in 2027",
       "summary": "In the aftermath of the NCAA tournaments expanding to 76 teams starting this season, the NIT and Women's Basketball Invitation Tournament will drop from 32 teams to 24 beginning in 2027, the NCAA announced.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50077597/ncaa-reducing-fields-nit-wbit-24-teams-starting-2027",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-01T17:19:11.000Z",
       "firstSeen": "2026-10-01T18:36:52.245Z",
       "bestRank": 1
@@ -43945,116 +44121,6 @@
       "published": "2026-09-28T07:38:10.000Z",
       "firstSeen": "2026-09-28T06:59:07.538Z",
       "bestRank": 1
-    },
-    {
-      "key": "50047927",
-      "id": "50047927",
-      "headline": "Jim Harbaugh stands by offense as Chargers sink to 0-3",
-      "summary": "Chargers coach Jim Harbaugh said there is \"no disconnect\" between coordinator Mike McDaniel and the offense.",
-      "url": "https://www.espn.com/nfl/story/_/id/50047927/jim-harbaugh-stands-offense-chargers-sink-0-3",
-      "sport": "NFL",
-      "published": "2026-09-28T06:54:26.000Z",
-      "firstSeen": "2026-09-28T01:09:56.325Z",
-      "bestRank": 15
-    },
-    {
-      "key": "50050054",
-      "id": "50050054",
-      "headline": "DeWanna Bonner leads Atlanta Dream to victory in Game 1",
-      "summary": "DeWanna Bonner, who signed with Atlanta on Aug. 27, took charge on Sunday, and the No. 4 seed Dream followed along with her, en route to a 92-77 victory over the No. 5 Washington Mystics in Game 1 of their first-round playoff series at State Farm Arena.",
-      "url": "https://www.espn.com/wnba/story/_/id/50050054/dewanna-bonner-leads-atlanta-dream-victory-game-1",
-      "sport": "WNBA",
-      "published": "2026-09-28T06:11:42.000Z",
-      "firstSeen": "2026-09-28T06:59:07.538Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50050181",
-      "id": "50050181",
-      "headline": "Liberty to host the Lynx on Tuesday",
-      "summary": "Minnesota Lynx (33-11, 20-3 Western Conference) at New York Liberty (26-18, 13-7 Eastern Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401918017",
-      "sport": "WNBA",
-      "published": "2026-09-28T06:10:33.000Z",
-      "firstSeen": "2026-09-28T12:44:52.879Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50050180",
-      "id": "50050180",
-      "headline": "Wilson, Aces to face Clark, Fever on Tuesday",
-      "summary": "Las Vegas Aces (31-13, 17-6 Western Conference) at Indiana Fever (28-16, 14-6 Eastern Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401918018",
-      "sport": "WNBA",
-      "published": "2026-09-28T06:10:29.000Z",
-      "firstSeen": "2026-09-28T12:44:52.879Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50049787",
-      "id": "50049787",
-      "headline": "Broncos erase 16-point deficit, take down Rams 30-26 in a thriller",
-      "summary": "Broncos erase 16-point deficit, take down Rams 30-26 in a thriller",
-      "url": "https://www.espn.com/video/clip/_/id/50049787/broncos-erase-16-point-deficit-take-rams-30-26-thriller",
-      "sport": "NFL",
-      "published": "2026-09-28T05:40:31.000Z",
-      "firstSeen": "2026-09-28T06:59:07.538Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50034932",
-      "id": "50034932",
-      "headline": "Week 3 NFL highlights: Best plays, moments, touchdowns, more",
-      "summary": "Sunday of Week 3 will feature 14 games, including an international game in Rio de Janeiro between the Ravens and Cowboys.",
-      "url": "https://www.espn.com/nfl/story/_/id/50034932/best-plays-moments-touchdowns-more",
-      "sport": "NFL",
-      "published": "2026-09-28T04:58:11.000Z",
-      "firstSeen": "2026-09-27T15:26:02.354Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50043408",
-      "id": "50043408",
-      "headline": "NFL Week 3: Takeaways, questions, fantasy spin for Sunday's games",
-      "summary": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 3.",
-      "url": "https://www.espn.com/nfl/story/_/id/50043408/week-3-sunday-games-takeaways-questions-2026",
-      "sport": "NFL",
-      "published": "2026-09-28T04:51:47.000Z",
-      "firstSeen": "2026-09-27T21:25:34.277Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50049442",
-      "id": "50049442",
-      "headline": "Raiders' Brock Bowers shines in return from knee procedure",
-      "summary": "Brock Bowers showed no rust in his regular-season debut Sunday after undergoing a meniscus procedure, finishing with 10 catches for 116 yards and a TD.",
-      "url": "https://www.espn.com/nfl/story/_/id/50049442/raiders-brock-bowers-shines-return-knee-procedure",
-      "sport": "NFL",
-      "published": "2026-09-28T04:50:14.000Z",
-      "firstSeen": "2026-09-28T03:39:50.676Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50044626",
-      "id": "50044626",
-      "headline": "Week 3 winners and losers: Gibbs and JSN stay hot; St. Brown and Taylor go quiet",
-      "summary": "Jahmyr Gibbs and Jaxon Smith-Njigba came up big in Week 3, while Amon-Ra St. Brown and Jonathan Taylor had very quiet days.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50044626/nfl-week-3-fantasy-football-winners-losers-injuries-rankings-more",
-      "sport": "NFL",
-      "published": "2026-09-28T04:01:44.000Z",
-      "firstSeen": "2026-09-28T01:09:56.325Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50049617",
-      "id": "50049617",
-      "headline": "Zandalasini scores 22, leads Valkyries past Wings 104-80 in Game 1 of first-round playoff series",
-      "summary": "— Cecilia Zandalasini scored 22 points, Gabby Williams added 20, and the second-seeded Golden State Valkyries ran away from the Dallas Wings by halftime for a 104-80 win in the teams' playoff opener Sunday night.",
-      "url": "http://www.espn.com/wnba/recap?gameId=401918016",
-      "sport": "WNBA",
-      "published": "2026-09-28T03:54:35.000Z",
-      "firstSeen": "2026-09-28T06:59:07.538Z",
-      "bestRank": 5
     }
   ]
 }
