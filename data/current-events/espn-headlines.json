@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-20T11:15:22.968Z",
+  "generatedAt": "2026-10-20T12:39:57.485Z",
   "retentionDays": 21,
-  "windowStart": "2026-09-29T11:15:22.968Z",
-  "windowEnd": "2026-10-20T11:15:22.968Z",
+  "windowStart": "2026-09-29T12:39:57.485Z",
+  "windowEnd": "2026-10-20T12:39:57.485Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,19 @@
     "Tennis",
     "MMA"
   ],
-  "count": 3981,
+  "count": 3985,
   "items": [
+    {
+      "key": "50166789",
+      "id": "50166789",
+      "headline": "Which NFL teams are undefeated this season?",
+      "summary": "These teams have yet to lose a game in the 2026 NFL season.",
+      "url": "https://www.espn.com/nfl/story/_/id/50166789/nfl-teams-undefeated-2026-season",
+      "sport": "NFL",
+      "published": "2026-10-20T12:36:31.000Z",
+      "firstSeen": "2026-10-12T18:37:34.284Z",
+      "bestRank": 1
+    },
     {
       "key": "50220645",
       "id": "50220645",
@@ -30,9 +41,141 @@
       "summary": "From offensive playmakers to unknowns at QB, here is a look at the bedrock of Cleveland's young core.",
       "url": "https://www.espn.com/nfl/story/_/id/50220645/cleveland-browns-draft-classes-catching-nfl-attention",
       "sport": "NFL",
-      "published": "2026-10-20T11:09:16.000Z",
+      "published": "2026-10-20T12:36:00.000Z",
       "firstSeen": "2026-10-20T11:15:22.968Z",
       "bestRank": 5
+    },
+    {
+      "key": "50224864",
+      "id": "50224864",
+      "headline": "Fantasy basketball: Bold predictions for the 2026-27 season",
+      "summary": "Our fantasy hoops experts for their boldest predictions for the 2026-27 NBA season.",
+      "url": "https://www.espn.com/fantasy/basketball/story/_/id/50224864/fantasy-basketball-bold-predictions-nba-2026-2027",
+      "sport": "NBA",
+      "published": "2026-10-20T12:33:18.000Z",
+      "firstSeen": "2026-10-20T12:39:57.485Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50223790",
+      "id": "50223790",
+      "headline": "Where 2026 ranks among best World Series matchups since 2000",
+      "summary": "This year's Fall Classic will crown a first-time winner. Here's where it stands among the best matchups of this century.",
+      "url": "https://www.espn.com/mlb/story/_/id/50223790/ranking-best-world-series-matchups-2000",
+      "sport": "MLB",
+      "published": "2026-10-20T12:25:02.000Z",
+      "firstSeen": "2026-10-20T12:39:57.485Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50227575",
+      "id": "50227575",
+      "headline": "James Maddison apologises to Coventry fans for Tottenham goal celebration",
+      "summary": "James Maddison has apologised to the Coventry City fans for his goal celebration on Monday night.",
+      "url": "https://www.espn.com/soccer/story/_/id/50227575/james-maddison-apologises-coventry-fans-tottenham-goal-celebration",
+      "sport": "Soccer",
+      "published": "2026-10-20T12:24:31.000Z",
+      "firstSeen": "2026-10-20T12:39:57.485Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50218232",
+      "id": "50218232",
+      "headline": "How a long-snapper who loves anonymity became a viral sensation",
+      "summary": "Andrew Kallas never wanted the attention, but his tackles as a long-snapper have made waves in college football.",
+      "url": "https://www.espn.com/college-football/story/_/id/50218232/missouri-state-long-snapper-andrew-kallas",
+      "sport": "College football",
+      "published": "2026-10-20T12:21:16.000Z",
+      "firstSeen": "2026-10-20T12:39:57.485Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50220836",
+      "id": "50220836",
+      "headline": "Seven things Solak thinks entering NFL Week 7: From Eagles to Matthew Stafford",
+      "summary": "Get ready for Week 7 with takes on the Colts' decision-makers, Caleb Williams' MVP case, Matthew Stafford's play, the Browns' trajectory and the Eagles' next moves.",
+      "url": "https://www.espn.com/nfl/story/_/id/50220836/week-7-seven-things-solak-thinks-eagles-rams-colts",
+      "sport": "NFL",
+      "published": "2026-10-20T12:15:11.000Z",
+      "firstSeen": "2026-10-20T11:15:22.968Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50117108",
+      "id": "50117108",
+      "headline": "Strength of schedule (SOS) cheat sheet: Every team's year-to-date and rest-of-season ratings",
+      "summary": "Ranking each team's remaining schedule and how it might impact every position's fantasy performance.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50117108/fantasy-football-2026-strength-schedule-rest-season",
+      "sport": "NFL",
+      "published": "2026-10-20T12:13:21.000Z",
+      "firstSeen": "2026-10-06T18:20:57.367Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49998196",
+      "id": "49998196",
+      "headline": "Fantasy football: Live Week 7 free agent pickups advice with ESPN expert",
+      "summary": "ESPN fantasy football expert Eric Moody is here to answer your pressing questions live from noon to 1 p.m. ET.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49998196/fantasy-football-waiver-wire-pickups-week",
+      "sport": "NFL",
+      "published": "2026-10-20T12:09:24.000Z",
+      "firstSeen": "2026-09-22T11:15:16.296Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50226804",
+      "id": "50226804",
+      "headline": "NFL readies for Steelers-Saints in Paris amid civil unrest, security concerns",
+      "summary": "The NFL is ramping up for its first-ever regular-season game in France amid civil unrest and security concerns in Paris.",
+      "url": "https://www.espn.com/nfl/story/_/id/50226804/nfl-ready-steelers-vs-saints-paris-amid-civil-unrest",
+      "sport": "NFL",
+      "published": "2026-10-20T12:01:04.000Z",
+      "firstSeen": "2026-10-20T12:39:57.485Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50227385",
+      "id": "50227385",
+      "headline": "Jason Kidd sees the NBA becoming a game without boundaries",
+      "summary": "Jason Kidd believes the NBA has become increasingly global, positionless and versatile.",
+      "url": "https://www.espn.com/nba/story/_/id/50227385/jason-kidd-sees-nba-becoming-game-boundaries",
+      "sport": "NBA",
+      "published": "2026-10-20T11:51:12.000Z",
+      "firstSeen": "2026-10-20T12:39:57.485Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50222072",
+      "id": "50222072",
+      "headline": "Men's NCAA basketball conference player of the year picks",
+      "summary": "From experienced seniors to talented newcomers and big-name transfers, here are the front-runners in each league.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50222072/mens-ncaa-basketball-conference-player-year-predictions",
+      "sport": "College basketball",
+      "published": "2026-10-20T11:41:11.000Z",
+      "firstSeen": "2026-10-20T12:39:57.485Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50222280",
+      "id": "50222280",
+      "headline": "Six players finally getting their time in the spotlight in the WNBA Finals",
+      "summary": "They might not have been instant stars in the WNBA, but these six players are having a huge impact on the Finals.",
+      "url": "https://www.espn.com/wnba/story/_/id/50222280/finals-2026-valkyries-dream-impact-key-players-x-factor",
+      "sport": "WNBA",
+      "published": "2026-10-20T11:32:28.000Z",
+      "firstSeen": "2026-10-20T12:39:57.485Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50226146",
+      "id": "50226146",
+      "headline": "Dejan Kulusevski explains why he is 'different' after Tottenham injury hell",
+      "summary": "Dejan Kulusevski has said that he is \"smarter\" after ending a 526-day injury-enforced absence as Tottenham beat Coventry on Monday.",
+      "url": "https://www.espn.com/soccer/story/_/id/50226146/dejan-kulusevski-explains-why-different-tottenham-injury-hell",
+      "sport": "Soccer",
+      "published": "2026-10-20T11:02:36.000Z",
+      "firstSeen": "2026-10-20T09:31:30.794Z",
+      "bestRank": 1
     },
     {
       "key": "50112265",
@@ -43,6 +186,17 @@
       "sport": "NBA",
       "published": "2026-10-20T11:02:07.000Z",
       "firstSeen": "2026-10-06T11:15:09.369Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50225503",
+      "id": "50225503",
+      "headline": "Transfer rumors, news: Premier League clubs eye Alexander-Arnold amid Real Madrid uncertainty",
+      "summary": "Real Madrid defender Trent Alexander-Arnold is considering his future at the Bernabéu, with Liverpool, Chelsea, Arsenal and Man City monitoring his situation. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/50225503/transfer-rumors-news-premier-league-clubs-eye-alexander-arnold-amid-real-madrid-uncertainty",
+      "sport": "Soccer",
+      "published": "2026-10-20T11:01:13.000Z",
+      "firstSeen": "2026-10-20T09:31:30.794Z",
       "bestRank": 2
     },
     {
@@ -79,6 +233,17 @@
       "bestRank": 1
     },
     {
+      "key": "50132233",
+      "id": "50132233",
+      "headline": "AL, NL Championship Series odds: Rays, Brewers head to World Series",
+      "summary": "The championship round schedule, lines and odds to win.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50132233/2026-mlb-playoffs-alcs-nlcs-betting-odds-spreads",
+      "sport": "MLB",
+      "published": "2026-10-20T10:53:22.000Z",
+      "firstSeen": "2026-10-11T12:40:29.223Z",
+      "bestRank": 1
+    },
+    {
       "key": "50226663",
       "id": "50226663",
       "headline": "Bobby Okereke continues to play key role in Panthers' revival",
@@ -88,6 +253,17 @@
       "published": "2026-10-20T10:52:49.000Z",
       "firstSeen": "2026-10-20T11:15:22.968Z",
       "bestRank": 1
+    },
+    {
+      "key": "50225613",
+      "id": "50225613",
+      "headline": "Gianni Infantino courts Asian Football Confederation in reelection campaign bid",
+      "summary": "Gianni Infantino's campaign for reelection as FIFA president is set to move this week to Japan and a meeting scheduled for Wednesday with the Asian Football Confederation.",
+      "url": "https://www.espn.com/soccer/story/_/id/50225613/gianni-infantino-asian-football-federations-reelection-campaign-fifa-president",
+      "sport": "Soccer",
+      "published": "2026-10-20T10:51:10.000Z",
+      "firstSeen": "2026-10-20T09:31:30.794Z",
+      "bestRank": 2
     },
     {
       "key": "50218462",
@@ -123,26 +299,26 @@
       "bestRank": 33
     },
     {
-      "key": "50220836",
-      "id": "50220836",
-      "headline": "Seven things Solak thinks entering NFL Week 7: From Eagles to Matthew Stafford",
-      "summary": "Get ready for Week 7 with takes on the Colts' decision-makers, Caleb Williams' MVP case, Matthew Stafford's play, the Browns' trajectory and the Eagles' next moves.",
-      "url": "https://www.espn.com/nfl/story/_/id/50220836/week-7-seven-things-solak-thinks-eagles-rams-colts",
-      "sport": "NFL",
-      "published": "2026-10-20T10:32:56.000Z",
-      "firstSeen": "2026-10-20T11:15:22.968Z",
-      "bestRank": 2
+      "key": "50218763",
+      "id": "50218763",
+      "headline": "Halfway Heisman Jeremiah Smith and other midseason award winners",
+      "summary": "We recognize college football's top players, transfers and coaches at the midpoint of the season.",
+      "url": "https://www.espn.com/college-football/story/_/id/50218763/halfway-heisman-jeremiah-smith-midseason-awards",
+      "sport": "College football",
+      "published": "2026-10-20T10:33:51.000Z",
+      "firstSeen": "2026-10-20T12:39:57.485Z",
+      "bestRank": 1
     },
     {
-      "key": "50225503",
-      "id": "50225503",
-      "headline": "Transfer rumors, news: Premier League clubs eye Alexander-Arnold amid Real Madrid uncertainty",
-      "summary": "Real Madrid defender Trent Alexander-Arnold is considering his future at the Bernabéu, with Liverpool, Chelsea, Arsenal and Man City monitoring his situation. Transfer Talk has the latest.",
-      "url": "https://www.espn.com/soccer/story/_/id/50225503/transfer-rumors-news-premier-league-clubs-eye-alexander-arnold-amid-real-madrid-uncertainty",
-      "sport": "Soccer",
-      "published": "2026-10-20T10:21:30.000Z",
-      "firstSeen": "2026-10-20T09:31:30.794Z",
-      "bestRank": 2
+      "key": "50110772",
+      "id": "50110772",
+      "headline": "Who is this year's Mr. October? Tracking the playoff MVP for 2026",
+      "summary": "We go inside the numbers on the players doing the most to help their teams win.",
+      "url": "https://www.espn.com/mlb/story/_/id/50110772/2026-mlb-playoffs-mvp-tracker-wpa-leaderboard-win-probability-added-mr-october",
+      "sport": "MLB",
+      "published": "2026-10-20T10:33:13.000Z",
+      "firstSeen": "2026-10-09T12:41:18.280Z",
+      "bestRank": 1
     },
     {
       "key": "50166049",
@@ -187,6 +363,17 @@
       "published": "2026-10-20T10:16:07.000Z",
       "firstSeen": "2026-10-20T11:15:22.968Z",
       "bestRank": 4
+    },
+    {
+      "key": "50219416",
+      "id": "50219416",
+      "headline": "College Football Playoff Bubble Watch after Week 7",
+      "summary": "A conference-by-conference look at who is contending for the playoff, who's close and who's out.",
+      "url": "https://www.espn.com/college-football/story/_/id/50219416/cfp-playoff-2026-bubble-watch-week-7",
+      "sport": "College football",
+      "published": "2026-10-20T10:13:46.000Z",
+      "firstSeen": "2026-10-20T12:39:57.485Z",
+      "bestRank": 2
     },
     {
       "key": "50218542",
@@ -253,17 +440,6 @@
       "published": "2026-10-20T09:39:09.000Z",
       "firstSeen": "2026-10-20T11:15:22.968Z",
       "bestRank": 6
-    },
-    {
-      "key": "50226146",
-      "id": "50226146",
-      "headline": "Dejan Kulusevski explains why he is 'different' after Tottenham injury hell",
-      "summary": "Dejan Kulusevski has said that he is \"smarter\" after ending a 526-day injury-enforced absence as Tottenham beat Coventry on Monday.",
-      "url": "https://www.espn.com/soccer/story/_/id/50226146/dejan-kulusevski-explains-why-different-tottenham-injury-hell",
-      "sport": "Soccer",
-      "published": "2026-10-20T09:11:48.000Z",
-      "firstSeen": "2026-10-20T09:31:30.794Z",
-      "bestRank": 1
     },
     {
       "key": "50225252",
@@ -374,17 +550,6 @@
       "published": "2026-10-20T08:11:09.000Z",
       "firstSeen": "2026-10-20T09:31:30.794Z",
       "bestRank": 6
-    },
-    {
-      "key": "50225613",
-      "id": "50225613",
-      "headline": "Gianni Infantino courts Asian Football Confederation in reelection campaign bid",
-      "summary": "Gianni Infantino's campaign for reelection as FIFA president is set to move this week to Japan and a meeting scheduled for Wednesday with the Asian Football Confederation.",
-      "url": "https://www.espn.com/soccer/story/_/id/50225613/gianni-infantino-asian-football-federations-reelection-campaign-fifa-president",
-      "sport": "Soccer",
-      "published": "2026-10-20T07:44:27.000Z",
-      "firstSeen": "2026-10-20T09:31:30.794Z",
-      "bestRank": 2
     },
     {
       "key": "50215522",
@@ -1773,17 +1938,6 @@
       "bestRank": 1
     },
     {
-      "key": "50110772",
-      "id": "50110772",
-      "headline": "Who is this year's Mr. October? Tracking the playoff MVP for 2026",
-      "summary": "We go inside the numbers on the players doing the most to help their teams win.",
-      "url": "https://www.espn.com/mlb/story/_/id/50110772/2026-mlb-playoffs-mvp-tracker-wpa-leaderboard-win-probability-added-mr-october",
-      "sport": "MLB",
-      "published": "2026-10-19T16:36:58.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 1
-    },
-    {
       "key": "50189765",
       "id": "50189765",
       "headline": "Who plays 'Monday Night Football' tonight? Where to watch",
@@ -2059,17 +2213,6 @@
       "bestRank": 19
     },
     {
-      "key": "50166789",
-      "id": "50166789",
-      "headline": "Which NFL teams are undefeated this season?",
-      "summary": "These teams have yet to lose a game in the 2026 NFL season.",
-      "url": "https://www.espn.com/nfl/story/_/id/50166789/nfl-teams-undefeated-2026-season",
-      "sport": "NFL",
-      "published": "2026-10-19T14:07:54.000Z",
-      "firstSeen": "2026-10-12T18:37:34.284Z",
-      "bestRank": 3
-    },
-    {
       "key": "49783645",
       "id": "49783645",
       "headline": "Where is 'College GameDay'? 2026 schedule, locations, recaps",
@@ -2232,17 +2375,6 @@
       "sport": "NFL",
       "published": "2026-10-19T12:35:55.000Z",
       "firstSeen": "2026-10-19T12:41:54.086Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50132233",
-      "id": "50132233",
-      "headline": "AL, NL Championship Series odds: Rays one win away from World Series",
-      "summary": "The championship round schedule, lines and odds to win.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50132233/2026-mlb-playoffs-alcs-nlcs-betting-odds-spreads",
-      "sport": "MLB",
-      "published": "2026-10-19T12:31:16.000Z",
-      "firstSeen": "2026-10-11T12:40:29.223Z",
       "bestRank": 1
     },
     {
@@ -8433,7 +8565,7 @@
       "headline": "NCAA sues Ohio gov. over order allowing schools to ignore new eligibility rule",
       "summary": "The NCAA has filed a federal lawsuit against Ohio Gov. Mike DeWine three days after he signed an executive order giving the state's colleges and universities the option of allowing athletes who graduated from high school in 2022 to play a fifth year.",
       "url": "https://www.espn.com/college-sports/story/_/id/50196596/ncaa-sues-ohio-gov-eligibility-order-5th-year-athletes",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-16T20:07:31.000Z",
       "firstSeen": "2026-10-16T18:32:34.965Z",
       "bestRank": 1
@@ -13603,7 +13735,7 @@
       "headline": "Ohio Gov. Mike DeWine signs order letting state's 2022 athletes play in 2026-27",
       "summary": "Ohio Gov. Mike DeWine signed an executive order allowing 2022 athletes to play even though the NCAA's new guidance excludes those who have already played four seasons.",
       "url": "https://www.espn.com/college-sports/story/_/id/50177542/ohio-gov-dewine-signs-order-2022-athletes-play-2026-27",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-14T02:41:34.000Z",
       "firstSeen": "2026-10-14T00:58:06.882Z",
       "bestRank": 1
@@ -14423,17 +14555,6 @@
       "bestRank": 1
     },
     {
-      "key": "50117108",
-      "id": "50117108",
-      "headline": "Strength of schedule (SOS) cheat sheet: Every team's year-to-date and rest-of-season ratings",
-      "summary": "Ranking each team's remaining schedule and how it might impact every position's fantasy performance.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50117108/fantasy-football-2026-strength-schedule-rest-season",
-      "sport": "NFL",
-      "published": "2026-10-13T17:38:05.000Z",
-      "firstSeen": "2026-10-06T18:20:57.367Z",
-      "bestRank": 8
-    },
-    {
       "key": "50174098",
       "id": "50174098",
       "headline": "NBA teams reveal court designs for 2026 NBA Cup tournament",
@@ -14981,17 +15102,6 @@
       "sport": "F1",
       "published": "2026-10-13T11:29:27.000Z",
       "firstSeen": "2026-10-13T15:32:26.081Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49998196",
-      "id": "49998196",
-      "headline": "Fantasy football: Live Week 6 free agent pickups advice with ESPN expert",
-      "summary": "ESPN fantasy football expert Eric Moody is here to answer your pressing questions live from noon to 1 p.m. ET.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49998196/fantasy-football-waiver-wire-pickups-week",
-      "sport": "NFL",
-      "published": "2026-10-13T11:10:53.000Z",
-      "firstSeen": "2026-09-22T11:15:16.296Z",
       "bestRank": 1
     },
     {
@@ -16386,7 +16496,7 @@
       "headline": "James Madison to exit Sun Belt, join American Conference",
       "summary": "James Madison has accepted membership into the American Athletic Association, the university announced Monday.",
       "url": "https://www.espn.com/college-sports/story/_/id/50166450/james-madison-exit-sun-belt-join-american-conference",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-12T15:30:06.000Z",
       "firstSeen": "2026-10-12T15:32:56.568Z",
       "bestRank": 1
@@ -23063,7 +23173,7 @@
       "headline": "Reports - Watchdog eyes NIL violations at 5-10 Power 4 schools",
       "summary": "The College Sports Commission is looking into possible rules violations at between five and 10 Power 4 schools regarding payments to players, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/50142371/reports-watchdog-eyes-nil-violations-5-10-power-4-schools",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-09T22:48:19.000Z",
       "firstSeen": "2026-10-09T21:28:17.260Z",
       "bestRank": 1
@@ -25835,7 +25945,7 @@
       "headline": "Big Ten has '18 strong members,' no expansion talks, commish says",
       "summary": "Big Ten commissioner Tony Petitti said the conference has had \"absolutely no discussions taking place around expansion, and there haven't been for quite some time.\"",
       "url": "https://www.espn.com/college-sports/story/_/id/50133579/big-ten-18-strong-members-no-expansion-talks-commish-says",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-08T17:09:12.000Z",
       "firstSeen": "2026-10-08T18:37:03.521Z",
       "bestRank": 1
@@ -28112,7 +28222,7 @@
       "headline": "NCAA proposes summer competition for college basketball teams",
       "summary": "The NCAA is proposing allowing summer competition between college basketball teams as a potential new revenue source.",
       "url": "https://www.espn.com/college-sports/story/_/id/50119590/ncaa-proposes-summer-competition-college-basketball-teams",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-07T13:45:31.000Z",
       "firstSeen": "2026-10-06T21:27:55.074Z",
       "bestRank": 1
@@ -29432,7 +29542,7 @@
       "headline": "Commissioner touts ACC's health amid questions of departures",
       "summary": "ACC boss Jim Phillips isn't fretting about Clemson, FSU, Miami and UNC wanting to tweak the Protect College Sports Act to make it easier for schools to change leagues.",
       "url": "https://www.espn.com/college-sports/story/_/id/50118608/commissioner-touts-acc-health-amid-questions-departures",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-06T20:07:46.000Z",
       "firstSeen": "2026-10-06T21:27:55.074Z",
       "bestRank": 1
@@ -38584,7 +38694,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "With a month to go until the 2026-27 season begins, we check in on the NCAA's player eligibility cases -- and LSU.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-02T11:13:23.000Z",
       "firstSeen": "2026-10-02T12:41:58.213Z",
       "bestRank": 1
@@ -43747,72 +43857,6 @@
       "published": "2026-09-29T12:42:10.000Z",
       "firstSeen": "2026-09-29T15:30:58.354Z",
       "bestRank": 17
-    },
-    {
-      "key": "50056458",
-      "id": "50056458",
-      "headline": "How Fever's Kelsey Mitchell juggles pursuit of WNBA title, Ph.D.",
-      "summary": "The Fever guard is having a historic season and the best year of her career, all while pursuing a doctorate degree.",
-      "url": "https://www.espn.com/wnba/story/_/id/50056458/wnba-playoffs-2026-indiana-fever-kelsey-mitchell-phd-doctorate",
-      "sport": "WNBA",
-      "published": "2026-09-29T12:32:32.000Z",
-      "firstSeen": "2026-09-29T15:30:58.354Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50054960",
-      "id": "50054960",
-      "headline": "What has gone wrong for the Patriots' offense, Drake Maye?",
-      "summary": "New England is last in the NFL in offensive points per game at 9.7. Can Maye and his supporting cast settle things down and turn it around?",
-      "url": "https://www.espn.com/nfl/story/_/id/50054960/new-england-patriots-offense-struggles-drake-maye-scoring",
-      "sport": "NFL",
-      "published": "2026-09-29T12:30:31.000Z",
-      "firstSeen": "2026-09-29T11:15:29.224Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50052052",
-      "id": "50052052",
-      "headline": "Fantasy basketball: Eric Karabell's 'Do Draft' list",
-      "summary": "Eric Karabell highlights the players who are falling further than they should be in fantasy basketball drafts this season.",
-      "url": "https://www.espn.com/fantasy/basketball/story/_/id/50052052/fantasy-basketball-eric-karabell-do-draft-list-nba-2026-27",
-      "sport": "NBA",
-      "published": "2026-09-29T12:28:13.000Z",
-      "firstSeen": "2026-09-29T11:15:29.224Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50055151",
-      "id": "50055151",
-      "headline": "South Carolina, SEC jointly suspend Dylan Stewart for 1 game",
-      "summary": "The SEC and South Carolina jointly announced a one-game suspension of Gamecocks star edge rusher Dylan Stewart on Monday for \"egregious contact\" against an Alabama player during Saturday's matchup.",
-      "url": "https://www.espn.com/college-football/story/_/id/50055151/south-carolina-sec-jointly-suspend-dylan-stewart-1-game",
-      "sport": "College football",
-      "published": "2026-09-29T12:24:28.000Z",
-      "firstSeen": "2026-09-29T01:07:12.312Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50057662",
-      "id": "50057662",
-      "headline": "Fernando Alonso, 45, extends F1 career by signing new contract at Aston Martin",
-      "summary": "Fernando Alonso will race into his 24th season in Formula 1 after signing a new contract at Aston Martin.",
-      "url": "https://www.espn.com/f1/story/_/id/50057662/fernando-alonso-45-extends-f1-career-signing-new-contract-aston-martin-2027",
-      "sport": "F1",
-      "published": "2026-09-29T12:16:33.000Z",
-      "firstSeen": "2026-09-29T15:30:58.354Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50056918",
-      "id": "50056918",
-      "headline": "Bears call on QB3 Case Keenum in rousing victory over Eagles",
-      "summary": "In his first NFL start in 1,009 days, Chicago third-string quarterback Case Keenum, 38, led the Bears to a dominant 27-7 victory over the perennial NFC heavyweight Philadelphia Eagles on Monday, a performance coach Ben Johnson labeled \"extraordinary.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/50056918/bears-call-qb3-case-keenum-rousing-victory-eagles",
-      "sport": "NFL",
-      "published": "2026-09-29T12:08:22.000Z",
-      "firstSeen": "2026-09-29T09:33:50.574Z",
-      "bestRank": 1
     }
   ]
 }
