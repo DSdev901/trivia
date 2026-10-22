@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-22T03:34:05.291Z",
+  "generatedAt": "2026-10-22T06:44:54.000Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-01T03:34:05.291Z",
-  "windowEnd": "2026-10-22T03:34:05.291Z",
+  "windowStart": "2026-10-01T06:44:54.000Z",
+  "windowEnd": "2026-10-22T06:44:54.000Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,547 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4016,
+  "count": 4040,
   "items": [
+    {
+      "key": "50131911",
+      "id": "50131911",
+      "headline": "How Kimi Antonelli can win F1 title at United States GP -- with or without Qatar, Abu Dhabi races",
+      "summary": "Kimi Antonelli took another big step towards his first world title after outscoring his two closest championship rivals, George Russell and Lewis Hamilton, at the Singapore Grand Prix.",
+      "url": "https://www.espn.com/f1/story/_/id/50131911/kimi-antonelli-formula-1-title-race-permutations-standings-explained",
+      "sport": "F1",
+      "published": "2026-10-22T06:37:30.000Z",
+      "firstSeen": "2026-10-09T01:10:46.220Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50245665",
+      "id": "50245665",
+      "headline": "Trail Blazers fans show love for Damian Lillard in return",
+      "summary": "Damian Lillard played his first regular-season game since returning to Portland in the summer of 2025, scoring 25 points with six 3s in a rout of Phoenix.",
+      "url": "https://www.espn.com/nba/story/_/id/50245665/portland-trail-blazers-damian-lillard-return-suns",
+      "sport": "NBA",
+      "published": "2026-10-22T06:27:26.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50245548",
+      "id": "50245548",
+      "headline": "Kyrie Irving hounded by Rockets in return, held in check in Mavs' blowout loss",
+      "summary": "With the Rockets focused on trapping him, Kyrie Irving was held to 15 points in his first regular-season game since March 2025 and the Mavs fell 128-110.",
+      "url": "https://www.espn.com/nba/story/_/id/50245548/kyrie-irving-held-check-rockets-mavs-blowout-loss",
+      "sport": "NBA",
+      "published": "2026-10-22T06:18:11.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50245620",
+      "id": "50245620",
+      "headline": "Milwaukee and Chicago meet for conference showdown",
+      "summary": "Chicago Bulls (0-1, 13th in the Eastern Conference) vs. Milwaukee Bucks (0-1, 12th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909848",
+      "sport": "NBA",
+      "published": "2026-10-22T06:05:18.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50245619",
+      "id": "50245619",
+      "headline": "Orlando hosts Minnesota after Edwards' 45-point game",
+      "summary": "Minnesota Timberwolves vs. Orlando Magic",
+      "url": "http://www.espn.com/nba/preview?gameId=401909845",
+      "sport": "NBA",
+      "published": "2026-10-22T06:05:17.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50245618",
+      "id": "50245618",
+      "headline": "Houston heads to San Antonio for conference showdown",
+      "summary": "Houston Rockets (1-0, third in the Western Conference) vs. San Antonio Spurs (0-1, eighth in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909096",
+      "sport": "NBA",
+      "published": "2026-10-22T06:05:15.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50245617",
+      "id": "50245617",
+      "headline": "Washington and Toronto meet in conference showdown",
+      "summary": "Toronto Raptors (1-0, fourth in the Eastern Conference) vs. Washington Wizards (1-0, fifth in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909846",
+      "sport": "NBA",
+      "published": "2026-10-22T06:05:14.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50245616",
+      "id": "50245616",
+      "headline": "Sacramento and Portland meet in conference matchup",
+      "summary": "Portland Trail Blazers vs. Sacramento Kings",
+      "url": "http://www.espn.com/nba/preview?gameId=401909852",
+      "sport": "NBA",
+      "published": "2026-10-22T06:05:13.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50245615",
+      "id": "50245615",
+      "headline": "Dallas travels to Indiana for non-conference matchup",
+      "summary": "Dallas Mavericks (0-1, ninth in the Western Conference) vs. Indiana Pacers (1-0, seventh in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909844",
+      "sport": "NBA",
+      "published": "2026-10-22T06:05:12.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50245614",
+      "id": "50245614",
+      "headline": "New York plays Boston for conference showdown",
+      "summary": "New York Knicks (0-1, eighth in the Eastern Conference) vs. Boston Celtics (0-1, 11th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909095",
+      "sport": "NBA",
+      "published": "2026-10-22T06:05:11.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50245613",
+      "id": "50245613",
+      "headline": "Miami takes on Detroit in conference matchup",
+      "summary": "Detroit Pistons (1-0, first in the Eastern Conference) vs. Miami Heat (0-1, 14th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909847",
+      "sport": "NBA",
+      "published": "2026-10-22T06:05:09.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50245612",
+      "id": "50245612",
+      "headline": "Utah hosts New Orleans in conference showdown",
+      "summary": "New Orleans Pelicans vs. Utah Jazz",
+      "url": "http://www.espn.com/nba/preview?gameId=401909849",
+      "sport": "NBA",
+      "published": "2026-10-22T06:05:08.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50245316",
+      "id": "50245316",
+      "headline": "Tyrese Haliburton leads Pacers' opening-night win in emotional return from injury",
+      "summary": "An emotional Tyrese Haliburton made his long-awaited return from the Achilles tear he suffered in Game 7 of the 2025 NBA Finals, as he led the Pacers to a gritty season-opening win over the Pelicans.",
+      "url": "https://www.espn.com/nba/story/_/id/50245316/tyrese-haliburton-leads-pacers-opening-night-win-vs-pelicans-emotional-return-injury",
+      "sport": "NBA",
+      "published": "2026-10-22T05:55:45.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 16
+    },
+    {
+      "key": "50241679",
+      "id": "50241679",
+      "headline": "Sources: Mavericks agree to two-way deal with Walter Clayton Jr.",
+      "summary": "The Mavericks agree to a two-way NBA deal with former first-round pick Walter Clayton Jr., sources told ESPN.",
+      "url": "https://www.espn.com/nba/story/_/id/50241679/sources-mavericks-agree-deal-walter-clayton-jr",
+      "sport": "NBA",
+      "published": "2026-10-22T05:49:22.000Z",
+      "firstSeen": "2026-10-21T21:28:10.250Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50244329",
+      "id": "50244329",
+      "headline": "Angel Reese keeps Dream rolling with Game 3 win over Valkyries in WNBA Finals",
+      "summary": "Angel Reese kept the Dream rolling in Game 3 with a 97-71 win as Atlanta took a 2-1 lead over the Valkyries in the WNBA Finals.",
+      "url": "https://www.espn.com/wnba/story/_/id/50244329/reese-keeps-dream-rolling-atlanta-takes-lead-wnba-finals",
+      "sport": "WNBA",
+      "published": "2026-10-22T05:42:56.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50244651",
+      "id": "50244651",
+      "headline": "Tim Burns Jr. takes off on an 81-yard catch-and-run TD for Sam Houston",
+      "summary": "Tim Burns Jr. takes off on an 81-yard catch-and-run TD for Sam Houston",
+      "url": "https://www.espn.com/video/clip/_/id/50244651/tim-burns-jr-takes-81-yard-catch-run-td-sam-houston",
+      "sport": "College football",
+      "published": "2026-10-22T05:28:35.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50244883",
+      "id": "50244883",
+      "headline": "Louisville's Flory Bidunga unbothered by Kansas fans' chants in exhibition",
+      "summary": "Louisville's Flory Bidunga said he expected Jayhawks fans to taunt him Wednesday night, but Kansas coach Bill Self said the use of profanity crossed a line.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50244883/louisville-flory-bidunga-unbothered-kansas-fans-chants",
+      "sport": "College basketball",
+      "published": "2026-10-22T05:20:19.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50245442",
+      "id": "50245442",
+      "headline": "Khamzat Chimaev pushes for Sean Strickland rematch",
+      "summary": "Khamzat Chimaev believes he should still be the UFC's middleweight champion and wants Sean Strickland to accept a rematch if he is serious about making money.",
+      "url": "https://www.espn.com/mma/story/_/id/50245442/khamzat-chimaev-sean-strickland-rematch",
+      "sport": "MMA",
+      "published": "2026-10-22T05:19:14.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50245434",
+      "id": "50245434",
+      "headline": "Jason Cadee: \"He's gone through things that none of us ever will understand.\"",
+      "summary": "ESPN's Olgun Uluc and Jason Cadee discuss Ben Simmons' devastating season-ending injury on the eve of the NBA season and the deflating feeling for basketball fans worldwide in Simmons' dashed comeback attempt.",
+      "url": "https://www.espn.com/video/clip/_/id/50245434/gone-things-us-ever-understand",
+      "sport": "NBA",
+      "published": "2026-10-22T05:16:35.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50245421",
+      "id": "50245421",
+      "headline": "Kawhi-less Clippers roll past the Kings in a wire-to-wire season-opening rout",
+      "summary": "— Darius Garland scored 30 points and the Clippers routed the Sacramento Kings 121-96 on Wednesday night in Los Angeles' first season opener without",
+      "url": "http://www.espn.com/nba/recap?gameId=401909842",
+      "sport": "NBA",
+      "published": "2026-10-22T05:12:09.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50243435",
+      "id": "50243435",
+      "headline": "Brady Tkachuk embraces boos, scores in acrimonious return to Ottawa",
+      "summary": "Brady Tkachuk embraced the overwhelming antagonism he faced in his first game back in Ottawa as fans welcomed back the former captain with constant boos.",
+      "url": "https://www.espn.com/nhl/story/_/id/50243435/brady-tkachuk-embraces-boos-scores-acrimonious-return-ottawa",
+      "sport": "NHL",
+      "published": "2026-10-22T05:09:42.000Z",
+      "firstSeen": "2026-10-22T03:34:05.291Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50245413",
+      "id": "50245413",
+      "headline": "Sacramento Kings vs. LA Clippers: Game Highlights",
+      "summary": "Sacramento Kings vs. LA Clippers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50245413/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-22T05:08:19.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50225985",
+      "id": "50225985",
+      "headline": "Martinez's Man United outburst raises question: Why do Premier League executives stay silent?",
+      "summary": "Manchester United defender Lisandro Martinez publicly targeted the club's hierarchy last week. But why do you never hear from senior executives from Premier League clubs?",
+      "url": "https://www.espn.com/soccer/story/_/id/50225985/martinez-manchester-united-outburst-begs-question-why-do-premier-league-executives-stay-silent",
+      "sport": "Soccer",
+      "published": "2026-10-22T05:07:42.000Z",
+      "firstSeen": "2026-10-21T09:31:51.703Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50245072",
+      "id": "50245072",
+      "headline": "Giannis Antetokounmpo says Heat need to trust each other more after blowout loss",
+      "summary": "Following an opening night blowout loss to the Timberwolves, Giannis Antetokounmpo preached trust as the primary area that needs improvement for the new-look Heat.",
+      "url": "https://www.espn.com/nba/story/_/id/50245072/giannis-antetokounmpo-says-heat-need-trust-other-more-blowout-opening-loss-timberwolves",
+      "sport": "NBA",
+      "published": "2026-10-22T05:04:58.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 20
+    },
+    {
+      "key": "50243816",
+      "id": "50243816",
+      "headline": "Why fantasy managers should start Bucs' Josiah Trotter and Jacob Parrish in IDP leagues",
+      "summary": "Why Bucs' Josiah Trotter and Jacob Parrish should start in IDP leagues",
+      "url": "https://www.espn.com/video/clip/_/id/50243816/why-bucs-josiah-trotter-jacob-parrish-start-idp-leagues",
+      "sport": "NFL",
+      "published": "2026-10-22T04:59:50.000Z",
+      "firstSeen": "2026-10-22T03:34:05.291Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50244017",
+      "id": "50244017",
+      "headline": "Why Tristan H. Cockcroft likes the Jets defense in Week 7",
+      "summary": "Why Tristan H. Cockcroft likes the Jets defense in Week 7",
+      "url": "https://www.espn.com/video/clip/_/id/50244017/why-tristan-h-cockcroft-likes-jets-defense-week-7",
+      "sport": "NFL",
+      "published": "2026-10-22T04:58:53.000Z",
+      "firstSeen": "2026-10-22T03:34:05.291Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50244306",
+      "id": "50244306",
+      "headline": "Will Matthew Stafford's fantasy production dip without Davante Adams?",
+      "summary": "Will Matthew Stafford's fantasy production dip without Davante Adams?",
+      "url": "https://www.espn.com/video/clip/_/id/50244306/will-matthew-stafford-fantasy-production-dip-davante-adams",
+      "sport": "NFL",
+      "published": "2026-10-22T04:58:07.000Z",
+      "firstSeen": "2026-10-22T03:34:05.291Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50245331",
+      "id": "50245331",
+      "headline": "Walker Kessler has perfect Lakers debut with 12-for-12 shooting in 127-105 win over Warriors",
+      "summary": "— Walker Kessler scored 26 points on 12-for-12 shooting and grabbed nine rebounds during his auspicious debut for the Los Angeles Lakers in a 127-105 victory over the Golden State Warriors on Wednesday night.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909092",
+      "sport": "NBA",
+      "published": "2026-10-22T04:52:09.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50036425",
+      "id": "50036425",
+      "headline": "Maryland fires Mike Locksley: Top candidates and roster priorities",
+      "summary": "After seven full seasons in College Park, Locksley is out, but the Terps could have some notable pieces to build around.",
+      "url": "https://www.espn.com/college-football/story/_/id/50036425/maryland-fire-locksley-next",
+      "sport": "College football",
+      "published": "2026-10-22T04:51:14.000Z",
+      "firstSeen": "2026-10-21T18:33:43.000Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50242822",
+      "id": "50242822",
+      "headline": "St. Louis City beats Columbus in Open Cup final for club's first trophy",
+      "summary": "St. Louis City won the first trophy in the club's history on Wednesday after defeating Columbus Crew on penalties to lift the U.S. Open Cup.",
+      "url": "https://www.espn.com/soccer/story/_/id/50242822/st-louis-city-beats-columbus-open-cup-final",
+      "sport": "Soccer",
+      "published": "2026-10-22T04:46:20.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50244013",
+      "id": "50244013",
+      "headline": "Report: $250K fines for Sirianni, Vrabel, Glenn temporarily on hold",
+      "summary": "Nick Sirianni was fined $250,000 for conduct toward officials, a source said, confirming an SI report that noted Mike Vrabel and Aaron Glenn were similarly fined.",
+      "url": "https://www.espn.com/nfl/story/_/id/50244013/sirianni-vrabel-glenn-fined-250k-ref-conduct",
+      "sport": "NFL",
+      "published": "2026-10-22T04:45:46.000Z",
+      "firstSeen": "2026-10-22T03:34:05.291Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50245265",
+      "id": "50245265",
+      "headline": "Lakers thrash Warriors to open the season",
+      "summary": "Lakers thrash Warriors to open the season",
+      "url": "https://www.espn.com/video/clip/_/id/50245265/lakers-thrash-warriors-open-season",
+      "sport": "NBA",
+      "published": "2026-10-22T04:45:15.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 17
+    },
+    {
+      "key": "50243891",
+      "id": "50243891",
+      "headline": "St. Louis GK Bürki stretchered off after collision in Open Cup final",
+      "summary": "St. Louis goalkeeper Roman Bürki was taken to the hospital after taking a knock to the head during the U.S. Open Cup final against the Columbus Crew.",
+      "url": "https://www.espn.com/soccer/story/_/id/50243891/st-louis-gk-burki-stretchered-collision-open-cup-final",
+      "sport": "Soccer",
+      "published": "2026-10-22T04:44:36.000Z",
+      "firstSeen": "2026-10-22T03:34:05.291Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50245215",
+      "id": "50245215",
+      "headline": "Phoenix Suns vs. Portland Trail Blazers: Game Highlights",
+      "summary": "Phoenix Suns vs. Portland Trail Blazers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50245215/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-22T04:43:25.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 19
+    },
+    {
+      "key": "50244919",
+      "id": "50244919",
+      "headline": "Anthony Edwards joins Chamberlain, Jordan after dropping 40 in another opener",
+      "summary": "Anthony Edwards joined legends Wilt Chamberlain and Michael Jordan as the only players in NBA history with multiple 40-point games in season openers.",
+      "url": "https://www.espn.com/nba/story/_/id/50244919/anthony-edwards-joins-chamberlain-jordan-dropping-40-another-opener",
+      "sport": "NBA",
+      "published": "2026-10-22T04:39:57.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 21
+    },
+    {
+      "key": "50245219",
+      "id": "50245219",
+      "headline": "Lillard returns with 25 points, Morant debuts and the Blazers rout the Suns 124-83",
+      "summary": "— Damian Lillard scored 25 points in his first regular-season game since rejoining the Trail Blazers, leading Portland to a 124-83 season-opening rout of the Phoenix Suns on Wednesday night.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909841",
+      "sport": "NBA",
+      "published": "2026-10-22T04:37:21.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 18
+    },
+    {
+      "key": "50241871",
+      "id": "50241871",
+      "headline": "Florida Bar fires employee over comments to Miami football player",
+      "summary": "The Florida Bar has fired an employee after a brief investigation into \"reprehensible\" direct messages that were sent via Instagram to a Miami football player.",
+      "url": "https://www.espn.com/college-football/story/_/id/50241871/florida-bar-fires-employee-comments-miami-lineman",
+      "sport": "College football",
+      "published": "2026-10-22T04:23:13.000Z",
+      "firstSeen": "2026-10-22T00:57:59.054Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50244704",
+      "id": "50244704",
+      "headline": "Senators beat Panthers 5-1 as Brady Tkachuk scores in return to Ottawa but gets hostile reception",
+      "summary": "— With fans chanting “We don’t need you!,” the Ottawa Senators defeated Brady Tkachuk and his Florida Panthers 5-1 on Wednesday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892551",
+      "sport": "NHL",
+      "published": "2026-10-22T04:19:08.000Z",
+      "firstSeen": "2026-10-22T03:34:05.291Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50245118",
+      "id": "50245118",
+      "headline": "James Jones rushes for 178 yards and a touchdown as New Mexico State beats Sam Houston 30-24",
+      "summary": "— James Jones rushed for 178 yards and a touchdown, Adam Damante threw for two scores and New Mexico State beat Sam Houston 30-24 on Wednesday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401871070",
+      "sport": "College football",
+      "published": "2026-10-22T04:17:08.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50244813",
+      "id": "50244813",
+      "headline": "Oregon's Dante Moore, Evan Stewart ruled out vs. Illinois",
+      "summary": "Oregon quarterback Dante Moore and wide receiver Evan Stewart are out for Saturday's matchup at Illinois, according to Wednesday's Big Ten availability report.",
+      "url": "https://www.espn.com/college-football/story/_/id/50244813/oregon-dante-moore-evan-stewart-playing-status-illinois",
+      "sport": "College football",
+      "published": "2026-10-22T04:16:46.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50242728",
+      "id": "50242728",
+      "headline": "Enes Kanter Freedom denied entry to Game 3 of WNBA Finals after refusing suite",
+      "summary": "Enes Kanter Freedom was denied entry to Game 3 of the WNBA Finals, according to a video he posted to social media, after he declined to sit in the private suite arranged for him by the Dream and State Farm Arena in response to his safety concerns.",
+      "url": "https://www.espn.com/wnba/story/_/id/50242728/dream-arrange-suite-enes-kanter-freedom-game-3-wnba-finals-address-safety-concerns",
+      "sport": "WNBA",
+      "published": "2026-10-22T04:01:26.000Z",
+      "firstSeen": "2026-10-22T00:57:59.054Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50245010",
+      "id": "50245010",
+      "headline": "New Mexico State Aggies vs. Sam Houston Bearkats: Full Highlights",
+      "summary": "New Mexico State Aggies vs. Sam Houston Bearkats: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50245010/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-22T03:54:31.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50244988",
+      "id": "50244988",
+      "headline": "Florida Panthers vs. Ottawa Senators: Game Highlights",
+      "summary": "Florida Panthers vs. Ottawa Senators: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50244988/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-22T03:51:35.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50244918",
+      "id": "50244918",
+      "headline": "Dallas Mavericks vs. Houston Rockets: Game Highlights",
+      "summary": "Dallas Mavericks vs. Houston Rockets: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50244918/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-22T03:49:27.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 22
+    },
+    {
+      "key": "46296843",
+      "id": "46296843",
+      "headline": "WNBA playoffs history: Notable records, stats, facts",
+      "summary": "During the WNBA playoffs, players are primed for greatness as they pursue championships. Check out our roundup of playoff records and stats now.",
+      "url": "https://www.espn.com/wnba/story/_/id/46296843/wnba-playoffs-history-records-stats-facts",
+      "sport": "WNBA",
+      "published": "2026-10-22T03:47:54.000Z",
+      "firstSeen": "2026-09-28T06:59:07.538Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50242196",
+      "id": "50242196",
+      "headline": "Dodgers' Shohei Ohtani won't require surgery, expected to pitch in 2027",
+      "summary": "Shohei Ohtani will not require surgery to treat any ailment he dealt with this past season, Dodgers president of baseball operations Andrew Friedman said Wednesday. And: \"I fully expect him to pitch next year,\" Friedman added.",
+      "url": "https://www.espn.com/mlb/story/_/id/50242196/dodgers-shohei-ohtani-not-require-surgery-expected-pitch-2027",
+      "sport": "MLB",
+      "published": "2026-10-22T03:38:47.000Z",
+      "firstSeen": "2026-10-22T00:57:59.054Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50244806",
+      "id": "50244806",
+      "headline": "Anthony Davis gets 'MVP' chants from eager crowd in strong Wizards debut",
+      "summary": "- How starved are the fans in Washington for watchable basketball?",
+      "url": "https://www.espn.com/nba/story/_/id/50244806/anthony-davis-gets-mvp-chants-strong-wizards-debut",
+      "sport": "NBA",
+      "published": "2026-10-22T03:37:16.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 24
+    },
+    {
+      "key": "50244843",
+      "id": "50244843",
+      "headline": "Gene Chizik offers wisdom to fans of SEC heavyweights",
+      "summary": "SEC Network's Chizik explains why Georgia, Alabama and Texas fans should not panic after their teams' losses.",
+      "url": "https://www.espn.com/video/clip/_/id/50244843/gene-chizik-offers-wisdom-fans-sec-heavyweights",
+      "sport": "College football",
+      "published": "2026-10-22T03:35:10.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50244825",
+      "id": "50244825",
+      "headline": "Ty Jerome breaks Grizzlies' opening-night record with 45 points",
+      "summary": "Ty Jerome breaks Grizzlies' opening-night record with 45 points",
+      "url": "https://www.espn.com/video/clip/_/id/50244825/ty-jerome-breaks-grizzlies-opening-night-record-45-points",
+      "sport": "NBA",
+      "published": "2026-10-22T03:33:41.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 23
+    },
     {
       "key": "50244707",
       "id": "50244707",
@@ -35,6 +574,28 @@
       "bestRank": 4
     },
     {
+      "key": "50244803",
+      "id": "50244803",
+      "headline": "Keys to victory as No. 12 Kentucky welcomes Vanderbilt",
+      "summary": "SEC Network's Gene Chizik breaks down why the Wildcats have been so tough to beat this season and discusses what the Commodores must do to steal a win on the road.",
+      "url": "https://www.espn.com/video/clip/_/id/50244803/keys-victory-no-12-kentucky-welcomes-vanderbilt",
+      "sport": "College football",
+      "published": "2026-10-22T03:27:19.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50240316",
+      "id": "50240316",
+      "headline": "How the Dream ran over the Valkyries to take a 2-1 lead in the WNBA Finals",
+      "summary": "The Finals resume with Game 3 as Atlanta hosts Golden State. ESPN is courtside at State Farm Arena with analysis.",
+      "url": "https://www.espn.com/wnba/story/_/id/50240316/finals-game-3-golden-state-valkyries-atlanta-dream",
+      "sport": "WNBA",
+      "published": "2026-10-22T03:23:01.000Z",
+      "firstSeen": "2026-10-22T00:57:59.054Z",
+      "bestRank": 3
+    },
+    {
       "key": "50244706",
       "id": "50244706",
       "headline": "Indiana Pacers vs. New Orleans Pelicans: Game Highlights",
@@ -44,6 +605,17 @@
       "published": "2026-10-22T03:22:10.000Z",
       "firstSeen": "2026-10-22T03:34:05.291Z",
       "bestRank": 5
+    },
+    {
+      "key": "50244216",
+      "id": "50244216",
+      "headline": "Atlanta Dream vs. Golden State Valkyries - Game Highlights",
+      "summary": "Watch the Game Highlights from Atlanta Dream vs. Golden State Valkyries, 10/21/2026",
+      "url": "https://www.espn.com/video/clip/_/id/50244216/atlanta-dream-vs-golden-state-valkyries-game-highlights",
+      "sport": "WNBA",
+      "published": "2026-10-22T03:20:54.000Z",
+      "firstSeen": "2026-10-22T06:44:54.000Z",
+      "bestRank": 4
     },
     {
       "key": "50244737",
@@ -90,28 +662,6 @@
       "bestRank": 3
     },
     {
-      "key": "50243435",
-      "id": "50243435",
-      "headline": "Brady Tkachuk embraces boos, scores in acrimonious return to Ottawa",
-      "summary": "Brady Tkachuk embraced the overwhelming antagonism he faced in his first game back in Ottawa as fans welcomed back the former captain with constant boos.",
-      "url": "https://www.espn.com/nhl/story/_/id/50243435/brady-tkachuk-embraces-boos-scores-acrimonious-return-ottawa",
-      "sport": "NHL",
-      "published": "2026-10-22T03:14:27.000Z",
-      "firstSeen": "2026-10-22T03:34:05.291Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50244704",
-      "id": "50244704",
-      "headline": "Senators beat Panthers 5-1 as Brady Tkachuk scores in return to Ottawa but gets hostile reception",
-      "summary": "— With fans chanting “We don’t need you!,” the Ottawa Senators defeated Brady Tkachuk and his Florida Panthers 5-1 on Wednesday night.",
-      "url": "http://www.espn.com/nhl/recap?gameId=401892551",
-      "sport": "NHL",
-      "published": "2026-10-22T03:14:21.000Z",
-      "firstSeen": "2026-10-22T03:34:05.291Z",
-      "bestRank": 1
-    },
-    {
       "key": "50244547",
       "id": "50244547",
       "headline": "Kawhi Leonard scores 23 points in Toronto return as Raptors rout Bulls",
@@ -134,14 +684,14 @@
       "bestRank": 8
     },
     {
-      "key": "50243891",
-      "id": "50243891",
-      "headline": "St. Louis GK Bürki stretchered off after collision in Open Cup final",
-      "summary": "St. Louis goalkeeper Roman Bürki was taken to the hospital after taking a knock to the head during the U.S. Open Cup final against the Columbus Crew.",
-      "url": "https://www.espn.com/soccer/story/_/id/50243891/st-louis-gk-burki-stretchered-collision-open-cup-final",
-      "sport": "Soccer",
-      "published": "2026-10-22T03:05:31.000Z",
-      "firstSeen": "2026-10-22T03:34:05.291Z",
+      "key": "50176202",
+      "id": "50176202",
+      "headline": "WNBA Finals 2026: Valkyries vs. Dream schedule, scores, more",
+      "summary": "A new champion is guaranteed to be crowned this season as Golden State and Atlanta meet in the WNBA Finals.",
+      "url": "https://www.espn.com/wnba/story/_/id/50176202/2026-wnba-finals-valkyries-dream-schedule-scores-news",
+      "sport": "WNBA",
+      "published": "2026-10-22T03:00:08.000Z",
+      "firstSeen": "2026-10-13T21:24:40.321Z",
       "bestRank": 1
     },
     {
@@ -167,17 +717,6 @@
       "bestRank": 9
     },
     {
-      "key": "50244013",
-      "id": "50244013",
-      "headline": "Report: $250K fines for Sirianni, Vrabel, Glenn temporarily on hold",
-      "summary": "Nick Sirianni was fined $250,000 for conduct toward officials, a source said, confirming an SI report that noted Mike Vrabel and Aaron Glenn were similarly fined.",
-      "url": "https://www.espn.com/nfl/story/_/id/50244013/sirianni-vrabel-glenn-fined-250k-ref-conduct",
-      "sport": "NFL",
-      "published": "2026-10-22T02:52:03.000Z",
-      "firstSeen": "2026-10-22T03:34:05.291Z",
-      "bestRank": 3
-    },
-    {
       "key": "50244333",
       "id": "50244333",
       "headline": "Naz Reid has 20 points and 11 rebounds in his Charlotte debut as the Hornets beat the Nets 110-103",
@@ -187,17 +726,6 @@
       "published": "2026-10-22T02:48:09.000Z",
       "firstSeen": "2026-10-22T03:34:05.291Z",
       "bestRank": 10
-    },
-    {
-      "key": "50244306",
-      "id": "50244306",
-      "headline": "Will Matthew Stafford's fantasy production dip without Davante Adams?",
-      "summary": "Will Matthew Stafford's fantasy production dip without Davante Adams?",
-      "url": "https://www.espn.com/video/clip/_/id/50244306/will-matthew-stafford-fantasy-production-dip-davante-adams",
-      "sport": "NFL",
-      "published": "2026-10-22T02:47:48.000Z",
-      "firstSeen": "2026-10-22T03:34:05.291Z",
-      "bestRank": 1
     },
     {
       "key": "50244312",
@@ -299,17 +827,6 @@
       "bestRank": 4
     },
     {
-      "key": "50242728",
-      "id": "50242728",
-      "headline": "Enes Kanter Freedom denied entry to Game 3 of WNBA Finals after declining suite",
-      "summary": "Enes Kanter Freedom was denied entry to Game 3 of the WNBA Finals, according to a video he posted to social media, after he declined to sit in the private suite arranged for him by the Dream and State Farm Arena in response to his safety concerns.",
-      "url": "https://www.espn.com/wnba/story/_/id/50242728/dream-arrange-suite-enes-kanter-freedom-game-3-wnba-finals-address-safety-concerns",
-      "sport": "WNBA",
-      "published": "2026-10-22T02:22:49.000Z",
-      "firstSeen": "2026-10-22T00:57:59.054Z",
-      "bestRank": 2
-    },
-    {
       "key": "50244012",
       "id": "50244012",
       "headline": "Edwards, Ball shine as new-look Wolves down Heat",
@@ -319,17 +836,6 @@
       "published": "2026-10-22T02:17:34.000Z",
       "firstSeen": "2026-10-22T03:34:05.291Z",
       "bestRank": 15
-    },
-    {
-      "key": "50244017",
-      "id": "50244017",
-      "headline": "Why Tristan H. Cockcroft likes the Jets defense in Week 7",
-      "summary": "Why Tristan H. Cockcroft likes the Jets defense in Week 7",
-      "url": "https://www.espn.com/video/clip/_/id/50244017/why-tristan-h-cockcroft-likes-jets-defense-week-7",
-      "sport": "NFL",
-      "published": "2026-10-22T02:14:21.000Z",
-      "firstSeen": "2026-10-22T03:34:05.291Z",
-      "bestRank": 2
     },
     {
       "key": "50243989",
@@ -352,17 +858,6 @@
       "published": "2026-10-22T02:02:09.000Z",
       "firstSeen": "2026-10-22T03:34:05.291Z",
       "bestRank": 17
-    },
-    {
-      "key": "50243816",
-      "id": "50243816",
-      "headline": "Why fantasy managers should start Bucs' Josiah Trotter and Jacob Parrish in IDP leagues",
-      "summary": "Why Bucs' Josiah Trotter and Jacob Parrish should start in IDP leagues",
-      "url": "https://www.espn.com/video/clip/_/id/50243816/why-bucs-josiah-trotter-jacob-parrish-start-idp-leagues",
-      "sport": "NFL",
-      "published": "2026-10-22T01:59:47.000Z",
-      "firstSeen": "2026-10-22T03:34:05.291Z",
-      "bestRank": 4
     },
     {
       "key": "50243662",
@@ -431,17 +926,6 @@
       "bestRank": 3
     },
     {
-      "key": "50240316",
-      "id": "50240316",
-      "headline": "WNBA Finals live: Valkyries-Dream Game 3 analysis, updates and highlights",
-      "summary": "The Finals resume with Game 3 as Atlanta hosts Golden State. ESPN is courtside at State Farm Arena with analysis.",
-      "url": "https://www.espn.com/wnba/story/_/id/50240316/finals-game-3-golden-state-valkyries-atlanta-dream",
-      "sport": "WNBA",
-      "published": "2026-10-22T00:44:04.000Z",
-      "firstSeen": "2026-10-22T00:57:59.054Z",
-      "bestRank": 3
-    },
-    {
       "key": "50243230",
       "id": "50243230",
       "headline": "Vols' DeSean Bishop stresses importance of dominating line of scrimmage",
@@ -475,17 +959,6 @@
       "bestRank": 2
     },
     {
-      "key": "50242196",
-      "id": "50242196",
-      "headline": "Dodgers' Shohei Ohtani won't require surgery, expected to pitch in 2027",
-      "summary": "Shohei Ohtani will not require surgery to treat any ailment he dealt with this past season, Dodgers president of baseball operations Andrew Friedman said Wednesday. And: \"I fully expect him to pitch next year,\" Friedman added.",
-      "url": "https://www.espn.com/mlb/story/_/id/50242196/dodgers-shohei-ohtani-not-require-surgery-expected-pitch-2027",
-      "sport": "MLB",
-      "published": "2026-10-22T00:24:41.000Z",
-      "firstSeen": "2026-10-22T00:57:59.054Z",
-      "bestRank": 2
-    },
-    {
       "key": "50223020",
       "id": "50223020",
       "headline": "Retirement doesn't scare Alexander Volkanovski, but neither does fighting at 40",
@@ -513,7 +986,7 @@
       "headline": "Senators fans booing Tkachuk reminiscent of previous unpleasant sports returns",
       "summary": "Brady Tkachuk isn't the first notable sports figure to be met with jeers by fans of his prior team.",
       "url": "https://www.espn.com/nhl/story/_/id/28118392/athletes-faced-wrath-jilted-fans",
-      "sport": "College basketball",
+      "sport": "NFL",
       "published": "2026-10-22T00:14:15.000Z",
       "firstSeen": "2026-10-22T00:57:59.054Z",
       "bestRank": 1
@@ -684,17 +1157,6 @@
       "bestRank": 3
     },
     {
-      "key": "50241871",
-      "id": "50241871",
-      "headline": "Florida Bar fires employee over comments to Miami football player",
-      "summary": "The Florida Bar has fired an employee after a brief investigation into \"reprehensible\" direct messages that were sent via Instagram to a Miami football player.",
-      "url": "https://www.espn.com/college-football/story/_/id/50241871/florida-bar-fires-employee-comments-miami-lineman",
-      "sport": "College football",
-      "published": "2026-10-21T21:55:24.000Z",
-      "firstSeen": "2026-10-22T00:57:59.054Z",
-      "bestRank": 4
-    },
-    {
       "key": "50235336",
       "id": "50235336",
       "headline": "Transfer rumors, news: Arsenal eye move for Brugge's Tresoldi",
@@ -726,17 +1188,6 @@
       "published": "2026-10-21T21:33:20.000Z",
       "firstSeen": "2026-10-21T18:33:43.000Z",
       "bestRank": 3
-    },
-    {
-      "key": "50241679",
-      "id": "50241679",
-      "headline": "Sources: Mavericks agree to two-way deal with Walter Clayton Jr.",
-      "summary": "The Mavericks agree to a two-way NBA deal with former first-round pick Walter Clayton Jr., sources told ESPN.",
-      "url": "https://www.espn.com/nba/story/_/id/50241679/sources-mavericks-agree-deal-walter-clayton-jr",
-      "sport": "NBA",
-      "published": "2026-10-21T21:23:18.000Z",
-      "firstSeen": "2026-10-21T21:28:10.250Z",
-      "bestRank": 1
     },
     {
       "key": "50238406",
@@ -913,17 +1364,6 @@
       "published": "2026-10-21T19:27:07.000Z",
       "firstSeen": "2026-10-21T18:33:43.000Z",
       "bestRank": 1
-    },
-    {
-      "key": "50036425",
-      "id": "50036425",
-      "headline": "Maryland fires Mike Locksley: Top candidates and roster priorities",
-      "summary": "After seven full seasons in College Park, Locksley is out, but the Terps could have some notable pieces to build around.",
-      "url": "https://www.espn.com/college-football/story/_/id/50036425/maryland-fire-locksley-next",
-      "sport": "College football",
-      "published": "2026-10-21T19:25:02.000Z",
-      "firstSeen": "2026-10-21T18:33:43.000Z",
-      "bestRank": 7
     },
     {
       "key": "50240100",
@@ -1894,17 +2334,6 @@
       "bestRank": 1
     },
     {
-      "key": "50225985",
-      "id": "50225985",
-      "headline": "Martinez's Man United outburst begs the question: Why do Premier League executives stay silent?",
-      "summary": "Manchester United defender Lisandro Martinez publicly targeted the club's hierarchy last week. But why do you never hear from senior executives from Premier League clubs?",
-      "url": "https://www.espn.com/soccer/story/_/id/50225985/martinez-manchester-united-outburst-begs-question-why-do-premier-league-executives-stay-silent",
-      "sport": "Soccer",
-      "published": "2026-10-21T12:43:12.000Z",
-      "firstSeen": "2026-10-21T09:31:51.703Z",
-      "bestRank": 2
-    },
-    {
       "key": "50229015",
       "id": "50229015",
       "headline": "South Carolina tops AP Top 25 women's basketball poll followed by UConn, USC",
@@ -2298,17 +2727,6 @@
       "sport": "F1",
       "published": "2026-10-21T07:07:05.000Z",
       "firstSeen": "2026-10-19T09:39:15.257Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50131911",
-      "id": "50131911",
-      "headline": "How Kimi Antonelli can win F1 title at United States GP -- with or without Qatar, Abu Dhabi races",
-      "summary": "Kimi Antonelli took another big step towards his first world title after outscoring his two closest championship rivals, George Russell and Lewis Hamilton, at the Singapore Grand Prix.",
-      "url": "https://www.espn.com/f1/story/_/id/50131911/kimi-antonelli-formula-1-title-race-permutations-standings-explained",
-      "sport": "F1",
-      "published": "2026-10-21T07:06:23.000Z",
-      "firstSeen": "2026-10-09T01:10:46.220Z",
       "bestRank": 1
     },
     {
@@ -2983,23 +3401,12 @@
       "bestRank": 1
     },
     {
-      "key": "50176202",
-      "id": "50176202",
-      "headline": "WNBA Finals 2026: Valkyries vs. Dream schedule, scores, more",
-      "summary": "A new champion is guaranteed to be crowned this season as Golden State and Atlanta meet in the WNBA Finals.",
-      "url": "https://www.espn.com/wnba/story/_/id/50176202/2026-wnba-finals-valkyries-dream-schedule-scores-news",
-      "sport": "WNBA",
-      "published": "2026-10-20T22:28:51.000Z",
-      "firstSeen": "2026-10-13T21:24:40.321Z",
-      "bestRank": 1
-    },
-    {
       "key": "50231796",
       "id": "50231796",
       "headline": "Big 12 commish mulls new event if conference title games end",
       "summary": "Big 12 commissioner Brett Yormark said the league would find a new event to replace any lost conference title games should they be casualties of an expanded College Football Playoff.",
       "url": "https://www.espn.com/college-football/story/_/id/50231796/big-12-commish-mulls-new-event-conference-title-games-end",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-20T22:27:21.000Z",
       "firstSeen": "2026-10-20T21:28:05.035Z",
       "bestRank": 1
@@ -4740,17 +5147,6 @@
       "sport": "NFL",
       "published": "2026-10-20T04:46:25.000Z",
       "firstSeen": "2026-10-19T21:27:11.582Z",
-      "bestRank": 1
-    },
-    {
-      "key": "46296843",
-      "id": "46296843",
-      "headline": "WNBA playoffs history: Notable records, stats, facts",
-      "summary": "During the WNBA playoffs, players are primed for greatness as they pursue championships. Check out our roundup of playoff records and stats now.",
-      "url": "https://www.espn.com/wnba/story/_/id/46296843/wnba-playoffs-history-records-stats-facts",
-      "sport": "WNBA",
-      "published": "2026-10-20T04:27:20.000Z",
-      "firstSeen": "2026-09-28T06:59:07.538Z",
       "bestRank": 1
     },
     {
@@ -12096,7 +12492,7 @@
       "headline": "NCAA sues Ohio gov. over order allowing schools to ignore new eligibility rule",
       "summary": "The NCAA has filed a federal lawsuit against Ohio Gov. Mike DeWine three days after he signed an executive order giving the state's colleges and universities the option of allowing athletes who graduated from high school in 2022 to play a fifth year.",
       "url": "https://www.espn.com/college-sports/story/_/id/50196596/ncaa-sues-ohio-gov-eligibility-order-5th-year-athletes",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-16T20:07:31.000Z",
       "firstSeen": "2026-10-16T18:32:34.965Z",
       "bestRank": 1
@@ -17233,7 +17629,7 @@
       "headline": "Ohio Gov. Mike DeWine signs order letting state's 2022 athletes play in 2026-27",
       "summary": "Ohio Gov. Mike DeWine signed an executive order allowing 2022 athletes to play even though the NCAA's new guidance excludes those who have already played four seasons.",
       "url": "https://www.espn.com/college-sports/story/_/id/50177542/ohio-gov-dewine-signs-order-2022-athletes-play-2026-27",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-14T02:41:34.000Z",
       "firstSeen": "2026-10-14T00:58:06.882Z",
       "bestRank": 1
@@ -19829,7 +20225,7 @@
       "headline": "James Madison to exit Sun Belt, join American Conference",
       "summary": "James Madison has accepted membership into the American Athletic Association, the university announced Monday.",
       "url": "https://www.espn.com/college-sports/story/_/id/50166450/james-madison-exit-sun-belt-join-american-conference",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-12T15:30:06.000Z",
       "firstSeen": "2026-10-12T15:32:56.568Z",
       "bestRank": 1
@@ -26495,7 +26891,7 @@
       "headline": "Reports - Watchdog eyes NIL violations at 5-10 Power 4 schools",
       "summary": "The College Sports Commission is looking into possible rules violations at between five and 10 Power 4 schools regarding payments to players, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/50142371/reports-watchdog-eyes-nil-violations-5-10-power-4-schools",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-09T22:48:19.000Z",
       "firstSeen": "2026-10-09T21:28:17.260Z",
       "bestRank": 1
@@ -29256,7 +29652,7 @@
       "headline": "Big Ten has '18 strong members,' no expansion talks, commish says",
       "summary": "Big Ten commissioner Tony Petitti said the conference has had \"absolutely no discussions taking place around expansion, and there haven't been for quite some time.\"",
       "url": "https://www.espn.com/college-sports/story/_/id/50133579/big-ten-18-strong-members-no-expansion-talks-commish-says",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-08T17:09:12.000Z",
       "firstSeen": "2026-10-08T18:37:03.521Z",
       "bestRank": 1
@@ -31533,7 +31929,7 @@
       "headline": "NCAA proposes summer competition for college basketball teams",
       "summary": "The NCAA is proposing allowing summer competition between college basketball teams as a potential new revenue source.",
       "url": "https://www.espn.com/college-sports/story/_/id/50119590/ncaa-proposes-summer-competition-college-basketball-teams",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-07T13:45:31.000Z",
       "firstSeen": "2026-10-06T21:27:55.074Z",
       "bestRank": 1
@@ -32842,7 +33238,7 @@
       "headline": "Commissioner touts ACC's health amid questions of departures",
       "summary": "ACC boss Jim Phillips isn't fretting about Clemson, FSU, Miami and UNC wanting to tweak the Protect College Sports Act to make it easier for schools to change leagues.",
       "url": "https://www.espn.com/college-sports/story/_/id/50118608/commissioner-touts-acc-health-amid-questions-departures",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-06T20:07:46.000Z",
       "firstSeen": "2026-10-06T21:27:55.074Z",
       "bestRank": 1
@@ -44065,138 +44461,6 @@
       "sport": "Soccer",
       "published": "2026-10-01T07:05:03.000Z",
       "firstSeen": "2026-10-01T09:34:53.963Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50074123",
-      "id": "50074123",
-      "headline": "Yankees send Red Sox home again, move on to face Rays in ALDS",
-      "summary": "The Yankees' homegrown talent such as Ben Rice and Cam Schlittler led the way to help deliver a thorough two-game beatdown of the Red Sox in their AL Wild Card Series, ending with Wednesday's 9-2 win.",
-      "url": "https://www.espn.com/mlb/story/_/id/50074123/yankees-send-red-sox-home-again-move-face-rays-alds",
-      "sport": "MLB",
-      "published": "2026-10-01T06:42:18.000Z",
-      "firstSeen": "2026-10-01T06:48:13.418Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50074355",
-      "id": "50074355",
-      "headline": "Wings' Ogunbowale scores record 45 to force Game 3 vs. Valkyries",
-      "summary": "Arike Ogunbowale delivered a record-breaking performance with the Wings' season on the line, scoring 45 points, including a tying 3-pointer to force overtime, to help Dallas force a deciding Game 3 against the Valkyries.",
-      "url": "https://www.espn.com/wnba/story/_/id/50074355/wings-ogunbowale-scores-record-45-force-game-3-vs-valkyries",
-      "sport": "WNBA",
-      "published": "2026-10-01T06:29:43.000Z",
-      "firstSeen": "2026-10-01T06:48:13.418Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50074582",
-      "id": "50074582",
-      "headline": "Gavin Sheets' pinch-hit homer propels dominant Padres past Cubs 4-1 for 2-game Wild Card sweep",
-      "summary": "— Pinch-hitter Gavin Sheets blasted a two-run homer, five Padres pitchers combined on a five-hitter, and San Diego swept the Chicago Cubs out of the NL Wild Card Series with a 4-1 victory in Game 2 on Wednesday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401907975",
-      "sport": "MLB",
-      "published": "2026-10-01T06:10:38.000Z",
-      "firstSeen": "2026-10-01T06:48:13.418Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50074937",
-      "id": "50074937",
-      "headline": "Golden State, Dallas set for game 3 matchup",
-      "summary": "Dallas Wings (27-17, 13-10 Western Conference) at Golden State Valkyries (32-12, 15-8 Western Conference)",
-      "url": "http://www.espn.com/wnba/preview?gameId=401918294",
-      "sport": "WNBA",
-      "published": "2026-10-01T06:09:29.000Z",
-      "firstSeen": "2026-10-01T09:34:53.963Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50045993",
-      "id": "50045993",
-      "headline": "2026 MLB wild-card series Day 2: Takeaways, analysis",
-      "summary": "Three teams sealed their spots in the division series on Wednesday. Relive all the action.",
-      "url": "https://www.espn.com/mlb/story/_/id/50045993/mlb-playoffs-2026-wild-card-game-2-live-updates-analysis-takeaways",
-      "sport": "MLB",
-      "published": "2026-10-01T05:46:08.000Z",
-      "firstSeen": "2026-09-30T12:45:55.090Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50074577",
-      "id": "50074577",
-      "headline": "MacKinnon has 2 goals and a rare fight in the Avs' 8-4 victory over the Kings in opener",
-      "summary": "— Nathan MacKinnon scored twice in a four-goal second period and capped his night with a rare fight, and the Colorado Avalanche opened the season with an 8-4 victory over the Los Angeles Kings on Wednesday night.",
-      "url": "http://www.espn.com/nhl/recap?gameId=401891780",
-      "sport": "NHL",
-      "published": "2026-10-01T05:24:29.000Z",
-      "firstSeen": "2026-10-01T06:48:13.418Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50074632",
-      "id": "50074632",
-      "headline": "Emma Navarro out for rest of year to focus on health issues",
-      "summary": "Emma Navarro says she's taking the rest of the tennis season off to address two health issues and plans to return ahead of the Australian Open in January.",
-      "url": "https://www.espn.com/tennis/story/_/id/50074632/emma-navarro-rest-year-focus-health-issues",
-      "sport": "Tennis",
-      "published": "2026-10-01T05:16:03.000Z",
-      "firstSeen": "2026-10-01T06:48:13.418Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50074659",
-      "id": "50074659",
-      "headline": "Padres sweep Cubs, advance to NLDS",
-      "summary": "Padres sweep Cubs, advance to NLDS",
-      "url": "https://www.espn.com/video/clip/_/id/50074659/padres-sweep-cubs-advance-nlds",
-      "sport": "MLB",
-      "published": "2026-10-01T05:13:55.000Z",
-      "firstSeen": "2026-10-01T06:48:13.418Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50074628",
-      "id": "50074628",
-      "headline": "Los Angeles Kings vs. Colorado Avalanche: Game Highlights",
-      "summary": "Los Angeles Kings vs. Colorado Avalanche: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50074628/game-highlights",
-      "sport": "NHL",
-      "published": "2026-10-01T05:10:34.000Z",
-      "firstSeen": "2026-10-01T06:48:13.418Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50067385",
-      "id": "50067385",
-      "headline": "FA charges Fulham boss Álvaro Arbeloa with misconduct for comments after Man United draw",
-      "summary": "Fulham boss Alvaro Arbeloa has been charged with misconduct by the FA  for claiming officials would \"not let Manchester United lose\" after Michael Carrick's side scored a late equaliser to draw their Premier League match at Craven Cottage.",
-      "url": "https://www.espn.com/soccer/story/_/id/50067385/fa-charges-fulham-boss-alvaro-arbeloa-misconduct-comments-man-united-draw",
-      "sport": "Soccer",
-      "published": "2026-10-01T04:28:32.000Z",
-      "firstSeen": "2026-09-30T15:32:20.020Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50071951",
-      "id": "50071951",
-      "headline": "Falcons sign DT Gervon Dexter Sr. to four-year extension",
-      "summary": "The Falcons signed Gervon Dexter Sr. to a four-year, $78 million contract extension, sources told ESPN.",
-      "url": "https://www.espn.com/nfl/story/_/id/50071951/falcons-sign-dt-gervon-dexter-sr-four-year-extension",
-      "sport": "NFL",
-      "published": "2026-10-01T04:21:09.000Z",
-      "firstSeen": "2026-10-01T01:15:59.870Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50074310",
-      "id": "50074310",
-      "headline": "Dallas Wings vs. Golden State Valkyries - Game Highlights",
-      "summary": "Watch the Game Highlights from Dallas Wings vs. Golden State Valkyries, 09/30/2026",
-      "url": "https://www.espn.com/video/clip/_/id/50074310/dallas-wings-vs-golden-state-valkyries-game-highlights",
-      "sport": "WNBA",
-      "published": "2026-10-01T04:09:36.000Z",
-      "firstSeen": "2026-10-01T06:48:13.418Z",
       "bestRank": 2
     }
   ]
