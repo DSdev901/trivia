@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-10-23T09:42:29.126Z",
+  "generatedAt": "2026-10-23T12:49:16.219Z",
   "retentionDays": 21,
   "windowStart": "2026-10-02",
   "windowEnd": "2026-10-23",
   "snapshotIntervalHours": 3,
-  "count": 2187,
+  "count": 2211,
   "items": [
     {
       "headline": "Typhoon Champi roars towards Taiwan, Japan and China bringing heavy rain and wind",
@@ -26,6 +26,16 @@
       "top": true,
       "bestRank": 1,
       "firstSeen": "2026-10-23T09:42:29.126Z"
+    },
+    {
+      "headline": "Israel's Netanyahu vows major military operation, cordons off West Bank city after deadly attack on troops",
+      "date": "2026-10-23",
+      "bucket": "Conflict",
+      "summary": "Reported by CNN.",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOU1F5dV95eTN1dnN3bDJQWWs1X1VWRFNfWXVvSUpjUm9wZmxFSHl5T0pEOVlRYkJJdHA2akw1MG8zNjBVdlNxU2hPQ0lNejQ5Mmd0RmMwUW1MU1lDT21wUHk5WUIwUXY0ZEJid1lXUlZyZnhENFdKS1F0b0dPNnpLNA?oc=5",
+      "top": true,
+      "bestRank": 1,
+      "firstSeen": "2026-10-23T12:49:16.219Z"
     },
     {
       "headline": "Powerful earthquake hits Tibet killing 16 people, reports say",
@@ -78,6 +88,16 @@
       "firstSeen": "2026-10-23T09:42:29.126Z"
     },
     {
+      "headline": "Unrest Grows in Emerging Economies Despite Economic Recovery",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQUmd4c1NoUjhtblFiOGZ6UThLeU9KdnBqOTQ2c0dXTklMcXA5ZU9QT2pXcUlLSGlKdVVKRzZpZGVram92azF3S0VQcXN4TmpvMENXNVdhYlNCSzVlMW9pZVE1Q3Jrb3hqNjFxa20wTXZHdERSN2NuR05ONC16QkNZZm5FZWh2NVJMVmhndHV4QkNkYTJ0OWd4S0xKM2V1VElHcTdXM3pEeVh6U0FleEJjMGNEWFdfQUhrd3lCblhMUXhQU2Y2U2c?oc=5",
+      "top": true,
+      "bestRank": 7,
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
       "headline": "After nearly 6 years, ex-Myanmar leader Aung San Suu Kyi's son hears her voice",
       "date": "2026-10-23",
       "bucket": "World",
@@ -98,14 +118,24 @@
       "firstSeen": "2026-10-23T06:55:55.312Z"
     },
     {
-      "headline": "Palestinian Gunmen Open Fire on Israelis in the West Bank, Officials Say",
+      "headline": "Two Israeli soldiers killed in attack by suspected Palestinian gunmen in West Bank",
+      "date": "2026-10-23",
+      "bucket": "Politics",
+      "summary": "The two attackers were shot dead after a gun battle outside Hebron, four days before Israel's general election.",
+      "url": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-23T09:42:29.126Z",
+      "top": true,
+      "bestRank": 9
+    },
+    {
+      "headline": "Ukraine Arrests 17-Year-Old Suspected of Lacing Drugs Sent to Soldiers",
       "date": "2026-10-23",
       "bucket": "World",
-      "summary": "Reported by The Jerusalem Post.",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBvTk5UQWcwVDFUQTJDMF9PY0tMQnh2SGN1a0ZMYVlpNldFVmM0Yy1NLXB2VWZ0UHhWY3JGV1I3SXFNRDZ5aFNQV2RUbjVqQUNSQXh4Z21BQTkxS0RCdWRKQkpsTm1BVHhKUlhNUjBB?oc=5",
+      "summary": "Reported by CBS News.",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeTZTYkhvbHRiVjBMcmZOZGxJOGxkM0R0eE5WRWFCOE5kazJTdDlrV1hfbklORlhsLUl1OTF6OEZGWXZZT2l6c0dlbEZHVXQzUklJUTkzMldSVnB3S0pTdXBOMXV1WVBPOUNFUjJlU2V4N0doVFpkd1lBX1BIV2hWa2ZSS3RVdEJnS0RwMTQtZVRkcHlVTXc?oc=5",
       "top": true,
       "bestRank": 9,
-      "firstSeen": "2026-10-23T09:42:29.126Z"
+      "firstSeen": "2026-10-23T12:49:16.219Z"
     },
     {
       "headline": "Nigeria and Kenya Ebola patients may have crossed paths at Uganda airport, officials say",
@@ -118,6 +148,26 @@
       "bestRank": 11
     },
     {
+      "headline": "Europe's heat claims 50,000 lives. Climate change blamed for two-thirds of deaths",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Blistering record heat in Europe this summer helped kill more than 50,000 people, with nearly two-thirds of that death toll blamed on human-caused climate change, a new study found.",
+      "url": "https://www.npr.org/2026/10/23/g-s1-149498/europe-heat-deaths",
+      "firstSeen": "2026-10-23T09:42:29.126Z",
+      "top": true,
+      "bestRank": 12
+    },
+    {
+      "headline": "Meghan Markle Responds to Child Pornography Allegations Against Her Father",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by USA Today.",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOd0hjbzR1b2YydGdXUzBQU214b2xjTGNnd1ptLVhFSmRZU2VCN1E1X0F4VXJHM1FVYzlzZWdWVTRJMEZVakhDYUVHSWRQTl9MMi1hZkVEX3AyZHNUd3AxMGpFREQwa3pUR29hdlhUdk5NRUlmaGs3cm9lZkZES20wTVM2dXhORG1ZeFhhdTltQ2NycWtZNTZLUlc4QTdpMi02aTVXaUFLOVp0TVNpLVVHaVRYTnAwMEhqY0VyYmd0OG9jekc5aE40T0E4YUtTQQ?oc=5",
+      "top": true,
+      "bestRank": 13,
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
       "headline": "The revolution arrives in Albania This is Europe’s autumn of discontent",
       "date": "2026-10-23",
       "bucket": "World",
@@ -126,6 +176,26 @@
       "top": true,
       "bestRank": 14,
       "firstSeen": "2026-10-23T09:42:29.126Z"
+    },
+    {
+      "headline": "Benjamin Netanyahu: Israel's longest-serving PM fighting for survival",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by Jewish Insider.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbTdvcmZkQV9FV1JVRjU1WWJCNzB3VHplUy1vc1hQaVJxa2tHbjItWTRfNlVNSEZ6clZmaGxiMGp4bFVQcm5PcVZQVDFwb0ctbWxJSHdaV0x5TjV3QjhQYWFaSzZVU0txN1ZLVTJsanFkbnVJUHVtdEowWTYyQWQ0LU56TkFNTUxpRVE?oc=5",
+      "top": true,
+      "bestRank": 15,
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "‘This is a lethal threat’: Indigenous groups fear Bolsonaro’s hold on voters in Brazil’s Amazon towns",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by The Guardian.",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRjliVEJIZzJRLVF1Z3lOaTAyWXl2UXFTZVNXdmVPN0lHclBrU3VCSFV3dU42T055VXRYeHd5Ujk5QVFLdDUxOVBXcmZmclg4bjJuZjFxTUZJZFQzNkpvMEh1T0ppTndQd2p0VU90cGNWaU1zREsxdkhEU05FMkQ3Uk5KMDJGOHYzdEpxczhmTURqUXZoeVlscnVuRm80bVRROWRLYlhob20?oc=5",
+      "top": true,
+      "bestRank": 18,
+      "firstSeen": "2026-10-23T12:49:16.219Z"
     },
     {
       "headline": "Jared Kushner Blasts ‘Outrageous’ Vanity Fair Over Report On Alleged Undisclosed Foreign Bank Accounts",
@@ -138,6 +208,16 @@
       "firstSeen": "2026-10-23T06:55:55.312Z"
     },
     {
+      "headline": "Russian Offensive Campaign Assessment, October 22, 2026",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by Institute for the Study of War.",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeTFMWkpRT0NfN2tHWm1kbzFCM1gzZjhOVlFCcUxhYV9IVW5TR3FGSXFaUHJIUmpZTVZNUnBtcEJOWVhvQ3piQmJFTjdXdTRzVi1NX1N6VV9UVDNHd3U4TVZtLTZOVGRkT2R6UVAyNFNPeS1BYkkyOVVVTXZaREo4MWgtYXNOeTZuRF9pOHpWSm5JaV9VYWhKcXpXS1JHcms0U3dYZUJ2cmRQR2M?oc=5",
+      "top": true,
+      "bestRank": 21,
+      "firstSeen": "2026-10-19T07:09:09.302Z"
+    },
+    {
       "headline": "Brazil's runoff: Lula's legacy vs. Bolsonaro's dynasty",
       "date": "2026-10-23",
       "bucket": "World",
@@ -146,6 +226,16 @@
       "firstSeen": "2026-10-23T03:45:09.533Z",
       "top": true,
       "bestRank": 22
+    },
+    {
+      "headline": "Brazil’s Powerful Supreme Court Seeks to Avert Bolsonaro’s Wrath",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdkFDdnhLVGNycktJX0tLUDl5MzVQTmRxY3FPMzFWVnJsZEhMRmdTOUJmdXNrSmdqMHdGQ2o1VHlWNnNRa2NFRzlGWFNlR2p3MGdfVkVHV2p6STcwSnpIXzMxTTVoZzcwSG10ZEVySkJ4djlaUGxRNE5uazJkTXpTZmw3Z3FUUE1YUGl1cENtX2dwQUZNZDBlckRkYzBjams1cGxYU2doNzI?oc=5",
+      "top": true,
+      "bestRank": 23,
+      "firstSeen": "2026-10-23T12:49:16.219Z"
     },
     {
       "headline": "Initial report | Shooting attack near Judea Junction",
@@ -168,12 +258,120 @@
       "firstSeen": "2026-10-23T06:55:55.312Z"
     },
     {
+      "headline": "New Zealand’s military chief resigns after admitting to an inappropriate relationship",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQN1c2QzRJdFhyWkdOTHBSUzRLc3RXRktMMEMxOFpuaE5JVEpfblBYdWExdnpCQUJ4Y1R4MUIwNGxYeTJPQ2dSWm1VanVkME9GS0YwbkgtUXptSl9hYjBBNVBoaTBHOEdESkVmTjdCeXJ6WVBlcEJQMUZrdkdZRE1OYXZ1RUR5THd2NldXeEhZZFBnWnB1S1JnQ19CR3p5UURsQXc?oc=5",
+      "top": true,
+      "bestRank": 33,
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "Anti-terror police investigate as one person killed in shooting near Paris",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Anti-terrorism police have taken up the investigation into the incident in Trappes, to the west of Paris.",
+      "url": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "Cyprus police open investigation into financial affairs of Roman Abramovich",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Questions about the integrity of some of Abramovich's professional advisers, were raised earlier this month.",
+      "url": "https://www.bbc.co.uk/news/articles/c875p1yy90ryo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "Denmark to ban mink farming in government U-turn",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Once the world's largest producer of mink pelts, the nation's industry has declined in recent years.",
+      "url": "https://www.bbc.co.uk/news/articles/c59vzjm118j1o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "Woman with Ebola in Nigeria confirmed as wife of Swiss diplomat",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Her husband is currently in isolation but has not developed any symptoms, Swiss officials say.",
+      "url": "https://www.bbc.co.uk/news/articles/cmwy4wlzqz3zo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "Malawi opposition demands answers over president's prolonged stay abroad",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "This is President Peter Mutharika's fifth visit to South Africa this year.",
+      "url": "https://www.bbc.co.uk/news/articles/cmx28en5wkypo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "Doctors tell the BBC about the targeting of Sudanese hospitals by paramilitary fighters",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "A BBC investigation has found evidence that Sudanese paramilitary fighters systematically destroyed el-Fasher's healthcare system during their long siege and subsequent takeover of the city in Darfur a year ago. BBC Africa correspondent Barbara Plett Usher explains.",
+      "url": "https://www.bbc.co.uk/news/videos/c8x23gegwz34o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "Blue Planet III: Moment octopus escapes death after hunt gone wrong",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "The sequence is part of the latest Blue Planet series from Sir David Attenborough.",
+      "url": "https://www.bbc.co.uk/news/videos/ck240lmvqjyjo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "Hispanic voters helped bring Trump to power - in Texas, the tide may be turning",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Recent polls suggest the president is facing challenging headwinds in the state ahead of the midterms.",
+      "url": "https://www.bbc.co.uk/news/articles/cmwyqn6ejyd4o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "Rubio turns to small Indian town as US faces high oil prices",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "US Secretary of State Marco Rubio pushed a business and energy agenda over diplomacy on his second trip to India this year.",
+      "url": "https://www.bbc.co.uk/news/articles/c3x2wnk8ejq5o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "Authorities investigating whether first Kenyan and Nigerian Ebola cases crossed paths",
+      "date": "2026-10-23",
+      "bucket": "Disaster",
+      "summary": "Nigeria this week recorded its first case of Ebola in the current outbreak, which has spread from the epicenter in Congo to several other African countries.",
+      "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "Military reinforcements move to Mideast. And, millions of Americans vote early",
+      "date": "2026-10-23",
+      "bucket": "Politics",
+      "summary": "Military reinforcements are heading to the Middle East and some personnel have left the region, pointing to a potential attack on Iran. And, millions of Americans have already voted in the midterms.",
+      "url": "https://www.npr.org/2026/10/23/g-s1-149514/up-first-newsletter-iran-war-midterm-voting-trump-bbc",
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
+      "headline": "Retired general discusses the U.S. and Israeli plan for possible attack on Iran",
+      "date": "2026-10-23",
+      "bucket": "Conflict",
+      "summary": "NPR'S Leila Fadel speaks with retired four-star Gen. Joseph Votel about the war in Iran and the U.S. and Israeli objectives for a potential post-election bombing campaign.",
+      "url": "https://www.npr.org/2026/10/23/nx-s1-6012303/retired-general-discusses-the-u-s-and-israeli-plan-for-possible-attack-on-iran",
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
       "headline": "Ukraine says Starlink still restricted after Trump says limits lifted",
       "date": "2026-10-23",
       "bucket": "World",
       "summary": "Issues remain with the network used by the Ukrainian military, sources say, after repeated denials of a deliberate slowdown.",
       "url": "https://www.bbc.co.uk/news/articles/cq74pjpmx0e8o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-23T09:42:29.126Z"
+      "firstSeen": "2026-10-23T09:42:29.126Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
@@ -181,7 +379,9 @@
       "bucket": "Disaster",
       "summary": "One person has died after being swept away by waves in Taiwan's Liuqiu island, authorities say.",
       "url": "https://www.bbc.co.uk/news/articles/cw98zn304zg7o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-23T09:42:29.126Z"
+      "firstSeen": "2026-10-23T09:42:29.126Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Israel orders closure of West Bank after soldiers kill 2 men behind an alleged attack",
@@ -189,7 +389,9 @@
       "bucket": "World",
       "summary": "Israeli soldiers shot and killed two men who the military said had launched an attack near the city of Hebron in the occupied West Bank on Friday morning. At least five people were injured, including some critically.",
       "url": "https://www.npr.org/2026/10/23/nx-s1-6013333/netanyahu-closure-west-bank",
-      "firstSeen": "2026-10-23T09:42:29.126Z"
+      "firstSeen": "2026-10-23T09:42:29.126Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Hacking attempts rise after flaws found in program affecting 70 percent of websites",
@@ -197,15 +399,9 @@
       "bucket": "World",
       "summary": "Governments around the world are rushing to implement safety measures after AI technology found 'severe' vulnerabilities in a key programming language called PHP.",
       "url": "https://www.npr.org/2026/10/23/g-s1-149503/hacking-php-flaws",
-      "firstSeen": "2026-10-23T09:42:29.126Z"
-    },
-    {
-      "headline": "Europe's heat claims 50,000 lives. Climate change blamed for two-thirds of deaths",
-      "date": "2026-10-23",
-      "bucket": "World",
-      "summary": "Blistering record heat in Europe this summer helped kill more than 50,000 people, with nearly two-thirds of that death toll blamed on human-caused climate change, a new study found.",
-      "url": "https://www.npr.org/2026/10/23/g-s1-149498/europe-heat-deaths",
-      "firstSeen": "2026-10-23T09:42:29.126Z"
+      "firstSeen": "2026-10-23T09:42:29.126Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "US orders some diplomats to leave Saudi Arabia as Houthi attacks escalate",
@@ -468,6 +664,16 @@
       "firstSeen": "2026-10-23T09:42:29.126Z"
     },
     {
+      "headline": "Kenya Red Cross targets 1,000 households in Moyale amid cross-border insecurity",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVUJtOXZ1azFzVE5YcmJrX3p0VmtUYXpoME1wUzRzelg2S29YWldrODNMMDZlRnNRQ1E2RnV3TkdadmNaZHZfUlh5WlFBdUthYWRRbTlrdUhBWUNlMmVQcDRDQ3VNYUtWTmFTTkZTSjB4WlVNTlVOc2pPckV2UVI2TnVXT1lyaUFqMTFkWGxpcmhNM3JPSjNtWjNkSGNsNWRZallyNEg2cXc1WDTSAbABQVVfeXFMTS1IQmRFYnMwVEdxUW5YVDR6QVUzTy1JdTZ5ZkxsTVRMem0xTFZFU0lIZTU5OFZuOENoU1hGRWE1RU1hU1lReDRxbm82MFg1YkpyOVg2VmtlUWszYlA5MFZjbzBvc2N3TFFQTjA1NWFkM3BHakFSWXo3V1VZTW43OV9tN29iY3NURjBpNk5HaTgwWUJKQUt1bklNbTV6aUF0N0RUUkVMWWFFYUZaX3I4NzM?oc=5",
+      "top": true,
+      "bestRank": 10,
+      "firstSeen": "2026-10-23T12:49:16.219Z"
+    },
+    {
       "headline": "French weekend protests to be limited to union demos only, says Macron",
       "date": "2026-10-22",
       "bucket": "World",
@@ -546,6 +752,16 @@
       "top": true,
       "bestRank": 14,
       "firstSeen": "2026-10-22T18:44:25.642Z"
+    },
+    {
+      "headline": "What Russians are told — and not told",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "Reported by The Kyiv Independent.",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSjhzcllvMjdWR2FOOHRrLVo4VWIyd1lCQkxqQXZNXy04bmp2dEtMSHlMSHJacUdHdFNrWTVfUEFueWRxeS16UDY3ZWoyX1Nia1ZzOFBVWmw5QnlVS01DdTJiNUU0bVRtNmk2a1k1c3NwaUJsNnZqT1N5ajZLTkc0UDJMbWctd1U2bGh3NmhPX3ltUQ?oc=5",
+      "top": true,
+      "bestRank": 14,
+      "firstSeen": "2026-10-23T12:49:16.219Z"
     },
     {
       "headline": "International Criminal Court wins EU's 2026 Sakharov prize",
@@ -681,8 +897,8 @@
       "headline": "A violent and coordinated youth uprising? That’s exactly the picture Europe’s enemies want to paint | Alberto Alemanno",
       "date": "2026-10-22",
       "bucket": "World",
-      "summary": "Reported by Newser.",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdllUQXlqVG1seVE2Q2JiaEcxM0phTlpBX3hyT3Y2akVRcGo1MnBfZUY5M3BHTF9wcVdYNkJrYUlUMjZjWkJ6ZEdBbGtnc1ZraTBCMGlfQ2JXQnRQaXBEOUNQMHNNaUNXOWpkTFZTZmdtTm1QWVJES05WVF9EbmFGS2s4R1hEdw?oc=5",
+      "summary": "Reported by The Economist.",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOc2ZlZGE4SUFOa2ZjOEFzdU9hZlNZUmNIdFB1UXNfYmFSNlhtQk1MSHNmU3dtZ2NXTzhfNFlqdENrX0FBbk1RTXRBOGgxR3VZaEtSdVdZQmtmdlJkOVVQdXV2UWNtdWZQQ2dMTE9xOEZXdnRyM2FYbWxLTkFjZzZXZDZ3dnU2dERlMXpYVlN3dE4zN2VjaDEyZmpCUGo?oc=5",
       "top": true,
       "bestRank": 24,
       "firstSeen": "2026-10-23T06:55:55.312Z"
@@ -706,6 +922,16 @@
       "top": true,
       "bestRank": 26,
       "firstSeen": "2026-10-23T06:55:55.312Z"
+    },
+    {
+      "headline": "U.A.E. Diplomat Jolts Deadlocked U.N. Leadership Race",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "Reported by WSJ.",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUHpPZjB4YVhEODNTd2ZWR1RzUWQyWnduS3RoTVVHSVhMNjNTd185VlJhT0tTNkswM2xrU3FRU3p1ZU5MSU1HMGp0TkVBMmdMNGlCMHA0RU5SVTFINEVqa1RBc0t5bG4weVdfTDg2b3RsR3BDNGdHSzNzUXhVNnBSaW9FaXlBVTZGSU56amJ5YnRXYlpCRWFyenV5dTNhTFE?oc=5",
+      "top": true,
+      "bestRank": 26,
+      "firstSeen": "2026-10-23T12:49:16.219Z"
     },
     {
       "headline": "Canada to Provide Steel, Auto Sectors With Billions to Ease Trade Crunch",
@@ -796,6 +1022,16 @@
       "top": true,
       "bestRank": 34,
       "firstSeen": "2026-10-22T15:41:10.796Z"
+    },
+    {
+      "headline": "VIDEO: Pinetown father opens fire on alleged hijackers | Highway Mail",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "Reported by The Citizen.",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMXk5MWtwWHlwTFVwZVZfYzFRekVsdEdtUWRwWno1OWphem5IaVlaQzBNbXEyNkV0R1VSZXZMd3h6amx1bXlGa0oxV1F3LWhuUHRyUWgxc0JqS3JBUzg5T0RadVJlZDQwNFdmQnJvcVFmeVZFMmdUUTBuY0R0WThfa19XbWUwbnZTN1dSWEtzc0V5ZlJlbUM0VVZ0bWh0cVlqcHczLUN6QThMUzl5OXFKSDRwRWZwSnEtd1RGVTZnblA2SVd6WTlzbHhn?oc=5",
+      "top": true,
+      "bestRank": 34,
+      "firstSeen": "2026-10-23T12:49:16.219Z"
     },
     {
       "headline": "California-based United pilot sparks security fears after his pro-terrorist sympathies were exposed",
@@ -1054,16 +1290,6 @@
       "bestRank": null
     },
     {
-      "headline": "New York City reconsiders a classic attraction: are horse-drawn carriages abuse?",
-      "date": "2026-10-22",
-      "bucket": "World",
-      "summary": "As councillors prepare to banish the vehicles, views in Central Park are divided over the 160-year-old tradition.",
-      "url": "https://www.bbc.co.uk/news/articles/c6qjnwd1pgjxo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-22T15:41:10.796Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "U.S. and Israel are planning for a possible attack on Iran, source tells NPR",
       "date": "2026-10-22",
       "bucket": "Conflict",
@@ -1090,6 +1316,126 @@
       "summary": "The pro-Israel lobbying group and influential political funder announced it would no longer endorse candidates or give directly to campaigns. AIPAC's affiliated super PAC, though, will continue.",
       "url": "https://www.npr.org/2026/10/21/nx-s1-6011531/aipac-campaign-contributions-israel-democrats",
       "firstSeen": "2026-10-22T01:07:39.907Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Germany target of 'intensive' espionage, Merz says after suspected Russian spy arrest",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "A Ukrainian man was arrested on suspicion of spying for Russia - one of several such cases in Germany this year.",
+      "url": "https://www.bbc.co.uk/news/articles/cmx28y5e04ggo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-22T18:44:25.642Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Lula says rival should be disqualified over alleged Meta interference ahead of Brazil vote",
+      "date": "2026-10-22",
+      "bucket": "Politics",
+      "summary": "The Brazilian president accuses the tech firm of favouring Flávio Bolsonaro, which it denies.",
+      "url": "https://www.bbc.co.uk/news/articles/c6pwgve2lk5go?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-22T18:44:25.642Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "'This is despicable': Amy Acton responds to Ohio attack ad featuring her estranged mother",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "Her Republican opponent Vivek Ramaswamy is airing the ad featuring her mother, whose husband was charged with sexual abuse in her childhood.",
+      "url": "https://www.bbc.co.uk/news/articles/c6z981l59wnwo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-22T18:44:25.642Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Zuckerberg wins Meta deal to help him foot bill for possible California billionaire tax",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "The Meta boss had said he would exit the state over a wealth tax that has not yet come into force.",
+      "url": "https://www.bbc.co.uk/news/articles/cky83vwnyglno?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-22T18:44:25.642Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "'Looksmaxxing' influencer Clavicular pleads not guilty to rape charge",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "The influencer, whose real name is Braden Peters, is accused of sexually assaulting a 17-year-old girl in 2025.",
+      "url": "https://www.bbc.co.uk/news/articles/cqwy71ldj3w9o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-22T18:44:25.642Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "AI discovered a massive cyber-security flaw - here's what happened",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "The BBC's technology correspondent Joe Tidy explains how it happened, and what it means for you.",
+      "url": "https://www.bbc.co.uk/news/videos/cq0ld7e0jg2eo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-22T15:41:10.796Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "At least four dead after storm brings flooding to southern France",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "The deaths include two women found drowned in a cellar in the Bouches-du-Rhône region.",
+      "url": "https://www.bbc.co.uk/news/articles/cm5ynl4v4wgwo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-22T12:51:42.501Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Moment man rescued from sinking car by Australian TV reporter",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "Journalist Will Murray describes how he and a bystander saved an SUV driver from his vehicle.",
+      "url": "https://www.bbc.co.uk/news/videos/cwdr8zm3r5gko?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-22T12:51:42.501Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "U.S., Israel may attack Iran post-elections. And, SpaceX and Tesla consider merging",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "The U.S. and Israel are planning for a possible post-elections attack on Iran, an anonymous source tells NPR. And, Elon Musk considers merging his companies SpaceX and Tesla.",
+      "url": "https://www.npr.org/2026/10/22/g-s1-149315/up-first-newsletter-midterm-campaign-israel-iran-elon-musk-spacex-tesla",
+      "firstSeen": "2026-10-22T12:51:42.501Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "See how Big Tech is transforming Spain's landscape",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "A drought-stricken region of northeast Spain has become a focus for American companies searching for locations to place their data centers.",
+      "url": "https://www.npr.org/2026/10/22/nx-s1-5991641/ai-data-centers-spain-environmental-impact",
+      "firstSeen": "2026-10-22T09:42:47.995Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Former U.S. Ambassador to Ukraine William Taylor on Trump's embrace of Russia",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "NPR's Steve Inskeep asks former U.S. Ambassador to Ukraine William Taylor about President Trump's embrace of Russia as envoy Steve Witkoff visits Moscow after meeting Ukraine's Volodymyr Zelenskyy.",
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6010509/former-u-s-ambassador-to-ukraine-william-taylor-on-trumps-embrace-of-russia",
+      "firstSeen": "2026-10-20T11:23:27.931Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "'It's part of the culture' - New York bans horse-drawn carriages after more than 160 years",
+      "date": "2026-10-22",
+      "bucket": "World",
+      "summary": "The BBC's Madeline Halpert spoke to city tourists, residents and horse carriage workers about the industry and their opinion on the ban.",
+      "url": "https://www.bbc.co.uk/news/videos/ck5yn9dqnqj7o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-22T15:41:10.796Z",
       "top": false,
       "bestRank": null
     },
@@ -1164,71 +1510,11 @@
       "bestRank": null
     },
     {
-      "headline": "Germany target of 'intensive' espionage, Merz says after suspected Russian spy arrest",
-      "date": "2026-10-22",
-      "bucket": "World",
-      "summary": "A Ukrainian man was arrested on suspicion of spying for Russia - one of several such cases in Germany this year.",
-      "url": "https://www.bbc.co.uk/news/articles/cmx28y5e04ggo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-22T18:44:25.642Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Lula says rival should be disqualified over alleged Meta interference ahead of Brazil vote",
-      "date": "2026-10-22",
-      "bucket": "Politics",
-      "summary": "The Brazilian president accuses the tech firm of favouring Flávio Bolsonaro, which it denies.",
-      "url": "https://www.bbc.co.uk/news/articles/c6pwgve2lk5go?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-22T18:44:25.642Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "'This is despicable': Amy Acton responds to Ohio attack ad featuring her estranged mother",
-      "date": "2026-10-22",
-      "bucket": "World",
-      "summary": "Her Republican opponent Vivek Ramaswamy is airing the ad featuring her mother, whose husband was charged with sexual abuse in her childhood.",
-      "url": "https://www.bbc.co.uk/news/articles/c6z981l59wnwo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-22T18:44:25.642Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Zuckerberg wins Meta deal to help him foot bill for possible California billionaire tax",
-      "date": "2026-10-22",
-      "bucket": "World",
-      "summary": "The Meta boss had said he would exit the state over a wealth tax that has not yet come into force.",
-      "url": "https://www.bbc.co.uk/news/articles/cky83vwnyglno?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-22T18:44:25.642Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "'Looksmaxxing' influencer Clavicular pleads not guilty to rape charge",
-      "date": "2026-10-22",
-      "bucket": "World",
-      "summary": "The influencer, whose real name is Braden Peters, is accused of sexually assaulting a 17-year-old girl in 2025.",
-      "url": "https://www.bbc.co.uk/news/articles/cqwy71ldj3w9o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-22T18:44:25.642Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "Damaging hail pelts Phoenix in rare storm",
       "date": "2026-10-22",
       "bucket": "World",
       "summary": "Videos from the Arizona capital show people sheltering inside a car as hail smashes the windscreen, while intense downpours covered neighbourhoods in ice.",
       "url": "https://www.bbc.co.uk/news/videos/cm5ynpz5jj5do?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-22T15:41:10.796Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "AI discovered a massive cyber-security flaw - here's what happened",
-      "date": "2026-10-22",
-      "bucket": "World",
-      "summary": "The BBC's technology correspondent Joe Tidy explains how it happened, and what it means for you.",
-      "url": "https://www.bbc.co.uk/news/videos/cq0ld7e0jg2eo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-22T15:41:10.796Z",
       "top": false,
       "bestRank": null
@@ -1240,56 +1526,6 @@
       "summary": "After two years of student protests, Serbians vote on Sunday in elections that could bring down the ruling party.",
       "url": "https://www.bbc.co.uk/news/articles/cmq8n3v94ql3o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-22T15:41:10.796Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "At least four dead after storm brings flooding to southern France",
-      "date": "2026-10-22",
-      "bucket": "World",
-      "summary": "The deaths include two women found drowned in a cellar in the Bouches-du-Rhône region.",
-      "url": "https://www.bbc.co.uk/news/articles/cm5ynl4v4wgwo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-22T12:51:42.501Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Moment man rescued from sinking car by Australian TV reporter",
-      "date": "2026-10-22",
-      "bucket": "World",
-      "summary": "Journalist Will Murray describes how he and a bystander saved an SUV driver from his vehicle.",
-      "url": "https://www.bbc.co.uk/news/videos/cwdr8zm3r5gko?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-22T12:51:42.501Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "U.S., Israel may attack Iran post-elections. And, SpaceX and Tesla consider merging",
-      "date": "2026-10-22",
-      "bucket": "World",
-      "summary": "The U.S. and Israel are planning for a possible post-elections attack on Iran, an anonymous source tells NPR. And, Elon Musk considers merging his companies SpaceX and Tesla.",
-      "url": "https://www.npr.org/2026/10/22/g-s1-149315/up-first-newsletter-midterm-campaign-israel-iran-elon-musk-spacex-tesla",
-      "firstSeen": "2026-10-22T12:51:42.501Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "See how Big Tech is transforming Spain's landscape",
-      "date": "2026-10-22",
-      "bucket": "World",
-      "summary": "A drought-stricken region of northeast Spain has become a focus for American companies searching for locations to place their data centers.",
-      "url": "https://www.npr.org/2026/10/22/nx-s1-5991641/ai-data-centers-spain-environmental-impact",
-      "firstSeen": "2026-10-22T09:42:47.995Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Former U.S. Ambassador to Ukraine William Taylor on Trump's embrace of Russia",
-      "date": "2026-10-22",
-      "bucket": "World",
-      "summary": "NPR's Steve Inskeep asks former U.S. Ambassador to Ukraine William Taylor about President Trump's embrace of Russia as envoy Steve Witkoff visits Moscow after meeting Ukraine's Volodymyr Zelenskyy.",
-      "url": "https://www.npr.org/2026/10/22/nx-s1-6010509/former-u-s-ambassador-to-ukraine-william-taylor-on-trumps-embrace-of-russia",
-      "firstSeen": "2026-10-20T11:23:27.931Z",
       "top": false,
       "bestRank": null
     },
@@ -5494,16 +5730,6 @@
       "top": true,
       "bestRank": 36,
       "firstSeen": "2026-10-19T03:47:53.629Z"
-    },
-    {
-      "headline": "ISW Russian Offensive Campaign Assessment, October 17, 2026",
-      "date": "2026-10-18",
-      "bucket": "World",
-      "summary": "Reported by Kyiv Post.",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1LeGw5b3dkY2xFOWhReEdNZUFhRXB2dDRacmRDZGpZcXg0STF5MEpGeGVpdU1aNDZqU0lOZjJiUTR5WTN6OGZiZXlJUQ?oc=5",
-      "top": true,
-      "bestRank": 36,
-      "firstSeen": "2026-10-19T07:09:09.302Z"
     },
     {
       "headline": "Oil facilities hit in deadly overnight attack on St Petersburg",
