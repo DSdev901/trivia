@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-24T15:25:35.043Z",
+  "generatedAt": "2026-10-24T18:30:39.507Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-03T15:25:35.043Z",
-  "windowEnd": "2026-10-24T15:25:35.043Z",
+  "windowStart": "2026-10-03T18:30:39.507Z",
+  "windowEnd": "2026-10-24T18:30:39.507Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,29 +21,491 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4114,
+  "count": 4115,
   "items": [
     {
       "key": "50220422",
       "id": "50220422",
-      "headline": "Premier League live updates: Arsenal face Everton after City lose to Villa",
+      "headline": "Premier League recap: Spurs stun Chelsea, City lose unbeaten record to Villa",
       "summary": "Manchester City suffered their first loss of the season to Aston Villa, with Arsenal looking to take advantage against Everton on another busy weekend of European soccer.",
       "url": "https://www.espn.com/soccer/story/_/id/50220422/premier-league-live-updates-aston-villa-manchester-city-arsenal-everton-chelsea-tottenham-hotspur",
       "sport": "Soccer",
-      "published": "2026-10-24T15:19:02.000Z",
+      "published": "2026-10-24T18:26:28.000Z",
       "firstSeen": "2026-10-24T09:27:45.174Z",
       "bestRank": 1
     },
     {
+      "key": "50267749",
+      "id": "50267749",
+      "headline": "Rutgers QB Ryan Lonergan exits with apparent head injury",
+      "summary": "Rutgers QB Dylan Lonergan will not return to Saturday's game at Northwestern after suffering an apparent head injury on a big hit, coach Greg Schiano said.",
+      "url": "https://www.espn.com/college-football/story/_/id/50267749/rutgers-qb-ryan-lonergan-exits-apparent-head-injury",
+      "sport": "College football",
+      "published": "2026-10-24T18:26:23.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50253065",
+      "id": "50253065",
+      "headline": "Cole Palmer sent off as Tottenham win at Chelsea",
+      "summary": "Cole Palmer was sent off as Chelsea fell to a 2-0 defeat to Tottenham at Stamford Bridge on Saturday.",
+      "url": "http://www.espn.com/soccer/report/_/gameId/401878767",
+      "sport": "Soccer",
+      "published": "2026-10-24T18:24:52.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50266620",
+      "id": "50266620",
+      "headline": "Magic's Paolo Banchero has ankle sprain; out multiple weeks, sources say",
+      "summary": "Magic star Paolo Banchero has sustained a low-grade high ankle sprain, the team announced, with sources telling ESPN that the forward will miss multiple weeks.",
+      "url": "https://www.espn.com/nba/story/_/id/50266620/sources-magic-banchero-multiple-weeks-ankle-sprain",
+      "sport": "NBA",
+      "published": "2026-10-24T18:24:29.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50267484",
+      "id": "50267484",
+      "headline": "76ers' LeBron James to sit vs. Bucks in first game of back-to-back",
+      "summary": "LeBron James will miss the Sixers' game against the Bucks to manage low back pain/sciatica. It will be his first missed game of the season.",
+      "url": "https://www.espn.com/nba/story/_/id/50267484/76ers-lebron-james-sit-vs-bucks-1st-back-back",
+      "sport": "NBA",
+      "published": "2026-10-24T18:19:53.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50267528",
+      "id": "50267528",
+      "headline": "Mavericks' Cooper Flagg out for home opener with mild left shoulder sprain",
+      "summary": "Mavericks star forward Cooper Flagg had an MRI Saturday morning that revealed a mild left shoulder sprain, the team announced.",
+      "url": "https://www.espn.com/nba/story/_/id/50267528/mavericks-flagg-home-opener-mild-left-shoulder-sprain",
+      "sport": "NBA",
+      "published": "2026-10-24T18:17:30.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50265416",
+      "id": "50265416",
+      "headline": "Man City lose 100% Premier League record with defeat at Aston Villa",
+      "summary": "Manchester City suffered defeat for the first time in the Premier League this season when Nicolas Jackson's double earned Aston Villa a 2-1 victory at Villa Park.",
+      "url": "https://www.espn.com/soccer/story/_/id/50265416/man-city-lose-100-premier-league-record-defeat-aston-villa",
+      "sport": "Soccer",
+      "published": "2026-10-24T18:09:36.000Z",
+      "firstSeen": "2026-10-24T15:25:35.043Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50264324",
+      "id": "50264324",
+      "headline": "Arise Arsenal, the people's Premier League champions",
+      "summary": "The sight of Man City pulling clear at the top of the Premier League table was not a good look for the biggest league in the world. But Arsenal's win against Everton showed they are ready to fight all the way this season.",
+      "url": "https://www.espn.com/soccer/story/_/id/50264324/arise-arsenal-people-premier-league-champions",
+      "sport": "Soccer",
+      "published": "2026-10-24T18:04:14.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50220522",
+      "id": "50220522",
+      "headline": "UFC 333 live results, analysis for Volkanovski vs. Evloev, Yan vs. Dvalishvili",
+      "summary": "ESPN MMA contributors break down all the action from UFC 333 in Abu Dhabi.",
+      "url": "https://www.espn.com/mma/story/_/id/50220522/ufc-333-results-volkanovski-evloev",
+      "sport": "MMA",
+      "published": "2026-10-24T17:56:18.000Z",
+      "firstSeen": "2026-10-24T15:25:35.043Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50267261",
+      "id": "50267261",
+      "headline": "Did Arsenal prioritise the result over performance vs. Everton?",
+      "summary": "Did Arsenal prioritise the result over performance vs. Everton?",
+      "url": "https://www.espn.com/video/clip/_/id/50267261/did-arsenal-prioritise-result-performance-vs-everton",
+      "sport": "Soccer",
+      "published": "2026-10-24T17:38:30.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50263122",
+      "id": "50263122",
+      "headline": "WNBA Finals live: Valkyries-Dream Game 4 analysis, updates and highlights",
+      "summary": "ESPN is courtside as Golden State looks to even the Finals in Game 4 on Saturday at State Farm Arena.",
+      "url": "https://www.espn.com/wnba/story/_/id/50263122/finals-game-4-golden-state-valkyries-atlanta-dream",
+      "sport": "WNBA",
+      "published": "2026-10-24T17:23:04.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 3
+    },
+    {
+      "key": "46793185",
+      "id": "46793185",
+      "headline": "2026 World Series odds: Brewers jump to -295 after narrow Game 1 win over Rays",
+      "summary": "Every MLB team's odds to win the 2026 World Series, led by the Dodgers. Milwaukee and Tampa Bay continue to see odds improvement.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/46793185/espn-mlb-betting-odds-futures-bets-world-series-american-national-league",
+      "sport": "MLB",
+      "published": "2026-10-24T17:20:14.000Z",
+      "firstSeen": "2026-08-17T18:29:18.350Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50266897",
+      "id": "50266897",
+      "headline": "CJ Carr watches brother Tommy's first Michigan start from Big House",
+      "summary": "Week 8 is Notre Dame's bye week, meaning Tommy Carr had a special spectator in attendance for his first start: his brother CJ.",
+      "url": "https://www.espn.com/college-football/story/_/id/50266897/cj-carr-tommy-first-start-notre-dame-michigan",
+      "sport": "College football",
+      "published": "2026-10-24T17:15:27.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50266916",
+      "id": "50266916",
+      "headline": "A'ja Wilson, Breanna Stewart headline youth-infused All-WNBA teams",
+      "summary": "A'ja Wilson, Breanna Stewart, Caitlin Clark, Kelsey Mitchell and rookie Olivia Miles have been named first-team All-WNBA.",
+      "url": "https://www.espn.com/wnba/story/_/id/50266916/aja-wilson-breanna-stewart-headline-youth-infused-all-wnba",
+      "sport": "WNBA",
+      "published": "2026-10-24T17:12:04.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50265668",
+      "id": "50265668",
+      "headline": "How Milwaukee celebrated its World Series return, 44 years in the making",
+      "summary": "Milwaukee fans waited decades to see their team in the World Series. And in Game 1, the Brewers -- and the party -- didn't disappoint.",
+      "url": "https://www.espn.com/mlb/story/_/id/50265668/milwaukee-brewers-world-series-party",
+      "sport": "MLB",
+      "published": "2026-10-24T17:07:16.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50240486",
+      "id": "50240486",
+      "headline": "NFL Week 7 uniforms: Alternates galore as Texans go battle red, Lions all-black",
+      "summary": "Here's a look at what each NFL team is wearing in Week 7, led by alternate looks from Houston, Detroit and Dallas.",
+      "url": "https://www.espn.com/nfl/story/_/id/50240486/nfl-week-7-uniforms",
+      "sport": "NFL",
+      "published": "2026-10-24T17:02:08.000Z",
+      "firstSeen": "2026-10-22T15:30:48.899Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50266668",
+      "id": "50266668",
+      "headline": "Sources: Kansas State QB Avery Johnson out vs. Arizona State",
+      "summary": "Kansas State QB Avery Johnson has been ruled out vs. Arizona State, with Jacob Knuth expected to make his first career start, sources told ESPN.",
+      "url": "https://www.espn.com/college-football/story/_/id/50266668/sources-kansas-state-qb-avery-johnson-vs-arizona-st",
+      "sport": "College football",
+      "published": "2026-10-24T16:52:39.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50192486",
+      "id": "50192486",
+      "headline": "Kaila Charles tops fashionable arrivals ahead of Game 3 of WNBA Finals",
+      "summary": "The stage is set. The Atlanta Dream and Golden State Valkyries are in the WNBA Finals, but before the game began, the fashion runway was laid out for the players.",
+      "url": "https://www.espn.com/wnba/story/_/id/50192486/wnba-finals-fashion-atlanta-dream-golden-state-valkyries",
+      "sport": "WNBA",
+      "published": "2026-10-24T16:51:49.000Z",
+      "firstSeen": "2026-10-17T21:24:14.288Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50266877",
+      "id": "50266877",
+      "headline": "Utah fans boo McAfee mercilessly for his Houston pick",
+      "summary": "Utah fans boo McAfee mercilessly for his Houston pick",
+      "url": "https://www.espn.com/video/clip/_/id/50266877/utah-fans-boo-mcafee-mercilessly-houston-pick",
+      "sport": "College football",
+      "published": "2026-10-24T16:51:22.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50263923",
+      "id": "50263923",
+      "headline": "Warriors implode late as Grizzlies' 17-0 run caps stunning comeback",
+      "summary": "The Warriors appeared to be in control before \"pretty much everything went wrong\" in the final four minutes, when the Grizzlies rallied from 12 down to win 111-108.",
+      "url": "https://www.espn.com/nba/story/_/id/50263923/warriors-implode-grizzlies-17-0-run-caps-stunning-comeback",
+      "sport": "NBA",
+      "published": "2026-10-24T16:49:44.000Z",
+      "firstSeen": "2026-10-24T09:27:45.174Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50258227",
+      "id": "50258227",
+      "headline": "Week 8 live: Best moments and top plays",
+      "summary": "Top moments and what we're seeing from around college football.",
+      "url": "https://www.espn.com/college-football/story/_/id/50258227/week-8-live-highlights",
+      "sport": "College football",
+      "published": "2026-10-24T16:46:53.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50266772",
+      "id": "50266772",
+      "headline": "Marc Guéhi form doesn't worry Man City boss Enzo Maresca despite errors",
+      "summary": "Manchester City boss Enzo Maresca is not worried by the form of defender Marc Guéhi after his mistake contributed to their 2-1 defeat at Aston Villa.",
+      "url": "https://www.espn.com/soccer/story/_/id/50266772/marc-guehi-form-man-city-boss-enzo-maresca-errors",
+      "sport": "Soccer",
+      "published": "2026-10-24T16:44:20.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 6
+    },
+    {
       "key": "50265857",
       "id": "50265857",
-      "headline": "Sources: Indiana RB Khobie Martin to return vs. Michigan",
+      "headline": "Indiana RB Khobie Martin returns, available vs. Michigan",
       "summary": "Indiana running back Khobie Martin, who suffered a broken forearm in the Hoosiers' season opener, is available and will play against Michigan, sources told ESPN.",
       "url": "https://www.espn.com/college-football/story/_/id/50265857/sources-indiana-rb-khobie-martin-return-vs-michigan",
       "sport": "College football",
-      "published": "2026-10-24T15:17:23.000Z",
+      "published": "2026-10-24T16:42:35.000Z",
       "firstSeen": "2026-10-24T15:25:35.043Z",
       "bestRank": 2
+    },
+    {
+      "key": "50260251",
+      "id": "50260251",
+      "headline": "Michigan QB Tommy Carr, grandson of ex-coach, gets first start",
+      "summary": "Michigan freshman quarterback Tommy Carr will make his first start Saturday against No. 6 Indiana, a source confirmed to ESPN.",
+      "url": "https://www.espn.com/college-football/story/_/id/50260251/michigan-qb-tommy-carr-start-indiana-source-confirms",
+      "sport": "College football",
+      "published": "2026-10-24T16:40:50.000Z",
+      "firstSeen": "2026-10-23T21:26:31.632Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50253055",
+      "id": "50253055",
+      "headline": "Fulham out of relegation zone by beating Coventry",
+      "summary": "Oscar Bobb's first Premier League goal for Fulham earned a 1-0 win over Coventry that lifted the Cottagers clear of the relegation zone.",
+      "url": "http://www.espn.com/soccer/report/_/gameId/401879255",
+      "sport": "Soccer",
+      "published": "2026-10-24T16:22:02.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50266109",
+      "id": "50266109",
+      "headline": "Saturday's fantasy basketball adds and bets to make in the NBA",
+      "summary": "Jim McCormick breaks down Saturday's slate, highlighting the fantasy streamers to add and bets to make.",
+      "url": "https://www.espn.com/fantasy/basketball/story/_/id/50266109/fantasy-basketball-tips-nba-betting-picks-today",
+      "sport": "NBA",
+      "published": "2026-10-24T16:13:18.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50253048",
+      "id": "50253048",
+      "headline": "Arsenal's Konsa and Gabriel score to deny Everton",
+      "summary": "Centre-back partners Ezri Konsa and Gabriel celebrated personal milestones as Arsenal beat Everton 2-0 to move level on points with Premier League leaders Manchester City.",
+      "url": "http://www.espn.com/soccer/report/_/gameId/401878768",
+      "sport": "Soccer",
+      "published": "2026-10-24T16:07:36.000Z",
+      "firstSeen": "2026-10-24T18:30:39.507Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50110772",
+      "id": "50110772",
+      "headline": "Who is this year's Mr. October? Tracking the playoff MVP for 2026",
+      "summary": "We go inside the numbers on the players doing the most to help their teams win.",
+      "url": "https://www.espn.com/mlb/story/_/id/50110772/2026-mlb-playoffs-mvp-tracker-wpa-leaderboard-win-probability-added-mr-october",
+      "sport": "MLB",
+      "published": "2026-10-24T16:04:15.000Z",
+      "firstSeen": "2026-10-09T12:41:18.280Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50228155",
+      "id": "50228155",
+      "headline": "Fantasy playbook: NFL Week 7 Shadow Reports, lineup locks and projected scores",
+      "summary": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50228155/fantasy-playbook-projections-lineup-locks-week-7-shadow",
+      "sport": "NFL",
+      "published": "2026-10-24T15:54:31.000Z",
+      "firstSeen": "2026-10-22T12:40:51.139Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50265129",
+      "id": "50265129",
+      "headline": "Sources: Mississippi State eyes return for QB Taylor, RB Bothwell",
+      "summary": "Mississippi State QB Kamario Taylor is expected to attempt to play while RB Fluff Bothwell will be available vs. Oklahoma, sources told ESPN.",
+      "url": "https://www.espn.com/college-football/story/_/id/50265129/sources-mississippi-state-eyes-return-taylor-bothwell",
+      "sport": "College football",
+      "published": "2026-10-24T15:48:46.000Z",
+      "firstSeen": "2026-10-24T12:35:14.103Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50265566",
+      "id": "50265566",
+      "headline": "Texas RB Hollywood Smothers ruled out vs. Ole Miss",
+      "summary": "Texas will be without top tailback Hollywood Smothers for Saturday's showdown vs. No. 7 Ole Miss as the No. 19 Longhorns try to avoid a third straight loss.",
+      "url": "https://www.espn.com/college-football/story/_/id/50265566/texas-rb-hollywood-smothers-ruled-vs-ole-miss",
+      "sport": "College football",
+      "published": "2026-10-24T15:47:45.000Z",
+      "firstSeen": "2026-10-24T15:25:35.043Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50265987",
+      "id": "50265987",
+      "headline": "Utah student duffs kick twice, missing out on $1 million",
+      "summary": "Utah student duffs kick twice, missing out on $1 million",
+      "url": "https://www.espn.com/video/clip/_/id/50265987/utah-student-duffs-kick-twice-missing-1-million",
+      "sport": "College football",
+      "published": "2026-10-24T15:44:19.000Z",
+      "firstSeen": "2026-10-24T15:25:35.043Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50260952",
+      "id": "50260952",
+      "headline": "South Carolina adds Jordyn Palmer to top women's basketball recruiting class",
+      "summary": "Jordyn Palmer, the No. 7 prospect in the 2027 SC Next 100, has committed to South Carolina, sealing the No. 1 recruiting class for the Gamecocks in this cycle.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50260952/south-carolina-adds-jordyn-palmer-top-recruiting-class",
+      "sport": "Women's college basketball",
+      "published": "2026-10-24T15:38:35.000Z",
+      "firstSeen": "2026-10-24T00:57:18.512Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49803708",
+      "id": "49803708",
+      "headline": "Fantasy football flex and superflex rankings for Week 7",
+      "summary": "Trying to decide between a couple of closely ranked players this week? Eric Karabell's rankings are here to help.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49803708/fantasy-football-superflex-rankings-2026-qb-rb-wr-te",
+      "sport": "NFL",
+      "published": "2026-10-24T15:36:57.000Z",
+      "firstSeen": "2026-09-05T00:58:39.682Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49797082",
+      "id": "49797082",
+      "headline": "Fantasy football rankings Week 7: PPR and superflex",
+      "summary": "Weekly composite ranks for each position in PPR and IDP formats, as well as Eric Karabell's superflex ranks.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26main-49797082/fantasy-football-rankings-2026-qb-rb-wr-te-dst",
+      "sport": "NFL",
+      "published": "2026-10-24T15:35:23.000Z",
+      "firstSeen": "2026-09-04T18:29:30.987Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804149",
+      "id": "49804149",
+      "headline": "Fantasy football rankings for Week 7: Wide receiver",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804149/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
+      "sport": "NFL",
+      "published": "2026-10-24T15:34:59.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804068",
+      "id": "49804068",
+      "headline": "Fantasy football rankings for Week 7: Running back",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804068/nfl-fantasy-football-rankings-2026-rb-running-back",
+      "sport": "NFL",
+      "published": "2026-10-24T15:34:34.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49804273",
+      "id": "49804273",
+      "headline": "Fantasy football rankings for Week 7: D/ST",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804273/nfl-fantasy-football-rankings-2026-dst-defense",
+      "sport": "NFL",
+      "published": "2026-10-24T15:34:10.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49804022",
+      "id": "49804022",
+      "headline": "Fantasy football rankings for Week 7: Quarterback",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804022/nfl-fantasy-football-rankings-2026-qb-quarterback",
+      "sport": "NFL",
+      "published": "2026-10-24T15:33:45.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49804164",
+      "id": "49804164",
+      "headline": "Fantasy football rankings for Week 7: Tight end",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804164/nfl-fantasy-football-rankings-2026-te-tight-end",
+      "sport": "NFL",
+      "published": "2026-10-24T15:33:27.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49804233",
+      "id": "49804233",
+      "headline": "Fantasy football rankings for Week 7: Kicker",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804233/nfl-fantasy-football-rankings-2026-k-kicker",
+      "sport": "NFL",
+      "published": "2026-10-24T15:33:05.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50262387",
+      "id": "50262387",
+      "headline": "Patriots must improve turnover differential if they want to win, other notes",
+      "summary": "It's one of Mike Vrabel's four pillars of the team identity -- and New England is struggling with it after losing to the Bears on Thursday.",
+      "url": "https://www.espn.com/nfl/story/_/id/50262387/new-england-patriots-week-7-loss-notebook",
+      "sport": "NFL",
+      "published": "2026-10-24T15:32:24.000Z",
+      "firstSeen": "2026-10-24T15:25:35.043Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804332",
+      "id": "49804332",
+      "headline": "Fantasy football rankings for Week 7: IDP",
+      "summary": "Weekly fantasy football draft rankings for IDP leagues from Mike Clay, Tristan H. Cockcroft and Eric Moody.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804332/nfl-fantasy-football-rankings-2026-idp",
+      "sport": "NFL",
+      "published": "2026-10-24T15:32:18.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "48827253",
+      "id": "48827253",
+      "headline": "How top 2027 women's basketball commits fit at their schools",
+      "summary": "Three more five-stars are off the board. Here's how they will impact their respective programs in 2027-28.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/48827253/womens-college-basketball-five-star-commits-sc-next-class-2027-fit-new-school",
+      "sport": "Women's college basketball",
+      "published": "2026-10-24T15:30:29.000Z",
+      "firstSeen": "2026-10-02T15:30:44.172Z",
+      "bestRank": 1
     },
     {
       "key": "50265720",
@@ -57,50 +519,6 @@
       "bestRank": 1
     },
     {
-      "key": "50265987",
-      "id": "50265987",
-      "headline": "Utah student duffs kick twice, missing out on $1 million",
-      "summary": "Utah student duffs kick twice, missing out on $1 million",
-      "url": "https://www.espn.com/video/clip/_/id/50265987/utah-student-duffs-kick-twice-missing-1-million",
-      "sport": "College football",
-      "published": "2026-10-24T15:08:26.000Z",
-      "firstSeen": "2026-10-24T15:25:35.043Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50262387",
-      "id": "50262387",
-      "headline": "Patriots must improve turnover differential if they want to win, other notes",
-      "summary": "It's one of Mike Vrabel's four pillars of the team identity -- and New England is struggling with it after losing to the Bears on Thursday.",
-      "url": "https://www.espn.com/nfl/story/_/id/50262387/new-england-patriots-week-7-loss-notebook",
-      "sport": "NFL",
-      "published": "2026-10-24T15:04:40.000Z",
-      "firstSeen": "2026-10-24T15:25:35.043Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50265566",
-      "id": "50265566",
-      "headline": "Texas RB Hollywood Smothers ruled out vs. Ole Miss",
-      "summary": "Texas will be without top tailback Hollywood Smothers for Saturday's showdown vs. No. 7 Ole Miss as the No. 19 Longhorns try to avoid a third straight loss.",
-      "url": "https://www.espn.com/college-football/story/_/id/50265566/texas-rb-hollywood-smothers-ruled-vs-ole-miss",
-      "sport": "College football",
-      "published": "2026-10-24T14:53:42.000Z",
-      "firstSeen": "2026-10-24T15:25:35.043Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50265416",
-      "id": "50265416",
-      "headline": "Man City lose 100% Premier League record with defeat at Aston Villa",
-      "summary": "Manchester City suffered defeat for the first time in the Premier League this season when Nicolas Jackson's double earned Aston Villa a 2-1 victory at Villa Park.",
-      "url": "https://www.espn.com/soccer/story/_/id/50265416/man-city-lose-100-premier-league-record-defeat-aston-villa",
-      "sport": "Soccer",
-      "published": "2026-10-24T14:47:44.000Z",
-      "firstSeen": "2026-10-24T15:25:35.043Z",
-      "bestRank": 3
-    },
-    {
       "key": "50265810",
       "id": "50265810",
       "headline": "How can teams stop Erling Haaland?",
@@ -110,17 +528,6 @@
       "published": "2026-10-24T14:27:22.000Z",
       "firstSeen": "2026-10-24T15:25:35.043Z",
       "bestRank": 2
-    },
-    {
-      "key": "50220522",
-      "id": "50220522",
-      "headline": "UFC 333 live results, analysis for Volkanovski vs. Evloev, Yan vs. Dvalishvili",
-      "summary": "ESPN MMA contributors break down all the action from UFC 333 in Abu Dhabi.",
-      "url": "https://www.espn.com/mma/story/_/id/50220522/ufc-333-results-volkanovski-evloev",
-      "sport": "MMA",
-      "published": "2026-10-24T14:11:17.000Z",
-      "firstSeen": "2026-10-24T15:25:35.043Z",
-      "bestRank": 1
     },
     {
       "key": "50253038",
@@ -222,28 +629,6 @@
       "bestRank": 3
     },
     {
-      "key": "50265129",
-      "id": "50265129",
-      "headline": "Sources: Mississippi State eyes return for QB Taylor, RB Bothwell",
-      "summary": "Mississippi State QB Kamario Taylor is expected to attempt to play while RB Fluff Bothwell will be available vs. Oklahoma, sources told ESPN.",
-      "url": "https://www.espn.com/college-football/story/_/id/50265129/sources-mississippi-state-eyes-return-taylor-bothwell",
-      "sport": "College football",
-      "published": "2026-10-24T12:27:36.000Z",
-      "firstSeen": "2026-10-24T12:35:14.103Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50263923",
-      "id": "50263923",
-      "headline": "Warriors implode late as Grizzlies' 17-0 run caps stunning comeback",
-      "summary": "The Warriors appeared to be in control before \"pretty much everything went wrong\" in the final four minutes, when the Grizzlies rallied from 12 down to win 111-108.",
-      "url": "https://www.espn.com/nba/story/_/id/50263923/warriors-implode-grizzlies-17-0-run-caps-stunning-comeback",
-      "sport": "NBA",
-      "published": "2026-10-24T12:22:07.000Z",
-      "firstSeen": "2026-10-24T09:27:45.174Z",
-      "bestRank": 6
-    },
-    {
       "key": "50264705",
       "id": "50264705",
       "headline": "NFL House in Paris closes ahead of street protests in French capital",
@@ -275,6 +660,28 @@
       "published": "2026-10-24T12:15:49.000Z",
       "firstSeen": "2026-10-24T12:35:14.103Z",
       "bestRank": 2
+    },
+    {
+      "key": "50138986",
+      "id": "50138986",
+      "headline": "United States Grand Prix 2026: Race start time in Austin, how to watch, full schedule, predictions",
+      "summary": "Formula 1's original night race is back as drivers prepare for the ultimate challenge around the Marina Bay Circuit in Singapore.",
+      "url": "https://www.espn.com/f1/story/_/id/50138986/united-states-grand-prix-2026-circuit-americas-race-f1-start-s-how-watch-schedule-usa-tv-channel-live-stream-predictions",
+      "sport": "F1",
+      "published": "2026-10-24T12:15:30.000Z",
+      "firstSeen": "2026-10-19T09:39:15.257Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50131911",
+      "id": "50131911",
+      "headline": "How Kimi Antonelli can win F1 title at United States GP -- with or without Qatar, Abu Dhabi races",
+      "summary": "Kimi Antonelli took another big step towards his first world title after outscoring his two closest championship rivals, George Russell and Lewis Hamilton, at the Singapore Grand Prix.",
+      "url": "https://www.espn.com/f1/story/_/id/50131911/kimi-antonelli-formula-1-title-race-permutations-standings-explained",
+      "sport": "F1",
+      "published": "2026-10-24T12:13:42.000Z",
+      "firstSeen": "2026-10-09T01:10:46.220Z",
+      "bestRank": 1
     },
     {
       "key": "50222041",
@@ -1300,17 +1707,6 @@
       "bestRank": 1
     },
     {
-      "key": "50228155",
-      "id": "50228155",
-      "headline": "Fantasy playbook: NFL Week 7 Shadow Reports, lineup locks and projected scores",
-      "summary": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50228155/fantasy-playbook-projections-lineup-locks-week-7-shadow",
-      "sport": "NFL",
-      "published": "2026-10-24T00:11:30.000Z",
-      "firstSeen": "2026-10-22T12:40:51.139Z",
-      "bestRank": 1
-    },
-    {
       "key": "50260535",
       "id": "50260535",
       "headline": "Cowboys say still time to turn things around after 2-4 start",
@@ -1410,17 +1806,6 @@
       "bestRank": 3
     },
     {
-      "key": "50260952",
-      "id": "50260952",
-      "headline": "South Carolina adds Jordyn Palmer to top women's basketball recruiting class",
-      "summary": "Jordyn Palmer, the No. 7 prospect in the 2027 SC Next 100, has committed to South Carolina, sealing the No. 1 recruiting class for the Gamecocks in this cycle.",
-      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50260952/south-carolina-adds-jordyn-palmer-top-recruiting-class",
-      "sport": "Women's college basketball",
-      "published": "2026-10-23T22:54:40.000Z",
-      "firstSeen": "2026-10-24T00:57:18.512Z",
-      "bestRank": 1
-    },
-    {
       "key": "50261206",
       "id": "50261206",
       "headline": "Roberto De Zerbi defends Spurs' 'high level' medical staff amid injury crisis",
@@ -1452,17 +1837,6 @@
       "published": "2026-10-23T22:38:09.000Z",
       "firstSeen": "2026-10-24T00:57:18.512Z",
       "bestRank": 6
-    },
-    {
-      "key": "50138986",
-      "id": "50138986",
-      "headline": "United States Grand Prix 2026: Race start time in Austin, how to watch, full schedule, predictions",
-      "summary": "Formula 1's original night race is back as drivers prepare for the ultimate challenge around the Marina Bay Circuit in Singapore.",
-      "url": "https://www.espn.com/f1/story/_/id/50138986/united-states-grand-prix-2026-circuit-americas-race-f1-start-s-how-watch-schedule-usa-tv-channel-live-stream-predictions",
-      "sport": "F1",
-      "published": "2026-10-23T22:35:42.000Z",
-      "firstSeen": "2026-10-19T09:39:15.257Z",
-      "bestRank": 1
     },
     {
       "key": "50261123",
@@ -1661,17 +2035,6 @@
       "published": "2026-10-23T20:50:14.000Z",
       "firstSeen": "2026-10-23T21:26:31.632Z",
       "bestRank": 10
-    },
-    {
-      "key": "50260251",
-      "id": "50260251",
-      "headline": "Michigan QB Tommy Carr, grandson of ex-coach, to get first start, source confirms",
-      "summary": "Michigan freshman quarterback Tommy Carr will make his first start Saturday against No. 6 Indiana, a source confirmed to ESPN.",
-      "url": "https://www.espn.com/college-football/story/_/id/50260251/michigan-qb-tommy-carr-start-indiana-source-confirms",
-      "sport": "College football",
-      "published": "2026-10-23T20:49:28.000Z",
-      "firstSeen": "2026-10-23T21:26:31.632Z",
-      "bestRank": 4
     },
     {
       "key": "50260387",
@@ -2067,17 +2430,6 @@
       "sport": "Soccer",
       "published": "2026-10-23T18:25:27.000Z",
       "firstSeen": "2026-10-23T18:35:13.702Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50240486",
-      "id": "50240486",
-      "headline": "NFL Week 7 uniforms: Alternates galore as Texans go battle red, Lions all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 7, led by alternate looks from Houston, Detroit and Dallas.",
-      "url": "https://www.espn.com/nfl/story/_/id/50240486/nfl-week-7-uniforms",
-      "sport": "NFL",
-      "published": "2026-10-23T18:23:48.000Z",
-      "firstSeen": "2026-10-22T15:30:48.899Z",
       "bestRank": 2
     },
     {
@@ -2532,105 +2884,6 @@
       "bestRank": 1
     },
     {
-      "key": "49803708",
-      "id": "49803708",
-      "headline": "Fantasy football flex and superflex rankings for Week 7",
-      "summary": "Trying to decide between a couple of closely ranked players this week? Eric Karabell's rankings are here to help.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49803708/fantasy-football-superflex-rankings-2026-qb-rb-wr-te",
-      "sport": "NFL",
-      "published": "2026-10-23T14:38:56.000Z",
-      "firstSeen": "2026-09-05T00:58:39.682Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49797082",
-      "id": "49797082",
-      "headline": "Fantasy football rankings Week 7: PPR and superflex",
-      "summary": "Weekly composite ranks for each position in PPR and IDP formats, as well as Eric Karabell's superflex ranks.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26main-49797082/fantasy-football-rankings-2026-qb-rb-wr-te-dst",
-      "sport": "NFL",
-      "published": "2026-10-23T14:38:29.000Z",
-      "firstSeen": "2026-09-04T18:29:30.987Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804149",
-      "id": "49804149",
-      "headline": "Fantasy football rankings for Week 7: Wide receiver",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804149/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
-      "sport": "NFL",
-      "published": "2026-10-23T14:38:02.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804068",
-      "id": "49804068",
-      "headline": "Fantasy football rankings for Week 7: Running back",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804068/nfl-fantasy-football-rankings-2026-rb-running-back",
-      "sport": "NFL",
-      "published": "2026-10-23T14:37:44.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49804022",
-      "id": "49804022",
-      "headline": "Fantasy football rankings for Week 7: Quarterback",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804022/nfl-fantasy-football-rankings-2026-qb-quarterback",
-      "sport": "NFL",
-      "published": "2026-10-23T14:37:24.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49804164",
-      "id": "49804164",
-      "headline": "Fantasy football rankings for Week 7: Tight end",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804164/nfl-fantasy-football-rankings-2026-te-tight-end",
-      "sport": "NFL",
-      "published": "2026-10-23T14:36:56.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49804233",
-      "id": "49804233",
-      "headline": "Fantasy football rankings for Week 7: Kicker",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804233/nfl-fantasy-football-rankings-2026-k-kicker",
-      "sport": "NFL",
-      "published": "2026-10-23T14:36:31.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804273",
-      "id": "49804273",
-      "headline": "Fantasy football rankings for Week 7: D/ST",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804273/nfl-fantasy-football-rankings-2026-dst-defense",
-      "sport": "NFL",
-      "published": "2026-10-23T14:36:08.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49804332",
-      "id": "49804332",
-      "headline": "Fantasy football rankings for Week 7: IDP",
-      "summary": "Weekly fantasy football draft rankings for IDP leagues from Mike Clay, Tristan H. Cockcroft and Eric Moody.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804332/nfl-fantasy-football-rankings-2026-idp",
-      "sport": "NFL",
-      "published": "2026-10-23T14:35:45.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
       "key": "50257430",
       "id": "50257430",
       "headline": "Carrick refuses to rule out dropping Bruno Fernandes for Man United clash with Bournemouth",
@@ -2640,17 +2893,6 @@
       "published": "2026-10-23T14:29:36.000Z",
       "firstSeen": "2026-10-23T15:30:59.559Z",
       "bestRank": 4
-    },
-    {
-      "key": "46793185",
-      "id": "46793185",
-      "headline": "2026 World Series odds: Brewers favored to defeat Rays",
-      "summary": "Every MLB team's odds to win the 2026 World Series, led by the Dodgers. Milwaukee and Tampa Bay continue to see odds improvement.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/46793185/espn-mlb-betting-odds-futures-bets-world-series-american-national-league",
-      "sport": "MLB",
-      "published": "2026-10-23T14:27:59.000Z",
-      "firstSeen": "2026-08-17T18:29:18.350Z",
-      "bestRank": 1
     },
     {
       "key": "50258019",
@@ -3058,17 +3300,6 @@
       "published": "2026-10-23T09:08:25.000Z",
       "firstSeen": "2026-10-22T18:33:18.797Z",
       "bestRank": 2
-    },
-    {
-      "key": "50131911",
-      "id": "50131911",
-      "headline": "How Kimi Antonelli can win F1 title at United States GP -- with or without Qatar, Abu Dhabi races",
-      "summary": "Kimi Antonelli took another big step towards his first world title after outscoring his two closest championship rivals, George Russell and Lewis Hamilton, at the Singapore Grand Prix.",
-      "url": "https://www.espn.com/f1/story/_/id/50131911/kimi-antonelli-formula-1-title-race-permutations-standings-explained",
-      "sport": "F1",
-      "published": "2026-10-23T09:08:06.000Z",
-      "firstSeen": "2026-10-09T01:10:46.220Z",
-      "bestRank": 1
     },
     {
       "key": "50166049",
@@ -6129,17 +6360,6 @@
       "bestRank": 1
     },
     {
-      "key": "50192486",
-      "id": "50192486",
-      "headline": "Angel Reese tops fashionable arrivals ahead of Game 3 of WNBA Finals",
-      "summary": "The stage is set. The Atlanta Dream and Golden State Valkyries are in the WNBA Finals, but before the game began, the fashion runway was laid out for the players.",
-      "url": "https://www.espn.com/wnba/story/_/id/50192486/wnba-finals-fashion-atlanta-dream-golden-state-valkyries",
-      "sport": "WNBA",
-      "published": "2026-10-22T00:35:30.000Z",
-      "firstSeen": "2026-10-17T21:24:14.288Z",
-      "bestRank": 1
-    },
-    {
       "key": "50243096",
       "id": "50243096",
       "headline": "Gene Chizik: No. 11 Vols vs. Gamecocks is 'what trap games are made of'",
@@ -6655,17 +6875,6 @@
       "published": "2026-10-21T18:17:50.000Z",
       "firstSeen": "2026-10-21T15:30:12.310Z",
       "bestRank": 13
-    },
-    {
-      "key": "48827253",
-      "id": "48827253",
-      "headline": "How top 2027 women's basketball commits fit at their schools",
-      "summary": "Three more five-stars are off the board. Here's how they will impact their respective programs in 2027-28.",
-      "url": "https://www.espn.com/womens-college-basketball/story/_/id/48827253/womens-college-basketball-five-star-commits-sc-next-class-2027-fit-new-school",
-      "sport": "Women's college basketball",
-      "published": "2026-10-21T18:05:47.000Z",
-      "firstSeen": "2026-10-02T15:30:44.172Z",
-      "bestRank": 1
     },
     {
       "key": "50239882",
@@ -8444,7 +8653,7 @@
       "headline": "Big 12 commish mulls new event if conference title games end",
       "summary": "Big 12 commissioner Brett Yormark said the league would find a new event to replace any lost conference title games should they be casualties of an expanded College Football Playoff.",
       "url": "https://www.espn.com/college-football/story/_/id/50231796/big-12-commish-mulls-new-event-conference-title-games-end",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-20T22:27:21.000Z",
       "firstSeen": "2026-10-20T21:28:05.035Z",
       "bestRank": 1
@@ -9558,17 +9767,6 @@
       "sport": "College football",
       "published": "2026-10-20T10:33:51.000Z",
       "firstSeen": "2026-10-20T12:39:57.485Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50110772",
-      "id": "50110772",
-      "headline": "Who is this year's Mr. October? Tracking the playoff MVP for 2026",
-      "summary": "We go inside the numbers on the players doing the most to help their teams win.",
-      "url": "https://www.espn.com/mlb/story/_/id/50110772/2026-mlb-playoffs-mvp-tracker-wpa-leaderboard-win-probability-added-mr-october",
-      "sport": "MLB",
-      "published": "2026-10-20T10:33:13.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
       "bestRank": 1
     },
     {
@@ -17343,7 +17541,7 @@
       "headline": "NCAA sues Ohio gov. over order allowing schools to ignore new eligibility rule",
       "summary": "The NCAA has filed a federal lawsuit against Ohio Gov. Mike DeWine three days after he signed an executive order giving the state's colleges and universities the option of allowing athletes who graduated from high school in 2022 to play a fifth year.",
       "url": "https://www.espn.com/college-sports/story/_/id/50196596/ncaa-sues-ohio-gov-eligibility-order-5th-year-athletes",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-16T20:07:31.000Z",
       "firstSeen": "2026-10-16T18:32:34.965Z",
       "bestRank": 1
@@ -22447,7 +22645,7 @@
       "headline": "Ohio Gov. Mike DeWine signs order letting state's 2022 athletes play in 2026-27",
       "summary": "Ohio Gov. Mike DeWine signed an executive order allowing 2022 athletes to play even though the NCAA's new guidance excludes those who have already played four seasons.",
       "url": "https://www.espn.com/college-sports/story/_/id/50177542/ohio-gov-dewine-signs-order-2022-athletes-play-2026-27",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-14T02:41:34.000Z",
       "firstSeen": "2026-10-14T00:58:06.882Z",
       "bestRank": 1
@@ -25043,7 +25241,7 @@
       "headline": "James Madison to exit Sun Belt, join American Conference",
       "summary": "James Madison has accepted membership into the American Athletic Association, the university announced Monday.",
       "url": "https://www.espn.com/college-sports/story/_/id/50166450/james-madison-exit-sun-belt-join-american-conference",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-12T15:30:06.000Z",
       "firstSeen": "2026-10-12T15:32:56.568Z",
       "bestRank": 1
@@ -31698,7 +31896,7 @@
       "headline": "Reports - Watchdog eyes NIL violations at 5-10 Power 4 schools",
       "summary": "The College Sports Commission is looking into possible rules violations at between five and 10 Power 4 schools regarding payments to players, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/50142371/reports-watchdog-eyes-nil-violations-5-10-power-4-schools",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-09T22:48:19.000Z",
       "firstSeen": "2026-10-09T21:28:17.260Z",
       "bestRank": 1
@@ -45088,193 +45286,6 @@
       "sport": "Women's college basketball",
       "published": "2026-10-03T18:34:46.000Z",
       "firstSeen": "2026-10-03T22:14:44.738Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50085730",
-      "id": "50085730",
-      "headline": "NHL Tonight: Stats, betting info and storylines for Saturday's 13-game slate",
-      "summary": "Only six teams have the night off. Here's what you need to know for the 26 who are hitting the ice.",
-      "url": "https://www.espn.com/nhl/story/_/id/50085730/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-      "sport": "NHL",
-      "published": "2026-10-03T17:48:26.000Z",
-      "firstSeen": "2026-10-03T13:59:58.961Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50091106",
-      "id": "50091106",
-      "headline": "Blackhawks' Bowen Byram to miss Buffalo return",
-      "summary": "Blackhawks defenseman Bowen Byram will miss Saturday's game against the Sabres due to a family matter. Byram was set to make his first return to Buffalo since being traded to Chicago in June.",
-      "url": "https://www.espn.com/nhl/story/_/id/50091106/blackhawks-bowen-byram-miss-buffalo-return",
-      "sport": "NHL",
-      "published": "2026-10-03T17:16:53.000Z",
-      "firstSeen": "2026-10-03T19:02:43.040Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50091010",
-      "id": "50091010",
-      "headline": "Joe Musgrove sticks on Padres' roster; Buehler on paternity list",
-      "summary": "Pitcher Joe Musgrove was kept on the roster as the San Diego Padres made no changes from their wild-card sweep over the Chicago Cubs, though Walker Buehler will start the NLDS on the postseason paternity list.",
-      "url": "https://www.espn.com/mlb/story/_/id/50091010/joe-musgrove-sticks-padres-roster-buehler-paternity-list",
-      "sport": "MLB",
-      "published": "2026-10-03T16:58:04.000Z",
-      "firstSeen": "2026-10-03T19:02:43.040Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50090624",
-      "id": "50090624",
-      "headline": "Colts WR Keenan Allen (groin) out vs. Commanders in London",
-      "summary": "Colts wide receiver Keenan Allen has a groin injury that will force him to sit out Sunday's game in London against the Commanders.",
-      "url": "https://www.espn.com/nfl/story/_/id/50090624/colts-wr-keenan-allen-groin-vs-commanders-london",
-      "sport": "NFL",
-      "published": "2026-10-03T16:55:57.000Z",
-      "firstSeen": "2026-10-03T16:40:05.669Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50090746",
-      "id": "50090746",
-      "headline": "Source: Bears expected to start QB Tyson Bagent vs. Jets",
-      "summary": "The Bears are expected to start Tyson Bagent at quarterback against the Jets, according to NFL Network's Ian Rapoport.",
-      "url": "https://www.espn.com/nfl/story/_/id/50090746/source-bears-expected-start-qb-tyson-bagent-vs-jets",
-      "sport": "NFL",
-      "published": "2026-10-03T16:51:12.000Z",
-      "firstSeen": "2026-10-03T16:40:05.669Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50085886",
-      "id": "50085886",
-      "headline": "Dodgers commit to Skubal for Game 1 start in NLDS vs. Braves",
-      "summary": "Dodgers ace Tarik Skubal will get the ball in Game 1 of the National League Division Series against the Atlanta Braves on Saturday, while the Braves were still sorting through their options.",
-      "url": "https://www.espn.com/mlb/story/_/id/50085886/dodgers-commit-skubal-game-1-start-nlds-vs-braves",
-      "sport": "MLB",
-      "published": "2026-10-03T16:45:50.000Z",
-      "firstSeen": "2026-10-02T21:27:28.742Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50077871",
-      "id": "50077871",
-      "headline": "Dream's Angel Reese named WNBA Defensive Player of the Year",
-      "summary": "Angel Reese has won the WNBA's Defensive Player of the Year award, making her the first player in Dream franchise history to win the award.",
-      "url": "https://www.espn.com/wnba/story/_/id/50077871/dream-angel-reese-named-wnba-defensive-player-year",
-      "sport": "WNBA",
-      "published": "2026-10-03T16:45:34.000Z",
-      "firstSeen": "2026-10-01T18:36:52.245Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50082146",
-      "id": "50082146",
-      "headline": "A'ja Wilson stars as Aces oust Fever from WNBA playoffs",
-      "summary": "A'ja Wilson made sure her basketball spoke for itself Thursday night, as the four-time WNBA MVP scored 36 points to lead the defending champion Las Vegas Aces to a 94-83 victory over the Indiana Fever in the deciding Game 3 of the first round.",
-      "url": "https://www.espn.com/wnba/story/_/id/50082146/aja-wilson-stars-aces-oust-fever-wnba-playoffs",
-      "sport": "WNBA",
-      "published": "2026-10-03T16:45:21.000Z",
-      "firstSeen": "2026-10-02T06:46:33.541Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50088772",
-      "id": "50088772",
-      "headline": "Valkyries say Nakase OK after collapsing late in Game 3 win",
-      "summary": "The Valkyries said head coach Natalie Nakase was feeling lightheaded and exhausted when she collapsed on the court late in Friday's Game 3 win, but said she was fine after the game and is expected to coach Sunday's Game 1 of the semifinals.",
-      "url": "https://www.espn.com/wnba/story/_/id/50088772/valkyries-say-nakase-ok-collapsing-late-game-3-win",
-      "sport": "WNBA",
-      "published": "2026-10-03T16:45:02.000Z",
-      "firstSeen": "2026-10-03T09:29:01.402Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50088302",
-      "id": "50088302",
-      "headline": "Williams leads charge from 16 down, puts Valkyries in WNBA semis",
-      "summary": "Gabby Williams scored 11 of her 19 points in the fourth quarter to help the Valkyries erase a 16-point second-half deficit and secure a spot in the WNBA semifinals with a 77-73 win over the Wings.",
-      "url": "https://www.espn.com/wnba/story/_/id/50088302/valkyries-rally-16-stun-wings-1st-playoff-series-win",
-      "sport": "WNBA",
-      "published": "2026-10-03T16:44:45.000Z",
-      "firstSeen": "2026-10-03T06:50:18.628Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50087725",
-      "id": "50087725",
-      "headline": "Dodgers' Ohtani admits he won't be fully healthy in playoffs",
-      "summary": "Dodgers star Shohei Ohtani says the left knee and right biceps ailments that compromised him throughout the summer are issues he's \"just going to have to manage\" in the postseason.",
-      "url": "https://www.espn.com/mlb/story/_/id/50087725/dodgers-ohtani-admits-fully-healthy-playoffs",
-      "sport": "MLB",
-      "published": "2026-10-03T16:44:40.000Z",
-      "firstSeen": "2026-10-03T03:43:23.343Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50027943",
-      "id": "50027943",
-      "headline": "2026 MLB playoffs: World Series odds, postseason preview",
-      "summary": "Have Fall Classic or bust hopes this postseason? Here's why each remaining team could be playing late into October ... or get sent home next.",
-      "url": "https://www.espn.com/mlb/story/_/id/50027943/2026-mlb-playoffs-preview-world-series-odds-matchup-keys-tips",
-      "sport": "MLB",
-      "published": "2026-10-03T16:31:11.000Z",
-      "firstSeen": "2026-09-28T01:09:56.325Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50090881",
-      "id": "50090881",
-      "headline": "McAfee rips off shirt in front of Caitlin Clark before making Ohio State-Iowa pick",
-      "summary": "McAfee rips off shirt in front of Caitlin Clark before making Ohio State-Iowa pick",
-      "url": "https://www.espn.com/video/clip/_/id/50090881/mcafee-rips-shirt-front-caitlin-clark-making-ohio-state-iowa-pick",
-      "sport": "College football",
-      "published": "2026-10-03T16:28:36.000Z",
-      "firstSeen": "2026-10-03T16:40:05.669Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50090513",
-      "id": "50090513",
-      "headline": "Notre Dame's CJ Carr DELIVERS on Pat McAfee's crossbar challenge",
-      "summary": "Notre Dame's CJ Carr DELIVERS on Pat McAfee's crossbar challenge",
-      "url": "https://www.espn.com/video/clip/_/id/50090513/notre-dame-cj-carr-delivers-pat-mcafee-crossbar-challenge",
-      "sport": "College football",
-      "published": "2026-10-03T15:51:47.000Z",
-      "firstSeen": "2026-10-03T16:40:05.669Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50090250",
-      "id": "50090250",
-      "headline": "Sources: South Carolina gives more reps to backup QB Cutter Woods",
-      "summary": "As a message to starting quarterback LaNorris Sellers to play better, South Carolina backup Cutter Woods received an uptick in first-team snaps this week, sources told ESPN.",
-      "url": "https://www.espn.com/college-football/story/_/id/50090250/sources-south-carolina-gives-more-reps-backup-qb-cutter-woods",
-      "sport": "College football",
-      "published": "2026-10-03T15:46:15.000Z",
-      "firstSeen": "2026-10-03T13:59:58.961Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50086413",
-      "id": "50086413",
-      "headline": "Tony Reno, who guided Yale to 5 Ivy League titles, dies at 52",
-      "summary": "Former Yale football coach Tony Reno, who stepped down after the 2025 season due to health issues, has died at the age of 52, the university announced.",
-      "url": "https://www.espn.com/college-football/story/_/id/50086413/tony-reno-guided-yale-five-ivy-league-titles-dies-52",
-      "sport": "College football",
-      "published": "2026-10-03T15:43:36.000Z",
-      "firstSeen": "2026-10-02T21:27:28.742Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50089210",
-      "id": "50089210",
-      "headline": "Transfer rumors, news: Haaland wants LaLiga move over Arsenal",
-      "summary": "Manchester City striker Erling Haaland favors a move to Spain over Arsenal. Transfer Talk has the latest.",
-      "url": "https://www.espn.com/soccer/story/_/id/50089210/transfer-rumors-news-man-city-erling-haaland-wants-laliga-move-arsenal",
-      "sport": "Soccer",
-      "published": "2026-10-03T15:30:54.000Z",
-      "firstSeen": "2026-10-03T13:59:58.961Z",
       "bestRank": 1
     }
   ]
