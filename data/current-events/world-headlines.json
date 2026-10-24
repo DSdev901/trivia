@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-10-24T06:52:16.012Z",
+  "generatedAt": "2026-10-24T09:39:03.339Z",
   "retentionDays": 21,
   "windowStart": "2026-10-03",
   "windowEnd": "2026-10-24",
   "snapshotIntervalHours": 3,
-  "count": 2187,
+  "count": 2197,
   "items": [
     {
       "headline": "Iran Plots, Houthi Attacks Spur US Departure Orders in Mideast",
@@ -16,6 +16,16 @@
       "top": true,
       "bestRank": 1,
       "firstSeen": "2026-10-24T06:52:16.012Z"
+    },
+    {
+      "headline": "Looting Left Damage and Fear on Paradise Street in Marseille",
+      "date": "2026-10-24",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWFhXb1VmdWxKRzJmZnRpSGpJTk40b3JoTldmR0FjTW9nWWxibmNBOTJCN1NNa1IyenIycmtueTVnVHhaR19YOUU3TkE2ODBHRFFlRWdDYVZzVWY0MVlqV0dTOHlkaTdEbmxkdnFNMnJicVFjSkhYUVdOaGFYYU5jVEQ5VEhRUU5tWlJjZ1pzOE5GQQ?oc=5",
+      "top": true,
+      "bestRank": 1,
+      "firstSeen": "2026-10-24T09:39:03.339Z"
     },
     {
       "headline": "US discreetly moves diplomats and families from multiple Middle Eastern countries as escalation fears grow",
@@ -38,6 +48,16 @@
       "bestRank": 3
     },
     {
+      "headline": "Iran in ‘Advanced Stages’ of Planning Attacks Against Americans, Officials Say",
+      "date": "2026-10-24",
+      "bucket": "World",
+      "summary": "Reported by BBC.",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1OWDNRWTNxMkEyVlFfSEZmUVlPVlNncENwMDBNck1XNDRWZzEzVDV0VVdzQUx5UW1wZVpwSnN5ZUxlUERKb20ycjUtNExTX1pOeDZva1BiTVFxZUk?oc=5",
+      "top": true,
+      "bestRank": 3,
+      "firstSeen": "2026-10-24T09:39:03.339Z"
+    },
+    {
       "headline": "Arrest made after fire at Hitler's famed Eagle's Nest retreat",
       "date": "2026-10-24",
       "bucket": "World",
@@ -45,7 +65,7 @@
       "url": "https://www.bbc.co.uk/news/articles/cr93zwjw1k4qo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-24T06:52:16.012Z",
       "top": true,
-      "bestRank": 14
+      "bestRank": 4
     },
     {
       "headline": "Trump at South Florida rally revives the idea of military intervention in Cuba after Iran",
@@ -58,12 +78,40 @@
       "firstSeen": "2026-10-24T06:52:16.012Z"
     },
     {
+      "headline": "El Salvador sends special forces to search for troops missing in Haiti",
+      "date": "2026-10-24",
+      "bucket": "Conflict",
+      "summary": "Reported by The Washington Post.",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRF9KQW1CR1hkUXlEZTFrZFZrUGh4ZjdLTWxlR3p0cElTRnk4WGpzS2JpV2FqX2ktRWJrMmxWT1o1U2swWlRLXy0tRDQ5OFZ0Y2wxUk91eV9RMGVvX3FRU2JUWDVUczk0bjNnek1aQnRJbTNaQnRmZ2ZqdlljRTNyN3hSVmNtZkVlU0lVWGFHNldZSTVST1RlWkFrcUVHclEzay1TYW05R3ExbGQtMkE?oc=5",
+      "top": true,
+      "bestRank": 21,
+      "firstSeen": "2026-10-24T03:44:45.116Z"
+    },
+    {
+      "headline": "White House lifts tariffs on some Canadian goods as midterm elections loom",
+      "date": "2026-10-24",
+      "bucket": "World",
+      "summary": "From 30 October, tariffs will be eased on some products, including certain machinery, and placed on others, such as carpets.",
+      "url": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-24T09:39:03.339Z"
+    },
+    {
+      "headline": "Drinking water supplies dwindle in Yemeni city besieged by Houthi rebels",
+      "date": "2026-10-24",
+      "bucket": "World",
+      "summary": "Taiz, a city in southwestern Yemen, faces a severe water crisis as Houthi rebels backed by Iran tighten their encirclement. The city has struggled with water issues for over a decade, but the situation has worsened in recent weeks.",
+      "url": "https://www.npr.org/2026/10/24/g-s1-149729/drinking-water-supplies-dwindle-in-yemeni-city-besieged-by-houthi-rebels",
+      "firstSeen": "2026-10-24T09:39:03.339Z"
+    },
+    {
       "headline": "France prepares for day of protest a week after nationwide riots",
       "date": "2026-10-24",
       "bucket": "World",
       "summary": "Hundreds of thousands are expected to turn out, as more than 70,000 police officers are to be deployed over some may defy restrictions.",
       "url": "https://www.bbc.co.uk/news/articles/cj62yv5k0w4yo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-24T06:52:16.012Z"
+      "firstSeen": "2026-10-24T06:52:16.012Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Minneapolis withdrawal was 'surrender', Trump's ex-border patrol chief tells BBC",
@@ -71,7 +119,9 @@
       "bucket": "World",
       "summary": "Greg Bovino was the public face of the controversial immigration enforcement operation in the city earlier this year.",
       "url": "https://www.bbc.co.uk/news/articles/ck20rery78lro?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-24T06:52:16.012Z"
+      "firstSeen": "2026-10-24T06:52:16.012Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "The rise of AI election ads in US midterms campaign",
@@ -79,7 +129,9 @@
       "bucket": "Politics",
       "summary": "BBC Verify has tracked dozens of AI ads to assess how they are being used by campaigns in the midterms.",
       "url": "https://www.bbc.co.uk/news/videos/cm62y59zw8zko?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-24T06:52:16.012Z"
+      "firstSeen": "2026-10-24T06:52:16.012Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "How Brazil's changing working class is reshaping the presidential race",
@@ -87,7 +139,9 @@
       "bucket": "Politics",
       "summary": "Calls for change present a challenge to President Lula in the second round of the election on Sunday.",
       "url": "https://www.bbc.co.uk/news/articles/cw80zx79nkvno?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-24T06:52:16.012Z"
+      "firstSeen": "2026-10-24T06:52:16.012Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Typhoon Champi roars towards Taiwan, Japan and China bringing heavy rain and wind",
@@ -270,6 +324,16 @@
       "firstSeen": "2026-10-23T18:46:03.551Z"
     },
     {
+      "headline": "Time ‘running out’ to reach Yemen’s Taiz amid deepening crisis, UN says",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVGJBZk42N0tFU1dHOFQ0V1VOeHZ5a2s1dTZHV25pUXFxLTVMYXFZd3pRV1REYVdJMFp6RnJfa0pDbm9ReHNuTEwzQk9DNXVWRklGcldpamJUekdRQVJyb2hZQ1d4WXBDSEtvNC1hNVhwZ0pXcnV5T0o0RkN2NG93c1I1U05XTEt3Q3JZRWpNdndCakJUTUdNTFBJUi1hU0lPZllsTDBjWEota3RTcnfSAbMBQVVfeXFMTnRaMGRtWmRKM2RsNS1rOFR4bl9HTTVnNkN5WklMa0xpUHYzampIZkFldVo5WVNVS010ak9HOHNfN2NacndHN29lSXZONGgtOE5fLUxsanZDN0E0UmhoWEtnV1gxOTZXdk9UTFNHemUwaHVPYkNOemFrdld4VEN5blFuRnJVUktGdThwNHVBWTh2bF9Vb3V6R1dfYWhiQ3RGNGdwbUtIelZmR1Vic2hVX2xEblk?oc=5",
+      "top": true,
+      "bestRank": 5,
+      "firstSeen": "2026-10-24T09:39:03.339Z"
+    },
+    {
       "headline": "Something Astonishing Is Happening in My Country. The World Should Take Note.",
       "date": "2026-10-23",
       "bucket": "World",
@@ -288,6 +352,16 @@
       "top": true,
       "bestRank": 6,
       "firstSeen": "2026-10-24T01:08:00.724Z"
+    },
+    {
+      "headline": "Royal Family May Distance Itself From Harry and Meghan, Expert Says",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by InStyle.",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPemtyWWtzVDFRZmtObWhUOC14Z3pDOUFDenJiekFydEYtd1RBM1F1eENwZG1Td3VCaFVMX0tDVTRQclJWbWgyS3BPbndDMHJ3UG5OcU9kWUpQYVlEN2ktM1NwWGtZbDZjbWFaemEwRUlyTFRlQTBHSUNzZE5UV2RUaF9jRnBTYXZ4cWpHZ1dPVG05T21oUDVxOUE4OGhnU2g1SnMxR1RiYzAyel81Ql9zMXlaLVlEekJocGc?oc=5",
+      "top": true,
+      "bestRank": 6,
+      "firstSeen": "2026-10-24T09:39:03.339Z"
     },
     {
       "headline": "Unrest Grows in Emerging Economies Despite Economic Recovery",
@@ -338,6 +412,16 @@
       "top": true,
       "bestRank": 8,
       "firstSeen": "2026-10-23T21:40:20.273Z"
+    },
+    {
+      "headline": "Israel 2026 Election Poll Tracker: The Latest Projections",
+      "date": "2026-10-23",
+      "bucket": "Politics",
+      "summary": "Reported by Jewish Insider.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbTdvcmZkQV9FV1JVRjU1WWJCNzB3VHplUy1vc1hQaVJxa2tHbjItWTRfNlVNSEZ6clZmaGxiMGp4bFVQcm5PcVZQVDFwb0ctbWxJSHdaV0x5TjV3QjhQYWFaSzZVU0txN1ZLVTJsanFkbnVJUHVtdEowWTYyQWQ0LU56TkFNTUxpRVE?oc=5",
+      "top": true,
+      "bestRank": 8,
+      "firstSeen": "2026-10-24T06:52:16.012Z"
     },
     {
       "headline": "Heat killed ‘staggering’ 50,000 people in Europe’s cities this summer, scientists warn",
@@ -430,6 +514,16 @@
       "firstSeen": "2026-10-23T18:46:03.551Z"
     },
     {
+      "headline": "North Korea has opened up bridges to Russia and China",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by The Guardian.",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRmFVT2VRQ3FNeDRmV1JWTDVpR1ZYWXdpTHZBVG5QTjJxeE9BelcwTV8zTFh1UWNoWWp0SlhZb3Q3eWllT2VVY0xVYVBjYmNfSTFBSVdnd29MQzVpT0lQcDk5dUxKRVRRamxpWmxMYVFxOWJBRUdZSkFIVnpSZ1luMmNENmZMU2U2RmFNZGJZU0k3MEtNd1Fj?oc=5",
+      "top": true,
+      "bestRank": 10,
+      "firstSeen": "2026-10-24T09:39:03.339Z"
+    },
+    {
       "headline": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
       "date": "2026-10-23",
       "bucket": "Disaster",
@@ -488,6 +582,16 @@
       "top": true,
       "bestRank": 12,
       "firstSeen": "2026-10-24T01:08:00.724Z"
+    },
+    {
+      "headline": "Deadly shooting near Paris investigated as 'crime of terrorism', minister says",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "One person is killed and five wounded in a series of attacks and the suspected gunman has been apprehended.",
+      "url": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-23T15:43:03.926Z",
+      "top": true,
+      "bestRank": 12
     },
     {
       "headline": "Meghan Markle Feels ‘Relief’ as Allegations Against Father Are Investigated",
@@ -560,16 +664,6 @@
       "firstSeen": "2026-10-23T21:40:20.273Z"
     },
     {
-      "headline": "Israel 2026 Election Poll Tracker: The Latest Projections",
-      "date": "2026-10-23",
-      "bucket": "Politics",
-      "summary": "Reported by Jewish Insider.",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbTdvcmZkQV9FV1JVRjU1WWJCNzB3VHplUy1vc1hQaVJxa2tHbjItWTRfNlVNSEZ6clZmaGxiMGp4bFVQcm5PcVZQVDFwb0ctbWxJSHdaV0x5TjV3QjhQYWFaSzZVU0txN1ZLVTJsanFkbnVJUHVtdEowWTYyQWQ0LU56TkFNTUxpRVE?oc=5",
-      "top": true,
-      "bestRank": 16,
-      "firstSeen": "2026-10-24T06:52:16.012Z"
-    },
-    {
       "headline": "Finland’s Puppy Livestream Provides Comfort in Troubled Times",
       "date": "2026-10-23",
       "bucket": "World",
@@ -588,6 +682,16 @@
       "top": true,
       "bestRank": 17,
       "firstSeen": "2026-10-24T06:52:16.012Z"
+    },
+    {
+      "headline": "Xi Jinping gathers China’s top communist cadres with focus on discipline",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by Financial Times.",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNENfcTdGMExZLVo4T1NXS2haUkZKRjB0YjViRVRLVFdQSkVYT1lGTjB3VEU4U0RCbjc4LVZSMEIzUVFic0NMY2l6WWpOM1VfUmExbVlOTXM5UVVUX09DalRUcmEwQkRMQzhHNmJKbFJxWTNpSkQ5NHJLQTJ4cktuLS1Zd0Q?oc=5",
+      "top": true,
+      "bestRank": 17,
+      "firstSeen": "2026-10-24T03:44:45.116Z"
     },
     {
       "headline": "‘This is a lethal threat’: Indigenous groups fear Bolsonaro’s hold on voters in Brazil’s Amazon towns",
@@ -620,21 +724,21 @@
       "firstSeen": "2026-10-24T01:08:00.724Z"
     },
     {
-      "headline": "Xi Jinping gathers China’s top communist cadres with focus on discipline",
-      "date": "2026-10-23",
-      "bucket": "World",
-      "summary": "Reported by Financial Times.",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNENfcTdGMExZLVo4T1NXS2haUkZKRjB0YjViRVRLVFdQSkVYT1lGTjB3VEU4U0RCbjc4LVZSMEIzUVFic0NMY2l6WWpOM1VfUmExbVlOTXM5UVVUX09DalRUcmEwQkRMQzhHNmJKbFJxWTNpSkQ5NHJLQTJ4cktuLS1Zd0Q?oc=5",
-      "top": true,
-      "bestRank": 18,
-      "firstSeen": "2026-10-24T03:44:45.116Z"
-    },
-    {
       "headline": "Israeli Settlers Turn a Palestinian Rite Into a Gantlet of Violence and Fear",
       "date": "2026-10-23",
       "bucket": "World",
       "summary": "Reported by The New York Times.",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWWdEVTNESFY2dm5VOUhSV05QZnd1SDRsWlhtTUhoVE54ZzF5SXdrZktVUkJrcVZvZW9UVDVpT1lQQlRQYWxEeWpickVzODNBR2ZJMDdpT3lhOTdfY0JtbFF2SjRxU0hRcGhzREhOTzZuTkc5ZVJjOURJX2c1ZUNJWW9QRzMtZlhaeVk3ZTBkVlFGNURjaEV3ODVVa18?oc=5",
+      "top": true,
+      "bestRank": 19,
+      "firstSeen": "2026-10-24T06:52:16.012Z"
+    },
+    {
+      "headline": "U.S. Ambassador Pete Hoekstra offers Canada help following Wainwright tragedy",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by New York Post.",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObkpSVWUya01uMmhvSWFOU1F5NXEtUkJYejVZV2I4TlZMOWwxSFctbks4LXJaTkxuazdzNlFzaXREMWVYNE1RMkktVmtXSU96RU1DX19tNkJEbllDT2FsZURtWTR2YWNEWUVkSzc1MVFCZFNuWWlvYTI0MGRIanFtdTFkZF94MEpGdWNNY09KTXFSSkVGTnZQUklTcFBQakpxQXBEV2MxY3NvTlRpSlpmc2h2aENCSHJFRGYzb014eHE?oc=5",
       "top": true,
       "bestRank": 19,
       "firstSeen": "2026-10-24T06:52:16.012Z"
@@ -720,16 +824,6 @@
       "firstSeen": "2026-10-24T01:08:00.724Z"
     },
     {
-      "headline": "U.S. Ambassador Pete Hoekstra offers Canada help following Wainwright tragedy",
-      "date": "2026-10-23",
-      "bucket": "World",
-      "summary": "Reported by New York Post.",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObkpSVWUya01uMmhvSWFOU1F5NXEtUkJYejVZV2I4TlZMOWwxSFctbks4LXJaTkxuazdzNlFzaXREMWVYNE1RMkktVmtXSU96RU1DX19tNkJEbllDT2FsZURtWTR2YWNEWUVkSzc1MVFCZFNuWWlvYTI0MGRIanFtdTFkZF94MEpGdWNNY09KTXFSSkVGTnZQUklTcFBQakpxQXBEV2MxY3NvTlRpSlpmc2h2aENCSHJFRGYzb014eHE?oc=5",
-      "top": true,
-      "bestRank": 22,
-      "firstSeen": "2026-10-24T06:52:16.012Z"
-    },
-    {
       "headline": "Brazil’s Powerful Supreme Court Seeks to Avert Bolsonaro’s Wrath",
       "date": "2026-10-23",
       "bucket": "World",
@@ -748,16 +842,6 @@
       "top": true,
       "bestRank": 23,
       "firstSeen": "2026-10-23T18:46:03.551Z"
-    },
-    {
-      "headline": "U.S., El Salvador flights land in Haiti after arrival of Salvadoran special forces",
-      "date": "2026-10-23",
-      "bucket": "World",
-      "summary": "Reported by Miami Herald.",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPY1lEcl9YWGJOMWZuNkNNWGNRVUZQaFBxVFVSZ3RDQXRwNmVzWFZtQU5JQTY0Tkw4TllHZXZpYWxZdkhIWTdheFZUdVhVWnctSU1jMXhNN01wSGdqLThiOUFhM1hkWVhmWlhkS0VQV05xSHVNd01zN0QxWHRrbW4yWXBtOUFPV0VTb0xPbG1wcjJXd9IBkgFBVV95cUxPb2ZmSU93bEFiX0RqWDJfWF9oWEtaSWcxVXI0bWpyRVBxTDZUSnBobUpUaktmRFlJWUN4VDFZNkxHMS1BLVpRdkgtXy1ZaGpBTmR5RVBTY3UzZ3RSNEs5NWxPdFpoZ1I1NGNDb19iaGI3Um5pdUswRXladk52UVlpTHlZdGI4ZWQ4RGtORWxEQkFHdw?oc=5",
-      "top": true,
-      "bestRank": 23,
-      "firstSeen": "2026-10-24T03:44:45.116Z"
     },
     {
       "headline": "Salvadoran troops land in Haiti aboard Pentagon plane amid crisis over ambushed soldiers",
@@ -860,6 +944,16 @@
       "firstSeen": "2026-10-23T12:49:16.219Z"
     },
     {
+      "headline": "European, Middle East ministers urge US-Iran diplomacy, not new attacks",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Reported by The Guardian.",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNjNEZzBoMS1CdTRMRGxWd3JXWDN5V2hmcWxmQ1hQNDkxanllSEQ2elo0NEZEWFRnMjRGV2JhNHpSeXJ1Q2tKRjlMamtEYThlLWpnSXFTYVVmSzNLVVUzWnFOWFdyYTRxc25jVjFTNE5JRTBITmRMUllIQm1WRWFpMUY5ZEtXTlVpdXhNNkZBNWFKZnBTYzFmY085Um1MU2dYWWs4?oc=5",
+      "top": true,
+      "bestRank": 37,
+      "firstSeen": "2026-10-24T06:52:16.012Z"
+    },
+    {
       "headline": "Greek Parliament Approves Social Media Ban for Minors from Jan. 1, 2027",
       "date": "2026-10-23",
       "bucket": "Politics",
@@ -880,14 +974,14 @@
       "firstSeen": "2026-10-24T01:08:00.724Z"
     },
     {
-      "headline": "European, Middle East ministers urge US-Iran diplomacy, not new attacks",
+      "headline": "Southeast Asia’s worst haze in over a decade sparks student protests",
       "date": "2026-10-23",
       "bucket": "World",
-      "summary": "Reported by The Guardian.",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNjNEZzBoMS1CdTRMRGxWd3JXWDN5V2hmcWxmQ1hQNDkxanllSEQ2elo0NEZEWFRnMjRGV2JhNHpSeXJ1Q2tKRjlMamtEYThlLWpnSXFTYVVmSzNLVVUzWnFOWFdyYTRxc25jVjFTNE5JRTBITmRMUllIQm1WRWFpMUY5ZEtXTlVpdXhNNkZBNWFKZnBTYzFmY085Um1MU2dYWWs4?oc=5",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOa0s4a3J0c3ZjZ0gtLTUwX2JDZnJvbVYwcGR2bHQ0aDczakJ5SGZsUDFjaU9uVkxfbl9WVEdMZkVQNjJ0a2cyU0U1TmVuY2dtbms4OFlDQzBia2ZxM1A0eHpqdVExQ1l2aHdLUmxJZC1RdkZ1Ums0LTBrSTZkX05fQ3Bqc3FXRHVfbl9DNnBYUkZMQVlLVF9uYU53RHpSVDd3OHJCQS1uWTkybms1dGs1aG5aWlRJS19Xei1jTVZxRE5iQXM?oc=5",
       "top": true,
-      "bestRank": 39,
-      "firstSeen": "2026-10-24T06:52:16.012Z"
+      "bestRank": 40,
+      "firstSeen": "2026-10-24T09:39:03.339Z"
     },
     {
       "headline": "Home distillers rejoice as US Supreme Court considers whether to finally legalise moonshine",
@@ -978,12 +1072,40 @@
       "bestRank": null
     },
     {
+      "headline": "Watch: CCTV footage appears to show gunmen near church in Jordan",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Dozens of people had been inside the church for a funeral when the shooting began, local media report.",
+      "url": "https://www.bbc.co.uk/news/videos/c39wz712q0kzo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-23T18:46:03.551Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Father who killed Oregon school gunman describes anguish over children he couldn't save",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "Kaylub Giamanco, has been hailed as a hero for killing a teenager who fatally shot three children and a teacher.",
+      "url": "https://www.bbc.co.uk/news/articles/crgj9ndwvj9jo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-24T09:39:03.339Z"
+    },
+    {
+      "headline": "Who actually controls Ukraine's access to Starlink?",
+      "date": "2026-10-23",
+      "bucket": "World",
+      "summary": "President Zelensky says limits to the technology continue to affect Ukrainian forces, while US officials and Elon Musk offer conflicting accounts of who controls it.",
+      "url": "https://www.bbc.co.uk/news/videos/cqy7lvv0lvzpo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-24T09:39:03.339Z"
+    },
+    {
       "headline": "Trump administration sues to block certification of upcoming Alaska election",
       "date": "2026-10-23",
       "bucket": "Politics",
       "summary": "The justice department has filed a lawsuit arguing that the inclusion of two candidates named Dan Sullivan could confuse voters.",
       "url": "https://www.bbc.co.uk/news/articles/c678pv4krx37o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-24T06:52:16.012Z"
+      "firstSeen": "2026-10-24T06:52:16.012Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Student movement takes Serbia's Vučić to the wire in neck-and-neck election",
@@ -991,7 +1113,9 @@
       "bucket": "Politics",
       "summary": "The Student List has emerged from almost two years of anti-corruption protests to form the biggest challenge to Vučić's rule.",
       "url": "https://www.bbc.co.uk/news/articles/cm1dwz311476o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-24T06:52:16.012Z"
+      "firstSeen": "2026-10-24T06:52:16.012Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Are California voters about to impose 'world's first' tax on billionaires?",
@@ -999,7 +1123,9 @@
       "bucket": "World",
       "summary": "Voters are about to decide if the mega-rich among them should hand over billions of dollars to pay for improvements to healthcare.",
       "url": "https://www.bbc.co.uk/news/articles/ck4g1jg4n9dno?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-24T06:52:16.012Z"
+      "firstSeen": "2026-10-24T06:52:16.012Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Freed US citizen was tortured in Russian jail, former Ukrainian prisoners say",
@@ -1018,26 +1144,6 @@
       "summary": "Javier Milei had denied acting fraudulently when a cryptocurrency nosedived after he deleted a social media post about it.",
       "url": "https://www.bbc.co.uk/news/articles/c64g1eplpvddo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-23T21:40:20.273Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Watch: CCTV footage appears to show gunmen near church in Jordan",
-      "date": "2026-10-23",
-      "bucket": "World",
-      "summary": "Dozens of people had been inside the church for a funeral when the shooting began, local media report.",
-      "url": "https://www.bbc.co.uk/news/videos/c39wz712q0kzo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-23T18:46:03.551Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Deadly shooting near Paris investigated as 'crime of terrorism', minister says",
-      "date": "2026-10-23",
-      "bucket": "World",
-      "summary": "One person is killed and five wounded in a series of attacks and the suspected gunman has been apprehended.",
-      "url": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-23T15:43:03.926Z",
       "top": false,
       "bestRank": null
     },
