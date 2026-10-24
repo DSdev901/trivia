@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-24T03:32:32.246Z",
+  "generatedAt": "2026-10-24T06:40:43.888Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-03T03:32:32.246Z",
-  "windowEnd": "2026-10-24T03:32:32.246Z",
+  "windowStart": "2026-10-03T06:40:43.888Z",
+  "windowEnd": "2026-10-24T06:40:43.888Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,28 +21,479 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4099,
+  "count": 4121,
   "items": [
     {
-      "key": "50262142",
-      "id": "50262142",
-      "headline": "Mavs' Cooper Flagg exits win vs. Pacers with sore left shoulder after hard foul",
-      "summary": "Mavericks forward Cooper Flagg was ruled out for the second half of Friday night's game at Indiana because of left shoulder soreness.",
-      "url": "https://www.espn.com/nba/story/_/id/50262142/mavericks-cooper-flagg-exits-vs-pacers-left-shoulder-soreness",
+      "key": "50263591",
+      "id": "50263591",
+      "headline": "Jayson Tatum insists 'there's no beef' with Jaylen Brown in wake of trade",
+      "summary": "Jayson Tatum spent most of his postgame news conference Friday night addressing speculation about his relationship with former Celtics teammate Jaylen Brown in the wake of Brown's shocking trade to Philadelphia over the summer.",
+      "url": "https://www.espn.com/nba/story/_/id/50263591/celtics-jayson-tatum-insists-no-beef-76ers-jaylen-brown-wake-trade",
       "sport": "NBA",
-      "published": "2026-10-24T03:30:52.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 15
+      "published": "2026-10-24T06:35:05.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50263667",
+      "id": "50263667",
+      "headline": "Rays won't ease up on basepaths despite miscues in Game 1 of World Series",
+      "summary": "The Rays said they'll remain aggressive on the bases despite two costly baserunning miscues in Friday's loss to the Brewers in Game 1 of the World Series.",
+      "url": "https://www.espn.com/mlb/story/_/id/50263667/rays-ease-basepaths-losing-game-1-world-series",
+      "sport": "MLB",
+      "published": "2026-10-24T06:22:32.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50262974",
+      "id": "50262974",
+      "headline": "Trevor Megill escapes 9th-inning jam to close out Brewers' Game 1 win",
+      "summary": "The Brewers survived some late drama, including a seeming game-ending double play being overturned on review, to beat the Rays 3-2 in Game 1 of the World Series.",
+      "url": "https://www.espn.com/mlb/story/_/id/50262974/trevor-megill-escapes-9th-inning-jam-close-brewers-g1-win",
+      "sport": "MLB",
+      "published": "2026-10-24T06:20:19.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50263768",
+      "id": "50263768",
+      "headline": "Davis Warren's 4 TD passes lead Stanford to a 31-28 win over NC State",
+      "summary": "— Davis Warren threw for 303 yards and four touchdowns to lead Stanford to a 31-28 victory over North Carolina State on Friday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401858272",
+      "sport": "College football",
+      "published": "2026-10-24T06:11:52.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50263767",
+      "id": "50263767",
+      "headline": "NC State Wolfpack vs. Stanford Cardinal: Full Highlights",
+      "summary": "NC State Wolfpack vs. Stanford Cardinal: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50263767/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-24T06:11:46.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50263728",
+      "id": "50263728",
+      "headline": "Washington travels to Chicago for conference showdown",
+      "summary": "Washington Wizards (1-0, fifth in the Eastern Conference) vs. Chicago Bulls (1-1, seventh in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909857",
+      "sport": "NBA",
+      "published": "2026-10-24T06:02:54.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50263726",
+      "id": "50263726",
+      "headline": "Minnesota takes on Toronto in non-conference action",
+      "summary": "Toronto Raptors (1-0, fourth in the Eastern Conference) vs. Minnesota Timberwolves (2-0, sixth in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909864",
+      "sport": "NBA",
+      "published": "2026-10-24T06:02:53.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50263725",
+      "id": "50263725",
+      "headline": "Oklahoma City hosts conference rival Los Angeles",
+      "summary": "Los Angeles Clippers (1-1, seventh in the Western Conference) vs. Oklahoma City Thunder (2-0, second in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909865",
+      "sport": "NBA",
+      "published": "2026-10-24T06:02:52.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50263724",
+      "id": "50263724",
+      "headline": "Denver takes on conference foe New Orleans",
+      "summary": "New Orleans Pelicans (0-2, 12th in the Western Conference) vs. Denver Nuggets (0-1, 10th in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909859",
+      "sport": "NBA",
+      "published": "2026-10-24T06:02:51.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50263723",
+      "id": "50263723",
+      "headline": "Atlanta plays Houston for out-of-conference matchup",
+      "summary": "Houston Rockets (1-0, third in the Western Conference) vs. Atlanta Hawks (2-0, first in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909856",
+      "sport": "NBA",
+      "published": "2026-10-24T06:02:50.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50263722",
+      "id": "50263722",
+      "headline": "Los Angeles plays Utah for conference showdown",
+      "summary": "Los Angeles Lakers (2-0, first in the Western Conference) vs. Utah Jazz (1-1, eighth in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909861",
+      "sport": "NBA",
+      "published": "2026-10-24T06:02:48.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50263721",
+      "id": "50263721",
+      "headline": "Philadelphia plays conference rival Milwaukee",
+      "summary": "Milwaukee Bucks (0-2, 15th in the Eastern Conference) vs. Philadelphia 76ers (2-0, third in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909855",
+      "sport": "NBA",
+      "published": "2026-10-24T06:02:47.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50263720",
+      "id": "50263720",
+      "headline": "Charlotte faces Miami in conference showdown",
+      "summary": "Miami Heat (0-2, 13th in the Eastern Conference) vs. Charlotte Hornets (1-1, eighth in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909853",
+      "sport": "NBA",
+      "published": "2026-10-24T06:02:46.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 8
     },
     {
       "key": "50262849",
       "id": "50262849",
-      "headline": "Pelicans center Yves Missi helped off court vs. Jazz with leg injury",
-      "summary": "Pelicans starting center Yves Missi injured his left leg in the second quarter of Friday night's game at Utah and had to be helped to the locker room.",
+      "headline": "Pelicans center Yves Missi helped off court vs. Jazz with knee injury",
+      "summary": "Pelicans starting center Yves Missi injured his left knee in the second quarter of Friday night's game at Utah and had to be helped to the locker room.",
       "url": "https://www.espn.com/nba/story/_/id/50262849/pelicans-yves-missi-exits-jazz-game-left-leg-injury",
       "sport": "NBA",
-      "published": "2026-10-24T03:21:29.000Z",
+      "published": "2026-10-24T05:45:12.000Z",
       "firstSeen": "2026-10-24T03:32:32.246Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50262750",
+      "id": "50262750",
+      "headline": "Texas AD Del Conte clarifies AI use on key play that failed in loss to Florida",
+      "summary": "Texas AD Chris Del Conte on Friday sought to clarify a report that the team used a new AI-driven platform on a crucial play that failed in last week's loss to Florida.",
+      "url": "https://www.espn.com/college-football/story/_/id/50262750/texas-ad-clarifies-use-ai-key-play-loss-florida",
+      "sport": "College football",
+      "published": "2026-10-24T05:36:09.000Z",
+      "firstSeen": "2026-10-24T03:32:32.246Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50262970",
+      "id": "50262970",
+      "headline": "Brewers withstand Rays' comeback attempt to win 3-2 in Game 1 of World Series",
+      "summary": "— Trevor Megill was shouting in celebration and the Milwaukee Brewers were bolting out of the dugout to congratulate one another, believing they had just escaped a ninth-inning jam to win Game 1 of the World Series.",
+      "url": "http://www.espn.com/mlb/recap?gameId=401908042",
+      "sport": "MLB",
+      "published": "2026-10-24T05:34:46.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50263545",
+      "id": "50263545",
+      "headline": "Darius Acuff Jr. delivers 33-point performance for Kings in loss to Blazers",
+      "summary": "Darius Acuff Jr. delivers 33-point performance for Kings in loss to Blazers",
+      "url": "https://www.espn.com/video/clip/_/id/50263545/darius-acuff-jr-delivers-33-point-performance-kings-loss-blazers",
+      "sport": "NBA",
+      "published": "2026-10-24T05:27:22.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50263530",
+      "id": "50263530",
+      "headline": "Cameron Boozer hits go-ahead jumper with 20 seconds left, Grizzlies rally to beat Warriors 111-108",
+      "summary": "— Cameron Boozer made a go-ahead jumper with 20 seconds left and finished with 25 points and 13 rebounds, and the Memphis Grizzlies came from 12 points down over the final 3:47 to beat the Golden State Warriors 111-108 on Friday night.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909850",
+      "sport": "NBA",
+      "published": "2026-10-24T05:19:46.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50263514",
+      "id": "50263514",
+      "headline": "Cam Boozer's 25-point double-double helps Grizzlies complete comeback win vs. Warriors",
+      "summary": "Cam Boozer's 25-point double-double helps Grizzlies complete comeback win vs. Warriors",
+      "url": "https://www.espn.com/video/clip/_/id/50263514/cam-boozer-25-point-double-double-helps-grizzlies-complete-comeback-win-vs-warriors",
+      "sport": "NBA",
+      "published": "2026-10-24T05:16:55.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50263537",
+      "id": "50263537",
+      "headline": "Deni Avdija scores 26 points to lead Trail Blazers in win over Kings",
+      "summary": "— Deni Avdija led the Trail Blazers with 26 points, six rebounds, and six assists in the Portland Trail Blazers 128-120 victory over the Sacramento Kings on Friday.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909852",
+      "sport": "NBA",
+      "published": "2026-10-24T05:07:56.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50263522",
+      "id": "50263522",
+      "headline": "Portland Trail Blazers vs. Sacramento Kings: Game Highlights",
+      "summary": "Portland Trail Blazers vs. Sacramento Kings: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50263522/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-24T05:04:52.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50263520",
+      "id": "50263520",
+      "headline": "Tyler Hughes throws 2 TD passes, runs for score in Wyoming's 28-14 victory over Air Force",
+      "summary": "— Tyler Hughes finished with two touchdown passes and a touchdown run to propel Wyoming to a 28-14 victory over the Air Force Academy on Friday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401864525",
+      "sport": "College football",
+      "published": "2026-10-24T05:01:46.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50263505",
+      "id": "50263505",
+      "headline": "Grizzlies erase late deficit and beat the Warriors",
+      "summary": "Grizzlies erase late deficit and beat the Warriors",
+      "url": "https://www.espn.com/video/clip/_/id/50263505/grizzlies-erase-late-deficit-beat-warriors",
+      "sport": "NBA",
+      "published": "2026-10-24T05:01:19.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50263481",
+      "id": "50263481",
+      "headline": "Amen Thompson blocks Wembanyama in final second as the Rockets beat the Spurs 114-110 in Austin",
+      "summary": "— Amen Thompson blocked Victor Wembanyama's game-tying layup attempt with less than a second remaining and the Houston Rockets held on to beat the San Antonio Spurs 114-110 on Friday night.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909096",
+      "sport": "NBA",
+      "published": "2026-10-24T04:52:51.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 16
+    },
+    {
+      "key": "50263447",
+      "id": "50263447",
+      "headline": "LA Clippers vs. Los Angeles Lakers: Game Highlights",
+      "summary": "LA Clippers vs. Los Angeles Lakers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50263447/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-24T04:46:57.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 17
+    },
+    {
+      "key": "50263163",
+      "id": "50263163",
+      "headline": "Giannis Antetokounmpo stays hot with 36 in loss, confident 0-2 Heat will click",
+      "summary": "Giannis Antetokounmpo scored 36 points Friday, giving him 71 through the first two games, and stayed hopeful the Heat would rebound from their winless start.",
+      "url": "https://www.espn.com/nba/story/_/id/50263163/giannis-antetokounmpo-stays-hot-confident-0-2-heat-click",
+      "sport": "NBA",
+      "published": "2026-10-24T04:41:45.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 22
+    },
+    {
+      "key": "50263408",
+      "id": "50263408",
+      "headline": "Rockets move to 2-0 after win over the Spurs",
+      "summary": "Rockets move to 2-0 after win over the Spurs",
+      "url": "https://www.espn.com/video/clip/_/id/50263408/rockets-move-2-0-win-spurs",
+      "sport": "NBA",
+      "published": "2026-10-24T04:40:47.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 20
+    },
+    {
+      "key": "50263429",
+      "id": "50263429",
+      "headline": "Austin Reaves, Walker Kessler lead Lakers past Clippers 125-117 for 2nd win to start season",
+      "summary": "— Austin Reaves had 28 points and nine assists, Walker Kessler added 22 points and six blocked shots, and the Los Angeles Lakers beat the Los Angeles Clippers 125-117 on Friday night for their second win to start the season.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909851",
+      "sport": "NBA",
+      "published": "2026-10-24T04:40:46.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 18
+    },
+    {
+      "key": "50263414",
+      "id": "50263414",
+      "headline": "Jackson scores 24 and Peterson makes go-ahead FTs to lift Jazz over Pelicans",
+      "summary": "— Jaren Jackson Jr. had 24 points and 10 rebounds, rookie Darryn Peterson made the go-ahead free throws with 50.5 second left, and the Utah Jazz outlasted the New Orleans Pelicans 120-119 on Friday night.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909849",
+      "sport": "NBA",
+      "published": "2026-10-24T04:35:47.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 19
+    },
+    {
+      "key": "50263404",
+      "id": "50263404",
+      "headline": "Dawson Jones' 50-yard FG on final play lifts Army over Tulsa 38-35",
+      "summary": "— Dawson Jones kicked a 50-yard field goal on the final play of the game and Army rallied last in a 38-35 victory over Tulsa on Friday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401862808",
+      "sport": "College football",
+      "published": "2026-10-24T04:33:55.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50263334",
+      "id": "50263334",
+      "headline": "New Orleans Pelicans vs. Utah Jazz: Game Highlights",
+      "summary": "New Orleans Pelicans vs. Utah Jazz: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50263334/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-24T04:25:25.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 21
+    },
+    {
+      "key": "50261786",
+      "id": "50261786",
+      "headline": "Brewers' Jacob Misiorowski sets WS velocity record on first pitch",
+      "summary": "Jacob Misiorowski broke the record for fastest World Series pitch with the very first offering of this year's Fall Classic.",
+      "url": "https://www.espn.com/mlb/story/_/id/50261786/brewers-jacob-misiorowski-sets-world-series-velocity-record-first-pitch",
+      "sport": "MLB",
+      "published": "2026-10-24T04:23:41.000Z",
+      "firstSeen": "2026-10-24T03:32:32.246Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50263294",
+      "id": "50263294",
+      "headline": "Army Black Knights vs. Tulsa Golden Hurricane: Full Highlights",
+      "summary": "Army Black Knights vs. Tulsa Golden Hurricane: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50263294/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-24T04:14:42.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50263224",
+      "id": "50263224",
+      "headline": "Nathan MacKinnon has goal and 3 assists in Avalanche's 6-3 win over Lightning",
+      "summary": "— Nathan MacKinnon had a goal and three assists, Nazem Kadri scored his first goal of the season and the Colorado Avalanche beat the Tampa Bay...",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892565",
+      "sport": "NHL",
+      "published": "2026-10-24T04:08:47.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50263222",
+      "id": "50263222",
+      "headline": "Tampa Bay Lightning vs. Colorado Avalanche: Game Highlights",
+      "summary": "Tampa Bay Lightning vs. Colorado Avalanche: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50263222/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-24T04:07:37.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50262142",
+      "id": "50262142",
+      "headline": "Mavericks' Cooper Flagg lands on shoulder after hard foul, exits win vs. Pacers",
+      "summary": "Mavericks forward Cooper Flagg did not play in the second half Friday night at Indiana after landing hard on his left shoulder after Aaron Nesmith tried to block his shot from behind to prevent a breakaway dunk.",
+      "url": "https://www.espn.com/nba/story/_/id/50262142/mavericks-cooper-flagg-exits-vs-pacers-left-shoulder-soreness",
+      "sport": "NBA",
+      "published": "2026-10-24T04:05:05.000Z",
+      "firstSeen": "2026-10-24T03:32:32.246Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50240295",
+      "id": "50240295",
+      "headline": "2026 World Series Game 1: Analysis as Brewers beat Rays",
+      "summary": "The Fall Classic began in Milwaukee on Friday -- and we've got all the action covered.",
+      "url": "https://www.espn.com/mlb/story/_/id/50240295/world-series-game-1-rays-brewers-live-updates-takeaways",
+      "sport": "MLB",
+      "published": "2026-10-24T04:03:28.000Z",
+      "firstSeen": "2026-10-23T21:26:31.632Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50262734",
+      "id": "50262734",
+      "headline": "Duke uses trick-play TD pass from Nate Sheppard to pull out 19-16 victory over Virginia",
+      "summary": "— Duke running back Nate Sheppard threw a 28-yard touchdown pass to a wide-open Brody Keefe with 1:14 left to give the Blue Devils a 19-16 win over Virginia on Friday night at...",
+      "url": "http://www.espn.com/ncf/recap?gameId=401858271",
+      "sport": "College football",
+      "published": "2026-10-24T03:41:46.000Z",
+      "firstSeen": "2026-10-24T03:32:32.246Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50262740",
+      "id": "50262740",
+      "headline": "Pistons roll past Heat 128-111, adding to Miami's season-opening woes on defensive end",
+      "summary": "— John Collins scored 23 points, Paul Reed added 19 off the bench and the Detroit Pistons added to Miami's season-opening defensive misery by beating the Heat 128-111 on Friday night.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909847",
+      "sport": "NBA",
+      "published": "2026-10-24T03:39:46.000Z",
+      "firstSeen": "2026-10-24T03:32:32.246Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50262975",
+      "id": "50262975",
+      "headline": "Brewers take exciting Game 1 for a lead in the World Series",
+      "summary": "Brewers take exciting Game 1 for a lead in the World Series",
+      "url": "https://www.espn.com/video/clip/_/id/50262975/brewers-take-exciting-game-1-lead-world-series",
+      "sport": "MLB",
+      "published": "2026-10-24T03:37:48.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50262768",
+      "id": "50262768",
+      "headline": "UMass Minutemen vs. UConn Huskies: Full Highlights",
+      "summary": "UMass Minutemen vs. UConn Huskies: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50262768/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-24T03:35:03.000Z",
+      "firstSeen": "2026-10-24T06:40:43.888Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50261799",
+      "id": "50261799",
+      "headline": "Cyncir Bowers breaks free for an electric 70-yard UConn TD run",
+      "summary": "Cyncir Bowers breaks free for an electric 70-yard UConn TD run",
+      "url": "https://www.espn.com/video/clip/_/id/50261799/cyncir-bowers-breaks-free-electric-70-yard-uconn-td-run",
+      "sport": "College football",
+      "published": "2026-10-24T03:34:43.000Z",
+      "firstSeen": "2026-10-24T03:32:32.246Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50022544",
+      "id": "50022544",
+      "headline": "2026 World Series schedule: Rays vs. Brewers dates and times",
+      "summary": "We have your one-stop shop for everything you need to keep up with all the action this October.",
+      "url": "https://www.espn.com/mlb/story/_/id/50022544/2026-mlb-playoffs-schedule-how-watch-postseason-world-series-bracket-standings",
+      "sport": "MLB",
+      "published": "2026-10-24T03:34:23.000Z",
+      "firstSeen": "2026-09-28T01:09:56.325Z",
       "bestRank": 1
     },
     {
@@ -54,39 +505,6 @@
       "sport": "College football",
       "published": "2026-10-24T03:16:35.000Z",
       "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50262750",
-      "id": "50262750",
-      "headline": "Texas AD Del Conte clarifies AI use on key play that failed in loss to Florida",
-      "summary": "Texas AD Chris Del Conte on Friday sought to clarify the team's use of a new AI-driven platform on a crucial play that failed in last week's loss to Florida.",
-      "url": "https://www.espn.com/college-football/story/_/id/50262750/texas-ad-clarifies-use-ai-key-play-loss-florida",
-      "sport": "College football",
-      "published": "2026-10-24T03:14:09.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50261799",
-      "id": "50261799",
-      "headline": "Cyncir Bowers breaks free for an electric 70-yard UConn TD run",
-      "summary": "Cyncir Bowers breaks free for an electric 70-yard UConn TD run",
-      "url": "https://www.espn.com/video/clip/_/id/50261799/cyncir-bowers-breaks-free-electric-70-yard-uconn-td-run",
-      "sport": "College football",
-      "published": "2026-10-24T03:12:34.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 14
-    },
-    {
-      "key": "50240295",
-      "id": "50240295",
-      "headline": "Live updates, analysis from Rays-Brewers World Series Game 1",
-      "summary": "The Fall Classic begins tonight in Milwaukee. Here's the latest.",
-      "url": "https://www.espn.com/mlb/story/_/id/50240295/world-series-game-1-rays-brewers-live-updates-takeaways",
-      "sport": "MLB",
-      "published": "2026-10-24T03:11:12.000Z",
-      "firstSeen": "2026-10-23T21:26:31.632Z",
       "bestRank": 1
     },
     {
@@ -156,28 +574,6 @@
       "bestRank": 1
     },
     {
-      "key": "50262740",
-      "id": "50262740",
-      "headline": "Pistons roll past Heat 128-111, adding to Miami's season-opening woes on defensive end",
-      "summary": "— John Collins scored 23 points, Paul Reed added 19 off the bench and the Detroit Pistons added to Miami's season-opening defensive misery by beating the Heat 128-111 on Friday night.",
-      "url": "http://www.espn.com/nba/recap?gameId=401909847",
-      "sport": "NBA",
-      "published": "2026-10-24T02:45:47.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50262734",
-      "id": "50262734",
-      "headline": "Duke uses trick-play TD pass from Nate Sheppard to pull out 19-16 victory over Virginia",
-      "summary": "— Duke running back Nate Sheppard threw a 28-yard touchdown pass to a wide-open Brody Keefe with 1:14 left to give the Blue Devils a 19-16 win over Virginia on Friday night at...",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858271",
-      "sport": "College football",
-      "published": "2026-10-24T02:44:46.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 5
-    },
-    {
       "key": "50262690",
       "id": "50262690",
       "headline": "Minnesota Timberwolves vs. Orlando Magic: Game Highlights",
@@ -187,17 +583,6 @@
       "published": "2026-10-24T02:40:39.000Z",
       "firstSeen": "2026-10-24T03:32:32.246Z",
       "bestRank": 4
-    },
-    {
-      "key": "50261786",
-      "id": "50261786",
-      "headline": "Brewers' Jacob Misiorowski sets WS velocity record on first pitch",
-      "summary": "Jacob Misiorowski broke the record for fastest World Series pitch with the very first offering of this year's Fall Classic.",
-      "url": "https://www.espn.com/mlb/story/_/id/50261786/brewers-jacob-misiorowski-sets-world-series-velocity-record-first-pitch",
-      "sport": "MLB",
-      "published": "2026-10-24T02:35:48.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 2
     },
     {
       "key": "50262680",
@@ -453,17 +838,6 @@
       "bestRank": 8
     },
     {
-      "key": "50261278",
-      "id": "50261278",
-      "headline": "LIV Golf's Scott O'Neil given $6.3M before bankruptcy protection filing",
-      "summary": "LIV Golf CEO Scott O'Neil was given a retention payment of $6.375 million less than three months before the tour filed for Chapter 11 bankruptcy protection.",
-      "url": "https://www.espn.com/golf/story/_/id/50261278/liv-golf-scott-oneil-given-63m-bankruptcy-filing",
-      "sport": "Golf",
-      "published": "2026-10-24T01:05:51.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 1
-    },
-    {
       "key": "50260331",
       "id": "50260331",
       "headline": "New York couple names son Knickson Fyve after Knicks title chant",
@@ -605,6 +979,17 @@
       "published": "2026-10-23T23:23:18.000Z",
       "firstSeen": "2026-10-24T03:32:32.246Z",
       "bestRank": 2
+    },
+    {
+      "key": "50261278",
+      "id": "50261278",
+      "headline": "LIV Golf's Scott O'Neil given $6.3M before bankruptcy protection filing",
+      "summary": "LIV Golf CEO Scott O'Neil was given a retention payment of $6.375 million less than three months before the tour filed for Chapter 11 bankruptcy protection.",
+      "url": "https://www.espn.com/golf/story/_/id/50261278/liv-golf-scott-oneil-given-63m-bankruptcy-filing",
+      "sport": "Golf",
+      "published": "2026-10-23T23:14:41.000Z",
+      "firstSeen": "2026-10-24T03:32:32.246Z",
+      "bestRank": 1
     },
     {
       "key": "50261284",
@@ -1998,7 +2383,7 @@
       "headline": "Jay-Z's greatest sports lyrics, ranked ahead of his SoFi Stadium show",
       "summary": "Jay-Z's catalog is packed with sports references -- here are the ones that top our list.",
       "url": "https://www.espn.com/espn/story/_/id/50232827/jayz-best-sports-references-sofi-stadium",
-      "sport": "NBA",
+      "sport": "MLB",
       "published": "2026-10-23T13:07:07.000Z",
       "firstSeen": "2026-10-23T15:30:59.559Z",
       "bestRank": 4
@@ -6369,17 +6754,6 @@
       "published": "2026-10-21T14:41:16.000Z",
       "firstSeen": "2026-10-21T15:30:12.310Z",
       "bestRank": 2
-    },
-    {
-      "key": "50022544",
-      "id": "50022544",
-      "headline": "2026 World Series schedule: Rays vs. Brewers dates and times",
-      "summary": "We have your one-stop shop for everything you need to keep up with all the action this October.",
-      "url": "https://www.espn.com/mlb/story/_/id/50022544/2026-mlb-playoffs-schedule-how-watch-postseason-world-series-bracket-standings",
-      "sport": "MLB",
-      "published": "2026-10-21T14:37:10.000Z",
-      "firstSeen": "2026-09-28T01:09:56.325Z",
-      "bestRank": 1
     },
     {
       "key": "50220519",
@@ -44979,138 +45353,6 @@
       "published": "2026-10-03T06:45:31.000Z",
       "firstSeen": "2026-10-03T06:50:18.628Z",
       "bestRank": 1
-    },
-    {
-      "key": "50079044",
-      "id": "50079044",
-      "headline": "WNBA playoffs 2026: How the Valkyries advanced to their first semifinals",
-      "summary": "To upend Golden State and keep its season alive, Dallas must win at Chase Center for the first time this season.",
-      "url": "https://www.espn.com/wnba/story/_/id/50079044/2026-wnba-playoffs-scores-results-takeaways-analysis-valkyries-wings",
-      "sport": "WNBA",
-      "published": "2026-10-03T06:27:45.000Z",
-      "firstSeen": "2026-10-02T12:41:58.213Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50088277",
-      "id": "50088277",
-      "headline": "Blues' Alexey Toropchenko leaves opener with apparent shoulder injury",
-      "summary": "St. Louis Blues forward Alexey Toropchenko has exited the season-opening game at Dallas with an apparent shoulder injury.",
-      "url": "https://www.espn.com/nhl/story/_/id/50088277/blues-alexey-toropchenko-leaves-opener-apparent-shoulder-injury",
-      "sport": "NHL",
-      "published": "2026-10-03T05:08:06.000Z",
-      "firstSeen": "2026-10-03T06:50:18.628Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50088565",
-      "id": "50088565",
-      "headline": "Anaheim Ducks vs. Vegas Golden Knights: Game Highlights",
-      "summary": "Anaheim Ducks vs. Vegas Golden Knights: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50088565/game-highlights",
-      "sport": "NHL",
-      "published": "2026-10-03T04:53:46.000Z",
-      "firstSeen": "2026-10-03T06:50:18.628Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50088415",
-      "id": "50088415",
-      "headline": "Mason McTavish scores right away in Blues debut in a 4-0 opening-night win over Stars",
-      "summary": "— Mason McTavish scored only 94 seconds into his first game with the Blues to put them ahead to stay, Joel Hofer stopped 25 shots for his ninth career shutout and St. Louis won 4-0 at...",
-      "url": "http://www.espn.com/nhl/recap?gameId=401891782",
-      "sport": "NHL",
-      "published": "2026-10-03T04:47:29.000Z",
-      "firstSeen": "2026-10-03T06:50:18.628Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50088523",
-      "id": "50088523",
-      "headline": "Windy: Simmons could guard Wembanyama",
-      "summary": "Brian Windhorst believes a healthy Ben Simmons could defend anyone 1 through 5 on the court, including Victor Wembanyama",
-      "url": "https://www.espn.com/video/clip/_/id/50088523/simmons-guard-wembanyama",
-      "sport": "College basketball",
-      "published": "2026-10-03T04:46:35.000Z",
-      "firstSeen": "2026-10-03T06:50:18.628Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50088525",
-      "id": "50088525",
-      "headline": "Ducks open the season with a 4-3 victory over the Golden Knights",
-      "summary": "— Leo Carlsson had a goal and an assist, Lukas Dostal made 27 saves and the Anaheim Ducks opened the season by holding off the Vegas Golden Knights 4-3 on Friday night.",
-      "url": "http://www.espn.com/nhl/recap?gameId=401892433",
-      "sport": "NHL",
-      "published": "2026-10-03T04:45:33.000Z",
-      "firstSeen": "2026-10-03T06:50:18.628Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50088125",
-      "id": "50088125",
-      "headline": "Pittsburgh rallies from 14-point deficit, remains unbeaten with 35-33 victory over Virginia Tech",
-      "summary": "— Virginia Tech’s John Love missed a 36-yard field goal as time expired, and Pittsburgh survived for a 35-33 victory over the Hokies on Friday.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858245",
-      "sport": "College football",
-      "published": "2026-10-03T04:30:30.000Z",
-      "firstSeen": "2026-10-03T03:43:23.343Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50088197",
-      "id": "50088197",
-      "headline": "JJ Peterka scores in OT to lift the Bruins past the Jets, 4-3",
-      "summary": "— Elias Lindholm tied it on a tip with 1:38 left in regulation and JJ Peterka scored at 3:21 of overtime to give the Boston Bruins a 4-3 victory over the Winnipeg Jets on Friday night.",
-      "url": "http://www.espn.com/nhl/recap?gameId=401891831",
-      "sport": "NHL",
-      "published": "2026-10-03T04:20:29.000Z",
-      "firstSeen": "2026-10-03T06:50:18.628Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50088405",
-      "id": "50088405",
-      "headline": "St. Louis Blues vs. Dallas Stars: Game Highlights",
-      "summary": "St. Louis Blues vs. Dallas Stars: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50088405/game-highlights",
-      "sport": "NHL",
-      "published": "2026-10-03T04:13:52.000Z",
-      "firstSeen": "2026-10-03T06:50:18.628Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50088315",
-      "id": "50088315",
-      "headline": "Caleb Komolafe stars as Northwestern rushes past Penn State 34-13 in 1st game at Ryan Field",
-      "summary": "— Caleb Komolafe rushed for a career-high 188 yards and a touchdown, and Northwestern routed Penn State 34-13 on Friday night in the first game at the new Ryan Field.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858476",
-      "sport": "College football",
-      "published": "2026-10-03T03:48:34.000Z",
-      "firstSeen": "2026-10-03T06:50:18.628Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50087685",
-      "id": "50087685",
-      "headline": "Dylan Garand makes 22 saves for 1st career shutout as Rangers beat Red Wings 2-0",
-      "summary": "— Dylan Garand made 22 saves for his first career shutout and the New York Rangers spoiled the Detroit Red Wings' opener with a 2-0 victory on Friday.",
-      "url": "http://www.espn.com/nhl/recap?gameId=401891803",
-      "sport": "NHL",
-      "published": "2026-10-03T03:43:29.000Z",
-      "firstSeen": "2026-10-03T03:43:23.343Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50088235",
-      "id": "50088235",
-      "headline": "Golden State Valkyries vs. Dallas Wings - Game Highlights",
-      "summary": "Watch the Game Highlights from Golden State Valkyries vs. Dallas Wings, 10/02/2026",
-      "url": "https://www.espn.com/video/clip/_/id/50088235/golden-state-valkyries-vs-dallas-wings-game-highlights",
-      "sport": "WNBA",
-      "published": "2026-10-03T03:33:28.000Z",
-      "firstSeen": "2026-10-03T06:50:18.628Z",
-      "bestRank": 5
     }
   ]
 }
