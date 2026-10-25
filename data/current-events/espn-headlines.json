@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-25T03:35:18.320Z",
+  "generatedAt": "2026-10-25T06:41:01.208Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-04T03:35:18.320Z",
-  "windowEnd": "2026-10-25T03:35:18.320Z",
+  "windowStart": "2026-10-04T06:41:01.208Z",
+  "windowEnd": "2026-10-25T06:41:01.208Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,558 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4162,
+  "count": 4158,
   "items": [
+    {
+      "key": "50273796",
+      "id": "50273796",
+      "headline": "Sarkisian lauds 'edgy' Arch Manning after Texas holds off Ole Miss",
+      "summary": "No. 19 Texas pulled out a wild victory over No. 7 Ole Miss after blowing a 21-point lead in the second half Saturday night.",
+      "url": "https://www.espn.com/college-football/story/_/id/50273796/texas-manning-hold-ole-miss-rally-snap-two-game-skid",
+      "sport": "College football",
+      "published": "2026-10-25T06:38:46.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50270000",
+      "id": "50270000",
+      "headline": "Upsets and chaos reign supreme in college football's Week 8",
+      "summary": "With more top-ranked teams losing, college football continues to be unpredictable in 2026.",
+      "url": "https://www.espn.com/college-football/story/_/page/gamedayfinal102426/week-8-top-games-highlights-takeaways",
+      "sport": "College football",
+      "published": "2026-10-25T06:29:40.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50268049",
+      "id": "50268049",
+      "headline": "College Football Playoff top 12 projection after Week 8",
+      "summary": "We assess how the selection committee could stack the top teams in the country after Week 8.",
+      "url": "https://www.espn.com/college-football/story/_/id/50268049/projecting-2026-playoff-top-12-week-8-cfp",
+      "sport": "College football",
+      "published": "2026-10-25T06:23:34.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50274522",
+      "id": "50274522",
+      "headline": "Dampier runs wild, No. 10 Utah holds off No. 14 Houston 21-13 to remain undefeated",
+      "summary": "— Devon Dampier ran for 152 yards and two touchdowns and No. 10 Utah held off No. 14 Houston 21-13 on Saturday night to keep the Utes among the dwindling unbeatens.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401856837",
+      "sport": "College football",
+      "published": "2026-10-25T06:13:47.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50274514",
+      "id": "50274514",
+      "headline": "Golden State, Atlanta tied 2-2 heading into game 5",
+      "summary": "Atlanta Dream (30-14, 15-5 Eastern Conference) at Golden State Valkyries (32-12, 15-8 Western Conference)",
+      "url": "http://www.espn.com/wnba/preview?gameId=401918309",
+      "sport": "WNBA",
+      "published": "2026-10-25T06:09:49.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50268327",
+      "id": "50268327",
+      "headline": "Connor Hellebuyck glad to join Devils after Jets standoff forced trade",
+      "summary": "Saying that \"sitting at home for so long was getting to me,\" new Devils goaltender Connor Hellebuyck expressed his eagerness to play for New Jersey.",
+      "url": "https://www.espn.com/nhl/story/_/id/50268327/connor-hellebuyck-happy-join-devils-jets-standoff",
+      "sport": "NHL",
+      "published": "2026-10-25T06:06:07.000Z",
+      "firstSeen": "2026-10-24T21:25:44.449Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50274497",
+      "id": "50274497",
+      "headline": "76ers face the Pistons on 3-game win streak",
+      "summary": "Detroit Pistons (2-0, second in the Eastern Conference) vs. Philadelphia 76ers (3-0, first in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909866",
+      "sport": "NBA",
+      "published": "2026-10-25T06:03:50.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50274496",
+      "id": "50274496",
+      "headline": "Boston hosts Chicago in conference matchup",
+      "summary": "Chicago Bulls (1-1, 10th in the Eastern Conference) vs. Boston Celtics (1-1, seventh in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909870",
+      "sport": "NBA",
+      "published": "2026-10-25T06:03:49.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50274495",
+      "id": "50274495",
+      "headline": "Miami faces Dallas, looks to end 3-game slide",
+      "summary": "Dallas Mavericks (1-2, 12th in the Western Conference) vs. Miami Heat (0-3, 14th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909871",
+      "sport": "NBA",
+      "published": "2026-10-25T06:03:47.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50274494",
+      "id": "50274494",
+      "headline": "Rockets face the Hawks on 3-game win streak",
+      "summary": "Atlanta Hawks (2-1, fourth in the Eastern Conference) vs. Houston Rockets (3-0, first in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909874",
+      "sport": "NBA",
+      "published": "2026-10-25T06:03:46.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50274492",
+      "id": "50274492",
+      "headline": "Charlotte and Washington square off in conference showdown",
+      "summary": "Washington Wizards (1-1, sixth in the Eastern Conference) vs. Charlotte Hornets (2-1, fifth in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909868",
+      "sport": "NBA",
+      "published": "2026-10-25T06:02:56.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50274491",
+      "id": "50274491",
+      "headline": "Golden State visits Denver following Murray's 42-point showing",
+      "summary": "Golden State Warriors (0-3, 15th in the Western Conference) vs. Denver Nuggets (1-1, eighth in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909876",
+      "sport": "NBA",
+      "published": "2026-10-25T06:02:55.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50274488",
+      "id": "50274488",
+      "headline": "Houston Cougars vs. Utah Utes: Full Highlights",
+      "summary": "Houston Cougars vs. Utah Utes: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50274488/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-25T06:01:47.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50274046",
+      "id": "50274046",
+      "headline": "Nikola Jokic rallies Nuggets from 23 down, says booing fans 'not welcome anymore'",
+      "summary": "Nikola Jokic racked up his 199th career triple-double, dropping 35 points, 15 rebounds and 10 assists as the Nuggets rallied from 23 down to beat the Pelicans.",
+      "url": "https://www.espn.com/nba/story/_/id/50274046/nikola-jokic-says-booing-nuggets-fans-not-welcome-anymore",
+      "sport": "NBA",
+      "published": "2026-10-25T06:00:24.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50274448",
+      "id": "50274448",
+      "headline": "Austin Brawley's pick-6 helps New Mexico beat North Dakota State 21-16",
+      "summary": "— Austin Brawley returned an interception 56 yards for a touchdown early in the fourth quarter and New Mexico held on to beat North Dakota State 21-16 on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401864527",
+      "sport": "College football",
+      "published": "2026-10-25T05:49:46.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50273329",
+      "id": "50273329",
+      "headline": "76ers' Brown claims no beef, but says Tatum has 'hell of a PR team'",
+      "summary": "In the latest turn in the relationship between former teammates, Jaylen Brown said Jayson Tatum should \"stay ready at all times\" while denying the two have beef.",
+      "url": "https://www.espn.com/nba/story/_/id/50273329/76ers-brown-claims-no-beef-says-tatum-stay-ready-all-s",
+      "sport": "NBA",
+      "published": "2026-10-25T05:47:34.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 16
+    },
+    {
+      "key": "50273099",
+      "id": "50273099",
+      "headline": "Dylan Harper rocks the rim in Spurs' win over Mavs",
+      "summary": "Dylan Harper rocks the rim in Spurs' win over Mavs",
+      "url": "https://www.espn.com/video/clip/_/id/50273099/dylan-harper-rocks-rim-spurs-win-mavs",
+      "sport": "NBA",
+      "published": "2026-10-25T05:37:17.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 21
+    },
+    {
+      "key": "50273308",
+      "id": "50273308",
+      "headline": "Wisconsin, former USC RB Jackson, upset No. 16 Trojans",
+      "summary": "Southern California transfer Bryan Jackson scored a first-half touchdown against his former team to help Wisconsin surprise the No. 16 Trojans 24-7 on Saturday night.",
+      "url": "https://www.espn.com/college-football/story/_/id/50273308/former-usc-rb-jackson-wisconsin-upset-no-16-trojans",
+      "sport": "College football",
+      "published": "2026-10-25T05:22:23.000Z",
+      "firstSeen": "2026-10-25T03:35:18.320Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50274309",
+      "id": "50274309",
+      "headline": "Flames beat the Red Wings 4-1 for their 3rd straight victory",
+      "summary": "— Joel Farabee had a goal and two assists and the surging Calgary Flames made it three straight victories with a 4-1 decision over the Detroit Red Wings on Saturday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892576",
+      "sport": "NHL",
+      "published": "2026-10-25T05:12:47.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50273636",
+      "id": "50273636",
+      "headline": "Calvin Russell's 4-yard TD catch lifts Syracuse to 31-30 overtime win over North Carolina",
+      "summary": "— Calvin Russell III caught a 4-yard touchdown, and the ensuing two-point conversion pass, to give Syracuse a 31-30 overtime win over North Carolina on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401858275",
+      "sport": "College football",
+      "published": "2026-10-25T05:08:46.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50273302",
+      "id": "50273302",
+      "headline": "Former Trojans back Bryan Jackson, Wisconsin upset No. 16 Southern California 24-7",
+      "summary": "— Southern California transfer Bryan Jackson scored a first-half touchdown against his former team to help Wisconsin surprise the No. 16 Trojans 24-7 on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401858500",
+      "sport": "College football",
+      "published": "2026-10-25T05:06:46.000Z",
+      "firstSeen": "2026-10-25T03:35:18.320Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50274268",
+      "id": "50274268",
+      "headline": "Golden State Warriors vs. Phoenix Suns: Game Highlights",
+      "summary": "Golden State Warriors vs. Phoenix Suns: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50274268/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-25T05:04:59.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50273358",
+      "id": "50273358",
+      "headline": "Kenny Minchey helps No. 12 Kentucky beat Vanderbilt 34-17",
+      "summary": "— Kenny Minchey threw for 203 yards a touchdown and rushed for another score in No. 12 Kentucky’s 34-17 victory over Vanderbilt on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401856729",
+      "sport": "College football",
+      "published": "2026-10-25T05:04:46.000Z",
+      "firstSeen": "2026-10-25T03:35:18.320Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50274272",
+      "id": "50274272",
+      "headline": "Minnesota Wild vs. Seattle Kraken: Game Highlights",
+      "summary": "Minnesota Wild vs. Seattle Kraken: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50274272/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-25T05:04:20.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50274269",
+      "id": "50274269",
+      "headline": "Kaprizov scores early as Wild defeat Kraken 5-1",
+      "summary": "— Kirill Kaprizov scored 26 seconds into the game and the Minnesota Wild defeated the Seattle Kraken 5-1 on Saturday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892577",
+      "sport": "NHL",
+      "published": "2026-10-25T05:03:50.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50273722",
+      "id": "50273722",
+      "headline": "Arch Manning and No. 19 Texas hang on to beat No. 7 Ole Miss 34-27 after blowing 21-point lead",
+      "summary": "— Arch Manning threw a touchdown pass and had his first two rushing scores of the season, including the tiebreaker in the fourth quarter, and No. 19 Texas held on for a wild 34-27 victory over seventh-ranked Mississippi after blowing a 21-point lead...",
+      "url": "http://www.espn.com/ncf/recap?gameId=401856732",
+      "sport": "College football",
+      "published": "2026-10-25T04:59:47.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50273821",
+      "id": "50273821",
+      "headline": "Brewers rally vs. Rays in Game 2 to take 2-0 lead in World Series",
+      "summary": "The Brewers rallied from a 4-0 deficit in the first inning to beat the Rays 5-4 in Game 2 on Saturday and take a 2-0 lead in the World Series.",
+      "url": "https://www.espn.com/mlb/story/_/id/50273821/brewers-rally-vs-rays-game-2-take-2-0-world-series-lead",
+      "sport": "MLB",
+      "published": "2026-10-25T04:56:11.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50274161",
+      "id": "50274161",
+      "headline": "Detroit Red Wings vs. Calgary Flames: Game Highlights",
+      "summary": "Detroit Red Wings vs. Calgary Flames: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50274161/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-25T04:53:14.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50273012",
+      "id": "50273012",
+      "headline": "Nylander scores twice to reach 300 NHL goals as Maple Leafs rout Oilers 7-2",
+      "summary": "— William Nylander scored twice to reach 300 NHL goals, Anthony Stolarz made 30 saves and the Toronto Maple Leafs routed the Edmonton Oilers 7-2 on Saturday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892574",
+      "sport": "NHL",
+      "published": "2026-10-25T04:50:46.000Z",
+      "firstSeen": "2026-10-25T03:35:18.320Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50266147",
+      "id": "50266147",
+      "headline": "Cincinnati's Cody Campbell tag leads top trolls from CFB Week 8",
+      "summary": "UCF and South Carolina also delivered trolls after their respective upset victories.",
+      "url": "https://www.espn.com/college-football/story/_/id/50266147/college-football-trolls-week-8",
+      "sport": "College football",
+      "published": "2026-10-25T04:45:35.000Z",
+      "firstSeen": "2026-10-25T01:03:33.341Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50273781",
+      "id": "50273781",
+      "headline": "Frelick, Pratt lift Brewers to 5-4 comeback win over Rays and 2-0 World Series lead",
+      "summary": "— Sal Frelick tied the score with his first home run in three months, Cooper Pratt hit a go-ahead single in the seventh inning and the Milwaukee Brewers stunned the Tampa Bay Rays 5-4 on Saturday night for a 2-0 World Series lead by overcoming a...",
+      "url": "http://www.espn.com/mlb/recap?gameId=401908043",
+      "sport": "MLB",
+      "published": "2026-10-25T04:42:46.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50274066",
+      "id": "50274066",
+      "headline": "Booker scores 43 points in Suns' 131-122 win over Warriors, who fall to 0-3",
+      "summary": "— Devin Booker scored 43 points, Miles Bridges added 16 and the Phoenix Suns won their home opener for the fifth straight season by beating the short-handed Golden State Warriors 131-122 on Saturday night.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909860",
+      "sport": "NBA",
+      "published": "2026-10-25T04:41:47.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50274003",
+      "id": "50274003",
+      "headline": "Dmitri Simashev scores his second goal in OT as Mammoth beat Lightning 5-4",
+      "summary": "— Dmitri Simashev scored his second goal of the game at 1:44 of overtime as the Utah Mammoth beat the Tampa Bay Lightning 5-4 on Saturday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892575",
+      "sport": "NHL",
+      "published": "2026-10-25T04:32:47.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50273990",
+      "id": "50273990",
+      "headline": "New Orleans Pelicans vs. Denver Nuggets: Game Highlights",
+      "summary": "New Orleans Pelicans vs. Denver Nuggets: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50273990/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-25T04:29:01.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50273986",
+      "id": "50273986",
+      "headline": "Houston Rockets vs. Atlanta Hawks: Game Highlights",
+      "summary": "Houston Rockets vs. Atlanta Hawks: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50273986/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-25T04:26:08.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50273964",
+      "id": "50273964",
+      "headline": "Tampa Bay Lightning vs. Utah Mammoth: Game Highlights",
+      "summary": "Tampa Bay Lightning vs. Utah Mammoth: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50273964/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-25T04:21:52.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50273920",
+      "id": "50273920",
+      "headline": "Jokic has triple-double, Murray scores 42 points in Nuggets' OT victory over Pelicans",
+      "summary": "— Nikola Jokic scored eight of his 35 points in overtime and finished with 15 rebounds and 10 assists, and the short-handed Denver Nuggets rallied from down 23 to beat the New Orleans Pelicans 141-135 on Saturday night.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909859",
+      "sport": "NBA",
+      "published": "2026-10-25T04:14:56.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50240898",
+      "id": "50240898",
+      "headline": "World Series Game 2: Takeaways from Brewers' win over Rays",
+      "summary": "Will Milwaukee go up 2-0, or will Tampa Bay even the series? The Fall Classic continues Saturday night. Here's the latest.",
+      "url": "https://www.espn.com/mlb/story/_/id/50240898/world-series-game-2-rays-brewers-live-updates-takeaways",
+      "sport": "MLB",
+      "published": "2026-10-25T04:12:58.000Z",
+      "firstSeen": "2026-10-24T21:25:44.449Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50273475",
+      "id": "50273475",
+      "headline": "Noah Fifita throws for 308 yards and 2 TDs, No. 25 Arizona dominates Iowa State 39-3",
+      "summary": "— Noah Fifita threw for 308 yards and two touchdowns, Isaiah Mizell scored on a 71-yard catch on the game's second play and No. 25 Arizona shut down Iowa State for a 39-3 win on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401856838",
+      "sport": "College football",
+      "published": "2026-10-25T04:11:47.000Z",
+      "firstSeen": "2026-10-25T03:35:18.320Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50273349",
+      "id": "50273349",
+      "headline": "Washington Wizards vs. Chicago Bulls: Game Highlights",
+      "summary": "Washington Wizards vs. Chicago Bulls: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50273349/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-25T04:11:47.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50273608",
+      "id": "50273608",
+      "headline": "Houston Rockets vs. Atlanta Hawks: Game Highlights",
+      "summary": "Houston Rockets vs. Atlanta Hawks: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50273608/game-highlights",
+      "sport": "NBA",
+      "published": "2026-10-25T04:11:21.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50273855",
+      "id": "50273855",
+      "headline": "Trey Owens throws for 2 TDs and runs for 2, leading Arkansas State past Georgia State 38-32",
+      "summary": "— Trey Owens threw for two touchdowns and ran for two others, leading Arkansas State to a 38-32 victory over Georgia State on Saturday night in the Red Wolves' homecoming game.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401869935",
+      "sport": "College football",
+      "published": "2026-10-25T04:04:47.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50273834",
+      "id": "50273834",
+      "headline": "Brewers erase 4-0 deficit to take 2-0 series lead over Rays",
+      "summary": "Brewers erase 4-0 deficit to take 2-0 series lead over Rays",
+      "url": "https://www.espn.com/video/clip/_/id/50273834/brewers-erase-4-0-deficit-take-2-0-series-lead-rays",
+      "sport": "MLB",
+      "published": "2026-10-25T04:03:59.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50272945",
+      "id": "50272945",
+      "headline": "Embiid posts triple-double as LeBron-less Sixers stay unbeaten",
+      "summary": "Joel Embiid had a triple-double with LeBron James out, Jaylen Brown scored 27 points and the 76ers remained undefeated with a 127-116 win over the Bucks.",
+      "url": "https://www.espn.com/nba/story/_/id/50272945/embiid-posts-triple-double-james-less-76ers-stay-unbeaten",
+      "sport": "NBA",
+      "published": "2026-10-25T03:59:40.000Z",
+      "firstSeen": "2026-10-25T03:35:18.320Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50273750",
+      "id": "50273750",
+      "headline": "Texas State tops Utah State 20-17 on Jacob Bonilla's field goal late in fourth quarter",
+      "summary": "— Jacob Bonilla's 37-yard field goal with less than two minutes remaining lifted Texas State to a 20-17 victory over Utah State on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401860906",
+      "sport": "College football",
+      "published": "2026-10-25T03:52:47.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50022544",
+      "id": "50022544",
+      "headline": "2026 World Series schedule: Rays vs. Brewers dates and times",
+      "summary": "We have your one-stop shop for everything you need to keep up with all the action this October.",
+      "url": "https://www.espn.com/mlb/story/_/id/50022544/2026-mlb-playoffs-schedule-how-watch-postseason-world-series-bracket-standings",
+      "sport": "MLB",
+      "published": "2026-10-25T03:52:18.000Z",
+      "firstSeen": "2026-09-28T01:09:56.325Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50273726",
+      "id": "50273726",
+      "headline": "UTSA wins 5th straight, rolls past Tulane 42-19",
+      "summary": "— A’Marion Peterson scored two of UTSA's five touchdowns on the ground and the Roadrunners beat Tulane 42-19 on Saturday night for their fifth straight win.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401862811",
+      "sport": "College football",
+      "published": "2026-10-25T03:47:46.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50273350",
+      "id": "50273350",
+      "headline": "Utah State Aggies vs. Texas State Bobcats: Full Highlights",
+      "summary": "Utah State Aggies vs. Texas State Bobcats: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50273350/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-25T03:46:12.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 22
+    },
+    {
+      "key": "50273680",
+      "id": "50273680",
+      "headline": "Texas survives with thrilling 34-27 win over Ole Miss",
+      "summary": "Texas survives with thrilling 34-27 win over Ole Miss",
+      "url": "https://www.espn.com/video/clip/_/id/50273680/texas-survives-thrilling-34-27-win-ole-miss",
+      "sport": "College football",
+      "published": "2026-10-25T03:44:32.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50273676",
+      "id": "50273676",
+      "headline": "UTSA Roadrunners vs. Tulane Green Wave: Full Highlights",
+      "summary": "UTSA Roadrunners vs. Tulane Green Wave: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50273676/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-25T03:42:14.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 13
+    },
     {
       "key": "50273311",
       "id": "50273311",
@@ -101,17 +651,6 @@
       "bestRank": 1
     },
     {
-      "key": "50273308",
-      "id": "50273308",
-      "headline": "Wisconsin, former USC RB Jackson, upset No. 16 Trojans",
-      "summary": "Southern California transfer Bryan Jackson scored a first-half touchdown against his former team to help Wisconsin surprise the No. 16 Trojans 24-7 on Saturday night.",
-      "url": "https://www.espn.com/college-football/story/_/id/50273308/former-usc-rb-jackson-wisconsin-upset-no-16-trojans",
-      "sport": "College football",
-      "published": "2026-10-25T03:19:46.000Z",
-      "firstSeen": "2026-10-25T03:35:18.320Z",
-      "bestRank": 10
-    },
-    {
       "key": "50273326",
       "id": "50273326",
       "headline": "Colorado Buffaloes vs. Oklahoma State Cowboys: Full Highlights",
@@ -121,17 +660,6 @@
       "published": "2026-10-25T03:18:45.000Z",
       "firstSeen": "2026-10-25T03:35:18.320Z",
       "bestRank": 8
-    },
-    {
-      "key": "50273475",
-      "id": "50273475",
-      "headline": "Noah Fifita throws for 308 yards and 2 TDs, No. 25 Arizona dominates Iowa State 39-3",
-      "summary": "— Noah Fifita threw for 308 yards and two touchdowns, Isaiah Mizell scored on a 71-yard catch on the game's second play and No. 25 Arizona shut down Iowa State for a 39-3 win on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856838",
-      "sport": "College football",
-      "published": "2026-10-25T03:16:46.000Z",
-      "firstSeen": "2026-10-25T03:35:18.320Z",
-      "bestRank": 5
     },
     {
       "key": "50273431",
@@ -167,17 +695,6 @@
       "bestRank": 1
     },
     {
-      "key": "50273358",
-      "id": "50273358",
-      "headline": "Kenny Minchey helps No. 12 Kentucky beat Vanderbilt 34-17",
-      "summary": "— Kenny Minchey threw for 203 yards a touchdown and rushed for another score in No. 12 Kentucky's 34-17 victory over Vanderbilt on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856729",
-      "sport": "College football",
-      "published": "2026-10-25T03:06:50.000Z",
-      "firstSeen": "2026-10-25T03:35:18.320Z",
-      "bestRank": 7
-    },
-    {
       "key": "41679163",
       "id": "41679163",
       "headline": "Which player has the most career points in NHL history?",
@@ -187,28 +704,6 @@
       "published": "2026-10-25T03:06:22.000Z",
       "firstSeen": "2026-10-14T06:44:01.001Z",
       "bestRank": 1
-    },
-    {
-      "key": "50240898",
-      "id": "50240898",
-      "headline": "Live updates from Rays-Brewers World Series Game 2",
-      "summary": "Will Milwaukee go up 2-0, or will Tampa Bay even the series? The Fall Classic continues Saturday night. Here's the latest.",
-      "url": "https://www.espn.com/mlb/story/_/id/50240898/world-series-game-2-rays-brewers-live-updates-takeaways",
-      "sport": "MLB",
-      "published": "2026-10-25T03:05:49.000Z",
-      "firstSeen": "2026-10-24T21:25:44.449Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50272945",
-      "id": "50272945",
-      "headline": "Embiid posts triple-double as LeBron-less Sixers stay unbeaten",
-      "summary": "Joel Embiid had a triple-double with LeBron James out, Jaylen Brown scored 27 points and the 76ers remained undefeated with a 127-116 win over the Bucks.",
-      "url": "https://www.espn.com/nba/story/_/id/50272945/embiid-posts-triple-double-james-less-76ers-stay-unbeaten",
-      "sport": "NBA",
-      "published": "2026-10-25T03:05:23.000Z",
-      "firstSeen": "2026-10-25T03:35:18.320Z",
-      "bestRank": 7
     },
     {
       "key": "50273322",
@@ -242,17 +737,6 @@
       "published": "2026-10-25T03:00:06.000Z",
       "firstSeen": "2026-10-25T03:35:18.320Z",
       "bestRank": 3
-    },
-    {
-      "key": "50273302",
-      "id": "50273302",
-      "headline": "Former Trojans back Bryan Jackson, Wisconsin upset No. 16 Southern California 24-7",
-      "summary": "— Southern California transfer Bryan Jackson scored a first-half touchdown against his former team to help Wisconsin surprise the No. 16 Trojans 24-7 on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858500",
-      "sport": "College football",
-      "published": "2026-10-25T02:58:48.000Z",
-      "firstSeen": "2026-10-25T03:35:18.320Z",
-      "bestRank": 11
     },
     {
       "key": "50273224",
@@ -319,17 +803,6 @@
       "published": "2026-10-25T02:43:27.000Z",
       "firstSeen": "2026-10-25T03:35:18.320Z",
       "bestRank": 6
-    },
-    {
-      "key": "50273012",
-      "id": "50273012",
-      "headline": "Nylander scores twice to reach 300 NHL goals as Maple Leafs rout Oilers 7-2",
-      "summary": "— William Nylander scored twice to reach 300 NHL goals, Anthony Stolarz made 30 saves and the Toronto Maple Leafs routed the Edmonton Oilers 7-2 on Saturday night.",
-      "url": "http://www.espn.com/nhl/recap?gameId=401892574",
-      "sport": "NHL",
-      "published": "2026-10-25T02:42:46.000Z",
-      "firstSeen": "2026-10-25T03:35:18.320Z",
-      "bestRank": 4
     },
     {
       "key": "50272598",
@@ -781,17 +1254,6 @@
       "published": "2026-10-25T01:00:47.000Z",
       "firstSeen": "2026-10-25T01:03:33.341Z",
       "bestRank": 1
-    },
-    {
-      "key": "50266147",
-      "id": "50266147",
-      "headline": "Cincinnati's Cody Campbell tag leads top trolls from CFB Week 8",
-      "summary": "UCF and South Carolina also delivered trolls after their respective upset victories.",
-      "url": "https://www.espn.com/college-football/story/_/id/50266147/college-football-trolls-week-8",
-      "sport": "College football",
-      "published": "2026-10-25T01:00:45.000Z",
-      "firstSeen": "2026-10-25T01:03:33.341Z",
-      "bestRank": 12
     },
     {
       "key": "50271294",
@@ -2048,17 +2510,6 @@
       "bestRank": 18
     },
     {
-      "key": "50022544",
-      "id": "50022544",
-      "headline": "2026 World Series schedule: Rays vs. Brewers dates and times",
-      "summary": "We have your one-stop shop for everything you need to keep up with all the action this October.",
-      "url": "https://www.espn.com/mlb/story/_/id/50022544/2026-mlb-playoffs-schedule-how-watch-postseason-world-series-bracket-standings",
-      "sport": "MLB",
-      "published": "2026-10-24T20:14:39.000Z",
-      "firstSeen": "2026-09-28T01:09:56.325Z",
-      "bestRank": 1
-    },
-    {
       "key": "50263122",
       "id": "50263122",
       "headline": "How the Valkyries stole Game 4 on the road to even WNBA Finals at 2-2",
@@ -2112,17 +2563,6 @@
       "published": "2026-10-24T20:08:46.000Z",
       "firstSeen": "2026-10-24T21:25:44.449Z",
       "bestRank": 1
-    },
-    {
-      "key": "50268327",
-      "id": "50268327",
-      "headline": "Connor Hellebuyck glad to join Devils after Jets standoff forced trade",
-      "summary": "Saying that \"sitting at home for so long was getting to me,\" new Devils goaltender Connor Hellebuyck expressed his eagerness to play for New Jersey.",
-      "url": "https://www.espn.com/nhl/story/_/id/50268327/connor-hellebuyck-happy-join-devils-jets-standoff",
-      "sport": "NHL",
-      "published": "2026-10-24T20:08:05.000Z",
-      "firstSeen": "2026-10-24T21:25:44.449Z",
-      "bestRank": 3
     },
     {
       "key": "50269170",
@@ -10798,7 +11238,7 @@
       "headline": "Big 12 commish mulls new event if conference title games end",
       "summary": "Big 12 commissioner Brett Yormark said the league would find a new event to replace any lost conference title games should they be casualties of an expanded College Football Playoff.",
       "url": "https://www.espn.com/college-football/story/_/id/50231796/big-12-commish-mulls-new-event-conference-title-games-end",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-20T22:27:21.000Z",
       "firstSeen": "2026-10-20T21:28:05.035Z",
       "bestRank": 1
@@ -19664,7 +20104,7 @@
       "headline": "NCAA sues Ohio gov. over order allowing schools to ignore new eligibility rule",
       "summary": "The NCAA has filed a federal lawsuit against Ohio Gov. Mike DeWine three days after he signed an executive order giving the state's colleges and universities the option of allowing athletes who graduated from high school in 2022 to play a fifth year.",
       "url": "https://www.espn.com/college-sports/story/_/id/50196596/ncaa-sues-ohio-gov-eligibility-order-5th-year-athletes",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-16T20:07:31.000Z",
       "firstSeen": "2026-10-16T18:32:34.965Z",
       "bestRank": 1
@@ -24768,7 +25208,7 @@
       "headline": "Ohio Gov. Mike DeWine signs order letting state's 2022 athletes play in 2026-27",
       "summary": "Ohio Gov. Mike DeWine signed an executive order allowing 2022 athletes to play even though the NCAA's new guidance excludes those who have already played four seasons.",
       "url": "https://www.espn.com/college-sports/story/_/id/50177542/ohio-gov-dewine-signs-order-2022-athletes-play-2026-27",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-14T02:41:34.000Z",
       "firstSeen": "2026-10-14T00:58:06.882Z",
       "bestRank": 1
@@ -27364,7 +27804,7 @@
       "headline": "James Madison to exit Sun Belt, join American Conference",
       "summary": "James Madison has accepted membership into the American Athletic Association, the university announced Monday.",
       "url": "https://www.espn.com/college-sports/story/_/id/50166450/james-madison-exit-sun-belt-join-american-conference",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-12T15:30:06.000Z",
       "firstSeen": "2026-10-12T15:32:56.568Z",
       "bestRank": 1
@@ -34008,7 +34448,7 @@
       "headline": "Reports - Watchdog eyes NIL violations at 5-10 Power 4 schools",
       "summary": "The College Sports Commission is looking into possible rules violations at between five and 10 Power 4 schools regarding payments to players, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/50142371/reports-watchdog-eyes-nil-violations-5-10-power-4-schools",
-      "sport": "Women's college basketball",
+      "sport": "College basketball",
       "published": "2026-10-09T22:48:19.000Z",
       "firstSeen": "2026-10-09T21:28:17.260Z",
       "bestRank": 1
@@ -45320,490 +45760,6 @@
       "published": "2026-10-04T07:35:29.000Z",
       "firstSeen": "2026-10-04T08:22:49.172Z",
       "bestRank": 1
-    },
-    {
-      "key": "50097898",
-      "id": "50097898",
-      "headline": "USMNT's young stars shine to give Pochettino 'fantastic problem'",
-      "summary": "USMNT coach Mauricio Pochettino said that the number of players performing at a high level is \"a fantastic problem to have\" after teenagers Cavan Sullivan and Julian Hall propelled the USMNT to 3-0 win over rivals Mexico on Saturday.",
-      "url": "https://www.espn.com/soccer/story/_/id/50097898/usa-mexico-mauricio-pochettino-julian-hall-cavan-sullivan",
-      "sport": "Soccer",
-      "published": "2026-10-04T06:37:31.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50097912",
-      "id": "50097912",
-      "headline": "Hawkins' 96-yard KOR for TD, Cooper's pick-6 help San Diego State beat Texas State 31-29",
-      "summary": "— Jaylon Hawkins returned the opening kickoff of the second half for a touchdown, Cameron Cooper had a 32-yard pick-6, and short-handed San Diego State beat Texas State 31-29 on Saturday night in the inaugural Pac-12 Conference game for both teams.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401860900",
-      "sport": "College football",
-      "published": "2026-10-04T06:34:29.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50097889",
-      "id": "50097889",
-      "headline": "Baylor Bears vs. Arizona State Sun Devils: Full Highlights",
-      "summary": "Baylor Bears vs. Arizona State Sun Devils: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50097889/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-04T06:26:15.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50097861",
-      "id": "50097861",
-      "headline": "Cleeland, Jones, and Fisher help UC Davis beat Eastern Washington 49-38",
-      "summary": "— Treynor Cleeland threw two of his four touchdown passes to Zach Jones, and Jordan Fisher rushed for a career-high 255 yards and two scores as UC Davis beat Eastern Washington 49-38 on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401868086",
-      "sport": "College football",
-      "published": "2026-10-04T06:22:29.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50097852",
-      "id": "50097852",
-      "headline": "Texas State vs. San Diego State: Full Highlights",
-      "summary": "Texas State vs. San Diego State: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50097852/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-04T06:22:07.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 7
-    },
-    {
-      "key": "49480377",
-      "id": "49480377",
-      "headline": "Bahrain Grand Prix in Malaysia: Where were today's drivers when F1 last raced at Sepang?",
-      "summary": "Formula 1 is heading to Malaysia for the Bahrain Grand Prix; the south-east Asian nation providing an unusual setting for a race.",
-      "url": "https://www.espn.com/f1/story/_/id/49480377/bahrain-grand-prix-malaysia-where-were-todays-f1-drivers-last-race-2017",
-      "sport": "F1",
-      "published": "2026-10-04T06:21:11.000Z",
-      "firstSeen": "2026-10-01T15:31:00.052Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50097845",
-      "id": "50097845",
-      "headline": "Eastern Washington Eagles vs. UC Davis Aggies: Full Highlights",
-      "summary": "Eastern Washington Eagles vs. UC Davis Aggies: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50097845/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-04T06:15:46.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50013220",
-      "id": "50013220",
-      "headline": "Why is the Bahrain Grand Prix taking place in Malaysia, 4,000 miles away? F1's unusual race explained",
-      "summary": "Formula 1's next race has an odd quirk -- it is unofficially the rescheduled Bahrain Grand Prix, but it is taking place at Malaysia's Sepang International Circuit in Kuala Lumpur.",
-      "url": "https://www.espn.com/f1/story/_/id/50013220/why-bahrain-grand-prix-taking-place-malaysia-4000-miles-away-f1-unusual-race-explained",
-      "sport": "F1",
-      "published": "2026-10-04T06:14:25.000Z",
-      "firstSeen": "2026-09-30T15:32:20.020Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50097585",
-      "id": "50097585",
-      "headline": "Sabres F Kulich returns from blood clot issues, nets winner",
-      "summary": "Nearly a year of worries of whether he was ever going to play again, while he recovered from a blood clot issue, washed away as Buffalo Sabres forward Jiri Kulich scored the go-ahead goal with 6:40 left to secure a 4-3 victory over the Chicago Blackhawks.",
-      "url": "https://www.espn.com/nhl/story/_/id/50097585/sabres-f-kulich-returns-blood-clot-issues-nets-winner",
-      "sport": "NHL",
-      "published": "2026-10-04T06:09:24.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50096683",
-      "id": "50096683",
-      "headline": "No. 18 USC rallies past Washington 25-21 with Stewart's fumble return TD, more big defensive plays",
-      "summary": "— Jahkeem Stewart returned a fumble 48 yards for the go-ahead touchdown, and No. 18 Southern California overcame a double-digit deficit in the second half for a 25-21 victory over Washington on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858478",
-      "sport": "College football",
-      "published": "2026-10-04T05:50:29.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 22
-    },
-    {
-      "key": "50091118",
-      "id": "50091118",
-      "headline": "Projecting the College Football Playoff top 12 after Week 5",
-      "summary": "We assess how the selection committee could stack the top teams in the country after Week 5.",
-      "url": "https://www.espn.com/college-football/story/_/id/50091118/projecting-2026-college-football-playoff-top-12-week-5",
-      "sport": "College football",
-      "published": "2026-10-04T05:47:51.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 27
-    },
-    {
-      "key": "50095644",
-      "id": "50095644",
-      "headline": "Rasmussen nearly perfect vs. Yankees as Rays take ALDS Game 1",
-      "summary": "Drew Rasmussen and Bryan Baker pitched a one-hit game Saturday night as the Rays shut down the Yankees' offense to take Game 1 of their ALDS series.",
-      "url": "https://www.espn.com/mlb/story/_/id/50095644/rasmussen-nearly-perfect-vs-yankees-rays-take-alds-game-1",
-      "sport": "MLB",
-      "published": "2026-10-04T05:45:39.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50097643",
-      "id": "50097643",
-      "headline": "Fresno State wins Pac-12 debut, beats Washington State 26-6",
-      "summary": "— Wide receiver Josiah Freeman scored on a reverse and Fresno State beat Washington State 23-6 on Saturday night in the inaugural game for both teams in the new-look Pac-12 Conference.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401860921",
-      "sport": "College football",
-      "published": "2026-10-04T05:39:38.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 11
-    },
-    {
-      "key": "50097558",
-      "id": "50097558",
-      "headline": "Merilainen makes 23 saves in first start for the Canucks in a 4-1 victory over the Flames",
-      "summary": "— Leevi Merilainen made 23 saves in his first start for Vancouver and the Canucks had a four-goal third period in a 4-1 victory over the Calgary Flames on Saturday night.",
-      "url": "http://www.espn.com/nhl/recap?gameId=401892440",
-      "sport": "NHL",
-      "published": "2026-10-04T05:29:37.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50097522",
-      "id": "50097522",
-      "headline": "Los Angeles Kings vs. San Jose Sharks: Game Highlights",
-      "summary": "Los Angeles Kings vs. San Jose Sharks: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50097522/game-highlights",
-      "sport": "NHL",
-      "published": "2026-10-04T05:23:03.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50096816",
-      "id": "50096816",
-      "headline": "Richard runs for 204 yards, TD in No. 6 Indiana's 47-15 romp over Rutgers",
-      "summary": "— Turbo Richard ran for 204 yards and a touchdown and Josh Hoover passed for 251 yards and four touchdowns to extend No. 6 Indiana's win streak to 21 games in a 47-15 win over Rutgers Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858477",
-      "sport": "College football",
-      "published": "2026-10-04T05:17:29.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 15
-    },
-    {
-      "key": "50097423",
-      "id": "50097423",
-      "headline": "Calgary Flames vs. Vancouver Canucks: Game Highlights",
-      "summary": "Calgary Flames vs. Vancouver Canucks: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50097423/game-highlights",
-      "sport": "NHL",
-      "published": "2026-10-04T05:15:58.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50096781",
-      "id": "50096781",
-      "headline": "Darian Mensah, Mark Fletcher Jr. lead unbeaten No. 4 Miami past Clemson 41-13",
-      "summary": "— Darian Mensah threw for 227 yards and a touchdown and had a 34-yard scoring run as No. 4 Miami routed Clemson 41-13 on Saturday night to seize sole possession of first place in the...",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858249",
-      "sport": "College football",
-      "published": "2026-10-04T05:01:29.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 20
-    },
-    {
-      "key": "50097361",
-      "id": "50097361",
-      "headline": "Chernyshov's 2nd goal of the game gives the Sharks a 5-4 overtime win over the Kings",
-      "summary": "— Igor Chernyshov scored his second goal of the game with 1:42 remaining in overtime and the San Jose Sharks beat the Los Angeles Kings 5-4 on Saturday night for their second straight win to open the season.",
-      "url": "http://www.espn.com/nhl/recap?gameId=401892441",
-      "sport": "NHL",
-      "published": "2026-10-04T05:00:35.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50094113",
-      "id": "50094113",
-      "headline": "Atlanta Braves vs. Los Angeles Dodgers: Game Highlights",
-      "summary": "Atlanta Braves vs. Los Angeles Dodgers: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50094113/game-highlights",
-      "sport": "MLB",
-      "published": "2026-10-04T04:54:57.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50087404",
-      "id": "50087404",
-      "headline": "Alabama's jab at Mississippi State tops trolls from Week 5 college football",
-      "summary": "Alabama took to social media to needle its Starkville hosts, writing \"Not enough cowbells\" in reference to Davis Wade Stadium's famous noise-making tradition.",
-      "url": "https://www.espn.com/college-football/story/_/id/50087404/college-football-trolls-week-5",
-      "sport": "College football",
-      "published": "2026-10-04T04:50:13.000Z",
-      "firstSeen": "2026-10-04T01:35:00.048Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50091015",
-      "id": "50091015",
-      "headline": "Week 5 reality check: Alabama looks like, well, Alabama; Jeremiah Smith is undeniable",
-      "summary": "Alabama and Ohio State restore order in CFB as Florida, Mississippi State and Iowa get a tough dose of reality.",
-      "url": "https://www.espn.com/college-football/story/_/page/gamedayfinal100326/2026-college-football-week-5-highlights-top-plays-games-takeaways",
-      "sport": "College football",
-      "published": "2026-10-04T04:46:29.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50096829",
-      "id": "50096829",
-      "headline": "Natalia Silva captures women's flyweight title with unanimous decision win over Wang Cong",
-      "summary": "Natalia Silva captures women's flyweight title with unanimous decision win over Wang Cong",
-      "url": "https://www.espn.com/video/clip/_/id/50096829/natalia-silva-captures-women-flyweight-title-unanimous-decision-win-wang-cong",
-      "sport": "MMA",
-      "published": "2026-10-04T04:24:37.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50097163",
-      "id": "50097163",
-      "headline": "Brewers beat the Padres 3-2 in Game 1 thriller",
-      "summary": "Brewers beat the Padres 3-2 in Game 1 thriller",
-      "url": "https://www.espn.com/video/clip/_/id/50097163/brewers-beat-padres-3-2-game-1-thriller",
-      "sport": "MLB",
-      "published": "2026-10-04T04:21:00.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50096681",
-      "id": "50096681",
-      "headline": "No. 12 Texas Tech capitalizes on 4 interceptions in a 29-7 win over Colorado and moves to 5-0",
-      "summary": "— Linebacker John Curry picked off a pass in the end zone for an easy touchdown, one of four interceptions for No. 12 Texas Tech in a 29-7 win over mistake-prone Colorado on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856821",
-      "sport": "College football",
-      "published": "2026-10-04T04:20:28.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 23
-    },
-    {
-      "key": "50097133",
-      "id": "50097133",
-      "headline": "Weber State Wildcats vs. Cal Poly Mustangs: Full Highlights",
-      "summary": "Weber State Wildcats vs. Cal Poly Mustangs: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50097133/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-04T04:12:18.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50097126",
-      "id": "50097126",
-      "headline": "Hollins throws 3 TD passes, South Alabama beats Louisiana-Monroe 52-35",
-      "summary": "— Jared Hollins threw for 321 yards and three touchdowns and South Alabama never trailed in a 52-35 win over Louisiana-Monroe on Saturday in a Sun Belt Conference opener.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401871089",
-      "sport": "College football",
-      "published": "2026-10-04T04:11:29.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50097100",
-      "id": "50097100",
-      "headline": "Smith completes Hail Mary to Bailey on the final play to lead Harvard past Colgate 20-17",
-      "summary": "— Charlie Smith threw for 369 yards and two touchdowns and Harvard stunned Colgate 20-17 on the last play of the game on Saturday.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401867840",
-      "sport": "College football",
-      "published": "2026-10-04T04:04:40.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50096881",
-      "id": "50096881",
-      "headline": "Francisco Rivero, Raudi Perez suspended for positive drug tests",
-      "summary": "Washington Nationals catcher Francisco Rivero and free agent pitcher Raudi Perez have been suspended for 56 games each following positive tests for a performance-enhancing substance under baseball's minor league drug programs.",
-      "url": "https://www.espn.com/mlb/story/_/id/50096881/francisco-rivero-raudi-perez-suspended-positive-drug-tests",
-      "sport": "MLB",
-      "published": "2026-10-04T03:58:09.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50097005",
-      "id": "50097005",
-      "headline": "Southern Utah Thunderbirds vs. Utah Tech: Full Highlights",
-      "summary": "Southern Utah Thunderbirds vs. Utah Tech: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50097005/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-04T03:57:14.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 5
-    },
-    {
-      "key": "24149628",
-      "id": "24149628",
-      "headline": "All-time UFC women's flyweight champions",
-      "summary": "Check out which fighter has held the belt -- and how long she held it -- in the women's 125-pound division.",
-      "url": "https://www.espn.com/mma/story/_/id/24149628/all-ufc-women-flyweight-champions",
-      "sport": "MMA",
-      "published": "2026-10-04T03:56:04.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50096798",
-      "id": "50096798",
-      "headline": "Sam Leavitt leads LSU to 63-14 victory over McNeese State",
-      "summary": "— Sam Leavitt threw for 173 yards and three touchdowns and No. 11 LSU beat McNeese State 63-14 on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856706",
-      "sport": "College football",
-      "published": "2026-10-04T03:52:29.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 17
-    },
-    {
-      "key": "50096920",
-      "id": "50096920",
-      "headline": "Texas Tech vs. Colorado: Full Highlights",
-      "summary": "Texas Tech vs. Colorado: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50096920/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-04T03:51:42.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50096947",
-      "id": "50096947",
-      "headline": "St. Louis Blues vs. Colorado Avalanche: Game Highlights",
-      "summary": "St. Louis Blues vs. Colorado Avalanche: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50096947/game-highlights",
-      "sport": "NHL",
-      "published": "2026-10-04T03:51:21.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50096916",
-      "id": "50096916",
-      "headline": "Tarleton State moves to 5-0, beats Chicago State 56-21 behind Anderson's 4 TD passes",
-      "summary": "— Kaden Anderson threw four touchdowns passes, Bryce Green ran for three scores and Tarleton State rolled to a 56-21 victory over Chicago State on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401867688",
-      "sport": "College football",
-      "published": "2026-10-04T03:49:29.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50096905",
-      "id": "50096905",
-      "headline": "Necas and Roy score quick goals as the Avalanche rout the Blues 6-1",
-      "summary": "— Nicolas Roy and Martin Necas scored 23 seconds apart in a four-goal second period, and the Colorado Avalanche beat the St. Louis Blues 6-1 on Saturday night.",
-      "url": "http://www.espn.com/nhl/recap?gameId=401892439",
-      "sport": "NHL",
-      "published": "2026-10-04T03:47:32.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50096873",
-      "id": "50096873",
-      "headline": "LSU RB Harlem Berry harps on the 'little things' after McNeese win",
-      "summary": "After leading all rushers with 125 yards, Berry emphasizes that valuing the smaller details makes a big difference in LSU's offensive production.",
-      "url": "https://www.espn.com/video/clip/_/id/50096873/lsu-rb-harlem-berry-harps-little-things-mcneese-win",
-      "sport": "College football",
-      "published": "2026-10-04T03:44:13.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50096860",
-      "id": "50096860",
-      "headline": "Jamal Roberts runs for 211 yards, adds 3 TDs in Mizzou's big win",
-      "summary": "Jamal Roberts runs for 211 yards, adds 3 TDs in Mizzou's big win",
-      "url": "https://www.espn.com/video/clip/_/id/50096860/jamal-roberts-runs-211-yards-adds-3-tds-mizzou-big-win",
-      "sport": "College football",
-      "published": "2026-10-04T03:42:42.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 11
-    },
-    {
-      "key": "50096870",
-      "id": "50096870",
-      "headline": "Indiana Hoosiers vs. Rutgers Scarlet Knights: Full Highlights",
-      "summary": "Indiana Hoosiers vs. Rutgers Scarlet Knights: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50096870/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-04T03:42:25.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50096868",
-      "id": "50096868",
-      "headline": "Northern Arizona Lumberjacks vs. Idaho State Bengals: Full Highlights",
-      "summary": "Northern Arizona Lumberjacks vs. Idaho State Bengals: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50096868/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-04T03:42:06.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50096036",
-      "id": "50096036",
-      "headline": "Bear Bachmeier runs for 2 TDs as No. 10 BYU overcomes loss of LJ Martin to beat TCU 17-10",
-      "summary": "— BYU quarterback Bear Bachmeier ran for two touchdowns, the second a clinching 21-yarder with 2:06 left, and the No. 10 Cougars overcame an injury to running back LJ Martin in a...",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856818",
-      "sport": "College football",
-      "published": "2026-10-04T03:40:42.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 46
-    },
-    {
-      "key": "14947566",
-      "id": "14947566",
-      "headline": "Current and all-time UFC champions",
-      "summary": "From a heavyweight vacancy to strawweight Mackenzie Dern, check out the list of titleholders in each division.",
-      "url": "https://www.espn.com/mma/story/_/id/14947566/current-all-ufc-champions",
-      "sport": "MMA",
-      "published": "2026-10-04T03:40:03.000Z",
-      "firstSeen": "2026-09-09T01:00:44.005Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50096800",
-      "id": "50096800",
-      "headline": "Lane Kiffin speaks on LSU's explosive offensive outing vs. McNeese",
-      "summary": "Kiffin describes what stood out to him the most in the No. 11 Tigers' rout of the Cowboys as they total the second-most offensive yards in program history.",
-      "url": "https://www.espn.com/video/clip/_/id/50096800/lane-kiffin-speaks-lsu-explosive-offensive-outing-vs-mcneese",
-      "sport": "College football",
-      "published": "2026-10-04T03:38:46.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 16
-    },
-    {
-      "key": "50096115",
-      "id": "50096115",
-      "headline": "Texas A&M powers past Arkansas 34-7 behind KJ Edwards’ 2 TDs",
-      "summary": "— KJ Edwards ran for two touchdowns and Marcel Reed threw for 170 yards and ran for a score to lead Texas A&M to a 34-7 win over Arkansas on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856711",
-      "sport": "College football",
-      "published": "2026-10-04T03:37:29.000Z",
-      "firstSeen": "2026-10-04T04:36:21.074Z",
-      "bestRank": 44
     }
   ]
 }
