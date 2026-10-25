@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-25T09:27:51.709Z",
+  "generatedAt": "2026-10-25T12:35:37.579Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-04T09:27:51.709Z",
-  "windowEnd": "2026-10-25T09:27:51.709Z",
+  "windowStart": "2026-10-04T12:35:37.579Z",
+  "windowEnd": "2026-10-25T12:35:37.579Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,217 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4158,
+  "count": 4160,
   "items": [
+    {
+      "key": "50267058",
+      "id": "50267058",
+      "headline": "Sources: Peyton Manning not expected to be candidate for Colts' vacant GM job",
+      "summary": "The Colts have not approached Peyton Manning about their vacant GM job, nor would the ex-QB be expected to be interested in the position, according to sources.",
+      "url": "https://www.espn.com/nfl/story/_/id/50267058/sources-peyton-manning-not-candidate-colts-gm-job",
+      "sport": "NFL",
+      "published": "2026-10-25T12:32:52.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50268181",
+      "id": "50268181",
+      "headline": "Sources: Josh Simmons told to leave Chiefs meeting by Andy Reid, Patrick Mahomes",
+      "summary": "Josh Simmons was kicked out of a team meeting by Chiefs coach Andy Reid and QB Patrick Mahomes, but the OT later apologized, sources told NFL Network.",
+      "url": "https://www.espn.com/nfl/story/_/id/50268181/sources-josh-simmons-told-leave-chiefs-team-meeting",
+      "sport": "NFL",
+      "published": "2026-10-25T12:29:01.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 16
+    },
+    {
+      "key": "49797082",
+      "id": "49797082",
+      "headline": "Fantasy football rankings Week 7: PPR and superflex",
+      "summary": "Weekly composite ranks for each position in PPR and IDP formats, as well as Eric Karabell's superflex ranks.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26main-49797082/fantasy-football-rankings-2026-qb-rb-wr-te-dst",
+      "sport": "NFL",
+      "published": "2026-10-25T12:23:08.000Z",
+      "firstSeen": "2026-09-04T18:29:30.987Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804149",
+      "id": "49804149",
+      "headline": "Fantasy football rankings for Week 7: Wide receiver",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804149/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
+      "sport": "NFL",
+      "published": "2026-10-25T12:22:49.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804068",
+      "id": "49804068",
+      "headline": "Fantasy football rankings for Week 7: Running back",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804068/nfl-fantasy-football-rankings-2026-rb-running-back",
+      "sport": "NFL",
+      "published": "2026-10-25T12:22:33.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49804273",
+      "id": "49804273",
+      "headline": "Fantasy football rankings for Week 7: D/ST",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804273/nfl-fantasy-football-rankings-2026-dst-defense",
+      "sport": "NFL",
+      "published": "2026-10-25T12:22:10.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49804022",
+      "id": "49804022",
+      "headline": "Fantasy football rankings for Week 7: Quarterback",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804022/nfl-fantasy-football-rankings-2026-qb-quarterback",
+      "sport": "NFL",
+      "published": "2026-10-25T12:21:48.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49804164",
+      "id": "49804164",
+      "headline": "Fantasy football rankings for Week 7: Tight end",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804164/nfl-fantasy-football-rankings-2026-te-tight-end",
+      "sport": "NFL",
+      "published": "2026-10-25T12:21:24.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49804332",
+      "id": "49804332",
+      "headline": "Fantasy football rankings for Week 7: IDP",
+      "summary": "Weekly fantasy football draft rankings for IDP leagues from Mike Clay, Tristan H. Cockcroft and Eric Moody.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804332/nfl-fantasy-football-rankings-2026-idp",
+      "sport": "NFL",
+      "published": "2026-10-25T12:21:05.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804233",
+      "id": "49804233",
+      "headline": "Fantasy football rankings for Week 7: Kicker",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804233/nfl-fantasy-football-rankings-2026-k-kicker",
+      "sport": "NFL",
+      "published": "2026-10-25T12:20:43.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49803708",
+      "id": "49803708",
+      "headline": "Fantasy football flex and superflex rankings for Week 7",
+      "summary": "Trying to decide between a couple of closely ranked players this week? Eric Karabell's rankings are here to help.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49803708/fantasy-football-superflex-rankings-2026-qb-rb-wr-te",
+      "sport": "NFL",
+      "published": "2026-10-25T12:20:04.000Z",
+      "firstSeen": "2026-09-05T00:58:39.682Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50229729",
+      "id": "50229729",
+      "headline": "Fantasy football Week 7 inactives: Mayfield to play, Nacua uncertain, Jackson out",
+      "summary": "Updated inactives and analysis based on the latest reports and official announcements leading up to kickoff.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50229729/fantasy-football-injuries-nfl-week-7-inactive-active",
+      "sport": "NFL",
+      "published": "2026-10-25T12:17:26.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50272352",
+      "id": "50272352",
+      "headline": "Sources: Colts face big decisions on star players as NFL trade deadline looms",
+      "summary": "The Colts are expected to field trade inquiries on some of their star players, including Jonathan Taylor, DeForest Buckner and Quenton Nelson.",
+      "url": "https://www.espn.com/nfl/story/_/id/50272352/sources-decisions-loom-colts-nfl-trade-deadline",
+      "sport": "NFL",
+      "published": "2026-10-25T12:09:46.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50228155",
+      "id": "50228155",
+      "headline": "Fantasy playbook: NFL Week 7 Shadow Reports, lineup locks and projected scores",
+      "summary": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50228155/fantasy-playbook-projections-lineup-locks-week-7-shadow",
+      "sport": "NFL",
+      "published": "2026-10-25T12:08:47.000Z",
+      "firstSeen": "2026-10-22T12:40:51.139Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50275344",
+      "id": "50275344",
+      "headline": "Week 7 NFL highlights: Best plays, moments, touchdowns, more",
+      "summary": "Check here for Sunday's top moments, starting with Aaron Rodgers, Jaylen Warren, Tyler Shough and Alvin Kamara in France.",
+      "url": "https://www.espn.com/nfl/story/_/id/50275344/week-7-sunday-highlights-best-plays-touchdowns-2026",
+      "sport": "NFL",
+      "published": "2026-10-25T12:07:46.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50268018",
+      "id": "50268018",
+      "headline": "Sources: Cam Skattebo expected to resume role as Giants' lead RB vs. Texans",
+      "summary": "Cam Skattebo is expected to return to his role as the Giants' lead running back Sunday against the Texans, sources told NFL Network.",
+      "url": "https://www.espn.com/nfl/story/_/id/50268018/sources-cam-skattebo-expected-giants-lead-rb",
+      "sport": "NFL",
+      "published": "2026-10-25T11:58:35.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50275162",
+      "id": "50275162",
+      "headline": "Rams optimistic that star WR Puka Nacua will play vs. Raiders, source says",
+      "summary": "The Rams are optimistic that star wide receiver Puka Nacua will play Sunday against the Raiders, a source told ESPN.",
+      "url": "https://www.espn.com/nfl/story/_/id/50275162/source-rams-optimistic-puka-nacua-play-vs-raiders",
+      "sport": "NFL",
+      "published": "2026-10-25T11:57:25.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50250699",
+      "id": "50250699",
+      "headline": "NHL Power Rankings: Fantasy hockey pickups for all 32 teams",
+      "summary": "The Hurricanes hang on to the No. 1 spot, with some major jumbles in the poll thereafter.",
+      "url": "https://www.espn.com/nhl/story/_/id/50250699/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings-fantasy-hockey",
+      "sport": "NHL",
+      "published": "2026-10-25T11:38:03.000Z",
+      "firstSeen": "2026-10-23T12:38:27.904Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50220518",
+      "id": "50220518",
+      "headline": "Premier League live updates: Man United face Bournemouth, Liverpool host Brighton",
+      "summary": "Both Liverpool and Manchester United are in Premier League action at the same time as a busy weekend of European soccer continues, with United boss Michael Carrick trying to save his job.",
+      "url": "https://www.espn.com/soccer/story/_/id/50220518/premier-league-live-updates-liverpool-brighton-hove-albion-bournemouth-manchester-united",
+      "sport": "Soccer",
+      "published": "2026-10-25T11:36:52.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 1
+    },
     {
       "key": "50274938",
       "id": "50274938",
@@ -30,9 +239,130 @@
       "summary": "Arsenal, Manchester United and Liverpool are monitoring Bayern Munich forward Lennart Karl. Transfer Talk has the latest.",
       "url": "https://www.espn.com/soccer/story/_/id/50274938/transfer-rumors-news-arsenal-manchester-united-liverpool-track-bayern-munich-star-karl",
       "sport": "Soccer",
-      "published": "2026-10-25T09:18:07.000Z",
+      "published": "2026-10-25T11:35:57.000Z",
       "firstSeen": "2026-10-25T09:27:51.709Z",
       "bestRank": 1
+    },
+    {
+      "key": "50265164",
+      "id": "50265164",
+      "headline": "NHL Tonight: Revenge games aplenty in Sunday's five-pack of matchups",
+      "summary": "Game previews, betting intel, updated stat leaders, highlights and more.",
+      "url": "https://www.espn.com/nhl/story/_/id/50265164/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+      "sport": "NHL",
+      "published": "2026-10-25T11:34:28.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50275489",
+      "id": "50275489",
+      "headline": "Browns DT Maliek Collins lands 2-year extension worth $30 million, agent says",
+      "summary": "The Browns and DT Maliek Collins have agreed to terms on a two-year, $30M extension that includes $23M guaranteed, his agent told ESPN and NFL Network.",
+      "url": "https://www.espn.com/nfl/story/_/id/50275489/browns-maliek-collins-lands-2-year-extension-agent-says",
+      "sport": "NFL",
+      "published": "2026-10-25T11:13:54.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50273430",
+      "id": "50273430",
+      "headline": "World Series Game 2 comeback shows Brewers are inevitable",
+      "summary": "The comeback kids have done it again -- and look on their way to a World Series title.",
+      "url": "https://www.espn.com/mlb/story/_/id/50273430/world-series-game-2-rays-brewers-comeback-inevitable",
+      "sport": "MLB",
+      "published": "2026-10-25T11:10:30.000Z",
+      "firstSeen": "2026-10-25T09:27:51.709Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50274387",
+      "id": "50274387",
+      "headline": "How the 2026 and 1982 Brewers are alike, in style and in spirit",
+      "summary": "With a Robin Yount first pitch and the Brewers winning with old-school baseball, the 2026 World Series feels like a throwback.",
+      "url": "https://www.espn.com/mlb/story/_/id/50274387/milwaukee-brewers-world-series-tim-kurkjian",
+      "sport": "MLB",
+      "published": "2026-10-25T11:08:53.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50260609",
+      "id": "50260609",
+      "headline": "49ers WR Evans, DE Bosa, WR Samuel out vs. Atlanta; WR Kirk may return",
+      "summary": "49ers receivers Mike Evans and Deebo Samuel Sr., and defensive end Nick Bosa are among a half dozen players who have been ruled out for Sunday's game against the Falcons.",
+      "url": "https://www.espn.com/nfl/story/_/id/50260609/49ers-wr-evans-de-bosa-wr-samuel-vs-atlanta-wr-kirk-return",
+      "sport": "NFL",
+      "published": "2026-10-25T11:07:48.000Z",
+      "firstSeen": "2026-10-24T00:57:18.512Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50261945",
+      "id": "50261945",
+      "headline": "What Jackson Chourio, Junior Caminero bring to World Series",
+      "summary": "Two of baseball's brightest stars are shining in the Fall Classic. We go inside their paths to stardom and what they do best.",
+      "url": "https://www.espn.com/mlb/story/_/id/50261945/world-series-jackson-chourio-junior-caminero-young-stars",
+      "sport": "MLB",
+      "published": "2026-10-25T11:07:13.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50260368",
+      "id": "50260368",
+      "headline": "Why Derrick Henry has taken Jets RB Braelon Allen under his wing",
+      "summary": "After Henry saw Allen wearing his shirt in college, he reached out to him, and the two running backs have kept in touch since.",
+      "url": "https://www.espn.com/nfl/story/_/id/50260368/jets-braelon-allen-encouraged-derrick-henry",
+      "sport": "NFL",
+      "published": "2026-10-25T10:35:57.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 19
+    },
+    {
+      "key": "46793185",
+      "id": "46793185",
+      "headline": "2026 World Series odds: Brewers jump to -295 after narrow Game 1 win over Rays",
+      "summary": "Every MLB team's odds to win the 2026 World Series, led by the Dodgers. Milwaukee and Tampa Bay continue to see odds improvement.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/46793185/espn-mlb-betting-odds-futures-bets-world-series-american-national-league",
+      "sport": "MLB",
+      "published": "2026-10-25T10:34:03.000Z",
+      "firstSeen": "2026-08-17T18:29:18.350Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50234491",
+      "id": "50234491",
+      "headline": "How to bet Chiefs-Seahawks: Analysis, tips and top prop plays",
+      "summary": "Odds, bets and analysis to help you bet Kansas City Chiefs at Seattle Seahawks on Sunday night.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50234491/nfl-week-7-odds-betting-tips-chiefs-seahawks-preview",
+      "sport": "NFL",
+      "published": "2026-10-25T10:21:27.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 17
+    },
+    {
+      "key": "50268872",
+      "id": "50268872",
+      "headline": "Valkyries play without regrets, shut down Dream to even WNBA Finals",
+      "summary": "The Valkyries played stellar defense to beat the Dream and even the WNBA Finals at 2-2.",
+      "url": "https://www.espn.com/wnba/story/_/id/50268872/valkyries-even-wnba-finals-defense-shuts-dream",
+      "sport": "WNBA",
+      "published": "2026-10-25T10:02:49.000Z",
+      "firstSeen": "2026-10-24T21:25:44.449Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50239053",
+      "id": "50239053",
+      "headline": "NFL execs, coaches rank the league's top five MVP candidates entering Week 7",
+      "summary": "Brock Purdy? Josh Allen? Or maybe even a non-QB? Sixteen execs and coaches voted on the top five contenders for the MVP award through six weeks.",
+      "url": "https://www.espn.com/nfl/story/_/id/50239053/2026-nfl-season-mvp-early-ranking-watch-list-execs-coaches",
+      "sport": "NFL",
+      "published": "2026-10-25T10:00:01.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 18
     },
     {
       "key": "50274771",
@@ -88,17 +418,6 @@
       "published": "2026-10-25T08:10:55.000Z",
       "firstSeen": "2026-10-25T09:27:51.709Z",
       "bestRank": 5
-    },
-    {
-      "key": "50273430",
-      "id": "50273430",
-      "headline": "World Series Game 2 comeback shows Brewers are inevitable",
-      "summary": "The comeback kids have done it again -- and look on their way to a World Series title.",
-      "url": "https://www.espn.com/mlb/story/_/id/50273430/world-series-game-2-rays-brewers-comeback-inevitable",
-      "sport": "MLB",
-      "published": "2026-10-25T08:08:30.000Z",
-      "firstSeen": "2026-10-25T09:27:51.709Z",
-      "bestRank": 1
     },
     {
       "key": "50273821",
@@ -1320,17 +1639,6 @@
       "published": "2026-10-25T01:22:32.000Z",
       "firstSeen": "2026-10-25T03:35:18.320Z",
       "bestRank": 12
-    },
-    {
-      "key": "50268872",
-      "id": "50268872",
-      "headline": "Valkyries play without regrets, shut down Dream to even WNBA Finals",
-      "summary": "The Valkyries played stellar defense to beat the Dream and even the WNBA Finals at 2-2.",
-      "url": "https://www.espn.com/wnba/story/_/id/50268872/valkyries-even-wnba-finals-defense-shuts-dream",
-      "sport": "WNBA",
-      "published": "2026-10-25T01:21:22.000Z",
-      "firstSeen": "2026-10-24T21:25:44.449Z",
-      "bestRank": 2
     },
     {
       "key": "50272260",
@@ -3005,17 +3313,6 @@
       "bestRank": 3
     },
     {
-      "key": "46793185",
-      "id": "46793185",
-      "headline": "2026 World Series odds: Brewers jump to -295 after narrow Game 1 win over Rays",
-      "summary": "Every MLB team's odds to win the 2026 World Series, led by the Dodgers. Milwaukee and Tampa Bay continue to see odds improvement.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/46793185/espn-mlb-betting-odds-futures-bets-world-series-american-national-league",
-      "sport": "MLB",
-      "published": "2026-10-24T17:20:14.000Z",
-      "firstSeen": "2026-08-17T18:29:18.350Z",
-      "bestRank": 1
-    },
-    {
       "key": "50266897",
       "id": "50266897",
       "headline": "CJ Carr watches brother Tommy's first Michigan start from Big House",
@@ -3148,17 +3445,6 @@
       "bestRank": 1
     },
     {
-      "key": "50228155",
-      "id": "50228155",
-      "headline": "Fantasy playbook: NFL Week 7 Shadow Reports, lineup locks and projected scores",
-      "summary": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50228155/fantasy-playbook-projections-lineup-locks-week-7-shadow",
-      "sport": "NFL",
-      "published": "2026-10-24T15:54:31.000Z",
-      "firstSeen": "2026-10-22T12:40:51.139Z",
-      "bestRank": 1
-    },
-    {
       "key": "50265129",
       "id": "50265129",
       "headline": "Sources: Mississippi State eyes return for QB Taylor, RB Bothwell",
@@ -3192,94 +3478,6 @@
       "bestRank": 1
     },
     {
-      "key": "49803708",
-      "id": "49803708",
-      "headline": "Fantasy football flex and superflex rankings for Week 7",
-      "summary": "Trying to decide between a couple of closely ranked players this week? Eric Karabell's rankings are here to help.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49803708/fantasy-football-superflex-rankings-2026-qb-rb-wr-te",
-      "sport": "NFL",
-      "published": "2026-10-24T15:36:57.000Z",
-      "firstSeen": "2026-09-05T00:58:39.682Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49797082",
-      "id": "49797082",
-      "headline": "Fantasy football rankings Week 7: PPR and superflex",
-      "summary": "Weekly composite ranks for each position in PPR and IDP formats, as well as Eric Karabell's superflex ranks.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26main-49797082/fantasy-football-rankings-2026-qb-rb-wr-te-dst",
-      "sport": "NFL",
-      "published": "2026-10-24T15:35:23.000Z",
-      "firstSeen": "2026-09-04T18:29:30.987Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804149",
-      "id": "49804149",
-      "headline": "Fantasy football rankings for Week 7: Wide receiver",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804149/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
-      "sport": "NFL",
-      "published": "2026-10-24T15:34:59.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804068",
-      "id": "49804068",
-      "headline": "Fantasy football rankings for Week 7: Running back",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804068/nfl-fantasy-football-rankings-2026-rb-running-back",
-      "sport": "NFL",
-      "published": "2026-10-24T15:34:34.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49804273",
-      "id": "49804273",
-      "headline": "Fantasy football rankings for Week 7: D/ST",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804273/nfl-fantasy-football-rankings-2026-dst-defense",
-      "sport": "NFL",
-      "published": "2026-10-24T15:34:10.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49804022",
-      "id": "49804022",
-      "headline": "Fantasy football rankings for Week 7: Quarterback",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804022/nfl-fantasy-football-rankings-2026-qb-quarterback",
-      "sport": "NFL",
-      "published": "2026-10-24T15:33:45.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49804164",
-      "id": "49804164",
-      "headline": "Fantasy football rankings for Week 7: Tight end",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804164/nfl-fantasy-football-rankings-2026-te-tight-end",
-      "sport": "NFL",
-      "published": "2026-10-24T15:33:27.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 2
-    },
-    {
-      "key": "49804233",
-      "id": "49804233",
-      "headline": "Fantasy football rankings for Week 7: Kicker",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804233/nfl-fantasy-football-rankings-2026-k-kicker",
-      "sport": "NFL",
-      "published": "2026-10-24T15:33:05.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
       "key": "50262387",
       "id": "50262387",
       "headline": "Patriots must improve turnover differential if they want to win, other notes",
@@ -3288,17 +3486,6 @@
       "sport": "NFL",
       "published": "2026-10-24T15:32:24.000Z",
       "firstSeen": "2026-10-24T15:25:35.043Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804332",
-      "id": "49804332",
-      "headline": "Fantasy football rankings for Week 7: IDP",
-      "summary": "Weekly fantasy football draft rankings for IDP leagues from Mike Clay, Tristan H. Cockcroft and Eric Moody.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804332/nfl-fantasy-football-rankings-2026-idp",
-      "sport": "NFL",
-      "published": "2026-10-24T15:32:18.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
       "bestRank": 1
     },
     {
@@ -4400,17 +4587,6 @@
       "published": "2026-10-24T01:10:37.000Z",
       "firstSeen": "2026-10-24T03:32:32.246Z",
       "bestRank": 11
-    },
-    {
-      "key": "50260609",
-      "id": "50260609",
-      "headline": "49ers WR Evans, DE Bosa, WR Samuel out vs. Atlanta; WR Kirk may return",
-      "summary": "49ers receivers Mike Evans and Deebo Samuel Sr., and defensive end Nick Bosa are among a half dozen players who have been ruled out for Sunday's game against the Falcons.",
-      "url": "https://www.espn.com/nfl/story/_/id/50260609/49ers-wr-evans-de-bosa-wr-samuel-vs-atlanta-wr-kirk-return",
-      "sport": "NFL",
-      "published": "2026-10-24T01:07:00.000Z",
-      "firstSeen": "2026-10-24T00:57:18.512Z",
-      "bestRank": 8
     },
     {
       "key": "50261278",
@@ -6028,17 +6204,6 @@
       "published": "2026-10-23T10:00:00.000Z",
       "firstSeen": "2026-10-23T12:38:27.904Z",
       "bestRank": 10
-    },
-    {
-      "key": "50250699",
-      "id": "50250699",
-      "headline": "NHL Power Rankings: Fantasy hockey pickups for all 32 teams",
-      "summary": "The Hurricanes hang on to the No. 1 spot, with some major jumbles in the poll thereafter.",
-      "url": "https://www.espn.com/nhl/story/_/id/50250699/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings-fantasy-hockey",
-      "sport": "NHL",
-      "published": "2026-10-23T09:43:40.000Z",
-      "firstSeen": "2026-10-23T12:38:27.904Z",
-      "bestRank": 1
     },
     {
       "key": "50249518",
@@ -45616,149 +45781,6 @@
       "sport": "College football",
       "published": "2026-10-04T12:38:48.000Z",
       "firstSeen": "2026-10-04T14:13:49.532Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50099392",
-      "id": "50099392",
-      "headline": "Brewers edge Padres 3-2 in NLDS opener that features bizarre play in 9th inning",
-      "summary": "— William Contreras hit a tiebreaking homer in the seventh inning and the Milwaukee Brewers hung on to beat San Diego 3-2 in their NL Division Series opener Saturday night after a potential...",
-      "url": "http://www.espn.com/mlb/recap?gameId=401908002",
-      "sport": "MLB",
-      "published": "2026-10-04T12:19:11.000Z",
-      "firstSeen": "2026-10-04T14:13:49.532Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50099390",
-      "id": "50099390",
-      "headline": "Rasmussen has no-hit bid for 7 2/3 innings, Rays open AL Division Series with a 1-0 win over Yanks",
-      "summary": "— Drew Rasmussen walked into the interview room while manager Kevin Cash was showering him with praise.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401907985",
-      "sport": "MLB",
-      "published": "2026-10-04T12:18:08.000Z",
-      "firstSeen": "2026-10-04T14:13:49.532Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50099367",
-      "id": "50099367",
-      "headline": "Minchey rallies No. 24 Kentucky to 35-34 OT win at South Caroilna",
-      "summary": "— Kenny Minchey threw a 6-yard TD pass to Henry Boyer and a 2-point conversion to Willie Rodriguez as No. 24 Kentucky rallied from 17-0 down to beat South Carolina 35-34 in overtime on Saturday.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856709",
-      "sport": "College football",
-      "published": "2026-10-04T12:12:07.000Z",
-      "firstSeen": "2026-10-04T14:13:49.532Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49971200",
-      "id": "49971200",
-      "headline": "Bahrain Grand Prix in Malaysia 2026: Race start time, how to watch, full schedule, predictions",
-      "summary": "Next up on the calendar is the Bahrain Grand Prix, but there's a quirk -- the 16th round of the season is actually taking place almost 4,000 miles away in Malaysia.",
-      "url": "https://www.espn.com/f1/story/_/id/49971200/bahrain-grand-prix-malaysia-2026-circuit-sepang-race-f1-start-s-how-watch-schedule-usa-tv-channel-live-stream-predictions-results",
-      "sport": "F1",
-      "published": "2026-10-04T12:07:49.000Z",
-      "firstSeen": "2026-09-27T15:26:02.354Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50099306",
-      "id": "50099306",
-      "headline": "Julian Sayin, Jeremiah Smith lead No. 5 Ohio State past No. 14 Iowa, 31-14",
-      "summary": "— Julian Sayin threw for 324 yards and three touchdowns, two to Jeremiah Smith, and No. 5 Ohio State beat No. 14 Iowa 31-14 on Saturday.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858473",
-      "sport": "College football",
-      "published": "2026-10-04T12:02:46.000Z",
-      "firstSeen": "2026-10-04T14:13:49.532Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50099277",
-      "id": "50099277",
-      "headline": "Stockton throws 3 TDs as No. 2 Georgia rolls past Vanderbilt 38-14 and improves to 5-0",
-      "summary": "— Gunner Stockton threw for 295 yards and three touchdowns as No. 2 Georgia cruised to a 38-14 win over Vanderbilt on Saturday.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856705",
-      "sport": "College football",
-      "published": "2026-10-04T12:00:43.000Z",
-      "firstSeen": "2026-10-04T14:13:49.532Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50099264",
-      "id": "50099264",
-      "headline": "Kevin Jennings accounts for 3 TDs as No. 21 SMU holds off Boston College 25-16",
-      "summary": "— Kevin Jennings threw for two touchdowns and ran for a score and No. 21 SMU beat Boston College 25-16 in a soggy defensive struggle Saturday.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858246",
-      "sport": "College football",
-      "published": "2026-10-04T11:57:17.000Z",
-      "firstSeen": "2026-10-04T14:13:49.532Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50090503",
-      "id": "50090503",
-      "headline": "2026 MLB division series Day 1: Takeaways, analysis",
-      "summary": "All eight teams are in action Saturday, with two games down and two to go. Which clubs will come out strong?",
-      "url": "https://www.espn.com/mlb/story/_/id/50090503/2026-mlb-division-series-day-1-updates-lineups-analysis",
-      "sport": "MLB",
-      "published": "2026-10-04T11:21:41.000Z",
-      "firstSeen": "2026-10-03T16:40:05.669Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50075933",
-      "id": "50075933",
-      "headline": "Bahrain Grand Prix in Malaysia result: Max Verstappen takes first victory of the season after chaotic race - as it happened",
-      "summary": "Max Verstappen has put himself in prime position to target his first win of the season at the Bahrain Grand Prix in Malaysia.",
-      "url": "https://www.espn.com/f1/story/_/id/50075933/bahrain-grand-prix-malaysia-2026-live-updates-results-analysis-commentary",
-      "sport": "F1",
-      "published": "2026-10-04T11:19:21.000Z",
-      "firstSeen": "2026-10-04T14:13:49.532Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50074961",
-      "id": "50074961",
-      "headline": "Bahrain GP in Malaysia: George Russell suffers major title blow after race retirement",
-      "summary": "George Russell's title chances took a critical blow at the Bahrain Grand Prix in Malaysia after he retired from the race under a Safety Car with five laps remaining.",
-      "url": "https://www.espn.com/f1/story/_/id/50074961/bahrain-gp-george-russell-malaysia-sepang-formula-1",
-      "sport": "F1",
-      "published": "2026-10-04T11:09:58.000Z",
-      "firstSeen": "2026-10-04T16:50:40.561Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50053980",
-      "id": "50053980",
-      "headline": "How to bet Lions-Panthers on 'SNF': Analysis, tips and top prop plays",
-      "summary": "Odds, bets and analysis to help you bet Lions-Panthers on \"Sunday Night Football.\"",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50053980/nfl-week-4-odds-betting-tips-picks-detroit-lions-carolina-panthers",
-      "sport": "NFL",
-      "published": "2026-10-04T10:38:39.000Z",
-      "firstSeen": "2026-10-04T11:05:06.083Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50080901",
-      "id": "50080901",
-      "headline": "What are the top 10 upsets in Super Bowl history?",
-      "summary": "What are the biggest upsets in Super Bowl history? The Patriots, Jets, Giants, Eagles, Seahawks and others make their cases.",
-      "url": "https://www.espn.com/nfl/story/_/id/50080901/super-bowl-top-10-upsets-patriots-jets-giants",
-      "sport": "NFL",
-      "published": "2026-10-04T10:00:15.000Z",
-      "firstSeen": "2026-10-04T11:05:06.083Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50086456",
-      "id": "50086456",
-      "headline": "Jets rookie Kenyon Sadiq has been a necessity instead of a 'luxury' draft pick",
-      "summary": "New York used its second (No. 16) of three first-round picks on the tight end out of Oregon.",
-      "url": "https://www.espn.com/nfl/story/_/id/50086456/jets-rookie-kenyon-sadiq-necessity-not-luxury",
-      "sport": "NFL",
-      "published": "2026-10-04T10:00:11.000Z",
-      "firstSeen": "2026-10-04T11:05:06.083Z",
       "bestRank": 2
     }
   ]
