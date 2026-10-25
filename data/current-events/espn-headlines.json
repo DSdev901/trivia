@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-25T06:41:01.208Z",
+  "generatedAt": "2026-10-25T09:27:51.709Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-04T06:41:01.208Z",
-  "windowEnd": "2026-10-25T06:41:01.208Z",
+  "windowStart": "2026-10-04T09:27:51.709Z",
+  "windowEnd": "2026-10-25T09:27:51.709Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -24,26 +24,114 @@
   "count": 4158,
   "items": [
     {
+      "key": "50274938",
+      "id": "50274938",
+      "headline": "Transfer rumors, news: Arsenal, Man United, Liverpool track Bayern star Karl",
+      "summary": "Arsenal, Manchester United and Liverpool are monitoring Bayern Munich forward Lennart Karl. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/50274938/transfer-rumors-news-arsenal-manchester-united-liverpool-track-bayern-munich-star-karl",
+      "sport": "Soccer",
+      "published": "2026-10-25T09:18:07.000Z",
+      "firstSeen": "2026-10-25T09:27:51.709Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50274771",
+      "id": "50274771",
+      "headline": "Toronto visits Calgary after Nylander's 2-goal game",
+      "summary": "Toronto Maple Leafs (7-4-2, in the Atlantic Division) vs. Calgary Flames (4-6, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892583",
+      "sport": "NHL",
+      "published": "2026-10-25T08:11:46.000Z",
+      "firstSeen": "2026-10-25T09:27:51.709Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50274768",
+      "id": "50274768",
+      "headline": "Wild visit the Canucks after Coleman's 2-goal game",
+      "summary": "Minnesota Wild (7-3-2, in the Central Division) vs. Vancouver Canucks (2-9-1, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892581",
+      "sport": "NHL",
+      "published": "2026-10-25T08:10:58.000Z",
+      "firstSeen": "2026-10-25T09:27:51.709Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50274767",
+      "id": "50274767",
+      "headline": "Nashville hosts Colorado in Central Division play",
+      "summary": "Colorado Avalanche (6-4-1, in the Central Division) vs. Nashville Predators (3-3-4, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892580",
+      "sport": "NHL",
+      "published": "2026-10-25T08:10:57.000Z",
+      "firstSeen": "2026-10-25T09:27:51.709Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50274766",
+      "id": "50274766",
+      "headline": "Rangers try to extend home win streak, face the Kings",
+      "summary": "Los Angeles Kings (2-5-2, in the Pacific Division) vs. New York Rangers (7-5-1, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892582",
+      "sport": "NHL",
+      "published": "2026-10-25T08:10:56.000Z",
+      "firstSeen": "2026-10-25T09:27:51.709Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50274765",
+      "id": "50274765",
+      "headline": "Oilers play the Red Wings following Draisaitl's 2-goal game",
+      "summary": "Detroit Red Wings (4-4-3, in the Atlantic Division) vs. Edmonton Oilers (8-2-1, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892584",
+      "sport": "NHL",
+      "published": "2026-10-25T08:10:55.000Z",
+      "firstSeen": "2026-10-25T09:27:51.709Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50273430",
+      "id": "50273430",
+      "headline": "World Series Game 2 comeback shows Brewers are inevitable",
+      "summary": "The comeback kids have done it again -- and look on their way to a World Series title.",
+      "url": "https://www.espn.com/mlb/story/_/id/50273430/world-series-game-2-rays-brewers-comeback-inevitable",
+      "sport": "MLB",
+      "published": "2026-10-25T08:08:30.000Z",
+      "firstSeen": "2026-10-25T09:27:51.709Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50273821",
+      "id": "50273821",
+      "headline": "Brewers rally vs. Rays in Game 2 to take 2-0 lead in World Series",
+      "summary": "The Brewers rallied from a 4-0 deficit in the first inning to beat the Rays 5-4 in Game 2 on Saturday and take a 2-0 lead in the World Series.",
+      "url": "https://www.espn.com/mlb/story/_/id/50273821/brewers-rally-vs-rays-game-2-take-2-0-world-series-lead",
+      "sport": "MLB",
+      "published": "2026-10-25T07:47:20.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 2
+    },
+    {
       "key": "50273796",
       "id": "50273796",
       "headline": "Sarkisian lauds 'edgy' Arch Manning after Texas holds off Ole Miss",
       "summary": "No. 19 Texas pulled out a wild victory over No. 7 Ole Miss after blowing a 21-point lead in the second half Saturday night.",
       "url": "https://www.espn.com/college-football/story/_/id/50273796/texas-manning-hold-ole-miss-rally-snap-two-game-skid",
       "sport": "College football",
-      "published": "2026-10-25T06:38:46.000Z",
+      "published": "2026-10-25T07:33:06.000Z",
       "firstSeen": "2026-10-25T06:41:01.208Z",
       "bestRank": 7
     },
     {
-      "key": "50270000",
-      "id": "50270000",
-      "headline": "Upsets and chaos reign supreme in college football's Week 8",
-      "summary": "With more top-ranked teams losing, college football continues to be unpredictable in 2026.",
-      "url": "https://www.espn.com/college-football/story/_/page/gamedayfinal102426/week-8-top-games-highlights-takeaways",
-      "sport": "College football",
-      "published": "2026-10-25T06:29:40.000Z",
-      "firstSeen": "2026-10-25T06:41:01.208Z",
-      "bestRank": 3
+      "key": "50274657",
+      "id": "50274657",
+      "headline": "Katerina Siniakova breezes past Ashlyn Krueger to win Japan Open",
+      "summary": "Katerina Siniakova defeated Ashlyn Kreuger 6-1, 6-0 to win the Japan Open on Sunday, her first singles title in three years.",
+      "url": "https://www.espn.com/tennis/story/_/id/50274657/katerina-siniakova-routs-ashlyn-krueger-win-japan-open",
+      "sport": "Tennis",
+      "published": "2026-10-25T07:23:19.000Z",
+      "firstSeen": "2026-10-25T09:27:51.709Z",
+      "bestRank": 1
     },
     {
       "key": "50268049",
@@ -52,20 +140,53 @@
       "summary": "We assess how the selection committee could stack the top teams in the country after Week 8.",
       "url": "https://www.espn.com/college-football/story/_/id/50268049/projecting-2026-playoff-top-12-week-8-cfp",
       "sport": "College football",
-      "published": "2026-10-25T06:23:34.000Z",
+      "published": "2026-10-25T07:13:20.000Z",
       "firstSeen": "2026-10-25T06:41:01.208Z",
       "bestRank": 4
+    },
+    {
+      "key": "50274638",
+      "id": "50274638",
+      "headline": "Indiana travels to Brooklyn for conference matchup",
+      "summary": "Indiana Pacers (1-1, ninth in the Eastern Conference) vs. Brooklyn Nets (0-2, 13th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909862",
+      "sport": "NBA",
+      "published": "2026-10-25T07:02:46.000Z",
+      "firstSeen": "2026-10-25T09:27:51.709Z",
+      "bestRank": 1
     },
     {
       "key": "50274522",
       "id": "50274522",
       "headline": "Dampier runs wild, No. 10 Utah holds off No. 14 Houston 21-13 to remain undefeated",
-      "summary": "— Devon Dampier ran for 152 yards and two touchdowns and No. 10 Utah held off No. 14 Houston 21-13 on Saturday night to keep the Utes among the dwindling unbeatens.",
+      "summary": "— Devon Dampier ran for 150 yards and two touchdowns and No. 10 Utah held off No. 14 Houston 21-13 on Saturday night to keep the Utes among the dwindling unbeatens.",
       "url": "http://www.espn.com/ncf/recap?gameId=401856837",
       "sport": "College football",
-      "published": "2026-10-25T06:13:47.000Z",
+      "published": "2026-10-25T06:55:46.000Z",
       "firstSeen": "2026-10-25T06:41:01.208Z",
       "bestRank": 1
+    },
+    {
+      "key": "50270000",
+      "id": "50270000",
+      "headline": "Upsets and chaos reign supreme in college football's Week 8",
+      "summary": "With more top-ranked teams losing, college football continues to be unpredictable in 2026.",
+      "url": "https://www.espn.com/college-football/story/_/page/gamedayfinal102426/week-8-top-games-highlights-takeaways",
+      "sport": "College football",
+      "published": "2026-10-25T06:44:11.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50273781",
+      "id": "50273781",
+      "headline": "Frelick, Pratt lift Brewers to 5-4 comeback win over Rays and 2-0 World Series lead",
+      "summary": "— Sal Frelick tied the score with his first home run in three months, Cooper Pratt hit a go-ahead single in the seventh inning and the Milwaukee Brewers stunned the Tampa Bay Rays 5-4 on Saturday night for a 2-0 World Series lead by overcoming a...",
+      "url": "http://www.espn.com/mlb/recap?gameId=401908043",
+      "sport": "MLB",
+      "published": "2026-10-25T06:39:46.000Z",
+      "firstSeen": "2026-10-25T06:41:01.208Z",
+      "bestRank": 3
     },
     {
       "key": "50274514",
@@ -310,17 +431,6 @@
       "bestRank": 10
     },
     {
-      "key": "50273821",
-      "id": "50273821",
-      "headline": "Brewers rally vs. Rays in Game 2 to take 2-0 lead in World Series",
-      "summary": "The Brewers rallied from a 4-0 deficit in the first inning to beat the Rays 5-4 in Game 2 on Saturday and take a 2-0 lead in the World Series.",
-      "url": "https://www.espn.com/mlb/story/_/id/50273821/brewers-rally-vs-rays-game-2-take-2-0-world-series-lead",
-      "sport": "MLB",
-      "published": "2026-10-25T04:56:11.000Z",
-      "firstSeen": "2026-10-25T06:41:01.208Z",
-      "bestRank": 2
-    },
-    {
       "key": "50274161",
       "id": "50274161",
       "headline": "Detroit Red Wings vs. Calgary Flames: Game Highlights",
@@ -352,17 +462,6 @@
       "published": "2026-10-25T04:45:35.000Z",
       "firstSeen": "2026-10-25T01:03:33.341Z",
       "bestRank": 11
-    },
-    {
-      "key": "50273781",
-      "id": "50273781",
-      "headline": "Frelick, Pratt lift Brewers to 5-4 comeback win over Rays and 2-0 World Series lead",
-      "summary": "— Sal Frelick tied the score with his first home run in three months, Cooper Pratt hit a go-ahead single in the seventh inning and the Milwaukee Brewers stunned the Tampa Bay Rays 5-4 on Saturday night for a 2-0 World Series lead by overcoming a...",
-      "url": "http://www.espn.com/mlb/recap?gameId=401908043",
-      "sport": "MLB",
-      "published": "2026-10-25T04:42:46.000Z",
-      "firstSeen": "2026-10-25T06:41:01.208Z",
-      "bestRank": 3
     },
     {
       "key": "50274066",
@@ -45661,105 +45760,6 @@
       "published": "2026-10-04T10:00:11.000Z",
       "firstSeen": "2026-10-04T11:05:06.083Z",
       "bestRank": 2
-    },
-    {
-      "key": "50098546",
-      "id": "50098546",
-      "headline": "AFC to introduce Nations League in shake-up of World Cup, Asian Cup qualification",
-      "summary": "The Asian Football Confederation is set to introduce a Nations League competition, which will affect the qualification process for the World Cup and Asian Cup.",
-      "url": "https://www.espn.com/soccer/story/_/id/50098546/afc-introduce-nations-league-shake-world-cup-asian-cup-qualification",
-      "sport": "Soccer",
-      "published": "2026-10-04T09:18:33.000Z",
-      "firstSeen": "2026-10-04T11:05:06.083Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50098301",
-      "id": "50098301",
-      "headline": "Utah visits New York after Schmaltz's 2-goal game",
-      "summary": "Utah Mammoth (2-0, in the Central Division) vs. New York Rangers (2-1, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892443",
-      "sport": "NHL",
-      "published": "2026-10-04T08:11:43.000Z",
-      "firstSeen": "2026-10-04T11:05:06.083Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50098300",
-      "id": "50098300",
-      "headline": "Senators visit the Bruins in Atlantic Division action",
-      "summary": "Ottawa Senators (1-0, in the Atlantic Division) vs. Boston Bruins (2-1, in the Atlantic Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892446",
-      "sport": "NHL",
-      "published": "2026-10-04T08:11:39.000Z",
-      "firstSeen": "2026-10-04T11:05:06.083Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50098299",
-      "id": "50098299",
-      "headline": "Sharks in action against the Stars after overtime victory",
-      "summary": "San Jose Sharks (2-0, in the Pacific Division) vs. Dallas Stars (0-2, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892448",
-      "sport": "NHL",
-      "published": "2026-10-04T08:11:36.000Z",
-      "firstSeen": "2026-10-04T11:05:06.083Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50098298",
-      "id": "50098298",
-      "headline": "Pacific Division opponents meet when Seattle hosts Calgary",
-      "summary": "Calgary Flames (0-2, in the Pacific Division) vs. Seattle Kraken (1-1, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401891824",
-      "sport": "NHL",
-      "published": "2026-10-04T08:11:33.000Z",
-      "firstSeen": "2026-10-04T11:05:06.083Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50098297",
-      "id": "50098297",
-      "headline": "Flyers take 3-game losing streak into matchup with the Lightning",
-      "summary": "Philadelphia Flyers (0-1-2, in the Metropolitan Division) vs. Tampa Bay Lightning (1-1, in the Atlantic Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892445",
-      "sport": "NHL",
-      "published": "2026-10-04T08:11:29.000Z",
-      "firstSeen": "2026-10-04T11:05:06.083Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50098275",
-      "id": "50098275",
-      "headline": "Brewers lead Padres 1-0 heading into NLDS Game 2",
-      "summary": "San Diego Padres (91-71, second in the NL West during the regular season) vs. Milwaukee Brewers (103-59, first in the NL Central during the regular season)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401908003",
-      "sport": "MLB",
-      "published": "2026-10-04T08:02:30.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50097866",
-      "id": "50097866",
-      "headline": "Lagway throws 4 TD passes to lead visiting Baylor to a 55-19 rout of Arizona State",
-      "summary": "— DJ Lagway threw for 306 yards and four touchdowns to lead Baylor to a 55-19 rout of Arizona State on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856817",
-      "sport": "College football",
-      "published": "2026-10-04T07:59:29.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50098143",
-      "id": "50098143",
-      "headline": "Weaver throws 2 TD passes, San Jose State wins 6th straight against Hawaii, 20-16",
-      "summary": "— Luke Weaver was 19-of-28 passing for 246 yards and two touchdowns with no interceptions and San Jose State beat Hawaii 20-16 on Saturday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401864513",
-      "sport": "College football",
-      "published": "2026-10-04T07:35:29.000Z",
-      "firstSeen": "2026-10-04T08:22:49.172Z",
-      "bestRank": 1
     }
   ]
 }
