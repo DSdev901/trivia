@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-26T14:06:18.685Z",
+  "generatedAt": "2026-10-26T15:41:58.901Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-05T14:06:18.685Z",
-  "windowEnd": "2026-10-26T14:06:18.685Z",
+  "windowStart": "2026-10-05T15:41:58.901Z",
+  "windowEnd": "2026-10-26T15:41:58.901Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,17 +21,391 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4182,
+  "count": 4195,
   "items": [
+    {
+      "key": "50287910",
+      "id": "50287910",
+      "headline": "Did Arch Manning prove the doubters wrong?",
+      "summary": "Did Arch Manning prove the doubters wrong?",
+      "url": "https://www.espn.com/video/clip/_/id/50287910/did-arch-manning-prove-doubters-wrong",
+      "sport": "College football",
+      "published": "2026-10-26T15:39:29.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50274387",
+      "id": "50274387",
+      "headline": "How the 2026 and 1982 Brewers are alike, in style and in spirit",
+      "summary": "With a Robin Yount first pitch and the Brewers winning with old-school baseball, the 2026 World Series feels like a throwback.",
+      "url": "https://www.espn.com/mlb/story/_/id/50274387/milwaukee-brewers-world-series-tim-kurkjian",
+      "sport": "MLB",
+      "published": "2026-10-26T15:37:56.000Z",
+      "firstSeen": "2026-10-25T12:35:37.579Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50278475",
+      "id": "50278475",
+      "headline": "Connelly on Week 8: Who in college football can -- and can't -- be trusted",
+      "summary": "After another round of unexpected results, Bill Connelly tries to makes sense of what we just saw.",
+      "url": "https://www.espn.com/college-football/story/_/id/50278475/connelly-college-football-week-8-texas",
+      "sport": "College football",
+      "published": "2026-10-26T15:36:16.000Z",
+      "firstSeen": "2026-10-25T21:25:15.200Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50287797",
+      "id": "50287797",
+      "headline": "Man United head coach Michael Carrick arrives at Carrington amid doubts over his future",
+      "summary": "Under-fire head coach Michael Carrick has arrived at Carrington after Manchester United chief executive Omar Berrada and director of football Jason Wilcox held talks over his future.",
+      "url": "https://www.espn.com/soccer/story/_/id/50287797/man-united-michael-carrick-pressure-carrington-omar-berrada-jason-wilcox",
+      "sport": "Soccer",
+      "published": "2026-10-26T15:33:32.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50287898",
+      "id": "50287898",
+      "headline": "MLB tests out restricted OF shifts in effort to up offense",
+      "summary": "Major League Baseball, in an effort to boost offense, is testing out limited outfield shifts during this year's Arizona Fall League, as players consult a videoboard to see if they are properly positioned.",
+      "url": "https://www.espn.com/mlb/story/_/id/50287898/mlb-tests-restricted-shifts-effort-offense",
+      "sport": "MLB",
+      "published": "2026-10-26T15:33:03.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50176202",
+      "id": "50176202",
+      "headline": "WNBA Finals 2026: Valkyries vs. Dream schedule, scores, more",
+      "summary": "A new champion is guaranteed to be crowned this season as Golden State and Atlanta meet in the WNBA Finals.",
+      "url": "https://www.espn.com/wnba/story/_/id/50176202/2026-wnba-finals-valkyries-dream-schedule-scores-news",
+      "sport": "WNBA",
+      "published": "2026-10-26T15:31:53.000Z",
+      "firstSeen": "2026-10-13T21:24:40.321Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50287876",
+      "id": "50287876",
+      "headline": "Florida's Sumrall won't name Philo or Jones as QB1 until later in week",
+      "summary": "Florida quarterbacks Aaron Philo and Tramell Jones Jr. both took first-team reps in Monday's practice, but Gators coach Jon Sumrall says he won't name a starter until later in the week",
+      "url": "https://www.espn.com/college-football/story/_/id/50287876/florida-name-philo-jones-qb1-later-week",
+      "sport": "College football",
+      "published": "2026-10-26T15:31:44.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50287807",
+      "id": "50287807",
+      "headline": "Stephen A. lays into Michael Irvin for saying Cowboys' season on the line on MNF",
+      "summary": "Stephen A. lays into Michael Irvin for saying Cowboys' season on the line on MNF",
+      "url": "https://www.espn.com/video/clip/_/id/50287807/stephen-lays-michael-irvin-saying-cowboys-season-line-mnf",
+      "sport": "NFL",
+      "published": "2026-10-26T15:31:20.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50287741",
+      "id": "50287741",
+      "headline": "Stephen A. calls out Dan Orlovsky for his take during this Ravens debate",
+      "summary": "Stephen A. calls out Dan Orlovsky for his take during this Ravens debate",
+      "url": "https://www.espn.com/video/clip/_/id/50287741/stephen-calls-dan-orlovsky-take-ravens-debate",
+      "sport": "NFL",
+      "published": "2026-10-26T15:27:07.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50287706",
+      "id": "50287706",
+      "headline": "What to make of the Giants' backfield situation",
+      "summary": "What to make of the Giants' backfield situation",
+      "url": "https://www.espn.com/video/clip/_/id/50287706/what-make-giants-backfield-situation",
+      "sport": "NFL",
+      "published": "2026-10-26T15:25:50.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50287522",
+      "id": "50287522",
+      "headline": "Aaron Rodgers suggests full week of international games, jabs at NFL owners",
+      "summary": "Aaron Rodgers advocated for the NFL to schedule a full week of international games and also jabbed at owners, hinting that they pay lip service to player safety.",
+      "url": "https://www.espn.com/nfl/story/_/id/50287522/aaron-rodgers-suggests-full-week-nfl-international-games",
+      "sport": "NFL",
+      "published": "2026-10-26T15:24:48.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50286135",
+      "id": "50286135",
+      "headline": "Fantasy football free agent pickups: Malik Willis, Jonah Coleman lead top options",
+      "summary": "Eric Karabell lists who he thinks are the top available players worth adding for the week ahead.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50286135/fantasy-football-waivers-free-agent-pickups-nfl-week-8",
+      "sport": "NFL",
+      "published": "2026-10-26T15:23:14.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50287717",
+      "id": "50287717",
+      "headline": "Is Courtland Sutton back on the flex radar?",
+      "summary": "Is Courtland Sutton back on the flex radar?",
+      "url": "https://www.espn.com/video/clip/_/id/50287717/is-courtland-sutton-back-flex-radar",
+      "sport": "NFL",
+      "published": "2026-10-26T15:22:51.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50287661",
+      "id": "50287661",
+      "headline": "Why Field Yates is monitoring Rico Dowdle's fantasy value",
+      "summary": "Why Field Yates is monitoring Rico Dowdle's fantasy value",
+      "url": "https://www.espn.com/video/clip/_/id/50287661/why-field-yates-monitoring-rico-dowdle-fantasy-value",
+      "sport": "NFL",
+      "published": "2026-10-26T15:15:04.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50273529",
+      "id": "50273529",
+      "headline": "What we've learned about Rays, Brewers early in World Series",
+      "summary": "With the World Series shifting to Tampa Bay, we break down what we've seen so far -- and what to expect from here.",
+      "url": "https://www.espn.com/mlb/story/_/id/50273529/world-series-brewers-rays-early-lessons",
+      "sport": "MLB",
+      "published": "2026-10-26T15:13:01.000Z",
+      "firstSeen": "2026-10-26T14:06:18.685Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50214006",
+      "id": "50214006",
+      "headline": "Breaking down the women's 2026-27 AP preseason Top 25 basketball poll",
+      "summary": "The first poll of the 2026-27 season is here. We look at the projected starters and biggest game for each team.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50214006/ap-preseason-womens-top-25-poll-reaction-2026-27",
+      "sport": "Women's college basketball",
+      "published": "2026-10-26T15:12:32.000Z",
+      "firstSeen": "2026-10-20T21:28:05.035Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50287614",
+      "id": "50287614",
+      "headline": "Is Chase Brown still a starting fantasy RB?",
+      "summary": "Is Chase Brown still a starting fantasy RB?",
+      "url": "https://www.espn.com/video/clip/_/id/50287614/is-chase-brown-starting-fantasy-rb",
+      "sport": "NFL",
+      "published": "2026-10-26T15:12:04.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50287441",
+      "id": "50287441",
+      "headline": "15-year-old arrested in shooting that injured 11 at Florida A&M homecoming game",
+      "summary": "A 15-year-old boy has been charged in Saturday's shooting that wounded 11 people at Florida A&M following the school's homecoming football game.",
+      "url": "https://www.espn.com/college-football/story/_/id/50287441/15-year-old-arrested-shooting-florida-homecoming-game",
+      "sport": "College football",
+      "published": "2026-10-26T15:11:54.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50278093",
+      "id": "50278093",
+      "headline": "Sizing up NFL Week 7: Time to trust the Giants? Start Mendoza? Worry about Henry?",
+      "summary": "Let's make sense of six takeaways from Sunday and spin them forward. Just how good is the Vikings' defense? What's wrong with the Ravens' run game? Are the Giants legit?",
+      "url": "https://www.espn.com/nfl/story/_/id/50278093/week-7-barnwell-vikings-texans-giants-jets-raiders-ravens",
+      "sport": "NFL",
+      "published": "2026-10-26T15:08:17.000Z",
+      "firstSeen": "2026-10-26T14:06:18.685Z",
+      "bestRank": 7
+    },
+    {
+      "key": "40699880",
+      "id": "40699880",
+      "headline": "Fantasy football buzz: Who got the ball on Sunday?",
+      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "sport": "NFL",
+      "published": "2026-10-26T15:07:11.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50286242",
+      "id": "50286242",
+      "headline": "WNBA games today: Dream-Valkyries time, where to watch",
+      "summary": "Here's what to know about Monday's WNBA Finals schedule.",
+      "url": "https://www.espn.com/wnba/story/_/id/50286242/wnba-games-today-dream-valkyries-watch-oct-26",
+      "sport": "WNBA",
+      "published": "2026-10-26T15:02:35.000Z",
+      "firstSeen": "2026-10-26T14:06:18.685Z",
+      "bestRank": 1
+    },
     {
       "key": "50287123",
       "id": "50287123",
       "headline": "Sources: Packers LB Zaire Franklin has hairline fracture in leg",
-      "summary": "Packers linebacker Zaire Franklin has a hairline fracture in his leg and center Sean Rhyan is believed to have a high-ankle sprain, sources told NFL Network's Ian Rapoport.",
+      "summary": "Packers linebacker Zaire Franklin has a hairline fracture in his leg and center Sean Rhyan is believed to have a high ankle sprain, sources told NFL Network's Ian Rapoport.",
       "url": "https://www.espn.com/nfl/story/_/id/50287123/sources-packers-zaire-franklin-hairline-fracture-leg",
       "sport": "NFL",
-      "published": "2026-10-26T13:57:10.000Z",
+      "published": "2026-10-26T14:56:26.000Z",
       "firstSeen": "2026-10-26T14:06:18.685Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50287279",
+      "id": "50287279",
+      "headline": "Man United are in crisis (again), but where are the Glazers?",
+      "summary": "Manchester United are in crisis -- again -- and the people with ultimate control of one of the world's most historic soccer clubs are nowhere to be seen.",
+      "url": "https://www.espn.com/soccer/story/_/id/50287279/man-united-crisis-again-where-glazers",
+      "sport": "Soccer",
+      "published": "2026-10-26T14:55:36.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50028196",
+      "id": "50028196",
+      "headline": "NBA buzz: Latest on trades, news, roster moves and intel",
+      "summary": "NBA basketball is back. The buzz never left. Bookmark this page for the latest news, rumblings and analysis from ESPN's insiders.",
+      "url": "https://www.espn.com/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals",
+      "sport": "NBA",
+      "published": "2026-10-26T14:54:51.000Z",
+      "firstSeen": "2026-09-28T12:44:52.879Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50259828",
+      "id": "50259828",
+      "headline": "How Payton Pritchard became Boston's unlikely iso king",
+      "summary": "The sixth man supreme doggedly sharpens his game in brutal summer practices. That's an edge the C's will need.",
+      "url": "https://www.espn.com/nba/story/_/id/50259828/payton-pritchard-celtics-iso-king",
+      "sport": "NBA",
+      "published": "2026-10-26T14:54:11.000Z",
+      "firstSeen": "2026-10-26T14:06:18.685Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50287555",
+      "id": "50287555",
+      "headline": "Stephen A.: Jalen Williams injury a big blow to Thunder's championship hopes",
+      "summary": "Stephen A.: Jalen Williams injury a big blow to Thunder's championship hopes",
+      "url": "https://www.espn.com/video/clip/_/id/50287555/jalen-williams-injury-big-blow-thunder-championship-hopes",
+      "sport": "NBA",
+      "published": "2026-10-26T14:52:37.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50204309",
+      "id": "50204309",
+      "headline": "Rays looking to Junior Caminero's bat, leadership in World Series",
+      "summary": "Tampa Bay's 23-year-old star is adding clubhouse leader to his r&#233;sum&#233;. Can he help send the Series back to Milwaukee?",
+      "url": "https://www.espn.com/mlb/story/_/id/50204309/world-series-junior-caminero-rays-leader",
+      "sport": "MLB",
+      "published": "2026-10-26T14:47:02.000Z",
+      "firstSeen": "2026-10-26T14:06:18.685Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50272822",
+      "id": "50272822",
+      "headline": "NBA breakout players: 30 ready for the next step (yes, even Wemby and Luka)",
+      "summary": "Steady starter to an All-Star lock? Top-10 talent to an MVP? Breakout seasons take many forms in the NBA. Ben Golliver identifies 30 players primed to take the next step.",
+      "url": "https://www.espn.com/nba/story/_/id/50272822/breakout-players-flagg-maxey-luka-rookies",
+      "sport": "NBA",
+      "published": "2026-10-26T14:43:13.000Z",
+      "firstSeen": "2026-10-26T14:06:18.685Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50250750",
+      "id": "50250750",
+      "headline": "NFL Week 8 betting odds: Lines and totals for every game",
+      "summary": "A look at the odds, spreads, totals and FPI predictions for every NFL game in Week 8.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50250750/2026-nfl-week-8-schedule-odds-point-spreads-totals",
+      "sport": "NFL",
+      "published": "2026-10-26T14:35:24.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50257820",
+      "id": "50257820",
+      "headline": "Breaking down Cowboys-Eagles MNF matchup in wide-open NFC East",
+      "summary": "Both teams enter the game 2-4, looking far from formidable and staring up at the 4-2-1 division-leading Giants.",
+      "url": "https://www.espn.com/nfl/story/_/id/50257820/cowboys-eagles-matchup-wide-open-nfc-east-mnf-week-7",
+      "sport": "NFL",
+      "published": "2026-10-26T14:33:51.000Z",
+      "firstSeen": "2026-10-26T01:02:51.522Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50287413",
+      "id": "50287413",
+      "headline": "Stephen A. stunned by Chiefs' offensive woes",
+      "summary": "Stephen A. stunned by Chiefs' offensive woes",
+      "url": "https://www.espn.com/video/clip/_/id/50287413/stephen-stunned-chiefs-offensive-woes",
+      "sport": "NFL",
+      "published": "2026-10-26T14:32:45.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50280364",
+      "id": "50280364",
+      "headline": "NBA partners with Kalshi and Polymarket amid regulation fight",
+      "summary": "The NBA announced Monday that it's partnering with prediction markets Kalshi and Polymarket and expanding its DraftKings deal to include a prediction market offering.",
+      "url": "https://www.espn.com/nba/story/_/id/50280364/nba-prediction-markets-kalshi-polymarket-partnership",
+      "sport": "NBA",
+      "published": "2026-10-26T14:31:29.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 3
+    },
+    {
+      "key": "47879613",
+      "id": "47879613",
+      "headline": "Fantasy football 2026 offensive depth charts",
+      "summary": "Your guide to each NFL team's most valuable offensive players from a fantasy standpoint for the 2026 season.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/47879613/fantasy-football-2026-offensive-depth-charts",
+      "sport": "NFL",
+      "published": "2026-10-26T14:20:05.000Z",
+      "firstSeen": "2026-08-18T15:28:48.279Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50287115",
+      "id": "50287115",
+      "headline": "What do the Rays need to do to get back in the World Series?",
+      "summary": "What do the Rays need to do to get back in the World Series?",
+      "url": "https://www.espn.com/video/clip/_/id/50287115/what-do-rays-need-do-get-back-world-series",
+      "sport": "MLB",
+      "published": "2026-10-26T14:04:11.000Z",
+      "firstSeen": "2026-10-26T14:06:18.685Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50287120",
+      "id": "50287120",
+      "headline": "Smotherman wins Bermuda Championship, earns U.S. Open berth",
+      "summary": "Austin Smotherman captured his second straight FedEx Cup Fall event Monday morning when he outlasted Seamus Power of Ireland with a par on the third playoff hole to win the rain-shortened Butterfield Bermuda Championship.",
+      "url": "https://www.espn.com/golf/story/_/id/50287120/smotherman-outlasts-power-earn-second-straight-pga-tour-win",
+      "sport": "Golf",
+      "published": "2026-10-26T14:00:32.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
       "bestRank": 1
     },
     {
@@ -44,28 +418,6 @@
       "published": "2026-10-26T13:56:31.000Z",
       "firstSeen": "2026-10-26T14:06:18.685Z",
       "bestRank": 2
-    },
-    {
-      "key": "50287115",
-      "id": "50287115",
-      "headline": "What do the Rays need to do to get back in the World Series?",
-      "summary": "What do the Rays need to do to get back in the World Series?",
-      "url": "https://www.espn.com/video/clip/_/id/50287115/what-do-rays-need-do-get-back-world-series",
-      "sport": "MLB",
-      "published": "2026-10-26T13:53:36.000Z",
-      "firstSeen": "2026-10-26T14:06:18.685Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50278093",
-      "id": "50278093",
-      "headline": "Sizing up NFL Week 7: Time to trust the Giants? Start Mendoza? Worry about Henry?",
-      "summary": "Let's make sense of six takeaways from Sunday and spin them forward. Just how good is the Vikings' defense? What's wrong with the Ravens' run game? Are the Giants legit?",
-      "url": "https://www.espn.com/nfl/story/_/id/50278093/week-7-barnwell-vikings-texans-giants-jets-raiders-ravens",
-      "sport": "NFL",
-      "published": "2026-10-26T13:33:56.000Z",
-      "firstSeen": "2026-10-26T14:06:18.685Z",
-      "bestRank": 7
     },
     {
       "key": "50287037",
@@ -112,17 +464,6 @@
       "bestRank": 3
     },
     {
-      "key": "50259828",
-      "id": "50259828",
-      "headline": "How Payton Pritchard became Boston's unlikely iso king",
-      "summary": "The sixth man supreme doggedly sharpens his game in brutal summer practices. That's an edge the C's will need.",
-      "url": "https://www.espn.com/nba/story/_/id/50259828/payton-pritchard-celtics-iso-king",
-      "sport": "NBA",
-      "published": "2026-10-26T13:19:04.000Z",
-      "firstSeen": "2026-10-26T14:06:18.685Z",
-      "bestRank": 1
-    },
-    {
       "key": "50284745",
       "id": "50284745",
       "headline": "Top 25 betting lines: Georgia double-digit favorites vs. Florida",
@@ -132,17 +473,6 @@
       "published": "2026-10-26T13:17:00.000Z",
       "firstSeen": "2026-10-26T14:06:18.685Z",
       "bestRank": 1
-    },
-    {
-      "key": "50204309",
-      "id": "50204309",
-      "headline": "Rays looking to Junior Caminero's bat, leadership in World Series",
-      "summary": "Tampa Bay's 23-year-old star is adding clubhouse leader to his r&#233;sum&#233;. Can he help send the Series back to Milwaukee?",
-      "url": "https://www.espn.com/mlb/story/_/id/50204309/world-series-junior-caminero-rays-leader",
-      "sport": "MLB",
-      "published": "2026-10-26T13:06:46.000Z",
-      "firstSeen": "2026-10-26T14:06:18.685Z",
-      "bestRank": 2
     },
     {
       "key": "50284670",
@@ -189,15 +519,15 @@
       "bestRank": 5
     },
     {
-      "key": "50272822",
-      "id": "50272822",
-      "headline": "NBA breakout players: 30 ready for the next step (yes, even Wemby and Luka)",
-      "summary": "Steady starter to an All-Star lock? Top-10 talent to an MVP? Breakout seasons take many forms in the NBA. Ben Golliver identifies 30 players primed to take the next step.",
-      "url": "https://www.espn.com/nba/story/_/id/50272822/breakout-players-flagg-maxey-luka-rookies",
-      "sport": "NBA",
-      "published": "2026-10-26T12:39:48.000Z",
-      "firstSeen": "2026-10-26T14:06:18.685Z",
-      "bestRank": 2
+      "key": "50279491",
+      "id": "50279491",
+      "headline": "Alexander Volkanovski could face a new challenge after UFC 333",
+      "summary": "Alexander Volkanovski and Petr Yan defended titles at UFC 333, but which champion could fight in a new division?",
+      "url": "https://www.espn.com/mma/story/_/id/50279491/ufc-333-next-alexander-volkanovski-petr-yan-more",
+      "sport": "MMA",
+      "published": "2026-10-26T12:37:27.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 1
     },
     {
       "key": "50286162",
@@ -252,17 +582,6 @@
       "sport": "NFL",
       "published": "2026-10-26T12:07:09.000Z",
       "firstSeen": "2026-10-26T06:58:07.392Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50286242",
-      "id": "50286242",
-      "headline": "WNBA games today: Dream-Valkyries time, where to watch",
-      "summary": "Here's what to know about Monday's WNBA Finals schedule.",
-      "url": "https://www.espn.com/wnba/story/_/id/50286242/wnba-games-today-dream-valkyries-watch-oct-26",
-      "sport": "WNBA",
-      "published": "2026-10-26T11:57:32.000Z",
-      "firstSeen": "2026-10-26T14:06:18.685Z",
       "bestRank": 1
     },
     {
@@ -354,6 +673,17 @@
       "bestRank": 1
     },
     {
+      "key": "50266970",
+      "id": "50266970",
+      "headline": "Predictions for every women's basketball conference champ and player of the year",
+      "summary": "From the ACC to the WCC, here are the front-runners and favorites for player of the year for all 32 leagues.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50266970/2026-27-conference-predictions-champion-player-year",
+      "sport": "Women's college basketball",
+      "published": "2026-10-26T10:36:17.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 1
+    },
+    {
       "key": "50281281",
       "id": "50281281",
       "headline": "Inside Ballhalla, the basketball heaven in San Francisco",
@@ -363,17 +693,6 @@
       "published": "2026-10-26T10:35:48.000Z",
       "firstSeen": "2026-10-26T14:06:18.685Z",
       "bestRank": 2
-    },
-    {
-      "key": "50273529",
-      "id": "50273529",
-      "headline": "What we've learned about Rays, Brewers early in World Series",
-      "summary": "With the World Series shifting to Tampa Bay, we break down what we've seen so far -- and what to expect from here.",
-      "url": "https://www.espn.com/mlb/story/_/id/50273529/world-series-brewers-rays-early-lessons",
-      "sport": "MLB",
-      "published": "2026-10-26T10:35:01.000Z",
-      "firstSeen": "2026-10-26T14:06:18.685Z",
-      "bestRank": 3
     },
     {
       "key": "50286089",
@@ -891,17 +1210,6 @@
       "published": "2026-10-26T04:00:14.000Z",
       "firstSeen": "2026-10-26T03:38:54.449Z",
       "bestRank": 5
-    },
-    {
-      "key": "40699880",
-      "id": "40699880",
-      "headline": "Fantasy football buzz: Week 7 scoring leaders through 'Sunday Night Football'",
-      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "sport": "NFL",
-      "published": "2026-10-26T03:57:50.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
     },
     {
       "key": "50284386",
@@ -1575,17 +1883,6 @@
       "bestRank": 9
     },
     {
-      "key": "50257820",
-      "id": "50257820",
-      "headline": "Breaking down Cowboys-Eagles MNF matchup in wide-open NFC East",
-      "summary": "Both teams enter the game 2-4, looking far from formidable and staring up at the 4-2-1 division-leading Giants.",
-      "url": "https://www.espn.com/nfl/story/_/id/50257820/cowboys-eagles-matchup-wide-open-nfc-east-mnf-week-7",
-      "sport": "NFL",
-      "published": "2026-10-25T22:18:03.000Z",
-      "firstSeen": "2026-10-26T01:02:51.522Z",
-      "bestRank": 28
-    },
-    {
       "key": "50281203",
       "id": "50281203",
       "headline": "Daniel Dopp: Malik Nabers a set-it-and-forget-it WR1 the rest of the way",
@@ -1749,17 +2046,6 @@
       "published": "2026-10-25T21:26:59.000Z",
       "firstSeen": "2026-10-26T01:02:51.522Z",
       "bestRank": 33
-    },
-    {
-      "key": "50278475",
-      "id": "50278475",
-      "headline": "Connelly on Week 8: Who in college football can -- and can't -- be trusted",
-      "summary": "After another round of unexpected results, Bill Connelly tries to makes sense of what we just saw.",
-      "url": "https://www.espn.com/college-football/story/_/id/50278475/connelly-college-football-week-8-texas",
-      "sport": "College football",
-      "published": "2026-10-25T21:25:52.000Z",
-      "firstSeen": "2026-10-25T21:25:15.200Z",
-      "bestRank": 1
     },
     {
       "key": "50280475",
@@ -3278,17 +3564,6 @@
       "published": "2026-10-25T11:10:30.000Z",
       "firstSeen": "2026-10-25T09:27:51.709Z",
       "bestRank": 1
-    },
-    {
-      "key": "50274387",
-      "id": "50274387",
-      "headline": "How the 2026 and 1982 Brewers are alike, in style and in spirit",
-      "summary": "With a Robin Yount first pitch and the Brewers winning with old-school baseball, the 2026 World Series feels like a throwback.",
-      "url": "https://www.espn.com/mlb/story/_/id/50274387/milwaukee-brewers-world-series-tim-kurkjian",
-      "sport": "MLB",
-      "published": "2026-10-25T11:08:53.000Z",
-      "firstSeen": "2026-10-25T12:35:37.579Z",
-      "bestRank": 2
     },
     {
       "key": "50260609",
@@ -5621,17 +5896,6 @@
       "published": "2026-10-24T20:38:49.000Z",
       "firstSeen": "2026-10-24T21:25:44.449Z",
       "bestRank": 15
-    },
-    {
-      "key": "50176202",
-      "id": "50176202",
-      "headline": "WNBA Finals 2026: Valkyries vs. Dream schedule, scores, more",
-      "summary": "A new champion is guaranteed to be crowned this season as Golden State and Atlanta meet in the WNBA Finals.",
-      "url": "https://www.espn.com/wnba/story/_/id/50176202/2026-wnba-finals-valkyries-dream-schedule-scores-news",
-      "sport": "WNBA",
-      "published": "2026-10-24T20:38:06.000Z",
-      "firstSeen": "2026-10-13T21:24:40.321Z",
-      "bestRank": 1
     },
     {
       "key": "50266668",
@@ -8569,17 +8833,6 @@
       "published": "2026-10-23T15:06:05.000Z",
       "firstSeen": "2026-10-23T06:44:23.100Z",
       "bestRank": 3
-    },
-    {
-      "key": "50028196",
-      "id": "50028196",
-      "headline": "NBA buzz: Latest on trades, news, roster moves and intel",
-      "summary": "NBA basketball is back. The buzz never left. Bookmark this page for the latest news, rumblings and analysis from ESPN's insiders.",
-      "url": "https://www.espn.com/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals",
-      "sport": "NBA",
-      "published": "2026-10-23T14:56:48.000Z",
-      "firstSeen": "2026-09-28T12:44:52.879Z",
-      "bestRank": 1
     },
     {
       "key": "50258115",
@@ -14665,17 +14918,6 @@
       "bestRank": 5
     },
     {
-      "key": "50214006",
-      "id": "50214006",
-      "headline": "Breaking down the women's 2026-27 AP preseason Top 25 basketball poll",
-      "summary": "The first poll of the 2026-27 season is here. We look at the projected starters and biggest game for each team.",
-      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50214006/ap-preseason-womens-top-25-poll-reaction-2026-27",
-      "sport": "Women's college basketball",
-      "published": "2026-10-20T17:13:51.000Z",
-      "firstSeen": "2026-10-20T21:28:05.035Z",
-      "bestRank": 1
-    },
-    {
       "key": "49869631",
       "id": "49869631",
       "headline": "Expected fantasy points (xFP): 2026 leaderboard for RBs",
@@ -14718,17 +14960,6 @@
       "published": "2026-10-20T17:02:56.000Z",
       "firstSeen": "2026-08-18T15:28:48.279Z",
       "bestRank": 2
-    },
-    {
-      "key": "47879613",
-      "id": "47879613",
-      "headline": "Fantasy football 2026 offensive depth charts",
-      "summary": "Your guide to each NFL team's most valuable offensive players from a fantasy standpoint for the 2026 season.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/47879613/fantasy-football-2026-offensive-depth-charts",
-      "sport": "NFL",
-      "published": "2026-10-20T16:59:54.000Z",
-      "firstSeen": "2026-08-18T15:28:48.279Z",
-      "bestRank": 1
     },
     {
       "key": "50229330",
@@ -45936,94 +46167,6 @@
       "published": "2026-10-05T15:43:56.000Z",
       "firstSeen": "2026-10-05T12:44:27.517Z",
       "bestRank": 2
-    },
-    {
-      "key": "50109020",
-      "id": "50109020",
-      "headline": "Did Drake Maye prove doubters wrong with win over Bills?",
-      "summary": "Did Drake Maye prove doubters wrong with win over Bills?",
-      "url": "https://www.espn.com/video/clip/_/id/50109020/did-drake-maye-prove-doubters-wrong-win-bills",
-      "sport": "NFL",
-      "published": "2026-10-05T15:07:43.000Z",
-      "firstSeen": "2026-10-05T15:32:14.238Z",
-      "bestRank": 14
-    },
-    {
-      "key": "50086089",
-      "id": "50086089",
-      "headline": "What challenges lie ahead for the Protect College Sports Act?",
-      "summary": "What obstacles does the Protect College Sports Act face to become law? Time is a big one.",
-      "url": "https://www.espn.com/college-football/story/_/id/50086089/protect-college-sports-act-house-representatives-congress-obstacles",
-      "sport": "College basketball",
-      "published": "2026-10-05T15:05:11.000Z",
-      "firstSeen": "2026-10-05T12:44:27.517Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50106231",
-      "id": "50106231",
-      "headline": "Despite deflating loss, Kamario Taylor remains Mississippi State's hometown hero",
-      "summary": "It was a deflating Saturday for Mississippi State and QB Kamario Taylor, who had energized his hometown of Macon, just 40 minutes from campus.",
-      "url": "https://www.espn.com/college-football/story/_/id/50106231/kamario-taylor-mississippi-state-hometown-alabama",
-      "sport": "College football",
-      "published": "2026-10-05T15:00:19.000Z",
-      "firstSeen": "2026-10-05T15:32:14.238Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50109563",
-      "id": "50109563",
-      "headline": "Stephen A. disappointed by C.J. Gardner-Johnson's 'classless' response to Bills' loss",
-      "summary": "Stephen A. disappointed by C.J. Gardner-Johnson's 'classless' response to Bills' loss",
-      "url": "https://www.espn.com/video/clip/_/id/50109563/stephen-disappointed-cj-gardner-johnson-classless-response-bills-loss",
-      "sport": "NFL",
-      "published": "2026-10-05T14:56:37.000Z",
-      "firstSeen": "2026-10-05T15:32:14.238Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50109444",
-      "id": "50109444",
-      "headline": "Stephen A. not buying into Cowboys after win over Texans",
-      "summary": "Stephen A. not buying into Cowboys after win over Texans",
-      "url": "https://www.espn.com/video/clip/_/id/50109444/stephen-not-buying-cowboys-win-texans",
-      "sport": "NFL",
-      "published": "2026-10-05T14:37:20.000Z",
-      "firstSeen": "2026-10-05T15:32:14.238Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50108900",
-      "id": "50108900",
-      "headline": "Rex Ryan: Eagles O-line is 'hot garbage'",
-      "summary": "Rex Ryan: Eagles O-line is 'hot garbage'",
-      "url": "https://www.espn.com/video/clip/_/id/50108900/eagles-o-line-hot-garbage",
-      "sport": "NFL",
-      "published": "2026-10-05T14:17:44.000Z",
-      "firstSeen": "2026-10-05T12:44:27.517Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50109192",
-      "id": "50109192",
-      "headline": "Tedy Bruschi: NFL officials need to show more self-control",
-      "summary": "Tedy Bruschi: NFL officials need to show more self-control",
-      "url": "https://www.espn.com/video/clip/_/id/50109192/nfl-officials-need-show-more-self-control",
-      "sport": "NFL",
-      "published": "2026-10-05T14:11:16.000Z",
-      "firstSeen": "2026-10-05T15:32:14.238Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50108953",
-      "id": "50108953",
-      "headline": "Vikings make history at 4-0 -- without a scoring offense",
-      "summary": "Minnesota sits atop the NFC North despite its special teams outscoring its offense the past three weeks.",
-      "url": "https://www.espn.com/nfl/story/_/id/50108953/minnesota-vikings-kyler-murray-4-0-justin-jefferson",
-      "sport": "NFL",
-      "published": "2026-10-05T14:09:38.000Z",
-      "firstSeen": "2026-10-05T15:32:14.238Z",
-      "bestRank": 11
     }
   ]
 }
