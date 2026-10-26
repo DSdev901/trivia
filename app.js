@@ -228,9 +228,11 @@ function categoryKicker(category) {
     case "trending":
       return "Dolly Parton, House of the Dragon, and more in the air";
     case "themed":
-      return "Harrison Ford Movies first, more Tuesday themes later";
+      return "Harrison Ford Movies and Harry Potter Movies";
     case "harrison-ford":
       return "150 pub-quiz questions in fifteen rounds";
+    case "harry-potter":
+      return "210 pub-quiz questions in twenty-one rounds";
     case "prior-saucer":
       return "Questions from uploaded photos";
     case "presidents":
@@ -542,7 +544,7 @@ function renderThemedHub(category) {
   els.hub.innerHTML = `
     ${crumbsHtml([{ label: category.name, href: href([category.id]) }], escapeHtml)}
     <h2 class="section-title">${escapeHtml(category.name)}</h2>
-    <p class="lede">Tuesday night themes you can study and quiz. Harrison Ford Movies is first.</p>
+    <p class="lede">Tuesday night themes you can study and quiz.</p>
     <div class="hub-actions">
       ${packs
         .map(
