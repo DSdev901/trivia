@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-26T06:58:07.392Z",
+  "generatedAt": "2026-10-26T09:43:33.956Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-05T06:58:07.392Z",
-  "windowEnd": "2026-10-26T06:58:07.392Z",
+  "windowStart": "2026-10-05T09:43:33.956Z",
+  "windowEnd": "2026-10-26T09:43:33.956Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -24,15 +24,191 @@
   "count": 4176,
   "items": [
     {
+      "key": "50216946",
+      "id": "50216946",
+      "headline": "Who could replace Carrick after Man United's worst start since 1986?",
+      "summary": "Manchester United have struggled this season, but which managers could step in to replace Michael Carrick if the club sacks him?",
+      "url": "https://www.espn.com/soccer/story/_/id/50216946/who-replace-michael-carrick-manchester-united-manager",
+      "sport": "Soccer",
+      "published": "2026-10-26T09:22:24.000Z",
+      "firstSeen": "2026-10-19T12:41:54.086Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50285660",
+      "id": "50285660",
+      "headline": "Transfer rumors, news: Man United eye Branthwaite amid defensive rebuild",
+      "summary": "Manchester United are plotting a huge defensive rebuild, with Everton center back Jarrad Branthwaite at the center of their plans. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/50285660/transfer-rumors-news-man-united-eye-jarrad-branthwaite-amid-defensive-rebuild",
+      "sport": "Soccer",
+      "published": "2026-10-26T09:12:40.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50285656",
+      "id": "50285656",
+      "headline": "Pierre Sage: 'No noise inside' Crystal Palace despite job pressure",
+      "summary": "Crystal Palace boss Pierre Sage insisted there was \"no noise inside\" the club after their frustrating 2-0 loss to Newcastle raised more questions about his job security.",
+      "url": "https://www.espn.com/soccer/story/_/id/50285656/pierre-sage-no-noise-crystal-palace-job-pressure",
+      "sport": "Soccer",
+      "published": "2026-10-26T08:45:22.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50285674",
+      "id": "50285674",
+      "headline": "Bafana boss Pitso Mosimane's latest South Africa squad shows favouritism fears were unfounded",
+      "summary": "Mosimane has made several changes from his first preliminary squad, which he announced almost immediately after taking charge at the beginning of September.",
+      "url": "https://www.espn.com/espn/story/_/id/50285674/bafana-boss-pitso-mosimane-latest-south-africa-squad-shows-favouritism-fears-were-unfounded",
+      "sport": "Soccer",
+      "published": "2026-10-26T08:36:59.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50285669",
+      "id": "50285669",
+      "headline": "Jermaine Pennant rescued by pet after dog attack: 'He saved my life'",
+      "summary": "Jermaine Pennant says he needed more than 50 stitches to his leg after he was the victim of a dog attack.",
+      "url": "https://www.espn.com/soccer/story/_/id/50285669/jermaine-pennant-attacked-dog-needs-50-stitches",
+      "sport": "Soccer",
+      "published": "2026-10-26T08:25:32.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50285655",
+      "id": "50285655",
+      "headline": "Predators host the Islanders following O'Reilly's 2-goal performance",
+      "summary": "New York Islanders (5-4-2, in the Metropolitan Division) vs. Nashville Predators (4-3-4, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892589",
+      "sport": "NHL",
+      "published": "2026-10-26T08:11:52.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50285654",
+      "id": "50285654",
+      "headline": "Blues and Canadiens take the ice in non-conference matchup",
+      "summary": "Montreal Canadiens (6-3-2, in the Atlantic Division) vs. St. Louis Blues (5-5-1, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892588",
+      "sport": "NHL",
+      "published": "2026-10-26T08:11:51.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50285653",
+      "id": "50285653",
+      "headline": "Golden Knights host the Senators on losing streak",
+      "summary": "Ottawa Senators (8-4, in the Atlantic Division) vs. Vegas Golden Knights (8-4-1, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892593",
+      "sport": "NHL",
+      "published": "2026-10-26T08:11:50.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50285652",
+      "id": "50285652",
+      "headline": "Hurricanes host the Bruins in Eastern Conference play",
+      "summary": "Boston Bruins (9-2-1, in the Atlantic Division) vs. Carolina Hurricanes (9-2-2, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892586",
+      "sport": "NHL",
+      "published": "2026-10-26T08:11:48.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50285651",
+      "id": "50285651",
+      "headline": "Utah in action against Minnesota after overtime win",
+      "summary": "Minnesota Wild (8-3-2, in the Central Division) vs. Utah Mammoth (8-4, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892592",
+      "sport": "NHL",
+      "published": "2026-10-26T08:11:47.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50285650",
+      "id": "50285650",
+      "headline": "Flyers take on the Blue Jackets following Michkov's 2-goal performance",
+      "summary": "Columbus Blue Jackets (4-5, in the Metropolitan Division) vs. Philadelphia Flyers (3-7-3, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892585",
+      "sport": "NHL",
+      "published": "2026-10-26T08:11:46.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50285644",
+      "id": "50285644",
+      "headline": "Stars bring 5-game win streak into matchup against the Devils",
+      "summary": "New Jersey Devils (7-4, in the Metropolitan Division) vs. Dallas Stars (7-3-1, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892590",
+      "sport": "NHL",
+      "published": "2026-10-26T08:10:56.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50285643",
+      "id": "50285643",
+      "headline": "Buffalo takes losing streak into game against San Jose",
+      "summary": "Buffalo Sabres (4-4-3, in the Atlantic Division) vs. San Jose Sharks (6-5-1, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892595",
+      "sport": "NHL",
+      "published": "2026-10-26T08:10:54.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50285642",
+      "id": "50285642",
+      "headline": "Canucks come into matchup with the Ducks on losing streak",
+      "summary": "Vancouver Canucks (2-10-1, in the Pacific Division) vs. Anaheim Ducks (5-6, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892594",
+      "sport": "NHL",
+      "published": "2026-10-26T08:10:53.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50285641",
+      "id": "50285641",
+      "headline": "Jets take on the Panthers on losing streak",
+      "summary": "Florida Panthers (6-4-2, in the Atlantic Division) vs. Winnipeg Jets (4-4-3, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892591",
+      "sport": "NHL",
+      "published": "2026-10-26T08:10:52.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 10
+    },
+    {
       "key": "50285418",
       "id": "50285418",
       "headline": "Jaxon Smith-Njigba has 150 receiving yards, TD in Seahawks' win vs. Chiefs",
       "summary": "Jaxon Smith-Njigba wasn't the main story heading into Sunday night's Chiefs-Seahawks matchup -- but he emerged as the game's biggest star, continuing his own historic start by catching nine passes for 150 yards and a touchdown in Seattle's 20-3 win.",
       "url": "https://www.espn.com/nfl/story/_/id/50285418/jaxon-smith-njigba-stars-seahawks-deal-chiefs-first-loss",
       "sport": "NFL",
-      "published": "2026-10-26T06:56:52.000Z",
+      "published": "2026-10-26T07:02:28.000Z",
       "firstSeen": "2026-10-26T06:58:07.392Z",
       "bestRank": 1
+    },
+    {
+      "key": "50282328",
+      "id": "50282328",
+      "headline": "Sources: United consider Howe, Nagelsmann to replace under-fire Carrick",
+      "summary": "Manchester United are weighing up replacements with Michael Carrick's future as head coach in serious doubt, sources told ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/50282328/man-united-howe-nagelsmann-replace-carrick",
+      "sport": "Soccer",
+      "published": "2026-10-26T06:51:41.000Z",
+      "firstSeen": "2026-10-26T01:02:51.522Z",
+      "bestRank": 2
     },
     {
       "key": "50285364",
@@ -891,17 +1067,6 @@
       "published": "2026-10-25T23:41:34.000Z",
       "firstSeen": "2026-10-25T12:35:37.579Z",
       "bestRank": 10
-    },
-    {
-      "key": "50282328",
-      "id": "50282328",
-      "headline": "Sources: United consider Howe, Nagelsmann to replace under-fire Carrick",
-      "summary": "Manchester United are weighing up replacements with Michael Carrick's future as head coach in serious doubt, sources told ESPN.",
-      "url": "https://www.espn.com/soccer/story/_/id/50282328/man-united-howe-nagelsmann-replace-carrick",
-      "sport": "Soccer",
-      "published": "2026-10-25T23:40:24.000Z",
-      "firstSeen": "2026-10-26T01:02:51.522Z",
-      "bestRank": 2
     },
     {
       "key": "50282426",
@@ -11915,17 +12080,6 @@
       "bestRank": 8
     },
     {
-      "key": "50216946",
-      "id": "50216946",
-      "headline": "Who could replace Carrick after Man United's worst start since 1986?",
-      "summary": "Manchester United have struggled this season, but which managers could step in to replace Michael Carrick if the club sacks him?",
-      "url": "https://www.espn.com/soccer/story/_/id/50216946/who-replace-michael-carrick-manchester-united-manager",
-      "sport": "Soccer",
-      "published": "2026-10-21T19:00:56.000Z",
-      "firstSeen": "2026-10-19T12:41:54.086Z",
-      "bestRank": 1
-    },
-    {
       "key": "50238842",
       "id": "50238842",
       "headline": "Where to watch 'Inside the NBA' throughout the 2026-27 season",
@@ -13768,7 +13922,7 @@
       "headline": "Big 12 commish mulls new event if conference title games end",
       "summary": "Big 12 commissioner Brett Yormark said the league would find a new event to replace any lost conference title games should they be casualties of an expanded College Football Playoff.",
       "url": "https://www.espn.com/college-football/story/_/id/50231796/big-12-commish-mulls-new-event-conference-title-games-end",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-20T22:27:21.000Z",
       "firstSeen": "2026-10-20T21:28:05.035Z",
       "bestRank": 1
@@ -22590,7 +22744,7 @@
       "headline": "NCAA sues Ohio gov. over order allowing schools to ignore new eligibility rule",
       "summary": "The NCAA has filed a federal lawsuit against Ohio Gov. Mike DeWine three days after he signed an executive order giving the state's colleges and universities the option of allowing athletes who graduated from high school in 2022 to play a fifth year.",
       "url": "https://www.espn.com/college-sports/story/_/id/50196596/ncaa-sues-ohio-gov-eligibility-order-5th-year-athletes",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-16T20:07:31.000Z",
       "firstSeen": "2026-10-16T18:32:34.965Z",
       "bestRank": 1
@@ -27694,7 +27848,7 @@
       "headline": "Ohio Gov. Mike DeWine signs order letting state's 2022 athletes play in 2026-27",
       "summary": "Ohio Gov. Mike DeWine signed an executive order allowing 2022 athletes to play even though the NCAA's new guidance excludes those who have already played four seasons.",
       "url": "https://www.espn.com/college-sports/story/_/id/50177542/ohio-gov-dewine-signs-order-2022-athletes-play-2026-27",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-14T02:41:34.000Z",
       "firstSeen": "2026-10-14T00:58:06.882Z",
       "bestRank": 1
@@ -30290,7 +30444,7 @@
       "headline": "James Madison to exit Sun Belt, join American Conference",
       "summary": "James Madison has accepted membership into the American Athletic Association, the university announced Monday.",
       "url": "https://www.espn.com/college-sports/story/_/id/50166450/james-madison-exit-sun-belt-join-american-conference",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-12T15:30:06.000Z",
       "firstSeen": "2026-10-12T15:32:56.568Z",
       "bestRank": 1
@@ -36934,7 +37088,7 @@
       "headline": "Reports - Watchdog eyes NIL violations at 5-10 Power 4 schools",
       "summary": "The College Sports Commission is looking into possible rules violations at between five and 10 Power 4 schools regarding payments to players, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/50142371/reports-watchdog-eyes-nil-violations-5-10-power-4-schools",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-09T22:48:19.000Z",
       "firstSeen": "2026-10-09T21:28:17.260Z",
       "bestRank": 1
@@ -45803,160 +45957,6 @@
       "sport": "NFL",
       "published": "2026-10-05T10:00:11.000Z",
       "firstSeen": "2026-10-05T12:44:27.517Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50100614",
-      "id": "50100614",
-      "headline": "Bahrain GP was the worst indictment of F1's new engine regs yet",
-      "summary": "There was a lot to love about Sunday's race. But it will forever be overshadowed by the mess caused by the new F1 engines.",
-      "url": "https://www.espn.com/racing/f1/story/_/id/50100614/formula-1-2026-bahrain-grand-prix-malaysia-engine-delays-happened-verstappen",
-      "sport": "F1",
-      "published": "2026-10-05T09:39:15.000Z",
-      "firstSeen": "2026-10-05T03:43:30.274Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50074976",
-      "id": "50074976",
-      "headline": "Max Verstappen praises Red Bull on 'very special' Bahrain Grand Prix win after 'tough start to year'",
-      "summary": "Max Verstappen praised Red Bull's resilience through a tough start to 2026 after he delivered the team an \"amazing\" first win with its own engine at the Bahrain Grand Prix in Malaysia.",
-      "url": "https://www.espn.com/f1/story/_/id/50074976/max-verstappen-praises-red-bull-very-special-bahrain-grand-prix-win-tough-start-year-bahrain-gp-malaysia-sepang-formula-1",
-      "sport": "F1",
-      "published": "2026-10-05T09:31:55.000Z",
-      "firstSeen": "2026-10-05T15:32:14.238Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50074960",
-      "id": "50074960",
-      "headline": "Bahrain Grand Prix in Malaysia descends into chaos after delayed start due to huge downpour",
-      "summary": "Max Verstappen said \"lol look at this\" during a farcical aborted start at the Bahrain Grand Prix in Malaysia, where F1's new hybrid engines appeared to shut down on masse at reduced speeds.",
-      "url": "https://www.espn.com/f1/story/_/id/50074960/bahrain-grand-prix-malaysia-descends-chaos-delayed-start-due-huge-downpour-formula-1",
-      "sport": "F1",
-      "published": "2026-10-05T08:53:03.000Z",
-      "firstSeen": "2026-10-04T14:13:49.532Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50108109",
-      "id": "50108109",
-      "headline": "Jets visit the Penguins after Connor's 2-goal game",
-      "summary": "Winnipeg Jets (1-0-1, in the Central Division) vs. Pittsburgh Penguins (2-0, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892447",
-      "sport": "NHL",
-      "published": "2026-10-05T08:11:53.000Z",
-      "firstSeen": "2026-10-05T09:45:28.082Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50108108",
-      "id": "50108108",
-      "headline": "Carolina visits Montreal after Aho's 2-goal game",
-      "summary": "Carolina Hurricanes (1-1-1, in the Metropolitan Division) vs. Montreal Canadiens (1-0-1, in the Atlantic Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401891815",
-      "sport": "NHL",
-      "published": "2026-10-05T08:11:50.000Z",
-      "firstSeen": "2026-10-05T09:45:28.082Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50108107",
-      "id": "50108107",
-      "headline": "Blackhawks bring losing streak into game against the Blues",
-      "summary": "St. Louis Blues (1-1, in the Central Division) vs. Chicago Blackhawks (0-3, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401891779",
-      "sport": "NHL",
-      "published": "2026-10-05T08:11:47.000Z",
-      "firstSeen": "2026-10-05T09:45:28.082Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50108106",
-      "id": "50108106",
-      "headline": "Toronto takes on Nashville in a non-conference matchup",
-      "summary": "Nashville Predators (1-1, in the Central Division) vs. Toronto Maple Leafs (1-2, in the Atlantic Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892449",
-      "sport": "NHL",
-      "published": "2026-10-05T08:11:43.000Z",
-      "firstSeen": "2026-10-05T09:45:28.082Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50108105",
-      "id": "50108105",
-      "headline": "Rangers look to keep win streak alive, host the Islanders",
-      "summary": "New York Islanders (1-1, in the Metropolitan Division) vs. New York Rangers (3-1, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892452",
-      "sport": "NHL",
-      "published": "2026-10-05T08:11:40.000Z",
-      "firstSeen": "2026-10-05T09:45:28.082Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50108104",
-      "id": "50108104",
-      "headline": "Wild visit the Sabres after Kaprizov's 2-goal game",
-      "summary": "Minnesota Wild (2-0, in the Central Division) vs. Buffalo Sabres (1-1, in the Atlantic Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892453",
-      "sport": "NHL",
-      "published": "2026-10-05T08:11:36.000Z",
-      "firstSeen": "2026-10-05T09:45:28.082Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50108102",
-      "id": "50108102",
-      "headline": "Devils face the Mammoth in a non-conference matchup",
-      "summary": "Utah Mammoth (2-1, in the Central Division) vs. New Jersey Devils (1-1, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892451",
-      "sport": "NHL",
-      "published": "2026-10-05T08:11:32.000Z",
-      "firstSeen": "2026-10-05T09:45:28.082Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50108101",
-      "id": "50108101",
-      "headline": "Los Angeles hosts Florida in a non-conference matchup",
-      "summary": "Florida Panthers (1-0-2, in the Atlantic Division) vs. Los Angeles Kings (0-1-1, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401891806",
-      "sport": "NHL",
-      "published": "2026-10-05T08:11:29.000Z",
-      "firstSeen": "2026-10-05T09:45:28.082Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50108045",
-      "id": "50108045",
-      "headline": "White Sox bring 1-0 lead into ALDS Game 2 against Guardians",
-      "summary": "Chicago White Sox (84-78, second in the AL Central during the regular season) vs. Cleveland Guardians (85-77, first in the AL Central during the regular season)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401907991",
-      "sport": "MLB",
-      "published": "2026-10-05T08:02:32.000Z",
-      "firstSeen": "2026-10-05T09:45:28.082Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50108044",
-      "id": "50108044",
-      "headline": "Rays lead Yankees 1-0 ahead of ALDS Game 2",
-      "summary": "New York Yankees (93-68, second in the AL East during the regular season) vs. Tampa Bay Rays (98-64, first in the AL East during the regular season)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401907986",
-      "sport": "MLB",
-      "published": "2026-10-05T08:02:29.000Z",
-      "firstSeen": "2026-10-05T09:45:28.082Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50108019",
-      "id": "50108019",
-      "headline": "Chourio's 2-run single with 2 outs in 9th off Miller lifts Brewers over Padres for 2-0 NLDS lead",
-      "summary": "— Jackson Chourio hit a two-run single off hard-throwing Mason Miller with two outs in the ninth inning and the Milwaukee Brewers rallied past the San Diego Padres for the straight day, a 4-3 victory Sunday for a 2-0 NL Division Series lead.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401908003",
-      "sport": "MLB",
-      "published": "2026-10-05T07:51:49.000Z",
-      "firstSeen": "2026-10-05T09:45:28.082Z",
       "bestRank": 3
     }
   ]
