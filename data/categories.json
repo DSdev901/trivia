@@ -27,12 +27,16 @@
     {
       "id": "themed",
       "name": "Themed Trivia",
-      "description": "Tuesday night themes you can study and quiz. Harrison Ford Movies is first, with 150 pub questions in fifteen rounds.",
+      "description": "Tuesday night themes you can study and quiz. Harrison Ford Movies and Harry Potter Movies.",
       "type": "themed",
       "packs": [
         {
           "id": "harrison-ford",
           "blurb": "150 pub-quiz questions in fifteen rounds. Han, Indy, Deckard, Kimble, and the rest of Ford\u2019s movies."
+        },
+        {
+          "id": "harry-potter",
+          "blurb": "210 pub-quiz questions in twenty-one rounds. The eight films, plus Fantastic Beasts. Plot and characters, not the cast."
         }
       ]
     },
@@ -278,6 +282,39 @@
           "label": "Early Roles & Deep Cuts",
           "range": "Early Roles & Deep Cuts"
         }
+      ]
+    },
+    {
+      "id": "harry-potter",
+      "name": "Harry Potter Movies",
+      "description": "210 pub-quiz questions in twenty-one rounds, from the films. The eight Harry Potter movies, plus a Fantastic Beasts round. Plot and characters, not the cast.",
+      "type": "movies",
+      "home": false,
+      "parentId": "themed",
+      "batchCount": 21,
+      "batchPath": "data/themed/harry-potter/batch-{n}.json",
+      "batches": [
+        { "n": 1, "label": "The Boy Who Lived", "range": "The Boy Who Lived" },
+        { "n": 2, "label": "First Year at Hogwarts", "range": "First Year at Hogwarts" },
+        { "n": 3, "label": "The Sorcerer's Stone", "range": "The Sorcerer's Stone" },
+        { "n": 4, "label": "The Chamber of Secrets", "range": "The Chamber of Secrets" },
+        { "n": 5, "label": "Deeper in the Chamber", "range": "Deeper in the Chamber" },
+        { "n": 6, "label": "The Prisoner of Azkaban", "range": "The Prisoner of Azkaban" },
+        { "n": 7, "label": "The Map and the Dementors", "range": "The Map and the Dementors" },
+        { "n": 8, "label": "The Goblet of Fire", "range": "The Goblet of Fire" },
+        { "n": 9, "label": "The Graveyard", "range": "The Graveyard" },
+        { "n": 10, "label": "The Order of the Phoenix", "range": "The Order of the Phoenix" },
+        { "n": 11, "label": "Umbridge's Hogwarts", "range": "Umbridge's Hogwarts" },
+        { "n": 12, "label": "The Half-Blood Prince", "range": "The Half-Blood Prince" },
+        { "n": 13, "label": "The Astronomy Tower", "range": "The Astronomy Tower" },
+        { "n": 14, "label": "On the Run", "range": "On the Run" },
+        { "n": 15, "label": "The Deathly Hallows", "range": "The Deathly Hallows" },
+        { "n": 16, "label": "The Battle of Hogwarts", "range": "The Battle of Hogwarts" },
+        { "n": 17, "label": "Snape's Memories", "range": "Snape's Memories" },
+        { "n": 18, "label": "Spells", "range": "Spells" },
+        { "n": 19, "label": "Lines from the Films", "range": "Lines from the Films" },
+        { "n": 20, "label": "School and Street", "range": "School and Street" },
+        { "n": 21, "label": "Fantastic Beasts", "range": "Fantastic Beasts" }
       ]
     }
   ]
