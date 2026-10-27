@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-27T06:46:19.630Z",
+  "generatedAt": "2026-10-27T09:33:49.718Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-06T06:46:19.630Z",
-  "windowEnd": "2026-10-27T06:46:19.630Z",
+  "windowStart": "2026-10-06T09:33:49.718Z",
+  "windowEnd": "2026-10-27T09:33:49.718Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,17 +21,127 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4195,
+  "count": 4196,
   "items": [
+    {
+      "key": "50295192",
+      "id": "50295192",
+      "headline": "Seattle and Toronto take the ice for out-of-conference matchup",
+      "summary": "Toronto Maple Leafs (7-5-2, in the Atlantic Division) vs. Seattle Kraken (7-4-1, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892599",
+      "sport": "NHL",
+      "published": "2026-10-27T08:11:46.000Z",
+      "firstSeen": "2026-10-27T09:33:49.718Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50295191",
+      "id": "50295191",
+      "headline": "Blackhawks take on the Kings on losing streak",
+      "summary": "Los Angeles Kings (3-5-2, in the Pacific Division) vs. Chicago Blackhawks (3-8, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892587",
+      "sport": "NHL",
+      "published": "2026-10-27T08:10:47.000Z",
+      "firstSeen": "2026-10-27T09:33:49.718Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50295190",
+      "id": "50295190",
+      "headline": "Calgary brings 4-game win streak into matchup against Edmonton",
+      "summary": "Calgary Flames (5-6, in the Pacific Division) vs. Edmonton Oilers (8-2-2, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892597",
+      "sport": "NHL",
+      "published": "2026-10-27T08:10:46.000Z",
+      "firstSeen": "2026-10-27T09:33:49.718Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50295147",
+      "id": "50295147",
+      "headline": "Is it too soon for Chelsea to regret getting rid of Aston Villa's Nicolas Jackson?",
+      "summary": "Nicolas Jackson scored twice to beat Manchester City 2-1 this past weekend, ending their perfect start to the Premier League season while hauling Villa up the table after a slow start.",
+      "url": "https://www.espn.com/espn/story/_/id/50295147/is-too-soon-chelsea-regret-getting-rid-aston-villa-nicolas-jackson",
+      "sport": "Soccer",
+      "published": "2026-10-27T07:59:33.000Z",
+      "firstSeen": "2026-10-27T09:33:49.718Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50293252",
+      "id": "50293252",
+      "headline": "How Jackson Chourio became a Brewers superstar in October",
+      "summary": "After a four-hit Game 3, Chourio is setting a new standard for young players in October.",
+      "url": "https://www.espn.com/mlb/story/_/id/50293252/world-series-brewers-jackson-chourio",
+      "sport": "MLB",
+      "published": "2026-10-27T07:34:27.000Z",
+      "firstSeen": "2026-10-27T09:33:49.718Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50285674",
+      "id": "50285674",
+      "headline": "Bafana boss Pitso Mosimane's latest South Africa squad shows favouritism fears were unfounded",
+      "summary": "Mosimane has made several changes from his first preliminary squad, which he announced almost immediately after taking charge at the beginning of September.",
+      "url": "https://www.espn.com/espn/story/_/id/50285674/bafana-boss-pitso-mosimane-latest-south-africa-squad-shows-favouritism-fears-were-unfounded",
+      "sport": "Soccer",
+      "published": "2026-10-27T07:10:38.000Z",
+      "firstSeen": "2026-10-26T09:43:33.956Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50294975",
+      "id": "50294975",
+      "headline": "Rockets face the Bucks, look for 5th straight victory",
+      "summary": "Houston Rockets (4-0, first in the Western Conference) vs. Milwaukee Bucks (1-3, 12th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909887",
+      "sport": "NBA",
+      "published": "2026-10-27T07:03:46.000Z",
+      "firstSeen": "2026-10-27T09:33:49.718Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50294971",
+      "id": "50294971",
+      "headline": "Brooklyn takes on Boston, aims to break 3-game skid",
+      "summary": "Brooklyn Nets (0-3, 14th in the Eastern Conference) vs. Boston Celtics (2-1, fifth in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909877",
+      "sport": "NBA",
+      "published": "2026-10-27T07:02:47.000Z",
+      "firstSeen": "2026-10-27T09:33:49.718Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50294970",
+      "id": "50294970",
+      "headline": "Miami takes on Atlanta, aims to end 4-game skid",
+      "summary": "Miami Heat (0-4, 15th in the Eastern Conference) vs. Atlanta Hawks (2-2, seventh in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909881",
+      "sport": "NBA",
+      "published": "2026-10-27T07:02:46.000Z",
+      "firstSeen": "2026-10-27T09:33:49.718Z",
+      "bestRank": 3
+    },
     {
       "key": "50294832",
       "id": "50294832",
       "headline": "Yaxel Lendeborg has 31 points, 12 rebounds as Warriors blow out Nuggets on road",
-      "summary": "In his fourth game, Warriors rookie Yaxel Lendeborg put up 31 points, 12 rebounds and 6 assists in a blowout road win over the Nuggets on Monday night.",
+      "summary": "In his fourth game, Warriors rookie Yaxel Lendeborg put up 31 points, 12 rebounds and six assists in a blowout road win over the Nuggets on Monday night.",
       "url": "https://www.espn.com/nba/story/_/id/50294832/yaxel-lendeborg-31-points-12-rebounds-warriors-beat-nuggets-first-win",
       "sport": "NBA",
-      "published": "2026-10-27T06:41:50.000Z",
+      "published": "2026-10-27T07:01:45.000Z",
       "firstSeen": "2026-10-27T06:46:19.630Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50293953",
+      "id": "50293953",
+      "headline": "Brewers ride 8-run fifth to Game 3 rout of Rays, take 3-0 World Series lead",
+      "summary": "The Brewers blew open Game 3 with an eight-run fifth inning and rolled to a 10-1 win over the Rays to move within one win of their first World Series title.",
+      "url": "https://www.espn.com/mlb/story/_/id/50293953/brewers-rout-rays-game-3-1-win-first-world-series-title",
+      "sport": "MLB",
+      "published": "2026-10-27T06:41:27.000Z",
+      "firstSeen": "2026-10-27T03:35:27.644Z",
       "bestRank": 1
     },
     {
@@ -178,17 +288,6 @@
       "bestRank": 1
     },
     {
-      "key": "50293953",
-      "id": "50293953",
-      "headline": "Brewers ride 8-run fifth to Game 3 rout of Rays, take 3-0 World Series lead",
-      "summary": "The Brewers blew open Game 3 with an eight-run fifth inning and rolled to a 10-1 win over the Rays to move within one win of their first World Series title.",
-      "url": "https://www.espn.com/mlb/story/_/id/50293953/brewers-rout-rays-game-3-1-win-first-world-series-title",
-      "sport": "MLB",
-      "published": "2026-10-27T05:19:37.000Z",
-      "firstSeen": "2026-10-27T03:35:27.644Z",
-      "bestRank": 1
-    },
-    {
       "key": "50293932",
       "id": "50293932",
       "headline": "Cowboys bounce back, take down Eagles on MNF",
@@ -293,7 +392,7 @@
       "headline": "Milwaukee Bucks poke fun at Rays' World Series loss, Heat's 0-4 start in postgame jab",
       "summary": "The Bucks' neighbors, the Brewers, defeated the Rays in Game 3 of the World Series on Monday, and the Heat fell to 0-4.",
       "url": "https://www.espn.com/nba/story/_/id/50294283/milwaukee-bucks-troll-rays-heat",
-      "sport": "NBA",
+      "sport": "MLB",
       "published": "2026-10-27T04:34:35.000Z",
       "firstSeen": "2026-10-27T06:46:19.630Z",
       "bestRank": 2
@@ -436,7 +535,7 @@
       "headline": "Jalen Brunson shows Peyton and Eli his special painting",
       "summary": "Jalen Brunson shows Peyton and Eli his special painting",
       "url": "https://www.espn.com/video/clip/_/id/50294142/jalen-brunson-shows-peyton-eli-special-painting",
-      "sport": "NBA",
+      "sport": "NFL",
       "published": "2026-10-27T03:50:08.000Z",
       "firstSeen": "2026-10-27T06:46:19.630Z",
       "bestRank": 6
@@ -469,7 +568,7 @@
       "headline": "Dream, Valkyries to play Game 6, WNBA Finals at State Farm as Thursday matinee",
       "summary": "Game 6 of the WNBA Finals will be played Thursday at 12:30 p.m. ET at State Farm Arena in Atlanta. The start time of Cavs-Hawks will be pushed back to 8 p.m. ET.",
       "url": "https://www.espn.com/wnba/story/_/id/50288799/dream-valkyries-play-g6-wnba-finals-state-farm",
-      "sport": "NBA",
+      "sport": "WNBA",
       "published": "2026-10-27T03:35:21.000Z",
       "firstSeen": "2026-10-26T18:43:34.785Z",
       "bestRank": 1
@@ -722,7 +821,7 @@
       "headline": "Jay-Z's greatest sports lyrics, ranked ahead of his Super Bowl show",
       "summary": "The Super Bowl headliner's catalog is packed with sports references -- here are the ones that top our list.",
       "url": "https://www.espn.com/espn/story/_/id/50232827/jayz-best-sports-references-sofi-stadium",
-      "sport": "NBA",
+      "sport": "NFL",
       "published": "2026-10-27T01:52:27.000Z",
       "firstSeen": "2026-10-23T15:30:59.559Z",
       "bestRank": 4
@@ -1228,7 +1327,7 @@
       "headline": "Shelburne: Updated WNBA Finals Game 6 logistics 'the best of bad options'",
       "summary": "Shelburne: Updated WNBA Finals Game 6 logistics 'the best of bad options'",
       "url": "https://www.espn.com/video/clip/_/id/50289490/updated-wnba-finals-game-6-logistics-best-bad-options",
-      "sport": "NBA",
+      "sport": "WNBA",
       "published": "2026-10-26T19:36:11.000Z",
       "firstSeen": "2026-10-26T21:28:13.990Z",
       "bestRank": 1
@@ -2277,17 +2376,6 @@
       "published": "2026-10-26T08:45:22.000Z",
       "firstSeen": "2026-10-26T09:43:33.956Z",
       "bestRank": 4
-    },
-    {
-      "key": "50285674",
-      "id": "50285674",
-      "headline": "Bafana boss Pitso Mosimane's latest South Africa squad shows favouritism fears were unfounded",
-      "summary": "Mosimane has made several changes from his first preliminary squad, which he announced almost immediately after taking charge at the beginning of September.",
-      "url": "https://www.espn.com/espn/story/_/id/50285674/bafana-boss-pitso-mosimane-latest-south-africa-squad-shows-favouritism-fears-were-unfounded",
-      "sport": "Soccer",
-      "published": "2026-10-26T08:36:59.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 1
     },
     {
       "key": "50285669",
@@ -46090,83 +46178,6 @@
       "published": "2026-10-06T09:59:11.000Z",
       "firstSeen": "2026-10-06T11:15:09.369Z",
       "bestRank": 4
-    },
-    {
-      "key": "50115373",
-      "id": "50115373",
-      "headline": "Man City punishment must be 'three to five years' - Jamie Carragher",
-      "summary": "Manchester City should face a multi-year punishment for their financial misdemeanours, according to former Liverpool defender Jamie Carragher.",
-      "url": "https://www.espn.com/soccer/story/_/id/50115373/man-city-punishment-three-five-years-jamie-carragher",
-      "sport": "Soccer",
-      "published": "2026-10-06T08:36:36.000Z",
-      "firstSeen": "2026-10-06T11:15:09.369Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50115338",
-      "id": "50115338",
-      "headline": "Anaheim takes on Edmonton following overtime win",
-      "summary": "Edmonton Oilers (2-0-1, in the Pacific Division) vs. Anaheim Ducks (2-0, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892456",
-      "sport": "NHL",
-      "published": "2026-10-06T08:12:30.000Z",
-      "firstSeen": "2026-10-06T09:34:05.637Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50115334",
-      "id": "50115334",
-      "headline": "Penguins visit the Capitals in Metropolitan Division action",
-      "summary": "Pittsburgh Penguins (2-1, in the Metropolitan Division) vs. Washington Capitals (1-1, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401891830",
-      "sport": "NHL",
-      "published": "2026-10-06T08:11:39.000Z",
-      "firstSeen": "2026-10-06T09:34:05.637Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50115333",
-      "id": "50115333",
-      "headline": "Avalanche play the Jets after Necas' 2-goal game",
-      "summary": "Colorado Avalanche (2-0, in the Central Division) vs. Winnipeg Jets (2-0-1, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892455",
-      "sport": "NHL",
-      "published": "2026-10-06T08:11:35.000Z",
-      "firstSeen": "2026-10-06T09:34:05.637Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50115303",
-      "id": "50115303",
-      "headline": "Brewers aim to clinch NLDS in Game 3 against Padres",
-      "summary": "Milwaukee Brewers (103-59, first in the NL Central during the regular season) vs. San Diego Padres (91-71, second in the NL West during the regular season)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401908004",
-      "sport": "MLB",
-      "published": "2026-10-06T08:02:32.000Z",
-      "firstSeen": "2026-10-06T09:34:05.637Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50115302",
-      "id": "50115302",
-      "headline": "Braves and Dodgers tied 1-1 heading into NLDS Game 3",
-      "summary": "Los Angeles Dodgers (100-62, first in the NL West during the regular season) vs. Atlanta Braves (94-68, first in the NL East during the regular season)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401908015",
-      "sport": "MLB",
-      "published": "2026-10-06T08:02:29.000Z",
-      "firstSeen": "2026-10-06T09:34:05.637Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50115183",
-      "id": "50115183",
-      "headline": "Boos rain down from Superdome stands in Saints' blowout loss",
-      "summary": "New Orleans quarterback Tyler Shough understood the fans' frustration after the 1-3 Saints dropped a 45-24 decision to the Atlanta Falcons on Monday night, telling reporters after the loss that \"we had some opportunities that we didn't take advantage of.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/50115183/boos-rain-superdome-stands-saints-blowout-loss",
-      "sport": "NFL",
-      "published": "2026-10-06T07:08:15.000Z",
-      "firstSeen": "2026-10-06T06:47:30.963Z",
-      "bestRank": 1
     }
   ]
 }
