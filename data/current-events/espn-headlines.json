@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-27T11:15:21.238Z",
+  "generatedAt": "2026-10-27T12:42:08.380Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-06T11:15:21.238Z",
-  "windowEnd": "2026-10-27T11:15:21.238Z",
+  "windowStart": "2026-10-06T12:42:08.380Z",
+  "windowEnd": "2026-10-27T12:42:08.380Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,52 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4202,
+  "count": 4200,
   "items": [
+    {
+      "key": "50260679",
+      "id": "50260679",
+      "headline": "NBA season 2026-27: Best and worst from the first week",
+      "summary": "Our insiders break down standout moments and answer the biggest questions from the first days of the NBA season.",
+      "url": "https://www.espn.com/nba/story/_/id/50260679/nba-first-week-best-worst-moments-2026-27",
+      "sport": "NBA",
+      "published": "2026-10-27T12:39:19.000Z",
+      "firstSeen": "2026-10-27T11:15:21.238Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49309401",
+      "id": "49309401",
+      "headline": "Fantasy football 12-team Knockout league rankings: The 154 players to draft",
+      "summary": "Rankings for knockout leagues, where the lowest-scoring team is eliminated and the last team standing wins.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49309401/fantasy-football-knockout-rankings-top-200",
+      "sport": "NFL",
+      "published": "2026-10-27T12:38:40.000Z",
+      "firstSeen": "2026-10-05T18:37:51.970Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50296659",
+      "id": "50296659",
+      "headline": "Are the Cowboys now favorites to win the NFC East?",
+      "summary": "Are the Cowboys now favorites to win the NFC East?",
+      "url": "https://www.espn.com/video/clip/_/id/50296659/are-cowboys-now-favorites-win-nfc-east",
+      "sport": "NFL",
+      "published": "2026-10-27T12:34:26.000Z",
+      "firstSeen": "2026-10-27T12:42:08.380Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50296572",
+      "id": "50296572",
+      "headline": "Sources: Carrick to lead Man United vs. Chelsea amid uncertain future",
+      "summary": "Manchester United head coach Michael Carrick took training on Tuesday and now expects to be in charge against Chelsea on Saturday, sources have told ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/50296572/carrick-lead-man-united-chelsea-uncertain-future-sources",
+      "sport": "Soccer",
+      "published": "2026-10-27T12:32:09.000Z",
+      "firstSeen": "2026-10-27T12:42:08.380Z",
+      "bestRank": 1
+    },
     {
       "key": "50278890",
       "id": "50278890",
@@ -30,9 +74,97 @@
       "summary": "Get ready for Week 8 with takes on the Chiefs' trade deadline plan, Jared Goff's sneaky season, Kevin Stefanski's Coach of the Year case and the Ravens' struggling defense.",
       "url": "https://www.espn.com/nfl/story/_/id/50278890/week-8-seven-things-solak-thinks-chiefs-trade-goff-mvp",
       "sport": "NFL",
-      "published": "2026-10-27T11:00:42.000Z",
+      "published": "2026-10-27T12:23:34.000Z",
       "firstSeen": "2026-10-27T11:15:21.238Z",
       "bestRank": 2
+    },
+    {
+      "key": "50294214",
+      "id": "50294214",
+      "headline": "Peyton compares 'Omaha' to Dak Prescott's 'Here we go!' cadence",
+      "summary": "Peyton compares 'Omaha' to Dak Prescott's 'Here we go!' cadence",
+      "url": "https://www.espn.com/video/clip/_/id/50294214/peyton-compares-omaha-dak-prescott-here-go-cadence",
+      "sport": "NFL",
+      "published": "2026-10-27T12:23:21.000Z",
+      "firstSeen": "2026-10-27T06:46:19.630Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50294142",
+      "id": "50294142",
+      "headline": "Jalen Brunson shows Peyton and Eli his special painting",
+      "summary": "Jalen Brunson shows Peyton and Eli his special painting",
+      "url": "https://www.espn.com/video/clip/_/id/50294142/jalen-brunson-shows-peyton-eli-special-painting",
+      "sport": "NFL",
+      "published": "2026-10-27T12:22:33.000Z",
+      "firstSeen": "2026-10-27T06:46:19.630Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50287875",
+      "id": "50287875",
+      "headline": "NHL Tonight: Bruins-Canes highlights another massive night of games",
+      "summary": "Here's what you need to know about all 11 games on the NHL calendar on Tuesday.",
+      "url": "https://www.espn.com/nhl/story/_/id/50287875/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+      "sport": "NHL",
+      "published": "2026-10-27T12:21:44.000Z",
+      "firstSeen": "2026-10-27T11:15:21.238Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50293953",
+      "id": "50293953",
+      "headline": "Brewers ride 8-run fifth to Game 3 rout of Rays, take 3-0 World Series lead",
+      "summary": "The Brewers blew open Game 3 with an eight-run fifth inning and rolled to a 10-1 win over the Rays to move within one win of their first World Series title.",
+      "url": "https://www.espn.com/mlb/story/_/id/50293953/brewers-rout-rays-game-3-1-win-first-world-series-title",
+      "sport": "MLB",
+      "published": "2026-10-27T12:16:40.000Z",
+      "firstSeen": "2026-10-27T03:35:27.644Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50249218",
+      "id": "50249218",
+      "headline": "Men's college hoops mega-preview: storylines, predictions, picks",
+      "summary": "The college hoops season is here. Who will win it all? Here's everything to know before games begin.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50249218/mens-college-basketball-2026-27-preseason-storylines-predictions",
+      "sport": "College basketball",
+      "published": "2026-10-27T12:02:02.000Z",
+      "firstSeen": "2026-10-27T12:42:08.380Z",
+      "bestRank": 1
+    },
+    {
+      "key": "40699880",
+      "id": "40699880",
+      "headline": "Fantasy football buzz: Philly no problem for Dak Prescott and Cowboys",
+      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "sport": "NFL",
+      "published": "2026-10-27T12:01:04.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "30423107",
+      "id": "30423107",
+      "headline": "NCAA Women's Bracketology: 2027 women's college basketball projections",
+      "summary": "We have eight new teams in the field, but South Carolina and UConn remain No. 1 and 2.",
+      "url": "https://www.espn.com/espn/feature/story/_/id/30423107/ncaa-women-bracketology-2027-women-college-basketball-projections",
+      "sport": "Women's college basketball",
+      "published": "2026-10-27T11:55:49.000Z",
+      "firstSeen": "2026-10-27T12:42:08.380Z",
+      "bestRank": 1
+    },
+    {
+      "key": "30302581",
+      "id": "30302581",
+      "headline": "NCAA Bracketology: Predicting the 2027 men's March Madness field",
+      "summary": "The consensus No. 1 Gators don't scream national champion with any certainty. The Illini, however, could.",
+      "url": "https://www.espn.com/espn/feature/story/_/page/bracketology/ncaa-bracketology-2027-march-madness-men-field-predictions",
+      "sport": "College basketball",
+      "published": "2026-10-27T11:52:51.000Z",
+      "firstSeen": "2026-10-06T15:28:54.128Z",
+      "bestRank": 1
     },
     {
       "key": "46793185",
@@ -41,8 +173,19 @@
       "summary": "Every MLB team's odds to win the 2026 World Series, led by the Dodgers. Milwaukee and Tampa Bay continue to see odds improvement.",
       "url": "https://www.espn.com/espn/betting/story/_/id/46793185/espn-mlb-betting-odds-futures-bets-world-series-american-national-league",
       "sport": "MLB",
-      "published": "2026-10-27T10:56:50.000Z",
+      "published": "2026-10-27T11:45:52.000Z",
       "firstSeen": "2026-08-17T18:29:18.350Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50287797",
+      "id": "50287797",
+      "headline": "Man United tight-lipped with Carrick back at Carrington on Tuesday",
+      "summary": "Under-fire head coach Michael Carrick has arrived at Carrington after Manchester United chief executive Omar Berrada and director of football Jason Wilcox held talks over his future.",
+      "url": "https://www.espn.com/soccer/story/_/id/50287797/man-united-michael-carrick-pressure-carrington-omar-berrada-jason-wilcox",
+      "sport": "Soccer",
+      "published": "2026-10-27T11:20:34.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
       "bestRank": 1
     },
     {
@@ -55,17 +198,6 @@
       "published": "2026-10-27T10:50:10.000Z",
       "firstSeen": "2026-10-27T11:15:21.238Z",
       "bestRank": 2
-    },
-    {
-      "key": "50260679",
-      "id": "50260679",
-      "headline": "NBA season 2026-27: Best and worst from the first week",
-      "summary": "Our insiders break down standout moments and answer the biggest questions from the first days of the NBA season.",
-      "url": "https://www.espn.com/nba/story/_/id/50260679/nba-first-week-best-worst-moments-2026-27",
-      "sport": "NBA",
-      "published": "2026-10-27T10:49:10.000Z",
-      "firstSeen": "2026-10-27T11:15:21.238Z",
-      "bestRank": 1
     },
     {
       "key": "49998196",
@@ -156,17 +288,6 @@
       "bestRank": 3
     },
     {
-      "key": "50287797",
-      "id": "50287797",
-      "headline": "Man United tight-lipped with Carrick back at Carrington on Tuesday",
-      "summary": "Under-fire head coach Michael Carrick has arrived at Carrington after Manchester United chief executive Omar Berrada and director of football Jason Wilcox held talks over his future.",
-      "url": "https://www.espn.com/soccer/story/_/id/50287797/man-united-michael-carrick-pressure-carrington-omar-berrada-jason-wilcox",
-      "sport": "Soccer",
-      "published": "2026-10-27T10:14:10.000Z",
-      "firstSeen": "2026-10-26T15:41:58.901Z",
-      "bestRank": 1
-    },
-    {
       "key": "50288159",
       "id": "50288159",
       "headline": "Heisman race after Week 8: Miami's Malachi Toney is gaining ground",
@@ -176,17 +297,6 @@
       "published": "2026-10-27T10:08:13.000Z",
       "firstSeen": "2026-10-27T11:15:21.238Z",
       "bestRank": 2
-    },
-    {
-      "key": "50287875",
-      "id": "50287875",
-      "headline": "NHL Tonight: Bruins-Canes highlights another massive night of games",
-      "summary": "Here's what you need to know about all 11 games on the NHL calendar on Tuesday.",
-      "url": "https://www.espn.com/nhl/story/_/id/50287875/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-      "sport": "NHL",
-      "published": "2026-10-27T10:07:57.000Z",
-      "firstSeen": "2026-10-27T11:15:21.238Z",
-      "bestRank": 1
     },
     {
       "key": "50289558",
@@ -354,17 +464,6 @@
       "bestRank": 1
     },
     {
-      "key": "50293953",
-      "id": "50293953",
-      "headline": "Brewers ride 8-run fifth to Game 3 rout of Rays, take 3-0 World Series lead",
-      "summary": "The Brewers blew open Game 3 with an eight-run fifth inning and rolled to a 10-1 win over the Rays to move within one win of their first World Series title.",
-      "url": "https://www.espn.com/mlb/story/_/id/50293953/brewers-rout-rays-game-3-1-win-first-world-series-title",
-      "sport": "MLB",
-      "published": "2026-10-27T06:41:27.000Z",
-      "firstSeen": "2026-10-27T03:35:27.644Z",
-      "bestRank": 1
-    },
-    {
       "key": "50294687",
       "id": "50294687",
       "headline": "Cowboys keep pace in NFC East, end 2-game slide with road win over Eagles",
@@ -502,7 +601,7 @@
       "headline": "Here's what fans need to know in the sports world today",
       "summary": "Check out some of the top news of the day from the NFL, MLB and WNBA.",
       "url": "https://www.espn.com/video/clip/_/id/50294603/here-fans-need-know-sports-world-today",
-      "sport": "NFL",
+      "sport": "WNBA",
       "published": "2026-10-27T05:23:29.000Z",
       "firstSeen": "2026-10-27T06:46:19.630Z",
       "bestRank": 1
@@ -684,17 +783,6 @@
       "bestRank": 10
     },
     {
-      "key": "50294214",
-      "id": "50294214",
-      "headline": "Peyton compares 'Omaha' to Dak Prescott's 'Here we go!' cadence",
-      "summary": "Peyton compares 'Omaha' to Dak Prescott's 'Here we go!' cadence",
-      "url": "https://www.espn.com/video/clip/_/id/50294214/peyton-compares-omaha-dak-prescott-here-go-cadence",
-      "sport": "NFL",
-      "published": "2026-10-27T04:02:34.000Z",
-      "firstSeen": "2026-10-27T06:46:19.630Z",
-      "bestRank": 5
-    },
-    {
       "key": "50294160",
       "id": "50294160",
       "headline": "Memphis Grizzlies vs. Utah Jazz: Game Highlights",
@@ -739,17 +827,6 @@
       "bestRank": 13
     },
     {
-      "key": "50294142",
-      "id": "50294142",
-      "headline": "Jalen Brunson shows Peyton and Eli his special painting",
-      "summary": "Jalen Brunson shows Peyton and Eli his special painting",
-      "url": "https://www.espn.com/video/clip/_/id/50294142/jalen-brunson-shows-peyton-eli-special-painting",
-      "sport": "NFL",
-      "published": "2026-10-27T03:50:08.000Z",
-      "firstSeen": "2026-10-27T06:46:19.630Z",
-      "bestRank": 6
-    },
-    {
       "key": "50293075",
       "id": "50293075",
       "headline": "Suddenly thin Thunder lose Alex Caruso to ankle sprain",
@@ -761,23 +838,12 @@
       "bestRank": 17
     },
     {
-      "key": "49309401",
-      "id": "49309401",
-      "headline": "Fantasy football 12-team Knockout league rankings: The 154 players to draft",
-      "summary": "Rankings for knockout leagues, where the lowest-scoring team is eliminated and the last team standing wins.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49309401/fantasy-football-knockout-rankings-top-200",
-      "sport": "NFL",
-      "published": "2026-10-27T03:40:34.000Z",
-      "firstSeen": "2026-10-05T18:37:51.970Z",
-      "bestRank": 2
-    },
-    {
       "key": "50288799",
       "id": "50288799",
       "headline": "Dream, Valkyries to play Game 6, WNBA Finals at State Farm as Thursday matinee",
       "summary": "Game 6 of the WNBA Finals will be played Thursday at 12:30 p.m. ET at State Farm Arena in Atlanta. The start time of Cavs-Hawks will be pushed back to 8 p.m. ET.",
       "url": "https://www.espn.com/wnba/story/_/id/50288799/dream-valkyries-play-g6-wnba-finals-state-farm",
-      "sport": "NBA",
+      "sport": "WNBA",
       "published": "2026-10-27T03:35:21.000Z",
       "firstSeen": "2026-10-26T18:43:34.785Z",
       "bestRank": 1
@@ -1514,7 +1580,7 @@
       "headline": "Shelburne: Updated WNBA Finals Game 6 logistics 'the best of bad options'",
       "summary": "Shelburne: Updated WNBA Finals Game 6 logistics 'the best of bad options'",
       "url": "https://www.espn.com/video/clip/_/id/50289490/updated-wnba-finals-game-6-logistics-best-bad-options",
-      "sport": "NBA",
+      "sport": "WNBA",
       "published": "2026-10-26T19:36:11.000Z",
       "firstSeen": "2026-10-26T21:28:13.990Z",
       "bestRank": 1
@@ -1924,17 +1990,6 @@
       "sport": "MLB",
       "published": "2026-10-26T15:52:01.000Z",
       "firstSeen": "2026-10-26T15:41:58.901Z",
-      "bestRank": 1
-    },
-    {
-      "key": "40699880",
-      "id": "40699880",
-      "headline": "Fantasy football buzz: Who got the ball on Sunday?",
-      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "sport": "NFL",
-      "published": "2026-10-26T15:51:19.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
       "bestRank": 1
     },
     {
@@ -11755,7 +11810,7 @@
       "headline": "Tony Kornheiser and Michael Wilbon kick off PTI 25 with their top headlines",
       "summary": "Tony Kornheiser and Michael Wilbon kick off PTI 25 with their top headlines",
       "url": "https://www.espn.com/video/clip/_/id/50252633/tony-kornheiser-michael-wilbon-kick-pti-25-their-top-headlines",
-      "sport": "MLB",
+      "sport": "Golf",
       "published": "2026-10-22T23:10:03.000Z",
       "firstSeen": "2026-10-23T01:01:20.773Z",
       "bestRank": 2
@@ -16122,7 +16177,7 @@
       "headline": "Big 12 commish mulls new event if conference title games end",
       "summary": "Big 12 commissioner Brett Yormark said the league would find a new event to replace any lost conference title games should they be casualties of an expanded College Football Playoff.",
       "url": "https://www.espn.com/college-football/story/_/id/50231796/big-12-commish-mulls-new-event-conference-title-games-end",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-20T22:27:21.000Z",
       "firstSeen": "2026-10-20T21:28:05.035Z",
       "bestRank": 1
@@ -24845,7 +24900,7 @@
       "headline": "NCAA sues Ohio gov. over order allowing schools to ignore new eligibility rule",
       "summary": "The NCAA has filed a federal lawsuit against Ohio Gov. Mike DeWine three days after he signed an executive order giving the state's colleges and universities the option of allowing athletes who graduated from high school in 2022 to play a fifth year.",
       "url": "https://www.espn.com/college-sports/story/_/id/50196596/ncaa-sues-ohio-gov-eligibility-order-5th-year-athletes",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-16T20:07:31.000Z",
       "firstSeen": "2026-10-16T18:32:34.965Z",
       "bestRank": 1
@@ -29938,7 +29993,7 @@
       "headline": "Ohio Gov. Mike DeWine signs order letting state's 2022 athletes play in 2026-27",
       "summary": "Ohio Gov. Mike DeWine signed an executive order allowing 2022 athletes to play even though the NCAA's new guidance excludes those who have already played four seasons.",
       "url": "https://www.espn.com/college-sports/story/_/id/50177542/ohio-gov-dewine-signs-order-2022-athletes-play-2026-27",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-14T02:41:34.000Z",
       "firstSeen": "2026-10-14T00:58:06.882Z",
       "bestRank": 1
@@ -32523,7 +32578,7 @@
       "headline": "James Madison to exit Sun Belt, join American Conference",
       "summary": "James Madison has accepted membership into the American Athletic Association, the university announced Monday.",
       "url": "https://www.espn.com/college-sports/story/_/id/50166450/james-madison-exit-sun-belt-join-american-conference",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-12T15:30:06.000Z",
       "firstSeen": "2026-10-12T15:32:56.568Z",
       "bestRank": 1
@@ -39145,7 +39200,7 @@
       "headline": "Reports - Watchdog eyes NIL violations at 5-10 Power 4 schools",
       "summary": "The College Sports Commission is looking into possible rules violations at between five and 10 Power 4 schools regarding payments to players, according to multiple reports.",
       "url": "https://www.espn.com/college-football/story/_/id/50142371/reports-watchdog-eyes-nil-violations-5-10-power-4-schools",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-09T22:48:19.000Z",
       "firstSeen": "2026-10-09T21:28:17.260Z",
       "bestRank": 1
@@ -46147,17 +46202,6 @@
       "bestRank": 29
     },
     {
-      "key": "30302581",
-      "id": "30302581",
-      "headline": "NCAA Bracketology: Predicting the 2027 men's March Madness field",
-      "summary": "Denzel Aberdeen's (temporary) re-addition makes the 2025 champions even clearer favorites.",
-      "url": "https://www.espn.com/espn/feature/story/_/page/bracketology/ncaa-bracketology-2027-march-madness-men-field-predictions",
-      "sport": "College basketball",
-      "published": "2026-10-06T13:03:54.000Z",
-      "firstSeen": "2026-10-06T15:28:54.128Z",
-      "bestRank": 1
-    },
-    {
       "key": "50110415",
       "id": "50110415",
       "headline": "Knicks' Karl-Anthony Towns not expecting contract extension soon",
@@ -46177,72 +46221,6 @@
       "sport": "MLB",
       "published": "2026-10-06T13:00:43.000Z",
       "firstSeen": "2026-10-06T06:47:30.963Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50116177",
-      "id": "50116177",
-      "headline": "Yankees' 4 errors in Game 2 put them on the brink of elimination",
-      "summary": "The Yankees commit 4 errors in Game 2 as they go down 2-0 in the series against the Rays.",
-      "url": "https://www.espn.com/video/clip/_/id/50116177/yankees-4-errors-game-2-put-brink-elimination",
-      "sport": "MLB",
-      "published": "2026-10-06T12:25:32.000Z",
-      "firstSeen": "2026-10-06T15:28:54.128Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50116134",
-      "id": "50116134",
-      "headline": "Liverpool sweating over Jeremy Jacquet fitness ahead of Man City clash",
-      "summary": "Liverpool are waiting to discover the extent of Jeremy Jacquet's fitness issue after the centre-back was left out of France's Nations League win over Belgium.",
-      "url": "https://www.espn.com/soccer/story/_/id/50116134/liverpool-jeremy-jacquet-france-nations-league-man-city-premier-league",
-      "sport": "Soccer",
-      "published": "2026-10-06T12:15:01.000Z",
-      "firstSeen": "2026-10-06T15:28:54.128Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50114987",
-      "id": "50114987",
-      "headline": "Resurgent Falcons score 80 points in two-game winning streak",
-      "summary": "The 2-2 Falcons had a combined 16 points, the lowest total in the NFL, through two weeks, but after a 45-24 victory over the rival New Orleans Saints on \"Monday Night Football,\" Atlanta now has a league-high 80 combined points in a two-game winning surge.",
-      "url": "https://www.espn.com/nfl/story/_/id/50114987/resurgent-falcons-score-80-points-two-game-winning-streak",
-      "sport": "NFL",
-      "published": "2026-10-06T12:12:58.000Z",
-      "firstSeen": "2026-10-06T06:47:30.963Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50115954",
-      "id": "50115954",
-      "headline": "Nigeria considers FIFA compensation claim after DR Congo eligibility revelations",
-      "summary": "A top Nigerian National Sports Commission official says Nigeria have been vindicated over their challenge to DR Congo's use of ineligible players in World Cup qualifying.",
-      "url": "https://www.espn.com/espn/story/_/id/50115954/nigeria-considers-fifa-compensation-claim-dr-congo-eligibility-revelations",
-      "sport": "Soccer",
-      "published": "2026-10-06T11:59:21.000Z",
-      "firstSeen": "2026-10-06T18:20:57.367Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50115875",
-      "id": "50115875",
-      "headline": "Carlos Alcaraz retains Japan Open title in big step following injury layoff",
-      "summary": "Third-ranked Carlos Alcaraz beat Jiri Lehecka on Tuesday to defend his Japan Open title, in his second tournament back from an injury layoff.",
-      "url": "https://www.espn.com/tennis/story/_/id/50115875/carlos-alcaraz-retains-japan-open-title-big-step-following-injury-layoff",
-      "sport": "Tennis",
-      "published": "2026-10-06T11:55:17.000Z",
-      "firstSeen": "2026-10-06T12:41:30.006Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50115731",
-      "id": "50115731",
-      "headline": "Jannik Sinner to miss rest of year due to knee inflammation",
-      "summary": "Jannik Sinner, who already announced he'd miss the Shanghai Masters, announced Tuesday he would miss the rest of the year due to knee inflammation.",
-      "url": "https://www.espn.com/tennis/story/_/id/50115731/jannik-sinner-miss-rest-year-due-knee-inflammation",
-      "sport": "Tennis",
-      "published": "2026-10-06T11:31:18.000Z",
-      "firstSeen": "2026-10-06T11:15:09.369Z",
       "bestRank": 1
     }
   ]
