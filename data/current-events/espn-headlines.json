@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-26T21:28:13.990Z",
+  "generatedAt": "2026-10-27T01:01:30.698Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-05T21:28:13.990Z",
-  "windowEnd": "2026-10-26T21:28:13.990Z",
+  "windowStart": "2026-10-06T01:01:30.698Z",
+  "windowEnd": "2026-10-27T01:01:30.698Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,18 +21,337 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4187,
+  "count": 4175,
   "items": [
+    {
+      "key": "50284500",
+      "id": "50284500",
+      "headline": "WNBA Finals live: Valkyries-Dream Game 5 analysis, updates and highlights",
+      "summary": "The Finals resume with Game 5 at Golden State and the series at 2-2. ESPN is courtside for live analysis.",
+      "url": "https://www.espn.com/wnba/story/_/id/50284500/finals-game-5-golden-state-valkyries-atlanta-dream",
+      "sport": "WNBA",
+      "published": "2026-10-27T00:46:41.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50292072",
+      "id": "50292072",
+      "headline": "Pacers' Ben Sheppard to undergo surgery for torn meniscus",
+      "summary": "Indiana guard Ben Sheppard will undergo surgery for a torn meniscus on Wednesday.",
+      "url": "https://www.espn.com/nba/story/_/id/50292072/pacers-ben-sheppard-surgery-torn-meniscus",
+      "sport": "NBA",
+      "published": "2026-10-27T00:39:38.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50287797",
+      "id": "50287797",
+      "headline": "Man United tight-lipped after Carrick's Monday visit to Carrington",
+      "summary": "Under-fire head coach Michael Carrick has arrived at Carrington after Manchester United chief executive Omar Berrada and director of football Jason Wilcox held talks over his future.",
+      "url": "https://www.espn.com/soccer/story/_/id/50287797/man-united-michael-carrick-pressure-carrington-omar-berrada-jason-wilcox",
+      "sport": "Soccer",
+      "published": "2026-10-27T00:33:35.000Z",
+      "firstSeen": "2026-10-26T15:41:58.901Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50292059",
+      "id": "50292059",
+      "headline": "Robert Griffin III says he is '100 percent' interested in Baylor coaching job",
+      "summary": "Robert Griffin III, Baylor's only Heisman Trophy winner, said Monday that he is interested in being the Bears' new football coach.",
+      "url": "https://www.espn.com/college-football/story/_/id/50292059/robert-griffin-iii-says-wants-become-baylor-coach",
+      "sport": "College football",
+      "published": "2026-10-27T00:30:53.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50292087",
+      "id": "50292087",
+      "headline": "NC State's Goebbel vows to build on 'foundation' laid by fired coach Dave Doeren",
+      "summary": "New NC State interim coach Todd Goebbel thanked recently fired coach Dave Doeren on Friday, saying that he will field a team that Doeren \"will be proud of.\"",
+      "url": "https://www.espn.com/college-football/story/_/id/50292087/nc-state-todd-goebbel-gives-credit-fired-coach-doeren",
+      "sport": "College football",
+      "published": "2026-10-27T00:24:09.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50288401",
+      "id": "50288401",
+      "headline": "Mets' Francisco Lindor wins Roberto Clemente Award in 'full-circle moment'",
+      "summary": "Mets shortstop Francisco Lindor has won the Roberto Clemente Award from Major League Baseball for his humanitarian work.",
+      "url": "https://www.espn.com/mlb/story/_/id/50288401/mets-francisco-lindor-wins-roberto-clemente-award",
+      "sport": "MLB",
+      "published": "2026-10-27T00:02:31.000Z",
+      "firstSeen": "2026-10-26T18:43:34.785Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50282328",
+      "id": "50282328",
+      "headline": "Sources: United consider Howe, Nagelsmann to replace under-fire Carrick",
+      "summary": "Manchester United are weighing up replacements with Michael Carrick's future as head coach in serious doubt, sources told ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/50282328/man-united-howe-nagelsmann-replace-carrick",
+      "sport": "Soccer",
+      "published": "2026-10-27T00:01:40.000Z",
+      "firstSeen": "2026-10-26T01:02:51.522Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50292020",
+      "id": "50292020",
+      "headline": "Harry Kane thanks Tottenham, pays tribute to England after Ballon d'Or win",
+      "summary": "Harry Kane thanked Tottenham for helping him fulfil his dreams and paid tribute to his international teammates after becoming the first Englishman in 25 years to win the Ballon d'Or.",
+      "url": "https://www.espn.com/soccer/story/_/id/50292020/harry-kane-tottenham-england-thomas-tuchel-ballon-dor",
+      "sport": "Soccer",
+      "published": "2026-10-26T23:58:01.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50290179",
+      "id": "50290179",
+      "headline": "OKC's Jalen Williams (ankle), Cason Wallace (shoulder) to undergo surgery",
+      "summary": "Thunder guards Jalen Williams and Cason Wallace will both be sidelined indefinitely after undergoing ankle and shoulder surgery, respectively.",
+      "url": "https://www.espn.com/nba/story/_/id/50290179/thunder-jalen-williams-cason-wallace-undergo-surgery",
+      "sport": "NBA",
+      "published": "2026-10-26T23:47:56.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50265615",
+      "id": "50265615",
+      "headline": "Kane's long road to Ballon d'Or glory ends with his crowning moment",
+      "summary": "After a remarkable year for Bayern Munich and England, Harry Kane becoming the world's best player is the ultimate reward for years of perseverance.",
+      "url": "https://www.espn.com/soccer/story/_/id/50265615/harry-kanes-long-road-ballon-dor-glory-ends-crowning-moment",
+      "sport": "Soccer",
+      "published": "2026-10-26T23:44:57.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50291435",
+      "id": "50291435",
+      "headline": "Auburn fires GM Brian Kloman over Rubstavicius' eligibility case, source says",
+      "summary": "Auburn fired general manager Brian Kloman after alleging he withheld information vital to Mantas Rubstavicius' eligibility case, a source told ESPN.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50291435/auburn-fires-gm-brian-kloman-rubstavicius-eligibility-case",
+      "sport": "College basketball",
+      "published": "2026-10-26T23:44:09.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50291573",
+      "id": "50291573",
+      "headline": "Cardinals WR Jalen Brooks to miss rest of season with wrist injury",
+      "summary": "Cardinals wide receiver Jalen Brooks posted on social media Monday that he will miss the rest of the season with a wrist injury.",
+      "url": "https://www.espn.com/nfl/story/_/id/50291573/cardinals-jalen-brooks-wrist-miss-rest-season",
+      "sport": "NFL",
+      "published": "2026-10-26T23:41:13.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50288799",
+      "id": "50288799",
+      "headline": "Dream, Valkyries to play Game 6, WNBA Finals at State Farm as Thursday matinee",
+      "summary": "Game 6 of the WNBA Finals will be played Thursday at 12:30 p.m. ET at State Farm Arena in Atlanta. The start time of Cavs-Hawks will be pushed back to 8 p.m. ET.",
+      "url": "https://www.espn.com/wnba/story/_/id/50288799/dream-valkyries-play-g6-wnba-finals-state-farm",
+      "sport": "WNBA",
+      "published": "2026-10-26T23:35:10.000Z",
+      "firstSeen": "2026-10-26T18:43:34.785Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50291280",
+      "id": "50291280",
+      "headline": "Panthers RT Taylor Moton to undergo season-ending ankle surgery",
+      "summary": "Panthers right tackle Taylor Moton will undergo season-ending ankle surgery while also recovering from a fractured fibula in his left leg.",
+      "url": "https://www.espn.com/nfl/story/_/id/50291280/panthers-taylor-moton-season-ending-ankle-surgery",
+      "sport": "NFL",
+      "published": "2026-10-26T23:27:47.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50291324",
+      "id": "50291324",
+      "headline": "Giants' Cam Skattebo, John Harbaugh object to lowering helmet penalty",
+      "summary": "Giants coach John Harbaugh and Cam Skattebo took issue with a first-quarter penalty call Sunday against Houston, when the running back was flagged for unnecessary roughness for impermissible helmet contact.",
+      "url": "https://www.espn.com/nfl/story/_/id/50291324/giants-cam-skattebo-john-harbaugh-object-lowering-helmet-penalty",
+      "sport": "NFL",
+      "published": "2026-10-26T23:26:18.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50291823",
+      "id": "50291823",
+      "headline": "Who will replace Carrick if he's sacked as Manchester United head coach?",
+      "summary": "Who will replace Carrick if he's sacked as Manchester United head coach?",
+      "url": "https://www.espn.com/video/clip/_/id/50291823/who-replace-carrick-sacked-manchester-united-head-coach",
+      "sport": "Soccer",
+      "published": "2026-10-26T23:21:35.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 2
+    },
     {
       "key": "50290470",
       "id": "50290470",
       "headline": "Ex-Cowboy Dez Bryant calls out police investigation after he's cited for assault",
-      "summary": "Dez Bryant is calling for a thorough investigation by the Southlake Police Department of an incident that resulted in him receiving a citation for assault.",
+      "summary": "Dez Bryant is calling for a thorough investigation by Texas' Southlake Police Department of an incident that resulted in him receiving a citation for assault.",
       "url": "https://www.espn.com/nfl/story/_/id/50290470/dez-bryant-calls-police-cited-assault",
       "sport": "NFL",
-      "published": "2026-10-26T21:25:56.000Z",
+      "published": "2026-10-26T23:11:04.000Z",
       "firstSeen": "2026-10-26T21:28:13.990Z",
       "bestRank": 1
+    },
+    {
+      "key": "50291534",
+      "id": "50291534",
+      "headline": "Cole's Block Party: Full slabs, extra sauce and belly imprints",
+      "summary": "Read & React's Cole Cubelic and Roman Harper review some of Week 8's strongest blocks, including one who adds \"extra sauce\".",
+      "url": "https://www.espn.com/video/clip/_/id/50291534/full-slabs-extra-sauce-belly-imprints",
+      "sport": "College football",
+      "published": "2026-10-26T22:59:56.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50291525",
+      "id": "50291525",
+      "headline": "Cole Cubelic previews Florida vs. Georgia possibilities",
+      "summary": "SEC Network's Cubelic joins The Paul Finebaum Show to explain what the No. 17 Gators and the No. 3 Bulldogs must do on both sides of the ball to win.",
+      "url": "https://www.espn.com/video/clip/_/id/50291525/cole-cubelic-previews-florida-vs-georgia-possibilities",
+      "sport": "College football",
+      "published": "2026-10-26T22:59:05.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50252261",
+      "id": "50252261",
+      "headline": "Steelers Aaron Rodgers, QB room lead NFL Week 7's best arrivals",
+      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "url": "https://www.espn.com/nfl/story/_/id/50252261/nfl-week-7-fashionable-arrivals",
+      "sport": "NFL",
+      "published": "2026-10-26T22:50:32.000Z",
+      "firstSeen": "2026-10-23T01:01:20.773Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50287191",
+      "id": "50287191",
+      "headline": "Jalen Williams, Cason Wallace injured: What's next for the OKC Thunder?",
+      "summary": "The Thunder will be without two starting guards for months. Could they make a trade to try to replace Jalen Williams and Cason Wallace?",
+      "url": "https://www.espn.com/nba/story/_/id/50287191/jalen-williams-cason-wallace-injured-next-thunder",
+      "sport": "NBA",
+      "published": "2026-10-26T22:38:25.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49960162",
+      "id": "49960162",
+      "headline": "Fantasy basketball points league rankings update: George, Jerome on the rise",
+      "summary": "Updated fantasy basketball rankings for points leagues, with Cade Cunningham and Jalen Johnson starting the season higher than ever before.",
+      "url": "https://www.espn.com/fantasy/basketball/story/_/id/49960162/fantasy-basketball-points-league-rankings-2026-27-nba-season",
+      "sport": "NBA",
+      "published": "2026-10-26T22:21:47.000Z",
+      "firstSeen": "2026-10-09T15:29:39.177Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50288053",
+      "id": "50288053",
+      "headline": "U.S. senators call on NBA to reevaluate Rwanda partnership",
+      "summary": "Two U.S. senators called on the NBA to reevaluate a partnership with Rwanda and its dictator Paul Kagame, citing the American government's changing policy toward the small African nation.",
+      "url": "https://www.espn.com/nba/story/_/id/50288053/us-senators-call-nba-reevaluate-rwanda-partnership",
+      "sport": "NBA",
+      "published": "2026-10-26T22:08:25.000Z",
+      "firstSeen": "2026-10-26T18:43:34.785Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50290675",
+      "id": "50290675",
+      "headline": "Blues condemn 'vile messages of hate' by fans at recent home game",
+      "summary": "The St. Louis Blues condemned what they called an antisemitic protest during a game last week at their home arena, labeling the signs as \"vile messages of hate.\"",
+      "url": "https://www.espn.com/nhl/story/_/id/50290675/blues-condemn-antisemitic-protest-fans-recent-home-game",
+      "sport": "NHL",
+      "published": "2026-10-26T22:08:21.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50290411",
+      "id": "50290411",
+      "headline": "Ravens' Jesse Minter optimistic QB Lamar Jackson can return vs. Bills",
+      "summary": "Ravens coach Jesse Minter expressed optimism Monday that quarterback Lamar Jackson could be available for Sunday's game against the Bills.",
+      "url": "https://www.espn.com/nfl/story/_/id/50290411/ravens-coach-minter-optimistic-qb-jackson-returns-vs-bills",
+      "sport": "NFL",
+      "published": "2026-10-26T22:02:48.000Z",
+      "firstSeen": "2026-10-26T21:28:13.990Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50290812",
+      "id": "50290812",
+      "headline": "Cubelic, Harper predict the scariest SEC schedules",
+      "summary": "Read & React's Cole Cubelic and Roman Harper celebrate spooky season by evaluating which teams in the conference could have the scariest slate left to the season.",
+      "url": "https://www.espn.com/video/clip/_/id/50290812/cubelic-harper-predict-scariest-sec-schedules",
+      "sport": "College football",
+      "published": "2026-10-26T21:46:37.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50290055",
+      "id": "50290055",
+      "headline": "ESPN's Heather Dinich outlines CFP metrics, 'sneaky new' factor",
+      "summary": "Dinich breaks down what metrics will be used to select College Football Playoff contenders, including a new metric that factors in \"strength of teams against their own league.\"",
+      "url": "https://www.espn.com/video/clip/_/id/50290055/espn-heather-dinich-outlines-cfp-metrics-sneaky-new-factor",
+      "sport": "College football",
+      "published": "2026-10-26T21:34:28.000Z",
+      "firstSeen": "2026-10-26T21:28:13.990Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50290389",
+      "id": "50290389",
+      "headline": "Browns activate Gabriel off IR, now have 4 QBs on roster",
+      "summary": "The Browns activated quarterback Dillon Gabriel off injured reserve Monday, giving the team four passers on the 53-man roster.",
+      "url": "https://www.espn.com/nfl/story/_/id/50290389/browns-activate-gabriel-ir-now-4-qbs-roster",
+      "sport": "NFL",
+      "published": "2026-10-26T21:33:15.000Z",
+      "firstSeen": "2026-10-26T21:28:13.990Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50290611",
+      "id": "50290611",
+      "headline": "No Huddle! Hustling through the storylines to look out for in Week 9",
+      "summary": "Read & React's Cole Cubelic and Roman Harper deliver a crash course on keys to successful matchups in Week 9.",
+      "url": "https://www.espn.com/video/clip/_/id/50290611/no-huddle-hustling-storylines-look-week-9",
+      "sport": "College football",
+      "published": "2026-10-26T21:28:57.000Z",
+      "firstSeen": "2026-10-27T01:01:30.698Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50288944",
+      "id": "50288944",
+      "headline": "Tennessee RB commit David Gabriel Georges' viral return block sends shockwaves",
+      "summary": "The viral star is committed to Tennessee and ranks No. 13 in the SCNext 300.",
+      "url": "https://www.espn.com/college-football/story/_/id/50288944/davidgarbiel-georges-tennessee-commit-viral-block",
+      "sport": "College football",
+      "published": "2026-10-26T21:23:36.000Z",
+      "firstSeen": "2026-10-26T21:28:13.990Z",
+      "bestRank": 5
     },
     {
       "key": "50290557",
@@ -42,17 +361,6 @@
       "url": "https://www.espn.com/video/clip/_/id/50290557/roman-impressed-week-8-brings-definitely-impressive-clip",
       "sport": "College football",
       "published": "2026-10-26T21:21:40.000Z",
-      "firstSeen": "2026-10-26T21:28:13.990Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50290411",
-      "id": "50290411",
-      "headline": "Ravens' Jesse Minter optimistic QB Lamar Jackson can return vs. Bills",
-      "summary": "Ravens coach Jesse Minter expressed optimism Monday that quarterback Lamar Jackson could be available for Sunday's game against the Bills.",
-      "url": "https://www.espn.com/nfl/story/_/id/50290411/ravens-coach-minter-optimistic-qb-jackson-returns-vs-bills",
-      "sport": "NFL",
-      "published": "2026-10-26T21:19:46.000Z",
       "firstSeen": "2026-10-26T21:28:13.990Z",
       "bestRank": 2
     },
@@ -68,26 +376,15 @@
       "bestRank": 1
     },
     {
-      "key": "50288401",
-      "id": "50288401",
-      "headline": "Mets' Francisco Lindor wins Roberto Clemente Award",
-      "summary": "Mets shortstop Francisco Lindor has won the Roberto Clemente Award from Major League Baseball for his humanitarian work.",
-      "url": "https://www.espn.com/mlb/story/_/id/50288401/mets-francisco-lindor-wins-roberto-clemente-award",
-      "sport": "MLB",
-      "published": "2026-10-26T21:04:22.000Z",
-      "firstSeen": "2026-10-26T18:43:34.785Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50290389",
-      "id": "50290389",
-      "headline": "Browns activate Gabriel off IR, now have 4 QBs on roster",
-      "summary": "The Browns activated quarterback Dillon Gabriel off injured reserve Monday, giving the team four passers on the 53-man roster.",
-      "url": "https://www.espn.com/nfl/story/_/id/50290389/browns-activate-gabriel-ir-now-4-qbs-roster",
-      "sport": "NFL",
-      "published": "2026-10-26T21:03:10.000Z",
-      "firstSeen": "2026-10-26T21:28:13.990Z",
-      "bestRank": 3
+      "key": "50281281",
+      "id": "50281281",
+      "headline": "Inside Ballhalla, the basketball heaven in San Francisco",
+      "summary": "Golden State's arena has quickly become known for the best atmosphere in the W. Welcome to Ballhalla.",
+      "url": "https://www.espn.com/wnba/story/_/id/50281281/ballhalla-golden-state-valkyries-wnba-finals",
+      "sport": "WNBA",
+      "published": "2026-10-26T21:09:18.000Z",
+      "firstSeen": "2026-10-26T14:06:18.685Z",
+      "bestRank": 2
     },
     {
       "key": "50290413",
@@ -110,17 +407,6 @@
       "published": "2026-10-26T20:47:06.000Z",
       "firstSeen": "2026-08-31T01:06:00.592Z",
       "bestRank": 2
-    },
-    {
-      "key": "50287797",
-      "id": "50287797",
-      "headline": "Man United head coach Michael Carrick leaves Carrington amid doubts over his future",
-      "summary": "Under-fire head coach Michael Carrick has arrived at Carrington after Manchester United chief executive Omar Berrada and director of football Jason Wilcox held talks over his future.",
-      "url": "https://www.espn.com/soccer/story/_/id/50287797/man-united-michael-carrick-pressure-carrington-omar-berrada-jason-wilcox",
-      "sport": "Soccer",
-      "published": "2026-10-26T20:45:49.000Z",
-      "firstSeen": "2026-10-26T15:41:58.901Z",
-      "bestRank": 1
     },
     {
       "key": "50289866",
@@ -178,28 +464,6 @@
       "bestRank": 1
     },
     {
-      "key": "50290055",
-      "id": "50290055",
-      "headline": "ESPN's Heather Dinich outlines CFP metrics, \"sneaky new\" factor",
-      "summary": "Dinich breaks down what metrics will be used to select College Football Playoff contenders, including a new metric that factors in \"strength of teams against their own league.\"",
-      "url": "https://www.espn.com/video/clip/_/id/50290055/espn-heather-dinich-outlines-cfp-metrics-sneaky-new-factor",
-      "sport": "College football",
-      "published": "2026-10-26T20:08:15.000Z",
-      "firstSeen": "2026-10-26T21:28:13.990Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50288944",
-      "id": "50288944",
-      "headline": "Tennessee RB commit Daniel Gabriel Georges' viral return block sends shockwaves",
-      "summary": "The viral star is committed to Tennessee and ranks No. 13 in the SCNext 300.",
-      "url": "https://www.espn.com/college-football/story/_/id/50288944/daniel-garbiel-georges-tennessee-commit-viral-block",
-      "sport": "College football",
-      "published": "2026-10-26T20:00:59.000Z",
-      "firstSeen": "2026-10-26T21:28:13.990Z",
-      "bestRank": 5
-    },
-    {
       "key": "50285660",
       "id": "50285660",
       "headline": "Transfer rumors, news: PSG eye Man United wonderkid Gabriel",
@@ -219,17 +483,6 @@
       "sport": "NFL",
       "published": "2026-10-26T19:39:56.000Z",
       "firstSeen": "2026-09-09T18:32:12.007Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50288799",
-      "id": "50288799",
-      "headline": "Dream, Valkyries to play Game 6, WNBA Finals at State Farm as Thursday matinee",
-      "summary": "Game 6 of the WNBA Finals will be played Thursday at 12:30 p.m. ET at State Farm Arena in Atlanta. The start time of Cavs-Hawks will be pushed back to 8 p.m. ET.",
-      "url": "https://www.espn.com/wnba/story/_/id/50288799/dream-valkyries-play-g6-wnba-finals-state-farm",
-      "sport": "WNBA",
-      "published": "2026-10-26T19:36:58.000Z",
-      "firstSeen": "2026-10-26T18:43:34.785Z",
       "bestRank": 1
     },
     {
@@ -552,17 +805,6 @@
       "bestRank": 2
     },
     {
-      "key": "50282328",
-      "id": "50282328",
-      "headline": "Sources: United consider Howe, Nagelsmann to replace under-fire Carrick",
-      "summary": "Manchester United are weighing up replacements with Michael Carrick's future as head coach in serious doubt, sources told ESPN.",
-      "url": "https://www.espn.com/soccer/story/_/id/50282328/man-united-howe-nagelsmann-replace-carrick",
-      "sport": "Soccer",
-      "published": "2026-10-26T16:48:58.000Z",
-      "firstSeen": "2026-10-26T01:02:51.522Z",
-      "bestRank": 2
-    },
-    {
       "key": "50259828",
       "id": "50259828",
       "headline": "How Payton Pritchard became Boston's unlikely iso king",
@@ -583,17 +825,6 @@
       "published": "2026-10-26T16:37:08.000Z",
       "firstSeen": "2026-10-26T18:43:34.785Z",
       "bestRank": 3
-    },
-    {
-      "key": "50288053",
-      "id": "50288053",
-      "headline": "U.S. senators call on NBA to reevaluate Rwanda partnership",
-      "summary": "Two U.S. senators called on the NBA to reevaluate a partnership with Rwanda and its dictator Paul Kagame, citing the American government's changing policy toward the small African nation.",
-      "url": "https://www.espn.com/nba/story/_/id/50288053/us-senators-call-nba-reevaluate-rwanda-partnership",
-      "sport": "NBA",
-      "published": "2026-10-26T16:36:05.000Z",
-      "firstSeen": "2026-10-26T18:43:34.785Z",
-      "bestRank": 4
     },
     {
       "key": "50288252",
@@ -715,17 +946,6 @@
       "published": "2026-10-26T15:49:00.000Z",
       "firstSeen": "2026-10-26T18:43:34.785Z",
       "bestRank": 9
-    },
-    {
-      "key": "50281281",
-      "id": "50281281",
-      "headline": "Inside Ballhalla, the basketball heaven in San Francisco",
-      "summary": "Golden State's arena has quickly become known for the best atmosphere in the W. Welcome to Ballhalla.",
-      "url": "https://www.espn.com/wnba/story/_/id/50281281/ballhalla-golden-state-valkyries-wnba-finals",
-      "sport": "WNBA",
-      "published": "2026-10-26T15:41:56.000Z",
-      "firstSeen": "2026-10-26T14:06:18.685Z",
-      "bestRank": 2
     },
     {
       "key": "50287910",
@@ -2299,17 +2519,6 @@
       "published": "2026-10-25T23:21:03.000Z",
       "firstSeen": "2026-10-26T01:02:51.522Z",
       "bestRank": 2
-    },
-    {
-      "key": "50252261",
-      "id": "50252261",
-      "headline": "Steelers Aaron Rodgers, QB room lead NFL Week 7's best arrivals",
-      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
-      "url": "https://www.espn.com/nfl/story/_/id/50252261/nfl-week-7-fashionable-arrivals",
-      "sport": "NFL",
-      "published": "2026-10-25T23:18:44.000Z",
-      "firstSeen": "2026-10-23T01:01:20.773Z",
-      "bestRank": 8
     },
     {
       "key": "50282231",
@@ -39019,17 +39228,6 @@
       "bestRank": 4
     },
     {
-      "key": "49960162",
-      "id": "49960162",
-      "headline": "Fantasy basketball points league rankings: Cade Cunningham, Jalen Johnson are first-rounders",
-      "summary": "Updated fantasy basketball rankings for points leagues, with Cade Cunningham and Jalen Johnson starting the season higher than ever before.",
-      "url": "https://www.espn.com/fantasy/basketball/story/_/id/49960162/fantasy-basketball-points-league-rankings-2026-27-nba-season",
-      "sport": "NBA",
-      "published": "2026-10-09T13:48:38.000Z",
-      "firstSeen": "2026-10-09T15:29:39.177Z",
-      "bestRank": 4
-    },
-    {
       "key": "50140154",
       "id": "50140154",
       "headline": "Iraola bemoans the 'uncertainty' surrounding Manchester City situation",
@@ -45749,336 +45947,6 @@
       "published": "2026-10-06T01:10:04.000Z",
       "firstSeen": "2026-10-05T21:28:20.741Z",
       "bestRank": 1
-    },
-    {
-      "key": "50112533",
-      "id": "50112533",
-      "headline": "Cardinals LT Paris Johnson out for season after tearing biceps",
-      "summary": "Cardinals starting left tackle Paris Johnson Jr. is out for the season after tearing his left biceps in a 36-24 loss to the New York Giants on Sunday.",
-      "url": "https://www.espn.com/nfl/story/_/id/50112533/cardinals-lt-paris-johnson-season-tearing-biceps",
-      "sport": "NFL",
-      "published": "2026-10-06T00:56:13.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50111452",
-      "id": "50111452",
-      "headline": "NFL suspends officials Jeff Seeman, Adrian Hill for conduct toward players",
-      "summary": "The NFL has suspended line judge Jeff Seeman for two games for appearing to swear at Cardinals tight end Trey McBride. Referee Adrian Hill has been suspended one game for a separate incident in the Vikings' win over the Dolphins.",
-      "url": "https://www.espn.com/nfl/story/_/id/50111452/nfl-suspends-officials-jeff-seeman-adrian-hill-conduct-players",
-      "sport": "NFL",
-      "published": "2026-10-06T00:52:07.000Z",
-      "firstSeen": "2026-10-05T21:28:20.741Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50113295",
-      "id": "50113295",
-      "headline": "Breslow, Tracy: Red Sox not overly reliant on analytics",
-      "summary": "Red Sox chief baseball officer Craig Breslow and manager Chad Tracy were adamant there is no franchise-wide directive regarding how analytics are used on or off the field.",
-      "url": "https://www.espn.com/mlb/story/_/id/50113295/breslow-tracy-red-sox-not-overly-reliant-analytics",
-      "sport": "MLB",
-      "published": "2026-10-06T00:47:23.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50113284",
-      "id": "50113284",
-      "headline": "Jaylen Brown drops 22 points in first half of 76ers preseason debut",
-      "summary": "Jaylen Brown drops 22 points in first half of 76ers preseason debut",
-      "url": "https://www.espn.com/video/clip/_/id/50113284/jaylen-brown-drops-22-points-first-half-76ers-preseason-debut",
-      "sport": "NBA",
-      "published": "2026-10-06T00:35:37.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50113045",
-      "id": "50113045",
-      "headline": "Refs incorrectly officiated Nebraska's final PAT attempt, Big Ten says",
-      "summary": "The Big Ten acknowledged an officiating error in Saturday's Maryland-Nebraska game that should have resulted in the Huskers retrying a point-after-touchdown attempt.",
-      "url": "https://www.espn.com/college-football/story/_/id/50113045/refs-incorrectly-officiated-nebraska-final-pat-attempt-big-ten-says",
-      "sport": "College football",
-      "published": "2026-10-06T00:28:27.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50113263",
-      "id": "50113263",
-      "headline": "White Sox hold on to take 2-0 series lead",
-      "summary": "White Sox hold on to take 2-0 series lead",
-      "url": "https://www.espn.com/video/clip/_/id/50113263/white-sox-hold-take-2-0-series-lead",
-      "sport": "MLB",
-      "published": "2026-10-06T00:26:19.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50112395",
-      "id": "50112395",
-      "headline": "Chargers OT Rashawn Slater dealing with high ankle sprain",
-      "summary": "Chargers offensive tackle Rashawn Slater suffered a high right ankle sprain in Sunday's loss to the Seahawks in Seattle, coach Jim Harbaugh said Monday.",
-      "url": "https://www.espn.com/nfl/story/_/id/50112395/sources-chargers-ot-rashawn-slater-high-ankle-sprain",
-      "sport": "NFL",
-      "published": "2026-10-06T00:03:31.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50112467",
-      "id": "50112467",
-      "headline": "NFL Week 4: CeeDee Lamb, Joe Burrow and more fuel best quotes",
-      "summary": "From family reunions to postgame trash talk, here are some of the sharpest sound bites and one-liners from around the league in Week 4.",
-      "url": "https://www.espn.com/nfl/story/_/id/50112467/nfl-week-4-top-quotes-ceedee-lamb-joe-burrow-cj-gardner-johnson-mike-vrabel",
-      "sport": "NFL",
-      "published": "2026-10-05T23:50:50.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50112914",
-      "id": "50112914",
-      "headline": "Cole's Block Party: An Alabama takeover",
-      "summary": "Read & React's Cole Cubelic and Roman Harper take a look at some of the best blocks from Week 5 with Alabama and Kentucky leading the charge.",
-      "url": "https://www.espn.com/video/clip/_/id/50112914/alabama-takeover",
-      "sport": "College football",
-      "published": "2026-10-05T23:22:54.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50112891",
-      "id": "50112891",
-      "headline": "Roman Harper celebrates 20th anniversary of Superdome reopening",
-      "summary": "SEC Network's Harper reflects on the New Orleans Saints' first game back in the Superdome after Hurricane Katrina as he expresses the emotions he feels 20 years later.",
-      "url": "https://www.espn.com/video/clip/_/id/50112891/roman-harper-celebrates-20th-anniversary-superdome-reopening",
-      "sport": "College football",
-      "published": "2026-10-05T23:11:06.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50111568",
-      "id": "50111568",
-      "headline": "Sources: Chiefs WR Tyquan Thornton expected back in 12-16 weeks",
-      "summary": "Chiefs wide receiver Tyquan Thornton is expected back from a dislocated left ankle injury within 12 to 16 weeks, sources told NFL Network.",
-      "url": "https://www.espn.com/nfl/story/_/id/50111568/sources-chiefs-wr-tyquan-thornton-expected-back-12-16-weeks",
-      "sport": "NFL",
-      "published": "2026-10-05T23:03:22.000Z",
-      "firstSeen": "2026-10-05T21:28:20.741Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50112664",
-      "id": "50112664",
-      "headline": "Cowboys' Tyler Smith hoping to be ready to face Bucs",
-      "summary": "Cowboys Pro Bowl guard Tyler Smith hopes to make his season debut Thursday against the Buccaneers after having surgery last month on his left thumb.",
-      "url": "https://www.espn.com/nfl/story/_/id/50112664/cowboys-tyler-smith-hoping-ready-face-bucs",
-      "sport": "NFL",
-      "published": "2026-10-05T22:57:26.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50079780",
-      "id": "50079780",
-      "headline": "NFL Week 4's best arrivals, led by Saints DE Cam Jordan",
-      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
-      "url": "https://www.espn.com/nfl/story/_/id/50079780/nfl-week-4-fashionable-arrivals",
-      "sport": "NFL",
-      "published": "2026-10-05T22:54:10.000Z",
-      "firstSeen": "2026-10-02T01:05:46.277Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50112291",
-      "id": "50112291",
-      "headline": "McVay: Rams coaches will 'learn' from incident with Eagles fans",
-      "summary": "Rams coach Sean McVay says his assistant coaches will learn from their viral interaction with Eagles fans during Sunday's win over Philadelphia.",
-      "url": "https://www.espn.com/nfl/story/_/id/50112291/mcvay-rams-coaches-learn-incident-eagles-fans",
-      "sport": "NFL",
-      "published": "2026-10-05T22:51:19.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50111779",
-      "id": "50111779",
-      "headline": "Bengals WR Tee Higgins day-to-day with adductor injury, coach says",
-      "summary": "Bengals wide receiver Tee Higgins is considered day-to-day with an adductor issue he suffered toward the end of Sunday's 22-17 loss to the Jacksonville Jaguars.",
-      "url": "https://www.espn.com/nfl/story/_/id/50111779/bengals-wr-tee-higgins-day-day-adductor-injury-coach-says",
-      "sport": "NFL",
-      "published": "2026-10-05T22:42:17.000Z",
-      "firstSeen": "2026-10-05T21:28:20.741Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50112665",
-      "id": "50112665",
-      "headline": "Arizona leading receiver Tre Spivey out for rest of season",
-      "summary": "Arizona leading receiver Tre Spivey, injured on the final play of the first half of the Wildcats' 34-7 win over the Cincinnati Bearcats, will miss the remainder of the season with a broken foot, coach Brent Brennan told reporters on Monday.",
-      "url": "https://www.espn.com/college-football/story/_/id/50112665/arizona-leading-receiver-tre-spivey-rest-season",
-      "sport": "College football",
-      "published": "2026-10-05T22:37:51.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50111202",
-      "id": "50111202",
-      "headline": "Sources: 49ers Pro Bowl FB Juszczyk (knee) expected out 2-3 weeks",
-      "summary": "49ers Pro Bowl fullback Kyle Juszczyk suffered a knee sprain and bone bruise that is expected to sideline him for two to three weeks, sources told ESPN's Adam Schefter and NFL Network's Ian Rapoport.",
-      "url": "https://www.espn.com/nfl/story/_/id/50111202/sources-49ers-pro-bowl-fb-juszczyk-knee-expected-2-3-weeks",
-      "sport": "NFL",
-      "published": "2026-10-05T22:35:18.000Z",
-      "firstSeen": "2026-10-05T21:28:20.741Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50112659",
-      "id": "50112659",
-      "headline": "Who has the advantage: No. 6 Alabama vs. No. 2 Georgia",
-      "summary": "SEC Network's Roman Harper and Cole Cubelic run through a list of scenarios for the Bulldogs and Crimson Tide matchup and pick the side they favor for each one.",
-      "url": "https://www.espn.com/video/clip/_/id/50112659/no-6-alabama-vs-no-2-georgia",
-      "sport": "College football",
-      "published": "2026-10-05T22:34:07.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50112632",
-      "id": "50112632",
-      "headline": "No Huddle! A rapid-fire look at Week 6 big matchups",
-      "summary": "Read & React's Cole Cubelic and Roman Harper take a quick snap and hustle through a breakdown of some of Week 6's biggest games.",
-      "url": "https://www.espn.com/video/clip/_/id/50112632/no-huddle-rapid-fire-look-week-6-big-matchups",
-      "sport": "College football",
-      "published": "2026-10-05T22:32:38.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50110299",
-      "id": "50110299",
-      "headline": "Why a Tyreek Hill-Chiefs reunion makes so much sense",
-      "summary": "The Chiefs had been monitoring and receiving updates on Hill's rehab and training sessions, even before the injuries to Tyquan Thornton and Rashee Rice.",
-      "url": "https://www.espn.com/nfl/story/_/id/50110299/tyreek-hill-chiefs-reunion-help",
-      "sport": "NFL",
-      "published": "2026-10-05T22:32:10.000Z",
-      "firstSeen": "2026-10-05T21:28:20.741Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50112444",
-      "id": "50112444",
-      "headline": "Sources: Jordan Hawkins to join Bulls on two-way deal",
-      "summary": "Former lottery pick Jordan Hawkins is signing a two-way deal with the Chicago Bulls, sources told ESPN's Shams Charania on Monday.",
-      "url": "https://www.espn.com/nba/story/_/id/50112444/sources-jordan-hawkins-join-bulls-two-way-deal",
-      "sport": "NBA",
-      "published": "2026-10-05T22:10:45.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50108832",
-      "id": "50108832",
-      "headline": "Fantasy football free agent pickups: Kirk Cousins, Keon Coleman lead top options",
-      "summary": "Eric Karabell lists who he thinks are the top available players worth adding for the week ahead.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50108832/fantasy-football-waiver-wire-free-agent-pickups-nfl-week-5",
-      "sport": "NFL",
-      "published": "2026-10-05T22:00:33.000Z",
-      "firstSeen": "2026-10-05T15:32:14.238Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50110767",
-      "id": "50110767",
-      "headline": "Roman Harper says Alabama 'looks the part' as title contenders",
-      "summary": "Harper tells SEC This Morning crew that he is impressed with Alabama's defensive intensity and offensive flow heading into Week 6.",
-      "url": "https://www.espn.com/video/clip/_/id/50110767/roman-harper-says-alabama-looks-part-title-contenders",
-      "sport": "College football",
-      "published": "2026-10-05T21:53:49.000Z",
-      "firstSeen": "2026-10-05T18:37:51.970Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50112017",
-      "id": "50112017",
-      "headline": "Mike Elko stresses significance in Texas A&M blocking outside noise",
-      "summary": "Elko stresses that after wins, the Aggies need to experience joy from their own success rather than relief from external pressures.",
-      "url": "https://www.espn.com/video/clip/_/id/50112017/mike-elko-stresses-significance-texas-blocking-noise",
-      "sport": "College football",
-      "published": "2026-10-05T21:52:21.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50112267",
-      "id": "50112267",
-      "headline": "Roman, Are You Impressed? Week 5 brings some must-see highlights",
-      "summary": "On Read & React, Cole Cubelic looks beyond the SEC for thrilling game winners and trick plays to impress Roman Harper.",
-      "url": "https://www.espn.com/video/clip/_/id/50112267/roman-impressed-week-5-brings-some-see-highlights",
-      "sport": "College football",
-      "published": "2026-10-05T21:51:45.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50111577",
-      "id": "50111577",
-      "headline": "Michael Jordan donates $10M to UNC School of Social Work to honor mother",
-      "summary": "North Carolina Tar Heels basketball legend Michael Jordan has made a $10 million commitment to the UNC School of Social Work in honor of his mother, Deloris P. Jordan.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50111577/michael-jordan-donates-10m-unc-program-honor-mother",
-      "sport": "College basketball",
-      "published": "2026-10-05T21:48:20.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50112238",
-      "id": "50112238",
-      "headline": "NBA testing smart basketballs, wrist wearables in preseason",
-      "summary": "The NBA is experimenting with smart basketballs and wrist wearables for officials in select preseason games in order to collect data on the review process.",
-      "url": "https://www.espn.com/nba/story/_/id/50112238/nba-testing-smart-basketballs-wrist-wearables-preseason",
-      "sport": "NBA",
-      "published": "2026-10-05T21:47:57.000Z",
-      "firstSeen": "2026-10-06T01:05:39.026Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50110947",
-      "id": "50110947",
-      "headline": "West Virginia football recruit Chris Wilson Jr. killed in shooting",
-      "summary": "West Virginia football commit Chris Wilson Jr. was killed in an overnight shooting in Muncie, Indiana, according to local police.",
-      "url": "https://www.espn.com/college-football/story/_/id/50110947/west-virginia-football-recruit-chris-wilson-jr-killed-shooting",
-      "sport": "College football",
-      "published": "2026-10-05T21:38:48.000Z",
-      "firstSeen": "2026-10-05T18:37:51.970Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50111808",
-      "id": "50111808",
-      "headline": "Bills CB Maxwell Hairston sorry for skipping media, addresses struggles",
-      "summary": "A day after skipping out on the media, Bills cornerback Maxwell Hairston held an impromptu news conference to apologize and provide context for his early-season struggles.",
-      "url": "https://www.espn.com/nfl/story/_/id/50111808/bills-cb-maxwell-hairston-sorry-skipping-media-addresses-struggles",
-      "sport": "NFL",
-      "published": "2026-10-05T21:34:58.000Z",
-      "firstSeen": "2026-10-05T21:28:20.741Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50110486",
-      "id": "50110486",
-      "headline": "Ben Johnson: Tyson Bagent will start at QB for Bears vs. Packers",
-      "summary": "Tyson Bagent will be the Bears' starting quarterback for Sunday's game at the Packers, coach Ben Johnson announced Monday.",
-      "url": "https://www.espn.com/nfl/story/_/id/50110486/ben-johnson-tyson-bagent-start-qb-bears-vs-packers",
-      "sport": "NFL",
-      "published": "2026-10-05T21:30:49.000Z",
-      "firstSeen": "2026-10-05T18:37:51.970Z",
-      "bestRank": 6
     }
   ]
 }
