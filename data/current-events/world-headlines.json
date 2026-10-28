@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-10-28T00:58:20.781Z",
+  "generatedAt": "2026-10-28T03:37:55.702Z",
   "retentionDays": 21,
   "windowStart": "2026-10-07",
   "windowEnd": "2026-10-28",
   "snapshotIntervalHours": 3,
-  "count": 2155,
+  "count": 2164,
   "items": [
     {
       "headline": "Israeli voters have given Binyamin Netanyahu’s coalition a drubbing",
@@ -18,12 +18,42 @@
       "firstSeen": "2026-10-28T00:58:20.781Z"
     },
     {
+      "headline": "RAF Fairford Incident Was Coordinated By Man Acting for Iran, UK Prosecutors Say",
+      "date": "2026-10-28",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVVdaZFliMTZRZEpNYUZSczJVcU1GNUdhY1RNbDgwWkpocUVadDlvMi1fTENZX2RsWHk4MW01Vk1CLTZsODZMSGdYRHpSUEgya2tHaTR3SlI3LXEyeGNBQ2xTZ3VvRVhEbXdlaTBoOUhFMEU3VG9laDZLUzFfNlNIdldYMng4Snk2TVZkY25PeGxPM2EzUG5PWQ?oc=5",
+      "top": true,
+      "bestRank": 2,
+      "firstSeen": "2026-10-27T21:35:20.389Z"
+    },
+    {
+      "headline": "Brazil Probes Foreign Financing, Including Group Linked to Vance",
+      "date": "2026-10-28",
+      "bucket": "World",
+      "summary": "Reported by The Washington Post.",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYXNScXBLQWxqeDlrNEF6a1dLU0VjcGNkNEpmRml4Xzh0LTRHSW9qTVRacy1SS2pnYUtISWgwMUdjZldlYVFWOUpZNm9Ock5lNUs2MFdJVmZuZkNPZnZXUTF0VzlxaXBGT0pWVmVGbUlZRnl6aWdWWGNpUGU2S1hyS3Z1QTdBOE9lQTJMNUpXdkNGWkJ0bTRRYVJCbGp1R245V0tta3U2LUUwb1I4a3hPS01fNA?oc=5",
+      "top": true,
+      "bestRank": 20,
+      "firstSeen": "2026-10-28T03:37:55.702Z"
+    },
+    {
+      "headline": "U.S. to issue visas to Flávio Bolsonaro as his whereabouts remain unclear",
+      "date": "2026-10-28",
+      "bucket": "World",
+      "summary": "Flávio Bolsonaro leaves Brazil for the U.S. amid a money-laundering probe, as Washington agrees to issue visas to him and his family.",
+      "url": "https://www.npr.org/2026/10/27/nx-s1-6019678/u-s-to-issue-visas-to-flavio-bolsonaro-as-his-whereabouts-remain-unclear",
+      "firstSeen": "2026-10-28T03:37:55.702Z"
+    },
+    {
       "headline": "Watch: What happens now after close vote in Israeli election?",
       "date": "2026-10-28",
       "bucket": "Politics",
       "summary": "Polls have closed in the Israeli election, but there is no clear winner.",
       "url": "https://www.bbc.co.uk/news/videos/cm79p5pxqey2o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-28T00:58:20.781Z"
+      "firstSeen": "2026-10-28T00:58:20.781Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Israel’s Election: Understanding Who’s Who and What’s at Stake",
@@ -46,14 +76,14 @@
       "firstSeen": "2026-10-27T11:40:22.579Z"
     },
     {
-      "headline": "Israel Election Live Updates: Record Voter Turnout as Netanyahu Faces Challenge Led by Eisenkot",
+      "headline": "Israel's voter turnout soars as Netanyahu faces a tight election",
       "date": "2026-10-27",
       "bucket": "Politics",
-      "summary": "Reported by The New York Times.",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1MUTJ0MEpwV0JKTERtX2pIX0ktV2FvM3owbDV0TktEcVdwRThUQzRjbnZNRWR6aGNKRlhxdTNSdG1BRHlTR2VSTWpqLU5kcEZiaDBXcTE1NU80MnNGb044NngzQzRiSFYyc183bTdPdw?oc=5",
+      "summary": "Israelis voted in their highest numbers in over two decades in a tense national election to decide whether to stick with Prime Minister Benjamin Netanyahu's far-right coalition.",
+      "url": "https://www.npr.org/2026/10/27/nx-s1-6019381/israel-elections",
+      "firstSeen": "2026-10-27T19:19:51.679Z",
       "top": true,
-      "bestRank": 1,
-      "firstSeen": "2026-10-27T19:19:51.679Z"
+      "bestRank": 1
     },
     {
       "headline": "Gadi Eisenkot declares victory as bloc takes lead over Netanyahu's, despite deadlock",
@@ -74,16 +104,6 @@
       "top": true,
       "bestRank": 2,
       "firstSeen": "2026-10-27T11:23:17.324Z"
-    },
-    {
-      "headline": "RAF Fairford Incident Was Coordinated By Man Acting for Iran, UK Prosecutors Say",
-      "date": "2026-10-27",
-      "bucket": "World",
-      "summary": "Reported by CBS News.",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNV0dQUDhlWDhqSEQyU2VkMFBiQjFTMTM3ZFVKcUFSWUR5cXFBa09ORlRZUGFWelJ3SnZYTkFPc3BhaEtPeXZ2cW4tUzBmYUR1N3UyNXhFTmc5NUZLSk9MYldLOE1ZYndLdnc0UVNmWHcwd0tGYk16OWEtMS1vdjVNM05qaENNZkZyc05Md044aE80STRTZlZjckRB?oc=5",
-      "top": true,
-      "bestRank": 2,
-      "firstSeen": "2026-10-27T21:35:20.389Z"
     },
     {
       "headline": "European Leaders Split Over Phone Call to Putin",
@@ -154,6 +174,16 @@
       "top": true,
       "bestRank": 4,
       "firstSeen": "2026-10-28T00:58:20.781Z"
+    },
+    {
+      "headline": "U.K. Fiscal Discipline in Focus Ahead of Burnham Government’s First Budget",
+      "date": "2026-10-27",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTEp6MlpsSWVwcGlKWklQMml1c09YQURUdzNmallBSE9uemVQLXZyeDZRTjFIRHJJbldoV1RjRTB2dkE2N091eHVVdXdGeWpxdm82czMtVEZ5eXdGTWR0MHlsNjgzeWd0c3NlNDZISGxnX2MtTHZkLWFFTkxzemlhS21tcUZFaWhaNkFmaGliZ3lGbUNpTk9GOThqWW1BMFlESmVBWmF5QmJoVGhJLTdrVnhSVnpQZw?oc=5",
+      "top": true,
+      "bestRank": 4,
+      "firstSeen": "2026-10-28T03:37:55.702Z"
     },
     {
       "headline": "Jordan carries out deadly strike in Syria in retaliation for church attack",
@@ -236,6 +266,16 @@
       "firstSeen": "2026-10-27T11:40:22.579Z"
     },
     {
+      "headline": "Pope Leo to interfaith peace meeting: ‘War can never be waged in the name of God.’",
+      "date": "2026-10-27",
+      "bucket": "Conflict",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWTFmMnNzZmVXS3VnMFQ5WHdOT1VmU090cUpfU3c0SE9TaWhzbE5HYUVZQ2VKaXZ6T0RmMXk4SE1YZG5rNDBac1A1WEswT0JLR01lTTJ6WU5jb00tRnN4cU5NRHBtNHZ1RzVpd2gyUkVXNzdVZnlGcnFoWUhTS1F1NkVXYjBmdHFwdUxVbllyNzdKWkhMbTFmdnVST0hZeEYwalhIb1NaWW5ZRC1P?oc=5",
+      "top": true,
+      "bestRank": 6,
+      "firstSeen": "2026-10-28T00:58:20.781Z"
+    },
+    {
       "headline": "President Stubb and Prime Minister Støre held a phone call with President Putin",
       "date": "2026-10-27",
       "bucket": "Politics",
@@ -254,16 +294,6 @@
       "top": true,
       "bestRank": 7,
       "firstSeen": "2026-10-27T21:35:20.389Z"
-    },
-    {
-      "headline": "Pope Leo to interfaith peace meeting: ‘War can never be waged in the name of God.’",
-      "date": "2026-10-27",
-      "bucket": "Conflict",
-      "summary": "Reported by AP News.",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWTFmMnNzZmVXS3VnMFQ5WHdOT1VmU090cUpfU3c0SE9TaWhzbE5HYUVZQ2VKaXZ6T0RmMXk4SE1YZG5rNDBac1A1WEswT0JLR01lTTJ6WU5jb00tRnN4cU5NRHBtNHZ1RzVpd2gyUkVXNzdVZnlGcnFoWUhTS1F1NkVXYjBmdHFwdUxVbllyNzdKWkhMbTFmdnVST0hZeEYwalhIb1NaWW5ZRC1P?oc=5",
-      "top": true,
-      "bestRank": 7,
-      "firstSeen": "2026-10-28T00:58:20.781Z"
     },
     {
       "headline": "Greenhouse gas levels set records in 2025, U.N. says, expressing alarm",
@@ -386,6 +416,16 @@
       "bestRank": 13
     },
     {
+      "headline": "DIA Releases Clearest Image of China’s Reusable Spaceplane with Service Module Attached",
+      "date": "2026-10-27",
+      "bucket": "World",
+      "summary": "Reported by The Aviationist.",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTWdWUUNUUjVaQzFRNEVmT3dsX0F0bkNnZXhOd1FnY3BsNm9lNWp6VmFxSW9sbnFGZDVBeGhlbEVoRk4xRWgwbmlJd0I2QmVXQmFIQzE3Q3FKYVZCSzJnZF9fUi1Vd1NlU2Q2Si1VYjFJRlpHc3JJYnpKUm1Ed2hLMFJ5ZDVsb3BhWmpR?oc=5",
+      "top": true,
+      "bestRank": 13,
+      "firstSeen": "2026-10-28T03:37:55.702Z"
+    },
+    {
       "headline": "Kyiv Ballistic Missile Strike Kills 1, Injures 15 in University Area and Multiple Districts",
       "date": "2026-10-27",
       "bucket": "Conflict",
@@ -404,6 +444,16 @@
       "top": true,
       "bestRank": 15,
       "firstSeen": "2026-10-28T00:58:20.781Z"
+    },
+    {
+      "headline": "Albanese promises Australian MPs security upgrade after Haines attack",
+      "date": "2026-10-27",
+      "bucket": "World",
+      "summary": "Reported by Politico.",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOUxuekpiSFlXenRKNFJ0MGxvTG5rZDBhbG1zNDg0MDJyUUFTWEV4cnozeHBpOWdNQjZpNWJKWmRXSWZSQW1xMW9qZTBNbmRMZnM3eUl6ZW1kem1DSm5xNDAwWXZBOWMxZEh1TWtJOEg0NEV6ZEdpcmZWdVJ5VHp3dENoUUNmUkJTN0FKQ0VyUGR0S1lXVEY4ZVMwLURsMDdUZXVCdzV2NzdDLWc2MXNHVUR6YkR5N3BNVjJZ?oc=5",
+      "top": true,
+      "bestRank": 19,
+      "firstSeen": "2026-10-27T15:44:49.392Z"
     },
     {
       "headline": "Wave Goodbye to a Republican Congress",
@@ -426,16 +476,6 @@
       "firstSeen": "2026-10-27T11:40:22.579Z"
     },
     {
-      "headline": "Albanese promises Australian MPs security upgrade after Haines attack",
-      "date": "2026-10-27",
-      "bucket": "World",
-      "summary": "Reported by Politico.",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOUxuekpiSFlXenRKNFJ0MGxvTG5rZDBhbG1zNDg0MDJyUUFTWEV4cnozeHBpOWdNQjZpNWJKWmRXSWZSQW1xMW9qZTBNbmRMZnM3eUl6ZW1kem1DSm5xNDAwWXZBOWMxZEh1TWtJOEg0NEV6ZEdpcmZWdVJ5VHp3dENoUUNmUkJTN0FKQ0VyUGR0S1lXVEY4ZVMwLURsMDdUZXVCdzV2NzdDLWc2MXNHVUR6YkR5N3BNVjJZ?oc=5",
-      "top": true,
-      "bestRank": 21,
-      "firstSeen": "2026-10-27T15:44:49.392Z"
-    },
-    {
       "headline": "Attacks kill at least 60 Orthodox Christians in Ethiopia, church says",
       "date": "2026-10-27",
       "bucket": "World",
@@ -444,6 +484,16 @@
       "top": true,
       "bestRank": 21,
       "firstSeen": "2026-10-27T21:35:20.389Z"
+    },
+    {
+      "headline": "EU divisions persist on ‘associate member’ label for Canada",
+      "date": "2026-10-27",
+      "bucket": "World",
+      "summary": "Reported by POLITICO.eu.",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNay1RcWp5akpZR2l3NTVFamYwaDJ4NlVIQzJwSEkyVzkwTlVwak53VUlnd1NSSmZhRVFIc190Mlo1REc3X29yTDVNTVc1NkthQUpMaEZQeTN2aXRPODAwcEJyaGJ5TzhwUzdGQ3VYTzBqMnNIb0RTQWxZcTlxc2NmN1JYNTVFUDM4ajlrdw?oc=5",
+      "top": true,
+      "bestRank": 21,
+      "firstSeen": "2026-10-27T19:19:51.679Z"
     },
     {
       "headline": "EU Wants Countries to Draw Up Plans to Deal With Warming of 3C",
@@ -456,16 +506,6 @@
       "firstSeen": "2026-10-27T15:44:49.392Z"
     },
     {
-      "headline": "EU divisions persist on ‘associate member’ label for Canada",
-      "date": "2026-10-27",
-      "bucket": "World",
-      "summary": "Reported by POLITICO.eu.",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNay1RcWp5akpZR2l3NTVFamYwaDJ4NlVIQzJwSEkyVzkwTlVwak53VUlnd1NSSmZhRVFIc190Mlo1REc3X29yTDVNTVc1NkthQUpMaEZQeTN2aXRPODAwcEJyaGJ5TzhwUzdGQ3VYTzBqMnNIb0RTQWxZcTlxc2NmN1JYNTVFUDM4ajlrdw?oc=5",
-      "top": true,
-      "bestRank": 23,
-      "firstSeen": "2026-10-27T19:19:51.679Z"
-    },
-    {
       "headline": "Australian Labor spent AU$2.6M ousting 2 Greens rivals from parliament",
       "date": "2026-10-27",
       "bucket": "Politics",
@@ -474,6 +514,16 @@
       "top": true,
       "bestRank": 25,
       "firstSeen": "2026-10-28T00:58:20.781Z"
+    },
+    {
+      "headline": "Sixty Christians killed in Ethiopia’s Oromia region",
+      "date": "2026-10-27",
+      "bucket": "World",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPb09JU3Btc1EyM0F5NXVUSDFuRkxYWkRhdXRwaU5GcklNeS1UVGFub1RBcVFPWlNNTlpXOFFXY3A5YWNZdHV1WEpZVzFnX2FmVDZHU1Boek5DcUdTOGdnRHAwal95Z2Nzemc0YXdxUVlpR1FMLXVPaTBQOTk3dGtjQXpwRWpSZDgwRlV1TUFlQjFXZDBHWmYw0gGcAUFVX3lxTFBncmhoWU9LSkZ4ZDZ3X0tMUmJjM21obndmM19ZNmtMcEdZNGY5aTZVMWxFdWxuaHgxVm1RcXdXazR6OUpyN21sSkMxUHY5TGlxMVRNQ216N2cwQ1BPNmxWTWo4OVpTdDVlcW9EdGhOM3lIdmdsdkhORjl2al8wZUtqVXd6ekF5N1ZIZ1hKQTcyUmNtdWVTMmNkV2tnTw?oc=5",
+      "top": true,
+      "bestRank": 27,
+      "firstSeen": "2026-10-27T15:44:49.392Z"
     },
     {
       "headline": "Putin Warns Against Attempts to Exclude Russia From Global Natural Gas Market",
@@ -496,14 +546,14 @@
       "firstSeen": "2026-10-27T15:44:49.392Z"
     },
     {
-      "headline": "Sixty Christians killed in Ethiopia’s Oromia region",
+      "headline": "Iran’s Khamenei Reiterates Conditions for Ending War With US",
       "date": "2026-10-27",
-      "bucket": "World",
-      "summary": "Reported by Al Jazeera.",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPb09JU3Btc1EyM0F5NXVUSDFuRkxYWkRhdXRwaU5GcklNeS1UVGFub1RBcVFPWlNNTlpXOFFXY3A5YWNZdHV1WEpZVzFnX2FmVDZHU1Boek5DcUdTOGdnRHAwal95Z2Nzemc0YXdxUVlpR1FMLXVPaTBQOTk3dGtjQXpwRWpSZDgwRlV1TUFlQjFXZDBHWmYw0gGcAUFVX3lxTFBncmhoWU9LSkZ4ZDZ3X0tMUmJjM21obndmM19ZNmtMcEdZNGY5aTZVMWxFdWxuaHgxVm1RcXdXazR6OUpyN21sSkMxUHY5TGlxMVRNQ216N2cwQ1BPNmxWTWo4OVpTdDVlcW9EdGhOM3lIdmdsdkhORjl2al8wZUtqVXd6ekF5N1ZIZ1hKQTcyUmNtdWVTMmNkV2tnTw?oc=5",
+      "bucket": "Conflict",
+      "summary": "Reported by Morningstar.",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbl9kZ2lKRkdjTHkzVUlHNXFGanVydG90WWVjWDBfdmx3cHUydFF6cFV5eEp6bXJqRFRhWlNXU1poMWpWUDFGVXU2WjMzV3U4azJEUncxZTVScGk2eERpei1hMEFZSGxvV3BBSUJ5Skp0M1RITEpRQ3NSaUt1czJwVW8xRkxITGQxLUpoUzh3cUh4X2pXcURHRWFxaGVXQXh4MTFTSzRDTlJPckhfdE1oQUE2bDdNYXRmM1hfVE1XV2RDVE1paHY1TERoT3k1b2lH?oc=5",
       "top": true,
       "bestRank": 29,
-      "firstSeen": "2026-10-27T15:44:49.392Z"
+      "firstSeen": "2026-10-28T03:37:55.702Z"
     },
     {
       "headline": "Iran Supreme Leader calls for meeting conditions to end the war",
@@ -524,6 +574,16 @@
       "top": true,
       "bestRank": 33,
       "firstSeen": "2026-10-27T21:35:20.389Z"
+    },
+    {
+      "headline": "Canada Signs Military MOU With U.A.E. As It Backs Sudan Massacres",
+      "date": "2026-10-27",
+      "bucket": "World",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVlZyZUhRTFlaX1JCLVRSSFJCcXFLT2ZCNGhkVTRUcW8xelVUeWZXUlR5cHpIZEg2WDd4UnEtZjZHTUE4NmprZmxJN1hKa0lVdHRCay14czZsdldteVE4VndYbHZtUGpSenFHcElzVnlVUVVXYWRQbUUzVnVZblJSeFZrc21iUk9QYWFfd2lxQ3Vidw?oc=5",
+      "top": true,
+      "bestRank": 33,
+      "firstSeen": "2026-10-28T03:37:55.702Z"
     },
     {
       "headline": "Ukraine's Starlink slowdown only dropped its interception rate against Russia's new Shaheds by a few percent",
@@ -556,12 +616,32 @@
       "firstSeen": "2026-10-27T11:40:22.579Z"
     },
     {
+      "headline": "Kim Jong-un threatens Trump with howitzers",
+      "date": "2026-10-27",
+      "bucket": "World",
+      "summary": "Reported by The Telegraph.",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWkh5UjNJN21JSDdxRml6QlFTSy04c0k5V1hfYkpna3Z6TkhCM3ZEanBwYnJkclY5dndJNjFZUmpUY1VxcC0ybG9XbmM0T1Ezc2tWUUd2UEY1LWYxZGZyUWFWQmJ3Y2ttVWdHOGZZM3FEcXZTNXRuWDF6R0tFcXpCeW0yTzRGZHVLWUNFNEUyZVFmZmZLM2IwXw?oc=5",
+      "top": true,
+      "bestRank": 36,
+      "firstSeen": "2026-10-28T03:37:55.702Z"
+    },
+    {
       "headline": "Lula's comeback in Brazil dents Trump's ambitions for Latin America",
       "date": "2026-10-27",
       "bucket": "World",
       "summary": "The Trump-Lula relationship may have thawed, but several issues could reignite tensions between the two leaders.",
       "url": "https://www.bbc.co.uk/news/articles/cq62yg6rggj0o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-26T15:54:54.199Z",
+      "top": true,
+      "bestRank": 37
+    },
+    {
+      "headline": "Deaths in detention cells in Nigeria were entirely preventable, inquiry finds",
+      "date": "2026-10-27",
+      "bucket": "World",
+      "summary": "Overcrowding and poor ventilation caused the deaths of 33 detainees in a prison cell in Minna state.",
+      "url": "https://www.bbc.co.uk/news/articles/cmgel8pqj5rwo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-27T19:19:51.679Z",
       "top": true,
       "bestRank": 37
     },
@@ -576,14 +656,14 @@
       "firstSeen": "2026-10-27T21:35:20.389Z"
     },
     {
-      "headline": "Deaths in detention cells in Nigeria were entirely preventable, inquiry finds",
+      "headline": "An underground network of tunnels was discovered under Liverpool. Now workers think they’ve solved the mystery",
       "date": "2026-10-27",
       "bucket": "World",
-      "summary": "Overcrowding and poor ventilation caused the deaths of 33 detainees in a prison cell in Minna state.",
-      "url": "https://www.bbc.co.uk/news/articles/cmgel8pqj5rwo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-27T19:19:51.679Z",
+      "summary": "Reported by CNN.",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5Oc2lucUxqWnRRemJvb045LUlTUHdoaDU0OGg1aU5QLWN1anVnUWMzZ3BPUGZQYzNoNERJZ0Q2QktuenZyYkVocjRjZXVKZ0cxdDRsUHZpa09IZW1FREVjaUc2QWxfZw?oc=5",
       "top": true,
-      "bestRank": 39
+      "bestRank": 38,
+      "firstSeen": "2026-10-28T03:37:55.702Z"
     },
     {
       "headline": "Israel heads to polls for pivotal election defined by security and democracy",
@@ -670,20 +750,22 @@
       "bestRank": null
     },
     {
-      "headline": "Trump v Obama - which president has the star power to get out the vote?",
-      "date": "2026-10-27",
-      "bucket": "Politics",
-      "summary": "The BBC's Sarah Smith followed the current and former presidents as both parties hope their biggest names can drive midterm turnout.",
-      "url": "https://www.bbc.co.uk/news/videos/cv0ldjez8z32o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-28T00:58:20.781Z"
-    },
-    {
       "headline": "Israel's election turnout soars, lifting opposition hopes of beating Netanyahu",
       "date": "2026-10-27",
       "bucket": "Politics",
       "summary": "Israelis voted in their highest numbers in over two decades in a tense national election to decide whether to stick with Prime Minister Benjamin Netanyahu's far-right coalition.",
       "url": "https://www.npr.org/2026/10/27/nx-s1-6019381/israel-elections",
       "firstSeen": "2026-10-28T00:58:20.781Z"
+    },
+    {
+      "headline": "Trump v Obama - which president has the star power to get out the vote?",
+      "date": "2026-10-27",
+      "bucket": "Politics",
+      "summary": "The BBC's Sarah Smith followed the current and former presidents as both parties hope their biggest names can drive midterm turnout.",
+      "url": "https://www.bbc.co.uk/news/videos/cv0ldjez8z32o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-28T00:58:20.781Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "The Ebola outbreak is breaking records -- and just marked a grim milestone",
@@ -1216,6 +1298,16 @@
       "firstSeen": "2026-10-27T01:13:10.102Z"
     },
     {
+      "headline": "Serbian Students, Victorious and Leaderless, Go After the Media",
+      "date": "2026-10-26",
+      "bucket": "World",
+      "summary": "Reported by PBS.",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPR1hVRmVSNU4tb2lqcC1wU1QtSTh4cG1FenZGWThCa3RCZWtvUmpvYVB4WmxTNXJHMWRYeVFMeEI4NXBUVmJpX0VlblVSNWFFcjZzWGEtTkFaaFVYaGl3TEZFSHVLVlpubVMtRW9lWmNSWVhJUGs5YXpDMV9JdkUtMTVRS1N6eUxKRVAwRDJrTW1zSWhScjE5bllscXdEY3BnVmx6RWN2dEV2UDNJTEpWNGF3UUxxeWVqTmfSAb8BQVVfeXFMT0lpMy1UX1ZBbEdvaGFZYzhWOHNiTzVGZDZQMEtfZ1puUnlGTk5aWFFNMVNURkwtbTRLUGQ3Qkh1QWJNTHVSZU0wT2NFZWo4NXBDalF0SFJkUkE0TnpXOWRtcWpHLVVOMkpPa2dzMUtRalY2ckpKR3U5M1ByV2FjbjJZa2dqS1NsOW5WMGZ4b0JOZW9JdDhvSzBLWGRDdVdHMDhrbTJFNFV4OHhiR3lZbjB6bVpQWjk0bHFONjFjazQ?oc=5",
+      "top": true,
+      "bestRank": 7,
+      "firstSeen": "2026-10-27T19:19:51.679Z"
+    },
+    {
       "headline": "Bond Market Gives Initial Nod to Serbia’s Untested Ballot Winner",
       "date": "2026-10-26",
       "bucket": "World",
@@ -1254,16 +1346,6 @@
       "top": true,
       "bestRank": 9,
       "firstSeen": "2026-10-27T21:35:20.389Z"
-    },
-    {
-      "headline": "Serbian Students, Victorious and Leaderless, Go After the Media",
-      "date": "2026-10-26",
-      "bucket": "World",
-      "summary": "Reported by PBS.",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPR1hVRmVSNU4tb2lqcC1wU1QtSTh4cG1FenZGWThCa3RCZWtvUmpvYVB4WmxTNXJHMWRYeVFMeEI4NXBUVmJpX0VlblVSNWFFcjZzWGEtTkFaaFVYaGl3TEZFSHVLVlpubVMtRW9lWmNSWVhJUGs5YXpDMV9JdkUtMTVRS1N6eUxKRVAwRDJrTW1zSWhScjE5bllscXdEY3BnVmx6RWN2dEV2UDNJTEpWNGF3UUxxeWVqTmfSAb8BQVVfeXFMT0lpMy1UX1ZBbEdvaGFZYzhWOHNiTzVGZDZQMEtfZ1puUnlGTk5aWFFNMVNURkwtbTRLUGQ3Qkh1QWJNTHVSZU0wT2NFZWo4NXBDalF0SFJkUkE0TnpXOWRtcWpHLVVOMkpPa2dzMUtRalY2ckpKR3U5M1ByV2FjbjJZa2dqS1NsOW5WMGZ4b0JOZW9JdDhvSzBLWGRDdVdHMDhrbTJFNFV4OHhiR3lZbjB6bVpQWjk0bHFONjFjazQ?oc=5",
-      "top": true,
-      "bestRank": 9,
-      "firstSeen": "2026-10-27T19:19:51.679Z"
     },
     {
       "headline": "To Work With P.O.W.s, Ukrainians Suppress Feelings About the Enemy",
@@ -1416,6 +1498,16 @@
       "firstSeen": "2026-10-26T18:55:39.944Z"
     },
     {
+      "headline": "Exclusive: EU to give Frontex new powers to deport migrants from outside Europe",
+      "date": "2026-10-26",
+      "bucket": "World",
+      "summary": "Reported by Euronews.com.",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVU5aaExHSGJVNnVIcnBXaHQyQUNZY3V6eHJfa0JjWkRtdHNMbU9SZnIwYzlSRnRkRC1yeGJGN2xsVDMxeEFRZVBOemNvdnJsb1FGVXNSY3V2VW9NbHFkbnRGZXNleDRtVk9SLWttSGo5VC0yaHVvaERCTDcwSlVnS2dlYTd6REFGMTRSVmNpZDcySHphVWNITEpSV0VFRVo0NmFrVG1SSVVwcVROSVRGYnNrQnc?oc=5",
+      "top": true,
+      "bestRank": 16,
+      "firstSeen": "2026-10-27T19:19:51.679Z"
+    },
+    {
       "headline": "People living past 100 in one tiny village share 3 daily habits",
       "date": "2026-10-26",
       "bucket": "World",
@@ -1526,16 +1618,6 @@
       "bestRank": 20
     },
     {
-      "headline": "Exclusive: EU to give Frontex new powers to deport migrants from outside Europe",
-      "date": "2026-10-26",
-      "bucket": "World",
-      "summary": "Reported by Euronews.com.",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVU5aaExHSGJVNnVIcnBXaHQyQUNZY3V6eHJfa0JjWkRtdHNMbU9SZnIwYzlSRnRkRC1yeGJGN2xsVDMxeEFRZVBOemNvdnJsb1FGVXNSY3V2VW9NbHFkbnRGZXNleDRtVk9SLWttSGo5VC0yaHVvaERCTDcwSlVnS2dlYTd6REFGMTRSVmNpZDcySHphVWNITEpSV0VFRVo0NmFrVG1SSVVwcVROSVRGYnNrQnc?oc=5",
-      "top": true,
-      "bestRank": 20,
-      "firstSeen": "2026-10-27T19:19:51.679Z"
-    },
-    {
       "headline": "France’s Nuclear Forces Bring In Neighbors to Keep Russia in Check",
       "date": "2026-10-26",
       "bucket": "World",
@@ -1606,6 +1688,16 @@
       "firstSeen": "2026-10-27T06:57:46.346Z"
     },
     {
+      "headline": "EU Plans to Hit China With More Import Curbs in Early 2027",
+      "date": "2026-10-26",
+      "bucket": "World",
+      "summary": "Reported by Bloomberg.com.",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcTFySmU5dkZnVmZpVkJsOEdjYWgtVHpxbWVkYW1Td3hnYWZBNXI3d3dWei1Ibms0T1F4aE9KRjN6OTJoZHJiQmtYZlF4Wmxyb0lVY1UweWhXaEgxM0VIRE1xamUxMkV0QXZlYzZTQTNlbmxUODZiVnJfX1BIUW5fRGNmN3RqcHJiWFhJUWlvbzM5eENEUDd4MXhHeEpocXhtUnJNSkp5TTgta3F6T3c?oc=5",
+      "top": true,
+      "bestRank": 24,
+      "firstSeen": "2026-10-26T14:19:25.589Z"
+    },
+    {
       "headline": "Cartoonist Sues Japan Over New Royal Succession Law",
       "date": "2026-10-26",
       "bucket": "World",
@@ -1644,16 +1736,6 @@
       "top": true,
       "bestRank": 27,
       "firstSeen": "2026-10-27T06:57:46.346Z"
-    },
-    {
-      "headline": "EU Plans to Hit China With More Import Curbs in Early 2027",
-      "date": "2026-10-26",
-      "bucket": "World",
-      "summary": "Reported by Bloomberg.com.",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcTFySmU5dkZnVmZpVkJsOEdjYWgtVHpxbWVkYW1Td3hnYWZBNXI3d3dWei1Ibms0T1F4aE9KRjN6OTJoZHJiQmtYZlF4Wmxyb0lVY1UweWhXaEgxM0VIRE1xamUxMkV0QXZlYzZTQTNlbmxUODZiVnJfX1BIUW5fRGNmN3RqcHJiWFhJUWlvbzM5eENEUDd4MXhHeEpocXhtUnJNSkp5TTgta3F6T3c?oc=5",
-      "top": true,
-      "bestRank": 27,
-      "firstSeen": "2026-10-26T14:19:25.589Z"
     },
     {
       "headline": "Brazilian lawmaker Andre Janones, Lula's social media 'general'",
@@ -1696,6 +1778,16 @@
       "firstSeen": "2026-10-27T09:43:46.641Z"
     },
     {
+      "headline": "Ukraine’s Drones Have Eliminated or Wounded an Army of 300,000 Russians in Less Than a Year",
+      "date": "2026-10-26",
+      "bucket": "World",
+      "summary": "Reported by The Kyiv Independent.",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUHB3UUhoR1NMNkRPYlpsVkg2ektZRk01TFNhWHBsczFWdlpmUTg2d2MyczFraUNBLTdHdl9wWkkxZlhXOHp4MmlYN0E5TkpVQ293YWZKX2tXb2pieldSU2RoT1AzS2ZJNWRUU3NtdV9lX1kwSUZUSXZDcUp5X2xSRDQzRU16Z2xudk1xU0YzUGEycEZvSDFXZHpUamQtS3RESTRILWM3U2Z2TFZLSWRyeFNGZw?oc=5",
+      "top": true,
+      "bestRank": 31,
+      "firstSeen": "2026-10-27T21:35:20.389Z"
+    },
+    {
       "headline": "How 'Lula's Army' WhatsApp chat helped turn Brazil election around",
       "date": "2026-10-26",
       "bucket": "Politics",
@@ -1714,6 +1806,16 @@
       "top": true,
       "bestRank": 32,
       "firstSeen": "2026-10-27T12:53:15.373Z"
+    },
+    {
+      "headline": "Russian Recruiters Targeting Vulnerable Men to Avoid Mass-Mobilization",
+      "date": "2026-10-26",
+      "bucket": "World",
+      "summary": "Reported by CNN.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOalNNZ2dyQlE0OHJCazg3OHVjT0JpaXgwSVRLUFY0NGVHNjVDRERwWDBNX19hMnI3dmowNVphY0VDelBtcHJEQ24yQWhQMUtsaDVOQ1FJZlhWYmtKVG9XMzVDX0pkNjlGdTRjSGg5Rk9NUzV1Qk5GYzRUMmlaUHIyZDQzNlJuRS15a1E?oc=5",
+      "top": true,
+      "bestRank": 32,
+      "firstSeen": "2026-10-28T03:37:55.702Z"
     },
     {
       "headline": "Von der Leyen’s big Commission shake-up moves a step closer",
@@ -1784,16 +1886,6 @@
       "top": true,
       "bestRank": 34,
       "firstSeen": "2026-10-27T12:53:15.373Z"
-    },
-    {
-      "headline": "Ukraine’s Drones Have Eliminated or Wounded an Army of 300,000 Russians in Less Than a Year",
-      "date": "2026-10-26",
-      "bucket": "World",
-      "summary": "Reported by The Kyiv Independent.",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUHB3UUhoR1NMNkRPYlpsVkg2ektZRk01TFNhWHBsczFWdlpmUTg2d2MyczFraUNBLTdHdl9wWkkxZlhXOHp4MmlYN0E5TkpVQ293YWZKX2tXb2pieldSU2RoT1AzS2ZJNWRUU3NtdV9lX1kwSUZUSXZDcUp5X2xSRDQzRU16Z2xudk1xU0YzUGEycEZvSDFXZHpUamQtS3RESTRILWM3U2Z2TFZLSWRyeFNGZw?oc=5",
-      "top": true,
-      "bestRank": 34,
-      "firstSeen": "2026-10-27T21:35:20.389Z"
     },
     {
       "headline": "China’s Trade Surge: October turns Red",
@@ -9820,6 +9912,16 @@
       "bestRank": 1
     },
     {
+      "headline": "Blocs struggle to reach Knesset majority in polls, as Gadi Eisenkot leads Benjamin Netanyahu",
+      "date": "2026-10-18",
+      "bucket": "World",
+      "summary": "Reported by The Times of Israel.",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQnpFNXVzeldHLWtuN0Ntaktkc1ppTVBpc2Z3M2F2QkViSVZ3WnpkeWJWaEdXV1BhYU1sVVlWOGN0aDlpcF9VYVZlcXVuaVExZ2dhZUpTSXRKa1FfUU9BNE1IcWFTQ1RNODF0NmhiWDMwSERLcUxmTHFhbHVxOThzWlZyTzBmZkhjcmVobzFWVXJrdW84NDA3cDY2TU5Va3hFeTUzcERxNFBtOElJeWlZeTFsTEpSNTdhdy1kUHE0Z9IBxAFBVV95cUxNUkdKNXZfMVVyRWZpZUNVNW5ucXVWNHBycTRRVElhcmpuckl0eDN4TklDc3ZOUmFOMFVZVndOdjdOOGx0NTlHWUZiQnpNSXB5X05JeFJlekxLOU9TR2NyNE1acmtiLWxWNThBV0lxaXdSRGV1OUtJbHgxLThvRkRNcGZybG5MbDNNR0t3WHhNU0sxdDF1anZhUG1mTzRlTlBJRU5pc1BOVHhOZGE2VHRVallWYnc3YkNJWVdnLW1kRE1wbXcy?oc=5",
+      "top": true,
+      "bestRank": 1,
+      "firstSeen": "2026-10-12T01:27:33.280Z"
+    },
+    {
       "headline": "Ukraine Strikes Russian Oil Terminal, as Starshield Disruptions Persist",
       "date": "2026-10-18",
       "bucket": "World",
@@ -9828,16 +9930,6 @@
       "top": true,
       "bestRank": 2,
       "firstSeen": "2026-09-20T09:39:09.656Z"
-    },
-    {
-      "headline": "Blocs struggle to reach Knesset majority in polls, as Gadi Eisenkot leads Benjamin Netanyahu",
-      "date": "2026-10-18",
-      "bucket": "World",
-      "summary": "Reported by The Times of Israel.",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQnpFNXVzeldHLWtuN0Ntaktkc1ppTVBpc2Z3M2F2QkViSVZ3WnpkeWJWaEdXV1BhYU1sVVlWOGN0aDlpcF9VYVZlcXVuaVExZ2dhZUpTSXRKa1FfUU9BNE1IcWFTQ1RNODF0NmhiWDMwSERLcUxmTHFhbHVxOThzWlZyTzBmZkhjcmVobzFWVXJrdW84NDA3cDY2TU5Va3hFeTUzcERxNFBtOElJeWlZeTFsTEpSNTdhdy1kUHE0Z9IBxAFBVV95cUxNUkdKNXZfMVVyRWZpZUNVNW5ucXVWNHBycTRRVElhcmpuckl0eDN4TklDc3ZOUmFOMFVZVndOdjdOOGx0NTlHWUZiQnpNSXB5X05JeFJlekxLOU9TR2NyNE1acmtiLWxWNThBV0lxaXdSRGV1OUtJbHgxLThvRkRNcGZybG5MbDNNR0t3WHhNU0sxdDF1anZhUG1mTzRlTlBJRU5pc1BOVHhOZGE2VHRVallWYnc3YkNJWVdnLW1kRE1wbXcy?oc=5",
-      "top": true,
-      "bestRank": 2,
-      "firstSeen": "2026-10-12T01:27:33.280Z"
     },
     {
       "headline": "Trump and Netanyahu’s once blossoming bromance sours at a pivotal moment for both men",
