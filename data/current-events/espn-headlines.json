@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-30T09:24:31.420Z",
+  "generatedAt": "2026-10-30T12:31:12.438Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-09T09:24:31.420Z",
-  "windowEnd": "2026-10-30T09:24:31.420Z",
+  "windowStart": "2026-10-09T12:31:12.438Z",
+  "windowEnd": "2026-10-30T12:31:12.438Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,371 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4203,
+  "count": 4210,
   "items": [
+    {
+      "key": "50324935",
+      "id": "50324935",
+      "headline": "Jordan Love, Packers take down Panthers on TNF",
+      "summary": "Jordan Love, Packers take down Panthers on TNF",
+      "url": "https://www.espn.com/video/clip/_/id/50324935/jordan-love-packers-take-panthers-tnf",
+      "sport": "NFL",
+      "published": "2026-10-30T12:24:38.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50327430",
+      "id": "50327430",
+      "headline": "What does Florida-Georgia matchup mean for both teams' CFP chances?",
+      "summary": "What does Florida-Georgia matchup mean for both teams' CFP chances?",
+      "url": "https://www.espn.com/video/clip/_/id/50327430/what-does-florida-georgia-matchup-mean-teams-cfp-chances",
+      "sport": "College football",
+      "published": "2026-10-30T12:20:16.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50312487",
+      "id": "50312487",
+      "headline": "Global power ranking: The top 20 soccer teams in the world, ranked!",
+      "summary": "If we look beyond the Premier League and beyond those who qualified for the Champions League, which are the best teams in the world?",
+      "url": "https://www.espn.com/soccer/story/_/id/50312487/top-20-soccer-teams-world-ranked",
+      "sport": "Soccer",
+      "published": "2026-10-30T12:06:05.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50327134",
+      "id": "50327134",
+      "headline": "Tottenham's Pedro Porro keen on future LaLiga return",
+      "summary": "Pedro Porro has denied receiving offers from Barcelona and Real Madrid this summer but the Tottenham right-back has said that he would like to return to play in Spain one day.",
+      "url": "https://www.espn.com/soccer/story/_/id/50327134/pedro-porro-tottenham-hotspur-premier-league-laliga-real-madrid-barcelona",
+      "sport": "Soccer",
+      "published": "2026-10-30T12:02:15.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50322131",
+      "id": "50322131",
+      "headline": "NHL Power Rankings: Updated poll, plus all 32 teams as horror movies",
+      "summary": "Carolina remains on top, with big risers and fallers elsewhere. Plus, which film represents your favorite team?",
+      "url": "https://www.espn.com/nhl/story/_/id/50322131/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings-halloween",
+      "sport": "NHL",
+      "published": "2026-10-30T11:29:09.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50319414",
+      "id": "50319414",
+      "headline": "Fantasy football last-minute pickups: Geno Smith, Ryan Flournoy are top options",
+      "summary": "If injuries, bye weeks or tough matchups have you seeking lineup help, Matt Bowen lists potential options.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50319414/fantasy-football-streamers-last-minute-pickups-week-8",
+      "sport": "NFL",
+      "published": "2026-10-30T11:26:26.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50318896",
+      "id": "50318896",
+      "headline": "Connelly previews Week 9: Utah, Georgia, Ole Miss on upset alert",
+      "summary": "Is it Utah's turn to go down? Can Georgia and Ole Miss avoid disaster? Will Ohio State's backup plan work?",
+      "url": "https://www.espn.com/college-football/story/_/id/50318896/connelly-week-9-upset-alert",
+      "sport": "College football",
+      "published": "2026-10-30T11:18:17.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50318314",
+      "id": "50318314",
+      "headline": "'Just make them all eligible': Men's hoops coaches weigh in on eligibility chaos",
+      "summary": "Coaches explain how they've prepared while unsure who will be on their rosters when NCAA basketball games start.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50318314/men-basketball-coaches-weigh-ncaa-eligibility",
+      "sport": "College basketball",
+      "published": "2026-10-30T11:04:23.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50308763",
+      "id": "50308763",
+      "headline": "Kevin Durant reflects on his eight seasons with the Oklahoma City Thunder",
+      "summary": "After the most acrimonious exit of his career, Durant reveals how much he appreciates Oklahoma City and shares his feelings as the team tries to create a dynasty.",
+      "url": "https://www.espn.com/nba/story/_/id/50308763/kevin-durant-oklahoma-city-thunder-reflection",
+      "sport": "NBA",
+      "published": "2026-10-30T11:00:55.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50322550",
+      "id": "50322550",
+      "headline": "A trade? More cost-cutting? Where OKC could be headed this season",
+      "summary": "What should OKC do after two season-altering injuries? Brian Windhorst and Tim MacMahon take the pulse of the league.",
+      "url": "https://www.espn.com/nba/story/_/id/50322550/thunder-trade-jalen-williams-cason-wallace",
+      "sport": "NBA",
+      "published": "2026-10-30T10:57:03.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49577473",
+      "id": "49577473",
+      "headline": "2026 NBA Cup: Schedule, format, groups, updates and more",
+      "summary": "Here's everything you need to know about the fourth annual in-season tournament.",
+      "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
+      "sport": "NBA",
+      "published": "2026-10-30T10:55:06.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50322489",
+      "id": "50322489",
+      "headline": "Preseason storylines to watch for in every conference",
+      "summary": "Teams will dominate, players will breakout and at least one storyline will define each conference this season.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50322489/men-basketball-conference-storylines",
+      "sport": "College basketball",
+      "published": "2026-10-30T10:54:37.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50312157",
+      "id": "50312157",
+      "headline": "NFL Week 8 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Browns vs. Steelers? Battle of L.A.? Caleb Williams vs. the Seahawks' D? There are 13 more games in Week 8, and we have picks, predictions and more for all of them.",
+      "url": "https://www.espn.com/nfl/story/_/id/50312157/week-8-picks-predictions-schedule-fantasy-odds-2026",
+      "sport": "NFL",
+      "published": "2026-10-30T10:53:12.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50319156",
+      "id": "50319156",
+      "headline": "2026-27 MLB offseason: Best fits for top free agents",
+      "summary": "Free agency starts at 5 p.m. ET on Nov. 2. Here are some pairings we'd love to see as this winter gets underway.",
+      "url": "https://www.espn.com/mlb/story/_/id/50319156/offseason-best-fits-top-free-agents",
+      "sport": "MLB",
+      "published": "2026-10-30T10:38:19.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49794361",
+      "id": "49794361",
+      "headline": "2027 NFL draft order projections for Round 1, chances for top pick, more",
+      "summary": "ESPN's Football Power Index projects the 2027 NFL draft order for Round 1, complete with each team's chances to pick in the top five, in the top 10 and at No. 1.",
+      "url": "https://www.espn.com/nfl/draft2027/story/_/id/49794361/2027-nfl-draft-order-projections-first-round-picks",
+      "sport": "NFL",
+      "published": "2026-10-30T10:36:51.000Z",
+      "firstSeen": "2026-09-15T11:14:52.371Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50289069",
+      "id": "50289069",
+      "headline": "Fantasy playbook: NFL Week 8 Shadow Reports, lineup locks and projected scores",
+      "summary": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50289069/fantasy-playbook-projections-lineup-locks-week-8-shadow",
+      "sport": "NFL",
+      "published": "2026-10-30T10:36:40.000Z",
+      "firstSeen": "2026-10-29T12:31:20.138Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49745176",
+      "id": "49745176",
+      "headline": "2026 NFL playoff picture: AFC, NFC seed projections, chances to make postseason",
+      "summary": "We're looking ahead to how the 14-team playoff picture could line up -- and who will win divisions -- en route to the Super Bowl.",
+      "url": "https://www.espn.com/nfl/story/_/id/49745176/2026-nfl-playoff-predictions-afc-nfc-odds-super-bowl",
+      "sport": "NFL",
+      "published": "2026-10-30T10:33:55.000Z",
+      "firstSeen": "2026-09-15T11:14:52.371Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50319084",
+      "id": "50319084",
+      "headline": "NFL trade deadline: A Colts duo and others to keep tabs on for fantasy football",
+      "summary": "There have already been massive trades across the league -- but what about ones that impact fantasy football?",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50319084/nfl-trade-deadline-2026-fantasy-football-potential-impact",
+      "sport": "NFL",
+      "published": "2026-10-30T10:33:28.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50319347",
+      "id": "50319347",
+      "headline": "Don't be surprised if ... JSN makes history, Baker Mayfield has a stellar Week 8",
+      "summary": "Don't be surprised if Jaxon Smith-Njigba makes NFL history, don't underestimate Baker Mayfield and more bold predictions.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50319347/fantasy-football-start-sit-sleepers-breakouts-week-8",
+      "sport": "NFL",
+      "published": "2026-10-30T10:32:16.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50319670",
+      "id": "50319670",
+      "headline": "Men's college basketball betting: Michigan State, UConn and more futures bets",
+      "summary": "Which teams will win their regular-season conference championship? Mark Zinno highlights his favorite picks.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50319670/men-college-basketball-betting-conference-winner-2027",
+      "sport": "College basketball",
+      "published": "2026-10-30T10:28:00.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50288294",
+      "id": "50288294",
+      "headline": "Why Jeremiah Smith is a generational NFL draft receiver prospect for 2027",
+      "summary": "Smith could be the first wideout to be selected No. 1 in the draft in 31 years. What makes him so special? Who are his comps? Which NFL teams could pick him?",
+      "url": "https://www.espn.com/nfl/draft2027/story/_/id/50288294/2027-nfl-draft-ohio-state-receiver-jeremiah-smith-generational",
+      "sport": "College football",
+      "published": "2026-10-30T10:25:31.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50326763",
+      "id": "50326763",
+      "headline": "Michael Owen: I didn't get enough credit for winning Ballon d'Or",
+      "summary": "Michael Owen has said that he doesn't believe he got the sort of credit that \"others would\" for winning the Ballon d'Or when he triumphed in 2001.",
+      "url": "https://www.espn.com/soccer/story/_/id/50326763/michael-owen-ballon-dor-liverpool-2001",
+      "sport": "Soccer",
+      "published": "2026-10-30T10:24:43.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50320619",
+      "id": "50320619",
+      "headline": "College football ghost stories, from Death Valley to Tennessee's 'Body Farm'",
+      "summary": "With Halloween falling on a football Saturday, we take a haunted trip to the sport's spookiest places.",
+      "url": "https://www.espn.com/college-football/story/_/id/50320619/ghost-stories-death-valley-tennessee-camp-randall",
+      "sport": "College football",
+      "published": "2026-10-30T10:12:21.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50326746",
+      "id": "50326746",
+      "headline": "Elena Rybakina withdraws from Pan Pacific Open quarterfinals, citing injury",
+      "summary": "Elena Rybakina, the world's No. 1-ranked player and top seed in the Pan Pacific Open, withdrew from her quarterfinal match on Friday, handing the win to Leylah Fernandez of Canada.",
+      "url": "https://www.espn.com/tennis/story/_/id/50326746/injured-rybakina-withdraws-pan-pacific-open-quarterfinals",
+      "sport": "Tennis",
+      "published": "2026-10-30T10:12:01.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50318513",
+      "id": "50318513",
+      "headline": "NHL Tonight: What to watch in Devils-Knights, Jets-Panthers, Kraken-Flames",
+      "summary": "Find game previews, betting intel, broadcast information, stats and highlights here.",
+      "url": "https://www.espn.com/nhl/story/_/id/50318513/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+      "sport": "NHL",
+      "published": "2026-10-30T10:01:21.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50319759",
+      "id": "50319759",
+      "headline": "Answering 10 questions about Chiefs-Broncos showdown for first place in AFC West",
+      "summary": "Can the Broncos slow Kenneth Walker III? Can the Chiefs' pass rush fluster Bo Nix? Answering the biggest questions in Sunday's AFC West showdown.",
+      "url": "https://www.espn.com/nfl/story/_/id/50319759/kansas-city-chiefs-denver-broncos-afc-west-division-lead",
+      "sport": "NFL",
+      "published": "2026-10-30T10:00:10.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50313034",
+      "id": "50313034",
+      "headline": "When will the Raiders make Fernando Mendoza the starting QB?",
+      "summary": "Making the case for and against the Raiders switching to Fernando Mendoza as QB1.",
+      "url": "https://www.espn.com/nfl/story/_/id/50313034/las-vegas-raiders-fernando-mendoza-starter-kirk-cousins",
+      "sport": "NFL",
+      "published": "2026-10-30T10:00:10.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50182998",
+      "id": "50182998",
+      "headline": "2027 NFL draft Big Board rankings: Mel Kiper's top 25 prospects, best by position",
+      "summary": "Seven quarterbacks ranked in the top 25? This NFL draft class could be fun. Mel Kiper Jr. stacks the best players on the board as we hit the midway mark of the college season.",
+      "url": "https://www.espn.com/nfl/draft2027/story/_/id/50182998/2027-nfl-draft-rankings-kiper-big-board-top-prospects",
+      "sport": "College football",
+      "published": "2026-10-30T10:00:01.000Z",
+      "firstSeen": "2026-10-15T12:40:05.532Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50322739",
+      "id": "50322739",
+      "headline": "Has Tyler Guyton become the Cowboys' franchise left tackle?",
+      "summary": "The 2024 first-round draft pick has gone to liability to strength in protecting quarterback Dak Prescott.",
+      "url": "https://www.espn.com/nfl/story/_/id/50322739/dallas-cowboys-tyler-guyton-franchise-left-tackle",
+      "sport": "NFL",
+      "published": "2026-10-30T10:00:00.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50324250",
+      "id": "50324250",
+      "headline": "Valkyries and Dream meet one more time in winner-take-all in the WNBA Finals",
+      "summary": "On Halloween, what will decide whether Golden State or Atlanta wins its first title in the WNBA's first Game 7?",
+      "url": "https://www.espn.com/wnba/story/_/id/50324250/finals-2026-game-7-preview-atlanta-valkyries",
+      "sport": "WNBA",
+      "published": "2026-10-30T09:51:56.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50326251",
+      "id": "50326251",
+      "headline": "Transfer rumors, news: Man United eye move for Calvert-Lewin in January",
+      "summary": "Leeds United striker Dominic Calvert-Lewin is being considered by Manchester United. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/50326251/transfer-rumors-news-manchester-united-leeds-united-striker-dominic-calvert-lewin-january",
+      "sport": "Soccer",
+      "published": "2026-10-30T09:05:32.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50326324",
+      "id": "50326324",
+      "headline": "Man United Munich air disaster memorial vandalised",
+      "summary": "A memorial for the 1958 Munich air disaster has been vandalised.",
+      "url": "https://www.espn.com/soccer/story/_/id/50326324/man-united-munich-air-disaster-memorial-vandalised",
+      "sport": "Soccer",
+      "published": "2026-10-30T08:56:03.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50326252",
+      "id": "50326252",
+      "headline": "F1 World Champions praise Antonelli ahead of crucial Mexico Grand Prix weekend",
+      "summary": "F1 World Champions praise Antonelli ahead of crucial Mexico Grand Prix weekend",
+      "url": "https://www.espn.com/video/clip/_/id/50326252/f1-world-champions-praise-antonelli-ahead-crucial-mexico-grand-prix-weekend",
+      "sport": "F1",
+      "published": "2026-10-30T08:20:25.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 1
+    },
     {
       "key": "50326226",
       "id": "50326226",
@@ -132,6 +495,28 @@
       "published": "2026-10-30T08:10:46.000Z",
       "firstSeen": "2026-10-30T09:24:31.420Z",
       "bestRank": 10
+    },
+    {
+      "key": "50250142",
+      "id": "50250142",
+      "headline": "Mexico City Grand Prix 2026: Race start time, how to watch, full schedule, predictions",
+      "summary": "Formula 1 heads to Mexico on a weekend where Kimi Antonelli could win the drivers' championship for the first time.",
+      "url": "https://www.espn.com/f1/story/_/id/50250142/mexico-city-grand-prix-2026-race-f1-start-s-how-watch-schedule-tv-channel-live-stream-predictions",
+      "sport": "F1",
+      "published": "2026-10-30T07:06:59.000Z",
+      "firstSeen": "2026-10-26T21:28:13.990Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50131911",
+      "id": "50131911",
+      "headline": "How Kimi Antonelli can win F1 title at Mexico City GP -- with or without Qatar, Abu Dhabi races",
+      "summary": "Kimi Antonelli took another big step towards his first world title after outscoring his two closest championship rivals, George Russell and Lewis Hamilton, at the Singapore Grand Prix.",
+      "url": "https://www.espn.com/f1/story/_/id/50131911/kimi-antonelli-formula-1-title-race-permutations-standings-explained",
+      "sport": "F1",
+      "published": "2026-10-30T07:06:43.000Z",
+      "firstSeen": "2026-10-09T01:10:46.220Z",
+      "bestRank": 1
     },
     {
       "key": "50325876",
@@ -484,17 +869,6 @@
       "published": "2026-10-30T03:36:18.000Z",
       "firstSeen": "2026-10-30T06:34:12.980Z",
       "bestRank": 4
-    },
-    {
-      "key": "50324935",
-      "id": "50324935",
-      "headline": "Jordan Love, Packers take down Panthers on TNF",
-      "summary": "Jordan Love, Packers take down Panthers on TNF",
-      "url": "https://www.espn.com/video/clip/_/id/50324935/jordan-love-packers-take-panthers-tnf",
-      "sport": "NFL",
-      "published": "2026-10-30T03:32:40.000Z",
-      "firstSeen": "2026-10-30T06:34:12.980Z",
-      "bestRank": 5
     },
     {
       "key": "50324851",
@@ -1322,17 +1696,6 @@
       "bestRank": 1
     },
     {
-      "key": "50289069",
-      "id": "50289069",
-      "headline": "Fantasy playbook: NFL Week 8 Shadow Reports, lineup locks and projected scores",
-      "summary": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50289069/fantasy-playbook-projections-lineup-locks-week-8-shadow",
-      "sport": "NFL",
-      "published": "2026-10-29T20:03:26.000Z",
-      "firstSeen": "2026-10-29T12:31:20.138Z",
-      "bestRank": 1
-    },
-    {
       "key": "50319798",
       "id": "50319798",
       "headline": "Sources: Red Wings won't play Dylan Larkin for 'trade-related' reasons",
@@ -1701,7 +2064,7 @@
       "headline": "Watch college basketball live and replay airings all season long",
       "summary": "Watch college basketball live and replay airings all season long",
       "url": "https://www.espn.com/video/clip/_/id/50319310/watch-college-basketball-live-replay-airings-all-season-long",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-29T16:06:29.000Z",
       "firstSeen": "2026-10-29T18:26:54.439Z",
       "bestRank": 1
@@ -2141,7 +2504,7 @@
       "headline": "College basketball eligibility: What to know about latest rulings",
       "summary": "With RJ Luis Jr. threatening to sue LSU, the eligibility uncertainty is far from over as the season begins. Here's what we know.",
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/49692764/college-basketball-eligibility-know-latest-rulings-ncaa",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-29T13:30:33.000Z",
       "firstSeen": "2026-10-29T12:31:20.138Z",
       "bestRank": 1
@@ -2383,7 +2746,7 @@
       "headline": "Big Ten limits schools' involvement in outside NIL deals",
       "summary": "The Big Ten is implementing a rule that limits schools' involvement in third-party NIL deals.",
       "url": "https://www.espn.com/college-sports/story/_/id/50309630/big-ten-limits-schools-involvement-nil-deals",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-29T11:06:07.000Z",
       "firstSeen": "2026-10-28T18:28:12.765Z",
       "bestRank": 1
@@ -2508,28 +2871,6 @@
       "published": "2026-10-29T07:48:37.000Z",
       "firstSeen": "2026-10-29T06:33:46.628Z",
       "bestRank": 10
-    },
-    {
-      "key": "50250142",
-      "id": "50250142",
-      "headline": "Mexico City Grand Prix 2026: Race start time, how to watch, full schedule, predictions",
-      "summary": "Formula 1 heads to Mexico on a weekend where Kimi Antonelli could win the drivers' championship for the first time.",
-      "url": "https://www.espn.com/f1/story/_/id/50250142/mexico-city-grand-prix-2026-race-f1-start-s-how-watch-schedule-tv-channel-live-stream-predictions",
-      "sport": "F1",
-      "published": "2026-10-29T07:31:32.000Z",
-      "firstSeen": "2026-10-26T21:28:13.990Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50131911",
-      "id": "50131911",
-      "headline": "How Kimi Antonelli can win F1 title at Mexico City GP -- with or without Qatar, Abu Dhabi races",
-      "summary": "Kimi Antonelli took another big step towards his first world title after outscoring his two closest championship rivals, George Russell and Lewis Hamilton, at the Singapore Grand Prix.",
-      "url": "https://www.espn.com/f1/story/_/id/50131911/kimi-antonelli-formula-1-title-race-permutations-standings-explained",
-      "sport": "F1",
-      "published": "2026-10-29T07:31:17.000Z",
-      "firstSeen": "2026-10-09T01:10:46.220Z",
-      "bestRank": 1
     },
     {
       "key": "50315471",
@@ -6327,17 +6668,6 @@
       "bestRank": 1
     },
     {
-      "key": "49745176",
-      "id": "49745176",
-      "headline": "2026 NFL playoff picture: AFC, NFC seed projections, chances to make postseason",
-      "summary": "We're looking ahead to how the 14-team playoff picture could line up -- and who will win divisions -- en route to the Super Bowl.",
-      "url": "https://www.espn.com/nfl/story/_/id/49745176/2026-nfl-playoff-predictions-afc-nfc-odds-super-bowl",
-      "sport": "NFL",
-      "published": "2026-10-27T15:14:26.000Z",
-      "firstSeen": "2026-09-15T11:14:52.371Z",
-      "bestRank": 2
-    },
-    {
       "key": "50297959",
       "id": "50297959",
       "headline": "Is Seth McGowan a worthwhile add in fantasy football?",
@@ -8744,17 +9074,6 @@
       "sport": "NHL",
       "published": "2026-10-26T10:08:19.000Z",
       "firstSeen": "2026-10-26T14:06:18.685Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49794361",
-      "id": "49794361",
-      "headline": "2027 NFL draft order projections for Round 1, chances for top pick, more",
-      "summary": "ESPN's Football Power Index projects the 2027 NFL draft order for Round 1, complete with each team's chances to pick in the top five, in the top 10 and at No. 1.",
-      "url": "https://www.espn.com/nfl/draft2027/story/_/id/49794361/2027-nfl-draft-order-projections-first-round-picks",
-      "sport": "NFL",
-      "published": "2026-10-26T10:00:11.000Z",
-      "firstSeen": "2026-09-15T11:14:52.371Z",
       "bestRank": 1
     },
     {
@@ -22150,7 +22469,7 @@
       "headline": "Big 12 commish mulls new event if conference title games end",
       "summary": "Big 12 commissioner Brett Yormark said the league would find a new event to replace any lost conference title games should they be casualties of an expanded College Football Playoff.",
       "url": "https://www.espn.com/college-football/story/_/id/50231796/big-12-commish-mulls-new-event-conference-title-games-end",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-20T22:27:21.000Z",
       "firstSeen": "2026-10-20T21:28:05.035Z",
       "bestRank": 1
@@ -30708,7 +31027,7 @@
       "headline": "NCAA sues Ohio gov. over order allowing schools to ignore new eligibility rule",
       "summary": "The NCAA has filed a federal lawsuit against Ohio Gov. Mike DeWine three days after he signed an executive order giving the state's colleges and universities the option of allowing athletes who graduated from high school in 2022 to play a fifth year.",
       "url": "https://www.espn.com/college-sports/story/_/id/50196596/ncaa-sues-ohio-gov-eligibility-order-5th-year-athletes",
-      "sport": "College basketball",
+      "sport": "Women's college basketball",
       "published": "2026-10-16T20:07:31.000Z",
       "firstSeen": "2026-10-16T18:32:34.965Z",
       "bestRank": 1
@@ -33022,17 +33341,6 @@
       "published": "2026-10-15T18:24:48.000Z",
       "firstSeen": "2026-10-15T18:33:52.057Z",
       "bestRank": 4
-    },
-    {
-      "key": "50182998",
-      "id": "50182998",
-      "headline": "2027 NFL draft Big Board rankings: Mel Kiper's top 25 prospects, best by position",
-      "summary": "Seven quarterbacks ranked in the top 25? This NFL draft class could be fun. Mel Kiper Jr. stacks the best players on the board as we hit the midway mark of the college season.",
-      "url": "https://www.espn.com/nfl/draft2027/story/_/id/50182998/2027-nfl-draft-rankings-kiper-big-board-top-prospects",
-      "sport": "College football",
-      "published": "2026-10-15T18:17:41.000Z",
-      "firstSeen": "2026-10-15T12:40:05.532Z",
-      "bestRank": 3
     },
     {
       "key": "50184696",
@@ -46024,237 +46332,6 @@
       "published": "2026-10-09T12:43:52.000Z",
       "firstSeen": "2026-10-09T15:29:39.177Z",
       "bestRank": 19
-    },
-    {
-      "key": "50139616",
-      "id": "50139616",
-      "headline": "Chris Canty: This is a 'historically bad loss' for the Cowboys",
-      "summary": "Chris Canty: This is a 'historically bad loss' for the Cowboys",
-      "url": "https://www.espn.com/video/clip/_/id/50139616/historically-bad-loss-cowboys",
-      "sport": "NFL",
-      "published": "2026-10-09T12:28:01.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50136089",
-      "id": "50136089",
-      "headline": "Inside a Wrigleyville rooftop owner's fight with the Cubs",
-      "summary": "Will the last holdout in Wrigleyville be able to stand up to the Chicago Cubs?",
-      "url": "https://www.espn.com/mlb/story/_/id/50136089/wrigleyville-rooftop-owner-fight-chicago-cubs",
-      "sport": "MLB",
-      "published": "2026-10-09T12:17:36.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50117790",
-      "id": "50117790",
-      "headline": "2027 NFL draft QB rankings: Arch Manning, Dante Moore, Drew Mestemaker in top 15",
-      "summary": "Who are the best quarterbacks in the 2027 draft class? We sized up the top 15, including Arch Manning, Dante Moore, Trinidad Chambliss and Darian Mensah.",
-      "url": "https://www.espn.com/nfl/draft2027/story/_/id/50117790/2027-nfl-draft-quarterbacks-ranking-strengths-weaknesses",
-      "sport": "College football",
-      "published": "2026-10-09T12:14:09.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50136767",
-      "id": "50136767",
-      "headline": "Inside a Wrigleyville rooftop owner's fight with the Cubs",
-      "summary": "Inside a Wrigleyville rooftop owner's fight with the Cubs",
-      "url": "https://www.espn.com/video/clip/_/id/50136767/inside-wrigleyville-rooftop-owner-fight-cubs",
-      "sport": "MLB",
-      "published": "2026-10-09T12:13:48.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50134206",
-      "id": "50134206",
-      "headline": "Do the Broncos have a reliable No. 1 running back? Sorting Denver's backfield",
-      "summary": "The Broncos' running game has been stuck in neutral, as J.K. Dobbins, RJ Harvey and Tyler Badie have struggled in the early going.",
-      "url": "https://www.espn.com/nfl/story/_/id/50134206/broncos-rbs-struggling-jk-dobbins-harvey-coleman-badie",
-      "sport": "NFL",
-      "published": "2026-10-09T11:36:23.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 11
-    },
-    {
-      "key": "50127367",
-      "id": "50127367",
-      "headline": "Where to watch Savannah Bananas in the 2026 Banana Bowl",
-      "summary": "Which team will take home the Banana Ball Championship League title?",
-      "url": "",
-      "sport": "MLB",
-      "published": "2026-10-09T11:32:50.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50139079",
-      "id": "50139079",
-      "headline": "UEFA member nations call FIFA's international break a 'disaster'",
-      "summary": "European soccer federations told UEFA they are not happy with the new extended four-game blocks of international matches that finished this week.",
-      "url": "https://www.espn.com/soccer/story/_/id/50139079/uefa-member-nations-call-fifa-international-break-disaster",
-      "sport": "Soccer",
-      "published": "2026-10-09T11:14:49.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50133323",
-      "id": "50133323",
-      "headline": "NHL breakout tiers: Top players ready to level up in 2026-27",
-      "summary": "From players with new linemates to young stars set to hit superstardom to enticing rookies, watch out for this group.",
-      "url": "https://www.espn.com/nhl/story/_/id/50133323/nhl-2026-27-breakout-players-tiers-rankings-superstars-goals-stats",
-      "sport": "NHL",
-      "published": "2026-10-09T11:12:59.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50139097",
-      "id": "50139097",
-      "headline": "Maresca: The guilty verdict wouldn't have stopped me joining Man City",
-      "summary": "Maresca: The guilty verdict wouldn't have stopped me joining Man City",
-      "url": "https://www.espn.com/video/clip/_/id/50139097/guilty-verdict-stopped-joining-man-city",
-      "sport": "Soccer",
-      "published": "2026-10-09T10:55:50.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50139024",
-      "id": "50139024",
-      "headline": "Maresca: I completely trust the Man City board",
-      "summary": "Maresca: I completely trust the Man City board",
-      "url": "https://www.espn.com/video/clip/_/id/50139024/completely-trust-man-city-board",
-      "sport": "Soccer",
-      "published": "2026-10-09T10:36:39.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50135639",
-      "id": "50135639",
-      "headline": "MLB 2026: Breaking down Jackson Chourio's young playoff career",
-      "summary": "The Brewers' 22-year-old star is having a record-setting October already. We put his young postseason career into context compared to baseball's greats.",
-      "url": "https://www.espn.com/mlb/story/_/id/50135639/mlb-2026-playoffs-brewers-jackson-chourio-historic-stats-rank-comp",
-      "sport": "MLB",
-      "published": "2026-10-09T10:34:48.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50134524",
-      "id": "50134524",
-      "headline": "How to ace your salary cap draft: Tips and strategies to build a winning team",
-      "summary": "Are you ready for your salary cap draft? Jim McCormick lays out helpful strategies and tactics you can use to ace draft day.",
-      "url": "https://www.espn.com/fantasy/basketball/story/_/id/50134524/fantasy-basketball-how-ace-your-salary-cap-draft-2026-2027",
-      "sport": "NBA",
-      "published": "2026-10-09T10:32:11.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50134782",
-      "id": "50134782",
-      "headline": "2026 WNBA semifinals: Can Las Vegas and New York avoid elimination?",
-      "summary": "Eliminations are on the line for both WNBA playoff semifinal Game 3s. What does each team need to focus on?",
-      "url": "https://www.espn.com/wnba/story/_/id/50134782/2026-wnba-playoffs-game-3-preview-fever-dream-valkyries-aces-dream",
-      "sport": "WNBA",
-      "published": "2026-10-09T10:32:02.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50135065",
-      "id": "50135065",
-      "headline": "Women's March Madness 2027 schedule, locations and more",
-      "summary": "The 2027 women's NCAA tournament begins with Selection Sunday on March 14 and ends with the national championship in Columbus on April 4.",
-      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50135065/womens-ncaa-tournament-march-madness-2027-schedule-locations-bracket-announcement-date",
-      "sport": "Women's college basketball",
-      "published": "2026-10-09T10:30:03.000Z",
-      "firstSeen": "2026-10-09T15:29:39.177Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50134929",
-      "id": "50134929",
-      "headline": "Men's March Madness 2027 schedule, sites, locations",
-      "summary": "Everything to know about the 2027 men's NCAA tournament, from Selection Sunday to the Final Four and championship game.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50134929/mens-college-basketball-march-madness-2027-schedule-sites-locations-selection-sunday",
-      "sport": "College basketball",
-      "published": "2026-10-09T10:29:27.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50126123",
-      "id": "50126123",
-      "headline": "Hometown hero Gunner Stockton back in spotlight for Georgia",
-      "summary": "The Bulldogs QB is a quiet leader, but those who have known him over the years eagerly sing his praises.",
-      "url": "https://www.espn.com/college-football/story/_/id/50126123/gunner-stockton-back-spotlight-georgia-faces-alabama",
-      "sport": "College football",
-      "published": "2026-10-09T10:25:09.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50134520",
-      "id": "50134520",
-      "headline": "NHL Power Rankings: Each team's NHL Rank representatives",
-      "summary": "It's the first regular-season update of our 1-32 poll. Plus, how many players did each team land among the Top 100?",
-      "url": "https://www.espn.com/nhl/story/_/id/50134520/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings",
-      "sport": "NHL",
-      "published": "2026-10-09T10:12:39.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50135453",
-      "id": "50135453",
-      "headline": "NHL Tonight: Rangers, Capitals square off in early Metro showdown",
-      "summary": "Previews, broadcast info and betting lines for Friday's four-pack of games. Plus, stat leaders, highlights and more.",
-      "url": "https://www.espn.com/nhl/story/_/id/50135453/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-      "sport": "NHL",
-      "published": "2026-10-09T10:01:44.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50129469",
-      "id": "50129469",
-      "headline": "Why the Raiders' running game has struggled, and what's next for Ashton Jeanty",
-      "summary": "The Raiders have made offensive strides ... except for the running game. What's next for Las Vegas and Ashton Jeanty?",
-      "url": "https://www.espn.com/nfl/story/_/id/50129469/las-vegas-raiders-struggling-running-game-ashton-jeanty",
-      "sport": "NFL",
-      "published": "2026-10-09T10:00:20.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50126700",
-      "id": "50126700",
-      "headline": "How Saints can regroup, fix slow starts ahead of matchup with unbeaten Vikings",
-      "summary": "New Orleans had a tough Week 4 loss to Atlanta, which also highlighted key deficiencies the Saints need to correct.",
-      "url": "https://www.espn.com/nfl/story/_/id/50126700/new-orleans-saints-sour-taste-week-5-minnesota-vikings",
-      "sport": "NFL",
-      "published": "2026-10-09T10:00:13.000Z",
-      "firstSeen": "2026-10-09T12:41:18.280Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50131323",
-      "id": "50131323",
-      "headline": "Singapore Grand Prix: George Russell sets pace in sole practice session ahead of sprint qualifying",
-      "summary": "George Russell topped the timesheets in the first and only practice session at the Singapore Grand Prix.",
-      "url": "https://www.espn.com/f1/story/_/id/50131323/george-russell-sets-pace-sole-practice-session-ahead-sprint-qualifying-singapore-grand-prix-marina-bay-circuit-formula-1",
-      "sport": "F1",
-      "published": "2026-10-09T09:56:53.000Z",
-      "firstSeen": "2026-10-09T15:29:39.177Z",
-      "bestRank": 1
     }
   ]
 }
