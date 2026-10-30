@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-30T03:26:15.084Z",
+  "generatedAt": "2026-10-30T06:34:12.980Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-09T03:26:15.084Z",
-  "windowEnd": "2026-10-30T03:26:15.084Z",
+  "windowStart": "2026-10-09T06:34:12.980Z",
+  "windowEnd": "2026-10-30T06:34:12.980Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,18 +21,128 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4201,
+  "count": 4204,
   "items": [
     {
-      "key": "50322670",
-      "id": "50322670",
-      "headline": "Josh Jacobs scores twice as Packers dispatch Panthers",
-      "summary": "Carolina made a game of it late, but Green Bay held on for the Thursday night win.",
-      "url": "https://www.espn.com/nfl/story/_/id/50322670/nfl-green-bay-packers-panthers-jordan-love-bryce-young",
+      "key": "50325742",
+      "id": "50325742",
+      "headline": "Panthers' Bryce Young says injured knee 'fine' after taking 6 sacks vs. Packers",
+      "summary": "Panthers quarterback Bryce Young was pressured on nearly half his dropbacks and was sacked six times, but said his injured knee was \"fine\" after a 27-19 loss to the Packers.",
+      "url": "https://www.espn.com/nfl/story/_/id/50325742/panthers-bryce-young-says-knee-fine-loss-packers",
       "sport": "NFL",
-      "published": "2026-10-30T03:24:26.000Z",
-      "firstSeen": "2026-10-30T03:26:15.084Z",
+      "published": "2026-10-30T06:22:07.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50325876",
+      "id": "50325876",
+      "headline": "Packers' Josh Jacobs: TD celebration was ode to gospel song, not mocking arrest",
+      "summary": "The Packers' Josh Jacobs said he was surprised his first-half TD celebration was perceived by some as mocking his May arrest, saying it was an ode to a gospel song.",
+      "url": "https://www.espn.com/nfl/story/_/id/50325876/packers-josh-jacobs-says-td-celebration-mocking-arrest",
+      "sport": "NFL",
+      "published": "2026-10-30T06:21:05.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
       "bestRank": 1
+    },
+    {
+      "key": "50324081",
+      "id": "50324081",
+      "headline": "Packers' Christian Watson returns to play after hospital trip for chest injury",
+      "summary": "Christian Watson was determined to get back on the field Thursday despite coughing up blood and having to take an ambulance ride to get an X-ray and a CT scan.",
+      "url": "https://www.espn.com/nfl/story/_/id/50324081/packers-christian-watson-hospital-chest-injury-panthers",
+      "sport": "NFL",
+      "published": "2026-10-30T06:13:08.000Z",
+      "firstSeen": "2026-10-30T03:26:15.084Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50325834",
+      "id": "50325834",
+      "headline": "Golden State, Atlanta set for WNBA Finals game 7 matchup",
+      "summary": "Atlanta Dream (30-14, 15-5 Eastern Conference) at Golden State Valkyries (32-12, 15-8 Western Conference)",
+      "url": "http://www.espn.com/wnba/preview?gameId=401918311",
+      "sport": "WNBA",
+      "published": "2026-10-30T06:09:46.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50325803",
+      "id": "50325803",
+      "headline": "Jazz take on the Trail Blazers on 3-game skid",
+      "summary": "Portland Trail Blazers (3-1, fifth in the Western Conference) vs. Utah Jazz (1-4, 13th in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909896",
+      "sport": "NBA",
+      "published": "2026-10-30T06:02:49.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50325802",
+      "id": "50325802",
+      "headline": "Grizzlies play the Kings on 5-game win streak",
+      "summary": "Sacramento Kings (0-5, 15th in the Western Conference) vs. Memphis Grizzlies (5-0, second in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909899",
+      "sport": "NBA",
+      "published": "2026-10-30T06:02:48.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50325801",
+      "id": "50325801",
+      "headline": "New Orleans and Atlanta to meet in cross-conference matchup",
+      "summary": "Atlanta Hawks (3-3, seventh in the Eastern Conference) vs. New Orleans Pelicans (1-4, 14th in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909898",
+      "sport": "NBA",
+      "published": "2026-10-30T06:02:47.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50325800",
+      "id": "50325800",
+      "headline": "Cleveland plays Milwaukee for conference showdown",
+      "summary": "Cleveland Cavaliers (3-2, sixth in the Eastern Conference) vs. Milwaukee Bucks (1-4, 13th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909900",
+      "sport": "NBA",
+      "published": "2026-10-30T06:02:46.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50325662",
+      "id": "50325662",
+      "headline": "Trail Blazers' Ja Morant exits first game vs. Grizzlies with hamstring injury",
+      "summary": "Ja Morant exited his first game against his former team in the fourth quarter Thursday night because of a left hamstring injury.",
+      "url": "https://www.espn.com/nba/story/_/id/50325662/trail-blazers-ja-morant-exit-grizzlies-hamstring-injury",
+      "sport": "NBA",
+      "published": "2026-10-30T05:56:53.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50325561",
+      "id": "50325561",
+      "headline": "Buffalo Sabres vs. Anaheim Ducks: Game Highlights",
+      "summary": "Buffalo Sabres vs. Anaheim Ducks: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50325561/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-30T05:28:37.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50325135",
+      "id": "50325135",
+      "headline": "Senators' Hayden Hodgson ejected after hitting Kings' Brandt Clarke into boards",
+      "summary": "Senators forward Hayden Hodgson drove the Kings' Brandt Clarke into the boards in the second period Thursday night, earning a game misconduct and major penalty.",
+      "url": "https://www.espn.com/nhl/story/_/id/50325135/senators-hayden-hodgson-ejected-boarding-hit-vs-kings",
+      "sport": "NHL",
+      "published": "2026-10-30T05:27:00.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 7
     },
     {
       "key": "50294395",
@@ -41,8 +151,250 @@
       "summary": "The 2026 Brewers fulfilled their mission -- and will never be forgotten.",
       "url": "https://www.espn.com/mlb/story/_/id/50294395/world-series-brewers-champions-franchise-first-title",
       "sport": "MLB",
-      "published": "2026-10-30T03:22:14.000Z",
+      "published": "2026-10-30T05:23:41.000Z",
       "firstSeen": "2026-10-30T00:47:51.193Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50325490",
+      "id": "50325490",
+      "headline": "Ottawa Senators vs. Los Angeles Kings: Game Highlights",
+      "summary": "Ottawa Senators vs. Los Angeles Kings: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50325490/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-30T05:15:24.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50324792",
+      "id": "50324792",
+      "headline": "Logan Cooley completes hat trick with second left, Mammoth stun Penguins in OT",
+      "summary": "Logan Cooley, a Pittsburgh native, completed a hat trick against his hometown team with a second left, Mikhail Sergachev scored at 3:27 of overtime, and the Mammoth stunned the Penguins 4-3 on Thursday night.",
+      "url": "https://www.espn.com/nhl/story/_/id/50324792/logan-cooley-completes-hat-trick-second-left-mammoth-stun-penguins-ot",
+      "sport": "NHL",
+      "published": "2026-10-30T05:13:02.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50325487",
+      "id": "50325487",
+      "headline": "Kings beat Senators 6-5 in OT after blowing a 4-goal lead in the 3rd period",
+      "summary": "— Quinton Byfield scored at 3:37 of overtime and the Los Angeles Kings beat the Ottawa Senators 6-5 on Thursday night after blowing a four-goal lead in the third period.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892609",
+      "sport": "NHL",
+      "published": "2026-10-30T05:12:47.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50324969",
+      "id": "50324969",
+      "headline": "Love throws 3 TD passes as the Packers beat the Panthers 27-19",
+      "summary": "— Jordan Love realizes the Green Bay Packers need to finish better.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873023",
+      "sport": "NFL",
+      "published": "2026-10-30T05:00:47.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50325356",
+      "id": "50325356",
+      "headline": "Boozer posts first career triple-double in Grizzlies win over Blazers",
+      "summary": "— Cameron Boozer had the first triple-double of his NBA career with 18 points, 12 rebounds and 12 assists, and the Memphis Grizzlies beat the Portland Trail Blazers 124-103 on Thursday night to move to 5-0.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909895",
+      "sport": "NBA",
+      "published": "2026-10-30T04:59:47.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50325289",
+      "id": "50325289",
+      "headline": "Cam Boozer shines as Grizzlies move to 5-0",
+      "summary": "Cam Boozer shines as Grizzlies move to 5-0",
+      "url": "https://www.espn.com/video/clip/_/id/50325289/cam-boozer-shines-grizzlies-move-5-0",
+      "sport": "NBA",
+      "published": "2026-10-30T04:53:46.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50325352",
+      "id": "50325352",
+      "headline": "Tage Thompson has hat trick, 5 points in Sabres' 7-6 win over Ducks",
+      "summary": "— Tage Thompson had three goals and two assists, Zach Benson added a goal and two assists, and the Buffalo Sabres scored six consecutive goals during a 7-6 victory over the struggling Anaheim Ducks on Thursday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892608",
+      "sport": "NHL",
+      "published": "2026-10-30T04:51:48.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50325279",
+      "id": "50325279",
+      "headline": "Vancouver Canucks vs. San Jose Sharks: Game Highlights",
+      "summary": "Vancouver Canucks vs. San Jose Sharks: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50325279/game-highlights",
+      "sport": "NHL",
+      "published": "2026-10-30T04:45:27.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50325269",
+      "id": "50325269",
+      "headline": "Will Smith scores twice as the Sharks rally from a two-goal deficit to beat the Canucks 3-2",
+      "summary": "— Will Smith scored twice, including the tying goal just 11 seconds before Mason Marchment’s go-ahead goal, and the San Jose Sharks rallied from a two-goal deficit to beat the Vancouver Canucks 3-2 on Thursday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892610",
+      "sport": "NHL",
+      "published": "2026-10-30T04:43:59.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50322459",
+      "id": "50322459",
+      "headline": "Week 8 TNF Panthers at Packers: Highlights, key plays",
+      "summary": "Check out the biggest touchdowns and highlights from the Packers' win over the Panthers at Lambeau Field.",
+      "url": "https://www.espn.com/nfl/story/_/id/50322459/nfl-thursday-night-football-packers-panthers-jordan-love-bryce-young",
+      "sport": "NFL",
+      "published": "2026-10-30T04:32:54.000Z",
+      "firstSeen": "2026-10-30T00:47:51.193Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50322670",
+      "id": "50322670",
+      "headline": "Josh Jacobs scores twice as Packers dispatch Panthers",
+      "summary": "Carolina made a game of it late, but Green Bay held on for the Thursday night win.",
+      "url": "https://www.espn.com/nfl/story/_/id/50322670/nfl-green-bay-packers-panthers-jordan-love-bryce-young",
+      "sport": "NFL",
+      "published": "2026-10-30T04:30:36.000Z",
+      "firstSeen": "2026-10-30T03:26:15.084Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50043542",
+      "id": "50043542",
+      "headline": "NFL trade deadline grades: Jeffery Simmons, DeForest Buckner, Quenton Nelson",
+      "summary": "Can Joey Porter Jr. clean up the Cowboys' defense? Will J.J. McCarthy improve the Giants' QB situation? We're grading NFL trades ahead of November's deadline.",
+      "url": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals",
+      "sport": "NFL",
+      "published": "2026-10-30T04:25:16.000Z",
+      "firstSeen": "2026-09-28T18:35:51.463Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50323927",
+      "id": "50323927",
+      "headline": "Panthers' ailing secondary loses rookie CB Will Lee to injury in first half",
+      "summary": "The Panthers, already down two starting cornerbacks, lost rookie Will Lee to a first-half hamstring injury Thursday night against the Packers.",
+      "url": "https://www.espn.com/nfl/story/_/id/50323927/panthers-lee-injures-hamstring-ruled-vs-packers",
+      "sport": "NFL",
+      "published": "2026-10-30T04:21:02.000Z",
+      "firstSeen": "2026-10-30T03:26:15.084Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50322532",
+      "id": "50322532",
+      "headline": "Red Wings suspend star forward Dylan Larkin as team explores trade options",
+      "summary": "The Red Wings announced Thursday that star forward Dylan Larkin has been suspended without pay after informing the team he no longer wanted to play for Detroit.",
+      "url": "https://www.espn.com/nhl/story/_/id/50322532/red-wings-suspend-dylan-larkin-explore-trade-options",
+      "sport": "NHL",
+      "published": "2026-10-30T04:18:45.000Z",
+      "firstSeen": "2026-10-30T00:47:51.193Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50325110",
+      "id": "50325110",
+      "headline": "Red Wings officially suspend Dylan Larkin amidst continued trade drama",
+      "summary": "Red Wings officially suspend Dylan Larkin amidst continued trade drama",
+      "url": "https://www.espn.com/video/clip/_/id/50325110/red-wings-officially-suspend-dylan-larkin-amidst-continued-trade-drama",
+      "sport": "NHL",
+      "published": "2026-10-30T04:16:42.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50325079",
+      "id": "50325079",
+      "headline": "Tayven Jackson, Jahiem White propel North Texas to 48-41 victory over Florida Atlantic",
+      "summary": "— Tayven Jackson passed for 404 yards and four touchdowns, Jahiem White rushed for 193 yards and two scores and North Texas held off Florida Atlantic 48-41 on Thursday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401862812",
+      "sport": "College football",
+      "published": "2026-10-30T04:02:46.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50325017",
+      "id": "50325017",
+      "headline": "Hayden Wolfe's field goal in OT lifts Troy to 24-21 victory over James Madison",
+      "summary": "— Hayden Wolfe kicked a 27-yard field goal in overtime and Troy rallied from a 14-point deficit to beat James Madison 24-21 on Thursday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401869963",
+      "sport": "College football",
+      "published": "2026-10-30T03:45:47.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50324976",
+      "id": "50324976",
+      "headline": "Florida Atlantic Owls vs. North Texas Mean Green: Full Highlights",
+      "summary": "Florida Atlantic Owls vs. North Texas Mean Green: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50324976/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-30T03:39:02.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50324964",
+      "id": "50324964",
+      "headline": "Troy Trojans vs. James Madison Dukes: Full Highlights",
+      "summary": "Troy Trojans vs. James Madison Dukes: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50324964/full-highlights",
+      "sport": "College football",
+      "published": "2026-10-30T03:36:18.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50324935",
+      "id": "50324935",
+      "headline": "Jordan Love, Packers take down Panthers on TNF",
+      "summary": "Jordan Love, Packers take down Panthers on TNF",
+      "url": "https://www.espn.com/video/clip/_/id/50324935/jordan-love-packers-take-panthers-tnf",
+      "sport": "NFL",
+      "published": "2026-10-30T03:32:40.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50324851",
+      "id": "50324851",
+      "headline": "Ben Johnson opens up about the early days of his coaching journey",
+      "summary": "Ben Johnson opens up about the early days of his coaching journey",
+      "url": "https://www.espn.com/video/clip/_/id/50324851/ben-johnson-opens-early-days-coaching-journey",
+      "sport": "NFL",
+      "published": "2026-10-30T03:27:54.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49309401",
+      "id": "49309401",
+      "headline": "Fantasy football 10-team Knockout league rankings: The 140 players to draft",
+      "summary": "Rankings for knockout leagues, where the lowest-scoring team is eliminated and the last team standing wins.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49309401/fantasy-football-knockout-rankings-top-200",
+      "sport": "NFL",
+      "published": "2026-10-30T03:26:38.000Z",
+      "firstSeen": "2026-10-05T18:37:51.970Z",
       "bestRank": 2
     },
     {
@@ -123,17 +475,6 @@
       "bestRank": 6
     },
     {
-      "key": "50324081",
-      "id": "50324081",
-      "headline": "Packers' Christian Watson returns to game after hospital trip for chest injury",
-      "summary": "Christian Watson was taken to a hospital, which the team said was for precautionary reasons, during the first half of Thursday's game against the Panthers.",
-      "url": "https://www.espn.com/nfl/story/_/id/50324081/packers-christian-watson-hospital-chest-injury-panthers",
-      "sport": "NFL",
-      "published": "2026-10-30T02:53:49.000Z",
-      "firstSeen": "2026-10-30T03:26:15.084Z",
-      "bestRank": 2
-    },
-    {
       "key": "50324619",
       "id": "50324619",
       "headline": "South Carolina State Bulldogs vs. Morgan State Bears: Full Highlights",
@@ -154,17 +495,6 @@
       "published": "2026-10-30T02:51:47.000Z",
       "firstSeen": "2026-10-30T03:26:15.084Z",
       "bestRank": 7
-    },
-    {
-      "key": "50322532",
-      "id": "50322532",
-      "headline": "Red Wings suspend star forward Dylan Larkin as team explores trade options",
-      "summary": "The Red Wings announced Thursday that star forward Dylan Larkin has been suspended without pay after informing the team he no longer wanted to play for Detroit.",
-      "url": "https://www.espn.com/nhl/story/_/id/50322532/red-wings-suspend-dylan-larkin-explore-trade-options",
-      "sport": "NHL",
-      "published": "2026-10-30T02:50:27.000Z",
-      "firstSeen": "2026-10-30T00:47:51.193Z",
-      "bestRank": 2
     },
     {
       "key": "50324586",
@@ -209,17 +539,6 @@
       "published": "2026-10-30T02:39:51.000Z",
       "firstSeen": "2026-10-30T03:26:15.084Z",
       "bestRank": 4
-    },
-    {
-      "key": "50322459",
-      "id": "50322459",
-      "headline": "Week 8 TNF Panthers at Packers: Highlights, key plays",
-      "summary": "Check out the biggest touchdowns and highlights as the Packers host the Panthers at Lambeau Field.",
-      "url": "https://www.espn.com/nfl/story/_/id/50322459/nfl-thursday-night-football-packers-panthers-jordan-love-bryce-young",
-      "sport": "NFL",
-      "published": "2026-10-30T02:39:26.000Z",
-      "firstSeen": "2026-10-30T00:47:51.193Z",
-      "bestRank": 1
     },
     {
       "key": "50321651",
@@ -275,17 +594,6 @@
       "published": "2026-10-30T02:15:47.000Z",
       "firstSeen": "2026-10-30T03:26:15.084Z",
       "bestRank": 11
-    },
-    {
-      "key": "50323927",
-      "id": "50323927",
-      "headline": "Panthers' ailing secondary loses rookie CB Will Lee to injury in first half",
-      "summary": "The Panthers, already down two starting cornerbacks, lost rookie Will Lee to a first-half hamstring injury Thursday night against the Packers.",
-      "url": "https://www.espn.com/nfl/story/_/id/50323927/panthers-lee-injures-hamstring-ruled-vs-packers",
-      "sport": "NFL",
-      "published": "2026-10-30T02:14:03.000Z",
-      "firstSeen": "2026-10-30T03:26:15.084Z",
-      "bestRank": 3
     },
     {
       "key": "50324153",
@@ -381,7 +689,7 @@
       "headline": "Longtime football coach June Jones, pioneer of run-and-shoot offense, dies at 73",
       "summary": "Longtime college and pro football coach June Jones, who helped popularize the run-and-shoot offense, has died at 73.",
       "url": "https://www.espn.com/college-football/story/_/id/50321084/long-football-coach-june-jones-dies-age-73",
-      "sport": "NFL",
+      "sport": "College football",
       "published": "2026-10-30T01:47:06.000Z",
       "firstSeen": "2026-10-29T21:21:54.163Z",
       "bestRank": 2
@@ -1144,17 +1452,6 @@
       "published": "2026-10-29T17:27:24.000Z",
       "firstSeen": "2026-10-29T18:26:54.439Z",
       "bestRank": 5
-    },
-    {
-      "key": "50043542",
-      "id": "50043542",
-      "headline": "NFL trade deadline grades: Jeffery Simmons, DeForest Buckner, Quenton Nelson",
-      "summary": "Can Joey Porter Jr. clean up the Cowboys' defense? Will J.J. McCarthy improve the Giants' QB situation? We're grading NFL trades ahead of November's deadline.",
-      "url": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals",
-      "sport": "NFL",
-      "published": "2026-10-29T17:06:39.000Z",
-      "firstSeen": "2026-09-28T18:35:51.463Z",
-      "bestRank": 1
     },
     {
       "key": "50289500",
@@ -6171,17 +6468,6 @@
       "published": "2026-10-27T12:51:22.000Z",
       "firstSeen": "2026-08-12T11:41:09.333Z",
       "bestRank": 1
-    },
-    {
-      "key": "49309401",
-      "id": "49309401",
-      "headline": "Fantasy football 12-team Knockout league rankings: The 154 players to draft",
-      "summary": "Rankings for knockout leagues, where the lowest-scoring team is eliminated and the last team standing wins.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49309401/fantasy-football-knockout-rankings-top-200",
-      "sport": "NFL",
-      "published": "2026-10-27T12:38:40.000Z",
-      "firstSeen": "2026-10-05T18:37:51.970Z",
-      "bestRank": 2
     },
     {
       "key": "50296659",
@@ -45979,259 +46265,6 @@
       "sport": "Tennis",
       "published": "2026-10-09T06:55:58.000Z",
       "firstSeen": "2026-10-09T09:36:09.641Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50137741",
-      "id": "50137741",
-      "headline": "Guardians survive in Chicago, head home with chance to advance",
-      "summary": "Jose Ramirez delivered again, homering and driving in three runs Thursday night to help the Guardians beat the White Sox 9-5 to send their ALDS to a decisive Game 5.",
-      "url": "https://www.espn.com/mlb/story/_/id/50137741/ramirez-guardians-top-white-sox-force-decisive-game-5-alds",
-      "sport": "MLB",
-      "published": "2026-10-09T05:59:28.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50138071",
-      "id": "50138071",
-      "headline": "Dak addresses 'embarrassing' comment made in AT&T Stadium tunnel",
-      "summary": "Dak addresses 'embarrassing' comment made in AT&T Stadium tunnel",
-      "url": "https://www.espn.com/video/clip/_/id/50138071/dak-addresses-embarrassing-comment-made-att-stadium-tunnel",
-      "sport": "NFL",
-      "published": "2026-10-09T05:58:38.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50135957",
-      "id": "50135957",
-      "headline": "Sick Joey Porter Jr. sits out Cowboys' 'TNF' loss to Bucs",
-      "summary": "Joey Porter Jr. was ruled out of Thursday night's game against the Tampa Bay Buccaneers because of an illness.",
-      "url": "https://www.espn.com/nfl/story/_/id/50135957/cowboys-say-sick-joey-porter-jr-face-bucs-tnf",
-      "sport": "NFL",
-      "published": "2026-10-09T05:54:52.000Z",
-      "firstSeen": "2026-10-09T01:10:46.220Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50137673",
-      "id": "50137673",
-      "headline": "LeBron James scores 10 points in 18 minutes in 76ers debut",
-      "summary": "LeBron James, who joined the 76ers this summer, had 10 points, five assists and four rebounds in the first half of his debut with Philadelphia.",
-      "url": "https://www.espn.com/nba/story/_/id/50137673/lebron-james-scores-10-points-18-minutes-76ers-debut",
-      "sport": "NBA",
-      "published": "2026-10-09T05:49:34.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50138050",
-      "id": "50138050",
-      "headline": "Toronto Maple Leafs vs. Vegas Golden Knights: Game Highlights",
-      "summary": "Toronto Maple Leafs vs. Vegas Golden Knights: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50138050/game-highlights",
-      "sport": "NHL",
-      "published": "2026-10-09T05:36:23.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50137826",
-      "id": "50137826",
-      "headline": "76ers' Embiid calls 'not true' LeBron report 'unfortunate'",
-      "summary": "Joel Embiid said a recent report about LeBron James getting on him about being late to practice \"is not true\" and caused him to wonder why he was targeted.",
-      "url": "https://www.espn.com/nba/story/_/id/50137826/76ers-embiid-calls-not-true-lebron-report-unfortunate",
-      "sport": "NBA",
-      "published": "2026-10-09T05:27:05.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50136406",
-      "id": "50136406",
-      "headline": "Buccaneers explode in third quarter against Cowboys to get first win",
-      "summary": "Undrafted rookie Jalon Daniels and Tampa Bay held off Dallas on \"Thursday Night Football.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/50136406/buccaneers-explode-first-win-cowboys-tnf",
-      "sport": "NFL",
-      "published": "2026-10-09T05:23:16.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50137997",
-      "id": "50137997",
-      "headline": "Connelly's SO goal lifts Golden Knights past Maple Leafs 4-3 after rallying from a 3-goal deficit",
-      "summary": "— Trevor Connelly scored in the fifth round of the shootout and the Vegas Golden Knights came back from a three-goal deficit for a 4-3 victory over the Toronto Maple Leafs on Thursday night.",
-      "url": "http://www.espn.com/nhl/recap?gameId=401892464",
-      "sport": "NHL",
-      "published": "2026-10-09T05:16:28.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50126875",
-      "id": "50126875",
-      "headline": "College football Week 6 best bets: White Out game leads the card",
-      "summary": "Pamela Maldonado and Mark Zinno break down the best bets they see around college football for Week 6.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50126875/college-football-odds-best-bets-week-6-spreads-lines-2026",
-      "sport": "College football",
-      "published": "2026-10-09T04:43:53.000Z",
-      "firstSeen": "2026-10-08T12:44:03.099Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50135427",
-      "id": "50135427",
-      "headline": "'That ain't me': Bears' D'Andre Swift laments early fumble issues",
-      "summary": "After fumbling twice in the Bears first four games, running back D'Andre Swift said Thursday that his turnover problem is \"over with now.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/50135427/that-aint-bears-dandre-swift-laments-early-season-fumbles",
-      "sport": "NFL",
-      "published": "2026-10-09T04:33:14.000Z",
-      "firstSeen": "2026-10-09T01:10:46.220Z",
-      "bestRank": 15
-    },
-    {
-      "key": "50137526",
-      "id": "50137526",
-      "headline": "Bucky Irving and rookie QB Jalon Daniels help Bucs beat sloppy Cowboys 24-16 for 1st win of season",
-      "summary": "— Bucky Irving ran for a career-high 165 yards, including a 72-yard run to set up the touchdown that put Tampa Bay ahead for good while scoring twice himself, and the Buccaneers beat the...",
-      "url": "http://www.espn.com/nfl/recap?gameId=401872980",
-      "sport": "NFL",
-      "published": "2026-10-09T04:32:27.000Z",
-      "firstSeen": "2026-10-09T03:40:01.856Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50137753",
-      "id": "50137753",
-      "headline": "Makar has 2 goals and an assist in the Avs' 7-3 victory over the winless Flames",
-      "summary": "— Cale Makar had two goals and an assist, Devon Toews and Jaden Schwartz also each scored twice and the Colorado Avalanche beat the winless Calgary Flames 7-3 on Thursday night.",
-      "url": "http://www.espn.com/nhl/recap?gameId=401892463",
-      "sport": "NHL",
-      "published": "2026-10-09T04:23:27.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50134891",
-      "id": "50134891",
-      "headline": "Week 5 TNF highlights: Best plays, moments, touchdowns from Cowboys vs. Bucs",
-      "summary": "A look at the highlights from Dallas hosting Tampa Bay for \"Thursday Night Football\" to kick off Week 5.",
-      "url": "https://www.espn.com/nfl/story/_/id/50134891/week-5-tnf-highlights-cowboys-buccaneers",
-      "sport": "NFL",
-      "published": "2026-10-09T04:17:25.000Z",
-      "firstSeen": "2026-10-08T21:29:11.781Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50137763",
-      "id": "50137763",
-      "headline": "Colorado Avalanche vs. Calgary Flames: Game Highlights",
-      "summary": "Colorado Avalanche vs. Calgary Flames: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50137763/game-highlights",
-      "sport": "NHL",
-      "published": "2026-10-09T04:15:30.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50137470",
-      "id": "50137470",
-      "headline": "Buccaneers stun Cowboys 24-16 to pick up first win of season",
-      "summary": "Buccaneers stun Cowboys 24-16 to pick up first win of season",
-      "url": "https://www.espn.com/video/clip/_/id/50137470/buccaneers-stun-cowboys-24-16-pick-first-win-season",
-      "sport": "NFL",
-      "published": "2026-10-09T04:08:56.000Z",
-      "firstSeen": "2026-10-09T03:40:01.856Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50136127",
-      "id": "50136127",
-      "headline": "Six college football buyouts that will determine the coaching carousel",
-      "summary": "From Lincoln Riley to Deion Sanders, these hefty buyouts will dictate the market.",
-      "url": "https://www.espn.com/college-football/story/_/id/50136127/college-football-coaching-carousel-buyouts",
-      "sport": "College football",
-      "published": "2026-10-09T04:07:46.000Z",
-      "firstSeen": "2026-10-09T03:40:01.856Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50137745",
-      "id": "50137745",
-      "headline": "Cleveland Guardians vs. Chicago White Sox: Game Highlights",
-      "summary": "Cleveland Guardians vs. Chicago White Sox: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50137745/game-highlights",
-      "sport": "MLB",
-      "published": "2026-10-09T04:07:24.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50137739",
-      "id": "50137739",
-      "headline": "South Florida Bulls vs. UTSA Roadrunners: Full Highlights",
-      "summary": "South Florida Bulls vs. UTSA Roadrunners: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50137739/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-09T04:03:46.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50136790",
-      "id": "50136790",
-      "headline": "Tyreek Hill testifies in assault and battery civil trial in Miami",
-      "summary": "Tyreek Hill took the stand in his assault and battery civil trial Thursday. He denied allegations that he ever physically abused his estranged wife.",
-      "url": "https://www.espn.com/nfl/story/_/id/50136790/tyreek-hill-denies-allegations-physically-abused-estranged-wife",
-      "sport": "NFL",
-      "published": "2026-10-09T03:54:05.000Z",
-      "firstSeen": "2026-10-09T03:40:01.856Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50137668",
-      "id": "50137668",
-      "headline": "South Alabama beats Arkansas State 56-49 in the highest scoring FBS game this season",
-      "summary": "— Keenan Phillips ran for 157 yards and three touchdowns, and he added a 100-yard kickoff return as South Alabama beat Arkansas State 56-49 on Thursday night for the most combined...",
-      "url": "http://www.espn.com/ncf/recap?gameId=401869933",
-      "sport": "College football",
-      "published": "2026-10-09T03:51:27.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50137660",
-      "id": "50137660",
-      "headline": "South Alabama Jaguars vs. Arkansas State Red Wolves: Full Highlights",
-      "summary": "South Alabama Jaguars vs. Arkansas State Red Wolves: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50137660/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-09T03:49:32.000Z",
-      "firstSeen": "2026-10-09T06:48:55.966Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50125051",
-      "id": "50125051",
-      "headline": "Fantasy football stock watch: Boston among players rising; Hurts falling",
-      "summary": "Matt Bowen lists players who are ascending after one month of play and others trending in the wrong direction.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50125051/fantasy-football-trade-value-breakouts-busts",
-      "sport": "NFL",
-      "published": "2026-10-09T03:40:26.000Z",
-      "firstSeen": "2026-10-08T12:44:03.099Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50137491",
-      "id": "50137491",
-      "headline": "Atlanta Hawks vs. San Antonio Spurs: Game Highlights",
-      "summary": "Atlanta Hawks vs. San Antonio Spurs: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50137491/game-highlights",
-      "sport": "NBA",
-      "published": "2026-10-09T03:37:32.000Z",
-      "firstSeen": "2026-10-09T03:40:01.856Z",
       "bestRank": 1
     }
   ]
