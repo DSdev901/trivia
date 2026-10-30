@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-10-30T06:34:12.980Z",
+  "generatedAt": "2026-10-30T09:24:31.420Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-09T06:34:12.980Z",
-  "windowEnd": "2026-10-30T06:34:12.980Z",
+  "windowStart": "2026-10-09T09:24:31.420Z",
+  "windowEnd": "2026-10-30T09:24:31.420Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,18 +21,117 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4204,
+  "count": 4203,
   "items": [
     {
-      "key": "50325742",
-      "id": "50325742",
-      "headline": "Panthers' Bryce Young says injured knee 'fine' after taking 6 sacks vs. Packers",
-      "summary": "Panthers quarterback Bryce Young was pressured on nearly half his dropbacks and was sacked six times, but said his injured knee was \"fine\" after a 27-19 loss to the Packers.",
-      "url": "https://www.espn.com/nfl/story/_/id/50325742/panthers-bryce-young-says-knee-fine-loss-packers",
-      "sport": "NFL",
-      "published": "2026-10-30T06:22:07.000Z",
-      "firstSeen": "2026-10-30T06:34:12.980Z",
+      "key": "50326226",
+      "id": "50326226",
+      "headline": "Dallas and Columbus meet for non-conference matchup",
+      "summary": "Columbus Blue Jackets (5-6, in the Metropolitan Division) vs. Dallas Stars (7-5-1, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892622",
+      "sport": "NHL",
+      "published": "2026-10-30T08:10:57.000Z",
+      "firstSeen": "2026-10-30T09:24:31.420Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50326225",
+      "id": "50326225",
+      "headline": "Islanders host the Oilers after overtime win",
+      "summary": "Edmonton Oilers (9-2-2, in the Pacific Division) vs. New York Islanders (7-4-2, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892617",
+      "sport": "NHL",
+      "published": "2026-10-30T08:10:55.000Z",
+      "firstSeen": "2026-10-30T09:24:31.420Z",
       "bestRank": 2
+    },
+    {
+      "key": "50326224",
+      "id": "50326224",
+      "headline": "Toronto visits Vancouver after McKenna's 2-goal game",
+      "summary": "Toronto Maple Leafs (7-6-2, in the Atlantic Division) vs. Vancouver Canucks (3-11-1, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892621",
+      "sport": "NHL",
+      "published": "2026-10-30T08:10:54.000Z",
+      "firstSeen": "2026-10-30T09:24:31.420Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50326223",
+      "id": "50326223",
+      "headline": "Detroit plays St. Louis after Arvidsson's hat trick",
+      "summary": "St. Louis Blues (6-6-1, in the Central Division) vs. Detroit Red Wings (6-4-3, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892615",
+      "sport": "NHL",
+      "published": "2026-10-30T08:10:53.000Z",
+      "firstSeen": "2026-10-30T09:24:31.420Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50326222",
+      "id": "50326222",
+      "headline": "Canadiens try to keep win streak going, host the Penguins",
+      "summary": "Pittsburgh Penguins (5-6-2, in the Metropolitan Division) vs. Montreal Canadiens (8-3-2, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892620",
+      "sport": "NHL",
+      "published": "2026-10-30T08:10:52.000Z",
+      "firstSeen": "2026-10-30T09:24:31.420Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50326221",
+      "id": "50326221",
+      "headline": "Senators visit the Sharks after Cozens' 2-goal game",
+      "summary": "Ottawa Senators (8-5-1, in the Atlantic Division) vs. San Jose Sharks (7-6-1, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892619",
+      "sport": "NHL",
+      "published": "2026-10-30T08:10:51.000Z",
+      "firstSeen": "2026-10-30T09:24:31.420Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50326220",
+      "id": "50326220",
+      "headline": "Buffalo visits Los Angeles after Thompson's hat trick",
+      "summary": "Buffalo Sabres (6-4-3, in the Atlantic Division) vs. Los Angeles Kings (4-6-2, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892618",
+      "sport": "NHL",
+      "published": "2026-10-30T08:10:50.000Z",
+      "firstSeen": "2026-10-30T09:24:31.420Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50326219",
+      "id": "50326219",
+      "headline": "Bruins try to extend home win streak, face the Blackhawks",
+      "summary": "Chicago Blackhawks (4-9, in the Central Division) vs. Boston Bruins (9-4-1, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892614",
+      "sport": "NHL",
+      "published": "2026-10-30T08:10:48.000Z",
+      "firstSeen": "2026-10-30T09:24:31.420Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50326218",
+      "id": "50326218",
+      "headline": "Nashville takes on Tampa Bay following Forsberg's 2-goal game",
+      "summary": "Tampa Bay Lightning (8-3-1, in the Atlantic Division) vs. Nashville Predators (4-4-5, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892616",
+      "sport": "NHL",
+      "published": "2026-10-30T08:10:47.000Z",
+      "firstSeen": "2026-10-30T09:24:31.420Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50326217",
+      "id": "50326217",
+      "headline": "Panthers play the Jets after Verhaeghe's 2-goal performance",
+      "summary": "Winnipeg Jets (4-6-3, in the Central Division) vs. Florida Panthers (7-4-2, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892612",
+      "sport": "NHL",
+      "published": "2026-10-30T08:10:46.000Z",
+      "firstSeen": "2026-10-30T09:24:31.420Z",
+      "bestRank": 10
     },
     {
       "key": "50325876",
@@ -41,7 +140,7 @@
       "summary": "The Packers' Josh Jacobs said he was surprised his first-half TD celebration was perceived by some as mocking his May arrest, saying it was an ode to a gospel song.",
       "url": "https://www.espn.com/nfl/story/_/id/50325876/packers-josh-jacobs-says-td-celebration-mocking-arrest",
       "sport": "NFL",
-      "published": "2026-10-30T06:21:05.000Z",
+      "published": "2026-10-30T06:53:19.000Z",
       "firstSeen": "2026-10-30T06:34:12.980Z",
       "bestRank": 1
     },
@@ -52,8 +151,30 @@
       "summary": "Christian Watson was determined to get back on the field Thursday despite coughing up blood and having to take an ambulance ride to get an X-ray and a CT scan.",
       "url": "https://www.espn.com/nfl/story/_/id/50324081/packers-christian-watson-hospital-chest-injury-panthers",
       "sport": "NFL",
-      "published": "2026-10-30T06:13:08.000Z",
+      "published": "2026-10-30T06:44:37.000Z",
       "firstSeen": "2026-10-30T03:26:15.084Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50325910",
+      "id": "50325910",
+      "headline": "Fifa Laopakdee salvages 71 for 2-shot lead in windy Asia-Pacific Amateur",
+      "summary": "Fifa Laopakdee followed his opening-round 63 with a 71 on Friday to take a two-stroke lead in the Asia-Pacific Amateur Championship in New Zealand.",
+      "url": "https://www.espn.com/golf/story/_/id/50325910/fifa-laopakdee-shoots-71-2-shot-lead-asia-pacific-amateur",
+      "sport": "Golf",
+      "published": "2026-10-30T06:40:04.000Z",
+      "firstSeen": "2026-10-30T09:24:31.420Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50325742",
+      "id": "50325742",
+      "headline": "Panthers' Bryce Young says injured knee 'fine' after taking 6 sacks vs. Packers",
+      "summary": "Panthers quarterback Bryce Young was pressured on nearly half his dropbacks and was sacked six times, but said his injured knee was \"fine\" after a 27-19 loss to the Packers.",
+      "url": "https://www.espn.com/nfl/story/_/id/50325742/panthers-bryce-young-says-knee-fine-loss-packers",
+      "sport": "NFL",
+      "published": "2026-10-30T06:22:07.000Z",
+      "firstSeen": "2026-10-30T06:34:12.980Z",
       "bestRank": 2
     },
     {
@@ -759,6 +880,17 @@
       "published": "2026-10-30T01:07:32.000Z",
       "firstSeen": "2026-10-29T15:23:19.142Z",
       "bestRank": 12
+    },
+    {
+      "key": "50323377",
+      "id": "50323377",
+      "headline": "Karl Vilips shoots 62, takes first-round Mexico Open lead",
+      "summary": "Karl Vilips used two long bridie streaks to take the first-round lead Thursday in the Mexico Open, the first of two straight PGA Tour events in the country.",
+      "url": "https://www.espn.com/golf/story/_/id/50323377/karl-vilips-shoots-62-takes-first-round-mexico-open-lead",
+      "sport": "Golf",
+      "published": "2026-10-30T00:42:15.000Z",
+      "firstSeen": "2026-10-30T09:24:31.420Z",
+      "bestRank": 2
     },
     {
       "key": "50321544",
@@ -46122,149 +46254,6 @@
       "sport": "F1",
       "published": "2026-10-09T09:56:53.000Z",
       "firstSeen": "2026-10-09T15:29:39.177Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50138584",
-      "id": "50138584",
-      "headline": "Buffalo and Utah square off in non-conference matchup",
-      "summary": "Utah Mammoth (3-2, in the Central Division) vs. Buffalo Sabres (2-2, in the Atlantic Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892472",
-      "sport": "NHL",
-      "published": "2026-10-09T08:11:37.000Z",
-      "firstSeen": "2026-10-09T09:36:09.641Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50138583",
-      "id": "50138583",
-      "headline": "Golden Knights in action against the Kings following shootout victory",
-      "summary": "Los Angeles Kings (0-2-1, in the Pacific Division) vs. Vegas Golden Knights (4-1, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892481",
-      "sport": "NHL",
-      "published": "2026-10-09T08:11:36.000Z",
-      "firstSeen": "2026-10-09T09:36:09.641Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50138582",
-      "id": "50138582",
-      "headline": "Flyers enter matchup with the Bruins on losing streak",
-      "summary": "Philadelphia Flyers (0-3-2, in the Metropolitan Division) vs. Boston Bruins (3-2, in the Atlantic Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892469",
-      "sport": "NHL",
-      "published": "2026-10-09T08:11:35.000Z",
-      "firstSeen": "2026-10-09T09:36:09.641Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50138581",
-      "id": "50138581",
-      "headline": "Panthers play the Wild in a non-conference matchup",
-      "summary": "Minnesota Wild (2-1-1, in the Central Division) vs. Florida Panthers (2-0-2, in the Atlantic Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401891805",
-      "sport": "NHL",
-      "published": "2026-10-09T08:11:34.000Z",
-      "firstSeen": "2026-10-09T09:36:09.641Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50138580",
-      "id": "50138580",
-      "headline": "Oilers bring win streak into matchup against the Sharks",
-      "summary": "Edmonton Oilers (3-0-1, in the Pacific Division) vs. San Jose Sharks (3-1, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892471",
-      "sport": "NHL",
-      "published": "2026-10-09T08:11:33.000Z",
-      "firstSeen": "2026-10-09T09:36:09.641Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50138579",
-      "id": "50138579",
-      "headline": "Avalanche host the Maple Leafs after Makar's 2-goal game",
-      "summary": "Toronto Maple Leafs (2-2-1, in the Atlantic Division) vs. Colorado Avalanche (3-1, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892478",
-      "sport": "NHL",
-      "published": "2026-10-09T08:11:31.000Z",
-      "firstSeen": "2026-10-09T09:36:09.641Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50138578",
-      "id": "50138578",
-      "headline": "Hurricanes try to keep win streak alive, visit the Blackhawks",
-      "summary": "Carolina Hurricanes (3-1-1, in the Metropolitan Division) vs. Chicago Blackhawks (1-4, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892476",
-      "sport": "NHL",
-      "published": "2026-10-09T08:11:30.000Z",
-      "firstSeen": "2026-10-09T09:36:09.641Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50138577",
-      "id": "50138577",
-      "headline": "Lightning visit the Islanders after Carlson's 2-goal game",
-      "summary": "Tampa Bay Lightning (3-1, in the Atlantic Division) vs. New York Islanders (2-2, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892479",
-      "sport": "NHL",
-      "published": "2026-10-09T08:11:29.000Z",
-      "firstSeen": "2026-10-09T09:36:09.641Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50138576",
-      "id": "50138576",
-      "headline": "Nashville visits Ottawa after Edstrom's 2-goal game",
-      "summary": "Nashville Predators (2-1-1, in the Central Division) vs. Ottawa Senators (3-1, in the Atlantic Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892474",
-      "sport": "NHL",
-      "published": "2026-10-09T08:11:28.000Z",
-      "firstSeen": "2026-10-09T09:36:09.641Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50138575",
-      "id": "50138575",
-      "headline": "Devils take on the Canucks after Evangelista's 2-goal showing",
-      "summary": "Vancouver Canucks (2-3, in the Pacific Division) vs. New Jersey Devils (1-2, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892470",
-      "sport": "NHL",
-      "published": "2026-10-09T08:11:27.000Z",
-      "firstSeen": "2026-10-09T09:36:09.641Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50085464",
-      "id": "50085464",
-      "headline": "NFL Week 5 betting: Odds, lines and totals for every game",
-      "summary": "A look at the odds, spreads, totals and FPI predictions for every NFL game in Week 5.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50085464/2026-nfl-week-5-schedule-odds-betting-point-spreads-totals",
-      "sport": "NFL",
-      "published": "2026-10-09T08:10:19.000Z",
-      "firstSeen": "2026-10-05T15:32:14.238Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50134447",
-      "id": "50134447",
-      "headline": "Premier League reranked: Have we found Arsenal's fatal flaw?",
-      "summary": "Let's rank all 20 Premier League teams again: making sense of Chelsea's poor start, Arsenal's weakness, and whether Hull City can survive.",
-      "url": "https://www.espn.com/soccer/story/_/id/50134447/premier-league-reranked-all-20-teams-arsenal-fatal-flaw-chelsea-bad",
-      "sport": "Soccer",
-      "published": "2026-10-09T07:58:23.000Z",
-      "firstSeen": "2026-10-09T09:36:09.641Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50138247",
-      "id": "50138247",
-      "headline": "Shelton breezes to straight-sets win to advance in Shanghai",
-      "summary": "On his 24th birthday, Ben Shelton defeated Daniel Altmaier 6-3, 7-6 (6) to advance to the third round of the Shanghai Masters.",
-      "url": "https://www.espn.com/tennis/story/_/id/50138247/shelton-breezes-straight-sets-win-advance-shanghai",
-      "sport": "Tennis",
-      "published": "2026-10-09T06:55:58.000Z",
-      "firstSeen": "2026-10-09T09:36:09.641Z",
       "bestRank": 1
     }
   ]
