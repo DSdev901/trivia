@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-11-01T15:35:08.211Z",
+  "generatedAt": "2026-11-01T18:34:41.850Z",
   "retentionDays": 21,
   "windowStart": "2026-10-11",
   "windowEnd": "2026-11-01",
   "snapshotIntervalHours": 3,
-  "count": 2267,
+  "count": 2271,
   "items": [
     {
       "headline": "Gen Z protests turn violent in Germany",
@@ -218,12 +218,56 @@
       "bestRank": 38
     },
     {
+      "headline": "Israeli strikes in Gaza kill eight including child, hospitals say",
+      "date": "2026-11-01",
+      "bucket": "World",
+      "summary": "Five officers from the Hamas-run police have been killed in Khan Younis and three people, including a child, killed in Gaza City, officials say.",
+      "url": "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-27T01:13:10.102Z",
+      "top": true,
+      "bestRank": 38
+    },
+    {
+      "headline": "University of Cambridge scientist among those who died in Spanish train crash",
+      "date": "2026-11-01",
+      "bucket": "World",
+      "summary": "Marta Shahbazi was an \"inspiring, talented and passionate scientist\", says the laboratory where she worked.",
+      "url": "https://www.bbc.co.uk/news/articles/cq5ynzvkn1d8o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-01T18:34:41.850Z"
+    },
+    {
+      "headline": "Armed police start patrols in Sydney after Bondi Beach attack",
+      "date": "2026-11-01",
+      "bucket": "World",
+      "summary": "The new police unit is a security measure in response to last year's deadly shooting attack at a Hanukkah festival.",
+      "url": "https://www.bbc.co.uk/news/articles/c9kgj7k7ry0ro?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-01T18:34:41.850Z"
+    },
+    {
+      "headline": "Democrat endorses Republican candidate in key Michigan Senate race as party spat escalates",
+      "date": "2026-11-01",
+      "bucket": "Politics",
+      "summary": "Haley Stevens, a former congresswomen who lost out on the Democratic nomination to Abdul El-Sayed, endorses his opponent days before the vote.",
+      "url": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-01T18:34:41.850Z"
+    },
+    {
+      "headline": "Lindsay Clancy is back in court - where will her case go next?",
+      "date": "2026-11-01",
+      "bucket": "World",
+      "summary": "The Massachusetts mother, accused of murdering her three children, is expected back in court as she awaits a decision on whether her case will be retried.",
+      "url": "https://www.bbc.co.uk/news/articles/ck3r5z3pw928o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-01T18:34:41.850Z"
+    },
+    {
       "headline": "They signed up for a lifetime at sea on an endless cruise. High gas prices intervened",
       "date": "2026-11-01",
       "bucket": "World",
       "summary": "A cruise ship suspended operations suddenly, citing soaring fuel costs. Passengers, including Randy Cassingham, had to disembark in Cambodia. NPR's Ayesha Rascoe talks to Cassingham about the ordeal.",
       "url": "https://www.npr.org/2026/11/01/nx-s1-6022214/they-signed-up-for-a-lifetime-at-sea-on-an-endless-cruise-high-gas-prices-intervened",
-      "firstSeen": "2026-11-01T15:35:08.211Z"
+      "firstSeen": "2026-11-01T15:35:08.211Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Judge dismisses Trump's lawsuit against Wall Street Journal over Epstein birthday book",
@@ -2366,22 +2410,22 @@
       "bestRank": null
     },
     {
-      "headline": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
-      "date": "2026-10-30",
-      "bucket": "Politics",
-      "summary": "Dan S Sullivan, the incumbent Republican senator running for re-election, and allies have accused the Democrats of trying to confuse voters by recruiting Dan J Sullivan to also stand in the race.",
-      "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-10-30T15:34:50.235Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "He questioned Thailand's monarchy dressed as Harry Potter. Now he's in jail for 34 years",
       "date": "2026-10-30",
       "bucket": "World",
       "summary": "Thailand has prosecuted 294 people since 2020 under its lèse majesté law, with sentences going up to 50 years.",
       "url": "https://www.bbc.co.uk/news/articles/cmjwepvd0qq9o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-10-31T00:49:43.488Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
+      "date": "2026-10-30",
+      "bucket": "Politics",
+      "summary": "Dan S Sullivan, the incumbent Republican senator running for re-election, and allies have accused the Democrats of trying to confuse voters by recruiting Dan J Sullivan to also stand in the race.",
+      "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-10-30T15:34:50.235Z",
       "top": false,
       "bestRank": null
     },
@@ -6986,16 +7030,6 @@
       "top": true,
       "bestRank": 37,
       "firstSeen": "2026-10-28T00:58:20.781Z"
-    },
-    {
-      "headline": "Reports: Israeli Strikes Kill Eight, Including Child, in Gaza Strip",
-      "date": "2026-10-26",
-      "bucket": "World",
-      "summary": "Reported by Al Jazeera.",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYzdiSGJZRXN1Vlp4UnJZcnpwLUdKeVhPZWFIeXItekNKUFpGUHltUDdlQURNc1hSN1FuaEE0YVE2ZDZkcldMMWpvOG9BS21aQkdXcnVMNHBOZk92RnpnT1l4YnNjZkQ2dnZhRmxLbFdteXJUYWpVZl9TalFpRjVheVBYVm1LR3FLcnkydGdLV2JwZnJ4RGM3Zzg4elFWeXhrTFAwN3N3RnhSNVZYY0U1X3NiMzB0UlHSAbwBQVVfeXFMTnNGeFhkWHNGV3NFV1ZHeHdNemJJczF0VzRTZkxQbE05TmpYc2RSUmZUeXBNTkt3d01JVlJ4TE8wUW5fQ21zaHJ3MXZkYnhPdWUzR19paDRxa2RJYnpoV3Z0ZVJvWUZzVnJwUE9YNUJ3SDlpMmJEWEd1dmRsOHp6cjcyTWhnNjE4Rno4cFpNNFktNkwwZFpVdVdib3AwR1pUMHJHVkhkaEs2bktoZnpPMVpQaGx4T0Vfa3Z5LUk?oc=5",
-      "top": true,
-      "bestRank": 38,
-      "firstSeen": "2026-10-27T01:13:10.102Z"
     },
     {
       "headline": "Captain Under Investigation as Mein Schiff 3 Cancels 20-Night Voyage",
