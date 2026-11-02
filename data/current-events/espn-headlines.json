@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-11-02T06:37:28.634Z",
+  "generatedAt": "2026-11-02T09:24:55.183Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-12T06:37:28.634Z",
-  "windowEnd": "2026-11-02T06:37:28.634Z",
+  "windowStart": "2026-10-12T09:24:55.183Z",
+  "windowEnd": "2026-11-02T09:24:55.183Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,17 +21,105 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4305,
+  "count": 4308,
   "items": [
     {
-      "key": "50356092",
-      "id": "50356092",
-      "headline": "Saquon Barkley has assurances he won't be dealt, wants to help Eagles 'fix it'",
-      "summary": "Speaking after Sunday night's 27-10 loss to the Washington Commanders, Philadelphia Eagles running back Saquon Barkley told reporters he has received assurances from the front office that he will remain with the club beyond the Nov. 10 trade deadline.",
-      "url": "https://www.espn.com/nfl/story/_/id/50356092/saquon-barkley-assurances-eagles-dealt",
-      "sport": "NFL",
-      "published": "2026-11-02T06:28:11.000Z",
-      "firstSeen": "2026-11-02T06:37:28.634Z",
+      "key": "50356690",
+      "id": "50356690",
+      "headline": "Hurricanes bring 4-game win streak into matchup against the Predators",
+      "summary": "Carolina Hurricanes (12-2-2, in the Metropolitan Division) vs. Nashville Predators (5-4-5, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892642",
+      "sport": "NHL",
+      "published": "2026-11-02T09:10:54.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50356689",
+      "id": "50356689",
+      "headline": "Maple Leafs and Mammoth meet in out-of-conference matchup",
+      "summary": "Utah Mammoth (9-6, in the Central Division) vs. Toronto Maple Leafs (8-6-2, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892633",
+      "sport": "NHL",
+      "published": "2026-11-02T09:10:53.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50356688",
+      "id": "50356688",
+      "headline": "New York takes losing streak into matchup with St. Louis",
+      "summary": "St. Louis Blues (7-6-1, in the Central Division) vs. New York Rangers (7-7-1, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892637",
+      "sport": "NHL",
+      "published": "2026-11-02T09:10:52.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50356687",
+      "id": "50356687",
+      "headline": "Capitals and Stars square off for out-of-conference matchup",
+      "summary": "Dallas Stars (8-5-1, in the Central Division) vs. Washington Capitals (8-5, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892640",
+      "sport": "NHL",
+      "published": "2026-11-02T09:10:51.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50356686",
+      "id": "50356686",
+      "headline": "Devils take on the Oilers following Gritsyuk's 2-goal showing",
+      "summary": "Edmonton Oilers (11-2-2, in the Pacific Division) vs. New Jersey Devils (9-5, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892636",
+      "sport": "NHL",
+      "published": "2026-11-02T09:10:50.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50356685",
+      "id": "50356685",
+      "headline": "Canadiens take win streak into matchup with the Jets",
+      "summary": "Winnipeg Jets (4-8-3, in the Central Division) vs. Montreal Canadiens (9-3-2, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892634",
+      "sport": "NHL",
+      "published": "2026-11-02T09:10:49.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50356684",
+      "id": "50356684",
+      "headline": "Wild visit the Flyers, look to extend road winning streak",
+      "summary": "Minnesota Wild (10-3-3, in the Central Division) vs. Philadelphia Flyers (4-8-4, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892638",
+      "sport": "NHL",
+      "published": "2026-11-02T09:10:47.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50356683",
+      "id": "50356683",
+      "headline": "Ducks visit the Canucks after Gauthier's hat trick",
+      "summary": "Anaheim Ducks (6-7-1, in the Pacific Division) vs. Vancouver Canucks (3-12-1, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892643",
+      "sport": "NHL",
+      "published": "2026-11-02T09:10:46.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50356555",
+      "id": "50356555",
+      "headline": "Transfer rumors, news: Real Madrid believe Man Utd's Gabriel will sign for them",
+      "summary": "Manchester United prospect JJ Gabriel is moving closer to joining Real Madrid  Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/50356555/transfer-rumors-news-real-madrid-manchester-united-jj-gabriel",
+      "sport": "Soccer",
+      "published": "2026-11-02T09:00:16.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
       "bestRank": 1
     },
     {
@@ -41,9 +129,141 @@
       "summary": "Yaxel Lendeborg hit six 3s and scored 37 points -- the most by a Warriors rookie since Stephen Curry in 2010 -- as Golden State beat the Clippers on Sunday night while resting Curry and Draymond Green.",
       "url": "https://www.espn.com/nba/story/_/id/50356142/yaxel-lendeborg-scores-37-points-most-warriors-rookie-stephen-curry",
       "sport": "NBA",
-      "published": "2026-11-02T06:26:40.000Z",
+      "published": "2026-11-02T07:55:06.000Z",
       "firstSeen": "2026-11-02T06:37:28.634Z",
       "bestRank": 1
+    },
+    {
+      "key": "50356293",
+      "id": "50356293",
+      "headline": "Luka Doncic touts his improved defense, draws praise from Lakers, Raptors",
+      "summary": "Luka Doncic scored 45 points Sunday in the Lakers' 131-125 win over the Raptors, but it was his defensive impact that drew the most praise.",
+      "url": "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
+      "sport": "NBA",
+      "published": "2026-11-02T07:30:20.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50356322",
+      "id": "50356322",
+      "headline": "Jerry Koosman, who got final out in Miracle Mets' World Series win, dies at 83",
+      "summary": "Jerry Koosman, an All-Star left-hander who got the final out of the Miracle Mets' shocking 1969 World Series victory over the Baltimore Orioles, died Sunday. He was 83.",
+      "url": "https://www.espn.com/mlb/story/_/id/50356322/jerry-koosman-dies-83",
+      "sport": "MLB",
+      "published": "2026-11-02T07:25:54.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50356260",
+      "id": "50356260",
+      "headline": "Jayden Daniels, Commanders 'keep fighting through adversity,' improve to 2-4-1",
+      "summary": "After falling behind 10-0 in the first half, quarterback Jayden Daniels led the Washington Commanders on a rousing rally, cruising to a 27-10 win over the Philadelphia Eagles at Northwest Stadium, an effort in which he threw for 217 yards and a touchdown.",
+      "url": "https://www.espn.com/nfl/story/_/id/50356260/daniels-fuels-commanders-comeback-27-10-win-eagles",
+      "sport": "NFL",
+      "published": "2026-11-02T07:21:51.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50356302",
+      "id": "50356302",
+      "headline": "Orlando hosts Washington, looks to end home losing streak",
+      "summary": "Washington Wizards (3-3, sixth in the Eastern Conference) vs. Orlando Magic (2-4, ninth in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909911",
+      "sport": "NBA",
+      "published": "2026-11-02T07:03:48.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50356301",
+      "id": "50356301",
+      "headline": "Clippers face the Raptors on 5-game losing streak",
+      "summary": "Toronto Raptors (3-3, fifth in the Eastern Conference) vs. Los Angeles Clippers (1-5, 13th in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909920",
+      "sport": "NBA",
+      "published": "2026-11-02T07:03:47.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50356300",
+      "id": "50356300",
+      "headline": "Houston faces Boston, aims for 4th straight home win",
+      "summary": "Boston Celtics (5-1, third in the Eastern Conference) vs. Houston Rockets (6-1, second in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909916",
+      "sport": "NBA",
+      "published": "2026-11-02T07:03:46.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50356298",
+      "id": "50356298",
+      "headline": "Golden State plays Phoenix, aims for 5th straight win",
+      "summary": "Phoenix Suns (1-3, 12th in the Western Conference) vs. Golden State Warriors (4-3, ninth in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909919",
+      "sport": "NBA",
+      "published": "2026-11-02T07:02:56.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50356297",
+      "id": "50356297",
+      "headline": "Indiana plays Atlanta, looks to end home skid",
+      "summary": "Atlanta Hawks (3-4, seventh in the Eastern Conference) vs. Indiana Pacers (2-5, 12th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909909",
+      "sport": "NBA",
+      "published": "2026-11-02T07:02:55.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50356296",
+      "id": "50356296",
+      "headline": "Brooklyn takes on New York for conference showdown",
+      "summary": "Brooklyn Nets (1-5, 15th in the Eastern Conference) vs. New York Knicks (2-4, 10th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909910",
+      "sport": "NBA",
+      "published": "2026-11-02T07:02:53.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50356295",
+      "id": "50356295",
+      "headline": "Miami visits Los Angeles following Doncic's 45-point game",
+      "summary": "Miami Heat (2-4, 11th in the Eastern Conference) vs. Los Angeles Lakers (5-2, fourth in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909921",
+      "sport": "NBA",
+      "published": "2026-11-02T07:02:52.000Z",
+      "firstSeen": "2026-11-02T09:24:55.183Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50356092",
+      "id": "50356092",
+      "headline": "Saquon Barkley has assurances he won't be dealt, wants to help Eagles 'fix it'",
+      "summary": "Speaking after Sunday night's 27-10 loss to the Washington Commanders, Philadelphia Eagles running back Saquon Barkley told reporters he has received assurances from the front office that he will remain with the club beyond the Nov. 10 trade deadline.",
+      "url": "https://www.espn.com/nfl/story/_/id/50356092/saquon-barkley-assurances-eagles-dealt",
+      "sport": "NFL",
+      "published": "2026-11-02T06:58:48.000Z",
+      "firstSeen": "2026-11-02T06:37:28.634Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50355630",
+      "id": "50355630",
+      "headline": "Jayden Daniels throws TD pass and Commanders shut out Eagles over final 3 quarters in 27-10 win",
+      "summary": "— Jayden Daniels threw for 217 yards and a touchdown, and the Washington Commanders shut out the Philadelphia Eagles over the final three quarters of a 27-10 victory on Sunday night.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873035",
+      "sport": "NFL",
+      "published": "2026-11-02T06:40:46.000Z",
+      "firstSeen": "2026-11-02T06:37:28.634Z",
+      "bestRank": 4
     },
     {
       "key": "50355646",
@@ -143,17 +363,6 @@
       "published": "2026-11-02T04:54:48.000Z",
       "firstSeen": "2026-11-02T03:24:36.713Z",
       "bestRank": 2
-    },
-    {
-      "key": "50355630",
-      "id": "50355630",
-      "headline": "Jayden Daniels throws TD pass and Commanders shut out Eagles over final 3 quarters of 27-10 win",
-      "summary": "— Jayden Daniels threw for 217 yards and a touchdown, and the Washington Commanders shut out the Philadelphia Eagles over the final three quarters of a 27-10 victory on Sunday night.",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873035",
-      "sport": "NFL",
-      "published": "2026-11-02T04:43:47.000Z",
-      "firstSeen": "2026-11-02T06:37:28.634Z",
-      "bestRank": 4
     },
     {
       "key": "50355624",
@@ -3879,7 +4088,7 @@
       "headline": "Here's what fans need to know in the sports world today",
       "summary": "Check out some of the top news of the day from the WNBA, CFB and NBA.",
       "url": "https://www.espn.com/video/clip/_/id/50345575/here-fans-need-know-sports-world-today",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-11-01T06:15:54.000Z",
       "firstSeen": "2026-11-01T06:28:12.378Z",
       "bestRank": 1
@@ -5353,7 +5562,7 @@
       "headline": "Halloween 2026: Breaking down top athlete costumes from across the sports world",
       "summary": "Athletes far and wide across the sports world showed off special costumes for Halloween.",
       "url": "https://www.espn.com/nba/story/_/id/50321862/halloween-athlete-costumes-2026",
-      "sport": "NHL",
+      "sport": "NBA",
       "published": "2026-10-31T23:13:32.000Z",
       "firstSeen": "2026-10-31T03:21:28.774Z",
       "bestRank": 1
@@ -47201,182 +47410,6 @@
       "published": "2026-10-12T09:53:29.000Z",
       "firstSeen": "2026-10-12T13:00:56.887Z",
       "bestRank": 1
-    },
-    {
-      "key": "50164725",
-      "id": "50164725",
-      "headline": "Liverpool must drop Florian Wirtz - Jamie Carragher",
-      "summary": "Jamie Carragher has said Florian Wirtz should be dropped from the Liverpool lineup after another disappointing performance in Sunday's defeat to Manchester City.",
-      "url": "https://www.espn.com/soccer/story/_/id/50164725/liverpool-drop-florian-wirtz-jamie-carragher",
-      "sport": "Soccer",
-      "published": "2026-10-12T09:21:16.000Z",
-      "firstSeen": "2026-10-12T13:00:56.887Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50131372",
-      "id": "50131372",
-      "headline": "Red Bull downplay 'team to beat' label by George Russell, Oscar Piastri",
-      "summary": "Red Bull has downplayed the assessment of rivals that it has re-established itself as the team to beat for the rest of 2026.",
-      "url": "https://www.espn.com/f1/story/_/id/50131372/red-bull-downplay-team-beat-label-george-russell-oscar-piastri-formula-1",
-      "sport": "F1",
-      "published": "2026-10-12T09:14:03.000Z",
-      "firstSeen": "2026-10-12T13:00:56.887Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50164676",
-      "id": "50164676",
-      "headline": "Maresca: Manchester City dealt with Anfield 'very well'",
-      "summary": "Maresca: Manchester City dealt with Anfield 'very well'",
-      "url": "https://www.espn.com/video/clip/_/id/50164676/manchester-city-dealt-anfield-very-well",
-      "sport": "Soccer",
-      "published": "2026-10-12T08:48:47.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50164628",
-      "id": "50164628",
-      "headline": "Turang homers and Milwaukee's bullpen delivers as the Brewers beat the Dodgers 2-1 in NLCS opener",
-      "summary": "— Brice Turang homered off Tarik Skubal and Milwaukee’s bullpen shut down the Los Angeles Dodgers after Jacob Misiorowski’s taxing outing, sending the Brewers to a 2-1 victory in the NL Championship Series opener on Sunday night.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401908030",
-      "sport": "MLB",
-      "published": "2026-10-12T08:20:37.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50164597",
-      "id": "50164597",
-      "headline": "Hurricanes bring 5-game win streak into matchup with the Capitals",
-      "summary": "Washington Capitals (3-2, in the Metropolitan Division) vs. Carolina Hurricanes (5-1-1, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892491",
-      "sport": "NHL",
-      "published": "2026-10-12T08:11:37.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50164596",
-      "id": "50164596",
-      "headline": "Rangers take on the Lightning following Cuylle's 2-goal showing",
-      "summary": "Tampa Bay Lightning (4-1, in the Atlantic Division) vs. New York Rangers (5-2, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892493",
-      "sport": "NHL",
-      "published": "2026-10-12T08:11:36.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50164595",
-      "id": "50164595",
-      "headline": "Pittsburgh visits Chicago after shootout victory",
-      "summary": "Pittsburgh Penguins (3-2-1, in the Metropolitan Division) vs. Chicago Blackhawks (1-5, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892496",
-      "sport": "NHL",
-      "published": "2026-10-12T08:11:35.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50164594",
-      "id": "50164594",
-      "headline": "Oilers play the Kings on 4-game winning streak",
-      "summary": "Edmonton Oilers (4-0-1, in the Pacific Division) vs. Los Angeles Kings (0-2-2, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892502",
-      "sport": "NHL",
-      "published": "2026-10-12T08:11:34.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50164593",
-      "id": "50164593",
-      "headline": "Flames enter matchup with the Ducks on losing streak",
-      "summary": "Calgary Flames (0-5, in the Pacific Division) vs. Anaheim Ducks (4-1, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892501",
-      "sport": "NHL",
-      "published": "2026-10-12T08:11:33.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50164592",
-      "id": "50164592",
-      "headline": "Flyers bring 7-game losing streak into matchup with the Kraken",
-      "summary": "Seattle Kraken (4-2, in the Pacific Division) vs. Philadelphia Flyers (0-5-2, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892492",
-      "sport": "NHL",
-      "published": "2026-10-12T08:11:31.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50164591",
-      "id": "50164591",
-      "headline": "Sharks play the Bruins in a non-conference matchup",
-      "summary": "Boston Bruins (4-2, in the Atlantic Division) vs. San Jose Sharks (3-2, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892503",
-      "sport": "NHL",
-      "published": "2026-10-12T08:11:30.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50164590",
-      "id": "50164590",
-      "headline": "Avalanche play the Stars after MacKinnon's 2-goal showing",
-      "summary": "Colorado Avalanche (3-2, in the Central Division) vs. Dallas Stars (2-2-1, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892498",
-      "sport": "NHL",
-      "published": "2026-10-12T08:11:29.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50164588",
-      "id": "50164588",
-      "headline": "Canucks take losing streak into matchup with the Islanders",
-      "summary": "Vancouver Canucks (2-5, in the Pacific Division) vs. New York Islanders (2-3, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892495",
-      "sport": "NHL",
-      "published": "2026-10-12T08:11:27.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50164587",
-      "id": "50164587",
-      "headline": "Iraola: Liverpool played 'two different games' against Manchester City",
-      "summary": "Iraola: Liverpool played 'two different games' against Manchester City",
-      "url": "https://www.espn.com/video/clip/_/id/50164587/liverpool-played-two-different-games-manchester-city",
-      "sport": "Soccer",
-      "published": "2026-10-12T08:07:32.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50164571",
-      "id": "50164571",
-      "headline": "Rays and Guardians play in ALCS Game 1",
-      "summary": "Cleveland Guardians (85-77, first in the AL Central during the regular season) vs. Tampa Bay Rays (98-64, first in the AL East during the regular season)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401908023",
-      "sport": "MLB",
-      "published": "2026-10-12T08:02:28.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50164570",
-      "id": "50164570",
-      "headline": "Brewers lead Dodgers 1-0 ahead of NLCS Game 2",
-      "summary": "Los Angeles Dodgers (100-62, first in the NL West during the regular season) vs. Milwaukee Brewers (103-59, first in the NL Central during the regular season)",
-      "url": "http://www.espn.com/mlb/preview?gameId=401908031",
-      "sport": "MLB",
-      "published": "2026-10-12T08:02:27.000Z",
-      "firstSeen": "2026-10-12T09:49:26.125Z",
-      "bestRank": 3
     }
   ]
 }
