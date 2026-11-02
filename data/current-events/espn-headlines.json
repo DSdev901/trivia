@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-11-02T00:42:01.060Z",
+  "generatedAt": "2026-11-02T03:24:36.713Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-12T00:42:01.060Z",
-  "windowEnd": "2026-11-02T00:42:01.060Z",
+  "windowStart": "2026-10-12T03:24:36.713Z",
+  "windowEnd": "2026-11-02T03:24:36.713Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,18 +21,205 @@
     "Tennis",
     "MMA"
   ],
-  "count": 4295,
+  "count": 4301,
   "items": [
     {
-      "key": "50350092",
-      "id": "50350092",
-      "headline": "Week 8 winners and losers: Burrow, Higgins, Chase steal the show; Falcons falter",
-      "summary": "Joe Burrow, Bhayshul Tuten and Brock Bowers came up big in Week 8, while Bijan Robinson, Ashton Jeanty and Jonathan Taylor had quiet days.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50350092/nfl-week-8-fantasy-football-winners-losers-injuries-rankings-more",
+      "key": "50354876",
+      "id": "50354876",
+      "headline": "Journeyman goalie Matt Tomkins stars for hometown Oilers in seventh NHL start",
+      "summary": "Journeyman goalie Matt Tomkins stopped 27 of the 28 shots he faced to help the Oilers beat the Rangers in just his seventh NHL start.",
+      "url": "https://www.espn.com/nhl/story/_/id/50354876/journeyman-tomkins-stars-oilers-seventh-nhl-start",
+      "sport": "NHL",
+      "published": "2026-11-02T03:21:13.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50354699",
+      "id": "50354699",
+      "headline": "Messi brings Miami back to stun Revs, clinch Champions Cup spot",
+      "summary": "Inter Miami CF beat the New England Revolution 2-1 on Sunday in Foxborough, Massachusetts, with Lionel Messi once again providing the magic touch, this time to ensure his team's spot in the 2027 Concacaf Champions Cup.",
+      "url": "https://www.espn.com/soccer/story/_/id/50354699/messi-brings-miami-back-stun-revs-clinch-champions-cup",
+      "sport": "Soccer",
+      "published": "2026-11-02T03:13:43.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50354971",
+      "id": "50354971",
+      "headline": "Messi rallies Miami to win over Revs to go second in East",
+      "summary": "Lionel Messi had a second-half assist before scoring the winner as Inter Miami CF came from behind to beat the New England Revolution 2-1 on Sunday night.",
+      "url": "http://www.espn.com/soccer/report/_/gameId/761932",
+      "sport": "Soccer",
+      "published": "2026-11-02T03:12:25.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50354739",
+      "id": "50354739",
+      "headline": "Red Sox, Diamondbacks lead Gold Glove winners with 3 apiece",
+      "summary": "First basemen Christian Walker of Houston and Matt Olson of Atlanta won their fourth Gold Gloves on Sunday while Boston right fielder Wilyer Abreu won the fielding honor for the third year in a row.",
+      "url": "https://www.espn.com/mlb/story/_/id/50354739/2026-gold-glove-award-winners",
+      "sport": "MLB",
+      "published": "2026-11-02T03:08:02.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50349514",
+      "id": "50349514",
+      "headline": "Judging overreactions to NFL Week 8: Days numbered for Schottenheimer, Jackson?",
+      "summary": "Changes coming in Dallas? Have we seen Lamar's final pass for the Ravens? Could the NFC North go four-for-four? Let's overreact to Sunday's games.",
+      "url": "https://www.espn.com/nfl/story/_/id/50349514/week-8-overreactions-2026-graziano-schottenheimer-jackson",
       "sport": "NFL",
-      "published": "2026-11-02T00:39:41.000Z",
+      "published": "2026-11-02T02:51:57.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50353904",
+      "id": "50353904",
+      "headline": "On fourth-and-goal, Roach drops Mahomes and flips the AFC West race as Broncos beat Chiefs 28-24",
+      "summary": "— The one thing the Denver Broncos do really well is win close games.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873033",
+      "sport": "NFL",
+      "published": "2026-11-02T02:48:46.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50354250",
+      "id": "50354250",
+      "headline": "Connor McDavid has a goal and an assist to lead the Oilers past the Rangers, 4-1",
+      "summary": "— Connor McDavid scored a goal and extended his NHL record season-opening assists streak to 15 games, powering the Edmonton Oilers past the New York...",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892627",
+      "sport": "NHL",
+      "published": "2026-11-02T02:40:47.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50354476",
+      "id": "50354476",
+      "headline": "Hawks' Flemings suspended for elbowing Pelicans' McGowens in head",
+      "summary": "Hawks guard Kingston Flemings was suspended for a game by the NBA on Sunday night for intentionally elbowing Pelicans guard Bryce McGowens in the head.",
+      "url": "https://www.espn.com/nba/story/_/id/50354476/hawks-flemings-suspended-elbow-head-pelicans-mcgowens",
+      "sport": "NBA",
+      "published": "2026-11-02T02:35:56.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50354448",
+      "id": "50354448",
+      "headline": "Thunder decline option for oft-injured ex-lottery pick Nikola Topic",
+      "summary": "The Thunder declined to pick up Nikola Topic's option for next season, making the Serbian point guard a free agent next summer.",
+      "url": "https://www.espn.com/nba/story/_/id/50354448/thunder-decline-option-ex-lottery-pick-nikola-topic",
+      "sport": "NBA",
+      "published": "2026-11-02T02:34:08.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50354714",
+      "id": "50354714",
+      "headline": "Pitcher Garrett Whitlock's $8.25 million option exercised by Boston Red Sox",
+      "summary": "Veteran pitcher Garrett Whitlock's $8.25 million option for 2027 was exercised on Sunday night by the Boston Red Sox, preventing the 30-year-old right-hander, who was 7-2 with a 1.72 ERA last season, from becoming a free agent.",
+      "url": "https://www.espn.com/mlb/story/_/id/50354714/garrett-whitlock-825-million-option-exercised-red-sox",
+      "sport": "MLB",
+      "published": "2026-11-02T02:31:29.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50347464",
+      "id": "50347464",
+      "headline": "Week 8 NFL highlights: Best plays, moments, touchdowns, more",
+      "summary": "Check here for Sunday's top moments and TDs as Josh Allen, Lamar Jackson and Jonathan Taylor take the field.",
+      "url": "https://www.espn.com/nfl/story/_/id/50347464/week-8-sunday-highlights-best-plays-touchdowns-2026",
+      "sport": "NFL",
+      "published": "2026-11-02T02:30:46.000Z",
+      "firstSeen": "2026-11-01T18:21:05.542Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50353702",
+      "id": "50353702",
+      "headline": "Steelers' multiple dog-themed jabs at Browns headline NFL Week 8 trolls",
+      "summary": "NFL teams remained petty in Week 8, led by jabs from the Pittsburgh Steelers aimed at the Cleveland Browns.",
+      "url": "https://www.espn.com/nfl/story/_/id/50353702/nfl-week-8-trolls",
+      "sport": "NFL",
+      "published": "2026-11-02T02:28:00.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50349340",
+      "id": "50349340",
+      "headline": "NFL Week 8: Big takeaways, questions and fantasy spin from Sunday's games",
+      "summary": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 8.",
+      "url": "https://www.espn.com/nfl/story/_/id/50349340/week-8-sunday-games-takeaways-questions-2026",
+      "sport": "NFL",
+      "published": "2026-11-02T02:23:54.000Z",
       "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 11
+      "bestRank": 2
+    },
+    {
+      "key": "50353104",
+      "id": "50353104",
+      "headline": "Matthew Stafford and Rams overcome slow start, rally past winless Chargers 24-9",
+      "summary": "— Matthew Stafford passed for 157 yards and a touchdown, Blake Corum and Kyren Williams rushed for scores and the Los Angeles Rams overcame a slow start for a 24-9 victory over the winless Los Angeles Chargers on Sunday.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873032",
+      "sport": "NFL",
+      "published": "2026-11-02T02:22:47.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50354087",
+      "id": "50354087",
+      "headline": "Why Tee Higgins is a top-15 fantasy option moving forward",
+      "summary": "Why Tee Higgins is a top-15 fantasy option moving forward",
+      "url": "https://www.espn.com/video/clip/_/id/50354087/why-tee-higgins-top-15-fantasy-option-moving-forward",
+      "sport": "NFL",
+      "published": "2026-11-02T02:21:25.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50353468",
+      "id": "50353468",
+      "headline": "Cardinals' LaFleur noncommittal on QB after Minshew replaces Brissett in win",
+      "summary": "Cardinals coach Mike LaFleur wouldn't commit to next week's starting quarterback after Gardner Minshew replaced Jacoby Brissett in the third quarter Sunday and led Arizona to a comeback win over Dallas.",
+      "url": "https://www.espn.com/nfl/story/_/id/50353468/cardinals-mike-lafleur-noncommittal-starting-qb-gardner-minshew-replaces-jacoby-brissett-win",
+      "sport": "NFL",
+      "published": "2026-11-02T02:19:15.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50353796",
+      "id": "50353796",
+      "headline": "'Jets being Jets': Minkah Fitzpatrick sums up team's latest tough loss",
+      "summary": "After the Jets dropped another one-score game, Minkah Fitzpatrick had a label for the way they lose games: \"Jets being Jets.\"",
+      "url": "https://www.espn.com/nfl/story/_/id/50353796/jets-being-jets-fitzpatrick-sums-team-latest-loss",
+      "sport": "NFL",
+      "published": "2026-11-02T02:18:07.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50352885",
+      "id": "50352885",
+      "headline": "Steelers roll by Browns, say Jared Verse 'should have his kept mouth shut'",
+      "summary": "The Steelers got the last word after Browns defensive end Jared Verse's trash talk ahead of Sunday's matchup.",
+      "url": "https://www.espn.com/nfl/story/_/id/50352885/steelers-say-browns-verse-kept-mouth-shut",
+      "sport": "NFL",
+      "published": "2026-11-02T02:17:21.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 12
     },
     {
       "key": "50353308",
@@ -41,7 +228,326 @@
       "summary": "After the Colts' 42-7 loss to the Jaguars on Sunday, the Colts coach Shane Steichen left open the possibility of significant changes, including at quarterback.",
       "url": "https://www.espn.com/nfl/story/_/id/50353308/colts-shane-steichen-evaluate-everything-42-7-loss",
       "sport": "NFL",
-      "published": "2026-11-02T00:38:26.000Z",
+      "published": "2026-11-02T02:16:33.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50353004",
+      "id": "50353004",
+      "headline": "Jerry Jones backs Brian Schottenheimer, says Cowboys let coach down in loss",
+      "summary": "Despite matching the largest blown fourth-quarter lead in team history, Cowboys owner Jerry Jones said the loss to Arizona will not trigger a coaching change.",
+      "url": "https://www.espn.com/nfl/story/_/id/50353004/jones-backs-schottenheimer-says-cowboys-let-coach-down",
+      "sport": "NFL",
+      "published": "2026-11-02T02:15:54.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50259995",
+      "id": "50259995",
+      "headline": "Kimi Antonelli's historic F1 title: Every record broken and milestone reached",
+      "summary": "Kimi Antonelli has been crowned the Formula 1 drivers' champion -- and here are all the records he's broken in the process.",
+      "url": "https://www.espn.com/f1/story/_/id/50259995/every-f1-record-kimi-antonelli-broken-title",
+      "sport": "F1",
+      "published": "2026-11-02T02:05:39.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50250142",
+      "id": "50250142",
+      "headline": "Mexico City Grand Prix 2026: Race start time, how to watch, full schedule, predictions",
+      "summary": "Formula 1 heads to Mexico on a weekend where Kimi Antonelli could win the drivers' championship for the first time.",
+      "url": "https://www.espn.com/f1/story/_/id/50250142/mexico-city-grand-prix-2026-race-f1-start-s-how-watch-schedule-tv-channel-live-stream-predictions",
+      "sport": "F1",
+      "published": "2026-11-02T01:58:26.000Z",
+      "firstSeen": "2026-10-26T21:28:13.990Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50250037",
+      "id": "50250037",
+      "headline": "Kimi Antonelli makes F1 history as youngest world champion with maiden title",
+      "summary": "Kimi Antonelli became the youngest world champion in Formula 1 history, clinching his first title at 20 years old after finishing third at the Mexico City Grand Prix.",
+      "url": "https://www.espn.com/f1/story/_/id/50250037/kimi-antonelli-youngest-f1-world-champion-2026-mexico-city-grand-prix",
+      "sport": "F1",
+      "published": "2026-11-02T01:57:20.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50353663",
+      "id": "50353663",
+      "headline": "Maye has 3 touchdowns as Patriots rally to beat Dolphins 24-19",
+      "summary": "— Drake Maye was without a pair of top receivers and a running back Sunday against the Miami Dolphins.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873034",
+      "sport": "NFL",
+      "published": "2026-11-02T01:56:02.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 16
+    },
+    {
+      "key": "50354253",
+      "id": "50354253",
+      "headline": "Edmonton Oilers vs. New York Rangers: Game Highlights",
+      "summary": "Edmonton Oilers vs. New York Rangers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50354253/game-highlights",
+      "sport": "NHL",
+      "published": "2026-11-02T01:44:21.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50350092",
+      "id": "50350092",
+      "headline": "Week 8 winners and losers: Burrow, Higgins, Chase steal the show; Falcons falter",
+      "summary": "Joe Burrow, Bhayshul Tuten and Brock Bowers came up big in Week 8, while Bijan Robinson, Ashton Jeanty and Jonathan Taylor had quiet days.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50350092/nfl-week-8-fantasy-football-winners-losers-injuries-rankings-more",
+      "sport": "NFL",
+      "published": "2026-11-02T01:38:29.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 8
+    },
+    {
+      "key": "49907062",
+      "id": "49907062",
+      "headline": "Aaron Rodgers' 2026 NFL season: Tracking records, milestones",
+      "summary": "The Steelers QB, who is entering his 22nd season in the league, is chasing records, and ESPN will be chronicling his \"last rodeo.\"",
+      "url": "https://www.espn.com/nfl/story/_/id/49907062/aaron-rodgers-2026-nfl-season-steelers-packers-jets-tracking-records-milestones",
+      "sport": "NFL",
+      "published": "2026-11-02T01:38:07.000Z",
+      "firstSeen": "2026-09-12T12:32:59.419Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50354165",
+      "id": "50354165",
+      "headline": "Havertz's close-range finish puts Arsenal on top",
+      "summary": "Kai Havertz pokes home in the 16th minute to deliver the Gunners the decisive goal against Liverpool at Anfield.",
+      "url": "https://www.espn.com/video/clip/_/id/50354165/havertz-close-range-finish-puts-arsenal-top",
+      "sport": "Soccer",
+      "published": "2026-11-02T01:37:32.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50344218",
+      "id": "50344218",
+      "headline": "Jalen Brunson joins Harry Styles on stage to cap Styles' MSG residency",
+      "summary": "The superstar singer-songwriter was joined on stage by Brunson, who presented Styles with a commemorative banner for his 30-show Madison Square Garden residency.",
+      "url": "https://www.espn.com/nba/story/_/id/50344218/jalen-brunson-harry-styles-madison-square-garden",
+      "sport": "NBA",
+      "published": "2026-11-02T01:18:04.000Z",
+      "firstSeen": "2026-11-01T18:21:05.542Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50352713",
+      "id": "50352713",
+      "headline": "Josh Allen's halftime words fuel Bills' 2nd-half surge in win over Ravens",
+      "summary": "QB Josh Allen said the Bills \"didn't play up to our standard\" in the first half Sunday against the Ravens -- and delivered a halftime message to his teammates that essentially said \"we're way better than this.\"",
+      "url": "https://www.espn.com/nfl/story/_/id/50352713/josh-allen-half-words-fuel-bills-second-half-vs-ravens",
+      "sport": "NFL",
+      "published": "2026-11-02T01:10:19.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50323084",
+      "id": "50323084",
+      "headline": "NFL Week 8's best arrivals, led by Rams' Quentin Lake",
+      "summary": "Here's a look at the best-dressed players around the NFL in Week 8.",
+      "url": "https://www.espn.com/nfl/story/_/id/50323084/nfl-week-8-fashion",
+      "sport": "NFL",
+      "published": "2026-11-02T01:07:37.000Z",
+      "firstSeen": "2026-10-30T00:47:51.193Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50353915",
+      "id": "50353915",
+      "headline": "Porter, Randle help Nets to 98-90 victory over Pacers",
+      "summary": "— Michael Porter Jr. scored 23 points, and Julius Randle had 20 points to lead the Brooklyn Nets to a 98-90 victory over the Indiana Pacers on Sunday night.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909904",
+      "sport": "NBA",
+      "published": "2026-11-02T01:06:47.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50320325",
+      "id": "50320325",
+      "headline": "Kimi Antonelli on winning historic F1 title: 'A day I will remember forever'",
+      "summary": "Kimi Antonelli cherished a \"day I will remember forever\" as he claimed his place in history as Formula 1's youngest world champion.",
+      "url": "https://www.espn.com/f1/story/_/id/50320325/kimi-antonelli-winning-historic-f1-title-day-remember-forever-mexico-city-grand-prix-formula-1-autodromo-hermanos-rodriguez",
+      "sport": "F1",
+      "published": "2026-11-02T01:04:20.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50353798",
+      "id": "50353798",
+      "headline": "Brooklyn Nets vs. Indiana Pacers: Game Highlights",
+      "summary": "Brooklyn Nets vs. Indiana Pacers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50353798/game-highlights",
+      "sport": "NBA",
+      "published": "2026-11-02T01:02:29.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50054705",
+      "id": "50054705",
+      "headline": "Who comes out ahead in Wright-Wood trade? Grading the Predators, Kraken",
+      "summary": "Hockey trade season is heating up! Find grades for each GM involved in all the big swaps here.",
+      "url": "https://www.espn.com/nhl/story/_/id/50054705/nhl-2026-27-season-trade-grades-deals-report-cards-top-players-prospects-biggest-deals",
+      "sport": "NHL",
+      "published": "2026-11-02T01:02:10.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50353754",
+      "id": "50353754",
+      "headline": "Drake Maye powers Patriots to win in Miami",
+      "summary": "Drake Maye powers Patriots to win in Miami",
+      "url": "https://www.espn.com/video/clip/_/id/50353754/drake-maye-powers-patriots-win-miami",
+      "sport": "NFL",
+      "published": "2026-11-02T00:58:31.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50353331",
+      "id": "50353331",
+      "headline": "Ja'Marr Chase's 'competitiveness' comes out at right time in Bengals' OT win",
+      "summary": "Visibly frustrated earlier in the game, Cincinnati Bengals star wide receiver Ja'Marr Chase cooled off in time to help his club to a 43-36 overtime victory over the Tennessee Titans on Sunday afternoon at Paycor Stadium.",
+      "url": "https://www.espn.com/nfl/story/_/id/50353331/frustrated-chase-spikes-helmet-helping-bengals-win",
+      "sport": "NFL",
+      "published": "2026-11-02T00:54:55.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50353645",
+      "id": "50353645",
+      "headline": "Why Tyler Allgeier is a reliable RB2 or flex option for fantasy managers",
+      "summary": "Why Tyler Allgeier is a reliable RB2 or flex option for fantasy managers",
+      "url": "https://www.espn.com/video/clip/_/id/50353645/why-tyler-allgeier-reliable-rb2-flex-option-fantasy-managers",
+      "sport": "NFL",
+      "published": "2026-11-02T00:52:22.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 17
+    },
+    {
+      "key": "50353669",
+      "id": "50353669",
+      "headline": "Why Tony Pollard's fantasy outlook is trending up",
+      "summary": "Why Tony Pollard's fantasy outlook is trending up",
+      "url": "https://www.espn.com/video/clip/_/id/50353669/why-tony-pollard-fantasy-outlook-trending-up",
+      "sport": "NFL",
+      "published": "2026-11-02T00:49:52.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50353305",
+      "id": "50353305",
+      "headline": "Larry Csonka, member of undefeated '72 Dolphins, celebrates Vikings' first loss",
+      "summary": "The Minnesota Vikings' loss Sunday ensured that another NFL season will pass without an undefeated team.",
+      "url": "https://www.espn.com/nfl/story/_/id/50353305/larry-csonka-1972-miami-dolphins-celebrates",
+      "sport": "NFL",
+      "published": "2026-11-02T00:49:25.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50353701",
+      "id": "50353701",
+      "headline": "Broncos come back in the fourth quarter for huge win over the Chiefs",
+      "summary": "Broncos come back in the fourth quarter for huge win over the Chiefs",
+      "url": "https://www.espn.com/video/clip/_/id/50353701/broncos-come-back-fourth-quarter-huge-win-chiefs",
+      "sport": "NFL",
+      "published": "2026-11-02T00:48:14.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50320324",
+      "id": "50320324",
+      "headline": "Lewis Hamilton: Ferrari have 'big problems' after Charles Leclerc incident at Mexico City GP",
+      "summary": "Lewis Hamilton told Ferrari they have \"big, big problems\" after he was pushed out of the lead by teammate Charles Leclerc at the Mexico City Grand Prix.",
+      "url": "https://www.espn.com/f1/story/_/id/50320324/mexico-city-grand-prix-formula-1-lewis-hamilton-charles-leclerc-ferrari-big-issues",
+      "sport": "F1",
+      "published": "2026-11-02T00:47:52.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50353617",
+      "id": "50353617",
+      "headline": "Will Brock Bowers remain a top fantasy TE?",
+      "summary": "Will Brock Bowers remain a top fantasy TE?",
+      "url": "https://www.espn.com/video/clip/_/id/50353617/will-brock-bowers-remain-top-fantasy-te",
+      "sport": "NFL",
+      "published": "2026-11-02T00:46:21.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 18
+    },
+    {
+      "key": "50195873",
+      "id": "50195873",
+      "headline": "In pictures: The moments that defined Kimi Antonelli's F1 title-winning season",
+      "summary": "Kimi Antonelli has been crowned Formula 1 world champion and is the youngest driver in history to do so.",
+      "url": "https://www.espn.com/f1/story/_/id/50195873/in-pictures-kimi-antonelli-2026-formula-1-title",
+      "sport": "F1",
+      "published": "2026-11-02T00:45:00.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 2
+    },
+    {
+      "key": "40699880",
+      "id": "40699880",
+      "headline": "Fantasy football buzz: Week 8's leading scorers through Sunday's 4 p.m. ET games",
+      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "sport": "NFL",
+      "published": "2026-11-02T00:42:53.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50351680",
+      "id": "50351680",
+      "headline": "Joe Burrow throws 5 TD passes, then runs for score in OT as Bengals rally for 43-36 win over Titans",
+      "summary": "— Bengals defensive tackle Dexter Lawrence had some simple advice for Joe Burrow as the franchise quarterback prepared to take the field with Cincinnati trailing the Tennessee Titans by a touchdown in the fourth quarter.",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873031",
+      "sport": "NFL",
+      "published": "2026-11-02T00:42:47.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 22
+    },
+    {
+      "key": "50321045",
+      "id": "50321045",
+      "headline": "Mexico City Grand Prix results: Max Verstappen wins as Kimi Antonelli crowned F1 champion - as it happened",
+      "summary": "Max Verstappen wins the Mexico City Grand Prix as Kimi Antonelli wraps up Formula 1 title.",
+      "url": "https://www.espn.com/f1/story/_/id/50321045/mexico-city-grand-prix-2026-live-updates-results-analysis-commentary-autodromo-hermanos-rodriguez",
+      "sport": "F1",
+      "published": "2026-11-02T00:41:02.000Z",
+      "firstSeen": "2026-11-02T00:42:01.060Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50320323",
+      "id": "50320323",
+      "headline": "Max Verstappen wins Mexico City GP for Red Bull; Kimi Antonelli seals historic title",
+      "summary": "Max Verstappen stormed to victory at the Mexico City Grand Prix, and Kimi Antonelli was crowned Formula 1 world champion.",
+      "url": "https://www.espn.com/f1/story/_/id/50320323/max-verstappen-wins-mexico-city-gp-red-bull-kimi-antonelli-seals-historic-title-mexico-city-grand-prix-formula-1-autodromo-hermanos-rodriguez",
+      "sport": "F1",
+      "published": "2026-11-02T00:38:40.000Z",
       "firstSeen": "2026-11-02T00:42:01.060Z",
       "bestRank": 4
     },
@@ -57,6 +563,17 @@
       "bestRank": 8
     },
     {
+      "key": "50353478",
+      "id": "50353478",
+      "headline": "Ben Shelton adds coach Juan Carlos Ferrero to 2027 staff",
+      "summary": "Carlos Alcaraz's former coach Juan Carlos Ferrero is joining Ben Shelton's coaching staff for the 2027 season.",
+      "url": "https://www.espn.com/tennis/story/_/id/50353478/ben-shelton-adds-coach-juan-carlos-ferrero-2027-staff",
+      "sport": "Tennis",
+      "published": "2026-11-02T00:35:43.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 1
+    },
+    {
       "key": "50350934",
       "id": "50350934",
       "headline": "Lions linebacker Jack Campbell placed on backboard, carted off vs. Vikings",
@@ -65,39 +582,6 @@
       "sport": "NFL",
       "published": "2026-11-02T00:32:00.000Z",
       "firstSeen": "2026-11-01T21:20:43.782Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50353468",
-      "id": "50353468",
-      "headline": "Cardinals' LaFleur noncommittal on QB after Minshew replaces Brissett in win",
-      "summary": "Cardinals coach Mike LaFleur wouldn't commit to next week's starting quarterback after Gardner Minshew replaced Jacoby Brissett in the third quarter Sunday and led Arizona to a comeback win over Dallas.",
-      "url": "https://www.espn.com/nfl/story/_/id/50353468/cardinals-mike-lafleur-noncommittal-starting-qb-gardner-minshew-replaces-jacoby-brissett-win",
-      "sport": "NFL",
-      "published": "2026-11-02T00:31:55.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50349340",
-      "id": "50349340",
-      "headline": "NFL Week 8: Big takeaways, questions and fantasy spin from Sunday's games",
-      "summary": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 8.",
-      "url": "https://www.espn.com/nfl/story/_/id/50349340/week-8-sunday-games-takeaways-questions-2026",
-      "sport": "NFL",
-      "published": "2026-11-02T00:28:55.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50353004",
-      "id": "50353004",
-      "headline": "Jerry Jones backs Brian Schottenheimer, says Cowboys let coach down in loss",
-      "summary": "Despite matching the largest blown fourth-quarter lead in team history, Cowboys owner Jerry Jones said the loss to Arizona will not trigger a coaching change.",
-      "url": "https://www.espn.com/nfl/story/_/id/50353004/jones-backs-schottenheimer-says-cowboys-let-coach-down",
-      "sport": "NFL",
-      "published": "2026-11-02T00:28:20.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
       "bestRank": 10
     },
     {
@@ -123,6 +607,17 @@
       "bestRank": 3
     },
     {
+      "key": "50353289",
+      "id": "50353289",
+      "headline": "Nashville ties Miami's single-season points record, ends Red Bulls playoff push",
+      "summary": "Nashville got two own goals and a stoppage-time winner by Sam Surridge to erase a two-goal lead and beat the New York Red Bulls 3-2 on a rainy Sunday at Geodis Park.",
+      "url": "https://www.espn.com/soccer/story/_/id/50353289/nashville-ties-miami-single-season-points-record",
+      "sport": "Soccer",
+      "published": "2026-11-02T00:23:43.000Z",
+      "firstSeen": "2026-11-02T03:24:36.713Z",
+      "bestRank": 3
+    },
+    {
       "key": "50349558",
       "id": "50349558",
       "headline": "Ravens' Lamar Jackson needs thumb surgery, will be placed on IR",
@@ -134,17 +629,6 @@
       "bestRank": 15
     },
     {
-      "key": "50353331",
-      "id": "50353331",
-      "headline": "Ja'Marr Chase's 'competitiveness' comes out at right time in Bengals' OT win",
-      "summary": "Visibly frustrated earlier in the game, Cincinnati Bengals star wide receiver Ja'Marr Chase cooled off in time to help his club to a 43-36 overtime victory over the Tennessee Titans on Sunday afternoon at Paycor Stadium.",
-      "url": "https://www.espn.com/nfl/story/_/id/50353331/frustrated-chase-spikes-helmet-helping-bengals-win",
-      "sport": "NFL",
-      "published": "2026-11-02T00:21:32.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 2
-    },
-    {
       "key": "49545945",
       "id": "49545945",
       "headline": "How active NFL players continue to redefine all-time sack list",
@@ -153,17 +637,6 @@
       "sport": "NFL",
       "published": "2026-11-02T00:19:51.000Z",
       "firstSeen": "2026-08-31T01:06:00.592Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50259995",
-      "id": "50259995",
-      "headline": "Kimi Antonelli's historic F1 title: Every record broken and milestone reached",
-      "summary": "Kimi Antonelli has been crowned the Formula 1 drivers' champion -- and here are all the records he's broken in the process.",
-      "url": "https://www.espn.com/f1/story/_/id/50259995/every-f1-record-kimi-antonelli-broken-title",
-      "sport": "F1",
-      "published": "2026-11-02T00:14:31.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
       "bestRank": 2
     },
     {
@@ -178,39 +651,6 @@
       "bestRank": 6
     },
     {
-      "key": "50352885",
-      "id": "50352885",
-      "headline": "Steelers roll by Browns, say Jared Verse 'should have his kept mouth shut'",
-      "summary": "The Steelers got the last word after Browns defensive end Jared Verse's trash talk ahead of Sunday's matchup.",
-      "url": "https://www.espn.com/nfl/story/_/id/50352885/steelers-say-browns-verse-kept-mouth-shut",
-      "sport": "NFL",
-      "published": "2026-11-02T00:06:37.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50353104",
-      "id": "50353104",
-      "headline": "Matthew Stafford's Rams overcome slow start, rally past winless Chargers 24-9",
-      "summary": "— Matthew Stafford passed for 157 yards and a touchdown, Blake Corum and Kyren Williams rushed for scores and the Los Angeles Rams overcame a slow start for a 24-9 victory over the winless Los Angeles Chargers on Sunday.",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873032",
-      "sport": "NFL",
-      "published": "2026-11-02T00:04:47.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50352713",
-      "id": "50352713",
-      "headline": "Josh Allen's halftime words fuel Bills' 2nd-half surge in win over Ravens",
-      "summary": "QB Josh Allen said the Bills \"didn't play up to our standard\" in the first half Sunday against the Ravens -- and delivered a halftime message to his teammates that essentially said \"we're way better than this.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/50352713/josh-allen-half-words-fuel-bills-second-half-vs-ravens",
-      "sport": "NFL",
-      "published": "2026-11-02T00:03:27.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 15
-    },
-    {
       "key": "50353089",
       "id": "50353089",
       "headline": "Travis Konecny scores in return as Flyers beat Utah Mammoth 6-3",
@@ -220,17 +660,6 @@
       "published": "2026-11-02T00:02:52.000Z",
       "firstSeen": "2026-11-02T00:42:01.060Z",
       "bestRank": 2
-    },
-    {
-      "key": "50054705",
-      "id": "50054705",
-      "headline": "Who comes out ahead in Wright-Wood trade? Grading the Predators, Kraken",
-      "summary": "Hockey trade season is heating up! Find grades for each GM involved in all the big swaps here.",
-      "url": "https://www.espn.com/nhl/story/_/id/50054705/nhl-2026-27-season-trade-grades-deals-report-cards-top-players-prospects-biggest-deals",
-      "sport": "NHL",
-      "published": "2026-11-02T00:01:44.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 1
     },
     {
       "key": "50352501",
@@ -297,17 +726,6 @@
       "published": "2026-11-01T23:41:47.000Z",
       "firstSeen": "2026-11-02T00:42:01.060Z",
       "bestRank": 27
-    },
-    {
-      "key": "50320323",
-      "id": "50320323",
-      "headline": "Max Verstappen wins Mexico City GP for Red Bull; Kimi Antonelli seals historic title",
-      "summary": "Max Verstappen stormed to victory at the Mexico City Grand Prix, and Kimi Antonelli was crowned Formula 1 world champion.",
-      "url": "https://www.espn.com/f1/story/_/id/50320323/max-verstappen-wins-mexico-city-gp-red-bull-kimi-antonelli-seals-historic-title-mexico-city-grand-prix-formula-1-autodromo-hermanos-rodriguez",
-      "sport": "F1",
-      "published": "2026-11-01T23:39:31.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 4
     },
     {
       "key": "50352757",
@@ -420,28 +838,6 @@
       "bestRank": 18
     },
     {
-      "key": "50347464",
-      "id": "50347464",
-      "headline": "Week 8 NFL highlights: Best plays, moments, touchdowns, more",
-      "summary": "Check here for Sunday's top moments and TDs as Josh Allen, Lamar Jackson and Jonathan Taylor take the field.",
-      "url": "https://www.espn.com/nfl/story/_/id/50347464/week-8-sunday-highlights-best-plays-touchdowns-2026",
-      "sport": "NFL",
-      "published": "2026-11-01T23:11:39.000Z",
-      "firstSeen": "2026-11-01T18:21:05.542Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50250037",
-      "id": "50250037",
-      "headline": "Kimi Antonelli makes F1 history as youngest world champion with maiden title",
-      "summary": "Kimi Antonelli became the youngest world champion in Formula 1 history, clinching his first title at 20 years old after finishing third at the Mexico City Grand Prix.",
-      "url": "https://www.espn.com/f1/story/_/id/50250037/kimi-antonelli-youngest-f1-world-champion-2026-mexico-city-grand-prix",
-      "sport": "F1",
-      "published": "2026-11-01T23:07:24.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 5
-    },
-    {
       "key": "50351129",
       "id": "50351129",
       "headline": "Bucs down Falcons without pass completion; Bucky Irving, Kenny Gainwell run wild",
@@ -484,17 +880,6 @@
       "published": "2026-11-01T23:00:36.000Z",
       "firstSeen": "2026-11-02T00:42:01.060Z",
       "bestRank": 19
-    },
-    {
-      "key": "50321045",
-      "id": "50321045",
-      "headline": "Mexico City Grand Prix results: Max Verstappen wins as Kimi Antonelli crowned F1 champion - as it happened",
-      "summary": "Max Verstappen wins the Mexico City Grand Prix as Kimi Antonelli wraps up Formula 1 title.",
-      "url": "https://www.espn.com/f1/story/_/id/50321045/mexico-city-grand-prix-2026-live-updates-results-analysis-commentary-autodromo-hermanos-rodriguez",
-      "sport": "F1",
-      "published": "2026-11-01T22:56:19.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 3
     },
     {
       "key": "50351207",
@@ -574,17 +959,6 @@
       "bestRank": 5
     },
     {
-      "key": "50351680",
-      "id": "50351680",
-      "headline": "Joe Burrow throws 5 TD passes, runs for score in OT as Bengals rally for 43-36 win over Titans",
-      "summary": "— Joe Burrow threw five touchdown passes in regulation and then scrambled untouched for a 9-yard score in overtime as the Cincinnati Bengals rallied for a 43-36 victory over the Tennessee...",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873031",
-      "sport": "NFL",
-      "published": "2026-11-01T22:07:47.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 22
-    },
-    {
       "key": "50351513",
       "id": "50351513",
       "headline": "Las Vegas Raiders vs. New York Jets: Game Highlights",
@@ -618,17 +992,6 @@
       "bestRank": 23
     },
     {
-      "key": "40699880",
-      "id": "40699880",
-      "headline": "Fantasy football buzz: Week 8's leading scorers through Sunday's early games",
-      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "sport": "NFL",
-      "published": "2026-11-01T21:57:46.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
-    },
-    {
       "key": "50299565",
       "id": "50299565",
       "headline": "Inside the complicated injury history of Ravens' Lamar Jackson",
@@ -638,17 +1001,6 @@
       "published": "2026-11-01T21:44:57.000Z",
       "firstSeen": "2026-10-28T12:30:42.958Z",
       "bestRank": 5
-    },
-    {
-      "key": "50320324",
-      "id": "50320324",
-      "headline": "Lewis Hamilton: Ferrari have 'big problems' after Charles Leclerc incident at Mexico City GP",
-      "summary": "Lewis Hamilton told Ferrari they have \"big, big problems\" after he was pushed out of the lead by teammate Charles Leclerc at the Mexico City Grand Prix.",
-      "url": "https://www.espn.com/f1/story/_/id/50320324/mexico-city-grand-prix-formula-1-lewis-hamilton-charles-leclerc-ferrari-big-issues",
-      "sport": "F1",
-      "published": "2026-11-01T21:41:48.000Z",
-      "firstSeen": "2026-11-02T00:42:01.060Z",
-      "bestRank": 6
     },
     {
       "key": "50351006",
@@ -748,17 +1100,6 @@
       "published": "2026-11-01T21:05:51.000Z",
       "firstSeen": "2026-11-01T21:20:43.782Z",
       "bestRank": 2
-    },
-    {
-      "key": "50323084",
-      "id": "50323084",
-      "headline": "NFL Week 8's best arrivals, led by Rams' Quentin Lake",
-      "summary": "Here's a look at the best-dressed players around the NFL in Week 8.",
-      "url": "https://www.espn.com/nfl/story/_/id/50323084/nfl-week-8-fashion",
-      "sport": "NFL",
-      "published": "2026-11-01T21:05:01.000Z",
-      "firstSeen": "2026-10-30T00:47:51.193Z",
-      "bestRank": 3
     },
     {
       "key": "49703019",
@@ -1674,17 +2015,6 @@
       "bestRank": 2
     },
     {
-      "key": "50344218",
-      "id": "50344218",
-      "headline": "Jalen Brunson joins Harry Styles on stage to cap Styles' MSG residency",
-      "summary": "The superstar singer-songwriter was joined on stage by Brunson, who presented Styles with a commemorative banner for his 30-show Madison Square Garden residency.",
-      "url": "https://www.espn.com/nba/story/_/id/50344218/jalen-brunson-harry-styles-madison-square-garden",
-      "sport": "NBA",
-      "published": "2026-11-01T16:21:59.000Z",
-      "firstSeen": "2026-11-01T18:21:05.542Z",
-      "bestRank": 1
-    },
-    {
       "key": "50348491",
       "id": "50348491",
       "headline": "Ten Hag: Ronaldo's time was 'over' at Juventus",
@@ -2112,17 +2442,6 @@
       "published": "2026-11-01T09:37:15.000Z",
       "firstSeen": "2026-11-01T12:24:13.300Z",
       "bestRank": 3
-    },
-    {
-      "key": "50250142",
-      "id": "50250142",
-      "headline": "Mexico City Grand Prix 2026: Race start time, how to watch, full schedule, predictions",
-      "summary": "Formula 1 heads to Mexico on a weekend where Kimi Antonelli could win the drivers' championship for the first time.",
-      "url": "https://www.espn.com/f1/story/_/id/50250142/mexico-city-grand-prix-2026-race-f1-start-s-how-watch-schedule-tv-channel-live-stream-predictions",
-      "sport": "F1",
-      "published": "2026-11-01T09:08:41.000Z",
-      "firstSeen": "2026-10-26T21:28:13.990Z",
-      "bestRank": 1
     },
     {
       "key": "50346331",
@@ -3362,7 +3681,7 @@
       "headline": "Here's what fans need to know in the sports world today",
       "summary": "Check out some of the top news of the day from the WNBA, CFB and NBA.",
       "url": "https://www.espn.com/video/clip/_/id/50345575/here-fans-need-know-sports-world-today",
-      "sport": "WNBA",
+      "sport": "NBA",
       "published": "2026-11-01T06:15:54.000Z",
       "firstSeen": "2026-11-01T06:28:12.378Z",
       "bestRank": 1
@@ -4836,7 +5155,7 @@
       "headline": "Halloween 2026: Breaking down top athlete costumes from across the sports world",
       "summary": "Athletes far and wide across the sports world showed off special costumes for Halloween.",
       "url": "https://www.espn.com/nba/story/_/id/50321862/halloween-athlete-costumes-2026",
-      "sport": "NHL",
+      "sport": "NBA",
       "published": "2026-10-31T23:13:32.000Z",
       "firstSeen": "2026-10-31T03:21:28.774Z",
       "bestRank": 1
@@ -17435,17 +17754,6 @@
       "published": "2026-10-26T03:05:35.000Z",
       "firstSeen": "2026-10-26T03:38:54.449Z",
       "bestRank": 1
-    },
-    {
-      "key": "49907062",
-      "id": "49907062",
-      "headline": "Aaron Rodgers' 2026 NFL season: Tracking records, milestones",
-      "summary": "The Steelers QB, who is entering his 22nd season in the league, is chasing records, and ESPN will be chronicling his \"last rodeo.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/49907062/aaron-rodgers-2026-nfl-season-steelers-packers-jets-tracking-records-milestones",
-      "sport": "NFL",
-      "published": "2026-10-26T03:03:21.000Z",
-      "firstSeen": "2026-09-12T12:32:59.419Z",
-      "bestRank": 2
     },
     {
       "key": "50282749",
@@ -47025,248 +47333,6 @@
       "published": "2026-10-12T03:26:48.000Z",
       "firstSeen": "2026-10-12T03:48:14.761Z",
       "bestRank": 1
-    },
-    {
-      "key": "50163399",
-      "id": "50163399",
-      "headline": "Lions RB Gibbs passes Sanders for most NFL TDs before age 25",
-      "summary": "Jahmyr Gibbs, 24, passed the Detroit legend with his 58th career touchdown as he helped the Lions beat the Cardinals on Sunday.",
-      "url": "https://www.espn.com/nfl/story/_/id/50163399/lions-rb-gibbs-passes-sanders-most-nfl-tds-age-25",
-      "sport": "NFL",
-      "published": "2026-10-12T02:53:25.000Z",
-      "firstSeen": "2026-10-12T03:48:14.761Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50163352",
-      "id": "50163352",
-      "headline": "Chargers' Harbaugh laments momentum-swinging 4th-down call",
-      "summary": "Jim Harbaugh blamed himself for the team's 23-17 loss to the Broncos, saying his decision on a fourth-down call left him \"more mad\" than he has ever been.",
-      "url": "https://www.espn.com/nfl/story/_/id/50163352/chargers-harbaugh-laments-momentum-swinging-4th-call",
-      "sport": "NFL",
-      "published": "2026-10-12T02:51:19.000Z",
-      "firstSeen": "2026-10-12T03:48:14.761Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50163287",
-      "id": "50163287",
-      "headline": "Broncos beat Chargers in Sean Payton's return to playcalling",
-      "summary": "The numbers weren't pretty and there were times the Broncos' offense was mired in neutral, but coach Sean Payton's return to playcalling duties ended with a 23-17 win Sunday over the Chargers.",
-      "url": "https://www.espn.com/nfl/story/_/id/50163287/broncos-beat-chargers-sean-payton-return-playcalling",
-      "sport": "NFL",
-      "published": "2026-10-12T02:36:12.000Z",
-      "firstSeen": "2026-10-12T03:48:14.761Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50158281",
-      "id": "50158281",
-      "headline": "Judging overreactions to NFL Week 5: Time for Titans to look for another QB?",
-      "summary": "Is Cam Ward already on the hot seat? Is the NFC East doomed to mediocrity (or worse)? We're judging Week 5 overreactions.",
-      "url": "https://www.espn.com/nfl/story/_/id/50158281/week-5-overreactions-2026-graziano-nfc-east-ward-jaguars",
-      "sport": "NFL",
-      "published": "2026-10-12T02:04:57.000Z",
-      "firstSeen": "2026-10-12T01:16:29.456Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50161573",
-      "id": "50161573",
-      "headline": "Is Joe Burrow back to his best after fantasy Week 5?",
-      "summary": "Is Joe Burrow back to his best after fantasy Week 5?",
-      "url": "https://www.espn.com/video/clip/_/id/50161573/is-joe-burrow-back-best-fantasy-week-5",
-      "sport": "NFL",
-      "published": "2026-10-12T02:04:41.000Z",
-      "firstSeen": "2026-10-12T01:16:29.456Z",
-      "bestRank": 27
-    },
-    {
-      "key": "50163298",
-      "id": "50163298",
-      "headline": "What is Tyler Warren's ceiling in fantasy after Week 5?",
-      "summary": "What is Tyler Warren's ceiling in fantasy after Week 5?",
-      "url": "https://www.espn.com/video/clip/_/id/50163298/what-tyler-warren-ceiling-fantasy-week-5",
-      "sport": "NFL",
-      "published": "2026-10-12T02:01:40.000Z",
-      "firstSeen": "2026-10-12T03:48:14.761Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50163138",
-      "id": "50163138",
-      "headline": "Without Shesterkin, New York Rangers lean on Garand in win",
-      "summary": "Two days after losing starting goaltender Igor Shesterkin for the season with a knee injury, Dylan Garand, 24, made 19 saves and the New York Rangers defeated the Vancouver Canucks 6-2 on Sunday night at Madison Square Garden, the club's fifth victory.",
-      "url": "https://www.espn.com/nhl/story/_/id/50163138/without-shesterkin-new-york-rangers-lean-garand-win",
-      "sport": "NHL",
-      "published": "2026-10-12T02:00:08.000Z",
-      "firstSeen": "2026-10-12T03:48:14.761Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50163289",
-      "id": "50163289",
-      "headline": "Hurricanes send Flyers to franchise-record 7th straight loss to open season",
-      "summary": "— Andrei Svechnikov and Sebastian Aho each had a goal and an assist and the Carolina Hurricanes beat Philadelphia 4-1 on Sunday night, handing the Flyers their franchise-record seventh straight loss to open the season.",
-      "url": "http://www.espn.com/nhl/recap?gameId=401892484",
-      "sport": "NHL",
-      "published": "2026-10-12T01:54:40.000Z",
-      "firstSeen": "2026-10-12T03:48:14.761Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50163288",
-      "id": "50163288",
-      "headline": "Carolina Hurricanes vs. Philadelphia Flyers: Game Highlights",
-      "summary": "Carolina Hurricanes vs. Philadelphia Flyers: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50163288/game-highlights",
-      "sport": "NHL",
-      "published": "2026-10-12T01:54:13.000Z",
-      "firstSeen": "2026-10-12T03:48:14.761Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50162377",
-      "id": "50162377",
-      "headline": "Brock Purdy leads 2 late scoring drives to deliver a 32-29 win for the 49ers over the Seahawks",
-      "summary": "— Brock Purdy engineered two scoring drives in the fourth quarter and the San Francisco 49ers rallied to beat the Seattle Seahawks 32-29 Sunday on a 43-yard field goal by Eddy Pineiro with 1:56 to play.",
-      "url": "http://www.espn.com/nfl/recap?gameId=401872992",
-      "sport": "NFL",
-      "published": "2026-10-12T01:46:27.000Z",
-      "firstSeen": "2026-10-12T01:16:29.456Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50163209",
-      "id": "50163209",
-      "headline": "Why Aaron Rodgers is a viable fantasy option in Week 6 vs. the Bucs",
-      "summary": "Why Aaron Rodgers is a viable fantasy option in Week 6 vs. the Bucs",
-      "url": "https://www.espn.com/video/clip/_/id/50163209/why-aaron-rodgers-viable-fantasy-option-week-6-vs-bucs",
-      "sport": "NFL",
-      "published": "2026-10-12T01:38:51.000Z",
-      "firstSeen": "2026-10-12T03:48:14.761Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50161984",
-      "id": "50161984",
-      "headline": "49ers lose WR Deebo Samuel to hamstring injury vs. Seahawks",
-      "summary": "The 49ers ruled out Deebo Samuel due to a hamstring injury in the third quarter, leaving San Francisco with just three healthy wideouts to finish Sunday's game vs. the Seahawks.",
-      "url": "https://www.espn.com/nfl/story/_/id/50161984/49ers-lose-wr-deebo-samuel-hamstring-injury-vs-seahawks",
-      "sport": "NFL",
-      "published": "2026-10-12T01:31:59.000Z",
-      "firstSeen": "2026-10-12T01:16:29.456Z",
-      "bestRank": 20
-    },
-    {
-      "key": "50163183",
-      "id": "50163183",
-      "headline": "Milwaukee Bucks vs. Charlotte Hornets: Game Highlights",
-      "summary": "Milwaukee Bucks vs. Charlotte Hornets: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50163183/game-highlights",
-      "sport": "NBA",
-      "published": "2026-10-12T01:30:56.000Z",
-      "firstSeen": "2026-10-12T03:48:14.761Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50163110",
-      "id": "50163110",
-      "headline": "Orlando Magic vs. Cleveland Cavaliers: Game Highlights",
-      "summary": "Orlando Magic vs. Cleveland Cavaliers: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50163110/game-highlights",
-      "sport": "NBA",
-      "published": "2026-10-12T01:30:52.000Z",
-      "firstSeen": "2026-10-12T03:48:14.761Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50162146",
-      "id": "50162146",
-      "headline": "Packers maul Bears, then fire back at Burden for 'quit' talk",
-      "summary": "Zaire Franklin had some strong words for Luther Burden -- even if he didn't mention him by name -- after the Packers' 31-7 win over the Bears at Lambeau Field.",
-      "url": "https://www.espn.com/nfl/story/_/id/50162146/packers-maul-bears-fire-back-burden-quit-talk",
-      "sport": "NFL",
-      "published": "2026-10-12T01:29:59.000Z",
-      "firstSeen": "2026-10-12T01:16:29.456Z",
-      "bestRank": 19
-    },
-    {
-      "key": "50162242",
-      "id": "50162242",
-      "headline": "Commanders' Daniels takes blame for botched final play in OT",
-      "summary": "Commanders quarterback Jayden Daniels said of the chaotic final seconds that prevented his team from attempting a winning field goal, \"Ultimately, it's on me.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/50162242/commanders-daniels-takes-blame-botched-final-play-ot",
-      "sport": "NFL",
-      "published": "2026-10-12T01:22:41.000Z",
-      "firstSeen": "2026-10-12T01:16:29.456Z",
-      "bestRank": 14
-    },
-    {
-      "key": "50162624",
-      "id": "50162624",
-      "headline": "Guardians, after late night, to face rested Rays in ALCS",
-      "summary": "The Guardians head into the ALCS after a whirlwind Game 5 and flight to St. Petersburg, while the Rays will start the series coming off four days of rest. \"It's an age-old debate, rest versus rust,\" said Rays pitcher Griffin Jax.",
-      "url": "https://www.espn.com/mlb/story/_/id/50162624/tampa-bay-rays-cleveland-guardians-take-contrasting-paths-alcs",
-      "sport": "MLB",
-      "published": "2026-10-12T01:12:26.000Z",
-      "firstSeen": "2026-10-12T01:16:29.456Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50162240",
-      "id": "50162240",
-      "headline": "Jared Goff, Jahmyr Gibbs lead the Lions' offensive romp in a 45-21 win over the Cardinals",
-      "summary": "— Dan Campbell felt his team was teetering on the edge of a lost season after four shaky performances to start the year so the Detroit head coach dialed up...",
-      "url": "http://www.espn.com/nfl/recap?gameId=401872991",
-      "sport": "NFL",
-      "published": "2026-10-12T01:08:28.000Z",
-      "firstSeen": "2026-10-12T01:16:29.456Z",
-      "bestRank": 15
-    },
-    {
-      "key": "50162296",
-      "id": "50162296",
-      "headline": "Broncos keep Chargers winless with key stop that fuels 4th-quarter rally in 23-17 win",
-      "summary": "— Jim Harbaugh is blaming the winless Los Angeles Chargers’ latest loss on himself.",
-      "url": "http://www.espn.com/nfl/recap?gameId=401872989",
-      "sport": "NFL",
-      "published": "2026-10-12T01:05:27.000Z",
-      "firstSeen": "2026-10-12T01:16:29.456Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50162979",
-      "id": "50162979",
-      "headline": "Vancouver Canucks vs. New York Rangers: Game Highlights",
-      "summary": "Vancouver Canucks vs. New York Rangers: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50162979/game-highlights",
-      "sport": "NHL",
-      "published": "2026-10-12T00:54:12.000Z",
-      "firstSeen": "2026-10-12T01:16:29.456Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50156554",
-      "id": "50156554",
-      "headline": "Week 5 NFL highlights: Best plays, moments, touchdowns, more",
-      "summary": "Check out the top plays from Week 5 from around the NFL.",
-      "url": "https://www.espn.com/nfl/story/_/id/50156554/week-5-highlights-best-plays-touchdowns-2026",
-      "sport": "NFL",
-      "published": "2026-10-12T00:54:11.000Z",
-      "firstSeen": "2026-10-11T15:28:12.241Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50162955",
-      "id": "50162955",
-      "headline": "Kartye and Cuylle score 2 each as Rangers down Canucks 6-2 in first game since losing Shesterkin",
-      "summary": "— Ty Kartye and Will Cuylle scored two goals each and Dylan Garand made 19 saves as the New York Rangers beat the Vancouver Canucks 6-2 on Sunday night in their first game since",
-      "url": "http://www.espn.com/nhl/recap?gameId=401892483",
-      "sport": "NHL",
-      "published": "2026-10-12T00:52:34.000Z",
-      "firstSeen": "2026-10-12T01:16:29.456Z",
-      "bestRank": 2
     }
   ]
 }
