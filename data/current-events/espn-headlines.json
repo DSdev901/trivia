@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-11-08T09:20:58.102Z",
+  "generatedAt": "2026-11-08T12:23:40.329Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-18T09:20:58.102Z",
-  "windowEnd": "2026-11-08T09:20:58.102Z",
+  "windowStart": "2026-10-18T12:23:40.329Z",
+  "windowEnd": "2026-11-08T12:23:40.329Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,525 @@
     "Tennis",
     "MMA"
   ],
-  "count": 5484,
+  "count": 5520,
   "items": [
+    {
+      "key": "50412382",
+      "id": "50412382",
+      "headline": "Rob Gronkowski caps Brady-attended Patriots Hall of Fame ceremony with spike",
+      "summary": "Rob Gronkowski was officially inducted into the New England Patriots Hall of Fame on Saturday with fellow Hall of Famers in attendance, including Tom Brady.",
+      "url": "https://www.espn.com/nfl/story/_/id/50412382/rob-gronkowski-caps-brady-attended-patriots-hall-fame-ceremony-spike",
+      "sport": "NFL",
+      "published": "2026-11-08T12:21:37.000Z",
+      "firstSeen": "2026-11-08T00:42:27.097Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50409705",
+      "id": "50409705",
+      "headline": "Browns QB Deshaun Watson out of protocol but set to be inactive, source says",
+      "summary": "Deshaun Watson has cleared the concussion protocol, but a source told NFL Network that the Browns quarterback is expected to be inactive against the Saints. Shedeur Sanders will make his first start of the season against New Orleans.",
+      "url": "https://www.espn.com/nfl/story/_/id/50409705/browns-qb-deshaun-watson-concussion-protocol",
+      "sport": "NFL",
+      "published": "2026-11-08T12:13:00.000Z",
+      "firstSeen": "2026-11-07T21:20:46.391Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50401786",
+      "id": "50401786",
+      "headline": "Making sense of Jaylen Brown's previous impact with Celtics",
+      "summary": "Ahead of the 76ers-Celtics game, we dive into the gap between Brown and on/off statistics.",
+      "url": "https://www.espn.com/nba/story/_/id/50401786/nba-data-jaylen-brown-celtics-76ers",
+      "sport": "NBA",
+      "published": "2026-11-08T12:09:17.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50400897",
+      "id": "50400897",
+      "headline": "Sources: Seahawks' Sam Darnold in jeopardy of missing Week 10 game vs. Raiders",
+      "summary": "Seahawks QB Sam Darnold, who is out Sunday against the Cardinals, also is in danger of missing Seattle's Week 10 game against the Raiders, sources told ESPN.",
+      "url": "https://www.espn.com/nfl/story/_/id/50400897/sources-seahawks-sam-darnold-danger-missing-week-10",
+      "sport": "NFL",
+      "published": "2026-11-08T12:00:28.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50391135",
+      "id": "50391135",
+      "headline": "Premier League live updates: Liverpool, Chelsea both in action",
+      "summary": "Both Liverpool and Chelsea are playing in the first Premier League matches of the final day of club fixtures across Europe before the international break.",
+      "url": "https://www.espn.com/soccer/story/_/id/50391135/premier-league-live-updates-liverpool-chelsea-aston-villa-manchester-united",
+      "sport": "Soccer",
+      "published": "2026-11-08T12:00:11.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50407561",
+      "id": "50407561",
+      "headline": "Sources: Lamar Jackson told Ravens teammates he plans to return this season",
+      "summary": "Lamar Jackson told his Ravens teammates that he plans to return later this season, sources told NFL Network.",
+      "url": "https://www.espn.com/nfl/story/_/id/50407561/sources-lamar-jackson-told-ravens-plans-return-26",
+      "sport": "NFL",
+      "published": "2026-11-08T11:59:56.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50419027",
+      "id": "50419027",
+      "headline": "Bruno Guimaraes vows 'unbelievable' Arsenal will keep up Premier League title pace",
+      "summary": "Bruno Guimarães saluted \"unbelievable\" Arsenal after they stretched their lead at the top of the Premier League with a gritty 1-0 win over Hull.",
+      "url": "https://www.espn.com/soccer/story/_/id/50419027/bruno-guimaraes-arsenal-premier-league",
+      "sport": "Soccer",
+      "published": "2026-11-08T11:54:35.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50409762",
+      "id": "50409762",
+      "headline": "Week 9 NFL highlights: Best plays, moments, touchdowns, more",
+      "summary": "Check here for Sunday's top moments, TDs and analysis.",
+      "url": "https://www.espn.com/nfl/story/_/id/50409762/week-9-sunday-highlights-best-plays-touchdowns-2026",
+      "sport": "NFL",
+      "published": "2026-11-08T11:30:01.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50401769",
+      "id": "50401769",
+      "headline": "Weekly Patriots notes: What New England could do at the trade deadline, intel",
+      "summary": "The Patriots will upgrade if they can before Tuesday's deadline, but it might be quiet. In fact, New England could even trade away someone like Christian Barmore.",
+      "url": "https://www.espn.com/nfl/story/_/id/50401769/new-england-patriots-notebook-week-9-trade-deadline-plans",
+      "sport": "NFL",
+      "published": "2026-11-08T11:00:01.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50400929",
+      "id": "50400929",
+      "headline": "Geno Smith has been upgrade from Justin Fields for Jets -- except in win column",
+      "summary": "Smith statistically has outperformed Fields in New York, but they both only have two wins.",
+      "url": "https://www.espn.com/nfl/story/_/id/50400929/jets-qb-upgrade-geno-smith-justin-fields",
+      "sport": "NFL",
+      "published": "2026-11-08T11:00:00.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 5
+    },
+    {
+      "key": "47978642",
+      "id": "47978642",
+      "headline": "Messi tracker: Goals, assists, key moments in 2026",
+      "summary": "ESPN provides game-by-game analysis of Lionel Messi's performances for Inter Miami and Argentina.",
+      "url": "https://www.espn.com/soccer/story/_/id/47978642/lionel-messi-2026-tracker-inter-miami-argentina-games-goals-assists-stats",
+      "sport": "Soccer",
+      "published": "2026-11-08T10:48:49.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50409867",
+      "id": "50409867",
+      "headline": "If Arsenal find attacking spark, they could run away with the Premier League",
+      "summary": "Arsenal's attack lacked a focal point vs. Hull, but Martin Ødegaard delivered a winner that should have the champions' Premier League rivals worried.",
+      "url": "https://www.espn.com/soccer/story/_/id/50409867/if-arsenal-find-attacking-spark-run-away-premier-league",
+      "sport": "Soccer",
+      "published": "2026-11-08T10:46:59.000Z",
+      "firstSeen": "2026-11-07T21:20:46.391Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50410317",
+      "id": "50410317",
+      "headline": "Mikel Arteta on Arsenal's attacking struggles: Must stop chasing 'perfect goal'",
+      "summary": "Mikel Arteta has said Arsenal must stop trying to score \"the perfect goal\" after Saturday's narrow 1-0 win over Hull City.",
+      "url": "https://www.espn.com/soccer/story/_/id/50410317/mikel-arteta-arsenal-hull-premier-league",
+      "sport": "Soccer",
+      "published": "2026-11-08T10:46:22.000Z",
+      "firstSeen": "2026-11-07T21:20:46.391Z",
+      "bestRank": 6
+    },
+    {
+      "key": "49703019",
+      "id": "49703019",
+      "headline": "Premier League VAR review: Arsenal robbed of a penalty through misapplied law",
+      "summary": "VAR often causes controversy, but how are decisions made? Our resident ref, Andy Davies, explains all.",
+      "url": "https://www.espn.com/soccer/story/_/id/49703019/premier-league-var-review-red-card-penalty-handball-goal-line-technology",
+      "sport": "Soccer",
+      "published": "2026-11-08T10:42:49.000Z",
+      "firstSeen": "2026-10-11T21:27:41.344Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50417709",
+      "id": "50417709",
+      "headline": "Alex Eala falls short of second WTA title, loses to Claire Liu in Hong Kong Open final",
+      "summary": "Alexandra Eala's bid for a second WTA title ended in disappointment as Claire Liu swept to a 6-3, 6-0 victory in the Hong Kong Open final.",
+      "url": "https://www.espn.com/tennis/story/_/id/50417709/alex-eala-falls-short-second-wta-title-loses-claire-liu-hong-kong-open-final",
+      "sport": "Tennis",
+      "published": "2026-11-08T10:32:06.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50418356",
+      "id": "50418356",
+      "headline": "Transfer rumors, news: Man United scout defender Mahamadou Nagida",
+      "summary": "Rennes left-back Mahamadou Nagida is being monitored by Manchester United. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/50418356/transfer-rumors-news-man-united-rennes-defender-mahamadou-nagida",
+      "sport": "Soccer",
+      "published": "2026-11-08T09:55:02.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50418445",
+      "id": "50418445",
+      "headline": "Seton Hall Pirates play the Charlotte 49ers",
+      "summary": "Charlotte 49ers (2-0) vs. Seton Hall Pirates (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401920887",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:56.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 17
+    },
+    {
+      "key": "50418496",
+      "id": "50418496",
+      "headline": "UIC Flames to host the UNC Greensboro Spartans on Monday",
+      "summary": "UNC Greensboro Spartans (1-1) at UIC Flames (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401926181",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:54.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50418495",
+      "id": "50418495",
+      "headline": "Boston University visits Northwestern after Alexander's 29-point outing",
+      "summary": "Boston University Terriers (2-0) at Northwestern Wildcats (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401920734",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:52.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50418494",
+      "id": "50418494",
+      "headline": "Marshall visits Ohio State following Mobley's 25-point outing",
+      "summary": "Marshall Thundering Herd (1-1) at Ohio State Buckeyes (1-1)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401916315",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:49.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50418429",
+      "id": "50418429",
+      "headline": "Chicago State takes on South Carolina State following Price's 21-point game",
+      "summary": "South Carolina State Bulldogs (2-0) at Chicago State Cougars (1-1)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401919733",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:48.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 31
+    },
+    {
+      "key": "50418467",
+      "id": "50418467",
+      "headline": "DePaul and Alabama A&M square off for non-conference matchup",
+      "summary": "Alabama A&M Bulldogs (2-0) at DePaul Blue Demons (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401909502",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:46.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50418468",
+      "id": "50418468",
+      "headline": "Oklahoma Sooners to host North Alabama Lions Monday",
+      "summary": "North Alabama Lions (2-0) at Oklahoma Sooners (1-1)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401906803",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:45.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50418440",
+      "id": "50418440",
+      "headline": "LIU plays Towson on 3-game road skid",
+      "summary": "Long Island Sharks (0-3) at Towson Tigers (0-2)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401919806",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:44.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 21
+    },
+    {
+      "key": "50418492",
+      "id": "50418492",
+      "headline": "Indiana Hoosiers face the Syracuse Orange",
+      "summary": "Syracuse Orange (2-0) vs. Indiana Hoosiers (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401909718",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:34.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50418489",
+      "id": "50418489",
+      "headline": "UAB hosts Florida A&M after Williford's 22-point performance",
+      "summary": "Florida A&M Rattlers (0-2) at UAB Blazers (1-1)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401919016",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:17.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50418487",
+      "id": "50418487",
+      "headline": "Howard visits Pennsylvania following Taylor's 27-point game",
+      "summary": "Howard Bison (1-1) at Pennsylvania Quakers (0-1)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401921180",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:05.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50418434",
+      "id": "50418434",
+      "headline": "Miranda leads Grambling against No. 7 Texas after 29-point outing",
+      "summary": "Grambling Tigers (1-0) at Texas Longhorns (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401906865",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:01.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 26
+    },
+    {
+      "key": "50418486",
+      "id": "50418486",
+      "headline": "Appalachian State Mountaineers to take on the Auburn Tigers on the road",
+      "summary": "Appalachian State Mountaineers (2-0) at Auburn Tigers (1-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401920799",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:45:00.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50418483",
+      "id": "50418483",
+      "headline": "Dzepina leads Washington against Mississippi Valley State after 27-point game",
+      "summary": "Mississippi Valley State Delta Devils (0-1) at Washington Huskies (1-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401925737",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:57.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50418474",
+      "id": "50418474",
+      "headline": "Georgia hosts FGCU following Cain's 20-point showing",
+      "summary": "Florida Gulf Coast Eagles (1-1) at Georgia Bulldogs (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401906781",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:55.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50418466",
+      "id": "50418466",
+      "headline": "Purdue plays Illinois State after Jacobsen's 28-point showing",
+      "summary": "Illinois State Redbirds (1-1) at Purdue Boilermakers (0-2)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401926132",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:48.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50418465",
+      "id": "50418465",
+      "headline": "Missouri hosts SIU-Edwardsville following Tiller's 26-point showing",
+      "summary": "SIU-Edwardsville Cougars (2-1) at Missouri Tigers (1-1)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401921815",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:47.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50418464",
+      "id": "50418464",
+      "headline": "Anderson leads UL Monroe against Texas A&M after 24-point game",
+      "summary": "UL Monroe Warhawks (1-1) at Texas A&M Aggies (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401917978",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:46.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50418453",
+      "id": "50418453",
+      "headline": "Bowling Green hosts Cleveland State after Griffith's 34-point game",
+      "summary": "Cleveland State Vikings (1-1) at Bowling Green Falcons (1-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401911010",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:37.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50418448",
+      "id": "50418448",
+      "headline": "Stanford hosts Rice following Townsend's 25-point game",
+      "summary": "Rice Owls (1-1) at Stanford Cardinal (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401921095",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:35.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 16
+    },
+    {
+      "key": "50418444",
+      "id": "50418444",
+      "headline": "Coastal Carolina Chanticleers to host South Carolina Upstate Spartans Monday",
+      "summary": "South Carolina Upstate Spartans (0-2) at Coastal Carolina Chanticleers (0-2)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401922060",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:22.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 18
+    },
+    {
+      "key": "50418443",
+      "id": "50418443",
+      "headline": "Jacksonville hosts UMKC in cross-conference game",
+      "summary": "UMKC Roos (1-1) at Jacksonville Dolphins (1-1)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401920877",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:20.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 19
+    },
+    {
+      "key": "50418441",
+      "id": "50418441",
+      "headline": "Radford Highlanders to play the No. 8 Tennessee Volunteers on the road",
+      "summary": "Radford Highlanders (0-2) at Tennessee Volunteers (1-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401906849",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:08.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 20
+    },
+    {
+      "key": "50418439",
+      "id": "50418439",
+      "headline": "Stonehill Skyhawks to visit the Columbia Lions Monday",
+      "summary": "Stonehill Skyhawks (1-1) at Columbia Lions (1-1)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401919846",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:03.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 22
+    },
+    {
+      "key": "50418438",
+      "id": "50418438",
+      "headline": "Smiley leads Oregon State against Eastern Washington after 21-point performance",
+      "summary": "Eastern Washington Eagles (0-2) at Oregon State Beavers (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401920718",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:02.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 23
+    },
+    {
+      "key": "50418437",
+      "id": "50418437",
+      "headline": "Wagner visits No. 4 UConn after Mullins' 23-point performance",
+      "summary": "Wagner Seahawks (0-2) at UConn Huskies (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401920686",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:01.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 24
+    },
+    {
+      "key": "50418436",
+      "id": "50418436",
+      "headline": "Notre Dame and Eastern Illinois square off for non-conference showdown",
+      "summary": "Eastern Illinois Panthers (0-2) at Notre Dame Fighting Irish (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401925681",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:44:00.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 25
+    },
+    {
+      "key": "50418433",
+      "id": "50418433",
+      "headline": "Asuma leads Minnesota against Cincinnati after 20-point game",
+      "summary": "Minnesota Golden Gophers (2-0) at Cincinnati Bearcats (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401916305",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:43:42.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 27
+    },
+    {
+      "key": "50418432",
+      "id": "50418432",
+      "headline": "LSU Tigers to square off against the Louisiana Tech Bulldogs Monday",
+      "summary": "Louisiana Tech Bulldogs (2-0) at LSU Tigers (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401921810",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:43:41.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 28
+    },
+    {
+      "key": "50418431",
+      "id": "50418431",
+      "headline": "North Florida plays No. 14 Miami (FL) for non-conference showdown",
+      "summary": "North Florida Ospreys (1-1) at Miami Hurricanes (1-1)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401921720",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:43:39.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 29
+    },
+    {
+      "key": "50418430",
+      "id": "50418430",
+      "headline": "Oakland faces No. 20 Alabama on 3-game road skid",
+      "summary": "Oakland Golden Grizzlies (0-3) at Alabama Crimson Tide (2-0)",
+      "url": "http://www.espn.com/ncb/preview?gameId=401906759",
+      "sport": "College basketball",
+      "published": "2026-11-08T09:43:37.000Z",
+      "firstSeen": "2026-11-08T12:23:40.329Z",
+      "bestRank": 30
+    },
     {
       "key": "50418328",
       "id": "50418328",
@@ -88,6 +605,39 @@
       "published": "2026-11-08T09:11:35.000Z",
       "firstSeen": "2026-11-08T09:20:58.102Z",
       "bestRank": 6
+    },
+    {
+      "key": "50321090",
+      "id": "50321090",
+      "headline": "São Paulo Grand Prix 2026: Race in Brazil start time, how to watch, full schedule, predictions",
+      "summary": "Formula 1 heads to Brazil for the São Paulo Grand Prix, a week after Kimi Antonelli was crowned world champion.",
+      "url": "https://www.espn.com/f1/story/_/id/50321090/sao-paulo-grand-prix-2026-brazil-race-f1-start-s-how-watch-schedule-tv-channel-live-stream-predictions",
+      "sport": "F1",
+      "published": "2026-11-08T08:08:05.000Z",
+      "firstSeen": "2026-11-02T21:20:49.816Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50354613",
+      "id": "50354613",
+      "headline": "Kimi Antonelli is F1 champion. But why didn't he get his trophy in Mexico City?",
+      "summary": "Kimi Antonelli is F1 world champion, but he won't get his trophy until December. Why does the sport still deny its champions their crowning moment?",
+      "url": "https://www.espn.com/f1/story/_/id/50354613/kimi-antonelli-f1-champion-why-trophy-2026",
+      "sport": "F1",
+      "published": "2026-11-08T08:07:18.000Z",
+      "firstSeen": "2026-11-02T15:22:31.127Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50196394",
+      "id": "50196394",
+      "headline": "How Kimi Antonelli overcame George Russell, Ferrari to become F1's youngest champion",
+      "summary": "How Kimi Antonelli overcame early setbacks, teammate George Russell and a Ferrari fightback to become Formula 1's youngest-ever world champion.",
+      "url": "https://www.espn.com/f1/story/_/id/50196394/how-kimi-antonelli-george-russell-ferrari-f1-youngest-champion",
+      "sport": "F1",
+      "published": "2026-11-08T08:07:05.000Z",
+      "firstSeen": "2026-11-02T15:22:31.127Z",
+      "bestRank": 2
     },
     {
       "key": "50418111",
@@ -359,7 +909,7 @@
       "headline": "Venables lauds Witten after Sooners shine in Oklahoma playcaller's debut",
       "summary": "In his debut as Oklahoma's offensive playcaller, Jason Witten, a former NFL tight end who coached high school in Texas last year, engineered an impressive Sooners attack that throttled No. 25 Florida in a 23-7 victory Saturday to push them to 5-4.",
       "url": "https://www.espn.com/college-football/story/_/id/50417320/venables-lauds-witten-sooners-shine-play-caller-debut",
-      "sport": "NFL",
+      "sport": "College football",
       "published": "2026-11-08T06:27:11.000Z",
       "firstSeen": "2026-11-08T06:27:49.859Z",
       "bestRank": 1
@@ -1663,17 +2213,6 @@
       "bestRank": 2
     },
     {
-      "key": "47978642",
-      "id": "47978642",
-      "headline": "Messi tracker: Goals, assists, key moments in 2026",
-      "summary": "ESPN provides game-by-game analysis of Lionel Messi's performances for Inter Miami and Argentina.",
-      "url": "https://www.espn.com/soccer/story/_/id/47978642/lionel-messi-2026-tracker-inter-miami-argentina-games-goals-assists-stats",
-      "sport": "Soccer",
-      "published": "2026-11-08T01:40:36.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
-    },
-    {
       "key": "50414471",
       "id": "50414471",
       "headline": "Key numbers as Ohio State loses consecutive games for first time in 15 years",
@@ -2972,17 +3511,6 @@
       "bestRank": 29
     },
     {
-      "key": "50412382",
-      "id": "50412382",
-      "headline": "Rob Gronkowski caps Brady-attended Patriots Hall of Fame ceremony with spike",
-      "summary": "Rob Gronkowski was officially inducted into the New England Patriots Hall of Fame on Saturday with fellow Hall of Famers in attendance, including Tom Brady.",
-      "url": "https://www.espn.com/nfl/story/_/id/50412382/rob-gronkowski-caps-brady-attended-patriots-hall-fame-ceremony-spike",
-      "sport": "NFL",
-      "published": "2026-11-07T22:36:17.000Z",
-      "firstSeen": "2026-11-08T00:42:27.097Z",
-      "bestRank": 1
-    },
-    {
       "key": "50413053",
       "id": "50413053",
       "headline": "North Carolina Central Eagles vs. Longwood Lancers: Game Highlights",
@@ -3533,17 +4061,6 @@
       "bestRank": 12
     },
     {
-      "key": "50321090",
-      "id": "50321090",
-      "headline": "São Paulo Grand Prix 2026: Race in Brazil start time, how to watch, full schedule, predictions",
-      "summary": "Formula 1 heads to Brazil for the São Paulo Grand Prix, a week after Kimi Antonelli was crowned world champion.",
-      "url": "https://www.espn.com/f1/story/_/id/50321090/sao-paulo-grand-prix-2026-brazil-race-f1-start-s-how-watch-schedule-tv-channel-live-stream-predictions",
-      "sport": "F1",
-      "published": "2026-11-07T21:04:51.000Z",
-      "firstSeen": "2026-11-02T21:20:49.816Z",
-      "bestRank": 1
-    },
-    {
       "key": "50411756",
       "id": "50411756",
       "headline": "Duke Blue Devils vs. NC State Wolfpack: Full Highlights",
@@ -4028,17 +4545,6 @@
       "bestRank": 3
     },
     {
-      "key": "49703019",
-      "id": "49703019",
-      "headline": "Premier League VAR review: Arsenal robbed of a penalty through misapplied law",
-      "summary": "VAR often causes controversy, but how are decisions made? Our resident ref, Andy Davies, explains all.",
-      "url": "https://www.espn.com/soccer/story/_/id/49703019/premier-league-var-review-red-card-penalty-handball-goal-line-technology",
-      "sport": "Soccer",
-      "published": "2026-11-07T19:32:36.000Z",
-      "firstSeen": "2026-10-11T21:27:41.344Z",
-      "bestRank": 1
-    },
-    {
       "key": "50410484",
       "id": "50410484",
       "headline": "Freshman Ekezie, No. 11 Louisville soar past Morehead State, 107-57",
@@ -4048,17 +4554,6 @@
       "published": "2026-11-07T19:32:35.000Z",
       "firstSeen": "2026-11-07T21:20:46.391Z",
       "bestRank": 5
-    },
-    {
-      "key": "50410317",
-      "id": "50410317",
-      "headline": "Mikel Arteta on Arsenal's attacking struggles: Must stop chasing 'perfect goal'",
-      "summary": "Mikel Arteta has said Arsenal must stop trying to score \"the perfect goal\" after Saturday's narrow 1-0 win over Hull City.",
-      "url": "https://www.espn.com/soccer/story/_/id/50410317/mikel-arteta-arsenal-hull-premier-league",
-      "sport": "Soccer",
-      "published": "2026-11-07T19:29:49.000Z",
-      "firstSeen": "2026-11-07T21:20:46.391Z",
-      "bestRank": 6
     },
     {
       "key": "50410438",
@@ -4083,17 +4578,6 @@
       "bestRank": 1
     },
     {
-      "key": "50409705",
-      "id": "50409705",
-      "headline": "Browns QB Deshaun Watson out of concussion protocol",
-      "summary": "Browns QB Deshaun Watson is out of the concussion protocol, but he is questionable. Shedeur Sanders will get the start against the Saints.",
-      "url": "https://www.espn.com/nfl/story/_/id/50409705/browns-qb-deshaun-watson-concussion-protocol",
-      "sport": "NFL",
-      "published": "2026-11-07T19:18:22.000Z",
-      "firstSeen": "2026-11-07T21:20:46.391Z",
-      "bestRank": 4
-    },
-    {
       "key": "50410209",
       "id": "50410209",
       "headline": "Arteta believes Arsenal need to be more 'chaotic' despite victory vs. Hull",
@@ -4114,17 +4598,6 @@
       "published": "2026-11-07T19:10:03.000Z",
       "firstSeen": "2026-11-07T21:20:46.391Z",
       "bestRank": 40
-    },
-    {
-      "key": "50409867",
-      "id": "50409867",
-      "headline": "If Arsenal find attacking spark, they could run away with the Premier League",
-      "summary": "Arsenal's attack lacked a focal point vs. Hull, but Martin Ødegaard delivered a winner that should have the champions' Premier League rivals worried.",
-      "url": "https://www.espn.com/soccer/story/_/id/50409867/if-arsenal-find-attacking-spark-run-away-premier-league",
-      "sport": "Soccer",
-      "published": "2026-11-07T19:00:30.000Z",
-      "firstSeen": "2026-11-07T21:20:46.391Z",
-      "bestRank": 10
     },
     {
       "key": "50409464",
@@ -5071,28 +5544,6 @@
       "published": "2026-11-07T09:42:37.000Z",
       "firstSeen": "2026-11-07T12:24:20.115Z",
       "bestRank": 30
-    },
-    {
-      "key": "50354613",
-      "id": "50354613",
-      "headline": "Kimi Antonelli is F1 champion. But why didn't he get his trophy in Mexico City?",
-      "summary": "Kimi Antonelli is F1 world champion, but he won't get his trophy until December. Why does the sport still deny its champions their crowning moment?",
-      "url": "https://www.espn.com/f1/story/_/id/50354613/kimi-antonelli-f1-champion-why-trophy-2026",
-      "sport": "F1",
-      "published": "2026-11-07T09:23:47.000Z",
-      "firstSeen": "2026-11-02T15:22:31.127Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50196394",
-      "id": "50196394",
-      "headline": "How Kimi Antonelli overcame George Russell, Ferrari to become F1's youngest champion",
-      "summary": "How Kimi Antonelli overcame early setbacks, teammate George Russell and a Ferrari fightback to become Formula 1's youngest-ever world champion.",
-      "url": "https://www.espn.com/f1/story/_/id/50196394/how-kimi-antonelli-george-russell-ferrari-f1-youngest-champion",
-      "sport": "F1",
-      "published": "2026-11-07T09:23:08.000Z",
-      "firstSeen": "2026-11-02T15:22:31.127Z",
-      "bestRank": 2
     },
     {
       "key": "50406470",
@@ -60291,61 +60742,6 @@
       "published": "2026-10-18T12:24:54.000Z",
       "firstSeen": "2026-10-18T15:25:19.387Z",
       "bestRank": 6
-    },
-    {
-      "key": "50207351",
-      "id": "50207351",
-      "headline": "Miami survives two Hail Marys, leaving FSU without answers in 2OT thriller",
-      "summary": "Miami withstood a pair of Hail Mary attempts from Florida State to come away with a 43-35, double-overtime win and a likely move to No. 1 in the AP Top 25.",
-      "url": "https://www.espn.com/college-football/story/_/id/50207351/miami-holds-florida-state-double-thriller",
-      "sport": "College football",
-      "published": "2026-10-18T12:01:19.000Z",
-      "firstSeen": "2026-10-18T03:32:08.327Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50200884",
-      "id": "50200884",
-      "headline": "Wuhan Open: Sonay Kartal reaches first WTA 1000 final after straight-sets win",
-      "summary": "Sonay Kartal's dream comeback continued as she beat Jelena Ostapenko in straight sets to advance to the biggest final of her career at the Wuhan Open.",
-      "url": "https://www.espn.com/tennis/story/_/id/50200884/wuhan-open-sonay-kartal-reaches-first-wta-1000-final-straight-sets-win-tennis",
-      "sport": "Tennis",
-      "published": "2026-10-18T11:31:20.000Z",
-      "firstSeen": "2026-10-17T15:24:43.379Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50198740",
-      "id": "50198740",
-      "headline": "Patriots' 2026 rookies: Who has made an impact through five weeks?",
-      "summary": "With two rookies assuming starting roles, let's take a look at how this year's draft class has panned out.",
-      "url": "https://www.espn.com/nfl/story/_/id/50198740/new-england-patriots-notebook-rookies-jets-lomu-jacas",
-      "sport": "NFL",
-      "published": "2026-10-18T10:00:04.000Z",
-      "firstSeen": "2026-10-18T12:34:41.664Z",
-      "bestRank": 16
-    },
-    {
-      "key": "50190257",
-      "id": "50190257",
-      "headline": "NHL Power Rankings: Each team's biggest shock of 2026-27",
-      "summary": "The Hurricanes are back on top of our 1-32 poll. Plus, we identify the big surprises -- both good and bad.",
-      "url": "https://www.espn.com/nhl/story/_/id/50190257/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings",
-      "sport": "NHL",
-      "published": "2026-10-18T09:55:41.000Z",
-      "firstSeen": "2026-10-16T12:39:40.472Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50201307",
-      "id": "50201307",
-      "headline": "NHL Tonight: Previewing Blue Jackets-Wild, Hurricanes-Flames",
-      "summary": "Just two games on the schedule for hockey fans Sunday, but here's what you need to know.",
-      "url": "https://www.espn.com/nhl/story/_/id/50201307/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-      "sport": "NHL",
-      "published": "2026-10-18T09:48:03.000Z",
-      "firstSeen": "2026-10-18T12:34:41.664Z",
-      "bestRank": 1
     }
   ]
 }
