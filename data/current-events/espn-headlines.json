@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-11-10T21:20:39.899Z",
+  "generatedAt": "2026-11-11T00:39:47.521Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-20T21:20:39.899Z",
-  "windowEnd": "2026-11-10T21:20:39.899Z",
+  "windowStart": "2026-10-21T00:39:47.521Z",
+  "windowEnd": "2026-11-11T00:39:47.521Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -24,36 +24,256 @@
   "count": 5895,
   "items": [
     {
-      "key": "50445819",
-      "id": "50445819",
-      "headline": "Dolphins put QB Malik Willis on IR with groin injury",
-      "summary": "The Dolphins have put quarterback Malik Wills on injured reserve because of a groin injury. He's eligible to return in Week 14",
-      "url": "https://www.espn.com/nfl/story/_/id/50445819/dolphins-put-qb-malik-willis-ir-groin-injury",
+      "key": "50391276",
+      "id": "50391276",
+      "headline": "Who will win MVP? Cy Young? Picks, analysis for 2026 MLB awards week",
+      "summary": "Baseball's best players and managers of 2026 collect their hardware this week -- starting Tuesday with the year's top rookies.",
+      "url": "https://www.espn.com/mlb/story/_/id/50391276/2026-season-awards-mvp-cy-young-al-nl",
+      "sport": "MLB",
+      "published": "2026-11-11T00:34:49.000Z",
+      "firstSeen": "2026-11-09T12:27:10.641Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50433120",
+      "id": "50433120",
+      "headline": "Heisman race after Week 10: CJ Carr, new contenders emerge",
+      "summary": "Like so much of this college football season, the Heisman race is officially in a state of flux.",
+      "url": "https://www.espn.com/college-football/story/_/id/50433120/heisman-race-week-10-cj-carr",
+      "sport": "College football",
+      "published": "2026-11-11T00:31:46.000Z",
+      "firstSeen": "2026-11-10T12:25:56.307Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50443388",
+      "id": "50443388",
+      "headline": "2026 NFL trade deadline winners, losers: Kirk Cousins, Josh Downs, Bengals, more",
+      "summary": "Which teams made the best -- and worst -- moves before the NFL trade deadline? We're making sense of all the action.",
+      "url": "https://www.espn.com/nfl/story/_/id/50443388/2026-nfl-trade-deadline-winners-losers-best-worst-deals",
       "sport": "NFL",
-      "published": "2026-11-10T21:18:16.000Z",
+      "published": "2026-11-11T00:30:33.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50446573",
+      "id": "50446573",
+      "headline": "Giants' Nabers calls Fox analyst Olsen's body language critique a 'lie'",
+      "summary": "Giants wide receiver Malik Nabers said Tuesday he posted on social media after the game because he thought the critique from Fox play-by-play announcer Joe Davis and analyst Greg Olsen about his body language and being a bad teammate was a \"lie.\"",
+      "url": "https://www.espn.com/nfl/story/_/id/50446573/giants-nabers-calls-fox-analyst-olsen-body-language-criticism-lie",
+      "sport": "NFL",
+      "published": "2026-11-11T00:27:35.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50444360",
+      "id": "50444360",
+      "headline": "Vikings reunite with QB Kirk Cousins, send 3rd-round pick to Raiders",
+      "summary": "Vikings are trading for quarterback Kirk Cousins, sending a 2027 third-round pick to the Raiders.",
+      "url": "https://www.espn.com/nfl/story/_/id/50444360/sources-vikings-id-qb-kirk-cousins-prime-trade-target",
+      "sport": "NFL",
+      "published": "2026-11-11T00:21:15.000Z",
+      "firstSeen": "2026-11-10T21:20:39.899Z",
+      "bestRank": 22
+    },
+    {
+      "key": "50022117",
+      "id": "50022117",
+      "headline": "How top 2027 men's basketball recruits fit with their new programs",
+      "summary": "How these top commits from the SC Next class of 2027 will impact college programs in 2027-28.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50022117/mens-college-basketball-2027-sc-next-100-top-commits-fit-new-school",
+      "sport": "College basketball",
+      "published": "2026-11-11T00:20:00.000Z",
+      "firstSeen": "2026-10-30T21:20:48.564Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50447394",
+      "id": "50447394",
+      "headline": "Shams shares his insights into history of Jayson Tatum and Jaylen Brown's relationship",
+      "summary": "Shams shares his insights into history of Jayson Tatum and Jaylen Brown's relationship",
+      "url": "https://www.espn.com/video/clip/_/id/50447394/shams-shares-insights-history-jayson-tatum-jaylen-brown-relationship",
+      "sport": "NBA",
+      "published": "2026-11-11T00:17:44.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50447384",
+      "id": "50447384",
+      "headline": "Shane Beamer: 'There's nothing like the SEC Championship Game'",
+      "summary": "South Carolina's Beamer shares SEC Championship stories from various points in his career, discussing how it's atmosphere outshines that of even the national title game.",
+      "url": "https://www.espn.com/video/clip/_/id/50447384/there-sec-championship-game",
+      "sport": "College football",
+      "published": "2026-11-11T00:09:56.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50446834",
+      "id": "50446834",
+      "headline": "Deion Sanders says blame for Colorado's 3-6 season solely on him: 'Don't say we'",
+      "summary": "Deion Sanders reiterated Tuesday that the blame for Colorado's struggles stops with him, saying, \"I'm not getting it done all the way around.\"",
+      "url": "https://www.espn.com/college-football/story/_/id/50446834/deion-sanders-says-blame-colorado-3-6-season-solely-him",
+      "sport": "College football",
+      "published": "2026-11-11T00:04:21.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50431710",
+      "id": "50431710",
+      "headline": "Fantasy football free agent pickups: Mendoza, Douglas, Estime among top options",
+      "summary": "Eric Karabell lists the top available players in most leagues, including the No. 1 pick in the draft.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10",
+      "sport": "NFL",
+      "published": "2026-11-11T00:02:05.000Z",
+      "firstSeen": "2026-11-09T15:21:13.537Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50447333",
+      "id": "50447333",
+      "headline": "Jadyn Wooten scores 19 and No. 15 TCU women use 17-0 run in 2nd half to ease by Iona 78-53",
+      "summary": "— Jadyn Wooten scored 19 points, Lara Somfai had 12 points and 14 rebounds, and No. 15 TCU beat Iona 78-53 on Tuesday to extend its NCAA-leading home winning streak to 48 games.",
+      "url": "http://www.espn.com/ncw/recap?gameId=401915666",
+      "sport": "Women's college basketball",
+      "published": "2026-11-10T23:57:35.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50447329",
+      "id": "50447329",
+      "headline": "Iona Gaels vs. TCU Horned Frogs: Game Highlights",
+      "summary": "Iona Gaels vs. TCU Horned Frogs: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50447329/game-highlights",
+      "sport": "Women's college basketball",
+      "published": "2026-11-10T23:57:35.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50447301",
+      "id": "50447301",
+      "headline": "Jason Cadee: Anthony moves effortlessly down the court",
+      "summary": "On the Aussie Hoops Hour Olgun Uluc and Jason Cadee breakdown Melbourne United's use of high backcourt screens to free up Cole Anthony.",
+      "url": "https://www.espn.com/video/clip/_/id/50447301/anthony-moves-effortlessly-court",
+      "sport": "NBA",
+      "published": "2026-11-10T23:55:50.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50043542",
+      "id": "50043542",
+      "headline": "NFL trade deadline grades: Deals for Kirk Cousins, Josh Downs, Ryan Neuzil",
+      "summary": "Wise move for the Ravens to add Jacoby Brissett? Did the Bears give up too much to go all-in with Jeffery Simmons? Let's evaluate eight trades before the deadline.",
+      "url": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals",
+      "sport": "NFL",
+      "published": "2026-11-10T23:52:20.000Z",
+      "firstSeen": "2026-09-28T18:35:51.463Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50447145",
+      "id": "50447145",
+      "headline": "Mizzou's Drinkwitz: Smart's 'program is the benchmark for the SEC'",
+      "summary": "Eliah Drinkwitz says he's looking forward to seeing how the Tigers \"measure up vs. the No. 1 team in the country\" and details his deep respect for Kirby Smart and Georgia.",
+      "url": "https://www.espn.com/video/clip/_/id/50447145/smart-program-benchmark-sec",
+      "sport": "College football",
+      "published": "2026-11-10T23:40:28.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49949224",
+      "id": "49949224",
+      "headline": "Rest-of-season rankings: Cousins, Jefferson, Mendoza biggest deadline winners",
+      "summary": "Need to make or assess a trade offer? With the NFL trade deadline passed, these rankings are designed to help.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49949224/fantasy-football-2026-updated-rest-season-rankings",
+      "sport": "NFL",
+      "published": "2026-11-10T23:38:23.000Z",
+      "firstSeen": "2026-09-15T18:17:37.554Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50444702",
+      "id": "50444702",
+      "headline": "Ovechkin says Russians want to play for country, doesn't weigh in on worlds",
+      "summary": "Alex Ovechkin didn't weigh in on CAS' decision to allow Russian players back in hockey worlds, but said they just want to represent their country.",
+      "url": "https://www.espn.com/nhl/story/_/id/50444702/ovechkin-weigh-allowing-russians-worlds",
+      "sport": "NHL",
+      "published": "2026-11-10T23:30:11.000Z",
       "firstSeen": "2026-11-10T21:20:39.899Z",
       "bestRank": 3
     },
     {
-      "key": "50445576",
-      "id": "50445576",
-      "headline": "Sources: Chiefs snag needed help at WR, trade for Colts' Josh Downs",
-      "summary": "The Chiefs have obtained needed help at wide receiver, acquiring Josh Downs in a trade with the Colts, sources told ESPN and NFL Network.",
-      "url": "https://www.espn.com/nfl/story/_/id/50445576/chiefs-trade-colts-wr-josh-downs",
+      "key": "50446805",
+      "id": "50446805",
+      "headline": "RB Jonathan Taylor, QB Daniel Jones remain with Colts as trade deadline passes",
+      "summary": "Colts RB Jonathan Taylor and QB Daniel Jones were the subject of trade overtures in recent days and weeks but were not traded before Tuesday's trade deadline.",
+      "url": "https://www.espn.com/nfl/story/_/id/50446805/rb-taylor-qb-jones-remain-colts-trade-deadline-passes",
       "sport": "NFL",
-      "published": "2026-11-10T21:18:15.000Z",
-      "firstSeen": "2026-11-10T21:20:39.899Z",
-      "bestRank": 7
+      "published": "2026-11-10T23:27:48.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 5
     },
     {
-      "key": "50043471",
-      "id": "50043471",
-      "headline": "2026 NFL trade deadline updates: Josh Downs, Kirk Cousins on the move",
-      "summary": "The NFL trade deadline is Nov. 10, but deals have already started. We're tracking all moves, including the Colts dealing Quenton Nelson and DeForest Buckner.",
-      "url": "https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms",
+      "key": "50444810",
+      "id": "50444810",
+      "headline": "Bills fill major need at safety, trade for Titans' Amani Hooker",
+      "summary": "The Bills traded for Titans safety Amani Hooker, giving up a second-round pick in exchange for Hooker and a fifth-round pick.",
+      "url": "https://www.espn.com/nfl/story/_/id/50444810/bills-trade-titans-safety-amani-hooker",
       "sport": "NFL",
-      "published": "2026-11-10T21:17:48.000Z",
-      "firstSeen": "2026-09-28T18:35:51.463Z",
+      "published": "2026-11-10T23:23:02.000Z",
+      "firstSeen": "2026-11-10T21:20:39.899Z",
+      "bestRank": 17
+    },
+    {
+      "key": "50444528",
+      "id": "50444528",
+      "headline": "What the Kirk Cousins trade means for the Vikings and the Raiders",
+      "summary": "We answered big questions surrounding the trade of quarterback Kirk Cousins from the Raiders to the Vikings.",
+      "url": "https://www.espn.com/nfl/story/_/id/50444528/kirk-cousins-trade-minnesota-vikings-las-vegas-raiders",
+      "sport": "NFL",
+      "published": "2026-11-10T23:19:32.000Z",
+      "firstSeen": "2026-11-10T21:20:39.899Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50446669",
+      "id": "50446669",
+      "headline": "From 2-7 to 6-2: Josh Downs reacts to Chiefs trade with Vince Carter GIF",
+      "summary": "A moment from Vince Carter's retirement ceremony helped Downs sum up his feelings about joining Kansas City.",
+      "url": "https://www.espn.com/nfl/story/_/id/50446669/chiefs-josh-downs-trade-reaction-vince-carter-gif",
+      "sport": "NFL",
+      "published": "2026-11-10T23:17:29.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50446499",
+      "id": "50446499",
+      "headline": "Falcons trade center Ryan Neuzil to Ravens for guard Andrew Vorhees, pick",
+      "summary": "The Ravens acquired Falcons starting center Ryan Neuzil in exchange for backup guard Andrew Vorhees and a conditional 2028 sixth-round pick.",
+      "url": "https://www.espn.com/nfl/story/_/id/50446499/falcons-trade-center-neuzil-ravens-guard-vorhees-pick",
+      "sport": "NFL",
+      "published": "2026-11-10T23:07:30.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 13
+    },
+    {
+      "key": "49954186",
+      "id": "49954186",
+      "headline": "Fantasy football consistency ratings: 2024 to 2026",
+      "summary": "The consistency ratings weigh both how consistent and how start-worthy players have been from 2024 to 2026.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49954186/fantasy-football-rankings-consistency-ratings-start-sit-value",
+      "sport": "NFL",
+      "published": "2026-11-10T23:05:02.000Z",
+      "firstSeen": "2026-09-16T12:38:51.317Z",
       "bestRank": 1
     },
     {
@@ -63,9 +283,273 @@
       "summary": "The 49ers completed a trade with the Colts for Keenan Allen in a move that will bolster their injury-plagued WR corps.",
       "url": "https://www.espn.com/nfl/story/_/id/50444457/sources-49ers-acquire-keenan-allen-trade-colts",
       "sport": "NFL",
-      "published": "2026-11-10T21:17:45.000Z",
+      "published": "2026-11-10T23:03:30.000Z",
       "firstSeen": "2026-11-10T21:20:39.899Z",
       "bestRank": 20
+    },
+    {
+      "key": "50445576",
+      "id": "50445576",
+      "headline": "Chiefs snag needed help at WR, trade for Colts' Josh Downs",
+      "summary": "The Chiefs have obtained needed help at wide receiver, acquiring Josh Downs in a trade with the Colts, sources told ESPN and NFL Network.",
+      "url": "https://www.espn.com/nfl/story/_/id/50445576/chiefs-trade-colts-wr-josh-downs",
+      "sport": "NFL",
+      "published": "2026-11-10T23:02:05.000Z",
+      "firstSeen": "2026-11-10T21:20:39.899Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50119375",
+      "id": "50119375",
+      "headline": "Fantasy football consistency ratings for 2026",
+      "summary": "The consistency ratings weigh how consistent, as well as how start-worthy, players have been in ESPN fantasy football leagues in 2026.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50119375/2026-fantasy-football-rankings-start-sit",
+      "sport": "NFL",
+      "published": "2026-11-10T23:01:20.000Z",
+      "firstSeen": "2026-10-07T01:09:02.931Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50043471",
+      "id": "50043471",
+      "headline": "2026 NFL trade deadline updates: Josh Downs, Kirk Cousins on the move",
+      "summary": "The NFL trade deadline is Nov. 10, but deals have already started. We're tracking all moves, including the Colts dealing Quenton Nelson and DeForest Buckner.",
+      "url": "https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms",
+      "sport": "NFL",
+      "published": "2026-11-10T22:55:40.000Z",
+      "firstSeen": "2026-09-28T18:35:51.463Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50446838",
+      "id": "50446838",
+      "headline": "Sources: Michigan QBs Carr, Underwood both expected to play",
+      "summary": "Tommy Carr is again expected to start at quarterback for Michigan on Saturday, with Bryce Underwood also likely to play against Oregon, sources told ESPN.",
+      "url": "https://www.espn.com/college-football/story/_/id/50446838/sources-michigan-qbs-carr-underwood-expected-play",
+      "sport": "College football",
+      "published": "2026-11-10T22:54:43.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50446824",
+      "id": "50446824",
+      "headline": "Ogden: Stars aligning for Pochettino to join Manchester United",
+      "summary": "Ogden: Stars aligning for Pochettino to join Manchester United",
+      "url": "https://www.espn.com/video/clip/_/id/50446824/stars-aligning-pochettino-join-manchester-united",
+      "sport": "Soccer",
+      "published": "2026-11-10T22:49:46.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50446131",
+      "id": "50446131",
+      "headline": "Warriors lose guard Brandon Williams to mild hamstring strain",
+      "summary": "The Warriors will be without reserve guard Brandon Williams for at least a week after he strained his left hamstring during Monday night's win, sources told ESPN.",
+      "url": "https://www.espn.com/nba/story/_/id/50446131/sources-warriors-lose-brandon-williams-hamstring-strain",
+      "sport": "NBA",
+      "published": "2026-11-10T22:39:10.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50445819",
+      "id": "50445819",
+      "headline": "Dolphins put QB Malik Willis on IR with groin injury",
+      "summary": "The Dolphins have put quarterback Malik Wills on injured reserve because of a groin injury. He's eligible to return in Week 14.",
+      "url": "https://www.espn.com/nfl/story/_/id/50445819/dolphins-put-qb-malik-willis-ir-groin-injury",
+      "sport": "NFL",
+      "published": "2026-11-10T22:33:26.000Z",
+      "firstSeen": "2026-11-10T21:20:39.899Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50446625",
+      "id": "50446625",
+      "headline": "Dodgers hire Pedro Guerrero away from Marlins as new hitting coach",
+      "summary": "The Dodgers have hired Pedro Guerrero as a hitting coach, bringing him back to the organization that drafted him as a player.",
+      "url": "https://www.espn.com/mlb/story/_/id/50446625/dodgers-hire-pedro-guerrero-away-marlins-hitting-coach",
+      "sport": "MLB",
+      "published": "2026-11-10T22:32:06.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50443891",
+      "id": "50443891",
+      "headline": "Bengals nix agreed-upon trade with Eagles, sources say",
+      "summary": "A trade that would've sent Eagles edge rusher Arnold Ebiketie to Cincinnati has been called off, sources told ESPN's Adam Schefter and NFL Network's Ian Rapoport.",
+      "url": "https://www.espn.com/nfl/story/_/id/50443891/bengals-nix-agreed-trade-eagles-sources-say",
+      "sport": "NFL",
+      "published": "2026-11-10T22:23:26.000Z",
+      "firstSeen": "2026-11-10T18:11:10.462Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50445309",
+      "id": "50445309",
+      "headline": "Broncos land LB Daiyan Henley in trade with Chargers before deadline",
+      "summary": "The Broncos have acquired Daiyan Henley from the Chargers in a trade just before Tuesday's deadline, sources told ESPN and NFL Network.",
+      "url": "https://www.espn.com/nfl/story/_/id/50445309/sources-broncos-land-daiyan-henley-trade-chargers",
+      "sport": "NFL",
+      "published": "2026-11-10T22:21:07.000Z",
+      "firstSeen": "2026-11-10T21:20:39.899Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50446604",
+      "id": "50446604",
+      "headline": "Yankees' Fried has bone spur removed, to start throwing again in Dec.",
+      "summary": "New York Yankees starter Max Fried had a bone spur taken out of his throwing elbow, but he is expected to begin his throwing program in December.",
+      "url": "https://www.espn.com/mlb/story/_/id/50446604/yankees-max-fried-bone-spur-removed-start-throwing-again-december",
+      "sport": "MLB",
+      "published": "2026-11-10T22:15:36.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50443078",
+      "id": "50443078",
+      "headline": "Futures Basketball League to launch in April for U18 players",
+      "summary": "The Futures Basketball League announced plans Tuesday to launch in April 2027, targeting the top 120 under-18 players in the country.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50443078/futures-basketball-league-launch-april-u18-players",
+      "sport": "College basketball",
+      "published": "2026-11-10T22:13:15.000Z",
+      "firstSeen": "2026-11-10T18:11:10.462Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50446600",
+      "id": "50446600",
+      "headline": "Venables relays Witten's immediate impact on Oklahoma's offense",
+      "summary": "Following the Sooners' Week 10 victory over Florida, Brent Venables offers an in-depth look at how interim offensive coordinator Jason Witten has quickly made his mark on Oklahoma's offensive identity.",
+      "url": "https://www.espn.com/video/clip/_/id/50446600/venables-relays-witten-immediate-impact-oklahoma-offense",
+      "sport": "College football",
+      "published": "2026-11-10T22:10:54.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 5
+    },
+    {
+      "key": "47809892",
+      "id": "47809892",
+      "headline": "Super Bowl LXI odds: All 32 teams' odds to win the championship",
+      "summary": "Every NFL team's win total, as well as odds to win their division, the conference and Super Bowl LXI.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/47809892/2026-super-bowl-lxi-odds-nfl-sports-betting-season-win-totals-playoffs",
+      "sport": "NFL",
+      "published": "2026-11-10T22:10:36.000Z",
+      "firstSeen": "2026-09-03T15:29:45.827Z",
+      "bestRank": 1
+    },
+    {
+      "key": "47879765",
+      "id": "47879765",
+      "headline": "Fantasy football 2026 defensive depth charts",
+      "summary": "Your guide to each NFL team's most valuable fantasy defensive players for the 2026 season.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/47879765/fantasy-football-2026-defensive-depth-charts",
+      "sport": "NFL",
+      "published": "2026-11-10T22:03:59.000Z",
+      "firstSeen": "2026-08-18T15:28:48.279Z",
+      "bestRank": 2
+    },
+    {
+      "key": "47879613",
+      "id": "47879613",
+      "headline": "Fantasy football 2026 offensive depth charts",
+      "summary": "Your guide to each NFL team's most valuable offensive players from a fantasy standpoint for the 2026 season.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/47879613/fantasy-football-2026-offensive-depth-charts",
+      "sport": "NFL",
+      "published": "2026-11-10T22:02:40.000Z",
+      "firstSeen": "2026-08-18T15:28:48.279Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50446540",
+      "id": "50446540",
+      "headline": "Kentucky's Will Stein: 'I think it's important that we keep our swag'",
+      "summary": "Following the Wildcats' second loss of the season, Stein says Kentucky remains one of the SEC's best teams and emphasizes the importance of regaining momentum against Florida in Week 11.",
+      "url": "https://www.espn.com/video/clip/_/id/50446540/think-important-keep-our-swag",
+      "sport": "College football",
+      "published": "2026-11-10T22:02:25.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50359951",
+      "id": "50359951",
+      "headline": "Fantasy impacts of the NFL trade deadline: Breaking down fantasy-relevant moves",
+      "summary": "NFL trade deadline day has come and gone, but we have the latest fantasy news and analysis for every key deal.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50359951/nfl-trade-deadline-2026-fantasy-football-impacts",
+      "sport": "NFL",
+      "published": "2026-11-10T21:55:18.000Z",
+      "firstSeen": "2026-11-10T21:20:39.899Z",
+      "bestRank": 12
+    },
+    {
+      "key": "40699880",
+      "id": "40699880",
+      "headline": "Fantasy buzz: Malik Willis placed on IR, are there any Dolphins you should start?",
+      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "sport": "NFL",
+      "published": "2026-11-10T21:54:11.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50445699",
+      "id": "50445699",
+      "headline": "MrBeast, meet Haaland: Man City star puts YouTuber through soccer gauntlet",
+      "summary": "Manchester City star Erling Haaland has collaborated with popular YouTuber \"MrBeast\" in a series of various soccer challenges.",
+      "url": "https://www.espn.com/soccer/story/_/id/50445699/mrbeast-meet-erling-haaland-manchester-city-star-puts-youtuber-soccer-gauntlet",
+      "sport": "Soccer",
+      "published": "2026-11-10T21:49:29.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50028196",
+      "id": "50028196",
+      "headline": "NBA buzz: Latest on trades, news, roster moves and intel",
+      "summary": "NBA basketball is back. The buzz never left. Bookmark this page for the latest news, rumblings and analysis from ESPN's insiders.",
+      "url": "https://www.espn.com/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals",
+      "sport": "NBA",
+      "published": "2026-11-10T21:33:16.000Z",
+      "firstSeen": "2026-09-28T12:44:52.879Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50439821",
+      "id": "50439821",
+      "headline": "Warriors blow out Pelicans by 51 points for 8th straight win",
+      "summary": "Stephen Curry scored 25 points in 20-plus minutes, Yaxel Lendeborg added 23 points, and the Warriors won their eighth straight game by 51 points against the short-handed Pelicans on Monday night.",
+      "url": "https://www.espn.com/nba/story/_/id/50439821/warriors-beat-pelicans-51-points-8th-straight-win",
+      "sport": "NBA",
+      "published": "2026-11-10T21:33:03.000Z",
+      "firstSeen": "2026-11-10T06:29:14.424Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50442966",
+      "id": "50442966",
+      "headline": "Gibbs, Allen, JSN and more Knockout league pickups for Week 10",
+      "summary": "As the number of teams shrink, the number of stars available in Knockout leagues grows. Here are the ones to get.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50442966/2026-fantasy-football-knockout-leagues-pickups-week-10",
+      "sport": "NFL",
+      "published": "2026-11-10T21:31:22.000Z",
+      "firstSeen": "2026-11-10T18:11:10.462Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50414742",
+      "id": "50414742",
+      "headline": "NFL Week 10 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "sport": "NFL",
+      "published": "2026-11-10T21:30:43.000Z",
+      "firstSeen": "2026-11-09T15:21:13.537Z",
+      "bestRank": 2
     },
     {
       "key": "50445818",
@@ -79,17 +563,6 @@
       "bestRank": 4
     },
     {
-      "key": "50444528",
-      "id": "50444528",
-      "headline": "What the Kirk Cousins trade means for the Vikings and the Raiders",
-      "summary": "We answered big questions surrounding the trade of quarterback Kirk Cousins from the Raiders to the Vikings.",
-      "url": "https://www.espn.com/nfl/story/_/id/50444528/kirk-cousin-trade-minnesota-vikings-las-vegas-raiders",
-      "sport": "NFL",
-      "published": "2026-11-10T21:11:37.000Z",
-      "firstSeen": "2026-11-10T21:20:39.899Z",
-      "bestRank": 8
-    },
-    {
       "key": "50443653",
       "id": "50443653",
       "headline": "Dolphins captain Zach Sieler out for rest of season with ruptured biceps",
@@ -99,17 +572,6 @@
       "published": "2026-11-10T21:11:36.000Z",
       "firstSeen": "2026-11-10T18:11:10.462Z",
       "bestRank": 5
-    },
-    {
-      "key": "50043542",
-      "id": "50043542",
-      "headline": "NFL trade deadline grades: Deals for Kirk Cousins, Keenan Allen, Jordan Davis",
-      "summary": "Wise move for the Ravens to add Jacoby Brissett? Did the Bears give up too much to go all-in with Jeffery Simmons? Let's evaluate eight trades before the deadline.",
-      "url": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals",
-      "sport": "NFL",
-      "published": "2026-11-10T21:10:52.000Z",
-      "firstSeen": "2026-09-28T18:35:51.463Z",
-      "bestRank": 1
     },
     {
       "key": "49803708",
@@ -123,15 +585,15 @@
       "bestRank": 1
     },
     {
-      "key": "50444810",
-      "id": "50444810",
-      "headline": "Bills fill major need at safety, trade for Titans' Amani Hooker",
-      "summary": "The Bills traded for Titans safety Amani Hooker, giving up a second-round pick in exchange for Hooker and a fifth-round pick.",
-      "url": "https://www.espn.com/nfl/story/_/id/50444810/bills-trade-titans-safety-amani-hooker",
-      "sport": "NFL",
-      "published": "2026-11-10T21:04:00.000Z",
+      "key": "50445267",
+      "id": "50445267",
+      "headline": "Texas lands Qandace Samuels, No. 10 prospect in class of '27",
+      "summary": "Texas has landed Qandace Samuels, the No. 10 overall recruit in the 2027 SC Next 100.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50445267/texas-lands-qandace-samuels-no-10-prospect-class-27",
+      "sport": "Women's college basketball",
+      "published": "2026-11-10T21:06:00.000Z",
       "firstSeen": "2026-11-10T21:20:39.899Z",
-      "bestRank": 17
+      "bestRank": 1
     },
     {
       "key": "50445612",
@@ -145,17 +607,6 @@
       "bestRank": 6
     },
     {
-      "key": "50444360",
-      "id": "50444360",
-      "headline": "Vikings reunite with QB Kirk Cousins, send 3rd-round pick to Raiders",
-      "summary": "Vikings are trading for quarterback Kirk Cousins, sending a 2027 third-round pick to the Raiders.",
-      "url": "https://www.espn.com/nfl/story/_/id/50444360/sources-vikings-id-qb-kirk-cousins-prime-trade-target",
-      "sport": "NFL",
-      "published": "2026-11-10T20:54:12.000Z",
-      "firstSeen": "2026-11-10T21:20:39.899Z",
-      "bestRank": 22
-    },
-    {
       "key": "50444620",
       "id": "50444620",
       "headline": "'Great move': Rich Eisen reacts to 49ers' trade for Keenan Allen",
@@ -165,39 +616,6 @@
       "published": "2026-11-10T20:52:56.000Z",
       "firstSeen": "2026-11-10T21:20:39.899Z",
       "bestRank": 19
-    },
-    {
-      "key": "50443078",
-      "id": "50443078",
-      "headline": "Futures Basketball League to launch in April for U18 players",
-      "summary": "The Futures Basketball League announced plans Tuesday to launch in April 2027, targeting the top 120 under-18 players in the country.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50443078/futures-basketball-league-launch-april-u18-players",
-      "sport": "NBA",
-      "published": "2026-11-10T20:48:38.000Z",
-      "firstSeen": "2026-11-10T18:11:10.462Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50359951",
-      "id": "50359951",
-      "headline": "Fantasy impacts of the NFL trade deadline: What to know on Cousins, Allen trades",
-      "summary": "NFL trade deadline day is here. We have the latest fantasy news and analysis for every key deal.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50359951/nfl-trade-deadline-2026-fantasy-football-impacts",
-      "sport": "NFL",
-      "published": "2026-11-10T20:45:24.000Z",
-      "firstSeen": "2026-11-10T21:20:39.899Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50445309",
-      "id": "50445309",
-      "headline": "Sources: Broncos land LB Daiyan Henley in trade with Chargers before deadline",
-      "summary": "The Broncos have acquired Daiyan Henley from the Chargers in a trade just before Tuesday's deadline, sources told ESPN and NFL Network.",
-      "url": "https://www.espn.com/nfl/story/_/id/50445309/sources-broncos-land-daiyan-henley-trade-chargers",
-      "sport": "NFL",
-      "published": "2026-11-10T20:45:12.000Z",
-      "firstSeen": "2026-11-10T21:20:39.899Z",
-      "bestRank": 10
     },
     {
       "key": "50445427",
@@ -253,17 +671,6 @@
       "published": "2026-11-10T20:24:55.000Z",
       "firstSeen": "2026-11-10T21:20:39.899Z",
       "bestRank": 2
-    },
-    {
-      "key": "50445267",
-      "id": "50445267",
-      "headline": "Texas lands Qandace Samuels, No. 10 prospect in Class of '27",
-      "summary": "Texas has landed Qandace Samuels, the No. 10 overall recruit in the 2027 SC Next 100.",
-      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50445267/texas-lands-qandace-samuels-no-10-prospect-class-27",
-      "sport": "Women's college basketball",
-      "published": "2026-11-10T20:21:50.000Z",
-      "firstSeen": "2026-11-10T21:20:39.899Z",
-      "bestRank": 1
     },
     {
       "key": "50445022",
@@ -365,17 +772,6 @@
       "bestRank": 1
     },
     {
-      "key": "50444702",
-      "id": "50444702",
-      "headline": "Ovechkin says Russians want to play for country, doesn't weigh in on worlds",
-      "summary": "Alex Ovechkin didn't weigh in on CAS' decision to allow Russian players back in hockey worlds, but said they just want to represent their country.",
-      "url": "https://www.espn.com/nhl/story/_/id/50444702/ovechkin-weigh-allowing-russians-worlds",
-      "sport": "NHL",
-      "published": "2026-11-10T19:48:03.000Z",
-      "firstSeen": "2026-11-10T21:20:39.899Z",
-      "bestRank": 3
-    },
-    {
       "key": "50444775",
       "id": "50444775",
       "headline": "Connor Hellebuyck discusses why he wanted out of Winnipeg",
@@ -409,17 +805,6 @@
       "bestRank": 1
     },
     {
-      "key": "47809892",
-      "id": "47809892",
-      "headline": "Super Bowl LXI odds: All 32 teams' odds to win the championship",
-      "summary": "Every NFL team's win total, as well as odds to win their division, the conference and Super Bowl LXI.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/47809892/2026-super-bowl-lxi-odds-nfl-sports-betting-season-win-totals-playoffs",
-      "sport": "NFL",
-      "published": "2026-11-10T19:31:22.000Z",
-      "firstSeen": "2026-09-03T15:29:45.827Z",
-      "bestRank": 1
-    },
-    {
       "key": "50443924",
       "id": "50443924",
       "headline": "Karabell's notebook: Harden's declining role, Garland's TOs, a rookie to watch",
@@ -429,17 +814,6 @@
       "published": "2026-11-10T19:28:51.000Z",
       "firstSeen": "2026-11-10T21:20:39.899Z",
       "bestRank": 2
-    },
-    {
-      "key": "50391276",
-      "id": "50391276",
-      "headline": "Who will win MVP? Cy Young? Picks, analysis for 2026 MLB awards week",
-      "summary": "Baseball's best players and managers of 2026 collect their hardware this week -- starting Tuesday with the year's top rookies.",
-      "url": "https://www.espn.com/mlb/story/_/id/50391276/2026-season-awards-mvp-cy-young-al-nl",
-      "sport": "MLB",
-      "published": "2026-11-10T19:28:09.000Z",
-      "firstSeen": "2026-11-09T12:27:10.641Z",
-      "bestRank": 1
     },
     {
       "key": "30302581",
@@ -596,17 +970,6 @@
       "bestRank": 5
     },
     {
-      "key": "50443891",
-      "id": "50443891",
-      "headline": "Bengals nix agreed-upon trade with Eagles, sources say",
-      "summary": "A trade that would've sent Eagles edge rusher Arnold Ebiketie to Cincinnati has been called off, sources told ESPN's Adam Schefter and NFL Network's Ian Rapoport.",
-      "url": "https://www.espn.com/nfl/story/_/id/50443891/bengals-nix-agreed-trade-eagles-sources-say",
-      "sport": "NFL",
-      "published": "2026-11-10T18:26:09.000Z",
-      "firstSeen": "2026-11-10T18:11:10.462Z",
-      "bestRank": 3
-    },
-    {
       "key": "49869194",
       "id": "49869194",
       "headline": "NFL expected touchdown (xTD) leaderboard for 2026",
@@ -616,17 +979,6 @@
       "published": "2026-11-10T18:25:14.000Z",
       "firstSeen": "2026-09-15T21:24:19.861Z",
       "bestRank": 8
-    },
-    {
-      "key": "47879765",
-      "id": "47879765",
-      "headline": "Fantasy football 2026 defensive depth charts",
-      "summary": "Your guide to each NFL team's most valuable fantasy defensive players for the 2026 season.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/47879765/fantasy-football-2026-defensive-depth-charts",
-      "sport": "NFL",
-      "published": "2026-11-10T18:23:05.000Z",
-      "firstSeen": "2026-08-18T15:28:48.279Z",
-      "bestRank": 2
     },
     {
       "key": "50444069",
@@ -648,17 +1000,6 @@
       "sport": "College football",
       "published": "2026-11-10T18:19:37.000Z",
       "firstSeen": "2026-11-10T18:11:10.462Z",
-      "bestRank": 1
-    },
-    {
-      "key": "47879613",
-      "id": "47879613",
-      "headline": "Fantasy football 2026 offensive depth charts",
-      "summary": "Your guide to each NFL team's most valuable offensive players from a fantasy standpoint for the 2026 season.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/47879613/fantasy-football-2026-offensive-depth-charts",
-      "sport": "NFL",
-      "published": "2026-11-10T18:19:22.000Z",
-      "firstSeen": "2026-08-18T15:28:48.279Z",
       "bestRank": 1
     },
     {
@@ -717,17 +1058,6 @@
       "bestRank": 2
     },
     {
-      "key": "50414742",
-      "id": "50414742",
-      "headline": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
-      "sport": "NFL",
-      "published": "2026-11-10T17:28:23.000Z",
-      "firstSeen": "2026-11-09T15:21:13.537Z",
-      "bestRank": 2
-    },
-    {
       "key": "50442954",
       "id": "50442954",
       "headline": "Bob Boone, part of MLB's 1st 3-generation family, dies at 78",
@@ -736,17 +1066,6 @@
       "sport": "MLB",
       "published": "2026-11-10T17:26:26.000Z",
       "firstSeen": "2026-11-10T18:11:10.462Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50028196",
-      "id": "50028196",
-      "headline": "NBA buzz: Latest on trades, news, roster moves and intel",
-      "summary": "NBA basketball is back. The buzz never left. Bookmark this page for the latest news, rumblings and analysis from ESPN's insiders.",
-      "url": "https://www.espn.com/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals",
-      "sport": "NBA",
-      "published": "2026-11-10T17:24:09.000Z",
-      "firstSeen": "2026-09-28T12:44:52.879Z",
       "bestRank": 1
     },
     {
@@ -814,17 +1133,6 @@
       "published": "2026-11-10T17:03:24.000Z",
       "firstSeen": "2026-11-10T18:11:10.462Z",
       "bestRank": 9
-    },
-    {
-      "key": "50442966",
-      "id": "50442966",
-      "headline": "Gibbs, Allen, JSN and more Knockout league pickups for Week 10",
-      "summary": "As the number of teams shrink, the number of stars available in Knockout leagues grows. Here are the ones to get.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50442966/2026-fantasy-football-knockout-leagues-pickups-week-10",
-      "sport": "NFL",
-      "published": "2026-11-10T17:02:15.000Z",
-      "firstSeen": "2026-11-10T18:11:10.462Z",
-      "bestRank": 7
     },
     {
       "key": "50443287",
@@ -1014,6 +1322,17 @@
       "bestRank": 3
     },
     {
+      "key": "50442176",
+      "id": "50442176",
+      "headline": "Rory McIlroy says Bryson DeChambeau would 'bring eyeballs' to DP World Tour",
+      "summary": "Rory McIlroy said Bryson DeChambeau would \"bring eyeballs\" to the DP World Tour in 2027 because of \"everything he brings with him, good and bad.\"",
+      "url": "https://www.espn.com/golf/story/_/id/50442176/rory-mcilroy-bryson-dechambeau-bring-eyeballs-dp-world-tour",
+      "sport": "Golf",
+      "published": "2026-11-10T15:39:55.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 2
+    },
+    {
       "key": "49804068",
       "id": "49804068",
       "headline": "Fantasy football rankings for Week 10: Running back",
@@ -1201,6 +1520,17 @@
       "bestRank": 5
     },
     {
+      "key": "50442317",
+      "id": "50442317",
+      "headline": "McIlroy: DeChambeau would bring 'eyeballs' to DP World Tour",
+      "summary": "McIlroy: DeChambeau would bring 'eyeballs' to DP World Tour",
+      "url": "https://www.espn.com/video/clip/_/id/50442317/dechambeau-bring-eyeballs-dp-world-tour",
+      "sport": "Golf",
+      "published": "2026-11-10T14:54:10.000Z",
+      "firstSeen": "2026-11-11T00:39:47.521Z",
+      "bestRank": 1
+    },
+    {
       "key": "50442270",
       "id": "50442270",
       "headline": "Sources: Oregon State QB Braden Atkinson re-signs for 2027",
@@ -1289,17 +1619,6 @@
       "bestRank": 1
     },
     {
-      "key": "40699880",
-      "id": "40699880",
-      "headline": "Fantasy buzz: James Cook III helps Bills overcome tough Vikings defense",
-      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "sport": "NFL",
-      "published": "2026-11-10T12:56:53.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
-    },
-    {
       "key": "50433742",
       "id": "50433742",
       "headline": "NHL Tonight: Guide to all seven games on Tuesday",
@@ -1320,17 +1639,6 @@
       "published": "2026-11-10T12:47:10.000Z",
       "firstSeen": "2026-11-10T15:21:28.622Z",
       "bestRank": 2
-    },
-    {
-      "key": "50433120",
-      "id": "50433120",
-      "headline": "Heisman race after Week 10: CJ Carr, new contenders emerge",
-      "summary": "Like so much of this college football season, the Heisman race is officially in a state of flux.",
-      "url": "https://www.espn.com/college-football/story/_/id/50433120/heisman-race-week-10-cj-carr",
-      "sport": "College football",
-      "published": "2026-11-10T12:33:40.000Z",
-      "firstSeen": "2026-11-10T12:25:56.307Z",
-      "bestRank": 1
     },
     {
       "key": "49998196",
@@ -2013,17 +2321,6 @@
       "published": "2026-11-10T08:00:04.000Z",
       "firstSeen": "2026-11-10T09:22:38.779Z",
       "bestRank": 8
-    },
-    {
-      "key": "50439821",
-      "id": "50439821",
-      "headline": "Warriors blow out Pelicans by 51 points for 8th straight win",
-      "summary": "Stephen Curry scored 25 points in 20-plus minutes, Yaxel Lendeborg added 23 points, and the Warriors won their eighth straight game by 51 points against the short-handed Pelicans on Monday night.",
-      "url": "https://www.espn.com/nba/story/_/id/50439821/warriors-beat-pelicans-51-points-8th-straight-win",
-      "sport": "NBA",
-      "published": "2026-11-10T07:45:07.000Z",
-      "firstSeen": "2026-11-10T06:29:14.424Z",
-      "bestRank": 1
     },
     {
       "key": "50440119",
@@ -3758,7 +4055,7 @@
       "headline": "Legends Pat Summitt, Willie Mays to be honored on U.S. postal stamps",
       "summary": "Sports legends Pat Summitt and Willie Mays will be honored with stamps in 2027, the U.S. Postal Service announced Monday.",
       "url": "https://www.espn.com/womens-college-basketball/story/_/id/50436571/legends-summitt-mays-honored-us-postal-stamps",
-      "sport": "Women's college basketball",
+      "sport": "MLB",
       "published": "2026-11-10T00:19:08.000Z",
       "firstSeen": "2026-11-10T00:38:37.185Z",
       "bestRank": 1
@@ -4891,7 +5188,7 @@
       "headline": "FSU hires alum Jeff Purinton as athletic director",
       "summary": "Florida State is set to hire Jeff Purinton as its next athletic director, sources told ESPN. FSU fired its previous AD Michael Alford in September.",
       "url": "https://www.espn.com/college-football/story/_/id/50432935/fsu-set-hire-alum-jeff-purinton-ad-sources-say",
-      "sport": "College football",
+      "sport": "Women's college basketball",
       "published": "2026-11-09T15:39:20.000Z",
       "firstSeen": "2026-11-09T15:21:13.537Z",
       "bestRank": 1
@@ -4917,17 +5214,6 @@
       "published": "2026-11-09T15:04:03.000Z",
       "firstSeen": "2026-09-01T18:19:52.020Z",
       "bestRank": 1
-    },
-    {
-      "key": "50431710",
-      "id": "50431710",
-      "headline": "Fantasy football free agent pickups: Douglas, Rodgers, Estime lead top options",
-      "summary": "Eric Karabell lists who he thinks are the top available players worth adding for the week ahead.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10",
-      "sport": "NFL",
-      "published": "2026-11-09T14:48:10.000Z",
-      "firstSeen": "2026-11-09T15:21:13.537Z",
-      "bestRank": 3
     },
     {
       "key": "50413261",
@@ -29185,28 +29471,6 @@
       "bestRank": 3
     },
     {
-      "key": "49954186",
-      "id": "49954186",
-      "headline": "Fantasy football consistency ratings: 2024 to 2026",
-      "summary": "The consistency ratings weigh both how consistent and how start-worthy players have been from 2024 to 2026.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49954186/fantasy-football-rankings-consistency-ratings-start-sit-value",
-      "sport": "NFL",
-      "published": "2026-11-03T17:35:03.000Z",
-      "firstSeen": "2026-09-16T12:38:51.317Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50119375",
-      "id": "50119375",
-      "headline": "Fantasy football consistency ratings for 2026",
-      "summary": "The consistency ratings weigh how consistent, as well as how start-worthy, players have been in ESPN fantasy football leagues in 2026.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50119375/2026-fantasy-football-rankings-start-sit",
-      "sport": "NFL",
-      "published": "2026-11-03T17:33:56.000Z",
-      "firstSeen": "2026-10-07T01:09:02.931Z",
-      "bestRank": 2
-    },
-    {
       "key": "49960162",
       "id": "49960162",
       "headline": "Fantasy basketball points league rankings update: Doncic, Flagg on the rise",
@@ -29293,17 +29557,6 @@
       "published": "2026-11-03T16:39:35.000Z",
       "firstSeen": "2026-11-03T18:13:07.706Z",
       "bestRank": 6
-    },
-    {
-      "key": "49949224",
-      "id": "49949224",
-      "headline": "Rest-of-season rankings: Irving, Tuten and Hubbard achieve RB1 status",
-      "summary": "Need a quick free agent pickup -- or roster overhaul -- after Week 8? These rankings are designed to help.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49949224/fantasy-football-2026-updated-rest-season-rankings",
-      "sport": "NFL",
-      "published": "2026-11-03T16:36:40.000Z",
-      "firstSeen": "2026-09-15T18:17:37.554Z",
-      "bestRank": 1
     },
     {
       "key": "50360697",
@@ -37367,17 +37620,6 @@
       "published": "2026-11-01T14:44:52.000Z",
       "firstSeen": "2026-11-01T12:24:13.300Z",
       "bestRank": 2
-    },
-    {
-      "key": "50022117",
-      "id": "50022117",
-      "headline": "How top 2027 men's basketball recruits fit with their new programs",
-      "summary": "How these top commits from the SC Next class of 2027 will impact college programs in 2027-28.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50022117/mens-college-basketball-2027-sc-next-100-top-commits-fit-new-school",
-      "sport": "College basketball",
-      "published": "2026-11-01T14:36:53.000Z",
-      "firstSeen": "2026-10-30T21:20:48.564Z",
-      "bestRank": 1
     },
     {
       "key": "50336880",
@@ -64625,248 +64867,6 @@
       "published": "2026-10-21T00:41:37.000Z",
       "firstSeen": "2026-10-21T00:59:09.010Z",
       "bestRank": 1
-    },
-    {
-      "key": "50233376",
-      "id": "50233376",
-      "headline": "How will Auburn face the challenge of outrunning LSU's tough defense?",
-      "summary": "The SEC Now crew discusses the importance of Auburn carrying their momentum from Week 7 into Week 8 as they prepare to face No. 18 LSU and Sam Leavitt.",
-      "url": "https://www.espn.com/video/clip/_/id/50233376/how-auburn-face-challenge-outrunning-lsu-tough-defense",
-      "sport": "College football",
-      "published": "2026-10-21T00:33:35.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50233371",
-      "id": "50233371",
-      "headline": "Marty spends the day with Stein to learn Kentucky's winning formula",
-      "summary": "SEC Network's Marty Smith spends the day in Lexington with Will Stein to understand what goes into turning a program around and giving your guys confidence.",
-      "url": "https://www.espn.com/video/clip/_/id/50233371/marty-spends-day-stein-learn-kentucky-winning-formula",
-      "sport": "College football",
-      "published": "2026-10-21T00:31:36.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50233270",
-      "id": "50233270",
-      "headline": "Who will win the run game: No. 11 Tennessee or South Carolina?",
-      "summary": "SEC Network's Matt Stinchcomb and Fozzy Whittaker analyze the Gamecocks' and Volunteers' strengths on the ground and discuss what each team must do to gain the upper hand.",
-      "url": "https://www.espn.com/video/clip/_/id/50233270/no-11-tennessee-south-carolina",
-      "sport": "College football",
-      "published": "2026-10-21T00:20:16.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50233239",
-      "id": "50233239",
-      "headline": "What must Keelon Russell, No. 13 Bama keep in mind ahead of Texas A&M?",
-      "summary": "SEC Network's Matt Stinchcomb and Fozzy Whittaker discuss how Russell must show up if he wants to lead the Crimson Tide to a win against a strong Aggies defense.",
-      "url": "https://www.espn.com/video/clip/_/id/50233239/what-keelon-russell-no-13-bama-keep-mind-ahead-texas-am",
-      "sport": "College football",
-      "published": "2026-10-21T00:10:49.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50231089",
-      "id": "50231089",
-      "headline": "Kansas' Bill Self not mulling retirement, welcomes roster 'uncertainty'",
-      "summary": "Kansas basketball coach Bill Self said he welcomes the \"uncertainty\" regarding players' eligibility and is ready to adjust his roster no matter what happens.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50231089/kansas-coach-bill-self-says-not-mulling-retirement",
-      "sport": "College basketball",
-      "published": "2026-10-21T00:06:08.000Z",
-      "firstSeen": "2026-10-20T21:28:05.035Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50233172",
-      "id": "50233172",
-      "headline": "Where does No. 19 Texas defense stand against No. 7 Ole Miss?",
-      "summary": "SEC Network's Matt Stinchcomb and Fozzy Whittaker evaluate the Longhorns' defense and break down the strengths of Ole Miss standouts Trinidad Chambliss and Kewan Lacy.",
-      "url": "https://www.espn.com/video/clip/_/id/50233172/where-does-no-19-texas-defense-stand-no-7-ole-miss",
-      "sport": "College football",
-      "published": "2026-10-21T00:01:32.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50232973",
-      "id": "50232973",
-      "headline": "Football watchdog chair asserts 'absolute' power to force City sale",
-      "summary": "The Independent Football Regulator will have \"absolute power\" to force Manchester City's owners to sell if they are ultimately found to have run the club improperly, the watchdog's chair has said.",
-      "url": "https://www.espn.com/soccer/story/_/id/50232973/football-watchdog-chair-power-force-city-sale",
-      "sport": "Soccer",
-      "published": "2026-10-20T23:53:19.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50232175",
-      "id": "50232175",
-      "headline": "NBA season tips off with Pistons rallying to beat Celtics 121-113, spoiling Paul George's debut",
-      "summary": "— Javonte Green scored 19 points after not playing in the first half and Cade Cunningham finished with 22 points and eight assists, helping the Detroit Pistons come back and beat the",
-      "url": "http://www.espn.com/nba/recap?gameId=401909088",
-      "sport": "NBA",
-      "published": "2026-10-20T23:29:15.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50228752",
-      "id": "50228752",
-      "headline": "Giants release RB Najee Harris 2 days after start",
-      "summary": "The Giants are releasing running back Najee Harris, a source told NFL Network's Ian Rapoport. Harris started Sunday's loss against the Saints but had just 2 yards on four carries.",
-      "url": "https://www.espn.com/nfl/story/_/id/50228752/giants-releasing-rb-najee-harris-source-says",
-      "sport": "NFL",
-      "published": "2026-10-20T23:26:40.000Z",
-      "firstSeen": "2026-10-20T18:19:41.004Z",
-      "bestRank": 22
-    },
-    {
-      "key": "50232657",
-      "id": "50232657",
-      "headline": "Brewers fans cashing in 2015 promo irked by World Series seats",
-      "summary": "The Brewers are trying to make amends for not living up \"to the spirit of the program\" stemming from a 2015 \"Timeless Ticket\" promotion if they paid $1,000.",
-      "url": "https://www.espn.com/mlb/story/_/id/50232657/brewers-fans-cashing-2015-promo-irked-world-series-seats",
-      "sport": "MLB",
-      "published": "2026-10-20T23:23:30.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50232810",
-      "id": "50232810",
-      "headline": "Klinsmann: Ten Hag should have kept Ronaldo comments to himself",
-      "summary": "Klinsmann: Ten Hag should have kept Ronaldo comments to himself",
-      "url": "https://www.espn.com/video/clip/_/id/50232810/ten-hag-kept-ronaldo-comments-himself",
-      "sport": "Soccer",
-      "published": "2026-10-20T22:53:44.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50232351",
-      "id": "50232351",
-      "headline": "JJ Redick says Lakers' 'biggest unknown' is how they will deal with adversity",
-      "summary": "JJ Redick said the Lakers' \"biggest unknown\" is how his new-look roster sans LeBron James will deal with adversity.",
-      "url": "https://www.espn.com/nba/story/_/id/50232351/redick-lakers-biggest-test-dealing-adversity",
-      "sport": "NBA",
-      "published": "2026-10-20T22:45:07.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50231982",
-      "id": "50231982",
-      "headline": "Penguins' Ben Kindel hospitalized after medical emergency on flight",
-      "summary": "Penguins forward Ben Kindel was being evaluated at a Salt Lake City hospital Tuesday after having a medical emergency on the team's flight home from a four-game trip.",
-      "url": "https://www.espn.com/nhl/story/_/id/50231982/penguins-ben-kindel-hospitalized-medical-emergency-flight",
-      "sport": "NHL",
-      "published": "2026-10-20T22:40:45.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50171167",
-      "id": "50171167",
-      "headline": "FIFA president Gianni Infantino received undisclosed $1.7M World Cup payment",
-      "summary": "FIFA president Gianni Infantino appears to have breached FIFA regulations after an IRS filing revealed an undisclosed $1.72 million pay package on top of his declared salary for 2024.",
-      "url": "https://www.espn.com/soccer/story/_/id/50171167/fifa-president-gianni-infantino-received-undisclosed-17m-world-cup-payment",
-      "sport": "Soccer",
-      "published": "2026-10-20T22:37:59.000Z",
-      "firstSeen": "2026-10-13T06:52:01.520Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50231796",
-      "id": "50231796",
-      "headline": "Big 12 commish mulls new event if conference title games end",
-      "summary": "Big 12 commissioner Brett Yormark said the league would find a new event to replace any lost conference title games should they be casualties of an expanded College Football Playoff.",
-      "url": "https://www.espn.com/college-football/story/_/id/50231796/big-12-commish-mulls-new-event-conference-title-games-end",
-      "sport": "Women's college basketball",
-      "published": "2026-10-20T22:27:21.000Z",
-      "firstSeen": "2026-10-20T21:28:05.035Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50231812",
-      "id": "50231812",
-      "headline": "Commanders' Quinn, Daniels discuss QB's throwaway on fourth-down play",
-      "summary": "Commanders quarterback Jayden Daniels shouldn't have thrown a fourth-down pass away in the second quarter of Monday night's loss, coach Dan Quinn said.",
-      "url": "https://www.espn.com/nfl/story/_/id/50231812/quinn-daniels-discuss-qb-throwaway-fourth-play",
-      "sport": "NFL",
-      "published": "2026-10-20T22:12:12.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50232313",
-      "id": "50232313",
-      "headline": "Boston Celtics vs. Detroit Pistons: Game Highlights",
-      "summary": "Boston Celtics vs. Detroit Pistons: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50232313/game-highlights",
-      "sport": "NBA",
-      "published": "2026-10-20T22:07:39.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50221682",
-      "id": "50221682",
-      "headline": "Man City cheated because Premier League was built to be unfair",
-      "summary": "The Premier League is unfair: Some teams are allowed to spend more than everyone else. So, of course Man City cheated to win.",
-      "url": "https://www.espn.com/soccer/story/_/id/50221682/man-city-cheated-premier-league-was-built-unfair",
-      "sport": "Soccer",
-      "published": "2026-10-20T22:06:03.000Z",
-      "firstSeen": "2026-10-20T09:31:30.794Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50230371",
-      "id": "50230371",
-      "headline": "Commanders WR Terry McLaurin has torn patellar tendon, ending his season",
-      "summary": "Commanders wide receiver Terry McLaurin suffered a torn patellar tendon, an injury that will end his season, coach Dan Quinn announced Tuesday.",
-      "url": "https://www.espn.com/nfl/story/_/id/50230371/commanders-wr-terry-mclaurin-torn-patellar-tendon",
-      "sport": "NFL",
-      "published": "2026-10-20T21:50:58.000Z",
-      "firstSeen": "2026-10-20T21:28:05.035Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50232141",
-      "id": "50232141",
-      "headline": "Get ready for Cowboys vs. Eagles on Monday Night Football",
-      "summary": "Get ready for Cowboys vs. Eagles on Monday Night Football",
-      "url": "https://www.espn.com/video/clip/_/id/50232141/get-ready-cowboys-vs-eagles-monday-night-football",
-      "sport": "NFL",
-      "published": "2026-10-20T21:45:43.000Z",
-      "firstSeen": "2026-10-21T00:59:09.010Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50225503",
-      "id": "50225503",
-      "headline": "Transfer rumors, news: Barcelona, Bayern eye Aston Villa's Manzambi",
-      "summary": "Real Madrid defender Trent Alexander-Arnold is considering his future at the Bernabéu, with Liverpool, Chelsea, Arsenal and Man City monitoring his situation. Transfer Talk has the latest.",
-      "url": "https://www.espn.com/soccer/story/_/id/50225503/transfer-rumors-news-premier-league-clubs-eye-alexander-arnold-amid-real-madrid-uncertainty",
-      "sport": "Soccer",
-      "published": "2026-10-20T21:33:15.000Z",
-      "firstSeen": "2026-10-20T09:31:30.794Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50231515",
-      "id": "50231515",
-      "headline": "Florida Bar suspends employee for social media comments to Miami football player",
-      "summary": "The Florida Bar has suspended an employee as it investigates social media comments that were sent to a Miami football player after the team's win over Florida State.",
-      "url": "https://www.espn.com/college-football/story/_/id/50231515/florida-bar-suspends-employee-comments-miami-football-player",
-      "sport": "College football",
-      "published": "2026-10-20T21:23:16.000Z",
-      "firstSeen": "2026-10-20T21:28:05.035Z",
-      "bestRank": 2
     }
   ]
 }
