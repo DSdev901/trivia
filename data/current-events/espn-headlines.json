@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-11-13T12:26:44.690Z",
+  "generatedAt": "2026-11-13T15:20:28.909Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-23T12:26:44.690Z",
-  "windowEnd": "2026-11-13T12:26:44.690Z",
+  "windowStart": "2026-10-23T15:20:28.909Z",
+  "windowEnd": "2026-11-13T15:20:28.909Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,18 +21,502 @@
     "Tennis",
     "MMA"
   ],
-  "count": 6319,
+  "count": 6313,
   "items": [
+    {
+      "key": "50462993",
+      "id": "50462993",
+      "headline": "NFC North: Bears win division? Cousins has Vikes in command?",
+      "summary": "What will Kirk Cousins and Micah Parsons mean for the best division in football, or will the Bears hang on?",
+      "url": "https://www.espn.com/nfl/story/_/id/50462993/lions-packers-bears-vikings-nfc-north",
+      "sport": "NFL",
+      "published": "2026-11-13T15:19:15.000Z",
+      "firstSeen": "2026-11-13T12:26:44.690Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50435678",
+      "id": "50435678",
+      "headline": "Fantasy football last-minute pickups: 12 players who can help in deeper leagues",
+      "summary": "If injuries, bye weeks or tough matchups have you seeking lineup help, Matt Bowen lists potential options.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50435678/fantasy-football-streamers-last-minute-pickups-week-10",
+      "sport": "NFL",
+      "published": "2026-11-13T15:19:12.000Z",
+      "firstSeen": "2026-11-13T12:26:44.690Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50471662",
+      "id": "50471662",
+      "headline": "Are the Rams' playoff hopes over after Puka Nacua's injury?",
+      "summary": "Are the Rams' playoff hopes over after Puka Nacua's injury?",
+      "url": "https://www.espn.com/video/clip/_/id/50471662/are-rams-playoff-hopes-puka-nacua-injury",
+      "sport": "NFL",
+      "published": "2026-11-13T15:16:17.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50462413",
+      "id": "50462413",
+      "headline": "Connelly previews Week 11: 32 make-or-break showdowns",
+      "summary": "Week 11 brings SEC drama, Big 12 elimination games, and order vs. chaos in the Big Ten and ACC.",
+      "url": "https://www.espn.com/college-football/story/_/id/50462413/connelly-previews-week-11-texas-lsu",
+      "sport": "College football",
+      "published": "2026-11-13T15:13:53.000Z",
+      "firstSeen": "2026-11-13T12:26:44.690Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50471923",
+      "id": "50471923",
+      "headline": "Emotional Pochettino says bye to USMNT after accepting Man United role",
+      "summary": "Emotional Pochettino says bye to USMNT after accepting Man United role",
+      "url": "https://www.espn.com/video/clip/_/id/50471923/emotional-pochettino-says-bye-usmnt-accepting-man-united-role",
+      "sport": "Soccer",
+      "published": "2026-11-13T15:12:11.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50469660",
+      "id": "50469660",
+      "headline": "Man United confirm Mauricio Pochettino as Michael Carrick replacement",
+      "summary": "Mauricio Pochettino has been confirmed as Manchester United's new head coach.",
+      "url": "https://www.espn.com/soccer/story/_/id/50469660/man-united-mauricio-pochettino-manager-michael-carrick",
+      "sport": "Soccer",
+      "published": "2026-11-13T15:10:48.000Z",
+      "firstSeen": "2026-11-13T12:26:44.690Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50471659",
+      "id": "50471659",
+      "headline": "Falcons sign DE Cameron Thomas, CB C.J. Henderson to multiyear extensions",
+      "summary": "The Atlanta Falcons have signed defensive end Cameron Thomas and cornerback C.J. Henderson to multiyear contract extensions, the team announced Friday.",
+      "url": "https://www.espn.com/nfl/story/_/id/50471659/falcons-sign-de-thomas-cb-henderson-multiyear-extensions",
+      "sport": "NFL",
+      "published": "2026-11-13T15:08:21.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50463616",
+      "id": "50463616",
+      "headline": "Don't be surprised if Jordan Love makes history and Mendoza performs like a QB1",
+      "summary": "Elite WRs compensate for the lack of a running game in Green Bay, while there's unwarranted caution for Vegas' QB.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50463616/fantasy-football-start-sit-sleepers-breakouts-week-10",
+      "sport": "NFL",
+      "published": "2026-11-13T15:06:11.000Z",
+      "firstSeen": "2026-11-13T12:26:44.690Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50463729",
+      "id": "50463729",
+      "headline": "Week 10 betting preview: Analysis, best bets, TD predictions for Sunday",
+      "summary": "Our experts dive into the odds and player props for Week 10 and offer their betting tips and favorite plays.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50463729/week-10-nfl-odds-touchdown-props-best-bets-sunday-games",
+      "sport": "NFL",
+      "published": "2026-11-13T15:05:31.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50454088",
+      "id": "50454088",
+      "headline": "10 Best: Ranking the world's top men's soccer players ... again!",
+      "summary": "Who is the best soccer player in the world at the November international break? ESPN's latest rankings are here.",
+      "url": "https://www.espn.com/soccer/story/_/id/50454088/10-best-ranking-top-soccer-players-november",
+      "sport": "Soccer",
+      "published": "2026-11-13T15:03:38.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50469742",
+      "id": "50469742",
+      "headline": "Transfer rumors, news: Man United eye USMNT's Balogun, Freeman for Pochettino",
+      "summary": "United States internationals Folarin Balogun and Alex Freeman could be following Mauricio Pochettino to Manchester United. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/50469742/transfer-rumors-news-man-united-balogun-freeman-pochettino",
+      "sport": "Soccer",
+      "published": "2026-11-13T15:02:36.000Z",
+      "firstSeen": "2026-11-13T12:26:44.690Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50433086",
+      "id": "50433086",
+      "headline": "Fantasy playbook: Week 10 Shadow Reports, lineup locks and projected scores",
+      "summary": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50433086/fantasy-playbook-projections-lineup-locks-week-10-shadow",
+      "sport": "NFL",
+      "published": "2026-11-13T15:02:15.000Z",
+      "firstSeen": "2026-11-12T15:21:21.810Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50471768",
+      "id": "50471768",
+      "headline": "Will Lamar Jackson be able to return this season after thumb surgery?",
+      "summary": "Will Lamar Jackson be able to return this season after thumb surgery?",
+      "url": "https://www.espn.com/video/clip/_/id/50471768/will-lamar-jackson-able-return-season-thumb-surgery",
+      "sport": "NFL",
+      "published": "2026-11-13T15:01:56.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50470402",
+      "id": "50470402",
+      "headline": "Live updates: USMNT's Pochettino in tears as he agrees to join Man United",
+      "summary": "USMNT head coach Mauricio Pochettino is leaving to join Manchester United. Follow the story live with ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/50470402/live-updates-mauricio-pochettino-usmnt-man-united",
+      "sport": "Soccer",
+      "published": "2026-11-13T14:55:40.000Z",
+      "firstSeen": "2026-11-13T12:26:44.690Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50471707",
+      "id": "50471707",
+      "headline": "Source: Vols RB Daune Morris out vs. Aggies after being injured in car accident",
+      "summary": "Tennessee running back Daune Morris will miss Saturday's game at Texas A&M as a result of an injury he sustained during a car accident this week, a source told ESPN.",
+      "url": "https://www.espn.com/college-football/story/_/id/50471707/source-tennessee-rb-daune-morris-vs-texas-am",
+      "sport": "College football",
+      "published": "2026-11-13T14:54:24.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49803708",
+      "id": "49803708",
+      "headline": "Fantasy football flex and superflex rankings for Week 10",
+      "summary": "Trying to decide between a couple of closely ranked players this week? Eric Karabell's rankings are here to help.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49803708/fantasy-football-superflex-rankings-2026-qb-rb-wr-te",
+      "sport": "NFL",
+      "published": "2026-11-13T14:46:19.000Z",
+      "firstSeen": "2026-09-05T00:58:39.682Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50452966",
+      "id": "50452966",
+      "headline": "Mauricio Pochettino agrees Man United deal, announcement expected - sources",
+      "summary": "Mauricio Pochettino has agreed to become the next Manchester United manager with an announcement expected on Friday, sources have told ESPN.",
+      "url": "https://www.espn.com/soccer/story/_/id/50452966/mauricio-pochettino-man-united-deal-sources",
+      "sport": "Soccer",
+      "published": "2026-11-13T14:43:16.000Z",
+      "firstSeen": "2026-11-13T09:22:43.308Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49804068",
+      "id": "49804068",
+      "headline": "Fantasy football rankings for Week 10: Running back",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804068/nfl-fantasy-football-rankings-2026-rb-running-back",
+      "sport": "NFL",
+      "published": "2026-11-13T14:42:17.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49804149",
+      "id": "49804149",
+      "headline": "Fantasy football rankings for Week 10: Wide receiver",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804149/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
+      "sport": "NFL",
+      "published": "2026-11-13T14:40:57.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804273",
+      "id": "49804273",
+      "headline": "Fantasy football rankings for Week 10: D/ST",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804273/nfl-fantasy-football-rankings-2026-dst-defense",
+      "sport": "NFL",
+      "published": "2026-11-13T14:39:57.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50463020",
+      "id": "50463020",
+      "headline": "Donovan Mitchell's renewed faith in Cleveland fuels the Cavs' future",
+      "summary": "Mitchell made two commitments this summer: his marriage and his extension with the Cavs. Now it's up to him to keep pushing Cleveland forward.",
+      "url": "https://www.espn.com/nba/story/_/id/50463020/donovan-mitchell-cleveland-cavaliers-extension",
+      "sport": "NBA",
+      "published": "2026-11-13T14:39:48.000Z",
+      "firstSeen": "2026-11-13T12:26:44.690Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804164",
+      "id": "49804164",
+      "headline": "Fantasy football rankings for Week 10: Tight end",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804164/nfl-fantasy-football-rankings-2026-te-tight-end",
+      "sport": "NFL",
+      "published": "2026-11-13T14:39:34.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50471389",
+      "id": "50471389",
+      "headline": "Where to watch 2027 WNBA draft lottery",
+      "summary": "Teams will learn where they will pick in the 2027 WNBA draft.",
+      "url": "https://www.espn.com/wnba/story/_/id/50471389/watch-2027-wnba-draft-lottery",
+      "sport": "WNBA",
+      "published": "2026-11-13T14:38:18.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804332",
+      "id": "49804332",
+      "headline": "Fantasy football rankings for Week 10: IDP",
+      "summary": "Weekly fantasy football draft rankings for IDP leagues from Mike Clay, Tristan H. Cockcroft and Eric Moody.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804332/nfl-fantasy-football-rankings-2026-idp",
+      "sport": "NFL",
+      "published": "2026-11-13T14:36:28.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804233",
+      "id": "49804233",
+      "headline": "Fantasy football rankings for Week 10: Kicker",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804233/nfl-fantasy-football-rankings-2026-k-kicker",
+      "sport": "NFL",
+      "published": "2026-11-13T14:32:07.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49804022",
+      "id": "49804022",
+      "headline": "Fantasy football rankings for Week 10: Quarterback",
+      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804022/nfl-fantasy-football-rankings-2026-qb-quarterback",
+      "sport": "NFL",
+      "published": "2026-11-13T14:31:19.000Z",
+      "firstSeen": "2026-09-04T15:27:01.167Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49797082",
+      "id": "49797082",
+      "headline": "Fantasy football rankings Week 10: PPR and superflex",
+      "summary": "Weekly composite ranks for each position in PPR and IDP formats, as well as Eric Karabell's superflex ranks.",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26main-49797082/fantasy-football-rankings-2026-qb-rb-wr-te-dst",
+      "sport": "NFL",
+      "published": "2026-11-13T14:29:43.000Z",
+      "firstSeen": "2026-09-04T18:29:30.987Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50470622",
+      "id": "50470622",
+      "headline": "Mauricio Pochettino to Man United: Is Tottenham love affair finally over?",
+      "summary": "Mauricio Pochettino is back in the Premier League as the new Man United boss. For Tottenham fans, it's complicated.",
+      "url": "https://www.espn.com/soccer/story/_/id/50470622/mauricio-pochettino-tottenham-man-united",
+      "sport": "Soccer",
+      "published": "2026-11-13T14:20:41.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50471089",
+      "id": "50471089",
+      "headline": "The CFP implications of Texas-LSU",
+      "summary": "The CFP implications of Texas-LSU",
+      "url": "https://www.espn.com/video/clip/_/id/50471089/the-cfp-implications-texas-lsu",
+      "sport": "College football",
+      "published": "2026-11-13T14:18:55.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50471378",
+      "id": "50471378",
+      "headline": "Six from Team Nurmagomedov, eight in all get prison time over Dvalishvili brawl",
+      "summary": "Six members of Usman Nurmagomedov's team and two people who filmed the hotel fight also involving Merab Dvalishvili have been handed six-month prison sentences in Abu Dhabi.",
+      "url": "https://www.espn.com/mma/story/_/id/50471378/8-people-get-prison-nurmagomedov-dvalishvili-brawl",
+      "sport": "MMA",
+      "published": "2026-11-13T14:12:26.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50471328",
+      "id": "50471328",
+      "headline": "'I'd cut Jameis Winston this morning': Whitner not amused by hard count",
+      "summary": "'I'd cut Jameis Winston this morning': Whitner not amused by hard count",
+      "url": "https://www.espn.com/video/clip/_/id/50471328/whitner-not-amused-hard-count",
+      "sport": "NFL",
+      "published": "2026-11-13T14:07:41.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 15
+    },
+    {
+      "key": "40699880",
+      "id": "40699880",
+      "headline": "Fantasy buzz: Likely, Skattebo come up big on TNF but only one is an auto-start",
+      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "sport": "NFL",
+      "published": "2026-11-13T14:01:39.000Z",
+      "firstSeen": "2026-08-12T15:36:55.019Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50463509",
+      "id": "50463509",
+      "headline": "Is Chuba Hubbard the biggest X factor to spark a Panthers turnaround?",
+      "summary": "Meet Carolina's team captain, a locker room leader and a relentless running back who is \"chasing greatness myself.\"",
+      "url": "https://www.espn.com/nfl/story/_/id/50463509/chuba-hubbard-x-factor-spark-carolina-panthers",
+      "sport": "NFL",
+      "published": "2026-11-13T14:01:15.000Z",
+      "firstSeen": "2026-11-13T12:26:44.690Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50464480",
+      "id": "50464480",
+      "headline": "NHL Power Rankings: Updated poll, plus each team's points vs. preseason projections",
+      "summary": "Which teams are the most ahead of (or behind) their preseason expectations?",
+      "url": "https://www.espn.com/nhl/story/_/id/50464480/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings",
+      "sport": "NHL",
+      "published": "2026-11-13T13:59:23.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50471309",
+      "id": "50471309",
+      "headline": "Which teams are too high and too low in NHL Power Rankings?",
+      "summary": "Which teams are too high and too low in NHL Power Rankings?",
+      "url": "https://www.espn.com/video/clip/_/id/50471309/which-teams-too-high-too-low-nhl-power-rankings",
+      "sport": "NHL",
+      "published": "2026-11-13T13:58:46.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50467465",
+      "id": "50467465",
+      "headline": "Avalanche lose stars MacKinnon, Makar to 2nd-period injuries vs. Senators",
+      "summary": "Avalanche forward Nathan MacKinnon and defenseman Cale Makar both left Thursday's game against the Senators after suffering lower-body injuries in the second period.",
+      "url": "https://www.espn.com/nhl/story/_/id/50467465/avalanche-lose-stars-mackinnon-makar-injuries-vs-senators",
+      "sport": "NHL",
+      "published": "2026-11-13T13:44:32.000Z",
+      "firstSeen": "2026-11-13T03:23:36.979Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50465961",
+      "id": "50465961",
+      "headline": "UConn, Strong still searching for identity amid 3-1 start to season",
+      "summary": "The Huskies' outlook appears murkier than in years past after the \"worst UConn performance\" in 20 years.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50465961/uconn-huskies-searching-identity-amid-3-1-start",
+      "sport": "Women's college basketball",
+      "published": "2026-11-13T13:41:24.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50471147",
+      "id": "50471147",
+      "headline": "Mauricio Pochettino to Man United: 'Never a better time,' says Harry Redknapp",
+      "summary": "Mauricio Pochettino could not be taking charge of Manchester United at a better time, according to former Tottenham boss Harry Redknapp.",
+      "url": "https://www.espn.com/soccer/story/_/id/50471147/harry-redknapp-mauricio-pochettino-man-united",
+      "sport": "Soccer",
+      "published": "2026-11-13T13:26:16.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50464810",
+      "id": "50464810",
+      "headline": "Cowboys' Porter: My absence is because of injury, not my contract",
+      "summary": "Cowboys CB Joey Porter Jr. wants it known his absence the past two weeks has everything to do with an ankle injury and nothing to do with a future contract.",
+      "url": "https://www.espn.com/nfl/story/_/id/50464810/cowboys-joey-porter-absence-due-injury-not-contract",
+      "sport": "NFL",
+      "published": "2026-11-13T13:10:46.000Z",
+      "firstSeen": "2026-11-13T00:40:41.870Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50452091",
+      "id": "50452091",
+      "headline": "In Mauricio Pochettino, Manchester United have finally hired a proper manager",
+      "summary": "After years of near-misses, Man United have finally landed Mauricio Pochettino, a manager with the kind of pedigree, class and credibility the club have been looking for.",
+      "url": "https://www.espn.com/soccer/story/_/id/50452091/manchester-united-hire-mauricio-pochettino-reaction",
+      "sport": "Soccer",
+      "published": "2026-11-13T13:04:50.000Z",
+      "firstSeen": "2026-11-13T12:26:44.690Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50463130",
+      "id": "50463130",
+      "headline": "JuJu Watkins projected No. 1 WNBA pick in latest 2027 mock draft",
+      "summary": "JuJu Watkins, Madison Booker and Hannah Hidalgo are the projected top picks ahead of Sunday's WNBA draft lottery.",
+      "url": "https://www.espn.com/wnba/story/_/id/50463130/wnba-mock-draft-2027-draft-lottery-projections",
+      "sport": "WNBA",
+      "published": "2026-11-13T13:03:31.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50463999",
+      "id": "50463999",
+      "headline": "Michael Jordan, Bugs Bunny and the lasting legacy of 'Space Jam' at 30",
+      "summary": "Three decades after its release, the basketball-meets-Looney Tunes adventure remains a pop culture staple.",
+      "url": "https://www.espn.com/nba/story/_/id/50463999/space-jam-30-year-anniversary-influence",
+      "sport": "NBA",
+      "published": "2026-11-13T12:37:41.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50463294",
+      "id": "50463294",
+      "headline": "UFC 334 preview, picks for Ciryl Gane-Josh Hokit and Kayla Harrison-Amanda Nunes",
+      "summary": "A look at the matchups and experts' picks for both title fights at UFC 334 in New York City.",
+      "url": "https://www.espn.com/mma/story/_/id/50463294/ufc-334-gane-hokit-harrison-nunes-picks",
+      "sport": "MMA",
+      "published": "2026-11-13T12:28:06.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 2
+    },
     {
       "key": "50457283",
       "id": "50457283",
-      "headline": "Josh Hoover not on injury report; RB Turbo Richard, DL Kellan Wyatt out this week",
+      "headline": "Josh Hoover not on injury report; RB Richard, DL Wyatt, G Brunner out this week",
       "summary": "Indiana starting quarterback Josh Hoover does not appear on the initial Big Ten availability report for Saturday's game against No. 18 USC.",
       "url": "https://www.espn.com/college-football/story/_/id/50457283/josh-hoover-not-injury-report-rb-turbo-richard-dl-kellan-wyatt-week",
       "sport": "College football",
-      "published": "2026-11-13T12:24:16.000Z",
+      "published": "2026-11-13T12:26:28.000Z",
       "firstSeen": "2026-11-12T03:23:31.347Z",
       "bestRank": 1
+    },
+    {
+      "key": "50462068",
+      "id": "50462068",
+      "headline": "Can Lane Kiffin and LSU save their playoff hopes?",
+      "summary": "There is understandably little patience at LSU this season. Lane Kiffin's chance to turn things around starts this weekend against Texas.",
+      "url": "https://www.espn.com/college-football/story/_/id/50462068/lane-kiffin-lsu-playoff-expectations",
+      "sport": "College football",
+      "published": "2026-11-13T12:25:58.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 3
     },
     {
       "key": "50462675",
@@ -46,17 +530,6 @@
       "bestRank": 1
     },
     {
-      "key": "50462413",
-      "id": "50462413",
-      "headline": "Connelly previews Week 11: 32 make-or-break showdowns",
-      "summary": "Week 11 brings SEC drama, Big 12 elimination games, and order vs. chaos in the Big Ten and ACC.",
-      "url": "https://www.espn.com/college-football/story/_/id/50462413/connelly-previews-week-11-texas-lsu",
-      "sport": "College football",
-      "published": "2026-11-13T12:22:34.000Z",
-      "firstSeen": "2026-11-13T12:26:44.690Z",
-      "bestRank": 2
-    },
-    {
       "key": "50462473",
       "id": "50462473",
       "headline": "Wake Forest shows football isn't a one-size-fits-all business",
@@ -68,15 +541,15 @@
       "bestRank": 3
     },
     {
-      "key": "50470402",
-      "id": "50470402",
-      "headline": "Live updates, reaction as Pochettino agrees USMNT exit for Man United",
-      "summary": "USMNT head coach Mauricio Pochettino is leaving to join Manchester United. Follow the story live with ESPN.",
-      "url": "https://www.espn.com/soccer/story/_/id/50470402/live-updates-mauricio-pochettino-usmnt-man-united",
+      "key": "50437253",
+      "id": "50437253",
+      "headline": "How Michael Carrick won the Manchester United job, then lost it 10 months later",
+      "summary": "Michael Carrick performed excellently as a caretaker and impressed the club hierarchy, but doubts over Manchester United's performances and identity never fully disappeared.",
+      "url": "https://www.espn.com/soccer/story/_/id/50437253/manchester-united-fire-michael-carrick-analysis",
       "sport": "Soccer",
-      "published": "2026-11-13T12:09:38.000Z",
-      "firstSeen": "2026-11-13T12:26:44.690Z",
-      "bestRank": 1
+      "published": "2026-11-13T12:16:52.000Z",
+      "firstSeen": "2026-11-12T12:27:50.367Z",
+      "bestRank": 5
     },
     {
       "key": "50462723",
@@ -90,39 +563,6 @@
       "bestRank": 9
     },
     {
-      "key": "50469660",
-      "id": "50469660",
-      "headline": "Man United confirm Mauricio Pochettino as Michael Carrick replacement",
-      "summary": "Mauricio Pochettino has been confirmed as Manchester United's new head coach.",
-      "url": "https://www.espn.com/soccer/story/_/id/50469660/man-united-mauricio-pochettino-manager-michael-carrick",
-      "sport": "Soccer",
-      "published": "2026-11-13T12:06:52.000Z",
-      "firstSeen": "2026-11-13T12:26:44.690Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50469742",
-      "id": "50469742",
-      "headline": "Transfer rumors, news: Man United eye USMNT's Balogun, Freeman for Pochettino",
-      "summary": "United States internationals Folarin Balogun and Alex Freeman could be following Mauricio Pochettino to Manchester United. Transfer Talk has the latest.",
-      "url": "https://www.espn.com/soccer/story/_/id/50469742/transfer-rumors-news-man-united-balogun-freeman-pochettino",
-      "sport": "Soccer",
-      "published": "2026-11-13T12:05:50.000Z",
-      "firstSeen": "2026-11-13T12:26:44.690Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50452091",
-      "id": "50452091",
-      "headline": "In Mauricio Pochettino, Manchester United have finally hired a proper manager",
-      "summary": "After years of near-misses, Man United have finally landed Mauricio Pochettino, a manager with the kind of pedigree, class and credibility the club have been looking for.",
-      "url": "https://www.espn.com/soccer/story/_/id/50452091/manchester-united-hire-mauricio-pochettino-reaction",
-      "sport": "Soccer",
-      "published": "2026-11-13T12:05:25.000Z",
-      "firstSeen": "2026-11-13T12:26:44.690Z",
-      "bestRank": 2
-    },
-    {
       "key": "50470161",
       "id": "50470161",
       "headline": "Why now is the right time for Man United and Pochettino",
@@ -130,17 +570,6 @@
       "url": "https://www.espn.com/video/clip/_/id/50470161/why-now-right-man-united-pochettino",
       "sport": "Soccer",
       "published": "2026-11-13T12:03:42.000Z",
-      "firstSeen": "2026-11-13T12:26:44.690Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50462993",
-      "id": "50462993",
-      "headline": "NFC North: Bears win division? Cousins has Vikes in command?",
-      "summary": "What will Kirk Cousins and Micah Parsons mean for the best division in football, or will the Bears hang on?",
-      "url": "https://www.espn.com/nfl/story/_/id/50462993/lions-packers-bears-vikings-nfc-north",
-      "sport": "NFL",
-      "published": "2026-11-13T11:58:13.000Z",
       "firstSeen": "2026-11-13T12:26:44.690Z",
       "bestRank": 5
     },
@@ -154,17 +583,6 @@
       "published": "2026-11-13T11:54:37.000Z",
       "firstSeen": "2026-09-18T12:37:10.966Z",
       "bestRank": 1
-    },
-    {
-      "key": "50463616",
-      "id": "50463616",
-      "headline": "Don't be surprised if Jordan Love makes history and Mendoza performs like a QB1",
-      "summary": "Elite WRs compensate for the lack of a run game in Green Bay, while there's unwarranted caution for Vegas' QB.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50463616/fantasy-football-start-sit-sleepers-breakouts-week-10",
-      "sport": "NFL",
-      "published": "2026-11-13T11:52:21.000Z",
-      "firstSeen": "2026-11-13T12:26:44.690Z",
-      "bestRank": 2
     },
     {
       "key": "50453355",
@@ -200,39 +618,6 @@
       "bestRank": 3
     },
     {
-      "key": "50463020",
-      "id": "50463020",
-      "headline": "Donovan Mitchell's renewed faith in Cleveland fuels the Cavs' future",
-      "summary": "Mitchell made two commitments this summer: his marriage and his extension with the Cavs. Now it's up to him to keep pushing Cleveland forward.",
-      "url": "https://www.espn.com/nba/story/_/id/50463020/donovan-mitchell-cleveland-cavaliers-extension",
-      "sport": "NBA",
-      "published": "2026-11-13T11:43:23.000Z",
-      "firstSeen": "2026-11-13T12:26:44.690Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50435678",
-      "id": "50435678",
-      "headline": "Fantasy football last-minute pickups: Twelve who can help in deep leagues",
-      "summary": "If injuries, bye weeks or tough matchups have you seeking lineup help, Matt Bowen lists potential options.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50435678/fantasy-football-streamers-last-minute-pickups-week-10",
-      "sport": "NFL",
-      "published": "2026-11-13T11:39:17.000Z",
-      "firstSeen": "2026-11-13T12:26:44.690Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50452966",
-      "id": "50452966",
-      "headline": "Mauricio Pochettino agrees Man United deal, announcement expected - sources",
-      "summary": "Mauricio Pochettino has agreed to become the next Manchester United manager with an announcement expected on Friday, sources have told ESPN.",
-      "url": "https://www.espn.com/soccer/story/_/id/50452966/mauricio-pochettino-man-united-deal-sources",
-      "sport": "Soccer",
-      "published": "2026-11-13T11:13:46.000Z",
-      "firstSeen": "2026-11-13T09:22:43.308Z",
-      "bestRank": 2
-    },
-    {
       "key": "50464709",
       "id": "50464709",
       "headline": "It's a battle for the AFC North: Steelers at Bengals Week 10 primer",
@@ -253,17 +638,6 @@
       "published": "2026-11-13T11:00:10.000Z",
       "firstSeen": "2026-11-13T12:26:44.690Z",
       "bestRank": 10
-    },
-    {
-      "key": "50463509",
-      "id": "50463509",
-      "headline": "Is Chuba Hubbard the biggest X factor to spark a Panthers turnaround?",
-      "summary": "Meet Carolina's team captain, a locker room leader and a relentless running back who is \"chasing greatness myself.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/50463509/chuba-hubbard-x-factor-spark-carolina-panthers",
-      "sport": "NFL",
-      "published": "2026-11-13T11:00:01.000Z",
-      "firstSeen": "2026-11-13T12:26:44.690Z",
-      "bestRank": 6
     },
     {
       "key": "50463496",
@@ -1331,17 +1705,6 @@
       "published": "2026-11-13T04:35:39.000Z",
       "firstSeen": "2026-11-13T06:29:58.507Z",
       "bestRank": 2
-    },
-    {
-      "key": "50467465",
-      "id": "50467465",
-      "headline": "Avalanche lose stars MacKinnon, Makar to 2nd-period injuries vs. Senators",
-      "summary": "Avalanche forward Nathan MacKinnon and defenseman Cale Makar both left Thursday's game against the Senators after suffering lower-body injuries in the second period.",
-      "url": "https://www.espn.com/nhl/story/_/id/50467465/avalanche-lose-stars-mackinnon-makar-injuries-vs-senators",
-      "sport": "NHL",
-      "published": "2026-11-13T04:35:09.000Z",
-      "firstSeen": "2026-11-13T03:23:36.979Z",
-      "bestRank": 8
     },
     {
       "key": "50466186",
@@ -2741,17 +3104,6 @@
       "bestRank": 1
     },
     {
-      "key": "50464810",
-      "id": "50464810",
-      "headline": "Cowboys' Porter: My absence is because of injury, not my contract",
-      "summary": "Cowboys CB Joey Porter Jr. wants it known his absence the past two weeks has everything to do with an ankle injury and nothing to do with a future contract.",
-      "url": "https://www.espn.com/nfl/story/_/id/50464810/cowboys-joey-porter-absence-due-injury-not-contract",
-      "sport": "NFL",
-      "published": "2026-11-12T22:27:43.000Z",
-      "firstSeen": "2026-11-13T00:40:41.870Z",
-      "bestRank": 12
-    },
-    {
       "key": "50464631",
       "id": "50464631",
       "headline": "Travis Hunter makes Jessie Bates' Jaguars trade a hit with his nephews",
@@ -2768,7 +3120,7 @@
       "headline": "2027 NFL draft Big Board rankings: Mel Kiper's top 25 prospects, best by position",
       "summary": "Seven quarterbacks ranked in the top 25? This NFL draft class could be fun. Mel Kiper Jr. stacks the best players on the board as we hit the midway mark of the college season.",
       "url": "https://www.espn.com/nfl/draft2027/story/_/id/50182998/2027-nfl-draft-rankings-kiper-big-board-top-prospects",
-      "sport": "College football",
+      "sport": "NFL",
       "published": "2026-11-12T22:00:32.000Z",
       "firstSeen": "2026-10-15T12:40:05.532Z",
       "bestRank": 1
@@ -3148,28 +3500,6 @@
       "bestRank": 19
     },
     {
-      "key": "49804022",
-      "id": "49804022",
-      "headline": "Fantasy football rankings for Week 10: Quarterback",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804022/nfl-fantasy-football-rankings-2026-qb-quarterback",
-      "sport": "NFL",
-      "published": "2026-11-12T17:49:06.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804068",
-      "id": "49804068",
-      "headline": "Fantasy football rankings for Week 10: Running back",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804068/nfl-fantasy-football-rankings-2026-rb-running-back",
-      "sport": "NFL",
-      "published": "2026-11-12T17:48:29.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 2
-    },
-    {
       "key": "50462110",
       "id": "50462110",
       "headline": "Where to watch NBA G League for the 2026-27 season",
@@ -3181,50 +3511,6 @@
       "bestRank": 4
     },
     {
-      "key": "49804149",
-      "id": "49804149",
-      "headline": "Fantasy football rankings for Week 10: Wide receiver",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804149/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
-      "sport": "NFL",
-      "published": "2026-11-12T17:44:26.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804233",
-      "id": "49804233",
-      "headline": "Fantasy football rankings for Week 10: Kicker",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804233/nfl-fantasy-football-rankings-2026-k-kicker",
-      "sport": "NFL",
-      "published": "2026-11-12T17:43:30.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804164",
-      "id": "49804164",
-      "headline": "Fantasy football rankings for Week 10: Tight end",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804164/nfl-fantasy-football-rankings-2026-te-tight-end",
-      "sport": "NFL",
-      "published": "2026-11-12T17:43:09.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 2
-    },
-    {
-      "key": "40699880",
-      "id": "40699880",
-      "headline": "Fantasy buzz: 12 players to target for the homestretch of the season",
-      "summary": "With D'Andre Swift and Rome Odunze both leaving practice early, fantasy managers might need to reconsider their strategy if drafting Thursday night.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "sport": "NFL",
-      "published": "2026-11-12T17:39:56.000Z",
-      "firstSeen": "2026-08-12T15:36:55.019Z",
-      "bestRank": 1
-    },
-    {
       "key": "50446940",
       "id": "50446940",
       "headline": "Fantasy football matchup ranks: Upgrade Ollie Gordon II, downgrade Jordan Love",
@@ -3233,28 +3519,6 @@
       "sport": "NFL",
       "published": "2026-11-12T17:39:17.000Z",
       "firstSeen": "2026-11-12T03:23:31.347Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49804332",
-      "id": "49804332",
-      "headline": "Fantasy football rankings for Week 10: IDP",
-      "summary": "Weekly fantasy football draft rankings for IDP leagues from Mike Clay, Tristan H. Cockcroft and Eric Moody.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804332/nfl-fantasy-football-rankings-2026-idp",
-      "sport": "NFL",
-      "published": "2026-11-12T17:36:46.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
-      "bestRank": 1
-    },
-    {
-      "key": "49804273",
-      "id": "49804273",
-      "headline": "Fantasy football rankings for Week 10: D/ST",
-      "summary": "Fantasy football rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-49804273/nfl-fantasy-football-rankings-2026-dst-defense",
-      "sport": "NFL",
-      "published": "2026-11-12T17:35:47.000Z",
-      "firstSeen": "2026-09-04T15:27:01.167Z",
       "bestRank": 3
     },
     {
@@ -3553,17 +3817,6 @@
       "published": "2026-11-12T15:40:18.000Z",
       "firstSeen": "2026-11-12T18:23:09.171Z",
       "bestRank": 1
-    },
-    {
-      "key": "50433086",
-      "id": "50433086",
-      "headline": "Fantasy playbook: Week 10 Shadow Reports, lineup locks and projected scores",
-      "summary": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50433086/fantasy-playbook-projections-lineup-locks-week-10-shadow",
-      "sport": "NFL",
-      "published": "2026-11-12T15:38:24.000Z",
-      "firstSeen": "2026-11-12T15:21:21.810Z",
-      "bestRank": 3
     },
     {
       "key": "50461316",
@@ -3960,17 +4213,6 @@
       "published": "2026-11-12T11:04:17.000Z",
       "firstSeen": "2026-11-12T15:21:21.810Z",
       "bestRank": 1
-    },
-    {
-      "key": "50437253",
-      "id": "50437253",
-      "headline": "How Michael Carrick won the Manchester United job, then lost it 10 months later",
-      "summary": "Michael Carrick performed excellently as a caretaker and impressed the club hierarchy, but doubts over Manchester United's performances and identity never fully disappeared.",
-      "url": "https://www.espn.com/soccer/story/_/id/50437253/manchester-united-fire-michael-carrick-analysis",
-      "sport": "Soccer",
-      "published": "2026-11-12T10:51:47.000Z",
-      "firstSeen": "2026-11-12T12:27:50.367Z",
-      "bestRank": 5
     },
     {
       "key": "50277466",
@@ -10727,17 +10969,6 @@
       "bestRank": 5
     },
     {
-      "key": "49803708",
-      "id": "49803708",
-      "headline": "Fantasy football flex and superflex rankings for Week 10",
-      "summary": "Trying to decide between a couple of closely ranked players this week? Eric Karabell's rankings are here to help.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49803708/fantasy-football-superflex-rankings-2026-qb-rb-wr-te",
-      "sport": "NFL",
-      "published": "2026-11-10T21:07:31.000Z",
-      "firstSeen": "2026-09-05T00:58:39.682Z",
-      "bestRank": 1
-    },
-    {
       "key": "50445267",
       "id": "50445267",
       "headline": "Texas lands Qandace Samuels, No. 10 prospect in class of '27",
@@ -11011,17 +11242,6 @@
       "published": "2026-11-10T18:55:26.000Z",
       "firstSeen": "2026-11-10T21:20:39.899Z",
       "bestRank": 6
-    },
-    {
-      "key": "49797082",
-      "id": "49797082",
-      "headline": "Fantasy football rankings Week 10: PPR and superflex",
-      "summary": "Weekly composite ranks for each position in PPR and IDP formats, as well as Eric Karabell's superflex ranks.",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26main-49797082/fantasy-football-rankings-2026-qb-rb-wr-te-dst",
-      "sport": "NFL",
-      "published": "2026-11-10T18:51:20.000Z",
-      "firstSeen": "2026-09-04T18:29:30.987Z",
-      "bestRank": 1
     },
     {
       "key": "49869463",
@@ -69244,292 +69464,6 @@
       "sport": "NFL",
       "published": "2026-10-23T15:21:51.000Z",
       "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50258094",
-      "id": "50258094",
-      "headline": "Yates: A.J. Brown becoming one of the most disappointing players in fantasy",
-      "summary": "Yates: A.J. Brown becoming one of the most disappointing players in fantasy",
-      "url": "https://www.espn.com/video/clip/_/id/50258094/aj-brown-becoming-one-most-disappointing-players-fantasy",
-      "sport": "NFL",
-      "published": "2026-10-23T15:16:17.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50258251",
-      "id": "50258251",
-      "headline": "Highest-earning Premier League clubs to pay up to £1.8m towards independent regulator cost",
-      "summary": "The highest-earning Premier League clubs will pay up to £1.8million towards the cost of the independent football regulator (IFR) from next summer -- but could face paying much higher amounts in the years ahead.",
-      "url": "https://www.espn.com/soccer/story/_/id/50258251/highest-earning-premier-league-clubs-pay-18m-towards-independent-regulator-cost",
-      "sport": "Soccer",
-      "published": "2026-10-23T15:14:52.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50258264",
-      "id": "50258264",
-      "headline": "Man United boss Michael Carrick gives emotional address to media",
-      "summary": "Man United boss Michael Carrick gives emotional address to media",
-      "url": "https://www.espn.com/video/clip/_/id/50258264/man-united-boss-michael-carrick-gives-emotional-address-media",
-      "sport": "Soccer",
-      "published": "2026-10-23T15:12:26.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50258231",
-      "id": "50258231",
-      "headline": "Why Stephen A. believes Sarkisian has been 'pacifying' Arch Manning",
-      "summary": "Why Stephen A. believes Sarkisian has been 'pacifying' Arch Manning",
-      "url": "https://www.espn.com/video/clip/_/id/50258231/why-stephen-believes-sarkisian-pacifying-arch-manning",
-      "sport": "College football",
-      "published": "2026-10-23T15:12:07.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50254942",
-      "id": "50254942",
-      "headline": "Appalachian State hands James Madison first loss of season",
-      "summary": "James London kicked a 40-yard field goal in overtime to give Appalachian State the win Thursday night and leave just five unbeaten teams in the FBS.",
-      "url": "https://www.espn.com/college-football/story/_/id/50254942/appalachian-state-james-madison-first-loss-over",
-      "sport": "College football",
-      "published": "2026-10-23T15:06:05.000Z",
-      "firstSeen": "2026-10-23T06:44:23.100Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50258115",
-      "id": "50258115",
-      "headline": "Stephen A.: 76ers' biggest strength is their togetherness as a team",
-      "summary": "Stephen A.: 76ers' biggest strength is their togetherness as a team",
-      "url": "https://www.espn.com/video/clip/_/id/50258115/76ers-biggest-strength-their-togetherness-team",
-      "sport": "NBA",
-      "published": "2026-10-23T14:49:49.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50258109",
-      "id": "50258109",
-      "headline": "Top-ranked Elena Rybakina avoids upset at Ningbo Open",
-      "summary": "Top-ranked Elena Rybakina avoided a major upset as she was pushed to a deciding set by qualifier Katarzyna Kawa in the quarterfinals of the Ningbo Open.",
-      "url": "https://www.espn.com/tennis/story/_/id/50258109/top-ranked-elena-rybakina-avoids-upset-ningbo-open",
-      "sport": "Tennis",
-      "published": "2026-10-23T14:46:18.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50257430",
-      "id": "50257430",
-      "headline": "Carrick refuses to rule out dropping Bruno Fernandes for Man United clash with Bournemouth",
-      "summary": "Michael Carrick has refused to rule out dropping Bruno Fernandes for Bournemouth's visit to Old Trafford on Sunday after the Manchester United captain appeared to criticise his tactics following the defeat to Como.",
-      "url": "https://www.espn.com/soccer/story/_/id/50257430/carrick-refuses-rule-dropping-bruno-fernandes-man-united-clash-bournemouth",
-      "sport": "Soccer",
-      "published": "2026-10-23T14:29:36.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50258019",
-      "id": "50258019",
-      "headline": "Stephen A. makes big Super Bowl claim about 'superstar' Caleb Williams",
-      "summary": "Stephen A. makes big Super Bowl claim about 'superstar' Caleb Williams",
-      "url": "https://www.espn.com/video/clip/_/id/50258019/stephen-makes-big-super-bowl-claim-superstar-caleb-williams",
-      "sport": "NFL",
-      "published": "2026-10-23T14:24:18.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 14
-    },
-    {
-      "key": "50252581",
-      "id": "50252581",
-      "headline": "Fantasy's greatest tight end enshrined in ESPN Fantasy Football Hall of Fame",
-      "summary": "Tony Gonzalez' 3,500 career fantasy points are more than 500 more than the next-best tight end.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50252581/fantasy-football-hall-fame-tony-gonzalez",
-      "sport": "NFL",
-      "published": "2026-10-23T14:19:07.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 16
-    },
-    {
-      "key": "50257409",
-      "id": "50257409",
-      "headline": "What are the biggest storylines of the World Series?",
-      "summary": "What are the biggest storylines of the World Series?",
-      "url": "https://www.espn.com/video/clip/_/id/50257409/what-biggest-storylines-world-series",
-      "sport": "MLB",
-      "published": "2026-10-23T14:12:35.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50252562",
-      "id": "50252562",
-      "headline": "Welcome to 'roofball': Your guide to an all-dome World Series",
-      "summary": "This year's World Series features the two teams with the best records in their respective leagues -- who both also call domed stadiums home.",
-      "url": "https://www.espn.com/mlb/story/_/id/50252562/mlb-world-series-brewers-rays-roofball",
-      "sport": "MLB",
-      "published": "2026-10-23T14:08:40.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50257788",
-      "id": "50257788",
-      "headline": "Orlovsky: It's 'scary' we still haven't seen the best version of Caleb Williams yet",
-      "summary": "Orlovsky: It's 'scary' we still haven't seen the best version of Caleb Williams yet",
-      "url": "https://www.espn.com/video/clip/_/id/50257788/scary-seen-best-version-caleb-williams-yet",
-      "sport": "NFL",
-      "published": "2026-10-23T13:50:44.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 17
-    },
-    {
-      "key": "50257331",
-      "id": "50257331",
-      "headline": "After two opposite fights, what should be expected from Yan vs. Dvalishvili 3",
-      "summary": "Merab Dvalishvili has tweaked his fight plan, while Yan has gone all-in on his. Which strategy will win out?",
-      "url": "https://www.espn.com/mma/story/_/id/50257331/petr-yan-merab-dvalishvili-trilogy",
-      "sport": "MMA",
-      "published": "2026-10-23T13:47:33.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50257324",
-      "id": "50257324",
-      "headline": "Michael Carrick: Under-pressure Man United boss '100%' backs himself amid tension",
-      "summary": "Manchester United head coach Michael Carrick started his news conference with a speech that lasted more than five minutes as he tried to rally his players ahead of the crucial Premier League clash against Bournemouth.",
-      "url": "https://www.espn.com/soccer/story/_/id/50257324/michael-carrick-pressure-man-united-boss-backs-amid-tension",
-      "sport": "Soccer",
-      "published": "2026-10-23T13:35:55.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50251843",
-      "id": "50251843",
-      "headline": "What's led to Titans' recent success? Under center",
-      "summary": "Titans run the ball better from under center, so why not put it into practice more?",
-      "url": "https://www.espn.com/nfl/story/_/id/50251843/tennessee-titans-center-success",
-      "sport": "NFL",
-      "published": "2026-10-23T13:34:50.000Z",
-      "firstSeen": "2026-10-23T12:38:27.904Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50257425",
-      "id": "50257425",
-      "headline": "What happens to Steve Sarkisian if Texas loses to Ole Miss?",
-      "summary": "What happens to Steve Sarkisian if Texas loses to Ole Miss?",
-      "url": "https://www.espn.com/video/clip/_/id/50257425/what-happens-steve-sarkisian-texas-loses-ole-miss",
-      "sport": "College football",
-      "published": "2026-10-23T13:19:00.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50250930",
-      "id": "50250930",
-      "headline": "Miami's 2001 throwbacks lead best Week 8 uniforms in college football",
-      "summary": "The Hurricanes are the No. 1 team in the country for the first time in over two decades, and they're honoring the early-2000s glory days with their Week 8 threads.",
-      "url": "https://www.espn.com/college-football/story/_/id/50250930/college-football-week-8-uniforms-miami-throwback",
-      "sport": "College football",
-      "published": "2026-10-23T13:09:45.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 3
-    },
-    {
-      "key": "47654986",
-      "id": "47654986",
-      "headline": "From the BCS to the CFP: Trends from Miami's last time as AP No. 1",
-      "summary": "Miami's return to the the top of the AP Poll marks its first No. 1 ranking since January 2003 -- when sports and pop culture looked far different.",
-      "url": "https://www.espn.com/college-football/story/_/id/47654986/miami-hurricanes-2003-national-title-sports-entertainment-trends",
-      "sport": "College football",
-      "published": "2026-10-23T13:08:46.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50257301",
-      "id": "50257301",
-      "headline": "Is this the greatest 'Who He Play For?' of all time?",
-      "summary": "Is this the greatest 'Who He Play For?' of all time?",
-      "url": "https://www.espn.com/video/clip/_/id/50257301/is-greatest-play-all",
-      "sport": "NBA",
-      "published": "2026-10-23T12:50:30.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50241622",
-      "id": "50241622",
-      "headline": "NBA opening week intel: New trend in contract talks; OKC's pricey future",
-      "summary": "Why star contract negotiations have shifted, why OKC is preparing for more roster changes and more intel from opening week.",
-      "url": "https://www.espn.com/nba/story/_/id/50241622/contract-talks-thunder-payroll-opening-week",
-      "sport": "NBA",
-      "published": "2026-10-23T12:50:26.000Z",
-      "firstSeen": "2026-10-23T12:38:27.904Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50253673",
-      "id": "50253673",
-      "headline": "Marshall Faulk, Hall of Famer and Southern coach, reveals Parkinson's diagnosis",
-      "summary": "Marshall Faulk said that in discussing his illness in a podcast appearance Wednesday, \"I want to help as many people as I can.\"",
-      "url": "https://www.espn.com/nfl/story/_/id/50253673/marshall-faulk-hall-famer-southern-coach-parkinsons",
-      "sport": "College football",
-      "published": "2026-10-23T12:47:10.000Z",
-      "firstSeen": "2026-10-23T01:01:20.773Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50257222",
-      "id": "50257222",
-      "headline": "'Good Morning Football' sends best wishes to Faulk after Parkinson's diagnosis",
-      "summary": "'Good Morning Football' sends best wishes to Faulk after Parkinson's diagnosis",
-      "url": "https://www.espn.com/video/clip/_/id/50257222/good-morning-football-sends-best-wishes-faulk-parkinson-diagnosis",
-      "sport": "NFL",
-      "published": "2026-10-23T12:46:36.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 19
-    },
-    {
-      "key": "50257232",
-      "id": "50257232",
-      "headline": "Is this LeBron's best start with a new team?",
-      "summary": "Is this LeBron's best start with a new team?",
-      "url": "https://www.espn.com/video/clip/_/id/50257232/is-lebron-best-start-new-team",
-      "sport": "NBA",
-      "published": "2026-10-23T12:43:33.000Z",
-      "firstSeen": "2026-10-23T15:30:59.559Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50250199",
-      "id": "50250199",
-      "headline": "What to know for Week 7: Start Stroud, one WR to trade for and one to trade away",
-      "summary": "Faced with some tough start/sit decisions ahead of Week 7? Adam Rank has you covered at every position.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50250199/fantasy-football-start-sit-decisions-week-7",
-      "sport": "NFL",
-      "published": "2026-10-23T12:28:44.000Z",
-      "firstSeen": "2026-10-23T12:38:27.904Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50257103",
-      "id": "50257103",
-      "headline": "How important is a win for Ole Miss' and Texas' CFP hopes?",
-      "summary": "How important is a win for Ole Miss' and Texas' CFP hopes?",
-      "url": "https://www.espn.com/video/clip/_/id/50257103/how-important-win-ole-miss-texas-cfp-hopes",
-      "sport": "College football",
-      "published": "2026-10-23T12:26:50.000Z",
-      "firstSeen": "2026-10-23T12:38:27.904Z",
       "bestRank": 1
     }
   ]
