@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-11-14T03:22:17.119Z",
+  "generatedAt": "2026-11-14T06:27:19.815Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-24T03:22:17.119Z",
-  "windowEnd": "2026-11-14T03:22:17.119Z",
+  "windowStart": "2026-10-24T06:27:19.815Z",
+  "windowEnd": "2026-11-14T06:27:19.815Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,932 @@
     "Tennis",
     "MMA"
   ],
-  "count": 6321,
+  "count": 6376,
   "items": [
+    {
+      "key": "50477867",
+      "id": "50477867",
+      "headline": "Giannis Antetokounmpo, Bam Adebayo help showcase Heat's potential in win vs. Cavs",
+      "summary": "Giannis Antetokounmpo and Bam Adebayo each scored 37 points to help the Heat top the Cavs for their sixth win in eight games.",
+      "url": "https://www.espn.com/nba/story/_/id/50477867/giannis-antetokounmpo-bam-adebayo-shine-heat-take-cavs",
+      "sport": "NBA",
+      "published": "2026-11-14T06:19:43.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50477870",
+      "id": "50477870",
+      "headline": "Southern Utah Thunderbirds vs. Portland State Vikings: Full Highlights",
+      "summary": "Southern Utah Thunderbirds vs. Portland State Vikings: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477870/full-highlights",
+      "sport": "College football",
+      "published": "2026-11-14T06:17:53.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50477831",
+      "id": "50477831",
+      "headline": "Oklahoma City Thunder vs. LA Clippers: Game Highlights",
+      "summary": "Oklahoma City Thunder vs. LA Clippers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477831/game-highlights",
+      "sport": "NBA",
+      "published": "2026-11-14T06:14:31.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50477832",
+      "id": "50477832",
+      "headline": "Roman Josi lifts Predators past Golden Knights 3-2 in shootout for seventh straight win",
+      "summary": "— Roman Josi scored the deciding goal in the fourth round of a shootout as the Nashville Predators beat the Vegas Golden Knights 3-2 Friday night for their seventh straight win.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892707",
+      "sport": "NHL",
+      "published": "2026-11-14T06:08:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50477791",
+      "id": "50477791",
+      "headline": "Mohamed Diakite scores 24 to lead East Texas A&M over Portland 94-88 in 2OT",
+      "summary": "— Mohamed Diakite scored 24 points and East Texas A&M outlasted Portland 94-88 in double overtime on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401917527",
+      "sport": "College basketball",
+      "published": "2026-11-14T06:01:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50474340",
+      "id": "50474340",
+      "headline": "Sources: San Jose Earthquakes sold for $625 million to Heath Freeman",
+      "summary": "Alden Global Capital co-founder Heath Freeman is purchasing the San Jose Earthquakes from John Fisher, following MLS owners' approval of the sale on Thursday.",
+      "url": "https://www.espn.com/soccer/story/_/id/50474340/san-jose-earthquakes-sold-625-million-heath-freeman",
+      "sport": "Soccer",
+      "published": "2026-11-14T05:59:42.000Z",
+      "firstSeen": "2026-11-14T00:38:22.881Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50477774",
+      "id": "50477774",
+      "headline": "No. 4 UCLA remains unbeaten with 22-14 victory over Illinois at Rose Bowl",
+      "summary": "— Ty Dieffenbach threw for 232 yards and two touchdowns and overcame a left shoulder injury that sidelined him, and No. 4 UCLA remained unbeaten with a rain-soaked, 22-14 victory over Illinois on Friday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401858526",
+      "sport": "College football",
+      "published": "2026-11-14T05:55:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50477500",
+      "id": "50477500",
+      "headline": "No. 12 Arizona gets big game from freshman Caleb Holt in 80-69 victory at Auburn",
+      "summary": "— Freshman guard Caleb Holt had 24 points and nine rebounds, and No. 12 Arizona took over down the stretch to turn back Auburn's second-half rally in an 80-69 victory Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401909741",
+      "sport": "College basketball",
+      "published": "2026-11-14T05:54:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50477769",
+      "id": "50477769",
+      "headline": "Arkansas-Pine Bluff Golden Lions vs. California Baptist Lancers: Game Highlights",
+      "summary": "Arkansas-Pine Bluff Golden Lions vs. California Baptist Lancers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477769/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T05:54:34.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50477761",
+      "id": "50477761",
+      "headline": "G League's Keyshawn Bryant leapfrogs opponent for dunk-of-the-year contender",
+      "summary": "G League's Keyshawn Bryant leapfrogs opponent for dunk-of-the-year contender",
+      "url": "https://www.espn.com/video/clip/_/id/50477761/g-league-keyshawn-bryant-leapfrogs-opponent-dunk-year-contender",
+      "sport": "NBA",
+      "published": "2026-11-14T05:54:15.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50477755",
+      "id": "50477755",
+      "headline": "East Texas A&M Lions vs. Portland Pilots: Game Highlights",
+      "summary": "East Texas A&M Lions vs. Portland Pilots: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477755/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T05:52:08.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50477713",
+      "id": "50477713",
+      "headline": "Portland Trail Blazers vs. Sacramento Kings: Game Highlights",
+      "summary": "Portland Trail Blazers vs. Sacramento Kings: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477713/game-highlights",
+      "sport": "NBA",
+      "published": "2026-11-14T05:51:30.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50477559",
+      "id": "50477559",
+      "headline": "Angels, catcher Tyler Heineman avoid arbitration with 1-year contract",
+      "summary": "Veteran catcher Tyler Heineman and the Los Angeles Angels have agreed to a one-year contract for $1,237,500, the same salary he made this year.",
+      "url": "https://www.espn.com/mlb/story/_/id/50477559/angels-tyler-heineman-avoid-arbitration-1-year-deal",
+      "sport": "MLB",
+      "published": "2026-11-14T05:51:07.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50477249",
+      "id": "50477249",
+      "headline": "UCLA's Ty Dieffenbach leaves with injury vs. Illinois but returns to game",
+      "summary": "UCLA starting quarterback Ty Dieffenbach exited with a shoulder injury late in the second quarter of Friday's game against Illinois, but returned on the Bruins' second drive of the half.",
+      "url": "https://www.espn.com/college-football/story/_/id/50477249/ucla-qb-ty-dieffenbach-leaves-game-injury",
+      "sport": "College football",
+      "published": "2026-11-14T05:48:56.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50477613",
+      "id": "50477613",
+      "headline": "Brayden Shorter, Brigham Rogers lead Murray State to 99-78 victory over Texas Southern",
+      "summary": "— Brayden Shorter had 21 points and Brigham Rogers posted a double-double in Murray State’s 99-78 victory over Texas Southern on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401927380",
+      "sport": "College basketball",
+      "published": "2026-11-14T05:35:34.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50477612",
+      "id": "50477612",
+      "headline": "Where No. 22 Missouri stands against an electric No. 1 Georgia offense?",
+      "summary": "The SEC Nation crew analyze the dominance behind the Bulldogs' offensive unit as they discuss what the Tigers must keep in mind in order to have a chance to come out with a win.",
+      "url": "https://www.espn.com/video/clip/_/id/50477612/where-no-22-missouri-stands-electric-no-1-georgia-offense",
+      "sport": "College football",
+      "published": "2026-11-14T05:35:29.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50477607",
+      "id": "50477607",
+      "headline": "Heather Dinich picks how many SEC teams make the CFP field",
+      "summary": "ESPN's Dinich joins SEC Now ahead of Week 11 to preview some of the most consequential matchups and discuss the path to the CFP for Kentucky, Ole Miss and LSU.",
+      "url": "https://www.espn.com/video/clip/_/id/50477607/heather-dinich-picks-how-many-sec-teams-make-cfp-field",
+      "sport": "College football",
+      "published": "2026-11-14T05:33:29.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49577473",
+      "id": "49577473",
+      "headline": "2026 NBA Cup: Schedule, format, groups, updates and more",
+      "summary": "Here's everything you need to know about the fourth annual in-season tournament, including the recent wins from the Pacers and the Spurs.",
+      "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
+      "sport": "NBA",
+      "published": "2026-11-14T05:32:41.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50477604",
+      "id": "50477604",
+      "headline": "Trail Blazers beat Kings 120-107 in NBA Cup play for third straight win",
+      "summary": "— Deni Avdija scored 34 points and the Portland Trail Blazers beat the Sacramento Kings 120-107 on Friday night in NBA Cup play to open a six-game trip with their third straight victory.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909303",
+      "sport": "NBA",
+      "published": "2026-11-14T05:32:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50477591",
+      "id": "50477591",
+      "headline": "San Diego beats Chicago State 87-67 behind 18 points from Jevon Hill",
+      "summary": "— Jevon Hill scored 18 points and San Diego beat Chicago State 87-67 on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401917526",
+      "sport": "College basketball",
+      "published": "2026-11-14T05:28:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50477565",
+      "id": "50477565",
+      "headline": "Analyzing where LSU must improve in red zone against Texas",
+      "summary": "SEC Network's Benjamin Watson takes a look at the No. 21 Tigers' performance in the red zone as he discusses where they must get better if they want to beat the No. 6 Longhorns.",
+      "url": "https://www.espn.com/video/clip/_/id/50477565/analyzing-where-lsu-improve-red-zone-texas",
+      "sport": "College football",
+      "published": "2026-11-14T05:23:21.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50477562",
+      "id": "50477562",
+      "headline": "Latest updates on how the FAA ground stop will affect college football",
+      "summary": "The SEC Now crew provides updates on how games are being affected by transportation issues as Chris Doering and Benjamin Watson analyze the impact on players.",
+      "url": "https://www.espn.com/video/clip/_/id/50477562/latest-updates-how-faa-ground-stop-affect-college-football",
+      "sport": "College football",
+      "published": "2026-11-14T05:22:00.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50477143",
+      "id": "50477143",
+      "headline": "Grizzlies have record-tying 10 double-figure scorers in 142-111 romp over Pelicans in NBA Cup play",
+      "summary": "— Jerami Grant scored 22 points, including seven points on an extended possession in the first half, and the Memphis Grizzlies routed the New Orleans Pelicans 142-111 in NBA Cup group play Friday night.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909300",
+      "sport": "NBA",
+      "published": "2026-11-14T05:20:34.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50477468",
+      "id": "50477468",
+      "headline": "Alperen Sengun's 43-point double-double lifts Rockets over Jazz",
+      "summary": "Alperen Sengun's 43-point double-double lifts Rockets over Jazz",
+      "url": "https://www.espn.com/video/clip/_/id/50477468/alperen-sengun-43-point-double-double-lifts-rockets-jazz",
+      "sport": "NBA",
+      "published": "2026-11-14T05:16:29.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50477506",
+      "id": "50477506",
+      "headline": "Castle scores season-high 32 points as Spurs stop the Warriors 123-85 for 11th straight win",
+      "summary": "— Stephon Castle scored a season-high 32 points, Victor Wembanyama had 12 points and 12 rebounds and the San Antonio Spurs won their 11th straight game, rolling past the Golden State Warriors 123-85 Friday night to remain unbeaten in NBA Cup play.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909302",
+      "sport": "NBA",
+      "published": "2026-11-14T05:14:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50477438",
+      "id": "50477438",
+      "headline": "Spurs blowout Curry-less Warriors 123-85",
+      "summary": "Spurs blowout Curry-less Warriors 123-85",
+      "url": "https://www.espn.com/video/clip/_/id/50477438/spurs-blowout-curry-less-warriors-123-85",
+      "sport": "NBA",
+      "published": "2026-11-14T05:07:47.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50477470",
+      "id": "50477470",
+      "headline": "Hamad Mousa scores 19 points to help Cal Poly turn back Idaho 83-74",
+      "summary": "— Hamad Mousa had 19 points to lead Cal Poly to an 83-74 victory over Idaho on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401920123",
+      "sport": "College basketball",
+      "published": "2026-11-14T05:06:37.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50477464",
+      "id": "50477464",
+      "headline": "Sellers, Terrell lead SMU in big first half in 90-65 win over Ball State",
+      "summary": "— Oziyah Sellers scored 21 points and David Terrell Jr. scored 16 points and SMU beat Ball State 90-65 on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401911014",
+      "sport": "College basketball",
+      "published": "2026-11-14T05:05:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50477463",
+      "id": "50477463",
+      "headline": "UIC Flames vs. Saint Mary's Gaels: Game Highlights",
+      "summary": "UIC Flames vs. Saint Mary's Gaels: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477463/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T05:05:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50477443",
+      "id": "50477443",
+      "headline": "Grant Stubblefield scores 18 to guide Omaha to 67-56 victory over Lindenwood",
+      "summary": "— Grant Stubblefield had 18 points to guide Omaha to a 67-56 victory over Lindenwood on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401929040",
+      "sport": "College basketball",
+      "published": "2026-11-14T05:01:34.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50477437",
+      "id": "50477437",
+      "headline": "Stanford Cardinal vs. Santa Clara Broncos: Game Highlights",
+      "summary": "Stanford Cardinal vs. Santa Clara Broncos: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477437/game-highlights",
+      "sport": "Women's college basketball",
+      "published": "2026-11-14T05:00:46.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50477426",
+      "id": "50477426",
+      "headline": "Glenn Gawdin scores his first 2 NHL goals in the Rangers' 5-1 victory over the Canucks",
+      "summary": "— Glenn Gawdin scored his first two NHL goals in New York's four-goal second period and the Rangers won for the first time this season when allowing the first goal, beating the Vancouver Canucks 5-1 on Friday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892706",
+      "sport": "NHL",
+      "published": "2026-11-14T04:57:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50477419",
+      "id": "50477419",
+      "headline": "Isak Homelius scores 20 to lead Eastern Washington over NAIA's Corban 102-68",
+      "summary": "— Isak Homelius scored 20 points to help Eastern Washington defeat NAIA member Corban 102-68 on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401920719",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:56:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50477411",
+      "id": "50477411",
+      "headline": "Giddey's triple-double guides Bulls home",
+      "summary": "A breakthrough triple double for Josh Giddey snaps the Chicago Bulls' eight-game losing streak in an overtime win over Dyson Daniels' Atlanta Hawks.",
+      "url": "https://www.espn.com/video/clip/_/id/50477411/giddey-triple-double-guides-bulls-home",
+      "sport": "NBA",
+      "published": "2026-11-14T04:55:28.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50477400",
+      "id": "50477400",
+      "headline": "Tru Washington scores 21 points and Xavier tops Mississippi State 81-63",
+      "summary": "— Tru Washington scored 21 points and Xavier defeated Mississippi State 81-63 on Friday night at the Greenbrier Tip-Off.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401906794",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:51:56.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50477395",
+      "id": "50477395",
+      "headline": "New York Rangers vs. Vancouver Canucks: Game Highlights",
+      "summary": "New York Rangers vs. Vancouver Canucks: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477395/game-highlights",
+      "sport": "NHL",
+      "published": "2026-11-14T04:51:26.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50477117",
+      "id": "50477117",
+      "headline": "Florida State fends off Pitt 16-10 to improve to 2-0 under interim coach Rick Stockstill",
+      "summary": "— Ashton Daniels passed for 163 yards, Gabe Panikowski kicked three field goals, and Florida State's defense did the rest as the Seminoles edged Pittsburgh 16-10 on Friday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401858293",
+      "sport": "College football",
+      "published": "2026-11-14T04:47:37.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50477383",
+      "id": "50477383",
+      "headline": "Cooke scores 22, No. 24 West Virginia women beat Northwestern 66-53 at Greenbrier Tip-Off",
+      "summary": "— Gia Cooke scored 22 points, Zahirah Walton had 16 points and six steals and No. 24 West Virginia never trailed as the Mountaineers beat Northwestern 66-53 on Friday at the Greenbrier Tip-Off.",
+      "url": "http://www.espn.com/ncw/recap?gameId=401907166",
+      "sport": "Women's college basketball",
+      "published": "2026-11-14T04:47:34.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50477381",
+      "id": "50477381",
+      "headline": "Chicago State Cougars vs. San Diego Toreros: Game Highlights",
+      "summary": "Chicago State Cougars vs. San Diego Toreros: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477381/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:46:39.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50475169",
+      "id": "50475169",
+      "headline": "FAA ground stop throws sports world into travel chaos ahead of weekend games",
+      "summary": "Travel plans for multiple college football teams have been disrupted by the FAA's nationwide ground stop of all flights because of communications problems.",
+      "url": "https://www.espn.com/college-football/story/_/id/50475169/faa-ground-stop-disrupting-travel-college-football-teams",
+      "sport": "Women's college basketball",
+      "published": "2026-11-14T04:43:39.000Z",
+      "firstSeen": "2026-11-14T00:38:22.881Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50477364",
+      "id": "50477364",
+      "headline": "Alperin Sengun scores 43 points to power Rockets past skidding Jazz 125-118",
+      "summary": "— Alperin Sengun scored 43 points and pulled down 12 rebounds as the Houston Rockets held off Utah 125-118 in NBA Cup play Friday night, handing the Jazz their 11th consecutive loss.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909301",
+      "sport": "NBA",
+      "published": "2026-11-14T04:40:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50477275",
+      "id": "50477275",
+      "headline": "Utah Jazz vs. Houston Rockets: Game Highlights",
+      "summary": "Utah Jazz vs. Houston Rockets: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477275/game-highlights",
+      "sport": "NBA",
+      "published": "2026-11-14T04:39:32.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50472000",
+      "id": "50472000",
+      "headline": "Commanders QB Sam Hartman to star as 'The Bachelor' in milestone 30th season",
+      "summary": "The 30th season of ABC's \"The Bachelor\" that will premiere in March 2027 will star the former Notre Dame standout.",
+      "url": "https://www.espn.com/nfl/story/_/id/50472000/sam-hartman-bachelor-season-30",
+      "sport": "NFL",
+      "published": "2026-11-14T04:39:19.000Z",
+      "firstSeen": "2026-11-13T18:21:18.299Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50477355",
+      "id": "50477355",
+      "headline": "Ball State Cardinals vs. SMU Mustangs: Game Highlights",
+      "summary": "Ball State Cardinals vs. SMU Mustangs: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477355/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:38:16.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50477319",
+      "id": "50477319",
+      "headline": "Arizona Wildcats vs. Auburn Tigers: Game Highlights",
+      "summary": "Arizona Wildcats vs. Auburn Tigers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477319/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:30:18.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50477289",
+      "id": "50477289",
+      "headline": "UNLV gets tough down the stretch, tops Stanford 76-68",
+      "summary": "— Cam Miles scored 17 points and UNLV held off a late rally to defeat Stanford 76-68 on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401921728",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:26:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 16
+    },
+    {
+      "key": "50477207",
+      "id": "50477207",
+      "headline": "Powell scores 33 as the Bulls snap 8-game skid, beating the Hawks 125-117 in OT",
+      "summary": "— Norman Powell scored nine of his 33 points in overtime and the Chicago Bulls snapped an eight-game skid with a 125-117 victory over the Atlanta Hawks in an NBA Cup game Friday night.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909299",
+      "sport": "NBA",
+      "published": "2026-11-14T04:25:44.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50477284",
+      "id": "50477284",
+      "headline": "Seton Hall Pirates vs. Alabama Crimson Tide: Game Highlights",
+      "summary": "Seton Hall Pirates vs. Alabama Crimson Tide: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477284/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:25:18.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 17
+    },
+    {
+      "key": "50477279",
+      "id": "50477279",
+      "headline": "Amari Allen scores 24 as No. 18 Alabama holds off Seton Hall 82-76",
+      "summary": "— Amari Allen scored 24 points and No. 18 Alabama used a 20-0 run spanning halftime to erase a six-point deficit on the way to an 82-76 win over Seton Hall on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401906760",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:24:36.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 18
+    },
+    {
+      "key": "50477268",
+      "id": "50477268",
+      "headline": "Ron Jessamy scores 15 as Texas State beats Southern Mississippi 85-65",
+      "summary": "— Ron Jessamy's 15 points off of the bench helped Texas State to an 85-65 victory over Southern Mississippi on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401929199",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:22:34.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 19
+    },
+    {
+      "key": "50477257",
+      "id": "50477257",
+      "headline": "Pop Isaacs describes how Oklahoma is playing more connected offensively",
+      "summary": "Coming off a 17-point performance in the win against FDU, Isaacs explains how the Sooners' advanced chemistry is helping them on the offensive end.",
+      "url": "https://www.espn.com/video/clip/_/id/50477257/pop-isaacs-describes-how-oklahoma-playing-more-connected-offensively",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:22:27.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 20
+    },
+    {
+      "key": "50477238",
+      "id": "50477238",
+      "headline": "Cal Poly Mustangs vs. Idaho Vandals: Game Highlights",
+      "summary": "Cal Poly Mustangs vs. Idaho Vandals: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477238/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:17:36.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 21
+    },
+    {
+      "key": "50477232",
+      "id": "50477232",
+      "headline": "Princeton Tigers vs. Pepperdine Waves: Game Highlights",
+      "summary": "Princeton Tigers vs. Pepperdine Waves: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477232/game-highlights",
+      "sport": "Women's college basketball",
+      "published": "2026-11-14T04:14:08.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50477230",
+      "id": "50477230",
+      "headline": "DePaul Blue Demons vs. Northwestern Wildcats: Game Highlights",
+      "summary": "DePaul Blue Demons vs. Northwestern Wildcats: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477230/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:13:23.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 22
+    },
+    {
+      "key": "50477223",
+      "id": "50477223",
+      "headline": "Corban University Warriors vs. Eastern Washington Eagles: Game Highlights",
+      "summary": "Corban University Warriors vs. Eastern Washington Eagles: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477223/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:12:23.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 23
+    },
+    {
+      "key": "50477173",
+      "id": "50477173",
+      "headline": "Rangers take commanding lead with four-goal second period",
+      "summary": "Rangers take commanding lead with four-goal second period",
+      "url": "https://www.espn.com/video/clip/_/id/50477173/rangers-take-commanding-lead-four-goal-second-period",
+      "sport": "NHL",
+      "published": "2026-11-14T04:06:45.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50477202",
+      "id": "50477202",
+      "headline": "McClure and Cotton lift DePaul to 67-47 win over Northwestern",
+      "summary": "— Kruz McClure scored 18 points and Koree Cotton added 15 as DePaul defeated crosstown foe Northwestern 67-47 on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401909503",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:06:34.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 24
+    },
+    {
+      "key": "50477186",
+      "id": "50477186",
+      "headline": "UL Monroe Warhawks vs. Arizona State Sun Devils: Game Highlights",
+      "summary": "UL Monroe Warhawks vs. Arizona State Sun Devils: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477186/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:05:03.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 25
+    },
+    {
+      "key": "50477181",
+      "id": "50477181",
+      "headline": "Emmou scores 17, Tarleton State takes down Alcorn State 73-69",
+      "summary": "— Franck Emmou’s 17 points helped Tarleton State defeat Alcorn State 73-69 on Friday.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401925686",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:04:34.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 26
+    },
+    {
+      "key": "50475505",
+      "id": "50475505",
+      "headline": "Seahawks are hurting with injuries, but two players will return vs. Raiders",
+      "summary": "QB Drew Lock will start again for Darnold. And LB Uchenna Nwosu and WR Rashid Shaheed will return to the field in Las Vegas.",
+      "url": "https://www.espn.com/nfl/story/_/id/50475505/seahawks-raiders-week-10-darnold-lock-shaheed-returns",
+      "sport": "NFL",
+      "published": "2026-11-14T04:01:15.000Z",
+      "firstSeen": "2026-11-14T00:38:22.881Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50477104",
+      "id": "50477104",
+      "headline": "Adebayo, Antetokounmpo make Heat history, Miami tops Cleveland 133-121 in NBA Cup game",
+      "summary": "— Bam Adebayo finished with 37 points and 14 rebounds, Giannis Antetokiunmpo also scored 37 and the Miami Heat took control of East Group B by beating the Cleveland Cavaliers 133-121 in an NBA Cup game Friday night.",
+      "url": "http://www.espn.com/nba/recap?gameId=401909298",
+      "sport": "NBA",
+      "published": "2026-11-14T04:00:37.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 17
+    },
+    {
+      "key": "50477161",
+      "id": "50477161",
+      "headline": "Max Iversen hits winner in OT, scores 27 to help North Dakota State outlast Illinois State 82-81",
+      "summary": "— Max Iversen led North Dakota State with 27 points, including the the game-winning jump shot with two seconds left in overtime, and the Bison knocked off Illinois State 82-81 on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401927374",
+      "sport": "College basketball",
+      "published": "2026-11-14T04:00:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 27
+    },
+    {
+      "key": "50477145",
+      "id": "50477145",
+      "headline": "Atlanta Hawks vs. Chicago Bulls: Game Highlights",
+      "summary": "Atlanta Hawks vs. Chicago Bulls: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477145/game-highlights",
+      "sport": "NBA",
+      "published": "2026-11-14T03:59:28.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50477128",
+      "id": "50477128",
+      "headline": "Cleveland Cavaliers vs. Miami Heat: Game Highlights",
+      "summary": "Cleveland Cavaliers vs. Miami Heat: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477128/game-highlights",
+      "sport": "NBA",
+      "published": "2026-11-14T03:59:20.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 16
+    },
+    {
+      "key": "50476961",
+      "id": "50476961",
+      "headline": "Michigan State's Jordan Scott injures right shoulder in win over Northern Iowa",
+      "summary": "Jordan Scott injured his right shoulder as No. 5 Michigan State beat Northern Iowa 106-72 on Friday night.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50476961/michigan-state-forward-jordan-scott-injures-right-shoulder-win-vs-northern-iowa",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:58:18.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 39
+    },
+    {
+      "key": "50477146",
+      "id": "50477146",
+      "headline": "Isaacs, Edward lead Oklahoma's 74-58 win over Fairleigh Dickinson",
+      "summary": "— Pop Isaacs scored 17 points, backup B.J. Edwards scored 16 points and Oklahoma beat Fairleigh Dickinson 74-58 on Saturday night in the first meeting between the two teams.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401906804",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:57:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 28
+    },
+    {
+      "key": "50477070",
+      "id": "50477070",
+      "headline": "Hank Alvey scores 16 to help Lehigh fend off Marist 65-60",
+      "summary": "— Hank Alvey scored 16 points to help Lehigh hold off Marist 65-60 on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401924796",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:55:34.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 33
+    },
+    {
+      "key": "50477129",
+      "id": "50477129",
+      "headline": "Moore's 22 points send Hofstra past Iona 62-59 in overtime",
+      "summary": "— Justin Moore scored 22 points and hit the game-winning jump shot with 22 seconds remaining in overtime as Hofstra defeated Iona 62-59 on Friday.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401921191",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:54:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 29
+    },
+    {
+      "key": "50477094",
+      "id": "50477094",
+      "headline": "Kanon Catchings details Georgia's toughness vs. North Carolina",
+      "summary": "Catchings recaps his performance as he describes how the Bulldogs held on and played with resilience in the fourth quarter to pull off the close win over the Tar Heels.",
+      "url": "https://www.espn.com/video/clip/_/id/50477094/kanon-catchings-details-georgia-toughness-vs-north-carolina",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:50:59.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 30
+    },
+    {
+      "key": "50477092",
+      "id": "50477092",
+      "headline": "Memphis Grizzlies vs. New Orleans Pelicans: Game Highlights",
+      "summary": "Memphis Grizzlies vs. New Orleans Pelicans: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477092/game-highlights",
+      "sport": "NBA",
+      "published": "2026-11-14T03:49:22.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 18
+    },
+    {
+      "key": "50477090",
+      "id": "50477090",
+      "headline": "Xavier Edmonds' double-double powers TCU to 76-64 victory over Milwaukee",
+      "summary": "— Xavier Edmonds finished with 18 points and 13 rebounds to lead TCU to a 76-64 victory over Milwaukee on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401919049",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:47:34.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 31
+    },
+    {
+      "key": "50477084",
+      "id": "50477084",
+      "headline": "Sam Lewis helps No. 6 Virginia rally past former ACC rival Maryland 87-83 to stay unbeaten",
+      "summary": "— Sam Lewis scored a career-high 28 points and No. 6 Virginia passed its first road test of the season, rallying from an 11-point halftime deficit to beat Maryland 87-83 on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401916297",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:46:15.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 32
+    },
+    {
+      "key": "50477058",
+      "id": "50477058",
+      "headline": "Sancomb's 20 lead Liberty past North Carolina Central 74-66",
+      "summary": "— Eli Sancomb scored 20 points as Liberty beat North Carolina Central 74-66 on Friday.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401926794",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:42:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 34
+    },
+    {
+      "key": "50477041",
+      "id": "50477041",
+      "headline": "No. 2 Duke displays balanced scoring in 90-47 romp past SIU Edwardsville",
+      "summary": "— Patrick Ngongba II had 13 points and nine rebounds, Caleb Foster and Dame Sarr each scored 12, and No. 2 Duke delivered a strong bounce-back performance after its first loss of the season in beating SIU Edwardsville 90-47 on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401909565",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:40:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 35
+    },
+    {
+      "key": "50477016",
+      "id": "50477016",
+      "headline": "Carroll scores 26 in Drake’s 81-72 win over South Dakota",
+      "summary": "— Jon Carroll scored 26 points as Drake beat South Dakota 81-72 on Friday.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401927363",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:39:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 36
+    },
+    {
+      "key": "50477006",
+      "id": "50477006",
+      "headline": "Florida State Seminoles vs. Pittsburgh Panthers: Full Highlights",
+      "summary": "Florida State Seminoles vs. Pittsburgh Panthers: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50477006/full-highlights",
+      "sport": "College football",
+      "published": "2026-11-14T03:36:44.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50476985",
+      "id": "50476985",
+      "headline": "Milijasevic has 17 as Wright State takes down Samford 90-66",
+      "summary": "— Ilija Milijasevic had 17 points in Wright State’s 90-66 victory over Samford on Friday.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401926117",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:35:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 37
+    },
+    {
+      "key": "50476974",
+      "id": "50476974",
+      "headline": "George Washington defeats Harvard 85-57",
+      "summary": "— Omari Witherspoon’s 16 points helped George Washington defeat Harvard 85-57 on Friday.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401911210",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:32:49.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 38
+    },
+    {
+      "key": "50476958",
+      "id": "50476958",
+      "headline": "Barnett scores 32 as Middle Tennessee beats Southeast Missouri State 88-75",
+      "summary": "— Quintero Barnett's 32 points led Middle Tennessee past Southeast Missouri State 88-75 on Friday.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401926152",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:30:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 40
+    },
+    {
+      "key": "50476947",
+      "id": "50476947",
+      "headline": "Kopetzki's 22 lead Appalachian State over Charlotte 66-60",
+      "summary": "— Ben Kopetzki's 22 points helped Appalachian State defeat Charlotte 66-60 on Friday.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401925820",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:29:37.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 41
+    },
+    {
+      "key": "50476938",
+      "id": "50476938",
+      "headline": "Dior Johnson pours in 25 points to power UCF over Georgia Southern 84-70",
+      "summary": "— Dior Johnson racked up 25 points and Arturo Dean chipped in with 21 as UCF got past Georgia Southern 84-70 on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401921026",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:26:44.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 42
+    },
+    {
+      "key": "50476884",
+      "id": "50476884",
+      "headline": "Joaquim Boumtje Boumtje impresses with 2 wild slams for Duke",
+      "summary": "Joaquim Boumtje Boumtje impresses with 2 wild slams for Duke",
+      "url": "https://www.espn.com/video/clip/_/id/50476884/joaquim-boumtje-boumtje-impresses-2-wild-slams-duke",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:25:41.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 45
+    },
+    {
+      "key": "50476896",
+      "id": "50476896",
+      "headline": "Georgia Southern Eagles vs. UCF Knights: Game Highlights",
+      "summary": "Georgia Southern Eagles vs. UCF Knights: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50476896/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:23:23.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 43
+    },
+    {
+      "key": "50476895",
+      "id": "50476895",
+      "headline": "Fairleigh Dickinson Knights vs. Oklahoma Sooners: Game Highlights",
+      "summary": "Fairleigh Dickinson Knights vs. Oklahoma Sooners: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50476895/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:23:21.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 44
+    },
     {
       "key": "50476842",
       "id": "50476842",
@@ -35,15 +959,70 @@
       "bestRank": 1
     },
     {
-      "key": "49577473",
-      "id": "49577473",
-      "headline": "2026 NBA Cup: Schedule, format, groups, updates and more",
-      "summary": "Here's everything you need to know about the fourth annual in-season tournament.",
-      "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
-      "sport": "NBA",
-      "published": "2026-11-14T03:11:38.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 2
+      "key": "50476871",
+      "id": "50476871",
+      "headline": "Texas Southern Tigers vs. Murray State Racers: Game Highlights",
+      "summary": "Texas Southern Tigers vs. Murray State Racers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50476871/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:20:44.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 46
+    },
+    {
+      "key": "50476870",
+      "id": "50476870",
+      "headline": "Alcorn State Braves vs. Tarleton Texans: Game Highlights",
+      "summary": "Alcorn State Braves vs. Tarleton Texans: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50476870/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:20:38.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 47
+    },
+    {
+      "key": "50476855",
+      "id": "50476855",
+      "headline": "No. 3 Illinois rebounds from 1st loss to beat Sam Houston 108-86 behind Ivisic and Stojakovich",
+      "summary": "— Tomislav Ivisic had a career-high 28 points, Andrej Stojakovic added 26 and No. 3 Illinois bounced back from its first loss this season with a 108-86 victory Friday night over Sam Houston.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401913528",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:17:36.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 48
+    },
+    {
+      "key": "50476844",
+      "id": "50476844",
+      "headline": "Richmond's 21 points lead No. 19 Arkansas past Central Arkansas 79-66",
+      "summary": "— Billy Richmond III scored 21 points and led four Arkansas players in double figures as the No. 19 Razorbacks beat Central Arkansas 79-66 on Friday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401917916",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:16:35.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 49
+    },
+    {
+      "key": "50476813",
+      "id": "50476813",
+      "headline": "Milwaukee Panthers vs. TCU Horned Frogs: Game Highlights",
+      "summary": "Milwaukee Panthers vs. TCU Horned Frogs: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50476813/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-14T03:15:10.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 50
+    },
+    {
+      "key": "50476775",
+      "id": "50476775",
+      "headline": "Pacific Tigers vs. California Baptist Lancers: Game Highlights",
+      "summary": "Pacific Tigers vs. California Baptist Lancers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50476775/game-highlights",
+      "sport": "Women's college basketball",
+      "published": "2026-11-14T03:10:40.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 4
     },
     {
       "key": "50476744",
@@ -99,17 +1078,6 @@
       "published": "2026-11-14T02:59:35.000Z",
       "firstSeen": "2026-11-14T03:22:17.119Z",
       "bestRank": 4
-    },
-    {
-      "key": "50475169",
-      "id": "50475169",
-      "headline": "FAA ground stop disrupts air travel for college football teams",
-      "summary": "Travel plans for multiple college football teams have been disrupted by the FAA's nationwide ground stop of all flights because of communications problems.",
-      "url": "https://www.espn.com/college-football/story/_/id/50475169/faa-ground-stop-disrupting-travel-college-football-teams",
-      "sport": "College football",
-      "published": "2026-11-14T02:59:23.000Z",
-      "firstSeen": "2026-11-14T00:38:22.881Z",
-      "bestRank": 8
     },
     {
       "key": "50476558",
@@ -198,6 +1166,17 @@
       "published": "2026-11-14T02:45:34.000Z",
       "firstSeen": "2026-11-14T03:22:17.119Z",
       "bestRank": 9
+    },
+    {
+      "key": "50476509",
+      "id": "50476509",
+      "headline": "Marquette Golden Eagles vs. Missouri State Lady Bears: Game Highlights",
+      "summary": "Marquette Golden Eagles vs. Missouri State Lady Bears: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50476509/game-highlights",
+      "sport": "Women's college basketball",
+      "published": "2026-11-14T02:45:31.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 5
     },
     {
       "key": "50476478",
@@ -299,6 +1278,17 @@
       "bestRank": 18
     },
     {
+      "key": "50476378",
+      "id": "50476378",
+      "headline": "Auburn Tigers vs. Texas Tech Lady Raiders: Game Highlights",
+      "summary": "Auburn Tigers vs. Texas Tech Lady Raiders: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50476378/game-highlights",
+      "sport": "Women's college basketball",
+      "published": "2026-11-14T02:33:23.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 6
+    },
+    {
       "key": "50476359",
       "id": "50476359",
       "headline": "Columbia wins 77-59 over Bucknell",
@@ -363,6 +1353,17 @@
       "published": "2026-11-14T02:23:48.000Z",
       "firstSeen": "2026-11-14T00:38:22.881Z",
       "bestRank": 5
+    },
+    {
+      "key": "50476317",
+      "id": "50476317",
+      "headline": "MiLaysia Fulwiley scores 23 points as No. 9 LSU cruises past Denver, 101-37",
+      "summary": "— MiLaysia Fulwiley scored a season-high 23 points and No. 9 LSU went on three substantial runs in a 101-37 blowout win Friday over Denver.",
+      "url": "http://www.espn.com/ncw/recap?gameId=401912967",
+      "sport": "Women's college basketball",
+      "published": "2026-11-14T02:23:34.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 7
     },
     {
       "key": "50476311",
@@ -442,6 +1443,17 @@
       "bestRank": 30
     },
     {
+      "key": "50476259",
+      "id": "50476259",
+      "headline": "Denver Pioneers vs. LSU Tigers: Game Highlights",
+      "summary": "Denver Pioneers vs. LSU Tigers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50476259/game-highlights",
+      "sport": "Women's college basketball",
+      "published": "2026-11-14T02:14:13.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 8
+    },
+    {
       "key": "50476257",
       "id": "50476257",
       "headline": "Florida International Panthers vs. Florida Gulf Coast Eagles: Game Highlights",
@@ -451,6 +1463,17 @@
       "published": "2026-11-14T02:13:50.000Z",
       "firstSeen": "2026-11-14T03:22:17.119Z",
       "bestRank": 31
+    },
+    {
+      "key": "50476251",
+      "id": "50476251",
+      "headline": "Wright State Raiders vs. Indiana State Sycamores: Game Highlights",
+      "summary": "Wright State Raiders vs. Indiana State Sycamores: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50476251/game-highlights",
+      "sport": "Women's college basketball",
+      "published": "2026-11-14T02:12:44.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 9
     },
     {
       "key": "50476225",
@@ -464,6 +1487,17 @@
       "bestRank": 32
     },
     {
+      "key": "50476181",
+      "id": "50476181",
+      "headline": "Oregon Ducks vs. Maine Black Bears: Game Highlights",
+      "summary": "Oregon Ducks vs. Maine Black Bears: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50476181/game-highlights",
+      "sport": "Women's college basketball",
+      "published": "2026-11-14T02:08:14.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 10
+    },
+    {
       "key": "50473732",
       "id": "50473732",
       "headline": "Dejounte Murray wants trade from Pelicans; both sides working on resolution",
@@ -473,17 +1507,6 @@
       "published": "2026-11-14T02:06:40.000Z",
       "firstSeen": "2026-11-13T21:21:01.711Z",
       "bestRank": 4
-    },
-    {
-      "key": "50475505",
-      "id": "50475505",
-      "headline": "Seahawks are hurting with injuries, but two players will return vs. Raiders",
-      "summary": "QB Drew Lock will start again for Darnold. LB Uchenna Nwosu and WR Rashid Shaheed will return to the field in Las Vegas.",
-      "url": "https://www.espn.com/nfl/story/_/id/50475505/seahawks-raiders-week-10-darnold-lock-shaheed-returns",
-      "sport": "NFL",
-      "published": "2026-11-14T02:05:47.000Z",
-      "firstSeen": "2026-11-14T00:38:22.881Z",
-      "bestRank": 1
     },
     {
       "key": "50476154",
@@ -596,6 +1619,17 @@
       "bestRank": 41
     },
     {
+      "key": "50476039",
+      "id": "50476039",
+      "headline": "Morgan State Lady Bears vs. UMBC Retrievers: Game Highlights",
+      "summary": "Morgan State Lady Bears vs. UMBC Retrievers: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50476039/game-highlights",
+      "sport": "Women's college basketball",
+      "published": "2026-11-14T01:48:10.000Z",
+      "firstSeen": "2026-11-14T06:27:19.815Z",
+      "bestRank": 11
+    },
+    {
       "key": "50475936",
       "id": "50475936",
       "headline": "Jaland Lowe, Vince Ichukwu lead Georgetown to 85-78 win over Clemson",
@@ -662,23 +1696,12 @@
       "bestRank": 1
     },
     {
-      "key": "50474340",
-      "id": "50474340",
-      "headline": "Sources: San Jose Earthquakes sold for $625 million to Heath Freeman",
-      "summary": "Alden Global Capital co-founder Heath Freeman is purchasing the San Jose Earthquakes from John Fisher, following MLS owners' approval of the sale on Thursday.",
-      "url": "https://www.espn.com/soccer/story/_/id/50474340/san-jose-earthquakes-sold-625-million-heath-freeman",
-      "sport": "Soccer",
-      "published": "2026-11-14T00:49:47.000Z",
-      "firstSeen": "2026-11-14T00:38:22.881Z",
-      "bestRank": 1
-    },
-    {
       "key": "50475646",
       "id": "50475646",
       "headline": "Smart explains how Stockton has taught him more than X's and O's can",
       "summary": "Kirby Smart joins The Paul Finebaum Show to preview the No. 1 Bulldogs' matchup against No. 22 Missouri and details how Gunner Stockton makes everyone around him better.",
       "url": "https://www.espn.com/video/clip/_/id/50475646/smart-explains-how-stockton-taught-more-x-o-can",
-      "sport": "College basketball",
+      "sport": "College football",
       "published": "2026-11-14T00:41:14.000Z",
       "firstSeen": "2026-11-14T03:22:17.119Z",
       "bestRank": 2
@@ -1063,7 +2086,7 @@
       "headline": "NC State officially hires Philip Rivers as football coach",
       "summary": "Philip Rivers is set to return to NC State, this time as head football coach, once its trustees finalizes his contract after a meeting Friday, sources said.",
       "url": "https://www.espn.com/college-football/story/_/id/50456831/sources-philip-rivers-nc-state-deal-set-finalized",
-      "sport": "NFL",
+      "sport": "College football",
       "published": "2026-11-13T20:59:56.000Z",
       "firstSeen": "2026-11-12T03:23:31.347Z",
       "bestRank": 3
@@ -1231,6 +2254,17 @@
       "sport": "NBA",
       "published": "2026-11-13T19:56:25.000Z",
       "firstSeen": "2026-11-13T21:21:01.711Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50462145",
+      "id": "50462145",
+      "headline": "Longtime broadcaster Dan Hicks, husband of ESPN's Hannah Storm, dies at 64",
+      "summary": "Longtime NBC Sports broadcaster Dan Hicks has died at the age of 64 following an acute illness, his wife, ESPN broadcaster Hannah Storm, announced Thursday.",
+      "url": "https://www.espn.com/espn/story/_/id/50462145/long-sports-broadcaster-dan-hicks-dies-age-64",
+      "sport": "Golf",
+      "published": "2026-11-13T19:37:55.000Z",
+      "firstSeen": "2026-11-12T21:20:54.107Z",
       "bestRank": 2
     },
     {
@@ -1617,17 +2651,6 @@
       "published": "2026-11-13T16:45:45.000Z",
       "firstSeen": "2026-11-13T18:21:18.299Z",
       "bestRank": 16
-    },
-    {
-      "key": "50472000",
-      "id": "50472000",
-      "headline": "Commanders QB Sam Hartman to star as 'The Bachelor' in milestone 30th season",
-      "summary": "The 30th season of ABC's \"The Bachelor\" that will premiere in March 2027 will star the former Notre Dame standout.",
-      "url": "https://www.espn.com/nfl/story/_/id/50472000/sam-hartman-bachelor-season-30",
-      "sport": "NFL",
-      "published": "2026-11-13T16:44:12.000Z",
-      "firstSeen": "2026-11-13T18:21:18.299Z",
-      "bestRank": 7
     },
     {
       "key": "50472265",
@@ -5313,17 +6336,6 @@
       "published": "2026-11-12T16:15:45.000Z",
       "firstSeen": "2026-11-12T12:27:50.367Z",
       "bestRank": 4
-    },
-    {
-      "key": "50462145",
-      "id": "50462145",
-      "headline": "Longtime broadcaster Dan Hicks, husband of ESPN's Hannah Storm, dies at 64",
-      "summary": "Longtime NBC Sports broadcaster Dan Hicks has died at the age of 64 following an acute illness, his wife, ESPN broadcaster Hannah Storm, announced Thursday.",
-      "url": "https://www.espn.com/espn/story/_/id/50462145/long-sports-broadcaster-dan-hicks-dies-age-64",
-      "sport": "Golf",
-      "published": "2026-11-12T16:15:37.000Z",
-      "firstSeen": "2026-11-12T21:20:54.107Z",
-      "bestRank": 2
     },
     {
       "key": "50456772",
@@ -69146,413 +70158,6 @@
       "published": "2026-10-24T07:02:52.000Z",
       "firstSeen": "2026-10-24T09:27:45.174Z",
       "bestRank": 5
-    },
-    {
-      "key": "50263767",
-      "id": "50263767",
-      "headline": "NC State Wolfpack vs. Stanford Cardinal: Full Highlights",
-      "summary": "NC State Wolfpack vs. Stanford Cardinal: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50263767/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-24T06:11:46.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50263728",
-      "id": "50263728",
-      "headline": "Washington travels to Chicago for conference showdown",
-      "summary": "Washington Wizards (1-0, fifth in the Eastern Conference) vs. Chicago Bulls (1-1, seventh in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909857",
-      "sport": "NBA",
-      "published": "2026-10-24T06:02:54.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50263726",
-      "id": "50263726",
-      "headline": "Minnesota takes on Toronto in non-conference action",
-      "summary": "Toronto Raptors (1-0, fourth in the Eastern Conference) vs. Minnesota Timberwolves (2-0, sixth in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909864",
-      "sport": "NBA",
-      "published": "2026-10-24T06:02:53.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50263725",
-      "id": "50263725",
-      "headline": "Oklahoma City hosts conference rival Los Angeles",
-      "summary": "Los Angeles Clippers (1-1, seventh in the Western Conference) vs. Oklahoma City Thunder (2-0, second in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909865",
-      "sport": "NBA",
-      "published": "2026-10-24T06:02:52.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50263724",
-      "id": "50263724",
-      "headline": "Denver takes on conference foe New Orleans",
-      "summary": "New Orleans Pelicans (0-2, 12th in the Western Conference) vs. Denver Nuggets (0-1, 10th in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909859",
-      "sport": "NBA",
-      "published": "2026-10-24T06:02:51.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50263723",
-      "id": "50263723",
-      "headline": "Atlanta plays Houston for out-of-conference matchup",
-      "summary": "Houston Rockets (1-0, third in the Western Conference) vs. Atlanta Hawks (2-0, first in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909856",
-      "sport": "NBA",
-      "published": "2026-10-24T06:02:50.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50263722",
-      "id": "50263722",
-      "headline": "Los Angeles plays Utah for conference showdown",
-      "summary": "Los Angeles Lakers (2-0, first in the Western Conference) vs. Utah Jazz (1-1, eighth in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909861",
-      "sport": "NBA",
-      "published": "2026-10-24T06:02:48.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50263721",
-      "id": "50263721",
-      "headline": "Philadelphia plays conference rival Milwaukee",
-      "summary": "Milwaukee Bucks (0-2, 15th in the Eastern Conference) vs. Philadelphia 76ers (2-0, third in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909855",
-      "sport": "NBA",
-      "published": "2026-10-24T06:02:47.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50263720",
-      "id": "50263720",
-      "headline": "Charlotte faces Miami in conference showdown",
-      "summary": "Miami Heat (0-2, 13th in the Eastern Conference) vs. Charlotte Hornets (1-1, eighth in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909853",
-      "sport": "NBA",
-      "published": "2026-10-24T06:02:46.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50262849",
-      "id": "50262849",
-      "headline": "Pelicans center Yves Missi helped off court vs. Jazz with knee injury",
-      "summary": "Pelicans starting center Yves Missi injured his left knee in the second quarter of Friday night's game at Utah and had to be helped to the locker room.",
-      "url": "https://www.espn.com/nba/story/_/id/50262849/pelicans-yves-missi-exits-jazz-game-left-leg-injury",
-      "sport": "NBA",
-      "published": "2026-10-24T05:45:12.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50262970",
-      "id": "50262970",
-      "headline": "Brewers withstand Rays' comeback attempt to win 3-2 in Game 1 of World Series",
-      "summary": "— Trevor Megill was shouting in celebration and the Milwaukee Brewers were bolting out of the dugout to congratulate one another, believing they had just escaped a ninth-inning jam to win Game 1 of the World Series.",
-      "url": "http://www.espn.com/mlb/recap?gameId=401908042",
-      "sport": "MLB",
-      "published": "2026-10-24T05:34:46.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50263545",
-      "id": "50263545",
-      "headline": "Darius Acuff Jr. delivers 33-point performance for Kings in loss to Blazers",
-      "summary": "Darius Acuff Jr. delivers 33-point performance for Kings in loss to Blazers",
-      "url": "https://www.espn.com/video/clip/_/id/50263545/darius-acuff-jr-delivers-33-point-performance-kings-loss-blazers",
-      "sport": "NBA",
-      "published": "2026-10-24T05:27:22.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50263530",
-      "id": "50263530",
-      "headline": "Cameron Boozer hits go-ahead jumper with 20 seconds left, Grizzlies rally to beat Warriors 111-108",
-      "summary": "— Cameron Boozer made a go-ahead jumper with 20 seconds left and finished with 25 points and 13 rebounds, and the Memphis Grizzlies came from 12 points down over the final 3:47 to beat the Golden State Warriors 111-108 on Friday night.",
-      "url": "http://www.espn.com/nba/recap?gameId=401909850",
-      "sport": "NBA",
-      "published": "2026-10-24T05:19:46.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50263514",
-      "id": "50263514",
-      "headline": "Cam Boozer's 25-point double-double helps Grizzlies complete comeback win vs. Warriors",
-      "summary": "Cam Boozer's 25-point double-double helps Grizzlies complete comeback win vs. Warriors",
-      "url": "https://www.espn.com/video/clip/_/id/50263514/cam-boozer-25-point-double-double-helps-grizzlies-complete-comeback-win-vs-warriors",
-      "sport": "NBA",
-      "published": "2026-10-24T05:16:55.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 14
-    },
-    {
-      "key": "50263537",
-      "id": "50263537",
-      "headline": "Deni Avdija scores 26 points to lead Trail Blazers in win over Kings",
-      "summary": "— Deni Avdija led the Trail Blazers with 26 points, six rebounds, and six assists in the Portland Trail Blazers 128-120 victory over the Sacramento Kings on Friday.",
-      "url": "http://www.espn.com/nba/recap?gameId=401909852",
-      "sport": "NBA",
-      "published": "2026-10-24T05:07:56.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 11
-    },
-    {
-      "key": "50263522",
-      "id": "50263522",
-      "headline": "Portland Trail Blazers vs. Sacramento Kings: Game Highlights",
-      "summary": "Portland Trail Blazers vs. Sacramento Kings: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50263522/game-highlights",
-      "sport": "NBA",
-      "published": "2026-10-24T05:04:52.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 13
-    },
-    {
-      "key": "50263520",
-      "id": "50263520",
-      "headline": "Tyler Hughes throws 2 TD passes, runs for score in Wyoming's 28-14 victory over Air Force",
-      "summary": "— Tyler Hughes finished with two touchdown passes and a touchdown run to propel Wyoming to a 28-14 victory over the Air Force Academy on Friday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401864525",
-      "sport": "College football",
-      "published": "2026-10-24T05:01:46.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50263505",
-      "id": "50263505",
-      "headline": "Grizzlies erase late deficit and beat the Warriors",
-      "summary": "Grizzlies erase late deficit and beat the Warriors",
-      "url": "https://www.espn.com/video/clip/_/id/50263505/grizzlies-erase-late-deficit-beat-warriors",
-      "sport": "NBA",
-      "published": "2026-10-24T05:01:19.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 15
-    },
-    {
-      "key": "50263481",
-      "id": "50263481",
-      "headline": "Amen Thompson blocks Wembanyama in final second as the Rockets beat the Spurs 114-110 in Austin",
-      "summary": "— Amen Thompson blocked Victor Wembanyama's game-tying layup attempt with less than a second remaining and the Houston Rockets held on to beat the San Antonio Spurs 114-110 on Friday night.",
-      "url": "http://www.espn.com/nba/recap?gameId=401909096",
-      "sport": "NBA",
-      "published": "2026-10-24T04:52:51.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 16
-    },
-    {
-      "key": "50263447",
-      "id": "50263447",
-      "headline": "LA Clippers vs. Los Angeles Lakers: Game Highlights",
-      "summary": "LA Clippers vs. Los Angeles Lakers: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50263447/game-highlights",
-      "sport": "NBA",
-      "published": "2026-10-24T04:46:57.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 17
-    },
-    {
-      "key": "50263163",
-      "id": "50263163",
-      "headline": "Giannis Antetokounmpo stays hot with 36 in loss, confident 0-2 Heat will click",
-      "summary": "Giannis Antetokounmpo scored 36 points Friday, giving him 71 through the first two games, and stayed hopeful the Heat would rebound from their winless start.",
-      "url": "https://www.espn.com/nba/story/_/id/50263163/giannis-antetokounmpo-stays-hot-confident-0-2-heat-click",
-      "sport": "NBA",
-      "published": "2026-10-24T04:41:45.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 22
-    },
-    {
-      "key": "50263408",
-      "id": "50263408",
-      "headline": "Rockets move to 2-0 after win over the Spurs",
-      "summary": "Rockets move to 2-0 after win over the Spurs",
-      "url": "https://www.espn.com/video/clip/_/id/50263408/rockets-move-2-0-win-spurs",
-      "sport": "NBA",
-      "published": "2026-10-24T04:40:47.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 20
-    },
-    {
-      "key": "50263429",
-      "id": "50263429",
-      "headline": "Austin Reaves, Walker Kessler lead Lakers past Clippers 125-117 for 2nd win to start season",
-      "summary": "— Austin Reaves had 28 points and nine assists, Walker Kessler added 22 points and six blocked shots, and the Los Angeles Lakers beat the Los Angeles Clippers 125-117 on Friday night for their second win to start the season.",
-      "url": "http://www.espn.com/nba/recap?gameId=401909851",
-      "sport": "NBA",
-      "published": "2026-10-24T04:40:46.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 18
-    },
-    {
-      "key": "50263414",
-      "id": "50263414",
-      "headline": "Jackson scores 24 and Peterson makes go-ahead FTs to lift Jazz over Pelicans",
-      "summary": "— Jaren Jackson Jr. had 24 points and 10 rebounds, rookie Darryn Peterson made the go-ahead free throws with 50.5 second left, and the Utah Jazz outlasted the New Orleans Pelicans 120-119 on Friday night.",
-      "url": "http://www.espn.com/nba/recap?gameId=401909849",
-      "sport": "NBA",
-      "published": "2026-10-24T04:35:47.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 19
-    },
-    {
-      "key": "50263404",
-      "id": "50263404",
-      "headline": "Dawson Jones' 50-yard FG on final play lifts Army over Tulsa 38-35",
-      "summary": "— Dawson Jones kicked a 50-yard field goal on the final play of the game and Army rallied last in a 38-35 victory over Tulsa on Friday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401862808",
-      "sport": "College football",
-      "published": "2026-10-24T04:33:55.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50263334",
-      "id": "50263334",
-      "headline": "New Orleans Pelicans vs. Utah Jazz: Game Highlights",
-      "summary": "New Orleans Pelicans vs. Utah Jazz: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50263334/game-highlights",
-      "sport": "NBA",
-      "published": "2026-10-24T04:25:25.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 21
-    },
-    {
-      "key": "50261786",
-      "id": "50261786",
-      "headline": "Brewers' Jacob Misiorowski sets WS velocity record on first pitch",
-      "summary": "Jacob Misiorowski broke the record for fastest World Series pitch with the very first offering of this year's Fall Classic.",
-      "url": "https://www.espn.com/mlb/story/_/id/50261786/brewers-jacob-misiorowski-sets-world-series-velocity-record-first-pitch",
-      "sport": "MLB",
-      "published": "2026-10-24T04:23:41.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50263294",
-      "id": "50263294",
-      "headline": "Army Black Knights vs. Tulsa Golden Hurricane: Full Highlights",
-      "summary": "Army Black Knights vs. Tulsa Golden Hurricane: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50263294/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-24T04:14:42.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50263224",
-      "id": "50263224",
-      "headline": "Nathan MacKinnon has goal and 3 assists in Avalanche's 6-3 win over Lightning",
-      "summary": "— Nathan MacKinnon had a goal and three assists, Nazem Kadri scored his first goal of the season and the Colorado Avalanche beat the Tampa Bay...",
-      "url": "http://www.espn.com/nhl/recap?gameId=401892565",
-      "sport": "NHL",
-      "published": "2026-10-24T04:08:47.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50263222",
-      "id": "50263222",
-      "headline": "Tampa Bay Lightning vs. Colorado Avalanche: Game Highlights",
-      "summary": "Tampa Bay Lightning vs. Colorado Avalanche: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50263222/game-highlights",
-      "sport": "NHL",
-      "published": "2026-10-24T04:07:37.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50262142",
-      "id": "50262142",
-      "headline": "Mavericks' Cooper Flagg lands on shoulder after hard foul, exits win vs. Pacers",
-      "summary": "Mavericks forward Cooper Flagg did not play in the second half Friday night at Indiana after landing hard on his left shoulder after Aaron Nesmith tried to block his shot from behind to prevent a breakaway dunk.",
-      "url": "https://www.espn.com/nba/story/_/id/50262142/mavericks-cooper-flagg-exits-vs-pacers-left-shoulder-soreness",
-      "sport": "NBA",
-      "published": "2026-10-24T04:05:05.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 15
-    },
-    {
-      "key": "50240295",
-      "id": "50240295",
-      "headline": "2026 World Series Game 1: Analysis as Brewers beat Rays",
-      "summary": "The Fall Classic began in Milwaukee on Friday -- and we've got all the action covered.",
-      "url": "https://www.espn.com/mlb/story/_/id/50240295/world-series-game-1-rays-brewers-live-updates-takeaways",
-      "sport": "MLB",
-      "published": "2026-10-24T04:03:28.000Z",
-      "firstSeen": "2026-10-23T21:26:31.632Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50262734",
-      "id": "50262734",
-      "headline": "Duke uses trick-play TD pass from Nate Sheppard to pull out 19-16 victory over Virginia",
-      "summary": "— Duke running back Nate Sheppard threw a 28-yard touchdown pass to a wide-open Brody Keefe with 1:14 left to give the Blue Devils a 19-16 win over Virginia on Friday night at...",
-      "url": "http://www.espn.com/ncf/recap?gameId=401858271",
-      "sport": "College football",
-      "published": "2026-10-24T03:41:46.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50262740",
-      "id": "50262740",
-      "headline": "Pistons roll past Heat 128-111, adding to Miami's season-opening woes on defensive end",
-      "summary": "— John Collins scored 23 points, Paul Reed added 19 off the bench and the Detroit Pistons added to Miami's season-opening defensive misery by beating the Heat 128-111 on Friday night.",
-      "url": "http://www.espn.com/nba/recap?gameId=401909847",
-      "sport": "NBA",
-      "published": "2026-10-24T03:39:46.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50262975",
-      "id": "50262975",
-      "headline": "Brewers take exciting Game 1 for a lead in the World Series",
-      "summary": "Brewers take exciting Game 1 for a lead in the World Series",
-      "url": "https://www.espn.com/video/clip/_/id/50262975/brewers-take-exciting-game-1-lead-world-series",
-      "sport": "MLB",
-      "published": "2026-10-24T03:37:48.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50262768",
-      "id": "50262768",
-      "headline": "UMass Minutemen vs. UConn Huskies: Full Highlights",
-      "summary": "UMass Minutemen vs. UConn Huskies: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50262768/full-highlights",
-      "sport": "College football",
-      "published": "2026-10-24T03:35:03.000Z",
-      "firstSeen": "2026-10-24T06:40:43.888Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50261799",
-      "id": "50261799",
-      "headline": "Cyncir Bowers breaks free for an electric 70-yard UConn TD run",
-      "summary": "Cyncir Bowers breaks free for an electric 70-yard UConn TD run",
-      "url": "https://www.espn.com/video/clip/_/id/50261799/cyncir-bowers-breaks-free-electric-70-yard-uconn-td-run",
-      "sport": "College football",
-      "published": "2026-10-24T03:34:43.000Z",
-      "firstSeen": "2026-10-24T03:32:32.246Z",
-      "bestRank": 14
     }
   ]
 }
