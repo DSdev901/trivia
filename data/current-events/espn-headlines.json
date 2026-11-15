@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-11-15T06:27:53.652Z",
+  "generatedAt": "2026-11-15T09:21:06.243Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-25T06:27:53.652Z",
-  "windowEnd": "2026-11-15T06:27:53.652Z",
+  "windowStart": "2026-10-25T09:21:06.243Z",
+  "windowEnd": "2026-11-15T09:21:06.243Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,74 @@
     "Tennis",
     "MMA"
   ],
-  "count": 6536,
+  "count": 6563,
   "items": [
+    {
+      "key": "50489054",
+      "id": "50489054",
+      "headline": "New York takes on Montreal following Gawdin's 2-goal showing",
+      "summary": "Montreal Canadiens (12-4-4, in the Atlantic Division) vs. New York Rangers (12-8-1, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892726",
+      "sport": "NHL",
+      "published": "2026-11-15T09:11:39.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50489053",
+      "id": "50489053",
+      "headline": "Panthers take on the Stars on 3-game winning streak",
+      "summary": "Florida Panthers (12-7-2, in the Atlantic Division) vs. Dallas Stars (11-6-2, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892722",
+      "sport": "NHL",
+      "published": "2026-11-15T09:11:38.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50489052",
+      "id": "50489052",
+      "headline": "Flames head to the Ducks in Pacific Division play",
+      "summary": "Calgary Flames (9-10-1, in the Pacific Division) vs. Anaheim Ducks (10-9-1, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892723",
+      "sport": "NHL",
+      "published": "2026-11-15T09:11:37.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50489051",
+      "id": "50489051",
+      "headline": "Predators bring win streak into matchup with the Sharks",
+      "summary": "Nashville Predators (11-4-5, in the Central Division) vs. San Jose Sharks (9-11-2, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892725",
+      "sport": "NHL",
+      "published": "2026-11-15T09:11:36.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50489050",
+      "id": "50489050",
+      "headline": "Flyers take on the Oilers following Barkey's 2-goal showing",
+      "summary": "Edmonton Oilers (15-3-3, in the Pacific Division) vs. Philadelphia Flyers (6-10-6, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892721",
+      "sport": "NHL",
+      "published": "2026-11-15T09:11:34.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50488524",
+      "id": "50488524",
+      "headline": "Ah Yat throws 3 TD passes, 2 to Gillman, Montana beats Idaho State 38-30",
+      "summary": "— Keali’i Ah Yat threw two of his three touchdown passes to Eli Gillman, and Montana beat Idaho State 38-30 on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401868109",
+      "sport": "College football",
+      "published": "2026-11-15T08:55:37.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 10
+    },
     {
       "key": "50488081",
       "id": "50488081",
@@ -30,9 +96,64 @@
       "summary": "LSU coach Lane Kiffin said it was fair to question the team's 6-4 record this season after losing to Texas on Saturday, a defeat that likely knocked LSU out of playoff contention.",
       "url": "https://www.espn.com/college-football/story/_/id/50488081/kiffin-understands-frustration-lsu-playoff-hopes-dashed",
       "sport": "College football",
-      "published": "2026-11-15T06:19:11.000Z",
+      "published": "2026-11-15T08:55:17.000Z",
       "firstSeen": "2026-11-15T06:27:53.652Z",
       "bestRank": 1
+    },
+    {
+      "key": "50486992",
+      "id": "50486992",
+      "headline": "Louisville's win vs. UNC ends in brawl as Belichick helps restore order on field",
+      "summary": "Louisville's 16-14 win at North Carolina ended with punches thrown and players spilling onto the field, prompting Bill Belichick to help pull players from the melee.",
+      "url": "https://www.espn.com/college-football/story/_/id/50486992/louisville-holds-unc-game-ends-brawl",
+      "sport": "College football",
+      "published": "2026-11-15T08:53:46.000Z",
+      "firstSeen": "2026-11-15T06:27:53.652Z",
+      "bestRank": 25
+    },
+    {
+      "key": "50488265",
+      "id": "50488265",
+      "headline": "Sharangovich and Wolf help the Flames hold off the Kings for a 3-2 win",
+      "summary": "— Matvei Gridin scored the go-ahead goal with 8:39 remaining and the Calgary Flames held off the Los Angeles Kings 3-2 on Saturday night.",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892720",
+      "sport": "NHL",
+      "published": "2026-11-15T08:51:50.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50432839",
+      "id": "50432839",
+      "headline": "Every Manchester United player, manager, executive since Glazers' takeover: Where are they now?",
+      "summary": "The Glazer family took over Manchester United in 2005, but what has happened to the players, managers and executive staff since?",
+      "url": "https://www.espn.com/soccer/story/_/id/50432839/manchester-united-glazers-transfers-players-managers",
+      "sport": "Soccer",
+      "published": "2026-11-15T08:47:18.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50485499",
+      "id": "50485499",
+      "headline": "Gane deserves a home fight; Nunes fought right into Harrison's hands",
+      "summary": "Ciryl Gane deserves a chance to win over fans, while Amanda Nunes fought the wrong fight against Kayla Harrison.",
+      "url": "https://www.espn.com/mma/story/_/id/50485499/ufc-334-gane-homecoming-fight-nunes-mistakes",
+      "sport": "MMA",
+      "published": "2026-11-15T08:31:09.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50488650",
+      "id": "50488650",
+      "headline": "No. 2 Utah survives, stays unbeaten on late 70-yard TD in thriller vs. Arizona",
+      "summary": "In a back-and-forth thriller, Utah rallied to remain undefeated after Devon Dampier hit Creed Whittemore on a 70-yard score late in Saturday's 40-39 win over Arizona.",
+      "url": "https://www.espn.com/college-football/story/_/id/50488650/no-2-utah-survives-late-70-yard-td-thriller-vs-arizona",
+      "sport": "College football",
+      "published": "2026-11-15T08:24:14.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 2
     },
     {
       "key": "50484778",
@@ -41,9 +162,306 @@
       "summary": "Saturday didn't offer much that changed the season's complexion, but some coaches are coming under pressure.",
       "url": "https://www.espn.com/college-football/story/_/page/gamedayfinal111426/week-11-top-games-highlights-takeaways",
       "sport": "College football",
-      "published": "2026-11-15T06:14:09.000Z",
+      "published": "2026-11-15T08:17:38.000Z",
       "firstSeen": "2026-11-15T06:27:53.652Z",
       "bestRank": 3
+    },
+    {
+      "key": "50488607",
+      "id": "50488607",
+      "headline": "Dampier accounts for 4 TDs, No. 2 Utah remains undefeated with 40-39 win over No. 22 Arizona",
+      "summary": "— Utah's day began with a morning flight that left a day late.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401856864",
+      "sport": "College football",
+      "published": "2026-11-15T08:14:41.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50488012",
+      "id": "50488012",
+      "headline": "Ciryl Gane survives early onslaught, edges Josh Hokit in UFC 334 main event",
+      "summary": "Ciryl Gane got all he could handle from Josh Hokit in a five-round slugfest, but took command late to defend his heavyweight title Saturday night at UFC 334.",
+      "url": "https://www.espn.com/mma/story/_/id/50488012/ciryl-gane-edges-josh-hokit-slugfest-retains-title-ufc-334",
+      "sport": "MMA",
+      "published": "2026-11-15T08:08:33.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50488267",
+      "id": "50488267",
+      "headline": "No. 10 Texas Tech routs Oklahoma State 52-27",
+      "summary": "— Thomas Castellanos threw for 263 yards and four touchdowns, Malcolm Simmons returned the opening kickoff 97 yards for a score and No. 10 Texas Tech routed Oklahoma State 52-27 early Sunday to stay on track for a return to the Big 12 championship...",
+      "url": "http://www.espn.com/ncf/recap?gameId=401856863",
+      "sport": "College football",
+      "published": "2026-11-15T08:03:35.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50488798",
+      "id": "50488798",
+      "headline": "Dylan Warwick, Chamberlain Burgess guide Weber State to 80-57 victory over Lincoln (CA)",
+      "summary": "— Dylan Warlick scored 13 points on 6-for-8 shooting and Chamberlain Burgess added a double-double off the bench as Weber State cruised to an 80-57 victory over Lincoln (CA) on Saturday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401925948",
+      "sport": "College basketball",
+      "published": "2026-11-15T08:01:34.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50487515",
+      "id": "50487515",
+      "headline": "Arch Manning leads game-winning drive as Texas stuns LSU",
+      "summary": "Arch Manning found Raleek Brown for a 4-yard touchdown pass along the left sideline with 3 seconds left, and Texas escaped Tiger Stadium with a victory over LSU on Saturday night.",
+      "url": "https://www.espn.com/college-football/story/_/id/50487515/arch-manning-leads-game-winning-drive-texas-stuns-lsu",
+      "sport": "College football",
+      "published": "2026-11-15T08:00:09.000Z",
+      "firstSeen": "2026-11-15T06:27:53.652Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50488768",
+      "id": "50488768",
+      "headline": "North Dakota State Bison vs. Hawai'i Rainbow Warriors: Full Highlights",
+      "summary": "North Dakota State Bison vs. Hawai'i Rainbow Warriors: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50488768/full-highlights",
+      "sport": "College football",
+      "published": "2026-11-15T07:52:31.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50485568",
+      "id": "50485568",
+      "headline": "Predicting the College Football Playoff: Who's most likely to make the field?",
+      "summary": "Find out which teams our experts think will make this season's CFP.",
+      "url": "https://www.espn.com/college-football/story/_/page/playoffpredictions111426/cfp-predictions-week-11",
+      "sport": "College football",
+      "published": "2026-11-15T07:48:30.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50487730",
+      "id": "50487730",
+      "headline": "Kayla Harrison spoils Amanda Nunes' return, wins by submission at UFC 334",
+      "summary": "Kayla Harrison scored the biggest victory of her career Saturday, submitting former champion Amanda Nunes by rear-naked choke in Round 4 to retain her title at UFC 334.",
+      "url": "https://www.espn.com/mma/story/_/id/50487730/kayla-harrison-submits-amanda-nunes-retain-title-ufc-334",
+      "sport": "MMA",
+      "published": "2026-11-15T07:41:34.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50488675",
+      "id": "50488675",
+      "headline": "Aaron Clark scores 14 to help Little Rock edge Northwestern State 84-83 in OT",
+      "summary": "— Aaron Clark’s 14 points helped Little Rock defeat Northwestern State 84-83 in overtime on Saturday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401925079",
+      "sport": "College basketball",
+      "published": "2026-11-15T07:39:34.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50488615",
+      "id": "50488615",
+      "headline": "DJ Scott, Ray James Jr. rally North Dakota State to 21-13 victory over Hawaii",
+      "summary": "— DJ Scott capped a 16-play, fourth-quarter drive with a touchdown run, and Ray James Jr. returned an interception 49 yards for a score as North Dakota State rallied to beat Hawaii 21-13 on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401864537",
+      "sport": "College football",
+      "published": "2026-11-15T07:34:37.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50488538",
+      "id": "50488538",
+      "headline": "Utah survives, takes down Arizona to remain undefeated",
+      "summary": "Utah survives, takes down Arizona to remain undefeated",
+      "url": "https://www.espn.com/video/clip/_/id/50488538/utah-survives-takes-arizona-remain-undefeated",
+      "sport": "College football",
+      "published": "2026-11-15T07:27:33.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50488540",
+      "id": "50488540",
+      "headline": "Idaho State Bengals vs. Montana Grizzlies: Full Highlights",
+      "summary": "Idaho State Bengals vs. Montana Grizzlies: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50488540/full-highlights",
+      "sport": "College football",
+      "published": "2026-11-15T07:25:15.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50488532",
+      "id": "50488532",
+      "headline": "Kirby Vorhees has 4 of 9 TD runs by Washington State in skid-busting 73-7 romp over Colorado State",
+      "summary": "— Kirby Vorhees ran for career highs of 197 yards and four of Washington State's school-record nine rushing touchdowns on 12 carries, including a Pac-12 Conference",
+      "url": "http://www.espn.com/ncf/recap?gameId=401860917",
+      "sport": "College football",
+      "published": "2026-11-15T07:22:35.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50488455",
+      "id": "50488455",
+      "headline": "Portland faces Minnesota on 3-game win streak",
+      "summary": "Portland Trail Blazers (9-3, fourth in the Western Conference) vs. Minnesota Timberwolves (9-4, fifth in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909999",
+      "sport": "NBA",
+      "published": "2026-11-15T07:04:37.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50488454",
+      "id": "50488454",
+      "headline": "Pelicans take on the Warriors on 6-game skid",
+      "summary": "Golden State Warriors (8-5, eighth in the Western Conference) vs. New Orleans Pelicans (4-10, 12th in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910000",
+      "sport": "NBA",
+      "published": "2026-11-15T07:04:36.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50488453",
+      "id": "50488453",
+      "headline": "Celtics face the Mavericks on 5-game win streak",
+      "summary": "Dallas Mavericks (7-6, 10th in the Western Conference) vs. Boston Celtics (10-2, first in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909989",
+      "sport": "NBA",
+      "published": "2026-11-15T07:04:35.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50487254",
+      "id": "50487254",
+      "headline": "Kirby Vorhees takes off for FBS season-long 98-yard TD for Washington State",
+      "summary": "Kirby Vorhees takes off for FBS season-long 98-yard TD for Washington State",
+      "url": "https://www.espn.com/video/clip/_/id/50487254/kirby-vorhees-takes-fbs-season-long-98-yard-td-washington-state",
+      "sport": "College football",
+      "published": "2026-11-15T07:04:24.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 33
+    },
+    {
+      "key": "50488448",
+      "id": "50488448",
+      "headline": "Cleveland and Chicago face off in conference matchup",
+      "summary": "Chicago Bulls (3-9, 14th in the Eastern Conference) vs. Cleveland Cavaliers (7-7, sixth in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909995",
+      "sport": "NBA",
+      "published": "2026-11-15T07:03:35.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50488403",
+      "id": "50488403",
+      "headline": "Peterson's 4 TDs help UTSA beat North Texas 35-16 for share of American Conference lead",
+      "summary": "— A'marion Peterson ran for career-high a 179 yards and a career-best four touchdowns and UTSA beat North Texas 35-16 on Saturday to claim a share of first place in the American Conference.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401862827",
+      "sport": "College football",
+      "published": "2026-11-15T06:51:34.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50488388",
+      "id": "50488388",
+      "headline": "Cooper DiLeva kicks 3 FGs, throws TD pass off trick play as San Diego State beats Utah State 30-13",
+      "summary": "— Cooper DiLeva made three field goals and threw a touchdown pass off a trick play to help San Diego State beat Utah State 30-13 on Saturday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401860915",
+      "sport": "College football",
+      "published": "2026-11-15T06:48:34.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50488340",
+      "id": "50488340",
+      "headline": "Samuel Harris scores 2 TDs, Wyoming beats UTEP 27-15 for 6th consecutive win",
+      "summary": "— Landon Sims threw for 289 yards and a touchdown in his first career start, Samuel Harris added two touchdowns and Wyoming beat UTEP 27-15 on Saturday night for its fifth consecutive win.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401864540",
+      "sport": "College football",
+      "published": "2026-11-15T06:40:34.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50488260",
+      "id": "50488260",
+      "headline": "Texas Tech picks up huge road win over Oklahoma State",
+      "summary": "Texas Tech picks up huge road win over Oklahoma State",
+      "url": "https://www.espn.com/video/clip/_/id/50488260/texas-tech-picks-huge-road-win-oklahoma-state",
+      "sport": "College football",
+      "published": "2026-11-15T06:33:24.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50444358",
+      "id": "50444358",
+      "headline": "UFC 334 results: Gane defeats Hokit, Harrison submits Nunes",
+      "summary": "Both champions retained their titles at UFC 334. Relive all the action from Madison Square Garden.",
+      "url": "https://www.espn.com/mma/story/_/id/50444358/ufc-334-live-results-analysis-ciryl-gane-josh-hokit",
+      "sport": "MMA",
+      "published": "2026-11-15T06:30:23.000Z",
+      "firstSeen": "2026-11-15T00:43:26.703Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50488255",
+      "id": "50488255",
+      "headline": "Texas Tech Red Raiders vs. Oklahoma State Cowboys: Full Highlights",
+      "summary": "Texas Tech Red Raiders vs. Oklahoma State Cowboys: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50488255/full-highlights",
+      "sport": "College football",
+      "published": "2026-11-15T06:29:49.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 16
+    },
+    {
+      "key": "50488224",
+      "id": "50488224",
+      "headline": "Isaac Hawkins scores 26 to help Utah Valley fend off Nevada 73-71",
+      "summary": "— Isaac Hawkins scored 26 points as Utah Valley turned back Nevada 73-71 on Saturday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401911455",
+      "sport": "College basketball",
+      "published": "2026-11-15T06:27:34.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50488140",
+      "id": "50488140",
+      "headline": "Elijah Mahi, Jake Ensminger help Santa Clara hold off New Mexico 90-85",
+      "summary": "— Elijah Mahi scored 26 points to lead Santa Clara and Jake Ensminger sealed the victory with a 3-pointer with 31 seconds remaining as the Broncos knocked off New Mexico 90-85 on Saturday night.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401917530",
+      "sport": "College basketball",
+      "published": "2026-11-15T06:20:34.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 4
+    },
+    {
+      "key": "24067525",
+      "id": "24067525",
+      "headline": "Winning top-10 matchup elevates UFC strawweight Tatiana Suarez in P4P rankings",
+      "summary": "At age 41, PFL women's featherweight champion continues win streak to secure spot in ESPN P4P top 10.",
+      "url": "https://www.espn.com/mma/story/_/id/24067525/mma-pound-rankings-tatiana-suarez-rises",
+      "sport": "MMA",
+      "published": "2026-11-15T06:15:28.000Z",
+      "firstSeen": "2026-08-12T11:41:09.333Z",
+      "bestRank": 1
     },
     {
       "key": "50487503",
@@ -145,17 +563,6 @@
       "bestRank": 30
     },
     {
-      "key": "50487515",
-      "id": "50487515",
-      "headline": "Arch Manning leads game-winning drive as Texas stuns LSU",
-      "summary": "Arch Manning found Raleek Brown for a 4-yard touchdown pass along the left sideline with 3 seconds left, and Texas escaped Tiger Stadium with a victory over LSU on Saturday night.",
-      "url": "https://www.espn.com/college-football/story/_/id/50487515/arch-manning-leads-game-winning-drive-texas-stuns-lsu",
-      "sport": "College football",
-      "published": "2026-11-15T05:30:24.000Z",
-      "firstSeen": "2026-11-15T06:27:53.652Z",
-      "bestRank": 7
-    },
-    {
       "key": "50481104",
       "id": "50481104",
       "headline": "Wake Forest's post-blowout jab at SMU tops college football Week 11 trolls",
@@ -244,17 +651,6 @@
       "bestRank": 14
     },
     {
-      "key": "50444358",
-      "id": "50444358",
-      "headline": "UFC 334: Live results, analysis for Gane-Hokit, Harrison-Nunes",
-      "summary": "ESPN provides live results and analysis of all the action from UFC 334 at Madison Square Garden.",
-      "url": "https://www.espn.com/mma/story/_/id/50444358/ufc-334-live-results-analysis-ciryl-gane-josh-hokit",
-      "sport": "MMA",
-      "published": "2026-11-15T05:11:17.000Z",
-      "firstSeen": "2026-11-15T00:43:26.703Z",
-      "bestRank": 1
-    },
-    {
       "key": "50487591",
       "id": "50487591",
       "headline": "Aiden McCown throws 4 TD passes for Lamar in 45-26 win over East Texas A&M",
@@ -330,17 +726,6 @@
       "published": "2026-11-15T04:57:35.000Z",
       "firstSeen": "2026-11-15T06:27:53.652Z",
       "bestRank": 4
-    },
-    {
-      "key": "50486992",
-      "id": "50486992",
-      "headline": "Louisville holds off UNC in game that ends with brawl",
-      "summary": "Louisville held off North Carolina 16-14 on Saturday night in a game that ended in a brawl and each of the teams having to be separated.",
-      "url": "https://www.espn.com/college-football/story/_/id/50486992/louisville-holds-unc-game-ends-brawl",
-      "sport": "College football",
-      "published": "2026-11-15T04:55:36.000Z",
-      "firstSeen": "2026-11-15T06:27:53.652Z",
-      "bestRank": 25
     },
     {
       "key": "50487428",
@@ -440,6 +825,17 @@
       "published": "2026-11-15T04:34:34.000Z",
       "firstSeen": "2026-11-15T06:27:53.652Z",
       "bestRank": 15
+    },
+    {
+      "key": "50487092",
+      "id": "50487092",
+      "headline": "Trace Crowe closes with birdies to take 1-shot lead in Austin",
+      "summary": "Trace Crowe salvaged a wild day with two late birdies to lead the Austin Championship.",
+      "url": "https://www.espn.com/golf/story/_/id/50487092/trace-crowe-closes-birdies-take-1-shot-lead-austin",
+      "sport": "Golf",
+      "published": "2026-11-15T04:25:28.000Z",
+      "firstSeen": "2026-11-15T09:21:06.243Z",
+      "bestRank": 1
     },
     {
       "key": "39283806",
@@ -15169,17 +15565,6 @@
       "published": "2026-11-11T16:12:56.000Z",
       "firstSeen": "2026-11-11T18:22:22.201Z",
       "bestRank": 4
-    },
-    {
-      "key": "24067525",
-      "id": "24067525",
-      "headline": "Winning top-10 matchup elevates UFC strawweight Tatiana Suarez in P4P rankings",
-      "summary": "At age 41, PFL women's featherweight champion continues win streak to secure spot in ESPN P4P top 10.",
-      "url": "https://www.espn.com/mma/story/_/id/24067525/mma-pound-rankings-tatiana-suarez-rises",
-      "sport": "MMA",
-      "published": "2026-11-11T16:12:07.000Z",
-      "firstSeen": "2026-08-12T11:41:09.333Z",
-      "bestRank": 1
     },
     {
       "key": "50453341",
@@ -71830,94 +72215,6 @@
       "published": "2026-10-25T10:00:01.000Z",
       "firstSeen": "2026-10-25T12:35:37.579Z",
       "bestRank": 18
-    },
-    {
-      "key": "50274771",
-      "id": "50274771",
-      "headline": "Toronto visits Calgary after Nylander's 2-goal game",
-      "summary": "Toronto Maple Leafs (7-4-2, in the Atlantic Division) vs. Calgary Flames (4-6, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892583",
-      "sport": "NHL",
-      "published": "2026-10-25T08:11:46.000Z",
-      "firstSeen": "2026-10-25T09:27:51.709Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50274768",
-      "id": "50274768",
-      "headline": "Wild visit the Canucks after Coleman's 2-goal game",
-      "summary": "Minnesota Wild (7-3-2, in the Central Division) vs. Vancouver Canucks (2-9-1, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892581",
-      "sport": "NHL",
-      "published": "2026-10-25T08:10:58.000Z",
-      "firstSeen": "2026-10-25T09:27:51.709Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50274767",
-      "id": "50274767",
-      "headline": "Nashville hosts Colorado in Central Division play",
-      "summary": "Colorado Avalanche (6-4-1, in the Central Division) vs. Nashville Predators (3-3-4, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892580",
-      "sport": "NHL",
-      "published": "2026-10-25T08:10:57.000Z",
-      "firstSeen": "2026-10-25T09:27:51.709Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50274766",
-      "id": "50274766",
-      "headline": "Rangers try to extend home win streak, face the Kings",
-      "summary": "Los Angeles Kings (2-5-2, in the Pacific Division) vs. New York Rangers (7-5-1, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892582",
-      "sport": "NHL",
-      "published": "2026-10-25T08:10:56.000Z",
-      "firstSeen": "2026-10-25T09:27:51.709Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50274765",
-      "id": "50274765",
-      "headline": "Oilers play the Red Wings following Draisaitl's 2-goal game",
-      "summary": "Detroit Red Wings (4-4-3, in the Atlantic Division) vs. Edmonton Oilers (8-2-1, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892584",
-      "sport": "NHL",
-      "published": "2026-10-25T08:10:55.000Z",
-      "firstSeen": "2026-10-25T09:27:51.709Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50274638",
-      "id": "50274638",
-      "headline": "Indiana travels to Brooklyn for conference matchup",
-      "summary": "Indiana Pacers (1-1, ninth in the Eastern Conference) vs. Brooklyn Nets (0-2, 13th in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909862",
-      "sport": "NBA",
-      "published": "2026-10-25T07:02:46.000Z",
-      "firstSeen": "2026-10-25T09:27:51.709Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50274522",
-      "id": "50274522",
-      "headline": "Dampier runs wild, No. 10 Utah holds off No. 14 Houston 21-13 to remain undefeated",
-      "summary": "— Devon Dampier ran for 150 yards and two touchdowns and No. 10 Utah held off No. 14 Houston 21-13 on Saturday night to keep the Utes among the dwindling unbeatens.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856837",
-      "sport": "College football",
-      "published": "2026-10-25T06:55:46.000Z",
-      "firstSeen": "2026-10-25T06:41:01.208Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50270000",
-      "id": "50270000",
-      "headline": "Upsets and chaos reign supreme in college football's Week 8",
-      "summary": "With more top-ranked teams losing, college football continues to be unpredictable in 2026.",
-      "url": "https://www.espn.com/college-football/story/_/page/gamedayfinal102426/week-8-top-games-highlights-takeaways",
-      "sport": "College football",
-      "published": "2026-10-25T06:44:11.000Z",
-      "firstSeen": "2026-10-25T06:41:01.208Z",
-      "bestRank": 3
     }
   ]
 }
