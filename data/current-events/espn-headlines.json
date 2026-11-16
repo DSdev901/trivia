@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-11-16T06:46:03.180Z",
+  "generatedAt": "2026-11-16T09:31:13.593Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-26T06:46:03.180Z",
-  "windowEnd": "2026-11-16T06:46:03.180Z",
+  "windowStart": "2026-10-26T09:31:13.593Z",
+  "windowEnd": "2026-11-16T09:31:13.593Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,327 @@
     "Tennis",
     "MMA"
   ],
-  "count": 6633,
+  "count": 6650,
   "items": [
+    {
+      "key": "50499688",
+      "id": "50499688",
+      "headline": "Wild bring 3-game win streak into matchup with the Predators",
+      "summary": "Nashville Predators (11-5-5, in the Central Division) vs. Minnesota Wild (15-3-4, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892735",
+      "sport": "NHL",
+      "published": "2026-11-16T09:11:47.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50499687",
+      "id": "50499687",
+      "headline": "Oilers bring 5-game win streak into matchup with the Panthers",
+      "summary": "Edmonton Oilers (16-3-3, in the Pacific Division) vs. Florida Panthers (12-7-3, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892730",
+      "sport": "NHL",
+      "published": "2026-11-16T09:11:46.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50499686",
+      "id": "50499686",
+      "headline": "Maple Leafs come into matchup against the Blackhawks on losing streak",
+      "summary": "Toronto Maple Leafs (8-12-2, in the Atlantic Division) vs. Chicago Blackhawks (5-13-2, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892733",
+      "sport": "NHL",
+      "published": "2026-11-16T09:11:45.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50499685",
+      "id": "50499685",
+      "headline": "San Jose hosts Calgary in Pacific Division action",
+      "summary": "Calgary Flames (9-11-1, in the Pacific Division) vs. San Jose Sharks (10-11-2, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892738",
+      "sport": "NHL",
+      "published": "2026-11-16T09:11:44.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50499684",
+      "id": "50499684",
+      "headline": "Blue Jackets bring losing streak into game against the Islanders",
+      "summary": "Columbus Blue Jackets (7-11, in the Metropolitan Division) vs. New York Islanders (9-6-4, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892731",
+      "sport": "NHL",
+      "published": "2026-11-16T09:11:42.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50499683",
+      "id": "50499683",
+      "headline": "Ducks visit the Blues after Sennecke's 2-goal game",
+      "summary": "Anaheim Ducks (11-9-1, in the Pacific Division) vs. St. Louis Blues (9-9-2, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892734",
+      "sport": "NHL",
+      "published": "2026-11-16T09:11:41.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50499682",
+      "id": "50499682",
+      "headline": "Jets take on the Senators following shootout victory",
+      "summary": "Ottawa Senators (13-6-2, in the Atlantic Division) vs. Winnipeg Jets (10-8-3, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892736",
+      "sport": "NHL",
+      "published": "2026-11-16T09:11:40.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50499681",
+      "id": "50499681",
+      "headline": "Buffalo takes losing streak into game against Philadelphia",
+      "summary": "Buffalo Sabres (8-8-4, in the Atlantic Division) vs. Philadelphia Flyers (6-11-6, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892732",
+      "sport": "NHL",
+      "published": "2026-11-16T09:11:39.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50499680",
+      "id": "50499680",
+      "headline": "Vancouver visits Utah after Chytil's 2-goal game",
+      "summary": "Vancouver Canucks (4-17-1, in the Pacific Division) vs. Utah Mammoth (10-8-3, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892727",
+      "sport": "NHL",
+      "published": "2026-11-16T09:11:38.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50499679",
+      "id": "50499679",
+      "headline": "Stars visit the Golden Knights after shootout victory",
+      "summary": "Dallas Stars (12-6-2, in the Central Division) vs. Vegas Golden Knights (13-6-3, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892737",
+      "sport": "NHL",
+      "published": "2026-11-16T09:11:37.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50499678",
+      "id": "50499678",
+      "headline": "Lightning host the Capitals in Eastern Conference play",
+      "summary": "Washington Capitals (10-8, in the Metropolitan Division) vs. Tampa Bay Lightning (13-5-2, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892729",
+      "sport": "NHL",
+      "published": "2026-11-16T09:11:36.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50499677",
+      "id": "50499677",
+      "headline": "Kings bring 4-game losing streak into matchup with the Bruins",
+      "summary": "Los Angeles Kings (5-11-2, in the Pacific Division) vs. Boston Bruins (13-6-1, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892728",
+      "sport": "NHL",
+      "published": "2026-11-16T09:11:34.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50460862",
+      "id": "50460862",
+      "headline": "Meet Como's Nico Paz, the heir to Lionel Messi's Argentina No. 10 shirt",
+      "summary": "Como's Nico Paz has become one of the best young players in Europe, but now he faces the unenviable task of stepping into Lionel Messi's Argentina No. 10 shirt.",
+      "url": "https://www.espn.com/soccer/story/_/id/50460862/nico-paz-como-argentina-lionel-messi",
+      "sport": "Soccer",
+      "published": "2026-11-16T09:02:57.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50499498",
+      "id": "50499498",
+      "headline": "Transfer rumors, news: Man United eye USMNT's McKennie amid Pochettino arrival",
+      "summary": "Incoming Manchester United boss Mauricio Pochettino is eyeing a quick reunion with USMNT midfielder Weston McKennie. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/50499498/transfer-rumors-news-usmnt-pochettino-mckennie-man-united",
+      "sport": "Soccer",
+      "published": "2026-11-16T08:46:46.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50470622",
+      "id": "50470622",
+      "headline": "Mauricio Pochettino to Man United: Is Tottenham love affair finally over?",
+      "summary": "Mauricio Pochettino is back in the Premier League as the new Man United boss. For Tottenham fans, it's complicated.",
+      "url": "https://www.espn.com/soccer/story/_/id/50470622/mauricio-pochettino-tottenham-man-united",
+      "sport": "Soccer",
+      "published": "2026-11-16T07:38:49.000Z",
+      "firstSeen": "2026-11-13T15:20:28.909Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50499348",
+      "id": "50499348",
+      "headline": "How Emmett Johnson proved he could handle a bigger workload in fantasy Week 10",
+      "summary": "How Emmett Johnson proved he could handle a bigger workload in fantasy Week 10",
+      "url": "https://www.espn.com/video/clip/_/id/50499348/how-emmett-johnson-proved-handle-bigger-workload-fantasy-week-10",
+      "sport": "NFL",
+      "published": "2026-11-16T07:34:53.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50499235",
+      "id": "50499235",
+      "headline": "Joe Burrow's 4-TD night puts QB in company of Tom Brady, Peyton Manning",
+      "summary": "Bengals QB Joe Burrow threw for 409 yards with four touchdowns and no interceptions Sunday night, becoming just the third player in NFL history after Tom Brady and Peyton Manning to throw at least 20 passing touchdowns in a five-game span.",
+      "url": "https://www.espn.com/nfl/story/_/id/50499235/bengals-joe-burrow-4-touchdowns-win-vs-steelers-puts-company-tom-brady-peyton-manning",
+      "sport": "NFL",
+      "published": "2026-11-16T07:30:39.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50499358",
+      "id": "50499358",
+      "headline": "Will Jonathan Taylor and Seth McGowan continue as a one-two punch in fantasy?",
+      "summary": "Will Jonathan Taylor and Seth McGowan continue as a one-two punch in fantasy?",
+      "url": "https://www.espn.com/video/clip/_/id/50499358/will-jonathan-taylor-seth-mcgowan-continue-one-two-punch-fantasy",
+      "sport": "NFL",
+      "published": "2026-11-16T07:28:36.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50499331",
+      "id": "50499331",
+      "headline": "San Antonio faces Detroit, looks for 6th straight home win",
+      "summary": "Detroit Pistons (8-4, third in the Eastern Conference) vs. San Antonio Spurs (12-2, first in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910004",
+      "sport": "NBA",
+      "published": "2026-11-16T07:04:52.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50499330",
+      "id": "50499330",
+      "headline": "Randle, Nets take on the 76ers",
+      "summary": "Philadelphia 76ers (11-3, second in the Eastern Conference) vs. Brooklyn Nets (3-9, 13th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909997",
+      "sport": "NBA",
+      "published": "2026-11-16T07:04:51.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50499329",
+      "id": "50499329",
+      "headline": "Boston faces Orlando, aims for 7th straight victory",
+      "summary": "Orlando Magic (5-7, eighth in the Eastern Conference) vs. Boston Celtics (11-2, first in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909994",
+      "sport": "NBA",
+      "published": "2026-11-16T07:04:50.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50499328",
+      "id": "50499328",
+      "headline": "Wizards take on the Grizzlies on 7-game skid",
+      "summary": "Memphis Grizzlies (9-4, sixth in the Western Conference) vs. Washington Wizards (4-10, 12th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909996",
+      "sport": "NBA",
+      "published": "2026-11-16T07:04:48.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50499327",
+      "id": "50499327",
+      "headline": "Miami faces Houston, aims for 5th straight win",
+      "summary": "Houston Rockets (11-3, third in the Western Conference) vs. Miami Heat (7-6, fifth in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909998",
+      "sport": "NBA",
+      "published": "2026-11-16T07:04:47.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50499326",
+      "id": "50499326",
+      "headline": "New York visits Toronto following overtime win against Toronto",
+      "summary": "New York Knicks (7-6, sixth in the Eastern Conference) vs. Toronto Raptors (5-8, ninth in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910002",
+      "sport": "NBA",
+      "published": "2026-11-16T07:04:46.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50499325",
+      "id": "50499325",
+      "headline": "Charlotte visits Los Angeles after Doncic's 43-point outing",
+      "summary": "Charlotte Hornets (4-9, 11th in the Eastern Conference) vs. Los Angeles Lakers (12-2, second in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910005",
+      "sport": "NBA",
+      "published": "2026-11-16T07:04:45.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50499324",
+      "id": "50499324",
+      "headline": "Utah plays Los Angeles, aims to break road losing streak",
+      "summary": "Utah Jazz (1-13, 15th in the Western Conference) vs. Los Angeles Clippers (4-8, 12th in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910006",
+      "sport": "NBA",
+      "published": "2026-11-16T07:04:44.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50499323",
+      "id": "50499323",
+      "headline": "Phoenix visits Denver, aims to stop road skid",
+      "summary": "Phoenix Suns (5-7, 11th in the Western Conference) vs. Denver Nuggets (7-4, eighth in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910001",
+      "sport": "NBA",
+      "published": "2026-11-16T07:04:42.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50497966",
+      "id": "50497966",
+      "headline": "Steelers rally around Mason McCormick after guard suffers gruesome injury",
+      "summary": "Steelers guard Mason McCormick had an air cast placed on his ankle and was carted off the field with what appeared to be a serious injury Sunday night against the Bengals.",
+      "url": "https://www.espn.com/nfl/story/_/id/50497966/steelers-mason-mccormick-carted-field-air-cast-ankle",
+      "sport": "NFL",
+      "published": "2026-11-16T07:01:21.000Z",
+      "firstSeen": "2026-11-16T03:28:56.236Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50443510",
+      "id": "50443510",
+      "headline": "NFL Week 10: Big takeaways, questions and fantasy spin from Sunday's games",
+      "summary": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 10.",
+      "url": "https://www.espn.com/nfl/story/_/id/50443510/week-10-sunday-games-takeaways-questions-2026",
+      "sport": "NFL",
+      "published": "2026-11-16T06:53:37.000Z",
+      "firstSeen": "2026-11-15T18:21:33.659Z",
+      "bestRank": 1
+    },
     {
       "key": "50498985",
       "id": "50498985",
@@ -57,6 +376,28 @@
       "bestRank": 3
     },
     {
+      "key": "50498905",
+      "id": "50498905",
+      "headline": "Iowa State coach Bill Fennelly suspended for contact with player",
+      "summary": "Iowa State women's basketball coach Bill Fennelly nudged a player's head with his hand Sunday in a home victory over Illinois Chicago.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50498905/iowa-state-coach-bill-fennelly-suspended-contact-player",
+      "sport": "Women's college basketball",
+      "published": "2026-11-16T06:31:45.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50498547",
+      "id": "50498547",
+      "headline": "UCLA raises banner for first-ever NCAA women's basketball title",
+      "summary": "UCLA celebrated its first NCAA women's basketball championship in front of nearly 9,000 fans, decorated alumni and the 10-0 Bruins football team.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50498547/ucla-raises-banner-first-ever-women-basketball-title",
+      "sport": "Women's college basketball",
+      "published": "2026-11-16T06:23:34.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 2
+    },
+    {
       "key": "50498564",
       "id": "50498564",
       "headline": "Gilgeous-Alexander scores 37 as Thunder beat Kings 125-103 to snap 3-game losing streak",
@@ -66,17 +407,6 @@
       "published": "2026-11-16T06:21:34.000Z",
       "firstSeen": "2026-11-16T06:46:03.180Z",
       "bestRank": 4
-    },
-    {
-      "key": "50497966",
-      "id": "50497966",
-      "headline": "Steelers rally around Mason McCormick after guard suffers gruesome injury",
-      "summary": "Steelers guard Mason McCormick had an air cast placed on his ankle and was carted off the field with what appeared to be a serious injury Sunday night against the Bengals.",
-      "url": "https://www.espn.com/nfl/story/_/id/50497966/steelers-mason-mccormick-carted-field-air-cast-ankle",
-      "sport": "NFL",
-      "published": "2026-11-16T06:20:45.000Z",
-      "firstSeen": "2026-11-16T03:28:56.236Z",
-      "bestRank": 1
     },
     {
       "key": "50498535",
@@ -131,17 +461,6 @@
       "sport": "NFL",
       "published": "2026-11-16T05:24:51.000Z",
       "firstSeen": "2026-11-15T15:21:03.804Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50443510",
-      "id": "50443510",
-      "headline": "NFL Week 10: Big takeaways, questions and fantasy spin from Sunday's games",
-      "summary": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 10.",
-      "url": "https://www.espn.com/nfl/story/_/id/50443510/week-10-sunday-games-takeaways-questions-2026",
-      "sport": "NFL",
-      "published": "2026-11-16T05:22:31.000Z",
-      "firstSeen": "2026-11-15T18:21:33.659Z",
       "bestRank": 1
     },
     {
@@ -308,6 +627,17 @@
       "published": "2026-11-16T04:38:23.000Z",
       "firstSeen": "2026-11-16T03:28:56.236Z",
       "bestRank": 2
+    },
+    {
+      "key": "50498496",
+      "id": "50498496",
+      "headline": "Oregon State Beavers vs. Arizona Wildcats: Game Highlights",
+      "summary": "Oregon State Beavers vs. Arizona Wildcats: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50498496/game-highlights",
+      "sport": "Women's college basketball",
+      "published": "2026-11-16T04:32:37.000Z",
+      "firstSeen": "2026-11-16T09:31:13.593Z",
+      "bestRank": 3
     },
     {
       "key": "50498452",
@@ -3365,17 +3695,6 @@
       "sport": "F1",
       "published": "2026-11-15T13:20:58.000Z",
       "firstSeen": "2026-11-13T18:21:18.299Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50470622",
-      "id": "50470622",
-      "headline": "Mauricio Pochettino to Man United: Is Tottenham love affair finally over?",
-      "summary": "Mauricio Pochettino is back in the Premier League as the new Man United boss. For Tottenham fans, it's complicated.",
-      "url": "https://www.espn.com/soccer/story/_/id/50470622/mauricio-pochettino-tottenham-man-united",
-      "sport": "Soccer",
-      "published": "2026-11-15T13:15:23.000Z",
-      "firstSeen": "2026-11-13T15:20:28.909Z",
       "bestRank": 1
     },
     {
@@ -72853,138 +73172,6 @@
       "published": "2026-10-26T09:41:25.000Z",
       "firstSeen": "2026-10-26T14:06:18.685Z",
       "bestRank": 1
-    },
-    {
-      "key": "50285656",
-      "id": "50285656",
-      "headline": "Pierre Sage: 'No noise inside' Crystal Palace despite job pressure",
-      "summary": "Crystal Palace boss Pierre Sage insisted there was \"no noise inside\" the club after their frustrating 2-0 loss to Newcastle raised more questions about his job security.",
-      "url": "https://www.espn.com/soccer/story/_/id/50285656/pierre-sage-no-noise-crystal-palace-job-pressure",
-      "sport": "Soccer",
-      "published": "2026-10-26T08:45:22.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50285669",
-      "id": "50285669",
-      "headline": "Jermaine Pennant rescued by pet after dog attack: 'He saved my life'",
-      "summary": "Jermaine Pennant says he needed more than 50 stitches to his leg after he was the victim of a dog attack.",
-      "url": "https://www.espn.com/soccer/story/_/id/50285669/jermaine-pennant-attacked-dog-needs-50-stitches",
-      "sport": "Soccer",
-      "published": "2026-10-26T08:25:32.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50285655",
-      "id": "50285655",
-      "headline": "Predators host the Islanders following O'Reilly's 2-goal performance",
-      "summary": "New York Islanders (5-4-2, in the Metropolitan Division) vs. Nashville Predators (4-3-4, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892589",
-      "sport": "NHL",
-      "published": "2026-10-26T08:11:52.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50285654",
-      "id": "50285654",
-      "headline": "Blues and Canadiens take the ice in non-conference matchup",
-      "summary": "Montreal Canadiens (6-3-2, in the Atlantic Division) vs. St. Louis Blues (5-5-1, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892588",
-      "sport": "NHL",
-      "published": "2026-10-26T08:11:51.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50285653",
-      "id": "50285653",
-      "headline": "Golden Knights host the Senators on losing streak",
-      "summary": "Ottawa Senators (8-4, in the Atlantic Division) vs. Vegas Golden Knights (8-4-1, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892593",
-      "sport": "NHL",
-      "published": "2026-10-26T08:11:50.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50285652",
-      "id": "50285652",
-      "headline": "Hurricanes host the Bruins in Eastern Conference play",
-      "summary": "Boston Bruins (9-2-1, in the Atlantic Division) vs. Carolina Hurricanes (9-2-2, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892586",
-      "sport": "NHL",
-      "published": "2026-10-26T08:11:48.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50285651",
-      "id": "50285651",
-      "headline": "Utah in action against Minnesota after overtime win",
-      "summary": "Minnesota Wild (8-3-2, in the Central Division) vs. Utah Mammoth (8-4, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892592",
-      "sport": "NHL",
-      "published": "2026-10-26T08:11:47.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50285650",
-      "id": "50285650",
-      "headline": "Flyers take on the Blue Jackets following Michkov's 2-goal performance",
-      "summary": "Columbus Blue Jackets (4-5, in the Metropolitan Division) vs. Philadelphia Flyers (3-7-3, in the Metropolitan Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892585",
-      "sport": "NHL",
-      "published": "2026-10-26T08:11:46.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50285644",
-      "id": "50285644",
-      "headline": "Stars bring 5-game win streak into matchup against the Devils",
-      "summary": "New Jersey Devils (7-4, in the Metropolitan Division) vs. Dallas Stars (7-3-1, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892590",
-      "sport": "NHL",
-      "published": "2026-10-26T08:10:56.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50285643",
-      "id": "50285643",
-      "headline": "Buffalo takes losing streak into game against San Jose",
-      "summary": "Buffalo Sabres (4-4-3, in the Atlantic Division) vs. San Jose Sharks (6-5-1, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892595",
-      "sport": "NHL",
-      "published": "2026-10-26T08:10:54.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50285642",
-      "id": "50285642",
-      "headline": "Canucks come into matchup with the Ducks on losing streak",
-      "summary": "Vancouver Canucks (2-10-1, in the Pacific Division) vs. Anaheim Ducks (5-6, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892594",
-      "sport": "NHL",
-      "published": "2026-10-26T08:10:53.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50285641",
-      "id": "50285641",
-      "headline": "Jets take on the Panthers on losing streak",
-      "summary": "Florida Panthers (6-4-2, in the Atlantic Division) vs. Winnipeg Jets (4-4-3, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892591",
-      "sport": "NHL",
-      "published": "2026-10-26T08:10:52.000Z",
-      "firstSeen": "2026-10-26T09:43:33.956Z",
-      "bestRank": 10
     }
   ]
 }
