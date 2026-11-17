@@ -12,8 +12,8 @@
  *                   whats-on-netflix + Wikipedia originals lists for titles
  *                   and dates only, TMDB for plot / cast / poster.
  *                   Rolling 28-day (4-week) window.
- *                   Top 10 matches Netflix's official weekly global chart
- *                   (latest week in all-weeks-global.tsv).
+ *                   Top 10 matches Netflix's official weekly US chart
+ *                   (latest US week in all-weeks-countries.tsv).
  *
  *   node scripts/refresh-current-events.mjs --netflix-images
  *     Backfill posters on the existing Netflix JSON without a full refresh.
@@ -476,7 +476,8 @@ function parseNetflixMonthly(html, year) {
 }
 
 const NETFLIX_TOP10_TSV =
-  "https://www.netflix.com/tudum/top10/data/all-weeks-global.tsv";
+  "https://www.netflix.com/tudum/top10/data/all-weeks-countries.tsv";
+const NETFLIX_TOP10_COUNTRY = "US";
 
 function titlesClose(itemTitle, listTitle) {
   const a = titleCore(itemTitle);
@@ -490,6 +491,11 @@ function titlesClose(itemTitle, listTitle) {
 
 function itemTop10Hit(item, chartTitles) {
   const names = [item.title, ...(item.akas || [])].filter(Boolean);
+  // The US chart lists WWE shows without the brand ("Raw", not "WWE Monday Night RAW").
+  for (const name of [...names]) {
+    const bare = name.replace(/^WWE\s+(Monday Night\s+)?/i, "");
+    if (bare !== name) names.push(bare);
+  }
   let best = null;
   for (const name of names) {
     for (const listed of chartTitles) {
@@ -511,13 +517,15 @@ function parseNetflixTop10Tsv(text) {
   const rankIdx = header.indexOf("weekly_rank");
   const showIdx = header.indexOf("show_title");
   const seasonIdx = header.indexOf("season_title");
-  if (weekIdx < 0 || rankIdx < 0 || showIdx < 0) {
+  const countryIdx = header.indexOf("country_iso2");
+  if (weekIdx < 0 || rankIdx < 0 || showIdx < 0 || countryIdx < 0) {
     throw new Error("unexpected Netflix Top 10 columns");
   }
   let latestWeek = "";
   const rows = [];
   for (let i = 1; i < lines.length; i++) {
     const cols = lines[i].split("\t");
+    if (cols[countryIdx] !== NETFLIX_TOP10_COUNTRY) continue;
     const week = cols[weekIdx];
     if (!week) continue;
     if (!latestWeek || week > latestWeek) latestWeek = week;
@@ -539,14 +547,17 @@ function parseNetflixTop10Tsv(text) {
     addTitle(cols[showIdx], rank);
     if (seasonIdx >= 0) addTitle(cols[seasonIdx], rank);
   }
+  if (!latestWeek || byKey.size === 0) {
+    throw new Error(`no ${NETFLIX_TOP10_COUNTRY} rows in Netflix Top 10 TSV`);
+  }
   return { week: latestWeek, titles: [...byKey.values()] };
 }
 
 async function fetchNetflixTop10() {
-  const text = await fetchText(NETFLIX_TOP10_TSV, 60000);
+  const text = await fetchText(NETFLIX_TOP10_TSV, 120000);
   const chart = parseNetflixTop10Tsv(text);
   console.log(
-    `  [netflix] top 10 week ${chart.week}: ${chart.titles.length} titles`
+    `  [netflix] ${NETFLIX_TOP10_COUNTRY} top 10 week ${chart.week}: ${chart.titles.length} titles`
   );
   return chart;
 }
@@ -1960,7 +1971,7 @@ async function main() {
   const onlyTop10 = process.argv.includes("--netflix-top10");
   const netflixWin = { start: netflixWindowStart, end: windowEnd };
   if (onlyTop10) {
-    console.log("Tagging Netflix Top 10 from the weekly global chart…");
+    console.log("Tagging Netflix Top 10 from the weekly US chart…");
     await tagExistingNetflixTop10();
     console.log("Done — Netflix Top 10 tags updated.");
     return;
