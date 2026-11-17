@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-11-17T03:39:56.289Z",
+  "generatedAt": "2026-11-17T06:44:57.552Z",
   "retentionDays": 21,
   "windowStart": "2026-10-27",
   "windowEnd": "2026-11-17",
   "snapshotIntervalHours": 3,
-  "count": 2089,
+  "count": 2097,
   "items": [
     {
       "headline": "Trump’s Asia trip: Deals in Manila and Shenzhen, nuclear summit with Xi and Putin, maybe Kim meeting",
@@ -16,6 +16,48 @@
       "top": true,
       "bestRank": 1,
       "firstSeen": "2026-11-17T03:39:56.289Z"
+    },
+    {
+      "headline": "Two major Kyiv bridges hit in Russian attack, mayor says",
+      "date": "2026-11-17",
+      "bucket": "Conflict",
+      "summary": "The reported strikes come a day after Ukraine launched its largest recorded drone attack on Russia since the start of the war, according to Moscow.",
+      "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-17T03:39:56.289Z",
+      "top": true,
+      "bestRank": 15
+    },
+    {
+      "headline": "Ukraine accuses Russia of targeting rescue operation after 'double-tap' strike kills 72",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "Efforts to recover bodies after a “double-tap” attack in southern Ukraine are being hampered by continuing Russian strikes, officials say.",
+      "url": "https://www.bbc.co.uk/news/articles/c30rk8x5g80qo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-17T06:44:57.552Z"
+    },
+    {
+      "headline": "Imran Khan seeks urgent medical care fearing he 'may not return alive'",
+      "date": "2026-11-17",
+      "bucket": "Politics",
+      "summary": "Pakistan's ex-prime minister, who has been in prison since August 2023, says he has been denied justice.",
+      "url": "https://www.bbc.co.uk/news/articles/cr894xq5yeyko?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-17T06:44:57.552Z"
+    },
+    {
+      "headline": "Vance says he will decide 'sometime next year' about 2028 US presidential run",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "The US vice-president tells Fox News that when he makes a decision to run or otherwise, he will \"be all in on whatever that decision is\".",
+      "url": "https://www.bbc.co.uk/news/articles/cwkgr9m41engo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-17T06:44:57.552Z"
+    },
+    {
+      "headline": "Kidnap, child marriage and poverty: Why millions of Nigerian children can't go to school",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "BBC World Service launches programme in Hausa for out-of-school children in West Africa.",
+      "url": "https://www.bbc.co.uk/news/articles/c3pw450ndyjqo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-17T06:44:57.552Z"
     },
     {
       "headline": "Trump Looks to Flex Power at Xi, Putin Summit After Midterm Loss",
@@ -704,16 +746,6 @@
       "bestRank": null
     },
     {
-      "headline": "Africa: Trading in yuan",
-      "date": "2026-11-16",
-      "bucket": "World",
-      "summary": "The dollar has long ruled Africa's financial landscape. But as more countries turn to China's yuan, the balance of economic power could be shifting.",
-      "url": "https://www.npr.org/2026/11/16/nx-s1-6035000/africa-trading-in-yuan",
-      "firstSeen": "2026-11-17T00:47:51.275Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "Houthi rebel advance in Yemen may further destabilise global economy",
       "date": "2026-11-16",
       "bucket": "World",
@@ -730,6 +762,78 @@
       "summary": "Robert Pattinson has been announced as the next James Bond, becoming the seventh actor to take up the mantle of 007.",
       "url": "https://www.bbc.co.uk/news/videos/cmd91xjd9zk2o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-11-16T21:36:38.270Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Is India rethinking its short-term military recruitment scheme?",
+      "date": "2026-11-16",
+      "bucket": "World",
+      "summary": "India has softened its recruitment scheme, giving young soldiers a longer military stint and another shot at permanent service.",
+      "url": "https://www.bbc.co.uk/news/articles/c8ly0yr7wv1no?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-16T21:36:38.270Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Faisal Islam: What's in the Brexit reset food deal and are there trade-offs?",
+      "date": "2026-11-16",
+      "bucket": "World",
+      "summary": "EU minister Hamish Falconer insists Britain would have some influence on policy as part of a new deal.",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-16T21:36:38.270Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Libyan town rebuilt after devastating floods becomes showcase for strongman's rule",
+      "date": "2026-11-16",
+      "bucket": "World",
+      "summary": "The remarkable reconstruction of Derna is being used as a showcase for the rest of Libya by Khalifa Haftar and his sons.",
+      "url": "https://www.bbc.co.uk/news/articles/cr0qjz77j4k1o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-16T09:45:31.506Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "California sues OpenAI over Hugging Face attack",
+      "date": "2026-11-16",
+      "bucket": "World",
+      "summary": "Attorney General Rob Bonta alleges OpenAI misled and endangered the public",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy4xv2mxglo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-17T06:44:57.552Z"
+    },
+    {
+      "headline": "China is hosting the world's leaders in its AI wonderland. Here's what they won't see",
+      "date": "2026-11-16",
+      "bucket": "World",
+      "summary": "Leave Shenzhen's tech-flecked city skyline and you run into the challenges confronting Xi's China.",
+      "url": "https://www.bbc.co.uk/news/articles/cm3eg3v9jkk8o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-17T06:44:57.552Z"
+    },
+    {
+      "headline": "Taking Korea's toughest exam from behind bars",
+      "date": "2026-11-16",
+      "bucket": "World",
+      "summary": "Eleven convicts at the Mandela Boys' School will be among the thousands of young Koreans taking the country's hardest exam, the Suneung.",
+      "url": "https://www.bbc.co.uk/news/articles/cmewvxg855yno?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-17T06:44:57.552Z"
+    },
+    {
+      "headline": "The AI start-ups fixing India's broken roads and messy land records",
+      "date": "2026-11-16",
+      "bucket": "World",
+      "summary": "From legal-tech to healthcare, dozens of Indian AI start-ups are solving uniquely Indian challenges.",
+      "url": "https://www.bbc.co.uk/news/articles/c820vnln2lzpo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-17T06:44:57.552Z"
+    },
+    {
+      "headline": "Africa: Trading in yuan",
+      "date": "2026-11-16",
+      "bucket": "World",
+      "summary": "The dollar has long ruled Africa's financial landscape. But as more countries turn to China's yuan, the balance of economic power could be shifting.",
+      "url": "https://www.npr.org/2026/11/16/nx-s1-6035000/africa-trading-in-yuan",
+      "firstSeen": "2026-11-17T00:47:51.275Z",
       "top": false,
       "bestRank": null
     },
@@ -769,26 +873,6 @@
       "bucket": "World",
       "summary": "The Twilight, Batman and Odyssey star's profile will go even more stellar when he plays James Bond.",
       "url": "https://www.bbc.co.uk/news/articles/c574290jvk8wo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-16T21:36:38.270Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Is India rethinking its short-term military recruitment scheme?",
-      "date": "2026-11-16",
-      "bucket": "World",
-      "summary": "India has softened its recruitment scheme, giving young soldiers a longer military stint and another shot at permanent service.",
-      "url": "https://www.bbc.co.uk/news/articles/c8ly0yr7wv1no?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-16T21:36:38.270Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Faisal Islam: What's in the Brexit reset food deal and are there trade-offs?",
-      "date": "2026-11-16",
-      "bucket": "World",
-      "summary": "EU minister Hamish Falconer insists Britain would have some influence on policy as part of a new deal.",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-11-16T21:36:38.270Z",
       "top": false,
       "bestRank": null
@@ -850,16 +934,6 @@
       "summary": "The trip to China marks Trump's second time this year, and comes as the president and his party faced widespread backlash from voters in the recent midterm elections.",
       "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
       "firstSeen": "2026-11-16T12:50:53.415Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Libyan town rebuilt after devastating floods becomes showcase for strongman's rule",
-      "date": "2026-11-16",
-      "bucket": "World",
-      "summary": "The remarkable reconstruction of Derna is being used as a showcase for the rest of Libya by Khalifa Haftar and his sons.",
-      "url": "https://www.bbc.co.uk/news/articles/cr0qjz77j4k1o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-16T09:45:31.506Z",
       "top": false,
       "bestRank": null
     },
@@ -1252,16 +1326,6 @@
       "top": true,
       "bestRank": 15,
       "firstSeen": "2026-11-16T00:53:03.562Z"
-    },
-    {
-      "headline": "Russian Missiles Hit Kyiv’s North and South Bridges as Allies Prepare to Meet at NATO HQ",
-      "date": "2026-11-15",
-      "bucket": "World",
-      "summary": "Reported by Interesting Engineering.",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPM1dGejVpdzQ3OWRTSGZRZ0M5UllfTUFtUG9aaUd1RTBPaTdQT1VwLW1QTXBuX09TN3NwWWJhcjVsS2RpVDQyazEyYmo3WjFTcDBQVTdhZ0laZWxVQ3FDNGhfRjk5YjZjMFVXS2pfckVEdVJvU1JsUDBWQVVwbGxmSFN6Qi1FamMwVnlfSVVvWQ?oc=5",
-      "top": true,
-      "bestRank": 15,
-      "firstSeen": "2026-11-17T03:39:56.289Z"
     },
     {
       "headline": "Three men sentenced to death in Jordan over fatal church mass shooting",
