@@ -1184,6 +1184,16 @@ async function withPreservedNetflixBriefs(items) {
   }
   return items.map((item) => {
     const preserved = briefs.get(normNetflixTitle(item.title));
+    // A brief from Copilot or a hand edit beats the auto-shortened synopsis
+    // (which publicNetflixItem fills in when a card arrives without one).
+    const auto = compressBrief(item.synopsis);
+    const own = tidyBrief(item.brief);
+    if (own && own !== auto && briefIsUsable(own, item.synopsis)) {
+      return { ...item, brief: own };
+    }
+    if (briefIsUsable(preserved, item.synopsis)) {
+      return { ...item, brief: tidyBrief(preserved) };
+    }
     if (briefIsUsable(item.brief, item.synopsis)) {
       return { ...item, brief: tidyBrief(item.brief) };
     }
