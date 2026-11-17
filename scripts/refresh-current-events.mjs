@@ -11,7 +11,8 @@
  *   Netflix       — TVMaze web schedule (series that actually aired),
  *                   whats-on-netflix + Wikipedia originals lists for titles
  *                   and dates only, TMDB for plot / cast / poster.
- *                   Rolling 28-day (4-week) window.
+ *                   Rolling 28-day (4-week) window, limited to titles
+ *                   streaming on Netflix in the US (TMDB / JustWatch).
  *                   Top 10 matches Netflix's official weekly US chart
  *                   (latest US week in all-weeks-countries.tsv).
  *
@@ -19,6 +20,9 @@
  *     Backfill posters on the existing Netflix JSON without a full refresh.
  *   node scripts/refresh-current-events.mjs --netflix-top10
  *     Retag the existing Netflix JSON from the current Top 10 chart.
+ *   node scripts/refresh-current-events.mjs --netflix-us
+ *     Drop existing Netflix cards that are not streaming on Netflix in the US
+ *     (TMDB / JustWatch US providers).
  */
 
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -593,6 +597,149 @@ async function tagExistingNetflixTop10() {
   await writeFile(file, `${JSON.stringify(raw, null, 2)}\n`);
 }
 
+/* -------- Netflix: keep only titles streaming on Netflix in the US -------- */
+
+// JustWatch provider ids (via TMDB): Netflix, Netflix Standard with Ads.
+const US_NETFLIX_PROVIDER_IDS = new Set([8, 1796]);
+
+/**
+ * TMDB candidates for a card, best first. Duplicate entries are common (a doc
+ * listed as both tv and movie, a new season filed as its own show), so the
+ * US check looks at every plausible match, not just the top one.
+ */
+async function tmdbCandidatesFor(item) {
+  const out = [];
+  const seen = new Set();
+  const add = (kind, id, score) => {
+    const key = `${kind}:${id}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    out.push({ kind, id: String(id), score });
+  };
+  const m = String(item.tmdbId || "").match(/^(tv|movie):(\d+)$/);
+  if (m) add(m[1], m[2], 99);
+  // tmdbSearchHits stops at the first kind with an exact match; search the
+  // other kind too so a tv/movie duplicate cannot hide the real entry.
+  const flipped = {
+    ...item,
+    type: tmdbSearchKinds(item)[0] === "movie" ? "Series" : "Film",
+  };
+  const hits = [...(await tmdbSearchHits(item)), ...(await tmdbSearchHits(flipped))]
+    .map((hit) => ({ hit, score: tmdbHitScore(item, hit) }))
+    .filter((row) => row.score >= 4)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 4);
+  for (const { hit, score } of hits) add(hit.kind, hit.id, score);
+  return out;
+}
+
+/**
+ * US availability for one TMDB entry (JustWatch data):
+ *   "netflix"   streaming on Netflix in the US
+ *   "elsewhere" streaming in the US, but not on Netflix
+ *   "none"      no US streaming offers listed (JustWatch often lags or skips
+ *               brand-new and live titles, so this is not proof of absence)
+ *   null        lookup failed
+ */
+async function usNetflixStatus({ kind, id }) {
+  const STREAM = ["flatrate", "ads", "free"];
+  if (TMDB_KEY) {
+    try {
+      const data = await tmdbApi(`/${kind}/${id}/watch/providers`);
+      if (data) {
+        const us = data.results?.US || {};
+        const offers = STREAM.flatMap((k) => us[k] || []);
+        if (offers.some((p) => US_NETFLIX_PROVIDER_IDS.has(Number(p.provider_id))))
+          return "netflix";
+        return offers.length ? "elsewhere" : "none";
+      }
+    } catch (err) {
+      console.warn(`  [netflix] tmdb providers ${kind}/${id}: ${err.message}`);
+    }
+  }
+  const html = await tmdbFetch(
+    `https://www.themoviedb.org/${kind}/${id}/remote/watch?translate=false&locale=US`
+  );
+  if (!/JustWatch/i.test(html)) return null; // not the provider fragment
+  if (/There are no offers/i.test(html)) return "none";
+  let streams = false;
+  for (const block of html.split(/<div class="ott_provider">/).slice(1)) {
+    const heading = stripTags(block.match(/<h3>([\s\S]*?)<\/h3>/)?.[1] || "");
+    if (!/stream|ads|free/i.test(heading)) continue;
+    for (const cx of block.matchAll(/[?&]cx=([A-Za-z0-9_-]+)/g)) {
+      const ctx = Buffer.from(cx[1], "base64").toString("utf8");
+      streams = true;
+      for (const pid of ctx.matchAll(/"providerId":(\d+)/g)) {
+        if (US_NETFLIX_PROVIDER_IDS.has(Number(pid[1]))) return "netflix";
+      }
+    }
+    if (/title="Watch [^"]* on Netflix(?: Standard with Ads)?"/.test(block)) return "netflix";
+  }
+  return streams ? "elsewhere" : "none";
+}
+
+/**
+ * Drop cards that stream in the US only on other services (worldwide sources
+ * also list regional originals). Any plausible TMDB match on US Netflix keeps
+ * a card; dropping needs a strong match that streams elsewhere and no match
+ * on Netflix. Unlisted titles are kept and named in the log.
+ */
+async function filterUsNetflix(items) {
+  const kept = [];
+  const dropped = [];
+  const unlisted = [];
+  let confirmed = 0;
+  for (const item of items) {
+    let verdict = null;
+    try {
+      for (const ref of await tmdbCandidatesFor(item)) {
+        const status = await usNetflixStatus(ref);
+        await sleep(250);
+        if (status === "netflix") {
+          verdict = "netflix";
+          if (ref.score !== 99) item.tmdbId = `${ref.kind}:${ref.id}`;
+          break;
+        }
+        if (status === "elsewhere" && ref.score >= 6) verdict = "elsewhere";
+        else if (status === "none" && !verdict) verdict = "none";
+      }
+    } catch (err) {
+      console.warn(`  [netflix] us check "${item.title}": ${err.message}`);
+    }
+    if (verdict === "netflix") confirmed += 1;
+    if (verdict === "elsewhere") dropped.push(item);
+    else {
+      if (verdict !== "netflix") unlisted.push(item.title);
+      kept.push(item);
+    }
+  }
+  if (!confirmed) {
+    console.warn("  [netflix] us check confirmed nothing — keeping list unfiltered");
+    return items;
+  }
+  console.log(
+    `  [netflix] us netflix: ${confirmed} confirmed, ${dropped.length} dropped, ${unlisted.length} unlisted (kept)`
+  );
+  netflixReview.usDropped = dropped.map((i) => i.title);
+  netflixReview.usUnlisted = [...unlisted];
+  if (dropped.length)
+    console.log(`  [netflix] streams elsewhere in US: ${dropped.map((i) => i.title).join(" | ")}`);
+  if (unlisted.length) console.log(`  [netflix] not listed for US yet: ${unlisted.join(" | ")}`);
+  return kept;
+}
+
+async function filterExistingNetflixUs() {
+  const file = path.join(OUT_DIR, "netflix.json");
+  const raw = JSON.parse(await readFile(file, "utf8"));
+  const items = raw.items || [];
+  // Copies, so lookup-only fields (tmdbId) stay out of the public JSON.
+  const copies = items.map((i) => ({ ...i }));
+  const kept = new Set(await filterUsNetflix(copies));
+  raw.items = items.filter((_, idx) => kept.has(copies[idx]));
+  await writeFile(file, `${JSON.stringify(raw, null, 2)}\n`);
+  console.log(`  [netflix] wrote ${raw.items.length}/${items.length} items`);
+}
+
 function seriesTypeFromGenre(genre) {
   if (/docuseries/i.test(genre)) return "Docuseries";
   if (/documentary|true crime|sports/i.test(genre)) return "Documentary";
@@ -826,6 +973,7 @@ function mergeNetflixCards(keep, incoming) {
 
 function likelySameShow(a, b) {
   if (a.tvmazeId && b.tvmazeId && a.tvmazeId === b.tvmazeId) return true;
+  if (a.tmdbId && b.tmdbId && a.tmdbId === b.tmdbId) return true;
   if (a.wikiTitle && b.wikiTitle && a.wikiTitle === b.wikiTitle) return true;
   if (sameTitle(a.title, b.title)) return true;
   if (titlesOverlap(a, b)) return true;
@@ -849,9 +997,124 @@ function likelySameShow(a, b) {
   return false;
 }
 
+/**
+ * Source-list debris in titles: Wikipedia footnote markers ("[ 37 ]"),
+ * listing suffixes ("/ Live Event"), spaced colons, an unclosed season
+ * paren, and a redundant "(Season 1)".
+ */
+function cleanNetflixTitle(raw) {
+  let t = String(raw || "")
+    .replace(/\s*\[\s*(?:\d+|[a-z]|note \d+|citation needed)\s*\]/gi, "")
+    .replace(/\s*\/\s*(?:Live Event|Live Special|Live)\s*$/i, "")
+    .replace(/\s+:\s*/g, ": ")
+    .replace(/\s+/g, " ")
+    .trim();
+  t = t.replace(/\((Season|Part|Volume) (\d+)\s*$/i, "($1 $2)");
+  t = t.replace(/\s*\(Season 1\)$/i, "");
+  return t;
+}
+
+// Words that show up in title fragments but never as a whole cast name.
+const NOT_A_NAME_WORD = new Set(
+  "a about all an and are at be but by for from get going how i in is it just my new no not of on one our out so that the this to too up we what when who why with you your".split(" ")
+);
+
+/** Drop cast "names" the heuristics lifted out of the title itself. */
+function cleanStarring(item) {
+  const title = String(item.title || "");
+  const whole = titleCore(title);
+  const subtitle = titleCore(title.includes(":") ? title.slice(title.indexOf(":") + 1) : "");
+  const seen = new Set();
+  return (item.starring || []).filter((name) => {
+    const core = titleCore(name);
+    if (!core || seen.has(core)) return false;
+    seen.add(core);
+    if (core === whole || (subtitle && core === subtitle)) return false;
+    return !core.split(" ").some((w) => NOT_A_NAME_WORD.has(w));
+  });
+}
+
+/** What a person should check after a refresh (see writeNetflixReview). */
+const netflixReview = {
+  usUnlisted: [],
+  usDropped: [],
+  merged: [],
+  overrides: [],
+  prevKeys: null,
+};
+
+/** Hand corrections from data/current-events/netflix-overrides.json. */
+async function applyNetflixOverrides(items) {
+  let raw;
+  try {
+    raw = JSON.parse(
+      await readFile(path.join(OUT_DIR, "netflix-overrides.json"), "utf8")
+    );
+  } catch {
+    return items;
+  }
+  const drop = new Set((raw.drop || []).map((t) => titleCore(t)));
+  const fixes = new Map(
+    Object.entries(raw.fix || {}).map(([t, f]) => [titleCore(t), f])
+  );
+  const FIELDS = ["title", "type", "date", "synopsis", "brief", "starring", "image"];
+  const out = [];
+  for (const item of items) {
+    const key = titleCore(item.title);
+    if (drop.has(key)) {
+      console.log(`  [netflix] override: dropped "${item.title}"`);
+      netflixReview.overrides.push(`dropped "${item.title}"`);
+      continue;
+    }
+    const fix = fixes.get(key);
+    if (fix) {
+      for (const f of FIELDS) if (fix[f] != null) item[f] = fix[f];
+      console.log(`  [netflix] override: fixed "${item.title}"`);
+      netflixReview.overrides.push(`fixed "${item.title}"`);
+    }
+    out.push(item);
+  }
+  return out;
+}
+
+/**
+ * One card per TMDB/TVMaze title. Catches the same release listed under two
+ * names (e.g. a Polish original and its English title). The card with more
+ * data keeps its title; the other's fields fill gaps.
+ */
+function dedupeByIdentity(items) {
+  const richness = (i) =>
+    (i.image ? 2 : 0) + ((i.starring || []).length ? 2 : 0) + (i.tvmazeId ? 1 : 0) +
+    (isThinSynopsis(i.synopsis) ? 0 : 2);
+  const byKey = new Map();
+  const out = [];
+  for (const item of items) {
+    const keys = [
+      item.tmdbId && `tmdb:${item.tmdbId}`,
+      item.tvmazeId && `tvmaze:${item.tvmazeId}`,
+    ].filter(Boolean);
+    const other = keys.map((k) => byKey.get(k)).find(Boolean);
+    if (!other) {
+      out.push(item);
+      for (const k of keys) byKey.set(k, item);
+      continue;
+    }
+    const [keep, extra] = richness(item) > richness(other) ? [item, other] : [other, item];
+    const merged = mergeNetflixCards(keep, extra);
+    if (extra.date < merged.date) merged.date = extra.date;
+    console.log(`  [netflix] same title: "${extra.title}" merged into "${keep.title}"`);
+    netflixReview.merged.push(`"${extra.title}" → "${keep.title}"`);
+    Object.keys(other).forEach((k) => delete other[k]);
+    Object.assign(other, merged);
+    for (const k of keys) byKey.set(k, other);
+  }
+  return out;
+}
+
 function dedupeNetflix(items, loose) {
   const out = [];
   for (const item of items) {
+    item.title = cleanNetflixTitle(item.title);
     const other = out.find((d) =>
       loose
         ? likelySameShow(d, item)
@@ -869,12 +1132,16 @@ function normNetflixTitle(s) {
 
 function publicNetflixItem(item) {
   const out = {
-    title: item.title,
+    title: cleanNetflixTitle(item.title),
     type: item.type,
     date: item.date,
     synopsis: String(item.synopsis || "").replace(/\s+/g, " ").trim(),
-    starring: item.starring || [],
+    starring: cleanStarring(item),
   };
+  if (!out.starring.length && isStandup(item)) {
+    const name = comedianFromTitle(out.title);
+    if (name) out.starring = [name];
+  }
   const synopsis = out.synopsis;
   const brief = tidyBrief(item.brief);
   if (briefIsUsable(brief, synopsis)) out.brief = brief;
@@ -883,6 +1150,9 @@ function publicNetflixItem(item) {
     if (compressed) out.brief = compressed;
   }
   if (item.image) out.image = item.image;
+  // Stable identity for the next run's merge and copy reuse.
+  if (/^(tv|movie):\d+$/.test(String(item.tmdbId || ""))) out.tmdbId = item.tmdbId;
+  if (Number(item.tvmazeId) > 0) out.tvmazeId = Number(item.tvmazeId);
   if (item.top10 === true) {
     out.top10 = true;
     const rank = Number(item.top10Rank);
@@ -1457,6 +1727,144 @@ async function tvmazeShowDetails(show) {
   };
 }
 
+/* -------- Netflix source: TMDB discover (needs TMDB_API_KEY) -------- */
+
+const TMDB_NETFLIX_NETWORK = 213;
+
+async function tmdbDiscoverAll(kind, params, maxPages = 6) {
+  const out = [];
+  for (let page = 1; page <= maxPages; page += 1) {
+    const data = await tmdbApi(`/discover/${kind}`, { ...params, page });
+    if (!data) break;
+    out.push(...(data.results || []));
+    if (page >= (data.total_pages || 1)) break;
+  }
+  return out;
+}
+
+function tmdbTvType(genreIds) {
+  const g = new Set(genreIds);
+  if (g.has(99)) return "Docuseries";
+  if (g.has(10764)) return "Reality";
+  return "Series";
+}
+
+function isoDay(raw) {
+  return String(raw || "").slice(0, 10);
+}
+
+/**
+ * Netflix-network shows with an episode in the window, and movies whose
+ * first US digital release falls in the window and that now stream on
+ * Netflix US (a licensed film reaches Netflix long after its digital or
+ * theatrical debut, so it falls outside). Each card carries its TMDB id.
+ */
+async function fetchTmdbDiscoverNetflix() {
+  if (!TMDB_KEY) {
+    console.log("  [netflix] tmdb discover: skipped (no TMDB_API_KEY)");
+    return [];
+  }
+  const items = [];
+  const shows = await tmdbDiscoverAll("tv", {
+    with_networks: TMDB_NETFLIX_NETWORK,
+    "air_date.gte": netflixWindowStart,
+    "air_date.lte": windowEnd,
+    sort_by: "popularity.desc",
+    language: "en-US",
+  });
+  for (const r of shows) {
+    try {
+      const show = await tmdbApi(`/tv/${r.id}`, {
+        language: "en-US",
+        append_to_response: "credits",
+      });
+      const seasonNo = Number(show?.last_episode_to_air?.season_number);
+      if (!(seasonNo >= 1)) continue;
+      const season = await tmdbApi(`/tv/${r.id}/season/${seasonNo}`, {
+        language: "en-US",
+      });
+      const dates = (season?.episodes || [])
+        .map((e) => isoDay(e.air_date))
+        .filter((d) => d && inNetflixWindow(d))
+        .sort();
+      if (!dates.length) continue;
+      const name = show.name || r.name;
+      items.push({
+        title: seasonNo > 1 ? `${name} (Season ${seasonNo})` : name,
+        type: tmdbTvType((show.genres || []).map((g) => g.id)),
+        date: dates[0],
+        tmdbId: `tv:${r.id}`,
+        synopsis: String(show.overview || "").trim(),
+        starring: (show.credits?.cast || []).map((c) => c.name).filter(Boolean).slice(0, 6),
+        image: tmdbImageUrl(show.poster_path),
+        akas: show.original_name && show.original_name !== name ? [show.original_name] : [],
+        confirmedOriginal: true,
+      });
+    } catch (err) {
+      console.warn(`  [netflix] tmdb discover tv ${r.id}: ${err.message}`);
+    }
+    await sleep(120);
+  }
+  const showCount = items.length;
+  const films = await tmdbDiscoverAll("movie", {
+    watch_region: "US",
+    with_watch_providers: [...US_NETFLIX_PROVIDER_IDS].join("|"),
+    with_watch_monetization_types: "flatrate|ads",
+    region: "US",
+    with_release_type: "4",
+    "release_date.gte": netflixWindowStart,
+    "release_date.lte": windowEnd,
+    sort_by: "popularity.desc",
+    language: "en-US",
+  });
+  for (const r of films) {
+    try {
+      const movie = await tmdbApi(`/movie/${r.id}`, {
+        language: "en-US",
+        append_to_response: "credits,release_dates",
+      });
+      const us = (movie?.release_dates?.results || []).find((x) => x.iso_3166_1 === "US");
+      const datesOf = (types) =>
+        (us?.release_dates || [])
+          .filter((x) => types.includes(x.type))
+          .map((x) => isoDay(x.release_date))
+          .filter(Boolean)
+          .sort();
+      const digital = datesOf([4])[0];
+      if (!digital || !inNetflixWindow(digital)) continue;
+      const theatrical = datesOf([2, 3])[0];
+      if (theatrical && Date.parse(digital) - Date.parse(theatrical) > 30 * 86400000)
+        continue; // licensed after a theatrical run
+      const isDoc = (movie.genres || []).some((g) => g.id === 99);
+      items.push({
+        title: movie.title || r.title,
+        type: isDoc ? "Documentary" : "Film",
+        date: digital,
+        tmdbId: `movie:${r.id}`,
+        synopsis: String(movie.overview || "").trim(),
+        starring: (movie.credits?.cast || []).map((c) => c.name).filter(Boolean).slice(0, 6),
+        image: tmdbImageUrl(movie.poster_path),
+        akas:
+          movie.original_title && movie.original_title !== movie.title
+            ? [movie.original_title]
+            : [],
+      });
+    } catch (err) {
+      console.warn(`  [netflix] tmdb discover movie ${r.id}: ${err.message}`);
+    }
+    await sleep(120);
+  }
+  console.log(
+    `  [netflix] tmdb discover: ${showCount} shows, ${items.length - showCount} films`
+  );
+  return items;
+}
+
+/** TVMaze only lists shows; films, specials, and live events are not in it. */
+function isEpisodicType(type) {
+  return /series|docuseries|reality|anime|kids/i.test(String(type || ""));
+}
+
 async function tvmazeSearchShow(title) {
   const q = titleCore(title);
   if (!q) return null;
@@ -1467,11 +1875,10 @@ async function tvmazeSearchShow(title) {
       TVMAZE_UA
     )
   );
-  const list = results || [];
-  const named =
-    list.find((r) => isNetflixShow(r.show) && namesSimilar(r.show.name, title)) ||
-    list.find((r) => titleCore(r.show.name) === q) ||
-    list.find((r) => namesSimilar(r.show.name, title) && r.score >= 1.2);
+  // Only shows TVMaze files under Netflix: a same-named show elsewhere (CBC's
+  // "Heartland" for Netflix's 2026 film) must not supply plot, cast, or poster.
+  const list = (results || []).filter((r) => isNetflixShow(r.show));
+  const named = list.find((r) => namesSimilar(r.show.name, title));
   if (named) return tvmazeShowDetails(named.show);
 
   const netflixHits = list.filter((r) => isNetflixShow(r.show)).slice(0, 4);
@@ -1564,7 +1971,7 @@ async function enrichNetflix(items) {
 
     if (!needsCast(item) && !isThinSynopsis(item.synopsis) && item.image) continue;
 
-    if (!item.tvmazeId) {
+    if (!item.tvmazeId && isEpisodicType(item.type)) {
       try {
         const tv = await tvmazeSearchShow(item.title);
         if (tv) {
@@ -1670,26 +2077,46 @@ async function buildNetflix() {
     console.warn(`  [netflix] wikipedia films: ${err.message}`);
   }
   items.push(...(await fetchWikipediaProgramming()));
+  // TMDB discover after the title lists, so their names and types win a merge.
+  try {
+    items.push(...(await fetchTmdbDiscoverNetflix()));
+  } catch (err) {
+    console.warn(`  [netflix] tmdb discover: ${err.message}`);
+  }
   try {
     const prev = JSON.parse(
       await readFile(path.join(OUT_DIR, "netflix.json"), "utf8")
     );
+    // Copy (synopsis, cast, poster, brief) is reused only for cards tied to a
+    // TMDB or TVMaze id, so a bad match cannot ride forward week after week;
+    // unidentified cards are re-enriched from scratch. Files written before
+    // ids were stored are seeded as before.
+    netflixReview.prevKeys = new Set(
+      (prev.items || []).flatMap((i) => [i.tmdbId, titleCore(i.title)]).filter(Boolean)
+    );
+    const prevHasIds = (prev.items || []).some((i) => i?.tmdbId || i?.tvmazeId);
     const seeded = (prev.items || [])
       .filter((i) => i?.title && i.date && inNetflixWindow(i.date))
-      .map((i) => ({
+      .map((i) => {
+        const reuse = !prevHasIds || Boolean(i.tmdbId || i.tvmazeId);
+        return {
         title: i.title,
         type: i.type || "Film",
         date: i.date,
+        ...(i.tmdbId ? { tmdbId: i.tmdbId } : {}),
+        ...(i.tvmazeId ? { tvmazeId: Number(i.tvmazeId) } : {}),
         synopsis:
-          isThinSynopsis(i.synopsis) || /\bmay refer to\b/i.test(i.synopsis || "")
+          !reuse ||
+          isThinSynopsis(i.synopsis) ||
+          /\bmay refer to\b/i.test(i.synopsis || "")
             ? ""
             : i.synopsis,
-        starring: Array.isArray(i.starring) ? i.starring : [],
+        starring: reuse && Array.isArray(i.starring) ? i.starring : [],
         image:
-          String(i.image || "").startsWith(`${POSTER_URL_PREFIX}/`)
+          reuse && String(i.image || "").startsWith(`${POSTER_URL_PREFIX}/`)
             ? i.image
             : "",
-        ...(String(i.brief || "").trim()
+        ...(reuse && String(i.brief || "").trim()
           ? { brief: String(i.brief).replace(/\s+/g, " ").trim() }
           : {}),
         ...(i.top10 === true
@@ -1700,7 +2127,8 @@ async function buildNetflix() {
                 : {}),
             }
           : {}),
-      }));
+        };
+      });
     items.push(...seeded);
     if (seeded.length)
       console.log(`  [netflix] kept ${seeded.length} in-window titles from last run`);
@@ -1712,6 +2140,9 @@ async function buildNetflix() {
   let merged = dedupeNetflix(items, false);
   merged = await enrichNetflix(merged);
   merged = dedupeNetflix(merged, true);
+  merged = await applyNetflixOverrides(merged);
+  merged = await filterUsNetflix(merged);
+  merged = dedupeByIdentity(merged);
   const chart = await top10Promise;
   if (chart) merged = tagNetflixTop10(merged, chart);
   else console.log("  [netflix] keeping previous top 10 tags");
@@ -1779,11 +2210,15 @@ async function wikiSynopsisForTitle(title) {
   if (exact?.extract) pages.push(exact);
   const searched = await wikiSearchPages(`${want} Netflix`);
   pages.push(...(searched || []));
+  // The article must be about this title. Accepting any article that merely
+  // mentions Netflix pulled in "Wednesday", "Luke Cage", and Netflix itself.
+  const wantCore = titleCore(want);
   const hit = pages.find(
     (p) =>
       p.extract &&
       !/\bmay refer to\b/i.test(p.extract) &&
-      (namesSimilar(p.title, want) || /netflix/i.test(p.extract))
+      titleCore(p.title) === wantCore &&
+      /netflix/i.test(p.extract)
   );
   const extract = String(hit?.extract || "").trim();
   if (isThinSynopsis(extract)) return null;
@@ -1953,6 +2388,43 @@ async function writeSection(section, items, minItems, win = null) {
   return true;
 }
 
+/**
+ * Markdown checklist of cards worth a human look, written to
+ * NETFLIX_REVIEW_FILE (CI posts it as an issue). Fixes go in
+ * data/current-events/netflix-overrides.json.
+ */
+async function writeNetflixReview(items) {
+  const prev = netflixReview.prevKeys;
+  const label = (i) => `${i.title} (${i.type}, ${i.date})`;
+  const sections = [
+    [
+      "New this run — confirm each is a Netflix original with new content",
+      prev ? items.filter((i) => !(i.tmdbId && prev.has(i.tmdbId)) && !prev.has(titleCore(i.title))).map(label) : [],
+    ],
+    ["Not matched to TMDB or TVMaze — synopsis, cast, and poster came from looser sources", items.filter((i) => !i.tmdbId && !i.tvmazeId).map(label)],
+    ["Not listed on Netflix US by JustWatch yet (kept)", netflixReview.usUnlisted],
+    ["Dropped — streams in the US on other services, not Netflix", netflixReview.usDropped],
+    ["Merged as the same title", netflixReview.merged],
+    ["No cast", items.filter((i) => !(i.starring || []).length).map(label)],
+    ["No poster", items.filter((i) => !i.image).map(label)],
+    ["Overrides applied", netflixReview.overrides],
+  ];
+  const lines = [
+    `Netflix refresh for ${netflixWindowStart} → ${windowEnd}: ${items.length} cards, ${items.filter((i) => i.top10).length} in the US Top 10.`,
+    "",
+    "To fix a card, add it to `data/current-events/netflix-overrides.json` (`drop` or `fix`).",
+  ];
+  let flagged = 0;
+  for (const [heading, rows] of sections) {
+    if (!rows.length) continue;
+    flagged += rows.length;
+    lines.push("", `### ${heading} (${rows.length})`, ...rows.map((r) => `- [ ] ${r}`));
+  }
+  console.log(`  [netflix] review: ${flagged} items to check`);
+  const file = process.env.NETFLIX_REVIEW_FILE;
+  if (file) await writeFile(file, `${lines.join("\n")}\n`);
+}
+
 /** Keep the home-card stamp aligned with netflix.json (even when the list is kept). */
 async function syncNetflixStamp() {
   try {
@@ -1969,7 +2441,15 @@ async function main() {
   const onlyNetflix = process.argv.includes("--netflix");
   const onlyImages = process.argv.includes("--netflix-images");
   const onlyTop10 = process.argv.includes("--netflix-top10");
+  const onlyUs = process.argv.includes("--netflix-us");
   const netflixWin = { start: netflixWindowStart, end: windowEnd };
+  if (onlyUs) {
+    console.log("Filtering Netflix to titles streaming in the US…");
+    await filterExistingNetflixUs();
+    await syncNetflixStamp();
+    console.log("Done — Netflix US filter applied.");
+    return;
+  }
   if (onlyTop10) {
     console.log("Tagging Netflix Top 10 from the weekly US chart…");
     await tagExistingNetflixTop10();
@@ -1990,6 +2470,7 @@ async function main() {
   if (onlyNetflix) {
     const netflix = await buildNetflix();
     const ok = await writeSection("netflix", netflix, 5, netflixWin);
+    if (ok) await writeNetflixReview(netflix);
     await syncNetflixStamp();
     console.log(`Done — netflix ${ok ? "updated" : "kept"}.`);
     if (!ok) process.exitCode = 1;
@@ -2009,6 +2490,7 @@ async function main() {
     writeSection("netflix", netflix, 5, netflixWin),
   ]);
   await syncNetflixStamp();
+  if (results[3]) await writeNetflixReview(netflix);
   const ok = results.filter(Boolean).length;
   console.log(`Done — ${ok}/4 sections updated.`);
   if (ok === 0) process.exitCode = 1;

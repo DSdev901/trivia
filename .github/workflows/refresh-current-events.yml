@@ -16,6 +16,7 @@ on:
 
 permissions:
   contents: write # needed to push the refreshed data commit
+  issues: write # Netflix review checklist (when issues are enabled)
   copilot-requests: write # Copilot CLI rewrites briefing stories and Netflix briefs
 
 concurrency:
@@ -46,7 +47,14 @@ jobs:
       - name: Refresh current events data
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          NETFLIX_REVIEW_FILE: ${{ runner.temp }}/netflix-review.md
         run: node scripts/refresh-current-events.mjs
+
+      - name: Post Netflix review
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash scripts/post-netflix-review.sh "${{ runner.temp }}/netflix-review.md"
 
       - name: Refresh House of the Dragon weekly cliff notes
         env:

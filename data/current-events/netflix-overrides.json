@@ -1,0 +1,8 @@
+{
+  "_readme": "Hand corrections applied on every Netflix refresh. Keys are card titles (matched loosely: case, punctuation, and season suffixes ignored). 'drop' removes a card (use for cross-language duplicates or non-US titles); 'fix' replaces fields (title, type, date, synopsis, brief, starring, image). Remove entries once their titles leave the 4-week window.",
+  "drop": [
+    "The Mother of Penguins",
+    "Día de Muertos: Ofrenda"
+  ],
+  "fix": {}
+}

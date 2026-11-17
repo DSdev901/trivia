@@ -1,6 +1,6 @@
 {
   "section": "netflix",
-  "generatedAt": "2026-11-17T18:44:48.262Z",
+  "generatedAt": "2026-11-17T23:32:02.603Z",
   "windowStart": "2026-10-20",
   "windowEnd": "2026-11-17",
   "items": [
@@ -13,7 +13,8 @@
         "Mike Ward"
       ],
       "brief": "French-Canadian comic Mike Ward delivers an unapologetically honest set, from dating.",
-      "image": "data/current-events/posters/mike-ward-modest-7e444ca4.jpg"
+      "image": "data/current-events/posters/mike-ward-modest-7e444ca4.jpg",
+      "tmdbId": "movie:1827471"
     },
     {
       "title": "Cunk on Cinema",
@@ -29,16 +30,18 @@
         "Steven E. de Souza"
       ],
       "brief": "Philomena Cunk will be asking experts all of the hard-hitting questions about the history of cinema.",
-      "image": "data/current-events/posters/cunk-on-cinema-66a408ea.jpg"
+      "image": "data/current-events/posters/cunk-on-cinema-66a408ea.jpg",
+      "tmdbId": "tv:335981"
     },
     {
-      "title": "Alan’s Universe (Season 1)",
+      "title": "Alan’s Universe",
       "type": "Series",
       "date": "2026-11-14",
       "synopsis": "Alan and his friends navigate a world of friendship, romance, rivalry, and extraordinary adventures. From high school bullies and secret pop star identities to supernatural encounters and unexpected love stories, every episode transports the group into a new universe where they discover that love and friendship can…",
       "starring": [],
       "brief": "Alan and his friends navigate a world of friendship, romance, rivalry, and extraordinary adventures.",
-      "image": "data/current-events/posters/alan-s-universe-e346204c.jpg"
+      "image": "data/current-events/posters/alan-s-universe-e346204c.jpg",
+      "tmdbId": "tv:341602"
     },
     {
       "title": "El crimen de Pazos",
@@ -54,7 +57,9 @@
         "Eduardo Pérez"
       ],
       "brief": "Documentary about a woman attacked in her home and the investigation.",
-      "image": "data/current-events/posters/el-crimen-de-pazos-167d20ea.jpg"
+      "image": "data/current-events/posters/el-crimen-de-pazos-167d20ea.jpg",
+      "tmdbId": "tv:303182",
+      "tvmazeId": 94913
     },
     {
       "title": "Stars and Vows: Anele & Buzza",
@@ -67,23 +72,26 @@
         "Cindy Poluta"
       ],
       "brief": "Follow media darling Anele Mdoda and her royal fiance Buzza James from pre-wedding celebrations.",
-      "image": "data/current-events/posters/stars-and-vows-anele-buzza-31e1b26c.jpg"
+      "image": "data/current-events/posters/stars-and-vows-anele-buzza-31e1b26c.jpg",
+      "tmdbId": "tv:341603",
+      "tvmazeId": 95505
     },
     {
       "title": "Heartland",
       "type": "Film",
       "date": "2026-11-13",
-      "synopsis": "Life is hard on the Flemings' ranch in the Alberta foothills where abused or neglected horses find refuge with a kind, hard-working family. Debts abound and the bank is about to foreclose. Can they keep the ranch running?",
+      "synopsis": "Former country music legend Misty Jones returns to Nashville to unravel the truth behind her rising-star niece's disappearance.",
       "starring": [
-        "Amber Marshall",
-        "Shaun Johnston",
-        "Michelle Morgan",
-        "Chris Potter",
-        "Graham Wardle",
-        "Alisha Newton"
+        "Jessica Chastain",
+        "Carter Faith",
+        "Ross Lynch",
+        "John Hawkes",
+        "Garrett Hedlund",
+        "Norbert Leo Butz"
       ],
-      "brief": "Life is hard on the Flemings' ranch in the Alberta foothills where abused or neglected horses find refuge with a kind.",
-      "image": "data/current-events/posters/heartland-f3513dea.jpg",
+      "brief": "A former country star returns to Nashville to search for her missing rising-star niece.",
+      "image": "data/current-events/posters/heartland-9c786a49.jpg",
+      "tmdbId": "movie:1543469",
       "top10": true,
       "top10Rank": 3
     },
@@ -95,13 +103,14 @@
       "starring": [
         "Öykü Karayel",
         "Fatih Artman",
-        "Funda Eryiğit",
         "Defne Kayalar",
         "Tülin Özen",
         "Alican Yücesoy"
       ],
       "brief": "A group of individuals in Istanbul transcend sociocultural boundaries and find connection as their fears.",
-      "image": "data/current-events/posters/bir-ba-kad-r-284ac6bc.jpg"
+      "image": "data/current-events/posters/bir-ba-kad-r-284ac6bc.jpg",
+      "tmdbId": "tv:112745",
+      "tvmazeId": 51887
     },
     {
       "title": "Die Kaiserin (Season 3)",
@@ -117,7 +126,9 @@
         "Runa Greiner"
       ],
       "brief": "When the rebellious Elisabeth (\"Sisi\") meets Franz, the Emperor of Austria.",
-      "image": "data/current-events/posters/die-kaiserin-0975871c.jpg"
+      "image": "data/current-events/posters/die-kaiserin-0975871c.jpg",
+      "tmdbId": "tv:131488",
+      "tvmazeId": 59746
     },
     {
       "title": "Bros (Season 2)",
@@ -131,7 +142,9 @@
         "Shir Abramov"
       ],
       "brief": "After receiving some shocking news, two best friends travel from Jerusalem to Krakow for a football match.",
-      "image": "data/current-events/posters/bros-dc1ec041.jpg"
+      "image": "data/current-events/posters/bros-dc1ec041.jpg",
+      "tmdbId": "tv:251842",
+      "tvmazeId": 72202
     },
     {
       "title": "Miracles of the ER",
@@ -146,7 +159,9 @@
         "Payne Peng"
       ],
       "brief": "At Yang-Da University Hospital, Associate Director of Emergency Medicine Chou Cheng-chun makes a bold.",
-      "image": "data/current-events/posters/miracles-of-the-er-a3be7e62.jpg"
+      "image": "data/current-events/posters/miracles-of-the-er-a3be7e62.jpg",
+      "tmdbId": "tv:312661",
+      "tvmazeId": 94766
     },
     {
       "title": "Allen",
@@ -162,7 +177,8 @@
         "Elijah Tamati"
       ],
       "brief": "20 years after his encounter with an alien, Petey never moved on.",
-      "image": "data/current-events/posters/allen-2fc7002c.jpg"
+      "image": "data/current-events/posters/allen-2fc7002c.jpg",
+      "tmdbId": "movie:1518204"
     },
     {
       "title": "Never Surrender",
@@ -179,6 +195,7 @@
       ],
       "brief": "When a deadly gang descends on his remote home, a guilt-ridden veteran and the estranged grandchildren.",
       "image": "data/current-events/posters/never-surrender-aaca0a8a.jpg",
+      "tmdbId": "movie:1616687",
       "top10": true,
       "top10Rank": 8
     },
@@ -197,17 +214,25 @@
       ],
       "brief": "Work-hard-play-hard city girl Freddie swaps lives with her homebody sister Mattie at Christmas time.",
       "image": "data/current-events/posters/the-christmas-switch-1b133e9d.jpg",
+      "tmdbId": "movie:1757174",
       "top10": true,
       "top10Rank": 10
     },
     {
-      "title": "Russell Brand : Open Secret [ 37 ]",
+      "title": "Russell Brand: Open Secret",
       "type": "Film",
       "date": "2026-11-12",
-      "synopsis": "Russell Edward Brand (born 4 June 1975) is an English comedian, actor and media personality. He rose to prominence as a reality television presenter in the early 2000s before starring in major comedy films, releasing several stand-up specials and hosting radio shows.…",
-      "starring": [],
-      "brief": "Russell Edward Brand (born 4 June 1975) is an English comedian, actor and media personality.",
-      "image": "data/current-events/posters/russell-brand-open-secret-37-d995f852.jpg"
+      "synopsis": "From comedy stardom to a criminal trial, inside voices and archive footage charts British comedian Russell Brand's meteoric rise and steep fall following allegations of sexual offences.",
+      "starring": [
+        "Russell Brand",
+        "George Monbiot",
+        "Nish Kumar",
+        "Amanda Alguero Alejos",
+        "Mark Pinheiro",
+        "Harriet Kemsley"
+      ],
+      "brief": "Insiders and archive footage chart Russell Brand's rise from comedy stardom to a criminal trial.",
+      "image": "data/current-events/posters/russell-brand-open-secret-0649c6f6.jpg"
     },
     {
       "title": "The Body",
@@ -224,6 +249,8 @@
       ],
       "brief": "After a dance-team initiation goes wrong, a group of badly behaved Catholic school girls begin having.",
       "image": "data/current-events/posters/the-body-96ffb997.jpg",
+      "tmdbId": "tv:291507",
+      "tvmazeId": 87480,
       "top10": true,
       "top10Rank": 2
     },
@@ -240,7 +267,9 @@
         "Aurora Giovinazzo"
       ],
       "brief": "Cosmo Speranza is the best art advisor in the business.",
-      "image": "data/current-events/posters/chiaroscuro-ca4220a3.jpg"
+      "image": "data/current-events/posters/chiaroscuro-ca4220a3.jpg",
+      "tmdbId": "tv:336243",
+      "tvmazeId": 94885
     },
     {
       "title": "La Ley de Alicia",
@@ -256,7 +285,9 @@
         "Michel Brown"
       ],
       "brief": "Alicia watches her life come undone when her husband, Aurelio, is found guilty and imprisoned for corruption.",
-      "image": "data/current-events/posters/la-ley-de-alicia-e1e291f5.jpg"
+      "image": "data/current-events/posters/la-ley-de-alicia-e1e291f5.jpg",
+      "tmdbId": "tv:338562",
+      "tvmazeId": 95025
     },
     {
       "title": "Avedon",
@@ -264,11 +295,11 @@
       "date": "2026-11-11",
       "synopsis": "Richard Avedon's photographs didn't just reflect culture, they shaped it, and continue to do so. The feature documentary AVEDON traces the life and legacy of an artist who used fashion, portraiture, and commercial photography to explore identity, power, fear and beauty. With unprecedented access to Avedon's…",
       "starring": [
-        "Avedon",
         "Richard Avedon"
       ],
       "brief": "Richard Avedon's photographs didn't just reflect culture, they shaped it, and continue to do so.",
-      "image": "data/current-events/posters/avedon-3ea9cbba.jpg"
+      "image": "data/current-events/posters/avedon-3ea9cbba.jpg",
+      "tmdbId": "movie:1666787"
     },
     {
       "title": "The Gospel of Christmas",
@@ -285,6 +316,7 @@
       ],
       "brief": "A struggling pastor moves his family to a troubled New York neighborhood.",
       "image": "data/current-events/posters/the-gospel-of-christmas-ac20eb34.jpg",
+      "tmdbId": "movie:1559980",
       "top10": true,
       "top10Rank": 2
     },
@@ -302,7 +334,8 @@
         "Claudia Bernasconi"
       ],
       "brief": "Decades of questions and a crime that shook Brazil.",
-      "image": "data/current-events/posters/the-unthinkable-daughter-85ff7ccc.jpg"
+      "image": "data/current-events/posters/the-unthinkable-daughter-85ff7ccc.jpg",
+      "tmdbId": "movie:1664682"
     },
     {
       "title": "Last One Standing (Season 4)",
@@ -318,7 +351,9 @@
         "Shotaro Mamiya"
       ],
       "brief": "Comedians perform in unscripted drama where failed jokes mean elimination.",
-      "image": "data/current-events/posters/last-one-standing-8ed98297.jpg"
+      "image": "data/current-events/posters/last-one-standing-8ed98297.jpg",
+      "tmdbId": "tv:157926",
+      "tvmazeId": 60667
     },
     {
       "title": "The Devil's Plan (Season 3)",
@@ -334,20 +369,21 @@
         "Oh Hyun-min"
       ],
       "brief": "Twelve contestants compete in a strategic intelligence competition.",
-      "image": "data/current-events/posters/the-devil-s-plan-ebc6ff07.jpg"
+      "image": "data/current-events/posters/the-devil-s-plan-ebc6ff07.jpg",
+      "tmdbId": "tv:214582",
+      "tvmazeId": 70927
     },
     {
       "title": "Janelle James: How Romantic",
       "type": "Stand-up special",
       "date": "2026-11-10",
-      "synopsis": "Wednesday is an American supernatural mystery comedy television series based on the character Wednesday Addams by Charles Addams. Created by Alfred Gough and Miles Millar, it stars Jenna Ortega as the titular character, with Luis Guzmán and Catherine Zeta-Jones portraying her parents in the series.…",
+      "synopsis": "In her debut hour-long stand-up special, Janelle James sounds off on body counts, bank accounts and why women should wrestle men.",
       "starring": [
-        "How Romantic",
-        "Janelle James",
-        "Jenna Ortega"
+        "Janelle James"
       ],
-      "brief": "Janelle James performs stand-up comedy.",
-      "image": "data/current-events/posters/janelle-james-how-romantic-e21cfd64.jpg"
+      "brief": "Janelle James sounds off on body counts, bank accounts and why women should wrestle men.",
+      "image": "data/current-events/posters/janelle-james-how-romantic-e21cfd64.jpg",
+      "tmdbId": "movie:1820172"
     },
     {
       "title": "Doozie's Doghouse",
@@ -364,6 +400,8 @@
       ],
       "brief": "A dog goes on adventures with her best friend and other dogs.",
       "image": "data/current-events/posters/doozie-s-doghouse-a104579f.jpg",
+      "tmdbId": "tv:336478",
+      "tvmazeId": 94673,
       "top10": true,
       "top10Rank": 3
     },
@@ -380,7 +418,8 @@
         "Gwendal Kerdelhue"
       ],
       "brief": "A criminal defense lawyer must save his career after overdosing in court.",
-      "image": "data/current-events/posters/the-good-lawyer-d943e059.jpg"
+      "image": "data/current-events/posters/the-good-lawyer-d943e059.jpg",
+      "tmdbId": "movie:1616419"
     },
     {
       "title": "Palacio",
@@ -396,7 +435,9 @@
         "Santiago Alarcón"
       ],
       "brief": "Series about the 1985 siege of Colombia's Palace of Justice.",
-      "image": "data/current-events/posters/palacio-0e52088e.jpg"
+      "image": "data/current-events/posters/palacio-0e52088e.jpg",
+      "tmdbId": "tv:297491",
+      "tvmazeId": 94921
     },
     {
       "title": "Possible Love",
@@ -406,13 +447,13 @@
       "starring": [
         "Jeon Do-yeon",
         "Sul Kyung-gu",
-        "Zo In-sung",
         "Cho Yeo-jeong",
         "Jo Yuri",
         "Choi Min"
       ],
       "brief": "Families cope with hardship from a labor union strike's aftermath.",
-      "image": "data/current-events/posters/possible-love-dc45921f.jpg"
+      "image": "data/current-events/posters/possible-love-dc45921f.jpg",
+      "tmdbId": "movie:1483525"
     },
     {
       "title": "Black Doves (Season 2)",
@@ -426,6 +467,8 @@
       ],
       "brief": "A politician's wife spy and an assassin uncover a vast conspiracy.",
       "image": "data/current-events/posters/black-doves-1af63917.jpg",
+      "tmdbId": "tv:225385",
+      "tvmazeId": 68407,
       "top10": true,
       "top10Rank": 5
     },
@@ -442,7 +485,8 @@
         "Manmeet Singh Sawhney"
       ],
       "brief": "A man returns home for Diwali, sparking family tensions over values.",
-      "image": "data/current-events/posters/dilwali-diwali-be9957ab.jpg"
+      "image": "data/current-events/posters/dilwali-diwali-be9957ab.jpg",
+      "tmdbId": "movie:1810711"
     },
     {
       "title": "High End: The Watch Theft Ring",
@@ -451,7 +495,8 @@
       "synopsis": "Investigates Chile's high-profile Caso Relojes (\"Watch Case\") scandal, in which a suitcase full of smuggled luxury watches and jewelry unmasked an illicit underground network, connecting criminal elements to Chile's social elite.",
       "starring": [],
       "brief": "Documentary about a luxury watch smuggling scandal in Chile.",
-      "image": "data/current-events/posters/high-end-the-watch-theft-ring-a41fab67.jpg"
+      "image": "data/current-events/posters/high-end-the-watch-theft-ring-a41fab67.jpg",
+      "tmdbId": "movie:1817773"
     },
     {
       "title": "North of North (Season 2)",
@@ -467,7 +512,8 @@
         "Jay Ryan"
       ],
       "brief": "An Inuk mother seeks a fresh start in a small Arctic town.",
-      "image": "data/current-events/posters/north-of-north-23c5d304.jpg"
+      "image": "data/current-events/posters/north-of-north-23c5d304.jpg",
+      "tmdbId": "tv:249023"
     },
     {
       "title": "One Year to Live, Buy a Man",
@@ -483,7 +529,8 @@
         "Ryubi Miyase"
       ],
       "brief": "A terminally ill woman spends her final year with a nightclub host.",
-      "image": "data/current-events/posters/one-year-to-live-buy-a-man-730a8d25.jpg"
+      "image": "data/current-events/posters/one-year-to-live-buy-a-man-730a8d25.jpg",
+      "tmdbId": "movie:1654940"
     },
     {
       "title": "Overacting",
@@ -499,7 +546,8 @@
         "Jarnnawut Jarnyaharn"
       ],
       "brief": "An actress stages wild missions to distract her retired cop father.",
-      "image": "data/current-events/posters/overacting-0516b367.jpg"
+      "image": "data/current-events/posters/overacting-0516b367.jpg",
+      "tmdbId": "movie:1630420"
     },
     {
       "title": "Znieczulenie",
@@ -515,7 +563,9 @@
         "Mariusz Bonaszewski"
       ],
       "brief": "A brilliant neurosurgeon struggles with colleagues at a small hospital.",
-      "image": "data/current-events/posters/znieczulenie-ede0b20a.jpg"
+      "image": "data/current-events/posters/znieczulenie-ede0b20a.jpg",
+      "tmdbId": "tv:312006",
+      "tvmazeId": 95388
     },
     {
       "title": "Taken: Natalee Holloway",
@@ -523,7 +573,6 @@
       "date": "2026-11-04",
       "synopsis": "Natalee's mother, Beth Holloway, recounts her daughter's tragic disappearance from the investigation's onset to a chilling confession decades later.",
       "starring": [
-        "Natalee Holloway",
         "Beth Holloway",
         "Madison Greer",
         "Gerold Dompig",
@@ -532,6 +581,8 @@
       ],
       "brief": "Documentary about Natalee Holloway's disappearance and investigation.",
       "image": "data/current-events/posters/taken-natalee-holloway-e6cc546c.jpg",
+      "tmdbId": "tv:338684",
+      "tvmazeId": 95389,
       "top10": true,
       "top10Rank": 1
     },
@@ -550,6 +601,7 @@
       ],
       "brief": "When a medical emergency pulls the Goss family apart, determined dog Winstead will do all he can to bring.",
       "image": "data/current-events/posters/a-dog-s-perfect-christmas-c21b447b.jpg",
+      "tmdbId": "movie:1570488",
       "top10": true,
       "top10Rank": 5
     },
@@ -563,11 +615,11 @@
         "Cécile Nzobazola",
         "Hös Copperfield",
         "Yaro Sirsy",
-        "Christine Aubert-Maguéro",
-        "Paula Patton"
+        "Christine Aubert-Maguéro"
       ],
-      "brief": "Entertainment lawyer Daniella Hernandez navigates the nefarious lives of rich and famous clients.",
-      "image": "data/current-events/posters/ninho-fame-ain-t-worth-it-7dfe0330.jpg"
+      "brief": "At the height of his success in 2025, French rap star Ninho considers leaving music behind.",
+      "image": "data/current-events/posters/ninho-fame-ain-t-worth-it-7dfe0330.jpg",
+      "tmdbId": "movie:1816668"
     },
     {
       "title": "Bass X Machina",
@@ -583,14 +635,9 @@
         "Currie Graham"
       ],
       "brief": "A father in Steampunk West fights to protect his family from terrors.",
-      "image": "data/current-events/posters/bass-x-machina-fa0b09a2.jpg"
-    },
-    {
-      "title": "Día de Muertos: Ofrenda",
-      "type": "Film",
-      "date": "2026-11-03",
-      "synopsis": "",
-      "starring": []
+      "image": "data/current-events/posters/bass-x-machina-fa0b09a2.jpg",
+      "tmdbId": "tv:314271",
+      "tvmazeId": 90425
     },
     {
       "title": "Mike Tyson: Return of the Mike",
@@ -601,7 +648,8 @@
         "Mike Tyson"
       ],
       "brief": "Mike Tyson performs stand-up comedy about his life and experiences.",
-      "image": "data/current-events/posters/mike-tyson-return-of-the-mike-c2036959.jpg"
+      "image": "data/current-events/posters/mike-tyson-return-of-the-mike-c2036959.jpg",
+      "tmdbId": "movie:1804941"
     },
     {
       "title": "KPop Demon Hunters Bonus Content (Season 2)",
@@ -614,7 +662,8 @@
         "Audrey Nuna"
       ],
       "brief": "Fan-curated clips and highlights from the KPop Demon Hunters series.",
-      "image": "data/current-events/posters/kpop-demon-hunters-bonus-content-1ca840be.jpg"
+      "image": "data/current-events/posters/kpop-demon-hunters-bonus-content-1ca840be.jpg",
+      "tmdbId": "tv:315952"
     },
     {
       "title": "My Best Friend",
@@ -630,7 +679,8 @@
         "Michel Melamed"
       ],
       "brief": "Two mothers follow their daughters to Portugal and find love.",
-      "image": "data/current-events/posters/my-best-friend-ee4c8d3f.jpg"
+      "image": "data/current-events/posters/my-best-friend-ee4c8d3f.jpg",
+      "tmdbId": "movie:1257147"
     },
     {
       "title": "Dead-End Job",
@@ -642,11 +692,12 @@
         "Lee Jae-wook",
         "Kim Min Ha",
         "Lee Hee Jun",
-        "Go Min-si",
-        "Kim Min-ha"
+        "Go Min-si"
       ],
       "brief": "A young man takes a mysterious high-paying job that becomes nightmare.",
-      "image": "data/current-events/posters/dead-end-job-bd15b290.jpg"
+      "image": "data/current-events/posters/dead-end-job-bd15b290.jpg",
+      "tmdbId": "tv:289517",
+      "tvmazeId": 84377
     },
     {
       "title": "Bytet",
@@ -660,7 +711,9 @@
         "Jakob Oftebro"
       ],
       "brief": "Two couples swap homes and discover dark secrets in each other's lives.",
-      "image": "data/current-events/posters/bytet-37407b28.jpg"
+      "image": "data/current-events/posters/bytet-37407b28.jpg",
+      "tmdbId": "tv:336240",
+      "tvmazeId": 93881
     },
     {
       "title": "How to Ruin Diwali: Meet the Parents",
@@ -676,7 +729,9 @@
         "Denise Zimba"
       ],
       "brief": "A hidden engagement forces a Zulu and Indian family together.",
-      "image": "data/current-events/posters/how-to-ruin-diwali-meet-the-parents-6516b2bd.jpg"
+      "image": "data/current-events/posters/how-to-ruin-diwali-meet-the-parents-6516b2bd.jpg",
+      "tmdbId": "tv:336241",
+      "tvmazeId": 94922
     },
     {
       "title": "Obsess",
@@ -692,7 +747,9 @@
         "Ibrahim Al-Harbi"
       ],
       "brief": "A jealous ex uses black magic to destroy a couple's marriage.",
-      "image": "data/current-events/posters/obsess-a1cef9ac.jpg"
+      "image": "data/current-events/posters/obsess-a1cef9ac.jpg",
+      "tmdbId": "tv:311853",
+      "tvmazeId": 95294
     },
     {
       "title": "Akka",
@@ -708,25 +765,32 @@
         "Anshumaan Pushkar"
       ],
       "brief": "A rebel targets a woman's rule over a region in this drama.",
-      "image": "data/current-events/posters/akka-a3a2f522.jpg"
+      "image": "data/current-events/posters/akka-a3a2f522.jpg",
+      "tmdbId": "tv:243555",
+      "tvmazeId": 95295
     },
     {
-      "title": "Beat Luke Littler / Live Event",
+      "title": "Beat Luke Littler",
       "type": "Live event",
       "date": "2026-10-30",
-      "synopsis": "The second and final season of the American streaming television series Luke Cage, which is based on the Marvel Comics character of the same name, sees Luke Cage become a hero and celebrity in Harlem after clearing his name, only to face a new threat.…",
+      "synopsis": "One world champion. 20 fearless amateurs. £501,000 on the line. Can an underdog beat world No. 1 Luke Littler in an epic, single-leg darts showdown?",
       "starring": [
-        "Theo Rossi",
-        "Alfre Woodard"
+        "Luke Littler",
+        "Gary Lineker",
+        "Richard Osman",
+        "Fallon Sherrock",
+        "Laura Turner",
+        "Phil Taylor"
       ],
-      "brief": "A live event where participants compete against darts player Luke Littler.",
-      "image": "data/current-events/posters/beat-luke-littler-live-event-35e97ecc.jpg"
+      "brief": "Twenty amateurs get one leg each to beat darts world No. 1 Luke Littler for £501,000.",
+      "image": "data/current-events/posters/beat-luke-littler-4fcbceb3.jpg",
+      "tmdbId": "movie:1784360"
     },
     {
       "title": "Collision Course",
       "type": "Film",
       "date": "2026-10-30",
-      "synopsis": "Collision Course unravels the speculation surrounding car and airplane crashes involving celebrities relying on footage from the scene, police records, CGI reenactments and interviews with eyewitnesses to provide a detailed look at what put these celebrities on a collision course. Episodes include Paul Walker, Tracy Morgan, John Denver, Justin Bieber and John F. Kennedy Jr.",
+      "synopsis": "Spain, 2013. After robbing a bank, a getaway crash reveals the hidden side of each thief, exposing betrayals and lies that began long before the heist.",
       "starring": [
         "Laia Costa",
         "Karra Elejalde",
@@ -735,8 +799,9 @@
         "Álvaro Cervantes",
         "Lluís Homar"
       ],
-      "brief": "Documentary about celebrity car and airplane crashes with reenactments.",
-      "image": "data/current-events/posters/collision-course-9a408149.jpg"
+      "brief": "After a Madrid bank robbery, a getaway crash exposes the lies and betrayals among the thieves.",
+      "image": "data/current-events/posters/collision-course-9a408149.jpg",
+      "tmdbId": "movie:1571955"
     },
     {
       "title": "SCTV: The Greatest Show You’ve Never Heard Of",
@@ -752,7 +817,8 @@
         "Dave Thomas"
       ],
       "brief": "Legendary \"SCTV\" cast members reunite in this documentary for a funny and heartfelt celebration of how.",
-      "image": "data/current-events/posters/sctv-the-greatest-show-you-ve-never-heard-of-9973ca9a.jpg"
+      "image": "data/current-events/posters/sctv-the-greatest-show-you-ve-never-heard-of-9973ca9a.jpg",
+      "tmdbId": "movie:1756307"
     },
     {
       "title": "The Birthday Gift",
@@ -768,7 +834,8 @@
         "Enzo Brumm"
       ],
       "brief": "A birthday party at a villa spirals into family drama and chaos.",
-      "image": "data/current-events/posters/the-birthday-gift-60adddf0.jpg"
+      "image": "data/current-events/posters/the-birthday-gift-60adddf0.jpg",
+      "tmdbId": "movie:1789549"
     },
     {
       "title": "Instadocs",
@@ -776,7 +843,6 @@
       "date": "2026-10-29",
       "synopsis": "Instadocs is a fast-turnaround documentary series that takes you to the very center of the loudest headlines, immersing you in the facts and feelings of the moment. It tackles a wide range of gripping current events, crises, and cultural moments. Every installment moves at the speed of each real-life story and arrives at the height of the conversation.",
       "starring": [
-        "Instadocs",
         "Kathy Hochul",
         "Sophia Dasser",
         "Cereese Qusba",
@@ -784,7 +850,9 @@
         "Glenn Greenwald"
       ],
       "brief": "Fast-turnaround documentary series on current events and crises.",
-      "image": "data/current-events/posters/instadocs-130b5a73.jpg"
+      "image": "data/current-events/posters/instadocs-130b5a73.jpg",
+      "tmdbId": "movie:1811741",
+      "tvmazeId": 92138
     },
     {
       "title": "Balaraw",
@@ -798,7 +866,9 @@
         "Ronnie Lazaro"
       ],
       "brief": "A woman follows a clue to an island to uncover family secrets.",
-      "image": "data/current-events/posters/balaraw-088c28db.jpg"
+      "image": "data/current-events/posters/balaraw-088c28db.jpg",
+      "tmdbId": "tv:313699",
+      "tvmazeId": 92871
     },
     {
       "title": "La Caída de El Mayo",
@@ -809,7 +879,8 @@
         "El Mayo"
       ],
       "brief": "Documentary about drug lord El Mayo's 2024 capture in New Mexico.",
-      "image": "data/current-events/posters/la-ca-da-de-el-mayo-51eeab74.jpg"
+      "image": "data/current-events/posters/la-ca-da-de-el-mayo-51eeab74.jpg",
+      "tvmazeId": 95244
     },
     {
       "title": "You, Me, Us",
@@ -825,7 +896,8 @@
         "Francesca De Martini"
       ],
       "brief": "A couple navigates adoption despite their complex vulnerabilities.",
-      "image": "data/current-events/posters/you-me-us-f19b88cf.jpg"
+      "image": "data/current-events/posters/you-me-us-f19b88cf.jpg",
+      "tmdbId": "movie:1541477"
     },
     {
       "title": "Midnight Diner: Tokyo Stories (Season 3)",
@@ -841,7 +913,8 @@
         "Toshiki Ayata"
       ],
       "brief": "A late-night diner where customers find warmth, food and connection.",
-      "image": "data/current-events/posters/midnight-diner-tokyo-stories-1879621b.jpg"
+      "image": "data/current-events/posters/midnight-diner-tokyo-stories-1879621b.jpg",
+      "tvmazeId": 17725
     },
     {
       "title": "Dom de Iludir",
@@ -854,19 +927,9 @@
         "Nanda Costa"
       ],
       "brief": "An art collector and her daughter's lives intersect with mysteries.",
-      "image": "data/current-events/posters/dom-de-iludir-2f656c20.jpg"
-    },
-    {
-      "title": "Love Village (Season 3)",
-      "type": "Reality",
-      "date": "2026-10-27",
-      "synopsis": "Singles 35 and over of various backgrounds relocate to a house in the countryside for another chance at love. Will they find \"the one\" — or leave alone?",
-      "starring": [
-        "Atsushi Tamura",
-        "Becky"
-      ],
-      "brief": "Singles over 35 relocate to a countryside house seeking romantic connection.",
-      "image": "data/current-events/posters/love-village-2e70c8de.jpg"
+      "image": "data/current-events/posters/dom-de-iludir-2f656c20.jpg",
+      "tmdbId": "tv:334700",
+      "tvmazeId": 94452
     },
     {
       "title": "The One About Matthew Perry",
@@ -874,12 +937,12 @@
       "date": "2026-10-27",
       "synopsis": "Told through intimate testimonies from close family and friends, The One About Matthew Perry reveals the real Matthew Perry - generous, funny, vulnerable, larger than life - and the battles he fought to become the man behind the icon.",
       "starring": [
-        "One About",
-        "About Matthew",
         "Matthew Perry"
       ],
       "brief": "Documentary about Matthew Perry's real life and personal struggles.",
-      "image": "data/current-events/posters/the-one-about-matthew-perry-2495ac13.jpg"
+      "image": "data/current-events/posters/the-one-about-matthew-perry-2495ac13.jpg",
+      "tmdbId": "tv:333533",
+      "tvmazeId": 93941
     },
     {
       "title": "Zainab Johnson: Toxically Optimistic",
@@ -887,10 +950,11 @@
       "date": "2026-10-27",
       "synopsis": "Zainab Johnson has a gun revelation, a Tesla crisis and an unshakable belief that she can find the upside in everything in this sharp stand-up hour.",
       "starring": [
-        "Toxically Optimistic"
+        "Zainab Johnson"
       ],
       "brief": "Zainab Johnson performs stand-up about finding the upside in everything.",
-      "image": "data/current-events/posters/zainab-johnson-toxically-optimistic-fb193f3f.jpg"
+      "image": "data/current-events/posters/zainab-johnson-toxically-optimistic-fb193f3f.jpg",
+      "tmdbId": "movie:1809199"
     },
     {
       "title": "Day of the Dead: Ofrenda",
@@ -899,7 +963,8 @@
       "synopsis": "An ofrenda that never goes dark: Keep this experience glowing and let Day of the Dead fill your space with memory and tradition.",
       "starring": [],
       "brief": "An experiential celebration of Day of the Dead tradition.",
-      "image": "data/current-events/posters/day-of-the-dead-ofrenda-2225cebc.jpg"
+      "image": "data/current-events/posters/day-of-the-dead-ofrenda-2225cebc.jpg",
+      "tmdbId": "movie:1809500"
     },
     {
       "title": "WWE Monday Night RAW (Season 33)",
@@ -916,6 +981,7 @@
       ],
       "brief": "WWE Monday Night RAW is World Wrestling Entertainment's (formerly the WWF and the WWWF before that) premiere.",
       "image": "data/current-events/posters/wwe-monday-night-raw-5fb0ff9d.jpg",
+      "tvmazeId": 802,
       "top10": true,
       "top10Rank": 4
     },
@@ -933,7 +999,9 @@
         "Tommy Armstrong"
       ],
       "brief": "Teens run a pizzeria while balancing school and a manic boss.",
-      "image": "data/current-events/posters/minimum-wage-175aef0c.jpg"
+      "image": "data/current-events/posters/minimum-wage-175aef0c.jpg",
+      "tmdbId": "tv:321221",
+      "tvmazeId": 93569
     },
     {
       "title": "The Great Indian Kapil Show (Season 5)",
@@ -949,18 +1017,20 @@
         "Navjot Singh Sidhu"
       ],
       "brief": "Comedian Kapil Sharma hosts this laugh-out-loud variety talk show with celebrity guests, hilarious antics.",
-      "image": "data/current-events/posters/the-great-indian-kapil-show-b8b2ee7c.jpg"
+      "image": "data/current-events/posters/the-great-indian-kapil-show-b8b2ee7c.jpg",
+      "tmdbId": "tv:247769",
+      "tvmazeId": 75082
     },
     {
       "title": "Screwballs (Season 6)",
       "type": "Reality",
       "date": "2026-10-24",
       "synopsis": "Five siblings face endless missions in this pure entertainment variety show. With a few screws loose, they embrace chaos in their search for sanity.",
-      "starring": [
-        "Screwballs"
-      ],
+      "starring": [],
       "brief": "Five siblings face endless missions in this pure entertainment variety show.",
-      "image": "data/current-events/posters/screwballs-1ec5b250.jpg"
+      "image": "data/current-events/posters/screwballs-1ec5b250.jpg",
+      "tmdbId": "tv:283647",
+      "tvmazeId": 82829
     },
     {
       "title": "Lupin (Season 4)",
@@ -976,7 +1046,9 @@
         "Mamadou Haïdara"
       ],
       "brief": "A gentleman thief seeks revenge for an injustice to his father.",
-      "image": "data/current-events/posters/lupin-96e623fa.jpg"
+      "image": "data/current-events/posters/lupin-96e623fa.jpg",
+      "tmdbId": "tv:96677",
+      "tvmazeId": 50701
     },
     {
       "title": "Steel Ball Run: JoJo's Bizarre Adventure (Season 2)",
@@ -985,7 +1057,9 @@
       "synopsis": "America, 1890. Johnny Joestar, a genius jockey now paralyzed from the waist down, chases after outlaw Gyro Zeppeli in a tough cross-continent horse race.",
       "starring": [],
       "brief": "America, 1890. Johnny Joestar, a genius jockey now paralyzed from the waist down, chases.",
-      "image": "data/current-events/posters/steel-ball-run-jojo-s-bizarre-adventure-04153915.jpg"
+      "image": "data/current-events/posters/steel-ball-run-jojo-s-bizarre-adventure-04153915.jpg",
+      "tmdbId": "tv:45790",
+      "tvmazeId": 90817
     },
     {
       "title": "The Adam Ray Show",
@@ -1001,7 +1075,9 @@
         "Sal Vulcano"
       ],
       "brief": "Same host. Different characters. All chaos.",
-      "image": "data/current-events/posters/the-adam-ray-show-ceaa0299.jpg"
+      "image": "data/current-events/posters/the-adam-ray-show-ceaa0299.jpg",
+      "tmdbId": "tv:325762",
+      "tvmazeId": 93056
     },
     {
       "title": "Grande de España",
@@ -1013,7 +1089,9 @@
         "Alexandra Jiménez"
       ],
       "brief": "A ruined marquis tries to sell his mansion to a mysterious businesswoman.",
-      "image": "data/current-events/posters/grande-de-espa-a-3c069787.jpg"
+      "image": "data/current-events/posters/grande-de-espa-a-3c069787.jpg",
+      "tmdbId": "tv:335535",
+      "tvmazeId": 94542
     },
     {
       "title": "The Rest Is Football (Season 2)",
@@ -1026,7 +1104,9 @@
         "Micah Richards"
       ],
       "brief": "Legendary trio Gary Lineker, Alan Shearer and Micah Richards dissect all things football with killer analysis.",
-      "image": "data/current-events/posters/the-rest-is-football-f581c57c.jpg"
+      "image": "data/current-events/posters/the-rest-is-football-f581c57c.jpg",
+      "tmdbId": "tv:323660",
+      "tvmazeId": 95462
     },
     {
       "title": "Paralyzed by Hope: The Maria Bamford Story",
@@ -1042,7 +1122,8 @@
         "Brian Posehn"
       ],
       "brief": "Documentary about comedian Maria Bamford turning mental health into comedy.",
-      "image": "data/current-events/posters/paralyzed-by-hope-the-maria-bamford-story-ce269af5.jpg"
+      "image": "data/current-events/posters/paralyzed-by-hope-the-maria-bamford-story-ce269af5.jpg",
+      "tmdbId": "movie:1596294"
     },
     {
       "title": "Surviving Hurricane Otis",
@@ -1058,7 +1139,8 @@
         "Gonzalo Vega Jr."
       ],
       "brief": "Two estranged brothers struggle to survive Hurricane Otis in Acapulco.",
-      "image": "data/current-events/posters/surviving-hurricane-otis-f841b869.jpg"
+      "image": "data/current-events/posters/surviving-hurricane-otis-f841b869.jpg",
+      "tmdbId": "movie:1780005"
     },
     {
       "title": "Gajab Raat",
@@ -1074,7 +1156,8 @@
         "Rajiv Gupta"
       ],
       "brief": "A corrupt cop's night spirals into crime when he helps an injured girl.",
-      "image": "data/current-events/posters/gajab-raat-183c883e.jpg"
+      "image": "data/current-events/posters/gajab-raat-183c883e.jpg",
+      "tmdbId": "movie:1453407"
     },
     {
       "title": "Nobody Wants This (Season 3)",
@@ -1090,6 +1173,8 @@
       ],
       "brief": "A podcaster and rabbi navigate a complicated relationship and love.",
       "image": "data/current-events/posters/nobody-wants-this-62bb0339.jpg",
+      "tmdbId": "tv:250923",
+      "tvmazeId": 77060,
       "top10": true,
       "top10Rank": 7
     },
@@ -1107,7 +1192,9 @@
         "Hayato Isomura"
       ],
       "brief": "A forgotten actor claws his way back to recognition from zero.",
-      "image": "data/current-events/posters/did-someone-happen-to-mention-me-90933c21.jpg"
+      "image": "data/current-events/posters/did-someone-happen-to-mention-me-90933c21.jpg",
+      "tmdbId": "tv:300527",
+      "tvmazeId": 93812
     },
     {
       "title": "Couldn’t Agree Less with Allison & Isaac (Podcast)",
@@ -1119,7 +1206,8 @@
         "Isaac Rochell"
       ],
       "brief": "Real-life couple Allison Kuch and Isaac Rochell invite viewers into their messiest, most honest disagreements.",
-      "image": "data/current-events/posters/couldn-t-agree-less-with-allison-isaac-077ae501.jpg"
+      "image": "data/current-events/posters/couldn-t-agree-less-with-allison-isaac-077ae501.jpg",
+      "tmdbId": "tv:334703"
     },
     {
       "title": "Love Is Blind (Season 11)",
@@ -1133,7 +1221,9 @@
         "Elham Ali"
       ],
       "brief": "With no distractions from the outside world, the singles talk to a stream of potential love interests.",
-      "image": "data/current-events/posters/love-is-blind-8a8a18e7.jpg"
+      "image": "data/current-events/posters/love-is-blind-8a8a18e7.jpg",
+      "tmdbId": "tv:99353",
+      "tvmazeId": 46167
     },
     {
       "title": "Matki Pingwinów (Season 2)",
@@ -1147,7 +1237,9 @@
         "Tomasz Tyndyk"
       ],
       "brief": "An MMA fighter finds her toughest fight is parenting her son.",
-      "image": "data/current-events/posters/matki-pingwin-w-0719f7e1.jpg"
+      "image": "data/current-events/posters/matki-pingwin-w-0719f7e1.jpg",
+      "tmdbId": "tv:252747",
+      "tvmazeId": 80727
     },
     {
       "title": "Allegedly with Ellison Barber",
@@ -1163,7 +1255,9 @@
         "Tracy Walder"
       ],
       "brief": "This gripping podcast digs into the most captivating and talked about true crime cases.",
-      "image": "data/current-events/posters/allegedly-with-ellison-barber-bf4e7d39.jpg"
+      "image": "data/current-events/posters/allegedly-with-ellison-barber-bf4e7d39.jpg",
+      "tmdbId": "tv:320935",
+      "tvmazeId": 94445
     },
     {
       "title": "The New Stanford Prison Experiment",
@@ -1172,27 +1266,23 @@
       "synopsis": "In this modern reimagining of the infamous study, 30 people enter a real prison for two weeks and shifting power dynamics expose what they're capable of.",
       "starring": [],
       "brief": "Thirty people enter a real prison for two weeks to explore shifting power dynamics.",
-      "image": "data/current-events/posters/the-new-stanford-prison-experiment-79d56d1d.jpg"
+      "image": "data/current-events/posters/the-new-stanford-prison-experiment-79d56d1d.jpg",
+      "tmdbId": "tv:335319",
+      "tvmazeId": 94769
     },
     {
-      "title": "Six Kings Slam (Season 2",
+      "title": "Six Kings Slam (Season 2)",
       "type": "Series",
       "date": "2026-10-21",
       "synopsis": "The world's top-ranked players take the court in Riyadh, Saudi Arabia for a star-studded tennis showcase with ultimate bragging rights on the line.",
       "starring": [],
       "brief": "The world's top tennis players compete in Riyadh for ultimate bragging rights.",
-      "image": "data/current-events/posters/six-kings-slam-831075a1.jpg"
+      "image": "data/current-events/posters/six-kings-slam-831075a1.jpg",
+      "tmdbId": "tv:303214",
+      "tvmazeId": 86954
     },
     {
-      "title": "The Mother of Penguins (Season 2)",
-      "type": "Series",
-      "date": "2026-10-21",
-      "synopsis": "Netflix is an American subscription video on-demand over-the-top streaming media service. The service primarily distributes original and acquired films and television shows from various genres. It is available internationally in multiple languages. Launched in 2007, nearly a decade after Netflix, Inc.…",
-      "starring": [],
-      "brief": "A story centered on penguin characters."
-    },
-    {
-      "title": "Cyberpunk: Edgerunners 2 (Season 1)",
+      "title": "Cyberpunk: Edgerunners (Season 2)",
       "type": "Series",
       "date": "2026-10-20",
       "synopsis": "Set in Cyberpunk 2077 universe, Cyberpunk: Edgerunners tells a standalone, 10-episode story about a street kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an edgerunner—a mercenary outlaw also known as a cyberpunk.",
@@ -1205,10 +1295,26 @@
         "Kenjiro Tsuda"
       ],
       "brief": "A street kid becomes a mercenary outlaw in a technology-obsessed future city.",
-      "image": "data/current-events/posters/cyberpunk-edgerunners-b5eee4a6.jpg"
+      "image": "data/current-events/posters/cyberpunk-edgerunners-b5eee4a6.jpg",
+      "tmdbId": "tv:105248",
+      "tvmazeId": 48945
     },
     {
-      "title": "Theo Von : I’m Doing Fine",
+      "title": "Love Village (Season 3)",
+      "type": "Reality",
+      "date": "2026-10-20",
+      "synopsis": "Singles 35 and over of various backgrounds relocate to a house in the countryside for another chance at love. Will they find \"the one\" — or leave alone?",
+      "starring": [
+        "Atsushi Tamura",
+        "Becky"
+      ],
+      "brief": "Singles over 35 relocate to a countryside house seeking romantic connection.",
+      "image": "data/current-events/posters/love-village-2e70c8de.jpg",
+      "tmdbId": "tv:224740",
+      "tvmazeId": 68454
+    },
+    {
+      "title": "Theo Von: I’m Doing Fine",
       "type": "Stand-up special",
       "date": "2026-10-20",
       "synopsis": "Comedian and chart-topping podcaster Theo Von returns to Netflix with his third stand-up special and his first in five years. The comedian opens up about the wild world that raised him, from his back-road upbringing to acid-filled adventures, in this revealing stand-up hour.",
@@ -1216,7 +1322,8 @@
         "Theo Von"
       ],
       "brief": "Comedian and chart-topping podcaster Theo Von returns to Netflix with his third stand-up special and his first in five years.",
-      "image": "data/current-events/posters/theo-von-i-m-doing-fine-841a8588.jpg"
+      "image": "data/current-events/posters/theo-von-i-m-doing-fine-841a8588.jpg",
+      "tmdbId": "movie:1795934"
     }
   ]
 }
