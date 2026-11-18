@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-11-18T00:48:50.102Z",
+  "generatedAt": "2026-11-18T03:39:35.052Z",
   "retentionDays": 21,
   "windowStart": "2026-10-28",
   "windowEnd": "2026-11-18",
   "snapshotIntervalHours": 3,
-  "count": 2080,
+  "count": 2090,
   "items": [
     {
       "headline": "Nvidia says it won't reinstate Huang as firm reports bumper results",
@@ -13,7 +13,9 @@
       "bucket": "World",
       "summary": "The AI chip giant reported strong quarterly earnings on Tuesday after the dramatic exit of Jensen Huang.",
       "url": "https://www.bbc.co.uk/news/articles/cm2kl50vkwkdo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-18T00:48:50.102Z"
+      "firstSeen": "2026-11-18T00:48:50.102Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Trump’s Asia trip: Deals in Manila and Shenzhen, nuclear summit with Xi and Putin, maybe Kim meeting",
@@ -76,6 +78,16 @@
       "firstSeen": "2026-11-12T12:41:01.321Z"
     },
     {
+      "headline": "Trump lands in Asia ahead of talks with Russian and Chinese presidents",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "The US president said he would be open to a one-on-one meeting with Russia's Vladimir Putin \"if it's available\".",
+      "url": "https://www.bbc.co.uk/news/articles/crq5vlxxx32no?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-17T19:05:16.239Z",
+      "top": true,
+      "bestRank": 1
+    },
+    {
       "headline": "Trump is to arrive in the Philippines to talk trade and seek respite from troubles at home",
       "date": "2026-11-17",
       "bucket": "World",
@@ -104,6 +116,16 @@
       "firstSeen": "2026-11-17T19:05:16.239Z",
       "top": true,
       "bestRank": 2
+    },
+    {
+      "headline": "Kuwait reports drone attacks as Iran, US trade attacks on Qeshm and Bahrain",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU3NxaFU3RUpkTklaRUU5NkxhTjZ6aHhYOWl4WG9PQUh1dWp6ck9qdkJhc3FHMjN5cUhWSzF6OWFmZnE5MXQ3U0RKd2RmeXdvZUZ3Qjk4VzFEM0tka3dOai1IVWZFY0VaVlVHS3d2NkdyeDU3UHZEY2tMbV85ZEVldUhRSG1SS2VwZ1c1ck4wNE1HbU81WXluYU5KRUN0NmRFdVJRNWI5MFpreDR4eGNaQkgtMVg3SjjSAbwBQVVfeXFMUDFvNkpucUdWODBUZW5kV01tbDNjaGVlYWp6a2NtdktFQVJpVW9mTjJFWEhWWm1LQlIwcW5tVVozb0FpUWl5TEd1VkstTFh2S2VXRi1YLWdxcl9TaF9XcjFhLUNHb291ZkxHY210TENUclk4WjNlZml0Y1hDbnBBRURzTm1ORjl4a0hWUFVGWUVJbFNwUksyUDJ0ZmtBZWRiZV9pNTJ4QndvRGVMNzVtVW5VQ3J6azQ3c3lJcVc?oc=5",
+      "top": true,
+      "bestRank": 2,
+      "firstSeen": "2026-11-18T03:39:35.052Z"
     },
     {
       "headline": "Japan scrambles fighters after suspected Russian military planes enter airspace",
@@ -186,6 +208,16 @@
       "firstSeen": "2026-10-29T21:34:51.611Z"
     },
     {
+      "headline": "Millions of Crabs Are on the March",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "Reported by Newser.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQelhQb1IwYm5ISzVlTEtYdWxwRXdIQWp6Z3VHdzlMNGFwUHFXRGtkcmgzVDRJR2FEQVJSY25kbUVFa25EbkwyVTNqSE1BN2pMLVFualZRM3BhaVdwckhLWEpkNUpDUENBTW9ZZTd6Z19xRnc5VjZQZW84aFZHbURMRzNJZWRJSGxZNWc?oc=5",
+      "top": true,
+      "bestRank": 4,
+      "firstSeen": "2026-11-18T03:39:35.052Z"
+    },
+    {
       "headline": "Trump to meet Chinese leader Xi Jinping and Russia's Vladimir Putin for joint summit",
       "date": "2026-11-17",
       "bucket": "World",
@@ -246,6 +278,16 @@
       "bestRank": 5
     },
     {
+      "headline": "American soldier arrested by UK police on suspicion of spying taken into US military custody",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "The Metropolitan Police say he has been taken into custody by the US Military over suspected national security and espionage allegations.",
+      "url": "https://www.bbc.co.uk/news/articles/c6x284ez38vdo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-17T21:39:45.151Z",
+      "top": true,
+      "bestRank": 5
+    },
+    {
       "headline": "Tracking China’s War of Words Against Japan",
       "date": "2026-11-17",
       "bucket": "Conflict",
@@ -266,6 +308,16 @@
       "firstSeen": "2026-11-17T19:05:16.239Z"
     },
     {
+      "headline": "Home secretary plans to tackle 'perception of two-tier policing'",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "Reported by BBC.",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBUWk5ZTXF0Y0hLWnY5TjhMcU9QeGhDNG5PUXdxeW52T0ZFZjkzVFg1cVVqNjdpTnNOWWtIb24xMExCeEt5NC1ZMkswb3J1S0RKZUprRDBkVmtNOEE?oc=5",
+      "top": true,
+      "bestRank": 6,
+      "firstSeen": "2026-11-18T03:39:35.052Z"
+    },
+    {
       "headline": "Cash Hidden in Forests? Hungary Goes After Corruption Under Orban",
       "date": "2026-11-17",
       "bucket": "World",
@@ -276,14 +328,14 @@
       "firstSeen": "2026-11-17T19:05:16.239Z"
     },
     {
-      "headline": "American soldier arrested by UK police on suspicion of spying taken into US military custody",
+      "headline": "What does China’s massive warplane build-up say about its combat readiness?",
       "date": "2026-11-17",
       "bucket": "World",
-      "summary": "The Metropolitan Police say he has been taken into custody by the US Military over suspected national security and espionage allegations.",
-      "url": "https://www.bbc.co.uk/news/articles/c6x284ez38vdo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-17T21:39:45.151Z",
+      "summary": "Reported by South China Morning Post.",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQOWp4RXhWOHBFV3pJVjlmdURwVmREMnpwWGhVQnJFazhBM2xDTzdnVEY4aUw2TC1wWmF3Y3Rwd2poaE5vNjJIMi1NNFFYYWlfWDB2a1pnVFJlNzFFRGwzZVh6UW82QmlBelRNalhVd2s1YkFIb3BneDhQOGFuc1JPZDRkVDlrZU5BeEpTckh2dHkzNnhhVS14d1NxMS1fUnVEeHVONFo0d2xUTGI4VnlHbGJkUjl3ZTJMSEpfcW03aUFPVVdNUkHSAcYBQVVfeXFMTmlDdVNwZ1h3QmFwdEs4aEVzX3lFcjBxUmRMLUNfLUVKV1d5c2wyY3ZZbGFRUEpiYXI3aUhqenQ3U2ZrZXJWQndMMWxZeThxeWJZZll5RS11VUxUcUtHZUowOEVBOVJlclY0cFg5blQ0dkljN3ZMMWUxSGRCY1NBZkdoU1FGRE9TS1I4M3FuTGVnX05Hb3c4eEp6RVhudHd2MldIaHNfeUYyVVV4eEoxUFBMRVhYR09xaVZLQWJ4V3ZSbXhIREtn?oc=5",
       "top": true,
-      "bestRank": 7
+      "bestRank": 7,
+      "firstSeen": "2026-11-18T00:48:50.102Z"
     },
     {
       "headline": "Elon in, Jensen out: Trump leans on Musk during latest China visit",
@@ -296,14 +348,14 @@
       "firstSeen": "2026-11-17T19:05:16.239Z"
     },
     {
-      "headline": "What does China’s massive warplane build-up say about its combat readiness?",
+      "headline": "‘Godmother’ of illegal Israeli West Bank settler project Daniella Weiss among group sanctioned by Australia",
       "date": "2026-11-17",
       "bucket": "World",
-      "summary": "Reported by South China Morning Post.",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQOWp4RXhWOHBFV3pJVjlmdURwVmREMnpwWGhVQnJFazhBM2xDTzdnVEY4aUw2TC1wWmF3Y3Rwd2poaE5vNjJIMi1NNFFYYWlfWDB2a1pnVFJlNzFFRGwzZVh6UW82QmlBelRNalhVd2s1YkFIb3BneDhQOGFuc1JPZDRkVDlrZU5BeEpTckh2dHkzNnhhVS14d1NxMS1fUnVEeHVONFo0d2xUTGI4VnlHbGJkUjl3ZTJMSEpfcW03aUFPVVdNUkHSAcYBQVVfeXFMTmlDdVNwZ1h3QmFwdEs4aEVzX3lFcjBxUmRMLUNfLUVKV1d5c2wyY3ZZbGFRUEpiYXI3aUhqenQ3U2ZrZXJWQndMMWxZeThxeWJZZll5RS11VUxUcUtHZUowOEVBOVJlclY0cFg5blQ0dkljN3ZMMWUxSGRCY1NBZkdoU1FGRE9TS1I4M3FuTGVnX05Hb3c4eEp6RVhudHd2MldIaHNfeUYyVVV4eEoxUFBMRVhYR09xaVZLQWJ4V3ZSbXhIREtn?oc=5",
+      "summary": "Reported by BBC.",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9obnNFbkotNFRLSk8tb05PUTJwcnJjbVhOSDNuWVpmWmF1bDlBdTRtWjVpY2c4V3BjZnRDOEJqbFFzS3k2TzRYdjBzMHdxZ1kycDliSTBtZVA2U1U?oc=5",
       "top": true,
       "bestRank": 8,
-      "firstSeen": "2026-11-18T00:48:50.102Z"
+      "firstSeen": "2026-11-18T03:39:35.052Z"
     },
     {
       "headline": "Rebeca Grynspan could be the UN’s first woman boss, if she can sway Trump",
@@ -334,6 +386,16 @@
       "top": true,
       "bestRank": 10,
       "firstSeen": "2026-11-17T03:39:56.289Z"
+    },
+    {
+      "headline": "Matan Kahana Elected Speaker of Israel’s Parliament",
+      "date": "2026-11-17",
+      "bucket": "Politics",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUVp5THlHSW81cERISEJwR2g5WHIyMmJ5ZFVla3UyY0t5aGZiSEFsdmxuNk41LTNDWnRvRFpBZGE3ZFA4WE9IRjhDaWZ2MjZhUjJQSDVYLWQxeW9fOWVZdlRhcGk1b2JodTF1T0NpNjBoUWcxWGU3Wm1haDZ5VGhybWoyRndicEdTZV9WdTFPTnJCdGc3ZGdHbjNDS2Y1NW5tU1EtUnItZw?oc=5",
+      "top": true,
+      "bestRank": 10,
+      "firstSeen": "2026-11-18T00:48:50.102Z"
     },
     {
       "headline": "Two major Kyiv bridges hit in Russian attack, mayor says",
@@ -386,14 +448,14 @@
       "firstSeen": "2026-11-17T19:05:16.239Z"
     },
     {
-      "headline": "Matan Kahana Elected Speaker of Israel’s Parliament",
+      "headline": "Isolated Brazilian tribe emerges amid alarm over threats to group’s way of life",
       "date": "2026-11-17",
-      "bucket": "Politics",
-      "summary": "Reported by The New York Times.",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUVp5THlHSW81cERISEJwR2g5WHIyMmJ5ZFVla3UyY0t5aGZiSEFsdmxuNk41LTNDWnRvRFpBZGE3ZFA4WE9IRjhDaWZ2MjZhUjJQSDVYLWQxeW9fOWVZdlRhcGk1b2JodTF1T0NpNjBoUWcxWGU3Wm1haDZ5VGhybWoyRndicEdTZV9WdTFPTnJCdGc3ZGdHbjNDS2Y1NW5tU1EtUnItZw?oc=5",
+      "bucket": "World",
+      "summary": "Reported by The Guardian.",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVEpLSHpCSFNpV1RtVUNpNXNyOGRzQmQ0ajNqVVlvVDI1V3d3RzE2ellzeTlXb3B5M2R2Nmd3bnZCZ2pPbm95NXFUZlJ2S1A0aVFXMVlqT1RBQ0pLR09pSzlyTTZTT1FqUG9neVhCWG93VnV3Ti1FSFJlU3F2bjZhZVlmRkhpczJkV0d2bkQ4QQ?oc=5",
       "top": true,
       "bestRank": 13,
-      "firstSeen": "2026-11-18T00:48:50.102Z"
+      "firstSeen": "2026-11-18T03:39:35.052Z"
     },
     {
       "headline": "South Korea cheating scandal: Are AI smart glasses a threat to exams?",
@@ -416,6 +478,16 @@
       "firstSeen": "2026-11-17T21:39:45.151Z"
     },
     {
+      "headline": "North Korea’s Kim Jong Un inspects ski resort as rumors of Trump meeting swirl",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "Reported by NBC News.",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQc3dJMUlfZi1aU0VTUkdRSkQ3VEtJNm52V1ZnTWc0b2s3RXAzaGZldmRPY2laR21RTmdDalM4UDI3UkV0V0hiZVRMbHE3dVRDNnhJMmdqR0hhWmswenRGWm5ZRTNqWjJmdzdmQzIycVgxdjdrWGRkdVlxTzBrNUpTSEpuWXhxcmdEV2FpUGNNTjhnSjN5RWJrRlprdjVOaVh1R1B2ZUt3XzRJUC1tSmxBNVlRcHRUdG1GY1lTcA?oc=5",
+      "top": true,
+      "bestRank": 14,
+      "firstSeen": "2026-11-18T00:48:50.102Z"
+    },
+    {
       "headline": "Kate Middleton Makes Showstopping Entrance in Dramatic Red Gown at Earthshot Awards After 4-Year Absence",
       "date": "2026-11-17",
       "bucket": "World",
@@ -436,16 +508,6 @@
       "firstSeen": "2026-11-17T21:39:45.151Z"
     },
     {
-      "headline": "North Korea’s Kim Jong Un inspects ski resort as rumors of Trump meeting swirl",
-      "date": "2026-11-17",
-      "bucket": "World",
-      "summary": "Reported by NBC News.",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQc3dJMUlfZi1aU0VTUkdRSkQ3VEtJNm52V1ZnTWc0b2s3RXAzaGZldmRPY2laR21RTmdDalM4UDI3UkV0V0hiZVRMbHE3dVRDNnhJMmdqR0hhWmswenRGWm5ZRTNqWjJmdzdmQzIycVgxdjdrWGRkdVlxTzBrNUpTSEpuWXhxcmdEV2FpUGNNTjhnSjN5RWJrRlprdjVOaVh1R1B2ZUt3XzRJUC1tSmxBNVlRcHRUdG1GY1lTcA?oc=5",
-      "top": true,
-      "bestRank": 15,
-      "firstSeen": "2026-11-18T00:48:50.102Z"
-    },
-    {
       "headline": "Kim Jong-un’s daughter wears European ski gear worth over a year’s pay",
       "date": "2026-11-17",
       "bucket": "World",
@@ -464,6 +526,16 @@
       "top": true,
       "bestRank": 16,
       "firstSeen": "2026-11-17T21:39:45.151Z"
+    },
+    {
+      "headline": "Social media algorithms are encouraging Americans to freak out about the tech outages",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "Reported by CNN.",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcE9KQXl1amRQdG9MdmxzeFZjNmJqYnEtVkprazB1N3JmNmNpV25keHdTYmdjNXg5aWlWV0JPMEhaWVF0MTlQUExIWTdIOVBJcXpaUk9zTVBOVk5xVjBGQjhjR1F4OFpEZm5Jc3dHX2VzRWo2WW5zRWQ0a2VfRk5PSEVDQ0JYdE5jY2hBUDE2cFlCLTZZNGFR?oc=5",
+      "top": true,
+      "bestRank": 16,
+      "firstSeen": "2026-11-18T00:48:50.102Z"
     },
     {
       "headline": "Mongolia’s president says he will step down after facing accusations of corruption",
@@ -496,6 +568,16 @@
       "firstSeen": "2026-11-17T21:39:45.151Z"
     },
     {
+      "headline": "Trump’s Sudden Ukraine Push Leaves Europe Walking a Tightrope",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "Reported by Bloomberg.com.",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYk9oUy15aGpkNVBvTWtaVjhvNm1uTnN5bWVidkYtbFdGdmx1WDdJMUdWdlN3QVlTZ0dxZlV0UERhTHBSYUZTOUVpREtoR1ZtbjdsOEk0WS11WnZORXlVNXZpSFVjZzNKV21YUHJ3TFZNMGtvQUlTYkRVTjN5alhQR1AtbW1UVmd0MkxhN1VCMHNKTXgzU2lVR2pKZk4ta0cwaVA0Mkt2ODMxNEU4Wm9scll3?oc=5",
+      "top": true,
+      "bestRank": 19,
+      "firstSeen": "2026-11-18T00:48:50.102Z"
+    },
+    {
       "headline": "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
       "date": "2026-11-17",
       "bucket": "World",
@@ -526,24 +608,14 @@
       "bestRank": 22
     },
     {
-      "headline": "Trump’s Sudden Ukraine Push Leaves Europe Walking a Tightrope",
+      "headline": "Finland's Stubb urges Europe to take Russia talks into its own hands after 'irresponsible' US reliance",
       "date": "2026-11-17",
       "bucket": "World",
-      "summary": "Reported by Bloomberg.com.",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYk9oUy15aGpkNVBvTWtaVjhvNm1uTnN5bWVidkYtbFdGdmx1WDdJMUdWdlN3QVlTZ0dxZlV0UERhTHBSYUZTOUVpREtoR1ZtbjdsOEk0WS11WnZORXlVNXZpSFVjZzNKV21YUHJ3TFZNMGtvQUlTYkRVTjN5alhQR1AtbW1UVmd0MkxhN1VCMHNKTXgzU2lVR2pKZk4ta0cwaVA0Mkt2ODMxNEU4Wm9scll3?oc=5",
+      "summary": "Reported by The Kyiv Independent.",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOE12MU5aQ0hSb2hHY3dsMnRnQzJSSGQzLVRVU3pyUlBnMFdfSnFQRXliVUhUdkNIcXBXUmVqTTdXWXVUSlpPWkY0TGFNeVZyelNoTExPSDJoc25fUzRyTFo3eE5LZWZCaG14Vkx0VTBCWHJjRjMzM3NRTHROTDhRa3p4Yk9WbmlyZmpSOTBITG9MVnlMLTQxZWpQQ3A?oc=5",
       "top": true,
       "bestRank": 24,
-      "firstSeen": "2026-11-18T00:48:50.102Z"
-    },
-    {
-      "headline": "Social media algorithms are encouraging Americans to freak out about the tech outages",
-      "date": "2026-11-17",
-      "bucket": "World",
-      "summary": "Reported by CNN.",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcE9KQXl1amRQdG9MdmxzeFZjNmJqYnEtVkprazB1N3JmNmNpV25keHdTYmdjNXg5aWlWV0JPMEhaWVF0MTlQUExIWTdIOVBJcXpaUk9zTVBOVk5xVjBGQjhjR1F4OFpEZm5Jc3dHX2VzRWo2WW5zRWQ0a2VfRk5PSEVDQ0JYdE5jY2hBUDE2cFlCLTZZNGFR?oc=5",
-      "top": true,
-      "bestRank": 25,
-      "firstSeen": "2026-11-18T00:48:50.102Z"
+      "firstSeen": "2026-11-18T03:39:35.052Z"
     },
     {
       "headline": "Latest science shows chemicals in many everyday items pose a growing threat, UN report says",
@@ -576,6 +648,26 @@
       "firstSeen": "2026-11-18T00:48:50.102Z"
     },
     {
+      "headline": "The incredible shrinking legacy of Donald J Trump",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "Reported by CNN.",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9oMkdocXkyWjJnQ0dBTXplTy12RkVHdVNzWHF1ci1FT1hldWlvbWtUV3FRcXdTZmF6a04zSGtOV0dRblllcm9IZDZnMF94V1p6N1FNaC1wOU92YV9NekdWb2twUVFYMzRqM2VPTQ?oc=5",
+      "top": true,
+      "bestRank": 27,
+      "firstSeen": "2026-11-18T03:39:35.052Z"
+    },
+    {
+      "headline": "Forensic analysis of famed ‘ice mummies’ reveals final moments of Inca children 500 years ago",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "Reported by CNN.",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE81RFhYem5oWkNybE10MjhqTV8zOElzLUFObG9EWGljQWZOMXlScFFfRUk2RkpkOHpsSWpCU0liY2doRGVIYmtvQWZEMTN6LXVfRlpHa0c0Y0FaZTdKeDJ3NmI0eVIxQzNzNlJQcWhNTXRyalR3ZG1XYmhrRQ?oc=5",
+      "top": true,
+      "bestRank": 31,
+      "firstSeen": "2026-11-18T03:39:35.052Z"
+    },
+    {
       "headline": "Mongolian President Abruptly Resigns After Alleged Misconduct",
       "date": "2026-11-17",
       "bucket": "World",
@@ -594,6 +686,16 @@
       "top": true,
       "bestRank": 32,
       "firstSeen": "2026-11-17T21:39:45.151Z"
+    },
+    {
+      "headline": "Nabeel Rajab, prominent Bahraini human rights activist, dies at 62",
+      "date": "2026-11-17",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMHFMZ1U2R2ZYM3RQOU1qWmJmX1RtSDlKYWt2OHd1SVNnNXNiRG9vOE84c0ctMS1HYTZ3TjA4U1lVeGFiX1RUMTJJVGtjTjdieDRXU3JVRmgxSkpvYUJPQi1uTXZuNTlRQXk2MGlvSkpwYXQ3VmZZWkhrUWN2dWtZWG9ZSE1fTHV4U1FJVFZscjhBbnp3TEV0NU1weHJLVUJC?oc=5",
+      "top": true,
+      "bestRank": 32,
+      "firstSeen": "2026-11-18T03:39:35.052Z"
     },
     {
       "headline": "Some Afghan women quietly defy Taliban bans, by opening secret schools and running small businesses",
@@ -745,7 +847,9 @@
       "bucket": "World",
       "summary": "President Trump and China's leader Xi Jinping are due to meet in the Chinese city of Shenzhen. At their last summit in September, Xi said he will welcome 100,000 American students for exchanges.",
       "url": "https://www.npr.org/2026/11/17/nx-s1-6026589/xi-said-china-would-welcome-american-students-for-exchanges-whats-the-reality",
-      "firstSeen": "2026-11-18T00:48:50.102Z"
+      "firstSeen": "2026-11-18T00:48:50.102Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal",
@@ -753,7 +857,9 @@
       "bucket": "World",
       "summary": "China worries the scandal could ramp up pressure on the US to further restrict the sale of advanced chips.",
       "url": "https://www.bbc.co.uk/news/articles/c5vg23g92rj4o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-18T00:48:50.102Z"
+      "firstSeen": "2026-11-18T00:48:50.102Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Who to watch in Spain's election race",
@@ -771,16 +877,6 @@
       "bucket": "World",
       "summary": "One of the key symbols of Russia's occupation of Ukraine has suffered major damage after a seven-stage attack by Kyiv.",
       "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-17T19:05:16.239Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Trump lands in Asia ahead of talks with Russian and Chinese presidents",
-      "date": "2026-11-17",
-      "bucket": "World",
-      "summary": "The US president said he would be open to a one-on-one meeting with Russia's Vladimir Putin \"if it's available\".",
-      "url": "https://www.bbc.co.uk/news/articles/crq5vlxxx32no?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-11-17T19:05:16.239Z",
       "top": false,
       "bestRank": null
@@ -1416,6 +1512,16 @@
       "firstSeen": "2026-11-17T09:37:33.217Z"
     },
     {
+      "headline": "Marine Le Pen's position on Ukraine is either hypocrisy or cowardice",
+      "date": "2026-11-16",
+      "bucket": "World",
+      "summary": "Reported by Euronews.com.",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZjhid1cwUE1HQzFpcURMQWFBQm5Yc2p1TzNmd056SW4zcXZ2b0dLRHZvNGxMWEFSdDVDc3NXRnp1RlJKQUtjLTRyN0lRVE52d0p5R0xtWURrTFdjTWE5c0xMSllWdjlQVGRBMjdrNFExTWhQVlYtQlphUjloQzkwSXJsNy10TnpUQWZmNlVRUXBZbUFtVmdyNnFibHFuUU5vM1pQS25FWUN3OU1xMlh3MkUwZnREUQ?oc=5",
+      "top": true,
+      "bestRank": 12,
+      "firstSeen": "2026-11-18T03:39:35.052Z"
+    },
+    {
       "headline": "Police: 2 Americans drown after being pulled by strong sea currents in the Bahamas",
       "date": "2026-11-16",
       "bucket": "World",
@@ -1666,6 +1772,16 @@
       "firstSeen": "2026-11-17T11:22:56.265Z"
     },
     {
+      "headline": "COP31: First Draft Sets Ambitious 2035 Carbon Capture Targets As Carbon Removal Also Gains Ground",
+      "date": "2026-11-16",
+      "bucket": "World",
+      "summary": "Reported by The Guardian.",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNU2JWWlJuNFBTbGhDR1MzZ3poOTZHN0FfSmI4SDluMXlSMXVvWkVScWRrdFhhRzdLYmpLRGFMeC1tX3RSeTUtU0Z2aU4yRzgtQXRRVEVJU2VYZTZQaFMxazRCOVpZQlFkeUhLdkRwUDFsS2hjX05TNVlPYmpXcG1oWFBSdkwtaGxZ?oc=5",
+      "top": true,
+      "bestRank": 30,
+      "firstSeen": "2026-11-17T21:39:45.151Z"
+    },
+    {
       "headline": "Israeli Opposition Chiefs Denounce Netanyahu Over 'Attempted Coup'",
       "date": "2026-11-16",
       "bucket": "Politics",
@@ -1714,16 +1830,6 @@
       "top": true,
       "bestRank": 35,
       "firstSeen": "2026-11-17T03:39:56.289Z"
-    },
-    {
-      "headline": "COP31: First Draft Sets Ambitious 2035 Carbon Capture Targets As Carbon Removal Also Gains Ground",
-      "date": "2026-11-16",
-      "bucket": "World",
-      "summary": "Reported by The Guardian.",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNU2JWWlJuNFBTbGhDR1MzZ3poOTZHN0FfSmI4SDluMXlSMXVvWkVScWRrdFhhRzdLYmpLRGFMeC1tX3RSeTUtU0Z2aU4yRzgtQXRRVEVJU2VYZTZQaFMxazRCOVpZQlFkeUhLdkRwUDFsS2hjX05TNVlPYmpXcG1oWFBSdkwtaGxZ?oc=5",
-      "top": true,
-      "bestRank": 35,
-      "firstSeen": "2026-11-17T21:39:45.151Z"
     },
     {
       "headline": "Location Announced for the Rivera Uruguay Temple",
