@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-11-19T15:40:52.138Z",
+  "generatedAt": "2026-11-19T18:39:15.855Z",
   "retentionDays": 21,
   "windowStart": "2026-10-29",
   "windowEnd": "2026-11-19",
   "snapshotIntervalHours": 3,
-  "count": 2132,
+  "count": 2135,
   "items": [
     {
       "headline": "Xi Jinping rallies against protectionism as he welcomes Trump to Apec summit",
@@ -16,16 +16,6 @@
       "top": true,
       "bestRank": 1,
       "firstSeen": "2026-11-19T03:38:24.356Z"
-    },
-    {
-      "headline": "Trump, Xi and Putin sit down for a rare 3-way meeting in China, but appear to achieve little",
-      "date": "2026-11-19",
-      "bucket": "World",
-      "summary": "Reported by CBS News.",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05RFI1UXR5alZLUGZrOEVjR1RnR3FxOTVqU3hYRTFiRkU2UXF2bjFMRmFUN2dDeXlfUWt3REJvY242b2l4bFh5ZHoxT04tUjhFRzR2MF9mbC1WVTBNeG0zSU9LN3pNdHRnT0dYTW9WWQ?oc=5",
-      "top": true,
-      "bestRank": 1,
-      "firstSeen": "2026-11-19T15:40:52.138Z"
     },
     {
       "headline": "Top U.N. court rules Myanmar committed genocide against the Rohingya",
@@ -101,7 +91,7 @@
       "headline": "Putin vows 'far more painful' response to Ukraine's strikes on Crimean Bridge",
       "date": "2026-11-19",
       "bucket": "World",
-      "summary": "The Russian president said the Crimean Bridge was civilian infrastructure, which Kyiv disputes.",
+      "summary": "The bridge - a symbol of Russia's occupation of the Crimean Peninsula - suffered major damaged following a combined attack by Ukraine earlier this week.",
       "url": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-11-19T09:38:40.841Z",
       "top": true,
@@ -156,6 +146,16 @@
       "top": true,
       "bestRank": 7,
       "firstSeen": "2026-11-19T12:42:58.478Z"
+    },
+    {
+      "headline": "Dozens missing after boat carrying migrants sinks off Senegal's coast",
+      "date": "2026-11-19",
+      "bucket": "World",
+      "summary": "At least four bodies have been recovered from the boat which was reportedly carrying between 50 and 100 people.",
+      "url": "https://www.bbc.co.uk/news/articles/c58j484089ewo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-08T18:34:10.739Z",
+      "top": true,
+      "bestRank": 7
     },
     {
       "headline": "Taiwan reports two Russian military aircraft nearby, second time this week",
@@ -288,12 +288,38 @@
       "bestRank": null
     },
     {
+      "headline": "Susan Smith denied parole again 32 years after drowning her two sons",
+      "date": "2026-11-19",
+      "bucket": "World",
+      "summary": "At a hearing on the possibility of parole, Smith said she wished she could change the past, and her two children \"did not deserve to die\".",
+      "url": "https://www.bbc.co.uk/news/articles/ckdd1y09eqjmo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-19T18:39:15.855Z"
+    },
+    {
+      "headline": "Rohingya genocide: What was said in court and what happens now?",
+      "date": "2026-11-19",
+      "bucket": "World",
+      "summary": "The verdict marks the first time a state has ever been found to have committed genocide by an international court.",
+      "url": "https://www.bbc.co.uk/news/videos/c60qj10j0ld5o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-19T18:39:15.855Z"
+    },
+    {
+      "headline": "'Frustrated' - Democrats remain a divided party despite winning big in midterms",
+      "date": "2026-11-19",
+      "bucket": "World",
+      "summary": "After winning power in Congress, a Democratic conference in Denver was animated with talk on the best way forward.",
+      "url": "https://www.bbc.co.uk/news/articles/c6174edpp5e8o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-19T18:39:15.855Z"
+    },
+    {
       "headline": "Venezuela signs military deal with US less than a year after Maduro's removal",
       "date": "2026-11-19",
       "bucket": "World",
       "summary": "The US Secretary of Defence says Venezuela has \"gone from our most aggressive regional threat to a compliant security partner\".",
       "url": "https://www.bbc.co.uk/news/articles/cmwy8pyqlq5vo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-19T15:40:52.138Z"
+      "firstSeen": "2026-11-19T15:40:52.138Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "US consortium wins huge Kenya mining deal, beating Chinese rivals",
@@ -301,7 +327,9 @@
       "bucket": "World",
       "summary": "The Mrima Hill site is estimated to hold deposits of critical minerals worth more than $60bn (£45bn).",
       "url": "https://www.bbc.co.uk/news/articles/cm9q84gp0gr3o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-19T15:40:52.138Z"
+      "firstSeen": "2026-11-19T15:40:52.138Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Florida pastor found guilty over role in assassination of Haitian president",
@@ -309,7 +337,9 @@
       "bucket": "World",
       "summary": "Christian Emmanuel Sanon is convicted of involvement in the plot that resulted in the killing of Jovenel Moïse.",
       "url": "https://www.bbc.co.uk/news/articles/cm702q0lg50po?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-19T15:40:52.138Z"
+      "firstSeen": "2026-11-19T15:40:52.138Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Indian driver wins $1.3m in life-changing lottery prize",
@@ -317,7 +347,9 @@
       "bucket": "World",
       "summary": "A truck driver's fortunes have changed overnight after he won a Diwali lottery in the northern Indian state of Punjab.",
       "url": "https://www.bbc.co.uk/news/videos/cke89vdn75gyo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-19T15:40:52.138Z"
+      "firstSeen": "2026-11-19T15:40:52.138Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Trump greets 'my friend' Putin as pair shake hands",
@@ -325,7 +357,9 @@
       "bucket": "World",
       "summary": "The pair met ahead of a trilateral meeting later with Chinese leader Xi Jinping.",
       "url": "https://www.bbc.co.uk/news/videos/c6j9m19llmv3o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-19T15:40:52.138Z"
+      "firstSeen": "2026-11-19T15:40:52.138Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Trump, Xi and Putin meet as global alliances hang in the balance",
@@ -396,6 +430,16 @@
       "firstSeen": "2026-11-18T18:33:27.646Z",
       "top": false,
       "bestRank": null
+    },
+    {
+      "headline": "Former U.S. ambassador on Trump's joint summit with leaders of China and Russia",
+      "date": "2026-11-18",
+      "bucket": "World",
+      "summary": "NPR's Leila Fadel speaks to Nicholas Burns, former U.S. ambassador to China and NATO, about President Trump's planned meeting with the leaders of China and Russia.",
+      "url": "https://www.npr.org/2026/11/18/nx-s1-6044067/former-u-s-ambassador-on-trumps-joint-summit-with-leaders-of-china-and-russia",
+      "firstSeen": "2026-11-19T15:40:52.138Z",
+      "top": true,
+      "bestRank": 1
     },
     {
       "headline": "Former U.S. ambassador on Trump's joint summit with leaders of China and Russia",
@@ -526,16 +570,6 @@
       "top": true,
       "bestRank": 4,
       "firstSeen": "2026-11-18T21:37:05.221Z"
-    },
-    {
-      "headline": "Former U.S. ambassador on Trump's joint summit with leaders of China and Russia",
-      "date": "2026-11-18",
-      "bucket": "World",
-      "summary": "NPR's Leila Fadel speaks to Nicholas Burns, former U.S. ambassador to China and NATO, about President Trump's planned meeting with the leaders of China and Russia.",
-      "url": "https://www.npr.org/2026/11/18/nx-s1-6044067/former-u-s-ambassador-on-trumps-joint-summit-with-leaders-of-china-and-russia",
-      "firstSeen": "2026-11-17T11:22:56.265Z",
-      "top": true,
-      "bestRank": 5
     },
     {
       "headline": "Russia Asks if Netherlands Is Joining Ukraine War After Dutch Company's Missiles Used in Bridge Attack",
@@ -1384,26 +1418,6 @@
       "bestRank": null
     },
     {
-      "headline": "The seven Anthropic founders who are about to become multi-billionaires",
-      "date": "2026-11-18",
-      "bucket": "World",
-      "summary": "The AI company behind Claude is about to sell its shares on the US stock market - making its founders very rich.",
-      "url": "https://www.bbc.co.uk/news/articles/cmd7159vlr85o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-18T15:35:50.033Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Russian man accused of spying on US tech defence company that assists Ukraine",
-      "date": "2026-11-18",
-      "bucket": "World",
-      "summary": "The suspect followed employees and was found with fake US IDs and two Russian passports, prosecutors say.",
-      "url": "https://www.bbc.co.uk/news/articles/cq20xg80ly47o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-19T00:53:27.474Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "Catherine visits Mumbai maternity hospital on the last day of royal trip",
       "date": "2026-11-18",
       "bucket": "World",
@@ -1419,6 +1433,64 @@
       "bucket": "World",
       "summary": "Anthropic's hotly anticipated IPO is expected to put it in the top 10 most valuable US companies, but the future is uncertain.",
       "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-19T00:53:27.474Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "New video shows explosions moments before part of Crimea Bridge collapses",
+      "date": "2026-11-18",
+      "bucket": "World",
+      "summary": "BBC Verify analyses footage showing the final moments before part of the bridge fell and videos showing the scale of destruction.",
+      "url": "https://www.bbc.co.uk/news/videos/ckvg28jy77z5o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-18T18:33:27.646Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Fiona the hippo undergoing care after swallowing a hat at Cincinnati Zoo",
+      "date": "2026-11-18",
+      "bucket": "World",
+      "summary": "Zookeepers say she cannot have surgery but are providing fluids and supportive care to help her pass the hat.",
+      "url": "https://www.bbc.co.uk/news/articles/cm2d93z0e9gjo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-18T18:33:27.646Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump",
+      "date": "2026-11-18",
+      "bucket": "World",
+      "summary": "Asif Merchant was found guilty in March of trying to hire undercover FBI agents as hitmen to assassinate US officials, including the president.",
+      "url": "https://www.bbc.co.uk/news/articles/cm15ezz8n394o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-18T15:35:50.033Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
+      "date": "2026-11-18",
+      "bucket": "Conflict",
+      "summary": "Watch: The BBC's Jonathan Beale joins Ukrainian forces taking the battle below ground and out of sight of Russian drones.",
+      "url": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-19T18:39:15.855Z"
+    },
+    {
+      "headline": "The seven Anthropic founders who are about to become multi-billionaires",
+      "date": "2026-11-18",
+      "bucket": "World",
+      "summary": "The AI company behind Claude is about to sell its shares on the US stock market - making its founders very rich.",
+      "url": "https://www.bbc.co.uk/news/articles/cmd7159vlr85o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-18T15:35:50.033Z",
+      "top": false,
+      "bestRank": null
+    },
+    {
+      "headline": "Russian man accused of spying on US tech defence company that assists Ukraine",
+      "date": "2026-11-18",
+      "bucket": "World",
+      "summary": "The suspect followed employees and was found with fake US IDs and two Russian passports, prosecutors say.",
+      "url": "https://www.bbc.co.uk/news/articles/cq20xg80ly47o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-11-19T00:53:27.474Z",
       "top": false,
       "bestRank": null
@@ -1454,26 +1526,6 @@
       "bestRank": null
     },
     {
-      "headline": "New video shows explosions moments before part of Crimea Bridge collapses",
-      "date": "2026-11-18",
-      "bucket": "World",
-      "summary": "BBC Verify analyses footage showing the final moments before part of the bridge fell and videos showing the scale of destruction.",
-      "url": "https://www.bbc.co.uk/news/videos/ckvg28jy77z5o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-18T18:33:27.646Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Fiona the hippo undergoing care after swallowing a hat at Cincinnati Zoo",
-      "date": "2026-11-18",
-      "bucket": "World",
-      "summary": "Zookeepers say she cannot have surgery but are providing fluids and supportive care to help her pass the hat.",
-      "url": "https://www.bbc.co.uk/news/articles/cm2d93z0e9gjo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-18T18:33:27.646Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "British hacker who stole $11m through text message scheme jailed for six years in US",
       "date": "2026-11-18",
       "bucket": "World",
@@ -1489,16 +1541,6 @@
       "bucket": "World",
       "summary": "The decision comes after California banned Waymo's driverless vehicles from operating on the state's highways following a series of traffic incidents.",
       "url": "https://www.bbc.co.uk/news/articles/cmy86pp336qlo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-18T15:35:50.033Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump",
-      "date": "2026-11-18",
-      "bucket": "World",
-      "summary": "Asif Merchant was found guilty in March of trying to hire undercover FBI agents as hitmen to assassinate US officials, including the president.",
-      "url": "https://www.bbc.co.uk/news/articles/cm15ezz8n394o?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-11-18T15:35:50.033Z",
       "top": false,
       "bestRank": null
@@ -9864,16 +9906,6 @@
       "top": true,
       "bestRank": 7,
       "firstSeen": "2026-11-09T03:37:13.552Z"
-    },
-    {
-      "headline": "At least 34 dead after Europe-bound migrant boat sinks off Senegal",
-      "date": "2026-11-09",
-      "bucket": "World",
-      "summary": "The Atlantic crossing to Spain's Canary Islands remains dangerous for migrants seeking a better life",
-      "url": "https://www.bbc.co.uk/news/articles/cv2d6dpge65go?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-08T18:34:10.739Z",
-      "top": true,
-      "bestRank": 7
     },
     {
       "headline": "Spain's right well ahead in polls for November 29 election",
