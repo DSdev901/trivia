@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-11-20T09:22:50.330Z",
+  "generatedAt": "2026-11-20T12:26:58.975Z",
   "retentionDays": 21,
-  "windowStart": "2026-10-30T09:22:50.330Z",
-  "windowEnd": "2026-11-20T09:22:50.330Z",
+  "windowStart": "2026-10-30T12:26:58.975Z",
+  "windowEnd": "2026-11-20T12:26:58.975Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,327 @@
     "Tennis",
     "MMA"
   ],
-  "count": 7274,
+  "count": 7282,
   "items": [
+    {
+      "key": "50522496",
+      "id": "50522496",
+      "headline": "Ohio State's club team might be the Buckeyes' most dominant program",
+      "summary": "One football team in Columbus still has national title hopes. Just not the one with Jeremiah Smith.",
+      "url": "https://www.espn.com/college-football/story/_/id/50522496/ohio-state-club-football",
+      "sport": "College football",
+      "published": "2026-11-20T12:21:20.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50534234",
+      "id": "50534234",
+      "headline": "With Titans, Eagles up next, it's now or never for Cowboys",
+      "summary": "Thanks to the scuffling NFC East and a friendly schedule the next week, the Cowboys still have a playoff shot.",
+      "url": "https://www.espn.com/nfl/story/_/id/50534234/cowboys-titans-eagles-nfc-east-thanksgiving",
+      "sport": "NFL",
+      "published": "2026-11-20T12:12:06.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50540215",
+      "id": "50540215",
+      "headline": "Arsenal's Bukayo Saka out for a month, William Saliba available - Mikel Arteta",
+      "summary": "Arsenal manager Mikel Arteta expects Bukayo Saka to be sidelined for another four weeks with the thigh injury that has already kept the England winger out for a month.",
+      "url": "https://www.espn.com/soccer/story/_/id/50540215/arsenal-saka-saliba-arteta-injury",
+      "sport": "Soccer",
+      "published": "2026-11-20T12:07:50.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50524821",
+      "id": "50524821",
+      "headline": "Fred VanVleet's 'fresh slate' is driving Houston's early season success",
+      "summary": "A healthy Fred VanVleet is commanding the surging Rockets after an ACL injury derailed his 2025-26 season. Here's why he's so important.",
+      "url": "https://www.espn.com/nba/story/_/id/50524821/nba-houston-rockets-fred-vanvleet-injury-comeback",
+      "sport": "NBA",
+      "published": "2026-11-20T12:05:18.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50534111",
+      "id": "50534111",
+      "headline": "Windhorst and MacMahon: League execs, scouts examine nine rookie starts",
+      "summary": "How has the first month unfolded for nine first-year stars? Brian Windhorst and Tim MacMahon canvass the league.",
+      "url": "https://www.espn.com/nba/story/_/id/50534111/rookies-dybantsa-peterson-boozer-acuff-yaxel",
+      "sport": "NBA",
+      "published": "2026-11-20T11:57:57.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 2
+    },
+    {
+      "key": "49960162",
+      "id": "49960162",
+      "headline": "Fantasy basketball points league rankings update: Lendeborg, Acuff Jr. on the rise",
+      "summary": "Updated fantasy basketball rankings for points leagues, with Cade Cunningham and Jalen Johnson starting the season higher than ever before.",
+      "url": "https://www.espn.com/fantasy/basketball/story/_/id/49960162/fantasy-basketball-points-league-rankings-2026-27-nba-season",
+      "sport": "NBA",
+      "published": "2026-11-20T11:54:02.000Z",
+      "firstSeen": "2026-10-09T15:29:39.177Z",
+      "bestRank": 3
+    },
+    {
+      "key": "49425027",
+      "id": "49425027",
+      "headline": "MLB labor battle: Latest updates, full coverage on CBA, salary cap, more",
+      "summary": "We tackle the toughest questions and burning issues as the owners and players negotiate on a new CBA.",
+      "url": "https://www.espn.com/mlb/story/_/id/49425027/mlb-labor-cba-owners-players-union-salary-cap-draft-proposals-mlbpa-negotiations-latest-updates",
+      "sport": "MLB",
+      "published": "2026-11-20T11:53:39.000Z",
+      "firstSeen": "2026-11-03T21:22:01.558Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50533958",
+      "id": "50533958",
+      "headline": "Play the long game: Trade for these fantasy hoops players before they heat up",
+      "summary": "Be ahead of the curve, and boost your fantasy basketball lineup with these trades or adds while the value is right.",
+      "url": "https://www.espn.com/fantasy/basketball/story/_/id/50533958/fantasy-basketball-players-trade-waivers-pickups",
+      "sport": "NBA",
+      "published": "2026-11-20T11:52:36.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50532835",
+      "id": "50532835",
+      "headline": "Fantasy football last-minute pickups: Flournoy, Ayomanor among top candidates",
+      "summary": "There is no busier bye week than this one. Matt Bowen lists potential options if you need a fill-in.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50532835/fantasy-football-streamers-last-minute-pickups-week-11",
+      "sport": "NFL",
+      "published": "2026-11-20T11:51:24.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 1
+    },
+    {
+      "key": "49959975",
+      "id": "49959975",
+      "headline": "Fantasy basketball Category and Roto rankings: Jokic on top, Murray in top 15",
+      "summary": "Updated fantasy basketball rankings for H2H category and roto leagues, with Nikola Jokic on top and teammate Jamal Murray on the rise.",
+      "url": "https://www.espn.com/fantasy/basketball/story/_/id/49959975/fantasy-basketball-roto-category-league-rankings-2026-27-nba-season",
+      "sport": "NBA",
+      "published": "2026-11-20T11:50:37.000Z",
+      "firstSeen": "2026-10-09T15:29:39.177Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50531850",
+      "id": "50531850",
+      "headline": "Why Mike Trout believes new owner Stan Kroenke will revive Angels",
+      "summary": "The sale of the Angels has the franchise's greatest player excited about the future again.",
+      "url": "https://www.espn.com/mlb/story/_/id/50531850/mike-trout-angels-new-owner-stan-kroenke",
+      "sport": "MLB",
+      "published": "2026-11-20T11:50:07.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50531472",
+      "id": "50531472",
+      "headline": "What to know to set your lineup: Nix, Ward viable options if your QB is on bye",
+      "summary": "Adam Rank catches you up on the vital information and insight before you make your toughest lineup decisions.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50531472/fantasy-football-start-sit-week-11-need-know",
+      "sport": "NFL",
+      "published": "2026-11-20T11:48:57.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50533477",
+      "id": "50533477",
+      "headline": "'Another universe': How Indiana football changed Bloomington",
+      "summary": "The basketball haven has become a legend of the fall, where the reigning national champs take center stage.",
+      "url": "https://www.espn.com/college-football/story/_/id/50533477/bloomington-indiana-football-town",
+      "sport": "College football",
+      "published": "2026-11-20T11:45:14.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50525533",
+      "id": "50525533",
+      "headline": "NFL offseason free agent and trade acquisitions that have and have not worked",
+      "summary": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
+      "url": "https://www.espn.com/nfl/story/_/id/50525533/2026-offseason-change-scenery-fits-players-new-teams",
+      "sport": "NFL",
+      "published": "2026-11-20T11:42:26.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50522208",
+      "id": "50522208",
+      "headline": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "sport": "NFL",
+      "published": "2026-11-20T11:41:43.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50532397",
+      "id": "50532397",
+      "headline": "Connelly on Week 12: Test for Tennessee; Big Ten favorites hit road",
+      "summary": "Vols, Kiffin meet again and fringe CFP contenders try to stay alive on a sneaky-good Week 12 slate.",
+      "url": "https://www.espn.com/college-football/story/_/id/50532397/connelly-week-12-preview-big-ten-tennessee",
+      "sport": "College football",
+      "published": "2026-11-20T11:41:25.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50540039",
+      "id": "50540039",
+      "headline": "UFC fighter Manon Fiorot banned for 3 months for violating anti-doping policy",
+      "summary": "UFC fighter Manon Fiorot of France has been banned for three months for violating its anti-doping policy, the mixed martial arts competition said.",
+      "url": "https://www.espn.com/mma/story/_/id/50540039/ufc-fighter-manon-fiorot-banned-3-months-doping",
+      "sport": "MMA",
+      "published": "2026-11-20T11:28:31.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50539955",
+      "id": "50539955",
+      "headline": "Mikel Arteta: Steps taken to avoid team leaks due to Fantasy Premier League",
+      "summary": "Mikel Arteta has said Arsenal have taken steps to avoid future team leaks via Fantasy Premier League after Christos Tzolis inadvertently revealed information through his own selections in the game.",
+      "url": "https://www.espn.com/soccer/story/_/id/50539955/arsenal-arteta-fantasy-premier-league-injuries-team-news",
+      "sport": "Soccer",
+      "published": "2026-11-20T11:27:07.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50534594",
+      "id": "50534594",
+      "headline": "NFL field director Nick Pappas tested by 9 international games",
+      "summary": "Nick Pappas is the man charged with making sure international venues are up to standard to host NFL games.",
+      "url": "https://www.espn.com/nfl/story/_/id/50534594/mf-field-director-versus-international-games",
+      "sport": "NFL",
+      "published": "2026-11-20T11:14:03.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50539880",
+      "id": "50539880",
+      "headline": "ATP Tour unveils expanded compensation plan to benefit top 250 players",
+      "summary": "The ATP Tour unveiled a new player compensation plan on Friday that is projected to exceed $350 million starting in 2028 and provide better pay for up to 250 players in men's tennis.",
+      "url": "https://www.espn.com/tennis/story/_/id/50539880/atp-tour-unveils-expanded-compensation-top-250-players",
+      "sport": "Tennis",
+      "published": "2026-11-20T11:06:54.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50523033",
+      "id": "50523033",
+      "headline": "Titans defense crumbling post-Jeffery Simmons, Amani Hooker trades",
+      "summary": "The moves Tennessee made might have helped the rebuilding process, but it also impacted the current team.",
+      "url": "https://www.espn.com/nfl/story/_/id/50523033/titans-defense-post-jeffery-simmons-amani-hooker-trades",
+      "sport": "NFL",
+      "published": "2026-11-20T11:00:10.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50535497",
+      "id": "50535497",
+      "headline": "How Bhayshul Tuten became the clear No. 1 running back for the Jaguars",
+      "summary": "After a lackluster rookie season, Tuten ranks 14th in NFL in rushing yards entering Sunday's game against the Giants.",
+      "url": "https://www.espn.com/nfl/story/_/id/50535497/jacksonville-jaguars-bhayshul-tuten-rb-stats-fantasy",
+      "sport": "NFL",
+      "published": "2026-11-20T11:00:03.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50531651",
+      "id": "50531651",
+      "headline": "How Vikings brought Mexico City's elevation to Minnesota",
+      "summary": "Rather than spending the week in high altitude like Denver, the Vikings trained in a facility at home.",
+      "url": "https://www.espn.com/nfl/story/_/id/50531651/vikings-49ers-mexico-city-elevation-minnesota",
+      "sport": "NFL",
+      "published": "2026-11-20T11:00:01.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50539115",
+      "id": "50539115",
+      "headline": "Houston muscles past Kansas to cap 3-day run, stamps claim to No. 1 ranking",
+      "summary": "Houston made a clear statement it belongs atop the rankings, capping its run through the Players Era 8 win a 92-83 win over No. 11 Kansas on Thursday night.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50539115/houston-muscles-kansas-stamps-claim-no-1-ranking",
+      "sport": "College basketball",
+      "published": "2026-11-20T10:57:48.000Z",
+      "firstSeen": "2026-11-20T09:22:50.330Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50539774",
+      "id": "50539774",
+      "headline": "Mikel Arteta warns of drone breach risk after Man United training incident",
+      "summary": "Mikel Arteta has described Manchester United's training ground drone breach as a \"serious issue\" and warned of the risk of future problems across the Premier League.",
+      "url": "https://www.espn.com/soccer/story/_/id/50539774/arsenal-mikel-arteta-man-united-drone-pochettino",
+      "sport": "Soccer",
+      "published": "2026-11-20T10:47:15.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50530231",
+      "id": "50530231",
+      "headline": "Messi vs. Ronaldo, Man Utd hire Moyes: GTA V came out in a different soccer world",
+      "summary": "As Grand Theft Auto VI is finally unleashed, here is what was happening in the world of soccer when the previous game was released 13 years ago",
+      "url": "https://www.espn.com/soccer/story/_/id/50530231/gta-vi-messi-ronaldo-manchester-united",
+      "sport": "Soccer",
+      "published": "2026-11-20T09:55:12.000Z",
+      "firstSeen": "2026-11-19T15:21:54.925Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50533559",
+      "id": "50533559",
+      "headline": "Drone operator who filmed Mauricio Pochettino at Man United apologises",
+      "summary": "Video footage of Mauricio Pochettino's first training session as Manchester United head coach has appeared on YouTube after it was filmed by a drone operator.",
+      "url": "https://www.espn.com/soccer/story/_/id/50533559/mauricio-pochettino-man-united-training-drone-filmed-online",
+      "sport": "Soccer",
+      "published": "2026-11-20T09:55:09.000Z",
+      "firstSeen": "2026-11-19T21:21:04.901Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50523536",
+      "id": "50523536",
+      "headline": "Estêvão is Brazil's brightest young talent. Is Chelsea the right place for him?",
+      "summary": "Estêvão is widely regarded as Brazil's brightest young talent, but he has struggled for playing time at Chelsea this season. What's behind his lack of minutes?",
+      "url": "https://www.espn.com/soccer/story/_/id/50523536/estevao-brazil-young-talent-chelsea",
+      "sport": "Soccer",
+      "published": "2026-11-20T09:01:33.000Z",
+      "firstSeen": "2026-11-20T12:26:58.975Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50472078",
+      "id": "50472078",
+      "headline": "Antonelli handed grid penalty for Las Vegas GP; Russell sets pace in FP2",
+      "summary": "New world champion Kimi Antonelli will take a five-place grid penalty for the Las Vegas Grand Prix after taking a new engine, the FIA confirmed during second practice.",
+      "url": "https://www.espn.com/f1/story/_/id/50472078/kimi-antonelli-george-russell-las-vegas-grand-prix-formula-1",
+      "sport": "F1",
+      "published": "2026-11-20T08:42:10.000Z",
+      "firstSeen": "2026-11-20T06:30:25.724Z",
+      "bestRank": 1
+    },
     {
       "key": "50519892",
       "id": "50519892",
@@ -44,17 +363,6 @@
       "published": "2026-11-20T08:37:46.000Z",
       "firstSeen": "2026-11-20T09:22:50.330Z",
       "bestRank": 2
-    },
-    {
-      "key": "50539115",
-      "id": "50539115",
-      "headline": "Houston muscles past Kansas to cap 3-day run, stamps claim to No. 1 ranking",
-      "summary": "Houston made a clear statement it belongs atop the rankings, capping its run through the Players Era 8 win a 92-83 win over No. 11 Kansas on Thursday night.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50539115/houston-muscles-kansas-stamps-claim-no-1-ranking",
-      "sport": "College basketball",
-      "published": "2026-11-20T08:31:11.000Z",
-      "firstSeen": "2026-11-20T09:22:50.330Z",
-      "bestRank": 1
     },
     {
       "key": "50539252",
@@ -286,17 +594,6 @@
       "published": "2026-11-20T06:07:56.000Z",
       "firstSeen": "2026-11-20T06:30:25.724Z",
       "bestRank": 2
-    },
-    {
-      "key": "50472078",
-      "id": "50472078",
-      "headline": "Las Vegas Grand Prix: George Russell sets pace in wet second practice",
-      "summary": "George Russell edged out Charles Leclerc in the closing stages of second practice at the Las Vegas Grand Prix in wet conditions.",
-      "url": "https://www.espn.com/f1/story/_/id/50472078/george-russell-mercedes-las-vegas-grand-prix-formula-1",
-      "sport": "F1",
-      "published": "2026-11-20T06:06:28.000Z",
-      "firstSeen": "2026-11-20T06:30:25.724Z",
-      "bestRank": 1
     },
     {
       "key": "50538628",
@@ -2108,7 +2405,7 @@
       "headline": "Bengals, Reds pay tribute to Fiona the hippo after her death",
       "summary": "The world-famous hippopotamus passed away Thursday after ingesting a hat that made its way into her enclosure.",
       "url": "https://www.espn.com/nfl/story/_/id/50534625/cincinnati-bengals-reds-fiona-hippo",
-      "sport": "MLB",
+      "sport": "NFL",
       "published": "2026-11-19T23:23:55.000Z",
       "firstSeen": "2026-11-20T00:39:04.971Z",
       "bestRank": 1
@@ -2196,7 +2493,7 @@
       "headline": "Studies: Blood test has potential to detect CTE in the living",
       "summary": "A new blood test shows potential to detect advanced stages of chronic traumatic encephalopathy (CTE) in the living, according to two recent published studies.",
       "url": "https://www.espn.com/nfl/story/_/id/50532686/studies-blood-test-potential-detect-cte-living",
-      "sport": "NHL",
+      "sport": "College football",
       "published": "2026-11-19T22:37:56.000Z",
       "firstSeen": "2026-11-19T21:21:04.901Z",
       "bestRank": 2
@@ -2209,17 +2506,6 @@
       "url": "https://www.espn.com/fantasy/hockey/story/_/id/50532265/fantasy-hockey-trade-advice-connor-mcdavid-offer-points",
       "sport": "NHL",
       "published": "2026-11-19T22:32:52.000Z",
-      "firstSeen": "2026-11-19T21:21:04.901Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50533559",
-      "id": "50533559",
-      "headline": "Mauricio Pochettino's 1st Man United training session filmed by drone operator",
-      "summary": "Video footage of Mauricio Pochettino's first training session as Manchester United head coach has appeared on YouTube after it was filmed by a drone operator.",
-      "url": "https://www.espn.com/soccer/story/_/id/50533559/mauricio-pochettino-man-united-training-drone-filmed-online",
-      "sport": "Soccer",
-      "published": "2026-11-19T22:28:35.000Z",
       "firstSeen": "2026-11-19T21:21:04.901Z",
       "bestRank": 1
     },
@@ -3278,17 +3564,6 @@
       "published": "2026-11-19T13:19:26.000Z",
       "firstSeen": "2026-11-19T15:21:54.925Z",
       "bestRank": 1
-    },
-    {
-      "key": "50530231",
-      "id": "50530231",
-      "headline": "Messi vs. Ronaldo, Man Utd hire Moyes: GTA V came out in a different soccer world",
-      "summary": "As Grand Theft Auto VI is finally unleashed, here is what was happening in the world of soccer when the previous game was released 13 years ago",
-      "url": "https://www.espn.com/soccer/story/_/id/50530231/gta-vi-messi-ronaldo-manchester-united",
-      "sport": "Soccer",
-      "published": "2026-11-19T13:08:47.000Z",
-      "firstSeen": "2026-11-19T15:21:54.925Z",
-      "bestRank": 2
     },
     {
       "key": "50528505",
@@ -65672,17 +65947,6 @@
       "bestRank": 2
     },
     {
-      "key": "49425027",
-      "id": "49425027",
-      "headline": "MLB labor battle: Latest updates, full coverage on CBA, salary cap, more",
-      "summary": "We tackle the toughest questions and burning issues as the owners and players negotiate on a new CBA.",
-      "url": "https://www.espn.com/mlb/story/_/id/49425027/mlb-labor-cba-owners-players-union-salary-cap-draft-proposals-mlbpa-negotiations-latest-updates",
-      "sport": "MLB",
-      "published": "2026-11-03T19:27:38.000Z",
-      "firstSeen": "2026-11-03T21:22:01.558Z",
-      "bestRank": 4
-    },
-    {
       "key": "50358121",
       "id": "50358121",
       "headline": "Source: FIFA to open World Cup private equity plan files following UEFA demands",
@@ -65846,28 +66110,6 @@
       "published": "2026-11-03T17:35:52.000Z",
       "firstSeen": "2026-11-03T18:13:07.706Z",
       "bestRank": 3
-    },
-    {
-      "key": "49960162",
-      "id": "49960162",
-      "headline": "Fantasy basketball points league rankings update: Doncic, Flagg on the rise",
-      "summary": "Updated fantasy basketball rankings for points leagues, with Cade Cunningham and Jalen Johnson starting the season higher than ever before.",
-      "url": "https://www.espn.com/fantasy/basketball/story/_/id/49960162/fantasy-basketball-points-league-rankings-2026-27-nba-season",
-      "sport": "NBA",
-      "published": "2026-11-03T17:28:10.000Z",
-      "firstSeen": "2026-10-09T15:29:39.177Z",
-      "bestRank": 3
-    },
-    {
-      "key": "49959975",
-      "id": "49959975",
-      "headline": "Fantasy basketball H2H Category and Roto rankings: Tyrese Maxey cracks the top 5",
-      "summary": "Updated fantasy basketball rankings for roto and category leagues, with Tyrese Haliburton and Kyrie Irving back after a missed season.",
-      "url": "https://www.espn.com/fantasy/basketball/story/_/id/49959975/fantasy-basketball-roto-category-league-rankings-2026-27-nba-season",
-      "sport": "NBA",
-      "published": "2026-11-03T17:25:02.000Z",
-      "firstSeen": "2026-10-09T15:29:39.177Z",
-      "bestRank": 1
     },
     {
       "key": "50369889",
@@ -79882,160 +80124,6 @@
       "published": "2026-10-30T12:34:20.000Z",
       "firstSeen": "2026-10-30T12:31:12.438Z",
       "bestRank": 5
-    },
-    {
-      "key": "50324935",
-      "id": "50324935",
-      "headline": "Jordan Love, Packers take down Panthers on TNF",
-      "summary": "Jordan Love, Packers take down Panthers on TNF",
-      "url": "https://www.espn.com/video/clip/_/id/50324935/jordan-love-packers-take-panthers-tnf",
-      "sport": "NFL",
-      "published": "2026-10-30T12:24:38.000Z",
-      "firstSeen": "2026-10-30T06:34:12.980Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50312487",
-      "id": "50312487",
-      "headline": "Global power ranking: The top 20 soccer teams in the world, ranked!",
-      "summary": "If we look beyond the Premier League and beyond those who qualified for the Champions League, which are the best teams in the world?",
-      "url": "https://www.espn.com/soccer/story/_/id/50312487/top-20-soccer-teams-world-ranked",
-      "sport": "Soccer",
-      "published": "2026-10-30T12:06:05.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50322131",
-      "id": "50322131",
-      "headline": "NHL Power Rankings: Updated poll, plus all 32 teams as horror movies",
-      "summary": "Carolina remains on top, with big risers and fallers elsewhere. Plus, which film represents your favorite team?",
-      "url": "https://www.espn.com/nhl/story/_/id/50322131/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings-halloween",
-      "sport": "NHL",
-      "published": "2026-10-30T11:29:09.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50318314",
-      "id": "50318314",
-      "headline": "'Just make them all eligible': Men's hoops coaches weigh in on eligibility chaos",
-      "summary": "Coaches explain how they've prepared while unsure who will be on their rosters when NCAA basketball games start.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50318314/men-basketball-coaches-weigh-ncaa-eligibility",
-      "sport": "College basketball",
-      "published": "2026-10-30T11:04:23.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50308763",
-      "id": "50308763",
-      "headline": "Kevin Durant reflects on his eight seasons with the Oklahoma City Thunder",
-      "summary": "After the most acrimonious exit of his career, Durant reveals how much he appreciates Oklahoma City and shares his feelings as the team tries to create a dynasty.",
-      "url": "https://www.espn.com/nba/story/_/id/50308763/kevin-durant-oklahoma-city-thunder-reflection",
-      "sport": "NBA",
-      "published": "2026-10-30T11:00:55.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50319084",
-      "id": "50319084",
-      "headline": "NFL trade deadline: A Colts duo and others to keep tabs on for fantasy football",
-      "summary": "There have already been massive trades across the league -- but what about ones that impact fantasy football?",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50319084/nfl-trade-deadline-2026-fantasy-football-potential-impact",
-      "sport": "NFL",
-      "published": "2026-10-30T10:33:28.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50288294",
-      "id": "50288294",
-      "headline": "Why Jeremiah Smith is a generational NFL draft receiver prospect for 2027",
-      "summary": "Smith could be the first wideout to be selected No. 1 in the draft in 31 years. What makes him so special? Who are his comps? Which NFL teams could pick him?",
-      "url": "https://www.espn.com/nfl/draft2027/story/_/id/50288294/2027-nfl-draft-ohio-state-receiver-jeremiah-smith-generational",
-      "sport": "College football",
-      "published": "2026-10-30T10:25:31.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50326763",
-      "id": "50326763",
-      "headline": "Michael Owen: I didn't get enough credit for winning Ballon d'Or",
-      "summary": "Michael Owen has said that he doesn't believe he got the sort of credit that \"others would\" for winning the Ballon d'Or when he triumphed in 2001.",
-      "url": "https://www.espn.com/soccer/story/_/id/50326763/michael-owen-ballon-dor-liverpool-2001",
-      "sport": "Soccer",
-      "published": "2026-10-30T10:24:43.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50326746",
-      "id": "50326746",
-      "headline": "Elena Rybakina withdraws from Pan Pacific Open quarterfinals, citing injury",
-      "summary": "Elena Rybakina, the world's No. 1-ranked player and top seed in the Pan Pacific Open, withdrew from her quarterfinal match on Friday, handing the win to Leylah Fernandez of Canada.",
-      "url": "https://www.espn.com/tennis/story/_/id/50326746/injured-rybakina-withdraws-pan-pacific-open-quarterfinals",
-      "sport": "Tennis",
-      "published": "2026-10-30T10:12:01.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50318513",
-      "id": "50318513",
-      "headline": "NHL Tonight: What to watch in Devils-Knights, Jets-Panthers, Kraken-Flames",
-      "summary": "Find game previews, betting intel, broadcast information, stats and highlights here.",
-      "url": "https://www.espn.com/nhl/story/_/id/50318513/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-      "sport": "NHL",
-      "published": "2026-10-30T10:01:21.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50319759",
-      "id": "50319759",
-      "headline": "Answering 10 questions about Chiefs-Broncos showdown for first place in AFC West",
-      "summary": "Can the Broncos slow Kenneth Walker III? Can the Chiefs' pass rush fluster Bo Nix? Answering the biggest questions in Sunday's AFC West showdown.",
-      "url": "https://www.espn.com/nfl/story/_/id/50319759/kansas-city-chiefs-denver-broncos-afc-west-division-lead",
-      "sport": "NFL",
-      "published": "2026-10-30T10:00:10.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50313034",
-      "id": "50313034",
-      "headline": "When will the Raiders make Fernando Mendoza the starting QB?",
-      "summary": "Making the case for and against the Raiders switching to Fernando Mendoza as QB1.",
-      "url": "https://www.espn.com/nfl/story/_/id/50313034/las-vegas-raiders-fernando-mendoza-starter-kirk-cousins",
-      "sport": "NFL",
-      "published": "2026-10-30T10:00:10.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50322739",
-      "id": "50322739",
-      "headline": "Has Tyler Guyton become the Cowboys' franchise left tackle?",
-      "summary": "The 2024 first-round draft pick has gone to liability to strength in protecting quarterback Dak Prescott.",
-      "url": "https://www.espn.com/nfl/story/_/id/50322739/dallas-cowboys-tyler-guyton-franchise-left-tackle",
-      "sport": "NFL",
-      "published": "2026-10-30T10:00:00.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50324250",
-      "id": "50324250",
-      "headline": "Valkyries and Dream meet one more time in winner-take-all in the WNBA Finals",
-      "summary": "On Halloween, what will decide whether Golden State or Atlanta wins its first title in the WNBA's first Game 7?",
-      "url": "https://www.espn.com/wnba/story/_/id/50324250/finals-2026-game-7-preview-atlanta-valkyries",
-      "sport": "WNBA",
-      "published": "2026-10-30T09:51:56.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 1
     }
   ]
 }
