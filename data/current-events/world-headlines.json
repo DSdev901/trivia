@@ -1,12 +1,22 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-11-21T03:34:12.796Z",
+  "generatedAt": "2026-11-21T06:43:28.605Z",
   "retentionDays": 21,
   "windowStart": "2026-10-31",
   "windowEnd": "2026-11-21",
   "snapshotIntervalHours": 3,
-  "count": 2037,
+  "count": 2047,
   "items": [
+    {
+      "headline": "Ukraine war briefing: European leaders react with anger and alarm after Russian missiles crash in Poland",
+      "date": "2026-11-21",
+      "bucket": "Conflict",
+      "summary": "Reported by The Guardian.",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQV3ZsTlVPVEN2STFrWVYtZFA1eWpCd3BxdHhwU1U5Zm5JeFdTVXJmUXYyamFEZklBdGZxVE1rN3VtSDZLWDhzNGVnT294RkxVbGEwc1lVc1ViZ3Q3QVJYMG53bVNaeVNSbEVscnh1di1vNDBDQ0h1TkpGek00Y1BjeUJ2YVktZkYxcDdyVGZyalhkUkNob0FOejNCM0laNy04Mm1BUmtjR2dZa1dkdnBjRVEyZXRmdWNYODU2bnNkUnZNNndCb3N1NGpSNTEwRHR1VmN4dWs0ZDRhTDZvM3Bwak85Zw?oc=5",
+      "top": true,
+      "bestRank": 1,
+      "firstSeen": "2026-11-21T06:43:28.605Z"
+    },
     {
       "headline": "Map: Earthquake Shakes Peru",
       "date": "2026-11-21",
@@ -14,8 +24,32 @@
       "summary": "Reported by FOX Weather.",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYWUyQkQwcjNjQnVNVm5ZZnJ0dnE4TGhfZXBxVzY2Q0pWajNnSktidW5qNnFIeTBYZjhRcm9iVTExMGpwOERkUG5XUk9aNmVIemRiX1F3TTlDT0VBdWhWOE54T3BlUTFZNXpUbWY4MVgwTXFoVS1RU1Z5YW1OXzZMWTAwZWYzTk1kSjJlWEpPenQ5Y0HSAZgBQVVfeXFMUEQzVFN3WHJqellfVEhrTElsbno4Y0pKdzRtM1d2NS1UZjZwaWF5SmNUbmdxZ3cyS3A1UnY0VkhiX1ZYSjlvOFhlb09wMmRkS0tSSzNlb09lVzlLRE9xbVMxdGxBQnNQVVU4elNHRXVoNndXdVZmbHZBcVVac2JMM1dkeHlLa2twUG9lZG1VNlUyVWdlTGpxT2Q?oc=5",
       "top": true,
-      "bestRank": 13,
+      "bestRank": 5,
       "firstSeen": "2026-11-21T03:34:12.796Z"
+    },
+    {
+      "headline": "Deal with EU not dependent on tuition fees agreement, Miliband says",
+      "date": "2026-11-21",
+      "bucket": "World",
+      "summary": "Brussels sources had previously suggested the bloc might not apply the wider deal until fees were lowered for EU students in Britain.",
+      "url": "https://www.bbc.co.uk/news/articles/cm9w9p4geke8o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-21T06:43:28.605Z"
+    },
+    {
+      "headline": "Man convicted of starting Palisades fire in Los Angeles",
+      "date": "2026-11-21",
+      "bucket": "World",
+      "summary": "The 30-year-old LA resident was convicted of arson leading to wildfires that killed 12 people and destroyed more than 6,800 buildings.",
+      "url": "https://www.bbc.co.uk/news/articles/c64gn0gy8rj3o?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-21T06:43:28.605Z"
+    },
+    {
+      "headline": "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
+      "date": "2026-11-21",
+      "bucket": "World",
+      "summary": "Earlier this week, Trump greeted Putin ahead of a meeting in China and said the pair have a \"great relationship.",
+      "url": "https://www.bbc.co.uk/news/articles/cxnv4zvmdy0jo?at_medium=RSS&at_campaign=rss",
+      "firstSeen": "2026-11-21T06:43:28.605Z"
     },
     {
       "headline": "They were fined $811m for conning detained migrants, but the scams didn't stop",
@@ -23,7 +57,9 @@
       "bucket": "World",
       "summary": "How convicted fraudsters made millions from detained immigrants, evaded efforts to shut down their bail business and left migrants behind bars.",
       "url": "https://www.bbc.co.uk/news/articles/cqgm0zlkgrm2o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-21T03:34:12.796Z"
+      "firstSeen": "2026-11-21T03:34:12.796Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Mamdani announces plan to close New York's Rikers Island jail by 2032",
@@ -156,6 +192,16 @@
       "firstSeen": "2026-11-20T18:35:36.922Z"
     },
     {
+      "headline": "Britain and Brussels Have Begun a Brexit Rollback. How Far Will It Go?",
+      "date": "2026-11-20",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQkZMZ2FSR1VwaFV1ZEJjUGZTNHdNSWw5TXFRNjZRX1NKcEFVejNWRmY5Z3hGa20wVGZoYU1ka1N1NkMzQWpWY2wwTEsyYVZzdUpHVHdPMXNscnNxbWp4TXB3MW50VDZuczZjQWZOc1h5VXJvMmxtUGdZbEo3Z3RMbU42d1dWa0NCZUgtbWZDRWJ4N1d5SWI5dmY3QkFsaFUweEVGQmM2RWxyLWVoR2pVOTkzQ05XeEFlWklidV93?oc=5",
+      "top": true,
+      "bestRank": 3,
+      "firstSeen": "2026-11-21T06:43:28.605Z"
+    },
+    {
       "headline": "Iraqi Forces Enter Stronghold of Powerful Iran-Backed Militia",
       "date": "2026-11-20",
       "bucket": "World",
@@ -164,6 +210,16 @@
       "top": true,
       "bestRank": 4,
       "firstSeen": "2026-11-20T00:49:57.009Z"
+    },
+    {
+      "headline": "Trump asks Stephen Miller: ‘Do you want to run for president?’",
+      "date": "2026-11-20",
+      "bucket": "World",
+      "summary": "Reported by The Hill.",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNa1ZkdXA0YVZTam5CR0NkZmdsR2FLS2lFYjRoR3FVSGo1dGJQY092Z2dQaWhVZFRXUTJzbHRWbXhjUkY1T2FxUHh6YjlfdmZEandqTmp1Xy1ROEIwNUxkVXJmYU5YbEJKUEJucGdPZVd6em9Ka0d0QkJ2aWI1bllQMHdXYmxXMi1sVk56ZHd1czEyaGs5d2wxedIBngFBVV95cUxNOHZfV3F3QXVGcVhFNnBueEtIdEZqMEFDbTNGcXY0d1pQU2xQLW1RTlAyYUdzUnVVcEZ6RFFabnlNV0VaWjRVZUM3SGhyYTdIQ2lPY2FFVUhyVEdIWmM5RWlIYXYyY0NhV0ZqOUZlS0loVVlwdF9sZmdwemFDMXdQT0NhUlM1bUQ4a3hpZElFOW1zZHNhdnN6UmZCSnk3QQ?oc=5",
+      "top": true,
+      "bestRank": 4,
+      "firstSeen": "2026-11-21T00:47:17.625Z"
     },
     {
       "headline": "Iraq's Oil Crackdown Sparks New Showdown With Kurdistan",
@@ -206,6 +262,16 @@
       "firstSeen": "2026-11-20T18:35:36.922Z"
     },
     {
+      "headline": "What does the ICJ’s Rohingya genocide ruling mean for Gaza?",
+      "date": "2026-11-20",
+      "bucket": "World",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMkh4SVYzTWpFakpiOEtPTktzU2NMNll4RGdJYW9BRXpzRjUyd2o4MldUWTVXZXJjcFpaTEZGT21JU1lXak9ibl9ydWdjdENmMWFJMGc1bW91cTFQWjBiQkQ5NUJVU1VMMVZsWXBjUG02ek9aTFU3Q2FqLVVjQUhiMGV5bWR5TzRHaE9ZYUhxZ2dDUEQyY2NjRkxtaHB6dkRY0gGmAUFVX3lxTE9LckZtb1FJbkhUZ3ItX043ZDJ6QWVxblBWS2NsOUxsS1JibEJxYU05bDlIWGZVaTNuODZwbF9aS1dpZnY5WU1sbFlDU2g5VFZZQ2pzc0hOS21nOUR6X2wwWERCSWRCLWpLVW1ob3R0YlpJXzNiSzZvNXdwbXB0OXRGRklxSHBNZjIxM1gwZ0ttX3cwVXRfTERQc252NW5fNkh3MzR2ZVE?oc=5",
+      "top": true,
+      "bestRank": 6,
+      "firstSeen": "2026-11-20T18:35:36.922Z"
+    },
+    {
       "headline": "Andy Burnham agrees to 100,000 visas in EU youth mobility scheme",
       "date": "2026-11-20",
       "bucket": "World",
@@ -236,6 +302,16 @@
       "firstSeen": "2026-11-21T00:47:17.625Z"
     },
     {
+      "headline": "Why one tiny country could dictate the outcome of COP31",
+      "date": "2026-11-20",
+      "bucket": "World",
+      "summary": "Reported by Euronews.com.",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOGZPQmdVNzZTUjh3ZXJ1cHhSa19Kd29GZlJxbEVuU0h2T1JpTDd3Zno0V1NuZVAzX2hrUjNpTmdDdTk4LUQtV0c1OGYyYzVOS3UtQ3BjWTBwTW5XYkxQRkh0LXBBS1BfM19TRDlleUNCMi1UVUhSamVMb2tiNUs4Z3B0bmd3NlM5N1A5ZXcxT2lHaGVtTlI2M1QxTVo0cXhZZ2w4cEJJWF8xZEJvSFE1anNCUzVZeHJpR1hYZ0VwR1phRlU4?oc=5",
+      "top": true,
+      "bestRank": 7,
+      "firstSeen": "2026-11-20T18:35:36.922Z"
+    },
+    {
       "headline": "Wadephul: Berlin talks of 'Coalition of the Willing' send strong signal to Moscow",
       "date": "2026-11-20",
       "bucket": "World",
@@ -244,26 +320,6 @@
       "top": true,
       "bestRank": 8,
       "firstSeen": "2026-11-20T09:38:27.710Z"
-    },
-    {
-      "headline": "Trump asks Stephen Miller: ‘Do you want to run for president?’",
-      "date": "2026-11-20",
-      "bucket": "World",
-      "summary": "Reported by The Hill.",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNa1ZkdXA0YVZTam5CR0NkZmdsR2FLS2lFYjRoR3FVSGo1dGJQY092Z2dQaWhVZFRXUTJzbHRWbXhjUkY1T2FxUHh6YjlfdmZEandqTmp1Xy1ROEIwNUxkVXJmYU5YbEJKUEJucGdPZVd6em9Ka0d0QkJ2aWI1bllQMHdXYmxXMi1sVk56ZHd1czEyaGs5d2wxedIBngFBVV95cUxNOHZfV3F3QXVGcVhFNnBueEtIdEZqMEFDbTNGcXY0d1pQU2xQLW1RTlAyYUdzUnVVcEZ6RFFabnlNV0VaWjRVZUM3SGhyYTdIQ2lPY2FFVUhyVEdIWmM5RWlIYXYyY0NhV0ZqOUZlS0loVVlwdF9sZmdwemFDMXdQT0NhUlM1bUQ4a3hpZElFOW1zZHNhdnN6UmZCSnk3QQ?oc=5",
-      "top": true,
-      "bestRank": 8,
-      "firstSeen": "2026-11-21T00:47:17.625Z"
-    },
-    {
-      "headline": "What does the ICJ’s Rohingya genocide ruling mean for Gaza?",
-      "date": "2026-11-20",
-      "bucket": "World",
-      "summary": "Reported by Al Jazeera.",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMkh4SVYzTWpFakpiOEtPTktzU2NMNll4RGdJYW9BRXpzRjUyd2o4MldUWTVXZXJjcFpaTEZGT21JU1lXak9ibl9ydWdjdENmMWFJMGc1bW91cTFQWjBiQkQ5NUJVU1VMMVZsWXBjUG02ek9aTFU3Q2FqLVVjQUhiMGV5bWR5TzRHaE9ZYUhxZ2dDUEQyY2NjRkxtaHB6dkRY0gGmAUFVX3lxTE9LckZtb1FJbkhUZ3ItX043ZDJ6QWVxblBWS2NsOUxsS1JibEJxYU05bDlIWGZVaTNuODZwbF9aS1dpZnY5WU1sbFlDU2g5VFZZQ2pzc0hOS21nOUR6X2wwWERCSWRCLWpLVW1ob3R0YlpJXzNiSzZvNXdwbXB0OXRGRklxSHBNZjIxM1gwZ0ttX3cwVXRfTERQc252NW5fNkh3MzR2ZVE?oc=5",
-      "top": true,
-      "bestRank": 9,
-      "firstSeen": "2026-11-20T18:35:36.922Z"
     },
     {
       "headline": "Russia Steps Up Attacks on Kyiv’s Bridges",
@@ -276,16 +332,6 @@
       "firstSeen": "2026-11-21T00:47:17.625Z"
     },
     {
-      "headline": "Why one tiny country could dictate the outcome of COP31",
-      "date": "2026-11-20",
-      "bucket": "World",
-      "summary": "Reported by Euronews.com.",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOGZPQmdVNzZTUjh3ZXJ1cHhSa19Kd29GZlJxbEVuU0h2T1JpTDd3Zno0V1NuZVAzX2hrUjNpTmdDdTk4LUQtV0c1OGYyYzVOS3UtQ3BjWTBwTW5XYkxQRkh0LXBBS1BfM19TRDlleUNCMi1UVUhSamVMb2tiNUs4Z3B0bmd3NlM5N1A5ZXcxT2lHaGVtTlI2M1QxTVo0cXhZZ2w4cEJJWF8xZEJvSFE1anNCUzVZeHJpR1hYZ0VwR1phRlU4?oc=5",
-      "top": true,
-      "bestRank": 10,
-      "firstSeen": "2026-11-20T18:35:36.922Z"
-    },
-    {
       "headline": "'Will You Marry Me?': Australian MP Jordan Lane's Final Speech In Parliament Ends With Marriage Proposal",
       "date": "2026-11-20",
       "bucket": "Politics",
@@ -294,6 +340,16 @@
       "top": true,
       "bestRank": 11,
       "firstSeen": "2026-11-21T00:47:17.625Z"
+    },
+    {
+      "headline": "Gen Z Is Driving Global Political Change, Aiding Far Left and Far Right",
+      "date": "2026-11-20",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOUwxNV8xX3BDYklDLWx0aEdTNXd2YnI2ZjNKNGY0ZUhGdlBIRUNIOTBybVVuek1OYzBuQkg0OXFJNjRXYjZ4c1lHTTAtUDhjUktUUmJzUHZTOWRIZUt1QmtYZDFGQnRTUEpGeDBtUzVnZWVCVVU1X1VCR0lzT3dxVkpYT1hNVTZiRFE?oc=5",
+      "top": true,
+      "bestRank": 11,
+      "firstSeen": "2026-11-20T15:37:12.162Z"
     },
     {
       "headline": "Ukraine war briefing: Trump ‘open’ to Kyiv getting Nato-like mutual defence guarantee, says Kushner",
@@ -316,14 +372,14 @@
       "firstSeen": "2026-11-20T21:35:32.208Z"
     },
     {
-      "headline": "Gen Z Is Driving Global Political Change, Aiding Far Left and Far Right",
+      "headline": "Trump says Iran wants deal but terms unacceptable; Vance sidesteps question on his approval of war",
       "date": "2026-11-20",
-      "bucket": "World",
-      "summary": "Reported by The New York Times.",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOUwxNV8xX3BDYklDLWx0aEdTNXd2YnI2ZjNKNGY0ZUhGdlBIRUNIOTBybVVuek1OYzBuQkg0OXFJNjRXYjZ4c1lHTTAtUDhjUktUUmJzUHZTOWRIZUt1QmtYZDFGQnRTUEpGeDBtUzVnZWVCVVU1X1VCR0lzT3dxVkpYT1hNVTZiRFE?oc=5",
+      "bucket": "Conflict",
+      "summary": "Reported by The Times of Israel.",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaDRIZFpnNlRXZHZKZTRoS2pMUUF1RnQyWm5Yc29xeHFyWkkwYjRNQnBlRmd3N0JpNHdlT3Z1dEJiVTlDVUN1TVVBd1RqeFhBS3plLTBESjBqdlF5MFRzMldCWnFIVW1aT01LaVJ2YVNTTHRzbTZTNzJhUDhSY2RndFJETnMyMHhzUUFpUHExMHR1YVhpbGF5R2loYkFpU2VHXzhILXBjMGpzd2otbkZ1aU1aemJKb3psY0FJRGJ4SzJXSC1WcG5z0gHMAUFVX3lxTE8yTE5tVkhBMS1xN3lWRE01VXVrUnFvNkxTamZPSXpwblFBNF9wUDVBcU5ORVlvZ05TeklIRWdVREZTSjktdXkzcjNFaGwwejNUR19GM0o2Y3U5U21LajhyM24tU3lNSVhaV2RXNlNUWnhrNjhxUmIzOE01M1JOcGI1MFlzTlJFWGlVb3A0Y0hHVldnNVBEdHVGZk4yWlJYTkNFZnpwM0xyaGRRZlJoaF8wYTJINGJ2OFJLVWwtN1ctRlJrS1FyZG1PMUlaRA?oc=5",
       "top": true,
-      "bestRank": 13,
-      "firstSeen": "2026-11-20T15:37:12.162Z"
+      "bestRank": 12,
+      "firstSeen": "2026-11-21T06:43:28.605Z"
     },
     {
       "headline": "4 British Men Convicted of Sexually Assaulting Woman Drugged by Husband",
@@ -376,23 +432,13 @@
       "firstSeen": "2026-11-20T21:35:32.208Z"
     },
     {
-      "headline": "Jimmy Kimmel Recaps Trump’s ‘Big Dim Summit’",
-      "date": "2026-11-20",
-      "bucket": "World",
-      "summary": "Reported by The New York Times.",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUmkyeERySVpxVExydTcyXzlzdEtTZjFmZURDWTRuOVVkYVBySHhDNHNGbHltRWlGYTBKTU9ZVnNySDllZ1pEZVBORFpfUXg1WFRHeE12TmJ4UkplVmNlYURHeVJBZUhtdDZUQ19mR1RmNjZCUlNqWDFNMGQxcElGVkVSczZRSERVcmVOd0tRX3hVQjEy?oc=5",
-      "top": true,
-      "bestRank": 19,
-      "firstSeen": "2026-11-20T12:43:03.127Z"
-    },
-    {
       "headline": "COMMENTARY: Net zero is essential, but it is no longer enough",
       "date": "2026-11-20",
       "bucket": "World",
       "summary": "Reported by AP News.",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSWRSV1pnUGxldjhPVWRJMHVBSUphTXVUeHFNbFloQlAxUGYtd0tGLUtJamYxbHRnaWhaVTlzeXEzQzk1VkR6ZTFMVE9sR3NlcF9pbkxuVUlnRDRfT19YOXhTUUtxNmdzaUtHZ0J6ZnVkWnc3aUVvS2Y5TFhEdkFtbThBNlFQX3czWURHUXd0TjVydXIxNmNqeDlLLU9hdw?oc=5",
       "top": true,
-      "bestRank": 19,
+      "bestRank": 17,
       "firstSeen": "2026-11-20T15:37:12.162Z"
     },
     {
@@ -403,7 +449,27 @@
       "url": "https://www.bbc.co.uk/news/articles/ck9d7e9wvvweo?at_medium=RSS&at_campaign=rss",
       "firstSeen": "2026-11-21T00:47:17.625Z",
       "top": true,
-      "bestRank": 19
+      "bestRank": 18
+    },
+    {
+      "headline": "Jimmy Kimmel Recaps Trump’s ‘Big Dim Summit’",
+      "date": "2026-11-20",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUmkyeERySVpxVExydTcyXzlzdEtTZjFmZURDWTRuOVVkYVBySHhDNHNGbHltRWlGYTBKTU9ZVnNySDllZ1pEZVBORFpfUXg1WFRHeE12TmJ4UkplVmNlYURHeVJBZUhtdDZUQ19mR1RmNjZCUlNqWDFNMGQxcElGVkVSczZRSERVcmVOd0tRX3hVQjEy?oc=5",
+      "top": true,
+      "bestRank": 19,
+      "firstSeen": "2026-11-20T12:43:03.127Z"
+    },
+    {
+      "headline": "Brazil’s former president Jair Bolsonaro has been hospitalized again, son says",
+      "date": "2026-11-20",
+      "bucket": "World",
+      "summary": "Reported by Arab News.",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOM3hIbDV2OUZHVC1WVjFYb2FzY3RBUHBNRU9BZU5JbEcyckVYZ1FCT1FyeDJUZ09Zbnl0Uk5TR0Z2R0JJYWx0bmp0LWFkamluQXU3RkwteVQ2VGgwbmJkR0R4WXNUYmVLaTk3VHlIX2dTeWVHZDNOcnI5a0FPN2xJU3VRVVN2SE00TUVjeHVDQ081LVdFV2dKQUxGNEo3YktPSElvcUVJdEJDM0lNV0Z6YWF0eUctUQ?oc=5",
+      "top": true,
+      "bestRank": 20,
+      "firstSeen": "2026-11-21T03:34:12.796Z"
     },
     {
       "headline": "Russia accuses Estonia of erecting new 'Iron Curtain' with border closure, says it will respond",
@@ -424,6 +490,16 @@
       "top": true,
       "bestRank": 21,
       "firstSeen": "2026-11-21T00:47:17.625Z"
+    },
+    {
+      "headline": "Haiti strikes deal with El Salvador to build new prisons after minister visit",
+      "date": "2026-11-20",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZVBrUlFHSFVDYmVXaFpQdFBtQ0gyaTJrYXdEblFESjdkTHpsMGdCZmhKTnlmak1IdllyeVo1VVdoTDZ1Y3RCZVZoZ21iQ3BqbV9HRC12WDNzdklQeFVCVm4xMTJKeGFRcXBCeGdKUTNoTVkwMzNqek1DRlhXd3BRMzI2TWVza1hCQTBoTkVkLS1OREZkYzB3SjRkNUIzLVl0Q0FEQXBQU2I4UQ?oc=5",
+      "top": true,
+      "bestRank": 21,
+      "firstSeen": "2026-11-21T06:43:28.605Z"
     },
     {
       "headline": "Houthi-affiliated Al-Masirah TV: ‘5 killed and 4 injured as a result of an attack targeting the Hayjah Al-Abd area in the Shamaitin district, Taiz",
@@ -466,6 +542,16 @@
       "firstSeen": "2026-11-20T18:35:36.922Z"
     },
     {
+      "headline": "Beijing Targets Indigenous Communities in Taiwan’s Political Warfare Battle, Former Official Warns",
+      "date": "2026-11-20",
+      "bucket": "Conflict",
+      "summary": "Reported by Reuters.",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSW41aUpxeGUzMDFwdHhVNmJHdFBWaTdvTUNfUWlKN0hIdU1sMDB3X1NWd05UaF9RT1JzdTMtMlI4VEgxNDJqY2pXenVWTDlJZlZNcXVwSnVXNUxKMjEyUXVfWEppWmUxNzg0MVQwWmdxMlhHT3VJbTRNUnliRElmU1FfTUU5QS1nS1hXbFpLcEUySUEyallMLVpoVjAwNnUyUnhlbnROMHo2R0RUQ0h2SFlUQTZaSnpIYm5nakJqWQ?oc=5",
+      "top": true,
+      "bestRank": 27,
+      "firstSeen": "2026-11-21T06:43:28.605Z"
+    },
+    {
       "headline": "State Department official accused of lavish ‘vacations on taxpayer dime,’ triggering travel crackdown: ‘Rubio is fed up’",
       "date": "2026-11-20",
       "bucket": "World",
@@ -484,6 +570,16 @@
       "firstSeen": "2026-11-10T09:35:12.448Z",
       "top": true,
       "bestRank": 29
+    },
+    {
+      "headline": "Shocking Twist in $500M DHS Prison Splurge Exposed",
+      "date": "2026-11-20",
+      "bucket": "World",
+      "summary": "Reported by The Daily Beast.",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcWh2M0NoSTM2ZWpJVGhTX1loX2Z4OEN2ME1HdVZzWTVXMFRIeFJ1S0cyLUwxb0t3WmlUQVZkVTRnbjVvM3hfY0tycmdFREVhZkFkOXYwMk5kd2FzVHEwRWVWWnFNX2dyMmdtbVhvcjI0X2VrOGVkUUczTWJSNkdEbm5XeWdhRlA1M08wUjhhRlY1bnlRR19ldlFXeFZDdW9KbUkwdVZiWU9id2ZCbjRBS1Fn?oc=5",
+      "top": true,
+      "bestRank": 29,
+      "firstSeen": "2026-11-21T06:43:28.605Z"
     },
     {
       "headline": "Reward for Missing Climber Raises Safety Worries",
@@ -534,16 +630,6 @@
       "top": true,
       "bestRank": 34,
       "firstSeen": "2026-11-20T21:35:32.208Z"
-    },
-    {
-      "headline": "Brazil’s former president Jair Bolsonaro has been hospitalized again, son says",
-      "date": "2026-11-20",
-      "bucket": "World",
-      "summary": "Reported by Arab News.",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOM3hIbDV2OUZHVC1WVjFYb2FzY3RBUHBNRU9BZU5JbEcyckVYZ1FCT1FyeDJUZ09Zbnl0Uk5TR0Z2R0JJYWx0bmp0LWFkamluQXU3RkwteVQ2VGgwbmJkR0R4WXNUYmVLaTk3VHlIX2dTeWVHZDNOcnI5a0FPN2xJU3VRVVN2SE00TUVjeHVDQ081LVdFV2dKQUxGNEo3YktPSElvcUVJdEJDM0lNV0Z6YWF0eUctUQ?oc=5",
-      "top": true,
-      "bestRank": 34,
-      "firstSeen": "2026-11-21T03:34:12.796Z"
     },
     {
       "headline": "Friend zone: rejected by US voters, Trump enjoys autocrats’ warm embrace",
@@ -614,6 +700,16 @@
       "top": true,
       "bestRank": 40,
       "firstSeen": "2026-11-21T03:34:12.796Z"
+    },
+    {
+      "headline": "Mexico’s President Spent 21 Hours In Coach Getting To China—And Sat In A Middle Seat",
+      "date": "2026-11-20",
+      "bucket": "World",
+      "summary": "Reported by View from the Wing.",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbV9VZW1HTlJwTlZzczdTV2RleTVRTFFyS0hjc0pMNmczaW1sZlNoWG1DMzZjTE9TdzBYVE9iMHN2OTZ6bTNkRGlSQnNQbldqQlh6YUpwa09vamVRSjZrRjV4VG5vaVRYVktRV0hLS252SVJUazFVbzEwX3R5WGswT0hoNFRiNjNwZ3lmWVhoWHR4UExxU3dzQ2c0Ui1RT0xrZzFPbUlKUTg3OUxJZ1BtN2Vn?oc=5",
+      "top": true,
+      "bestRank": 40,
+      "firstSeen": "2026-11-21T06:43:28.605Z"
     },
     {
       "headline": "UK and EU to agree youth mobility scheme, BBC understands",
@@ -1426,6 +1522,16 @@
       "firstSeen": "2026-11-20T15:37:12.162Z"
     },
     {
+      "headline": "Japan's Prime Minister Takaichi says Russia and Japan will keep talking as ties remain chilled",
+      "date": "2026-11-19",
+      "bucket": "Politics",
+      "summary": "Reported by The Independent.",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPR3J5THBkcTd1Z2V5MG1ZdkdNeGxqRDZqM0hBQk82OE8xeEVwS0c3YmlXT0tUd2hiMk03RWtaS25paFZybWJuSTNpNy1MeHlGQ1JmU0VDc2pnUU16RVZqYk5xSmhJalBWWmQ4TnRFcnRrU25aQXRyaWJUbnlLLTlfNVMyd1BkcXVyN0hnUVBIbTdqdHZrc2trbldPdw?oc=5",
+      "top": true,
+      "bestRank": 19,
+      "firstSeen": "2026-11-21T00:47:17.625Z"
+    },
+    {
       "headline": "Japan's position on Taiwan has not changed, PM Takaichi says",
       "date": "2026-11-19",
       "bucket": "World",
@@ -1464,16 +1570,6 @@
       "top": true,
       "bestRank": 21,
       "firstSeen": "2026-11-20T00:49:57.009Z"
-    },
-    {
-      "headline": "Japan's Prime Minister Takaichi says Russia and Japan will keep talking as ties remain chilled",
-      "date": "2026-11-19",
-      "bucket": "Politics",
-      "summary": "Reported by The Independent.",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPR3J5THBkcTd1Z2V5MG1ZdkdNeGxqRDZqM0hBQk82OE8xeEVwS0c3YmlXT0tUd2hiMk03RWtaS25paFZybWJuSTNpNy1MeHlGQ1JmU0VDc2pnUU16RVZqYk5xSmhJalBWWmQ4TnRFcnRrU25aQXRyaWJUbnlLLTlfNVMyd1BkcXVyN0hnUVBIbTdqdHZrc2trbldPdw?oc=5",
-      "top": true,
-      "bestRank": 23,
-      "firstSeen": "2026-11-21T00:47:17.625Z"
     },
     {
       "headline": "Rafael Grossi is eyeing the UN’s top job. Will US support nuke his chances?",
@@ -13246,6 +13342,16 @@
       "firstSeen": "2026-11-08T00:54:43.639Z"
     },
     {
+      "headline": "Costa Rica's Grynspan extends lead in informal UN chief poll, sources say",
+      "date": "2026-11-07",
+      "bucket": "World",
+      "summary": "Reported by The New York Times.",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdk91UXhKdmE5UlMzSEJ1MWM3ZGcxX0M5VWwybmlvck4xV2lJZkxFLXlqcGZGaTZfa2RnRmFwQWxVaGJqanpsXzF3cVF5RWhZUUhmYmJPTHRJNnpYWEg5d0VScUV6N2hTRzRuSzVLYWp5dnlkUW9NQ1M0TmdGdXBSVUZCc0lFTjA?oc=5",
+      "top": true,
+      "bestRank": 16,
+      "firstSeen": "2026-11-08T00:54:43.639Z"
+    },
+    {
       "headline": "Gaza Storm Floods Thousands of Tents as Doctors Warn of Meningitis Surge",
       "date": "2026-11-07",
       "bucket": "World",
@@ -13304,16 +13410,6 @@
       "top": true,
       "bestRank": 20,
       "firstSeen": "2026-11-08T21:35:57.204Z"
-    },
-    {
-      "headline": "Costa Rica's Grynspan extends lead in informal UN chief poll, sources say",
-      "date": "2026-11-07",
-      "bucket": "World",
-      "summary": "Reported by The New York Times.",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdk91UXhKdmE5UlMzSEJ1MWM3ZGcxX0M5VWwybmlvck4xV2lJZkxFLXlqcGZGaTZfa2RnRmFwQWxVaGJqanpsXzF3cVF5RWhZUUhmYmJPTHRJNnpYWEg5d0VScUV6N2hTRzRuSzVLYWp5dnlkUW9NQ1M0TmdGdXBSVUZCc0lFTjA?oc=5",
-      "top": true,
-      "bestRank": 20,
-      "firstSeen": "2026-11-08T00:54:43.639Z"
     },
     {
       "headline": "Military intelligence identifies Russian soldiers involved in deadly Komyshuvakha aid center strike",
