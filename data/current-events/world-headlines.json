@@ -1,11 +1,11 @@
 {
   "source": "Google News World",
-  "generatedAt": "2026-11-22T00:50:59.358Z",
+  "generatedAt": "2026-11-22T03:39:47.987Z",
   "retentionDays": 21,
   "windowStart": "2026-11-01",
   "windowEnd": "2026-11-22",
   "snapshotIntervalHours": 3,
-  "count": 2045,
+  "count": 2047,
   "items": [
     {
       "headline": "How a teen gamer and his mother helped rescue a missing girl",
@@ -13,7 +13,9 @@
       "bucket": "World",
       "summary": "When 16-year-old Landon Tresp met a teenage girl in an online game, it led to him and his mother helping the FBI rescue her from kidnapping.",
       "url": "https://www.bbc.co.uk/news/articles/cmq8lyv8lkjwo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-22T00:50:59.358Z"
+      "firstSeen": "2026-11-22T00:50:59.358Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
@@ -21,7 +23,9 @@
       "bucket": "Politics",
       "summary": "Fewer young people have registered to vote in next year's election than in 2023 - are young people losing faith in democracy?",
       "url": "https://www.bbc.co.uk/news/articles/ck4g174n020eo?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-22T00:50:59.358Z"
+      "firstSeen": "2026-11-22T00:50:59.358Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Ukraine war briefing: European leaders react with anger and alarm after Russian missiles crash in Poland",
@@ -82,6 +86,26 @@
       "top": true,
       "bestRank": 1,
       "firstSeen": "2026-11-22T00:50:59.358Z"
+    },
+    {
+      "headline": "Iran launches attacks in Bahrain, Hormuz and moves against US blockade",
+      "date": "2026-11-21",
+      "bucket": "World",
+      "summary": "Reported by Euronews.com.",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWUJYOUdFdXlpMHE3RUhFVzFQTENEc2pUcEJ5WDZuckZlQjN1bF9aX055VUZUelpSSGVwT2dHLXFVQmR2Yk9IYUxPU1d0MlJhS2lWRDlWaTRleFZkeXlHTExaVTNTamZ0Y216QTJEVXpEYkdfN2pGN0xYSXZ5Y01Yb05FRE1qOVpXMW1yUWgtcEt2RVBzRURyOHJhRnZWcjNDbmh4aWI5RWE1ZDFVQW5UaTAwZFhmOVp0TEE?oc=5",
+      "top": true,
+      "bestRank": 1,
+      "firstSeen": "2026-11-22T00:50:59.358Z"
+    },
+    {
+      "headline": "Killer robots: U.N. talks fall short of hopes for legally binding rules",
+      "date": "2026-11-21",
+      "bucket": "World",
+      "summary": "U.N. talks in Geneva have failed to deliver binding rules on autonomous weapons, as humanitarian groups warn that military AI is advancing far faster than diplomacy.",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6047916/killer-robots-un-drones",
+      "firstSeen": "2026-11-21T15:36:48.528Z",
+      "top": true,
+      "bestRank": 1
     },
     {
       "headline": "Poland says Russian missiles hit its territory; Trump calls it a ‘mistake’",
@@ -174,6 +198,16 @@
       "firstSeen": "2026-11-21T21:37:54.311Z"
     },
     {
+      "headline": "Diplomats race to compromise on fossil fuels as Cop31 teeters on brink of failure",
+      "date": "2026-11-21",
+      "bucket": "World",
+      "summary": "Reported by The Guardian.",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNT1lYTHhqNzhnWDQ3MVVIYVFXMmM5T09TMGw3TlM5M2pDam9xcGZoM2kzXzAyM1J6SWhNRklqeGZDMG9sbkJpdkc3Z2VPT1FaMlpjQXRsV08wZW00UWpFTktnOEFzd05QcUVDZVN0ZHBjM2g2MmxSdVlvaGJyaC1qYjdoY09WLWQxRHdlZzRGSFpGTG90c1c0XzFxTQ?oc=5",
+      "top": true,
+      "bestRank": 4,
+      "firstSeen": "2026-11-22T03:39:47.987Z"
+    },
+    {
       "headline": "Map: Earthquake Shakes Peru",
       "date": "2026-11-21",
       "bucket": "Disaster",
@@ -222,16 +256,6 @@
       "top": true,
       "bestRank": 7,
       "firstSeen": "2026-11-21T15:36:48.528Z"
-    },
-    {
-      "headline": "Iran launches attacks in Bahrain, Hormuz and moves against US blockade",
-      "date": "2026-11-21",
-      "bucket": "World",
-      "summary": "Reported by Euronews.com.",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWUJYOUdFdXlpMHE3RUhFVzFQTENEc2pUcEJ5WDZuckZlQjN1bF9aX055VUZUelpSSGVwT2dHLXFVQmR2Yk9IYUxPU1d0MlJhS2lWRDlWaTRleFZkeXlHTExaVTNTamZ0Y216QTJEVXpEYkdfN2pGN0xYSXZ5Y01Yb05FRE1qOVpXMW1yUWgtcEt2RVBzRURyOHJhRnZWcjNDbmh4aWI5RWE1ZDFVQW5UaTAwZFhmOVp0TEE?oc=5",
-      "top": true,
-      "bestRank": 8,
-      "firstSeen": "2026-11-22T00:50:59.358Z"
     },
     {
       "headline": "Cop31 live: world urged to avoid one of ‘most disappointing Cops ever’ as talks stretch past deadline",
@@ -284,6 +308,16 @@
       "firstSeen": "2026-11-21T12:40:05.427Z"
     },
     {
+      "headline": "Ballistic missile attack on Zelenskyy's hometown in central Ukraine kills 2 and wounds scores",
+      "date": "2026-11-21",
+      "bucket": "Conflict",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdEdyR1RJcnpvbkdBNFFKbHQ3bWh2SzBfVnBfdklPRGlubDVuZjVOYUVrTUtaVGNQc2ZtM042TmpvWFNUZU1vNlRDeUhWbS0xUU5IWndHdlNZa3JIYm1OQm55YVNvbVpxaUhBNExXbS1NOU91ODdGa2d4elRXOWhIUXZCRHR5T3ZTei1fRWRyOVJvOXJRSXNIM25QT1JIOXFPa2VTcg?oc=5",
+      "top": true,
+      "bestRank": 12,
+      "firstSeen": "2026-11-21T15:36:48.528Z"
+    },
+    {
       "headline": "The Russian POW Camp Where Sex Abuse Became Part of the System",
       "date": "2026-11-21",
       "bucket": "World",
@@ -292,16 +326,6 @@
       "top": true,
       "bestRank": 13,
       "firstSeen": "2026-11-21T18:37:52.809Z"
-    },
-    {
-      "headline": "Ballistic missile attack on Zelenskyy's hometown in central Ukraine kills 2 and wounds scores",
-      "date": "2026-11-21",
-      "bucket": "Conflict",
-      "summary": "Reported by AP News.",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdEdyR1RJcnpvbkdBNFFKbHQ3bWh2SzBfVnBfdklPRGlubDVuZjVOYUVrTUtaVGNQc2ZtM042TmpvWFNUZU1vNlRDeUhWbS0xUU5IWndHdlNZa3JIYm1OQm55YVNvbVpxaUhBNExXbS1NOU91ODdGa2d4elRXOWhIUXZCRHR5T3ZTei1fRWRyOVJvOXJRSXNIM25QT1JIOXFPa2VTcg?oc=5",
-      "top": true,
-      "bestRank": 14,
-      "firstSeen": "2026-11-21T15:36:48.528Z"
     },
     {
       "headline": "NATO Secretary General attends meeting of the Coalition of the Willing in Berlin",
@@ -344,6 +368,16 @@
       "firstSeen": "2026-11-22T00:50:59.358Z"
     },
     {
+      "headline": "IRGC Chief Visits Missile City",
+      "date": "2026-11-21",
+      "bucket": "Conflict",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUVlUcjlPZURmRnhmY2JJZVVBTkhfUEM2bmhqRDZfQkZJMTBEc2hQSDdRVFQ0N1BjTW1rMXNrSnM4R0R6SVcyZXJpWEVVU3hkU0dsX0otVk1HNV9abFFBTkVUeXMtdHk2WVFUcEVFOVVUVlZUeTFUdXBuVzVHMVFmeFdFVExwTWtJVC1sd0dEVDVSdXdHZUhVRDc4MU5rYU1laFBn?oc=5",
+      "top": true,
+      "bestRank": 17,
+      "firstSeen": "2026-11-22T00:50:59.358Z"
+    },
+    {
       "headline": "Magnitude 7.2 earthquake strikes Indonesia's Maluku Islands",
       "date": "2026-11-21",
       "bucket": "Disaster",
@@ -364,6 +398,16 @@
       "firstSeen": "2026-11-20T00:49:57.009Z"
     },
     {
+      "headline": "Taiwan warns Canada’s Carney that deeper ties with China come with risks",
+      "date": "2026-11-21",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMk94aHBLLVI3V1JkYU1DWGQ1Qk5ZVnlBN2JFYWYtbzNPOU1GSkgzTmJCRXVzcllCZERfVkpWQnpIMWdXbjI5LWNaal8wTzBwdWtWSDZITm5RZVZhejZ4WldzNVpEVm90ODJ5UTY0REJUWTUtQk5PUk5CUXNSekIzSTYyRlEwOE5QZzkxZ2dic3dwTWNKZF8yRm9pSEVWbkw1cnc?oc=5",
+      "top": true,
+      "bestRank": 19,
+      "firstSeen": "2026-11-22T00:50:59.358Z"
+    },
+    {
       "headline": "Kate Middleton Made a Secret Documentary About Her Cancer Journey, and the Trailer Just Dropped: Watch",
       "date": "2026-11-21",
       "bucket": "World",
@@ -372,16 +416,6 @@
       "top": true,
       "bestRank": 20,
       "firstSeen": "2026-11-21T12:40:05.427Z"
-    },
-    {
-      "headline": "IRGC Chief Visits Missile City",
-      "date": "2026-11-21",
-      "bucket": "Conflict",
-      "summary": "Reported by AP News.",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUVlUcjlPZURmRnhmY2JJZVVBTkhfUEM2bmhqRDZfQkZJMTBEc2hQSDdRVFQ0N1BjTW1rMXNrSnM4R0R6SVcyZXJpWEVVU3hkU0dsX0otVk1HNV9abFFBTkVUeXMtdHk2WVFUcEVFOVVUVlZUeTFUdXBuVzVHMVFmeFdFVExwTWtJVC1sd0dEVDVSdXdHZUhVRDc4MU5rYU1laFBn?oc=5",
-      "top": true,
-      "bestRank": 20,
-      "firstSeen": "2026-11-22T00:50:59.358Z"
     },
     {
       "headline": "Athlete Swims Hormuz Strait to Show War's Impact on Wildlife",
@@ -394,13 +428,13 @@
       "firstSeen": "2026-11-21T18:37:52.809Z"
     },
     {
-      "headline": "Taiwan warns Canada’s Carney that deeper ties with China come with risks",
+      "headline": "Brazil’s Jair Bolsonaro in intensive care with bowel obstruction",
       "date": "2026-11-21",
       "bucket": "World",
-      "summary": "Reported by AP News.",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMk94aHBLLVI3V1JkYU1DWGQ1Qk5ZVnlBN2JFYWYtbzNPOU1GSkgzTmJCRXVzcllCZERfVkpWQnpIMWdXbjI5LWNaal8wTzBwdWtWSDZITm5RZVZhejZ4WldzNVpEVm90ODJ5UTY0REJUWTUtQk5PUk5CUXNSekIzSTYyRlEwOE5QZzkxZ2dic3dwTWNKZF8yRm9pSEVWbkw1cnc?oc=5",
+      "summary": "Reported by Al Jazeera.",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORVVndFVPeG5mazd3UVR5dXJkeVdWTlZLZmxLQnh0UkY5bWxWV0xYZmk1ZGR4M2NvT3NuejRLQzdBcXZacnFvaXVKYllOenBGN2JXNGc1MGtPUXc0eS1GcWlaY25DQlp5SDlOb0JSZmlHQTBYdW1RdmkyMDN0WThCR2ZCenRyS2F3ZWpSNnJHSVRtaWUwa0JsWGhPRlV0aEg1UG40bG8yd3LSAa4BQVVfeXFMT3ZaQ1RkSlpaRngtS3VqOTRSSFczbWRCOVpZM2toSXU3eXlRbzRqNGhZdGxodXFYV3FoMFlmSm9qTEtDSTZqMlExOFE3NWpjQnJVMUVMSW5TMVpsMC1NaGJQWG9FUWNJMVh5UURFRVh1SVR2RjladkdBdDZuT2tZNzU5eHVlankzXzcxLThGT2tDLUg2ZnVKUjlrczRic2tiS2t0ZHBKWEpYS3Vsa2dR?oc=5",
       "top": true,
-      "bestRank": 21,
+      "bestRank": 22,
       "firstSeen": "2026-11-22T00:50:59.358Z"
     },
     {
@@ -412,16 +446,6 @@
       "top": true,
       "bestRank": 24,
       "firstSeen": "2026-11-21T21:37:54.311Z"
-    },
-    {
-      "headline": "Brazil’s Jair Bolsonaro in intensive care with bowel obstruction",
-      "date": "2026-11-21",
-      "bucket": "World",
-      "summary": "Reported by Al Jazeera.",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORVVndFVPeG5mazd3UVR5dXJkeVdWTlZLZmxLQnh0UkY5bWxWV0xYZmk1ZGR4M2NvT3NuejRLQzdBcXZacnFvaXVKYllOenBGN2JXNGc1MGtPUXc0eS1GcWlaY25DQlp5SDlOb0JSZmlHQTBYdW1RdmkyMDN0WThCR2ZCenRyS2F3ZWpSNnJHSVRtaWUwa0JsWGhPRlV0aEg1UG40bG8yd3LSAa4BQVVfeXFMT3ZaQ1RkSlpaRngtS3VqOTRSSFczbWRCOVpZM2toSXU3eXlRbzRqNGhZdGxodXFYV3FoMFlmSm9qTEtDSTZqMlExOFE3NWpjQnJVMUVMSW5TMVpsMC1NaGJQWG9FUWNJMVh5UURFRVh1SVR2RjladkdBdDZuT2tZNzU5eHVlankzXzcxLThGT2tDLUg2ZnVKUjlrczRic2tiS2t0ZHBKWEpYS3Vsa2dR?oc=5",
-      "top": true,
-      "bestRank": 25,
-      "firstSeen": "2026-11-22T00:50:59.358Z"
     },
     {
       "headline": "Ask Ellen: Is the polar vortex going to hit this November?",
@@ -450,7 +474,17 @@
       "summary": "Reported by Euronews.com.",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPY0JqRWx1ZDg0TlR4czZVdVFBT3Q5TkNqOXk2UE9SM0kzaFVpeGg1X3ZrRFlMQzR3X01nNkxpc3ZyTVdoa05lOVlyUnpiSWdxbF9jT2p0aXZkQlFNQlg2LWVmYjI1cVpkZzhiY0dyNWozRGFCaU53T1E5QjZmRk1JQXVTWHBiOUNlb242Tlp1TWtBUGdjSHdBa0hTSTB6cWJTYUw2UWV4eWxrMGwyYnRsbnItb2U?oc=5",
       "top": true,
-      "bestRank": 27,
+      "bestRank": 26,
+      "firstSeen": "2026-11-21T21:37:54.311Z"
+    },
+    {
+      "headline": "Iran Shipping Update",
+      "date": "2026-11-21",
+      "bucket": "World",
+      "summary": "Reported by Financial Times.",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRGJLeFNBLUxKMHJ5aGMyd1c3NzN5UHdpcnc0M0xkNWVtTHNlNV9ENW5SN1FmanBubUlhcU5XS29JNzNiWFVGY09BT2h3OW5pM3RvcG5RLVFLbU0tMGhZZzdocWJfQk04TElreFFQVXRFVjRJWGVvWjdvUl9Tc3NMcW5iWHQ?oc=5",
+      "top": true,
+      "bestRank": 30,
       "firstSeen": "2026-11-21T21:37:54.311Z"
     },
     {
@@ -464,14 +498,14 @@
       "firstSeen": "2026-11-21T18:37:52.809Z"
     },
     {
-      "headline": "Iran Shipping Update",
+      "headline": "Why Is the World Still Counting on Unproven Carbon Capture Technology?",
       "date": "2026-11-21",
       "bucket": "World",
-      "summary": "Reported by Financial Times.",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRGJLeFNBLUxKMHJ5aGMyd1c3NzN5UHdpcnc0M0xkNWVtTHNlNV9ENW5SN1FmanBubUlhcU5XS29JNzNiWFVGY09BT2h3OW5pM3RvcG5RLVFLbU0tMGhZZzdocWJfQk04TElreFFQVXRFVjRJWGVvWjdvUl9Tc3NMcW5iWHQ?oc=5",
+      "summary": "Reported by ProPublica.",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPLWtPdVBEclV2ZU5VTUdhdE1qUGk1S0JwVjRFNDdVWDZFY2ZDS0tvV0l5YXlibGpKaXV6OFVXTFlUZjZXWHNlb3lwSGRxMEpxZTNWNmxac1J3QjZJUFk1UGFoQzdNQnFhcjFiVWRXbmk4ODFXNFJIZThIZFFUbnNqbXFB?oc=5",
       "top": true,
-      "bestRank": 31,
-      "firstSeen": "2026-11-21T21:37:54.311Z"
+      "bestRank": 33,
+      "firstSeen": "2026-11-22T00:50:59.358Z"
     },
     {
       "headline": "Putin’s Pet Project Implodes With Humiliating Scandal",
@@ -480,7 +514,17 @@
       "summary": "Reported by The Daily Beast.",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPS3ByMFlZWlNvc29MWGFPNHQ0UjV2T2szM28zbnp0RmVEeEppajJfNzVtSGRwYXRFNG5sVkYxdzlzcDJpSm9CZG1BcGJyUkdFVXRSRGhvNWVzb3A0Y0dsT3hvdUw5TDdzZW5QXzFLeWp0alBPNXk5QVU2cm1peTRuVjFUelpTa0R5Ymc?oc=5",
       "top": true,
-      "bestRank": 38,
+      "bestRank": 36,
+      "firstSeen": "2026-11-22T00:50:59.358Z"
+    },
+    {
+      "headline": "Mike Waltz warns Kremlin faces 'unsustainable' losses approaching WWII scale as Trump seeks deal",
+      "date": "2026-11-21",
+      "bucket": "World",
+      "summary": "Reported by Fox News.",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRXpPZ0pLRE1EdmVFUXFIeHBEQjNBbHJSUGgwSDZLSzV4TXJ6eVVlMEpqTFJtOEp1N1gtaFlUcHF3M3BJRXJjdnAydXVFWnczRTVwbUcySF9VQUlwSndtOURNbjNRU3VNZ1VOa2xmYmVxcEJrbXdEakJqUldUdTZINHJkNUtTMkl6WUJBTWZsdEJ1d19yVldVaWlxQXRBaS11STBJN2VUUnd4U05fSW5MTU52RTduOGt5aHdyZnNR0gHDAUFVX3lxTE4wUFRSVWo2bjNuNVEzSG5uZjRhRUstZk1id3EzbnI2WXdJNUgzU0IxTHRQTU5haFdVX0puZFdERXJ4S0hJRFZVZkpGNkxmLVFpbXJYVGY3dFpXcGRaQzZpeWc3TVVrVmxLTERPcEVFNTY2THhIeFYxSkc5dGYwOTRmaGVCSlRoWWRIUmZlUUVxLVFPb0NOYVlHMWxlTTE4V201X25tY1labG1jUTNOSmZ3b0F5Q0NrMUNpcUpMOGJkX0NXOA?oc=5",
+      "top": true,
+      "bestRank": 37,
       "firstSeen": "2026-11-22T00:50:59.358Z"
     },
     {
@@ -494,24 +538,22 @@
       "firstSeen": "2026-11-21T15:36:48.528Z"
     },
     {
-      "headline": "Why Is the World Still Counting on Unproven Carbon Capture Technology?",
+      "headline": "Mexico detains top cartel boss 'El Chapo Isidro,' setting off violence",
       "date": "2026-11-21",
       "bucket": "World",
-      "summary": "Reported by ProPublica.",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPLWtPdVBEclV2ZU5VTUdhdE1qUGk1S0JwVjRFNDdVWDZFY2ZDS0tvV0l5YXlibGpKaXV6OFVXTFlUZjZXWHNlb3lwSGRxMEpxZTNWNmxac1J3QjZJUFk1UGFoQzdNQnFhcjFiVWRXbmk4ODFXNFJIZThIZFFUbnNqbXFB?oc=5",
-      "top": true,
-      "bestRank": 39,
-      "firstSeen": "2026-11-22T00:50:59.358Z"
+      "summary": "Fausto Isidro Meza Flores, better known as \"El Chapo Isidro,\" was one of the FBI's most wanted fugitives. His arrest in northwest Mexico on Saturday has sparked violence in the region.",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6049672/cartel-boss-el-chapo-isidro-detained",
+      "firstSeen": "2026-11-21T18:37:52.809Z",
+      "top": false,
+      "bestRank": null
     },
     {
-      "headline": "Mike Waltz warns Kremlin faces 'unsustainable' losses approaching WWII scale as Trump seeks deal",
+      "headline": "Cartel leader captured in northern Mexico in a bloody firefight that left 11 dead",
       "date": "2026-11-21",
       "bucket": "World",
-      "summary": "Reported by Fox News.",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRXpPZ0pLRE1EdmVFUXFIeHBEQjNBbHJSUGgwSDZLSzV4TXJ6eVVlMEpqTFJtOEp1N1gtaFlUcHF3M3BJRXJjdnAydXVFWnczRTVwbUcySF9VQUlwSndtOURNbjNRU3VNZ1VOa2xmYmVxcEJrbXdEakJqUldUdTZINHJkNUtTMkl6WUJBTWZsdEJ1d19yVldVaWlxQXRBaS11STBJN2VUUnd4U05fSW5MTU52RTduOGt5aHdyZnNR0gHDAUFVX3lxTE4wUFRSVWo2bjNuNVEzSG5uZjRhRUstZk1id3EzbnI2WXdJNUgzU0IxTHRQTU5haFdVX0puZFdERXJ4S0hJRFZVZkpGNkxmLVFpbXJYVGY3dFpXcGRaQzZpeWc3TVVrVmxLTERPcEVFNTY2THhIeFYxSkc5dGYwOTRmaGVCSlRoWWRIUmZlUUVxLVFPb0NOYVlHMWxlTTE4V201X25tY1labG1jUTNOSmZ3b0F5Q0NrMUNpcUpMOGJkX0NXOA?oc=5",
-      "top": true,
-      "bestRank": 40,
-      "firstSeen": "2026-11-22T00:50:59.358Z"
+      "summary": "Fausto Isidro Meza Flores, better known as \"El Chapo Isidro,\" was one of the FBI's most wanted fugitives. His arrest in northwest Mexico on Saturday has sparked violence in the region.",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6049672/cartel-boss-el-chapo-isidro-detained",
+      "firstSeen": "2026-11-22T03:39:47.987Z"
     },
     {
       "headline": "Lock of former US President George Washington's hair sells for $4,000",
@@ -519,7 +561,9 @@
       "bucket": "World",
       "summary": "The hair was given as a sign of friendship shortly before Washington's death in 1799, according to a descendent of its former owner.",
       "url": "https://www.bbc.co.uk/news/articles/cwe9k23dpz0do?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-22T00:50:59.358Z"
+      "firstSeen": "2026-11-22T00:50:59.358Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit?",
@@ -527,7 +571,9 @@
       "bucket": "World",
       "summary": "NPR's Rob Schmitz speaks with Robert Daly, director of the program on US China relations at University of Maryland's School of Public Policy, about President Trump's trip to China this week.",
       "url": "https://www.npr.org/2026/11/21/nx-s1-6048741/what-did-xi-jinping-get-from-the-bear-hug-with-trump-at-the-shenzhen-summit",
-      "firstSeen": "2026-11-22T00:50:59.358Z"
+      "firstSeen": "2026-11-22T00:50:59.358Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "A grieving family in Lebanon returns to their village",
@@ -535,7 +581,9 @@
       "bucket": "World",
       "summary": "In Southern Lebanon, the Army is taking over after Israeli forces withdraw. One grieving family returns to their village to find almost everything in their house destroyed.",
       "url": "https://www.npr.org/2026/11/21/nx-s1-6012085/a-grieving-family-in-lebanon-returns-to-their-village",
-      "firstSeen": "2026-11-22T00:50:59.358Z"
+      "firstSeen": "2026-11-22T00:50:59.358Z",
+      "top": false,
+      "bestRank": null
     },
     {
       "headline": "Russia-bound ship attacked in Gulf of Finland",
@@ -548,31 +596,11 @@
       "bestRank": null
     },
     {
-      "headline": "Mexico detains top cartel boss 'El Chapo Isidro,' setting off violence",
-      "date": "2026-11-21",
-      "bucket": "World",
-      "summary": "Fausto Isidro Meza Flores, better known as \"El Chapo Isidro,\" was one of the FBI's most wanted fugitives. His arrest in northwest Mexico on Saturday has sparked violence in the region.",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6049672/cartel-boss-el-chapo-isidro-detained",
-      "firstSeen": "2026-11-21T18:37:52.809Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
       "headline": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
       "date": "2026-11-21",
       "bucket": "World",
       "summary": "Fausto Isidro \"Chapo Idisro\" Meza Flores, who is accused of drug trafficking and torture, is detained after gun fight with authorities.",
       "url": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
-      "firstSeen": "2026-11-21T15:36:48.528Z",
-      "top": false,
-      "bestRank": null
-    },
-    {
-      "headline": "Killer robots: U.N. talks fall short of hopes for legally binding rules",
-      "date": "2026-11-21",
-      "bucket": "World",
-      "summary": "U.N. talks in Geneva have failed to deliver binding rules on autonomous weapons, as humanitarian groups warn that military AI is advancing far faster than diplomacy.",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6047916/killer-robots-un-drones",
       "firstSeen": "2026-11-21T15:36:48.528Z",
       "top": false,
       "bestRank": null
@@ -1376,6 +1404,16 @@
       "top": true,
       "bestRank": 39,
       "firstSeen": "2026-11-20T09:38:27.710Z"
+    },
+    {
+      "headline": "Poland Uraine Exercise",
+      "date": "2026-11-20",
+      "bucket": "World",
+      "summary": "Reported by AP News.",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVGl6dU85bExfQlhuODY0Rkh6a3M2UVhRTlV1QmRsclI5ZHpRbWo5M3JIbUdydkRzOFNrZkZ6RDBIMHJVNGhqeklnRl9UVVAzRFpFUUk0OTVDVnU3RVh2VjdWZ2ktMUhMNmZZMUZkVDE5RFAtTjJ4UEZjUDlKZWd4YlhSaFBoYXdnYVI1ajFaRkdnTkpyMExkU0U4YjBHMTNSblZkRWt6aUVtTGJ5UWU1RVdrNA?oc=5",
+      "top": true,
+      "bestRank": 39,
+      "firstSeen": "2026-11-22T03:39:47.987Z"
     },
     {
       "headline": "“What Selective Outrage!” Jordan Bardella Accuses Anne-Cécile Mailfert of Excluding His Partner from the Women's Foundation",
@@ -3892,16 +3930,6 @@
       "firstSeen": "2026-11-17T19:05:16.239Z",
       "top": true,
       "bestRank": 1
-    },
-    {
-      "headline": "Kuwait reports drone attacks as Iran, US trade attacks on Qeshm and Bahrain",
-      "date": "2026-11-17",
-      "bucket": "World",
-      "summary": "Reported by Al Jazeera.",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU3NxaFU3RUpkTklaRUU5NkxhTjZ6aHhYOWl4WG9PQUh1dWp6ck9qdkJhc3FHMjN5cUhWSzF6OWFmZnE5MXQ3U0RKd2RmeXdvZUZ3Qjk4VzFEM0tka3dOai1IVWZFY0VaVlVHS3d2NkdyeDU3UHZEY2tMbV85ZEVldUhRSG1SS2VwZ1c1ck4wNE1HbU81WXluYU5KRUN0NmRFdVJRNWI5MFpreDR4eGNaQkgtMVg3SjjSAbwBQVVfeXFMUDFvNkpucUdWODBUZW5kV01tbDNjaGVlYWp6a2NtdktFQVJpVW9mTjJFWEhWWm1LQlIwcW5tVVozb0FpUWl5TEd1VkstTFh2S2VXRi1YLWdxcl9TaF9XcjFhLUNHb291ZkxHY210TENUclk4WjNlZml0Y1hDbnBBRURzTm1ORjl4a0hWUFVGWUVJbFNwUksyUDJ0ZmtBZWRiZV9pNTJ4QndvRGVMNzVtVW5VQ3J6azQ3c3lJcVc?oc=5",
-      "top": true,
-      "bestRank": 1,
-      "firstSeen": "2026-11-18T03:39:35.052Z"
     },
     {
       "headline": "Two major Kyiv bridges hit in Russian attack, mayor says",
