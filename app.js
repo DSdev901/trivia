@@ -228,11 +228,13 @@ function categoryKicker(category) {
     case "trending":
       return "Dolly Parton, House of the Dragon, and more in the air";
     case "themed":
-      return "Harrison Ford Movies and Harry Potter Movies";
+      return "Harrison Ford, Harry Potter, and Lord of the Rings Movies";
     case "harrison-ford":
       return "150 pub-quiz questions in fifteen rounds";
     case "harry-potter":
       return "210 pub-quiz questions in twenty-one rounds";
+    case "lord-of-the-rings":
+      return "150 pub-quiz questions in fifteen rounds";
     case "prior-saucer":
       return "Questions from uploaded photos";
     case "presidents":

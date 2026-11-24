@@ -27,7 +27,7 @@
     {
       "id": "themed",
       "name": "Themed Trivia",
-      "description": "Tuesday night themes you can study and quiz. Harrison Ford Movies and Harry Potter Movies.",
+      "description": "Tuesday night themes you can study and quiz. Harrison Ford Movies, Harry Potter Movies, and Lord of the Rings Movies.",
       "type": "themed",
       "packs": [
         {
@@ -37,6 +37,10 @@
         {
           "id": "harry-potter",
           "blurb": "210 pub-quiz questions in twenty-one rounds. The eight films, plus Fantastic Beasts. Plot and characters, not the cast."
+        },
+        {
+          "id": "lord-of-the-rings",
+          "blurb": "150 pub-quiz questions in fifteen rounds. Five rounds for each film. Plot and characters, not the cast."
         }
       ]
     },
@@ -315,6 +319,33 @@
         { "n": 19, "label": "Lines from the Films", "range": "Lines from the Films" },
         { "n": 20, "label": "School and Street", "range": "School and Street" },
         { "n": 21, "label": "Fantastic Beasts", "range": "Fantastic Beasts" }
+      ]
+    },
+    {
+      "id": "lord-of-the-rings",
+      "name": "Lord of the Rings Movies",
+      "description": "150 pub-quiz questions in fifteen rounds, from Peter Jackson's three films. Five rounds each for The Fellowship of the Ring, The Two Towers, and The Return of the King. Plot and characters, not the cast.",
+      "type": "movies",
+      "home": false,
+      "parentId": "themed",
+      "batchCount": 15,
+      "batchPath": "data/themed/lord-of-the-rings/batch-{n}.json",
+      "batches": [
+        { "n": 1, "label": "The Shire and the Ring", "range": "The Shire and the Ring" },
+        { "n": 2, "label": "The Road to Rivendell", "range": "The Road to Rivendell" },
+        { "n": 3, "label": "The Council of Elrond", "range": "The Council of Elrond" },
+        { "n": 4, "label": "The Mines of Moria", "range": "The Mines of Moria" },
+        { "n": 5, "label": "Lothlórien and the Breaking of the Fellowship", "range": "Lothlórien and the Breaking of the Fellowship" },
+        { "n": 6, "label": "The Riders of Rohan", "range": "The Riders of Rohan" },
+        { "n": 7, "label": "Sméagol and Gollum", "range": "Sméagol and Gollum" },
+        { "n": 8, "label": "Fangorn and Isengard", "range": "Fangorn and Isengard" },
+        { "n": 9, "label": "Helm's Deep", "range": "Helm's Deep" },
+        { "n": 10, "label": "Faramir and Osgiliath", "range": "Faramir and Osgiliath" },
+        { "n": 11, "label": "Minas Tirith", "range": "Minas Tirith" },
+        { "n": 12, "label": "The Paths of the Dead", "range": "The Paths of the Dead" },
+        { "n": 13, "label": "Shelob's Lair", "range": "Shelob's Lair" },
+        { "n": 14, "label": "The Pelennor Fields and the Black Gate", "range": "The Pelennor Fields and the Black Gate" },
+        { "n": 15, "label": "Mount Doom and the Return of the King", "range": "Mount Doom and the Return of the King" }
       ]
     }
   ]
