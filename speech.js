@@ -12,6 +12,8 @@ const RATE_KEY = "trivia-helper-voice-rate";
 const LOOP_KEY = "trivia-helper-fact-loops";
 const ITEM_DELAY_KEY = "trivia-helper-item-delay-sec";
 const DANIEL_DEFAULT_FLAG = "trivia-helper-default-daniel-v1";
+// Set once we move a device off the auto-picked Daniel to a premium voice.
+const PREMIUM_DEFAULT_FLAG = "trivia-helper-default-premium-v1";
 export const ON_DEVICE_VOICE_URI = "on-device";
 export { NATURAL_VOICE_URI };
 
@@ -59,18 +61,28 @@ function isEnglish(voice) {
   return /^en(-|_)/i.test(voice.lang) || /english/i.test(voice.name);
 }
 
+const NOVELTY_VOICE =
+  /zarvox|trinoids|bad news|boing|bubbles|cellos|organ|whisper|princess|junior|albert|bruce|fred|ralph|kathy|victoria|superstar|jester|wobble|grandma|grandpa|rocko|shelley|sandy|flo|eddy|reed/i;
+
+/** Downloaded high-quality voices (free, but each device installs them). */
+function isPremiumVoice(voice) {
+  const name = String(voice?.name || "");
+  if (NOVELTY_VOICE.test(name)) return false;
+  return /premium|enhanced|neural|\bnatural\b|siri/i.test(name);
+}
+
 /** Higher score = more natural-sounding for study narration. */
 function scoreVoice(voice) {
   const name = voice.name || "";
   let score = 0;
 
-  // Default browser voice preference.
-  if (/\bdaniel\b/i.test(name)) score += 500;
+  // Premium-quality voices beat everything when a device has them installed:
+  // Apple Premium/Enhanced/Siri voices, Edge "Online (Natural)", neural packs.
+  if (isPremiumVoice(voice)) score += 600;
+  if (/premium/i.test(name)) score += 50;
 
-  // Prefer neural / enhanced / premium quality packs.
-  if (/premium/i.test(name)) score += 120;
-  if (/enhanced|neural|natural|superstar/i.test(name)) score += 100;
-  if (/siri/i.test(name)) score += 90;
+  // Otherwise Daniel is the default.
+  if (/\bdaniel\b/i.test(name)) score += 500;
 
   // Strong modern system voices on macOS / Windows / Chrome.
   if (/\b(ava|zoe|allison|nora|evan|nathan|susan|tom|aaron|nicky|samantha|karen|moira|tessa|fiona|martha|gordon)\b/i.test(name)) {
@@ -216,6 +228,11 @@ function findDaniel(ranked) {
   return ranked.find((v) => /\bdaniel\b/i.test(v.name)) || null;
 }
 
+/** Best installed premium voice, else Daniel, else the top-ranked voice. */
+function bestDefaultVoice(ranked) {
+  return ranked.find((v) => isPremiumVoice(v.voice)) || findDaniel(ranked) || ranked[0] || null;
+}
+
 function voiceLabel(value) {
   return String(value || "")
     .toLowerCase()
@@ -255,7 +272,7 @@ function listedVoiceOrDefault(ranked, preferredUri) {
   if (preferredUri === NATURAL_VOICE_URI) return null;
   if (preferredUri === ON_DEVICE_VOICE_URI) return systemDefaultVoice();
   if (!ranked.length) return null;
-  return (matchRankedVoice(ranked, preferredUri) || findDaniel(ranked) || ranked[0]).voice;
+  return (matchRankedVoice(ranked, preferredUri) || bestDefaultVoice(ranked)).voice;
 }
 
 function pickVoiceNow(preferredUri) {
@@ -277,19 +294,28 @@ function pickListedFallbackVoice(failedVoice) {
   return (usable.find((v) => v.local) || usable[0])?.voice || null;
 }
 
-/** Default system voice URI — Daniel when available. */
+/** Default system voice URI — a premium voice if installed, else Daniel. */
 export async function getDefaultBrowserVoiceUri() {
   const ranked = await listEnglishVoices();
+  const best = bestDefaultVoice(ranked);
   const daniel = findDaniel(ranked);
   try {
     if (!isIOSWebKit() && daniel && !localStorage.getItem(DANIEL_DEFAULT_FLAG)) {
-      localStorage.setItem(VOICE_KEY, daniel.uri);
+      localStorage.setItem(VOICE_KEY, (best || daniel).uri);
       localStorage.setItem(DANIEL_DEFAULT_FLAG, "1");
+    }
+    // Once per device: if we auto-picked Daniel (or nothing) and a premium
+    // voice is now installed, switch to it. A voice the user chose stays.
+    if (best && isPremiumVoice(best.voice) && !localStorage.getItem(PREMIUM_DEFAULT_FLAG)) {
+      const saved = localStorage.getItem(VOICE_KEY) || "";
+      const autoDaniel = daniel && saved === daniel.uri && localStorage.getItem(DANIEL_DEFAULT_FLAG);
+      if (!saved || autoDaniel) localStorage.setItem(VOICE_KEY, best.uri);
+      localStorage.setItem(PREMIUM_DEFAULT_FLAG, "1");
     }
   } catch {
     /* ignore */
   }
-  return (daniel || ranked[0])?.uri || "";
+  return best?.uri || "";
 }
 
 export function isUsableVoiceUri(ranked, uri) {
@@ -305,13 +331,13 @@ function escapeOption(value) {
     .replace(/"/g, "&quot;");
 }
 
-/** Daniel first (default), then Natural, then the device’s system voice, then the rest. */
+/** Best voice first (default), then Natural, then the device’s system voice, then the rest. */
 export function voiceSelectOptionsHtml(ranked, selectedUri) {
-  const daniel = findDaniel(ranked);
-  const others = ranked.filter((v) => v !== daniel);
+  const best = bestDefaultVoice(ranked);
+  const others = ranked.filter((v) => v !== best);
   const choices = [];
-  if (daniel) {
-    choices.push({ uri: daniel.uri, label: `${daniel.name} (default)` });
+  if (best) {
+    choices.push({ uri: best.uri, label: `${best.name} (default)` });
   }
   choices.push({
     uri: NATURAL_VOICE_URI,
@@ -1441,15 +1467,19 @@ export function voiceQualityTip(rankedVoices) {
       : "Natural voice requires a brief load time the first time you Listen, then it stays in this browser.";
   }
   if (isIOSWebKit()) {
-    return "On iPhone, turn the silent switch off and use the media volume buttons. Between-items pauses use a real timer while the screen is on; if you lock mid-listen, the rest of the list is queued so it can keep going. If Brave stays quiet, try Safari.";
+    const premiumTip = rankedVoices.some((v) => isPremiumVoice(v.voice))
+      ? ""
+      : " For a much better voice, download a free one: Settings → Accessibility → Spoken Content → Voices → English → Ava (Premium) or Zoe (Premium).";
+    return `On iPhone, turn the silent switch off and use the media volume buttons. Between-items pauses use a real timer while the screen is on; if you lock mid-listen, the rest of the list is queued so it can keep going. If Brave stays quiet, try Safari.${premiumTip}`;
   }
   const best = rankedVoices[0];
   if (!best) {
     return "No English voices found. Download voices in macOS System Settings → Accessibility → Spoken Content.";
   }
-  const daniel = rankedVoices.find((v) => /\bdaniel\b/i.test(v.name));
-  if (daniel) {
-    return `Default voice is Daniel. Extra loops replay the section with a 7-second pause between passes.`;
+  const top = bestDefaultVoice(rankedVoices);
+  const loopsTip = "Extra loops replay the section with a 7-second pause between passes.";
+  if (top && !isPremiumVoice(top.voice)) {
+    return `Default voice is ${top.name}. For a much better one, download a free Premium voice (macOS: System Settings → Accessibility → Spoken Content → System voice → Manage Voices; pick Ava or Zoe Premium). ${loopsTip}`;
   }
-  return `Using “${best.name}”. Extra loops replay the section with a 7-second pause between passes.`;
+  return `Using “${(top || best).name}”. ${loopsTip}`;
 }
