@@ -199,3 +199,12 @@ export async function speakNaturalText(text, { rate = 1, shouldContinue, onStatu
     throw new Error(friendlyError(err));
   }
 }
+
+/**
+ * Play a pre-recorded clip (Blob) through the same unlocked audio element the
+ * Natural voice uses, so iPhone playback works after the Listen tap.
+ */
+export function playRecordedClip(blob, { rate = 1, shouldContinue } = {}) {
+  if (!blob) return Promise.resolve(false);
+  return playBlob(blob, rate, () => !shouldContinue || shouldContinue());
+}

@@ -10,3 +10,6 @@ server/.env
 .cursor/skills/verify-trivia/artifacts/*
 !.cursor/skills/verify-trivia/artifacts/.gitkeep
 
+
+# Kokoro clip generator deps
+scripts/kokoro/node_modules/

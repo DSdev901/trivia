@@ -5,7 +5,17 @@ import {
   stopNaturalAudio,
   unlockNaturalAudio,
   speakNaturalText,
+  playRecordedClip,
 } from "./natural-tts.js";
+import {
+  KOKORO_VOICE_URI,
+  KOKORO_VOICE_LABEL,
+  kokoroClipBlob,
+  kokoroHasAllClips,
+  kokoroHasAllClipsNow,
+  loadKokoroManifest,
+  prefetchKokoroClip,
+} from "./kokoro-clips.js";
 
 const VOICE_KEY = "trivia-helper-voice-uri";
 const RATE_KEY = "trivia-helper-voice-rate";
@@ -15,7 +25,9 @@ const DANIEL_DEFAULT_FLAG = "trivia-helper-default-daniel-v1";
 // Set once we move a device off the auto-picked Daniel to a premium voice.
 const PREMIUM_DEFAULT_FLAG = "trivia-helper-default-premium-v1";
 export const ON_DEVICE_VOICE_URI = "on-device";
-export { NATURAL_VOICE_URI };
+export { NATURAL_VOICE_URI, KOKORO_VOICE_URI };
+// Set once we make the recorded Heart voice this device's default.
+const KOKORO_DEFAULT_FLAG = "trivia-helper-default-kokoro-v1";
 
 /** Half-second steps from 0–5s; default pause between list items. */
 export const ITEM_DELAY_STEPS = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5];
@@ -122,6 +134,7 @@ function rankedEnglishNow() {
 }
 
 export async function listEnglishVoices() {
+  void loadKokoroManifest();
   await loadVoices();
   return rankedEnglishNow();
 }
@@ -270,6 +283,7 @@ function systemDefaultVoice() {
 
 function listedVoiceOrDefault(ranked, preferredUri) {
   if (preferredUri === NATURAL_VOICE_URI) return null;
+  if (preferredUri === KOKORO_VOICE_URI) return bestDefaultVoice(ranked)?.voice || null;
   if (preferredUri === ON_DEVICE_VOICE_URI) return systemDefaultVoice();
   if (!ranked.length) return null;
   return (matchRankedVoice(ranked, preferredUri) || bestDefaultVoice(ranked)).voice;
@@ -312,15 +326,27 @@ export async function getDefaultBrowserVoiceUri() {
       if (!saved || autoDaniel) localStorage.setItem(VOICE_KEY, best.uri);
       localStorage.setItem(PREMIUM_DEFAULT_FLAG, "1");
     }
+    // Once per device: make the recorded Heart voice the default unless the
+    // user picked a voice themselves. Unrecorded sections use `best`.
+    if (!localStorage.getItem(KOKORO_DEFAULT_FLAG)) {
+      const saved = localStorage.getItem(VOICE_KEY) || "";
+      const autoPicked =
+        !saved ||
+        (best && saved === best.uri) ||
+        (daniel && saved === daniel.uri && localStorage.getItem(DANIEL_DEFAULT_FLAG));
+      if (autoPicked) localStorage.setItem(VOICE_KEY, KOKORO_VOICE_URI);
+      localStorage.setItem(KOKORO_DEFAULT_FLAG, "1");
+    }
   } catch {
     /* ignore */
   }
-  return best?.uri || "";
+  return KOKORO_VOICE_URI;
 }
 
 export function isUsableVoiceUri(ranked, uri) {
   if (!uri) return false;
-  if (uri === ON_DEVICE_VOICE_URI || uri === NATURAL_VOICE_URI) return true;
+  if (uri === ON_DEVICE_VOICE_URI || uri === NATURAL_VOICE_URI || uri === KOKORO_VOICE_URI)
+    return true;
   return ranked.some((v) => v.uri === uri);
 }
 
@@ -335,9 +361,14 @@ function escapeOption(value) {
 export function voiceSelectOptionsHtml(ranked, selectedUri) {
   const best = bestDefaultVoice(ranked);
   const others = ranked.filter((v) => v !== best);
-  const choices = [];
+  const choices = [
+    {
+      uri: KOKORO_VOICE_URI,
+      label: `${KOKORO_VOICE_LABEL} (default; recorded sections only)`,
+    },
+  ];
   if (best) {
-    choices.push({ uri: best.uri, label: `${best.name} (default)` });
+    choices.push({ uri: best.uri, label: best.name });
   }
   choices.push({
     uri: NATURAL_VOICE_URI,
@@ -554,8 +585,13 @@ export function prepareSpokenLine(line) {
   return expandForSpeech(line).replace(/\s+/g, " ").trim();
 }
 
+/** Every chunk speakLines will say for these raw lines, in order. */
+export function spokenChunksForLines(lines) {
+  return lines.map((line) => prepareSpokenLine(line)).flatMap((line) => chunkForSpeech(line));
+}
+
 /** Break a line into short spoken chunks so pacing feels less robotic. */
-function chunkForSpeech(line) {
+export function chunkForSpeech(line) {
   const cleaned = prepareSpokenLine(line)
     .replace(/—/g, ". ")
     .replace(/–/g, " to ")
@@ -1334,13 +1370,33 @@ export async function speakLines(lines, opts = {}) {
   }
   stopSpeech();
   const session = browserSpeakSession;
-  const preferred = opts.voiceUri || getSavedVoiceUri();
+  let preferred = opts.voiceUri || getSavedVoiceUri();
+  const wantsKokoro = preferred === KOKORO_VOICE_URI;
+  // Recorded Heart clips play only when this whole section is recorded;
+  // otherwise use the device's best voice for the section.
+  let usingKokoro = false;
+  if (wantsKokoro) {
+    let covered = kokoroHasAllClipsNow(spokenChunksForLines(lines));
+    if (covered === null && !isIOSWebKit()) {
+      covered = await kokoroHasAllClips(spokenChunksForLines(lines));
+    }
+    usingKokoro = covered === true;
+    if (!usingKokoro) {
+      const best = bestDefaultVoice(rankedEnglishNow());
+      preferred = best?.uri || ON_DEVICE_VOICE_URI;
+      opts.onStatus?.(
+        `${KOKORO_VOICE_LABEL} isn’t recorded for this section yet. Using ${best?.name || "this device’s voice"}.`
+      );
+    }
+  }
   const usingNatural = preferred === NATURAL_VOICE_URI;
+  // Clips and Natural both play through the audio element.
+  const usingAudio = usingNatural || usingKokoro;
   // Must run in the same tap as Listen — Brave/Safari iOS drop audio after await.
-  if (usingNatural) unlockNaturalAudio();
+  if (usingAudio) unlockNaturalAudio();
   else unlockSpeech();
 
-  naturalPlaybackActive = usingNatural;
+  naturalPlaybackActive = usingAudio;
   speechKeepaliveActive = true;
   speechKeepaliveOwner = session;
   void acquireWakeLock(session);
@@ -1358,10 +1414,10 @@ export async function speakLines(lines, opts = {}) {
     );
   const stillThis = () => session === browserSpeakSession;
 
-  if (!usingNatural && window.speechSynthesis.paused) window.speechSynthesis.resume();
+  if (!usingAudio && window.speechSynthesis.paused) window.speechSynthesis.resume();
 
   let voice = null;
-  if (!usingNatural) {
+  if (!usingAudio) {
     // Queue the full playlist synchronously on iOS — awaiting first breaks lock-screen play.
     voice = pickVoiceNow(preferred);
     if (!isIOSWebKit() && !voice) {
@@ -1373,7 +1429,7 @@ export async function speakLines(lines, opts = {}) {
     }
   }
 
-  if (!usingNatural && !isIOSWebKit()) {
+  if (!usingAudio && !isIOSWebKit()) {
     const ok = await waitAfterSynthCancel(session);
     if (!ok) {
       opts.onEnd?.();
@@ -1382,7 +1438,7 @@ export async function speakLines(lines, opts = {}) {
   }
 
   try {
-    if (!usingNatural && isIOSWebKit()) {
+    if (!usingAudio && isIOSWebKit()) {
       setMediaSessionPlaying(true);
       if (loops > 1) {
         opts.onStatus?.(`Starting… (${loops} loops)`);
@@ -1401,7 +1457,13 @@ export async function speakLines(lines, opts = {}) {
       return;
     }
 
-    const speakChunk = usingNatural
+    const speakChunk = usingKokoro
+      ? async (text) =>
+          playRecordedClip(await kokoroClipBlob(text), {
+            rate,
+            shouldContinue: stillThis,
+          })
+      : usingNatural
       ? (text) =>
           speakNaturalText(text, {
             rate,
@@ -1432,6 +1494,10 @@ export async function speakLines(lines, opts = {}) {
         const chunks = chunkForSpeech(lines[i]);
         for (let c = 0; c < chunks.length; c += 1) {
           if (!stillThis()) break;
+          if (usingKokoro) {
+            const next = chunks[c + 1] ?? (lines[i + 1] != null ? chunkForSpeech(lines[i + 1])[0] : null);
+            if (next) void prefetchKokoroClip(next);
+          }
           const backgrounded =
             typeof document !== "undefined" && document.visibilityState === "hidden";
           if (backgrounded) {
@@ -1453,14 +1519,17 @@ export async function speakLines(lines, opts = {}) {
       }
     }
   } finally {
-    if (usingNatural) naturalPlaybackActive = false;
+    if (usingAudio) naturalPlaybackActive = false;
     opts.onEnd?.();
     await endSpeechKeepalive(session);
-    if (usingNatural) stopNaturalAudio();
+    if (usingAudio) stopNaturalAudio();
   }
 }
 
 export function voiceQualityTip(rankedVoices) {
+  if (getSavedVoiceUri() === KOKORO_VOICE_URI) {
+    return `${KOKORO_VOICE_LABEL} plays recorded clips where available (Lord of the Rings Movies so far); other sections use this device’s best voice.`;
+  }
   if (getSavedVoiceUri() === NATURAL_VOICE_URI) {
     return isIOSWebKit()
       ? "Natural voice requires a brief load time the first time you Listen. Turn the silent switch off and use the volume buttons."

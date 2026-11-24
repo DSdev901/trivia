@@ -1,0 +1,9 @@
+{
+  "name": "trivia-kokoro-clips",
+  "private": true,
+  "type": "module",
+  "description": "Generates the recorded Heart voice clips (see generate-clips.mjs).",
+  "dependencies": {
+    "kokoro-js": "1.2.1"
+  }
+}
