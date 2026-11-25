@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-11-25T12:29:13.143Z",
+  "generatedAt": "2026-11-25T15:21:59.373Z",
   "retentionDays": 21,
-  "windowStart": "2026-11-04T12:29:13.143Z",
-  "windowEnd": "2026-11-25T12:29:13.143Z",
+  "windowStart": "2026-11-04T15:21:59.373Z",
+  "windowEnd": "2026-11-25T15:21:59.373Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,569 @@
     "Tennis",
     "MMA"
   ],
-  "count": 7280,
+  "count": 7274,
   "items": [
+    {
+      "key": "50586505",
+      "id": "50586505",
+      "headline": "Brandon Aiyuk scheduled for visit Wednesday with Commanders, agent says",
+      "summary": "Wide receiver Brandon Aiyuk is scheduled to visit Wednesday with the Commanders, agent Drew Rosenhaus told ESPN's Adam Schefter.",
+      "url": "https://www.espn.com/nfl/story/_/id/50586505/brandon-aiyuk-scheduled-visit-wednesday-commanders",
+      "sport": "NFL",
+      "published": "2026-11-25T15:21:05.000Z",
+      "firstSeen": "2026-11-25T00:41:59.792Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50593112",
+      "id": "50593112",
+      "headline": "DK Metcalf's Week 12 fantasy preview",
+      "summary": "DK Metcalf's Week 12 fantasy preview",
+      "url": "https://www.espn.com/video/clip/_/id/50593112/dk-metcalf-week-12-fantasy-preview",
+      "sport": "NFL",
+      "published": "2026-11-25T15:19:49.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50593396",
+      "id": "50593396",
+      "headline": "Stephen A. rips Steelers' decision to bench Aaron Rodgers",
+      "summary": "Stephen A. rips Steelers' decision to bench Aaron Rodgers",
+      "url": "https://www.espn.com/video/clip/_/id/50593396/stephen-rips-steelers-decision-bench-aaron-rodgers",
+      "sport": "NFL",
+      "published": "2026-11-25T15:18:49.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50588158",
+      "id": "50588158",
+      "headline": "Facts vs. Feelings: The facts you need to feel right about your flex decisions",
+      "summary": "Making a tough flex decision this week?  Here are some hard facts to help you feel good about the decision.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50588158/facts-feelings-fantasy-advice-week-12",
+      "sport": "NFL",
+      "published": "2026-11-25T15:16:35.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 20
+    },
+    {
+      "key": "49783645",
+      "id": "49783645",
+      "headline": "Where is 'College GameDay'? 2026 schedule, locations, recaps",
+      "summary": "What is the \"College GameDay\" schedule? Find out more about where the program will be each week of the 2026 college football season.",
+      "url": "https://www.espn.com/college-football/story/_/id/49783645/where-college-gameday-2026-schedule-locations-recaps",
+      "sport": "College football",
+      "published": "2026-11-25T15:16:09.000Z",
+      "firstSeen": "2026-09-01T18:19:52.020Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50593342",
+      "id": "50593342",
+      "headline": "Joe Tessitore calls out the College Football Playoff committee's 'bull crappery'",
+      "summary": "Joe Tessitore calls out the College Football Playoff committee's 'bull crappery'",
+      "url": "https://www.espn.com/video/clip/_/id/50593342/joe-tessitore-calls-college-football-playoff-committee-bull-crappery",
+      "sport": "College football",
+      "published": "2026-11-25T15:13:52.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50570870",
+      "id": "50570870",
+      "headline": "NFL Week 12 betting odds: Lines and totals for every game",
+      "summary": "Odds, spreads, totals and FPI predictions for every NFL game in Week 12.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50570870/2026-nfl-week-12-schedule-odds-point-spreads-totals",
+      "sport": "NFL",
+      "published": "2026-11-25T15:11:35.000Z",
+      "firstSeen": "2026-11-23T18:23:33.554Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50593252",
+      "id": "50593252",
+      "headline": "Newcastle owners not considering full sale, only minority deals - reports",
+      "summary": "Newcastle's Saudi owners are not treating the possibility of selling a minority stake in the club as the first step towards a full sale, the Press Association understands.",
+      "url": "https://www.espn.com/soccer/story/_/id/50593252/newcastle-united-saudi-owners",
+      "sport": "Soccer",
+      "published": "2026-11-25T15:03:51.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50571004",
+      "id": "50571004",
+      "headline": "Top 25 betting lines: USC favored at UCLA, Texas double-digit faves at Texas A&M",
+      "summary": "This week's odds and FPI predictions for UCLA-USC, Texas A&M-Texas and more.",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50571004/2026-college-football-week-13-top-25-betting-lines-odds",
+      "sport": "College football",
+      "published": "2026-11-25T15:00:51.000Z",
+      "firstSeen": "2026-11-23T18:23:33.554Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50592920",
+      "id": "50592920",
+      "headline": "Sources: Manuel to remain Michigan AD until new hire is found",
+      "summary": "Warde Manuel has agreed to stay in the job as Michigan's athletic director until the school finds a new athletic director, sources told ESPN on Wednesday.",
+      "url": "https://www.espn.com/college-football/story/_/id/50592920/sources-manuel-stay-job-new-michigan-ad-hired",
+      "sport": "Women's college basketball",
+      "published": "2026-11-25T14:57:02.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50572372",
+      "id": "50572372",
+      "headline": "Fantasy playbook: Week 12 Shadow Reports, lineup locks and projected scores",
+      "summary": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50572372/fantasy-playbook-projections-lineup-locks-week-12-shadow",
+      "sport": "NFL",
+      "published": "2026-11-25T14:56:44.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50028196",
+      "id": "50028196",
+      "headline": "NBA buzz: Latest on trades, news, roster moves and intel for the 2026-27 season",
+      "summary": "NBA basketball is back. The buzz never left. Bookmark this page for the latest news, rumblings and analysis from ESPN's insiders.",
+      "url": "https://www.espn.com/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals",
+      "sport": "NBA",
+      "published": "2026-11-25T14:54:15.000Z",
+      "firstSeen": "2026-09-28T12:44:52.879Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50589757",
+      "id": "50589757",
+      "headline": "Sources: Aaron Rodgers not at Steelers facility, skips meeting after benching",
+      "summary": "Pittsburgh Steelers coach Mike McCarthy has benched starting quarterback Aaron Rodgers in favor of backup Mason Rudolph.",
+      "url": "https://www.espn.com/nfl/story/_/id/50589757/steelers-bench-struggling-qb-aaron-rodgers-start-mason-rudolph",
+      "sport": "NFL",
+      "published": "2026-11-25T14:48:10.000Z",
+      "firstSeen": "2026-11-25T06:32:34.673Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50592672",
+      "id": "50592672",
+      "headline": "NBA reveals $11B arena initiative to boost efforts for Europe league",
+      "summary": "The long-planned NBA-backed league in Europe took another step toward becoming reality with the unveiling of a plan that targets nearly $11 billion in funding for the development and renovation of arenas around the continent.",
+      "url": "https://www.espn.com/nba/story/_/id/50592672/nba-reveals-11b-initiative-arena-development-europe",
+      "sport": "NBA",
+      "published": "2026-11-25T14:43:24.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50592983",
+      "id": "50592983",
+      "headline": "Man City told regulator 'has the stomach' to challenge owners after charges",
+      "summary": "The chair of the Independent Football Regulator says his organisation \"has the stomach\" to take on Manchester City's owners should it need to.",
+      "url": "https://www.espn.com/soccer/story/_/id/50592983/man-city-charges-independent-regulator",
+      "sport": "Soccer",
+      "published": "2026-11-25T14:41:01.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50583319",
+      "id": "50583319",
+      "headline": "From practice squad to prime time: A look at Milton's big chance on Thanksgiving",
+      "summary": "Ex-Cowboys QB Milton is set to headline the Eagles' Thanksgiving game, can he make the most of it?",
+      "url": "https://www.espn.com/nfl/story/_/id/50583319/joe-milton-build-momentum-thanksgiving-start-dallas-cowboys",
+      "sport": "NFL",
+      "published": "2026-11-25T14:40:29.000Z",
+      "firstSeen": "2026-11-25T12:29:13.143Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50582929",
+      "id": "50582929",
+      "headline": "NFL Week 12 latest intel, buzz questions, news, fantasy tips: What we're hearing",
+      "summary": "Where could Daniel Jones and Brandon Aiyuk land? What's the latest on coaching hot seats? What's next for Puka Nacua? And who is getting MVP love in league circles?",
+      "url": "https://www.espn.com/nfl/story/_/id/50582929/week-12-buzz-fantasy-predictions-graziano-fowler-2026",
+      "sport": "NFL",
+      "published": "2026-11-25T14:34:04.000Z",
+      "firstSeen": "2026-11-25T12:29:13.143Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50592810",
+      "id": "50592810",
+      "headline": "Omarion Hampton's Week 12 fantasy preview",
+      "summary": "Omarion Hampton's Week 12 fantasy preview",
+      "url": "https://www.espn.com/video/clip/_/id/50592810/omarion-hampton-week-12-fantasy-preview",
+      "sport": "NFL",
+      "published": "2026-11-25T14:30:58.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50584038",
+      "id": "50584038",
+      "headline": "NHL Tonight: What to watch in Wednesday's massive 14-game schedule",
+      "summary": "Find game previews, betting intel, broadcast information, stats and highlights here.",
+      "url": "https://www.espn.com/nhl/story/_/id/50584038/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+      "sport": "NHL",
+      "published": "2026-11-25T14:27:30.000Z",
+      "firstSeen": "2026-11-25T12:29:13.143Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50582371",
+      "id": "50582371",
+      "headline": "Week 12 Anger Index: Indiana dropped how many spots?!",
+      "summary": "Ranking the teams that should be most upset with the latest CFP rankings.",
+      "url": "https://www.espn.com/college-football/story/_/id/50582371/cfp-ranking-2026-anger-index-week-12",
+      "sport": "College football",
+      "published": "2026-11-25T14:21:30.000Z",
+      "firstSeen": "2026-11-25T03:25:37.880Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50591839",
+      "id": "50591839",
+      "headline": "No. 9 Texas Tech wants more than 10-win seasons with another Big 12 title game in reach vs. TCU",
+      "summary": "— No. 9 Texas Tech has already clinched consecutive 10-win seasons for the first time in school history, though that isn't how coach Joey McGuire views success for his Red Raiders a year after",
+      "url": "http://www.espn.com/ncf/preview?gameId=401856879",
+      "sport": "College football",
+      "published": "2026-11-25T14:20:33.000Z",
+      "firstSeen": "2026-11-25T12:29:13.143Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50591840",
+      "id": "50591840",
+      "headline": "No. 1 Georgia is looking to extend 8-game winning streak against Georgia Tech in state rivalry",
+      "summary": "— Georgia coach Kirby Smart has no shortage of recent evidence that the No. 1 Bulldogs cannot overlook their rivalry game against Georgia Tech on Saturday.",
+      "url": "http://www.espn.com/ncf/preview?gameId=401856760",
+      "sport": "College football",
+      "published": "2026-11-25T14:19:42.000Z",
+      "firstSeen": "2026-11-25T12:29:13.143Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50592508",
+      "id": "50592508",
+      "headline": "Solo Ball is ahead of schedule just in time for UConn",
+      "summary": "Solo Ball was thought to be out for the season, but his injury recovery has progressed faster than expected.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50592508/uconn-solo-ball-injury-return",
+      "sport": "College basketball",
+      "published": "2026-11-25T14:19:31.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50591836",
+      "id": "50591836",
+      "headline": "College football Week 13: USC-UCLA tops schedule with conference title game spots, CFP bids at stake",
+      "summary": "USC-UCLA is one of two rivalry week games matching teams ranked in The Associated Press Top 25, topping a schedule full of intrigue in the race to secure",
+      "url": "http://www.espn.com/ncf/preview?gameId=401858543",
+      "sport": "College football",
+      "published": "2026-11-25T14:18:33.000Z",
+      "firstSeen": "2026-11-25T12:29:13.143Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50591838",
+      "id": "50591838",
+      "headline": "No. 7 Tennessee looks for win over Vanderbilt to help lock down CFP game, perhaps at home",
+      "summary": "— The seventh-ranked Tennessee Volunteers have put themselves in position to make some program history on Saturday night.",
+      "url": "http://www.espn.com/ncf/preview?gameId=401856765",
+      "sport": "College football",
+      "published": "2026-11-25T14:18:32.000Z",
+      "firstSeen": "2026-11-25T12:29:13.143Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50592800",
+      "id": "50592800",
+      "headline": "Desmond Howard: CFP committee finally arranged the SEC teams right",
+      "summary": "Desmond Howard: CFP committee finally arranged the SEC teams right",
+      "url": "https://www.espn.com/video/clip/_/id/50592800/cfp-committee-arranged-sec-teams-right",
+      "sport": "College football",
+      "published": "2026-11-25T14:17:25.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50575185",
+      "id": "50575185",
+      "headline": "Who's on the College Football Playoff bubble after committee's fourth ranking?",
+      "summary": "A conference-by-conference look at which teams are contending for the playoff, who's close and who's out.",
+      "url": "https://www.espn.com/college-football/story/_/id/50575185/cfp-playoff-2026-bubble-watch-week-fourth-ranking",
+      "sport": "College football",
+      "published": "2026-11-25T14:12:36.000Z",
+      "firstSeen": "2026-11-24T12:28:31.792Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50587368",
+      "id": "50587368",
+      "headline": "NHL Thanksgiving Panic Index: Which teams should be most worried?",
+      "summary": "Teams in playoff position on the holiday tend to stay there (77.1% since 2013-14). Who is in the best and worst shape?",
+      "url": "https://www.espn.com/nhl/story/_/id/50587368/nhl-2026-27-playoffs-standings-all-32-thanksgiving-panic-index-rankings-tiers",
+      "sport": "NHL",
+      "published": "2026-11-25T14:02:12.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50592591",
+      "id": "50592591",
+      "headline": "Brooke Pryor: No indication from Steelers that Rodgers was being benched",
+      "summary": "Brooke Pryor: No indication from Steelers that Rodgers was being benched",
+      "url": "https://www.espn.com/video/clip/_/id/50592591/no-indication-steelers-rodgers-was-being-benched",
+      "sport": "NFL",
+      "published": "2026-11-25T14:01:36.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50592394",
+      "id": "50592394",
+      "headline": "Jordan Rodgers: Benching Aaron Rodgers won't fix the Steelers' issues",
+      "summary": "Jordan Rodgers: Benching Aaron Rodgers won't fix the Steelers' issues",
+      "url": "https://www.espn.com/video/clip/_/id/50592394/benching-aaron-rodgers-fix-steelers-issues",
+      "sport": "NFL",
+      "published": "2026-11-25T13:59:59.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50592349",
+      "id": "50592349",
+      "headline": "Infantino challenger Tashima wants term limits for FIFA president",
+      "summary": "FIFA presidential candidate Kohzo Tashima blasted Gianni Infantino for seeking a fourth term.",
+      "url": "https://www.espn.com/soccer/story/_/id/50592349/infantino-challenger-tashima-term-limits-fifa-president",
+      "sport": "Soccer",
+      "published": "2026-11-25T13:59:05.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50585708",
+      "id": "50585708",
+      "headline": "Fantasy football matchup ranks: Tyler Shough, Ashton Jeanty with prime matchups",
+      "summary": "The most and least favorable matchups in the NFL for this week's games at the four key fantasy positions.",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50585708/fantasy-football-rankings-start-sit-matchup-qb-rb-wr-te",
+      "sport": "NFL",
+      "published": "2026-11-25T13:58:53.000Z",
+      "firstSeen": "2026-11-25T12:29:13.143Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50590739",
+      "id": "50590739",
+      "headline": "Geno Auriemma blasts UConn after loss to South Carolina",
+      "summary": "Huskies coach Geno Auriemma oozed with exasperation and said he was searching for answers following his team's latest loss.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50590739/geno-auriemma-blasts-uconn-loss-south-carolina",
+      "sport": "Women's college basketball",
+      "published": "2026-11-25T13:51:45.000Z",
+      "firstSeen": "2026-11-25T09:23:55.177Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50589389",
+      "id": "50589389",
+      "headline": "South Carolina topples UConn behind Tessa Johnson's career-high 32",
+      "summary": "Tessa Johnson scored a career-high 32 points and No. 1 South Carolina shut down seventh-ranked UConn's offense in a 65-56 victory in the Basketball Hall of Fame Women's Showcase.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50589389/tessa-johnson-career-high-32-spark-south-carolina-uconn",
+      "sport": "Women's college basketball",
+      "published": "2026-11-25T13:51:31.000Z",
+      "firstSeen": "2026-11-25T06:32:34.673Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50586432",
+      "id": "50586432",
+      "headline": "UConn lost again, South Carolina still No. 1, and LSU's schedule is heating up",
+      "summary": "UConn lost again, South Carolina remains on top, and some potentially tougher tests await LSU as we rank the top 16.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50586432/womens-basketball-2026-2027-power-rankings-top-16-teams",
+      "sport": "Women's college basketball",
+      "published": "2026-11-25T13:48:20.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50589984",
+      "id": "50589984",
+      "headline": "What Aaron Rodgers' benching means for Steelers, his future",
+      "summary": "The Steelers are starting Mason Rudolph this week over Aaron Rodgers. Why make this change now -- and will it help? And is this really it for Rodgers?",
+      "url": "https://www.espn.com/nfl/story/_/id/50589984/aaron-rodgers-benched-steelers-quarterback-rudolph-week-12",
+      "sport": "NFL",
+      "published": "2026-11-25T13:38:39.000Z",
+      "firstSeen": "2026-11-25T12:29:13.143Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50592421",
+      "id": "50592421",
+      "headline": "Auriemma after UConn's loss: 'I'm having a really hard time coaching this team'",
+      "summary": "Auriemma after UConn's loss: 'I'm having a really hard time coaching this team'",
+      "url": "https://www.espn.com/video/clip/_/id/50592421/having-really-hard-coaching-team",
+      "sport": "Women's college basketball",
+      "published": "2026-11-25T13:33:36.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50590117",
+      "id": "50590117",
+      "headline": "What to expect from Week 13's rivalry week slate",
+      "summary": "SEC Network's Matt Stinchcomb and Fozzy Whittaker reminisce on their favorite rivalry week moments as college athletes as they discuss what to expect from Week 13.",
+      "url": "https://www.espn.com/video/clip/_/id/50590117/what-expect-week-13-rivalry-week-slate",
+      "sport": "College football",
+      "published": "2026-11-25T13:29:07.000Z",
+      "firstSeen": "2026-11-25T06:32:34.673Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50590226",
+      "id": "50590226",
+      "headline": "What SEC Championship contender issues could UGA face for the title?",
+      "summary": "The SEC Now crew dissects possible SEC Championship title obstacles for the shoo-in No. 1 Georgia Bulldogs through analyzing the biggest contenders.",
+      "url": "https://www.espn.com/video/clip/_/id/50590226/what-sec-championship-contender-issues-uga-face-title",
+      "sport": "College football",
+      "published": "2026-11-25T13:28:45.000Z",
+      "firstSeen": "2026-11-25T06:32:34.673Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50590243",
+      "id": "50590243",
+      "headline": "Analyzing the weight of the Louisville vs. UK Week 13 rivalry game",
+      "summary": "The SEC Now crew looks at the significance of a win for the Wildcats with an upcoming rivalry matchup against the No. 19 Cardinals while analyzing their past momentum.",
+      "url": "https://www.espn.com/video/clip/_/id/50590243/analyzing-weight-louisville-vs-uk-week-13-rivalry-game",
+      "sport": "College football",
+      "published": "2026-11-25T13:28:14.000Z",
+      "firstSeen": "2026-11-25T06:32:34.673Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50318517",
+      "id": "50318517",
+      "headline": "Fantasy baseball reactions to MLB offseason trades, signings",
+      "summary": "Track all the latest MLB free agency and trade news with fantasy baseball analysis from Tristan H. Cockcroft and Eric Karabell.",
+      "url": "https://www.espn.com/fantasy/baseball/story/_/id/50318517/fantasy-baseball-hot-stove-trades-free-agent-signings-2027",
+      "sport": "MLB",
+      "published": "2026-11-25T13:18:20.000Z",
+      "firstSeen": "2026-11-03T00:39:43.552Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50577428",
+      "id": "50577428",
+      "headline": "76ers' Joel Embiid (illness) sits out loss to Trail Blazers",
+      "summary": "The 76ers said Joel Embiid will sit out Monday's game against the Trail Blazers because of an illness.",
+      "url": "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
+      "sport": "NBA",
+      "published": "2026-11-25T12:42:13.000Z",
+      "firstSeen": "2026-11-24T00:37:47.356Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50586890",
+      "id": "50586890",
+      "headline": "Jalen Duren to begin rehab assignment in next step to return from injury",
+      "summary": "Pistons center Jalen Duren has taken a significant step toward returning from injury, practicing with the team Tuesday.",
+      "url": "https://www.espn.com/nba/story/_/id/50586890/jalen-duren-begin-rehab-assignment-next-step-return-injury",
+      "sport": "NBA",
+      "published": "2026-11-25T12:41:31.000Z",
+      "firstSeen": "2026-11-25T00:41:59.792Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50586638",
+      "id": "50586638",
+      "headline": "Lakers latest in NBA to establish partnership with Kalshi",
+      "summary": "The Lakers on Tuesday announced a partnership with Kalshi, following similar deals announced last month by the 76ers and the league itself.",
+      "url": "https://www.espn.com/nba/story/_/id/50586638/lakers-latest-nba-partnership-kalshi",
+      "sport": "NBA",
+      "published": "2026-11-25T12:41:13.000Z",
+      "firstSeen": "2026-11-25T00:41:59.792Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50584000",
+      "id": "50584000",
+      "headline": "Sources: Wolves' Donte DiVincenzo eyes New Year's for season debut",
+      "summary": "The Timberwolves said Donte DiVincenzo has been cleared for basketball activities after Achilles surgery.",
+      "url": "https://www.espn.com/nba/story/_/id/50584000/wolves-dante-divincenzo-cleared-basketball-activities",
+      "sport": "NBA",
+      "published": "2026-11-25T12:40:51.000Z",
+      "firstSeen": "2026-11-24T18:12:29.733Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50587249",
+      "id": "50587249",
+      "headline": "Kawhi Leonard's return from knee swelling still at least week away",
+      "summary": "The Raptors say Kawhi Leonard's status will be revisted in a week as he recovers from knee swelling.",
+      "url": "https://www.espn.com/nba/story/_/id/50587249/kawhi-leonard-return-knee-swelling-least-week-away",
+      "sport": "NBA",
+      "published": "2026-11-25T12:40:12.000Z",
+      "firstSeen": "2026-11-25T00:41:59.792Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50389727",
+      "id": "50389727",
+      "headline": "Inside LeBron's first game in Philly -- more than two decades ago",
+      "summary": "Nearly 25 years ago, LeBron won over Philly for the first time -- inside one of the most iconic basketball arenas in the world.",
+      "url": "https://www.espn.com/nba/story/_/id/50389727/lebron-james-palestra-maureece-rice-philadelphia",
+      "sport": "NBA",
+      "published": "2026-11-25T12:39:15.000Z",
+      "firstSeen": "2026-11-06T12:26:41.390Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50583781",
+      "id": "50583781",
+      "headline": "NBA Power Rankings: Whom is each team most thankful for this year?",
+      "summary": "Here's where all 30 teams rank this week -- and the one person each franchise should be thanking most.",
+      "url": "https://www.espn.com/nba/story/_/id/50583781/nba-power-rankings-one-player-coach-exec-thanksgiving",
+      "sport": "NBA",
+      "published": "2026-11-25T12:37:40.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50587119",
+      "id": "50587119",
+      "headline": "LaMelo Ball and the 'collective' carrying Minnesota without Anthony Edwards",
+      "summary": "Through \"giddiness,\" an enhanced focus on defense and an ensemble cast, LaMelo Ball and the Timberwolves are thriving.",
+      "url": "https://www.espn.com/nba/story/_/id/50587119/lamelo-ball-minnesota-timberwolves-anthony-edwards",
+      "sport": "NBA",
+      "published": "2026-11-25T12:34:20.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50585229",
+      "id": "50585229",
+      "headline": "Is your team out of the MLS playoffs? Adopt these chaos clubs as your 2nd side",
+      "summary": "Your favorite team isn't going to win MLS Cup, so we dug into our catalog of statistics to pinpoint three chaos clubs to follow for the postseason.",
+      "url": "https://www.espn.com/soccer/story/_/id/50585229/mls-cup-playoffs-chaos-clubs",
+      "sport": "Soccer",
+      "published": "2026-11-25T12:33:05.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50575214",
+      "id": "50575214",
+      "headline": "Superlatives for this MLB free agent class, from Lowe to Gausman",
+      "summary": "Next best move for Mets? Best free agency timing? We have a yearbook's worth of awards for the top MLB free agents.",
+      "url": "https://www.espn.com/mlb/story/_/id/50575214/free-agent-class-superlatives",
+      "sport": "MLB",
+      "published": "2026-11-25T12:27:48.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 2
+    },
     {
       "key": "50575245",
       "id": "50575245",
@@ -44,17 +605,6 @@
       "published": "2026-11-25T12:25:19.000Z",
       "firstSeen": "2026-11-25T12:29:13.143Z",
       "bestRank": 2
-    },
-    {
-      "key": "50318517",
-      "id": "50318517",
-      "headline": "Fantasy baseball reactions to MLB offseason trades, signings",
-      "summary": "Track all the latest MLB free agency and trade news with fantasy baseball analysis from Tristan H. Cockcroft and Eric Karabell.",
-      "url": "https://www.espn.com/fantasy/baseball/story/_/id/50318517/fantasy-baseball-hot-stove-trades-free-agent-signings-2027",
-      "sport": "MLB",
-      "published": "2026-11-25T12:18:43.000Z",
-      "firstSeen": "2026-11-03T00:39:43.552Z",
-      "bestRank": 1
     },
     {
       "key": "50585901",
@@ -88,17 +638,6 @@
       "published": "2026-11-25T11:49:50.000Z",
       "firstSeen": "2026-11-25T12:29:13.143Z",
       "bestRank": 6
-    },
-    {
-      "key": "50585708",
-      "id": "50585708",
-      "headline": "Fantasy football matchup ranks: Tyler Shough, Ashton Jeanty with prime matchups",
-      "summary": "The most and least favorable matchups in the NFL for this week's games at the four key fantasy positions.",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50585708/fantasy-football-rankings-start-sit-matchup-qb-rb-wr-te",
-      "sport": "NFL",
-      "published": "2026-11-25T11:49:24.000Z",
-      "firstSeen": "2026-11-25T12:29:13.143Z",
-      "bestRank": 1
     },
     {
       "key": "50584790",
@@ -156,17 +695,6 @@
       "bestRank": 1
     },
     {
-      "key": "50586505",
-      "id": "50586505",
-      "headline": "Brandon Aiyuk scheduled for visit Wednesday with Commanders, agent says",
-      "summary": "Wide receiver Brandon Aiyuk is scheduled to visit Wednesday with the Commanders, agent Drew Rosenhaus told ESPN's Adam Schefter.",
-      "url": "https://www.espn.com/nfl/story/_/id/50586505/brandon-aiyuk-scheduled-visit-wednesday-commanders",
-      "sport": "NFL",
-      "published": "2026-11-25T11:21:10.000Z",
-      "firstSeen": "2026-11-25T00:41:59.792Z",
-      "bestRank": 3
-    },
-    {
       "key": "50582822",
       "id": "50582822",
       "headline": "2026 NFL Thanksgiving preview: Picks, predictions, schedule, odds, fantasy tips",
@@ -176,83 +704,6 @@
       "published": "2026-11-25T11:20:49.000Z",
       "firstSeen": "2026-11-25T12:29:13.143Z",
       "bestRank": 3
-    },
-    {
-      "key": "50589757",
-      "id": "50589757",
-      "headline": "Steelers bench struggling QB Aaron Rodgers, to start Mason Rudolph",
-      "summary": "Pittsburgh Steelers coach Mike McCarthy has benched starting quarterback Aaron Rodgers in favor of backup Mason Rudolph.",
-      "url": "https://www.espn.com/nfl/story/_/id/50589757/steelers-bench-struggling-qb-aaron-rodgers-start-mason-rudolph",
-      "sport": "NFL",
-      "published": "2026-11-25T11:19:54.000Z",
-      "firstSeen": "2026-11-25T06:32:34.673Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50582929",
-      "id": "50582929",
-      "headline": "NFL Week 12 latest intel, buzz questions, news, fantasy tips: What we're hearing",
-      "summary": "Where could Daniel Jones and Brandon Aiyuk land? What's the latest on coaching hot seats? What's next for Puka Nacua? And who is getting MVP love in league circles?",
-      "url": "https://www.espn.com/nfl/story/_/id/50582929/week-12-buzz-fantasy-predictions-graziano-fowler-2026",
-      "sport": "NFL",
-      "published": "2026-11-25T11:19:37.000Z",
-      "firstSeen": "2026-11-25T12:29:13.143Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50589984",
-      "id": "50589984",
-      "headline": "What Aaron Rodgers' benching means for Steelers, his future",
-      "summary": "The Steelers are starting Mason Rudolph this week over Aaron Rodgers. Why make this change now -- and will it help? And is this really it for Rodgers?",
-      "url": "https://www.espn.com/nfl/story/_/id/50589984/aaron-rodgers-benched-steelers-quarterback-rudolph-week-12",
-      "sport": "NFL",
-      "published": "2026-11-25T11:18:30.000Z",
-      "firstSeen": "2026-11-25T12:29:13.143Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50591840",
-      "id": "50591840",
-      "headline": "No. 1 Georgia is looking to extend 8-game winning streak against Georgia Tech in state rivalry",
-      "summary": "— Georgia coach Kirby Smart has no shortage of recent evidence that the No. 1 Bulldogs cannot overlook their rivalry game against Georgia Tech on Saturday.",
-      "url": "http://www.espn.com/ncf/preview?gameId=401856760",
-      "sport": "College football",
-      "published": "2026-11-25T11:10:46.000Z",
-      "firstSeen": "2026-11-25T12:29:13.143Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50591839",
-      "id": "50591839",
-      "headline": "No. 9 Texas Tech wants more than 10-win seasons with another Big 12 title game in reach vs. TCU",
-      "summary": "— No. 9 Texas Tech has already clinched consecutive 10-win seasons for the first time in school history, though that isn't how coach Joey McGuire views success for his Red Raiders a year after",
-      "url": "http://www.espn.com/ncf/preview?gameId=401856879",
-      "sport": "College football",
-      "published": "2026-11-25T11:10:45.000Z",
-      "firstSeen": "2026-11-25T12:29:13.143Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50591838",
-      "id": "50591838",
-      "headline": "No. 7 Tennessee looks for win over Vanderbilt to help lock down CFP game, perhaps at home",
-      "summary": "— The seventh-ranked Tennessee Volunteers have put themselves in position to make some program history on Saturday night.",
-      "url": "http://www.espn.com/ncf/preview?gameId=401856765",
-      "sport": "College football",
-      "published": "2026-11-25T11:10:44.000Z",
-      "firstSeen": "2026-11-25T12:29:13.143Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50591836",
-      "id": "50591836",
-      "headline": "College football Week 13: USC-UCLA tops schedule with conference title game spots, CFP bids at stake",
-      "summary": "USC-UCLA is one of two rivalry week games matching teams ranked in The Associated Press Top 25, topping a schedule full of intrigue in the race to secure",
-      "url": "http://www.espn.com/ncf/preview?gameId=401858543",
-      "sport": "College football",
-      "published": "2026-11-25T11:10:42.000Z",
-      "firstSeen": "2026-11-25T12:29:13.143Z",
-      "bestRank": 7
     },
     {
       "key": "50502384",
@@ -277,15 +728,15 @@
       "bestRank": 1
     },
     {
-      "key": "50589389",
-      "id": "50589389",
-      "headline": "South Carolina topples UConn behind Tessa Johnson's career-high 32",
-      "summary": "Tessa Johnson scored a career-high 32 points and No. 1 South Carolina shut down seventh-ranked UConn's offense in a 65-56 victory in the Basketball Hall of Fame Women's Showcase.",
-      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50589389/tessa-johnson-career-high-32-spark-south-carolina-uconn",
-      "sport": "Women's college basketball",
-      "published": "2026-11-25T11:06:31.000Z",
-      "firstSeen": "2026-11-25T06:32:34.673Z",
-      "bestRank": 6
+      "key": "50472144",
+      "id": "50472144",
+      "headline": "Max Verstappen admits to 40-hour GTA VI spree as he won Las Vegas GP",
+      "summary": "Max Verstappen claims he had already clocked 40 hours of Grand Theft Auto VI before his brilliant Las Vegas Grand Prix win at the weekend.",
+      "url": "https://www.espn.com/f1/story/_/id/50472144/max-verstappen-gta-vi-las-vegas-grand-prix-formula-1",
+      "sport": "F1",
+      "published": "2026-11-25T11:06:44.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 1
     },
     {
       "key": "50579338",
@@ -310,28 +761,6 @@
       "bestRank": 4
     },
     {
-      "key": "50584038",
-      "id": "50584038",
-      "headline": "NHL Tonight: What to watch in Wednesday's massive 14-game schedule",
-      "summary": "Find game previews, betting intel, broadcast information, stats and highlights here.",
-      "url": "https://www.espn.com/nhl/story/_/id/50584038/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-      "sport": "NHL",
-      "published": "2026-11-25T11:01:51.000Z",
-      "firstSeen": "2026-11-25T12:29:13.143Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50583319",
-      "id": "50583319",
-      "headline": "From practice squad to prime time: A look at Milton's big chance on Thanksgiving",
-      "summary": "Ex-Cowboys QB Milton is set to headline the Eagles' Thanksgiving game, can he make the most of it?",
-      "url": "https://www.espn.com/nfl/story/_/id/50583319/joe-milton-build-momentum-thanksgiving-start-dallas-cowboys",
-      "sport": "NFL",
-      "published": "2026-11-25T11:00:11.000Z",
-      "firstSeen": "2026-11-25T12:29:13.143Z",
-      "bestRank": 7
-    },
-    {
       "key": "50584512",
       "id": "50584512",
       "headline": "Can Vikings' offense win when the defense doesn't dominate?",
@@ -352,6 +781,17 @@
       "published": "2026-11-25T11:00:00.000Z",
       "firstSeen": "2026-11-25T12:29:13.143Z",
       "bestRank": 9
+    },
+    {
+      "key": "50585269",
+      "id": "50585269",
+      "headline": "Why Alexis Lafreniere's breakout brings Rangers hope ... for 2026-27 and beyond",
+      "summary": "The 2020 first overall pick has had ups and downs in his development, but he leveled up this season.",
+      "url": "https://www.espn.com/nhl/story/_/id/50585269/nhl-2026-27-new-york-rangers-alexis-lafreniere-breakout-draft-stats-playoffs",
+      "sport": "NHL",
+      "published": "2026-11-25T10:57:39.000Z",
+      "firstSeen": "2026-11-25T15:21:59.373Z",
+      "bestRank": 1
     },
     {
       "key": "50591549",
@@ -462,17 +902,6 @@
       "published": "2026-11-25T07:42:16.000Z",
       "firstSeen": "2026-11-25T03:25:37.880Z",
       "bestRank": 6
-    },
-    {
-      "key": "50590739",
-      "id": "50590739",
-      "headline": "Geno Auriemma blasts UConn after loss to South Carolina",
-      "summary": "Huskies coach Geno Auriemma oozed with exasperation and said he was searching for answers following his team's latest loss.",
-      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50590739/geno-auriemma-blasts-uconn-loss-south-carolina",
-      "sport": "Women's college basketball",
-      "published": "2026-11-25T07:40:18.000Z",
-      "firstSeen": "2026-11-25T09:23:55.177Z",
-      "bestRank": 1
     },
     {
       "key": "50589698",
@@ -596,28 +1025,6 @@
       "bestRank": 1
     },
     {
-      "key": "50590226",
-      "id": "50590226",
-      "headline": "What SEC Championship contender issues could UGA face for the title?",
-      "summary": "The SEC Now crew dissects possible SEC Championship title obstacles for the shoo-in No. 1 Georgia Bulldogs through analyzing the biggest contenders.",
-      "url": "https://www.espn.com/video/clip/_/id/50590226/what-sec-championship-contender-issues-uga-face-title",
-      "sport": "College football",
-      "published": "2026-11-25T05:45:58.000Z",
-      "firstSeen": "2026-11-25T06:32:34.673Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50590243",
-      "id": "50590243",
-      "headline": "Analyzing the weight of the Louisville vs. UK Week 13 rivalry game",
-      "summary": "The SEC Now crew looks at the significance of a win for the Wildcats with an upcoming rivalry matchup against the No. 19 Cardinals while analyzing their past momentum.",
-      "url": "https://www.espn.com/video/clip/_/id/50590243/analyzing-weight-louisville-vs-uk-week-13-rivalry-game",
-      "sport": "College football",
-      "published": "2026-11-25T05:45:12.000Z",
-      "firstSeen": "2026-11-25T06:32:34.673Z",
-      "bestRank": 1
-    },
-    {
       "key": "50590231",
       "id": "50590231",
       "headline": "Baylor knocks off No. 15 Alabama in Vegas",
@@ -660,17 +1067,6 @@
       "published": "2026-11-25T05:30:37.000Z",
       "firstSeen": "2026-11-19T15:21:54.925Z",
       "bestRank": 1
-    },
-    {
-      "key": "50590117",
-      "id": "50590117",
-      "headline": "What to expect from Week 13's rivalry week slate",
-      "summary": "SEC Network's Matt Stinchcomb and Fozzy Whittaker reminisce on their favorite rivalry week moments as college athletes as they discuss what to expect from Week 13.",
-      "url": "https://www.espn.com/video/clip/_/id/50590117/what-expect-week-13-rivalry-week-slate",
-      "sport": "College football",
-      "published": "2026-11-25T05:25:31.000Z",
-      "firstSeen": "2026-11-25T06:32:34.673Z",
-      "bestRank": 4
     },
     {
       "key": "50590011",
@@ -1278,17 +1674,6 @@
       "bestRank": 41
     },
     {
-      "key": "50582371",
-      "id": "50582371",
-      "headline": "Week 12 Anger Index: Indiana dropped how many spots?!",
-      "summary": "Ranking the teams that should be most upset with the latest CFP rankings.",
-      "url": "https://www.espn.com/college-football/story/_/id/50582371/cfp-ranking-2026-anger-index-week-12",
-      "sport": "College football",
-      "published": "2026-11-25T03:26:20.000Z",
-      "firstSeen": "2026-11-25T03:25:37.880Z",
-      "bestRank": 3
-    },
-    {
       "key": "50589238",
       "id": "50589238",
       "headline": "Natalie Potts scores 28 on 10-of-15 shooting, No. 23 Nebraska women beat Kansas City 100-56",
@@ -1309,17 +1694,6 @@
       "published": "2026-11-25T03:25:01.000Z",
       "firstSeen": "2026-11-25T06:32:34.673Z",
       "bestRank": 10
-    },
-    {
-      "key": "50575185",
-      "id": "50575185",
-      "headline": "Who's on the College Football Playoff bubble after committee's fourth ranking?",
-      "summary": "A conference-by-conference look at which teams are contending for the playoff, who's close and who's out.",
-      "url": "https://www.espn.com/college-football/story/_/id/50575185/cfp-playoff-2026-bubble-watch-week-fourth-ranking",
-      "sport": "College football",
-      "published": "2026-11-25T03:24:30.000Z",
-      "firstSeen": "2026-11-24T12:28:31.792Z",
-      "bestRank": 3
     },
     {
       "key": "50589217",
@@ -2356,17 +2730,6 @@
       "bestRank": 43
     },
     {
-      "key": "50586890",
-      "id": "50586890",
-      "headline": "Jalen Duren to begin rehab assignment in next step to return from injury",
-      "summary": "Pistons center Jalen Duren has taken a significant step toward returning from injury, practicing with the team Tuesday.",
-      "url": "https://www.espn.com/nba/story/_/id/50586890/jalen-duren-begin-rehab-assignment-next-step-return-injury",
-      "sport": "NBA",
-      "published": "2026-11-25T00:33:30.000Z",
-      "firstSeen": "2026-11-25T00:41:59.792Z",
-      "bestRank": 3
-    },
-    {
       "key": "50242145",
       "id": "50242145",
       "headline": "UNC in top 5, Gonzaga, Utah join men's basketball 2027 recruiting class rankings",
@@ -2409,17 +2772,6 @@
       "published": "2026-11-25T00:04:32.000Z",
       "firstSeen": "2026-11-25T06:32:34.673Z",
       "bestRank": 41
-    },
-    {
-      "key": "50587249",
-      "id": "50587249",
-      "headline": "Kawhi Leonard's return from knee swelling still at least week away",
-      "summary": "The Raptors say Kawhi Leonard's status will be revisted in a week as he recovers from knee swelling.",
-      "url": "https://www.espn.com/nba/story/_/id/50587249/kawhi-leonard-return-knee-swelling-least-week-away",
-      "sport": "NBA",
-      "published": "2026-11-25T00:02:36.000Z",
-      "firstSeen": "2026-11-25T00:41:59.792Z",
-      "bestRank": 1
     },
     {
       "key": "50586972",
@@ -2530,17 +2882,6 @@
       "published": "2026-11-24T23:16:16.000Z",
       "firstSeen": "2026-11-25T00:41:59.792Z",
       "bestRank": 4
-    },
-    {
-      "key": "50586638",
-      "id": "50586638",
-      "headline": "Lakers latest in NBA to establish partnership with Kalshi",
-      "summary": "The Lakers on Tuesday announced a partnership with Kalshi, following similar deals announced last month by the 76ers and the league itself.",
-      "url": "https://www.espn.com/nba/story/_/id/50586638/lakers-latest-nba-partnership-kalshi",
-      "sport": "NBA",
-      "published": "2026-11-24T23:11:36.000Z",
-      "firstSeen": "2026-11-25T00:41:59.792Z",
-      "bestRank": 5
     },
     {
       "key": "50586790",
@@ -3500,17 +3841,6 @@
       "bestRank": 27
     },
     {
-      "key": "50028196",
-      "id": "50028196",
-      "headline": "NBA buzz: Latest on trades, news, roster moves and intel for the 2026-27 season",
-      "summary": "NBA basketball is back. The buzz never left. Bookmark this page for the latest news, rumblings and analysis from ESPN's insiders.",
-      "url": "https://www.espn.com/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals",
-      "sport": "NBA",
-      "published": "2026-11-24T18:12:46.000Z",
-      "firstSeen": "2026-09-28T12:44:52.879Z",
-      "bestRank": 1
-    },
-    {
       "key": "50584372",
       "id": "50584372",
       "headline": "Why Mike Clay isn't worried about Jaylen Warren in fantasy",
@@ -3608,17 +3938,6 @@
       "published": "2026-11-24T17:41:04.000Z",
       "firstSeen": "2026-09-09T18:32:12.007Z",
       "bestRank": 1
-    },
-    {
-      "key": "50584000",
-      "id": "50584000",
-      "headline": "Sources: Wolves' Donte DiVincenzo eyes New Year's for season debut",
-      "summary": "The Timberwolves said Donte DiVincenzo has been cleared for basketball activities after Achilles surgery.",
-      "url": "https://www.espn.com/nba/story/_/id/50584000/wolves-dante-divincenzo-cleared-basketball-activities",
-      "sport": "NBA",
-      "published": "2026-11-24T17:38:32.000Z",
-      "firstSeen": "2026-11-24T18:12:29.733Z",
-      "bestRank": 2
     },
     {
       "key": "47809892",
@@ -3883,17 +4202,6 @@
       "published": "2026-11-24T15:41:31.000Z",
       "firstSeen": "2026-10-27T12:42:08.380Z",
       "bestRank": 1
-    },
-    {
-      "key": "50570870",
-      "id": "50570870",
-      "headline": "NFL Week 12 betting odds: Lines and totals for every game",
-      "summary": "Odds, spreads, totals and FPI predictions for every NFL game in Week 12.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50570870/2026-nfl-week-12-schedule-odds-point-spreads-totals",
-      "sport": "NFL",
-      "published": "2026-11-24T15:40:19.000Z",
-      "firstSeen": "2026-11-23T18:23:33.554Z",
-      "bestRank": 11
     },
     {
       "key": "50583096",
@@ -4851,17 +5159,6 @@
       "published": "2026-11-24T03:30:32.000Z",
       "firstSeen": "2026-11-24T06:31:50.670Z",
       "bestRank": 21
-    },
-    {
-      "key": "50577428",
-      "id": "50577428",
-      "headline": "76ers' Joel Embiid (illness) sits out loss to Trail Blazers",
-      "summary": "The 76ers said Joel Embiid will sit out Monday's game against the Trail Blazers because of an illness.",
-      "url": "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
-      "sport": "NBA",
-      "published": "2026-11-24T03:27:49.000Z",
-      "firstSeen": "2026-11-24T00:37:47.356Z",
-      "bestRank": 2
     },
     {
       "key": "50579033",
@@ -6765,17 +7062,6 @@
       "published": "2026-11-23T16:42:31.000Z",
       "firstSeen": "2026-11-23T18:23:33.554Z",
       "bestRank": 7
-    },
-    {
-      "key": "50571004",
-      "id": "50571004",
-      "headline": "Top 25 betting lines: USC favored at UCLA, Texas double-digit faves at Texas A&M",
-      "summary": "This week's odds and FPI predictions for UCLA-USC, Texas A&M-Texas and more.",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50571004/2026-college-football-week-13-top-25-betting-lines-odds",
-      "sport": "College football",
-      "published": "2026-11-23T16:31:17.000Z",
-      "firstSeen": "2026-11-23T18:23:33.554Z",
-      "bestRank": 5
     },
     {
       "key": "50573875",
@@ -32087,17 +32373,6 @@
       "published": "2026-11-16T14:49:42.000Z",
       "firstSeen": "2026-11-16T15:30:17.527Z",
       "bestRank": 8
-    },
-    {
-      "key": "49783645",
-      "id": "49783645",
-      "headline": "Where is 'College GameDay'? 2026 schedule, locations, recaps",
-      "summary": "What is the \"College GameDay\" schedule? Find out more about where the program will be each week of the 2026 college football season.",
-      "url": "https://www.espn.com/college-football/story/_/id/49783645/where-college-gameday-2026-schedule-locations-recaps",
-      "sport": "College football",
-      "published": "2026-11-16T14:25:23.000Z",
-      "firstSeen": "2026-09-01T18:19:52.020Z",
-      "bestRank": 1
     },
     {
       "key": "50498344",
@@ -71194,17 +71469,6 @@
       "bestRank": 1
     },
     {
-      "key": "50389727",
-      "id": "50389727",
-      "headline": "Inside LeBron's first game in Philly -- more than two decades ago",
-      "summary": "Nearly 25 years ago, LeBron won over Philly for the first time -- inside one of the most iconic basketball arenas in the world.",
-      "url": "https://www.espn.com/nba/story/_/id/50389727/lebron-james-palestra-maureece-rice-philadelphia",
-      "sport": "NBA",
-      "published": "2026-11-06T21:20:29.000Z",
-      "firstSeen": "2026-11-06T12:26:41.390Z",
-      "bestRank": 2
-    },
-    {
       "key": "50401575",
       "id": "50401575",
       "headline": "Jessica Pegula: Hot mic comments about Mirra Andreeva an 'unfortunate situation'",
@@ -79772,336 +80036,6 @@
       "published": "2026-11-04T15:23:27.000Z",
       "firstSeen": "2026-11-04T18:22:35.964Z",
       "bestRank": 17
-    },
-    {
-      "key": "50378944",
-      "id": "50378944",
-      "headline": "What does Brandon Aiyuk's application for reinstatement mean for 49ers?",
-      "summary": "What does Brandon Aiyuk's application for reinstatement mean for 49ers?",
-      "url": "https://www.espn.com/video/clip/_/id/50378944/what-does-brandon-aiyuk-application-reinstatement-mean-49ers",
-      "sport": "NFL",
-      "published": "2026-11-04T15:21:04.000Z",
-      "firstSeen": "2026-11-04T15:21:34.032Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50379093",
-      "id": "50379093",
-      "headline": "Where Stephen A., Mad Dog take issue with CFP rankings",
-      "summary": "Where Stephen A., Mad Dog take issue with CFP rankings",
-      "url": "https://www.espn.com/video/clip/_/id/50379093/where-stephen-mad-dog-take-issue-cfp-rankings",
-      "sport": "College football",
-      "published": "2026-11-04T15:19:26.000Z",
-      "firstSeen": "2026-11-04T15:21:34.032Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50370030",
-      "id": "50370030",
-      "headline": "2026 NFL trade deadline: Players to watch, buzz and goals for all 32 teams",
-      "summary": "We outlined deadline plans for all 32 teams, including who could be dealt before 4 p.m. ET on Tuesday. Here's what you need to know.",
-      "url": "https://www.espn.com/nfl/story/_/id/50370030/trade-deadline-team-preview-goals-buzz-players-deals-2026",
-      "sport": "NFL",
-      "published": "2026-11-04T15:12:03.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50372396",
-      "id": "50372396",
-      "headline": "Week 10 Anger Index: Welcome to the sequel, Notre Dame",
-      "summary": "Ranking the five teams who should be most upset with the committee's first CFP rankings.",
-      "url": "https://www.espn.com/college-football/story/_/id/50372396/cfp-2026-anger-index-week-10",
-      "sport": "College football",
-      "published": "2026-11-04T15:10:45.000Z",
-      "firstSeen": "2026-11-04T03:23:15.726Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50377655",
-      "id": "50377655",
-      "headline": "Major hockey worlds sponsors monitoring Russia's inclusion",
-      "summary": "The pressure on the International Ice Hockey Federation has grown as two major sponsors of the men's world championship said they would review their involvement if Russia takes part.",
-      "url": "https://www.espn.com/olympics/hockey/story/_/id/50377655/main-sponsor-hockey-worlds-monitoring-russia-inclusion",
-      "sport": "NHL",
-      "published": "2026-11-04T15:00:08.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50378860",
-      "id": "50378860",
-      "headline": "Charles Leclerc to miss Brazilian Grand Prix media duty due to birth of baby",
-      "summary": "Ferrari's Charles Leclerc will miss media duties ahead of the Brazilian Grand Prix following the birth of his first child.",
-      "url": "https://www.espn.com/f1/story/_/id/50378860/charles-leclerc-brazilian-grand-prix-media-due-baby-birth",
-      "sport": "F1",
-      "published": "2026-11-04T14:52:51.000Z",
-      "firstSeen": "2026-11-04T18:22:35.964Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50378771",
-      "id": "50378771",
-      "headline": "McIlroy: LIV Golf said they wanted to destroy the European Tour",
-      "summary": "McIlroy: LIV Golf said they wanted to destroy the European Tour",
-      "url": "https://www.espn.com/video/clip/_/id/50378771/liv-golf-said-wanted-destroy-european-tour",
-      "sport": "Golf",
-      "published": "2026-11-04T14:39:46.000Z",
-      "firstSeen": "2026-11-04T18:22:35.964Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50378717",
-      "id": "50378717",
-      "headline": "Jordan Love and his wife dress as blind refs for Halloween",
-      "summary": "Jordan Love and his wife dress as blind refs for Halloween",
-      "url": "https://www.espn.com/video/clip/_/id/50378717/jordan-love-wife-dress-blind-refs-halloween",
-      "sport": "NFL",
-      "published": "2026-11-04T14:35:12.000Z",
-      "firstSeen": "2026-11-04T15:21:34.032Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50377159",
-      "id": "50377159",
-      "headline": "Bryant visits Quinnipiac following Harvey's 20-point game",
-      "summary": "Bryant Bulldogs (1-0) at Quinnipiac Bobcats (0-1)",
-      "url": "http://www.espn.com/ncb/preview?gameId=401921680",
-      "sport": "College basketball",
-      "published": "2026-11-04T14:34:49.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50377173",
-      "id": "50377173",
-      "headline": "Mcelrath leads Hampton against SMU after 33-point showing",
-      "summary": "Hampton Lady Pirates (0-1) at SMU Mustangs (1-0)",
-      "url": "http://www.espn.com/ncw/preview?gameId=401915961",
-      "sport": "Women's college basketball",
-      "published": "2026-11-04T14:34:47.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50377153",
-      "id": "50377153",
-      "headline": "Georgia Tech hosts Samford after Walker's 40-point game",
-      "summary": "Samford Bulldogs (1-0) at Georgia Tech Yellow Jackets (1-0)",
-      "url": "http://www.espn.com/ncw/preview?gameId=401913715",
-      "sport": "Women's college basketball",
-      "published": "2026-11-04T14:34:46.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50377175",
-      "id": "50377175",
-      "headline": "UC Irvine Anteaters travel to take on the No. 11 UCLA Bruins",
-      "summary": "UC Irvine Anteaters at UCLA Bruins",
-      "url": "http://www.espn.com/ncw/preview?gameId=401918897",
-      "sport": "Women's college basketball",
-      "published": "2026-11-04T14:34:44.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50377128",
-      "id": "50377128",
-      "headline": "Coastal Carolina faces No. 2 Duke after Perry's 20-point game",
-      "summary": "Coastal Carolina Chanticleers (0-1) at Duke Blue Devils (1-0)",
-      "url": "http://www.espn.com/ncb/preview?gameId=401909563",
-      "sport": "College basketball",
-      "published": "2026-11-04T14:34:43.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 20
-    },
-    {
-      "key": "50377162",
-      "id": "50377162",
-      "headline": "Notre Dame and Mercyhurst square off for non-conference matchup",
-      "summary": "Mercyhurst Lakers (0-1) at Notre Dame Fighting Irish (1-0)",
-      "url": "http://www.espn.com/ncb/preview?gameId=401919823",
-      "sport": "College basketball",
-      "published": "2026-11-04T14:34:42.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50377151",
-      "id": "50377151",
-      "headline": "New Hampshire and Canisius meet for non-conference matchup",
-      "summary": "Canisius Golden Griffins at New Hampshire Wildcats",
-      "url": "http://www.espn.com/ncw/preview?gameId=401913773",
-      "sport": "Women's college basketball",
-      "published": "2026-11-04T14:34:40.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 11
-    },
-    {
-      "key": "50377129",
-      "id": "50377129",
-      "headline": "No. 14 Kentucky plays Northern Kentucky in non-conference action",
-      "summary": "Northern Kentucky Norse (1-0) at Kentucky Wildcats (1-0)",
-      "url": "http://www.espn.com/ncw/preview?gameId=401929059",
-      "sport": "Women's college basketball",
-      "published": "2026-11-04T14:34:39.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 22
-    },
-    {
-      "key": "50370732",
-      "id": "50370732",
-      "headline": "Notre Dame replaces Purdue with series vs. Illinois in '27, '28",
-      "summary": "Notre Dame has replaced Purdue on its future schedules with a home-and-home series against Illinois for the 2027 and 2028 seasons, the schools announced Tuesday.",
-      "url": "https://www.espn.com/college-football/story/_/id/50370732/notre-dame-replaces-purdue-series-vs-illinois-27-28",
-      "sport": "College football",
-      "published": "2026-11-04T14:15:26.000Z",
-      "firstSeen": "2026-11-03T21:22:01.558Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50373576",
-      "id": "50373576",
-      "headline": "Miami, Georgia, Utah, Indiana headline CFP's first rankings release",
-      "summary": "The 8-0 Miami Hurricanes, equipped with two Heisman Trophy contenders in quarterback Darian Mensah and wide receiver Malachi Toney, took the No. 1 spot in the College Football Playoff's first rankings release Tuesday night, followed by Georgia at No. 2.",
-      "url": "https://www.espn.com/college-football/story/_/id/50373576/miami-georgia-utah-indiana-headline-first-cfp-rankings",
-      "sport": "College football",
-      "published": "2026-11-04T14:12:39.000Z",
-      "firstSeen": "2026-11-04T00:38:49.060Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50378427",
-      "id": "50378427",
-      "headline": "Source: Commanders lose another DL with Kinlaw out for season after knee surgery",
-      "summary": "The Commanders lost a second defensive line starter for the season in less than a week as Javon Kinlaw underwent season-ending knee surgery, a source told ESPN's Adam Schefter.",
-      "url": "https://www.espn.com/nfl/story/_/id/50378427/source-commanders-javon-kinlaw-knee-surgery-season",
-      "sport": "NFL",
-      "published": "2026-11-04T14:03:22.000Z",
-      "firstSeen": "2026-11-04T15:21:34.032Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50378612",
-      "id": "50378612",
-      "headline": "Finebaum tries to make sense of CFP rankings",
-      "summary": "Finebaum tries to make sense of CFP rankings",
-      "url": "https://www.espn.com/video/clip/_/id/50378612/finebaum-tries-make-sense-cfp-rankings",
-      "sport": "College football",
-      "published": "2026-11-04T14:01:50.000Z",
-      "firstSeen": "2026-11-04T15:21:34.032Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50370347",
-      "id": "50370347",
-      "headline": "NHL Tonight: Sharks-Kings takes center stage on Wednesday",
-      "summary": "Find game previews, betting intel, broadcast information, stats and highlights here.",
-      "url": "https://www.espn.com/nhl/story/_/id/50370347/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-      "sport": "NHL",
-      "published": "2026-11-04T13:58:12.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50378573",
-      "id": "50378573",
-      "headline": "Nico Collins' Week 9 fantasy preview",
-      "summary": "Nico Collins' Week 9 fantasy preview",
-      "url": "https://www.espn.com/video/clip/_/id/50378573/nico-collins-week-9-fantasy-preview",
-      "sport": "NFL",
-      "published": "2026-11-04T13:53:44.000Z",
-      "firstSeen": "2026-11-04T15:21:34.032Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50360481",
-      "id": "50360481",
-      "headline": "Aaron Glenn says Breece Hall is Jets' starter despite Braelon Allen's emergence",
-      "summary": "Braelon Allen has rushed for the second-most yards behind Bucky Irving in Breece Hall's five-game absence.",
-      "url": "https://www.espn.com/nfl/story/_/id/50360481/jets-breece-hall-starter-braelon-allen",
-      "sport": "NFL",
-      "published": "2026-11-04T13:51:27.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50371604",
-      "id": "50371604",
-      "headline": "NBA Power Rankings: Summing up all 30 teams' starts",
-      "summary": "Here's where all 30 NBA teams rank after two weeks of action, plus the four words used to describe how each team has started the season.",
-      "url": "https://www.espn.com/nba/story/_/id/50371604/nba-power-rankings-30-teams-rank-week-two-describe-season",
-      "sport": "NBA",
-      "published": "2026-11-04T13:48:31.000Z",
-      "firstSeen": "2026-11-04T12:26:18.848Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50378091",
-      "id": "50378091",
-      "headline": "Man United fans throwing tennis balls is part of soccer's rich history of supporter protests",
-      "summary": "After Manchester United's match was disrupted by tennis balls thrown onto the pitch, here are some of the various ways fans have made themselves heard.",
-      "url": "https://www.espn.com/soccer/story/_/id/50378091/man-united-fans-tennis-balls-soccer-history-supporter-protests",
-      "sport": "Soccer",
-      "published": "2026-11-04T13:45:44.000Z",
-      "firstSeen": "2026-11-04T15:21:34.032Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50378134",
-      "id": "50378134",
-      "headline": "Sources: Ravens QB Huntley (turf toe) to miss rest of 2026 season",
-      "summary": "Tests revealed that Ravens quarterback Tyler \"Snoop\" Huntley suffered a season-ending turf toe injury, sources told ESPN and NFL Network.",
-      "url": "https://www.espn.com/nfl/story/_/id/50378134/sources-ravens-qb-tyler-snoop-huntley-season",
-      "sport": "NFL",
-      "published": "2026-11-04T13:45:06.000Z",
-      "firstSeen": "2026-11-04T15:21:34.032Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50373951",
-      "id": "50373951",
-      "headline": "Ex-NFL QB Russell Wilson interviews with NC State for head coaching job",
-      "summary": "Russell Wilson interviewed for the head coaching job at NC State on Tuesday, joining Philip Rivers as prominent candidates, sources told ESPN.",
-      "url": "https://www.espn.com/college-football/story/_/id/50373951/russell-wilson-interviews-nc-state-head-coaching-job",
-      "sport": "College football",
-      "published": "2026-11-04T13:14:40.000Z",
-      "firstSeen": "2026-11-04T03:23:15.726Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50361243",
-      "id": "50361243",
-      "headline": "Bednar, Suzuki, Arozarena among eight to get qualifying offers",
-      "summary": "Eight players received $23.15 million qualifying offers from their teams Monday.",
-      "url": "https://www.espn.com/mlb/story/_/id/50361243/mlb-qualifying-offers-bednar-suzuki-arozarena-more",
-      "sport": "MLB",
-      "published": "2026-11-04T12:58:53.000Z",
-      "firstSeen": "2026-11-03T00:39:43.552Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50378108",
-      "id": "50378108",
-      "headline": "Cole Palmer should have been sent off for Mateus Fernandes clash - KMI panel",
-      "summary": "Cole Palmer should have been sent off for Chelsea against Tottenham 10 minutes before he actually was, according to a panel which assesses the decisions of Premier League referees and VARs.",
-      "url": "https://www.espn.com/soccer/story/_/id/50378108/cole-palmer-sent-mateus-fernandes-clash-kmi-panel",
-      "sport": "Soccer",
-      "published": "2026-11-04T12:33:15.000Z",
-      "firstSeen": "2026-11-04T15:21:34.032Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50375586",
-      "id": "50375586",
-      "headline": "Jets wipe out Canadiens in OT with record-setting comeback",
-      "summary": "Dylan Samberg scored in overtime as the Winnipeg Jets snapped a nine-game losing streak by storming back from a four-goal deficit to beat the Montreal Canadiens 5-4 on Tuesday night.",
-      "url": "https://www.espn.com/nhl/story/_/id/50375586/jets-beat-canadiens-ot-latest-four-goal-comeback-nhl-history",
-      "sport": "NHL",
-      "published": "2026-11-04T12:30:53.000Z",
-      "firstSeen": "2026-11-04T06:29:49.827Z",
-      "bestRank": 9
     }
   ]
 }
