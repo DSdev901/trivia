@@ -1528,7 +1528,7 @@ export async function speakLines(lines, opts = {}) {
 
 export function voiceQualityTip(rankedVoices) {
   if (getSavedVoiceUri() === KOKORO_VOICE_URI) {
-    return `${KOKORO_VOICE_LABEL} plays recorded clips where available (Lord of the Rings Movies so far); other sections use this device’s best voice.`;
+    return `${KOKORO_VOICE_LABEL} plays recorded clips where available (Lord of the Rings Movies and Presidential Knowledge so far); other sections use this device’s best voice.`;
   }
   if (getSavedVoiceUri() === NATURAL_VOICE_URI) {
     return isIOSWebKit()
