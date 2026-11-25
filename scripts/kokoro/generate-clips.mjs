@@ -66,7 +66,7 @@ function linesForPresidents(h) {
   const cat = readJson("data/categories.json").categories.find((c) => c.id === "presidents");
   const pages = [];
   for (const b of cat.batches || []) {
-    const batch = readJson(cat.batchPath.replace("{n}", String(b.n)));
+    const batch = readJson(cat.batchPath.replace("{n}", pad2(b.n)));
     pages.push(batch.presidents.map((p) => h.toPresidentRosterSpeech(p)));
     for (const p of batch.presidents) {
       pages.push(p.trivia.map((fact, i) => h.toConversationalSpeech(p, fact, i + 1)));
