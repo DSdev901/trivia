@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-11-26T06:32:27.884Z",
+  "generatedAt": "2026-11-26T09:23:43.242Z",
   "retentionDays": 21,
-  "windowStart": "2026-11-05T06:32:27.884Z",
-  "windowEnd": "2026-11-26T06:32:27.884Z",
+  "windowStart": "2026-11-05T09:23:43.242Z",
+  "windowEnd": "2026-11-26T09:23:43.242Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,404 @@
     "Tennis",
     "MMA"
   ],
-  "count": 7418,
+  "count": 7436,
   "items": [
+    {
+      "key": "50602828",
+      "id": "50602828",
+      "headline": "Maple Leafs take on the Bruins in Atlantic Division action",
+      "summary": "Toronto Maple Leafs (9-14-3, in the Atlantic Division) vs. Boston Bruins (15-8-1, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892795",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:48.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50602827",
+      "id": "50602827",
+      "headline": "Golden Knights take on the Sharks after Connelly's 2-goal showing",
+      "summary": "Vegas Golden Knights (15-6-5, in the Pacific Division) vs. San Jose Sharks (11-14-2, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892805",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:47.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50602826",
+      "id": "50602826",
+      "headline": "Oilers bring 4-game losing streak into matchup against the Kraken",
+      "summary": "Seattle Kraken (11-10-1, in the Pacific Division) vs. Edmonton Oilers (17-6-4, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892809",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:46.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50602825",
+      "id": "50602825",
+      "headline": "Devils host the Flames after shootout victory",
+      "summary": "Calgary Flames (11-13-2, in the Pacific Division) vs. New Jersey Devils (17-8, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892796",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:45.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50602824",
+      "id": "50602824",
+      "headline": "Ducks play the Kings after Killorn's 2-goal showing",
+      "summary": "Los Angeles Kings (8-12-2, in the Pacific Division) vs. Anaheim Ducks (12-13-1, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892804",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:44.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50602823",
+      "id": "50602823",
+      "headline": "Predators try to extend home win streak, face the Mammoth",
+      "summary": "Utah Mammoth (13-10-3, in the Central Division) vs. Nashville Predators (13-6-5, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892797",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:42.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50602822",
+      "id": "50602822",
+      "headline": "Chicago hosts New York following Kantserov's 2-goal game",
+      "summary": "New York Rangers (13-10-1, in the Metropolitan Division) vs. Chicago Blackhawks (9-14-2, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892806",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:41.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50602821",
+      "id": "50602821",
+      "headline": "Red Wings visit the Blue Jackets after Finnie's 2-goal game",
+      "summary": "Detroit Red Wings (9-12-3, in the Atlantic Division) vs. Columbus Blue Jackets (9-13-1, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892802",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:40.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50602820",
+      "id": "50602820",
+      "headline": "Penguins take losing streak into game against the Sabres",
+      "summary": "Pittsburgh Penguins (7-15-2, in the Metropolitan Division) vs. Buffalo Sabres (11-10-4, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892808",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:39.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50602819",
+      "id": "50602819",
+      "headline": "St. Louis takes on Dallas, looks to extend home win streak",
+      "summary": "Dallas Stars (15-7-2, in the Central Division) vs. St. Louis Blues (13-9-3, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892798",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:38.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50602818",
+      "id": "50602818",
+      "headline": "Avalanche visit the Wild after Toews' 2-goal game",
+      "summary": "Colorado Avalanche (14-7-3, in the Central Division) vs. Minnesota Wild (18-4-5, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892803",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:37.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50602817",
+      "id": "50602817",
+      "headline": "New York takes on Winnipeg following shootout win",
+      "summary": "Winnipeg Jets (13-9-4, in the Central Division) vs. New York Islanders (12-7-5, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892807",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:35.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50602816",
+      "id": "50602816",
+      "headline": "Florida visits Washington in Eastern Conference action",
+      "summary": "Florida Panthers (14-8-3, in the Atlantic Division) vs. Washington Capitals (11-11, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892801",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:34.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50602815",
+      "id": "50602815",
+      "headline": "Philadelphia and Vancouver square off for non-conference matchup",
+      "summary": "Vancouver Canucks (6-20-1, in the Pacific Division) vs. Philadelphia Flyers (9-12-6, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892800",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:33.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50602814",
+      "id": "50602814",
+      "headline": "Atlantic Division foes meet when Tampa Bay hosts Ottawa",
+      "summary": "Ottawa Senators (16-7-3, in the Atlantic Division) vs. Tampa Bay Lightning (15-7-2, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892799",
+      "sport": "NHL",
+      "published": "2026-11-26T09:11:32.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50602698",
+      "id": "50602698",
+      "headline": "Transfer rumors, news: Barcelona among clubs eyeing Man United's Ayden Heaven",
+      "summary": "Barcelona are interested in a loan move for Manchester United defender Ayden Heaven. Transfer Talk has the latest.",
+      "url": "https://www.espn.com/soccer/story/_/id/50602698/transfer-rumors-news-manchester-united-barcelona-heaven",
+      "sport": "Soccer",
+      "published": "2026-11-26T08:57:49.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50602713",
+      "id": "50602713",
+      "headline": "Saint Louis holds off Stanford 66-64 in 3rd-place game of Acrisure Series",
+      "summary": "— Amari McCottry scored 19 points and Saint Louis held off Stanford 66-64 on Wednesday night in the third-place game of the Pod 2 Acrisure Series.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401921672",
+      "sport": "College basketball",
+      "published": "2026-11-26T08:34:32.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50602708",
+      "id": "50602708",
+      "headline": "Dengdit and Hawaii win 83-81 in OT against Incarnate Word",
+      "summary": "— Bol Dengdit scored 24 points and Jaden Matingou added five in overtime as Hawaii knocked off Incarnate Word 83-81 on Wednesday.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401929005",
+      "sport": "College basketball",
+      "published": "2026-11-26T08:32:32.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50602564",
+      "id": "50602564",
+      "headline": "Packers' Parsons calls for accountability after Rams run wild",
+      "summary": "\"That wasn't a championship attitude, competitiveness, drive,\" Micah Parsons said of Green Bay allowing the Rams to rush for a season-high 241 yards.",
+      "url": "https://www.espn.com/nfl/story/_/id/50602564/packers-micah-parsons-accountability-rams-return",
+      "sport": "NFL",
+      "published": "2026-11-26T08:31:09.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50602703",
+      "id": "50602703",
+      "headline": "Colorado State blows 27-point halftime lead before McIver tops Clemson with last-second bucket 77-75",
+      "summary": "— Jojo McIver scored his only points of the game at the buzzer to give Colorado State a 77-75 win over Clemson after the Rams had blown a 27-point halftime lead in the...",
+      "url": "http://www.espn.com/ncb/recap?gameId=401921714",
+      "sport": "College basketball",
+      "published": "2026-11-26T08:27:38.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50602630",
+      "id": "50602630",
+      "headline": "Clemson Tigers vs. Colorado State Rams: Game Highlights",
+      "summary": "Clemson Tigers vs. Colorado State Rams: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50602630/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-26T08:04:03.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 4
+    },
+    {
+      "key": "49577473",
+      "id": "49577473",
+      "headline": "2026 NBA Cup: Schedule, format, groups, updates and more",
+      "summary": "Here's everything you need to know about the fourth annual in-season tournament, including the recent wins from the Pacers and the Spurs.",
+      "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
+      "sport": "NBA",
+      "published": "2026-11-26T07:44:40.000Z",
+      "firstSeen": "2026-10-30T12:31:12.438Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50513465",
+      "id": "50513465",
+      "headline": "Tuesday's Feast Week highlights include South Carolina, Virginia Tech wins",
+      "summary": "The top nonconference matchups over the next 11 days also include South Carolina-UConn and a trio of USC contests.",
+      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50513465/2026-womens-feast-week-thanksgiving-tournament-schedule",
+      "sport": "Women's college basketball",
+      "published": "2026-11-26T07:42:26.000Z",
+      "firstSeen": "2026-11-19T15:21:54.925Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50592994",
+      "id": "50592994",
+      "headline": "Viktor Gyökeres: Arsenal not wasting energy on Man City's possible sanctions",
+      "summary": "Viktor Gyökeres said Arsenal cannot afford to waste any energy on Manchester City's possible sanctions -- as he vowed to deliver back-to-back Premier League titles for the Gunners.",
+      "url": "https://www.espn.com/soccer/story/_/id/50592994/viktor-gyokeres-arsenal-premier-league-manchester-city",
+      "sport": "Soccer",
+      "published": "2026-11-26T07:22:52.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50602497",
+      "id": "50602497",
+      "headline": "Clippers host Pelicans Friday for NBA Cup group stage game",
+      "summary": "New Orleans Pelicans (5-14, 12th in the Western Conference) vs. Los Angeles Clippers (4-13, 13th in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909335",
+      "sport": "NBA",
+      "published": "2026-11-26T07:03:44.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50602496",
+      "id": "50602496",
+      "headline": "Nuggets visit Jazz Friday in NBA Cup group stage",
+      "summary": "Denver Nuggets (10-6, seventh in the Western Conference) vs. Utah Jazz (3-16, 14th in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909334",
+      "sport": "NBA",
+      "published": "2026-11-26T07:03:43.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50602495",
+      "id": "50602495",
+      "headline": "76ers visit Pacers Friday in NBA Cup group stage",
+      "summary": "Philadelphia 76ers (15-4, first in the Eastern Conference) vs. Indiana Pacers (6-12, 12th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909328",
+      "sport": "NBA",
+      "published": "2026-11-26T07:03:41.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50602494",
+      "id": "50602494",
+      "headline": "Warriors visit Trail Blazers Friday in NBA Cup group stage",
+      "summary": "Golden State Warriors (10-8, ninth in the Western Conference) vs. Portland Trail Blazers (11-6, sixth in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909336",
+      "sport": "NBA",
+      "published": "2026-11-26T07:03:40.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50602493",
+      "id": "50602493",
+      "headline": "Raptors and Nets meet Friday in NBA Cup group stage",
+      "summary": "Brooklyn Nets (4-13, 14th in the Eastern Conference) vs. Toronto Raptors (6-11, 10th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909329",
+      "sport": "NBA",
+      "published": "2026-11-26T07:03:39.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50602492",
+      "id": "50602492",
+      "headline": "Timberwolves and Grizzlies meet Friday in NBA Cup group stage",
+      "summary": "Memphis Grizzlies (14-5, fifth in the Western Conference) vs. Minnesota Timberwolves (14-5, third in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909331",
+      "sport": "NBA",
+      "published": "2026-11-26T07:03:38.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50602491",
+      "id": "50602491",
+      "headline": "Knicks and Heat meet Friday in NBA Cup group stage",
+      "summary": "Miami Heat (10-7, sixth in the Eastern Conference) vs. New York Knicks (12-6, third in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909326",
+      "sport": "NBA",
+      "published": "2026-11-26T07:03:37.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50602490",
+      "id": "50602490",
+      "headline": "Celtics host Hawks Friday for NBA Cup group stage matchup",
+      "summary": "Atlanta Hawks (11-6, fourth in the Eastern Conference) vs. Boston Celtics (12-6, second in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909330",
+      "sport": "NBA",
+      "published": "2026-11-26T07:03:36.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50602489",
+      "id": "50602489",
+      "headline": "Lakers visit Spurs Friday in NBA Cup group stage",
+      "summary": "Los Angeles Lakers (15-3, first in the Western Conference) vs. San Antonio Spurs (15-3, second in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909333",
+      "sport": "NBA",
+      "published": "2026-11-26T07:03:34.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50602488",
+      "id": "50602488",
+      "headline": "Mavericks visit Suns Friday in NBA Cup group stage",
+      "summary": "Dallas Mavericks (11-7, eighth in the Western Conference) vs. Phoenix Suns (9-8, 10th in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909332",
+      "sport": "NBA",
+      "published": "2026-11-26T07:03:33.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50602487",
+      "id": "50602487",
+      "headline": "Bucks visit Pistons Friday in NBA Cup group stage",
+      "summary": "Milwaukee Bucks (2-17, 15th in the Eastern Conference) vs. Detroit Pistons (11-6, fifth in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401909327",
+      "sport": "NBA",
+      "published": "2026-11-26T07:03:32.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50602461",
+      "id": "50602461",
+      "headline": "Horner’s 22 lead Jacksonville State over Pacific 83-76",
+      "summary": "— Leon Horner scored 22 points as Jacksonville State beat Pacific 83-76 on Wednesday.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401917544",
+      "sport": "College basketball",
+      "published": "2026-11-26T06:56:32.000Z",
+      "firstSeen": "2026-11-26T09:23:43.242Z",
+      "bestRank": 5
+    },
     {
       "key": "50600753",
       "id": "50600753",
@@ -30,9 +426,20 @@
       "summary": "Rams safety Kam Kinchens was ejected for a hit along the sideline that left Packers wide receiver Christian Watson with a concussion Wednesday night.",
       "url": "https://www.espn.com/nfl/story/_/id/50600753/rams-kam-kinchens-ejected-hit-christian-watson",
       "sport": "NFL",
-      "published": "2026-11-26T06:23:47.000Z",
+      "published": "2026-11-26T06:56:07.000Z",
       "firstSeen": "2026-11-26T03:24:42.153Z",
       "bestRank": 1
+    },
+    {
+      "key": "50601981",
+      "id": "50601981",
+      "headline": "Toews scores 2 quick goals in 2nd period, Blackwood sharp in net as Avalanche beat Canadiens 6-0",
+      "summary": "— Devon Toews scored twice in a 1:33 span during the second period, Mackenzie Blackwood stopped 28 shots and the refreshed Colorado Avalanche beat the...",
+      "url": "http://www.espn.com/nhl/recap?gameId=401892792",
+      "sport": "NHL",
+      "published": "2026-11-26T06:41:32.000Z",
+      "firstSeen": "2026-11-26T06:32:27.884Z",
+      "bestRank": 9
     },
     {
       "key": "50602284",
@@ -66,17 +473,6 @@
       "published": "2026-11-26T06:07:27.000Z",
       "firstSeen": "2026-11-26T06:32:27.884Z",
       "bestRank": 3
-    },
-    {
-      "key": "49577473",
-      "id": "49577473",
-      "headline": "2026 NBA Cup: Schedule, format, groups, updates and more",
-      "summary": "Here's everything you need to know about the fourth annual in-season tournament, including the recent wins from the Pacers and the Spurs.",
-      "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
-      "sport": "NBA",
-      "published": "2026-11-26T06:04:21.000Z",
-      "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 2
     },
     {
       "key": "50602219",
@@ -262,17 +658,6 @@
       "url": "https://www.espn.com/mens-college-basketball/story/_/id/50601823/hurley-believes-uconn-duke-showdown-deserved-draw-sold-crowd",
       "sport": "College basketball",
       "published": "2026-11-26T05:30:04.000Z",
-      "firstSeen": "2026-11-26T06:32:27.884Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50601981",
-      "id": "50601981",
-      "headline": "Toews scores 2 quick goals in 2nd period, Blackwood sharp in net as Avalanche beat Canadiens 6-0",
-      "summary": "— Devon Toews scored twice in a 1:33 span during the second period, Mackenzie Blackwood stopped 27 shots and the refreshed Colorado Avalanche beat the...",
-      "url": "http://www.espn.com/nhl/recap?gameId=401892792",
-      "sport": "NHL",
-      "published": "2026-11-26T05:29:33.000Z",
       "firstSeen": "2026-11-26T06:32:27.884Z",
       "bestRank": 9
     },
@@ -605,17 +990,6 @@
       "published": "2026-11-26T03:45:31.000Z",
       "firstSeen": "2026-11-26T06:32:27.884Z",
       "bestRank": 16
-    },
-    {
-      "key": "50513465",
-      "id": "50513465",
-      "headline": "Tuesday's Feast Week highlights include South Carolina, Virginia Tech wins",
-      "summary": "The top nonconference matchups over the next 11 days also include South Carolina-UConn and a trio of USC contests.",
-      "url": "https://www.espn.com/womens-college-basketball/story/_/id/50513465/2026-womens-feast-week-thanksgiving-tournament-schedule",
-      "sport": "Women's college basketball",
-      "published": "2026-11-26T03:45:10.000Z",
-      "firstSeen": "2026-11-19T15:21:54.925Z",
-      "bestRank": 1
     },
     {
       "key": "50597989",
@@ -81444,182 +81818,6 @@
       "published": "2026-11-05T09:24:08.000Z",
       "firstSeen": "2026-11-05T12:27:10.366Z",
       "bestRank": 2
-    },
-    {
-      "key": "50386691",
-      "id": "50386691",
-      "headline": "Sharks take losing streak into game against the Wild",
-      "summary": "San Jose Sharks (7-9-1, in the Pacific Division) vs. Minnesota Wild (11-3-3, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892660",
-      "sport": "NHL",
-      "published": "2026-11-05T09:11:36.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50386690",
-      "id": "50386690",
-      "headline": "Blackhawks take losing streak into matchup with the Lightning",
-      "summary": "Chicago Blackhawks (4-11-1, in the Central Division) vs. Tampa Bay Lightning (9-3-2, in the Atlantic Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892650",
-      "sport": "NHL",
-      "published": "2026-11-05T09:11:34.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50385918",
-      "id": "50385918",
-      "headline": "Klay Thompson hits winning 3 with a second left in OT as Heat rally past skidding Clippers 117-116",
-      "summary": "— Klay Thompson made the winning 3-pointer with a second left in overtime and the Miami Heat rallied past the reeling Los Angeles Clippers 117-116 on Wednesday night.",
-      "url": "http://www.espn.com/nba/recap?gameId=401909935",
-      "sport": "NBA",
-      "published": "2026-11-05T07:19:40.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 13
-    },
-    {
-      "key": "50385967",
-      "id": "50385967",
-      "headline": "Suns take on the Magic on 4-game skid",
-      "summary": "Orlando Magic (2-5, 12th in the Eastern Conference) vs. Phoenix Suns (1-5, 12th in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909936",
-      "sport": "NBA",
-      "published": "2026-11-05T07:03:42.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50385966",
-      "id": "50385966",
-      "headline": "Trail Blazers visit Lakers Friday in NBA Cup group stage",
-      "summary": "Portland Trail Blazers (6-1, first in the Western Conference) vs. Los Angeles Lakers (7-2, second in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909294",
-      "sport": "NBA",
-      "published": "2026-11-05T07:03:41.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50385965",
-      "id": "50385965",
-      "headline": "Bucks and Raptors meet Friday in NBA Cup group stage",
-      "summary": "Toronto Raptors (4-4, fifth in the Eastern Conference) vs. Milwaukee Bucks (1-7, 15th in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909292",
-      "sport": "NBA",
-      "published": "2026-11-05T07:03:40.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50385964",
-      "id": "50385964",
-      "headline": "Golden State takes on Miami, looks for 6th straight win",
-      "summary": "Miami Heat (2-5, ninth in the Eastern Conference) vs. Golden State Warriors (5-3, eighth in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909937",
-      "sport": "NBA",
-      "published": "2026-11-05T07:03:39.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50385963",
-      "id": "50385963",
-      "headline": "Timberwolves visit Pelicans Friday in NBA Cup group stage",
-      "summary": "Minnesota Timberwolves (6-3, seventh in the Western Conference) vs. New Orleans Pelicans (4-4, 10th in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909293",
-      "sport": "NBA",
-      "published": "2026-11-05T07:03:38.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50385962",
-      "id": "50385962",
-      "headline": "Mavericks host Jazz Friday for NBA Cup group stage game",
-      "summary": "Utah Jazz (1-7, 15th in the Western Conference) vs. Dallas Mavericks (4-4, 11th in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909290",
-      "sport": "NBA",
-      "published": "2026-11-05T07:03:37.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50385961",
-      "id": "50385961",
-      "headline": "Kings and Spurs meet Friday in NBA Cup group stage",
-      "summary": "San Antonio Spurs (6-2, fifth in the Western Conference) vs. Sacramento Kings (1-7, 14th in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909295",
-      "sport": "NBA",
-      "published": "2026-11-05T07:03:35.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50385960",
-      "id": "50385960",
-      "headline": "Hornets and Celtics meet Friday in NBA Cup group stage",
-      "summary": "Boston Celtics (6-2, third in the Eastern Conference) vs. Charlotte Hornets (3-6, 10th in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909288",
-      "sport": "NBA",
-      "published": "2026-11-05T07:03:34.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50385951",
-      "id": "50385951",
-      "headline": "76ers visit Cavaliers Friday in NBA Cup group stage",
-      "summary": "Philadelphia 76ers (8-1, first in the Eastern Conference) vs. Cleveland Cavaliers (4-4, sixth in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909289",
-      "sport": "NBA",
-      "published": "2026-11-05T07:02:46.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50385949",
-      "id": "50385949",
-      "headline": "Grizzlies and Thunder meet Friday in NBA Cup group stage",
-      "summary": "Oklahoma City Thunder (6-2, fourth in the Western Conference) vs. Memphis Grizzlies (6-2, sixth in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909291",
-      "sport": "NBA",
-      "published": "2026-11-05T07:02:45.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 11
-    },
-    {
-      "key": "50385944",
-      "id": "50385944",
-      "headline": "Hawks host Wizards Friday for NBA Cup group stage matchup",
-      "summary": "Washington Wizards (4-4, seventh in the Eastern Conference) vs. Atlanta Hawks (5-4, fourth in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909287",
-      "sport": "NBA",
-      "published": "2026-11-05T07:02:43.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50385864",
-      "id": "50385864",
-      "headline": "Miami Heat vs. LA Clippers: Game Highlights",
-      "summary": "Miami Heat vs. LA Clippers: Game Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50385864/game-highlights",
-      "sport": "NBA",
-      "published": "2026-11-05T06:50:05.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 14
-    },
-    {
-      "key": "50385858",
-      "id": "50385858",
-      "headline": "Shaq on Wemby's big night: 'We've never seen a player like him'",
-      "summary": "Shaq on Wemby's big night: 'We've never seen a player like him'",
-      "url": "https://www.espn.com/video/clip/_/id/50385858/never-seen-player-him",
-      "sport": "NBA",
-      "published": "2026-11-05T06:40:44.000Z",
-      "firstSeen": "2026-11-05T09:22:47.679Z",
-      "bestRank": 15
     }
   ]
 }
