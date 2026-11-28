@@ -1,9 +1,9 @@
 {
   "source": "ESPN",
-  "generatedAt": "2026-11-28T06:29:42.655Z",
+  "generatedAt": "2026-11-28T09:21:33.803Z",
   "retentionDays": 21,
-  "windowStart": "2026-11-07T06:29:42.655Z",
-  "windowEnd": "2026-11-28T06:29:42.655Z",
+  "windowStart": "2026-11-07T09:21:33.803Z",
+  "windowEnd": "2026-11-28T09:21:33.803Z",
   "snapshotIntervalHours": 3,
   "configuredLeagues": [
     "NFL",
@@ -21,8 +21,415 @@
     "Tennis",
     "MMA"
   ],
-  "count": 7167,
+  "count": 7182,
   "items": [
+    {
+      "key": "50619946",
+      "id": "50619946",
+      "headline": "Canucks take losing streak into game against the Bruins",
+      "summary": "Vancouver Canucks (6-21-1, in the Pacific Division) vs. Boston Bruins (15-9-1, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892824",
+      "sport": "NHL",
+      "published": "2026-11-28T09:11:45.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50619945",
+      "id": "50619945",
+      "headline": "Rangers bring 3-game losing streak into matchup against the Flames",
+      "summary": "Calgary Flames (11-14-2, in the Pacific Division) vs. New York Rangers (13-11-1, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892814",
+      "sport": "NHL",
+      "published": "2026-11-28T09:11:44.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50619944",
+      "id": "50619944",
+      "headline": "Tampa Bay takes losing streak into matchup with Florida",
+      "summary": "Tampa Bay Lightning (15-8-2, in the Atlantic Division) vs. Florida Panthers (15-8-3, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892811",
+      "sport": "NHL",
+      "published": "2026-11-28T09:11:43.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50619943",
+      "id": "50619943",
+      "headline": "Detroit and Nashville hit the ice in non-conference matchup",
+      "summary": "Nashville Predators (13-6-6, in the Central Division) vs. Detroit Red Wings (10-12-3, in the Atlantic Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892812",
+      "sport": "NHL",
+      "published": "2026-11-28T09:11:42.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50619942",
+      "id": "50619942",
+      "headline": "Maple Leafs visit the Penguins after Rielly's 2-goal game",
+      "summary": "Toronto Maple Leafs (10-14-3, in the Atlantic Division) vs. Pittsburgh Penguins (8-15-2, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892815",
+      "sport": "NHL",
+      "published": "2026-11-28T09:11:41.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50619940",
+      "id": "50619940",
+      "headline": "St. Louis plays Washington after Holloway's 2-goal game",
+      "summary": "Washington Capitals (11-12, in the Metropolitan Division) vs. St. Louis Blues (14-9-3, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892817",
+      "sport": "NHL",
+      "published": "2026-11-28T09:11:39.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50619939",
+      "id": "50619939",
+      "headline": "Mammoth take on the Stars after Lee's 2-goal game",
+      "summary": "Utah Mammoth (14-10-3, in the Central Division) vs. Dallas Stars (15-8-2, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892819",
+      "sport": "NHL",
+      "published": "2026-11-28T09:11:38.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50619938",
+      "id": "50619938",
+      "headline": "Islanders take on the Flyers in Metropolitan Division action",
+      "summary": "New York Islanders (12-8-5, in the Metropolitan Division) vs. Philadelphia Flyers (10-12-6, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892818",
+      "sport": "NHL",
+      "published": "2026-11-28T09:11:37.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50619937",
+      "id": "50619937",
+      "headline": "Colorado in action against San Jose after shootout win",
+      "summary": "San Jose Sharks (12-14-2, in the Pacific Division) vs. Colorado Avalanche (15-7-3, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892820",
+      "sport": "NHL",
+      "published": "2026-11-28T09:11:36.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50619936",
+      "id": "50619936",
+      "headline": "Winnipeg brings 3-game win streak into matchup with New Jersey",
+      "summary": "Winnipeg Jets (14-9-4, in the Central Division) vs. New Jersey Devils (18-8, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892813",
+      "sport": "NHL",
+      "published": "2026-11-28T09:11:34.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50619935",
+      "id": "50619935",
+      "headline": "Hurricanes bring win streak into matchup with the Senators",
+      "summary": "Ottawa Senators (17-7-3, in the Atlantic Division) vs. Carolina Hurricanes (19-3-3, in the Metropolitan Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892816",
+      "sport": "NHL",
+      "published": "2026-11-28T09:11:33.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50619934",
+      "id": "50619934",
+      "headline": "Canadiens bring losing streak into game against the Golden Knights",
+      "summary": "Montreal Canadiens (14-8-4, in the Atlantic Division) vs. Vegas Golden Knights (15-7-5, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892810",
+      "sport": "NHL",
+      "published": "2026-11-28T09:11:32.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50619933",
+      "id": "50619933",
+      "headline": "Kraken take on the Oilers following Kakko's 2-goal showing",
+      "summary": "Edmonton Oilers (17-7-4, in the Pacific Division) vs. Seattle Kraken (12-10-1, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892822",
+      "sport": "NHL",
+      "published": "2026-11-28T09:10:48.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50619932",
+      "id": "50619932",
+      "headline": "Blackhawks host the Wild after Mangiapane's 2-goal game",
+      "summary": "Minnesota Wild (18-4-6, in the Central Division) vs. Chicago Blackhawks (10-14-2, in the Central Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892823",
+      "sport": "NHL",
+      "published": "2026-11-28T09:10:47.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 14
+    },
+    {
+      "key": "50619931",
+      "id": "50619931",
+      "headline": "Anaheim visits Los Angeles after Solberg's 2-goal game",
+      "summary": "Anaheim Ducks (12-14-1, in the Pacific Division) vs. Los Angeles Kings (9-12-2, in the Pacific Division)",
+      "url": "http://www.espn.com/nhl/preview?gameId=401892821",
+      "sport": "NHL",
+      "published": "2026-11-28T09:10:46.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 15
+    },
+    {
+      "key": "50619813",
+      "id": "50619813",
+      "headline": "No. 5 Texas Tech holds off San Diego State 78-75 for fifth in Players Era bracket",
+      "summary": "— Donovan Atwell made two free throws with 3 seconds left and Darrion Williams came up with a steal on the final possession as No. 5 Texas Tech held off San Diego State 78-75 on Friday night in a fifth-place game at the Players Era 16 tournament.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401920535",
+      "sport": "College basketball",
+      "published": "2026-11-28T08:06:32.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50619658",
+      "id": "50619658",
+      "headline": "Lakers' Luka Doncic has altercation with fan after NBA Cup loss to Spurs",
+      "summary": "Lakers star Luka Doncic was shoved by a fan following Friday's loss to the Spurs in a brief altercation that he chalked up as a postgame ritual gone awry.",
+      "url": "https://www.espn.com/nba/story/_/id/50619658/lakers-luka-doncic-altercation-fan-loss-spurs",
+      "sport": "NBA",
+      "published": "2026-11-28T07:35:17.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50619428",
+      "id": "50619428",
+      "headline": "Pope booed off floor at Rupp as Wichita State shocks 4-3 Kentucky",
+      "summary": "Kentucky coach Mark Pope was realistic about his struggling Wildcats on Friday, telling reporters that \"we clearly have areas where we need to get better,\" after his team lost to Wichita State, 73-71, in overtime at Rupp Arena, a second consecutive loss.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50619428/pope-booed-rupp-floor-wichita-state-stuns-kentucky",
+      "sport": "College basketball",
+      "published": "2026-11-28T07:31:00.000Z",
+      "firstSeen": "2026-11-28T06:29:42.655Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50575102",
+      "id": "50575102",
+      "headline": "Men's Feast Week guide: Breaking down Friday's biggest games",
+      "summary": "Miami vs. TCU and Texas Tech vs. Louisville at the Players Era 16 are among the biggest games on Tuesday.",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50575102/feast-week-matchups-analysis",
+      "sport": "College basketball",
+      "published": "2026-11-28T07:30:08.000Z",
+      "firstSeen": "2026-11-24T15:21:53.078Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50618515",
+      "id": "50618515",
+      "headline": "Texas Longhorns vs. Texas A&M Aggies: Full Highlights",
+      "summary": "Texas Longhorns vs. Texas A&M Aggies: Full Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50618515/full-highlights",
+      "sport": "College football",
+      "published": "2026-11-28T07:24:04.000Z",
+      "firstSeen": "2026-11-28T06:29:42.655Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50619670",
+      "id": "50619670",
+      "headline": "B.J. Davis takes over in OT, Creighton beats No. 22 Gonzaga 97-89",
+      "summary": "— B.J. Davis scored 10 of his 27 points in overtime, including five free throws down the stretch, and Creighton beat No. 22 Gonzaga 97-89 on Friday night in a Players Era 16 bracket final.",
+      "url": "http://www.espn.com/ncb/recap?gameId=401920544",
+      "sport": "College basketball",
+      "published": "2026-11-28T07:16:32.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50619664",
+      "id": "50619664",
+      "headline": "San Diego State Aztecs vs. Texas Tech Red Raiders: Game Highlights",
+      "summary": "San Diego State Aztecs vs. Texas Tech Red Raiders: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50619664/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-28T07:12:51.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50619298",
+      "id": "50619298",
+      "headline": "Source: Sixers' Joel Embiid, LeBron James, Jaylen Brown all out against Rockets",
+      "summary": "The Sixers will be significantly short-handed for Saturday's game against the Houston Rockets.",
+      "url": "https://www.espn.com/nba/story/_/id/50619298/source-sixers-joel-embiid-lebron-james-jaylen-brown-all-rockets",
+      "sport": "NBA",
+      "published": "2026-11-28T07:10:47.000Z",
+      "firstSeen": "2026-11-28T06:29:42.655Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50619262",
+      "id": "50619262",
+      "headline": "Dampier throws for 5 TDs, 393 yards as No. 2 Utah routs West Virginia to reach 12-0",
+      "summary": "— Devon Dampier threw for five touchdowns and a career-high 393 yards and No. 2 Utah finished undefeated in the regular season, dominating West Virginia 52-28 on Friday night.",
+      "url": "http://www.espn.com/ncf/recap?gameId=401856880",
+      "sport": "College football",
+      "published": "2026-11-28T07:05:32.000Z",
+      "firstSeen": "2026-11-28T06:29:42.655Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50619619",
+      "id": "50619619",
+      "headline": "Atlanta plays New York on 5-game win streak",
+      "summary": "Atlanta Hawks (12-6, second in the Eastern Conference) vs. New York Knicks (12-7, fifth in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910056",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:46.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 2
+    },
+    {
+      "key": "50619618",
+      "id": "50619618",
+      "headline": "Hornets take on the Nets on 6-game slide",
+      "summary": "Brooklyn Nets (4-14, 14th in the Eastern Conference) vs. Charlotte Hornets (4-13, 13th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910047",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:45.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 3
+    },
+    {
+      "key": "50619617",
+      "id": "50619617",
+      "headline": "Milwaukee hosts Oklahoma City on home slide",
+      "summary": "Oklahoma City Thunder (10-9, ninth in the Western Conference) vs. Milwaukee Bucks (2-18, 15th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910049",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:44.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 4
+    },
+    {
+      "key": "50619616",
+      "id": "50619616",
+      "headline": "Minnesota takes on Sacramento, looks for 4th straight road win",
+      "summary": "Minnesota Timberwolves (14-6, fifth in the Western Conference) vs. Sacramento Kings (2-16, 15th in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910060",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:43.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50619615",
+      "id": "50619615",
+      "headline": "Indiana plays Chicago, looks to end road skid",
+      "summary": "Indiana Pacers (6-13, 12th in the Eastern Conference) vs. Chicago Bulls (6-12, 11th in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910048",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:41.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50619614",
+      "id": "50619614",
+      "headline": "Philadelphia takes road win streak into matchup with Houston",
+      "summary": "Philadelphia 76ers (16-4, first in the Eastern Conference) vs. Houston Rockets (14-5, fourth in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910050",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:40.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 7
+    },
+    {
+      "key": "50619613",
+      "id": "50619613",
+      "headline": "Mitchell, Cavaliers to host Antetokounmpo and the Heat",
+      "summary": "Miami Heat (11-7, sixth in the Eastern Conference) vs. Cleveland Cavaliers (9-10, seventh in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910054",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:39.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 8
+    },
+    {
+      "key": "50619611",
+      "id": "50619611",
+      "headline": "Golden State plays Los Angeles, seeks 9th straight home win",
+      "summary": "Los Angeles Clippers (4-14, 13th in the Western Conference) vs. Golden State Warriors (10-9, 10th in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910059",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:38.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 9
+    },
+    {
+      "key": "50619609",
+      "id": "50619609",
+      "headline": "Memphis plays Los Angeles, seeks 4th straight home win",
+      "summary": "Los Angeles Lakers (15-4, second in the Western Conference) vs. Memphis Grizzlies (15-5, third in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910051",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:37.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 10
+    },
+    {
+      "key": "50619608",
+      "id": "50619608",
+      "headline": "Portland plays New Orleans, looks for 5th straight home win",
+      "summary": "New Orleans Pelicans (6-14, 12th in the Western Conference) vs. Portland Trail Blazers (13-6, sixth in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910058",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:35.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 11
+    },
+    {
+      "key": "50619607",
+      "id": "50619607",
+      "headline": "San Antonio plays Boston, seeks 4th straight home win",
+      "summary": "Boston Celtics (12-7, fourth in the Eastern Conference) vs. San Antonio Spurs (16-4, first in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910052",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:34.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 12
+    },
+    {
+      "key": "50619606",
+      "id": "50619606",
+      "headline": "Denver plays Toronto, aims for 5th straight road win",
+      "summary": "Denver Nuggets (11-6, seventh in the Western Conference) vs. Toronto Raptors (7-11, ninth in the Eastern Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910057",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:33.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 13
+    },
+    {
+      "key": "50619605",
+      "id": "50619605",
+      "headline": "Jazz take on the Suns on 4-game losing streak",
+      "summary": "Phoenix Suns (9-9, 11th in the Western Conference) vs. Utah Jazz (3-17, 14th in the Western Conference)",
+      "url": "http://www.espn.com/nba/preview?gameId=401910053",
+      "sport": "NBA",
+      "published": "2026-11-28T07:03:32.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 14
+    },
     {
       "key": "50619461",
       "id": "50619461",
@@ -30,9 +437,42 @@
       "summary": "Flaws and all, Texas grinded out its fifth win this season by 10 points or fewer, beating Texas A&M 16-6 on Friday night to reach the SEC title game against Georgia.",
       "url": "https://www.espn.com/college-football/story/_/id/50619461/texas-not-perfect-finds-way-again-win-texas-am",
       "sport": "College football",
-      "published": "2026-11-28T06:26:05.000Z",
+      "published": "2026-11-28T06:56:47.000Z",
       "firstSeen": "2026-11-28T06:29:42.655Z",
       "bestRank": 1
+    },
+    {
+      "key": "50616023",
+      "id": "50616023",
+      "headline": "Florida QB Aaron Philo injured, exits in third quarter of win over Florida State",
+      "summary": "In the regular-season finale for both teams, Florida quarterback Aaron Philo was knocked out of the Gators' 26-10 win over the Florida State Seminoles in the third quarter after taking a hard hit following a run, and he was replaced by Tramell Jones Jr.",
+      "url": "https://www.espn.com/college-football/story/_/id/50616023/injured-florida-quarterback-aaron-philo-exits-3rd-quarter",
+      "sport": "College football",
+      "published": "2026-11-28T06:56:32.000Z",
+      "firstSeen": "2026-11-28T00:39:46.253Z",
+      "bestRank": 6
+    },
+    {
+      "key": "50619574",
+      "id": "50619574",
+      "headline": "Creighton Bluejays vs. Gonzaga Bulldogs: Game Highlights",
+      "summary": "Creighton Bluejays vs. Gonzaga Bulldogs: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50619574/game-highlights",
+      "sport": "College basketball",
+      "published": "2026-11-28T06:53:57.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 5
+    },
+    {
+      "key": "50619152",
+      "id": "50619152",
+      "headline": "Mike Brown wants more consistency on offense after Knicks lose close one to Heat",
+      "summary": "Knicks coach Mike Brown knows his team has been \"playing with fire\" with its habit of falling behind early and coming back to win late, but after Friday's defeat to the Heat, he acknowledged that isn't sustainable and wants more consistency on offense.",
+      "url": "https://www.espn.com/nba/story/_/id/50619152/mike-brown-calls-more-consistency-offense-knicks-lose-close-one-heat",
+      "sport": "NBA",
+      "published": "2026-11-28T06:53:00.000Z",
+      "firstSeen": "2026-11-28T06:29:42.655Z",
+      "bestRank": 2
     },
     {
       "key": "50618478",
@@ -44,17 +484,6 @@
       "published": "2026-11-28T06:23:32.000Z",
       "firstSeen": "2026-11-28T06:29:42.655Z",
       "bestRank": 9
-    },
-    {
-      "key": "50619428",
-      "id": "50619428",
-      "headline": "Pope booed off floor at Rupp as Wichita State shocks 4-3 Kentucky",
-      "summary": "Kentucky coach Mark Pope was realistic about his struggling Wildcats on Friday, telling reporters that \"we clearly have areas where we need to get better,\" after his team lost to Wichita State, 73-71, in overtime at Rupp Arena, a second consecutive loss.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50619428/pope-booed-rupp-floor-wichita-state-stuns-kentucky",
-      "sport": "College basketball",
-      "published": "2026-11-28T06:18:13.000Z",
-      "firstSeen": "2026-11-28T06:29:42.655Z",
-      "bestRank": 1
     },
     {
       "key": "50619408",
@@ -76,17 +505,6 @@
       "sport": "NBA",
       "published": "2026-11-28T06:09:21.000Z",
       "firstSeen": "2026-10-30T12:31:12.438Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50619298",
-      "id": "50619298",
-      "headline": "Source: Sixers' Joel Embiid, LeBron James, Jaylen Brown all out against Rockets",
-      "summary": "The Sixers will be significantly shorthanded for Saturday's game against the Houston Rockets.",
-      "url": "https://www.espn.com/nba/story/_/id/50619298/source-sixers-joel-embiid-lebron-james-jaylen-brown-all-rockets",
-      "sport": "NBA",
-      "published": "2026-11-28T06:06:10.000Z",
-      "firstSeen": "2026-11-28T06:29:42.655Z",
       "bestRank": 1
     },
     {
@@ -119,28 +537,6 @@
       "url": "http://www.espn.com/ncb/recap?gameId=401926783",
       "sport": "College basketball",
       "published": "2026-11-28T05:57:32.000Z",
-      "firstSeen": "2026-11-28T06:29:42.655Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50619262",
-      "id": "50619262",
-      "headline": "Dampier throws for 5 TDs, 393 yards as No. 2 Utah routs West Virginia to reach 12-0",
-      "summary": "— Devon Dampier threw for five touchdowns and a career-high 393 yards and No. 2 Utah finished undefeated in the regular season, dominating West Virginia 52-28 on Friday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856880",
-      "sport": "College football",
-      "published": "2026-11-28T05:49:43.000Z",
-      "firstSeen": "2026-11-28T06:29:42.655Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50619152",
-      "id": "50619152",
-      "headline": "Mike Brown wants more consistency on offense after Knicks lose close one to Heat",
-      "summary": "Knicks coach Mike Brown knows his team has been \"playing with fire\" with its habit of falling behind early and coming back to win late, but after Friday's defeat to the Heat he acknowledged that isn't sustainable and wants more consistency on offense.",
-      "url": "https://www.espn.com/nba/story/_/id/50619152/mike-brown-calls-more-consistency-offense-knicks-lose-close-one-heat",
-      "sport": "NBA",
-      "published": "2026-11-28T05:44:30.000Z",
       "firstSeen": "2026-11-28T06:29:42.655Z",
       "bestRank": 2
     },
@@ -187,17 +583,6 @@
       "published": "2026-11-28T05:27:32.000Z",
       "firstSeen": "2026-11-28T06:29:42.655Z",
       "bestRank": 6
-    },
-    {
-      "key": "50575102",
-      "id": "50575102",
-      "headline": "Men's Feast Week guide: Breaking down Friday's biggest games",
-      "summary": "Miami vs. TCU and Texas Tech vs. Louisville at the Players Era 16 are among the biggest games on Tuesday.",
-      "url": "https://www.espn.com/mens-college-basketball/story/_/id/50575102/feast-week-matchups-analysis",
-      "sport": "College basketball",
-      "published": "2026-11-28T05:24:48.000Z",
-      "firstSeen": "2026-11-24T15:21:53.078Z",
-      "bestRank": 1
     },
     {
       "key": "50619009",
@@ -376,15 +761,15 @@
       "bestRank": 8
     },
     {
-      "key": "50618515",
-      "id": "50618515",
-      "headline": "Texas Longhorns vs. Texas A&M Aggies: Full Highlights",
-      "summary": "Texas Longhorns vs. Texas A&M Aggies: Full Highlights",
-      "url": "https://www.espn.com/video/clip/_/id/50618515/full-highlights",
-      "sport": "College football",
-      "published": "2026-11-28T04:43:11.000Z",
-      "firstSeen": "2026-11-28T06:29:42.655Z",
-      "bestRank": 8
+      "key": "50618727",
+      "id": "50618727",
+      "headline": "No. 17 Minnesota women move to 8-0 with 69-50 win over Cincinnati in the Cancun Challenge",
+      "summary": "— Natalie Kussow scored 22 points and grabbed 11 rebounds for No. 17 Minnesota, and the Golden Gophers pulled away in the third quarter to beat Cincinnati 69-50 on Friday night in the Cancun Challenge.",
+      "url": "http://www.espn.com/ncw/recap?gameId=401903575",
+      "sport": "Women's college basketball",
+      "published": "2026-11-28T04:40:32.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 1
     },
     {
       "key": "50618723",
@@ -439,6 +824,17 @@
       "sport": "NFL",
       "published": "2026-11-28T04:38:06.000Z",
       "firstSeen": "2026-11-28T06:29:42.655Z",
+      "bestRank": 1
+    },
+    {
+      "key": "50618699",
+      "id": "50618699",
+      "headline": "Italy advances to Davis Cup final with win over Czech Republic",
+      "summary": "Defending champion Italy has reached the Davis Cup final after Lorenzo Musetti and Andrea Vavassori won the deciding doubles to clinch a ‌2-1 win over Czech Republic on Friday.",
+      "url": "https://www.espn.com/tennis/story/_/id/50618699/italy-advances-davis-cup-final-win-czech-republic",
+      "sport": "Tennis",
+      "published": "2026-11-28T04:36:13.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
       "bestRank": 1
     },
     {
@@ -726,6 +1122,17 @@
       "published": "2026-11-28T03:21:28.000Z",
       "firstSeen": "2026-11-28T03:23:58.267Z",
       "bestRank": 1
+    },
+    {
+      "key": "50617987",
+      "id": "50617987",
+      "headline": "South Florida Bulls vs. Seton Hall Pirates: Game Highlights",
+      "summary": "South Florida Bulls vs. Seton Hall Pirates: Game Highlights",
+      "url": "https://www.espn.com/video/clip/_/id/50617987/game-highlights",
+      "sport": "Women's college basketball",
+      "published": "2026-11-28T03:21:13.000Z",
+      "firstSeen": "2026-11-28T09:21:33.803Z",
+      "bestRank": 2
     },
     {
       "key": "50617937",
@@ -1386,17 +1793,6 @@
       "published": "2026-11-28T00:51:32.000Z",
       "firstSeen": "2026-11-28T03:23:58.267Z",
       "bestRank": 26
-    },
-    {
-      "key": "50616023",
-      "id": "50616023",
-      "headline": "Florida QB Aaron Philo injured, exits in third quarter of win over Florida State",
-      "summary": "In the regular-season finale for both teams, Florida quarterback Aaron Philo was knocked out of the Gators' 26-10 win over the Florida State Seminoles in the third quarter after taking a hard hit following a run, and he was replaced by Tramell Jones Jr.",
-      "url": "https://www.espn.com/college-football/story/_/id/50616023/injured-florida-quarterback-aaron-philo-exits-3rd-quarter",
-      "sport": "College football",
-      "published": "2026-11-28T00:50:24.000Z",
-      "firstSeen": "2026-11-28T00:39:46.253Z",
-      "bestRank": 6
     },
     {
       "key": "50028196",
@@ -5331,7 +5727,7 @@
       "headline": "Friday Night Lights,' 'Ted Lasso' top poll ranking 21st-century sports shows",
       "summary": "A Seton Hall poll crowns America's favorite modern fictional sports TV series.",
       "url": "https://www.espn.com/espn/story/_/id/50576889/top-fictional-sports-series-21st-century",
-      "sport": "WNBA",
+      "sport": "Women's college basketball",
       "published": "2026-11-26T16:01:10.000Z",
       "firstSeen": "2026-11-26T18:24:19.210Z",
       "bestRank": 1
@@ -26682,7 +27078,7 @@
       "headline": "Tom Brady tops list of athletes who became owners",
       "summary": "The legendary quarterback is a member of an exclusive list of athletes that includes LeBron James, Serena Williams and Wayne Gretzky.",
       "url": "https://www.espn.com/nfl/story/_/id/29553205/dwyane-wade-tom-brady-lebron-james-athletes-team-owners",
-      "sport": "WNBA",
+      "sport": "F1",
       "published": "2026-11-20T20:47:35.000Z",
       "firstSeen": "2026-11-20T21:20:49.676Z",
       "bestRank": 1
@@ -78628,237 +79024,6 @@
       "published": "2026-11-07T09:42:37.000Z",
       "firstSeen": "2026-11-07T12:24:20.115Z",
       "bestRank": 30
-    },
-    {
-      "key": "50406470",
-      "id": "50406470",
-      "headline": "Sharks take losing streak into matchup with the Stars",
-      "summary": "San Jose Sharks (7-10-1, in the Pacific Division) vs. Dallas Stars (9-5-2, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892669",
-      "sport": "NHL",
-      "published": "2026-11-07T09:11:45.000Z",
-      "firstSeen": "2026-11-07T12:24:20.115Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50406469",
-      "id": "50406469",
-      "headline": "Sabres host the Golden Knights after Norris' 2-goal game",
-      "summary": "Vegas Golden Knights (11-5-2, in the Pacific Division) vs. Buffalo Sabres (8-5-3, in the Atlantic Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892675",
-      "sport": "NHL",
-      "published": "2026-11-07T09:11:44.000Z",
-      "firstSeen": "2026-11-07T12:24:20.115Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50406468",
-      "id": "50406468",
-      "headline": "Tampa Bay visits Minnesota after Mikheyev's 2-goal game",
-      "summary": "Tampa Bay Lightning (10-3-2, in the Atlantic Division) vs. Minnesota Wild (12-3-3, in the Central Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892670",
-      "sport": "NHL",
-      "published": "2026-11-07T09:11:43.000Z",
-      "firstSeen": "2026-11-07T12:24:20.115Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50406467",
-      "id": "50406467",
-      "headline": "Calgary and Philadelphia meet in non-conference matchup",
-      "summary": "Philadelphia Flyers (4-10-4, in the Metropolitan Division) vs. Calgary Flames (7-9-1, in the Pacific Division)",
-      "url": "http://www.espn.com/nhl/preview?gameId=401892678",
-      "sport": "NHL",
-      "published": "2026-11-07T09:11:42.000Z",
-      "firstSeen": "2026-11-07T12:24:20.115Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50406171",
-      "id": "50406171",
-      "headline": "San Antonio faces Portland following Wembanyama's 52-point game",
-      "summary": "San Antonio Spurs (6-2, fourth in the Western Conference) vs. Portland Trail Blazers (6-2, fifth in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909944",
-      "sport": "NBA",
-      "published": "2026-11-07T08:02:46.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50405968",
-      "id": "50405968",
-      "headline": "Salgado-Medina makes field goal after recovered onside pooch kick, No. 24 Arizona stuns TCU 29-28",
-      "summary": "— Michael Salgado-Medina kicked a 37-yard field goal with 39 seconds left after No. 24 Arizona recovered an onside pooch kick and the Wildcats pulled out an improbable 29-28 victory over TCU early Saturday.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401856855",
-      "sport": "College football",
-      "published": "2026-11-07T07:44:34.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50406001",
-      "id": "50406001",
-      "headline": "Hawaii sets school record for largest margin of victory, beating Bethesda",
-      "summary": "— Zack Davidson scored 20 points, Bol Dengdit added a double-double and Hawaii posted its largest margin of victory, beating Bethesda 116-44 on Friday night at the Rainbow Classic.",
-      "url": "http://www.espn.com/ncb/recap?gameId=401929001",
-      "sport": "College basketball",
-      "published": "2026-11-07T07:24:35.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50405953",
-      "id": "50405953",
-      "headline": "Arizona has thrilling comeback late for win over TCU",
-      "summary": "Arizona has thrilling comeback late for win over TCU",
-      "url": "https://www.espn.com/video/clip/_/id/50405953/arizona-thrilling-comeback-late-win-tcu",
-      "sport": "College football",
-      "published": "2026-11-07T07:19:18.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50405889",
-      "id": "50405889",
-      "headline": "Atlanta faces Brooklyn, looks for 4th straight victory",
-      "summary": "Brooklyn Nets (2-6, 13th in the Eastern Conference) vs. Atlanta Hawks (6-4, fourth in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909939",
-      "sport": "NBA",
-      "published": "2026-11-07T07:03:44.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 3
-    },
-    {
-      "key": "50405888",
-      "id": "50405888",
-      "headline": "Chicago takes on Philadelphia, aims to halt 6-game slide",
-      "summary": "Philadelphia 76ers (8-2, first in the Eastern Conference) vs. Chicago Bulls (1-7, 14th in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909945",
-      "sport": "NBA",
-      "published": "2026-11-07T07:03:43.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 4
-    },
-    {
-      "key": "50405887",
-      "id": "50405887",
-      "headline": "Doncic leads Los Angeles against Detroit after 40-point showing",
-      "summary": "Los Angeles Lakers (7-2, first in the Western Conference) vs. Detroit Pistons (6-2, third in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909946",
-      "sport": "NBA",
-      "published": "2026-11-07T07:03:42.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 5
-    },
-    {
-      "key": "50405886",
-      "id": "50405886",
-      "headline": "Minnesota faces Utah, looks for 4th straight victory",
-      "summary": "Utah Jazz (1-8, 15th in the Western Conference) vs. Minnesota Timberwolves (7-3, sixth in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909947",
-      "sport": "NBA",
-      "published": "2026-11-07T07:03:40.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 6
-    },
-    {
-      "key": "50405885",
-      "id": "50405885",
-      "headline": "Sacramento plays Miami on 3-game home slide",
-      "summary": "Miami Heat (3-6, ninth in the Eastern Conference) vs. Sacramento Kings (1-7, 14th in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909951",
-      "sport": "NBA",
-      "published": "2026-11-07T07:03:39.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 7
-    },
-    {
-      "key": "50405884",
-      "id": "50405884",
-      "headline": "Milwaukee plays Boston on home slide",
-      "summary": "Boston Celtics (7-2, second in the Eastern Conference) vs. Milwaukee Bucks (1-8, 15th in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909949",
-      "sport": "NBA",
-      "published": "2026-11-07T07:03:38.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 8
-    },
-    {
-      "key": "50405883",
-      "id": "50405883",
-      "headline": "Los Angeles faces New Orleans on 3-game home skid",
-      "summary": "New Orleans Pelicans (4-5, 11th in the Western Conference) vs. Los Angeles Clippers (1-7, 13th in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909950",
-      "sport": "NBA",
-      "published": "2026-11-07T07:03:37.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 9
-    },
-    {
-      "key": "50405882",
-      "id": "50405882",
-      "headline": "Cleveland takes on New York in conference matchup",
-      "summary": "New York Knicks (4-4, seventh in the Eastern Conference) vs. Cleveland Cavaliers (5-4, sixth in the Eastern Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909940",
-      "sport": "NBA",
-      "published": "2026-11-07T07:03:36.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 10
-    },
-    {
-      "key": "50405881",
-      "id": "50405881",
-      "headline": "Oklahoma City takes home win streak into matchup with Washington",
-      "summary": "Washington Wizards (4-5, eighth in the Eastern Conference) vs. Oklahoma City Thunder (7-2, third in the Western Conference)",
-      "url": "http://www.espn.com/nba/preview?gameId=401909941",
-      "sport": "NBA",
-      "published": "2026-11-07T07:03:34.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 11
-    },
-    {
-      "key": "50403809",
-      "id": "50403809",
-      "headline": "Hannah Hidalgo drops 27-point double-double in Notre Dame's win",
-      "summary": "Hannah Hidalgo drops 27-point double-double in Notre Dame's win",
-      "url": "https://www.espn.com/video/clip/_/id/50403809/hannah-hidalgo-drops-27-point-double-double-notre-dame-win",
-      "sport": "Women's college basketball",
-      "published": "2026-11-07T06:53:50.000Z",
-      "firstSeen": "2026-11-07T12:24:20.115Z",
-      "bestRank": 12
-    },
-    {
-      "key": "50405279",
-      "id": "50405279",
-      "headline": "No. 22 New Mexico wins in first game in AP poll in school history, beating Nevada 31-3",
-      "summary": "— Toa Fa’avae led two first-quarter touchdown drives, Brett Karhu forced a fumble on a sack to set up a score and No. 22 New Mexico won in the first game in the AP poll in school history, beating Nevada 31-3 on Friday night.",
-      "url": "http://www.espn.com/ncf/recap?gameId=401864533",
-      "sport": "College football",
-      "published": "2026-11-07T06:47:35.000Z",
-      "firstSeen": "2026-11-07T06:26:23.948Z",
-      "bestRank": 1
-    },
-    {
-      "key": "50401522",
-      "id": "50401522",
-      "headline": "Knicks 'appreciative' of Taylor Swift after Kolek, McBride question fandom",
-      "summary": "The Knicks have come to the defense of Taylor Swift and say they are \"incredibly appreciative\" of her support after Tyler Kolek and Miles \"Deuce\" McBride named her as the fakest celebrity fan at games.",
-      "url": "https://www.espn.com/nba/story/_/id/50401522/knicks-appreciative-taylor-swift-players-comments",
-      "sport": "NBA",
-      "published": "2026-11-07T06:36:08.000Z",
-      "firstSeen": "2026-11-06T21:21:05.894Z",
-      "bestRank": 2
-    },
-    {
-      "key": "50405740",
-      "id": "50405740",
-      "headline": "Tyler Kolek questions Taylor Swift's Knicks fandom",
-      "summary": "Tyler Kolek questions Taylor Swift's Knicks fandom",
-      "url": "https://www.espn.com/video/clip/_/id/50405740/tyler-kolek-questions-taylor-swift-knicks-fandom",
-      "sport": "NBA",
-      "published": "2026-11-07T06:35:01.000Z",
-      "firstSeen": "2026-11-07T09:20:58.414Z",
-      "bestRank": 12
     }
   ]
 }
